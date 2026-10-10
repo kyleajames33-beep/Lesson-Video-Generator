@@ -6,7 +6,7 @@
     "handle": "@HSCScience-u7i",
     "url": "https://www.youtube.com/@HSCScience-u7i"
   },
-  "purpose": "Local metadata and dependency queue for the four current calculation feedback candidates. Root retains export and publication. No browser or live channel check was performed.",
+  "purpose": "Approved full calculation packages and actual YouTube publication state. Frozen export records supersede earlier missing-export candidate notes. Root owns publishing.",
   "learnerOrder": {
     "candidateSequence": [
       "empirical-formulas",
@@ -18,7 +18,29 @@
     "earlierRecordedVideoIds": [
       "MCmEsRHKtTU",
       "g9zmc5w7kQU"
-    ]
+    ],
+    "liveVerified": {
+      "date": "2026-10-10",
+      "method": "Chrome Studio playlist video lists, manual default order",
+      "module2PlaylistId": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
+      "module2Order": [
+        "MCmEsRHKtTU",
+        "g9zmc5w7kQU",
+        "Qjw7Rx5NOOQ",
+        "A12XpxLTflg",
+        "ay3eq6ijy74",
+        "-TLemAVWFvs"
+      ],
+      "sharedCorePlaylistId": "PLEzyRLo5kAAs",
+      "sharedCoreOrder": [
+        "g9zmc5w7kQU",
+        "Qjw7Rx5NOOQ",
+        "A12XpxLTflg",
+        "ay3eq6ijy74",
+        "-TLemAVWFvs"
+      ],
+      "limitation": "Existing 2017 Mole Concept video remains in its 2017 playlist; no new science or 2025 coverage review implied."
+    }
   },
   "videos": [
     {
@@ -73,35 +95,9 @@
         "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
       },
       "releaseGates": {
-        "fullExport": {
-          "status": "missing",
-          "note": "No current full export exists for this exact paced lesson."
-        },
-        "preview": {
-          "status": "pending",
-          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
-        },
-        "humanListening": {
-          "status": "pending",
-          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
-        },
-        "exportStageBriefCheck": {
-          "status": "pending",
-          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
-        },
-        "fullPackageReview": {
-          "status": "pending",
-          "note": "The existing full-package release gate has not passed for this exact lesson."
-        },
-        "captions": {
-          "status": "candidate",
-          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
-        },
-        "chapters": {
-          "status": "pending",
-          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
-        },
-        "uploadable": false
+        "status": "ready",
+        "reportPath": "docs/production/calculation-full-reviews-2026-10-10/empirical-formulas-approved-gate-2026-10-10.json",
+        "ownerApproval": "docs/production/user-approved-release-2026-10-10.json"
       },
       "syllabus": {
         "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
@@ -115,9 +111,26 @@
       "playlistCandidate": {
         "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
         "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
-        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+        "membershipForCandidate": "Assigned to both syllabus playlists in Chrome Studio; manual learner order checked separately."
       },
-      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check."
+      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check.",
+      "fullExport": {
+        "path": "out/prototypes/calculation-full-2026-10-10/empirical-formulas/full-render-02/video.mp4",
+        "videoSha256": "4f3d83e9dc66e8180b363d9fbe3cf9d604efa78297316eb0565f54cda5954436",
+        "packageSha256": "9e24d92728501e8ce219d3cf99d425109dca2827be6a883e0e04cab5bea04257"
+      },
+      "publication": {
+        "status": "public",
+        "videoId": "Qjw7Rx5NOOQ",
+        "url": "https://youtu.be/Qjw7Rx5NOOQ",
+        "verified": "Chrome YouTube Studio Video published dialog and Public row on 10 October 2026",
+        "captions": "English (Australia) by you, exact export SRT uploaded and published",
+        "playlists": [
+          "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+          "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
+        ],
+        "checks": "YouTube checks complete, no issues found"
+      }
     },
     {
       "key": "mole-ratios",
@@ -171,35 +184,9 @@
         "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
       },
       "releaseGates": {
-        "fullExport": {
-          "status": "missing",
-          "note": "No current full export exists for this exact paced lesson."
-        },
-        "preview": {
-          "status": "pending",
-          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
-        },
-        "humanListening": {
-          "status": "pending",
-          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
-        },
-        "exportStageBriefCheck": {
-          "status": "pending",
-          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
-        },
-        "fullPackageReview": {
-          "status": "pending",
-          "note": "The existing full-package release gate has not passed for this exact lesson."
-        },
-        "captions": {
-          "status": "candidate",
-          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
-        },
-        "chapters": {
-          "status": "pending",
-          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
-        },
-        "uploadable": false
+        "status": "ready",
+        "reportPath": "docs/production/calculation-full-reviews-2026-10-10/mole-ratios-approved-gate-2026-10-10.json",
+        "ownerApproval": "docs/production/user-approved-release-2026-10-10.json"
       },
       "syllabus": {
         "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
@@ -213,9 +200,26 @@
       "playlistCandidate": {
         "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
         "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
-        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+        "membershipForCandidate": "Assigned to both syllabus playlists in Chrome Studio; manual learner order checked separately."
       },
-      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check."
+      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check.",
+      "fullExport": {
+        "path": "out/prototypes/calculation-full-2026-10-10/mole-ratios/full-render-01/video.mp4",
+        "videoSha256": "48cf82105ae64fa97edafd81519f1f98896ddc873923d18d6c103954f1eb64d7",
+        "packageSha256": "579576d9dee80c19a464b7c6dd36b4b7f5f517c3ce72eb3ca921451c8577b503"
+      },
+      "publication": {
+        "status": "public",
+        "videoId": "A12XpxLTflg",
+        "url": "https://youtu.be/A12XpxLTflg",
+        "verified": "Chrome YouTube Studio Video published dialog, 5:01 duration, 10 October 2026",
+        "captions": "Exact reviewed SRT, English (Australia) by you",
+        "playlists": [
+          "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+          "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
+        ],
+        "checks": "Checks complete, no issues found"
+      }
     },
     {
       "key": "mass-to-mass",
@@ -269,35 +273,9 @@
         "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
       },
       "releaseGates": {
-        "fullExport": {
-          "status": "missing",
-          "note": "No current full export exists for this exact paced lesson."
-        },
-        "preview": {
-          "status": "pending",
-          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
-        },
-        "humanListening": {
-          "status": "pending",
-          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
-        },
-        "exportStageBriefCheck": {
-          "status": "pending",
-          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
-        },
-        "fullPackageReview": {
-          "status": "pending",
-          "note": "The existing full-package release gate has not passed for this exact lesson."
-        },
-        "captions": {
-          "status": "candidate",
-          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
-        },
-        "chapters": {
-          "status": "pending",
-          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
-        },
-        "uploadable": false
+        "status": "ready",
+        "reportPath": "docs/production/calculation-full-reviews-2026-10-10/mass-to-mass-approved-gate-2026-10-10.json",
+        "ownerApproval": "docs/production/user-approved-release-2026-10-10.json"
       },
       "syllabus": {
         "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
@@ -311,9 +289,27 @@
       "playlistCandidate": {
         "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
         "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
-        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+        "membershipForCandidate": "Assigned to both syllabus playlists in Chrome Studio; manual learner order checked separately."
       },
-      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check."
+      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check.",
+      "fullExport": {
+        "path": "out/prototypes/calculation-full-2026-10-10/mass-to-mass/full-render-01/video.mp4",
+        "videoSha256": "b17845f385942f167a50a398f0200836bad95815e72d4fde3ef819cab2408d8f",
+        "packageSha256": "39f9766ab92dbda5266da021e9b6e20fb19b51b92fe8c6147fedb11430bd4161"
+      },
+      "publication": {
+        "status": "public",
+        "videoId": "ay3eq6ijy74",
+        "url": "https://youtu.be/ay3eq6ijy74",
+        "verified": "Chrome preview duration6:44, upload and processing complete, no copyright issues",
+        "captions": "Exact SRT imported, save requested",
+        "playlists": [
+          "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+          "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
+        ],
+        "verifiedDate": "2026-10-10",
+        "verification": "Chrome YouTube Studio Video published dialog, 6:44 duration, English (Australia) by you captions, checks complete no issues."
+      }
     },
     {
       "key": "limiting",
@@ -367,35 +363,9 @@
         "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
       },
       "releaseGates": {
-        "fullExport": {
-          "status": "missing",
-          "note": "No current full export exists for this exact paced lesson."
-        },
-        "preview": {
-          "status": "pending",
-          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
-        },
-        "humanListening": {
-          "status": "pending",
-          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
-        },
-        "exportStageBriefCheck": {
-          "status": "pending",
-          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
-        },
-        "fullPackageReview": {
-          "status": "pending",
-          "note": "The existing full-package release gate has not passed for this exact lesson."
-        },
-        "captions": {
-          "status": "candidate",
-          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
-        },
-        "chapters": {
-          "status": "pending",
-          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
-        },
-        "uploadable": false
+        "status": "ready",
+        "reportPath": "docs/production/calculation-full-reviews-2026-10-10/limiting-approved-gate-2026-10-10.json",
+        "ownerApproval": "docs/production/user-approved-release-2026-10-10.json"
       },
       "syllabus": {
         "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
@@ -409,9 +379,26 @@
       "playlistCandidate": {
         "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
         "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
-        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+        "membershipForCandidate": "Assigned to both syllabus playlists in Chrome Studio; manual learner order checked separately."
       },
-      "priorPublicationRecord": "Earlier local publication records preserve unlisted review video sijXK98W_9w, later superseded as preferred review by unlisted video b7OCuLsXgG8. Captions and unlisted review status were recorded for both; complete user watch-through and human listening remained pending in the 9 October records. These are historical recorded states, not a live visibility check."
+      "priorPublicationRecord": "Earlier local publication records preserve unlisted review video sijXK98W_9w, later superseded as preferred review by unlisted video b7OCuLsXgG8. Captions and unlisted review status were recorded for both; complete user watch-through and human listening remained pending in the 9 October records. These are historical recorded states, not a live visibility check.",
+      "fullExport": {
+        "path": "out/prototypes/calculation-full-2026-10-10/limiting/full-render-01/video.mp4",
+        "videoSha256": "b8203f386e051811113a2c7367fe9423af07a187af49fcd89b7ec2fa6b2b1526",
+        "packageSha256": "8fd0567eeaf0744961982babae7bfc506f9fc33a0d5f905753cbd8818e75289b"
+      },
+      "publication": {
+        "status": "public",
+        "note": "Root uploads and publishes through Chrome, not yet confirmed public.",
+        "videoId": "-TLemAVWFvs",
+        "url": "https://youtu.be/-TLemAVWFvs",
+        "verifiedDate": "2026-10-10",
+        "verification": "Chrome Studio Video published dialog; exact approved batch file, displayed4:50 rounded preview, English (Australia) by you captions; no copyright issues.",
+        "playlists": [
+          "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+          "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
+        ]
+      }
     }
   ],
   "chapters": {

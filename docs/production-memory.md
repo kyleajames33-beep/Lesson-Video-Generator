@@ -1,5 +1,18 @@
 # Production Memory
 
+## 10 October: focused videos and book notes
+
+The user approved the reviewed videos for release and asks future videos
+to avoid too much teaching at once and screen clutter, and to include key
+notes showing what to write in a book. Apply one main learner question,
+split distinct objectives when a combined explanation would rush either,
+and show one current reasoning stage with only its needed reference facts.
+Offer a brief optional "Key notes: what to write in your book" hold after
+explanation. Select a small useful set of essentials, retain necessary
+conditions, leave quiet copy/pause time and clear competing content. No
+fixed note count or extra feature quota is required. This feedback changes
+future preparation; it does not authorise edits to frozen release inputs.
+
 ## 10 October: scope and actual library reuse
 
 - Label a focused video by its learner task and relevant syllabus section. C3 covers concentration/temperature disturbances and introductory temperature/K, with later pressure, expressions, calculations and data routes. Correct the selected inquiry heading; an outcome code alone does not communicate the dotpoint.

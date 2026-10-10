@@ -1,16 +1,16 @@
 # Module 5 practice and library reuse
 
-The current route plans 21 Chemistry Module 5 uploads plus one optional reused limiting-reactant prerequisite, and 27 Biology Module 5 uploads. Biology's 24 canonical entries expand to 27 uploads because plants, fungi, bacteria and protists have separate teaching boundaries. These are plans, not completed videos. The [structured route](module5-video-route-2026-10-10.json) and [learner route](module5-video-route-2026-10-10.md) remain authoritative.
+The current route plans 22 Chemistry Module 5 uploads plus one optional reused limiting-reactant prerequisite, and 27 Biology Module 5 uploads. C4A pressure/volume/inert gas and C4B catalysts are two adopted delivery parts under the same canonical C4 entry, adding one core upload. Biology's 24 canonical entries expand to 27 uploads because plants, fungi, bacteria and protists have separate teaching boundaries. These are plans, not completed videos. The [structured route](module5-video-route-2026-10-10.json) and [learner route](module5-video-route-2026-10-10.md) remain authoritative.
 
 There are already four dedicated guided-question videos: Chemistry g02 (equilibrium graphs and unfamiliar explanations) and g03 (harder ICE/Q decisions), and Biology g01 (sequence/chromosome tracing) and g02 (unfamiliar inheritance crosses/pedigrees). The other companions have different purposes. Chemistry g01 teaches non-equilibrium enthalpy/entropy, and Biology g03 handles population-risk data. Do not count every companion as a worked-question video.
 
 ## Proposed additional checkpoints
 
-These are proposed slots for production planning, not new route entries or approval to publish. Adding all three as standalone uploads would produce 23 Chemistry Module 5 videos plus one optional prerequisite, and 28 Biology Module 5 videos. Embedding them as sections keeps the current counts.
+These are proposed slots for production planning, not new route entries or approval to publish. Adding all three as standalone uploads would produce 24 Chemistry Module 5 videos plus one optional prerequisite, and 28 Biology Module 5 videos. Embedding them as sections keeps the current counts.
 
 | Slot | Entry knowledge | Question focus | Stop and next handoff |
 | --- | --- | --- | --- |
-| After Chemistry C4 | Concentration, temperature, gas pressure/volume and catalyst distinctions | Original HSC-style graph/explanation tasks: identify the immediate change, explain the later rate imbalance, and justify whether K changes | Stop before constructing K expressions. Continue to practical support/C5. Keep existing g02 for later industrial/unfamiliar applications |
+| After Chemistry C4B (both C4 parts complete) | Concentration, temperature, gas pressure/volume and catalyst distinctions | Original HSC-style graph/explanation tasks: identify the immediate change, explain the later rate imbalance, and justify whether K changes | Stop before constructing K expressions. Continue to practical support/C5. Keep existing g02 for later industrial/unfamiliar applications |
 | After Chemistry C15 | Dissolution, Ksp, net ionic equations and mixed-solution prediction | A mixed solubility/precipitation problem, including required dilution, equation choice and Qsp/Ksp interpretation | Stop at the planned Module 5 solution-equilibrium scope. Titrations and weak-acid pH calculation belong to their later module route |
 | After Biology reproduction/agriculture block | Mechanisms in the named organism groups, gamete fusion and mammalian/agricultural context | Compare unfamiliar reproductive cases, distinguish pollination from fertilisation, and explain a consequence of disrupting one step | Stop before DNA replication/synthesis. Do not replace missing fungi/bacteria/protists teaching with a plant-only question |
 
@@ -26,8 +26,8 @@ Neither selected source contains a `scene.image` reference. Do not describe thes
 
 | Next teaching purpose | Existing library candidate | Required selection check |
 | --- | --- | --- |
-| C4 pressure | `chem12m5Pressure`, `PressureDiagram.tsx` | Reuse piston, molecules, gauge and jump/response staging. Check the stated ammonia reaction and reading load |
-| C4 catalysts | `chem12m5CatalystBoth`, `CatalystBothDiagram.tsx` | Reuse energy profile/both-direction cues. Use the equal-rate mode for an initially equilibrated mixture; its default ratio case has different conditions |
+| C4A pressure/volume/inert gas | `chem12m5Pressure`, `PressureDiagram.tsx` | Reuse piston, molecules, gauge and jump/response staging. Check the stated ammonia reaction and reading load |
+| C4B catalysts | `chem12m5CatalystBoth`, `CatalystBothDiagram.tsx` | Reuse energy profile/both-direction cues. Correct unsupported universal equal-factor labels before selection; equal-rate mode alone retains them. Stage profile and concentration-time comparison separately |
 | C5 expressions | `chem12m5KeqBuilder`, `KeqBuilderDiagram.tsx` | Reuse species/state/coefficient tiles, numerator/denominator motion and omission tray. Stage the rule before substitution |
 | Meaning of K | `chem12m5KeqScale`, `KeqScaleDiagram.tsx` | Select only the relevant case and preserve boundary/notation clarity |
 | Graph practice | `chem12m5Signatures`, `SignaturesDiagram.tsx` | Choose individual panels and keep answers hidden during attempts. This uses A to 2B, so it cannot be substituted into a one-to-one model unchanged |

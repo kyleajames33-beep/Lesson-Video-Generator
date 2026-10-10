@@ -1,0 +1,58 @@
+{
+  "ready": true,
+  "status": "release-evidence-complete",
+  "blockers": [],
+  "reviews": {
+    "science": {
+      "reviewer": "Sol 6.1 independent science reviewer (/root/chem_c2_independent_review_sol)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T02:57:55.599Z"
+    },
+    "motion": {
+      "reviewer": "Sol 6.1 technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:05:03.857Z"
+    },
+    "device": {
+      "reviewer": "Sol 6.1 technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:05:05.685Z"
+    },
+    "accessibility": {
+      "reviewer": "Sol 6.1 technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:05:07.652Z"
+    },
+    "listening": {
+      "reviewer": "Kyle, project owner (reported full-file watch/listening)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:06:33.182Z"
+    }
+  },
+  "limitation": "Checks versioned local evidence, not reviewer identity, scientific judgement, omitted records or publication permission. The brief checks declared teaching/visual decisions and exact preview evidence, not the quality of those judgements. Human listening still needs the existing full-package listening review.",
+  "teachingBrief": {
+    "ready": true,
+    "stage": "export",
+    "blockers": [],
+    "pending": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Human listening: pending"
+      }
+    ],
+    "source": {
+      "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+      "lessonSha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.",
+    "path": "docs/production/calculation-export-briefs-2026-10-10/limiting/production-brief.json",
+    "sha256": "e8569ea2a428067658575e268a9980aa190415b8390b758ed2251fc8810035bc"
+  },
+  "gateExecution": {
+    "adapter": "Current root scripts/lib/release-gate.mjs",
+    "adapterSha256": "1551fd1e3be086f045a81dcc2ddf1311a2f60cb72a0ac48aaca9c3cba0f1a65e",
+    "dependencyVerificationRoot": "C:\\lesson-video-generator\\out\\checks\\review-batch-byte-preserved-2026-10-09",
+    "reason": "Current adapter identifies the final reviewed MP4 by renderRecord.videoSha256. Pinned original adapter incorrectly requires exactly one MP4 across final and intermediate exports. Frozen dependencies preserved.",
+    "supersedes": "docs/production/calculation-full-reviews-2026-10-10/limiting-technical-gate-report-2026-10-10.json"
+  }
+}

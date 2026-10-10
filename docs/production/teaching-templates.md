@@ -22,12 +22,26 @@ spoken sequence for reading load as well as legibility and caption clearance.
 
 ## Common lesson brief
 
+Keep one main learner question per video. Connected supporting ideas can
+stay together, but split distinct objectives if either needs a rushed
+explanation or a crowded board. Select one current reasoning stage and its
+necessary reference facts instead of shrinking a complete lesson onto one
+screen.
+
+After the explanation, offer a brief optional "Key notes: what to write in
+your book" hold. Select a small useful set of definitions, relationships,
+conditions or decision rules. Keep these separate from new reasoning,
+stable and clear of captions. Invite copying or pausing, then leave quiet
+reading time. A worked example need not be copied in full. No fixed note
+count or extra recap scene is required; adapt a useful existing summary.
+
 Copy and fill before writing speech:
 
 | Field | Required decision |
 | --- | --- |
 | Identity and cohort | Lesson ID, subject, Year 11/12, syllabus version, applicable cohort and verified source content point |
 | Primary learning action | What the student must explain, predict, calculate, interpret or plan after viewing |
+| Focus and notes | One main question, any split decision, and the brief essentials to copy after explanation, with a reading/copy hold |
 | Entry knowledge | Prerequisites, one short entry check and support link; do not infer knowledge from age |
 | Misconception | Specific plausible wrong reasoning, evidence/source or hypothesis status |
 | Teaching structure | One primary structure below, with any justified combination |

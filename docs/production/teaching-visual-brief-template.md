@@ -7,10 +7,12 @@ Use this before new or revised narration. It connects the existing [research](..
 | Decision | Write before recording |
 | --- | --- |
 | Task and scope | What the learner will explain, calculate, predict or interpret. Name prerequisites and current/new curriculum boundaries. |
+| Focus | One main learner question. Split distinct objectives if combining them would rush explanation or crowd the screen; record the stopping point and handoff. |
 | Explanation | Why the relationship or mechanism works. Do not substitute a list of viewing or calculation directions. |
 | Spoken tone | Write connected conversational narration, then read it aloud. Use concrete examples and precise reassuring feedback. Avoid repeated “watch”, “notice”, “label” instructions and invented examination stakes. |
 | Opening | A useful problem, contrast or question. A small surprise can help when the subject earns it. A clear direct introduction is valid when a prediction would be artificial; explain that choice. |
 | Understanding check | A new application or explanation, with targeted feedback and a protected response opportunity when appropriate. |
+| Key notes | Optional brief "what to write in your book" essentials after explanation. Identify the existing summary/board to reuse, what clears, and the stable quiet copying/pause hold. No item quota. |
 
 For every selected scene, record: its ID, reuse/adjust/new/none visual decision, existing component or asset reference, why it teaches this point, narration cue, movement's purpose and reading/thinking hold. “None” is valid for a useful stable board. A new asset must solve a specific gap. No feature count, animation frequency, joke, painted backdrop or diorama quota is required. Essential labels remain coded and stable.
 
@@ -20,6 +22,13 @@ each step. In a worked example, state which facts remain needed in each
 beat, which earlier results are used next and which text is cleared. Check
 that a student can follow the spoken reason while reading the current
 screen. Native fit alone does not establish a manageable reading load.
+
+Keep the current reasoning and only its necessary reference facts visible.
+Do not keep a full lesson's paragraphs, earlier answers or dense copy notes
+beside a new explanation. Key notes should condense already explained
+ideas, with conditions retained, rather than introduce another objective.
+Review their actual reading time and caption clearance in the exact voiced
+preview. Optional pausing supports students who need longer to copy.
 
 ## Machine-readable record
 

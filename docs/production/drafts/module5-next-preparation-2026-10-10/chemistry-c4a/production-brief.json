@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/lesson.json",
+    "lessonSha256": "1f0e871cc24df7532c830735f6daf08f988ba35ca8dc43abf6806928bcb176b4"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C3 immediate disturbance versus later response, equal opposing rates and fixed-temperature K; balanced gaseous coefficients and gas particles hitting walls. Entry check: does squeezing a mixture itself create product, or must product form by reaction? Expected: reaction makes product after compression. Support route: revisit C3 direct-change distinction and C2 equilibrium-rate board, availability subject to actual publication. Refresh coefficients and partial pressure in speech.",
+    "startsWith": "Established gas equilibrium, closed to reacting material, compressed at fixed temperature under the school ideal-gas model.",
+    "stopsAfter": "Predict compression/expansion from gaseous coefficients, equal-total no-shift case, and inert gas at fixed volume and temperature. No constant-pressure inert gas, Q/K calculations, industrial compromise, catalyst mechanism or practical conduct.",
+    "nextLesson": "C4B catalyst speed versus equilibrium composition under the same canonical chem-m5-c04 entry; then practical support p01/C5 expression construction."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json"
+  ],
+  "teaching": {
+    "task": "Predict fixed-temperature gas compression/expansion and distinguish an inert-gas pressure rise at fixed volume from compression.",
+    "causalExplanation": "Compression initially puts unchanged gas amounts into less space, increasing wall impact frequency and pressure. Net reaction toward fewer gaseous moles partly offsets that increase. Inert gas at fixed volume/T changes total pressure without changing reacting partial pressures. Coefficients represent stoichiometry, not an elementary rate law.",
+    "conversationalApproach": "Every accepted Part A spoken paragraph copied exactly from independently rechecked chemistry-c4.md. No new spoken metadata. K, inert gas and partial pressure have plain meanings. Display text is concise; captions must later faithfully follow fresh speech.",
+    "openingDecision": "Rhetorical compression question, immediately followed by explanation, not claimed retrieval. Text-only concept shell deliberately avoids unrelated HookSlide atom fallback; actual piston integration remains blocked.",
+    "understandingCheck": "Complete sulfur dioxide/sulfur trioxide gaseous equation; fixed T and increased volume; predict direction and explain gas coefficients. Prompt-only scene retains all conditions with an estimated six-second response gap; feedback is a separate scene. Expected: 3 versus 2, expansion favours left, unchanged T keeps K. No claim that estimated gap is measured or sufficient. Outgoing transition allowance: responseHold remains local 360-540; scene ends at 564, so the next scene begins at 540 with the existing 24-frame overlap. This is a structural estimate, not a measured recorded gap.",
+    "curriculumScope": "C4A delivery part under chem-m5-c04, Chemistry Stage 6 (2017) Year 12 M5. Candidate subsets C-disturbances cached p1067-p1070 and C-collision-observations p1071. Collision account explains particle pressure, not complete chemical relaxation. Investigation/named examples/practical conduct and complete action coverage remain pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "c4a-opening",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx; candidate chem12m5Pressure / PressureDiagram.tsx (selected adjustment pending)",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-compress",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx; candidate chem12m5Pressure / PressureDiagram.tsx (selected adjustment pending)",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-reason",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx; candidate chem12m5Pressure / PressureDiagram.tsx (selected adjustment pending)",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-contrast",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-inert",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx; candidate chem12m5Pressure / PressureDiagram.tsx (selected adjustment pending)",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-response",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "All conditions and demands persist; no answer content in this prompt-only scene. Provisional six-second response tail, to be assembled/measured after recording. Response interval ends at local 540; scene duration 564 leaves 24 outgoing transition frames after it. Incoming feedback begins no earlier than the declared hold end under current shared timeline. Recompute with actual prompt audio/window."
+    },
+    {
+      "sceneId": "c4a-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Use supported short task, separate equation and conditions, one current reasoning stage. Clear unrelated cases and answer history. Actual pressure/inert model integration is a TODO where flagged, not claimed implemented.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Reveal only current causal reasoning. Proposed piston motion explains compression before reaction. No measured motion review claimed.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-key-notes",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Distinct optional book notes after explanation, not simultaneous with new reasoning. Stable copy screen, no new scientific objective. Optional finalPrompt card omitted; spoken copy/pause invitation remains unchanged. This avoids SummarySlide FinalRuleCard ambient glow/border during copying.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. Copy invitation followed by provisional eight-second quiet tail.",
+      "motionPurpose": "Takeaway reveals settle before the proposed copy tail; no finalPrompt card, image or diagram selects ambient card motion. Native/phone-caption and voiced hold verification remain pending.",
+      "holdPurpose": "Quiet optional copying after invitation; actual readable hold and caption fit pending."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Independent C4 scope/science reviewer (Sol 6.1)",
+    "evidence": {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "sha256": "8c572dc214e3eb319e1fd882586f87963e98898f3b221016d400446aa7016558"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationReview": {
+    "status": "pass",
+    "reviewer": "Independent C4 scope/science reviewer",
+    "evidence": {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "sha256": "8c572dc214e3eb319e1fd882586f87963e98898f3b221016d400446aa7016558"
+    },
+    "limitation": "Corrected human-readable preparation only, SHA-256 f49c2fcee0e0559e7241a965788aaa0aab453780c110cc6e9f75d28e885e1325. Does not pass this selected JSON scriptReview."
+  },
+  "visualIntegration": {
+    "status": "changes-required",
+    "blockedScenes": [
+      "c4a-opening",
+      "c4a-compress",
+      "c4a-reason",
+      "c4a-inert"
+    ],
+    "libraryCandidate": {
+      "kind": "chem12m5Pressure",
+      "sourcePath": "src/slides/diagrams/kinds/chem-y12-m5/PressureDiagram.tsx",
+      "currentSourceSelection": "Not attached as an active diagram: its dense competing panels and prescribed transitions do not yet implement this reviewed staging."
+    },
+    "todos": [
+      "Bounded selected pressure presentation: original-position marker, immediate compression with composition held, subsequent stoichiometric response only at explanation cue.",
+      "Separate piston from equation/count reasoning; retain only relevant conditions. Existing props do not support hiding panels independently.",
+      "Label V=0.384/count sequence as schematic; no measured trace or literal four-body collision. Do not narrate as halving volume.",
+      "Fixed-volume inert-gas contrast with unchanged reacting species/partial-pressure meaning; avoid implication that inert particles never collide.",
+      "Native and phone-caption fit for all evidence boards; notes may split into two stable boards if four lines crowd.",
+      "Resolve all estimated cues/response and copy holds using fresh audio; keep first feedback after actual response boundary."
+    ]
+  },
+  "limitation": "Selected draft source and structural integration reviewed. Pressure/inert library visual integration, recording, voiced preview, listening and release remain pending. No old audio, captions or paid speech.",
+  "integrationCorrections": {
+    "status": "source-recheck-pass",
+    "findings": [
+      "Protect the full response hold from the 24-frame outgoing transition overlap.",
+      "Omit summary finalPrompt to prevent FinalRuleCard ambient glow/border during quiet copying."
+    ],
+    "narrationChanged": false,
+    "limitation": "Structural source correction only. No audio, frame, continuous playback, listening or visual integration approval."
+  }
+}

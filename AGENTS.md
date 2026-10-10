@@ -40,6 +40,13 @@
   text or skipping assumptions. Keep every question demand and necessary
   supplied condition available during the response opportunity. Apply this
   check in script review and exact voiced preview, alongside caption fit.
+- Keep each video focused on one main learner question. Split distinct
+  objectives when combining them would rush the explanation or crowd the
+  screen. Show one current reasoning stage and only the supporting facts it
+  needs. After explaining, offer a brief optional "Key notes: what to write
+  in your book" hold with a small useful set of essentials and time to copy
+  or pause. Do not ask students to copy dense notes while following new
+  narrated reasoning. Choose notes by usefulness, without item quotas.
 - Use docs/production/course-progression-plan-2026-10-09.md and its ledger
   and content checklist before choosing the next video. New production
   briefs require entry knowledge, start/stop boundaries and the next

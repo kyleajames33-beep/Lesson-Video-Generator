@@ -1,0 +1,24 @@
+# Final calculation package technical review
+
+Reviewer: Sol 6.1, /root/approved_calculation_release_checks. Date: 10 October 2026.
+
+Exact packages: empirical-formulas full-render-02; mole-ratios, mass-to-mass and limiting full-render-01 under out/prototypes/calculation-full-2026-10-10. Detailed hashes, metadata, caption checks and decoded-frame coordinates are in technical-package-checks-2026-10-10.json in this directory. All four current MP4 hashes match their immutable render records. All four release snapshots verify with zero changed or missing dependencies against out/checks/review-batch-byte-preserved-2026-10-09. Full H.264 video and AAC audio decode completed without decoder errors for all four files. No source, audio, frozen brief or render dependency was changed.
+
+## Review basis and limits
+
+Device: inspected twelve actual decoded samples per video at 480 by 270 pixels, plus actual calculation states at 960 by 540 pixels. This is desktop and narrow landscape size evidence. It is not physical phone testing, portrait testing or a claim that every secondary label is comfortable on a small handset. Essential equations, task demands, given values and active result lines fit the observed states. Secondary notes are small at 480 pixels; users can enlarge the player. Existing usable layouts are preserved.
+
+Motion: inspected actual decoded answer sequences at two frames before the answer-visible cue, twelve frames after it, and twenty frames after the final reasoning-stage cue. Coordinates use the pinned renderer's shared lessonTimeline, including transition overlaps. All four retain the full question, reaction and supplied conditions through the response hold; answers are absent just before the reveal, begin to appear after it, and later stages preserve necessary established results. The timer and explanatory reveal serve the response opportunity. These are sampled temporal sequences, not an agent continuous full watch. Actual native Chrome playback was additionally sampled for each exact MP4: empirical opening/concept, mole-ratio opening, mass-to-mass opening and limiting reaction model. The owner's reported full watching and acceptance is separately preserved in ../user-approved-release-2026-10-10.json. It supplies the human full-watch basis; this agent does not claim to have continuously watched all four.
+
+Accessibility: all SRT cue intervals were checked for positive duration, chronological order and bounds within their exact exported file. No violations were found. Counts are 122, 115, 156 and 116 respectively. No caption text contains U+2014. The review page attaches each exact captions.vtt as a native video track. Actual Chrome caption playback was inspected and screenshot evidence preserved as each video's caption-browser.png. The sampled captions use a dark backing, fit the player and clear essential opening/model content. Diagram species are identified by text/formulas and counts; calculations identify units, operations, inequalities and named results, so colour is not the only carrier of meaning. This is scoped caption and visual-accessibility review, not an assistive-technology certification or every-caption visual audit.
+
+## Per-video findings
+
+| Video | Technical finding | Disposition |
+| --- | --- | --- |
+| Empirical formulas | Worked and practice boards retain composition, molar masses and normalised ratios. Practice answer absent before hold end and later NO2 is clearly shown. Caption opening and concept samples clear labels. | Pass within the stated scope. |
+| Mole ratios | Formal equation and coefficient givens remain visible. Practice keeps both water-produced and oxygen-required demands, then stages their separate calculations. Caption sample clears equation and heading. | Pass within the stated scope. |
+| Mass-to-mass | Unit-associated constants, supplied mass and necessary assumptions remain visible. Practice answer stages MgO molar mass before Mg mass. Orange decorative handwriting touches the misconception heading in the sampled montage around 4:29; essential heading and correction remain readable. | Pass. Decorative spacing is a future refinement, not a material teaching blocker in this accepted release. |
+| Limiting reagents | Reaction model identifies species and counts in text. Practice gives both masses and molar masses throughout the hold, then compares capacities with a written limiting-reactant conclusion. Caption sample at the reaction-model opening clears essential species labels. | Pass within the stated scope. |
+
+The owner's future feedback about reducing content density and adding notebook guidance remains a next-production improvement, not a source rewrite bound to these recordings. No paid narration, rendering, upload, publication or commit was performed by this reviewer.

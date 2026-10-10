@@ -4,6 +4,89 @@ Prepared 10 October 2026 by the delegated Sol 6.1 author. **Unrecorded human-rea
 
 ## Identity and exact inputs
 
+### Current planning update: focus, reading load and book notes
+
+The original preparation and its candidate Speech below are preserved as
+authoring history. The canonical `bio-m5-b02b` now has four adopted
+organism-group delivery parts: plants, fungi, bacteria and protists. The
+plant part is first. References below to a proposed subdivision or an
+uncreated selected source describe the earlier preparation stage, not the
+current route.
+
+The current selection record names
+`docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json`
+and its production brief. It records an exact silent source/model and
+sampled native pass, with fresh narration and later review pending. This
+planning update does not change that selected source, approved words,
+recordings or frozen evidence. The existing corrected
+`bioM5PlantReproduction` / `PlantReproductionBoard.tsx` is active in five
+selected scenes. Its flower locations, delivery, seed nesting, runner and
+self/cross modes are the first reuse candidates. The legacy
+`bio12m5Flower` findings below remain relevant to that legacy component;
+they do not describe the corrected selected board as unimplemented.
+
+**One main question:** How can a new plant form with or without gamete
+fusion? Flower locations support the delivery explanation, seed nesting
+explains what develops after fusion, and the runner supplies the useful
+contrast. Keep these connected stages together if the exact preview gives
+each enough explanation and reading time. Avoid teaching the whole plant
+life cycle or agricultural advantages in this video.
+
+For the next selected revision, prioritise the mechanism and the stopped
+pollen-tube response. Keep self-fertilisation as a short contrast establishing
+that one plant can still supply fusing gametes. The existing three-case
+classification and separate conditions/constraints scene repeat or extend
+the main explanation. Recommend moving that longer application to the
+planned reproduction practice opportunity if a complete preview shows
+rushing or excessive duration. Retain its evidence and appropriate future
+handoff, rather than shrinking its text. This is a selection recommendation,
+not an edit or a new adopted route split. Do not move the required sexual
+and asexual plant mechanisms out of the plant contribution.
+
+**Screen selection:** During location teaching, show the current labelled
+part and only the containers needed to locate it. During tube delivery,
+retain stigma, the tube route and the ovule/egg inset; remove the full
+location paragraph. During fusion, focus on separately identified sperm
+and egg, then the zygote. During seed development, retain the embryo inside
+the seed boundary and clear the pollen-route explanation. Reset to a
+runner/node/root/shoot model for vegetative propagation. A classification
+example should show only that current case and its premise about fusion;
+earlier answer history adds no needed reasoning. Stable labels and a useful
+reference are preferable to multiple explanatory paragraphs. Preserve the
+complete stopped-tube stimulus and both response demands during the
+attempt, with transition overlap accounted for when measuring the gap.
+
+**Optional book-note board after explanation:**
+
+- Pollination: pollen moves from anther to stigma. It does not prove fusion.
+- Fertilisation: sperm joins egg; the zygote develops into an embryo.
+- In this flowering-plant pathway, the ovule becomes a seed containing the embryo.
+- Strawberry runner: a new plant grows from a stem without gamete fusion.
+
+These four essentials were selected for this explanation, not as an item
+quota. Keep a brief silent heading, `Key notes: what to write in your book`,
+and a pause/copy instruction. Prefer a distinct quiet copy scene after the
+spoken recap, so notes do not compete with new reasoning. Use the existing
+SummarySlide without its optional finalPrompt card, image or diagram: the
+card adds ambient motion unsuitable for the copying hold. Let text reveals
+settle before the hold. Start with an estimated eight-second quiet copying
+interval and offer optional pausing; actual reading time, caption clearance
+and phone fit must be checked. Stage two note boards if necessary, instead
+of shrinking text. Leave the next-group handoff separate from the copy
+board. No new speech is authorised by these silent planning notes.
+
+**Next concrete production step:** root chooses whether to retain or move
+the repeated application/conditions extension, then prepares a bounded
+selected revision of the existing lesson and brief with the quiet note
+board. Preserve existing five-mode artwork and approved source history.
+Review the exact changed selected source independently before recording.
+Any changed recorded wording requires new affected audio/alignment; do not
+silently reuse takes. Check complete silent motion, the hardest labels,
+current-case staging, full prompt, transition-protected attempt and notes
+at native and small-player sizes. Fresh narration, measured cues/holds,
+exact voiced preview, separate human listening, export and the existing
+full-package release gate remain separate outstanding requirements.
+
 | Field | Preparation decision |
 | --- | --- |
 | Working title | Reproduction in Plants: Pollen, Seeds and Runners |

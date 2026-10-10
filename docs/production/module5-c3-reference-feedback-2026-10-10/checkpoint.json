@@ -7,7 +7,7 @@
   },
   "teachingBrief": {
     "path": "docs/production/module5-c3-reference-feedback-2026-10-10/production-brief.json",
-    "sha256": "5f41a1c5dca8cf0233818379bf0c2f73d03dff662043fc3a9eb1fdc3c0ab27e7"
+    "sha256": "4310e4991407b2d33cd94e910407851e00e3228f17ad6eca575500afa20ae762"
   },
   "independentReview": {
     "path": "docs/production/module5-c3-reference-review-2026-10-10.md",
@@ -22,13 +22,18 @@
     "sha256": "2366216248b93c67deaf871d03c82657cacfc5fd64055bba8101f3592c3ff3fa"
   },
   "url": "http://127.0.0.1:8778/module5-c3-reference-review-2026-10-10/",
-  "status": "two-display-feedback-changes-source-and-targeted-ui-checked",
-  "unchanged": "Recorded words/audio/captions, durations, measured cues, holds and scientific model. Earlier feedback generally positive, but not a new full export/release approval.",
+  "status": "owner-approved-full-export-running",
+  "unchanged": "Recorded words/audio/captions, durations, measured cues, holds and scientific model remain unchanged. Owner reported watching and accepted exact current Player on 10 October.",
   "remaining": [
-    "Teacher check of new marks and scope labels",
-    "Complete exact voiced playback/caption/readability review",
-    "Current production brief export and full-package release gates"
+    "Complete full render and final technical package checks",
+    "Publish after manual HSCScience sign-in"
   ],
   "planning": "docs/production/module5-practice-and-reuse-plan-2026-10-10.md",
-  "media": "Reuse module5-c3-voiced-media-2026-10-10.zip. New candidate and page inputs tracked; rebuild new Player with tracked builder. No new paid narration or ignored media."
+  "media": "Reuse module5-c3-voiced-media-2026-10-10.zip. New candidate and page inputs tracked; rebuild new Player with tracked builder. No new paid narration or ignored media.",
+  "ownerApproval": "docs/production/user-approved-release-2026-10-10.json",
+  "fullRender": {
+    "configPath": "docs/production/module5-c3-reference-feedback-2026-10-10/full-config.json",
+    "outputPath": "out/prototypes/module5-c3-reference-2026-10-10/full-render-01",
+    "status": "running"
+  }
 }

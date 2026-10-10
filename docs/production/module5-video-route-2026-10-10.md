@@ -6,10 +6,10 @@ The teacher's current Year 12 priority uses the 2017 Module 5 route described in
 
 | Subject | Existing M5 source candidates | Planned core videos | Companions | Practical support | Planned focused uploads |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Chemistry | 18 | 15 | 4 | 3 | 22 |
+| Chemistry | 18 | 16 | 4 | 3 | 23 |
 | Biology | 19 | 21 | 3 | 3 | 27 |
 
-Chemistry has 21 M5-specific proposed uploads plus one optional reused limiting-reactant entry branch. Biology now has 27 proposed focused uploads within 24 canonical route entries. The plants/fungi/bacteria/protists entry contains four separately bounded delivery parts, adding three uploads while retaining its canonical action mapping. These are provisional teaching boundaries, not fixed feature quotas, completed videos or promises of separate new recordings. A shared reviewed upload can supply a prerequisite; independent review may merge or split a boundary while preserving required actions. All 37 M5 sources are assigned explicitly in the JSON, including retained, merged, split and deferred portions.
+Chemistry has 22 M5-specific planned uploads plus one optional reused limiting-reactant entry branch, within 22 canonical entries. C4 expands to two adopted delivery parts: C4A pressure/volume/inert gas, then C4B catalysts. Biology now has 27 proposed focused uploads within 24 canonical route entries. The plants/fungi/bacteria/protists entry contains four separately bounded delivery parts, adding three uploads while retaining its canonical action mapping. These are provisional teaching boundaries, not fixed feature quotas, completed videos or promises of separate new recordings. A shared reviewed upload can supply a prerequisite; independent review may merge or split a boundary while preserving required actions. All 37 M5 sources are assigned explicitly in the JSON, including retained, merged, split and deferred portions.
 
 There are 25 Chemistry and 32 Biology grouped action mappings to cached paragraph IDs. All 57 have candidate route assignments, and zero have approved full required-action coverage here. Required paragraphs checked locally have candidate assignments, but exact scene-level decomposition, learner responses and practical/data evidence remain open. The existing canonical checklist does not yet certify either legacy M5 course.
 
@@ -23,7 +23,7 @@ Core order preserves C1-C6 before the later application and solution-equilibrium
 | 2 | chem-m5-c02 | How reversible reactions approach equilibrium | core | L2, L3 | C2 |
 | 3 | chem-m5-g01 | Non-equilibrium systems: enthalpy and entropy | companion | L2 | L2 legacy companion retained |
 | 4 | chem-m5-c03 | Disturbing equilibrium: concentration and temperature | core | L5 | C3 |
-| 5 | chem-m5-c04 | Gas volume, pressure and catalysts | core | L6 | C4 |
+| 5 | chem-m5-c04 | C4A gas pressure/volume/inert gas, then C4B catalysts | core (two delivery parts) | L6 | C4 |
 | 6 | chem-m5-p01 | Reversibility and disturbance investigation preparation | practical-support | L1, L2, L3, L5, L6 | Practical/data route |
 | 7 | chem-m5-c05 | Writing and interpreting equilibrium expressions | core | L9 | C5 |
 | 8 | chem-m5-c06 | Calculating equilibrium constants and concentrations | core | L10 | C6 |
@@ -113,3 +113,7 @@ Local structural checks passed: 18 Chemistry and 19 Biology M5 sources assigned,
 ## Organism-group delivery refinement, 10 October
 
 The canonical `bio-m5-b02b` route now contains four focused video parts: plants, fungi, bacteria and protists, in that learner order before mammalian development. Their exact start/stop boundaries and action references are in `deliveryParts` in the JSON and visible on the planning page. The plant-only [B3 candidate](drafts/module5-next-preparation-2026-10-10/biology-b3-plants.md) has an [independent preparation review](biology-b3-plants-preparation-review-2026-10-10.md); selected JSON, corrected diagrams, response evidence, recording and playback remain pending. The other three parts are unprepared. No canonical action ID or coverage approval is created by this subdivision.
+
+## C4 delivery refinement, 10 October
+
+Root adopted C4A pressure/volume/inert gas followed by C4B catalyst speed versus equilibrium composition under the existing chem-m5-c04 entry. The [unrecorded preparation](drafts/module5-next-preparation-2026-10-10/chemistry-c4.md) supplies separate questions, response opportunities and brief book notes. Boundaries and candidate action subsets are in the JSON deliveryParts. Independent review, selected source, visual corrections, recording and release remain pending. This adds one core upload without adding a canonical action ID or claiming coverage approval.

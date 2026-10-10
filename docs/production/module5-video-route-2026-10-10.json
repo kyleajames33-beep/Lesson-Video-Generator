@@ -36,15 +36,15 @@
   "summaries": {
     "Chemistry": {
       "sourceCandidates": 18,
-      "plannedUploads": 22,
-      "core": 15,
+      "plannedUploads": 23,
+      "core": 16,
       "companions": 4,
       "practicalSupport": 3,
       "mappedActionGroups": 25,
       "approvedActionGroups": 0,
       "publicUploadsClaimedByThisPlan": 0,
-      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload.",
-      "module5SpecificPlannedUploads": 21,
+      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload. C4 now has two focused delivery parts, adding one core upload under the same canonical entry.",
+      "module5SpecificPlannedUploads": 22,
       "optionalCrossModuleSupport": 1
     },
     "Biology": {
@@ -212,7 +212,7 @@
           ],
           "entryKnowledge": "Balanced gaseous coefficients and particle pressure reasoning.",
           "start": "Compress a gas mixture at fixed temperature.",
-          "stop": "Justify gaseous-coefficient reasoning, distinguish inert gas at fixed volume from compression, and explain catalyst scope.",
+          "stop": "Across two delivery parts, justify gaseous-coefficient reasoning, distinguish inert gas at fixed volume from compression, and explain catalyst scope.",
           "next": [
             "chem-m5-c05",
             "chem-m5-p01"
@@ -224,7 +224,32 @@
           ],
           "status": "source-present-unreviewed",
           "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
-          "placement": "Core learner route"
+          "placement": "Core learner route",
+          "deliveryParts": [
+            {
+              "order": 1,
+              "label": "C4A",
+              "title": "Gas pressure and volume: does higher pressure always shift equilibrium?",
+              "syllabusActions": ["C-disturbances", "C-collision-observations"],
+              "status": "candidate-preparation-independent-review-pending",
+              "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
+              "start": "Compress an established gas equilibrium at fixed temperature; explain the immediate pressure change before the reaction response.",
+              "stop": "Predict compression/expansion using gaseous coefficients under the school ideal-gas model; distinguish equal gas totals and inert gas added at fixed volume and temperature. No Q calculations or constant-pressure inert-gas case.",
+              "next": "C4B: catalyst effects on rate and equilibrium composition."
+            },
+            {
+              "order": 2,
+              "label": "C4B",
+              "title": "Catalysts: faster reaction, same equilibrium composition",
+              "syllabusActions": ["C-activation"],
+              "status": "candidate-preparation-independent-review-pending",
+              "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
+              "start": "Refresh activation energy, then compare catalyst effects at fixed temperature and the same reacting amounts.",
+              "stop": "Explain faster approach and unchanged equilibrium composition/K; distinguish product formed in a limited time from equilibrium amount without claiming a universal equal enhancement factor.",
+              "next": "Existing practical support p01 or core C5 equilibrium expressions."
+            }
+          ],
+          "deliveryNote": "Root adopted the C4A/C4B delivery split on 10 October after the teacher's focus and clutter feedback. Both uploads remain under chem-m5-c04, with existing action associations and next links preserved. Prepared speech and visuals still need independent review; no recording or coverage approval is inferred."
         },
         {
           "id": "chem-m5-p01",

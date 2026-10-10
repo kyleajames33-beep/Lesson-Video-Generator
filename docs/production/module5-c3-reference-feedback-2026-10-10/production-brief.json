@@ -142,19 +142,25 @@
     }
   },
   "voicedPreview": {
-    "status": "pending",
-    "reviewer": "",
-    "mode": "",
-    "inputSnapshotPath": "",
-    "evidence": null,
+    "status": "pass",
+    "reviewer": "Kyle, project owner (reported exact voiced Player watch); coordinator verified all 762 preview inputs unchanged",
+    "mode": "ui-playback",
+    "inputSnapshotPath": "docs/production/module5-c3-reference-feedback-2026-10-10/approved-preview-inputs.snapshot.json",
+    "evidence": {
+      "path": "docs/production/user-approved-release-2026-10-10.json",
+      "sha256": "9c4919c255b6c8f6c80920203648ac5ef49293e5b983f168c24b34f10af4a2cc"
+    },
     "humanListening": {
-      "status": "pending",
-      "reviewer": "",
+      "status": "pass",
+      "reviewer": "Kyle, project owner, reported watching and accepting presented current videos",
       "mode": "human-listening",
-      "evidence": null
+      "evidence": {
+        "path": "docs/production/user-approved-release-2026-10-10.json",
+        "sha256": "9c4919c255b6c8f6c80920203648ac5ef49293e5b983f168c24b34f10af4a2cc"
+      }
     }
   },
-  "limitation": "Display-only feedback candidate. Existing spoken text, takes, timing and protected holds preserved. Teacher watched parent and described it as decent, but requested syllabus clarity and reference-mark changes. This is feedback, not approval of corrected visuals or release.",
+  "limitation": "Owner reported watching and accepted current exact voiced Player and release on 10 October. All 762 existing Player inputs verified unchanged before binding snapshot. This is owner-reported preview/listening, not an invented coordinator continuous watch or approval of a future exported MP4. Earlier targeted UI and separate source/timing evidence remain scoped. Final export technical gate is separate.",
   "preparationReview": {
     "status": "pass",
     "reviewer": "Sol 6.1 preparation reviewer",
@@ -165,10 +171,10 @@
     "limitation": "Earlier exact Markdown only. scriptReview below remains pending for this JSON."
   },
   "visualIntegration": {
-    "status": "source-and-targeted-ui-checked-complete-voiced-review-pending",
+    "status": "owner-accepted-exact-voiced-preview",
     "component": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
     "reason": "Teacher reports dotted bar reference lines look poor. Selected hook opts into short solid round-ended side marks; original levels still visible. Existing graph guide styles and default consumers preserved.",
-    "limitation": "Source and actual UI checks pending; new exact complete preview/export review required.",
+    "limitation": "Root targeted UI evidence plus owner-reported exact voiced Player acceptance. Full exported package not yet reviewed.",
     "uiEvidence": {
       "path": "docs/production/module5-c3-reference-feedback-2026-10-10/ui-observations.json",
       "sha256": "08549937f3538c29d9003115bae480b324c84c1487e401c4e81058c240d244ce"
