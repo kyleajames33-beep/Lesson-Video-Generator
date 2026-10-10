@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "status": "author-preparation-pending-independent-science-source-and-preview-review",
+  "baselineRuntime": "1fd9fd2a3c421e796b7a7478c8271615f4e88815",
+  "purpose": "Respond to user feedback about clutter and plain explanations for students beginning Year 12. Keep the current question, relevant evidence and one current reasoning stage. Remove the established-result trail only in the new opt-in layout.",
+  "runtimeOwnership": "Root owns focusedContext types and renderer. This author changes only additive selected presentation data and records.",
+  "sourceFiles": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "dec5ccbecc4d1fdd4b07549df51c6c711765f9e387ebf16dff57bbe3fb6738cc"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "bec433f72cb1e93f9d55a404c61174f4b31b6991c44768796e920133c0fc2f34"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2"
+    }
+  ],
+  "invariants": {
+    "onlyThreeCalculationPresentationsDiffer": true,
+    "spokenWordsAudioCaptionsDurationsRevealDelaysAndLineAtsUnchanged": true,
+    "stageCountAndTwoLineShapeUnchanged": true,
+    "noPaidVoiceOrRender": true,
+    "preservedPriorFiles": true
+  },
+  "geometry": {
+    "estimatesOnly": true,
+    "contextTop": 350,
+    "contextWidth": 600,
+    "workingLeft": 704,
+    "workingRight": 64,
+    "questionTop": 142,
+    "captionReserveStartsAt": 850,
+    "contextFontSize": 50,
+    "resultFontSize": 58,
+    "stageLabelFontSize": 48,
+    "maximumContextRows": 5,
+    "estimatedFiveUnwrappedRowCardBottom": 830.2,
+    "headerEquationOmitted": true,
+    "limitation": "Source layout estimate assumes one line for each context row/title. Native wrapping, glyph bounds, entry transforms, caption controls and small-player fit require the exact new pilots."
+  },
+  "preservedFiles": [
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/author-check.json",
+      "sha256": "2715a594a7a4abaf5ab3cb765fb6fcfb198d65b4f91b1f2ba88b3469305950ff"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/draft-check.json",
+      "sha256": "5310a928ad908f3d7cfd1281b9e8618218d081c8e1d7e7574c806d46dbaae76c"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/lesson-validation.txt",
+      "sha256": "5b5c130075a38aab70a9f005bb9b0f48ace57ca30b01dd346d8268129091eb02"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/production-brief.json",
+      "sha256": "c10730878d5324cea44bc98dc5a49218c46bf3cf89d45ba1d710d2e1882e520d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/quick-pilot01-config.json",
+      "sha256": "9b4242a733a7fb2fa040f796e252a17884af0bcea68f4798a524eb6d056e4832"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/worked-pilot03-config.json",
+      "sha256": "1edc135280c6ce7a96e80b92345a58085219103a8fed6036ec1783c3bad50ed8"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/before-inputs.json",
+      "sha256": "defa6e7145e19c7c2004b378e4bcd35e2d88bacb2c482c27589197354227cd9a"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/draft-check.json",
+      "sha256": "33adb3173f30f321e3a6ad01df2dbf6ffe8bc9b9ac2d20068021b5604bb36548"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/lesson-validation.txt",
+      "sha256": "a8c71d708c6f84eafc223e17269e0d2e64a1ebbf88424921f1472d841768cac4"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/production-brief.json",
+      "sha256": "0b9e605d0718d3559c26edc563995d9b9fdf5653b0e52e112abba0746a328c94"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/transfer-pilot03-config.json",
+      "sha256": "e0f326c12993bcced524b2a9fea8a171e46ae91ce6e35dbc3d62975ae509826d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/check-markup.mjs",
+      "sha256": "cd82b665a239208906326e770c3927c2f07558d3a8c47f0c438efe5c4e440dcb"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/check-package.mjs",
+      "sha256": "8338bca3e4d13648d63754a5cad9225aa0a04c80c41002aef746b913a350c572"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/correction-record.json",
+      "sha256": "34c0051bcebe8440d1ae0cbd50e4248929dd909ed6439dfb113636afe7ac1f4c"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/freeze-author-inputs.mjs",
+      "sha256": "1b51124ec5578a540ea1a0263d19d1cb2d31edb0a48a81bb7aff9dcd7bca4e15"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/frozen-author-inputs.json",
+      "sha256": "f813874a1da78d54db8cdc60c828eb1c3c20709fd7d1635f3436075c6c8216bb"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/markup-check.json",
+      "sha256": "1f96ffa7ce0b4e906809a80e44ea8f7d92251132509265221faac57039df0c52"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/prepare-v4.mjs",
+      "sha256": "dadd928a57788506725f91887f5e523c551d79474f2a540e70a6d7ffce121661"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/README.md",
+      "sha256": "7af579033d550292afc78af30e70332dac52ccbef4a9f1969642a4c2616f2b62"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/review-selection.json",
+      "sha256": "0e2959e8e52b800a64892b60b1a6fd0c20aace30707e37d74a376b0eaed2f7fc"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/tsc-check.txt",
+      "sha256": "f46837498c07f56769c20ba7f3bd54881c1d1860c3c71ad7456511f047bca2fe"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "2c8426e90d7763d2e61fb34aca401a94fb42eb979cadb9d01ff90da6542e72a8"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "6ec7d43a03d32ff02ca50df56da046385ecf0a7152143f028e2a1641d7d34267"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "1f27d4cb94bbf0773629680f0d33fc6a96434f7ebebc83c95302509300ba2b0f"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.srt",
+      "sha256": "e4d62270fd572bbf3173610355c5fc4614d67116cc20b1bc9d7f220ff8aceaff"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.vtt",
+      "sha256": "95d682f79c01dff658e7240c0abcfec2061875b30c77435df16479e4f9a57590"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v4.lesson.json",
+      "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "68a69277f041d60281369572e4f670d37e22ece12ab000706d638324bd103a90"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "7019df979071b2f87ab4e492d4619190dff5db7a48be5e8708c68c895cb91a40"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v3.json",
+      "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v4.json",
+      "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "b402dbab0e32c953a3dd764bef47b46c59910c3227d3cf66b28a1184448adeef"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "f88f4aa07a616d8209765380e170028ab0d3385a48f60516f39860e8e10282d4"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "515db1ccca5c0bffaac79ff680cf5d50153c30ad0944ef86061dec54cf1a5732"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "72d5f9b3c2e205b1c78bf147f0aab197f0880d92e8c39268cf373651b66bb6c6"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "f4f0bf6ac5fd414d00e8e53aa19b0859b9d97d18752455a3ffaf03eb11917b49"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+      "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "3217ae473f9929986e853804766ab4d1a6f20067f360052e979b1b1e2e4d0dc0"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/production-brief-v2.json",
+      "sha256": "93acb2e6ea45185ca90ea50508731d2905d19df1909a79c94a0242c1b271410b"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "08aba4de4505b46eed58cf18b58891d7a1f319935d4b74c3b0d0328f39122f37"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v3.json",
+      "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v4.json",
+      "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "c94cf938483c2764a46943f9b2800747024be88042f2b6e749e8da9b74a41e08"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/v2-order-correction.json",
+      "sha256": "73a38bbe4efa2056f5baf7af8eeb125efb254f574af7957a25c02e0ce563dfe5"
+    }
+  ],
+  "alignmentCues": [
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "C and D interconvert",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 23,
+      "startSeconds": 2,
+      "frame": 60,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "closed container",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 61,
+      "startSeconds": 4.72,
+      "frame": 142,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "constant temperature",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 81,
+      "startSeconds": 6,
+      "frame": 180,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "mostly as D",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 133,
+      "startSeconds": 9.12,
+      "frame": 274,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "a forward rate",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 170,
+      "startSeconds": 12,
+      "frame": 360,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "a reverse rate",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 212,
+      "startSeconds": 15.44,
+      "frame": 464,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "same scale",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 256,
+      "startSeconds": 18.88,
+      "frame": 567,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "C initially increases",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 553,
+      "startSeconds": 49.06666666666667,
+      "frame": 1472,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "phrase": "With the suitable catalyst",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "characterIndex": 856,
+      "startSeconds": 72.82666666666667,
+      "frame": 2185,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "phrase": "In the frog case",
+      "alignmentPath": "public/audio/assembled/worked-example.b064fb050ba2bce2e4fb.53e28e4e1b7f.alignment.json",
+      "alignmentSha256": "4a5e4a73e1236406fbd58a43fc315cc50f0a463eec50a2ecedea84bf7c116048",
+      "characterIndex": 43,
+      "startSeconds": 2.88,
+      "frame": 87,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "phrase": "eggs and sperm meet",
+      "alignmentPath": "public/audio/assembled/worked-example.b064fb050ba2bce2e4fb.53e28e4e1b7f.alignment.json",
+      "alignmentSha256": "4a5e4a73e1236406fbd58a43fc315cc50f0a463eec50a2ecedea84bf7c116048",
+      "characterIndex": 77,
+      "startSeconds": 5.04,
+      "frame": 152,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "phrase": "In the kangaroo case",
+      "alignmentPath": "public/audio/assembled/worked-example.b064fb050ba2bce2e4fb.53e28e4e1b7f.alignment.json",
+      "alignmentSha256": "4a5e4a73e1236406fbd58a43fc315cc50f0a463eec50a2ecedea84bf7c116048",
+      "characterIndex": 260,
+      "startSeconds": 17.72,
+      "frame": 532,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "phrase": "sperm meets egg",
+      "alignmentPath": "public/audio/assembled/worked-example.b064fb050ba2bce2e4fb.53e28e4e1b7f.alignment.json",
+      "alignmentSha256": "4a5e4a73e1236406fbd58a43fc315cc50f0a463eec50a2ecedea84bf7c116048",
+      "characterIndex": 282,
+      "startSeconds": 19.12,
+      "frame": 574,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "phrase": "Now the bird",
+      "alignmentPath": "public/audio/assembled/worked-example.b064fb050ba2bce2e4fb.53e28e4e1b7f.alignment.json",
+      "alignmentSha256": "4a5e4a73e1236406fbd58a43fc315cc50f0a463eec50a2ecedea84bf7c116048",
+      "characterIndex": 403,
+      "startSeconds": 28.4,
+      "frame": 852,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "phrase": "already fertilised egg",
+      "alignmentPath": "public/audio/assembled/worked-example.b064fb050ba2bce2e4fb.53e28e4e1b7f.alignment.json",
+      "alignmentSha256": "4a5e4a73e1236406fbd58a43fc315cc50f0a463eec50a2ecedea84bf7c116048",
+      "characterIndex": 424,
+      "startSeconds": 29.6,
+      "frame": 888,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "adults release",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 65,
+      "startSeconds": 4.8,
+      "frame": 144,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "same patch",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 104,
+      "startSeconds": 7.08,
+      "frame": 213,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "A second group",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 142,
+      "startSeconds": 9.76,
+      "frame": 293,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "same numbers",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 170,
+      "startSeconds": 11.32,
+      "frame": 340,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "stronger current",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 201,
+      "startSeconds": 13.04,
+      "frame": 392,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "gametes remain viable",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 261,
+      "startSeconds": 17.04,
+      "frame": 512,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "In the stated model",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 520,
+      "startSeconds": 44.666666666666664,
+      "frame": 1340,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "phrase": "And fertilisation",
+      "alignmentPath": "public/audio/assembled/quick-check.3f1d649c5824df30219b.2b0fa8ebfb93.alignment.json",
+      "alignmentSha256": "8cef7b0cfe2cb106d217f6f122dc7646ac4cd0d0f3ef90f8a852778dbf4d8ef8",
+      "characterIndex": 879,
+      "startSeconds": 67.78666666666666,
+      "frame": 2034,
+      "units": "scene-local frames, ceiling of measured phrase onset"
+    }
+  ],
+  "packages": [
+    {
+      "key": "c2",
+      "parent": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v4.lesson.json",
+        "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+        "sha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa"
+      },
+      "props": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v5.json",
+        "sha256": "050d9ca5fb7b6377062497031024a43263b83eaf5d5af4972c06c4a6763b2fb0"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/production-brief.json",
+        "sha256": "0b9e605d0718d3559c26edc563995d9b9fdf5653b0e52e112abba0746a328c94"
+      },
+      "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/production-brief.json",
+      "selectedSceneIds": [
+        "c2-transfer"
+      ],
+      "fullTimelineDurationInFrames": 11308,
+      "configPaths": [
+        "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/transfer-pilot-config.json"
+      ]
+    },
+    {
+      "key": "b2",
+      "parent": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+        "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+        "sha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc"
+      },
+      "props": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v5.json",
+        "sha256": "6554f8b04c67a89e203d3c2307ba7071a857b4eef70462d11349cacd3f2b746f"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/production-brief.json",
+        "sha256": "c10730878d5324cea44bc98dc5a49218c46bf3cf89d45ba1d710d2e1882e520d"
+      },
+      "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/production-brief.json",
+      "selectedSceneIds": [
+        "worked-example",
+        "quick-check"
+      ],
+      "fullTimelineDurationInFrames": 13963,
+      "configPaths": [
+        "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/worked-pilot-config.json",
+        "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/quick-pilot-config.json"
+      ]
+    }
+  ],
+  "pilots": [
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "configPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/transfer-pilot-config.json",
+      "proposedOutputDirectory": "out/prototypes/module5-c2-voiced-2026-10-10/transfer-simple-pilot01",
+      "localFrameRangeInclusive": [
+        0,
+        2877
+      ],
+      "globalFrameRangeInclusive": [
+        7309,
+        10186
+      ],
+      "frames": 2878,
+      "seconds": 95.93333333333334,
+      "scope": "Complete task scene including prompt, full response hold when present, all feedback and reading tail. Adjacent transition overlap remains part of the actual lesson runtime."
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "configPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/worked-pilot-config.json",
+      "proposedOutputDirectory": "out/prototypes/module5-b2-voiced-2026-10-10/worked-simple-pilot01",
+      "localFrameRangeInclusive": [
+        0,
+        1422
+      ],
+      "globalFrameRangeInclusive": [
+        7584,
+        9006
+      ],
+      "frames": 1423,
+      "seconds": 47.43333333333333,
+      "scope": "Complete task scene including prompt, full response hold when present, all feedback and reading tail. Adjacent transition overlap remains part of the actual lesson runtime."
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "configPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/quick-pilot-config.json",
+      "proposedOutputDirectory": "out/prototypes/module5-b2-voiced-2026-10-10/quick-simple-pilot01",
+      "localFrameRangeInclusive": [
+        0,
+        2685
+      ],
+      "globalFrameRangeInclusive": [
+        10044,
+        12729
+      ],
+      "frames": 2686,
+      "seconds": 89.53333333333333,
+      "scope": "Complete task scene including prompt, full response hold when present, all feedback and reading tail. Adjacent transition overlap remains part of the actual lesson runtime."
+    }
+  ],
+  "reviewStatus": {
+    "science": "pending",
+    "independentSource": "pending",
+    "nativePreview": "pending",
+    "humanListening": "pending",
+    "release": "pending"
+  }
+}

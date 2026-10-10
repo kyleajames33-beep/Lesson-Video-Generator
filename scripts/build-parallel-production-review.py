@@ -55,13 +55,18 @@ for subject in ['chemistry', 'biology']:
                   + f'<p class="small">Exact draft SHA-256: {e(digest)}</p></section>')
 
 preparations = []
-for file_name, label in [('chemistry-c2.md', 'Chemistry C2: reversible approach'),
-                         ('biology-b2-animals.md', 'Biology B2: animal reproduction')]:
-    source = ROOT / 'docs/production/drafts/module5-next-preparation-2026-10-10' / file_name
+for folder, file_name, label, current in [
+        ('module5-beginner-preparation-2026-10-10', 'chemistry-c3.md', 'Next Chemistry C3: concentration and temperature', True),
+        ('module5-beginner-preparation-2026-10-10', 'biology-b3-plants.md', 'Next Biology contribution: flowering plants', True),
+        ('module5-next-preparation-2026-10-10', 'chemistry-c2.md', 'Historical Chemistry C2 preparation', False),
+        ('module5-next-preparation-2026-10-10', 'biology-b2-animals.md', 'Historical Biology B2 preparation', False)]:
+    source = ROOT / 'docs/production/drafts' / folder / file_name
     if source.exists():
         digest = hashlib.sha256(source.read_bytes()).hexdigest()
+        notice = ('Current unrecorded beginner revision. Read speech and visual notes together. Selected source, visual integration and recording approval remain pending.'
+                  if current else 'Historical preparation. The newer measured C2/B2 candidates have their own review pages and evidence.')
         preparations.append(f'<details><summary>{e(label)}</summary>'
-                            '<p class="notice">Unrecorded preparation. Read speech and visual notes together; selected source and recording approval are pending.</p>'
+                            f'<p class="notice">{e(notice)}</p>'
                             f'<div class="script">{e(source.read_text(encoding="utf-8"))}</div>'
                             f'<p class="small">Exact preparation SHA-256: {e(digest)}</p></details>')
 preparation_section = ('<section><h2>Next lesson preparations</h2>' + ''.join(preparations) + '</section>') if preparations else ''
@@ -92,11 +97,14 @@ details{border-top:1px solid #d7ddd9;padding:14px 0}summary{cursor:pointer;font-
 <p>Each module is a sequence of focused videos. Opening drafts and subsequent lessons are shown separately. <a href="/module5-course-plan-2026-10-10/">See the Module 5 video sequence and syllabus plan</a>, or <a href="/video-syllabus-map-2026-10-09/">open the full catalogue and syllabus mapping</a>.</p>
 <p><a href="/calculation-batch-review-2026-10-10/">Approved calculation pilots and full narration</a> | <a href="/calculation-full-review-2026-10-10/">Complete calculation exports</a></p>
 <p><a href="/module5-voiced-review-2026-10-10/">New Chemistry C2 and Biology B2 narration</a>. Their recorded candidates retain the selected words with measured display cues. Opening drafts remain separate prerequisite work.</p>
+<p><a href="/module5-simple-working-review-2026-10-10/">Simpler Module 5 worked examples and questions</a>: one current case and reasoning stage, with the recorded narration preserved. These previews have separate pending listening and complete-lesson checks.</p>
 <section><h2>Work assignments</h2><div class="scroll"><table><thead><tr><th>Task</th><th>Model</th><th>State</th><th>Deliverable</th></tr></thead><tbody>'''
 document += rows + '</tbody></table></div></section>' + queue_section + ''.join(drafts) + ''.join(selected) + preparation_section
 document += '<p class="small">Generated from tracked task state and exact draft files. Rebuild with python scripts/build-parallel-production-review.py.</p></main></html>'
 if not (ROOT / 'out/prototypes/module5-voiced-review-2026-10-10/index.html').exists():
     document = document.replace('<a href="/module5-voiced-review-2026-10-10/">New Chemistry C2 and Biology B2 narration</a>', 'New Chemistry C2 and Biology B2 listening tracks are being prepared')
+if not (ROOT / 'out/prototypes/module5-simple-working-review-2026-10-10/index.html').exists():
+    document = document.replace('<a href="/module5-simple-working-review-2026-10-10/">Simpler Module 5 worked examples and questions</a>', 'Simpler Module 5 worked examples and questions are being prepared')
 if '\u2014' in document:
     raise ValueError('Selected production copy contains prohibited punctuation.')
 (output / 'index.html').write_text(document, encoding='utf-8', newline='\n')

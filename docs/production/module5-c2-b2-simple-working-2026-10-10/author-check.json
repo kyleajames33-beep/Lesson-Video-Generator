@@ -1,0 +1,210 @@
+{
+  "status": "pass-pending-independent-science-source-and-exact-pilots",
+  "baselineRuntime": "1fd9fd2a3c421e796b7a7478c8271615f4e88815",
+  "preservedFilesVerified": 47,
+  "alignmentCuesVerified": 23,
+  "defaultMarkupCases": 42,
+  "selectedContextAndGateMarkupCases": 131,
+  "checks": [
+    {
+      "key": "c2",
+      "onlySelectedCalculationPresentationsChanged": true,
+      "allowedChanges": "task, stage labels/lines and focusedContext only",
+      "voiceTextAudioCaptionsResponseHoldsDurationsRevealsLineAtsAndSummariesUnchanged": true,
+      "voicedScenesVerified": 8,
+      "validatorExitCode": 0,
+      "draftBriefReady": true,
+      "scienceSourcePreviewAndListeningPending": true,
+      "voiceTextListSha256": "15dc73e079becde86e9681655d55629c0ee18483eed47138b056b737492d87e7",
+      "timingAndCaptionsSha256": "541f2f17222e61ae9389009f56b2fbba640b5112ca0b616ee5606923f103653a",
+      "selected": [
+        {
+          "sceneId": "c2-transfer",
+          "unchangedStepAts": [
+            1472,
+            1600,
+            2185
+          ],
+          "unchangedLineAts": [
+            [
+              1472,
+              1544
+            ],
+            [
+              1600,
+              1909
+            ],
+            [
+              2339,
+              2413
+            ]
+          ],
+          "contextCues": [
+            0,
+            60,
+            142,
+            180,
+            274,
+            360,
+            464,
+            567,
+            1472,
+            2185
+          ],
+          "responseHold": {
+            "startFrame": 1172,
+            "endFrame": 1472
+          },
+          "stageCount": 3,
+          "stageSummariesUnchanged": true
+        }
+      ]
+    },
+    {
+      "key": "b2",
+      "onlySelectedCalculationPresentationsChanged": true,
+      "allowedChanges": "task, stage labels/lines and focusedContext only",
+      "voiceTextAudioCaptionsResponseHoldsDurationsRevealsLineAtsAndSummariesUnchanged": true,
+      "voicedScenesVerified": 10,
+      "validatorExitCode": 0,
+      "draftBriefReady": true,
+      "scienceSourcePreviewAndListeningPending": true,
+      "voiceTextListSha256": "69ba10bea60cfaabf7a1d61b3495675a8d5063e35b7ef0757eb665ec4f45010c",
+      "timingAndCaptionsSha256": "8aba44a6ad58f45e2c63a2995e3d6d686ec59d98252410e159f976e721919656",
+      "selected": [
+        {
+          "sceneId": "worked-example",
+          "unchangedStepAts": [
+            233,
+            653,
+            946
+          ],
+          "unchangedLineAts": [
+            [
+              233,
+              370
+            ],
+            [
+              653,
+              730
+            ],
+            [
+              946,
+              1127
+            ]
+          ],
+          "contextCues": [
+            0,
+            87,
+            152,
+            532,
+            574,
+            852,
+            888
+          ],
+          "responseHold": null,
+          "stageCount": 3,
+          "stageSummariesUnchanged": true
+        },
+        {
+          "sceneId": "quick-check",
+          "unchangedStepAts": [
+            1340,
+            1810,
+            2034
+          ],
+          "unchangedLineAts": [
+            [
+              1385,
+              1427
+            ],
+            [
+              1810,
+              1919
+            ],
+            [
+              2034,
+              2166
+            ]
+          ],
+          "contextCues": [
+            0,
+            144,
+            213,
+            293,
+            340,
+            392,
+            512,
+            1340,
+            2034
+          ],
+          "responseHold": {
+            "startFrame": 980,
+            "endFrame": 1340
+          },
+          "stageCount": 3,
+          "stageSummariesUnchanged": true
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "sha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v5.json",
+      "sha256": "050d9ca5fb7b6377062497031024a43263b83eaf5d5af4972c06c4a6763b2fb0"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/production-brief.json",
+      "sha256": "49cf4cbb527449b122006abd85d38b9c4314371755fdfbe7bcc2ac542f6bb992"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/transfer-pilot-config.json",
+      "sha256": "3c9760aca78da6ea1b7410ae92c3ce5021170bd16c54626ac4f4a7ba67f518fe"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "sha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v5.json",
+      "sha256": "6554f8b04c67a89e203d3c2307ba7071a857b4eef70462d11349cacd3f2b746f"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/production-brief.json",
+      "sha256": "483a7225014ffcb0f53fc80348cebd2bcab72fba398f00ce64f35409dd3585fc"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/worked-pilot-config.json",
+      "sha256": "781713af432e8a40d1e4b21c63c096ee3008d318b5c392e9ec5d467669685e4b"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/quick-pilot-config.json",
+      "sha256": "cbed05839336f4c3a02f79ecd0769bba6cf625c6bc59c020116817fc3014880d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/correction-record.json",
+      "sha256": "4abd6ca41a81920b84f4f5f59bfe0a29335bd89b22c6c41bb92f4ab276235056"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/markup-check.json",
+      "sha256": "b7954e7f152a36356bb4bda6bfaae118c6381ce789e75b875138ef55928f54d7"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "dec5ccbecc4d1fdd4b07549df51c6c711765f9e387ebf16dff57bbe3fb6738cc"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "bec433f72cb1e93f9d55a404c61174f4b31b6991c44768796e920133c0fc2f34"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2"
+    }
+  ],
+  "limitation": "Author source/output and provenance checks only. Native rendering, glyph/control/caption clearance, continuous playback, science review and human listening are separate pending gates."
+}

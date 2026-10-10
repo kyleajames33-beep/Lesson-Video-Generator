@@ -28,6 +28,15 @@
   and reference constants. Show one reasoning stage at a time, retain useful
   established results and align later result lines to their spoken cues.
   Do not pack a full problem and all constants into one oversized heading.
+- Teach for students starting Year 12. Introduce necessary scientific terms
+  with a short plain-language meaning, and explain each cause or calculation
+  step before relying on it. While narration explains a worked example,
+  show the current case and reasoning, with only the earlier facts/results
+  needed for that step. Remove competing paragraphs and unrelated answer
+  history. Reduce the reading load by selecting information, not shrinking
+  text or skipping assumptions. Keep every question demand and necessary
+  supplied condition available during the response opportunity. Apply this
+  check in script review and exact voiced preview, alongside caption fit.
 - Use docs/production/course-progression-plan-2026-10-09.md and its ledger
   and content checklist before choosing the next video. New production
   briefs require entry knowledge, start/stop boundaries and the next

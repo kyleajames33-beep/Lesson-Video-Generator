@@ -4,6 +4,22 @@ Draft standard for selected pilots, 2 October 2026. Derived from the [research r
 
 For every selected production lesson, complete the [teaching/visual brief](teaching-visual-brief-template.md) and use its draft, recording and export checks. This records how the research applies to the actual script and scenes; choosing a template does not complete review. Keep exact voiced-preview evidence distinct from source/still inspection and human listening.
 
+For students starting Year 12, build the explanation from the stated entry
+knowledge. Give a necessary scientific term a short everyday meaning before
+relying on it. Explain the link between the evidence and the conclusion;
+an instruction or final answer does not supply that link. For example,
+explain which reaction makes C and which uses C before subtracting their
+rates. Explain where sperm and egg join before classifying fertilisation.
+
+Students read while listening. A worked-example screen should contain the
+current case, the needed facts and the current reasoning. Keep an earlier
+result only when the next step uses it. Clear unrelated cases and repeated
+prose as the explanation moves on. Use short teaching labels on the board
+and faithful spoken captions. Reduce information before reducing font size.
+During an attempt, retain all question demands and supplied conditions;
+do not simplify a two-part question by dropping one part. Review the actual
+spoken sequence for reading load as well as legibility and caption clearance.
+
 ## Common lesson brief
 
 Copy and fill before writing speech:

@@ -1,0 +1,16 @@
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const docs='docs/production/module5-c2-b2-simple-working-2026-10-10';
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const read=p=>JSON.parse(readFileSync(p,'utf8'));
+const assert=(c,m)=>{if(!c)throw Error(m);};
+const collect=dir=>readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?collect(`${dir}/${e.name}`):[`${dir}/${e.name}`]);
+const record=read(`${docs}/correction-record.json`),checks=read(`${docs}/author-check.json`),markup=read(`${docs}/markup-check.json`);
+for(const f of record.preservedFiles)assert(hash(f.path)===f.sha256,`Prior input changed ${f.path}`);
+for(const f of checks.files)assert(hash(f.path)===f.sha256,`Current input changed ${f.path}`);
+assert(readFileSync(`${docs}/tsc-check.txt`,'utf8').includes('Completed exit code: 0'),'TypeScript not passed.');
+const files=[...collect(docs),...record.sourceFiles.map(f=>f.path),...record.packages.flatMap(p=>[p.candidate.path,p.props.path])];
+for(const p of collect(docs))assert(!readFileSync(p,'utf8').includes('\u2014'),`Forbidden punctuation ${p}`);
+const freeze={status:'author-inputs-frozen-pending-independent-science-source-and-native-pilots',baselineRuntime:record.baselineRuntime,tscExitCode:0,authorChecks:'pass',preservedPriorFiles:record.preservedFiles.length,syntheticDefaultFrames:markup.defaultCases.length,syntheticFocusedContextAndAnswerGateFrames:markup.selectedCases.length,assemblyProvenanceScenes:18,spokenWordsAudioCaptionsDurationsRevealsAndLineAtsUnchanged:true,onlySelectedPresentationDisplayCopyAndFocusedContextChanged:true,paidVoiceRequests:0,renderRequests:0,files:files.map(path=>({path,sha256:hash(path)})),packages:record.packages,pilots:record.pilots,pending:['Independent science and bounded source review','Exact three full-task pilots','Native captions/player controls and small-player inspection','Human listening','Whole-lesson review and release approval'],limitation:'Author source/output and provenance evidence only. Five unwrapped context rows estimate bottom y830.2; native wrapping and clearance are unmeasured.'};
+writeFileSync(`${docs}/frozen-author-inputs.json`,JSON.stringify(freeze,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:freeze.status,path:`${docs}/frozen-author-inputs.json`,sha256:hash(`${docs}/frozen-author-inputs.json`),packages:freeze.packages,pilots:freeze.pilots},null,2));

@@ -14,6 +14,13 @@ Use this before new or revised narration. It connects the existing [research](..
 
 For every selected scene, record: its ID, reuse/adjust/new/none visual decision, existing component or asset reference, why it teaches this point, narration cue, movement's purpose and reading/thinking hold. “None” is valid for a useful stable board. A new asset must solve a specific gap. No feature count, animation frequency, joke, painted backdrop or diorama quota is required. Essential labels remain coded and stable.
 
+Record the beginner support for the selected explanation: a first-use meaning
+for necessary terms, any prerequisite reminder and the reason connecting
+each step. In a worked example, state which facts remain needed in each
+beat, which earlier results are used next and which text is cleared. Check
+that a student can follow the spoken reason while reading the current
+screen. Native fit alone does not establish a manageable reading load.
+
 ## Machine-readable record
 
 Create a pending companion without changing the lesson or generating audio:

@@ -1,0 +1,340 @@
+{
+  "status": "current-author-inputs-frozen-pending-independent-source-and-native-pilots",
+  "tscExitCode": 0,
+  "defaultMarkupCases": 42,
+  "selectedContextGateAndAdjustedGeometryCases": 131,
+  "initialHistoricalFreeze": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/frozen-author-inputs.json",
+    "sha256": "3d9e7bae0a5b33e855d4603c380e53902ee2c2e9e1dd24b3afc7cbd25e69d334"
+  },
+  "initialHistoricalCorrection": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/correction-record.json",
+    "sha256": "4abd6ca41a81920b84f4f5f59bfe0a29335bd89b22c6c41bb92f4ab276235056"
+  },
+  "initialComponent": {
+    "path": "out/prototypes/module5-simple-working-v5-native-2026-10-10/initial-Module5EvidenceBoard.tsx",
+    "sha256": "bec433f72cb1e93f9d55a404c61174f4b31b6991c44768796e920133c0fc2f34"
+  },
+  "currentComponent": {
+    "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+    "initialSha256": "bec433f72cb1e93f9d55a404c61174f4b31b6991c44768796e920133c0fc2f34",
+    "sha256": "092554d51375d0272482857f46115e810c7a6c427aa38490cea826cb2698d46f"
+  },
+  "v5LessonAndPropsHashesUnchanged": true,
+  "voiceAudioCaptionsResponseHoldsDurationsAndAllCuesUnchanged": true,
+  "packages": [
+    {
+      "key": "c2",
+      "parent": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v4.lesson.json",
+        "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+        "sha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa"
+      },
+      "props": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v5.json",
+        "sha256": "050d9ca5fb7b6377062497031024a43263b83eaf5d5af4972c06c4a6763b2fb0"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/production-brief.json",
+        "sha256": "0b9e605d0718d3559c26edc563995d9b9fdf5653b0e52e112abba0746a328c94"
+      },
+      "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/production-brief.json",
+      "selectedSceneIds": [
+        "c2-transfer"
+      ],
+      "fullTimelineDurationInFrames": 11308,
+      "configPaths": [
+        "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/transfer-pilot-config.json"
+      ],
+      "initialV5Brief": {
+        "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/production-brief.json",
+        "sha256": "49cf4cbb527449b122006abd85d38b9c4314371755fdfbe7bcc2ac542f6bb992"
+      }
+    },
+    {
+      "key": "b2",
+      "parent": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+        "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+        "sha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc"
+      },
+      "props": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v5.json",
+        "sha256": "6554f8b04c67a89e203d3c2307ba7071a857b4eef70462d11349cacd3f2b746f"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/production-brief.json",
+        "sha256": "c10730878d5324cea44bc98dc5a49218c46bf3cf89d45ba1d710d2e1882e520d"
+      },
+      "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/production-brief.json",
+      "selectedSceneIds": [
+        "worked-example",
+        "quick-check"
+      ],
+      "fullTimelineDurationInFrames": 13963,
+      "configPaths": [
+        "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/worked-pilot-config.json",
+        "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/quick-pilot-config.json"
+      ],
+      "initialV5Brief": {
+        "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/production-brief.json",
+        "sha256": "483a7225014ffcb0f53fc80348cebd2bcab72fba398f00ce64f35409dd3585fc"
+      }
+    }
+  ],
+  "pilots": [
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "configPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/transfer-pilot-config.json",
+      "proposedOutputDirectory": "out/prototypes/module5-c2-voiced-2026-10-10/transfer-simple-pilot01",
+      "localFrameRangeInclusive": [
+        0,
+        2877
+      ],
+      "globalFrameRangeInclusive": [
+        7309,
+        10186
+      ],
+      "frames": 2878,
+      "seconds": 95.93333333333334,
+      "scope": "Complete task scene including prompt, full response hold when present, all feedback and reading tail. Adjacent transition overlap remains part of the actual lesson runtime.",
+      "initialConfig": {
+        "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/transfer-pilot-config.json",
+        "sha256": "3c9760aca78da6ea1b7410ae92c3ce5021170bd16c54626ac4f4a7ba67f518fe"
+      }
+    },
+    {
+      "key": "b2",
+      "sceneId": "worked-example",
+      "configPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/worked-pilot-config.json",
+      "proposedOutputDirectory": "out/prototypes/module5-b2-voiced-2026-10-10/worked-simple-pilot01",
+      "localFrameRangeInclusive": [
+        0,
+        1422
+      ],
+      "globalFrameRangeInclusive": [
+        7584,
+        9006
+      ],
+      "frames": 1423,
+      "seconds": 47.43333333333333,
+      "scope": "Complete task scene including prompt, full response hold when present, all feedback and reading tail. Adjacent transition overlap remains part of the actual lesson runtime.",
+      "initialConfig": {
+        "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/worked-pilot-config.json",
+        "sha256": "781713af432e8a40d1e4b21c63c096ee3008d318b5c392e9ec5d467669685e4b"
+      }
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "configPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/quick-pilot-config.json",
+      "proposedOutputDirectory": "out/prototypes/module5-b2-voiced-2026-10-10/quick-simple-pilot01",
+      "localFrameRangeInclusive": [
+        0,
+        2685
+      ],
+      "globalFrameRangeInclusive": [
+        10044,
+        12729
+      ],
+      "frames": 2686,
+      "seconds": 89.53333333333333,
+      "scope": "Complete task scene including prompt, full response hold when present, all feedback and reading tail. Adjacent transition overlap remains part of the actual lesson runtime.",
+      "initialConfig": {
+        "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/quick-pilot-config.json",
+        "sha256": "cbed05839336f4c3a02f79ecd0769bba6cf625c6bc59c020116817fc3014880d"
+      }
+    }
+  ],
+  "nativeEvidencePath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/native-inputs.json",
+  "nativeEvidenceSha256": "c1b01ae345319fde6474475b5f1c57fae01740466f9df42461b4eefb469309c6",
+  "files": [
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/production-brief.json",
+      "sha256": "67c4a7ffb5facffe5e344a162c274c7617c9ab62c2d3ed4784e6753cfff26ac1"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/quick-pilot-config.json",
+      "sha256": "78b3b189eb75d1b4dc390d034947fdf7acb3154466dc302b3ca4d793e9d45870"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/worked-pilot-config.json",
+      "sha256": "50153fe45b1de17b80ad77789b4c949a30457d660046594d7aecc39ec573f48b"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/bind-native-inputs.mjs",
+      "sha256": "8fd40f0e8a02c6d419e192cb1de0b59f2384c4e57b52c1b8ede2eda6b2d08c55"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/production-brief.json",
+      "sha256": "a863fcc3dfd25baa96ff8a6b8ba6952dfa6d0c6dbaccd5fffd49bf8c1ca47a55"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/transfer-pilot-config.json",
+      "sha256": "350130f0b8420a8dc3a258fb74201bb6abba4fa66e95603e40a71c938cd37893"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/check-markup.mjs",
+      "sha256": "aee4cb8d348601dc59c3407fc87b71c4521a3198d48a788a019d480e82504954"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/correction-record.json",
+      "sha256": "ee4240d78ecbb7781a67ca5bf24d8aa757f51bf8da9c0bf7d8d7cd7cccbac62d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/draft-checks.json",
+      "sha256": "141013820aa9de9e8cfe17a1b6a1187c35caa48d23a663b32eee7e17d69bcb99"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/freeze-current-inputs.mjs",
+      "sha256": "aad435f294ea7c0c8a3a9961a445ab4233b06344880d5539b3648fd0bcc78b23"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/markup-check.json",
+      "sha256": "1fe93a76545851e199022678caa8599d183954603be0c39e9e37ce60e2f31187"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/native-inputs.json",
+      "sha256": "c1b01ae345319fde6474475b5f1c57fae01740466f9df42461b4eefb469309c6"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/prepare-adjustment.mjs",
+      "sha256": "d8dc90c831b02aaa94a0ef134daf3bb8533c1e0b0a25ff3732fca37a81265d12"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/README.md",
+      "sha256": "cd083dcbd87f91174822efba3ade7d8fc8f385c9ea8da45945cd460473ecd8fb"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/tsc-check.txt",
+      "sha256": "5c1e33a18b4dfaaca4c2c897ab368c5b1597b262bb332075cab8bc9024312bb5"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "dec5ccbecc4d1fdd4b07549df51c6c711765f9e387ebf16dff57bbe3fb6738cc"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "092554d51375d0272482857f46115e810c7a6c427aa38490cea826cb2698d46f"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "sha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v5.json",
+      "sha256": "050d9ca5fb7b6377062497031024a43263b83eaf5d5af4972c06c4a6763b2fb0"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "sha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v5.json",
+      "sha256": "6554f8b04c67a89e203d3c2307ba7071a857b4eef70462d11349cacd3f2b746f"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-2026-10-10/frames.json",
+      "sha256": "1fe705dc111b0d3348e20e716274a033a755a8bfb806708a5443ee5242c5631a"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-2026-10-10/renderer-record.json",
+      "sha256": "18f27e35c7e5a3938fb70d354c3905234c1824a7070346601e7d601f1619e670"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/frames.json",
+      "sha256": "902b4862429b7e7b110ed6e5624b9c5b84ee45e5fbb5033f61bd192424369c2d"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/renderer-record.json",
+      "sha256": "449020e122097924ea4914195e4215b68d0a984218f06417c11cf902d19e2aff"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/c2-c2-transfer-1100.png",
+      "sha256": "f338555dbfa1c25996ceda5f8d5c43284e8c5110daddc2be9b9d27ade8fb778c"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/c2-c2-transfer-1471.png",
+      "sha256": "c0d2441000c01a07e688367174225a21457d7b4d484c59477407c54c93446269"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/c2-c2-transfer-1570.png",
+      "sha256": "12b5f5f17de30dadfb0d7cc276524e2691261bdd68f722e8706f8cb95103dd2d"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/c2-c2-transfer-1925.png",
+      "sha256": "e02ed220a2bcce79dfca3103ea26443d6b6ab111e4c4d13a94850a0bcadba320"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/c2-c2-transfer-2185.png",
+      "sha256": "ac825144737e122391dbe266c8691c6f9993ac432c83df4ccbacc432cdb3ea44"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/c2-c2-transfer-2450.png",
+      "sha256": "b306058c99ca2819e176860723c92481e8309a9220587e30cfa77e5f70a1a45e"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-worked-example-175.png",
+      "sha256": "dfd5ad082ef2950361c176a7b3b76186140cc522907853c78c615e115e804da1"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-worked-example-390.png",
+      "sha256": "398532f4b58d6a32b00f3b471cbf531205fb15399125b232fc9eff73ca044bcc"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-worked-example-574.png",
+      "sha256": "1985ae92d60938d712d936d52a7f56c601c6411d89992413310a2e66549b4182"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-worked-example-750.png",
+      "sha256": "581b54d040110db0aff63b2b3ca8f0b64f872b9e0cfc3ea58dc2d947a1defb50"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-worked-example-888.png",
+      "sha256": "d806f555dcbb71d585d7213d9c94efa1352c6329e38ac5a6420ac841ab7a5038"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-worked-example-1180.png",
+      "sha256": "8f12fdbed626710d5b9b274c693dbadc494b897edbaa37942e6aea9b7ba9c28d"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-quick-check-900.png",
+      "sha256": "7ca81469f36d6b07ed3038fa0a6ab610265dc2eac3f05f10d3607a31e75431a2"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-quick-check-1339.png",
+      "sha256": "17b41b0e150001b87cb385664cab525603386783994e8e705e7b335097237112"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-quick-check-1450.png",
+      "sha256": "5739909066083c42712f9c7682d0048c347676dd9b0e09eca6b7262dfbf31c08"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-quick-check-1935.png",
+      "sha256": "8abe534898aade98b8c2bf5050a151e6d7aec4b1c3f30695b3670b78e0d76106"
+    },
+    {
+      "path": "out/prototypes/module5-simple-working-v5-native-adjusted-2026-10-10/b2-quick-check-2240.png",
+      "sha256": "77848498af0dd05c1fe23b368094dfb64aa833b8f1283b81656d5061e1bdb865"
+    }
+  ],
+  "pending": [
+    "Independent source review of adjusted runtime",
+    "Adjusted native/caption/control and small-player review",
+    "Three exact full-task pilot playback reviews",
+    "Human listening",
+    "Whole-lesson and release gates"
+  ],
+  "limitation": "Runtime source estimates and author invariants only. New independent source review, adjusted native playback, captions/controls/small-player review and human listening are pending. Original freeze and native evidence remain historical and are not approvals for the adjusted runtime."
+}

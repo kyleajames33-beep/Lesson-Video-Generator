@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "sourceAndNativeReview": {
+    "path": "docs/production/module5-c2-b2-simple-working-v5-review-2026-10-10.md",
+    "sha256": "28db583d4f1eb0bdbf07f07c6e603ff2dbdcf473974455f7a27f4b12752591c4",
+    "scope": "Exact source and 17 native states only"
+  },
+  "pilotTechnicalCheck": {
+    "path": "docs/production/module5-c2-b2-simple-working-v5-pilot-check-2026-10-10.json",
+    "sha256": "434114fc19ce49354e86b5610198e55d0b76a0b0225cbf6a6046745dc8307264",
+    "scope": "All three complete selected scene snapshot checks and three decoded export frames"
+  },
+  "rootNativeAndDecodedObservations": [
+    "Initial C2 condition wrapped and crossedthe y850 reserve. Initial diagnostics and component bytes retained.",
+    "Adjusted native C2 prompt retains all conditions and both demands abovethe y850 reserve.",
+    "Decoded C2 net-rate, B2 bird and B2 survival frames match the adjusted arrangement and fit abovethe y850 reserve."
+  ],
+  "page": {
+    "path": "out/prototypes/module5-simple-working-review-2026-10-10/index.html",
+    "sha256": "1daecee67d7629942b933e1d6df33e60aff405da50b3790029083dc2fb006fff",
+    "url": "http://127.0.0.1:8778/module5-simple-working-review-2026-10-10/"
+  },
+  "browserSample": {
+    "scope": "Read-only metadata and one settled paused Chemistry caption sample on desktop browser. Not continuous playback or human listening.",
+    "metadata": [
+      {
+        "scene": "c2-transfer",
+        "durationSeconds": 95.933333,
+        "readyState": 4,
+        "paused": true,
+        "muted": false,
+        "captionMode": "showing"
+      },
+      {
+        "scene": "worked-example",
+        "durationSeconds": 47.433333,
+        "readyState": 4,
+        "paused": true,
+        "muted": false,
+        "captionMode": "showing"
+      },
+      {
+        "scene": "quick-check",
+        "durationSeconds": 89.533333,
+        "readyState": 4,
+        "paused": true,
+        "muted": false,
+        "captionMode": "showing"
+      }
+    ],
+    "c2SampleSeconds": 64.275366,
+    "c2VisibleCaption": "net four units towards C.",
+    "observed": "Settled caption matches the displayed net 4 towards C result. Caption and controls remain below the visible current-context text in this sampled view. Rapid seeking first showed a stale frame, then settled correctly. No wider browser fit or playback pass inferred."
+  },
+  "httpChecks": [
+    {
+      "path": "module5-simple-working-review-2026-10-10/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "contentRange": null
+    },
+    {
+      "path": "module5-c2-voiced-2026-10-10/transfer-simple-pilot01/video.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-127/5443137"
+    },
+    {
+      "path": "module5-b2-voiced-2026-10-10/worked-simple-pilot01/video.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-127/3553289"
+    },
+    {
+      "path": "module5-b2-voiced-2026-10-10/quick-simple-pilot01/video.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-127/5133182"
+    },
+    {
+      "path": "module5-b2-voiced-2026-10-10/quick-simple-pilot01/captions.vtt",
+      "status": 200,
+      "contentType": "text/vtt; charset=utf-8",
+      "contentRange": null
+    }
+  ],
+  "pending": [
+    "Human listening",
+    "Continuous voiced playback/cue review",
+    "Actual device and complete caption/control review",
+    "Whole-lesson Module 5 review",
+    "Full-export teaching-brief gate",
+    "Public release gate"
+  ],
+  "publication": "No new full Module 5 export, YouTube upload or visibility change. Existing calculation release scopes remain pending and the latest reading follow-up remains open."
+}

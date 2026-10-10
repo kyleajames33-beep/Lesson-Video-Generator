@@ -386,6 +386,16 @@ export type CalculationPresentation = {
   layout?: 'module5Evidence';
   /** Selected Module 5 boards reserve the lower player-caption region. */
   captionSafeWorking?: boolean;
+  /** Selected evidence tasks show only the case relevant to the current spoken
+   * beat. Times are local scene frames measured from the selected narration. */
+  focusedContext?: Array<{
+    at: number;
+    title: string;
+    lines: string[];
+    task?: string;
+    secondaryTask?: string;
+    equation?: string;
+  }>;
   task: string;
   equation?: string;
   givens: Array<{label: string; value: string; reference?: string}>;

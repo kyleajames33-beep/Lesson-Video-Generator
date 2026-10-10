@@ -1,5 +1,26 @@
 # Production Memory
 
+## 10 October: beginner explanations and worked-example reading load
+
+- The teacher reports clutter on worked-example screens and asks for careful
+  explanations for students starting Year 12. Treat this as teaching feedback,
+  beyond the earlier caption-clearance fix. Visible text can fit and still
+  compete with speech.
+- Use the current case and current reason, with only the facts and previous
+  results needed to follow that reason. Clear an old animal's answer when the
+  next case is introduced. Clear initial-rate evidence when a later catalyst
+  comparison no longer uses it. Retain all supplied conditions and both parts
+  of a question during the attempt.
+- Introduce precise terms with plain meanings and explain the missing links.
+  Keep scientific assumptions and distinctions. Fewer words must not mean
+  unsupported conclusions, missing units or inaccurate definitions. Reduce
+  simultaneous information before shrinking text or changing speech speed.
+- Display-only candidates retain their exact recorded words, alignment and
+  response holds. New spoken explanations require new affected takes and
+  rederived captions/cues. Unrecorded next scripts can receive these beginner
+  bridges before their first narration. Exact preview, listening and full
+  release evidence remain separate.
+
 ## 10 October: selected-source integration and accepted calculation review
 
 - The user accepted the material presented on the current calculation review page. Preserve the page/media hashes and the exact quote. The export briefs bind this scoped preview acceptance; completed files still need their own package checks.
