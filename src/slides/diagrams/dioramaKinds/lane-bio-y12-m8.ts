@@ -24,6 +24,9 @@ import {ThymusDiagram} from '../kinds/bio-y12-m8/ThymusDiagram';
 import {PancreasLiverDiagram} from '../kinds/bio-y12-m8/PancreasLiverDiagram';
 import {MultiHitDiagram} from '../kinds/bio-y12-m8/MultiHitDiagram';
 import {GeneProteinDiseaseDiagram} from '../kinds/bio-y12-m8/GeneProteinDiseaseDiagram';
+import {AdaptationTypesDiagram} from '../kinds/bio-y12-m8/AdaptationTypesDiagram';
+import {DisorderKindsDiagram} from '../kinds/bio-y12-m8/DisorderKindsDiagram';
+import {DryLeavesDiagram} from '../kinds/bio-y12-m8/DryLeavesDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m8EyeRays: EyeRaysDiagram,
@@ -45,4 +48,7 @@ export const KINDS: DioramaKindMap = {
   bio12m8PancreasLiver: PancreasLiverDiagram,
   bio12m8MultiHit: MultiHitDiagram,
   bio12m8GeneProteinDisease: GeneProteinDiseaseDiagram,
+  bio12m8AdaptationTypes: AdaptationTypesDiagram,
+  bio12m8DisorderKinds: DisorderKindsDiagram,
+  bio12m8DryLeaves: DryLeavesDiagram,
 };

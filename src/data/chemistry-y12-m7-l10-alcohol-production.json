@@ -296,6 +296,22 @@
     },
     {
       "id": "formula-fermentation",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Fermentation",
+        "props": {
+          "at": {
+            "flask": 0,
+            "equation": 191,
+            "coefficients": 317,
+            "temperature": 522,
+            "anaerobic": 697,
+            "yeast": 921,
+            "rule": 1000
+          },
+          "ruleText": "Stalls near 15% ethanol, which is toxic to the yeast"
+        }
+      },
       "type": "concept",
       "heading": "Fermentation: the biological route",
       "body": "Yeast converts glucose to ethanol and carbon dioxide. Three conditions are required, all of them.",
@@ -314,6 +330,31 @@
     },
     {
       "id": "concept-comparison",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "",
+          "Hydration of ethene",
+          "Fermentation"
+        ],
+        "rows": [
+          [
+            "Rate",
+            "Fast, continuous",
+            "Slow, batches over days"
+          ],
+          [
+            "Purity",
+            "About 95% ethanol",
+            "About 15%, must be distilled"
+          ],
+          [
+            "Feedstock",
+            "Ethene from fossil fuels",
+            "Renewable biomass, close to carbon neutral"
+          ]
+        ]
+      },
       "type": "concept",
       "heading": "Comparing the three methods",
       "body": "Choosing a route is an engineering and environmental decision. Compare them directly, point by point.",

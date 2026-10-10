@@ -457,6 +457,26 @@
     },
     {
       "id": "formula-combustion",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7BalanceCombustion",
+        "props": {
+          "fuel": {
+            "C": 4,
+            "H": 10
+          },
+          "name": "butane",
+          "at": {
+            "equation": 0,
+            "carbon": 64,
+            "hydrogen": 230,
+            "oxygen": 366,
+            "double": 561,
+            "rule": 648
+          },
+          "ruleText": "Balance C, then H, then O last"
+        }
+      },
       "type": "concept",
       "heading": "Balancing combustion: C, H, O",
       "body": "All hydrocarbons combust. Balance in a fixed order to avoid going in circles.",
