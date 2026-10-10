@@ -1,0 +1,21 @@
+{
+  "lessonPath": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson.json",
+  "entryPoint": "src/dev/release-entry.tsx",
+  "compositionId": "Lesson-release",
+  "codec": "h264",
+  "scale": 1,
+  "crf": 16,
+  "concurrency": 2,
+  "audioMode": "alignedPcm",
+  "normalizeAudio": true,
+  "frameRange": [
+    10931,
+    13063
+  ],
+  "teachingBriefPath": "docs/production/module5-c3-voiced-preparation-2026-10-10/production-brief.json",
+  "inputs": [
+    "docs/production/module5-c3-voiced-preparation-2026-10-10/measured-cue-report.json",
+    "docs/production/module5-c3-voiced-preparation-2026-10-10/generation-record.json",
+    "docs/production/module5-c3-voiced-preparation-2026-10-10/assembly-record.json"
+  ]
+}

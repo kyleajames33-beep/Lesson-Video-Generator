@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "parent": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson.json",
+    "sha256": "e040b94ca044d497e10ebad0e65e9326778b7c8576e24ced7d1d28ebfae88edd"
+  },
+  "source": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+    "sha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+  },
+  "changes": [
+    {
+      "sceneId": "c3-transfer-a",
+      "field": "pausePrompt",
+      "previousText": "Pause to explain your reason."
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "field": "pausePrompt",
+      "previousText": "Pause to explain your reason."
+    }
+  ],
+  "preservation": "All other lesson fields deep-identical. No changed recorded words, timing, media, geometry consumer or defaults. Parent candidate and first remove pilot preserved.",
+  "finding": "Actual voiced question-hold UI showed optional pausePrompt at native y780 overlapping existing PauseInstruction. New selected candidate removes only redundant copy.",
+  "status": "pending exact adjusted UI and independent review"
+}

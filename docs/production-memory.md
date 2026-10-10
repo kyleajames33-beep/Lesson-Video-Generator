@@ -1,5 +1,11 @@
 # Production Memory
 
+## 10 October: review the exact voiced thinking hold
+
+- Fresh alignment can expose collisions that silent estimated timing missed. Play each complete task, thinking hold and first feedback in the actual voiced Player. Chemistry C3 exposed a redundant optional pause label over the existing handwritten instruction; v2 removes only that display duplication.
+- Keep raw recordings immutable and rebuild cues/captions from exact measured alignment. Confirm silence in the complete protected interval, no caption/answer leakage, and useful final reading/settling time. Optional absent assembled generation sidecars are not missing required raw recordings.
+- Source, decoded stills, targeted UI, continuous full playback and human listening remain separate evidence. Rate statistics and unmuted browser state do not prove natural delivery. Check mathematical grouping at the intended player size before export.
+
 ## 10 October: review hierarchy at the actual player size
 
 - The teacher accepted the clearer Chemistry layout with `yep looks better`.

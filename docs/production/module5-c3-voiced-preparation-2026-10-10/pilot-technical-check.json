@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "scope": "Export bytes, stream metadata, dependency hashes and decoded stills only. No listening or complete continuous review.",
+  "pilots": [
+    {
+      "name": "remove-pilot01",
+      "directory": "out/prototypes/module5-c3-voiced-2026-10-10/remove-pilot01",
+      "source": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson.json",
+      "inputPackageSha256": "4aa89fa195c5315c2fa2ceb1dff7a964f0de6d0af706a6020a283de92c9a141a",
+      "videoSha256": "72928921af77775b6a9dce33fab2b803773a853bf752f4896ceba7c0ba1cb1c0",
+      "durationSeconds": 51.266666666666666,
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "frames": "1538"
+      },
+      "audio": {
+        "sampleRate": "48000",
+        "channels": 2,
+        "duration": "51.266000"
+      },
+      "verification": {
+        "valid": false,
+        "packageSha256": "ff1b8109791d37f77c408a59ef22010c3c4b6a6f7a58a990a5cec5169c7347cf",
+        "changes": [
+          {
+            "code": "DEPENDENCY_CHANGED",
+            "path": "scripts/build-module5-c3-voiced-review.mjs"
+          },
+          {
+            "code": "DEPENDENCY_CHANGED",
+            "path": "src/prototypes/Module5C3VoicedReview.tsx"
+          }
+        ],
+        "missingRequired": []
+      },
+      "decoded": [
+        {
+          "seconds": 10,
+          "path": "out/prototypes/module5-c3-voiced-2026-10-10/remove-pilot01/decoded-review/frame-10.png",
+          "sha256": "7c38c9b0a5a97fb3da4fb5be77ea08477316151ef70f7f851eeedd78ae7bccdb"
+        },
+        {
+          "seconds": 28,
+          "path": "out/prototypes/module5-c3-voiced-2026-10-10/remove-pilot01/decoded-review/frame-28.png",
+          "sha256": "549949caa00be85293ed1695f6845c602a77fb4525607f5ee851cb41c33f7081"
+        },
+        {
+          "seconds": 44,
+          "path": "out/prototypes/module5-c3-voiced-2026-10-10/remove-pilot01/decoded-review/frame-44.png",
+          "sha256": "8a02ee6f1d84bd5ab299a12ba0509ab3105d630656e9e02b3c8e2684d51d0a90"
+        }
+      ],
+      "limitation": "Preserved initial v1 source. Its two wrapper/tool differences have exact archived v1 overrides. Not current v2 snapshot approval."
+    },
+    {
+      "name": "transfer-pilot02",
+      "directory": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02",
+      "source": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+      "inputPackageSha256": "d1e4432ed46ad606bdb0ca27be8d7c86f753b3bd4528adb716222695518cc437",
+      "videoSha256": "d12b67d1a5df577236473afd4300f8bfcda8dd64691473fc7f5f413ed11efe20",
+      "durationSeconds": 71.1,
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "frames": "2133"
+      },
+      "audio": {
+        "sampleRate": "48000",
+        "channels": 2,
+        "duration": "71.100000"
+      },
+      "verification": {
+        "valid": true,
+        "packageSha256": "d1e4432ed46ad606bdb0ca27be8d7c86f753b3bd4528adb716222695518cc437",
+        "changes": [],
+        "missingRequired": []
+      },
+      "decoded": [
+        {
+          "seconds": 29.6,
+          "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-29.6.png",
+          "sha256": "06d4097883a39821121a5cbad6fd3ef3bace0c20159909ac6ada94855de7b7bf"
+        },
+        {
+          "seconds": 36.6,
+          "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-36.6.png",
+          "sha256": "96368d63c4fcd3109d688320fc13ff37f74b07a8f1348625161126165183b548"
+        },
+        {
+          "seconds": 59.33,
+          "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-59.33.png",
+          "sha256": "a8e048c88c7fed355805bb1d51e1c73aae0ee3c33a86935bc186f44173d8308f"
+        }
+      ],
+      "limitation": "Current v2 exact dependency check passes. Sampled decoded stills need visual inspection."
+    }
+  ]
+}

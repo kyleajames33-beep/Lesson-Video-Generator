@@ -36,8 +36,8 @@
       }
     ],
     "releaseId": 407764183,
-    "verifiedAt": "2026-10-10T02:44:29.910996+00:00",
-    "verification": "All fourteen immutable assets uploaded; thirteen archive/part size and digest checks match expected values, plus unchanged original checksum asset. Eleven additive continuations are present.",
+    "verifiedAt": "2026-10-10T08:07:48.864384+00:00",
+    "verification": "Original immutable assets and all continuations marked published-verified retain their recorded size/digest evidence. Current C3 archive and checksum verified through GitHub API.",
     "publishedAt": "2026-10-09T10:28:37Z"
   },
   "continuations": [
@@ -226,6 +226,18 @@
       "githubAssetId": 627331326,
       "verification": "GitHub API uploaded state,13363233-byte size and SHA256 match the local CRC/member-hash verified archive. Tracked source/fonts rebuild the page. No fresh-checkout or release claim.",
       "manifest": "docs/production/module5-chemistry-clear-media-2026-10-10.manifest.json"
+    },
+    {
+      "name": "module5-c3-voiced-media-2026-10-10.zip",
+      "bytes": 115901400,
+      "sha256": "7582b29c6139699f9809c431c247fe132188c9d7d1465a98b99be028068d76d7",
+      "files": 98,
+      "status": "published-verified",
+      "scope": "Chemistry C3 fresh raw narration, lossless assemblies, both historical/current short pilots, decoded frames and page input records. Rebuild pages from tracked tools. Human listening and full export pending.",
+      "verifiedAt": "2026-10-10T08:07:48.864384+00:00",
+      "verification": "All98 local archive members CRC/SHA checked and credential-scanned. GitHub API uploaded state, exact size and SHA256 digest match for archive and checksum. Separate fresh-checkout review remains optional follow-up.",
+      "assetId": 627383971,
+      "checksumAssetId": 627383972
     }
   ]
 }

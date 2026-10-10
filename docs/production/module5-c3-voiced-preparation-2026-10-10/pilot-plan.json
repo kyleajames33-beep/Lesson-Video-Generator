@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson.json",
+    "sha256": "e040b94ca044d497e10ebad0e65e9326778b7c8576e24ced7d1d28ebfae88edd"
+  },
+  "scope": "Two bounded voiced scene previews,1080p30fpsCRF16. Complete scene narration and response interval included. FrameRange permits pilot while full-export gate remains pending.",
+  "pilots": [
+    {
+      "name": "remove-pilot01",
+      "sceneId": "c3-remove",
+      "config": {
+        "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/remove-pilot01-config.json",
+        "sha256": "70d9fdd6ab9953ae17f5c1d533f3043e77a5b5a3f0d42cddcb1f563dc861e5b4"
+      },
+      "frameRange": [
+        2957,
+        4494
+      ],
+      "durationSeconds": 51.266666666666666,
+      "outputDirectory": "out/prototypes/module5-c3-voiced-2026-10-10/remove-pilot01"
+    },
+    {
+      "name": "transfer-pilot01",
+      "sceneId": "c3-transfer-a",
+      "config": {
+        "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/transfer-pilot01-config.json",
+        "sha256": "3d5fdf49f68a40720c59469442b1af12be8c55e75760508c36cb85768c6bcdb7"
+      },
+      "frameRange": [
+        10931,
+        13063
+      ],
+      "durationSeconds": 71.1,
+      "outputDirectory": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot01"
+    }
+  ]
+}

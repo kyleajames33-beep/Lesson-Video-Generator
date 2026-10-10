@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "status": "measured-candidate-pending-independent-review-and-voiced-playback",
+  "source": {
+    "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+    "sha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+  },
+  "manifest": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/voice-manifest.json",
+    "sha256": "82db44c9b6f23d6315f660645cf0d0ef59a95cd7a4e5ef378237cdc9e168e30a"
+  },
+  "rounding": "ceil aligned start seconds * fps, no reveal before the recorded phrase",
+  "scenes": [
+    {
+      "sceneId": "c3-hook",
+      "audioFile": "public/audio/assembled/c3-hook.134d5bacc3ddf43ea593.b2a08b697e02.wav",
+      "audioSha256": "033625f30c3d4dce6dccb78872b2020d437c73abe1d27ccefadc98a3985d1d09",
+      "alignmentPath": "public/audio/assembled/c3-hook.134d5bacc3ddf43ea593.b2a08b697e02.alignment.json",
+      "alignmentSha256": "30aeb985c09dc165c3d95c9de475f549f354d2a983d005fac5945e636c6d57dd",
+      "cues": [
+        {
+          "phrase": "Now we briefly add more A",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 15.72,
+          "frame": 472,
+          "key": "event",
+          "mode": "additionHook"
+        },
+        {
+          "phrase": "Any extra B has to be made by reaction",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 23.52,
+          "frame": 706,
+          "key": "response",
+          "mode": "additionHook"
+        }
+      ],
+      "mediaFrames": 968,
+      "settleFrame": 946,
+      "durationInFrames": 1037,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": {
+        "mode": "additionHook",
+        "at": {
+          "event": 472,
+          "response": 706
+        }
+      },
+      "revealDelays": {
+        "heading": 12,
+        "body": 24,
+        "callout": 706
+      },
+      "bulletCuesSeconds": [],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-add",
+      "audioFile": "public/audio/assembled/c3-add.fbeecf2ebcb78085468f.852e355ab749.wav",
+      "audioSha256": "2b373e698bf877120e5295f0f2830a0075ff2f0abca550625d2f6cf456e42fbf",
+      "alignmentPath": "public/audio/assembled/c3-add.fbeecf2ebcb78085468f.852e355ab749.alignment.json",
+      "alignmentSha256": "7c43091e550e869f1ad9442868d38ab7acdbdcc91187c6c2ccbff2025fc49427",
+      "cues": [
+        {
+          "phrase": "A's concentration rises immediately",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 21.68,
+          "frame": 651,
+          "key": "event",
+          "mode": "addA"
+        },
+        {
+          "phrase": "Straight after mixing",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 26.16,
+          "frame": 785,
+          "key": "rateReason",
+          "mode": "addA"
+        },
+        {
+          "phrase": "A now falls from its jump",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 43.76,
+          "frame": 1313,
+          "key": "response",
+          "mode": "addA"
+        },
+        {
+          "phrase": "In this model, the new equilibrium",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 51.36,
+          "frame": 1541,
+          "key": "limit",
+          "mode": "addA"
+        }
+      ],
+      "mediaFrames": 1803,
+      "settleFrame": 1553,
+      "durationInFrames": 1872,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": {
+        "mode": "addA",
+        "at": {
+          "event": 651,
+          "rateReason": 785,
+          "response": 1313,
+          "limit": 1541
+        }
+      },
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "bulletCuesSeconds": [
+        0.8,
+        22.733333333333334,
+        25.733333333333334,
+        45,
+        52.733333333333334
+      ],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-remove",
+      "audioFile": "public/audio/assembled/c3-remove.1ac568875a7cba40e9b4.51cd2580b739.wav",
+      "audioSha256": "6fa71ec782a178c70293d786aafce50d5e9ffbc339bf75c9d3a6fb98e4052333",
+      "alignmentPath": "public/audio/assembled/c3-remove.1ac568875a7cba40e9b4.51cd2580b739.alignment.json",
+      "alignmentSha256": "af80863bfb4f556e2e1b57056b352cdb382b4bab410514d27c7fe31d9a035e76",
+      "cues": [
+        {
+          "phrase": "B drops immediately",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 6.96,
+          "frame": 209,
+          "key": "event",
+          "mode": "removeB"
+        },
+        {
+          "phrase": "B starts rising",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 21.76,
+          "frame": 653,
+          "key": "response",
+          "mode": "removeB"
+        },
+        {
+          "phrase": "But compare B with its original level",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 31.04,
+          "frame": 932,
+          "key": "originalCompare",
+          "mode": "removeB"
+        }
+      ],
+      "mediaFrames": 1469,
+      "settleFrame": 893,
+      "durationInFrames": 1538,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": {
+        "mode": "removeB",
+        "at": {
+          "event": 209,
+          "response": 653,
+          "originalCompare": 932
+        }
+      },
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "bulletCuesSeconds": [
+        0.8,
+        6.866666666666666,
+        12,
+        32.6
+      ],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-principle",
+      "audioFile": "public/audio/assembled/c3-principle.7a46211b7ad4952a5207.f50e79dabedd.wav",
+      "audioSha256": "fed76431de6174cc2d036918d7fc960e58d09386e5891dfa933ded079b8434a0",
+      "alignmentPath": "public/audio/assembled/c3-principle.7a46211b7ad4952a5207.f50e79dabedd.alignment.json",
+      "alignmentSha256": "c43b290b1eb8c729d64d2d9f723c75292d764f135b633d550cd3486e7db66ae9",
+      "cues": [
+        {
+          "phrase": "We also need a new term",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 21.6,
+          "frame": 648,
+          "key": "defineK",
+          "mode": "fixedK"
+        },
+        {
+          "phrase": "Adding or removing A or B",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 38.32,
+          "frame": 1150,
+          "key": "sameK",
+          "mode": "fixedK"
+        }
+      ],
+      "mediaFrames": 1546,
+      "settleFrame": 0,
+      "durationInFrames": 1615,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": {
+        "mode": "fixedK",
+        "at": {
+          "defineK": 648,
+          "sameK": 1150
+        }
+      },
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "bulletCuesSeconds": [
+        0.8,
+        22.733333333333334,
+        40.3
+      ],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-temperature",
+      "audioFile": "public/audio/assembled/c3-temperature.3ab7b4e421efce8f5db8.531e6ecd38b1.wav",
+      "audioSha256": "5448a6ef3b9237421d501584ca49aabce7fe26a0fee65a047ce6a89cfc95620d",
+      "alignmentPath": "public/audio/assembled/c3-temperature.3ab7b4e421efce8f5db8.531e6ecd38b1.alignment.json",
+      "alignmentSha256": "c96a684241f26022a0a9e9857396f3b06192e1fab14f2d5c140a0e093ed9fb70",
+      "cues": [
+        {
+          "phrase": "Two nitrogen dioxide molecules",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 4.24,
+          "frame": 128,
+          "key": "association",
+          "mode": "associationHeat"
+        },
+        {
+          "phrase": "A heat-releasing reaction is exothermic",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 15.52,
+          "frame": 466,
+          "key": "exothermic",
+          "mode": "associationHeat"
+        },
+        {
+          "phrase": "The reverse direction absorbs heat",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 26,
+          "frame": 780,
+          "key": "reverse",
+          "mode": "associationHeat"
+        },
+        {
+          "phrase": "Heating favours",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 30.32,
+          "frame": 910,
+          "key": "heating",
+          "mode": "associationHeat"
+        },
+        {
+          "phrase": "Cooling favours",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 39.76,
+          "frame": 1193,
+          "key": "cooling",
+          "mode": "associationHeat"
+        }
+      ],
+      "mediaFrames": 1762,
+      "settleFrame": 1253,
+      "durationInFrames": 1831,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": {
+        "mode": "associationHeat",
+        "at": {
+          "association": 128,
+          "exothermic": 466,
+          "reverse": 780,
+          "heating": 910,
+          "cooling": 1193
+        }
+      },
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "bulletCuesSeconds": [
+        0.8,
+        13.733333333333333,
+        24.866666666666667,
+        28.733333333333334
+      ],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-temperature-response",
+      "audioFile": "public/audio/assembled/c3-temperature-response.1378dc2ebb282ef31b72.03e523ed9963.wav",
+      "audioSha256": "d7777c133e979f2e86a3aa2b03becc7f364ee85771e21b8e922bfc5165b4cc2c",
+      "alignmentPath": "public/audio/assembled/c3-temperature-response.1378dc2ebb282ef31b72.03e523ed9963.alignment.json",
+      "alignmentSha256": "55d7b38a7a07e85d120af8bc12e5c660b6dcc98f624bcc6ea6052c99992a09fc",
+      "cues": [
+        {
+          "phrase": "Now separate the temperature change",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 19.04,
+          "frame": 572,
+          "key": "event",
+          "mode": "temperatureResponse"
+        },
+        {
+          "phrase": "Their concentrations therefore do not jump",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 32.16,
+          "frame": 965,
+          "key": "continuousConcentrations",
+          "mode": "temperatureResponse"
+        },
+        {
+          "phrase": "K has a value for the new temperature",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 39.84,
+          "frame": 1196,
+          "key": "defineNewK",
+          "mode": "temperatureResponse"
+        },
+        {
+          "phrase": "Hold the new temperature fixed",
+          "purpose": "Measured model phase",
+          "alignedSeconds": 51.6,
+          "frame": 1548,
+          "key": "response",
+          "mode": "temperatureResponse"
+        }
+      ],
+      "mediaFrames": 1702,
+      "settleFrame": 1788,
+      "durationInFrames": 1857,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": {
+        "mode": "temperatureResponse",
+        "at": {
+          "event": 572,
+          "continuousConcentrations": 965,
+          "defineNewK": 1196,
+          "response": 1548
+        }
+      },
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "bulletCuesSeconds": [
+        0.8,
+        33,
+        39.43333333333333,
+        47.6
+      ],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-water",
+      "audioFile": "public/audio/assembled/c3-water.540116296d6d3d98cba1.000d55b406e6.wav",
+      "audioSha256": "aa97a1b54ae59681219fd4d02570a20da114d481fd0012195af4292e8427c5b7",
+      "alignmentPath": "public/audio/assembled/c3-water.540116296d6d3d98cba1.000d55b406e6.alignment.json",
+      "alignmentSha256": "4fb7d028263346f53e3038aa1edf680e74ff072944b272c681095cc024f1edbf",
+      "cues": [
+        {
+          "phrase": "That combines",
+          "purpose": "bullets[0].at",
+          "alignedSeconds": 12,
+          "frame": 360
+        },
+        {
+          "phrase": "For a temperature-only",
+          "purpose": "bullets[1].at",
+          "alignedSeconds": 21.84,
+          "frame": 656
+        },
+        {
+          "phrase": "For a water-removal",
+          "purpose": "bullets[2].at",
+          "alignedSeconds": 29.36,
+          "frame": 881
+        }
+      ],
+      "mediaFrames": 1184,
+      "settleFrame": 0,
+      "durationInFrames": 1253,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": null,
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "bulletCuesSeconds": [
+        12,
+        21.866666666666667,
+        29.366666666666667
+      ],
+      "stageLines": []
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "audioFile": "public/audio/assembled/c3-transfer-a.7fd330160a251f59b65c.ed838d744a2e.wav",
+      "audioSha256": "67a6c9f7d8009a3208004894d42f4e962171cfc921b546d1c3ea3f1d29cf6ccc",
+      "alignmentPath": "public/audio/assembled/c3-transfer-a.7fd330160a251f59b65c.ed838d744a2e.alignment.json",
+      "alignmentSha256": "ba256b4e4efb6faafa1f77916d9e42c9e67da41203464bfa834456a7325fab28",
+      "cues": [
+        {
+          "phrase": "Only A drops",
+          "purpose": "calculationPresentation.stages[0].lineAts",
+          "alignedSeconds": 35.6,
+          "frame": 1068
+        },
+        {
+          "phrase": "Less A initially",
+          "purpose": "calculationPresentation.stages[1].lineAts",
+          "alignedSeconds": 40.08,
+          "frame": 1203
+        },
+        {
+          "phrase": "B has not changed yet",
+          "purpose": "calculationPresentation.stages[1].lineAts",
+          "alignedSeconds": 44.160000000000004,
+          "frame": 1325
+        },
+        {
+          "phrase": "B is now",
+          "purpose": "calculationPresentation.stages[2].lineAts",
+          "alignedSeconds": 49.2,
+          "frame": 1476
+        },
+        {
+          "phrase": "A starts recovering",
+          "purpose": "calculationPresentation.stages[2].lineAts",
+          "alignedSeconds": 54.400000000000006,
+          "frame": 1632
+        },
+        {
+          "phrase": "K stays",
+          "purpose": "calculationPresentation.stages[3].lineAts",
+          "alignedSeconds": 58.32,
+          "frame": 1750
+        },
+        {
+          "phrase": "temperature stayed fixed",
+          "purpose": "calculationPresentation.stages[3].lineAts",
+          "alignedSeconds": 59.92,
+          "frame": 1798
+        },
+        {
+          "phrase": "Pause here",
+          "purpose": "Pause invitation before the protected interval",
+          "alignedSeconds": 21.44,
+          "frame": 644
+        }
+      ],
+      "responseHold": {
+        "startFrame": 708,
+        "endFrame": 1068,
+        "silenceFrames": 360,
+        "firstFeedbackFrame": 1068,
+        "captionsAbsent": true
+      },
+      "mediaFrames": 2064,
+      "settleFrame": 0,
+      "durationInFrames": 2133,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": null,
+      "revealDelays": {
+        "heading": 12,
+        "responseHoldStart": 708,
+        "pausePrompt": 644,
+        "answerVisibleStart": 1068,
+        "stepAts": [
+          1068,
+          1203,
+          1476,
+          1750
+        ]
+      },
+      "bulletCuesSeconds": [],
+      "stageLines": [
+        [
+          1068
+        ],
+        [
+          1203,
+          1325
+        ],
+        [
+          1476,
+          1632
+        ],
+        [
+          1750,
+          1798
+        ]
+      ]
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "audioFile": "public/audio/assembled/c3-transfer-b.898f5da17449f4b1813f.6840eb6efd0e.wav",
+      "audioSha256": "5e88d8713480aa63fcf781c7dbc167162e29ea839b088529fe59a592413802fd",
+      "alignmentPath": "public/audio/assembled/c3-transfer-b.898f5da17449f4b1813f.6840eb6efd0e.alignment.json",
+      "alignmentSha256": "411d3993827eef2519ca259c54b82e166bea90e2cb0b29c957d482dd0c82f0e8",
+      "cues": [
+        {
+          "phrase": "Cooling favours",
+          "purpose": "calculationPresentation.stages[0].lineAts",
+          "alignedSeconds": 40.4,
+          "frame": 1212
+        },
+        {
+          "phrase": "Here that is",
+          "purpose": "calculationPresentation.stages[0].lineAts",
+          "alignedSeconds": 43.68,
+          "frame": 1311
+        },
+        {
+          "phrase": "contains more",
+          "purpose": "calculationPresentation.stages[1].lineAts",
+          "alignedSeconds": 47.6,
+          "frame": 1428
+        },
+        {
+          "phrase": "K is larger",
+          "purpose": "calculationPresentation.stages[2].lineAts",
+          "alignedSeconds": 53.12,
+          "frame": 1594
+        },
+        {
+          "phrase": "Pause here",
+          "purpose": "Pause invitation before the protected interval",
+          "alignedSeconds": 26.72,
+          "frame": 802
+        }
+      ],
+      "responseHold": {
+        "startFrame": 852,
+        "endFrame": 1212,
+        "silenceFrames": 360,
+        "firstFeedbackFrame": 1212,
+        "captionsAbsent": true
+      },
+      "mediaFrames": 1944,
+      "settleFrame": 0,
+      "durationInFrames": 2013,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": null,
+      "revealDelays": {
+        "heading": 12,
+        "responseHoldStart": 852,
+        "pausePrompt": 802,
+        "answerVisibleStart": 1212,
+        "stepAts": [
+          1212,
+          1428,
+          1594
+        ]
+      },
+      "bulletCuesSeconds": [],
+      "stageLines": [
+        [
+          1212,
+          1311
+        ],
+        [
+          1428
+        ],
+        [
+          1594
+        ]
+      ]
+    },
+    {
+      "sceneId": "c3-summary",
+      "audioFile": "public/audio/assembled/c3-summary.cf7dba31ab4d39533f0d.5e1ae4eb79a4.wav",
+      "audioSha256": "38b487e098ebf78098c0eff23669bfb128c5b3c577da1e57a63ef2a0977d5121",
+      "alignmentPath": "public/audio/assembled/c3-summary.cf7dba31ab4d39533f0d.5e1ae4eb79a4.alignment.json",
+      "alignmentSha256": "88b1f8ef3525801b5e0447aae776203d3c58b129f131f209eaff7eb5c5567dd4",
+      "cues": [
+        {
+          "phrase": "Start with what changed",
+          "purpose": "revealDelays.takeawayAts",
+          "alignedSeconds": 0,
+          "frame": 0
+        },
+        {
+          "phrase": "Then ask which reaction",
+          "purpose": "revealDelays.takeawayAts",
+          "alignedSeconds": 2.08,
+          "frame": 63
+        },
+        {
+          "phrase": "For heating or cooling",
+          "purpose": "revealDelays.takeawayAts",
+          "alignedSeconds": 19.44,
+          "frame": 584
+        },
+        {
+          "phrase": "Next, we will change the volume",
+          "purpose": "C4 progression handoff",
+          "alignedSeconds": 31.92,
+          "frame": 958
+        }
+      ],
+      "mediaFrames": 1112,
+      "settleFrame": 0,
+      "durationInFrames": 1181,
+      "tailAndTransitionFrames": 69,
+      "diagramProps": null,
+      "revealDelays": {
+        "heading": 12,
+        "takeawayAts": [
+          0,
+          63,
+          584
+        ],
+        "finalPrompt": 958
+      },
+      "bulletCuesSeconds": [],
+      "stageLines": []
+    }
+  ],
+  "durationInFrames": 16210,
+  "durationSeconds": 540.3333333333334,
+  "scope": "Measured speech alignment, lossless PCM assembly and response silence. No listening or continuous playback approval.",
+  "outputs": [
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson.json",
+      "sha256": "e040b94ca044d497e10ebad0e65e9326778b7c8576e24ced7d1d28ebfae88edd"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/remotion-props.json",
+      "sha256": "796b264456c8136ba4639e4ea1bfd490e5d513f891490f177e2c4fad67516423"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+    "sha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+  },
+  "pages": [
+    {
+      "path": "out/prototypes/module5-c3-voiced-review-2026-10-10/page-inputs.json",
+      "sha256": "a6d42e31e999419b3753dfcaad9f9307b73bda5adf520776df04d319ec16dd30"
+    },
+    {
+      "path": "out/prototypes/module5-c3-voiced-pilot-review-2026-10-10/page-inputs.json",
+      "sha256": "668f21a5cda7a41bc6b5351398daa6221c23177c7ad14a59440eed7420ea8caa"
+    }
+  ],
+  "scope": "Root targeted actual UI playback and decoded still observations. No human listening or complete continuous-lesson review.",
+  "initialFinding": "v1 actual question hold showed an overlapping optional pausePrompt and existing handwritten pause instruction. v2 removes only the two optional pausePrompt fields. Raw speech, question demands, conditions and protected gaps are preserved.",
+  "currentSamples": [
+    {
+      "scene": "c3-transfer-a",
+      "observed": "Actual v2 Player hold at6:33, and first answer at6:39/6:41. One pause instruction/countdown; no answer/caption during hold. First answer card shows only immediate A change with supplied conditions retained."
+    },
+    {
+      "scene": "c3-transfer-b",
+      "viewport": "750x900",
+      "observed": "Actual v2 Player hold at7:49. One pause instruction/countdown, both question demands, equation and conditions retained. No answer/caption during hold.",
+      "limitation": "The heat-sign condition wraps its final0 onto a second line at this player size. It is not cropped. Recheck mathematical grouping and all other states at intended viewing size before full export."
+    },
+    {
+      "scene": "c3-transfer-a",
+      "evidence": {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-36.6.png",
+        "sha256": "96368d63c4fcd3109d688320fc13ff37f74b07a8f1348625161126165183b548"
+      },
+      "observed": "Decoded actual first-answer frame has one active reasoning card, grouped conditions and no future answer lines."
+    }
+  ],
+  "browserTechnical": "Native remove clip loaded1920x1080, readyState4, muted:false, paused:false, and currentTime advanced from0.296597 to16.579853. Both native videos decoded metadata without an error. Native page console errors empty. This verifies playback capability, not audible pronunciation or quality.",
+  "viewportReset": true,
+  "listening": "pending",
+  "wholeLessonPlayback": "pending"
+}

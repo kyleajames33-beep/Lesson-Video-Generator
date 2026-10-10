@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "status": "pass-scoped-measured-source-timing-and-three-decoded-states",
+  "scope": "No human listening, continuous playback, export or public release approval.",
+  "bindings": [
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+      "sha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/remotion-props-v2.json",
+      "sha256": "4e8db4bd867e418e6f4ed9998c0ca2b4f703e6bf87937a688f312a16b9fb94e0"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/measured-cue-report-v2.json",
+      "sha256": "f856d88d785e34a9c8b42f9d661ef2729d9f10c7d584a36589d0c903473e170c"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/assembly-record.json",
+      "sha256": "a2934f94a0e8be2331f01ffb828ad240ff8bb31384af2914b9a12598944f9d5d"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/generation-record.json",
+      "sha256": "d2d845cef4b75affe9c15dc5ce4d2c7b06d1fa78ae5021374160660c6c9a6fef"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/voice-manifest.json",
+      "sha256": "82db44c9b6f23d6315f660645cf0d0ef59a95cd7a4e5ef378237cdc9e168e30a"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/request-options.json",
+      "sha256": "9d85917a4da6b7380ac2f63b613cb5c0565d4be440fff92964958c8b35dfd811"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/playback-plan.json",
+      "sha256": "b97c49e2b2c5f38b3f0861222d3311525eb94ff06fcdf9d6520acd5ef86d2a34"
+    },
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+      "sha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+      "sha256": "7f2d02bb3704e406bc55dd580a9cfa6264fb30378f692f2aea77afc23464f075"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "sha256": "5c418716884f1c15a9cab3d9f8cb821fed8c47bc605cdce0f790e60441e91c07"
+    },
+    {
+      "path": "scripts/lib/caption-timeline.mjs",
+      "sha256": "1dcb9a9423a5abb7afccafe98461a7c2c33fffc9cb15233e1c06cea1cc4752cc"
+    },
+    {
+      "path": "scripts/lib/timeline-narration.mjs",
+      "sha256": "d4dc35eeb8f4b8630db4c72bfdb335b1df9021ba2ac6794d4ea9daee6d6a939e"
+    },
+    {
+      "path": "scripts/release-preflight.mjs",
+      "sha256": "16722c4bcff1164e6fdc5110ed130fd91da022cefce5a5deff389cea76ed0b6f"
+    }
+  ],
+  "rawFiles": [
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-hook.b2a08b697e02.mp3",
+      "sha256": "7355b4e6d95754b087c233157d8e6dae33a54edaaf11d965beafcfbe4609dcae"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-hook.b2a08b697e02.alignment.json",
+      "sha256": "9366e69c29d9a15c3b63e2e6772cb59278a042bf62b1e3ffe80e480c7b9a82a7"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-hook.b2a08b697e02.generation.json",
+      "sha256": "d4ba94b50451448996f358867c37e80758eb7516ca546ca459b485eb833672a1"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-add.852e355ab749.mp3",
+      "sha256": "9e754d24b9675006d68171c3737b4c83ad8d9c06c478c3805474070aaccf777d"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-add.852e355ab749.alignment.json",
+      "sha256": "0533bc9c633c263b9737b7efe37d57ba064646d782acaae728de2b19d9f96938"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-add.852e355ab749.generation.json",
+      "sha256": "43aff75ff4e3ddada8af3f49b2ec52fbd5092bf7714ba48e5cc20d1a7a707c2d"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-remove.51cd2580b739.mp3",
+      "sha256": "e4c154bda2573675259e9114f8ad3de1c967495f7f2b7f3350850298b9dc5630"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-remove.51cd2580b739.alignment.json",
+      "sha256": "2f73955553efae8f0c06b0a2887c0c1c1d5c326486a657b58f9b7437e6280b2f"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-remove.51cd2580b739.generation.json",
+      "sha256": "61d5bfde192ccd5b2dd0ee7b8a25c2cc769aa9bc929225a4f103071986ad79de"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-principle.f50e79dabedd.mp3",
+      "sha256": "59572c0a2a36954ed678d453e508e5a2e7e8e314c53efd5fd8344ddf92555ac1"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-principle.f50e79dabedd.alignment.json",
+      "sha256": "7dc022112e59b72a3bd9ee2b6a9a5ab3d109f1897e12b5572198b1205b187282"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-principle.f50e79dabedd.generation.json",
+      "sha256": "4af314117ea8b3da319ab1a007d38671a79e0b888cbb62ac9368e4f199972f9f"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-temperature.531e6ecd38b1.mp3",
+      "sha256": "f78c6bf08d2a76f85430f167e143dce8f50a9461522ae4fd17a6426fa21b37ab"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-temperature.531e6ecd38b1.alignment.json",
+      "sha256": "c7d2ae7ab8d058224fa2b9236ceeabf739a02a52858a1a5b5f3ffa5d2bde82b7"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-temperature.531e6ecd38b1.generation.json",
+      "sha256": "2d42bede6e775f0a1c07908d2b5f3bf73257c8d08dc79ceb2fb72c25ec90b839"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-temperature-response.03e523ed9963.mp3",
+      "sha256": "c20fa5360d58fbd0afcea781e2bd460efce35f61267765b336abc4b55d1ad42f"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-temperature-response.03e523ed9963.alignment.json",
+      "sha256": "a9a80022745cdf42f95b8f2093788db96526149e4a8c7d991828de1525a6dcad"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-temperature-response.03e523ed9963.generation.json",
+      "sha256": "daad87b33f9b35b3668cb503ef078416581f48ad8259a9a5b7a7dfcf55afcef7"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-water.000d55b406e6.mp3",
+      "sha256": "3829bb6c70d45541fa413c6037295e1ec4cf07e9fed127785c82045860719163"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-water.000d55b406e6.alignment.json",
+      "sha256": "1d765e50d7db3a152aaf317c9a58d9acf627226ebac0a10ce9bbc70f2554e0f3"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-water.000d55b406e6.generation.json",
+      "sha256": "24660e483af509b8cea65c5c185d9aa1838bad901df34ef42bdc84e1c1b033a9"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-a-prompt.8d12603a5fb6.mp3",
+      "sha256": "c857382b9ee371edb85eeb33c175eaa483bc85f09112fe3d11fe3485ba1c7d15"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-a-prompt.8d12603a5fb6.alignment.json",
+      "sha256": "d3db3960aa8fe2117a21fe8c8fb74eb5fa10fb40126df1b3d24ce3ed5e84ecc4"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-a-prompt.8d12603a5fb6.generation.json",
+      "sha256": "48e8c93d95e990318ea8064f7a95cadfc8ad037f2bd1feef6127144fea99230f"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-a-feedback.7a6dd528b313.mp3",
+      "sha256": "6081943586dc17168d347b6a24a0815d05779f2825410fc1d08759d3b842e263"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-a-feedback.7a6dd528b313.alignment.json",
+      "sha256": "337aabc04f23d4bb3aa9bec154f1a38974e6428b59ef67df39c6191ab841addd"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-a-feedback.7a6dd528b313.generation.json",
+      "sha256": "a26102e932c57bf9c80f71f466046994362171b60c9a6431867321fb335b4ae2"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-b-prompt.e7d6fe4e4d44.mp3",
+      "sha256": "d16d0d975b7b00ce36405535cab476e053cf338aa6d8efed5bf52b4fc697a93f"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-b-prompt.e7d6fe4e4d44.alignment.json",
+      "sha256": "e43c53306b8c8b886a3b8c72f4edac949dc8ec94a815be27b06bf42ebc11cdd4"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-b-prompt.e7d6fe4e4d44.generation.json",
+      "sha256": "fbd1eb041f83e44b69084405eb70cf00b9536aeab679a104893b73c1b93a204e"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-b-feedback.953c7519359f.mp3",
+      "sha256": "6cf41d7762ae60c75f4dc1a5b3ceda8c8f5ef0545afcf9f35bc361ca7fa53d15"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-b-feedback.953c7519359f.alignment.json",
+      "sha256": "108400fe633814642eda708ef08abe8568bea1e4ed79c35f3488fa71df26a205"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-transfer-b-feedback.953c7519359f.generation.json",
+      "sha256": "2debcc7cc9bac8a7882ad2e9293d532e96155b3b470eb9d91078c6bc0f49e516"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-summary.5e1ae4eb79a4.mp3",
+      "sha256": "8b687afd5b9823e866904e885a8f3a7f720ea9e6abac94c269177c1cb2fd4dff"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-summary.5e1ae4eb79a4.alignment.json",
+      "sha256": "e30879bed004e77d3522c111d6d7215ade5fcda68b0f1b3c891f3d1c12402a65"
+    },
+    {
+      "path": "public/audio/Chemistry-Y12-M5-C3-clear-2026-10-10-take01/c3-summary.5e1ae4eb79a4.generation.json",
+      "sha256": "6afa6c279721bf54d9acf68ef15e0fa27f9fdbb65522283945dbd209bb982c9a"
+    }
+  ],
+  "assembledFiles": [
+    {
+      "path": "public/audio/assembled/c3-hook.134d5bacc3ddf43ea593.b2a08b697e02.wav",
+      "sha256": "033625f30c3d4dce6dccb78872b2020d437c73abe1d27ccefadc98a3985d1d09"
+    },
+    {
+      "path": "public/audio/assembled/c3-hook.134d5bacc3ddf43ea593.b2a08b697e02.alignment.json",
+      "sha256": "30aeb985c09dc165c3d95c9de475f549f354d2a983d005fac5945e636c6d57dd"
+    },
+    {
+      "path": "public/audio/assembled/c3-add.fbeecf2ebcb78085468f.852e355ab749.wav",
+      "sha256": "2b373e698bf877120e5295f0f2830a0075ff2f0abca550625d2f6cf456e42fbf"
+    },
+    {
+      "path": "public/audio/assembled/c3-add.fbeecf2ebcb78085468f.852e355ab749.alignment.json",
+      "sha256": "7c43091e550e869f1ad9442868d38ab7acdbdcc91187c6c2ccbff2025fc49427"
+    },
+    {
+      "path": "public/audio/assembled/c3-remove.1ac568875a7cba40e9b4.51cd2580b739.wav",
+      "sha256": "6fa71ec782a178c70293d786aafce50d5e9ffbc339bf75c9d3a6fb98e4052333"
+    },
+    {
+      "path": "public/audio/assembled/c3-remove.1ac568875a7cba40e9b4.51cd2580b739.alignment.json",
+      "sha256": "af80863bfb4f556e2e1b57056b352cdb382b4bab410514d27c7fe31d9a035e76"
+    },
+    {
+      "path": "public/audio/assembled/c3-principle.7a46211b7ad4952a5207.f50e79dabedd.wav",
+      "sha256": "fed76431de6174cc2d036918d7fc960e58d09386e5891dfa933ded079b8434a0"
+    },
+    {
+      "path": "public/audio/assembled/c3-principle.7a46211b7ad4952a5207.f50e79dabedd.alignment.json",
+      "sha256": "c43b290b1eb8c729d64d2d9f723c75292d764f135b633d550cd3486e7db66ae9"
+    },
+    {
+      "path": "public/audio/assembled/c3-temperature.3ab7b4e421efce8f5db8.531e6ecd38b1.wav",
+      "sha256": "5448a6ef3b9237421d501584ca49aabce7fe26a0fee65a047ce6a89cfc95620d"
+    },
+    {
+      "path": "public/audio/assembled/c3-temperature.3ab7b4e421efce8f5db8.531e6ecd38b1.alignment.json",
+      "sha256": "c96a684241f26022a0a9e9857396f3b06192e1fab14f2d5c140a0e093ed9fb70"
+    },
+    {
+      "path": "public/audio/assembled/c3-temperature-response.1378dc2ebb282ef31b72.03e523ed9963.wav",
+      "sha256": "d7777c133e979f2e86a3aa2b03becc7f364ee85771e21b8e922bfc5165b4cc2c"
+    },
+    {
+      "path": "public/audio/assembled/c3-temperature-response.1378dc2ebb282ef31b72.03e523ed9963.alignment.json",
+      "sha256": "55d7b38a7a07e85d120af8bc12e5c660b6dcc98f624bcc6ea6052c99992a09fc"
+    },
+    {
+      "path": "public/audio/assembled/c3-water.540116296d6d3d98cba1.000d55b406e6.wav",
+      "sha256": "aa97a1b54ae59681219fd4d02570a20da114d481fd0012195af4292e8427c5b7"
+    },
+    {
+      "path": "public/audio/assembled/c3-water.540116296d6d3d98cba1.000d55b406e6.alignment.json",
+      "sha256": "4fb7d028263346f53e3038aa1edf680e74ff072944b272c681095cc024f1edbf"
+    },
+    {
+      "path": "public/audio/assembled/c3-transfer-a.7fd330160a251f59b65c.ed838d744a2e.wav",
+      "sha256": "67a6c9f7d8009a3208004894d42f4e962171cfc921b546d1c3ea3f1d29cf6ccc"
+    },
+    {
+      "path": "public/audio/assembled/c3-transfer-a.7fd330160a251f59b65c.ed838d744a2e.alignment.json",
+      "sha256": "ba256b4e4efb6faafa1f77916d9e42c9e67da41203464bfa834456a7325fab28"
+    },
+    {
+      "path": "public/audio/assembled/c3-transfer-b.898f5da17449f4b1813f.6840eb6efd0e.wav",
+      "sha256": "5e88d8713480aa63fcf781c7dbc167162e29ea839b088529fe59a592413802fd"
+    },
+    {
+      "path": "public/audio/assembled/c3-transfer-b.898f5da17449f4b1813f.6840eb6efd0e.alignment.json",
+      "sha256": "411d3993827eef2519ca259c54b82e166bea90e2cb0b29c957d482dd0c82f0e8"
+    },
+    {
+      "path": "public/audio/assembled/c3-summary.cf7dba31ab4d39533f0d.5e1ae4eb79a4.wav",
+      "sha256": "38b487e098ebf78098c0eff23669bfb128c5b3c577da1e57a63ef2a0977d5121"
+    },
+    {
+      "path": "public/audio/assembled/c3-summary.cf7dba31ab4d39533f0d.5e1ae4eb79a4.alignment.json",
+      "sha256": "88b1f8ef3525801b5e0447aae776203d3c58b129f131f209eaff7eb5c5567dd4"
+    }
+  ],
+  "checks": [
+    "1184 words,12 raw segments and10 voiced scenes preserved; title unvoiced. Deep comparison with approved clear parent permits only voice/media, captions, durations and measured cues/holds; v2 additionally removes exactly2 redundant optional pausePrompt fields.",
+    "All12 request sidecars match exact text, Simon Australian voice cOEV2DrZBBGNLpE74kQu, eleven_v4, stability0.35 and similarity0.75. Canonical sorted-key request hashes match manifest. All36 raw hashes and alignment text match.",
+    "Independent FFmpeg decoding and PCM reconstruction from raw takes, recorded padding and gaps reproduces all10 assembled WAV streams byte for byte.",
+    "All40 unique phrase spans reproduce aligned start timestamps and ceil(seconds*30-1e-8) frames. All10 captions reproduce with alignmentToCaptions. Diagram/stage/line cues use frames, bullet at uses seconds.",
+    "Both360-frame response gaps contain zero PCM and no captions. Ordered answers begin at gap end. All question demands and conditions remain. Both holds end safely before actual24-frame outgoing overlap.",
+    "Two-second joining/splitting windows fit: association128, reverse780, heating910, cooling1193, cooling settled1253. Temperature response1548 plus240frames settles1788, outgoing1833.",
+    "Normal media narration rate134.8 to154.4 words/minute; question scenes excluding12-second gaps142.6056 and137.5. Mechanical rates do not establish listening quality."
+  ],
+  "duration": {
+    "frames": 16210,
+    "fps": 30,
+    "seconds": 540.3333333333334
+  },
+  "responseHolds": [
+    {
+      "sceneId": "c3-transfer-a",
+      "startFrame": 708,
+      "endFrame": 1068,
+      "answerFirstFrame": 1068,
+      "outgoingStartFrame": 2109,
+      "lastLineFrame": 1798
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "startFrame": 852,
+      "endFrame": 1212,
+      "answerFirstFrame": 1212,
+      "outgoingStartFrame": 1989,
+      "lastLineFrame": 1594
+    }
+  ],
+  "tails": {
+    "normalReadingFrames": 45,
+    "transitionAllowanceFrames": 24,
+    "temperatureResponsePreTransitionFrames": 131,
+    "temperatureResponseSettledReadingFrames": 45
+  },
+  "findings": [
+    {
+      "id": "SHORT_TAIL-numerical-boundary",
+      "severity": "diagnostic",
+      "alignmentEndSeconds": 68.80000000000001,
+      "decodedEndFrame": 2064,
+      "outgoingStartFrame": 2109,
+      "actualReadingTailFrames": 45,
+      "comparisonExcessSeconds": 1.4210854715202004e-14,
+      "conclusion": "Exactly1.5 seconds reading tail; strict binary floating-point comparison warns without actual shortage."
+    },
+    {
+      "id": "terminal-punctuation-clamp",
+      "severity": "documented-provenance",
+      "conclusion": "Transfer A prompt/feedback terminal punctuation overruns decoded media by approximately0.08 seconds. Only terminal punctuation is bounded; words/raw files preserved."
+    },
+    {
+      "id": "optional-assembled-generation-sidecars",
+      "severity": "informational",
+      "conclusion": "Each snapshot intentionally records10 absent assembled generation-settings sidecars with required:false and sha256:null. This matches current state. Actual verifyRelease passes both snapshots with no changes and no missing required files;12 raw generation sidecars are present and verified."
+    }
+  ],
+  "pilot": {
+    "bindings": [
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/render-record.json",
+        "sha256": "2bbba1dba436fb6bc2bd8b428f2043ff3b130ac75779561b13df29ea5cf9fa6d"
+      },
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/video.mp4",
+        "sha256": "d12b67d1a5df577236473afd4300f8bfcda8dd64691473fc7f5f413ed11efe20"
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/inputs.snapshot.json",
+        "sha256": "a035572e4e0b9d17f65591a5c628127dc004afe28501f1dbea9d31bd845a9ec4",
+        "fileCount": 865,
+        "packageSha256": "b9799506dd505b8d238a11ca3fd31638f8f6bc4d9c0689eb31deafabba05225b",
+        "currentDrift": [],
+        "verifyRelease": {
+          "valid": true,
+          "changes": [],
+          "missingRequired": []
+        },
+        "optionalAbsentGenerationSidecars": 10
+      },
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/release.snapshot.json",
+        "sha256": "82a946c9d64af253d6a173674d5eb3fc011093c866c64a01bbc5e3742a3c540d",
+        "fileCount": 874,
+        "packageSha256": "d1e4432ed46ad606bdb0ca27be8d7c86f753b3bd4528adb716222695518cc437",
+        "currentDrift": [],
+        "verifyRelease": {
+          "valid": true,
+          "changes": [],
+          "missingRequired": []
+        },
+        "optionalAbsentGenerationSidecars": 10
+      }
+    ],
+    "inputPackageAndVideoRecordMatch": true,
+    "decodedImages": [
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-29.6.png",
+        "sha256": "06d4097883a39821121a5cbad6fd3ef3bace0c20159909ac6ada94855de7b7bf"
+      },
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-36.6.png",
+        "sha256": "96368d63c4fcd3109d688320fc13ff37f74b07a8f1348625161126165183b548"
+      },
+      {
+        "path": "out/prototypes/module5-c3-voiced-2026-10-10/transfer-pilot02/decoded-review/frame-59.33.png",
+        "sha256": "a8e048c88c7fed355805bb1d51e1c73aae0ee3c33a86935bc186f44173d8308f"
+      }
+    ],
+    "observations": {
+      "29.6": "Both question demands and all conditions retained, single pause instruction, no answer.",
+      "36.6": "First answer visible, later answer lines absent, conditions retained.",
+      "59.33": "Established K result visible before later temperature explanation, conditions retained."
+    },
+    "durationSeconds": 71.1,
+    "fps": 30,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "limitations": "Only3 decoded stills, no external caption controls, continuous movement or audio listening."
+  },
+  "historicalDiagnostic": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson.json",
+    "sha256": "e040b94ca044d497e10ebad0e65e9326778b7c8576e24ced7d1d28ebfae88edd"
+  },
+  "rootAttributedObservation": "Root actual750px Player reports one pause label, question/conditions retained, captions/answers absent during holds and cooling gap checked. This is not independent playback/listening evidence.",
+  "pending": [
+    "Human listening",
+    "Continuous exact voiced lesson review",
+    "Actual caption controls/device review",
+    "Full export and public release gates"
+  ],
+  "mutationScope": "Only new review MD/JSON; no source, media, brief workflow or gate edits."
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "scope": "Final workflow checks. Pending exact complete voiced playback correctly blocks full export.",
+  "checks": [
+    {
+      "check": "recording-stage",
+      "exitCode": 0,
+      "report": {
+        "ready": true,
+        "stage": "recording",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+          "lessonSha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      }
+    },
+    {
+      "check": "export-stage",
+      "exitCode": 1,
+      "report": {
+        "ready": false,
+        "stage": "export",
+        "blockers": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          }
+        ],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+          "lessonSha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      }
+    },
+    {
+      "check": "current-v2-pilot-snapshot",
+      "exitCode": 0,
+      "report": {
+        "valid": true,
+        "packageSha256": "d1e4432ed46ad606bdb0ca27be8d7c86f753b3bd4528adb716222695518cc437",
+        "changes": [],
+        "missingRequired": []
+      }
+    }
+  ]
+}

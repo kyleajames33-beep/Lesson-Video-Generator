@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+    "lessonSha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C2: equal opposing rates versus amounts, closed versus insulated systems and the declared one-to-one A/B model. Entry check: equal rates need not mean equal concentrations. Rate and concentration are reminded in speech; released/absorbed heat and the enthalpy sign are explained here before use.",
+    "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO\u2082(g) \u21cc N\u2082O\u2084(g), forward heat-releasing.",
+    "stopsAfter": "Distinguish immediate imposed change from subsequent reaction, explain direction and fixed-temperature versus temperature-dependent K; diagnose possible open-oven water loss. No pressure/volume disturbance, catalyst mechanism, Q, ICE, K-expression construction or practical conduct.",
+    "nextLesson": "chem-m5-c04: gaseous volume/pressure and catalyst distinctions. C5 constructs equilibrium expressions; C6 calculations; C9 temperature/K data; p01 supervised named investigations remain separate."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/module5-beginner-next-selection-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Distinguish an imposed change from subsequent net reaction, predict its direction under stated conditions, and explain fixed-temperature versus temperature-dependent K.",
+    "causalExplanation": "The controlled transfer directly changes one concentration, then the model rate imbalance changes both forms towards a new limiting state. Fixed temperature retains K. For the separate heat-releasing association, temperature changes K and the preferred equilibrium composition without an imposed concentration jump at fixed volume.",
+    "conversationalApproach": "Every accepted beginner spoken paragraph is preserved exactly. First-use terms have plain meanings; observations precede causes and conclusions. No added spoken metadata or unexplained cuts.",
+    "openingDecision": "The accepted rhetorical addition question uses the large A-only transfer model. Only A jumps directly; B changes later through reaction. Existing generic hook fallback is avoided by this selected diagramBoard opt-in.",
+    "understandingCheck": "Two independent complete questions with separate prompt/feedback recordings. Each exact response interval is360frames after the complete decoded prompt; it is a12-second classroom preview hold, not a universal learner time.",
+    "curriculumScope": "Chemistry Stage 6 Syllabus (2017), Year 12 Module 5, chem-m5-c03 at route playlist position 4. Candidate contribution to C-disturbances, C-collision-observations, C-heat and C-temperature-K; official cached paragraph scope retained in preparation. Explanation does not establish investigation/practical conduct, complete action coverage or release."
+  },
+  "scenes": [
+    {
+      "sceneId": "c3-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Existing selected Module 5 title treatment, fixed title and a short silent reading hold. No added narrated metadata or particle backdrop. This identifies the two disturbances without claiming the whole module. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "Silent title.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "Stable reading hold; all actual delivery and caption clearance remain pending."
+    },
+    {
+      "sceneId": "c3-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"phrase\":\"Now we briefly add more A\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":15.72,\"frame\":472,\"key\":\"event\",\"mode\":\"additionHook\"},{\"phrase\":\"Any extra B has to be made by reaction\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":23.52,\"frame\":706,\"key\":\"response\",\"mode\":\"additionHook\"}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "the jump represents an imposed transfer, not instant product formation. Give the completed immediate state a deliberate reading hold before later motion. Do not animate a count bounce or a product jump."
+    },
+    {
+      "sceneId": "c3-add",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"phrase\":\"A's concentration rises immediately\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":21.68,\"frame\":651,\"key\":\"event\",\"mode\":\"addA\"},{\"phrase\":\"Straight after mixing\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":26.16,\"frame\":785,\"key\":\"rateReason\",\"mode\":\"addA\"},{\"phrase\":\"A now falls from its jump\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":43.76,\"frame\":1313,\"key\":\"response\",\"mode\":\"addA\"},{\"phrase\":\"In this model, the new equilibrium\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":51.36,\"frame\":1541,\"key\":\"limit\",\"mode\":\"addA\"}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "retain original / immediately after addition / later equilibrium reference. Reveal `More A and B than before, in this model` only with the final explanation. Show the exact limiting reference separately from the finite trace. Conditions remain visible; technical first-order assumptions remain in silent model notes."
+    },
+    {
+      "sceneId": "c3-remove",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"phrase\":\"B drops immediately\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":6.96,\"frame\":209,\"key\":\"event\",\"mode\":\"removeB\"},{\"phrase\":\"B starts rising\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":21.76,\"frame\":653,\"key\":\"response\",\"mode\":\"removeB\"},{\"phrase\":\"But compare B with its original level\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":31.04,\"frame\":932,\"key\":\"originalCompare\",\"mode\":\"removeB\"}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "the original reference is essential evidence, not decoration. Hold the three reference states after the final contrast. No continuous-removal arrow, product-success badge or anthropomorphic push-back motion."
+    },
+    {
+      "sceneId": "c3-principle",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"phrase\":\"We also need a new term\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":21.6,\"frame\":648,\"key\":\"defineK\",\"mode\":\"fixedK\"},{\"phrase\":\"Adding or removing A or B\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":38.32,\"frame\":1150,\"key\":\"sameK\",\"mode\":\"fixedK\"}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "define the term before using it to make a decision. Retain only the reference pair needed for this comparison; do not stack full addition and removal explanations beside the definition. Hold the unchanged badge and fixed-temperature condition."
+    },
+    {
+      "sceneId": "c3-temperature",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"phrase\":\"Two nitrogen dioxide molecules\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":4.24,\"frame\":128,\"key\":\"association\",\"mode\":\"associationHeat\"},{\"phrase\":\"A heat-releasing reaction is exothermic\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":15.52,\"frame\":466,\"key\":\"exothermic\",\"mode\":\"associationHeat\"},{\"phrase\":\"The reverse direction absorbs heat\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":26,\"frame\":780,\"key\":\"reverse\",\"mode\":\"associationHeat\"},{\"phrase\":\"Heating favours\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":30.32,\"frame\":910,\"key\":\"heating\",\"mode\":\"associationHeat\"},{\"phrase\":\"Cooling favours\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":39.76,\"frame\":1193,\"key\":\"cooling\",\"mode\":\"associationHeat\"}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "preserve two NO2 versus one N2O4, conserving two N and four O atoms. These are net-relationship illustrations, not measured events or a full collision mechanism. Final copy: `Heating favours splitting`; `Cooling favours joining`, attached to the written directions. Keep the heat meaning readable through each prediction. Brown/colourless swatches are schematic context, never concentration measurements. Do not treat heat as a chemical species in K."
+    },
+    {
+      "sceneId": "c3-temperature-response",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"phrase\":\"Now separate the temperature change\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":19.04,\"frame\":572,\"key\":\"event\",\"mode\":\"temperatureResponse\"},{\"phrase\":\"Their concentrations therefore do not jump\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":32.16,\"frame\":965,\"key\":\"continuousConcentrations\",\"mode\":\"temperatureResponse\"},{\"phrase\":\"K has a value for the new temperature\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":39.84,\"frame\":1196,\"key\":\"defineNewK\",\"mode\":\"temperatureResponse\"},{\"phrase\":\"Hold the new temperature fixed\",\"purpose\":\"Measured model phase\",\"alignedSeconds\":51.6,\"frame\":1548,\"key\":\"response\",\"mode\":\"temperatureResponse\"}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "K follows temperature, not conversion progress. Heating does not lower the activation barrier as a catalyst does. Maintain fixed volume and contained material. If implementation uses a finite heating ramp, label it and let K follow that ramp. Label a finite trace `Approaching new balance`; an exact limiting state is a separate reference. Hold the distinction before changing scene."
+    },
+    {
+      "sceneId": "c3-water",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx, full-width text-only board",
+      "teachingReason": "Existing editorial comparison shell. Show `Heating only: material retained`, then `Water removal: temperature fixed`. On \"two changes\", identify `Open oven: heating + possible water loss`. No hydrate equation, cobalt-coordination illustration, invented data or colour guarantee is needed. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "[{\"phrase\":\"That combines\",\"purpose\":\"bullets[0].at\",\"alignedSeconds\":12,\"frame\":360},{\"phrase\":\"For a temperature-only\",\"purpose\":\"bullets[1].at\",\"alignedSeconds\":21.84,\"frame\":656},{\"phrase\":\"For a water-removal\",\"purpose\":\"bullets[2].at\",\"alignedSeconds\":29.36,\"frame\":881}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "explain the confound, not a complete practical procedure. The two control cards remain stable for comparison. Do not place a drying arrow on the contained temperature-only condition. Supervised investigation remains open."
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/QuickCheckSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx, focusedContext selected opt-in",
+      "teachingReason": "Existing QuickCheckSlide/evidence board, selected-only layout. Short task: `Remove A: immediate change, later direction, K?`. Own stimulus: `A \u21cc B`, `Remove A`, `Temperature and volume fixed`, `Reclosed after removal`, and the declared rate model. No temperature experiment or second equation is on this screen. Current source uses this existing supported treatment; exact fit and continuous playback are pending. Exact voiced UI exposed two overlapping pause labels. Remove the redundant optional pausePrompt display field; retain the existing countdown and handwritten pause instruction. Conditions and both question demands remain unchanged.",
+      "narrationCue": "[{\"phrase\":\"Only A drops\",\"purpose\":\"calculationPresentation.stages[0].lineAts\",\"alignedSeconds\":35.6,\"frame\":1068},{\"phrase\":\"Less A initially\",\"purpose\":\"calculationPresentation.stages[1].lineAts\",\"alignedSeconds\":40.08,\"frame\":1203},{\"phrase\":\"B has not changed yet\",\"purpose\":\"calculationPresentation.stages[1].lineAts\",\"alignedSeconds\":44.160000000000004,\"frame\":1325},{\"phrase\":\"B is now\",\"purpose\":\"calculationPresentation.stages[2].lineAts\",\"alignedSeconds\":49.2,\"frame\":1476},{\"phrase\":\"A starts recovering\",\"purpose\":\"calculationPresentation.stages[2].lineAts\",\"alignedSeconds\":54.400000000000006,\"frame\":1632},{\"phrase\":\"K stays\",\"purpose\":\"calculationPresentation.stages[3].lineAts\",\"alignedSeconds\":58.32,\"frame\":1750},{\"phrase\":\"temperature stayed fixed\",\"purpose\":\"calculationPresentation.stages[3].lineAts\",\"alignedSeconds\":59.92,\"frame\":1798},{\"phrase\":\"Pause here\",\"purpose\":\"Pause invitation before the protected interval\",\"alignedSeconds\":21.44,\"frame\":644}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "reveal `Only A drops` at its spoken cue, then `A to B initially slower`, then `B to A initially faster`, and finally `A partly recovers; B falls` plus `Same K`. Keep one active reason and a compact original reference. Match each later conclusion to its own phrase. No solved arrow, result graph or K verdict during the attempt. The protected interval starts after prompt audio and ends at first audible/visible feedback."
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/QuickCheckSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx, focusedContext selected opt-in",
+      "teachingReason": "Same useful quick-check treatment, reset for its own stimulus: `2NO\u2082(g) \u21cc N\u2082O\u2084(g)`, `Cool`, `Closed; fixed volume`, `Forward releases heat: \u0394H < 0`. Short task: `After cooling: N\u2082O\u2084 and K?`. Keep both demands visible. Do not retain the irrelevant A-removal working beside this attempt. Current source uses this existing supported treatment; exact fit and continuous playback are pending. Exact voiced UI exposed two overlapping pause labels. Remove the redundant optional pausePrompt display field; retain the existing countdown and handwritten pause instruction. Conditions and both question demands remain unchanged.",
+      "narrationCue": "[{\"phrase\":\"Cooling favours\",\"purpose\":\"calculationPresentation.stages[0].lineAts\",\"alignedSeconds\":40.4,\"frame\":1212},{\"phrase\":\"Here that is\",\"purpose\":\"calculationPresentation.stages[0].lineAts\",\"alignedSeconds\":43.68,\"frame\":1311},{\"phrase\":\"contains more\",\"purpose\":\"calculationPresentation.stages[1].lineAts\",\"alignedSeconds\":47.6,\"frame\":1428},{\"phrase\":\"K is larger\",\"purpose\":\"calculationPresentation.stages[2].lineAts\",\"alignedSeconds\":53.12,\"frame\":1594},{\"phrase\":\"Pause here\",\"purpose\":\"Pause invitation before the protected interval\",\"alignedSeconds\":26.72,\"frame\":802}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "reveal the heat-releasing direction, then `More N\u2082O\u2084 at equilibrium`, then `K larger at lower temperature`, each on its spoken reason/result. No colour verdict, solved direction or K answer during the protected interval. Hold the complete reasoning briefly before the recap."
+    },
+    {
+      "sceneId": "c3-summary",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "SummarySlide with sequential anchors `What changed directly?`, `Which direction is initially faster?`, and `Same or changed temperature?`. The appropriate same-K versus heat-direction reminders appear only with the corresponding sentence. Separate C4 handoff. No new pressure graph, numerical K expression or catalyst mechanism. Stable reading hold after the completed recap is deliberate. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "[{\"phrase\":\"Start with what changed\",\"purpose\":\"revealDelays.takeawayAts\",\"alignedSeconds\":0,\"frame\":0},{\"phrase\":\"Then ask which reaction\",\"purpose\":\"revealDelays.takeawayAts\",\"alignedSeconds\":2.08,\"frame\":63},{\"phrase\":\"For heating or cooling\",\"purpose\":\"revealDelays.takeawayAts\",\"alignedSeconds\":19.44,\"frame\":584},{\"phrase\":\"Next, we will change the volume\",\"purpose\":\"C4 progression handoff\",\"alignedSeconds\":31.92,\"frame\":958}] Measured scene-local frames. Bullets use seconds; model and reasoning cues use frames. See measured-cue-report.json.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "Stable reading hold; all actual delivery and caption clearance remain pending."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Sol 6.1 independent measured-source timing reviewer",
+    "evidence": {
+      "path": "docs/production/module5-c3-voiced-timing-review-2026-10-10.md",
+      "sha256": "c33393e28987281e007b953602e71184522652803ef09f5d81262341290f7e21"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Current exact source, recordings, measured cues and response intervals independently pass their scoped checks. Targeted actual UI and decoded states checked separately. Complete voiced playback and human listening remain pending; full export and publication are not approved.",
+  "preparationReview": {
+    "status": "pass",
+    "reviewer": "Sol 6.1 preparation reviewer",
+    "evidence": {
+      "path": "docs/production/module5-beginner-next-preparation-review-2026-10-10.md",
+      "sha256": "c939d86f608969eee9ffb67f316f65d675a3274be6ed5704f445d65ca2519429"
+    },
+    "limitation": "Earlier exact Markdown only. scriptReview below remains pending for this JSON."
+  },
+  "visualIntegration": {
+    "status": "silent-layout-accepted-targeted-voiced-states-checked-complete-review-pending",
+    "component": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "reason": "Accepted clear layout retained and timed to fresh narration. Exact voiced question holds exposed duplicate labels, corrected by two display-field deletions in v2.",
+    "evidence": {
+      "path": "docs/production/module5-chemistry-layout-review-2026-10-10.md",
+      "sha256": "851f01818b633c7bb472d396d285b2e8773048987fd2c3bf0dcbed37d43d9a8c"
+    },
+    "limitation": "Targeted UI and native states only; narrow heat-sign wrapping remains a review observation. Complete voiced playback and listening remain pending.",
+    "voicedUiEvidence": {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/ui-observations.json",
+      "sha256": "5f9cb2eb31a6c93235273bcee01e2d67c118c51d1e71f2d106ea0ad13a706c57"
+    }
+  }
+}

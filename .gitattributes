@@ -494,3 +494,11 @@ src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx -text w
 src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve current voiced C3 preview and pilot input fingerprints.
+docs/production/module5-c3-voiced-preparation-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/prototypes/Module5C3VoicedReview.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/prepare-module5-c3-recording.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/assemble-module5-c3-voiced.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/prepare-module5-c3-preview.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/build-module5-c3-voiced-review.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
