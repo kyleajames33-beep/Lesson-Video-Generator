@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_visual_implementation",
+  "scope": "Author mechanical and source validation of the additive silent visual draft. Independent review and listening are separate.",
+  "source": {
+    "path": "docs/production/drafts/module5-visual-v2-2026-10-10/biology/lesson.json",
+    "sha256": "684ffdb23288c8321cc96fbc9991b1a1713edbb66c2ba835696f1bf86a31204c"
+  },
+  "preservedOriginal": {
+    "path": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+    "expectedSha256": "17591531e1050b33a758f5a43a470b217330c7e969240a991d08bf5d1d3c826e",
+    "actualSha256": "17591531e1050b33a758f5a43a470b217330c7e969240a991d08bf5d1d3c826e"
+  },
+  "results": {
+    "narrationStringsUnchanged": true,
+    "narrationDocumentBytesUnchanged": true,
+    "recordingSegmentTextUnchanged": true,
+    "durationsUnchanged": true,
+    "responseBoundaryAndStepCuesUnchanged": true,
+    "exactPropsAndBriefBinding": true,
+    "noSelectedAudioAttached": true,
+    "prohibitedPunctuationAbsent": true
+  },
+  "commands": [
+    {
+      "command": "node scripts/validate-lesson.mjs docs/production/drafts/module5-visual-v2-2026-10-10/biology/lesson.json",
+      "exitCode": 0,
+      "stdout": "C:\\lesson-video-generator\\docs\\production\\drafts\\module5-visual-v2-2026-10-10\\biology\\lesson.json\n  warning: scene[9] (quick-check): consider adding \"pausePrompt\" (active recall before reveal)",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-production-brief.mjs docs/production/drafts/module5-visual-v2-2026-10-10/biology/production-brief.json --stage=draft",
+      "exitCode": 0,
+      "stdout": "{\n  \"ready\": true,\n  \"stage\": \"draft\",\n  \"blockers\": [],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/drafts/module5-visual-v2-2026-10-10/biology/lesson.json\",\n    \"lessonSha256\": \"684ffdb23288c8321cc96fbc9991b1a1713edbb66c2ba835696f1bf86a31204c\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}",
+      "stderr": "(node:18276) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)"
+    }
+  ],
+  "warningDisposition": "Missing authored pausePrompt is deliberate. The unchanged renderer provides its existing neutral pause instruction; duplicate prompt previously approached the footer.",
+  "selectedRuntime": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "6145826ab8aeb8ae285c15a69f52a13109dfef1fb9c97488220136526254329b"
+    },
+    {
+      "path": "src/slides/shared/OrganisedCalculation.tsx",
+      "sha256": "d480431642102b87f790ea6c57d08077259b4a98e22296ae4ed9c22592792968"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "b1becf6b04e2b90341b2b35dafc9b99e3407d01967e844c5664556c1f0adbca9"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts",
+      "sha256": "90af909e0c59eceade4c3966bb7f368415a4fd10f260320dec0b9cbf3f33b22e"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts",
+      "sha256": "29f4eddaca933a9eb3b87db780b5e03e4cdab1d7ca11582a830c3bbef02b0c97"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+      "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5ExchangeDiagram.tsx",
+      "sha256": "25c66507325498ecd62832774949700bc454ff2c6ec60d6f3347d08b6a5b3426"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/LineageDiagram.tsx",
+      "sha256": "b3bdb4000dc88ee6eeb23472aec149f03cfd85da31e2639e79d1316bc522dd12"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/Module5LineageDiagram.tsx",
+      "sha256": "6183892f811bc1a1ec26b2310f895687a1dcceca876e4c7fd023b24c5bcdb199"
+    }
+  ],
+  "runtimeScope": "Relevant source hashes, not a complete frozen export snapshot. Shared dispatch was integrated by root. Old frozen release packages remain historical and require their preserved runtime.",
+  "pending": [
+    "Continuous motion and full selected scene review",
+    "Measured speech/alignment and assembled response hold",
+    "External captions and actual-device viewing",
+    "Human listening",
+    "Recording/export/release approval"
+  ],
+  "independentStaticEvidence": {
+    "path": "docs/production/module5-visual-v2-review-2026-10-10.md",
+    "sha256": "61b126cf3c94686b814436386c78dabdbdbfcb532f47e4390d13550b76a8792a",
+    "scope": "Attributed independent final sampled native and384 still report; targeted findings resolved, remaining full-device/playback limits retained."
+  }
+}

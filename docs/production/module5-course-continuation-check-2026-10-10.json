@@ -1,0 +1,37 @@
+{
+  "scope": "Coordinator integration of focused course route and additive Module 5 visual revision",
+  "route": {
+    "entries": 46,
+    "sourceCandidates": 37,
+    "groupedActions": 57,
+    "checks": "Unique IDs; all actual M5 sources assigned; bidirectional action links; acyclic prerequisites; corrected forward default next handoffs; optional support navigation distinct",
+    "coverageApproval": "not established"
+  },
+  "runtime": {
+    "typeScript": "pass",
+    "existingPriorityTests": "17 pass, limited to their existing scope",
+    "defaultSelectorMarkup": "10 exact comparisons pass with synthetic frame hooks",
+    "protectedAnswerMarkup": "4 pre-answer checks pass",
+    "transferMarker": "present at Biology frame477; actual still evidence also inspected by delegated reviewer"
+  },
+  "source": [
+    {
+      "subject": "chemistry",
+      "path": "docs/production/drafts/module5-visual-v2-2026-10-10/chemistry/lesson.json",
+      "sha256": "1c3a9ccfb6206fb45456563df72eb6da8cda6c26db026a8726e9c41b4a1edbda"
+    },
+    {
+      "subject": "biology",
+      "path": "docs/production/drafts/module5-visual-v2-2026-10-10/biology/lesson.json",
+      "sha256": "684ffdb23288c8321cc96fbc9991b1a1713edbb66c2ba835696f1bf86a31204c"
+    }
+  ],
+  "reviewEvidence": "docs/production/module5-visual-v2-review-2026-10-10.md",
+  "regressionEvidence": "out/prototypes/module5-visual-v2-review-2026-10-10/coordinator-regression.json",
+  "limitations": [
+    "No continuous voiced or silent playback pass",
+    "No whole-lesson actual-device or external-caption pass",
+    "No human listening or release approval",
+    "Historical calculation runtime remains pinned at5ff1e4a in isolated checkout"
+  ]
+}

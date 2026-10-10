@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "auditedDate": "2026-10-10",
+  "reviewer": "youtube_ready_audit_sol",
+  "scope": "Read-only local release-readiness audit. No listening, live channel check, upload or visibility change performed.",
+  "channel": {"name": "HSCScience", "handle": "@HSCScience-u7i", "id": "UCNUGtH2mgBMCRLG9fiqWm8Q"},
+  "decision": "No saved new or unlisted package is ready for public posting under the current full-package review gate.",
+  "readyToPost": [],
+  "authority": ["AGENTS.md", "HANDOFF.md", "docs/production/preview-first-review.md", "docs/production/playback-and-release.md", "docs/production/physics-and-release-gate-2026-10-03.md", "scripts/lib/release-gate.mjs"],
+  "inventory": {
+    "roots": ["out/prototypes", "out/production", "docs/production"],
+    "primaryJsonFilesInspected": 504,
+    "excludedDirectoryNames": ["public", "bundle", "node_modules", ".git", "browser", "dist"],
+    "fullRenderRecords": 6,
+    "fullPackageReviewRecordsWithRecordHash": 0,
+    "usableSavedGateConfigs": 0,
+    "exampleGateConfigExcluded": "docs/production/release-gate.example.json",
+    "method": "Parsed primary JSON recursively for full-render-unreviewed render records, hashed named review records and gate configs. Called the existing checkReleaseEvidence adapter and verifyRelease for all six full packages, and checkProductionBrief at export stage for all four current queue candidates. The adapter was supplied an empty reviews array because no supported hashed review records were found."
+  },
+  "requiredMissingReviewScopesForAllFullPackages": ["science", "listening", "motion", "device", "accessibility"],
+  "currentGateCodesForAllSixFullPackages": ["PACKAGE_INVALID", "INPUT_PACKAGE_INVALID", "TEACHING_BRIEF_REQUIRED", "RENDER_VIDEO_MISMATCH", "REVIEW_MISSING"],
+  "currentCandidates": [
+    {
+      "key": "empirical-formulas",
+      "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+      "lessonSha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776",
+      "teachingBriefPath": "out/prototypes/empirical-formulas-paced-2026-10-10/production-brief.json",
+      "fullRenderExists": false,
+      "existingPilot": "out/prototypes/empirical-formulas-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "exportBriefReady": false,
+      "exportBriefBlocker": "BRIEF_REVIEW_PENDING: Exact voiced preview: pending",
+      "humanListening": "pending",
+      "publicReleaseReady": false
+    },
+    {
+      "key": "mole-ratios",
+      "lessonPath": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+      "lessonSha256": "6914afbed82d18dc16b575c2ad7475e605306fc5cd602c54b0263332b2d60764",
+      "teachingBriefPath": "out/prototypes/mole-ratios-paced-2026-10-10/production-brief.json",
+      "fullRenderExists": false,
+      "existingPilot": "out/prototypes/mole-ratios-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "exportBriefReady": false,
+      "exportBriefBlocker": "BRIEF_REVIEW_PENDING: Exact voiced preview: pending",
+      "humanListening": "pending",
+      "publicReleaseReady": false
+    },
+    {
+      "key": "mass-to-mass",
+      "lessonPath": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+      "lessonSha256": "b90681774be533bdedca5bebca550f18530e1110ad85b28bc2a1d02b282da33e",
+      "teachingBriefPath": "out/prototypes/mass-to-mass-paced-2026-10-10/production-brief.json",
+      "fullRenderExists": false,
+      "existingPilot": "out/prototypes/mass-to-mass-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "exportBriefReady": false,
+      "exportBriefBlocker": "BRIEF_REVIEW_PENDING: Exact voiced preview: pending",
+      "humanListening": "pending",
+      "publicReleaseReady": false
+    },
+    {
+      "key": "limiting",
+      "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+      "lessonSha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a",
+      "teachingBriefPath": "out/prototypes/limiting-paced-2026-10-10/production-brief.json",
+      "fullRenderExists": false,
+      "existingPilot": "out/prototypes/limiting-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "exportBriefReady": false,
+      "exportBriefBlocker": "BRIEF_REVIEW_PENDING: Exact voiced preview: pending",
+      "humanListening": "pending",
+      "publicReleaseReady": false
+    }
+  ],
+  "historicalFullPackages": [
+    {
+      "key": "enzyme-story-feedback-2026-10-09",
+      "youtubeId": "ZTxQP7kI5_o",
+      "savedVisibility": "unlisted",
+      "videoPath": "out/prototypes/enzyme-story-feedback-2026-10-09/render-03/video.mp4",
+      "videoSha256": "5757b2e50bda1c82291a501f6fb48b77b861f482ab99d1983d7b89688d93dd34",
+      "savedPackageSha256": "b3a390a259f089c9bd9612534903168759b31d25b0a7130904143439b847285a",
+      "renderRecordPath": "out/prototypes/enzyme-story-feedback-2026-10-09/render-03/render-record.json",
+      "teachingBriefPath": null,
+      "currentGateReady": false,
+      "savedHumanReview": "Complete user watch-through and human listening pending",
+      "snapshotChangedExportFiles": 0,
+      "snapshotMissingRequiredFiles": 0,
+      "snapshotDrift": "Shared source and production-tool dependencies added or changed in current workspace."
+    },
+    {
+      "key": "limiting-reagents-feedback-2026-10-09",
+      "youtubeId": "b7OCuLsXgG8",
+      "savedVisibility": "unlisted",
+      "videoPath": "out/prototypes/limiting-reagents-feedback-2026-10-09/render-04/video.mp4",
+      "videoSha256": "56471cc9c65bc65381783b188094271b6a1743a85ac5afa1a0d527fc87eeab0a",
+      "savedPackageSha256": "7892a5765d81f88fcb97b0bf2487e760a4ec9434ae3324f30cdcf1df297ce5dd",
+      "renderRecordPath": "out/prototypes/limiting-reagents-feedback-2026-10-09/render-04/render-record.json",
+      "teachingBriefPath": null,
+      "currentGateReady": false,
+      "savedHumanReview": "Complete user watch-through and human listening pending",
+      "snapshotChangedExportFiles": 0,
+      "snapshotMissingRequiredFiles": 0,
+      "snapshotDrift": "Shared source and production-tool dependencies added or changed in current workspace."
+    },
+    {
+      "key": "limiting-conversational-2026-10-09",
+      "youtubeId": null,
+      "videoPath": "out/prototypes/limiting-conversational-2026-10-09/full-render-01/video.mp4",
+      "videoSha256": "b80ea82c5066de312e2352346d7d4a6111d6768d5085ebd2f1de90a0fa8a0f09",
+      "renderRecordPath": "out/prototypes/limiting-conversational-2026-10-09/full-render-01/render-record.json",
+      "teachingBriefPath": "out/prototypes/limiting-conversational-2026-10-09/narrated.lesson.production-brief.json",
+      "teachingBriefBlocker": "BRIEF_PREVIEW_CHANGED",
+      "currentGateReady": false,
+      "savedHumanReview": "full-browser-playback-review.json explicitly marks human listening pending",
+      "snapshotChangedExportFiles": 0,
+      "snapshotMissingRequiredFiles": 0
+    },
+    {
+      "key": "original-enzyme-models",
+      "youtubeId": "tXBotBaNakU",
+      "savedVisibility": "unlisted",
+      "videoPath": "out/prototypes/continuity-batch-01/enzyme-models/render-01/video.mp4",
+      "videoSha256": "f3ca72a4d98ef85cdb6637c4fbd775fa1a921a37e99c1458609433219285bbe7",
+      "renderRecordPath": "out/prototypes/continuity-batch-01/enzyme-models/render-01/render-record.json",
+      "teachingBriefPath": null,
+      "currentGateReady": false,
+      "savedHumanReview": "Awaiting complete user watch-through",
+      "snapshotChangedExportFiles": 0,
+      "snapshotMissingRequiredFiles": 0,
+      "supersededByYouTubeId": "ZTxQP7kI5_o"
+    },
+    {
+      "key": "original-limiting-reagents",
+      "youtubeId": "sijXK98W_9w",
+      "savedVisibility": "unlisted",
+      "videoPath": "out/prototypes/continuity-batch-01/limiting-reagents/render-01/video.mp4",
+      "videoSha256": "b5ee95aeaaf9633107a3579bc1fb2c90613de024c04d840158f4ef97bab88e44",
+      "renderRecordPath": "out/prototypes/continuity-batch-01/limiting-reagents/render-01/render-record.json",
+      "teachingBriefPath": null,
+      "currentGateReady": false,
+      "savedHumanReview": "Awaiting complete user watch-through",
+      "snapshotChangedExportFiles": 0,
+      "snapshotMissingRequiredFiles": 0,
+      "supersededByYouTubeId": "b7OCuLsXgG8"
+    },
+    {
+      "key": "molar-mass-already-public",
+      "youtubeId": "g9zmc5w7kQU",
+      "savedVisibility": "public",
+      "videoPath": "out/prototypes/molar-mass-continuity-handoff/narrated-render-02/video.mp4",
+      "videoSha256": "affee30892349b8c096684eb4d961661f44a817024e7e72cd2336dba1d5df8e9",
+      "renderRecordPath": "out/prototypes/molar-mass-continuity-handoff/narrated-render-02/render-record.json",
+      "teachingBriefPath": null,
+      "currentGateReady": false,
+      "historicalAcceptance": "Publishing plan records the exact exported MP4 was watched and liked by the user. Saved publication-state records it already public.",
+      "action": "Retain existing public upload. No duplicate upload or visibility change is needed. Current gate findings do not retroactively rewrite historical acceptance.",
+      "snapshotChangedExportFiles": 0,
+      "snapshotMissingRequiredFiles": 0
+    }
+  ],
+  "otherAlreadyPublicVideo": {"youtubeId": "MCmEsRHKtTU", "topic": "The Mole Concept, Part A", "action": "Retain existing saved public upload. No exact local gate package was identified for this audit."},
+  "gateToolingFinding": {
+    "path": "scripts/lib/release-gate.mjs",
+    "finding": "The adapter sets selected videoSha256 only when exactly one MP4 is exported. All six historical normalized full snapshots retain multiple MP4 exports. The revised pair retain silent, unmastered and mastered files. This causes RENDER_VIDEO_MISMATCH even though the final video.mp4 matches its recorded hash.",
+    "interpretation": "This is a structural selection limitation, not evidence that the saved final MP4 changed. Repair it prospectively and verify exact final-video selection without deleting preserved intermediate exports. Fixing it cannot supply missing listening, other review scopes or teaching briefs.",
+    "sourceEdited": false
+  },
+  "codeFixAddendum": {
+    "date": "2026-10-10",
+    "scope": "Prospective gate adapter correction after the original read-only audit. Historical observations above are retained as recorded before this change.",
+    "changedSource": "scripts/lib/release-gate.mjs",
+    "changedTests": "scripts/release-gate.test.mjs",
+    "selection": "Select only the unique tracked MP4 export whose SHA-256 equals the exact videoSha256 recorded in the hashed render record. No filename or export-count fallback.",
+    "failsClosedFor": ["missing recorded hash", "no exported MP4 with the recorded hash", "multiple exported MP4s with the recorded hash", "matching MP4 present only as an input", "changed selected media"],
+    "testCommand": "npm run test:release-gate",
+    "testsPassed": 12,
+    "savedPackagesRechecked": [
+      {"youtubeId": "ZTxQP7kI5_o", "ready": false, "renderVideoMismatch": false},
+      {"youtubeId": "b7OCuLsXgG8", "ready": false, "renderVideoMismatch": false}
+    ],
+    "remainingRecheckBlockers": ["PACKAGE_INVALID", "INPUT_PACKAGE_INVALID", "TEACHING_BRIEF_REQUIRED", "REVIEW_MISSING: science", "REVIEW_MISSING: listening", "REVIEW_MISSING: motion", "REVIEW_MISSING: device", "REVIEW_MISSING: accessibility"],
+    "historicalRecordsOrSnapshotsEdited": false,
+    "newApprovalsRecorded": false,
+    "readyToPost": []
+  },
+  "reviewBoundaries": [
+    "The teacher's general good feedback and script approval are not package-specific full listening approval for revised paced exports.",
+    "Human listening pending is a release blocker even when media statistics and sampled frames pass.",
+    "The full-render-unreviewed render-record status describes render provenance. The separate full-package review gate determines release readiness.",
+    "Current shared-code drift does not establish mutation of historical uploaded MP4s. Preserve old packages and their evidence.",
+    "Live visibility, HD processing and captions must be verified by root before any publication statement. This audit reads saved state only."
+  ],
+  "nextAuthorizedWork": [
+    "Complete exact paced preview review and resolve its findings against the preserved runtime before full export.",
+    "Freeze each selected lesson, audio, props, runtime and current teaching brief, then render the full package with the enforced export gate.",
+    "Complete actual scoped full-package reviews, including human listening, bind evidence to the exact final export and rerun the full gate.",
+    "Root may post only packages that pass the required evidence gate; preserve old uploads and record exact media bindings."
+  ],
+  "evidencePaths": [
+    "docs/production/youtube-queue-2026-10-10.json",
+    "out/prototypes/continuity-batch-01/youtube/publication-state.json",
+    "docs/production/youtube-publishing-plan-2026-10-09.md",
+    "docs/production/calculation-feedback-2026-10-10.json",
+    "docs/production/enzyme-feedback-2026-10-09.md",
+    "docs/production/limiting-reagents-feedback-2026-10-09.md",
+    "out/prototypes/enzyme-story-feedback-2026-10-09/youtube-playback-review.json",
+    "out/prototypes/limiting-conversational-2026-10-09/full-browser-playback-review.json"
+  ]
+}

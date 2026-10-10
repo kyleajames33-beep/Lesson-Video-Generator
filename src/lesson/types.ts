@@ -383,6 +383,7 @@ export type TextScene = SceneBase & {
 /** Stable givens alongside one calculation stage at a time. Stage order matches
  * the scene's recorded step cues; summaries retain established results only. */
 export type CalculationPresentation = {
+  layout?: 'module5Evidence';
   task: string;
   equation?: string;
   givens: Array<{label: string; value: string; reference?: string}>;

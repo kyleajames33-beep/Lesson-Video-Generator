@@ -12,16 +12,12 @@
   },
   "modelRouting": [
     {
-      "model": "gpt-6-astra",
-      "use": "Difficult visual teaching design and model representation judgement"
-    },
-    {
       "model": "gpt-6.1-sol",
-      "use": "Conversational script authoring, implementation, integration and independent science review"
+      "use": "Default for visual design, authoring, implementation and separate independent review under latest user preference"
     },
     {
       "model": "gpt-6-luna",
-      "use": "Bounded metadata extraction, file inventory and mechanical rule checks, checked by coordinator"
+      "use": "Bounded mechanical inventory and metadata, checked by coordinator"
     }
   ],
   "routingLimit": "These are project routing judgements using models offered in this session, not a measured model comparison, token budget or price claim.",
@@ -147,7 +143,7 @@
     {
       "id": "integration",
       "agent": "/root",
-      "status": "draft-review-wave-complete",
+      "status": "course-route-and-targeted-layout-integration-complete",
       "scope": "Resolve cross-agent findings, validate drafts, maintain durable planning and handoff, select next implementation and release actions",
       "ownedPaths": [
         "AGENTS.md",
@@ -178,7 +174,7 @@
     {
       "id": "next-visual-implementation",
       "agent": "/root",
-      "status": "queued-before-recording",
+      "status": "targeted-fixes-complete-motion-device-review-pending",
       "scope": "Enlarge essential reference/condition/model labels at narrow-player scale using opt-in layouts; repair Biology continuity bullet and lineage event cues; inspect actual motion before recording-stage approval.",
       "dependsOn": [
         "draft-visual-review",
@@ -188,6 +184,119 @@
       "evidence": [
         "docs/production/module5-draft-visual-review-2026-10-10.md"
       ]
+    },
+    {
+      "id": "module5-video-route",
+      "agent": "/root/module5_course_mapping",
+      "model": "gpt-6.1-sol",
+      "status": "complete-candidate-action-map",
+      "scope": "Connect every existing Module 5 candidate to a multi-video learner sequence, syllabus action references, boundaries, companions and open coverage gaps.",
+      "ownedPaths": [
+        "docs/production/module5-video-route-2026-10-10.json",
+        "docs/production/module5-video-route-2026-10-10.md"
+      ],
+      "evidence": [
+        "docs/production/module5-video-route-2026-10-10.json",
+        "docs/production/module5-video-route-2026-10-10.md"
+      ]
+    },
+    {
+      "id": "module5-visual-v2",
+      "agent": "/root/module5_visual_implementation",
+      "model": "gpt-6.1-sol",
+      "status": "author-checks-pass",
+      "scope": "Additive opening-lesson revisions for essential narrow-player text and Biology lineage cues; preserve prior exact drafts and frozen releases.",
+      "ownedPaths": [
+        "docs/production/drafts/module5-visual-v2-2026-10-10/"
+      ],
+      "evidence": [
+        "docs/production/drafts/module5-visual-v2-2026-10-10/README.md"
+      ]
+    },
+    {
+      "id": "module5-visual-v2-review",
+      "agent": "/root/module5_visual_v2_review",
+      "model": "gpt-6-astra",
+      "status": "targeted-static-review-complete",
+      "scope": "Independent exact visual review of the changed layouts and cues.",
+      "ownedPaths": [
+        "docs/production/module5-visual-v2-review-2026-10-10.md",
+        "out/prototypes/module5-visual-v2-review-2026-10-10/"
+      ],
+      "evidence": [
+        "docs/production/module5-visual-v2-review-2026-10-10.md"
+      ]
+    },
+    {
+      "id": "youtube-ready-audit",
+      "agent": "/root/youtube_ready_audit_sol",
+      "model": "gpt-6.1-sol",
+      "status": "audit-complete-no-ready-package-gate-selection-fixed",
+      "scope": "Check exact full-package evidence and existing upload IDs before publishing authorized ready videos",
+      "ownedPaths": [
+        "docs/production/youtube-ready-audit-2026-10-10.json",
+        "docs/production/youtube-ready-audit-2026-10-10.md"
+      ],
+      "evidence": [
+        "docs/production/youtube-ready-audit-2026-10-10.json",
+        "docs/production/youtube-ready-audit-2026-10-10.md",
+        "scripts/lib/release-gate.mjs",
+        "scripts/release-gate.test.mjs"
+      ]
+    },
+    {
+      "id": "chemistry-c2-preparation",
+      "agent": "/root/chem_c2_preparation_sol",
+      "model": "gpt-6.1-sol",
+      "status": "prepared-unrecorded-independent-source-review-complete",
+      "scope": "Chemistry next planned lesson: bounded conversational narration preparation and visual reuse/cue decisions, unrecorded and pending independent review",
+      "ownedPaths": [
+        "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c2.md"
+      ],
+      "evidence": [
+        "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c2.md"
+      ],
+      "sourceSha256": "699108d28dc0ee421351c70d3223f42a50b9e1eb188e2d4e67e7d0498719f3a5"
+    },
+    {
+      "id": "biology-b2-preparation",
+      "agent": "/root/bio_b2_preparation_sol",
+      "model": "gpt-6.1-sol",
+      "status": "prepared-unrecorded-independent-source-review-complete",
+      "scope": "Biology next planned lesson: bounded conversational narration preparation and visual reuse/cue decisions, unrecorded and pending independent review",
+      "ownedPaths": [
+        "docs/production/drafts/module5-next-preparation-2026-10-10/biology-b2-animals.md"
+      ],
+      "evidence": [
+        "docs/production/drafts/module5-next-preparation-2026-10-10/biology-b2-animals.md"
+      ],
+      "sourceSha256": "8525e4ab2d89a68b0b3124ffe04a4bd648ec762de3d19b5cee413609afe96956"
+    },
+    {
+      "id": "chemistry-c2-independent-preparation-review",
+      "agent": "/root/chem_c2_independent_review_sol",
+      "model": "gpt-6.1-sol",
+      "status": "source-preparation-review-complete-two-findings-resolved",
+      "scope": "Independent science, teaching and visual-plan review of the exact unrecorded preparation. No recording/export/listening approval.",
+      "ownedPaths": [
+        "docs/production/chemistry-c2-preparation-review-2026-10-10.md"
+      ],
+      "evidence": [
+        "docs/production/chemistry-c2-preparation-review-2026-10-10.md"
+      ]
+    },
+    {
+      "id": "biology-b2-independent-preparation-review",
+      "agent": "/root/bio_b2_independent_review_sol",
+      "model": "gpt-6.1-sol",
+      "status": "source-preparation-review-complete-hook-findings-resolved",
+      "scope": "Independent science, teaching and visual-plan review of the exact unrecorded preparation. No recording/export/listening approval.",
+      "ownedPaths": [
+        "docs/production/biology-b2-preparation-review-2026-10-10.md"
+      ],
+      "evidence": [
+        "docs/production/biology-b2-preparation-review-2026-10-10.md"
+      ]
     }
   ],
   "currentRelease": {
@@ -195,5 +304,6 @@
     "sources": "docs/production/calculation-feedback-2026-10-10.json",
     "status": "exact revised playback/listening pending; no new full release or posting approval"
   },
-  "nextAction": "Resolve narrow-player typography and Biology lineage cue findings on additive drafts, then recording-stage review, fresh segmented narration, measured cues and exact voiced pilots. Current calculation listening and full-package release checks remain required before YouTube posting."
+  "nextAction": "Implement reviewed C2/B2 preparations as isolated additive lesson sources and exact teaching briefs, selecting the stated safe visual boards or bounded opt-in corrections. Opening v2 layouts require continuous playback/device inspection and recording-stage evidence. Current calculation revisions and saved enzyme/limiting releases still need exact outstanding listening/full-package evidence before posting.",
+  "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution."
 }

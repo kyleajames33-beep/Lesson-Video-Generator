@@ -1,0 +1,129 @@
+# Chemistry C2: How reversible reactions approach equilibrium
+
+Prepared 10 October 2026 by Sol 6.1. Status: unrecorded human-readable preparation, pending independent science, script and visual review. This file is not a lesson JSON, a recording-stage production brief or an approved recording script. All narration below is new draft speech. No existing audio has been selected or changed. Timing and hold lengths are proposals, not measured evidence.
+
+## Selection and progression
+
+Route identity: `chem-m5-c02`, core learner position 2 in [the Module 5 route](../../module5-video-route-2026-10-10.json). Placement is Chemistry Stage 6 (2017), Year 12 Module 5, Equilibrium and Acid Reactions, for the current priority cohort described in [the Year 12 plan](../../year12-module5-teaching-priority-2026-10-10.md). Upload chronology is separate from learner order. This preparation does not establish any completed syllabus action.
+
+Primary learner action: explain how the two opposing rates change in a stated reversible model, then distinguish faster equilibration from a changed equilibrium composition. Teaching structure: causal mechanism plus rate/composition contrast and an altered-start transfer task.
+
+Entry knowledge: C1's equal non-zero rates, concentration versus rate, closed versus insulated systems; particle motion; activation energy as a reaction barrier. The narration supplies a short activation-energy bridge. Entry check: “If equal amounts change in opposite directions each second, what happens to the overall composition?” Expected reasoning: neither substance changes overall because replacement balances removal. If that distinction is unclear, return to C1's rate-versus-concentration worked example. C1 is a support candidate, not a promised public link.
+
+Start boundary: a closed, fixed-volume, constant-temperature, well-mixed model starts with A only. This is a deliberately clear special case of a reactant-rich mixture. A and B represent two interconverting forms of a model substance, with one A becoming one B and vice versa. The model has no side reactions and positive, constant first-order conversion coefficients. This model choice does not derive a real reaction's rate law from its overall balanced equation.
+
+Stop boundary: the learner can explain an initially falling forward rate and rising reverse rate in this model, identify the dynamic balance, and justify why a suitable catalyst changes approach time without changing the final composition under the same conditions. No equilibrium expression, ICE calculation, reaction quotient, temperature-shift rule, pressure-shift rule or industrial optimisation is introduced.
+
+Next core: `chem-m5-c03`, concentration and temperature disturbances, beginning with an already established equilibrium and separating the immediate disturbance from the later response. Retain `chem-m5-g01`, Non-equilibrium systems: enthalpy and entropy, as a separate legacy companion after C2 and an explicit enthalpy/entropy prerequisite bridge. It keeps the combustion/photosynthesis requirement visible. It is not silently removed or made a universal prerequisite for C3. Practical support is `chem-m5-p01`; explanation here does not fulfil laboratory conduct.
+
+Likely misconceptions to diagnose: the reverse reaction waits until the forward reaction stops; equal rates require equal concentrations; a catalyst always increases product amount; forward-down/reverse-up is a universal graph for any starting mixture. These are source-informed teaching risks, not measured prevalence claims.
+
+## Source and curriculum evidence
+
+The working documents read for this exact preparation were HANDOFF.md, AGENTS.md, the [production research](../../../research/hsc-video-production-standard-2026-10-02.md), [implementation plan](../../../research/library-implementation-plan.md), [teaching templates](../../teaching-templates.md), [teaching/visual brief template](../../teaching-visual-brief-template.md), [visual handbook](../../../visual-design-handbook.md), [animation planning](../../../animation-planning.md), [preview-first workflow](../../preview-first-review.md), [course progression plan](../../course-progression-plan-2026-10-09.md), its ledger and content checklist, the Module 5 route and Year 12 priority plan. The existing content checklist covers quantitative chemistry and enzymes, not complete legacy Module 5 actions. The Module 5 route supplies provisional action references here.
+
+| Inspected reference | SHA-256 / boundary |
+| --- | --- |
+| `src/data/chemistry-y12-m5-l2-reversibility-entropy.json` | `9afec6d66e5e61b0dd9aeccf646b0d75579c561095194b776123bd0991f5e7b3` |
+| `src/data/chemistry-y12-m5-l3-collision-theory-equilibrium.json` | `63cf7538bf4697ef49396e1bc41797537291bfd18efe832bf3d229a45f7b3079` |
+| `docs/production/drafts/module5-visual-v2-2026-10-10/chemistry/lesson.json` | `1c3a9ccfb6206fb45456563df72eb6da8cda6c26db026a8726e9c41b4a1edbda`, reference at inspection time; active opening work may subsequently change it |
+| Cached official Chemistry paragraph extract | `out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json`, checked hash `8f945689294fe87ac22786cbaee17cae7ffb52be4a14ca38f76e4e7048d8eef1` |
+
+The ledger records both original L2/L3 sources as source-present-unreviewed, without established full action coverage. Existing audio paths are historical assets, not permission to attach those takes to these revised words.
+
+The detailed curriculum evidence is the cached 8 October [official Chemistry 2017 DOCX](https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx), source hash `7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42`. Paragraph identifiers are repository extraction references, not official NESA content IDs. This is not a fresh full-syllabus verification.
+
+| Exact cached reference / route action | Contribution planned in C2 | Remaining boundary |
+| --- | --- | --- |
+| p1040, CH12-12 | Characteristics of equilibrium and kinetic versus composition effects | One focused contribution to the outcome, not full outcome approval |
+| p1062, ACSCH070 / ACSCH094, `C-collision-investigate` | Scenes c2-collision, c2-rates and c2-transfer explain rate/concentration relationships and apply supplied model evidence | Practical/investigative evidence still belongs to p01; a narrated model alone does not establish full investigate coverage |
+| p1072, `C-activation` | Scenes c2-collision and c2-catalyst distinguish a kinetic barrier from the equilibrium endpoint | Heat-of-reaction and temperature effects remain for C3/C4 and later data work; this does not complete p1072 |
+| p1052-p1056, ACSCH090, `C-reversibility` | C2 supplies vocabulary and opposing-process reasoning to support later analysis | These paragraphs require practical investigation of reversibility, with named examples. C2 does not conduct it or claim those examples are taught here |
+| p1057, ACSCH079 / ACSCH091 | C1 prerequisite reused: closed model and equal non-zero rates | C1 owns the main static/dynamic and open/closed contrast; no duplicate full C1 explanation |
+| p1059-p1061, `C-non-equilibrium` | Retained in g01: entropy/enthalpy analysis, combustion and photosynthesis examples | Not absorbed into C2 and not claimed covered by its catalyst scene |
+
+Working Scientifically contribution: explaining a supplied trace and justified prediction can support CH11/12-5, CH11/12-6 and CH11/12-7 (p1037-p1039). No claim of learner conduct, collected primary data or complete outcome coverage follows.
+
+Science cross-checks used as background, not copied artwork or questions: [OpenStax chemical equilibria](https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria) supports continuing opposing reactions and variable relative concentrations; [OpenStax catalysis](https://openstax.org/books/chemistry-2e/pages/12-7-catalysis) supports an alternative mechanism and unchanged endpoint energies, including multistep pathways; [OpenStax catalyst effects](https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle) supports quicker equilibration with unchanged equilibrium constant. The authored model, dialogue and transfer question below remain independently reviewable.
+
+## Complete scene-by-scene narration and visual decisions
+
+Production notes are not spoken. Proposed scene IDs identify this preparation only. Essential labels stay fixed after revealing. Accessible captions must follow the selected speech, not replace it with the shorter teaching labels. No frame numbers are assigned before audio alignment.
+
+### c2-title: identity
+
+**Narration:** none. Short readable title: “How reversible reactions approach equilibrium”.
+
+**Visual decision:** reuse the existing title treatment from the C1 opening, with this title and current course placement. No generic atom artwork. Hold long enough for the title to be read; final duration remains pending.
+
+### c2-hook: the reverse process starts before equilibrium
+
+**Narration:** “Last time, equal reaction rates explained why an equilibrium mixture stays steady. But how do those rates become equal? Imagine a reversible reaction that starts with only A. As B forms, can it start turning back into A straight away, or does it have to wait for the forward reaction to finish? It can turn back while the forward reaction is still happening. That overlap is what we will follow.”
+
+**Visual decision:** adjust the existing HookSlide into a stable A ⇌ B stimulus, with “Start: A only” and opposing arrows. This is a rhetorical opening contrast with immediate explanation, not a scored attempt. Reveal the small reverse arrow on “It can turn back”. Keep the equation visible through the next scene. No product-before-start particle display and no decorative motion.
+
+### c2-model: state the starting conditions
+
+**Narration:** “A and B are two forms of our model substance. One A can become one B, and one B can become one A. The container is closed, its volume and temperature stay fixed, and we are following a simple model in which the rate in each direction depends on how much of its starting form is present. At the beginning there is plenty of A and no B. So the forward process can run, but the reverse rate is zero because there is no B to convert yet. Closed means matter stays inside. It does not mean the container is insulated.”
+
+**Visual decision:** adjust L3 `concept-approach`'s `chem12m5Exchange`, preserving C1's explicit “One mixture” interpretation and usable large-label presentation. Start with A only; use a model equilibrium ratio B:A of 1:2 so the later unequal-composition result is visible. This parameter is an authored schematic choice, not experimental data or a measured real K. Retain fixed-condition labels and use qualitative “A: more / B: less” labels rather than rounded integer counters as concentration evidence. Hops show conversion events, not collision trajectories. At the actual A-only start, the forward rate is positive and the reverse rate is zero. The reverse rate becomes positive as B appears. Positive conversion coefficients are distinct from those concentration-dependent rates. Do not add a decorative prestart. Hold the boundary/conditions board while it is explained.
+
+### c2-collision: why concentration affects rate
+
+**Narration:** “Collision theory helps explain why the amount present can matter. In a reaction between particles, meeting is only part of the story. The particles also need enough energy and a suitable arrangement for reaction. Activation energy is the energy barrier that reacting particles must overcome. A collision that leads to reaction is called an effective collision. For example, two nitrogen dioxide molecules can combine to make dinitrogen tetroxide. With more nitrogen dioxide molecules in the same volume, there are more opportunities for them to meet. That is a rate explanation. Our A-to-B arrows only track conversion; they do not show molecules colliding. Some reactions involve a molecule breaking apart or changing form after energy transfer, so this simple picture is not a full mechanism for every reaction.”
+
+**Visual decision:** reuse the definition layout from L3, with a deliberate stable coded two-state inset showing `2NO₂ ⇌ N₂O₄`, two correctly labelled NO₂ molecules and one N₂O₄ molecule. This is a specific missing explanatory visual, not the existing one-to-one Exchange diagram with chemical labels substituted. Preserve nitrogen/oxygen counts and bonds in any later illustrated transformation. “Illustrated association, not a complete mechanism” remains visible. Initially choose a stable before/after board with drawn linking arrows; an unreviewed collision animation adds no necessary evidence. The visual cue is “two nitrogen dioxide molecules”; do not infer the reverse rate law or a many-step mechanism from the balanced equation. Hold the board through the energy/orientation explanation; no energy histogram is needed.
+
+### c2-rates: connect simultaneous changes
+
+**Narration:** “Back in our A and B model, each net forward conversion leaves less A and more B. As A decreases, the forward rate falls. As B builds up, the reverse rate rises. These changes happen together, rather than one reaction ending before the other begins. The rate graph shows the forward curve coming down and the reverse curve coming up. As they approach the same non-zero rate, their effects balance. At equilibrium, each direction replaces what the other removes, so the composition stays steady even though both conversions continue.”
+
+**Visual decision:** adjust L3 `chem12m5Exchange` rate graph for the declared one-to-one model. Keep axes “rate, arbitrary units” and “model time, arbitrary units”, both direction labels and fixed scale visible. Draw each curve only as its narrated change is explained, then keep both for comparison. The current native model flags “rates equal” when rates are within 4%, and mathematically approaches equality asymptotically. Do not present that tolerance marker as exact equality at a finite model frame. The bounded implementation must say “approaching equilibrium” through the finite simulated region and introduce a separately labelled equilibrium limiting state. If that change is not ready, use the existing concept/board layout with explicitly labelled schematic curves plus a separate exact equilibrium state. This is the defined teaching alternative, not a missing-asset placeholder. Keep arrows in both directions at the equilibrium state.
+
+### c2-amounts: a second graph means a different quantity
+
+**Narration:** “Now compare the concentration graph. A decreases and B increases, then each levels off. Their two final levels are different in this example. The rate curves approach the same level, but the concentration curves do not have to. Rate tells us how quickly conversion happens. Concentration tells us how much is present per volume. Also, forward down and reverse up describe our chosen starting mixture. If a mixture began with excess B and the reverse rate were larger, the approach could go the other way.”
+
+**Visual decision:** adjust the same Exchange model's concentration view or use a stable matched-scale board derived from the same model. Keep the exact A/B identities, initial total, volume, temperature and B:A limiting ratio unchanged between scenes. Caption “schematic model concentrations”; do not call its expected counts measured mol L⁻¹. Preserve the rate comparison as a small labelled reference only if phone readability survives. The causal cue “Rate tells us” points to the rate axis; “Concentration tells us” points to the concentration axis. Hold both final levels. No numerical equilibrium-expression lesson is smuggled into the diagram.
+
+### c2-catalyst: faster approach, same endpoint
+
+**Narration:** “Suppose we repeat the same starting mixture with a suitable catalyst, keeping the temperature and volume unchanged. A catalyst provides an alternative reaction pathway with a lower effective activation barrier. It enables the opposing reaction processes to happen more readily. It does not change the energies of the overall reactants and products or favour a different final equilibrium composition. In our comparison, B approaches the same final level sooner. At an early comparison time, the catalysed mixture can contain more B because it has progressed further. Once both mixtures reach equilibrium, that difference is gone. The catalyst changes how soon the balance is reached, not the balance we reach.”
+
+**Visual decision:** preserve the useful same-endpoint energy profile and concentration-comparison idea from L3 `chem12m5CatalystBoth`, but do not select the current full component unchanged. It hard-codes “same drop both ways”, “both × the same factor”, unequal-rate ratio language and a 2.2 multiplier. These are idealised model features, not universal quantitative catalyst claims. The explicit initial choice is the existing concept board with a separately drawn schematic pathway and a large comparison graph: identical starts, identical temperature/volume/amounts, shared labelled limiting plateau, catalysed curve approaching sooner. Retain endpoint levels; label reaction coordinate as a model coordinate, not time. Do not introduce universal equal numerical barrier reductions. Any future reuse of the native component requires a bounded opt-in correction and independent inspection, including its accessible description. Reveal “same final composition” on its own spoken cue. Mark a shared early comparison time on “At an early comparison time”, then remove that emphasis before the equilibrium comparison. A graph approaching a plateau is not an exact finite-time equality claim.
+
+### c2-transfer: changed starting mixture, protected response
+
+**Narration, prompt segment:** “Try a different start. C and D interconvert one for one in a closed container at constant temperature and volume. The mixture begins mostly as D. Early measurements give a forward rate, C to D, of two units, and a reverse rate, D to C, of six units on the same scale. Which substance will initially increase overall? Explain using both rates. Then compare this mixture with an identical starting mixture containing a suitable catalyst. Will the catalyst change the final equilibrium concentration of D? Take a moment, or pause if you would like longer.”
+
+**Planned response hold:** 10 seconds of assembled silence after the complete prompt, subject to learner and voiced-preview review. This is a timing hypothesis. The stimulus, equation, conditions and supplied rates stay visible. No net-direction arrow, final graph, corrective badge, feedback words, answer-bearing caption, coach note or answer working is visible or audible. Stop teaching motion during the attempt. Prompt and feedback must be recorded separately; measured alignment supplies actual hold start/end and earliest answer exposure. A pause instruction alone does not insert silence.
+
+**Narration, feedback segment:** “C initially increases. The reverse process makes C at six units while the forward process removes C at two, so more C is being made than used. In this one-for-one model, the difference is a net four units towards C. Starting mostly with D did not by itself prove that direction; the supplied rates did. With the suitable catalyst, the mixture approaches the same final equilibrium composition sooner under the same conditions. It does not finish with a different equilibrium concentration of D. If you predicted more D simply because a catalyst speeds reactions, separate the amount present at an earlier time from the final equilibrium amount.”
+
+**Visual decision:** reuse the C1 quick-check/feedback board and approved answer-free reveal discipline. Keep short task, separate C ⇌ D equation, grouped conditions and rate givens. Display “same scale, arbitrary rate units” beside both values; there are no supplied reference constants. Feedback stages: (1) identify which direction produces C; (2) compare six versus two, with net four only now; (3) final composition unchanged at fixed conditions. Retain the stimulus while feedback appears. Later result lines must follow their spoken cues, with enough time to read each. An optional net-four line tests arithmetic under the one-to-one assumption only, not general stoichiometric rate relationships.
+
+**Author-created response rubric:** identifies C increase; compares both specified rates with direction; ties the net difference to the one-to-one model; keeps catalyst final composition unchanged and distinguishes it from faster approach. A student who says “mostly D, therefore reverse” without using the rate evidence has not supplied the requested justification. This is not an official HSC question or an invented marking guarantee.
+
+### c2-summary: the next useful question
+
+**Narration:** “A reversible reaction can run in both directions before equilibrium is reached. In our A-only start, the forward rate falls as A is used, while the reverse rate rises as B forms. Equilibrium is the balance of equal non-zero rates, not a requirement for equal concentrations. A suitable catalyst can bring that balance about sooner without changing the final composition at the same temperature and other stated conditions. Next, we will start with a mixture already at equilibrium and ask what happens when its concentration or temperature changes.”
+
+**Visual decision:** reuse the existing summary layout with three compact anchors: opposing processes overlap; rates balance while concentrations may differ; catalyst changes approach time. Closing handoff names C3 without implying it is already published. Hold stable labels clear of captions and chrome. No additional particle decoration.
+
+## Known source/model findings and explicit disposition
+
+1. L2's magnitude-of-Gibbs “dial” conflates actual and standard reaction free energy, makes unbounded reversibility claims, and does not specify conditions for numerical comparisons. Do not import it into C2. Preserve g01 in the route, but its future author must separately review phase/temperature/pressure conditions, system/surroundings entropy, actual versus standard quantities and photosynthesis's supplied-energy context. Relocating text is not correcting it.
+2. L3's “forward proportional to reactants / reverse proportional to products” is not a general rate law. Keep proportionality only inside the declared first-order A/B model. A reactant-rich start alone does not establish direction without kinetic/composition evidence. The transfer question supplies both rates.
+3. `ExchangeDiagram` is a one-to-one deterministic expected-count model with schematic hops and separate plinths. It cannot represent 2NO₂ ⇌ N₂O₄ by changing labels, literal collision frequency, microscopic fluctuations or stoichiometrically unequal event counts. Its two sides mean two forms in one mixture. The finite 4% marker and small graph labels are identified correction/review work, not accepted visual evidence.
+4. `CatalystBothDiagram` currently builds equal factor/drop claims into text, rate bars and accessibility copy. Preserve its useful endpoint/comparison teaching, choose the specified stable board now, and require a bounded correction before full-component reuse. “Catalysts never improve yield” is too broad: distinguish final equilibrium composition from amount produced in finite time. Industrial pressure, temperature and product-removal decisions remain later course work.
+5. L3's PCl₅ example, temperature-disturbance examples, unsupported historical attribution and “most-tested/marks” phrases are not reused. The current script supplies the useful mechanism without invented historical or attainment claims. The reversible arrow does not promise rapid reaction or a fifty-fifty mixture.
+
+## Pilot, review and next implementation handoff
+
+The first difficult pilot should use c2-rates through c2-amounts, or c2-catalyst if that is the larger implementation uncertainty, targeting approximately 60 to 90 seconds after actual audio exists. Use the relevant complete scenes; do not pad the pilot with decorative material. Independently check graph quantities, fixed conditions, the finite-equilibrium label, continuing opposing motion and small-player essential text. The transfer scene also needs an exact-boundary check for answer leakage, including transitions and external captions.
+
+Root owns source integration and downstream production. Before paid narration: author an isolated additive lesson JSON and schema-v2 teaching brief bound to that exact source; resolve independent science/script findings; inspect proposed visuals, including the catalyst board and concentration/rate labels; run the recording-stage check. Any changed spoken text requires new matching audio and alignment. None of those gates is passed by this Markdown file.
+
+After recording: replace estimated cues with measured alignment; assemble prompt, exact silence and feedback; rebuild accessible captions and transcripts; play the exact voiced revision in Remotion or a short measured pilot; record source, still/UI, playback and human-listening evidence separately. Resolve findings, freeze inputs and supply the current `teachingBriefPath` to the export/release gates. Full listening, full-package review, export and publication remain pending. Preserve original sources, existing artwork, old audio and frozen releases.
+
+Preparation checks for this file: complete draft narration and per-scene decisions are present; entry/start/stop/next and retained g01 boundary are explicit; no U+2014 is present. No code, source lesson, audio, shared board, ledger or approval flags were changed by this bounded authoring task.

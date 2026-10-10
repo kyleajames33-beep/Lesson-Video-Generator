@@ -5,6 +5,7 @@ import {MathText} from './MathText';
 import {Eyebrow} from './Eyebrow';
 import {FONT_MONO, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
+import {Module5CalculationProblem, Module5FocusedWorking} from './Module5EvidenceBoard';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 const labelStyle = {fontFamily: FONT_MONO, fontSize: 22, letterSpacing: '0.08em', color: TOK.inkDim};
@@ -17,6 +18,7 @@ export const CalculationProblem = ({presentation, eyebrow, delay, prompt, prompt
   promptOpacity?: number;
 }) => {
   const theme = useAccent();
+  if (presentation.layout === 'module5Evidence') return <Module5CalculationProblem presentation={presentation} eyebrow={eyebrow} delay={delay} prompt={prompt} promptOpacity={promptOpacity} />;
   return <>
     <div data-calculation-header style={{position: 'absolute', top: 142, left: 64, right: 64}}>
       <Eyebrow color={TOK.inkDim}>{eyebrow}</Eyebrow>
@@ -54,6 +56,7 @@ export const FocusedWorking = ({presentation, delays, earliestFrame = 0}: {
 }) => {
   const frame = useCurrentFrame();
   const theme = useAccent();
+  if (presentation.layout === 'module5Evidence') return <Module5FocusedWorking presentation={presentation} delays={delays} earliestFrame={earliestFrame} />;
   if (delays.length !== presentation.stages.length) throw new Error('Calculation stages must match the recorded step cues.');
   const cues = delays.map(delay => Math.max(earliestFrame, delay));
   const activeIndex = cues.reduce((index, cue, i) => frame >= cue ? i : index, -1);

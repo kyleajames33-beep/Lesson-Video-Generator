@@ -5,7 +5,7 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
-import {ExchangeDiagram} from '../kinds/chem-y12-m5/ExchangeDiagram';
+import {Module5ExchangeSelector} from '../kinds/chem-y12-m5/Module5ExchangeDiagram';
 import {NetIonicDiagram} from '../kinds/chem-y12-m5/NetIonicDiagram';
 import {StaticDynamicDiagram} from '../kinds/chem-y12-m5/StaticDynamicDiagram';
 import {BottleDiagram} from '../kinds/chem-y12-m5/BottleDiagram';
@@ -35,7 +35,7 @@ import {KeqTrendDiagram} from '../kinds/chem-y12-m5/KeqTrendDiagram';
 import {ColourimetryDiagram} from '../kinds/chem-y12-m5/ColourimetryDiagram';
 
 export const KINDS: DioramaKindMap = {
-  chem12m5Exchange: ExchangeDiagram,
+  chem12m5Exchange: Module5ExchangeSelector,
   chem12m5NetIonic: NetIonicDiagram,
   chem12m5StaticDynamic: StaticDynamicDiagram,
   chem12m5Bottle: BottleDiagram,

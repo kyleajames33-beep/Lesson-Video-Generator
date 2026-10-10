@@ -441,3 +441,9 @@ src/transitions/pickTransition.ts text eol=crlf
 # Preserve exact Module 5 draft/review fingerprints across transfer and checkout.
 docs/production/drafts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/production/module5-*-2026-10-10* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# The selected Module 5 lineage revision has reviewed mixed line endings.
+src/slides/diagrams/kinds/bio-y12-m5/Module5LineageDiagram.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve the exact next-lesson preparation review records.
+docs/production/*-preparation-review-2026-10-10.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

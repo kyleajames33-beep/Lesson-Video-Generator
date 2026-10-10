@@ -24,6 +24,8 @@ python scripts/github-media-transfer.py download-continuation --continuation cal
 python scripts/transfer-workspace.py restore-media out/archives/calculation-feedback-frames-2026-10-10.zip
 python scripts/github-media-transfer.py download-continuation --continuation module5-parallel-review-media-2026-10-10.zip
 python scripts/transfer-workspace.py restore-media out/archives/module5-parallel-review-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation module5-visual-v2-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/module5-visual-v2-media-2026-10-10.zip
 ```
 
 Sign in with `gh auth login` if the repository requires authentication. The downloader preserves matching existing parts and refuses conflicting files. It checks each part and the joined ZIP against the checked-in hashes. The subsequent restore checks individual contents.
@@ -39,3 +41,5 @@ The third additive continuation, `calculation-feedback-media-2026-10-10.zip`, co
 The fourth continuation, `calculation-feedback-frames-2026-10-10.zip`, preserves the 27 native decoded PNG frames referenced by the independent pilot review. Restore it after the third continuation, which includes the six associated evidence JSON files. The separate companion preserves the settled media ZIP unchanged. Static evidence does not establish listening or continuous playback approval.
 
 The fifth continuation, `module5-parallel-review-media-2026-10-10.zip`, preserves the parallel team's original and revised Module 5 diagnostic stills, source-bound evidence manifests and render helpers, plus the local production reading desk. Draft lessons, narration, briefs, independent reports and ownership board are in ordinary Git. The ZIP excludes reproducible bundles and dependency folders. It contains no new recordings or full videos and does not clear pending visual, listening or release gates. Restore it after the previous four continuations. The [production board](parallel-production-board-2026-10-10.json) distinguishes completed checks from the next required work.
+
+The additive Module 5 v2 archive preserves 40 visual evidence/planning-page files. Rebuild the latest production desk with `python scripts/build-parallel-production-review.py` after restoration. The focused route and source drafts are tracked in Git.

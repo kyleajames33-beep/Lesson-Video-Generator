@@ -31,7 +31,10 @@
 - Use docs/production/course-progression-plan-2026-10-09.md and its ledger
   and content checklist before choosing the next video. New production
   briefs require entry knowledge, start/stop boundaries and the next
-  handoff. Keep playlist order separate from upload chronology. Catalogue
+  handoff. For the current Year 12 Module 5 run, also use
+  docs/production/module5-video-route-2026-10-10.json for the focused
+  video boundaries and candidate syllabus actions. The opening lesson is
+  not the whole module. Keep playlist order separate from upload chronology. Catalogue
   presence does not establish reviewed dotpoint or practical coverage.
 - Use docs/production/preview-first-review.md. Before paid narration, check
   the production brief at recording stage. Before a full export, play the
@@ -46,9 +49,11 @@
 
 - The user explicitly authorised coordinated parallel agents for this video
   production project on 10 October 2026. Root acts as project manager, assigns
-  bounded file ownership and selects available models by task. Prefer Astra
-  for difficult visual teaching design, Sol 6.1 for authoring, implementation
-  and science review, and a lighter model for bounded mechanical inventory.
+  bounded file ownership and selects available models by task. The latest
+  user preference is Sol 6.1 for design, authoring, implementation and
+  independent review. Use a lighter model for bounded mechanical inventory.
+  Astra is no longer a default assignment; reconsider only if a concrete
+  unresolved task warrants it and the user agrees.
   These are routing judgements, not claims of guaranteed quality or savings.
   Keep authoring and independent review separate. Root resolves findings and
   owns selected source integration, paid narration, exports and publication.

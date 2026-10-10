@@ -1,0 +1,387 @@
+{
+  "lesson": {
+    "title": "Static and Dynamic Equilibrium",
+    "subtitle": "An unchanged mixture can still be reacting",
+    "subject": "Chemistry",
+    "yearLevel": "Year 12",
+    "module": "Module 5",
+    "lesson": "Lesson 1",
+    "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+    "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+    "syllabusDotPoints": [
+      "model static and dynamic equilibrium and analyse the differences between open and closed systems (ACSCH079, ACSCH091)"
+    ],
+    "moduleLessonCount": 18,
+    "nesaOutcomes": [
+      "CH12-12",
+      "CH11/12-4",
+      "CH11/12-5",
+      "CH11/12-6",
+      "CH11/12-7"
+    ],
+    "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+    "lessonIntent": "Explain dynamic equilibrium using equal non-zero forward and reverse rates, stable composition and a stated closed-system model. Distinguish equal rates from equal concentrations and steady observation from evidence of exchange.",
+    "examSkill": "Use supplied process evidence and system conditions to justify a classification, and explain the limits of constant measurements alone.",
+    "productionRole": "production",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "scenes": [
+      {
+        "id": "title",
+        "type": "title",
+        "durationInFrames": 75,
+        "caption": "Static and dynamic equilibrium: still appearance, different processes."
+      },
+      {
+        "id": "hook",
+        "type": "hook",
+        "heading": "Unchanged. Still reacting?",
+        "body": "A sealed drink looks steady. What is happening between liquid and gas?",
+        "callout": "Appearance is one observation.",
+        "durationInFrames": 873,
+        "caption": "A steady appearance does not tell us whether exchange has stopped.",
+        "voiceover": {
+          "text": "A sealed sparkling drink can look unchanged for hours. Does that mean the carbon dioxide has stopped moving between the liquid and the gas above it? The surprising answer is that an unchanged mixture can hide an ongoing exchange. We need to separate what stays steady from what keeps happening."
+        },
+        "comparison": [
+          {
+            "label": "Now",
+            "amount": "Sealed drink",
+            "mass": "Same look"
+          },
+          {
+            "label": "Later",
+            "amount": "Sealed drink",
+            "mass": "Same look"
+          }
+        ],
+        "comparisonIsPrompt": true
+      },
+      {
+        "id": "concept-two-states",
+        "type": "concept",
+        "heading": "Two kinds of balance",
+        "body": "A stationary object and a reacting mixture can both look unchanged.",
+        "bullets": [
+          {
+            "text": "Static mechanical model: the supported book stays at rest.",
+            "at": 2
+          },
+          {
+            "text": "Dynamic chemical model: both directions continue at equal rates.",
+            "at": 22
+          }
+        ],
+        "secondary": "Static refers to the whole object here, not to motionless particles.",
+        "callout": "Chemical equilibrium is dynamic.",
+        "durationInFrames": 2015,
+        "caption": "Static mechanical balance differs from continuing chemical exchange.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Exchange",
+          "props": {
+            "delay": 660,
+            "left0": 6,
+            "right0": 2,
+            "startAtEq": true,
+            "startAt": 0,
+            "hopEvery": 45,
+            "graph": "none",
+            "meter": false,
+            "countLabels": [
+              "A: more",
+              "B: less"
+            ],
+            "captions": [
+              {
+                "at": 0,
+                "text": "One mixture"
+              }
+            ],
+            "labelPresentation": "module5"
+          }
+        },
+        "voiceover": {
+          "text": "Think first about a book resting flat on a table. The table supports its weight, and the book stays at rest. That is a static mechanical equilibrium: the whole object is stationary and its forces balance. It does not mean every particle inside the book has stopped moving. Chemical equilibrium has a different kind of balance. In a reversible reaction, reactants form products and products form reactants. At dynamic equilibrium, those two reaction rates are equal and non-zero. Neither direction has stopped. Because each direction undoes the other at the same rate, there is no net change in the mixture. The two groups in this schematic represent substances in one mixture, not separate containers. Their balanced exchanges show the average behaviour, not exact molecular paths."
+        },
+        "conceptVisualLayout": "diagramFocus",
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "secondary": 540,
+          "callout": 960,
+          "diagram": 640
+        }
+      },
+      {
+        "id": "definition",
+        "type": "definition",
+        "heading": "Describe the system",
+        "bullets": [
+          {
+            "text": "Dynamic equilibrium: opposing processes continue, with no net change."
+          },
+          {
+            "text": "Closed: matter cannot cross the boundary. Energy can."
+          },
+          {
+            "text": "Open: matter can enter or leave."
+          }
+        ],
+        "callout": "Closed does not mean insulated.",
+        "durationInFrames": 1219,
+        "caption": "The boundary determines whether matter can enter or leave.",
+        "voiceover": {
+          "text": "Here are the words that make that distinction precise. Dynamic means the opposing processes continue. Equilibrium means they balance, so there is no net change under the stated conditions. A closed system keeps matter inside, although energy can cross the boundary. Heat can still pass through a sealed bottle. An open system allows matter to enter or leave. So closed does not mean insulated, and open does not automatically mean every measured quantity must change."
+        }
+      },
+      {
+        "id": "concept-conditions",
+        "type": "concept",
+        "heading": "A lid is not proof",
+        "body": "Model: reversible exchange, closed container, fixed temperature and volume.",
+        "bullets": [
+          {
+            "text": "Allow time for the opposing transfers to balance."
+          },
+          {
+            "text": "Opening the drink allows net CO₂ loss to the room."
+          }
+        ],
+        "secondary": "Dissolving back into the liquid can still occur after opening.",
+        "callout": "Closed and reversible allow equilibrium. They do not establish it.",
+        "durationInFrames": 1593,
+        "caption": "A closed reversible system still needs time to reach equilibrium.",
+        "diagram": {
+          "type": "table",
+          "headers": [
+            "Drink",
+            "Matter boundary"
+          ],
+          "rows": [
+            [
+              "Sealed",
+              "CO₂ retained"
+            ],
+            [
+              "Open",
+              "CO₂ can leave"
+            ]
+          ],
+          "delay": 120
+        },
+        "voiceover": {
+          "text": "For this lesson, our model is a reversible system in a closed container, at constant temperature and volume, given enough time to settle. The lid keeps material available for the reverse process, but a lid alone does not establish equilibrium. In the sparkling drink, carbon dioxide can leave the liquid and dissolve back into it. Once equilibrium is established, these transfers balance. Opening the bottle lets carbon dioxide escape into the room. Under those conditions, the drink loses dissolved gas overall. Some gas can still dissolve back in. The problem is the net loss, not the complete disappearance of the reverse process."
+        }
+      },
+      {
+        "id": "worked-example",
+        "type": "workedExample",
+        "heading": "Equal traffic, different amounts",
+        "question": "Supplied one-to-one model: A ⇌ B. Closed; constant temperature and volume. [A] = 0.60 mol L⁻¹; [B] = 0.20 mol L⁻¹.",
+        "coachNote": "Average conversions: 4 A → B each second; 4 B → A each second.",
+        "steps": [
+          "Forward removes A; reverse replaces A at the same rate.",
+          "Both non-zero rates match, so neither concentration changes overall.",
+          "Answer: dynamic equilibrium can have unequal concentrations."
+        ],
+        "durationInFrames": 1690,
+        "caption": "Equal opposing conversion rates keep each concentration steady.",
+        "voiceover": {
+          "text": "Suppose A can turn into B, and B can turn into A, one particle for one particle. This is a simplified model in a closed, fixed-volume container at constant temperature. The supplied measurements show four A particles becoming B per second, and four B particles becoming A per second, averaged over time. The forward process removes A, but the reverse process replaces A just as quickly. The same balance keeps B steady. So both concentrations remain constant. They do not need to match each other. In this model there is more A than B. Equal rates describe the traffic between the groups, not the number waiting in each group."
+        },
+        "calculationPresentation": {
+          "task": "Why does this mixture stay steady?",
+          "equation": "A ⇌ B (one-to-one)",
+          "givens": [
+            {
+              "label": "A → B",
+              "value": "4 particles s⁻¹"
+            },
+            {
+              "label": "B → A",
+              "value": "4 particles s⁻¹"
+            }
+          ],
+          "references": [
+            {
+              "label": "[A]",
+              "value": "0.60 mol L⁻¹"
+            },
+            {
+              "label": "[B]",
+              "value": "0.20 mol L⁻¹"
+            }
+          ],
+          "note": "Average conversions. Closed; constant temperature and volume.",
+          "stages": [
+            {
+              "label": "Replacement balances removal",
+              "lines": [
+                "A to B removes A.",
+                "B to A replaces A just as fast."
+              ],
+              "summary": "Replacement matches removal."
+            },
+            {
+              "label": "Explain steady composition",
+              "lines": [
+                "Both rates match and stay non-zero.",
+                "Neither concentration changes overall."
+              ],
+              "summary": "Balanced, continuing conversion."
+            },
+            {
+              "label": "Rate differs from amount",
+              "lines": [
+                "A and B have unequal concentrations.",
+                "Their opposing rates still match."
+              ],
+              "summary": "Equal rates; unequal amounts."
+            }
+          ],
+          "layout": "module5Evidence"
+        },
+        "revealDelays": {
+          "heading": 18,
+          "stepAts": [
+            780,
+            1050,
+            1290
+          ]
+        }
+      },
+      {
+        "id": "worked-example-2",
+        "type": "workedExample",
+        "heading": "Steady is evidence of what?",
+        "question": "A sealed mixture has the same colour for 10 minutes. Does that establish dynamic equilibrium?",
+        "coachNote": "Separate the observation from its possible explanation.",
+        "steps": [
+          "Observation: no detectable colour change in 10 minutes.",
+          "Possible explanations: equilibrium, or a reaction too slow to detect.",
+          "Need process evidence: matching non-zero forward and reverse rates.",
+          "Answer: unchanged colour alone does not establish dynamic exchange."
+        ],
+        "durationInFrames": 1593,
+        "caption": "No detectable change does not, by itself, establish ongoing exchange.",
+        "voiceover": {
+          "text": "Now suppose we only know that a sealed mixture keeps the same colour for ten minutes. Is that enough to establish dynamic equilibrium? It is consistent with equilibrium, but it does not establish ongoing exchange. The reaction might simply be too slow to detect over that time. Being sealed and containing both substances is not enough either. In our A and B model, the extra evidence was conversion continuing in both directions, at matching non-zero rates. That is why we could justify the dynamic explanation. A steady observation tells us what we measured. The process evidence tells us why it stayed steady."
+        }
+      },
+      {
+        "id": "misconception",
+        "type": "misconception",
+        "heading": "Equal rates, not necessarily amounts",
+        "body": "Rate: conversion per time. Concentration: amount per volume.",
+        "secondary": "Equilibrium concentrations may be equal or unequal. An apparently finished reaction is not automatically static equilibrium.",
+        "mistakeTag": "Rate and amount are different",
+        "callout": "Both directions continue. Net change is zero.",
+        "durationInFrames": 1524,
+        "caption": "Equal rates do not require equal concentrations.",
+        "voiceover": {
+          "text": "The main trap is mixing up a rate with a concentration. Rate describes how fast conversion happens. Concentration describes how much of a substance is present per volume. Dynamic equilibrium requires the forward and reverse rates to match; it does not require equal concentrations. Nor does it require unequal concentrations. Either is possible in a suitable system. And a reaction that has apparently finished is not automatically an example of static equilibrium. It may have run out of a reactant or become too slow to observe. A still-looking result does not tell us which explanation is right."
+        }
+      },
+      {
+        "id": "quick-check",
+        "type": "quickCheck",
+        "heading": "Your explanation",
+        "question": "C ⇌ D (one-to-one). Closed; constant temperature and volume. Different, steady concentrations. Each direction converts 3 particles s⁻¹ on average. Dynamic equilibrium? Why can concentrations differ? What if only steady readings were supplied?",
+        "answerSteps": [
+          "Both rates are equal and non-zero: dynamic equilibrium.",
+          "Equal conversion rates keep composition steady without equal amounts.",
+          "Steady readings alone would not establish ongoing exchange."
+        ],
+        "durationInFrames": 2428,
+        "caption": "Use the supplied evidence to explain the C ⇌ D mixture.",
+        "revealDelays": {
+          "heading": 24,
+          "pausePrompt": 1050,
+          "responseHoldStart": 1128,
+          "answerVisibleStart": 1368,
+          "stepAts": [
+            1368,
+            1608,
+            1848
+          ]
+        },
+        "voiceover": {
+          "text": "Try this with a new mixture. C and D interconvert one for one in a closed container at constant temperature and volume. Their concentrations are different and steady. Measurements show both directions converting three particles per second, averaged over time. Is this dynamic equilibrium? Explain what balances and why the concentrations can differ. Then say what would be missing if we had only the steady concentration readings. Take a moment, or pause if you would like longer. Yes, this supplied evidence supports dynamic equilibrium. Both conversion rates are non-zero and equal, so each process replaces what the other removes. The concentrations can differ because equal traffic does not require equal amounts in the two groups. If we only had steady readings, we would still need evidence that the opposing conversions continue and balance. A change too slow for our measurements could look steady as well."
+        },
+        "calculationPresentation": {
+          "task": "Dynamic equilibrium? Explain.",
+          "equation": "C ⇌ D (one-to-one)",
+          "givens": [
+            {
+              "label": "C → D",
+              "value": "3 particles s⁻¹"
+            },
+            {
+              "label": "D → C",
+              "value": "3 particles s⁻¹"
+            }
+          ],
+          "references": [
+            {
+              "label": "Concentrations",
+              "value": "Steady and unequal"
+            },
+            {
+              "label": "System",
+              "value": "Closed"
+            }
+          ],
+          "note": "Constant temperature and volume. Rates averaged over time. Why unequal? What if only steady readings?",
+          "stages": [
+            {
+              "label": "Use the supplied rates",
+              "lines": [
+                "Matching, non-zero rates.",
+                "This is dynamic equilibrium."
+              ],
+              "summary": "Both directions continue."
+            },
+            {
+              "label": "Explain unequal concentrations",
+              "lines": [
+                "Each replaces what the other removes.",
+                "Equal rates do not require equal amounts."
+              ],
+              "summary": "Balanced rates, unequal amounts."
+            },
+            {
+              "label": "What do steady readings establish?",
+              "lines": [
+                "Steady alone does not show exchange.",
+                "Very slow change could look steady."
+              ],
+              "summary": "Process evidence is needed."
+            }
+          ],
+          "layout": "module5Evidence"
+        }
+      },
+      {
+        "id": "summary",
+        "type": "summary",
+        "heading": "What balances?",
+        "points": [
+          "Both forward and reverse reactions continue.",
+          "Equal non-zero rates give no net composition change.",
+          "Concentrations stay steady but need not be equal.",
+          "Closed and reversible do not prove equilibrium has been reached.",
+          "Steady readings alone do not establish dynamic exchange."
+        ],
+        "finalPrompt": "Next: how do the two rates come to match?",
+        "durationInFrames": 1385,
+        "caption": "Explain the balance, the system boundary and the evidence.",
+        "voiceover": {
+          "text": "An unchanged mixture can still be reacting. At dynamic equilibrium, the forward and reverse reaction rates are equal and non-zero. That balance keeps composition stable under fixed conditions, without requiring equal concentrations. Our model keeps matter inside the system and allows enough time to settle. Closure helps make equilibrium possible; it does not prove it has been reached. And constant measurements alone do not establish ongoing exchange. Next, we will follow a reversible reaction from its starting mixture and see how those two rates come to match."
+        }
+      }
+    ],
+    "introDurationInFrames": 0
+  }
+}

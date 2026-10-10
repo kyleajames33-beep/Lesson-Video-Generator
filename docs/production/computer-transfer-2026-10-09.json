@@ -36,8 +36,8 @@
       }
     ],
     "releaseId": 407764183,
-    "verifiedAt": "2026-10-09T21:56:41Z",
-    "verification": "GitHub API uploaded state, size and SHA-256 digest match all eight expected immutable release assets.",
+    "verifiedAt": "2026-10-10T01:16:00Z",
+    "verification": "All previous eight immutable assets retained; ninth Module5v2 asset uploaded-state, size and digest verified.",
     "publishedAt": "2026-10-09T10:28:37Z"
   },
   "continuations": [
@@ -87,6 +87,16 @@
       "scope": "Additive original/revised Module 5 diagnostic frames, their evidence and render helpers, and production reading desk. No audio, full export or release approval.",
       "verifiedAt": "2026-10-09T21:56:41Z",
       "verification": "GitHub API uploaded state, size and SHA-256 digest match the locally CRC/SHA-verified archive; all 72 files restored into an isolated Git clone."
+    },
+    {
+      "name": "module5-visual-v2-media-2026-10-10.zip",
+      "bytes": 9925214,
+      "sha256": "abbf6e2210f4df6feffed803a094b8f6475a57519099ce22ca7843852069300f",
+      "files": 40,
+      "status": "published-verified",
+      "scope": "Additive Module 5 v2 visual review evidence and focused course route page. Source/static/silent evidence remains distinct from voiced playback, listening and release approval.",
+      "verifiedAt": "2026-10-10T01:16:00Z",
+      "verification": "GitHub API uploaded state, size and SHA256 match CRC/member-hash verified archive. All40files restored into separate checkout and verified against member hashes."
     }
   ]
 }

@@ -68,6 +68,10 @@ export function checkReleaseEvidence(root, config) {
     } catch { return {path: file, valid: false}; }
   });
   const videos = exports.filter((file) => /\.mp4$/iu.test(file.path));
+  // Mastered renders retain silent and unmastered MP4s. Select only the
+  // unique export explicitly identified by the hashed render record.
+  const selectedVideos = typeof renderRecord.videoSha256 === 'string' && renderRecord.videoSha256.trim()
+    ? videos.filter((file) => file.sha256 === renderRecord.videoSha256) : [];
   let teachingBrief = {ready: false, blockers: [{code: 'BRIEF_MISSING', detail: 'Set teachingBriefPath in this gate config.'}]};
   let teachingBriefSha256 = null;
   if (config.teachingBriefPath) {
@@ -82,7 +86,7 @@ export function checkReleaseEvidence(root, config) {
   const report = assessReleaseEvidence({snapshotValid: verification(snapshot), inputValid: verification(inputs), teachingBriefValid: teachingBrief.ready,
     packageSha256: snapshot.packageSha256, inputPackageSha256: inputs.packageSha256, renderRecord,
     renderRecordTracked: exports.some((file) => file.path === relative(config.renderRecordPath) && file.sha256),
-    videoSha256: videos.length === 1 ? videos[0].sha256 : null,
+    videoSha256: selectedVideos.length === 1 ? selectedVideos[0].sha256 : null,
     captionsTracked: exports.some((file) => /\.srt$/iu.test(file.path) && file.sha256) && exports.some((file) => /\.vtt$/iu.test(file.path) && file.sha256),
     fps: inputs.timeline?.fps, durationInFrames: inputs.timeline?.durationInFrames, reviews});
   return {...report, teachingBrief: {...teachingBrief, path: config.teachingBriefPath ?? null, sha256: teachingBriefSha256},

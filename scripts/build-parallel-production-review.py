@@ -26,6 +26,9 @@ if queue_path.exists():
 drafts = []
 for subject in ['chemistry', 'biology']:
     folder = ROOT / f'docs/production/drafts/module5-{subject}-l1-2026-10-10'
+    additive = ROOT / 'docs/production/drafts/module5-visual-v2-2026-10-10' / subject
+    if (additive / 'lesson.json').exists():
+        folder = additive
     source = folder / 'lesson.json'
     if not source.exists():
         drafts.append(f'<section><h2>{e(subject.title())} Module 5</h2><p>Draft preparation in progress.</p></section>')
@@ -51,6 +54,18 @@ for subject in ['chemistry', 'biology']:
                   + progression + ''.join(scenes)
                   + f'<p class="small">Exact draft SHA-256: {e(digest)}</p></section>')
 
+preparations = []
+for file_name, label in [('chemistry-c2.md', 'Chemistry C2: reversible approach'),
+                         ('biology-b2-animals.md', 'Biology B2: animal reproduction')]:
+    source = ROOT / 'docs/production/drafts/module5-next-preparation-2026-10-10' / file_name
+    if source.exists():
+        digest = hashlib.sha256(source.read_bytes()).hexdigest()
+        preparations.append(f'<details><summary>{e(label)}</summary>'
+                            '<p class="notice">Unrecorded preparation. Read speech and visual notes together; selected source and recording approval are pending.</p>'
+                            f'<div class="script">{e(source.read_text(encoding="utf-8"))}</div>'
+                            f'<p class="small">Exact preparation SHA-256: {e(digest)}</p></details>')
+preparation_section = ('<section><h2>Next lesson preparations</h2>' + ''.join(preparations) + '</section>') if preparations else ''
+
 document = '''<!doctype html><html lang="en-AU"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HSCScience production desk</title><style>
 body{font:18px/1.6 system-ui,sans-serif;color:#17251f;background:#f7f7f5;margin:0;padding:24px}main{max-width:1100px;margin:auto}
@@ -59,9 +74,10 @@ h1{font-size:clamp(30px,5vw,50px);line-height:1.1}h2{font-size:26px}a{color:#0d6
 details{border-top:1px solid #d7ddd9;padding:14px 0}summary{cursor:pointer;font-weight:650}.script{max-width:78ch;white-space:pre-wrap}.small{font-size:13px;overflow-wrap:anywhere;color:#57625b}
 </style><main><h1>HSCScience production desk</h1><p>Module 5 in Chemistry and Biology. Coordinated drafting, visual design and independent review.</p>
 <p class="notice">This is a saved production snapshot, not a live background service. The current calculation clips still need revised listening and release checks.</p>
+<p>Each module is a sequence of focused videos. The two scripts below are the opening lessons, not entire modules. <a href="/module5-course-plan-2026-10-10/">See the Module 5 video sequence and syllabus plan</a>, or <a href="/video-syllabus-map-2026-10-09/">open the full catalogue and syllabus mapping</a>.</p>
 <p><a href="/calculation-batch-review-2026-10-10/">Open the current four calculation clips and full narration</a></p>
 <section><h2>Work assignments</h2><div class="scroll"><table><thead><tr><th>Task</th><th>Model</th><th>State</th><th>Deliverable</th></tr></thead><tbody>'''
-document += rows + '</tbody></table></div></section>' + queue_section + ''.join(drafts)
+document += rows + '</tbody></table></div></section>' + queue_section + ''.join(drafts) + preparation_section
 document += '<p class="small">Generated from tracked task state and exact draft files. Rebuild with python scripts/build-parallel-production-review.py.</p></main></html>'
 if '\u2014' in document:
     raise ValueError('Selected production copy contains prohibited punctuation.')

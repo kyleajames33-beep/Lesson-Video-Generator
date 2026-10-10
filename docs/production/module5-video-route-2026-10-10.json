@@ -1,0 +1,3076 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "purpose": "Detailed learner-route expansion of the existing priority plan, not a competing catalogue, upload chronology or approved complete-coverage checklist.",
+  "canonicalDocuments": {
+    "priorityPlan": "docs/production/year12-module5-teaching-priority-2026-10-10.md",
+    "coursePlan": "docs/production/course-progression-plan-2026-10-09.md",
+    "ledger": "docs/production/course-progression-ledger-2026-10-09.json",
+    "contentChecklist": "docs/production/course-content-checklist-2026-10-09.json",
+    "fullCatalogueMap": "docs/production/video-syllabus-map-2026-10-09.json"
+  },
+  "officialEvidence": {
+    "Chemistry": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 5,
+      "docxPath": "out/research/continuity-2026-10-08/chemistry-2017.docx",
+      "docxSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "paragraphExtractPath": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+      "paragraphExtractSha256": "8f945689294fe87ac22786cbaee17cae7ffb52be4a14ca38f76e4e7048d8eef1",
+      "cachedDate": "2026-10-08",
+      "status": "Cached detailed official extract, not a fresh full-syllabus verification. Flattened equations need DOCX inspection before recording.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx"
+    },
+    "Biology": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 5,
+      "docxPath": "out/research/continuity-2026-10-08/biology-2017.docx",
+      "docxSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7",
+      "paragraphExtractPath": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+      "paragraphExtractSha256": "1d3a94b77ef662892ef058032f1ef51980c85779efe6043011cc7f5af652c8a8",
+      "cachedDate": "2026-10-08",
+      "status": "Cached detailed official extract, not a fresh full-syllabus verification. Flattened equations need DOCX inspection before recording.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx"
+    }
+  },
+  "summaries": {
+    "Chemistry": {
+      "sourceCandidates": 18,
+      "plannedUploads": 22,
+      "core": 15,
+      "companions": 4,
+      "practicalSupport": 3,
+      "mappedActionGroups": 25,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload.",
+      "module5SpecificPlannedUploads": 21,
+      "optionalCrossModuleSupport": 1
+    },
+    "Biology": {
+      "sourceCandidates": 19,
+      "plannedUploads": 24,
+      "core": 18,
+      "companions": 3,
+      "practicalSupport": 3,
+      "mappedActionGroups": 32,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload."
+    }
+  },
+  "subjects": {
+    "Chemistry": {
+      "module": "Equilibrium and Acid Reactions",
+      "sourceCandidateCount": 18,
+      "entries": [
+        {
+          "id": "chem-m5-c01",
+          "playlistOrder": 1,
+          "planAnchor": "C1",
+          "title": "Static and dynamic equilibrium",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L1",
+              "path": "src/data/chemistry-y12-m5-l1-static-dynamic-equilibrium.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [],
+          "entryKnowledge": "Reactants/products, particle model and reaction rate.",
+          "start": "A sealed drink looks unchanged although exchange can continue.",
+          "stop": "Explain equal non-zero opposing rates, stable composition, unequal concentrations and the stated closed-system scope.",
+          "next": [
+            "chem-m5-c02"
+          ],
+          "syllabusActions": [
+            "C-models",
+            "C-systems"
+          ],
+          "status": "source-review-passed/layout-pending",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route",
+          "selectedDraftPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+          "reviewBoundary": "Portable draft source review only. Current layout findings remain pending at this planning snapshot. No narration, listening, export or release pass inferred."
+        },
+        {
+          "id": "chem-m5-c02",
+          "playlistOrder": 2,
+          "planAnchor": "C2",
+          "title": "How reversible reactions approach equilibrium",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L2",
+              "path": "src/data/chemistry-y12-m5-l2-reversibility-entropy.json",
+              "scope": "Reversibility core merged with L3; entropy/enthalpy retained in g01."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L3",
+              "path": "src/data/chemistry-y12-m5-l3-collision-theory-equilibrium.json",
+              "scope": "Collision/rate core merged with L2; qualify catalyst factor claims."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c01"
+          ],
+          "entryKnowledge": "C1 plus activation energy and concentration effects on rate.",
+          "start": "Follow a specified initially reactant-rich reversible reaction.",
+          "stop": "Explain changing forward/reverse rates and why a catalyst changes approach time, not fixed-temperature equilibrium composition.",
+          "next": [
+            "chem-m5-c03",
+            "chem-m5-g01",
+            "chem-m5-p01"
+          ],
+          "syllabusActions": [
+            "C-reversibility",
+            "C-collision-investigate",
+            "C-activation"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-g01",
+          "playlistOrder": 3,
+          "planAnchor": "L2 legacy companion retained",
+          "title": "Non-equilibrium systems: enthalpy and entropy",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L2",
+              "path": "src/data/chemistry-y12-m5-l2-reversibility-entropy.json",
+              "scope": "Retain legacy non-equilibrium entropy/enthalpy analysis as a scoped companion."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c02"
+          ],
+          "entryKnowledge": "Reversibility and supplied Year 11 enthalpy/entropy definitions.",
+          "start": "Compare combustion and photosynthesis with a fixed-condition equilibrium model.",
+          "stop": "Analyse the specified non-equilibrium systems using enthalpy and entropy without treating energetic favourability as a rate prediction.",
+          "next": [
+            "chem-m5-c03"
+          ],
+          "syllabusActions": [
+            "C-non-equilibrium"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; question practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "chem-m5-c03",
+          "playlistOrder": 4,
+          "planAnchor": "C3",
+          "title": "Disturbing equilibrium: concentration and temperature",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L5",
+              "path": "src/data/chemistry-y12-m5-l5-lcp-concentration-temperature.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c02"
+          ],
+          "entryKnowledge": "Rates versus amounts and stated reaction enthalpy.",
+          "start": "Disturb a visible initial equilibrium by species addition/removal or temperature change.",
+          "stop": "Predict relaxation direction, distinguish an immediate change from response, and separate temperature from open-system water removal.",
+          "next": [
+            "chem-m5-c04"
+          ],
+          "syllabusActions": [
+            "C-disturbances",
+            "C-collision-observations",
+            "C-heat",
+            "C-temperature-K"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c04",
+          "playlistOrder": 5,
+          "planAnchor": "C4",
+          "title": "Gas volume, pressure and catalysts",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L6",
+              "path": "src/data/chemistry-y12-m5-l6-lcp-pressure-volume-catalysts.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c03"
+          ],
+          "entryKnowledge": "Balanced gaseous coefficients and particle pressure reasoning.",
+          "start": "Compress a gas mixture at fixed temperature.",
+          "stop": "Justify gaseous-coefficient reasoning, distinguish inert gas at fixed volume from compression, and explain catalyst scope.",
+          "next": [
+            "chem-m5-c05",
+            "chem-m5-p01"
+          ],
+          "syllabusActions": [
+            "C-disturbances",
+            "C-collision-observations",
+            "C-activation"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-p01",
+          "playlistOrder": 6,
+          "planAnchor": "Practical/data route",
+          "title": "Reversibility and disturbance investigation preparation",
+          "type": "practical-support",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L1",
+              "path": "src/data/chemistry-y12-m5-l1-static-dynamic-equilibrium.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L2",
+              "path": "src/data/chemistry-y12-m5-l2-reversibility-entropy.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L3",
+              "path": "src/data/chemistry-y12-m5-l3-collision-theory-equilibrium.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L5",
+              "path": "src/data/chemistry-y12-m5-l5-lcp-concentration-temperature.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L6",
+              "path": "src/data/chemistry-y12-m5-l6-lcp-pressure-volume-catalysts.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c04"
+          ],
+          "entryKnowledge": "Core equilibrium model, variables and teacher-approved method.",
+          "start": "Choose a reversible system and compare controlled disturbances.",
+          "stop": "Plan observations, controls and data interpretation; make open/closed conditions explicit and distinguish evidence for reversibility from unchanged appearance.",
+          "next": [
+            "chem-m5-c05"
+          ],
+          "syllabusActions": [
+            "C-reversibility",
+            "C-models",
+            "C-systems",
+            "C-collision-investigate",
+            "C-disturbances"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; question practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "chem-m5-c05",
+          "playlistOrder": 7,
+          "planAnchor": "C5",
+          "title": "Writing and interpreting equilibrium expressions",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L9",
+              "path": "src/data/chemistry-y12-m5-l9-writing-keq-expressions.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c04"
+          ],
+          "entryKnowledge": "Concentration notation, phases and balanced coefficients.",
+          "start": "A fixed-temperature equilibrium composition has a measurable relationship.",
+          "stop": "Deduce school concentration expressions for homogeneous solution reactions, select species and interpret magnitude in reaction context.",
+          "next": [
+            "chem-m5-c06"
+          ],
+          "syllabusActions": [
+            "C-expression"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c06",
+          "playlistOrder": 8,
+          "planAnchor": "C6",
+          "title": "Calculating equilibrium constants and concentrations",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L10",
+              "path": "src/data/chemistry-y12-m5-l10-calculating-keq-ice-tables.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c05"
+          ],
+          "entryKnowledge": "Concentration/volume units and stoichiometric changes.",
+          "start": "Initial quantities differ from equilibrium quantities.",
+          "stop": "Use a consistent stoichiometric change to calculate a feasible equilibrium state or constant and check the result.",
+          "next": [
+            "chem-m5-c07",
+            "chem-m5-c08",
+            "chem-m5-g03"
+          ],
+          "syllabusActions": [
+            "C-calculate-K",
+            "C-calculate-concentration"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c07",
+          "playlistOrder": 9,
+          "planAnchor": "Later L7 after disturbance prerequisites",
+          "title": "Industrial equilibrium: rate and composition trade-offs",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L7",
+              "path": "src/data/chemistry-y12-m5-l7-industrial-applications-equilibrium.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c04"
+          ],
+          "entryKnowledge": "Disturbance reasoning; rate versus equilibrium composition.",
+          "start": "An industrial process needs useful production in finite time.",
+          "stop": "Justify stated temperature/pressure/removal decisions and distinguish equilibrium fraction from rate, cost and finite-time amount.",
+          "next": [
+            "chem-m5-g02"
+          ],
+          "syllabusActions": [
+            "C-disturbances",
+            "C-collision-observations",
+            "C-heat"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-g02",
+          "playlistOrder": 10,
+          "planAnchor": "Existing equilibrium explanation/graph companion",
+          "title": "Equilibrium graphs and unfamiliar explanations",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L4",
+              "path": "src/data/chemistry-y12-m5-l4-equilibrium-analogies-misconceptions.json",
+              "scope": "Analogy/misconception repair merged with L7/L8."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L7",
+              "path": "src/data/chemistry-y12-m5-l7-industrial-applications-equilibrium.json",
+              "scope": "Unfamiliar industrial decision only, not a duplicate of c07."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L8",
+              "path": "src/data/chemistry-y12-m5-l8-lcp-mastery-consolidation.json",
+              "scope": "Graph/multiple-variable task core with protected attempt."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c04",
+            "chem-m5-c07"
+          ],
+          "entryKnowledge": "C1-C4 and industrial constraints.",
+          "start": "An unseen concentration/rate trace has an explicit initial state and disturbance.",
+          "stop": "Justify the response using rates, quantities and conditions, critique an analogy and identify a model limitation after a protected attempt.",
+          "next": [
+            "chem-m5-c08"
+          ],
+          "syllabusActions": [
+            "C-models",
+            "C-systems",
+            "C-disturbances",
+            "C-collision-observations"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; question practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "chem-m5-c08",
+          "playlistOrder": 11,
+          "planAnchor": "Later L12 direction reasoning",
+          "title": "Reaction quotient: which way will the reaction proceed?",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L12",
+              "path": "src/data/chemistry-y12-m5-l12-reaction-quotient-q.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c06"
+          ],
+          "entryKnowledge": "K expression and initial versus equilibrium concentration.",
+          "start": "A mixture is supplied before equilibration.",
+          "stop": "Calculate initial Q and compare with fixed-temperature K to justify subsequent direction.",
+          "next": [
+            "chem-m5-g03",
+            "chem-m5-c09"
+          ],
+          "syllabusActions": [
+            "C-predict-direction"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-g03",
+          "playlistOrder": 12,
+          "planAnchor": "Existing harder equilibrium calculation companion",
+          "title": "Harder ICE tables and Q decisions",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L9",
+              "path": "src/data/chemistry-y12-m5-l9-writing-keq-expressions.json",
+              "scope": "Selected harder expression tasks."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L10",
+              "path": "src/data/chemistry-y12-m5-l10-calculating-keq-ice-tables.json",
+              "scope": "Selected harder calculations."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L11",
+              "path": "src/data/chemistry-y12-m5-l11-ice-table-mastery.json",
+              "scope": "ICE mastery transfer tasks."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L12",
+              "path": "src/data/chemistry-y12-m5-l12-reaction-quotient-q.json",
+              "scope": "Q method selection tasks."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c06",
+            "chem-m5-c08"
+          ],
+          "entryKnowledge": "Basic expressions, ICE changes and Q/K distinction.",
+          "start": "An unfamiliar task requires choosing a method.",
+          "stop": "Select a method, reject infeasible roots, retain guard digits and check approximations. Stop before unintroduced weak-acid or titration methods.",
+          "next": [
+            "chem-m5-c09"
+          ],
+          "syllabusActions": [
+            "C-calculate-K",
+            "C-calculate-concentration",
+            "C-predict-direction"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; question practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "chem-m5-c09",
+          "playlistOrder": 13,
+          "planAnchor": "Later L13 temperature/data",
+          "title": "Temperature and the equilibrium constant",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L13",
+              "path": "src/data/chemistry-y12-m5-l13-temperature-keq-colourimetry.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c08"
+          ],
+          "entryKnowledge": "Reaction enthalpy, K calculations and supplied data interpretation.",
+          "start": "Compare equilibrium measurements at stated temperatures.",
+          "stop": "Qualitatively explain temperature dependence of K from supplied evidence and distinguish it from concentration/pressure disturbances.",
+          "next": [
+            "chem-m5-p02",
+            "chem-m5-c10"
+          ],
+          "syllabusActions": [
+            "C-temperature-K"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-p02",
+          "playlistOrder": 14,
+          "planAnchor": "Practical/data route",
+          "title": "Determining Keq from measured colour data",
+          "type": "practical-support",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L13",
+              "path": "src/data/chemistry-y12-m5-l13-temperature-keq-colourimetry.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c09"
+          ],
+          "entryKnowledge": "Concentration, calibration, equilibrium expression and measurement limits.",
+          "start": "An equilibrium investigation needs measured concentrations.",
+          "stop": "Plan standards/controls, process supplied calibration/equilibrium data, calculate K and evaluate uncertainty; separate preparation/data analysis from conduct.",
+          "next": [
+            "chem-m5-c10"
+          ],
+          "syllabusActions": [
+            "C-measured-K"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; question practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "chem-m5-c10",
+          "playlistOrder": 15,
+          "planAnchor": "L14 deliberate legacy M5 boundary",
+          "title": "Equilibrium constants for ionic, acid and base dissociation",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L14",
+              "path": "src/data/chemistry-y12-m5-l14-ka-kb-gibbs.json",
+              "scope": "Retain scoped Ka/Kb expression exploration in M5; defer numerical acid/base and Gibbs extensions."
+            },
+            {
+              "id": "Chemistry-Y12-M5-L15",
+              "path": "src/data/chemistry-y12-m5-l15-dissolution-atsi.json",
+              "scope": "Ionic dissolution/dissociation bridge only."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c09"
+          ],
+          "entryKnowledge": "Expressions and explicitly introduced ionic/acid/base dissociation vocabulary.",
+          "start": "Apply equilibrium-expression reasoning to different dissociation reactions.",
+          "stop": "Explore ionic, acid and base dissociation K in legacy M5, with water convention and model limits explicit. Stop before weak-acid pH, titration or Gibbs calculations.",
+          "next": [
+            "chem-m5-c11"
+          ],
+          "syllabusActions": [
+            "C-ionic-dissociation",
+            "C-acid-dissociation",
+            "C-base-dissociation"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c11",
+          "playlistOrder": 16,
+          "planAnchor": "Later L15 dissolution",
+          "title": "How ionic compounds dissolve in water",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L15",
+              "path": "src/data/chemistry-y12-m5-l15-dissolution-atsi.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c10"
+          ],
+          "entryKnowledge": "Ions, lattice, water polarity and equilibrium reasoning.",
+          "start": "Follow an ionic solid entering water.",
+          "stop": "Describe and analyse dissolution, hydration and competing dissolution/crystallisation in a stated saturated-solution model.",
+          "next": [
+            "chem-m5-c12",
+            "chem-m5-c13"
+          ],
+          "syllabusActions": [
+            "C-dissolution"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c12",
+          "playlistOrder": 17,
+          "planAnchor": "L15 required cultural context split",
+          "title": "Solubility and food detoxification knowledge",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L15",
+              "path": "src/data/chemistry-y12-m5-l15-dissolution-atsi.json",
+              "scope": "Cultural context split from physical dissolution; direct sources and protocols pending."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c11"
+          ],
+          "entryKnowledge": "Dissolution and solubility; respectful source orientation supplied.",
+          "start": "Investigate a directly sourced Aboriginal or Torres Strait Islander food-processing context.",
+          "stop": "Explain the relevant solubility process and cultural context using reviewed direct sources and applicable protocols, without an unsupervised food-safety recipe.",
+          "next": [
+            "chem-m5-c13"
+          ],
+          "syllabusActions": [
+            "C-cultural-solubility"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c13",
+          "playlistOrder": 18,
+          "planAnchor": "Later L16",
+          "title": "Solubility rules and net ionic precipitation",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L16",
+              "path": "src/data/chemistry-y12-m5-l16-solubility-rules-precipitation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c11"
+          ],
+          "entryKnowledge": "Aqueous ions, balanced equations and supplied solubility rules.",
+          "start": "Mix two stated ionic solutions.",
+          "stop": "Predict and analyse dissolved species/precipitate and write a net ionic equation with spectator ions distinguished.",
+          "next": [
+            "chem-m5-p03",
+            "chem-m5-c14"
+          ],
+          "syllabusActions": [
+            "C-solubility-rules",
+            "C-mixed-solution-composition"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-p03",
+          "playlistOrder": 19,
+          "planAnchor": "Practical/data route",
+          "title": "Investigating solubility rules and mixed solutions",
+          "type": "practical-support",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L16",
+              "path": "src/data/chemistry-y12-m5-l16-solubility-rules-precipitation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c13"
+          ],
+          "entryKnowledge": "Ions, rule predictions and teacher-approved laboratory method.",
+          "start": "Controlled ionic-solution tests supply primary observations.",
+          "stop": "Plan teacher-approved tests, record observations, infer rules and evaluate predictions against data. Actual conduct remains separately evidenced.",
+          "next": [
+            "chem-m5-c14"
+          ],
+          "syllabusActions": [
+            "C-solubility-rules",
+            "C-mixed-solution-composition"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; question practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "chem-m5-c14",
+          "playlistOrder": 20,
+          "planAnchor": "Later L17",
+          "title": "Ksp expressions and molar solubility",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L17",
+              "path": "src/data/chemistry-y12-m5-l17-solubility-product-ksp.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c13",
+            "chem-m5-c05"
+          ],
+          "entryKnowledge": "Saturation, concentration expressions and dissolution stoichiometry.",
+          "start": "An ionic solid is at equilibrium with a saturated solution.",
+          "stop": "Derive Ksp and calculate molar solubility using correct stoichiometric factors and stated assumptions.",
+          "next": [
+            "chem-m5-c15"
+          ],
+          "syllabusActions": [
+            "C-derive-Ksp",
+            "C-calculate-solubility"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-c15",
+          "playlistOrder": 21,
+          "planAnchor": "Later L18",
+          "title": "Will mixing these solutions form a precipitate?",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M5-L18",
+              "path": "src/data/chemistry-y12-m5-l18-qsp-common-ion-effect.json",
+              "scope": "Mixing/Qsp prediction core; common-ion extension requires labelled review."
+            }
+          ],
+          "prerequisites": [
+            "chem-m5-c14",
+            "chem-m5-c08"
+          ],
+          "entryKnowledge": "Ksp, Q and post-mixing concentration/dilution.",
+          "start": "Two solutions supply ions at stated amounts and final volume.",
+          "stop": "Calculate post-mixing ion concentrations and Qsp, compare with referenced Ksp and justify precipitation. Keep common-ion extensions scoped; no titration methods.",
+          "next": [
+            "chem-m6-acid-base-route"
+          ],
+          "syllabusActions": [
+            "C-precipitation"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "chem-m5-g04",
+          "playlistOrder": 22,
+          "planAnchor": "Existing Year 12 entry support companion",
+          "title": "Limiting reactants: transfer before equilibrium",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y11-M2-L13",
+              "path": "src/data/chemistry-y11-m2-l13-limiting-reagents.json",
+              "scope": "Use exact current selected feedback package after review, preserving historical sources."
+            }
+          ],
+          "prerequisites": [],
+          "entryKnowledge": "Mole ratios and m=nM, with concentration units where needed.",
+          "start": "An unfamiliar coefficient or mixed-unit reaction task.",
+          "stop": "Use n/coefficient and explain excess under a complete-reaction assumption; distinguish that assumption from reversible equilibrium.",
+          "next": [],
+          "syllabusActions": [],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "Optional prerequisite transfer, not a claimed M5 mandatory action. Current voiced candidate playback/listening remains pending.",
+          "selectedPackageRecord": "docs/production/calculation-feedback-2026-10-10.json",
+          "placement": "Optional reused prerequisite branch before c02. Listing position 22 is a route inventory position, not the final M5 playlist handoff.",
+          "includeInDefaultPlaylistNavigation": false,
+          "supportRouteNext": [
+            "chem-m5-c02"
+          ]
+        }
+      ],
+      "sourceDisposition": [
+        {
+          "sourceId": "Chemistry-Y12-M5-L1",
+          "sourcePath": "src/data/chemistry-y12-m5-l1-static-dynamic-equilibrium.json",
+          "entryIds": [
+            "chem-m5-c01",
+            "chem-m5-p01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L2",
+          "sourcePath": "src/data/chemistry-y12-m5-l2-reversibility-entropy.json",
+          "entryIds": [
+            "chem-m5-c02",
+            "chem-m5-g01",
+            "chem-m5-p01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L3",
+          "sourcePath": "src/data/chemistry-y12-m5-l3-collision-theory-equilibrium.json",
+          "entryIds": [
+            "chem-m5-c02",
+            "chem-m5-p01"
+          ],
+          "decision": "Merge collision/rate core with L2 into C2; retain investigation support separately.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L4",
+          "sourcePath": "src/data/chemistry-y12-m5-l4-equilibrium-analogies-misconceptions.json",
+          "entryIds": [
+            "chem-m5-g02"
+          ],
+          "decision": "Merge analogy and misconception repair with L7/L8 into the graph/application companion.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L5",
+          "sourcePath": "src/data/chemistry-y12-m5-l5-lcp-concentration-temperature.json",
+          "entryIds": [
+            "chem-m5-c03",
+            "chem-m5-p01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L6",
+          "sourcePath": "src/data/chemistry-y12-m5-l6-lcp-pressure-volume-catalysts.json",
+          "entryIds": [
+            "chem-m5-c04",
+            "chem-m5-p01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L7",
+          "sourcePath": "src/data/chemistry-y12-m5-l7-industrial-applications-equilibrium.json",
+          "entryIds": [
+            "chem-m5-c07",
+            "chem-m5-g02"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L8",
+          "sourcePath": "src/data/chemistry-y12-m5-l8-lcp-mastery-consolidation.json",
+          "entryIds": [
+            "chem-m5-g02"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L9",
+          "sourcePath": "src/data/chemistry-y12-m5-l9-writing-keq-expressions.json",
+          "entryIds": [
+            "chem-m5-c05",
+            "chem-m5-g03"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L10",
+          "sourcePath": "src/data/chemistry-y12-m5-l10-calculating-keq-ice-tables.json",
+          "entryIds": [
+            "chem-m5-c06",
+            "chem-m5-g03"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L11",
+          "sourcePath": "src/data/chemistry-y12-m5-l11-ice-table-mastery.json",
+          "entryIds": [
+            "chem-m5-g03"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L12",
+          "sourcePath": "src/data/chemistry-y12-m5-l12-reaction-quotient-q.json",
+          "entryIds": [
+            "chem-m5-c08",
+            "chem-m5-g03"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L13",
+          "sourcePath": "src/data/chemistry-y12-m5-l13-temperature-keq-colourimetry.json",
+          "entryIds": [
+            "chem-m5-c09",
+            "chem-m5-p02"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L14",
+          "sourcePath": "src/data/chemistry-y12-m5-l14-ka-kb-gibbs.json",
+          "entryIds": [
+            "chem-m5-c10"
+          ],
+          "decision": "Split M5 dissociation K exploration from deferred acid/base numerical methods and Gibbs extension. Do not relocate the entire source to M6.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L15",
+          "sourcePath": "src/data/chemistry-y12-m5-l15-dissolution-atsi.json",
+          "entryIds": [
+            "chem-m5-c10",
+            "chem-m5-c11",
+            "chem-m5-c12"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L16",
+          "sourcePath": "src/data/chemistry-y12-m5-l16-solubility-rules-precipitation.json",
+          "entryIds": [
+            "chem-m5-c13",
+            "chem-m5-p03"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L17",
+          "sourcePath": "src/data/chemistry-y12-m5-l17-solubility-product-ksp.json",
+          "entryIds": [
+            "chem-m5-c14"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L18",
+          "sourcePath": "src/data/chemistry-y12-m5-l18-qsp-common-ion-effect.json",
+          "entryIds": [
+            "chem-m5-c15"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        }
+      ],
+      "deferredScope": [
+        {
+          "sourceId": "Chemistry-Y12-M5-L14",
+          "scope": "Ka/Kb/Kw numerical relationships and weak-acid/base pH methods",
+          "destination": "Relevant M6 acid/base route after strength, conjugate-pair and pH prerequisites; exact requirement audit pending.",
+          "reason": "Retain M5 exploration of dissociation K without unintroduced acid/base calculation methods."
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L14",
+          "scope": "Gibbs free-energy relationship and calculations from K",
+          "destination": "Labelled extension or Year 11 thermodynamic bridge after audit.",
+          "reason": "No direct Gibbs-from-K action found in cached M5 p1052-p1098. Preserve history without claiming compulsory M5 scope."
+        },
+        {
+          "sourceId": "Chemistry-Y12-M5-L18",
+          "scope": "Common-ion extensions beyond precipitation prediction",
+          "destination": "Optional scoped extension or later acid/base application.",
+          "reason": "Helpful reasoning needs review and explicit scope, not an invented mandatory point."
+        },
+        {
+          "scope": "Titration technique, indicators, curves, mastery and back/conductometric titration",
+          "destination": "Chemistry M6 L14-L18 after relevant acid/base cores.",
+          "reason": "Existing priority plan places this sequence after M5. Practical/data support is separate from calculation."
+        }
+      ],
+      "checkedRequiredParagraphIds": [
+        "p1052",
+        "p1057",
+        "p1059",
+        "p1062",
+        "p1067",
+        "p1071",
+        "p1072",
+        "p1077",
+        "p1078",
+        "p1079",
+        "p1080",
+        "p1082",
+        "p1090",
+        "p1091",
+        "p1093",
+        "p1097",
+        "p1098"
+      ],
+      "requiredParagraphsWithoutAnyCandidateEntry": [],
+      "paragraphCoverageStatus": "Candidate route assignments only; exact required action decomposition and approved scene/evidence mapping remain pending."
+    },
+    "Biology": {
+      "module": "Heredity",
+      "sourceCandidateCount": 19,
+      "entries": [
+        {
+          "id": "bio-m5-b01",
+          "playlistOrder": 1,
+          "planAnchor": "B1",
+          "title": "Reproduction and continuity of species",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L1",
+              "path": "src/data/biology-y12-m5-l1-reproduction-continuity.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [],
+          "entryKnowledge": "Cells and inherited information; organism versus population.",
+          "start": "Individuals die while a lineage can continue.",
+          "stop": "Explain inheritance across generations and compare sexual/asexual reproduction under stated conditions without guaranteed resistance claims.",
+          "next": [
+            "bio-m5-b02a",
+            "bio-m5-b02b"
+          ],
+          "syllabusActions": [
+            "B-reproduction"
+          ],
+          "status": "source-review-passed/layout-pending",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route",
+          "selectedDraftPath": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+          "reviewBoundary": "Portable draft source review only. Current layout findings remain pending at this planning snapshot. No narration, listening, export or release pass inferred."
+        },
+        {
+          "id": "bio-m5-b02a",
+          "playlistOrder": 2,
+          "planAnchor": "B2 animal video",
+          "title": "Reproduction in animals",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L2",
+              "path": "src/data/biology-y12-m5-l2-reproduction-in-animals.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b01"
+          ],
+          "entryKnowledge": "Gametes, fertilisation and inherited information.",
+          "start": "Compare named animal mechanisms and fertilisation conditions.",
+          "stop": "Explain mechanisms and analyse context-dependent external/internal fertilisation advantages.",
+          "next": [
+            "bio-m5-b02b",
+            "bio-m5-b03a"
+          ],
+          "syllabusActions": [
+            "B-animals"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b02b",
+          "playlistOrder": 3,
+          "planAnchor": "B2 distinct plants/fungi/bacteria/protists video",
+          "title": "Reproduction in plants, fungi, bacteria and protists",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L3",
+              "path": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b01"
+          ],
+          "entryKnowledge": "B1 and basic organism groups.",
+          "start": "Compare named mechanisms across four groups.",
+          "stop": "Explain plant sexual/asexual reproduction, fungal budding/spores, bacterial binary fission and protist binary fission/budding with accurate organism limits.",
+          "next": [
+            "bio-m5-b03a",
+            "bio-m5-b03b"
+          ],
+          "syllabusActions": [
+            "B-plants",
+            "B-fungi",
+            "B-bacteria",
+            "B-protists"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b03a",
+          "playlistOrder": 4,
+          "planAnchor": "B3 mammalian video",
+          "title": "Mammalian fertilisation, pregnancy and birth",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L4",
+              "path": "src/data/biology-y12-m5-l4-mammalian-reproduction.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b02a"
+          ],
+          "entryKnowledge": "Gametes and internal fertilisation.",
+          "start": "Trace fertilisation through implantation to pregnancy and birth control.",
+          "stop": "Analyse the required features and hormonal control using a scoped mammalian model.",
+          "next": [
+            "bio-m5-b03b"
+          ],
+          "syllabusActions": [
+            "B-mammals"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b03b",
+          "playlistOrder": 5,
+          "planAnchor": "B3 separate agricultural intervention video",
+          "title": "Manipulating reproduction in agriculture",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L5",
+              "path": "src/data/biology-y12-m5-l5-manipulating-reproduction-agriculture.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b03a",
+            "bio-m5-b02b"
+          ],
+          "entryKnowledge": "Animal and plant reproductive mechanisms.",
+          "start": "A named intervention changes reproductive outcomes.",
+          "stop": "Evaluate how scientific knowledge enables a sourced plant and animal intervention, considering evidence, benefits and limits.",
+          "next": [
+            "bio-m5-b04"
+          ],
+          "syllabusActions": [
+            "B-agriculture"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b04",
+          "playlistOrder": 6,
+          "planAnchor": "B4",
+          "title": "DNA structure and semi-conservative replication",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L6",
+              "path": "src/data/biology-y12-m5-l6-dna-structure-replication.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b01"
+          ],
+          "entryKnowledge": "Nucleotides, chromosome orientation and inheritance purpose, supplied or checked.",
+          "start": "One sequence must be copied while information is retained.",
+          "stop": "Trace complementary antiparallel templates and daughters accurately, label original/new strands and qualify replication errors.",
+          "next": [
+            "bio-m5-b05a"
+          ],
+          "syllabusActions": [
+            "B-DNA-replication",
+            "B-continuity"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b05a",
+          "playlistOrder": 7,
+          "planAnchor": "B5 mitosis distinct video",
+          "title": "Mitosis: retaining a chromosome set",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L7",
+              "path": "src/data/biology-y12-m5-l7-mitosis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b04"
+          ],
+          "entryKnowledge": "Chromosome/chromatid, homologous pair and ploidy.",
+          "start": "A cell copies chromosomes before division.",
+          "stop": "Model what separates during mitosis and assess genetic continuity without treating every cycle as error-free.",
+          "next": [
+            "bio-m5-b05b"
+          ],
+          "syllabusActions": [
+            "B-mitosis",
+            "B-continuity"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b05b",
+          "playlistOrder": 8,
+          "planAnchor": "B5 meiosis distinct video",
+          "title": "Meiosis: reduction and new allele combinations",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L8",
+              "path": "src/data/biology-y12-m5-l8-meiosis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b05a"
+          ],
+          "entryKnowledge": "Replication, homologues, chromatids and ploidy.",
+          "start": "Contrast retaining a set with reducing it before animal fertilisation.",
+          "stop": "Model what separates in each division, explain crossing over/assortment and chromosome continuity, and avoid guaranteed gamete uniqueness.",
+          "next": [
+            "bio-m5-b06a",
+            "bio-m5-b08"
+          ],
+          "syllabusActions": [
+            "B-meiosis",
+            "B-continuity",
+            "B-new-genotypes"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b06a",
+          "playlistOrder": 9,
+          "planAnchor": "B6 DNA organisation distinct video",
+          "title": "DNA in prokaryotes and eukaryotes",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L9",
+              "path": "src/data/biology-y12-m5-l9-dna-prokaryotes-eukaryotes.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b04",
+            "bio-m5-b05b"
+          ],
+          "entryKnowledge": "DNA structure and cellular organisation.",
+          "start": "Compare representative DNA locations and forms.",
+          "stop": "Construct/compare DNA representations with chromosomes, plasmids and model limits accurately scoped.",
+          "next": [
+            "bio-m5-b06b"
+          ],
+          "syllabusActions": [
+            "B-DNA-forms"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b06b",
+          "playlistOrder": 10,
+          "planAnchor": "B6 transcription distinct video",
+          "title": "Transcription: from DNA to mRNA",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L10",
+              "path": "src/data/biology-y12-m5-l10-transcription-dna-to-mrna.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b06a"
+          ],
+          "entryKnowledge": "Complementarity and 5-prime/3-prime orientation.",
+          "start": "Follow a named DNA template into RNA.",
+          "stop": "Model transcription and distinguish template/coding strands, mRNA sequence and direction accurately.",
+          "next": [
+            "bio-m5-b06c",
+            "bio-m5-g01"
+          ],
+          "syllabusActions": [
+            "B-transcription",
+            "B-mRNA-tRNA"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b06c",
+          "playlistOrder": 11,
+          "planAnchor": "B6 translation distinct video",
+          "title": "Translation: from mRNA to a polypeptide",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L11",
+              "path": "src/data/biology-y12-m5-l11-translation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b06b"
+          ],
+          "entryKnowledge": "mRNA, sequence direction and supplied codon conventions.",
+          "start": "A ribosome reads the supplied mRNA sequence.",
+          "stop": "Model codon/anticodon relationships and chain assembly, assess mRNA/tRNA roles and distinguish a polypeptide from a functional protein.",
+          "next": [
+            "bio-m5-b07",
+            "bio-m5-g01",
+            "bio-m5-p01"
+          ],
+          "syllabusActions": [
+            "B-translation",
+            "B-mRNA-tRNA",
+            "B-synthesis-importance"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-p01",
+          "playlistOrder": 12,
+          "planAnchor": "Construct/assess model support",
+          "title": "Build and assess replication and synthesis models",
+          "type": "practical-support",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L6",
+              "path": "src/data/biology-y12-m5-l6-dna-structure-replication.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L7",
+              "path": "src/data/biology-y12-m5-l7-mitosis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L8",
+              "path": "src/data/biology-y12-m5-l8-meiosis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L9",
+              "path": "src/data/biology-y12-m5-l9-dna-prokaryotes-eukaryotes.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L10",
+              "path": "src/data/biology-y12-m5-l10-transcription-dna-to-mrna.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L11",
+              "path": "src/data/biology-y12-m5-l11-translation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b06c"
+          ],
+          "entryKnowledge": "Matching DNA/division/synthesis cores.",
+          "start": "Learners construct and use a representation rather than only watch one.",
+          "stop": "Support construction, comparison and critique of DNA forms, replication/division and synthesis models; collect learner explanations/limitations as separate evidence.",
+          "next": [
+            "bio-m5-b07"
+          ],
+          "syllabusActions": [
+            "B-DNA-replication",
+            "B-mitosis",
+            "B-meiosis",
+            "B-continuity",
+            "B-DNA-forms",
+            "B-transcription",
+            "B-translation",
+            "B-mRNA-tRNA"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "bio-m5-g01",
+          "playlistOrder": 13,
+          "planAnchor": "Existing heredity trace transfer companion",
+          "title": "Trace an unfamiliar sequence or chromosome pathway",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L6",
+              "path": "src/data/biology-y12-m5-l6-dna-structure-replication.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L8",
+              "path": "src/data/biology-y12-m5-l8-meiosis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L10",
+              "path": "src/data/biology-y12-m5-l10-transcription-dna-to-mrna.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L11",
+              "path": "src/data/biology-y12-m5-l11-translation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b05b",
+            "bio-m5-b06c"
+          ],
+          "entryKnowledge": "Matching mechanism cores and orientation/ploidy vocabulary.",
+          "start": "An unfamiliar oriented sequence or chromosome/allele trace.",
+          "stop": "Reason through direction and chromosome/allele accounting and explain model limits after a protected attempt.",
+          "next": [
+            "bio-m5-b07",
+            "bio-m5-b08"
+          ],
+          "syllabusActions": [
+            "B-DNA-replication",
+            "B-meiosis",
+            "B-transcription",
+            "B-translation",
+            "B-new-genotypes"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "bio-m5-b07",
+          "playlistOrder": 14,
+          "planAnchor": "Later L12",
+          "title": "Proteins, phenotype and gene-environment interaction",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L12",
+              "path": "src/data/biology-y12-m5-l12-proteins-phenotype.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b06c"
+          ],
+          "entryKnowledge": "Polypeptide synthesis and cell/organism function.",
+          "start": "A sequence is expressed in a particular environment.",
+          "stop": "Investigate protein structure/function, analyse synthesis importance and assess genes/environment effects on phenotype without universal one-gene determinism.",
+          "next": [
+            "bio-m5-b08"
+          ],
+          "syllabusActions": [
+            "B-synthesis-importance",
+            "B-phenotype",
+            "B-proteins"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b08",
+          "playlistOrder": 15,
+          "planAnchor": "Later L13",
+          "title": "Sources of genetic variation",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L13",
+              "path": "src/data/biology-y12-m5-l13-sources-genetic-variation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b05b",
+            "bio-m5-b07"
+          ],
+          "entryKnowledge": "Meiosis, fertilisation, genes and environment.",
+          "start": "Follow origins of an offspring allele combination.",
+          "stop": "Model variation from crossing over, assortment, fertilisation and mutation under stated assumptions; distinguish genetic/environmental variation.",
+          "next": [
+            "bio-m5-p02",
+            "bio-m5-b09"
+          ],
+          "syllabusActions": [
+            "B-new-genotypes",
+            "B-genotype-practical"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-p02",
+          "playlistOrder": 16,
+          "planAnchor": "Required practical modelling support",
+          "title": "Model meiosis, fertilisation and mutation in offspring",
+          "type": "practical-support",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L8",
+              "path": "src/data/biology-y12-m5-l8-meiosis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L13",
+              "path": "src/data/biology-y12-m5-l13-sources-genetic-variation.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L14",
+              "path": "src/data/biology-y12-m5-l14-mendelian-patterns.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L15",
+              "path": "src/data/biology-y12-m5-l15-non-mendelian-patterns.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b08"
+          ],
+          "entryKnowledge": "Homologues, alleles, genotype and stated inheritance assumptions.",
+          "start": "A learner physically or interactively models the required processes.",
+          "stop": "Prepare practical modelling of offspring genotype variation through crossing over, fertilisation and mutation; retain actual conduct/results separately.",
+          "next": [
+            "bio-m5-b09"
+          ],
+          "syllabusActions": [
+            "B-genotype-practical",
+            "B-new-genotypes"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "bio-m5-b09",
+          "playlistOrder": 17,
+          "planAnchor": "Later L14",
+          "title": "Mendelian inheritance, Punnett squares and pedigrees",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L14",
+              "path": "src/data/biology-y12-m5-l14-mendelian-patterns.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b08"
+          ],
+          "entryKnowledge": "Alleles, meiosis, genotype/phenotype and probability.",
+          "start": "Infer possible genotypes from a stated simple inheritance model.",
+          "stop": "Construct/interpret autosomal Punnett/pedigree information with explicit assumptions and per-child probability, not guaranteed counts.",
+          "next": [
+            "bio-m5-b10"
+          ],
+          "syllabusActions": [
+            "B-autosomal",
+            "B-Punnett",
+            "B-pedigrees"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b10",
+          "playlistOrder": 18,
+          "planAnchor": "Later L15",
+          "title": "Sex linkage and non-Mendelian inheritance",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L15",
+              "path": "src/data/biology-y12-m5-l15-non-mendelian-patterns.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b09"
+          ],
+          "entryKnowledge": "Basic genotype reasoning and probability.",
+          "start": "A pattern needs a model beyond complete-dominance autosomal inheritance.",
+          "stop": "Interpret sex linkage, co-dominance, incomplete dominance and multiple alleles using appropriate Punnett/pedigree reasoning.",
+          "next": [
+            "bio-m5-g02",
+            "bio-m5-b11"
+          ],
+          "syllabusActions": [
+            "B-sex-linkage",
+            "B-codominance",
+            "B-incomplete-dominance",
+            "B-multiple-alleles",
+            "B-Punnett",
+            "B-pedigrees"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-g02",
+          "playlistOrder": 19,
+          "planAnchor": "Existing heredity probability transfer companion",
+          "title": "Inheritance probability: unfamiliar crosses and pedigrees",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L14",
+              "path": "src/data/biology-y12-m5-l14-mendelian-patterns.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            },
+            {
+              "id": "Biology-Y12-M5-L15",
+              "path": "src/data/biology-y12-m5-l15-non-mendelian-patterns.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b10"
+          ],
+          "entryKnowledge": "Inheritance models, meiosis and per-child probability.",
+          "start": "An unfamiliar cross or pedigree requires choosing/testing assumptions.",
+          "stop": "Infer a possible genotype/probability, identify alternatives or insufficient evidence and justify the conclusion after a protected attempt.",
+          "next": [
+            "bio-m5-b11"
+          ],
+          "syllabusActions": [
+            "B-autosomal",
+            "B-sex-linkage",
+            "B-codominance",
+            "B-incomplete-dominance",
+            "B-multiple-alleles",
+            "B-Punnett",
+            "B-pedigrees"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "bio-m5-b11",
+          "playlistOrder": 20,
+          "planAnchor": "Later L16 direct legacy mapping",
+          "title": "Population frequencies and SNP evidence",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L16",
+              "path": "src/data/biology-y12-m5-l16-frequency-data-snp-analysis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b10"
+          ],
+          "entryKnowledge": "Alleles, phenotype/genotype and proportions.",
+          "start": "A sourced sample reports characteristics or variants.",
+          "stop": "Present/analyse frequency/SNP evidence, distinguish denominators and sampling limits, and identify justified trends without inferring causation from association.",
+          "next": [
+            "bio-m5-p03",
+            "bio-m5-b12"
+          ],
+          "syllabusActions": [
+            "B-frequency-collection",
+            "B-frequency-analysis"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-p03",
+          "playlistOrder": 21,
+          "planAnchor": "Required population collection route",
+          "title": "Collect and present population-frequency data",
+          "type": "practical-support",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L16",
+              "path": "src/data/biology-y12-m5-l16-frequency-data-snp-analysis.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b11"
+          ],
+          "entryKnowledge": "Sampling, denominators and appropriate data/privacy practices.",
+          "start": "Select a teacher-approved dataset or characteristics collection protocol.",
+          "stop": "Prepare actual collection/recording/presentation and analyse trends, relationships and limitations; supplied data alone does not evidence learner collection.",
+          "next": [
+            "bio-m5-b12"
+          ],
+          "syllabusActions": [
+            "B-frequency-collection",
+            "B-frequency-analysis"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; practice or required-action support, not a universal prerequisite for later cores."
+        },
+        {
+          "id": "bio-m5-b12",
+          "playlistOrder": 22,
+          "planAnchor": "Later L17 direct legacy mapping",
+          "title": "DNA sequencing and profiling for inheritance studies",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L17",
+              "path": "src/data/biology-y12-m5-l17-dna-sequencing-profiling.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b11"
+          ],
+          "entryKnowledge": "DNA sequence, variants and inheritance reasoning.",
+          "start": "A specified research question needs sequencing or profiling evidence.",
+          "stop": "Investigate how technologies determine population inheritance patterns using sourced data, distinguishing purposes and limits.",
+          "next": [
+            "bio-m5-b13"
+          ],
+          "syllabusActions": [
+            "B-technologies"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-b13",
+          "playlistOrder": 23,
+          "planAnchor": "Later L18 direct legacy mapping",
+          "title": "What collaborative population-genetics data can show",
+          "type": "core",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L18",
+              "path": "src/data/biology-y12-m5-l18-large-scale-population-genetics.json",
+              "scope": "Review and adapt the matching teaching portion; source presence does not establish scene coverage."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b12"
+          ],
+          "entryKnowledge": "Population frequencies, sequencing/profiling and data limits.",
+          "start": "A named large-scale collaborative project supplies analysable data.",
+          "stop": "Investigate trends, patterns and relationships in directly sourced project data and evaluate inference and uncertainty. Examples guide selection, not a three-case quota.",
+          "next": [
+            "bio-m5-g03",
+            "bio-m6-genetic-change-route"
+          ],
+          "syllabusActions": [
+            "B-collaborative-data"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Core learner route"
+        },
+        {
+          "id": "bio-m5-g03",
+          "playlistOrder": 24,
+          "planAnchor": "Later L19 scoped legacy disease-data companion",
+          "title": "Genetic risk: population patterns and individual limits",
+          "type": "companion",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M5-L19",
+              "path": "src/data/biology-y12-m5-l19-predicting-population-genetic-patterns.json",
+              "scope": "Retain legacy population disease-data analysis. New-course personalised management/diagnostic scope is not automatically required in legacy M5."
+            }
+          ],
+          "prerequisites": [
+            "bio-m5-b13"
+          ],
+          "entryKnowledge": "Population association, probability, genes and environment.",
+          "start": "A sourced population disease-risk study supports a limited prediction.",
+          "stop": "Analyse what the collaborative study supports about inheritance and group risk; keep outcomes probabilistic. Detailed new-course diagnostic/management claims require separate review.",
+          "next": [
+            "bio-m6-genetic-change-route"
+          ],
+          "syllabusActions": [
+            "B-collaborative-data"
+          ],
+          "status": "source-present-unreviewed",
+          "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
+          "placement": "Branch after listed prerequisites; practice or required-action support, not a universal prerequisite for later cores."
+        }
+      ],
+      "sourceDisposition": [
+        {
+          "sourceId": "Biology-Y12-M5-L1",
+          "sourcePath": "src/data/biology-y12-m5-l1-reproduction-continuity.json",
+          "entryIds": [
+            "bio-m5-b01"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L2",
+          "sourcePath": "src/data/biology-y12-m5-l2-reproduction-in-animals.json",
+          "entryIds": [
+            "bio-m5-b02a"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L3",
+          "sourcePath": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
+          "entryIds": [
+            "bio-m5-b02b"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L4",
+          "sourcePath": "src/data/biology-y12-m5-l4-mammalian-reproduction.json",
+          "entryIds": [
+            "bio-m5-b03a"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L5",
+          "sourcePath": "src/data/biology-y12-m5-l5-manipulating-reproduction-agriculture.json",
+          "entryIds": [
+            "bio-m5-b03b"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L6",
+          "sourcePath": "src/data/biology-y12-m5-l6-dna-structure-replication.json",
+          "entryIds": [
+            "bio-m5-b04",
+            "bio-m5-p01",
+            "bio-m5-g01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L7",
+          "sourcePath": "src/data/biology-y12-m5-l7-mitosis.json",
+          "entryIds": [
+            "bio-m5-b05a",
+            "bio-m5-p01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L8",
+          "sourcePath": "src/data/biology-y12-m5-l8-meiosis.json",
+          "entryIds": [
+            "bio-m5-b05b",
+            "bio-m5-p01",
+            "bio-m5-g01",
+            "bio-m5-p02"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L9",
+          "sourcePath": "src/data/biology-y12-m5-l9-dna-prokaryotes-eukaryotes.json",
+          "entryIds": [
+            "bio-m5-b06a",
+            "bio-m5-p01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L10",
+          "sourcePath": "src/data/biology-y12-m5-l10-transcription-dna-to-mrna.json",
+          "entryIds": [
+            "bio-m5-b06b",
+            "bio-m5-p01",
+            "bio-m5-g01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L11",
+          "sourcePath": "src/data/biology-y12-m5-l11-translation.json",
+          "entryIds": [
+            "bio-m5-b06c",
+            "bio-m5-p01",
+            "bio-m5-g01"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L12",
+          "sourcePath": "src/data/biology-y12-m5-l12-proteins-phenotype.json",
+          "entryIds": [
+            "bio-m5-b07"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L13",
+          "sourcePath": "src/data/biology-y12-m5-l13-sources-genetic-variation.json",
+          "entryIds": [
+            "bio-m5-b08",
+            "bio-m5-p02"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L14",
+          "sourcePath": "src/data/biology-y12-m5-l14-mendelian-patterns.json",
+          "entryIds": [
+            "bio-m5-p02",
+            "bio-m5-b09",
+            "bio-m5-g02"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L15",
+          "sourcePath": "src/data/biology-y12-m5-l15-non-mendelian-patterns.json",
+          "entryIds": [
+            "bio-m5-p02",
+            "bio-m5-b10",
+            "bio-m5-g02"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L16",
+          "sourcePath": "src/data/biology-y12-m5-l16-frequency-data-snp-analysis.json",
+          "entryIds": [
+            "bio-m5-b11",
+            "bio-m5-p03"
+          ],
+          "decision": "Split core, companion and/or practical support across the named entries; adapt each portion rather than render the full source repeatedly.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L17",
+          "sourcePath": "src/data/biology-y12-m5-l17-dna-sequencing-profiling.json",
+          "entryIds": [
+            "bio-m5-b12"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L18",
+          "sourcePath": "src/data/biology-y12-m5-l18-large-scale-population-genetics.json",
+          "entryIds": [
+            "bio-m5-b13"
+          ],
+          "decision": "Retain one scoped teaching entry; independently review existing usable scenes before authoring.",
+          "inventoryState": "source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M5-L19",
+          "sourcePath": "src/data/biology-y12-m5-l19-predicting-population-genetic-patterns.json",
+          "entryIds": [
+            "bio-m5-g03"
+          ],
+          "decision": "Retain legacy disease-population analysis in a companion; defer unmatched new-course diagnostic/management scope.",
+          "inventoryState": "source-present-unreviewed"
+        }
+      ],
+      "deferredScope": [
+        {
+          "sourceId": "Biology-Y12-M5-L19",
+          "scope": "Personalised diagnosis/management and SNP-test/database assessment beyond legacy population-study analysis",
+          "destination": "Later version-specific planning after exact new-course mapping.",
+          "reason": "The mixed-version source does not make every new-course claim a legacy M5 requirement."
+        }
+      ],
+      "checkedRequiredParagraphIds": [
+        "p1025",
+        "p1026",
+        "p1027",
+        "p1028",
+        "p1029",
+        "p1030",
+        "p1031",
+        "p1032",
+        "p1037",
+        "p1038",
+        "p1039",
+        "p1040",
+        "p1045",
+        "p1046",
+        "p1047",
+        "p1048",
+        "p1049",
+        "p1050",
+        "p1051",
+        "p1056",
+        "p1057",
+        "p1058",
+        "p1059",
+        "p1060",
+        "p1068",
+        "p1070"
+      ],
+      "requiredParagraphsWithoutAnyCandidateEntry": [],
+      "paragraphCoverageStatus": "Candidate route assignments only; exact required action decomposition and approved scene/evidence mapping remain pending."
+    }
+  },
+  "syllabusActions": [
+    {
+      "id": "C-reversibility",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1052",
+        "p1053",
+        "p1054",
+        "p1055",
+        "p1056"
+      ],
+      "paraphrase": "Conduct and analyse practical reaction reversibility; named reactions are examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c02",
+        "chem-m5-p01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-models",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1057"
+      ],
+      "paraphrase": "Model and compare static and dynamic equilibrium.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c01",
+        "chem-m5-p01",
+        "chem-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-systems",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1057"
+      ],
+      "paraphrase": "Analyse open and closed system differences.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c01",
+        "chem-m5-p01",
+        "chem-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-non-equilibrium",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1059",
+        "p1060",
+        "p1061"
+      ],
+      "paraphrase": "Analyse non-equilibrium examples using entropy and enthalpy.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-g01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-collision-investigate",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1062"
+      ],
+      "paraphrase": "Investigate collision theory and rate relationships to analyse equilibrium reactions.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c02",
+        "chem-m5-p01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-disturbances",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1067",
+        "p1068",
+        "p1069",
+        "p1070"
+      ],
+      "paraphrase": "Investigate temperature, concentration and volume/pressure disturbances and predict responses using Le Chatelier reasoning.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c03",
+        "chem-m5-c04",
+        "chem-m5-p01",
+        "chem-m5-c07",
+        "chem-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-collision-observations",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1071"
+      ],
+      "paraphrase": "Explain equilibrium observations using collision theory.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c03",
+        "chem-m5-c04",
+        "chem-m5-c07",
+        "chem-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-activation",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1072"
+      ],
+      "paraphrase": "Examine activation energy in equilibrium behaviour; distinguish kinetic effects from equilibrium position.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c02",
+        "chem-m5-c04"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-heat",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1072"
+      ],
+      "paraphrase": "Examine how reaction enthalpy affects the equilibrium response.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c03",
+        "chem-m5-c07"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-expression",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1077"
+      ],
+      "paraphrase": "Deduce concentration equilibrium expressions for homogeneous reactions in solution.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c05"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-calculate-K",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1078"
+      ],
+      "paraphrase": "Calculate equilibrium constants from equilibrium quantities.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c06",
+        "chem-m5-g03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-calculate-concentration",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1078"
+      ],
+      "paraphrase": "Calculate concentrations in an equilibrium system.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c06",
+        "chem-m5-g03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-predict-direction",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1078"
+      ],
+      "paraphrase": "Use equilibrium quantities and constants to predict reaction direction.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c08",
+        "chem-m5-g03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-temperature-K",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1079"
+      ],
+      "paraphrase": "Qualitatively analyse temperature effects on an equilibrium constant.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c03",
+        "chem-m5-c09"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-measured-K",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1080",
+        "p1081"
+      ],
+      "paraphrase": "Conduct an investigation determining an equilibrium constant from measurements.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-p02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-ionic-dissociation",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1082",
+        "p1083"
+      ],
+      "paraphrase": "Explore equilibrium constants for ionic dissociation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c10"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-acid-dissociation",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1082",
+        "p1084"
+      ],
+      "paraphrase": "Explore equilibrium constants for acid dissociation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c10"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-base-dissociation",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1082",
+        "p1084"
+      ],
+      "paraphrase": "Explore equilibrium constants for base dissociation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c10"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-dissolution",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1090"
+      ],
+      "paraphrase": "Describe and analyse ionic-compound dissolution in water.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c11"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-cultural-solubility",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1091",
+        "p1092"
+      ],
+      "paraphrase": "Investigate Aboriginal and Torres Strait Islander use of solubility equilibria to remove food toxicity, using a directly sourced context.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c12"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-solubility-rules",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1093",
+        "p1094",
+        "p1095",
+        "p1096"
+      ],
+      "paraphrase": "Conduct an investigation determining solubility rules.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c13",
+        "chem-m5-p03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-mixed-solution-composition",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1093"
+      ],
+      "paraphrase": "Predict and analyse species composition when ionic solutions are mixed.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c13",
+        "chem-m5-p03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-derive-Ksp",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1097"
+      ],
+      "paraphrase": "Derive equilibrium expressions for saturated ionic solutions using Ksp.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c14"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-calculate-solubility",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1097"
+      ],
+      "paraphrase": "Calculate ionic-substance solubility from Ksp.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c14"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "C-precipitation",
+      "subject": "Chemistry",
+      "paragraphIds": [
+        "p1098"
+      ],
+      "paraphrase": "Predict precipitation using standard reference Ksp values.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m5-c15"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-reproduction",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1025"
+      ],
+      "paraphrase": "Explain sexual and asexual mechanisms supporting continuity across varied organisms.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-animals",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1025",
+        "p1026"
+      ],
+      "paraphrase": "Analyse animal reproduction and advantages of external/internal fertilisation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b02a"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-plants",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1025",
+        "p1027"
+      ],
+      "paraphrase": "Analyse sexual and asexual plant reproduction.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b02b"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-fungi",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1025",
+        "p1028"
+      ],
+      "paraphrase": "Analyse fungal budding and spore reproduction.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b02b"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-bacteria",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1025",
+        "p1029"
+      ],
+      "paraphrase": "Analyse bacterial binary fission.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b02b"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-protists",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1025",
+        "p1030"
+      ],
+      "paraphrase": "Analyse protist binary fission and budding.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b02b"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-mammals",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1031"
+      ],
+      "paraphrase": "Analyse mammalian fertilisation, implantation and hormonal control of pregnancy and birth.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b03a"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-agriculture",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1032"
+      ],
+      "paraphrase": "Evaluate scientific knowledge used to manipulate plant and animal reproduction in agriculture.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b03b"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-mitosis",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1037",
+        "p1038"
+      ],
+      "paraphrase": "Model mitosis as a cell-replication process.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b05a",
+        "bio-m5-p01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-meiosis",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1037",
+        "p1038"
+      ],
+      "paraphrase": "Model meiosis as a cell-replication process.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b05b",
+        "bio-m5-p01",
+        "bio-m5-g01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-DNA-replication",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1037",
+        "p1039"
+      ],
+      "paraphrase": "Model DNA replication, nucleotide composition, pairing and bonding using the Watson and Crick representation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b04",
+        "bio-m5-p01",
+        "bio-m5-g01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-continuity",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1040"
+      ],
+      "paraphrase": "Assess cell-replication effects on species continuity.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b04",
+        "bio-m5-b05a",
+        "bio-m5-b05b",
+        "bio-m5-p01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-DNA-forms",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1045"
+      ],
+      "paraphrase": "Construct and compare representations of DNA forms in prokaryotes and eukaryotes.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b06a",
+        "bio-m5-p01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-transcription",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1046",
+        "p1047"
+      ],
+      "paraphrase": "Model transcription within polypeptide synthesis.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b06b",
+        "bio-m5-p01",
+        "bio-m5-g01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-translation",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1046",
+        "p1047"
+      ],
+      "paraphrase": "Model translation within polypeptide synthesis.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b06c",
+        "bio-m5-p01",
+        "bio-m5-g01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-mRNA-tRNA",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1048"
+      ],
+      "paraphrase": "Assess mRNA and tRNA importance in transcription and translation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b06b",
+        "bio-m5-b06c",
+        "bio-m5-p01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-synthesis-importance",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1049"
+      ],
+      "paraphrase": "Analyse polypeptide synthesis function and importance.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b06c",
+        "bio-m5-b07"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-phenotype",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1050"
+      ],
+      "paraphrase": "Assess gene and environment effects on phenotypic expression.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b07"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-proteins",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1051"
+      ],
+      "paraphrase": "Investigate protein structure and function in living things.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b07"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-genotype-practical",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1056"
+      ],
+      "paraphrase": "Conduct genotype-variation practical modelling including meiosis, homologous crossing over, fertilisation and mutation.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b08",
+        "bio-m5-p02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-new-genotypes",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1057"
+      ],
+      "paraphrase": "Model formation of new genotype combinations during meiosis.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b05b",
+        "bio-m5-g01",
+        "bio-m5-b08",
+        "bio-m5-p02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-autosomal",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1058"
+      ],
+      "paraphrase": "Interpret autosomal inheritance examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b09",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-sex-linkage",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1058"
+      ],
+      "paraphrase": "Interpret sex-linkage examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b10",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-codominance",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1058"
+      ],
+      "paraphrase": "Interpret co-dominance examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b10",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-incomplete-dominance",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1058"
+      ],
+      "paraphrase": "Interpret incomplete-dominance examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b10",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-multiple-alleles",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1058"
+      ],
+      "paraphrase": "Interpret multiple-allele examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b10",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-Punnett",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1059"
+      ],
+      "paraphrase": "Construct and interpret Punnett-square information and data.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b09",
+        "bio-m5-b10",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-pedigrees",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1059"
+      ],
+      "paraphrase": "Construct and interpret pedigree information and data.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b09",
+        "bio-m5-b10",
+        "bio-m5-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-frequency-collection",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1060"
+      ],
+      "paraphrase": "Collect, record and present population characteristic-frequency data.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b11",
+        "bio-m5-p03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-frequency-analysis",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1060",
+        "p1061",
+        "p1062"
+      ],
+      "paraphrase": "Identify trends, patterns, relationships and limitations in population-frequency data, with SNP analysis as a possible example.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b11",
+        "bio-m5-p03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-technologies",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1068",
+        "p1069"
+      ],
+      "paraphrase": "Investigate technologies for population inheritance studies, with sequencing/profiling as examples.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b12"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    },
+    {
+      "id": "B-collaborative-data",
+      "subject": "Biology",
+      "paragraphIds": [
+        "p1070",
+        "p1071",
+        "p1072",
+        "p1073"
+      ],
+      "paraphrase": "Investigate trends, patterns and relationships through data analysis from a large-scale collaborative population-genetics project.",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m5-b13",
+        "bio-m5-g03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Exact reviewed scenes, learner task/response and action-specific evidence. Conduct, learner model construction and collection require separate evidence where specified."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G01",
+      "subject": "Chemistry",
+      "actions": [
+        "C-reversibility",
+        "C-collision-investigate",
+        "C-disturbances",
+        "C-measured-K",
+        "C-solubility-rules"
+      ],
+      "status": "actual-conduct-not-evidenced",
+      "gap": "Apparatus, valid controls, observations, calibration, measured concentrations, uncertainty and actual learner conduct/results remain unverified. Practical-support uploads require teacher-approved methods and separate conduct records."
+    },
+    {
+      "id": "G02",
+      "subject": "Chemistry",
+      "actions": [
+        "C-cultural-solubility"
+      ],
+      "status": "direct-sourcing-and-cultural-review-pending",
+      "gap": "Existing cultural/cycad artwork does not establish direct respectful sourcing, applicable protocols or accurate detoxification chemistry. Resolve those before selecting this context for narration."
+    },
+    {
+      "id": "G03",
+      "subject": "Biology",
+      "actions": [
+        "B-mitosis",
+        "B-meiosis",
+        "B-DNA-replication",
+        "B-DNA-forms",
+        "B-transcription",
+        "B-translation",
+        "B-mRNA-tRNA",
+        "B-continuity"
+      ],
+      "status": "learner-model-and-assessment-evidence-pending",
+      "gap": "Animations do not establish that learners constructed/modelled/compared or assessed the required representations. Add response tasks, model critique and learner evidence."
+    },
+    {
+      "id": "G04",
+      "subject": "Biology",
+      "actions": [
+        "B-genotype-practical",
+        "B-new-genotypes"
+      ],
+      "status": "actual-practical-conduct-not-evidenced",
+      "gap": "Required practical modelling of meiosis, crossing over, fertilisation and mutation needs learner activity and genotype predictions/results. Diagrams alone do not pass conduct."
+    },
+    {
+      "id": "G05",
+      "subject": "Biology",
+      "actions": [
+        "B-frequency-collection",
+        "B-frequency-analysis",
+        "B-technologies",
+        "B-collaborative-data"
+      ],
+      "status": "collection-and-data-provenance-pending",
+      "gap": "Learner collection/recording/presentation, sourced sequencing/profiling datasets and analysable large-scale collaborative project data remain to select and review. Supplied plots do not pass collection, and a story does not pass project data analysis."
+    },
+    {
+      "id": "G06",
+      "subject": "Both",
+      "actions": [],
+      "status": "unmapped-to-exact-reviewed-scenes",
+      "gap": "All 57 grouped actions have candidate entries, but zero have approved full required-action coverage in this route. Exact scenes, source hashes, learner responses and independent review remain to attach. Grouped planning rows are not the exhaustive approved scene/action checklist."
+    },
+    {
+      "id": "G07",
+      "subject": "Both",
+      "actions": [],
+      "status": "course-wide-working-scientifically-open",
+      "gap": "Module Working Scientifically outcomes and course-wide practical hours/depth study require their own programme/evidence. Upload counts cannot establish these requirements."
+    },
+    {
+      "id": "G08",
+      "subject": "Both",
+      "actions": [],
+      "status": "recording-preview-listening-release-pending",
+      "gap": "Opening drafts have source review only, with layout findings pending at this planning snapshot. Remaining candidates need exact teaching briefs, independent science review, recording-stage checks, measured alignment, exact voiced preview, human listening and release gates."
+    },
+    {
+      "id": "G09",
+      "subject": "Both",
+      "actions": [],
+      "status": "prerequisite-support-review-pending",
+      "gap": "Inspect existing Year 11 rates/enthalpy, mole/concentration and Biology DNA/division support before making duplicates. Playlist order is not a universal prerequisite chain. The DNA shortcut does not establish reproduction coverage."
+    }
+  ],
+  "externalHandoffs": [
+    {
+      "id": "chem-m6-acid-base-route",
+      "description": "Existing later acid/base route; exact next selected video pending."
+    },
+    {
+      "id": "bio-m6-genetic-change-route",
+      "description": "Existing later Genetic Change route; exact next selected video pending."
+    }
+  ],
+  "verification": {
+    "method": "Local counts/references checked against the canonical 9 October ledger and cached 8 October official extracts.",
+    "sourceCounts": {
+      "Chemistry": 18,
+      "Biology": 19
+    },
+    "entryCount": 46,
+    "actionGroupCount": 57,
+    "allModule5SourceCandidatesAssigned": true,
+    "allActionGroupsHaveCandidateEntries": true,
+    "checkedRequiredParagraphIdsHaveCandidateAssignments": true,
+    "uniqueEntryIds": true,
+    "entryLinksResolve": true,
+    "localSourceAndDraftPathsExist": true,
+    "paragraphReferencesExist": true,
+    "noEmDash": true,
+    "limitation": "Structural validation only. This is not approved science, full action coverage, learner conduct, playback or listening evidence.",
+    "defaultNextHandoffsMoveForward": true,
+    "optionalLimitingSupportNavigationSeparated": true
+  }
+}

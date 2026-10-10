@@ -1,0 +1,388 @@
+{
+  "title": "Reproduction: Continuity and Variation",
+  "subtitle": "How inherited information connects generations",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusDotPoints": [
+    "explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does reproduction ensure the continuity of a species?",
+  "lessonIntent": "Explain how reproduction supports continuity across generations and compare sexual and asexual reproduction under stated conditions.",
+  "examSkill": "Classify a reproductive event using gamete fusion, then justify a conditional variation claim without guaranteeing survival.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Reproduction: Continuity and Variation"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "When could copying one plant become a shared risk?",
+      "body": "A grower copies one productive crop plant. A new disease arrives.",
+      "callout": "One useful inherited combination, across a whole crop.",
+      "comparison": [
+        {
+          "label": "Clone 1",
+          "amount": "Same parent",
+          "mass": "Risk?"
+        },
+        {
+          "label": "Clone 2",
+          "amount": "Same parent",
+          "mass": "Risk?"
+        }
+      ],
+      "comparisonIsPrompt": true,
+      "durationInFrames": 900,
+      "caption": "Why can a useful cloning strategy become a shared risk?",
+      "voiceover": {
+        "text": "Imagine a grower has a crop plant that produces exactly the fruit they want. Making new plants from it keeps that useful inherited combination. Now a new disease arrives. How could copying a productive plant become a shared risk? The answer begins with what reproduction passes from one generation to the next."
+      }
+    },
+    {
+      "id": "concept-continuity",
+      "type": "concept",
+      "heading": "Individuals die. Generations can continue.",
+      "body": "Reproduction makes offspring and passes on hereditary information in DNA.",
+      "bullets": [
+        {
+          "text": "Lineage: connected ancestors and descendants.",
+          "at": 2
+        },
+        {
+          "text": "Enough descendants must survive and reproduce.",
+          "at": 30
+        }
+      ],
+      "secondary": "Viable: able to live and develop. Fertile: able to reproduce.",
+      "callout": "Successful reproduction across generations.",
+      "durationInFrames": 1560,
+      "caption": "Inherited DNA connects generations; population continuity also needs reproductive success.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Lineage",
+        "props": {
+          "delay": 62,
+          "at": {
+            "parade": 430,
+            "ribbon": 400,
+            "offspring": 340,
+            "transfer": 350,
+            "viable": 1000000,
+            "rule": 0
+          },
+          "labelPresentation": "module5"
+        }
+      },
+      "voiceover": {
+        "text": "An individual has a limited lifetime, yet its descendants may continue for many generations. That connected sequence is a lineage. Reproduction makes the link by producing offspring and passing on hereditary information in DNA. In this schematic, each generation receives information from the previous one. The lifetimes are compressed; real parents can live alongside their offspring. Viable means able to live and develop; being fertile is a separate requirement. For a population to continue, enough descendants must survive and reproduce in turn."
+      },
+      "conceptVisualLayout": "diagramFocus"
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The useful distinction: do gametes fuse?",
+      "bullets": [
+        {
+          "text": "Asexual reproduction: offspring form without fusion of gametes, typically from one parent."
+        },
+        {
+          "text": "Sexual reproduction: gametes fuse during fertilisation to form a zygote."
+        },
+        {
+          "text": "An allele is a version of a gene. Genetic variation includes differences in inherited alleles."
+        }
+      ],
+      "callout": "Gamete fusion distinguishes the methods. Parent count alone can mislead.",
+      "durationInFrames": 1320,
+      "caption": "Asexual: no gamete fusion. Sexual: gamete fusion during fertilisation.",
+      "voiceover": {
+        "text": "Both methods pass on hereditary information, but they do it differently. Asexual reproduction produces offspring without gametes fusing, typically from one parent. Sexual reproduction involves gametes, reproductive cells, fusing during fertilisation. The cell formed is a zygote. There are usually two parents, but some organisms can self-fertilise using their own gametes. That is still sexual reproduction because gametes fuse. We will also use the word allele. An allele is a version of a gene; differences in inherited alleles are one form of genetic variation."
+      }
+    },
+    {
+      "id": "concept-asexual",
+      "type": "concept",
+      "heading": "Asexual: retaining a useful combination",
+      "body": "Clonal offspring usually have very similar genetic information to their parent.",
+      "bullets": [
+        {
+          "text": "No mate is required. A successful combination can be propagated."
+        },
+        {
+          "text": "Population growth can be rapid when resources and the organism permit it."
+        },
+        {
+          "text": "Mutation can introduce genetic differences; conditions can affect appearance and growth."
+        }
+      ],
+      "callout": "Low inherited variation does not mean identical lives.",
+      "durationInFrames": 1500,
+      "caption": "Cloning usually retains the parent combination, with mutation and environmental limits.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "What is passed on?",
+          "What can differ?"
+        ],
+        "rows": [
+          [
+            "Usually very similar DNA",
+            "Mutation in cells that form offspring"
+          ],
+          [
+            "A useful inherited combination",
+            "Light, water and other conditions"
+          ]
+        ]
+      },
+      "voiceover": {
+        "text": "A strawberry plant can grow a new plant on a runner without gametes fusing. The offspring usually retains very similar genetic information, so we describe it as a clone. When the parent performs well, this passes on a useful combination without needing a mate. Under suitable conditions, an asexual population can increase rapidly, depending on the organism and its resources. There are two different reasons clones can differ. Mutation can alter DNA in cells that contribute to offspring. Different light or water can change growth even with very similar DNA. A difference caused by those growing conditions does not, by itself, show a new inherited allele."
+      }
+    },
+    {
+      "id": "concept-sexual",
+      "type": "concept",
+      "heading": "Sexual: new combinations of inherited alleles",
+      "body": "Gamete formation and fertilisation can combine alleles in different ways.",
+      "bullets": [
+        {
+          "text": "Outcrossing joins gametes from different individuals."
+        },
+        {
+          "text": "Offspring can differ genetically; variation depends on the alleles available."
+        },
+        {
+          "text": "Mating and gamete production can involve time and energy."
+        }
+      ],
+      "callout": "Existing alleles, new combinations.",
+      "durationInFrames": 1140,
+      "caption": "Gamete formation and fertilisation can reshuffle existing inherited alleles.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Starting information",
+          "Offspring"
+        ],
+        "rows": [
+          [
+            "Alleles available in parents",
+            "Different combinations"
+          ],
+          [
+            "Gametes from different parents",
+            "Combined at fertilisation"
+          ]
+        ]
+      },
+      "voiceover": {
+        "text": "Sexual reproduction gives inherited information another route forward. In outcrossing, gametes from different individuals fuse. Gamete formation and fertilisation can assemble different combinations of the alleles already available. Offspring from genetically different parents can therefore differ from each other and from their parents. It is like dealing a new hand from an existing set of cards: the combinations change, using alleles that are already there. Finding a mate and producing gametes can also take time and energy."
+      }
+    },
+    {
+      "id": "concept-tradeoff",
+      "type": "concept",
+      "heading": "Productive now. A shared risk after change.",
+      "body": "A useful inherited combination may be productive now and vulnerable under a new stress.",
+      "bullets": [
+        {
+          "text": "Suitable, stable conditions can favour rapid clonal increase."
+        },
+        {
+          "text": "Changing conditions may favour some inherited combinations over others."
+        },
+        {
+          "text": "Actual infection also depends on exposure, pathogen and environment."
+        }
+      ],
+      "callout": "Ask which variation matters for this particular change.",
+      "durationInFrames": 1380,
+      "caption": "Compare reproductive strategies under stated conditions, not as a universal ranking.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Question",
+          "Asexual",
+          "Sexual"
+        ],
+        "rows": [
+          [
+            "Gametes fuse?",
+            "No",
+            "Yes"
+          ],
+          [
+            "Combinations",
+            "Usually retained",
+            "Can be reshuffled"
+          ],
+          [
+            "Possible benefit",
+            "Suited genotype",
+            "Varied responses"
+          ],
+          [
+            "Survival certain?",
+            "No",
+            "No"
+          ]
+        ]
+      },
+      "voiceover": {
+        "text": "Return to the grower. Cloning preserves the crop characteristics they value. But if those clones share an inherited susceptibility to a pathogen, many may be vulnerable to the same threat. A genetically varied population could contain combinations that reduce susceptibility, if that relevant variation is present. Infection also depends on exposure, pathogen behaviour and growing conditions, so genetic susceptibility is only part of the outcome. Cloning can be useful when a genotype suits the conditions; varied inherited combinations may help when conditions change. Neither method is a universal winner."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify the event, then give the reason",
+      "question": "A strawberry makes a runner. Coral eggs and sperm fuse. A plant fertilises an egg with its own pollen-derived sperm. Which events are sexual?",
+      "coachNote": "Use gamete fusion, including when both gametes come from one plant.",
+      "steps": [
+        "Runner: no gamete fusion, so asexual.",
+        "Coral fertilisation: egg and sperm fuse, so sexual.",
+        "Self-fertilisation: gametes still fuse, so sexual."
+      ],
+      "durationInFrames": 1170,
+      "caption": "The event is classified by gamete fusion, including self-fertilisation.",
+      "revealDelays": {
+        "stepAts": [
+          250,
+          500,
+          760
+        ]
+      },
+      "voiceover": {
+        "text": "Here are three events. A strawberry makes a runner: a new plant grows without gamete fusion, so the event is asexual. Coral eggs and sperm fuse: that fertilisation is sexual. Now a plant uses sperm produced from its own pollen to fertilise an egg. There is only one parent plant, yet two gametes still fuse. The event is sexual. Parent number is a useful clue, but gamete fusion is the stronger reason. The next lessons will unpack how these events occur in different organisms."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Shared risk is not a certain outcome",
+      "body": "Mistake: one clone is infected, so every clone must be infected.",
+      "secondary": "Repair: clones may share a susceptibility. One infected plant does not establish the outcome for every other plant.",
+      "mistakeTag": "Risk mistaken for certainty",
+      "callout": "A shared weakness is a risk, not a predicted count of infections.",
+      "durationInFrames": 660,
+      "caption": "Shared susceptibility is different from every plant becoming infected.",
+      "voiceover": {
+        "text": "Suppose one clone becomes infected. Does that tell us every clone must be infected? The mistake is turning a shared susceptibility into a certain outcome. The plants may share a weakness, but one infected plant does not establish what will happen to every other plant."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "A new nursery decision",
+      "question": "A nursery grows cuttings from one parent and seedlings from crosses among genetically different parents. Some inherited combinations reduce susceptibility to a new disease. Which group is likely to show a wider range of inherited susceptibility, and why does that not promise every plant will survive?",
+      "answerSteps": [
+        "Crossed seedlings: wider range of inherited allele combinations.",
+        "Cuttings: usually retain combinations from one parent.",
+        "Some combinations reduce susceptibility; seedlings may not inherit them.",
+        "Reduced susceptibility is not complete protection."
+      ],
+      "calculationPresentation": {
+        "task": "Which group has wider susceptibility variation?",
+        "givens": [
+          {
+            "label": "Cuttings",
+            "value": "One parent"
+          },
+          {
+            "label": "Seedlings",
+            "value": "Crosses",
+            "reference": "Genetically different parents"
+          }
+        ],
+        "note": "Some inherited combinations reduce disease susceptibility. Why is survival still uncertain?",
+        "stages": [
+          {
+            "label": "Seedlings: wider range",
+            "lines": [
+              "Crosses combine alleles from",
+              "genetically different parents."
+            ],
+            "summary": "Varied allele combinations."
+          },
+          {
+            "label": "Cuttings: retained combination",
+            "lines": [
+              "Usually retain combinations",
+              "from one parent."
+            ],
+            "summary": "Parent combination retained."
+          },
+          {
+            "label": "Apply the supplied condition",
+            "lines": [
+              "Some combinations reduce susceptibility.",
+              "A seedling may not inherit them."
+            ],
+            "summary": "Helpful alleles not assured."
+          },
+          {
+            "label": "Limit the survival claim",
+            "lines": [
+              "Reduced susceptibility",
+              "is not complete protection."
+            ],
+            "summary": "Survival is not guaranteed."
+          }
+        ],
+        "layout": "module5Evidence"
+      },
+      "durationInFrames": 2040,
+      "caption": "Explain the inherited difference and qualify the survival prediction.",
+      "revealDelays": {
+        "answerVisibleStart": 960,
+        "responseHoldStart": 720,
+        "stepAts": [
+          960,
+          1190,
+          1410,
+          1640
+        ]
+      },
+      "voiceover": {
+        "text": "A nursery grows cuttings from one parent and seedlings from crosses among genetically different parents. Some inherited combinations reduce susceptibility to a new disease. Which group is likely to show a wider range of inherited susceptibility, and why does that not promise every plant will survive? Pause here to explain your reasoning. The seedlings are likely to show a wider range of inherited susceptibility because the crosses combine alleles from genetically different parents. The cuttings usually retain a much narrower set of combinations from one parent. In this case, some combinations reduce susceptibility, but particular seedlings may not inherit them. Even reduced susceptibility is not the same as complete protection, so neither group can be promised complete survival."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Carry the reasoning forward",
+      "points": [
+        "Reproduction links generations through offspring and inherited DNA.",
+        "Asexual: no gamete fusion; usually retains a parent combination.",
+        "Sexual: gametes fuse; inherited alleles can be reshuffled.",
+        "The value of a combination depends on the conditions."
+      ],
+      "finalPrompt": "Next: how do different organisms achieve reproduction?",
+      "durationInFrames": 1020,
+      "caption": "From inheritance and variation to specific reproductive mechanisms.",
+      "voiceover": {
+        "text": "Reproduction connects generations by producing offspring and passing on DNA. Asexual reproduction usually retains a parent combination without gametes fusing. Sexual reproduction fuses gametes and can reshuffle inherited alleles. A combination that works well in one set of conditions may become a weakness when those conditions change. Next we will look at how animals achieve reproduction, followed by plants and other organisms."
+      }
+    }
+  ]
+}
