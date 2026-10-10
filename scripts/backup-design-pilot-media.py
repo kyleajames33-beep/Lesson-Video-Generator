@@ -59,7 +59,7 @@ def freeze():
             raise RuntimeError('Archive verification failed.')
     digest = sha(ARCHIVE)
     ARCHIVE.with_suffix('.zip.sha256').write_text(digest + '  ' + ARCHIVE.name + '\n')
-    record = {'status': 'local-verified', 'archive': ARCHIVE.relative_to(ROOT).as_posix(), 'sha256': digest, 'bytes': ARCHIVE.stat().st_size, 'files': len(members), 'stateArchiveSha256': state_hash, 'roots': ROOTS, 'allMemberCRCsAndSHAsPass': True, 'privateSecretCheckPass': True, 'scope': 'Three current silent design pages, mutable review desk, native stills, fonts and three botanical assets. Sources use Git. No voiced or release approval.'}
+    record = {'status': 'local-verified', 'archive': ARCHIVE.relative_to(ROOT).as_posix(), 'sha256': digest, 'bytes': ARCHIVE.stat().st_size, 'files': len(members), 'stateArchiveSha256': state_hash, 'roots': ROOTS, 'allMemberCRCsAndSHAsPass': True, 'privateSecretCheckPass': True, 'scope': ('New silent C1/B1 teaching drafts, additive C1 layout with earlier speech, review desk, native stills and a short silent C1 motion checkpoint. Sources use Git. New narration and release pending.' if args.pack == 'starters' else 'Three current silent design pages, mutable review desk, native stills, fonts and three botanical assets. Sources use Git. No voiced or release approval.')}
     RECORD.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: record[k] for k in ['status', 'files', 'bytes', 'sha256']}))
 
@@ -95,5 +95,17 @@ def upload():
 
 parser = argparse.ArgumentParser()
 parser.add_argument('command', choices=['freeze', 'upload'])
+parser.add_argument('--pack', choices=['design', 'starters'], default='design')
+parser.add_argument('--starter-revision', default='v6')
 args = parser.parse_args()
+if args.pack == 'starters':
+    if not re.fullmatch(r'v\d+', args.starter_revision):
+        raise RuntimeError('Use a numbered starter revision.')
+    RECORD = ROOT / f'docs/production/module5-starters-2026-10-10/learning-reset-media-backup-{args.starter_revision}.json'
+    ARCHIVE = ROOT / f'out/archives/module5-starter-learning-reset-media-2026-10-11-{args.starter_revision}.zip'
+    ROOTS = [f'out/prototypes/c1-bottle-teaching-reset-2026-10-11-{args.starter_revision}',
+             'out/prototypes/b1-continuity-teaching-reset-2026-10-11-v2',
+             'out/prototypes/module5-reading-load-review-2026-10-11-v3',
+             'out/prototypes/module5-morning-review-2026-10-10']
+    ASSETS = ['strawberry-runner-botanical-v1.png']
 {'freeze': freeze, 'upload': upload}[args.command]()

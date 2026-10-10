@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/lesson.json",
+    "lessonSha256": "74a585a8142dab43bf3d24e3f86af1b2e7b709783e0e719656aa9e70d2b5a07c"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Particle model, reactants/products and reaction rate. Remind students that dissolved molecules are mixed through liquid; explain rate as movement per time before comparing rates.",
+    "startsWith": "Recognisable sealed sparkling drink, left at constant temperature long enough to settle.",
+    "stopsAfter": "Explain continuing balanced exchange, stable but not necessarily equal amounts, a static mechanical contrast and open/closed matter boundaries.",
+    "nextLesson": "How a reversible chemical reaction approaches equilibrium."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/student-learning-review.md",
+    "docs/production/module5-memory-aids-2026-10-11.md"
+  ],
+  "teaching": {
+    "task": "A sealed sparkling drink looks steady. What still moves?",
+    "causalExplanation": "CO2 leaves and enters liquid. Matching average gains and losses keep the amount steady. Opening lowers gas available to return, so leaving exceeds returning.",
+    "conversationalApproach": "Follow the same sparkling bottle. Explain dissolved and rate plainly. Clear earlier reasoning before the next stage.",
+    "openingDecision": "A sealed sparkling drink looks steady. What still moves?",
+    "understandingCheck": "Infer the return count from 60 departures and unchanged120 over repeated10-second intervals; explain whether exchange stopped.",
+    "curriculumScope": "Candidate contribution to the 2017 Chemistry Stage 6 static/dynamic and open/closed action. Not a complete practical or action approval."
+  },
+  "scenes": [
+    {
+      "sceneId": "bottle-question",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "One recognisable capped bottle, liquid and headspace labels, then connected magnified surface inset. Preserve bottle identity through the middle. No Now/Later text cards or unrelated atom icon.",
+      "narrationCue": "Look at this sealed sparkling drink. There is liquid below and a space containing gas above it. The bottle has been left at the same temperature long enough to settle. It can look ",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "two-directions",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Same bottle and surface inset. Actual CO2 glyphs follow continuous bidirectional crossing paths. Dissolved glyphs throughout liquid, not only bubbles. Two stable direction labels. Do not vanish into abstract groups.",
+      "narrationCue": "Some carbon dioxide is dissolved in the drink. Dissolved means it is mixed through the liquid, rather than sitting in a visible bubble. A carbon dioxide molecule can leave the liqu",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "why-steady",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Show crossing effects on dissolved pool, then accumulated crossings over a common time window. Reveal simple dissolved-amount trace and later headspace trace. No ongoing trend; small schematic fluctuations allowed. Do not freeze molecules when traces settle. Clear unused trace when advancing.",
+      "narrationCue": "Now watch the amount of carbon dioxide dissolved in the drink. A molecule leaving reduces that amount. A molecule entering adds to it. At equilibrium, molecules enter just as quick",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "name-and-rate",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Same bottle with visibly unequal representative pools and continuing crossings. Short definition replaced by crossings-per-second comparison at cue. No assertion of actual concentrations from glyph density. Two-way traffic anchor refers to these molecular paths, not a car diagram.",
+      "narrationCue": "We call this dynamic equilibrium. Dynamic means the opposing processes continue. Equilibrium means their effects balance, so there is no overall change under these conditions. A ra",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "static-and-chemical-bridge",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Supported-book illustration with balanced weight/support arrows, then return to the same bottle. Brief next-lesson signpost only: location change here, substance change in a chemical reaction. No reactant/product inset, third visual model or new reaction mechanism.",
+      "narrationCue": "Compare that with a book resting on a table. The table supports the book, and the forces on it balance. The whole book stays at rest. This is static mechanical equilibrium. It does",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "boundary",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Whole bottle boundary and cap. Brief heat arrow, then opening and CO2 paths dispersing into a large room. Show fewer CO2 glyphs in headspace, fewer inward crossing events but retain some. Only then reveal falling dissolved amount, stopping before total depletion. Use current causal stage, not all paragraphs together.",
+      "narrationCue": "The cap matters because it keeps carbon dioxide inside the bottle. We call that a closed system: matter cannot enter or leave. Heat can still pass through the bottle, so closed doe",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "application-attempt",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Reduced-reading case panel and separate questions, plus neutral sealed bottle reference. Label synthetic molecule-tracking model. First present neutral conditions, then stable grouped data: same sealed model; each interval10 seconds;60 leave; liquid120 before and120 after. Speak each group with a brief settling pause before adding demands. Do not require reconstruction from running prose. Retain all conditions, data and both demands throughout hold. No inward count, equal-rate statement, balanced arrows or revealing motion during attempt.",
+      "narrationCue": "Try a new record from our sealed-bottle model. We track only carbon dioxide moving between liquid and gas. The temperature and both region volumes stay constant, and no carbon diox",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "application-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Stage one retains 60 out, unchanged 120 and closed interface-only model, then reveals inferred 60 in. Stage two retains 60 in/out over same 10 seconds and current conclusion. Remove prompt history. Bring crossing inset back only after inference.",
+      "narrationCue": "If sixty molecules left and none came back, the liquid would lose sixty molecules. But its tracked amount has not changed. So sixty must have entered during that same interval, rep",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "return-and-handoff",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Return original sealed bottle and ongoing paths, then clear reasoning for notes. No separate inference-limit case or misconception card.",
+      "narrationCue": "So, what still moves in our steady-looking sealed drink? Carbon dioxide keeps moving out of the liquid and back into it. At dynamic equilibrium, the opposing rates match on average",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/prototypes/C1BottleTeachingReset.tsx",
+      "teachingReason": "Stable quiet notes, no competing molecule motion or new reasoning. Select short content instead of shrinking.",
+      "narrationCue": "Quiet notes after spoken invitation.",
+      "motionPurpose": "Surface crossing and a magnified sample show loss/replacement before average-rate balance. Current case remains visible.",
+      "holdPurpose": "Provisional response or reading time in source; remeasure after speech."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/student_learning_reviewer_sol (gpt-6.1-sol)",
+    "evidence": {
+      "path": "docs/production/overnight-module5-2026-10-10/early-audit/learning-quality-audit-2026-10-11.json",
+      "sha256": "86b2f2182f0fada283b33171670bee233569c9b5aaf4b92cad7a7b719b70eb2a"
+    },
+    "scope": "New unvoiced source and sampled native preview. Science/script and exact voiced approvals separate."
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Actual isolated silent draft. Production LessonVideo dispatch, independent science, exact voice/caption/motion and human listening remain pending. B1 also requires actual flower and seedling visual sequence. Do not attach parent audio."
+}

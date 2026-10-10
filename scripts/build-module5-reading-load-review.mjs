@@ -1,4 +1,4 @@
-// Queued C1/C2/C3 review builder. Root source integration is pending; do not run yet.
+// Additive visual review, preserving prerecorded speech. Select integrated copies only.
 import fs from 'node:fs';
 import path from 'node:path';
 import {build} from 'esbuild';
@@ -6,10 +6,14 @@ import {sha256} from './lib/playback-assembly.mjs';
 import {lessonTimeline} from '../src/lesson/timeline.mjs';
 
 const root = process.cwd();
-const pageName = 'module5-reading-load-review-2026-10-11';
+const revision = process.argv.find(arg => arg.startsWith('--revision='))?.slice(11) ?? 'v3';
+if (!/^v\d+$/.test(revision)) throw Error('Use a numbered review revision.');
+const pageName = `module5-reading-load-review-2026-10-11-${revision}`;
 const output = path.resolve('out/prototypes', pageName);
 if (fs.existsSync(path.join(output, 'index.html'))) throw Error('Preserve existing review. Choose a fresh output identity before rebuilding.');
-const sourcePaths = ['c1', 'c2', 'c3'].map(key => `docs/production/module5-reading-load-fix-2026-10-11/${key}/lesson.json`);
+const selectedKeys = (process.argv.find(arg => arg.startsWith('--lessons='))?.slice(10) ?? 'c1,c2,c3').split(',');
+if (!selectedKeys.length || selectedKeys.some(key => !['c1', 'c2', 'c3'].includes(key))) throw Error('Use --lessons=c1,c2,c3 with integrated source copies.');
+const sourcePaths = selectedKeys.map(key => `docs/production/module5-reading-load-fix-2026-10-11/${key}/lesson.json`);
 const lessons = sourcePaths.map(file => {
   const raw = fs.readFileSync(file, 'utf8');
   if (raw.includes('\u2014')) throw Error(`Prohibited punctuation: ${file}`);
@@ -30,7 +34,7 @@ const findAssets = value => {
 };
 lessons.forEach(findAssets);
 // Diagram artwork can be selected by runtime code rather than lesson strings.
-for (const directory of ['fonts', 'assets']) {
+for (const directory of ['fonts']) {
   const walk = base => {
     for (const item of fs.readdirSync(base, {withFileTypes:true})) {
       const file = path.join(base, item.name);
@@ -60,7 +64,8 @@ const existing = fs.readFileSync(captionSource, 'utf8');
 const captionStart = existing.indexOf('const VoicedLesson =');
 const captionEnd = existing.indexOf('\nconst Review =', captionStart);
 if (captionStart < 0 || captionEnd < 0) throw Error('Established caption wrapper changed; review extraction before building.');
-const captionComponent = existing.slice(captionStart, captionEnd).replace('const VoicedLesson =', 'export const VoicedLesson =');
+const captionComponent = existing.slice(captionStart, captionEnd).replace('const VoicedLesson =', 'export const VoicedLesson =')
+  .replace('const frame = useCurrentFrame();', 'const frame = useCurrentFrame();\n  const timeline = lessonTimeline(lesson);');
 write('shared.tsx', `import React, {useMemo} from 'react';
 import {AbsoluteFill, useCurrentFrame} from 'remotion';
 import {createTikTokStyleCaptions} from '@remotion/captions';
@@ -68,7 +73,7 @@ import {LessonVideo} from ${JSON.stringify(relativeImport('src/LessonVideo'))};
 import type {LessonData} from ${JSON.stringify(relativeImport('src/lesson/types'))};
 import {lessonTimeline} from ${JSON.stringify(relativeImport('src/lesson/timeline.mjs'))};
 ${imports}
-export const lessons = {c1:lesson0, c2:lesson1, c3:lesson2} as Record<string, LessonData>;
+export const lessons = {${selectedKeys.map((key,i)=>`${key}:lesson${i}`).join(', ')}} as Record<string, LessonData>;
 export {lessonTimeline};
 ${captionComponent}
 `);
@@ -104,7 +109,7 @@ const Review = () => {
   const entry = timeline.scenes.find((item:any)=>item.scene.id===sceneId) ?? timeline.scenes[0];
   const jump = (frame:number) => player.current?.seekTo(Math.max(0,Math.min(timeline.durationInFrames-1,Math.round(frame))));
   const seekLocal = (frame:number) => { const bounded=Math.max(0,Math.min(entry.scene.durationInFrames-1,Math.round(frame)));setLocalFrame(bounded);jump(entry.startFrame+bounded); };
-  return <main><h1>Module 5 Chemistry: reading load review</h1><p>Exact prerecorded narration. Selected visual changes require caption fit and continuous playback review.</p>
+  return <main><h1>Module 5 Chemistry: reading load review</h1><p>Layout correction only, using the earlier prerecorded narration. This is separate from the teaching rewrite. Select worked-example or quick-check to inspect the changed screens. Full teaching, caption-fit and continuous playback review remain pending.</p>
   <div className="controls"><label>Lesson <select value={key} onChange={event=>{const next=event.target.value;setKey(next);setSceneId(lessons[next].scenes[0].id);setLocalFrame(0);}}>{Object.keys(lessons).map(id=><option key={id} value={id}>{id.toUpperCase()}: {lessons[id].title}</option>)}</select></label>
   <label>Scene <select value={entry.scene.id} onChange={event=>{setSceneId(event.target.value);setLocalFrame(0);jump(timeline.scenes.find((item:any)=>item.scene.id===event.target.value)!.startFrame);}}>{lesson.scenes.map(scene=><option key={scene.id} value={scene.id}>{scene.id}: {'heading' in scene ? scene.heading : scene.type}</option>)}</select></label>
   <label><input type="checkbox" checked={captions} onChange={event=>setCaptions(event.target.checked)}/>Show captions</label></div>
@@ -128,7 +133,7 @@ const html = `<!doctype html><html lang="en-AU"><meta charset="utf-8"><meta name
 fs.writeFileSync(path.join(output,'index.html'),html,{flag:'wx'});
 const inputs = [...new Set(['scripts/build-module5-reading-load-review.mjs',captionSource,...sourcePaths,...Object.keys(result.metafile.inputs).filter(file=>!file.startsWith('node_modules/')&&!file.startsWith('(disabled):')).map(file=>file.replace(/ with \{ type: 'json' \}$/, ''))])].sort();
 write('page-inputs.json',JSON.stringify({schemaVersion:1,scope:'Exact voiced Player. New visual review and release gates pending.',pageSha256:sha256(html),inputs:inputs.map(file=>({path:file,sha256:sha256(fs.readFileSync(file))})),assets},null,2)+'\n');
-write('fixtures.json',JSON.stringify(Object.fromEntries(lessons.map((lesson,i)=>[['c1','c2','c3'][i],lessonTimeline(lesson)])),null,2)+'\n');
+write('fixtures.json',JSON.stringify(Object.fromEntries(lessons.map((lesson,i)=>[selectedKeys[i],lessonTimeline(lesson)])),null,2)+'\n');
 console.log(`http://127.0.0.1:8778/${pageName}/`);
 console.log(`Native entry: ${path.relative(root,path.join(output,'native.tsx'))}`);
-console.log(`Still example: npx remotion still ${path.relative(root,path.join(output,'native.tsx'))} ReadingLoad-C3 out/checks/reading-load-c3.png --frame=0 --public-dir=${path.relative(root,path.join(output,'public'))}`);
+console.log(`Still example: npx remotion still ${path.relative(root,path.join(output,'native.tsx'))} ReadingLoad-${selectedKeys[0].toUpperCase()} out/checks/reading-load-${selectedKeys[0]}.png --frame=0 --public-dir=${path.relative(root,path.join(output,'public'))}`);

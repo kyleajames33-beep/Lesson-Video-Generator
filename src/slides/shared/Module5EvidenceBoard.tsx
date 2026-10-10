@@ -129,7 +129,7 @@ export const Module5FocusedWorking = ({presentation, delays, earliestFrame = 0}:
   const activeIndex = cues.reduce((index, cue, i) => frame >= cue ? i : index, -1);
   if (activeIndex < 0) return null;
   // A newly spoken case replaces the old answer before its own reasoning cue.
-  if (context && context.at > cues[activeIndex]) return null;
+  if (context && !context.retainWorking && context.at > cues[activeIndex]) return null;
   const active = presentation.stages[activeIndex];
   const opacity = interpolate(frame, [cues[activeIndex], cues[activeIndex] + 16], [0, 1], clamp);
   const isFinal = activeIndex === presentation.stages.length - 1;

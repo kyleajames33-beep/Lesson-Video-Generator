@@ -1011,20 +1011,20 @@
   },
   "designReset": {
     "date": "2026-10-11",
-    "status": "three-silent-pilots-available-owner-design-review-pending",
-    "userFeedback": "Rejects primitive plant drawings, repetitive text slides, fungi text in place of structures, bland pressure presentation and cryptic compressed recaps. C1/C2 overcrowding and C3 plinth-label fixes remain pending.",
+    "status": "starter-silent-drafts-reviewed-specific-learning-repairs-integrated-no-new-voice",
+    "userFeedback": "User asked whether ALL learner-quality requests reached actual videos. Independent audit found remaining full-source defects, beyond adding art. Old measured lessons and approved media preserved.",
     "releaseHold": "Current rejected Module 5 candidates require a new teaching/design review before advancing to export or publication. Existing public releases are unchanged.",
     "proposalPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
     "owners": [
       {
         "agent": "/root",
-        "scope": "Coordination, actual asset selection, pilot integration, board and durable teaching rules",
-        "state": "three-pilots-integrated-native-review-and-media-backup-complete-owner-design-review-pending"
+        "scope": "Actual audit reconciliation, C1 layout integration and phone UI, pending schema3 briefs, review desk, preservation and backup",
+        "state": "integrated-c1-layout-phone-ui-and-starter-silent-drafts-pending-production-science-new-voice-and-listening"
       },
       {
         "agent": "/root/c1_focused_evidence_board",
-        "scope": "C1 proposal and source finding repairs; independent pressure/fungi review; draft memory-bank screening",
-        "state": "completed"
+        "scope": "C1 actual draft, physical bottle and staged pool demo; dedicated silent Player and native frames",
+        "state": "v6-built-counted-pool-finding-resolved-independent-source-and-stills"
       },
       {
         "agent": "/root/c2_unclutter_diagrams",
@@ -1045,19 +1045,19 @@
       {
         "agent": "/root/b1_teaching_reset_sol",
         "model": "gpt-6.1-sol",
-        "scope": "B1 teaching-reset proposal only",
-        "state": "completed-learning-findings-resolved"
+        "scope": "B1 actual draft, plant and cell process preview; dedicated silent Player and native frames",
+        "state": "v2-built-overlaps-and-crop-fixed-flower-seedling-gap-open"
       },
       {
         "agent": "/root/student_learning_reviewer_sol",
         "model": "gpt-6.1-sol",
-        "scope": "Student learning guidance and independent exact C1/B1 proposal review",
-        "state": "completed-source-findings-resolved-actual-voiced-review-pending"
+        "scope": "Independent nine-parent learner audit, new C1/B1 source/native review and concrete author findings",
+        "state": "nine-parent-audit-and-final-c1-v6-b1-v2-source-and-still-reviews-complete"
       }
     ],
     "models": "Sol 6.1 runner implementation and separate review. User said go after focused Astra comparison recommendation; gpt-6-astra now owns bounded pressure design pilot, no blanket quality claim.",
     "pendingChemistryChanges": {
-      "state": "component-edits-only-not-integrated-or-previewed",
+      "state": "c1-layout-integrated-and-phone-ui-inspected-c2-c3-still-pending",
       "files": [
         "src/slides/shared/Module5EvidenceBoard.tsx",
         "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx",
@@ -1066,10 +1066,17 @@
         "src/lesson/types.ts"
       ],
       "remaining": [
-        "Root selected-source integration",
-        "Native/UI inspection, including catalyst label/curve clearance",
-        "Human review of changed visual package"
-      ]
+        "C2/C3 selected-source changes and teaching cuts",
+        "Exact affected native/UI check, including catalyst label clearance",
+        "Human review of each changed voiced package"
+      ],
+      "c1LayoutCorrection": {
+        "sourcePath": "docs/production/module5-reading-load-fix-2026-10-11/c1/lesson.json",
+        "sourceSha256": "831b17f1db30e289be65efa70c9c96a84398edf226341781643bea6ab886e4c1",
+        "reviewUrl": "http://127.0.0.1:8778/module5-reading-load-review-2026-10-11-v3/",
+        "scope": "Layout-only source copy. Exact parent voice, captions, durations and existing cue fields preserved. No accumulated answer history. Root observed workedlocal760 and quicklocal1200 at480px viewport, all response facts/demands available.",
+        "remaining": "Whole continuous playback and user visual acceptance. This does not fix all old C1 teaching; new bottle draft is separate."
+      }
     },
     "pilotUrl": "http://127.0.0.1:8778/plant-runner-design-pilot-2026-10-11-v3/",
     "checkpointPath": "docs/production/plant-design-reset-2026-10-11/checkpoint.json",
@@ -1095,28 +1102,43 @@
         "path": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/teaching-proposal.json",
         "sha256": "e69a955e7656194fa87fd651ee8cf1e7eca1b31519a594c4a61833b1a81f6021",
         "author": "/root/c1_focused_evidence_board",
-        "status": "source-learning-findings-resolved-integration-pending",
+        "status": "actual-silent-draft-source-and-sampled-learning-findings-resolved-production-and-voice-pending",
         "reviewFindings": "Bottle return-rate cause, short physical/chemical signpost and staged application facts repaired.",
         "remaining": [
-          "Physical visual implementation and selected source/brief",
-          "Independent science and exact visual/voiced learning review",
-          "New audio/alignment and human listening",
-          "Full export and public package gate"
-        ]
+          "Supported production renderer integration",
+          "Independent science and exact teaching review of final implementation",
+          "Fresh audio, alignment and exact voiced captions/motion review",
+          "Human listening",
+          "Full export and complete public-package gate"
+        ],
+        "draftSourcePath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/lesson.json",
+        "draftSourceSha256": "74a585a8142dab43bf3d24e3f86af1b2e7b709783e0e719656aa9e70d2b5a07c",
+        "draftBriefPath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/production-brief.json",
+        "implementationPath": "src/prototypes/C1BottleTeachingReset.tsx",
+        "reviewUrl": "http://127.0.0.1:8778/c1-bottle-teaching-reset-2026-10-11-v6/",
+        "reviewSummary": "Concrete bottle, visible gain/loss balance, memory anchor, application and quiet notes implemented. Final v6 counter ambiguity resolved and independently rechecked."
       },
       {
         "subject": "biology",
         "path": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/teaching-proposal.json",
         "sha256": "95a18e3e4cc871188373b169a3fcc452330cb531d21ac513d16680360f2f022e",
         "author": "/root/b1_teaching_reset_sol",
-        "status": "source-learning-findings-resolved-integration-pending",
+        "status": "actual-silent-draft-script-and-layout-repaired-visual-sequence-still-missing",
         "reviewFindings": "Different reproductive-cell selections/pairings, plain DNA meaning and joining location repaired.",
         "remaining": [
-          "Physical visual implementation and selected source/brief",
-          "Independent science and exact visual/voiced learning review",
-          "New audio/alignment and human listening",
-          "Full export and public package gate"
-        ]
+          "Recognisable flower context and joining-to-seedling sequence; reference crop is not a completed seedling visual",
+          "Supported production renderer integration",
+          "Independent science and exact teaching review of final implementation",
+          "Fresh audio, alignment and exact voiced captions/motion review",
+          "Human listening",
+          "Full export and complete public-package gate"
+        ],
+        "draftSourcePath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/lesson.json",
+        "draftSourceSha256": "74b3315be414af95be9a858b3e4f08075ab8b41aee39d27932f8c79798b8aba3",
+        "draftBriefPath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/production-brief.json",
+        "implementationPath": "src/prototypes/B1ContinuityTeachingReset.tsx",
+        "reviewUrl": "http://127.0.0.1:8778/b1-continuity-teaching-reset-2026-10-11-v2/",
+        "reviewSummary": "Beginner causes, conditional memory aid, protected application and quiet notes implemented. Flower context and joining-to-seedling sequence remain."
       }
     ],
     "memoryAidBank": {
@@ -1126,6 +1148,14 @@
       "selection": "C1 equal rates versus amounts; B1 conditional copying versus combination. Other aids wait for their topics and exact science/teacher review.",
       "corrections": "Open-bottle return, catalyst composition/enhancement, heat bookkeeping, graph inference, meiosis products, prokaryotic proteins, profiling and model conditions corrected."
     },
-    "portability": "All three compiled pilot dependency fingerprints match staged Git bytes after scoped -text attributes for four existing imported files. No content change to those four dependencies."
+    "portability": "All three compiled pilot dependency fingerprints match staged Git bytes after scoped -text attributes for four existing imported files. No content change to those four dependencies.",
+    "learningQualityAudit": {
+      "path": "docs/production/overnight-module5-2026-10-10/early-audit/learning-quality-audit-2026-10-11.json",
+      "reviewer": "/root/student_learning_reviewer_sol (gpt-6.1-sol)",
+      "status": "changes-required-across-parent-batch",
+      "scope": "Nine selected parent source scripts and saved screenshots. New starter implementation independently checked separately. No new listening or full voiced review.",
+      "sha256": "86b2f2182f0fada283b33171670bee233569c9b5aaf4b92cad7a7b719b70eb2a"
+    },
+    "currentStarterMediaBackupPath": "docs/production/module5-starters-2026-10-10/learning-reset-media-backup-v6.json"
   }
 }

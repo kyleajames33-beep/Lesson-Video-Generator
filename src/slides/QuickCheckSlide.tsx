@@ -49,8 +49,10 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 			<SlideChrome lesson={lesson} topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 			<CalculationProblem presentation={scene.calculationPresentation} eyebrow="QUICK CHECK · TRY IT FIRST" delay={rd.heading ?? 24} prompt={scene.pausePrompt} promptOpacity={pauseOpacity} />
 			{answerProgress < 0.98 ? <>
-				<PauseCountdown startFrame={pauseStartFrame} endFrame={answerStart} fps={fps} durationSeconds={(answerStart - pauseStartFrame) / fps} opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
-				<PauseInstruction opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
+				{scene.calculationPresentation.reducedReading ? <div style={{position: 'absolute', left: 774, right: 64, top: 830, opacity: pauseOpacity, fontSize: 36, color: TOK.inkDim}}>Pause if you would like longer.</div> : <>
+					<PauseCountdown startFrame={pauseStartFrame} endFrame={answerStart} fps={fps} durationSeconds={(answerStart - pauseStartFrame) / fps} opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
+					<PauseInstruction opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
+				</>}
 			</> : null}
 			<FocusedWorking presentation={scene.calculationPresentation} delays={delays} earliestFrame={answerStart} />
 		</SlideFrame>;

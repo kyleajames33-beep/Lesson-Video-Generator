@@ -1,0 +1,274 @@
+{
+  "title": "A sealed sparkling drink looks steady. What still moves?",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 1",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusDotPoints": [
+    "model static and dynamic equilibrium and analyse the differences between open and closed systems (ACSCH079, ACSCH091)"
+  ],
+  "productionRole": "draft",
+  "status": "teaching-reset-silent-preview-pending-review",
+  "parentLessonPath": "docs/production/module5-starters-2026-10-10/chemistry/measured-v2/lesson.json",
+  "teachingProposalPath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/teaching-proposal.json",
+  "visualImplementationPath": "src/prototypes/C1BottleTeachingReset.tsx",
+  "lessonIntent": "A sealed sparkling drink looks steady. What still moves?",
+  "scenes": [
+    {
+      "id": "bottle-question",
+      "type": "concept",
+      "heading": "A sealed drink looks steady. What still moves?",
+      "body": "",
+      "durationInFrames": 808,
+      "caption": "A sealed drink looks steady. What still moves?",
+      "voiceover": {
+        "text": "Look at this sealed sparkling drink. There is liquid below and a space containing gas above it. The bottle has been left at the same temperature long enough to settle. It can look unchanged, even though carbon dioxide is still moving between those two places. Let us look inside and follow what the molecules do."
+      },
+      "visualBrief": {
+        "decision": "adjust and pilot",
+        "reuse": "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx",
+        "need": "One recognisable capped bottle, liquid and headspace labels, then connected magnified surface inset. Preserve bottle identity through the middle. No Now/Later text cards or unrelated atom icon."
+      },
+      "teachingCues": [
+        "Liquid below: label liquid.",
+        "Gas above: label gas above the drink.",
+        "Follow molecules: introduce connected surface inset."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "two-directions",
+      "type": "concept",
+      "heading": "Carbon dioxide moves both ways",
+      "body": "",
+      "durationInFrames": 1056,
+      "caption": "Carbon dioxide moves both ways",
+      "voiceover": {
+        "text": "Some carbon dioxide is dissolved in the drink. Dissolved means it is mixed through the liquid, rather than sitting in a visible bubble. A carbon dioxide molecule can leave the liquid and enter the gas above it. A molecule from the gas can also enter the liquid and dissolve. These are opposite processes. The same kind of molecule moves between liquid and gas; it does not turn into a different substance in this example."
+      },
+      "visualBrief": {
+        "decision": "adjust",
+        "reuse": "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx",
+        "need": "Same bottle and surface inset. Actual CO2 glyphs follow continuous bidirectional crossing paths. Dissolved glyphs throughout liquid, not only bubbles. Two stable direction labels. Do not vanish into abstract groups."
+      },
+      "teachingCues": [
+        "Leave liquid: track one outward crossing.",
+        "Enter and dissolve: track a different inward crossing.",
+        "Opposite processes: retain both paths and continue unpaired motion."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "why-steady",
+      "type": "concept",
+      "heading": "What leaves is replaced",
+      "body": "",
+      "durationInFrames": 1160,
+      "caption": "What leaves is replaced",
+      "voiceover": {
+        "text": "Now watch the amount of carbon dioxide dissolved in the drink. A molecule leaving reduces that amount. A molecule entering adds to it. At equilibrium, molecules enter just as quickly as they leave, on average. So the amount dissolved does not keep rising or falling. The gas above the drink stays steady too, because each place receives carbon dioxide as quickly as it loses it. The molecules keep moving. It is the balance of the two processes that keeps the amounts steady."
+      },
+      "visualBrief": {
+        "decision": "adjust",
+        "reuse": "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx",
+        "need": "Show crossing effects on dissolved pool, then accumulated crossings over a common time window. Reveal simple dissolved-amount trace and later headspace trace. No ongoing trend; small schematic fluctuations allowed. Do not freeze molecules when traces settle. Clear unused trace when advancing."
+      },
+      "teachingCues": [
+        "Leaving reduces: highlight outward crossing and liquid pool.",
+        "Entering adds: highlight inward crossing.",
+        "On average: compare crossings over same time window.",
+        "Keeps amounts steady: reveal stable traces while motion continues."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "name-and-rate",
+      "type": "concept",
+      "heading": "Dynamic equilibrium",
+      "body": "",
+      "durationInFrames": 1186,
+      "caption": "Dynamic equilibrium",
+      "voiceover": {
+        "text": "We call this dynamic equilibrium. Dynamic means the opposing processes continue. Equilibrium means their effects balance, so there is no overall change under these conditions. A rate tells us how much happens in a given time. Here, the rate of carbon dioxide leaving the liquid matches the rate entering it. Both rates are greater than zero. Think of two-way traffic: the same rate, but possibly different amounts on each side. We are matching movement per second, not sharing the molecules into two equal piles."
+      },
+      "visualBrief": {
+        "decision": "adjust",
+        "reuse": "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx",
+        "need": "Same bottle with visibly unequal representative pools and continuing crossings. Short definition replaced by crossings-per-second comparison at cue. No assertion of actual concentrations from glyph density. Two-way traffic anchor refers to these molecular paths, not a car diagram."
+      },
+      "teachingCues": [
+        "Dynamic: keep paths moving.",
+        "Rate: label crossings per second.",
+        "Same rate, different amounts: refer to pools, clear definition prose, retain rate comparison."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "static-and-chemical-bridge",
+      "type": "concept",
+      "heading": "Still object, continuing processes",
+      "body": "",
+      "durationInFrames": 1225,
+      "caption": "Still object, continuing processes",
+      "voiceover": {
+        "text": "Compare that with a book resting on a table. The table supports the book, and the forces on it balance. The whole book stays at rest. This is static mechanical equilibrium. It does not mean the particles inside the book stop moving. Return to our drink: carbon dioxide continues crossing between liquid and gas. Here the molecules change location, not substance. In the next lesson, we will apply this idea of continuing opposing processes to a reversible chemical reaction, where reactants become products and products become reactants."
+      },
+      "visualBrief": {
+        "decision": "brief contrast, then return",
+        "reuse": [
+          "src/slides/ConceptSlide.tsx",
+          "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx"
+        ],
+        "need": "Supported-book illustration with balanced weight/support arrows, then return to the same bottle. Brief next-lesson signpost only: location change here, substance change in a chemical reaction. No reactant/product inset, third visual model or new reaction mechanism."
+      },
+      "teachingCues": [
+        "Forces balance: show opposing arrows.",
+        "Return to our drink: restore bottle and crossing molecules.",
+        "Next lesson: keep bottle reference with one short signpost; no reaction diagram."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "boundary",
+      "type": "concept",
+      "heading": "The cap keeps carbon dioxide inside",
+      "body": "",
+      "durationInFrames": 1617,
+      "caption": "The cap keeps carbon dioxide inside",
+      "voiceover": {
+        "text": "The cap matters because it keeps carbon dioxide inside the bottle. We call that a closed system: matter cannot enter or leave. Heat can still pass through the bottle, so closed does not mean insulated. In our example, the temperature stays constant. Now open the cap. Carbon dioxide escapes from the space above the drink into the much larger room. There is then less carbon dioxide above the liquid available to enter it. The rate returning to the liquid falls below the rate leaving. Some gas still dissolves back in, but it no longer replaces all that leaves. So the drink loses dissolved carbon dioxide overall. This is an open system because matter can cross its boundary."
+      },
+      "visualBrief": {
+        "decision": "targeted correction required",
+        "reuse": "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx",
+        "need": "Whole bottle boundary and cap. Brief heat arrow, then opening and CO2 paths dispersing into a large room. Show fewer CO2 glyphs in headspace, fewer inward crossing events but retain some. Only then reveal falling dissolved amount, stopping before total depletion. Use current causal stage, not all paragraphs together."
+      },
+      "teachingCues": [
+        "Closed: highlight boundary.",
+        "Heat: briefly show energy crossing.",
+        "Open cap: show escape into large room.",
+        "Less available above: reduce headspace CO2 glyphs.",
+        "Return rate falls: reduce inward crossing frequency, retain inward events.",
+        "So the drink loses: reveal falling dissolved amount."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "application-attempt",
+      "type": "concept",
+      "heading": "How much returned to the liquid?",
+      "body": "",
+      "durationInFrames": 1780,
+      "caption": "How much returned to the liquid?",
+      "voiceover": {
+        "text": "Try a new record from our sealed-bottle model. We track only carbon dioxide moving between liquid and gas. The temperature and both region volumes stay constant, and no carbon dioxide enters or leaves the bottle. In each of several ten-second intervals, sixty molecules leave the liquid. The liquid starts and ends every interval with one hundred and twenty tracked molecules. How many molecules must have entered the liquid in each interval? Explain your answer, then decide whether this record shows that exchange has stopped or is continuing in balance. Pause if you would like longer."
+      },
+      "visualBrief": {
+        "decision": "adjust",
+        "reuse": "src/slides/shared/Module5EvidenceBoard.tsx",
+        "need": "Reduced-reading case panel and separate questions, plus neutral sealed bottle reference. Label synthetic molecule-tracking model. First present neutral conditions, then stable grouped data: same sealed model; each interval10 seconds;60 leave; liquid120 before and120 after. Speak each group with a brief settling pause before adding demands. Do not require reconstruction from running prose. Retain all conditions, data and both demands throughout hold. No inward count, equal-rate statement, balanced arrows or revealing motion during attempt."
+      },
+      "teachingCues": [
+        "We track only: show closed interface-only model conditions.",
+        "Temperature and volumes: retain conditions in case panel.",
+        "Each ten-second interval: show common interval heading.",
+        "Sixty leave: reveal outgoing count.",
+        "Starts and ends: reveal paired liquid120 before/120 after, then let data settle.",
+        "How many: reveal both demands; all facts remain available before answer-free hold."
+      ],
+      "pilotOnly": true,
+      "responseHold": {
+        "endFrame": 1780,
+        "startFrame": 1330
+      }
+    },
+    {
+      "id": "application-feedback",
+      "type": "concept",
+      "heading": "Sixty left. Sixty returned.",
+      "body": "",
+      "durationInFrames": 1251,
+      "caption": "Sixty left. Sixty returned.",
+      "voiceover": {
+        "text": "If sixty molecules left and none came back, the liquid would lose sixty molecules. But its tracked amount has not changed. So sixty must have entered during that same interval, replacing the sixty that left. This happens in each interval in the record. Both directions are continuing, and their average rates match: sixty molecules in ten seconds each way. That is balanced exchange, not stopped exchange. Notice that we worked out the return from the amount balance. We did not assume the two places contained equal numbers of molecules."
+      },
+      "visualBrief": {
+        "decision": "adjust",
+        "reuse": "src/slides/shared/Module5EvidenceBoard.tsx",
+        "need": "Stage one retains 60 out, unchanged 120 and closed interface-only model, then reveals inferred 60 in. Stage two retains 60 in/out over same 10 seconds and current conclusion. Remove prompt history. Bring crossing inset back only after inference."
+      },
+      "teachingCues": [
+        "Sixty must have entered: first answer reveal.",
+        "Both directions continuing: show both paths.",
+        "Average rates match: align common interval.",
+        "Balanced exchange: retain steady pool and motion."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "return-and-handoff",
+      "type": "concept",
+      "heading": "Steady amounts, continuing exchange",
+      "body": "",
+      "durationInFrames": 1290,
+      "caption": "Steady amounts, continuing exchange",
+      "voiceover": {
+        "text": "So, what still moves in our steady-looking sealed drink? Carbon dioxide keeps moving out of the liquid and back into it. At dynamic equilibrium, the opposing rates match on average, keeping the amounts steady under unchanged conditions. A steady appearance on its own would not tell us all of that. Our model shows the continuing exchange that explains it. Next, we will follow a reversible chemical reaction before equilibrium and see how its two rates come to match. Here are the key notes. Pause if you would like time to copy them."
+      },
+      "visualBrief": {
+        "decision": "reuse and adjust",
+        "reuse": [
+          "src/slides/diagrams/kinds/chem-y12-m5/BottleDiagram.tsx",
+          "src/slides/SummarySlide.tsx"
+        ],
+        "need": "Return original sealed bottle and ongoing paths, then clear reasoning for notes. No separate inference-limit case or misconception card."
+      },
+      "teachingCues": [
+        "What still moves: restore bottle identity.",
+        "Next: short C2 handoff.",
+        "Key notes: speech completes before copying hold."
+      ],
+      "pilotOnly": true
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "body": "",
+      "durationInFrames": 600,
+      "caption": "Key notes: what to write in your book",
+      "voiceover": {
+        "text": ""
+      },
+      "visualBrief": {
+        "decision": "reuse",
+        "reuse": "src/slides/SummarySlide.tsx",
+        "need": "Stable quiet notes, no competing molecule motion or new reasoning. Select short content instead of shrinking."
+      },
+      "teachingCues": null,
+      "pilotOnly": true
+    }
+  ],
+  "notes": [
+    "Dynamic equilibrium: opposing processes continue at equal, non-zero average rates.",
+    "Amounts stay steady under unchanged conditions. They do not have to be equal.",
+    "Closed system: matter cannot enter or leave. Open system: matter can cross the boundary.",
+    "Static mechanical equilibrium: a whole object stays at rest with balanced forces."
+  ],
+  "applicationFacts": [
+    "Sealed molecule-tracking model: only gas-liquid transfer changes liquid count",
+    "Constant temperature and both region volumes",
+    "Several consecutive intervals, each 10 seconds",
+    "60 molecules leave liquid in each interval",
+    "120 tracked molecules in liquid at start and end of every interval"
+  ],
+  "applicationQuestions": [
+    "How many entered in each interval? Explain.",
+    "Has exchange stopped, or is it continuing in balance? Explain."
+  ],
+  "timingStatus": "Provisional silent preview durations. No recorded narration, alignment or captions. Dedicated prototype renders physical scene plan; production LessonVideo integration pending."
+}

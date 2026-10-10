@@ -397,6 +397,8 @@ export type CalculationPresentation = {
    * beat. Times are local scene frames measured from the selected narration. */
   focusedContext?: Array<{
     at: number;
+    /** Updating supporting facts for the same case need not clear its active reasoning. */
+    retainWorking?: boolean;
     title: string;
     lines: string[];
     task?: string;
