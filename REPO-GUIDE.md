@@ -32,7 +32,7 @@ The main risk is not code quality. It is that review artefacts (100+ files) vast
 | `scripts/` | About 210 scripts. About 120 are wired in `package.json`; others are documented in HANDOFF or docs. 60 old one-off patches were moved to `scripts/archive/one-off/` (paths inside them are not maintained) | Mixed |
 | `public/audio/` | Narration MP3 + alignment (about 1.1 GB, gitignored) | Generated media |
 | `public/assets/` | Artwork, lottie, fonts | Core media |
-| `out/` | Renders (gitignored). About 38 GB: `out/checks/` 16 GB (pinned runtimes plus duplicate copies), `out/prototypes/` 14 GB, `out/archives/` 8 GB | Generated |
+| `out/` | Renders (gitignored). About 26 GB after the 10 October cleanup: `out/prototypes/` 13 GB (exports and previews), `out/checks/` about 12 GB (pinned runtimes named in HANDOFF; do not touch). Media ZIPs were removed locally from `out/archives/`; they live on the GitHub release `workspace-media-2026-10-09` and download via `scripts/github-media-transfer.py` (see `out/archives/github-media-release-notes.md`) | Generated |
 | `docs/` | Loose docs, indexed in [docs/README.md](docs/README.md); stale ones carry a "Historical" banner | Mixed |
 | `docs/production/` | Briefs, reviews, gates, board, drafts (about 550 files) | Active but sprawling |
 | `HANDOFF.md` | Cross-computer restore notes, stacked "Latest" paragraphs | Read top paragraphs only |
