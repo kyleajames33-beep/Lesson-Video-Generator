@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "C3 and plants now have their essential staged models. Use the rich-visual selected sources; source/model and sampled native evidence pass. Narration and later gates remain pending.",
+  "status": "Chemistry C3 now selects the additive clear layout after teacher clutter feedback. Biology rich source unchanged. Silent source and sampled native evidence pass; voiced and later gates remain pending.",
   "routePath": "docs/production/module5-video-route-2026-10-10.json",
   "authorRevisionRecord": {
     "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/revision-record.json",
@@ -30,22 +30,22 @@
       "canonicalId": "chem-m5-c03",
       "label": "Chemistry C3: concentration and temperature",
       "source": {
-        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
-        "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+        "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
       },
       "teachingBrief": {
-        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/production-brief.json",
-        "sha256": "4903a99048ed12b86d79c6df2dce811f7dd1e8f791842b537573ead2bd9ddd90"
+        "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/production-brief.json",
+        "sha256": "4c549f911419f8167ade7cde0e6e956d7c151525dca435b4fe764880fb36b991"
       },
       "independentReview": {
-        "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.md",
-        "sha256": "38defec9de578c746bbe3d921cffbf9b5fd24eef9cba7ba92d4f4f72292c9d6d"
+        "path": "docs/production/module5-chemistry-layout-review-2026-10-10.md",
+        "sha256": "851f01818b633c7bb472d396d285b2e8773048987fd2c3bf0dcbed37d43d9a8c"
       },
-      "status": "Exact silent source/model and sampled native pass. Working animations integrated; fresh narration and later review remain pending.",
+      "status": "Clearer display candidate: silent exact-source and sampled native pass, plus separate root750px UI samples. Fresh narration and later gates pending.",
       "progression": {
         "planPath": "docs/production/course-progression-plan-2026-10-09.md",
         "prerequisiteKnowledge": "C2: equal opposing rates versus amounts, closed versus insulated systems and the declared one-to-one A/B model. Entry check: equal rates need not mean equal concentrations. Rate and concentration are reminded in speech; released/absorbed heat and the enthalpy sign are explained here before use.",
-        "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO₂(g) ⇌ N₂O₄(g), forward heat-releasing.",
+        "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO\u2082(g) \u21cc N\u2082O\u2084(g), forward heat-releasing.",
         "stopsAfter": "Distinguish immediate imposed change from subsequent reaction, explain direction and fixed-temperature versus temperature-dependent K; diagnose possible open-oven water loss. No pressure/volume disturbance, catalyst mechanism, Q, ICE, K-expression construction or practical conduct.",
         "nextLesson": "chem-m5-c04: gaseous volume/pressure and catalyst distinctions. C5 constructs equilibrium expressions; C6 calculations; C9 temperature/K data; p01 supervised named investigations remain separate."
       },
@@ -59,13 +59,17 @@
         "path": "docs/production/module5-c3-beginner-selected-transition-addendum-2026-10-10.md",
         "sha256": "b34e1b005deaf48642f39e7b1d6e8649f75fc1844ac185ab7812cfc5f2717f93"
       },
-      "visualReviewUrl": "http://127.0.0.1:8778/module5-rich-visual-review-2026-10-10/",
+      "visualReviewUrl": "http://127.0.0.1:8778/module5-chemistry-clear-review-2026-10-10/",
       "recordingStagePreflight": {
         "ready": true,
         "evidence": {
-          "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/validation-record.json",
-          "sha256": "9bea17f973fbe002711a1890aa86a606e1d003a8c045fc99f7b1cf61a4b2cb8e"
+          "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/validation-record.json",
+          "sha256": "515519573e32b53b331ba69a4f429f03ad507abf476388bb4223b4edde7a9099"
         }
+      },
+      "displayCorrection": {
+        "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/correction-record.json",
+        "sha256": "84abc2295fe46feb295c04fa3883a031f3b4605978c2864847fe7faaee1b0c18"
       }
     },
     {
@@ -127,7 +131,7 @@
       "progression": {
         "planPath": "docs/production/course-progression-plan-2026-10-09.md",
         "prerequisiteKnowledge": "C2: equal opposing rates versus amounts, closed versus insulated systems and the declared one-to-one A/B model. Entry check: equal rates need not mean equal concentrations. Rate and concentration are reminded in speech; released/absorbed heat and the enthalpy sign are explained here before use.",
-        "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO₂(g) ⇌ N₂O₄(g), forward heat-releasing.",
+        "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO\u2082(g) \u21cc N\u2082O\u2084(g), forward heat-releasing.",
         "stopsAfter": "Distinguish immediate imposed change from subsequent reaction, explain direction and fixed-temperature versus temperature-dependent K; diagnose possible open-oven water loss. No pressure/volume disturbance, catalyst mechanism, Q, ICE, K-expression construction or practical conduct.",
         "nextLesson": "chem-m5-c04: gaseous volume/pressure and catalyst distinctions. C5 constructs equilibrium expressions; C6 calculations; C9 temperature/K data; p01 supervised named investigations remain separate."
       },
@@ -180,5 +184,49 @@
   "richVisualCorrection": {
     "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/correction-record.json",
     "sha256": "e2bc8760fbf17a1db865d5306a844da648b4814a53cde6c8dc02477b730331d4"
-  }
+  },
+  "historicalSelections": [
+    {
+      "canonicalId": "chem-m5-c03",
+      "label": "Chemistry C3: concentration and temperature",
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      "teachingBrief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/production-brief.json",
+        "sha256": "4903a99048ed12b86d79c6df2dce811f7dd1e8f791842b537573ead2bd9ddd90"
+      },
+      "independentReview": {
+        "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.md",
+        "sha256": "38defec9de578c746bbe3d921cffbf9b5fd24eef9cba7ba92d4f4f72292c9d6d"
+      },
+      "status": "Exact silent source/model and sampled native pass. Working animations integrated; fresh narration and later review remain pending.",
+      "progression": {
+        "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+        "prerequisiteKnowledge": "C2: equal opposing rates versus amounts, closed versus insulated systems and the declared one-to-one A/B model. Entry check: equal rates need not mean equal concentrations. Rate and concentration are reminded in speech; released/absorbed heat and the enthalpy sign are explained here before use.",
+        "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO\u2082(g) \u21cc N\u2082O\u2084(g), forward heat-releasing.",
+        "stopsAfter": "Distinguish immediate imposed change from subsequent reaction, explain direction and fixed-temperature versus temperature-dependent K; diagnose possible open-oven water loss. No pressure/volume disturbance, catalyst mechanism, Q, ICE, K-expression construction or practical conduct.",
+        "nextLesson": "chem-m5-c04: gaseous volume/pressure and catalyst distinctions. C5 constructs equilibrium expressions; C6 calculations; C9 temperature/K data; p01 supervised named investigations remain separate."
+      },
+      "remaining": [
+        "Continuous/narrow preview checks across the complete selected lesson",
+        "Fresh narration, measured cues and holds",
+        "Exact voiced preview and human listening",
+        "Full export and current public-release gates"
+      ],
+      "transitionReview": {
+        "path": "docs/production/module5-c3-beginner-selected-transition-addendum-2026-10-10.md",
+        "sha256": "b34e1b005deaf48642f39e7b1d6e8649f75fc1844ac185ab7812cfc5f2717f93"
+      },
+      "visualReviewUrl": "http://127.0.0.1:8778/module5-rich-visual-review-2026-10-10/",
+      "recordingStagePreflight": {
+        "ready": true,
+        "evidence": {
+          "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/validation-record.json",
+          "sha256": "9bea17f973fbe002711a1890aa86a606e1d003a8c045fc99f7b1cf61a4b2cb8e"
+        }
+      }
+    }
+  ]
 }

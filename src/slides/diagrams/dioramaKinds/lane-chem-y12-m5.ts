@@ -6,6 +6,7 @@
 
 import type {DioramaKindMap} from './types';
 import {Module5DisturbanceDiagram} from '../kinds/chem-y12-m5/Module5DisturbanceDiagram';
+import {Module5DisturbanceClearDiagram} from '../kinds/chem-y12-m5/Module5DisturbanceClearDiagram';
 import {Module5ApproachDiagram} from '../kinds/chem-y12-m5/Module5ApproachDiagram';
 import {Module5ExchangeSelector} from '../kinds/chem-y12-m5/Module5ExchangeDiagram';
 import {NetIonicDiagram} from '../kinds/chem-y12-m5/NetIonicDiagram';
@@ -38,6 +39,7 @@ import {ColourimetryDiagram} from '../kinds/chem-y12-m5/ColourimetryDiagram';
 
 export const KINDS: DioramaKindMap = {
   chem12m5Disturbance: Module5DisturbanceDiagram,
+  chem12m5DisturbanceClear: Module5DisturbanceClearDiagram,
   chem12m5Approach: Module5ApproachDiagram,
   chem12m5Exchange: Module5ExchangeSelector,
   chem12m5NetIonic: NetIonicDiagram,

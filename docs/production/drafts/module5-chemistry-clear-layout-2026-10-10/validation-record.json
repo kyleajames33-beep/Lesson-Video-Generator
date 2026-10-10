@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "scope": "Source/tool checks only. No listening or whole-lesson continuous/release approval.",
+  "finalTypeCheck": {
+    "command": "npm run check",
+    "exitCode": 0
+  },
+  "selectedLessonValidation": {
+    "command": "node scripts/validate-lesson.mjs docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+    "exitCode": 0,
+    "limitation": "Existing advisory suggestions for callouts and named scene types retained. No new instructional feature quota imposed."
+  },
+  "recordingStage": {
+    "command": "node scripts/check-production-brief.mjs docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/production-brief.json --stage=recording",
+    "exitCode": 0,
+    "brief": {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/production-brief.json",
+      "sha256": "4c549f911419f8167ade7cde0e6e956d7c151525dca435b4fe764880fb36b991"
+    },
+    "report": {
+      "ready": true,
+      "stage": "recording",
+      "blockers": [],
+      "pending": [
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Exact voiced preview: pending"
+        },
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Human listening: pending"
+        }
+      ],
+      "source": {
+        "lessonPath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "lessonSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+    }
+  }
+}

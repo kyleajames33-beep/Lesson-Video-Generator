@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+    "lessonSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C2: equal opposing rates versus amounts, closed versus insulated systems and the declared one-to-one A/B model. Entry check: equal rates need not mean equal concentrations. Rate and concentration are reminded in speech; released/absorbed heat and the enthalpy sign are explained here before use.",
+    "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO\u2082(g) \u21cc N\u2082O\u2084(g), forward heat-releasing.",
+    "stopsAfter": "Distinguish immediate imposed change from subsequent reaction, explain direction and fixed-temperature versus temperature-dependent K; diagnose possible open-oven water loss. No pressure/volume disturbance, catalyst mechanism, Q, ICE, K-expression construction or practical conduct.",
+    "nextLesson": "chem-m5-c04: gaseous volume/pressure and catalyst distinctions. C5 constructs equilibrium expressions; C6 calculations; C9 temperature/K data; p01 supervised named investigations remain separate."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/module5-beginner-next-selection-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Distinguish an imposed change from subsequent net reaction, predict its direction under stated conditions, and explain fixed-temperature versus temperature-dependent K.",
+    "causalExplanation": "The controlled transfer directly changes one concentration, then the model rate imbalance changes both forms towards a new limiting state. Fixed temperature retains K. For the separate heat-releasing association, temperature changes K and the preferred equilibrium composition without an imposed concentration jump at fixed volume.",
+    "conversationalApproach": "Every accepted beginner spoken paragraph is preserved exactly. First-use terms have plain meanings; observations precede causes and conclusions. No added spoken metadata or unexplained cuts.",
+    "openingDecision": "The accepted rhetorical addition question uses the large A-only transfer model. Only A jumps directly; B changes later through reaction. Existing generic hook fallback is avoided by this selected diagramBoard opt-in.",
+    "understandingCheck": "Two independent experiments with complete prompts and separate fresh prompt/feedback segments. Remove A: immediate concentration, later rate reason/direction and K. Cool written exothermic NO\u2082/N\u2082O\u2084: N\u2082O\u2084 and K direction justified by heat release. Each planned response interval is twelve seconds after full prompt, not measured or universal learner timing.",
+    "curriculumScope": "Chemistry Stage 6 Syllabus (2017), Year 12 Module 5, chem-m5-c03 at route playlist position 4. Candidate contribution to C-disturbances, C-collision-observations, C-heat and C-temperature-K; official cached paragraph scope retained in preparation. Explanation does not establish investigation/practical conduct, complete action coverage or release."
+  },
+  "scenes": [
+    {
+      "sceneId": "c3-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Existing selected Module 5 title treatment, fixed title and a short silent reading hold. No added narrated metadata or particle backdrop. This identifies the two disturbances without claiming the whole module. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "Silent title.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "Stable reading hold; all actual delivery and caption clearance remain pending."
+    },
+    {
+      "sceneId": "c3-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"sceneId\": \"c3-hook\", \"mode\": \"additionHook\", \"key\": \"event\", \"phrase\": \"Now we briefly add more A\", \"localFrame\": 476, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-hook\", \"mode\": \"additionHook\", \"key\": \"response\", \"phrase\": \"Any extra B has to be made by reaction\", \"localFrame\": 720, \"status\": \"estimated-not-measured\"}] Estimated local frames only. Use fresh alignment before voiced production.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "the jump represents an imposed transfer, not instant product formation. Give the completed immediate state a deliberate reading hold before later motion. Do not animate a count bounce or a product jump."
+    },
+    {
+      "sceneId": "c3-add",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"sceneId\": \"c3-add\", \"mode\": \"addA\", \"key\": \"event\", \"phrase\": \"A's concentration rises immediately\", \"localFrame\": 682, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-add\", \"mode\": \"addA\", \"key\": \"rateReason\", \"phrase\": \"Straight after mixing\", \"localFrame\": 772, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-add\", \"mode\": \"addA\", \"key\": \"response\", \"phrase\": \"A now falls from its jump\", \"localFrame\": 1350, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-add\", \"mode\": \"addA\", \"key\": \"limit\", \"phrase\": \"In this model, the new equilibrium\", \"localFrame\": 1582, \"status\": \"estimated-not-measured\"}] Estimated local frames only. Use fresh alignment before voiced production.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "retain original / immediately after addition / later equilibrium reference. Reveal `More A and B than before, in this model` only with the final explanation. Show the exact limiting reference separately from the finite trace. Conditions remain visible; technical first-order assumptions remain in silent model notes."
+    },
+    {
+      "sceneId": "c3-remove",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"sceneId\": \"c3-remove\", \"mode\": \"removeB\", \"key\": \"event\", \"phrase\": \"B drops immediately\", \"localFrame\": 206, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-remove\", \"mode\": \"removeB\", \"key\": \"response\", \"phrase\": \"B starts rising\", \"localFrame\": 656, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-remove\", \"mode\": \"removeB\", \"key\": \"originalCompare\", \"phrase\": \"But compare B with its original level\", \"localFrame\": 977, \"status\": \"estimated-not-measured\"}] Estimated local frames only. Use fresh alignment before voiced production.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "the original reference is essential evidence, not decoration. Hold the three reference states after the final contrast. No continuous-removal arrow, product-success badge or anthropomorphic push-back motion."
+    },
+    {
+      "sceneId": "c3-principle",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"sceneId\": \"c3-principle\", \"mode\": \"fixedK\", \"key\": \"defineK\", \"phrase\": \"We also need a new term\", \"localFrame\": 682, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-principle\", \"mode\": \"fixedK\", \"key\": \"sameK\", \"phrase\": \"Adding or removing A or B\", \"localFrame\": 1209, \"status\": \"estimated-not-measured\"}] Estimated local frames only. Use fresh alignment before voiced production.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "define the term before using it to make a decision. Retain only the reference pair needed for this comparison; do not stack full addition and removal explanations beside the definition. Hold the unchanged badge and fixed-temperature condition."
+    },
+    {
+      "sceneId": "c3-temperature",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"sceneId\": \"c3-temperature\", \"mode\": \"associationHeat\", \"key\": \"association\", \"phrase\": \"Two nitrogen dioxide molecules\", \"localFrame\": 129, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature\", \"mode\": \"associationHeat\", \"key\": \"exothermic\", \"phrase\": \"A heat-releasing reaction is exothermic\", \"localFrame\": 450, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature\", \"mode\": \"associationHeat\", \"key\": \"reverse\", \"phrase\": \"The reverse direction absorbs heat\", \"localFrame\": 746, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature\", \"mode\": \"associationHeat\", \"key\": \"heating\", \"phrase\": \"Heating favours\", \"localFrame\": 862, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature\", \"mode\": \"associationHeat\", \"key\": \"cooling\", \"phrase\": \"Cooling favours\", \"localFrame\": 1132, \"status\": \"estimated-not-measured\"}] Estimated local frames only. Use fresh alignment before voiced production.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "preserve two NO2 versus one N2O4, conserving two N and four O atoms. These are net-relationship illustrations, not measured events or a full collision mechanism. Final copy: `Heating favours splitting`; `Cooling favours joining`, attached to the written directions. Keep the heat meaning readable through each prediction. Brown/colourless swatches are schematic context, never concentration measurements. Do not treat heat as a chemical species in K."
+    },
+    {
+      "sceneId": "c3-temperature-response",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx; same teaching mode with clear layout",
+      "teachingReason": "Preserve the explanatory model. Separate equation/context from the main graph or molecules and a single current explanation; reduce secondary type and repeated prose.",
+      "narrationCue": "[{\"sceneId\": \"c3-temperature-response\", \"mode\": \"temperatureResponse\", \"key\": \"event\", \"phrase\": \"Now separate the temperature change\", \"localFrame\": 604, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature-response\", \"mode\": \"temperatureResponse\", \"key\": \"continuousConcentrations\", \"phrase\": \"Their concentrations therefore do not jump\", \"localFrame\": 990, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature-response\", \"mode\": \"temperatureResponse\", \"key\": \"defineNewK\", \"phrase\": \"K has a value for the new temperature\", \"localFrame\": 1183, \"status\": \"estimated-not-measured\"}, {\"sceneId\": \"c3-temperature-response\", \"mode\": \"temperatureResponse\", \"key\": \"response\", \"phrase\": \"Hold the new temperature fixed\", \"localFrame\": 1595, \"status\": \"estimated-not-measured\"}] Estimated local frames only. Use fresh alignment before voiced production.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "K follows temperature, not conversion progress. Heating does not lower the activation barrier as a catalyst does. Maintain fixed volume and contained material. If implementation uses a finite heating ramp, label it and let K follow that ramp. Label a finite trace `Approaching new balance`; an exact limiting state is a separate reference. Hold the distinction before changing scene."
+    },
+    {
+      "sceneId": "c3-water",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx, full-width text-only board",
+      "teachingReason": "Existing editorial comparison shell. Show `Heating only: material retained`, then `Water removal: temperature fixed`. On \"two changes\", identify `Open oven: heating + possible water loss`. No hydrate equation, cobalt-coordination illustration, invented data or colour guarantee is needed. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "[{\"field\":\"bullets[0].at\",\"phrase\":\"That combines\",\"unit\":\"seconds\",\"estimatedAt\":0.8},{\"field\":\"bullets[1].at\",\"phrase\":\"For a temperature-only\",\"unit\":\"seconds\",\"estimatedAt\":21.433333333333334},{\"field\":\"bullets[2].at\",\"phrase\":\"For a water-removal\",\"unit\":\"seconds\",\"estimatedAt\":27.866666666666667}] Word-position estimates only. Final cues must use fresh selected alignment.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "explain the confound, not a complete practical procedure. The two control cards remain stable for comparison. Do not place a drying arrow on the contained temperature-only condition. Supervised investigation remains open."
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/QuickCheckSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx, focusedContext selected opt-in",
+      "teachingReason": "Existing QuickCheckSlide/evidence board, selected-only layout. Short task: `Remove A: immediate change, later direction, K?`. Own stimulus: `A \u21cc B`, `Remove A`, `Temperature and volume fixed`, `Reclosed after removal`, and the declared rate model. No temperature experiment or second equation is on this screen. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "[{\"field\":\"calculationPresentation.stages[0].lineAts\",\"phrases\":[\"Only A drops\"],\"unit\":\"frames\",\"estimatedAt\":[1093]},{\"field\":\"calculationPresentation.stages[1].lineAts\",\"phrases\":[\"Less A initially\",\"B has not changed yet\"],\"unit\":\"frames\",\"estimatedAt\":[1196,1299]},{\"field\":\"calculationPresentation.stages[2].lineAts\",\"phrases\":[\"B is now\",\"A starts recovering\"],\"unit\":\"frames\",\"estimatedAt\":[1453,1646]},{\"field\":\"calculationPresentation.stages[3].lineAts\",\"phrases\":[\"K stays\",\"temperature stayed fixed\"],\"unit\":\"frames\",\"estimatedAt\":[1762,1839]}] Word-position estimates only. Final cues must use fresh selected alignment.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "reveal `Only A drops` at its spoken cue, then `A to B initially slower`, then `B to A initially faster`, and finally `A partly recovers; B falls` plus `Same K`. Keep one active reason and a compact original reference. Match each later conclusion to its own phrase. No solved arrow, result graph or K verdict during the attempt. The protected interval starts after prompt audio and ends at first audible/visible feedback."
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/QuickCheckSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx, focusedContext selected opt-in",
+      "teachingReason": "Same useful quick-check treatment, reset for its own stimulus: `2NO\u2082(g) \u21cc N\u2082O\u2084(g)`, `Cool`, `Closed; fixed volume`, `Forward releases heat: \u0394H < 0`. Short task: `After cooling: N\u2082O\u2084 and K?`. Keep both demands visible. Do not retain the irrelevant A-removal working beside this attempt. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "[{\"field\":\"calculationPresentation.stages[0].lineAts\",\"phrases\":[\"Cooling favours\",\"Here that is\"],\"unit\":\"frames\",\"estimatedAt\":[1222,1299]},{\"field\":\"calculationPresentation.stages[1].lineAts\",\"phrases\":[\"contains more\"],\"unit\":\"frames\",\"estimatedAt\":[1441]},{\"field\":\"calculationPresentation.stages[2].lineAts\",\"phrases\":[\"K is larger\"],\"unit\":\"frames\",\"estimatedAt\":[1557]}] Word-position estimates only. Final cues must use fresh selected alignment.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "reveal the heat-releasing direction, then `More N\u2082O\u2084 at equilibrium`, then `K larger at lower temperature`, each on its spoken reason/result. No colour verdict, solved direction or K answer during the protected interval. Hold the complete reasoning briefly before the recap."
+    },
+    {
+      "sceneId": "c3-summary",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "SummarySlide with sequential anchors `What changed directly?`, `Which direction is initially faster?`, and `Same or changed temperature?`. The appropriate same-K versus heat-direction reminders appear only with the corresponding sentence. Separate C4 handoff. No new pressure graph, numerical K expression or catalyst mechanism. Stable reading hold after the completed recap is deliberate. Current source uses this existing supported treatment; exact fit and continuous playback are pending.",
+      "narrationCue": "[{\"field\":\"revealDelays.takeawayAts\",\"phrases\":[\"Start with what changed\",\"Then ask which reaction\",\"For heating or cooling\"],\"unit\":\"frames\",\"estimatedAt\":[13,65,566]}] Word-position estimates only. Final cues must use fresh selected alignment.",
+      "motionPurpose": "Narrated-order reveals and stable reasoning/response holds. Two separate tasks never share stimuli or feedback.",
+      "holdPurpose": "Stable reading hold; all actual delivery and caption clearance remain pending."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Independent Sol 6.1 source/layout reviewer",
+    "evidence": {
+      "path": "docs/production/module5-chemistry-layout-review-2026-10-10.md",
+      "sha256": "851f01818b633c7bb472d396d285b2e8773048987fd2c3bf0dcbed37d43d9a8c"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Display-only Chemistry formatting correction. Accepted narration, durations, holds and cues unchanged. Current source and sampled native layout reviewed; recording preflight is not export or public-release approval.",
+  "preparationReview": {
+    "status": "pass",
+    "reviewer": "Sol 6.1 preparation reviewer",
+    "evidence": {
+      "path": "docs/production/module5-beginner-next-preparation-review-2026-10-10.md",
+      "sha256": "c939d86f608969eee9ffb67f316f65d675a3274be6ed5704f445d65ca2519429"
+    },
+    "limitation": "Earlier exact Markdown only. scriptReview below remains pending for this JSON."
+  },
+  "visualIntegration": {
+    "status": "pass-source-and-sampled-native",
+    "component": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "reason": "Latest user screenshot reports visual clutter despite earlier source/native crop checks. Calm hierarchy and explicit grouping require a fresh reading-load review.",
+    "evidence": {
+      "path": "docs/production/module5-chemistry-layout-review-2026-10-10.md",
+      "sha256": "851f01818b633c7bb472d396d285b2e8773048987fd2c3bf0dcbed37d43d9a8c"
+    },
+    "limitation": "Silent source, independently sampled native frames and separate750px root playback samples. Complete voiced preview and listening remain pending."
+  }
+}

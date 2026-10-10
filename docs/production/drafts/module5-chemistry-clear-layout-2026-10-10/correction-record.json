@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "status": "display-correction-source-and-sampled-native-reviewed",
+  "parent": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+    "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+  },
+  "source": {
+    "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+    "sha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+  },
+  "component": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "sha256": "7f2d02bb3704e406bc55dd580a9cfa6264fb30378f692f2aea77afc23464f075"
+  },
+  "mathDependency": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+    "sha256": "5c418716884f1c15a9cab3d9f8cb821fed8c47bc605cdce0f790e60441e91c07"
+  },
+  "independentReview": {
+    "path": "docs/production/module5-chemistry-layout-review-2026-10-10.md",
+    "sha256": "851f01818b633c7bb472d396d285b2e8773048987fd2c3bf0dcbed37d43d9a8c"
+  },
+  "uiObservations": {
+    "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/ui-observations.json",
+    "sha256": "f10f69c5b92e312bc0cbdbd09263a5e98d12ebdfe5e055d3dd5806ab03d6e01a"
+  },
+  "nativeManifests": [
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/native02-frames.json",
+      "sha256": "2188c1fb7b7edbf223d1f0284bd22e04a83b32206d49f1e93c321a590000c880"
+    },
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/native03-frames.json",
+      "sha256": "99f7cb65cb76da16b632fb24e11795198cd283f3edf354177d29ff70e7ad94fd"
+    },
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/native04-frames.json",
+      "sha256": "242274edf58a35cb89d547efc3d9cacf049c43d8c2c1e2f0701856ad622c7b5c"
+    }
+  ],
+  "diagnosticComponentSnapshots": [
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/native02-component.snapshot.txt",
+      "sha256": "dde79f41f2ce045f04e039190f80c50d871a851cb1339a5ac6372d63378067c9"
+    },
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/native03-component.snapshot.txt",
+      "sha256": "91b229ff2785850b6c8eff50b28e8251a1ae881162102619660a90b62eb2e493"
+    }
+  ],
+  "preservation": "Only six diagram.kind selections change in lesson JSON. All words, semantic cues, timings, protected holds, duration and other scene properties deep-equal the parent. Old parent component/math and Biology remain unchanged.",
+  "nativeScope": "Native02 covers32 states across all six modes. Native04 covers six final temperature-response states and supersedes that mode in native02/03. Other five modes drawing functions unchanged. Native01 aborted attempt excluded.",
+  "remaining": [
+    "Whole-lesson silent review",
+    "Fresh narration and measured alignment",
+    "Exact voiced preview and human listening",
+    "Existing complete-package release gate"
+  ]
+}

@@ -1,5 +1,20 @@
 # Production Memory
 
+## 10 October: review hierarchy at the actual player size
+
+- An uncropped native frame is not sufficient evidence of clarity. Check the
+  selected graph or worked example at a viewing size comparable with the
+  teacher's screenshot. Similar large bold type everywhere makes every item
+  compete for attention.
+- Give the teaching object the main space. Separate equation and conditions
+  into a compact context strip. Use calmer secondary type and one current
+  explanation card. Keep units, conditions and important reference results.
+- Check both the event and the later settled stage. Labels that clear an
+  event line can still cross a moving curve later. Preserve diagnostic evidence
+  and recheck the bounded affected mode after correction.
+- Chemistry C3's current additive clear-layout selection and independent
+  review supersede the earlier rich screen for production. Biology is unchanged.
+
 ## 10 October: prototypes must reach the selected teaching scenes
 
 - The teacher asks where the earlier prototypes, dioramas, animations and

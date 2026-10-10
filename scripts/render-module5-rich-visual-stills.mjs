@@ -14,7 +14,7 @@ const publicDir = path.resolve(output, 'public');
 fs.cpSync('public/fonts', path.join(publicDir, 'fonts'), {recursive:true});
 const serveUrl = await bundle({entryPoint:path.resolve('src/dev/release-entry.tsx'),publicDir,outDir:path.resolve(output,'bundle')});
 const browser = await openBrowser('chrome');
-const recordPath = 'docs/production/drafts/module5-rich-visuals-2026-10-10/integration-record.json';
+const recordPath = process.argv[4] ?? 'docs/production/drafts/module5-rich-visuals-2026-10-10/integration-record.json';
 const record = JSON.parse(fs.readFileSync(recordPath, 'utf8'));
 if(selectedSceneIds?.some(id=>!record.lessons.some(item=>item.changedSceneIds.includes(id)))) throw Error('Unknown selected scene.');
 const frames = [];
@@ -38,5 +38,6 @@ try {
  }
 } finally {await browser.close({silent:true});}
 const inputPaths = [recordPath,'src/slides/ConceptSlide.tsx','src/lesson/types.ts', ...record.lessons.flatMap(item=>[item.source.path,item.component]), 'src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts','src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts'];
+if(record.lessons.some(item=>item.component.endsWith('/Module5DisturbanceClearDiagram.tsx'))) inputPaths.push('src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx');
 fs.writeFileSync(`${output}/frames.json`,JSON.stringify({schemaVersion:1,scope:'Native full lesson-renderer stills with estimated local narration cues. No continuous motion, listening, device or release approval.', selectedSceneIds:selectedSceneIds ?? record.lessons.flatMap(item=>item.changedSceneIds), inputs:inputPaths.map(file=>({path:file,sha256:sha256(fs.readFileSync(file))})),frames},null,2)+'\n',{flag:'wx'});
 console.log(`${frames.length} native stills saved at ${output}.`);

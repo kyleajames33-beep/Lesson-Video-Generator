@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex Sol 6.1 independent layout review",
+  "status": "pass-scoped-exact-source-and-sampled-native-layout",
+  "scope": "Independent exact source/model and sampled native hierarchy/spacing review only. No listening or continuous playback approval.",
+  "baselineInputs": [
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "sha256": "5c418716884f1c15a9cab3d9f8cb821fed8c47bc605cdce0f790e60441e91c07"
+    },
+    {
+      "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-03/chemistry-c3-remove-1001.png",
+      "sha256": "7a718eae3863b449a4448e53dcb9b2b0470fe2a093acd25d3290ea0b87317c28"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+      "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+    }
+  ],
+  "observations": [
+    "The baseline native has no canvas crop, but this does not establish a calm reading hierarchy.",
+    "Title, equation, conditions, graph title/ticks, graph phase labels, card heading/values/conclusion and footer all use near-equal large bold type. Simultaneous reading demand dominates the plot.",
+    "Card duplicates Final equilibrium and Reference values as two large headings. Long conditions and full-width footer add competing visual blocks.",
+    "Graph plus right reference card is a useful arrangement worth preserving; semantic A/B color pairing should remain stable."
+  ],
+  "recommendations": [
+    "Make the graph the dominant teaching object. Keep title distinct, equation secondary and conditions compact but available.",
+    "Use smaller stable type tiers: title approximately54-58, equation38-42, conditions30-32, axes/ticks28-32, card eyebrow28-30/header34, values40-44, conclusions30-32, footer28 at native1080p. Check actual fullwidth/native and scaled Player rather than assuming numbers fit.",
+    "Combine reference heading into one concise phrase; preserve finite-trace versus exact-reference meaning with secondary text.",
+    "Use a light card border/tint and whitespace; avoid adding another highlight color or decorative motion.",
+    "Preserve coverage, arithmetic, accepted narration, cue timings and distinct direct-event/reaction/late-reference phases. Keep essential conditions and useful established results visible."
+  ],
+  "pending": [
+    "Measured narration cue reconciliation",
+    "Human listening",
+    "Exact voiced preview and export/public package review"
+  ],
+  "sourceCheck": "Strict deep equality after reverting only six diagram.kind changes. All other scene and lesson fields identical. Current component imports unchanged reviewed math; local cue and response gating inspected.",
+  "candidateImprovement": "RemoveB now has quieter conditions, smaller axis labels, separated graph/reference card, single reference heading and stronger value hierarchy. Much reduced simultaneous reading demand. All six modes sampled.",
+  "candidateInputsHistorical": [
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/integration-record.json",
+      "sha256": "3b12fc92f35289acdc4d3535e215d475f9368b2140ca99e6e3731b64a85842ed"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "a91636456c88911020f0904abc8c72359a4aef7828fc480d1f4308b7ac239224"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "388d9fa2e2ad1bb3a3153f1dc5e5d61900f62610e47d2b0bf060a93ecc410491"
+    },
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+      "sha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+      "sha256": "dde79f41f2ce045f04e039190f80c50d871a851cb1339a5ac6372d63378067c9"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+      "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "sha256": "fe7ed222fc46c23944f0dd5a9ee8ded6b74c7f5385aca02b2406a0e7a27d8418"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts",
+      "sha256": "acd188ae491edb3066c036502438b23693143c01721ebfd747594d521e2e1bf2"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts",
+      "sha256": "ef171ad687e03b79a6aebd12830984a71aee931e8b84fd9b66a5e41396775f4b"
+    }
+  ],
+  "currentInputs": [
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/integration-record.json",
+      "sha256": "3b12fc92f35289acdc4d3535e215d475f9368b2140ca99e6e3731b64a85842ed"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "a91636456c88911020f0904abc8c72359a4aef7828fc480d1f4308b7ac239224"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "388d9fa2e2ad1bb3a3153f1dc5e5d61900f62610e47d2b0bf060a93ecc410491"
+    },
+    {
+      "path": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+      "sha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+      "sha256": "7f2d02bb3704e406bc55dd580a9cfa6264fb30378f692f2aea77afc23464f075"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+      "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "sha256": "fe7ed222fc46c23944f0dd5a9ee8ded6b74c7f5385aca02b2406a0e7a27d8418"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts",
+      "sha256": "acd188ae491edb3066c036502438b23693143c01721ebfd747594d521e2e1bf2"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts",
+      "sha256": "ef171ad687e03b79a6aebd12830984a71aee931e8b84fd9b66a5e41396775f4b"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "sha256": "5c418716884f1c15a9cab3d9f8cb821fed8c47bc605cdce0f790e60441e91c07"
+    }
+  ],
+  "diagnosticHistory": [
+    {
+      "id": "temperature-step-line-label-collision",
+      "evidence": [
+        "chemistry-c3-temperature-response-628",
+        "chemistry-c3-temperature-response-1792"
+      ],
+      "finding": "Vertical dashed T-step line crosses No concentration step label. Move label into clear space while retaining its cue and meaning."
+    },
+    {
+      "id": "temperature-label-trace-collision",
+      "evidence": "native03 temperature-response1792",
+      "finding": "First correction cleared event line but rising orange trace touched label. Final y220 correction verified clear."
+    }
+  ],
+  "currentFindings": [],
+  "nativeEvidenceHistorical": {
+    "manifestPath": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/frames.json",
+    "manifestSha256": "f4125ba1dc8c753334d25877911e8c02c52638c64dcb1ba9bd9a1544d9e89c03",
+    "all32HashesDimensionsSourceAndInputBindingsPass": true,
+    "actuallyOpenedFrames": [
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-hook",
+        "localFrame": 500,
+        "globalFrame": 596,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-hook-500.png",
+        "sha256": "c5a9675d5334fc80f5f9429c996c05c4c85799f13e721ed8d0ac7255a55f7d56",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-add",
+        "localFrame": 796,
+        "globalFrame": 1987,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-add-796.png",
+        "sha256": "fe1ceac0f374319820e9521300a9e30d164cc0897b567c72eca13ee8c4057c8b",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-remove",
+        "localFrame": 230,
+        "globalFrame": 3429,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-remove-230.png",
+        "sha256": "e1b34490dbed2679f5f1319ed3cb61b84f9ad8f1eac16af2b8cbf7c7247a1f7f",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-remove",
+        "localFrame": 1001,
+        "globalFrame": 4200,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-remove-1001.png",
+        "sha256": "9905fa1b44121cc8002dbfb9cb5583bd4bbf0b9c6853e4db15b5baab4f6c8eac",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-principle",
+        "localFrame": 1233,
+        "globalFrame": 6118,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-principle-1233.png",
+        "sha256": "e1d95689df104bbce45e5421331b26226a2127ab46756042bd87401ae7754406",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature",
+        "localFrame": 886,
+        "globalFrame": 7445,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-temperature-886.png",
+        "sha256": "98a6d85cee986c9c52e48c0d69ae0544e093c22d99127db5a85594341f4c63ec",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 628,
+        "globalFrame": 8951,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-temperature-response-628.png",
+        "sha256": "efb2c5840e094c71314fa876358d5312f81c5a8034e9f78521b884d179c93a58",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 1792,
+        "globalFrame": 10115,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-temperature-response-1792.png",
+        "sha256": "d08f38e1c3a49025898da91124a0c8095b574c47aa1148e03322bcef5460f8db",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      }
+    ]
+  },
+  "nativeEvidence": {
+    "manifests": [
+      {
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/frames.json",
+        "sha256": "f4125ba1dc8c753334d25877911e8c02c52638c64dcb1ba9bd9a1544d9e89c03"
+      },
+      {
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-03/frames.json",
+        "sha256": "309ba5f94e08699b9d1db81fba6a5ceaf5571b0baf7cef9a5f24368a96bb535d"
+      },
+      {
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-04/frames.json",
+        "sha256": "2e2f7810dbb70d796f0d5e3205c46f08950d8a8fd7fc105702a4be78e3f12f3a"
+      }
+    ],
+    "all44ArchivedPngHashesSourceBindingsAnd1920x1080DimensionsPass": true,
+    "finalManifestAllInputsCurrent": true,
+    "finalComposition": "26 unaffected native02 states plus six final native04 temperature-response states. Native03 and superseded native02 temperature-response states remain diagnostic.",
+    "actuallyOpenedCurrentFrames": [
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-hook",
+        "localFrame": 500,
+        "globalFrame": 596,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-hook-500.png",
+        "sha256": "c5a9675d5334fc80f5f9429c996c05c4c85799f13e721ed8d0ac7255a55f7d56",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-add",
+        "localFrame": 796,
+        "globalFrame": 1987,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-add-796.png",
+        "sha256": "fe1ceac0f374319820e9521300a9e30d164cc0897b567c72eca13ee8c4057c8b",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-remove",
+        "localFrame": 230,
+        "globalFrame": 3429,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-remove-230.png",
+        "sha256": "e1b34490dbed2679f5f1319ed3cb61b84f9ad8f1eac16af2b8cbf7c7247a1f7f",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-remove",
+        "localFrame": 1001,
+        "globalFrame": 4200,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-remove-1001.png",
+        "sha256": "9905fa1b44121cc8002dbfb9cb5583bd4bbf0b9c6853e4db15b5baab4f6c8eac",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-principle",
+        "localFrame": 1233,
+        "globalFrame": 6118,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-principle-1233.png",
+        "sha256": "e1d95689df104bbce45e5421331b26226a2127ab46756042bd87401ae7754406",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature",
+        "localFrame": 886,
+        "globalFrame": 7445,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-02/chemistry-c3-temperature-886.png",
+        "sha256": "98a6d85cee986c9c52e48c0d69ae0544e093c22d99127db5a85594341f4c63ec",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 628,
+        "globalFrame": 8951,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-04/chemistry-c3-temperature-response-628.png",
+        "sha256": "9ae91bb8f2531dbbb5c0879e8222514d647bf5aa510406cdf997db05ee952624",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 1619,
+        "globalFrame": 9942,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-04/chemistry-c3-temperature-response-1619.png",
+        "sha256": "16202b646169694d8246cca744ad4c54e12cb2e6763e0edefbe198b7a639235b",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 1792,
+        "globalFrame": 10115,
+        "path": "out/prototypes/module5-chemistry-clear-2026-10-10/native-04/chemistry-c3-temperature-response-1792.png",
+        "sha256": "d87b950d2b5c1ad3414553ef214ed1ea843f92aa0f1fd73a4cad2f0336a02ddb",
+        "sourcePath": "docs/production/drafts/module5-chemistry-clear-layout-2026-10-10/lesson.json",
+        "sourceSha256": "1596fa24436833162e4764fbc12e680f936e8269134559bedfd6badff21370ed"
+      }
+    ],
+    "scope": "Nine current actual PNGs opened across all six visual modes. Three superseded temperature-response PNGs also opened diagnostically."
+  },
+  "sourceFollowup": "Exact one-line reverse substitution reproduces native02 component SHA dde79f... and native03 SHA91b229... from final component. Other five mode drawing functions unchanged; pure imported model hash bound in final manifest. No semantic cue or timing change.",
+  "resolvedFindings": [
+    "Smaller text/weights, compact conditions and single reference heading create hierarchy rather than merely avoiding crop.",
+    "No concentration step label now sits above final trace and right of dashed event line.",
+    "Useful conditions, model units, original B reference and finite-trace distinction retained."
+  ],
+  "rootAttributedUiEvidence": "Root reports actual750px Player checking and active temperature-response observation with no captured browser errors. Reviewer did not independently observe scaled UI or continuous playback.",
+  "recommendation": "Pass exact silent source and sampled native layout scope only. Mutable brief/gate workflow fields excluded; no release or recorded alignment claim."
+}

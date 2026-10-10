@@ -1,0 +1,566 @@
+{
+  "lesson": {
+    "title": "Disturbing equilibrium: concentration and temperature",
+    "subtitle": "Separate the direct change from the reaction afterwards",
+    "subject": "Chemistry",
+    "yearLevel": "Year 12",
+    "module": "Module 5",
+    "lesson": "Lesson 3",
+    "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+    "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+    "syllabusDotPoints": [
+      "Candidate explanation: concentration and temperature disturbances, with stated conditions. Practical investigation and action approval remain pending."
+    ],
+    "nesaOutcomes": [
+      "CH12-12"
+    ],
+    "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+    "lessonIntent": "Distinguish an imposed change from subsequent net reaction, predict its direction under stated conditions, and explain fixed-temperature versus temperature-dependent K.",
+    "examSkill": "Explain a supplied disturbance using initial rate imbalance or the stated heat-releasing direction.",
+    "productionRole": "production",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "introDurationInFrames": 0,
+    "scenes": [
+      {
+        "id": "c3-title",
+        "type": "title",
+        "durationInFrames": 120,
+        "caption": "Disturbing equilibrium: concentration and temperature",
+        "syllabusDotPointIndex": -1
+      },
+      {
+        "id": "c3-hook",
+        "durationInFrames": 1119,
+        "caption": "Separate the direct addition from the later reaction.",
+        "voiceover": {
+          "text": "Our mixture is already at equilibrium. A keeps changing into B, and B keeps changing into A. Rate means how much changes per unit time. At equilibrium, those opposing rates are equal, so the amounts stay steady. Now we briefly add more A. Does B increase at that same instant? No. We added A, not B. Any extra B has to be made by reaction. Keep those two moments separate: what we change directly, and what the reaction does afterwards."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "Add A: what changes immediately?",
+        "body": "A ⇌ B. Brief addition, then close the mixture again.",
+        "comparison": [
+          {
+            "label": "Initial equilibrium",
+            "amount": "One-to-one model",
+            "mass": "A: 2; B: 1"
+          },
+          {
+            "label": "Brief addition",
+            "amount": "Fixed temperature and volume",
+            "mass": "Add A only"
+          }
+        ],
+        "comparisonIsPrompt": true,
+        "callout": "Extra B has to be made by reaction.",
+        "revealDelays": {
+          "heading": 12,
+          "body": 24,
+          "callout": 720
+        },
+        "conceptVisualLayout": "diagramBoard",
+        "diagramStyle": "default",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5DisturbanceClear",
+          "delay": 0,
+          "props": {
+            "mode": "additionHook",
+            "at": {
+              "event": 476,
+              "response": 720
+            }
+          }
+        }
+      },
+      {
+        "id": "c3-add",
+        "durationInFrames": 2032,
+        "caption": "Only A jumps. Reaction changes both concentrations afterwards.",
+        "voiceover": {
+          "text": "Use our simple one-to-one model: one A can become one B, and one B can become one A. In this model, each direction's rate depends on how much of its starting form is present. Concentration means amount per volume. We keep volume and temperature fixed, briefly add A, and close the container again. A's concentration rises immediately. B's does not. Straight after mixing, more A makes the A-to-B rate higher. The B-to-A rate is initially unchanged because B has not changed. So A is being used to make B faster than B is being used to make A. That is a net change towards B. A now falls from its jump, while B rises. Their changing concentrations bring the rates back towards equality. In this model, the new equilibrium has more A and more B than the original mixture. But A is lower than it was just after we added it."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "Add A: direct change, then reaction",
+        "body": "A ⇌ B. Fixed temperature and volume.",
+        "bullets": [
+          {
+            "text": "A ⇌ B. Fixed temperature and volume.",
+            "at": 0.8
+          },
+          {
+            "text": "Only A rises immediately.",
+            "at": 22.733333333333334
+          },
+          {
+            "text": "A to B initially faster; B to A unchanged.",
+            "at": 25.733333333333334
+          },
+          {
+            "text": "A falls from its jump; B rises.",
+            "at": 45
+          },
+          {
+            "text": "Final: more A and B than originally, in this model.",
+            "at": 52.733333333333334
+          }
+        ],
+        "revealDelays": {
+          "heading": 12,
+          "body": 24
+        },
+        "conceptVisualLayout": "diagramBoard",
+        "diagramStyle": "default",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5DisturbanceClear",
+          "delay": 0,
+          "props": {
+            "mode": "addA",
+            "at": {
+              "event": 682,
+              "rateReason": 772,
+              "response": 1350,
+              "limit": 1582
+            }
+          }
+        }
+      },
+      {
+        "id": "c3-remove",
+        "durationInFrames": 1710,
+        "caption": "Reset the experiment. Replacement is partial in this model.",
+        "voiceover": {
+          "text": "Start again from the original equilibrium. This time, remove some B and close the container again. B drops immediately because we took it out. A does not jump. With less B available, the B-to-A process initially slows. The A-to-B process is now faster, so more B is being made than used. B starts rising from its lowered value, while A falls. We call that response a shift to the right, towards B in our written equation. But compare B with its original level. In this model, it finishes below that level. The reaction replaces some of what we removed, not all of it. A rightward shift describes the reaction after the disturbance. It does not mean the final B concentration is higher than every earlier value."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "Separate experiment: remove B",
+        "body": "A ⇌ B. Fixed temperature and volume; reclose.",
+        "bullets": [
+          {
+            "text": "A ⇌ B. Fixed temperature and volume; reclose.",
+            "at": 0.8
+          },
+          {
+            "text": "Only B drops immediately.",
+            "at": 6.866666666666666
+          },
+          {
+            "text": "B to A initially slower; A to B faster.",
+            "at": 12
+          },
+          {
+            "text": "B partly recovers, but remains below original.",
+            "at": 32.6
+          }
+        ],
+        "revealDelays": {
+          "heading": 12,
+          "body": 24
+        },
+        "conceptVisualLayout": "diagramBoard",
+        "diagramStyle": "default",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5DisturbanceClear",
+          "delay": 0,
+          "props": {
+            "mode": "removeB",
+            "at": {
+              "event": 206,
+              "response": 656,
+              "originalCompare": 977
+            }
+          }
+        }
+      },
+      {
+        "id": "c3-principle",
+        "durationInFrames": 1698,
+        "caption": "Same temperature, same equilibrium relationship.",
+        "voiceover": {
+          "text": "Le Chatelier's principle is a way to summarise these responses. A disturbed equilibrium tends to react in a direction that opposes the imposed change. Our model gives a reason: one direction is temporarily faster than the other. The mixture is not deciding to push back, and it does not undo the change completely. We also need a new term, the equilibrium constant, called K. It is a number describing the equilibrium relationship between the reacting substances for the reaction as written, at a particular temperature. We will build its expression in a later lesson. Adding or removing A or B changes the equilibrium concentrations, but it does not change K while the temperature stays the same. Different concentrations can still satisfy the same equilibrium relationship."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "Same temperature: same K",
+        "body": "One direction is temporarily faster.",
+        "bullets": [
+          {
+            "text": "One direction is temporarily faster.",
+            "at": 0.8
+          },
+          {
+            "text": "K describes the equilibrium relationship.",
+            "at": 22.733333333333334
+          },
+          {
+            "text": "Adding or removing material at fixed temperature: same K.",
+            "at": 40.3
+          }
+        ],
+        "revealDelays": {
+          "heading": 12,
+          "body": 24
+        },
+        "conceptVisualLayout": "diagramBoard",
+        "diagramStyle": "default",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5DisturbanceClear",
+          "delay": 0,
+          "props": {
+            "mode": "fixedK",
+            "at": {
+              "defineK": 682,
+              "sameK": 1209
+            }
+          }
+        }
+      },
+      {
+        "id": "c3-temperature",
+        "durationInFrames": 1788,
+        "caption": "Use the written heat-releasing direction to predict the response.",
+        "voiceover": {
+          "text": "Now keep the material inside and change the temperature instead. Two nitrogen dioxide molecules can join to form one dinitrogen tetroxide molecule. We call joining the forward direction in the displayed equation. It releases heat. A heat-releasing reaction is exothermic, and its enthalpy change is written as delta H. The negative sign identifies this forward reaction as heat-releasing. The reverse direction absorbs heat. That makes it endothermic. Heating favours the heat-absorbing direction in the new equilibrium, so this mixture ends with more nitrogen dioxide and less dinitrogen tetroxide. Cooling favours the heat-releasing direction and gives the opposite change. Nitrogen dioxide is brown and dinitrogen tetroxide is colourless, so the comparison has a visible chemical meaning. Heating does not always give more products. First identify which direction releases heat and which absorbs it."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "Which direction releases heat?",
+        "body": "2NO₂(g) ⇌ N₂O₄(g). Closed; fixed volume.",
+        "bullets": [
+          {
+            "text": "2NO₂(g) ⇌ N₂O₄(g). Closed; fixed volume.",
+            "at": 0.8
+          },
+          {
+            "text": "Joining releases heat: exothermic, ΔH < 0.",
+            "at": 13.733333333333333
+          },
+          {
+            "text": "Splitting absorbs heat: endothermic.",
+            "at": 24.866666666666667
+          },
+          {
+            "text": "Heating favours splitting; cooling favours joining.",
+            "at": 28.733333333333334
+          }
+        ],
+        "revealDelays": {
+          "heading": 12,
+          "body": 24
+        },
+        "conceptVisualLayout": "diagramBoard",
+        "diagramStyle": "default",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5DisturbanceClear",
+          "delay": 0,
+          "props": {
+            "mode": "associationHeat",
+            "at": {
+              "association": 129,
+              "exothermic": 450,
+              "reverse": 746,
+              "heating": 862,
+              "cooling": 1132
+            }
+          }
+        }
+      },
+      {
+        "id": "c3-temperature-response",
+        "durationInFrames": 1852,
+        "caption": "Temperature changes K; composition adjusts afterwards.",
+        "voiceover": {
+          "text": "Heating can make reactions happen more readily because more particles have enough energy to overcome reaction barriers. But the opposing rates need not increase by the same proportion. At the old composition, their balance can be lost, and one direction temporarily changes more substance than the other. Now separate the temperature change from the later composition change. In an idealised rapid temperature change at fixed volume, we have not added or removed nitrogen dioxide or dinitrogen tetroxide. Their concentrations therefore do not jump just because temperature changed. They change afterwards through reaction. K has a value for the new temperature straight away; it does not wait for the mixture to settle. For our written heat-releasing forward reaction, heating lowers K and cooling raises it. Hold the new temperature fixed while the concentrations approach the new equilibrium balance."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "Temperature first, composition later",
+        "body": "Closed; fixed volume. No material added or removed.",
+        "bullets": [
+          {
+            "text": "Closed; fixed volume. No material added or removed.",
+            "at": 0.8
+          },
+          {
+            "text": "No imposed concentration jump. Reaction follows.",
+            "at": 33
+          },
+          {
+            "text": "K belongs to the new temperature immediately.",
+            "at": 39.43333333333333
+          },
+          {
+            "text": "Written exothermic forward reaction: heating lowers K.",
+            "at": 47.6
+          }
+        ],
+        "revealDelays": {
+          "heading": 12,
+          "body": 24
+        },
+        "conceptVisualLayout": "diagramBoard",
+        "diagramStyle": "default",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5DisturbanceClear",
+          "delay": 0,
+          "props": {
+            "mode": "temperatureResponse",
+            "at": {
+              "event": 604,
+              "continuousConcentrations": 990,
+              "defineNewK": 1183,
+              "response": 1595
+            }
+          }
+        }
+      },
+      {
+        "id": "c3-water",
+        "durationInFrames": 1248,
+        "caption": "An open oven can combine heating and water removal.",
+        "voiceover": {
+          "text": "One experimental boundary matters here. A hydrated material contains water within its structure. If we warm it in an open oven, some water may leave into the surrounding air. That combines two changes: heating and removal of a participating substance. The observation cannot tell us the effect of temperature alone. For a temperature-only comparison, keep the material contained and state which reaction direction releases heat. For a water-removal comparison, hold temperature fixed and identify the substance leaving. A colour change by itself does not tell us which controls were used."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "concept",
+        "heading": "An open oven can change two things",
+        "body": "Heating plus possible water removal.",
+        "bullets": [
+          {
+            "text": "Heating plus possible water removal.",
+            "at": 0.8
+          },
+          {
+            "text": "Heating only: material retained.",
+            "at": 21.433333333333334
+          },
+          {
+            "text": "Water removal only: temperature fixed.",
+            "at": 27.866666666666667
+          }
+        ],
+        "revealDelays": {
+          "heading": 12,
+          "body": 24
+        }
+      },
+      {
+        "id": "c3-transfer-a",
+        "durationInFrames": 2186,
+        "caption": "Separate the imposed removal from the later reaction.",
+        "voiceover": {
+          "text": "Try this experiment on its own. Our one-to-one A and B model starts at equilibrium. Temperature and volume stay fixed. We remove some A, then close the container again. Which concentration changes immediately? Use the model's rate relationship to explain the direction of the reaction afterwards. Does K change? Pause here to work through those steps. Only A drops immediately, because only A was removed. Less A initially makes the A-to-B process slower. B has not changed yet, so the B-to-A rate is initially unchanged. B is now being converted to A faster than A is being converted to B. A starts recovering from its drop, while B decreases. K stays the same because the temperature stayed fixed. If you made both concentrations jump immediately, separate the removal we imposed from the reaction that follows."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "quickCheck",
+        "heading": "Separate experiment: remove A",
+        "question": "Remove A: what changes immediately? Explain the later direction. Does K change?",
+        "pausePrompt": "Pause to explain your reason.",
+        "answerSteps": [
+          "Only A drops immediately.",
+          "A to B initially slower. B to A initially unchanged.",
+          "B to A is initially faster. A partly recovers; B decreases.",
+          "K stays the same. Temperature stayed fixed."
+        ],
+        "calculationPresentation": {
+          "layout": "module5Evidence",
+          "captionSafeWorking": true,
+          "task": "Remove A: what changes immediately?",
+          "givens": [],
+          "stages": [
+            {
+              "label": "Immediate change",
+              "lines": [
+                "Only A drops immediately."
+              ],
+              "summary": "Only A drops immediately.",
+              "lineAts": [
+                1093
+              ]
+            },
+            {
+              "label": "Initial rate comparison",
+              "lines": [
+                "A to B initially slower.",
+                "B to A initially unchanged."
+              ],
+              "summary": "A to B initially slower. B to A initially unchanged.",
+              "lineAts": [
+                1196,
+                1299
+              ]
+            },
+            {
+              "label": "Reaction afterwards",
+              "lines": [
+                "B to A is initially faster.",
+                "A partly recovers; B decreases."
+              ],
+              "summary": "B to A is initially faster. A partly recovers; B decreases.",
+              "lineAts": [
+                1453,
+                1646
+              ]
+            },
+            {
+              "label": "Temperature and K",
+              "lines": [
+                "K stays the same.",
+                "Temperature stayed fixed."
+              ],
+              "summary": "K stays the same. Temperature stayed fixed.",
+              "lineAts": [
+                1762,
+                1839
+              ]
+            }
+          ],
+          "focusedContext": [
+            {
+              "at": 0,
+              "title": "A ⇌ B: one-for-one",
+              "lines": [
+                "Initially at equilibrium",
+                "Remove A, then reclose",
+                "Fixed temperature and volume",
+                "Each rate depends on its starting form"
+              ],
+              "task": "Remove A: what changes immediately?",
+              "secondaryTask": "Explain the later direction. Does K change?"
+            }
+          ]
+        },
+        "revealDelays": {
+          "heading": 12,
+          "responseHoldStart": 720,
+          "pausePrompt": 630,
+          "answerVisibleStart": 1080,
+          "stepAts": [
+            1093,
+            1196,
+            1453,
+            1762
+          ]
+        }
+      },
+      {
+        "id": "c3-transfer-b",
+        "durationInFrames": 2007,
+        "caption": "Use the stated heat change and written reaction.",
+        "voiceover": {
+          "text": "Now use a separate experiment. A closed mixture starts at equilibrium for two nitrogen dioxide forming dinitrogen tetroxide. The displayed forward direction releases heat, so it is exothermic. We cool the mixture and keep its volume fixed. Will the new equilibrium contain more or less dinitrogen tetroxide? Will K be larger or smaller? Explain using the direction that releases heat. Pause here to give your reason. Cooling favours the direction that releases heat. Here that is the forward joining reaction, so the new equilibrium contains more dinitrogen tetroxide. For this written exothermic reaction, K is larger at the lower temperature. If you chose less product because cooling slows reactions, separate how quickly the mixture changes from the final equilibrium it approaches."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "quickCheck",
+        "heading": "Separate experiment: cool",
+        "question": "After cooling: more or less N₂O₄? Is K larger or smaller? Explain using heat release.",
+        "pausePrompt": "Pause to explain your reason.",
+        "answerSteps": [
+          "Cooling favours heat release. Here, that means joining.",
+          "More N₂O₄ at equilibrium.",
+          "K is larger at lower temperature."
+        ],
+        "calculationPresentation": {
+          "layout": "module5Evidence",
+          "captionSafeWorking": true,
+          "task": "After cooling: more or less N₂O₄?",
+          "givens": [],
+          "stages": [
+            {
+              "label": "Use the stated heat change",
+              "lines": [
+                "Cooling favours heat release.",
+                "Here, that means joining."
+              ],
+              "summary": "Cooling favours heat release. Here, that means joining.",
+              "lineAts": [
+                1222,
+                1299
+              ]
+            },
+            {
+              "label": "Composition after cooling",
+              "lines": [
+                "More N₂O₄ at equilibrium."
+              ],
+              "summary": "More N₂O₄ at equilibrium.",
+              "lineAts": [
+                1441
+              ]
+            },
+            {
+              "label": "K at the new temperature",
+              "lines": [
+                "K is larger at lower temperature."
+              ],
+              "summary": "K is larger at lower temperature.",
+              "lineAts": [
+                1557
+              ]
+            }
+          ],
+          "focusedContext": [
+            {
+              "at": 0,
+              "title": "2NO₂(g) ⇌ N₂O₄(g)",
+              "lines": [
+                "Initially at equilibrium",
+                "Closed; fixed volume",
+                "Cool the mixture",
+                "Forward releases heat: ΔH < 0"
+              ],
+              "task": "After cooling: more or less N₂O₄?",
+              "secondaryTask": "Is K larger or smaller? Explain using heat release."
+            }
+          ]
+        },
+        "revealDelays": {
+          "heading": 12,
+          "responseHoldStart": 849,
+          "pausePrompt": 759,
+          "answerVisibleStart": 1209,
+          "stepAts": [
+            1222,
+            1441,
+            1557
+          ]
+        }
+      },
+      {
+        "id": "c3-summary",
+        "durationInFrames": 1209,
+        "caption": "Identify the disturbance before predicting the response.",
+        "voiceover": {
+          "text": "Start with what changed directly. Then ask which reaction direction is initially faster and how that changes the mixture afterwards. Adding or removing a substance can change its concentration immediately. Reaction changes the mixture later, and K stays the same if temperature stays fixed. For heating or cooling, first identify the heat-releasing and heat-absorbing directions. Temperature can change K as well as the final composition. Keep the written equation and conditions clear. Next, we will change the volume of gaseous equilibria and compare that with a catalyst."
+        },
+        "syllabusDotPointIndex": -1,
+        "type": "summary",
+        "heading": "Direct change, then reaction",
+        "points": [
+          "What changed directly?",
+          "Which direction is initially faster?",
+          "Same or changed temperature?"
+        ],
+        "finalPrompt": "Next: gaseous volume changes and catalysts.",
+        "revealDelays": {
+          "heading": 12,
+          "takeawayAts": [
+            13,
+            65,
+            566
+          ],
+          "finalPrompt": 926
+        }
+      }
+    ]
+  }
+}
