@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -136,6 +137,32 @@ def restore(archive_path, entries):
             restored += 1
     print(json.dumps({'restored': restored, 'alreadyPresent': len(entries) - restored, 'archive': str(archive_path)}))
 
+def verify_tracked_copies(archive_path, entries):
+    """Verify exact tracked calculation inputs carried by the additive archive.
+
+    These copies are never written. Other out-of-scope members still fail the
+    normal restore boundary check.
+    """
+    prefix = 'docs/production/calculation-simple-working-2026-10-10/'
+    copies = [item for item in entries if item['path'].startswith(prefix)]
+    allowed = {prefix + key + '/' + name for key in ['limiting', 'empirical-formulas']
+               for name in ['lesson.json', 'production-brief.json', 'pilot-config.json']}
+    with zipfile.ZipFile(archive_path) as archive:
+        for item in copies:
+            name = item['path']
+            target = (ROOT / name).resolve()
+            if name not in allowed or not target.is_relative_to(ROOT):
+                raise RuntimeError('Unexpected tracked archive copy: ' + name)
+            subprocess.run(['git', 'ls-files', '--error-unmatch', '--', name],
+                           cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
+            if not target.is_file() or digest(target) != item['sha256']:
+                raise RuntimeError('Tracked copy differs from checkout: ' + name)
+            if hashlib.sha256(archive.read(name)).hexdigest() != item['sha256']:
+                raise RuntimeError('Tracked archive copy hash mismatch: ' + name)
+    if copies:
+        print(json.dumps({'verifiedTrackedCopies': len(copies), 'trackedCopiesWritten': 0}))
+    return [item for item in entries if item not in copies]
+
 parser = argparse.ArgumentParser()
 parser.add_argument('command', choices=['pack-state', 'pack-media', 'restore-state', 'restore-media'])
 parser.add_argument('archive', nargs='?')
@@ -157,7 +184,7 @@ else:
         manifest = json.loads(archive.read('transfer-manifest.json'))
     if manifest['stateArchiveSha256'] != digest(STATE):
         raise RuntimeError('Media and checked-in state belong to different transfers. Use the matching Git revision.')
-    entries = manifest['files']
+    entries = verify_tracked_copies(media_path, manifest['files'])
     if args.skip_rebuildable_pages:
         rebuildable = {'out/prototypes/parallel-production-2026-10-10/index.html',
                        'out/prototypes/calculation-full-review-2026-10-10/index.html'}

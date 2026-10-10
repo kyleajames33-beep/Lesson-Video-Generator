@@ -41,7 +41,7 @@ def main():
             if not p.resolve().is_relative_to(ROOT.resolve()) or digest(p) != item['sha256']:
                 raise ValueError(f'Input changed: {item["path"]}')
             if item['path'] not in tracked:
-                if not item['path'].startswith(('out/', 'public/', 'docs/')):
+                if not item['path'].startswith(('out/', 'public/audio/', 'public/assets/')):
                     raise ValueError(f'Unexpected untracked input: {item["path"]}')
                 files.add(p)
         # The baseline is bound by author invariance evidence and is needed by the page builder.
