@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+    "sha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856"
+  },
+  "renderer": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "sha256": "62c896c2832f9ab5a8565bcf17e29c87abf4953a8a81f598cbe5548088a09e7a"
+  },
+  "pageInputs": {
+    "path": "out/prototypes/module5-c3-axis-review-2026-10-10/page-inputs.json",
+    "sha256": "6d737a38dde0bfc459c91ebf8f6a5736850d3ec30add7c90a971cb5a9eec545a"
+  },
+  "url": "http://127.0.0.1:8778/module5-c3-axis-review-2026-10-10/",
+  "scope": "Targeted actual voiced Remotion UI playback for the display-only SVG text fix. Existing unchanged-lesson owner listening and original preview evidence retained separately.",
+  "observations": [
+    "Played Add A from scene entrance with captions enabled; observed concentration step and rate reason through displayed 1:17. Lower Before/Add A/Model time labels complete.",
+    "Played Remove B from entrance through 2:10 and final reference; all lower labels, 5/3 and 5/6 references complete in actual Player.",
+    "Played temperature response from entrance through displayed 4:57; observed initial condition and continuous concentration/no-transfer state with caption clearance. Final affected labels separately inspected in completed sequential pilot samples by independent reviewer."
+  ],
+  "silentPilotReview": {
+    "path": "docs/production/module5-c3-axis-fix-2026-10-10/source-and-pilot-review.json",
+    "sha256": "10493f3fa14609379a9069731e0a32c1e23e8b234bcce12189dc0cec4f83f6c5"
+  },
+  "screenshots": [
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/root-remove-voiced.png",
+      "sha256": "8fa840c5e4222e90313f37f565fd598e4b53ccd152692988af28bc86a60d73d1"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/root-temperature-voiced.png",
+      "sha256": "5a23ce43df4a1d385437e20a71eec0edbeba0b22464fd68e4223cedb11e677a0"
+    }
+  ],
+  "unchanged": "Exact original lesson JSON bytes, recorded words/audio/captions/timing/model values remain unchanged. Only selected SVG text-rendering property changes. Current Player output built with that exact component.",
+  "limitations": [
+    "No new human listening claimed; use existing owner evidence for identical recordings.",
+    "This is targeted playback and sampled UI evidence, not a full new MP4 watch, physical-device test or full-package public-release pass."
+  ]
+}

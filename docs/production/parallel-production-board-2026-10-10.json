@@ -1,14 +1,14 @@
 {
   "waitingOnKyle": [],
   "operatingSummary": {
-    "status": "four-calculations-public-c3-axis-diagnostic",
+    "status": "measured-starters-ready-for-review-c3-corrected-render-running",
     "reviewBasis": "User supplied another agent audit on 10 October 2026; read REPO-GUIDE.md and current records.",
-    "priority": "Move selected C3 through its remaining actual-preview/export/package work, and finish existing exported-video review queue before expanding production documentation.",
+    "priority": "Finish earliest missing C1/B1 voiced review and publication gates in two independent tracks, then C2/B2a. Continue bounded C3 replacement-render work; public C3 requires C1/C2 availability.",
     "rootNextWork": [
-      "Resolve C3 export-specific axis-label clipping using diagnostic evidence, preserve original package",
-      "Repeat affected voiced preview and replacement export/package checks before C3 publication",
-      "Continue selected C4A pressure library integration and separate C4B catalysts",
-      "Integrate focused Biology plant notes after independent source/visual review"
+      "Review new exact measured C1/B1 voiced Player, captions, intended-size clarity and human listening",
+      "Complete earliest starter export/package/release gates before later dependent public videos",
+      "Complete running C3 corrected render and repeat exact replacement device/accessibility checks; retain private status until gates and C1/C2 availability",
+      "Continue later C4A and plant preparation concurrently without displacing missing starters"
     ],
     "statusPolicy": "Use this board for current status and owner actions. Update existing unbound records. New versions only when preserving frozen evidence is necessary. No further stacked Latest paragraphs in HANDOFF; leave existing restore/evidence history intact.",
     "cleanup": "Existing releases and pinned runtimes preserved. Only selected production documentation and immutable release evidence added; four approved calculations published.",
@@ -50,10 +50,10 @@
   ],
   "routingLimit": "These are project routing judgements using models offered in this session, not a measured model comparison, token budget or price claim.",
   "productionOrder": [
-    "Finish review and release of the current four calculation revisions",
-    "Year 12 Chemistry Module 5: dynamic equilibrium",
-    "Year 12 Biology Module 5: reproduction and continuity",
-    "Follow prerequisite order within each subject; harder applications follow their matching core"
+    "Year12 Chemistry C1 and Biology B1: close earliest missing public starter availability, alternate practical work across independent tracks",
+    "Chemistry C2 and Biology B2a: complete exact voiced/package gates after respective starters",
+    "C3 replacement technical checks can continue now; public promotion after C1/C2 availability and exact package gates",
+    "Later C4A/C4B and four B02b parts follow learner route; preserve useful parallel preparation"
   ],
   "rules": [
     "One writer owns each path; reviewers do not silently rewrite the author source",
@@ -469,6 +469,20 @@
         "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c3.md",
         "docs/production/chemistry-c3-preparation-review-2026-10-10.md"
       ]
+    },
+    {
+      "id": "module5-measured-starter-priority",
+      "agent": "/root",
+      "model": "gpt-6.1-sol",
+      "status": "measured-voiced-player-available-source-timing-pass-listening-export-release-pending",
+      "scope": "Selected C1/B1 earliest missing starters, independent source/timing/PCM review complete; preserve earlier silent and measured evidence.",
+      "evidence": [
+        "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+        "docs/production/module5-starters-2026-10-10/quiet-reading-addendum.json",
+        "docs/production/module5-starters-2026-10-10/ui-observations.json",
+        "docs/production/module5-release-priority-2026-10-10.json"
+      ],
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/"
     }
   ],
   "currentRelease": {
@@ -478,7 +492,7 @@
     "userReviewEvidence": "docs/production/user-calculation-review-2026-10-10.json",
     "fullReviewUrl": "http://127.0.0.1:8778/calculation-full-review-2026-10-10/"
   },
-  "nextAction": "Finish C3 current preview/export preparation and close existing exported-package reviews. Owner queue is waitingOnKyle; root technical work is operatingSummary.rootNextWork. Existing release rules remain unchanged.",
+  "nextAction": "Review new exact measured C1/B1 voiced Player, captions, intended-size clarity and human listening",
   "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution.",
   "currentBeginnerRevision": {
     "feedback": "docs/production/beginner-working-feedback-2026-10-10.json",
@@ -654,12 +668,12 @@
       "sha256": "2366216248b93c67deaf871d03c82657cacfc5fd64055bba8101f3592c3ff3fa"
     },
     "url": "http://127.0.0.1:8778/module5-c3-reference-review-2026-10-10/",
-    "status": "full-export-held-graph-axis-glyph-clipping",
+    "status": "axis-fix-source-pilot-ui-pass-corrected-full-render-running",
     "unchanged": "Recorded words/audio/captions, durations, measured cues, holds and scientific model. Earlier feedback generally positive, but not a new full export/release approval.",
     "remaining": [
-      "Resolve graph-axis glyph clipping in original export capture; source stills and short fresh pilot are complete. Original-bundle full Add A sequential diagnostic running.",
-      "Preview any affected revision before replacement full export",
-      "Repeat exact package device/accessibility checks before public release"
+      "Complete corrected full render without modifying its frozen inputs",
+      "Repeat exact replacement package device/accessibility and release gates",
+      "Ensure C1/C2 publicly available before C3 public promotion"
     ],
     "planning": "docs/production/module5-practice-and-reuse-plan-2026-10-10.md",
     "media": "Reuse module5-c3-voiced-media-2026-10-10.zip. New candidate and page inputs tracked; rebuild new Player with tracked builder. No new paid narration or ignored media.",
@@ -702,7 +716,7 @@
     ],
     "remainingUploads": [],
     "browser": "Chrome HSCScience signed in",
-    "c3": "Full 1080p export backed up; private upload FYdEOtHcOqk. Device and accessibility reviews require changes for cropped axis glyphs. An original-bundle pilot is diagnosing the capture cause.",
+    "c3": "Original private FYdEOtHcOqk retained. Bounded axis property source/pilot/UI passes; corrected full render running. Replacement package reviews and C1/C2 public availability still required.",
     "enzyme": "One original types.ts dependency unavailable, full gate remains held"
   },
   "futureTeachingMinimum": {
@@ -711,5 +725,36 @@
     "notes": "Optional brief Key notes after explanation, quiet time to copy/pause",
     "next": "C4A pressure/volume selected source independently reviewed; library visual integration pending. C4B catalysts remains separate.",
     "route": "22 Chemistry M5 uploads plus optional prerequisite; Biology27"
+  },
+  "currentStarterSelections": {
+    "chemistry": {
+      "sourcePath": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "sourceSha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d",
+      "briefPath": "docs/production/module5-starters-2026-10-10/chemistry/measured/production-brief.json",
+      "reviewPath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/",
+      "state": "fresh-measured-voiced-preview-available-independent-source-timing-pass",
+      "remaining": [
+        "Whole-lesson exact voiced playback and intended-size/caption checks",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete public-release gates"
+      ]
+    },
+    "biology": {
+      "sourcePath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "sourceSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "briefPath": "docs/production/module5-starters-2026-10-10/biology/measured/production-brief.json",
+      "reviewPath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/",
+      "state": "fresh-measured-voiced-preview-available-independent-source-timing-pass",
+      "remaining": [
+        "Whole-lesson exact voiced playback and intended-size/caption checks",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete public-release gates"
+      ]
+    },
+    "limit": "Independent timing/source and sampled silent note UI are separate from whole voiced playback, human listening, full export and public release."
   }
 }

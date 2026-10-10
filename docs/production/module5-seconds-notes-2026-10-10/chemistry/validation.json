@@ -1,0 +1,26 @@
+{
+  "scope": "Source validation and draft-stage brief checks only",
+  "results": [
+    {
+      "command": [
+        "node",
+        "scripts/validate-lesson.mjs",
+        "docs\\production\\module5-seconds-notes-2026-10-10\\chemistry\\lesson.json"
+      ],
+      "exitCode": 0,
+      "stdout": "C:\\lesson-video-generator\\docs\\production\\module5-seconds-notes-2026-10-10\\chemistry\\lesson.json\n  warning: scene[7] (c2-transfer): consider adding \"pausePrompt\" (active recall before reveal)\n  warning: scene[9] (key-notes): consider adding \"finalPrompt\" (transfer decision rule)\n  warning: lesson should include a \"misconception\" scene"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-production-brief.mjs",
+        "docs\\production\\module5-seconds-notes-2026-10-10\\chemistry\\production-brief.json",
+        "--stage=draft"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"ready\": true,\n  \"stage\": \"draft\",\n  \"blockers\": [],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/module5-seconds-notes-2026-10-10/chemistry/lesson.json\",\n    \"lessonSha256\": \"a6e0b63e78bd8a75e258e2bfbcc9046d82bb40927b3577bf60c589fe7ff21b7d\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}"
+    }
+  ],
+  "actualPreview": "pending",
+  "humanListening": "pending"
+}

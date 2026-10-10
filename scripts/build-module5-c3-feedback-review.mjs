@@ -3,8 +3,10 @@ import path from 'node:path';
 import {build} from 'esbuild';
 import {sha256} from './lib/playback-assembly.mjs';
 
-const pageName = 'module5-c3-reference-review-2026-10-10';
+const axisReview = process.argv[2] === 'axis';
+const pageName = axisReview ? 'module5-c3-axis-review-2026-10-10' : 'module5-c3-reference-review-2026-10-10';
 const output = `out/prototypes/${pageName}`;
+if (axisReview && fs.existsSync(`${output}/index.html`)) throw Error('Preserve existing axis review inputs; use a new revision identity before rebuilding.');
 const entry = 'src/prototypes/Module5C3FeedbackReview.tsx';
 const source = 'docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json';
 const lesson = JSON.parse(fs.readFileSync(source, 'utf8'));

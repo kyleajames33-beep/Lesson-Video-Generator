@@ -506,3 +506,14 @@ docs/production/module5-c3-reference-feedback-2026-10-10/** -text whitespace=bla
 src/prototypes/Module5C3FeedbackReview.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/build-module5-c3-feedback-review.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/check-module5-rich-defaults.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve current Module 5 starter, notes and corrected-export fingerprints.
+docs/production/module5-starters-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-seconds-notes-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c3-axis-fix-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/prototypes/Module5StarterReview.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/prototypes/Module5StarterVoicedReview.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/build-module5-starter-review.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/prepare-module5-starter-recording.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/assemble-module5-starters-voiced.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/quiet-reading.test.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

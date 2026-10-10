@@ -234,9 +234,16 @@ const validateScene = (scene, index, errors, warnings, fps) => {
 
   requireString(scene, 'caption', errors, pathLabel);
 
-  // Title scenes legitimately have no narration — the intro stinger voices
-  // the opener. Every other scene type must carry voiceover.text.
-  const requiresVoiceover = scene.type !== 'title';
+  // Titles and explicitly quiet consolidation holds can be unvoiced.
+  // An omitted recording on an ordinary teaching scene remains an error.
+  const quietReading = scene.type === 'summary' && scene.quietReading === true;
+  if (scene.quietReading !== undefined && !quietReading) {
+    errors.push(`${pathLabel}: "quietReading" must be true on a summary scene only`);
+  }
+  if (quietReading && (scene.voiceover !== undefined || (scene.captions?.length ?? 0) > 0)) {
+    errors.push(`${pathLabel}: quiet reading must not carry narration or spoken captions`);
+  }
+  const requiresVoiceover = scene.type !== 'title' && !quietReading;
 
   if (requiresVoiceover && (!isObject(scene.voiceover) || !isNonEmptyString(scene.voiceover.text))) {
     errors.push(`${pathLabel}: missing "voiceover.text"`);

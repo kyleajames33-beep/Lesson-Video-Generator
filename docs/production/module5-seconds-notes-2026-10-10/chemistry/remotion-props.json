@@ -1,0 +1,6654 @@
+{
+  "lesson": {
+    "title": "How reversible reactions approach equilibrium",
+    "subtitle": "Two changing rates, one dynamic balance",
+    "subject": "Chemistry",
+    "yearLevel": "Year 12",
+    "module": "Module 5",
+    "lesson": "Lesson 2",
+    "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+    "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+    "syllabusDotPoints": [
+      "Explain concentration and rate relationships in a stated reversible model (candidate contribution to ACSCH070 and ACSCH094)."
+    ],
+    "moduleLessonCount": 22,
+    "nesaOutcomes": [
+      "CH12-12",
+      "CH11/12-5",
+      "CH11/12-6",
+      "CH11/12-7"
+    ],
+    "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+    "lessonIntent": "Explain the changing opposing rates in a stated A-only reversible model and distinguish faster equilibration from a changed final equilibrium composition.",
+    "examSkill": "Use both supplied direction rates to justify initial net change; explain the catalyst effect under fixed conditions.",
+    "productionRole": "production",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "introDurationInFrames": 0,
+    "scenes": [
+      {
+        "id": "c2-title",
+        "type": "title",
+        "durationInFrames": 120,
+        "caption": "How reversible reactions approach equilibrium"
+      },
+      {
+        "id": "c2-hook",
+        "type": "hook",
+        "heading": "Does reverse have to wait?",
+        "body": "A starts turning into B. Can B turn back before equilibrium?",
+        "callout": "The opposing processes overlap.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "hook",
+            "reverseAt": 615
+          }
+        },
+        "durationInFrames": 859,
+        "caption": "Follow the opposing processes from an A-only start.",
+        "voiceover": {
+          "text": "Last time, equal reaction rates explained why an equilibrium mixture stays steady. But how do those rates become equal? Imagine a reversible reaction that starts with only A. As B forms, can it start turning back into A straight away, or does it have to wait for the forward reaction to finish? It can turn back while the forward reaction is still happening. That overlap is what we will follow.",
+          "audioFile": "public/audio/assembled/c2-hook.7c747b18c0ba76e75d98.f8a45693856d.wav",
+          "startFrame": 0,
+          "endFrame": 790
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 380,
+          "diagram": 260,
+          "callout": 615
+        },
+        "captions": [
+          {
+            "text": "Last",
+            "startMs": 0,
+            "endMs": 320,
+            "timestampMs": 160,
+            "confidence": null
+          },
+          {
+            "text": " time,",
+            "startMs": 400,
+            "endMs": 960,
+            "timestampMs": 680,
+            "confidence": null
+          },
+          {
+            "text": " equal",
+            "startMs": 1040,
+            "endMs": 1360,
+            "timestampMs": 1200,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 1600,
+            "endMs": 1840,
+            "timestampMs": 1720,
+            "confidence": null
+          },
+          {
+            "text": " rates",
+            "startMs": 2000,
+            "endMs": 2160,
+            "timestampMs": 2080,
+            "confidence": null
+          },
+          {
+            "text": " explained",
+            "startMs": 2400,
+            "endMs": 2640,
+            "timestampMs": 2520,
+            "confidence": null
+          },
+          {
+            "text": " why",
+            "startMs": 2720,
+            "endMs": 2880,
+            "timestampMs": 2800,
+            "confidence": null
+          },
+          {
+            "text": " an",
+            "startMs": 2960,
+            "endMs": 3040,
+            "timestampMs": 3000,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 3120,
+            "endMs": 3760,
+            "timestampMs": 3440,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 3840,
+            "endMs": 4160,
+            "timestampMs": 4000,
+            "confidence": null
+          },
+          {
+            "text": " stays",
+            "startMs": 4320,
+            "endMs": 4640,
+            "timestampMs": 4480,
+            "confidence": null
+          },
+          {
+            "text": " steady.",
+            "startMs": 4720,
+            "endMs": 5200,
+            "timestampMs": 4960,
+            "confidence": null
+          },
+          {
+            "text": " But",
+            "startMs": 5760,
+            "endMs": 5840,
+            "timestampMs": 5800,
+            "confidence": null
+          },
+          {
+            "text": " how",
+            "startMs": 6080,
+            "endMs": 6240,
+            "timestampMs": 6160,
+            "confidence": null
+          },
+          {
+            "text": " do",
+            "startMs": 6280,
+            "endMs": 6320,
+            "timestampMs": 6300,
+            "confidence": null
+          },
+          {
+            "text": " those",
+            "startMs": 6400,
+            "endMs": 6560,
+            "timestampMs": 6480,
+            "confidence": null
+          },
+          {
+            "text": " rates",
+            "startMs": 6640,
+            "endMs": 6880,
+            "timestampMs": 6760,
+            "confidence": null
+          },
+          {
+            "text": " become",
+            "startMs": 6960,
+            "endMs": 7440,
+            "timestampMs": 7200,
+            "confidence": null
+          },
+          {
+            "text": " equal?",
+            "startMs": 7520,
+            "endMs": 8000,
+            "timestampMs": 7760,
+            "confidence": null
+          },
+          {
+            "text": " Imagine",
+            "startMs": 8640,
+            "endMs": 9040,
+            "timestampMs": 8840,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 9080,
+            "endMs": 9120,
+            "timestampMs": 9100,
+            "confidence": null
+          },
+          {
+            "text": " reversible",
+            "startMs": 9200,
+            "endMs": 9680,
+            "timestampMs": 9440,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 9760,
+            "endMs": 10240,
+            "timestampMs": 10000,
+            "confidence": null
+          },
+          {
+            "text": " that",
+            "startMs": 10320,
+            "endMs": 10400,
+            "timestampMs": 10360,
+            "confidence": null
+          },
+          {
+            "text": " starts",
+            "startMs": 10480,
+            "endMs": 10800,
+            "timestampMs": 10640,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 10880,
+            "endMs": 11120,
+            "timestampMs": 11000,
+            "confidence": null
+          },
+          {
+            "text": " only",
+            "startMs": 11320,
+            "endMs": 11520,
+            "timestampMs": 11420,
+            "confidence": null
+          },
+          {
+            "text": " A.",
+            "startMs": 11680,
+            "endMs": 12320,
+            "timestampMs": 12000,
+            "confidence": null
+          },
+          {
+            "text": " As",
+            "startMs": 12640,
+            "endMs": 12800,
+            "timestampMs": 12720,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 12960,
+            "endMs": 13120,
+            "timestampMs": 13040,
+            "confidence": null
+          },
+          {
+            "text": " forms,",
+            "startMs": 13200,
+            "endMs": 13920,
+            "timestampMs": 13560,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 14000,
+            "endMs": 14080,
+            "timestampMs": 14040,
+            "confidence": null
+          },
+          {
+            "text": " it",
+            "startMs": 14120,
+            "endMs": 14160,
+            "timestampMs": 14140,
+            "confidence": null
+          },
+          {
+            "text": " start",
+            "startMs": 14240,
+            "endMs": 14480,
+            "timestampMs": 14360,
+            "confidence": null
+          },
+          {
+            "text": " turning",
+            "startMs": 14560,
+            "endMs": 14880,
+            "timestampMs": 14720,
+            "confidence": null
+          },
+          {
+            "text": " back",
+            "startMs": 14960,
+            "endMs": 15120,
+            "timestampMs": 15040,
+            "confidence": null
+          },
+          {
+            "text": " into",
+            "startMs": 15200,
+            "endMs": 15360,
+            "timestampMs": 15280,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 15440,
+            "endMs": 15600,
+            "timestampMs": 15520,
+            "confidence": null
+          },
+          {
+            "text": " straight",
+            "startMs": 15680,
+            "endMs": 15920,
+            "timestampMs": 15800,
+            "confidence": null
+          },
+          {
+            "text": " away,",
+            "startMs": 16120.000000000002,
+            "endMs": 16720,
+            "timestampMs": 16420,
+            "confidence": null
+          },
+          {
+            "text": " or",
+            "startMs": 16800,
+            "endMs": 16960,
+            "timestampMs": 16880,
+            "confidence": null
+          },
+          {
+            "text": " does",
+            "startMs": 17040,
+            "endMs": 17200,
+            "timestampMs": 17120,
+            "confidence": null
+          },
+          {
+            "text": " it",
+            "startMs": 17240,
+            "endMs": 17280,
+            "timestampMs": 17260,
+            "confidence": null
+          },
+          {
+            "text": " have",
+            "startMs": 17360,
+            "endMs": 17440,
+            "timestampMs": 17400,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 17520,
+            "endMs": 17680,
+            "timestampMs": 17600,
+            "confidence": null
+          },
+          {
+            "text": " wait",
+            "startMs": 17800,
+            "endMs": 17920,
+            "timestampMs": 17860,
+            "confidence": null
+          },
+          {
+            "text": " for",
+            "startMs": 18000,
+            "endMs": 18040,
+            "timestampMs": 18020,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 18080,
+            "endMs": 18240,
+            "timestampMs": 18160,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 18320,
+            "endMs": 18560,
+            "timestampMs": 18440,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 18640,
+            "endMs": 19040,
+            "timestampMs": 18840,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 19120,
+            "endMs": 19200,
+            "timestampMs": 19160,
+            "confidence": null
+          },
+          {
+            "text": " finish?",
+            "startMs": 19280,
+            "endMs": 20080,
+            "timestampMs": 19680,
+            "confidence": null
+          },
+          {
+            "text": " It",
+            "startMs": 20480,
+            "endMs": 20560,
+            "timestampMs": 20520,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 20680,
+            "endMs": 20800,
+            "timestampMs": 20740,
+            "confidence": null
+          },
+          {
+            "text": " turn",
+            "startMs": 20960,
+            "endMs": 21120,
+            "timestampMs": 21040,
+            "confidence": null
+          },
+          {
+            "text": " back",
+            "startMs": 21280,
+            "endMs": 21440,
+            "timestampMs": 21360,
+            "confidence": null
+          },
+          {
+            "text": " while",
+            "startMs": 21520,
+            "endMs": 21600,
+            "timestampMs": 21560,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 21680,
+            "endMs": 21760,
+            "timestampMs": 21720,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 21840,
+            "endMs": 22080,
+            "timestampMs": 21960,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 22160,
+            "endMs": 22560,
+            "timestampMs": 22360,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 22640,
+            "endMs": 22720,
+            "timestampMs": 22680,
+            "confidence": null
+          },
+          {
+            "text": " still",
+            "startMs": 22880,
+            "endMs": 23040,
+            "timestampMs": 22960,
+            "confidence": null
+          },
+          {
+            "text": " happening.",
+            "startMs": 23120,
+            "endMs": 24080,
+            "timestampMs": 23600,
+            "confidence": null
+          },
+          {
+            "text": " That",
+            "startMs": 24240,
+            "endMs": 24400,
+            "timestampMs": 24320,
+            "confidence": null
+          },
+          {
+            "text": " overlap",
+            "startMs": 24480,
+            "endMs": 25040,
+            "timestampMs": 24760,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 25120,
+            "endMs": 25200,
+            "timestampMs": 25160,
+            "confidence": null
+          },
+          {
+            "text": " what",
+            "startMs": 25280,
+            "endMs": 25360,
+            "timestampMs": 25320,
+            "confidence": null
+          },
+          {
+            "text": " we",
+            "startMs": 25440,
+            "endMs": 25520,
+            "timestampMs": 25480,
+            "confidence": null
+          },
+          {
+            "text": " will",
+            "startMs": 25600,
+            "endMs": 25680,
+            "timestampMs": 25640,
+            "confidence": null
+          },
+          {
+            "text": " follow.",
+            "startMs": 25760,
+            "endMs": 26320,
+            "timestampMs": 26040,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "id": "c2-model",
+        "type": "concept",
+        "heading": "State the model first",
+        "body": "A and B are two forms of one model substance.",
+        "bullets": [
+          {
+            "text": "One A becomes one B.",
+            "at": 3.7666666666666666
+          },
+          {
+            "text": "Fixed first-order coefficients, not a general rate law.",
+            "at": 12.533333333333333
+          },
+          {
+            "text": "A-only start: no B to convert back.",
+            "at": 19.6
+          }
+        ],
+        "secondary": "Well mixed; no side reactions. Schematic quantities, not measurements.",
+        "callout": "Closed does not mean insulated.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "model",
+            "runAt": 880
+          }
+        },
+        "durationInFrames": 1118,
+        "caption": "Closed, fixed-volume, constant-temperature first-order model.",
+        "voiceover": {
+          "text": "A and B are two forms of our model substance. One A can become one B, and one B can become one A. The container is closed, its volume and temperature stay fixed, and we are following a simple model in which the rate in each direction depends on how much of its starting form is present. At the beginning there is plenty of A and no B. So the forward process can run, but the reverse rate is zero because there is no B to convert yet. Closed means matter stays inside. It does not mean the container is insulated.",
+          "audioFile": "public/audio/assembled/c2-model.a2945f36428722e3c93d.97b6bd707920.wav",
+          "startFrame": 0,
+          "endFrame": 1049
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 250,
+          "callout": 971
+        },
+        "captions": [
+          {
+            "text": "A",
+            "startMs": 0,
+            "endMs": 160,
+            "timestampMs": 80,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 320,
+            "endMs": 507,
+            "timestampMs": 413.5,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 560,
+            "endMs": 640,
+            "timestampMs": 600,
+            "confidence": null
+          },
+          {
+            "text": " are",
+            "startMs": 960,
+            "endMs": 1280,
+            "timestampMs": 1120,
+            "confidence": null
+          },
+          {
+            "text": " two",
+            "startMs": 1360,
+            "endMs": 1440,
+            "timestampMs": 1400,
+            "confidence": null
+          },
+          {
+            "text": " forms",
+            "startMs": 1600,
+            "endMs": 1920,
+            "timestampMs": 1760,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 1960,
+            "endMs": 2000,
+            "timestampMs": 1980,
+            "confidence": null
+          },
+          {
+            "text": " our",
+            "startMs": 2080,
+            "endMs": 2160,
+            "timestampMs": 2120,
+            "confidence": null
+          },
+          {
+            "text": " model",
+            "startMs": 2240,
+            "endMs": 2480,
+            "timestampMs": 2360,
+            "confidence": null
+          },
+          {
+            "text": " substance.",
+            "startMs": 2560,
+            "endMs": 3680,
+            "timestampMs": 3120,
+            "confidence": null
+          },
+          {
+            "text": " One",
+            "startMs": 3760,
+            "endMs": 3920,
+            "timestampMs": 3840,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 4000,
+            "endMs": 4240,
+            "timestampMs": 4120,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 4320,
+            "endMs": 4400,
+            "timestampMs": 4360,
+            "confidence": null
+          },
+          {
+            "text": " become",
+            "startMs": 4480,
+            "endMs": 4800,
+            "timestampMs": 4640,
+            "confidence": null
+          },
+          {
+            "text": " one",
+            "startMs": 4880,
+            "endMs": 5040,
+            "timestampMs": 4960,
+            "confidence": null
+          },
+          {
+            "text": " B,",
+            "startMs": 5120,
+            "endMs": 5680,
+            "timestampMs": 5400,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 5760,
+            "endMs": 5840,
+            "timestampMs": 5800,
+            "confidence": null
+          },
+          {
+            "text": " one",
+            "startMs": 5920,
+            "endMs": 6080,
+            "timestampMs": 6000,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 6160,
+            "endMs": 6480,
+            "timestampMs": 6320,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 6640,
+            "endMs": 6720,
+            "timestampMs": 6680,
+            "confidence": null
+          },
+          {
+            "text": " become",
+            "startMs": 6800,
+            "endMs": 7120,
+            "timestampMs": 6960,
+            "confidence": null
+          },
+          {
+            "text": " one",
+            "startMs": 7200,
+            "endMs": 7360,
+            "timestampMs": 7280,
+            "confidence": null
+          },
+          {
+            "text": " A.",
+            "startMs": 7520,
+            "endMs": 7840,
+            "timestampMs": 7680,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 8320,
+            "endMs": 8360,
+            "timestampMs": 8340,
+            "confidence": null
+          },
+          {
+            "text": " container",
+            "startMs": 8400,
+            "endMs": 8880,
+            "timestampMs": 8640,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 8960,
+            "endMs": 9040,
+            "timestampMs": 9000,
+            "confidence": null
+          },
+          {
+            "text": " closed,",
+            "startMs": 9120,
+            "endMs": 9920,
+            "timestampMs": 9520,
+            "confidence": null
+          },
+          {
+            "text": " its",
+            "startMs": 10000,
+            "endMs": 10080,
+            "timestampMs": 10040,
+            "confidence": null
+          },
+          {
+            "text": " volume",
+            "startMs": 10160,
+            "endMs": 10560,
+            "timestampMs": 10360,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 10600,
+            "endMs": 10640,
+            "timestampMs": 10620,
+            "confidence": null
+          },
+          {
+            "text": " temperature",
+            "startMs": 10720,
+            "endMs": 11200,
+            "timestampMs": 10960,
+            "confidence": null
+          },
+          {
+            "text": " stay",
+            "startMs": 11280,
+            "endMs": 11520,
+            "timestampMs": 11400,
+            "confidence": null
+          },
+          {
+            "text": " fixed,",
+            "startMs": 11680,
+            "endMs": 12320,
+            "timestampMs": 12000,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 12400,
+            "endMs": 12480,
+            "timestampMs": 12440,
+            "confidence": null
+          },
+          {
+            "text": " we",
+            "startMs": 12520,
+            "endMs": 12560,
+            "timestampMs": 12540,
+            "confidence": null
+          },
+          {
+            "text": " are",
+            "startMs": 12640,
+            "endMs": 12720,
+            "timestampMs": 12680,
+            "confidence": null
+          },
+          {
+            "text": " following",
+            "startMs": 12920,
+            "endMs": 13120,
+            "timestampMs": 13020,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 13200,
+            "endMs": 13280,
+            "timestampMs": 13240,
+            "confidence": null
+          },
+          {
+            "text": " simple",
+            "startMs": 13360,
+            "endMs": 13680,
+            "timestampMs": 13520,
+            "confidence": null
+          },
+          {
+            "text": " model",
+            "startMs": 13760,
+            "endMs": 14080,
+            "timestampMs": 13920,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 14240,
+            "endMs": 14320,
+            "timestampMs": 14280,
+            "confidence": null
+          },
+          {
+            "text": " which",
+            "startMs": 14400,
+            "endMs": 14480,
+            "timestampMs": 14440,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 14560,
+            "endMs": 14640,
+            "timestampMs": 14600,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 14720,
+            "endMs": 14960,
+            "timestampMs": 14840,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 15040,
+            "endMs": 15120,
+            "timestampMs": 15080,
+            "confidence": null
+          },
+          {
+            "text": " each",
+            "startMs": 15200,
+            "endMs": 15360,
+            "timestampMs": 15280,
+            "confidence": null
+          },
+          {
+            "text": " direction",
+            "startMs": 15440,
+            "endMs": 16000,
+            "timestampMs": 15720,
+            "confidence": null
+          },
+          {
+            "text": " depends",
+            "startMs": 16239.999999999998,
+            "endMs": 16560,
+            "timestampMs": 16400,
+            "confidence": null
+          },
+          {
+            "text": " on",
+            "startMs": 16640,
+            "endMs": 16800,
+            "timestampMs": 16720,
+            "confidence": null
+          },
+          {
+            "text": " how",
+            "startMs": 16880,
+            "endMs": 16960,
+            "timestampMs": 16920,
+            "confidence": null
+          },
+          {
+            "text": " much",
+            "startMs": 17040,
+            "endMs": 17200,
+            "timestampMs": 17120,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 17280,
+            "endMs": 17360,
+            "timestampMs": 17320,
+            "confidence": null
+          },
+          {
+            "text": " its",
+            "startMs": 17440,
+            "endMs": 17520,
+            "timestampMs": 17480,
+            "confidence": null
+          },
+          {
+            "text": " starting",
+            "startMs": 17760,
+            "endMs": 18000,
+            "timestampMs": 17880,
+            "confidence": null
+          },
+          {
+            "text": " form",
+            "startMs": 18080,
+            "endMs": 18320,
+            "timestampMs": 18200,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 18400,
+            "endMs": 18560,
+            "timestampMs": 18480,
+            "confidence": null
+          },
+          {
+            "text": " present.",
+            "startMs": 18800,
+            "endMs": 19320,
+            "timestampMs": 19060,
+            "confidence": null
+          },
+          {
+            "text": " At",
+            "startMs": 19600,
+            "endMs": 19680,
+            "timestampMs": 19640,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 19760,
+            "endMs": 19840,
+            "timestampMs": 19800,
+            "confidence": null
+          },
+          {
+            "text": " beginning",
+            "startMs": 19960,
+            "endMs": 20320,
+            "timestampMs": 20140,
+            "confidence": null
+          },
+          {
+            "text": " there",
+            "startMs": 20400,
+            "endMs": 20480,
+            "timestampMs": 20440,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 20560,
+            "endMs": 20720,
+            "timestampMs": 20640,
+            "confidence": null
+          },
+          {
+            "text": " plenty",
+            "startMs": 20800,
+            "endMs": 21120,
+            "timestampMs": 20960,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 21200,
+            "endMs": 21280,
+            "timestampMs": 21240,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 21360,
+            "endMs": 21680,
+            "timestampMs": 21520,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 21760,
+            "endMs": 21840,
+            "timestampMs": 21800,
+            "confidence": null
+          },
+          {
+            "text": " no",
+            "startMs": 22000,
+            "endMs": 22240,
+            "timestampMs": 22120,
+            "confidence": null
+          },
+          {
+            "text": " B.",
+            "startMs": 22320,
+            "endMs": 23040,
+            "timestampMs": 22680,
+            "confidence": null
+          },
+          {
+            "text": " So",
+            "startMs": 23160,
+            "endMs": 23280,
+            "timestampMs": 23220,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 23360,
+            "endMs": 23520,
+            "timestampMs": 23440,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 23680,
+            "endMs": 23840,
+            "timestampMs": 23760,
+            "confidence": null
+          },
+          {
+            "text": " process",
+            "startMs": 23920,
+            "endMs": 24320,
+            "timestampMs": 24120,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 24400,
+            "endMs": 24480,
+            "timestampMs": 24440,
+            "confidence": null
+          },
+          {
+            "text": " run,",
+            "startMs": 24560,
+            "endMs": 25200,
+            "timestampMs": 24880,
+            "confidence": null
+          },
+          {
+            "text": " but",
+            "startMs": 25240,
+            "endMs": 25280,
+            "timestampMs": 25260,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 25360,
+            "endMs": 25400,
+            "timestampMs": 25380,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 25440,
+            "endMs": 25840,
+            "timestampMs": 25640,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 25920,
+            "endMs": 26160,
+            "timestampMs": 26040,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 26240,
+            "endMs": 26320,
+            "timestampMs": 26280,
+            "confidence": null
+          },
+          {
+            "text": " zero",
+            "startMs": 26400,
+            "endMs": 26880,
+            "timestampMs": 26640,
+            "confidence": null
+          },
+          {
+            "text": " because",
+            "startMs": 27040,
+            "endMs": 27280,
+            "timestampMs": 27160,
+            "confidence": null
+          },
+          {
+            "text": " there",
+            "startMs": 27320,
+            "endMs": 27360,
+            "timestampMs": 27340,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 27440,
+            "endMs": 27600,
+            "timestampMs": 27520,
+            "confidence": null
+          },
+          {
+            "text": " no",
+            "startMs": 27680,
+            "endMs": 27760,
+            "timestampMs": 27720,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 27920,
+            "endMs": 28080,
+            "timestampMs": 28000,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 28160,
+            "endMs": 28240,
+            "timestampMs": 28200,
+            "confidence": null
+          },
+          {
+            "text": " convert",
+            "startMs": 28320,
+            "endMs": 28720,
+            "timestampMs": 28520,
+            "confidence": null
+          },
+          {
+            "text": " yet.",
+            "startMs": 28880,
+            "endMs": 29320,
+            "timestampMs": 29100,
+            "confidence": null
+          },
+          {
+            "text": " Closed",
+            "startMs": 29600,
+            "endMs": 30160,
+            "timestampMs": 29880,
+            "confidence": null
+          },
+          {
+            "text": " means",
+            "startMs": 30240,
+            "endMs": 30480,
+            "timestampMs": 30360,
+            "confidence": null
+          },
+          {
+            "text": " matter",
+            "startMs": 30560,
+            "endMs": 30880,
+            "timestampMs": 30720,
+            "confidence": null
+          },
+          {
+            "text": " stays",
+            "startMs": 30960,
+            "endMs": 31280,
+            "timestampMs": 31120,
+            "confidence": null
+          },
+          {
+            "text": " inside.",
+            "startMs": 31360,
+            "endMs": 32320,
+            "timestampMs": 31840,
+            "confidence": null
+          },
+          {
+            "text": " It",
+            "startMs": 32360,
+            "endMs": 32400,
+            "timestampMs": 32380,
+            "confidence": null
+          },
+          {
+            "text": " does",
+            "startMs": 32479.999999999996,
+            "endMs": 32640,
+            "timestampMs": 32560,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 32800,
+            "endMs": 33040,
+            "timestampMs": 32920,
+            "confidence": null
+          },
+          {
+            "text": " mean",
+            "startMs": 33160,
+            "endMs": 33280,
+            "timestampMs": 33220,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 33320,
+            "endMs": 33360,
+            "timestampMs": 33340,
+            "confidence": null
+          },
+          {
+            "text": " container",
+            "startMs": 33440,
+            "endMs": 33920,
+            "timestampMs": 33680,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 34000,
+            "endMs": 34080,
+            "timestampMs": 34040,
+            "confidence": null
+          },
+          {
+            "text": " insulated.",
+            "startMs": 34160,
+            "endMs": 34960,
+            "timestampMs": 34560,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "id": "c2-collision",
+        "type": "concept",
+        "heading": "Meeting is only part of it",
+        "body": "An effective collision leads to reaction.",
+        "bullets": [
+          {
+            "text": "Enough energy and a suitable arrangement.",
+            "at": 9.133333333333333
+          },
+          {
+            "text": "More particles in the same volume: more opportunities to meet.",
+            "at": 30.5
+          }
+        ],
+        "secondary": "The A/B conversion model is not a collision mechanism.",
+        "callout": "Activation energy is the reaction barrier.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "association"
+          }
+        },
+        "durationInFrames": 1711,
+        "caption": "Collision explanation and a distinct two-to-one association example.",
+        "voiceover": {
+          "text": "Collision theory helps explain why the amount present can matter. In a reaction between particles, meeting is only part of the story. The particles also need enough energy and a suitable arrangement for reaction. Activation energy is the energy barrier that reacting particles must overcome. A collision that leads to reaction is called an effective collision. For example, two nitrogen dioxide molecules can combine to make dinitrogen tetroxide. With more nitrogen dioxide molecules in the same volume, there are more opportunities for them to meet. That is a rate explanation. Our A-to-B arrows only track conversion; they do not show molecules colliding. Some reactions involve a molecule breaking apart or changing form after energy transfer, so this simple picture is not a full mechanism for every reaction.",
+          "audioFile": "public/audio/assembled/c2-collision.191db3762321824a6b4b.42f4a4038e02.wav",
+          "startFrame": 0,
+          "endFrame": 1642
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 718,
+          "secondary": 1174,
+          "callout": 430
+        },
+        "captions": [
+          {
+            "text": "Collision",
+            "startMs": 0,
+            "endMs": 400,
+            "timestampMs": 200,
+            "confidence": null
+          },
+          {
+            "text": " theory",
+            "startMs": 480,
+            "endMs": 800,
+            "timestampMs": 640,
+            "confidence": null
+          },
+          {
+            "text": " helps",
+            "startMs": 880,
+            "endMs": 1120,
+            "timestampMs": 1000,
+            "confidence": null
+          },
+          {
+            "text": " explain",
+            "startMs": 1400,
+            "endMs": 1680,
+            "timestampMs": 1540,
+            "confidence": null
+          },
+          {
+            "text": " why",
+            "startMs": 1840,
+            "endMs": 2080,
+            "timestampMs": 1960,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 2120,
+            "endMs": 2160,
+            "timestampMs": 2140,
+            "confidence": null
+          },
+          {
+            "text": " amount",
+            "startMs": 2240,
+            "endMs": 2560,
+            "timestampMs": 2400,
+            "confidence": null
+          },
+          {
+            "text": " present",
+            "startMs": 2640,
+            "endMs": 3040,
+            "timestampMs": 2840,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 3120,
+            "endMs": 3280,
+            "timestampMs": 3200,
+            "confidence": null
+          },
+          {
+            "text": " matter.",
+            "startMs": 3360,
+            "endMs": 3840,
+            "timestampMs": 3600,
+            "confidence": null
+          },
+          {
+            "text": " In",
+            "startMs": 4400,
+            "endMs": 4480,
+            "timestampMs": 4440,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 4520,
+            "endMs": 4560,
+            "timestampMs": 4540,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 4640,
+            "endMs": 5040,
+            "timestampMs": 4840,
+            "confidence": null
+          },
+          {
+            "text": " between",
+            "startMs": 5200,
+            "endMs": 5360,
+            "timestampMs": 5280,
+            "confidence": null
+          },
+          {
+            "text": " particles,",
+            "startMs": 5440,
+            "endMs": 6400,
+            "timestampMs": 5920,
+            "confidence": null
+          },
+          {
+            "text": " meeting",
+            "startMs": 6480,
+            "endMs": 6960,
+            "timestampMs": 6720,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 7040,
+            "endMs": 7120,
+            "timestampMs": 7080,
+            "confidence": null
+          },
+          {
+            "text": " only",
+            "startMs": 7200,
+            "endMs": 7440,
+            "timestampMs": 7320,
+            "confidence": null
+          },
+          {
+            "text": " part",
+            "startMs": 7520,
+            "endMs": 7760,
+            "timestampMs": 7640,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 7840,
+            "endMs": 7920,
+            "timestampMs": 7880,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 7960,
+            "endMs": 8000,
+            "timestampMs": 7980,
+            "confidence": null
+          },
+          {
+            "text": " story.",
+            "startMs": 8080,
+            "endMs": 8560,
+            "timestampMs": 8320,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 9120,
+            "endMs": 9200,
+            "timestampMs": 9160,
+            "confidence": null
+          },
+          {
+            "text": " particles",
+            "startMs": 9480,
+            "endMs": 9760,
+            "timestampMs": 9620,
+            "confidence": null
+          },
+          {
+            "text": " also",
+            "startMs": 9960,
+            "endMs": 10160,
+            "timestampMs": 10060,
+            "confidence": null
+          },
+          {
+            "text": " need",
+            "startMs": 10240,
+            "endMs": 10400,
+            "timestampMs": 10320,
+            "confidence": null
+          },
+          {
+            "text": " enough",
+            "startMs": 10480,
+            "endMs": 10800,
+            "timestampMs": 10640,
+            "confidence": null
+          },
+          {
+            "text": " energy",
+            "startMs": 10880,
+            "endMs": 11360,
+            "timestampMs": 11120,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 11440,
+            "endMs": 11520,
+            "timestampMs": 11480,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 11560,
+            "endMs": 11600,
+            "timestampMs": 11580,
+            "confidence": null
+          },
+          {
+            "text": " suitable",
+            "startMs": 11760,
+            "endMs": 12160,
+            "timestampMs": 11960,
+            "confidence": null
+          },
+          {
+            "text": " arrangement",
+            "startMs": 12280,
+            "endMs": 12800,
+            "timestampMs": 12540,
+            "confidence": null
+          },
+          {
+            "text": " for",
+            "startMs": 12880,
+            "endMs": 12960,
+            "timestampMs": 12920,
+            "confidence": null
+          },
+          {
+            "text": " reaction.",
+            "startMs": 13240,
+            "endMs": 13680,
+            "timestampMs": 13460,
+            "confidence": null
+          },
+          {
+            "text": " Activation",
+            "startMs": 14320,
+            "endMs": 14960,
+            "timestampMs": 14640,
+            "confidence": null
+          },
+          {
+            "text": " energy",
+            "startMs": 15040,
+            "endMs": 15440,
+            "timestampMs": 15240,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 15520,
+            "endMs": 15600,
+            "timestampMs": 15560,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 15680,
+            "endMs": 15760,
+            "timestampMs": 15720,
+            "confidence": null
+          },
+          {
+            "text": " energy",
+            "startMs": 15840,
+            "endMs": 16160,
+            "timestampMs": 16000,
+            "confidence": null
+          },
+          {
+            "text": " barrier",
+            "startMs": 16320,
+            "endMs": 16720,
+            "timestampMs": 16520,
+            "confidence": null
+          },
+          {
+            "text": " that",
+            "startMs": 16800,
+            "endMs": 16880,
+            "timestampMs": 16840,
+            "confidence": null
+          },
+          {
+            "text": " reacting",
+            "startMs": 16960,
+            "endMs": 17360,
+            "timestampMs": 17160,
+            "confidence": null
+          },
+          {
+            "text": " particles",
+            "startMs": 17440,
+            "endMs": 17920,
+            "timestampMs": 17680,
+            "confidence": null
+          },
+          {
+            "text": " must",
+            "startMs": 18080,
+            "endMs": 18320,
+            "timestampMs": 18200,
+            "confidence": null
+          },
+          {
+            "text": " overcome.",
+            "startMs": 18400,
+            "endMs": 19360,
+            "timestampMs": 18880,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 19680,
+            "endMs": 19760,
+            "timestampMs": 19720,
+            "confidence": null
+          },
+          {
+            "text": " collision",
+            "startMs": 20000,
+            "endMs": 20240,
+            "timestampMs": 20120,
+            "confidence": null
+          },
+          {
+            "text": " that",
+            "startMs": 20320,
+            "endMs": 20400,
+            "timestampMs": 20360,
+            "confidence": null
+          },
+          {
+            "text": " leads",
+            "startMs": 20480,
+            "endMs": 20720,
+            "timestampMs": 20600,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 20800,
+            "endMs": 20840,
+            "timestampMs": 20820,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 20880,
+            "endMs": 21440,
+            "timestampMs": 21160,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 21520,
+            "endMs": 21600,
+            "timestampMs": 21560,
+            "confidence": null
+          },
+          {
+            "text": " called",
+            "startMs": 21680,
+            "endMs": 22000,
+            "timestampMs": 21840,
+            "confidence": null
+          },
+          {
+            "text": " an",
+            "startMs": 22080,
+            "endMs": 22160,
+            "timestampMs": 22120,
+            "confidence": null
+          },
+          {
+            "text": " effective",
+            "startMs": 22480,
+            "endMs": 22800,
+            "timestampMs": 22640,
+            "confidence": null
+          },
+          {
+            "text": " collision.",
+            "startMs": 23080,
+            "endMs": 23640,
+            "timestampMs": 23360,
+            "confidence": null
+          },
+          {
+            "text": " For",
+            "startMs": 23920,
+            "endMs": 24000,
+            "timestampMs": 23960,
+            "confidence": null
+          },
+          {
+            "text": " example,",
+            "startMs": 24240,
+            "endMs": 24960,
+            "timestampMs": 24600,
+            "confidence": null
+          },
+          {
+            "text": " two",
+            "startMs": 25080,
+            "endMs": 25200,
+            "timestampMs": 25140,
+            "confidence": null
+          },
+          {
+            "text": " nitrogen",
+            "startMs": 25280,
+            "endMs": 25760,
+            "timestampMs": 25520,
+            "confidence": null
+          },
+          {
+            "text": " dioxide",
+            "startMs": 25840,
+            "endMs": 26320,
+            "timestampMs": 26080,
+            "confidence": null
+          },
+          {
+            "text": " molecules",
+            "startMs": 26400,
+            "endMs": 26960,
+            "timestampMs": 26680,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 27040,
+            "endMs": 27200,
+            "timestampMs": 27120,
+            "confidence": null
+          },
+          {
+            "text": " combine",
+            "startMs": 27440,
+            "endMs": 27680,
+            "timestampMs": 27560,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 27760,
+            "endMs": 27840,
+            "timestampMs": 27800,
+            "confidence": null
+          },
+          {
+            "text": " make",
+            "startMs": 27960,
+            "endMs": 28080,
+            "timestampMs": 28020,
+            "confidence": null
+          },
+          {
+            "text": " dinitrogen",
+            "startMs": 28240,
+            "endMs": 29040,
+            "timestampMs": 28640,
+            "confidence": null
+          },
+          {
+            "text": " tetroxide.",
+            "startMs": 29120,
+            "endMs": 29920,
+            "timestampMs": 29520,
+            "confidence": null
+          },
+          {
+            "text": " With",
+            "startMs": 30480,
+            "endMs": 30640,
+            "timestampMs": 30560,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 30720,
+            "endMs": 30960,
+            "timestampMs": 30840,
+            "confidence": null
+          },
+          {
+            "text": " nitrogen",
+            "startMs": 31040,
+            "endMs": 31440,
+            "timestampMs": 31240,
+            "confidence": null
+          },
+          {
+            "text": " dioxide",
+            "startMs": 31520,
+            "endMs": 32000,
+            "timestampMs": 31760,
+            "confidence": null
+          },
+          {
+            "text": " molecules",
+            "startMs": 32080,
+            "endMs": 32560.000000000004,
+            "timestampMs": 32320,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 32600,
+            "endMs": 32640,
+            "timestampMs": 32620,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 32720,
+            "endMs": 32800,
+            "timestampMs": 32760,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 32920,
+            "endMs": 33040,
+            "timestampMs": 32980,
+            "confidence": null
+          },
+          {
+            "text": " volume,",
+            "startMs": 33120,
+            "endMs": 33840,
+            "timestampMs": 33480,
+            "confidence": null
+          },
+          {
+            "text": " there",
+            "startMs": 33880,
+            "endMs": 33920,
+            "timestampMs": 33900,
+            "confidence": null
+          },
+          {
+            "text": " are",
+            "startMs": 34000,
+            "endMs": 34160,
+            "timestampMs": 34080,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 34280,
+            "endMs": 34400,
+            "timestampMs": 34340,
+            "confidence": null
+          },
+          {
+            "text": " opportunities",
+            "startMs": 34560,
+            "endMs": 35120,
+            "timestampMs": 34840,
+            "confidence": null
+          },
+          {
+            "text": " for",
+            "startMs": 35200,
+            "endMs": 35240,
+            "timestampMs": 35220,
+            "confidence": null
+          },
+          {
+            "text": " them",
+            "startMs": 35280,
+            "endMs": 35440,
+            "timestampMs": 35360,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 35520,
+            "endMs": 35600,
+            "timestampMs": 35560,
+            "confidence": null
+          },
+          {
+            "text": " meet.",
+            "startMs": 35760,
+            "endMs": 36400,
+            "timestampMs": 36080,
+            "confidence": null
+          },
+          {
+            "text": " That",
+            "startMs": 36880,
+            "endMs": 37120,
+            "timestampMs": 37000,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 37200,
+            "endMs": 37280,
+            "timestampMs": 37240,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 37360,
+            "endMs": 37440,
+            "timestampMs": 37400,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 37520,
+            "endMs": 37760,
+            "timestampMs": 37640,
+            "confidence": null
+          },
+          {
+            "text": " explanation.",
+            "startMs": 37880,
+            "endMs": 38560,
+            "timestampMs": 38220,
+            "confidence": null
+          },
+          {
+            "text": " Our",
+            "startMs": 39120,
+            "endMs": 39280,
+            "timestampMs": 39200,
+            "confidence": null
+          },
+          {
+            "text": " A-to-B",
+            "startMs": 39360,
+            "endMs": 39840,
+            "timestampMs": 39600,
+            "confidence": null
+          },
+          {
+            "text": " arrows",
+            "startMs": 39920,
+            "endMs": 40320,
+            "timestampMs": 40120,
+            "confidence": null
+          },
+          {
+            "text": " only",
+            "startMs": 40400,
+            "endMs": 40640,
+            "timestampMs": 40520,
+            "confidence": null
+          },
+          {
+            "text": " track",
+            "startMs": 40720,
+            "endMs": 41040,
+            "timestampMs": 40880,
+            "confidence": null
+          },
+          {
+            "text": " conversion;",
+            "startMs": 41400,
+            "endMs": 42080,
+            "timestampMs": 41740,
+            "confidence": null
+          },
+          {
+            "text": " they",
+            "startMs": 42160,
+            "endMs": 42240,
+            "timestampMs": 42200,
+            "confidence": null
+          },
+          {
+            "text": " do",
+            "startMs": 42320,
+            "endMs": 42400,
+            "timestampMs": 42360,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 42480,
+            "endMs": 42720,
+            "timestampMs": 42600,
+            "confidence": null
+          },
+          {
+            "text": " show",
+            "startMs": 42800,
+            "endMs": 42960,
+            "timestampMs": 42880,
+            "confidence": null
+          },
+          {
+            "text": " molecules",
+            "startMs": 43040,
+            "endMs": 43520,
+            "timestampMs": 43280,
+            "confidence": null
+          },
+          {
+            "text": " colliding.",
+            "startMs": 43600,
+            "endMs": 44520,
+            "timestampMs": 44060,
+            "confidence": null
+          },
+          {
+            "text": " Some",
+            "startMs": 44880,
+            "endMs": 45040,
+            "timestampMs": 44960,
+            "confidence": null
+          },
+          {
+            "text": " reactions",
+            "startMs": 45120,
+            "endMs": 45600,
+            "timestampMs": 45360,
+            "confidence": null
+          },
+          {
+            "text": " involve",
+            "startMs": 45680,
+            "endMs": 46000,
+            "timestampMs": 45840,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 46080,
+            "endMs": 46120,
+            "timestampMs": 46100,
+            "confidence": null
+          },
+          {
+            "text": " molecule",
+            "startMs": 46160,
+            "endMs": 46560,
+            "timestampMs": 46360,
+            "confidence": null
+          },
+          {
+            "text": " breaking",
+            "startMs": 46640,
+            "endMs": 46960,
+            "timestampMs": 46800,
+            "confidence": null
+          },
+          {
+            "text": " apart",
+            "startMs": 47040,
+            "endMs": 47600,
+            "timestampMs": 47320,
+            "confidence": null
+          },
+          {
+            "text": " or",
+            "startMs": 47680,
+            "endMs": 47840,
+            "timestampMs": 47760,
+            "confidence": null
+          },
+          {
+            "text": " changing",
+            "startMs": 48000,
+            "endMs": 48400,
+            "timestampMs": 48200,
+            "confidence": null
+          },
+          {
+            "text": " form",
+            "startMs": 48480,
+            "endMs": 48880,
+            "timestampMs": 48680,
+            "confidence": null
+          },
+          {
+            "text": " after",
+            "startMs": 48960,
+            "endMs": 49280,
+            "timestampMs": 49120,
+            "confidence": null
+          },
+          {
+            "text": " energy",
+            "startMs": 49360,
+            "endMs": 49680,
+            "timestampMs": 49520,
+            "confidence": null
+          },
+          {
+            "text": " transfer,",
+            "startMs": 49760,
+            "endMs": 50720,
+            "timestampMs": 50240,
+            "confidence": null
+          },
+          {
+            "text": " so",
+            "startMs": 50800,
+            "endMs": 50880,
+            "timestampMs": 50840,
+            "confidence": null
+          },
+          {
+            "text": " this",
+            "startMs": 50960,
+            "endMs": 51120,
+            "timestampMs": 51040,
+            "confidence": null
+          },
+          {
+            "text": " simple",
+            "startMs": 51280,
+            "endMs": 51440,
+            "timestampMs": 51360,
+            "confidence": null
+          },
+          {
+            "text": " picture",
+            "startMs": 51520,
+            "endMs": 51840,
+            "timestampMs": 51680,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 51920,
+            "endMs": 52080,
+            "timestampMs": 52000,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 52160,
+            "endMs": 52400,
+            "timestampMs": 52280,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 52480,
+            "endMs": 52560,
+            "timestampMs": 52520,
+            "confidence": null
+          },
+          {
+            "text": " full",
+            "startMs": 52640,
+            "endMs": 52800,
+            "timestampMs": 52720,
+            "confidence": null
+          },
+          {
+            "text": " mechanism",
+            "startMs": 52880,
+            "endMs": 53360,
+            "timestampMs": 53120,
+            "confidence": null
+          },
+          {
+            "text": " for",
+            "startMs": 53440,
+            "endMs": 53520,
+            "timestampMs": 53480,
+            "confidence": null
+          },
+          {
+            "text": " every",
+            "startMs": 53680,
+            "endMs": 53920,
+            "timestampMs": 53800,
+            "confidence": null
+          },
+          {
+            "text": " reaction.",
+            "startMs": 54240,
+            "endMs": 54720,
+            "timestampMs": 54480,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "id": "c2-rates",
+        "type": "concept",
+        "heading": "Both rates change together",
+        "body": "Our start: A only.",
+        "bullets": [
+          {
+            "text": "Less A: forward rate falls.",
+            "at": 6.4
+          },
+          {
+            "text": "More B: reverse rate rises.",
+            "at": 9.866666666666667
+          }
+        ],
+        "secondary": "Fixed scale and conditions. The exact equilibrium limit is shown separately.",
+        "callout": "Replacement balances removal.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "rates",
+            "forwardAt": 192,
+            "reverseAt": 296,
+            "limitAt": 852
+          }
+        },
+        "durationInFrames": 1173,
+        "caption": "Finite curves approach the equal, non-zero equilibrium limiting rate.",
+        "voiceover": {
+          "text": "Back in our A and B model, each net forward conversion leaves less A and more B. As A decreases, the forward rate falls. As B builds up, the reverse rate rises. These changes happen together, rather than one reaction ending before the other begins. The rate graph shows the forward curve coming down and the reverse curve coming up. As they approach the same non-zero rate, their effects balance. At equilibrium, each direction replaces what the other removes, so the composition stays steady even though both conversions continue.",
+          "audioFile": "public/audio/assembled/c2-rates.835a1f3aab12b3cbbd8e.9f4a4d6befbd.wav",
+          "startFrame": 0,
+          "endFrame": 1104
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 562,
+          "callout": 852
+        },
+        "captions": [
+          {
+            "text": "Back",
+            "startMs": 0,
+            "endMs": 240,
+            "timestampMs": 120,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 320,
+            "endMs": 400,
+            "timestampMs": 360,
+            "confidence": null
+          },
+          {
+            "text": " our",
+            "startMs": 520,
+            "endMs": 640,
+            "timestampMs": 580,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 720,
+            "endMs": 880,
+            "timestampMs": 800,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 920,
+            "endMs": 960,
+            "timestampMs": 940,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 1120,
+            "endMs": 1280,
+            "timestampMs": 1200,
+            "confidence": null
+          },
+          {
+            "text": " model,",
+            "startMs": 1360,
+            "endMs": 2080,
+            "timestampMs": 1720,
+            "confidence": null
+          },
+          {
+            "text": " each",
+            "startMs": 2200,
+            "endMs": 2320,
+            "timestampMs": 2260,
+            "confidence": null
+          },
+          {
+            "text": " net",
+            "startMs": 2400,
+            "endMs": 2640,
+            "timestampMs": 2520,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 2720,
+            "endMs": 2960,
+            "timestampMs": 2840,
+            "confidence": null
+          },
+          {
+            "text": " conversion",
+            "startMs": 3040,
+            "endMs": 3600,
+            "timestampMs": 3320,
+            "confidence": null
+          },
+          {
+            "text": " leaves",
+            "startMs": 3680,
+            "endMs": 3920,
+            "timestampMs": 3800,
+            "confidence": null
+          },
+          {
+            "text": " less",
+            "startMs": 4080,
+            "endMs": 4320,
+            "timestampMs": 4200,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 4400,
+            "endMs": 4720,
+            "timestampMs": 4560,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 4880,
+            "endMs": 5040,
+            "timestampMs": 4960,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 5120,
+            "endMs": 5360,
+            "timestampMs": 5240,
+            "confidence": null
+          },
+          {
+            "text": " B.",
+            "startMs": 5440,
+            "endMs": 6080,
+            "timestampMs": 5760,
+            "confidence": null
+          },
+          {
+            "text": " As",
+            "startMs": 6400,
+            "endMs": 6560,
+            "timestampMs": 6480,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 6720,
+            "endMs": 6880,
+            "timestampMs": 6800,
+            "confidence": null
+          },
+          {
+            "text": " decreases,",
+            "startMs": 6960,
+            "endMs": 7920,
+            "timestampMs": 7440,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 7960,
+            "endMs": 8000,
+            "timestampMs": 7980,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 8160,
+            "endMs": 8400,
+            "timestampMs": 8280,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 8480,
+            "endMs": 8720,
+            "timestampMs": 8600,
+            "confidence": null
+          },
+          {
+            "text": " falls.",
+            "startMs": 8800,
+            "endMs": 9360,
+            "timestampMs": 9080,
+            "confidence": null
+          },
+          {
+            "text": " As",
+            "startMs": 9840,
+            "endMs": 10000,
+            "timestampMs": 9920,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 10080,
+            "endMs": 10240,
+            "timestampMs": 10160,
+            "confidence": null
+          },
+          {
+            "text": " builds",
+            "startMs": 10320,
+            "endMs": 10600,
+            "timestampMs": 10460,
+            "confidence": null
+          },
+          {
+            "text": " up,",
+            "startMs": 10640,
+            "endMs": 11120,
+            "timestampMs": 10880,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 11200,
+            "endMs": 11240,
+            "timestampMs": 11220,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 11280,
+            "endMs": 11760,
+            "timestampMs": 11520,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 11880,
+            "endMs": 12000,
+            "timestampMs": 11940,
+            "confidence": null
+          },
+          {
+            "text": " rises.",
+            "startMs": 12080,
+            "endMs": 12800,
+            "timestampMs": 12440,
+            "confidence": null
+          },
+          {
+            "text": " These",
+            "startMs": 13360,
+            "endMs": 13520,
+            "timestampMs": 13440,
+            "confidence": null
+          },
+          {
+            "text": " changes",
+            "startMs": 13600,
+            "endMs": 13920,
+            "timestampMs": 13760,
+            "confidence": null
+          },
+          {
+            "text": " happen",
+            "startMs": 14000,
+            "endMs": 14240,
+            "timestampMs": 14120,
+            "confidence": null
+          },
+          {
+            "text": " together,",
+            "startMs": 14320,
+            "endMs": 15040,
+            "timestampMs": 14680,
+            "confidence": null
+          },
+          {
+            "text": " rather",
+            "startMs": 15200,
+            "endMs": 15360,
+            "timestampMs": 15280,
+            "confidence": null
+          },
+          {
+            "text": " than",
+            "startMs": 15480,
+            "endMs": 15600,
+            "timestampMs": 15540,
+            "confidence": null
+          },
+          {
+            "text": " one",
+            "startMs": 15680,
+            "endMs": 15840,
+            "timestampMs": 15760,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 16079.999999999998,
+            "endMs": 16320,
+            "timestampMs": 16200,
+            "confidence": null
+          },
+          {
+            "text": " ending",
+            "startMs": 16400,
+            "endMs": 16800,
+            "timestampMs": 16600,
+            "confidence": null
+          },
+          {
+            "text": " before",
+            "startMs": 16960,
+            "endMs": 17120,
+            "timestampMs": 17040,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 17160,
+            "endMs": 17200,
+            "timestampMs": 17180,
+            "confidence": null
+          },
+          {
+            "text": " other",
+            "startMs": 17280,
+            "endMs": 17440,
+            "timestampMs": 17360,
+            "confidence": null
+          },
+          {
+            "text": " begins.",
+            "startMs": 17560,
+            "endMs": 18160,
+            "timestampMs": 17860,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 18720,
+            "endMs": 18800,
+            "timestampMs": 18760,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 18920,
+            "endMs": 19040,
+            "timestampMs": 18980,
+            "confidence": null
+          },
+          {
+            "text": " graph",
+            "startMs": 19120,
+            "endMs": 19360,
+            "timestampMs": 19240,
+            "confidence": null
+          },
+          {
+            "text": " shows",
+            "startMs": 19440,
+            "endMs": 19680,
+            "timestampMs": 19560,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 19760,
+            "endMs": 19840,
+            "timestampMs": 19800,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 19920,
+            "endMs": 20160,
+            "timestampMs": 20040,
+            "confidence": null
+          },
+          {
+            "text": " curve",
+            "startMs": 20240,
+            "endMs": 20480,
+            "timestampMs": 20360,
+            "confidence": null
+          },
+          {
+            "text": " coming",
+            "startMs": 20560,
+            "endMs": 20800,
+            "timestampMs": 20680,
+            "confidence": null
+          },
+          {
+            "text": " down",
+            "startMs": 20880,
+            "endMs": 21280,
+            "timestampMs": 21080,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 21520,
+            "endMs": 21600,
+            "timestampMs": 21560,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 21640,
+            "endMs": 21680,
+            "timestampMs": 21660,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 21880,
+            "endMs": 22080,
+            "timestampMs": 21980,
+            "confidence": null
+          },
+          {
+            "text": " curve",
+            "startMs": 22160,
+            "endMs": 22480,
+            "timestampMs": 22320,
+            "confidence": null
+          },
+          {
+            "text": " coming",
+            "startMs": 22560,
+            "endMs": 22800,
+            "timestampMs": 22680,
+            "confidence": null
+          },
+          {
+            "text": " up.",
+            "startMs": 22880,
+            "endMs": 23520,
+            "timestampMs": 23200,
+            "confidence": null
+          },
+          {
+            "text": " As",
+            "startMs": 23840,
+            "endMs": 24000,
+            "timestampMs": 23920,
+            "confidence": null
+          },
+          {
+            "text": " they",
+            "startMs": 24040,
+            "endMs": 24080,
+            "timestampMs": 24060,
+            "confidence": null
+          },
+          {
+            "text": " approach",
+            "startMs": 24160,
+            "endMs": 24560,
+            "timestampMs": 24360,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 24640,
+            "endMs": 24720,
+            "timestampMs": 24680,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 24800,
+            "endMs": 25040,
+            "timestampMs": 24920,
+            "confidence": null
+          },
+          {
+            "text": " non-zero",
+            "startMs": 25200,
+            "endMs": 25840,
+            "timestampMs": 25520,
+            "confidence": null
+          },
+          {
+            "text": " rate,",
+            "startMs": 25920,
+            "endMs": 26480,
+            "timestampMs": 26200,
+            "confidence": null
+          },
+          {
+            "text": " their",
+            "startMs": 26520,
+            "endMs": 26560,
+            "timestampMs": 26540,
+            "confidence": null
+          },
+          {
+            "text": " effects",
+            "startMs": 26640,
+            "endMs": 27120,
+            "timestampMs": 26880,
+            "confidence": null
+          },
+          {
+            "text": " balance.",
+            "startMs": 27200,
+            "endMs": 28080,
+            "timestampMs": 27640,
+            "confidence": null
+          },
+          {
+            "text": " At",
+            "startMs": 28400,
+            "endMs": 28480,
+            "timestampMs": 28440,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium,",
+            "startMs": 28560,
+            "endMs": 29520,
+            "timestampMs": 29040,
+            "confidence": null
+          },
+          {
+            "text": " each",
+            "startMs": 29600,
+            "endMs": 29760,
+            "timestampMs": 29680,
+            "confidence": null
+          },
+          {
+            "text": " direction",
+            "startMs": 29840,
+            "endMs": 30320,
+            "timestampMs": 30080,
+            "confidence": null
+          },
+          {
+            "text": " replaces",
+            "startMs": 30400,
+            "endMs": 30960,
+            "timestampMs": 30680,
+            "confidence": null
+          },
+          {
+            "text": " what",
+            "startMs": 31040,
+            "endMs": 31120,
+            "timestampMs": 31080,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 31200,
+            "endMs": 31280,
+            "timestampMs": 31240,
+            "confidence": null
+          },
+          {
+            "text": " other",
+            "startMs": 31360,
+            "endMs": 31600,
+            "timestampMs": 31480,
+            "confidence": null
+          },
+          {
+            "text": " removes,",
+            "startMs": 31680,
+            "endMs": 32560.000000000004,
+            "timestampMs": 32120,
+            "confidence": null
+          },
+          {
+            "text": " so",
+            "startMs": 32640,
+            "endMs": 32720,
+            "timestampMs": 32680,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 32759.999999999996,
+            "endMs": 32800,
+            "timestampMs": 32780,
+            "confidence": null
+          },
+          {
+            "text": " composition",
+            "startMs": 32880,
+            "endMs": 33440,
+            "timestampMs": 33160,
+            "confidence": null
+          },
+          {
+            "text": " stays",
+            "startMs": 33520,
+            "endMs": 33760,
+            "timestampMs": 33640,
+            "confidence": null
+          },
+          {
+            "text": " steady",
+            "startMs": 33840,
+            "endMs": 34240,
+            "timestampMs": 34040,
+            "confidence": null
+          },
+          {
+            "text": " even",
+            "startMs": 34560,
+            "endMs": 34800,
+            "timestampMs": 34680,
+            "confidence": null
+          },
+          {
+            "text": " though",
+            "startMs": 34880,
+            "endMs": 35040,
+            "timestampMs": 34960,
+            "confidence": null
+          },
+          {
+            "text": " both",
+            "startMs": 35120,
+            "endMs": 35360,
+            "timestampMs": 35240,
+            "confidence": null
+          },
+          {
+            "text": " conversions",
+            "startMs": 35440,
+            "endMs": 36000,
+            "timestampMs": 35720,
+            "confidence": null
+          },
+          {
+            "text": " continue.",
+            "startMs": 36280,
+            "endMs": 36800,
+            "timestampMs": 36540,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "id": "c2-amounts",
+        "type": "concept",
+        "heading": "A different graph quantity",
+        "body": "Same model, start and conditions.",
+        "bullets": [
+          {
+            "text": "Rate: conversion per time.",
+            "at": 15.866666666666667
+          },
+          {
+            "text": "Concentration: amount per volume.",
+            "at": 18.733333333333334
+          }
+        ],
+        "secondary": "A:B equilibrium limit is 2:1, an authored model choice.",
+        "callout": "A different start can reverse the approach.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "amounts",
+            "forwardAt": 77,
+            "reverseAt": 123,
+            "limitAt": 224
+          }
+        },
+        "durationInFrames": 1085,
+        "caption": "Schematic concentrations approach unequal limiting levels.",
+        "voiceover": {
+          "text": "Now compare the concentration graph. A decreases and B increases, then each levels off. Their two final levels are different in this example. The rate curves approach the same level, but the concentration curves do not have to. Rate tells us how quickly conversion happens. Concentration tells us how much is present per volume. Also, forward down and reverse up describe our chosen starting mixture. If a mixture began with excess B and the reverse rate were larger, the approach could go the other way.",
+          "audioFile": "public/audio/assembled/c2-amounts.76aa495266feb114227d.a2c50d9b733b.wav",
+          "startFrame": 0,
+          "endFrame": 1016
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 224,
+          "callout": 836
+        },
+        "captions": [
+          {
+            "text": "Now",
+            "startMs": 0,
+            "endMs": 240,
+            "timestampMs": 120,
+            "confidence": null
+          },
+          {
+            "text": " compare",
+            "startMs": 320,
+            "endMs": 640,
+            "timestampMs": 480,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 680,
+            "endMs": 720,
+            "timestampMs": 700,
+            "confidence": null
+          },
+          {
+            "text": " concentration",
+            "startMs": 800,
+            "endMs": 1520,
+            "timestampMs": 1160,
+            "confidence": null
+          },
+          {
+            "text": " graph.",
+            "startMs": 1600,
+            "endMs": 2280,
+            "timestampMs": 1940,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 2560,
+            "endMs": 2720,
+            "timestampMs": 2640,
+            "confidence": null
+          },
+          {
+            "text": " decreases",
+            "startMs": 2800,
+            "endMs": 3600,
+            "timestampMs": 3200,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 3760,
+            "endMs": 3920,
+            "timestampMs": 3840,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 4080,
+            "endMs": 4320,
+            "timestampMs": 4200,
+            "confidence": null
+          },
+          {
+            "text": " increases,",
+            "startMs": 4400,
+            "endMs": 5440,
+            "timestampMs": 4920,
+            "confidence": null
+          },
+          {
+            "text": " then",
+            "startMs": 5520,
+            "endMs": 5760,
+            "timestampMs": 5640,
+            "confidence": null
+          },
+          {
+            "text": " each",
+            "startMs": 5920,
+            "endMs": 6080,
+            "timestampMs": 6000,
+            "confidence": null
+          },
+          {
+            "text": " levels",
+            "startMs": 6160,
+            "endMs": 6480,
+            "timestampMs": 6320,
+            "confidence": null
+          },
+          {
+            "text": " off.",
+            "startMs": 6560,
+            "endMs": 6880,
+            "timestampMs": 6720,
+            "confidence": null
+          },
+          {
+            "text": " Their",
+            "startMs": 7440,
+            "endMs": 7600,
+            "timestampMs": 7520,
+            "confidence": null
+          },
+          {
+            "text": " two",
+            "startMs": 7720,
+            "endMs": 7840,
+            "timestampMs": 7780,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 8000,
+            "endMs": 8320,
+            "timestampMs": 8160,
+            "confidence": null
+          },
+          {
+            "text": " levels",
+            "startMs": 8480,
+            "endMs": 8640,
+            "timestampMs": 8560,
+            "confidence": null
+          },
+          {
+            "text": " are",
+            "startMs": 8800,
+            "endMs": 8960,
+            "timestampMs": 8880,
+            "confidence": null
+          },
+          {
+            "text": " different",
+            "startMs": 9160,
+            "endMs": 9360,
+            "timestampMs": 9260,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 9400,
+            "endMs": 9440,
+            "timestampMs": 9420,
+            "confidence": null
+          },
+          {
+            "text": " this",
+            "startMs": 9520,
+            "endMs": 9600,
+            "timestampMs": 9560,
+            "confidence": null
+          },
+          {
+            "text": " example.",
+            "startMs": 9680,
+            "endMs": 10440,
+            "timestampMs": 10060,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 10720,
+            "endMs": 10800,
+            "timestampMs": 10760,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 10920,
+            "endMs": 11040,
+            "timestampMs": 10980,
+            "confidence": null
+          },
+          {
+            "text": " curves",
+            "startMs": 11120,
+            "endMs": 11360,
+            "timestampMs": 11240,
+            "confidence": null
+          },
+          {
+            "text": " approach",
+            "startMs": 11440,
+            "endMs": 11840,
+            "timestampMs": 11640,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 11920,
+            "endMs": 12000,
+            "timestampMs": 11960,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 12080,
+            "endMs": 12320,
+            "timestampMs": 12200,
+            "confidence": null
+          },
+          {
+            "text": " level,",
+            "startMs": 12400,
+            "endMs": 12880,
+            "timestampMs": 12640,
+            "confidence": null
+          },
+          {
+            "text": " but",
+            "startMs": 12920,
+            "endMs": 12960,
+            "timestampMs": 12940,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 13040,
+            "endMs": 13120,
+            "timestampMs": 13080,
+            "confidence": null
+          },
+          {
+            "text": " concentration",
+            "startMs": 13200,
+            "endMs": 13840,
+            "timestampMs": 13520,
+            "confidence": null
+          },
+          {
+            "text": " curves",
+            "startMs": 13920,
+            "endMs": 14240,
+            "timestampMs": 14080,
+            "confidence": null
+          },
+          {
+            "text": " do",
+            "startMs": 14320,
+            "endMs": 14400,
+            "timestampMs": 14360,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 14480,
+            "endMs": 14720,
+            "timestampMs": 14600,
+            "confidence": null
+          },
+          {
+            "text": " have",
+            "startMs": 14800,
+            "endMs": 14960,
+            "timestampMs": 14880,
+            "confidence": null
+          },
+          {
+            "text": " to.",
+            "startMs": 15040,
+            "endMs": 15280,
+            "timestampMs": 15160,
+            "confidence": null
+          },
+          {
+            "text": " Rate",
+            "startMs": 15840,
+            "endMs": 16160,
+            "timestampMs": 16000,
+            "confidence": null
+          },
+          {
+            "text": " tells",
+            "startMs": 16239.999999999998,
+            "endMs": 16400,
+            "timestampMs": 16320,
+            "confidence": null
+          },
+          {
+            "text": " us",
+            "startMs": 16480,
+            "endMs": 16640,
+            "timestampMs": 16560,
+            "confidence": null
+          },
+          {
+            "text": " how",
+            "startMs": 16760,
+            "endMs": 16880,
+            "timestampMs": 16820,
+            "confidence": null
+          },
+          {
+            "text": " quickly",
+            "startMs": 16960,
+            "endMs": 17280,
+            "timestampMs": 17120,
+            "confidence": null
+          },
+          {
+            "text": " conversion",
+            "startMs": 17560,
+            "endMs": 17840,
+            "timestampMs": 17700,
+            "confidence": null
+          },
+          {
+            "text": " happens.",
+            "startMs": 17880,
+            "endMs": 18520,
+            "timestampMs": 18200,
+            "confidence": null
+          },
+          {
+            "text": " Concentration",
+            "startMs": 18720,
+            "endMs": 19600,
+            "timestampMs": 19160,
+            "confidence": null
+          },
+          {
+            "text": " tells",
+            "startMs": 19680,
+            "endMs": 19920,
+            "timestampMs": 19800,
+            "confidence": null
+          },
+          {
+            "text": " us",
+            "startMs": 20000,
+            "endMs": 20080,
+            "timestampMs": 20040,
+            "confidence": null
+          },
+          {
+            "text": " how",
+            "startMs": 20200,
+            "endMs": 20320,
+            "timestampMs": 20260,
+            "confidence": null
+          },
+          {
+            "text": " much",
+            "startMs": 20400,
+            "endMs": 20480,
+            "timestampMs": 20440,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 20560,
+            "endMs": 20720,
+            "timestampMs": 20640,
+            "confidence": null
+          },
+          {
+            "text": " present",
+            "startMs": 20920,
+            "endMs": 21120,
+            "timestampMs": 21020,
+            "confidence": null
+          },
+          {
+            "text": " per",
+            "startMs": 21200,
+            "endMs": 21280,
+            "timestampMs": 21240,
+            "confidence": null
+          },
+          {
+            "text": " volume.",
+            "startMs": 21360,
+            "endMs": 22320,
+            "timestampMs": 21840,
+            "confidence": null
+          },
+          {
+            "text": " Also,",
+            "startMs": 22520,
+            "endMs": 23120,
+            "timestampMs": 22820,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 23200,
+            "endMs": 23520,
+            "timestampMs": 23360,
+            "confidence": null
+          },
+          {
+            "text": " down",
+            "startMs": 23600,
+            "endMs": 24000,
+            "timestampMs": 23800,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 24080,
+            "endMs": 24160,
+            "timestampMs": 24120,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 24400,
+            "endMs": 24640,
+            "timestampMs": 24520,
+            "confidence": null
+          },
+          {
+            "text": " up",
+            "startMs": 24800,
+            "endMs": 25120,
+            "timestampMs": 24960,
+            "confidence": null
+          },
+          {
+            "text": " describe",
+            "startMs": 25360,
+            "endMs": 25600,
+            "timestampMs": 25480,
+            "confidence": null
+          },
+          {
+            "text": " our",
+            "startMs": 25680,
+            "endMs": 25840,
+            "timestampMs": 25760,
+            "confidence": null
+          },
+          {
+            "text": " chosen",
+            "startMs": 26000,
+            "endMs": 26160,
+            "timestampMs": 26080,
+            "confidence": null
+          },
+          {
+            "text": " starting",
+            "startMs": 26320,
+            "endMs": 26640,
+            "timestampMs": 26480,
+            "confidence": null
+          },
+          {
+            "text": " mixture.",
+            "startMs": 26720,
+            "endMs": 27760,
+            "timestampMs": 27240,
+            "confidence": null
+          },
+          {
+            "text": " If",
+            "startMs": 27840,
+            "endMs": 27920,
+            "timestampMs": 27880,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 27973,
+            "endMs": 28027,
+            "timestampMs": 28000,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 28080,
+            "endMs": 28320,
+            "timestampMs": 28200,
+            "confidence": null
+          },
+          {
+            "text": " began",
+            "startMs": 28400,
+            "endMs": 28720,
+            "timestampMs": 28560,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 28800,
+            "endMs": 28960,
+            "timestampMs": 28880,
+            "confidence": null
+          },
+          {
+            "text": " excess",
+            "startMs": 29040,
+            "endMs": 29440,
+            "timestampMs": 29240,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 29520,
+            "endMs": 30080,
+            "timestampMs": 29800,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 30160,
+            "endMs": 30240,
+            "timestampMs": 30200,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 30280,
+            "endMs": 30320,
+            "timestampMs": 30300,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 30520,
+            "endMs": 30720,
+            "timestampMs": 30620,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 30800,
+            "endMs": 30960,
+            "timestampMs": 30880,
+            "confidence": null
+          },
+          {
+            "text": " were",
+            "startMs": 31040,
+            "endMs": 31120,
+            "timestampMs": 31080,
+            "confidence": null
+          },
+          {
+            "text": " larger,",
+            "startMs": 31200,
+            "endMs": 31960,
+            "timestampMs": 31580,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 32000,
+            "endMs": 32080,
+            "timestampMs": 32040,
+            "confidence": null
+          },
+          {
+            "text": " approach",
+            "startMs": 32240.000000000004,
+            "endMs": 32640,
+            "timestampMs": 32440,
+            "confidence": null
+          },
+          {
+            "text": " could",
+            "startMs": 32759.999999999996,
+            "endMs": 32880,
+            "timestampMs": 32820,
+            "confidence": null
+          },
+          {
+            "text": " go",
+            "startMs": 32960,
+            "endMs": 33040,
+            "timestampMs": 33000,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 33080,
+            "endMs": 33120,
+            "timestampMs": 33100,
+            "confidence": null
+          },
+          {
+            "text": " other",
+            "startMs": 33200,
+            "endMs": 33360,
+            "timestampMs": 33280,
+            "confidence": null
+          },
+          {
+            "text": " way.",
+            "startMs": 33520,
+            "endMs": 33840,
+            "timestampMs": 33680,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "id": "c2-catalyst",
+        "type": "concept",
+        "heading": "Sooner, same final balance",
+        "body": "Repeat the identical starting mixture.",
+        "bullets": [
+          {
+            "text": "Alternative pathway with a lower effective barrier.",
+            "at": 7.133333333333334
+          },
+          {
+            "text": "Overall endpoint energies stay the same.",
+            "at": 17.366666666666667
+          }
+        ],
+        "secondary": "Schematic pathways and concentrations. No universal numerical catalyst factor.",
+        "callout": "Same final equilibrium composition.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "catalyst",
+            "graphAt": 639,
+            "limitAt": 824,
+            "comparisonAt": 886,
+            "comparisonEnd": 1085
+          }
+        },
+        "durationInFrames": 1411,
+        "caption": "Same starting mixture and conditions; catalyst changes approach time.",
+        "voiceover": {
+          "text": "Suppose we repeat the same starting mixture with a suitable catalyst, keeping the temperature and volume unchanged. A catalyst provides an alternative reaction pathway with a lower effective activation barrier. It enables the opposing reaction processes to happen more readily. It does not change the energies of the overall reactants and products or favour a different final equilibrium composition. In our comparison, B approaches the same final level sooner. At an early comparison time, the catalysed mixture can contain more B because it has progressed further. Once both mixtures reach equilibrium, that difference is gone. The catalyst changes how soon the balance is reached, not the balance we reach.",
+          "audioFile": "public/audio/assembled/c2-catalyst.23713f3a1a92ba0dc786.6e6e070d27a1.wav",
+          "startFrame": 0,
+          "endFrame": 1342
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 0,
+          "callout": 1085
+        },
+        "captions": [
+          {
+            "text": "Suppose",
+            "startMs": 0,
+            "endMs": 400,
+            "timestampMs": 200,
+            "confidence": null
+          },
+          {
+            "text": " we",
+            "startMs": 480,
+            "endMs": 560,
+            "timestampMs": 520,
+            "confidence": null
+          },
+          {
+            "text": " repeat",
+            "startMs": 640,
+            "endMs": 960,
+            "timestampMs": 800,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 1040,
+            "endMs": 1120,
+            "timestampMs": 1080,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 1200,
+            "endMs": 1440,
+            "timestampMs": 1320,
+            "confidence": null
+          },
+          {
+            "text": " starting",
+            "startMs": 1520,
+            "endMs": 1920,
+            "timestampMs": 1720,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 2000,
+            "endMs": 2400,
+            "timestampMs": 2200,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 2480,
+            "endMs": 2560,
+            "timestampMs": 2520,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 2640,
+            "endMs": 2720,
+            "timestampMs": 2680,
+            "confidence": null
+          },
+          {
+            "text": " suitable",
+            "startMs": 2800,
+            "endMs": 3120,
+            "timestampMs": 2960,
+            "confidence": null
+          },
+          {
+            "text": " catalyst,",
+            "startMs": 3200,
+            "endMs": 4080,
+            "timestampMs": 3640,
+            "confidence": null
+          },
+          {
+            "text": " keeping",
+            "startMs": 4240,
+            "endMs": 4400,
+            "timestampMs": 4320,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 4440,
+            "endMs": 4480,
+            "timestampMs": 4460,
+            "confidence": null
+          },
+          {
+            "text": " temperature",
+            "startMs": 4560,
+            "endMs": 5040,
+            "timestampMs": 4800,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 5120,
+            "endMs": 5200,
+            "timestampMs": 5160,
+            "confidence": null
+          },
+          {
+            "text": " volume",
+            "startMs": 5280,
+            "endMs": 5600,
+            "timestampMs": 5440,
+            "confidence": null
+          },
+          {
+            "text": " unchanged.",
+            "startMs": 5760,
+            "endMs": 6840,
+            "timestampMs": 6300,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 7120,
+            "endMs": 7200,
+            "timestampMs": 7160,
+            "confidence": null
+          },
+          {
+            "text": " catalyst",
+            "startMs": 7280,
+            "endMs": 7760,
+            "timestampMs": 7520,
+            "confidence": null
+          },
+          {
+            "text": " provides",
+            "startMs": 7840,
+            "endMs": 8240,
+            "timestampMs": 8040,
+            "confidence": null
+          },
+          {
+            "text": " an",
+            "startMs": 8320,
+            "endMs": 8400,
+            "timestampMs": 8360,
+            "confidence": null
+          },
+          {
+            "text": " alternative",
+            "startMs": 8720,
+            "endMs": 9040,
+            "timestampMs": 8880,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 9280,
+            "endMs": 9520,
+            "timestampMs": 9400,
+            "confidence": null
+          },
+          {
+            "text": " pathway",
+            "startMs": 9600,
+            "endMs": 10160,
+            "timestampMs": 9880,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 10240,
+            "endMs": 10400,
+            "timestampMs": 10320,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 10440,
+            "endMs": 10480,
+            "timestampMs": 10460,
+            "confidence": null
+          },
+          {
+            "text": " lower",
+            "startMs": 10560,
+            "endMs": 10880,
+            "timestampMs": 10720,
+            "confidence": null
+          },
+          {
+            "text": " effective",
+            "startMs": 10960,
+            "endMs": 11440,
+            "timestampMs": 11200,
+            "confidence": null
+          },
+          {
+            "text": " activation",
+            "startMs": 11520,
+            "endMs": 12080,
+            "timestampMs": 11800,
+            "confidence": null
+          },
+          {
+            "text": " barrier.",
+            "startMs": 12160,
+            "endMs": 12640,
+            "timestampMs": 12400,
+            "confidence": null
+          },
+          {
+            "text": " It",
+            "startMs": 13200,
+            "endMs": 13240,
+            "timestampMs": 13220,
+            "confidence": null
+          },
+          {
+            "text": " enables",
+            "startMs": 13280,
+            "endMs": 13760,
+            "timestampMs": 13520,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 13800,
+            "endMs": 13840,
+            "timestampMs": 13820,
+            "confidence": null
+          },
+          {
+            "text": " opposing",
+            "startMs": 13920,
+            "endMs": 14400,
+            "timestampMs": 14160,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 14600,
+            "endMs": 14800,
+            "timestampMs": 14700,
+            "confidence": null
+          },
+          {
+            "text": " processes",
+            "startMs": 14880,
+            "endMs": 15520,
+            "timestampMs": 15200,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 15600,
+            "endMs": 15680,
+            "timestampMs": 15640,
+            "confidence": null
+          },
+          {
+            "text": " happen",
+            "startMs": 15787,
+            "endMs": 16000,
+            "timestampMs": 15893.5,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 16079.999999999998,
+            "endMs": 16239.999999999998,
+            "timestampMs": 16159.999999999998,
+            "confidence": null
+          },
+          {
+            "text": " readily.",
+            "startMs": 16320,
+            "endMs": 17040,
+            "timestampMs": 16680,
+            "confidence": null
+          },
+          {
+            "text": " It",
+            "startMs": 17360,
+            "endMs": 17440,
+            "timestampMs": 17400,
+            "confidence": null
+          },
+          {
+            "text": " does",
+            "startMs": 17520,
+            "endMs": 17600,
+            "timestampMs": 17560,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 17760,
+            "endMs": 18000,
+            "timestampMs": 17880,
+            "confidence": null
+          },
+          {
+            "text": " change",
+            "startMs": 18080,
+            "endMs": 18320,
+            "timestampMs": 18200,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 18400,
+            "endMs": 18480,
+            "timestampMs": 18440,
+            "confidence": null
+          },
+          {
+            "text": " energies",
+            "startMs": 18560,
+            "endMs": 19040,
+            "timestampMs": 18800,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 19080,
+            "endMs": 19120,
+            "timestampMs": 19100,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 19200,
+            "endMs": 19280,
+            "timestampMs": 19240,
+            "confidence": null
+          },
+          {
+            "text": " overall",
+            "startMs": 19360,
+            "endMs": 19760,
+            "timestampMs": 19560,
+            "confidence": null
+          },
+          {
+            "text": " reactants",
+            "startMs": 19840,
+            "endMs": 20320,
+            "timestampMs": 20080,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 20360,
+            "endMs": 20400,
+            "timestampMs": 20380,
+            "confidence": null
+          },
+          {
+            "text": " products",
+            "startMs": 20480,
+            "endMs": 21040,
+            "timestampMs": 20760,
+            "confidence": null
+          },
+          {
+            "text": " or",
+            "startMs": 21280,
+            "endMs": 21520,
+            "timestampMs": 21400,
+            "confidence": null
+          },
+          {
+            "text": " favour",
+            "startMs": 21600,
+            "endMs": 21920,
+            "timestampMs": 21760,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 22000,
+            "endMs": 22080,
+            "timestampMs": 22040,
+            "confidence": null
+          },
+          {
+            "text": " different",
+            "startMs": 22160,
+            "endMs": 22480,
+            "timestampMs": 22320,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 22560,
+            "endMs": 22880,
+            "timestampMs": 22720,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 22960,
+            "endMs": 23520,
+            "timestampMs": 23240,
+            "confidence": null
+          },
+          {
+            "text": " composition.",
+            "startMs": 23600,
+            "endMs": 24640,
+            "timestampMs": 24120,
+            "confidence": null
+          },
+          {
+            "text": " In",
+            "startMs": 24960,
+            "endMs": 25040,
+            "timestampMs": 25000,
+            "confidence": null
+          },
+          {
+            "text": " our",
+            "startMs": 25120,
+            "endMs": 25200,
+            "timestampMs": 25160,
+            "confidence": null
+          },
+          {
+            "text": " comparison,",
+            "startMs": 25520,
+            "endMs": 26160,
+            "timestampMs": 25840,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 26240,
+            "endMs": 26480,
+            "timestampMs": 26360,
+            "confidence": null
+          },
+          {
+            "text": " approaches",
+            "startMs": 26640,
+            "endMs": 27040,
+            "timestampMs": 26840,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 27120,
+            "endMs": 27280,
+            "timestampMs": 27200,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 27440,
+            "endMs": 27600,
+            "timestampMs": 27520,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 27680,
+            "endMs": 28000,
+            "timestampMs": 27840,
+            "confidence": null
+          },
+          {
+            "text": " level",
+            "startMs": 28080,
+            "endMs": 28400,
+            "timestampMs": 28240,
+            "confidence": null
+          },
+          {
+            "text": " sooner.",
+            "startMs": 28560,
+            "endMs": 29240,
+            "timestampMs": 28900,
+            "confidence": null
+          },
+          {
+            "text": " At",
+            "startMs": 29520,
+            "endMs": 29600,
+            "timestampMs": 29560,
+            "confidence": null
+          },
+          {
+            "text": " an",
+            "startMs": 29680,
+            "endMs": 29840,
+            "timestampMs": 29760,
+            "confidence": null
+          },
+          {
+            "text": " early",
+            "startMs": 29960,
+            "endMs": 30080,
+            "timestampMs": 30020,
+            "confidence": null
+          },
+          {
+            "text": " comparison",
+            "startMs": 30160,
+            "endMs": 30720,
+            "timestampMs": 30440,
+            "confidence": null
+          },
+          {
+            "text": " time,",
+            "startMs": 30800,
+            "endMs": 31360,
+            "timestampMs": 31080,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 31440,
+            "endMs": 31520,
+            "timestampMs": 31480,
+            "confidence": null
+          },
+          {
+            "text": " catalysed",
+            "startMs": 31560,
+            "endMs": 32080,
+            "timestampMs": 31820,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 32159.999999999996,
+            "endMs": 32560.000000000004,
+            "timestampMs": 32360,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 32640,
+            "endMs": 32720,
+            "timestampMs": 32680,
+            "confidence": null
+          },
+          {
+            "text": " contain",
+            "startMs": 32960,
+            "endMs": 33200,
+            "timestampMs": 33080,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 33280,
+            "endMs": 33520,
+            "timestampMs": 33400,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 33600,
+            "endMs": 33920,
+            "timestampMs": 33760,
+            "confidence": null
+          },
+          {
+            "text": " because",
+            "startMs": 34080,
+            "endMs": 34240,
+            "timestampMs": 34160,
+            "confidence": null
+          },
+          {
+            "text": " it",
+            "startMs": 34320,
+            "endMs": 34360,
+            "timestampMs": 34340,
+            "confidence": null
+          },
+          {
+            "text": " has",
+            "startMs": 34400,
+            "endMs": 34560,
+            "timestampMs": 34480,
+            "confidence": null
+          },
+          {
+            "text": " progressed",
+            "startMs": 34760,
+            "endMs": 35040,
+            "timestampMs": 34900,
+            "confidence": null
+          },
+          {
+            "text": " further.",
+            "startMs": 35120,
+            "endMs": 35840,
+            "timestampMs": 35480,
+            "confidence": null
+          },
+          {
+            "text": " Once",
+            "startMs": 36160,
+            "endMs": 36400,
+            "timestampMs": 36280,
+            "confidence": null
+          },
+          {
+            "text": " both",
+            "startMs": 36480,
+            "endMs": 36640,
+            "timestampMs": 36560,
+            "confidence": null
+          },
+          {
+            "text": " mixtures",
+            "startMs": 36720,
+            "endMs": 37120,
+            "timestampMs": 36920,
+            "confidence": null
+          },
+          {
+            "text": " reach",
+            "startMs": 37240,
+            "endMs": 37360,
+            "timestampMs": 37300,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium,",
+            "startMs": 37480,
+            "endMs": 38320,
+            "timestampMs": 37900,
+            "confidence": null
+          },
+          {
+            "text": " that",
+            "startMs": 38400,
+            "endMs": 38480,
+            "timestampMs": 38440,
+            "confidence": null
+          },
+          {
+            "text": " difference",
+            "startMs": 38560,
+            "endMs": 38880,
+            "timestampMs": 38720,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 38960,
+            "endMs": 39040,
+            "timestampMs": 39000,
+            "confidence": null
+          },
+          {
+            "text": " gone.",
+            "startMs": 39120,
+            "endMs": 39920,
+            "timestampMs": 39520,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 40000,
+            "endMs": 40080,
+            "timestampMs": 40040,
+            "confidence": null
+          },
+          {
+            "text": " catalyst",
+            "startMs": 40120,
+            "endMs": 40640,
+            "timestampMs": 40380,
+            "confidence": null
+          },
+          {
+            "text": " changes",
+            "startMs": 40880,
+            "endMs": 41120,
+            "timestampMs": 41000,
+            "confidence": null
+          },
+          {
+            "text": " how",
+            "startMs": 41280,
+            "endMs": 41440,
+            "timestampMs": 41360,
+            "confidence": null
+          },
+          {
+            "text": " soon",
+            "startMs": 41520,
+            "endMs": 41760,
+            "timestampMs": 41640,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 41840,
+            "endMs": 41920,
+            "timestampMs": 41880,
+            "confidence": null
+          },
+          {
+            "text": " balance",
+            "startMs": 42080,
+            "endMs": 42240,
+            "timestampMs": 42160,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 42320,
+            "endMs": 42400,
+            "timestampMs": 42360,
+            "confidence": null
+          },
+          {
+            "text": " reached,",
+            "startMs": 42440,
+            "endMs": 43120,
+            "timestampMs": 42780,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 43200,
+            "endMs": 43440,
+            "timestampMs": 43320,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 43520,
+            "endMs": 43600,
+            "timestampMs": 43560,
+            "confidence": null
+          },
+          {
+            "text": " balance",
+            "startMs": 43760,
+            "endMs": 43920,
+            "timestampMs": 43840,
+            "confidence": null
+          },
+          {
+            "text": " we",
+            "startMs": 44000,
+            "endMs": 44160,
+            "timestampMs": 44080,
+            "confidence": null
+          },
+          {
+            "text": " reach.",
+            "startMs": 44360,
+            "endMs": 44720,
+            "timestampMs": 44540,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "id": "c2-transfer",
+        "type": "quickCheck",
+        "heading": "A different start",
+        "question": "Which substance initially increases? Use both rates. Does a catalyst change the final equilibrium concentration of D?",
+        "answerSteps": [
+          "C initially increases.",
+          "Net four units towards C in the one-to-one model.",
+          "Catalyst: same final equilibrium concentration of D."
+        ],
+        "durationInFrames": 2878,
+        "caption": "Use both rates. Compare initial change with final equilibrium.",
+        "voiceover": {
+          "text": "Try a different start. C and D interconvert one for one in a closed container at constant temperature and volume. The mixture begins mostly as D. Early measurements give a forward rate, C to D, of two units, and a reverse rate, D to C, of six units on the same scale. Which substance will initially increase overall? Explain using both rates. Then compare this mixture with an identical starting mixture containing a suitable catalyst. Will the catalyst change the final equilibrium concentration of D? Take a moment, or pause if you would like longer. C initially increases. The reverse process makes C at six units while the forward process removes C at two, so more C is being made than used. In this one-for-one model, the difference is a net four units towards C. Starting mostly with D did not by itself prove that direction; the supplied rates did. With the suitable catalyst, the mixture approaches the same final equilibrium composition sooner under the same conditions. It does not finish with a different equilibrium concentration of D. If you predicted more D simply because a catalyst speeds reactions, separate the amount present at an earlier time from the final equilibrium amount.",
+          "audioFile": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.wav",
+          "startFrame": 0,
+          "endFrame": 2809
+        },
+        "revealDelays": {
+          "heading": 24,
+          "pausePrompt": 1088,
+          "responseHoldStart": 1172,
+          "answerVisibleStart": 1472,
+          "stepAts": [
+            1472,
+            1600,
+            2185
+          ]
+        },
+        "calculationPresentation": {
+          "layout": "module5Evidence",
+          "task": "Which substance increases at first?",
+          "equation": "C ⇌ D (one-to-one)",
+          "givens": [
+            {
+              "label": "C → D",
+              "value": "2 rate units"
+            },
+            {
+              "label": "D → C",
+              "value": "6 rate units"
+            }
+          ],
+          "references": [
+            {
+              "label": "Start",
+              "value": "Mostly D"
+            },
+            {
+              "label": "System",
+              "value": "Closed"
+            }
+          ],
+          "note": "Same scale: arbitrary rate units. Fixed temperature and volume.",
+          "stages": [
+            {
+              "label": "What changes first?",
+              "lines": [
+                "C increases at first.",
+                "D → C makes C."
+              ],
+              "summary": "C initially increases.",
+              "lineAts": [
+                1472,
+                1544
+              ]
+            },
+            {
+              "label": "Net: made minus used",
+              "lines": [
+                "Makes C: 6; uses C: 2.",
+                "Net: 6 − 2 = 4 towards C."
+              ],
+              "lineAts": [
+                1600,
+                1909
+              ],
+              "summary": "Supplied rates justify direction."
+            },
+            {
+              "label": "With a suitable catalyst",
+              "lines": [
+                "It gets to equilibrium sooner.",
+                "Same final concentration of D."
+              ],
+              "lineAts": [
+                2339,
+                2413
+              ],
+              "summary": "Final composition unchanged."
+            }
+          ],
+          "captionSafeWorking": true,
+          "focusedContext": [
+            {
+              "at": 0,
+              "title": "A different start",
+              "lines": [],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 60,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 142,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [
+                "Closed container"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 180,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [
+                "Closed container",
+                "Fixed temperature, volume"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 274,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [
+                "Closed; mostly D",
+                "Fixed temperature, volume"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 360,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [
+                "Closed; mostly D",
+                "Fixed temperature, volume",
+                "C → D: 2 rate units"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 464,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [
+                "Closed; mostly D",
+                "Fixed temperature, volume",
+                "C → D: 2 rate units",
+                "D → C: 6 rate units"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 567,
+              "title": "C ⇌ D: one-for-one",
+              "lines": [
+                "Closed; mostly D",
+                "Fixed temperature, volume",
+                "C → D: 2 rate units",
+                "D → C: 6 rate units",
+                "Both rates: same scale"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 1472,
+              "title": "Use both supplied rates",
+              "lines": [
+                "C → D: 2 rate units",
+                "D → C: 6 rate units",
+                "Both rates: same scale",
+                "One-for-one conversion"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            },
+            {
+              "at": 2185,
+              "title": "With a suitable catalyst",
+              "lines": [
+                "Identical starting mixture",
+                "Same temperature + volume",
+                "Same closed container",
+                "Only change: catalyst"
+              ],
+              "task": "Which substance increases at first?",
+              "secondaryTask": "Same start + suitable catalyst: does the final amount of D change?"
+            }
+          ]
+        },
+        "captions": [
+          {
+            "text": "Try",
+            "startMs": 0,
+            "endMs": 240,
+            "timestampMs": 120,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 320,
+            "endMs": 400,
+            "timestampMs": 360,
+            "confidence": null
+          },
+          {
+            "text": " different",
+            "startMs": 480,
+            "endMs": 800,
+            "timestampMs": 640,
+            "confidence": null
+          },
+          {
+            "text": " start.",
+            "startMs": 880,
+            "endMs": 1680,
+            "timestampMs": 1280,
+            "confidence": null
+          },
+          {
+            "text": " C",
+            "startMs": 2000,
+            "endMs": 2240,
+            "timestampMs": 2120,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 2320,
+            "endMs": 2400,
+            "timestampMs": 2360,
+            "confidence": null
+          },
+          {
+            "text": " D",
+            "startMs": 2480,
+            "endMs": 2720,
+            "timestampMs": 2600,
+            "confidence": null
+          },
+          {
+            "text": " interconvert",
+            "startMs": 2880,
+            "endMs": 3520,
+            "timestampMs": 3200,
+            "confidence": null
+          },
+          {
+            "text": " one",
+            "startMs": 3680,
+            "endMs": 3840,
+            "timestampMs": 3760,
+            "confidence": null
+          },
+          {
+            "text": " for",
+            "startMs": 3920,
+            "endMs": 4080,
+            "timestampMs": 4000,
+            "confidence": null
+          },
+          {
+            "text": " one",
+            "startMs": 4160,
+            "endMs": 4400,
+            "timestampMs": 4280,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 4480,
+            "endMs": 4560,
+            "timestampMs": 4520,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 4600,
+            "endMs": 4640,
+            "timestampMs": 4620,
+            "confidence": null
+          },
+          {
+            "text": " closed",
+            "startMs": 4720,
+            "endMs": 5040,
+            "timestampMs": 4880,
+            "confidence": null
+          },
+          {
+            "text": " container",
+            "startMs": 5120,
+            "endMs": 5680,
+            "timestampMs": 5400,
+            "confidence": null
+          },
+          {
+            "text": " at",
+            "startMs": 5760,
+            "endMs": 5920,
+            "timestampMs": 5840,
+            "confidence": null
+          },
+          {
+            "text": " constant",
+            "startMs": 6000,
+            "endMs": 6400,
+            "timestampMs": 6200,
+            "confidence": null
+          },
+          {
+            "text": " temperature",
+            "startMs": 6480,
+            "endMs": 6960,
+            "timestampMs": 6720,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 7040,
+            "endMs": 7120,
+            "timestampMs": 7080,
+            "confidence": null
+          },
+          {
+            "text": " volume.",
+            "startMs": 7200,
+            "endMs": 7680,
+            "timestampMs": 7440,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 8160,
+            "endMs": 8240,
+            "timestampMs": 8200,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 8320,
+            "endMs": 8640,
+            "timestampMs": 8480,
+            "confidence": null
+          },
+          {
+            "text": " begins",
+            "startMs": 8720,
+            "endMs": 9040,
+            "timestampMs": 8880,
+            "confidence": null
+          },
+          {
+            "text": " mostly",
+            "startMs": 9120,
+            "endMs": 9600,
+            "timestampMs": 9360,
+            "confidence": null
+          },
+          {
+            "text": " as",
+            "startMs": 9680,
+            "endMs": 9760,
+            "timestampMs": 9720,
+            "confidence": null
+          },
+          {
+            "text": " D.",
+            "startMs": 9920,
+            "endMs": 10600,
+            "timestampMs": 10260,
+            "confidence": null
+          },
+          {
+            "text": " Early",
+            "startMs": 10960,
+            "endMs": 11200,
+            "timestampMs": 11080,
+            "confidence": null
+          },
+          {
+            "text": " measurements",
+            "startMs": 11280,
+            "endMs": 11760,
+            "timestampMs": 11520,
+            "confidence": null
+          },
+          {
+            "text": " give",
+            "startMs": 11840,
+            "endMs": 11920,
+            "timestampMs": 11880,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 12000,
+            "endMs": 12080,
+            "timestampMs": 12040,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 12160,
+            "endMs": 12480,
+            "timestampMs": 12320,
+            "confidence": null
+          },
+          {
+            "text": " rate,",
+            "startMs": 12560,
+            "endMs": 13040,
+            "timestampMs": 12800,
+            "confidence": null
+          },
+          {
+            "text": " C",
+            "startMs": 13120,
+            "endMs": 13280,
+            "timestampMs": 13200,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 13360,
+            "endMs": 13440,
+            "timestampMs": 13400,
+            "confidence": null
+          },
+          {
+            "text": " D,",
+            "startMs": 13520,
+            "endMs": 13840,
+            "timestampMs": 13680,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 14080,
+            "endMs": 14160,
+            "timestampMs": 14120,
+            "confidence": null
+          },
+          {
+            "text": " two",
+            "startMs": 14320,
+            "endMs": 14480,
+            "timestampMs": 14400,
+            "confidence": null
+          },
+          {
+            "text": " units,",
+            "startMs": 14560,
+            "endMs": 15280,
+            "timestampMs": 14920,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 15320,
+            "endMs": 15360,
+            "timestampMs": 15340,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 15440,
+            "endMs": 15520,
+            "timestampMs": 15480,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 15760,
+            "endMs": 16000,
+            "timestampMs": 15880,
+            "confidence": null
+          },
+          {
+            "text": " rate,",
+            "startMs": 16079.999999999998,
+            "endMs": 16560,
+            "timestampMs": 16320,
+            "confidence": null
+          },
+          {
+            "text": " D",
+            "startMs": 16640,
+            "endMs": 16800,
+            "timestampMs": 16720,
+            "confidence": null
+          },
+          {
+            "text": " to",
+            "startMs": 16840,
+            "endMs": 16880,
+            "timestampMs": 16860,
+            "confidence": null
+          },
+          {
+            "text": " C,",
+            "startMs": 17040,
+            "endMs": 17600,
+            "timestampMs": 17320,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 17680,
+            "endMs": 17760,
+            "timestampMs": 17720,
+            "confidence": null
+          },
+          {
+            "text": " six",
+            "startMs": 17840,
+            "endMs": 18080,
+            "timestampMs": 17960,
+            "confidence": null
+          },
+          {
+            "text": " units",
+            "startMs": 18160,
+            "endMs": 18480,
+            "timestampMs": 18320,
+            "confidence": null
+          },
+          {
+            "text": " on",
+            "startMs": 18640,
+            "endMs": 18720,
+            "timestampMs": 18680,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 18760,
+            "endMs": 18800,
+            "timestampMs": 18780,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 18880,
+            "endMs": 19120,
+            "timestampMs": 19000,
+            "confidence": null
+          },
+          {
+            "text": " scale.",
+            "startMs": 19200,
+            "endMs": 19680,
+            "timestampMs": 19440,
+            "confidence": null
+          },
+          {
+            "text": " Which",
+            "startMs": 20320,
+            "endMs": 20560,
+            "timestampMs": 20440,
+            "confidence": null
+          },
+          {
+            "text": " substance",
+            "startMs": 20640,
+            "endMs": 21120,
+            "timestampMs": 20880,
+            "confidence": null
+          },
+          {
+            "text": " will",
+            "startMs": 21200,
+            "endMs": 21280,
+            "timestampMs": 21240,
+            "confidence": null
+          },
+          {
+            "text": " initially",
+            "startMs": 21480,
+            "endMs": 21840,
+            "timestampMs": 21660,
+            "confidence": null
+          },
+          {
+            "text": " increase",
+            "startMs": 22120,
+            "endMs": 22400,
+            "timestampMs": 22260,
+            "confidence": null
+          },
+          {
+            "text": " overall?",
+            "startMs": 22480,
+            "endMs": 23520,
+            "timestampMs": 23000,
+            "confidence": null
+          },
+          {
+            "text": " Explain",
+            "startMs": 23640,
+            "endMs": 24160,
+            "timestampMs": 23900,
+            "confidence": null
+          },
+          {
+            "text": " using",
+            "startMs": 24320,
+            "endMs": 24480,
+            "timestampMs": 24400,
+            "confidence": null
+          },
+          {
+            "text": " both",
+            "startMs": 24560,
+            "endMs": 24800,
+            "timestampMs": 24680,
+            "confidence": null
+          },
+          {
+            "text": " rates.",
+            "startMs": 24880,
+            "endMs": 26000,
+            "timestampMs": 25440,
+            "confidence": null
+          },
+          {
+            "text": " Then",
+            "startMs": 26160,
+            "endMs": 26320,
+            "timestampMs": 26240,
+            "confidence": null
+          },
+          {
+            "text": " compare",
+            "startMs": 26640,
+            "endMs": 27040,
+            "timestampMs": 26840,
+            "confidence": null
+          },
+          {
+            "text": " this",
+            "startMs": 27160,
+            "endMs": 27280,
+            "timestampMs": 27220,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 27320,
+            "endMs": 27680,
+            "timestampMs": 27500,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 27760,
+            "endMs": 27840,
+            "timestampMs": 27800,
+            "confidence": null
+          },
+          {
+            "text": " an",
+            "startMs": 27880,
+            "endMs": 27920,
+            "timestampMs": 27900,
+            "confidence": null
+          },
+          {
+            "text": " identical",
+            "startMs": 28000,
+            "endMs": 28560,
+            "timestampMs": 28280,
+            "confidence": null
+          },
+          {
+            "text": " starting",
+            "startMs": 28640,
+            "endMs": 29040,
+            "timestampMs": 28840,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 29120,
+            "endMs": 29440,
+            "timestampMs": 29280,
+            "confidence": null
+          },
+          {
+            "text": " containing",
+            "startMs": 29520,
+            "endMs": 30000,
+            "timestampMs": 29760,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 30080,
+            "endMs": 30160,
+            "timestampMs": 30120,
+            "confidence": null
+          },
+          {
+            "text": " suitable",
+            "startMs": 30240,
+            "endMs": 30560,
+            "timestampMs": 30400,
+            "confidence": null
+          },
+          {
+            "text": " catalyst.",
+            "startMs": 30600,
+            "endMs": 31760,
+            "timestampMs": 31180,
+            "confidence": null
+          },
+          {
+            "text": " Will",
+            "startMs": 31840,
+            "endMs": 31920,
+            "timestampMs": 31880,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 32000,
+            "endMs": 32080,
+            "timestampMs": 32040,
+            "confidence": null
+          },
+          {
+            "text": " catalyst",
+            "startMs": 32159.999999999996,
+            "endMs": 32560.000000000004,
+            "timestampMs": 32360,
+            "confidence": null
+          },
+          {
+            "text": " change",
+            "startMs": 32640,
+            "endMs": 33040,
+            "timestampMs": 32840,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 33120,
+            "endMs": 33280,
+            "timestampMs": 33200,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 33440,
+            "endMs": 33600,
+            "timestampMs": 33520,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 33680,
+            "endMs": 34240,
+            "timestampMs": 33960,
+            "confidence": null
+          },
+          {
+            "text": " concentration",
+            "startMs": 34320,
+            "endMs": 35040,
+            "timestampMs": 34680,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 35080,
+            "endMs": 35120,
+            "timestampMs": 35100,
+            "confidence": null
+          },
+          {
+            "text": " D?",
+            "startMs": 35280,
+            "endMs": 36160,
+            "timestampMs": 35720,
+            "confidence": null
+          },
+          {
+            "text": " Take",
+            "startMs": 36240,
+            "endMs": 36320,
+            "timestampMs": 36280,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 36400,
+            "endMs": 36480,
+            "timestampMs": 36440,
+            "confidence": null
+          },
+          {
+            "text": " moment,",
+            "startMs": 36680,
+            "endMs": 37200,
+            "timestampMs": 36940,
+            "confidence": null
+          },
+          {
+            "text": " or",
+            "startMs": 37320,
+            "endMs": 37440,
+            "timestampMs": 37380,
+            "confidence": null
+          },
+          {
+            "text": " pause",
+            "startMs": 37640,
+            "endMs": 37840,
+            "timestampMs": 37740,
+            "confidence": null
+          },
+          {
+            "text": " if",
+            "startMs": 37880,
+            "endMs": 37920,
+            "timestampMs": 37900,
+            "confidence": null
+          },
+          {
+            "text": " you",
+            "startMs": 38000,
+            "endMs": 38040,
+            "timestampMs": 38020,
+            "confidence": null
+          },
+          {
+            "text": " would",
+            "startMs": 38080,
+            "endMs": 38160,
+            "timestampMs": 38120,
+            "confidence": null
+          },
+          {
+            "text": " like",
+            "startMs": 38240,
+            "endMs": 38400,
+            "timestampMs": 38320,
+            "confidence": null
+          },
+          {
+            "text": " longer.",
+            "startMs": 38480,
+            "endMs": 39040,
+            "timestampMs": 38760,
+            "confidence": null
+          },
+          {
+            "text": " C",
+            "startMs": 49066.66666666667,
+            "endMs": 49466.66666666667,
+            "timestampMs": 49266.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " initially",
+            "startMs": 49546.666666666664,
+            "endMs": 50106.66666666667,
+            "timestampMs": 49826.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " increases.",
+            "startMs": 50186.666666666664,
+            "endMs": 51226.66666666667,
+            "timestampMs": 50706.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " The",
+            "startMs": 51466.66666666667,
+            "endMs": 51546.666666666664,
+            "timestampMs": 51506.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 51746.66666666667,
+            "endMs": 51946.66666666667,
+            "timestampMs": 51846.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " process",
+            "startMs": 52026.66666666667,
+            "endMs": 52586.66666666667,
+            "timestampMs": 52306.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " makes",
+            "startMs": 52666.66666666667,
+            "endMs": 52906.666666666664,
+            "timestampMs": 52786.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " C",
+            "startMs": 52986.66666666667,
+            "endMs": 53226.66666666667,
+            "timestampMs": 53106.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " at",
+            "startMs": 53306.66666666667,
+            "endMs": 53466.66666666667,
+            "timestampMs": 53386.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " six",
+            "startMs": 53546.666666666664,
+            "endMs": 53786.66666666667,
+            "timestampMs": 53666.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " units",
+            "startMs": 53866.666666666664,
+            "endMs": 54266.66666666667,
+            "timestampMs": 54066.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " while",
+            "startMs": 54586.66666666667,
+            "endMs": 54746.66666666667,
+            "timestampMs": 54666.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 54786.66666666667,
+            "endMs": 54826.66666666667,
+            "timestampMs": 54806.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 54986.66666666667,
+            "endMs": 55306.66666666667,
+            "timestampMs": 55146.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " process",
+            "startMs": 55386.66666666667,
+            "endMs": 55866.666666666664,
+            "timestampMs": 55626.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " removes",
+            "startMs": 55946.66666666667,
+            "endMs": 56506.666666666664,
+            "timestampMs": 56226.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " C",
+            "startMs": 56586.66666666667,
+            "endMs": 56826.66666666667,
+            "timestampMs": 56706.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " at",
+            "startMs": 56906.666666666664,
+            "endMs": 57066.66666666667,
+            "timestampMs": 56986.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " two,",
+            "startMs": 57146.66666666667,
+            "endMs": 57946.66666666667,
+            "timestampMs": 57546.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " so",
+            "startMs": 58026.66666666667,
+            "endMs": 58106.66666666667,
+            "timestampMs": 58066.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 58266.666666666664,
+            "endMs": 58506.666666666664,
+            "timestampMs": 58386.666666666664,
+            "confidence": null
+          },
+          {
+            "text": " C",
+            "startMs": 58586.66666666667,
+            "endMs": 58826.66666666667,
+            "timestampMs": 58706.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 58906.666666666664,
+            "endMs": 58986.66666666667,
+            "timestampMs": 58946.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " being",
+            "startMs": 59066.66666666667,
+            "endMs": 59226.66666666667,
+            "timestampMs": 59146.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " made",
+            "startMs": 59386.66666666667,
+            "endMs": 59706.66666666667,
+            "timestampMs": 59546.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " than",
+            "startMs": 59786.66666666667,
+            "endMs": 59946.66666666667,
+            "timestampMs": 59866.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " used.",
+            "startMs": 60026.66666666667,
+            "endMs": 60786.66666666667,
+            "timestampMs": 60406.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " In",
+            "startMs": 61066.66666666667,
+            "endMs": 61146.66666666667,
+            "timestampMs": 61106.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " this",
+            "startMs": 61226.66666666667,
+            "endMs": 61386.66666666667,
+            "timestampMs": 61306.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " one-for-one",
+            "startMs": 61466.66666666667,
+            "endMs": 62106.66666666667,
+            "timestampMs": 61786.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " model,",
+            "startMs": 62186.666666666664,
+            "endMs": 62746.66666666667,
+            "timestampMs": 62466.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 62786.66666666667,
+            "endMs": 62826.66666666667,
+            "timestampMs": 62806.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " difference",
+            "startMs": 62906.666666666664,
+            "endMs": 63306.66666666667,
+            "timestampMs": 63106.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 63386.66666666667,
+            "endMs": 63466.66666666667,
+            "timestampMs": 63426.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 63546.666666666664,
+            "endMs": 63586.66666666667,
+            "timestampMs": 63566.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " net",
+            "startMs": 63626.66666666667,
+            "endMs": 63866.66666666667,
+            "timestampMs": 63746.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " four",
+            "startMs": 64106.66666666667,
+            "endMs": 64346.666666666664,
+            "timestampMs": 64226.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " units",
+            "startMs": 64426.66666666668,
+            "endMs": 64746.66666666667,
+            "timestampMs": 64586.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " towards",
+            "startMs": 64826.66666666667,
+            "endMs": 65226.66666666667,
+            "timestampMs": 65026.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " C.",
+            "startMs": 65306.66666666667,
+            "endMs": 65706.66666666667,
+            "timestampMs": 65506.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " Starting",
+            "startMs": 66426.66666666667,
+            "endMs": 66826.66666666667,
+            "timestampMs": 66626.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " mostly",
+            "startMs": 67026.66666666667,
+            "endMs": 67226.66666666667,
+            "timestampMs": 67126.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 67306.66666666667,
+            "endMs": 67386.66666666667,
+            "timestampMs": 67346.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " D",
+            "startMs": 67466.66666666667,
+            "endMs": 67786.66666666666,
+            "timestampMs": 67626.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " did",
+            "startMs": 67946.66666666667,
+            "endMs": 68106.66666666667,
+            "timestampMs": 68026.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 68186.66666666667,
+            "endMs": 68346.66666666666,
+            "timestampMs": 68266.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " by",
+            "startMs": 68426.66666666667,
+            "endMs": 68506.66666666667,
+            "timestampMs": 68466.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " itself",
+            "startMs": 68586.66666666667,
+            "endMs": 69146.66666666667,
+            "timestampMs": 68866.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " prove",
+            "startMs": 69306.66666666667,
+            "endMs": 69546.66666666667,
+            "timestampMs": 69426.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " that",
+            "startMs": 69626.66666666667,
+            "endMs": 69706.66666666667,
+            "timestampMs": 69666.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " direction;",
+            "startMs": 69786.66666666666,
+            "endMs": 70746.66666666667,
+            "timestampMs": 70266.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 70826.66666666667,
+            "endMs": 70906.66666666667,
+            "timestampMs": 70866.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " supplied",
+            "startMs": 71026.66666666667,
+            "endMs": 71466.66666666667,
+            "timestampMs": 71246.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " rates",
+            "startMs": 71546.66666666667,
+            "endMs": 71866.66666666667,
+            "timestampMs": 71706.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " did.",
+            "startMs": 71946.66666666667,
+            "endMs": 72506.66666666667,
+            "timestampMs": 72226.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " With",
+            "startMs": 72826.66666666667,
+            "endMs": 72986.66666666669,
+            "timestampMs": 72906.66666666669,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 73026.66666666667,
+            "endMs": 73066.66666666666,
+            "timestampMs": 73046.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " suitable",
+            "startMs": 73146.66666666667,
+            "endMs": 73466.66666666667,
+            "timestampMs": 73306.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " catalyst,",
+            "startMs": 73546.66666666667,
+            "endMs": 74346.66666666666,
+            "timestampMs": 73946.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 74426.66666666667,
+            "endMs": 74506.66666666667,
+            "timestampMs": 74466.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 74546.66666666667,
+            "endMs": 74906.66666666667,
+            "timestampMs": 74726.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " approaches",
+            "startMs": 75026.66666666667,
+            "endMs": 75386.66666666667,
+            "timestampMs": 75206.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 75466.66666666667,
+            "endMs": 75626.66666666667,
+            "timestampMs": 75546.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 75706.66666666667,
+            "endMs": 75946.66666666667,
+            "timestampMs": 75826.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 76106.66666666667,
+            "endMs": 76346.66666666666,
+            "timestampMs": 76226.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 76506.66666666667,
+            "endMs": 77066.66666666666,
+            "timestampMs": 76786.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " composition",
+            "startMs": 77146.66666666667,
+            "endMs": 77786.66666666666,
+            "timestampMs": 77466.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " sooner",
+            "startMs": 77946.66666666667,
+            "endMs": 78346.66666666666,
+            "timestampMs": 78146.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " under",
+            "startMs": 78506.66666666667,
+            "endMs": 78666.66666666667,
+            "timestampMs": 78586.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 78746.66666666667,
+            "endMs": 78826.66666666667,
+            "timestampMs": 78786.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 78906.66666666667,
+            "endMs": 79146.66666666667,
+            "timestampMs": 79026.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " conditions.",
+            "startMs": 79226.66666666667,
+            "endMs": 80146.66666666667,
+            "timestampMs": 79686.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " It",
+            "startMs": 80426.66666666667,
+            "endMs": 80466.66666666667,
+            "timestampMs": 80446.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " does",
+            "startMs": 80506.66666666667,
+            "endMs": 80666.66666666667,
+            "timestampMs": 80586.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 80746.66666666667,
+            "endMs": 80906.66666666667,
+            "timestampMs": 80826.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " finish",
+            "startMs": 80986.66666666669,
+            "endMs": 81226.66666666666,
+            "timestampMs": 81106.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 81306.66666666667,
+            "endMs": 81386.66666666667,
+            "timestampMs": 81346.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 81466.66666666667,
+            "endMs": 81546.66666666667,
+            "timestampMs": 81506.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " different",
+            "startMs": 81706.66666666667,
+            "endMs": 81866.66666666667,
+            "timestampMs": 81786.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 81946.66666666667,
+            "endMs": 82506.66666666666,
+            "timestampMs": 82226.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " concentration",
+            "startMs": 82586.66666666667,
+            "endMs": 83306.66666666667,
+            "timestampMs": 82946.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 83346.66666666666,
+            "endMs": 83386.66666666667,
+            "timestampMs": 83366.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " D.",
+            "startMs": 83466.66666666667,
+            "endMs": 84146.66666666667,
+            "timestampMs": 83806.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " If",
+            "startMs": 84506.66666666666,
+            "endMs": 84586.66666666667,
+            "timestampMs": 84546.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " you",
+            "startMs": 84666.66666666667,
+            "endMs": 84746.66666666667,
+            "timestampMs": 84706.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " predicted",
+            "startMs": 84986.66666666669,
+            "endMs": 85226.66666666666,
+            "timestampMs": 85106.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " more",
+            "startMs": 85306.66666666667,
+            "endMs": 85546.66666666667,
+            "timestampMs": 85426.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " D",
+            "startMs": 85626.66666666667,
+            "endMs": 86026.66666666667,
+            "timestampMs": 85826.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " simply",
+            "startMs": 86186.66666666667,
+            "endMs": 86426.66666666667,
+            "timestampMs": 86306.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " because",
+            "startMs": 86506.66666666666,
+            "endMs": 86746.66666666667,
+            "timestampMs": 86626.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 86786.66666666666,
+            "endMs": 86826.66666666667,
+            "timestampMs": 86806.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " catalyst",
+            "startMs": 86906.66666666667,
+            "endMs": 87386.66666666667,
+            "timestampMs": 87146.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " speeds",
+            "startMs": 87466.66666666667,
+            "endMs": 87826.66666666667,
+            "timestampMs": 87646.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " reactions,",
+            "startMs": 87866.66666666667,
+            "endMs": 88906.66666666667,
+            "timestampMs": 88386.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " separate",
+            "startMs": 88986.66666666669,
+            "endMs": 89466.66666666667,
+            "timestampMs": 89226.66666666669,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 89506.66666666666,
+            "endMs": 89546.66666666667,
+            "timestampMs": 89526.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " amount",
+            "startMs": 89706.66666666667,
+            "endMs": 89866.66666666667,
+            "timestampMs": 89786.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " present",
+            "startMs": 89946.66666666667,
+            "endMs": 90266.66666666669,
+            "timestampMs": 90106.66666666669,
+            "confidence": null
+          },
+          {
+            "text": " at",
+            "startMs": 90346.66666666666,
+            "endMs": 90426.66666666667,
+            "timestampMs": 90386.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " an",
+            "startMs": 90506.66666666666,
+            "endMs": 90586.66666666667,
+            "timestampMs": 90546.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " earlier",
+            "startMs": 90666.66666666667,
+            "endMs": 90986.66666666669,
+            "timestampMs": 90826.66666666669,
+            "confidence": null
+          },
+          {
+            "text": " time",
+            "startMs": 91066.66666666666,
+            "endMs": 91386.66666666667,
+            "timestampMs": 91226.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " from",
+            "startMs": 91546.66666666667,
+            "endMs": 91706.66666666667,
+            "timestampMs": 91626.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 91746.66666666667,
+            "endMs": 91786.66666666666,
+            "timestampMs": 91766.66666666666,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 91946.66666666667,
+            "endMs": 92266.66666666669,
+            "timestampMs": 92106.66666666669,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 92346.66666666666,
+            "endMs": 92986.66666666669,
+            "timestampMs": 92666.66666666667,
+            "confidence": null
+          },
+          {
+            "text": " amount.",
+            "startMs": 93066.66666666666,
+            "endMs": 93626.66666666667,
+            "timestampMs": 93346.66666666666,
+            "confidence": null
+          }
+        ],
+        "responseHold": {
+          "startFrame": 1172,
+          "endFrame": 1472
+        }
+      },
+      {
+        "id": "c2-summary",
+        "type": "summary",
+        "heading": "What changes, what balances?",
+        "points": [
+          "Opposing processes overlap before equilibrium.",
+          "Rates balance; concentrations may differ.",
+          "Catalyst changes approach time, not final composition."
+        ],
+        "finalPrompt": "Next: concentration and temperature disturbances (C3).",
+        "durationInFrames": 1145,
+        "caption": "Explain changing rates and the catalyst comparison.",
+        "voiceover": {
+          "text": "A reversible reaction can run in both directions before equilibrium is reached. In our A-only start, the forward rate falls as A is used, while the reverse rate rises as B forms. Equilibrium is the balance of equal non-zero rates, not a requirement for equal concentrations. A suitable catalyst can bring that balance about sooner without changing the final composition at the same temperature and other stated conditions. Next, we will start with a mixture already at equilibrium and ask what happens when its concentration or temperature changes.",
+          "audioFile": "public/audio/assembled/c2-summary.be0c718aac7075b38e60.bedcd99b4392.wav",
+          "startFrame": 0,
+          "endFrame": 1076
+        },
+        "captions": [
+          {
+            "text": "A",
+            "startMs": 0,
+            "endMs": 80,
+            "timestampMs": 40,
+            "confidence": null
+          },
+          {
+            "text": " reversible",
+            "startMs": 160,
+            "endMs": 720,
+            "timestampMs": 440,
+            "confidence": null
+          },
+          {
+            "text": " reaction",
+            "startMs": 1000,
+            "endMs": 1280,
+            "timestampMs": 1140,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 1360,
+            "endMs": 1520,
+            "timestampMs": 1440,
+            "confidence": null
+          },
+          {
+            "text": " run",
+            "startMs": 1600,
+            "endMs": 1680,
+            "timestampMs": 1640,
+            "confidence": null
+          },
+          {
+            "text": " in",
+            "startMs": 1800,
+            "endMs": 1920,
+            "timestampMs": 1860,
+            "confidence": null
+          },
+          {
+            "text": " both",
+            "startMs": 2040,
+            "endMs": 2160,
+            "timestampMs": 2100,
+            "confidence": null
+          },
+          {
+            "text": " directions",
+            "startMs": 2240,
+            "endMs": 2800,
+            "timestampMs": 2520,
+            "confidence": null
+          },
+          {
+            "text": " before",
+            "startMs": 2880,
+            "endMs": 3200,
+            "timestampMs": 3040,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 3280,
+            "endMs": 3920,
+            "timestampMs": 3600,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 4000,
+            "endMs": 4080,
+            "timestampMs": 4040,
+            "confidence": null
+          },
+          {
+            "text": " reached.",
+            "startMs": 4160,
+            "endMs": 4840,
+            "timestampMs": 4500,
+            "confidence": null
+          },
+          {
+            "text": " In",
+            "startMs": 5120,
+            "endMs": 5200,
+            "timestampMs": 5160,
+            "confidence": null
+          },
+          {
+            "text": " our",
+            "startMs": 5280,
+            "endMs": 5440,
+            "timestampMs": 5360,
+            "confidence": null
+          },
+          {
+            "text": " A-only",
+            "startMs": 5600,
+            "endMs": 6160,
+            "timestampMs": 5880,
+            "confidence": null
+          },
+          {
+            "text": " start,",
+            "startMs": 6240,
+            "endMs": 6880,
+            "timestampMs": 6560,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 6960,
+            "endMs": 7040,
+            "timestampMs": 7000,
+            "confidence": null
+          },
+          {
+            "text": " forward",
+            "startMs": 7120,
+            "endMs": 7440,
+            "timestampMs": 7280,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 7520,
+            "endMs": 7760,
+            "timestampMs": 7640,
+            "confidence": null
+          },
+          {
+            "text": " falls",
+            "startMs": 7920,
+            "endMs": 8400,
+            "timestampMs": 8160,
+            "confidence": null
+          },
+          {
+            "text": " as",
+            "startMs": 8480,
+            "endMs": 8640,
+            "timestampMs": 8560,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 8720,
+            "endMs": 8800,
+            "timestampMs": 8760,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 8880,
+            "endMs": 9040,
+            "timestampMs": 8960,
+            "confidence": null
+          },
+          {
+            "text": " used,",
+            "startMs": 9120,
+            "endMs": 9840,
+            "timestampMs": 9480,
+            "confidence": null
+          },
+          {
+            "text": " while",
+            "startMs": 9920,
+            "endMs": 10000,
+            "timestampMs": 9960,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 10080,
+            "endMs": 10120,
+            "timestampMs": 10100,
+            "confidence": null
+          },
+          {
+            "text": " reverse",
+            "startMs": 10160,
+            "endMs": 10560,
+            "timestampMs": 10360,
+            "confidence": null
+          },
+          {
+            "text": " rate",
+            "startMs": 10640,
+            "endMs": 10880,
+            "timestampMs": 10760,
+            "confidence": null
+          },
+          {
+            "text": " rises",
+            "startMs": 11040,
+            "endMs": 11600,
+            "timestampMs": 11320,
+            "confidence": null
+          },
+          {
+            "text": " as",
+            "startMs": 11680,
+            "endMs": 11840,
+            "timestampMs": 11760,
+            "confidence": null
+          },
+          {
+            "text": " B",
+            "startMs": 11920,
+            "endMs": 12160,
+            "timestampMs": 12040,
+            "confidence": null
+          },
+          {
+            "text": " forms.",
+            "startMs": 12400,
+            "endMs": 12720,
+            "timestampMs": 12560,
+            "confidence": null
+          },
+          {
+            "text": " Equilibrium",
+            "startMs": 13200,
+            "endMs": 13920,
+            "timestampMs": 13560,
+            "confidence": null
+          },
+          {
+            "text": " is",
+            "startMs": 14000,
+            "endMs": 14080,
+            "timestampMs": 14040,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 14160,
+            "endMs": 14240,
+            "timestampMs": 14200,
+            "confidence": null
+          },
+          {
+            "text": " balance",
+            "startMs": 14320,
+            "endMs": 14640,
+            "timestampMs": 14480,
+            "confidence": null
+          },
+          {
+            "text": " of",
+            "startMs": 14760,
+            "endMs": 14880,
+            "timestampMs": 14820,
+            "confidence": null
+          },
+          {
+            "text": " equal",
+            "startMs": 14960,
+            "endMs": 15280,
+            "timestampMs": 15120,
+            "confidence": null
+          },
+          {
+            "text": " non-zero",
+            "startMs": 15440,
+            "endMs": 16079.999999999998,
+            "timestampMs": 15760,
+            "confidence": null
+          },
+          {
+            "text": " rates,",
+            "startMs": 16160,
+            "endMs": 16880,
+            "timestampMs": 16520,
+            "confidence": null
+          },
+          {
+            "text": " not",
+            "startMs": 16960,
+            "endMs": 17120,
+            "timestampMs": 17040,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 17160,
+            "endMs": 17200,
+            "timestampMs": 17180,
+            "confidence": null
+          },
+          {
+            "text": " requirement",
+            "startMs": 17440,
+            "endMs": 17840,
+            "timestampMs": 17640,
+            "confidence": null
+          },
+          {
+            "text": " for",
+            "startMs": 17920,
+            "endMs": 18000,
+            "timestampMs": 17960,
+            "confidence": null
+          },
+          {
+            "text": " equal",
+            "startMs": 18080,
+            "endMs": 18320,
+            "timestampMs": 18200,
+            "confidence": null
+          },
+          {
+            "text": " concentrations.",
+            "startMs": 18440,
+            "endMs": 19640,
+            "timestampMs": 19040,
+            "confidence": null
+          },
+          {
+            "text": " A",
+            "startMs": 19920,
+            "endMs": 20000,
+            "timestampMs": 19960,
+            "confidence": null
+          },
+          {
+            "text": " suitable",
+            "startMs": 20080,
+            "endMs": 20400,
+            "timestampMs": 20240,
+            "confidence": null
+          },
+          {
+            "text": " catalyst",
+            "startMs": 20480,
+            "endMs": 20960,
+            "timestampMs": 20720,
+            "confidence": null
+          },
+          {
+            "text": " can",
+            "startMs": 21040,
+            "endMs": 21120,
+            "timestampMs": 21080,
+            "confidence": null
+          },
+          {
+            "text": " bring",
+            "startMs": 21200,
+            "endMs": 21440,
+            "timestampMs": 21320,
+            "confidence": null
+          },
+          {
+            "text": " that",
+            "startMs": 21520,
+            "endMs": 21600,
+            "timestampMs": 21560,
+            "confidence": null
+          },
+          {
+            "text": " balance",
+            "startMs": 21680,
+            "endMs": 22000,
+            "timestampMs": 21840,
+            "confidence": null
+          },
+          {
+            "text": " about",
+            "startMs": 22160,
+            "endMs": 22320,
+            "timestampMs": 22240,
+            "confidence": null
+          },
+          {
+            "text": " sooner",
+            "startMs": 22480,
+            "endMs": 22800,
+            "timestampMs": 22640,
+            "confidence": null
+          },
+          {
+            "text": " without",
+            "startMs": 23120,
+            "endMs": 23520,
+            "timestampMs": 23320,
+            "confidence": null
+          },
+          {
+            "text": " changing",
+            "startMs": 23600,
+            "endMs": 23920,
+            "timestampMs": 23760,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 24000,
+            "endMs": 24080,
+            "timestampMs": 24040,
+            "confidence": null
+          },
+          {
+            "text": " final",
+            "startMs": 24240,
+            "endMs": 24400,
+            "timestampMs": 24320,
+            "confidence": null
+          },
+          {
+            "text": " composition",
+            "startMs": 24480,
+            "endMs": 25040,
+            "timestampMs": 24760,
+            "confidence": null
+          },
+          {
+            "text": " at",
+            "startMs": 25120,
+            "endMs": 25200,
+            "timestampMs": 25160,
+            "confidence": null
+          },
+          {
+            "text": " the",
+            "startMs": 25280,
+            "endMs": 25360,
+            "timestampMs": 25320,
+            "confidence": null
+          },
+          {
+            "text": " same",
+            "startMs": 25480,
+            "endMs": 25600,
+            "timestampMs": 25540,
+            "confidence": null
+          },
+          {
+            "text": " temperature",
+            "startMs": 25680,
+            "endMs": 26160,
+            "timestampMs": 25920,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 26240,
+            "endMs": 26400,
+            "timestampMs": 26320,
+            "confidence": null
+          },
+          {
+            "text": " other",
+            "startMs": 26480,
+            "endMs": 26640,
+            "timestampMs": 26560,
+            "confidence": null
+          },
+          {
+            "text": " stated",
+            "startMs": 26720,
+            "endMs": 27040,
+            "timestampMs": 26880,
+            "confidence": null
+          },
+          {
+            "text": " conditions.",
+            "startMs": 27120,
+            "endMs": 28200,
+            "timestampMs": 27660,
+            "confidence": null
+          },
+          {
+            "text": " Next,",
+            "startMs": 28640,
+            "endMs": 29280,
+            "timestampMs": 28960,
+            "confidence": null
+          },
+          {
+            "text": " we",
+            "startMs": 29320,
+            "endMs": 29360,
+            "timestampMs": 29340,
+            "confidence": null
+          },
+          {
+            "text": " will",
+            "startMs": 29440,
+            "endMs": 29520,
+            "timestampMs": 29480,
+            "confidence": null
+          },
+          {
+            "text": " start",
+            "startMs": 29600,
+            "endMs": 29840,
+            "timestampMs": 29720,
+            "confidence": null
+          },
+          {
+            "text": " with",
+            "startMs": 29920,
+            "endMs": 30000,
+            "timestampMs": 29960,
+            "confidence": null
+          },
+          {
+            "text": " a",
+            "startMs": 30040,
+            "endMs": 30080,
+            "timestampMs": 30060,
+            "confidence": null
+          },
+          {
+            "text": " mixture",
+            "startMs": 30120,
+            "endMs": 30560,
+            "timestampMs": 30340,
+            "confidence": null
+          },
+          {
+            "text": " already",
+            "startMs": 30640,
+            "endMs": 31120,
+            "timestampMs": 30880,
+            "confidence": null
+          },
+          {
+            "text": " at",
+            "startMs": 31160,
+            "endMs": 31200,
+            "timestampMs": 31180,
+            "confidence": null
+          },
+          {
+            "text": " equilibrium",
+            "startMs": 31280,
+            "endMs": 32000,
+            "timestampMs": 31640,
+            "confidence": null
+          },
+          {
+            "text": " and",
+            "startMs": 32159.999999999996,
+            "endMs": 32320,
+            "timestampMs": 32240,
+            "confidence": null
+          },
+          {
+            "text": " ask",
+            "startMs": 32479.999999999996,
+            "endMs": 32640,
+            "timestampMs": 32560,
+            "confidence": null
+          },
+          {
+            "text": " what",
+            "startMs": 32720,
+            "endMs": 32800,
+            "timestampMs": 32760,
+            "confidence": null
+          },
+          {
+            "text": " happens",
+            "startMs": 32880,
+            "endMs": 33200,
+            "timestampMs": 33040,
+            "confidence": null
+          },
+          {
+            "text": " when",
+            "startMs": 33280,
+            "endMs": 33360,
+            "timestampMs": 33320,
+            "confidence": null
+          },
+          {
+            "text": " its",
+            "startMs": 33440,
+            "endMs": 33520,
+            "timestampMs": 33480,
+            "confidence": null
+          },
+          {
+            "text": " concentration",
+            "startMs": 33600,
+            "endMs": 34320,
+            "timestampMs": 33960,
+            "confidence": null
+          },
+          {
+            "text": " or",
+            "startMs": 34400,
+            "endMs": 34480,
+            "timestampMs": 34440,
+            "confidence": null
+          },
+          {
+            "text": " temperature",
+            "startMs": 34560,
+            "endMs": 35040,
+            "timestampMs": 34800,
+            "confidence": null
+          },
+          {
+            "text": " changes.",
+            "startMs": 35120,
+            "endMs": 35840,
+            "timestampMs": 35480,
+            "confidence": null
+          }
+        ],
+        "revealDelays": {
+          "takeawayAts": [
+            0,
+            396,
+            598
+          ],
+          "finalPrompt": 860
+        }
+      },
+      {
+        "id": "key-notes",
+        "type": "summary",
+        "heading": "Key notes",
+        "points": [
+          "Forward and reverse reactions can overlap before equilibrium.",
+          "Equal, non-zero rates keep composition steady.",
+          "Equilibrium concentrations need not be equal.",
+          "A suitable catalyst changes approach time, not the final balance at fixed temperature."
+        ],
+        "durationInFrames": 450,
+        "caption": "Optional book notes. Pause to copy.",
+        "revealDelays": {
+          "heading": 0,
+          "takeawayAts": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "quietReading": true
+      }
+    ]
+  }
+}

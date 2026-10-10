@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_teaching_order",
+  "canonicalId": "chem-m5-c03",
+  "outcome": "pass-bounded-source-and-sampled-sequential-pilot-frames",
+  "source": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "sha256": "62c896c2832f9ab5a8565bcf17e29c87abf4953a8a81f598cbe5548088a09e7a",
+    "beforeSha256": "1a15eb52c937b3e1fd8335c1ab6bb7b363561c1ef98efdaaa7cae6d1973c87b6",
+    "comparison": "Independent SHA computation after removing only comma plus textRendering: 'geometricPrecision' reconstructs beforeSha256 exactly."
+  },
+  "invariants": "Only SVG shell text-rendering style changes. No model/equation/text/layout coordinate/reveal cue or voice binding changes in this component. No narration regeneration required by this source diff.",
+  "inspectedEvidence": [
+    "docs/production/module5-c3-reference-feedback-2026-10-10/technical-review-2026-10-10.md",
+    "docs/production/module5-c3-reference-feedback-2026-10-10/release-gate-report-with-complete-context-2026-10-10.json",
+    "out/prototypes/module5-c3-axis-investigation-2026-10-10/axis-investigation-report.json"
+  ],
+  "observations": [
+    {
+      "comparison": "Original Add A sequential sample1169 versus original capture beginning after incoming transition1169",
+      "result": "Original incoming-history sample cuts lower Before/Add A/Model time labels and part of legend A. After-transition capture has complete labels."
+    },
+    {
+      "comparison": "Original PNG full Add A sample2700 versus selected precision sample2700",
+      "result": "Original lower labels cropped; selected labels, legend and reference complete. Selected native1920,960 and480 widths inspected."
+    },
+    {
+      "comparison": "Original Remove B sample4000 versus selected sample4000",
+      "result": "Original lower labels cropped; selected Before/Remove B/Model time and final reference complete. Selected native1920,960 and480 widths inspected."
+    },
+    {
+      "comparison": "Original temperature sample9600 versus selected sample9600",
+      "result": "Original lower Before/T step/Later labels and equation/context cut; selected equation, retained-material condition, lower labels, K direction and later-reference explanation complete. Selected native1920,960 and480 widths inspected."
+    },
+    {
+      "comparison": "Selected initial samples Add A1169, Remove B3017, temperature7929",
+      "result": "Complete initial graph labels and context at original native detail."
+    }
+  ],
+  "captureScope": "Worker report binds completed sequential pilots1109..2956 Add A,2957..4494 Remove B and7869..9725 temperature response. Reviewer independently inspected17 supplied PNGs, including original controls and960/480 downscales; did not inspect every encoded frame or continuously play pilots.",
+  "imageViewingQualification": "Default tool high-detail resizing initially showed apparent additional glyph defects. Reopening identical native Remove B/temperature files with detail original showed complete text. These tool-display artefacts are not a candidate source finding.",
+  "diagnosis": "Empirical incoming-history dependence and selected-property benefit supported by inspected captures. Exact browser-internal glyph cache/transform/filter mechanism remains a hypothesis. No universal browser fix asserted.",
+  "portableScreenshots": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/",
+  "remaining": [
+    "Actual updated voiced Player affected-region review",
+    "Current export-stage brief and frozen replacement inputs",
+    "Replacement full MP4 with its own exact source/package identity",
+    "Replacement device/accessibility checks and normal complete release gate",
+    "Earlier C1/C2 learner availability before public C3 promotion"
+  ],
+  "limitations": "No whole voiced preview, human listening, full replacement MP4, package device/accessibility or release pass. Original held package/reviews remain preserved. Root owns source integration and gate disposition. Reviewer changed only this report and selected screenshot copies.",
+  "screenshotHashes": [
+    {
+      "file": "original-add1169.png",
+      "sha256": "b1bc1008d2dd33c3a7b9a2723e71535c4cd035204c5c77f507d822db34b44fe4"
+    },
+    {
+      "file": "original-after-transition1169.png",
+      "sha256": "d49f6d8bfa7b1cc42775344a12f86dde796d9b917b751a6656560bf3258be83c"
+    },
+    {
+      "file": "original-png-add2700.png",
+      "sha256": "9ba2dada0dc654b5adb6b88e988cb994b691a84d1e7decfcf2524c0c4c37b9e9"
+    },
+    {
+      "file": "original-remove4000.png",
+      "sha256": "355717efd589408698fd06cc83740b0c712f357dbebd11598ae81d38b4f0f5e6"
+    },
+    {
+      "file": "original-temperature9600.png",
+      "sha256": "2060e1819446509501e442ca3341efae6fed562371a4905b616fed547076bfdd"
+    },
+    {
+      "file": "precision-add1169.png",
+      "sha256": "6a4e54a0e96d2d1e7b10e489735758d401fb48d08572ee212bd5d6ec21247af3"
+    },
+    {
+      "file": "precision-add2700-480.png",
+      "sha256": "b8b4a5bac3a72bf61c6ac2cabe4d603abb3d490efb07c9f46665ec1566116c3e"
+    },
+    {
+      "file": "precision-add2700-960.png",
+      "sha256": "2eb868e676d9bc185daa11fc9f4fc466c8939f94b9bc8a5f0aa29b6aa3f4cef0"
+    },
+    {
+      "file": "precision-add2700.png",
+      "sha256": "eaf127ea5c51bd302183d2b46c1c803584e5ce319c7f648473a4f595f362b628"
+    },
+    {
+      "file": "precision-remove3017.png",
+      "sha256": "0ce7867e8767d15d62bf036e33f32bbe9237d1311adbf082c5f8f68a0965ba64"
+    },
+    {
+      "file": "precision-remove4000-480.png",
+      "sha256": "e2603b556bbfe24593e63da3ed1b92f06c8b625c9ae435fae77dc22ff12aa032"
+    },
+    {
+      "file": "precision-remove4000-960.png",
+      "sha256": "b45c6a2b4c69b278229fa322a7697153be09bbd9e06c83c19c4b0ffa16498c12"
+    },
+    {
+      "file": "precision-remove4000.png",
+      "sha256": "b15417940646eb9d62fd1f01e1698003f3653d7778ba3e9d6184f8afd2246483"
+    },
+    {
+      "file": "precision-temperature7929.png",
+      "sha256": "9bf808ed02720808da28f27a39475723d7cc0d24c2ff1aadd70689d8ef8fcd16"
+    },
+    {
+      "file": "precision-temperature9600-480.png",
+      "sha256": "6bd0e25d9100f5ccb58b5bb9177e9f8615d2745e27e775cba10e893debf15835"
+    },
+    {
+      "file": "precision-temperature9600-960.png",
+      "sha256": "b2fc1622520a8efb23f7da5e55220a01b1b8830ea4cd2c28f3c0d64518c1bdaa"
+    },
+    {
+      "file": "precision-temperature9600.png",
+      "sha256": "da4dbb18ad70d751f85ae012139a2be30220b225166857a225714cd9c866e80c"
+    }
+  ]
+}

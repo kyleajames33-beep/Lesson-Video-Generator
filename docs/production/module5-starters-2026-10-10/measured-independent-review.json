@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_teaching_order",
+  "outcome": "pass-bounded-measured-source-provenance-cues-and-PCM",
+  "scope": "Independent exact source, raw generation provenance, current alignment cue and PCM response-gap checks. Component/source inspection only; no ears or whole-motion review.",
+  "inputs": ["scripts/assemble-module5-starters-voiced.mjs", "src/slides/diagrams/kinds/chem-y12-m5/Module5ExchangeDiagram.tsx", "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx", "src/slides/diagrams/kinds/bio-y12-m5/Module5LineageDiagram.tsx", "scripts/lib/playback-assembly.mjs"],
+  "packages": [
+    {
+      "canonicalId": "chem-m5-c01",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "sha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d",
+      "durationSeconds": 409.56666666666666,
+      "rawSegments": 10,
+      "rawFileHashesVerified": 30,
+      "generationRequestProvenance": "All10 generation request bodies, planned request hashes, voice IDs and model IDs match the manifest's selected Simon Australian male eleven_v4.",
+      "phraseCuesVerified": 30,
+      "speech": "All measured scene voiceover.text fields exactly equal selected base scene text. New notes/title remain unvoiced.",
+      "response": {"sceneId": "quick-check", "startFrame": 977, "endFrame": 1337, "seconds": 12, "answerVisibleStart": 1337, "firstStepAt": 1337, "captionIntersections": 0, "PCM": "Mono48000Hz signed16bit PCM,1151998 decoded bytes between conservative ceil/floor sample bounds, zero nonzero bytes. One sample rounding difference from ideal12-second count does not imply shorter authored frame interval."},
+      "notes": {"summarySpeechEndFrame": 1097, "summaryDurationFrames": 1181, "incomingNotesOverlapAt": 1157, "safetyFrames": 60, "quietReading": true},
+      "diagram": "Module5Exchange forwards props to ExchangeDiagram. Outer diagram starts scene552, reaction simulation starts653 (relative startAt101), One mixture caption starts1236 (relative684). All current spoken cue phrases verified against assembled alignment. startAtEq changes equilibrium ratio but still respects reaction startAt.",
+      "unsupported": "concept-conditions table is a whole static comparison; no per-row measured reveal claimed.",
+      "blockingFindings": []
+    },
+    {
+      "canonicalId": "bio-m5-b01",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "sha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "durationSeconds": 390.1,
+      "rawSegments": 11,
+      "rawFileHashesVerified": 33,
+      "generationRequestProvenance": "All11 generation request bodies, planned request hashes, voice IDs and model IDs match the manifest's selected Simon Australian male eleven_v4.",
+      "phraseCuesVerified": 35,
+      "speech": "All measured scene voiceover.text fields exactly equal selected base scene text. New notes/title remain unvoiced.",
+      "response": {"sceneId": "quick-check", "startFrame": 644, "endFrame": 884, "seconds": 8, "answerVisibleStart": 884, "firstStepAt": 884, "captionIntersections": 0, "PCM": "Mono48000Hz signed16bit PCM,768000 decoded bytes, zero nonzero bytes."},
+      "notes": {"summarySpeechEndFrame": 876, "summaryDurationFrames": 960, "incomingNotesOverlapAt": 936, "safetyFrames": 60, "quietReading": true},
+      "diagram": "Selected Lineage component subtracts delay62. Makes offspring at scene344, Inherited DNA384, ribbon522, first successor birth552. Initial transfer marker moves522..552 outside destination birth opacity. Following births622/692 and predecessor deaths592/662/732 are fixed compressed-context events, not individual voiced names. Selected lineage/time-compressed text appears629; viability pill suppressed at1000000.",
+      "unsupported": "Later birth/death intervals remain70/40-frame context; concept-asexual/sexual/tradeoff tables remain whole static comparisons without per-row speech alignment.",
+      "blockingFindings": []
+    }
+  ],
+  "cueMethod": "Independently join assembled alignment characters and require every mapped phrase occurs exactly once at the reported character index. Recompute ceil(character_start_seconds*30 - 1e-8), compare reported frame, and check step/takeaway lists monotonically ordered and inside scene duration.65 phrase cues passed; Biology parade is an explicitly derived cue rather than a phrase match.",
+  "PCMMethod": "Independently read RIFF fmt/data chunks from each selected assembled quick-check WAV; inspect every byte within frame-defined ceil/floor sample bounds. Caption intervals checked for strict intersection with the protected interval. This is digital silence evidence, not human listening.",
+  "qualifications": ["Measured cue identity supplies timing provenance; actual visual perception at normal speed remains to review.", "Early or late spoken intonation, naturalness, difficult terms and listening pace remain unreviewed.", "No per-row table or individual compressed-generation synchronization inferred.", "Actual quiet-note title settling, fit with controls/captions and response stimulus visibility remain UI/voiced preview work."],
+  "limitation": "No author files/brief flags changed. No full motion, actual-device, human listening, export or release pass. Existing source/script pass and raw generation records retain their separate scope."
+}

@@ -446,6 +446,8 @@ export type QuickCheckScene = SceneBase & {
 
 export type SummaryScene = SceneBase & {
   type: 'summary';
+  /** Explicitly unvoiced consolidation hold. Ordinary summaries still need narration. */
+  quietReading?: true;
   heading: string;
   finalPrompt?: string;
   points: string[];

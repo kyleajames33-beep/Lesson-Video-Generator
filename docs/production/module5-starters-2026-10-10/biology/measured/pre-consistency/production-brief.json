@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+    "lessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Cells contain DNA; offspring inherit information. Distinguish an individual from a population. Short prerequisite check in author-notes: what material carries hereditary information between generations? Expected: DNA. Support route: school cell/DNA foundations, with reviewed video availability pending.",
+    "startsWith": "An individual can die while a connected lineage continues; cloning a useful crop creates a conditional shared-risk question.",
+    "stopsAfter": "Explain inheritance across generations, classify gamete fusion and compare sexual/asexual variation and survival under stated conditions. No detailed mechanism, DNA replication, chromosome division, probability or disease practical.",
+    "nextLesson": "B2: src/data/biology-y12-m5-l2-reproduction-in-animals.json, followed by distinct plants/fungi/bacteria/protists mechanism lessons from L3. These are source candidates, not approved or guaranteed available uploads.",
+    "routePath": "docs/production/module5-video-route-2026-10-10.json",
+    "routeId": "bio-m5-b01",
+    "playlistPosition": 1
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/year12-module5-teaching-priority-2026-10-10.md",
+    "docs/production/course-content-checklist-2026-10-09.md",
+    "docs/production/preview-first-review.md"
+  ],
+  "teaching": {
+    "task": "How can reproduction keep a species going when individuals die?",
+    "causalExplanation": "Passing on DNA links ancestors and descendants; continuity additionally needs sufficient descendants to reproduce. Cloning usually retains combinations, whereas gamete formation/fertilisation can reshuffle existing alleles. Relevant inherited variation may affect response to a stress; exposure/environment and available alleles limit the prediction.",
+    "conversationalApproach": "Connected grower scenario and runner/coral/self-fertilisation contrast. Each caveat has one main teaching home: mutation/environment in asexual; existing-allele reshuffling in sexual; exposure and conditional risk in tradeoff. Misconception diagnoses one shared-risk-to-certainty inference, with concise case feedback.",
+    "openingDecision": "Rhetorical crop-risk question, intentionally revisited after inheritance and variation. This is a hook, not a measured retrieval opportunity.",
+    "understandingCheck": "Unseen nursery transfer: cuttings from one parent versus crosses among genetically different parents, with some inherited combinations reducing susceptibility. Predict the wider range of inherited susceptibility and explain why reduced susceptibility is not complete survival. Record prompt and feedback separately and assemble an answer-free hold after measured narration.",
+    "curriculumScope": "Year 12 Biology Module 5 Heredity, 2017 syllabus opening for current cohort. Retains original declared reproduction point as planned context, not complete mechanism/practical coverage. New-course placement and exact reviewed action coverage remain pending. Catalogue ledger is source-present-unreviewed.",
+    "notesEvidence": {
+      "path": "docs/production/module5-starters-2026-10-10/ui-observations.json",
+      "sha256": "6ec8f260bde8e95476e9c988307323e7c100d055c486c9bc9c6681209f7b7be2"
+    }
+  },
+  "scenes": [
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing title slide and subject tokens",
+      "teachingReason": "Short identity anchor",
+      "narrationCue": "Reproduction: Continuity and Variation",
+      "motionPurpose": "Stable title with existing entrance",
+      "holdPurpose": "Brief reading hold"
+    },
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Existing HookSlide comparison cards. Original crop image key bioM5L1BananaClone has missing local media.",
+      "teachingReason": "Crop context creates a useful conditional risk question. Explicit comparison prevents the renderer default atom placeholder.",
+      "narrationCue": "How could copying a productive plant become a shared risk?",
+      "motionPurpose": "Question and same-parent comparison reveal together; no answer implied by decorative colour",
+      "holdPurpose": "Hold the question. No answer claim before explanation"
+    },
+    {
+      "sceneId": "concept-continuity",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/bio-y12-m5/Module5LineageDiagram.tsx selected via labelPresentation module5; original LineageDiagram preserved",
+      "teachingReason": "Retain lineage plinths and DNA ribbon. Enlarge offspring/inherited-DNA labels and selected-lineage/compressed-time scope. Keep viability and fertility distinct.",
+      "narrationCue": "[{\"sceneId\":\"concept-continuity\",\"field\":\"bullets[0].at\",\"phrase\":\"That connected sequence is a lineage\",\"characterIndex\":93,\"localFrame\":200},{\"sceneId\":\"concept-continuity\",\"field\":\"bullets[1].at\",\"phrase\":\"For a population to continue\",\"characterIndex\":466,\"localFrame\":963},{\"sceneId\":\"concept-continuity\",\"field\":\"revealDelays.secondary\",\"phrase\":\"Viable means\",\"characterIndex\":386,\"localFrame\":788},{\"sceneId\":\"concept-continuity\",\"field\":\"revealDelays.callout\",\"phrase\":\"enough descendants must survive\",\"characterIndex\":496,\"localFrame\":1020},{\"sceneId\":\"concept-continuity\",\"field\":\"diagram.props.at.offspring\",\"phrase\":\"producing offspring\",\"characterIndex\":162,\"localFrame\":344},{\"sceneId\":\"concept-continuity\",\"field\":\"diagram.props.at.transfer\",\"phrase\":\"passing on hereditary information in DNA\",\"characterIndex\":186,\"localFrame\":384},{\"sceneId\":\"concept-continuity\",\"field\":\"diagram.props.at.ribbon\",\"phrase\":\"each generation receives information\",\"characterIndex\":247,\"localFrame\":522},{\"sceneId\":\"concept-continuity\",\"field\":\"diagram.props.at.parade\",\"localFrame\":552,\"derivedFrom\":\"After inherited DNA and the receiving-generation cue; protects initial transfer marker before destination birth.\"},{\"sceneId\":\"concept-continuity\",\"field\":\"diagram.props.at.rule\",\"phrase\":\"The lifetimes are compressed\",\"characterIndex\":307,\"localFrame\":629}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Large offspring and DNA labels begin at402 and412, before first transfer462-492 and birth492. Move copy marker outside offspring birth-opacity group in selected variant, so inheritance handoff is visible before birth. Ribbon begins462; second population-continuity bullet900. All estimates, not measured speech.",
+      "holdPurpose": "Selected-lineage and compressed-time scope remains visible. Retain the completed lineage and DNA ribbon while population-continuity condition is explained. No guarantee that all real offspring reproduce."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "adjust",
+      "visualReference": "Existing definition board, three concise bullets",
+      "teachingReason": "Separate fusion criterion from parent-count heuristic; define allele before use",
+      "narrationCue": "[{\"sceneId\":\"definition\",\"field\":\"bullets[0].at\",\"phrase\":\"Asexual reproduction produces offspring\",\"characterIndex\":73,\"localFrame\":148},{\"sceneId\":\"definition\",\"field\":\"bullets[1].at\",\"phrase\":\"Sexual reproduction involves gametes\",\"characterIndex\":164,\"localFrame\":336},{\"sceneId\":\"definition\",\"field\":\"bullets[2].at\",\"phrase\":\"An allele is a version\",\"characterIndex\":464,\"localFrame\":975},{\"sceneId\":\"definition\",\"field\":\"revealDelays.callout\",\"phrase\":\"That is still sexual reproduction\",\"characterIndex\":374,\"localFrame\":773}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Reveal vocabulary in connected order",
+      "holdPurpose": "Read gamete fusion and zygote before moving on"
+    },
+    {
+      "sceneId": "concept-asexual",
+      "visualDecision": "adjust",
+      "visualReference": "Existing table/concept layout. Original bio12m5Population clone binding deliberately withheld.",
+      "teachingReason": "Retain comparison layout and teach the mutation/environment distinction once, without deterministic disease outcomes",
+      "narrationCue": "[{\"sceneId\":\"concept-asexual\",\"field\":\"bullets[0].at\",\"phrase\":\"without needing a mate\",\"characterIndex\":237,\"localFrame\":459},{\"sceneId\":\"concept-asexual\",\"field\":\"bullets[1].at\",\"phrase\":\"Under suitable conditions\",\"characterIndex\":261,\"localFrame\":514},{\"sceneId\":\"concept-asexual\",\"field\":\"bullets[2].at\",\"phrase\":\"Mutation can alter DNA\",\"characterIndex\":428,\"localFrame\":848},{\"sceneId\":\"concept-asexual\",\"field\":\"revealDelays.callout\",\"phrase\":\"A difference caused by those growing conditions\",\"characterIndex\":561,\"localFrame\":1139}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Stable DNA versus difference comparison; no deterministic disease animation",
+      "holdPurpose": "Hold both columns together; phone-fit inspection pending"
+    },
+    {
+      "sceneId": "concept-sexual",
+      "visualDecision": "adjust",
+      "visualReference": "Existing table/concept layout. Original bio12m5Population varied binding deliberately withheld.",
+      "teachingReason": "Show existing alleles combined differently without depicting guaranteed survivors",
+      "narrationCue": "[{\"sceneId\":\"concept-sexual\",\"field\":\"bullets[0].at\",\"phrase\":\"In outcrossing\",\"characterIndex\":71,\"localFrame\":144},{\"sceneId\":\"concept-sexual\",\"field\":\"bullets[1].at\",\"phrase\":\"Offspring from genetically different parents\",\"characterIndex\":233,\"localFrame\":480},{\"sceneId\":\"concept-sexual\",\"field\":\"bullets[2].at\",\"phrase\":\"Finding a mate\",\"characterIndex\":463,\"localFrame\":922},{\"sceneId\":\"concept-sexual\",\"field\":\"revealDelays.callout\",\"phrase\":\"the combinations change\",\"characterIndex\":400,\"localFrame\":779}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Sequential starting-information and combination reveal, then stable comparison",
+      "holdPurpose": "Hold parent alleles and offspring combinations together; card analogy refers only to reshuffling"
+    },
+    {
+      "sceneId": "concept-tradeoff",
+      "visualDecision": "adjust",
+      "visualReference": "Reuse original three-column table structure with shorter qualified entries",
+      "teachingReason": "Gamete fusion and conditional benefit can be compared without universal winner labels",
+      "narrationCue": "[{\"sceneId\":\"concept-tradeoff\",\"field\":\"bullets[0].at\",\"phrase\":\"Cloning can be useful\",\"characterIndex\":449,\"localFrame\":881},{\"sceneId\":\"concept-tradeoff\",\"field\":\"bullets[1].at\",\"phrase\":\"varied inherited combinations may help\",\"characterIndex\":509,\"localFrame\":996},{\"sceneId\":\"concept-tradeoff\",\"field\":\"bullets[2].at\",\"phrase\":\"Infection also depends\",\"characterIndex\":315,\"localFrame\":605},{\"sceneId\":\"concept-tradeoff\",\"field\":\"revealDelays.callout\",\"phrase\":\"Neither method is a universal winner\",\"characterIndex\":572,\"localFrame\":1124}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Table entrance serves comparison; no universal ranking",
+      "holdPurpose": "Keep both methods and survival-certain row visible"
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "Existing worked-example board with three staged reasons",
+      "teachingReason": "Transfer fusion criterion to self-fertilisation; no DNA-copying mechanism detail",
+      "narrationCue": "[{\"sceneId\":\"worked-example\",\"field\":\"revealDelays.stepAts[0]\",\"phrase\":\"A strawberry makes a runner\",\"characterIndex\":23,\"localFrame\":45},{\"sceneId\":\"worked-example\",\"field\":\"revealDelays.stepAts[1]\",\"phrase\":\"Coral eggs and sperm fuse\",\"characterIndex\":118,\"localFrame\":257},{\"sceneId\":\"worked-example\",\"field\":\"revealDelays.stepAts[2]\",\"phrase\":\"Now a plant uses sperm\",\"characterIndex\":175,\"localFrame\":401}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Reveal classification and reason together, in example order",
+      "holdPurpose": "Hold all three established reasons; cue timings are estimates"
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "Existing misconception board",
+      "teachingReason": "Diagnose one risk-to-certainty inference without repeating the earlier caveat list",
+      "narrationCue": "The mistake is turning a shared susceptibility into a certain outcome",
+      "motionPurpose": "Contrast mistaken inference and qualified explanation",
+      "holdPurpose": "Hold the repair while the inference is explained"
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx via opt-in calculationPresentation.layout module5Evidence; existing grouped-board mechanism and response gate retained",
+      "teachingReason": "Use full-width stable evidence with52-58px essential labels, conditions, values and units,62px short task and58px current reasoning. Retain a separate44px established-result trail. Display text is compacted; original spoken task and scientific conditions are unchanged.",
+      "narrationCue": "[{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[0]\",\"phrase\":\"The seedlings are likely\",\"characterIndex\":340,\"localFrame\":884},{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[1]\",\"phrase\":\"The cuttings usually\",\"characterIndex\":487,\"localFrame\":1146},{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[2]\",\"phrase\":\"In this case\",\"characterIndex\":568,\"localFrame\":1303},{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[3]\",\"phrase\":\"Even reduced susceptibility\",\"characterIndex\":670,\"localFrame\":1517}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Answer stages remain hidden before estimated frame 960; then reveal one reasoning stage at a time and retain established conclusions. Speech and segment text are unchanged; replace stage cues after measured assembly.",
+      "holdPurpose": "Measured answer-free PCM interval 644 to 884 at 30 fps. First answer display and stage cues are at or after the interval end; captions do not intersect the gap. Actual voiced preview remains pending."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "adjust",
+      "visualReference": "Existing summary board and next-handoff prompt, reduced to four compact takeaways",
+      "teachingReason": "Consolidate lineage, gamete fusion and retained/reshuffled combination reasoning, then hand off to mechanisms",
+      "narrationCue": "[{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[0]\",\"phrase\":\"Reproduction connects generations\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[1]\",\"phrase\":\"Asexual reproduction usually\",\"characterIndex\":77,\"localFrame\":171},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[2]\",\"phrase\":\"Sexual reproduction fuses gametes\",\"characterIndex\":159,\"localFrame\":351},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[3]\",\"phrase\":\"A combination that works well\",\"characterIndex\":230,\"localFrame\":509}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Reveal compact takeaways; stable ending",
+      "holdPurpose": "Read final distinction and next mechanism handoff"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Existing SummarySlide, four compact notes without side finalPrompt card",
+      "teachingReason": "Separate optional copying from narrated explanation",
+      "narrationCue": "None. No narration. Start only after summary audio finishes.",
+      "motionPurpose": "All notes enter together and then remain settled. No new reasoning during copying.",
+      "holdPurpose": "444 frames: reserve 60 entrance frames, 360 stable reading frames and 24 outgoing frames. Twelve stable seconds is a planning hypothesis, not validated copying time. Invite pause."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Fresh measured assembly. Base spoken text unchanged, cues derived from current selected takes. Exact measured source review, voiced Player, native/device/caption observations and human listening remain pending. No export or release approval.",
+  "origin": {
+    "lessonPath": "docs/production/drafts/module5-visual-v2-2026-10-10/biology/lesson.json",
+    "lessonSha256": "684ffdb23288c8321cc96fbc9991b1a1713edbb66c2ba835696f1bf86a31204c",
+    "speechChanged": false,
+    "oldMediaReused": false
+  },
+  "supersededDraft": {
+    "lessonPath": "docs/production/drafts/module5-biology-l1-2026-10-10/initial-review/lesson.json",
+    "lessonSha256": "921923cfabfb29cc27c693f9b59bb1e364e16b3b02854ca2b9d36ba1965b6af6",
+    "status": "superseded-initial-review-evidence-no-approval",
+    "reason": "Editorial revision after independent findings about repetition and ambiguous genetic-in-response phrasing."
+  },
+  "priorSourceRevision": {
+    "lessonPath": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+    "lessonSha256": "17591531e1050b33a758f5a43a470b217330c7e969240a991d08bf5d1d3c826e",
+    "status": "preserved-review-evidence-no-new-approval",
+    "reason": "Additive opt-in essential-label and cue revision. Spoken text and response boundaries retained."
+  }
+}

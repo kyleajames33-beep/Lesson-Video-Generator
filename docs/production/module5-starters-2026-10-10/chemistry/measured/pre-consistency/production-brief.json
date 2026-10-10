@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+    "lessonSha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Reactants/products, particle model and rate as change per time. Entry check: in A ⇌ B, can each arrow describe an ongoing conversion? If unclear, revisit Year 11 particle/rate support; support source review is pending. No ICE prerequisite.",
+    "startsWith": "A sealed drink looks unchanged, although exchange can continue.",
+    "stopsAfter": "Learner explains equal non-zero forward/reverse rates, stable observable composition, unequal concentrations and closed-system scope. Static mechanical contrast is labelled. Observation alone is not proof.",
+    "nextLesson": "C2: how a specified reactant-rich reversible system approaches equilibrium, using selected L2/L3 cores. Its independent review is pending. No disturbance prediction, K expression or ICE table in this lesson."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/course-progression-plan-2026-10-09.md",
+    "docs/production/course-content-checklist-2026-10-09.md"
+  ],
+  "teaching": {
+    "task": "Explain dynamic equilibrium using equal non-zero forward and reverse rates, stable composition and a stated closed-system model. Distinguish equal rates from equal concentrations and steady observation from evidence of exchange.",
+    "causalExplanation": "In the supplied one-to-one model, forward conversion removes A at the rate reverse conversion replaces it. Both rates are non-zero, but their effects cancel, keeping each concentration steady. Concentration is amount per volume, not traffic per time.",
+    "conversationalApproach": "Connected Australian English with sealed-drink context and traffic metaphor. Essential visual relationships are spoken. No viewing-command sequence, promised marks or unverified historical anecdote. Gentler 130 WPM planning allowance is a hypothesis, not selected delivery.",
+    "openingDecision": "Rhetorical surprise: can an unchanged drink still exchange CO₂? It motivates the observable/process distinction. Actual independent response is protected later in quick-check.",
+    "understandingCheck": "Synthetic C ⇌ D transfer with unequal steady concentrations and supplied equal non-zero conversion counts. Require classification, causal balance and why steady readings alone would be insufficient. Prompt/feedback are separate planned recordings with assembled silence, not a narration tag.",
+    "curriculumScope": "Chemistry Year 12 Module 5, 2017 syllabus for 2027 HSC cohort per dated priority plan. Candidate contribution to static/dynamic models and open/closed analysis, not complete ACSCH079/091 action coverage or practical conduct. Mechanical static model is explicit. Fixed-temperature, fixed-volume, closed, reversible model; no ICE/K calculations, catalysts or disturbance rules.",
+    "focus": "Why can a mixture stay unchanged while its reactions continue? Static contrast, system boundary and evidence all support that one question. No disturbance rules, K calculation, ICE or catalyst treatment.",
+    "notes": "Separate optional unvoiced Key notes scene after full summary speech. Notes are labels, not new reasoning. All points appear together; no ambient final card. Quiet 15-second planning allowance, to be checked after measured speech and transitions.",
+    "notesEvidence": {
+      "path": "docs/production/module5-starters-2026-10-10/ui-observations.json",
+      "sha256": "6ec8f260bde8e95476e9c988307323e7c100d055c486c9bc9c6681209f7b7be2"
+    }
+  },
+  "scenes": [
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Retain identity layout and correct the short title.",
+      "narrationCue": "Static and Dynamic Equilibrium",
+      "motionPurpose": "Title reveal then stable hold.",
+      "holdPurpose": "Short readable identity hold; no spoken catalogue metadata."
+    },
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/HookSlide.tsx comparison cards; planned m5L1SparklingBottle asset remains inactive",
+      "teachingReason": "Retain sealed-drink context with neutral Now/Later cards. Explicit comparison suppresses the unrelated default atom and one-atom label when the bottle image is missing.",
+      "narrationCue": "Does that mean the carbon dioxide has stopped moving?",
+      "motionPurpose": "Stable question; opening is rhetorical, not a scored prediction.",
+      "holdPurpose": "Hold the question while the distinction is introduced."
+    },
+    {
+      "sceneId": "concept-two-states",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ExchangeDiagram.tsx selected via labelPresentation module5; original ExchangeDiagram preserved",
+      "teachingReason": "Retain the same unequal-amount exchange and make One mixture prominent, with shorter larger group labels. All other selected timing and the average-behaviour narration remain.",
+      "narrationCue": "[{\"sceneId\":\"concept-two-states\",\"field\":\"bullets[0].at\",\"phrase\":\"That is a static mechanical equilibrium\",\"characterIndex\":109,\"localFrame\":221},{\"sceneId\":\"concept-two-states\",\"field\":\"bullets[1].at\",\"phrase\":\"Chemical equilibrium has a different kind of balance\",\"characterIndex\":273,\"localFrame\":552},{\"sceneId\":\"concept-two-states\",\"field\":\"revealDelays.secondary\",\"phrase\":\"It does not mean every particle\",\"characterIndex\":205,\"localFrame\":423},{\"sceneId\":\"concept-two-states\",\"field\":\"revealDelays.callout\",\"phrase\":\"At dynamic equilibrium\",\"characterIndex\":406,\"localFrame\":828},{\"sceneId\":\"concept-two-states\",\"field\":\"diagram.props.delay\",\"phrase\":\"Chemical equilibrium has a different kind of balance\",\"characterIndex\":273,\"localFrame\":552},{\"sceneId\":\"concept-two-states\",\"field\":\"diagram.props.startAt\",\"phrase\":\"In a reversible reaction\",\"characterIndex\":327,\"localFrame\":653},{\"sceneId\":\"concept-two-states\",\"field\":\"diagram.props.captions[0].at\",\"phrase\":\"The two groups in this schematic\",\"characterIndex\":607,\"localFrame\":1236}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Original balanced exchange and count conservation are reused. Scoped label sizing changes only the selected diagram; equal-rate bullet remains at22 seconds pending measured alignment.",
+      "holdPurpose": "The first22 seconds deliberately hold the supported-book distinction and thermal-motion caveat. Blank diagram space is inactive during this static contrast. The explicit dynamic bullet arrives at22 seconds, rather than being distributed near scene end. Replace cue estimates after recording."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/DefinitionSlide.tsx",
+      "teachingReason": "Retain the stable vocabulary board with accurate boundary definitions.",
+      "narrationCue": "[{\"sceneId\":\"definition\",\"field\":\"bullets[0].at\",\"phrase\":\"Dynamic means\",\"characterIndex\":55,\"localFrame\":101},{\"sceneId\":\"definition\",\"field\":\"bullets[1].at\",\"phrase\":\"A closed system\",\"characterIndex\":189,\"localFrame\":382},{\"sceneId\":\"definition\",\"field\":\"bullets[2].at\",\"phrase\":\"An open system\",\"characterIndex\":311,\"localFrame\":620},{\"sceneId\":\"definition\",\"field\":\"revealDelays.callout\",\"phrase\":\"So closed does not mean insulated\",\"characterIndex\":359,\"localFrame\":735}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Reveal definitions as stable blocks, not vibrating words.",
+      "holdPurpose": "Give the matter/energy distinction a reading hold."
+    },
+    {
+      "sceneId": "concept-conditions",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx and src/slides/diagrams/TableReveal.tsx",
+      "teachingReason": "Retain sealed/open comparison; remove defective BottleDiagram binding until opt-in correction is reviewed.",
+      "narrationCue": "[{\"sceneId\":\"concept-conditions\",\"field\":\"bullets[0].at\",\"phrase\":\"given enough time to settle\",\"characterIndex\":109,\"localFrame\":208},{\"sceneId\":\"concept-conditions\",\"field\":\"bullets[1].at\",\"phrase\":\"Opening the bottle\",\"characterIndex\":389,\"localFrame\":756},{\"sceneId\":\"concept-conditions\",\"field\":\"revealDelays.secondary\",\"phrase\":\"Some gas can still dissolve back in\",\"characterIndex\":513,\"localFrame\":995},{\"sceneId\":\"concept-conditions\",\"field\":\"revealDelays.callout\",\"phrase\":\"a lid alone does not establish equilibrium\",\"characterIndex\":200,\"localFrame\":381}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Reveal boundary comparison; no zero-dissolution/drain-all animation.",
+      "holdPurpose": "Keep fixed conditions and the net-loss caveat available."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx via opt-in calculationPresentation.layout module5Evidence; existing grouped-board mechanism and response gate retained",
+      "teachingReason": "Use full-width stable evidence with52-58px essential labels, conditions, values and units,62px short task and58px current reasoning. Retain a separate44px established-result trail. Display text is compacted; original spoken task and scientific conditions are unchanged.",
+      "narrationCue": "[{\"sceneId\":\"worked-example\",\"field\":\"revealDelays.stepAts[0]\",\"phrase\":\"The forward process removes A\",\"characterIndex\":304,\"localFrame\":653},{\"sceneId\":\"worked-example\",\"field\":\"revealDelays.stepAts[1]\",\"phrase\":\"So both concentrations remain constant\",\"characterIndex\":420,\"localFrame\":908},{\"sceneId\":\"worked-example\",\"field\":\"revealDelays.stepAts[2]\",\"phrase\":\"They do not need to match each other\",\"characterIndex\":460,\"localFrame\":992}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "One active reasoning stage at frames780,1050,1290, retaining established results. Rates/givens stay available while removal/replacement, stable composition and unequal amounts are explained. Draft cue estimates only.",
+      "holdPurpose": "Reasoning stages hold separately; example is synthetic, not experimental data. New essential-label layout still needs exact native and384-wide still inspection, continuous playback, external-caption/device and human listening checks. No approvals inferred from source size."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx",
+      "teachingReason": "Retain evidence-oriented example; replace disruptive isotope-addition proof with detection-limit reasoning.",
+      "narrationCue": "[{\"sceneId\":\"worked-example-2\",\"field\":\"revealDelays.stepAts[0]\",\"phrase\":\"a sealed mixture keeps the same colour\",\"characterIndex\":30,\"localFrame\":53},{\"sceneId\":\"worked-example-2\",\"field\":\"revealDelays.stepAts[1]\",\"phrase\":\"The reaction might simply be too slow\",\"characterIndex\":214,\"localFrame\":413},{\"sceneId\":\"worked-example-2\",\"field\":\"revealDelays.stepAts[2]\",\"phrase\":\"the extra evidence was conversion continuing\",\"characterIndex\":366,\"localFrame\":711},{\"sceneId\":\"worked-example-2\",\"field\":\"revealDelays.stepAts[3]\",\"phrase\":\"A steady observation tells us\",\"characterIndex\":513,\"localFrame\":1013}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Separate observation, possible explanations and discriminating process evidence.",
+      "holdPurpose": "Allow reading of both possible explanations before the justified conclusion."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/MisconceptionSlide.tsx",
+      "teachingReason": "Retain contrast layout; explicitly separate rate, concentration and completion.",
+      "narrationCue": "Rate describes how fast conversion happens.",
+      "motionPurpose": "Emphasise the rate/amount distinction once; stable copy afterwards.",
+      "holdPurpose": "Reading hold protects the equal-or-unequal concentration qualification."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx via opt-in calculationPresentation.layout module5Evidence; existing grouped-board mechanism and response gate retained",
+      "teachingReason": "Use full-width stable evidence with52-58px essential labels, conditions, values and units,62px short task and58px current reasoning. Retain a separate44px established-result trail. Display text is compacted; original spoken task and scientific conditions are unchanged.",
+      "narrationCue": "[{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[0]\",\"phrase\":\"Yes, this supplied evidence\",\"characterIndex\":481,\"localFrame\":1337},{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[1]\",\"phrase\":\"The concentrations can differ\",\"characterIndex\":634,\"localFrame\":1675},{\"sceneId\":\"quick-check\",\"field\":\"revealDelays.stepAts[2]\",\"phrase\":\"If we only had steady readings\",\"characterIndex\":736,\"localFrame\":1873}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "All reasoning stages remain hidden until answerVisibleStart1368 and then land at1368,1608,1848. Prompt/evidence remain visible during the planned8-second response interval1128-1368. No measured timing claim.",
+      "holdPurpose": "Measured answer-free PCM interval 977 to 1337 at 30 fps. First answer display and stage cues are at or after the interval end; captions do not intersect the gap. Actual voiced preview remains pending."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Retain recap board and handoff, replacing absolute closure and equal-amount claims.",
+      "narrationCue": "[{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[0]\",\"phrase\":\"An unchanged mixture can still be reacting\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[1]\",\"phrase\":\"the forward and reverse reaction rates\",\"characterIndex\":68,\"localFrame\":149},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[2]\",\"phrase\":\"without requiring equal concentrations\",\"characterIndex\":193,\"localFrame\":393},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[3]\",\"phrase\":\"Closure helps make equilibrium possible\",\"characterIndex\":308,\"localFrame\":623},{\"sceneId\":\"summary\",\"field\":\"revealDelays.takeawayAts[4]\",\"phrase\":\"constant measurements alone\",\"characterIndex\":392,\"localFrame\":779}] Measured from assembled character alignment. Actual viewing and listening remain pending.",
+      "motionPurpose": "Stable recap items and final approach-to-equilibrium handoff.",
+      "holdPurpose": "Preserve all accepted summary narration and the existing takeaways. Remove the extra simultaneous handoff card; the next-lesson handoff remains in speech. Measure summary end and protect its audio from the notes entrance by the 24-frame transition."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx, full-width layout with no finalPrompt",
+      "teachingReason": "Let students copy the essential relationships after the explanation rather than during new reasoning.",
+      "narrationCue": "No speech. Begins after summary narration ends, allowing for transition overlap.",
+      "motionPurpose": "All note rows enter together, then stay stable. No ambient final-rule card or unrelated art.",
+      "holdPurpose": "15-second quiet planning allowance, all notes visible after the 16-frame entrance and before outgoing transition. Optional pause/copy indicated in caption; actual readability and measured silent interval require review."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Fresh measured assembly. Base spoken text unchanged, cues derived from current selected takes. Exact measured source review, voiced Player, native/device/caption observations and human listening remain pending. No export or release approval.",
+  "priorSourceRevision": {
+    "lessonPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+    "lessonSha256": "14e05ef9c9f6808bb07565d1d9d3030515f157cfc161c24e58ddd9e5f43b497a",
+    "status": "preserved-review-evidence-no-new-approval",
+    "reason": "Additive opt-in essential-label and cue revision. Spoken text and response boundaries retained."
+  },
+  "preClearanceRevision": {
+    "lessonPath": "docs/production/drafts/module5-visual-v2-2026-10-10/chemistry/pre-clearance-review/lesson.json",
+    "lessonSha256": "846d36381a6c6227d88bf9c59348abc4e69eb0b532121d3291c14af22acfa445",
+    "reason": "Preserve v2 exact independent still review before first-answer footer clearance correction."
+  }
+}

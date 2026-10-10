@@ -1,0 +1,73 @@
+{
+  "status": "text-only-plan-independent-review-pending",
+  "fps": 30,
+  "segments": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Imagine a grower has a crop plant that produces exactly the fruit they want. Making new plants from it keeps that useful inherited combination. Now a new disease arrives. How could copying a productive plant become a shared risk? The answer begins with what reproduction passes from one generation to the next."
+    },
+    {
+      "id": "concept-continuity",
+      "parentSceneId": "concept-continuity",
+      "text": "An individual has a limited lifetime, yet its descendants may continue for many generations. That connected sequence is a lineage. Reproduction makes the link by producing offspring and passing on hereditary information in DNA. In this schematic, each generation receives information from the previous one. The lifetimes are compressed; real parents can live alongside their offspring. Viable means able to live and develop; being fertile is a separate requirement. For a population to continue, enough descendants must survive and reproduce in turn."
+    },
+    {
+      "id": "definition",
+      "parentSceneId": "definition",
+      "text": "Both methods pass on hereditary information, but they do it differently. Asexual reproduction produces offspring without gametes fusing, typically from one parent. Sexual reproduction involves gametes, reproductive cells, fusing during fertilisation. The cell formed is a zygote. There are usually two parents, but some organisms can self-fertilise using their own gametes. That is still sexual reproduction because gametes fuse. We will also use the word allele. An allele is a version of a gene; differences in inherited alleles are one form of genetic variation."
+    },
+    {
+      "id": "concept-asexual",
+      "parentSceneId": "concept-asexual",
+      "text": "A strawberry plant can grow a new plant on a runner without gametes fusing. The offspring usually retains very similar genetic information, so we describe it as a clone. When the parent performs well, this passes on a useful combination without needing a mate. Under suitable conditions, an asexual population can increase rapidly, depending on the organism and its resources. There are two different reasons clones can differ. Mutation can alter DNA in cells that contribute to offspring. Different light or water can change growth even with very similar DNA. A difference caused by those growing conditions does not, by itself, show a new inherited allele."
+    },
+    {
+      "id": "concept-sexual",
+      "parentSceneId": "concept-sexual",
+      "text": "Sexual reproduction gives inherited information another route forward. In outcrossing, gametes from different individuals fuse. Gamete formation and fertilisation can assemble different combinations of the alleles already available. Offspring from genetically different parents can therefore differ from each other and from their parents. It is like dealing a new hand from an existing set of cards: the combinations change, using alleles that are already there. Finding a mate and producing gametes can also take time and energy."
+    },
+    {
+      "id": "concept-tradeoff",
+      "parentSceneId": "concept-tradeoff",
+      "text": "Return to the grower. Cloning preserves the crop characteristics they value. But if those clones share an inherited susceptibility to a pathogen, many may be vulnerable to the same threat. A genetically varied population could contain combinations that reduce susceptibility, if that relevant variation is present. Infection also depends on exposure, pathogen behaviour and growing conditions, so genetic susceptibility is only part of the outcome. Cloning can be useful when a genotype suits the conditions; varied inherited combinations may help when conditions change. Neither method is a universal winner."
+    },
+    {
+      "id": "worked-example",
+      "parentSceneId": "worked-example",
+      "text": "Here are three events. A strawberry makes a runner: a new plant grows without gamete fusion, so the event is asexual. Coral eggs and sperm fuse: that fertilisation is sexual. Now a plant uses sperm produced from its own pollen to fertilise an egg. There is only one parent plant, yet two gametes still fuse. The event is sexual. Parent number is a useful clue, but gamete fusion is the stronger reason. The next lessons will unpack how these events occur in different organisms."
+    },
+    {
+      "id": "misconception",
+      "parentSceneId": "misconception",
+      "text": "Suppose one clone becomes infected. Does that tell us every clone must be infected? The mistake is turning a shared susceptibility into a certain outcome. The plants may share a weakness, but one infected plant does not establish what will happen to every other plant."
+    },
+    {
+      "id": "quick-check-prompt",
+      "parentSceneId": "quick-check",
+      "text": "A nursery grows cuttings from one parent and seedlings from crosses among genetically different parents. Some inherited combinations reduce susceptibility to a new disease. Which group is likely to show a wider range of inherited susceptibility, and why does that not promise every plant will survive? Pause here to explain your reasoning."
+    },
+    {
+      "id": "quick-check-feedback",
+      "parentSceneId": "quick-check",
+      "text": "The seedlings are likely to show a wider range of inherited susceptibility because the crosses combine alleles from genetically different parents. The cuttings usually retain a much narrower set of combinations from one parent. In this case, some combinations reduce susceptibility, but particular seedlings may not inherit them. Even reduced susceptibility is not the same as complete protection, so neither group can be promised complete survival."
+    },
+    {
+      "id": "summary",
+      "parentSceneId": "summary",
+      "text": "Reproduction connects generations by producing offspring and passing on DNA. Asexual reproduction usually retains a parent combination without gametes fusing. Sexual reproduction fuses gametes and can reshuffle inherited alleles. A combination that works well in one set of conditions may become a weakness when those conditions change. Next we will look at how animals achieve reproduction, followed by plants and other organisms."
+    }
+  ],
+  "responseSilenceSeconds": 8,
+  "responseInstructions": "Record prompt and feedback separately with fresh takes. Measure the prompt, assemble an exact silent gap, rebuild scene length/alignment/captions and reveal cues. Do not generate a single continuous scene take and assume a written pause creates silence.",
+  "silentScenes": [
+    "title",
+    "key-notes"
+  ],
+  "assemblyInstructions": [
+    "Assemble only narrated scenes with a matching playback plan using the existing helper. Restore unvoiced title and final key-notes afterwards. Do not send these two scenes to speech generation.",
+    "Require summary voiceover.endFrame <= summary.durationInFrames - 24, preventing copying notes entrance while summary speech continues.",
+    "Check audio silence throughout notes. Conservatively reserve local frames 0 to 60 for entrance, 60 to 420 for stable reading and 420 to 444 for any outgoing overlap. Actual entrance and caption fit require preview.",
+    "This is optional copying time, not a responseHold or validated learner comprehension."
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "owner": "/root",
+  "scope": "Production and public-release priority for current Year 12 Module 5, based on local records. No class timetable or publication pass inferred.",
+  "canonicalRoutePath": "docs/production/module5-video-route-2026-10-10.json",
+  "countsPreserved": {
+    "chemistryModule5": 22,
+    "chemistryOptionalReusedPrerequisite": 1,
+    "biologyModule5": 27
+  },
+  "evidence": [
+    "docs/production/course-progression-plan-2026-10-09.md",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.md",
+    "docs/production/parallel-production-board-2026-10-10.json",
+    "docs/production/youtube-queue-2026-10-10.json",
+    "docs/production/module5-visual-v2-review-2026-10-10.md",
+    "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/correction-record.json"
+  ],
+  "orderingProblem": "C3/C4 preparation and Biology plant preparation advanced while the earliest C1/B1 starters and C2/B2a have no public publication evidence in the inspected current records.",
+  "policy": {
+    "production": "Prioritise the earliest missing starter and prerequisite in each subject. Preserve useful later preparation and continue bounded reversible work in parallel.",
+    "publicRelease": "Publish each track in learner order once its exact package gates pass. Earlier required prerequisites must be public or supplied through an explicitly reviewed accessible support video. A private upload and a source or still pass do not count.",
+    "alternation": "Alternate Chemistry and Biology near-term work where useful. One blocked subject does not prevent the other subject's earliest eligible release.",
+    "companions": "Prepare required companions in their canonical route slot; they are not invented prerequisites for later core explanations. The g01 branch remains available after C2 and before the later core run in the default playlist.",
+    "approval": "Reuse existing owner approval only for its exact unchanged scope; root resolves technical gates. Existing approval does not cover B1, B2a or plants. This plan supplies no listening, export or public-release approval.",
+    "schedule": "Sequence only. No student lesson dates, publication deadlines or guaranteed cadence supplied."
+  },
+  "nearTermQueue": [
+    {
+      "priority": 1,
+      "canonicalId": "chem-m5-c01",
+      "title": "Static and dynamic equilibrium",
+      "state": "review",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "briefPath": "docs/production/module5-starters-2026-10-10/chemistry/measured/production-brief.json",
+      "evidencePath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+      "publication": "not-evidenced-public",
+      "remaining": "Whole-lesson exact voiced playback and intended-size/caption checks; Human listening; Export-stage brief and frozen inputs; Full export and complete public-release gates",
+      "previousSelection": {
+        "sourcePath": "docs/production/drafts/module5-visual-v2-2026-10-10/chemistry/lesson.json",
+        "briefPath": "docs/production/drafts/module5-visual-v2-2026-10-10/chemistry/production-brief.json",
+        "evidencePath": "docs/production/module5-visual-v2-review-2026-10-10.md"
+      },
+      "sourceSha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d",
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/"
+    },
+    {
+      "priority": 2,
+      "canonicalId": "bio-m5-b01",
+      "title": "Reproduction and continuity of species",
+      "state": "review",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "briefPath": "docs/production/module5-starters-2026-10-10/biology/measured/production-brief.json",
+      "evidencePath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+      "publication": "not-evidenced-public",
+      "remaining": "Whole-lesson exact voiced playback and intended-size/caption checks; Human listening; Export-stage brief and frozen inputs; Full export and complete public-release gates",
+      "previousSelection": {
+        "sourcePath": "docs/production/drafts/module5-visual-v2-2026-10-10/biology/lesson.json",
+        "briefPath": "docs/production/drafts/module5-visual-v2-2026-10-10/biology/production-brief.json",
+        "evidencePath": "docs/production/module5-visual-v2-review-2026-10-10.md"
+      },
+      "sourceSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/"
+    },
+    {
+      "priority": 3,
+      "canonicalId": "chem-m5-c02",
+      "title": "How reversible reactions approach equilibrium",
+      "state": "review",
+      "sourcePath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/production-brief.json",
+      "evidencePath": "docs/production/module5-c2-b2-simple-working-v5-review-2026-10-10.md",
+      "requiresPublic": [
+        "chem-m5-c01"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Reconcile current exact runtime and complete voiced review/listening before full export and full-package gate.",
+      "additiveNotesCandidate": {
+        "lessonPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/lesson.json",
+        "briefPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/production-brief.json",
+        "evidencePath": "docs/production/module5-seconds-notes-2026-10-10/independent-source-review.json",
+        "status": "bounded-source-pass; actual-preview-and-listening-pending"
+      }
+    },
+    {
+      "priority": 4,
+      "canonicalId": "bio-m5-b02a",
+      "title": "Reproduction in animals",
+      "state": "review",
+      "sourcePath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/production-brief.json",
+      "evidencePath": "docs/production/module5-c2-b2-simple-working-v5-review-2026-10-10.md",
+      "requiresPublic": [
+        "bio-m5-b01"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Reconcile current exact runtime and complete voiced review/listening before full export and full-package gate.",
+      "additiveNotesCandidate": {
+        "lessonPath": "docs/production/module5-seconds-notes-2026-10-10/biology/lesson.json",
+        "briefPath": "docs/production/module5-seconds-notes-2026-10-10/biology/production-brief.json",
+        "evidencePath": "docs/production/module5-seconds-notes-2026-10-10/independent-source-review.json",
+        "status": "bounded-source-pass; actual-preview-and-listening-pending"
+      }
+    },
+    {
+      "priority": 5,
+      "canonicalId": "chem-m5-g01",
+      "title": "Non-equilibrium systems: enthalpy and entropy",
+      "state": "prep",
+      "sourcePath": "src/data/chemistry-y12-m5-l2-reversibility-entropy.json",
+      "evidencePath": "docs/production/module5-video-route-2026-10-10.json",
+      "requiresPublic": [
+        "chem-m5-c02"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Select scoped companion and teaching brief, then independent review and the normal voiced/export/release workflow. This companion is not a scientific prerequisite for C3."
+    },
+    {
+      "priority": 6,
+      "canonicalId": "bio-m5-b02b",
+      "deliveryPart": "plants",
+      "state": "prep",
+      "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+      "evidencePath": "docs/production/module5-beginner-next-selection-2026-10-10.json",
+      "requiresPublic": [
+        "bio-m5-b01"
+      ],
+      "precedingPlaylistContext": "bio-m5-b02a",
+      "publication": "not-evidenced-public",
+      "remaining": "Current silent plant visuals reviewed in bounded scope. Fresh narration, measured cues, full voiced/listening/export and release gates pending. Plants cover only the plant contribution to B02b."
+    },
+    {
+      "priority": 7,
+      "canonicalId": "chem-m5-c03",
+      "title": "Concentration and temperature changes",
+      "state": "review",
+      "sourcePath": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+      "briefPath": "docs/production/module5-c3-axis-fix-2026-10-10/production-brief.json",
+      "evidencePath": "docs/production/module5-c3-axis-fix-2026-10-10/source-and-pilot-review.json",
+      "requiresPublic": [
+        "chem-m5-c02"
+      ],
+      "publication": "private",
+      "videoId": "FYdEOtHcOqk",
+      "remaining": "Axis source fix, selected sequential pilots and actual UI passed in bounded scope. Corrected full render running; replacement exact package device/accessibility and release checks pending. Remains private; earlier C1/C2 public availability required.",
+      "checkpointPath": "docs/production/module5-c3-axis-fix-2026-10-10/checkpoint.json"
+    },
+    {
+      "priority": 8,
+      "canonicalId": "bio-m5-b02b",
+      "deliveryPart": "fungi",
+      "state": "prep",
+      "sourcePath": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
+      "evidencePath": "docs/production/module5-video-route-2026-10-10.json",
+      "requiresPublic": [
+        "bio-m5-b01"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Select focused fungal mechanism boundary and reviewed brief. Plant preparation supplies no fungal coverage."
+    },
+    {
+      "priority": 9,
+      "canonicalId": "chem-m5-c04",
+      "deliveryPart": "C4A pressure, volume and inert gas",
+      "state": "prep",
+      "sourcePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/lesson.json",
+      "briefPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/production-brief.json",
+      "evidencePath": "docs/production/parallel-production-board-2026-10-10.json",
+      "requiresPublic": [
+        "chem-m5-c03"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Independent selected-source review and library integration, then recording/voiced/export/release workflow. C4B remains separate."
+    },
+    {
+      "priority": 10,
+      "canonicalId": "bio-m5-b02b",
+      "deliveryPart": "bacteria",
+      "state": "prep",
+      "sourcePath": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
+      "evidencePath": "docs/production/module5-video-route-2026-10-10.json",
+      "requiresPublic": [
+        "bio-m5-b01"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Select focused binary-fission boundary and reviewed brief; all later production gates remain."
+    },
+    {
+      "priority": 11,
+      "canonicalId": "chem-m5-c04",
+      "deliveryPart": "C4B catalysts",
+      "state": "prep",
+      "sourcePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
+      "evidencePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "requiresPublic": [
+        "chem-m5-c03"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Separate catalyst source and brief with corrected mechanism/composition distinction, then full production workflow."
+    },
+    {
+      "priority": 12,
+      "canonicalId": "bio-m5-b02b",
+      "deliveryPart": "protists",
+      "state": "prep",
+      "sourcePath": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
+      "evidencePath": "docs/production/module5-video-route-2026-10-10.json",
+      "requiresPublic": [
+        "bio-m5-b01"
+      ],
+      "publication": "not-evidenced-public",
+      "remaining": "Select named organism-specific mechanisms and reviewed brief; all later production gates remain."
+    }
+  ],
+  "nextAfterQueue": "Continue each subject's canonical route, including practical support and companions after their prerequisites. Do not skip missing organism-group contributions or infer practical conduct from animations.",
+  "snapshotLimit": "Local record audit only. Queue state must be reconciled by root as current selections and gates change; no Module 5 item is marked ready for public release by this plan.",
+  "currentStarterSelections": {
+    "chemistry": {
+      "sourcePath": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "sourceSha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d",
+      "briefPath": "docs/production/module5-starters-2026-10-10/chemistry/measured/production-brief.json",
+      "reviewPath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/",
+      "state": "fresh-measured-voiced-preview-available-independent-source-timing-pass",
+      "remaining": [
+        "Whole-lesson exact voiced playback and intended-size/caption checks",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete public-release gates"
+      ]
+    },
+    "biology": {
+      "sourcePath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "sourceSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "briefPath": "docs/production/module5-starters-2026-10-10/biology/measured/production-brief.json",
+      "reviewPath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/",
+      "state": "fresh-measured-voiced-preview-available-independent-source-timing-pass",
+      "remaining": [
+        "Whole-lesson exact voiced playback and intended-size/caption checks",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete public-release gates"
+      ]
+    }
+  }
+}

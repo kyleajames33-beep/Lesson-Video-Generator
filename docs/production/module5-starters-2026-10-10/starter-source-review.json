@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_teaching_order",
+  "scope": "Independent bounded science/script review of additive starter revisions. JSON comparison, notes accuracy, planned response protection and transition assumptions only.",
+  "method": "Read exact candidates, production briefs, selection/source-trace and recording plans; compare against accepted visual-v2 parents; read earlier independent science final addenda and v2 visual limitations; inspect SummarySlide and lessonTimeline source. No preview, frame capture or listening performed.",
+  "priorEvidence": ["docs/production/module5-independent-science-teaching-review-2026-10-10.md", "docs/production/module5-visual-v2-review-2026-10-10.md"],
+  "results": [
+    {
+      "canonicalId": "chem-m5-c01",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/chemistry/lesson.json",
+      "sourceSha256": "4eb23780a06ccd8c28fc7716aef74eeedceee72e91d76f8557a20bb8f3732133",
+      "parentSha256": "1c3a9ccfb6206fb45456563df72eb6da8cda6c26db026a8726e9c41b4a1edbda",
+      "scriptReview": "pass-bounded-additive-revision",
+      "changesVerified": ["Only summary.finalPrompt removed and one key-notes scene appended", "All original voiceover objects unchanged", "Original source has 10 scenes, including nine narrated scenes; candidate has 11 scenes"],
+      "notes": "Accurate four-point summary of equal non-zero rates, steady composition versus concentrations, closed matter boundary with possible energy transfer, and inference limits of steady readings. No new scientific reasoning or unrelated objective.",
+      "responseProtection": "Unchanged source answer boundary 1368 and stage cues1368/1608/1848 retain answer-free display logic provisionally. Separate prompt/feedback plan protects speech, answers, captions and diagrams with proposed 12-second silence. Actual assembly must replace unchanged eight-second cue estimates.",
+      "notesTiming": "Unvoiced 450-frame notes scene, all four row cues0, no finalPrompt or image. Summary speech must end before incoming notes overlap starts, not merely before nominal summary end.",
+      "blockingScriptFindings": [],
+      "pendingTimingFindings": ["Brief quick-check still describes estimated eight-second1128-1368 hold while recording plan requires12 seconds. Reconcile all measured cues and scene durations after narration.", "Brief 16-frame entrance describes outer fade/rows only. SummarySlide nested heading stamp begins18 frames later; actual title settling/readability needs preview."]
+    },
+    {
+      "canonicalId": "bio-m5-b01",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/biology/lesson.json",
+      "sourceSha256": "9489e13f8ba991d28b7f0b869b0ba25430faf792758da18e3b4c800c6ad2fd0f",
+      "parentSha256": "684ffdb23288c8321cc96fbc9991b1a1713edbb66c2ba835696f1bf86a31204c",
+      "scriptReview": "pass-bounded-additive-revision",
+      "changesVerified": ["All11 original scenes semantically unchanged, including all spoken words and quick-check conditions", "Only top-level inquiryQuestion and lessonIntent revised, plus appended key-notes scene", "Candidate has12 scenes"],
+      "notes": "Accurate four-point summary of offspring/inherited DNA, asexual reproduction without gamete fusion, sexual reproduction with fusion and possible reshuffling of existing alleles, and condition-dependent value of inherited combinations. Does not guarantee variation, resistance or survival.",
+      "responseProtection": "Original estimated answer boundary960 and cues960/1190/1410/1640 unchanged. Prompt and feedback separately planned with eight-second assembly silence. Supplied disease-susceptibility condition stays available; protected interval requires measured audio/caption/display verification.",
+      "notesTiming": "Unvoiced444-frame notes scene, all row delays0, no finalPrompt or image. Recording plan excludes title/notes from narration and requires summary endFrame <= duration-24. Reserved60 entrance,360 stable and24 tail frames are explicitly provisional.",
+      "blockingScriptFindings": [],
+      "pendingTimingFindings": ["Confirm whole title and four complete note sentences fit and settle under actual player controls/captions.", "Validate actual quiet interval and summary overlap after measured narration; current durations supply no silent-audio evidence."]
+    }
+  ],
+  "productionValidationFinding": "Author B1 validation reports scripts/validate-lesson.mjs rejects the intentionally unvoiced key-notes scene because voiceover.text is missing. Root must resolve the bounded silent-scene contract before claiming production validation or recording readiness. This affects the same unvoiced notes pattern in C1 and does not invalidate notes science/script accuracy.",
+  "punctuation": "No U+2014 found in either candidate package.",
+  "limitation": "Scoped script pass only. No motion/device, whole-lesson preview, measured response silence, human listening, recording-stage preflight, export or public-release pass. No author source, brief flags or frozen inputs changed."
+}

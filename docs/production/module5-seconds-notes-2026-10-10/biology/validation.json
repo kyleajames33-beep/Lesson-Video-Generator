@@ -1,0 +1,26 @@
+{
+  "scope": "Source validation and draft-stage brief checks only",
+  "results": [
+    {
+      "command": [
+        "node",
+        "scripts/validate-lesson.mjs",
+        "docs\\production\\module5-seconds-notes-2026-10-10\\biology\\lesson.json"
+      ],
+      "exitCode": 0,
+      "stdout": "C:\\lesson-video-generator\\docs\\production\\module5-seconds-notes-2026-10-10\\biology\\lesson.json\n  warning: root: consider adding \"syllabusDotPoints\" (syllabus coverage tracking)\n  warning: scene[1] (hook): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[2] (concept-fertilisation): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[3] (concept-asexual-animal): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[4] (concept-external): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[5] (concept-internal): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[6] (definition-comparison): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[7] (worked-example): consider adding \"coachNote\" (target/method decision)\n  warning: scene[9] (quick-check): consider adding \"pausePrompt\" (active recall before reveal)\n  warning: scene[11] (key-notes): consider adding \"finalPrompt\" (transfer decision rule)"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-production-brief.mjs",
+        "docs\\production\\module5-seconds-notes-2026-10-10\\biology\\production-brief.json",
+        "--stage=draft"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"ready\": true,\n  \"stage\": \"draft\",\n  \"blockers\": [],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/module5-seconds-notes-2026-10-10/biology/lesson.json\",\n    \"lessonSha256\": \"9fd14ebb657dab83bae45b68e0d90bc7eb57a071e3ec84bc131e79197d5b9c1b\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}"
+    }
+  ],
+  "actualPreview": "pending",
+  "humanListening": "pending"
+}

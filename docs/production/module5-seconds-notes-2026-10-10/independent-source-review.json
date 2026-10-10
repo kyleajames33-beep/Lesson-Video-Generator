@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_teaching_order",
+  "outcome": "pass-bounded-additive-source-and-notes-accuracy",
+  "scope": "Independent exact parent/candidate scene comparison, notes consolidation accuracy, metadata scope, existing summary timing and quiet-reading validation. No actual frames/playback/listening inspected.",
+  "packages": [
+    {
+      "canonicalId": "chem-m5-c02",
+      "sourcePath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/lesson.json",
+      "sourceSha256": "a6e0b63e78bd8a75e258e2bfbcc9046d82bb40927b3577bf60c589fe7ff21b7d",
+      "briefSha256": "dc45add13be8b97b598f75043015ca194c79fdd67a96f114c81da6759323b456",
+      "parentPath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "parentSha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa",
+      "comparison": "Preserved parent.lesson.json matches exact parent bytes. All9 original scenes semantically identical, including8 voiced scenes, text/media/captions/durations/cues/response data. Only top-level moduleLessonCount18 to22 and appended quiet notes differ.",
+      "metadata": "22 is current planned Module5 delivery count, not historical18 catalogue sources or completed/public/approved coverage. Optional reused limiting branch is separate.",
+      "notesAccuracy": "All four notes consolidate existing overlap-before-equilibrium, equal nonzero rates, unequal possible concentrations and suitable-catalyst fixed-temperature final-composition explanations. No new objective or scientific mechanism added.",
+      "summaryTiming": {"audioEndFrame": 1076, "durationFrames": 1145, "tailFrames": 69, "transitionOverlapFrames": 24, "speechToNotesOverlapSafetyFrames": 45},
+      "blockingFindings": []
+    },
+    {
+      "canonicalId": "bio-m5-b02a",
+      "sourcePath": "docs/production/module5-seconds-notes-2026-10-10/biology/lesson.json",
+      "sourceSha256": "9fd14ebb657dab83bae45b68e0d90bc7eb57a071e3ec84bc131e79197d5b9c1b",
+      "briefSha256": "084fae8a6dff214d1962c860010abedcafa99f45fdffff70d865ea27cdd145a3",
+      "parentPath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+      "parentSha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc",
+      "comparison": "Preserved parent.lesson.json matches exact parent bytes. All11 original scenes semantically identical, including10 voiced scenes, text/media/captions/durations/cues/response data. No top-level metadata changed; only quiet notes appended.",
+      "notesAccuracy": "All four notes consolidate existing Hydra budding without gamete fusion, scoped haploid/diploid animal model, location of fusion and condition-dependent advantage versus later survival. No guarantee or new mechanism added.",
+      "summaryTiming": {"audioEndFrame": 1188, "durationFrames": 1257, "tailFrames": 69, "transitionOverlapFrames": 24, "speechToNotesOverlapSafetyFrames": 45},
+      "blockingFindings": []
+    }
+  ],
+  "quietNotes": "Both final scenes are450frames, summary type, quietReading:true, four points, heading and takeaway cues0, no voiceover, spoken captions, image or finalPrompt. The marker is an explicit silence contract; existing renderer entrance settling still requires actual preview.",
+  "validation": "Both existing lesson validators exit0 with advisory suggestions only. Both draft-stage brief checks ready=true,zero blockers, pending script/source, voiced preview and human listening. This reviewer did not modify any brief status.",
+  "punctuation": "No U+2014 found in either exact lesson or brief.",
+  "recommendations": [],
+  "remaining": "Actual quiet-note fit/entrance, affected voiced transition and complete current voiced/device/listening scopes before export and full release gates. Historical parent checks remain exact-input scoped; appended notes do not certify whole package or syllabus conduct.",
+  "limitations": "No parent/source/brief changes, status promotion, src/scripts edits or C3 input changes. No whole-motion, human listening, export or public-release pass."
+}

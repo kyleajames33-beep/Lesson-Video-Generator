@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_teaching_order",
+  "scope": "Independent exact-source confirmation of the quietReading marker and bounded validator contract only.",
+  "priorReviewPath": "docs/production/module5-starters-2026-10-10/starter-source-review.json",
+  "scriptReview": "pass-bounded-additive-marker",
+  "sources": [
+    {"canonicalId": "chem-m5-c01", "path": "docs/production/module5-starters-2026-10-10/chemistry/lesson.json", "sha256": "091a40f72b51a8ec28c56a8e5b58cdf8267bb189becd1c173d5cf1369280f30c", "priorSha256": "4eb23780a06ccd8c28fc7716aef74eeedceee72e91d76f8557a20bb8f3732133", "comparison": "Deleting only final scene quietReading and serialising with existing two-space LF format reconstructs the prior reviewed SHA exactly."},
+    {"canonicalId": "bio-m5-b01", "path": "docs/production/module5-starters-2026-10-10/biology/lesson.json", "sha256": "8c3fd64c1efa1dfec6951380def26f474af2fd34e1083bb21f9cc0d96c454ee6", "priorSha256": "9489e13f8ba991d28b7f0b869b0ba25430faf792758da18e3b4c800c6ad2fd0f", "comparison": "Deleting only final scene quietReading and serialising with existing two-space CRLF format reconstructs the prior reviewed SHA exactly."}
+  ],
+  "confirmedInvariant": "Only quietReading:true added to each existing final key-notes summary. Spoken words, display copy, planned timings, response boundaries and all other lesson fields unchanged.",
+  "contract": "SummaryScene type permits quietReading?:true. Validator exempts narration only for a summary with marker exactly true, rejects marker on other scene types or false value, and rejects quiet summaries carrying voiceover or nonempty spoken captions. Ordinary non-title scenes still require voiceover.text.",
+  "verification": [
+    {"command": "node --test scripts/quiet-reading.test.mjs", "result": "pass: valid quiet summary accepted; ordinary missing narration, hook misuse and spoken quiet summary rejected"},
+    {"command": "node scripts/validate-lesson.mjs docs/production/module5-starters-2026-10-10/chemistry/lesson.json", "result": "exit0, advisory warnings only"},
+    {"command": "node scripts/validate-lesson.mjs docs/production/module5-starters-2026-10-10/biology/lesson.json", "result": "exit0, advisory warnings only"},
+    {"command": "Independent temporary-copy CLI probe with nonempty captions on quiet notes", "result": "exit1 with quiet-reading narration/captions rejection; temporary file removed"}
+  ],
+  "resolved": "Prior intentional-silent generic validation blocker closed for these exact source candidates.",
+  "warnings": "Validator pausePrompt/finalPrompt suggestions remain advisory. Existing complete spoken task and separate response assembly plan must be retained; no competing handoff card should be added to optional copying notes merely to remove an advisory warning.",
+  "limitation": "Source/script confirmation and bounded validator checks only. Existing measured response, audio overlap, notes fit, sampled UI and recording-stage requirements remain. No motion, whole-lesson playback, listening, paid generation, export or public-release pass. Original independent review preserved; no author lesson/brief changes made."
+}

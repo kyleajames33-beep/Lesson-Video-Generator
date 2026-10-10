@@ -55,6 +55,11 @@
   video boundaries and candidate syllabus actions. The opening lesson is
   not the whole module. Keep playlist order separate from upload chronology. Catalogue
   presence does not establish reviewed dotpoint or practical coverage.
+- Prioritise the earliest missing lesson in each active subject using
+  docs/production/module5-release-priority-2026-10-10.json. Prepare later
+  lessons in parallel, but provide prerequisites before releasing dependent
+  lessons. Chemistry and Biology are concurrent tracks; a blocker in one
+  does not hold the other. Playlist sorting does not replace timely availability.
 - Use docs/production/preview-first-review.md. Before paid narration, check
   the production brief at recording stage. Before a full export, play the
   exact voiced revision in Remotion (or a short recorded pilot), check the

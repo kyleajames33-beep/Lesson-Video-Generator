@@ -35,7 +35,7 @@ export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle}: Mo
   </g>;
   const card = (x: number, y: number, w: number, h: number) => <rect x={x} y={y} width={w} height={h} rx={24} fill={TOK.bgLift} stroke={TOK.rule} strokeWidth={3}/>;
   const heatCase = mode === 'associationHeat' || mode === 'temperatureResponse';
-  const shell = (body: React.ReactNode, description: string) => <svg viewBox="0 0 1720 620" width="100%" height="100%" role="img" aria-label={description} style={{fontFamily: FONT_DISPLAY, overflow: 'visible'}}>
+  const shell = (body: React.ReactNode, description: string) => <svg viewBox="0 0 1720 620" width="100%" height="100%" role="img" aria-label={description} style={{fontFamily: FONT_DISPLAY, overflow: 'visible', textRendering: 'geometricPrecision'}}>
     <DioramaDefs id={id} elements={['N', 'O']}/><AtomDefs id={`${id}-model`} elements={['A', 'B']}/>
     {text(40, 54, heatCase ? '2NO₂(g) ⇌ N₂O₄(g)' : 'A ⇌ B', TOK.ink, 42)}
     {!heatCase ? text(235, 54, 'one-to-one model', TOK.inkDim, 30) : null}

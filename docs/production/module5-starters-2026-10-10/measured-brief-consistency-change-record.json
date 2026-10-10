@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "owner": "/root/module5_teaching_order",
+  "scope": "Measured brief prose/evidence reconciliation only. Exact lessons and all source/audio inputs unchanged.",
+  "consistencyReview": "docs/production/module5-starters-2026-10-10/measured-brief-consistency-review.json",
+  "independentReview": {
+    "path": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+    "sha256": "2e3560cc5bc21fa13dfe2043467f0a187800b60fe9e92bf3075036670f8de297"
+  },
+  "packages": [
+    {
+      "subject": "chemistry",
+      "lessonPath": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "lessonSha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d",
+      "originalBriefSha256": "5aba30a5dd502dfdc828bbef8634428a0abeafab33817abab442b8cbeade92b4",
+      "preservedBriefPath": "docs/production/module5-starters-2026-10-10/chemistry/measured/pre-consistency/production-brief.json",
+      "currentBriefSha256": "470fb967006c2f7330099edf83792d3e6e61bd0e739f3d9aa1bb87447be64157",
+      "voicedPreviewStatus": "pending",
+      "humanListeningStatus": "pending"
+    },
+    {
+      "subject": "biology",
+      "lessonPath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "lessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "originalBriefSha256": "350a764014cf6945bf80ab6395e4ed47574b8986e117862f63ecb69a018e1250",
+      "preservedBriefPath": "docs/production/module5-starters-2026-10-10/biology/measured/pre-consistency/production-brief.json",
+      "currentBriefSha256": "120e7a3314c5e200ff322d385e0e53ad3e0680db4f951abd76d5cf2d85f1eede",
+      "voicedPreviewStatus": "pending",
+      "humanListeningStatus": "pending"
+    }
+  ],
+  "limitations": "No voicedPreview or humanListening status promoted. Whole UI/listening/device/export gates remain separate.",
+  "draftStageChecks": {
+    "chemistry": {
+      "ready": true,
+      "blockers": 0,
+      "pending": [
+        "Exact voiced preview",
+        "Human listening"
+      ]
+    },
+    "biology": {
+      "ready": true,
+      "blockers": 0,
+      "pending": [
+        "Exact voiced preview",
+        "Human listening"
+      ]
+    },
+    "command": "node scripts/check-production-brief.mjs <measured/production-brief.json> --stage=draft",
+    "scope": "Existing evidence/dependency gate only; no listening or full export approval."
+  }
+}

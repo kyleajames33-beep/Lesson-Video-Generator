@@ -1,0 +1,73 @@
+{
+  "status": "recommended-metadata-corrections-only",
+  "scope": "Read-only review of measured starter briefs against exact current measured lessons. No source or brief edits, no new listening or device conclusions.",
+  "inputs": [
+    {
+      "path": "docs/production/module5-starters-2026-10-10/chemistry/measured/production-brief.json",
+      "sha256": "5aba30a5dd502dfdc828bbef8634428a0abeafab33817abab442b8cbeade92b4"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "sha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/biology/measured/production-brief.json",
+      "sha256": "350a764014cf6945bf80ab6395e4ed47574b8986e117862f63ecb69a018e1250"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "sha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536"
+    }
+  ],
+  "findings": [
+    {
+      "subject": "chemistry",
+      "scene": "concept-two-states",
+      "finding": "motionPurpose and holdPurpose still claim 22-second estimate and pending measured alignment.",
+      "recommendation": "Replace estimate with measured dynamic bullet frame552 (18.4s); describe actual measured support and retain playback/listening limits."
+    },
+    {
+      "subject": "chemistry",
+      "scene": "worked-example",
+      "finding": "motionPurpose lists estimated stages780/1050/1290.",
+      "recommendation": "Use actual measured stages653/908/992; remove draft-cue-estimate claim."
+    },
+    {
+      "subject": "chemistry",
+      "scene": "quick-check",
+      "finding": "motionPurpose claims obsolete interval1128..1368 and stages1368/1608/1848, contradicting holdPurpose and lesson.",
+      "recommendation": "Use answer-free hold977..1337 (12s) and stages1337/1675/1873; keep actual listening pending."
+    },
+    {
+      "subject": "chemistry",
+      "scene": "key-notes",
+      "finding": "holdPurpose reserves a 16-frame entrance although quietReading=true and all cue positions are zero.",
+      "recommendation": "Describe current quietReading stable presentation and actual shared-timeline outgoing overlap; cite existing quiet-reading review rather than planning estimate."
+    },
+    {
+      "subject": "biology",
+      "scene": "concept-continuity",
+      "finding": "motionPurpose retains estimated labels402/412, transfer462..492, birth492, ribbon462 and bullet900.",
+      "recommendation": "Replace with current measured fields (offspring282, transfer322, parade490, ribbon460, bullet963), distinguishing field values from any renderer-added offsets. Do not claim label paint timing without its existing observation evidence."
+    },
+    {
+      "subject": "biology",
+      "scene": "worked-example",
+      "finding": "holdPurpose calls cues estimates after measured assembly.",
+      "recommendation": "Use measured stage cues45/257/401 and preserve separate playback/listening limitations."
+    },
+    {
+      "subject": "biology",
+      "scene": "quick-check",
+      "finding": "motionPurpose still claims estimated answer frame960 and future measured assembly.",
+      "recommendation": "Use actual hold644..884 (8s), answer884 and stages884/1146/1303/1517."
+    },
+    {
+      "subject": "biology",
+      "scene": "key-notes",
+      "finding": "holdPurpose reserves60 entrance frames despite current quietReading=true and zero reveal fields.",
+      "recommendation": "Describe stable notes over current444-frame scene with actual transition protection; retain pause invitation and do not equate silent duration with validated copying time."
+    }
+  ],
+  "limits": "Generic pending listening/device statements remain valid where no observation supports replacement. These findings do not invalidate measured narration or establish export approval."
+}

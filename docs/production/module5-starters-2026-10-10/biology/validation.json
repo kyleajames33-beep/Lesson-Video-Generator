@@ -1,0 +1,38 @@
+{
+  "sourceSha256": "8c3fd64c1efa1dfec6951380def26f474af2fd34e1083bb21f9cc0d96c454ee6",
+  "checks": {
+    "draftBrief": "pass; independent review, voiced preview and listening pending",
+    "originalScenes": "all 11 preserved semantically unchanged",
+    "speech": "all 799 words unchanged across 11 planned recording segments",
+    "punctuation": "no prohibited punctuation in new folder",
+    "lessonValidator": "pass: explicit quietReading:true summary contract; independent quiet-reading-addendum verifies normal missing speech still rejected",
+    "sourceReview": "pass: quiet-reading-addendum for exact base and measured-independent-review for exact measured selection"
+  },
+  "blockingFinding": null,
+  "release": "pending: whole voiced review, human listening, full export and release gates",
+  "initialAudit": {
+    "sourceSha256": "9489e13f8ba991d28b7f0b869b0ba25430faf792758da18e3b4c800c6ad2fd0f",
+    "checks": {
+      "draftBrief": "pass; independent review, voiced preview and listening pending",
+      "originalScenes": "all 11 preserved semantically unchanged",
+      "speech": "all 799 words unchanged across 11 planned recording segments",
+      "punctuation": "no prohibited punctuation in new folder",
+      "lessonValidator": "requires changes: unvoiced key-notes summary lacks required voiceover.text"
+    },
+    "blockingFinding": "Intentional quiet consolidation scene requires a bounded validator/runtime contract decision by root. Do not add fake speech. Current assembly must use narrated-only input and restore silent scenes afterwards."
+  },
+  "currentMeasuredSelection": {
+    "sourcePath": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+    "sourceSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+    "briefPath": "docs/production/module5-starters-2026-10-10/biology/measured/production-brief.json",
+    "reviewPath": "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+    "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/",
+    "state": "fresh-measured-voiced-preview-available-independent-source-timing-pass",
+    "remaining": [
+      "Whole-lesson exact voiced playback and intended-size/caption checks",
+      "Human listening",
+      "Export-stage brief and frozen inputs",
+      "Full export and complete public-release gates"
+    ]
+  }
+}

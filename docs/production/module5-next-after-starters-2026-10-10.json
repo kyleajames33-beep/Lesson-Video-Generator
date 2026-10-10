@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-10",
+  "scope": "Read-only next-production preparation for the second Chemistry/Biology Module 5 lessons",
+  "priority": ["chem-m5-c02", "bio-m5-b02a"],
+  "runtime": {"path": "out/checks/module5-simple-working-v5-transfer-2026-10-10", "commit": "dd6b120c48079cd0edbe240a624b8d711c1e885c", "present": true, "preservePinned": true},
+  "c2": {
+    "source": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+    "sha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa",
+    "brief": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/production-brief.json",
+    "assembledScenesPresent": 8,
+    "allSelectedAlignmentFilesPresent": true,
+    "diagramKinds": ["chem12m5Approach"],
+    "responseHold": {"startFrame": 1172, "endFrame": 1472, "seconds": 10},
+    "pilotSnapshot": {"packageSha256": "aeb39d5df0ebb44e425bbacfcbdbf6b8e20f042a5beb4f98c15ffa2ea433ac25", "freshVerification": "valid; no changes; no missing required files"},
+    "readingRisksToInspect": ["first-order model scope", "collision versus conversion model", "activation energy/catalyst vocabulary", "rate versus concentration graphs", "all transfer demands and fixed conditions"]
+  },
+  "b2a": {
+    "source": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+    "sha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc",
+    "brief": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/production-brief.json",
+    "assembledScenesPresent": 10,
+    "allSelectedAlignmentFilesPresent": true,
+    "diagramKinds": ["bioM5AnimalReproduction"],
+    "responseHold": {"startFrame": 980, "endFrame": 1340, "seconds": 12},
+    "pilotSnapshots": [
+      {"packageSha256": "1f1865cefcb24fd6fda0a466b6a7555f30d8ea87e76625c530a7757d0e4cc1d1", "freshVerification": "valid; no changes; no missing required files"},
+      {"packageSha256": "695bee8ca12ef2e897d0aed318ea6af31c6fb170e73a5780b83af66250e338b1", "freshVerification": "valid; no changes; no missing required files"}
+    ],
+    "readingRisksToInspect": ["chromosome-set vocabulary and meiosis bridge", "budding growth before detachment", "fusion versus development versus care", "broadcast spawning/viable/predation meaning", "all changed-current conditions and both task demands"]
+  },
+  "sharedNextActions": ["Additive focused-question and optional quiet-book-notes preparation preserving usable speech/visuals", "Reconcile exact scoped source/native evidence into new selected briefs", "Full exact voiced Player and intended-size/caption/transition/attempt review", "Resolve actual findings and human listening", "Export-stage preflight, freeze, full export and package release review"],
+  "quietNotes": {"presentInCurrentSources": false, "proposed": "Separate unvoiced scene after summary, current quietReading contract, compact useful essentials and optional pause. Verify measured summary audio ends before notes transition; no new reasoning during copying.", "speechRewriteRequiredForNotes": false},
+  "ownerApproval": {"evidence": "docs/production/user-approved-release-2026-10-10.json", "c2Included": false, "b2aIncluded": false},
+  "currentBriefWorkflow": "Both native-adjustment scriptReview flags remain pending; separate bounded v5 exact source/native report exists. Whole-lesson preview/listening/export/release remain pending.",
+  "constraints": ["No paid speech repetition for unchanged words", "Any changed recorded words require affected fresh audio/alignment/captions", "Preserve frozen v5 packages and pinned runtime", "No unrelated artwork or catalogue restyle", "No whole-dotpoint/practical/module-completeness claim from candidate or video presence"],
+  "laterPreparation": {"chemistry": "Pressure C4 follows established C3 core; earlier C2 availability takes priority", "biology": "Plant B02b part follows B1/animal context; fungi, bacteria and protists remain separate missing parts"},
+  "noMutations": "Only this new preparation document pair was authored. Existing source/code/audio/media/briefs unchanged."
+}

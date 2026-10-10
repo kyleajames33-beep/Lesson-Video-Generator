@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root",
+  "scope": "Targeted actual voiced Remotion Player UI execution and sampled rendered states. Not whole continuous lesson viewing, human listening, physical device testing, full export or release approval.",
+  "url": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10/",
+  "inputs": [
+    {
+      "path": "docs/production/module5-starters-2026-10-10/chemistry/measured/lesson.json",
+      "sha256": "1c491baf885ddb5048ff0704447e1862949d1ab62e4c1cb01e672f921b0d7a8d"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/biology/measured/lesson.json",
+      "sha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536"
+    },
+    {
+      "path": "out/prototypes/module5-starter-voiced-review-2026-10-10/page-inputs.json",
+      "sha256": "826be6d01a88a7283f0477c45a5add29e551c6f53e76354d88e0c4fb1cdb561f"
+    }
+  ],
+  "observations": [
+    "Chemistry worked example played from after entrance with Show captions checked, through displayed 2:36 to 3:07. Observed equal non-zero opposing rates, unequal concentrations, causal stages and established results; Player volume control showed Mute sound, but this is UI wiring evidence, not ears.",
+    "Chemistry worked example sampled at actual 960px and 480px Player widths with current captions. Caption remained separate from equation and supplied values. At 480px detailed text is small; sampled desktop rendering does not establish phone legibility.",
+    "Biology lineage played from scene entrance through displayed 0:25 to 0:45. Observed inherited DNA transfer, successor appearance and ancestor death in the explicitly time-compressed selected lineage. Some screenshots timed out while the full C3 export was running; successfully saved PNGs are listed below.",
+    "Both selected measured lesson Key notes scenes were displayed after entrance with captions enabled. All four notes appeared without spoken captions. Biology title wraps to two lines; point 3 wraps. Full note-interval listening and physical-device checks are still pending."
+  ],
+  "findings": [
+    {
+      "code": "LEGACY_CATALOGUE_COUNTER",
+      "severity": "metadata-before-starter-export",
+      "description": "Chemistry chrome still says L1 OF 18. This is an inherited catalogue count and differs from the current 22-upload route. Reconcile selected metadata before starter export. No recorded narration change required."
+    },
+    {
+      "code": "PAGE_SCOPE_SENTENCE",
+      "severity": "review-metadata",
+      "description": "page-inputs.json scope sentence retains silent/estimated wording. Its actual measured source and WAV asset hashes, page UI and independent timing report identify the voiced revision. Preserve archived exact page bytes and document a metadata correction before future builder use."
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/biology-voiced-lineage-480.png",
+      "sha256": "787f7249f42bf8a78cdd2b0a875019819b0c102cb00b79de07b37040ba443411"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/biology-voiced-lineage-960.png",
+      "sha256": "e65f744ddf76515752cfc77226281ddec5e69cf7b5a44f1917096edc2feceb72"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/biology-voiced-notes-480.png",
+      "sha256": "1758b7f154e5a7cd69f6225ee87ca8c5bf2adb2d6e4e90a45ac39c8bb76d7857"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/biology-voiced-notes-960.png",
+      "sha256": "fc52c5dba96aef059f7908ca4ebd4d3d7935a7b6c29d2e94239f88aba665e4b4"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/chemistry-voiced-worked-480.png",
+      "sha256": "9758fa4f7be681885867945c3532a9c26341ee06b259e457d5137223212641ce"
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/chemistry-voiced-worked-960.png",
+      "sha256": "d83cb87b452ea6d7c21aa1b1107341c5f3a017c7dce219c672b7d6dca6be766c"
+    }
+  ],
+  "limitations": [
+    "No human ears claim. Naturalness, terminology and pace require the teacher listening to these exact fresh recordings.",
+    "No complete motion or whole-package gate pass.",
+    "Small desktop Player inspection is distinct from real phone or tablet testing."
+  ]
+}
