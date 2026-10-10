@@ -1,5 +1,7 @@
 # Module 2 build status & handoff
 
+> **Historical snapshot (marked 10 October 2026).** Superseded by the current production board and `REPO-GUIDE.md`.
+
 Snapshot of where Chemistry Year 11 Module 2 stands, and what's left.
 Written for the post-restart session so nothing has to be re-derived.
 

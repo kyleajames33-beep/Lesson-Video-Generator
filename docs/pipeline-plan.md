@@ -1,5 +1,7 @@
 # HSCScience Video Pipeline — Master Plan
 
+> **Historical (marked 10 October 2026).** Kept for reference only. Its dark cinematic palette is superseded by the light theme in `docs/visual-design-handbook.md`. Current entry points are `AGENTS.md` and `REPO-GUIDE.md`. Where this file disagrees with them, they win.
+
 The capstone document. This is what every other doc in `docs/` reports up to.
 
 If you (Claude or human) only have time to read one thing before working on this project, read this. It's the strategic frame; specific rules and rubrics live in the docs cross-referenced below.

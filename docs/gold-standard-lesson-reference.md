@@ -1,5 +1,7 @@
 # Gold Standard Lesson Reference
 
+> **Historical (marked 10 October 2026).** Kept for reference only. Current guidance is in `docs/visual-design-handbook.md`, `docs/animation-planning.md`, `docs/production/` and `REPO-GUIDE.md`. Where this file disagrees with them, they win.
+
 This doc is the concrete pattern to follow when generating new HSCScience lessons. It is based on **Lesson 2: Molar Mass** (`Chemistry-Y11-M2-L2`), the first fully production-ready lesson in the pipeline.
 
 For the general quality standard, see [gold-standard-video-standard.md](gold-standard-video-standard.md). For visual tokens and motion rules, see [visual-design-handbook.md](visual-design-handbook.md). This doc exists so future Claude sessions can pattern-match to a specific, working example instead of reverse-engineering the codebase.

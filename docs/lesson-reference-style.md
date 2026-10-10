@@ -1,5 +1,7 @@
 # Lesson Video Reference Style
 
+> **Historical (marked 10 October 2026).** The reference lesson named below (`chemistry-y11-m2-l1-mole-concept`) is superseded by L1A/L1B. Current guidance is in `docs/visual-design-handbook.md` and `docs/production/teaching-templates.md`.
+
 Use `src/data/chemistry-y11-m2-l1-mole-concept.json` as the reference lesson for future generated videos. The goal is not just to present content; the video should feel like a clear teacher walking a student through a problem, with visible thinking, checks, and mistake prevention.
 
 ## Core Teaching Pattern

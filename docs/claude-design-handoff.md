@@ -1,5 +1,7 @@
 # Claude Design Handoff — One-Paste Prompt
 
+> **Historical (marked 10 October 2026).** Refers to older repo paths. Current guidance is in `docs/visual-design-handbook.md` and `REPO-GUIDE.md`.
+
 Copy-paste this entire block into Claude Design. It tells Claude exactly what to read, in what order, and how to respond so you don't burn tokens on rambling.
 
 ---

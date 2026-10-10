@@ -1,5 +1,7 @@
 # Lesson build checklist
 
+> **Historical (marked 10 October 2026).** Some paths refer to the older Teaching-APP layout. Current rules are in `AGENTS.md`, `docs/production/` and `REPO-GUIDE.md`; check any item here against them.
+
 The master checklist of every recurring fix / decision we've made building
 HSCScience lesson videos. **Run through this every time you start a new
 lesson** so the same problems aren't rediscovered scene-by-scene.

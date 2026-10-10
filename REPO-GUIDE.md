@@ -29,20 +29,20 @@ The main risk is not code quality. It is that review artefacts (100+ files) vast
 | `src/lesson/`, `src/audio/`, `src/animations/`, `src/transitions/`, `src/styles/` | Timing, audio, motion, styling | Core |
 | `src/dev/` | Release and preview entry points | Core |
 | `src/prototypes/` | Review screens and experiments (separate `prototype:studio` entry). Module 5 review files are one-offs | Experimental |
-| `scripts/` | 274 scripts. About 120 are wired in `package.json`; about 96 are referenced nowhere; 63 `_`-prefixed are old one-off patches | Mixed |
+| `scripts/` | About 210 scripts. About 120 are wired in `package.json`; others are documented in HANDOFF or docs. 60 old one-off patches were moved to `scripts/archive/one-off/` (paths inside them are not maintained) | Mixed |
 | `public/audio/` | Narration MP3 + alignment (about 1.1 GB, gitignored) | Generated media |
 | `public/assets/` | Artwork, lottie, fonts | Core media |
 | `out/` | Renders (gitignored). About 38 GB: `out/checks/` 16 GB (pinned runtimes plus duplicate copies), `out/prototypes/` 14 GB, `out/archives/` 8 GB | Generated |
-| `docs/` | 43 loose docs, no index (see below) | Mixed |
+| `docs/` | Loose docs, indexed in [docs/README.md](docs/README.md); stale ones carry a "Historical" banner | Mixed |
 | `docs/production/` | Briefs, reviews, gates, board, drafts (about 550 files) | Active but sprawling |
 | `HANDOFF.md` | Cross-computer restore notes, stacked "Latest" paragraphs | Read top paragraphs only |
-| `archive/` | Retired Biology Y11 JSON | Archive |
+| `archive/` | Retired Biology Y11 JSON; `archive/root-leftovers/` holds old root helpers and logs | Archive |
 | Root `image-prompts-*.md` | Image prompt sheets; Y12 ones are read by asset scripts | Keep, do not add more at root |
-| `lesson-video-generator-app/`, `tmp/`, `tmp-m3site/`, root `*.log`, `plan.md`, `check-durations.mjs`, `test-duration.mjs`, `generate-audio-prompt.mjs` | Unused leftovers | Ignore |
+| `lesson-video-generator-app/`, `tmp/`, `tmp-m3site/` | Unused leftovers (gitignored) | Ignore |
 
 ## Which docs are current
 
-Read these (all named in AGENTS.md):
+Full index: [docs/README.md](docs/README.md). Read these (all named in AGENTS.md):
 
 1. `docs/visual-design-handbook.md` (light theme, motion rules). This overrides older docs that describe a dark palette.
 2. `docs/animation-planning.md`
