@@ -154,7 +154,9 @@ The queue also preserves the older initial limiting upload because it has a dist
 | Chemistry | Dynamic Equilibrium: Equal Rates, Not Equal Concentrations \| HSC Chemistry Module 5 | Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 Syllabus) | Title and playlist candidate only. Not uploadable. |
 | Biology | Sexual vs Asexual Reproduction: Continuity and Variation \| HSC Biology Module 5 | Year 12 Biology: Module 5, Heredity (2017 Syllabus) | Title and playlist candidate only. Not uploadable. |
 
-The verified priority plan assigns the 2027 HSC Year 12 cohort to the 2017 syllabuses. Both now have separate silent draft lessons and draft teaching briefs under `docs/production/drafts/`. Their source/visual reviews are in progress. Neither has selected narration, a full export or an uploadable package. Resolve those exact draft reviews before recording or upload preparation.
+The verified priority plan assigns the 2027 HSC Year 12 cohort to the 2017 syllabuses. Opening C1/B1 now select fresh measured voiced sources and briefs under `docs/production/module5-starters-2026-10-10/{chemistry,biology}/measured-v2/`. Their [voiced Player](http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10-v2/) and independent source/timing/PCM review are available. Complete voiced viewing, human listening, export and full-package/public gates remain pending. Earlier silent selections are preserved in the JSON as history.
+
+Corrected C3 now has a full MP4 with [ready exact-package gate](module5-c3-axis-fix-2026-10-10/release-gate-report.json), zero blockers. Its [checkpoint](module5-c3-axis-fix-2026-10-10/checkpoint.json) retains the chronological public hold until C1/C2 are available and records pending additive backup. The corrected local package has no evidenced public upload. Original clipped FYdEOtHcOqk remains a separate private upload and must not be promoted.
 
 ## Coordinator reconciliation
 

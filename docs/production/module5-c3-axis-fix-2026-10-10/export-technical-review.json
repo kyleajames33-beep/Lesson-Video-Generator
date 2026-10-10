@@ -1,0 +1,794 @@
+{
+  "schemaVersion": 1,
+  "status": "independent-export-technical-review-complete-bounded-pass",
+  "videoSha256": "1b75e1e2ead9f2290beba9e9419cc594aca7e277d636a193952c7eba111cefd3",
+  "renderHashMatches": true,
+  "inputVerification": {
+    "valid": true,
+    "packageSha256": "e4db94b2ef77e3e26a3e630f082d2f26ed4967e633d5b4a2af28cec437ce2852",
+    "changes": [],
+    "missingRequired": []
+  },
+  "snapshotVerification": {
+    "valid": true,
+    "packageSha256": "56a7ee7e02bbe7e48b474601ab94115b6e7ffee3273482642a41d451cc4dddf1",
+    "changes": [],
+    "missingRequired": []
+  },
+  "audioMastering": {
+    "targetIntegratedLUFS": -18,
+    "targetTruePeakDbTP": -1.5,
+    "measured": {
+      "input_i": "-18.03",
+      "input_tp": "-1.89",
+      "input_lra": "5.20",
+      "input_thresh": "-28.71",
+      "output_i": "-17.61",
+      "output_tp": "-2.00",
+      "output_lra": "4.90",
+      "output_thresh": "-28.27",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.39"
+    },
+    "sourceRecordingsModified": false
+  },
+  "fullDecodePassed": true,
+  "fullDecodeMethod": "ffmpeg rawvideo and pcm_s16le null output, completed in prior independent invocation with no errors",
+  "metadata": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "unknown",
+        "profile": "100",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuvj420p",
+        "level": 40,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 48630000,
+        "duration": "540.333333",
+        "bit_rate": "949605",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "16210",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.100 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "unknown",
+        "profile": "1",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 25935984,
+        "duration": "540.333000",
+        "bit_rate": "177049",
+        "nb_frames": "25327",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "out\\prototypes\\module5-c3-axis-fix-2026-10-10\\full-render-01\\video.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "start_time": "0.000000",
+      "duration": "540.333333",
+      "size": "76692851",
+      "bit_rate": "1135489",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.100",
+        "comment": "Made with Remotion 4.0.451"
+      }
+    }
+  },
+  "originalComparison": [
+    {
+      "file": "timeline-audio.wav",
+      "oldSha256": "e83c02293b57291ffb56ef3cc88699fa039c22ddb01cf500bed7f646a84be4c9",
+      "newSha256": "e83c02293b57291ffb56ef3cc88699fa039c22ddb01cf500bed7f646a84be4c9",
+      "identical": true
+    },
+    {
+      "file": "captions.srt",
+      "oldSha256": "07de120bc787dbf7f48f483c9e3c91e4e25c301038fe70bb1eef0fd344e35d89",
+      "newSha256": "07de120bc787dbf7f48f483c9e3c91e4e25c301038fe70bb1eef0fd344e35d89",
+      "identical": true
+    },
+    {
+      "file": "captions.vtt",
+      "oldSha256": "f9ce77216c2cbadb7bbaf6a8f2532f22cab93078ae418563667108875276524d",
+      "newSha256": "f9ce77216c2cbadb7bbaf6a8f2532f22cab93078ae418563667108875276524d",
+      "identical": true
+    }
+  ],
+  "decodedFinalAudioComparison": {
+    "format": "mono pcm_s16le48000Hz WAV data only",
+    "old": "d1ec9e4e9ddbb2e4c38a743efb1615d6265361d02dc86bb7121c21cdc288fbd9",
+    "new": "d1ec9e4e9ddbb2e4c38a743efb1615d6265361d02dc86bb7121c21cdc288fbd9",
+    "identical": true
+  },
+  "captionCueCount": 201,
+  "captionHasEmDash": false,
+  "captionTimingIssues": [],
+  "responseHolds": [
+    {
+      "sceneId": "c3-transfer-a",
+      "startFrame": 11639,
+      "endFrame": 11999,
+      "interiorMarginFrames": 3,
+      "sampleCount": 566400,
+      "digitalSilence": true,
+      "captionsInInterior": []
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "startFrame": 13892,
+      "endFrame": 14252,
+      "interiorMarginFrames": 3,
+      "sampleCount": 566400,
+      "digitalSilence": true,
+      "captionsInInterior": []
+    }
+  ],
+  "samples": [
+    {
+      "frame": 80,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-001.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00080-480.png"
+    },
+    {
+      "frame": 566,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-002.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00566-480.png"
+    },
+    {
+      "frame": 580,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-003.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00580-480.png"
+    },
+    {
+      "frame": 628,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-004.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00628-480.png"
+    },
+    {
+      "frame": 821,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-005.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00821-480.png"
+    },
+    {
+      "frame": 832,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-006.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00832-480.png"
+    },
+    {
+      "frame": 862,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-007.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00862-480.png"
+    },
+    {
+      "frame": 996,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-008.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00996-480.png"
+    },
+    {
+      "frame": 1169,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-009.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01169-480.png",
+      "width960": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01169-960.png",
+      "portableNative": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01169-native.png"
+    },
+    {
+      "frame": 1820,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-010.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01820-480.png"
+    },
+    {
+      "frame": 2419,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-011.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02419-480.png"
+    },
+    {
+      "frame": 2482,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-012.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02482-480.png"
+    },
+    {
+      "frame": 2700,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-013.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02700-480.png",
+      "width960": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02700-960.png",
+      "portableNative": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02700-native.png"
+    },
+    {
+      "frame": 2710,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-014.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02710-480.png"
+    },
+    {
+      "frame": 3226,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-015.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-03226-480.png"
+    },
+    {
+      "frame": 3670,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-016.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-03670-480.png"
+    },
+    {
+      "frame": 3949,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-017.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-03949-480.png"
+    },
+    {
+      "frame": 4000,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-018.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04000-480.png",
+      "width960": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04000-960.png",
+      "portableNative": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04000-native.png"
+    },
+    {
+      "frame": 4033,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-019.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04033-480.png"
+    },
+    {
+      "frame": 5601,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-020.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-05601-480.png"
+    },
+    {
+      "frame": 5681,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-021.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-05681-480.png"
+    },
+    {
+      "frame": 7032,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-022.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-07032-480.png"
+    },
+    {
+      "frame": 7315,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-023.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-07315-480.png"
+    },
+    {
+      "frame": 7343,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-024.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-07343-480.png"
+    },
+    {
+      "frame": 8501,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-025.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-08501-480.png"
+    },
+    {
+      "frame": 9125,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-026.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09125-480.png"
+    },
+    {
+      "frame": 9168,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-027.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09168-480.png"
+    },
+    {
+      "frame": 9477,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-028.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09477-480.png"
+    },
+    {
+      "frame": 9600,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-029.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09600-480.png",
+      "width960": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09600-960.png",
+      "portableNative": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09600-native.png"
+    },
+    {
+      "frame": 10579,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-030.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-10579-480.png"
+    },
+    {
+      "frame": 11669,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-031.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-11669-480.png",
+      "width960": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-11669-960.png"
+    },
+    {
+      "frame": 11997,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-032.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-11997-480.png"
+    },
+    {
+      "frame": 12011,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-033.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12011-480.png"
+    },
+    {
+      "frame": 12154,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-034.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12154-480.png"
+    },
+    {
+      "frame": 12424,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-035.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12424-480.png"
+    },
+    {
+      "frame": 12427,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-036.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12427-480.png"
+    },
+    {
+      "frame": 12701,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-037.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12701-480.png"
+    },
+    {
+      "frame": 12984,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-038.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12984-480.png"
+    },
+    {
+      "frame": 13922,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-039.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-13922-480.png",
+      "width960": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-13922-960.png"
+    },
+    {
+      "frame": 14250,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-040.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14250-480.png"
+    },
+    {
+      "frame": 14264,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-041.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14264-480.png"
+    },
+    {
+      "frame": 14449,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-042.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14449-480.png"
+    },
+    {
+      "frame": 14488,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-043.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14488-480.png"
+    },
+    {
+      "frame": 14654,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-044.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14654-480.png"
+    },
+    {
+      "frame": 15855,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-045.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-15855-480.png"
+    },
+    {
+      "frame": 16130,
+      "native": "out/prototypes/module5-c3-axis-fix-2026-10-10/independent-export-review/native-046.png",
+      "width480": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-16130-480.png"
+    }
+  ],
+  "previousSampleCount": 44,
+  "reviewer": "/root/c4_independent_scope_review",
+  "date": "2026-10-10",
+  "releasePackageSha256": "56a7ee7e02bbe7e48b474601ab94115b6e7ffee3273482642a41d451cc4dddf1",
+  "inputPackageSha256": "e4db94b2ef77e3e26a3e630f082d2f26ed4967e633d5b4a2af28cec437ce2852",
+  "exportPath": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01",
+  "independentLoudnessMeasurement": {
+    "input_i": "-18.03",
+    "input_tp": "-1.89",
+    "input_lra": "5.20",
+    "input_thresh": "-28.71",
+    "output_i": "-17.60",
+    "output_tp": "-1.50",
+    "output_lra": "4.90",
+    "output_thresh": "-28.27",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.40"
+  },
+  "loudnessWithinTargets": true,
+  "lessonSha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856",
+  "componentSha256": "62c896c2832f9ab5a8565bcf17e29c87abf4953a8a81f598cbe5548088a09e7a",
+  "affectedGlyphFinding": {
+    "status": "resolved-in-sampled-final-export",
+    "frames": [
+      1169,
+      2700,
+      4000,
+      9600
+    ],
+    "sizes": [
+      1920,
+      960,
+      480
+    ],
+    "observations": [
+      "Before, Add A and Model time have complete lower glyphs, including early Add A frame1169.",
+      "Before, Remove B and Model time have complete lower glyphs.",
+      "Before, T step and Later, reaction formula, material conditions and final reference labels have complete glyphs.",
+      "No recurrence of original lower-axis clipping was observed in inspected affected frames."
+    ],
+    "causeLimit": "Retained geometricPrecision property is verified by final output evidence; exact Chromium internal cause and universal fixes remain unproven."
+  },
+  "sampledTeachingObservations": [
+    "Opening original marks stay outside bars; direct addition changes only A before the later reaction response.",
+    "Addition/removal graphs preserve distinct direct steps, continuous later changes and original B comparison; removal final B stays below original.",
+    "Fixed-temperature scene states same K; temperature-response samples show temperature/K before concentration response and no concentration step.",
+    "Both response tasks retain question demands, equation and supplied conditions; sampled frames immediately before hold end contain no answer. Feedback appears in separate ordered reasoning stages afterwards.",
+    "Cooling task separately retains more N2O4 and larger K at lower temperature; recap retains the C4 handoff."
+  ],
+  "outcomes": {
+    "mediaIntegrity": "pass",
+    "authoredGraphClipping": "resolved within sampled final export",
+    "sampledMotion": "pass for reviewed frame progression, not continuous full-video viewing",
+    "desktopLandscapeLayout": "pass for decoded authored frames at480/960, physical device not assessed",
+    "authoredAccessibility": "species, directions, conditions and conclusions represented in text as well as colour in sampled frames; caption timing and silence checks pass",
+    "nativeBrowserCaptionOverlay": "not assessed here; root owns fresh exact-MP4/VTT browser evidence",
+    "humanListening": "no new listening performed or inferred; old exact approved source/narration provenance remains separate",
+    "releaseGate": "not modified; root owns gate decisions"
+  },
+  "limitations": [
+    "46 unique decoded native frame samples include every frame used by previous44-entry sample list (which included duplicate frames at different widths), plus additional affected-axis checkpoints.",
+    "Reviewed all46 samples at480 via contact sheets, four affected checkpoints atnative1920 and960, and both questions at960.",
+    "Image evidence is desktop landscape sizing, not physical handset or portrait testing.",
+    "No continuous full-MP4 watching, fresh human listening or exact browser playback was performed by this agent.",
+    "No captured input/source/audio/brief/config edits. No release approval flag was written."
+  ],
+  "preservation": {
+    "pinRoot": "out/checks/module5-c3-axis-fix-export-2026-10-10",
+    "record": "docs/production/module5-c3-axis-fix-2026-10-10/runtime-preservation.json",
+    "finalExportArtifactCount": 10,
+    "errors": []
+  },
+  "evidenceHashes": [
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00080-480.png",
+      "sha256": "f1b108ecf8f3f2633133ea2301a784a880f154d2661c6df50c8c2aa6fb34d3de"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00566-480.png",
+      "sha256": "ea9be9a3e8b7541c407c4a9c42fde912ba5fb194a8093a48d76a6860b09543c3"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00580-480.png",
+      "sha256": "bc5497ce19e3b87a75bc960cc36ae7bd65d63a0cc7af5a6dc05d7ff7f3729815"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00628-480.png",
+      "sha256": "b896ac555eea597e66fd45ebfc23127a4c270439dd03927b256dc35c39b43da9"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00821-480.png",
+      "sha256": "ca8a0d9e97855a4a14b69b3289cfd8095186a0ceb9f8ab58078a178b63b19901"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00832-480.png",
+      "sha256": "3587b1a4df6fd3162c3be535ff4f42e65bc67d0d9ed64cc9856e56a25c9f0a7d"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00862-480.png",
+      "sha256": "de430537adbb2f648e4d2717a352faf018943412adb8edc030d77251918ece91"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-00996-480.png",
+      "sha256": "a45701c60f3f54f4dd026c6a6338802190064b97f1d951b62a900e6efcad403b"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01169-480.png",
+      "sha256": "f444ef588c02cfb5ec9b0f41daf76224608a93deb9a75dca121182ad5a41fed9"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01169-960.png",
+      "sha256": "978cb77a5ca9d607908894f92da512499a0e83e3567894553c8b2bf1f31a3c66"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01169-native.png",
+      "sha256": "96e7e593fdfa60582f55a3cfc410f5bf32f086ec4e140e0fd0a190dd7d92bdab"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-01820-480.png",
+      "sha256": "cbfac8a032e540f5b7a10d6e91d73428140781748d9605488c13042b009cc840"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02419-480.png",
+      "sha256": "0c16aa27546b4278e776076f11c2503d0e3890a0461c41d650299f405b0900a3"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02482-480.png",
+      "sha256": "09411b945cbc0e74fcf6ef6768adcaad3b932267d62b57b63b871216fe0836ff"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02700-480.png",
+      "sha256": "2cc3343d420ec443056ccb4103133562ff183c11ffa79bc18e089902b8f8cf7f"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02700-960.png",
+      "sha256": "f0eb3741ea3337d6c45fc89799bdaae71ec43d9af317d2798bac78cf8867f02e"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02700-native.png",
+      "sha256": "8734e6267d18f4919d54db620f697334aaeba24e6801013c83e1d4e4a7391f0c"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-02710-480.png",
+      "sha256": "7f2e4453eb01e8c5a4b8435f12709eac7c8e77fdabbaa27a5ee2b6152537d504"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-03226-480.png",
+      "sha256": "e7a84c71130d0d4bc2781693380e0f3d414f488265e0968291ac4b327e6200c0"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-03670-480.png",
+      "sha256": "a49d42591b025021d86cc01e4cc2341ac14c8fbde5903d516b1100dd14cefeca"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-03949-480.png",
+      "sha256": "81463f16177da0fb895418fc57bbb6011118189dbe2aaf7f93185d12ebb075e2"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04000-480.png",
+      "sha256": "1a3b584214ff5aa71042fac4a09d525eb3d9674556155ebfdb779546487f5be2"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04000-960.png",
+      "sha256": "7118c2fe2041194dcf0b9425dac6caa75d90677878567543a72afaea4ec3acfd"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04000-native.png",
+      "sha256": "5482c12bf088273437d9370ab1b06c3055cc6b0741f6826bee511bd53ff57175"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-04033-480.png",
+      "sha256": "85b78cea8799a159c788d34c59d5c4807d2ca54b4e1f374c2f17241ffd5b633d"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-05601-480.png",
+      "sha256": "23de5fbbf7f00841b4910ae2fa68271f00ea887d114bacd010950b5e721237ff"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-05681-480.png",
+      "sha256": "ada06a0be12bca32314f39855675ad6bd87b0bfebd30b61403227fa5ef93906f"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-07032-480.png",
+      "sha256": "dc7940ed8ed78a49f8a95a5df42dabed38acb17073277654e64bcd6142cfc4c3"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-07315-480.png",
+      "sha256": "e98e4b230627594399be414c28a0a2c027ce62218b800c59346e4f6e2c581f47"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-07343-480.png",
+      "sha256": "789060ab3e8ef92e5e87ccbad8cabe9ab98b48ada803e160f63587a3d349a9ca"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-08501-480.png",
+      "sha256": "38fc56b6bbf5282367de241eac77f7105e0761a950ddbb43b1f86f132d23eb2b"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09125-480.png",
+      "sha256": "b68ec386da24135fb82c67820df6cf24756ca04e8ff46c6622be09141971021a"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09168-480.png",
+      "sha256": "1e6a55c0ec767a7abf86d620622d3285324f768ed30a92885eddad492482d61f"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09477-480.png",
+      "sha256": "6d2be1dfba87b63e9c4f0a2161fc2b695aacde2c723131a337a16caa867f3e41"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09600-480.png",
+      "sha256": "92bd18529ef1333c95c3be046c9801853a77baeca24ed7e92015f48d9bfcc2cb"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09600-960.png",
+      "sha256": "186d272bbfaebd5f9a263f758c57effd54dc864281eaf7b29be795582f9faaac"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-09600-native.png",
+      "sha256": "53b5eb5c0ec8c6bbb660233e8fa3e64e3fe1b6c35f83853168cfa467dab4a1bd"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-10579-480.png",
+      "sha256": "1838194ca066b027e2b01afc567215608a423c7ad9deeca3d239b4147436ea4a"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-11669-480.png",
+      "sha256": "5f2fe8c44585fc22eaa672756c92570fa531e1d9270a5ffa20fe2f4826ec95ce"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-11669-960.png",
+      "sha256": "59bf29d96bf6c7245eb9384e3a388eb6d064b20dad3594b35782af85bf9aeadb"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-11997-480.png",
+      "sha256": "8e6510f2a48a9a076dd77fe89ed1e0f54a394c7340c735afeec22777a872178e"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12011-480.png",
+      "sha256": "c3656205b7bc63a7fb8c427dbd3991c3b82ee8bc75f3b69a63702bf88a17df1c"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12154-480.png",
+      "sha256": "ff597171daeed135e21d4aabe56c036a5840fb46c0d86d6b81fcb59ad4bbcc98"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12424-480.png",
+      "sha256": "0a54150d2a67d813412340a52ca64de07d11f5f0229c82eb1b380402607af37b"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12427-480.png",
+      "sha256": "b3b37df1779870b3648dcf15944039b20b9088789b8634f13d416b332be75109"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12701-480.png",
+      "sha256": "5481c96904e83db6541a78607aa92f4a17b0b0020fa11dcdd111463ff23d4d5e"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-12984-480.png",
+      "sha256": "bd9e71a3f6f64b87bbb4e76f78c96dfc9f56611f2773e86b3d32dcaa10bffaf7"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-13922-480.png",
+      "sha256": "cd8909c4790b4cf64f2bdf7ae4ecb33534a52f2e8576e73a27150c0f3255e1f4"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-13922-960.png",
+      "sha256": "255ef86a773801e035f91d058996607f7be8cb89760f81246d8da7eac67eb202"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14250-480.png",
+      "sha256": "26d87dd17615207534f09a5874b7f7f30d08aaf6598bf17bf8cca8de1faa9b6d"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14264-480.png",
+      "sha256": "f6619d73d47b601111264bca3b11ce84cefe2217e25ea27dbb3a83f2464daee3"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14449-480.png",
+      "sha256": "1455e26d251c9d69da9bfdfe6c4db188031de2f7124edfea6bc6b6419645c77e"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14488-480.png",
+      "sha256": "c84f17e61d25b33bef837c8baf0f7d0e6f254e29bccf37dbaee061584259133b"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-14654-480.png",
+      "sha256": "318cd3b84719b316f6afd869db460dcd556af879efcc462e87dfdc0ec93e9382"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-15855-480.png",
+      "sha256": "da6ff6f65021abc50af2d0f5c4bfc4bfdab6def1a44cf5ea9ef2c68c17646590"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/export-screenshots/export-frame-16130-480.png",
+      "sha256": "921a7d07ca9eef9ba8302a5c8acb0e23d14eeacb5beb54dd33e199b9bb64c5c9"
+    }
+  ],
+  "bindingHashes": [
+    {
+      "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/release.snapshot.json",
+      "sha256": "06c22c4f6dc9d0f4697dfe6b2db67f26dc5418814e2006dd004f49ec5b45f676"
+    },
+    {
+      "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/inputs.snapshot.json",
+      "sha256": "81a06c8d01a292e10b667271596b88d5c5620d2222ce9672913e4f442ad7004e"
+    },
+    {
+      "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/render-record.json",
+      "sha256": "91d6ee99b6d655c35ca8a5e2a4de2228d3bbfeb94bd592cd5b425533fb6480cb"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/production-brief.json",
+      "sha256": "9a3b79383ce41161b7ab1db79c38e3221530ccc00c942dcdf3c2aa9e2ad3cfd5"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/runtime-preservation.json",
+      "sha256": "519c9414def3a0afa6e20302de1a3b539cd0f92e9e3816b0f57bea306d7031f8"
+    }
+  ]
+}

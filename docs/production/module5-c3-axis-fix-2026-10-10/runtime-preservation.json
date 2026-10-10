@@ -14025,7 +14025,73 @@
   ],
   "limitations": [
     "Additional preview and gate context are preserved separately and are not claimed as render-captured inputs.",
-    "Final video, render record and release snapshot remain pending until running export completes.",
     "No source, brief, config or existing frozen package was edited."
-  ]
+  ],
+  "finalExportPreservation": {
+    "status": "preserved",
+    "releasePackageSha256": "56a7ee7e02bbe7e48b474601ab94115b6e7ffee3273482642a41d451cc4dddf1",
+    "files": [
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/captions.srt",
+        "sha256": "07de120bc787dbf7f48f483c9e3c91e4e25c301038fe70bb1eef0fd344e35d89",
+        "bytes": 14242,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/captions.vtt",
+        "sha256": "f9ce77216c2cbadb7bbaf6a8f2532f22cab93078ae418563667108875276524d",
+        "bytes": 13554,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/render-record.json",
+        "sha256": "91d6ee99b6d655c35ca8a5e2a4de2228d3bbfeb94bd592cd5b425533fb6480cb",
+        "bytes": 4726,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/timeline-audio.json",
+        "sha256": "3be242657c71eb3e6156f7bf461e3ab69f672cd7d153748dede81565c2866f84",
+        "bytes": 3235,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/timeline-audio.wav",
+        "sha256": "e83c02293b57291ffb56ef3cc88699fa039c22ddb01cf500bed7f646a84be4c9",
+        "bytes": 51872044,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/video-silent.mp4",
+        "sha256": "f4c59f4afc1e2bc4da78bb5107789e0888e9e8d92144eb0c80c1257f301eb553",
+        "bytes": 64333364,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/video-unmastered.mp4",
+        "sha256": "b5f041478622a621640862c68cb3e9a0f004e08918e22638765358123c988216",
+        "bytes": 76739068,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/video.audio-review.json",
+        "sha256": "b2c352eda3088e7a0d49488af569da01f805bef13ba6ec64725374c54ac6b6d1",
+        "bytes": 730,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/video.mp4",
+        "sha256": "1b75e1e2ead9f2290beba9e9419cc594aca7e277d636a193952c7eba111cefd3",
+        "bytes": 76692851,
+        "verified": true
+      },
+      {
+        "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/release.snapshot.json",
+        "sha256": "06c22c4f6dc9d0f4697dfe6b2db67f26dc5418814e2006dd004f49ec5b45f676",
+        "bytes": 214544,
+        "verified": true
+      }
+    ],
+    "errors": []
+  }
 }

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/module5_teaching_order",
+  "outcome": "pass-bounded-root-authored-notes-fit-wording",
+  "scope": "Only C2 unvoiced point4 shortened per root authored wording; other source fields and B2a lesson unchanged.",
+  "packages": [
+    {
+      "subject": "chemistry",
+      "sourcePath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/fit-v2/lesson.json",
+      "sourceSha256": "476b55194af5457eb4b340a558128cf386e8d51a02685844b5e1114214e71365",
+      "parentPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/lesson.json",
+      "parentSha256": "a6e0b63e78bd8a75e258e2bfbcc9046d82bb40927b3577bf60c589fe7ff21b7d",
+      "parentVoicedScenesUnchanged": true,
+      "diff": "Only final key-notes points[3] text changes",
+      "note4": "At fixed temperature, a catalyst speeds approach, not final balance."
+    },
+    {
+      "subject": "biology",
+      "sourcePath": "docs/production/module5-seconds-notes-2026-10-10/biology/fit-v2/lesson.json",
+      "sourceSha256": "9fd14ebb657dab83bae45b68e0d90bc7eb57a071e3ec84bc131e79197d5b9c1b",
+      "parentPath": "docs/production/module5-seconds-notes-2026-10-10/biology/lesson.json",
+      "parentSha256": "9fd14ebb657dab83bae45b68e0d90bc7eb57a071e3ec84bc131e79197d5b9c1b",
+      "parentVoicedScenesUnchanged": true,
+      "diff": "Entire lesson bytes unchanged",
+      "note4": "An advantage depends on conditions; fertilisation does not guarantee later survival."
+    }
+  ],
+  "limitations": "No actual fit, voicedPreview, humanListening, export or release pass. Original candidate/page preserved. Root must inspect actual fit-v2 Player.",
+  "renderingSourceCheck": {
+    "sentenceEnd": 67,
+    "under80": true,
+    "colon": -1,
+    "result": "SummarySlide.toTakeaway returns full sentence as large title with empty detail; no Key idea fallback or tiny condition text.",
+    "scope": "Source/compiler reasoning only, actual fit pending"
+  },
+  "science": "Root-authored shortened wording consolidates existing suitable-catalyst comparison under fixed temperature and stated conditions. Catalyst accelerates approach without changing final equilibrium composition. No narration or model change."
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "status": "authored-source-estimated-independent-review-pending",
+  "parent": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+    "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97",
+    "preservedPath": "docs/production/module5-plants-notes-2026-10-10/parent.lesson.json",
+    "briefPath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/production-brief.json",
+    "preservedBriefPath": "docs/production/module5-plants-notes-2026-10-10/parent.production-brief.json"
+  },
+  "candidate": {
+    "path": "docs/production/module5-plants-notes-2026-10-10/lesson.json",
+    "sha256": "c5914616dbb22822b2af12747f5bea05aa121fdb512c8f3faf52fc9598771edf",
+    "briefPath": "docs/production/module5-plants-notes-2026-10-10/production-brief.json"
+  },
+  "invariants": {
+    "parentScenesExact": true,
+    "topLevelExactExceptScenes": true,
+    "parentSceneCount": 12,
+    "parentNarratedSceneCount": 11,
+    "onlyChange": "Appended one 450-frame quietReading summary; all parent scenes and metadata unchanged."
+  },
+  "notes": {
+    "id": "key-notes",
+    "durationInFrames": 450,
+    "points": [
+      "In flowering plants, a pollen tube delivers sperm to an ovule.",
+      "A fertilised egg becomes an embryo; the ovule becomes a seed.",
+      "Pollination transfers pollen; fertilisation is gamete fusion.",
+      "Runners make new plants without gamete fusion."
+    ],
+    "largeTitlePath": [
+      {
+        "firstFullStop": 61,
+        "colon": -1,
+        "emptyDetail": true
+      },
+      {
+        "firstFullStop": 60,
+        "colon": -1,
+        "emptyDetail": true
+      },
+      {
+        "firstFullStop": 60,
+        "colon": -1,
+        "emptyDetail": true
+      },
+      {
+        "firstFullStop": 45,
+        "colon": -1,
+        "emptyDetail": true
+      }
+    ],
+    "voiceoverAbsent": true,
+    "allRowCuesZero": true
+  },
+  "timing": {
+    "classification": "estimated-not-measured",
+    "fps": 30,
+    "recapWords": 72,
+    "hypotheticalWordsPerMinute": 140,
+    "estimatedRecapSpeechEnd": 926,
+    "recapDuration": 971,
+    "transitionOverlap": 24,
+    "notesStartAtRecapLocalFrame": 947,
+    "estimatedClearanceFrames": 21,
+    "requiredMeasuredMaximumRecapAudioEnd": 947,
+    "response": {
+      "sceneId": "b3-check-prompt",
+      "estimatedSpeechEnd": 1119,
+      "plannedAttemptStart": 1119,
+      "plannedAttemptEnd": 1479,
+      "feedbackStartsAtLocal": 1479,
+      "duration": 1503,
+      "unchanged": true,
+      "measuredSilence": false
+    }
+  },
+  "priority": "Parallel plant preparation after Biology B1/B2; does not displace current public starter priorities. Plants are only B02b delivery part 1, not fungi/bacteria/protists or completed action coverage.",
+  "pending": [
+    "Independent source/accuracy review",
+    "Actual notes fit and entrance settling",
+    "Fresh narration/alignment and protected response silence",
+    "Exact full voiced preview",
+    "Human listening",
+    "Device/export/package/public release gates"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "scope": "Root actual Chrome Remotion Player notes layout and sampled voiced execution; no full continuous watch, physical-device test or human ears.",
+  "url": "http://127.0.0.1:8778/module5-seconds-notes-review-2026-10-10-v3/",
+  "pageInputs": {
+    "path": "out/prototypes/module5-seconds-notes-review-2026-10-10-v3/page-inputs.json",
+    "sha256": "52c297cfdf129cf8ae9d5770fff1c1e542bc667984754889206006aa459f869e"
+  },
+  "sources": [
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/chemistry/fit-v3/lesson.json",
+      "sha256": "476b55194af5457eb4b340a558128cf386e8d51a02685844b5e1114214e71365"
+    },
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/biology/fit-v3/lesson.json",
+      "sha256": "2bb222469a279f251128304bfc3e4ac51d09c18af13fdcc62dde5e6042db610f"
+    }
+  ],
+  "observations": [
+    "Both four-point quiet notes screens inspected at960/480 landscape sizes. All points fit, including C2 catalyst note and B2 conditions/survival note. B2 final point uses two readable lines rather than tiny fallback detail.",
+    "Chemistry notes were paused at6:20/6:31 and Biology at7:48/7:59. Notes are separate after spoken recap.",
+    "Chemistry actual playback from0:00 to0:16 executed with captions enabled, unmuted UI and expected opening question visible. This is bounded execution plus sampled DOM observation, not continuous watching or listening.",
+    "Biology actual playback executed from0:00 to0:18 with captions enabled, unmuted UI and frog/bird fertilisation-location question visible. This does not claim continuous watching or human listening."
+  ],
+  "screenshots": [
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/ui-screenshots/c2-notes-v3-960-complete.png",
+      "sha256": "bdf43bfc942668b0acada267844fddc196c5bf5dbb82a4ebbff4435dd9ea83b6"
+    },
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/ui-screenshots/c2-notes-v3-480.png",
+      "sha256": "71cef611b88f0c485562e450b3e4414df5b0c2c3de417e178d6fcce040586c3e"
+    },
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/ui-screenshots/b2-notes-v3-960-complete.png",
+      "sha256": "b0a7ddcf17ebbd306949e6aff2de7c8fb1012d5c5787a05bcc2e79be9dd0f372"
+    },
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/ui-screenshots/b2-notes-v3-480-complete.png",
+      "sha256": "2a41df77ae3ee3674bd1517ebf2e9d273bd01e945068b8d0e28f7991b900bfd7"
+    }
+  ],
+  "diagnosticScreenshots": {
+    "b2-notes-v3-480.png": "Screenshot captured previous Explain the mechanism recap despite newer DOM; not used as current notes-fit evidence.",
+    "c2-notes-v3-960.png": "Viewport screenshot partially scrolled; complete counterpart used.",
+    "b2-notes-v3-960.png": "Viewport clips page below screen; complete counterpart used."
+  },
+  "remaining": [
+    "Complete exact voiced preview and scene/caption checks",
+    "Human listening",
+    "Export-stage brief and frozen inputs",
+    "Full export and exact package release gates"
+  ]
+}

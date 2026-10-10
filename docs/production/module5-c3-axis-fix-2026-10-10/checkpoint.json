@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-10",
-  "state": "corrected-full-export-encoding",
+  "state": "corrected-exact-package-gate-ready-archive-pending-chronological-hold",
   "source": {
     "path": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
     "sha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856"
@@ -13,11 +13,18 @@
   "fix": "Only SVG textRendering geometricPrecision; unchanged labels, model, recorded speech, audio, timings and captions.",
   "briefPath": "docs/production/module5-c3-axis-fix-2026-10-10/production-brief.json",
   "fullExportPath": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01",
-  "reviewUrl": "http://127.0.0.1:8778/module5-c3-axis-review-2026-10-10/",
+  "reviewUrl": "http://127.0.0.1:8778/module5-c3-axis-export-review-2026-10-10/",
   "boundedEvidence": [
     "source-and-pilot-review.json",
+    "axis-investigation-report.json",
     "ui-observations.json",
-    "runtime-preservation.json"
+    "runtime-preservation.json",
+    "export-technical-review.json",
+    "export-ui-observations.json",
+    "release-review-decisions.md",
+    "release-review-context.json",
+    "release-gate-report.json",
+    "release-gate-report-pin.json"
   ],
   "originalPackagePreserved": {
     "path": "out/prototypes/module5-c3-reference-2026-10-10/full-render-01",
@@ -25,12 +32,31 @@
     "visibility": "private",
     "knownFinding": "Lower graph-axis glyphs clipped; do not promote original."
   },
-  "releaseOrder": "C1 and C2 must be available before this dependent public video; separate required exact-package review remains.",
+  "releaseOrder": "C1 and C2 must be available before this dependent public video. Exact-package technical/review gate is ready; chronological public hold remains.",
   "pending": [
-    "Actual new final MP4 integrity and affected-region readability checks",
-    "New exact package review records and gate",
     "Verified additive corrected-export media backup",
     "Earlier C1/C2 public availability"
   ],
-  "humanListening": "Existing owner approval retained only for exact unchanged recording/source scope. No new ears or full-export watch claimed."
+  "humanListening": "Existing owner approval retained only for exact unchanged recording/source scope. No new ears or full-export watch claimed.",
+  "finalVideo": {
+    "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/video.mp4",
+    "sha256": "1b75e1e2ead9f2290beba9e9419cc594aca7e277d636a193952c7eba111cefd3"
+  },
+  "releasePackageSha256": "56a7ee7e02bbe7e48b474601ab94115b6e7ffee3273482642a41d451cc4dddf1",
+  "inputPackageSha256": "e4db94b2ef77e3e26a3e630f082d2f26ed4967e633d5b4a2af28cec437ce2852",
+  "technicalReview": "docs/production/module5-c3-axis-fix-2026-10-10/export-technical-review.json",
+  "gate": {
+    "config": "docs/production/module5-c3-axis-fix-2026-10-10/release-gate.json",
+    "rootReport": "docs/production/module5-c3-axis-fix-2026-10-10/release-gate-report.json",
+    "pinReport": "docs/production/module5-c3-axis-fix-2026-10-10/release-gate-report-pin.json",
+    "ready": true,
+    "rootBlockers": 0,
+    "pinBlockers": 0,
+    "drift": 0,
+    "missing": 0
+  },
+  "archive": {
+    "status": "pending",
+    "localPreservedRuntime": "out/checks/module5-c3-axis-fix-export-2026-10-10"
+  }
 }

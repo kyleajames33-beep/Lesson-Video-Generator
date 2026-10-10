@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "scope": "Additive source and draft-brief checks, no voiced/listening/release pass",
+  "subjects": {
+    "chemistry": {
+      "brief": {
+        "ready": true,
+        "stage": "draft",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/module5-starters-2026-10-10/chemistry/measured-v2/lesson.json",
+          "lessonSha256": "615d869a4ea4ae501b31b3e0c4ec2f9f0c51b1b4a94d353944caaf633445e9ee"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "lessonSha256": "615d869a4ea4ae501b31b3e0c4ec2f9f0c51b1b4a94d353944caaf633445e9ee",
+      "briefSha256": "b7ca80f1df3084ff7cc343e1788698531902fba08c751575fb6f13d6a8cf991e",
+      "durationInFrames": 12287,
+      "moduleLessonCount": 22
+    },
+    "biology": {
+      "brief": {
+        "ready": true,
+        "stage": "draft",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/module5-starters-2026-10-10/biology/measured-v2/lesson.json",
+          "lessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "lessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "briefSha256": "7420a18e5dd5431205b40f630662c34dd564ee604a2a8e24a1247d7b40b18ae5",
+      "durationInFrames": 11703,
+      "moduleLessonCount": 19
+    }
+  },
+  "page": {
+    "path": "out/prototypes/module5-starter-voiced-review-2026-10-10-v2",
+    "scope": "Voiced exact Player using existing measured narration, measured cues and caption tokens. Preview, human listening and release remain pending.",
+    "pageInputsSha256": "7054f51d710e5a5900c52ff787ad54329095c66d5041f4fcb6396d1e5ea1fe8a",
+    "htmlSha256": "ea7aa1b0f5ef382598c79bb36f5a61ff2e11cb8f525718efbef6de9cff710ad1",
+    "assetCount": 19,
+    "inputCount": 762,
+    "changed": [],
+    "copiedAssetChanges": []
+  }
+}

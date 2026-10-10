@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/module5-seconds-notes-2026-10-10/biology/fit-v2/lesson.json",
+    "lessonSha256": "9fd14ebb657dab83bae45b68e0d90bc7eb57a071e3ec84bc131e79197d5b9c1b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "routePath": "docs/production/module5-video-route-2026-10-10.json",
+    "routeId": "bio-m5-b02a",
+    "playlistPosition": 2,
+    "prerequisiteKnowledge": "B1: inherited information in DNA, continuity across generations, gametes, sexual gamete fusion and asexual reproduction without fusion. Entry diagnostic: fusion, rather than parent count, defines a sexual event. B1 publication is not presumed.",
+    "startsWith": "Frog gametes meet in pond water; a bird lays a supplied fertilised egg after internal fusion. Find fusion location rather than present egg location.",
+    "stopsAfter": "Named hydra budding mechanism, a haploid-to-diploid animal set model, contextual external/internal fusion, bird development contrast and a supplied separation prediction. No detailed meiosis, hormones, reproductive anatomy, pregnancy or plant/microbe mechanisms.",
+    "nextLesson": "bio-m5-b02b: reproduction in plants, fungi, bacteria and protists, candidate src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json. Then bio-m5-b03a for mammalian reproduction. Playlist order does not establish upload chronology."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/course-content-checklist-2026-10-09.md",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/module5-video-route-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "How does the reproductive mechanism explain fusion and reproductive opportunities?",
+    "causalExplanation": "Moist conditions reduce drying exposure; proximity and timing affect gamete encounters. Stipulated separation reduces encounters at equal initial numbers and viable lifetime. One chromosome set from each gamete yields two in a zygote. Hydra growth and detachment form offspring without fusion.",
+    "conversationalApproach": "Exact independently reviewed words retained in fresh recordings. Diagram, bullet and result-line cues now follow measured assembled captions. Continuous voiced playback remains pending. Existing accepted spoken explanation is retained. Optional copying occurs in a separate quiet final scene after the narrated summary.",
+    "openingDecision": "A supplied fertilised bird egg and frog eggs are both outside when observed. The rhetorical contrast asks where fusion occurred, without judging from egg location. No protected opening attempt claimed.",
+    "understandingCheck": "Supplied stronger current carries sperm away at equal initial gamete numbers and viable lifetime. Prompt audio ends at local frame980; inserted digital silence lasts360frames to1340; feedback begins at1340. No answer caption or result appears during that response interval. Predict encounters and explain why fertilisation is separate from survival. Continuous playback and listening pending.",
+    "curriculumScope": "Current Year 12 Biology 2017 Module 5, bio-m5-b02a. Pending animal contribution to cached p1025 and external/internal advantage analysis p1026, extraction IDs not official codes. Broad organism action, p1031 mammalian detail, practical conduct, assessed mastery and complete coverage are not certified."
+  },
+  "scenes": [
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing TitleSlide with no artwork binding",
+      "teachingReason": "Orient without a spoken metadata recital",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {}, \"bulletSeconds\": [], \"diagramFrames\": null, \"stageLineFrames\": []}",
+      "motionPurpose": "Single title reveal",
+      "holdPurpose": "Brief readable orientation"
+    },
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Existing HookSlide neutral comparison cards; comparisonIsPrompt true; no image/atom fallback",
+      "teachingReason": "Egg location alone cannot classify fertilisation",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"heading\": 22, \"body\": 50, \"callout\": 800}, \"bulletSeconds\": [], \"diagramFrames\": null, \"stageLineFrames\": []}",
+      "motionPurpose": "Reveal neutral frog/bird stimuli and fusion question, no verdict",
+      "holdPurpose": "Rhetorical contrast, no protected attempt"
+    },
+    {
+      "sceneId": "concept-fertilisation",
+      "visualDecision": "adjust",
+      "visualReference": "Existing ConceptSlide diagramFocus; bounded bioM5AnimalReproduction ploidy board, historical bio12m5Ploidy unmodified",
+      "teachingReason": "Readable labelled sperm and egg sets stay available after combination",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"secondary\": 1013, \"diagram\": 0}, \"bulletSeconds\": [8.566666666666666, 16.8], \"diagramFrames\": {\"start\": 141, \"second\": 322, \"result\": 504, \"condition\": 1000000}, \"stageLineFrames\": []}",
+      "motionPurpose": "Draw converging set relation, reveal zygote with both distinguishable sets",
+      "holdPurpose": "Retain gametes and zygote references; arbitrary chromosome count and compressed events are model limits"
+    },
+    {
+      "sceneId": "concept-asexual-animal",
+      "visualDecision": "new",
+      "visualReference": "Existing concept shell and new plain labelled hydra mechanism flow; no animal outline or raster needed",
+      "teachingReason": "Growth, development and detachment explain budding without gamete fusion",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"diagram\": 0}, \"bulletSeconds\": [7.6, 35.86666666666667], \"diagramFrames\": {\"start\": 106, \"second\": 141, \"result\": 308, \"condition\": 392}, \"stageLineFrames\": []}",
+      "motionPurpose": "Reveal attached developing bud then separate hydra in order",
+      "holdPurpose": "Parent remains as reference; flow is not one division producing an entire hydra"
+    },
+    {
+      "sceneId": "concept-external",
+      "visualDecision": "adjust",
+      "visualReference": "Existing concept shell; neutral external location board replaces unsafe Fertilise binding; salmon raster deliberately unbound",
+      "teachingReason": "Separate moisture, encounter opportunity and later survival",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"diagram\": 0}, \"bulletSeconds\": [11.7, 19.133333333333333, 33.46666666666667], \"diagramFrames\": {\"start\": 0, \"second\": 171, \"result\": 1000000, \"condition\": 574}, \"stageLineFrames\": []}",
+      "motionPurpose": "Location outline and directed encounter arrow only, no outcome fraction",
+      "holdPurpose": "Stable water context; icons are schematic not measured gamete counts or rates"
+    },
+    {
+      "sceneId": "concept-internal",
+      "visualDecision": "adjust",
+      "visualReference": "Existing concept shell; opt-in neutral internal moist-compartment board; historical Fertilise unmodified",
+      "teachingReason": "Internal location protects the meeting setting without determining care or survival",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"diagram\": 0}, \"bulletSeconds\": [5.466666666666667, 26.4, 31.966666666666665], \"diagramFrames\": {\"start\": 0, \"second\": 60, \"result\": 1000000, \"condition\": 243}, \"stageLineFrames\": []}",
+      "motionPurpose": "Draw encounter direction inside compartment, focus drying context",
+      "holdPurpose": "No anatomical precision, fixed offspring number, parental care or survival outcome depicted"
+    },
+    {
+      "sceneId": "definition-comparison",
+      "visualDecision": "adjust",
+      "visualReference": "ConceptSlide shell instead of dense vocabulary board; three stable questions beside labelled bird sequence",
+      "teachingReason": "Keep fusion location, embryo development and support as separate dimensions",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"diagram\": 0}, \"bulletSeconds\": [2.4, 4.4, 6.4], \"diagramFrames\": {\"start\": 286, \"second\": 371, \"result\": 410, \"condition\": 576}, \"stageLineFrames\": []}",
+      "motionPurpose": "Sequential fusion-before-laying-before-development flow",
+      "holdPurpose": "Bird egg is explicitly fertilised; care question is independent, not a guaranteed outcome"
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "Existing Module5EvidenceBoard through the opted-in focusedContext path, root-authored runtime; two-column context/current working, no established trail.",
+      "teachingReason": "Use one animal case at a time. Plain joining language preserves internal/external fertilisation and keeps bird development separate from fertilisation. Supplied location appears before classification; prior answer disappears when the next case prompt begins.",
+      "narrationCue": "{\n  \"units\": \"scene-local frames\",\n  \"focusedContext\": [\n    {\n      \"at\": 0,\n      \"title\": \"Use the supplied location\"\n    },\n    {\n      \"at\": 87,\n      \"title\": \"Frog case\"\n    },\n    {\n      \"at\": 152,\n      \"title\": \"Frog case\"\n    },\n    {\n      \"at\": 532,\n      \"title\": \"Kangaroo case\"\n    },\n    {\n      \"at\": 574,\n      \"title\": \"Kangaroo case\"\n    },\n    {\n      \"at\": 852,\n      \"title\": \"Bird case\"\n    },\n    {\n      \"at\": 888,\n      \"title\": \"Bird case\"\n    }\n  ],\n  \"unchangedStageCues\": [\n    233,\n    653,\n    946\n  ],\n  \"unchangedLineCues\": [\n    [\n      233,\n      370\n    ],\n    [\n      653,\n      730\n    ],\n    [\n      946,\n      1127\n    ]\n  ],\n  \"responseHold\": null\n}",
+      "motionPurpose": "Only context changes with the spoken case or relevant feedback. Current working reveals at the original stage and line cues. Neutral labels avoid announcing a future result. No established-result trail or decorative movement. Text stays fixed after the short entrance.",
+      "holdPurpose": "Preserve original narration/caption timing and reading tail. One case replaces the previous case on its spoken cue; each supplied location precedes its reasoning. New complete worked-scene pilot and human listening remain pending. Adjusted context width670 and working/prompt x774 retain the original fonts/cues. Recheck all context and answer wrapping, caption/control space and small-player fit in the current exact pilot."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "Existing MisconceptionSlide mistake and repair board",
+      "teachingReason": "Repair universal ranking using mechanism plus conditions",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"heading\": 18, \"body\": 766, \"callout\": 898}, \"bulletSeconds\": [], \"diagramFrames\": null, \"stageLineFrames\": []}",
+      "motionPurpose": "Faulty claim then contextual decision rule",
+      "holdPurpose": "Stable repair, no winner badge or guaranteed success"
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "Existing Module5EvidenceBoard through the opted-in focusedContext path, root-authored runtime; two-column context/current working, no established trail.",
+      "teachingReason": "Retain both questions, equal numbers/lifetimes and the two water conditions through the answer-free hold. Focus current-driven separation first, qualify the prediction, then separate fertilisation from later survival.",
+      "narrationCue": "{\n  \"units\": \"scene-local frames\",\n  \"focusedContext\": [\n    {\n      \"at\": 0,\n      \"title\": \"A supplied water model\"\n    },\n    {\n      \"at\": 144,\n      \"title\": \"Group 1\"\n    },\n    {\n      \"at\": 213,\n      \"title\": \"Group 1\"\n    },\n    {\n      \"at\": 293,\n      \"title\": \"Compare two groups\"\n    },\n    {\n      \"at\": 340,\n      \"title\": \"Equal gamete numbers\"\n    },\n    {\n      \"at\": 392,\n      \"title\": \"Equal gamete numbers\"\n    },\n    {\n      \"at\": 512,\n      \"title\": \"Equal gamete numbers\"\n    },\n    {\n      \"at\": 1340,\n      \"title\": \"What changed?\"\n    },\n    {\n      \"at\": 2034,\n      \"title\": \"Two separate outcomes\"\n    }\n  ],\n  \"unchangedStageCues\": [\n    1340,\n    1810,\n    2034\n  ],\n  \"unchangedLineCues\": [\n    [\n      1385,\n      1427\n    ],\n    [\n      1810,\n      1919\n    ],\n    [\n      2034,\n      2166\n    ]\n  ],\n  \"responseHold\": {\n    \"startFrame\": 980,\n    \"endFrame\": 1340\n  }\n}",
+      "motionPurpose": "Only context changes with the spoken case or relevant feedback. Current working reveals at the original stage and line cues. Neutral labels avoid announcing a future result. No established-result trail or decorative movement. Text stays fixed after the short entrance.",
+      "holdPurpose": "Preserve the exact answer-free silence from 980 to 1340. All prompt conditions and both questions remain visible. Two result lines use unchanged measured cues. New full-scene pilot checks native wrapping, captions, controls and small-player fit; listening remains pending. Adjusted context width670 and working/prompt x774 retain the original fonts/cues. Recheck all context and answer wrapping, caption/control space and small-player fit in the current exact pilot."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "reuse",
+      "visualReference": "Existing SummarySlide, four compact relationships and separate next handoff",
+      "teachingReason": "Consolidate mechanism, sets, fusion location and contextual advantage",
+      "narrationCue": "{\"units\": \"scene-local frames except bullet.at in seconds\", \"revealDelays\": {\"finalPrompt\": 910, \"takeawayAts\": [101, 224, 377, 644]}, \"bulletSeconds\": [], \"diagramFrames\": null, \"stageLineFrames\": []}",
+      "motionPurpose": "Reveal compact relationships and settle next handoff",
+      "holdPurpose": "Readable final hold; no full-module coverage or survival guarantee"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Existing SummarySlide with quietReading true; no finalPrompt card, all four notes at frame zero",
+      "teachingReason": "Separate optional copying from following narrated reasoning; consolidate only useful essentials already explained",
+      "narrationCue": "None: deliberately unvoiced. Starts after measured summary audio and its protected transition tail.",
+      "motionPurpose": "Simultaneous entrance followed by a stable hold; quietReading suppresses ambient note distractions",
+      "holdPurpose": "450 frames at 30 fps. Twelve stable seconds after entrance is a planning hypothesis; pause to copy is optional. No responseHold or new explanation."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/module5_teaching_order, bounded exact fit-v2 source wording review",
+    "evidence": {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/fit-review-addendum.json",
+      "sha256": "0e398f5030afc4d1dbba894d32df304f2292fa2a851844ae7b7b54ed8b24a757"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Additive display-only second-lesson candidate. Existing voiced scenes, caption words/timing, measured cues and response holds are preserved. New quiet notes and any necessary final summary tail require independent exact-source and actual preview review. No whole-lesson listening, export or release approval inferred.",
+  "origin": {
+    "lessonPath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v5.lesson.json",
+    "lessonSha256": "1c4a82a37f09125b58d7bb2bb5255ab60b72711991eb056eb31d9cf325f2d6fc",
+    "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/b2/production-brief.json",
+    "briefSha256": "67c4a7ffb5facffe5e344a162c274c7617c9ab62c2d3ed4784e6753cfff26ac1",
+    "scope": "Existing measured v5 source and native-adjustment brief preserved. All recorded words and selected media are reused unchanged."
+  },
+  "originBrief": {
+    "path": "out/prototypes/module5-b2-voiced-2026-10-10/production-brief-v2.json",
+    "sha256": "93acb2e6ea45185ca90ea50508731d2905d19df1909a79c94a0242c1b271410b",
+    "scope": "Preserved author v2 brief before root independent-source binding."
+  },
+  "originV2": {
+    "lessonPath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v2.lesson.json",
+    "lessonSha256": "f4f0bf6ac5fd414d00e8e53aa19b0859b9d97d18752455a3ffaf03eb11917b49",
+    "briefPath": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/production-brief.json",
+    "briefSha256": "5cb744b79127e8a89f070e2571e85b0066b2ab2b5132f3767e03a757a34ee23b",
+    "scope": "Historical exact v2 source/timing evidence. V3 layout/source/preview review is separate."
+  },
+  "captionLayoutEvidence": {
+    "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/correction-record.json",
+    "sha256": "34c0051bcebe8440d1ae0cbd50e4248929dd909ed6439dfb113636afe7ac1f4c"
+  },
+  "originV3": {
+    "lessonPath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+    "lessonSha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496",
+    "briefPath": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/production-brief.json",
+    "briefSha256": "44ee703d6214c850803b03b629ac718397560566d311cd49aa71f563f44c5b3d",
+    "runtimeCheckpoint": "7106255",
+    "scope": "Preserved v3 source and prior evidence. New trail padding and pilot input paths require separate v4 review."
+  },
+  "originV4": {
+    "lessonPath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+    "lessonSha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496",
+    "briefPath": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/production-brief.json",
+    "briefSha256": "c10730878d5324cea44bc98dc5a49218c46bf3cf89d45ba1d710d2e1882e520d",
+    "runtimeBaseline": "1fd9fd2a3c421e796b7a7478c8271615f4e88815",
+    "scope": "Historical exact v4 package. New focused context/display copy and runtime require v5 review."
+  },
+  "simpleWorkingEvidence": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/correction-record.json",
+    "sha256": "4abd6ca41a81920b84f4f5f59bfe0a29335bd89b22c6c41bb92f4ab276235056"
+  },
+  "originInitialV5Brief": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/b2/production-brief.json",
+    "sha256": "483a7225014ffcb0f53fc80348cebd2bcab72fba398f00ce64f35409dd3585fc",
+    "scope": "Historical initial v5 width600/x704 source and estimates. Preserved unchanged."
+  },
+  "nativeAdjustmentEvidence": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/correction-record.json",
+    "sha256": "ee4240d78ecbb7781a67ca5bf24d8aa757f51bf8da9c0bf7d8d7cd7cccbac62d"
+  },
+  "originFit": {
+    "parentLessonPath": "docs/production/module5-seconds-notes-2026-10-10/biology/lesson.json",
+    "parentLessonSha256": "9fd14ebb657dab83bae45b68e0d90bc7eb57a071e3ec84bc131e79197d5b9c1b",
+    "parentBriefPath": "docs/production/module5-seconds-notes-2026-10-10/biology/production-brief.json",
+    "parentBriefSha256": "e7f3f7b7b5f2720f55bbcfdae6c683f1131a29524b8021756527aee600de806e",
+    "scope": "Root authored shorter C2 note4 only; B2 source unchanged. Prior candidate/page preserved."
+  }
+}

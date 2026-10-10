@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/fit-v3/lesson.json",
+    "lessonSha256": "476b55194af5457eb4b340a558128cf386e8d51a02685844b5e1114214e71365"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1: equal non-zero rates, concentration versus rate, closed versus insulated systems; particle motion. Activation energy receives a short bridge here. Entry check: equal amounts changing oppositely each second leave composition unchanged. C1 support is not a promised public link.",
+    "startsWith": "A-only start in a closed, constant-temperature, fixed-volume, well-mixed first-order A/B model with positive fixed conversion coefficients and no side reactions.",
+    "stopsAfter": "Explain changing opposing rates in this model and why a suitable catalyst changes approach time, not the fixed-condition final equilibrium composition. No K, ICE, Q, disturbance rules or industrial optimisation.",
+    "nextLesson": "Core chem-m5-c03: concentration and temperature disturbance from established equilibrium. Retain chem-m5-g01 non-equilibrium enthalpy/entropy companion and chem-m5-p01 supervised practical support. g01 is not a universal C3 prerequisite.",
+    "routePath": "docs/production/module5-video-route-2026-10-10.json",
+    "routeId": "chem-m5-c02",
+    "playlistPosition": 2
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/course-progression-ledger-2026-10-09.json"
+  ],
+  "teaching": {
+    "task": "How do opposing reaction rates become equal?",
+    "causalExplanation": "The declared first-order one-to-one model begins with A only: forward rate is positive and reverse rate zero. A falls and B rises, changing both rates concurrently. The equilibrium limit has equal non-zero rates despite unequal concentrations. The suitable catalyst comparison uses the same conditions and final composition with a faster approach.",
+    "conversationalApproach": "Preserve every reviewed spoken word from the corrected human-readable preparation. Connected explanations separate observations, kinetic causes and final composition, with no invented attainment claims. Existing accepted spoken explanation is retained. Optional copying occurs in a separate quiet final scene after the narrated summary.",
+    "openingDecision": "Rhetorical reverse-before-equilibrium question with immediate explanation. It is not a scored response opportunity.",
+    "understandingCheck": "Changed C/D start with supplied opposing rates on the same scale. Separate fresh prompt and feedback recordings, a verified ten-second assembled silence at frames 1172 to 1472, and phrase-aligned answer progression. Both captions and visible feedback remain absent through the response interval.",
+    "curriculumScope": "Chemistry Stage 6 (2017), Year 12 Module 5, chem-m5-c02. Candidate contributions only to C-collision-investigate, C-activation and C-reversibility. No complete outcome, mandatory practical conduct or named non-equilibrium coverage claim. Cached official paragraph scope retained in the preparation."
+  },
+  "scenes": [
+    {
+      "sceneId": "c2-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "reuse the existing title treatment from the C1 opening, with this title and current course placement. No generic atom artwork. Hold long enough for the title to be read; the original 120-frame duration remains.\n",
+      "narrationCue": "Silent identity hold, unchanged 120 frames.",
+      "motionPurpose": "Stable title reading hold.",
+      "holdPurpose": "Existing silent title duration retained."
+    },
+    {
+      "sceneId": "c2-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode hook in existing HookSlide",
+      "teachingReason": "adjust the existing HookSlide into a stable A ⇌ B stimulus, with “Start: A only” and opposing arrows. This is a rhetorical opening contrast with immediate explanation, not a scored attempt. Reveal the small reverse arrow on “It can turn back”. Keep the equation visible through the next scene. No product-before-start particle display and no decorative motion.\n",
+      "narrationCue": "As B forms, at local frame 380 (start). Imagine a reversible reaction at local frame 260 (start). It can turn back at local frame 615 (start).",
+      "motionPurpose": "Question text introduces the overlap challenge. A-only diagram enters with the stated starting system. Reverse arrow and overlap answer start with the feedback.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "c2-model",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode model in existing ConceptSlide diagramFocus",
+      "teachingReason": "adjust L3 `concept-approach`'s `chem12m5Exchange`, preserving C1's explicit “One mixture” interpretation and usable large-label presentation. Start with A only; use a model equilibrium ratio B:A of 1:2 so the later unequal-composition result is visible. This parameter is an authored schematic choice, not experimental data or a measured real K. Retain fixed-condition labels and use qualitative “A: more / B: less” labels rather than rounded integer counters as concentration evidence. Hops show conversion events, not collision trajectories. At the actual A-only start, the forward rate is positive and the reverse rate is zero. The reverse rate becomes positive as B appears. Positive conversion coefficients are distinct from those concentration-dependent rates. Do not add a decorative prestart. Hold the boundary/conditions board while it is explained.\n",
+      "narrationCue": "One A can become one B at local frame 113 (start). At the beginning at local frame 588 (start). we are following a simple model at local frame 376 (start). The container is closed at local frame 250 (start). there is no B to convert yet. at local frame 880 (end). It does not mean at local frame 971 (start).",
+      "motionPurpose": "One-to-one conversion statement. A-only declaration. First-order restriction is introduced with the declared model. Supporting fixed-system qualifiers. Model remains exactly A-only through the zero-reverse explanation. Closed versus insulated distinction. Display bullet rows follow their spoken order at frames 113, 376 and 588, retaining the paired seconds values.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "c2-collision",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode association in existing ConceptSlide diagramFocus",
+      "teachingReason": "reuse the definition layout from L3, with a deliberate stable coded two-state inset showing `2NO₂ ⇌ N₂O₄`, two correctly labelled NO₂ molecules and one N₂O₄ molecule. This is a specific missing explanatory visual, not the existing one-to-one Exchange diagram with chemical labels substituted. Preserve nitrogen/oxygen counts and bonds in any later illustrated transformation. “Illustrated association, not a complete mechanism” remains visible. Initially choose a stable before/after board with drawn linking arrows; an unreviewed collision animation adds no necessary evidence. The visual cue is “two nitrogen dioxide molecules”; do not infer the reverse rate law or a many-step mechanism from the balanced equation. Hold the board through the energy/orientation explanation; no energy histogram is needed.\n",
+      "narrationCue": "The particles also need enough energy at local frame 274 (start). With more nitrogen dioxide molecules at local frame 915 (start). For example, two nitrogen dioxide molecules at local frame 718 (start). Activation energy is at local frame 430 (start). Our A-to-B arrows only track conversion at local frame 1174 (start).",
+      "motionPurpose": "Effective collision conditions. More concentration gives more meeting opportunities. Distinct two-to-one association visual enters with its example. Barrier definition. Separate conversion model from collision mechanism.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "c2-rates",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode rates in existing ConceptSlide diagramFocus",
+      "teachingReason": "adjust L3 `chem12m5Exchange` rate graph for the declared one-to-one model. Keep axes “rate, arbitrary units” and “model time, arbitrary units”, both direction labels and fixed scale visible. Draw each curve only as its narrated change is explained, then keep both for comparison. The current native model flags “rates equal” when rates are within 4%, and mathematically approaches equality asymptotically. Do not present that tolerance marker as exact equality at a finite model frame. The bounded implementation must say “approaching equilibrium” through the finite simulated region and introduce a separately labelled equilibrium limiting state. If that change is not ready, use the existing concept/board layout with explicitly labelled schematic curves plus a separate exact equilibrium state. This is the defined teaching alternative, not a missing-asset placeholder. Keep arrows in both directions at the equilibrium state.\n",
+      "narrationCue": "As A decreases at local frame 192 (start). As B builds up at local frame 296 (start). At equilibrium, at local frame 852 (start). The rate graph shows at local frame 562 (start).",
+      "motionPurpose": "Forward curve and cause appear together. Reverse curve and cause appear together. Separate exact limiting-state card, after both finite traces. Scale and finite-versus-limit qualifier.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "c2-amounts",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode amounts in existing ConceptSlide diagramFocus",
+      "teachingReason": "adjust the same Exchange model's concentration view or use a stable matched-scale board derived from the same model. Keep the exact A/B identities, initial total, volume, temperature and B:A limiting ratio unchanged between scenes. Caption “schematic model concentrations”; do not call its expected counts measured mol L⁻¹. Preserve the rate comparison as a small labelled reference only if phone readability survives. The causal cue “Rate tells us” points to the rate axis; “Concentration tells us” points to the concentration axis. Hold both final levels. No numerical equilibrium-expression lesson is smuggled into the diagram.\n",
+      "narrationCue": "A decreases at local frame 77 (start). B increases at local frame 123 (start). Their two final levels at local frame 224 (start). Rate tells us at local frame 476 (start). Concentration tells us at local frame 562 (start). If a mixture began with excess B at local frame 836 (start).",
+      "motionPurpose": "A concentration curve. B concentration curve. Unequal limiting-concentration statement is separate from finite traces. Rate definition. Concentration definition. A different initial condition can reverse approach.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "c2-catalyst",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode catalyst in existing ConceptSlide diagramFocus",
+      "teachingReason": "preserve the useful same-endpoint energy profile and concentration-comparison idea from L3 `chem12m5CatalystBoth`, but do not select the current full component unchanged. It hard-codes “same drop both ways”, “both × the same factor”, unequal-rate ratio language and a 2.2 multiplier. These are idealised model features, not universal quantitative catalyst claims. The explicit initial choice is the existing concept board with a separately drawn schematic pathway and a large comparison graph: identical starts, identical temperature/volume/amounts, shared labelled limiting plateau, catalysed curve approaching sooner. Retain endpoint levels; label reaction coordinate as a model coordinate, not time. Do not introduce universal equal numerical barrier reductions. Any future reuse of the native component requires a bounded opt-in correction and independent inspection, including its accessible description. Reveal “same final composition” on its own spoken cue. Mark a shared early comparison time on “At an early comparison time”, then remove that emphasis before the equilibrium comparison. A graph approaching a plateau is not an exact finite-time equality claim.\n",
+      "narrationCue": "A catalyst provides at local frame 214 (start). It does not change the energies at local frame 521 (start). or favour a different final equilibrium composition. at local frame 639 (start). In our comparison, at local frame 749 (start). same final level sooner at local frame 824 (start). At an early comparison time, at local frame 886 (start). Once both mixtures reach equilibrium, at local frame 1085 (start). Suppose we repeat the same starting mixture at local frame 0 (start).",
+      "motionPurpose": "Lower effective activation barrier. Unchanged overall endpoint energies. Introduce the composition comparison after the unchanged-endpoint explanation, allowing both coded curve traces to reach the later comparison marker. Narration now refers to the established concentration comparison. Shared limiting level stated explicitly. Early-time marker appears only for the early comparison. Early marker removed when final equilibrium is compared. Conditions and schematic qualifier remain with comparison setup.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "c2-transfer",
+      "visualDecision": "adjust",
+      "visualReference": "Existing Module5EvidenceBoard through the opted-in focusedContext path, root-authored runtime; two-column context/current working, no established trail.",
+      "teachingReason": "Retain both questions and every stated model condition through the answer-free hold. Explain net as made minus used. Retain supplied rates for the rate explanation; replace them with identical-start/fixed-condition evidence for the catalyst comparison.",
+      "narrationCue": "{\n  \"units\": \"scene-local frames\",\n  \"focusedContext\": [\n    {\n      \"at\": 0,\n      \"title\": \"A different start\"\n    },\n    {\n      \"at\": 60,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 142,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 180,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 274,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 360,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 464,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 567,\n      \"title\": \"C ⇌ D: one-for-one\"\n    },\n    {\n      \"at\": 1472,\n      \"title\": \"Use both supplied rates\"\n    },\n    {\n      \"at\": 2185,\n      \"title\": \"With a suitable catalyst\"\n    }\n  ],\n  \"unchangedStageCues\": [\n    1472,\n    1600,\n    2185\n  ],\n  \"unchangedLineCues\": [\n    [\n      1472,\n      1544\n    ],\n    [\n      1600,\n      1909\n    ],\n    [\n      2339,\n      2413\n    ]\n  ],\n  \"responseHold\": {\n    \"startFrame\": 1172,\n    \"endFrame\": 1472\n  }\n}",
+      "motionPurpose": "Only context changes with the spoken case or relevant feedback. Current working reveals at the original stage and line cues. Neutral labels avoid announcing a future result. No established-result trail or decorative movement. Text stays fixed after the short entrance.",
+      "holdPurpose": "Preserve the exact answer-free silence from 1172 to 1472. All prompt conditions and both questions remain visible. Two result lines use unchanged measured cues. New full-scene pilot checks native wrapping, captions, controls and small-player fit; listening remains pending. Adjusted context width670 and working/prompt x774 retain the original fonts/cues. Recheck all context and answer wrapping, caption/control space and small-player fit in the current exact pilot."
+    },
+    {
+      "sceneId": "c2-summary",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "reuse the existing summary layout with three compact anchors: opposing processes overlap; rates balance while concentrations may differ; catalyst changes approach time. Closing handoff names C3 without implying it is already published. Hold stable labels clear of captions and chrome. No additional particle decoration.\n",
+      "narrationCue": "A reversible reaction can run in both directions at local frame 0 (start). Equilibrium is the balance at local frame 396 (start). A suitable catalyst at local frame 598 (start). Next, we will start at local frame 860 (start).",
+      "motionPurpose": "Opposing process recap. Rate versus concentration recap. Catalyst recap. C3 progression handoff.",
+      "holdPurpose": "Measured media duration plus 45 frames reading tail and 24 frames transition allowance. Intended-device reading and exact voiced timing still require playback."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Existing SummarySlide with quietReading true; no finalPrompt card, all four notes at frame zero",
+      "teachingReason": "Separate optional copying from following narrated reasoning; consolidate only useful essentials already explained",
+      "narrationCue": "None: deliberately unvoiced. Starts after measured summary audio and its protected transition tail.",
+      "motionPurpose": "Simultaneous entrance followed by a stable hold; quietReading suppresses ambient note distractions",
+      "holdPurpose": "450 frames at 30 fps. Twelve stable seconds after entrance is a planning hypothesis; pause to copy is optional. No responseHold or new explanation."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/module5_teaching_order, bounded exact fit-v3 note wording review",
+    "evidence": {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/fit-v3-review-addendum.json",
+      "sha256": "8a2482bafc17aeb646d4c599b412853aa1053c9b5324e2a69fd91e012b60d216"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationEvidence": {
+    "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c2.md",
+    "sha256": "699108d28dc0ee421351c70d3223f42a50b9e1eb188e2d4e67e7d0498719f3a5",
+    "independentReview": {
+      "path": "docs/production/chemistry-c2-preparation-review-2026-10-10.md",
+      "sha256": "d058a53d5ee42a6a9dcabd880637d08c540586347b38852c9bbbbec6bb8eae11"
+    },
+    "scope": "Human-readable corrected preparation only. Selected JSON and opt-in component need independent review."
+  },
+  "routeIdentity": "chem-m5-c02",
+  "limitation": "Additive display-only second-lesson candidate. Existing voiced scenes, caption words/timing, measured cues and response holds are preserved. New quiet notes and any necessary final summary tail require independent exact-source and actual preview review. No whole-lesson listening, export or release approval inferred.",
+  "measuredTimingEvidence": {
+    "path": "docs/production/module5-c2-voiced-preparation-2026-10-10/measured-cue-report.json",
+    "sha256": "d029e75ca9fcdd5099be5d9ef8c1ee674a952ee2fe39e0513fa3efa6adca4ec0"
+  },
+  "orderCorrectionEvidence": {
+    "path": "docs/production/module5-c2-voiced-preparation-2026-10-10/v2-order-correction.json",
+    "sha256": "e90a9c70dbde5715fe6716b26b9610ff5b6660b17e128666f55d69845b743f56"
+  },
+  "originBrief": {
+    "path": "docs/production/module5-c2-voiced-preparation-2026-10-10/production-brief-v2.json",
+    "sha256": "e2c1ab5afc4b2d95aacb2724f4231f6d8565093db0c9d2f7ab8afa4afedd3957",
+    "scope": "Preserved author v2 brief before root independent-source binding."
+  },
+  "originV2": {
+    "lessonPath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+    "lessonSha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa",
+    "briefPath": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/production-brief.json",
+    "briefSha256": "de03cc3606cef52ccfbcd0e9d4db96c2c7f39534aa51f9e1321d27507971f08d",
+    "scope": "Historical exact v2 source/timing evidence. V3 layout/source/preview review is separate."
+  },
+  "captionLayoutEvidence": {
+    "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/correction-record.json",
+    "sha256": "34c0051bcebe8440d1ae0cbd50e4248929dd909ed6439dfb113636afe7ac1f4c"
+  },
+  "originV3": {
+    "lessonPath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+    "lessonSha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba",
+    "briefPath": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/production-brief.json",
+    "briefSha256": "766d1fbf5776c5eeaa9830253848ac4852e6dad887ee2e9b7707d9425a7aec11",
+    "runtimeCheckpoint": "7106255",
+    "scope": "Preserved v3 source and prior evidence. New trail padding and pilot input paths require separate v4 review."
+  },
+  "originV4": {
+    "lessonPath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v4.lesson.json",
+    "lessonSha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba",
+    "briefPath": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/production-brief.json",
+    "briefSha256": "0b9e605d0718d3559c26edc563995d9b9fdf5653b0e52e112abba0746a328c94",
+    "runtimeBaseline": "1fd9fd2a3c421e796b7a7478c8271615f4e88815",
+    "scope": "Historical exact v4 package. New focused context/display copy and runtime require v5 review."
+  },
+  "simpleWorkingEvidence": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/correction-record.json",
+    "sha256": "4abd6ca41a81920b84f4f5f59bfe0a29335bd89b22c6c41bb92f4ab276235056"
+  },
+  "originInitialV5Brief": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/c2/production-brief.json",
+    "sha256": "49cf4cbb527449b122006abd85d38b9c4314371755fdfbe7bcc2ac542f6bb992",
+    "scope": "Historical initial v5 width600/x704 source and estimates. Preserved unchanged."
+  },
+  "nativeAdjustmentEvidence": {
+    "path": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/correction-record.json",
+    "sha256": "ee4240d78ecbb7781a67ca5bf24d8aa757f51bf8da9c0bf7d8d7cd7cccbac62d"
+  },
+  "origin": {
+    "lessonPath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v5.lesson.json",
+    "lessonSha256": "7929dcea33f44bbe04e6f9ceaf056a07976d26febb5d40a050f1ba1cddc231fa",
+    "briefPath": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/c2/production-brief.json",
+    "briefSha256": "a863fcc3dfd25baa96ff8a6b8ba6952dfa6d0c6dbaccd5fffd49bf8c1ca47a55",
+    "scope": "Existing measured v5 source and native-adjustment brief preserved. All recorded words and selected media are reused unchanged."
+  },
+  "originFit": {
+    "parentLessonPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/fit-v2/lesson.json",
+    "parentLessonSha256": "476b55194af5457eb4b340a558128cf386e8d51a02685844b5e1114214e71365",
+    "parentBriefPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/fit-v2/production-brief.json",
+    "parentBriefSha256": "11330d642b113f347b877c7d89c78edef8e828fb24e9cad04006f026b22a8b1a",
+    "scope": "B2unvoicednote4 root-authored shorter copy only; C2correctedv2 unchanged. Older candidates and pages preserved."
+  }
+}

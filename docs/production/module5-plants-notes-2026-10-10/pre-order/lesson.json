@@ -1,0 +1,589 @@
+{
+  "title": "Reproduction in Plants: Pollen, Seeds and Runners",
+  "subtitle": "Plant-only contribution: transfer, fusion and vegetative growth",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Plants contribution",
+  "syllabusNeutral": true,
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "lessonIntent": "Explain the supplied flowering-plant and strawberry runner mechanisms; classify by fusion and predict a stopped delivery pathway.",
+  "examSkill": "Use supplied reproductive-event evidence and distinguish transfer, delivery, fusion, embryo formation and later establishment.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "scenes": [
+    {
+      "id": "b3-title",
+      "type": "title",
+      "durationInFrames": 90,
+      "caption": "Reproduction in Plants: Pollen, Seeds and Runners"
+    },
+    {
+      "id": "b3-hook",
+      "type": "hook",
+      "durationInFrames": 1113,
+      "caption": "Classify the reproductive event by fusion, not visible parent count.",
+      "voiceover": {
+        "text": "A strawberry plant can send out a runner that becomes another plant. A flowering plant can also provide both reproductive cells that join in self-fertilisation. Those cells are gametes: a sperm cell and an egg cell. Joining them is fusion. One plant can be involved in either case, but the mechanisms differ. The runner makes a new plant without fusion, so that event is asexual. Self-fertilisation includes fusion, so it is sexual. Ask what happened, rather than counting the plants we can see."
+      },
+      "heading": "One plant, two mechanisms",
+      "body": "Classify the event by gamete fusion.",
+      "comparison": [
+        {
+          "label": "Runner",
+          "amount": "New plant",
+          "mass": "Without fusion"
+        },
+        {
+          "label": "Self-fertilisation",
+          "amount": "Both gametes",
+          "mass": "With fusion"
+        }
+      ],
+      "comparisonIsPrompt": false,
+      "revealDelays": {
+        "heading": 12,
+        "body": 18
+      }
+    },
+    {
+      "id": "b3-flower",
+      "type": "concept",
+      "durationInFrames": 1524,
+      "caption": "Flower locations are nested structures, not a transformation sequence.",
+      "voiceover": {
+        "text": "First locate the parts needed for that sexual pathway. The anther makes pollen. The stigma is the surface that receives pollen. A pollen grain is not just a sperm cell. It is a small structure that produces or carries sperm cells. They have different jobs.\n\nNow follow the route towards the egg. The style lies between the stigma and the ovary. The ovary contains ovules. Inside an ovule is an embryo sac, containing the egg cell. Think of those as nested locations: ovary, ovule, then the egg's location inside. Pollen at the stigma is still some distance from the egg. Arriving there is not the same as a sperm cell reaching and joining the egg."
+      },
+      "heading": "Where are pollen and egg?",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Anther makes pollen; stigma receives it.",
+          "at": 3.8666666666666667
+        },
+        {
+          "text": "Pollen grain and sperm cell differ.",
+          "at": 9
+        },
+        {
+          "text": "Style lies between stigma and ovary.",
+          "at": 22.3
+        },
+        {
+          "text": "Egg inside embryo sac, inside ovule, inside ovary.",
+          "at": 27.866666666666667
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5PlantReproduction",
+        "delay": 0,
+        "props": {
+          "mode": "locations",
+          "at": {
+            "anther": 116,
+            "stigma": 167,
+            "pollenDetail": 270,
+            "style": 669,
+            "ovary": 785,
+            "ovule": 836,
+            "embryoSac": 887,
+            "egg": 926
+          }
+        }
+      }
+    },
+    {
+      "id": "b3-delivery",
+      "type": "concept",
+      "durationInFrames": 1665,
+      "caption": "Pollen transfer, sperm delivery and sperm-egg fusion are different steps.",
+      "voiceover": {
+        "text": "Pollination means transferring pollen from an anther to a stigma. In our example the pollen is compatible, meaning it can take part in fertilisation with this receiving plant. The pollen grain begins growing a pollen tube. That is pollen germination; it is not a new plant sprouting from a seed. The tube grows through the style towards an ovule and provides a route for sperm cells to reach the embryo sac.\n\nA sperm cell then joins the egg cell. Their fusion forms a zygote, the new cell from which the embryo develops. This is fertilisation. So there are three different steps: pollen arrives, a tube delivers sperm, and sperm joins the egg. Reaching the stigma proves pollination, but it does not prove the later steps succeeded."
+      },
+      "heading": "Transfer, delivery, fusion",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Pollination: pollen reaches stigma.",
+          "at": 0
+        },
+        {
+          "text": "Pollen tube provides a route for sperm.",
+          "at": 21.433333333333334
+        },
+        {
+          "text": "Sperm joins egg: fertilisation forms a zygote.",
+          "at": 30.433333333333334
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5PlantReproduction",
+        "delay": 0,
+        "props": {
+          "mode": "delivery",
+          "at": {
+            "pollination": 0,
+            "pollenTube": 360,
+            "spermDelivery": 771,
+            "fusion": 913,
+            "zygote": 1016
+          }
+        }
+      }
+    },
+    {
+      "id": "b3-seed",
+      "type": "concept",
+      "durationInFrames": 1280,
+      "caption": "Zygote-to-embryo and ovule-to-seed development are distinct.",
+      "voiceover": {
+        "text": "After that fusion, the zygote divides and develops into an embryo, a young developing plant. The surrounding ovule develops into a seed. The seed contains the embryo, a protective coat and stored resources for early growth. The embryo is inside the seed; it is not the whole seed. The ovary usually develops into the fruit around the seeds.\n\nWe are following the embryo-forming part of this sexual pathway, not every event in the flowering-plant life cycle. And a seed forming does not guarantee that a new plant will become established. Its later growing conditions still matter."
+      },
+      "heading": "Embryo inside the seed",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Zygote develops into an embryo.",
+          "at": 0
+        },
+        {
+          "text": "Ovule develops into a seed containing the embryo.",
+          "at": 6.433333333333334
+        },
+        {
+          "text": "Ovary usually develops into fruit.",
+          "at": 20.6
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5PlantReproduction",
+        "delay": 0,
+        "props": {
+          "mode": "seed",
+          "at": {
+            "zygote": 0,
+            "embryo": 90,
+            "seed": 193,
+            "fruit": 618
+          }
+        }
+      }
+    },
+    {
+      "id": "b3-runner",
+      "type": "concept",
+      "durationInFrames": 1781,
+      "caption": "A new rooted plant can develop from a runner without gamete fusion.",
+      "voiceover": {
+        "text": "A strawberry runner is a stem extending from the parent plant. A node is a point on the stem where a leaf or bud arises. At a suitable node, roots and a shoot can develop into a new plant. Cells divide to build that plant. Mitosis is the division of the nucleus, the part of the cell containing most of its DNA. That builds the new plant without sperm and egg joining.\n\nThis is vegetative propagation: making a new plant from a part such as a stem, rather than from gamete fusion. It is a form of asexual reproduction. The new plant usually retains the parent's inherited combination, although mutations can introduce differences. The runner is not just lengthening the old plant. A new rooted plant can become independent, when resources and conditions support it."
+      },
+      "heading": "A runner makes a new plant",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Runner: a stem from the parent plant.",
+          "at": 0
+        },
+        {
+          "text": "Node: where a leaf or bud arises.",
+          "at": 4.733333333333333
+        },
+        {
+          "text": "Roots and shoot grow at a suitable node.",
+          "at": 10.733333333333333
+        },
+        {
+          "text": "New plant without gamete fusion.",
+          "at": 26.6
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5PlantReproduction",
+        "delay": 0,
+        "props": {
+          "mode": "runner",
+          "at": {
+            "runner": 0,
+            "node": 141,
+            "rootsShoot": 373,
+            "noFusion": 797,
+            "independent": 1569
+          }
+        }
+      }
+    },
+    {
+      "id": "b3-self-cross",
+      "type": "concept",
+      "durationInFrames": 1537,
+      "caption": "Self and cross describe pollen transfer; fusion determines the event classification.",
+      "voiceover": {
+        "text": "Self-pollination means pollen reaches the same flower, or another flower on the same plant. Cross-pollination means pollen travels between different plants. These names tell us where the pollen came from and where it went. They do not by themselves tell us that fertilisation happened.\n\nWhen compatible pollen leads to sperm joining an egg, either route can lead to sexual reproduction. Our self-compatible plant can use its own pollen in that pathway. One plant supplying both gametes does not make fusion asexual, and it does not guarantee a genetic copy of that plant. Cross-fertilisation can combine inherited information from different plants, but pollen arriving from another plant still does not guarantee a seed or a surviving offspring."
+      },
+      "heading": "Pollen source does not prove fusion",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Self-pollination: same plant.",
+          "at": 0
+        },
+        {
+          "text": "Cross-pollination: different plants.",
+          "at": 6
+        },
+        {
+          "text": "Compatible pollen plus sperm-egg fusion: sexual.",
+          "at": 18.866666666666667
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5PlantReproduction",
+        "delay": 0,
+        "props": {
+          "mode": "selfCross",
+          "at": {
+            "self": 0,
+            "cross": 180,
+            "conditionalFusion": 566
+          }
+        }
+      }
+    },
+    {
+      "id": "b3-worked",
+      "type": "workedExample",
+      "durationInFrames": 1498,
+      "caption": "Use the supplied mechanism, one case at a time.",
+      "voiceover": {
+        "text": "Apply the fusion question to one supplied case at a time. First, a strawberry runner develops roots and a shoot. The prompt confirms there is no gamete fusion. A new plant develops from the stem, so that event is asexual vegetative propagation.\n\nSecond, a self-compatible flowering plant supplies both gametes, and the prompt confirms that sperm joins egg. Fusion occurs, so that event is sexual even though both gametes came from one plant.\n\nThird, pollen comes from a different plant, and sperm-egg fusion is again confirmed. Fusion makes this event sexual too. The decisive evidence is the reproductive mechanism. A count of visible plants, or a pollen-transfer arrow alone, cannot replace that evidence."
+      },
+      "heading": "Classify the supplied event",
+      "question": "Does the supplied event include gamete fusion?",
+      "steps": [
+        "Runner without fusion: asexual.",
+        "Same plant with fusion: sexual.",
+        "Different plants with fusion: sexual."
+      ],
+      "revealDelays": {
+        "heading": 12,
+        "stepAts": [
+          258,
+          746,
+          1106
+        ]
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "captionSafeWorking": true,
+        "task": "Does this event include fusion?",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Strawberry runner",
+            "lines": [
+              "Roots and shoot develop",
+              "No gamete fusion"
+            ],
+            "task": "Does this event include fusion?"
+          },
+          {
+            "at": 540,
+            "title": "Same flowering plant",
+            "lines": [
+              "Self-compatible",
+              "Sperm joins egg"
+            ],
+            "task": "Does this event include fusion?"
+          },
+          {
+            "at": 939,
+            "title": "Different plants",
+            "lines": [
+              "Pollen from another plant",
+              "Sperm-egg fusion confirmed"
+            ],
+            "task": "Does this event include fusion?"
+          }
+        ],
+        "stages": [
+          {
+            "label": "No fusion",
+            "lines": [
+              "New plant from a stem.",
+              "Asexual vegetative propagation."
+            ],
+            "lineAts": [
+              360,
+              450
+            ],
+            "summary": "Runner: no fusion, asexual."
+          },
+          {
+            "label": "Fusion occurs",
+            "lines": [
+              "Sexual reproduction."
+            ],
+            "lineAts": [
+              746
+            ],
+            "summary": "Same plant: fusion, sexual."
+          },
+          {
+            "label": "Fusion occurs",
+            "lines": [
+              "Sexual reproduction."
+            ],
+            "lineAts": [
+              1106
+            ],
+            "summary": "Different plants: fusion, sexual."
+          }
+        ]
+      }
+    },
+    {
+      "id": "b3-conditions",
+      "type": "concept",
+      "durationInFrames": 1010,
+      "caption": "Each route depends on suitable conditions; reproduction and later survival differ.",
+      "voiceover": {
+        "text": "Suppose pollen transfer becomes limited, but the conditions around a strawberry runner still allow new roots and shoots to grow. The runner can make a new plant without pollen transfer. It still needs suitable resources and growing conditions.\n\nThe sexual pathway can combine inherited information through gametes, but pollen transfer, sperm delivery and fusion all need to succeed. These routes have different opportunities and constraints. Neither promises that the resulting plant will survive and reproduce."
+      },
+      "heading": "Conditions affect each route",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Runner: conditions allow roots and shoots.",
+          "at": 0
+        },
+        {
+          "text": "Sexual route: transfer, delivery and fusion.",
+          "at": 16.3
+        },
+        {
+          "text": "New plant does not guarantee later survival.",
+          "at": 27.866666666666667
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      }
+    },
+    {
+      "id": "b3-check-prompt",
+      "type": "concept",
+      "durationInFrames": 1503,
+      "caption": "Use the supplied pollen, tube and fusion conditions.",
+      "voiceover": {
+        "text": "Try a supplied model. Two groups receive compatible pollen on their stigmas. The pollen is viable, meaning it can germinate under suitable conditions. In the second group, all pollen tubes stop before reaching the ovules. The eggs have not been fertilised, and there is no other pollen route. In this model, making a new embryo requires sperm-egg fusion.\n\nHas pollination occurred in the second group? Will fertilisation and a new embryo follow through this pathway? Explain using the interrupted delivery step. Pause here to work it through."
+      },
+      "heading": "Pollination? Fusion and embryo?",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Both groups: viable, compatible pollen on stigmas",
+          "at": 0
+        },
+        {
+          "text": "Group 2: all tubes stop before the ovules",
+          "at": 0
+        },
+        {
+          "text": "Eggs have not been fertilised",
+          "at": 0
+        },
+        {
+          "text": "No other pollen route",
+          "at": 0
+        },
+        {
+          "text": "Model: new embryo requires sperm-egg fusion",
+          "at": 0
+        }
+      ],
+      "callout": "Pause to explain the interrupted delivery step.",
+      "revealDelays": {
+        "heading": 12,
+        "callout": 1042
+      }
+    },
+    {
+      "id": "b3-check-feedback",
+      "type": "workedExample",
+      "durationInFrames": 855,
+      "caption": "Explain transfer, interrupted delivery and the resulting fusion limit.",
+      "voiceover": {
+        "text": "Pollination has happened: pollen reached the stigma. But the tubes stop before delivering sperm to the eggs in this model. Without that delivery, sperm and egg do not fuse through this route. No zygote forms, so no new embryo develops through it. Pollen arriving completes the transfer step, not the later fusion step. The model also gives no basis for counting surviving plants."
+      },
+      "heading": "Check the delivery reason",
+      "question": "Pollination? Will fusion and a new embryo follow through this pathway?",
+      "steps": [
+        "Pollen arrived: pollination.",
+        "Stopped tube prevents delivery.",
+        "No fusion or embryo through this route.",
+        "No surviving-plant count follows."
+      ],
+      "revealDelays": {
+        "heading": 12,
+        "stepAts": [
+          0,
+          90,
+          258,
+          682
+        ]
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "captionSafeWorking": true,
+        "task": "Pollination? Fusion and embryo?",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Group 2 model",
+            "lines": [
+              "Pollen on stigma",
+              "Tubes stop before ovules",
+              "No other pollen route",
+              "Embryo needs fusion"
+            ],
+            "task": "Pollination? Fusion and embryo?"
+          }
+        ],
+        "stages": [
+          {
+            "label": "Pollen transfer",
+            "lines": [
+              "Pollination has occurred.",
+              "Pollen reached the stigma."
+            ],
+            "lineAts": [
+              0,
+              39
+            ],
+            "summary": "Transfer occurred."
+          },
+          {
+            "label": "Sperm delivery",
+            "lines": [
+              "Tube stops before the ovule.",
+              "Sperm is not delivered."
+            ],
+            "lineAts": [
+              90,
+              90
+            ],
+            "summary": "Delivery is interrupted."
+          },
+          {
+            "label": "Fusion and embryo",
+            "lines": [
+              "No fusion through this route.",
+              "No zygote or new embryo."
+            ],
+            "lineAts": [
+              258,
+              412
+            ],
+            "summary": "No embryo through this stipulated route."
+          },
+          {
+            "label": "Limit of the model",
+            "lines": [
+              "No surviving-plant count follows."
+            ],
+            "lineAts": [
+              682
+            ],
+            "summary": "Survival count not supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "b3-summary",
+      "type": "summary",
+      "durationInFrames": 971,
+      "caption": "Mechanism and later establishment are different questions.",
+      "voiceover": {
+        "text": "Classify reproduction by what happens. In our sexual flowering-plant example, pollen transfer is followed by sperm delivery, fusion and embryo development. The ovule develops into a seed containing that embryo. A strawberry runner makes a new plant without gamete fusion. Self-pollination and cross-pollination describe pollen transfer; neither is fusion itself. Producing a new plant also differs from that plant surviving and reproducing. The next contributions compare reproduction in fungi, bacteria and protists."
+      },
+      "heading": "Classify the event by fusion",
+      "points": [
+        "Transfer, delivery, fusion, then embryo.",
+        "Ovule becomes seed containing embryo.",
+        "Runner: new plant without gamete fusion.",
+        "Pollen transfer is not fusion."
+      ],
+      "finalPrompt": "Next: fungi, bacteria and protists",
+      "revealDelays": {
+        "heading": 12,
+        "takeawayAts": [
+          65,
+          270,
+          386,
+          515
+        ],
+        "finalPrompt": 798
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes",
+      "points": [
+        "In flowering plants, a pollen tube delivers sperm to an ovule.",
+        "A fertilised egg becomes an embryo; the ovule becomes a seed.",
+        "Pollination transfers pollen; fertilisation is gamete fusion.",
+        "Runners make new plants without gamete fusion."
+      ],
+      "durationInFrames": 450,
+      "caption": "Optional book notes. Pause to copy.",
+      "revealDelays": {
+        "heading": 0,
+        "takeawayAts": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "quietReading": true
+    }
+  ]
+}

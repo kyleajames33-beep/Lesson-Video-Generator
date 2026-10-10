@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/c4_independent_scope_review",
+  "date": "2026-10-10",
+  "status": "pass-bounded-science-source-and-draft-structure-with-notes-order-recommendation",
+  "scope": "Independent exact source, inherited science/model scope, added quiet notes, progression, library source continuity and unmeasured timeline checks. No actual new UI, audio, listening, export or public approval.",
+  "inputs": [
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/lesson.json",
+      "sha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/production-brief.json",
+      "sha256": "bff213f5654668a4179f24beceda7fb2bd894c3db62b2276aecc36f829eea208"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/parent.lesson.json",
+      "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/parent.production-brief.json",
+      "sha256": "62d281694c9ec4a8b9e513331abe91d9175b42739f3863b1d4ee7108c3972e78"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/source-trace.json",
+      "sha256": "643f77f30ce1bfeafc99d7e59cf3386d1d22fb2219fdf43ad0cb0630d1c1cf2a"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/validation.json",
+      "sha256": "f9a313408b2296c5453ac8d13fe80ef415acd0d604cfa6a14ca852165e1de279"
+    },
+    {
+      "path": "src/slides/SummarySlide.tsx",
+      "sha256": "6aed4e82a19f808a237b9526f9490d699ab18405a10eca77501979342c922c06"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "sha256": "fe7ed222fc46c23944f0dd5a9ee8ded6b74c7f5385aca02b2406a0e7a27d8418"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    },
+    {
+      "path": "src/lesson/timing-constants.json",
+      "sha256": "c34b61a31cadec788dfee08495e51e16a40cedc2a276c9580b48f2c989285b57"
+    },
+    {
+      "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.json",
+      "sha256": "515874f0d4c8058cfa89965c3ca9316c1e79b4915feadb2fcd2675c5c3344c6f"
+    },
+    {
+      "path": "docs/production/module5-video-route-2026-10-10.json",
+      "sha256": "b03b3310d9f792d0776306f155ceb45f2e74a73ec81aa252ae00d32f001a1742"
+    },
+    {
+      "path": "out/research/continuity-2026-10-08/biology-2017.docx",
+      "sha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+    },
+    {
+      "path": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+      "sha256": "1d3a94b77ef662892ef058032f1ef51980c85779efe6043011cc7f5af652c8a8"
+    }
+  ],
+  "invariants": {
+    "parentScenesExact": true,
+    "topLevelExceptScenesExact": true,
+    "parentSceneCount": 12,
+    "parentSpokenBlockCount": 11,
+    "onlyAddedScene": "450-frame key-notes summary",
+    "selectedAudioFiles": 0,
+    "parentCopyEqualsLiveParent": true,
+    "sourceTraceCandidateHashMatches": true,
+    "priorParentVisualEvidenceHashMatches": true
+  },
+  "science": {
+    "outcome": "pass-scoped",
+    "notesWordCount": 36,
+    "notes": [
+      "Pollen tube delivering sperm to an ovule is a valid concise reminder of the taught embryo-sac delivery route.",
+      "Fertilised egg becoming embryo and ovule becoming seed preserve the distinction; parent first explains zygote development, and notes do not equate embryo with whole seed.",
+      "Pollination transfer versus gamete fusion is the central taught distinction, stated accurately.",
+      "Runner without gamete fusion is the named asexual mechanism, without making survival or perfect-copy guarantees."
+    ],
+    "scope": "Flowering-plant embryo-forming sexual pathway and named strawberry runner; double fertilisation and a full life cycle are not claimed."
+  },
+  "progression": {
+    "outcome": "accurate-scoped",
+    "entry": "B1 gametes/fusion, DNA continuity and plant-part vocabulary are stated; animal B02a material is preceding context rather than a scientific prerequisite for this model.",
+    "startStop": "One visible parent contrasted by mechanism, followed by transfer/delivery/fusion, embryo/seed and runner, supplied cases and interrupted-delivery prediction.",
+    "next": "Missing fungi, bacteria and protists contributions remain explicit before mammalian mechanisms and agricultural manipulation.",
+    "syllabus": "Cached official2017 Biology p1025 requires mechanisms across organisms; p1027 names sexual/asexual plant reproduction. Only B-plants contribution to canonical B02b is addressed; p1028 fungi and p1029 bacteria remain outside this lesson. Local paragraph IDs are extraction references; no fresh live-syllabus or completed-action claim."
+  },
+  "libraryReuse": {
+    "outcome": "source-continuity-pass",
+    "parent": "All inherited diagram props, model data, cues and parent scenes unchanged. Existing independent parent source/model/sampled-native evidence is retained only for exact parent scope.",
+    "notes": "SummarySlide.toTakeaway sees no early colon and full stop before80 in all four points, selecting large titles with empty detail. All row cues zero means simultaneous existing16-frame row entrance, not no animation. Heading StampInTitle has its own delay; no finalPrompt/image/ambient rule card in notes. Actual settling and480/960 fit remain pending.",
+    "quietReading": "Declares intentional unvoiced notes for type/validator support. Current SummarySlide does not read this property to suppress entrance motion."
+  },
+  "timing": {
+    "classification": "planning-estimates-not-measured",
+    "fps": 30,
+    "promptGlobalStart": 11282,
+    "feedbackGlobalStart": 12761,
+    "feedbackPromptLocalStart": 1479,
+    "plannedAttempt": [
+      1119,
+      1479
+    ],
+    "promptDuration": 1503,
+    "separateTransitionTail": 24,
+    "attemptConclusion": "Feedback mounts at estimated attempt end. No actual responseHold or selected audio exists; fresh assembly must derive real speech end and protect the complete answer-free360-frame gap and every supplied condition.",
+    "recapDuration": 971,
+    "notesGlobalStart": 14539,
+    "recapGlobalStart": 13592,
+    "notesRecapLocalStart": 947,
+    "estimatedRecapSpeechEnd": 926,
+    "estimatedClearanceFrames": 21,
+    "assemblyRequirement": "After fresh alignment require recap audio end at or before947; if later, extend recap duration to at least actual audio end plus24 frames (and chosen extra safety tail). Recompute shared timeline and relevant captions/cues. Current21-frame estimate is not a voiced-preview or measured silence pass.",
+    "notesDuration": 450
+  },
+  "recommendation": {
+    "id": "notes-causal-order",
+    "severity": "minor-author-fix-recommended-before-recording",
+    "currentOrder": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "recommendedOrder": [
+      3,
+      1,
+      2,
+      4
+    ],
+    "rationale": "Start with the transfer-versus-fusion distinction, then follow delivery and development, before contrasting runner reproduction without fusion. This avoids asking the learner to connect an outcome before restating the mechanism and follows the explanatory sequence.",
+    "authorAction": "Reorder the exact existing four note strings to3,1,2,4 and update their order in source-trace/brief descriptions as needed; retain all parent scenes and spoken text. No scientific wording rewrite is required.",
+    "separation": "Scientific accuracy/source invariants pass for the reviewed current bytes; this recommendation is editorial, and changed candidate bytes require a new exact hash binding before selecting them for recording."
+  },
+  "validation": {
+    "independentLessonCommand": "node scripts/validate-lesson.mjs docs/production/module5-plants-notes-2026-10-10/lesson.json",
+    "lessonExitCode": 0,
+    "draftBriefCommand": "node scripts/check-production-brief.mjs docs/production/module5-plants-notes-2026-10-10/production-brief.json --stage=draft",
+    "draftExitCode": 0,
+    "draftReady": true,
+    "pending": [
+      "Script/source review workflow integration",
+      "Exact voiced preview",
+      "Human listening"
+    ],
+    "warnings": "Optional generic callout/coachNote/finalPrompt and scene-type suggestions do not require competing copy or a final card in quiet notes."
+  },
+  "limitations": [
+    "Parent science/model review is reused only for unchanged accepted parent data; this reviewer does not claim a new parent native playback test.",
+    "No audio generated or selected, so all speech cue and response boundaries remain estimates.",
+    "No new actual notes fit, voiced motion, native/device/caption presentation, human listening, full export or public gate pass.",
+    "No writer files, source components or audio were edited. Public starter priority and prior prerequisite availability remain unchanged."
+  ]
+}

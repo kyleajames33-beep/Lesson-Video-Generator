@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "scope": "Actual native Chrome MP4 playback and sampled intended960/480 landscape rendering; not physical-device testing, human ears or full continuous watch.",
+  "video": {
+    "path": "out/prototypes/module5-c3-axis-fix-2026-10-10/full-render-01/video.mp4",
+    "sha256": "1b75e1e2ead9f2290beba9e9419cc594aca7e277d636a193952c7eba111cefd3"
+  },
+  "packageSha256": "56a7ee7e02bbe7e48b474601ab94115b6e7ffee3273482642a41d451cc4dddf1",
+  "pageInputs": {
+    "path": "out/prototypes/module5-c3-axis-export-review-2026-10-10/page-inputs.json",
+    "sha256": "b38f0b60b3c7fd3aec8aa62a590406cff9892db42f6c43e6ca82ec25552c9094"
+  },
+  "url": "http://127.0.0.1:8778/module5-c3-axis-export-review-2026-10-10/",
+  "observations": [
+    "Played actual Add A export from90.00 to125.68 seconds. Initial emitted screenshot showed complete Before/Add A/Model time axis labels at960px. The first saved screenshot reached Remove B at125.68 seconds and is named accordingly.",
+    "Inspected exact paused Add A result at90.00 seconds/960px; all axis glyphs complete.",
+    "Played actual Remove B region from133.33 seconds, then returned to exact133.33 at480px; all axis glyphs and5/3,5/6 reference available.",
+    "Inspected temperature result320.00 at480px with complete Before/T step/Later labels, then executed playback to374.26 seconds. Those elapsed intervals represent playback execution plus sampled observation, not a continuously watched interval."
+  ],
+  "screenshots": [
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/root-export-add-960.png",
+      "sha256": "20be6356044cf19e73f394d4e4c3e52540a6a67ea93292cbde3f536b5dd13624"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/root-export-remove-480.png",
+      "sha256": "9eca694849d388a1bf22587b87c81902e963c1be2127f0cd34d3fd7e4d3b298a"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/root-export-remove-progress-960.png",
+      "sha256": "fa82246d91160ffc472c35ac7517c6e4a0dbf565da01383b3be34c598f8acf28"
+    },
+    {
+      "path": "docs/production/module5-c3-axis-fix-2026-10-10/screenshots/root-export-temperature-480.png",
+      "sha256": "19ebec6c75d109069dae3911fa180f121ef23ea27021f49adc68478d9a2464ee"
+    }
+  ],
+  "limits": [
+    "Native paused controls put a gradient over the footer/lowest authored line. This platform overlay is separate from the resolved axis clipping. No new authored glyph cropping observed.",
+    "No new human listening or full MP4 watch claimed.",
+    "Independent actual decoded frames and digital-media checks are separate evidence."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/c4_independent_scope_review",
+  "date": "2026-10-10",
+  "status": "pass-bounded-current-source-order-confirmation",
+  "currentLessonSha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd",
+  "briefSha256AtReview": "bff213f5654668a4179f24beceda7fb2bd894c3db62b2276aecc36f829eea208",
+  "inputs": [
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/lesson.json",
+      "sha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/production-brief.json",
+      "sha256": "bff213f5654668a4179f24beceda7fb2bd894c3db62b2276aecc36f829eea208"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/source-trace.json",
+      "sha256": "643f77f30ce1bfeafc99d7e59cf3386d1d22fb2219fdf43ad0cb0630d1c1cf2a"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/validation.json",
+      "sha256": "f9a313408b2296c5453ac8d13fe80ef415acd0d604cfa6a14ca852165e1de279"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/pre-order/lesson.json",
+      "sha256": "c5914616dbb22822b2af12747f5bea05aa121fdb512c8f3faf52fc9598771edf"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/pre-order/production-brief.json",
+      "sha256": "7beb7eba89b1701faee04e209292f6c53e00c2b9fb18b1faafe763c7ad6a5461"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/pre-order/source-trace.json",
+      "sha256": "66beeeb020e80be17862875da53c85e30f3d249a88d9a150c62e8df717c208a6"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-2026-10-10/parent.lesson.json",
+      "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+    },
+    {
+      "path": "docs/production/module5-plants-notes-review-2026-10-10.json",
+      "sha256": "44081ba9cf9940e0efb7ef74be6f613f12f26526a6154642184d23a838e0d02d"
+    },
+    {
+      "path": "src/slides/SummarySlide.tsx",
+      "sha256": "6aed4e82a19f808a237b9526f9490d699ab18405a10eca77501979342c922c06"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "sha256": "fe7ed222fc46c23944f0dd5a9ee8ded6b74c7f5385aca02b2406a0e7a27d8418"
+    }
+  ],
+  "delta": {
+    "onlyNotesOrderChanged": true,
+    "fromPreOrderLessonSha256": "c5914616dbb22822b2af12747f5bea05aa121fdb512c8f3faf52fc9598771edf",
+    "newOrderByOldPosition": [
+      3,
+      1,
+      2,
+      4
+    ],
+    "allNoteWordsUnchanged": true,
+    "all12ParentScenesExact": true,
+    "all11ParentSpokenBlocksExact": true,
+    "topLevelAndNotesOtherFieldsUnchanged": true,
+    "selectedAudioFiles": 0
+  },
+  "scienceAndTeaching": {
+    "outcome": "pass-within-prior-bounded-source-scope",
+    "priorRecommendation": "resolved",
+    "order": "Pollination versus fertilisation, pollen-tube delivery, embryo/seed development, runner without fusion.",
+    "reason": "Central distinction precedes causal delivery/development sequence and contrasting asexual route. No new science or narration introduced.",
+    "notes": "Same36 already-taught words; no universal survival or complete life-cycle coverage claim."
+  },
+  "continuity": {
+    "parentVisualAndSourceScope": "Exact unchanged parent scenes retain previously reviewed scientific/model data and library prop choices. New notes fit is not inferred from parent native evidence.",
+    "progression": "Existing B1 entry, limited plant B02b contribution and missing fungi/bacteria/protists handoff unchanged.",
+    "library": "Same SummarySlide large-title/empty-detail notes path with simultaneous ordinary row entrances and no final rule card. Intentional silence metadata does not eliminate entrance animation."
+  },
+  "estimatedTiming": {
+    "classification": "estimated-not-measured",
+    "recapDuration": 971,
+    "transitionOverlap": 24,
+    "notesRecapLocalStart": 947,
+    "hypotheticalRecapSpeechEnd": 926,
+    "estimatedClearanceFrames": 21,
+    "assemblyRequirement": "Measure actual recap audio end; if after947 extend recap duration to at least actual end plus24 frames and recompute timeline/captions/cues.",
+    "plannedResponseInterval": [
+      1119,
+      1479
+    ],
+    "promptDuration": 1503,
+    "feedbackMountPromptLocalFrame": 1479,
+    "responseRequirement": "Fresh assembly must derive real speech end and protect answer-free360-frame response opportunity and full supplied conditions; current source does not establish actual silence."
+  },
+  "independentChecks": {
+    "lessonValidationExitCode": 0,
+    "draftBriefExitCode": 0,
+    "draftReady": true,
+    "draftBlockers": [],
+    "pendingAtReview": [
+      "Script/source review workflow integration",
+      "Exact voiced preview",
+      "Human listening"
+    ],
+    "traceAndBriefCurrentLessonHashMatch": true
+  },
+  "limits": [
+    "Source and scientific confirmation only. No actual new notes fit, nativeUI, physical-device, audio generation, measured alignment, voiced playback, listening, export or public-release pass.",
+    "Brief hash records bytes at review time; later workflow/source-review binding updates are separate metadata revisions and must not be described as the same brief bytes.",
+    "No writer files, code or media were edited. Earlier public-starter priority and prerequisite availability are unchanged."
+  ]
+}
