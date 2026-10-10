@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C2-selected-2026-10-10-take01",
+  "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+  "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90",
+  "fps": 30,
+  "status": "recording-ready-source/dry-run-preparation; generation waits for root visual review",
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established selected narrator and conversational v4 settings. Fresh takes require actual listening; voice selection is not take approval."
+  },
+  "sourceSegmentPlan": {
+    "path": "docs/production/drafts/module5-c2-selected-2026-10-10/narration-plan.json",
+    "sha256": "d22b8ce89ea5ecc3764aff818f62c6908f1d003c80392001e3b2a65bb8910ba7"
+  },
+  "recordingBrief": {
+    "path": "docs/production/drafts/module5-c2-selected-2026-10-10/production-brief.json",
+    "sha256": "cb69550b4d8edca78cb00f6ef6b6bfb27dd2be5c421f638517dd970a1801f006",
+    "gateReadyAtPreparation": true
+  },
+  "requestOptions": {
+    "path": "docs/production/module5-c2-b2-recording-preparation-2026-10-10/request-options.json",
+    "sha256": "9d85917a4da6b7380ac2f63b613cb5c0565d4be440fff92964958c8b35dfd811"
+  },
+  "scenes": [
+    {
+      "id": "c2-hook",
+      "parentSceneId": "c2-hook",
+      "role": "narration",
+      "text": "Last time, equal reaction rates explained why an equilibrium mixture stays steady. But how do those rates become equal? Imagine a reversible reaction that starts with only A. As B forms, can it start turning back into A straight away, or does it have to wait for the forward reaction to finish? It can turn back while the forward reaction is still happening. That overlap is what we will follow.",
+      "textSha256": "f8a45693856d2d808c942bd32398452d0035259616a9d1f7dc4f8601cc2502ad",
+      "hash": "f8a45693856d",
+      "characterCount": 395,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-hook.f8a45693856d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-hook.f8a45693856d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-hook.f8a45693856d.generation.json",
+      "plannedRequestSha256": "38667750f89d8ca67094607e164c010c61a9427cd25983d8770ed7d3069d501c",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-model",
+      "parentSceneId": "c2-model",
+      "role": "narration",
+      "text": "A and B are two forms of our model substance. One A can become one B, and one B can become one A. The container is closed, its volume and temperature stay fixed, and we are following a simple model in which the rate in each direction depends on how much of its starting form is present. At the beginning there is plenty of A and no B. So the forward process can run, but the reverse rate is zero because there is no B to convert yet. Closed means matter stays inside. It does not mean the container is insulated.",
+      "textSha256": "97b6bd7079201abb76d516e3da19c7bbc9b6954c00c2a2c1853857f8906573cc",
+      "hash": "97b6bd707920",
+      "characterCount": 512,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-model.97b6bd707920.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-model.97b6bd707920.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-model.97b6bd707920.generation.json",
+      "plannedRequestSha256": "c7a55e47a550b3d1d1bf0ccb3ac1cca77654b5ebae1d158869972ab0b4a18f9c",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-collision",
+      "parentSceneId": "c2-collision",
+      "role": "narration",
+      "text": "Collision theory helps explain why the amount present can matter. In a reaction between particles, meeting is only part of the story. The particles also need enough energy and a suitable arrangement for reaction. Activation energy is the energy barrier that reacting particles must overcome. A collision that leads to reaction is called an effective collision. For example, two nitrogen dioxide molecules can combine to make dinitrogen tetroxide. With more nitrogen dioxide molecules in the same volume, there are more opportunities for them to meet. That is a rate explanation. Our A-to-B arrows only track conversion; they do not show molecules colliding. Some reactions involve a molecule breaking apart or changing form after energy transfer, so this simple picture is not a full mechanism for every reaction.",
+      "textSha256": "42f4a4038e02a3a4dbdb86d68d7523e7f781f312693c25c08f09a964bc5b46b4",
+      "hash": "42f4a4038e02",
+      "characterCount": 813,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-collision.42f4a4038e02.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-collision.42f4a4038e02.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-collision.42f4a4038e02.generation.json",
+      "plannedRequestSha256": "8b911db680c68ae284f56fc593f515ff77e0f84c80c4f84117199e866448b54a",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-rates",
+      "parentSceneId": "c2-rates",
+      "role": "narration",
+      "text": "Back in our A and B model, each net forward conversion leaves less A and more B. As A decreases, the forward rate falls. As B builds up, the reverse rate rises. These changes happen together, rather than one reaction ending before the other begins. The rate graph shows the forward curve coming down and the reverse curve coming up. As they approach the same non-zero rate, their effects balance. At equilibrium, each direction replaces what the other removes, so the composition stays steady even though both conversions continue.",
+      "textSha256": "9f4a4d6befbd398cf6177e47ee15383bdd2089c17a2cb6844a15b3b0697ad982",
+      "hash": "9f4a4d6befbd",
+      "characterCount": 531,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-rates.9f4a4d6befbd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-rates.9f4a4d6befbd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-rates.9f4a4d6befbd.generation.json",
+      "plannedRequestSha256": "a3a0b83930f6fcc737a89f7d3434140a8e4a43eb01e916efcc87bcf75127dc4a",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-amounts",
+      "parentSceneId": "c2-amounts",
+      "role": "narration",
+      "text": "Now compare the concentration graph. A decreases and B increases, then each levels off. Their two final levels are different in this example. The rate curves approach the same level, but the concentration curves do not have to. Rate tells us how quickly conversion happens. Concentration tells us how much is present per volume. Also, forward down and reverse up describe our chosen starting mixture. If a mixture began with excess B and the reverse rate were larger, the approach could go the other way.",
+      "textSha256": "a2c50d9b733b2ae0ff74cd50133f2e7a2e91cad7d6e70363886b95b4c89da863",
+      "hash": "a2c50d9b733b",
+      "characterCount": 504,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-amounts.a2c50d9b733b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-amounts.a2c50d9b733b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-amounts.a2c50d9b733b.generation.json",
+      "plannedRequestSha256": "e7c168d279d79878a67767a93d5199e03d3b74d1a5baf619d9f1b1a922b2fc0a",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-catalyst",
+      "parentSceneId": "c2-catalyst",
+      "role": "narration",
+      "text": "Suppose we repeat the same starting mixture with a suitable catalyst, keeping the temperature and volume unchanged. A catalyst provides an alternative reaction pathway with a lower effective activation barrier. It enables the opposing reaction processes to happen more readily. It does not change the energies of the overall reactants and products or favour a different final equilibrium composition. In our comparison, B approaches the same final level sooner. At an early comparison time, the catalysed mixture can contain more B because it has progressed further. Once both mixtures reach equilibrium, that difference is gone. The catalyst changes how soon the balance is reached, not the balance we reach.",
+      "textSha256": "6e6e070d27a1d6919fbe652ed3e796b6dd5a898d962687a2d46dbfe28f09f337",
+      "hash": "6e6e070d27a1",
+      "characterCount": 709,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-catalyst.6e6e070d27a1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-catalyst.6e6e070d27a1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-catalyst.6e6e070d27a1.generation.json",
+      "plannedRequestSha256": "585949cedba8be56f7b78c3699047e4f0ffdcb193005990d462052c808a38009",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-transfer-prompt",
+      "parentSceneId": "c2-transfer",
+      "role": "prompt",
+      "text": "Try a different start. C and D interconvert one for one in a closed container at constant temperature and volume. The mixture begins mostly as D. Early measurements give a forward rate, C to D, of two units, and a reverse rate, D to C, of six units on the same scale. Which substance will initially increase overall? Explain using both rates. Then compare this mixture with an identical starting mixture containing a suitable catalyst. Will the catalyst change the final equilibrium concentration of D? Take a moment, or pause if you would like longer.",
+      "textSha256": "86f904d0c6559cdca2a93c15d3af7297f0f105a1bbc24dbb93fbd26adb734cea",
+      "hash": "86f904d0c655",
+      "characterCount": 552,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-prompt.86f904d0c655.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-prompt.86f904d0c655.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-prompt.86f904d0c655.generation.json",
+      "plannedRequestSha256": "8f69e49801e0590863f33b246a16e4c76fc4fabbb0024c032a7d29843210e5cb",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-transfer-feedback",
+      "parentSceneId": "c2-transfer",
+      "role": "feedback",
+      "text": "C initially increases. The reverse process makes C at six units while the forward process removes C at two, so more C is being made than used. In this one-for-one model, the difference is a net four units towards C. Starting mostly with D did not by itself prove that direction; the supplied rates did. With the suitable catalyst, the mixture approaches the same final equilibrium composition sooner under the same conditions. It does not finish with a different equilibrium concentration of D. If you predicted more D simply because a catalyst speeds reactions, separate the amount present at an earlier time from the final equilibrium amount.",
+      "textSha256": "d337ac2e28faeca3596e2c0f94d22d755fa3f55e9af4d42c947d1aa07c0a9687",
+      "hash": "d337ac2e28fa",
+      "characterCount": 644,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-feedback.d337ac2e28fa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-feedback.d337ac2e28fa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-feedback.d337ac2e28fa.generation.json",
+      "plannedRequestSha256": "b6629d2a3b8cf5aa9a0bdd9b1f500a77e8e89218671faf68541d520a07fa60da",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    },
+    {
+      "id": "c2-summary",
+      "parentSceneId": "c2-summary",
+      "role": "narration",
+      "text": "A reversible reaction can run in both directions before equilibrium is reached. In our A-only start, the forward rate falls as A is used, while the reverse rate rises as B forms. Equilibrium is the balance of equal non-zero rates, not a requirement for equal concentrations. A suitable catalyst can bring that balance about sooner without changing the final composition at the same temperature and other stated conditions. Next, we will start with a mixture already at equilibrium and ask what happens when its concentration or temperature changes.",
+      "textSha256": "bedcd99b4392fd3629d45d8e6632cfc3a21aa09655367097a14c080e3703a90a",
+      "hash": "bedcd99b4392",
+      "characterCount": 548,
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-summary.bedcd99b4392.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-summary.bedcd99b4392.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-summary.bedcd99b4392.generation.json",
+      "plannedRequestSha256": "84f077be044ec55f0000e25826e7a225550197c4a97525bf338d39fcbe03fd7a",
+      "audioSha256": null,
+      "status": "planned-new-take-not-generated"
+    }
+  ],
+  "silentScenes": [
+    {
+      "sceneId": "c2-title",
+      "durationInFrames": 120,
+      "reason": "Existing silent title; retain unchanged without inventing speech."
+    }
+  ],
+  "limitations": [
+    "No media hashes exist before new takes are generated.",
+    "Do not attach historical recordings to these words.",
+    "All scene/reveal estimates require measured cue reconciliation."
+  ]
+}

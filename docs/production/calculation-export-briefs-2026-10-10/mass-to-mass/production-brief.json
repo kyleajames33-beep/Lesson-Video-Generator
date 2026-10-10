@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+    "lessonSha256": "b90681774be533bdedca5bebca550f18530e1110ad85b28bc2a1d02b282da33e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Read formulas and an already-balanced equation; calculate formula molar mass; use n=m/M and m=nM; choose a wanted/known coefficient ratio. Empirical formulas is not a compulsory prerequisite.",
+    "startsWith": "Carbon dioxide can outweigh its starting carbon because oxygen also contributes mass.",
+    "stopsAfter": "Predict and interpret a theoretical mass in either direction using species molar masses, balanced coefficients and stated assumptions.",
+    "nextLesson": "Limiting reactants: compare two finite reactant supplies before predicting product and excess."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/next-chemistry-batch-review-2026-10-09.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Predict a theoretical reacting or product mass from a balanced equation, using each species molar mass and stated conditions.",
+    "causalExplanation": "Balanced coefficients compare amounts, not grams. Each species molar mass links mass and amount; different compositions explain why equal mole amounts need not have equal mass. Added oxygen and oxygen transferred to CO₂ preserve mass accounting.",
+    "conversationalApproach": "Open with a concrete mass surprise, explain why the relationships work, then compare a unit-ratio carbon case with a non-unit oxide case. Working carries repeated arithmetic; narration connects the stages and interprets the result. Numerical guard digits and exact supplied constants stay on stable boards; speech explains approximate amounts and the chemical relationship, then reports the final precision.",
+    "openingDecision": "About 44 g CO₂ from 12 g carbon: where did the extra mass come from? Include oxygen in the initial system rather than implying a conservation exception.",
+    "understandingCheck": "Use the existing unseen practice task and explain the chosen relationship. The separately recorded prompt and answer have sixty silent frames from 737 to 797 in the selected revision. Answer visuals and captions wait until the gap ends. The invitation to pause longer is retained. Exact playback and listening remain pending.",
+    "curriculumScope": "Reusable reacting-mass explanation. Cached course-content checklist provisionally associates 2025 ci47b34fec with problems combining stoichiometry and reacting masses, and legacy quantitative work. Complete action/scene equivalence is pending. This draft does not complete limiting supplies, yield/purity, concentration/gas integration or practical conduct."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Existing HookSlide",
+      "teachingReason": "Make added oxygen mass a useful topic-specific surprise, without suggesting carbon creates matter.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"callout\":315}; preserved normal-pace take.",
+      "motionPurpose": "A stable equation anchors the mass contrast; no unrelated artwork.",
+      "holdPurpose": "Keep carbon plus oxygen visible while explaining the system boundary."
+    },
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing TitleSlide",
+      "teachingReason": "Name the task briefly after the concrete question.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30}; preserved normal-pace take.",
+      "motionPurpose": "Short orientation; no long opening stinger.",
+      "holdPurpose": "Hold the title through its spoken phrase."
+    },
+    {
+      "sceneId": "concept",
+      "visualDecision": "adjust",
+      "visualReference": "chem11m2Pathway, MolePathwayDiagram.tsx",
+      "teachingReason": "Connect two mass conversions through an explicitly 1:1 amount relationship. Replace misleading default 3:6 piles with 3:3.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"secondary\":984,\"callout\":864}; preserved normal-pace take.",
+      "motionPurpose": "Three packet movements cue the three relationships. This is a calculation schematic, not physical particles or a ban on combined expressions.",
+      "holdPurpose": "Labels and completed bridges remain visible for comparison."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "adjust",
+      "visualReference": "Existing DefinitionSlide",
+      "teachingReason": "State reaction/purity assumptions and distinguish prediction from recovery before numerical examples.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"callout\":802}; preserved normal-pace take.",
+      "motionPurpose": "Three phrase-cued conditions, rather than decorative motion.",
+      "holdPurpose": "Leave conditions available while the narration qualifies the prediction."
+    },
+    {
+      "sceneId": "formula",
+      "visualDecision": "adjust",
+      "visualReference": "Existing ConceptSlide and phrase-cued bullets",
+      "teachingReason": "Show units and mathematical roles without reciting an unexplained checklist.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"secondary\":1006,\"callout\":864}; preserved normal-pace take.",
+      "motionPurpose": "Reveal each relationship when named. Combined expression is explicitly valid.",
+      "holdPurpose": "Keep prior relationships visible while the later one is introduced."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Separate short task, equation, supplied mass/constants and three stages. Show oxygen contribution after obtaining the mass.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"stepAts\":[371,731,943]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Estimated stepAts and per-line lineAts separate setup from results. Established trail retains useful amount relationships.",
+      "holdPurpose": "Stable result and equation support the added oxygen-mass interpretation."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Contrast non-unit mole scaling with a smaller product mass. Specify pure Fe₂O₃, not ore.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"stepAts\":[455,858,1221]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Three stages with result-line estimates and retained trail. All arithmetic uses the unrounded expressions displayed.",
+      "holdPurpose": "Hold iron result while tracing oxygen into CO₂."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "Existing MisconceptionSlide",
+      "teachingReason": "Use the two actual examples to disprove direct coefficient scaling of grams. Avoid unsupported marks claims.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":135,\"secondary\":296,\"callout\":928}; preserved normal-pace take.",
+      "motionPurpose": "Stable paired numerical contrasts carry the argument.",
+      "holdPurpose": "Read both comparisons and distinguish combined conversion from multiplying grams by coefficients alone."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx and QuickCheckSlide",
+      "teachingReason": "Reverse known/wanted roles with a product mass, giving a genuine transfer task.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"pausePrompt\":30,\"answerVisibleStart\":797,\"stepAts\":[797,1331,1551],\"responseHoldStart\":737}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Prompt and feedback are separate manifest segments. Estimated answerVisibleStart clamps all working, with later result line cues. No measured responseHold is claimed.",
+      "holdPurpose": "Measured answer-free interval: scene-local frames 737 to 797, exactly sixty frames at 30 fps. Invitation to pause longer remains spoken."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "adjust",
+      "visualReference": "Existing SummarySlide",
+      "teachingReason": "State exactly what was completed and hand off to the limiting-supplies question.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"takeawayAts\":[118,242,692],\"finalPrompt\":790}; preserved normal-pace take.",
+      "motionPurpose": "Three concise takeaway points, no generic five-item recap or artwork quota.",
+      "holdPurpose": "Hold the explicit next boundary without claiming the next upload is already public."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Coordinating agent (unchanged transcript and scoped display/source checks)",
+    "evidence": {
+      "path": "out/prototypes/mass-to-mass-paced-2026-10-10/source-review.md",
+      "sha256": "7d2587a188162706f6f8fafef208111af2d747f71598974ba539e130d45389c0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pass",
+    "reviewer": "Project owner, user in this conversation",
+    "mode": "rendered-pilot",
+    "inputSnapshotPath": "out/prototypes/mass-to-mass-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+    "evidence": {
+      "path": "docs/production/user-calculation-review-2026-10-10.json",
+      "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationEvidence": {
+    "path": "docs/production/mass-to-mass-conversational-v1-source-review-2026-10-09.md",
+    "kind": "author source check, independent review pending"
+  },
+  "limitation": "Project owner accepts the exact presented rendered pilot in the current review batch. Full export has not yet been reviewed. Complete-track listening and final full-package scopes remain separately pending. Preserve prior sources, briefs and evidence."
+}

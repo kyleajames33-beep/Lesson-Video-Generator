@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+    "lessonSha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Chemical formula reading, molar mass and grams-to-moles conversion",
+    "startsWith": "Mass composition as a clue to an atom ratio, not a unique identity",
+    "stopsAfter": "Infer simplest whole-number atom ratios from composition; molecular inference stays a labelled extension",
+    "nextLesson": "Mole ratios between substances from a balanced equation"
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Convert composition masses to a simplest atom ratio and explain why mass ratios must become mole ratios.",
+    "causalExplanation": "Atomic masses differ. Dividing each element mass by its own molar mass puts the amounts on a shared entity-count scale; normalising all mole values preserves the ratio.",
+    "conversationalApproach": "Connect the known glucose/formaldehyde contrast to one worked example; explain the reason for each operation, reduce repeated instructions and let stable boards carry intermediate numbers.",
+    "openingDecision": "Useful contrast: known substances can share the same simplest ratio. This earns the composition-versus-identity distinction without inventing a mystery-powder identification.",
+    "understandingCheck": "Use the existing unseen practice task and explain the chosen relationship. The separately recorded prompt and answer have sixty silent frames from 524 to 584 in the selected revision. Answer visuals and captions wait until the gap ends. The invitation to pause longer is retained. Exact playback and listening remain pending.",
+    "curriculumScope": "Shared percentage-composition/empirical-formula core (2025 cibccbf29b and 2017 p786). Molecular inference is a separate labelled extension. Viewing does not fulfil practical work. Course boundary: enter with formula reading and grams/moles; stop core at within-substance ratios. Next video covers between-substance ratios from balanced equations."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Existing hook slide comparison cards",
+      "teachingReason": "Different substances can share an empirical formula.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"glyph\":30,\"callout\":778}; preserved normal-pace take.",
+      "motionPurpose": "Reveal the relevant block, then hold readable text",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing title slide",
+      "teachingReason": "Empirical formulas",
+      "narrationCue": "Current recorded cues: undefined; preserved normal-pace take.",
+      "motionPurpose": "Reveal the relevant block, then hold readable text",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "concept",
+      "visualDecision": "reuse",
+      "visualReference": "Existing chem11m2Empirical diagram in concept slide",
+      "teachingReason": "Empirical formulas preserve proportions; molecular formulas preserve actual counts.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"diagram\":15,\"bulletsStart\":60,\"secondary\":881,\"callout\":660}; preserved normal-pace take.",
+      "motionPurpose": "Show the counting relationship or mass-accounting transformation with stable labels",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "reuse",
+      "visualReference": "Existing definition slide",
+      "teachingReason": "Mass percentage compares an element’s mass contribution with the total.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"bulletsStart\":30,\"callout\":927}; preserved normal-pace take.",
+      "motionPurpose": "Reveal the relevant block, then hold readable text",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "formula",
+      "visualDecision": "adjust",
+      "visualReference": "Existing massBreakdown diagram in concept slide",
+      "teachingReason": "A convenient basis changes sample size, not percentage composition.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"diagram\":30,\"bulletsStart\":60,\"secondary\":90,\"callout\":1020}; preserved normal-pace take.",
+      "motionPurpose": "Show the counting relationship or mass-accounting transformation with stable labels",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Masses must become mole amounts before comparing atom ratios. Keep supplied quantities together and show one operation at a time.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"coachNote\":32,\"stepsStart\":49,\"stepAts\":[32,489,680,852]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal the current stage; retain completed results as a compact trail.",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "molecular-extension",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Molecular-formula inference is a related extension to the empirical-formula core. Keep supplied quantities together and show one operation at a time.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"coachNote\":32,\"stepsStart\":48,\"stepAts\":[32,309,480,692,890]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal the current stage; retain completed results as a compact trail.",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "reuse",
+      "visualReference": "Existing misconception slide",
+      "teachingReason": "Multiplying all ratio terms preserves their proportions.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"wrongCard\":45,\"rightCard\":221,\"callout\":461}; preserved normal-pace take.",
+      "motionPurpose": "Reveal the relevant block, then hold readable text",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Find the simplest whole-number ratio from these mass percentages. Keep supplied quantities together and show one operation at a time.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"pauseBadge\":15,\"pausePrompt\":30,\"responseHoldStart\":524,\"answerVisibleStart\":584,\"stepAts\":[584,837,967]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal the current stage; retain completed results as a compact trail.",
+      "holdPurpose": "Allow an answer-free attempt, with an invitation to pause longer. Estimated until recordings are assembled."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "reuse",
+      "visualReference": "Existing summary slide",
+      "teachingReason": "An empirical formula describes a ratio, not a complete substance identification.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"takeawaysStart\":30,\"takeawayAts\":[116,233,389],\"finalPrompt\":761}; preserved normal-pace take.",
+      "motionPurpose": "Reveal the relevant block, then hold readable text",
+      "holdPurpose": "Read the stable labels, relationship or completed result before the next beat."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Coordinating agent (unchanged transcript and scoped display/source checks)",
+    "evidence": {
+      "path": "out/prototypes/empirical-formulas-paced-2026-10-10/source-review.md",
+      "sha256": "782dc93052af911a34d3bc9b41d7f1c13ef0d2bd36becf6ee24e485810fedc08"
+    }
+  },
+  "voicedPreview": {
+    "status": "pass",
+    "reviewer": "Project owner, user in this conversation",
+    "mode": "rendered-pilot",
+    "inputSnapshotPath": "out/prototypes/empirical-formulas-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+    "evidence": {
+      "path": "docs/production/user-calculation-review-2026-10-10.json",
+      "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Project owner accepts the exact presented rendered pilot in the current review batch. Full export has not yet been reviewed. Complete-track listening and final full-package scopes remain separately pending. Preserve prior sources, briefs and evidence."
+}

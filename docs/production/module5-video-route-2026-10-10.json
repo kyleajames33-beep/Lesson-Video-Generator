@@ -49,14 +49,15 @@
     },
     "Biology": {
       "sourceCandidates": 19,
-      "plannedUploads": 24,
-      "core": 18,
+      "plannedUploads": 27,
+      "core": 21,
       "companions": 3,
       "practicalSupport": 3,
       "mappedActionGroups": 32,
       "approvedActionGroups": 0,
       "publicUploadsClaimedByThisPlan": 0,
-      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload."
+      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload. The four organism-group delivery parts replace one combined upload, adding three focused planned core videos. Canonical route IDs and action coverage remain unchanged.",
+      "canonicalRouteEntries": 24
     }
   },
   "subjects": {
@@ -1087,7 +1088,7 @@
         {
           "id": "bio-m5-b02b",
           "playlistOrder": 3,
-          "planAnchor": "B2 distinct plants/fungi/bacteria/protists video",
+          "planAnchor": "B2 organism-group route, delivered as four focused videos",
           "title": "Reproduction in plants, fungi, bacteria and protists",
           "type": "core",
           "sourceCandidates": [
@@ -1115,7 +1116,55 @@
           ],
           "status": "source-present-unreviewed",
           "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
-          "placement": "Core learner route"
+          "placement": "Core learner route",
+          "deliveryParts": [
+            {
+              "order": 1,
+              "title": "Plant reproduction: pollination, fertilisation and vegetative growth",
+              "syllabusActions": [
+                "B-plants"
+              ],
+              "status": "candidate-preparation-independent-review-pending",
+              "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/biology-b3-plants.md",
+              "start": "Flowering-plant pollen/ovule stimulus and runner comparison.",
+              "stop": "Explain pollen transport, gamete fusion and embryo/seed distinctions; compare a named vegetative mechanism. No detailed plant life cycle.",
+              "next": "Fungal reproduction, then bacterial and protist mechanisms."
+            },
+            {
+              "order": 2,
+              "title": "Fungal reproduction: budding and spores",
+              "syllabusActions": [
+                "B-fungi"
+              ],
+              "status": "planned-unprepared",
+              "start": "A named yeast budding example and a named spore-forming fungal example.",
+              "stop": "Explain budding and spore production with sexual/asexual limits tied to the example.",
+              "next": "Bacterial binary fission."
+            },
+            {
+              "order": 3,
+              "title": "Bacterial reproduction: binary fission",
+              "syllabusActions": [
+                "B-bacteria"
+              ],
+              "status": "planned-unprepared",
+              "start": "One bacterial cell and copying of its DNA.",
+              "stop": "Explain binary fission without claiming all genetic exchange is reproduction or importing mitotic nuclei.",
+              "next": "Named protist reproductive mechanisms."
+            },
+            {
+              "order": 4,
+              "title": "Protist reproduction: named binary fission and budding examples",
+              "syllabusActions": [
+                "B-protists"
+              ],
+              "status": "planned-unprepared",
+              "start": "Named protist examples and a distinction from bacteria.",
+              "stop": "Explain the selected mechanisms with organism limits; avoid claiming one mode applies to every protist.",
+              "next": "The mammalian fertilisation/development route."
+            }
+          ],
+          "deliveryNote": "The canonical route/action association remains bio-m5-b02b. These are four upload parts inside that route, not new canonical action IDs or completed coverage. Their order precedes the existing next links."
         },
         {
           "id": "bio-m5-b03a",

@@ -1,5 +1,13 @@
 # Production Memory
 
+## 10 October: selected-source integration and accepted calculation review
+
+- The user accepted the material presented on the current calculation review page. Preserve the page/media hashes and the exact quote. The export briefs bind this scoped preview acceptance; completed files still need their own package checks.
+- Scene schemas use different cue units. In the selected Chemistry concept bullets, `at` is seconds rather than frames. Check the consumer before transferring estimates, and replace provisional timings with measured narration cues after recording.
+- A spoken two-part task needs both parts on the response board. The Biology animal example now asks about encounters and later offspring survival; it must not silently reduce the response to the first part.
+- Before recording, inspect native teaching diagrams and narrow samples. Source-only passes do not establish readable device playback, motion continuity or listening. Fix misleading endpoint labels and chromosome-set overlaps while the source is still silent.
+- Full exports use their reviewed runtime pin. New registry/component work belongs in the main checkout and must not change historical pilot dependencies. Preserve failed output attempts and use a new output directory for retries.
+
 ## 10 October: ratio notation, difficult explanations and Year 12 priority
 
 - The teacher accepts the general direction of the calculation review clips but notes that the acid example says two over one and one over two while the substitution simplifies to multiplication by two. Keep the wanted/known coefficient fraction visible through substitution. Show a spoken reverse comparison when it is explained, after the forward result. Equivalent arithmetic can still be a poor explanatory match.

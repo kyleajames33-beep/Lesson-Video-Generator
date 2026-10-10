@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "lessonPath": "docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+  "lessonSha256": "a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af",
+  "playback": [
+    {
+      "sceneId": "hook",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-hook",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-hook.fbdfc5c6faf9.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "concept-fertilisation",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-fertilisation",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-fertilisation.63a2477eee29.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "concept-asexual-animal",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-hydra",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-hydra.b10e0923c9d7.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "concept-external",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-external",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-external.d5357096684a.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "concept-internal",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-internal",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-internal.c1021a96de71.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "definition-comparison",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-comparison",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-comparison.27ef2671c9cc.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "worked-example",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-worked",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-worked.53e28e4e1b7f.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "misconception",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-misconception",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-misconception.df09400ae702.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "quick-check",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-check-prompt",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-check-prompt.46f7bf28f159.mp3"
+        },
+        {
+          "kind": "silence",
+          "seconds": 12,
+          "frames": 360
+        },
+        {
+          "kind": "audio",
+          "segmentId": "b2-check-feedback",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-check-feedback.338f01c203f2.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "summary",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b2-summary",
+          "audioFile": "public/audio/Biology-Y12-M5-B2-selected-2026-10-10-take01/b2-summary.0e1ac2352edd.mp3"
+        }
+      ]
+    }
+  ],
+  "silentScenes": [
+    {
+      "sceneId": "title",
+      "durationInFrames": 90,
+      "reason": "Existing silent title; retain unchanged without inventing speech."
+    }
+  ],
+  "contract": "Use assemble-selected.mjs. Direct generic assembly expects every scene narrated and cannot accept the retained silent title.",
+  "responseSilenceStatus": "Exact frame/sample insertion planned; final prompt speech, first feedback sound and first answer exposure must be measured after recording."
+}

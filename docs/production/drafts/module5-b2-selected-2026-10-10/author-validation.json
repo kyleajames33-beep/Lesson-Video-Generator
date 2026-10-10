@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/bio_b2_selected_implementation",
+  "scope": "Author source/mechanical validation. Not independent selected-source review, visual approval or listening.",
+  "source": {
+    "path": "docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+    "sha256": "a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af"
+  },
+  "preparation": {
+    "path": "docs/production/drafts/module5-next-preparation-2026-10-10/biology-b2-animals.md",
+    "sha256": "8525e4ab2d89a68b0b3124ffe04a4bd648ec762de3d19b5cee413609afe96956"
+  },
+  "results": {
+    "exactAcceptedSpeechPreserved": true,
+    "promptFeedbackSeparatedInTextManifest": true,
+    "noSelectedMediaOrArtwork": true,
+    "noAtomFallbackInHook": true,
+    "safeOptInVisualBindingsOnly": true,
+    "initial12SecondIntervalPlannedNotMeasured": true,
+    "firstAnswerGateUsesBoundaryNotMidpoint": true,
+    "exactPropsAndBriefBinding": true,
+    "prohibitedPunctuationAbsent": true
+  },
+  "commands": [
+    {
+      "command": "node scripts/validate-lesson.mjs docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+      "exitCode": 0,
+      "stdout": "C:\\lesson-video-generator\\docs\\production\\drafts\\module5-b2-selected-2026-10-10\\lesson.json\n  warning: root: consider adding \"syllabusDotPoints\" (syllabus coverage tracking)\n  warning: scene[1] (hook): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[2] (concept-fertilisation): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[3] (concept-asexual-animal): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[4] (concept-external): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[5] (concept-internal): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[6] (definition-comparison): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[7] (worked-example): consider adding \"coachNote\" (target/method decision)\n  warning: scene[9] (quick-check): consider adding \"pausePrompt\" (active recall before reveal)",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-production-brief.mjs docs/production/drafts/module5-b2-selected-2026-10-10/production-brief.json --stage=draft",
+      "exitCode": 0,
+      "stdout": "{\n  \"ready\": true,\n  \"stage\": \"draft\",\n  \"blockers\": [],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json\",\n    \"lessonSha256\": \"a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}",
+      "stderr": "(node:15260) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)"
+    },
+    {
+      "command": "node scripts/check-production-brief.mjs docs/production/drafts/module5-b2-selected-2026-10-10/production-brief.json --stage=recording",
+      "exitCode": 1,
+      "stdout": "{\n  \"ready\": false,\n  \"stage\": \"recording\",\n  \"blockers\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    }\n  ],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json\",\n    \"lessonSha256\": \"a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}",
+      "stderr": "(node:20440) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)"
+    }
+  ],
+  "warningDisposition": "Syllabus actions are scoped in the brief instead of claiming root dotpoint coverage. Compact scene copy is deliberate. Built-in pause instruction remains; no duplicate pausePrompt/callout/coach note is needed.",
+  "selectedRuntime": [
+    {
+      "path": "src/LessonVideo.tsx",
+      "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+    },
+    {
+      "path": "src/dev/release-entry.tsx",
+      "sha256": "db40ab64f1604b4a08be8504383b9dea9c77ca999094eac222cb6ecca101c9dc"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "6145826ab8aeb8ae285c15a69f52a13109dfef1fb9c97488220136526254329b"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    },
+    {
+      "path": "src/lesson/answer-timing.mjs",
+      "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+    },
+    {
+      "path": "src/slides/HookSlide.tsx",
+      "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+    },
+    {
+      "path": "src/slides/WorkedExampleSlide.tsx",
+      "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+    },
+    {
+      "path": "src/slides/SummarySlide.tsx",
+      "sha256": "6aed4e82a19f808a237b9526f9490d699ab18405a10eca77501979342c922c06"
+    },
+    {
+      "path": "src/slides/MisconceptionSlide.tsx",
+      "sha256": "9a1500f33203ad33bd2cc7f9c324cac163cae86344c14f5f875e84f4e1ca3593"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "b1becf6b04e2b90341b2b35dafc9b99e3407d01967e844c5664556c1f0adbca9"
+    },
+    {
+      "path": "src/slides/shared/OrganisedCalculation.tsx",
+      "sha256": "d480431642102b87f790ea6c57d08077259b4a98e22296ae4ed9c22592792968"
+    },
+    {
+      "path": "src/slides/diagrams/DiagramRenderer.tsx",
+      "sha256": "9875eec147bb9ce06e4d44f8ad994151ad7e6685c1fa002d3679ab737d61ad8c"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts",
+      "sha256": "364c5d5cc37be31bf8cec89b6f6b2e07192423a73646cdd48e42d14850543efe"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/Module5AnimalReproductionDiagram.tsx",
+      "sha256": "3cf65005fa55e7d1f7bf42ab69487f5dfc9a1f48d7383930168c564ccade1161"
+    }
+  ],
+  "runtimeScope": "Selected key source hashes, not a complete frozen dependency package.",
+  "pending": [
+    "Exact selected JSON and diagram independent science/teaching review",
+    "Fresh narration, alignment, faithful captions and measured hold assembly",
+    "Exact voiced preview and actual device/caption review",
+    "Human listening",
+    "Recording/export/release approvals",
+    "Continuous full-scene motion, remaining support-copy phone readability and external player captions"
+  ],
+  "stillEvidence": {
+    "path": "out/prototypes/module5-b2-selected-2026-10-10/author-still-evidence.json",
+    "sha256": "97399fe0c04ab1d23c80cdd3a39238bcd78c7e0759b329a7bc2da0e0842b9898",
+    "observationPath": "docs/production/drafts/module5-b2-selected-2026-10-10/author-still-observations.md",
+    "observationSha256": "c923e0ff86ed52d4e52ca84d15c7668986033cde03b2a0ead7cf8855ac122dd9",
+    "scope": "Author sampled native and390 PNG observations only; no whole-device, caption, playback or listening pass."
+  },
+  "typeScript": {
+    "command": "npx tsc --noEmit",
+    "exitCode": 0,
+    "scope": "TypeScript result during this implementation; positional SVG/cue changes do not alter types."
+  }
+}

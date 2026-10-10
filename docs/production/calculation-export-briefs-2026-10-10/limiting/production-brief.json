@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+    "lessonSha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Molar mass, grams/moles and balanced-equation ratios",
+    "startsWith": "Two fixed reactant supplies and a reaction recipe",
+    "stopsAfter": "Identify the limiting reactant, theoretical yield and excess remaining",
+    "nextLesson": "Actual yield and purity, after the prerequisite mole-ratios and mass-to-mass videos are reviewed"
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Predict the limiting reactant using reaction capacity, calculate theoretical yield, and account for leftovers. Requires moles, molar mass and balanced equations.",
+    "causalExplanation": "Coefficients state the amount required per equation-sized reaction. The smallest amount divided by its coefficient sets the limit; product and consumed excess follow that reaction amount.",
+    "conversationalApproach": "Accepted user direction: connected explanations, contractions, a burger constraint and sodium/chlorine reversal. Explain why before calculation. Avoid command recitals, forced laughter and repetitive number-reading.",
+    "openingDecision": "Native burger analogy shows why extra buns do not help after patties run out. Explicitly one bun and one patty; next scene introduces the two-to-one chemical recipe.",
+    "understandingCheck": "Use the existing unseen practice task and explain the chosen relationship. The separately recorded prompt and answer have sixty silent frames from 560 to 620 in the selected revision. Answer visuals and captions wait until the gap ends. The invitation to pause longer is retained. Exact playback and listening remain pending.",
+    "curriculumScope": "Selected repository Year 11 Module 2 stoichiometry scope: limiting reagent, theoretical yield and excess. Metadata is a syllabus summary, not a verbatim dotpoint or claim of complete practical/new-course coverage. Use the tracked continuity mapping for future course placement."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "src/slides/diagrams/RecipeCountDiagram.tsx",
+      "teachingReason": "Replace generic visual with the actual one-to-one ingredient constraint.",
+      "narrationCue": "Current recorded cues: {\"answerVisibleStart\":0,\"callout\":106}; preserved normal-pace take.",
+      "motionPurpose": "Four matched ingredient pairs become burgers; the remaining bun is circled.",
+      "holdPurpose": "Hold the completed analogy while its chemical relevance is explained."
+    },
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Keep a brief title that locates the topic.",
+      "narrationCue": "Current recorded cues: {}; preserved normal-pace take.",
+      "motionPurpose": "Existing block reveal only.",
+      "holdPurpose": "Brief orientation before the reaction model."
+    },
+    {
+      "sceneId": "concept",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/ReactionRunDiagram.tsx",
+      "teachingReason": "Preserve conservation and show why two hydrogen molecules cannot continue without oxygen.",
+      "narrationCue": "Current recorded cues: {\"diagram\":30,\"secondary\":922,\"callout\":797}; preserved normal-pace take.",
+      "motionPurpose": "Four reaction events; only the two unconsumed hydrogen molecules get emphasis after completion.",
+      "holdPurpose": "Keep counts and graph visible; graph is progress, not time or reaction speed."
+    },
+    {
+      "sceneId": "formula",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/CoefficientDivideDiagram.tsx and src/prototypes/DesignDirections.tsx",
+      "teachingReason": "Use the existing prototype raw-reference/halving idea to explain the counterintuitive sodium limit.",
+      "narrationCue": "Current recorded cues: {\"diagram\":32,\"secondary\":1137,\"callout\":1083}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed. Coefficient diagram steps relative to its delay: [24, 692, 998]",
+      "motionPurpose": "Circle coefficient2, draw toward exact half-height; retain raw0.435 reference; rank exact ratios, round labels only.",
+      "holdPurpose": "Keep text locked while comparing capacities; no whole-stage line-boil on labels."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Group each supplied mass with its molar mass. Separate the task and reaction, focus on one calculation stage, and retain established results.",
+      "narrationCue": "Current recorded cues: {\"stepAts\":[672,892,1055,1629,1780],\"coachNote\":1977}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal the current operation at its recorded cue. Later product mass waits for its own line cue.",
+      "holdPurpose": "Keep prior results available without accumulating competing active calculations."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/MisconceptionSlide.tsx",
+      "teachingReason": "Revisit the failed raw-mole rule and distinguish theoretical from actual yield.",
+      "narrationCue": "Current recorded cues: {\"secondary\":188,\"callout\":761}; preserved normal-pace take.",
+      "motionPurpose": "Existing mistaken-prediction contrast and correction.",
+      "holdPurpose": "Hold enough time to connect the coefficients to the correction."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Group each supplied mass with its molar mass. Separate the task and reaction, focus on one calculation stage, and retain established results.",
+      "narrationCue": "Current recorded cues: {\"stepAts\":[620,866,1042],\"answerVisibleStart\":620,\"responseHoldStart\":560}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal the current operation at its recorded cue. Later product mass waits for its own line cue.",
+      "holdPurpose": "Protect the existing two-second silence and retain the givens during thinking."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/SummarySlide.tsx flow layout",
+      "teachingReason": "Connect capacity, yield and leftovers without repeating five commands.",
+      "narrationCue": "Current recorded cues: {\"takeawayAts\":[231,380,477],\"finalPrompt\":614}; preserved normal-pace take.",
+      "motionPurpose": "Stable phrase reveals and existing decision card.",
+      "holdPurpose": "Reading hold with no heading/row or caption overlap."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Coordinating agent (unchanged transcript and scoped display/source checks)",
+    "evidence": {
+      "path": "out/prototypes/limiting-paced-2026-10-10/source-review.md",
+      "sha256": "04e0b2ba399d7001f19562226d7597dc78a07cdc2112c4640b65653318e66479"
+    }
+  },
+  "voicedPreview": {
+    "status": "pass",
+    "reviewer": "Project owner, user in this conversation",
+    "mode": "rendered-pilot",
+    "inputSnapshotPath": "out/prototypes/limiting-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+    "evidence": {
+      "path": "docs/production/user-calculation-review-2026-10-10.json",
+      "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Project owner accepts the exact presented rendered pilot in the current review batch. Full export has not yet been reviewed. Complete-track listening and final full-package scopes remain separately pending. Preserve prior sources, briefs and evidence."
+}

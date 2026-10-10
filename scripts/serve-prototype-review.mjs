@@ -3,7 +3,7 @@ import {createReadStream, statSync} from 'node:fs';
 import path from 'node:path';
 
 const root=path.resolve('out/prototypes');
-const mime={'.html':'text/html; charset=utf-8','.mp4':'video/mp4','.mp3':'audio/mpeg','.wav':'audio/wav','.png':'image/png','.vtt':'text/vtt; charset=utf-8','.json':'application/json','.md':'text/plain; charset=utf-8'};
+const mime={'.html':'text/html; charset=utf-8','.mp4':'video/mp4','.mp3':'audio/mpeg','.m4a':'audio/mp4','.wav':'audio/wav','.png':'image/png','.vtt':'text/vtt; charset=utf-8','.srt':'application/x-subrip; charset=utf-8','.json':'application/json','.md':'text/plain; charset=utf-8'};
 http.createServer((request,response)=>{
   if(!['GET','HEAD'].includes(request.method)){response.writeHead(405).end();return;}
   let file,stat;

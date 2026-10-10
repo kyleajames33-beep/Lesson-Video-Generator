@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+    "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+  },
+  "preparationSha256": "699108d28dc0ee421351c70d3223f42a50b9e1eb188e2d4e67e7d0498719f3a5",
+  "status": "text-only plan, not a production voice manifest and not paid-generation approval",
+  "preferredVoice": "Simon, Australian male; root selects manifest and request options after exact-source recording gate",
+  "segments": [
+    {
+      "id": "c2-hook",
+      "sceneId": "c2-hook",
+      "role": "narration",
+      "text": "Last time, equal reaction rates explained why an equilibrium mixture stays steady. But how do those rates become equal? Imagine a reversible reaction that starts with only A. As B forms, can it start turning back into A straight away, or does it have to wait for the forward reaction to finish? It can turn back while the forward reaction is still happening. That overlap is what we will follow.",
+      "textSha256": "f8a45693856d2d808c942bd32398452d0035259616a9d1f7dc4f8601cc2502ad",
+      "wordCount": 70,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-model",
+      "sceneId": "c2-model",
+      "role": "narration",
+      "text": "A and B are two forms of our model substance. One A can become one B, and one B can become one A. The container is closed, its volume and temperature stay fixed, and we are following a simple model in which the rate in each direction depends on how much of its starting form is present. At the beginning there is plenty of A and no B. So the forward process can run, but the reverse rate is zero because there is no B to convert yet. Closed means matter stays inside. It does not mean the container is insulated.",
+      "textSha256": "97b6bd7079201abb76d516e3da19c7bbc9b6954c00c2a2c1853857f8906573cc",
+      "wordCount": 101,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-collision",
+      "sceneId": "c2-collision",
+      "role": "narration",
+      "text": "Collision theory helps explain why the amount present can matter. In a reaction between particles, meeting is only part of the story. The particles also need enough energy and a suitable arrangement for reaction. Activation energy is the energy barrier that reacting particles must overcome. A collision that leads to reaction is called an effective collision. For example, two nitrogen dioxide molecules can combine to make dinitrogen tetroxide. With more nitrogen dioxide molecules in the same volume, there are more opportunities for them to meet. That is a rate explanation. Our A-to-B arrows only track conversion; they do not show molecules colliding. Some reactions involve a molecule breaking apart or changing form after energy transfer, so this simple picture is not a full mechanism for every reaction.",
+      "textSha256": "42f4a4038e02a3a4dbdb86d68d7523e7f781f312693c25c08f09a964bc5b46b4",
+      "wordCount": 127,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-rates",
+      "sceneId": "c2-rates",
+      "role": "narration",
+      "text": "Back in our A and B model, each net forward conversion leaves less A and more B. As A decreases, the forward rate falls. As B builds up, the reverse rate rises. These changes happen together, rather than one reaction ending before the other begins. The rate graph shows the forward curve coming down and the reverse curve coming up. As they approach the same non-zero rate, their effects balance. At equilibrium, each direction replaces what the other removes, so the composition stays steady even though both conversions continue.",
+      "textSha256": "9f4a4d6befbd398cf6177e47ee15383bdd2089c17a2cb6844a15b3b0697ad982",
+      "wordCount": 89,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-amounts",
+      "sceneId": "c2-amounts",
+      "role": "narration",
+      "text": "Now compare the concentration graph. A decreases and B increases, then each levels off. Their two final levels are different in this example. The rate curves approach the same level, but the concentration curves do not have to. Rate tells us how quickly conversion happens. Concentration tells us how much is present per volume. Also, forward down and reverse up describe our chosen starting mixture. If a mixture began with excess B and the reverse rate were larger, the approach could go the other way.",
+      "textSha256": "a2c50d9b733b2ae0ff74cd50133f2e7a2e91cad7d6e70363886b95b4c89da863",
+      "wordCount": 85,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-catalyst",
+      "sceneId": "c2-catalyst",
+      "role": "narration",
+      "text": "Suppose we repeat the same starting mixture with a suitable catalyst, keeping the temperature and volume unchanged. A catalyst provides an alternative reaction pathway with a lower effective activation barrier. It enables the opposing reaction processes to happen more readily. It does not change the energies of the overall reactants and products or favour a different final equilibrium composition. In our comparison, B approaches the same final level sooner. At an early comparison time, the catalysed mixture can contain more B because it has progressed further. Once both mixtures reach equilibrium, that difference is gone. The catalyst changes how soon the balance is reached, not the balance we reach.",
+      "textSha256": "6e6e070d27a1d6919fbe652ed3e796b6dd5a898d962687a2d46dbfe28f09f337",
+      "wordCount": 109,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-transfer-prompt",
+      "sceneId": "c2-transfer",
+      "role": "prompt",
+      "text": "Try a different start. C and D interconvert one for one in a closed container at constant temperature and volume. The mixture begins mostly as D. Early measurements give a forward rate, C to D, of two units, and a reverse rate, D to C, of six units on the same scale. Which substance will initially increase overall? Explain using both rates. Then compare this mixture with an identical starting mixture containing a suitable catalyst. Will the catalyst change the final equilibrium concentration of D? Take a moment, or pause if you would like longer.",
+      "textSha256": "86f904d0c6559cdca2a93c15d3af7297f0f105a1bbc24dbb93fbd26adb734cea",
+      "wordCount": 95,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-transfer-feedback",
+      "sceneId": "c2-transfer",
+      "role": "feedback",
+      "text": "C initially increases. The reverse process makes C at six units while the forward process removes C at two, so more C is being made than used. In this one-for-one model, the difference is a net four units towards C. Starting mostly with D did not by itself prove that direction; the supplied rates did. With the suitable catalyst, the mixture approaches the same final equilibrium composition sooner under the same conditions. It does not finish with a different equilibrium concentration of D. If you predicted more D simply because a catalyst speeds reactions, separate the amount present at an earlier time from the final equilibrium amount.",
+      "textSha256": "d337ac2e28faeca3596e2c0f94d22d755fa3f55e9af4d42c947d1aa07c0a9687",
+      "wordCount": 107,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    },
+    {
+      "id": "c2-summary",
+      "sceneId": "c2-summary",
+      "role": "narration",
+      "text": "A reversible reaction can run in both directions before equilibrium is reached. In our A-only start, the forward rate falls as A is used, while the reverse rate rises as B forms. Equilibrium is the balance of equal non-zero rates, not a requirement for equal concentrations. A suitable catalyst can bring that balance about sooner without changing the final composition at the same temperature and other stated conditions. Next, we will start with a mixture already at equilibrium and ask what happens when its concentration or temperature changes.",
+      "textSha256": "bedcd99b4392fd3629d45d8e6632cfc3a21aa09655367097a14c080e3703a90a",
+      "wordCount": 88,
+      "audioSelected": false,
+      "alignmentStatus": "pending"
+    }
+  ],
+  "responseAssembly": {
+    "sceneId": "c2-transfer",
+    "promptId": "c2-transfer-prompt",
+    "feedbackId": "c2-transfer-feedback",
+    "plannedSilenceSeconds": 10,
+    "status": "estimated; measure prompt alignment, assemble exact silence, align staged feedback and rebuild captions"
+  },
+  "estimatedCues": [
+    {
+      "sceneId": "c2-title",
+      "durationInFrames": 120,
+      "revealDelays": {},
+      "diagramProps": {}
+    },
+    {
+      "sceneId": "c2-hook",
+      "durationInFrames": 929,
+      "revealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "callout": 646
+      },
+      "diagramProps": {
+        "mode": "hook",
+        "reverseAt": 646
+      }
+    },
+    {
+      "sceneId": "c2-model",
+      "durationInFrames": 1314,
+      "revealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 1014
+      },
+      "diagramProps": {
+        "mode": "model",
+        "runAt": 1092
+      }
+    },
+    {
+      "sceneId": "c2-collision",
+      "durationInFrames": 1637,
+      "revealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 1337
+      },
+      "diagramProps": {
+        "mode": "association"
+      }
+    },
+    {
+      "sceneId": "c2-rates",
+      "durationInFrames": 1165,
+      "revealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 865
+      },
+      "diagramProps": {
+        "mode": "rates",
+        "forwardAt": 211,
+        "reverseAt": 298,
+        "limitAt": 869
+      }
+    },
+    {
+      "sceneId": "c2-amounts",
+      "durationInFrames": 1115,
+      "revealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 815
+      },
+      "diagramProps": {
+        "mode": "amounts",
+        "forwardAt": 90,
+        "reverseAt": 210,
+        "limitAt": 174
+      }
+    },
+    {
+      "sceneId": "c2-catalyst",
+      "durationInFrames": 1413,
+      "revealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 1113
+      },
+      "diagramProps": {
+        "mode": "catalyst",
+        "graphAt": 732,
+        "limitAt": 732,
+        "comparisonAt": 857,
+        "comparisonEnd": 1068
+      }
+    },
+    {
+      "sceneId": "c2-transfer",
+      "durationInFrames": 2867,
+      "revealDelays": {
+        "heading": 24,
+        "pausePrompt": 1119,
+        "responseHoldStart": 1179,
+        "answerVisibleStart": 1479,
+        "stepAts": [
+          1479,
+          1516,
+          2162
+        ]
+      },
+      "diagramProps": {}
+    },
+    {
+      "sceneId": "c2-summary",
+      "durationInFrames": 1152,
+      "revealDelays": {},
+      "diagramProps": {}
+    }
+  ],
+  "humanListening": "pending"
+}

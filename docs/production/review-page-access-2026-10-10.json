@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Sol 6.1 independent access reviewer",
+  "checkedAt": "2026-10-10T01:30:55.939936+00:00",
+  "scope": "HTTP access, ranges, MIME, media hashes/durations, current feedback binding and captions. No listening or continuous playback approval.",
+  "page": "http://127.0.0.1:8778/calculation-batch-review-2026-10-10/",
+  "pageSha256": "0834276ce834d871bb985d8fab634cf884c7620938e33d50d9d453f0c0a6231d",
+  "links": [
+    {
+      "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "status": 200,
+      "mime": "video/mp4",
+      "size": 2633760,
+      "sha256": "f8365e43526a7870874be7743802796ba00f7811edc834eebe5ffbce036d1248",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/2633760",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "33.233333"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/worked-pilot-02/captions.vtt",
+      "status": 200,
+      "mime": "text/vtt; charset=utf-8",
+      "size": 897,
+      "sha256": "6c49f996ad45095c6236e77933801128e9e8e45b79eb84dcee3322c516608448"
+    },
+    {
+      "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/worked-pilot-02/captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 919,
+      "sha256": "b3fbda819d53cb10d8bca207770759634bac17b6ed37c3c0604f464efb9467dd"
+    },
+    {
+      "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/narration-listen.m4a",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 7964352,
+      "sha256": "02e641e6d969935f3c8e4022010f63ab05d055e51ce6de5f573a54f98139f8dd",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/7964352",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "326.900000"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/full-captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 8753,
+      "sha256": "2019199a939bcb86cd8a80b7e8a5a2077add2b84d602ae4c31222f8547731b89"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-voiced-2026-10-09/diagram-pilot-01/video.mp4",
+      "status": 200,
+      "mime": "video/mp4",
+      "size": 2949164,
+      "sha256": "71c59dd94525279e7efac4256fca5f58de004914a9b842e66bb38a5e775f4450",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/2949164",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "30.266667"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-voiced-2026-10-09/diagram-pilot-01/captions.vtt",
+      "status": 200,
+      "mime": "text/vtt; charset=utf-8",
+      "size": 887,
+      "sha256": "38398620519d7161f127ba955e1c5e7198c9a56b0f98c3306e2057ae4d3732e8"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-voiced-2026-10-09/diagram-pilot-01/captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 906,
+      "sha256": "c22ecd6a3f38e204540bcf8243d4c3c85745c416cc26703b291dd53354ec0e97"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "status": 200,
+      "mime": "video/mp4",
+      "size": 2743077,
+      "sha256": "63ca39223b1b7a715cd6c651c5bc40a96dd44fd8b99e645efedc63e5dcbb37bf",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/2743077",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "34.600000"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/worked-pilot-02/captions.vtt",
+      "status": 200,
+      "mime": "text/vtt; charset=utf-8",
+      "size": 1002,
+      "sha256": "0e7db8740d9b6b4268f902773a7812cc57d370819c2a7fd3787233094ee19504"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/worked-pilot-02/captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 1033,
+      "sha256": "608f992d680f187d14721208e8923b2a1ffb635e21eb9da1bdec1fb871fcb127"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/narration-listen.m4a",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 7243423,
+      "sha256": "81015cd173885a72cda9af1c32ccd574e04565427fb3a89db1f6922b9dd7e365",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/7243423",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "300.300000"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/full-captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 8215,
+      "sha256": "3bd1937ef282488135c0e54a97fd4d9dc85ce4d3304ed3c667f12db416c2f555"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-voiced-2026-10-09/diagram-pilot-01/video.mp4",
+      "status": 200,
+      "mime": "video/mp4",
+      "size": 3512175,
+      "sha256": "fe09444d45331dfef5573cff3b143c3dd9ccb83d98d04563f8a3b9e6f22323a4",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/3512175",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "43.866667"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-voiced-2026-10-09/diagram-pilot-01/captions.vtt",
+      "status": 200,
+      "mime": "text/vtt; charset=utf-8",
+      "size": 1251,
+      "sha256": "00b3d5d8d60065dfee7b78fb65f9998f187e1782cba60469855229d76a3a33bf"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-voiced-2026-10-09/diagram-pilot-01/captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 1291,
+      "sha256": "fb455ee4d33abaf42f1cbed861b3884e527d1bce50dbbca359eca0c19f095989"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "status": 200,
+      "mime": "video/mp4",
+      "size": 3933124,
+      "sha256": "3d51fbd79d89dab43b3b38c9b87a724f4c3aab7c487c2294c0b99c193605127b",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/3933124",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "59.700000"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/worked-pilot-02/captions.vtt",
+      "status": 200,
+      "mime": "text/vtt; charset=utf-8",
+      "size": 1583,
+      "sha256": "f84b23027555b3d50244ccae37ac86c0675e2e94169d3bc46e4d4d3a1a67833b"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/worked-pilot-02/captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 1635,
+      "sha256": "fc152a0a216470f55a9488da78125bdae12d36f3459f244f60408515558108e4"
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/narration-listen.m4a",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 9799196,
+      "sha256": "8cd6c8ee1e995239c07c03b62b55da0259d1a7ceaf0e4cbe3c602b5245ed31bb",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/9799196",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "403.100000"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/full-captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 11216,
+      "sha256": "17f94f03304902f0d4bb7cf2d355d3a296c62b9e58f1c81b32866faa5f1b5488"
+    },
+    {
+      "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/narration-listen.m4a",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 6944561,
+      "sha256": "ae42dbffec462ba1c279a683661df0729ba273d3da6910479ca276eec6460533",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/6944561",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "289.000000"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/full-captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 8058,
+      "sha256": "a523b7d51a2ef60e66e5d793f8f01285f0d02b6ba311abd5b8e5edb1f523345a"
+    },
+    {
+      "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/worked-pilot-02/video.mp4",
+      "status": 200,
+      "mime": "video/mp4",
+      "size": 5315289,
+      "sha256": "9cc7f6565df55adb4097177cad698f36399d08639848e67093ab6b3fee706eb5",
+      "range": {
+        "status": 206,
+        "contentRange": "bytes 0-1023/5315289",
+        "bytes": 1024,
+        "matchesLocalPrefix": true
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000"
+          }
+        ],
+        "format": {
+          "duration": "72.966667"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/worked-pilot-02/captions.vtt",
+      "status": 200,
+      "mime": "text/vtt; charset=utf-8",
+      "size": 1951,
+      "sha256": "f6d9e4f061ca67dcfdb6932f98440a2112de1410a7b4c53207d28dfbaf4c870d"
+    },
+    {
+      "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/worked-pilot-02/captions.srt",
+      "status": 200,
+      "mime": "application/octet-stream",
+      "size": 2018,
+      "sha256": "869e46ad339e98ee34247afaaac5e32a8589b19d2027c5eafcd17ae704edb9c8"
+    },
+    {
+      "url": "http://127.0.0.1:8778/calculation-batch-review-2026-10-09/",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "size": 28759
+    },
+    {
+      "url": "http://127.0.0.1:8778/continuation-review-2026-10-09/",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "size": 2864
+    },
+    {
+      "url": "http://127.0.0.1:8778/video-syllabus-map-2026-10-09/",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "size": 12893
+    }
+  ],
+  "lessons": [
+    {
+      "key": "empirical-formulas",
+      "output": "out/prototypes/empirical-formulas-paced-2026-10-10",
+      "pilotScene": "worked-example",
+      "sourceMatchesNarrationRecord": true,
+      "sourceMatchesPilotSnapshot": true,
+      "audioMatchesRecord": true,
+      "videoMatchesRenderRecord": true,
+      "fullNarrationDurationExpected": 326.9,
+      "pilotDurationExpected": 33.233333333333334,
+      "derivationMatchesFeedback": true,
+      "slowerScenesMatchFeedback": true,
+      "configLessonMatchesFeedbackOutput": true,
+      "captionCheck": {
+        "warnings": [],
+        "pilotSrtMatchesExactSource": true,
+        "pilotVttMatchesExactSource": true,
+        "fullSrtMatchesExactSource": true,
+        "fullVttMatchesExactSource": true,
+        "pilotCues": 13,
+        "fullCues": 122
+      },
+      "mediaBytesUnchangedAfterServerFix": true,
+      "actualAudioDuration": 326.9,
+      "actualPilotDuration": 33.233333,
+      "durationsWithin50ms": true,
+      "durationAssessment": "Pilot container matches exact frame duration. Complete AAC container differs from assembly by at most 0.067 seconds, consistent with end padding and immaterial for full narration review.",
+      "durationsWithin100ms": true
+    },
+    {
+      "key": "mole-ratios",
+      "output": "out/prototypes/mole-ratios-paced-2026-10-10",
+      "pilotScene": "worked-example-2",
+      "sourceMatchesNarrationRecord": true,
+      "sourceMatchesPilotSnapshot": true,
+      "audioMatchesRecord": true,
+      "videoMatchesRenderRecord": true,
+      "fullNarrationDurationExpected": 300.23333333333335,
+      "pilotDurationExpected": 34.6,
+      "derivationMatchesFeedback": true,
+      "slowerScenesMatchFeedback": true,
+      "configLessonMatchesFeedbackOutput": true,
+      "captionCheck": {
+        "warnings": [],
+        "pilotSrtMatchesExactSource": true,
+        "pilotVttMatchesExactSource": true,
+        "fullSrtMatchesExactSource": true,
+        "fullVttMatchesExactSource": true,
+        "pilotCues": 16,
+        "fullCues": 115
+      },
+      "mediaBytesUnchangedAfterServerFix": true,
+      "actualAudioDuration": 300.3,
+      "actualPilotDuration": 34.6,
+      "durationsWithin50ms": false,
+      "durationAssessment": "Pilot container matches exact frame duration. Complete AAC container differs from assembly by at most 0.067 seconds, consistent with end padding and immaterial for full narration review.",
+      "durationsWithin100ms": true
+    },
+    {
+      "key": "mass-to-mass",
+      "output": "out/prototypes/mass-to-mass-paced-2026-10-10",
+      "pilotScene": "worked-example-2",
+      "sourceMatchesNarrationRecord": true,
+      "sourceMatchesPilotSnapshot": true,
+      "audioMatchesRecord": true,
+      "videoMatchesRenderRecord": true,
+      "fullNarrationDurationExpected": 403.06666666666666,
+      "pilotDurationExpected": 59.7,
+      "derivationMatchesFeedback": true,
+      "slowerScenesMatchFeedback": true,
+      "configLessonMatchesFeedbackOutput": true,
+      "captionCheck": {
+        "warnings": [],
+        "pilotSrtMatchesExactSource": true,
+        "pilotVttMatchesExactSource": true,
+        "fullSrtMatchesExactSource": true,
+        "fullVttMatchesExactSource": true,
+        "pilotCues": 23,
+        "fullCues": 156
+      },
+      "mediaBytesUnchangedAfterServerFix": true,
+      "actualAudioDuration": 403.1,
+      "actualPilotDuration": 59.7,
+      "durationsWithin50ms": true,
+      "durationAssessment": "Pilot container matches exact frame duration. Complete AAC container differs from assembly by at most 0.067 seconds, consistent with end padding and immaterial for full narration review.",
+      "durationsWithin100ms": true
+    },
+    {
+      "key": "limiting",
+      "output": "out/prototypes/limiting-paced-2026-10-10",
+      "pilotScene": "worked-example-2",
+      "sourceMatchesNarrationRecord": true,
+      "sourceMatchesPilotSnapshot": true,
+      "audioMatchesRecord": true,
+      "videoMatchesRenderRecord": true,
+      "fullNarrationDurationExpected": 289,
+      "pilotDurationExpected": 72.96666666666667,
+      "derivationMatchesFeedback": true,
+      "slowerScenesMatchFeedback": true,
+      "configLessonMatchesFeedbackOutput": true,
+      "captionCheck": {
+        "warnings": [],
+        "pilotSrtMatchesExactSource": true,
+        "pilotVttMatchesExactSource": true,
+        "fullSrtMatchesExactSource": true,
+        "fullVttMatchesExactSource": true,
+        "pilotCues": 28,
+        "fullCues": 116
+      },
+      "mediaBytesUnchangedAfterServerFix": true,
+      "actualAudioDuration": 289,
+      "actualPilotDuration": 72.966667,
+      "durationsWithin50ms": true,
+      "durationAssessment": "Pilot container matches exact frame duration. Complete AAC container differs from assembly by at most 0.067 seconds, consistent with end padding and immaterial for full narration review.",
+      "durationsWithin100ms": true
+    }
+  ],
+  "findings": [
+    {
+      "severity": "usability",
+      "file": "out/prototypes/empirical-formulas-paced-2026-10-10/narration-listen.m4a",
+      "issue": "Complete narration served as application/octet-stream. Add .m4a audio/mp4 to review server MIME table for reliable media playback.",
+      "resolution": "Root corrected server MIME only. Independent HTTP recheck returned audio/mp4 and working 206 byte range.",
+      "status": "resolved"
+    },
+    {
+      "severity": "usability",
+      "file": "out/prototypes/mole-ratios-paced-2026-10-10/narration-listen.m4a",
+      "issue": "Complete narration served as application/octet-stream. Add .m4a audio/mp4 to review server MIME table for reliable media playback.",
+      "resolution": "Root corrected server MIME only. Independent HTTP recheck returned audio/mp4 and working 206 byte range.",
+      "status": "resolved"
+    },
+    {
+      "severity": "usability",
+      "file": "out/prototypes/mass-to-mass-paced-2026-10-10/narration-listen.m4a",
+      "issue": "Complete narration served as application/octet-stream. Add .m4a audio/mp4 to review server MIME table for reliable media playback.",
+      "resolution": "Root corrected server MIME only. Independent HTTP recheck returned audio/mp4 and working 206 byte range.",
+      "status": "resolved"
+    },
+    {
+      "severity": "usability",
+      "file": "out/prototypes/limiting-paced-2026-10-10/narration-listen.m4a",
+      "issue": "Complete narration served as application/octet-stream. Add .m4a audio/mp4 to review server MIME table for reliable media playback.",
+      "resolution": "Root corrected server MIME only. Independent HTTP recheck returned audio/mp4 and working 206 byte range.",
+      "status": "resolved"
+    },
+    {
+      "severity": "minor",
+      "issue": "Old diagram players only say Amount diagram. The retention explanation is at top of page; use individual original-date labels if making page revisions.",
+      "status": "minor limitation retained to preserve frozen page"
+    }
+  ],
+  "humanListening": "pending",
+  "continuousPlayback": "pending",
+  "olderDiagramIdentification": {
+    "paths": "Preserved 9 October voiced diagram-pilot-01 for mole ratios and mass-to-mass only.",
+    "globalExplanationPresent": true,
+    "perClipLabelsExplicitlyOld": false,
+    "assessment": "Intro explains retention. Add preserved original diagram wording beside each Amount diagram heading to make revision distinction obvious at the player."
+  },
+  "copyContainsEmDash": false,
+  "recheck": {
+    "checkedAt": "2026-10-10T01:31:21.679643+00:00",
+    "changeOwner": "root",
+    "change": "Review server MIME map now includes .m4a audio/mp4 and .srt application/x-subrip. Frozen page/media unchanged.",
+    "links": [
+      {
+        "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "status": 200,
+        "mime": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/2633760"
+      },
+      {
+        "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/worked-pilot-02/captions.vtt",
+        "status": 200,
+        "mime": "text/vtt; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/worked-pilot-02/captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/narration-listen.m4a",
+        "status": 200,
+        "mime": "audio/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/7964352"
+      },
+      {
+        "url": "http://127.0.0.1:8778/empirical-formulas-paced-2026-10-10/full-captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-voiced-2026-10-09/diagram-pilot-01/video.mp4",
+        "status": 200,
+        "mime": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/2949164"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-voiced-2026-10-09/diagram-pilot-01/captions.vtt",
+        "status": 200,
+        "mime": "text/vtt; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-voiced-2026-10-09/diagram-pilot-01/captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "status": 200,
+        "mime": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/2743077"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/worked-pilot-02/captions.vtt",
+        "status": 200,
+        "mime": "text/vtt; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/worked-pilot-02/captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/narration-listen.m4a",
+        "status": 200,
+        "mime": "audio/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/7243423"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mole-ratios-paced-2026-10-10/full-captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-voiced-2026-10-09/diagram-pilot-01/video.mp4",
+        "status": 200,
+        "mime": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/3512175"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-voiced-2026-10-09/diagram-pilot-01/captions.vtt",
+        "status": 200,
+        "mime": "text/vtt; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-voiced-2026-10-09/diagram-pilot-01/captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "status": 200,
+        "mime": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/3933124"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/worked-pilot-02/captions.vtt",
+        "status": 200,
+        "mime": "text/vtt; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/worked-pilot-02/captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/narration-listen.m4a",
+        "status": 200,
+        "mime": "audio/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/9799196"
+      },
+      {
+        "url": "http://127.0.0.1:8778/mass-to-mass-paced-2026-10-10/full-captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/narration-listen.m4a",
+        "status": 200,
+        "mime": "audio/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/6944561"
+      },
+      {
+        "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/full-captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "status": 200,
+        "mime": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/5315289"
+      },
+      {
+        "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/worked-pilot-02/captions.vtt",
+        "status": 200,
+        "mime": "text/vtt; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/limiting-paced-2026-10-10/worked-pilot-02/captions.srt",
+        "status": 200,
+        "mime": "application/x-subrip; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/calculation-batch-review-2026-10-09/",
+        "status": 200,
+        "mime": "text/html; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/continuation-review-2026-10-09/",
+        "status": 200,
+        "mime": "text/html; charset=utf-8"
+      },
+      {
+        "url": "http://127.0.0.1:8778/video-syllabus-map-2026-10-09/",
+        "status": 200,
+        "mime": "text/html; charset=utf-8"
+      }
+    ],
+    "pageBytesUnchanged": true
+  },
+  "outcome": "All 29 linked resources return 200. All six videos and four complete narration files support byte ranges. Current paced source/media/captions match exact production records. MIME issue resolved. Listening and continuous playback remain pending.",
+  "preservedDiagramCaptionChecks": [
+    {
+      "key": "mole-ratios",
+      "lessonPath": "out/prototypes/mole-ratios-voiced-2026-10-09/narrated.lesson.json",
+      "warnings": [],
+      "srtMatchesOriginalSource": true,
+      "vttMatchesOriginalSource": true
+    },
+    {
+      "key": "mass-to-mass",
+      "lessonPath": "out/prototypes/mass-to-mass-voiced-2026-10-09/narrated.lesson.json",
+      "warnings": [],
+      "srtMatchesOriginalSource": true,
+      "vttMatchesOriginalSource": true
+    }
+  ]
+}

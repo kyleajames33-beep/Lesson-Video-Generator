@@ -1,0 +1,263 @@
+{
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+    "lessonSha256": "a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af"
+  },
+  "status": "pending-measured-audio",
+  "units": {
+    "bulletAt": "seconds from scene start",
+    "revealDelays": "scene-local frames",
+    "diagramProps": "component-specific scene-local cue frames",
+    "lineAts": "scene-local frames"
+  },
+  "scenes": [
+    {
+      "sceneId": "title",
+      "currentEstimatedDurationInFrames": 90,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [],
+      "requiredAction": "Retain silent title and its existing transition overlap."
+    },
+    {
+      "sceneId": "hook",
+      "currentEstimatedDurationInFrames": 1005,
+      "currentEstimatedReveals": {
+        "heading": 22,
+        "body": 50,
+        "callout": 800
+      },
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "concept-fertilisation",
+      "currentEstimatedDurationInFrames": 1519,
+      "currentEstimatedReveals": {
+        "secondary": 1260
+      },
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Haploid: one chromosome set.",
+          "at": 5
+        },
+        {
+          "text": "Diploid: two chromosome sets.",
+          "at": 22
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "ploidy",
+        "at": {
+          "start": 110,
+          "second": 470,
+          "result": 690,
+          "condition": 1000000
+        }
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "concept-asexual-animal",
+      "currentEstimatedDurationInFrames": 1505,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Growth and development precede detachment.",
+          "at": 4
+        },
+        {
+          "text": "Classify the event by its mechanism.",
+          "at": 36
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "hydra",
+        "at": {
+          "start": 65,
+          "second": 225,
+          "result": 450,
+          "condition": 615
+        }
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "concept-external",
+      "currentEstimatedDurationInFrames": 1633,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Moisture limits gamete drying.",
+          "at": 13
+        },
+        {
+          "text": "Proximity and timing support encounters.",
+          "at": 24
+        },
+        {
+          "text": "Fertilisation and later survival are separate.",
+          "at": 47
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "external",
+        "at": {
+          "start": 80,
+          "second": 300,
+          "result": 1000000,
+          "condition": 750
+        }
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "concept-internal",
+      "currentEstimatedDurationInFrames": 1590,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [
+        {
+          "text": "A moist tract reduces exposure to drying.",
+          "at": 9
+        },
+        {
+          "text": "Sperm transfer has costs and constraints.",
+          "at": 35
+        },
+        {
+          "text": "Offspring number and care vary.",
+          "at": 46
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "internal",
+        "at": {
+          "start": 70,
+          "second": 200,
+          "result": 1000000,
+          "condition": 425
+        }
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "definition-comparison",
+      "currentEstimatedDurationInFrames": 1476,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Where do gametes fuse?",
+          "at": 1
+        },
+        {
+          "text": "Where does the embryo develop?",
+          "at": 5
+        },
+        {
+          "text": "What support follows?",
+          "at": 9
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "bird",
+        "at": {
+          "start": 400,
+          "second": 560,
+          "result": 690,
+          "condition": 950
+        }
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "worked-example",
+      "currentEstimatedDurationInFrames": 1662,
+      "currentEstimatedReveals": {
+        "heading": 18,
+        "stepAts": [
+          400,
+          880,
+          1280
+        ]
+      },
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [
+        {
+          "label": "Frog: external",
+          "lineAts": []
+        },
+        {
+          "label": "Kangaroo: internal",
+          "lineAts": []
+        },
+        {
+          "label": "Bird: internal",
+          "lineAts": []
+        }
+      ],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "misconception",
+      "currentEstimatedDurationInFrames": 1176,
+      "currentEstimatedReveals": {
+        "heading": 18,
+        "body": 720,
+        "callout": 1060
+      },
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "quick-check",
+      "currentEstimatedDurationInFrames": 3302,
+      "currentEstimatedReveals": {
+        "heading": 18,
+        "responseHoldStart": 1333,
+        "answerVisibleStart": 1693,
+        "stepAts": [
+          1693,
+          2393,
+          2883
+        ]
+      },
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [
+        {
+          "label": "Separation changes encounters",
+          "lineAts": []
+        },
+        {
+          "label": "Prediction has a limit",
+          "lineAts": []
+        },
+        {
+          "label": "Fertilisation is one stage",
+          "lineAts": []
+        }
+      ],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "summary",
+      "currentEstimatedDurationInFrames": 1290,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    }
+  ]
+}

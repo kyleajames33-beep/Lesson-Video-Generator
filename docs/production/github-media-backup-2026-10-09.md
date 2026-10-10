@@ -26,6 +26,10 @@ python scripts/github-media-transfer.py download-continuation --continuation mod
 python scripts/transfer-workspace.py restore-media out/archives/module5-parallel-review-media-2026-10-10.zip
 python scripts/github-media-transfer.py download-continuation --continuation module5-visual-v2-media-2026-10-10.zip
 python scripts/transfer-workspace.py restore-media out/archives/module5-visual-v2-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation module5-c2-b2-selected-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/module5-c2-b2-selected-media-2026-10-10.zip --skip-rebuildable-pages
+python scripts/build-parallel-production-review.py
+python scripts/build-calculation-full-review.py
 ```
 
 Sign in with `gh auth login` if the repository requires authentication. The downloader preserves matching existing parts and refuses conflicting files. It checks each part and the joined ZIP against the checked-in hashes. The subsequent restore checks individual contents.
@@ -43,3 +47,5 @@ The fourth continuation, `calculation-feedback-frames-2026-10-10.zip`, preserves
 The fifth continuation, `module5-parallel-review-media-2026-10-10.zip`, preserves the parallel team's original and revised Module 5 diagnostic stills, source-bound evidence manifests and render helpers, plus the local production reading desk. Draft lessons, narration, briefs, independent reports and ownership board are in ordinary Git. The ZIP excludes reproducible bundles and dependency folders. It contains no new recordings or full videos and does not clear pending visual, listening or release gates. Restore it after the previous four continuations. The [production board](parallel-production-board-2026-10-10.json) distinguishes completed checks from the next required work.
 
 The additive Module 5 v2 archive preserves 40 visual evidence/planning-page files. Rebuild the latest production desk with `python scripts/build-parallel-production-review.py` after restoration. The focused route and source drafts are tracked in Git.
+
+The selected C2/B2 archive preserves 86 ignored evidence/page files in a seventh additive continuation. Its two production HTML pages are reproducible and may differ from earlier checkpoints. The explicit `--skip-rebuildable-pages` option verifies those archived page hashes, preserves current local pages and restores the other 84 evidence files. Rebuild both pages with the tracked commands above. Conflict refusal still applies to all frame and scientific evidence files. This checkpoint contains no new narration or completed full exports.

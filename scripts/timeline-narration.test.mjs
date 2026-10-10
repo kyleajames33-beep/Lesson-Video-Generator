@@ -37,3 +37,15 @@ test('overlapping loud recordings fail rather than clipping speech silently',()=
  const l={...lesson,scenes:lesson.scenes.map(s=>({...s,durationInFrames:60,voiceover:{...s.voiceover,startFrame:0,endFrame:60}}))};
  assert.throws(()=>assembleTimelineNarration(l,{...options,decode:()=>samples(60,32767)}),/clips/);
 });
+
+test('an explicitly unvoiced title retains silence and narrated scene offsets',()=>{
+ const l={...lesson,scenes:[{id:'title',type:'title',durationInFrames:60},lesson.scenes[0]]};
+ const r=assembleTimelineNarration(l,options),b=pcm(r);
+ assert.ok(b.subarray(0,36*1600*2).every(v=>v===0));
+ assert.equal(b.readInt16LE(36*1600*2),960);
+ assert.deepEqual(r.record.dependencies.map(d=>[d.startFrame,d.endFrame]),[[36,66]]);
+ assert.deepEqual(r.record.silentScenes,[{sceneId:'title',startFrame:0,endFrame:60,reason:'Unvoiced title'}]);
+ const crop=pcm(assembleTimelineNarration(l,{...options,frameRange:[30,40]}));
+ assert.deepEqual(crop,b.subarray(30*1600*2,41*1600*2));
+ assert.throws(()=>assembleTimelineNarration({...l,scenes:[{...l.scenes[0],voiceover:{text:'Spoken title'}}]},options),/Missing scene narration/);
+});

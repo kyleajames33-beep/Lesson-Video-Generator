@@ -1,0 +1,30 @@
+{
+  "lessonPath": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+  "entryPoint": "src/dev/release-entry.tsx",
+  "compositionId": "Lesson-release",
+  "codec": "h264",
+  "scale": 1,
+  "crf": 16,
+  "concurrency": 2,
+  "audioMode": "alignedPcm",
+  "normalizeAudio": true,
+  "teachingBriefPath": "docs/production/calculation-export-briefs-2026-10-10/mole-ratios/production-brief.json",
+  "inputs": [
+    "docs/production/calculation-feedback-2026-10-10.json",
+    "scripts/prepare-paced-feedback.py",
+    "out/prototypes/mole-ratios-voiced-2026-10-09/narrated.lesson.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.mp3",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.alignment.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.generation.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.mp3",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.alignment.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.generation.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.mp3",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.alignment.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.generation.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.mp3",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.alignment.json",
+    "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.generation.json",
+    "out/prototypes/mole-ratios-paced-2026-10-10/tempo-derivation.json"
+  ]
+}

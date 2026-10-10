@@ -66,6 +66,21 @@ for file_name, label in [('chemistry-c2.md', 'Chemistry C2: reversible approach'
                             f'<p class="small">Exact preparation SHA-256: {e(digest)}</p></details>')
 preparation_section = ('<section><h2>Next lesson preparations</h2>' + ''.join(preparations) + '</section>') if preparations else ''
 
+selected = []
+for key, label, image_name in [('c2', 'Chemistry C2: reversible approach', 'author-stills/catalyst-limit.png'),
+                              ('b2', 'Biology B2: animal reproduction', 'author-stills/concept-fertilisation-800.png')]:
+    folder = ROOT / f'docs/production/drafts/module5-{key}-selected-2026-10-10'
+    source = folder / 'lesson.json'
+    if not source.exists():
+        continue
+    lesson = json.loads(source.read_text(encoding='utf-8'))
+    brief = json.loads((folder / 'production-brief.json').read_text(encoding='utf-8'))
+    script = ''.join(f'<details><summary>{e(scene["id"])}</summary><p class="script">{e(scene.get("voiceover", {}).get("text", "Silent identity hold."))}</p></details>' for scene in lesson['scenes'])
+    image_path = f'/module5-{key}-selected-2026-10-10/{image_name}'
+    selected.append(f'<section><h2>{e(label)}</h2><p class="notice">Selected source review: {e(brief["scriptReview"]["status"])}. These are silent draft visuals. Recording, measured cues, voiced playback and listening remain separate checks.</p>'
+                    f'<img src="{image_path}" alt="Selected lesson teaching diagram" style="width:100%;height:auto">'
+                    f'<p><strong>Boundary:</strong> {e(brief["progression"]["stopsAfter"])}</p>' + script + '</section>')
+
 document = '''<!doctype html><html lang="en-AU"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HSCScience production desk</title><style>
 body{font:18px/1.6 system-ui,sans-serif;color:#17251f;background:#f7f7f5;margin:0;padding:24px}main{max-width:1100px;margin:auto}
@@ -73,12 +88,15 @@ h1{font-size:clamp(30px,5vw,50px);line-height:1.1}h2{font-size:26px}a{color:#0d6
 .notice{border-left:4px solid #bd7900;padding:12px;background:#fff6e6}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;min-width:650px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #d7ddd9}th{background:#edf4ef}
 details{border-top:1px solid #d7ddd9;padding:14px 0}summary{cursor:pointer;font-weight:650}.script{max-width:78ch;white-space:pre-wrap}.small{font-size:13px;overflow-wrap:anywhere;color:#57625b}
 </style><main><h1>HSCScience production desk</h1><p>Module 5 in Chemistry and Biology. Coordinated drafting, visual design and independent review.</p>
-<p class="notice">This is a saved production snapshot, not a live background service. The current calculation clips still need revised listening and release checks.</p>
-<p>Each module is a sequence of focused videos. The two scripts below are the opening lessons, not entire modules. <a href="/module5-course-plan-2026-10-10/">See the Module 5 video sequence and syllabus plan</a>, or <a href="/video-syllabus-map-2026-10-09/">open the full catalogue and syllabus mapping</a>.</p>
-<p><a href="/calculation-batch-review-2026-10-10/">Open the current four calculation clips and full narration</a></p>
+<p class="notice">This is a saved production snapshot. The user accepted the presented calculation review batch. Complete exports still need their own package checks before public posting.</p>
+<p>Each module is a sequence of focused videos. Opening drafts and subsequent lessons are shown separately. <a href="/module5-course-plan-2026-10-10/">See the Module 5 video sequence and syllabus plan</a>, or <a href="/video-syllabus-map-2026-10-09/">open the full catalogue and syllabus mapping</a>.</p>
+<p><a href="/calculation-batch-review-2026-10-10/">Approved calculation pilots and full narration</a> | <a href="/calculation-full-review-2026-10-10/">Complete calculation exports</a></p>
+<p><a href="/module5-voiced-review-2026-10-10/">New Chemistry C2 and Biology B2 narration</a>. Their recorded candidates retain the selected words with measured display cues. Opening drafts remain separate prerequisite work.</p>
 <section><h2>Work assignments</h2><div class="scroll"><table><thead><tr><th>Task</th><th>Model</th><th>State</th><th>Deliverable</th></tr></thead><tbody>'''
-document += rows + '</tbody></table></div></section>' + queue_section + ''.join(drafts) + preparation_section
+document += rows + '</tbody></table></div></section>' + queue_section + ''.join(drafts) + ''.join(selected) + preparation_section
 document += '<p class="small">Generated from tracked task state and exact draft files. Rebuild with python scripts/build-parallel-production-review.py.</p></main></html>'
+if not (ROOT / 'out/prototypes/module5-voiced-review-2026-10-10/index.html').exists():
+    document = document.replace('<a href="/module5-voiced-review-2026-10-10/">New Chemistry C2 and Biology B2 narration</a>', 'New Chemistry C2 and Biology B2 listening tracks are being prepared')
 if '\u2014' in document:
     raise ValueError('Selected production copy contains prohibited punctuation.')
 (output / 'index.html').write_text(document, encoding='utf-8', newline='\n')

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "status": "author-order-correction-pending-independent-bounded-follow-up",
+  "parent": {
+    "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated.lesson.json",
+    "sha256": "68a69277f041d60281369572e4f670d37e22ece12ab000706d638324bd103a90"
+  },
+  "scope": "Reorder display bullet objects and paired feedback text/cue rows only. All spoken words, audio, captions, cue values, durations, stage order, summaries and components remain unchanged.",
+  "model": {
+    "oldBulletObjects": [
+      {
+        "text": "One A becomes one B.",
+        "at": 3.7666666666666666
+      },
+      {
+        "text": "A-only start: no B to convert back.",
+        "at": 19.6
+      },
+      {
+        "text": "Fixed first-order coefficients, not a general rate law.",
+        "at": 12.533333333333333
+      }
+    ],
+    "newBulletObjects": [
+      {
+        "text": "One A becomes one B.",
+        "at": 3.7666666666666666
+      },
+      {
+        "text": "Fixed first-order coefficients, not a general rate law.",
+        "at": 12.533333333333333
+      },
+      {
+        "text": "A-only start: no B to convert back.",
+        "at": 19.6
+      }
+    ],
+    "oldFrameOrder": [
+      113,
+      588,
+      376
+    ],
+    "newFrameOrder": [
+      113,
+      376,
+      588
+    ]
+  },
+  "transfer": {
+    "oldStages": [
+      {
+        "label": "Which process makes C?",
+        "lines": [
+          "D → C makes C.",
+          "C initially increases."
+        ],
+        "summary": "C initially increases.",
+        "lineAts": [
+          1544,
+          1472
+        ]
+      },
+      {
+        "label": "Compare both rates",
+        "lines": [
+          "Six makes C; two removes C.",
+          "Net four units towards C."
+        ],
+        "lineAts": [
+          1600,
+          1909
+        ],
+        "summary": "Supplied rates justify direction."
+      },
+      {
+        "label": "Compare final composition",
+        "lines": [
+          "Same final equilibrium D.",
+          "The catalyst gets there sooner."
+        ],
+        "lineAts": [
+          2413,
+          2339
+        ],
+        "summary": "Final composition unchanged."
+      }
+    ],
+    "newStages": [
+      {
+        "label": "Which process makes C?",
+        "lines": [
+          "C initially increases.",
+          "D → C makes C."
+        ],
+        "summary": "C initially increases.",
+        "lineAts": [
+          1472,
+          1544
+        ]
+      },
+      {
+        "label": "Compare both rates",
+        "lines": [
+          "Six makes C; two removes C.",
+          "Net four units towards C."
+        ],
+        "lineAts": [
+          1600,
+          1909
+        ],
+        "summary": "Supplied rates justify direction."
+      },
+      {
+        "label": "Compare final composition",
+        "lines": [
+          "The catalyst gets there sooner.",
+          "Same final equilibrium D."
+        ],
+        "lineAts": [
+          2339,
+          2413
+        ],
+        "summary": "Final composition unchanged."
+      }
+    ],
+    "establishedResultTrailChecks": [
+      {
+        "frame": 1472,
+        "activeIndex": 0,
+        "established": []
+      },
+      {
+        "frame": 1600,
+        "activeIndex": 1,
+        "established": [
+          "C initially increases."
+        ]
+      },
+      {
+        "frame": 2185,
+        "activeIndex": 2,
+        "established": [
+          "C initially increases.",
+          "Supplied rates justify direction."
+        ]
+      }
+    ],
+    "responseHold": {
+      "startFrame": 1172,
+      "endFrame": 1472
+    },
+    "firstAnswerFrame": 1472
+  },
+  "checks": {
+    "onlyRequestedDisplayArraysChanged": true,
+    "exactSpokenWordsUnchanged": true,
+    "selectedMediaAndCaptionsVerified": true,
+    "allCueValuesUnchanged": true,
+    "displayedRowCuesMonotonic": true,
+    "establishedResultTrailUnchanged": true,
+    "responseGateUnchanged": true
+  },
+  "protectedFiles": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "2c8426e90d7763d2e61fb34aca401a94fb42eb979cadb9d01ff90da6542e72a8"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "6ec7d43a03d32ff02ca50df56da046385ecf0a7152143f028e2a1641d7d34267"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "1f27d4cb94bbf0773629680f0d33fc6a96434f7ebebc83c95302509300ba2b0f"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "68a69277f041d60281369572e4f670d37e22ece12ab000706d638324bd103a90"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "b402dbab0e32c953a3dd764bef47b46c59910c3227d3cf66b28a1184448adeef"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.srt",
+      "sha256": "e4d62270fd572bbf3173610355c5fc4614d67116cc20b1bc9d7f220ff8aceaff"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.vtt",
+      "sha256": "95d682f79c01dff658e7240c0abcfec2061875b30c77435df16479e4f9a57590"
+    },
+    {
+      "path": "docs/production/module5-c2-voiced-preparation-2026-10-10/production-brief.json",
+      "sha256": "dd43e6dd701ba6624b11b6fb24d0623016a4885309c0365ee826386ac36f49a4"
+    },
+    {
+      "path": "docs/production/module5-c2-voiced-preparation-2026-10-10/measured-cue-report.json",
+      "sha256": "d029e75ca9fcdd5099be5d9ef8c1ee674a952ee2fe39e0513fa3efa6adca4ec0"
+    },
+    {
+      "path": "docs/production/module5-c2-voiced-preparation-2026-10-10/final-author-check.json",
+      "sha256": "346a6fab37a36a4900b74a42e5cb547dffc581fccd75c936a5a16360570410f4"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx",
+      "sha256": "b8835d473de45ccaa2fa46381a4eb642c7bc621bc241dbdada070a01bfa86045"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "b1becf6b04e2b90341b2b35dafc9b99e3407d01967e844c5664556c1f0adbca9"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "7019df979071b2f87ab4e492d4619190dff5db7a48be5e8708c68c895cb91a40"
+    }
+  ],
+  "limitation": "Source and consumer checks only. V2 independent source/timing review, exact voiced playback and human listening remain pending. V1 SRT and VTT remain valid because captions and timeline are unchanged."
+}

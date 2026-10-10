@@ -4,12 +4,12 @@ Prepared 10 October 2026. This strengthens the [existing priority plan](year12-m
 
 The teacher's current Year 12 priority uses the 2017 Module 5 route described in the dated priority plan. Chemistry C1-C6 and Biology B1-B6 govern the opening progression. Their existing boundaries are retained; grouped Biology anchors explicitly expand to distinct uploads. Continue preparing both subjects after the current chemistry release work, alternating production where useful. Upload chronology is separate from each subject's learner route.
 
-| Subject | Existing M5 source candidates | Core boundaries | Companions | Practical support | Proposed route entries |
+| Subject | Existing M5 source candidates | Planned core videos | Companions | Practical support | Planned focused uploads |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Chemistry | 18 | 15 | 4 | 3 | 22 |
-| Biology | 19 | 18 | 3 | 3 | 24 |
+| Biology | 19 | 21 | 3 | 3 | 27 |
 
-Chemistry has 21 M5-specific proposed uploads plus one optional reused limiting-reactant entry branch. Biology has 24 proposed uploads. These are provisional teaching boundaries, not fixed feature quotas, completed videos or promises of separate new recordings. A shared reviewed upload can supply a prerequisite; independent review may merge or split a boundary while preserving required actions. All 37 M5 sources are assigned explicitly in the JSON, including retained, merged, split and deferred portions.
+Chemistry has 21 M5-specific proposed uploads plus one optional reused limiting-reactant entry branch. Biology now has 27 proposed focused uploads within 24 canonical route entries. The plants/fungi/bacteria/protists entry contains four separately bounded delivery parts, adding three uploads while retaining its canonical action mapping. These are provisional teaching boundaries, not fixed feature quotas, completed videos or promises of separate new recordings. A shared reviewed upload can supply a prerequisite; independent review may merge or split a boundary while preserving required actions. All 37 M5 sources are assigned explicitly in the JSON, including retained, merged, split and deferred portions.
 
 There are 25 Chemistry and 32 Biology grouped action mappings to cached paragraph IDs. All 57 have candidate route assignments, and zero have approved full required-action coverage here. Required paragraphs checked locally have candidate assignments, but exact scene-level decomposition, learner responses and practical/data evidence remain open. The existing canonical checklist does not yet certify either legacy M5 course.
 
@@ -109,3 +109,7 @@ Both opening drafts are referenced as source-review-passed/layout-pending at thi
 ## Verification
 
 Local structural checks passed: 18 Chemistry and 19 Biology M5 sources assigned, 46 unique route IDs, 57 action groups with candidate entries, local source/selected-draft paths present, cited paragraph IDs present, prerequisite/handoff IDs resolved, and no Unicode U+2014 in these two files. The external handoffs resolve to explicitly named later module routes whose next exact production selection is pending. This check is not a science, practical-conduct, voiced-preview or listening pass.
+
+## Organism-group delivery refinement, 10 October
+
+The canonical `bio-m5-b02b` route now contains four focused video parts: plants, fungi, bacteria and protists, in that learner order before mammalian development. Their exact start/stop boundaries and action references are in `deliveryParts` in the JSON and visible on the planning page. The plant-only [B3 candidate](drafts/module5-next-preparation-2026-10-10/biology-b3-plants.md) has an [independent preparation review](biology-b3-plants-preparation-review-2026-10-10.md); selected JSON, corrected diagrams, response evidence, recording and playback remain pending. The other three parts are unprepared. No canonical action ID or coverage approval is created by this subdivision.

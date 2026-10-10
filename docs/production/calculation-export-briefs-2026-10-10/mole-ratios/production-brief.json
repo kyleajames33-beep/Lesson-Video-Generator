@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+    "lessonSha256": "6914afbed82d18dc16b575c2ad7475e605306fc5cd602c54b0263332b2d60764"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Formula reading, atom conservation, balancing and mole amount. Empirical formulas is not a required prerequisite.",
+    "startsWith": "Different comparisons within the same balanced equation can have different ratios",
+    "stopsAfter": "Convert between given and wanted mole amounts under stated reaction assumptions",
+    "nextLesson": "Mass-to-mass stoichiometry using each species molar mass"
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Read conserved entity and mole ratios from a balanced equation, distinguish coefficients from subscripts and calculate a wanted amount from a given amount.",
+    "causalExplanation": "Chemical reactions rearrange atoms. The balanced coefficients encode relative numbers of reacting entities; scaling each entity count by the same factor preserves those ratios, including when amounts are measured in moles.",
+    "conversationalApproach": "Explain what each number means before naming the method. Use the unchanged water formula and the acid/base relationship to make the amount scaling understandable. Let stable working carry repeated arithmetic instead of reciting four instructions.",
+    "openingDecision": "Keep the useful recipe comparison but qualify its scope. Ask why two hydrogen molecules require one oxygen molecule, then connect the same relationship to moles. Do not promise a balanced equation alone predicts actual recovered yield.",
+    "understandingCheck": "Use the existing unseen practice task and explain the chosen relationship. The separately recorded prompt and answer have sixty silent frames from 596 to 656 in the selected revision. Answer visuals and captions wait until the gap ends. The invitation to pause longer is retained. Exact playback and listening remain pending.",
+    "curriculumScope": "Reusable balanced-equation/molar-ratio explanation. The cached continuity analysis maps 2017 p783 and 2025 ci94bdbfc4 to practical investigation of simple whole-number molar ratios. This explanation supports that task; viewing does not fulfil the practical. Keep cohort-specific mapping in descriptions/playlists, with exact coverage still pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Existing hook slide",
+      "teachingReason": "Contrast H2:H2O with O2:H2O inside one equation so the selected pair, not a memorised fraction, determines the answer.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"callout\":507}; preserved normal-pace take.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing title slide",
+      "teachingReason": "Name the calculation after the useful comparison, without a long introductory delay.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30}; preserved normal-pace take.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "concept",
+      "visualDecision": "adjust",
+      "visualReference": "Existing chem11m2CoefSub diagram",
+      "teachingReason": "Keep formulas intact while entity groups and coefficient boxes establish the scalable 2:1:2 relationship. Shift attention to the subscript without implying it is the conversion ratio.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"diagram\":30,\"callout\":536,\"secondary\":1085}; preserved normal-pace take.",
+      "motionPurpose": "Compare correct quantities in proportion; keep labels readable. Coefficient-only-moles label disabled in the selected diagram.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "reuse",
+      "visualReference": "Existing definition slide",
+      "teachingReason": "Explain conserved atom totals as the reason for balancing while preserving individual formulas.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"callout\":531}; preserved normal-pace take.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "formula",
+      "visualDecision": "adjust",
+      "visualReference": "Existing chem11m2Ratio diagram",
+      "teachingReason": "Use labelled amount crates to make doubling from 0.300 to 0.600 mol visible. This is a formal equation model with solution ions explicitly omitted.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":30,\"diagram\":30,\"secondary\":617,\"callout\":555}; preserved normal-pace take.",
+      "motionPurpose": "Compare correct quantities in proportion; keep labels readable. Coefficient-only-moles label disabled in the selected diagram.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Check conserved Fe/O totals first, then compare the selected coefficients and reduce their ratio. Keep earlier facts in a compact trail.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"body\":32,\"stepAts\":[128,458,646]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "The displayed ratio must support the spoken direction of conversion; show the reversal when it is explained, after the forward result.",
+      "narrationCue": "Current recorded cues: {\"heading\":16,\"body\":32,\"stepAts\":[292,427,588,736]}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "reuse",
+      "visualReference": "Existing misconception slide",
+      "teachingReason": "Diagnose subscripts and an upside-down ratio using the reaction relationship, then bound predictions to the stated reactant assumptions.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"body\":128,\"secondary\":392,\"callout\":898}; preserved normal-pace take.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Preserve the same hydrogen amount while asking for two different substances. Keep all answer working hidden during the separately assembled attempt.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"pausePrompt\":30,\"answerVisibleStart\":656,\"stepAts\":[656,942],\"responseHoldStart\":596}; calculation explanation uses 0.94 tempo, with all captions and later result lines retimed.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Measured answer-free interval: scene-local frames 596 to 656, exactly sixty frames at 30 fps. Invitation to pause longer remains spoken."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "reuse",
+      "visualReference": "Existing summary slide",
+      "teachingReason": "Close with selecting the known and wanted substances, then connect to the next lesson using each substance molar mass.",
+      "narrationCue": "Current recorded cues: {\"heading\":15,\"takeawayAts\":[168,358,516],\"finalPrompt\":644}; preserved normal-pace take.",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Coordinating agent (unchanged transcript and scoped display/source checks)",
+    "evidence": {
+      "path": "out/prototypes/mole-ratios-paced-2026-10-10/source-review.md",
+      "sha256": "03f5d14953743f36aaef184559c2c592e0fb8f5e99a28e60acfe8dba78435aad"
+    }
+  },
+  "voicedPreview": {
+    "status": "pass",
+    "reviewer": "Project owner, user in this conversation",
+    "mode": "rendered-pilot",
+    "inputSnapshotPath": "out/prototypes/mole-ratios-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+    "evidence": {
+      "path": "docs/production/user-calculation-review-2026-10-10.json",
+      "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Project owner accepts the exact presented rendered pilot in the current review batch. Full export has not yet been reviewed. Complete-track listening and final full-package scopes remain separately pending. Preserve prior sources, briefs and evidence."
+}

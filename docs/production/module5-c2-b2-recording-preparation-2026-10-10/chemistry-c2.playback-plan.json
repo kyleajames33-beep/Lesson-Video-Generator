@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+  "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90",
+  "playback": [
+    {
+      "sceneId": "c2-hook",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-hook",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-hook.f8a45693856d.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-model",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-model",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-model.97b6bd707920.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-collision",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-collision",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-collision.42f4a4038e02.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-rates",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-rates",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-rates.9f4a4d6befbd.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-amounts",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-amounts",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-amounts.a2c50d9b733b.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-catalyst",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-catalyst",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-catalyst.6e6e070d27a1.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-transfer",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-transfer-prompt",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-prompt.86f904d0c655.mp3"
+        },
+        {
+          "kind": "silence",
+          "seconds": 10,
+          "frames": 300
+        },
+        {
+          "kind": "audio",
+          "segmentId": "c2-transfer-feedback",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-transfer-feedback.d337ac2e28fa.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-summary",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "c2-summary",
+          "audioFile": "public/audio/Chemistry-Y12-M5-C2-selected-2026-10-10-take01/c2-summary.bedcd99b4392.mp3"
+        }
+      ]
+    }
+  ],
+  "silentScenes": [
+    {
+      "sceneId": "c2-title",
+      "durationInFrames": 120,
+      "reason": "Existing silent title; retain unchanged without inventing speech."
+    }
+  ],
+  "contract": "Use assemble-selected.mjs. Direct generic assembly expects every scene narrated and cannot accept the retained silent title.",
+  "responseSilenceStatus": "Exact frame/sample insertion planned; final prompt speech, first feedback sound and first answer exposure must be measured after recording."
+}

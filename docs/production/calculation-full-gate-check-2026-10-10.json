@@ -1,0 +1,46 @@
+{
+  "ready": false,
+  "status": "release-evidence-incomplete",
+  "blockers": [
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "science"
+    },
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "listening"
+    },
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "motion"
+    },
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "device"
+    },
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "accessibility"
+    }
+  ],
+  "reviews": {},
+  "limitation": "Checks versioned local evidence, not reviewer identity, scientific judgement, omitted records or publication permission. The brief checks declared teaching/visual decisions and exact preview evidence, not the quality of those judgements. Human listening still needs the existing full-package listening review.",
+  "teachingBrief": {
+    "ready": true,
+    "stage": "export",
+    "blockers": [],
+    "pending": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Human listening: pending"
+      }
+    ],
+    "source": {
+      "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+      "lessonSha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.",
+    "path": "docs/production/calculation-export-briefs-2026-10-10/empirical-formulas/production-brief.json",
+    "sha256": "225b3f6a637bc1a8bdf69b69f68df17b589c88967b051782b8a73c8850f800d2"
+  }
+}

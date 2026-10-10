@@ -139,6 +139,8 @@ def restore(archive_path, entries):
 parser = argparse.ArgumentParser()
 parser.add_argument('command', choices=['pack-state', 'pack-media', 'restore-state', 'restore-media'])
 parser.add_argument('archive', nargs='?')
+parser.add_argument('--skip-rebuildable-pages', action='store_true',
+                    help='Preserve current production desk/full-export HTML and rebuild it from tracked scripts after restoring evidence.')
 args = parser.parse_args()
 if args.command == 'pack-state':
     pack_state()
@@ -155,4 +157,15 @@ else:
         manifest = json.loads(archive.read('transfer-manifest.json'))
     if manifest['stateArchiveSha256'] != digest(STATE):
         raise RuntimeError('Media and checked-in state belong to different transfers. Use the matching Git revision.')
-    restore(media_path, manifest['files'])
+    entries = manifest['files']
+    if args.skip_rebuildable_pages:
+        rebuildable = {'out/prototypes/parallel-production-2026-10-10/index.html',
+                       'out/prototypes/calculation-full-review-2026-10-10/index.html'}
+        skipped = [item for item in entries if item['path'] in rebuildable]
+        with zipfile.ZipFile(media_path) as archive:
+            for item in skipped:
+                if hashlib.sha256(archive.read(item['path'])).hexdigest() != item['sha256']:
+                    raise RuntimeError('Skipped page archive hash mismatch: ' + item['path'])
+        entries = [item for item in entries if item['path'] not in rebuildable]
+        print(json.dumps({'preservedRebuildablePages': [item['path'] for item in skipped]}))
+    restore(media_path, entries)

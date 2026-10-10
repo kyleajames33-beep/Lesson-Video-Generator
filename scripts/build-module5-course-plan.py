@@ -36,7 +36,7 @@ def build():
 <nav class="links"><a href="#Chemistry">Chemistry</a><a href="#Biology">Biology</a><a href="/video-syllabus-map-2026-10-09/">Full video catalogue and syllabus mapping</a><a href="/parallel-production-2026-10-10/">Draft scripts and production desk</a><a href="route.json">Download this planning record</a></nav>''']
     for subject, group in data['subjects'].items():
         entries = group['entries']
-        counts = {kind: sum(row['type'] == kind for row in entries)
+        counts = {kind: sum(len(row.get('deliveryParts', [])) or 1 for row in entries if row['type'] == kind)
                   for kind in ['core', 'companion', 'practical-support']}
         parts.append(f'<section id="{e(subject)}"><h2>{e(subject)} Module 5</h2><p>{e(group["sourceCandidateCount"])} existing source candidates. Proposed route: {counts["core"]} core lessons, {counts["companion"]} companions and {counts["practical-support"]} practical support videos.</p>')
         for row in entries:
@@ -47,7 +47,12 @@ def build():
             parts.append(f'<article id="{e(row["id"])}"><p class="tag">{e(row["id"])} · {e(row["type"])} · {e(row["status"])}</p><h3>{prefix}. {e(row["title"])}</h3><p><strong>Before this:</strong> {e(row["entryKnowledge"])}</p><p><strong>Start:</strong> {e(row["start"])}</p><p><strong>Stop:</strong> {e(row["stop"])}</p><p><strong>Next:</strong> {next_links(next_ids)}</p><details><summary>Syllabus alignment and source plan</summary><ul>')
             for action in references:
                 parts.append(f'<li><strong>{e(action["id"])}</strong>: {e(action["paraphrase"])}<br><span class="tag"><a href="{e(action["officialUrl"])}">Official syllabus</a>, cached extract: {joined(action["paragraphIds"])}. {e(action["status"])}</span></li>')
-            parts.append('</ul><p class="detail"><strong>Source candidates:</strong> ' + joined(item['path'] for item in row['sourceCandidates']) + '</p><p><strong>Coverage:</strong> ' + e(row['coverageStatus']) + '</p></details></article>')
+            delivery = ''
+            if row.get('deliveryParts'):
+                delivery = '<div class="note"><h4>Focused video parts within this route</h4><ol>' + ''.join(
+                    f'<li><strong>{e(piece["title"])}</strong><br>Start: {e(piece["start"])}<br>Stop: {e(piece["stop"])}<br>Syllabus: {joined(piece["syllabusActions"])}. State: {e(piece["status"])}.</li>'
+                    for piece in row['deliveryParts']) + '</ol><p>' + e(row['deliveryNote']) + '</p></div>'
+            parts.append('</ul><p class="detail"><strong>Source candidates:</strong> ' + joined(item['path'] for item in row['sourceCandidates']) + '</p><p><strong>Coverage:</strong> ' + e(row['coverageStatus']) + '</p></details>' + delivery + '</article>')
         parts.append('</section>')
     parts.append('<section><h2>Open coverage work</h2><p>A video can prepare learners for an investigation; watching it does not establish that they conducted it.</p><ul>')
     for gap in data['gaps']:

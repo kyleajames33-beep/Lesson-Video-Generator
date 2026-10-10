@@ -1,0 +1,207 @@
+{
+  "author": "Sol 6.1 recording-preparation author",
+  "date": "2026-10-10",
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established selected narrator and conversational v4 settings. Fresh takes require actual listening; voice selection is not take approval."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "settingsBasis": [
+    "out/prototypes/limiting-conversational-2026-10-09/request-options.json",
+    "out/prototypes/mole-ratios-voiced-2026-10-09/request-options.json"
+  ],
+  "approvedControls": "Existing v4 timestamped single-narrator dialogue endpoint; settings.stability and settings.similarity. No v4 speed, style, speaker boost or SSML is supplied.",
+  "packages": [
+    {
+      "key": "chemistry-c2",
+      "source": {
+        "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+        "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+      },
+      "segmentPlanSha256": "d22b8ce89ea5ecc3764aff818f62c6908f1d003c80392001e3b2a65bb8910ba7",
+      "manifest": {
+        "path": "docs/production/module5-c2-b2-recording-preparation-2026-10-10/chemistry-c2.voice-manifest.json",
+        "sha256": "602ed4fdda71ac4e272556d5e40c4e3bf06c907dcbb5b0c396ad6b13baf52c89"
+      },
+      "segments": 9,
+      "spokenCharacters": 5208,
+      "maximumSegmentCharacters": 813,
+      "responseSilenceSeconds": 10,
+      "recordingGate": {
+        "ready": true,
+        "stage": "recording",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+          "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "plannedAudioPathsAllAbsent": true,
+      "textHashes": [
+        {
+          "id": "c2-hook",
+          "parentSceneId": "c2-hook",
+          "sha256": "f8a45693856d2d808c942bd32398452d0035259616a9d1f7dc4f8601cc2502ad"
+        },
+        {
+          "id": "c2-model",
+          "parentSceneId": "c2-model",
+          "sha256": "97b6bd7079201abb76d516e3da19c7bbc9b6954c00c2a2c1853857f8906573cc"
+        },
+        {
+          "id": "c2-collision",
+          "parentSceneId": "c2-collision",
+          "sha256": "42f4a4038e02a3a4dbdb86d68d7523e7f781f312693c25c08f09a964bc5b46b4"
+        },
+        {
+          "id": "c2-rates",
+          "parentSceneId": "c2-rates",
+          "sha256": "9f4a4d6befbd398cf6177e47ee15383bdd2089c17a2cb6844a15b3b0697ad982"
+        },
+        {
+          "id": "c2-amounts",
+          "parentSceneId": "c2-amounts",
+          "sha256": "a2c50d9b733b2ae0ff74cd50133f2e7a2e91cad7d6e70363886b95b4c89da863"
+        },
+        {
+          "id": "c2-catalyst",
+          "parentSceneId": "c2-catalyst",
+          "sha256": "6e6e070d27a1d6919fbe652ed3e796b6dd5a898d962687a2d46dbfe28f09f337"
+        },
+        {
+          "id": "c2-transfer-prompt",
+          "parentSceneId": "c2-transfer",
+          "sha256": "86f904d0c6559cdca2a93c15d3af7297f0f105a1bbc24dbb93fbd26adb734cea"
+        },
+        {
+          "id": "c2-transfer-feedback",
+          "parentSceneId": "c2-transfer",
+          "sha256": "d337ac2e28faeca3596e2c0f94d22d755fa3f55e9af4d42c947d1aa07c0a9687"
+        },
+        {
+          "id": "c2-summary",
+          "parentSceneId": "c2-summary",
+          "sha256": "bedcd99b4392fd3629d45d8e6632cfc3a21aa09655367097a14c080e3703a90a"
+        }
+      ]
+    },
+    {
+      "key": "biology-b2",
+      "source": {
+        "lessonPath": "docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+        "lessonSha256": "a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af"
+      },
+      "segmentPlanSha256": "0bcda87a5a639be1c8bef53c6367e21fba236298cafae9926f4dd64c5c8e274f",
+      "manifest": {
+        "path": "docs/production/module5-c2-b2-recording-preparation-2026-10-10/biology-b2.voice-manifest.json",
+        "sha256": "98e4e6b4a4987fefe94904de2b8a0f08ce4cca52ccb09f1eb97d0a1351e9044b"
+      },
+      "segments": 11,
+      "spokenCharacters": 6485,
+      "maximumSegmentCharacters": 704,
+      "responseSilenceSeconds": 12,
+      "recordingGate": {
+        "ready": true,
+        "stage": "recording",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+          "lessonSha256": "a9caaa09366537f56d1ea60cee0184313a62a421b9b64e76b023ae5c112ca8af"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "plannedAudioPathsAllAbsent": true,
+      "textHashes": [
+        {
+          "id": "b2-hook",
+          "parentSceneId": "hook",
+          "sha256": "fbdfc5c6faf9f674d4655515041276d03797a2932017e8e417bd3249035dae87"
+        },
+        {
+          "id": "b2-fertilisation",
+          "parentSceneId": "concept-fertilisation",
+          "sha256": "63a2477eee290fa73785aa56b458ca077bc209181e2385582c358ba162849500"
+        },
+        {
+          "id": "b2-hydra",
+          "parentSceneId": "concept-asexual-animal",
+          "sha256": "b10e0923c9d76d4b61c9ab5c2585479be5e5317c5626b2a986071537823e9618"
+        },
+        {
+          "id": "b2-external",
+          "parentSceneId": "concept-external",
+          "sha256": "d5357096684ac811902696183ea2ff5c0feb423bd564179a90b168e2ad293858"
+        },
+        {
+          "id": "b2-internal",
+          "parentSceneId": "concept-internal",
+          "sha256": "c1021a96de711aa38dafeabc3a0a68045c857a5bb8e21638a5c6269e3d3476ea"
+        },
+        {
+          "id": "b2-comparison",
+          "parentSceneId": "definition-comparison",
+          "sha256": "27ef2671c9cc3659edbef1e48477990694b304b7271d90fba029518c654f2a7f"
+        },
+        {
+          "id": "b2-worked",
+          "parentSceneId": "worked-example",
+          "sha256": "53e28e4e1b7f0ec049ddc4e1ccc062d2cf0ebb8d3991ba64bb40a9dc82f7ee3b"
+        },
+        {
+          "id": "b2-misconception",
+          "parentSceneId": "misconception",
+          "sha256": "df09400ae702cc28021cd903821c60991322634c9fc4ef2def8c7e6b70790e6b"
+        },
+        {
+          "id": "b2-check-prompt",
+          "parentSceneId": "quick-check",
+          "sha256": "46f7bf28f159cd62062c9d84e0c1ada0be36ba9c6f09f8895c1b6524d6630974"
+        },
+        {
+          "id": "b2-check-feedback",
+          "parentSceneId": "quick-check",
+          "sha256": "338f01c203f27dc6a9608357dd0bf0801a32f349d2e1990b9d731526e852c50c"
+        },
+        {
+          "id": "b2-summary",
+          "parentSceneId": "summary",
+          "sha256": "0e1ac2352edd5f6912e0676420cf43162802eea734cb466824189de53e612ef7"
+        }
+      ]
+    }
+  ],
+  "paidRequestsSent": 0,
+  "audioCopied": 0,
+  "humanListening": "pending",
+  "limitations": [
+    "Dry-run request validation is not generated media or pronunciation evidence.",
+    "Frozen sources and their briefs were read only."
+  ]
+}

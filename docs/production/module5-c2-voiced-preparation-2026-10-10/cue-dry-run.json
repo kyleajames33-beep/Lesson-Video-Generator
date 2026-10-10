@@ -1,0 +1,685 @@
+{
+  "schemaVersion": 1,
+  "status": "measured-author-candidate-pending-independent-review-and-voiced-preview",
+  "units": {
+    "bulletAt": "seconds",
+    "revealDelays": "scene-local frames",
+    "diagramProps": "scene-local frames",
+    "lineAts": "scene-local frames"
+  },
+  "rounding": "Cue start frames ceil(aligned seconds * fps), never before their aligned words.",
+  "source": {
+    "path": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+    "sha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+  },
+  "assemblyInputs": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "2c8426e90d7763d2e61fb34aca401a94fb42eb979cadb9d01ff90da6542e72a8"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "6ec7d43a03d32ff02ca50df56da046385ecf0a7152143f028e2a1641d7d34267"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "1f27d4cb94bbf0773629680f0d33fc6a96434f7ebebc83c95302509300ba2b0f"
+    }
+  ],
+  "consumerInputs": [
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx",
+      "sha256": "b8835d473de45ccaa2fa46381a4eb642c7bc621bc241dbdada070a01bfa86045"
+    },
+    {
+      "path": "src/animations/BulletReveal.tsx",
+      "sha256": "335259c068a369e53d27b4d626902090eed24f66a297e4d6b64d1dbb70b41576"
+    },
+    {
+      "path": "src/lesson/answer-timing.mjs",
+      "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "b1becf6b04e2b90341b2b35dafc9b99e3407d01967e844c5664556c1f0adbca9"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+    },
+    {
+      "path": "src/slides/SummarySlide.tsx",
+      "sha256": "6aed4e82a19f808a237b9526f9490d699ab18405a10eca77501979342c922c06"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    }
+  ],
+  "scenes": [
+    {
+      "sceneId": "c2-hook",
+      "spokenTextSha256": "f8a45693856d2d808c942bd32398452d0035259616a9d1f7dc4f8601cc2502ad",
+      "audioFile": "public/audio/assembled/c2-hook.7c747b18c0ba76e75d98.f8a45693856d.wav",
+      "audioSha256": "b4b9f9d6c60ae1c9dcca1f87182dfefa265fa3f43d4ab8af774ff30c027086c2",
+      "alignmentPath": "public/audio/assembled/c2-hook.7c747b18c0ba76e75d98.f8a45693856d.alignment.json",
+      "alignmentSha256": "8ca6c215d4e215d1dd369f471a920b6ceb05a056125e38b141b8d84fac5d4e83",
+      "oldDurationInFrames": 929,
+      "mediaFrames": 790,
+      "cues": [
+        {
+          "phrase": "As B forms,",
+          "edge": "start",
+          "alignedSeconds": 12.64,
+          "frame": 380,
+          "purpose": "Question text introduces the overlap challenge."
+        },
+        {
+          "phrase": "Imagine a reversible reaction",
+          "edge": "start",
+          "alignedSeconds": 8.64,
+          "frame": 260,
+          "purpose": "A-only diagram enters with the stated starting system."
+        },
+        {
+          "phrase": "It can turn back",
+          "edge": "start",
+          "alignedSeconds": 20.48,
+          "frame": 615,
+          "purpose": "Reverse arrow and overlap answer start with the feedback."
+        }
+      ],
+      "newDurationInFrames": 859,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 12,
+        "body": 380,
+        "diagram": 260,
+        "callout": 615
+      },
+      "finalDiagramProps": {
+        "mode": "hook",
+        "reverseAt": 615
+      },
+      "finalBulletCuesSeconds": []
+    },
+    {
+      "sceneId": "c2-model",
+      "spokenTextSha256": "97b6bd7079201abb76d516e3da19c7bbc9b6954c00c2a2c1853857f8906573cc",
+      "audioFile": "public/audio/assembled/c2-model.a2945f36428722e3c93d.97b6bd707920.wav",
+      "audioSha256": "e72479cf2e03b0df5dcb6e02ab8aa1143733c817e8c6cd72da4085acbeadd48a",
+      "alignmentPath": "public/audio/assembled/c2-model.a2945f36428722e3c93d.97b6bd707920.alignment.json",
+      "alignmentSha256": "d19439250002757c90d8b17e853973b1a7cfaaf80d2f4289d375beec87d3dc54",
+      "oldDurationInFrames": 1314,
+      "mediaFrames": 1049,
+      "cues": [
+        {
+          "phrase": "One A can become one B",
+          "edge": "start",
+          "alignedSeconds": 3.76,
+          "frame": 113,
+          "purpose": "One-to-one conversion statement."
+        },
+        {
+          "phrase": "At the beginning",
+          "edge": "start",
+          "alignedSeconds": 19.6,
+          "frame": 588,
+          "purpose": "A-only declaration."
+        },
+        {
+          "phrase": "we are following a simple model",
+          "edge": "start",
+          "alignedSeconds": 12.52,
+          "frame": 376,
+          "purpose": "First-order restriction is introduced with the declared model."
+        },
+        {
+          "phrase": "The container is closed",
+          "edge": "start",
+          "alignedSeconds": 8.32,
+          "frame": 250,
+          "purpose": "Supporting fixed-system qualifiers."
+        },
+        {
+          "phrase": "there is no B to convert yet.",
+          "edge": "end",
+          "alignedSeconds": 29.32,
+          "frame": 880,
+          "purpose": "Model remains exactly A-only through the zero-reverse explanation."
+        },
+        {
+          "phrase": "It does not mean",
+          "edge": "start",
+          "alignedSeconds": 32.36,
+          "frame": 971,
+          "purpose": "Closed versus insulated distinction."
+        }
+      ],
+      "modelFirstPositiveReverseFrame": 881,
+      "newDurationInFrames": 1118,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 250,
+        "callout": 971
+      },
+      "finalDiagramProps": {
+        "mode": "model",
+        "runAt": 880
+      },
+      "finalBulletCuesSeconds": [
+        {
+          "text": "One A becomes one B.",
+          "at": 3.7666666666666666
+        },
+        {
+          "text": "A-only start: no B to convert back.",
+          "at": 19.6
+        },
+        {
+          "text": "Fixed first-order coefficients, not a general rate law.",
+          "at": 12.533333333333333
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-collision",
+      "spokenTextSha256": "42f4a4038e02a3a4dbdb86d68d7523e7f781f312693c25c08f09a964bc5b46b4",
+      "audioFile": "public/audio/assembled/c2-collision.191db3762321824a6b4b.42f4a4038e02.wav",
+      "audioSha256": "f8e59001a2a341a8d54775d4b499ac24c4fa302a3c4a6cadcdbcc46a3de889eb",
+      "alignmentPath": "public/audio/assembled/c2-collision.191db3762321824a6b4b.42f4a4038e02.alignment.json",
+      "alignmentSha256": "4fe8a5e117f9161cf1bbbbdee6e3d446ce3b11403932f0afdd05263f8e22775c",
+      "oldDurationInFrames": 1711,
+      "mediaFrames": 1642,
+      "cues": [
+        {
+          "phrase": "The particles also need enough energy",
+          "edge": "start",
+          "alignedSeconds": 9.12,
+          "frame": 274,
+          "purpose": "Effective collision conditions."
+        },
+        {
+          "phrase": "With more nitrogen dioxide molecules",
+          "edge": "start",
+          "alignedSeconds": 30.48,
+          "frame": 915,
+          "purpose": "More concentration gives more meeting opportunities."
+        },
+        {
+          "phrase": "For example, two nitrogen dioxide molecules",
+          "edge": "start",
+          "alignedSeconds": 23.92,
+          "frame": 718,
+          "purpose": "Distinct two-to-one association visual enters with its example."
+        },
+        {
+          "phrase": "Activation energy is",
+          "edge": "start",
+          "alignedSeconds": 14.32,
+          "frame": 430,
+          "purpose": "Barrier definition."
+        },
+        {
+          "phrase": "Our A-to-B arrows only track conversion",
+          "edge": "start",
+          "alignedSeconds": 39.12,
+          "frame": 1174,
+          "purpose": "Separate conversion model from collision mechanism."
+        }
+      ],
+      "newDurationInFrames": 1711,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 718,
+        "secondary": 1174,
+        "callout": 430
+      },
+      "finalDiagramProps": {
+        "mode": "association"
+      },
+      "finalBulletCuesSeconds": [
+        {
+          "text": "Enough energy and a suitable arrangement.",
+          "at": 9.133333333333333
+        },
+        {
+          "text": "More particles in the same volume: more opportunities to meet.",
+          "at": 30.5
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-rates",
+      "spokenTextSha256": "9f4a4d6befbd398cf6177e47ee15383bdd2089c17a2cb6844a15b3b0697ad982",
+      "audioFile": "public/audio/assembled/c2-rates.835a1f3aab12b3cbbd8e.9f4a4d6befbd.wav",
+      "audioSha256": "b09e1c9b951af54601214488c6eecd845d0e0a8cdf47c76ee710f4f5997713d4",
+      "alignmentPath": "public/audio/assembled/c2-rates.835a1f3aab12b3cbbd8e.9f4a4d6befbd.alignment.json",
+      "alignmentSha256": "750aebe7b1ba7db3ca59da5a3d853653b3444708d5d6702f440770c57a0e9eaf",
+      "oldDurationInFrames": 1173,
+      "mediaFrames": 1104,
+      "cues": [
+        {
+          "phrase": "As A decreases",
+          "edge": "start",
+          "alignedSeconds": 6.4,
+          "frame": 192,
+          "purpose": "Forward curve and cause appear together."
+        },
+        {
+          "phrase": "As B builds up",
+          "edge": "start",
+          "alignedSeconds": 9.84,
+          "frame": 296,
+          "purpose": "Reverse curve and cause appear together."
+        },
+        {
+          "phrase": "At equilibrium,",
+          "edge": "start",
+          "alignedSeconds": 28.4,
+          "frame": 852,
+          "purpose": "Separate exact limiting-state card, after both finite traces."
+        },
+        {
+          "phrase": "The rate graph shows",
+          "edge": "start",
+          "alignedSeconds": 18.72,
+          "frame": 562,
+          "purpose": "Scale and finite-versus-limit qualifier."
+        }
+      ],
+      "newDurationInFrames": 1173,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 562,
+        "callout": 852
+      },
+      "finalDiagramProps": {
+        "mode": "rates",
+        "forwardAt": 192,
+        "reverseAt": 296,
+        "limitAt": 852
+      },
+      "finalBulletCuesSeconds": [
+        {
+          "text": "Less A: forward rate falls.",
+          "at": 6.4
+        },
+        {
+          "text": "More B: reverse rate rises.",
+          "at": 9.866666666666667
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-amounts",
+      "spokenTextSha256": "a2c50d9b733b2ae0ff74cd50133f2e7a2e91cad7d6e70363886b95b4c89da863",
+      "audioFile": "public/audio/assembled/c2-amounts.76aa495266feb114227d.a2c50d9b733b.wav",
+      "audioSha256": "926a2ed4a7527a9836a1d90be376686e67a371d1eb250e62e621388eb42ed985",
+      "alignmentPath": "public/audio/assembled/c2-amounts.76aa495266feb114227d.a2c50d9b733b.alignment.json",
+      "alignmentSha256": "39edd1c38f4133b36a28fd861d737ad8e7d24da4c92ba519af3279aeb30c403d",
+      "oldDurationInFrames": 1115,
+      "mediaFrames": 1016,
+      "cues": [
+        {
+          "phrase": "A decreases",
+          "edge": "start",
+          "alignedSeconds": 2.56,
+          "frame": 77,
+          "purpose": "A concentration curve."
+        },
+        {
+          "phrase": "B increases",
+          "edge": "start",
+          "alignedSeconds": 4.08,
+          "frame": 123,
+          "purpose": "B concentration curve."
+        },
+        {
+          "phrase": "Their two final levels",
+          "edge": "start",
+          "alignedSeconds": 7.44,
+          "frame": 224,
+          "purpose": "Unequal limiting-concentration statement is separate from finite traces."
+        },
+        {
+          "phrase": "Rate tells us",
+          "edge": "start",
+          "alignedSeconds": 15.84,
+          "frame": 476,
+          "purpose": "Rate definition."
+        },
+        {
+          "phrase": "Concentration tells us",
+          "edge": "start",
+          "alignedSeconds": 18.72,
+          "frame": 562,
+          "purpose": "Concentration definition."
+        },
+        {
+          "phrase": "If a mixture began with excess B",
+          "edge": "start",
+          "alignedSeconds": 27.84,
+          "frame": 836,
+          "purpose": "A different initial condition can reverse approach."
+        }
+      ],
+      "newDurationInFrames": 1085,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 224,
+        "callout": 836
+      },
+      "finalDiagramProps": {
+        "mode": "amounts",
+        "forwardAt": 77,
+        "reverseAt": 123,
+        "limitAt": 224
+      },
+      "finalBulletCuesSeconds": [
+        {
+          "text": "Rate: conversion per time.",
+          "at": 15.866666666666667
+        },
+        {
+          "text": "Concentration: amount per volume.",
+          "at": 18.733333333333334
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-catalyst",
+      "spokenTextSha256": "6e6e070d27a1d6919fbe652ed3e796b6dd5a898d962687a2d46dbfe28f09f337",
+      "audioFile": "public/audio/assembled/c2-catalyst.23713f3a1a92ba0dc786.6e6e070d27a1.wav",
+      "audioSha256": "6b826b87b7cb58cf61d4658a09bc47b7a8dd2a0831f739dd316dada3fe88af38",
+      "alignmentPath": "public/audio/assembled/c2-catalyst.23713f3a1a92ba0dc786.6e6e070d27a1.alignment.json",
+      "alignmentSha256": "0effb33d4b67aa1300c9da0fc1f91ebd7bf5db88d6819fbe5d42b580deabe722",
+      "oldDurationInFrames": 1413,
+      "mediaFrames": 1342,
+      "cues": [
+        {
+          "phrase": "A catalyst provides",
+          "edge": "start",
+          "alignedSeconds": 7.12,
+          "frame": 214,
+          "purpose": "Lower effective activation barrier."
+        },
+        {
+          "phrase": "It does not change the energies",
+          "edge": "start",
+          "alignedSeconds": 17.36,
+          "frame": 521,
+          "purpose": "Unchanged overall endpoint energies."
+        },
+        {
+          "phrase": "In our comparison,",
+          "edge": "start",
+          "alignedSeconds": 24.96,
+          "frame": 749,
+          "purpose": "Concentration comparison enters after pathway explanation."
+        },
+        {
+          "phrase": "same final level sooner",
+          "edge": "start",
+          "alignedSeconds": 27.44,
+          "frame": 824,
+          "purpose": "Shared limiting level stated explicitly."
+        },
+        {
+          "phrase": "At an early comparison time,",
+          "edge": "start",
+          "alignedSeconds": 29.52,
+          "frame": 886,
+          "purpose": "Early-time marker appears only for the early comparison."
+        },
+        {
+          "phrase": "Once both mixtures reach equilibrium,",
+          "edge": "start",
+          "alignedSeconds": 36.16,
+          "frame": 1085,
+          "purpose": "Early marker removed when final equilibrium is compared."
+        },
+        {
+          "phrase": "Suppose we repeat the same starting mixture",
+          "edge": "start",
+          "alignedSeconds": 0,
+          "frame": 0,
+          "purpose": "Conditions and schematic qualifier remain with comparison setup."
+        }
+      ],
+      "curvesFullyDrawnAt": 1019,
+      "earlyMarkerRemovalFrame": 1085,
+      "newDurationInFrames": 1411,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 0,
+        "callout": 1085
+      },
+      "finalDiagramProps": {
+        "mode": "catalyst",
+        "graphAt": 749,
+        "limitAt": 824,
+        "comparisonAt": 886,
+        "comparisonEnd": 1085
+      },
+      "finalBulletCuesSeconds": [
+        {
+          "text": "Alternative pathway with a lower effective barrier.",
+          "at": 7.133333333333334
+        },
+        {
+          "text": "Overall endpoint energies stay the same.",
+          "at": 17.366666666666667
+        }
+      ]
+    },
+    {
+      "sceneId": "c2-transfer",
+      "spokenTextSha256": "e4febc8359151c97fa229cfe7ec4dbcb44e0d4a427b0a97ca759445e7204a4ec",
+      "audioFile": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.wav",
+      "audioSha256": "86b024c75440f3749dae790f5a4bd4704c6fcd504928ff0c7c788abd02d9d8b3",
+      "alignmentPath": "public/audio/assembled/c2-transfer.d6ba64f4f0eaec9537aa.e4febc835915.alignment.json",
+      "alignmentSha256": "e11ea820668352986c211b3f50d6cf836f5e64ef7b7fa0e67adcf2b23df7ecfd",
+      "oldDurationInFrames": 2878,
+      "mediaFrames": 2809,
+      "cues": [
+        {
+          "phrase": "Take a moment,",
+          "edge": "start",
+          "alignedSeconds": 36.24,
+          "frame": 1088,
+          "purpose": "Pause invitation before assembled response silence."
+        },
+        {
+          "phrase": "C initially increases.",
+          "edge": "start",
+          "alignedSeconds": 49.06666666666667,
+          "frame": 1472,
+          "purpose": "First feedback result after the response interval."
+        },
+        {
+          "phrase": "The reverse process makes C",
+          "edge": "start",
+          "alignedSeconds": 51.46666666666667,
+          "frame": 1544,
+          "purpose": "Direction reasoning line."
+        },
+        {
+          "phrase": "at six units while",
+          "edge": "start",
+          "alignedSeconds": 53.30666666666667,
+          "frame": 1600,
+          "purpose": "Compare supplied rates after direction reasoning."
+        },
+        {
+          "phrase": "net four units towards C.",
+          "edge": "start",
+          "alignedSeconds": 63.62666666666667,
+          "frame": 1909,
+          "purpose": "Net result is withheld until its exact spoken phrase."
+        },
+        {
+          "phrase": "With the suitable catalyst,",
+          "edge": "start",
+          "alignedSeconds": 72.82666666666667,
+          "frame": 2185,
+          "purpose": "Advance to catalyst final-composition comparison."
+        },
+        {
+          "phrase": "sooner under the same conditions.",
+          "edge": "start",
+          "alignedSeconds": 77.94666666666667,
+          "frame": 2339,
+          "purpose": "Faster approach line at its spoken result."
+        },
+        {
+          "phrase": "It does not finish with a different equilibrium concentration of D.",
+          "edge": "start",
+          "alignedSeconds": 80.42666666666668,
+          "frame": 2413,
+          "purpose": "Final D result at the explicit contrast."
+        }
+      ],
+      "response": {
+        "startFrame": 1172,
+        "endFrame": 1472,
+        "silenceFrames": 300,
+        "firstFeedbackFrame": 1472,
+        "captionsAbsentThroughoutInterval": true,
+        "stages": [
+          1472,
+          1600,
+          2185
+        ],
+        "lineAts": [
+          [
+            1544,
+            1472
+          ],
+          [
+            1600,
+            1909
+          ],
+          [
+            2413,
+            2339
+          ]
+        ]
+      },
+      "newDurationInFrames": 2878,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "heading": 24,
+        "pausePrompt": 1088,
+        "responseHoldStart": 1172,
+        "answerVisibleStart": 1472,
+        "stepAts": [
+          1472,
+          1600,
+          2185
+        ]
+      },
+      "finalDiagramProps": {},
+      "finalBulletCuesSeconds": []
+    },
+    {
+      "sceneId": "c2-summary",
+      "spokenTextSha256": "bedcd99b4392fd3629d45d8e6632cfc3a21aa09655367097a14c080e3703a90a",
+      "audioFile": "public/audio/assembled/c2-summary.be0c718aac7075b38e60.bedcd99b4392.wav",
+      "audioSha256": "46c9338715bf5d6f9bff6bcc93068b001e5a4cb19120270b46e9bd9f1b41634b",
+      "alignmentPath": "public/audio/assembled/c2-summary.be0c718aac7075b38e60.bedcd99b4392.alignment.json",
+      "alignmentSha256": "6d4490657e8e2e6ee48b2e2a4bba01eb29db7cdaa3a0d953e50b4646f5f7b828",
+      "oldDurationInFrames": 1152,
+      "mediaFrames": 1076,
+      "cues": [
+        {
+          "phrase": "A reversible reaction can run in both directions",
+          "edge": "start",
+          "alignedSeconds": 0,
+          "frame": 0,
+          "purpose": "Opposing process recap."
+        },
+        {
+          "phrase": "Equilibrium is the balance",
+          "edge": "start",
+          "alignedSeconds": 13.2,
+          "frame": 396,
+          "purpose": "Rate versus concentration recap."
+        },
+        {
+          "phrase": "A suitable catalyst",
+          "edge": "start",
+          "alignedSeconds": 19.92,
+          "frame": 598,
+          "purpose": "Catalyst recap."
+        },
+        {
+          "phrase": "Next, we will start",
+          "edge": "start",
+          "alignedSeconds": 28.64,
+          "frame": 860,
+          "purpose": "C3 progression handoff."
+        }
+      ],
+      "newDurationInFrames": 1145,
+      "tailAndTransitionAllowanceFrames": 69,
+      "finalRevealDelays": {
+        "takeawayAts": [
+          0,
+          396,
+          598
+        ],
+        "finalPrompt": 860
+      },
+      "finalDiagramProps": {},
+      "finalBulletCuesSeconds": []
+    }
+  ],
+  "durationInFrames": 11308,
+  "durationSeconds": 376.93333333333334,
+  "captionCueCount": 142,
+  "limitations": [
+    "Character alignment and source checks are measured timing evidence. No human listening or exact voiced playback approval is supplied.",
+    "Fixed graph drawing lasts 150 frames per curve. Catalyst uncatalysed curve starts 120 frames later; existing component is unchanged.",
+    "Model bullet numbering briefly skips an unrevealed row because its source order is unchanged. This was a nonblocking silent review observation.",
+    "Dense qualifier and narrow supporting text readability still require voiced preview on the intended device.",
+    "Root added bounded silent-title support to timeline narration after historical recording preparation. This does not alter selected source or audio."
+  ],
+  "outputs": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "219d0f7e17be85f11fe6071ead45f0e35744e44e0fdfe918d3db8acd9f937502"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "cfa73f68e3cefdeb1915448cf0590caaeaac7a2567c391b68e6d120211e21b61"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.srt",
+      "sha256": "e4d62270fd572bbf3173610355c5fc4614d67116cc20b1bc9d7f220ff8aceaff"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.vtt",
+      "sha256": "95d682f79c01dff658e7240c0abcfec2061875b30c77435df16479e4f9a57590"
+    }
+  ]
+}
+

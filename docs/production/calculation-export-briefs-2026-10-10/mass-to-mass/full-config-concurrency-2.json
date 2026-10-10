@@ -1,0 +1,30 @@
+{
+  "lessonPath": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+  "entryPoint": "src/dev/release-entry.tsx",
+  "compositionId": "Lesson-release",
+  "codec": "h264",
+  "scale": 1,
+  "crf": 16,
+  "concurrency": 2,
+  "audioMode": "alignedPcm",
+  "normalizeAudio": true,
+  "teachingBriefPath": "docs/production/calculation-export-briefs-2026-10-10/mass-to-mass/production-brief.json",
+  "inputs": [
+    "docs/production/calculation-feedback-2026-10-10.json",
+    "scripts/prepare-paced-feedback.py",
+    "out/prototypes/mass-to-mass-voiced-2026-10-09/narrated.lesson.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.mp3",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.alignment.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.generation.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.mp3",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.alignment.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.generation.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.mp3",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.alignment.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.generation.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.mp3",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.alignment.json",
+    "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.generation.json",
+    "out/prototypes/mass-to-mass-paced-2026-10-10/tempo-derivation.json"
+  ]
+}

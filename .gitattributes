@@ -447,3 +447,20 @@ src/slides/diagrams/kinds/bio-y12-m5/Module5LineageDiagram.tsx -text whitespace=
 
 # Preserve the exact next-lesson preparation review records.
 docs/production/*-preparation-review-2026-10-10.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve exact selected review and additive export evidence across checkout.
+docs/production/calculation-export-briefs-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/user-calculation-review-2026-10-10.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/review-page-access-2026-10-10.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/calculation-export-preparation-2026-10-10.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c2-b2-recording-preparation-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c2-voiced-preparation-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-b2-voiced-preparation-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c2-b2-preview-briefs-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/slides/diagrams/kinds/bio-y12-m5/Module5AnimalReproductionDiagram.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve terminal blank lines in immutable measured author records.
+docs/production/module5-c2-voiced-preparation-2026-10-10/cue-application.json -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c2-voiced-preparation-2026-10-10/cue-dry-run.json -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c2-voiced-preparation-2026-10-10/v2-author-check.json -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

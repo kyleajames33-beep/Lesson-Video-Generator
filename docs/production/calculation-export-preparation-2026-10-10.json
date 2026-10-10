@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-10T01:33:59.166Z",
+  "reviewer": "Sol 6.1 independent release-preparation review",
+  "scope": "Read-only inspection and additive suggestions. No package, brief, approval or publication changes.",
+  "userFeedback": {
+    "quote": "yes im happy with all of those videos",
+    "context": "After current calculation review-page link.",
+    "interpretation": "Accepts available review-page candidates. Record as preview acceptance for those exact pilots. Does not establish unseen full-MP4 review or explicit complete-audio listening.",
+    "record": {
+      "path": "docs/production/user-calculation-review-2026-10-10.json",
+      "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+    }
+  },
+  "runtime": {
+    "path": "out/checks/review-batch-byte-preserved-2026-10-09",
+    "commit": "5ff1e4a2851193d4bad26750145592c1ae97d4bf",
+    "renderWorkingDirectory": "C:\\lesson-video-generator\\out\\checks\\review-batch-byte-preserved-2026-10-09",
+    "warning": "Pinned release-gate contains historical multiple-MP4 selection bug. Use corrected main release-gate adapter with pinned workspace root after full render. Do not alter tracked pinned runtime or frozen pilot dependencies."
+  },
+  "lessons": [
+    {
+      "key": "empirical-formulas",
+      "currentConfig": "out/prototypes/empirical-formulas-paced-2026-10-10/full-config.json",
+      "currentConfigValues": {
+        "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/prototypes/empirical-formulas-paced-2026-10-10/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.generation.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.generation.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.generation.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.generation.json",
+          "out/prototypes/empirical-formulas-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "configMatchesMainBytes": true,
+      "fullRange": true,
+      "pinnedPilotVerification": {
+        "valid": true,
+        "packageSha256": "5b56a16c269b75d28493364bb8f5548d38c45ea983352c6739f348f3ec688abf",
+        "changes": [],
+        "missingRequired": []
+      },
+      "exportBriefCheck": {
+        "ready": false,
+        "stage": "export",
+        "blockers": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          }
+        ],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+          "lessonSha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "suggestedAdditiveFolder": "out/production/calculation-release-preparation-2026-10-10/empirical-formulas",
+      "suggestedConfig": {
+        "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.generation.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.generation.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.generation.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.mp3",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.alignment.json",
+          "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.generation.json",
+          "out/prototypes/empirical-formulas-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "suggestedGateConfig": {
+        "snapshotPath": "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/full-render-01/release.snapshot.json",
+        "inputSnapshotPath": "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/full-render-01/inputs.snapshot.json",
+        "renderRecordPath": "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/full-render-01/render-record.json",
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/production-brief.json",
+        "reviews": [
+          "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/reviews/science.json",
+          "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/reviews/listening.json",
+          "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/reviews/motion.json",
+          "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/reviews/device.json",
+          "out/production/calculation-release-preparation-2026-10-10/empirical-formulas/reviews/accessibility.json"
+        ]
+      },
+      "commands": {
+        "checkBrief": "node scripts/check-production-brief.mjs out/production/calculation-release-preparation-2026-10-10/empirical-formulas/production-brief.json --stage=export",
+        "render": "node scripts/render-release.mjs out/production/calculation-release-preparation-2026-10-10/empirical-formulas/full-config.json --output-dir=out/production/calculation-release-preparation-2026-10-10/empirical-formulas/full-render-01"
+      },
+      "metadata": {
+        "queuePath": "docs/production/youtube-queue-2026-10-10.json",
+        "title": "Empirical Formulas: Percentage Composition to Atom Ratios | Year 11 Chemistry",
+        "source": {
+          "path": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+          "sha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776",
+          "titleInLesson": "Empirical formulas",
+          "fullConfigPath": "out/prototypes/empirical-formulas-paced-2026-10-10/full-config.json",
+          "productionBriefPath": "out/prototypes/empirical-formulas-paced-2026-10-10/production-brief.json",
+          "productionBriefSchemaVersion": 2,
+          "sourceStatus": "current selected paced candidate"
+        },
+        "sequence": 4,
+        "chapterFields": []
+      },
+      "suggestedBriefOverrides": {
+        "source": "Retain original source.lessonPath and lessonSha256 exactly.",
+        "voicedPreview": {
+          "status": "pass",
+          "reviewer": "Project owner, user in this conversation",
+          "mode": "rendered-pilot",
+          "inputSnapshotPath": "out/prototypes/empirical-formulas-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+          "evidence": {
+            "path": "docs/production/user-calculation-review-2026-10-10.json",
+            "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+          },
+          "humanListening": {
+            "status": "pending",
+            "reviewer": "",
+            "mode": "human-listening",
+            "evidence": null
+          }
+        },
+        "limitation": "Project owner accepted presented rendered pilots in conversation. Full MP4 not yet available. Complete narration listening not explicitly identified; five full-package scoped reviews still pending."
+      }
+    },
+    {
+      "key": "mole-ratios",
+      "currentConfig": "out/prototypes/mole-ratios-paced-2026-10-10/full-config.json",
+      "currentConfigValues": {
+        "lessonPath": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/prototypes/mole-ratios-paced-2026-10-10/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/mole-ratios-voiced-2026-10-09/narrated.lesson.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.generation.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.generation.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.generation.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.generation.json",
+          "out/prototypes/mole-ratios-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "configMatchesMainBytes": true,
+      "fullRange": true,
+      "pinnedPilotVerification": {
+        "valid": true,
+        "packageSha256": "cd6d516245c295c35ed672881cc7ea8ca2767b426d7fe57e897ee058d980951f",
+        "changes": [],
+        "missingRequired": []
+      },
+      "exportBriefCheck": {
+        "ready": false,
+        "stage": "export",
+        "blockers": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          }
+        ],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+          "lessonSha256": "6914afbed82d18dc16b575c2ad7475e605306fc5cd602c54b0263332b2d60764"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "suggestedAdditiveFolder": "out/production/calculation-release-preparation-2026-10-10/mole-ratios",
+      "suggestedConfig": {
+        "lessonPath": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/mole-ratios/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/mole-ratios-voiced-2026-10-09/narrated.lesson.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example.43eabdbf6211.generation.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/worked-example-2.3c762771fe45.generation.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.a4b7b94eca4c.generation.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.mp3",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.alignment.json",
+          "public/audio/Chemistry-mole-ratios-conversational-v1-simon-v4-2026-10-09/quick-check-answer.0968b531b9c9.generation.json",
+          "out/prototypes/mole-ratios-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "suggestedGateConfig": {
+        "snapshotPath": "out/production/calculation-release-preparation-2026-10-10/mole-ratios/full-render-01/release.snapshot.json",
+        "inputSnapshotPath": "out/production/calculation-release-preparation-2026-10-10/mole-ratios/full-render-01/inputs.snapshot.json",
+        "renderRecordPath": "out/production/calculation-release-preparation-2026-10-10/mole-ratios/full-render-01/render-record.json",
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/mole-ratios/production-brief.json",
+        "reviews": [
+          "out/production/calculation-release-preparation-2026-10-10/mole-ratios/reviews/science.json",
+          "out/production/calculation-release-preparation-2026-10-10/mole-ratios/reviews/listening.json",
+          "out/production/calculation-release-preparation-2026-10-10/mole-ratios/reviews/motion.json",
+          "out/production/calculation-release-preparation-2026-10-10/mole-ratios/reviews/device.json",
+          "out/production/calculation-release-preparation-2026-10-10/mole-ratios/reviews/accessibility.json"
+        ]
+      },
+      "commands": {
+        "checkBrief": "node scripts/check-production-brief.mjs out/production/calculation-release-preparation-2026-10-10/mole-ratios/production-brief.json --stage=export",
+        "render": "node scripts/render-release.mjs out/production/calculation-release-preparation-2026-10-10/mole-ratios/full-config.json --output-dir=out/production/calculation-release-preparation-2026-10-10/mole-ratios/full-render-01"
+      },
+      "metadata": {
+        "queuePath": "docs/production/youtube-queue-2026-10-10.json",
+        "title": "Mole Ratios: Using Balanced Equations to Compare Reactants and Products | Year 11 Chemistry",
+        "source": {
+          "path": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+          "sha256": "6914afbed82d18dc16b575c2ad7475e605306fc5cd602c54b0263332b2d60764",
+          "titleInLesson": "Mole ratios",
+          "fullConfigPath": "out/prototypes/mole-ratios-paced-2026-10-10/full-config.json",
+          "productionBriefPath": "out/prototypes/mole-ratios-paced-2026-10-10/production-brief.json",
+          "productionBriefSchemaVersion": 2,
+          "sourceStatus": "current selected paced candidate"
+        },
+        "sequence": 5,
+        "chapterFields": []
+      },
+      "suggestedBriefOverrides": {
+        "source": "Retain original source.lessonPath and lessonSha256 exactly.",
+        "voicedPreview": {
+          "status": "pass",
+          "reviewer": "Project owner, user in this conversation",
+          "mode": "rendered-pilot",
+          "inputSnapshotPath": "out/prototypes/mole-ratios-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+          "evidence": {
+            "path": "docs/production/user-calculation-review-2026-10-10.json",
+            "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+          },
+          "humanListening": {
+            "status": "pending",
+            "reviewer": "",
+            "mode": "human-listening",
+            "evidence": null
+          }
+        },
+        "limitation": "Project owner accepted presented rendered pilots in conversation. Full MP4 not yet available. Complete narration listening not explicitly identified; five full-package scoped reviews still pending."
+      }
+    },
+    {
+      "key": "mass-to-mass",
+      "currentConfig": "out/prototypes/mass-to-mass-paced-2026-10-10/full-config.json",
+      "currentConfigValues": {
+        "lessonPath": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/prototypes/mass-to-mass-paced-2026-10-10/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/mass-to-mass-voiced-2026-10-09/narrated.lesson.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.generation.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.generation.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.generation.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.generation.json",
+          "out/prototypes/mass-to-mass-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "configMatchesMainBytes": true,
+      "fullRange": true,
+      "pinnedPilotVerification": {
+        "valid": true,
+        "packageSha256": "17b39d5e2f51fc631d23da952eb0b73c1fc5eaef09bb4c6060837ed695dcb275",
+        "changes": [],
+        "missingRequired": []
+      },
+      "exportBriefCheck": {
+        "ready": false,
+        "stage": "export",
+        "blockers": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          }
+        ],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+          "lessonSha256": "b90681774be533bdedca5bebca550f18530e1110ad85b28bc2a1d02b282da33e"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "suggestedAdditiveFolder": "out/production/calculation-release-preparation-2026-10-10/mass-to-mass",
+      "suggestedConfig": {
+        "lessonPath": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/mass-to-mass-voiced-2026-10-09/narrated.lesson.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example.868941eea76e.generation.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/worked-example-2.1fc7ec7cd8a7.generation.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-prompt.c642447c6d36.generation.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.mp3",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.alignment.json",
+          "public/audio/Chemistry-mass-to-mass-conversational-v1-simon-v4-2026-10-09/quick-check-answer.c28dd3ea845c.generation.json",
+          "out/prototypes/mass-to-mass-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "suggestedGateConfig": {
+        "snapshotPath": "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/full-render-01/release.snapshot.json",
+        "inputSnapshotPath": "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/full-render-01/inputs.snapshot.json",
+        "renderRecordPath": "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/full-render-01/render-record.json",
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/production-brief.json",
+        "reviews": [
+          "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/reviews/science.json",
+          "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/reviews/listening.json",
+          "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/reviews/motion.json",
+          "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/reviews/device.json",
+          "out/production/calculation-release-preparation-2026-10-10/mass-to-mass/reviews/accessibility.json"
+        ]
+      },
+      "commands": {
+        "checkBrief": "node scripts/check-production-brief.mjs out/production/calculation-release-preparation-2026-10-10/mass-to-mass/production-brief.json --stage=export",
+        "render": "node scripts/render-release.mjs out/production/calculation-release-preparation-2026-10-10/mass-to-mass/full-config.json --output-dir=out/production/calculation-release-preparation-2026-10-10/mass-to-mass/full-render-01"
+      },
+      "metadata": {
+        "queuePath": "docs/production/youtube-queue-2026-10-10.json",
+        "title": "Mass-to-Mass Stoichiometry: Calculate Reacting Masses | Year 11 Chemistry",
+        "source": {
+          "path": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+          "sha256": "b90681774be533bdedca5bebca550f18530e1110ad85b28bc2a1d02b282da33e",
+          "titleInLesson": "Mass-to-mass stoichiometry",
+          "fullConfigPath": "out/prototypes/mass-to-mass-paced-2026-10-10/full-config.json",
+          "productionBriefPath": "out/prototypes/mass-to-mass-paced-2026-10-10/production-brief.json",
+          "productionBriefSchemaVersion": 2,
+          "sourceStatus": "current selected paced candidate"
+        },
+        "sequence": 6,
+        "chapterFields": []
+      },
+      "suggestedBriefOverrides": {
+        "source": "Retain original source.lessonPath and lessonSha256 exactly.",
+        "voicedPreview": {
+          "status": "pass",
+          "reviewer": "Project owner, user in this conversation",
+          "mode": "rendered-pilot",
+          "inputSnapshotPath": "out/prototypes/mass-to-mass-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+          "evidence": {
+            "path": "docs/production/user-calculation-review-2026-10-10.json",
+            "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+          },
+          "humanListening": {
+            "status": "pending",
+            "reviewer": "",
+            "mode": "human-listening",
+            "evidence": null
+          }
+        },
+        "limitation": "Project owner accepted presented rendered pilots in conversation. Full MP4 not yet available. Complete narration listening not explicitly identified; five full-package scoped reviews still pending."
+      }
+    },
+    {
+      "key": "limiting",
+      "currentConfig": "out/prototypes/limiting-paced-2026-10-10/full-config.json",
+      "currentConfigValues": {
+        "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/prototypes/limiting-paced-2026-10-10/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/limiting-clear-working-2026-10-09/lesson.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.generation.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.generation.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.generation.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.generation.json",
+          "out/prototypes/limiting-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "configMatchesMainBytes": true,
+      "fullRange": true,
+      "pinnedPilotVerification": {
+        "valid": true,
+        "packageSha256": "95484f6d438382c5e36aa0124b024251c40ec295834d182b916afebddb2d33bb",
+        "changes": [],
+        "missingRequired": []
+      },
+      "exportBriefCheck": {
+        "ready": false,
+        "stage": "export",
+        "blockers": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          }
+        ],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+          "lessonSha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      },
+      "suggestedAdditiveFolder": "out/production/calculation-release-preparation-2026-10-10/limiting",
+      "suggestedConfig": {
+        "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "audioMode": "alignedPcm",
+        "normalizeAudio": true,
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/limiting/production-brief.json",
+        "inputs": [
+          "docs/production/calculation-feedback-2026-10-10.json",
+          "scripts/prepare-paced-feedback.py",
+          "out/prototypes/limiting-clear-working-2026-10-09/lesson.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.generation.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.generation.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.generation.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.mp3",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.alignment.json",
+          "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.generation.json",
+          "out/prototypes/limiting-paced-2026-10-10/tempo-derivation.json"
+        ]
+      },
+      "suggestedGateConfig": {
+        "snapshotPath": "out/production/calculation-release-preparation-2026-10-10/limiting/full-render-01/release.snapshot.json",
+        "inputSnapshotPath": "out/production/calculation-release-preparation-2026-10-10/limiting/full-render-01/inputs.snapshot.json",
+        "renderRecordPath": "out/production/calculation-release-preparation-2026-10-10/limiting/full-render-01/render-record.json",
+        "teachingBriefPath": "out/production/calculation-release-preparation-2026-10-10/limiting/production-brief.json",
+        "reviews": [
+          "out/production/calculation-release-preparation-2026-10-10/limiting/reviews/science.json",
+          "out/production/calculation-release-preparation-2026-10-10/limiting/reviews/listening.json",
+          "out/production/calculation-release-preparation-2026-10-10/limiting/reviews/motion.json",
+          "out/production/calculation-release-preparation-2026-10-10/limiting/reviews/device.json",
+          "out/production/calculation-release-preparation-2026-10-10/limiting/reviews/accessibility.json"
+        ]
+      },
+      "commands": {
+        "checkBrief": "node scripts/check-production-brief.mjs out/production/calculation-release-preparation-2026-10-10/limiting/production-brief.json --stage=export",
+        "render": "node scripts/render-release.mjs out/production/calculation-release-preparation-2026-10-10/limiting/full-config.json --output-dir=out/production/calculation-release-preparation-2026-10-10/limiting/full-render-01"
+      },
+      "metadata": {
+        "queuePath": "docs/production/youtube-queue-2026-10-10.json",
+        "title": "Limiting Reagents: Theoretical Yield and Excess Reactant | Year 11 Chemistry",
+        "source": {
+          "path": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+          "sha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a",
+          "titleInLesson": "Limiting reagents",
+          "fullConfigPath": "out/prototypes/limiting-paced-2026-10-10/full-config.json",
+          "productionBriefPath": "out/prototypes/limiting-paced-2026-10-10/production-brief.json",
+          "productionBriefSchemaVersion": 2,
+          "sourceStatus": "current selected paced candidate"
+        },
+        "sequence": 7,
+        "chapterFields": []
+      },
+      "suggestedBriefOverrides": {
+        "source": "Retain original source.lessonPath and lessonSha256 exactly.",
+        "voicedPreview": {
+          "status": "pass",
+          "reviewer": "Project owner, user in this conversation",
+          "mode": "rendered-pilot",
+          "inputSnapshotPath": "out/prototypes/limiting-paced-2026-10-10/worked-pilot-02/inputs.snapshot.json",
+          "evidence": {
+            "path": "docs/production/user-calculation-review-2026-10-10.json",
+            "sha256": "db34960014f286c94213f600b76aa27c0d3b559e3fccceda612456efc369a036"
+          },
+          "humanListening": {
+            "status": "pending",
+            "reviewer": "",
+            "mode": "human-listening",
+            "evidence": null
+          }
+        },
+        "limitation": "Project owner accepted presented rendered pilots in conversation. Full MP4 not yet available. Complete narration listening not explicitly identified; five full-package scoped reviews still pending."
+      }
+    }
+  ],
+  "remainingBeforeFullExport": [
+    "Root already recorded user acceptance in docs/production/user-calculation-review-2026-10-10.json. Copy that exact hashed evidence into pinned workspace at the same relative path.",
+    "Root copies frozen brief to separate release-preparation folder without changing original. Keep source.lessonPath and source.lessonSha256 unchanged. Set voicedPreview pass only from actual accepted exact rendered pilot, with reviewer, rendered-pilot mode, original input snapshot path and hashed evidence. Keep humanListening pending unless explicitly heard and accepted.",
+    "Copy full-config into additive folder and point teachingBriefPath at copied brief. Keep lessonPath at original paced lesson so preview exact-source binding remains valid. Copy additive evidence/config/brief into pinned workspace at the same relative paths.",
+    "Run export-stage brief check in pinned workspace, resolve genuine findings, then enforced full render to a new directory. No new paid speech required."
+  ],
+  "remainingBeforePublicRelease": [
+    "Verify full MP4 hash, complete duration, aligned SRT/VTT, audio mastering, response silence and dependency snapshots.",
+    "Complete exact full-package science, listening, motion, device and accessibility reviews. Each review needs named reviewer, substantive evidence, outcome and hashed record bound to full release.snapshot.json. Pilot acceptance alone is not these five full-package reviews.",
+    "Run corrected release gate against pinned workspace root with additive teachingBriefPath and five scoped review records. Require ready true.",
+    "Verify live channel publication state and exact export hash before upload. Preserve original uploads and do not upload old pilots. Attach final-export captions and final measured chapters using prepared queue metadata. Keep initial upload unlisted for review under established workflow, then public placement only after actual gates."
+  ],
+  "doNotDuplicate": {
+    "existingPublicPrerequisites": [
+      {
+        "videoId": "MCmEsRHKtTU",
+        "title": "Mole Concept Part A"
+      },
+      {
+        "videoId": "g9zmc5w7kQU",
+        "title": "Molar Mass"
+      }
+    ],
+    "olderLimitingIds": [
+      "b7OCuLsXgG8",
+      "sijXK98W_9w"
+    ],
+    "action": "Check live IDs and package bindings. Older limiting uploads represent different historical revisions, do not promote them as current paced export. No saved upload exists for these four exact current paced full exports."
+  },
+  "gateAdapterSuggestion": {
+    "module": "C:/lesson-video-generator/scripts/lib/release-gate.mjs",
+    "function": "checkReleaseEvidence(pinnedWorkspaceAbsolutePath, additiveGateConfig)",
+    "reason": "Corrected gate selects unique final MP4 using hashed render record while verifyRelease resolves runtime dependencies under unchanged pinned workspace."
+  },
+  "nextAction": "Create additive exact-pilot acceptance evidence and brief/config copies in pinned workspace. Run export-stage check and start the first enforced full export while other full-package review preparations proceed."
+}

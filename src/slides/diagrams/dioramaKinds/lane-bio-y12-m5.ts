@@ -5,6 +5,7 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {Module5AnimalReproductionDiagram} from '../kinds/bio-y12-m5/Module5AnimalReproductionDiagram';
 import {MitosisDiagram} from '../kinds/bio-y12-m5/MitosisDiagram';
 import {MeiosisDiagram} from '../kinds/bio-y12-m5/MeiosisDiagram';
 import {PloidyDiagram} from '../kinds/bio-y12-m5/PloidyDiagram';
@@ -34,6 +35,7 @@ import {RiskArrayDiagram} from '../kinds/bio-y12-m5/RiskArrayDiagram';
 import {NucleusExportDiagram} from '../kinds/bio-y12-m5/NucleusExportDiagram';
 
 export const KINDS: DioramaKindMap = {
+  bioM5AnimalReproduction: Module5AnimalReproductionDiagram,
   bio12m5Mitosis: MitosisDiagram,
   bio12m5Meiosis: MeiosisDiagram,
   bio12m5Ploidy: PloidyDiagram,

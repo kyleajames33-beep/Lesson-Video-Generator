@@ -1,0 +1,413 @@
+{
+  "title": "Reproduction in Animals: Where Do Gametes Fuse?",
+  "subtitle": "Mechanisms, fusion location and conditions",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 2",
+  "syllabusNeutral": true,
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "lessonIntent": "Explain named animal reproductive mechanisms, classify fusion location and analyse a contextual advantage or limitation.",
+  "examSkill": "Link a supplied condition to gamete encounter opportunities and keep fertilisation separate from later survival.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 90,
+      "caption": "Reproduction in Animals: Where Do Gametes Fuse?"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "caption": "Where did gametes fuse?",
+      "durationInFrames": 1005,
+      "voiceover": {
+        "text": "A frog releases eggs into a pond as a male releases sperm over them. A bird lays a fertilised egg in a nest. Both eggs are outside the body when we see them, but did fertilisation happen in the same place? Sexual reproduction involves gametes fusing. To classify fertilisation, we need to find where that fusion happened, not just where an egg ended up."
+      },
+      "heading": "Same location of fertilisation?",
+      "body": "Both eggs are outside when we see them. Where did gametes fuse?",
+      "comparisonIsPrompt": true,
+      "comparison": [
+        {
+          "label": "Frog",
+          "amount": "Eggs in pond",
+          "mass": "Fusion?"
+        },
+        {
+          "label": "Bird",
+          "amount": "Fertilised egg in nest",
+          "mass": "Fusion?"
+        }
+      ],
+      "revealDelays": {
+        "heading": 22,
+        "body": 50,
+        "callout": 800
+      }
+    },
+    {
+      "id": "concept-fertilisation",
+      "type": "concept",
+      "caption": "Haploid gametes supply one set each. The diploid zygote has two.",
+      "durationInFrames": 1519,
+      "voiceover": {
+        "text": "First, what does fusion achieve? In the animal model here, a sperm and an egg each carry one set of chromosomes. We call that haploid. Fertilisation brings the two sets together in a zygote, the first cell of the new individual. The zygote is diploid, with two sets. In these animals, meiosis reduces the chromosome sets during gamete production, and fertilisation restores two sets. That helps maintain chromosome number across generations instead of doubling it each time. The diagram uses just a few chromosomes to represent sets. It is not the full chromosome count or every molecular step of fertilisation."
+      },
+      "heading": "One set + one set",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Haploid: one chromosome set.",
+          "at": 5
+        },
+        {
+          "text": "Diploid: two chromosome sets.",
+          "at": 22
+        }
+      ],
+      "conceptVisualLayout": "diagramFocus",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5AnimalReproduction",
+        "props": {
+          "mode": "ploidy",
+          "at": {
+            "start": 110,
+            "second": 470,
+            "result": 690,
+            "condition": 1000000
+          }
+        }
+      },
+      "secondary": "Set-count model, not the full chromosome count or molecular sequence.",
+      "revealDelays": {
+        "secondary": 1260
+      }
+    },
+    {
+      "id": "concept-asexual-animal",
+      "type": "concept",
+      "caption": "Hydra budding produces a new animal without gamete fusion.",
+      "durationInFrames": 1505,
+      "voiceover": {
+        "text": "Animals can also reproduce without gametes fusing. In a hydra, a small bud grows from the parent's body. Its cells divide, the bud develops, and it can detach as a separate hydra. That event is asexual reproduction. Budding can produce a new animal without finding a mate, when conditions support its growth. It usually retains a very similar inherited combination, although mutation can introduce differences. This is one animal example, not a rule that every animal can bud. A hydra can also reproduce sexually. We classify the event by its mechanism, rather than giving the animal one permanent label."
+      },
+      "heading": "A bud becomes a hydra",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Growth and development precede detachment.",
+          "at": 4
+        },
+        {
+          "text": "Classify the event by its mechanism.",
+          "at": 36
+        }
+      ],
+      "conceptVisualLayout": "diagramFocus",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5AnimalReproduction",
+        "props": {
+          "mode": "hydra",
+          "at": {
+            "start": 65,
+            "second": 225,
+            "result": 450,
+            "condition": 615
+          }
+        }
+      }
+    },
+    {
+      "id": "concept-external",
+      "type": "concept",
+      "caption": "External fertilisation: fusion outside the body. Encounters depend on conditions.",
+      "durationInFrames": 1633,
+      "voiceover": {
+        "text": "In our frog example, sperm and eggs meet in the pond, outside the female's body. That is external fertilisation. Salmon also release eggs and sperm into water. A moist environment protects exposed gametes from drying, but water alone does not bring every sperm to an egg. Release close together in place and time makes encounters more likely. In a broadcast-spawning example, producing many gametes can increase the opportunities for fertilisation, while dispersal can separate them before they meet. Fertilisation is only the first stage. Eggs and young may still be eaten or encounter unsuitable conditions. Gamete numbers, fertilised eggs and offspring that later reproduce are three different things."
+      },
+      "heading": "Fusion outside the body",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Moisture limits gamete drying.",
+          "at": 13
+        },
+        {
+          "text": "Proximity and timing support encounters.",
+          "at": 24
+        },
+        {
+          "text": "Fertilisation and later survival are separate.",
+          "at": 47
+        }
+      ],
+      "conceptVisualLayout": "diagramFocus",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5AnimalReproduction",
+        "props": {
+          "mode": "external",
+          "at": {
+            "start": 80,
+            "second": 300,
+            "result": 1000000,
+            "condition": 750
+          }
+        }
+      }
+    },
+    {
+      "id": "concept-internal",
+      "type": "concept",
+      "caption": "Internal fertilisation: fusion inside the body. Costs and survival depend on context.",
+      "durationInFrames": 1590,
+      "voiceover": {
+        "text": "In internal fertilisation, sperm reaches eggs inside the female's body. Keeping the meeting within a moist reproductive tract reduces exposure to drying, which is useful for reproduction on land. Some aquatic animals use internal fertilisation too, so habitat alone cannot classify the event. In a kangaroo, sperm is transferred during mating and fertilisation takes place inside the female. Achieving that transfer can require time and energy, and finding a mate can be a limitation. But internal fertilisation does not tell us a fixed number of offspring, how much parental care they receive, or their chance of survival. Those depend on the animal and its circumstances."
+      },
+      "heading": "Fusion inside the body",
+      "body": "",
+      "bullets": [
+        {
+          "text": "A moist tract reduces exposure to drying.",
+          "at": 9
+        },
+        {
+          "text": "Sperm transfer has costs and constraints.",
+          "at": 35
+        },
+        {
+          "text": "Offspring number and care vary.",
+          "at": 46
+        }
+      ],
+      "conceptVisualLayout": "diagramFocus",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5AnimalReproduction",
+        "props": {
+          "mode": "internal",
+          "at": {
+            "start": 70,
+            "second": 200,
+            "result": 1000000,
+            "condition": 425
+          }
+        }
+      }
+    },
+    {
+      "id": "definition-comparison",
+      "type": "concept",
+      "caption": "Fusion location, embryo development and parental support are separate questions.",
+      "durationInFrames": 1476,
+      "voiceover": {
+        "text": "Keep three questions separate. Where do gametes fuse? Where does the embryo develop? What support does the offspring receive? A bird uses internal fertilisation, then lays an egg in which the embryo develops outside the body. That answers the first two questions differently. Parental investment means resources such as time, energy, nourishment and protection devoted to offspring. It can affect survival, but it is not the definition of internal fertilisation. To explain an advantage, link a feature to a condition. Protection from drying matters in a dry environment. Releasing gametes together matters when exposed gametes could disperse."
+      },
+      "heading": "Ask three questions",
+      "body": "",
+      "bullets": [
+        {
+          "text": "Where do gametes fuse?",
+          "at": 1
+        },
+        {
+          "text": "Where does the embryo develop?",
+          "at": 5
+        },
+        {
+          "text": "What support follows?",
+          "at": 9
+        }
+      ],
+      "conceptVisualLayout": "diagramFocus",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bioM5AnimalReproduction",
+        "props": {
+          "mode": "bird",
+          "at": {
+            "start": 400,
+            "second": 560,
+            "result": 690,
+            "condition": 950
+          }
+        }
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "caption": "Use the stated fusion location to classify fertilisation.",
+      "durationInFrames": 1662,
+      "voiceover": {
+        "text": "Let's apply that reasoning to three cases. In the frog case, the prompt says eggs and sperm meet in pond water. Fusion is outside the body, so fertilisation is external. The water provides a moist setting, and release near the eggs helps sperm encounter them. In the kangaroo case, sperm meets egg inside the female, so fertilisation is internal. The protected moist setting reduces exposure to drying. Now the bird lays an already fertilised egg. Fusion occurred before laying, inside the body. Fertilisation is internal even though development continues outside in the egg. The deciding evidence is the location of fusion, not the sight of an egg in a nest."
+      },
+      "heading": "Where did fusion occur?",
+      "question": "Classify using the supplied fusion location.",
+      "steps": [
+        "Frog: external, fusion in pond water.",
+        "Kangaroo: internal, fusion inside the female.",
+        "Bird: internal, fusion before egg laying."
+      ],
+      "revealDelays": {
+        "heading": 18,
+        "stepAts": [
+          420,
+          1060,
+          1580
+        ]
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "task": "Where did gametes fuse?",
+        "givens": [
+          {
+            "label": "Frog",
+            "value": "Pond water"
+          },
+          {
+            "label": "Kangaroo",
+            "value": "Inside female"
+          }
+        ],
+        "note": "Bird: an already fertilised egg is laid.",
+        "stages": [
+          {
+            "label": "Frog: external",
+            "lines": [
+              "Fusion in pond water.",
+              "Moisture and proximity help encounters."
+            ],
+            "summary": "Frog: fusion outside."
+          },
+          {
+            "label": "Kangaroo: internal",
+            "lines": [
+              "Fusion inside the female.",
+              "Moist tract reduces exposure to drying."
+            ],
+            "summary": "Kangaroo: fusion inside."
+          },
+          {
+            "label": "Bird: internal",
+            "lines": [
+              "Fusion occurred before egg laying.",
+              "Development later continues outside."
+            ],
+            "summary": "Bird: internal fusion, external development."
+          }
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "caption": "Explain an advantage from mechanism and conditions.",
+      "durationInFrames": 1176,
+      "voiceover": {
+        "text": "Does internal fertilisation make an animal's reproduction automatically better? That turns one useful feature into a universal verdict. Protection from drying can be an advantage, but it does not remove the costs of sperm transfer or all the risks faced by offspring. External fertilisation can work well where suitable water, proximity and timing support gamete encounters. We need the mechanism and the conditions before judging an advantage. Neither strategy promises that offspring will survive and reproduce."
+      },
+      "heading": "Internal always better?",
+      "body": "An advantage depends on the mechanism and conditions.",
+      "mistakeTag": "Universal verdict",
+      "callout": "Neither strategy promises survival to reproduction.",
+      "revealDelays": {
+        "heading": 18,
+        "body": 720,
+        "callout": 1060
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Same numbers, changed separation",
+      "question": "Predict fertilisation opportunities and explain why surviving offspring need not be equal.",
+      "caption": "Same initial gamete numbers and viable lifetime. Stronger current carries sperm away.",
+      "durationInFrames": 3302,
+      "voiceover": {
+        "text": "Try a changed condition. In a supplied broadcast-spawning model, adults release eggs and sperm into the same patch of water at the same time. A second group releases the same numbers into water with a stronger current that carries sperm away from the eggs. The gametes remain viable for the same length of time in both groups. Predict the effect on fertilisation opportunities in the second group, and explain why equal gamete numbers do not promise equal numbers of surviving offspring. Pause here to give your reason. In the stated model, carrying sperm away reduces opportunities for sperm and eggs to meet, even though the group releases the same numbers of gametes. The changed condition is their separation, not their initial number or viable lifetime. That supports a prediction of fewer fertilisation opportunities; it does not give us an exact count of fertilised eggs. And fertilisation is not the same as survival to reproduction. Development, predation and later conditions still matter. If your answer was “same numbers, same success”, add the missing link: gametes must encounter each other, and the resulting offspring must then survive and reproduce."
+      },
+      "answerSteps": [
+        "Separation reduces gamete encounters.",
+        "This predicts fewer fertilisation opportunities, not an exact count.",
+        "Later survival and reproduction depend on further conditions."
+      ],
+      "revealDelays": {
+        "heading": 18,
+        "responseHoldStart": 1333,
+        "answerVisibleStart": 1693,
+        "stepAts": [
+          1693,
+          2393,
+          2883
+        ]
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "task": "Predict encounters. Why can offspring survival differ?",
+        "givens": [
+          {
+            "label": "Gamete numbers",
+            "value": "Equal"
+          },
+          {
+            "label": "Viable lifetime",
+            "value": "Equal"
+          }
+        ],
+        "note": "Group 1: same place/time. Group 2: stronger current carries sperm away.",
+        "stages": [
+          {
+            "label": "Separation changes encounters",
+            "lines": [
+              "Sperm is carried away from eggs.",
+              "Fewer fertilisation opportunities."
+            ],
+            "summary": "Separation reduces encounters."
+          },
+          {
+            "label": "Prediction has a limit",
+            "lines": [
+              "Equal numbers do not give equal encounters.",
+              "No exact fertilised-egg count follows."
+            ],
+            "summary": "Prediction, not an exact count."
+          },
+          {
+            "label": "Fertilisation is one stage",
+            "lines": [
+              "Development and predation still matter.",
+              "Survival to reproduction is separate."
+            ],
+            "summary": "Fusion does not guarantee survival."
+          }
+        ]
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "caption": "Mechanism, chromosome sets, fusion location and conditions.",
+      "durationInFrames": 1290,
+      "voiceover": {
+        "text": "Animal reproduction has more than one mechanism. A hydra bud can make a new animal without gamete fusion. In our sexual model, haploid gametes combine into a diploid zygote. External and internal fertilisation describe where that fusion occurs, not where development happens or how much care follows. Explain an advantage by connecting a feature with the stated conditions, then keep fertilisation and later survival separate. Next, we will compare reproduction in plants, fungi, bacteria and protists. Mammalian pregnancy and hormonal control come after that."
+      },
+      "heading": "Explain the mechanism",
+      "points": [
+        "Hydra budding: no gamete fusion.",
+        "Haploid + haploid: diploid zygote.",
+        "Internal/external: where fusion occurs.",
+        "Advantage: feature plus conditions."
+      ],
+      "finalPrompt": "Next: plants, fungi, bacteria and protists."
+    }
+  ]
+}

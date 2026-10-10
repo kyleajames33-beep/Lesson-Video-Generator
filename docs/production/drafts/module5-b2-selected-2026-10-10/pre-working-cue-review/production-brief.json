@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-b2-selected-2026-10-10/lesson.json",
+    "lessonSha256": "4e386decaee05210a1906d8fbfe8a45c8ef06da0bc206ffde1d052b6eebdcdbf"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "routePath": "docs/production/module5-video-route-2026-10-10.json",
+    "routeId": "bio-m5-b02a",
+    "playlistPosition": 2,
+    "prerequisiteKnowledge": "B1: inherited information in DNA, continuity across generations, gametes, sexual gamete fusion and asexual reproduction without fusion. Entry diagnostic: fusion, rather than parent count, defines a sexual event. B1 publication is not presumed.",
+    "startsWith": "Frog gametes meet in pond water; a bird lays a supplied fertilised egg after internal fusion. Find fusion location rather than present egg location.",
+    "stopsAfter": "Named hydra budding mechanism, a haploid-to-diploid animal set model, contextual external/internal fusion, bird development contrast and a supplied separation prediction. No detailed meiosis, hormones, reproductive anatomy, pregnancy or plant/microbe mechanisms.",
+    "nextLesson": "bio-m5-b02b: reproduction in plants, fungi, bacteria and protists, candidate src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json. Then bio-m5-b03a for mammalian reproduction. Playlist order does not establish upload chronology."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/course-content-checklist-2026-10-09.md",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/module5-video-route-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Explain named animal reproductive mechanisms, classify fusion location and analyse a contextual advantage or limitation.",
+    "causalExplanation": "Moist conditions reduce drying exposure; proximity and timing affect gamete encounters. Stipulated separation reduces encounters at equal initial numbers and viable lifetime. One chromosome set from each gamete yields two in a zygote. Hydra growth and detachment form offspring without fusion.",
+    "conversationalApproach": "Preserve the accepted preparation speech exactly, including causal links, named cases, model boundaries and diagnostic feedback. New words require fresh recordings. Draft scenes and cues are estimates, not recorded timings.",
+    "openingDecision": "A supplied fertilised bird egg and frog eggs are both outside when observed. The rhetorical contrast asks where fusion occurred, without judging from egg location. No protected opening attempt claimed.",
+    "understandingCheck": "Supplied stronger-current model carries sperm away while initial gamete numbers and viable lifetime stay equal. Explain encounters and why fertilisation differs from survival. Separate prompt and feedback takes with an initial 12-second assembled answer-free hold after final prompt speech. Timing must be rebuilt from alignment. Evidence does not independently test budding, set tracing or internal classification.",
+    "curriculumScope": "Current Year 12 Biology 2017 Module 5, bio-m5-b02a. Pending animal contribution to cached p1025 and external/internal advantage analysis p1026, extraction IDs not official codes. Broad organism action, p1031 mammalian detail, practical conduct, assessed mastery and complete coverage are not certified."
+  },
+  "scenes": [
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing TitleSlide with no artwork binding",
+      "teachingReason": "Orient without a spoken metadata recital",
+      "narrationCue": "No speech; title settles before contrast",
+      "motionPurpose": "Single title reveal",
+      "holdPurpose": "Brief readable orientation"
+    },
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Existing HookSlide neutral comparison cards; comparisonIsPrompt true; no image/atom fallback",
+      "teachingReason": "Egg location alone cannot classify fertilisation",
+      "narrationCue": "Both eggs are outside the body when we see them",
+      "motionPurpose": "Reveal neutral frog/bird stimuli and fusion question, no verdict",
+      "holdPurpose": "Rhetorical contrast, no protected attempt"
+    },
+    {
+      "sceneId": "concept-fertilisation",
+      "visualDecision": "adjust",
+      "visualReference": "Existing ConceptSlide diagramFocus; bounded bioM5AnimalReproduction ploidy board, historical bio12m5Ploidy unmodified",
+      "teachingReason": "Readable labelled sperm and egg sets stay available after combination",
+      "narrationCue": "each carry one set; brings the two sets together; diploid",
+      "motionPurpose": "Draw converging set relation, reveal zygote with both distinguishable sets",
+      "holdPurpose": "Retain gametes and zygote references; arbitrary chromosome count and compressed events are model limits"
+    },
+    {
+      "sceneId": "concept-asexual-animal",
+      "visualDecision": "new",
+      "visualReference": "Existing concept shell and new plain labelled hydra mechanism flow; no animal outline or raster needed",
+      "teachingReason": "Growth, development and detachment explain budding without gamete fusion",
+      "narrationCue": "bud grows; cells divide; detach",
+      "motionPurpose": "Reveal attached developing bud then separate hydra in order",
+      "holdPurpose": "Parent remains as reference; flow is not one division producing an entire hydra"
+    },
+    {
+      "sceneId": "concept-external",
+      "visualDecision": "adjust",
+      "visualReference": "Existing concept shell; neutral external location board replaces unsafe Fertilise binding; salmon raster deliberately unbound",
+      "teachingReason": "Separate moisture, encounter opportunity and later survival",
+      "narrationCue": "outside the female body; close together in place and time; dispersal",
+      "motionPurpose": "Location outline and directed encounter arrow only, no outcome fraction",
+      "holdPurpose": "Stable water context; icons are schematic not measured gamete counts or rates"
+    },
+    {
+      "sceneId": "concept-internal",
+      "visualDecision": "adjust",
+      "visualReference": "Existing concept shell; opt-in neutral internal moist-compartment board; historical Fertilise unmodified",
+      "teachingReason": "Internal location protects the meeting setting without determining care or survival",
+      "narrationCue": "inside; moist reproductive tract; time and energy; depend on the animal",
+      "motionPurpose": "Draw encounter direction inside compartment, focus drying context",
+      "holdPurpose": "No anatomical precision, fixed offspring number, parental care or survival outcome depicted"
+    },
+    {
+      "sceneId": "definition-comparison",
+      "visualDecision": "adjust",
+      "visualReference": "ConceptSlide shell instead of dense vocabulary board; three stable questions beside labelled bird sequence",
+      "teachingReason": "Keep fusion location, embryo development and support as separate dimensions",
+      "narrationCue": "Where do gametes fuse; embryo develop; support; bird uses internal fertilisation",
+      "motionPurpose": "Sequential fusion-before-laying-before-development flow",
+      "holdPurpose": "Bird egg is explicitly fertilised; care question is independent, not a guaranteed outcome"
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "Existing WorkedExampleSlide and opt-in module5Evidence board, one active case plus established trail",
+      "teachingReason": "Classify supplied fusion location and connect a condition with a useful feature",
+      "narrationCue": "frog case; kangaroo case; bird lays an already fertilised egg",
+      "motionPurpose": "One case at its spoken cue; retain prior classifications",
+      "holdPurpose": "Demonstration only, not a learner attempt. Draft frame cues require measured narration"
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "Existing MisconceptionSlide mistake and repair board",
+      "teachingReason": "Repair universal ranking using mechanism plus conditions",
+      "narrationCue": "universal verdict; mechanism and conditions",
+      "motionPurpose": "Faulty claim then contextual decision rule",
+      "holdPurpose": "Stable repair, no winner badge or guaranteed success"
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "Existing QuickCheckSlide, module5Evidence givens/active stage/trail and answerVisibleStart gate",
+      "teachingReason": "Transfer separation mechanism under equal stipulated quantities, then diagnose same-number reasoning",
+      "narrationCue": "Pause here to give your reason; carrying sperm away reduces opportunities",
+      "motionPurpose": "Prompt-only supplied conditions through planned hold; first answer stages start after hold; later stages need aligned cues",
+      "holdPurpose": "Provisional prompt reserve 1333 frames, 360-frame (12-second) silent hold, first answer boundary 1693. No measured responseHold claimed. Current text-only combined scene requires separate fresh takes and explicit silence assembly. Prompt-only captions during hold; no diagram/verdict/count/reasoning before boundary. Exact first answer frame and continuous playback pending"
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "reuse",
+      "visualReference": "Existing SummarySlide, four compact relationships and separate next handoff",
+      "teachingReason": "Consolidate mechanism, sets, fusion location and contextual advantage",
+      "narrationCue": "hydra bud; haploid; external and internal; connecting a feature",
+      "motionPurpose": "Reveal compact relationships and settle next handoff",
+      "holdPurpose": "Readable final hold; no full-module coverage or survival guarantee"
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Silent additive selected candidate. Exact selected-source independent review pending. No recording/export/release approval. All scene and cue timings are provisional; no audio, alignment or faithful timed captions selected. New source, layout and labels need exact review. Native stills cannot establish playback or human listening.",
+  "origin": {
+    "preparation": {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/biology-b2-animals.md",
+      "sha256": "8525e4ab2d89a68b0b3124ffe04a4bd648ec762de3d19b5cee413609afe96956"
+    },
+    "preparationReview": {
+      "path": "docs/production/biology-b2-preparation-review-2026-10-10.md",
+      "sha256": "ebc5f26e555aa33a02ec77d9dce85d234ba9d99dc2e248f3679fd637c2a5e545",
+      "scope": "Document and factual review only, resolved hook follow-up; not exact selected-source approval."
+    },
+    "original": {
+      "path": "src/data/biology-y12-m5-l2-reproduction-in-animals.json",
+      "sha256": "aa69e9a31be275f142b656052c9f4882c203cab45afd2593d6caa95ccd9719e0"
+    },
+    "retainedOriginal": true,
+    "oldMediaReused": false
+  }
+}

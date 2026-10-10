@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+    "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1: equal non-zero rates, concentration versus rate, closed versus insulated systems; particle motion. Activation energy receives a short bridge here. Entry check: equal amounts changing oppositely each second leave composition unchanged. C1 support is not a promised public link.",
+    "startsWith": "A-only start in a closed, constant-temperature, fixed-volume, well-mixed first-order A/B model with positive fixed conversion coefficients and no side reactions.",
+    "stopsAfter": "Explain changing opposing rates in this model and why a suitable catalyst changes approach time, not the fixed-condition final equilibrium composition. No K, ICE, Q, disturbance rules or industrial optimisation.",
+    "nextLesson": "Core chem-m5-c03: concentration and temperature disturbance from established equilibrium. Retain chem-m5-g01 non-equilibrium enthalpy/entropy companion and chem-m5-p01 supervised practical support. g01 is not a universal C3 prerequisite."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/course-progression-ledger-2026-10-09.json"
+  ],
+  "teaching": {
+    "task": "Explain the changing opposing rates in a stated A-only reversible model and distinguish faster equilibration from a changed final equilibrium composition.",
+    "causalExplanation": "The declared first-order one-to-one model begins with A only: forward rate is positive and reverse rate zero. A falls and B rises, changing both rates concurrently. The equilibrium limit has equal non-zero rates despite unequal concentrations. The suitable catalyst comparison uses the same conditions and final composition with a faster approach.",
+    "conversationalApproach": "Preserve every reviewed spoken word from the corrected human-readable preparation. Connected explanations separate observations, kinetic causes and final composition, with no invented attainment claims.",
+    "openingDecision": "Rhetorical reverse-before-equilibrium question with immediate explanation. It is not a scored response opportunity.",
+    "understandingCheck": "Changed C/D start with supplied C-to-D two and D-to-C six on the same scale. Separate prompt/feedback recordings and planned ten-second assembled silence. Require C increase justified by both rates, net four under one-to-one assumptions and catalyst same final equilibrium D. Actual measured timing and first-answer exposure remain pending.",
+    "curriculumScope": "Chemistry Stage 6 (2017), Year 12 Module 5, chem-m5-c02. Candidate contributions only to C-collision-investigate, C-activation and C-reversibility. No complete outcome, mandatory practical conduct or named non-equilibrium coverage claim. Cached official paragraph scope retained in the preparation."
+  },
+  "scenes": [
+    {
+      "sceneId": "c2-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "reuse the existing title treatment from the C1 opening, with this title and current course placement. No generic atom artwork. Hold long enough for the title to be read; final duration remains pending.\n",
+      "narrationCue": "Silent identity hold.",
+      "motionPurpose": "Stable identity reading hold. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode hook in existing HookSlide",
+      "teachingReason": "adjust the existing HookSlide into a stable A ⇌ B stimulus, with “Start: A only” and opposing arrows. This is a rhetorical opening contrast with immediate explanation, not a scored attempt. Reveal the small reverse arrow on “It can turn back”. Keep the equation visible through the next scene. No product-before-start particle display and no decorative motion.\n",
+      "narrationCue": "It can turn back while the forward reaction is still happening. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Reveal the reverse arrow on It can turn back. Forward remains visible, explaining overlap. Stable rhetorical stimulus; no scored response hold. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-model",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode model in existing ConceptSlide diagramFocus",
+      "teachingReason": "adjust L3 `concept-approach`'s `chem12m5Exchange`, preserving C1's explicit “One mixture” interpretation and usable large-label presentation. Start with A only; use a model equilibrium ratio B:A of 1:2 so the later unequal-composition result is visible. This parameter is an authored schematic choice, not experimental data or a measured real K. Retain fixed-condition labels and use qualitative “A: more / B: less” labels rather than rounded integer counters as concentration evidence. Hops show conversion events, not collision trajectories. At the actual A-only start, the forward rate is positive and the reverse rate is zero. The reverse rate becomes positive as B appears. Positive conversion coefficients are distinct from those concentration-dependent rates. Do not add a decorative prestart. Hold the boundary/conditions board while it is explained.\n",
+      "narrationCue": "So the forward process can run, but the reverse rate is zero because there is no B to convert yet. Conversion begins only after this starting-state explanation. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "The initial A-only board holds with forward positive and reverse zero. Start bar conversion after that explanation; reverse arrow appears only when B exists. Bars represent schematic concentrations, not particles or collision paths. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-collision",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode association in existing ConceptSlide diagramFocus",
+      "teachingReason": "reuse the definition layout from L3, with a deliberate stable coded two-state inset showing `2NO₂ ⇌ N₂O₄`, two correctly labelled NO₂ molecules and one N₂O₄ molecule. This is a specific missing explanatory visual, not the existing one-to-one Exchange diagram with chemical labels substituted. Preserve nitrogen/oxygen counts and bonds in any later illustrated transformation. “Illustrated association, not a complete mechanism” remains visible. Initially choose a stable before/after board with drawn linking arrows; an unreviewed collision animation adds no necessary evidence. The visual cue is “two nitrogen dioxide molecules”; do not infer the reverse rate law or a many-step mechanism from the balanced equation. Hold the board through the energy/orientation explanation; no energy histogram is needed.\n",
+      "narrationCue": "Activation energy is the energy barrier that reacting particles must overcome. Association board remains distinct on two nitrogen dioxide molecules. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Stable coded two-to-one association inset preserves two N and four O atoms. No unreviewed collision animation or inferred real rate law. Reading hold makes energy and arrangement the explanation. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-rates",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode rates in existing ConceptSlide diagramFocus",
+      "teachingReason": "adjust L3 `chem12m5Exchange` rate graph for the declared one-to-one model. Keep axes “rate, arbitrary units” and “model time, arbitrary units”, both direction labels and fixed scale visible. Draw each curve only as its narrated change is explained, then keep both for comparison. The current native model flags “rates equal” when rates are within 4%, and mathematically approaches equality asymptotically. Do not present that tolerance marker as exact equality at a finite model frame. The bounded implementation must say “approaching equilibrium” through the finite simulated region and introduce a separately labelled equilibrium limiting state. If that change is not ready, use the existing concept/board layout with explicitly labelled schematic curves plus a separate exact equilibrium state. This is the defined teaching alternative, not a missing-asset placeholder. Keep arrows in both directions at the equilibrium state.\n",
+      "narrationCue": "As A decreases, the forward rate falls. As B builds up, the reverse rate rises. At equilibrium introduces the separate limiting-state card. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Draw forward and reverse curves at their separate spoken changes on one fixed scale. The finite trace stays labelled approaching equilibrium. At equilibrium reveals a separately labelled exact limiting state with both directions retained. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-amounts",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode amounts in existing ConceptSlide diagramFocus",
+      "teachingReason": "adjust the same Exchange model's concentration view or use a stable matched-scale board derived from the same model. Keep the exact A/B identities, initial total, volume, temperature and B:A limiting ratio unchanged between scenes. Caption “schematic model concentrations”; do not call its expected counts measured mol L⁻¹. Preserve the rate comparison as a small labelled reference only if phone readability survives. The causal cue “Rate tells us” points to the rate axis; “Concentration tells us” points to the concentration axis. Hold both final levels. No numerical equilibrium-expression lesson is smuggled into the diagram.\n",
+      "narrationCue": "Rate tells us how quickly conversion happens. Concentration tells us how much is present per volume. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Draw concentrations from the same declared first-order model and fixed scale, retaining unequal limiting levels. No tiny duplicate rate reference; the preceding rate scene supplies the contrast without compromising essential graph labels. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-catalyst",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx; mode catalyst in existing ConceptSlide diagramFocus",
+      "teachingReason": "preserve the useful same-endpoint energy profile and concentration-comparison idea from L3 `chem12m5CatalystBoth`, but do not select the current full component unchanged. It hard-codes “same drop both ways”, “both × the same factor”, unequal-rate ratio language and a 2.2 multiplier. These are idealised model features, not universal quantitative catalyst claims. The explicit initial choice is the existing concept board with a separately drawn schematic pathway and a large comparison graph: identical starts, identical temperature/volume/amounts, shared labelled limiting plateau, catalysed curve approaching sooner. Retain endpoint levels; label reaction coordinate as a model coordinate, not time. Do not introduce universal equal numerical barrier reductions. Any future reuse of the native component requires a bounded opt-in correction and independent inspection, including its accessible description. Reveal “same final composition” on its own spoken cue. Mark a shared early comparison time on “At an early comparison time”, then remove that emphasis before the equilibrium comparison. A graph approaching a plateau is not an exact finite-time equality claim.\n",
+      "narrationCue": "In our comparison, B approaches the same final level sooner. At an early comparison time introduces the common early marker; Once both mixtures removes it. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Stable schematic energy pathways retain identical endpoints. Reveal concentration comparison at In our comparison. Add one shared early marker at At an early comparison time and remove it at Once both mixtures. Limiting B level is shared; no universal numeric factor. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    },
+    {
+      "sceneId": "c2-transfer",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx via existing quick-check response gate",
+      "teachingReason": "reuse the C1 quick-check/feedback board and approved answer-free reveal discipline. Keep short task, separate C ⇌ D equation, grouped conditions and rate givens. Display “same scale, arbitrary rate units” beside both values; there are no supplied reference constants. Feedback stages: (1) identify which direction produces C; (2) compare six versus two, with net four only now; (3) final composition unchanged at fixed conditions. Retain the stimulus while feedback appears. Later result lines must follow their spoken cues, with enough time to read each. An optional net-four line tests arithmetic under the one-to-one assumption only, not general stoichiometric rate relationships.",
+      "narrationCue": "Prompt ends at Take a moment, or pause if you would like longer. Feedback begins C initially increases. Net four appears at In this one-for-one model; final D appears at It does not finish. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Keep the entire prompt and response answer-free. Stage C increase at feedback start, compare both supplied rates next, delay net-four line to its own cue and delay final-D line to It does not finish. Retain established compact results. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Ten seconds of planned assembled silence after the complete prompt, with answer-free stimulus and no captions or answer stage until answerVisibleStart. Estimated source boundary only, not measured silence."
+    },
+    {
+      "sceneId": "c2-summary",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "reuse the existing summary layout with three compact anchors: opposing processes overlap; rates balance while concentrations may differ; catalyst changes approach time. Closing handoff names C3 without implying it is already published. Hold stable labels clear of captions and chrome. No additional particle decoration.\n",
+      "narrationCue": "Equilibrium is the balance of equal non-zero rates, not a requirement for equal concentrations. Estimated cue fields must be replaced by measured alignment after recording.",
+      "motionPurpose": "Ordered stable recap anchors and the C3 handoff. All cues remain estimates until selected narration is aligned.",
+      "holdPurpose": "Stable labelled board for reading and reasoning. Silent author stills cannot establish voiced timing, device fit or listening."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Independent Sol 6.1 reviewer /root/review_page_access_sol",
+    "evidence": {
+      "path": "docs/production/module5-c2-b2-selected-source-review-2026-10-10.md",
+      "sha256": "9a56ce5b32faf9f893e811e02b4c3d63b154ed8cbd917c9571b5272838acfb82"
+    },
+    "scope": "Exact selected source only. Author stills, continuous motion, measured alignment, listening and release review remain separate."
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationEvidence": {
+    "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c2.md",
+    "sha256": "699108d28dc0ee421351c70d3223f42a50b9e1eb188e2d4e67e7d0498719f3a5",
+    "independentReview": {
+      "path": "docs/production/chemistry-c2-preparation-review-2026-10-10.md",
+      "sha256": "d058a53d5ee42a6a9dcabd880637d08c540586347b38852c9bbbbec6bb8eae11"
+    },
+    "scope": "Human-readable corrected preparation only. Selected JSON and opt-in component need independent review."
+  },
+  "routeIdentity": "chem-m5-c02",
+  "limitation": "Silent selected source, no audio/audio paths, alignment or accessible captions. Durations, reveals and response boundaries are estimates. Independent selected-source review is bound separately. Recording, voiced preview, human listening, full export, full-package release review and publication remain pending."
+}

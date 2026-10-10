@@ -1,0 +1,30 @@
+{
+  "lessonPath": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+  "entryPoint": "src/dev/release-entry.tsx",
+  "compositionId": "Lesson-release",
+  "codec": "h264",
+  "scale": 1,
+  "crf": 16,
+  "concurrency": 1,
+  "audioMode": "alignedPcm",
+  "normalizeAudio": true,
+  "teachingBriefPath": "docs/production/calculation-export-briefs-2026-10-10/limiting/production-brief.json",
+  "inputs": [
+    "docs/production/calculation-feedback-2026-10-10.json",
+    "scripts/prepare-paced-feedback.py",
+    "out/prototypes/limiting-clear-working-2026-10-09/lesson.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.mp3",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.alignment.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/formula.29945b39e1d5.generation.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.mp3",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.alignment.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/worked-example-2.f00d343bc44e.generation.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.mp3",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.alignment.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-prompt.701fd2423499.generation.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.mp3",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.alignment.json",
+    "public/audio/Chemistry-limiting-conversational-2026-10-09/quick-check-answer.c8fc521ef06a.generation.json",
+    "out/prototypes/limiting-paced-2026-10-10/tempo-derivation.json"
+  ]
+}

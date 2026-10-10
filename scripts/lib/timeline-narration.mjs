@@ -13,9 +13,13 @@ export function assembleTimelineNarration(lesson, {root=process.cwd(), frameRang
   if(!Number.isInteger(samplesPerFrame))throw Error('Narration fps must divide 48000.');
   const first=frameRange?.[0]??0,last=frameRange?.[1]??timeline.durationInFrames-1;
   if(!Number.isInteger(first)||!Number.isInteger(last)||first<0||last<first||last>=timeline.durationInFrames)throw Error('Invalid narration frame range.');
-  const track=new Int32Array(timeline.durationInFrames*samplesPerFrame), dependencies=[];
+  const track=new Int32Array(timeline.durationInFrames*samplesPerFrame), dependencies=[], silentScenes=[];
   for(const entry of timeline.scenes){
     const voice=entry.scene.voiceover;
+    if(entry.scene.type==='title' && !voice?.audioFile && !voice?.text?.trim()) {
+      silentScenes.push({sceneId:entry.scene.id,startFrame:entry.startFrame,endFrame:entry.startFrame+entry.scene.durationInFrames,reason:'Unvoiced title'});
+      continue;
+    }
     if(!voice?.audioFile)throw Error('Missing scene narration: '+entry.scene.id);
     const start=voice.startFrame??0,end=voice.endFrame??entry.scene.durationInFrames;
     if(!Number.isInteger(start)||!Number.isInteger(end)||start<0||end<=start||end>entry.scene.durationInFrames)throw Error('Invalid scene narration window.');
@@ -34,5 +38,6 @@ export function assembleTimelineNarration(lesson, {root=process.cwd(), frameRang
   }
   const wav=pcmWav(pcm);
   return {wav,record:{schemaVersion:1,mode:'aligned-pcm',sampleRate:48000,channels:1,volume:0.96,
-    fps:timeline.fps,frameRange:[first,last],sampleCount:count,wavSha256:sha256(wav),dependencies}};
+    fps:timeline.fps,frameRange:[first,last],sampleCount:count,wavSha256:sha256(wav),dependencies,
+    ...(silentScenes.length ? {silentScenes} : {})}};
 }

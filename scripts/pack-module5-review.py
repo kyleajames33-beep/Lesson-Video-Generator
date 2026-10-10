@@ -7,7 +7,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--wave', choices=['initial', 'visual-v2'], default='initial')
+parser.add_argument('--wave', choices=['initial', 'visual-v2', 'selected-c2-b2', 'voiced-c2-b2', 'full-empirical', 'full-mole'], default='initial')
 args = parser.parse_args()
 record_path = ROOT / 'docs/production/computer-transfer-2026-10-09.json'
 record = json.loads(record_path.read_text(encoding='utf-8'))
@@ -15,10 +15,26 @@ if args.wave == 'initial':
     name = 'module5-parallel-review-media-2026-10-10.zip'
     directories = ['module5-visual-review-2026-10-10', 'module5-draft-visual-review-2026-10-10', 'parallel-production-2026-10-10']
     scope = 'Additive original/revised Module 5 diagnostic frames, their evidence and render helpers, and production reading desk. No audio, full export or release approval.'
-else:
+elif args.wave == 'visual-v2':
     name = 'module5-visual-v2-media-2026-10-10.zip'
     directories = ['module5-visual-v2-review-2026-10-10', 'module5-course-plan-2026-10-10']
     scope = 'Additive Module 5 v2 visual review evidence and focused course route page. Source/static/silent evidence remains distinct from voiced playback, listening and release approval.'
+elif args.wave == 'selected-c2-b2':
+    name = 'module5-c2-b2-selected-media-2026-10-10.zip'
+    directories = ['module5-c2-selected-2026-10-10', 'module5-b2-selected-2026-10-10', 'parallel-production-2026-10-10', 'calculation-full-review-2026-10-10']
+    scope = 'Additive C2/B2 selected silent native and narrow still evidence, preserved diagnostic states and current production/full-export reading pages. No new recordings or completed full videos in this checkpoint.'
+elif args.wave == 'voiced-c2-b2':
+    name = 'module5-c2-b2-voiced-media-2026-10-10.zip'
+    directories = ['module5-c2-voiced-2026-10-10', 'module5-b2-voiced-2026-10-10', 'module5-voiced-review-2026-10-10', 'module5-voiced-pilots-2026-10-10']
+    scope = 'Fresh C2/B2 raw Simon v4 takes, sidecars, lossless assemblies, preserved v1 and corrected v2 measured candidates, complete listening tracks and two short voiced pilot packages. Human listening and complete visual playback/release approval remain pending.'
+elif args.wave == 'full-empirical':
+    name = 'calculation-full-empirical-media-2026-10-10.zip'
+    directories = ['calculation-full-2026-10-10/empirical-formulas/full-render-02']
+    scope = 'Completed empirical full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export is unreviewed for public release.'
+else:
+    name = 'calculation-full-mole-media-2026-10-10.zip'
+    directories = ['calculation-full-2026-10-10/mole-ratios/full-render-01']
+    scope = 'Completed mole-ratios full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export is unreviewed for public release.'
 output = ROOT / 'out/archives' / name
 if output.exists():
     raise RuntimeError('Preserve the existing dated archive; use a new version for later changes.')
@@ -29,8 +45,22 @@ for name in directories:
         raise RuntimeError('Missing review directory: ' + name)
     for item in directory.rglob('*'):
         relative = item.relative_to(directory)
-        if item.is_file() and not {'bundle', 'public', 'node_modules'}.intersection(relative.parts) and item.suffix in {'.png', '.json', '.mjs', '.tsx', '.html', '.mp4'}:
+        if item.is_file() and not {'bundle', 'public', 'node_modules'}.intersection(relative.parts) and item.suffix in {'.png', '.json', '.mjs', '.tsx', '.html', '.mp4', '.py', '.wav', '.mp3', '.m4a', '.srt', '.vtt', '.txt'}:
             files.append(item)
+if args.wave == 'voiced-c2-b2':
+    audio_directories = set()
+    for key, subject in [('c2', 'chemistry-c2'), ('b2', 'biology-b2')]:
+        lesson = json.loads((ROOT / f'out/prototypes/module5-{key}-voiced-2026-10-10/narrated-v2.lesson.json').read_text(encoding='utf-8'))
+        manifest = json.loads((ROOT / f'docs/production/module5-c2-b2-recording-preparation-2026-10-10/{subject}.voice-manifest.json').read_text(encoding='utf-8'))
+        values = [s['audioFile'] for s in manifest['scenes']] + [s['voiceover']['audioFile'] for s in lesson['scenes'] if s.get('voiceover', {}).get('audioFile')]
+        for value in values:
+            relative = value if value.startswith('public/') else 'public/' + value
+            resolved = (ROOT / relative).resolve()
+            if not resolved.is_relative_to((ROOT / 'public/audio').resolve()):
+                raise RuntimeError('Audio outside selected transfer scope.')
+            audio_directories.add(resolved.parent)
+    for directory in audio_directories:
+        files.extend(item for item in directory.iterdir() if item.is_file() and item.suffix in {'.wav', '.mp3', '.json'})
 files = sorted(set(files))
 entries = [{'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size,
             'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]

@@ -1,0 +1,372 @@
+{
+  "lesson": {
+    "title": "How reversible reactions approach equilibrium",
+    "subtitle": "Two changing rates, one dynamic balance",
+    "subject": "Chemistry",
+    "yearLevel": "Year 12",
+    "module": "Module 5",
+    "lesson": "Lesson 2",
+    "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+    "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+    "syllabusDotPoints": [
+      "Explain concentration and rate relationships in a stated reversible model (candidate contribution to ACSCH070 and ACSCH094)."
+    ],
+    "moduleLessonCount": 18,
+    "nesaOutcomes": [
+      "CH12-12",
+      "CH11/12-5",
+      "CH11/12-6",
+      "CH11/12-7"
+    ],
+    "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+    "lessonIntent": "Explain the changing opposing rates in a stated A-only reversible model and distinguish faster equilibration from a changed final equilibrium composition.",
+    "examSkill": "Use both supplied direction rates to justify initial net change; explain the catalyst effect under fixed conditions.",
+    "productionRole": "production",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "introDurationInFrames": 0,
+    "scenes": [
+      {
+        "id": "c2-title",
+        "type": "title",
+        "durationInFrames": 120,
+        "caption": "How reversible reactions approach equilibrium"
+      },
+      {
+        "id": "c2-hook",
+        "type": "hook",
+        "heading": "Does reverse have to wait?",
+        "body": "A starts turning into B. Can B turn back before equilibrium?",
+        "callout": "The opposing processes overlap.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "hook",
+            "reverseAt": 646
+          }
+        },
+        "durationInFrames": 929,
+        "caption": "Follow the opposing processes from an A-only start.",
+        "voiceover": {
+          "text": "Last time, equal reaction rates explained why an equilibrium mixture stays steady. But how do those rates become equal? Imagine a reversible reaction that starts with only A. As B forms, can it start turning back into A straight away, or does it have to wait for the forward reaction to finish? It can turn back while the forward reaction is still happening. That overlap is what we will follow."
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "callout": 646
+        }
+      },
+      {
+        "id": "c2-model",
+        "type": "concept",
+        "heading": "State the model first",
+        "body": "A and B are two forms of one model substance.",
+        "bullets": [
+          {
+            "text": "One A becomes one B.",
+            "at": 1.0
+          },
+          {
+            "text": "A-only start: no B to convert back.",
+            "at": 23.6
+          },
+          {
+            "text": "Fixed first-order coefficients, not a general rate law.",
+            "at": 3.0
+          }
+        ],
+        "secondary": "Well mixed; no side reactions. Schematic quantities, not measurements.",
+        "callout": "Closed does not mean insulated.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "model",
+            "runAt": 1092
+          }
+        },
+        "durationInFrames": 1314,
+        "caption": "Closed, fixed-volume, constant-temperature first-order model.",
+        "voiceover": {
+          "text": "A and B are two forms of our model substance. One A can become one B, and one B can become one A. The container is closed, its volume and temperature stay fixed, and we are following a simple model in which the rate in each direction depends on how much of its starting form is present. At the beginning there is plenty of A and no B. So the forward process can run, but the reverse rate is zero because there is no B to convert yet. Closed means matter stays inside. It does not mean the container is insulated."
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 90,
+          "callout": 1014
+        }
+      },
+      {
+        "id": "c2-collision",
+        "type": "concept",
+        "heading": "Meeting is only part of it",
+        "body": "An effective collision leads to reaction.",
+        "bullets": [
+          {
+            "text": "Enough energy and a suitable arrangement.",
+            "at": 9.1
+          },
+          {
+            "text": "More particles in the same volume: more opportunities to meet.",
+            "at": 28.133333333333333
+          }
+        ],
+        "secondary": "The A/B conversion model is not a collision mechanism.",
+        "callout": "Activation energy is the reaction barrier.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "association"
+          }
+        },
+        "durationInFrames": 1637,
+        "caption": "Collision explanation and a distinct two-to-one association example.",
+        "voiceover": {
+          "text": "Collision theory helps explain why the amount present can matter. In a reaction between particles, meeting is only part of the story. The particles also need enough energy and a suitable arrangement for reaction. Activation energy is the energy barrier that reacting particles must overcome. A collision that leads to reaction is called an effective collision. For example, two nitrogen dioxide molecules can combine to make dinitrogen tetroxide. With more nitrogen dioxide molecules in the same volume, there are more opportunities for them to meet. That is a rate explanation. Our A-to-B arrows only track conversion; they do not show molecules colliding. Some reactions involve a molecule breaking apart or changing form after energy transfer, so this simple picture is not a full mechanism for every reaction."
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 90,
+          "callout": 1337
+        }
+      },
+      {
+        "id": "c2-rates",
+        "type": "concept",
+        "heading": "Both rates change together",
+        "body": "Our start: A only.",
+        "bullets": [
+          {
+            "text": "Less A: forward rate falls.",
+            "at": 7.033333333333333
+          },
+          {
+            "text": "More B: reverse rate rises.",
+            "at": 9.933333333333334
+          }
+        ],
+        "secondary": "Fixed scale and conditions. The exact equilibrium limit is shown separately.",
+        "callout": "Replacement balances removal.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "rates",
+            "forwardAt": 211,
+            "reverseAt": 298,
+            "limitAt": 869
+          }
+        },
+        "durationInFrames": 1165,
+        "caption": "Finite curves approach the equal, non-zero equilibrium limiting rate.",
+        "voiceover": {
+          "text": "Back in our A and B model, each net forward conversion leaves less A and more B. As A decreases, the forward rate falls. As B builds up, the reverse rate rises. These changes happen together, rather than one reaction ending before the other begins. The rate graph shows the forward curve coming down and the reverse curve coming up. As they approach the same non-zero rate, their effects balance. At equilibrium, each direction replaces what the other removes, so the composition stays steady even though both conversions continue."
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 90,
+          "callout": 865
+        }
+      },
+      {
+        "id": "c2-amounts",
+        "type": "concept",
+        "heading": "A different graph quantity",
+        "body": "Same model, start and conditions.",
+        "bullets": [
+          {
+            "text": "Rate: conversion per time.",
+            "at": 15.733333333333333
+          },
+          {
+            "text": "Concentration: amount per volume.",
+            "at": 18.633333333333333
+          }
+        ],
+        "secondary": "A:B equilibrium limit is 2:1, an authored model choice.",
+        "callout": "A different start can reverse the approach.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "amounts",
+            "forwardAt": 90,
+            "reverseAt": 210,
+            "limitAt": 174
+          }
+        },
+        "durationInFrames": 1115,
+        "caption": "Schematic concentrations approach unequal limiting levels.",
+        "voiceover": {
+          "text": "Now compare the concentration graph. A decreases and B increases, then each levels off. Their two final levels are different in this example. The rate curves approach the same level, but the concentration curves do not have to. Rate tells us how quickly conversion happens. Concentration tells us how much is present per volume. Also, forward down and reverse up describe our chosen starting mixture. If a mixture began with excess B and the reverse rate were larger, the approach could go the other way."
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 90,
+          "callout": 815
+        }
+      },
+      {
+        "id": "c2-catalyst",
+        "type": "concept",
+        "heading": "Sooner, same final balance",
+        "body": "Repeat the identical starting mixture.",
+        "bullets": [
+          {
+            "text": "Alternative pathway with a lower effective barrier.",
+            "at": 7.033333333333333
+          },
+          {
+            "text": "Overall endpoint energies stay the same.",
+            "at": 16.566666666666666
+          }
+        ],
+        "secondary": "Schematic pathways and concentrations. No universal numerical catalyst factor.",
+        "callout": "Same final equilibrium composition.",
+        "conceptVisualLayout": "diagramFocus",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m5Approach",
+          "props": {
+            "mode": "catalyst",
+            "graphAt": 732,
+            "limitAt": 732,
+            "comparisonAt": 857,
+            "comparisonEnd": 1068
+          }
+        },
+        "durationInFrames": 1413,
+        "caption": "Same starting mixture and conditions; catalyst changes approach time.",
+        "voiceover": {
+          "text": "Suppose we repeat the same starting mixture with a suitable catalyst, keeping the temperature and volume unchanged. A catalyst provides an alternative reaction pathway with a lower effective activation barrier. It enables the opposing reaction processes to happen more readily. It does not change the energies of the overall reactants and products or favour a different final equilibrium composition. In our comparison, B approaches the same final level sooner. At an early comparison time, the catalysed mixture can contain more B because it has progressed further. Once both mixtures reach equilibrium, that difference is gone. The catalyst changes how soon the balance is reached, not the balance we reach."
+        },
+        "revealDelays": {
+          "heading": 12,
+          "body": 36,
+          "diagram": 20,
+          "secondary": 90,
+          "callout": 1113
+        }
+      },
+      {
+        "id": "c2-transfer",
+        "type": "quickCheck",
+        "heading": "A different start",
+        "question": "Which substance initially increases? Use both rates. Does a catalyst change the final equilibrium concentration of D?",
+        "answerSteps": [
+          "C initially increases.",
+          "Net four units towards C in the one-to-one model.",
+          "Catalyst: same final equilibrium concentration of D."
+        ],
+        "durationInFrames": 2867,
+        "caption": "Use both rates. Compare initial change with final equilibrium.",
+        "voiceover": {
+          "text": "Try a different start. C and D interconvert one for one in a closed container at constant temperature and volume. The mixture begins mostly as D. Early measurements give a forward rate, C to D, of two units, and a reverse rate, D to C, of six units on the same scale. Which substance will initially increase overall? Explain using both rates. Then compare this mixture with an identical starting mixture containing a suitable catalyst. Will the catalyst change the final equilibrium concentration of D? Take a moment, or pause if you would like longer. C initially increases. The reverse process makes C at six units while the forward process removes C at two, so more C is being made than used. In this one-for-one model, the difference is a net four units towards C. Starting mostly with D did not by itself prove that direction; the supplied rates did. With the suitable catalyst, the mixture approaches the same final equilibrium composition sooner under the same conditions. It does not finish with a different equilibrium concentration of D. If you predicted more D simply because a catalyst speeds reactions, separate the amount present at an earlier time from the final equilibrium amount."
+        },
+        "revealDelays": {
+          "heading": 24,
+          "pausePrompt": 1119,
+          "responseHoldStart": 1179,
+          "answerVisibleStart": 1479,
+          "stepAts": [
+            1479,
+            1516,
+            2162
+          ]
+        },
+        "calculationPresentation": {
+          "layout": "module5Evidence",
+          "task": "Initial increase? Final catalyst effect?",
+          "equation": "C ⇌ D (one-to-one)",
+          "givens": [
+            {
+              "label": "C → D",
+              "value": "2 rate units"
+            },
+            {
+              "label": "D → C",
+              "value": "6 rate units"
+            }
+          ],
+          "references": [
+            {
+              "label": "Start",
+              "value": "Mostly D"
+            },
+            {
+              "label": "System",
+              "value": "Closed"
+            }
+          ],
+          "note": "Same scale: arbitrary rate units. Fixed temperature and volume.",
+          "stages": [
+            {
+              "label": "Which process makes C?",
+              "lines": [
+                "D → C makes C.",
+                "C initially increases."
+              ],
+              "summary": "C initially increases."
+            },
+            {
+              "label": "Compare both rates",
+              "lines": [
+                "Six makes C; two removes C.",
+                "Net four units towards C."
+              ],
+              "lineAts": [
+                1516,
+                1814
+              ],
+              "summary": "Supplied rates justify direction."
+            },
+            {
+              "label": "Compare final composition",
+              "lines": [
+                "Same final equilibrium D.",
+                "The catalyst gets there sooner."
+              ],
+              "lineAts": [
+                2373,
+                2162
+              ],
+              "summary": "Final composition unchanged."
+            }
+          ]
+        }
+      },
+      {
+        "id": "c2-summary",
+        "type": "summary",
+        "heading": "What changes, what balances?",
+        "points": [
+          "Opposing processes overlap before equilibrium.",
+          "Rates balance; concentrations may differ.",
+          "Catalyst changes approach time, not final composition."
+        ],
+        "finalPrompt": "Next: concentration and temperature disturbances (C3).",
+        "durationInFrames": 1152,
+        "caption": "Explain changing rates and the catalyst comparison.",
+        "voiceover": {
+          "text": "A reversible reaction can run in both directions before equilibrium is reached. In our A-only start, the forward rate falls as A is used, while the reverse rate rises as B forms. Equilibrium is the balance of equal non-zero rates, not a requirement for equal concentrations. A suitable catalyst can bring that balance about sooner without changing the final composition at the same temperature and other stated conditions. Next, we will start with a mixture already at equilibrium and ask what happens when its concentration or temperature changes."
+        }
+      }
+    ]
+  }
+}

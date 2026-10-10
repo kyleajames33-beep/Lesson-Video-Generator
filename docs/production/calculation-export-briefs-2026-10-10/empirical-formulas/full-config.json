@@ -1,0 +1,30 @@
+{
+  "lessonPath": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+  "entryPoint": "src/dev/release-entry.tsx",
+  "compositionId": "Lesson-release",
+  "codec": "h264",
+  "scale": 1,
+  "crf": 16,
+  "concurrency": 1,
+  "audioMode": "alignedPcm",
+  "normalizeAudio": true,
+  "teachingBriefPath": "docs/production/calculation-export-briefs-2026-10-10/empirical-formulas/production-brief.json",
+  "inputs": [
+    "docs/production/calculation-feedback-2026-10-10.json",
+    "scripts/prepare-paced-feedback.py",
+    "out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.mp3",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.alignment.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/worked-example.0f45ea1041d6.generation.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.mp3",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.alignment.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/molecular-extension.3049cfc0f386.generation.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.mp3",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.alignment.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-prompt.c7eb2682c2bb.generation.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.mp3",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.alignment.json",
+    "public/audio/Chemistry-empirical-organised-v4-2026-10-09/quick-check-answer.c88961583397.generation.json",
+    "out/prototypes/empirical-formulas-paced-2026-10-10/tempo-derivation.json"
+  ]
+}

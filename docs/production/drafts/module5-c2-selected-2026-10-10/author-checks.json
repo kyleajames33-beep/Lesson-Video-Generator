@@ -1,0 +1,83 @@
+{
+  "reviewer": "Sol 6.1 implementation author",
+  "evidenceType": "author source and mathematical checks only",
+  "selectedLessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+  "selectedLessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90",
+  "componentPath": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx",
+  "componentSha256": "b8835d473de45ccaa2fa46381a4eb642c7bc621bc241dbdada070a01bfa86045",
+  "results": {
+    "speechCopiedExactly": true,
+    "portablePropsMatch": true,
+    "noEmDash": true,
+    "noSelectedAudioOrCaptions": true,
+    "actualModelInitialRatesAndConservation": true,
+    "finiteModelRatesUnequal": true,
+    "equilibriumLimitRatesEqualNonzero": true,
+    "concentrationLimitTwoToOne": true,
+    "plannedAnswerFreeResponseFrames": 300,
+    "responseAnswerTimingSourceCheck": true
+  },
+  "timeline": {
+    "fps": 30,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 11520,
+    "allTimingsEstimated": true
+  },
+  "draftBrief": {
+    "ready": true,
+    "stage": "draft",
+    "blockers": [],
+    "pending": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Script/source review: pending"
+      },
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Exact voiced preview: pending"
+      },
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Human listening: pending"
+      }
+    ],
+    "source": {
+      "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+      "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+  },
+  "recordingBrief": {
+    "ready": false,
+    "stage": "recording",
+    "blockers": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Script/source review: pending"
+      }
+    ],
+    "pending": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Exact voiced preview: pending"
+      },
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Human listening: pending"
+      }
+    ],
+    "source": {
+      "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+      "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+  },
+  "limitations": [
+    "Author checks are not independent source approval.",
+    "Silence is planned, not measured assembly.",
+    "Still frames do not establish continuous playback, exact voiced cues, external-caption fit, device readability or human listening."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "runtimePath": "out/checks/review-batch-byte-preserved-2026-10-09",
+  "runtimeCommit": "5ff1e4a2851193d4bad26750145592c1ae97d4bf",
+  "statusPath": "out/local/calculation-full-export-status-2026-10-10.json",
+  "ffmpegPath": "node_modules/@remotion/compositor-win32-x64-msvc/ffmpeg.exe",
+  "ffprobePath": "node_modules/@remotion/compositor-win32-x64-msvc/ffprobe.exe",
+  "jobs": [
+    {
+      "key": "empirical-formulas",
+      "title": "Empirical formulas",
+      "configPath": "docs/production/calculation-export-briefs-2026-10-10/empirical-formulas/full-config.json",
+      "outputPath": "out/prototypes/calculation-full-2026-10-10/empirical-formulas/full-render-02",
+      "logPath": "out/local/calculation-full-empirical-formulas-2026-10-10.log",
+      "externalPid": 17852
+    },
+    {
+      "key": "mole-ratios",
+      "title": "Mole ratios",
+      "configPath": "docs/production/calculation-export-briefs-2026-10-10/mole-ratios/full-config-concurrency-2.json",
+      "outputPath": "out/prototypes/calculation-full-2026-10-10/mole-ratios/full-render-01",
+      "logPath": "out/local/calculation-full-mole-ratios-2026-10-10.log"
+    },
+    {
+      "key": "mass-to-mass",
+      "title": "Mass-to-mass calculations",
+      "configPath": "docs/production/calculation-export-briefs-2026-10-10/mass-to-mass/full-config-concurrency-2.json",
+      "outputPath": "out/prototypes/calculation-full-2026-10-10/mass-to-mass/full-render-01",
+      "logPath": "out/local/calculation-full-mass-to-mass-2026-10-10.log"
+    },
+    {
+      "key": "limiting",
+      "title": "Limiting reagents",
+      "configPath": "docs/production/calculation-export-briefs-2026-10-10/limiting/full-config-concurrency-2.json",
+      "outputPath": "out/prototypes/calculation-full-2026-10-10/limiting/full-render-01",
+      "logPath": "out/local/calculation-full-limiting-2026-10-10.log"
+    }
+  ],
+  "publicPosting": "pending exact completed package reviews"
+}

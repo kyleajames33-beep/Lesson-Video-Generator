@@ -1,0 +1,233 @@
+{
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-c2-selected-2026-10-10/lesson.json",
+    "lessonSha256": "ce66abda591b0dbf8bff7371cb87d43fb0f6fce5bd0c819e80d21796248dac90"
+  },
+  "status": "pending-measured-audio",
+  "units": {
+    "bulletAt": "seconds from scene start",
+    "revealDelays": "scene-local frames",
+    "diagramProps": "component-specific scene-local cue frames",
+    "lineAts": "scene-local frames"
+  },
+  "scenes": [
+    {
+      "sceneId": "c2-title",
+      "currentEstimatedDurationInFrames": 120,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [],
+      "requiredAction": "Retain silent title and its existing transition overlap."
+    },
+    {
+      "sceneId": "c2-hook",
+      "currentEstimatedDurationInFrames": 929,
+      "currentEstimatedReveals": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "callout": 646
+      },
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {
+        "mode": "hook",
+        "reverseAt": 646
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-model",
+      "currentEstimatedDurationInFrames": 1314,
+      "currentEstimatedReveals": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 1014
+      },
+      "currentBulletCuesSeconds": [
+        {
+          "text": "One A becomes one B.",
+          "at": 1
+        },
+        {
+          "text": "A-only start: no B to convert back.",
+          "at": 23.6
+        },
+        {
+          "text": "Fixed first-order coefficients, not a general rate law.",
+          "at": 3
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "model",
+        "runAt": 1092
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-collision",
+      "currentEstimatedDurationInFrames": 1637,
+      "currentEstimatedReveals": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 1337
+      },
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Enough energy and a suitable arrangement.",
+          "at": 9.1
+        },
+        {
+          "text": "More particles in the same volume: more opportunities to meet.",
+          "at": 28.133333333333333
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "association"
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-rates",
+      "currentEstimatedDurationInFrames": 1165,
+      "currentEstimatedReveals": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 865
+      },
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Less A: forward rate falls.",
+          "at": 7.033333333333333
+        },
+        {
+          "text": "More B: reverse rate rises.",
+          "at": 9.933333333333334
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "rates",
+        "forwardAt": 211,
+        "reverseAt": 298,
+        "limitAt": 869
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-amounts",
+      "currentEstimatedDurationInFrames": 1115,
+      "currentEstimatedReveals": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 815
+      },
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Rate: conversion per time.",
+          "at": 15.733333333333333
+        },
+        {
+          "text": "Concentration: amount per volume.",
+          "at": 18.633333333333333
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "amounts",
+        "forwardAt": 90,
+        "reverseAt": 210,
+        "limitAt": 174
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-catalyst",
+      "currentEstimatedDurationInFrames": 1413,
+      "currentEstimatedReveals": {
+        "heading": 12,
+        "body": 36,
+        "diagram": 20,
+        "secondary": 90,
+        "callout": 1113
+      },
+      "currentBulletCuesSeconds": [
+        {
+          "text": "Alternative pathway with a lower effective barrier.",
+          "at": 7.033333333333333
+        },
+        {
+          "text": "Overall endpoint energies stay the same.",
+          "at": 16.566666666666666
+        }
+      ],
+      "currentDiagramProps": {
+        "mode": "catalyst",
+        "graphAt": 732,
+        "limitAt": 732,
+        "comparisonAt": 857,
+        "comparisonEnd": 1068
+      },
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-transfer",
+      "currentEstimatedDurationInFrames": 2867,
+      "currentEstimatedReveals": {
+        "heading": 24,
+        "pausePrompt": 1119,
+        "responseHoldStart": 1179,
+        "answerVisibleStart": 1479,
+        "stepAts": [
+          1479,
+          1516,
+          2162
+        ]
+      },
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [
+        {
+          "label": "Which process makes C?",
+          "lineAts": []
+        },
+        {
+          "label": "Compare both rates",
+          "lineAts": [
+            1516,
+            1814
+          ]
+        },
+        {
+          "label": "Compare final composition",
+          "lineAts": [
+            2373,
+            2162
+          ]
+        }
+      ],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    },
+    {
+      "sceneId": "c2-summary",
+      "currentEstimatedDurationInFrames": 1152,
+      "currentEstimatedReveals": {},
+      "currentBulletCuesSeconds": [],
+      "currentDiagramProps": {},
+      "currentStageLineAts": [],
+      "requiredAction": "Resolve narration onset, complete scene duration, all meaningful reveals and reading holds against selected alignment; no word-count estimate passes timing."
+    }
+  ]
+}
