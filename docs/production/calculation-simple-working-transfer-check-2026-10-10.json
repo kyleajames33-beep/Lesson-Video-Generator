@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "status": "pass-for-restoration-and-exact-dependency-portability-only",
+  "clonePath": "out/checks/calculation-simple-working-transfer-2026-10-10",
+  "runtimeCommit": "fe53497c78fb49105ead2f6b04520f5e1419593c",
+  "preservation": "Keep this checkout pinned. Do not pull or edit its tracked renderer. Earlier calculation and Module 5 runtimes remain separately pinned.",
+  "restoredArchive": {
+    "path": "out/archives/calculation-simple-working-media-2026-10-10.zip",
+    "sha256": "85ff1deb18be0bc1fb8885726909e23b27457e6cc44b1534302ef989fd07262c",
+    "membersVerified": 180,
+    "restoredIgnoredFiles": 176,
+    "verifiedTrackedCopies": 4,
+    "trackedCopiesWritten": 0
+  },
+  "restoreFinding": "The first preflight rejected tracked lesson copies before writing any file. The bounded tracked-copy verification now validates both checkout and archive bytes and never writes those copies. Normal restore boundaries are retained.",
+  "snapshotChecks": [
+    {
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/limiting/pilot-01/release.snapshot.json",
+      "observedCliVerification": {
+        "valid": true,
+        "packageSha256": "b2ec1c4af50b2d91b65373a90cb1f6d79bbbe0be17b4927ce5dbd417e696117b",
+        "changes": [],
+        "missingRequired": []
+      }
+    },
+    {
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/pilot-01/release.snapshot.json",
+      "observedCliVerification": {
+        "valid": true,
+        "packageSha256": "08a4d3d48e2ec1207a918b97656efa8bce6d55d0951bae20c73d496ca30c7ebf",
+        "changes": [],
+        "missingRequired": []
+      }
+    }
+  ],
+  "rebuiltReviewArtifacts": [
+    {
+      "path": "out/prototypes/calculation-simple-working-review-2026-10-10/index.html",
+      "sha256": "fe44684d0674565a32aaffddbbd5a918a14a18156bf9011d39ddd2ba3995435d",
+      "matchesMainBytes": true
+    },
+    {
+      "path": "out/prototypes/calculation-simple-working-review-2026-10-10/limiting-review-captions.vtt",
+      "sha256": "4c9f943168010b01acef73711139ab323eaa5a3a54a35de56241ca18d3561a2c",
+      "matchesMainBytes": true
+    },
+    {
+      "path": "out/prototypes/calculation-simple-working-review-2026-10-10/empirical-formulas-review-captions.vtt",
+      "sha256": "729eaaea44101bab4068ce4ad39f97f7a6cfbe7b866b2fd1f7f0fc061295d5bd",
+      "matchesMainBytes": true
+    }
+  ],
+  "trackedCloneClean": true,
+  "limitations": [
+    "No audio, continuous visual-quality, device, learner-effectiveness or publication approval.",
+    "This verifies exact selected-scene pilots, not full replacement exports."
+  ]
+}

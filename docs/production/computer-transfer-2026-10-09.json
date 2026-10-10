@@ -201,7 +201,9 @@
       "status": "published-verified",
       "scope": "Two complete selected-scene calculation display pilots, all snapshot-bound exports, selected sources, native and decoded evidence, original source baselines and required ignored inputs. No full replacement, human listening or public release approval.",
       "githubAssetId": 626942105,
-      "verification": "Uploaded state, byte size and SHA256 digest match local archive. All 180 archive members passed CRC/hash checks; credential scan passed. Fresh restore still pending."
+      "verification": "GitHub uploaded state, byte size and SHA256 match the CRC/member-hash checked archive. Fresh checkout verifies all 180 members: 176 ignored files restored and four tracked copies verified without writes. Both exact pilot snapshots and rebuilt review artifacts pass.",
+      "restoreCheck": "docs/production/calculation-simple-working-transfer-check-2026-10-10.json",
+      "pinnedRuntimeCommit": "fe53497c78fb49105ead2f6b04520f5e1419593c"
     }
   ]
 }
