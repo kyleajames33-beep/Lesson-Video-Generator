@@ -1,0 +1,71 @@
+{
+  "status": "silent-design-pilot-prepared; independent review and human taste review pending",
+  "source": "src/prototypes/PressureDesignPilot.tsx",
+  "builder": "scripts/build-pressure-design-pilot.mjs",
+  "currentPage": "out/prototypes/pressure-design-pilot-2026-10-11-v4/index.html",
+  "durationSeconds": 66,
+  "scope": {
+    "question": "What changes immediately when a reacting gas mixture is compressed, and why does its reaction response partly offset that change?",
+    "cohort": "Students starting Year 12 Chemistry, Module 5",
+    "entryKnowledge": ["Atoms form molecules; a formula identifies a substance.", "A reversible reaction can reach equilibrium, when its forward and reverse reactions balance."],
+    "start": "A closed N2, H2 and NH3 gas mixture is initially at equilibrium.",
+    "stop": "Compression at constant temperature raises pressure first; a net reaction toward fewer gas molecules partly offsets the rise.",
+    "nextHandoff": "Return to the selected pressure lesson for expansion, equal gas totals and inert-gas conditions. These are outside this design comparison.",
+    "notes": "Twelve seconds of stable optional book notes after the explanation.",
+    "understandingCheck": "Opening question distinguishes immediate compression from later composition change. A separate unseen transfer check belongs in the full lesson, not this short design study."
+  },
+  "referencesInspected": [
+    "AGENTS.md",
+    "REPO-GUIDE.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+    "docs/production/overnight-module5-2026-10-10/chemistry-pressure/CandidateConditions.tsx",
+    "src/slides/diagrams/kinds/chem-y12-m5/PressureDiagram.tsx",
+    "src/slides/diagrams/kinds/chem-y12-m5/lcMolecules.tsx",
+    "src/prototypes/DesignDirections.tsx",
+    "src/animations/HandDrawn.tsx",
+    "out/prototypes/handdrawn-answer.png"
+  ],
+  "visualDecisions": [
+    "Reuse the existing CPK molecule forms and element gradients. Their structures distinguish nitrogen, hydrogen and ammonia beyond colour alone.",
+    "Adjust the existing pressure diagram concept into a large connected apparatus. Glass highlights, metal hardware and a pressure line give the physical parts clear relationships.",
+    "Remove the old plinth for this pilot because it contributes no explanatory context to the pressure apparatus.",
+    "Use restrained handwritten attention cues, not animated line boil, because the molecule paths and gauge need smooth legible motion.",
+    "Separate the apparatus, molecular stoichiometry and pressure trace at meaningful teaching boundaries. Avoid several competing diagram panels during compression.",
+    "Keep all essential content above y=900 for later voiced caption placement. The silent pilot has no fabricated captions.",
+    "Root requested v4 to remove dotted references in accordance with earlier user feedback. The piston travel bracket is now thin and solid; the original-pressure reference is a thin solid muted line. All other v3 staging is preserved."
+  ],
+  "beats": [
+    {"frames": [0, 239], "decision": "adjust", "visual": "Large gas chamber, connected pressure gauge and named molecule key", "purpose": "Locate the reacting entities and establish the initial state.", "provisionalNarrationCue": "Here is a mixture of nitrogen, hydrogen and ammonia. Both reactions initially balance. What changes first if we squeeze it?", "hold": "The starting apparatus remains for eight seconds."},
+    {"frames": [240, 479], "decision": "adjust", "visual": "Piston moves down while every original molecular identity and count is retained", "purpose": "Separate volume change from reaction.", "provisionalNarrationCue": "The piston moves down. The same molecules now occupy less space. Moving the piston has not made any ammonia.", "hold": "Compression occupies 3.5 seconds, followed by a stable smaller-volume state."},
+    {"frames": [480, 749], "decision": "adjust", "visual": "Shorter wall-to-wall paths, impact highlights and higher connected gauge indication", "purpose": "Explain pressure through more frequent wall impacts at unchanged temperature.", "provisionalNarrationCue": "In the smaller space the gas hits the walls more often. That raises the pressure before the reaction responds.", "hold": "Nine seconds for the collision explanation."},
+    {"frames": [750, 1019], "decision": "adjust", "visual": "Balanced gas equation and four reactant molecule forms contrasted with two product forms", "purpose": "Explain what the coefficients count, with g defined as gas.", "provisionalNarrationCue": "One nitrogen molecule and three hydrogen molecules can form two ammonia molecules. The same atoms make fewer gas molecules.", "hold": "Nine seconds for the equation and molecule count."},
+    {"frames": [1020, 1349], "decision": "new staging of reused molecular artwork", "visual": "Two nitrogen atoms and six hydrogen atoms visibly regroup into two ammonia molecules; prior forms return as labelled before-state ghosts", "purpose": "Show conservation and the decrease in molecule number, without depicting an elementary four-body collision.", "provisionalNarrationCue": "Making more ammonia reduces the total amount of gas. This shows the overall change; the reaction actually takes several steps.", "hold": "Four seconds of regrouping, then a stable before-and-after relation."},
+    {"frames": [1350, 1619], "decision": "adjust", "visual": "Smaller fixed-volume apparatus with more ammonia, beside an explicitly schematic pressure trace", "purpose": "Distinguish the direct pressure rise from its partial reduction during reaction.", "provisionalNarrationCue": "The net reaction makes more ammonia and fewer gas molecules. This partly reduces the pressure rise, while the piston stays in its new position.", "hold": "Trace draws over about four seconds, then holds."},
+    {"frames": [1620, 1979], "decision": "stable editorial notes", "visual": "A small set of essentials on a calm board", "purpose": "Provide optional copying time after all new explanation.", "provisionalNarrationCue": "Here are the essentials for your book. Pause if you want more time.", "hold": "Twelve seconds; no new reasoning or ambient text motion."}
+  ],
+  "scientificLimits": [
+    "Particle sizes, counts, motion and apparatus are schematic; no measured equilibrium data or real apparatus calibration is claimed.",
+    "The original 20-molecule model remains unchanged throughout the compression beat. The later illustrative state changes 4 N2, 11 H2, 5 NH3 to 3 N2, 8 H2, 7 NH3.",
+    "The equation gives the overall atom balance. The animation is not an elementary mechanism, rate law or real-time reaction simulation.",
+    "The pressure trace is qualitative and explicitly labelled as schematic.",
+    "Temperature is held fixed. The pilot does not depict heating caused by rapid adiabatic compression.",
+    "Both reactions continue at a new equilibrium. The short silent staging isolates the net response for explanation."
+  ],
+  "verification": {
+    "typescript": "npx tsc --noEmit --pretty false passed.",
+    "build": "esbuild Player build and seven native still renders prepared; compiled prior revisions preserved.",
+    "nativeInspection": "Author inspected v1 and v2 native frames, repaired the top legend gap and lower caption-space use, then inspected all seven v3 native frames (120, 360, 600, 870, 1230, 1530, 1770). V4 changes only two reference strokes; all seven v4 stills were rendered and the changed frames 600 and 1530 were inspected. No visible overlap in those sampled frames. Motion and phone playback remain separate root review tasks.",
+    "uiPlayback": "Root review pending.",
+    "humanTaste": "pending",
+    "humanListening": "not applicable to silent sample; remains pending for any voiced lesson",
+    "learningEffectiveness": "not tested",
+    "releaseApproval": "not granted"
+  },
+  "unchangedInputs": "No selected lesson JSON, existing narration, shared diagram, release input or publication state was modified. No paid generation or full video export was performed."
+}

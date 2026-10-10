@@ -4,6 +4,10 @@ Draft standard for selected pilots, 2 October 2026. Derived from the [research r
 
 For every selected production lesson, complete the [teaching/visual brief](teaching-visual-brief-template.md) and use its draft, recording and export checks. This records how the research applies to the actual script and scenes; choosing a template does not complete review. Keep exact voiced-preview evidence distinct from source/still inspection and human listening.
 
+Use an independent [student learning reviewer](student-learning-review.md) for new and rewritten selections. Check that a beginner can follow each cause, that the current physical case remains visible, and that watching adds understanding beyond a text readout. A useful contrast, analogy or mnemonic can support memory; explain the relationship first and test its limits. Keep learner caveats only when omission would misteach or hide necessary conditions. Recording and export require separate source and exact voiced learning evidence in new version-three briefs.
+
+The [Module 5 memory-aid bank](module5-memory-aids-2026-10-11.md) is a selection resource. Record the chosen aid, why it helps and the necessary assumptions in the lesson brief. It is not a requirement to insert unrelated material or a substitute for checking the exact selected words with the subject teacher.
+
 For students starting Year 12, build the explanation from the stated entry
 knowledge. Give a necessary scientific term a short everyday meaning before
 relying on it. Explain the link between the evidence and the conclusion;
@@ -19,6 +23,14 @@ and faithful spoken captions. Reduce information before reducing font size.
 During an attempt, retain all question demands and supplied conditions;
 do not simplify a two-part question by dropping one part. Review the actual
 spoken sequence for reading load as well as legibility and caption clearance.
+
+Mistake/fix pages are optional. Use them only for a specific misconception
+whose correction adds understanding. Do not insert one in every lesson.
+Name what acts, where it goes and why that matters. "Pollen reaches the
+stigma" is useful; an unexplained "transfer" heading is not. Use an actual
+organism, apparatus or process visual where it helps the explanation. A text
+box placed in a diagram panel does not supply that visual. Check the selected
+prototype's appearance and teaching function, not just its presence in code.
 
 ## Common lesson brief
 

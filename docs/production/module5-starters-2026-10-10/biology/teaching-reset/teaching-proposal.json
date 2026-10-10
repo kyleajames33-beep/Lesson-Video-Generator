@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 1,
+  "kind": "full-teaching-and-visual-proposal",
+  "date": "2026-10-11",
+  "author": "/root/b1_teaching_reset_sol",
+  "status": "unrecorded-authoring-candidate; independent review and visual implementation pending",
+  "ownership": "This file only. Root owns selected lesson integration, production brief, narration, previews, exports and publication.",
+  "identity": {
+    "routeId": "bio-m5-b01",
+    "catalogueId": "Biology-Y12-M5-L1",
+    "subject": "Biology",
+    "yearLevel": "Year 12",
+    "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+    "proposedTitle": "Reproduction: copying and variation",
+    "proposedSubtitle": "How new plants continue a species",
+    "parentLessonPath": "docs/production/module5-starters-2026-10-10/biology/measured-v2/lesson.json",
+    "parentLessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+    "parentBriefPath": "docs/production/module5-starters-2026-10-10/biology/measured-v2/production-brief.json",
+    "parentBriefSha256": "7420a18e5dd5431205b40f630662c34dd564ee604a2a8e24a1247d7b40b18ae5",
+    "audioRelationship": "All proposed spoken scenes contain new words. Existing parent narration, alignment and captions cannot be attached to this proposal. No new media has been generated.",
+    "reviewRelationship": "Parent source, still, timing and audio evidence remains historical evidence for that exact parent. It supplies no review pass for this proposal."
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "ledgerPath": "docs/production/course-progression-ledger-2026-10-09.json",
+    "contentChecklistPath": "docs/production/course-content-checklist-2026-10-09.json",
+    "routePath": "docs/production/module5-video-route-2026-10-10.json",
+    "releasePriorityPath": "docs/production/module5-release-priority-2026-10-10.json",
+    "playlistPosition": 1,
+    "entryKnowledge": [
+      "An organism is one living individual; a population is a group of individuals of the same species.",
+      "Plants consist of cells, and cells contain DNA.",
+      "Offspring are new individuals produced by reproduction. No chromosome terminology is assumed."
+    ],
+    "entryCheck": {
+      "question": "Does a strawberry plant growing more leaves necessarily mean that it has made another plant?",
+      "expectedReason": "No. One individual can grow; reproduction produces a new individual.",
+      "delivery": "Use the existing parent and visibly rooted daughter plant in the continuity scene as a short explained prerequisite contrast. This is not presented as a measured independent attempt.",
+      "support": "If cells and DNA are unfamiliar, use school cell and inherited-information notes. A reviewed prerequisite video link remains to be selected by root; do not promise an available upload."
+    },
+    "startsWith": "A grower copies a strawberry plant with valued fruit characteristics, then encounters a new disease. Follow its rooted offspring to connect reproduction, inherited information and later generations.",
+    "stopsAfter": "Explain how offspring and inherited DNA connect generations, and use copying versus different inherited combinations to compare asexual and sexual reproduction under stated conditions. Apply the comparison to an untested dry-soil trial without promising a favourable outcome.",
+    "next": [
+      {
+        "routeId": "bio-m5-b02a",
+        "handoff": "Animal reproduction: how sperm and egg meet, and how offspring develop in different animals."
+      },
+      {
+        "routeId": "bio-m5-b02b",
+        "handoff": "Focused plant and other-organism mechanisms. The later plant route explains how a flower produces a seed and how a runner establishes a new plant."
+      }
+    ],
+    "excludedHere": [
+      "Self-fertilisation classification and parent-count exceptions",
+      "Alleles, haploid and diploid states, meiosis, mitosis stages and chromosome counts",
+      "Detailed pollen transfer, pollen-tube growth, double fertilisation and seed anatomy",
+      "Mutation as a separate teaching objective, environmental phenotype comparisons and disease mechanisms",
+      "A complete comparison of time, energy and population-growth rates across reproductive strategies",
+      "All organisms required by the reproduction syllabus action, practical coverage and guaranteed species survival"
+    ],
+    "coverageLimit": "This is the opening conceptual contribution to the reproduction action. The ledger still records the catalogue source as source-present-unreviewed. Neither the original declared content point nor this proposal completes the required variety-of-organisms mechanism analysis. Current and new-course action approval remains separate from source presence."
+  },
+  "appliedStandards": [
+    "AGENTS.md",
+    "REPO-GUIDE.md",
+    "HANDOFF.md, latest checkpoint and current selected-source paragraphs",
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md"
+  ],
+  "teaching": {
+    "mainLearnerQuestion": "How can reproduction keep a species going, while either copying a useful plant or producing inherited variation?",
+    "observableAction": "Choose a reproductive starting group for a stated purpose and explain the choice using inherited DNA, copying or different inherited combinations, then bound the prediction.",
+    "structure": "Concept through contrast, supported by one concrete runner example and one deliberately limited sexual cross. Revisit the grower's disease problem, then transfer to a dry-soil trial.",
+    "causalChain": [
+      "A rooted daughter plant is a new individual, so reproduction can provide another generation even though a parent has a limited lifetime.",
+      "The daughter receives DNA from its parent. In runner reproduction, new cells copy the parent's DNA, so the daughter usually retains very similar inherited information.",
+      "In a sexual cross, sperm and egg join inside a flower and each contributes DNA. Different reproductive cells can carry different inherited selections, so joining different pairs can produce different offspring combinations even with the same two parents.",
+      "A copied plant can retain valued inherited characteristics and a shared inherited weakness. Different inherited combinations may give different responses to a changed condition, if the relevant differences are present.",
+      "Producing offspring permits continuity. Enough offspring still need to survive and reproduce for a population to continue."
+    ],
+    "vocabularySequence": [
+      {
+        "term": "offspring",
+        "firstMeaning": "new individuals made by reproduction",
+        "sceneId": "continuity"
+      },
+      {
+        "term": "inherited",
+        "firstMeaning": "received from a parent",
+        "sceneId": "continuity"
+      },
+      {
+        "term": "asexual reproduction",
+        "firstMeaning": "reproduction without sperm and egg joining, shown with a strawberry runner",
+        "sceneId": "copying"
+      },
+      {
+        "term": "clone",
+        "firstMeaning": "an offspring produced by copying a parent's genetic information, illustrated by a runner daughter",
+        "sceneId": "copying"
+      },
+      {
+        "term": "gametes",
+        "firstMeaning": "reproductive cells, such as sperm and egg",
+        "sceneId": "sexual-cross"
+      },
+      {
+        "term": "sexual reproduction",
+        "firstMeaning": "reproduction in which gametes join",
+        "sceneId": "sexual-cross"
+      },
+      {
+        "term": "genetic variation",
+        "firstMeaning": "differences in inherited information",
+        "sceneId": "sexual-cross"
+      }
+    ],
+    "opening": "The grower scenario is a rhetorical question whose answer develops across the lesson. It has no claimed protected retrieval hold.",
+    "misconceptionDecision": "No separate mistake/fix page. A single sentence after the disease cause prevents shared risk being read as certain infection. The transfer feedback directly addresses the distinct inference that more variation guarantees a better plant.",
+    "readingLoad": "Show the current plants and at most the short label needed for the current explanation. Clear previous definition prose before the next mechanism. Do not display the full narration, a six-term definition list, comparative tables or an earlier answer trail beside new reasoning.",
+    "notesDecision": "Offer a compact optional book-notes scene after all reasoning and feedback. The invitation is followed by quiet time. The notes contain only already explained relationships and one necessary scope condition.",
+    "timingBasis": "Scene order and semantic cues are authored. All durations and holds below are planning hypotheses. Actual speech alignment, gap assembly, first answer exposure and full length must be measured after new recordings.",
+    "memoryAnchor": {
+      "wording": "Copy to keep. Cross to compare.",
+      "purpose": "A short causal reminder tied to the strawberry grower: runners usually retain an inherited combination, while crosses can provide different inherited combinations to compare. It is a conditional purpose anchor, not a claim that all crossing is a deliberate experiment or that useful variation is guaranteed.",
+      "homeScene": "grower-tradeoff",
+      "use": "Show only after both reproductive routes are explained. Use the dry-soil task to require its reason and limit rather than accepting the slogan as an answer."
+    }
+  },
+  "inspectedVisuals": [
+    {
+      "path": "public/assets/biology/strawberry-runner-botanical-v1.png",
+      "inspection": "Opened the actual 1672 by 941 raster. It shows a recognisable mature strawberry plant on the left, a slender above-soil connecting stem and a smaller rooted daughter on the right. Leaflets, roots and the soil interface are clear. It has no flowers or fruit and depicts an already established daughter.",
+      "decision": "Reuse the whole plate and bounded parent/daughter crops. It carries the runner relationship and new-individual distinction. Do not animate it as a literal record of growth or pretend it shows fruit quality, fertilisation or infection."
+    },
+    {
+      "path": "out/prototypes/plant-runner-design-pilot-2026-10-11-v3/native-360.png",
+      "sourcePath": "src/prototypes/PlantRunnerDesignPilot.tsx",
+      "inspection": "Opened the native still and read the prototype. The botanical plate occupies most of the stage with a short large explanation and a leader pointing to the runner. Later beats crop the same daughter and keep its roots and leaves visible.",
+      "decision": "Adjust this restrained plate-plus-label treatment for B1. Keep the useful organism scale and reference crop, but author B1's inheritance and comparison beats. This is sampled appearance evidence, not owner design approval or a voiced motion review."
+    },
+    {
+      "path": "docs/production/module5-starters-2026-10-10/evidence/biology-voiced-lineage-960.png",
+      "sourcePath": "src/slides/diagrams/kinds/bio-y12-m5/Module5LineageDiagram.tsx",
+      "inspection": "Opened the saved UI still. Inherited-information labels sit above spherical faces on plinths, with a ribbon and time axis. The model does not show the strawberry organism or how a new plant forms.",
+      "decision": "Replace its B1 binding with the concrete parent/daughter relationship. Preserve the existing component for other catalogue use; do not reproduce its plinths or generic faces."
+    },
+    {
+      "path": "out/prototypes/overnight-plants-voiced-2026-10-10-v2/ui-evidence/delivery-480.png",
+      "sourcePath": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "inspection": "Opened the saved UI still and inspected the component. It contains a simplified flower cutaway, pollen-tube route and magnified nested ovule model. Its labels include several structures that B1 does not need. The owner rejected the overnight direction.",
+      "decision": "Do not transplant the existing dense delivery board into B1. The required sexual-cross visual is a bounded new physical visual described below, retaining actual flowers, reproductive cells and seedlings while omitting the detailed transport mechanism."
+    }
+  ],
+  "visualGaps": [
+    {
+      "id": "strawberry-cross-context",
+      "neededFor": [
+        "sexual-cross",
+        "sexual-variation"
+      ],
+      "requirement": "Two recognisable flowering strawberry plants in soil, one magnified reproductive-cell inset placed within a correctly represented flower's ovule, and seed-to-seedling context. Reuse the runner botanical palette and existing stage typography. Label only the parents, sperm cell, egg cell and new seedlings when needed. The same reproductive-cell inset must support two alternative joining events from the same parents, each connected to a later seedling, to make the cause of differing combinations visible.",
+      "whyExistingIsInsufficient": "The inspected runner plate has no flowers or seeds. The historical cutaway board adds anatomical and delivery detail outside B1 and has rejected appearance. A table of parent information cannot show the relevant organism or the event.",
+      "scientificLimits": "The inset is an explicitly magnified schematic of reproductive cells, not generic beads representing whole organisms or allele tokens. Do not show a pollen grain as a sperm cell, sperm swimming freely between plants, or strawberry seeds developing inside the fleshy red receptacle. Do not use a generic single-ovary flower as a literal strawberry cutaway. Only one ovule needs to be highlighted; other floral structures are unlabelled context.",
+      "productionStatus": "Missing physical visual. Root must choose a scientifically checked botanical illustration or accurate coded model and inspect a representative pilot before recording. No new image, video or renderer change is supplied by this proposal."
+    },
+    {
+      "id": "trial-seedlings",
+      "neededFor": [
+        "dry-soil-attempt",
+        "dry-soil-feedback"
+      ],
+      "requirement": "A recognisable tray of strawberry seedlings next to the established runner daughter crop. Both groups appear healthy and receive neutral A/B labels. Use the same botanical treatment if the new cross visual supplies the seedling artwork.",
+      "scientificLimits": "Images identify the supplied origins. Differences in visible height, leaf colour, drooping or a green winner outline must not encode the answer. Appearance alone cannot prove inherited variation or dry-soil performance.",
+      "productionStatus": "Missing seedling group visual. Reuse the actual runner daughter for A; do not substitute generic circles or a text-only diagram panel for B."
+    }
+  ],
+  "scenes": [
+    {
+      "sceneId": "grower-hook",
+      "parentSceneIds": [
+        "title",
+        "hook"
+      ],
+      "role": "Concrete problem and useful question",
+      "heading": "Copy a good plant. Then conditions change.",
+      "narration": "Imagine you've grown a strawberry plant with the fruit you want. You can make new plants from it, so why start again with an uncertain result? Copying sounds useful. Then a new disease reaches the farm. Could those copies share a weakness as well as the fruit characteristics you wanted? To answer that, we need to follow what a new plant inherits.",
+      "visualDecision": "adjust",
+      "visualReference": "Existing strawberry runner plate and the inspected PlantRunnerDesignPilot whole-plant composition. Short existing Biology identity cue on the same opening stage.",
+      "physicalVisual": "Start with the mature parent and daughter visible in the actual plate. Identify the mature plant as the grower's chosen parent. The valued fruit is a supplied scenario condition, not a fruit image invented inside this plate. A short new-disease scenario label appears beside the same plants; no plant turns sick yet.",
+      "screenBeats": [
+        {
+          "cue": "with the fruit you want",
+          "labels": [
+            "Chosen strawberry plant"
+          ]
+        },
+        {
+          "cue": "make new plants from it",
+          "labels": [
+            "Parent",
+            "New plant"
+          ]
+        },
+        {
+          "cue": "Then a new disease",
+          "labels": [
+            "New disease at the farm"
+          ],
+          "question": "Could the copies share a weakness?"
+        }
+      ],
+      "motionPurpose": "Draw the leader to the daughter when new plants are named. Change only the scenario label when conditions change. Movement locates the question; it does not disclose the disease outcome.",
+      "activeFacts": [
+        "The grower values the parent's fruit characteristics.",
+        "The disease is a new condition in the fictional scenario."
+      ],
+      "clearBeforeNext": [
+        "Disease scenario label and opening question"
+      ],
+      "hold": {
+        "kind": "rhetorical-reading",
+        "plannedSeconds": null,
+        "limit": "No claim of an independent response opportunity."
+      }
+    },
+    {
+      "sceneId": "continuity",
+      "parentSceneIds": [
+        "concept-continuity"
+      ],
+      "role": "Connect new individuals and inherited DNA to later generations",
+      "heading": "A new plant can become a new parent.",
+      "narration": "First, a plant growing more leaves is still the same individual. Reproduction makes another individual: an offspring. Here, the small plant has its own roots and leaves. Once established, it can grow separately, and later it can make offspring too. The original plant will not live for ever, but another generation can follow it. The new plant also receives DNA from its parent. DNA carries inherited information, information passed from parent to offspring, that helps shape the plant's characteristics. For the population to continue, enough offspring must survive and reproduce in turn.",
+      "visualDecision": "adjust",
+      "visualReference": "Actual strawberry runner plate, its daughter crop and existing restrained leader-line treatment. Replace the selected plinth-lineage binding.",
+      "physicalVisual": "Hold the whole parent-runner-daughter relationship while explaining growth versus a new individual. Then show two adjacent botanical panels: this parent with its daughter, and a later established daughter with another rooted offspring. The later panel is an illustrative future example, not a claim that the raster records growth. Keep one current relationship highlighted.",
+      "screenBeats": [
+        {
+          "cue": "still the same individual",
+          "labels": [
+            "One plant growing"
+          ]
+        },
+        {
+          "cue": "an offspring",
+          "labels": [
+            "Offspring = new individual"
+          ]
+        },
+        {
+          "cue": "later it can make offspring too",
+          "labels": [
+            "Later generation"
+          ]
+        },
+        {
+          "cue": "receives DNA from its parent",
+          "labels": [
+            "Parent passes on DNA"
+          ],
+          "scopeLabel": "Stages shown at different times"
+        },
+        {
+          "cue": "enough offspring must survive",
+          "labels": [
+            "Offspring must survive and reproduce"
+          ]
+        }
+      ],
+      "motionPurpose": "Shift attention from the parent's leaves to the daughter's roots and leaves. Reveal the later-generation panel only after the daughter is established. Parent and offspring can overlap in time; never make a parent disappear before an offspring exists. A simple relationship leader may carry the DNA label, but do not animate a literal DNA ribbon moving through a runner.",
+      "activeFacts": [
+        "The daughter is a new plant.",
+        "A later generation receives inherited information.",
+        "Continuation requires later reproductive success."
+      ],
+      "clearBeforeNext": [
+        "Later-generation panel",
+        "Growth-versus-reproduction wording",
+        "Population-continuity condition after its spoken explanation"
+      ],
+      "hold": {
+        "kind": "explanation",
+        "plannedSeconds": null,
+        "limit": "Hold the current relationship through each causal sentence. No speed or survival guarantee."
+      }
+    },
+    {
+      "sceneId": "copying",
+      "parentSceneIds": [
+        "concept-asexual",
+        "definition"
+      ],
+      "role": "Explain copying through the runner case before naming the method",
+      "heading": "A runner keeps a useful inherited combination.",
+      "narration": "The connecting stem is a runner. A new plant grows from it without a sperm cell and an egg cell joining. We call that asexual reproduction. As the new cells form, they copy the parent's DNA. The daughter usually has almost the same inherited information as its parent, so we call it a clone. That's why runners are useful to our grower: they can keep a valued inherited combination instead of mixing it with information from another plant. Similar DNA does not mean every plant grows exactly alike, because growing conditions still matter.",
+      "visualDecision": "reuse-and-adjust",
+      "visualReference": "Actual runner plate and native-360 pilot's large runner leader. Reuse the established daughter crop for the copying explanation.",
+      "physicalVisual": "Show the true connecting stem and daughter. Keep their actual structures visible throughout. A parent/daughter relationship label states that the DNA is usually very similar. Do not represent DNA as an unexplained card hand, coloured balls or literal moving material in the stem.",
+      "screenBeats": [
+        {
+          "cue": "a runner",
+          "labels": [
+            "Runner: connecting stem"
+          ]
+        },
+        {
+          "cue": "asexual reproduction",
+          "labels": [
+            "Asexual: sperm and egg do not join"
+          ]
+        },
+        {
+          "cue": "almost the same inherited information",
+          "labels": [
+            "Usually very similar DNA"
+          ]
+        },
+        {
+          "cue": "we call it a clone",
+          "labels": [
+            "Clonal offspring"
+          ]
+        },
+        {
+          "cue": "keep a valued inherited combination",
+          "labels": [
+            "Keep the parent's inherited combination"
+          ]
+        }
+      ],
+      "motionPurpose": "The runner leader draws to the real stem once. Shift the emphasis from parent to daughter at the DNA sentence, then hold them together for the causal benefit. Do not simulate painted growth.",
+      "activeFacts": [
+        "The new plant forms from the parent without sperm and egg joining.",
+        "Copying usually retains very similar inherited DNA."
+      ],
+      "clearBeforeNext": [
+        "Runner and clone definitions",
+        "Parent-combination benefit label"
+      ],
+      "hold": {
+        "kind": "explanation",
+        "plannedSeconds": null,
+        "limit": "No separate mutation lesson, identical-growth promise or universal rapid-growth claim."
+      }
+    },
+    {
+      "sceneId": "sexual-cross",
+      "parentSceneIds": [
+        "concept-sexual",
+        "definition"
+      ],
+      "role": "Introduce the minimum joining event with actual plants",
+      "heading": "Sperm and egg join in sexual reproduction.",
+      "narration": "A strawberry plant can also make offspring through a flower. Consider a cross between two genetically different plants, meaning their inherited DNA differs. Inside a flower of one parent, a sperm cell from the other joins an egg cell. Sperm and egg are reproductive cells called gametes. Each contributes DNA. Reproduction in which gametes join is called sexual reproduction. The developing new plant is inside a seed, and that seed can grow into a seedling. So the runner and this cross both produce new plants, but the cross brings inherited information from the two parents together.",
+      "visualDecision": "new-bounded-physical-visual",
+      "visualReference": "strawberry-cross-context gap. Existing runner plate remains a small contextual reference only; no historical dense flower delivery-board reuse.",
+      "physicalVisual": "Show the two flowering parent plants on soil. At the joining sentence, use a magnified schematic of one sperm cell and one egg cell within the receiving flower's highlighted ovule. Retain enough flower context to locate the event. Move next to a botanically correct seed context and recognisable young strawberry seedling. The intermediate route by which sperm reaches egg is intentionally not animated here.",
+      "screenBeats": [
+        {
+          "cue": "two genetically different plants",
+          "labels": [
+            "Parent 1",
+            "Parent 2"
+          ]
+        },
+        {
+          "cue": "joins an egg cell",
+          "labels": [
+            "Sperm cell",
+            "Egg cell"
+          ],
+          "scopeLabel": "Magnified schematic"
+        },
+        {
+          "cue": "called gametes",
+          "labels": [
+            "Gametes = reproductive cells"
+          ]
+        },
+        {
+          "cue": "Each contributes DNA",
+          "labels": [
+            "DNA from both parents"
+          ]
+        },
+        {
+          "cue": "called sexual reproduction",
+          "labels": [
+            "Sexual: gametes join"
+          ]
+        },
+        {
+          "cue": "grow into a seedling",
+          "labels": [
+            "New seedling"
+          ],
+          "scopeLabel": "Stages shown at different times"
+        }
+      ],
+      "motionPurpose": "A brief cell-joining motion explains the defining event. Then change to the later seedling context. Use no pollen-grain-to-zygote morph, instant adult growth, chromosome animation or continuously competing labels.",
+      "activeFacts": [
+        "This is a stated cross between genetically different plants.",
+        "Sperm and egg contribute inherited DNA.",
+        "Genetically different means their inherited DNA differs. Sperm and egg join inside the receiving flower."
+      ],
+      "clearBeforeNext": [
+        "Cell inset",
+        "Gamete definition",
+        "Seed context after the seedling is identified"
+      ],
+      "hold": {
+        "kind": "explanation",
+        "plannedSeconds": null,
+        "limit": "No self-fertilisation detour. This stated seed-forming sexual event does not claim all seed formation is sexual."
+      }
+    },
+    {
+      "sceneId": "sexual-variation",
+      "parentSceneIds": [
+        "concept-sexual"
+      ],
+      "role": "Explain inherited variation without chromosome vocabulary",
+      "heading": "Offspring can inherit different combinations.",
+      "narration": "How can the same two parents produce different seedlings? Different sperm cells can carry different selections of one parent's inherited information. Egg cells can differ in the same way. When different pairs join, the seedlings can receive different combinations of DNA. Those differences in inherited information are genetic variation. Here is the contrast we need: runner offspring usually retain the parent's combination, while offspring from this cross can inherit different combinations. That gives the grower different plants to compare. It does not tell us which one will perform best.",
+      "visualDecision": "adjust-new-cross-context",
+      "visualReference": "Use the physical parent and seedling art from strawberry-cross-context alongside the actual runner daughter crop. Reuse the existing clean comparison stage, not table-only rows.",
+      "physicalVisual": "Keep the same two actual flowering parent plants as the reference. Use their magnified reproductive-cell inset to compare two possible joining events, shown one after the other: one sperm/egg pair and a different pair. Different schematic DNA selections within the cells identify the differing inherited contributions. Label this as a simplified information model, with no chromosome counts, gene names or allele cards. Connect each possible joining event to its later recognisable seedling, then hold both possibilities together. The examples illustrate possibilities from the same parents, not observed offspring or an exhaustive set. In the final beat, retain the actual runner daughter on one side and crossed seedlings on the other, each with one short relationship label.",
+      "screenBeats": [
+        {
+          "cue": "Different sperm cells",
+          "labels": [
+            "Different sperm cells can carry different information"
+          ]
+        },
+        {
+          "cue": "Egg cells can differ",
+          "labels": [
+            "Egg cells can differ too"
+          ]
+        },
+        {
+          "cue": "When different pairs join",
+          "labels": [
+            "Different pairs can give different DNA combinations"
+          ],
+          "scopeLabel": "Two possible events; simplified information model"
+        },
+        {
+          "cue": "genetic variation",
+          "labels": [
+            "Genetic variation: inherited differences"
+          ]
+        },
+        {
+          "cue": "runner offspring usually retain",
+          "labels": [
+            "Runner: usually keeps the parent combination",
+            "Cross: can produce different combinations"
+          ]
+        }
+      ],
+      "motionPurpose": "Show the first possible reproductive-cell pairing, then the second, at the corresponding cause. Reveal its later seedling only after each joining event. Keep parents unchanged to show that different offspring do not require a new parent pair. No leaf-colour, fruit-quality or disease outcome is assigned to either seedling. Then hold the two reproductive routes side by side.",
+      "activeFacts": [
+        "The cross uses genetically different parents.",
+        "The two routes differ in retaining or combining inherited information.",
+        "Different reproductive cells can carry different inherited selections; different pairings can give different offspring combinations."
+      ],
+      "clearBeforeNext": [
+        "Gamete and genetic-variation definitions",
+        "Cross diagram after establishing the contrast",
+        "Alternative reproductive-cell pairings and their simplified information model"
+      ],
+      "hold": {
+        "kind": "comparison",
+        "plannedSeconds": null,
+        "limit": "No universal variation amount, offspring improvement or useful-trait promise."
+      }
+    },
+    {
+      "sceneId": "grower-tradeoff",
+      "parentSceneIds": [
+        "concept-tradeoff",
+        "misconception"
+      ],
+      "role": "Resolve the hook through the causal contrast",
+      "heading": "A useful copy can share a weakness.",
+      "narration": "Now return to the disease at the farm. The grower copied a plant because its inherited characteristics were useful. But if that plant also has an inherited weakness against the new disease, its clones may share it. That is a shared risk, not proof that every plant will become infected. Seedlings with different inherited combinations may respond differently, if the parents carry differences that matter for this disease. Copying helps keep a combination we already value. Sexual reproduction can offer different combinations to compare when conditions change. For this grower, a useful reminder is: copy to keep, cross to compare. The choice still depends on the conditions and the purpose.",
+      "visualDecision": "adjust",
+      "visualReference": "Actual runner plant crops and new crossed-seedling context. Reuse the light two-group comparison stage and restrained scenario labels.",
+      "physicalVisual": "Bring back the chosen parent and established daughter. Label the shared inherited weakness as a conditional scenario. Set crossed seedlings beside them only when different responses are explained. Both groups remain recognisable healthy plants; no predetermined sick/survivor count is shown.",
+      "screenBeats": [
+        {
+          "cue": "if that plant also has",
+          "labels": [
+            "If the parent has an inherited weakness..."
+          ]
+        },
+        {
+          "cue": "its clones may share it",
+          "labels": [
+            "Clones may share that weakness"
+          ]
+        },
+        {
+          "cue": "may respond differently",
+          "labels": [
+            "Different combinations may give different responses"
+          ]
+        },
+        {
+          "cue": "copy to keep, cross to compare",
+          "labels": [
+            "Copy to keep. Cross to compare."
+          ]
+        }
+      ],
+      "motionPurpose": "Draw the parent-to-daughter relationship at the shared-weakness cue, then direct attention to crossed seedlings. Hold the comparison through the conclusion. No spread animation implies every clone is infected, and no green winner highlight implies a universal best method.",
+      "activeFacts": [
+        "The copied plant's useful characteristics motivated the grower.",
+        "The new disease is a changed condition.",
+        "Only relevant inherited differences can affect the comparison."
+      ],
+      "clearBeforeNext": [
+        "Disease case, conditional weakness labels and completed comparison answer"
+      ],
+      "hold": {
+        "kind": "causal-explanation",
+        "plannedSeconds": null,
+        "limit": "The one sentence distinguishing risk from certainty is the complete misconception repair here. Detailed disease caveats remain author notes."
+      }
+    },
+    {
+      "sceneId": "dry-soil-attempt",
+      "parentSceneIds": [
+        "quick-check"
+      ],
+      "role": "Genuine transfer decision under changed conditions",
+      "heading": "Choose a starting group for a dry-soil trial.",
+      "narration": "A nursery wants to find strawberry plants with different inherited responses to drier soil. It can start with runner offspring from one parent, or seedlings from crosses between genetically different parents. Neither group has been tested in the drier soil. Which group would you choose for this search? Explain your choice, then name one result you cannot predict yet. Pause here to decide.",
+      "visualDecision": "adjust-with-missing-seedling-art",
+      "visualReference": "Existing protected quick-check staging and clean evidence layout, actual runner daughter crop, trial-seedlings gap. No earlier answer trail.",
+      "physicalVisual": "Show neutral group A runner daughters and group B crossed seedlings in adjacent planting trays. Identify origin with short captions. Both trays show healthy young plants. A small neutral dry-soil trial area supplies the new setting without showing outcomes.",
+      "onScreenDuringEntireAttempt": {
+        "task": "Choose a starting group for a dry-soil trial.",
+        "goal": "Find different inherited responses to drier soil.",
+        "groupA": "A: runner offspring from one parent",
+        "groupB": "B: seedlings from crosses between genetically different parents",
+        "condition": "Neither group has been tested in the drier soil.",
+        "demands": [
+          "Choose A or B.",
+          "Explain your choice.",
+          "Name one result you cannot predict yet."
+        ]
+      },
+      "motionPurpose": "Reveal the complete origin and condition labels during the prompt, then stop motion for the response interval. The two physical groups stay equally prominent. No winner outline, unequal disease/drought symptoms, answer subtitle or copy/variation summary appears during the attempt.",
+      "activeFacts": [
+        "The search concerns inherited responses to dry soil.",
+        "A comes from one parent by runners.",
+        "B comes from sexual crosses between genetically different parents.",
+        "Both groups are untested in dry soil.",
+        "All three response demands remain visible."
+      ],
+      "clearBeforeNext": [
+        "Nothing needed for the task. Retain all supplied conditions and demands into feedback."
+      ],
+      "hold": {
+        "kind": "answer-free-response",
+        "plannedSeconds": 12,
+        "status": "planning hypothesis, not measured silence",
+        "start": "After the final spoken pause invitation and its last caption have finished.",
+        "end": "At the first visible or audible feedback cue in the next scene, including the start of any fade.",
+        "assemblyRequirement": "Record prompt and feedback separately, then assemble an exact quiet response gap and align the earliest answer disclosure to its measured end. The renderer must retain the complete question through the hold and prevent feedback transition overlap from leaking an answer."
+      }
+    },
+    {
+      "sceneId": "dry-soil-feedback",
+      "parentSceneIds": [
+        "quick-check",
+        "worked-example"
+      ],
+      "role": "Explain the choice and its limit one stage at a time",
+      "heading": "Different combinations give a wider search.",
+      "narration": "The crossed seedlings are the better starting group for a search for different inherited responses. They receive DNA through sexual reproduction from genetically different parents, so they can inherit different combinations. Runner offspring usually copy a much narrower set of inherited information from one parent. But we still cannot predict which seedling will grow well in the dry soil. The parents may not carry useful differences for that condition, and a particular seedling may not receive a useful combination. We would need to compare how the plants actually grow there. More variation gives us possibilities to investigate, not a promised winner.",
+      "visualDecision": "adjust",
+      "visualReference": "Same physical A/B plants and complete prompt as the attempt. Existing semantic staged-answer mechanism; no table-only answer diagram.",
+      "physicalVisual": "Retain the two identified groups, goal and untested condition. Highlight B when the choice is spoken. Reveal one short explanation line at a time near the relevant tray. Remove that line before the prediction-limit line, while keeping the case facts visible. Do not change seedling appearance to announce a successful result.",
+      "screenBeats": [
+        {
+          "cue": "The crossed seedlings",
+          "reasoning": "B: a wider range of inherited combinations"
+        },
+        {
+          "cue": "Runner offspring usually copy",
+          "reasoning": "A: usually retains one parent's combination"
+        },
+        {
+          "cue": "cannot predict which seedling",
+          "reasoning": "Which plant grows well is still unknown."
+        },
+        {
+          "cue": "compare how the plants actually grow",
+          "reasoning": "Test the plants in the stated conditions."
+        }
+      ],
+      "motionPurpose": "Focus each current causal sentence on its physical group. Fade the current reasoning line before the next stage rather than accumulating answer history. Leave unknown trial outcomes unchanged.",
+      "expectedReasoning": [
+        "Select B for the stated search for inherited differences.",
+        "Explain that the sexual crosses combine inherited DNA from genetically different parents, whereas runner reproduction usually retains a parent's combination.",
+        "Name a genuinely unknown result, such as which seedling will grow well, whether any offspring carries a useful combination, or whether either group performs better in the dry soil.",
+        "Do not infer a useful dry-soil characteristic merely from genetic difference or a visible difference in size."
+      ],
+      "activeFacts": [
+        "Both groups remain untested.",
+        "The goal is to search for inherited differences, not to guarantee a productive crop."
+      ],
+      "clearBeforeNext": [
+        "Entire dry-soil case and answer lines"
+      ],
+      "hold": {
+        "kind": "feedback",
+        "plannedSeconds": null,
+        "limit": "Keep the complete task and conditions available through the reasoning. No official marking or mastery claim."
+      }
+    },
+    {
+      "sceneId": "handoff",
+      "parentSceneIds": [
+        "summary"
+      ],
+      "role": "Close the main question and set the next boundary",
+      "heading": "New individuals. Inherited information.",
+      "narration": "Reproduction provides new individuals and passes inherited information to another generation. Copying can keep a useful combination; sexual reproduction can produce different inherited combinations. Neither route guarantees that offspring will survive. Next, we'll look at how different animals bring sperm and egg together and support the development of their offspring. The detailed plant mechanisms follow in their own lessons.",
+      "visualDecision": "adjust",
+      "visualReference": "Concrete runner parent/daughter plate and the new crossed-seedling context, then the existing short next-lesson prompt treatment.",
+      "physicalVisual": "Show one quiet parent/daughter relationship beside the crossed parents and seedlings, with no abstract lineage parade. Finish with the next question while the plant examples remain stable.",
+      "screenBeats": [
+        {
+          "cue": "new individuals",
+          "labels": [
+            "New offspring inherit DNA"
+          ]
+        },
+        {
+          "cue": "Copying can keep",
+          "labels": [
+            "Keep a combination",
+            "Combine information differently"
+          ]
+        },
+        {
+          "cue": "Next",
+          "labels": [
+            "Next: how do animals reproduce?"
+          ]
+        }
+      ],
+      "motionPurpose": "A restrained final comparison and next-question reveal. Do not repeat the whole lesson as a moving note list.",
+      "activeFacts": [
+        "Reproduction permits continuity, while later survival and reproduction are still necessary."
+      ],
+      "clearBeforeNext": [
+        "Plant comparison and next-lesson question before the quiet notes stage"
+      ],
+      "hold": {
+        "kind": "ending",
+        "plannedSeconds": null,
+        "limit": "Next-lesson scope is a planned handoff, not a promise that the upload is already available."
+      }
+    },
+    {
+      "sceneId": "key-notes",
+      "parentSceneIds": [
+        "key-notes"
+      ],
+      "role": "Optional quiet consolidation after explanation",
+      "heading": "Key notes: what to write in your book",
+      "narration": "If you'd like a short set of notes, copy these now, or pause for more time.",
+      "visualDecision": "reuse-and-adjust",
+      "visualReference": "Existing SummarySlide quiet-reading stage. Replace parent note text; remove the extra summary side card.",
+      "physicalVisual": "No separate diagram is needed. This is a deliberately stable copy board after the organism-based explanation, not a diagram slot filled with text.",
+      "notes": [
+        "Reproduction produces offspring and passes on DNA. Enough offspring must survive and reproduce for a population to continue.",
+        "Asexual reproduction occurs without gametes joining. Runner offspring usually retain the parent's inherited combination.",
+        "Sexual reproduction joins gametes and can produce different inherited combinations. Useful differences depend on the conditions."
+      ],
+      "motionPurpose": "All notes settle together before quiet copying begins. No sequential teaching reveal, plant motion or new spoken reasoning during the hold.",
+      "activeFacts": [
+        "Only previously explained essentials remain."
+      ],
+      "clearBeforeNext": [],
+      "hold": {
+        "kind": "quiet-optional-copying",
+        "plannedSeconds": 18,
+        "status": "planning hypothesis",
+        "start": "After the invitation and its captions end and all notes have settled.",
+        "limit": "Check actual phone reading and copying load. Leave the optional pause invitation visible. Do not reuse the parent's quiet duration or measured note evidence as approval for these new words."
+      }
+    }
+  ],
+  "parentSceneDisposition": [
+    {
+      "parentSceneId": "title",
+      "decision": "Merge its short identity into the useful opening; no standalone voiced metadata."
+    },
+    {
+      "parentSceneId": "hook",
+      "decision": "Keep the grower and new-disease question; show actual strawberry plants."
+    },
+    {
+      "parentSceneId": "concept-continuity",
+      "decision": "Replace the abstract lineage/plinth model with parent, rooted offspring and later new parent. Remove lineage, viable and fertile definition stack."
+    },
+    {
+      "parentSceneId": "definition",
+      "decision": "Remove the standalone definition stack. Introduce asexual, gametes, sexual and variation only when the concrete cases need them. Remove allele, zygote and self-fertilisation vocabulary."
+    },
+    {
+      "parentSceneId": "concept-asexual",
+      "decision": "Replace the text table and extended caveats with the runner copying cause and grower's useful outcome."
+    },
+    {
+      "parentSceneId": "concept-sexual",
+      "decision": "Use a deliberately limited physical plant cross and seedling group. Remove allele cards, outcrossing terminology and mating-cost list."
+    },
+    {
+      "parentSceneId": "concept-tradeoff",
+      "decision": "Resolve the disease hook using actual parent/daughter and crossed seedlings. Remove the multi-row strategy table."
+    },
+    {
+      "parentSceneId": "worked-example",
+      "decision": "Remove runner/coral/self-fertilisation classification recitation. Use its feedback role for the new dry-soil decision."
+    },
+    {
+      "parentSceneId": "misconception",
+      "decision": "Omit the separate page. Teach risk versus certain infection once immediately after the disease cause."
+    },
+    {
+      "parentSceneId": "quick-check",
+      "decision": "Replace the supplied susceptibility conclusion with an untested dry-soil search. Keep the full origin conditions and all response demands during the attempt and feedback."
+    },
+    {
+      "parentSceneId": "summary",
+      "decision": "Use a short causal closure and bounded next handoff."
+    },
+    {
+      "parentSceneId": "key-notes",
+      "decision": "Preserve optional quiet copy time, with new compact notes after all explanation."
+    }
+  ],
+  "scienceSources": [
+    {
+      "title": "University of Minnesota Extension: How strawberry plants grow",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/how-strawberry-plants-grow",
+      "checked": "2026-10-11",
+      "supports": "Runners connect the parent crown to rooted daughter plants. Leaf and root structures are appropriate physical anchors. The lesson does not import Minnesota cultivation timings."
+    },
+    {
+      "title": "University of Florida IFAS: The Strawberry Clean Plant Program",
+      "url": "https://ask.ifas.ufl.edu/publication/HS1343",
+      "checked": "2026-10-11",
+      "supports": "New strawberry hybrids are propagated by seed and selected seedlings are subsequently propagated vegetatively by runners. Breeding, runner multiplication, pathogen testing and later performance verification are distinct steps. This supports the concrete copying-versus-search context without asserting disease outcomes for every clone."
+    },
+    {
+      "title": "Physiological and Biochemical Responses of Commercial Strawberry Cultivars under Optimal and Drought Stress Conditions, primary research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9919021/",
+      "checked": "2026-10-11",
+      "supports": "Strawberry varieties can differ in response to water limitation. The transfer is a fictional decision under supplied unknown outcomes, not a claim that untested crossed seedlings are drought tolerant or that this study proves a reproductive-method comparison."
+    },
+    {
+      "title": "NSW Government: Biology Stage 6 Syllabus (2017)",
+      "url": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017",
+      "checked": "2026-10-11",
+      "supports": "Official syllabus edition entry. Exact reproduction action and required organism contexts remain bound to the local canonical route and course checklist; this proposal is only their opening contribution."
+    }
+  ],
+  "authorOnlyScienceNotes": [
+    "Usually and can are deliberate qualifiers. Do not replace them with all clones are identical or every sexual offspring is different. Mutation can introduce DNA differences in clonal descendants; it is outside this video's primary question and needs no new definition here.",
+    "A difference in plant appearance is not proof of genetic variation. Growing conditions affect phenotype. The stated reproductive origins and genetically different parents supply the inheritance comparison, not the painted seedling appearance.",
+    "Genetic differences need not affect the disease or dry-soil response under discussion. Shared susceptibility does not establish infection, infection count or mortality. Exposure, pathogen and growing conditions also matter; these are not a new disease lecture in this opening lesson.",
+    "Seed formation is restricted to the stated sexual cross. Apomixis and self-fertilisation are genuine exceptions to simplified parent-count or seed heuristics, but the proposal makes neither heuristic a general classification rule.",
+    "Sperm and egg each contribute DNA. Do not imply that the physical cells are two equal volumes poured together, that pollen itself is the sperm, or that joining reproductive cells instantaneously creates an adult plant.",
+    "Neither a clone crop nor a sexually produced group guarantees sufficient surviving and reproducing descendants. Continuity is an enabled possibility and a population-level requirement, not a promised survival result.",
+    "Actual recording and pilot review must confirm that each new term is understood in its concrete scene. Source authoring cannot claim that a student has learned the term or successfully transferred the reasoning."
+  ],
+  "integrationAndReview": {
+    "rootNextAction": "Review this complete narrative, resolve independent teaching/science findings, and prepare the bounded physical cross/seedling visual gap. Inspect the opening-to-comparison sequence as a representative silent visual pilot before selecting fresh narration. Then integrate an additive lesson and schema-v2 production brief bound to its actual hash.",
+    "representativePilot": "Continuity, runner copying and sexual cross/variation. These are the difficult concrete-to-inherited-information transitions. The new visuals must remain understandable without adding the later anatomy lesson.",
+    "requiredIndependentChecks": [
+      "First-learning causal order and vocabulary, with no advanced chromosome terms",
+      "Accurate parent/daughter, gamete joining and strawberry seed context",
+      "A genuine transfer requiring the reproductive comparison, with no answer leakage",
+      "All supplied conditions and all three demands available throughout the attempt",
+      "Phone reading load, actual plant visibility, caption clearance and current-stage selection",
+      "No prohibited U+2014 in selected source or generated copy"
+    ],
+    "scriptReview": {
+      "status": "pending",
+      "reviewer": null,
+      "evidence": null
+    },
+    "visualImplementation": {
+      "status": "pending",
+      "evidence": "Only existing assets and sampled historical stills inspected. New proposed scenes are not implemented."
+    },
+    "voicedPreview": {
+      "status": "pending",
+      "inputSnapshotPath": null,
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": null,
+      "evidence": null
+    },
+    "release": {
+      "status": "not-authorised-by-this-proposal",
+      "remaining": "Root must complete current exact-source brief, fresh audio and alignment, full voiced/device review, export stage and full-package public-release gate. Preserve old lesson, audio and release evidence."
+    },
+    "authorResolution": {
+      "reviewer": "/root/student_learning_reviewer_sol",
+      "scope": "Source-learning findings delivered by collaboration message, not a voiced or visual pass.",
+      "resolved": [
+        {
+          "finding": "Same-parent variation had an unexplained causal jump.",
+          "change": "sexual-variation now explains differing selections in reproductive cells and differing pairings before concluding variation; planned physical inset compares two possible joining events."
+        },
+        {
+          "finding": "Genetically different and location relied on beginner inference.",
+          "change": "sexual-cross now gives the plain DNA meaning and says sperm and egg join inside the receiving flower."
+        }
+      ],
+      "status": "Independent confirmation of revised exact proposal pending."
+    }
+  }
+}

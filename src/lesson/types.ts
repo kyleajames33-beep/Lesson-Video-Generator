@@ -367,6 +367,8 @@ export type TextScene = SceneBase & {
   diagram?: DiagramConfig;
   /** Give a teaching diagram more space while keeping its text alongside it. */
   conceptVisualLayout?: 'diagramFocus' | 'diagramBoard';
+  /** Selected explanations can use a current-case board with recorded reasoning cues. */
+  reasoningPresentation?: CalculationPresentation;
   /**
    * Draw this scene's diagram in the hand-drawn stop-motion style (line boil,
    * held drawings, paper grain) — or force the default look. Overrides the
@@ -384,6 +386,11 @@ export type TextScene = SceneBase & {
  * the scene's recorded step cues; summaries retain established results only. */
 export type CalculationPresentation = {
   layout?: 'module5Evidence';
+  /** Opt-in current-case layout, with no cumulative answer history. */
+  reducedReading?: boolean;
+  /** Complete response demands remain visible until the first feedback cue. */
+  responseQuestions?: string[];
+  responseQuestionsEndAt?: number;
   /** Selected Module 5 boards reserve the lower player-caption region. */
   captionSafeWorking?: boolean;
   /** Selected evidence tasks show only the case relevant to the current spoken

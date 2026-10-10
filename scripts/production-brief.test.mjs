@@ -27,13 +27,15 @@ function fixture() {
     Object.assign(brief.progression, {prerequisiteKnowledge: 'Moles and units', startsWith: 'One mole has a stated mass', stopsAfter: 'Connect mass with amount', nextLesson: 'Reaction ratios'});
     for (const key of Object.keys(brief.teaching)) brief.teaching[key] = 'Specific fixture decision';
     Object.assign(brief.scenes[0], {visualDecision: 'reuse', visualReference: 'Existing board', teachingReason: 'Show proportionality', narrationCue: 'Each mole', motionPurpose: 'Reveal the contribution', holdPurpose: 'Read the stable units'});
-    brief.scriptReview = {status: 'pass', reviewer: 'Named fixture reviewer', evidence}; save();
+    brief.scriptReview = {status: 'pass', reviewer: 'Named fixture reviewer', evidence};
+    brief.studentLearningReview = {status: 'pass', reviewer: 'Independent fixture learning reviewer', evidence}; save();
   };
   const readyToExport = () => {
     readyToRecord();
     const snapshot = captureRelease(root, {lessonPath: 'lesson.json', renderConfig: 'render.json'});
     put('preview-inputs.json', JSON.stringify(snapshot));
-    Object.assign(brief.voicedPreview, {status: 'pass', reviewer: 'Named fixture observer', mode: 'ui-playback', inputSnapshotPath: 'preview-inputs.json', evidence}); save();
+    Object.assign(brief.voicedPreview, {status: 'pass', reviewer: 'Named fixture observer', mode: 'ui-playback', inputSnapshotPath: 'preview-inputs.json', evidence});
+    brief.voicedPreview.studentLearningReview = {status: 'pass', reviewer: 'Independent fixture learning observer', evidence}; save();
   };
   const check = stage => checkProductionBrief(root, 'lesson.production-brief.json', {stage, expectedLessonPath: 'lesson.json'});
   return {root, lesson, brief, put, save, check, readyToRecord, readyToExport, evidence};
@@ -60,6 +62,26 @@ test('new briefs block recording when the course stopping point or handoff is mi
 test('existing version-one briefs retain their previous review contract', () => {
   const f=fixture();f.readyToRecord();f.brief.schemaVersion=1;delete f.brief.progression;f.save();
   assert.equal(f.check('recording').ready,true);
+});
+
+test('new briefs require learning review before recording and again for exact voiced export', () => {
+  const f=fixture();f.readyToExport();
+  assert.equal(f.brief.schemaVersion,3);
+  f.brief.studentLearningReview.status='changes-required';f.save();
+  assert.ok(f.check('recording').blockers.some(item=>item.detail==='Student learning source review: changes-required'));
+  f.brief.studentLearningReview.status='pass';
+  f.brief.voicedPreview.studentLearningReview.status='pending';f.save();
+  assert.equal(f.check('recording').ready,true);
+  assert.ok(f.check('export').blockers.some(item=>item.detail==='Student learning exact voiced review: pending'));
+  f.brief.voicedPreview.studentLearningReview.status='pass';
+  f.brief.voicedPreview.studentLearningReview.evidence={path:'missing-learning-evidence.md',sha256:'bad'};f.save();
+  assert.ok(f.check('export').blockers.some(item=>item.code==='BRIEF_EVIDENCE_MISSING'));
+});
+
+test('historical version-two briefs retain their review contract without learning fields', () => {
+  const f=fixture();f.readyToExport();f.brief.schemaVersion=2;
+  delete f.brief.studentLearningReview;delete f.brief.voicedPreview.studentLearningReview;f.save();
+  assert.equal(f.check('export').ready,true);
 });
 
 test('scene omissions and changed narration invalidate the selected brief', () => {

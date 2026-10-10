@@ -1,0 +1,182 @@
+{
+  "status": "revision-draft-not-selected-or-recorded",
+  "authorScope": "Independent bounded teaching proposal. No lesson, diagram, audio, alignment, preview or release input changed.",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+    "sha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+    "rawSceneDurationSumSeconds": 502.6333333333333,
+    "durationMethod": "Raw scene-duration sum, before subtracting transition overlaps. This is not the assembled lesson timeline duration.",
+    "scenesRead": ["b3-hook", "b3-flower", "b3-delivery", "b3-seed", "b3-runner", "b3-self-cross", "b3-worked", "b3-conditions", "b3-check-prompt", "b3-check-feedback", "b3-summary", "key-notes"],
+    "evidenceBoundary": "Source and primary-source reading only. No new playback, still inspection, learner test or listening claim. The user reports that the recap is incomprehensible and the runner visual is primitive."
+  },
+  "diagnosis": {
+    "recap": "The learner must decode transfer, delivery, fusion and embryo from a compressed list. The list leaves out the things moving, their destinations and why one step permits the next. Classify the event by fusion is an instruction rather than a useful memory of how a plant is made.",
+    "runner": "The source defines runner, node, mitosis, nucleus and vegetative propagation in one 54.4-second scene, then discusses inheritance, mutation and independence. These are too many explanatory jobs for one simple diagram. A learner needs to see why a new rooted plant is different from one longer stem before being asked to classify it.",
+    "preserve": "Keep the scientifically useful distinction between pollen arriving and sperm joining an egg. Keep the seed containing an embryo, the stem origin of a runner, the need for suitable growing conditions and the interrupted pollen-tube question. Reuse any existing artwork that can accurately locate the current causal step."
+  },
+  "splitDecision": {
+    "recommendation": "Split before regenerating the entire plant video.",
+    "basis": "The exact source teaches how an embryo forms inside a seed, how a runner grows a separate plant, how pollen source differs from fertilisation, and how later establishment depends on conditions. The first two each deserve their own main learner question. Splitting is a teaching judgement based on the present reading load and reported confusion, not a universal duration limit.",
+    "proposedVideos": [
+      {
+        "workingTitle": "How does a flower make a seed?",
+        "mainQuestion": "Why is pollen reaching a flower only the beginning of making an embryo?",
+        "entryKnowledge": "A plant has cells. Briefly introduce sperm and egg as reproductive cells that can join. Teach flower locations as each becomes necessary rather than assuming the full anatomy list.",
+        "start": "Pollen reaches the receiving surface of a flower, the stigma. The egg is elsewhere, inside an ovule.",
+        "stop": "The learner can explain the pollen-tube route, sperm joining egg, the fertilised cell developing into an embryo, and the ovule developing into a seed around it. They can explain the stopped-tube case.",
+        "sourceReuse": ["b3-flower", "b3-delivery", "b3-seed", "b3-check-prompt", "b3-check-feedback"],
+        "boundaries": "Follow the embryo-forming pathway, not the complete flowering-plant life cycle. Do not imply that the sperm-egg event is all of double fertilisation. No need to introduce that additional objective in this short core explanation.",
+        "nextHandoff": "How can a strawberry stem make another plant without a seed?"
+      },
+      {
+        "workingTitle": "How does a strawberry runner make a new plant?",
+        "mainQuestion": "How can a piece of the parent stem become a plant that can live separately?",
+        "entryKnowledge": "Roots take up water and leaves make food in light. Explain these briefly when they justify independence. Use the earlier sperm-and-egg explanation only for the final contrast.",
+        "start": "One strawberry parent sends out a horizontal stem that remains visibly connected to it.",
+        "stop": "The learner traces a suitable node into roots and leaves, explains why the rooted plant can become independent, and identifies this as asexual reproduction because sperm and egg did not join.",
+        "sourceReuse": ["b3-runner", "runner case from b3-worked"],
+        "boundaries": "Do not insert a nuclear-division lesson, inheritance exceptions, mutation explanation or a whole catalogue of vegetative organs into this sequence. These are later objectives, not small-print obligations.",
+        "nextHandoff": "A short later comparison can test why self-fertilisation is sexual even when one plant supplies both reproductive cells. Fungi, bacteria and protists then remain distinct organism-group lessons."
+      }
+    ],
+    "selfCrossPlacement": "Move the detailed b3-self-cross discussion and the two fertilisation classification cases out of these core explanations. A companion comparison can teach pollen source after the seed route is understood. A one-sentence same-plant fertilisation contrast is sufficient in the runner recap if the earlier lesson has taught it.",
+    "routeCaveat": "The current module route lists one plant contribution. This proposal does not edit that route or claim completed syllabus-action coverage. Root must reconcile the selected boundaries and required content before recording.",
+    "fallbackIfOneVideoRetained": "Give seed and runner explanations separate chapters and separate quiet recaps. Rebuild the opening around the concrete question of how each new plant starts. Remove repeated classification prose from the hook, worked examples, conditions and final summary. An uncluttered diagram alone will not repair the existing script."
+  },
+  "runnerMiniSequence": {
+    "replaces": "b3-runner explanation",
+    "mainQuestion": "How does a stem make a plant that can live separately?",
+    "targetDurationSeconds": [45, 60],
+    "plannedDurationSeconds": 56,
+    "timingStatus": "Draft beat estimates only. Set final cues and holds from the new recording. Do not attach the existing runner audio or captions to this text.",
+    "narration": "This strawberry plant is growing a long stem along the ground. We call that stem a runner. Here, a small bud grows at a point on the stem called a node. In suitable conditions, roots grow down into the soil and leaves grow above it. Cells divide to build these new parts. The roots can take up water, and the leaves can make food in light. So this is becoming another plant, not just a longer stem. Once it has enough roots and leaves, it can keep growing even if its connection to the parent is cut. No seed formed this plant, and no sperm cell joined an egg cell. That makes this asexual reproduction.",
+    "beats": [
+      {
+        "plannedWindowSeconds": [0, 8],
+        "narrationCue": "This strawberry plant is growing a long stem along the ground.",
+        "show": "A recognisable parent strawberry plant with rooted crown and trifoliate leaves, one stem emerging from its base and extending above the soil to the right. Keep the parent visibly connected throughout the growth sequence.",
+        "text": ["Parent plant", "Runner: a stem"],
+        "motionPurpose": "Trace the stem from the parent to establish its origin. No pollen, seed or embryo icons compete with it."
+      },
+      {
+        "plannedWindowSeconds": [8, 19],
+        "narrationCue": "Here, a small bud grows at a point on the stem called a node.",
+        "show": "Bring attention to one actual node with a visible bud at the runner, followed by roots extending below the soil and leaves opening above it. Use a soil cutaway to make the root origin visible. Indicate growth over time without pretending it happens in seconds.",
+        "text": ["Node", "Roots", "Leaves"],
+        "motionPurpose": "Show the plantlet developing at a point on a stem. Do not turn the whole stem into a plant or imply roots grow from a leaf blade. Clear the runner definition sentence; keep the parent and connecting stem as needed references."
+      },
+      {
+        "plannedWindowSeconds": [19, 28],
+        "narrationCue": "Cells divide to build these new parts.",
+        "show": "Continue modest growth of the same roots and leaves. If a cell inset is genuinely needed, show a small local group gaining cells, then remove it. Do not claim that a simplistic one-cell split demonstrates all mitosis stages or that mitosis itself copies DNA.",
+        "text": ["More cells build roots and leaves"],
+        "motionPurpose": "Connect growth to building tissue. A microscopic inset is optional, not a feature requirement. Keep readable labels stable."
+      },
+      {
+        "plannedWindowSeconds": [28, 37],
+        "narrationCue": "The roots can take up water, and the leaves can make food in light.",
+        "show": "Highlight the plantlet's roots with a small water uptake arrow, then its leaves with a light cue. Keep the parent and runner low contrast. The plantlet now has its own useful structures.",
+        "text": ["Roots take up water", "Leaves make food in light"],
+        "motionPurpose": "Explain why these parts matter for independent growth. Show the two short labels at their separate spoken cues; avoid an unrelated paragraph about all plant resources."
+      },
+      {
+        "plannedWindowSeconds": [37, 46],
+        "narrationCue": "Once it has enough roots and leaves, it can keep growing even if its connection to the parent is cut.",
+        "show": "Hold the rooted plantlet, then mark an illustrative cut in the connecting runner. Keep both plants in position. The plantlet remains rooted and upright. Label this as a possible established outcome, rather than an instruction to cut an unrooted runner.",
+        "text": ["New rooted plant"],
+        "motionPurpose": "Make independence observable. Do not imply every bud survives or that cutting causes roots to appear."
+      },
+      {
+        "plannedWindowSeconds": [46, 56],
+        "narrationCue": "No seed formed this plant, and no sperm cell joined an egg cell.",
+        "show": "Return attention to the parent-to-runner-to-rooted-plant relationship. Retain the real plant structures. Introduce the technical classification after the learner has seen its cause.",
+        "text": ["Asexual: no sperm and egg joining"],
+        "motionPurpose": "Reveal the short meaning at its spoken cue, after the visible stem-to-rooted-plant explanation. The extra term vegetative propagation is deferred from this owner-choice pilot. Do not use a floating no-fusion slogan as the mechanism."
+      }
+    ],
+    "optionalCheckAfterSequence": {
+      "prompt": "A runner has a tiny bud but no roots yet. Does that show it can live separately from the parent? Explain.",
+      "suppliedConditionsVisibleDuringAttempt": ["Tiny bud on a connected runner", "No roots yet"],
+      "quietResponseHold": "Keep the pictured case and whole question visible. Give a deliberate answer-free hold with an optional pause; choose its measured duration after pilot review.",
+      "feedback": "Not yet. We have evidence of a growing bud, but not of a rooted plant able to take up its own water. It may develop further if conditions allow.",
+      "purpose": "Check the reason for independence rather than asking students to repeat the word asexual. This check sits outside the 45 to 60 second explanation."
+    }
+  },
+  "clearerRecap": {
+    "principle": "Name the object and action. Keep technical words with their plain meanings. Recap already taught relationships, not a compressed sequence of abstract nouns.",
+    "ifOneVideoRetained": {
+      "heading": "Two ways a new plant can start",
+      "narration": "In the seed pathway we followed, pollen first reaches the flower. A pollen tube lets sperm reach an egg inside an ovule. When sperm and egg join, the fertilised cell develops into an embryo, a young plant. The ovule develops into a seed around it. The runner pathway is different. A stem from the parent grows roots and leaves at a node, making a new plant without sperm and egg joining. So ask how the new plant started. Sperm and egg joining makes the first pathway sexual. Growing a new plant from the parent stem makes the runner pathway asexual.",
+      "visualSequence": [
+        "Reuse the flower route, with just the current locations: pollen at stigma, tube towards ovule, then sperm and egg joining in the magnified ovule. Use one highlighted action at a time.",
+        "Show the same ovule becoming a seed with the embryo clearly inside it. Keep embryo and seed distinct through nested outlines, not competing definitions.",
+        "Replace the flower with the runner sequence, ending in the rooted plantlet. Keep parent and stem origin visible.",
+        "Only after each mechanism is recalled, show a simple comparison: Seed example: sperm and egg join. Runner example: a new plant grows from a stem. Place sexual/asexual beneath the relevant explanation."
+      ],
+      "quietNotesHeading": "Key notes: what to write in your book",
+      "quietNotes": [
+        "Pollination moves pollen to a stigma. Fertilisation is sperm and egg joining.",
+        "In this seed pathway, a pollen tube carries sperm towards the egg in an ovule.",
+        "The fertilised egg becomes an embryo. The ovule becomes a seed containing it.",
+        "A runner is a stem that can form a new rooted plant. This is asexual reproduction."
+      ],
+      "noteHold": "Present after new narration has ended. Use a quiet reading hold with an invitation to pause. If four sentences compete at the preview size, put seed notes and runner notes on separate quiet boards; do not shrink them."
+    },
+    "recommendedSplitRecaps": {
+      "seedLesson": {
+        "heading": "Pollen arriving is not fertilisation",
+        "narration": "Pollen reaching the stigma completes pollination. The sperm still needs a route to the egg. In our example, the pollen tube provides that route. Sperm and egg joining is fertilisation. The fertilised egg develops into an embryo inside a seed. So a stopped tube can explain why pollination happens but this embryo-forming pathway does not finish.",
+        "notes": ["Pollination: pollen reaches a stigma.", "Pollen tube: route for sperm to the egg inside an ovule.", "Fertilisation: sperm joins egg. The fertilised egg develops into an embryo.", "Ovule becomes a seed containing the embryo."]
+      },
+      "runnerLesson": {
+        "heading": "A new plant grows from the parent stem",
+        "narration": "The runner is a stem from the parent. At a suitable node, roots and leaves form a new plant. Once that plant can support its own growth, it can live separately. No sperm and egg joined to make it, so this is asexual reproduction. That is the useful distinction: how the new plant started, not how many parent plants we can see.",
+        "notes": ["Runner: a stem from the parent.", "Roots and leaves develop at a suitable node, forming a new plant.", "Vegetative propagation makes a new plant from a parent part, without sperm and egg joining."]
+      }
+    }
+  },
+  "scienceConstraints": [
+    "The runner is an above-ground stem, not a root growing sideways. Put the plantlet at a node and its new roots below the soil.",
+    "Root and shoot development and later independence depend on conditions. Show one successful illustrative sequence, not a universal guarantee for every node.",
+    "Cell division builds the new tissues. If mitosis is named later, distinguish division of the nucleus from DNA replication and whole-cell division. The present runner script does not need that digression.",
+    "Do not imply runner formation requires a seed, pollen, sperm-egg fertilisation or a miniature sexual embryo stage.",
+    "Do not promise that every new runner plant is genetically identical forever or introduce mutation caveats in small print. A later inheritance lesson can explain copying and possible differences.",
+    "Describe the supplied sexual seed pathway, not every way all plants can make seeds. Do not claim that all seed formation necessarily involves the depicted sperm-egg event.",
+    "The ovule becomes the seed containing an embryo; the embryo is not the whole seed. The egg's fertilisation and embryo development are separate actions.",
+    "Use a generic flower for the seed explanation. Do not casually treat the red strawberry flesh as an ordinary ovary-derived fruit or illustrate strawberry anatomy with a generic single-ovary fruit transformation."
+  ],
+  "primarySources": [
+    {
+      "title": "University of Minnesota Extension: How strawberry plants grow",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/how-strawberry-plants-grow",
+      "checked": "2026-10-11",
+      "supports": "Runner origin from the crown, daughter plants rooting in soil, and recognisable strawberry leaves. The causal teaching wording is this proposal's authoring judgement."
+    },
+    {
+      "title": "University of Minnesota: The Science of Plants, 3.2 Shoots",
+      "url": "https://open.lib.umn.edu/horticulture/chapter/3-2-shoots/",
+      "checked": "2026-10-11",
+      "accessLimit": "Official search excerpt available; direct page fetch returned 403. Do not treat this as a complete page read.",
+      "supports": "Stolon node structure and roots developing at nodes."
+    },
+    {
+      "title": "OpenStax Biology 2e: 32.2 Pollination and Fertilization",
+      "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+      "checked": "2026-10-11",
+      "supports": "Pollen tube towards the ovule, fertilisation, embryo formation and the seed developing from the ovule. This proposal deliberately limits the core to the embryo-forming pathway."
+    },
+    {
+      "title": "OpenStax Biology 2e: 32.3 Asexual Reproduction",
+      "url": "https://openstax.org/books/biology-2e/pages/32-3-asexual-reproduction",
+      "checked": "2026-10-11",
+      "supports": "Vegetative reproduction from a parent plant part as an asexual route."
+    }
+  ],
+  "nextRequiredWork": [
+    "Root selects split boundaries and reconciles the lesson route and teaching brief before whole-lesson regeneration.",
+    "Independently review the runner pilot script and exact plant geometry. Treat this as a proposal, not approval.",
+    "If selected, record new runner and recap narration, rebuild affected alignments and faithful captions, then set reveal frames from the new take.",
+    "Play the exact revised 45 to 60 second pilot. Check whether a fresh Year 12 learner can explain stem origin, roots/leaves and independence, with readable labels and caption clearance.",
+    "Keep source inspection, UI/still observations and human listening separate. Preserve the old measured-v2 package. No full export or public-release claim follows from this draft."
+  ]
+}

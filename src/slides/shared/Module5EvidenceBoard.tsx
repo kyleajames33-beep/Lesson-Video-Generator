@@ -28,6 +28,46 @@ export const Module5CalculationProblem = ({presentation, eyebrow, delay, prompt,
   const frame = useCurrentFrame();
   const context = currentContext(presentation, frame);
   const captionSafe = presentation.captionSafeWorking === true;
+  if (presentation.reducedReading === true) {
+    const equation = context?.equation ?? presentation.equation;
+    const panelTop = context?.secondaryTask ? 430 : equation ? 370 : 310;
+    return <>
+      <div data-calculation-header style={{position: 'absolute', top: 142, left: 64, right: 64}}>
+        <Eyebrow color={TOK.inkDim}>{eyebrow}</Eyebrow>
+        <FadeUp delay={delay} durationFrames={16} dy={18}>
+          <div data-calculation-task style={{marginTop: 12, fontSize: 62, fontWeight: 720, lineHeight: 1.12, letterSpacing: '-0.02em'}}>{context?.task ?? presentation.task}</div>
+          {context?.secondaryTask ? <div data-calculation-secondary-task style={{marginTop: 12, fontSize: 44, lineHeight: 1.2}}>{context.secondaryTask}</div> : null}
+          {equation ? <div data-calculation-equation style={{marginTop: 12, fontFamily: FONT_MONO, fontSize: 52, fontWeight: 600, color: theme.accent, lineHeight: 1.15}}>{equation}</div> : null}
+        </FadeUp>
+      </div>
+      <div data-calculation-focused-context={context?.at ?? 0} data-calculation-reduced-reading style={{position: 'absolute', top: panelTop, left: 64, width: 670}}>
+        <FadeUp delay={delay} durationFrames={16} dy={12}>
+          <div style={{padding: '20px 24px', borderLeft: `5px solid ${theme.accent}`, background: TOK.card}}>
+            {context ? <>
+              <div style={{fontSize: 48, fontWeight: 650, lineHeight: 1.15, color: theme.accent, marginBottom: 18}}>{context.title}</div>
+              <div style={{display: 'grid', gap: 18}}>{context.lines.map((line, index) => <div key={index} data-calculation-context-line style={{fontSize: 50, lineHeight: 1.18}}>{line}</div>)}</div>
+            </> : <>
+              <div data-calculation-givens style={{display: 'grid', gap: 20}}>{presentation.givens.map(given => <div key={given.label} data-calculation-given>
+                <div style={{fontSize: 48, lineHeight: 1.15, fontWeight: 650, color: theme.accent}}>{given.label}</div>
+                <div style={{marginTop: 8, fontFamily: FONT_MONO, fontSize: 54, lineHeight: 1.15, fontWeight: 600}}>{given.value}</div>
+                {given.reference ? <div style={{marginTop: 8, fontSize: 50, lineHeight: 1.18}}>{given.reference}</div> : null}
+              </div>)}</div>
+              {presentation.references?.map(reference => <div key={reference.label} style={{marginTop: 18, fontSize: 50, lineHeight: 1.18}}><span style={{fontWeight: 650}}>{reference.label}: </span>{reference.value}</div>)}
+              {presentation.note ? <div data-calculation-note style={{marginTop: 18, paddingTop: 16, borderTop: `1px solid ${TOK.rule}`, fontSize: 50, lineHeight: 1.18}}>{presentation.note}</div> : null}
+            </>}
+          </div>
+        </FadeUp>
+      </div>
+      {presentation.responseQuestions?.length && frame < (presentation.responseQuestionsEndAt ?? 0) ? <div data-calculation-response-questions style={{position: 'absolute', top: panelTop, left: 774, right: 64}}>
+        <FadeUp delay={delay} durationFrames={16} dy={12}>
+          <div style={{padding: '20px 24px', background: TOK.card, border: `1px solid ${TOK.rule}`, borderTop: `5px solid ${theme.accent}`, display: 'grid', gap: 24}}>
+            {presentation.responseQuestions.map((question, index) => <div key={index} data-calculation-response-question style={{fontSize: 50, lineHeight: 1.18, fontWeight: 600}}>{question}</div>)}
+          </div>
+        </FadeUp>
+      </div> : null}
+      {prompt ? <div style={{position: 'absolute', left: 774, right: 64, top: 780, opacity: promptOpacity, fontSize: 44, lineHeight: 1.18, color: TOK.inkDim}}>{prompt}</div> : null}
+    </>;
+  }
   if (context) return <>
     <div data-calculation-header style={{position: 'absolute', top: 142, left: 64, right: 64}}>
       <Eyebrow color={TOK.inkDim}>{eyebrow}</Eyebrow>
@@ -81,7 +121,8 @@ export const Module5FocusedWorking = ({presentation, delays, earliestFrame = 0}:
   const frame = useCurrentFrame();
   const theme = useAccent();
   const captionSafe = presentation.captionSafeWorking === true;
-  const focused = Boolean(presentation.focusedContext);
+  const reducedReading = presentation.reducedReading === true;
+  const focused = Boolean(presentation.focusedContext) || reducedReading;
   const context = currentContext(presentation, frame);
   if (delays.length !== presentation.stages.length) throw new Error('Module 5 stages must match the authored step cues.');
   const cues = delays.map(delay => Math.max(earliestFrame, delay));
@@ -92,7 +133,8 @@ export const Module5FocusedWorking = ({presentation, delays, earliestFrame = 0}:
   const active = presentation.stages[activeIndex];
   const opacity = interpolate(frame, [cues[activeIndex], cues[activeIndex] + 16], [0, 1], clamp);
   const isFinal = activeIndex === presentation.stages.length - 1;
-  return <div data-calculation-working style={{position: 'absolute', top: focused ? context?.equation ? 410 : 350 : captionSafe ? 600 : 680, left: focused ? 774 : 64, right: 64, display: 'grid', gridTemplateColumns: focused ? 'minmax(0, 1fr)' : 'minmax(0, 1fr) 560px', gap: 30}}>
+  const reducedPanelTop = context?.secondaryTask ? 430 : (context?.equation ?? presentation.equation) ? 370 : 310;
+  return <div data-calculation-working style={{position: 'absolute', top: reducedReading ? reducedPanelTop : focused ? context?.equation ? 410 : 350 : captionSafe ? 600 : 680, left: focused ? 774 : 64, right: 64, display: 'grid', gridTemplateColumns: focused ? 'minmax(0, 1fr)' : 'minmax(0, 1fr) 560px', gap: 30}}>
     <div data-calculation-active={activeIndex} style={{opacity, padding: captionSafe ? '14px 24px' : '18px 24px', background: TOK.card, border: `1px solid ${TOK.rule}`, borderTop: `5px solid ${isFinal ? TOK.amber : theme.accent}`}}>
       <div data-calculation-stage-label style={{fontSize: 48, lineHeight: 1.12, fontWeight: 650, color: theme.accent, marginBottom: captionSafe ? 12 : 16}}>{active.label}</div>
       <div style={{display: 'grid', gap: 8}}>

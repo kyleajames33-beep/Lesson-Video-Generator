@@ -2,6 +2,16 @@
   "schemaVersion": 1,
   "date": "2026-10-10",
   "purpose": "Detailed learner-route expansion of the existing priority plan, not a competing catalogue, upload chronology or approved complete-coverage checklist.",
+  "teachingOwnershipReset": {
+    "date": "2026-10-11",
+    "status": "adopted-for-rewrites-existing-recordings-unchanged",
+    "priority": "C1 and B1 first, with independent student learning review before recording.",
+    "catalysts": "Teach catalyst mechanism and approach-time/composition contrast in chem-m5-c04 C4B. Remove the duplicate catalyst lesson from C2; keep C2 on opposing rates and changing amounts.",
+    "equilibriumConstant": "Introduce K and expressions in chem-m5-c05; calculate in c06 and teach temperature dependence in c09. C3/C4 explain observable direction/composition without a K aside.",
+    "reproductiveJoining": "B1 introduces only the needed copying-versus-combination contrast. B2 and later organism lessons briefly recall it when necessary for the current mechanism, rather than repeating a classification worked example.",
+    "chromosomeSets": "Detailed DNA copying, mitosis and meiosis belong in bio-m5-b04, b05a and b05b. Earlier organism examples do not teach haploid/diploid or meiotic stages.",
+    "coverage": "Cuts and relocation do not complete or delete required syllabus actions. Practical observations and removed side examples need explicit later homes before claiming coverage. Preserve earlier sources and their evidence."
+  },
   "canonicalDocuments": {
     "priorityPlan": "docs/production/year12-module5-teaching-priority-2026-10-10.md",
     "coursePlan": "docs/production/course-progression-plan-2026-10-09.md",
@@ -49,14 +59,14 @@
     },
     "Biology": {
       "sourceCandidates": 19,
-      "plannedUploads": 27,
-      "core": 21,
+      "plannedUploads": 29,
+      "core": 23,
       "companions": 3,
       "practicalSupport": 3,
       "mappedActionGroups": 32,
       "approvedActionGroups": 0,
       "publicUploadsClaimedByThisPlan": 0,
-      "note": "Provisional upload segmentation, not fixed quotas or completed videos. Review can adjust boundaries while preserving actions. Shared support can reuse one approved upload. The four organism-group delivery parts replace one combined upload, adding three focused planned core videos. Canonical route IDs and action coverage remain unchanged.",
+      "note": "Provisional upload segmentation, not completed coverage. Six organism-group delivery parts replace one combined upload. Seed and runner are separate; mould and yeast are separate. Canonical route IDs and action coverage remain unchanged. A proposed later fungal cycle companion is not included in this count.",
       "canonicalRouteEntries": 24
     }
   },
@@ -116,18 +126,16 @@
           "prerequisites": [
             "chem-m5-c01"
           ],
-          "entryKnowledge": "C1 plus activation energy and concentration effects on rate.",
+          "entryKnowledge": "C1: opposing changes, rates and amounts. Explain why changing available reactants changes conversion frequency in context.",
           "start": "Follow a specified initially reactant-rich reversible reaction.",
-          "stop": "Explain changing forward/reverse rates and why a catalyst changes approach time, not fixed-temperature equilibrium composition.",
+          "stop": "Explain changing forward/reverse rates until equal average rates give steady amounts. Keep collision investigation in p01 and catalysts in C4B; no separate collision-theory tutorial here.",
           "next": [
             "chem-m5-c03",
             "chem-m5-g01",
             "chem-m5-p01"
           ],
           "syllabusActions": [
-            "C-reversibility",
-            "C-collision-investigate",
-            "C-activation"
+            "C-reversibility"
           ],
           "status": "source-present-unreviewed",
           "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
@@ -180,15 +188,14 @@
           ],
           "entryKnowledge": "Rates versus amounts and stated reaction enthalpy.",
           "start": "Disturb a visible initial equilibrium by species addition/removal or temperature change.",
-          "stop": "Predict relaxation direction, distinguish an immediate change from response, and separate temperature from open-system water removal.",
+          "stop": "Predict relaxation direction and distinguish immediate addition/removal or temperature change from reaction response. No K aside; the oven/water-removal side example needs a separate scoped practical home.",
           "next": [
             "chem-m5-c04"
           ],
           "syllabusActions": [
             "C-disturbances",
             "C-collision-observations",
-            "C-heat",
-            "C-temperature-K"
+            "C-heat"
           ],
           "status": "source-present-unreviewed",
           "coverageStatus": "candidate-action-mapping; reviewed scenes, learner response and action approval pending",
@@ -245,7 +252,7 @@
               "status": "candidate-preparation-independent-review-pending",
               "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
               "start": "Refresh activation energy, then compare catalyst effects at fixed temperature and the same reacting amounts.",
-              "stop": "Explain faster approach and unchanged equilibrium composition/K; distinguish product formed in a limited time from equilibrium amount without claiming a universal equal enhancement factor.",
+              "stop": "Explain faster approach and unchanged equilibrium composition; distinguish product formed in a limited time from equilibrium amount. No early K aside or universal equal enhancement factor claim.",
               "next": "Existing practical support p01 or core C5 equilibrium expressions."
             }
           ],
@@ -1113,7 +1120,7 @@
         {
           "id": "bio-m5-b02b",
           "playlistOrder": 3,
-          "planAnchor": "B2 organism-group route, delivered as four focused videos",
+          "planAnchor": "B2 organism-group route, delivered as six focused videos",
           "title": "Reproduction in plants, fungi, bacteria and protists",
           "type": "core",
           "sourceCandidates": [
@@ -1145,29 +1152,58 @@
           "deliveryParts": [
             {
               "order": 1,
-              "title": "Plant reproduction: pollination, fertilisation and vegetative growth",
+              "title": "How does a flower make a seed?",
               "syllabusActions": [
                 "B-plants"
               ],
-              "status": "candidate-preparation-independent-review-pending",
-              "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/biology-b3-plants.md",
-              "start": "Flowering-plant pollen/ovule stimulus and runner comparison.",
-              "stop": "Explain pollen transport, gamete fusion and embryo/seed distinctions; compare a named vegetative mechanism. No detailed plant life cycle.",
-              "next": "Fungal reproduction, then bacterial and protist mechanisms."
+              "status": "owner-rejected-parent-rewrite-required",
+              "preparationPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
+              "entryKnowledge": "Reproduction produces new individuals. Introduce reproductive cells in context.",
+              "start": "Pollen reaches a stigma, then follow its route to an egg inside an ovule.",
+              "stop": "Pollen tube, fertilisation, embryo and seed, one stage at a time. No runner or detailed cell-division lesson.",
+              "next": "How does a strawberry runner make a new plant?"
             },
             {
               "order": 2,
-              "title": "Fungal reproduction: budding and spores",
+              "title": "How does a strawberry runner make a new plant?",
+              "syllabusActions": [
+                "B-plants"
+              ],
+              "status": "silent-design-pilot-owner-review-pending",
+              "preparationPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
+              "entryKnowledge": "Explain briefly how roots and leaves support growth.",
+              "start": "A stem from the parent strawberry plant extends along the ground.",
+              "stop": "The new plant forms roots and leaves and can grow separately once established. Explain this asexual route after its mechanism. No genetics or mitosis stages.",
+              "next": "Bread mould spore reproduction."
+            },
+            {
+              "order": 3,
+              "title": "How can bread mould start growing somewhere new?",
+              "syllabusActions": [
+                "B-fungi"
+              ],
+              "status": "silent-design-pilot-independent-review-pending",
+              "preparationPath": "docs/production/fungi-design-reset-2026-10-11/teaching-proposal.json",
+              "entryKnowledge": "Reproduction produces new individuals. No chromosome-set or nuclear-division knowledge assumed.",
+              "start": "Recognisable mouldy bread and a named Rhizopus illustration.",
+              "stop": "Hyphae, sporangial spores, release, travel and germination in suitable conditions. Explain the shown asexual route after its mechanism; defer the detailed sexual cycle.",
+              "next": "Yeast budding."
+            },
+            {
+              "order": 4,
+              "title": "How does one yeast cell make another?",
               "syllabusActions": [
                 "B-fungi"
               ],
               "status": "planned-unprepared",
-              "start": "A named yeast budding example and a named spore-forming fungal example.",
-              "stop": "Explain budding and spore production with sexual/asexual limits tied to the example.",
+              "preparationPath": "docs/production/fungi-design-reset-2026-10-11/teaching-proposal.json",
+              "entryKnowledge": "A cell can grow and produce offspring. Introduce copied inherited information in context.",
+              "start": "A named baker's yeast cell with a small bud.",
+              "stop": "Bud enlargement, copied inherited information and separation as a daughter cell. No detailed mitosis or meiosis.",
               "next": "Bacterial binary fission."
             },
             {
-              "order": 3,
+              "order": 5,
               "title": "Bacterial reproduction: binary fission",
               "syllabusActions": [
                 "B-bacteria"
@@ -1178,7 +1214,7 @@
               "next": "Named protist reproductive mechanisms."
             },
             {
-              "order": 4,
+              "order": 6,
               "title": "Protist reproduction: named binary fission and budding examples",
               "syllabusActions": [
                 "B-protists"
@@ -1189,7 +1225,7 @@
               "next": "The mammalian fertilisation/development route."
             }
           ],
-          "deliveryNote": "The canonical route/action association remains bio-m5-b02b. These are four upload parts inside that route, not new canonical action IDs or completed coverage. Their order precedes the existing next links."
+          "deliveryNote": "Six focused uploads retain bio-m5-b02b and its action IDs. Former plant and fungi previews are owner-rejected historical parents. Silent pilots do not complete action coverage. Detailed fungal cycle teaching is a proposed later companion after bio-m5-b04, bio-m5-b05a and bio-m5-b05b, not an introductory prerequisite. Their order precedes the existing next links."
         },
         {
           "id": "bio-m5-b03a",

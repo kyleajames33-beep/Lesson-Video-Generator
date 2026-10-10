@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-11",
+  "status": "silent-pilot-available-owner-design-review-pending",
+  "reviewUrl": "http://127.0.0.1:8778/fungi-design-pilot-2026-10-11-v1/",
+  "inputsPath": "out/prototypes/fungi-design-pilot-2026-10-11-v1/page-inputs.json",
+  "scope": "90-second finished-illustration teaching sample. No new audio or complete lesson; no simulated growth or microscopy claim.",
+  "parentToPreserve": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+  "teachingProposalPath": "docs/production/fungi-design-reset-2026-10-11/teaching-proposal.json",
+  "route": "bio-m5-b02b delivery parts now separate mould and yeast. B-fungi remains unapproved; budding is still required. Detailed fungal cycle proposed after bio-m5-b04, bio-m5-b05a and bio-m5-b05b.",
+  "assets": [
+    {
+      "path": "public/assets/biology/rhizopus-bread-mould-botanical-v1.png",
+      "sha256": "a49b1115d08ba67e4e3ecf74c1e75c1618eb05385d04d3fe52077dfbc860a766",
+      "review": "Sol independently inspected actual raster: hyphae, stalks, sporangia and released spores support introductory gross anatomy. Do not call rhizoids plant roots or teach complete internal head anatomy."
+    },
+    {
+      "path": "public/assets/biology/rhizopus-germination-botanical-v1.png",
+      "sha256": "f2aab1ebad08bafd1a21e49a5af1d7bb4351f8781262265b47b4a06b8c5ac17d",
+      "review": "Sol inspected emerging branching germ tube against cited original microscopy study. Internal texture is illustrative, not evidence of nuclei or septa."
+    }
+  ],
+  "generation": "Built-in image generation. Specific model version is not exposed. Assets copied into project; backup in plant reset media-backup.json.",
+  "review": {
+    "independent": "Source, both actual rasters and seven native frames inspected by Sol. No blocking overlaps or misleading leaders found. No listening claim.",
+    "root": "Native 780,1530,1980 and late boundary frame2100 inspected. Late qualification fits above captions; its smaller supporting text still needs device/voiced review.",
+    "lateBoundaryFrame": "out/checks/fungi-design-boundary-2026-10-11.png",
+    "typeCheck": "npm run check exited 0"
+  },
+  "remaining": [
+    "Owner design judgement and actual continuous/device review",
+    "Select full source and production brief; stage release, arrival and germination without implying an instantaneous mature colony",
+    "Build separated-bread reasoning task with full conditions and protected response hold",
+    "Prepare the separate yeast budding lesson",
+    "New narration, alignment, captions, exact voiced preview, human listening and full-package gate"
+  ]
+}

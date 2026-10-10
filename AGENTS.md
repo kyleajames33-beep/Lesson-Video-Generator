@@ -14,6 +14,14 @@
 - Preserve existing usable layouts, artwork and animations. The approved
   direction allows a mix of editorial, hand-drawn and painted treatments,
   selected by teaching purpose. Do not restyle the catalogue wholesale.
+- A mistake/fix scene is optional. Include one only when resolving a specific
+  misconception helps this lesson; do not repeat it as a required template.
+- Visual fit is not teaching or design approval. Show the relevant organism,
+  apparatus or process when it carries the explanation. A text box in a
+  diagram slot does not count as a useful visual. Inspect existing prototypes
+  and assets, including their actual appearance, before choosing replacements.
+  Use plain subject-action sentences in explanations and notes. Do not compress
+  a mechanism into unexplained nouns such as "transfer, delivery, fusion".
 - Follow docs/visual-design-handbook.md and docs/animation-planning.md for
   scene selection and review. Motion must explain, direct attention or give
   useful context. Deliberate reading and thinking holds are valid.
@@ -25,6 +33,18 @@
   question, contrast or surprise where appropriate. Record per-scene visual
   reuse/adjust decisions and purposeful narration cues. Do not impose feature
   quotas or use unrelated artwork.
+- New or rewritten selected lessons require independent student learning
+  review using docs/production/student-learning-review.md. Trace the lesson
+  from its stated entry knowledge: does it explain causes, earn attention,
+  use the visual medium and help students apply and remember the idea?
+  Resolve learning blockers before recording, then repeat on the exact voiced
+  preview before full export. A science pass alone is insufficient. Use a
+  meaningful analogy, contrast or mnemonic where useful, without a quota.
+  Keep a caveat in learner copy only when its omission would teach a wrong
+  idea or remove a necessary condition; otherwise keep it in author notes.
+  Consult docs/production/module5-memory-aids-2026-10-11.md for relevant
+  Module 5 aids. Select and check the exact aid's scientific assumptions
+  after explaining its idea. The bank is a draft, not recording approval.
 - The accepted conversational, purposeful-visual revisions set the minimum
   for new selected videos. For calculations, separate the short task,
   equation and grouped givens. Associate supplied values with their units

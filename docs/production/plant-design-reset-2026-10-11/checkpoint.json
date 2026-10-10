@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-11",
+  "status": "silent-pilot-available-owner-design-review-pending",
+  "scope": "Short silent visual and teaching direction sample. Parent lesson and audio remain historical; this is not a replacement full lesson.",
+  "parentLessonPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+  "teachingProposalPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
+  "primaryQuestion": "How can a strawberry stem make a new plant that can live separately?",
+  "visualDecision": "New botanical illustration fills a verified local artwork gap. Reuse the existing painted editorial direction, typography and deliberate reveal/hold approach. Show a completed botanical illustration and direct attention to its structures; do not claim time-lapse growth.",
+  "asset": {
+    "path": "public/assets/biology/strawberry-runner-botanical-v1.png",
+    "sha256": "02053ae52c97bdc5ca1d29a0205441f75b1638cd00502f5733c3397a2012d603",
+    "tool": "built-in image generation",
+    "model": "Not exposed by the generation tool; no specific image-model version claimed.",
+    "anatomyReview": "Independent agent inspected the actual raster. Gross structure supports stem origin at parent crown, connected daughter crown and separate roots. No final teaching or listening approval."
+  },
+  "libraryAudit": {
+    "plants": "Current source selects PlantReproductionBoard procedural SVG, not painted or hand-drawn prototypes. Existing FlowerDiagram has a small runner but is not a premium botanical raster.",
+    "fungi": "Current staged wrapper reduces diagrams to one flow-node text card per stage, omitting visible yeast/mould/spore structures.",
+    "pressure": "Current custom flat piston reuses GasMolecule/AtomDefs but omits the integrated PressureDiagram gauge/collision/regrouping/trace presentation. Existing diagram needs science and cue review before selection.",
+    "reusableReferences": [
+      "src/prototypes/DesignDirections.tsx",
+      "src/animations/HandDrawn.tsx",
+      "src/slides/diagrams/kinds/handdrawn/HdDnaReplication.tsx",
+      "src/slides/diagrams/kinds/chem-y12-m5/PressureDiagram.tsx"
+    ],
+    "missingLocalAssets": [
+      "No local runner or fungi raster found.",
+      "Registered almond-orchard-beehives.png and hand-pollination-controlled-cross.png are missing locally, not evidence that they never existed."
+    ]
+  },
+  "narration": "Silent pilot. Proposed new words require new narration and alignment before a voiced replacement.",
+  "pending": [
+    "Owner judgement of visual direction and teaching",
+    "Separate seed and runner route parts adopted; full scripts and their reviewed coverage remain pending",
+    "Revised full source/brief, fresh affected narration, exact voiced preview and release checks"
+  ],
+  "chemistryFeedback": "C1/C2/C3 opt-in component changes remain unintegrated and unreviewed. See parallel board designReset.pendingChemistryChanges.",
+  "reviewUrl": "http://127.0.0.1:8778/plant-runner-design-pilot-2026-10-11-v3/",
+  "pilotInputsPath": "out/prototypes/plant-runner-design-pilot-2026-10-11-v3/page-inputs.json",
+  "review": {
+    "root": "Actual browser 960px runner frame and 480px causal/notes frames inspected. Physical label clear; three notes readable but final text approaches the image crop edge. Full continuous silent playback not yet recorded.",
+    "independent": "Sol reviewer inspected actual v3 native360,840,1080,1620; no blocking overlap or gross science defect in those four frames.",
+    "typeCheck": "npm run check exited 0 on current source",
+    "limits": "Silent completed-outcome design sample. No growth sequence, new narration, whole-lesson or human listening approval."
+  },
+  "mediaBackupPath": "docs/production/plant-design-reset-2026-10-11/media-backup.json"
+}

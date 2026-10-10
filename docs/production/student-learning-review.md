@@ -1,0 +1,24 @@
+# Student learning review
+
+Use an independent reviewer after authoring, then repeat on the exact voiced preview. Follow the [teaching templates](teaching-templates.md) and [preview-first review](preview-first-review.md). This is a short learner-perspective check, not another release form. The author retains their files; the reviewer sends findings to the integration owner.
+
+Start from the lesson's stated entry knowledge, not the reviewer's science knowledge. Name the main question and the useful thing a student should be able to explain or decide afterwards. Trace one concrete example from its starting state to its conclusion. At each step, ask: "What would a student starting Year 12 need to know here, and where would they ask why?"
+
+For Module 5, consult the [memory-aid bank](module5-memory-aids-2026-10-11.md). Choose an aid for the current question and the learner's present knowledge, after its explanation. Check that it helps a new case and that its scientific assumptions are true. A draft bank entry is not cleared for narration merely because it sounds memorable; obtain the selected lesson's science and subject-teacher checks. Do not introduce future K, meiosis or inheritance content just to fit an aid.
+
+## Look for learning, not just correct statements
+
+- **A followable explanation.** Identify the exact sentence that assumes an untaught term or skips a link. Explain necessary terms briefly before using them. Name what acts, what changes and why the change follows. A correct sequence of events can still leave the mechanism unexplained.
+- **A visible case.** Keep the relevant organism, apparatus, particles or data identifiable while the narration explains it. Students should be able to point to the thing being discussed, follow its change and compare with its earlier state. Arrows and labels must have clear referents. Inspect the actual visual, not just its planned description.
+- **Something video makes easier to understand.** Find the beat where a student can predict a change, see it happen and use the comparison to explain why. Motion should reveal a relationship, preserve a useful reference or focus attention on evidence. A stable comparison can do this too. If the lesson only reads text alongside more text, propose a concrete demonstration or contrast that serves its question. Extra movement is not the remedy.
+- **A real thinking opportunity.** The student must make a bounded decision, trace a relationship or explain a changed case. Keep all necessary conditions and question demands visible. Hide the answer in diagrams, labels, captions and speech until after the response hold. Feedback explains the reason, rather than merely revealing the correct option. Do not add questions solely to fill a quota.
+- **Manageable reading and listening.** During new reasoning, show the current case, its needed facts and only earlier results that support this step. Flag competing paragraphs, future conclusions, vanished givens or unexplained jumps. Select information before shrinking text. Keep optional book notes separate from new explanation, with a quiet copy or pause opportunity.
+- **A useful way to remember.** Prefer a compact causal anchor the student can reconstruct: "The two directions balance, so the amount stops changing." A contrast, diagram landmark, short rule or relevant mnemonic can help. Check its limits and whether it supports a new case. Do not force an acronym or let a catchy phrase replace the explanation.
+
+## Send findings that authors can act on
+
+Prioritise failures that prevent the main understanding, then confusing or distracting details. For each material finding, give the scene or exact sentence, the likely student question, a concrete repair and the understanding that repair should enable. Retain successful teaching moves. Do not silently rewrite the author's proposal or ask for a wholesale visual restyle.
+
+For example: "Scene 3 says the amount stays constant, but students have only seen particles stop moving. Keep events visible in both directions, compare equal changes over the same time interval, then explain that the gains and losses balance. Students should understand that a constant amount does not mean the reaction has stopped."
+
+Keep scientific accuracy and learning success separate. A scientifically correct lesson can still fail to explain its main relationship; an engaging analogy can still mislead. State what was inspected: proposal/source, actual stills, continuous voiced preview or exported video. An AI beginner-perspective review identifies likely problems; it is not evidence that real students learned. Record actual learner explanations when available. Human listening remains pending until a person checks the exact recording, and this review does not replace the existing release gate.

@@ -34,13 +34,15 @@ export function prepareRenderProductionBrief(root, config) {
 
 export function createProductionBrief(root, lessonPath) {
   const bytes = readFileSync(inside(root, lessonPath)), lesson = JSON.parse(bytes);
-  return {schemaVersion: 2, source: {lessonPath, lessonSha256: sha256(bytes)},
+  return {schemaVersion: 3, source: {lessonPath, lessonSha256: sha256(bytes)},
     progression: {planPath: 'docs/production/course-progression-plan-2026-10-09.md', prerequisiteKnowledge: '', startsWith: '', stopsAfter: '', nextLesson: ''},
     researchReferences: ['docs/research/hsc-video-production-standard-2026-10-02.md', 'docs/production/teaching-templates.md', 'docs/animation-planning.md'],
     teaching: {task: lesson.lessonIntent ?? '', causalExplanation: '', conversationalApproach: '', openingDecision: '', understandingCheck: '', curriculumScope: ''},
     scenes: lesson.scenes.map(scene => ({sceneId: scene.id, visualDecision: '', visualReference: '', teachingReason: '', narrationCue: '', motionPurpose: '', holdPurpose: ''})),
     scriptReview: {status: 'pending', reviewer: '', evidence: null},
+    studentLearningReview: {status: 'pending', reviewer: '', evidence: null},
     voicedPreview: {status: 'pending', reviewer: '', mode: '', inputSnapshotPath: '', evidence: null,
+      studentLearningReview: {status: 'pending', reviewer: '', evidence: null},
       humanListening: {status: 'pending', reviewer: '', mode: 'human-listening', evidence: null}},
     limitation: 'Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export.'};
 }
@@ -55,7 +57,7 @@ export function checkProductionBrief(root, briefPath, {stage = 'export', expecte
     lessonPath = inside(root, brief.source?.lessonPath);
     lessonBytes = readFileSync(lessonPath); lesson = JSON.parse(lessonBytes);
   } catch (error) { return {ready: false, stage, blockers: [{code: 'BRIEF_INPUT_INVALID', detail: error.message}], pending}; }
-  if (![1, 2].includes(brief.schemaVersion) || !lesson || !Array.isArray(lesson.scenes) || !lesson.scenes.every(scene => scene && filled(scene.id))) {
+  if (![1, 2, 3].includes(brief.schemaVersion) || !lesson || !Array.isArray(lesson.scenes) || !lesson.scenes.every(scene => scene && filled(scene.id))) {
     return {ready: false, stage, blockers: [{code: 'BRIEF_SCHEMA_INVALID', detail: 'Use the production teaching/visual brief template with a valid selected lesson.'}], pending};
   }
   if (brief.source.lessonSha256 !== sha256(lessonBytes)) block('BRIEF_LESSON_CHANGED', 'Selected lesson changed. Reconcile the brief and review the affected scenes before updating its source hash.');
@@ -68,7 +70,7 @@ export function checkProductionBrief(root, briefPath, {stage = 'export', expecte
   const requireDecision = (value, label) => {
     if (!filled(value)) (stage === 'draft' ? pending : blockers).push({code: 'BRIEF_DECISION_MISSING', detail: label});
   };
-  if (brief.schemaVersion === 2) {
+  if (brief.schemaVersion >= 2) {
     for (const name of ['planPath', 'prerequisiteKnowledge', 'startsWith', 'stopsAfter', 'nextLesson']) requireDecision(brief.progression?.[name], 'progression.' + name);
     if (filled(brief.progression?.planPath)) {
       try {if (!existsSync(inside(root, brief.progression.planPath))) block('BRIEF_PROGRESSION_PLAN_MISSING', brief.progression.planPath);}
@@ -102,8 +104,10 @@ export function checkProductionBrief(root, briefPath, {stage = 'export', expecte
     }
   };
   review(brief.scriptReview, 'Script/source review', stage !== 'draft');
+  if (brief.schemaVersion >= 3) review(brief.studentLearningReview, 'Student learning source review', stage !== 'draft');
   const needsPreview = ['export', 'release'].includes(stage);
   review(brief.voicedPreview, 'Exact voiced preview', needsPreview);
+  if (brief.schemaVersion >= 3) review(brief.voicedPreview?.studentLearningReview, 'Student learning exact voiced review', needsPreview);
   if (brief.voicedPreview?.status === 'pass') {
     if (!['ui-playback', 'rendered-pilot'].includes(brief.voicedPreview.mode)) block('BRIEF_PREVIEW_MODE', 'A source read or still image does not establish voiced motion playback.');
     try {

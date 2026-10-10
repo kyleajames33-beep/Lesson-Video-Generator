@@ -4,6 +4,8 @@ import {useAccent} from '../../../../styles/theme';
 
 type Props = {
   mode?: 'hook' | 'model' | 'association' | 'rates' | 'amounts' | 'catalyst';
+  presentation?: 'uncluttered';
+  associationAt?: number;
   runAt?: number; forwardAt?: number; reverseAt?: number; limitAt?: number;
   comparisonAt?: number; comparisonEnd?: number; graphAt?: number;
 };
@@ -22,7 +24,7 @@ const points = (value: (t: number) => number) => Array.from({length: 101}, (_, i
 const progress = (frame: number, start: number) => Math.max(0, Math.min(1, (frame - start) / 150));
 
 export const Module5ApproachDiagram = ({mode = 'model', runAt = 300, forwardAt = 90, reverseAt = 270,
-  limitAt = 900, comparisonAt = 1400, comparisonEnd = 1750, graphAt = 500}: Props) => {
+  limitAt = 900, comparisonAt = 1400, comparisonEnd = 1750, graphAt = 500, presentation, associationAt = 0}: Props) => {
   const frame = useCurrentFrame();
   const theme = useAccent();
   const primary = theme.accent, other = TOK.amberInk;
@@ -69,6 +71,130 @@ export const Module5ApproachDiagram = ({mode = 'model', runAt = 300, forwardAt =
   </>;
   const atom = (x: number, y: number, element: string) => <g><circle cx={x} cy={y} r={33} fill={element === 'N' ? theme.soft : '#fff1dc'} stroke={element === 'N' ? primary : other} strokeWidth={4}/><text x={x} y={y + 18} {...text} textAnchor="middle" fontSize={50}>{element}</text></g>;
   const no2 = (x: number, y: number) => <g><path d={`M${x - 53} ${y + 48} L${x} ${y} L${x + 53} ${y + 48}`} fill="none" stroke={TOK.inkDim} strokeWidth={6}/>{atom(x, y, 'N')}{atom(x - 65, y + 60, 'O')}{atom(x + 65, y + 60, 'O')}</g>;
+  // Selected C2 presentation only. The original catalogue layouts remain the default.
+  // Cue frames come from the selected narration. Never label a finite endpoint
+  // as exact equilibrium; the authored first-order model approaches its limit.
+  if (presentation === 'uncluttered' && mode === 'association') {
+    const showingAssociation = frame >= associationAt;
+    const explanation = frame >= reverseAt ? 'Activation energy: the reaction barrier'
+      : frame >= forwardAt ? 'Enough energy + suitable arrangement' : null;
+    return <svg viewBox="0 0 1120 780" style={{width: '100%', height: '100%'}} role="img"
+      aria-label="Two NO2 molecules associate into one N2O4 molecule, retaining two nitrogen atoms and four oxygen atoms. This schematic association is not a complete collision path or mechanism. Effective collisions require sufficient energy and suitable arrangement; activation energy is the reaction barrier.">
+      {showingAssociation ? <>
+      <text x={560} y={85} textAnchor="middle" {...text} fontSize={80}>2NO₂ ⇌ N₂O₄</text>
+      {no2(160, 305)}{no2(405, 305)}
+      <path d="M560 315 H670 M645 292 L670 315 L645 338 M670 375 H560 M585 352 L560 375 L585 398" fill="none" stroke={primary} strokeWidth={7}/>
+      <path d="M815 315 H935 M815 315 L775 245 M815 315 L775 385 M935 315 L975 245 M935 315 L975 385" fill="none" stroke={TOK.inkDim} strokeWidth={6}/>
+      {atom(815, 315, 'N')}{atom(935, 315, 'N')}{atom(765, 235, 'O')}{atom(765, 395, 'O')}{atom(985, 235, 'O')}{atom(985, 395, 'O')}
+      <text x={282} y={505} textAnchor="middle" {...text} fontSize={48}>Two NO₂ molecules</text>
+      <text x={875} y={505} textAnchor="middle" {...text} fontSize={48}>One N₂O₄ molecule</text>
+      <text x={560} y={625} textAnchor="middle" {...text} fontSize={48}>Same atoms, different grouping</text>
+      <text x={560} y={730} textAnchor="middle" {...text} fontSize={42} fill={TOK.inkDim}>{frame >= limitAt ? 'Schematic association, not a full mechanism' : 'Schematic association'}</text>
+      </> : <>
+        <text x={560} y={285} textAnchor="middle" {...text} fontSize={76}>Effective collision</text>
+        {explanation ? <text x={560} y={420} textAnchor="middle" {...text} fontSize={52}>{explanation}</text> : null}
+      </>}
+    </svg>;
+  }
+  if (presentation === 'uncluttered' && mode === 'model') {
+    const explanation = frame >= limitAt ? 'Both conversions continue'
+      : frame >= reverseAt && time > 0 ? 'B forms, so B can now convert back to A'
+      : frame >= forwardAt ? 'A converts to B' : 'Start with A only';
+    return <svg viewBox="0 0 1120 780" style={{width: '100%', height: '100%'}} role="img"
+      aria-label="Schematic one-to-one A and B conversion in a closed system at fixed temperature and volume. A-only start. Forward rate starts positive and reverse rate starts zero. As B forms, reverse conversion begins before equilibrium. Bars show authored model concentrations, not particle trajectories. Both conversions continue as the model approaches equilibrium; a finite time is not exact equilibrium. Closed keeps matter in but does not mean insulated.">
+      <text x={560} y={70} textAnchor="middle" {...text} fontSize={62}>A ⇌ B</text>
+      <text x={560} y={133} textAnchor="middle" {...text} fontSize={44}>Closed; fixed temperature and volume</text>
+      <text x={220} y={285} textAnchor="middle" {...text} fontSize={90}>A</text>
+      <text x={900} y={285} textAnchor="middle" {...text} fontSize={90}>B</text>
+      {arrow(245, false, frame >= forwardAt)}{arrow(315, true, frame >= reverseAt && time > 0)}
+      <rect x={90} y={385} width={440} height={80} rx={10} fill={theme.soft}/>
+      <rect x={90} y={385} width={440 * state.a} height={80} rx={10} fill={primary}/>
+      <rect x={590} y={385} width={440} height={80} rx={10} fill={theme.soft}/>
+      <rect x={590} y={385} width={440 * state.b} height={80} rx={10} fill={other}/>
+      <text x={310} y={530} textAnchor="middle" {...text} fontSize={48}>A concentration</text>
+      <text x={810} y={530} textAnchor="middle" {...text} fontSize={48}>B concentration</text>
+      <text x={560} y={640} textAnchor="middle" {...text} fontSize={44}>{explanation}</text>
+      <text x={560} y={737} textAnchor="middle" {...text} fontSize={42} fill={TOK.inkDim}>Schematic conversion</text>
+    </svg>;
+  }
+  if (presentation === 'uncluttered' && mode === 'catalyst') {
+    const showingGraph = frame >= graphAt;
+    const catalystPoints = (value: (t: number) => number) => Array.from({length: 101}, (_, i) =>
+      `${i ? 'L' : 'M'}${160 + i * 6.8},${530 - value(i / 50) * 420}`).join(' ');
+    const explanation = showingGraph
+      ? frame >= comparisonAt && frame < comparisonEnd ? 'Early on: more B with a catalyst'
+        : frame >= limitAt ? 'Same equilibrium limit, faster approach'
+        : 'B forms faster with a catalyst'
+      : frame >= reverseAt ? 'Same reactant and product energies'
+        : frame >= forwardAt ? 'A catalyst provides a lower reaction barrier' : null;
+    return <svg viewBox="0 0 1120 780" style={{width: '100%', height: '100%'}} role="img"
+      aria-label="Schematic catalyst comparison for the authored one-to-one A and B model. Identical starting composition, fixed temperature and volume. The energy profiles have identical reactant and product endpoint energies, with a lower catalysed pathway barrier. Concentration comparison uses arbitrary units and model time. Catalyst accelerates the approach without changing the equilibrium limiting composition. Finite traces do not reach exact equilibrium at any finite time. No universal numerical acceleration factor is claimed.">
+      <text x={560} y={70} textAnchor="middle" {...text} fontSize={62}>A ⇌ B</text>
+      <text x={560} y={133} textAnchor="middle" {...text} fontSize={44}>Same start; fixed temperature and volume</text>
+      {showingGraph ? <>
+        <text x={140} y={230} {...text} fontSize={46}>B concentration (arbitrary units)</text>
+        <path d="M160 265 V530 H850" fill="none" stroke={TOK.inkDim} strokeWidth={5}/>
+        <text x={115} y={545} {...text} fontSize={44}>0</text>
+        {draw(catalystPoints(t => (1 - Math.exp(-5.5 * t)) / 3), primary, graphAt)}
+        {draw(catalystPoints(t => approachState(t).b), other, graphAt + 120)}
+        <path d="M840 390 L865 335" fill="none" stroke={primary} strokeWidth={4}/>
+        <text x={880} y={329} {...text} fontSize={42} fill={primary}><tspan x={880}>With</tspan><tspan x={880} dy={46}>catalyst</tspan></text>
+        {frame >= graphAt + 120 ? <g>
+          <path d="M840 390.35 L865 450" fill="none" stroke={other} strokeWidth={4}/>
+          <text x={880} y={450} {...text} fontSize={42} fill={other}><tspan x={880}>Without</tspan><tspan x={880} dy={46}>catalyst</tspan></text>
+        </g> : null}
+        <text x={510} y={590} textAnchor="middle" {...text} fontSize={44}>Model time (arbitrary units) →</text>
+      </> : <>
+        <text x={140} y={230} {...text} fontSize={46}>Energy (arbitrary units)</text>
+        <path d="M160 265 V530 H1010" fill="none" stroke={TOK.inkDim} strokeWidth={5}/>
+        {draw('M190 440 H285 C365 440 390 275 520 275 S700 485 805 485 H980', other, forwardAt)}
+        {draw('M190 440 H285 C365 440 390 370 520 370 S700 485 805 485 H980', primary, forwardAt)}
+        <text x={195} y={415} {...text} fontSize={42}>Reactants</text>
+        <text x={980} y={455} textAnchor="end" {...text} fontSize={42}>Products</text>
+        {frame >= forwardAt ? <>
+          <text x={590} y={277} {...text} fontSize={42} fill={other}>Without catalyst</text>
+          <path d="M520 370 L570 327" fill="none" stroke={primary} strokeWidth={4}/>
+          <text x={590} y={340} {...text} fontSize={42} fill={primary}>With catalyst</text>
+        </> : null}
+        <text x={580} y={590} textAnchor="middle" {...text} fontSize={44}>Reaction progress (not time) →</text>
+      </>}
+      {explanation ? <text x={560} y={665} textAnchor="middle" {...text} fontSize={44}>{explanation}</text> : null}
+      <text x={560} y={737} textAnchor="middle" {...text} fontSize={42} fill={TOK.inkDim}>{showingGraph ? 'Schematic: approaching equilibrium' : 'Schematic energy pathways'}</text>
+    </svg>;
+  }
+  if (presentation === 'uncluttered' && (mode === 'amounts' || mode === 'rates')) {
+    const rates = mode === 'rates';
+    const compactPoints = (value: (t: number) => number) => Array.from({length: 101}, (_, i) =>
+      `${i ? 'L' : 'M'}${160 + i * 6.8},${530 - value(i / 50) * 250}`).join(' ');
+    const first = (t: number) => rates ? approachState(t).forward : approachState(t).a;
+    const second = (t: number) => rates ? approachState(t).reverse : approachState(t).b;
+    const firstEnd = 530 - first(2) * 250;
+    const secondEnd = 530 - second(2) * 250;
+    const explanation = frame >= limitAt ? (rates ? 'Equilibrium limit: equal, non-zero rates' : 'Equilibrium limit: more A than B')
+      : frame >= reverseAt ? (rates ? 'As B forms, the reverse rate rises' : 'A decreases as B forms')
+      : frame >= forwardAt ? 'Start with A only' : null;
+    return <svg viewBox="0 0 1120 780" style={{width: '100%', height: '100%'}} role="img"
+      aria-label={`Schematic declared one-to-one A and B model, not measured data. Closed system at fixed temperature and volume. A-only start. ${rates ? 'Rate' : 'Concentration'} and model time use arbitrary units. Finite traces approach equilibrium without reaching the exact limit at a finite time. ${rates ? 'Forward rate decreases and reverse rate increases towards equal, non-zero rates.' : 'A decreases and B increases towards limiting concentrations with twice as much A as B. Both conversions continue.'}`}>
+      <text x={560} y={70} textAnchor="middle" {...text} fontSize={62}>A ⇌ B</text>
+      <text x={560} y={133} textAnchor="middle" {...text} fontSize={44}>Closed; fixed temperature and volume</text>
+      <text x={140} y={230} {...text} fontSize={46}>{rates ? 'Rate (arbitrary units)' : 'Concentration (arbitrary units)'}</text>
+      <path d="M160 265 V530 H850" fill="none" stroke={TOK.inkDim} strokeWidth={5}/>
+      <text x={115} y={545} {...text} fontSize={44}>0</text>
+      {draw(compactPoints(first), primary, forwardAt)}
+      {draw(compactPoints(second), other, reverseAt)}
+      {frame >= forwardAt ? <g>
+        <path d={`M840 ${firstEnd} L865 ${rates ? firstEnd - 38 : firstEnd}`} fill="none" stroke={primary} strokeWidth={4}/>
+        <text x={880} y={rates ? firstEnd - 24 : firstEnd + 15} {...text} fontSize={46} fill={primary}>{rates ? 'Forward' : 'A'}</text>
+      </g> : null}
+      {frame >= reverseAt ? <g>
+        <path d={`M840 ${secondEnd} L865 ${rates ? secondEnd + 38 : secondEnd}`} fill="none" stroke={other} strokeWidth={4}/>
+        <text x={880} y={rates ? secondEnd + 54 : secondEnd + 15} {...text} fontSize={46} fill={other}>{rates ? 'Reverse' : 'B'}</text>
+      </g> : null}
+      <text x={510} y={590} textAnchor="middle" {...text} fontSize={44}>Model time (arbitrary units) →</text>
+      {explanation ? <text x={560} y={665} textAnchor="middle" {...text} fontSize={48}>{explanation}</text> : null}
+      <text x={560} y={737} textAnchor="middle" {...text} fontSize={42} fill={TOK.inkDim}>Schematic: approaching equilibrium</text>
+    </svg>;
+  }
   return <svg viewBox="0 0 1120 780" style={{width: '100%'}} role="img" aria-label={mode === 'association' ? 'Two NO2 molecules associate into one N2O4 molecule, retaining two nitrogen atoms and four oxygen atoms. Schematic association, not a complete mechanism.' : mode === 'catalyst' ? 'Schematic catalyst comparison with identical starts and equilibrium limiting composition, faster catalysed approach, lower pathway barrier and unchanged endpoint energies. No universal numerical acceleration factor is claimed.' : `Declared one-to-one A and B model. A-only start, forward rate positive and reverse rate initially zero. Finite traces approach equilibrium; the exact equilibrium limit is separate. ${mode === 'amounts' ? 'Limiting concentrations differ, with twice as much A as B.' : 'At the equilibrium limit both opposing rates are equal and non-zero.'}`}>
     <text x={560} y={62} textAnchor="middle" {...text} fontSize={mode === 'association' ? 80 : 52}>{header}</text>
     <text x={560} y={120} textAnchor="middle" {...text} fontSize={50}>{conditions}</text>

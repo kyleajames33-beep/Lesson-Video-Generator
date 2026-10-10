@@ -6,12 +6,12 @@ import {DioramaDefs, DioramaPlinth} from '../../diorama';
 import {AtomDefs, Ball} from './shared';
 
 export type DisturbanceMode = 'additionHook' | 'addA' | 'removeB' | 'fixedK' | 'associationHeat' | 'temperatureResponse';
-export type Module5DisturbanceProps = {mode: DisturbanceMode; at: Record<string, number>; barReferenceStyle?: 'solidMarks'};
+export type Module5DisturbanceProps = {mode: DisturbanceMode; at: Record<string, number>; barReferenceStyle?: 'solidMarks'; uncluttered?: boolean};
 
 // Reuse the reviewed mathematical model and cue API; change presentation only.
 import {disturbanceState, temperatureResponseState} from './Module5DisturbanceDiagram';
 
-export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle}: Module5DisturbanceProps) => {
+export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle, uncluttered = false}: Module5DisturbanceProps) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const theme = useAccent();
@@ -168,25 +168,27 @@ export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle}: Mo
     const absorbs = reverse || heating;
     const heatVisible = shown('exothermic');
     return shell(<>
-      <g transform="translate(0,202.5) scale(1,0.5)"><DioramaPlinth id={id} cx={610} cy={405} rx={435}/></g>
+      {/* Keep the top at y405. The selected shallower base leaves whitespace
+          below its complete side and shadow without changing the molecule. */}
+      <g transform={uncluttered ? 'translate(0,283.5) scale(1,0.3)' : 'translate(0,202.5) scale(1,0.5)'}><DioramaPlinth id={id} cx={610} cy={405} rx={435}/></g>
       <path data-bond="N-N" d={`M${centre - separation} 290 H${centre + separation}`} stroke={primary} strokeWidth={9} opacity={joining}/>
       {moleculeHalf(-1)}{moleculeHalf(1)}
-      {text(610, 514, joining > 0 && joining < 1 ? reverse ? 'Splitting: same atoms' : 'Joining: same atoms' : joining === 1 ? 'One N₂O₄ molecule' : 'Two distinct NO₂ molecules', TOK.ink, 50, 'middle')}
+      {text(610, uncluttered ? 560 : 514, joining > 0 && joining < 1 ? reverse ? 'Splitting: same atoms' : 'Joining: same atoms' : joining === 1 ? 'One N₂O₄ molecule' : 'Two distinct NO₂ molecules', TOK.ink, uncluttered ? 42 : 50, 'middle')}
       {card(1130, 163, 550, 345)}
       {heatVisible ? <>
         {text(1160, 231, cooling ? 'Cooling' : heating ? 'Heating' : reverse ? 'Reverse: splitting' : 'Forward: joining')}
         {text(1160, 306, absorbs ? 'Splitting absorbs heat' : 'Joining releases heat', absorbs ? other : primary)}
         {text(1160, 380, cooling ? 'Favours joining' : heating ? 'Favours splitting' : reverse ? 'Endothermic' : 'Exothermic')}
         {text(1160, 454, reverse ? 'Forward ΔH < 0' : 'ΔH < 0: forward')}
-        {arrow(absorbs ? 1090 : 880, absorbs ? 880 : 1090, 285, other)}
-        {[0, 1, 2].map(i => {
+        {arrow(absorbs ? 1090 : 880, absorbs ? 880 : 1090, uncluttered ? 155 : 285, other)}
+        {uncluttered ? text(1025, 210, 'Heat', other, 32, 'middle') : [0, 1, 2].map(i => {
           const origin = absorbs ? 1070 : 880;
           const destination = absorbs ? 900 : 1050;
           const q = Math.max(0, Math.min(1, energy * 1.5 - i * 0.18));
           return <path key={i} d={`M${origin + (destination - origin) * q - 8} ${326 + i * 35} q18 -16 36 0 t36 0`} fill="none" stroke={other} strokeWidth={5} opacity={q > 0 && q < 1 ? 1 : 0.35}/>;
         })}
       </> : <>{text(1160, 249, 'Joining is forward')}{text(1160, 326, '2 N and 4 O atoms')}{text(1160, 403, 'Atoms conserved')}</>}
-      {text(40, 593, cooling || heating ? 'NO₂ is brown; N₂O₄ is colourless' : 'Same atoms before and after joining')}
+      {uncluttered ? text(610, 609, '2 N and 4 O atoms conserved', TOK.inkDim, 30, 'middle') : text(40, 593, cooling || heating ? 'NO₂ is brown; N₂O₄ is colourless' : 'Same atoms before and after joining')}
     </>, 'Two distinct nitrogen dioxide molecules, with two nitrogen and four oxygen atoms in total, join into one dinitrogen tetroxide. Same six atoms persist. Forward joining releases heat; reverse splitting absorbs heat. Heating favours splitting, cooling favours joining. Net relationship illustration, not a mechanism or concentration measurement.');
   }
 

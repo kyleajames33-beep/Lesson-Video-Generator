@@ -1,5 +1,56 @@
 # Production Memory
 
+## 11 October: rejected visual and teaching standard
+
+An independent Sol student-learning role now reviews the exact new C1/B1
+proposals. It identified and checked repairs to the open-bottle return-rate
+cause, staged question facts and B1's different reproductive-cell pairings.
+No remaining source-level learning blocker was found; actual visuals and
+listening remain pending. New version-three production briefs require
+separate source learning evidence before recording and exact voiced learning
+evidence before full export. Historical v1/v2 contracts stay intact. Use
+docs/production/student-learning-review.md; an AI perspective is not real
+learner attainment evidence.
+
+The user added docs/production/module5-memory-aids-2026-10-11.md. Use it as
+a draft bank for lesson-specific aids after explanation. The learning
+reviewer checks whether an aid improves understanding and recall; science
+and subject-teacher checks confirm its assumptions before recording. Do not
+import advanced material early or force an acronym to satisfy a count.
+
+The user rejected the overnight plant, fungi and pressure presentation as
+bland, repetitive and difficult to follow. They also rejected crowded C1/C2
+boards, labels on the C3 plinth and routine mistake/fix scenes. Technical fit
+checks did not establish useful teaching or an acceptable visual standard.
+
+Use a short representative visual pilot before continuing the affected
+batch. Inspect the existing painted, hand-drawn and diorama work by actual
+appearance and teaching purpose. The fungi draft's single flow-node text
+cards do not show fungal reproduction. The newer plant SVG board is not the
+painted prototype treatment. Do not claim those assets were meaningfully
+used merely because shared primitives or slide shells were imported.
+
+Explain concrete actions and causes before names. Replace compressed strings
+such as "transfer, delivery, fusion" with the things moving and their
+destinations. Separate seed formation from runner reproduction in the new
+plant proposal. Mistake/fix pages are optional, justified by a particular
+misconception. Keep readable labels clear of artwork and plinths. Preserve
+historical recordings; revised speech needs fresh narration and alignment.
+
+The 11 October reset splits seed/runner and mould/yeast at delivery-part
+level within the existing Biology route. Detailed fungal chromosome-cycle
+teaching follows DNA replication, mitosis and meiosis. Give learners a new
+pictured case to reason through; do not supply the classification answer
+as a condition. The fungi proposal's separated bread pieces ask for travel
+and new growth in sequence. Botanical raster magnification and texture are
+illustrative. They are not microscopy, measured dimensions or animated growth.
+
+The focused Astra pressure pilot and Sol botanical work now provide actual
+short comparisons. Prefer Sol by default; do not infer model superiority
+from labels or one example. Human design judgement and listening remain
+separate from agent source/still review. The board and reset checkpoints
+record current URLs, file ownership and remaining integration.
+
 ## 10 October: focused videos and book notes
 
 The user approved the reviewed videos for release and asks future videos

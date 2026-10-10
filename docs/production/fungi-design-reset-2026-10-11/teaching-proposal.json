@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "status": "draft-proposal-not-selected-independent-review-pending",
+  "scope": "Focused teaching and visual reset. No selected source, parent candidate, audio, timing, route, coverage or release evidence changed.",
+  "parentToPreserve": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+  "workingReferences": [
+    "REPO-GUIDE.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/production/course-progression-plan-2026-10-09.md",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/module5-video-route-2026-10-10.json"
+  ],
+  "diagnosis": "The parent starts with an unseen spore and classification caveats, then introduces nuclear division, chromosome sets and meiosis before their route prerequisites. Its one-node flow displays do not show yeast cells or fungal anatomy. Its practice supplies the classification rule in the stimulus. Preserve the biological distinctions, but teach a visible organism and a causal reproductive sequence first.",
+  "routeDecision": {
+    "canonicalEntryId": "bio-m5-b02b",
+    "canonicalActionId": "B-fungi",
+    "actionStatus": "candidate contribution, not approved coverage",
+    "verifiedOfficialParagraphs": {
+      "path": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+      "sourceDocxSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7",
+      "ids": ["p1025", "p1028"],
+      "interpretation": "The current 2017 organism-group action names fungal budding and spores. A mould-only upload leaves budding outstanding. Parent brief's p1027 reference is plants, not fungi; use p1028 for this proposal."
+    },
+    "ledgerAndChecklistBoundary": "The dated progression ledger and mandatory checklist retain course-wide open work. The checklist explicitly covers 2025 Year 11 quantitative chemistry and enzyme actions, not this 2017 fungal action. Use the detailed Module 5 route and its cached official paragraphs for this action; do not infer approval from catalogue presence.",
+    "splitDecision": "Split bread-mould spore reproduction from yeast budding. Moving between a thread-forming mould, a single yeast cell and a sexual chromosome cycle introduces three different models. Each needs visible anatomy, time to explain and a genuine response task.",
+    "candidateParts": [
+      {
+        "candidateId": "bio-m5-b02b-fungi-mould",
+        "title": "How bread mould starts growing somewhere new",
+        "placement": "First focused fungi delivery part under bio-m5-b02b, after its plant part.",
+        "prerequisiteRouteIds": ["bio-m5-b01"],
+        "entryKnowledge": "An organism can produce offspring; a cell can begin new growth; asexual reproduction does not involve reproductive cells joining. Supply a brief spoken reminder in context. No mitosis, meiosis or chromosome-set knowledge is assumed.",
+        "start": "A recognisable mouldy bread surface, then an identified Rhizopus stolonifer illustration linked to it.",
+        "stop": "Explain hyphae, spores in a sporangium, release and movement, and germination into new hyphae under suitable conditions. Explain why the illustrated production route is asexual. Do not infer the reproductive route from the final spore alone.",
+        "nextCandidateId": "bio-m5-b02b-fungi-yeast-budding"
+      },
+      {
+        "candidateId": "bio-m5-b02b-fungi-yeast-budding",
+        "title": "How one yeast cell makes another",
+        "placement": "Second focused fungi part within bio-m5-b02b, before that entry's bacterial part.",
+        "prerequisiteRouteIds": ["bio-m5-b01"],
+        "start": "A recognisable microscope view or grounded illustration of named baker's yeast, Saccharomyces cerevisiae, including a small bud.",
+        "stop": "Explain that an outgrowth enlarges, receives copied inherited information and separates as a daughter cell. Explain asexual production in the shown budding event without teaching nuclear-division stages.",
+        "futureAuthoringConstraint": "Do not animate detailed chromosome movement or use mitosis as an unexplained label. Nuclear division is scientifically retained in author notes and revisited after bio-m5-b05a.",
+        "next": "Bacterial binary fission, then named protist mechanisms, as existing bio-m5-b02b delivery parts. Existing canonical next links bio-m5-b03a and bio-m5-b03b remain intact."
+      },
+      {
+        "candidateId": "bio-m5-b02b-fungi-sexual-cycle",
+        "title": "Why a fungal spore is not always asexual",
+        "placement": "Proposed later companion revisiting the fungal example after the cell-division route. This is not a new adopted canonical route entry.",
+        "prerequisiteRouteIds": ["bio-m5-b04", "bio-m5-b05a", "bio-m5-b05b"],
+        "verifiedPrerequisiteChain": "bio-m5-b04: DNA structure and semi-conservative replication, source Biology-Y12-M5-L6. Then bio-m5-b05a: mitosis, source Biology-Y12-M5-L7. Then bio-m5-b05b: meiosis, source Biology-Y12-M5-L8. These are actual route identities, not inferred lesson numbers.",
+        "entryKnowledge": "Copied chromosomes, what mitosis retains, what meiosis reduces, chromosome sets and reproductive fusion.",
+        "start": "An illustrated named fungal sexual pathway contrasted with the previously explained sporangial route.",
+        "stop": "Connect compatible fusion, nuclear fusion, chromosome-set changes and meiosis to spore formation in a named model. Haploid/diploid belong here after prerequisite support.",
+        "next": "Return to existing bio-m5-b05b next links bio-m5-b06a and bio-m5-b08 according to their own prerequisites. Do not insert this companion as a blocker for the introductory organism-group route."
+      }
+    ]
+  },
+  "teaching": {
+    "mainQuestion": "How can bread mould start growing on another piece of bread?",
+    "learnerAction": "Trace the visible structure that produces spores, explain how spores can move to a new food surface, and explain how a landed spore can establish new fungal growth.",
+    "structure": "Causal mechanism followed by an unseen spatial application. Observation of an existing mould colony comes before microscopic vocabulary or reproductive classification.",
+    "entryCheck": "Recall in one sentence that reproduction produces new individuals. The picture establishes that this is a fungus on bread, not a seed or a flowering plant.",
+    "termsNeededNow": [
+      {"term": "hypha", "meaning": "one thin fungal thread", "plural": "hyphae"},
+      {"term": "sporangium", "meaning": "the rounded structure where these spores form"},
+      {"term": "spore", "meaning": "a reproductive cell that can begin new fungal growth"},
+      {"term": "germination", "meaning": "beginning to grow"}
+    ],
+    "termsDeferred": ["sporangiophore", "mycelium", "mitosis", "meiosis", "haploid", "diploid", "plasmogamy", "karyogamy"],
+    "qualificationPlacement": "After explaining the particular sporangial production route and naming it asexual, add a short spoken boundary: Rhizopus also has a sexual route, so a spore alone does not tell us the complete story. Do not open with the qualification or teach that later cycle now.",
+    "copyNotes": [
+      "Hyphae are the thin threads of the fungus.",
+      "A sporangium produces spores that can move to new places.",
+      "A spore can begin new hyphae when conditions are suitable."
+    ],
+    "copyHold": "A separate quiet notes scene follows the reasoning and feedback. Leave deliberate copying time and invite pausing; set the final hold after real narration and device review, not a universal item or duration quota."
+  },
+  "visualDirection": {
+    "establishingImage": "A premium photographic or painted mouldy bread image with recognisable bread texture and fungal growth. If the image is not an identified culture, caption it as context; do not claim an arbitrary mould patch is Rhizopus from appearance alone.",
+    "mechanismImage": "A scientifically grounded Rhizopus stolonifer illustration: branching hyphae at the food surface, root-like anchoring/feeding structures, upright stalks and rounded sporangia containing spores. Maintain a coherent whole-colony view before selecting detail. Verify against identified source micrographs and labelled structures before recording.",
+    "assetStatus": "Missing. No locally verified fungal raster has been selected. New illustration or licensed identified imagery is required; this proposal does not relabel a text node as a visual or treat generated anatomy as verified.",
+    "existingReuse": "Reuse the painted editorial staging and stable labels demonstrated in src/prototypes/DesignDirections.tsx, the one-current-focus approach, existing fonts and restrained leader/reveal primitives. MicrobesDiagram may supply bounded anatomy references after independent science inspection, but do not reuse its combined-organism layout, looping bursts or broad closing claim unchanged.",
+    "doNotUse": "No one-node flow substitute, whole-screen definitions, fungi styled as flowers, generic coloured balls, invented mitotic chromosome motion or implied instantaneous colony growth.",
+    "motionRule": "One coherent illustration supplies orientation. Show a selected sporangium opening and spores leaving only if those events are actually represented by source-backed staged art or a coded anatomical overlay. A finished raster can be highlighted or cropped; it must not be described as showing growth. Germination requires a separate accurate stage image or a clearly marked process model. Mature and newly growing states must not silently swap identities.",
+    "captionAndReadingRule": "Reserve the lower caption region. Use one short current sentence and only labels needed to locate the narrated structures. Labels settle and remain fixed. Keep all question conditions and demands present during the attempt; reveal no mechanism answer in that hold."
+  },
+  "scenes": [
+    {
+      "id": "mould-bread-question",
+      "purpose": "Recognisable problem before vocabulary",
+      "narration": "You may have seen a fuzzy patch spreading across old bread. That patch is a fungus. But how could it start growing on another piece of bread without the two pieces touching? Let’s follow one example, a bread mould called Rhizopus stolonifer.",
+      "visualBrief": "Bread and mould fill the main area, with the learner question in clear negative space. Cut to an identified named-organism illustration linked to the colony. No definition list or sexual/asexual badge.",
+      "visualReuseDecision": "New relevant bread context and named mould anatomy; reuse editorial art framing.",
+      "purposefulCue": "At 'another piece', reveal a second separated bread surface without a travel arrow. At the organism's name, establish the labelled model.",
+      "hold": "Brief question-reading hold; this opening question is explained by the lesson rather than an assessed response."
+    },
+    {
+      "id": "mould-growing-threads",
+      "purpose": "Connect the visible patch to the organism's body",
+      "narration": "Close up, the mould is made of thin branching threads. One thread is called a hypha; several are hyphae. These threads grow over and into the bread. The fungus gets nutrients from the bread, which support its growth. The fuzzy patch is a growing fungal body, rather than a pile of loose spores.",
+      "visualBrief": "Whole fungal colony, then one anchored magnified region where threads meet bread. Label 'Hyphae: fungal threads'. Keep enough bread to explain location. Do not introduce mycelium, septa or chromosome structures.",
+      "visualReuseDecision": "New verified anatomical illustration; retain same colony identity.",
+      "purposefulCue": "Magnify at 'thin branching threads'; highlight the food contact at 'nutrients from the bread'.",
+      "hold": "Stable view while the causal food-to-growth sentence is spoken."
+    },
+    {
+      "id": "mould-spores-in-head",
+      "purpose": "Locate the structure that produces reproductive cells",
+      "narration": "Some threads form upright stalks with rounded heads. Inside a head, the fungus produces many tiny reproductive cells called spores. A spore can begin new fungal growth. The rounded structure where these spores form is called a sporangium. So the sporangium makes the spores; the spores are the cells that can begin a new fungus.",
+      "visualBrief": "First show the stalk in its colony, then select one sporangium and a consistent cutaway detail containing spores. Two physical labels: 'Sporangium' and 'Spores'. The contained cells must be visibly distinct from the enclosing structure.",
+      "visualReuseDecision": "New source-checked cutaway, not a flow node.",
+      "purposefulCue": "Select the head at 'rounded heads', then reveal the inside detail at 'Inside'. Name the term after the plain explanation.",
+      "hold": "Allow the structure/cell distinction to settle before release."
+    },
+    {
+      "id": "mould-release-and-arrival",
+      "purpose": "Explain travel before growth",
+      "narration": "When the sporangium matures, its wall breaks down and spores can be released. Air movement can carry them away from the parent mould. This allows a spore to reach another food surface, even when no fungal thread joins the two places. Arriving is only the first step. The spore still needs conditions that allow it to grow.",
+      "visualBrief": "Source-backed release stage, then a selected spore on a separated bread surface. Keep the earlier colony as useful orientation, not repeated paragraphs. A few illustrated spores indicate movement rather than measured particle counts.",
+      "visualReuseDecision": "New separate release/arrival states; existing leader/reveal code may direct attention.",
+      "purposefulCue": "Release at 'wall breaks down', movement at 'Air movement', stable arrival at 'first step'.",
+      "hold": "Hold the landed spore before presenting germination; no immediate mature colony jump."
+    },
+    {
+      "id": "mould-new-growth",
+      "purpose": "Explain why a landed spore may establish a new fungal body",
+      "narration": "On suitable food, with enough moisture and a suitable temperature, the spore can begin to grow. We call that germination. A thin thread grows out from the spore, then branches to build a new fungal body. In the production route we have shown, the parent mould made the spores without reproductive cells joining. That is asexual reproduction. Rhizopus also has a sexual route, so finding a spore on its own would not tell us how it was produced.",
+      "visualBrief": "Accurate germinating spore with an emerging thread, followed by a small branching colony. Bring in 'Germination: beginning to grow' after its plain meaning. State the asexual conclusion only after the sequence. A final short boundary sentence replaces the earlier detail; no sexual-cycle diagram now.",
+      "visualReuseDecision": "New anatomical stage artwork or reviewed model. Same bread and spore identity across states.",
+      "purposefulCue": "Conditions stay available while the thread emerges. Name germination after the causal growth condition. Classification arrives at its spoken sentence, not during an earlier attempt.",
+      "hold": "Stable completed sequence with only the current small colony and needed food/moisture condition."
+    },
+    {
+      "id": "mould-try-separated-bread",
+      "purpose": "Unseen spatial application without classification words supplied as the answer",
+      "narration": "Here is a new situation. Piece A has a mature Rhizopus colony. Piece B starts as sterile, moist bread. The pieces do not touch, but they share moving air. Both are kept at a temperature suitable for this mould. Explain how mould from A could establish a new colony on B. Include how it could travel and what would grow after it arrives. Take a moment to work through that sequence.",
+      "stimulusAndAllConditions": [
+        "A: mature Rhizopus colony",
+        "B: initially sterile, moist bread",
+        "Pieces do not touch; no connecting fungal threads",
+        "Shared moving air; suitable temperature for Rhizopus"
+      ],
+      "questionDemands": ["Explain how mould from A could reach B.", "Explain what would grow after arrival."],
+      "visualBrief": "A new bread arrangement with clear A/B labels and the full conditions. A has intact mature sporangia; B has no pictured colony. No travel arrows, released-spore answer animation, mitosis/no-fusion label, worked sequence, prior notes or answer captions during the attempt.",
+      "visualReuseDecision": "Adjust existing named anatomy in a new scenario rather than generic text boxes.",
+      "responseProtection": "Separate prompt speech, silent thinking hold and feedback scenes. Set hold and earliest answer boundary from new recorded speech and assembled silence; estimates cannot establish audio safety. Optional pause supports longer responses.",
+      "hold": "Retain the picture, every necessary supplied condition and both demands throughout the answer-free opportunity."
+    },
+    {
+      "id": "mould-feedback-separated-bread",
+      "purpose": "Reason through travel and establishment in separate stages",
+      "narration": "The bread pieces do not need to touch. Mature sporangia on A can release spores, and moving air can carry some towards B. If a spore lands on B, the moist bread supplies water and nutrients. At the stated suitable temperature, it can germinate: a fungal thread begins to grow, then branches into a new colony. The possibility depends on a spore arriving and growing. Sharing air does not guarantee that every piece of bread will develop mould.",
+      "feedbackStages": [
+        {"currentReason": "Spores travel in air", "referenceFacts": ["A has mature sporangia", "Shared moving air", "No thread connection"]},
+        {"currentReason": "A landed spore can begin new threads", "referenceFacts": ["B is moist food", "Temperature is suitable", "A spore has arrived"]}
+      ],
+      "visualBrief": "Keep A/B orientation. Reveal release and travel first, then clear its explanatory text and select a landed spore on B. Show germination as a separate accurate state, retaining only relevant conditions. Do not leave a cumulative answer-history column.",
+      "visualReuseDecision": "Reuse the established anatomical stages with feedback-specific selection.",
+      "purposefulCue": "Match each new current stage to the spoken reason, then give a short completed-case reading hold.",
+      "hold": "No copying request while new reasoning is spoken."
+    },
+    {
+      "id": "mould-handoff-and-notes",
+      "purpose": "Useful essentials and honest next boundary",
+      "narration": "We have followed how this bread mould can start a new colony using spores. Another fungus, baker’s yeast, can make a new cell as a small bud. That is our next example. If you would like notes, the next screen has the essentials. You can pause to write them down.",
+      "visualBrief": "Brief return to the named mould illustration. Then a separate quiet notes hold with the three already explained essentials from teaching.copyNotes. No yeast mechanism crowded beside the mould; the next video establishes its own recognisable cell.",
+      "visualReuseDecision": "Reuse current colony art and calm editorial notes framing.",
+      "purposefulCue": "Clear mechanism labels before notes. All note lines stay fixed, without narrated new reasoning.",
+      "hold": "Deliberate quiet reading/copy hold; pause invitation remains available."
+    }
+  ],
+  "immediateMouldPilot": {
+    "status": "short focused draft ready for visual prototyping, not recording approval",
+    "candidateId": "bio-m5-b02b-fungi-mould",
+    "canonicalDeliveryPart": "Fungi delivery part of bio-m5-b02b. These narrower mould/yeast uploads remain within that part and B-fungi; no canonical IDs change.",
+    "scope": "One recognisable Rhizopus bread-mould illustration, one reproductive route, about 70 to 90 seconds provisionally. Demonstrate physical fungal structure and causal growth before expanding the full lesson. Do not include yeast, meiosis, chromosome sets or the full practice question in this first visual pilot.",
+    "narration": "This bread has a fuzzy patch of mould. How could it start growing on another piece of bread? Let’s follow a bread mould called Rhizopus. Close up, its body is made of thin branching threads called hyphae. They grow over and into the bread, taking up nutrients that support growth. Some threads form upright stalks with rounded heads. Inside a head, the fungus makes spores: tiny reproductive cells that can begin new fungal growth. The head is called a sporangium. When its wall breaks down, spores can escape. Moving air can carry them to another piece of bread. If a spore finds enough moisture, food and a suitable temperature, a thread can grow out from it and branch into a new fungal body. That beginning of growth is germination. The production route we have shown is asexual. Rhizopus also has a sexual route, so a spore alone does not identify how it was produced.",
+    "beats": [
+      {"order": 1, "spokenCue": "This bread has a fuzzy patch", "currentImage": "Recognisable mouldy bread, then the identified Rhizopus colony model", "displaySentence": "How can mould start growing on another piece of bread?", "labels": [], "motionPurpose": "Establish the food surface and fungal colony before magnification."},
+      {"order": 2, "spokenCue": "Close up", "currentImage": "Selected patch of branching fungal threads at the bread surface, with whole-colony orientation retained", "displaySentence": "The threads take up nutrients from the bread.", "labels": ["Hyphae: fungal threads"], "motionPurpose": "Select the actual threads and food contact. No cellular-division animation."},
+      {"order": 3, "spokenCue": "Some threads form upright stalks", "currentImage": "One upright stalk with intact rounded head, then anatomically verified inside view", "displaySentence": "Spores form inside a sporangium.", "labels": ["Sporangium", "Spores"], "motionPurpose": "Locate the enclosing structure, then distinguish the reproductive cells inside it."},
+      {"order": 4, "spokenCue": "When its wall breaks down", "currentImage": "Reviewed release state and air transport to separated bread", "displaySentence": "Moving air can carry spores to another place.", "labels": ["Released spores"], "motionPurpose": "Explain travel between disconnected food surfaces. If only a finished raster is available, show distinct reviewed states rather than pretending it animates release."},
+      {"order": 5, "spokenCue": "If a spore finds", "currentImage": "A landed spore and an accurate emerging fungal thread", "displaySentence": "A spore can begin new growth when conditions are suitable.", "labels": ["Germination: beginning to grow"], "requiredReferenceFacts": ["Moisture", "Food", "Suitable temperature"], "motionPurpose": "Show one current growth stage with the conditions beside it; do not jump from arrival straight to a mature colony."},
+      {"order": 6, "spokenCue": "The production route we have shown", "currentImage": "Stable small new fungal colony on bread, retaining its connection to the explained route", "displaySentence": "This route is asexual reproduction.", "labels": [], "motionPurpose": "Hold the conclusion after its mechanism. Spoken final boundary prevents generalising all spores as asexual without introducing the sexual-cycle diagram."}
+    ],
+    "optionalQuietNotes": ["Hyphae are fungal threads.", "Sporangia produce spores.", "A spore can begin new threads in suitable conditions."],
+    "buildBoundary": "Silent staged visual direction review first, with draft speech available outside the player. New anatomy must be checked and human visual preference obtained. Paid narration and fixed cue timing are not authorised by this draft. No safety demonstration or learner culturing task is requested."
+  },
+  "primarySources": [
+    {
+      "url": "https://www.bio.utexas.edu/courses/bio206/FungalReprod.pdf",
+      "kind": "University-authored laboratory teaching resource",
+      "checked": "2026-10-11",
+      "supports": "Named Rhizopus illustration and threads, stalks, sporangia, wall breakdown, airborne spores, and new hyphae under suitable conditions, particularly page 4.",
+      "limit": "Use the named morphology and mechanism. Do not import its outdated higher-level classification or broad introductory taxonomy claims. Do not copy its images without establishing reuse rights."
+    },
+    {
+      "url": "https://www-archiv.fdm.uni-hamburg.de/b-online/library/webb/BOT201/Myxomycota/Zygomycota.htm",
+      "kind": "Original university botany laboratory resource, preserved archive",
+      "checked": "2026-10-11",
+      "supports": "Rhizopus stolonifer sporangia on upright stalks, contained sporangiospores and a distinct sexual pathway.",
+      "limit": "Selected named structural observations only; not its historical classification or primitive-organism framing."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC285585/",
+      "kind": "Original microscopy study, Van Etten, Bulla and St Julian, 1974",
+      "checked": "2026-10-11",
+      "supports": "Rhizopus stolonifer spores examined at successive germination stages using electron and phase-contrast microscopy.",
+      "limit": "Supports real germination anatomy; no experimental rate, universal temperature or growth guarantee is claimed. Reference images need separate rights and anatomy review."
+    },
+    {
+      "url": "https://wiki.yeastgenome.org/index.php/What_are_yeast%3F",
+      "kind": "Saccharomyces Genome Database, species research resource",
+      "checked": "Parent source notes accessed 2026-10-10; fresh search 2026-10-11 confirmed resource, full page retrieval failed",
+      "supports": "Follow-on named baker's yeast budding candidate, subject to fresh source inspection before its full script is selected.",
+      "limit": "No complete budding script or source-review pass is asserted here."
+    }
+  ],
+  "unresolvedBeforeSelection": [
+    "Root adopts or adjusts the delivery split without treating proposed candidate IDs as new canonical entries.",
+    "Independent science and beginning-Year-12 teaching review of the exact draft narration and task.",
+    "Select actual fungal imagery, verify named anatomy, image rights and scale/context labels.",
+    "Check new spoken vocabulary and specific culture conditions without adding unnecessary cell-division terms.",
+    "Build a short visual pilot and obtain human appearance feedback before expanding the full lesson.",
+    "Fresh narration, alignment, protected response assembly, captions, exact voiced review and human listening are all pending.",
+    "Budding remains necessary for B-fungi; the mould introduction does not complete that action or claim module coverage."
+  ]
+}

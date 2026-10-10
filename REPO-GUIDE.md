@@ -10,6 +10,7 @@ Pipeline: lesson JSON → scene types → slide and diagram components → Eleve
 
 ## State of play (the important part)
 
+- 11 October update: the owner rejected the overnight plant, fungi and pressure designs. Their older previews are historical and held from release. The current board's `designReset` links three short silent replacement pilots and exact remaining gates. The mutable morning desk foregrounds those pilots. Seed/runner and mould/yeast now have separate delivery boundaries in the canonical Module 5 route. A silent sample or technical pass does not approve a full lesson.
 - 308 lesson scripts exist (`src/data/`): Biology 159, Chemistry 149, Year 11 M1 to Year 12 M8.
 - Only about 9 have a reviewed script. 299 are `source-present-unreviewed`.
 - 6 videos are public on YouTube: Part A, molar mass and the four approved calculation lessons. Superseded limiting revisions remain unlisted. Preferred enzymes revision ZTxQP7kI5_o is owner-approved but held by one unavailable historical source dependency. See the current board and publication queue.

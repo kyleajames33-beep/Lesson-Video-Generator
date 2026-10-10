@@ -23,6 +23,13 @@ beat, which earlier results are used next and which text is cleared. Check
 that a student can follow the spoken reason while reading the current
 screen. Native fit alone does not establish a manageable reading load.
 
+Record whether a misconception scene is needed and why; omission is valid.
+Review the actual visual quality and learner explanation alongside geometry.
+For a biological mechanism, identify the organism and show the relevant
+structure and change. Do not substitute a text box for the process or condense
+the explanation into unexplained abstract nouns. A new style first needs a
+short, representative visual pilot before repeating it across a batch.
+
 Keep the current reasoning and only its necessary reference facts visible.
 Do not keep a full lesson's paragraphs, earlier answers or dense copy notes
 beside a new explanation. Key notes should condense already explained
@@ -40,12 +47,14 @@ node scripts/check-production-brief.mjs init path/to/lesson.json
 
 This creates `path/to/lesson.production-brief.json`. `--output=path/to/brief.json` selects another workspace location. Existing files are never overwritten. `prepare-lesson.mjs` also creates a pending companion if absent; its default draft stage remains usable. It exports preparation material, not paid speech.
 
-The scaffold provides the exact source path/hash, research references and one row per scene. Fill `teaching`, `scenes` and `progression`. New version-two briefs require the course-plan path, prerequisite knowledge, starting point, stopping boundary and next lesson before recording. Missing boundaries block recording/export checks. Existing version-one historical briefs retain their earlier contract; do not rewrite frozen historical evidence just to adopt a new scaffold. A visual reference may say “no separate artwork; existing worked board” when that is the deliberate choice. All three review records start pending:
+The scaffold provides the exact source path/hash, research references and one row per scene. Fill `teaching`, `scenes` and `progression`. New version-three briefs require the course-plan path, prerequisite knowledge, starting point, stopping boundary and next lesson before recording, plus the separate learning reviews described below. Missing boundaries block recording/export checks. Existing version-one and version-two historical briefs retain their earlier contract; do not rewrite frozen historical evidence just to adopt a new scaffold. New rewritten selections use the current scaffold. A visual reference may say “no separate artwork; existing worked board” when that is the deliberate choice. Review records start pending:
 
 ```json
 {
   "scriptReview": {"status": "pending", "reviewer": "", "evidence": null},
+  "studentLearningReview": {"status": "pending", "reviewer": "", "evidence": null},
   "voicedPreview": {
+    "studentLearningReview": {"status": "pending", "reviewer": "", "evidence": null},
     "status": "pending",
     "reviewer": "",
     "mode": "",
@@ -62,6 +71,8 @@ The scaffold provides the exact source path/hash, research references and one ro
 ```
 
 A passing review needs a named reviewer and an evidence object with workspace-relative `path` and the file's full SHA-256. Write what was actually inspected, exact scenes/range, delivery or visual findings, fixes and unresolved limits. Do not set pass to satisfy the command. Source inspection and still images can support script/layout findings; they cannot establish voiced motion or human listening.
+
+Use an independent [student learning reviewer](student-learning-review.md) alongside accuracy review. `studentLearningReview` must pass before recording; `voicedPreview.studentLearningReview` must pass before full export. Review from the stated beginner knowledge, explain causes, protect real thinking opportunities and identify what the visual medium teaches. Evaluate a useful memory anchor or mnemonic when relevant, without forcing one. Resolve concrete confusing sentences and cues rather than adding reviewer caveats. These machine checks require declared evidence; they cannot judge understanding or establish real learner success.
 
 ## Stages and honest checks
 

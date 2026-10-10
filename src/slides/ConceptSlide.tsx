@@ -23,6 +23,7 @@ import {ConceptText} from './shared/ConceptText';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
 import {AssetImg} from './shared/AssetImg';
+import {CalculationProblem, FocusedWorking} from './shared/OrganisedCalculation';
 
 type ConceptSlideProps = {
 	scene: TextScene;
@@ -46,6 +47,14 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 	// Text-only concepts get the full width and larger type instead of
 	// leaving the right half of the frame empty.
 	const wide = !hasVisual;
+	if (scene.reasoningPresentation) {
+		const delays = (rd as {stepAts?: number[]}).stepAts ?? [];
+		return <SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			<SlideChrome lesson={lesson} topic="CORE IDEA" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<CalculationProblem presentation={scene.reasoningPresentation} eyebrow="CORE IDEA" delay={rd.heading ?? 12} />
+			<FocusedWorking presentation={scene.reasoningPresentation} delays={delays} />
+		</SlideFrame>;
+	}
 	if (scene.conceptVisualLayout === 'diagramBoard' && scene.diagram) {
 		return <ConceptDiagramBoard scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
 	}
