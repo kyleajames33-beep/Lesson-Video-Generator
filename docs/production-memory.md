@@ -2,6 +2,12 @@
 
 ## 10 October: review hierarchy at the actual player size
 
+- The teacher accepted the clearer Chemistry layout with `yep looks better`.
+  Exact selected source/component and approval scope are recorded in
+  `docs/production/user-chemistry-clear-layout-feedback-2026-10-10.json`.
+  Use its layout as the reference for these graphs. It was a silent preview,
+  so narration listening and later release gates remain separate.
+
 - An uncropped native frame is not sufficient evidence of clarity. Check the
   selected graph or worked example at a viewing size comparable with the
   teacher's screenshot. Similar large bold type everywhere makes every item
