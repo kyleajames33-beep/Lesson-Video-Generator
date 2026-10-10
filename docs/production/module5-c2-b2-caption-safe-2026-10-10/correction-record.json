@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "status": "author-caption-layout-correction-pending-independent-review-and-native-playback",
+  "originalRuntimeCheckpoint": "40fa283",
+  "preservedRuntime": "out/checks/module5-voiced-v2-transfer-2026-10-10",
+  "finding": {
+    "observer": "Root",
+    "scope": "Actual selected B2 v2 worked pilot browser playback, captions with controls visible",
+    "detail": "Native caption region at approximately y898 overlapped the lower active result. This is the reported playback finding, not a new author observation."
+  },
+  "sourceFiles": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "75c820485134597e0ed672efc2bac92562d7d4360b6c683fe480679b789dd627",
+      "priorSha256": "6145826ab8aeb8ae285c15a69f52a13109dfef1fb9c97488220136526254329b"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "b49db7dea55ef52c2f48469e007383ab5624e92198c7d5f091471dbfe9837720",
+      "priorSha256": "b1becf6b04e2b90341b2b35dafc9b99e3407d01967e844c5664556c1f0adbca9"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2",
+      "priorSha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+    }
+  ],
+  "geometry": {
+    "units": "1920 by1080 source pixels",
+    "captionReserveStartsAt": 850,
+    "estimatesOnly": true,
+    "workingTop": {
+      "default": 680,
+      "optIn": 600
+    },
+    "workingVerticalPadding": {
+      "default": 18,
+      "optIn": 14
+    },
+    "stageLabelGap": {
+      "default": 16,
+      "optIn": 12
+    },
+    "givenCardVerticalPadding": {
+      "default": 16,
+      "optIn": 12
+    },
+    "unchangedHeaderTop": 142,
+    "unchangedGivensTop": 330,
+    "unchangedNotePaddingTop": 12,
+    "unchangedFonts": {
+      "task": 62,
+      "equation": 52,
+      "givenLabel": 58,
+      "givenValue": 54,
+      "referenceAndNote": 52,
+      "stageLabel": 48,
+      "result": 58,
+      "trail": 44,
+      "pauseInstruction": 42
+    },
+    "estimatedTwoSingleLineResultCardBottom": 842.32,
+    "estimatedC2GivensWithReferencesAndSingleLineNoteBottom": 587.3,
+    "estimatedB2GivensAndSingleLineNoteBottom": 511.5,
+    "selectedCountdown": {
+      "left": 1296,
+      "right": 64,
+      "bottom": 312,
+      "top": 600,
+      "height": 168
+    },
+    "selectedPauseInstruction": {
+      "left": 634,
+      "right": 64,
+      "bottom": 240,
+      "unrotatedBottom": 840
+    },
+    "constraints": "Estimates assume no wrapped stage label or result line, single-line notes and current selected given rows. Native font bounds, entry motion, caption placement with controls visible and small-player playback still need verification. No clipping or hidden overflow substitutes for review."
+  },
+  "packages": [
+    {
+      "key": "c2",
+      "parent": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+        "sha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/production-brief.json",
+        "sha256": "de03cc3606cef52ccfbcd0e9d4db96c2c7f39534aa51f9e1321d27507971f08d"
+      },
+      "parentPilotConfig": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/pilot-config.json",
+        "sha256": "c8840784937911c440db5395666a3be1c97d87b973ba6d870193f9425ee66a14"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+        "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+      },
+      "props": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v3.json",
+        "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+      },
+      "optedScenes": [
+        "c2-transfer"
+      ],
+      "frameRange": [
+        8631,
+        9289
+      ],
+      "exactInvariant": "Delete only captionSafeWorking from the v3 presentation objects to recover the exact v2 lesson object. All media provenance verifies."
+    },
+    {
+      "key": "b2",
+      "parent": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v2.lesson.json",
+        "sha256": "f4f0bf6ac5fd414d00e8e53aa19b0859b9d97d18752455a3ffaf03eb11917b49"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/production-brief.json",
+        "sha256": "5cb744b79127e8a89f070e2571e85b0066b2ab2b5132f3767e03a757a34ee23b"
+      },
+      "parentPilotConfig": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/pilot-config.json",
+        "sha256": "64fa58995179344917d0e6764dfc3fd772771065f982d904bdb1caf843874e0d"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+        "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+      },
+      "props": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v3.json",
+        "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+      },
+      "optedScenes": [
+        "worked-example",
+        "quick-check"
+      ],
+      "frameRange": [
+        8464,
+        8937
+      ],
+      "exactInvariant": "Delete only captionSafeWorking from the v3 presentation objects to recover the exact v2 lesson object. All media provenance verifies."
+    }
+  ],
+  "invariants": {
+    "narrationMediaCaptionsCuesAndDurationsUnchanged": true,
+    "onlySelectedSourceFlagAdded": true,
+    "priorFilesBytePreserved": true,
+    "noPaidVoiceOrExport": true
+  },
+  "limitation": "Author source and geometry estimates only. V3 independent source review, exact voiced preview, native caption/control clearance and human listening remain pending.",
+  "preservedFiles": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "2c8426e90d7763d2e61fb34aca401a94fb42eb979cadb9d01ff90da6542e72a8"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "6ec7d43a03d32ff02ca50df56da046385ecf0a7152143f028e2a1641d7d34267"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "1f27d4cb94bbf0773629680f0d33fc6a96434f7ebebc83c95302509300ba2b0f"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.srt",
+      "sha256": "e4d62270fd572bbf3173610355c5fc4614d67116cc20b1bc9d7f220ff8aceaff"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.vtt",
+      "sha256": "95d682f79c01dff658e7240c0abcfec2061875b30c77435df16479e4f9a57590"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "68a69277f041d60281369572e4f670d37e22ece12ab000706d638324bd103a90"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "7019df979071b2f87ab4e492d4619190dff5db7a48be5e8708c68c895cb91a40"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "b402dbab0e32c953a3dd764bef47b46c59910c3227d3cf66b28a1184448adeef"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "f88f4aa07a616d8209765380e170028ab0d3385a48f60516f39860e8e10282d4"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "515db1ccca5c0bffaac79ff680cf5d50153c30ad0944ef86061dec54cf1a5732"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "72d5f9b3c2e205b1c78bf147f0aab197f0880d92e8c39268cf373651b66bb6c6"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "f4f0bf6ac5fd414d00e8e53aa19b0859b9d97d18752455a3ffaf03eb11917b49"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "3217ae473f9929986e853804766ab4d1a6f20067f360052e979b1b1e2e4d0dc0"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/production-brief-v2.json",
+      "sha256": "93acb2e6ea45185ca90ea50508731d2905d19df1909a79c94a0242c1b271410b"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "08aba4de4505b46eed58cf18b58891d7a1f319935d4b74c3b0d0328f39122f37"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "c94cf938483c2764a46943f9b2800747024be88042f2b6e749e8da9b74a41e08"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/v2-order-correction.json",
+      "sha256": "73a38bbe4efa2056f5baf7af8eeb125efb254f574af7957a25c02e0ce563dfe5"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/pilot-config.json",
+      "sha256": "64fa58995179344917d0e6764dfc3fd772771065f982d904bdb1caf843874e0d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/production-brief.json",
+      "sha256": "5cb744b79127e8a89f070e2571e85b0066b2ab2b5132f3767e03a757a34ee23b"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/pilot-config.json",
+      "sha256": "c8840784937911c440db5395666a3be1c97d87b973ba6d870193f9425ee66a14"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/production-brief.json",
+      "sha256": "de03cc3606cef52ccfbcd0e9d4db96c2c7f39534aa51f9e1321d27507971f08d"
+    }
+  ]
+}

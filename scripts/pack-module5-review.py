@@ -7,7 +7,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--wave', choices=['initial', 'visual-v2', 'selected-c2-b2', 'voiced-c2-b2', 'full-empirical', 'full-mole'], default='initial')
+parser.add_argument('--wave', choices=['initial', 'visual-v2', 'selected-c2-b2', 'voiced-c2-b2', 'caption-safe', 'full-empirical', 'full-mole'], default='initial')
 args = parser.parse_args()
 record_path = ROOT / 'docs/production/computer-transfer-2026-10-09.json'
 record = json.loads(record_path.read_text(encoding='utf-8'))
@@ -31,6 +31,10 @@ elif args.wave == 'full-empirical':
     name = 'calculation-full-empirical-media-2026-10-10.zip'
     directories = ['calculation-full-2026-10-10/empirical-formulas/full-render-02']
     scope = 'Completed empirical full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export is unreviewed for public release.'
+elif args.wave == 'caption-safe':
+    name = 'module5-c2-b2-caption-safe-media-2026-10-10.zip'
+    directories = ['module5-voiced-pilots-2026-10-10/c2/transfer-pilot-02', 'module5-voiced-pilots-2026-10-10/b2/worked-pilot-02', 'module5-caption-safe-native-2026-10-10']
+    scope = 'Additive caption-safe C2/B2 v3 sources/props, native frame evidence and two short voiced pilot packages. Reuses frozen narration from the earlier voiced archive. Full visual playback, human listening and public release remain pending.'
 else:
     name = 'calculation-full-mole-media-2026-10-10.zip'
     directories = ['calculation-full-2026-10-10/mole-ratios/full-render-01']
@@ -62,6 +66,14 @@ if args.wave == 'voiced-c2-b2':
     for directory in audio_directories:
         files.extend(item for item in directory.iterdir() if item.is_file() and item.suffix in {'.wav', '.mp3', '.json'})
 files = sorted(set(files))
+if args.wave == 'caption-safe':
+    for key in ['c2', 'b2']:
+        for name in ['narrated-v3.lesson.json', 'remotion-props-v3.json']:
+            file = ROOT / f'out/prototypes/module5-{key}-voiced-2026-10-10' / name
+            if not file.is_file():
+                raise RuntimeError('Missing caption-safe selected source: ' + str(file))
+            files.append(file)
+    files = sorted(set(files))
 entries = [{'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size,
             'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]
 with zipfile.ZipFile(output, 'x', zipfile.ZIP_DEFLATED, compresslevel=1) as archive:

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "selectedRevision": "v3",
+  "sourceReview": "docs/production/module5-c2-b2-caption-safe-review-2026-10-10.md",
+  "sourceReviewSha256": "a3deb207a325f038883b6959bcc9b928bc7563c8efbb865110ef4ed248676cdd",
+  "nativeFrames": [
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "localFrame": 1400,
+      "globalFrame": 8709,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/c2-c2-transfer-1400.png",
+      "sha256": "7211ef81b705a22cf971ce5aa9146429536f0718484a5900c62639a5f81c24a2",
+      "sourcePath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "localFrame": 1909,
+      "globalFrame": 9218,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/c2-c2-transfer-1909.png",
+      "sha256": "9563ddb60eafbf9578e8befbd72dc37adb29869161e00d99034a7ea69656a5f5",
+      "sourcePath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    },
+    {
+      "key": "c2",
+      "sceneId": "c2-transfer",
+      "localFrame": 2500,
+      "globalFrame": 9809,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/c2-c2-transfer-2500.png",
+      "sha256": "c44bb5eb47be744f0fedf8afc78ac2754b7fbdb8fce031698256a79543a25f08",
+      "sourcePath": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "localFrame": 1000,
+      "globalFrame": 11044,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/b2-quick-check-1000.png",
+      "sha256": "6a7514091f9c6cecf0e48c42067aedb6ee52fb7c64f82fb8f087d5000e1165fd",
+      "sourcePath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "localFrame": 1339,
+      "globalFrame": 11383,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/b2-quick-check-1339.png",
+      "sha256": "123269ea01559e6ff037e5144f47e03481db1b7809505dde70bce473f8a47a54",
+      "sourcePath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "localFrame": 1390,
+      "globalFrame": 11434,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/b2-quick-check-1390.png",
+      "sha256": "374d76feb5b649eb8929a408505e58711fa0498f5caebd88a4be00c32e4fbbf4",
+      "sourcePath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    },
+    {
+      "key": "b2",
+      "sceneId": "quick-check",
+      "localFrame": 2240,
+      "globalFrame": 12284,
+      "path": "out/prototypes/module5-caption-safe-native-2026-10-10/b2-quick-check-2240.png",
+      "sha256": "833019e0d40ce06319422efaab4017ea152eddc063e6190237e899b2275bbd8f",
+      "sourcePath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sourceSha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496",
+      "scope": "Native caption-safe selected state. No audio or continuous playback observation."
+    }
+  ],
+  "nativeObservations": {
+    "inspected": 7,
+    "scope": "All seven selected native states inspected at1920x1080. No task/value/body-line clipping or answer leakage in sampled holds. This is static evidence, separate from captions and continuous playback.",
+    "finding": "B2 final quick-check established-result trail wraps onto four lines. Its lower count line extends slightly below the conservative850px reserve target. Preserve v3 and tighten the selected trail spacing in an additive candidate before claiming whole-lesson caption clearance. The card background also extends below850; sampled active result text remains above that boundary.",
+    "unplayedStates": "Late C2 final-composition stage and B2 quick-check stages have native samples, but are outside the exported short clips. Their captions/motion clearance remains pending."
+  },
+  "pilotDependencies": "Both pilot02snapshots verified valid with no drift or missing files; three actual exported frames decoded and inspected.",
+  "browserObservations": {
+    "url": "http://127.0.0.1:8778/module5-voiced-review-2026-10-10/",
+    "scope": "Edge screenshot of B2 pilot02with controls and a visible caption shows the two active result lines separated from the caption area. No full continuous lesson-motion or human-listening pass.",
+    "limitation": "Read-only DOM position inspection timed out during this observation. Do not infer exact playback position from that attempt."
+  },
+  "humanListening": "pending",
+  "fullExport": "pending-exact-voiced-review-and-late-task-caption-followup",
+  "publicRelease": "pending"
+}

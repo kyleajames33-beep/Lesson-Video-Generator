@@ -384,6 +384,8 @@ export type TextScene = SceneBase & {
  * the scene's recorded step cues; summaries retain established results only. */
 export type CalculationPresentation = {
   layout?: 'module5Evidence';
+  /** Selected Module 5 boards reserve the lower player-caption region. */
+  captionSafeWorking?: boolean;
   task: string;
   equation?: string;
   givens: Array<{label: string; value: string; reference?: string}>;

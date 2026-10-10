@@ -15,6 +15,7 @@ export const Module5CalculationProblem = ({presentation, eyebrow, delay, prompt,
   prompt?: string; promptOpacity?: number;
 }) => {
   const theme = useAccent();
+  const captionSafe = presentation.captionSafeWorking === true;
   return <>
     <div data-calculation-header style={{position: 'absolute', top: 142, left: 64, right: 64}}>
       <Eyebrow color={TOK.inkDim}>{eyebrow}</Eyebrow>
@@ -26,7 +27,7 @@ export const Module5CalculationProblem = ({presentation, eyebrow, delay, prompt,
     <div data-calculation-givens style={{position: 'absolute', top: 330, left: 64, right: 64}}>
       <FadeUp delay={delay} durationFrames={16} dy={16}>
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 24}}>
-          {presentation.givens.map(given => <div key={given.label} data-calculation-given style={{padding: '16px 24px', border: `1px solid ${TOK.rule}`, borderLeft: `5px solid ${theme.accent}`, background: TOK.card}}>
+          {presentation.givens.map(given => <div key={given.label} data-calculation-given style={{padding: captionSafe ? '12px 24px' : '16px 24px', border: `1px solid ${TOK.rule}`, borderLeft: `5px solid ${theme.accent}`, background: TOK.card}}>
             <div style={{display: 'flex', gap: 24, alignItems: 'baseline', justifyContent: 'space-between', fontSize: 58, lineHeight: 1.15}}>
               <span style={{fontWeight: 650}}>{given.label}</span><span style={{fontFamily: FONT_MONO, fontSize: 54, fontWeight: 600, whiteSpace: 'nowrap'}}>{given.value}</span>
             </div>
@@ -48,6 +49,7 @@ export const Module5FocusedWorking = ({presentation, delays, earliestFrame = 0}:
 }) => {
   const frame = useCurrentFrame();
   const theme = useAccent();
+  const captionSafe = presentation.captionSafeWorking === true;
   if (delays.length !== presentation.stages.length) throw new Error('Module 5 stages must match the authored step cues.');
   const cues = delays.map(delay => Math.max(earliestFrame, delay));
   const activeIndex = cues.reduce((index, cue, i) => frame >= cue ? i : index, -1);
@@ -55,9 +57,9 @@ export const Module5FocusedWorking = ({presentation, delays, earliestFrame = 0}:
   const active = presentation.stages[activeIndex];
   const opacity = interpolate(frame, [cues[activeIndex], cues[activeIndex] + 16], [0, 1], clamp);
   const isFinal = activeIndex === presentation.stages.length - 1;
-  return <div data-calculation-working style={{position: 'absolute', top: 680, left: 64, right: 64, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 560px', gap: 30}}>
-    <div data-calculation-active={activeIndex} style={{opacity, padding: '18px 24px', background: TOK.card, border: `1px solid ${TOK.rule}`, borderTop: `5px solid ${isFinal ? TOK.amber : theme.accent}`}}>
-      <div data-calculation-stage-label style={{fontSize: 48, lineHeight: 1.12, fontWeight: 650, color: theme.accent, marginBottom: 16}}>{active.label}</div>
+  return <div data-calculation-working style={{position: 'absolute', top: captionSafe ? 600 : 680, left: 64, right: 64, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 560px', gap: 30}}>
+    <div data-calculation-active={activeIndex} style={{opacity, padding: captionSafe ? '14px 24px' : '18px 24px', background: TOK.card, border: `1px solid ${TOK.rule}`, borderTop: `5px solid ${isFinal ? TOK.amber : theme.accent}`}}>
+      <div data-calculation-stage-label style={{fontSize: 48, lineHeight: 1.12, fontWeight: 650, color: theme.accent, marginBottom: captionSafe ? 12 : 16}}>{active.label}</div>
       <div style={{display: 'grid', gap: 8}}>
         {active.lines.map((line, index) => {
           const lineCue = Math.max(cues[activeIndex], active.lineAts?.[index] ?? cues[activeIndex]);

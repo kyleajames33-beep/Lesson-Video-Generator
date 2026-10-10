@@ -412,11 +412,13 @@
     {
       "id": "c2-b2-fresh-narration-and-pilots",
       "agent": "/root",
-      "status": "complete-listening-tracks-two-short-pilots-playback-review-running",
+      "status": "v3-short-pilots-and-native-checks-complete-late-task-caption-review-pending",
       "scope": "Fresh generated narration, lossless assembly, measured v2 sources and short voiced previews. Public release remains gated.",
       "evidence": [
         "docs/production/module5-c2-b2-generation-2026-10-10.json",
-        "docs/production/module5-c2-b2-preview-briefs-2026-10-10/"
+        "docs/production/module5-c2-b2-preview-briefs-2026-10-10/",
+        "docs/production/module5-c2-b2-caption-safe-review-2026-10-10.md",
+        "docs/production/module5-c2-b2-caption-safe-observations-2026-10-10.json"
       ],
       "reviewUrl": "http://127.0.0.1:8778/module5-voiced-review-2026-10-10/"
     },
@@ -424,21 +426,25 @@
       "id": "chemistry-c3-preparation",
       "agent": "/root/chem_c2_selected_implementation",
       "model": "gpt-6.1-sol",
-      "status": "prepared-independent-review-running",
+      "status": "prepared-independent-review-complete-selected-implementation-pending",
       "scope": "Focused concentration/temperature lesson preparation. Pressure/volume and quantitative ICE work remain later lessons. No recording or coverage approval.",
       "ownedPaths": [
         "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c3.md"
       ],
-      "sourceSha256": "6e0da9cf486c5f9820783029d18459d7a1bd0ea7f5a24c92b664b929f8e1ffc7"
+      "sourceSha256": "6e0da9cf486c5f9820783029d18459d7a1bd0ea7f5a24c92b664b929f8e1ffc7",
+      "evidence": [
+        "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c3.md",
+        "docs/production/chemistry-c3-preparation-review-2026-10-10.md"
+      ]
     }
   ],
   "currentRelease": {
     "reviewUrl": "http://127.0.0.1:8778/calculation-batch-review-2026-10-10/",
     "sources": "docs/production/calculation-feedback-2026-10-10.json",
-    "status": "Presented calculation review approved. Empirical full export complete, later exports running in finite queue; exact full-package reviews remain pending.",
+    "status": "Presented calculation review approved. Three full calculation exports complete, limiting rendering; empirical/mole science passes recorded. Exact remaining full-package review scopes pending.",
     "userReviewEvidence": "docs/production/user-calculation-review-2026-10-10.json",
     "fullReviewUrl": "http://127.0.0.1:8778/calculation-full-review-2026-10-10/"
   },
-  "nextAction": "Complete B2 short voiced pilot and inspect both exact voiced clips. Preserve fresh media online, finish independent C3 preparation review and restore-check new checkpoint. Continue calculation queue and exact full-package review before public posting.",
+  "nextAction": "Preserve v3 and tighten selected B2 quick-check trail spacing in an additive candidate; review late C2/B2 voiced task states before full Module5 export. Continue finite calculation queue, back up later complete outputs, and finish exact package-scoped listening, motion, device and accessibility checks before public posting. Next unrecorded selected integrations are C3 concentration/temperature and plant reproduction.",
   "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution."
 }

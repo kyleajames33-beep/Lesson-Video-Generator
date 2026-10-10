@@ -1,22 +1,29 @@
-"""Rebuild the Module 5 review page from preserved listening records and v2 sources.
+"""Rebuild Module 5 review from preserved audio and verified v2 or selected v3.
 
 Writes only out/prototypes/module5-voiced-review-2026-10-10/index.html.
 Does not prepare, render or modify any media, captions or review records.
 """
 from hashlib import sha256
 from html import escape
+from copy import deepcopy
 import json
 from pathlib import Path
+import re
 from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPES = ROOT / 'out/prototypes'
 OUTPUT = PROTOTYPES / 'module5-voiced-review-2026-10-10/index.html'
+SELECTION = ROOT / 'docs/production/module5-c2-b2-caption-safe-2026-10-10/review-selection.json'
 PILOTS = {
     'c2': ('module5-voiced-pilots-2026-10-10/c2/transfer-pilot-01',
            'Short selected clip: equilibrium transfer response'),
     'b2': ('module5-voiced-pilots-2026-10-10/b2/worked-pilot-01',
            'Short selected clip: animal reproduction worked cases'),
+}
+V3_PILOTS = {
+    'c2': 'module5-voiced-pilots-2026-10-10/c2/transfer-pilot-02',
+    'b2': 'module5-voiced-pilots-2026-10-10/b2/worked-pilot-02',
 }
 
 
@@ -41,8 +48,44 @@ def duration(seconds):
     return f'{seconds // 60}:{seconds % 60:02d}'
 
 
-def pilot_section(key):
-    relative, title = PILOTS[key]
+def selection():
+    if not SELECTION.is_file():
+        return {}
+    data = read(SELECTION)
+    if (set(data) != {'schemaVersion', 'lessons'} or
+            type(data['schemaVersion']) is not int or data['schemaVersion'] != 1 or
+            not isinstance(data['lessons'], dict) or set(data['lessons']) != {'c2', 'b2'}):
+        raise ValueError('Unsupported Module 5 review selection schema')
+    for key, row in data['lessons'].items():
+        expected = f'out/prototypes/module5-{key}-voiced-2026-10-10/narrated-v3.lesson.json'
+        if (not isinstance(row, dict) or set(row) != {'source', 'sourceSha256', 'pilotDirectory'} or
+                row['source'] != expected or row['pilotDirectory'] != V3_PILOTS[key] or
+                not isinstance(row['sourceSha256'], str) or
+                not re.fullmatch('[0-9a-f]{64}', row['sourceSha256'])):
+            raise ValueError(f'Unsupported selected source or pilot path: {key}')
+    return data['lessons']
+
+
+def selected_lesson(key, v2, row):
+    source = ROOT / row['source']
+    if digest(source) != row['sourceSha256']:
+        raise ValueError(f'Selected v3 source changed: {source}')
+    current = read(source)
+    normalized = deepcopy(current)
+    for scene in normalized['scenes']:
+        presentation = scene.get('calculationPresentation')
+        if isinstance(presentation, dict) and 'captionSafeWorking' in presentation:
+            if presentation['captionSafeWorking'] is not True:
+                raise ValueError(f'Unexpected captionSafeWorking value: {key}/{scene["id"]}')
+            del presentation['captionSafeWorking']
+    if normalized != v2:
+        raise ValueError(f'Selected v3 differs beyond calculationPresentation.captionSafeWorking: {key}')
+    return current
+
+
+def pilot_section(key, selected=None):
+    default_relative, title = PILOTS[key]
+    relative = selected['pilotDirectory'] if selected else default_relative
     directory = PROTOTYPES / relative
     video = directory / 'video.mp4'
     if not video.is_file():
@@ -57,6 +100,15 @@ def pilot_section(key):
         raise ValueError(f'Expected one usable VTT caption track for {video}')
     record_path = directory / 'render-record.json'
     length = ''
+    if selected:
+        if not record_path.is_file():
+            raise ValueError(f'Selected pilot has no completed render record: {video}')
+        snapshot = read(directory / 'inputs.snapshot.json')
+        source_entries = [entry for entry in snapshot['files']
+                          if entry['path'] == selected['source'] and 'lesson' in entry.get('roles', [])]
+        if (snapshot['options']['lessonPath'] != selected['source'] or len(source_entries) != 1 or
+                source_entries[0]['sha256'] != selected['sourceSha256']):
+            raise ValueError(f'Selected pilot does not bind the exact v3 source: {video}')
     if record_path.is_file():
         record = read(record_path)
         if digest(video) != record['videoSha256']:
@@ -74,7 +126,7 @@ Your browser does not support video playback. <a href="{e(url(video))}">Open the
 </video><p><a href="{e(url(video))}">Open video</a> · <a href="{e(url(captions))}">Clip captions</a></p></div>''', True
 
 
-def lesson_section(key):
+def lesson_section(key, selected=None):
     record_path = OUTPUT.parent / f'{key}.listening-record.json'
     record = read(record_path)
     expected = f'out/prototypes/module5-{key}-voiced-2026-10-10/narrated-v2.lesson.json'
@@ -90,14 +142,17 @@ def lesson_section(key):
             raise ValueError(f'Preserved listening file changed: {path}')
         files[path.suffix] = path
     lesson = read(source)
+    if selected:
+        lesson = selected_lesson(key, lesson, selected)
     script = []
     for scene in lesson['scenes']:
         text = scene.get('voiceover', {}).get('text')
         if text:
             heading = scene.get('heading') or scene.get('caption') or scene['id']
             script.append(f'<section class="scene"><h4>{e(heading)}</h4><p>{e(text)}</p></section>')
-    pilot, present = pilot_section(key)
-    return f'''<article id="{e(key)}" data-source-sha256="{e(record['sourceSha256'])}">
+    pilot, present = pilot_section(key, selected)
+    display_hash = selected['sourceSha256'] if selected else record['sourceSha256']
+    return f'''<article id="{e(key)}" data-source-sha256="{e(display_hash)}" data-narration-source-sha256="{e(record['sourceSha256'])}">
 <h2>{e(record['title'])}</h2>
 <h3>Complete narration ({duration(record['durationSeconds'])})</h3>
 <audio controls preload="metadata"><source src="{e(url(files['.m4a']))}" type="audio/mp4">
@@ -110,10 +165,11 @@ Your browser does not support audio playback. <a href="{e(url(files['.m4a']))}">
 
 
 def build():
+    selected = selection()
     sections = []
     pilot_status = {}
     for key in ('c2', 'b2'):
-        section, present = lesson_section(key)
+        section, present = lesson_section(key, selected.get(key))
         sections.append(section)
         pilot_status[key] = present
     html = '''<!doctype html><html lang="en-AU"><head><meta charset="utf-8">
@@ -138,7 +194,8 @@ details{padding:16px 0;border-top:1px solid #ddd;margin-top:24px}summary{cursor:
         raise ValueError('Em dash in selected page copy')
     OUTPUT.write_text(html, encoding='utf-8')
     print(json.dumps({'page': OUTPUT.relative_to(ROOT).as_posix(),
-                      'sha256': digest(OUTPUT), 'pilotsAvailable': pilot_status}, indent=2))
+                      'sha256': digest(OUTPUT), 'pilotsAvailable': pilot_status,
+                      'selectedRevision': 'v3' if selected else 'v2'}, indent=2))
 
 
 if __name__ == '__main__':

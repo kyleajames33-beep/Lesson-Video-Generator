@@ -1,0 +1,124 @@
+{
+  "status": "author-caption-layout-correction-pending-independent-review-and-native-playback",
+  "outputs": [
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/correction-record.json",
+      "sha256": "36b111530bcf6acb6df9fbbea1267b67add7a8a0cfc389c8c32fb1fb5952fe75"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v3.json",
+      "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/production-brief.json",
+      "sha256": "00f4275001ba815932f66180b349a236cf481f923c3353e278889f902851e6c2"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/pilot-config.json",
+      "sha256": "2b0bdd76672116677c29cb88bf3d44466581e037e7002f861de8771544123dca"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v3.json",
+      "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/production-brief.json",
+      "sha256": "1f835f90c4a2b6a2321143822a24adb6aa8bfddeb25ae7fdda9383143950643e"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/pilot-config.json",
+      "sha256": "76031269d0fe08e14858e3cf5afba325b870ca2d7e547d40f574ed011241b49a"
+    }
+  ],
+  "packages": [
+    {
+      "key": "c2",
+      "parent": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+        "sha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/production-brief.json",
+        "sha256": "de03cc3606cef52ccfbcd0e9d4db96c2c7f39534aa51f9e1321d27507971f08d"
+      },
+      "parentPilotConfig": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/c2/pilot-config.json",
+        "sha256": "c8840784937911c440db5395666a3be1c97d87b973ba6d870193f9425ee66a14"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+        "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+      },
+      "props": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v3.json",
+        "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+      },
+      "optedScenes": [
+        "c2-transfer"
+      ],
+      "frameRange": [
+        8631,
+        9289
+      ],
+      "exactInvariant": "Delete only captionSafeWorking from the v3 presentation objects to recover the exact v2 lesson object. All media provenance verifies."
+    },
+    {
+      "key": "b2",
+      "parent": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v2.lesson.json",
+        "sha256": "f4f0bf6ac5fd414d00e8e53aa19b0859b9d97d18752455a3ffaf03eb11917b49"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/production-brief.json",
+        "sha256": "5cb744b79127e8a89f070e2571e85b0066b2ab2b5132f3767e03a757a34ee23b"
+      },
+      "parentPilotConfig": {
+        "path": "docs/production/module5-c2-b2-preview-briefs-2026-10-10/b2/pilot-config.json",
+        "sha256": "64fa58995179344917d0e6764dfc3fd772771065f982d904bdb1caf843874e0d"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+        "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+      },
+      "props": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v3.json",
+        "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+      },
+      "optedScenes": [
+        "worked-example",
+        "quick-check"
+      ],
+      "frameRange": [
+        8464,
+        8937
+      ],
+      "exactInvariant": "Delete only captionSafeWorking from the v3 presentation objects to recover the exact v2 lesson object. All media provenance verifies."
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "75c820485134597e0ed672efc2bac92562d7d4360b6c683fe480679b789dd627",
+      "priorSha256": "6145826ab8aeb8ae285c15a69f52a13109dfef1fb9c97488220136526254329b"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "b49db7dea55ef52c2f48469e007383ab5624e92198c7d5f091471dbfe9837720",
+      "priorSha256": "b1becf6b04e2b90341b2b35dafc9b99e3407d01967e844c5664556c1f0adbca9"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2",
+      "priorSha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+    }
+  ]
+}
+

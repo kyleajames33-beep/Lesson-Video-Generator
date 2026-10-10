@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "runtimePath": "out/checks/module5-voiced-v2-transfer-2026-10-10",
+  "runtimeCommit": "af390e9",
+  "restoredArchives": [
+    {
+      "archive": "module5-c2-b2-selected-media-2026-10-10.zip",
+      "verifiedMembers": 84,
+      "archivedMembers": 86
+    },
+    {
+      "archive": "module5-c2-b2-voiced-media-2026-10-10.zip",
+      "verifiedMembers": 436,
+      "archivedMembers": 436
+    }
+  ],
+  "packageVerification": "Both voiced pilot release snapshots verified valid with no missing dependencies or drift after exact review-server byte preservation.",
+  "tests": {
+    "timelineNarration": 6,
+    "productionBrief": 12,
+    "courseChecklist": "pass",
+    "courseLedger": "pass"
+  },
+  "uiObservations": {
+    "url": "http://127.0.0.1:8778/module5-voiced-review-2026-10-10/",
+    "browser": "Edge",
+    "scope": "Short pilot playback starts, reaches end, shows captions and1920x1080 media; selected native decoded frames inspected. This is not human listening or continuous whole-lesson review.",
+    "finding": "While browser controls are visible, default captions can overlap the lower Biology worked-result line. Selected additive caption-safe v3 is being prepared; full export remains blocked pending exact voiced review."
+  },
+  "humanListening": "pending",
+  "publicRelease": "pending"
+}

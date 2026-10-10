@@ -36,8 +36,8 @@
       }
     ],
     "releaseId": 407764183,
-    "verifiedAt": "2026-10-10T02:17:47.959024+00:00",
-    "verification": "All eleven immutable assets have matching uploaded state, size and digest; eight additive continuations are present.",
+    "verifiedAt": "2026-10-10T02:44:29.910996+00:00",
+    "verification": "All fourteen immutable assets uploaded; thirteen archive/part size and digest checks match expected values, plus unchanged original checksum asset. Eleven additive continuations are present.",
     "publishedAt": "2026-10-09T10:28:37Z"
   },
   "continuations": [
@@ -106,7 +106,7 @@
       "status": "published-verified",
       "scope": "Additive C2/B2 selected silent native and narrow still evidence, preserved diagnostic states and current production/full-export reading pages. No new recordings or completed full videos in this checkpoint.",
       "verifiedAt": "2026-10-10T01:54:28.143708+00:00",
-      "verification": "Uploaded state, size and SHA256 match CRC/member-hash verified immutable archive. Restore validation pending current commit.",
+      "verification": "Uploaded state, size and SHA256 match locally verified immutable archive. All 84 scientific/evidence files restored and member hashes verified; two rebuildable HTML pages explicitly skipped.",
       "restoreNote": "Use --skip-rebuildable-pages to retain older production HTML, then rebuild current pages from tracked scripts. All scientific frame evidence restores normally."
     },
     {
@@ -124,16 +124,30 @@
       "bytes": 449612974,
       "sha256": "465f496fe82572950b0688d5aff56d74c0f6f47601145e1caf07157ab6eb48da",
       "files": 436,
-      "status": "prepared-upload-pending",
-      "scope": "Fresh C2/B2 raw Simon v4 takes, sidecars, lossless assemblies, preserved v1 and corrected v2 measured candidates, complete listening tracks and two short voiced pilot packages. Human listening and complete visual playback/release approval remain pending."
+      "status": "published-verified",
+      "scope": "Fresh C2/B2 raw Simon v4 takes, sidecars, lossless assemblies, preserved v1 and corrected v2 measured candidates, complete listening tracks and two short voiced pilot packages. Human listening and complete visual playback/release approval remain pending.",
+      "verifiedAt": "2026-10-10T02:31:48.982397+00:00",
+      "verification": "GitHub API uploaded state, size and SHA256 match locally CRC/member-hash verified immutable archive. All 436 members restored and both voiced pilot dependency snapshots verified in isolated byte-preserved checkout af390e9."
     },
     {
       "name": "calculation-full-mole-media-2026-10-10.zip",
       "bytes": 145407346,
       "sha256": "dc1091fa4d4eb7bc0ae379a4c9b7465e7d55b3b9596446796165365840d48a21",
       "files": 11,
-      "status": "prepared-upload-pending",
-      "scope": "Completed mole-ratios full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export is unreviewed for public release."
+      "status": "published-verified",
+      "scope": "Completed mole-ratios full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export is unreviewed for public release.",
+      "verifiedAt": "2026-10-10T02:31:48.982418+00:00",
+      "verification": "GitHub API uploaded state, size and SHA256 match locally CRC/member-hash verified immutable archive."
+    },
+    {
+      "name": "module5-c2-b2-caption-safe-media-2026-10-10.zip",
+      "bytes": 12665481,
+      "sha256": "5ba2eb2d82a088a54f9e4d10fbe991ca3b6f114a82426649ef7a2152bf8291f4",
+      "files": 38,
+      "status": "published-verified",
+      "scope": "Additive caption-safe C2/B2 v3 sources/props, native frame evidence and two short voiced pilot packages. Reuses frozen narration from the earlier voiced archive. Full visual playback, human listening and public release remain pending.",
+      "verifiedAt": "2026-10-10T02:44:29.910968+00:00",
+      "verification": "GitHub API uploaded state,12665481-byte size and SHA256 match CRC/member-hash verified immutable archive. New v3 checkout restore validation pending."
     }
   ]
 }

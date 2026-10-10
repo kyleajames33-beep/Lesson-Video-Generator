@@ -41,6 +41,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 	const answerProgress = interpolate(frame, [timing.fadeStart, timing.fadeEnd], [0, 1], clamp);
 	const pauseOpacity = interpolate(frame, [timing.pauseFadeStart, timing.pauseFadeEnd], [1, 0], clamp);
 	if (scene.calculationPresentation) {
+		const captionSafeWorking = scene.calculationPresentation.layout === 'module5Evidence' && scene.calculationPresentation.captionSafeWorking === true;
 		if (scene.calculationPresentation.stages.length !== scene.answerSteps.length) throw new Error('Quick check presentation needs one stage per answer step.');
 		const ats = (rd as {stepAts?: number[]}).stepAts;
 		const delays = scene.answerSteps.map((_, i) => Math.max(answerStart, ats?.[i] ?? answerStart + 16 + i * 68));
@@ -48,8 +49,8 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 			<SlideChrome lesson={lesson} topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 			<CalculationProblem presentation={scene.calculationPresentation} eyebrow="QUICK CHECK · TRY IT FIRST" delay={rd.heading ?? 24} prompt={scene.pausePrompt} promptOpacity={pauseOpacity} />
 			{answerProgress < 0.98 ? <>
-				<PauseCountdown startFrame={pauseStartFrame} endFrame={answerStart} fps={fps} durationSeconds={(answerStart - pauseStartFrame) / fps} opacity={pauseOpacity} focused />
-				<PauseInstruction opacity={pauseOpacity} focused />
+				<PauseCountdown startFrame={pauseStartFrame} endFrame={answerStart} fps={fps} durationSeconds={(answerStart - pauseStartFrame) / fps} opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
+				<PauseInstruction opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
 			</> : null}
 			<FocusedWorking presentation={scene.calculationPresentation} delays={delays} earliestFrame={answerStart} />
 		</SlideFrame>;
@@ -200,6 +201,7 @@ const PauseCountdown = ({
 	opacity,
 	durationSeconds,
 	focused = false,
+	captionSafeWorking = false,
 }: {
 	startFrame: number;
 	endFrame: number;
@@ -207,6 +209,7 @@ const PauseCountdown = ({
 	opacity: number;
 	durationSeconds: number;
 	focused?: boolean;
+	captionSafeWorking?: boolean;
 }) => {
 	const frame = useCurrentFrame();
 	if (frame < startFrame) return null;
@@ -231,9 +234,9 @@ const PauseCountdown = ({
 		<div
 			style={{
 				position: 'absolute',
-				left: focused ? 634 : 0,
+				left: focused ? (captionSafeWorking ? 1296 : 634) : 0,
 				right: focused ? 64 : 0,
-				bottom: 252,
+				bottom: focused && captionSafeWorking ? 312 : 252,
 				display: 'flex',
 				justifyContent: 'center',
 				pointerEvents: 'none',
@@ -281,13 +284,13 @@ const PauseCountdown = ({
 	);
 };
 
-const PauseInstruction = ({opacity, focused = false}: {opacity: number; focused?: boolean}) => (
+const PauseInstruction = ({opacity, focused = false, captionSafeWorking = false}: {opacity: number; focused?: boolean; captionSafeWorking?: boolean}) => (
 	<div
 		style={{
 			position: 'absolute',
 			left: focused ? 634 : 64,
 			right: 64,
-			bottom: 168,
+			bottom: focused && captionSafeWorking ? 240 : 168,
 			opacity,
 		}}
 	>

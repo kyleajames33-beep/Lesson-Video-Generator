@@ -28,15 +28,25 @@ python scripts/github-media-transfer.py download-continuation --continuation mod
 python scripts/transfer-workspace.py restore-media out/archives/module5-visual-v2-media-2026-10-10.zip
 python scripts/github-media-transfer.py download-continuation --continuation module5-c2-b2-selected-media-2026-10-10.zip
 python scripts/transfer-workspace.py restore-media out/archives/module5-c2-b2-selected-media-2026-10-10.zip --skip-rebuildable-pages
+python scripts/github-media-transfer.py download-continuation --continuation calculation-full-empirical-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-full-empirical-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation module5-c2-b2-voiced-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/module5-c2-b2-voiced-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-full-mole-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-full-mole-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation module5-c2-b2-caption-safe-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/module5-c2-b2-caption-safe-media-2026-10-10.zip
 python scripts/build-parallel-production-review.py
 python scripts/build-calculation-full-review.py
+python scripts/build-module5-course-plan.py
+python scripts/build-module5-voiced-review.py
 ```
 
 Sign in with `gh auth login` if the repository requires authentication. The downloader preserves matching existing parts and refuses conflicting files. It checks each part and the joined ZIP against the checked-in hashes. The subsequent restore checks individual contents.
 
 Alternatively, download both `.part01` and `.part02` assets from the release into `out/archives/`, then run `python scripts/github-media-transfer.py join` before the restore commands. A plain Git clone still does not download release assets automatically. Existing local copies of the complete ZIP remain valid.
 
-Both archive parts, the checksum file and all four additive continuation ZIPs have matching server-side sizes and SHA-256 digests. The archives also passed content verification and restore checks locally. The release was published on 9 October 2026; later continuations were added after their content checks. See the transfer record for the publication timestamp and hash evidence.
+Both archive parts, the checksum file and every continuation marked published-verified in the transfer record have matching server-side sizes and SHA-256 digests. The archives also passed content verification and restore checks locally. The release was published on 9 October 2026; later continuations were added after their content checks. See the transfer record for the publication timestamp and hash evidence.
 
 The first additive continuation restores the recorded empirical lesson and its verified pilots over the original handoff. The second, `calculation-batch-media-2026-10-09.zip`, adds mole-ratios and mass-to-mass recordings, measured sources and four short pilots, plus the combined review page. See [the current batch](calculation-review-batch-2026-10-09.md) for selected paths and remaining checks. Restore both continuations in the documented order. The helper verifies each full ZIP hash before restoration; use explicit names because its unnamed default selects the latest continuation. Future work needs a new dated snapshot; this release does not automatically synchronise ignored files.
 
@@ -49,3 +59,9 @@ The fifth continuation, `module5-parallel-review-media-2026-10-10.zip`, preserve
 The additive Module 5 v2 archive preserves 40 visual evidence/planning-page files. Rebuild the latest production desk with `python scripts/build-parallel-production-review.py` after restoration. The focused route and source drafts are tracked in Git.
 
 The selected C2/B2 archive preserves 86 ignored evidence/page files in a seventh additive continuation. Its two production HTML pages are reproducible and may differ from earlier checkpoints. The explicit `--skip-rebuildable-pages` option verifies those archived page hashes, preserves current local pages and restores the other 84 evidence files. Rebuild both pages with the tracked commands above. Conflict refusal still applies to all frame and scientific evidence files. This checkpoint contains no new narration or completed full exports.
+
+Fresh narration checkpoint: `module5-c2-b2-voiced-media-2026-10-10.zip` preserves 436 files including all 20 raw Simon v4 takes and sidecars, lossless assemblies, measured v1/v2 sources, full listening tracks and both short voiced pilot packages. The selected archive restored 84 evidence files after explicit HTML skipping; all 436 voiced archive members restored and matched hashes in `out/checks/module5-voiced-v2-transfer-2026-10-10`. Both exact pilot snapshots verified in the byte-preserved runtime at `af390e9`. The transfer helper's four isolated conflict/corruption cases also passed. See [the voiced checkpoint](module5-c2-b2-voiced-checkpoint-2026-10-10.json) and [skip validation](transfer-skip-validation-2026-10-10.json). Human listening and whole-lesson visual review remain pending. An observed captions-with-controls overlap is receiving an additive selected v3 fix; this archive preserves the earlier v2 evidence.
+
+Complete empirical and mole-ratios exports have separate immutable archives, leaving the accepted pilot/archive bytes unchanged. Full packages need their own release checks. Restoring these copies makes review media available, but verification against the original render dependencies uses the pinned calculation runtime at `5ff1e4a2851193d4bad26750145592c1ae97d4bf`. Do not imply that the current Module 5 renderer generated these older calculation packages.
+
+The caption-safe archive adds 38 v3 source/props, two short voiced pilot02 packages and native/decoded frame evidence files. It reuses the earlier frozen raw/assembled audio, so restore the voiced archive first. The live narration page is rebuilt from the current tracked selection, with unchanged full audio and the selected clip paths. Older archived page bytes are retained. Native and narrow evidence, controls-visible caption observation and human listening remain distinct; pending late-task/whole-lesson checks are not release approval.
