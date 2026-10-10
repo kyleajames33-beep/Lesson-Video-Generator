@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+    "lessonSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "reproduction connects generations; cells contain inherited information in DNA; gametes are reproductive cells; sexual reproduction involves fusion of gametes, while asexual reproduction does not. Basic root, stem and leaf vocabulary helps with a runner. `bio-m5-b01` is the canonical prerequisite. Its selected draft provides the fusion criterion and a strawberry runner example; it is support material, not a presumed public upload. The animal contribution `bio-m5-b02a` is preceding playlist context, but its internal/external classification and chromosome-set model are not prerequisites for the plant explanation.",
+    "startsWith": "one strawberry plant can produce a new plant from a runner. A self-compatible flowering plant can also supply both gametes in a sexual reproductive event. One visible parent does not settle the classification.",
+    "stopsAfter": "the learner can explain pollen transfer, pollen-tube delivery and sperm-egg fusion in the supplied flowering-plant model; distinguish zygote-to-embryo development from ovule-to-seed development; explain strawberry runner propagation without fusion; classify supplied self-fertilisation and cross-fertilisation cases by fusion; and predict why interrupting the delivery pathway can prevent fusion despite successful pollination. Conditions and later establishment remain distinct from classification.",
+    "nextLesson": "the fungi, bacteria and protists contributions to `bio-m5-b02b` remain to be prepared and reviewed. They need their own named mechanisms and organism limits. After those group contributions, the existing canonical route points to `bio-m5-b03a` for mammalian fertilisation, implantation, pregnancy and birth, and `bio-m5-b03b` for agricultural manipulation. This plant contribution does not justify skipping the missing groups. Root decides the final focused playlist subdivision."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/module5-beginner-next-selection-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Explain sexual flowering-plant delivery/fusion and named strawberry runner propagation; classify supplied events and predict a stopped-tube pathway.",
+    "causalExplanation": "Pollen transfer supplies the starting structure, tube growth provides sperm delivery, and sperm-egg fusion forms the zygote developing into an embryo. The ovule develops into seed containing that embryo. A rooted runner plant develops without fusion. Classification depends on this event mechanism; later establishment is a separate condition.",
+    "conversationalApproach": "All 11 accepted spoken blocks remain exact. First-use meanings and supplied reasons precede classification. Screen labels are short authored anchors, not textbook paragraphs or replacement captions. Append one optional unvoiced notes scene after the original spoken recap and handoff. No original spoken or displayed text, duration, cue, media or diagram property changes. Current assembly preserves every spoken word. Model phases, reasoning lines and recap rows now use selected take alignment; it supplies no listening approval.",
+    "openingDecision": "One visible parent can participate in a runner event or self-fertilisation; disclosed contrasting fusion mechanisms, not a protected attempt.",
+    "understandingCheck": "Complete unchanged prompt followed by a sample-exact12-second silent interval, frames1095..1455. Separate feedback mounts at the hold end under actual24-frame transition; captions absent in hold. Measured/source invariants only; actual playback and listening pending.",
+    "curriculumScope": "Current Biology (2017), Year 12 Module 5. Canonical bio-m5-b02b, plants delivery part 1 at canonical playlist position 3, contributes only B-plants. Official cached p1025/p1027 mapping retained, not full four-group action coverage. Fungi, bacteria, protists, practical conduct and agricultural evaluation remain open.",
+    "transitionCorrection": "The runtime uses constant 24-frame transitions. The first candidate ignored that overlap and could mount feedback in the last 24 planned response frames. This additive revision removes its unsupported property and unmeasured responseHold, and adds the separate non-hold transition tail. All accepted words remain unchanged.",
+    "quietNotes": "Four already-taught essentials consolidate delivery, embryo/seed distinction, transfer versus fusion and runner propagation. All four rows share cue zero; existing entrance animation still runs. Each first full stop is before character 80 and no colon precedes it, selecting large title with empty detail in SummarySlide.toTakeaway. No new explanation is narrated during copying. Author correction places the pollination/fertilisation distinction first, then delivery, embryo/seed and runners. Wording and all parent scenes are unchanged. Initial order evidence is historical in pre-order/.",
+    "notesTiming": "Measured current summary audio end 1064, incoming notes at summary-local 1124. 60 frames clear of new spoken reasoning. Notes450 frames; stable copying shorter due to entrance. Optional pause supported."
+  },
+  "scenes": [
+    {
+      "sceneId": "b3-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Silent plant-only identity; no four-group coverage implied.",
+      "narrationCue": "Silent title.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/HookSlide.tsx supplied comparison cards",
+      "teachingReason": "Disclosed runner/fusion contrast; no generic atom or unrelated animal backdrop.",
+      "narrationCue": "[]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-flower",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx, mode locations; opt-in full-width native diagram board",
+      "teachingReason": "Show the causal change or anatomical relationship as a large staged model. Keep the current explanation and its essential context, without a duplicate cumulative reading list. Prior proposal and review preserve the exact science/model limits.",
+      "narrationCue": "[{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.anther\",\"phrase\":\"The anther makes pollen\",\"characterIndex\":55,\"localFrame\":116},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.stigma\",\"phrase\":\"The stigma is the surface\",\"characterIndex\":80,\"localFrame\":176},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.pollenDetail\",\"phrase\":\"A pollen grain is not just a sperm cell\",\"characterIndex\":128,\"localFrame\":272},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.style\",\"phrase\":\"The style lies between\",\"characterIndex\":296,\"localFrame\":620},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.ovary\",\"phrase\":\"The ovary contains ovules\",\"characterIndex\":345,\"localFrame\":720},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.ovule\",\"phrase\":\"Inside an ovule\",\"characterIndex\":372,\"localFrame\":795},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.embryoSac\",\"phrase\":\"an embryo sac\",\"characterIndex\":391,\"localFrame\":831},{\"sceneId\":\"b3-flower\",\"field\":\"diagram.props.at.egg\",\"phrase\":\"containing the egg cell\",\"characterIndex\":406,\"localFrame\":870}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-delivery",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx, mode delivery; opt-in full-width native diagram board",
+      "teachingReason": "Show the causal change or anatomical relationship as a large staged model. Keep the current explanation and its essential context, without a duplicate cumulative reading list. Prior proposal and review preserve the exact science/model limits.",
+      "narrationCue": "[{\"sceneId\":\"b3-delivery\",\"field\":\"diagram.props.at.pollination\",\"phrase\":\"Pollination means transferring pollen\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-delivery\",\"field\":\"diagram.props.at.pollenTube\",\"phrase\":\"The pollen grain begins growing a pollen tube\",\"characterIndex\":176,\"localFrame\":356},{\"sceneId\":\"b3-delivery\",\"field\":\"diagram.props.at.spermDelivery\",\"phrase\":\"provides a route for sperm cells\",\"characterIndex\":350,\"localFrame\":704},{\"sceneId\":\"b3-delivery\",\"field\":\"diagram.props.at.fusion\",\"phrase\":\"A sperm cell then joins the egg cell\",\"characterIndex\":409,\"localFrame\":814},{\"sceneId\":\"b3-delivery\",\"field\":\"diagram.props.at.zygote\",\"phrase\":\"Their fusion forms a zygote\",\"characterIndex\":447,\"localFrame\":900}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-seed",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx, mode seed; opt-in full-width native diagram board",
+      "teachingReason": "Show the causal change or anatomical relationship as a large staged model. Keep the current explanation and its essential context, without a duplicate cumulative reading list. Prior proposal and review preserve the exact science/model limits.",
+      "narrationCue": "[{\"sceneId\":\"b3-seed\",\"field\":\"diagram.props.at.zygote\",\"phrase\":\"After that fusion\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-seed\",\"field\":\"diagram.props.at.embryo\",\"phrase\":\"develops into an embryo\",\"characterIndex\":42,\"localFrame\":86},{\"sceneId\":\"b3-seed\",\"field\":\"diagram.props.at.seed\",\"phrase\":\"The surrounding ovule develops into a seed\",\"characterIndex\":93,\"localFrame\":209},{\"sceneId\":\"b3-seed\",\"field\":\"diagram.props.at.fruit\",\"phrase\":\"The ovary usually develops into the fruit\",\"characterIndex\":281,\"localFrame\":622}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-runner",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx, mode runner; opt-in full-width native diagram board",
+      "teachingReason": "Show the causal change or anatomical relationship as a large staged model. Keep the current explanation and its essential context, without a duplicate cumulative reading list. Prior proposal and review preserve the exact science/model limits.",
+      "narrationCue": "[{\"sceneId\":\"b3-runner\",\"field\":\"diagram.props.at.runner\",\"phrase\":\"A strawberry runner is a stem\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-runner\",\"field\":\"diagram.props.at.node\",\"phrase\":\"A node is a point\",\"characterIndex\":63,\"localFrame\":128},{\"sceneId\":\"b3-runner\",\"field\":\"diagram.props.at.rootsShoot\",\"phrase\":\"roots and a shoot can develop\",\"characterIndex\":141,\"localFrame\":308},{\"sceneId\":\"b3-runner\",\"field\":\"diagram.props.at.noFusion\",\"phrase\":\"That builds the new plant without sperm and egg joining\",\"characterIndex\":312,\"localFrame\":668},{\"sceneId\":\"b3-runner\",\"field\":\"diagram.props.at.independent\",\"phrase\":\"A new rooted plant can become independent\",\"characterIndex\":681,\"localFrame\":1392}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-self-cross",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx, mode selfCross; opt-in full-width native diagram board",
+      "teachingReason": "Show the causal change or anatomical relationship as a large staged model. Keep the current explanation and its essential context, without a duplicate cumulative reading list. Prior proposal and review preserve the exact science/model limits.",
+      "narrationCue": "[{\"sceneId\":\"b3-self-cross\",\"field\":\"diagram.props.at.self\",\"phrase\":\"Self-pollination means\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-self-cross\",\"field\":\"diagram.props.at.cross\",\"phrase\":\"Cross-pollination means\",\"characterIndex\":92,\"localFrame\":195},{\"sceneId\":\"b3-self-cross\",\"field\":\"diagram.props.at.conditionalFusion\",\"phrase\":\"When compatible pollen leads to sperm joining an egg\",\"characterIndex\":287,\"localFrame\":561}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Animate the named event at its semantic cue; retain necessary reference/context, stable readable labels and y850 caption reserve. Source, native observations and continuous playback are separate review scopes.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-worked",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx and src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Focused context replaces each earlier case before its own classification cue. Supplied fusion reason precedes classification; no accumulated three-case paragraph trail.",
+      "narrationCue": "[{\"sceneId\":\"b3-worked\",\"field\":\"focusedContext.1.at\",\"phrase\":\"Second, a self-compatible\",\"characterIndex\":246,\"localFrame\":528},{\"sceneId\":\"b3-worked\",\"field\":\"focusedContext.2.at\",\"phrase\":\"Third, pollen comes\",\"characterIndex\":443,\"localFrame\":933},{\"sceneId\":\"b3-worked\",\"field\":\"stepAts.0\",\"phrase\":\"The prompt confirms there is no gamete fusion.\",\"characterIndex\":113,\"localFrame\":240},{\"sceneId\":\"b3-worked\",\"field\":\"stepAts.1\",\"phrase\":\"Fusion occurs, so that event is sexual\",\"characterIndex\":357,\"localFrame\":744},{\"sceneId\":\"b3-worked\",\"field\":\"stepAts.2\",\"phrase\":\"Fusion makes this event sexual too.\",\"characterIndex\":528,\"localFrame\":1098},{\"sceneId\":\"b3-worked\",\"field\":\"stages.0.lineAts.0\",\"phrase\":\"A new plant develops from the stem\",\"characterIndex\":160,\"localFrame\":339},{\"sceneId\":\"b3-worked\",\"field\":\"stages.0.lineAts.1\",\"phrase\":\"so that event is asexual vegetative propagation.\",\"characterIndex\":196,\"localFrame\":404},{\"sceneId\":\"b3-worked\",\"field\":\"calculationPresentation.stages.1.lineAts.0\",\"phrase\":\"Fusion occurs, so that event is sexual\",\"characterIndex\":357,\"localFrame\":744},{\"sceneId\":\"b3-worked\",\"field\":\"calculationPresentation.stages.2.lineAts.0\",\"phrase\":\"Fusion makes this event sexual too.\",\"characterIndex\":528,\"localFrame\":1098}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-conditions",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported conditions board",
+      "teachingReason": "Necessary conditions, sexual delivery constraints and later survival limits; no winner badge or made-up counts.",
+      "narrationCue": "[{\"sceneId\":\"b3-conditions\",\"field\":\"bullets.0.at\",\"phrase\":\"Suppose pollen transfer becomes limited\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-conditions\",\"field\":\"bullets.1.at\",\"phrase\":\"The sexual pathway can combine inherited information\",\"characterIndex\":245,\"localFrame\":466},{\"sceneId\":\"b3-conditions\",\"field\":\"bullets.2.at\",\"phrase\":\"Neither promises that the resulting plant will survive\",\"characterIndex\":442,\"localFrame\":848}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-check-prompt",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width stimulus board, separate prompt scene",
+      "teachingReason": "Five short supplied-condition bullets and both demands remain throughout the estimated attempt. Feedback is a separate scene, with an additional 24-frame non-hold transition tail keeping its actual runtime entrance at the estimated interval end. No completed-task countdown or measured silence claim.",
+      "narrationCue": "[{\"sceneId\":\"b3-check-prompt\",\"field\":\"revealDelays.callout\",\"phrase\":\"Pause here to work it through.\",\"characterIndex\":512,\"localFrame\":1042}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Complete unchanged prompt followed by a sample-exact12-second silent interval, frames1095..1455. Separate feedback mounts at the hold end under actual24-frame transition; captions absent in hold. Measured/source invariants only; actual playback and listening pending."
+    },
+    {
+      "sceneId": "b3-check-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx and src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "One active reason with relevant interrupted-delivery stimulus. Feedback is separate from the protected attempt; no accumulated answer trail.",
+      "narrationCue": "[{\"sceneId\":\"b3-check-feedback\",\"field\":\"stepAts.1\",\"phrase\":\"But the tubes stop\",\"characterIndex\":53,\"localFrame\":113},{\"sceneId\":\"b3-check-feedback\",\"field\":\"stepAts.2\",\"phrase\":\"Without that delivery\",\"characterIndex\":123,\"localFrame\":240},{\"sceneId\":\"b3-check-feedback\",\"field\":\"stepAts.3\",\"phrase\":\"The model also gives no basis\",\"characterIndex\":319,\"localFrame\":641},{\"sceneId\":\"b3-check-feedback\",\"field\":\"stages.0.lineAts.1\",\"phrase\":\"pollen reached the stigma.\",\"characterIndex\":26,\"localFrame\":59},{\"sceneId\":\"b3-check-feedback\",\"field\":\"stages.2.lineAts.1\",\"phrase\":\"No zygote forms\",\"characterIndex\":192,\"localFrame\":372},{\"sceneId\":\"b3-check-feedback\",\"field\":\"revealDelays.stepAts.0\",\"phrase\":\"Pollination has happened\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.0.lineAts.0\",\"phrase\":\"Pollination has happened\",\"characterIndex\":0,\"localFrame\":0},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.0.lineAts.1\",\"phrase\":\"pollen reached the stigma.\",\"characterIndex\":26,\"localFrame\":59},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.1.lineAts.0\",\"phrase\":\"But the tubes stop\",\"characterIndex\":53,\"localFrame\":113},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.1.lineAts.1\",\"phrase\":\"before delivering sperm\",\"characterIndex\":72,\"localFrame\":153},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.2.lineAts.0\",\"phrase\":\"Without that delivery\",\"characterIndex\":123,\"localFrame\":240},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.2.lineAts.1\",\"phrase\":\"No zygote forms\",\"characterIndex\":192,\"localFrame\":372},{\"sceneId\":\"b3-check-feedback\",\"field\":\"calculationPresentation.stages.3.lineAts.0\",\"phrase\":\"The model also gives no basis\",\"characterIndex\":319,\"localFrame\":641}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-summary",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Compact relationship anchors and explicit missing-group next handoff, with no full module/practical coverage claim.",
+      "narrationCue": "[{\"sceneId\":\"b3-summary\",\"field\":\"takeawayAts.0\",\"phrase\":\"In our sexual flowering-plant example\",\"characterIndex\":39,\"localFrame\":92},{\"sceneId\":\"b3-summary\",\"field\":\"takeawayAts.1\",\"phrase\":\"The ovule develops into a seed\",\"characterIndex\":156,\"localFrame\":329},{\"sceneId\":\"b3-summary\",\"field\":\"takeawayAts.2\",\"phrase\":\"A strawberry runner makes\",\"characterIndex\":211,\"localFrame\":442},{\"sceneId\":\"b3-summary\",\"field\":\"takeawayAts.3\",\"phrase\":\"Self-pollination and cross-pollination\",\"characterIndex\":272,\"localFrame\":562},{\"sceneId\":\"b3-summary\",\"field\":\"revealDelays.finalPrompt\",\"phrase\":\"The next contributions compare\",\"characterIndex\":441,\"localFrame\":915}] Selected take measured character alignment, ceil seconds*fps.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. Current semantic cues measured from selected speech; native and continuous voiced review pending.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Optional consolidation after explanation; short essentials already taught, no new mechanism or full four-group coverage.",
+      "narrationCue": "Silent. No voiceover or spoken captions.",
+      "motionPurpose": "Shared zero row cues use existing notes entrances, followed by stable reading. No sequential narration cues.",
+      "holdPurpose": "Measured current summary audio end 1064, incoming notes at summary-local 1124. 60 frames clear of new spoken reasoning. Notes450 frames; stable copying shorter due to entrance. Optional pause supported."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Fresh measured plant candidate. Existing words, library models and notes unchanged. Exact measured source review, actual voiced preview, human listening, export and public release remain pending.",
+  "visualIntegration": {
+    "status": "parent-evidence-preserved-new-notes-unreviewed",
+    "blockedScenes": [],
+    "implementation": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+    "review": {
+      "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.json",
+      "sha256": "515874f0d4c8058cfa89965c3ca9316c1e79b4915feadb2fcd2675c5c3344c6f"
+    },
+    "nativeScope": "Native-03 remaining modes plus final Native-04 delivery. Diagnostic history preserved.",
+    "pending": "New quiet notes need independent source and actual fit review. Parent native evidence applies only to unchanged parent scenes. All cues remain estimates; fresh alignment, continuous/narrow and voiced review pending."
+  }
+}

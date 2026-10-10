@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root",
+  "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+  "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+  "pageInputsSha256": "1710cda7017db0787bc1e69384a9847d307a08eb35c0067e42580b43cc7ac582",
+  "status": "bounded-UI-observations-only",
+  "environment": "Chrome desktop; Player sizing at 480 and 960 CSS pixels. No physical phone.",
+  "samples": [
+    {
+      "scene": "b3-delivery",
+      "playback": "Played approximately 1:28 to 1:50 with captions enabled and Player unmuted; route and current delivery stages executed.",
+      "observation": "Delivery model and current captions fit the inspected 480-pixel sample."
+    },
+    {
+      "scene": "b3-check-prompt to feedback",
+      "playback": "Started before response at approximately 6:39 and observed progressed feedback at approximately 7:17. Later paused at 6:51 before feedback.",
+      "observation": "Paused response retained five supplied conditions without an answer or caption. Transient native Player controls cover the bottom callout in this screenshot, so this is not a controls-hidden visibility pass."
+    },
+    {
+      "scene": "key-notes",
+      "playback": "Paused after scene entrance at approximately 8:02, 480 and 960 CSS-pixel samples.",
+      "observation": "Four book-note statements fit, no captions or cumulative worked-example list. The 960 viewport screenshot shows the text area, with the lower player outside the viewport."
+    }
+  ],
+  "images": [
+    {
+      "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-evidence/delivery-480.png",
+      "sha256": "c1d8bb16bd8298a01fdce5f5602c34c5a4396c7fb951301d8b485c1ff5ec8231"
+    },
+    {
+      "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-evidence/notes-480.png",
+      "sha256": "477d84d0f37ae0739ffdceb24f3967c86929b6de677d6432cc21cae8706743ec"
+    },
+    {
+      "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-evidence/notes-960.png",
+      "sha256": "73224c95e20cbee6a199b86bb659cc2eab87c2f904f3a110fde26720dc5e8925"
+    },
+    {
+      "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-evidence/response-hold-480.png",
+      "sha256": "e88f158d9e7b34f6f5e18e9d3a96125d75e284f827e463d5844134f1e856951d"
+    }
+  ],
+  "remaining": [
+    "Whole exact voiced viewing",
+    "Human listening",
+    "Controls-hidden response reading check",
+    "Export-stage brief and frozen inputs",
+    "Full export and complete package gate"
+  ]
+}

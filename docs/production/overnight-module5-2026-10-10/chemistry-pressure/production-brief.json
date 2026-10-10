@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+    "lessonSha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C3 immediate disturbance versus later response, equal opposing rates and fixed-temperature K; balanced gaseous coefficients and gas particles hitting walls. Entry check: does squeezing a mixture itself create product, or must product form by reaction? Expected: reaction makes product after compression. Support route: revisit C3 direct-change distinction and C2 equilibrium-rate board, availability subject to actual publication. Refresh coefficients and partial pressure in speech.",
+    "startsWith": "Established gas equilibrium, closed to reacting material, compressed at fixed temperature under the school ideal-gas model.",
+    "stopsAfter": "Predict compression/expansion from gaseous coefficients, equal-total no-shift case, and inert gas at fixed volume and temperature. No constant-pressure inert gas, Q/K calculations, industrial compromise, catalyst mechanism or practical conduct.",
+    "nextLesson": "C4B catalyst speed versus equilibrium composition under the same canonical chem-m5-c04 entry; then practical support p01/C5 expression construction."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json"
+  ],
+  "teaching": {
+    "task": "Predict fixed-temperature gas compression/expansion and distinguish an inert-gas pressure rise at fixed volume from compression.",
+    "causalExplanation": "Compression initially puts unchanged gas amounts into less space, increasing wall impact frequency and pressure. Net reaction toward fewer gaseous moles partly offsets that increase. Inert gas at fixed volume/T changes total pressure without changing reacting partial pressures. Coefficients represent stoichiometry, not an elementary rate law.",
+    "conversationalApproach": "Every accepted Part A spoken paragraph copied exactly from independently rechecked chemistry-c4.md. No new spoken metadata. K, inert gas and partial pressure have plain meanings. Display text is concise; captions must later faithfully follow fresh speech.",
+    "openingDecision": "Reuse the accepted rhetorical decision and piston/CPK visual vocabulary. Isolated schematic does not start a reaction while the piston moves.",
+    "understandingCheck": "Complete SO2/O2/SO3 gas equation, increased volume, fixed temperature and both demands remain visible throughout estimated local 360-720 response hold. Scene ends at 744 so feedback begins at 720 under actual 24-frame overlap. This estimated 12-second gap must be rebuilt using measured prompt audio.",
+    "curriculumScope": "C4A delivery part under chem-m5-c04, Chemistry Stage 6 (2017) Year 12 M5. Candidate subsets C-disturbances cached p1067-p1070 and C-collision-observations p1071. Collision account explains particle pressure, not complete chemical relaxation. Investigation/named examples/practical conduct and complete action coverage remain pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "c4a-opening",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate.tsx",
+      "teachingReason": "Reuse CPK N2/H2/NH3 atoms from library. Isolate piston from equation reasoning, keep all species identical during immediate squeeze. Fixed-volume inert contrast retains reacting amounts and occupied volume; argon is labelled and added without a piston movement.",
+      "narrationCue": "Accepted spoken words unchanged; estimated local frame cues require fresh speech alignment. Compression moves at 75-115, argon appears at 150, partial-pressure conclusion at 690.",
+      "motionPurpose": "Piston motion explains less available space with unchanged molecules. Inert scene adds labelled argon only; no composition change or unsupported chemical collision mechanism.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-compress",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate.tsx",
+      "teachingReason": "Reuse CPK N2/H2/NH3 atoms from library. Isolate piston from equation reasoning, keep all species identical during immediate squeeze. Fixed-volume inert contrast retains reacting amounts and occupied volume; argon is labelled and added without a piston movement.",
+      "narrationCue": "Accepted spoken words unchanged; estimated local frame cues require fresh speech alignment. Compression moves at 75-115, argon appears at 150, partial-pressure conclusion at 690.",
+      "motionPurpose": "Piston motion explains less available space with unchanged molecules. Inert scene adds labelled argon only; no composition change or unsupported chemical collision mechanism.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-reason",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx; candidate chem12m5Pressure / PressureDiagram.tsx (selected adjustment pending)",
+      "teachingReason": "Preserve accepted shared staged evidence or stable notes; only the current case and applicable equation/conditions remain.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Existing current-stage reveals direct attention; stable reasoning and notes remain still.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-contrast",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Preserve accepted shared staged evidence or stable notes; only the current case and applicable equation/conditions remain.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Existing current-stage reveals direct attention; stable reasoning and notes remain still.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-inert",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate.tsx",
+      "teachingReason": "Reuse CPK N2/H2/NH3 atoms from library. Isolate piston from equation reasoning, keep all species identical during immediate squeeze. Fixed-volume inert contrast retains reacting amounts and occupied volume; argon is labelled and added without a piston movement.",
+      "narrationCue": "Accepted spoken words unchanged; estimated local frame cues require fresh speech alignment. Compression moves at 75-115, argon appears at 150, partial-pressure conclusion at 690.",
+      "motionPurpose": "Piston motion explains less available space with unchanged molecules. Inert scene adds labelled argon only; no composition change or unsupported chemical collision mechanism.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-response",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate.tsx",
+      "teachingReason": "Native 480 inspection of inherited rendering showed condensed condition text. Selected docs-owned stable board keeps full-size note conditions and separates the response task from equation and supplied condition. No shared component change.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Stable whole-block labels and notes. No ambient glow, drift or animated answer during the thinking/copy hold.",
+      "holdPurpose": "Prompt-only 12-second estimated response interval local 360-720. 24-frame outgoing protection until duration744. No feedback visible before local720; future measured narration must preserve this."
+    },
+    {
+      "sceneId": "c4a-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx; src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Preserve accepted shared staged evidence or stable notes; only the current case and applicable equation/conditions remain.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. ",
+      "motionPurpose": "Existing current-stage reveals direct attention; stable reasoning and notes remain still.",
+      "holdPurpose": "Useful stable reading pause after current reason; actual voiced duration and caption clearance pending."
+    },
+    {
+      "sceneId": "c4a-key-notes",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate.tsx",
+      "teachingReason": "Native 480 inspection of inherited rendering showed condensed condition text. Selected docs-owned stable board keeps full-size note conditions and separates the response task from equation and supplied condition. No shared component change.",
+      "narrationCue": "Exact accepted text preserved. All current timing/reveal cues estimated at 2.25 words/s; replace from fresh selected recording/alignment. Copy invitation followed by provisional eight-second quiet tail.",
+      "motionPurpose": "Stable whole-block labels and notes. No ambient glow, drift or animated answer during the thinking/copy hold.",
+      "holdPurpose": "Quiet optional copying after invitation; actual readable hold and caption fit pending."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationReview": {
+    "status": "pass",
+    "reviewer": "Independent C4 scope/science reviewer",
+    "evidence": {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "sha256": "8c572dc214e3eb319e1fd882586f87963e98898f3b221016d400446aa7016558"
+    },
+    "limitation": "Corrected human-readable preparation only, SHA-256 f49c2fcee0e0559e7241a965788aaa0aab453780c110cc6e9f75d28e885e1325. Does not pass this selected JSON scriptReview."
+  },
+  "visualIntegration": {
+    "status": "author-integrated-independent-review-pending",
+    "selectedComponent": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate.tsx",
+    "blockedScenes": [],
+    "limitation": "Docs-owned Player and render component only. Shared LessonVideo does not select these visuals automatically. No paid voice or export."
+  },
+  "limitation": "Author-integrated silent candidate. Exact source, native stills and independent review remain distinct from voiced preview, listening and release.",
+  "integrationCorrections": {
+    "status": "source-recheck-pass",
+    "findings": [
+      "Protect the full response hold from the 24-frame outgoing transition overlap.",
+      "Omit summary finalPrompt to prevent FinalRuleCard ambient glow/border during quiet copying."
+    ],
+    "narrationChanged": false,
+    "limitation": "Structural source correction only. No audio, frame, continuous playback, listening or visual integration approval."
+  }
+}

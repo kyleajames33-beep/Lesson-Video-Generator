@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "Bounded unchanged science/source invariants and standalone staged prototype pass. Production-path integration and one student-copy cleanup remain; no blanket recording/export approval.",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+    "sha256": "48dd484812e97bbd2c8c72556b3ed74a74d3286f705f58d03921148bf40d34e2"
+  },
+  "parentSha256": "abe3dda53298a0963acc0a4f337562d72c4c591f2589f8c3b01a95f70e835443",
+  "briefSha256": "dac7308c85cd2ac817bc35402eabb5f9b81303d5bab027d50eeb3a70abac66f0",
+  "stagedRenderer": {
+    "path": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/FungiStagedVideo.tsx",
+    "sha256": "ba8cebf475732784e15c5dc3b62e6da50de63f5f79c1e4287229928dc9f43605"
+  },
+  "cuePlanSha256": "6ec5b0ec48dca41bcae6228c40f80588f5cb5666e0ac62f09ee0f2e534598e05",
+  "originalReport": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-independent-review.json",
+  "invariants": {
+    "allSpokenBlocksUnchanged": true,
+    "spokenBlockCount": 8,
+    "allSceneDurationsUnchanged": true,
+    "semanticStages": 28,
+    "uniqueSpokenTriggerPhrases": true,
+    "allStageCuesOrderedAndInSceneBounds": true,
+    "completeResponseDemandsVisible": [
+      {
+        "text": "A: bread mould. Mitosis forms spores; no fusion.",
+        "at": 0
+      },
+      {
+        "text": "B: yeast. Cells and nuclei fuse; meiosis forms spores.",
+        "at": 0
+      },
+      {
+        "text": "Classify each pathway as sexual or asexual. Give formation evidence.",
+        "at": 0
+      },
+      {
+        "text": "Explain why spore alone is insufficient.",
+        "at": 0
+      }
+    ],
+    "estimatedHold": {
+      "startFrame": 785,
+      "endFrame": 1145,
+      "status": "unmeasured estimate"
+    },
+    "feedbackMountLocal": 1145,
+    "outgoingTransitionFrames": 24,
+    "quietNotesUnvoiced": true,
+    "quietNotesFrames": 540
+  },
+  "standaloneAssessment": "FungiStagedVideo computes scene-local stage from the actual shared timeline and sends LessonVideo one current FlowDiagram node plus one anchor. Later nodes are absent and previous labels are replaced. Single-node labels restart an existing entrance at their authored local cue. Native samples show the requested stage only. Current response holds A/B and all classification/evidence/spore-explanation demands, without feedback; notes remain unchanged and fit at480. All stage cues are phrase estimates, not selected take alignment.",
+  "findings": [
+    {
+      "priority": "P1-production-integration-gate",
+      "type": "supported-renderer-mismatch",
+      "description": "The standalone wrapper consumes estimatedStages. src/dev/release-entry.tsx mounts LessonVideo directly; src/LessonVideo.tsx and its types have no estimatedStages consumer. scripts/render-release.mjs restricts full render to that release entry. The ordinary JSON-only production path would show initial static node/anchor props, not the independently inspected changing stages.",
+      "action": "Integrate the selected staged behavior into the supported LessonVideo path and bind the affected runtime/source evidence before paid narration or export. Recheck exact production scene/stage behavior and preserve old frozen runtimes.",
+      "scope": "Concrete production-path gate, not a science error or rejected standalone prototype."
+    },
+    {
+      "priority": "P2-student-copy-cleanup",
+      "type": "author-instruction-in-display",
+      "sceneId": "fungi-sexual",
+      "stage": 4,
+      "description": "Anchor Introduce the structure before counting sets. reads as an author instruction rather than an essential learner fact.",
+      "action": "Use a factual anchor such as A chromosome is a DNA-containing structure. Preserve spoken words, cue and layout; recheck that stage."
+    }
+  ],
+  "scienceAssessment": "Original named yeast budding, scoped Rhizopus mitotic spores, conditional yeast fusion/meiosis cycle and no universal fungal-life-cycle claims are unchanged. Prior independent science review remains applicable to unchanged speech. New anchors generally summarize its current stage; no new mechanism error found.",
+  "nativeEvidence": [
+    {
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-yeast-stage4-480.png",
+      "sha256": "b46ed7da07d87b6774abb62ed822e0495117f6cc8281e80e3ba49d8838ca4621",
+      "sceneId": "fungi-yeast",
+      "localFrame": 405,
+      "activeLabel": "The nucleus divides by mitosis"
+    },
+    {
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-mould-stage6-480.png",
+      "sha256": "0653cc172e0cc6579288c23c082098f45398ea65ce9bd9090b3f46383c150cac",
+      "sceneId": "fungi-mould",
+      "localFrame": 675,
+      "activeLabel": "A spore can germinate in suitable conditions"
+    },
+    {
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-sexual-stage3-480.png",
+      "sha256": "bbf73bb563a307c4dac0bdaaf41f36b3dee926e6027251306634980a921e25a7",
+      "sceneId": "fungi-sexual",
+      "localFrame": 315,
+      "activeLabel": "The nuclei fuse"
+    },
+    {
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-meiosis-stage3-480.png",
+      "sha256": "ac08fa0697cb227ab4dff6ecd9bbdbbf151b8a22738b56568aeba57eaec5cf7a",
+      "sceneId": "fungi-meiosis",
+      "localFrame": 457,
+      "activeLabel": "Haploid nuclei are packaged into spores"
+    },
+    {
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-check-480.png",
+      "sha256": "ae97bde8b332163ecc98a035c49b8cb8fbd812a398360dc1b85d23b377eb207e",
+      "sceneId": "fungi-check",
+      "localFrame": 965,
+      "activeLabel": null
+    },
+    {
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-notes-480.png",
+      "sha256": "35a68ba8df6fd4b17f0cd8ae9435e9e485123125b2754f5c19fa6fa1048e106e",
+      "sceneId": "fungi-notes",
+      "localFrame": 300,
+      "activeLabel": null
+    }
+  ],
+  "remaining": [
+    "Resolve stage4 display-copy instruction and bind revised exact source.",
+    "Supported production renderer integration and exact runtime review.",
+    "Fresh selected speech, measured stage cues, sample-exact response silence and notes clearance.",
+    "Exact continuous voiced/caption/device review and human listening.",
+    "Export-stage brief/frozen inputs, actual full-package release gates and prerequisite availability."
+  ],
+  "limits": "Native/static and source/implementation inspection only. No actual Player continuous watch, measured speech/alignment, human ears, physical-device, export or public release approval."
+}

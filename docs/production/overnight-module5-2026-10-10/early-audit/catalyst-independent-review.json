@@ -1,0 +1,39 @@
+{
+  "reviewDate": "2026-10-10",
+  "reviewer": "Independent early-video audit agent",
+  "outcome": "pass for bounded selected-script science, focused scope and standalone structural timing; supported production integration remains open",
+  "inputs": {
+    "lesson": "chemistry-catalysts/lesson.json",
+    "lessonSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4",
+    "candidateSha256": "0d3816975c6e2670c1ad0898794b6c0bee6c0f2a5e8ad82ea97a79f982c59931",
+    "briefSha256": "4c4711a6204f9dd02e7bdeeae5a191ae712ff7f5a0e230a64b47e8d7df80b24e",
+    "pageSha256Recorded": "69bae7a92bfdd30049c7318b93b9df04052ed676f30d2581a9b7b53a1e513f86"
+  },
+  "sourceAssessment": {
+    "science": "No material finding. Alternative reversible pathway lowers activation hurdles without altering endpoint energies or fixed-temperature K. Equal opposing rates at equilibrium and finite-time product versus final composition are distinguished. Matched reacting amounts, initial composition, volume and temperature plus product-forming initial state constrain the comparison. No universal rate multiplier, finite exact equilibrium time, numerical energy claim or generalised equal-drop claim.",
+    "scope": "One learner question, C4B catalyst contribution following C4A, with C2 reversible rates and C3 temperature/K prerequisites; C5 expressions next. No practical or complete syllabus-action coverage is claimed.",
+    "beginnerClarity": "Activation energy is explained as a pathway energy hurdle; axes receive plain meanings, reaction progress is explicitly not time, K receives a concentration-relationship meaning. Profile, K, approach graph and already-equilibrium reasoning occupy separate scenes.",
+    "response": "Full conditions, only-one-catalyst comparison, before/after predictions and explanation demand remain on the answer-free board. 360-frame estimated attempt equals 12 seconds at 30 fps.",
+    "timing": "Direct Candidate TransitionSeries inspection gives response start3466, hold4216-4576, outgoing overlap/feedback mount4576, response end4600. Thus the actual 24-frame transition does not invade the declared hold. This is structural estimated timing, not measured speech silence.",
+    "notes": "Stable selected essentials with only a pause/copy invitation, no new narrated reasoning or decorative motion. Actual quiet interval awaits speech measurement.",
+    "staging": "Opening question swaps locally210; K condition appears180; alternative profile draws390-445 and endpoint focus700; graph draws60-240 and feedback early-time marker disappears300. These are purposeful but estimated cues, requiring measured alignment. No whole-playback smoothness claim."
+  },
+  "nativeEvidence": {
+    "directory": "out/prototypes/overnight-chemistry-catalysts-2026-10-10/",
+    "exactCurrentManifest": "still-record.json binds current lesson and Candidate, but lists only c4b-path and path-final. Inspected path-final at960 and480: shared endpoints and separated stable legend fit.",
+    "diagnosticReuse": "Inspected c4b-approach, c4b-response and c4b-notes at960/480, plus response-end/feedback-boundary480. README identifies these as earlier diagnostics with unchanged relevant layout logic. Full prompt and notes are legible with no observed clipping; boundary images retain the answer-free prompt. These are attributed reuse, not exact-current whole-source native certification.",
+    "captionFit": "Pending; no selected audio/captions exist."
+  },
+  "findings": [
+    {
+      "priority": "P1 production integration gate",
+      "status": "open",
+      "finding": "The docs-owned Candidate supplies profile/graph/staging/quiet boards. Supported LessonVideo does not activate those visuals from this JSON; rendering JSON alone cannot reproduce this preview.",
+      "action": "Root integrates an explicit opt-in supported scene path, preserves the isolated prototype, then reviews exact production-native states and transition boundaries before recording/export. See next-integration-actions.md."
+    }
+  ],
+  "preferences": [],
+  "primaryReference": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle",
+  "pending": ["supported renderer integration and exact runtime native review", "continuous silent Player playback", "recording-stage brief readiness", "fresh speech and measured semantic cue alignment", "assembled response silence and caption fit", "quiet notes after measured speech", "human listening", "export and release gates"],
+  "limitations": "Source and saved native still inspection only. No source mutation, paid narration, continuous playback, human ears, export or publication."
+}

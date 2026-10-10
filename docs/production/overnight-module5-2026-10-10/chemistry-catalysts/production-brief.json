@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/lesson.json",
+    "lessonSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C2 reaction rate, reversible approach and activation-energy introduction; C3 fixed-temperature equilibrium/K distinction. Refresh rate as change per unit time and activation energy as an energy hurdle. Entry check: does faster forward reaction alone tell us the final mixture? Support route: revisit C2 equal opposing rates and C3 temperature/K. C4A precedes this delivery part in the selected route; actual availability is not assumed.",
+    "startsWith": "Initially product-forming closed mixtures with identical reacting substances, reacting amounts, initial composition, fixed container volume and temperature. A catalyst opens a reversible pathway without introducing another equilibrium reaction.",
+    "stopsAfter": "Lower alternative pathway assisting both directions, faster approach, equal rates at equilibrium, same fixed-temperature equilibrium composition and K; distinguish finite-time product amount. No Q/K calculations, industrial conditions, universal enhancement factor or detailed catalytic cycle.",
+    "nextLesson": "C5 equilibrium expressions, with p01 practical support as appropriate; C7 later applies industrial rate/finite-time/equilibrium distinctions."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json"
+  ],
+  "teaching": {
+    "task": "Explain the lower alternative pathway, faster approach and unchanged fixed-temperature equilibrium composition and K under matching conditions.",
+    "causalExplanation": "Lower activation barrier permits a faster reversible pathway. Reactant/product energy levels and fixed-temperature equilibrium relationship are unchanged. Net composition stops changing when opposing rates balance, not when reactions stop. Same starting composition, reacting amounts, volume and temperature produce the same equilibrium composition; earlier product can differ for the specified product-forming start.",
+    "conversationalApproach": "Preserve useful accepted C4 preparation language, split profile/K/approach/already-equilibrium into separate current stages. Add plain axis meanings and reversible-rate explanation. These exact new selected words are unreviewed until independent assessment.",
+    "openingDecision": "Contrast sooner product with more product at equilibrium. Rhetorical opener, not claimed retrieval evidence.",
+    "understandingCheck": "Retain all matched initial conditions, closed-system scope, initially product-forming state, only-one-catalyst condition and both before/after demands throughout estimated 12-second response. Prompt allowance derives from 2.25 words/s plus a settling second; outgoing 24-frame protection keeps feedback after the declared hold end. Fresh audio must set actual timing.",
+    "curriculumScope": "Chemistry Stage 6 2017 Year 12 M5, canonical chem-m5-c04 delivery C4B. Candidate C-activation subset from cached NESA p1072. Profile/qualitative prediction does not establish investigation, practical conduct, complete heat-of-reaction teaching or syllabus-action approval."
+  },
+  "scenes": [
+    {
+      "sceneId": "c4b-opening",
+      "visualDecision": "reuse",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Retain current scientific context through the estimated explanation and useful reading tail; actual voiced/caption fit pending."
+    },
+    {
+      "sceneId": "c4b-path",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Retain current scientific context through the estimated explanation and useful reading tail; actual voiced/caption fit pending."
+    },
+    {
+      "sceneId": "c4b-constant",
+      "visualDecision": "reuse",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Retain current scientific context through the estimated explanation and useful reading tail; actual voiced/caption fit pending."
+    },
+    {
+      "sceneId": "c4b-approach",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Retain current scientific context through the estimated explanation and useful reading tail; actual voiced/caption fit pending."
+    },
+    {
+      "sceneId": "c4b-equilibrium",
+      "visualDecision": "reuse",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Retain current scientific context through the estimated explanation and useful reading tail; actual voiced/caption fit pending."
+    },
+    {
+      "sceneId": "c4b-response",
+      "visualDecision": "reuse",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Answer-free estimated 12-second interval plus 24-frame outgoing protection."
+    },
+    {
+      "sceneId": "c4b-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Retain current scientific context through the estimated explanation and useful reading tail; actual voiced/caption fit pending."
+    },
+    {
+      "sceneId": "c4b-notes",
+      "visualDecision": "reuse",
+      "visualReference": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx; library CatalystBothDiagram, EnergyProfileDiagram, lcKit Axes/Gap/polyPath, diorama STONE inspected",
+      "teachingReason": "Keep one current teaching visual. Profile and concentration-time graph are separate. Matching conditions remain available. Remove inherited rate meters, multiplier claims and same-drop brackets from visible and accessible text. Stable selected notes retain full-size conditions.",
+      "narrationCue": "All local timing is estimated at 2.25 words/s. Lower profile at local390; endpoints focus at local700. Approach curves draw at local60-240. Feedback early-time point at local30, common equilibrium emphasis at local300. Refresh exact cues from fresh alignment.",
+      "motionPurpose": "Drawing the alternative pathway makes the changed barrier visible while endpoints stay fixed; graph drawing shows the same limiting equilibrium level with different approach times. Stable labels and response/copy boards do not drift.",
+      "holdPurpose": "Stable notes after invitation with estimated 12-second quiet tail; no new reasoning."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationReview": {
+    "status": "pass",
+    "reviewer": "Independent C4 scope/science reviewer",
+    "evidence": {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "sha256": "8c572dc214e3eb319e1fd882586f87963e98898f3b221016d400446aa7016558"
+    },
+    "limitation": "Historical C4 human-readable preparation review only; this newly split selected source adds axis and causal support and is not independently reviewed."
+  },
+  "visualIntegration": {
+    "status": "author-integrated-independent-review-pending",
+    "selectedComponent": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx",
+    "limitation": "Isolated docs-owned consumer, no normal shared LessonVideo activation, no voice/export."
+  },
+  "limitation": "Draft selected source. Independent script/visual review, continuous silent Player, voiced alignment/captions/listening and all production/release gates pending."
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "pass-bounded-current-source-and-cue-correction",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+    "sha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420"
+  },
+  "briefSha256": "ede61e0d992fc12e829a050f39b6307425c16ad9fff439e9500a0071cbdbaea3",
+  "measuredReportSha256": "6e496da5b07776828176b63fdfc3236a6239a29112b6e118c3abd893d27eeb90",
+  "initialReviewPath": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-review.json",
+  "sourceDiffs": [
+    {
+      "field": ".scenes.7.calculationPresentation.stages.1.lineAts.0",
+      "old": 746,
+      "new": 744
+    },
+    {
+      "field": ".scenes.7.calculationPresentation.stages.2.lineAts.0",
+      "old": 1106,
+      "new": 1098
+    },
+    {
+      "field": ".scenes.10.calculationPresentation.stages.0.lineAts.0",
+      "old": 59,
+      "new": 0
+    },
+    {
+      "field": ".scenes.10.calculationPresentation.stages.0.lineAts.1",
+      "old": 39,
+      "new": 59
+    },
+    {
+      "field": ".scenes.10.calculationPresentation.stages.1.lineAts.0",
+      "old": 90,
+      "new": 113
+    },
+    {
+      "field": ".scenes.10.calculationPresentation.stages.1.lineAts.1",
+      "old": 90,
+      "new": 153
+    },
+    {
+      "field": ".scenes.10.calculationPresentation.stages.2.lineAts.0",
+      "old": 258,
+      "new": 240
+    },
+    {
+      "field": ".scenes.10.calculationPresentation.stages.3.lineAts.0",
+      "old": 682,
+      "new": 641
+    }
+  ],
+  "checks": {
+    "onlyEightStageLineCueValuesChanged": true,
+    "wordsAudioCaptionsModelPropsHoldsDurationsUnchanged": true,
+    "rawAndAssembledMediaHashesRechecked": true,
+    "priorSampleIdentityAnd576000ZeroSampleEvidenceReused": true,
+    "briefSourceHashMatches": true,
+    "currentCueCount": 56,
+    "currentCuePathMismatches": []
+  },
+  "findings": [],
+  "remaining": [
+    "Actual exact voiced UI/native and caption review",
+    "Human listening",
+    "Export-stage brief, frozen inputs, full-package release gates"
+  ],
+  "limits": "No human ears, continuous playback, physical-device or release approval. Media bytes identical to the initial audited package, so no redundant PCM decode."
+}

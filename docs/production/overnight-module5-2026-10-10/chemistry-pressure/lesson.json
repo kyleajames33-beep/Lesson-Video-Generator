@@ -1,0 +1,426 @@
+{
+  "title": "Gas pressure and volume",
+  "subtitle": "Does higher pressure always shift equilibrium?",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "C4A",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "Candidate explanation subset: volume/pressure disturbance prediction and particle-pressure reasoning. Investigation, complete action coverage and approval remain pending."
+  ],
+  "nesaOutcomes": [
+    "CH12-12"
+  ],
+  "inquiryQuestion": "How do changes in volume and pressure affect chemical equilibrium?",
+  "lessonIntent": "Predict fixed-temperature gas compression/expansion and distinguish an inert-gas pressure rise at fixed volume from compression.",
+  "examSkill": "Use gaseous coefficients and stated temperature/volume conditions to justify the direction or absence of a shift.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "scenes": [
+    {
+      "id": "c4a-opening",
+      "type": "concept",
+      "heading": "Does higher pressure always shift equilibrium?",
+      "body": "Initially at equilibrium. Compress at fixed temperature.",
+      "caption": "First identify how the pressure was changed.",
+      "durationInFrames": 597,
+      "voiceover": {
+        "text": "Suppose a gas mixture is already at equilibrium. We squeeze it into a smaller space, keeping the temperature constant. Does it make more product? The answer depends on the reaction. Let's work out what the squeeze changes first."
+      },
+      "syllabusDotPointIndex": -1,
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      }
+    },
+    {
+      "id": "c4a-compress",
+      "type": "concept",
+      "heading": "Squeeze first, reaction afterwards",
+      "body": "Same particles; less space; fixed temperature.",
+      "caption": "Compression raises pressure before composition changes.",
+      "durationInFrames": 557,
+      "voiceover": {
+        "text": "Straight after the squeeze, the same gas particles occupy less space. They hit the walls more often, so the pressure rises. No new ammonia has appeared just because the piston moved. The reaction responds afterward."
+      },
+      "syllabusDotPointIndex": -1,
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      }
+    },
+    {
+      "id": "c4a-reason",
+      "type": "workedExample",
+      "heading": "Compression: count the gases",
+      "question": "Which side has fewer gas moles?",
+      "steps": [
+        "Left: 1 + 3 = 4 mol gas; right: 2 mol gas.",
+        "Forward reaction reduces total gas amount.",
+        "Compression favours the right."
+      ],
+      "caption": "Gas coefficients predict direction under the stated conditions.",
+      "durationInFrames": 1104,
+      "voiceover": {
+        "text": "Our reaction is nitrogen plus hydrogen forming ammonia. The balanced equation says one mole of nitrogen reacts with three moles of hydrogen to form two moles of ammonia. All are gases: four moles become two. A net forward reaction therefore reduces the total amount of gas in the smaller container. This partly offsets the pressure rise. At constant temperature, compression favours that side with fewer gas moles. The pressure need not return to its original value."
+      },
+      "syllabusDotPointIndex": -1,
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "captionSafeWorking": true,
+        "task": "Which side has fewer gas moles?",
+        "equation": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Conditions",
+            "lines": [
+              "Temperature fixed",
+              "Closed mixture; volume decreases"
+            ],
+            "task": "Which side has fewer gas moles?",
+            "equation": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)"
+          }
+        ],
+        "stages": [
+          {
+            "label": "Read the balanced reaction",
+            "lines": [
+              "Left: 1 + 3 = 4 mol gas; right: 2 mol gas."
+            ],
+            "summary": "Left: 1 + 3 = 4 mol gas; right: 2 mol gas.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              180
+            ]
+          },
+          {
+            "label": "Explain the reaction response",
+            "lines": [
+              "Forward reaction reduces total gas amount."
+            ],
+            "summary": "Forward reaction reduces total gas amount.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              720
+            ]
+          },
+          {
+            "label": "Interpret the pressure",
+            "lines": [
+              "Compression favours the right.",
+              "The pressure rise is only partly offset."
+            ],
+            "summary": "Compression favours the right.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              1050,
+              1050
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "heading": 12,
+        "stepAts": [
+          180,
+          720,
+          1050
+        ]
+      }
+    },
+    {
+      "id": "c4a-contrast",
+      "type": "workedExample",
+      "heading": "Expansion and equal gas totals",
+      "question": "Compare the gas coefficients",
+      "steps": [
+        "Expansion favours more gas moles.",
+        "Left: 2; right: 2. No equilibrium shift.",
+        "Count gases only; exclude solids."
+      ],
+      "caption": "Equal gaseous coefficient totals give no volume-induced shift in this model.",
+      "durationInFrames": 650,
+      "voiceover": {
+        "text": "Expanding the container favours the side with more gas moles. But if the gas coefficients total the same on both sides, changing volume gives no equilibrium shift in this model. Count only gaseous species. A solid's coefficient does not add gas particles."
+      },
+      "syllabusDotPointIndex": -1,
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "captionSafeWorking": true,
+        "task": "Compare the gas coefficients",
+        "equation": "H₂(g) + I₂(g) ⇌ 2HI(g)",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Conditions",
+            "lines": [
+              "Temperature fixed",
+              "School ideal-gas model"
+            ],
+            "task": "Compare the gas coefficients",
+            "equation": "H₂(g) + I₂(g) ⇌ 2HI(g)"
+          }
+        ],
+        "stages": [
+          {
+            "label": "Volume increase",
+            "lines": [
+              "Expansion favours more gas moles."
+            ],
+            "summary": "Expansion favours more gas moles.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              24
+            ]
+          },
+          {
+            "label": "Equal-gas example",
+            "lines": [
+              "Left: 2; right: 2. No equilibrium shift."
+            ],
+            "summary": "Left: 2; right: 2. No equilibrium shift.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              240
+            ]
+          },
+          {
+            "label": "Select gaseous species",
+            "lines": [
+              "Count gases only; exclude solids."
+            ],
+            "summary": "Count gases only; exclude solids.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              450
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "heading": 12,
+        "stepAts": [
+          24,
+          240,
+          450
+        ]
+      }
+    },
+    {
+      "id": "c4a-inert",
+      "type": "workedExample",
+      "heading": "Higher total pressure, no squeeze",
+      "question": "Does adding argon shift equilibrium?",
+      "steps": [
+        "Argon raises total pressure.",
+        "Reacting amount and volume unchanged.",
+        "Each reacting gas contribution stays fixed."
+      ],
+      "caption": "Inert gas at fixed volume and temperature leaves reacting partial pressures unchanged.",
+      "durationInFrames": 957,
+      "voiceover": {
+        "text": "Now imagine adding argon without changing the volume or temperature. Argon is inert here: it doesn't react. The total pressure rises, but each reacting gas still has the same amount in the same volume. Its own contribution to pressure, called its partial pressure, stays the same. So there is no shift. A higher total pressure alone doesn't tell us that the reacting gases were compressed."
+      },
+      "syllabusDotPointIndex": -1,
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "captionSafeWorking": true,
+        "task": "Does adding argon shift equilibrium?",
+        "equation": "",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Conditions",
+            "lines": [
+              "Temperature and volume fixed",
+              "Argon does not react here"
+            ],
+            "task": "Does adding argon shift equilibrium?",
+            "equation": ""
+          }
+        ],
+        "stages": [
+          {
+            "label": "What changes",
+            "lines": [
+              "Argon raises total pressure."
+            ],
+            "summary": "Argon raises total pressure.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              150
+            ]
+          },
+          {
+            "label": "What stays fixed",
+            "lines": [
+              "Reacting amount and volume unchanged."
+            ],
+            "summary": "Reacting amount and volume unchanged.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              390
+            ]
+          },
+          {
+            "label": "Partial pressure",
+            "lines": [
+              "Each reacting gas contribution stays fixed.",
+              "No equilibrium shift."
+            ],
+            "summary": "Each reacting gas contribution stays fixed.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              690,
+              690
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "heading": 12,
+        "stepAts": [
+          150,
+          390,
+          690
+        ]
+      }
+    },
+    {
+      "id": "c4a-response",
+      "type": "concept",
+      "heading": "Try the volume change",
+      "body": "2SO₂(g) + O₂(g) ⇌ 2SO₃(g)\nVolume increases at constant temperature.\nPredict the shift. Explain using gas coefficients.",
+      "caption": "Predict the shift and explain using the gaseous coefficients.",
+      "durationInFrames": 744,
+      "voiceover": {
+        "text": "For two sulfur dioxide plus oxygen forming two sulfur trioxide, predict the shift when the volume increases at constant temperature. Explain your choice using the gas coefficients."
+      },
+      "syllabusDotPointIndex": -1,
+      "revealDelays": {
+        "heading": 12,
+        "body": 24
+      },
+      "responseHold": {
+        "startFrame": 360,
+        "endFrame": 720
+      }
+    },
+    {
+      "id": "c4a-feedback",
+      "type": "workedExample",
+      "heading": "Reason from the gas totals",
+      "question": "Volume increases: which direction?",
+      "steps": [
+        "Left: 3 mol gas; right: 2 mol gas.",
+        "Expansion favours more gas: shift left.",
+        "K describes the equilibrium concentration relationship."
+      ],
+      "caption": "Expansion shifts left; unchanged temperature retains K.",
+      "durationInFrames": 944,
+      "voiceover": {
+        "text": "There are three gas moles on the left and two on the right in the balanced reaction. Expansion favours the side with more gas moles, so the equilibrium shifts left. Remember the equilibrium constant, K, from the temperature lesson? It describes the relationship between reactant and product concentrations at equilibrium for a particular reaction. Here it stays the same because the temperature stayed fixed."
+      },
+      "syllabusDotPointIndex": -1,
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "captionSafeWorking": true,
+        "task": "Volume increases: which direction?",
+        "equation": "2SO₂(g) + O₂(g) ⇌ 2SO₃(g)",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Conditions",
+            "lines": [
+              "Temperature fixed",
+              "Volume increases"
+            ],
+            "task": "Volume increases: which direction?",
+            "equation": "2SO₂(g) + O₂(g) ⇌ 2SO₃(g)"
+          }
+        ],
+        "stages": [
+          {
+            "label": "Count gases",
+            "lines": [
+              "Left: 3 mol gas; right: 2 mol gas."
+            ],
+            "summary": "Left: 3 mol gas; right: 2 mol gas.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              24
+            ]
+          },
+          {
+            "label": "Predict direction",
+            "lines": [
+              "Expansion favours more gas: shift left."
+            ],
+            "summary": "Expansion favours more gas: shift left.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              270
+            ]
+          },
+          {
+            "label": "Refresh K",
+            "lines": [
+              "K describes the equilibrium concentration relationship.",
+              "Same temperature: same K."
+            ],
+            "summary": "K describes the equilibrium concentration relationship.",
+            "retainedStageIndexes": [],
+            "lineAts": [
+              480,
+              480
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "heading": 12,
+        "stepAts": [
+          24,
+          270,
+          480
+        ]
+      }
+    },
+    {
+      "id": "c4a-key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "points": [
+        "At fixed T: compress → fewer gas moles; expand → more.",
+        "Count gases only. Equal gas totals → no shift in this model.",
+        "Inert gas at fixed V and T: reacting partial pressures unchanged.",
+        "K stays fixed when T stays fixed."
+      ],
+      "caption": "Optional book notes after the explanation.",
+      "durationInFrames": 427,
+      "voiceover": {
+        "text": "Here are the essentials for your book. Pause if you want longer to copy."
+      },
+      "syllabusDotPointIndex": -1,
+      "revealDelays": {
+        "heading": 0,
+        "takeawayAts": [
+          12,
+          12,
+          12,
+          12
+        ]
+      }
+    }
+  ]
+}

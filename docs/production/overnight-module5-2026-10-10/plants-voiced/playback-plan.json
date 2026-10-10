@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "lessonPath": "docs/production/module5-plants-notes-2026-10-10/lesson.json",
+  "lessonSha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd",
+  "playback": [
+    {
+      "sceneId": "b3-hook",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-hook",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-hook.be0056d8395e.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-flower",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-flower",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-flower.dd53652d24dd.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-delivery",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-delivery",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-delivery.57155746fcb3.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-seed",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-seed",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-seed.4cbad6c99825.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-runner",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-runner",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-runner.53b5e69fb71a.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-self-cross",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-self-cross",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-self-cross.272156857278.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-worked",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-worked",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-worked.964e591bca86.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-conditions",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-conditions",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-conditions.a203bb50e2b5.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-check-prompt",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-check-prompt",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-check-prompt.c48a91f8171a.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-check-feedback",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-check-feedback",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-check-feedback.4939dcdd7b28.mp3"
+        }
+      ]
+    },
+    {
+      "sceneId": "b3-summary",
+      "items": [
+        {
+          "kind": "audio",
+          "segmentId": "b3-summary",
+          "audioFile": "public/audio/Biology-Y12-M5-plants-2026-10-10-take01/b3-summary.3f7780c96d29.mp3"
+        }
+      ]
+    }
+  ],
+  "responsePlan": {
+    "sceneId": "b3-check-prompt",
+    "feedbackSceneId": "b3-check-feedback",
+    "frames": 360,
+    "seconds": 12,
+    "method": "Append sample-exact silence after the whole prompt take, then a separate24-frame transition tail. Feedback mounts at the hold end. Preserve separate prompt and feedback scenes."
+  },
+  "notesPlan": {
+    "sceneId": "key-notes",
+    "minimumSpeechClearanceFrames": 60,
+    "readingFrames": 450
+  }
+}

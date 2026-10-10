@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "Pass for bounded exact source/science and response/notes structural integration. No material source blocker. One non-blocking condition-label display improvement; all voiced/release gates pending.",
+  "inputs": {
+    "lesson": {
+      "path": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+      "sha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00"
+    },
+    "candidateSha256": "538c58c9e5f2bc968c358a1671c51ec049c446c15ea1ea8c64ff3f26da062049",
+    "briefSha256": "9fbd759a1d4b0780a09508466bed3bf0b776c6ea584dc1e9a18d09e41465c620",
+    "acceptedParentSha256": "1f0e871cc24df7532c830735f6daf08f988ba35ca8dc43abf6806928bcb176b4"
+  },
+  "spokenIdentity": "All eight spoken paragraphs exactly equal the approved selected C4A parent, including the notes invitation. No new narration or media produced. No U+2014 in selected lesson.",
+  "scienceAssessment": {
+    "immediateCompression": "Current piston moves at local75..115 while all12 drawn reacting molecules retain identity and count. Volume drops; concentration and partial pressure therefore rise at fixedT. It does not create ammonia merely by moving the piston. Wall-impact statement explains pressure, not a literal chemical mechanism.",
+    "laterResponse": "Subsequent net forward ammonia formation is explained on a separate balanced-equation board. Four gaseous stoichiometric moles become two, partly offsetting the imposed pressure rise. The drawing does not simulate later association or final concentrations and is not assessed as that simulation. No assertion that every species concentration falls or that pressure returns to its starting value.",
+    "inertGas": "Four labelled argon circles are added while piston/available volume and reacting species identity/count stay fixed. At fixedV/T in the ideal-gas model, total pressure rises while reacting partial pressures and equilibrium position remain unchanged. Fixed-pressure inert addition is explicitly outside scope; its expansion could shift unequal-gas-total equilibria and this result must not be transferred there. No claim that inert particles cannot collide.",
+    "coefficientsAndK": "Balanced N2+3H2=2NH3 and2SO2+O2=2SO3 gas totals are correct. H2+I2=2HI gives equal gas totals/no volume-induced shift in the stated ideal model. Gas-only counting excludes solids. K refresh is defined and genuinely follows the current C3 introduction; fixedT retains K. No elementary rate law inferred from coefficients."
+  },
+  "reference": {
+    "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle",
+    "support": "Publisher equilibrium account supports fixedT ideal gas partial-pressure/concentration dependence, equal gas-total no-shift and stoichiometric volume-response reasoning. Independently opened for this audit."
+  },
+  "boundaries": "One question links compression/expansion, equal totals and inert fixedV contrast. C4A remains a delivery part of chem-m5-c04, followed by C4B. C1/C2/C3 prerequisites, no Q calculations/constant-pressure inert treatment/catalyst mechanism/practical conduct, and candidate-only syllabus mapping are retained.",
+  "responseCheck": {
+    "localHold": {
+      "startFrame": 360,
+      "endFrame": 720
+    },
+    "seconds": 12,
+    "promptGlobalStart": 3745,
+    "feedbackMountAt": 4465,
+    "holdEndsAt": 4465,
+    "outgoingTailFrames": 24,
+    "completeEquationConditionsAndBothDemandsVisible": true,
+    "limit": "Estimated allowance with no prompt audio. Exact digital silence and first audible/visible answer require fresh measured assembly and playback."
+  },
+  "notesAssessment": "Stable current480 board retains all four already explained essentials and their conditions, with no ambient decorative animation. Eight-second quiet copying tail is provisional because no recorded invitation/endFrame exists. Actual audio/captions must be absent from the copy interval after invitation.",
+  "staticEvidence": [
+    {
+      "path": "out/prototypes/overnight-chemistry-pressure-2026-10-10/c4a-compress-960.png",
+      "sha256": "e1b5083df6abaf439be6a0542d38991af14bf994cc0e81756ba9cb534f1d3182",
+      "scope": "Earlier diagnostic component/source record, interpreted only as static geometry matching current unchanged PressureScene logic"
+    },
+    {
+      "path": "out/prototypes/overnight-chemistry-pressure-2026-10-10/inert-final-480.png",
+      "sha256": "c14cbf867302ad6a97dca0d6ba4d0d2c37b05f3ea342c43cde6ea71146979a34",
+      "scope": "Earlier diagnostic component/source record, same bounded source interpretation"
+    },
+    {
+      "path": "out/prototypes/overnight-chemistry-pressure-2026-10-10/response-end-480.png",
+      "sha256": "be68b1515855c2a31588a1196894aebde19d56935ad1e5a8d18350ca2cbb2274",
+      "scope": "Current exact targeted record, complete prompt at local719"
+    },
+    {
+      "path": "out/prototypes/overnight-chemistry-pressure-2026-10-10/c4a-key-notes-480.png",
+      "sha256": "2e74a00179a504e899217105d985306b08061cf354882d12c326b4887c63d758",
+      "scope": "Current exact targeted record, stable notes"
+    },
+    {
+      "path": "out/prototypes/overnight-chemistry-pressure-2026-10-10/c4a-reason-960.png",
+      "sha256": "8711ceebb948aa5a4b9188862973e41705c4b1cdad1a4246dcc6a8f17fa5a848",
+      "scope": "Earlier diagnostic equation state, existing current lesson data inspected"
+    }
+  ],
+  "findings": [
+    {
+      "priority": "P3-targeted-display-improvement",
+      "releaseBlocker": false,
+      "scenes": [
+        "c4a-compress",
+        "c4a-inert"
+      ],
+      "description": "At later displayed states, stage/message text replaces the earlier fixedT label and the inert fixedV/T label. These are necessary conditions for interpreting pressure and no-shift statements. Speech/notes already scope them correctly.",
+      "action": "Keep a small persistent Fixed temperature tag throughout compression and Fixed temperature and volume throughout inert reasoning, optionally with the ideal-gas model label. Recheck the affected exact still/Player. No narration rewrite needed."
+    }
+  ],
+  "limits": "Source, renderer contract and listed static images only. Earlier non-targeted images are diagnostic and do not supply exact final still certification; latest targeted response/notes record binds current hashes. No continuous movement, actual human ears, caption controls/device or release pass.",
+  "remaining": [
+    "Root considers persistent condition tag, then binds current source/component reviews.",
+    "Deliberately integrate docs-owned consumer before recording/voiced review; ordinary LessonVideo does not select it.",
+    "Recording-stage brief, fresh speech/captions, measured cues/protected silence/notes quiet time.",
+    "Exact full voiced viewing, intended-size captions and human listening.",
+    "Export-stage brief/frozen inputs, export/full-package gates and prerequisite publication."
+  ]
+}

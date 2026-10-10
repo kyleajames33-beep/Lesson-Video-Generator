@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "Changes required before recording: retain the explicit classification-evidence demand and provide a staged semantic mechanism cue plan. Science and focused lesson boundaries pass.",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/biology-fungi/lesson.json",
+    "sha256": "abe3dda53298a0963acc0a4f337562d72c4c591f2589f8c3b01a95f70e835443"
+  },
+  "briefSha256": "9c68288a4c645d38bb30ae7a0c13c0d1de051800be5577fd3c27668d5275123a",
+  "oneLearnerQuestion": "How was the new fungal cell formed?",
+  "scienceAssessment": "Named Saccharomyces cerevisiae budding connects DNA copying, mitosis, bud inheritance and separation without fusion. Rhizopus stolonifer mitotic sporangial spores are explicitly asexual; dispersal and suitable establishment are separated. Compatible haploid yeast cells and nuclear fusion precede diploidy; conditional diploid meiosis and spores belong to a sexual cycle. Spore identity alone is correctly insufficient, and these examples are not universal fungal life cycles. Plain meanings are provided for mitosis, hyphae, sporangium, haploid, diploid and meiosis. No scientific copy correction found.",
+  "sourceVerification": [
+    {
+      "url": "https://wiki.yeastgenome.org/index.php/What_are_yeast%3F",
+      "support": "SGD yeast life/cell cycles support named budding, fusion and conditional meiotic spores."
+    },
+    {
+      "url": "https://www.ibiology.org/cell-biology/yeast-life-cycle/",
+      "support": "Researcher lecture supports compatible yeast fusion and diploid-to-haploid spore cycle."
+    },
+    {
+      "url": "https://openstax.org/books/microbiology/pages/5-3-fungi",
+      "support": "Publisher fungus account and Figure5.28 support Rhizopus asexual sporangial spores and distinguish sexual/asexual fungal reproduction."
+    }
+  ],
+  "routeAssessment": "2017 Biology Module5 fungal contribution to bio-m5-b02b after plants, before bacteria/protists. B1 fusion/DNA entry knowledge is stated. This bounded review does not certify whole organism-group coverage or practical conduct.",
+  "findings": [
+    {
+      "priority": "P2-before-recording",
+      "type": "response-demand-availability",
+      "scienceBlocker": false,
+      "sceneId": "fungi-check",
+      "description": "Narration asks classification, evidence for each choice, and why spore alone is insufficient. Visible bullet3 omits the explicit evidence-for-each-choice demand.",
+      "action": "Retain all demands explicitly, for example: Classify each pathway, give formation evidence, and explain why spore alone is insufficient. Recheck fit. No spoken text rewrite needed."
+    },
+    {
+      "priority": "P2-before-recording-plan",
+      "type": "purposeful-mechanism-staging",
+      "scienceBlocker": false,
+      "description": "Generic flow fallback reveals all three mechanism nodes within roughly3seconds, before their explanations. Current brief discloses this, so it supplies no narration-specific cue plan.",
+      "action": "Plan semantic stages for the named pathways before recording, then replace estimates with selected speech cues. Keep copied words and existing usable process artwork. Native/continuous voiced checks must confirm the current reasoning stage."
+    }
+  ],
+  "readingAndMotionAssessment": "Two short vocabulary anchors plus three process stages support the current case without paragraphs or unrelated answer history. Saved yeast/sexual process boards communicate order, not anatomy. Final480 notes fit four clear lines. Generic flow nodes settle around3seconds, before future semantic spoken cues; this is disclosed and requires staging/alignment after recording, not a claimed voiced pass.",
+  "responseAndNotes": {
+    "estimatedHoldFrames": {
+      "startFrame": 785,
+      "endFrame": 1145,
+      "status": "unmeasured estimate"
+    },
+    "estimatedHoldSeconds": 12,
+    "feedbackTransitionTailFrames": 24,
+    "status": "Planning only, not measured silence. Complete A/B cases are available; classification-evidence demand correction above remains.",
+    "notesUnvoiced": true,
+    "notesFrames": 540,
+    "notesScope": "Optional essentials after handoff and pause invitation. Actual speech-to-notes clearance requires fresh measured audio."
+  },
+  "staticEvidence": [
+    {
+      "sceneId": "fungi-yeast",
+      "frame": 1780,
+      "scale": 0.5,
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10/stills/fungi-yeast-960.png",
+      "sha256": "89ce82089931c3395db24278f79cbadca597c9abfb9816a621993937ff1749e5",
+      "recordedSourceSha256": "75e41b4f1359a4b8761719c6edbe7abbda617d81bf6c2be60fd3f0f49245dd65"
+    },
+    {
+      "sceneId": "fungi-sexual",
+      "frame": 4235,
+      "scale": 0.5,
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10/stills/fungi-sexual-960.png",
+      "sha256": "897bc3f17639f6e20c30d825586ec989dd234a14d90c759983b54171e346a00d",
+      "recordedSourceSha256": "75e41b4f1359a4b8761719c6edbe7abbda617d81bf6c2be60fd3f0f49245dd65"
+    },
+    {
+      "sceneId": "fungi-check",
+      "frame": 7084,
+      "scale": 0.25,
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10/stills/fungi-check-480.png",
+      "sha256": "638ef3816acadc4e991bfcd6d530d3a3acf905971d22d0795bd9a382d4f25cae",
+      "recordedSourceSha256": "75e41b4f1359a4b8761719c6edbe7abbda617d81bf6c2be60fd3f0f49245dd65"
+    },
+    {
+      "sceneId": "fungi-notes",
+      "frame": 9663,
+      "scale": 0.25,
+      "path": "out/prototypes/overnight-biology-fungi-2026-10-10/stills/fungi-notes-480.png",
+      "sha256": "fc51d27da50880c99e3eef32d58161a2d46eea37afe1a22f5201e4098fac3d32",
+      "recordedSourceSha256": "abe3dda53298a0963acc0a4f337562d72c4c591f2589f8c3b01a95f70e835443"
+    }
+  ],
+  "staticEvidenceLimit": "Opened listed images. Current notes exact; prior check/yeast/sexual states attributed to75e41b... record and visibly retain the current teaching content. Old diagnostic notes image is excluded. No whole lesson/device claim.",
+  "noEmDashInSelectedSource": true,
+  "limits": "Initial browser creation timed out. No actual Player state/continuous watch, recorded audio, human listening, physical-device or release approval assessed.",
+  "remaining": [
+    "Resolve explicit evidence-demand copy and bind exact updated source/fit.",
+    "Recording-stage brief and fresh narration, including organism-name pronunciation.",
+    "Measured causal cues/protected silence, exact full voiced/caption/notes review and human listening.",
+    "Export-stage brief, frozen inputs, full-package release gates and prerequisite availability."
+  ]
+}

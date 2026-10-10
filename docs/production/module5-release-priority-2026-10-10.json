@@ -155,15 +155,15 @@
       "priority": 6,
       "canonicalId": "bio-m5-b02b",
       "deliveryPart": "plants",
-      "state": "prep",
-      "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
-      "evidencePath": "docs/production/module5-beginner-next-selection-2026-10-10.json",
+      "state": "review",
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+      "evidencePath": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-v2-review.json",
       "requiresPublic": [
         "bio-m5-b01"
       ],
       "precedingPlaylistContext": "bio-m5-b02a",
       "publication": "not-evidenced-public",
-      "remaining": "Current silent plant visuals reviewed in bounded scope. Fresh narration, measured cues, full voiced/listening/export and release gates pending. Plants cover only the plant contribution to B02b.",
+      "remaining": "Whole exact voiced viewing, captions and controls-hidden response visibility; Human listening; Export-stage brief and frozen inputs; Full export and complete package gate",
       "additiveNotesCandidate": {
         "sourcePath": "docs/production/module5-plants-notes-2026-10-10/lesson.json",
         "sourceSha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd",
@@ -175,6 +175,35 @@
         "status": "source-and-recording-preflight-pass-silent-notes-fit-checked",
         "remaining": "Fresh narration and measured protected intervals, exact whole voiced review/listening/export/package gates. No public plant release.",
         "mediaCheckpointPath": "docs/production/module5-plants-notes-media-checkpoint-2026-10-10.json"
+      },
+      "previousSelection": {
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "evidencePath": "docs/production/module5-beginner-next-selection-2026-10-10.json",
+        "state": "prep",
+        "remaining": "Current silent plant visuals reviewed in bounded scope. Fresh narration, measured cues, full voiced/listening/export and release gates pending. Plants cover only the plant contribution to B02b."
+      },
+      "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/production-brief.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-plants-voiced-2026-10-10-v2/",
+      "overnightCandidate": {
+        "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+        "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+        "briefPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/production-brief.json",
+        "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-v2-review.json",
+        "reviewUrl": "http://127.0.0.1:8778/overnight-plants-voiced-2026-10-10-v2/",
+        "status": "measured-source-and-provenance-pass-bounded-voiced-UI-checked",
+        "humanListening": "pending",
+        "publication": "not-evidenced-public",
+        "durationSeconds": 493.03333333333336,
+        "semanticCues": 56,
+        "responseSilenceSeconds": 12,
+        "uiEvidencePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-observations.json",
+        "remaining": [
+          "Whole exact voiced viewing, captions and controls-hidden response visibility",
+          "Human listening",
+          "Export-stage brief and frozen inputs",
+          "Full export and complete package gate"
+        ]
       }
     },
     {
@@ -217,27 +246,83 @@
       "canonicalId": "bio-m5-b02b",
       "deliveryPart": "fungi",
       "state": "prep",
-      "sourcePath": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
-      "evidencePath": "docs/production/module5-video-route-2026-10-10.json",
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+      "evidencePath": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-anchor-correction-review.json",
       "requiresPublic": [
         "bio-m5-b01"
       ],
       "publication": "not-evidenced-public",
-      "remaining": "Select focused fungal mechanism boundary and reviewed brief. Plant preparation supplies no fungal coverage."
+      "remaining": "Supported production renderer integration and exact affected visual/transition checks; Recording-stage brief check, fresh speech and measured cues; Exact voiced preview, captions, response silence and quiet-note clearance; Human listening; Export-stage brief, frozen inputs, full export and complete package gate",
+      "previousSelection": {
+        "sourcePath": "src/data/biology-y12-m5-l3-reproduction-plants-fungi-bacteria-protists.json",
+        "evidencePath": "docs/production/module5-video-route-2026-10-10.json",
+        "state": "prep",
+        "remaining": "Select focused fungal mechanism boundary and reviewed brief. Plant preparation supplies no fungal coverage."
+      },
+      "sourceSha256": "4f147dfc4a44e3822d1f4842b8d1d371c1c6fd1c2b45fd7017e60c2cbaacb3be",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/production-brief.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-biology-fungi-2026-10-10-v2/",
+      "overnightCandidate": {
+        "sourcePath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+        "sourceSha256": "4f147dfc4a44e3822d1f4842b8d1d371c1c6fd1c2b45fd7017e60c2cbaacb3be",
+        "briefPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/production-brief.json",
+        "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-anchor-correction-review.json",
+        "reviewUrl": "http://127.0.0.1:8778/overnight-biology-fungi-2026-10-10-v2/",
+        "status": "independent-silent-source-and-bounded-stage-pass-supported-renderer-integration-pending",
+        "humanListening": "pending",
+        "publication": "not-evidenced-public",
+        "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-revision02-review.json",
+        "remaining": [
+          "Supported production renderer integration and exact affected visual/transition checks",
+          "Recording-stage brief check, fresh speech and measured cues",
+          "Exact voiced preview, captions, response silence and quiet-note clearance",
+          "Human listening",
+          "Export-stage brief, frozen inputs, full export and complete package gate"
+        ]
+      }
     },
     {
       "priority": 9,
       "canonicalId": "chem-m5-c04",
       "deliveryPart": "C4A pressure, volume and inert gas",
       "state": "prep",
-      "sourcePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/lesson.json",
-      "briefPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/production-brief.json",
-      "evidencePath": "docs/production/parallel-production-board-2026-10-10.json",
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/production-brief.json",
+      "evidencePath": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-conditions-review.json",
       "requiresPublic": [
         "chem-m5-c03"
       ],
       "publication": "not-evidenced-public",
-      "remaining": "Independent selected-source review and library integration, then recording/voiced/export/release workflow. C4B remains separate."
+      "remaining": "Supported production renderer integration and exact affected visual/transition checks; Recording-stage brief check, fresh speech and measured cues; Exact voiced preview, captions, response silence and quiet-note clearance; Human listening; Export-stage brief, frozen inputs, full export and complete package gate",
+      "previousSelection": {
+        "sourcePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/lesson.json",
+        "briefPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4a/production-brief.json",
+        "evidencePath": "docs/production/parallel-production-board-2026-10-10.json",
+        "state": "prep",
+        "remaining": "Independent selected-source review and library integration, then recording/voiced/export/release workflow. C4B remains separate."
+      },
+      "sourceSha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-pressure-2026-10-10-v2/",
+      "overnightCandidate": {
+        "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+        "sourceSha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00",
+        "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/production-brief.json",
+        "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-conditions-review.json",
+        "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-pressure-2026-10-10-v2/",
+        "status": "independent-silent-source-pass-supported-renderer-integration-pending",
+        "humanListening": "pending",
+        "publication": "not-evidenced-public",
+        "previewComponent": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/CandidateConditions.tsx",
+        "previewComponentSha256": "621a5cc98cb28d725be8d2e1d9498071fcb74eef5bca8f09023505a712781160",
+        "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-independent-review.json",
+        "remaining": [
+          "Supported production renderer integration and exact affected visual/transition checks",
+          "Recording-stage brief check, fresh speech and measured cues",
+          "Exact voiced preview, captions, response silence and quiet-note clearance",
+          "Human listening",
+          "Export-stage brief, frozen inputs, full export and complete package gate"
+        ]
+      }
     },
     {
       "priority": 10,
@@ -257,13 +342,41 @@
       "canonicalId": "chem-m5-c04",
       "deliveryPart": "C4B catalysts",
       "state": "prep",
-      "sourcePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
-      "evidencePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/lesson.json",
+      "evidencePath": "docs/production/overnight-module5-2026-10-10/early-audit/catalyst-independent-review.json",
       "requiresPublic": [
         "chem-m5-c03"
       ],
       "publication": "not-evidenced-public",
-      "remaining": "Separate catalyst source and brief with corrected mechanism/composition distinction, then full production workflow."
+      "remaining": "Supported production renderer integration and exact affected visual/transition checks; Recording-stage brief check, fresh speech and measured cues; Exact voiced preview, captions, response silence and quiet-note clearance; Human listening; Export-stage brief, frozen inputs, full export and complete package gate",
+      "previousSelection": {
+        "sourcePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
+        "evidencePath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+        "state": "prep",
+        "remaining": "Separate catalyst source and brief with corrected mechanism/composition distinction, then full production workflow."
+      },
+      "sourceSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/production-brief.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-catalysts-2026-10-10/",
+      "overnightCandidate": {
+        "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/lesson.json",
+        "sourceSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4",
+        "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/production-brief.json",
+        "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/catalyst-independent-review.json",
+        "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-catalysts-2026-10-10/",
+        "status": "independent-silent-source-and-science-pass-supported-renderer-integration-pending",
+        "humanListening": "pending",
+        "publication": "not-evidenced-public",
+        "previewComponent": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx",
+        "previewComponentSha256": "0d3816975c6e2670c1ad0898794b6c0bee6c0f2a5e8ad82ea97a79f982c59931",
+        "remaining": [
+          "Supported production renderer integration and exact affected visual/transition checks",
+          "Recording-stage brief check, fresh speech and measured cues",
+          "Exact voiced preview, captions, response silence and quiet-note clearance",
+          "Human listening",
+          "Export-stage brief, frozen inputs, full export and complete package gate"
+        ]
+      }
     },
     {
       "priority": 12,
@@ -344,5 +457,6 @@
         "Full export and complete public-release gates"
       ]
     }
-  }
+  },
+  "overnightCheckpointPath": "docs/production/overnight-module5-2026-10-10/checkpoint.json"
 }

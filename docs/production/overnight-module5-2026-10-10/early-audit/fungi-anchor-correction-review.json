@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "Pass bounded single-anchor correction. Prior standalone/source review retained with production integration gate still open.",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+    "sha256": "4f147dfc4a44e3822d1f4842b8d1d371c1c6fd1c2b45fd7017e60c2cbaacb3be"
+  },
+  "priorSourceSha256": "48dd484812e97bbd2c8c72556b3ed74a74d3286f705f58d03921148bf40d34e2",
+  "briefSha256": "f2e9fff5b129011f88771cae71fd7d4dcdb7a9ecc187038e7415c0478aebf3c8",
+  "cuePlanSha256": "c7b03f7bd9a0244a71003e5880e802691ebf18648a6b50a73e98b1257cc633b9",
+  "pageInputsSha256": "9e73b60f5cb313faa5ccf977fc38323b7bd46d401b1104ca69751752ca857eb8",
+  "stagedRendererSha256": "ba8cebf475732784e15c5dc3b62e6da50de63f5f79c1e4287229928dc9f43605",
+  "sourceDiff": [
+    {
+      "field": ".scenes.4.estimatedStages.3.anchor",
+      "old": "Introduce the structure before counting sets.",
+      "new": "A chromosome is a DNA-containing structure."
+    }
+  ],
+  "invariants": "Only sexual stage4 anchor changed. All spoken words, scene durations, semantic cue frames, other labels/anchors, full prompt demands and quiet notes unchanged. Current cue plan and brief bind the revised source. Earlier science and unchanged sampled layout evidence remain applicable within their original static scope.",
+  "nativeEvidence": {
+    "sceneId": "fungi-sexual",
+    "localFrame": 418,
+    "frame": 3897,
+    "activeStage": {
+      "at": 373,
+      "phrase": "A chromosome",
+      "label": "Chromosomes contain DNA",
+      "anchor": "A chromosome is a DNA-containing structure.",
+      "status": "estimated-not-measured",
+      "stage": 4
+    },
+    "path": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/stills/fungi-sexual-stage4-480.png",
+    "sha256": "85c8ade32ca0acb3b144fc2e30b014f594adfa34e6df2d5e8b48b5a79cf75542"
+  },
+  "nativeObservation": "Opened exact corrected480 stage4: factual chromosome definition appears as the sole anchor, current node says Chromosomes contain DNA, future stages absent. No clipping or overlap observed in this sampled frame.",
+  "resolvedFinding": "Author instruction replaced by A chromosome is a DNA-containing structure.",
+  "openGate": "Supported LessonVideo/release-entry still ignores estimatedStages. Standalone FungiStagedVideo is the reviewed prototype consumer. Integrate it through a supported opt-in production field/component path before paid narration/export, then rebind exact runtime evidence.",
+  "remaining": [
+    "Supported production integration and exact production scene checks",
+    "Fresh measured speech/cues and response silence/notes clearance",
+    "Whole exact voiced preview, captions/intended-device review and human ears",
+    "Export-stage/frozen inputs/full-package public release gates"
+  ],
+  "limits": "Source invariant/current cue/page binding and one native still only. No full playback, measured audio, human listening or release approval."
+}

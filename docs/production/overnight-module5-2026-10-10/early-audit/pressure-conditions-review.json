@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "Pass bounded source-only condition-tag/reference correction. Current standalone fit/production integration and all voiced gates remain separate.",
+  "lessonSha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00",
+  "parentCandidateSha256": "538c58c9e5f2bc968c358a1671c51ec049c446c15ea1ea8c64ff3f26da062049",
+  "candidate": {
+    "path": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/CandidateConditions.tsx",
+    "sha256": "621a5cc98cb28d725be8d2e1d9498071fcb74eef5bca8f09023505a712781160"
+  },
+  "correctionRecordSha256": "174e2f740a56b13cfa645d0c3c2cacf900ccc53e634919ebb44b1eb804732233",
+  "priorReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-independent-review.json",
+  "verifiedChanges": [
+    "Persistent Fixed temperature label is independent of frame/stage selection in opening and compression.",
+    "Persistent Fixed temperature and volume label is independent of frame/stage selection in inert scene.",
+    "Original piston reference is a solid2px line at opacity0.35; dashed stroke removed.",
+    "Only those display changes plus trailing whitespace differ from preserved original Candidate. Lesson JSON, words, durations, molecule counts, volume change, argon timing and response/notes boards are unchanged."
+  ],
+  "geometryAssessment": "Tag top240/font42/line-height1.2 places it above stage top320 with space for one line in740px width. Source geometry shows no overlap; this is not current native/actual-device proof.",
+  "pageBinding": "Current page-inputs binds the exact CandidateConditions dependency and unchanged lesson hash. Page alone is not full playback evidence.",
+  "nativeUiEvidence": "No current conditions screenshot/continuous UI was inspected in this addendum. Earlier diagnostic piston/inert stills remain attributed in prior review.",
+  "findings": [],
+  "productionGate": "Same concrete integration gate as fungal prototype: standalone CandidateConditions overrides scene selection, but supported release-entry mounts LessonVideo directly and render-release restricts that entry. JSON-only production would not reproduce these inspected piston/inert/stable boards. Integrate the accepted selected consumer behavior into the supported production renderer before paid narration/voiced or export gates.",
+  "pending": [
+    "Current conditions/native or Player fit check, including late compression/inert states",
+    "Supported production renderer integration and exact runtime/props review",
+    "Fresh recording, measured cues/hold/notes quiet interval and captions",
+    "Continuous exact voiced preview and human listening",
+    "Export-stage brief/frozen inputs and complete package/release gates"
+  ],
+  "limits": "Read-only source diff and page dependency inspection. No human ears, whole watch, physical-device or recording/export approval."
+}

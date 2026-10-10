@@ -519,3 +519,16 @@ scripts/assemble-module5-starters-voiced.mjs -text whitespace=blank-at-eol,blank
 scripts/quiet-reading.test.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 
 docs/production/module5-plants-notes-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve exact overnight selected source, cue and review evidence.
+docs/production/overnight-module5-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Immutable author and compiled snapshots retain their fingerprinted whitespace.
+docs/production/overnight-module5-2026-10-10/biology-fungi/author.cjs whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/README.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/pre-anchor-correction/index.html whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/pre-anchor-correction/review.js whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/chemistry-catalysts/build.mjs whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/chemistry-pressure/Candidate*.tsx whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+docs/production/overnight-module5-2026-10-10/chemistry-pressure/build*.mjs whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

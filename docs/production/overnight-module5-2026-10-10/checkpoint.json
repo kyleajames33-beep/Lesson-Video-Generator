@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "status": "bounded-parallel-preparation-complete-awaiting-owner-listening-and-production-integration",
+  "reviewDesk": "http://127.0.0.1:8778/module5-morning-review-2026-10-10/",
+  "models": "gpt-6.1-sol authoring and independent review",
+  "selected": {
+    "plants": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+      "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-v2-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-plants-voiced-2026-10-10-v2/",
+      "status": "measured-source-and-provenance-pass-bounded-voiced-UI-checked",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "durationSeconds": 493.03333333333336,
+      "semanticCues": 56,
+      "responseSilenceSeconds": 12,
+      "uiEvidencePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-observations.json",
+      "remaining": [
+        "Whole exact voiced viewing, captions and controls-hidden response visibility",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete package gate"
+      ]
+    },
+    "pressure": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+      "sourceSha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-conditions-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-pressure-2026-10-10-v2/",
+      "status": "independent-silent-source-pass-supported-renderer-integration-pending",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "previewComponent": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/CandidateConditions.tsx",
+      "previewComponentSha256": "621a5cc98cb28d725be8d2e1d9498071fcb74eef5bca8f09023505a712781160",
+      "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-independent-review.json",
+      "remaining": [
+        "Supported production renderer integration and exact affected visual/transition checks",
+        "Recording-stage brief check, fresh speech and measured cues",
+        "Exact voiced preview, captions, response silence and quiet-note clearance",
+        "Human listening",
+        "Export-stage brief, frozen inputs, full export and complete package gate"
+      ]
+    },
+    "fungi": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+      "sourceSha256": "4f147dfc4a44e3822d1f4842b8d1d371c1c6fd1c2b45fd7017e60c2cbaacb3be",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-anchor-correction-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-biology-fungi-2026-10-10-v2/",
+      "status": "independent-silent-source-and-bounded-stage-pass-supported-renderer-integration-pending",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-revision02-review.json",
+      "remaining": [
+        "Supported production renderer integration and exact affected visual/transition checks",
+        "Recording-stage brief check, fresh speech and measured cues",
+        "Exact voiced preview, captions, response silence and quiet-note clearance",
+        "Human listening",
+        "Export-stage brief, frozen inputs, full export and complete package gate"
+      ]
+    },
+    "catalysts": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/lesson.json",
+      "sourceSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/catalyst-independent-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-catalysts-2026-10-10/",
+      "status": "independent-silent-source-and-science-pass-supported-renderer-integration-pending",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "previewComponent": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx",
+      "previewComponentSha256": "0d3816975c6e2670c1ad0898794b6c0bee6c0f2a5e8ad82ea97a79f982c59931",
+      "remaining": [
+        "Supported production renderer integration and exact affected visual/transition checks",
+        "Recording-stage brief check, fresh speech and measured cues",
+        "Exact voiced preview, captions, response silence and quiet-note clearance",
+        "Human listening",
+        "Export-stage brief, frozen inputs, full export and complete package gate"
+      ]
+    }
+  },
+  "openingAudit": "docs/production/overnight-module5-2026-10-10/early-audit/current-four-video-audit.json",
+  "integrationPlan": "docs/production/overnight-module5-2026-10-10/early-audit/next-integration-actions.md",
+  "policy": "Earliest missing C1/B1, then C2/B2 in separate subject tracks. Later preparation does not establish public availability or full dotpoint/practical coverage.",
+  "humanListening": "pending",
+  "newPublicReleases": 0,
+  "limits": "Native stills, source reviews, measured PCM and bounded UI execution remain distinct from complete watching and human listening. Pressure/fungi/catalysts are standalone prototypes requiring supported renderer integration.",
+  "mediaCheckpointPath": "docs/production/overnight-module5-2026-10-10/media-backup/checkpoint.json",
+  "pageInputComparisonPath": "docs/production/overnight-module5-2026-10-10/page-input-comparison.json",
+  "exportInputs": "unfrozen; current compiled pages preserved; plant transitive Module 7/8 source drift must be reconciled before a new runtime freeze",
+  "mediaBackupStatus": "published-verified"
+}

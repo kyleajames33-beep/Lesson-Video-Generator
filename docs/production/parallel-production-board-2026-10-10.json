@@ -858,5 +858,141 @@
     "uiEvidencePath": "docs/production/module5-plants-notes-2026-10-10/notes-ui-observations.json",
     "status": "source-and-recording-preflight-pass-silent-notes-fit-checked",
     "remaining": "Fresh narration and measured protected intervals, exact whole voiced review/listening/export/package gates. No public plant release."
+  },
+  "overnightRun": {
+    "date": "2026-10-10",
+    "authorization": "User asked root to dispatch specialist parallel agents for next videos, review in the morning. Sol 6.1 remains selected.",
+    "status": "bounded-parallel-preparation-complete-awaiting-owner-listening-and-production-integration",
+    "owners": [
+      {
+        "agent": "/root/night_chem_pressure_author",
+        "role": "Chemistry pressure and catalysts author",
+        "ownedPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/",
+        "state": "bounded-authoring-and-review-complete"
+      },
+      {
+        "agent": "/root/night_bio_fungi_author",
+        "role": "Biology fungi author and media-backup specialist",
+        "ownedPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/",
+        "state": "bounded-authoring-and-review-complete"
+      },
+      {
+        "agent": "/root/night_early_video_audit",
+        "role": "Independent teaching/science/cue reviewer",
+        "ownedPath": "docs/production/overnight-module5-2026-10-10/early-audit/",
+        "state": "opening-plant-pressure-fungi-catalyst-independent-reviews-complete"
+      },
+      {
+        "agent": "/root",
+        "role": "Plant recording, measured integration and morning review desk",
+        "ownedPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/",
+        "state": "measured-plant-and-morning-desk-complete-listening-pending"
+      }
+    ],
+    "publicationPolicy": "Foundations first in independent subject tracks. No new public release or human listening pass inferred.",
+    "models": "All authoring/review specialists gpt-6.1-sol",
+    "plantCandidate": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+      "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-v2-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-plants-voiced-2026-10-10-v2/",
+      "status": "measured-source-and-provenance-pass-bounded-voiced-UI-checked",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "durationSeconds": 493.03333333333336,
+      "semanticCues": 56,
+      "responseSilenceSeconds": 12,
+      "uiEvidencePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-observations.json",
+      "remaining": [
+        "Whole exact voiced viewing, captions and controls-hidden response visibility",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete package gate"
+      ]
+    },
+    "checkpointPath": "docs/production/overnight-module5-2026-10-10/checkpoint.json",
+    "reviewDesk": "http://127.0.0.1:8778/module5-morning-review-2026-10-10/",
+    "pressureCandidate": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/lesson.json",
+      "sourceSha256": "6d511625fce07d687cf7ac7972d01f5ca8de27d7d74547298ecf37cf21d9cd00",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-conditions-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-pressure-2026-10-10-v2/",
+      "status": "independent-silent-source-pass-supported-renderer-integration-pending",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "previewComponent": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/CandidateConditions.tsx",
+      "previewComponentSha256": "621a5cc98cb28d725be8d2e1d9498071fcb74eef5bca8f09023505a712781160",
+      "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/pressure-independent-review.json",
+      "remaining": [
+        "Supported production renderer integration and exact affected visual/transition checks",
+        "Recording-stage brief check, fresh speech and measured cues",
+        "Exact voiced preview, captions, response silence and quiet-note clearance",
+        "Human listening",
+        "Export-stage brief, frozen inputs, full export and complete package gate"
+      ]
+    },
+    "fungiCandidate": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+      "sourceSha256": "4f147dfc4a44e3822d1f4842b8d1d371c1c6fd1c2b45fd7017e60c2cbaacb3be",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-anchor-correction-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-biology-fungi-2026-10-10-v2/",
+      "status": "independent-silent-source-and-bounded-stage-pass-supported-renderer-integration-pending",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-revision02-review.json",
+      "remaining": [
+        "Supported production renderer integration and exact affected visual/transition checks",
+        "Recording-stage brief check, fresh speech and measured cues",
+        "Exact voiced preview, captions, response silence and quiet-note clearance",
+        "Human listening",
+        "Export-stage brief, frozen inputs, full export and complete package gate"
+      ]
+    },
+    "catalystCandidate": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/lesson.json",
+      "sourceSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/catalyst-independent-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-chemistry-catalysts-2026-10-10/",
+      "status": "independent-silent-source-and-science-pass-supported-renderer-integration-pending",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "previewComponent": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/Candidate.tsx",
+      "previewComponentSha256": "0d3816975c6e2670c1ad0898794b6c0bee6c0f2a5e8ad82ea97a79f982c59931",
+      "remaining": [
+        "Supported production renderer integration and exact affected visual/transition checks",
+        "Recording-stage brief check, fresh speech and measured cues",
+        "Exact voiced preview, captions, response silence and quiet-note clearance",
+        "Human listening",
+        "Export-stage brief, frozen inputs, full export and complete package gate"
+      ]
+    },
+    "integrationPlan": "docs/production/overnight-module5-2026-10-10/early-audit/next-integration-actions.md",
+    "mediaCheckpointPath": "docs/production/overnight-module5-2026-10-10/media-backup/checkpoint.json",
+    "mediaBackupStatus": "published-verified",
+    "pageInputComparisonPath": "docs/production/overnight-module5-2026-10-10/page-input-comparison.json"
+  },
+  "currentPlantVoicedSelection": {
+    "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+    "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+    "briefPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/production-brief.json",
+    "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-v2-review.json",
+    "reviewUrl": "http://127.0.0.1:8778/overnight-plants-voiced-2026-10-10-v2/",
+    "status": "measured-source-and-provenance-pass-bounded-voiced-UI-checked",
+    "humanListening": "pending",
+    "publication": "not-evidenced-public",
+    "durationSeconds": 493.03333333333336,
+    "semanticCues": 56,
+    "responseSilenceSeconds": 12,
+    "uiEvidencePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-observations.json",
+    "remaining": [
+      "Whole exact voiced viewing, captions and controls-hidden response visibility",
+      "Human listening",
+      "Export-stage brief and frozen inputs",
+      "Full export and complete package gate"
+    ]
   }
 }

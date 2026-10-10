@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {build} from 'esbuild';
+import {sha256} from '../../../../scripts/lib/playback-assembly.mjs';
+const base='docs/production/overnight-module5-2026-10-10/plants-voiced';
+const page='overnight-plants-voiced-2026-10-10',output=`out/prototypes/${page}`;
+if(fs.existsSync(`${output}/index.html`))throw Error('Preserve existing page');
+const lesson=JSON.parse(fs.readFileSync(`${base}/measured/lesson.json`));
+if(JSON.stringify(lesson).includes(String.fromCodePoint(0x2014)))throw Error('Prohibited punctuation');
+const assets=lesson.scenes.filter(s=>s.voiceover?.text).map(s=>({path:s.voiceover.audioFile,sha256:sha256(fs.readFileSync(s.voiceover.audioFile))}));
+fs.mkdirSync(output,{recursive:true});fs.cpSync('public/fonts',`${output}/public/fonts`,{recursive:true});
+for(const asset of assets){const target=`${output}/${asset.path}`;fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(asset.path,target);}
+const entry=`${base}/Review.tsx`;
+const result=await build({entryPoints:[entry],outfile:`${output}/review.js`,bundle:true,format:'iife',platform:'browser',target:'chrome110',jsx:'automatic',define:{'process.env.NODE_ENV':'"production"'},minify:true,metafile:true});
+const script=fs.readFileSync(`${output}/review.js`,'utf8').replaceAll('</script','<\\/script').replaceAll(String.fromCodePoint(0x2014),'\\u2014');
+const css=fs.readFileSync(`${output}/review.css`,'utf8');
+const html=`<!doctype html><html lang="en-AU"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plant reproduction | HSCScience review</title><style>${css}body{margin:0;background:#f7f7f5;color:#17251f;font:18px/1.5 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:24px}.controls{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0}label{display:flex;gap:8px;align-items:center}select,button{font:inherit;padding:8px;border:1px solid #aaa;border-radius:6px;background:white}details{border:1px solid #ccc;padding:16px}h1{font-size:32px}@media(max-width:600px){main{padding:12px}label{flex-wrap:wrap}select{max-width:100%}}</style><div id="root"></div><script>window.remotion_staticBase="/${page}/public";</script><script>${script}</script></html>`;
+fs.writeFileSync(`${output}/index.html`,html,{flag:'wx'});
+const inputs=[...new Set([entry,`${base}/build-review.mjs`,...Object.keys(result.metafile.inputs).filter(p=>!p.startsWith('node_modules/')&&!p.startsWith('(disabled):')).map(p=>p.replace(/ with \{ type: 'json' \}$/,''))])].sort();
+fs.writeFileSync(`${output}/page-inputs.json`,JSON.stringify({schemaVersion:1,scope:'Exact measured voiced Player and captions. Whole continuous watch, human listening, export and publication pending.',pageSha256:sha256(html),assets,inputs:inputs.map(path=>({path,sha256:sha256(fs.readFileSync(path))})),fonts:fs.readdirSync('public/fonts').filter(f=>fs.statSync(`public/fonts/${f}`).isFile()).map(f=>({path:`public/fonts/${f}`,sha256:sha256(fs.readFileSync(`public/fonts/${f}`))}))},null,2)+'\n',{flag:'wx'});
+console.log(`http://127.0.0.1:8778/${page}/`);

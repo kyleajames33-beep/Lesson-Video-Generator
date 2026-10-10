@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "correct-targeted-display-cue-before-voiced-review",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured/lesson.json",
+    "sha256": "72f7dc6686d672bfb4eec573380ced4f30adc70eff3b4c3f75e9f998c8cddfc8"
+  },
+  "briefSha256": "223efb07521b7b12b8921d9351c337e2cc187ce3cd05eb8ab4e0ea54b141707c",
+  "reportSha256": "58b06a10cc9d5b0ffc3fcd54b7430ecaddec640cea0bb1b0f2d88e27bda9be87",
+  "parentSha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd",
+  "counts": {
+    "spokenBlocks": 11,
+    "rawFiles": 33,
+    "requests": 11,
+    "sampleIdentityScenes": 11,
+    "assembledSidecars": 11,
+    "measuredCues": 47
+  },
+  "summary": "All selected spoken words retained. Provider requests and raw/assembled provenance hashes checked. Re-decoded all eleven raw MP3 and WAV pairs: every source PCM sample identical, only zero frame-padding/response samples appended. All measured descriptor cues resolve to their written fields; scientific diagram props retain modes with only phase timing changed. Protected prompt is sample-exact 12 seconds; feedback mounts at its hold end under 24-frame transition. Quiet notes start 60 frames after summary audio ends.",
+  "findings": [
+    {
+      "name": "feedbackPollenAlias",
+      "detail": {
+        "current": [
+          59,
+          39
+        ],
+        "expected": [
+          0,
+          59
+        ],
+        "reason": "Pollination has happened maps line0; pollen reached the stigma maps line1."
+      }
+    }
+  ],
+  "stageTimingAssessment": "Unmeasured inherited stage-line aliases are clamped to the measured stage start by Module5EvidenceBoard. Worked sexual lines are 2 and 8 frames later than measured stage cues, not early answers. One feedback pollen-transfer line alias is mapped to the wrong line index and should be corrected without speech changes.",
+  "remaining": [
+    "Correct feedback pollen-transfer line alias, then bind/review corrected exact source.",
+    "Actual native/Player scene and caption checks, complete voiced viewing and human listening.",
+    "Export-stage brief, frozen inputs, full export and full-package/public release gates."
+  ],
+  "limits": "Source, provenance, decoded-sample and renderer-contract inspection only. No human ears, continuous UI watch, physical-device or release pass.",
+  "passedCheckCount": 149,
+  "failedCheckCount": 1,
+  "keyTimingChecks": {
+    "protectedSilence": {
+      "pass": true,
+      "detail": {
+        "localFrames": {
+          "startFrame": 1095,
+          "endFrame": 1455
+        },
+        "samples": 576000
+      }
+    },
+    "feedbackMount": {
+      "pass": true,
+      "detail": {
+        "promptGlobalStart": 10948,
+        "holdGlobalEnd": 12403,
+        "feedbackGlobalStart": 12403
+      }
+    },
+    "holdCaptionAbsence": {
+      "pass": true,
+      "detail": "No prompt caption intersects protected hold"
+    },
+    "notesClearance": {
+      "pass": true,
+      "detail": {
+        "summaryEnd": 1064,
+        "notesIncoming": 1124
+      }
+    }
+  }
+}

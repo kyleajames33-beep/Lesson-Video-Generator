@@ -66,7 +66,7 @@
   "plants": {
     "source": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
     "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97",
-    "state": "Parent silent visuals preserved. Additive quiet notes source/recording preflight pass and actual notes-only960/480 fit checked. No fresh speech or measured parent-to-notes clearance.",
+    "state": "Fresh measured plant candidate available. Parent visuals and quiet notes preserved. Exact source/provenance review and bounded voiced UI checked; full viewing/listening/export/release pending.",
     "additiveNotesCandidate": {
       "sourcePath": "docs/production/module5-plants-notes-2026-10-10/lesson.json",
       "sourceSha256": "4ee66f2e08c917f5ced248f3cf45902ec12071e28ab88a4c726533f33c2067fd",
@@ -77,6 +77,26 @@
       "uiEvidencePath": "docs/production/module5-plants-notes-2026-10-10/notes-ui-observations.json",
       "status": "source-and-recording-preflight-pass-silent-notes-fit-checked",
       "remaining": "Fresh narration and measured protected intervals, exact whole voiced review/listening/export/package gates. No public plant release."
+    },
+    "currentVoicedCandidate": {
+      "sourcePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/lesson.json",
+      "sourceSha256": "0c412b18325ad13bf3664a7adb89d329f3ce785d8c6adcaf975a27ee899b2420",
+      "briefPath": "docs/production/overnight-module5-2026-10-10/plants-voiced/measured-v2/production-brief.json",
+      "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/plant-measured-v2-review.json",
+      "reviewUrl": "http://127.0.0.1:8778/overnight-plants-voiced-2026-10-10-v2/",
+      "status": "measured-source-and-provenance-pass-bounded-voiced-UI-checked",
+      "humanListening": "pending",
+      "publication": "not-evidenced-public",
+      "durationSeconds": 493.03333333333336,
+      "semanticCues": 56,
+      "responseSilenceSeconds": 12,
+      "uiEvidencePath": "docs/production/overnight-module5-2026-10-10/plants-voiced/ui-observations.json",
+      "remaining": [
+        "Whole exact voiced viewing, captions and controls-hidden response visibility",
+        "Human listening",
+        "Export-stage brief and frozen inputs",
+        "Full export and complete package gate"
+      ]
     }
   },
   "organismGroupOrder": [
@@ -89,5 +109,24 @@
     "evidence": "docs/production/user-approved-release-2026-10-10.json",
     "biologyIncluded": false
   },
-  "limitation": "Source, static samples and pilot checks do not supply missing whole-lesson playback, human listening, practical conduct or release approval. Frozen media and source packages were not modified."
+  "limitation": "Source, static samples and pilot checks do not supply missing whole-lesson playback, human listening, practical conduct or release approval. Frozen media and source packages were not modified.",
+  "fungi": {
+    "sourcePath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+    "sourceSha256": "4f147dfc4a44e3822d1f4842b8d1d371c1c6fd1c2b45fd7017e60c2cbaacb3be",
+    "briefPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/production-brief.json",
+    "independentReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-anchor-correction-review.json",
+    "reviewUrl": "http://127.0.0.1:8778/overnight-biology-fungi-2026-10-10-v2/",
+    "status": "independent-silent-source-and-bounded-stage-pass-supported-renderer-integration-pending",
+    "humanListening": "pending",
+    "publication": "not-evidenced-public",
+    "priorScienceReview": "docs/production/overnight-module5-2026-10-10/early-audit/fungi-revision02-review.json",
+    "remaining": [
+      "Supported production renderer integration and exact affected visual/transition checks",
+      "Recording-stage brief check, fresh speech and measured cues",
+      "Exact voiced preview, captions, response silence and quiet-note clearance",
+      "Human listening",
+      "Export-stage brief, frozen inputs, full export and complete package gate"
+    ]
+  },
+  "overnightCheckpointPath": "docs/production/overnight-module5-2026-10-10/checkpoint.json"
 }

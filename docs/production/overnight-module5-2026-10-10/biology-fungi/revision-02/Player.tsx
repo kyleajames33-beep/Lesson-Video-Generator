@@ -1,0 +1,11 @@
+import React, {useRef, useState} from 'react';
+import {createRoot} from 'react-dom/client';
+import {Player, type PlayerRef} from '@remotion/player';
+import {FungiStagedVideo as LessonVideo} from './FungiStagedVideo';
+import {lessonTimeline} from '../../../../../src/lesson/timeline.mjs';
+import type {LessonData} from '../../../../../src/lesson/types';
+import source from './lesson.json';
+const lesson=source as unknown as LessonData;
+const timeline=lessonTimeline(lesson);
+function Review(){const ref=useRef<PlayerRef>(null);const [width,setWidth]=useState(960);return <main><h1>Fungi: budding and spores</h1><p>Full silent Remotion candidate. New speech has not been recorded. Cues and duration are drafting estimates. Listening, continuous visual review and release approval remain pending.</p><button onClick={()=>setWidth(width===960?480:960)}>Viewing width: {width}px</button><div style={{maxWidth:width,width:'100%',margin:'20px auto'}}><Player ref={ref} component={LessonVideo} inputProps={{lesson}} durationInFrames={timeline.durationInFrames} fps={30} compositionWidth={1920} compositionHeight={1080} controls showVolumeControls={false} style={{width:'100%'}}/></div><div className="jumps">{timeline.scenes.map(e=><button key={e.scene.id} onClick={()=>ref.current?.seekTo(e.startFrame+90)}>{'heading' in e.scene?e.scene.heading:e.scene.id}</button>)}</div><details><summary>Candidate narration</summary>{lesson.scenes.filter(s=>s.voiceover).map(s=><section key={s.id}><h2>{'heading' in s?s.heading:s.id}</h2><p>{s.voiceover?.text}</p></section>)}</details></main>};
+createRoot(document.getElementById('root')!).render(<Review/>);

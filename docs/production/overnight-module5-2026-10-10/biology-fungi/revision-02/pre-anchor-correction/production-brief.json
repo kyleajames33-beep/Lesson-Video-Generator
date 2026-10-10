@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+    "lessonSha256": "48dd484812e97bbd2c8c72556b3ed74a74d3286f705f58d03921148bf40d34e2"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "bio-m5-b01 fusion versus no fusion; DNA as inherited information. Current plants contribution precedes this candidate. Introduce nucleus, mitosis, hyphae, sporangium, haploid, diploid and meiosis in this lesson.",
+    "startsWith": "A spore alone cannot identify the pathway that formed it.",
+    "stopsAfter": "Explain yeast budding, supplied Rhizopus mitotic spores and simplified yeast fusion/meiosis cycle. Classify these supplied pathways and qualify establishment. No taxonomy survey, chromosome-division detail, fungal agriculture, experiments or whole four-group coverage.",
+    "nextLesson": "Bacteria contribution within canonical bio-m5-b02b, then protists. Prerequisite release B1/B2a/plants comes first. Canonical playlist order differs from upload chronology."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/visual-design-handbook.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/module5-release-priority-2026-10-10.json",
+    "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/source-notes.md",
+    "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/cue-plan.json"
+  ],
+  "teaching": {
+    "task": "Explain how named fungal reproductive cells form; classify supplied pathways using mechanism evidence.",
+    "causalExplanation": "DNA copying and nuclear division supply the bud with inherited information. Dispersal gives spores new locations, while suitable conditions permit germination. Nuclear fusion joins chromosome sets; meiosis reduces them. Spore production alone is insufficient classification evidence.",
+    "conversationalApproach": "A disclosed opening question leads into named examples, plain meanings and reasons before classification. Short on-screen anchors support narration rather than repeat it.",
+    "openingDecision": "Useful contrast: both sexual and asexual pathways can produce spores. This is an explained opening, not a protected retrieval task.",
+    "understandingCheck": "Separate stimulus and feedback. Both cases and all three demands remain visible. Estimated speech plus 360 response frames plus a separate 24-frame transition tail means feedback first mounts at estimated hold end. No measured silence claim. Fresh alignment must recalculate this interval.",
+    "curriculumScope": "2017 Biology Module 5, canonical bio-m5-b02b fungal contribution after plants, candidate B-fungi action only. Cached official route extract p1025/p1027. Coverage remains pending exact source/action review. This does not satisfy plant, bacteria, protist or practical actions.",
+    "quietNotes": "Optional silent 18-second copying scene follows explanation and handoff. Four short essentials already taught. Pause supports longer copying; no new narrated reasoning.",
+    "cueLimit": "Docs-owned FungiStagedVideo supplies one current FlowDiagram node and one necessary anchor, replacing earlier stage content at phrase-based planning estimates. Future stages are absent from rendered props. Existing scene durations and every spoken word remain exact. Measured alignment and exact voiced review remain pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "fungi-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Short stable anchors retain current question and necessary supplied facts. Earlier case and answer history clear between scenes.",
+      "narrationCue": "Silent identity or optional copying scene.",
+      "motionPurpose": "Short existing entrance settles to a reading/thinking hold.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-hook",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx",
+      "teachingReason": "Short stable anchors retain current question and necessary supplied facts. Earlier case and answer history clear between scenes.",
+      "narrationCue": "Imagine finding a fungal spore on a surface. Can you tell whether it came from sexual or asexual reproduction? The spore alone does not settle that question. Fungi can produce spores through either pathway. We need to know how it was formed. Today we will use two named examples to explain that difference: budding in baker's yeast, and asexual spores in bread mould. Then we will connect yeast spores to a sexual cycle.",
+      "motionPurpose": "Short existing entrance settles to a reading/thinking hold.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-yeast",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx and registered src/slides/diagrams/FlowDiagram.tsx",
+      "teachingReason": "One current causal stage and its necessary anchor. Future stages and unrelated earlier facts are absent. Existing process primitive is a model, not cellular anatomy.",
+      "narrationCue": "Baker's yeast, Saccharomyces cerevisiae, is a single-celled fungus. In budding, a small outgrowth develops on the parent cell. The cell copies its DNA, the information it passes on. Its nucleus, the compartment containing that DNA, divides by mitosis. Mitosis separates copied genetic information into two nuclei. One nucleus enters the growing bud. The bud can then separate as a daughter cell. This event is asexual because no reproductive cells or nuclei fuse. Copying supports similar inherited information, although mutations, changes in DNA, can still occur.",
+      "motionPurpose": "Current node enters at its semantic phrase estimate, then holds. Replace the node and anchor at the next cue. Estimates require fresh measured alignment.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-mould",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx and registered src/slides/diagrams/FlowDiagram.tsx",
+      "teachingReason": "One current causal stage and its necessary anchor. Future stages and unrelated earlier facts are absent. Existing process primitive is a model, not cellular anatomy.",
+      "narrationCue": "Now consider the asexual pathway of bread mould, Rhizopus stolonifer. Its body includes hyphae: thin growing threads. A sporangium is a spore-containing structure at the tip of a specialised stalk. In this pathway, spores form through mitosis without fusion. Releasing them allows dispersal, movement away from the parent fungus. A spore that reaches suitable conditions can germinate, meaning it begins to grow. It produces hyphae that develop into a new fungal body. Dispersal creates opportunities, but landing somewhere does not guarantee growth. The spore still needs suitable moisture, nutrients and other conditions.",
+      "motionPurpose": "Current node enters at its semantic phrase estimate, then holds. Replace the node and anchor at the next cue. Estimates require fresh measured alignment.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-sexual",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx and registered src/slides/diagrams/FlowDiagram.tsx",
+      "teachingReason": "One current causal stage and its necessary anchor. Future stages and unrelated earlier facts are absent. Existing process primitive is a model, not cellular anatomy.",
+      "narrationCue": "The same yeast species has another pathway. In a simplified baker's yeast model, compatible cells of different mating types can join. Their nuclei then fuse, bringing chromosome sets together. A chromosome is a DNA-containing structure. A haploid cell has one set of chromosomes; a diploid cell has two. Nuclear fusion produces a diploid cell. This is part of sexual reproduction. Compatibility matters: simply putting any two yeast cells together does not establish that fusion will occur. Fungi do not all use the sperm-and-egg arrangement we met in animals and flowering plants.",
+      "motionPurpose": "Current node enters at its semantic phrase estimate, then holds. Replace the node and anchor at the next cue. Estimates require fresh measured alignment.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-meiosis",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx and registered src/slides/diagrams/FlowDiagram.tsx",
+      "teachingReason": "One current causal stage and its necessary anchor. Future stages and unrelated earlier facts are absent. Existing process primitive is a model, not cellular anatomy.",
+      "narrationCue": "Under suitable nutrient-limiting conditions, a diploid baker's yeast cell can undergo meiosis and form spores. Meiosis is a cell division that reduces two chromosome sets to one and can reshuffle inherited information. The resulting haploid nuclei are packaged into spores. This spore formation belongs to the sexual life cycle we have just traced: fusion brought sets together, and meiosis separates them again. It is different from the mitotic spores in our bread-mould example. So the word spore describes a reproductive cell, not a guarantee that the pathway was asexual. These are selected examples, not a rule that all fungi have the same life cycle.",
+      "motionPurpose": "Current node enters at its semantic phrase estimate, then holds. Replace the node and anchor at the next cue. Estimates require fresh measured alignment.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-check",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx",
+      "teachingReason": "Short stable anchors retain current question and necessary supplied facts. Earlier case and answer history clear between scenes.",
+      "narrationCue": "Case A: a bread-mould culture produces spores by mitosis, with no fusion. Case B: compatible yeast cells and their nuclei fuse, and a diploid cell later forms spores through meiosis. Classify each supplied pathway as sexual or asexual, and give the evidence for your choice. Why would the word spore alone be insufficient? Pause here if you want more thinking time.",
+      "motionPurpose": "Short existing entrance settles to a reading/thinking hold.",
+      "holdPurpose": "Protected estimated 12 seconds. No feedback scene mounts before interval ends. All demands and supplied conditions remain."
+    },
+    {
+      "sceneId": "fungi-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx",
+      "teachingReason": "Short stable anchors retain current question and necessary supplied facts. Earlier case and answer history clear between scenes.",
+      "narrationCue": "Case A is asexual. The supplied mitosis-and-no-fusion evidence explains that classification. Case B traces a sexual pathway: compatible cells and nuclei fuse, followed later by meiosis and spore formation. Both cases end with spores, but they reach that result differently. If you classified both as asexual just because spores were named, return to the events that produced them. No observation about the final shape can replace that pathway evidence.",
+      "motionPurpose": "Short existing entrance settles to a reading/thinking hold.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-handoff",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/ConceptSlide.tsx",
+      "teachingReason": "Short stable anchors retain current question and necessary supplied facts. Earlier case and answer history clear between scenes.",
+      "narrationCue": "When you meet a fungal reproductive event, ask how the new cell was formed. Budding in our yeast example grows a daughter cell without fusion. Our bread-mould example makes mitotic spores. Yeast can also form spores within a sexual cycle involving nuclear fusion and meiosis. Keep those examples scoped to their organisms and supplied conditions. Next we will consider bacteria, where cell division and exchanges of DNA need to be distinguished. You can pause the optional notes screen to record the essentials.",
+      "motionPurpose": "Short existing entrance settles to a reading/thinking hold.",
+      "holdPurpose": "Retain useful context through the current explanation. Durations estimated at 140 words/minute plus 90-frame tail."
+    },
+    {
+      "sceneId": "fungi-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Short stable anchors retain current question and necessary supplied facts. Earlier case and answer history clear between scenes.",
+      "narrationCue": "Silent identity or optional copying scene.",
+      "motionPurpose": "Short existing entrance settles to a reading/thinking hold.",
+      "holdPurpose": "18-second optional silent scene. Stable copying begins after entrances settle. Pause for more time."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "/root/night_early_video_audit",
+  "outcome": "No new material source blocker found across the four current selections. Complete exact continuous voiced review and human listening before claiming student-ready release.",
+  "scope": "Independent current source, brief, caption-token, boundary and selected saved image inspection. No source, audio, brief flag or frozen input changed.",
+  "evidenceSeparation": {
+    "source": "All four exact lesson files and current briefs inspected; hashes recomputed. No U+2014 in selected sources. All selected WAV paths exist. All 57 starter invariant media/alignment/assembly asset hashes match; prior PCM/cue audits reused without rerunning them. C2/B2 original voiced scenes equal narrated-v5 parent scenes semantically.",
+    "static": "Opened preserved C1 worked-example 480px, B1 lineage 480px and B2 fit-v3 quiet-notes 480px UI images. Opened adjusted native C2 end-hold, B2 end-hold and B2 bird explanation. Native C2 header is an older 18-count; its unchanged working content is supported by parent-scene equality, not evidence of current counter appearance.",
+    "continuousPlayback": "Not performed by this reviewer. Existing actual Player samples are explicitly bounded and do not supply whole-lesson watching.",
+    "humanListening": "Not performed. Naturalness, pronunciation and perceived pace remain pending.",
+    "physicalDevice": "Not performed. Browser-sized images are not physical-device evidence.",
+    "release": "No export, full-package gate or publication approval supplied."
+  },
+  "reusedEvidence": [
+    "docs/production/module5-starters-2026-10-10/measured-independent-review.json",
+    "docs/production/module5-starters-2026-10-10/measured-v2-invariant-review.json",
+    "docs/production/module5-starters-2026-10-10/measured-v2-ui-observations.json",
+    "docs/production/module5-seconds-notes-2026-10-10/fit-v3-review-addendum.json",
+    "docs/production/module5-seconds-notes-2026-10-10/voiced-ui-observations-v3.json",
+    "docs/production/module5-c2-b2-simple-working-v5-review-2026-10-10.md"
+  ],
+  "videos": [
+    {
+      "id": "C1",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/chemistry/measured-v2/lesson.json",
+      "sourceSha256": "615d869a4ea4ae501b31b3e0c4ec2f9f0c51b1b4a94d353944caaf633445e9ee",
+      "briefSha256": "b7ca80f1df3084ff7cc343e1788698531902fba08c751575fb6f13d6a8cf991e",
+      "focus": "Why can an unchanged mixture still be reacting?",
+      "sourceJudgement": "The equal traffic explanation distinguishes rate from concentration, defines the matter boundary, and treats unchanged colour as insufficient evidence. The static contrast is explicitly mechanical. No K, ICE or disturbance rules are introduced.",
+      "sourceOutcome": "No material science or boundary correction found. Preserve selected narrated words.",
+      "durationSeconds": 409.567,
+      "responseHold": {
+        "sceneId": "quick-check",
+        "localFrames": {
+          "startFrame": 977,
+          "endFrame": 1337
+        },
+        "seconds": 12.0,
+        "captionIntersections": []
+      },
+      "quietNotes": {
+        "unvoiced": true,
+        "captionTokens": 0,
+        "frames": 450,
+        "speechEndsBeforeIncomingOverlapFrames": 60
+      },
+      "captionTextMismatchScenes": [],
+      "findings": [
+        {
+          "priority": "P2-review-check",
+          "type": "caption-controls-readability",
+          "releaseBlocker": false,
+          "description": "In the preserved 480px worked-example Player screenshot, transient controls cover part of the current reasoning. Small detailed values also require intended-device checking. The screenshot predates only the catalogue-count metadata change, so teaching content is reusable. It does not establish a permanent export collision.",
+          "action": "Check the exact current worked example and quick-check at intended size with captions, then with controls hidden and visible. Treat an essential-text collision that persists in the actual student viewing mode as a blocker; do not restyle from this old screenshot alone."
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "sourcePath": "docs/production/module5-starters-2026-10-10/biology/measured-v2/lesson.json",
+      "sourceSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+      "briefSha256": "7420a18e5dd5431205b40f630662c34dd564ee604a2a8e24a1247d7b40b18ae5",
+      "focus": "How does reproduction connect generations?",
+      "sourceJudgement": "Gamete fusion is the classification rule, including self-fertilisation. Clone mutation, environmental appearance, inherited susceptibility and survival are separated. Detailed organism mechanisms remain the next handoff.",
+      "sourceOutcome": "No material science or boundary correction found. Preserve selected narrated words.",
+      "durationSeconds": 390.1,
+      "responseHold": {
+        "sceneId": "quick-check",
+        "localFrames": {
+          "startFrame": 644,
+          "endFrame": 884
+        },
+        "seconds": 8.0,
+        "captionIntersections": []
+      },
+      "quietNotes": {
+        "unvoiced": true,
+        "captionTokens": 0,
+        "frames": 444,
+        "speechEndsBeforeIncomingOverlapFrames": 60
+      },
+      "captionTextMismatchScenes": [],
+      "findings": []
+    },
+    {
+      "id": "C2",
+      "sourcePath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/fit-v3/lesson.json",
+      "sourceSha256": "476b55194af5457eb4b340a558128cf386e8d51a02685844b5e1114214e71365",
+      "briefSha256": "274c5ee8b2fcf0f450d687fa91516c449891ef8cc88656daf4e1122d0b84638b",
+      "focus": "How do opposing rates approach equilibrium?",
+      "sourceJudgement": "The A-only, fixed-condition one-to-one model is bounded. The NO2 association illustration is explicitly separate from A/B conversion. Catalyst comparison separates early amount from final composition; 6 made minus 2 used gives net 4 toward C. C3 disturbances and detailed catalyst work remain later.",
+      "sourceOutcome": "No material science or boundary correction found. Preserve selected narrated words.",
+      "durationSeconds": 391.133,
+      "responseHold": {
+        "sceneId": "c2-transfer",
+        "localFrames": {
+          "startFrame": 1172,
+          "endFrame": 1472
+        },
+        "seconds": 10.0,
+        "captionIntersections": []
+      },
+      "quietNotes": {
+        "unvoiced": true,
+        "captionTokens": 0,
+        "frames": 450,
+        "speechEndsBeforeIncomingOverlapFrames": 45
+      },
+      "captionTextMismatchScenes": [],
+      "findings": [
+        {
+          "priority": "P3",
+          "type": "beginner-vocabulary-display",
+          "releaseBlocker": false,
+          "sceneId": "c2-model",
+          "description": "The visible bullet Fixed first-order coefficients, not a general rate law introduces first-order and coefficients without defining them. Speech already explains the useful assumption in ordinary language. This is avoidable reading load, not a scientific error.",
+          "action": "If adjusting display before freeze, replace with Rates depend on how much A or B is present. Retain the precise first-order restriction in production/model documentation. Keep narration/audio unchanged. Recheck that affected Player state."
+        }
+      ]
+    },
+    {
+      "id": "B2a",
+      "sourcePath": "docs/production/module5-seconds-notes-2026-10-10/biology/fit-v3/lesson.json",
+      "sourceSha256": "2bb222469a279f251128304bfc3e4ac51d09c18af13fdcc62dde5e6042db610f",
+      "briefSha256": "637462621b198eece3ff145d3c2922ccabb9bf95d212dd0b6dbcb6cb7b24bd16",
+      "focus": "How does the animal mechanism explain fusion and reproductive opportunities?",
+      "sourceJudgement": "Hydra budding, chromosome sets and fusion location are supporting mechanisms. The bird case distinguishes internal fusion from external embryo development. The current comparison preserves equal gamete numbers and viable lifetime while changing separation. Fertilisation and later reproductive survival are distinct. Hormones and pregnancy remain later.",
+      "sourceOutcome": "No material science or boundary correction found. Preserve selected narrated words.",
+      "durationSeconds": 479.633,
+      "responseHold": {
+        "sceneId": "quick-check",
+        "localFrames": {
+          "startFrame": 980,
+          "endFrame": 1340
+        },
+        "seconds": 12.0,
+        "captionIntersections": []
+      },
+      "quietNotes": {
+        "unvoiced": true,
+        "captionTokens": 0,
+        "frames": 450,
+        "speechEndsBeforeIncomingOverlapFrames": 45
+      },
+      "captionTextMismatchScenes": [],
+      "findings": []
+    }
+  ],
+  "remainingGatesInPriorityOrder": [
+    "C1 and B1 independently: exact full voiced Player or pilot review, including reading load, captions, movement and response-to-feedback transition; human ears; export-stage brief and frozen inputs; actual export/full-package release gate.",
+    "C2 and B2a: same checks on fit-v3, preserving existing source/timing/PCM approvals. Publish only after the respective starter prerequisite is available.",
+    "No cross-subject hold: a Chemistry listening or release blocker does not hold Biology."
+  ],
+  "morningListeningChecklist": [
+    "Use starter-v2 and second-notes-v3 pages and confirm exact hashes above. Watch/listen to the whole selected lesson once; record actual listener, version and outcome in the existing evidence location.",
+    "C1: hear equal and non-zero distinctly; check CO2, concentration units and the distinction between a slow reaction and demonstrated exchange. Watch the current reasoning and the 12-second attempt before feedback.",
+    "B1: check gamete, zygote, allele, lineage and susceptibility pronunciation and pace; ensure the runner/coral/self-fertilisation contrast is easy to follow and the 8-second nursery attempt retains both demands.",
+    "C2: hear the direction of C to D versus D to C clearly, including 6 minus 2 toward C; watch fixed-scale rate/concentration graphs and the catalyst early-versus-final comparison. Verify its 10-second hold.",
+    "B2a: check hydra, haploid, diploid and zygote; watch chromosome-set fusion, budding/detachment and frog/bird distinction. Verify the 12-second current comparison retains every supplied condition and neither answer nor caption leaks early.",
+    "For each: listen across recap to notes and through the ending. Confirm no speech over the stable quiet notes, natural pause invitation and usable copy/pause opportunity. Inspect captions at normal speed on the intended student viewing size.",
+    "Report only concrete comprehension, pronunciation, caption, timing or layout defects. Preference for another art style or a faster scene is not a release blocker."
+  ]
+}

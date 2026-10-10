@@ -1,0 +1,89 @@
+{
+  "scope": "Author source/model/timing check only; independent selected script review pending",
+  "lessonSha256": "57b43a1a1dbf9bdc300f5d8310c9deaa41b3327999279d4f6ebab33d996351d4",
+  "candidateSha256": "0d3816975c6e2670c1ad0898794b6c0bee6c0f2a5e8ad82ea97a79f982c59931",
+  "sourceLineage": [
+    {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
+      "sha256": "f49c2fcee0e0559e7241a965788aaa0aab453780c110cc6e9f75d28e885e1325"
+    },
+    {
+      "path": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4-review.md",
+      "sha256": "8c572dc214e3eb319e1fd882586f87963e98898f3b221016d400446aa7016558"
+    },
+    {
+      "path": "docs/production/module5-video-route-2026-10-10.json",
+      "sha256": "b03b3310d9f792d0776306f155ceb45f2e74a73ec81aa252ae00d32f001a1742"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/CatalystBothDiagram.tsx",
+      "sha256": "b52dc62a24ab9a1e284e8fd6bd3f959f6bd8e7fe2b2aa533f126a8d935409a18"
+    },
+    {
+      "path": "src/slides/diagrams/EnergyProfileDiagram.tsx",
+      "sha256": "a9e766cd6ef067fecffea65794c7e3807203d455648be80b2c4ffb59a41c546c"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y11-m3m4/CatalystPathDiagram.tsx",
+      "sha256": "e17c7d0c8815ee248e79c9ea6fb8884cadd53cfcf90fe6092386180800138bb8"
+    }
+  ],
+  "durationInFrames": 5723,
+  "timeline": [
+    {
+      "id": "c4b-opening",
+      "startFrame": 0,
+      "endFrame": 557
+    },
+    {
+      "id": "c4b-path",
+      "startFrame": 533,
+      "endFrame": 1410
+    },
+    {
+      "id": "c4b-constant",
+      "startFrame": 1386,
+      "endFrame": 1970
+    },
+    {
+      "id": "c4b-approach",
+      "startFrame": 1946,
+      "endFrame": 2850
+    },
+    {
+      "id": "c4b-equilibrium",
+      "startFrame": 2826,
+      "endFrame": 3490
+    },
+    {
+      "id": "c4b-response",
+      "startFrame": 3466,
+      "endFrame": 4600,
+      "responseHoldGlobal": [
+        4216,
+        4576
+      ]
+    },
+    {
+      "id": "c4b-feedback",
+      "startFrame": 4576,
+      "endFrame": 5200
+    },
+    {
+      "id": "c4b-notes",
+      "startFrame": 5176,
+      "endFrame": 5723
+    }
+  ],
+  "responseLengthFrames": 360,
+  "transitionProtectionFrames": 24,
+  "profileEndpoints": "Both profiles start at(250,340), finish at(1420,410). Peaks100/235 in inverted SVG energy coordinates. No numerical energy values or universal rate multiplier.",
+  "graphLimits": "Both curves start at(240,490), approach common y140 asymptote. Arbitrary time constants0.31/0.12 are schematic only.",
+  "limitations": [
+    "New selected speech pending independent review",
+    "No audio/captions or listening",
+    "No continuous full playback pass",
+    "Docs-owned consumer needs root integration",
+    "No syllabus completeness or release approval"
+  ]
+}

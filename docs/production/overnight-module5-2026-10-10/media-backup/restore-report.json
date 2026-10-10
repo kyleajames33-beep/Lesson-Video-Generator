@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "originalRestorerPath": "scripts/transfer-workspace.py",
+  "restorerSha256": "da4aee541447f864fa365e210b7030f58da44e14435d0dade6353cbf3b443e1f",
+  "archiveSha256": "30bfe8f298082196c14dbed6ae6422107ffb746f854ecd49ab6bddfbf29f2d3d",
+  "stateArchiveSha256": "c2eac9023566c0dd42e8b341dd8965963733a9fefdbfa22baf344f7c43eed7ca",
+  "isolatedRoots": "docs/production/overnight-module5-2026-10-10/media-backup/restore-tests",
+  "results": [
+    {
+      "case": "first",
+      "exitCode": 0,
+      "output": "{\"restored\": 301, \"alreadyPresent\": 0, \"archive\": \"C:\\\\lesson-video-generator\\\\out\\\\archives\\\\module5-overnight-review-media-2026-10-10.zip\"}",
+      "allRestoredMemberSHAsPass": true
+    },
+    {
+      "case": "repeat",
+      "exitCode": 0,
+      "output": "{\"restored\": 0, \"alreadyPresent\": 301, \"archive\": \"C:\\\\lesson-video-generator\\\\out\\\\archives\\\\module5-overnight-review-media-2026-10-10.zip\"}",
+      "allRestoredMemberSHAsPass": true
+    },
+    {
+      "case": "conflict",
+      "exitCode": 1,
+      "preservedConflict": true,
+      "otherMembersWritten": 0,
+      "rejection": "Existing different file, preserved: out/prototypes/module5-morning-review-2026-10-10/browser-desk.png"
+    }
+  ]
+}

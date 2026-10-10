@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/night_bio_fungi_author",
+  "scope": "Author source invariants and bounded native static observations only. Not independent review, continuous playback, actual device review or human listening.",
+  "lessonPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+  "lessonSha256": "48dd484812e97bbd2c8c72556b3ed74a74d3286f705f58d03921148bf40d34e2",
+  "nativeEvidencePath": "out/prototypes/overnight-biology-fungi-2026-10-10-v2/native-samples.json",
+  "inspected": [
+    "fungi-yeast-stage2-480.png",
+    "fungi-yeast-stage4-480.png",
+    "fungi-mould-stage6-480.png",
+    "fungi-check-480.png",
+    "fungi-notes-480.png"
+  ],
+  "observations": [
+    "Yeast stage 2 shows an outgrowth plus the meaning of budding. Future DNA division and daughter-separation stages are absent.",
+    "Yeast stage 4 replaces the previous content with nuclear division by mitosis and the meaning of nucleus. Other stage labels are absent.",
+    "Mould stage 6 shows germination under suitable conditions and its plain meaning. Earlier sporangium and dispersal paragraphs are absent.",
+    "Prompt keeps both supplied cases, sexual/asexual classification, formation-evidence demand and spore-alone explanation demand visible. The four rows fit at 480px and sit above the lower caption reserve.",
+    "The quiet notes retain four large essential rows, with no small secondary text or new narrated reasoning."
+  ],
+  "sourceChecks": {
+    "spokenWordsAndSceneDurations": "Exact parent invariants pass.",
+    "attemptBoundary": "Estimated local 785..1145; feedback first mounts at 1145. This is not measured silence.",
+    "staging": "Supported generic primitive has no per-item cue input. Docs-owned wrapper replaces props at selected exact phrases using unmeasured word-position estimates.",
+    "prohibitedPunctuation": "None in exact lesson source."
+  },
+  "pending": [
+    "Independent exact-source and implementation review",
+    "Fresh narration and measured cue alignment",
+    "Continuous motion playback",
+    "Exact voiced, caption and device review",
+    "Human listening",
+    "Export and public release gates"
+  ]
+}
