@@ -1,5 +1,8 @@
 # Project working rules
 
+- Read REPO-GUIDE.md for orientation: what is in the repo, which docs are
+  current, which areas are leftovers, and the shipping priority.
+
 - Start a takeover on another computer with HANDOFF.md. Restore its ignored
   lesson state and media before reviewing selected narration or artwork.
 
