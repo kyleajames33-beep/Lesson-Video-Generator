@@ -13,7 +13,7 @@ Pipeline: lesson JSON → scene types → slide and diagram components → Eleve
 - 308 lesson scripts exist (`src/data/`): Biology 159, Chemistry 149, Year 11 M1 to Year 12 M8.
 - Only about 9 have a reviewed script. 299 are `source-present-unreviewed`.
 - 6 videos are public on YouTube: Part A, molar mass and the four approved calculation lessons. Superseded limiting revisions remain unlisted. Preferred enzymes revision ZTxQP7kI5_o is owner-approved but held by one unavailable historical source dependency. See the current board and publication queue.
-- The four calculation packages pass the full release gate. Chemistry C3 has owner-approved voiced preview and a full export in progress; its final package checks remain separate.
+- The four calculation packages pass the full release gate. Chemistry C3 has an owner-approved voiced preview and a backed-up full export. Device/accessibility checks found graph-axis clipping, so its upload remains private while capture diagnostics run.
 - 0 videos are embedded on the website. No site file references any YouTube ID. A plan exists (`docs/site-video-integration-plan.md`) but has not been carried out.
 - Active work: Year 12 Chemistry Module 5, lesson C3 (concentration and temperature changes), then C4. See `docs/production/parallel-production-board-2026-10-10.json`.
 

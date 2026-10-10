@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "status": "technical-review-complete-changes-required",
+  "videoSha256": "dfa22ac9bc002fff3d45b4b1d1cbabbea6c69e3aadb75e6794d68c630cb422aa",
+  "renderHashMatches": true,
+  "snapshotVerification": {
+    "valid": true,
+    "packageSha256": "96085a18cbbf2e166ede078510da2f645a7326ee4da8a4154a883bb5ac2fc41b",
+    "changes": [],
+    "missingRequired": []
+  },
+  "inputVerification": {
+    "valid": true,
+    "packageSha256": "2f1bddcb48706e68be51b17330bee02f11b19f89766aa9949b4a739d7b99d02a",
+    "changes": [],
+    "missingRequired": []
+  },
+  "metadata": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "unknown",
+        "profile": "100",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuvj420p",
+        "level": 40,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 48630000,
+        "duration": "540.333333",
+        "bit_rate": "1684977",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "16210",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.100 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "unknown",
+        "profile": "1",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 25935984,
+        "duration": "540.333000",
+        "bit_rate": "177049",
+        "nb_frames": "25327",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "out/prototypes/module5-c3-reference-2026-10-10/full-render-01/video.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "start_time": "0.000000",
+      "duration": "540.333333",
+      "size": "126360638",
+      "bit_rate": "1870854",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.100",
+        "comment": "Made with Remotion 4.0.451"
+      }
+    }
+  },
+  "decodeErrors": "",
+  "captionCueCount": 201,
+  "captionTimingIssues": [],
+  "captionHasEmDash": false,
+  "maxCaptionChars": 63,
+  "timelineDurationInFrames": 16210,
+  "responseHolds": [
+    {
+      "sceneId": "c3-transfer-a",
+      "startFrame": 11639,
+      "endFrame": 11999,
+      "captionsInInterior": [],
+      "decodedAudioInterior": {
+        "sampleCount": 566400,
+        "rmsDbFS": "digital-silence",
+        "peakDbFS": "digital-silence"
+      }
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "startFrame": 13892,
+      "endFrame": 14252,
+      "captionsInInterior": [],
+      "decodedAudioInterior": {
+        "sampleCount": 566400,
+        "rmsDbFS": "digital-silence",
+        "peakDbFS": "digital-silence"
+      }
+    }
+  ],
+  "samples": [
+    {
+      "frame": 80,
+      "timeSeconds": 2.6666666666666665,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-title-480.png"
+    },
+    {
+      "frame": 821,
+      "timeSeconds": 27.366666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-hook-480.png"
+    },
+    {
+      "frame": 2419,
+      "timeSeconds": 80.63333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-add-480.png"
+    },
+    {
+      "frame": 4033,
+      "timeSeconds": 134.43333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-remove-480.png"
+    },
+    {
+      "frame": 5601,
+      "timeSeconds": 186.7,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-principle-480.png"
+    },
+    {
+      "frame": 7343,
+      "timeSeconds": 244.76666666666668,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-480.png"
+    },
+    {
+      "frame": 9168,
+      "timeSeconds": 305.6,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-response-480.png"
+    },
+    {
+      "frame": 10579,
+      "timeSeconds": 352.6333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-water-480.png"
+    },
+    {
+      "frame": 12424,
+      "timeSeconds": 414.1333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-480.png"
+    },
+    {
+      "frame": 11669,
+      "timeSeconds": 388.96666666666664,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-cue-0.png"
+    },
+    {
+      "frame": 11997,
+      "timeSeconds": 399.9,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-cue-1.png"
+    },
+    {
+      "frame": 12011,
+      "timeSeconds": 400.3666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-cue-2.png"
+    },
+    {
+      "frame": 12154,
+      "timeSeconds": 405.1333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-cue-3.png"
+    },
+    {
+      "frame": 12427,
+      "timeSeconds": 414.23333333333335,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-cue-4.png"
+    },
+    {
+      "frame": 12701,
+      "timeSeconds": 423.3666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-cue-5.png"
+    },
+    {
+      "frame": 11669,
+      "timeSeconds": 388.96666666666664,
+      "width": 960,
+      "height": 540,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-desktop.png"
+    },
+    {
+      "frame": 14449,
+      "timeSeconds": 481.6333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-480.png"
+    },
+    {
+      "frame": 13922,
+      "timeSeconds": 464.06666666666666,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-cue-0.png"
+    },
+    {
+      "frame": 14250,
+      "timeSeconds": 475,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-cue-1.png"
+    },
+    {
+      "frame": 14264,
+      "timeSeconds": 475.46666666666664,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-cue-2.png"
+    },
+    {
+      "frame": 14488,
+      "timeSeconds": 482.93333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-cue-3.png"
+    },
+    {
+      "frame": 14654,
+      "timeSeconds": 488.46666666666664,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-cue-4.png"
+    },
+    {
+      "frame": 13922,
+      "timeSeconds": 464.06666666666666,
+      "width": 960,
+      "height": 540,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-b-desktop.png"
+    },
+    {
+      "frame": 15855,
+      "timeSeconds": 528.5,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-summary-480.png"
+    },
+    {
+      "frame": 566,
+      "timeSeconds": 18.866666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/hook-before.png"
+    },
+    {
+      "frame": 580,
+      "timeSeconds": 19.333333333333332,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/hook-direct.png"
+    },
+    {
+      "frame": 832,
+      "timeSeconds": 27.733333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/hook-response.png"
+    },
+    {
+      "frame": 996,
+      "timeSeconds": 33.2,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/hook-reference.png"
+    },
+    {
+      "frame": 628,
+      "timeSeconds": 20.933333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-hook-event.png"
+    },
+    {
+      "frame": 862,
+      "timeSeconds": 28.733333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-hook-response.png"
+    },
+    {
+      "frame": 1820,
+      "timeSeconds": 60.666666666666664,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-add-event.png"
+    },
+    {
+      "frame": 2482,
+      "timeSeconds": 82.73333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-add-response.png"
+    },
+    {
+      "frame": 2710,
+      "timeSeconds": 90.33333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-add-limit.png"
+    },
+    {
+      "frame": 3226,
+      "timeSeconds": 107.53333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-remove-event.png"
+    },
+    {
+      "frame": 3670,
+      "timeSeconds": 122.33333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-remove-response.png"
+    },
+    {
+      "frame": 3949,
+      "timeSeconds": 131.63333333333333,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-remove-originalCompare.png"
+    },
+    {
+      "frame": 5681,
+      "timeSeconds": 189.36666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-principle-sameK.png"
+    },
+    {
+      "frame": 7032,
+      "timeSeconds": 234.4,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-heating.png"
+    },
+    {
+      "frame": 7315,
+      "timeSeconds": 243.83333333333334,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-cooling.png"
+    },
+    {
+      "frame": 8501,
+      "timeSeconds": 283.3666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-response-event.png"
+    },
+    {
+      "frame": 9125,
+      "timeSeconds": 304.1666666666667,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-response-defineNewK.png"
+    },
+    {
+      "frame": 9477,
+      "timeSeconds": 315.9,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-temperature-response-response.png"
+    },
+    {
+      "frame": 12984,
+      "timeSeconds": 432.8,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-transfer-a-final.png"
+    },
+    {
+      "frame": 16130,
+      "timeSeconds": 537.6666666666666,
+      "width": 480,
+      "height": 270,
+      "image": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/c3-summary-final.png"
+    }
+  ],
+  "ownerListeningProvenance": "Exact approved voiced UI preview, not a reported full MP4 watch",
+  "reviewScopes": {
+    "motion": "pass",
+    "device": "changes-required",
+    "accessibility": "changes-required"
+  },
+  "findings": [
+    {
+      "id": "C3-AXIS-GLYPH-CLIP",
+      "severity": "release-blocking",
+      "scenes": [
+        {
+          "id": "c3-add",
+          "localFrame": 1601,
+          "globalFrame": 2710
+        },
+        {
+          "id": "c3-remove",
+          "localFrame": 992,
+          "globalFrame": 3949
+        },
+        {
+          "id": "c3-temperature-response",
+          "localFrame": 1608,
+          "globalFrame": 9477
+        }
+      ],
+      "evidence": [
+        "out/prototypes/module5-c3-reference-2026-10-10/technical-review/browser-add-axis-960.png",
+        "out/prototypes/module5-c3-reference-2026-10-10/technical-review/model-grid.png"
+      ],
+      "description": "Lower parts of time-axis labels cropped in exact export at 480 and 960 pixels. Active panels/results intact; root keeps private and assigns source fix.",
+      "sourceCauseCandidate": "Module5DisturbanceClearDiagram.tsx text helper and baselines y521/y527 plus ConceptSlide diagramBoard wrapper. Mechanism not confirmed."
+    },
+    {
+      "id": "C3-PAUSED-CONTROLS-CAPTION",
+      "severity": "documented-player-limitation",
+      "timeSeconds": 400.5,
+      "description": "Paused Chrome controls raise nativecaption over the last retained context line at 480px. Normal controls-hidden playback clears all facts and active reasoning. Protected question holds contain no captions."
+    }
+  ],
+  "limitations": [
+    "Sampled decoded frames and actual native browser playback, not agent full MP4 watch.",
+    "480px and 960px landscape player widths; no physical handset/portrait claim.",
+    "Owner reported approved exact voiced UI Player acceptance, not full watch of newly exported MP4."
+  ],
+  "preservedRuntime": "out/checks/module5-c3-approved-export-2026-10-10"
+}

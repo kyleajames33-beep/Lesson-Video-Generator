@@ -1,0 +1,119 @@
+{
+  "ready": false,
+  "status": "release-evidence-incomplete",
+  "blockers": [
+    {
+      "code": "TEACHING_BRIEF_REQUIRED",
+      "detail": "Provide a current teaching/visual brief with named script review and exact voiced-preview evidence."
+    },
+    {
+      "code": "REVIEW_INVALID",
+      "detail": "docs/production/module5-c3-reference-feedback-2026-10-10/science-review-2026-10-10.json"
+    },
+    {
+      "code": "REVIEW_MISSING",
+      "detail": "science"
+    },
+    {
+      "code": "REVIEW_CHANGES_REQUIRED",
+      "detail": "device: Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)"
+    },
+    {
+      "code": "REVIEW_CHANGES_REQUIRED",
+      "detail": "accessibility: Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)"
+    }
+  ],
+  "reviews": {
+    "listening": {
+      "reviewer": "Kyle, owner-reported exact voiced Player listening; original recordings preserved in export",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:36:44.736Z"
+    },
+    "motion": {
+      "reviewer": "Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:40:13.281Z"
+    },
+    "device": {
+      "reviewer": "Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "changes-required",
+      "recordedAt": "2026-10-10T09:40:15.292Z"
+    },
+    "accessibility": {
+      "reviewer": "Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "changes-required",
+      "recordedAt": "2026-10-10T09:40:17.601Z"
+    }
+  },
+  "limitation": "Checks versioned local evidence, not reviewer identity, scientific judgement, omitted records or publication permission. The brief checks declared teaching/visual decisions and exact preview evidence, not the quality of those judgements. Human listening still needs the existing full-package listening review.",
+  "teachingBrief": {
+    "ready": false,
+    "stage": "export",
+    "blockers": [
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/research/hsc-video-production-standard-2026-10-02.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/research/library-implementation-plan.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/teaching-templates.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/teaching-visual-brief-template.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/visual-design-handbook.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/animation-planning.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/preview-first-review.md"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/module5-video-route-2026-10-10.json"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/course-progression-ledger-2026-10-09.json"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/course-content-checklist-2026-10-09.json"
+      },
+      {
+        "code": "BRIEF_RESEARCH_MISSING",
+        "detail": "docs/production/module5-beginner-next-selection-2026-10-10.json"
+      },
+      {
+        "code": "BRIEF_PROGRESSION_PLAN_MISSING",
+        "detail": "docs/production/course-progression-plan-2026-10-09.md"
+      },
+      {
+        "code": "BRIEF_EVIDENCE_MISSING",
+        "detail": "Script/source review: ENOENT: no such file or directory, open 'C:\\lesson-video-generator\\out\\checks\\module5-c3-approved-export-2026-10-10\\docs\\production\\module5-c3-reference-review-2026-10-10.md'"
+      },
+      {
+        "code": "BRIEF_PREVIEW_INPUT_INVALID",
+        "detail": "ENOENT: no such file or directory, open 'C:\\lesson-video-generator\\out\\checks\\module5-c3-approved-export-2026-10-10\\docs\\production\\module5-c3-reference-feedback-2026-10-10\\approved-preview-inputs.snapshot.json'"
+      }
+    ],
+    "pending": [],
+    "source": {
+      "lessonPath": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+      "lessonSha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.",
+    "path": "docs/production/module5-c3-reference-feedback-2026-10-10/production-brief.json",
+    "sha256": "4310e4991407b2d33cd94e910407851e00e3228f17ad6eca575500afa20ae762"
+  }
+}

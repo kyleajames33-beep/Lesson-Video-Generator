@@ -129,7 +129,8 @@
           "Year 11 Chemistry: Module 2 (2017 Syllabus)",
           "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
         ],
-        "checks": "YouTube checks complete, no issues found"
+        "checks": "YouTube checks complete, no issues found",
+        "note": "Published and verified in Chrome YouTube Studio on 10 October 2026."
       }
     },
     {
@@ -218,7 +219,8 @@
           "Year 11 Chemistry: Module 2 (2017 Syllabus)",
           "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
         ],
-        "checks": "Checks complete, no issues found"
+        "checks": "Checks complete, no issues found",
+        "note": "Published and verified in Chrome YouTube Studio on 10 October 2026."
       }
     },
     {
@@ -308,7 +310,8 @@
           "Year 11 Chemistry: Quantitative Chemistry (2025 Syllabus)"
         ],
         "verifiedDate": "2026-10-10",
-        "verification": "Chrome YouTube Studio Video published dialog, 6:44 duration, English (Australia) by you captions, checks complete no issues."
+        "verification": "Chrome YouTube Studio Video published dialog, 6:44 duration, English (Australia) by you captions, checks complete no issues.",
+        "note": "Published and verified in Chrome YouTube Studio on 10 October 2026."
       }
     },
     {
@@ -389,7 +392,7 @@
       },
       "publication": {
         "status": "public",
-        "note": "Root uploads and publishes through Chrome, not yet confirmed public.",
+        "note": "Published and verified in Chrome YouTube Studio on 10 October 2026.",
         "videoId": "-TLemAVWFvs",
         "url": "https://youtu.be/-TLemAVWFvs",
         "verifiedDate": "2026-10-10",
@@ -402,7 +405,7 @@
     }
   ],
   "chapters": {
-    "status": "pending for every current candidate",
+    "status": "No manually authored chapters published; YouTube automatic chapter option enabled. Frozen timelines available for a later verified chapter pass.",
     "policy": "Do not present final chapters until the exact full export is frozen. Provisional source cue timings are intentionally omitted."
   },
   "historicalPublicationStates": {
@@ -451,23 +454,39 @@
       "status": "silent draft and draft brief prepared; source/visual review in progress; no selected narration, full export or uploadable package",
       "draftLessonPath": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
       "draftBriefPath": "docs/production/drafts/module5-biology-l1-2026-10-10/production-brief.json"
+    },
+    {
+      "subject": "Chemistry",
+      "canonicalId": "chem-m5-c03",
+      "candidateTitle": "Concentration and Temperature Changes: Disturbing Equilibrium | HSC Chemistry Module 5",
+      "status": "full-export-held-graph-axis-glyph-clipping",
+      "draftLessonPath": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+      "draftBriefPath": "docs/production/module5-c3-reference-feedback-2026-10-10/production-brief.json",
+      "reviewUrl": "http://127.0.0.1:8778/module5-c3-reference-review-2026-10-10/",
+      "fullExportPath": "out/prototypes/module5-c3-reference-2026-10-10/full-render-01/video.mp4",
+      "scope": "Concentration and introductory temperature/K reasoning subset. C4 pressure/catalysts, C5 expressions, C6 calculations, C9 temperature/K data and practical conduct separate.",
+      "proposedDescription": "What changes immediately when you add or remove a substance, and what changes later as the reactions respond? Follow concentration changes in a simple one-to-one model, then connect temperature to a different equilibrium mixture.\n\nNSW Chemistry Stage 6 Syllabus (2017), Year 12 Module 5: Equilibrium and Acid Reactions. This lesson supports the concentration and temperature parts of Factors that Affect Equilibrium, with introductory temperature/equilibrium-constant reasoning. It is one part of the module sequence.\nOfficial syllabus: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nEntry knowledge: Dynamic equilibrium, equal opposing rates, concentration and balanced equations. Next: Gas pressure and volume, then catalysts in a separate lesson. Constructing equilibrium expressions, numerical calculations and temperature/K data are later videos. Required practical investigations remain separate.\n\nThe A/B model is schematic. Conditions and assumptions are stated on screen. Pause for the two prediction questions before the explanations.\n\n#HSCChemistry #Module5 #Equilibrium",
+      "fullExportVideoSha256": "dfa22ac9bc002fff3d45b4b1d1cbabbea6c69e3aadb75e6794d68c630cb422aa",
+      "packageSha256": "96085a18cbbf2e166ede078510da2f645a7326ee4da8a4154a883bb5ac2fc41b",
+      "publication": {
+        "status": "private-review-upload",
+        "videoId": "FYdEOtHcOqk",
+        "url": "https://youtu.be/FYdEOtHcOqk",
+        "verification": "Chrome YouTube Studio private video processing dialog; uploaded, public release held; review title and production description saved.",
+        "captions": "Not yet imported for private production placeholder; final replacement needs exact captions and disclosures."
+      },
+      "releaseGateReport": "docs/production/module5-c3-reference-feedback-2026-10-10/release-gate-report-with-complete-context-2026-10-10.json"
     }
   ],
   "globalBlockers": [
-    "Exact voiced preview review is pending.",
-    "Human listening is pending for the current paced revisions.",
-    "No current full exports exist.",
-    "Export-stage brief checks and input freeze remain pending.",
-    "Full-package release review remains pending.",
-    "Final chapters depend on exact frozen full exports.",
-    "No new current candidates are uploadable.",
-    "Historical visibility is from dated local records only, not a live channel check."
+    "Preferred enzymes export: one original types.ts dependency unavailable; full gate remains held.",
+    "C3: graph x-axis glyphs clipped in original full export. Exact source stills complete; export capture diagnostic running. Current upload remains private.",
+    "Other Year12 candidates retain their own source, voiced, listening and full-package gates."
   ],
   "coordinatorVerification": {
-    "boundFileHashesChecked": 20,
     "date": "2026-10-10",
-    "liveChannelChecked": false,
-    "scope": "Every queued file path with a SHA-256 matches local bytes; no publication approval."
+    "liveChannelChecked": true,
+    "scope": "Four exact approved MP4s published with supplied SRT captions. Manual playlist order verified in Chrome Studio. Preserves earlier historical status separately."
   },
   "productionPriorityAfterCurrentBatch": "Year 12 Module 5 in Chemistry and Biology. Year 11 yield/purity remains a learner-route handoff but is deferred in production."
 }

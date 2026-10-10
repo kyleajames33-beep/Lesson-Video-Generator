@@ -1,0 +1,55 @@
+{
+  "ready": false,
+  "status": "release-evidence-incomplete",
+  "blockers": [
+    {
+      "code": "REVIEW_CHANGES_REQUIRED",
+      "detail": "device: Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)"
+    },
+    {
+      "code": "REVIEW_CHANGES_REQUIRED",
+      "detail": "accessibility: Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)"
+    }
+  ],
+  "reviews": {
+    "science": {
+      "reviewer": "Independent Sol 6.1 source and scope review, exact selected source unchanged",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:36:47.569Z"
+    },
+    "listening": {
+      "reviewer": "Kyle, owner-reported exact voiced Player listening; original recordings preserved in export",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:36:44.736Z"
+    },
+    "motion": {
+      "reviewer": "Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "pass",
+      "recordedAt": "2026-10-10T09:40:13.281Z"
+    },
+    "device": {
+      "reviewer": "Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "changes-required",
+      "recordedAt": "2026-10-10T09:40:15.292Z"
+    },
+    "accessibility": {
+      "reviewer": "Sol 6.1 final export technical reviewer (/root/approved_calculation_release_checks)",
+      "outcome": "changes-required",
+      "recordedAt": "2026-10-10T09:40:17.601Z"
+    }
+  },
+  "limitation": "Checks versioned local evidence, not reviewer identity, scientific judgement, omitted records or publication permission. The brief checks declared teaching/visual decisions and exact preview evidence, not the quality of those judgements. Human listening still needs the existing full-package listening review.",
+  "teachingBrief": {
+    "ready": true,
+    "stage": "export",
+    "blockers": [],
+    "pending": [],
+    "source": {
+      "lessonPath": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+      "lessonSha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.",
+    "path": "docs/production/module5-c3-reference-feedback-2026-10-10/production-brief.json",
+    "sha256": "4310e4991407b2d33cd94e910407851e00e3228f17ad6eca575500afa20ae762"
+  }
+}
