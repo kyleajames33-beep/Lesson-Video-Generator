@@ -46,6 +46,101 @@
     },
     {
       "id": "concept-classify",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "captions": [
+            {
+              "t": "Classify by the bond",
+              "at": 0,
+              "until": 804
+            },
+            {
+              "t": [
+                {
+                  "t": "Class first, ",
+                  "c": "ink"
+                },
+                {
+                  "t": "then the reaction",
+                  "c": "accent"
+                }
+              ],
+              "at": 804
+            }
+          ],
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0",
+                "bonds": "c1-c2"
+              },
+              "at": 210,
+              "name": "ethane",
+              "sub": "alkane: single bonds only",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "c2"
+                  ],
+                  "at": 940,
+                  "c": "second"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "combustion",
+                  "at": 269,
+                  "c": "dim"
+                },
+                {
+                  "t": "substitution (UV light)",
+                  "at": 415,
+                  "c": "second"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0",
+                "bonds": "c1=c2"
+              },
+              "at": 230,
+              "name": "ethene",
+              "sub": "alkene: has a C=C double bond",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "c2"
+                  ],
+                  "at": 590,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "combustion",
+                  "at": 280,
+                  "c": "dim"
+                },
+                {
+                  "t": "addition across C=C",
+                  "at": 610,
+                  "c": "accent"
+                },
+                {
+                  "t": "decolourises bromine water",
+                  "at": 1047,
+                  "c": "accent"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "type": "concept",
       "heading": "Classify by the bond",
       "body": "Stop memorising isolated equations. Sort every reaction by the hydrocarbon class and the bond involved.",

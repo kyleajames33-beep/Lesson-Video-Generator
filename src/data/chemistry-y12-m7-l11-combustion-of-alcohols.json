@@ -77,6 +77,25 @@
     },
     {
       "id": "concept-discrepancy",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7HeatLoss",
+        "props": {
+          "at": {
+            "apparatus": 0,
+            "heatLoss": 240,
+            "incomplete": 522,
+            "evaporation": 804,
+            "sameWay": 1028,
+            "repeats": 1203,
+            "rule": 1388
+          },
+          "band": [
+            40,
+            70
+          ]
+        }
+      },
       "type": "concept",
       "heading": "Why the result is always low",
       "body": "Experimental values are always lower in magnitude than theoretical, typically 40 to 70 percent. This is systematic, not random.",

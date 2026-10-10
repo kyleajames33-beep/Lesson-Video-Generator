@@ -291,6 +291,24 @@
     },
     {
       "id": "concept-solubility",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7DisruptReplace",
+        "props": {
+          "at": {
+            "water": 0,
+            "enter": 298,
+            "breakBonds": 366,
+            "offer": 473,
+            "verdictWater": 648,
+            "hexane": 755,
+            "swap": 862,
+            "verdictHexane": 940,
+            "rule": 1018
+          },
+          "ruleText": "Like dissolves like: broken forces must be replaced by forces as strong"
+        }
+      },
       "type": "concept",
       "heading": "Solubility: disrupt and replace",
       "body": "Full-mark solubility answers name the forces broken and the forces formed, and judge whether the trade is favourable.",
