@@ -1,5 +1,11 @@
 # Production Memory
 
+## 10 October: scope and actual library reuse
+
+- Label a focused video by its learner task and relevant syllabus section. C3 covers concentration/temperature disturbances and introductory temperature/K, with later pressure, expressions, calculations and data routes. Correct the selected inquiry heading; an outcome code alone does not communicate the dotpoint.
+- Keep unfamiliar HSC-style practice between difficult conceptual blocks. Preserve complete prompts, a real attempt, one current reasoning step and a close transfer. Existing companions have varied purposes; do not count every companion as a practice video or invent official questions/marking rules.
+- Before new visual construction, inspect and name existing library candidates in the exact brief. Record the actual consumer, source limits, reuse/adaptation and any justified new logic. Existing art/primitives are different from whole prototype reuse. Do not claim paid image use when no scene selects it. Pressure, catalyst, expression, meiosis and inheritance models already exist and are starting candidates for the next work.
+
 ## 10 October: review the exact voiced thinking hold
 
 - Fresh alignment can expose collisions that silent estimated timing missed. Play each complete task, thinking hold and first feedback in the actual voiced Player. Chemistry C3 exposed a redundant optional pause label over the existing handwritten instruction; v2 removes only that display duplication.

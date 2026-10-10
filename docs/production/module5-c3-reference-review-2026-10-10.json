@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "reviewer": "Sol 6.1 independent source and scope reviewer",
+  "status": "pass-bounded-source-review",
+  "scope": "Exact candidate source, opt-in implementation branches and review-page wording only. Root owns actual UI checks.",
+  "hashes": [
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+      "sha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+    },
+    {
+      "path": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+      "sha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+      "sha256": "1a15eb52c937b3e1fd8335c1ab6bb7b363561c1ef98efdaaa7cae6d1973c87b6"
+    },
+    {
+      "path": "src/prototypes/Module5C3FeedbackReview.tsx",
+      "sha256": "76ba58ba53bab4f4fa493d8816af1f0d83657538e17d8eb28f779b77f38e5be9"
+    },
+    {
+      "path": "scripts/build-module5-c3-feedback-review.mjs",
+      "sha256": "f42281aa8105389b91390caf989c6c16c8bcfc4ea83ad7c2b0e649a5edfe9d73"
+    },
+    {
+      "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/measured-cue-report-v2.json",
+      "sha256": "f856d88d785e34a9c8b42f9d661ef2729d9f10c7d584a36589d0c903473e170c"
+    }
+  ],
+  "audio": [
+    {
+      "sceneId": "c3-hook",
+      "path": "public/audio/assembled/c3-hook.134d5bacc3ddf43ea593.b2a08b697e02.wav",
+      "sha256": "033625f30c3d4dce6dccb78872b2020d437c73abe1d27ccefadc98a3985d1d09"
+    },
+    {
+      "sceneId": "c3-add",
+      "path": "public/audio/assembled/c3-add.fbeecf2ebcb78085468f.852e355ab749.wav",
+      "sha256": "2b373e698bf877120e5295f0f2830a0075ff2f0abca550625d2f6cf456e42fbf"
+    },
+    {
+      "sceneId": "c3-remove",
+      "path": "public/audio/assembled/c3-remove.1ac568875a7cba40e9b4.51cd2580b739.wav",
+      "sha256": "6fa71ec782a178c70293d786aafce50d5e9ffbc339bf75c9d3a6fb98e4052333"
+    },
+    {
+      "sceneId": "c3-principle",
+      "path": "public/audio/assembled/c3-principle.7a46211b7ad4952a5207.f50e79dabedd.wav",
+      "sha256": "fed76431de6174cc2d036918d7fc960e58d09386e5891dfa933ded079b8434a0"
+    },
+    {
+      "sceneId": "c3-temperature",
+      "path": "public/audio/assembled/c3-temperature.3ab7b4e421efce8f5db8.531e6ecd38b1.wav",
+      "sha256": "5448a6ef3b9237421d501584ca49aabce7fe26a0fee65a047ce6a89cfc95620d"
+    },
+    {
+      "sceneId": "c3-temperature-response",
+      "path": "public/audio/assembled/c3-temperature-response.1378dc2ebb282ef31b72.03e523ed9963.wav",
+      "sha256": "d7777c133e979f2e86a3aa2b03becc7f364ee85771e21b8e922bfc5165b4cc2c"
+    },
+    {
+      "sceneId": "c3-water",
+      "path": "public/audio/assembled/c3-water.540116296d6d3d98cba1.000d55b406e6.wav",
+      "sha256": "aa97a1b54ae59681219fd4d02570a20da114d481fd0012195af4292e8427c5b7"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "path": "public/audio/assembled/c3-transfer-a.7fd330160a251f59b65c.ed838d744a2e.wav",
+      "sha256": "67a6c9f7d8009a3208004894d42f4e962171cfc921b546d1c3ea3f1d29cf6ccc"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "path": "public/audio/assembled/c3-transfer-b.898f5da17449f4b1813f.6840eb6efd0e.wav",
+      "sha256": "5e88d8713480aa63fcf781c7dbc167162e29ea839b088529fe59a592413802fd"
+    },
+    {
+      "sceneId": "c3-summary",
+      "path": "public/audio/assembled/c3-summary.cf7dba31ab4d39533f0d.5e1ae4eb79a4.wav",
+      "sha256": "38b487e098ebf78098c0eff23669bfb128c5b3c577da1e57a63ef2a0977d5121"
+    }
+  ],
+  "checks": {
+    "exactSemanticDifferences": [
+      "inquiryQuestion corrected to What factors affect equilibrium and how?",
+      "c3-hook diagram.props.barReferenceStyle added as solidMarks"
+    ],
+    "allOtherLessonDataIdentical": true,
+    "spokenWordsAudioPathsCaptionsDurationsCuesModelsAndHoldsIdentical": true,
+    "audioFilesPresent": true,
+    "originalMarkHeights": [
+      369,
+      417
+    ],
+    "fourSolidMarkSegments": [
+      [
+        230,
+        253
+      ],
+      [
+        427,
+        450
+      ],
+      [
+        600,
+        623
+      ],
+      [
+        797,
+        820
+      ]
+    ],
+    "marksOutsideBars": true,
+    "crossbarGuidesAbsentInSelectedHook": true,
+    "defaultDashedPathsAndCopyRetained": true,
+    "otherModesUnchangedInGitDiff": true,
+    "scopePageWordingPass": true,
+    "selectedSourceHasProhibitedPunctuation": false
+  },
+  "officialSource": {
+    "url": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+    "liveSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+    "liveMatchesCachedOfficial": true,
+    "primary": "p1067: concentration and temperature subset of equilibrium-disturbance investigation and Le Chatelier prediction",
+    "supporting": [
+      "p1071: collision-theory explanation",
+      "p1072: heat direction and introductory reaction-barrier discussion, partial action",
+      "p1079: introductory qualitative temperature/Keq analysis"
+    ]
+  },
+  "routeBoundaries": {
+    "C4": "Volume/pressure and catalysts",
+    "C5": "Equilibrium expressions",
+    "C6": "Numerical constants and concentrations",
+    "C9": "Further temperature/K data",
+    "p01": "Supervised reversibility and disturbance investigations"
+  },
+  "findings": [],
+  "pending": [
+    "Actual UI/native display inspection",
+    "Continuous exact voiced playback",
+    "Caption fit and student readability",
+    "Human listening",
+    "Full required-action and practical conduct evidence",
+    "Export/public-release review with current teaching brief"
+  ]
+}

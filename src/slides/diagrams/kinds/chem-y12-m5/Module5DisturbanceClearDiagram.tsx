@@ -6,12 +6,12 @@ import {DioramaDefs, DioramaPlinth} from '../../diorama';
 import {AtomDefs, Ball} from './shared';
 
 export type DisturbanceMode = 'additionHook' | 'addA' | 'removeB' | 'fixedK' | 'associationHeat' | 'temperatureResponse';
-export type Module5DisturbanceProps = {mode: DisturbanceMode; at: Record<string, number>};
+export type Module5DisturbanceProps = {mode: DisturbanceMode; at: Record<string, number>; barReferenceStyle?: 'solidMarks'};
 
 // Reuse the reviewed mathematical model and cue API; change presentation only.
 import {disturbanceState, temperatureResponseState} from './Module5DisturbanceDiagram';
 
-export const Module5DisturbanceClearDiagram = ({mode, at}: Module5DisturbanceProps) => {
+export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle}: Module5DisturbanceProps) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const theme = useAccent();
@@ -51,7 +51,8 @@ export const Module5DisturbanceClearDiagram = ({mode, at}: Module5DisturbancePro
     return shell(<>
       <rect x={90} y={175} width={890} height={310} rx={32} fill={theme.soft} stroke={primary} strokeWidth={5}/>
       {text(540, 224, 'One mixture', primary)}
-      <path d="M250 369 H430 M620 417 H800" stroke={TOK.inkDim} strokeWidth={4} strokeDasharray="12 10"/>
+      {barReferenceStyle === 'solidMarks' ? <path data-reference="original-levels" d="M230 369 H253 M427 369 H450 M600 417 H623 M797 417 H820" fill="none" stroke={TOK.inkDim} strokeWidth={3} strokeLinecap="round"/> :
+        <path d="M250 369 H430 M620 417 H800" stroke={TOK.inkDim} strokeWidth={4} strokeDasharray="12 10"/>}
       <rect x={265} y={y(state.a)} width={150} height={465 - y(state.a)} rx={12} fill={primary}/>
       <rect x={635} y={y(state.b)} width={150} height={465 - y(state.b)} rx={12} fill={other}/>
       {text(340, 534, 'A', primary, 50, 'middle')}{text(710, 534, 'B', other, 50, 'middle')}
@@ -64,7 +65,7 @@ export const Module5DisturbanceClearDiagram = ({mode, at}: Module5DisturbancePro
       {text(1085, 232, shown('response') ? 'Reaction afterwards' : shown('event') ? 'Direct addition' : 'Original equilibrium')}
       {text(1085, 317, shown('response') ? 'A is being used' : shown('event') ? 'Only A jumps' : 'Amounts stay steady', primary)}
       {text(1085, 397, shown('response') ? 'Extra B is made' : shown('event') ? 'B has not changed' : 'Opposing rates equal', other)}
-      {text(40, 593, shown('response') ? 'Reaction is still approaching balance' : 'Dashed levels: original concentrations')}
+      {text(40, 593, shown('response') ? 'Reaction is still approaching balance' : barReferenceStyle === 'solidMarks' ? 'Small marks: original concentrations' : 'Dashed levels: original concentrations')}
     </>, 'A-only addition to one mixture. A concentration jumps; B stays unchanged until the later reaction response. Bars are model concentrations, not particle counts.');
   }
 

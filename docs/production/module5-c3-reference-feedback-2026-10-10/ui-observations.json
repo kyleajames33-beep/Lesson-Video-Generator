@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/production/module5-c3-reference-feedback-2026-10-10/lesson.json",
+    "sha256": "adbe2c5ba0dc160e44a13f27ad68555a87255d10a26dc76642dc7daf5b462856"
+  },
+  "pageInputs": {
+    "path": "docs/production/module5-c3-reference-feedback-2026-10-10/page-inputs.json",
+    "sha256": "2366216248b93c67deaf871d03c82657cacfc5fd64055bba8101f3592c3ff3fa"
+  },
+  "component": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "sha256": "1a15eb52c937b3e1fd8335c1ab6bb7b363561c1ef98efdaaa7cae6d1973c87b6"
+  },
+  "scope": "Targeted actual Remotion UI appearance/playback, not complete lesson or human listening approval.",
+  "samples": [
+    {
+      "position": "0:18, Now we briefly add more A cue",
+      "observation": "Full-page screenshot shows four small solid marks outside the bars at original levels. No dotted line crosses either bar. Direct-addition card, A/B labels, original-level caption, equation and fixed-temperature/volume conditions remain clear."
+    },
+    {
+      "position": "Page header",
+      "observation": "Part1 and concentration/temperature focus visible, plus C4/C5/C6/C9 and practical handoffs and official syllabus link."
+    },
+    {
+      "position": "0:26 to0:58",
+      "observation": "Play/Pause state and timeline advanced through hook response into add-A scene. This checks actual playback availability; it is not a continuous full-quality review."
+    }
+  ],
+  "limitations": [
+    "A Play locator timed out; fresh AX observation confirmed paused position, then documented AX control started playback.",
+    "Fullscreen click did not activate fullscreen; full-page screenshot used for observed geometry. No fullscreen-pass claim.",
+    "No phone readability, complete caption/lesson review or fresh human listening claim."
+  ],
+  "consoleErrors": [],
+  "pinnedParent": {
+    "path": "out/checks/module5-c3-voiced-v2-pinned-2026-10-10",
+    "runtimeCommit": "88b4f04",
+    "restoredFiles": 98,
+    "snapshotValid": true,
+    "changes": [],
+    "missingRequired": [],
+    "packageSha256": "d1e4432ed46ad606bdb0ca27be8d7c86f753b3bd4528adb716222695518cc437",
+    "limitation": "Exact earlier check-module5-rich-defaults.mjs working bytes restored after checkout normalization, recorded in feedback.json. Preserve this runtime and override."
+  }
+}

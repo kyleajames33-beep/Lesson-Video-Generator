@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "reviewedSource": {
+    "path": "docs/production/module5-c3-voiced-preparation-2026-10-10/lesson-v2.json",
+    "sha256": "4f9a8ae747692747d5e7d9b71fbe4eb44b6c7d050bb8b851ab401c63d784ee67"
+  },
+  "userFeedback": "Watched it and its decent. Asks which dotpoint, whether the lesson teaches the whole module, and reports dotted lines look bad.",
+  "interpretation": "Parent viewed with generally positive feedback and two unresolved findings. Do not mark listening or release approval.",
+  "changeScope": "One hook reference style and correct displayed inquiry. Spoken words/audio/captions/timing/model remain unchanged. New page explains focused syllabus scope and later videos.",
+  "preservedRuntime": {
+    "path": "out/checks/module5-c3-voiced-v2-pinned-2026-10-10",
+    "commit": "88b4f04",
+    "restoredMediaFiles": 98,
+    "exactByteOverride": {
+      "path": "scripts/check-module5-rich-defaults.mjs",
+      "sha256": "45812b5f94ee312969edd7aff12363db4398db587fb5ebb067b9798a13044f68",
+      "reason": "Earlier tracked tool checkout normalized CRLF to LF. Restore exact snapshot-bound working bytes in this isolated historical runtime. Add preservation attribute for future checkouts."
+    }
+  }
+}

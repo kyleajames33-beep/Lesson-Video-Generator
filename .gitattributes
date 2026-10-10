@@ -502,3 +502,7 @@ scripts/prepare-module5-c3-recording.mjs -text whitespace=blank-at-eol,blank-at-
 scripts/assemble-module5-c3-voiced.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/prepare-module5-c3-preview.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/build-module5-c3-voiced-review.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-c3-reference-feedback-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/prototypes/Module5C3FeedbackReview.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/build-module5-c3-feedback-review.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/check-module5-rich-defaults.mjs -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
