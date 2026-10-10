@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "status": "Author component frozen; independent science/source and native review pending",
+  "author": "Sol 6.1 /root/bio_b2_independent_review_sol",
+  "ownership": [
+    "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+    "docs/production/module5-plants-visual-implementation-2026-10-10.json"
+  ],
+  "component": {
+    "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+    "sha256": "ecac264e7bd2a33397bf292043932f4c74f540e539384bb9d71c5224deee1862"
+  },
+  "acceptedNarration": {
+    "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/biology-b3-plants.md",
+    "sha256": "0a2ab244ed56d890953bf65424208aa51dad2e1c285be54a80d2373283472aad"
+  },
+  "parentSelectedSource": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+    "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+  },
+  "proposal": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/visual-implementation-proposal.json",
+    "sha256": "bb95efdddae0486817014bc47eb6eb4d7a0b59f08c6a84aa24e3d85ccb3798ad"
+  },
+  "api": {
+    "mode": [
+      "locations",
+      "delivery",
+      "seed",
+      "runner",
+      "selfCross"
+    ],
+    "at": "Record<string, number> of scene-local semantic cue frames",
+    "viewBox": [
+      0,
+      0,
+      1720,
+      620
+    ],
+    "additionalDelayFrames": 0,
+    "labelFontSizeSvgPixels": 50,
+    "cueRules": "Named nonnegative integer frames in declared sequence; missing keys stay unrevealed. Caller must not subtract an additional delay or use DiagramRenderer's legacy 62-frame entrance as a second offset.",
+    "guards": "Zygote identity begins only after its cue and 0.9-second fusion settlement. Independence text begins only after its cue and 1.4-second roots/shoot growth settlement. These safeguards do not supply measured narration timing."
+  },
+  "semanticCues": [
+    {
+      "mode": "locations",
+      "keys": [
+        "anther",
+        "stigma",
+        "pollenDetail",
+        "style",
+        "ovary",
+        "ovule",
+        "embryoSac",
+        "egg"
+      ],
+      "spokenAnchors": [
+        "The anther makes pollen.",
+        "The stigma is the surface that receives pollen.",
+        "A pollen grain is not just a sperm cell.",
+        "The style lies between the stigma and the ovary.",
+        "The ovary contains ovules.",
+        "Inside an ovule",
+        "an embryo sac",
+        "containing the egg cell."
+      ],
+      "purpose": "First locate the flower landmarks. Pollen/sperm magnification gives way to a larger nested ovary/ovule/embryo-sac/egg cutaway. Parent boundaries remain spatial containers, not transformations."
+    },
+    {
+      "mode": "delivery",
+      "keys": [
+        "pollination",
+        "pollenTube",
+        "spermDelivery",
+        "fusion",
+        "zygote"
+      ],
+      "spokenAnchors": [
+        "Pollination means transferring pollen",
+        "The pollen grain begins growing a pollen tube.",
+        "provides a route for sperm cells",
+        "A sperm cell then joins the egg cell.",
+        "Their fusion forms a zygote"
+      ],
+      "purpose": "Pollen moves to and remains at the stigma. Tube draws down the style and into a magnified ovule route. A separate sperm marker travels towards the egg. Fusion changes only the cell identity inside the retained embryo-sac and ovule boundaries."
+    },
+    {
+      "mode": "seed",
+      "keys": [
+        "zygote",
+        "embryo",
+        "seed",
+        "fruit"
+      ],
+      "spokenAnchors": [
+        "After that fusion, the zygote",
+        "divides and develops into an embryo",
+        "The surrounding ovule develops into a seed.",
+        "The ovary usually develops into the fruit"
+      ],
+      "purpose": "Show one cell, a schematic dividing-cell cluster, and a contained embryo. The surrounding ovule envelope persists as the seed envelope and coat. Separate usually-qualified fruit view encloses seeds. Stored resources remain distinct from embryo."
+    },
+    {
+      "mode": "runner",
+      "keys": [
+        "runner",
+        "node",
+        "rootsShoot",
+        "noFusion",
+        "independent"
+      ],
+      "spokenAnchors": [
+        "A strawberry runner is a stem",
+        "A node is a point on the stem",
+        "At a suitable node, roots and a shoot can develop",
+        "without sperm and egg joining",
+        "A new rooted plant can become independent"
+      ],
+      "purpose": "Runner stem draws from parent to a node. Root strokes and a shoot grow at that node before independence can be described. The connecting runner remains present; no instant detachment or genetically-identical guarantee."
+    },
+    {
+      "mode": "selfCross",
+      "keys": [
+        "self",
+        "cross",
+        "conditionalFusion"
+      ],
+      "spokenAnchors": [
+        "Self-pollination means pollen",
+        "Cross-pollination means pollen",
+        "When compatible pollen leads to sperm joining an egg"
+      ],
+      "purpose": "Replace same-plant route with different-plant route, then add the conditional sperm-egg fusion rule. Moving pollen indicates transfer, not completed fertilisation."
+    }
+  ],
+  "reuseDecisions": [
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/FlowerDiagram.tsx",
+      "decision": "adjust motif only, preserve default",
+      "inspection": "Source only",
+      "reason": "Useful paired petals, anthers, stigma/style and cutaway motif expanded to the native board. Hardcoded anther/male and stigma/female substitutions, whole ovule-to-zygote, seed-varied and identical-clone claims are excluded. This component is not imported or modified."
+    },
+    {
+      "path": "src/slides/diagrams/diorama.tsx",
+      "decision": "reuse",
+      "inspection": "Source only",
+      "reason": "Actual namespaced DioramaDefs and bounded stone plinth imported for a stable location reference. Plinth shadows were kept inside the 620-unit component extent by source calculation. No particle atoms or ambient motion compete with labels."
+    },
+    {
+      "path": "src/styles/tokens.ts",
+      "decision": "reuse",
+      "inspection": "Source only",
+      "reason": "Inter Tight display family, Biology blue and existing ink/amber tokens. Plant green, coral, cream and brown distinguish botanical structures with explicit labels."
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m7/PlantDiagram.tsx",
+      "decision": "inspect and adjust botanical silhouette",
+      "inspection": "Source only",
+      "reason": "Native plant/leaf geometry informs the new large rooted runner silhouette. Disease, transport block, wilting and clone claims do not serve the selected task and are not imported."
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y11-m2a/PlantIODiagram.tsx",
+      "decision": "inspect",
+      "inspection": "Source only",
+      "reason": "Existing roots/shoots and coded flow separation considered. Plant nutrition, gas streams, pot, sun and day/night scene are outside this reproductive mechanism, so no component or artwork imported."
+    },
+    {
+      "path": "src/prototypes/DesignDirections.tsx",
+      "decision": "reuse teaching approach, not calculation scene",
+      "inspection": "Source only",
+      "reason": "Editorial diorama and stable coded quantities provide a useful native construction vocabulary. Use deterministic stroke growth and staged semantic states. Generic painted laboratory and calculation columns are unrelated to this plant mechanism."
+    },
+    {
+      "path": "src/prototypes/CapabilityTests.tsx",
+      "decision": "inspect",
+      "inspection": "Source only",
+      "reason": "The native mechanism test keeps identity labels distinct from moving structures. Apply that principle to pollen, tube, sperm and egg. DNA replication and painted molar-mass atmosphere are not imported or exhibited as extra features."
+    }
+  ],
+  "scientificInvariants": [
+    "Anther and stigma are flower parts, not replacements for sperm and egg.",
+    "Pollen grain and sperm cells are different structures.",
+    "Ovary contains ovules; ovule contains embryo sac; egg lies inside that sac.",
+    "Pollen at stigma establishes transfer only. Tube route and sperm delivery precede the separately cued fusion event.",
+    "Only sperm-egg fusion cell becomes the zygote. The whole ovule remains a surrounding structure.",
+    "Zygote develops into embryo; surrounding ovule develops into seed containing embryo. Coat and stored resources are not drawn as produced solely by zygote.",
+    "Ovary-to-fruit is separate and qualified usually.",
+    "The model follows embryo-forming fusion, not double fertilisation, endosperm production or a complete life cycle.",
+    "Runner reproduction requires a new rooted plant at a suitable node, not stem lengthening alone.",
+    "No universal clone identity, offspring survival, superiority or universal fertilisation requirement for every seed is asserted.",
+    "Self/cross pollen routes do not guarantee fusion, seed formation or a surviving plant."
+  ],
+  "motion": {
+    "driver": "useCurrentFrame and useVideoConfig, deterministic interpolate with clamped Bézier easing",
+    "reveals": "Stable labels fade over 0.5 seconds; leaders/tubes/stems/roots draw via pathLength and strokeDashoffset; only teaching structures grow or travel.",
+    "holds": "Text stays fixed once revealed. No CSS animation, random state, bobbing text or decorative particle loop.",
+    "transitionSafety": "This model is not selected in the protected question attempt. Root retains the revision-02 response plan and actual 24-frame runtime transition accounting."
+  },
+  "authorChecks": {
+    "sourceBindings": [
+      {
+        "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+        "sha256": "ecac264e7bd2a33397bf292043932f4c74f540e539384bb9d71c5224deee1862"
+      },
+      {
+        "path": "src/slides/diagrams/kinds/bio-y12-m5/FlowerDiagram.tsx",
+        "sha256": "749fa2399823f135c86cf9425c250878f09a0122533e5092fbc80bf6617c0640"
+      },
+      {
+        "path": "src/slides/diagrams/diorama.tsx",
+        "sha256": "6f52d6b69cdbb7704a4fd6e5e3f8e778f88565bac9d5e599cf0704d7fa526ca2"
+      },
+      {
+        "path": "src/styles/tokens.ts",
+        "sha256": "72f0d3dc99e67edf1d7c0daf5bd33777ca734c35a2184e788340fb9f08a15fb9"
+      },
+      {
+        "path": "src/prototypes/DesignDirections.tsx",
+        "sha256": "8906ed76483a129d4922147b9f32b9c505435f31682bb863428ce957040f784b"
+      },
+      {
+        "path": "src/prototypes/CapabilityTests.tsx",
+        "sha256": "8486f75f270ca8042497c7c5d47c510dd38343668870db2486d125f4cf8e1e8f"
+      },
+      {
+        "path": "src/slides/diagrams/kinds/bio-y12-m7/PlantDiagram.tsx",
+        "sha256": "ce0a61cc919e87aecfb3342f976c1a8182ec84565febe9984cff7fc873d966cf"
+      },
+      {
+        "path": "src/slides/diagrams/kinds/bio-y11-m2a/PlantIODiagram.tsx",
+        "sha256": "8d6c4362a5ebe79bfb4a8737b3a886e66acc1aa719a624ab55d80170f23e66dd"
+      },
+      {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+        "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+      },
+      {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/visual-implementation-proposal.json",
+        "sha256": "bb95efdddae0486817014bc47eb6eb4d7a0b59f08c6a84aa24e3d85ccb3798ad"
+      },
+      {
+        "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/biology-b3-plants.md",
+        "sha256": "0a2ab244ed56d890953bf65424208aa51dad2e1c285be54a80d2373283472aad"
+      },
+      {
+        "path": "node_modules/remotion/package.json",
+        "sha256": "69a540bcbd016a9af8441b8bb34259d04eb6279aae135544b5bf8a08d6453ce0"
+      },
+      {
+        "path": "node_modules/@remotion/player/package.json",
+        "sha256": "e7423bf1e1ba9fc3c79490dde0ae6f0fcde8f539fe3fc752c709838a404005de"
+      },
+      {
+        "path": "node_modules/react/package.json",
+        "sha256": "ce01a280a6109d1a837e88ce99784f318785079dbffda086a870aad61adc94e1"
+      },
+      {
+        "path": "node_modules/react-dom/package.json",
+        "sha256": "92aa96480eaab724565c5bb8a4b1dd355114506e5babd36c48c783407ff9937d"
+      }
+    ],
+    "prohibitedPunctuationAbsent": true,
+    "legacyFlowerUnchanged": true,
+    "parentRevision02Unchanged": true,
+    "typecheck": {
+      "command": "npm run check",
+      "exitCode": 0,
+      "scope": "Current working runtime after the final owned component change. Earlier unrelated missing in-progress Chemistry import was resolved before this final successful run."
+    },
+    "componentMarkup": {
+      "componentMarkupSamples": 75,
+      "modeCases": {
+        "locations": {
+          "anther": 0,
+          "stigma": 60,
+          "pollenDetail": 120,
+          "style": 180,
+          "ovary": 240,
+          "ovule": 300,
+          "embryoSac": 360,
+          "egg": 420
+        },
+        "delivery": {
+          "pollination": 0,
+          "pollenTube": 90,
+          "spermDelivery": 180,
+          "fusion": 270,
+          "zygote": 330
+        },
+        "seed": {
+          "zygote": 0,
+          "embryo": 120,
+          "seed": 240,
+          "fruit": 360
+        },
+        "runner": {
+          "runner": 0,
+          "node": 90,
+          "rootsShoot": 180,
+          "noFusion": 300,
+          "independent": 420
+        },
+        "selfCross": {
+          "self": 0,
+          "cross": 180,
+          "conditionalFusion": 360
+        }
+      },
+      "checks": [
+        "All five modes return finite actual component markup at cue boundaries and settled states.",
+        "Locations switch from pollen detail to distinct nested-container view.",
+        "Delivery egg state precedes the zygote cue and fusion settlement.",
+        "Ovule/seed envelope persists while embryo develops inside it."
+      ],
+      "sampleHashes": [
+        {
+          "mode": "locations",
+          "at": {
+            "anther": 0,
+            "stigma": 60,
+            "pollenDetail": 120,
+            "style": 180,
+            "ovary": 240,
+            "ovule": 300,
+            "embryoSac": 360,
+            "egg": 420
+          },
+          "playerFrame": 700,
+          "sha256": "ca8d924efc03d5928bd25dac68e131c6085866a0ddd4773466b9c17b631b5eb2"
+        },
+        {
+          "mode": "delivery",
+          "at": {
+            "pollination": 0,
+            "pollenTube": 90,
+            "spermDelivery": 180,
+            "fusion": 270,
+            "zygote": 330
+          },
+          "playerFrame": 700,
+          "sha256": "b5803f1e17abefc22c0bd15d70f77126f04d96dd26f0d717d9d256dbbead6836"
+        },
+        {
+          "mode": "seed",
+          "at": {
+            "zygote": 0,
+            "embryo": 120,
+            "seed": 240,
+            "fruit": 360
+          },
+          "playerFrame": 700,
+          "sha256": "5920d75b1df1d0ce438960f49fbaec1aa5d04d3a45902b73082760b36589bb0b"
+        },
+        {
+          "mode": "runner",
+          "at": {
+            "runner": 0,
+            "node": 90,
+            "rootsShoot": 180,
+            "noFusion": 300,
+            "independent": 420
+          },
+          "playerFrame": 700,
+          "sha256": "e0ad6ef0bb2983c1b54ebf654a635bdd96c136678ef8adfb49fcd6bc54c38389"
+        },
+        {
+          "mode": "selfCross",
+          "at": {
+            "self": 0,
+            "cross": 180,
+            "conditionalFusion": 360
+          },
+          "playerFrame": 700,
+          "sha256": "c77799e7f7bd916988e34056012b6e1d9bfc81aa88572f668402a9a25e4d816f"
+        }
+      ],
+      "method": "Actual component via actual installed Remotion Player and ReactDOMServer. No frame hooks or timeline consumers mocked.",
+      "scope": "Synthetic cue values, not accepted speech alignment or native pixels. No motion/device/audio/listening approval."
+    },
+    "guardScope": "Named/integer/ordered cue guards inspected in source. No claim that Player propagates invalid-prop exceptions is made."
+  },
+  "layoutEstimates": {
+    "rootReportedShellY": [
+      220,
+      840
+    ],
+    "componentWidth": 1720,
+    "componentHeight": 620,
+    "latestLabelBaselines": [
+      608,
+      614
+    ],
+    "plinthShadowCalculatedLowerExtent": 619,
+    "captionReserveY": 850,
+    "scope": "Source estimates only. Actual font glyph endings, native clipping, label/shape collisions and narrow browser caption/controls fit remain pending. The small lower margin must be inspected rather than inferred as a pass."
+  },
+  "downstreamPending": [
+    "Different independent component and exact integrated-source scientific review",
+    "Root-owned registry/types/ConceptScene/selected-source integration and exact hashes",
+    "Actual native frames for early and settled states in all selected modes, with caption reserve",
+    "Continuous motion and narrow-player captions/controls checks",
+    "Fresh recorded words/alignment and semantic cue reconciliation",
+    "Separate human listening, export and release gates"
+  ],
+  "changesExcluded": [
+    "Legacy FlowerDiagram/defaults",
+    "Previous selected sources and author/independent evidence",
+    "Shared types/registry/scene components",
+    "Scripts, route/ledger/gates/media",
+    "Paid voice and full exports"
+  ],
+  "limitation": "Author native code and bounded source/server-markup verification only. No artwork appearance, native pixels, browser motion/device clearance, science independent pass, recording readiness, listening, learner outcome or release approval is claimed."
+}

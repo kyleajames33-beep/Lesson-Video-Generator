@@ -366,7 +366,7 @@ export type TextScene = SceneBase & {
   unitCancel?: UnitCancelConfig;
   diagram?: DiagramConfig;
   /** Give a teaching diagram more space while keeping its text alongside it. */
-  conceptVisualLayout?: 'diagramFocus';
+  conceptVisualLayout?: 'diagramFocus' | 'diagramBoard';
   /**
    * Draw this scene's diagram in the hand-drawn stop-motion style (line boil,
    * held drawings, paper grain) — or force the default look. Overrides the

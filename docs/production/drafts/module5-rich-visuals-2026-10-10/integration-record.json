@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "status": "integrated-silent-candidates-independent-review-pending",
+  "timing": "Word-position estimates only, local scene frames. Fresh accepted narration/alignment must replace these before voiced production.",
+  "lessons": [
+    {
+      "subject": "chemistry",
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      "parent": {
+        "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+        "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+      },
+      "component": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "changedSceneIds": [
+        "c3-hook",
+        "c3-add",
+        "c3-remove",
+        "c3-principle",
+        "c3-temperature",
+        "c3-temperature-response"
+      ],
+      "acceptedWordsAndDurationsPreserved": true,
+      "cueRecords": [
+        {
+          "sceneId": "c3-hook",
+          "mode": "additionHook",
+          "key": "event",
+          "phrase": "Now we briefly add more A",
+          "localFrame": 476,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-hook",
+          "mode": "additionHook",
+          "key": "response",
+          "phrase": "Any extra B has to be made by reaction",
+          "localFrame": 720,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-add",
+          "mode": "addA",
+          "key": "event",
+          "phrase": "A's concentration rises immediately",
+          "localFrame": 682,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-add",
+          "mode": "addA",
+          "key": "rateReason",
+          "phrase": "Straight after mixing",
+          "localFrame": 772,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-add",
+          "mode": "addA",
+          "key": "response",
+          "phrase": "A now falls from its jump",
+          "localFrame": 1350,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-add",
+          "mode": "addA",
+          "key": "limit",
+          "phrase": "In this model, the new equilibrium",
+          "localFrame": 1582,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-remove",
+          "mode": "removeB",
+          "key": "event",
+          "phrase": "B drops immediately",
+          "localFrame": 206,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-remove",
+          "mode": "removeB",
+          "key": "response",
+          "phrase": "B starts rising",
+          "localFrame": 656,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-remove",
+          "mode": "removeB",
+          "key": "originalCompare",
+          "phrase": "But compare B with its original level",
+          "localFrame": 977,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-principle",
+          "mode": "fixedK",
+          "key": "defineK",
+          "phrase": "We also need a new term",
+          "localFrame": 682,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-principle",
+          "mode": "fixedK",
+          "key": "sameK",
+          "phrase": "Adding or removing A or B",
+          "localFrame": 1209,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature",
+          "mode": "associationHeat",
+          "key": "association",
+          "phrase": "Two nitrogen dioxide molecules",
+          "localFrame": 129,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature",
+          "mode": "associationHeat",
+          "key": "exothermic",
+          "phrase": "A heat-releasing reaction is exothermic",
+          "localFrame": 450,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature",
+          "mode": "associationHeat",
+          "key": "reverse",
+          "phrase": "The reverse direction absorbs heat",
+          "localFrame": 746,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature",
+          "mode": "associationHeat",
+          "key": "heating",
+          "phrase": "Heating favours",
+          "localFrame": 862,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature",
+          "mode": "associationHeat",
+          "key": "cooling",
+          "phrase": "Cooling favours",
+          "localFrame": 1132,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature-response",
+          "mode": "temperatureResponse",
+          "key": "event",
+          "phrase": "Now separate the temperature change",
+          "localFrame": 604,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature-response",
+          "mode": "temperatureResponse",
+          "key": "continuousConcentrations",
+          "phrase": "Their concentrations therefore do not jump",
+          "localFrame": 990,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature-response",
+          "mode": "temperatureResponse",
+          "key": "defineNewK",
+          "phrase": "K has a value for the new temperature",
+          "localFrame": 1183,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "c3-temperature-response",
+          "mode": "temperatureResponse",
+          "key": "response",
+          "phrase": "Hold the new temperature fixed",
+          "localFrame": 1595,
+          "status": "estimated-not-measured"
+        }
+      ],
+      "productionBrief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/production-brief.json",
+        "sha256": "dde872f403e13c975ad01f3dcbe8b792e94b818f838b5074beb3999af1fdfdd1"
+      }
+    },
+    {
+      "subject": "biology",
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      "parent": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+        "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+      },
+      "component": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "changedSceneIds": [
+        "b3-flower",
+        "b3-delivery",
+        "b3-seed",
+        "b3-runner",
+        "b3-self-cross"
+      ],
+      "acceptedWordsAndDurationsPreserved": true,
+      "cueRecords": [
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "anther",
+          "phrase": "The anther makes pollen",
+          "localFrame": 116,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "stigma",
+          "phrase": "The stigma is the surface",
+          "localFrame": 167,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "pollenDetail",
+          "phrase": "A pollen grain is not just a sperm cell",
+          "localFrame": 270,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "style",
+          "phrase": "The style lies between",
+          "localFrame": 669,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "ovary",
+          "phrase": "The ovary contains ovules",
+          "localFrame": 785,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "ovule",
+          "phrase": "Inside an ovule",
+          "localFrame": 836,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "embryoSac",
+          "phrase": "an embryo sac",
+          "localFrame": 887,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-flower",
+          "mode": "locations",
+          "key": "egg",
+          "phrase": "containing the egg cell",
+          "localFrame": 926,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-delivery",
+          "mode": "delivery",
+          "key": "pollination",
+          "phrase": "Pollination means transferring pollen",
+          "localFrame": 0,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-delivery",
+          "mode": "delivery",
+          "key": "pollenTube",
+          "phrase": "The pollen grain begins growing a pollen tube",
+          "localFrame": 360,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-delivery",
+          "mode": "delivery",
+          "key": "spermDelivery",
+          "phrase": "provides a route for sperm cells",
+          "localFrame": 771,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-delivery",
+          "mode": "delivery",
+          "key": "fusion",
+          "phrase": "A sperm cell then joins the egg cell",
+          "localFrame": 913,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-delivery",
+          "mode": "delivery",
+          "key": "zygote",
+          "phrase": "Their fusion forms a zygote",
+          "localFrame": 1016,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-seed",
+          "mode": "seed",
+          "key": "zygote",
+          "phrase": "After that fusion",
+          "localFrame": 0,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-seed",
+          "mode": "seed",
+          "key": "embryo",
+          "phrase": "develops into an embryo",
+          "localFrame": 90,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-seed",
+          "mode": "seed",
+          "key": "seed",
+          "phrase": "The surrounding ovule develops into a seed",
+          "localFrame": 193,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-seed",
+          "mode": "seed",
+          "key": "fruit",
+          "phrase": "The ovary usually develops into the fruit",
+          "localFrame": 618,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-runner",
+          "mode": "runner",
+          "key": "runner",
+          "phrase": "A strawberry runner is a stem",
+          "localFrame": 0,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-runner",
+          "mode": "runner",
+          "key": "node",
+          "phrase": "A node is a point",
+          "localFrame": 141,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-runner",
+          "mode": "runner",
+          "key": "rootsShoot",
+          "phrase": "roots and a shoot can develop",
+          "localFrame": 373,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-runner",
+          "mode": "runner",
+          "key": "noFusion",
+          "phrase": "That builds the new plant without sperm and egg joining",
+          "localFrame": 797,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-runner",
+          "mode": "runner",
+          "key": "independent",
+          "phrase": "A new rooted plant can become independent",
+          "localFrame": 1569,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-self-cross",
+          "mode": "selfCross",
+          "key": "self",
+          "phrase": "Self-pollination means",
+          "localFrame": 0,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-self-cross",
+          "mode": "selfCross",
+          "key": "cross",
+          "phrase": "Cross-pollination means",
+          "localFrame": 180,
+          "status": "estimated-not-measured"
+        },
+        {
+          "sceneId": "b3-self-cross",
+          "mode": "selfCross",
+          "key": "conditionalFusion",
+          "phrase": "When compatible pollen leads to sperm joining an egg",
+          "localFrame": 566,
+          "status": "estimated-not-measured"
+        }
+      ],
+      "productionBrief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/production-brief.json",
+        "sha256": "9b8563cb3250a8e6fa06bcf6b3753c93b0d59d826d51dbbb74da0c8d3132e471"
+      }
+    }
+  ]
+}

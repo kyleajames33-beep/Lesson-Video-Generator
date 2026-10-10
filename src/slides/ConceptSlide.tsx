@@ -46,6 +46,9 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 	// Text-only concepts get the full width and larger type instead of
 	// leaving the right half of the frame empty.
 	const wide = !hasVisual;
+	if (scene.conceptVisualLayout === 'diagramBoard' && scene.diagram) {
+		return <ConceptDiagramBoard scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
+	}
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} topic="CORE IDEA" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
@@ -163,6 +166,25 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 						<VisualStage scene={scene} lesson={lesson} />
 					</FadeUp>
 				) : null}
+			</div>
+		</SlideFrame>
+	);
+};
+
+/** Opt-in mechanism board. The diagram supplies its current labels and context;
+ * duplicating the scene's bullet list would compete with those teaching cues. */
+const ConceptDiagramBoard = ({scene, lesson, sceneIndex, totalScenes}: ConceptSlideProps) => {
+	const rd = scene.revealDelays ?? {};
+	return (
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			<SlideChrome lesson={lesson} topic="CORE IDEA" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<div data-teaching-board-heading style={{position: 'absolute', left: 100, top: 120, width: 1720}}>
+				<FadeUp delay={rd.heading ?? 12} durationFrames={14} dy={12}>
+					<h1 style={{margin: 0, color: TOK.ink, fontSize: 64, fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.025em'}}>{scene.heading}</h1>
+				</FadeUp>
+			</div>
+			<div data-teaching-diagram-board style={{position: 'absolute', left: 100, top: 220, width: 1720, height: 620}}>
+				<DiagramRenderer diagram={scene.diagram!} />
 			</div>
 		</SlideFrame>
 	);

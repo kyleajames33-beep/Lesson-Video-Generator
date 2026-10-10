@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Both selected silent integrations pass bounded independent source checks. Essential staged visuals and exact native/narrow review remain required before recording.",
+  "status": "C3 and plants now have their essential staged models. Use the rich-visual selected sources; source/model and sampled native evidence pass. Narration and later gates remain pending.",
   "routePath": "docs/production/module5-video-route-2026-10-10.json",
   "authorRevisionRecord": {
     "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/revision-record.json",
@@ -26,6 +26,88 @@
   "preservation": "Keep historical parent preparations and their inspection evidence. Do not attach historical audio to these new words. Remaining fungi/bacteria/protists and practical actions remain separate.",
   "publication": "No recording, full-export, human-listening, curriculum-completion or public-release approval.",
   "selectedIntegrations": [
+    {
+      "canonicalId": "chem-m5-c03",
+      "label": "Chemistry C3: concentration and temperature",
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      "teachingBrief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/production-brief.json",
+        "sha256": "4903a99048ed12b86d79c6df2dce811f7dd1e8f791842b537573ead2bd9ddd90"
+      },
+      "independentReview": {
+        "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.md",
+        "sha256": "38defec9de578c746bbe3d921cffbf9b5fd24eef9cba7ba92d4f4f72292c9d6d"
+      },
+      "status": "Exact silent source/model and sampled native pass. Working animations integrated; fresh narration and later review remain pending.",
+      "progression": {
+        "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+        "prerequisiteKnowledge": "C2: equal opposing rates versus amounts, closed versus insulated systems and the declared one-to-one A/B model. Entry check: equal rates need not mean equal concentrations. Rate and concentration are reminded in speech; released/absorbed heat and the enthalpy sign are explained here before use.",
+        "startsWith": "Established equilibrium, briefly add/remove one participating form at fixed temperature/volume and reclose. A/B is a well-mixed one-to-one first-order model with positive fixed coefficients and no side reactions. Separate temperature case: closed, fixed-volume 2NO₂(g) ⇌ N₂O₄(g), forward heat-releasing.",
+        "stopsAfter": "Distinguish immediate imposed change from subsequent reaction, explain direction and fixed-temperature versus temperature-dependent K; diagnose possible open-oven water loss. No pressure/volume disturbance, catalyst mechanism, Q, ICE, K-expression construction or practical conduct.",
+        "nextLesson": "chem-m5-c04: gaseous volume/pressure and catalyst distinctions. C5 constructs equilibrium expressions; C6 calculations; C9 temperature/K data; p01 supervised named investigations remain separate."
+      },
+      "remaining": [
+        "Continuous/narrow preview checks across the complete selected lesson",
+        "Fresh narration, measured cues and holds",
+        "Exact voiced preview and human listening",
+        "Full export and current public-release gates"
+      ],
+      "transitionReview": {
+        "path": "docs/production/module5-c3-beginner-selected-transition-addendum-2026-10-10.md",
+        "sha256": "b34e1b005deaf48642f39e7b1d6e8649f75fc1844ac185ab7812cfc5f2717f93"
+      },
+      "visualReviewUrl": "http://127.0.0.1:8778/module5-rich-visual-review-2026-10-10/",
+      "recordingStagePreflight": {
+        "ready": true,
+        "evidence": {
+          "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/validation-record.json",
+          "sha256": "9bea17f973fbe002711a1890aa86a606e1d003a8c045fc99f7b1cf61a4b2cb8e"
+        }
+      }
+    },
+    {
+      "canonicalId": "bio-m5-b02b / plants contribution",
+      "label": "Biology: flowering plants",
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      "teachingBrief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/production-brief.json",
+        "sha256": "62d281694c9ec4a8b9e513331abe91d9175b42739f3863b1d4ee7108c3972e78"
+      },
+      "independentReview": {
+        "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.md",
+        "sha256": "38defec9de578c746bbe3d921cffbf9b5fd24eef9cba7ba92d4f4f72292c9d6d"
+      },
+      "status": "Exact silent source/model and sampled native pass. Working animations integrated; fresh narration and later review remain pending.",
+      "progression": {
+        "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+        "prerequisiteKnowledge": "reproduction connects generations; cells contain inherited information in DNA; gametes are reproductive cells; sexual reproduction involves fusion of gametes, while asexual reproduction does not. Basic root, stem and leaf vocabulary helps with a runner. `bio-m5-b01` is the canonical prerequisite. Its selected draft provides the fusion criterion and a strawberry runner example; it is support material, not a presumed public upload. The animal contribution `bio-m5-b02a` is preceding playlist context, but its internal/external classification and chromosome-set model are not prerequisites for the plant explanation.",
+        "startsWith": "one strawberry plant can produce a new plant from a runner. A self-compatible flowering plant can also supply both gametes in a sexual reproductive event. One visible parent does not settle the classification.",
+        "stopsAfter": "the learner can explain pollen transfer, pollen-tube delivery and sperm-egg fusion in the supplied flowering-plant model; distinguish zygote-to-embryo development from ovule-to-seed development; explain strawberry runner propagation without fusion; classify supplied self-fertilisation and cross-fertilisation cases by fusion; and predict why interrupting the delivery pathway can prevent fusion despite successful pollination. Conditions and later establishment remain distinct from classification.",
+        "nextLesson": "the fungi, bacteria and protists contributions to `bio-m5-b02b` remain to be prepared and reviewed. They need their own named mechanisms and organism limits. After those group contributions, the existing canonical route points to `bio-m5-b03a` for mammalian fertilisation, implantation, pregnancy and birth, and `bio-m5-b03b` for agricultural manipulation. This plant contribution does not justify skipping the missing groups. Root decides the final focused playlist subdivision."
+      },
+      "remaining": [
+        "Continuous/narrow preview checks across the complete selected lesson",
+        "Fresh narration, measured cues and holds",
+        "Exact voiced preview and human listening",
+        "Full export and current public-release gates"
+      ],
+      "visualReviewUrl": "http://127.0.0.1:8778/module5-rich-visual-review-2026-10-10/",
+      "recordingStagePreflight": {
+        "ready": true,
+        "evidence": {
+          "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/validation-record.json",
+          "sha256": "9bea17f973fbe002711a1890aa86a606e1d003a8c045fc99f7b1cf61a4b2cb8e"
+        }
+      }
+    }
+  ],
+  "preRichVisualSelectedIntegrations": [
     {
       "canonicalId": "chem-m5-c03",
       "label": "Chemistry C3: concentration and temperature",
@@ -94,5 +176,9 @@
         "Full export and public-release gates"
       ]
     }
-  ]
+  ],
+  "richVisualCorrection": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/correction-record.json",
+    "sha256": "e2bc8760fbf17a1db865d5306a844da648b4814a53cde6c8dc02477b730331d4"
+  }
 }

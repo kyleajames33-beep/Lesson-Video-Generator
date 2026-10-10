@@ -1,0 +1,1174 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "author": "Sol 6.1, bounded C3 component author",
+  "status": "implemented-author-checks-pass-independent-source-native-playback-pending",
+  "scope": {
+    "ownedPaths": [
+      "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "docs/production/module5-c3-visual-implementation-2026-10-10.json"
+    ],
+    "selectedLesson": "chem-m5-c03",
+    "registryKindProposed": "chem12m5Disturbance",
+    "noSharedDefaultsChanged": true,
+    "narration": "Accepted source words untouched. No audio attached or generated.",
+    "rootResponsibilities": [
+      "Opt-in types/registry and selected full-width diagramBoard integration",
+      "Exact integrated source review",
+      "Native and device geometry checks",
+      "Fresh recording, measured alignment and response assembly after gates",
+      "Voiced pilot, human listening, export and release gates"
+    ]
+  },
+  "component": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+    "sha256": "596f87396685f49b22ac3c288344bb0f71342e96b4397112e5b2e4162d496235"
+  },
+  "acceptedInputs": [
+    {
+      "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/chemistry-c3.md",
+      "sha256": "22bcd7f9a2d7279dd2f7c8df7f9a9e091fcff11e23d4df20b4012d8420f98ff2"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+      "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/visual-implementation-proposal.json",
+      "sha256": "322def33b542709f419cd88963d53224222bb4b7cd282169e96d5dfc4d47ad03"
+    }
+  ],
+  "api": {
+    "signature": "{mode: DisturbanceMode; at: Record<string, number>}",
+    "viewBox": "0 0 1720 620",
+    "cueUnits": "Local scene frames from actual useCurrentFrame, no delay subtraction",
+    "unknownKeys": "Ignored. Missing, negative or nonfinite supported cues stay unrevealed. No runtime demonstration fallback.",
+    "fps": "Motion durations use actual useVideoConfig().fps; proposed cue frame estimates assume 30 fps.",
+    "frameDriven": true,
+    "dependencies": [
+      {
+        "path": "src/slides/diagrams/diorama.tsx",
+        "sha256": "6f52d6b69cdbb7704a4fd6e5e3f8e778f88565bac9d5e599cf0704d7fa526ca2"
+      },
+      {
+        "path": "src/slides/diagrams/kinds/chem-y12-m5/shared.tsx",
+        "sha256": "3f9fc9743d73949ac57650a4609c1817503a464aa307da218132c48a9aa7abda"
+      },
+      {
+        "path": "src/styles/tokens.ts",
+        "sha256": "72f0d3dc99e67edf1d7c0daf5bd33777ca734c35a2184e788340fb9f08a15fb9"
+      },
+      {
+        "path": "src/styles/theme.ts",
+        "sha256": "fb5549544480d3b7d7a34d043d3d79c3389502ad2bf84686e7ef30e614fbdf17"
+      }
+    ],
+    "motionDurations": {
+      "incomingASymbolSeconds": 0.8,
+      "associationAndSplittingSeconds": 2,
+      "heatWaveSeconds": 1.8,
+      "finiteTraceDrawingSeconds": 8,
+      "temperatureSeparateReferenceSecondsAfterResponse": 6
+    },
+    "timeMeaning": "Eight screen seconds map to 1.8 arbitrary model time units. Screen duration is an unvoiced illustration choice, not physical kinetics or measured narration."
+  },
+  "scenes": [
+    {
+      "sceneId": "c3-hook",
+      "mode": "additionHook",
+      "visualDecision": "selected opt-in native vector treatment",
+      "treatment": "One mixture with concentration bars and original-level ghosts. A-only transfer symbol enters at the event. B stays fixed until the analytic reaction response. Both written conversion directions remain present.",
+      "cues": [
+        {
+          "key": "event",
+          "spokenAnchor": "Now we briefly add more A",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "response",
+          "spokenAnchor": "Any extra B has to be made by reaction",
+          "consumerUnits": "local scene frames"
+        }
+      ],
+      "authorDemonstrationAt": {
+        "event": 360,
+        "response": 600
+      },
+      "timingStatus": "Demonstration estimates only. Root integrated cue records and later actual fresh alignment are separate authority.",
+      "hold": "Readable stable labels and deliberate direct-change pause; no idle motion added to satisfy a quota."
+    },
+    {
+      "sceneId": "c3-add",
+      "mode": "addA",
+      "visualDecision": "selected opt-in native vector treatment",
+      "treatment": "One fixed-scale concentration graph, true A-only vertical step, frozen B, subsequent continuous analytic traces. Rate reason appears separately, then exact final reference values in a separate card.",
+      "cues": [
+        {
+          "key": "event",
+          "spokenAnchor": "A's concentration rises immediately",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "rateReason",
+          "spokenAnchor": "Straight after mixing",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "response",
+          "spokenAnchor": "A now falls from its jump",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "limit",
+          "spokenAnchor": "In this model, the new equilibrium",
+          "consumerUnits": "local scene frames"
+        }
+      ],
+      "authorDemonstrationAt": {
+        "event": 240,
+        "rateReason": 450,
+        "response": 720,
+        "limit": 1020
+      },
+      "timingStatus": "Demonstration estimates only. Root integrated cue records and later actual fresh alignment are separate authority.",
+      "hold": "Readable stable labels and deliberate direct-change pause; no idle motion added to satisfy a quota."
+    },
+    {
+      "sceneId": "c3-remove",
+      "mode": "removeB",
+      "visualDecision": "selected opt-in native vector treatment",
+      "treatment": "Reset original A=2/B=1. B-only downward step, frozen A, subsequent partial B recovery. Original B guide persists; exact final B reference is below original.",
+      "cues": [
+        {
+          "key": "event",
+          "spokenAnchor": "B drops immediately",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "response",
+          "spokenAnchor": "B starts rising",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "originalCompare",
+          "spokenAnchor": "But compare B with its original level",
+          "consumerUnits": "local scene frames"
+        }
+      ],
+      "authorDemonstrationAt": {
+        "event": 180,
+        "response": 540,
+        "originalCompare": 900
+      },
+      "timingStatus": "Demonstration estimates only. Root integrated cue records and later actual fresh alignment are separate authority.",
+      "hold": "Readable stable labels and deliberate direct-change pause; no idle motion added to satisfy a quota."
+    },
+    {
+      "sceneId": "c3-principle",
+      "mode": "fixedK",
+      "visualDecision": "selected opt-in native vector treatment",
+      "treatment": "Two separate exact equilibrium reference states. Changed reference appears only with sameK. New term K is defined first; constant-temperature badge remains unchanged.",
+      "cues": [
+        {
+          "key": "defineK",
+          "spokenAnchor": "We also need a new term",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "sameK",
+          "spokenAnchor": "Adding or removing A or B",
+          "consumerUnits": "local scene frames"
+        }
+      ],
+      "authorDemonstrationAt": {
+        "defineK": 540,
+        "sameK": 900
+      },
+      "timingStatus": "Demonstration estimates only. Root integrated cue records and later actual fresh alignment are separate authority.",
+      "hold": "Readable stable labels and deliberate direct-change pause; no idle motion added to satisfy a quota."
+    },
+    {
+      "sceneId": "c3-temperature",
+      "mode": "associationHeat",
+      "visualDecision": "selected opt-in native vector treatment",
+      "treatment": "Six persistent glossy native atoms on a shallow reused stone stand. Two NO2 molecules join, same atoms split on reverse cue, then rejoin on cooling cue. Directed heat-wave marks distinguish energy released/absorbed. Molecule labels stay phase-accurate; no random ambient particle motion.",
+      "cues": [
+        {
+          "key": "association",
+          "spokenAnchor": "Two nitrogen dioxide molecules",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "exothermic",
+          "spokenAnchor": "A heat-releasing reaction is exothermic",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "reverse",
+          "spokenAnchor": "The reverse direction absorbs heat",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "heating",
+          "spokenAnchor": "Heating favours",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "cooling",
+          "spokenAnchor": "Cooling favours",
+          "consumerUnits": "local scene frames"
+        }
+      ],
+      "authorDemonstrationAt": {
+        "association": 180,
+        "exothermic": 420,
+        "reverse": 660,
+        "heating": 900,
+        "cooling": 1140
+      },
+      "timingStatus": "Demonstration estimates only. Root integrated cue records and later actual fresh alignment are separate authority.",
+      "hold": "Readable stable labels and deliberate direct-change pause; no idle motion added to satisfy a quota."
+    },
+    {
+      "sceneId": "c3-temperature-response",
+      "mode": "temperatureResponse",
+      "visualDecision": "selected opt-in native vector treatment",
+      "treatment": "Idealised rapid heating: qualitative T/K indicator changes together at event, both concentration traces remain continuous. The composition response starts only with response; K then stays at its new qualitative value. Separate qualitative final reference appears after six seconds of response, not as a finite reached state.",
+      "cues": [
+        {
+          "key": "event",
+          "spokenAnchor": "Now separate the temperature change",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "continuousConcentrations",
+          "spokenAnchor": "Their concentrations therefore do not jump",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "defineNewK",
+          "spokenAnchor": "K has a value for the new temperature",
+          "consumerUnits": "local scene frames"
+        },
+        {
+          "key": "response",
+          "spokenAnchor": "Hold the new temperature fixed",
+          "consumerUnits": "local scene frames"
+        }
+      ],
+      "authorDemonstrationAt": {
+        "event": 360,
+        "continuousConcentrations": 540,
+        "defineNewK": 720,
+        "response": 1020
+      },
+      "timingStatus": "Demonstration estimates only. Root integrated cue records and later actual fresh alignment are separate authority.",
+      "hold": "Readable stable labels and deliberate direct-change pause; no idle motion added to satisfy a quota."
+    }
+  ],
+  "scientificInvariants": {
+    "oneToOne": {
+      "initial": {
+        "a": 2,
+        "b": 1,
+        "forward": 2,
+        "reverse": 2
+      },
+      "addition": {
+        "immediate": {
+          "a": 5,
+          "b": 1
+        },
+        "totalAfterTransfer": 6,
+        "exactLimit": {
+          "a": 4,
+          "b": 2
+        }
+      },
+      "removal": {
+        "immediate": {
+          "a": 2,
+          "b": 0.5
+        },
+        "totalAfterTransfer": 2.5,
+        "exactLimit": {
+          "a": "5/3",
+          "b": "5/6"
+        }
+      },
+      "formula": "A(t)=A_limit+(A_immediate-A_limit)*exp(-3t); B(t)=total-A(t)",
+      "fixedPositiveCoefficients": {
+        "forward": 1,
+        "reverse": 2
+      },
+      "finiteTrace": "Stops at authored finite t=1.8. Opposing rates are still unequal, both positive. Reference values are exact separately supplied limits, never a tolerance or rounded finite state.",
+      "scale": "Both addition and removal use the identical 0 to 5 model-unit axis: y=465-54*value. Reset original state between experiments."
+    },
+    "temperature": {
+      "writtenEquation": "2NO2(g) <-> N2O4(g), forward heat-releasing",
+      "atomCounts": "Every association stage contains exactly two N and four O atom instances. Bond/spacing changes, never identities/counts.",
+      "heat": "Forward joining releases energy; reverse splitting absorbs energy. Heating favours splitting and cooling favours joining. No claim to a full collision mechanism.",
+      "qualitativePath": "NO2=2+2*(1-exp(-2t)); N2O4=2-(1-exp(-2t)); NO2+2*N2O4=6. No numeric ticks or concentration values are shown. This atom-conserving qualitative path is not a real measured rate law or K/T relationship.",
+      "temperatureK": "Idealised imposed heating step updates T higher/K lower together. Composition stays continuous until response and K never depends on path extent. No finite heating ramp is depicted.",
+      "reference": "Final composition direction reference is a separate card. No finite exact-equilibrium marker, equation for K, heat-as-species term or pressure/volume/catalyst lesson."
+    }
+  },
+  "assetsInspected": [
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx",
+      "sha256": "b8835d473de45ccaa2fa46381a4eb642c7bc621bc241dbdada070a01bfa86045",
+      "decision": "adjust",
+      "reason": "Reuse the useful C2 labelled N/O association motif and analytic first-order reasoning. C2 starts with A only and has a different board size; do not carry its initial state into C3.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/diorama.tsx",
+      "sha256": "6f52d6b69cdbb7704a4fd6e5e3f8e778f88565bac9d5e599cf0704d7fa526ca2",
+      "decision": "reuse",
+      "reason": "Reuse DioramaDefs and DioramaPlinth gradients for a native molecular model. Compress only this stand vertically to fit the selected board; no shared source changes. Decline generic Molecule for six-atom N2O4 because its greater-than-two atom arrangement is a triatomic-oriented shorthand.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/shared.tsx",
+      "sha256": "3f9fc9743d73949ac57650a4609c1817503a464aa307da218132c48a9aa7abda",
+      "decision": "reuse",
+      "reason": "Reuse AtomDefs/Ball for the explicitly generic incoming A symbol. No hash-based random distribution or idle movement.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+      "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d",
+      "decision": "decline-unmodified",
+      "reason": "Its 4 percent rate tolerance creates a finite equilibrium marker. Two-plinth conversion flights and narrow legacy typography do not meet this one-mixture, beginner concentration comparison. Preserve source.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/SignaturesDiagram.tsx",
+      "sha256": "53aff909590092faf599d6ed8473e5197496e85298b2913b587ad056ded665e0",
+      "decision": "decline-unmodified",
+      "reason": "Useful step/trace conventions, but its A to 2B model and finite flatness marker must not be relabelled as the one-to-one A/B example. Four disturbance panels include later volume/catalyst work outside C3.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/lcEqSim.ts",
+      "sha256": "35c5908feedf86f0ea979f6cd4c3e5c44989e3c8273a8297a823362278fd1693",
+      "decision": "decline-for-one-to-one",
+      "reason": "A to 2B kinetics conserve A plus B/2, not A plus B. Its temperature-linked K function is useful conceptually, but its finite flatAfter helper cannot supply an exact-equilibrium timestamp.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/HeatShiftDiagram.tsx",
+      "sha256": "312fc6de8a323b697ff3239256054963cf9e823ca60f6c8a6f208a95c77307d2",
+      "decision": "decline-unmodified",
+      "reason": "Arbitrary generic particles change colour during flights and its keqV depends on composition animation progress. The selected example instead keeps six chemically identified atoms and couples qualitative K only to the imposed temperature step.",
+      "preserved": true
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y11-m3m4/GalvanicCellDiorama.tsx",
+      "sha256": "9ff533f89dfe0aa14e1d78485da9ec65b3ea7167d852eee058d25a07e79b1292",
+      "decision": "decline-asset-reuse",
+      "reason": "Inspect the native apparatus and directed-motion vocabulary, but a galvanic cell, circuit and salt bridge are unrelated to equilibrium disturbances.",
+      "preserved": true
+    },
+    {
+      "path": "src/prototypes/DesignDirections.tsx",
+      "sha256": "8906ed76483a129d4922147b9f32b9c505435f31682bb863428ce957040f784b",
+      "decision": "reuse-visual-vocabulary",
+      "reason": "Existing editorial diorama prototype combines coded quantities, reference ghosts and native stone stands. Reuse these conventions; its molar-capacity calculation and unrelated painted laboratory are not C3 content.",
+      "preserved": true
+    },
+    {
+      "path": "src/prototypes/Module5RichVisualReview.tsx",
+      "sha256": "b218a8af5a9bf47ee91ff620d251898635bfb42cb556fc9f01733ba58b63c059",
+      "decision": "root-owned-review-entry",
+      "reason": "Inspected the actual Remotion Player scene/cue selector prepared by root. Author component checks below mount the component in actual Player; no page or shared prototype edits.",
+      "preserved": true
+    }
+  ],
+  "standingDocuments": [
+    {
+      "path": "HANDOFF.md",
+      "sha256": "7ef1c3fab3ebcd84efacfc58530117baeae8034e3ead9c3a959b634f44072c70"
+    },
+    {
+      "path": "docs/research/hsc-video-production-standard-2026-10-02.md",
+      "sha256": "bfcddde3909a525a177c212c0777bb02535740d4bcd71ef5475a6c90e4b05f13"
+    },
+    {
+      "path": "docs/research/library-implementation-plan.md",
+      "sha256": "b2054c1766e4395cb4fbe254fec3102ce1ff2ce2852a16aeee34d5de8b027df7"
+    },
+    {
+      "path": "docs/production/teaching-templates.md",
+      "sha256": "95481984d0b167553a403ace5d792a39b91a48d774055bf79e67cf8cf7664c18"
+    },
+    {
+      "path": "docs/production/teaching-visual-brief-template.md",
+      "sha256": "e3c0d203bb6bc212d0aeed44174ae1d969c9c9643fb155d48bd800498fe0d2e1"
+    },
+    {
+      "path": "docs/visual-design-handbook.md",
+      "sha256": "a151be37a04f7589bac5f376e9e9f6152000a6ece82e1af1bf17bc7982f5021a"
+    },
+    {
+      "path": "docs/animation-planning.md",
+      "sha256": "14de0fe14a3b28b31c551b7b7c73f7bb2d6009685aaf31f1a14392431cdce8e8"
+    },
+    {
+      "path": "docs/production/preview-first-review.md",
+      "sha256": "d47fa9c500d530f09ac87c2179eda5c8ddfa8fde1e329ef738b5bb5c539093b6"
+    },
+    {
+      "path": "docs/production/course-progression-plan-2026-10-09.md",
+      "sha256": "87a87bcd426051d31427dda87245059c50aab9c4a4927c08218bcfab06f0b0ae"
+    },
+    {
+      "path": "docs/production/course-content-checklist-2026-10-09.md",
+      "sha256": "78061b17fce92abeaf334e7dde6b67535ac692a7478ae9abab1060ba0c05bcc0"
+    },
+    {
+      "path": "docs/production/module5-video-route-2026-10-10.json",
+      "sha256": "28458a3f7ca9124bbf2c0ce08baa0a651baa6d9870d171270a997a2c4d4e7b49"
+    }
+  ],
+  "geometry": {
+    "evidenceType": "Source estimates only",
+    "rootShell": {
+      "left": 100,
+      "top": 220,
+      "width": 1720,
+      "height": 620,
+      "boardBottom": 840
+    },
+    "essentialLabelMinimum": 50,
+    "headerFont": 58,
+    "lastTextBaseline": 593,
+    "estimatedLastTextBottomNative": 828,
+    "captionReserveStartsNative": 850,
+    "plinth": "Only selected stand compressed vertically by .5 about its top-centre y405. Estimated shadow/filter bottom below local575. Shared DioramaPlinth unchanged.",
+    "noFontShrinking": true,
+    "noHiddenClipping": "SVG allows overflow; author bounds are estimates, no clipping is used to hide excess. Native reviewer must measure actual font width, glyph fallback, wrap and all marks.",
+    "priorityNativeCases": [
+      "Each event -1/event/event+16/event+60, direct-change hold before response",
+      "Each response -1/response/response+16 and separate reference cue",
+      "Removal original versus partially restored B on common scale",
+      "Association six atoms and N-N bond at separated/joined/splitting/cooling states",
+      "Temperature event T/K before any responding trace",
+      "Final rows and plinth shadow below native y850, full and smaller player"
+    ]
+  },
+  "authorValidation": {
+    "status": "pass-for-source-and-markup-only",
+    "sourceSha256": "596f87396685f49b22ac3c288344bb0f71342e96b4397112e5b2e4162d496235",
+    "typescript": {
+      "command": "npx tsc --noEmit",
+      "status": "pass"
+    },
+    "analyticModel": {
+      "cases": 18,
+      "status": "pass",
+      "checks": [
+        "Post-transfer A+B conservation",
+        "Both directions positive",
+        "Net forward response to both concentration disturbances",
+        "Finite trace stays strictly away from exact limits",
+        "Temperature path conserves NO2+2*N2O4"
+      ],
+      "samples": [
+        {
+          "mode": "addA",
+          "time": 0,
+          "a": 5,
+          "b": 1,
+          "forward": 5,
+          "reverse": 2,
+          "total": 6,
+          "limitA": 4,
+          "limitB": 2
+        },
+        {
+          "mode": "addA",
+          "time": 0.01,
+          "a": 4.970445533548508,
+          "b": 1.0295544664514917,
+          "forward": 4.970445533548508,
+          "reverse": 2.0591089329029835,
+          "total": 6,
+          "limitA": 4,
+          "limitB": 2
+        },
+        {
+          "mode": "addA",
+          "time": 0.1,
+          "a": 4.740818220681717,
+          "b": 1.2591817793182827,
+          "forward": 4.740818220681717,
+          "reverse": 2.5183635586365654,
+          "total": 6,
+          "limitA": 4,
+          "limitB": 2
+        },
+        {
+          "mode": "addA",
+          "time": 0.5,
+          "a": 4.22313016014843,
+          "b": 1.77686983985157,
+          "forward": 4.22313016014843,
+          "reverse": 3.55373967970314,
+          "total": 6,
+          "limitA": 4,
+          "limitB": 2
+        },
+        {
+          "mode": "addA",
+          "time": 1,
+          "a": 4.049787068367864,
+          "b": 1.9502129316321364,
+          "forward": 4.049787068367864,
+          "reverse": 3.9004258632642728,
+          "total": 6,
+          "limitA": 4,
+          "limitB": 2
+        },
+        {
+          "mode": "addA",
+          "time": 1.8,
+          "a": 4.004516580942613,
+          "b": 1.9954834190573871,
+          "forward": 4.004516580942613,
+          "reverse": 3.9909668381147743,
+          "total": 6,
+          "limitA": 4,
+          "limitB": 2
+        },
+        {
+          "mode": "removeB",
+          "time": 0,
+          "a": 2,
+          "b": 0.5,
+          "forward": 2,
+          "reverse": 1,
+          "total": 2.5,
+          "limitA": 1.6666666666666667,
+          "limitB": 0.8333333333333334
+        },
+        {
+          "mode": "removeB",
+          "time": 0.01,
+          "a": 1.990148511182836,
+          "b": 0.5098514888171639,
+          "forward": 1.990148511182836,
+          "reverse": 1.0197029776343278,
+          "total": 2.5,
+          "limitA": 1.6666666666666667,
+          "limitB": 0.8333333333333334
+        },
+        {
+          "mode": "removeB",
+          "time": 0.1,
+          "a": 1.9136060735605727,
+          "b": 0.5863939264394273,
+          "forward": 1.9136060735605727,
+          "reverse": 1.1727878528788547,
+          "total": 2.5,
+          "limitA": 1.6666666666666667,
+          "limitB": 0.8333333333333334
+        },
+        {
+          "mode": "removeB",
+          "time": 0.5,
+          "a": 1.7410433867161432,
+          "b": 0.7589566132838568,
+          "forward": 1.7410433867161432,
+          "reverse": 1.5179132265677135,
+          "total": 2.5,
+          "limitA": 1.6666666666666667,
+          "limitB": 0.8333333333333334
+        },
+        {
+          "mode": "removeB",
+          "time": 1,
+          "a": 1.6832623561226214,
+          "b": 0.8167376438773786,
+          "forward": 1.6832623561226214,
+          "reverse": 1.6334752877547571,
+          "total": 2.5,
+          "limitA": 1.6666666666666667,
+          "limitB": 0.8333333333333334
+        },
+        {
+          "mode": "removeB",
+          "time": 1.8,
+          "a": 1.6681721936475375,
+          "b": 0.8318278063524625,
+          "forward": 1.6681721936475375,
+          "reverse": 1.663655612704925,
+          "total": 2.5,
+          "limitA": 1.6666666666666667,
+          "limitB": 0.8333333333333334
+        },
+        {
+          "mode": "temperatureResponse",
+          "time": 0,
+          "no2": 2,
+          "n2o4": 2,
+          "nitrogenUnits": 6
+        },
+        {
+          "mode": "temperatureResponse",
+          "time": 0.01,
+          "no2": 2.0396026533864893,
+          "n2o4": 1.9801986733067554,
+          "nitrogenUnits": 6
+        },
+        {
+          "mode": "temperatureResponse",
+          "time": 0.1,
+          "no2": 2.3625384938440366,
+          "n2o4": 1.8187307530779817,
+          "nitrogenUnits": 6
+        },
+        {
+          "mode": "temperatureResponse",
+          "time": 0.5,
+          "no2": 3.2642411176571153,
+          "n2o4": 1.3678794411714423,
+          "nitrogenUnits": 6
+        },
+        {
+          "mode": "temperatureResponse",
+          "time": 1,
+          "no2": 3.7293294335267744,
+          "n2o4": 1.1353352832366128,
+          "nitrogenUnits": 6
+        },
+        {
+          "mode": "temperatureResponse",
+          "time": 1.8,
+          "no2": 3.9453525551054147,
+          "n2o4": 1.0273237224472926,
+          "nitrogenUnits": 6
+        }
+      ]
+    },
+    "actualPlayerMarkup": {
+      "status": "pass",
+      "method": "Bundled component with esbuild in memory, external actual React/ReactDOM/Remotion/Player. renderToStaticMarkup actual Player at initialFrame. No mocked hooks, sequences or transitions.",
+      "sampleCount": 94,
+      "missingCueCases": 6,
+      "negativeCueCases": 6,
+      "unknownCueCases": 1,
+      "associationBondCases": 3,
+      "checks": [
+        "Correct dimensions",
+        "All rendered essential font sizes at least50",
+        "No NaN/Infinity markup",
+        "Only transferred species has a step",
+        "No reaction trace before explicit response cue",
+        "Both temperature traces start continuously from the same pre-event level",
+        "T and K badge update at exactly the event",
+        "All six atom identities persist at every sampled association phase",
+        "Reverse removes N-N bond, cooling restores it",
+        "Final reference card never appears before its explicit cue"
+      ],
+      "samples": [
+        {
+          "mode": "additionHook",
+          "localFrame": 0,
+          "markupSha256": "589283e7c26f41b61a6e19e3130a545d717ca8a54fab1e7dd7c7aa602649bffa"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 359,
+          "markupSha256": "589283e7c26f41b61a6e19e3130a545d717ca8a54fab1e7dd7c7aa602649bffa"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 360,
+          "markupSha256": "7a52e06cac56e8a81d6555abf8baa5abdc6ebb9219b7868a6a50992da1444df6"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 376,
+          "markupSha256": "c8e592bbb442bcf4a8546f0e7a70d1bf3567df19f7a40cdd005cbb8ab7e308cf"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 420,
+          "markupSha256": "8ef2d0b9947839d87016d6a07d31258eaa54b6236d0c29ca9bf58f1aedf91fab"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 599,
+          "markupSha256": "8ef2d0b9947839d87016d6a07d31258eaa54b6236d0c29ca9bf58f1aedf91fab"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 600,
+          "markupSha256": "62987f04dab81dcdb9a6ffeb99ac75aafd3b0272304ab92dbf259662c912ed7b"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 616,
+          "markupSha256": "09aa9d24698d2242642d6bea5ec8bc34b24c6b60dc36dedf13828aecf4cf72e7"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 660,
+          "markupSha256": "ae04aff02de61762838b7fd0da37d24ab275f92b6db230e5ad0f3457fb5fc859"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 780,
+          "markupSha256": "ac8f1e65b90a2b7fef151e526e4f4fbdc4d5a5ac4177394faaf97021e20cb64b"
+        },
+        {
+          "mode": "additionHook",
+          "localFrame": 840,
+          "markupSha256": "7ea16da73dac0e0228a41546b12109fe8a6fecfe91f97fb07e702cc3f696fdd2"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 0,
+          "markupSha256": "abd5fd9c1ba4b43d9a8b405e35dfcb520fcd11279368a7f9069ccde96785e7b2"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 239,
+          "markupSha256": "abd5fd9c1ba4b43d9a8b405e35dfcb520fcd11279368a7f9069ccde96785e7b2"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 240,
+          "markupSha256": "ed5281e2855b85c84ce87047223e78101bcfb8be6daf0b816c3effc1cdaea4f7"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 256,
+          "markupSha256": "ed5281e2855b85c84ce87047223e78101bcfb8be6daf0b816c3effc1cdaea4f7"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 300,
+          "markupSha256": "ed5281e2855b85c84ce87047223e78101bcfb8be6daf0b816c3effc1cdaea4f7"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 449,
+          "markupSha256": "ed5281e2855b85c84ce87047223e78101bcfb8be6daf0b816c3effc1cdaea4f7"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 450,
+          "markupSha256": "bd3a753e540aa737889df3aa061285dd6c89793f07b8413e0fa7030b77eafc6f"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 466,
+          "markupSha256": "bd3a753e540aa737889df3aa061285dd6c89793f07b8413e0fa7030b77eafc6f"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 510,
+          "markupSha256": "bd3a753e540aa737889df3aa061285dd6c89793f07b8413e0fa7030b77eafc6f"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 719,
+          "markupSha256": "bd3a753e540aa737889df3aa061285dd6c89793f07b8413e0fa7030b77eafc6f"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 720,
+          "markupSha256": "cafaf931a6445ba172c5b0a9a379dc5fc7959ce7c40b900ca94c93dcb2a9eb15"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 736,
+          "markupSha256": "023256a012974873b2daced25cf489980354d83306a1d8ec12255bdaf86bec1c"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 780,
+          "markupSha256": "0b328206dfca4c4add3337b1a73d418ab537d670c852c9711ac72a3b176398b8"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 900,
+          "markupSha256": "d4afe170c0ad0e0d7167f5ef77341ec45f402236f51ee6522074b05bfacf1771"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 960,
+          "markupSha256": "fad14c8177eb2348ab0e82e9dec21514e92e69940dfd8fc6394abdb84b33593c"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 1019,
+          "markupSha256": "fad14c8177eb2348ab0e82e9dec21514e92e69940dfd8fc6394abdb84b33593c"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 1020,
+          "markupSha256": "4a2c58dc0575ba65e9afa216f5be95eba6fd06ca0b7b2c45f119fb9b7e4d85d0"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 1036,
+          "markupSha256": "4a2c58dc0575ba65e9afa216f5be95eba6fd06ca0b7b2c45f119fb9b7e4d85d0"
+        },
+        {
+          "mode": "addA",
+          "localFrame": 1080,
+          "markupSha256": "4a2c58dc0575ba65e9afa216f5be95eba6fd06ca0b7b2c45f119fb9b7e4d85d0"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 0,
+          "markupSha256": "cd070384ef39fa89adc39a9a8dce9ed4be896f98b43605ef86da08b70007635e"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 179,
+          "markupSha256": "cd070384ef39fa89adc39a9a8dce9ed4be896f98b43605ef86da08b70007635e"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 180,
+          "markupSha256": "9ce571344d7d0a98ccba45237eae27eb3412d8f845ab97be2db4f21c9622e332"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 196,
+          "markupSha256": "9ce571344d7d0a98ccba45237eae27eb3412d8f845ab97be2db4f21c9622e332"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 240,
+          "markupSha256": "9ce571344d7d0a98ccba45237eae27eb3412d8f845ab97be2db4f21c9622e332"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 539,
+          "markupSha256": "9ce571344d7d0a98ccba45237eae27eb3412d8f845ab97be2db4f21c9622e332"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 540,
+          "markupSha256": "7df7d1808cd3757f8c83da1a0112cf17be007f86dc0a9e30e6634a07ad85e9dd"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 556,
+          "markupSha256": "ca7049783a95345bb663e4f3c9ad81727c952d82d7c6870a2404d17bb6d895b7"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 600,
+          "markupSha256": "23c4d5496ce3b8d73f2aa9505a3d8aa25b3f6d27a67ccdc0e3d71557af27d9f6"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 720,
+          "markupSha256": "9b0b813aecc65fe475ce9e0ad9e432d2c5aceb02a6c1b0958df35d6c9d0a71bd"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 780,
+          "markupSha256": "ea7e1dab0cf96a495dd4a1d8d34d42588f37107b5dffc0e9f97be4c7bc549b62"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 899,
+          "markupSha256": "ea7e1dab0cf96a495dd4a1d8d34d42588f37107b5dffc0e9f97be4c7bc549b62"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 900,
+          "markupSha256": "224d4f4c67f2c8e7872d277883287850ed79f1f3238bc749fec0cb03b64aa515"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 916,
+          "markupSha256": "224d4f4c67f2c8e7872d277883287850ed79f1f3238bc749fec0cb03b64aa515"
+        },
+        {
+          "mode": "removeB",
+          "localFrame": 960,
+          "markupSha256": "224d4f4c67f2c8e7872d277883287850ed79f1f3238bc749fec0cb03b64aa515"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 0,
+          "markupSha256": "4b4f29c3eff807881143f1aea9e34ff3af872f2c0d9128c31af6b1f904d96e28"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 539,
+          "markupSha256": "4b4f29c3eff807881143f1aea9e34ff3af872f2c0d9128c31af6b1f904d96e28"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 540,
+          "markupSha256": "6b09b99e63117d332810545106ae203c7df7830a2062c43752621197beb211f0"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 556,
+          "markupSha256": "6b09b99e63117d332810545106ae203c7df7830a2062c43752621197beb211f0"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 600,
+          "markupSha256": "6b09b99e63117d332810545106ae203c7df7830a2062c43752621197beb211f0"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 899,
+          "markupSha256": "6b09b99e63117d332810545106ae203c7df7830a2062c43752621197beb211f0"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 900,
+          "markupSha256": "76d709756d08de4a898bfa3a1b19a3847a66b3adc0df3effc6ce23086da76d06"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 916,
+          "markupSha256": "76d709756d08de4a898bfa3a1b19a3847a66b3adc0df3effc6ce23086da76d06"
+        },
+        {
+          "mode": "fixedK",
+          "localFrame": 960,
+          "markupSha256": "76d709756d08de4a898bfa3a1b19a3847a66b3adc0df3effc6ce23086da76d06"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 0,
+          "markupSha256": "b2933676585397a4b86db782ec5ba11bfd5f239189c8a9fa0f2e6308c2f2188d"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 179,
+          "markupSha256": "b2933676585397a4b86db782ec5ba11bfd5f239189c8a9fa0f2e6308c2f2188d"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 180,
+          "markupSha256": "b2933676585397a4b86db782ec5ba11bfd5f239189c8a9fa0f2e6308c2f2188d"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 196,
+          "markupSha256": "b5f2e3986f026b0e3851f0947f0902c3df9abb4d35d21ff9a6029301a40e2716"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 240,
+          "markupSha256": "f50edecc11c068cc9c14172d0dffe1f0443bd00c7fc054fe0f4f4f54281ce2c2"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 419,
+          "markupSha256": "f50edecc11c068cc9c14172d0dffe1f0443bd00c7fc054fe0f4f4f54281ce2c2"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 420,
+          "markupSha256": "fcd09af4d26158f530e00bf135dd0500cb1916235177c789ad963c5c915a1fb8"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 436,
+          "markupSha256": "6d5b88f9c8a09d43413c7c964b72ffe3838a55b155764948cdae8a94a6af1a9e"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 480,
+          "markupSha256": "9c41e81a90362b4ea02bc86f6a1ea7930c21afa693ceb318af80435531304844"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 659,
+          "markupSha256": "9c41e81a90362b4ea02bc86f6a1ea7930c21afa693ceb318af80435531304844"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 660,
+          "markupSha256": "7d89fd679bf56efdd496b91a588b6f636e90dc27a9860f54f929c9d612deb6b8"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 676,
+          "markupSha256": "ab9c8d8f0028abf682326451b2f52c8ef5389f251a8fe1f5e87cfe1c7affe8e4"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 720,
+          "markupSha256": "81e200f5f95acea590031121ec7c909bba0718ce760bc5619128762db62aae37"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 899,
+          "markupSha256": "81e200f5f95acea590031121ec7c909bba0718ce760bc5619128762db62aae37"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 900,
+          "markupSha256": "3b213dee8d57bbf386803e49cbf552058cf993a746eb34e0287b31847578fd83"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 916,
+          "markupSha256": "ffb89868ffd8cc65f052d9c95db83edc7661275fa72687705129e58d10941580"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 960,
+          "markupSha256": "4dd4925f542f04525230fa1bd627d2ce7ce2f5569987a37c0449f06662e1b16b"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 1139,
+          "markupSha256": "4dd4925f542f04525230fa1bd627d2ce7ce2f5569987a37c0449f06662e1b16b"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 1140,
+          "markupSha256": "51a16acca9587b91f79dd0a1c9c457b4934cdbc5e9e23fc10a531d46e24fd863"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 1156,
+          "markupSha256": "910956cd97fb2c4682442ee931b0cd4232830a855b6d79456d0b377d92762d3d"
+        },
+        {
+          "mode": "associationHeat",
+          "localFrame": 1200,
+          "markupSha256": "69e2d8007bb9860b19bf85ed8c32fc5d96d8b5a5eb7985e0f769cbe84eead3ae"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 0,
+          "markupSha256": "cfd5f8a77b7f897a39a8097281922b49d7ab3a056fc39e44b50ffd0167e50327"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 359,
+          "markupSha256": "cfd5f8a77b7f897a39a8097281922b49d7ab3a056fc39e44b50ffd0167e50327"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 360,
+          "markupSha256": "181e48d7a0d41731ab07e065f842c911a73ca2c534475b3614ec3412fdb75b7d"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 376,
+          "markupSha256": "181e48d7a0d41731ab07e065f842c911a73ca2c534475b3614ec3412fdb75b7d"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 420,
+          "markupSha256": "181e48d7a0d41731ab07e065f842c911a73ca2c534475b3614ec3412fdb75b7d"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 539,
+          "markupSha256": "181e48d7a0d41731ab07e065f842c911a73ca2c534475b3614ec3412fdb75b7d"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 540,
+          "markupSha256": "e3142903101c37522c164754bf2c2b2fec2a32a4d5231b9150c8d707777d8e49"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 556,
+          "markupSha256": "e3142903101c37522c164754bf2c2b2fec2a32a4d5231b9150c8d707777d8e49"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 600,
+          "markupSha256": "e3142903101c37522c164754bf2c2b2fec2a32a4d5231b9150c8d707777d8e49"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 719,
+          "markupSha256": "e3142903101c37522c164754bf2c2b2fec2a32a4d5231b9150c8d707777d8e49"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 720,
+          "markupSha256": "152cacc1736c08ca42cbbc3dfafb279c1510135044760a87b79897996b37c716"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 736,
+          "markupSha256": "152cacc1736c08ca42cbbc3dfafb279c1510135044760a87b79897996b37c716"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 780,
+          "markupSha256": "152cacc1736c08ca42cbbc3dfafb279c1510135044760a87b79897996b37c716"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 1019,
+          "markupSha256": "152cacc1736c08ca42cbbc3dfafb279c1510135044760a87b79897996b37c716"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 1020,
+          "markupSha256": "bc8afa1517f61f1af398fae50ef14492589ed5a866aa1df45c19126a65974890"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 1036,
+          "markupSha256": "12d8152e0f27d84a5f1c347b34abfeabff98ee0f4d1de19237a683d2959e33df"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 1080,
+          "markupSha256": "cd1a5f08a9b4a56d8669898749778dd6ab624a6ba9a008c4ac2fe7fabdebfc06"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 1200,
+          "markupSha256": "546ac14d0f94f60f64175c20321ace502cceac7eacaa4e4bc633451d7f3a313e"
+        },
+        {
+          "mode": "temperatureResponse",
+          "localFrame": 1260,
+          "markupSha256": "a2bad5911d7059866b0665ba6ecd4f8cbcf902f8255ec17c771846fb80eb79c2"
+        }
+      ]
+    },
+    "punctuation": {
+      "u2014Count": 0
+    },
+    "determinism": "No random values, browser clock, CSS animations or frame-independent timers."
+  },
+  "reviewGates": {
+    "independentComponentScience": "pending",
+    "exactIntegratedSelectedSource": "pending",
+    "nativeGeometry": "pending",
+    "continuousSilentMotion": "pending",
+    "recordingStage": "pending",
+    "measuredVoiceCues": "pending",
+    "voicedPilot": "pending",
+    "humanListening": "pending",
+    "deviceAndCaptionReview": "pending",
+    "fullExport": "pending",
+    "publicRelease": "pending",
+    "curriculumCoverageAndPractical": "not established"
+  },
+  "limitations": [
+    "SSR markup is source/runtime evidence, not native pixel or playback observation.",
+    "Label widths and per-glyph font fallback require root native review. FontTools was unavailable locally, so no font metric measurement is claimed.",
+    "Finite model-time motion is an author illustration. Fresh recorded alignment must replace estimated event/result cue frames.",
+    "Selected direct-change pauses aid the distinction but do not represent a period during which real chemistry stops.",
+    "Brown/colourless wording is context, never a measured intensity or particle-count scale.",
+    "No other source, registry, type, legacy component, frozen lesson or audio was edited by this author."
+  ]
+}

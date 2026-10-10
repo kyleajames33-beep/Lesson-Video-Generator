@@ -1,5 +1,29 @@
 # Production Memory
 
+## 10 October: prototypes must reach the selected teaching scenes
+
+- The teacher asks where the earlier prototypes, dioramas, animations and
+  simulations went. Preparing a script with a provisional text board does
+  not complete its essential mechanism or spatial visual. Audit the actual
+  selected consumers against the lesson's visual proposal before recording.
+- Reuse existing artwork and model conventions when they serve the current
+  explanation. Check stoichiometry, initial conditions, containment and
+  causal timing before carrying an old simulation into a new lesson. Record
+  useful reuse and the reasons for rejecting unsuitable legacy behaviour.
+- Chemistry C3 and flowering plants now have large staged code models in
+  the additive rich-visual draft. Use one current model with needed labels,
+  rather than placing its cumulative written explanation beside it. The
+  opt-in `diagramBoard` leaves established layouts available elsewhere.
+- Check actual native text and leader paths. The first plant diagnostic
+  set caught a pollen arc crossing its heading and a resources leader
+  crossing its own label. Preserve those initial bytes/evidence and review
+  corrected geometry separately. An independent source pass cannot detect
+  every native glyph collision.
+- Motion demonstrates a change or relationship; it does not have to fill
+  every second. Estimated silent cues, sampled playback, human listening
+  and complete release approval remain distinct. No animation quota is
+  introduced.
+
 ## 10 October: beginner explanations and worked-example reading load
 
 - The teacher reports clutter on worked-example screens and asks for careful

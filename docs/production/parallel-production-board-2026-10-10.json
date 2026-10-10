@@ -450,14 +450,14 @@
     "userReviewEvidence": "docs/production/user-calculation-review-2026-10-10.json",
     "fullReviewUrl": "http://127.0.0.1:8778/calculation-full-review-2026-10-10/"
   },
-  "nextAction": "Implement bounded essential C3 and flowering-plant visuals from their selected proposals, then review exact source, native/narrow states and motion before paid narration. Human review of the current calculation and Module 5 pilots remains pending.",
+  "nextAction": "Check complete selected silent preview and recording-stage briefs, then generate fresh narration and replace estimated cues. Review the exact voiced revision before full rendering. Current earlier releases retain their own gates.",
   "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution.",
   "currentBeginnerRevision": {
     "feedback": "docs/production/beginner-working-feedback-2026-10-10.json",
     "selectedAuthor": "docs/production/module5-c2-b2-simple-working-2026-10-10/correction-record.json",
     "currentRuntimeAuthority": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/correction-record.json",
     "nextUnrecorded": "docs/production/drafts/module5-beginner-preparation-2026-10-10/revision-record.json",
-    "status": "Module 5 v5 and two P1 calculation pilots technically verified. C3 and plant revision 02 pass supported-silent-source checks. Human listening, continuous/device release checks and essential next-lesson visuals remain pending.",
+    "status": "C3/plant essential visuals integrated with source/model and sampled native pass. Prior v5 and calculation pilots preserved. Fresh narration, continuous/device and release scopes pending.",
     "nextSelection": "docs/production/module5-beginner-next-selection-2026-10-10.json",
     "sourceAndNativeReview": "docs/production/module5-c2-b2-simple-working-v5-review-2026-10-10.md",
     "nextDocumentReview": "docs/production/module5-beginner-next-preparation-review-2026-10-10.md",
@@ -509,8 +509,42 @@
     "calculationReviewUrl": "http://127.0.0.1:8778/calculation-simple-working-review-2026-10-10/",
     "nextSelection": {
       "path": "docs/production/module5-beginner-next-selection-2026-10-10.json",
-      "sha256": "44dbdf15f03641ffc9be208e7ebcc1bbdef367615398268ebf3aeed7108fcfc8"
+      "sha256": "885520942f66da750b1414352b17250592e78280cc3b96089b2a6b287c7777a1"
     },
-    "nextWork": "Implement bounded essential C3 and flowering-plant visuals from their selected proposals, then review exact source, native/narrow states and motion before paid narration. Human review of the current calculation and Module 5 pilots remains pending."
+    "nextWork": "Check complete selected silent preview and recording-stage briefs, then generate fresh narration and replace estimated cues. Review the exact voiced revision before full rendering. Current earlier releases retain their own gates."
+  },
+  "richVisualContinuation": {
+    "date": "2026-10-10",
+    "selection": {
+      "path": "docs/production/module5-beginner-next-selection-2026-10-10.json",
+      "sha256": "885520942f66da750b1414352b17250592e78280cc3b96089b2a6b287c7777a1"
+    },
+    "reviewUrl": "http://127.0.0.1:8778/module5-rich-visual-review-2026-10-10/",
+    "correction": {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/correction-record.json",
+      "sha256": "e2bc8760fbf17a1db865d5306a844da648b4814a53cde6c8dc02477b730331d4"
+    },
+    "assignments": [
+      {
+        "owner": "/root/chem_c2_selected_implementation",
+        "model": "gpt-6.1-sol",
+        "result": "Six C3 explanatory model modes frozen; author evidence preserved."
+      },
+      {
+        "owner": "/root/bio_b2_independent_review_sol",
+        "model": "gpt-6.1-sol",
+        "result": "Five plant mechanism/diorama modes frozen; author evidence preserved."
+      },
+      {
+        "owner": "/root/review_page_access_sol",
+        "model": "gpt-6.1-sol",
+        "result": "Separate source/model and current sampled native v3 review passes; diagnosed checkpoints preserved."
+      },
+      {
+        "owner": "/root",
+        "result": "Integration, large opt-in board, actual Player preview, bounded geometry corrections, 69 unchanged default cases and durable selection/handoff."
+      }
+    ],
+    "status": "Silent models built and independently reviewed; fresh narration and complete voiced/release review remain."
   }
 }

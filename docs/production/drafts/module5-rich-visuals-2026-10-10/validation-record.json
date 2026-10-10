@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "scope": "Source/tool checks only. No listening or continuous/device/release approval.",
+  "finalTypeCheck": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "scope": "Final selected model and Player controls, after all code changes."
+  },
+  "initialCatalogueCheck": {
+    "command": "npm run check:all",
+    "exitCode": 0,
+    "scope": "Initial integrated shared renderer, before later bounded label/leader geometry and Player label changes. Advisory catalogue warnings retained."
+  },
+  "recordingPreflights": [
+    {
+      "subject": "chemistry",
+      "command": [
+        "node",
+        "scripts/check-production-brief.mjs",
+        "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/production-brief.json",
+        "--stage=recording"
+      ],
+      "exitCode": 0,
+      "brief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/production-brief.json",
+        "sha256": "4903a99048ed12b86d79c6df2dce811f7dd1e8f791842b537573ead2bd9ddd90"
+      },
+      "report": {
+        "ready": true,
+        "stage": "recording",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+          "lessonSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      }
+    },
+    {
+      "subject": "biology",
+      "command": [
+        "node",
+        "scripts/check-production-brief.mjs",
+        "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/production-brief.json",
+        "--stage=recording"
+      ],
+      "exitCode": 0,
+      "brief": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/production-brief.json",
+        "sha256": "62d281694c9ec4a8b9e513331abe91d9175b42739f3863b1d4ee7108c3972e78"
+      },
+      "report": {
+        "ready": true,
+        "stage": "recording",
+        "blockers": [],
+        "pending": [
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Exact voiced preview: pending"
+          },
+          {
+            "code": "BRIEF_REVIEW_PENDING",
+            "detail": "Human listening: pending"
+          }
+        ],
+        "source": {
+          "lessonPath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+          "lessonSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+        },
+        "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+      }
+    }
+  ],
+  "defaultConsumerRegression": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/default-layout-check.json",
+    "sha256": "4b8a8c785dd2f6e819231231b2db82a73068b6c73c10dc54ee13bb423dec39bd"
+  },
+  "independentSourceAndSampledNative": {
+    "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.json",
+    "sha256": "515874f0d4c8058cfa89965c3ca9316c1e79b4915feadb2fcd2675c5c3344c6f"
+  }
+}

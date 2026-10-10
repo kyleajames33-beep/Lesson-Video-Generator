@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "status": "final-silent-source-and-sampled-native-pass",
+  "scope": "Additive selected model integration and bounded root label/geometry corrections, not voiced or public-release approval.",
+  "accepted": [
+    {
+      "subject": "chemistry",
+      "parent": {
+        "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+        "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+      },
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      "spokenWords": 1184,
+      "changedSceneIds": [
+        "c3-hook",
+        "c3-add",
+        "c3-remove",
+        "c3-principle",
+        "c3-temperature",
+        "c3-temperature-response"
+      ],
+      "preserved": "All voice objects, durations, tasks, holds, other scene fields and lesson metadata."
+    },
+    {
+      "subject": "biology",
+      "parent": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+        "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+      },
+      "source": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      "spokenWords": 1081,
+      "changedSceneIds": [
+        "b3-flower",
+        "b3-delivery",
+        "b3-seed",
+        "b3-runner",
+        "b3-self-cross"
+      ],
+      "preserved": "All voice objects, durations, tasks, holds, other scene fields and lesson metadata."
+    }
+  ],
+  "currentInputs": [
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/integration-record.json",
+      "sha256": "4aeeab7b309ff39940d18f0417c68059ae29c26f15d7f5ea4a73b8e2ad90d14b"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "a91636456c88911020f0904abc8c72359a4aef7828fc480d1f4308b7ac239224"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "388d9fa2e2ad1bb3a3153f1dc5e5d61900f62610e47d2b0bf060a93ecc410491"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+      "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "sha256": "5c418716884f1c15a9cab3d9f8cb821fed8c47bc605cdce0f790e60441e91c07"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+      "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "sha256": "fe7ed222fc46c23944f0dd5a9ee8ded6b74c7f5385aca02b2406a0e7a27d8418"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts",
+      "sha256": "5d48a8a656115e813c5ff83ccb68c829dc93484adc9a42946b8f54a48c6bb4e1"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts",
+      "sha256": "ef171ad687e03b79a6aebd12830984a71aee931e8b84fd9b66a5e41396775f4b"
+    }
+  ],
+  "independentReview": {
+    "path": "docs/production/module5-richer-visual-independent-review-v3-2026-10-10.json",
+    "sha256": "515874f0d4c8058cfa89965c3ca9316c1e79b4915feadb2fcd2675c5c3344c6f"
+  },
+  "nativeEvidence": [
+    {
+      "manifest": {
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-01/frames.json",
+        "sha256": "563348d2330766182237add24255be53f3f68a3dcb10e1aade58f20bd9eac333"
+      },
+      "portableManifestCopy": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/native-evidence/native-01.frames.json",
+        "sha256": "563348d2330766182237add24255be53f3f68a3dcb10e1aade58f20bd9eac333"
+      },
+      "frames": 67
+    },
+    {
+      "manifest": {
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/frames.json",
+        "sha256": "abc3b9dc832743e4eb2414a2f7701aff998c379bd431f69a8b324cd6a571a66a"
+      },
+      "portableManifestCopy": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/native-evidence/native-02.frames.json",
+        "sha256": "abc3b9dc832743e4eb2414a2f7701aff998c379bd431f69a8b324cd6a571a66a"
+      },
+      "frames": 67
+    },
+    {
+      "manifest": {
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-03/frames.json",
+        "sha256": "30920f5dc131dec734caa14b5c75b53e0a72d023eaa8a81a1fe881e7d34fc46e"
+      },
+      "portableManifestCopy": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/native-evidence/native-03.frames.json",
+        "sha256": "30920f5dc131dec734caa14b5c75b53e0a72d023eaa8a81a1fe881e7d34fc46e"
+      },
+      "frames": 67
+    },
+    {
+      "manifest": {
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-04/frames.json",
+        "sha256": "8d3f7abeef171fc2329407a0e6157481c3312ae6e4375c332ddd63af0db68726"
+      },
+      "portableManifestCopy": {
+        "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/native-evidence/native-04.frames.json",
+        "sha256": "8d3f7abeef171fc2329407a0e6157481c3312ae6e4375c332ddd63af0db68726"
+      },
+      "frames": 7
+    }
+  ],
+  "rootDefaultLayoutCheck": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/default-layout-check.json",
+    "sha256": "4b8a8c785dd2f6e819231231b2db82a73068b6c73c10dc54ee13bb423dec39bd"
+  },
+  "rootBrowserObservations": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/browser-observations.json",
+    "sha256": "fb61ef0bd265ebfd3089296b5a1e0eba5ff3cca4dc575e7a21c7fbee5a06ecb9"
+  },
+  "corrections": [
+    "Initial author components and Native-01 diagnostics preserved. Shorter Chemistry labels, explicit joining/splitting heat copy and corrected temperature aria; plant label/leader/pollen-arc clearance corrected in Root02.",
+    "Root02 components and Native-02 diagnostics preserved. Temperature panel copy shortened; egg/zygote label placed above the cell; sperm label moved outside the ovule in Root03.",
+    "Exact Native-03 plant bytes preserved. Final single-coordinate M785 to M820 leader-start correction leaves a deliberate gap after the actual measured sperm-label edge. Seven fresh delivery stills in Native-04; other ten modes reuse unchanged Native-03 geometry."
+  ],
+  "validation": {
+    "typeCheck": "pass",
+    "catalogueCheckAll": "Initial integrated shared renderer passed. Final bounded label/geometry and Player controls received a fresh type check; historical advisory warnings retained.",
+    "selectedValidators": "Both exit0; optional scene-type/callout/metadata advice does not establish coverage or require duplicate text.",
+    "unchangedSupportedConceptMarkupCases": 69,
+    "independentNumericModelStates": 3003,
+    "humanListening": "pending",
+    "fullContinuousPlayback": "pending",
+    "deviceChecks": "pending",
+    "publicRelease": "pending"
+  },
+  "validationRecord": {
+    "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/validation-record.json",
+    "sha256": "9bea17f973fbe002711a1890aa86a606e1d003a8c045fc99f7b1cf61a4b2cb8e"
+  },
+  "recordingStagePreflight": "Both current briefs ready at recording stage. Voiced preview and listening pending, not public-release approval."
+}

@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex Sol 6.1 independent richer visual reviewer",
+  "status": "source-model-pass-native-geometry-findings-open",
+  "scope": "Additive read-only follow-up for frozen corrected components and native-02. Source and sampled native still review only.",
+  "preservedCheckpoint": [
+    {
+      "path": "docs/production/module5-richer-visual-independent-review-2026-10-10.md",
+      "sha256": "74ed6045b41e142f9f64b2f272e8adcb7f01a9877e57928a4c68b837a5edd18b"
+    },
+    {
+      "path": "docs/production/module5-richer-visual-independent-review-2026-10-10.json",
+      "sha256": "3381841e5cd370145ba5f397471b28780b5cc2f7b771d5377995fa85cc43c34d"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/integration-record.json",
+      "sha256": "4aeeab7b309ff39940d18f0417c68059ae29c26f15d7f5ea4a73b8e2ad90d14b"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "a91636456c88911020f0904abc8c72359a4aef7828fc480d1f4308b7ac239224"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "388d9fa2e2ad1bb3a3153f1dc5e5d61900f62610e47d2b0bf060a93ecc410491"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+      "sha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+      "sha256": "b7cc99326b7c4bb8cb87fe2787f8577312778ad74bf3f851f423cf78a7dc5349"
+    },
+    {
+      "path": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+      "sha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx",
+      "sha256": "e94564db8fd567d871bf8645f2c8798f43f70df362205c579a66073fe9911782"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-chem-y12-m5.ts",
+      "sha256": "5d48a8a656115e813c5ff83ccb68c829dc93484adc9a42946b8f54a48c6bb4e1"
+    },
+    {
+      "path": "src/slides/diagrams/dioramaKinds/lane-bio-y12-m5.ts",
+      "sha256": "ef171ad687e03b79a6aebd12830984a71aee931e8b84fd9b66a5e41396775f4b"
+    }
+  ],
+  "nativeEvidence": {
+    "manifest": {
+      "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/frames.json",
+      "sha256": "abc3b9dc832743e4eb2414a2f7701aff998c379bd431f69a8b324cd6a571a66a"
+    },
+    "all67PngHashesSourceHashesAnd1920x1080DimensionsVerified": true,
+    "allCurrentManifestInputHashesVerified": true,
+    "actuallyOpenedFrames": [
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-hook",
+        "localFrame": 500,
+        "globalFrame": 596,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-hook-500.png",
+        "sha256": "f4dcd13cb061b0a7e8eb6209a0c25b78cff0c8d0c5fc95a8c00eee6ab3a2ad00",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-add",
+        "localFrame": 1606,
+        "globalFrame": 2797,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-add-1606.png",
+        "sha256": "b16fe2f663d5f4079f1f5f8449849a3b2852a63bd87e5a7f0403e644c0eb2362",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-remove",
+        "localFrame": 1001,
+        "globalFrame": 4200,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-remove-1001.png",
+        "sha256": "7a718eae3863b449a4448e53dcb9b2b0470fe2a093acd25d3290ea0b87317c28",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-principle",
+        "localFrame": 1233,
+        "globalFrame": 6118,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-principle-1233.png",
+        "sha256": "6a02365ce171a944728b512e0a19bbf96572f2f5829ba1a28562c66b01118596",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature",
+        "localFrame": 474,
+        "globalFrame": 7033,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-temperature-474.png",
+        "sha256": "d313be31cfbe85af15d5f9141d1647070d27ff246ce88a3832dc7ef7f2391f95",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature",
+        "localFrame": 886,
+        "globalFrame": 7445,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-temperature-886.png",
+        "sha256": "a1f974cb85cf1391b056430022f7c0522fe37921ab919838aef98b873cec8dca",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 628,
+        "globalFrame": 8951,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-temperature-response-628.png",
+        "sha256": "72e4370e0e22b16e1032b5d55930108973edd79b4224e3df5cf15e71b65145cf",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "chemistry",
+        "sceneId": "c3-temperature-response",
+        "localFrame": 1792,
+        "globalFrame": 10115,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/chemistry-c3-temperature-response-1792.png",
+        "sha256": "38d271ba86ba60dc13255571970dc4e4e8060ee4ebe1997ca0b6534d7d3af711",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/chemistry/lesson.json",
+        "sourceSha256": "e8f73a9fe2c9d2f5a48a28d947a3935c8fa3fb568536ff9f664aaa4840786a87"
+      },
+      {
+        "subject": "biology",
+        "sceneId": "b3-flower",
+        "localFrame": 950,
+        "globalFrame": 2105,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/biology-b3-flower-950.png",
+        "sha256": "2f8945e7642df7dac23e78ca3e186ec40f1c42bb3892af6cbc792e14eafab9e2",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sourceSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      {
+        "subject": "biology",
+        "sceneId": "b3-delivery",
+        "localFrame": 795,
+        "globalFrame": 3450,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/biology-b3-delivery-795.png",
+        "sha256": "fc316a9f6f0ccd30cc5f8b8fd6b7f40e99b4655068d5b1a1e772cc27780214f4",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sourceSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      {
+        "subject": "biology",
+        "sceneId": "b3-delivery",
+        "localFrame": 1040,
+        "globalFrame": 3695,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/biology-b3-delivery-1040.png",
+        "sha256": "cc52219f4869574b681a04ffed7b09f184b529d6d13ba5fed834153b228be363",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sourceSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      {
+        "subject": "biology",
+        "sceneId": "b3-seed",
+        "localFrame": 642,
+        "globalFrame": 4938,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/biology-b3-seed-642.png",
+        "sha256": "61aa97256df9a78be2ae792c7957d54832ecb9998a4f4070ff6e71dee1bef44c",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sourceSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      {
+        "subject": "biology",
+        "sceneId": "b3-runner",
+        "localFrame": 1593,
+        "globalFrame": 7145,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/biology-b3-runner-1593.png",
+        "sha256": "9ee3137f3295d55cd24188ad6f0fd79c1b0126336e62f019b279886a45eec021",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sourceSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      },
+      {
+        "subject": "biology",
+        "sceneId": "b3-self-cross",
+        "localFrame": 590,
+        "globalFrame": 7899,
+        "path": "out/prototypes/module5-rich-visuals-2026-10-10/native-02/biology-b3-self-cross-590.png",
+        "sha256": "94d041e5d267a37793ab46e102dd41c3c842444fdc1f71dcb4def2723c10c53f",
+        "sourcePath": "docs/production/drafts/module5-rich-visuals-2026-10-10/biology/lesson.json",
+        "sourceSha256": "17a45ccb2b55882d07ce9e0888101c5fc965c5224ff6829b8fde31a15d5c3d97"
+      }
+    ],
+    "scope": "14 actual PNGs opened, covering all 11 selected visual modes. Other frames mechanically checked only."
+  },
+  "reproducedChecks": [
+    "Strict parent/candidate deep comparison: only type, diagram, diagramStyle and conceptVisualLayout changed in exact six chemistry and five biology scenes. All narration, durations, other scene fields and lesson metadata unchanged.",
+    "Original/current component unified diff inspected: model equations, explicit local cue keys, reveal controls, fusion settlement and roots/shoot settlement guards unchanged. Pollen path and travel y-coordinate intentionally changed together for clear geometry.",
+    "Independent 3003-state analytic conservation reproduction: add/remove one-to-one totals and weighted NO2 + 2N2O4 total conserved.",
+    "Integrated sources retain exact frozen hashes and source cue estimates. No actual voice alignment exists in this silent integration."
+  ],
+  "resolvedFindings": [
+    "Hook A/B labels now separated.",
+    "Self/cross pollen arc and particle route below heading; no observed text collision.",
+    "Stored resources leader begins after label and points into surrounding seed resources.",
+    "Runner independence label clear of roots and below established shoot/roots labels.",
+    "Magnified ovule and embryo sac headings clear of top outlines.",
+    "Joining/splitting heat labels clarify heat direction.",
+    "Student modelling footers simplified; detailed model limits remain in source.",
+    "Temperature aria final-reference description matches qualitative text."
+  ],
+  "openFindings": [
+    {
+      "id": "temperature-panel-text-containment",
+      "scope": "actual native geometry, not model science",
+      "evidence": [
+        "chemistry-c3-temperature-response-628"
+      ],
+      "finding": "Concentrations unchanged extends past the right panel border; Idealised rapid heating is also near or beyond its border. Keep plain meaning and shorten or fit within panel. Canvas remains intact."
+    },
+    {
+      "id": "delivery-compartment-label-collisions",
+      "scope": "actual native geometry, not containment/fusion science",
+      "evidence": [
+        "biology-b3-delivery-795",
+        "biology-b3-delivery-1040"
+      ],
+      "finding": "Egg cell and Zygote labels cross the embryo-sac right outline. Sperm cell label crosses the ovule lower-left outline. Place each label in clear space with an unambiguous leader if needed; preserve cue timing."
+    }
+  ],
+  "limitations": [
+    "No opened sample cropped the canvas or entered the teaching caption reserve at y850. Text containment remains open as listed.",
+    "Static frames establish fit and sampled states, not continuous motion smoothness or paced comprehension.",
+    "Root separately observed actual Player UI. No independent continuous Player, caption/control/device or voiced playback claim in this report.",
+    "Source cue frames are word-position estimates. Measured alignment reconciliation remains required after narration.",
+    "Human listening, recording-stage brief approval, full export and public full-package gates remain pending. No approval records changed."
+  ]
+}

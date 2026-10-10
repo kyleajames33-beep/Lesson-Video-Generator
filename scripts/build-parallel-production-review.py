@@ -82,7 +82,9 @@ for item in selection.get('selectedIntegrations', []):
     lesson = json.loads(source.read_text(encoding='utf-8'))
     brief = json.loads((folder / 'production-brief.json').read_text(encoding='utf-8'))
     script = ''.join(f'<details><summary>{e(scene["id"])}</summary><p class="script">{e(scene.get("voiceover", {}).get("text", "Silent title."))}</p></details>' for scene in lesson['scenes'])
-    integrations.append(f'<section><h2>{e(label)}</h2><p class="notice">Portable silent source with the accepted beginner narration. Required staged visual treatments still need integration and exact review. No recorded audio or native readability approval.</p><p><strong>Stops after:</strong> {e(brief["progression"]["stopsAfter"])}</p>' + script + '</section>')
+    notice = item.get('status', 'Silent source, review pending')
+    preview = ('<p><a href="/module5-rich-visual-review-2026-10-10/">Watch the selected teaching models in Remotion Player</a>. Silent preview with estimated cues; voiced review and listening remain separate.</p>') if item.get('visualReviewUrl') else ''
+    integrations.append(f'<section><h2>{e(label)}</h2><p class="notice">{e(notice)}</p>' + preview + f'<p><strong>Stops after:</strong> {e(brief["progression"]["stopsAfter"])}</p>' + script + '</section>')
 
 selected = []
 for key, label, image_name in [('c2', 'Chemistry C2: reversible approach', 'author-stills/catalyst-limit.png'),
