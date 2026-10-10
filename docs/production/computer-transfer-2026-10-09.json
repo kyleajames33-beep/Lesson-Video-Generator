@@ -147,7 +147,38 @@
       "status": "published-verified",
       "scope": "Additive caption-safe C2/B2 v3 sources/props, native frame evidence and two short voiced pilot packages. Reuses frozen narration from the earlier voiced archive. Full visual playback, human listening and public release remain pending.",
       "verifiedAt": "2026-10-10T02:44:29.910968+00:00",
-      "verification": "GitHub API uploaded state,12665481-byte size and SHA256 match CRC/member-hash verified immutable archive. New v3 checkout restore validation pending."
+      "verification": "GitHub API uploaded state,12665481-byte size and SHA256 match CRC/member-hash verified immutable archive. New v3 checkout restore validation pending.",
+      "restoreCheck": "docs/production/module5-c2-b2-v3-transfer-check-2026-10-10.json"
+    },
+    {
+      "name": "calculation-full-mass-media-2026-10-10.zip",
+      "bytes": 180173334,
+      "sha256": "3a21e6c3ec0fddde9cd603f8113a094bd2bdc8a9af436e6d0d148712009ac9ff",
+      "files": 11,
+      "status": "published-verified",
+      "scope": "Completed mass-to-mass full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export remains unapproved for public release.",
+      "verifiedAt": "2026-10-10T02:59:25.581707+00:00",
+      "verification": "GitHub API uploaded state, size and SHA256 match locally CRC/member-hash verified immutable archive."
+    },
+    {
+      "name": "calculation-full-limiting-media-2026-10-10.zip",
+      "bytes": 161339171,
+      "sha256": "0fe457aa2742f764aa8cd019c41f3f2ccc4dc67b0403713adbb45e831fe2b368",
+      "files": 11,
+      "status": "published-verified",
+      "scope": "Completed limiting-reactants full1080p export, aligned/mastered audio, captions and exact pinned-runtime dependency records. Export remains unapproved for public release.",
+      "verifiedAt": "2026-10-10T02:59:25.581737+00:00",
+      "verification": "GitHub API uploaded state, size and SHA256 match locally CRC/member-hash verified immutable archive."
+    },
+    {
+      "name": "module5-c2-b2-caption-safe-v4-media-2026-10-10.zip",
+      "bytes": 26673281,
+      "sha256": "121515e32e5524148ee40205146d69f3dcdf54223483fe84d9d01fa3f55d821c",
+      "files": 49,
+      "status": "published-verified",
+      "scope": "Additive caption-safe C2/B2 v4 sources/props, native frame evidence and three short voiced pilot packages. Reuses immutable narration. Full continuous visual playback, human listening and public release remain pending.",
+      "verifiedAt": "2026-10-10T03:02:24.425384+00:00",
+      "verification": "GitHub API uploaded state,26673281-byte size and SHA256 match locally CRC/member-hash verified immutable archive. Fresh checkout restoration is separately recorded after verification."
     }
   ]
 }

@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "status": "author-correction-pending-independent-source-and-native-pilot-review",
+  "previousRuntime": "7106255",
+  "finding": {
+    "observer": "Root",
+    "scope": "Native B2 v3 quick-check playback with captions and controls",
+    "detail": "The lower count. line in the final established trail appeared around y865, below the conservative y850 caption reserve. This records the reported observation, not a fresh author measurement."
+  },
+  "sourceFiles": [
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "priorSha256": "b49db7dea55ef52c2f48469e007383ab5624e92198c7d5f091471dbfe9837720",
+      "sha256": "1ac601329e7f1a742cb59437ba4246e1125c2c531c90334c7a4ce944a408a0c3"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "priorSha256": "75c820485134597e0ed672efc2bac92562d7d4360b6c683fe480679b789dd627",
+      "sha256": "75c820485134597e0ed672efc2bac92562d7d4360b6c683fe480679b789dd627"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "priorSha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2"
+    }
+  ],
+  "geometry": {
+    "estimatesOnly": true,
+    "units": "1920 by 1080 source pixels",
+    "captionReserveStartsAt": 850,
+    "trailVerticalPadding": {
+      "priorOptIn": 10,
+      "newOptIn": 4,
+      "default": 10
+    },
+    "unchangedTrailFontSize": 44,
+    "unchangedTrailLineHeight": 1.13,
+    "reductionPerEstablishedRow": 12,
+    "reductionForTwoEstablishedRows": 24,
+    "estimatedSecondRowGlyphShift": 18,
+    "reportedPriorLowerGlyphY": 865,
+    "estimatedNewLowerGlyphY": 847,
+    "estimatedReserveMargin": 3,
+    "explanation": "Each completed row loses 6 px top and 6 px bottom padding. The second row starts 12 px earlier and its text starts another 6 px earlier. The estimate assumes unchanged wrapping and native font metrics; exact caption/control clearance needs the new B2 quick pilot. No clipping or font reduction is introduced."
+  },
+  "invariants": {
+    "candidateAndPropsByteSameAsV3": true,
+    "voiceTextAudioCaptionsResponseHoldsCuesSummariesAndDurationsUnchanged": true,
+    "onlyOptedInTrailPaddingRuntimeChange": true,
+    "defaultTrailPaddingRemains10": true,
+    "noVoiceGenerationOrExport": true,
+    "priorFilesBytePreserved": true
+  },
+  "packages": [
+    {
+      "key": "c2",
+      "parent": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+        "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v4.lesson.json",
+        "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+      },
+      "parentProps": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v3.json",
+        "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+      },
+      "props": {
+        "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v4.json",
+        "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/production-brief.json",
+        "sha256": "766d1fbf5776c5eeaa9830253848ac4852e6dad887ee2e9b7707d9425a7aec11"
+      },
+      "voicedScenes": [
+        {
+          "sceneId": "c2-hook",
+          "voiceTextSha256": "f8a45693856d2d808c942bd32398452d0035259616a9d1f7dc4f8601cc2502ad",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-model",
+          "voiceTextSha256": "97b6bd7079201abb76d516e3da19c7bbc9b6954c00c2a2c1853857f8906573cc",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-collision",
+          "voiceTextSha256": "42f4a4038e02a3a4dbdb86d68d7523e7f781f312693c25c08f09a964bc5b46b4",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-rates",
+          "voiceTextSha256": "9f4a4d6befbd398cf6177e47ee15383bdd2089c17a2cb6844a15b3b0697ad982",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-amounts",
+          "voiceTextSha256": "a2c50d9b733b2ae0ff74cd50133f2e7a2e91cad7d6e70363886b95b4c89da863",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-catalyst",
+          "voiceTextSha256": "6e6e070d27a1d6919fbe652ed3e796b6dd5a898d962687a2d46dbfe28f09f337",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-transfer",
+          "voiceTextSha256": "e4febc8359151c97fa229cfe7ec4dbcb44e0d4a427b0a97ca759445e7204a4ec",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "c2-summary",
+          "voiceTextSha256": "bedcd99b4392fd3629d45d8e6632cfc3a21aa09655367097a14c080e3703a90a",
+          "assemblyVerified": true
+        }
+      ],
+      "timelineDurationInFrames": 11308
+    },
+    {
+      "key": "b2",
+      "parent": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+        "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+      },
+      "candidate": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+        "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+      },
+      "parentProps": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v3.json",
+        "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+      },
+      "props": {
+        "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v4.json",
+        "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+      },
+      "parentBrief": {
+        "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/production-brief.json",
+        "sha256": "44ee703d6214c850803b03b629ac718397560566d311cd49aa71f563f44c5b3d"
+      },
+      "voicedScenes": [
+        {
+          "sceneId": "hook",
+          "voiceTextSha256": "fbdfc5c6faf9f674d4655515041276d03797a2932017e8e417bd3249035dae87",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "concept-fertilisation",
+          "voiceTextSha256": "63a2477eee290fa73785aa56b458ca077bc209181e2385582c358ba162849500",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "concept-asexual-animal",
+          "voiceTextSha256": "b10e0923c9d76d4b61c9ab5c2585479be5e5317c5626b2a986071537823e9618",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "concept-external",
+          "voiceTextSha256": "d5357096684ac811902696183ea2ff5c0feb423bd564179a90b168e2ad293858",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "concept-internal",
+          "voiceTextSha256": "c1021a96de711aa38dafeabc3a0a68045c857a5bb8e21638a5c6269e3d3476ea",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "definition-comparison",
+          "voiceTextSha256": "27ef2671c9cc3659edbef1e48477990694b304b7271d90fba029518c654f2a7f",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "worked-example",
+          "voiceTextSha256": "53e28e4e1b7f0ec049ddc4e1ccc062d2cf0ebb8d3991ba64bb40a9dc82f7ee3b",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "misconception",
+          "voiceTextSha256": "df09400ae702cc28021cd903821c60991322634c9fc4ef2def8c7e6b70790e6b",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "quick-check",
+          "voiceTextSha256": "2b0fa8ebfb9304cdbb81758da561a2f3d56d9b05605c15d9be01ea310eeadcc4",
+          "assemblyVerified": true
+        },
+        {
+          "sceneId": "summary",
+          "voiceTextSha256": "0e1ac2352edd5f6912e0676420cf43162802eea734cb466824189de53e612ef7",
+          "assemblyVerified": true
+        }
+      ],
+      "timelineDurationInFrames": 13963
+    }
+  ],
+  "pilots": [
+    {
+      "key": "c2",
+      "name": "transfer-pilot03",
+      "configPath": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/transfer-pilot03-config.json",
+      "sceneId": "c2-transfer",
+      "sceneStartFrame": 7309,
+      "sceneEndFrameExclusive": 10187,
+      "localFrameRangeInclusive": [
+        1322,
+        2550
+      ],
+      "globalFrameRangeInclusive": [
+        8631,
+        9859
+      ],
+      "frames": 1229,
+      "seconds": 40.96666666666667,
+      "responseHold": {
+        "startFrame": 1172,
+        "endFrame": 1472
+      }
+    },
+    {
+      "key": "b2",
+      "name": "worked-pilot03",
+      "configPath": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/worked-pilot03-config.json",
+      "sceneId": "worked-example",
+      "sceneStartFrame": 7584,
+      "sceneEndFrameExclusive": 9007,
+      "localFrameRangeInclusive": [
+        880,
+        1353
+      ],
+      "globalFrameRangeInclusive": [
+        8464,
+        8937
+      ],
+      "frames": 474,
+      "seconds": 15.8,
+      "responseHold": null
+    },
+    {
+      "key": "b2",
+      "name": "quick-pilot01",
+      "configPath": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/quick-pilot01-config.json",
+      "sceneId": "quick-check",
+      "sceneStartFrame": 10044,
+      "sceneEndFrameExclusive": 12730,
+      "localFrameRangeInclusive": [
+        1230,
+        2250
+      ],
+      "globalFrameRangeInclusive": [
+        11274,
+        12294
+      ],
+      "frames": 1021,
+      "seconds": 34.03333333333333,
+      "responseHold": {
+        "startFrame": 980,
+        "endFrame": 1340
+      }
+    }
+  ],
+  "preservedFiles": [
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/author-source-check.json",
+      "sha256": "1796b5761448d86e42a6d858a2da99b6aca80d6e53dc94843fb32f7db6e09775"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/draft-check.json",
+      "sha256": "2a2581c13d7bf73f0b76d983fce0f04b3e2fbbee276eb1e4b5af8f64d496882a"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/pilot-config.json",
+      "sha256": "76031269d0fe08e14858e3cf5afba325b870ca2d7e547d40f574ed011241b49a"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/b2/production-brief.json",
+      "sha256": "44ee703d6214c850803b03b629ac718397560566d311cd49aa71f563f44c5b3d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/before-inputs.json",
+      "sha256": "a0260654d81045864be535c814da1763a9b4a468b14b2f0fb81b4d381c58efba"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/draft-check.json",
+      "sha256": "6bee26552d11f8c86b9fc67cdbfbabed53d6c90666ec711af5490d9755fb2411"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/pilot-config.json",
+      "sha256": "2b0bdd76672116677c29cb88bf3d44466581e037e7002f861de8771544123dca"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/c2/production-brief.json",
+      "sha256": "766d1fbf5776c5eeaa9830253848ac4852e6dad887ee2e9b7707d9425a7aec11"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/check-default-markup.mjs",
+      "sha256": "6221fcb03c811a6ccdb0babbe573bc85cc493e68fdeda86b9783fe177848cc90"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/correction-record.json",
+      "sha256": "94e3c2f6efaac85a8f53868f8e74f251adbf185ae2d4f311c35def831344f325"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/default-markup-check.json",
+      "sha256": "eb261fa5ebdfabafa04021267dafc7359a25607276adc47105ef00077f1ad22a"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/default-markup-check.txt",
+      "sha256": "3c11d2f9e191542e284ee949017c476d07da3f10c86b049f0e5e371ea7e967ef"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/final-author-check.json",
+      "sha256": "b4612e6f3399f3c8bc16f32de4204f55fe8ce00e917632d12fbc238cdf1db651"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/lesson-validation.txt",
+      "sha256": "3ad5e1521eddf2d120482f902a48fdab912b4e55b1065c3dbfcca13abd99a4bd"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/prepare-v3.mjs",
+      "sha256": "f333155d41418f54638628bdb29f74812085d7bab801f05b061516b254144dca"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/README.md",
+      "sha256": "42d61a88180c4701e52ecfa038eb59859b13c4938487163ecd2b01fb8b3f13d8"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-2026-10-10/review-selection.json",
+      "sha256": "a84b287fc520c4e750cca5038c09f107f6acb682df3b8b7ff2d3343fac31695d"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "2c8426e90d7763d2e61fb34aca401a94fb42eb979cadb9d01ff90da6542e72a8"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "6ec7d43a03d32ff02ca50df56da046385ecf0a7152143f028e2a1641d7d34267"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "1f27d4cb94bbf0773629680f0d33fc6a96434f7ebebc83c95302509300ba2b0f"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.srt",
+      "sha256": "e4d62270fd572bbf3173610355c5fc4614d67116cc20b1bc9d7f220ff8aceaff"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/captions.vtt",
+      "sha256": "95d682f79c01dff658e7240c0abcfec2061875b30c77435df16479e4f9a57590"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "2fe120341673c6173c3070272d3fad7ddc2a60a2ac19ba630487a8da0bf3eefa"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "68a69277f041d60281369572e4f670d37e22ece12ab000706d638324bd103a90"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "7019df979071b2f87ab4e492d4619190dff5db7a48be5e8708c68c895cb91a40"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v3.json",
+      "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "b402dbab0e32c953a3dd764bef47b46c59910c3227d3cf66b28a1184448adeef"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembled.lesson.json",
+      "sha256": "f88f4aa07a616d8209765380e170028ab0d3385a48f60516f39860e8e10282d4"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembled.remotion-props.json",
+      "sha256": "515db1ccca5c0bffaac79ff680cf5d50153c30ad0944ef86061dec54cf1a5732"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/assembly-record.json",
+      "sha256": "72d5f9b3c2e205b1c78bf147f0aab197f0880d92e8c39268cf373651b66bb6c6"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v2.lesson.json",
+      "sha256": "f4f0bf6ac5fd414d00e8e53aa19b0859b9d97d18752455a3ffaf03eb11917b49"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v3.lesson.json",
+      "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated.lesson.json",
+      "sha256": "3217ae473f9929986e853804766ab4d1a6f20067f360052e979b1b1e2e4d0dc0"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/production-brief-v2.json",
+      "sha256": "93acb2e6ea45185ca90ea50508731d2905d19df1909a79c94a0242c1b271410b"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v2.json",
+      "sha256": "08aba4de4505b46eed58cf18b58891d7a1f319935d4b74c3b0d0328f39122f37"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v3.json",
+      "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props.json",
+      "sha256": "c94cf938483c2764a46943f9b2800747024be88042f2b6e749e8da9b74a41e08"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/v2-order-correction.json",
+      "sha256": "73a38bbe4efa2056f5baf7af8eeb125efb254f574af7957a25c02e0ce563dfe5"
+    }
+  ],
+  "limitation": "Source estimates and author invariants only. V4 independent source review, exact caption/control playback and human listening remain pending. Earlier evidence remains historical."
+}

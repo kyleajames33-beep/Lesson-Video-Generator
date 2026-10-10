@@ -1,4 +1,4 @@
-"""Rebuild Module 5 review from preserved audio and verified v2 or selected v3.
+"""Rebuild Module 5 review from preserved audio and verified v2, v3 or v4.
 
 Writes only out/prototypes/module5-voiced-review-2026-10-10/index.html.
 Does not prepare, render or modify any media, captions or review records.
@@ -15,16 +15,20 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPES = ROOT / 'out/prototypes'
 OUTPUT = PROTOTYPES / 'module5-voiced-review-2026-10-10/index.html'
 SELECTION = ROOT / 'docs/production/module5-c2-b2-caption-safe-2026-10-10/review-selection.json'
+V4_SELECTION = ROOT / 'docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/review-selection.json'
 PILOTS = {
     'c2': ('module5-voiced-pilots-2026-10-10/c2/transfer-pilot-01',
            'Short selected clip: equilibrium transfer response'),
     'b2': ('module5-voiced-pilots-2026-10-10/b2/worked-pilot-01',
            'Short selected clip: animal reproduction worked cases'),
 }
-V3_PILOTS = {
-    'c2': 'module5-voiced-pilots-2026-10-10/c2/transfer-pilot-02',
-    'b2': 'module5-voiced-pilots-2026-10-10/b2/worked-pilot-02',
+SELECTED_PILOTS = {
+    'v3': {'c2': 'module5-voiced-pilots-2026-10-10/c2/transfer-pilot-02',
+           'b2': 'module5-voiced-pilots-2026-10-10/b2/worked-pilot-02'},
+    'v4': {'c2': 'module5-voiced-pilots-2026-10-10/c2/transfer-pilot-03',
+           'b2': 'module5-voiced-pilots-2026-10-10/b2/worked-pilot-03'},
 }
+B2_QUICK_PILOT = 'module5-voiced-pilots-2026-10-10/b2/quick-pilot-01'
 
 
 def read(path):
@@ -49,27 +53,41 @@ def duration(seconds):
 
 
 def selection():
-    if not SELECTION.is_file():
+    selection_path = V4_SELECTION if V4_SELECTION.is_file() else SELECTION
+    if not selection_path.is_file():
         return {}
-    data = read(SELECTION)
+    data = read(selection_path)
     if (set(data) != {'schemaVersion', 'lessons'} or
             type(data['schemaVersion']) is not int or data['schemaVersion'] != 1 or
             not isinstance(data['lessons'], dict) or set(data['lessons']) != {'c2', 'b2'}):
         raise ValueError('Unsupported Module 5 review selection schema')
     for key, row in data['lessons'].items():
-        expected = f'out/prototypes/module5-{key}-voiced-2026-10-10/narrated-v3.lesson.json'
-        if (not isinstance(row, dict) or set(row) != {'source', 'sourceSha256', 'pilotDirectory'} or
-                row['source'] != expected or row['pilotDirectory'] != V3_PILOTS[key] or
+        required = {'source', 'sourceSha256', 'pilotDirectory'}
+        if not isinstance(row, dict) or not required <= set(row) or set(row) - required - {'quickPilotDirectory'}:
+            raise ValueError(f'Unsupported selected lesson fields: {key}')
+        version = selected_version(key, row)
+        if (row['pilotDirectory'] != SELECTED_PILOTS[version][key] or
                 not isinstance(row['sourceSha256'], str) or
                 not re.fullmatch('[0-9a-f]{64}', row['sourceSha256'])):
             raise ValueError(f'Unsupported selected source or pilot path: {key}')
+        if 'quickPilotDirectory' in row and (key != 'b2' or version != 'v4' or
+                                            row['quickPilotDirectory'] != B2_QUICK_PILOT):
+            raise ValueError(f'Unsupported selected quick-check pilot: {key}')
     return data['lessons']
+
+
+def selected_version(key, row):
+    for version in SELECTED_PILOTS:
+        expected = f'out/prototypes/module5-{key}-voiced-2026-10-10/narrated-{version}.lesson.json'
+        if row['source'] == expected:
+            return version
+    raise ValueError(f'Unsupported selected source: {key}')
 
 
 def selected_lesson(key, v2, row):
     source = ROOT / row['source']
     if digest(source) != row['sourceSha256']:
-        raise ValueError(f'Selected v3 source changed: {source}')
+        raise ValueError(f'Selected source changed: {source}')
     current = read(source)
     normalized = deepcopy(current)
     for scene in normalized['scenes']:
@@ -79,12 +97,13 @@ def selected_lesson(key, v2, row):
                 raise ValueError(f'Unexpected captionSafeWorking value: {key}/{scene["id"]}')
             del presentation['captionSafeWorking']
     if normalized != v2:
-        raise ValueError(f'Selected v3 differs beyond calculationPresentation.captionSafeWorking: {key}')
+        raise ValueError(f'Selected lesson differs beyond calculationPresentation.captionSafeWorking: {key}')
     return current
 
 
-def pilot_section(key, selected=None):
+def pilot_section(key, selected=None, title_override=None):
     default_relative, title = PILOTS[key]
+    title = title_override or title
     relative = selected['pilotDirectory'] if selected else default_relative
     directory = PROTOTYPES / relative
     video = directory / 'video.mp4'
@@ -108,7 +127,7 @@ def pilot_section(key, selected=None):
                           if entry['path'] == selected['source'] and 'lesson' in entry.get('roles', [])]
         if (snapshot['options']['lessonPath'] != selected['source'] or len(source_entries) != 1 or
                 source_entries[0]['sha256'] != selected['sourceSha256']):
-            raise ValueError(f'Selected pilot does not bind the exact v3 source: {video}')
+            raise ValueError(f'Selected pilot does not bind the exact selected source: {video}')
     if record_path.is_file():
         record = read(record_path)
         if digest(video) != record['videoSha256']:
@@ -151,6 +170,11 @@ def lesson_section(key, selected=None):
             heading = scene.get('heading') or scene.get('caption') or scene['id']
             script.append(f'<section class="scene"><h4>{e(heading)}</h4><p>{e(text)}</p></section>')
     pilot, present = pilot_section(key, selected)
+    if selected and selected.get('quickPilotDirectory'):
+        quick_selection = {**selected, 'pilotDirectory': selected['quickPilotDirectory']}
+        quick, _ = pilot_section(key, quick_selection,
+                                 'Short selected clip: gamete encounters and later survival')
+        pilot += quick
     display_hash = selected['sourceSha256'] if selected else record['sourceSha256']
     return f'''<article id="{e(key)}" data-source-sha256="{e(display_hash)}" data-narration-source-sha256="{e(record['sourceSha256'])}">
 <h2>{e(record['title'])}</h2>
@@ -195,7 +219,10 @@ details{padding:16px 0;border-top:1px solid #ddd;margin-top:24px}summary{cursor:
     OUTPUT.write_text(html, encoding='utf-8')
     print(json.dumps({'page': OUTPUT.relative_to(ROOT).as_posix(),
                       'sha256': digest(OUTPUT), 'pilotsAvailable': pilot_status,
-                      'selectedRevision': 'v3' if selected else 'v2'}, indent=2))
+                      'selectedRevision': {key: selected_version(key, row)
+                                           for key, row in selected.items()} if selected else 'v2',
+                      'quickPilotAvailable': bool(selected.get('b2', {}).get('quickPilotDirectory') and
+                          (PROTOTYPES / selected['b2']['quickPilotDirectory'] / 'video.mp4').is_file())}, indent=2))
 
 
 if __name__ == '__main__':

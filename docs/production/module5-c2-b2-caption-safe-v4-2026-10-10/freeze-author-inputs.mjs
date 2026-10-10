@@ -1,0 +1,16 @@
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const docs='docs/production/module5-c2-b2-caption-safe-v4-2026-10-10';
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const read=p=>JSON.parse(readFileSync(p,'utf8'));
+const assert=(c,m)=>{if(!c)throw Error(m);};
+const collect=dir=>readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?collect(`${dir}/${e.name}`):[`${dir}/${e.name}`]);
+const before=read(`${docs}/before-inputs.json`),record=read(`${docs}/correction-record.json`),checks=read(`${docs}/author-check.json`);
+for(const f of before.preservedFiles)assert(hash(f.path)===f.sha256,`Prior input drift ${f.path}`);
+for(const f of checks.files)assert(hash(f.path)===f.sha256,`Current input drift ${f.path}`);
+assert(readFileSync(`${docs}/tsc-check.txt`,'utf8').includes('Completed exit code: 0'),'TypeScript not passed.');
+const files=[...collect(docs),...record.sourceFiles.map(f=>f.path),...record.packages.flatMap(p=>[p.candidate.path,p.props.path])];
+for(const p of collect(docs))assert(!readFileSync(p,'utf8').includes('\u2014'),`Forbidden punctuation ${p}`);
+const freeze={status:'author-inputs-frozen-pending-independent-review-and-native-pilot-playback',previousRuntime:'7106255',tscExitCode:0,authorChecks:'pass',preservedPriorFiles:before.preservedFiles.length,syntheticMarkupFrames:42,paidVoiceRequests:0,renderRequests:0,sourceAndPropsByteSameAsV3:true,geometryEvidence:'Source estimates only; native y847 prediction has about 3 px margin and requires new quick-check playback.',files:files.map(path=>({path,sha256:hash(path)})),pilots:record.pilots,pending:['Independent bounded v4 source review','Exact v4 pilots with caption/control native and small-player inspection','Human listening','Full export and release approval']};
+writeFileSync(`${docs}/frozen-author-inputs.json`,JSON.stringify(freeze,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:freeze.status,freezePath:`${docs}/frozen-author-inputs.json`,freezeSha256:hash(`${docs}/frozen-author-inputs.json`),files:freeze.files},null,2));

@@ -1,0 +1,22 @@
+{
+  "lessonPath": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+  "entryPoint": "src/dev/release-entry.tsx",
+  "compositionId": "Lesson-release",
+  "codec": "h264",
+  "scale": 1,
+  "crf": 16,
+  "concurrency": 1,
+  "audioMode": "alignedPcm",
+  "normalizeAudio": true,
+  "frameRange": [
+    11274,
+    12294
+  ],
+  "teachingBriefPath": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/production-brief.json",
+  "inputs": [
+    "docs/production/module5-c2-b2-voiced-timing-review-2026-10-10.md",
+    "docs/production/module5-c2-b2-generation-2026-10-10.json",
+    "docs/production/module5-c2-b2-caption-safe-2026-10-10/correction-record.json",
+    "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/correction-record.json"
+  ]
+}

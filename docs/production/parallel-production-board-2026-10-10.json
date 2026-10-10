@@ -353,13 +353,15 @@
     {
       "id": "calculation-full-exports",
       "agent": "/root",
-      "status": "finite-sequential-render-queue-running",
+      "status": "all-four-exports-complete-science-pass-public-release-scopes-pending",
       "scope": "Export exact accepted calculation revisions using pinned runtime; publish local copies only after package verification. Public posting remains gated.",
       "ownedPaths": [
         "docs/production/calculation-full-export-queue-2026-10-10.json"
       ],
       "evidence": [
-        "docs/production/calculation-full-export-queue-2026-10-10.json"
+        "docs/production/calculation-full-export-queue-2026-10-10.json",
+        "docs/production/calculation-full-export-completion-2026-10-10.json",
+        "docs/production/calculation-full-gate-check-v4-2026-10-10.json"
       ]
     },
     {
@@ -412,13 +414,16 @@
     {
       "id": "c2-b2-fresh-narration-and-pilots",
       "agent": "/root",
-      "status": "v3-short-pilots-and-native-checks-complete-late-task-caption-review-pending",
+      "status": "v4-three-pilots-native-and-sampled-caption-checks-complete-human-listening-whole-lesson-review-pending",
       "scope": "Fresh generated narration, lossless assembly, measured v2 sources and short voiced previews. Public release remains gated.",
       "evidence": [
         "docs/production/module5-c2-b2-generation-2026-10-10.json",
         "docs/production/module5-c2-b2-preview-briefs-2026-10-10/",
         "docs/production/module5-c2-b2-caption-safe-review-2026-10-10.md",
-        "docs/production/module5-c2-b2-caption-safe-observations-2026-10-10.json"
+        "docs/production/module5-c2-b2-caption-safe-observations-2026-10-10.json",
+        "docs/production/module5-c2-b2-caption-safe-v4-review-2026-10-10.md",
+        "docs/production/module5-c2-b2-caption-safe-v4-native-review-2026-10-10.md",
+        "docs/production/module5-c2-b2-caption-safe-v4-observations-2026-10-10.json"
       ],
       "reviewUrl": "http://127.0.0.1:8778/module5-voiced-review-2026-10-10/"
     },
@@ -441,10 +446,10 @@
   "currentRelease": {
     "reviewUrl": "http://127.0.0.1:8778/calculation-batch-review-2026-10-10/",
     "sources": "docs/production/calculation-feedback-2026-10-10.json",
-    "status": "Presented calculation review approved. Three full calculation exports complete, limiting rendering; empirical/mole science passes recorded. Exact remaining full-package review scopes pending.",
+    "status": "Presented calculation previews accepted; all four complete exports and independent science passes finished and backed up. Exact complete-package listening, motion, device and accessibility scopes remain pending.",
     "userReviewEvidence": "docs/production/user-calculation-review-2026-10-10.json",
     "fullReviewUrl": "http://127.0.0.1:8778/calculation-full-review-2026-10-10/"
   },
-  "nextAction": "Preserve v3 and tighten selected B2 quick-check trail spacing in an additive candidate; review late C2/B2 voiced task states before full Module5 export. Continue finite calculation queue, back up later complete outputs, and finish exact package-scoped listening, motion, device and accessibility checks before public posting. Next unrecorded selected integrations are C3 concentration/temperature and plant reproduction.",
+  "nextAction": "Finish exact complete-package listening, motion, device and accessibility reviews before public posting. Module5 v4 resolves the late selected trail issue, with all three voiced pilots and native evidence preserved; human listening and whole-lesson review precede full exports. Next selected integrations are C3 concentration/temperature and plant reproduction.",
   "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution."
 }

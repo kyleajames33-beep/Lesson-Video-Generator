@@ -1,0 +1,99 @@
+{
+  "status": "pass-pending-independent-source-and-native-pilot-review",
+  "previousRuntime": "7106255",
+  "tscResult": "See tsc-check.txt; separate completed command must have exit 0 before freeze.",
+  "diffCheckPassed": true,
+  "preservedFilesVerified": 39,
+  "syntheticMarkupFrameCases": 42,
+  "defaultAndFalseFlagsUnchanged": true,
+  "selectedMarkupOnlyTrailPaddingDelta": true,
+  "checks": [
+    {
+      "key": "c2",
+      "candidateBytesUnchanged": true,
+      "propsBytesUnchanged": true,
+      "deepLessonUnchanged": true,
+      "timelineDurationInFrames": 11308,
+      "voicedScenes": 8,
+      "assemblyRawGenerationAlignmentCaptionsAndResponseVerified": true,
+      "draftReady": true,
+      "reviewGatesPending": true,
+      "validatorExitCode": 0,
+      "voiceTextListSha256": "15dc73e079becde86e9681655d55629c0ee18483eed47138b056b737492d87e7",
+      "timingAndCaptionsSha256": "547d01789db152b347dbf7e41a2bae51015e7ede709772bd2b8dab1aa2e663b0"
+    },
+    {
+      "key": "b2",
+      "candidateBytesUnchanged": true,
+      "propsBytesUnchanged": true,
+      "deepLessonUnchanged": true,
+      "timelineDurationInFrames": 13963,
+      "voicedScenes": 10,
+      "assemblyRawGenerationAlignmentCaptionsAndResponseVerified": true,
+      "draftReady": true,
+      "reviewGatesPending": true,
+      "validatorExitCode": 0,
+      "voiceTextListSha256": "69ba10bea60cfaabf7a1d61b3495675a8d5063e35b7ef0757eb665ec4f45010c",
+      "timingAndCaptionsSha256": "8a5342f0242faaa3a181816156d4ebcfc578a100f4b366e0b6d64317b38827c7"
+    }
+  ],
+  "files": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/narrated-v4.lesson.json",
+      "sha256": "f4e473e210efdb0a53f10b6dd636e261ef112a7fca0f146a92da2557ce75a3ba"
+    },
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/remotion-props-v4.json",
+      "sha256": "819a9ef4a7d852f66cecba28ab2ceeb54a48e117278bc5bf8620f9d1e1217277"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/production-brief.json",
+      "sha256": "0b9e605d0718d3559c26edc563995d9b9fdf5653b0e52e112abba0746a328c94"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/c2/transfer-pilot03-config.json",
+      "sha256": "e0f326c12993bcced524b2a9fea8a171e46ae91ce6e35dbc3d62975ae509826d"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/narrated-v4.lesson.json",
+      "sha256": "ff680f50cf74fb6821a3244752599c718624158e42d93ed9db7b0dc19ce47496"
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/remotion-props-v4.json",
+      "sha256": "b5303c370df71896090e515d86f187048d1132e1e562db04989e66d4c6a6ac44"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/production-brief.json",
+      "sha256": "c10730878d5324cea44bc98dc5a49218c46bf3cf89d45ba1d710d2e1882e520d"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/worked-pilot03-config.json",
+      "sha256": "1edc135280c6ce7a96e80b92345a58085219103a8fed6036ec1783c3bad50ed8"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/b2/quick-pilot01-config.json",
+      "sha256": "9b4242a733a7fb2fa040f796e252a17884af0bcea68f4798a524eb6d056e4832"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/correction-record.json",
+      "sha256": "34c0051bcebe8440d1ae0cbd50e4248929dd909ed6439dfb113636afe7ac1f4c"
+    },
+    {
+      "path": "docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/markup-check.json",
+      "sha256": "1f96ffa7ce0b4e906809a80e44ea8f7d92251132509265221faac57039df0c52"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "1ac601329e7f1a742cb59437ba4246e1125c2c531c90334c7a4ce944a408a0c3"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "75c820485134597e0ed672efc2bac92562d7d4360b6c683fe480679b789dd627"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "072845ea3d934186a40725f7c3dbf2c79027d9a56a8b7db6385e698aadf7a5e2"
+    }
+  ],
+  "limitation": "Source estimates and author invariants only. V4 independent source review, exact caption/control playback and human listening remain pending. Earlier evidence remains historical."
+}

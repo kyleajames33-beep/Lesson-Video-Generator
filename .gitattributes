@@ -469,3 +469,10 @@ docs/production/module5-c2-voiced-preparation-2026-10-10/cue-application.json -t
 docs/production/module5-c2-voiced-preparation-2026-10-10/cue-dry-run.json -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 docs/production/module5-c2-voiced-preparation-2026-10-10/v2-author-check.json -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 docs/production/module5-c2-b2-caption-safe-2026-10-10/author-source-check.json -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve exact additive v4 and final scientific-review evidence.
+docs/production/module5-c2-b2-caption-safe-v4-2026-10-10/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/calculation-full-reviews-2026-10-10/limiting-science.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/calculation-full-reviews-2026-10-10/mass-to-mass-science.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/calculation-full-limiting-science-review-2026-10-10.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/calculation-full-mass-science-review-2026-10-10.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

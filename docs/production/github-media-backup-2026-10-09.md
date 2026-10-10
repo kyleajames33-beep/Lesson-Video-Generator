@@ -36,6 +36,12 @@ python scripts/github-media-transfer.py download-continuation --continuation cal
 python scripts/transfer-workspace.py restore-media out/archives/calculation-full-mole-media-2026-10-10.zip
 python scripts/github-media-transfer.py download-continuation --continuation module5-c2-b2-caption-safe-media-2026-10-10.zip
 python scripts/transfer-workspace.py restore-media out/archives/module5-c2-b2-caption-safe-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-full-mass-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-full-mass-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-full-limiting-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-full-limiting-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation module5-c2-b2-caption-safe-v4-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/module5-c2-b2-caption-safe-v4-media-2026-10-10.zip
 python scripts/build-parallel-production-review.py
 python scripts/build-calculation-full-review.py
 python scripts/build-module5-course-plan.py
@@ -65,3 +71,5 @@ Fresh narration checkpoint: `module5-c2-b2-voiced-media-2026-10-10.zip` preserve
 Complete empirical and mole-ratios exports have separate immutable archives, leaving the accepted pilot/archive bytes unchanged. Full packages need their own release checks. Restoring these copies makes review media available, but verification against the original render dependencies uses the pinned calculation runtime at `5ff1e4a2851193d4bad26750145592c1ae97d4bf`. Do not imply that the current Module 5 renderer generated these older calculation packages.
 
 The caption-safe archive adds 38 v3 source/props, two short voiced pilot02 packages and native/decoded frame evidence files. It reuses the earlier frozen raw/assembled audio, so restore the voiced archive first. The live narration page is rebuilt from the current tracked selection, with unchanged full audio and the selected clip paths. Older archived page bytes are retained. Native and narrow evidence, controls-visible caption observation and human listening remain distinct; pending late-task/whole-lesson checks are not release approval.
+
+Latest additive checkpoint: complete mass-to-mass and limiting exports and caption-safe v4 selected sources, three voiced pilots and late native/decoded evidence are uploaded with matching GitHub SHA256 and size. The v3 archive also restores into its own pinned 7106255 checkout: all 474 voiced/v3 files and both pilot02 snapshots verify. See the transfer record for exact immutable archive names and the independent current full-package science reviews for scope. Human listening and other complete-package release reviews remain pending.

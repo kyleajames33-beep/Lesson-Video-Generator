@@ -70,7 +70,7 @@ export const Module5FocusedWorking = ({presentation, delays, earliestFrame = 0}:
     </div>
     {activeIndex > 0 ? <div data-calculation-trail>
       <div style={{fontFamily: FONT_MONO, fontSize: 26, color: TOK.inkDim, marginBottom: 8}}>ESTABLISHED</div>
-      {presentation.stages.slice(0, activeIndex).map((stage, index) => <div key={index} data-calculation-result={index} style={{padding: '10px 0', borderBottom: `1px solid ${TOK.rule}`, fontSize: 44, lineHeight: 1.13}}>{stage.summary}</div>)}
+      {presentation.stages.slice(0, activeIndex).map((stage, index) => <div key={index} data-calculation-result={index} style={{padding: captionSafe ? '4px 0' : '10px 0', borderBottom: `1px solid ${TOK.rule}`, fontSize: 44, lineHeight: 1.13}}>{stage.summary}</div>)}
     </div> : null}
   </div>;
 };
