@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "status": "pass-for-restoration-and-exact-dependency-portability-only",
+  "clonePath": "out/checks/module5-simple-working-v5-transfer-2026-10-10",
+  "runtimeCommit": "dd6b120c48079cd0edbe240a624b8d711c1e885c",
+  "preservation": "Keep this checkout pinned. Do not pull or edit its tracked renderer. Earlier v2/v3/v4 and calculation pinned runtimes stay preserved.",
+  "restoredArchives": [
+    {
+      "name": "module5-c2-b2-voiced-media-2026-10-10.zip",
+      "restoredFiles": 436
+    },
+    {
+      "name": "module5-c2-b2-caption-safe-v4-media-2026-10-10.zip",
+      "restoredFiles": 49
+    },
+    {
+      "name": "module5-c2-b2-simple-working-v5-media-2026-10-10.zip",
+      "restoredFiles": 95
+    }
+  ],
+  "restoredFiles": 580,
+  "restorerScope": "Each written member was SHA256 verified by transfer-workspace.py. No ignored state/media was silently taken from the main worktree.",
+  "snapshotChecks": [
+    {
+      "path": "out/prototypes/module5-c2-voiced-2026-10-10/transfer-simple-pilot01/release.snapshot.json",
+      "packageSha256": "aeb39d5df0ebb44e425bbacfcbdbf6b8e20f042a5beb4f98c15ffa2ea433ac25",
+      "observedCliVerification": {
+        "valid": true,
+        "changes": [],
+        "missingRequired": []
+      }
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/worked-simple-pilot01/release.snapshot.json",
+      "packageSha256": "1f1865cefcb24fd6fda0a466b6a7555f30d8ea87e76625c530a7757d0e4cc1d1",
+      "observedCliVerification": {
+        "valid": true,
+        "changes": [],
+        "missingRequired": []
+      }
+    },
+    {
+      "path": "out/prototypes/module5-b2-voiced-2026-10-10/quick-simple-pilot01/release.snapshot.json",
+      "packageSha256": "695bee8ca12ef2e897d0aed318ea6af31c6fb170e73a5780b83af66250e338b1",
+      "observedCliVerification": {
+        "valid": true,
+        "changes": [],
+        "missingRequired": []
+      }
+    }
+  ],
+  "verificationCommand": "node scripts/release-snapshot.mjs verify <release.snapshot.json> (run for each of the three paths from the fresh checkout)",
+  "rebuiltReviewPageSha256": "1daecee67d7629942b933e1d6df33e60aff405da50b3790029083dc2fb006fff",
+  "pageMatchesMainBytes": true,
+  "limitations": [
+    "No listening, motion, device, learner-effectiveness or publication approval.",
+    "Complete Module5exports and older calculationreading corrections remain pending."
+  ]
+}
