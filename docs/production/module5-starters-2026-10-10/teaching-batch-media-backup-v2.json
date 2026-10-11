@@ -1,0 +1,57 @@
+{
+  "status": "published-verified",
+  "archive": "out/archives/module5-teaching-batch-media-2026-10-11-v2.zip",
+  "sha256": "346ba83aa101b45e0c3ec20e766a45ade320e8ecdb1a911517ae76b1b23b527e",
+  "bytes": 87196377,
+  "files": 205,
+  "stateArchiveSha256": "c2eac9023566c0dd42e8b341dd8965963733a9fefdbfa22baf344f7c43eed7ca",
+  "roots": [
+    "out/prototypes/b1-continuity-teaching-reset-2026-10-11-v4",
+    "out/prototypes/b1-continuity-teaching-reset-2026-10-11-v6",
+    "out/prototypes/b2-animal-teaching-reset-2026-10-11-v2",
+    "out/prototypes/module5-c2-c3-teaching-reset-2026-10-11-v6",
+    "out/prototypes/module5-c4-teaching-reset-2026-10-11-v3",
+    "out/prototypes/fungi-mould-teaching-reset-2026-10-11-v3"
+  ],
+  "allMemberCRCsAndSHAsPass": true,
+  "privateSecretCheckPass": true,
+  "scope": "Additive silent source-review proof pages and native stills used before recording the ten current replacements. Restore after teaching-batch v1, which holds the fresh audio, alignments, actual voiced Players and original artwork. This supplement grants no continuous voiced, human listening or release approval. Both additive archives were actually restored in an isolated workspace and every non-skipped member hash checked.",
+  "repository": "kyleajames33-beep/Lesson-Video-Generator",
+  "tag": "workspace-media-2026-10-09",
+  "assets": [
+    {
+      "id": 629593092,
+      "name": "module5-teaching-batch-media-2026-10-11-v2.zip",
+      "size": 87196377,
+      "digest": "sha256:346ba83aa101b45e0c3ec20e766a45ade320e8ecdb1a911517ae76b1b23b527e",
+      "browser_download_url": "https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/download/workspace-media-2026-10-09/module5-teaching-batch-media-2026-10-11-v2.zip"
+    },
+    {
+      "id": 629593094,
+      "name": "module5-teaching-batch-media-2026-10-11-v2.zip.sha256",
+      "size": 114,
+      "digest": "sha256:ea529fdeea1fbeb9af6780f4e62ec4b9db3bbe8f0a8623f9c01d7b72e6f2b228",
+      "browser_download_url": "https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/download/workspace-media-2026-10-09/module5-teaching-batch-media-2026-10-11-v2.zip.sha256"
+    }
+  ],
+  "uploadedStateSizeAndDigestsMatch": true,
+  "isolatedRestoration": {
+    "status": "pass",
+    "scope": "Actual isolated restoration of both fresh media archives, every non-skipped member SHA checked; conflicting local mutable desk preserved. No native bundles or continuous playback claimed.",
+    "helperSha256": "f5c781a4b3e62c90016874bd731f4d85758a6ce6594bf39b04d12f6601ed2054",
+    "results": [
+      {
+        "revision": "v1",
+        "restoredMemberHashChecks": 881,
+        "pass": true
+      },
+      {
+        "revision": "v2",
+        "restoredMemberHashChecks": 205,
+        "pass": true
+      }
+    ],
+    "mutablePagePreserved": true,
+    "sandbox": "C:\\lesson-video-generator\\out\\checks\\teaching-restore-proof-2026-10-11-v1"
+  }
+}

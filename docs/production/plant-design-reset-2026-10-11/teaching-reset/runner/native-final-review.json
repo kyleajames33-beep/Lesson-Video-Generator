@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-11",
+  "reviewer": "independent measured_review_final agent",
+  "status": "pass within sampled static scope",
+  "lessonPath": "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/lesson.json",
+  "lessonSha256": "e5dcd16b9d520c1809d8ef3496a4ae1d716f96b2a681877ce4fb532744eabcac",
+  "sourceReviewPath": "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/source-review.json",
+  "sourceReviewSha256": "ccb57f6b9d212d78994757a511df639b374d9a060111f5e41dbe457b79ffc70e",
+  "rendererPath": "src/prototypes/PlantTeachingReset.tsx",
+  "rendererSha256": "1c19df0fba40538c64dbe4dc6c09d42a13ed13d30eed05eba256dc23e1fe503b",
+  "page": "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4",
+  "scope": "Final native still closure. Four final frames directly reinspected across the two lessons; remaining listed frames inherit prior direct static review through exact image hash equality.",
+  "observations": [
+    "Root-water and leaf-light arrows refer to actual daughter structures.",
+    "Cut label now has a clear background and established daughter remains rooted.",
+    "Rootless early bud task retains conditions and explanation demand without the successful outcome or answer.",
+    "Notes fit as a separate stable board.",
+    "Final Water uptake label is in white space and the arrow still identifies actual daughter roots."
+  ],
+  "samples": [
+    {
+      "path": "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4/native-runner-independent-400.png",
+      "sha256": "ff5c197a296dbf1e06b0337c9315cbb08e242e7f66a8076f2cd66ea29dd82599",
+      "identicalToPreviouslyInspected": true,
+      "directlyInspectedFinal": true
+    },
+    {
+      "path": "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4/native-runner-attempt-910.png",
+      "sha256": "6abdebc6d1f0e659b9602188ae1cb02de63f20556860904dd300f90adfb8de23",
+      "identicalToPreviouslyInspected": true,
+      "directlyInspectedFinal": false
+    },
+    {
+      "path": "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4/native-runner-resources-60.png",
+      "sha256": "a2156abece0832f2b5f0045d93c9c535af8fae5a4c571d676c9c21a541c2d48e",
+      "identicalToPreviouslyInspected": false,
+      "directlyInspectedFinal": true
+    },
+    {
+      "path": "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4/native-runner-resources-330.png",
+      "sha256": "319a210f8a8819cebbfdd20a48209347d68842b7595c3a6c757a64972aae1870",
+      "identicalToPreviouslyInspected": true,
+      "directlyInspectedFinal": false
+    },
+    {
+      "path": "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4/native-key-notes-400.png",
+      "sha256": "265a3f1ddf021870bcb90259f2565f562071bf94715f5b62500937bbe106e48e",
+      "identicalToPreviouslyInspected": true,
+      "directlyInspectedFinal": false
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "Silent sample timings are provisional.",
+    "Static samples do not establish motion continuity, voiced timing, caption fit for a future recording or human listening."
+  ],
+  "remainingGates": [
+    "Measured exact voiced preview learning review",
+    "Human listening",
+    "Current teaching brief and release package gates"
+  ]
+}

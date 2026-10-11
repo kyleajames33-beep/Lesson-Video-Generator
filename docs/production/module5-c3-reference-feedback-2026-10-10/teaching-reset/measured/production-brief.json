@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/module5-c3-reference-feedback-2026-10-10/teaching-reset/measured/lesson.json",
+    "lessonSha256": "85933db2830c7550d799c6005e7b4851a1e5afdc7e6b87bb81226959f122a900"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1/C2: opposing rates, concentrations and stated rate model.",
+    "startsWith": "A/B model already at equilibrium; add A.",
+    "stopsAfter": "Explain imposed concentration and temperature changes, rate-driven response and new balance. No K or oven detour.",
+    "nextLesson": "chem-m5-c04 deliveryPart pressure: volume of gaseous equilibria."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "What changes directly, and what follows by reaction?",
+    "causalExplanation": "Direct addition changes one concentration; rate imbalance changes the mixture afterwards. Temperature favours heat absorption/release in specified reaction.",
+    "conversationalApproach": "Explain cause before term, speak current graph relationship rather than read every label.",
+    "openingDecision": "Rhetorical question, answered with staged physical/model graph change. Independent thinking protected later.",
+    "understandingCheck": "New-case attempt with complete conditions and demands, 15-second answer-free interval, staged feedback. Re-record prompt and feedback separately.",
+    "curriculumScope": "2017 Chemistry Module 5 candidate action contribution only. Removed collision/practical examples remain required later support. Catalyst belongs C4B; K C5/C9 per current route. No action/practical review approval.",
+    "focus": "What changes directly, and what follows by reaction?",
+    "notes": "Separate 20-second quiet notes hold after explanation; pause optional."
+  },
+  "scenes": [
+    {
+      "sceneId": "c3-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx via existing LessonVideo",
+      "teachingReason": "Preserve graph mechanisms and current stage cues; select opt-in uncluttered labels.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"mode\":\"additionHook\",\"uncluttered\":true,\"barReferenceStyle\":\"solidMarks\",\"at\":{\"event\":230,\"response\":460}}",
+      "motionPurpose": "Show how amount/rate or imposed change/response relate over time, preserving model conditions.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "c3-add",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx via existing LessonVideo",
+      "teachingReason": "Preserve graph mechanisms and current stage cues; select opt-in uncluttered labels.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"mode\":\"addA\",\"uncluttered\":true,\"qualitativeReferences\":true,\"barReferenceStyle\":\"solidMarks\",\"at\":{\"event\":217,\"rateReason\":562,\"response\":894,\"limit\":1111}}",
+      "motionPurpose": "Show how amount/rate or imposed change/response relate over time, preserving model conditions.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "c3-remove",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx via existing LessonVideo",
+      "teachingReason": "Preserve graph mechanisms and current stage cues; select opt-in uncluttered labels.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"mode\":\"removeB\",\"uncluttered\":true,\"qualitativeReferences\":true,\"barReferenceStyle\":\"solidMarks\",\"at\":{\"event\":115,\"response\":498,\"originalCompare\":791}}",
+      "motionPurpose": "Show how amount/rate or imposed change/response relate over time, preserving model conditions.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "c3-temperature",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx via existing LessonVideo",
+      "teachingReason": "Preserve graph mechanisms and current stage cues; select opt-in uncluttered labels.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"mode\":\"associationHeat\",\"uncluttered\":true,\"plainHeat\":true,\"at\":{\"association\":128,\"exothermic\":268,\"reverse\":396,\"heating\":434,\"cooling\":855}}",
+      "motionPurpose": "Show how amount/rate or imposed change/response relate over time, preserving model conditions.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "c3-temperature-response",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx via existing LessonVideo",
+      "teachingReason": "Preserve graph mechanisms and current stage cues; select opt-in uncluttered labels.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"mode\":\"temperatureResponse\",\"uncluttered\":true,\"showK\":false,\"at\":{\"event\":319,\"continuousConcentrations\":434,\"defineNewK\":999999,\"response\":804}}",
+      "motionPurpose": "Show how amount/rate or imposed change/response relate over time, preserving model conditions.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "c3-transfer-attempt",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx reducedReading",
+      "teachingReason": "One current reasoning stage and complete attempt facts; quiet copying after explanation.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"heading\":12,\"responseHoldStart\":788,\"pausePrompt\":728,\"answerVisibleStart\":1238,\"stepAts\":[]}",
+      "motionPurpose": "Stable current reasoning; no answer until hold end.",
+      "holdPurpose": "15-second answer-free attempt; all conditions and demands retained."
+    },
+    {
+      "sceneId": "c3-transfer-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx reducedReading",
+      "teachingReason": "One current reasoning stage and complete attempt facts; quiet copying after explanation.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"heading\":0,\"answerVisibleStart\":0,\"stepAts\":[13,281]}",
+      "motionPurpose": "Stable current reasoning; no answer until hold end.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "c3-memory-and-handoff",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "One current reasoning stage and complete attempt facts; quiet copying after explanation.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {}",
+      "motionPurpose": "Stable current reasoning; no answer until hold end.",
+      "holdPurpose": "Read current stage while cause is explained; captions reserved."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "One current reasoning stage and complete attempt facts; quiet copying after explanation.",
+      "narrationCue": "Estimated from draft phrase positions, not measured speech: {\"heading\":0,\"takeawayAts\":[0,0,0]}",
+      "motionPurpose": "Stable current reasoning; no answer until hold end.",
+      "holdPurpose": "20-second silent notes, pause available."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/student_learning_reviewer_sol",
+    "evidence": {
+      "path": "docs/production/module5-c3-reference-feedback-2026-10-10/teaching-reset/source-review.json",
+      "sha256": "ba9444060fc3b21c07ec3fa625856305579b9e9268310ccd12ce9a1c391a0a71"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/student_learning_reviewer_sol",
+    "evidence": {
+      "path": "docs/production/module5-c3-reference-feedback-2026-10-10/teaching-reset/source-review.json",
+      "sha256": "ba9444060fc3b21c07ec3fa625856305579b9e9268310ccd12ce9a1c391a0a71"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

@@ -107,7 +107,7 @@ def pack_media():
 
 def safe_target(name):
     target = (ROOT / name).resolve()
-    if not target.is_relative_to(ROOT) or not name.startswith(('out/', 'public/audio/', 'public/assets/', 'docs/production/handoff-state-')):
+    if not target.is_relative_to(ROOT) or not name.startswith(('out/', 'public/audio/', 'public/assets/', 'public/fonts/', 'docs/production/handoff-state-')):
         raise RuntimeError('Archive member outside transfer scope: ' + name)
     return target
 
@@ -167,7 +167,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('command', choices=['pack-state', 'pack-media', 'restore-state', 'restore-media'])
 parser.add_argument('archive', nargs='?')
 parser.add_argument('--skip-rebuildable-pages', action='store_true',
-                    help='Preserve current production desk/full-export HTML and rebuild it from tracked scripts after restoring evidence.')
+                    help='Preserve mutable review desk pages and rebuild them from tracked scripts after restoring evidence.')
 args = parser.parse_args()
 if args.command == 'pack-state':
     pack_state()
@@ -187,7 +187,9 @@ else:
     entries = verify_tracked_copies(media_path, manifest['files'])
     if args.skip_rebuildable_pages:
         rebuildable = {'out/prototypes/parallel-production-2026-10-10/index.html',
-                       'out/prototypes/calculation-full-review-2026-10-10/index.html'}
+                       'out/prototypes/calculation-full-review-2026-10-10/index.html',
+                       'out/prototypes/module5-morning-review-2026-10-10/index.html',
+                       'out/prototypes/module5-morning-review-2026-10-10/review-index.json'}
         skipped = [item for item in entries if item['path'] in rebuildable]
         with zipfile.ZipFile(media_path) as archive:
             for item in skipped:

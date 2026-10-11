@@ -1,0 +1,326 @@
+{
+  "title": "Why does compression produce more ammonia?",
+  "subtitle": "Does higher pressure always shift equilibrium?",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "C4A",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "Candidate explanation subset: volume/pressure disturbance prediction and particle-pressure reasoning. Investigation, complete action coverage and approval remain pending."
+  ],
+  "nesaOutcomes": [
+    "CH12-12"
+  ],
+  "inquiryQuestion": "How do changes in volume and pressure affect chemical equilibrium?",
+  "lessonIntent": "Why does compression produce more ammonia?",
+  "examSkill": "Use gaseous coefficients and stated temperature/volume conditions to justify the direction or absence of a shift.",
+  "productionRole": "draft",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "scenes": [
+    {
+      "id": "c4a-mixture",
+      "type": "concept",
+      "heading": "Squeeze the gas. What changes first?",
+      "body": "",
+      "durationInFrames": 874,
+      "voiceover": {
+        "text": "A closed cylinder contains nitrogen, hydrogen and ammonia, already at equilibrium. Nitrogen and hydrogen form ammonia, while ammonia breaks down in the reverse direction. The average opposing rates match. Now imagine pushing the piston down while keeping the temperature constant. Why does this squeeze lead to more ammonia? First separate what the piston does from what the reaction does."
+      },
+      "metadata": {
+        "teachingRenderer": "c4Pressure",
+        "visualStart": 0,
+        "visualEnd": 239
+      },
+      "revealDelays": {
+        "heading": 0
+      },
+      "timingStatus": "Estimated silent cues; new alignment and speech required."
+    },
+    {
+      "id": "c4a-compress",
+      "type": "concept",
+      "heading": "The piston moves. The molecules stay.",
+      "body": "",
+      "durationInFrames": 835,
+      "voiceover": {
+        "text": "Pushing the piston down reduces the volume. The same gas molecules now occupy less space. Compression itself has not converted nitrogen or hydrogen into ammonia. It has changed the space available to the mixture. Temperature is held constant, so this model does not show the gas being heated or the molecules gaining a higher average speed."
+      },
+      "metadata": {
+        "teachingRenderer": "c4Pressure",
+        "visualStart": 240,
+        "visualEnd": 479
+      },
+      "revealDelays": {
+        "heading": 0
+      },
+      "timingStatus": "Estimated silent cues; new alignment and speech required."
+    },
+    {
+      "id": "c4a-impacts",
+      "type": "concept",
+      "heading": "Less space means more wall impacts.",
+      "body": "",
+      "durationInFrames": 886,
+      "voiceover": {
+        "text": "Gas pressure comes from molecules hitting the walls. With less distance to travel, molecules hit the walls more frequently. That raises the pressure before the reaction has changed the mixture. The gauge now shows the higher pressure caused by compression. The cylinder remains closed, so no reacting gas has escaped. Keep that immediate effect separate from the later equilibrium response."
+      },
+      "metadata": {
+        "teachingRenderer": "c4Pressure",
+        "visualStart": 480,
+        "visualEnd": 749
+      },
+      "revealDelays": {
+        "heading": 0
+      },
+      "timingStatus": "Estimated silent cues; new alignment and speech required."
+    },
+    {
+      "id": "c4a-equation",
+      "type": "concept",
+      "heading": "Why does this reaction make more ammonia?",
+      "body": "",
+      "durationInFrames": 899,
+      "voiceover": {
+        "text": "Read the balanced equation. One nitrogen molecule and three hydrogen molecules can form two ammonia molecules. The small g means gas, so all these substances contribute to the amount of gas in the cylinder. Count molecules on each side: four on the left, two on the right. The same nitrogen and hydrogen atoms can therefore be rearranged into fewer gas molecules."
+      },
+      "metadata": {
+        "teachingRenderer": "c4Pressure",
+        "visualStart": 750,
+        "visualEnd": 1019
+      },
+      "revealDelays": {
+        "heading": 0
+      },
+      "timingStatus": "Estimated silent cues; new alignment and speech required."
+    },
+    {
+      "id": "c4a-fewer",
+      "type": "concept",
+      "heading": "The same atoms can make fewer molecules.",
+      "body": "",
+      "durationInFrames": 950,
+      "voiceover": {
+        "text": "At constant temperature, compression favours the side with fewer gas particles when the gaseous totals differ. In this reaction that means the ammonia side. A net forward reaction produces more ammonia and reduces the total amount of gas. The animation shows the overall rearrangement, not a single four-molecule collision or the detailed reaction pathway. Matter is conserved even though the number of gas molecules changes."
+      },
+      "metadata": {
+        "teachingRenderer": "c4Pressure",
+        "visualStart": 1020,
+        "visualEnd": 1349
+      },
+      "revealDelays": {
+        "heading": 0
+      },
+      "timingStatus": "Estimated silent cues; new alignment and speech required."
+    },
+    {
+      "id": "c4a-response",
+      "type": "concept",
+      "heading": "The reaction partly offsets the squeeze.",
+      "body": "",
+      "durationInFrames": 989,
+      "voiceover": {
+        "text": "Now hold the piston in its new position and keep the temperature fixed. The pressure rose immediately when the gas was squeezed. As more ammonia forms, fewer gas molecules hit the walls, so pressure falls from that immediate high value. The reaction partly offsets the imposed rise. It does not undo the compression or put the piston back. This graph is a schematic trend, not measured pressure data."
+      },
+      "metadata": {
+        "teachingRenderer": "c4Pressure",
+        "visualStart": 1350,
+        "visualEnd": 1619
+      },
+      "revealDelays": {
+        "heading": 0
+      },
+      "timingStatus": "Estimated silent cues; new alignment and speech required."
+    },
+    {
+      "id": "c4a-transfer-attempt",
+      "type": "quickCheck",
+      "heading": "Pull the piston up",
+      "question": "What happens to pressure immediately? Which reaction direction is favoured afterwards? Explain using the equation.",
+      "responseRole": "attempt",
+      "answerSteps": [],
+      "voiceover": {
+        "text": "Try the opposite change in the same nitrogen, hydrogen and ammonia mixture. Start at equilibrium. Keep the cylinder closed and the temperature constant. Pull the piston up to increase the volume, then hold it there. What happens to pressure immediately? Which reaction direction is favoured afterwards? Explain using the balanced equation. Pause if you need longer."
+      },
+      "durationInFrames": 1285,
+      "responseHold": {
+        "startFrame": 835,
+        "endFrame": 1285
+      },
+      "revealDelays": {
+        "heading": 0,
+        "responseHoldStart": 835,
+        "pausePrompt": 775,
+        "answerVisibleStart": 1285,
+        "stepAts": []
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "reducedReading": true,
+        "captionSafeWorking": true,
+        "task": "Pull the piston up",
+        "equation": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+        "givens": [],
+        "responseQuestions": [
+          "What happens to pressure immediately?",
+          "Which reaction direction is favoured afterwards? Explain using the equation."
+        ],
+        "responseQuestionsEndAt": 1315,
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Supplied conditions",
+            "lines": [
+              "Initially at equilibrium",
+              "Closed gas mixture",
+              "Pull piston up, then hold it",
+              "Temperature kept constant"
+            ],
+            "task": "Pull the piston up"
+          }
+        ],
+        "stages": []
+      }
+    },
+    {
+      "id": "c4a-transfer-feedback",
+      "type": "quickCheck",
+      "heading": "Pull the piston up",
+      "question": "What happens to pressure immediately? Which reaction direction is favoured afterwards? Explain using the equation.",
+      "responseRole": "feedback",
+      "answerSteps": [
+        "Pressure falls. Same gas in a larger volume.",
+        "More nitrogen and hydrogen form. More gas partly offsets the pressure fall."
+      ],
+      "voiceover": {
+        "text": "Pressure falls immediately because the same gas has more space. The reaction then favours the side with more gas particles: nitrogen and hydrogen. Breaking down two ammonia molecules can make one nitrogen and three hydrogen molecules. The increased amount of gas partly offsets the pressure fall. The final pressure need not return to its original value."
+      },
+      "durationInFrames": 835,
+      "revealDelays": {
+        "heading": 0,
+        "answerVisibleStart": 0,
+        "stepAts": [
+          13,
+          128
+        ]
+      },
+      "spokenCues": [
+        {
+          "path": "revealDelays.stepAts.0",
+          "phrase": "Pressure falls immediately",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.0.lineAts.0",
+          "phrase": "Pressure falls immediately",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.0.lineAts.1",
+          "phrase": "because the same gas has more space",
+          "unit": "frames"
+        },
+        {
+          "path": "revealDelays.stepAts.1",
+          "phrase": "The reaction then favours",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.focusedContext.1.at",
+          "phrase": "The reaction then favours",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.1.lineAts.0",
+          "phrase": "The reaction then favours",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.1.lineAts.1",
+          "phrase": "The increased amount of gas partly offsets",
+          "unit": "frames"
+        }
+      ],
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "reducedReading": true,
+        "captionSafeWorking": true,
+        "task": "Pull the piston up",
+        "equation": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Current reference",
+            "lines": [
+              "Closed mixture; temperature fixed",
+              "Piston moved up"
+            ],
+            "task": "What changes immediately?"
+          },
+          {
+            "at": 128,
+            "title": "Current reference",
+            "lines": [
+              "2 ammonia molecules ⇌ 4 gas molecules"
+            ],
+            "task": "What does the reaction do afterwards?"
+          }
+        ],
+        "stages": [
+          {
+            "label": "More space",
+            "lines": [
+              "Pressure falls.",
+              "Same gas in a larger volume."
+            ],
+            "lineAts": [
+              13,
+              38
+            ]
+          },
+          {
+            "label": "Count the gases",
+            "lines": [
+              "More nitrogen and hydrogen form.",
+              "More gas partly offsets the pressure fall."
+            ],
+            "lineAts": [
+              128,
+              460
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "c4a-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "points": [
+        "Compression first: Same gas in less space means higher pressure at fixed temperature.",
+        "Reaction afterwards: When gaseous totals differ, compression favours fewer gas moles; expansion favours more.",
+        "Count gases: For N₂ + 3H₂ ⇌ 2NH₃, four gas molecules can become two."
+      ],
+      "caption": "Optional notes. Pause to copy.",
+      "durationInFrames": 600,
+      "quietReading": true,
+      "revealDelays": {
+        "heading": 0,
+        "takeawayAts": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "audioStatus": "New unrecorded teaching reset. No previous audio or captions attached.",
+  "routeId": "chem-m5-c04",
+  "deliveryPart": "C4A",
+  "authoringLimit": "Focused unequal-gas-count compression/expansion cut. Equal-gas-total and inert-gas-at-fixed-volume extension remains required later support, not covered here."
+}

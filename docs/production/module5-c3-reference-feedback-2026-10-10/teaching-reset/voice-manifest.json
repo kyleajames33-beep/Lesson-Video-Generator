@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01",
+  "lessonPath": "docs/production/module5-c3-reference-feedback-2026-10-10/teaching-reset/lesson.json",
+  "lessonSha256": "dfcde0d49777f881b730cab64d3f39670f7db8167cd25ce3c1cb713f4bcae930",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/module5-c3-reference-feedback-2026-10-10/teaching-reset/production-brief.json",
+    "sha256": "515d795f26b0a3d15906d5e1afdfe444f0f891cdde3c17149bcf2d82c001c36f"
+  },
+  "scenes": [
+    {
+      "id": "c3-hook",
+      "parentSceneId": "c3-hook",
+      "text": "Imagine our mixture already at equilibrium. A becomes B while B becomes A at the same average rate. Now add a little more A. Does B rise at that instant too? We added A, not B. Extra B has to be made by reaction. Watch those two moments separately: what we change directly, then what the reaction does afterwards.",
+      "hash": "9c08b1493eaa",
+      "textSha256": "9c08b1493eaa913694f120252f2147824777a66a7cbdfa16a3a659f864f46534",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-hook.9c08b1493eaa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-hook.9c08b1493eaa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-hook.9c08b1493eaa.generation.json",
+      "plannedRequestSha256": "1197e734813b395b07efaeaf18c9da65b992a1578aa6ef0d5b7df427ab87c319"
+    },
+    {
+      "id": "c3-add",
+      "parentSceneId": "c3-add",
+      "text": "Keep the one-to-one A and B model, with temperature and volume fixed. Concentration means amount per volume. Briefly add A, then close the container again. Only A jumps up. In our model, each direction is faster when more of its starting substance is present. More A makes A to B faster. B has not changed yet, so B to A is initially unchanged. More B is now made than used. A falls from its jump while B rises. Their changing amounts bring the rates back towards equality. The original-level marks matter: A finishes below its immediate jump, but above its original level in this model. The reaction uses some of the extra A, rather than undoing our addition completely.",
+      "hash": "6fb7f3647036",
+      "textSha256": "6fb7f3647036dc04b49995d753e3fa1a1cd4286505c4fcff4a7a5d8d5c502942",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-add.6fb7f3647036.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-add.6fb7f3647036.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-add.6fb7f3647036.generation.json",
+      "plannedRequestSha256": "3e536aa3dd60f62d2557d6159ce86ff87f4054fc53905dee5647c2ef0f2a5cb1"
+    },
+    {
+      "id": "c3-remove",
+      "parentSceneId": "c3-remove",
+      "text": "Reset to the original equilibrium for a separate experiment. Remove some B, then close the container again. B drops immediately. A does not jump. Less B slows B to A at first, so A to B is now faster. B starts recovering from its drop while A decreases. That is a shift towards B: the direction of the reaction after our change. In this model, B still finishes below its original level. A shift towards B does not mean B is higher than it was before we removed it.",
+      "hash": "0e6886f24aff",
+      "textSha256": "0e6886f24aff5a0fbb9c09eff729459d20e2edd152560217b430da97d8cb29d3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-remove.0e6886f24aff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-remove.0e6886f24aff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-remove.0e6886f24aff.generation.json",
+      "plannedRequestSha256": "9512455add24cf0c793b2ab052358a21c8cc4abf48277dd5c8e5d78a5a66d815"
+    },
+    {
+      "id": "c3-temperature",
+      "parentSceneId": "c3-temperature",
+      "text": "Now change temperature instead, keeping matter inside and volume fixed. Two nitrogen dioxide molecules join to form one dinitrogen tetroxide molecule. Joining releases heat: we call that direction exothermic, meaning heat-releasing. Splitting absorbs heat. Heating favours the heat-absorbing direction in the new equilibrium, so there is more nitrogen dioxide and less dinitrogen tetroxide. Nitrogen dioxide is brown; dinitrogen tetroxide is colourless. The warmer mixture is therefore browner. Cooling favours the heat-releasing direction and gives the opposite result. First identify which direction releases heat. Heating does not always give more of the written product.",
+      "hash": "cc2a7c141243",
+      "textSha256": "cc2a7c1412437c61d5f7bcd88f363f5cad2e7c50799b8dc17f8d4394a9cb20af",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-temperature.cc2a7c141243.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-temperature.cc2a7c141243.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-temperature.cc2a7c141243.generation.json",
+      "plannedRequestSha256": "71a979334de3e2803113b50b153788fc7cb6919e6e603a9a69d7b89c4ec0c4ac"
+    },
+    {
+      "id": "c3-temperature-response",
+      "parentSceneId": "c3-temperature-response",
+      "text": "Watch the concentration graph during an idealised rapid temperature change. We keep volume fixed and transfer no reacting material into or out of the container. So neither concentration jumps just because we heated it. The reaction changes the concentrations afterwards. Heating changes how readily the opposing reactions happen, and for this heat-releasing joining reaction their previous balance is lost in favour of splitting. Nitrogen dioxide rises while dinitrogen tetroxide falls. Hold the new temperature steady as the mixture approaches a new balance. The missing vertical jump is useful here because our stated change was temperature alone at fixed volume. It would not identify the cause of every unknown graph.",
+      "hash": "fa0a5d8d1ca0",
+      "textSha256": "fa0a5d8d1ca03f39b8dff57663f3cbb4a5212b715b47dad35a08e6b8747bf6a6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-temperature-response.fa0a5d8d1ca0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-temperature-response.fa0a5d8d1ca0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-temperature-response.fa0a5d8d1ca0.generation.json",
+      "plannedRequestSha256": "157854c954f6fdd0801a7641b9efaffa4b1e847992b00a2f0937351b9cac3040"
+    },
+    {
+      "id": "c3-transfer-attempt",
+      "parentSceneId": "c3-transfer-attempt",
+      "text": "Try a new change to our one-to-one model. Start at equilibrium, keep temperature and volume fixed, add B, then close the container again. Each rate increases when more of its starting substance is present. Which concentration changes immediately? Which direction is then faster, and how do A and B change afterwards? Pause to work through both moments.",
+      "hash": "0971e05e4ec2",
+      "textSha256": "0971e05e4ec2d972c4ec384d7c39972cb0b6d64585b01629864bc88adc5acc2e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-transfer-attempt.0971e05e4ec2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-transfer-attempt.0971e05e4ec2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-transfer-attempt.0971e05e4ec2.generation.json",
+      "plannedRequestSha256": "bf6a7898da922ff7822d89a0f13117ab7333bd90f27ec165c16ebcde117958d6"
+    },
+    {
+      "id": "c3-transfer-feedback",
+      "parentSceneId": "c3-transfer-feedback",
+      "text": "Only B jumps because only B was added. More B makes B to A faster, while A to B is initially unchanged. A is made faster than it is used, so A increases. B falls from its jump as it is converted to A. The changing concentrations bring the rates back towards balance.",
+      "hash": "9a8dfdd98e52",
+      "textSha256": "9a8dfdd98e52c5b925885fc29805576a9eb308e67e9873e91b0acfbc049cbf9c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-transfer-feedback.9a8dfdd98e52.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-transfer-feedback.9a8dfdd98e52.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-transfer-feedback.9a8dfdd98e52.generation.json",
+      "plannedRequestSha256": "d996d9fa44c5b34c03d4d6bf555ca24e36f2ad9d08c890a8e75f57696317dfeb"
+    },
+    {
+      "id": "c3-memory-and-handoff",
+      "parentSceneId": "c3-memory-and-handoff",
+      "text": "Le Chatelier’s principle summarises the response: a disturbed equilibrium reacts in a direction that opposes the imposed change. Our rate comparison explains how that response happens. A useful anchor is direct change first, reaction follows. For temperature, identify heat release before predicting the direction. Treat writing heat beside the equation as a memory aid, not as a literal concentration of heat. Next, we will change the volume of a gaseous equilibrium. Here are the useful notes. Pause to copy if you need longer.",
+      "hash": "cd596263fb31",
+      "textSha256": "cd596263fb31d741f6d6fb8178136bed3489b494f957e26f95e169c962363127",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-memory-and-handoff.cd596263fb31.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-memory-and-handoff.cd596263fb31.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-teaching-reset-2026-10-11-take01/c3-memory-and-handoff.cd596263fb31.generation.json",
+      "plannedRequestSha256": "8e418b9ccd25634a14befa38294cb6df9fb28cc5268db63f77e0a3a0f2745352"
+    }
+  ]
+}

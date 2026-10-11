@@ -1,0 +1,19 @@
+{
+  "reviewer": "independent measured_review_final agent",
+  "date": "2026-10-11",
+  "lessonPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/teaching-reset/measured/lesson.json",
+  "lessonSha256": "19860721f35fab07f94cfcfd1ce0144c689cc92caafa8295dac64a8f36a469c7",
+  "previewPath": "out/prototypes/c2-production-voiced-reset-2026-10-11-v4",
+  "scope": "Independent source/cue-path inspection and actual native stills at c2-model local frames 900, 925 and 984. No continuous playback or human listening.",
+  "method": "Rendered with out/checks/reset-stage-samples.mjs and visually inspected each output.",
+  "measuredModelCues": {"forwardAt": 687, "runAt": 924, "reverseAt": 924, "limitAt": 984},
+  "observations": [
+    {"localFrame": 900, "image": "native-c2-model-900.png", "finding": "A-only bar and no reverse arrow preserve the stated initial condition while the caption ends change back yet."},
+    {"localFrame": 925, "image": "native-c2-model-925.png", "finding": "B begins to appear and the reverse arrow and explanatory line appear together. The thin initial B bar is expected one frame after formation begins."},
+    {"localFrame": 984, "image": "native-c2-model-984.png", "finding": "Both conversions continue appears with both arrows and nonzero B, aligned with the reverse-reaction cue. Caption and diagram text fit."}
+  ],
+  "resolvedFindings": ["The fallback both-conversions label preceded B formation.", "The v3 bar showed B during the spoken no-B initial condition."],
+  "unresolvedWithinScope": [],
+  "result": "pass for repaired c2-model boundary timing only",
+  "remainingGates": ["Continuous exact voiced preview review", "Human listening", "Current teaching brief export and full-package release gates"]
+}

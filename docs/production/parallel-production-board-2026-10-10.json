@@ -1,14 +1,19 @@
 {
-  "waitingOnKyle": [],
+  "waitingOnKyle": [
+    {
+      "action": "Audit the ten exact current previews, including complete playback and listening, when available.",
+      "reviewUrl": "http://127.0.0.1:8778/module5-morning-review-2026-10-10/",
+      "scope": "Fresh replacements after owner teaching/design rejection. Earlier approval of historical parents does not approve these new recordings."
+    }
+  ],
   "operatingSummary": {
-    "status": "user-rejected-current-visual-standard-design-reset-in-progress",
+    "status": "ten-fresh-corrective-previews-sampled-checks-pass-owner-audit-pending",
     "reviewBasis": "User supplied another agent audit on 10 October 2026; read REPO-GUIDE.md and current records.",
-    "priority": "C1/B1 independent learning-reviewed teaching reset before narration; protect learner order and rejected-batch hold.",
+    "priority": "Complete revised starters and audited teaching cuts, then assemble exact voiced batch for owner audit. Public release held.",
     "rootNextWork": [
-      "Plant runner visual pilot using suitable botanical artwork and plain-language explanations",
-      "Reconcile proposed separate seed and runner lessons with syllabus route before new narration",
-      "Rework fungi and pressure using relevant existing mechanisms and artwork; compare actual appearance before batch production",
-      "Integrate and preview pending C1/C2/C3 decluttering changes; no new approval inferred"
+      "Owner audit and full continuous voiced/listening review of all ten current replacements",
+      "Resolve any new owner/playback findings, freeze current complete inputs and pass export-stage briefs",
+      "Release earliest missing lessons in each subject after full-package gates pass"
     ],
     "statusPolicy": "Use this board for current status and owner actions. Update existing unbound records. New versions only when preserving frozen evidence is necessary. No further stacked Latest paragraphs in HANDOFF; leave existing restore/evidence history intact.",
     "cleanup": "Existing releases and pinned runtimes preserved. Only selected production documentation and immutable release evidence added; four approved calculations published.",
@@ -485,6 +490,125 @@
         "docs/production/module5-starters-2026-10-10/measured-v2-ui-observations.json"
       ],
       "reviewUrl": "http://127.0.0.1:8778/module5-starter-voiced-review-2026-10-10-v2/"
+    },
+    {
+      "id": "c1-production-reset-integration",
+      "agent": "/root",
+      "model": "gpt-6.1-sol",
+      "status": "fresh-measured-source-and-sampled-checks-pass-owner-audit-pending",
+      "ownedPaths": [
+        "src/LessonVideo.tsx",
+        "src/lesson/types.ts",
+        "src/prototypes/C1BottleTeachingReset.tsx",
+        "src/prototypes/TeachingResetReview.tsx",
+        "scripts/prepare-teaching-reset-narration.mjs",
+        "scripts/assemble-teaching-reset-narration.mjs",
+        "scripts/build-teaching-reset-review.mjs"
+      ],
+      "evidence": [
+        "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/measured/lesson.json",
+        "out/prototypes/c1-production-voiced-reset-2026-10-11-v2/inputs.json",
+        "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json"
+      ],
+      "unresolved": [
+        "Full continuous voiced review",
+        "Owner human listening and audit",
+        "Current full export and release package gates"
+      ],
+      "reviewUrl": "http://127.0.0.1:8778/c1-production-voiced-reset-2026-10-11-v2/"
+    },
+    {
+      "id": "b1-botanical-sequence-fix",
+      "agent": "/root/b1_teaching_reset_sol",
+      "model": "gpt-6.1-sol",
+      "status": "botanical-sequence-fresh-voice-and-boundary-repairs-verified",
+      "ownedPaths": [
+        "src/prototypes/B1ContinuityTeachingReset.tsx",
+        "scripts/build-b1-continuity-teaching-reset.mjs",
+        "docs/production/module5-starters-2026-10-10/biology/teaching-reset/"
+      ],
+      "unresolved": [
+        "Full continuous voiced review",
+        "Owner human listening and audit",
+        "Current full export and release package gates"
+      ],
+      "evidence": [
+        "docs/production/module5-starters-2026-10-10/biology/teaching-reset/measured/lesson.json",
+        "out/prototypes/b1-production-voiced-reset-2026-10-11-v3/inputs.json",
+        "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json"
+      ],
+      "reviewUrl": "http://127.0.0.1:8778/b1-production-voiced-reset-2026-10-11-v3/"
+    },
+    {
+      "id": "c2-c3-audited-teaching-cuts",
+      "agent": "/root/c1_focused_evidence_board",
+      "model": "gpt-6.1-sol",
+      "status": "focused-cuts-recorded-measured-sampled-reviews-pass",
+      "ownedPaths": [
+        "docs/production/module5-seconds-notes-2026-10-10/chemistry/teaching-reset/",
+        "docs/production/module5-c3-reference-feedback-2026-10-10/teaching-reset/"
+      ],
+      "unresolved": [
+        "Full continuous voiced review",
+        "Owner human listening and audit",
+        "Current full export and release package gates"
+      ],
+      "evidence": [
+        "docs/production/module5-seconds-notes-2026-10-10/chemistry/teaching-reset/measured/lesson.json",
+        "out/prototypes/c2-production-voiced-reset-2026-10-11-v4/inputs.json",
+        "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json"
+      ],
+      "reviewUrl": "http://127.0.0.1:8778/c2-production-voiced-reset-2026-10-11-v4/"
+    },
+    {
+      "id": "reset-independent-learning-science",
+      "agent": "/root/student_learning_reviewer_sol",
+      "model": "gpt-6.1-sol",
+      "status": "eight-source-passes-measured-sampled-repairs-checked-plant-review-active",
+      "ownedPaths": [],
+      "evidence": [
+        "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json"
+      ],
+      "scope": "Independent read-only science and learner review; no human listening supplied"
+    },
+    {
+      "id": "b2-c4-mould-teaching-reset",
+      "agent": "/root with /root/b2_source_finish and /root/c4_review_final",
+      "model": "gpt-6.1-sol",
+      "ownedPaths": [
+        "docs/production/module5-seconds-notes-2026-10-10/biology/teaching-reset/",
+        "docs/production/overnight-module5-2026-10-10/chemistry-pressure/teaching-reset/",
+        "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/teaching-reset/",
+        "docs/production/fungi-design-reset-2026-10-11/teaching-reset/"
+      ],
+      "status": "fresh-measured-replacements-independent-sampled-passes",
+      "evidence": [
+        "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json"
+      ],
+      "unresolved": [
+        "Exact continuous voiced review",
+        "Human listening and current release gates"
+      ]
+    },
+    {
+      "id": "plant-two-focused-full-replacements",
+      "agent": "/root/b2_source_finish; independent /root/measured_review_final",
+      "model": "gpt-6.1-sol",
+      "ownedPaths": [
+        "docs/production/plant-design-reset-2026-10-11/teaching-reset/",
+        "src/prototypes/PlantTeachingReset.tsx",
+        "scripts/prepare-plant-teaching-reset.mjs"
+      ],
+      "status": "both-fresh-measured-replacements-independent-sampled-review-pass",
+      "evidence": [
+        "docs/production/plant-design-reset-2026-10-11/teaching-reset/flower/measured/lesson.json",
+        "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/measured/lesson.json",
+        "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json"
+      ],
+      "unresolved": [
+        "Exact continuous voiced review",
+        "Human listening and current release gates"
+      ]
     }
   ],
   "currentRelease": {
@@ -494,7 +618,7 @@
     "userReviewEvidence": "docs/production/user-calculation-review-2026-10-10.json",
     "fullReviewUrl": "http://127.0.0.1:8778/calculation-full-review-2026-10-10/"
   },
-  "nextAction": "Complete exact C1/B1 voiced preview, intended-size/caption review and human listening",
+  "nextAction": "Owner audit plus full continuous voiced/listening checks of the ten current previews; public release remains held.",
   "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution.",
   "currentBeginnerRevision": {
     "feedback": "docs/production/beginner-working-feedback-2026-10-10.json",
@@ -1055,9 +1179,9 @@
         "state": "nine-parent-audit-and-final-c1-v6-b1-v2-source-and-still-reviews-complete"
       }
     ],
-    "models": "Sol 6.1 runner implementation and separate review. User said go after focused Astra comparison recommendation; gpt-6-astra now owns bounded pressure design pilot, no blanket quality claim.",
+    "models": "Current reset authors, implementation and independent reviewers use Sol 6.1. The earlier Astra pressure pilot remains historical attribution, not a model-wide quality claim.",
     "pendingChemistryChanges": {
-      "state": "c1-layout-integrated-and-phone-ui-inspected-c2-c3-still-pending",
+      "state": "C1-C2-C3-focused-sources-integrated-fresh-voice-and-sampled-repairs-checked",
       "files": [
         "src/slides/shared/Module5EvidenceBoard.tsx",
         "src/slides/diagrams/kinds/chem-y12-m5/Module5ApproachDiagram.tsx",
@@ -1066,9 +1190,9 @@
         "src/lesson/types.ts"
       ],
       "remaining": [
-        "C2/C3 selected-source changes and teaching cuts",
-        "Exact affected native/UI check, including catalyst label clearance",
-        "Human review of each changed voiced package"
+        "Exact continuous voiced review",
+        "Owner listening and audit",
+        "Current full export and package gates"
       ],
       "c1LayoutCorrection": {
         "sourcePath": "docs/production/module5-reading-load-fix-2026-10-11/c1/lesson.json",
@@ -1102,43 +1226,42 @@
         "path": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/teaching-proposal.json",
         "sha256": "e69a955e7656194fa87fd651ee8cf1e7eca1b31519a594c4a61833b1a81f6021",
         "author": "/root/c1_focused_evidence_board",
-        "status": "actual-silent-draft-source-and-sampled-learning-findings-resolved-production-and-voice-pending",
+        "status": "integrated-recorded-measured-sampled-review-pass",
         "reviewFindings": "Bottle return-rate cause, short physical/chemical signpost and staged application facts repaired.",
         "remaining": [
-          "Supported production renderer integration",
-          "Independent science and exact teaching review of final implementation",
-          "Fresh audio, alignment and exact voiced captions/motion review",
-          "Human listening",
-          "Full export and complete public-package gate"
+          "Full continuous exact voiced review",
+          "Owner human listening and audit",
+          "Full export and current release package gate"
         ],
         "draftSourcePath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/lesson.json",
-        "draftSourceSha256": "74a585a8142dab43bf3d24e3f86af1b2e7b709783e0e719656aa9e70d2b5a07c",
+        "draftSourceSha256": "15b7648ff1f8189124e20a5b643e493dd5c55c009609682dd7974a626442fa5d",
         "draftBriefPath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/production-brief.json",
         "implementationPath": "src/prototypes/C1BottleTeachingReset.tsx",
-        "reviewUrl": "http://127.0.0.1:8778/c1-bottle-teaching-reset-2026-10-11-v6/",
-        "reviewSummary": "Concrete bottle, visible gain/loss balance, memory anchor, application and quiet notes implemented. Final v6 counter ambiguity resolved and independently rechecked."
+        "reviewUrl": "http://127.0.0.1:8778/c1-production-voiced-reset-2026-10-11-v2/",
+        "reviewSummary": "Independent exact decoded durations, all14 cues, caption clearance and15s protected hold confirmed. Glyph clipping repaired, native100/180/245/320 verifies3 to2 to3.",
+        "measuredSourcePath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/measured/lesson.json",
+        "measuredSourceSha256": "4c7c17fc13e43eac8ba6ca7d91dc927addf4f7a61d03755e38a42e18e41a8c4c"
       },
       {
         "subject": "biology",
         "path": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/teaching-proposal.json",
         "sha256": "95a18e3e4cc871188373b169a3fcc452330cb531d21ac513d16680360f2f022e",
         "author": "/root/b1_teaching_reset_sol",
-        "status": "actual-silent-draft-script-and-layout-repaired-visual-sequence-still-missing",
+        "status": "integrated-recorded-measured-sampled-review-pass",
         "reviewFindings": "Different reproductive-cell selections/pairings, plain DNA meaning and joining location repaired.",
         "remaining": [
-          "Recognisable flower context and joining-to-seedling sequence; reference crop is not a completed seedling visual",
-          "Supported production renderer integration",
-          "Independent science and exact teaching review of final implementation",
-          "Fresh audio, alignment and exact voiced captions/motion review",
-          "Human listening",
-          "Full export and complete public-package gate"
+          "Full continuous exact voiced review",
+          "Owner human listening and audit",
+          "Full export and current release package gate"
         ],
         "draftSourcePath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/lesson.json",
-        "draftSourceSha256": "74b3315be414af95be9a858b3e4f08075ab8b41aee39d27932f8c79798b8aba3",
+        "draftSourceSha256": "ca71a48976f6046be80861a6b69344983d96c6cd0ae371b272b4567283d0f4f3",
         "draftBriefPath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/production-brief.json",
         "implementationPath": "src/prototypes/B1ContinuityTeachingReset.tsx",
-        "reviewUrl": "http://127.0.0.1:8778/b1-continuity-teaching-reset-2026-10-11-v2/",
-        "reviewSummary": "Beginner causes, conditional memory aid, protected application and quiet notes implemented. Flower context and joining-to-seedling sequence remain."
+        "reviewUrl": "http://127.0.0.1:8778/b1-production-voiced-reset-2026-10-11-v3/",
+        "reviewSummary": "All 46 spoken anchors confirmed within one frame. Botanical sequence retains inherited marks. Joining restart and premature DNA/memory display repaired. Independent native v3 boundaries at 688/690 and 1084/1086 pass. Protected attempt and quiet notes are separate.",
+        "measuredSourcePath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/measured/lesson.json",
+        "measuredSourceSha256": "cffeee6af81ea77dc479aee76a5b1302305ba1f8d9cd0e6f67750fd22d5167e0"
       }
     ],
     "memoryAidBank": {
@@ -1156,6 +1279,10 @@
       "scope": "Nine selected parent source scripts and saved screenshots. New starter implementation independently checked separately. No new listening or full voiced review.",
       "sha256": "86b2f2182f0fada283b33171670bee233569c9b5aaf4b92cad7a7b719b70eb2a"
     },
-    "currentStarterMediaBackupPath": "docs/production/module5-starters-2026-10-10/learning-reset-media-backup-v6.json"
+    "currentStarterMediaBackupPath": "docs/production/module5-starters-2026-10-10/learning-reset-media-backup-v6.json",
+    "currentTeachingReviewPath": "docs/production/module5-starters-2026-10-10/learning-reset-current-review.json",
+    "currentTeachingMediaBackupPath": "docs/production/module5-starters-2026-10-10/teaching-batch-media-backup-v1.json",
+    "currentSourceReviewSupplementBackupPath": "docs/production/module5-starters-2026-10-10/teaching-batch-media-backup-v2.json",
+    "mediaState": "Both fresh teaching archives published and remotely size/digest verified; actual isolated restoration and all 1086 non-skipped member hash checks pass."
   }
 }

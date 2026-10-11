@@ -1,0 +1,440 @@
+{
+  "title": "How opposing reaction rates come to match",
+  "subtitle": "Two changing rates, one dynamic balance",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "Explain concentration and rate relationships in a stated reversible model (candidate contribution to ACSCH070 and ACSCH094)."
+  ],
+  "moduleLessonCount": 22,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+  "lessonIntent": "How opposing reaction rates come to match",
+  "examSkill": "Use both supplied direction rates to justify initial net change; explain the catalyst effect under fixed conditions.",
+  "productionRole": "draft",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "scenes": [
+    {
+      "id": "c2-hook",
+      "type": "hook",
+      "heading": "Does reverse have to wait?",
+      "body": "A starts turning into B. Can B turn back before equilibrium?",
+      "callout": "The opposing processes overlap.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5Approach",
+        "props": {
+          "mode": "hook",
+          "reverseAt": 498
+        },
+        "delay": 0
+      },
+      "durationInFrames": 823,
+      "caption": "Follow the opposing processes from an A-only start.",
+      "voiceover": {
+        "text": "Last time, continuing exchange explained a steady-looking mixture. But our next mixture does not start at equilibrium. Imagine a closed container containing only A. As B forms, can it start changing back into A before the forward reaction finishes? Yes. Let us follow those two processes together and see why their rates come to match."
+      },
+      "revealDelays": {
+        "heading": 12
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "conceptVisualLayout": "diagramBoard",
+      "spokenCues": [
+        {
+          "path": "diagram.props.reverseAt",
+          "phrase": "Yes.",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c2-model",
+      "type": "concept",
+      "heading": "A forms B. B can change back.",
+      "body": "A and B are two forms of one model substance.",
+      "bullets": [
+        {
+          "text": "One A becomes one B.",
+          "at": 3.7666666666666666
+        },
+        {
+          "text": "Fixed first-order coefficients, not a general rate law.",
+          "at": 12.533333333333333
+        },
+        {
+          "text": "A-only start: no B to convert back.",
+          "at": 19.6
+        }
+      ],
+      "secondary": "Well mixed; no side reactions. Schematic quantities, not measurements.",
+      "callout": "Closed does not mean insulated.",
+      "conceptVisualLayout": "diagramBoard",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5Approach",
+        "props": {
+          "mode": "model",
+          "presentation": "uncluttered",
+          "runAt": 983
+        },
+        "delay": 0
+      },
+      "durationInFrames": 1269,
+      "caption": "Closed, fixed-volume, constant-temperature first-order model.",
+      "voiceover": {
+        "text": "Use a simple one-to-one reaction model: one A becomes one B, and one B becomes one A. Matter stays inside, and temperature and volume remain fixed. The bars show concentration: how much substance is present per volume. In this particular model, more of a starting substance means a faster reaction in its direction. At the start there is A but no B. So A can become B, but there is no B available to change back yet. As soon as B begins to form, the reverse reaction can begin too."
+      },
+      "revealDelays": {
+        "heading": 12
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.runAt",
+          "phrase": "As soon as B",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c2-rates",
+      "type": "concept",
+      "heading": "Both rates change together",
+      "body": "Our start: A only.",
+      "bullets": [
+        {
+          "text": "Less A: forward rate falls.",
+          "at": 6.4
+        },
+        {
+          "text": "More B: reverse rate rises.",
+          "at": 9.866666666666667
+        }
+      ],
+      "secondary": "Fixed scale and conditions. The exact equilibrium limit is shown separately.",
+      "callout": "Replacement balances removal.",
+      "conceptVisualLayout": "diagramBoard",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5Approach",
+        "props": {
+          "mode": "rates",
+          "presentation": "uncluttered",
+          "forwardAt": 191,
+          "reverseAt": 319,
+          "limitAt": 728
+        },
+        "delay": 0
+      },
+      "durationInFrames": 1372,
+      "caption": "Finite curves approach the equal, non-zero equilibrium limiting rate.",
+      "voiceover": {
+        "text": "Each time the forward reaction gets ahead, the mixture contains less A and more B. Less A makes the forward rate fall in our model. More B makes the reverse rate rise. Watch the rate graph: the forward curve comes down while the reverse curve comes up. Neither reaction needs to wait for the other to finish. Eventually their average rates match, and both are still greater than zero. Then each direction replaces what the other removes, so the mixture has no overall change. The curves approach that balance; the graph does not mark an exact finishing time."
+      },
+      "revealDelays": {
+        "heading": 12
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.forwardAt",
+          "phrase": "Less A",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.reverseAt",
+          "phrase": "More B",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.limitAt",
+          "phrase": "Eventually",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c2-amounts",
+      "type": "concept",
+      "heading": "A different graph quantity",
+      "body": "Same model, start and conditions.",
+      "bullets": [
+        {
+          "text": "Rate: conversion per time.",
+          "at": 15.866666666666667
+        },
+        {
+          "text": "Concentration: amount per volume.",
+          "at": 18.733333333333334
+        }
+      ],
+      "secondary": "A:B equilibrium limit is 2:1, an authored model choice.",
+      "callout": "A different start can reverse the approach.",
+      "conceptVisualLayout": "diagramBoard",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5Approach",
+        "props": {
+          "mode": "amounts",
+          "presentation": "uncluttered",
+          "forwardAt": 255,
+          "reverseAt": 294,
+          "limitAt": 370
+        },
+        "delay": 0
+      },
+      "durationInFrames": 1052,
+      "caption": "Schematic concentrations approach unequal limiting levels.",
+      "voiceover": {
+        "text": "Now change the vertical axis. Concentration means how much of a substance is present per volume. On this concentration graph, A falls and B rises, then both level off. Their final heights are different. That is possible because equal rates do not require equal concentrations. Keep the quantities separate: rates meet; amounts settle. These directions describe our A-only starting mixture. A different starting mixture can approach the same balance from the other side."
+      },
+      "revealDelays": {
+        "heading": 12
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.forwardAt",
+          "phrase": "A falls",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.reverseAt",
+          "phrase": "B rises",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.limitAt",
+          "phrase": "Their final heights",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "type": "quickCheck",
+      "heading": "Which substance initially increases?",
+      "question": "Which substance initially increases? Explain using both rates. How should the faster direction change as the mixture approaches balance?",
+      "timingStatus": "Separate question-only and feedback takes. All cues estimated until new alignment.",
+      "id": "c2-transfer-attempt",
+      "responseRole": "attempt",
+      "caption": "Use the supplied model to explain your reasoning.",
+      "answerSteps": [],
+      "voiceover": {
+        "text": "Try a new reaction model. C and D change into each other one for one in a closed container at constant temperature and volume. Each direction gets slower when less of its starting substance is present. The early rate from C to D is two units. The rate from D to C is six units on the same scale. Which substance initially increases? Explain using both rates. Then explain how the faster direction changes as the mixture approaches balance. Pause if you would like longer."
+      },
+      "durationInFrames": 1596,
+      "responseHold": {
+        "startFrame": 1146,
+        "endFrame": 1596
+      },
+      "revealDelays": {
+        "heading": 12,
+        "responseHoldStart": 1146,
+        "pausePrompt": 1086,
+        "answerVisibleStart": 1596,
+        "stepAts": []
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "reducedReading": true,
+        "captionSafeWorking": true,
+        "task": "Which substance initially increases?",
+        "equation": "C ⇌ D (one-to-one)",
+        "givens": [],
+        "responseQuestions": [
+          "Which substance initially increases? Explain using both rates.",
+          "How should the faster direction change as the mixture approaches balance?"
+        ],
+        "responseQuestionsEndAt": 1626,
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "C ⇌ D (one-to-one)",
+            "lines": [
+              "Closed; temperature and volume fixed",
+              "C → D: 2; D → C: 6",
+              "Same rate scale",
+              "More starting substance: faster"
+            ],
+            "task": "Which substance initially increases?"
+          }
+        ],
+        "stages": []
+      }
+    },
+    {
+      "type": "quickCheck",
+      "heading": "Which substance initially increases?",
+      "question": "Which substance initially increases? Explain using both rates. How should the faster direction change as the mixture approaches balance?",
+      "timingStatus": "Separate question-only and feedback takes. All cues estimated until new alignment.",
+      "id": "c2-transfer-feedback",
+      "responseRole": "feedback",
+      "caption": "Compare both directions.",
+      "answerSteps": [
+        "D to C makes C faster than C to D uses it. C initially increases.",
+        "As D decreases, D to C slows. As C increases, C to D speeds up."
+      ],
+      "voiceover": {
+        "text": "The reverse reaction makes C at six units while the forward reaction uses C at two. So C increases overall, and D decreases. With less D, the reverse reaction slows in this model. With more C, the forward reaction speeds up. The rates move towards balance from the opposite starting direction to our first example."
+      },
+      "durationInFrames": 853,
+      "revealDelays": {
+        "heading": 0,
+        "answerVisibleStart": 0,
+        "stepAts": [
+          13,
+          294
+        ]
+      },
+      "spokenCues": [
+        {
+          "path": "revealDelays.stepAts.0",
+          "phrase": "The reverse reaction",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.0.lineAts.0",
+          "phrase": "The reverse reaction",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.0.lineAts.1",
+          "phrase": "The reverse reaction",
+          "unit": "frames"
+        },
+        {
+          "path": "revealDelays.stepAts.1",
+          "phrase": "With less D",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.focusedContext.1.at",
+          "phrase": "With less D",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.1.lineAts.0",
+          "phrase": "With less D",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.1.lineAts.1",
+          "phrase": "With less D",
+          "unit": "frames"
+        }
+      ],
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "reducedReading": true,
+        "captionSafeWorking": true,
+        "task": "Which substance initially increases?",
+        "equation": "C ⇌ D (one-to-one)",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Use the model",
+            "lines": [
+              "Closed; temperature and volume fixed",
+              "C → D: 2; D → C: 6",
+              "Same rate scale"
+            ],
+            "task": "Compare both rates"
+          },
+          {
+            "at": 294,
+            "title": "Reaction afterwards",
+            "lines": [
+              "More starting substance: faster"
+            ],
+            "task": "What follows as amounts change?"
+          }
+        ],
+        "stages": [
+          {
+            "label": "Explain the cause",
+            "lines": [
+              "D to C makes C faster than C to D uses it.",
+              "C initially increases."
+            ],
+            "lineAts": [
+              13,
+              13
+            ]
+          },
+          {
+            "label": "What follows",
+            "lines": [
+              "As D decreases, D to C slows.",
+              "As C increases, C to D speeds up."
+            ],
+            "lineAts": [
+              294,
+              294
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "c2-handoff",
+      "type": "summary",
+      "heading": "Rates meet. Amounts settle.",
+      "points": [
+        "Both directions can continue before equilibrium.",
+        "Changing amounts change the opposing rates in our stated model.",
+        "Rates meet; concentrations need not."
+      ],
+      "caption": "Next: change a mixture already at equilibrium.",
+      "voiceover": {
+        "text": "A reversible reaction can run in both directions before equilibrium. In our stated model, changing amounts bring the opposing rates towards equality. Remember: rates meet; amounts settle. Next, start with a mixture already at equilibrium and ask what changes directly when we add a substance, and what the reaction does afterwards."
+      },
+      "durationInFrames": 900
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "points": [
+        "Forward and reverse reactions can run together before equilibrium.",
+        "In our A-only model: A decreases, forward slows; B increases, reverse speeds up.",
+        "Rates meet; amounts settle. Equal rates do not require equal concentrations."
+      ],
+      "caption": "Optional book notes. Pause to copy.",
+      "durationInFrames": 600,
+      "quietReading": true,
+      "revealDelays": {
+        "heading": 0,
+        "takeawayAts": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "audioStatus": "Unrecorded rewrite. No previous audio or captions bound to new text.",
+  "routeId": "chem-m5-c02",
+  "teachingOwnership": "Route teachingOwnershipReset2026-10-11. Collision action retained for later support; catalyst in C4B; K in C5/C9. No coverage pass.",
+  "timingStatus": "Provisional word-rate cues only, new speech/alignment pending."
+}

@@ -1,0 +1,5268 @@
+{
+  "title": "Where does fertilisation happen?",
+  "subtitle": "Follow sperm and egg in a frog pond and a hen",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 2a",
+  "syllabusNeutral": true,
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusDotPoints": [
+    "analyse the features of fertilisation in animals, including external and internal fertilisation"
+  ],
+  "productionRole": "production",
+  "teachingRenderer": "b2Animals",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "lessonIntent": "Locate sperm-and-egg joining in named animal examples and explain how supplied conditions affect encounters; distinguish joining inside from later egg laying outside.",
+  "teachingReset": {
+    "parentLessonPath": "docs/production/module5-seconds-notes-2026-10-10/biology/fit-v3/lesson.json",
+    "parentLessonSha256": "2bb222469a279f251128304bfc3e4ac51d09c18af13fdcc62dde5e6042db610f",
+    "routeId": "bio-m5-b02a",
+    "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending.",
+    "artworkProvenance": {
+      "toolMode": "Built-in image_gen, fresh generation",
+      "frog": {
+        "path": "public/assets/biology/common-frog-pond-b2-v1.png",
+        "prompt": "Use case: scientific-educational. One naturalistic ink and muted watercolour illustration for a Year 12 animal reproduction lesson. White background with generous margins. Show a small clear pond-edge cross section with a pair of COMMON FROGS (Rana temporaria), the smaller male naturally resting on the female's back in amplexus, mostly above shallow water with lower bodies in the pond. Both are recognisable brown olive frogs with realistic bulging eyes, skin folds and long bent hindlegs, side view facing left, no cartoon faces. Just behind the female near the right side of their lower bodies, show a modest irregular clump of natural frogspawn in the WATER: transparent spherical jelly capsules each containing one small dark egg, not a giant egg or a fruit. A few submerged stems and a short muddy pond bank provide physical place. Keep open unobstructed pale blue-green water across lower right so a later magnified sperm-and-egg inset can be connected to the spawn. Do NOT draw giant sperm, fertilisation rings, developmental stages, tadpoles, arrows, labels, text, diagrams, frames, plinths or symbols. The art supplies organism and egg-release context, not a number of successful fertilisations. Fine realistic scientific field-guide pen linework and gentle painted washes, mostly white surrounding paper. Wide landscape composition around 3:2."
+      },
+      "hen": {
+        "path": "public/assets/biology/hen-nest-b2-v1.png",
+        "prompt": "Use case: scientific-educational. One naturalistic ink and restrained watercolour illustration on pure white background for a Year12 animal reproduction lesson. A recognisable adult brown chicken HEN in side profile facing left, standing beside a small straw ground nest containing ONE complete intact pale cream chicken egg. Show accurate bird anatomy with feathered body, short red comb, yellow scaled legs, appropriate three forward toes and one back toe, short tail at right. Hen and egg in nest occupy a wide landscape composition with generous clear margins and no background farm buildings or props. The hen is upright enough that the abdomen region is clearly seen, for later comparison with a reproductive-tract cutaway; here all feathers and the body surface are intact with NO cutaway, NO organs, NO translucent body, NO embryo, and NO mating depiction. Fine naturalistic scientific field-guide pen linework, muted earthy brown, cream and green-grey washes, gentle texture, mostly clear white paper. The egg's fertilised state will be a supplied narrated example and must not be represented by marks on the shell. No labels, arrows, captions, balls, plinths, diagram boxes, decorative borders, logos or typography."
+      },
+      "anatomy": {
+        "path": "public/assets/biology/hen-reproductive-location-b2-v1.png",
+        "prompt": "Use case: scientific-educational. Create one careful naturalistic zoological teaching illustration of an adult brown CHICKEN HEN, side profile facing LEFT, on pure white background. Fine field-guide ink linework and restrained watercolour. Hen has recognisable feathered head, neck, breast, wing outline, tail at right and two legs. In the trunk only, a clean softly edged transparent cutaway lets the viewer see a SIMPLIFIED left female reproductive tract inside the body: the ovary appears as a small cluster of yellow follicles near the upper back (not in neck or outside body), the funnel-shaped beginning of the oviduct lies just below that ovary, and a long softly pink coiled tube descends through the posterior abdomen towards the rear vent below the tail. A slightly broader lower shell-gland region can be shown but NO complete shelled egg is drawn at the upper funnel. Keep other digestive organs absent to focus only on location, while preserving credible hen body proportions. Reproductive tract clearly remains within the body outline. There is NO visible giant sperm or egg-cell model, NO embryo, NO baby chick within the abdomen. Keep ample white margins. No anatomy labels, leader lines, text, numbers, coloured circles, arrows, symbols, diagram boxes or decorative frames. The later code will use a leader from the upper funnel to a magnified sperm-and-egg joining inset. Accuracy priority: fertilisation in upper oviduct near the ovary, BEFORE shell formation further down the tract. Illustrated location model, not photographic surgery."
+      }
+    },
+    "visualLimits": [
+      "Reproductive-cell insets are magnified simplified models of possible events, not success counts, literal gamete sizes or full fertilisation molecular steps.",
+      "The hen cutaway locates a simplified tract in the real organism. Detailed tract regions, hormones, embryology and chromosome sets are outside this lesson.",
+      "The supplied hen egg is fertilised. Intact shells do not visibly disclose that state; not every laid hen egg is fertilised."
+    ],
+    "authorNotes": [
+      "One question owns this cut: where sperm and egg join, with conditions that make encounters possible. Hydra budding, haploid/diploid/meiosis, genetic variation mechanisms and detailed parental investment are deferred.",
+      "Common frog (Rana temporaria) is the stated external example, not all frogs or all amphibians. Internal fertilisation also occurs in some aquatic animals. Do not classify from habitat alone.",
+      "The mnemonic join, shell, lay applies to the hen sequence after its cause is explained, not to every animal reproduction route.",
+      "Timing and response silence are provisional. Root must align exact cues and assemble the measured prompt/quiet/feedback boundary before voiced review."
+    ],
+    "releaseStatus": "Fresh measured narration assembled. Exact voiced review and human listening pending. Not released."
+  },
+  "scenes": [
+    {
+      "id": "pond-and-nest",
+      "type": "concept",
+      "heading": "Both eggs are outside. Did joining happen there?",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 819,
+      "voiceover": {
+        "text": "A female common frog releases eggs into pond water while a male releases sperm close by. Now look at a hen's egg in a nest. In this example, it is already fertilised. Both eggs are outside the body when we see them. But did sperm and egg join in the same place? To answer, we need to follow the reproductive event, rather than classify an animal from where its egg ends up.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/pond-and-nest.fba5999d76e8.mp3",
+        "startFrame": 0,
+        "endFrame": 759
+      },
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " female",
+          "startMs": 160,
+          "endMs": 560,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 640,
+          "endMs": 960,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " frog",
+          "startMs": 1040,
+          "endMs": 1360,
+          "timestampMs": 1200,
+          "confidence": null
+        },
+        {
+          "text": " releases",
+          "startMs": 1440,
+          "endMs": 1920,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 2000,
+          "endMs": 2240,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 2320,
+          "endMs": 2480,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " pond",
+          "startMs": 2560,
+          "endMs": 2800,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 2880,
+          "endMs": 3280,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " male",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " releases",
+          "startMs": 4320,
+          "endMs": 4720,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 4800,
+          "endMs": 5200,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " close",
+          "startMs": 5280,
+          "endMs": 5520,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " by.",
+          "startMs": 5600,
+          "endMs": 6360,
+          "timestampMs": 5980,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 6800,
+          "endMs": 7040,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 7240,
+          "endMs": 7280,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7320,
+          "endMs": 7360,
+          "timestampMs": 7340,
+          "confidence": null
+        },
+        {
+          "text": " hen's",
+          "startMs": 7440,
+          "endMs": 7760,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 7840,
+          "endMs": 8000,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8039.999999999999,
+          "endMs": 8080,
+          "timestampMs": 8060,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8119.999999999999,
+          "endMs": 8160,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " nest.",
+          "startMs": 8240,
+          "endMs": 8720,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 9280,
+          "endMs": 9360,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " example,",
+          "startMs": 9600,
+          "endMs": 10320,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 10720,
+          "endMs": 11200,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " fertilised.",
+          "startMs": 11280,
+          "endMs": 12080,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " Both",
+          "startMs": 12640,
+          "endMs": 12880,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 12960,
+          "endMs": 13200,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " outside",
+          "startMs": 13440,
+          "endMs": 13920,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13960,
+          "endMs": 14000,
+          "timestampMs": 13980,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " see",
+          "startMs": 14720,
+          "endMs": 14880,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 15000,
+          "endMs": 15440,
+          "timestampMs": 15220,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " did",
+          "startMs": 15960,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16020,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 16160,
+          "endMs": 16560,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16600,
+          "endMs": 16640,
+          "timestampMs": 16620,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 16800,
+          "endMs": 17040,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 17120,
+          "endMs": 17360,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 17400,
+          "endMs": 17440,
+          "timestampMs": 17420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17480,
+          "endMs": 17520,
+          "timestampMs": 17500,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 17600,
+          "endMs": 17840,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " place?",
+          "startMs": 17920,
+          "endMs": 18480,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " answer,",
+          "startMs": 19280,
+          "endMs": 19920,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 20000,
+          "endMs": 20080,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 20160,
+          "endMs": 20240,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20320,
+          "endMs": 20400,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 20480,
+          "endMs": 20800,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20840,
+          "endMs": 20880,
+          "timestampMs": 20860,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 20960,
+          "endMs": 21520,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " event,",
+          "startMs": 21720,
+          "endMs": 22160,
+          "timestampMs": 21940,
+          "confidence": null
+        },
+        {
+          "text": " rather",
+          "startMs": 22240,
+          "endMs": 22560,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " classify",
+          "startMs": 22800,
+          "endMs": 23280,
+          "timestampMs": 23040,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 23320,
+          "endMs": 23360,
+          "timestampMs": 23340,
+          "confidence": null
+        },
+        {
+          "text": " animal",
+          "startMs": 23520,
+          "endMs": 23680,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 23760,
+          "endMs": 23920,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 24000,
+          "endMs": 24080,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 24160,
+          "endMs": 24240,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 24400,
+          "endMs": 24560,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " ends",
+          "startMs": 24680,
+          "endMs": 24800,
+          "timestampMs": 24740,
+          "confidence": null
+        },
+        {
+          "text": " up.",
+          "startMs": 24880,
+          "endMs": 25280,
+          "timestampMs": 25080,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "A frog pond and a hen's nest.",
+            "view": "opening",
+            "spokenCue": "A female common frog"
+          },
+          {
+            "at": 380,
+            "line": "An egg outside does not tell us the joining place.",
+            "view": "opening",
+            "spokenCue": "Both eggs are outside the body"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "New realistic common-frog pond and hen-with-nest plates replace the parent's word cards. The supplied hen egg is fertilised; no mark on its shell claims that an unobserved fertilisation is visible.",
+        "motionPurpose": "Hold the two physical cases side by side while the question is introduced. No classification labels or predetermined outcome symbols.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "frog-joining",
+      "type": "concept",
+      "heading": "Follow sperm to the egg in the pond.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1057,
+      "voiceover": {
+        "text": "Recall from the previous lesson that sperm and egg are reproductive cells called gametes. Each carries inherited information in DNA. When a sperm joins an egg, we call that fertilisation. It can begin the development of a new animal. In this common-frog example, the female's eggs are already in the pond when sperm reaches them. The joining happens in water outside her body. That makes it external fertilisation. External describes the joining place, not whether the parents live in water.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/frog-joining.0561fe9d7b5e.mp3",
+        "startFrame": 0,
+        "endFrame": 997
+      },
+      "captions": [
+        {
+          "text": "Recall",
+          "startMs": 0,
+          "endMs": 347,
+          "timestampMs": 173.5,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 400,
+          "endMs": 600,
+          "timestampMs": 500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 640,
+          "endMs": 707,
+          "timestampMs": 673.5,
+          "confidence": null
+        },
+        {
+          "text": " previous",
+          "startMs": 720,
+          "endMs": 1200,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " lesson",
+          "startMs": 1280,
+          "endMs": 1680,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 2000,
+          "endMs": 2400,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 3040,
+          "endMs": 3200,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 3280,
+          "endMs": 3920,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 4000,
+          "endMs": 4320,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " gametes.",
+          "startMs": 4720,
+          "endMs": 5440,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 6320,
+          "endMs": 6640,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 6720,
+          "endMs": 7280,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 7640,
+          "endMs": 8000,
+          "timestampMs": 7820,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8080,
+          "endMs": 8160,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " DNA.",
+          "startMs": 8320,
+          "endMs": 9240,
+          "timestampMs": 8780,
+          "confidence": null
+        },
+        {
+          "text": " When",
+          "startMs": 9600,
+          "endMs": 9680,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9720,
+          "endMs": 9760,
+          "timestampMs": 9740,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 9840,
+          "endMs": 10160,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " joins",
+          "startMs": 10320,
+          "endMs": 10560,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 10640,
+          "endMs": 10720,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " egg,",
+          "startMs": 10800,
+          "endMs": 11360,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 11440,
+          "endMs": 11520,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " call",
+          "startMs": 11640,
+          "endMs": 11760,
+          "timestampMs": 11700,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 11880,
+          "endMs": 12000,
+          "timestampMs": 11940,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation.",
+          "startMs": 12160,
+          "endMs": 13200,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 13680,
+          "endMs": 13760,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 13840,
+          "endMs": 13920,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " begin",
+          "startMs": 14080,
+          "endMs": 14240,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14280,
+          "endMs": 14320,
+          "timestampMs": 14300,
+          "confidence": null
+        },
+        {
+          "text": " development",
+          "startMs": 14400,
+          "endMs": 14880,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15160,
+          "endMs": 15200,
+          "timestampMs": 15180,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 15280,
+          "endMs": 15440,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " animal.",
+          "startMs": 15600,
+          "endMs": 16000,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 16640,
+          "endMs": 16720,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " common-frog",
+          "startMs": 17040,
+          "endMs": 17600,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " example,",
+          "startMs": 17680,
+          "endMs": 18480,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18520,
+          "endMs": 18560,
+          "timestampMs": 18540,
+          "confidence": null
+        },
+        {
+          "text": " female's",
+          "startMs": 18640,
+          "endMs": 19120,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 19200,
+          "endMs": 19440,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 19520,
+          "endMs": 19680,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 19920,
+          "endMs": 20160,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 20200,
+          "endMs": 20240,
+          "timestampMs": 20220,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20320,
+          "endMs": 20400,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " pond",
+          "startMs": 20480,
+          "endMs": 20800,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 20880,
+          "endMs": 21040,
+          "timestampMs": 20960,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 21120,
+          "endMs": 21440,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " reaches",
+          "startMs": 21520,
+          "endMs": 21840,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 21960,
+          "endMs": 22160,
+          "timestampMs": 22060,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " joining",
+          "startMs": 22800,
+          "endMs": 23120,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " happens",
+          "startMs": 23160,
+          "endMs": 23520,
+          "timestampMs": 23340,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 23560,
+          "endMs": 23600,
+          "timestampMs": 23580,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 23680,
+          "endMs": 24000,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " outside",
+          "startMs": 24160,
+          "endMs": 24720,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 24800,
+          "endMs": 24880,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " body.",
+          "startMs": 25080,
+          "endMs": 25360,
+          "timestampMs": 25220,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 25840,
+          "endMs": 25920,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 26000,
+          "endMs": 26240,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 26280,
+          "endMs": 26320,
+          "timestampMs": 26300,
+          "confidence": null
+        },
+        {
+          "text": " external",
+          "startMs": 26560,
+          "endMs": 27120,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation.",
+          "startMs": 27280,
+          "endMs": 28160,
+          "timestampMs": 27720,
+          "confidence": null
+        },
+        {
+          "text": " External",
+          "startMs": 28800,
+          "endMs": 29360,
+          "timestampMs": 29080,
+          "confidence": null
+        },
+        {
+          "text": " describes",
+          "startMs": 29440,
+          "endMs": 29920,
+          "timestampMs": 29680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29960,
+          "endMs": 30000,
+          "timestampMs": 29980,
+          "confidence": null
+        },
+        {
+          "text": " joining",
+          "startMs": 30080,
+          "endMs": 30400,
+          "timestampMs": 30240,
+          "confidence": null
+        },
+        {
+          "text": " place,",
+          "startMs": 30480,
+          "endMs": 31120,
+          "timestampMs": 30800,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 31200,
+          "endMs": 31360,
+          "timestampMs": 31280,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 31480,
+          "endMs": 31600,
+          "timestampMs": 31540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31640,
+          "endMs": 31680,
+          "timestampMs": 31660,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 31760,
+          "endMs": 32159.999999999996,
+          "timestampMs": 31960,
+          "confidence": null
+        },
+        {
+          "text": " live",
+          "startMs": 32240.000000000004,
+          "endMs": 32400,
+          "timestampMs": 32320,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 32439.999999999996,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32459.999999999996,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 32560.000000000004,
+          "endMs": 33200,
+          "timestampMs": 32880,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Sperm and egg are reproductive cells.",
+            "view": "frog-cells",
+            "spokenCue": "Recall from the previous lesson"
+          },
+          {
+            "at": 288,
+            "line": "Fertilisation joins sperm and egg.",
+            "view": "frog-joined",
+            "spokenCue": "When a sperm joins an egg"
+          },
+          {
+            "at": 680,
+            "line": "The joining happens outside the female's body.",
+            "view": "frog-joined",
+            "spokenCue": "The joining happens in water"
+          },
+          {
+            "at": 776,
+            "line": "Outside joining: external fertilisation.",
+            "view": "frog-joined",
+            "spokenCue": "That makes it external fertilisation"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Retain the real frogs, water line and frogspawn. A leader from an egg in the spawn locates a magnified sperm-and-egg model in the pond. Sperm reaches one egg; the inset represents one possible fertilisation, not a fraction of all spawn that succeeds.",
+        "motionPurpose": "First locate both gametes. At the spoken joining cue, sperm approaches the egg and its outline clears as the first new cell appears. Joining stays complete while the explanatory text changes. Actual frog art does not animate a second breeding event.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "water-and-encounters",
+      "type": "concept",
+      "heading": "Water helps. Sperm still has to reach an egg.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1061,
+      "voiceover": {
+        "text": "Why release the gametes close together? A sperm must reach an egg before it can join it. Nearby release shortens that journey. The water keeps these exposed gametes from drying out and provides liquid in which sperm can swim. But water alone does not guarantee a meeting. A current can carry sperm away from the eggs. If the two types of gamete are not present at the same time, they may miss each other too. So a suitable watery setting, a nearby release and overlapping timing support fertilisation in this case.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/water-and-encounters.55051b8519a2.mp3",
+        "startFrame": 0,
+        "endFrame": 1001
+      },
+      "captions": [
+        {
+          "text": "Why",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 240,
+          "endMs": 611,
+          "timestampMs": 425.5,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 640,
+          "endMs": 707,
+          "timestampMs": 673.5,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 720,
+          "endMs": 1220,
+          "timestampMs": 970,
+          "confidence": null
+        },
+        {
+          "text": " close",
+          "startMs": 1280,
+          "endMs": 1496,
+          "timestampMs": 1388,
+          "confidence": null
+        },
+        {
+          "text": " together?",
+          "startMs": 1520,
+          "endMs": 2080,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 2880,
+          "endMs": 3280,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " must",
+          "startMs": 3400,
+          "endMs": 3520,
+          "timestampMs": 3460,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 3640,
+          "endMs": 3760,
+          "timestampMs": 3700,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 4000,
+          "endMs": 4320,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 4480,
+          "endMs": 4640,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 5040,
+          "endMs": 5280,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 5400,
+          "endMs": 5800,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " Nearby",
+          "startMs": 6080,
+          "endMs": 6480,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 6720,
+          "endMs": 6960,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " shortens",
+          "startMs": 7120,
+          "endMs": 7600,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 7720,
+          "endMs": 7840,
+          "timestampMs": 7780,
+          "confidence": null
+        },
+        {
+          "text": " journey.",
+          "startMs": 7960,
+          "endMs": 8560,
+          "timestampMs": 8260,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 9040,
+          "endMs": 9360,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 9400,
+          "endMs": 9600,
+          "timestampMs": 9500,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " exposed",
+          "startMs": 9920,
+          "endMs": 10400,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 10480,
+          "endMs": 10880,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " drying",
+          "startMs": 11120,
+          "endMs": 11440,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 11520,
+          "endMs": 11760,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12000,
+          "endMs": 12160,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " provides",
+          "startMs": 12240,
+          "endMs": 12560,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " liquid",
+          "startMs": 12640,
+          "endMs": 13040,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 13440,
+          "endMs": 13760,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 13840,
+          "endMs": 14000,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " swim.",
+          "startMs": 14080,
+          "endMs": 14720,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 15040,
+          "endMs": 15200,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 15280,
+          "endMs": 15520,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " alone",
+          "startMs": 15600,
+          "endMs": 16000,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 16120.000000000002,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16180,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 16320,
+          "endMs": 16560,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " guarantee",
+          "startMs": 16600,
+          "endMs": 17040,
+          "timestampMs": 16820,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 17080,
+          "endMs": 17120,
+          "timestampMs": 17100,
+          "confidence": null
+        },
+        {
+          "text": " meeting.",
+          "startMs": 17200,
+          "endMs": 18080,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " current",
+          "startMs": 18440,
+          "endMs": 18640,
+          "timestampMs": 18540,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 18760,
+          "endMs": 18880,
+          "timestampMs": 18820,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 19000,
+          "endMs": 19120,
+          "timestampMs": 19060,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 19200,
+          "endMs": 19520,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " away",
+          "startMs": 19600,
+          "endMs": 19920,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 20000,
+          "endMs": 20080,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20120,
+          "endMs": 20160,
+          "timestampMs": 20140,
+          "confidence": null
+        },
+        {
+          "text": " eggs.",
+          "startMs": 20240,
+          "endMs": 21040,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21280,
+          "endMs": 21360,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 21400,
+          "endMs": 21440,
+          "timestampMs": 21420,
+          "confidence": null
+        },
+        {
+          "text": " types",
+          "startMs": 21600,
+          "endMs": 21840,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21880,
+          "endMs": 21920,
+          "timestampMs": 21900,
+          "confidence": null
+        },
+        {
+          "text": " gamete",
+          "startMs": 22000,
+          "endMs": 22320,
+          "timestampMs": 22160,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 22400,
+          "endMs": 22480,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 22600,
+          "endMs": 22720,
+          "timestampMs": 22660,
+          "confidence": null
+        },
+        {
+          "text": " present",
+          "startMs": 22880,
+          "endMs": 23040,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 23080,
+          "endMs": 23120,
+          "timestampMs": 23100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 23400,
+          "endMs": 23520,
+          "timestampMs": 23460,
+          "confidence": null
+        },
+        {
+          "text": " time,",
+          "startMs": 23600,
+          "endMs": 24160,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 24240,
+          "endMs": 24400,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " miss",
+          "startMs": 24640,
+          "endMs": 24800,
+          "timestampMs": 24720,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 24880,
+          "endMs": 24960,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 25040,
+          "endMs": 25200,
+          "timestampMs": 25120,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 25280,
+          "endMs": 26160,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 26320,
+          "endMs": 26480,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 26800,
+          "endMs": 26960,
+          "timestampMs": 26880,
+          "confidence": null
+        },
+        {
+          "text": " suitable",
+          "startMs": 27080,
+          "endMs": 27360,
+          "timestampMs": 27220,
+          "confidence": null
+        },
+        {
+          "text": " watery",
+          "startMs": 27440,
+          "endMs": 27840,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " setting,",
+          "startMs": 28040,
+          "endMs": 28480,
+          "timestampMs": 28260,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 28560,
+          "endMs": 28640,
+          "timestampMs": 28600,
+          "confidence": null
+        },
+        {
+          "text": " nearby",
+          "startMs": 28760,
+          "endMs": 29040,
+          "timestampMs": 28900,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 29400,
+          "endMs": 29760,
+          "timestampMs": 29580,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 29880,
+          "endMs": 30000,
+          "timestampMs": 29940,
+          "confidence": null
+        },
+        {
+          "text": " overlapping",
+          "startMs": 30080,
+          "endMs": 30640,
+          "timestampMs": 30360,
+          "confidence": null
+        },
+        {
+          "text": " timing",
+          "startMs": 30720,
+          "endMs": 31200,
+          "timestampMs": 30960,
+          "confidence": null
+        },
+        {
+          "text": " support",
+          "startMs": 31280,
+          "endMs": 31680,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation",
+          "startMs": 31760,
+          "endMs": 32560.000000000004,
+          "timestampMs": 32160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 32600,
+          "endMs": 32640,
+          "timestampMs": 32620,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 32720,
+          "endMs": 32800,
+          "timestampMs": 32760,
+          "confidence": null
+        },
+        {
+          "text": " case.",
+          "startMs": 32880,
+          "endMs": 33360,
+          "timestampMs": 33120,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Nearby release reduces the distance to an egg.",
+            "view": "frog-near",
+            "spokenCue": "Why release the gametes close together?"
+          },
+          {
+            "at": 267,
+            "line": "Water limits drying and lets sperm swim.",
+            "view": "frog-near",
+            "spokenCue": "The water keeps these exposed gametes"
+          },
+          {
+            "at": 545,
+            "line": "A current can separate sperm from the eggs.",
+            "view": "frog-current",
+            "spokenCue": "A current can carry sperm away"
+          },
+          {
+            "at": 634,
+            "line": "Both types of gamete need overlapping timing.",
+            "view": "frog-timing",
+            "spokenCue": "If the two types of gamete"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Keep common frogs and spawn on screen. The located inset compares a nearby sperm approach with sperm being carried away while the egg remains. Show timing as sperm absent from the egg patch, without depicting dead gametes or numerical success fractions.",
+        "motionPurpose": "Use one magnified event. The near route directs attention to the sperm's journey. A current arrow then carries the schematic sperm away; it does not turn the pictured spawn into a success/failure chart. End with a stable case and current condition.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "hen-inside",
+      "type": "concept",
+      "heading": "The hen keeps the joining place inside.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1157,
+      "voiceover": {
+        "text": "The hen uses a different route. Sperm is transferred into the female during mating. Inside her body, it can reach an egg near the beginning of a tube called the oviduct, the passage that carries the egg onwards. Joining there is internal fertilisation. The moist reproductive tract reduces the gametes' exposure to drying, which is useful on land. That protection does not remove the need for sperm to enter the female and reach an egg. The location gives a useful advantage under dry conditions. It does not promise that every egg will be fertilised or that an offspring will survive.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/hen-inside.0853945b4633.mp3",
+        "startFrame": 0,
+        "endFrame": 1097
+      },
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " hen",
+          "startMs": 240,
+          "endMs": 560,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " uses",
+          "startMs": 640,
+          "endMs": 880,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 960,
+          "endMs": 1040,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 1120,
+          "endMs": 1440,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " route.",
+          "startMs": 1520,
+          "endMs": 2080,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " Sperm",
+          "startMs": 2320,
+          "endMs": 2640,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " transferred",
+          "startMs": 2880,
+          "endMs": 3440,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " female",
+          "startMs": 4000,
+          "endMs": 4400,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " during",
+          "startMs": 4480,
+          "endMs": 4720,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " mating.",
+          "startMs": 4800,
+          "endMs": 5360,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " Inside",
+          "startMs": 5920,
+          "endMs": 6320,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " body,",
+          "startMs": 6560,
+          "endMs": 7040,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 7440,
+          "endMs": 7600,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 7680,
+          "endMs": 7760,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 7840,
+          "endMs": 8000,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " near",
+          "startMs": 8080,
+          "endMs": 8240,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8280,
+          "endMs": 8320,
+          "timestampMs": 8300,
+          "confidence": null
+        },
+        {
+          "text": " beginning",
+          "startMs": 8400,
+          "endMs": 8720,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8920,
+          "endMs": 8960,
+          "timestampMs": 8940,
+          "confidence": null
+        },
+        {
+          "text": " tube",
+          "startMs": 9040,
+          "endMs": 9360,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 9440,
+          "endMs": 9600,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9680,
+          "endMs": 9760,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " oviduct,",
+          "startMs": 9920,
+          "endMs": 10880,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10920,
+          "endMs": 10960,
+          "timestampMs": 10940,
+          "confidence": null
+        },
+        {
+          "text": " passage",
+          "startMs": 11040,
+          "endMs": 11440,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 11520,
+          "endMs": 11600,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 11680,
+          "endMs": 12000,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12040,
+          "endMs": 12080,
+          "timestampMs": 12060,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 12160,
+          "endMs": 12320,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " onwards.",
+          "startMs": 12400,
+          "endMs": 12880,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " Joining",
+          "startMs": 13520,
+          "endMs": 13840,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 13920,
+          "endMs": 14240,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14400,
+          "endMs": 14560,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " internal",
+          "startMs": 14880,
+          "endMs": 15200,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation.",
+          "startMs": 15280,
+          "endMs": 16440,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " moist",
+          "startMs": 16880,
+          "endMs": 17120,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 17200,
+          "endMs": 17840,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " tract",
+          "startMs": 17920,
+          "endMs": 18240,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " reduces",
+          "startMs": 18360,
+          "endMs": 18800,
+          "timestampMs": 18580,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18880,
+          "endMs": 18960,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " gametes'",
+          "startMs": 19080,
+          "endMs": 19400,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " exposure",
+          "startMs": 19440,
+          "endMs": 19920,
+          "timestampMs": 19680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20000,
+          "endMs": 20080,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " drying,",
+          "startMs": 20120,
+          "endMs": 20800,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21040,
+          "endMs": 21120,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 21200,
+          "endMs": 21520,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " land.",
+          "startMs": 21760,
+          "endMs": 22240,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 22800,
+          "endMs": 22960,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " protection",
+          "startMs": 23040,
+          "endMs": 23440,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 23520,
+          "endMs": 23680,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 23760,
+          "endMs": 23920,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " remove",
+          "startMs": 24000,
+          "endMs": 24320,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24360,
+          "endMs": 24400,
+          "timestampMs": 24380,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 24480,
+          "endMs": 24640,
+          "timestampMs": 24560,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 24720,
+          "endMs": 24800,
+          "timestampMs": 24760,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 24840,
+          "endMs": 25120,
+          "timestampMs": 24980,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 25200,
+          "endMs": 25360,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " enter",
+          "startMs": 25440,
+          "endMs": 25680,
+          "timestampMs": 25560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25720,
+          "endMs": 25760,
+          "timestampMs": 25740,
+          "confidence": null
+        },
+        {
+          "text": " female",
+          "startMs": 25840,
+          "endMs": 26320,
+          "timestampMs": 26080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26400,
+          "endMs": 26480,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 26560,
+          "endMs": 26720,
+          "timestampMs": 26640,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 26800,
+          "endMs": 26880,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " egg.",
+          "startMs": 26960,
+          "endMs": 27280,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 27840,
+          "endMs": 27880,
+          "timestampMs": 27860,
+          "confidence": null
+        },
+        {
+          "text": " location",
+          "startMs": 27920,
+          "endMs": 28480,
+          "timestampMs": 28200,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 28560,
+          "endMs": 28720,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 28760,
+          "endMs": 28800,
+          "timestampMs": 28780,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 28960,
+          "endMs": 29200,
+          "timestampMs": 29080,
+          "confidence": null
+        },
+        {
+          "text": " advantage",
+          "startMs": 29280,
+          "endMs": 29840,
+          "timestampMs": 29560,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 29960,
+          "endMs": 30080,
+          "timestampMs": 30020,
+          "confidence": null
+        },
+        {
+          "text": " dry",
+          "startMs": 30160,
+          "endMs": 30400,
+          "timestampMs": 30280,
+          "confidence": null
+        },
+        {
+          "text": " conditions.",
+          "startMs": 30480,
+          "endMs": 31200,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 31680,
+          "endMs": 31720,
+          "timestampMs": 31700,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 31760,
+          "endMs": 31920,
+          "timestampMs": 31840,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 32000,
+          "endMs": 32080,
+          "timestampMs": 32040,
+          "confidence": null
+        },
+        {
+          "text": " promise",
+          "startMs": 32159.999999999996,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32319.999999999996,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 32600,
+          "endMs": 32720,
+          "timestampMs": 32660,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 32800,
+          "endMs": 33120,
+          "timestampMs": 32960,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 33200,
+          "endMs": 33280,
+          "timestampMs": 33240,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 33360,
+          "endMs": 33440,
+          "timestampMs": 33400,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 33480,
+          "endMs": 33520,
+          "timestampMs": 33500,
+          "confidence": null
+        },
+        {
+          "text": " fertilised",
+          "startMs": 33600,
+          "endMs": 34320,
+          "timestampMs": 33960,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 34640,
+          "endMs": 34800,
+          "timestampMs": 34720,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 34880,
+          "endMs": 35040,
+          "timestampMs": 34960,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 35080,
+          "endMs": 35120,
+          "timestampMs": 35100,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 35200,
+          "endMs": 35600,
+          "timestampMs": 35400,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 35680,
+          "endMs": 35760,
+          "timestampMs": 35720,
+          "confidence": null
+        },
+        {
+          "text": " survive.",
+          "startMs": 35840,
+          "endMs": 36560,
+          "timestampMs": 36200,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 70,
+            "line": "Sperm enters the female during mating.",
+            "view": "hen-tract",
+            "spokenCue": "Sperm is transferred into the female"
+          },
+          {
+            "at": 178,
+            "line": "Sperm can reach an egg inside the oviduct.",
+            "view": "hen-cells",
+            "spokenCue": "Inside her body, it can reach an egg"
+          },
+          {
+            "at": 406,
+            "line": "Inside joining: internal fertilisation.",
+            "view": "hen-joined",
+            "spokenCue": "Joining there is internal fertilisation"
+          },
+          {
+            "at": 502,
+            "line": "A moist tract reduces exposure to drying.",
+            "view": "hen-joined",
+            "spokenCue": "The moist reproductive tract"
+          },
+          {
+            "at": 684,
+            "line": "Protection supports fertilisation, without guaranteeing it.",
+            "view": "hen-joined",
+            "spokenCue": "That protection does not remove"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Use the real hen cutaway with a simplified reproductive tract entirely inside its body. Locate the upper oviduct near the ovary with a leader to a magnified reproductive-cell model. The egg is not shown as a complete shelled egg at this site. The brown hen from the opening remains the organism context.",
+        "motionPurpose": "Locate the upper joining site in the actual body. The cell inset first shows a sperm and egg, then one possible joining. It remains joined across later text cues. Do not show a chick or complete egg growing in the female, or count surviving offspring.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "join-shell-lay",
+      "type": "concept",
+      "heading": "The nest is a later destination.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1124,
+      "voiceover": {
+        "text": "Return to the egg in our opening nest. In a hen, sperm reaches the egg before the hard shell is added. The egg then passes along the reproductive tract, the shell forms around it, and the hen lays it. In our supplied fertilised egg, the joining has already happened inside the body. Later development can continue in the laid egg when conditions support it. For this bird, remember the order: join, shell, lay. That order explains why an egg in a nest does not make fertilisation external. Find the joining place first.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/join-shell-lay.9e488ec6ecf8.mp3",
+        "startFrame": 0,
+        "endFrame": 1064
+      },
+      "captions": [
+        {
+          "text": "Return",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 480,
+          "endMs": 560,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 600,
+          "endMs": 640,
+          "timestampMs": 620,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 800,
+          "endMs": 1040,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1080,
+          "endMs": 1120,
+          "timestampMs": 1100,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " opening",
+          "startMs": 1440,
+          "endMs": 1760,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " nest.",
+          "startMs": 1840,
+          "endMs": 2520,
+          "timestampMs": 2180,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2960,
+          "endMs": 3040,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " hen,",
+          "startMs": 3120,
+          "endMs": 3760,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 3840,
+          "endMs": 4160,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " reaches",
+          "startMs": 4240,
+          "endMs": 4560,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 5040,
+          "endMs": 5520,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " hard",
+          "startMs": 5800,
+          "endMs": 5920,
+          "timestampMs": 5860,
+          "confidence": null
+        },
+        {
+          "text": " shell",
+          "startMs": 6000,
+          "endMs": 6160,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " added.",
+          "startMs": 6400,
+          "endMs": 7040,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 7600,
+          "endMs": 7760,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 7880,
+          "endMs": 8000,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " passes",
+          "startMs": 8080,
+          "endMs": 8400,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " along",
+          "startMs": 8480,
+          "endMs": 8720,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8800,
+          "endMs": 8840,
+          "timestampMs": 8820,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 8880,
+          "endMs": 9520,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " tract,",
+          "startMs": 9720,
+          "endMs": 10240,
+          "timestampMs": 9980,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10280,
+          "endMs": 10320,
+          "timestampMs": 10300,
+          "confidence": null
+        },
+        {
+          "text": " shell",
+          "startMs": 10400,
+          "endMs": 10720,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " forms",
+          "startMs": 10840,
+          "endMs": 10960,
+          "timestampMs": 10900,
+          "confidence": null
+        },
+        {
+          "text": " around",
+          "startMs": 11040,
+          "endMs": 11360,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 11440,
+          "endMs": 11760,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11960,
+          "endMs": 12000,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " hen",
+          "startMs": 12120,
+          "endMs": 12240,
+          "timestampMs": 12180,
+          "confidence": null
+        },
+        {
+          "text": " lays",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 12640,
+          "endMs": 13160,
+          "timestampMs": 12900,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 13760,
+          "endMs": 13840,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " supplied",
+          "startMs": 13920,
+          "endMs": 14320,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " fertilised",
+          "startMs": 14400,
+          "endMs": 14960,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " egg,",
+          "startMs": 15040,
+          "endMs": 15520,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " joining",
+          "startMs": 15760,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 16200,
+          "endMs": 16320,
+          "timestampMs": 16260,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 16400,
+          "endMs": 16800,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " happened",
+          "startMs": 16880,
+          "endMs": 17200,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 17440,
+          "endMs": 17680,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " body.",
+          "startMs": 17920,
+          "endMs": 18800,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " Later",
+          "startMs": 18880,
+          "endMs": 19120,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " development",
+          "startMs": 19400,
+          "endMs": 19680,
+          "timestampMs": 19540,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 19760,
+          "endMs": 19840,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " continue",
+          "startMs": 20120,
+          "endMs": 20400,
+          "timestampMs": 20260,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 20440,
+          "endMs": 20480,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20520,
+          "endMs": 20560,
+          "timestampMs": 20540,
+          "confidence": null
+        },
+        {
+          "text": " laid",
+          "startMs": 20640,
+          "endMs": 20880,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 20960,
+          "endMs": 21200,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 21280,
+          "endMs": 21360,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 21600,
+          "endMs": 21840,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " support",
+          "startMs": 22040,
+          "endMs": 22240,
+          "timestampMs": 22140,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 22320,
+          "endMs": 23120,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 23160,
+          "endMs": 23200,
+          "timestampMs": 23180,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 23280,
+          "endMs": 23440,
+          "timestampMs": 23360,
+          "confidence": null
+        },
+        {
+          "text": " bird,",
+          "startMs": 23520,
+          "endMs": 24080,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " remember",
+          "startMs": 24160,
+          "endMs": 24560,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24600,
+          "endMs": 24640,
+          "timestampMs": 24620,
+          "confidence": null
+        },
+        {
+          "text": " order:",
+          "startMs": 24720,
+          "endMs": 25600,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " join,",
+          "startMs": 25680,
+          "endMs": 26480,
+          "timestampMs": 26080,
+          "confidence": null
+        },
+        {
+          "text": " shell,",
+          "startMs": 26560,
+          "endMs": 27280,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " lay.",
+          "startMs": 27360,
+          "endMs": 28320,
+          "timestampMs": 27840,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 28440,
+          "endMs": 28560,
+          "timestampMs": 28500,
+          "confidence": null
+        },
+        {
+          "text": " order",
+          "startMs": 28640,
+          "endMs": 28880,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " explains",
+          "startMs": 29000,
+          "endMs": 29440,
+          "timestampMs": 29220,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 29560,
+          "endMs": 29680,
+          "timestampMs": 29620,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 29760,
+          "endMs": 29840,
+          "timestampMs": 29800,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 29920,
+          "endMs": 30000,
+          "timestampMs": 29960,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 30080,
+          "endMs": 30120,
+          "timestampMs": 30100,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 30160,
+          "endMs": 30240,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " nest",
+          "startMs": 30440,
+          "endMs": 30640,
+          "timestampMs": 30540,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 30720,
+          "endMs": 30960,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 31080,
+          "endMs": 31200,
+          "timestampMs": 31140,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 31320,
+          "endMs": 31440,
+          "timestampMs": 31380,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation",
+          "startMs": 31480,
+          "endMs": 32240.000000000004,
+          "timestampMs": 31860,
+          "confidence": null
+        },
+        {
+          "text": " external.",
+          "startMs": 32320,
+          "endMs": 33520,
+          "timestampMs": 32920,
+          "confidence": null
+        },
+        {
+          "text": " Find",
+          "startMs": 33640,
+          "endMs": 33760,
+          "timestampMs": 33700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33840,
+          "endMs": 33920,
+          "timestampMs": 33880,
+          "confidence": null
+        },
+        {
+          "text": " joining",
+          "startMs": 34000,
+          "endMs": 34320,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " place",
+          "startMs": 34400,
+          "endMs": 34720,
+          "timestampMs": 34560,
+          "confidence": null
+        },
+        {
+          "text": " first.",
+          "startMs": 34800,
+          "endMs": 35440,
+          "timestampMs": 35120,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 84,
+            "line": "Joining happens before the shell is added.",
+            "view": "hen-sequence",
+            "spokenCue": "In a hen, sperm reaches the egg"
+          },
+          {
+            "at": 221,
+            "line": "The shell forms later, before the egg is laid.",
+            "view": "hen-sequence",
+            "spokenCue": "The egg then passes along"
+          },
+          {
+            "at": 406,
+            "line": "The supplied egg was fertilised before laying.",
+            "view": "hen-sequence",
+            "spokenCue": "In our supplied fertilised egg"
+          },
+          {
+            "at": 695,
+            "line": "For the hen: join, shell, lay.",
+            "view": "hen-sequence",
+            "spokenCue": "For this bird, remember the order"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Place the actual hen cutaway and its located joined-cell inset before the actual whole hen with nest. A short stage arrow connects earlier joining inside to the later laid egg. Keep the sequence temporal, not a claim that gametes join through a shell. The nest egg is the given fertilised case; no visible shell trait classifies it.",
+        "motionPurpose": "Reveal the later nest only after the already explained joining site. Trace a single direction from upper joining site to later egg laying. Retain the earlier joining place through the compact memory anchor. No new embryology or parental-care mechanism.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "pond-current-attempt",
+      "type": "concept",
+      "heading": "A current changes the pond.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1376,
+      "voiceover": {
+        "text": "Try a changed condition. Two groups of common frogs release the same numbers of eggs and sperm into pond water at the same time. Their gametes remain able to fertilise for the same length of time. In group B, a stronger current carries sperm away from the egg patch. Classify the fertilisation in this route. Predict how B's opportunities for sperm to reach eggs compare with group A, and explain why. Then name one result these observations cannot tell us. Pause here to decide.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/pond-current-attempt.1659db5014cf.mp3",
+        "startFrame": 0,
+        "endFrame": 980
+      },
+      "captions": [
+        {
+          "text": "Try",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " changed",
+          "startMs": 480,
+          "endMs": 960,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " condition.",
+          "startMs": 1040,
+          "endMs": 1600,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " Two",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " groups",
+          "startMs": 2480,
+          "endMs": 2720,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " frogs",
+          "startMs": 3360,
+          "endMs": 3760,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4160,
+          "endMs": 4320,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 4440,
+          "endMs": 4560,
+          "timestampMs": 4500,
+          "confidence": null
+        },
+        {
+          "text": " numbers",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5000,
+          "endMs": 5040,
+          "timestampMs": 5020,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 5200,
+          "endMs": 5440,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5520,
+          "endMs": 5600,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 5680,
+          "endMs": 6080,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 6200,
+          "endMs": 6320,
+          "timestampMs": 6260,
+          "confidence": null
+        },
+        {
+          "text": " pond",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 6720,
+          "endMs": 7040,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 7480,
+          "endMs": 7600,
+          "timestampMs": 7540,
+          "confidence": null
+        },
+        {
+          "text": " time.",
+          "startMs": 7680,
+          "endMs": 8360,
+          "timestampMs": 8020,
+          "confidence": null
+        },
+        {
+          "text": " Their",
+          "startMs": 8640,
+          "endMs": 8800,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 8880,
+          "endMs": 9280,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " remain",
+          "startMs": 9480,
+          "endMs": 9680,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " able",
+          "startMs": 9760,
+          "endMs": 9920,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " fertilise",
+          "startMs": 10160,
+          "endMs": 10720,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 11160,
+          "endMs": 11280,
+          "timestampMs": 11220,
+          "confidence": null
+        },
+        {
+          "text": " length",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11640,
+          "endMs": 11680,
+          "timestampMs": 11660,
+          "confidence": null
+        },
+        {
+          "text": " time.",
+          "startMs": 11760,
+          "endMs": 12400,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 12880,
+          "endMs": 13120,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 13200,
+          "endMs": 13840,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " stronger",
+          "startMs": 14080,
+          "endMs": 14480,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " current",
+          "startMs": 14560,
+          "endMs": 14880,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 14960,
+          "endMs": 15280,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 15360,
+          "endMs": 15680,
+          "timestampMs": 15520,
+          "confidence": null
+        },
+        {
+          "text": " away",
+          "startMs": 15760,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 16160,
+          "endMs": 16320,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " patch.",
+          "startMs": 16640,
+          "endMs": 17320,
+          "timestampMs": 16980,
+          "confidence": null
+        },
+        {
+          "text": " Classify",
+          "startMs": 17600,
+          "endMs": 18160,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18200,
+          "endMs": 18240,
+          "timestampMs": 18220,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation",
+          "startMs": 18320,
+          "endMs": 19120,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 19360,
+          "endMs": 19520,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " route.",
+          "startMs": 19600,
+          "endMs": 19920,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " Predict",
+          "startMs": 20560,
+          "endMs": 20880,
+          "timestampMs": 20720,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 20960,
+          "endMs": 21120,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " B's",
+          "startMs": 21200,
+          "endMs": 21520,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " opportunities",
+          "startMs": 21680,
+          "endMs": 22240,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 22280,
+          "endMs": 22320,
+          "timestampMs": 22300,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 22400,
+          "endMs": 22720,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22800,
+          "endMs": 22880,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 23000,
+          "endMs": 23120,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 23280,
+          "endMs": 23600,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 23840,
+          "endMs": 24240,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 24480,
+          "endMs": 24720,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " A,",
+          "startMs": 24800,
+          "endMs": 25280,
+          "timestampMs": 25040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25320,
+          "endMs": 25360,
+          "timestampMs": 25340,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 25440,
+          "endMs": 25840,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " why.",
+          "startMs": 25920,
+          "endMs": 26600,
+          "timestampMs": 26260,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 26960,
+          "endMs": 27280,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 27680,
+          "endMs": 27920,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 28000,
+          "endMs": 28160,
+          "timestampMs": 28080,
+          "confidence": null
+        },
+        {
+          "text": " result",
+          "startMs": 28240,
+          "endMs": 28640,
+          "timestampMs": 28440,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 28760,
+          "endMs": 28880,
+          "timestampMs": 28820,
+          "confidence": null
+        },
+        {
+          "text": " observations",
+          "startMs": 28960,
+          "endMs": 29600,
+          "timestampMs": 29280,
+          "confidence": null
+        },
+        {
+          "text": " cannot",
+          "startMs": 29760,
+          "endMs": 30160,
+          "timestampMs": 29960,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 30240,
+          "endMs": 30400,
+          "timestampMs": 30320,
+          "confidence": null
+        },
+        {
+          "text": " us.",
+          "startMs": 30560,
+          "endMs": 31000,
+          "timestampMs": 30780,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 31280,
+          "endMs": 31600,
+          "timestampMs": 31440,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 31720,
+          "endMs": 31840,
+          "timestampMs": 31780,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 31880,
+          "endMs": 31920,
+          "timestampMs": 31900,
+          "confidence": null
+        },
+        {
+          "text": " decide.",
+          "startMs": 32000,
+          "endMs": 32640,
+          "timestampMs": 32320,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Classify, predict and explain, then name one unknown result.",
+            "view": "attempt",
+            "spokenCue": "Try a changed condition."
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Retain neutral frog-pond plates for A and B, each with a magnified unfertilised egg/sperm context. B's arrow represents the supplied current carrying sperm away, not an answer label. Every condition and demand stays visible; no joined cells, success counts, fewer-opportunities caption or winner marker during the hold.",
+        "motionPurpose": "Show the two supplied pond conditions. Settle into a still, answer-free response interval. Do not keep swimming endlessly while the student reads. Root will assemble a measured quiet gap after the prompt and before the first feedback.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending.",
+        "attempt": {
+          "shared": "Both groups release eggs and sperm into pond water. Same gamete numbers, release time and time able to fertilise.",
+          "groupA": "A: nearby release, weaker current",
+          "groupB": "B: stronger current carries sperm away from eggs",
+          "demands": "Classify fertilisation. Compared with A, can B's sperm reach eggs as easily? Explain. Name one result we cannot predict."
+        }
+      },
+      "responseHold": {
+        "startFrame": 992,
+        "endFrame": 1352
+      },
+      "pilotOnly": false,
+      "revealDelays": {
+        "answerVisibleStart": 1352,
+        "responseHoldStart": 992,
+        "pausePrompt": 992
+      }
+    },
+    {
+      "id": "pond-current-feedback",
+      "type": "concept",
+      "heading": "The joining place stays the same. Encounters change.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1260,
+      "voiceover": {
+        "text": "The fertilisation is external because sperm and egg join in pond water outside the female. For B, the stronger current carries sperm away from the eggs, so sperm has fewer opportunities to reach them in the stated comparison. Equal starting numbers do not remove that extra separation. The unchanged viable lifetime, the time gametes remain able to fertilise, does not remove it either. We cannot calculate an exact number of fertilised eggs from these observations. Nor can we predict how many young will survive and later reproduce. The evidence supports a change in meeting opportunities, rather than a guaranteed offspring count.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/pond-current-feedback.f7c2309497be.mp3",
+        "startFrame": 0,
+        "endFrame": 1200
+      },
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation",
+          "startMs": 160,
+          "endMs": 1040,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " external",
+          "startMs": 1520,
+          "endMs": 1840,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 2080,
+          "endMs": 2320,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 2400,
+          "endMs": 2720,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 3280,
+          "endMs": 3520,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " pond",
+          "startMs": 3760,
+          "endMs": 4000,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 4080,
+          "endMs": 4400,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " outside",
+          "startMs": 4560,
+          "endMs": 5120,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5160,
+          "endMs": 5200,
+          "timestampMs": 5180,
+          "confidence": null
+        },
+        {
+          "text": " female.",
+          "startMs": 5280,
+          "endMs": 5840,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 6560,
+          "endMs": 7280,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " stronger",
+          "startMs": 7520,
+          "endMs": 7920,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " current",
+          "startMs": 8000,
+          "endMs": 8320,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 8400,
+          "endMs": 8720,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 8800,
+          "endMs": 9120,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " away",
+          "startMs": 9280,
+          "endMs": 9680,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 9760,
+          "endMs": 9840,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9920,
+          "endMs": 10000,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " eggs,",
+          "startMs": 10080,
+          "endMs": 10640,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 10880,
+          "endMs": 11200,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " fewer",
+          "startMs": 11520,
+          "endMs": 11760,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " opportunities",
+          "startMs": 11840,
+          "endMs": 12560,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12600,
+          "endMs": 12640,
+          "timestampMs": 12620,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13400,
+          "endMs": 13440,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " stated",
+          "startMs": 13520,
+          "endMs": 13840,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " comparison.",
+          "startMs": 14200,
+          "endMs": 14640,
+          "timestampMs": 14420,
+          "confidence": null
+        },
+        {
+          "text": " Equal",
+          "startMs": 15120,
+          "endMs": 15360,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 15520,
+          "endMs": 15840,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " numbers",
+          "startMs": 15920,
+          "endMs": 16320,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 16640,
+          "endMs": 16800,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " remove",
+          "startMs": 16880,
+          "endMs": 17280,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " extra",
+          "startMs": 17680,
+          "endMs": 17840,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " separation.",
+          "startMs": 17920,
+          "endMs": 18880,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " unchanged",
+          "startMs": 19280,
+          "endMs": 19840,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " viable",
+          "startMs": 19920,
+          "endMs": 20320,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " lifetime,",
+          "startMs": 20400,
+          "endMs": 21280,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21320,
+          "endMs": 21360,
+          "timestampMs": 21340,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 21480,
+          "endMs": 21600,
+          "timestampMs": 21540,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 21680,
+          "endMs": 22080,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " remain",
+          "startMs": 22240,
+          "endMs": 22400,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " able",
+          "startMs": 22480,
+          "endMs": 22640,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22720,
+          "endMs": 22800,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " fertilise,",
+          "startMs": 22880,
+          "endMs": 23760,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 23840,
+          "endMs": 23920,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 24000,
+          "endMs": 24160,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " remove",
+          "startMs": 24240,
+          "endMs": 24480,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 24560,
+          "endMs": 24640,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " either.",
+          "startMs": 24720,
+          "endMs": 25240,
+          "timestampMs": 24980,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 25440,
+          "endMs": 25600,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " cannot",
+          "startMs": 25680,
+          "endMs": 26000,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " calculate",
+          "startMs": 26080,
+          "endMs": 26560,
+          "timestampMs": 26320,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 26640,
+          "endMs": 26720,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " exact",
+          "startMs": 26960,
+          "endMs": 27200,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " number",
+          "startMs": 27280,
+          "endMs": 27520,
+          "timestampMs": 27400,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 27600,
+          "endMs": 27680,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " fertilised",
+          "startMs": 27720,
+          "endMs": 28240,
+          "timestampMs": 27980,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 28320,
+          "endMs": 28640,
+          "timestampMs": 28480,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 28720,
+          "endMs": 28800,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 28880,
+          "endMs": 28960,
+          "timestampMs": 28920,
+          "confidence": null
+        },
+        {
+          "text": " observations.",
+          "startMs": 29040,
+          "endMs": 29920,
+          "timestampMs": 29480,
+          "confidence": null
+        },
+        {
+          "text": " Nor",
+          "startMs": 30400,
+          "endMs": 30560,
+          "timestampMs": 30480,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 30640,
+          "endMs": 30720,
+          "timestampMs": 30680,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 30760,
+          "endMs": 30800,
+          "timestampMs": 30780,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 30880,
+          "endMs": 31200,
+          "timestampMs": 31040,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 31280,
+          "endMs": 31440,
+          "timestampMs": 31360,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 31520,
+          "endMs": 31680,
+          "timestampMs": 31600,
+          "confidence": null
+        },
+        {
+          "text": " young",
+          "startMs": 31760,
+          "endMs": 31920,
+          "timestampMs": 31840,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 32000,
+          "endMs": 32080,
+          "timestampMs": 32040,
+          "confidence": null
+        },
+        {
+          "text": " survive",
+          "startMs": 32159.999999999996,
+          "endMs": 32720,
+          "timestampMs": 32440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 32800,
+          "endMs": 32880,
+          "timestampMs": 32840,
+          "confidence": null
+        },
+        {
+          "text": " later",
+          "startMs": 33040,
+          "endMs": 33200,
+          "timestampMs": 33120,
+          "confidence": null
+        },
+        {
+          "text": " reproduce.",
+          "startMs": 33280,
+          "endMs": 34000,
+          "timestampMs": 33640,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 34400,
+          "endMs": 34480,
+          "timestampMs": 34440,
+          "confidence": null
+        },
+        {
+          "text": " evidence",
+          "startMs": 34560,
+          "endMs": 34880,
+          "timestampMs": 34720,
+          "confidence": null
+        },
+        {
+          "text": " supports",
+          "startMs": 35120,
+          "endMs": 35360,
+          "timestampMs": 35240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 35440,
+          "endMs": 35520,
+          "timestampMs": 35480,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 35600,
+          "endMs": 35920,
+          "timestampMs": 35760,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 36000,
+          "endMs": 36080,
+          "timestampMs": 36040,
+          "confidence": null
+        },
+        {
+          "text": " meeting",
+          "startMs": 36160,
+          "endMs": 36480,
+          "timestampMs": 36320,
+          "confidence": null
+        },
+        {
+          "text": " opportunities,",
+          "startMs": 36640,
+          "endMs": 37520,
+          "timestampMs": 37080,
+          "confidence": null
+        },
+        {
+          "text": " rather",
+          "startMs": 37600,
+          "endMs": 37920,
+          "timestampMs": 37760,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 38000,
+          "endMs": 38160,
+          "timestampMs": 38080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 38200,
+          "endMs": 38240,
+          "timestampMs": 38220,
+          "confidence": null
+        },
+        {
+          "text": " guaranteed",
+          "startMs": 38320,
+          "endMs": 38880,
+          "timestampMs": 38600,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 39040,
+          "endMs": 39440,
+          "timestampMs": 39240,
+          "confidence": null
+        },
+        {
+          "text": " count.",
+          "startMs": 39520,
+          "endMs": 40000,
+          "timestampMs": 39760,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Joining outside the female: external fertilisation.",
+            "view": "feedback-location",
+            "spokenCue": "The fertilisation is external"
+          },
+          {
+            "at": 192,
+            "line": "B gives sperm fewer opportunities to reach eggs.",
+            "view": "feedback-meeting",
+            "spokenCue": "For B, the stronger current"
+          },
+          {
+            "at": 454,
+            "line": "Equal numbers and viable lifetime do not remove separation.",
+            "view": "feedback-meeting",
+            "spokenCue": "Equal starting numbers do not remove"
+          },
+          {
+            "at": 764,
+            "line": "Exact fertilisation and later survival counts are unknown.",
+            "view": "feedback-unknown",
+            "spokenCue": "We cannot calculate an exact number"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Keep the complete two-group stimulus, condition labels and all three demands. Add only one current causal phrase next to the relevant located pond inset. The actual spawn stays unchanged, with no success/failure rings or survival percentage.",
+        "motionPurpose": "Focus the explanation on the common location, then on the sperm separation in B, then the unknown count. Clear the preceding phrase when the next reasoning step appears. Do not alter the response evidence during feedback.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "heading": "Classify the joining place, then explain its conditions.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 768,
+      "voiceover": {
+        "text": "We used two animal examples to locate fertilisation and explain a relevant advantage. Common frogs join gametes outside in water. Our hen joins them inside before shell formation and laying. Different routes still depend on suitable conditions. Next, we'll follow how a flower produces a seed. Detailed mammalian reproduction comes later.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/handoff.10cbd959a476.mp3",
+        "startFrame": 0,
+        "endFrame": 708
+      },
+      "captions": [
+        {
+          "text": "We",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " used",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 640,
+          "endMs": 800,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " animal",
+          "startMs": 960,
+          "endMs": 1280,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " examples",
+          "startMs": 1360,
+          "endMs": 1920,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " locate",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " fertilisation",
+          "startMs": 2560,
+          "endMs": 3520,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 3760,
+          "endMs": 4160,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " relevant",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " advantage.",
+          "startMs": 4800,
+          "endMs": 5800,
+          "timestampMs": 5300,
+          "confidence": null
+        },
+        {
+          "text": " Common",
+          "startMs": 6080,
+          "endMs": 6320,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " frogs",
+          "startMs": 6480,
+          "endMs": 6880,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 7200,
+          "endMs": 7680,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " outside",
+          "startMs": 8000,
+          "endMs": 8320,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8400,
+          "endMs": 8560,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 8640,
+          "endMs": 9120,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " Our",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " hen",
+          "startMs": 9840,
+          "endMs": 10160,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " joins",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 10800,
+          "endMs": 11360,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 11440,
+          "endMs": 11760,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " shell",
+          "startMs": 11840,
+          "endMs": 12080,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " formation",
+          "startMs": 12160,
+          "endMs": 12640,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " laying.",
+          "startMs": 12880,
+          "endMs": 13360,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " Different",
+          "startMs": 13920,
+          "endMs": 14160,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " routes",
+          "startMs": 14240,
+          "endMs": 14640,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " depend",
+          "startMs": 15120,
+          "endMs": 15520,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " suitable",
+          "startMs": 15760,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " conditions.",
+          "startMs": 16160,
+          "endMs": 16880,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 17520,
+          "endMs": 18000,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 18080,
+          "endMs": 18240,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 18400,
+          "endMs": 18560,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18800,
+          "endMs": 18880,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " flower",
+          "startMs": 18960,
+          "endMs": 19360,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " produces",
+          "startMs": 19440,
+          "endMs": 19840,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19920,
+          "endMs": 20000,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " seed.",
+          "startMs": 20080,
+          "endMs": 20560,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " Detailed",
+          "startMs": 21040,
+          "endMs": 21440,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " mammalian",
+          "startMs": 21480,
+          "endMs": 22000,
+          "timestampMs": 21740,
+          "confidence": null
+        },
+        {
+          "text": " reproduction",
+          "startMs": 22080,
+          "endMs": 22640,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 22800,
+          "endMs": 23040,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " later.",
+          "startMs": 23240,
+          "endMs": 23600,
+          "timestampMs": 23420,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Frog: outside. Hen: inside before laying.",
+            "view": "comparison",
+            "spokenCue": "We used two animal examples"
+          },
+          {
+            "at": 526,
+            "line": "Next: follow how a flower produces a seed.",
+            "view": "comparison",
+            "spokenCue": "Next, we'll follow"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Return to real frog-pond and hen-nest images with small location anchors that have now been explained. Keep the familiar cases stable rather than adding other animals or chromosome models.",
+        "motionPurpose": "Deliberate closing comparison. The next-question line replaces the current conclusion, rather than building a large summary board.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 914,
+      "voiceover": {
+        "text": "If you'd like a short set of notes, copy these now, or pause for longer.",
+        "audioFile": "public/audio/Biology-Y12-M5-B2-teaching-reset-2026-10-11-take01/key-notes.501a058074d5.mp3",
+        "startFrame": 0,
+        "endFrame": 140
+      },
+      "captions": [
+        {
+          "text": "If",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 213,
+          "endMs": 320,
+          "timestampMs": 266.5,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 400,
+          "endMs": 480,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " short",
+          "startMs": 760,
+          "endMs": 880,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 960,
+          "endMs": 1120,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1160,
+          "endMs": 1200,
+          "timestampMs": 1180,
+          "confidence": null
+        },
+        {
+          "text": " notes,",
+          "startMs": 1280,
+          "endMs": 1920,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 2360,
+          "endMs": 2480,
+          "timestampMs": 2420,
+          "confidence": null
+        },
+        {
+          "text": " now,",
+          "startMs": 2560,
+          "endMs": 3120,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 3240,
+          "endMs": 3360,
+          "timestampMs": 3300,
+          "confidence": null
+        },
+        {
+          "text": " pause",
+          "startMs": 3600,
+          "endMs": 3840,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 3920,
+          "endMs": 4000,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " longer.",
+          "startMs": 4080,
+          "endMs": 4640,
+          "timestampMs": 4360,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Copy these notes now, or pause for longer.",
+            "view": "notes",
+            "spokenCue": "If you'd like a short set of notes"
+          }
+        ],
+        "visualDecision": "none",
+        "physicalVisual": "A quiet optional copy board after the physical explanations. It does not replace an organism diagram or introduce new narrated content.",
+        "motionPurpose": "Stable notes through the quiet hold. No swimming, reproductive-cell animation or new sequential reveal.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending.",
+        "quietHoldStartFrame": 152
+      },
+      "points": [
+        "Fertilisation joins sperm and egg. External: outside the female. Internal: inside.",
+        "Common-frog example: water limits drying; nearby release at the same time supports encounters.",
+        "Hen: join, shell, lay. An egg laid outside can already have been fertilised inside."
+      ],
+      "pilotOnly": false
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

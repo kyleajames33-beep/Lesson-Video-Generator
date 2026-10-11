@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/teaching-reset/measured/lesson.json",
+    "lessonSha256": "e54be811f6295f9aa2e3834d8e8282e740ff934394a5fd4e9be720a3f6acf8d1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1/C2 equal rates and amount versus rate; concentration meaning; reaction particles and energy.",
+    "startsWith": "Matching closed product-forming mixtures, one containing a catalyst.",
+    "stopsAfter": "Explain alternative pathway barriers in both directions, faster approach and unchanged equilibrium composition; distinguish earlier and final product.",
+    "nextLesson": "chem-m5-c05 equilibrium expressions; existing practical support p01 remains separate."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Does faster production mean more at equilibrium?",
+    "causalExplanation": "Lower alternative pathway barriers let reaction proceed faster in both directions; matching mixture reaches the same final composition.",
+    "conversationalApproach": "Plain meaning before terms, current physical change before labels; separate prompt-only and feedback takes.",
+    "openingDecision": "Concrete comparison, explained before independent new-case thinking.",
+    "understandingCheck": "Complete supplied conditions and both demands, question-only narration followed by 15-second hold; separate answer narration.",
+    "curriculumScope": "Owns catalyst mechanism removed from C2. No K aside, universal equal acceleration factor, or practical coverage claim.",
+    "notes": "Separate 20-second quiet optional book notes; source and practical coverage remain pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "c4b-opening",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4CatalystTeachingReset.tsx",
+      "teachingReason": "Preserve stone-profile/graph vocabulary; show both energy barriers and matching final level.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Catalyst\",\"mode\":\"graph\",\"drawAt\":243,\"condition\":\"Matching closed, product-forming mixtures; fixed temperature and volume\"}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4b-path",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4CatalystTeachingReset.tsx",
+      "teachingReason": "Preserve stone-profile/graph vocabulary; show both energy barriers and matching final level.",
+      "narrationCue": "[{\"path\":\"metadata.lowerAt\",\"phrase\":\"A catalyst provides\",\"unit\":\"frames\"},{\"path\":\"metadata.reverseAt\",\"phrase\":\"Now measure\",\"unit\":\"frames\"}]",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4b-approach",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4CatalystTeachingReset.tsx",
+      "teachingReason": "Preserve stone-profile/graph vocabulary; show both energy barriers and matching final level.",
+      "narrationCue": "[{\"path\":\"metadata.drawAt\",\"phrase\":\"The catalysed mixture\",\"unit\":\"frames\"},{\"path\":\"metadata.earlyAt\",\"phrase\":\"Look at the same earlier time\",\"unit\":\"frames\"}]",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4b-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4CatalystTeachingReset.tsx",
+      "teachingReason": "Preserve stone-profile/graph vocabulary; show both energy barriers and matching final level.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Catalyst\",\"mode\":\"balance\",\"condition\":\"Closed reacting mixture already at equilibrium; temperature held fixed\"}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4b-transfer-attempt",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "narrationCue": "{\"heading\":0,\"responseHoldStart\":810,\"pausePrompt\":750,\"answerVisibleStart\":1260,\"stepAts\":[]}",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "15-second thinking hold after prompt-only audio."
+    },
+    {
+      "sceneId": "c4b-transfer-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "narrationCue": "[{\"path\":\"revealDelays.stepAts.0\",\"phrase\":\"At an earlier time\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.0.lineAts.0\",\"phrase\":\"At an earlier time\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.0.lineAts.1\",\"phrase\":\"because it is approaching equilibrium faster\",\"unit\":\"frames\"},{\"path\":\"revealDelays.stepAts.1\",\"phrase\":\"After both reach equilibrium\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.focusedContext.1.at\",\"phrase\":\"After both reach equilibrium\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.1.lineAts.0\",\"phrase\":\"After both reach equilibrium\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.1.lineAts.1\",\"phrase\":\"The catalyst speeds the approach\",\"unit\":\"frames\"}]",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4b-anchor",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "Hold current cause/reference through its narration.",
+      "narrationCue": "At the spoken memory anchor, retain the explained speed versus destination contrast. This quiet summary introduces no new process motion."
+    },
+    {
+      "sceneId": "c4b-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "narrationCue": "{\"heading\":0,\"takeawayAts\":[0,0,0]}",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "20-second quiet copying/pause opportunity."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/c4_review_final",
+    "evidence": {
+      "path": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/teaching-reset/source-review.json",
+      "sha256": "ea1fa5b3df391dcda18927f24893df3b886db7c9888c54f71d637960dafe5d00"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/c4_review_final",
+    "evidence": {
+      "path": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/teaching-reset/source-review.json",
+      "sha256": "ea1fa5b3df391dcda18927f24893df3b886db7c9888c54f71d637960dafe5d00"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

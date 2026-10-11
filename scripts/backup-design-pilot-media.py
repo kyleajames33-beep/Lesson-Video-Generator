@@ -1,4 +1,4 @@
-"""Additive backup for the 11 October silent design pilots. Never clobbers media."""
+"""Additive backup for selected 11 October design and teaching media. Never clobbers media."""
 import argparse, ast, hashlib, json, re, subprocess, zipfile
 from pathlib import Path
 
@@ -22,7 +22,7 @@ def sha(p):
 def freeze():
     if ARCHIVE.exists() or RECORD.exists():
         raise RuntimeError('Existing archive or record preserved.')
-    files = {ROOT / 'public/assets/biology' / name for name in ASSETS}
+    files = {ROOT / name if name.startswith('public/') else ROOT / 'public/assets/biology' / name for name in ASSETS}
     for rel in ROOTS:
         base = ROOT / rel
         if not (base / 'index.html').is_file():
@@ -37,7 +37,7 @@ def freeze():
     members = []
     for p in files:
         rel = p.relative_to(ROOT).as_posix()
-        if not rel.startswith(('out/prototypes/', 'public/assets/biology/')) or p.name.startswith('.env'):
+        if not rel.startswith(('out/prototypes/', 'public/assets/biology/', 'public/audio/', 'public/fonts/')) or p.name.startswith('.env'):
             raise RuntimeError('Unexpected selected member: ' + rel)
         data = p.read_bytes()
         if any(s in data for s in secrets):
@@ -59,7 +59,10 @@ def freeze():
             raise RuntimeError('Archive verification failed.')
     digest = sha(ARCHIVE)
     ARCHIVE.with_suffix('.zip.sha256').write_text(digest + '  ' + ARCHIVE.name + '\n')
-    record = {'status': 'local-verified', 'archive': ARCHIVE.relative_to(ROOT).as_posix(), 'sha256': digest, 'bytes': ARCHIVE.stat().st_size, 'files': len(members), 'stateArchiveSha256': state_hash, 'roots': ROOTS, 'allMemberCRCsAndSHAsPass': True, 'privateSecretCheckPass': True, 'scope': ('New silent C1/B1 teaching drafts, additive C1 layout with earlier speech, review desk, native stills and a short silent C1 motion checkpoint. Sources use Git. New narration and release pending.' if args.pack == 'starters' else 'Three current silent design pages, mutable review desk, native stills, fonts and three botanical assets. Sources use Git. No voiced or release approval.')}
+    scope = ('Selected full teaching resets with fresh speech/alignment, measured scenes, actual production Players, captions, native samples and artwork. Sources use Git. Exact full voiced review, human listening and release remain pending.' if args.pack == 'teaching' else 'New silent C1/B1 teaching drafts, additive C1 layout with earlier speech, review desk, native stills and a short silent C1 motion checkpoint. Sources use Git. New narration and release pending.' if args.pack == 'starters' else 'Three current silent design pages, mutable review desk, native stills, fonts and three botanical assets. Sources use Git. No voiced or release approval.')
+    if args.pack == 'teaching':
+        scope = selection.get('scope', scope)
+    record = {'status': 'local-verified', 'archive': ARCHIVE.relative_to(ROOT).as_posix(), 'sha256': digest, 'bytes': ARCHIVE.stat().st_size, 'files': len(members), 'stateArchiveSha256': state_hash, 'roots': ROOTS, 'allMemberCRCsAndSHAsPass': True, 'privateSecretCheckPass': True, 'scope': scope}
     RECORD.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: record[k] for k in ['status', 'files', 'bytes', 'sha256']}))
 
@@ -95,9 +98,25 @@ def upload():
 
 parser = argparse.ArgumentParser()
 parser.add_argument('command', choices=['freeze', 'upload'])
-parser.add_argument('--pack', choices=['design', 'starters'], default='design')
+parser.add_argument('--pack', choices=['design', 'starters', 'teaching'], default='design')
+parser.add_argument('--selection')
 parser.add_argument('--starter-revision', default='v6')
 args = parser.parse_args()
+if args.pack == 'teaching':
+    if not args.selection:
+        raise RuntimeError('Teaching backup requires an explicit selection JSON.')
+    selection = json.loads((ROOT / args.selection).read_text())
+    revision = selection['revision']
+    if not re.fullmatch(r'v\d+', revision):
+        raise RuntimeError('Use a numbered teaching backup revision.')
+    RECORD = ROOT / f'docs/production/module5-starters-2026-10-10/teaching-batch-media-backup-{revision}.json'
+    ARCHIVE = ROOT / f'out/archives/module5-teaching-batch-media-2026-10-11-{revision}.zip'
+    ROOTS = selection['roots']
+    ASSETS = selection['assets']
+    if any(not value.startswith('out/prototypes/') or '..' in Path(value).parts for value in ROOTS):
+        raise RuntimeError('Unexpected teaching page selection.')
+    if any(not value.startswith(('public/audio/', 'public/assets/biology/', 'public/fonts/')) or '..' in Path(value).parts for value in ASSETS):
+        raise RuntimeError('Unexpected teaching media selection.')
 if args.pack == 'starters':
     if not re.fullmatch(r'v\d+', args.starter_revision):
         raise RuntimeError('Use a numbered starter revision.')

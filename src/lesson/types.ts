@@ -23,6 +23,8 @@ export type SceneBase = {
     | 'endCard'
     | 'mnemonic';
   durationInFrames: number;
+  /** Separate feedback scenes do not invite another attempt. */
+  responseRole?: 'attempt' | 'feedback';
   /** Selected reusable teaching boards, with cues resolved from narration. */
   teachingLayout?: 'molarMassDefinition' | 'molarMassBalance' | 'molarMassFormula' | 'molarMassCarbon' | 'molarMassBrackets' | 'molarMassChlorine';
   caption: string;
@@ -503,6 +505,10 @@ export type SceneData =
   | MnemonicScene;
 
 export type LessonData = {
+  /** Explicit opt-in for independently prepared mechanism scenes. */
+  teachingRenderer?: 'c1Bottle' | 'b1Continuity' | 'b2Animals' | 'mouldSpores' | 'plantSeed' | 'plantRunner';
+  /** Quiet notes kept separate from new narrated reasoning. */
+  teachingNotes?: string[];
   title: string;
   subtitle: string;
   subject: string;

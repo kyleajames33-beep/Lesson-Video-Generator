@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "reviewer": "/root/c4_review_final",
+  "scope": "Independent source, exact alignment and sampled actual native visual review. Not a continuous voiced watch or human listening review.",
+  "result": "pass-no-material-blockers-in-inspected-scope",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/chemistry-catalysts/teaching-reset/measured/lesson.json",
+    "sha256": "e54be811f6295f9aa2e3834d8e8282e740ff934394a5fd4e9be720a3f6acf8d1",
+    "snapshotSourceSha256": "e54be811f6295f9aa2e3834d8e8282e740ff934394a5fd4e9be720a3f6acf8d1"
+  },
+  "renderer": {
+    "path": "src/prototypes/C4CatalystTeachingReset.tsx",
+    "sha256": "1d48ebab3f50039bc2c882dd07da50ea979e9f72d183db194aeab8afa1e2b86d"
+  },
+  "page": {
+    "directory": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1",
+    "inputsPath": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1/inputs.json",
+    "inputsSha256": "4a4b93da339fc56153c8364bd773fdb850ebe52626c1e3404e09c584a0814fc1",
+    "reviewJsSha256": "77c438f1251f7b97b5765e816ae7d968c4b7d1f36818de1b4571ae4f941c5c62",
+    "pageSha256": "9dd587f170a81b35050e2efb3f2722295b69c4658bc0eb723fb295179bcf3b04"
+  },
+  "inspectedFrames": [
+    {
+      "path": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1/native-c4b-path.png",
+      "sha256": "f92b9db5c5fa16701e3798fd08fbfbaeea2609f7caaeb781a683a4d9d4a45c0a"
+    },
+    {
+      "path": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1/native-c4b-approach.png",
+      "sha256": "e45d58dd1fa6e7ceb953e250233d140b985efaf5632eacd3f02ed6d35c34af8b"
+    },
+    {
+      "path": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1/native-c4b-transfer-attempt.png",
+      "sha256": "c393d30f67f7615927c7c6b04e0bc95f85c3a934c869ce8cdf7b6e3350529b79"
+    },
+    {
+      "path": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1/native-c4b-transfer-feedback.png",
+      "sha256": "89b14d51dad906ba39d9e0391b0a1de81212a8fee126af1d9ae8eb5560108e3e"
+    },
+    {
+      "path": "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1/native-c4b-notes.png",
+      "sha256": "e28f11a1f3cfd5a8d66c16a4544d214062d345b34671c27541dc40f91705c18c"
+    }
+  ],
+  "cueValidation": {
+    "count": 11,
+    "method": "Exact phrase occurs once in selected alignment; ceil(character start seconds * 30) equals registered cue frame.",
+    "selectedCues": [
+      {
+        "sceneId": "c4b-opening",
+        "cues": [],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4b-path",
+        "cues": [
+          {
+            "key": "metadata.lowerAt",
+            "phrase": "A catalyst provides",
+            "frame": 468
+          },
+          {
+            "key": "metadata.reverseAt",
+            "phrase": "Now measure",
+            "frame": 917
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4b-approach",
+        "cues": [
+          {
+            "key": "metadata.drawAt",
+            "phrase": "The catalysed mixture",
+            "frame": 185
+          },
+          {
+            "key": "metadata.earlyAt",
+            "phrase": "Look at the same earlier time",
+            "frame": 353
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4b-equilibrium",
+        "cues": [],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4b-transfer-attempt",
+        "cues": [],
+        "responseHold": {
+          "startFrame": 692,
+          "endFrame": 1142
+        }
+      },
+      {
+        "sceneId": "c4b-transfer-feedback",
+        "cues": [
+          {
+            "key": "revealDelays.stepAts.0",
+            "phrase": "At an earlier time",
+            "frame": 0
+          },
+          {
+            "key": "calculationPresentation.stages.0.lineAts.0",
+            "phrase": "At an earlier time",
+            "frame": 0
+          },
+          {
+            "key": "calculationPresentation.stages.0.lineAts.1",
+            "phrase": "because it is approaching equilibrium faster",
+            "frame": 124
+          },
+          {
+            "key": "revealDelays.stepAts.1",
+            "phrase": "After both reach equilibrium",
+            "frame": 276
+          },
+          {
+            "key": "calculationPresentation.focusedContext.1.at",
+            "phrase": "After both reach equilibrium",
+            "frame": 276
+          },
+          {
+            "key": "calculationPresentation.stages.1.lineAts.0",
+            "phrase": "After both reach equilibrium",
+            "frame": 276
+          },
+          {
+            "key": "calculationPresentation.stages.1.lineAts.1",
+            "phrase": "The catalyst speeds the approach",
+            "frame": 444
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4b-anchor",
+        "cues": [],
+        "responseHold": null
+      }
+    ]
+  },
+  "learnerAndScienceFindings": "Both activation barriers are lowered while reaction endpoints remain fixed. Matching product-forming mixtures reach the same equilibrium composition sooner. Complete conditions and demands remain visible during the protected hold.",
+  "continuousVoicedReview": "pending-not-performed",
+  "humanListening": "pending-not-performed",
+  "releaseApproval": "not-granted"
+}

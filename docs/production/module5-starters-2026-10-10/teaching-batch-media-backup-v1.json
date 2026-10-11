@@ -1,0 +1,66 @@
+{
+  "status": "published-verified",
+  "archive": "out/archives/module5-teaching-batch-media-2026-10-11-v1.zip",
+  "sha256": "2e5358dd0272d8170d0248831110ac931e76dd280d428d07adbd255a652ba31f",
+  "bytes": 296144549,
+  "files": 883,
+  "stateArchiveSha256": "c2eac9023566c0dd42e8b341dd8965963733a9fefdbfa22baf344f7c43eed7ca",
+  "roots": [
+    "out/prototypes/c1-production-voiced-reset-2026-10-11-v2",
+    "out/prototypes/c2-production-voiced-reset-2026-10-11-v4",
+    "out/prototypes/c3-production-voiced-reset-2026-10-11-v2",
+    "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3",
+    "out/prototypes/c4b-production-voiced-reset-2026-10-11-v1",
+    "out/prototypes/b1-production-voiced-reset-2026-10-11-v3",
+    "out/prototypes/b2-production-voiced-reset-2026-10-11-v2",
+    "out/prototypes/flower-production-voiced-reset-2026-10-11-v1",
+    "out/prototypes/runner-production-voiced-reset-2026-10-11-v1",
+    "out/prototypes/mould-production-voiced-reset-2026-10-11-v1",
+    "out/prototypes/module5-morning-review-2026-10-10",
+    "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4",
+    "out/prototypes/plant-flower-teaching-reset-2026-10-11-v5",
+    "out/prototypes/plant-runner-teaching-reset-2026-10-11-v3",
+    "out/prototypes/plant-runner-teaching-reset-2026-10-11-v4"
+  ],
+  "allMemberCRCsAndSHAsPass": true,
+  "privateSecretCheckPass": true,
+  "scope": "Selected full teaching resets with fresh speech/alignment, measured scenes, actual production Players, captions, native samples and artwork. Sources use Git. Exact full voiced review, human listening and release remain pending. Both additive archives were actually restored in an isolated workspace and every non-skipped member hash checked.",
+  "repository": "kyleajames33-beep/Lesson-Video-Generator",
+  "tag": "workspace-media-2026-10-09",
+  "assets": [
+    {
+      "id": 629583554,
+      "name": "module5-teaching-batch-media-2026-10-11-v1.zip",
+      "size": 296144549,
+      "digest": "sha256:2e5358dd0272d8170d0248831110ac931e76dd280d428d07adbd255a652ba31f",
+      "browser_download_url": "https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/download/workspace-media-2026-10-09/module5-teaching-batch-media-2026-10-11-v1.zip"
+    },
+    {
+      "id": 629583556,
+      "name": "module5-teaching-batch-media-2026-10-11-v1.zip.sha256",
+      "size": 114,
+      "digest": "sha256:5aa1ea971197309ba1b71c8e5870456880b852a16a32c158d4968fbf23a8172b",
+      "browser_download_url": "https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/download/workspace-media-2026-10-09/module5-teaching-batch-media-2026-10-11-v1.zip.sha256"
+    }
+  ],
+  "uploadedStateSizeAndDigestsMatch": true,
+  "isolatedRestoration": {
+    "status": "pass",
+    "scope": "Actual isolated restoration of both fresh media archives, every non-skipped member SHA checked; conflicting local mutable desk preserved. No native bundles or continuous playback claimed.",
+    "helperSha256": "f5c781a4b3e62c90016874bd731f4d85758a6ce6594bf39b04d12f6601ed2054",
+    "results": [
+      {
+        "revision": "v1",
+        "restoredMemberHashChecks": 881,
+        "pass": true
+      },
+      {
+        "revision": "v2",
+        "restoredMemberHashChecks": 205,
+        "pass": true
+      }
+    ],
+    "mutablePagePreserved": true,
+    "sandbox": "C:\\lesson-video-generator\\out\\checks\\teaching-restore-proof-2026-10-11-v1"
+  }
+}

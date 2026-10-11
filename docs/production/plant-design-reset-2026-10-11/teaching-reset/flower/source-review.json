@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-11",
+  "reviewer": "independent measured_review_final agent",
+  "lessonSha256": "15dfde72aa913447f329e91a11206ddb8caec924a8e12d295d58a8303f462227",
+  "scope": "Full unrecorded source and production brief, renderer mechanism, and final polished native still samples listed below. No continuous playback, measured voice or human listening.",
+  "scienceReview": {
+    "status": "pass within selected embryo-forming route",
+    "findings": [],
+    "assumptions": [
+      "Generic flowering-plant anatomy, not strawberry flower anatomy.",
+      "Pollen is distinct from sperm. Compatible pollen grows a tube that delivers nonmotile sperm near the egg.",
+      "One sperm joins the egg and the fertilised egg develops into an embryo. Ovule develops into seed. The other fertilisation and endosperm are explicitly deferred in author notes; this lesson does not claim a complete angiosperm mechanism.",
+      "The stopped-tube task supplies one ovule and excludes every alternative tube to that ovule. It asks about the selected embryo-forming route, not all possible plant reproduction."
+    ]
+  },
+  "studentLearningReview": {
+    "status": "pass at source stage",
+    "entryKnowledge": "Plants have cells; prior lessons introduced reproduction and sperm/egg joining. No meiosis or chromosome knowledge is needed.",
+    "mainQuestion": "Why does pollen arrival need a route to the egg before an embryo can form?",
+    "trace": "Egg inside ovule inside ovary; pollen reaches stigma; tube bridges the physical distance; sperm travels inside; sperm joins egg; fertilised egg develops into embryo; ovule becomes seed. The stopped-tube case tests the broken link.",
+    "retainedSuccesses": [
+      "Necessary flower terms have plain meanings and visible locations.",
+      "Physical separation earns the pollen-tube explanation.",
+      "Embryo is distinguished from the whole seed.",
+      "Feedback explains why arrival alone is insufficient.",
+      "Notes occur after explanation with a quiet copy hold."
+    ],
+    "findings": [],
+    "memoryAid": {
+      "text": "Arrival is not joining.",
+      "status": "scientifically sound within this selected flowering-plant route",
+      "reason": "After explanation, it recalls stigma arrival and egg joining as separate physical landmarks and helps solve a stopped-tube case. It does not assert every pollen arrival succeeds."
+    },
+    "resolvedFindings": [
+      {
+        "id": "flower-explain-demand",
+        "priority": "required before recording-stage approval",
+        "sceneId": "flower-attempt",
+        "problem": "Spoken task says Explain whether the embryo-forming route can continue, but the displayed beat asks only Can this embryo-forming route continue? The explanation demand vanishes during silence.",
+        "repair": "Replace the third displayed question with Explain whether this embryo-forming route can continue. Preserve the other questions and complete conditions.",
+        "understandingEnabled": "Student must justify the broken causal link rather than give only yes/no answers.",
+        "status": "resolved",
+        "resolution": "Displayed third demand now says Explain whether this egg can develop into an embryo. It retains causal justification, is equivalent within the selected route, and fits in native attempt910."
+      }
+    ]
+  },
+  "references": [
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+      "checked": "Publisher textbook full page: pollination, compatibility, tube route, sperm joining and embryo/seed distinction."
+    },
+    {
+      "url": "https://www.nature.com/articles/ncomms4129",
+      "checked": "Primary research search abstract corroborates pollen-tube rupture releases sperm for fertilisation; full page blocked by publisher redirect."
+    }
+  ],
+  "emDashCheck": "none in selected source",
+  "remainingGates": [
+    "Measured exact voiced preview learning review",
+    "Human listening",
+    "Current teaching brief and release package gates"
+  ],
+  "nativeStillReview": {
+    "status": "pass within sampled static scope",
+    "page": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4",
+    "observations": [
+      "Repaired attempt retains all three demands and supplied conditions, with stopped tube and unfertilised egg and no answer labels.",
+      "Final petal, anther and ovule detail preserves locations and tube mechanism.",
+      "Joining, later embryo and seed retain clear labelled stages; embryo is visibly inside covering.",
+      "Notes fit as a separate stable board."
+    ],
+    "samples": [
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-attempt-910.png",
+        "sha256": "c2965b33adfe78a1842052bd51939dbca91a1c3c0abd90df92ed35a00d1d4028"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-tube-710.png",
+        "sha256": "557df08e97db7f2c270869c86f3739a6320bb69cea2532577431a5356f2bc6e7"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-seed-400.png",
+        "sha256": "f8ce56e2adb8b78b9e1d6c751a9e62681b6af4cb7ee3fa5dcf1479f45c706cb9"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-key-notes-400.png",
+        "sha256": "abb8b71c8a44b502197bb171269c98691ad1335613f53eb56e729dff8e7a5a09"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-egg-400.png",
+        "sha256": "36d06a41a722fd903ae3fc66ed97775deea94322d00f205d1dfb1a08d56aecfd"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-pollination-60.png",
+        "sha256": "879cedc3ce0493f6fb77837c615e1977ef3d392c07979026d1c51d5f002f2528"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-join-60.png",
+        "sha256": "b1e71ab62379ec33498eacc92fccb69e1f5a1969b6a66bde933c674669d5965e"
+      },
+      {
+        "path": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v4/native-flower-join-610.png",
+        "sha256": "50d9e413bff3bc2a6f84f3fd1d2b2e0381898c93913294e241a5171d8fe0fd98"
+      }
+    ],
+    "limitations": [
+      "Silent sample timings are provisional.",
+      "Static samples do not establish motion continuity, voiced timing, caption fit for a future recording or human listening."
+    ]
+  }
+}

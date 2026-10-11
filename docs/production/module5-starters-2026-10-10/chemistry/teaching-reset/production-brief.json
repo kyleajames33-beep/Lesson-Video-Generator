@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "source": {
     "lessonPath": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/lesson.json",
-    "lessonSha256": "74a585a8142dab43bf3d24e3f86af1b2e7b709783e0e719656aa9e70d2b5a07c"
+    "lessonSha256": "15b7648ff1f8189124e20a5b643e493dd5c55c009609682dd7974a626442fa5d"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -120,18 +120,20 @@
     }
   ],
   "scriptReview": {
-    "status": "pending",
-    "reviewer": "",
-    "evidence": null
+    "status": "pass",
+    "reviewer": "/root/student_learning_reviewer_sol",
+    "evidence": {
+      "path": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/source-review.json",
+      "sha256": "72222f0a8a820c2cef641dcf24aad834ef23dfcc4318243a66f729d480bcd9b0"
+    }
   },
   "studentLearningReview": {
     "status": "pass",
-    "reviewer": "/root/student_learning_reviewer_sol (gpt-6.1-sol)",
+    "reviewer": "/root/student_learning_reviewer_sol",
     "evidence": {
-      "path": "docs/production/overnight-module5-2026-10-10/early-audit/learning-quality-audit-2026-10-11.json",
-      "sha256": "86b2f2182f0fada283b33171670bee233569c9b5aaf4b92cad7a7b719b70eb2a"
-    },
-    "scope": "New unvoiced source and sampled native preview. Science/script and exact voiced approvals separate."
+      "path": "docs/production/module5-starters-2026-10-10/chemistry/teaching-reset/source-review.json",
+      "sha256": "72222f0a8a820c2cef641dcf24aad834ef23dfcc4318243a66f729d480bcd9b0"
+    }
   },
   "voicedPreview": {
     "status": "pending",
@@ -151,5 +153,5 @@
       "evidence": null
     }
   },
-  "limitation": "Actual isolated silent draft. Production LessonVideo dispatch, independent science, exact voice/caption/motion and human listening remain pending. B1 also requires actual flower and seedling visual sequence. Do not attach parent audio."
+  "limitation": "Independent source science and beginner teaching pass; supported production renderer integrated. Fresh measured narration/cues, exact voiced preview, captions and human listening remain pending."
 }

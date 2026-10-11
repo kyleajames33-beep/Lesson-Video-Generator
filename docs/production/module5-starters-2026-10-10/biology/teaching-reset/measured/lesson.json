@@ -1,0 +1,6145 @@
+{
+  "title": "Reproduction: copying and variation",
+  "subtitle": "How new plants continue a species",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusDotPoints": [
+    "explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "lessonIntent": "Choose a reproductive starting group for a stated purpose and explain the choice using inherited DNA, copying or different inherited combinations, then bound the prediction.",
+  "inquiryQuestion": "How can reproduction keep a species going, while either copying a useful plant or producing inherited variation?",
+  "examSkill": "Apply copying versus inherited variation to a new plant trial, then qualify the prediction.",
+  "teachingReset": {
+    "proposalPath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/teaching-proposal.json",
+    "proposalSha256": "95a18e3e4cc871188373b169a3fcc452330cb531d21ac513d16680360f2f022e",
+    "parentLessonPath": "docs/production/module5-starters-2026-10-10/biology/measured-v2/lesson.json",
+    "parentLessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
+    "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending.",
+    "visualLimits": [
+      "Runner art shows established plant relationships, not literal animated growth.",
+      "Generated botanical flower, seed-bearing achene cutaway and seedling art supply organism context. The simplified cutaway is not a detailed strawberry seed anatomy lesson. All magnifications and growth stages are not to scale.",
+      "Repeated seedling art identifies the organism. Matching symbolic DNA marks trace different inherited selections through each joining to a later offspring; they do not demonstrate visible traits, chromosome counts or guaranteed performance."
+    ],
+    "releaseStatus": "Fresh measured narration assembled. Exact voiced review and human listening pending. Not released.",
+    "artworkProvenance": {
+      "toolMode": "Built-in image_gen, fresh generation",
+      "flower": {
+        "path": "public/assets/biology/strawberry-flower-botanical-b1-v1.png",
+        "prompt": "Use case: scientific-educational. Create one isolated botanical teaching illustration of a strawberry (Fragaria x ananassa) flower, in naturalistic fine ink linework and restrained watercolour washes, dark green, pale yellow, muted earth colours. Pure white background, no typography, arrows, panels or decorative frame. Composition: one large recognisable open strawberry flower shown in a slightly oblique front view, five broad white petals with fine veins, small green pointed sepals visible behind, many golden-yellow anthers arranged in a ring, and a distinct central pale-green slightly conical receptacle densely covered with MANY small separate pistils, each with its own ovary and slender style. Attach a short slender pedicel angled down left and one smaller trifoliate strawberry leaf on a neighbouring short petiole at lower left to establish organism context without obscuring the flower. The flower fills around 80 percent of the image; plenty of clear margin. Botanically accurate strawberry anatomy, NOT one large lily-style central ovary, NOT a single central pistil. Do not depict enlarged egg cells, sperm, pollen grains in transit, insects, fruit, roots or a runner. No realistic photographic texture, no heavy solid graphic outlines, no logos. Intended later overlay will point to one of the numerous pistils and show a magnified cell joining model, so keep the centre clear, crisp and anatomically distinguishable. This is physical organism art rather than a rendered infographic."
+      },
+      "seedling": {
+        "path": "public/assets/biology/strawberry-seedling-botanical-b1-v1.png",
+        "prompt": "Use case: scientific-educational. Create one isolated botanical teaching illustration of a young strawberry plant grown FROM A SEED, in delicate naturalistic ink linework and restrained green watercolour, on pure white background with no labels, arrows, lettering, panels or decorative frame. Side-on teaching view of a small healthy seedling: two low rounded oval cotyledons on a tiny short stem, above them two small serrated trifoliate true leaves with clear strawberry leaflet shapes emerging from the young crown, and a slender branching root system extending below a thin irregular short earth surface line. Keep the complete leaves, crown and all fine roots within image with generous clear margins; plant fills about 80 percent height, centred. Natural scale relationships. This is a newly established young seed-grown strawberry, no connecting horizontal runner or stolon, no mature fruit, flower or bulb. Do not add a giant visible seed at root, pot, face, pedestal or ornamental landscape. Scientifically plausible young plant illustration, no trait comparison claim."
+      },
+      "seed": {
+        "path": "public/assets/biology/strawberry-seed-cutaway-b1-v1.png",
+        "prompt": "Use case: scientific-educational. A single botanical ink-and-watercolour teaching asset on pure white background, with no text, numbers, labels, arrows or frames. Draw ONE greatly magnified strawberry achene, the tiny dry single-seeded fruit normally visible on the outside of a strawberry, shown as a longitudinal opened cutaway. Slender small oval teardrop-shaped achene with muted golden-brown papery outer fruit wall, thin seed coat inside, and a pale cream developing embryo protected inside the seed. The embryo has two small fleshy cotyledons and a short radicle below them; keep structure simplified but botanically plausible for a dicot seed, no bean-sized dark seed or loose pollen grain. Show a removed narrow front window so that the seed and embryo are visibly inside a retaining outer wall, rather than floating outside. Stand alone on white, generous margins, delicate fine botanical hatch lines and gentle watercolour shading. No strawberry fruit flesh, extra seeds, roots emerging out of it, germination sprout, detached parts or magnified cells. It will accompany the sentence 'The developing new plant is inside a seed'; fine structures do not need separate labels. Match naturalistic educational botanical plate style."
+      }
+    },
+    "scientificVisualSources": [
+      {
+        "url": "https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/how-strawberry-plants-grow",
+        "use": "Strawberry crown, roots, runner, flower and daughter relationships."
+      },
+      {
+        "url": "https://www.hort.cornell.edu/expo/proceedings/2012/Berries/Berry%20Plant%20Structure%20Poling.pdf",
+        "use": "Multiple separate pistils of strawberry flower and single seed within each surface achene. No generic single-ovary flower used."
+      }
+    ],
+    "implementationRevision": "v6. Exact unique spokenCue metadata added for measured narration. Joining progress begins at entry to the contiguous visual stage and remains joined when its explanatory text changes. Botanical flower/seed/seedling context, traced distinct DNA selections, caption reserve and local selected-data renderer implemented. Speech text and estimated durations unchanged; v1-v5 proof outputs preserved."
+  },
+  "scenes": [
+    {
+      "id": "grower-hook",
+      "type": "concept",
+      "heading": "Copy a good plant. Then conditions change.",
+      "body": "",
+      "durationInFrames": 696,
+      "voiceover": {
+        "text": "Imagine you've grown a strawberry plant with the fruit you want. You can make new plants from it, so why start again with an uncertain result? Copying sounds useful. Then a new disease reaches the farm. Could those copies share a weakness as well as the fruit characteristics you wanted? To answer that, we need to follow what a new plant inherits.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/grower-hook.905d38aa483b.mp3",
+        "startFrame": 0,
+        "endFrame": 636
+      },
+      "captions": [
+        {
+          "text": "Imagine",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " you've",
+          "startMs": 520,
+          "endMs": 640,
+          "timestampMs": 580,
+          "confidence": null
+        },
+        {
+          "text": " grown",
+          "startMs": 720,
+          "endMs": 880,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 960,
+          "endMs": 1040,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " strawberry",
+          "startMs": 1120,
+          "endMs": 1520,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 1600,
+          "endMs": 1920,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2160,
+          "endMs": 2240,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " fruit",
+          "startMs": 2360,
+          "endMs": 2480,
+          "timestampMs": 2420,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " want.",
+          "startMs": 2720,
+          "endMs": 3440,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " You",
+          "startMs": 3480,
+          "endMs": 3520,
+          "timestampMs": 3500,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 3800,
+          "endMs": 3920,
+          "timestampMs": 3860,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 4240,
+          "endMs": 4560,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 4800,
+          "endMs": 5200,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5280,
+          "endMs": 5680,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 5760,
+          "endMs": 5920,
+          "timestampMs": 5840,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " again",
+          "startMs": 6400,
+          "endMs": 6560,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 6760,
+          "endMs": 6800,
+          "timestampMs": 6780,
+          "confidence": null
+        },
+        {
+          "text": " uncertain",
+          "startMs": 6880,
+          "endMs": 7360,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " result?",
+          "startMs": 7640,
+          "endMs": 8320,
+          "timestampMs": 7980,
+          "confidence": null
+        },
+        {
+          "text": " Copying",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " sounds",
+          "startMs": 8880,
+          "endMs": 9200,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " useful.",
+          "startMs": 9280,
+          "endMs": 10320,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 10560,
+          "endMs": 10800,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10880,
+          "endMs": 11000,
+          "timestampMs": 10940,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " disease",
+          "startMs": 11280,
+          "endMs": 11760,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " reaches",
+          "startMs": 11800,
+          "endMs": 12080,
+          "timestampMs": 11940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " farm.",
+          "startMs": 12440,
+          "endMs": 13120,
+          "timestampMs": 12780,
+          "confidence": null
+        },
+        {
+          "text": " Could",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 13400,
+          "endMs": 13520,
+          "timestampMs": 13460,
+          "confidence": null
+        },
+        {
+          "text": " copies",
+          "startMs": 13600,
+          "endMs": 14000,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 14120,
+          "endMs": 14240,
+          "timestampMs": 14180,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " weakness",
+          "startMs": 14480,
+          "endMs": 15040,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 15120,
+          "endMs": 15280,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " well",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15640,
+          "endMs": 15680,
+          "timestampMs": 15660,
+          "confidence": null
+        },
+        {
+          "text": " fruit",
+          "startMs": 15760,
+          "endMs": 15920,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " characteristics",
+          "startMs": 16000,
+          "endMs": 16720,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 16760,
+          "endMs": 16800,
+          "timestampMs": 16780,
+          "confidence": null
+        },
+        {
+          "text": " wanted?",
+          "startMs": 16880,
+          "endMs": 17760,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 17840,
+          "endMs": 17920,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " answer",
+          "startMs": 18000,
+          "endMs": 18240,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " that,",
+          "startMs": 18440,
+          "endMs": 18667,
+          "timestampMs": 18553.5,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 18693,
+          "endMs": 18720,
+          "timestampMs": 18706.5,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 18800,
+          "endMs": 18960,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 19840,
+          "endMs": 20080,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 20240,
+          "endMs": 20400,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " inherits.",
+          "startMs": 20720,
+          "endMs": 21200,
+          "timestampMs": 20960,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Concrete problem and useful question",
+        "visualDecision": "adjust",
+        "physicalVisual": "Start with the mature parent and daughter visible in the actual plate. Identify the mature plant as the grower's chosen parent. The valued fruit is a supplied scenario condition, not a fruit image invented inside this plate. A short new-disease scenario label appears beside the same plants; no plant turns sick yet.",
+        "motionPurpose": "Draw the leader to the daughter when new plants are named. Change only the scenario label when conditions change. Movement locates the question; it does not disclose the disease outcome.",
+        "activeFacts": [
+          "The grower values the parent's fruit characteristics.",
+          "The disease is a new condition in the fictional scenario."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "A good plant is worth keeping.",
+            "view": "parent",
+            "spokenCue": "Imagine you've grown a strawberry plant"
+          },
+          {
+            "at": 105,
+            "line": "A runner can produce a new plant.",
+            "view": "whole",
+            "spokenCue": "You can make new plants from it"
+          },
+          {
+            "at": 396,
+            "line": "Could the copies share a weakness?",
+            "view": "disease",
+            "spokenCue": "Could those copies share a weakness"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "continuity",
+      "type": "concept",
+      "heading": "A new plant can become a new parent.",
+      "body": "",
+      "durationInFrames": 1275,
+      "voiceover": {
+        "text": "First, a plant growing more leaves is still the same individual. Reproduction makes another individual: an offspring. Here, the small plant has its own roots and leaves. Once established, it can grow separately, and later it can make offspring too. The original plant will not live for ever, but another generation can follow it. The new plant also receives DNA from its parent. DNA carries inherited information, information passed from parent to offspring, that helps shape the plant's characteristics. For the population to continue, enough offspring must survive and reproduce in turn.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/continuity.adb62e170635.mp3",
+        "startFrame": 0,
+        "endFrame": 1215
+      },
+      "captions": [
+        {
+          "text": "First,",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 720,
+          "endMs": 800,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " growing",
+          "startMs": 1280,
+          "endMs": 1600,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 1680,
+          "endMs": 1840,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " leaves",
+          "startMs": 1920,
+          "endMs": 2400,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 2800,
+          "endMs": 2960,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3040,
+          "endMs": 3120,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 3280,
+          "endMs": 3520,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " individual.",
+          "startMs": 3600,
+          "endMs": 4320,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " Reproduction",
+          "startMs": 4800,
+          "endMs": 5600,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 5680,
+          "endMs": 5920,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 6080,
+          "endMs": 6480,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " individual:",
+          "startMs": 6560,
+          "endMs": 7440,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " offspring.",
+          "startMs": 7680,
+          "endMs": 8320,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " Here,",
+          "startMs": 8960,
+          "endMs": 9440,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9480,
+          "endMs": 9520,
+          "timestampMs": 9500,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 9600,
+          "endMs": 9840,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 9920,
+          "endMs": 10240,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 10320,
+          "endMs": 10480,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 10600,
+          "endMs": 10720,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 10800,
+          "endMs": 10960,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " roots",
+          "startMs": 11040,
+          "endMs": 11280,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " leaves.",
+          "startMs": 11520,
+          "endMs": 12240,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " Once",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " established,",
+          "startMs": 12720,
+          "endMs": 13520,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 13760,
+          "endMs": 13840,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " grow",
+          "startMs": 13920,
+          "endMs": 14080,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " separately,",
+          "startMs": 14240,
+          "endMs": 15040,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " later",
+          "startMs": 15280,
+          "endMs": 15600,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15840,
+          "endMs": 16000,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 16239.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 16480,
+          "endMs": 16800,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 16880,
+          "endMs": 17560,
+          "timestampMs": 17220,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " original",
+          "startMs": 18200,
+          "endMs": 18400,
+          "timestampMs": 18300,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 18480,
+          "endMs": 18800,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 19120,
+          "endMs": 19280,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " live",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " ever,",
+          "startMs": 19840,
+          "endMs": 20400,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 20480,
+          "endMs": 20560,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 20720,
+          "endMs": 20880,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " generation",
+          "startMs": 20960,
+          "endMs": 21520,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 21600,
+          "endMs": 21760,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 21840,
+          "endMs": 22080,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 22160,
+          "endMs": 22320,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 22960,
+          "endMs": 23000,
+          "timestampMs": 22980,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 23040,
+          "endMs": 23200,
+          "timestampMs": 23120,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 23280,
+          "endMs": 23680,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 23760,
+          "endMs": 24080,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " receives",
+          "startMs": 24240,
+          "endMs": 24560,
+          "timestampMs": 24400,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 24640,
+          "endMs": 25120,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 25200,
+          "endMs": 25280,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 25360,
+          "endMs": 25520,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " parent.",
+          "startMs": 25600,
+          "endMs": 26320,
+          "timestampMs": 25960,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 26640,
+          "endMs": 27200,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 27280,
+          "endMs": 27600,
+          "timestampMs": 27440,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 27680,
+          "endMs": 28240,
+          "timestampMs": 27960,
+          "confidence": null
+        },
+        {
+          "text": " information,",
+          "startMs": 28320,
+          "endMs": 29440,
+          "timestampMs": 28880,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 29760,
+          "endMs": 30080,
+          "timestampMs": 29920,
+          "confidence": null
+        },
+        {
+          "text": " passed",
+          "startMs": 30160,
+          "endMs": 30480,
+          "timestampMs": 30320,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 30560,
+          "endMs": 30640,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " parent",
+          "startMs": 30720,
+          "endMs": 31120,
+          "timestampMs": 30920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 31280,
+          "endMs": 31360,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " offspring,",
+          "startMs": 31440,
+          "endMs": 32240.000000000004,
+          "timestampMs": 31840,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 32320,
+          "endMs": 32400,
+          "timestampMs": 32360,
+          "confidence": null
+        },
+        {
+          "text": " helps",
+          "startMs": 32520.000000000004,
+          "endMs": 32720,
+          "timestampMs": 32620,
+          "confidence": null
+        },
+        {
+          "text": " shape",
+          "startMs": 32800,
+          "endMs": 33040,
+          "timestampMs": 32920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33080,
+          "endMs": 33120,
+          "timestampMs": 33100,
+          "confidence": null
+        },
+        {
+          "text": " plant's",
+          "startMs": 33200,
+          "endMs": 33520,
+          "timestampMs": 33360,
+          "confidence": null
+        },
+        {
+          "text": " characteristics.",
+          "startMs": 33600,
+          "endMs": 34800,
+          "timestampMs": 34200,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 35120,
+          "endMs": 35200,
+          "timestampMs": 35160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 35240,
+          "endMs": 35280,
+          "timestampMs": 35260,
+          "confidence": null
+        },
+        {
+          "text": " population",
+          "startMs": 35360,
+          "endMs": 35840,
+          "timestampMs": 35600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 35920,
+          "endMs": 36000,
+          "timestampMs": 35960,
+          "confidence": null
+        },
+        {
+          "text": " continue,",
+          "startMs": 36080,
+          "endMs": 36960,
+          "timestampMs": 36520,
+          "confidence": null
+        },
+        {
+          "text": " enough",
+          "startMs": 37080,
+          "endMs": 37440,
+          "timestampMs": 37260,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 37520,
+          "endMs": 38000,
+          "timestampMs": 37760,
+          "confidence": null
+        },
+        {
+          "text": " must",
+          "startMs": 38080,
+          "endMs": 38320,
+          "timestampMs": 38200,
+          "confidence": null
+        },
+        {
+          "text": " survive",
+          "startMs": 38400,
+          "endMs": 38880,
+          "timestampMs": 38640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 38960,
+          "endMs": 39040,
+          "timestampMs": 39000,
+          "confidence": null
+        },
+        {
+          "text": " reproduce",
+          "startMs": 39120,
+          "endMs": 39680,
+          "timestampMs": 39400,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 39760,
+          "endMs": 39840,
+          "timestampMs": 39800,
+          "confidence": null
+        },
+        {
+          "text": " turn.",
+          "startMs": 39920,
+          "endMs": 40480,
+          "timestampMs": 40200,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Connect new individuals and inherited DNA to later generations",
+        "visualDecision": "adjust",
+        "physicalVisual": "Hold the whole parent-runner-daughter relationship while explaining growth versus a new individual. Then show two adjacent botanical panels: this parent with its daughter, and a later established daughter with another rooted offspring. The later panel is an illustrative future example, not a claim that the raster records growth. Keep one current relationship highlighted.",
+        "motionPurpose": "Shift attention from the parent's leaves to the daughter's roots and leaves. Reveal the later-generation panel only after the daughter is established. Parent and offspring can overlap in time; never make a parent disappear before an offspring exists. A simple relationship leader may carry the DNA label, but do not animate a literal DNA ribbon moving through a runner.",
+        "activeFacts": [
+          "The daughter is a new plant.",
+          "A later generation receives inherited information.",
+          "Continuation requires later reproductive success."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "More leaves do not make another individual.",
+            "view": "parent",
+            "spokenCue": "First, a plant growing more leaves"
+          },
+          {
+            "at": 144,
+            "line": "An offspring is a new individual.",
+            "view": "daughter",
+            "spokenCue": "Reproduction makes another individual"
+          },
+          {
+            "at": 375,
+            "line": "It can later become a parent too.",
+            "view": "generations",
+            "spokenCue": "Once established, it can grow separately"
+          },
+          {
+            "at": 689,
+            "line": "The parent passes on inherited information in DNA.",
+            "view": "generations",
+            "spokenCue": "The new plant also receives DNA"
+          },
+          {
+            "at": 1054,
+            "line": "Enough offspring must survive and reproduce.",
+            "view": "generations",
+            "spokenCue": "For the population to continue"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "copying",
+      "type": "concept",
+      "heading": "A runner keeps a useful inherited combination.",
+      "body": "",
+      "durationInFrames": 1138,
+      "voiceover": {
+        "text": "The connecting stem is a runner. A new plant grows from it without a sperm cell and an egg cell joining. We call that asexual reproduction. As the new cells form, they copy the parent's DNA. The daughter usually has almost the same inherited information as its parent, so we call it a clone. That's why runners are useful to our grower: they can keep a valued inherited combination instead of mixing it with information from another plant. Similar DNA does not mean every plant grows exactly alike, because growing conditions still matter.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/copying.b209c20368a1.mp3",
+        "startFrame": 0,
+        "endFrame": 1078
+      },
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " connecting",
+          "startMs": 160,
+          "endMs": 640,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " stem",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1360,
+          "endMs": 1440,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " runner.",
+          "startMs": 1520,
+          "endMs": 2080,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " grows",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 3440,
+          "endMs": 3600,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 3840,
+          "endMs": 4160,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4200,
+          "endMs": 4240,
+          "timestampMs": 4220,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 4280,
+          "endMs": 4560,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5040,
+          "endMs": 5120,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 5160,
+          "endMs": 5200,
+          "timestampMs": 5180,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 5280,
+          "endMs": 5440,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " joining.",
+          "startMs": 5840,
+          "endMs": 6320,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " call",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 7200,
+          "endMs": 7440,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " asexual",
+          "startMs": 7600,
+          "endMs": 8160,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " reproduction.",
+          "startMs": 8240,
+          "endMs": 9040,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " As",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9920,
+          "endMs": 10000,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 10240,
+          "endMs": 10560,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " form,",
+          "startMs": 10640,
+          "endMs": 11200,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 11600,
+          "endMs": 11760,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " parent's",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " DNA.",
+          "startMs": 12400,
+          "endMs": 13280,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " daughter",
+          "startMs": 13920,
+          "endMs": 14160,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 14240,
+          "endMs": 14560,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 14640,
+          "endMs": 14880,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 14960,
+          "endMs": 15360,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15480,
+          "endMs": 15600,
+          "timestampMs": 15540,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 15720,
+          "endMs": 15840,
+          "timestampMs": 15780,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 15920,
+          "endMs": 16400,
+          "timestampMs": 16160,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 16720,
+          "endMs": 17040,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " parent,",
+          "startMs": 17440,
+          "endMs": 18240,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 18440,
+          "endMs": 18640,
+          "timestampMs": 18540,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 18720,
+          "endMs": 18800,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " call",
+          "startMs": 18880,
+          "endMs": 18960,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 19040,
+          "endMs": 19200,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19240,
+          "endMs": 19280,
+          "timestampMs": 19260,
+          "confidence": null
+        },
+        {
+          "text": " clone.",
+          "startMs": 19360,
+          "endMs": 20480,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 20600,
+          "endMs": 20800,
+          "timestampMs": 20700,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " runners",
+          "startMs": 21040,
+          "endMs": 21360,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 21440,
+          "endMs": 21520,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 21600,
+          "endMs": 21920,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 22160,
+          "endMs": 22240,
+          "timestampMs": 22200,
+          "confidence": null
+        },
+        {
+          "text": " grower:",
+          "startMs": 22320,
+          "endMs": 23120,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 23360,
+          "endMs": 23440,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 23520,
+          "endMs": 23680,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23760,
+          "endMs": 23840,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " valued",
+          "startMs": 23920,
+          "endMs": 24320,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 24400,
+          "endMs": 24960,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " combination",
+          "startMs": 25040,
+          "endMs": 25920,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " instead",
+          "startMs": 26000,
+          "endMs": 26320,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 26400,
+          "endMs": 26480,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " mixing",
+          "startMs": 26560,
+          "endMs": 26880,
+          "timestampMs": 26720,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 26920,
+          "endMs": 26960,
+          "timestampMs": 26940,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 27040,
+          "endMs": 27120,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 27400,
+          "endMs": 27680,
+          "timestampMs": 27540,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 27760,
+          "endMs": 27840,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 27920,
+          "endMs": 28240,
+          "timestampMs": 28080,
+          "confidence": null
+        },
+        {
+          "text": " plant.",
+          "startMs": 28440,
+          "endMs": 29360,
+          "timestampMs": 28900,
+          "confidence": null
+        },
+        {
+          "text": " Similar",
+          "startMs": 29560,
+          "endMs": 29760,
+          "timestampMs": 29660,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 29840,
+          "endMs": 30320,
+          "timestampMs": 30080,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 30400,
+          "endMs": 30640,
+          "timestampMs": 30520,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 30720,
+          "endMs": 30960,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " mean",
+          "startMs": 31120,
+          "endMs": 31280,
+          "timestampMs": 31200,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 31440,
+          "endMs": 31600,
+          "timestampMs": 31520,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 31680,
+          "endMs": 31920,
+          "timestampMs": 31800,
+          "confidence": null
+        },
+        {
+          "text": " grows",
+          "startMs": 32000,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32120,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 32320,
+          "endMs": 32880,
+          "timestampMs": 32600,
+          "confidence": null
+        },
+        {
+          "text": " alike,",
+          "startMs": 33000,
+          "endMs": 33600,
+          "timestampMs": 33300,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 33680,
+          "endMs": 33920,
+          "timestampMs": 33800,
+          "confidence": null
+        },
+        {
+          "text": " growing",
+          "startMs": 34000,
+          "endMs": 34320,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 34640,
+          "endMs": 34960,
+          "timestampMs": 34800,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 35120,
+          "endMs": 35280,
+          "timestampMs": 35200,
+          "confidence": null
+        },
+        {
+          "text": " matter.",
+          "startMs": 35360,
+          "endMs": 35920,
+          "timestampMs": 35640,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Explain copying through the runner case before naming the method",
+        "visualDecision": "reuse-and-adjust",
+        "physicalVisual": "Show the true connecting stem and daughter. Keep their actual structures visible throughout. A parent/daughter relationship label states that the DNA is usually very similar. Do not represent DNA as an unexplained card hand, coloured balls or literal moving material in the stem.",
+        "motionPurpose": "The runner leader draws to the real stem once. Shift the emphasis from parent to daughter at the DNA sentence, then hold them together for the causal benefit. Do not simulate painted growth.",
+        "activeFacts": [
+          "The new plant forms from the parent without sperm and egg joining.",
+          "Copying usually retains very similar inherited DNA."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "A runner is a connecting stem.",
+            "view": "whole",
+            "spokenCue": "The connecting stem is a runner."
+          },
+          {
+            "at": 70,
+            "line": "No sperm and egg join: asexual reproduction.",
+            "view": "whole",
+            "spokenCue": "A new plant grows from it without"
+          },
+          {
+            "at": 291,
+            "line": "New cells copy the parent's DNA.",
+            "view": "copy",
+            "spokenCue": "As the new cells form"
+          },
+          {
+            "at": 408,
+            "line": "Clonal offspring usually retain very similar DNA.",
+            "view": "copy",
+            "spokenCue": "The daughter usually has almost"
+          },
+          {
+            "at": 618,
+            "line": "Copying can keep a valued inherited combination.",
+            "view": "copy",
+            "spokenCue": "That's why runners are useful"
+          },
+          {
+            "at": 887,
+            "line": "Growing conditions can still affect the plants.",
+            "view": "copy",
+            "spokenCue": "Similar DNA does not mean"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "sexual-cross",
+      "type": "concept",
+      "heading": "Sperm and egg join in sexual reproduction.",
+      "body": "",
+      "durationInFrames": 1234,
+      "voiceover": {
+        "text": "A strawberry plant can also make offspring through a flower. Consider a cross between two genetically different plants, meaning their inherited DNA differs. Inside a flower of one parent, a sperm cell from the other joins an egg cell. Sperm and egg are reproductive cells called gametes. Each contributes DNA. Reproduction in which gametes join is called sexual reproduction. The developing new plant is inside a seed, and that seed can grow into a seedling. So the runner and this cross both produce new plants, but the cross brings inherited information from the two parents together.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/sexual-cross.d6416697d700.mp3",
+        "startFrame": 0,
+        "endFrame": 1174
+      },
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " strawberry",
+          "startMs": 160,
+          "endMs": 560,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 640,
+          "endMs": 880,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 960,
+          "endMs": 1200,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 1280,
+          "endMs": 1520,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 1840,
+          "endMs": 2320,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " flower.",
+          "startMs": 2720,
+          "endMs": 3200,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " Consider",
+          "startMs": 3760,
+          "endMs": 4160,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4200,
+          "endMs": 4240,
+          "timestampMs": 4220,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " between",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 5120,
+          "endMs": 5280,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " genetically",
+          "startMs": 5360,
+          "endMs": 5920,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 6080,
+          "endMs": 6400,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " plants,",
+          "startMs": 6480,
+          "endMs": 7280,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " meaning",
+          "startMs": 7440,
+          "endMs": 7600,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 7680,
+          "endMs": 7760,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 7840,
+          "endMs": 8320,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 8400,
+          "endMs": 8880,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " differs.",
+          "startMs": 8960,
+          "endMs": 9520,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " Inside",
+          "startMs": 10160,
+          "endMs": 10480,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10520,
+          "endMs": 10560,
+          "timestampMs": 10540,
+          "confidence": null
+        },
+        {
+          "text": " flower",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " parent,",
+          "startMs": 11440,
+          "endMs": 12080,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12120,
+          "endMs": 12160,
+          "timestampMs": 12140,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 12240,
+          "endMs": 12560,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 12640,
+          "endMs": 12880,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13080,
+          "endMs": 13120,
+          "timestampMs": 13100,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 13280,
+          "endMs": 13600,
+          "timestampMs": 13440,
+          "confidence": null
+        },
+        {
+          "text": " joins",
+          "startMs": 13760,
+          "endMs": 14000,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 14240,
+          "endMs": 14400,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " cell.",
+          "startMs": 14480,
+          "endMs": 14800,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " Sperm",
+          "startMs": 15360,
+          "endMs": 15760,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15840,
+          "endMs": 16000,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 16079.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 16560,
+          "endMs": 17200,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 17280,
+          "endMs": 17600,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 17680,
+          "endMs": 17920,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " gametes.",
+          "startMs": 18080,
+          "endMs": 18720,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 19120,
+          "endMs": 19360,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " contributes",
+          "startMs": 19440,
+          "endMs": 20000,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " DNA.",
+          "startMs": 20080,
+          "endMs": 20960,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " Reproduction",
+          "startMs": 21280,
+          "endMs": 21920,
+          "timestampMs": 21600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 21960,
+          "endMs": 22000,
+          "timestampMs": 21980,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 22080,
+          "endMs": 22240,
+          "timestampMs": 22160,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 22320,
+          "endMs": 22720,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 22800,
+          "endMs": 23200,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 23280,
+          "endMs": 23440,
+          "timestampMs": 23360,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 23520,
+          "endMs": 23760,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " sexual",
+          "startMs": 23920,
+          "endMs": 24320,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " reproduction.",
+          "startMs": 24400,
+          "endMs": 25440,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 25760,
+          "endMs": 25840,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " developing",
+          "startMs": 26040,
+          "endMs": 26320,
+          "timestampMs": 26180,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 26400,
+          "endMs": 26560,
+          "timestampMs": 26480,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 26640,
+          "endMs": 26960,
+          "timestampMs": 26800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 27040,
+          "endMs": 27200,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 27440,
+          "endMs": 27680,
+          "timestampMs": 27560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27720,
+          "endMs": 27760,
+          "timestampMs": 27740,
+          "confidence": null
+        },
+        {
+          "text": " seed,",
+          "startMs": 27920,
+          "endMs": 28480,
+          "timestampMs": 28200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28560,
+          "endMs": 28640,
+          "timestampMs": 28600,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 28720,
+          "endMs": 28800,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " seed",
+          "startMs": 28960,
+          "endMs": 29280,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 29360,
+          "endMs": 29520,
+          "timestampMs": 29440,
+          "confidence": null
+        },
+        {
+          "text": " grow",
+          "startMs": 29600,
+          "endMs": 29680,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 29760,
+          "endMs": 29920,
+          "timestampMs": 29840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 30000,
+          "endMs": 30080,
+          "timestampMs": 30040,
+          "confidence": null
+        },
+        {
+          "text": " seedling.",
+          "startMs": 30200,
+          "endMs": 31200,
+          "timestampMs": 30700,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 31360,
+          "endMs": 31520,
+          "timestampMs": 31440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31760,
+          "endMs": 31840,
+          "timestampMs": 31800,
+          "confidence": null
+        },
+        {
+          "text": " runner",
+          "startMs": 31920,
+          "endMs": 32320,
+          "timestampMs": 32120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 32439.999999999996,
+          "endMs": 32560.000000000004,
+          "timestampMs": 32500,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 32640,
+          "endMs": 32800,
+          "timestampMs": 32720,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 32880,
+          "endMs": 33280,
+          "timestampMs": 33080,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 33360,
+          "endMs": 33600,
+          "timestampMs": 33480,
+          "confidence": null
+        },
+        {
+          "text": " produce",
+          "startMs": 33680,
+          "endMs": 34080,
+          "timestampMs": 33880,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 34160,
+          "endMs": 34320,
+          "timestampMs": 34240,
+          "confidence": null
+        },
+        {
+          "text": " plants,",
+          "startMs": 34600,
+          "endMs": 35280,
+          "timestampMs": 34940,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 35320,
+          "endMs": 35360,
+          "timestampMs": 35340,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 35440,
+          "endMs": 35520,
+          "timestampMs": 35480,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 35600,
+          "endMs": 36000,
+          "timestampMs": 35800,
+          "confidence": null
+        },
+        {
+          "text": " brings",
+          "startMs": 36040,
+          "endMs": 36240,
+          "timestampMs": 36140,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 36320,
+          "endMs": 36800,
+          "timestampMs": 36560,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 37120,
+          "endMs": 37440,
+          "timestampMs": 37280,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 37520,
+          "endMs": 37600,
+          "timestampMs": 37560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37680,
+          "endMs": 37760,
+          "timestampMs": 37720,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 37840,
+          "endMs": 38000,
+          "timestampMs": 37920,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 38080,
+          "endMs": 38480,
+          "timestampMs": 38280,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 38560,
+          "endMs": 39120,
+          "timestampMs": 38840,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Introduce the minimum joining event with actual plants",
+        "visualDecision": "new-bounded-physical-visual",
+        "physicalVisual": "Use existing parent art only to identify the two supplied parent plants. Then show the recognisable strawberry flower with many separate pistils. A leader from its centre locates the magnified sperm-and-egg schematic inside the flower. Trace the joined cell to a magnified seed-bearing achene cutaway containing the developing plant, then to a genuine seed-grown strawberry seedling. These stages are at different times and not to scale. Do not imply that pollen itself is the sperm cell.",
+        "motionPurpose": "The leader locates the cell model within the actual flower. The sperm-cell model joins the egg; the diagram then progresses from joined cell through development inside a seed to a later seedling. New stages appear only at their narration cues.",
+        "activeFacts": [
+          "This is a stated cross between genetically different plants.",
+          "Sperm and egg contribute inherited DNA.",
+          "Genetically different means their inherited DNA differs. Sperm and egg join inside the receiving flower."
+        ],
+        "previewBeats": [
+          {
+            "at": 113,
+            "line": "Genetically different parents have different inherited DNA.",
+            "view": "parents",
+            "spokenCue": "Consider a cross between two genetically different plants"
+          },
+          {
+            "at": 305,
+            "line": "Inside a flower, a sperm cell joins an egg cell.",
+            "view": "cells",
+            "spokenCue": "Inside a flower of one parent"
+          },
+          {
+            "at": 461,
+            "line": "Gametes are reproductive cells, such as sperm and egg.",
+            "view": "cells",
+            "spokenCue": "Sperm and egg are reproductive cells"
+          },
+          {
+            "at": 574,
+            "line": "Each reproductive cell contributes DNA.",
+            "view": "cells",
+            "spokenCue": "Each contributes DNA."
+          },
+          {
+            "at": 639,
+            "line": "Gametes join: sexual reproduction.",
+            "view": "cells-joined",
+            "spokenCue": "Reproduction in which gametes join"
+          },
+          {
+            "at": 773,
+            "line": "A new plant develops inside a seed.",
+            "view": "seed",
+            "spokenCue": "The developing new plant is inside a seed"
+          },
+          {
+            "at": 857,
+            "line": "The seed can grow into a seedling.",
+            "view": "seedling",
+            "spokenCue": "and that seed can grow into a seedling"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "sexual-variation",
+      "type": "concept",
+      "heading": "Offspring can inherit different combinations.",
+      "body": "",
+      "durationInFrames": 1179,
+      "voiceover": {
+        "text": "How can the same two parents produce different seedlings? Different sperm cells can carry different selections of one parent's inherited information. Egg cells can differ in the same way. When different pairs join, the seedlings can receive different combinations of DNA. Those differences in inherited information are genetic variation. Here is the contrast we need: runner offspring usually retain the parent's combination, while offspring from this cross can inherit different combinations. That gives the grower different plants to compare. It does not tell us which one will perform best.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/sexual-variation.088a26bc389e.mp3",
+        "startFrame": 0,
+        "endFrame": 1119
+      },
+      "captions": [
+        {
+          "text": "How",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 480,
+          "endMs": 560,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 720,
+          "endMs": 880,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 960,
+          "endMs": 1040,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 1200,
+          "endMs": 1600,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " produce",
+          "startMs": 1680,
+          "endMs": 2000,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 2080,
+          "endMs": 2400,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " seedlings?",
+          "startMs": 2480,
+          "endMs": 3400,
+          "timestampMs": 2940,
+          "confidence": null
+        },
+        {
+          "text": " Different",
+          "startMs": 3680,
+          "endMs": 4000,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 4080,
+          "endMs": 4400,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 4480,
+          "endMs": 4800,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 5440,
+          "endMs": 5760,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " selections",
+          "startMs": 5840,
+          "endMs": 6400,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " parent's",
+          "startMs": 6880,
+          "endMs": 7280,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 7360,
+          "endMs": 7840,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " information.",
+          "startMs": 8200,
+          "endMs": 8880,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " Egg",
+          "startMs": 9200,
+          "endMs": 9360,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 9440,
+          "endMs": 9760,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " differ",
+          "startMs": 10000,
+          "endMs": 10240,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 10280,
+          "endMs": 10320,
+          "timestampMs": 10300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 10600,
+          "endMs": 10720,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " way.",
+          "startMs": 10800,
+          "endMs": 11440,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " When",
+          "startMs": 11760,
+          "endMs": 11920,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " pairs",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " join,",
+          "startMs": 12720,
+          "endMs": 13440,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13520,
+          "endMs": 13560,
+          "timestampMs": 13540,
+          "confidence": null
+        },
+        {
+          "text": " seedlings",
+          "startMs": 13600,
+          "endMs": 14160,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 14200,
+          "endMs": 14240,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " receive",
+          "startMs": 14320,
+          "endMs": 14720,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 14800,
+          "endMs": 15120,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " combinations",
+          "startMs": 15240,
+          "endMs": 15920,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 15960,
+          "endMs": 16000,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " DNA.",
+          "startMs": 16079.999999999998,
+          "endMs": 17280,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " Those",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " differences",
+          "startMs": 17600,
+          "endMs": 18160,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 18400,
+          "endMs": 18800,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 18880,
+          "endMs": 19520,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 19760,
+          "endMs": 19840,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " genetic",
+          "startMs": 19920,
+          "endMs": 20400,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " variation.",
+          "startMs": 20480,
+          "endMs": 21560,
+          "timestampMs": 21020,
+          "confidence": null
+        },
+        {
+          "text": " Here",
+          "startMs": 21920,
+          "endMs": 22080,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 22160,
+          "endMs": 22240,
+          "timestampMs": 22200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22320,
+          "endMs": 22400,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " contrast",
+          "startMs": 22480,
+          "endMs": 22960,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " need:",
+          "startMs": 23200,
+          "endMs": 24000,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " runner",
+          "startMs": 24080,
+          "endMs": 24400,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 24480,
+          "endMs": 24960,
+          "timestampMs": 24720,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 25120,
+          "endMs": 25440,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " retain",
+          "startMs": 25640,
+          "endMs": 25840,
+          "timestampMs": 25740,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25920,
+          "endMs": 26000,
+          "timestampMs": 25960,
+          "confidence": null
+        },
+        {
+          "text": " parent's",
+          "startMs": 26080,
+          "endMs": 26480,
+          "timestampMs": 26280,
+          "confidence": null
+        },
+        {
+          "text": " combination,",
+          "startMs": 26800,
+          "endMs": 27520,
+          "timestampMs": 27160,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 27640,
+          "endMs": 27760,
+          "timestampMs": 27700,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 27840,
+          "endMs": 28160,
+          "timestampMs": 28000,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 28240,
+          "endMs": 28400,
+          "timestampMs": 28320,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 28480,
+          "endMs": 28640,
+          "timestampMs": 28560,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 28720,
+          "endMs": 29200,
+          "timestampMs": 28960,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 29240,
+          "endMs": 29280,
+          "timestampMs": 29260,
+          "confidence": null
+        },
+        {
+          "text": " inherit",
+          "startMs": 29360,
+          "endMs": 29840,
+          "timestampMs": 29600,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 30040,
+          "endMs": 30240,
+          "timestampMs": 30140,
+          "confidence": null
+        },
+        {
+          "text": " combinations.",
+          "startMs": 30320,
+          "endMs": 31600,
+          "timestampMs": 30960,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 31720,
+          "endMs": 31840,
+          "timestampMs": 31780,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 31893,
+          "endMs": 32000,
+          "timestampMs": 31946.5,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 32080,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32120,
+          "confidence": null
+        },
+        {
+          "text": " grower",
+          "startMs": 32280,
+          "endMs": 32560.000000000004,
+          "timestampMs": 32420,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 32759.999999999996,
+          "endMs": 32960,
+          "timestampMs": 32860,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 33160,
+          "endMs": 33360,
+          "timestampMs": 33260,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 33400,
+          "endMs": 33440,
+          "timestampMs": 33420,
+          "confidence": null
+        },
+        {
+          "text": " compare.",
+          "startMs": 33520,
+          "endMs": 34480,
+          "timestampMs": 34000,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 34560,
+          "endMs": 34640,
+          "timestampMs": 34600,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 34760,
+          "endMs": 34880,
+          "timestampMs": 34820,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 35000,
+          "endMs": 35120,
+          "timestampMs": 35060,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 35200,
+          "endMs": 35280,
+          "timestampMs": 35240,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 35360,
+          "endMs": 35600,
+          "timestampMs": 35480,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 35720,
+          "endMs": 35840,
+          "timestampMs": 35780,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 35920,
+          "endMs": 36080,
+          "timestampMs": 36000,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 36160,
+          "endMs": 36240,
+          "timestampMs": 36200,
+          "confidence": null
+        },
+        {
+          "text": " perform",
+          "startMs": 36440,
+          "endMs": 36640,
+          "timestampMs": 36540,
+          "confidence": null
+        },
+        {
+          "text": " best.",
+          "startMs": 36720,
+          "endMs": 37280,
+          "timestampMs": 37000,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Explain inherited variation without chromosome vocabulary",
+        "visualDecision": "adjust-new-cross-context",
+        "physicalVisual": "Keep recognisable strawberry flower context, then one possible sperm-and-egg pair while selections are explained. At different pairs, show two possible joining events from the same parents. Each path connects joined cell, seed development and a later true seedling. Retain matching green and blue symbolic DNA shapes from each joined cell beside its later seedling so inherited combinations can be compared. Both seedlings use the same organism-reference art; that art does not claim a visible genetic trait.",
+        "motionPurpose": "First isolate one pair while differing inherited selections are explained. Then trace two joining paths to their later offspring. DNA marks retain their identity across the path; no plant becomes sick, drought tolerant or otherwise visibly successful.",
+        "activeFacts": [
+          "The cross uses genetically different parents.",
+          "The two routes differ in retaining or combining inherited information.",
+          "Different reproductive cells can carry different inherited selections; different pairings can give different offspring combinations."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "How can the same parents produce different offspring?",
+            "view": "parents",
+            "spokenCue": "How can the same two parents"
+          },
+          {
+            "at": 111,
+            "line": "Different sperm cells can carry different inherited selections.",
+            "view": "pair-one",
+            "spokenCue": "Different sperm cells can carry"
+          },
+          {
+            "at": 276,
+            "line": "Egg cells can differ too.",
+            "view": "pair-one",
+            "spokenCue": "Egg cells can differ in the same way."
+          },
+          {
+            "at": 353,
+            "line": "Different pairs can give different DNA combinations.",
+            "view": "pair-two",
+            "spokenCue": "When different pairs join"
+          },
+          {
+            "at": 521,
+            "line": "Genetic variation means inherited differences.",
+            "view": "pair-two",
+            "spokenCue": "Those differences in inherited information"
+          },
+          {
+            "at": 658,
+            "line": "Runner: usually keeps a combination. Cross: can vary it.",
+            "view": "compare",
+            "spokenCue": "Here is the contrast we need"
+          },
+          {
+            "at": 1037,
+            "line": "Variation does not tell us which plant performs best.",
+            "view": "compare",
+            "spokenCue": "It does not tell us which one"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "grower-tradeoff",
+      "type": "concept",
+      "heading": "A useful copy can share a weakness.",
+      "body": "",
+      "durationInFrames": 1419,
+      "voiceover": {
+        "text": "Now return to the disease at the farm. The grower copied a plant because its inherited characteristics were useful. But if that plant also has an inherited weakness against the new disease, its clones may share it. That is a shared risk, not proof that every plant will become infected. Seedlings with different inherited combinations may respond differently, if the parents carry differences that matter for this disease. Copying helps keep a combination we already value. Sexual reproduction can offer different combinations to compare when conditions change. For this grower, a useful reminder is: copy to keep, cross to compare. The choice still depends on the conditions and the purpose.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/grower-tradeoff.bd8a498453cc.mp3",
+        "startFrame": 0,
+        "endFrame": 1359
+      },
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " return",
+          "startMs": 440,
+          "endMs": 640,
+          "timestampMs": 540,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 680,
+          "endMs": 720,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 800,
+          "endMs": 840,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " disease",
+          "startMs": 880,
+          "endMs": 1360,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 1400,
+          "endMs": 1440,
+          "timestampMs": 1420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1480,
+          "endMs": 1520,
+          "timestampMs": 1500,
+          "confidence": null
+        },
+        {
+          "text": " farm.",
+          "startMs": 1600,
+          "endMs": 2360,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " grower",
+          "startMs": 2840,
+          "endMs": 3120,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " copied",
+          "startMs": 3240,
+          "endMs": 3440,
+          "timestampMs": 3340,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3520,
+          "endMs": 3560,
+          "timestampMs": 3540,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 3600,
+          "endMs": 4000,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 4160,
+          "endMs": 4320,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 4560,
+          "endMs": 5040,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " characteristics",
+          "startMs": 5120,
+          "endMs": 5920,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 6000,
+          "endMs": 6080,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " useful.",
+          "startMs": 6160,
+          "endMs": 6640,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 7280,
+          "endMs": 7320,
+          "timestampMs": 7300,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 7760,
+          "endMs": 8080,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 8160,
+          "endMs": 8560,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 8640,
+          "endMs": 8800,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 8840,
+          "endMs": 8880,
+          "timestampMs": 8860,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 8960,
+          "endMs": 9440,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " weakness",
+          "startMs": 9600,
+          "endMs": 10000,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " against",
+          "startMs": 10080,
+          "endMs": 10320,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10360,
+          "endMs": 10400,
+          "timestampMs": 10380,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " disease,",
+          "startMs": 10640,
+          "endMs": 11520,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 11640,
+          "endMs": 11760,
+          "timestampMs": 11700,
+          "confidence": null
+        },
+        {
+          "text": " clones",
+          "startMs": 11840,
+          "endMs": 12240,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 12320,
+          "endMs": 12400,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 12560,
+          "endMs": 12800,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 12880,
+          "endMs": 13040,
+          "timestampMs": 12960,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 13680,
+          "endMs": 14000,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14240,
+          "endMs": 14320,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " shared",
+          "startMs": 14400,
+          "endMs": 14720,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " risk,",
+          "startMs": 14800,
+          "endMs": 15520,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 15600,
+          "endMs": 15760,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " proof",
+          "startMs": 15840,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 16160,
+          "endMs": 16320,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 16400,
+          "endMs": 16720,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 16800,
+          "endMs": 17040,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " become",
+          "startMs": 17280,
+          "endMs": 17440,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " infected.",
+          "startMs": 17520,
+          "endMs": 18520,
+          "timestampMs": 18020,
+          "confidence": null
+        },
+        {
+          "text": " Seedlings",
+          "startMs": 18960,
+          "endMs": 19440,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 19560,
+          "endMs": 19680,
+          "timestampMs": 19620,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 19840,
+          "endMs": 20000,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 20080,
+          "endMs": 20560,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " combinations",
+          "startMs": 20640,
+          "endMs": 21360,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 21440,
+          "endMs": 21600,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " respond",
+          "startMs": 21680,
+          "endMs": 22080,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " differently,",
+          "startMs": 22120,
+          "endMs": 22960,
+          "timestampMs": 22540,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 23480,
+          "endMs": 23680,
+          "timestampMs": 23580,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 23840,
+          "endMs": 24000,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " differences",
+          "startMs": 24160,
+          "endMs": 24480,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 24560,
+          "endMs": 24720,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " matter",
+          "startMs": 24800,
+          "endMs": 25040,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 25120,
+          "endMs": 25200,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 25280,
+          "endMs": 25360,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " disease.",
+          "startMs": 25440,
+          "endMs": 26800,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " Copying",
+          "startMs": 27040,
+          "endMs": 27280,
+          "timestampMs": 27160,
+          "confidence": null
+        },
+        {
+          "text": " helps",
+          "startMs": 27440,
+          "endMs": 27680,
+          "timestampMs": 27560,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 27760,
+          "endMs": 27920,
+          "timestampMs": 27840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27960,
+          "endMs": 28000,
+          "timestampMs": 27980,
+          "confidence": null
+        },
+        {
+          "text": " combination",
+          "startMs": 28080,
+          "endMs": 28640,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 28720,
+          "endMs": 28960,
+          "timestampMs": 28840,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 29040,
+          "endMs": 29440,
+          "timestampMs": 29240,
+          "confidence": null
+        },
+        {
+          "text": " value.",
+          "startMs": 29680,
+          "endMs": 30560,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " Sexual",
+          "startMs": 30720,
+          "endMs": 31040,
+          "timestampMs": 30880,
+          "confidence": null
+        },
+        {
+          "text": " reproduction",
+          "startMs": 31120,
+          "endMs": 31760,
+          "timestampMs": 31440,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 31840,
+          "endMs": 31920,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " offer",
+          "startMs": 32080,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32160,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 32400,
+          "endMs": 32560.000000000004,
+          "timestampMs": 32480,
+          "confidence": null
+        },
+        {
+          "text": " combinations",
+          "startMs": 32680,
+          "endMs": 33280,
+          "timestampMs": 32980,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 33320,
+          "endMs": 33360,
+          "timestampMs": 33340,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 33440,
+          "endMs": 34000,
+          "timestampMs": 33720,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 34080,
+          "endMs": 34240,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 34520,
+          "endMs": 34800,
+          "timestampMs": 34660,
+          "confidence": null
+        },
+        {
+          "text": " change.",
+          "startMs": 34880,
+          "endMs": 36080,
+          "timestampMs": 35480,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 36160,
+          "endMs": 36240,
+          "timestampMs": 36200,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 36320,
+          "endMs": 36400,
+          "timestampMs": 36360,
+          "confidence": null
+        },
+        {
+          "text": " grower,",
+          "startMs": 36480,
+          "endMs": 37120,
+          "timestampMs": 36800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 37160,
+          "endMs": 37200,
+          "timestampMs": 37180,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 37280,
+          "endMs": 37600,
+          "timestampMs": 37440,
+          "confidence": null
+        },
+        {
+          "text": " reminder",
+          "startMs": 37680,
+          "endMs": 38160,
+          "timestampMs": 37920,
+          "confidence": null
+        },
+        {
+          "text": " is:",
+          "startMs": 38240,
+          "endMs": 38880,
+          "timestampMs": 38560,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 38960,
+          "endMs": 39200,
+          "timestampMs": 39080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 39280,
+          "endMs": 39360,
+          "timestampMs": 39320,
+          "confidence": null
+        },
+        {
+          "text": " keep,",
+          "startMs": 39440,
+          "endMs": 40080,
+          "timestampMs": 39760,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 40160,
+          "endMs": 40480,
+          "timestampMs": 40320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 40560,
+          "endMs": 40640,
+          "timestampMs": 40600,
+          "confidence": null
+        },
+        {
+          "text": " compare.",
+          "startMs": 40720,
+          "endMs": 41840,
+          "timestampMs": 41280,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 41920,
+          "endMs": 42000,
+          "timestampMs": 41960,
+          "confidence": null
+        },
+        {
+          "text": " choice",
+          "startMs": 42200,
+          "endMs": 42400,
+          "timestampMs": 42300,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 42520,
+          "endMs": 42640,
+          "timestampMs": 42580,
+          "confidence": null
+        },
+        {
+          "text": " depends",
+          "startMs": 42720,
+          "endMs": 43120,
+          "timestampMs": 42920,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 43160,
+          "endMs": 43200,
+          "timestampMs": 43180,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 43240,
+          "endMs": 43280,
+          "timestampMs": 43260,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 43360,
+          "endMs": 44000,
+          "timestampMs": 43680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 44240,
+          "endMs": 44400,
+          "timestampMs": 44320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 44440,
+          "endMs": 44480,
+          "timestampMs": 44460,
+          "confidence": null
+        },
+        {
+          "text": " purpose.",
+          "startMs": 44560,
+          "endMs": 45280,
+          "timestampMs": 44920,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Resolve the hook through the causal contrast",
+        "visualDecision": "adjust",
+        "physicalVisual": "Bring back the chosen parent and established daughter. Label the shared inherited weakness as a conditional scenario. Set crossed seedlings beside them only when different responses are explained. Both groups remain recognisable healthy plants; no predetermined sick/survivor count is shown.",
+        "motionPurpose": "Draw the parent-to-daughter relationship at the shared-weakness cue, then direct attention to crossed seedlings. Hold the comparison through the conclusion. No spread animation implies every clone is infected, and no green winner highlight implies a universal best method.",
+        "activeFacts": [
+          "The copied plant's useful characteristics motivated the grower.",
+          "The new disease is a changed condition.",
+          "Only relevant inherited differences can affect the comparison."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "The grower copied a useful plant.",
+            "view": "copy",
+            "spokenCue": "Now return to the disease"
+          },
+          {
+            "at": 219,
+            "line": "If it has an inherited weakness, clones may share it.",
+            "view": "disease",
+            "spokenCue": "But if that plant also has"
+          },
+          {
+            "at": 411,
+            "line": "Shared risk does not mean every plant gets infected.",
+            "view": "disease",
+            "spokenCue": "That is a shared risk"
+          },
+          {
+            "at": 569,
+            "line": "Relevant inherited differences may change the response.",
+            "view": "compare",
+            "spokenCue": "Seedlings with different inherited combinations"
+          },
+          {
+            "at": 1085,
+            "line": "Copy to keep. Cross to compare.",
+            "view": "compare",
+            "spokenCue": "For this grower, a useful reminder is"
+          },
+          {
+            "at": 1258,
+            "line": "The useful choice depends on purpose and conditions.",
+            "view": "compare",
+            "spokenCue": "The choice still depends"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "dry-soil-attempt",
+      "type": "quickCheck",
+      "heading": "Choose a starting group for a dry-soil trial.",
+      "body": "",
+      "durationInFrames": 1136,
+      "voiceover": {
+        "text": "A nursery wants to find strawberry plants with different inherited responses to drier soil. It can start with runner offspring from one parent, or seedlings from crosses between genetically different parents. Neither group has been tested in the drier soil. Which group would you choose for this search? Explain your choice, then name one result you cannot predict yet. Pause here to decide.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/dry-soil-attempt.6406edcf8814.mp3",
+        "startFrame": 0,
+        "endFrame": 740
+      },
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " nursery",
+          "startMs": 160,
+          "endMs": 640,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " wants",
+          "startMs": 720,
+          "endMs": 960,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1000,
+          "endMs": 1040,
+          "timestampMs": 1020,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 1120,
+          "endMs": 1360,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " strawberry",
+          "startMs": 1440,
+          "endMs": 1840,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 1920,
+          "endMs": 2320,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 2440,
+          "endMs": 2560,
+          "timestampMs": 2500,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 2720,
+          "endMs": 2880,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 2960,
+          "endMs": 3440,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " responses",
+          "startMs": 3520,
+          "endMs": 4160,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " drier",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " soil.",
+          "startMs": 4800,
+          "endMs": 5280,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 6000,
+          "endMs": 6080,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 6160,
+          "endMs": 6400,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " runner",
+          "startMs": 6640,
+          "endMs": 6880,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 6960,
+          "endMs": 7440,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 7680,
+          "endMs": 7840,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " parent,",
+          "startMs": 7920,
+          "endMs": 8560,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 8680,
+          "endMs": 8800,
+          "timestampMs": 8740,
+          "confidence": null
+        },
+        {
+          "text": " seedlings",
+          "startMs": 8960,
+          "endMs": 9440,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " crosses",
+          "startMs": 9760,
+          "endMs": 10160,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " between",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " genetically",
+          "startMs": 10560,
+          "endMs": 11120,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 11200,
+          "endMs": 11520,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " parents.",
+          "startMs": 11600,
+          "endMs": 12160,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " Neither",
+          "startMs": 12800,
+          "endMs": 13040,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 13120,
+          "endMs": 13360,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 13400,
+          "endMs": 13440,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " been",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " tested",
+          "startMs": 13680,
+          "endMs": 14080,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 14120,
+          "endMs": 14160,
+          "timestampMs": 14140,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14240,
+          "endMs": 14280,
+          "timestampMs": 14260,
+          "confidence": null
+        },
+        {
+          "text": " drier",
+          "startMs": 14320,
+          "endMs": 14640,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " soil.",
+          "startMs": 14720,
+          "endMs": 15200,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " Which",
+          "startMs": 15760,
+          "endMs": 16000,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 16120.000000000002,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16180,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 16360,
+          "endMs": 16480,
+          "timestampMs": 16420,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " choose",
+          "startMs": 16800,
+          "endMs": 17040,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 17080,
+          "endMs": 17120,
+          "timestampMs": 17100,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 17200,
+          "endMs": 17360,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " search?",
+          "startMs": 17440,
+          "endMs": 17920,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " Explain",
+          "startMs": 18320,
+          "endMs": 18720,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 18800,
+          "endMs": 18880,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " choice,",
+          "startMs": 18960,
+          "endMs": 19680,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 19760,
+          "endMs": 20000,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 20240,
+          "endMs": 20480,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 20560,
+          "endMs": 20720,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " result",
+          "startMs": 20800,
+          "endMs": 21200,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 21280,
+          "endMs": 21440,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " cannot",
+          "startMs": 21640,
+          "endMs": 21840,
+          "timestampMs": 21740,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 21920,
+          "endMs": 22320,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " yet.",
+          "startMs": 22480,
+          "endMs": 22920,
+          "timestampMs": 22700,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 23200,
+          "endMs": 23440,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 23520,
+          "endMs": 23760,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 23800,
+          "endMs": 23840,
+          "timestampMs": 23820,
+          "confidence": null
+        },
+        {
+          "text": " decide.",
+          "startMs": 23920,
+          "endMs": 24640,
+          "timestampMs": 24280,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Genuine transfer decision under changed conditions",
+        "visualDecision": "adjust",
+        "physicalVisual": "Show neutral group A with the established runner-daughter art and group B with the true seed-grown strawberry seedling art. Keep origin, search goal, untested dry-soil condition and all three demands visible throughout the response opportunity. Both plants remain healthy context references, with no trial outcome depicted.",
+        "motionPurpose": "Reveal the complete origin and condition labels during the prompt, then stop motion for the response interval. The two physical groups stay equally prominent. No winner outline, unequal disease/drought symptoms, answer subtitle or copy/variation summary appears during the attempt.",
+        "activeFacts": [
+          "The search concerns inherited responses to dry soil.",
+          "A comes from one parent by runners.",
+          "B comes from sexual crosses between genetically different parents.",
+          "Both groups are untested in dry soil.",
+          "All three response demands remain visible."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Choose a starting group. Explain why. Name one unknown result.",
+            "view": "attempt",
+            "spokenCue": "A nursery wants to find"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending.",
+        "attempt": {
+          "task": "Choose a starting group for a dry-soil trial.",
+          "goal": "Find different inherited responses to drier soil.",
+          "groupA": "A: runner offspring from one parent",
+          "groupB": "B: seedlings from crosses between genetically different parents",
+          "condition": "Neither group has been tested in the drier soil.",
+          "demands": [
+            "Choose A or B.",
+            "Explain your choice.",
+            "Name one result you cannot predict yet."
+          ]
+        },
+        "responseStatus": "Planned 12-second silent-preview hold only. New prompt and feedback audio must be assembled and measured later."
+      },
+      "question": "Which group would you choose to search for different inherited responses to drier soil? Explain your choice and name one result you cannot predict yet.",
+      "answerSteps": [
+        "Select B for the stated search for inherited differences.",
+        "Explain that the sexual crosses combine inherited DNA from genetically different parents, whereas runner reproduction usually retains a parent's combination.",
+        "Name a genuinely unknown result, such as which seedling will grow well, whether any offspring carries a useful combination, or whether either group performs better in the dry soil."
+      ],
+      "responseHold": {
+        "startFrame": 752,
+        "endFrame": 1112
+      },
+      "pilotOnly": false,
+      "revealDelays": {
+        "answerVisibleStart": 1112,
+        "responseHoldStart": 752,
+        "pausePrompt": 752
+      }
+    },
+    {
+      "id": "dry-soil-feedback",
+      "type": "concept",
+      "heading": "Different combinations give a wider search.",
+      "body": "",
+      "durationInFrames": 1270,
+      "voiceover": {
+        "text": "The crossed seedlings are the better starting group for a search for different inherited responses. They receive DNA through sexual reproduction from genetically different parents, so they can inherit different combinations. Runner offspring usually copy a much narrower set of inherited information from one parent. But we still cannot predict which seedling will grow well in the dry soil. The parents may not carry useful differences for that condition, and a particular seedling may not receive a useful combination. We would need to compare how the plants actually grow there. More variation gives us possibilities to investigate, not a promised winner.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/dry-soil-feedback.e01506bf939d.mp3",
+        "startFrame": 0,
+        "endFrame": 1210
+      },
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " crossed",
+          "startMs": 160,
+          "endMs": 480,
+          "timestampMs": 320,
+          "confidence": null
+        },
+        {
+          "text": " seedlings",
+          "startMs": 560,
+          "endMs": 1120,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 1160,
+          "endMs": 1200,
+          "timestampMs": 1180,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " better",
+          "startMs": 1560,
+          "endMs": 1680,
+          "timestampMs": 1620,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 1760,
+          "endMs": 2160,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 2240,
+          "endMs": 2480,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 2520,
+          "endMs": 2560,
+          "timestampMs": 2540,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " search",
+          "startMs": 2800,
+          "endMs": 3040,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 3440,
+          "endMs": 3600,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 3680,
+          "endMs": 4240,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " responses.",
+          "startMs": 4600,
+          "endMs": 5600,
+          "timestampMs": 5100,
+          "confidence": null
+        },
+        {
+          "text": " They",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " receive",
+          "startMs": 5960,
+          "endMs": 6160,
+          "timestampMs": 6060,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 6240,
+          "endMs": 6720,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 6840,
+          "endMs": 6960,
+          "timestampMs": 6900,
+          "confidence": null
+        },
+        {
+          "text": " sexual",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " reproduction",
+          "startMs": 7440,
+          "endMs": 8080,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 8160,
+          "endMs": 8320,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " genetically",
+          "startMs": 8400,
+          "endMs": 8960,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 9040,
+          "endMs": 9440,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " parents,",
+          "startMs": 9720,
+          "endMs": 10400,
+          "timestampMs": 10060,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10480,
+          "endMs": 10720,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " inherit",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " combinations.",
+          "startMs": 12000,
+          "endMs": 13520,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " Runner",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 13920,
+          "endMs": 14400,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 14480,
+          "endMs": 14880,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 14960,
+          "endMs": 15200,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15280,
+          "endMs": 15360,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 15440,
+          "endMs": 15680,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " narrower",
+          "startMs": 15840,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 16560,
+          "endMs": 16600,
+          "timestampMs": 16580,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 16640,
+          "endMs": 17120,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 17440,
+          "endMs": 17760,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 17880,
+          "endMs": 18000,
+          "timestampMs": 17940,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 18080,
+          "endMs": 18240,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " parent.",
+          "startMs": 18320,
+          "endMs": 19040,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 19560,
+          "endMs": 19680,
+          "timestampMs": 19620,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 19840,
+          "endMs": 20000,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " cannot",
+          "startMs": 20080,
+          "endMs": 20480,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 20680,
+          "endMs": 20880,
+          "timestampMs": 20780,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 21040,
+          "endMs": 21280,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " seedling",
+          "startMs": 21400,
+          "endMs": 21680,
+          "timestampMs": 21540,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 21760,
+          "endMs": 21840,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " grow",
+          "startMs": 21920,
+          "endMs": 22080,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " well",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 22480,
+          "endMs": 22520,
+          "timestampMs": 22500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " dry",
+          "startMs": 22760,
+          "endMs": 22880,
+          "timestampMs": 22820,
+          "confidence": null
+        },
+        {
+          "text": " soil.",
+          "startMs": 23040,
+          "endMs": 23720,
+          "timestampMs": 23380,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 24000,
+          "endMs": 24080,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 24280,
+          "endMs": 24480,
+          "timestampMs": 24380,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 24560,
+          "endMs": 24720,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 25040,
+          "endMs": 25280,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 25360,
+          "endMs": 25680,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " differences",
+          "startMs": 25760,
+          "endMs": 26240,
+          "timestampMs": 26000,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 26320,
+          "endMs": 26400,
+          "timestampMs": 26360,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 26480,
+          "endMs": 26560,
+          "timestampMs": 26520,
+          "confidence": null
+        },
+        {
+          "text": " condition,",
+          "startMs": 26640,
+          "endMs": 27520,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 27640,
+          "endMs": 27760,
+          "timestampMs": 27700,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27840,
+          "endMs": 27880,
+          "timestampMs": 27860,
+          "confidence": null
+        },
+        {
+          "text": " particular",
+          "startMs": 27920,
+          "endMs": 28400,
+          "timestampMs": 28160,
+          "confidence": null
+        },
+        {
+          "text": " seedling",
+          "startMs": 28480,
+          "endMs": 28960,
+          "timestampMs": 28720,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 29040,
+          "endMs": 29200,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 29280,
+          "endMs": 29360,
+          "timestampMs": 29320,
+          "confidence": null
+        },
+        {
+          "text": " receive",
+          "startMs": 29440,
+          "endMs": 29840,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 29880,
+          "endMs": 29920,
+          "timestampMs": 29900,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 30000,
+          "endMs": 30320,
+          "timestampMs": 30160,
+          "confidence": null
+        },
+        {
+          "text": " combination.",
+          "startMs": 30680,
+          "endMs": 31120,
+          "timestampMs": 30900,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 31680,
+          "endMs": 31760,
+          "timestampMs": 31720,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 31840,
+          "endMs": 31920,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 32000,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 32200.000000000004,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32220.000000000004,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 32320,
+          "endMs": 32720,
+          "timestampMs": 32520,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 32800,
+          "endMs": 33040,
+          "timestampMs": 32920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33080,
+          "endMs": 33120,
+          "timestampMs": 33100,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 33200,
+          "endMs": 33600,
+          "timestampMs": 33400,
+          "confidence": null
+        },
+        {
+          "text": " actually",
+          "startMs": 33760,
+          "endMs": 34160,
+          "timestampMs": 33960,
+          "confidence": null
+        },
+        {
+          "text": " grow",
+          "startMs": 34320,
+          "endMs": 34560,
+          "timestampMs": 34440,
+          "confidence": null
+        },
+        {
+          "text": " there.",
+          "startMs": 34640,
+          "endMs": 34960,
+          "timestampMs": 34800,
+          "confidence": null
+        },
+        {
+          "text": " More",
+          "startMs": 35600,
+          "endMs": 35760,
+          "timestampMs": 35680,
+          "confidence": null
+        },
+        {
+          "text": " variation",
+          "startMs": 36120,
+          "endMs": 36480,
+          "timestampMs": 36300,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 36520,
+          "endMs": 36640,
+          "timestampMs": 36580,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 36720,
+          "endMs": 36880,
+          "timestampMs": 36800,
+          "confidence": null
+        },
+        {
+          "text": " possibilities",
+          "startMs": 37000,
+          "endMs": 37600,
+          "timestampMs": 37300,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 37680,
+          "endMs": 37720,
+          "timestampMs": 37700,
+          "confidence": null
+        },
+        {
+          "text": " investigate,",
+          "startMs": 37760,
+          "endMs": 38880,
+          "timestampMs": 38320,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 38960,
+          "endMs": 39200,
+          "timestampMs": 39080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 39280,
+          "endMs": 39360,
+          "timestampMs": 39320,
+          "confidence": null
+        },
+        {
+          "text": " promised",
+          "startMs": 39440,
+          "endMs": 39760,
+          "timestampMs": 39600,
+          "confidence": null
+        },
+        {
+          "text": " winner.",
+          "startMs": 39840,
+          "endMs": 40320,
+          "timestampMs": 40080,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Explain the choice and its limit one stage at a time",
+        "visualDecision": "adjust",
+        "physicalVisual": "Retain the two identified organism groups, goal, untested condition and all three demands. Show one short reasoning or prediction-limit phrase near the relevant plant. The phrase changes rather than accumulating. Do not change seedling appearance to announce a successful result.",
+        "motionPurpose": "Focus each current causal sentence on its physical group. Fade the current reasoning line before the next stage rather than accumulating answer history. Leave unknown trial outcomes unchanged.",
+        "activeFacts": [
+          "Both groups remain untested.",
+          "The goal is to search for inherited differences, not to guarantee a productive crop."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "B gives a wider search for inherited differences.",
+            "view": "feedback-b",
+            "spokenCue": "The crossed seedlings are the better"
+          },
+          {
+            "at": 171,
+            "line": "Different reproductive-cell pairings can give different combinations.",
+            "view": "feedback-b",
+            "spokenCue": "They receive DNA through sexual reproduction"
+          },
+          {
+            "at": 411,
+            "line": "A usually retains one parent's inherited combination.",
+            "view": "feedback-a",
+            "spokenCue": "Runner offspring usually copy"
+          },
+          {
+            "at": 581,
+            "line": "Which plant will grow well is still unknown.",
+            "view": "feedback-unknown",
+            "spokenCue": "But we still cannot predict"
+          },
+          {
+            "at": 720,
+            "line": "Useful inherited differences may not be present.",
+            "view": "feedback-unknown",
+            "spokenCue": "The parents may not carry useful differences"
+          },
+          {
+            "at": 951,
+            "line": "Test the plants in the stated conditions.",
+            "view": "feedback-unknown",
+            "spokenCue": "We would need to compare"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "heading": "New individuals. Inherited information.",
+      "body": "",
+      "durationInFrames": 852,
+      "voiceover": {
+        "text": "Reproduction provides new individuals and passes inherited information to another generation. Copying can keep a useful combination; sexual reproduction can produce different inherited combinations. Neither route guarantees that offspring will survive. Next, we'll look at how different animals bring sperm and egg together and support the development of their offspring. The detailed plant mechanisms follow in their own lessons.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/handoff.f2093df4fd77.mp3",
+        "startFrame": 0,
+        "endFrame": 792
+      },
+      "captions": [
+        {
+          "text": "Reproduction",
+          "startMs": 0,
+          "endMs": 664,
+          "timestampMs": 332,
+          "confidence": null
+        },
+        {
+          "text": " provides",
+          "startMs": 720,
+          "endMs": 1200,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " individuals",
+          "startMs": 1760,
+          "endMs": 2240,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2320,
+          "endMs": 2480,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " passes",
+          "startMs": 2560,
+          "endMs": 2960,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 3080,
+          "endMs": 3520,
+          "timestampMs": 3300,
+          "confidence": null
+        },
+        {
+          "text": " information",
+          "startMs": 3600,
+          "endMs": 4240,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 4600,
+          "endMs": 4800,
+          "timestampMs": 4700,
+          "confidence": null
+        },
+        {
+          "text": " generation.",
+          "startMs": 4880,
+          "endMs": 5840,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " Copying",
+          "startMs": 6160,
+          "endMs": 6640,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 6960,
+          "endMs": 7040,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 7280,
+          "endMs": 7600,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " combination;",
+          "startMs": 7680,
+          "endMs": 8880,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " sexual",
+          "startMs": 8960,
+          "endMs": 9360,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " reproduction",
+          "startMs": 9440,
+          "endMs": 10000,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 10080,
+          "endMs": 10240,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " produce",
+          "startMs": 10440,
+          "endMs": 10640,
+          "timestampMs": 10540,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 10720,
+          "endMs": 11120,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 11200,
+          "endMs": 11600,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " combinations.",
+          "startMs": 11680,
+          "endMs": 12480,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " Neither",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " guarantees",
+          "startMs": 13760,
+          "endMs": 14480,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 14720,
+          "endMs": 15040,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " survive.",
+          "startMs": 15280,
+          "endMs": 16320,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 16800,
+          "endMs": 17280,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 17840,
+          "endMs": 18000,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 18080,
+          "endMs": 18400,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 18600,
+          "endMs": 18800,
+          "timestampMs": 18700,
+          "confidence": null
+        },
+        {
+          "text": " bring",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 19120,
+          "endMs": 19520,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19560,
+          "endMs": 19600,
+          "timestampMs": 19580,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 19680,
+          "endMs": 19840,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " together",
+          "startMs": 19960,
+          "endMs": 20400,
+          "timestampMs": 20180,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20640,
+          "endMs": 20800,
+          "timestampMs": 20720,
+          "confidence": null
+        },
+        {
+          "text": " support",
+          "startMs": 21000,
+          "endMs": 21200,
+          "timestampMs": 21100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21240,
+          "endMs": 21280,
+          "timestampMs": 21260,
+          "confidence": null
+        },
+        {
+          "text": " development",
+          "startMs": 21360,
+          "endMs": 21840,
+          "timestampMs": 21600,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21920,
+          "endMs": 22000,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 22080,
+          "endMs": 22160,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " offspring.",
+          "startMs": 22240,
+          "endMs": 23000,
+          "timestampMs": 22620,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 23280,
+          "endMs": 23360,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " detailed",
+          "startMs": 23400,
+          "endMs": 23840,
+          "timestampMs": 23620,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 23920,
+          "endMs": 24160,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " mechanisms",
+          "startMs": 24240,
+          "endMs": 24800,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 24960,
+          "endMs": 25200,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 25280,
+          "endMs": 25360,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 25600,
+          "endMs": 25680,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " lessons.",
+          "startMs": 25760,
+          "endMs": 26400,
+          "timestampMs": 26080,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Close the main question and set the next boundary",
+        "visualDecision": "adjust",
+        "physicalVisual": "Show one quiet parent/daughter relationship beside the crossed parents and seedlings, with no abstract lineage parade. Finish with the next question while the plant examples remain stable.",
+        "motionPurpose": "A restrained final comparison and next-question reveal. Do not repeat the whole lesson as a moving note list.",
+        "activeFacts": [
+          "Reproduction permits continuity, while later survival and reproduction are still necessary."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "New offspring inherit information.",
+            "view": "compare",
+            "spokenCue": "Reproduction provides new individuals"
+          },
+          {
+            "at": 185,
+            "line": "Copying keeps a combination. Sexual reproduction can vary it.",
+            "view": "compare",
+            "spokenCue": "Copying can keep a useful combination"
+          },
+          {
+            "at": 392,
+            "line": "Neither method guarantees offspring survival.",
+            "view": "compare",
+            "spokenCue": "Neither route guarantees"
+          },
+          {
+            "at": 504,
+            "line": "Next: how do animals reproduce?",
+            "view": "compare",
+            "spokenCue": "Next, we'll look at"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "body": "",
+      "durationInFrames": 768,
+      "voiceover": {
+        "text": "If you'd like a short set of notes, copy these now, or pause for more time.",
+        "audioFile": "public/audio/Biology-Y12-M5-B1-teaching-reset-2026-10-11-take01/key-notes.c70aea68fe61.mp3",
+        "startFrame": 0,
+        "endFrame": 144
+      },
+      "captions": [
+        {
+          "text": "If",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 200,
+          "endMs": 320,
+          "timestampMs": 260,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 400,
+          "endMs": 480,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " short",
+          "startMs": 760,
+          "endMs": 880,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 960,
+          "endMs": 1120,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1160,
+          "endMs": 1200,
+          "timestampMs": 1180,
+          "confidence": null
+        },
+        {
+          "text": " notes,",
+          "startMs": 1280,
+          "endMs": 1920,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 2040,
+          "endMs": 2160,
+          "timestampMs": 2100,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 2240,
+          "endMs": 2400,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " now,",
+          "startMs": 2480,
+          "endMs": 3040,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 3160,
+          "endMs": 3280,
+          "timestampMs": 3220,
+          "confidence": null
+        },
+        {
+          "text": " pause",
+          "startMs": 3520,
+          "endMs": 3840,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 3920,
+          "endMs": 4000,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " time.",
+          "startMs": 4240,
+          "endMs": 4800,
+          "timestampMs": 4520,
+          "confidence": null
+        }
+      ],
+      "teachingReset": {
+        "role": "Optional quiet consolidation after explanation",
+        "visualDecision": "reuse-and-adjust",
+        "physicalVisual": "No separate diagram is needed. This is a deliberately stable copy board after the organism-based explanation, not a diagram slot filled with text.",
+        "motionPurpose": "All notes settle together before quiet copying begins. No sequential teaching reveal, plant motion or new spoken reasoning during the hold.",
+        "activeFacts": [
+          "Only previously explained essentials remain."
+        ],
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Copy these notes now, or pause for more time.",
+            "view": "notes",
+            "spokenCue": "If you'd like a short set of notes"
+          }
+        ],
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending.",
+        "quietHoldStartFrame": 156
+      },
+      "points": [
+        "Reproduction produces offspring and passes on DNA. Enough offspring must survive and reproduce for a population to continue.",
+        "Asexual reproduction occurs without gametes joining. Runner offspring usually retain the parent's inherited combination.",
+        "Sexual reproduction joins gametes and can produce different inherited combinations. Useful differences depend on the conditions."
+      ],
+      "pilotOnly": false
+    }
+  ],
+  "teachingRenderer": "b1Continuity",
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

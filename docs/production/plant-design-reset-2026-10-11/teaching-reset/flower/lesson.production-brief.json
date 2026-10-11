@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/plant-design-reset-2026-10-11/teaching-reset/flower/lesson.json",
+    "lessonSha256": "15dfde72aa913447f329e91a11206ddb8caec924a8e12d295d58a8303f462227"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Fresh Year 12 students know plants contain cells. Earlier B1/B2 introduced reproduction and sperm/egg joining; this lesson supplies the meanings and physical flower locations it needs. No meiosis or chromosome knowledge.",
+    "startsWith": "Pollen arrives on a flower, but the egg lies inside an ovule.",
+    "stopsAfter": "Explain the embryo-forming pollen-tube route and why a stopped tube can leave pollination complete without fertilising this egg. Ovule becomes seed containing an embryo; complete double fertilisation and germination physiology deferred.",
+    "nextLesson": "bio-m5-b02b delivery part 2: How does a strawberry runner make a new plant?"
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/module5-memory-aids-2026-10-11.md",
+    "docs/production/module5-video-route-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Explain why pollen arrival needs a pollen-tube route before an embryo forms inside a seed.",
+    "causalExplanation": "Pollen arrives at stigma while egg is elsewhere inside ovule. Compatible pollen grows a tube that carries sperm to the egg. Joining starts embryo development; surrounding ovule develops into seed. Stopping that route before the only ovule prevents this egg from being fertilised.",
+    "conversationalApproach": "Introduce each term with an object and action in the current picture. Retain only the current causal sentence. Explain before classifying or offering a memory contrast.",
+    "openingDecision": "Ask whether receiving pollen already makes a new plant. Address that precise confusion through the route and stopped-tube case; no generic mistake/fix scene.",
+    "understandingCheck": "Compatible pollen reaches stigma, tube stops before the only ovule and no other tube reaches it. Students decide pollination, egg fertilisation and whether this embryo-forming route can continue. All conditions and demands remain during a separate quiet hold.",
+    "curriculumScope": "Focused candidate contribution to B-plants in canonical bio-m5-b02b. Flower and runner are separate delivery parts. Source presence and visual fit do not establish reviewed action coverage."
+  },
+  "scenes": [
+    {
+      "sceneId": "flower-question",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Establish one learner question and distinguish arrival from a young plant.",
+      "narrationCue": "A flower receives pollen.",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-egg",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Locate the destination before explaining how pollen supplies its route.",
+      "narrationCue": "First, find the egg. | Sperm and egg are reproductive cells",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-pollination",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Keep pollen distinct from a sperm cell and show the physical gap.",
+      "narrationCue": "Pollen is produced | When pollen reaches | The pollen is on the stigma",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-tube",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Animate the route in the relevant structure; round sperm cells have no swimming tails.",
+      "narrationCue": "When compatible pollen lands | Sperm cells associated | The tube reaches the ovule",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-join",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Explain joining, subsequent development and classification in that order. The second fertilisation event is deferred in author notes.",
+      "narrationCue": "One sperm cell joins the egg. | The fertilised egg can divide | This is sexual reproduction",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-seed",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Use a magnified model with embryo nested inside the seed; no strawberry-fruit transformation.",
+      "narrationCue": "As development continues | The embryo is the young plant inside | Later, if conditions support germination",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-attempt",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Keep pollen at stigma, the stopped tube and egg inside ovule visible, without an answer or outcome.",
+      "narrationCue": "Try this changed case.",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Keep complete supplied stimulus and all demands answer-free. Provisional hold requires measured prompt and assembled silence before feedback."
+    },
+    {
+      "sceneId": "flower-feedback",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Retain the complete changed case and explain the broken causal link.",
+      "narrationCue": "Pollination happened | The sperm was not delivered | The embryo-forming pathway",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "flower-memory",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Retrieve physical landmarks after explaining their causal relationship.",
+      "narrationCue": "Keep the two landmarks | Arrival is not joining. | After joining",
+      "motionPurpose": "Locate the selected flower structures, animate the pollen-tube route and sperm delivery at their own cues, then select embryo and seed in the later explained stage. No chromosome or second-fertilisation animation.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "none",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx generic flower cutaway, magnified ovule/seed models. Existing strawberry art inspected and unsuitable for this single-ovary example.",
+      "teachingReason": "Quiet copy board after new reasoning.",
+      "narrationCue": "If you would like notes",
+      "motionPurpose": "Stable quiet essentials after the short invitation.",
+      "holdPurpose": "Quiet reading/copy hold with optional pause. Final boundary must follow the actual invitation take."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/measured_review_final",
+    "evidence": {
+      "path": "docs/production/plant-design-reset-2026-10-11/teaching-reset/flower/source-review.json",
+      "sha256": "4a1312a03f7368199d9130cf0b0583cf16e216056863b8f05d3c02c35495b698"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/measured_review_final",
+    "evidence": {
+      "path": "docs/production/plant-design-reset-2026-10-11/teaching-reset/flower/source-review.json",
+      "sha256": "4a1312a03f7368199d9130cf0b0583cf16e216056863b8f05d3c02c35495b698"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Independent full source science/learning and sampled native review passed. Exact measured voiced review, continuous playback, human listening and public release remain pending."
+}

@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "reviewer": "/root/c4_review_final",
+  "scope": "Independent source, exact alignment and sampled actual native visual review. Not a continuous voiced watch or human listening review.",
+  "result": "pass-no-material-blockers-in-inspected-scope",
+  "source": {
+    "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset/measured/lesson.json",
+    "sha256": "54d00b001edb618f7c92986f13ded92019170f2063b79421c71241dfc8896fcc",
+    "snapshotSourceSha256": "54d00b001edb618f7c92986f13ded92019170f2063b79421c71241dfc8896fcc"
+  },
+  "renderer": {
+    "path": "src/slides/FungiMouldTeachingSlide.tsx",
+    "sha256": "d918db99a7d7c387ae4bbaf1958b2253d3ce8c81e493cc07399f041b77b30c9e"
+  },
+  "page": {
+    "directory": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1",
+    "inputsPath": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/inputs.json",
+    "inputsSha256": "0b4f61b3da9d8855f0111b6e994d3edac3c16bb635cdf9acebcbd32c3609905c",
+    "reviewJsSha256": "4998865c3f80be4c2050a211a55643d7d49994fc1d7788b3e29b0f45aefa75e4",
+    "pageSha256": "7b8486abc3ae000acc3cf552bcee8748596dccef1e42f967fdc015d760ff31a0"
+  },
+  "inspectedFrames": [
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-hook.png",
+      "sha256": "3858b2925cbaea0e03624207408c9b73c324d06a1d1b9d11184b5ba76e598e91"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-threads.png",
+      "sha256": "ea3723438594bf7913cd4ffea84be7fe641141818c3ecbe7eb09349ae7ceeffc"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-spore-case.png",
+      "sha256": "7ee9dba9c0daec14eca0c7992766a8e35749ffa439c8e325661a8c550ce0cf9e"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-release.png",
+      "sha256": "dcb49411fed3ea20f966276d80dd6be7c91c9c059ec6b25d6c3bf99a50112c3e"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-new-growth.png",
+      "sha256": "ddded80306c1cb17e8dc08bb31c1ba8a19a5b2becb41d11e95441ed4a9aabd63"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-attempt.png",
+      "sha256": "1d5fe1f3c13ea6960f8d62e608afad7df1b31e692a2e707f74217fa51499e3b1"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-feedback.png",
+      "sha256": "edf0712433b239744094dcdbb3c49622c3d9bdf9edc17ba670cd01fd828029a5"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-memory.png",
+      "sha256": "5e14124448d4cb2d431165e95c0fce5d7a04318d765fc88e5dee911ac46710ea"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-key-notes.png",
+      "sha256": "a44df9cb5d440ca15cf4ee05adadf95006fec9eeac279a7c9bad62700b483199"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-feedback-150.png",
+      "sha256": "e2818e72af5c216e2eaebf4836faafdc0975c142f7b890359a0040658b947203"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-feedback-465.png",
+      "sha256": "7926857e5d588a7344a25d91ac5681093eebe7a03481ea733ab3e16ac45fbb21"
+    },
+    {
+      "path": "out/prototypes/mould-production-voiced-reset-2026-10-11-v1/native-mould-feedback-500.png",
+      "sha256": "42b08c144af3f1d289eb8ea5628d04c938cca163819db6c856f50eba58d20e0e"
+    }
+  ],
+  "cueValidation": {
+    "count": 21,
+    "method": "Exact phrase occurs once in selected alignment; ceil(character start seconds * 30) equals registered cue frame.",
+    "selectedCues": [
+      {
+        "sceneId": "mould-hook",
+        "cues": [
+          {
+            "key": "whole",
+            "phrase": "You may have seen",
+            "frame": 0
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "mould-threads",
+        "cues": [
+          {
+            "key": "threads",
+            "phrase": "Close up",
+            "frame": 0
+          },
+          {
+            "key": "threads",
+            "phrase": "The fungus gets nutrients",
+            "frame": 336
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "mould-spore-case",
+        "cues": [
+          {
+            "key": "head",
+            "phrase": "Some threads form",
+            "frame": 0
+          },
+          {
+            "key": "spores",
+            "phrase": "Inside a head",
+            "frame": 116
+          },
+          {
+            "key": "head",
+            "phrase": "The rounded structure",
+            "frame": 394
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "mould-release",
+        "cues": [
+          {
+            "key": "release",
+            "phrase": "When the sporangium matures",
+            "frame": 0
+          },
+          {
+            "key": "release",
+            "phrase": "Air movement",
+            "frame": 166
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "mould-new-growth",
+        "cues": [
+          {
+            "key": "germinate",
+            "phrase": "On suitable food, with enough moisture",
+            "frame": 0
+          },
+          {
+            "key": "germinate",
+            "phrase": "We call that germination.",
+            "frame": 188
+          },
+          {
+            "key": "germinate",
+            "phrase": "A thin thread grows out",
+            "frame": 257
+          },
+          {
+            "key": "germinate",
+            "phrase": "In the production route we have shown",
+            "frame": 435
+          },
+          {
+            "key": "germinate",
+            "phrase": "Rhizopus also has a sexual route",
+            "frame": 695
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "mould-attempt",
+        "cues": [
+          {
+            "key": "attempt",
+            "phrase": "Here is a new arrangement",
+            "frame": 0
+          }
+        ],
+        "responseHold": {
+          "startFrame": 716,
+          "endFrame": 1166
+        }
+      },
+      {
+        "sceneId": "mould-feedback",
+        "cues": [
+          {
+            "key": "travel",
+            "phrase": "The pieces do not need",
+            "frame": 0
+          },
+          {
+            "key": "arrive",
+            "phrase": "If a spore lands",
+            "frame": 264
+          },
+          {
+            "key": "grow",
+            "phrase": "it can germinate",
+            "frame": 465
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "mould-memory",
+        "cues": [
+          {
+            "key": "threads",
+            "phrase": "That gives us",
+            "frame": 0
+          },
+          {
+            "key": "spores",
+            "phrase": "The spores can carry",
+            "frame": 255
+          },
+          {
+            "key": "head",
+            "phrase": "In the route we followed",
+            "frame": 377
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "key-notes",
+        "cues": [
+          {
+            "key": "notes",
+            "phrase": "If you would like notes",
+            "frame": 0
+          }
+        ],
+        "responseHold": null
+      }
+    ]
+  },
+  "learnerAndScienceFindings": "Visible mould threads feed; sporangia make spores; released spores travel before suitable conditions allow germination into branching threads. Terms are introduced plainly. The illustrated route is asexual and the necessary sexual-route boundary appears once. Clean bread B retains all supplied conditions and both question demands without answer. Threads feed, spores spread follows explanation. Optional notes have a quiet copying hold.",
+  "continuousVoicedReview": "pending-not-performed",
+  "humanListening": "pending-not-performed",
+  "releaseApproval": "not-granted"
+}

@@ -1,0 +1,604 @@
+{
+  "title": "What changes directly, and what follows by reaction?",
+  "subtitle": "Separate the direct change from the reaction afterwards",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "Candidate explanation: concentration and temperature disturbances, with stated conditions. Practical investigation and action approval remain pending."
+  ],
+  "nesaOutcomes": [
+    "CH12-12"
+  ],
+  "inquiryQuestion": "What factors affect equilibrium and how?",
+  "lessonIntent": "What changes directly, and what follows by reaction?",
+  "examSkill": "Explain a supplied disturbance using initial rate imbalance or the stated heat-releasing direction.",
+  "productionRole": "draft",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "scenes": [
+    {
+      "id": "c3-hook",
+      "durationInFrames": 874,
+      "caption": "Separate the direct addition from the later reaction.",
+      "voiceover": {
+        "text": "Imagine our mixture already at equilibrium. A becomes B while B becomes A at the same average rate. Now add a little more A. Does B rise at that instant too? We added A, not B. Extra B has to be made by reaction. Watch those two moments separately: what we change directly, then what the reaction does afterwards."
+      },
+      "syllabusDotPointIndex": -1,
+      "type": "concept",
+      "heading": "Add A: what changes immediately?",
+      "body": "A ⇌ B. Brief addition, then close the mixture again.",
+      "comparison": [
+        {
+          "label": "Initial equilibrium",
+          "amount": "One-to-one model",
+          "mass": "A: 2; B: 1"
+        },
+        {
+          "label": "Brief addition",
+          "amount": "Fixed temperature and volume",
+          "mass": "Add A only"
+        }
+      ],
+      "comparisonIsPrompt": true,
+      "callout": "Extra B has to be made by reaction.",
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5DisturbanceClear",
+        "delay": 0,
+        "props": {
+          "mode": "additionHook",
+          "uncluttered": true,
+          "barReferenceStyle": "solidMarks",
+          "at": {
+            "event": 230,
+            "response": 460
+          }
+        }
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.at.event",
+          "phrase": "Now add",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.response",
+          "phrase": "Extra B",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c3-add",
+      "durationInFrames": 1640,
+      "caption": "Only A jumps. Reaction changes both concentrations afterwards.",
+      "voiceover": {
+        "text": "Keep the one-to-one A and B model, with temperature and volume fixed. Concentration means amount per volume. Briefly add A, then close the container again. Only A jumps up. In our model, each direction is faster when more of its starting substance is present. More A makes A to B faster. B has not changed yet, so B to A is initially unchanged. More B is now made than used. A falls from its jump while B rises. Their changing amounts bring the rates back towards equality. The original-level marks matter: A finishes below its immediate jump, but above its original level in this model. The reaction uses some of the extra A, rather than undoing our addition completely."
+      },
+      "syllabusDotPointIndex": -1,
+      "type": "concept",
+      "heading": "Add A: direct change, then reaction",
+      "body": "A ⇌ B. Fixed temperature and volume.",
+      "bullets": [
+        {
+          "text": "A ⇌ B. Fixed temperature and volume.",
+          "at": 0.8
+        },
+        {
+          "text": "Only A rises immediately.",
+          "at": 22.733333333333334
+        },
+        {
+          "text": "A to B initially faster; B to A unchanged.",
+          "at": 25.733333333333334
+        },
+        {
+          "text": "A falls from its jump; B rises.",
+          "at": 45
+        },
+        {
+          "text": "Final: more A and B than originally, in this model.",
+          "at": 52.733333333333334
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5DisturbanceClear",
+        "delay": 0,
+        "props": {
+          "mode": "addA",
+          "uncluttered": true,
+          "qualitativeReferences": true,
+          "barReferenceStyle": "solidMarks",
+          "at": {
+            "event": 217,
+            "rateReason": 562,
+            "response": 894,
+            "limit": 1111
+          }
+        }
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.at.event",
+          "phrase": "Briefly add",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.rateReason",
+          "phrase": "More A makes",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.response",
+          "phrase": "A falls",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.limit",
+          "phrase": "The original-level",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c3-remove",
+      "durationInFrames": 1257,
+      "caption": "Reset the experiment. Replacement is partial in this model.",
+      "voiceover": {
+        "text": "Reset to the original equilibrium for a separate experiment. Remove some B, then close the container again. B drops immediately. A does not jump. Less B slows B to A at first, so A to B is now faster. B starts recovering from its drop while A decreases. That is a shift towards B: the direction of the reaction after our change. In this model, B still finishes below its original level. A shift towards B does not mean B is higher than it was before we removed it."
+      },
+      "syllabusDotPointIndex": -1,
+      "type": "concept",
+      "heading": "Separate experiment: remove B",
+      "body": "A ⇌ B. Fixed temperature and volume; reclose.",
+      "bullets": [
+        {
+          "text": "A ⇌ B. Fixed temperature and volume; reclose.",
+          "at": 0.8
+        },
+        {
+          "text": "Only B drops immediately.",
+          "at": 6.866666666666666
+        },
+        {
+          "text": "B to A initially slower; A to B faster.",
+          "at": 12
+        },
+        {
+          "text": "B partly recovers, but remains below original.",
+          "at": 32.6
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5DisturbanceClear",
+        "delay": 0,
+        "props": {
+          "mode": "removeB",
+          "uncluttered": true,
+          "qualitativeReferences": true,
+          "barReferenceStyle": "solidMarks",
+          "at": {
+            "event": 115,
+            "response": 498,
+            "originalCompare": 791
+          }
+        }
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.at.event",
+          "phrase": "Remove some B",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.response",
+          "phrase": "B starts recovering",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.originalCompare",
+          "phrase": "In this model",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c3-temperature",
+      "durationInFrames": 1308,
+      "caption": "Use the written heat-releasing direction to predict the response.",
+      "voiceover": {
+        "text": "Now change temperature instead, keeping matter inside and volume fixed. Two nitrogen dioxide molecules join to form one dinitrogen tetroxide molecule. Joining releases heat: we call that direction exothermic, meaning heat-releasing. Splitting absorbs heat. Heating favours the heat-absorbing direction in the new equilibrium, so there is more nitrogen dioxide and less dinitrogen tetroxide. Nitrogen dioxide is brown; dinitrogen tetroxide is colourless. The warmer mixture is therefore browner. Cooling favours the heat-releasing direction and gives the opposite result. First identify which direction releases heat. Heating does not always give more of the written product."
+      },
+      "syllabusDotPointIndex": -1,
+      "type": "concept",
+      "heading": "Which direction releases heat?",
+      "body": "2NO₂(g) ⇌ N₂O₄(g). Closed; fixed volume.",
+      "bullets": [
+        {
+          "text": "2NO₂(g) ⇌ N₂O₄(g). Closed; fixed volume.",
+          "at": 0.8
+        },
+        {
+          "text": "Joining releases heat: exothermic, ΔH < 0.",
+          "at": 13.733333333333333
+        },
+        {
+          "text": "Splitting absorbs heat: endothermic.",
+          "at": 24.866666666666667
+        },
+        {
+          "text": "Heating favours splitting; cooling favours joining.",
+          "at": 28.733333333333334
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5DisturbanceClear",
+        "delay": 0,
+        "props": {
+          "mode": "associationHeat",
+          "uncluttered": true,
+          "plainHeat": true,
+          "at": {
+            "association": 128,
+            "exothermic": 268,
+            "reverse": 396,
+            "heating": 434,
+            "cooling": 855
+          }
+        }
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.at.association",
+          "phrase": "Two nitrogen",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.exothermic",
+          "phrase": "Joining releases",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.reverse",
+          "phrase": "Splitting absorbs",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.heating",
+          "phrase": "Heating favours",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.cooling",
+          "phrase": "Cooling favours",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "id": "c3-temperature-response",
+      "durationInFrames": 1512,
+      "caption": "Temperature changes K; composition adjusts afterwards.",
+      "voiceover": {
+        "text": "Watch the concentration graph during an idealised rapid temperature change. We keep volume fixed and transfer no reacting material into or out of the container. So neither concentration jumps just because we heated it. The reaction changes the concentrations afterwards. Heating changes how readily the opposing reactions happen, and for this heat-releasing joining reaction their previous balance is lost in favour of splitting. Nitrogen dioxide rises while dinitrogen tetroxide falls. Hold the new temperature steady as the mixture approaches a new balance. The missing vertical jump is useful here because our stated change was temperature alone at fixed volume. It would not identify the cause of every unknown graph."
+      },
+      "syllabusDotPointIndex": -1,
+      "type": "concept",
+      "heading": "Temperature first, composition later",
+      "body": "Closed; fixed volume. No material added or removed.",
+      "bullets": [
+        {
+          "text": "Closed; fixed volume. No material added or removed.",
+          "at": 0.8
+        },
+        {
+          "text": "No imposed concentration jump. Reaction follows.",
+          "at": 33
+        },
+        {
+          "text": "K belongs to the new temperature immediately.",
+          "at": 39.43333333333333
+        },
+        {
+          "text": "Written exothermic forward reaction: heating lowers K.",
+          "at": 47.6
+        }
+      ],
+      "revealDelays": {
+        "heading": 12
+      },
+      "conceptVisualLayout": "diagramBoard",
+      "diagramStyle": "default",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5DisturbanceClear",
+        "delay": 0,
+        "props": {
+          "mode": "temperatureResponse",
+          "uncluttered": true,
+          "showK": false,
+          "at": {
+            "event": 319,
+            "continuousConcentrations": 434,
+            "defineNewK": 999999,
+            "response": 804
+          }
+        }
+      },
+      "timingStatus": "Estimated silent cues, new speech/alignment pending",
+      "spokenCues": [
+        {
+          "path": "diagram.props.at.event",
+          "phrase": "So neither concentration",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.continuousConcentrations",
+          "phrase": "The reaction changes",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        },
+        {
+          "path": "diagram.props.at.response",
+          "phrase": "Nitrogen dioxide rises",
+          "unit": "frames",
+          "offsetPath": "diagram.delay"
+        }
+      ]
+    },
+    {
+      "type": "quickCheck",
+      "heading": "Add B: direct change, then reaction",
+      "question": "Which concentration changes immediately? Which direction is then faster, and how do both concentrations change afterwards?",
+      "timingStatus": "Separate question-only and feedback takes. All cues estimated until new alignment.",
+      "id": "c3-transfer-attempt",
+      "responseRole": "attempt",
+      "caption": "Use the supplied model to explain your reasoning.",
+      "answerSteps": [],
+      "voiceover": {
+        "text": "Try a new change to our one-to-one model. Start at equilibrium, keep temperature and volume fixed, add B, then close the container again. Each rate increases when more of its starting substance is present. Which concentration changes immediately? Which direction is then faster, and how do A and B change afterwards? Pause to work through both moments."
+      },
+      "durationInFrames": 1238,
+      "responseHold": {
+        "startFrame": 788,
+        "endFrame": 1238
+      },
+      "revealDelays": {
+        "heading": 12,
+        "responseHoldStart": 788,
+        "pausePrompt": 728,
+        "answerVisibleStart": 1238,
+        "stepAts": []
+      },
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "reducedReading": true,
+        "captionSafeWorking": true,
+        "task": "Add B: direct change, then reaction",
+        "equation": "A ⇌ B (one-to-one)",
+        "givens": [],
+        "responseQuestions": [
+          "Which concentration changes immediately?",
+          "Which direction is then faster, and how do both concentrations change afterwards?"
+        ],
+        "responseQuestionsEndAt": 1268,
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "A ⇌ B (one-to-one)",
+            "lines": [
+              "Initially at equilibrium",
+              "Add B, then reclose",
+              "Temperature and volume fixed",
+              "More starting substance: faster"
+            ],
+            "task": "Add B: direct change, then reaction"
+          }
+        ],
+        "stages": []
+      }
+    },
+    {
+      "type": "quickCheck",
+      "heading": "Add B: direct change, then reaction",
+      "question": "Which concentration changes immediately? Which direction is then faster, and how do both concentrations change afterwards?",
+      "timingStatus": "Separate question-only and feedback takes. All cues estimated until new alignment.",
+      "id": "c3-transfer-feedback",
+      "responseRole": "feedback",
+      "caption": "Compare both directions.",
+      "answerSteps": [
+        "Only B jumps immediately. B to A becomes faster; A to B initially unchanged.",
+        "A increases; B falls from its jump. Their changing concentrations bring rates towards balance."
+      ],
+      "voiceover": {
+        "text": "Only B jumps because only B was added. More B makes B to A faster, while A to B is initially unchanged. A is made faster than it is used, so A increases. B falls from its jump as it is converted to A. The changing concentrations bring the rates back towards balance."
+      },
+      "durationInFrames": 827,
+      "revealDelays": {
+        "heading": 0,
+        "answerVisibleStart": 0,
+        "stepAts": [
+          13,
+          281
+        ]
+      },
+      "spokenCues": [
+        {
+          "path": "revealDelays.stepAts.0",
+          "phrase": "Only B jumps",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.0.lineAts.0",
+          "phrase": "Only B jumps",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.0.lineAts.1",
+          "phrase": "Only B jumps",
+          "unit": "frames"
+        },
+        {
+          "path": "revealDelays.stepAts.1",
+          "phrase": "A is made faster",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.focusedContext.1.at",
+          "phrase": "A is made faster",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.1.lineAts.0",
+          "phrase": "A is made faster",
+          "unit": "frames"
+        },
+        {
+          "path": "calculationPresentation.stages.1.lineAts.1",
+          "phrase": "A is made faster",
+          "unit": "frames"
+        }
+      ],
+      "calculationPresentation": {
+        "layout": "module5Evidence",
+        "reducedReading": true,
+        "captionSafeWorking": true,
+        "task": "Add B: direct change, then reaction",
+        "equation": "A ⇌ B (one-to-one)",
+        "givens": [],
+        "focusedContext": [
+          {
+            "at": 0,
+            "title": "Use the model",
+            "lines": [
+              "Initially at equilibrium",
+              "Add B, then reclose",
+              "Temperature and volume fixed"
+            ],
+            "task": "What changes immediately?"
+          },
+          {
+            "at": 281,
+            "title": "Reaction afterwards",
+            "lines": [
+              "More starting substance: faster"
+            ],
+            "task": "What does the reaction do afterwards?"
+          }
+        ],
+        "stages": [
+          {
+            "label": "Explain the cause",
+            "lines": [
+              "Only B jumps immediately.",
+              "B to A becomes faster; A to B initially unchanged."
+            ],
+            "lineAts": [
+              13,
+              13
+            ]
+          },
+          {
+            "label": "What follows",
+            "lines": [
+              "A increases; B falls from its jump.",
+              "Their changing concentrations bring rates towards balance."
+            ],
+            "lineAts": [
+              281,
+              281
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "c3-memory-and-handoff",
+      "type": "summary",
+      "heading": "Direct change first. Reaction follows.",
+      "points": [
+        "Separate the imposed change from the reaction afterwards.",
+        "Heating favours heat absorption; cooling favours heat release.",
+        "Always state the written reaction and fixed conditions."
+      ],
+      "caption": "Next: gaseous equilibria and volume.",
+      "voiceover": {
+        "text": "Le Chatelier’s principle summarises the response: a disturbed equilibrium reacts in a direction that opposes the imposed change. Our rate comparison explains how that response happens. A useful anchor is direct change first, reaction follows. For temperature, identify heat release before predicting the direction. Treat writing heat beside the equation as a memory aid, not as a literal concentration of heat. Next, we will change the volume of a gaseous equilibrium. Here are the useful notes. Pause to copy if you need longer."
+      },
+      "durationInFrames": 1250
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "points": [
+        "Direct change first: Reaction follows. Compare immediate and original levels.",
+        "Concentration change: At fixed temperature and volume, adding or removing a substance changes that concentration first.",
+        "Temperature change: Heating favours heat absorption; cooling favours heat release. Identify the written direction."
+      ],
+      "caption": "Optional book notes. Pause to copy.",
+      "durationInFrames": 600,
+      "quietReading": true,
+      "revealDelays": {
+        "heading": 0,
+        "takeawayAts": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "audioStatus": "Unrecorded rewrite. No previous audio or captions bound to new text.",
+  "routeId": "chem-m5-c03",
+  "teachingOwnership": "Route teachingOwnershipReset2026-10-11. Collision action retained for later support; catalyst in C4B; K in C5/C9. No coverage pass.",
+  "timingStatus": "Provisional word-rate cues only, new speech/alignment pending."
+}

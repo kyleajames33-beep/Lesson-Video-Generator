@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01",
+  "lessonPath": "docs/production/module5-seconds-notes-2026-10-10/chemistry/teaching-reset/lesson.json",
+  "lessonSha256": "04cb59f51a6aa4c0e8cfdb03bc21ecb4a0a72c3c43f35269e0b7b10a7be852ba",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/module5-seconds-notes-2026-10-10/chemistry/teaching-reset/production-brief.json",
+    "sha256": "cbd9b946b68b65191d7f54ed75a129136c10c7fd4aba5abd3418c1b772111afa"
+  },
+  "scenes": [
+    {
+      "id": "c2-hook",
+      "parentSceneId": "c2-hook",
+      "text": "Last time, continuing exchange explained a steady-looking mixture. But our next mixture does not start at equilibrium. Imagine a closed container containing only A. As B forms, can it start changing back into A before the forward reaction finishes? Yes. Let us follow those two processes together and see why their rates come to match.",
+      "hash": "283531c7b8c1",
+      "textSha256": "283531c7b8c164975cbb34e941eb596476c8939983fa28d1d75f62c4b57a8472",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-hook.283531c7b8c1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-hook.283531c7b8c1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-hook.283531c7b8c1.generation.json",
+      "plannedRequestSha256": "b764f4f95624de434e06e902552189c9a8f8563e070e1047467e9a37a0cae13a"
+    },
+    {
+      "id": "c2-model",
+      "parentSceneId": "c2-model",
+      "text": "Use a simple one-to-one reaction model: one A becomes one B, and one B becomes one A. Matter stays inside, and temperature and volume remain fixed. The bars show concentration: how much substance is present per volume. In this particular model, more of a starting substance means a faster reaction in its direction. At the start there is A but no B. So A can become B, but there is no B available to change back yet. As soon as B begins to form, the reverse reaction can begin too.",
+      "hash": "ee7f9a78cbfe",
+      "textSha256": "ee7f9a78cbfe2db177d98f56ef9388a3fa08924d7f36f3df369034e48011bb61",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-model.ee7f9a78cbfe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-model.ee7f9a78cbfe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-model.ee7f9a78cbfe.generation.json",
+      "plannedRequestSha256": "4fb5f5b15f3c012eed4b22cf5baf2611930612377a98f82487c112f08c646688"
+    },
+    {
+      "id": "c2-rates",
+      "parentSceneId": "c2-rates",
+      "text": "Each time the forward reaction gets ahead, the mixture contains less A and more B. Less A makes the forward rate fall in our model. More B makes the reverse rate rise. Watch the rate graph: the forward curve comes down while the reverse curve comes up. Neither reaction needs to wait for the other to finish. Eventually their average rates match, and both are still greater than zero. Then each direction replaces what the other removes, so the mixture has no overall change. The curves approach that balance; the graph does not mark an exact finishing time.",
+      "hash": "9696e750f961",
+      "textSha256": "9696e750f961f441c09bd97a3f3aea48f71e1cdf90eaea875c617a28afd3014c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-rates.9696e750f961.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-rates.9696e750f961.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-rates.9696e750f961.generation.json",
+      "plannedRequestSha256": "11d54681d4d450cb74158e4e4a26fa981a20f0d876358640442cd77f2ffa4b1d"
+    },
+    {
+      "id": "c2-amounts",
+      "parentSceneId": "c2-amounts",
+      "text": "Now change the vertical axis. Concentration means how much of a substance is present per volume. On this concentration graph, A falls and B rises, then both level off. Their final heights are different. That is possible because equal rates do not require equal concentrations. Keep the quantities separate: rates meet; amounts settle. These directions describe our A-only starting mixture. A different starting mixture can approach the same balance from the other side.",
+      "hash": "a45ee1befd43",
+      "textSha256": "a45ee1befd434ed649089537ebad88ffe72e5a7d72b281937ba0e9d155fe4725",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-amounts.a45ee1befd43.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-amounts.a45ee1befd43.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-amounts.a45ee1befd43.generation.json",
+      "plannedRequestSha256": "5960dd5dcf21408f0f8c6517724a1c0f41b5f919a1fcfea078591b5f69b22548"
+    },
+    {
+      "id": "c2-transfer-attempt",
+      "parentSceneId": "c2-transfer-attempt",
+      "text": "Try a new reaction model. C and D change into each other one for one in a closed container at constant temperature and volume. Each direction gets slower when less of its starting substance is present. The early rate from C to D is two units. The rate from D to C is six units on the same scale. Which substance initially increases? Explain using both rates. Then explain how the faster direction changes as the mixture approaches balance. Pause if you would like longer.",
+      "hash": "7368785c7e42",
+      "textSha256": "7368785c7e424ee0ee456242fe762a8846763e4e8516dd30aa41ff1dcd86b4b4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-transfer-attempt.7368785c7e42.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-transfer-attempt.7368785c7e42.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-transfer-attempt.7368785c7e42.generation.json",
+      "plannedRequestSha256": "5fe658de7889339aafc08adaffbed564948cc588368be0452d467903e9e7c1cc"
+    },
+    {
+      "id": "c2-transfer-feedback",
+      "parentSceneId": "c2-transfer-feedback",
+      "text": "The reverse reaction makes C at six units while the forward reaction uses C at two. So C increases overall, and D decreases. With less D, the reverse reaction slows in this model. With more C, the forward reaction speeds up. The rates move towards balance from the opposite starting direction to our first example.",
+      "hash": "e0be5a9d4719",
+      "textSha256": "e0be5a9d47198860c0184fa8f082a34a8c058a966e06b68e0dc3c2c96514dc3e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-transfer-feedback.e0be5a9d4719.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-transfer-feedback.e0be5a9d4719.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-transfer-feedback.e0be5a9d4719.generation.json",
+      "plannedRequestSha256": "fd3e7ee5c7ea1920523f253188e55c100a0d7e0738d3d509a10c2129cb91fc1e"
+    },
+    {
+      "id": "c2-handoff",
+      "parentSceneId": "c2-handoff",
+      "text": "A reversible reaction can run in both directions before equilibrium. In our stated model, changing amounts bring the opposing rates towards equality. Remember: rates meet; amounts settle. Next, start with a mixture already at equilibrium and ask what changes directly when we add a substance, and what the reaction does afterwards.",
+      "hash": "735b45be54f2",
+      "textSha256": "735b45be54f2836f3d147ee112d2db63069d58a143b4ea46a8ded841a82b080b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-handoff.735b45be54f2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-handoff.735b45be54f2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-teaching-reset-2026-10-11-take01/c2-handoff.735b45be54f2.generation.json",
+      "plannedRequestSha256": "dbd534384836a2a8d3319e404cd411360a89ceb91f46a5b19e4a5e8bf989f2fe"
+    }
+  ]
+}

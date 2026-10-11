@@ -33,11 +33,37 @@
     "parentLessonSha256": "3f7c17d4c3a3091f2b9773f177db9cc585419d9c7cbf3f6d6a6859b734170536",
     "timingStatus": "Estimated silent staging only. No recorded speech, alignment, measured response silence or listening pass.",
     "visualLimits": [
-      "Runner art is an already established plant relationship, not literal animated growth.",
-      "Actual flowering strawberry and seedling context art remains missing. The dedicated preview labels plant-reference crops and magnified reproductive-cell schematics honestly.",
-      "DNA selections inside the reproductive cells are a symbolic information model, not chromosome counts, base sequences or trait predictions."
+      "Runner art shows established plant relationships, not literal animated growth.",
+      "Generated botanical flower, seed-bearing achene cutaway and seedling art supply organism context. The simplified cutaway is not a detailed strawberry seed anatomy lesson. All magnifications and growth stages are not to scale.",
+      "Repeated seedling art identifies the organism. Matching symbolic DNA marks trace different inherited selections through each joining to a later offspring; they do not demonstrate visible traits, chromosome counts or guaranteed performance."
     ],
-    "releaseStatus": "Unrecorded teaching draft. No full export or release approval."
+    "releaseStatus": "Unrecorded teaching draft. No full export or release approval.",
+    "artworkProvenance": {
+      "toolMode": "Built-in image_gen, fresh generation",
+      "flower": {
+        "path": "public/assets/biology/strawberry-flower-botanical-b1-v1.png",
+        "prompt": "Use case: scientific-educational. Create one isolated botanical teaching illustration of a strawberry (Fragaria x ananassa) flower, in naturalistic fine ink linework and restrained watercolour washes, dark green, pale yellow, muted earth colours. Pure white background, no typography, arrows, panels or decorative frame. Composition: one large recognisable open strawberry flower shown in a slightly oblique front view, five broad white petals with fine veins, small green pointed sepals visible behind, many golden-yellow anthers arranged in a ring, and a distinct central pale-green slightly conical receptacle densely covered with MANY small separate pistils, each with its own ovary and slender style. Attach a short slender pedicel angled down left and one smaller trifoliate strawberry leaf on a neighbouring short petiole at lower left to establish organism context without obscuring the flower. The flower fills around 80 percent of the image; plenty of clear margin. Botanically accurate strawberry anatomy, NOT one large lily-style central ovary, NOT a single central pistil. Do not depict enlarged egg cells, sperm, pollen grains in transit, insects, fruit, roots or a runner. No realistic photographic texture, no heavy solid graphic outlines, no logos. Intended later overlay will point to one of the numerous pistils and show a magnified cell joining model, so keep the centre clear, crisp and anatomically distinguishable. This is physical organism art rather than a rendered infographic."
+      },
+      "seedling": {
+        "path": "public/assets/biology/strawberry-seedling-botanical-b1-v1.png",
+        "prompt": "Use case: scientific-educational. Create one isolated botanical teaching illustration of a young strawberry plant grown FROM A SEED, in delicate naturalistic ink linework and restrained green watercolour, on pure white background with no labels, arrows, lettering, panels or decorative frame. Side-on teaching view of a small healthy seedling: two low rounded oval cotyledons on a tiny short stem, above them two small serrated trifoliate true leaves with clear strawberry leaflet shapes emerging from the young crown, and a slender branching root system extending below a thin irregular short earth surface line. Keep the complete leaves, crown and all fine roots within image with generous clear margins; plant fills about 80 percent height, centred. Natural scale relationships. This is a newly established young seed-grown strawberry, no connecting horizontal runner or stolon, no mature fruit, flower or bulb. Do not add a giant visible seed at root, pot, face, pedestal or ornamental landscape. Scientifically plausible young plant illustration, no trait comparison claim."
+      },
+      "seed": {
+        "path": "public/assets/biology/strawberry-seed-cutaway-b1-v1.png",
+        "prompt": "Use case: scientific-educational. A single botanical ink-and-watercolour teaching asset on pure white background, with no text, numbers, labels, arrows or frames. Draw ONE greatly magnified strawberry achene, the tiny dry single-seeded fruit normally visible on the outside of a strawberry, shown as a longitudinal opened cutaway. Slender small oval teardrop-shaped achene with muted golden-brown papery outer fruit wall, thin seed coat inside, and a pale cream developing embryo protected inside the seed. The embryo has two small fleshy cotyledons and a short radicle below them; keep structure simplified but botanically plausible for a dicot seed, no bean-sized dark seed or loose pollen grain. Show a removed narrow front window so that the seed and embryo are visibly inside a retaining outer wall, rather than floating outside. Stand alone on white, generous margins, delicate fine botanical hatch lines and gentle watercolour shading. No strawberry fruit flesh, extra seeds, roots emerging out of it, germination sprout, detached parts or magnified cells. It will accompany the sentence 'The developing new plant is inside a seed'; fine structures do not need separate labels. Match naturalistic educational botanical plate style."
+      }
+    },
+    "scientificVisualSources": [
+      {
+        "url": "https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/how-strawberry-plants-grow",
+        "use": "Strawberry crown, roots, runner, flower and daughter relationships."
+      },
+      {
+        "url": "https://www.hort.cornell.edu/expo/proceedings/2012/Berries/Berry%20Plant%20Structure%20Poling.pdf",
+        "use": "Multiple separate pistils of strawberry flower and single seed within each surface achene. No generic single-ovary flower used."
+      }
+    ],
+    "implementationRevision": "v6. Exact unique spokenCue metadata added for measured narration. Joining progress begins at entry to the contiguous visual stage and remains joined when its explanatory text changes. Botanical flower/seed/seedling context, traced distinct DNA selections, caption reserve and local selected-data renderer implemented. Speech text and estimated durations unchanged; v1-v5 proof outputs preserved."
   },
   "scenes": [
     {
@@ -63,17 +89,20 @@
           {
             "at": 0,
             "line": "A good plant is worth keeping.",
-            "view": "parent"
+            "view": "parent",
+            "spokenCue": "Imagine you've grown a strawberry plant"
           },
           {
             "at": 243,
             "line": "A runner can produce a new plant.",
-            "view": "whole"
+            "view": "whole",
+            "spokenCue": "You can make new plants from it"
           },
           {
             "at": 510,
             "line": "Could the copies share a weakness?",
-            "view": "disease"
+            "view": "disease",
+            "spokenCue": "Could those copies share a weakness"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -103,27 +132,32 @@
           {
             "at": 0,
             "line": "More leaves do not make another individual.",
-            "view": "parent"
+            "view": "parent",
+            "spokenCue": "First, a plant growing more leaves"
           },
           {
             "at": 192,
             "line": "An offspring is a new individual.",
-            "view": "daughter"
+            "view": "daughter",
+            "spokenCue": "Reproduction makes another individual"
           },
           {
             "at": 420,
             "line": "It can later become a parent too.",
-            "view": "generations"
+            "view": "generations",
+            "spokenCue": "Once established, it can grow separately"
           },
           {
             "at": 732,
             "line": "The parent passes on inherited information in DNA.",
-            "view": "generations"
+            "view": "generations",
+            "spokenCue": "The new plant also receives DNA"
           },
           {
             "at": 984,
             "line": "Enough offspring must survive and reproduce.",
-            "view": "generations"
+            "view": "generations",
+            "spokenCue": "For the population to continue"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -152,32 +186,38 @@
           {
             "at": 0,
             "line": "A runner is a connecting stem.",
-            "view": "whole"
+            "view": "whole",
+            "spokenCue": "The connecting stem is a runner."
           },
           {
             "at": 184,
             "line": "No sperm and egg join: asexual reproduction.",
-            "view": "whole"
+            "view": "whole",
+            "spokenCue": "A new plant grows from it without"
           },
           {
             "at": 443,
             "line": "New cells copy the parent's DNA.",
-            "view": "copy"
+            "view": "copy",
+            "spokenCue": "As the new cells form"
           },
           {
             "at": 640,
             "line": "Clonal offspring usually retain very similar DNA.",
-            "view": "copy"
+            "view": "copy",
+            "spokenCue": "The daughter usually has almost"
           },
           {
             "at": 861,
             "line": "Copying can keep a valued inherited combination.",
-            "view": "copy"
+            "view": "copy",
+            "spokenCue": "That's why runners are useful"
           },
           {
             "at": 1107,
             "line": "Growing conditions can still affect the plants.",
-            "view": "copy"
+            "view": "copy",
+            "spokenCue": "Similar DNA does not mean"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -196,8 +236,8 @@
       "teachingReset": {
         "role": "Introduce the minimum joining event with actual plants",
         "visualDecision": "new-bounded-physical-visual",
-        "physicalVisual": "Show the two flowering parent plants on soil. At the joining sentence, use a magnified schematic of one sperm cell and one egg cell within the receiving flower's highlighted ovule. Retain enough flower context to locate the event. Move next to a botanically correct seed context and recognisable young strawberry seedling. The intermediate route by which sperm reaches egg is intentionally not animated here.",
-        "motionPurpose": "A brief cell-joining motion explains the defining event. Then change to the later seedling context. Use no pollen-grain-to-zygote morph, instant adult growth, chromosome animation or continuously competing labels.",
+        "physicalVisual": "Use existing parent art only to identify the two supplied parent plants. Then show the recognisable strawberry flower with many separate pistils. A leader from its centre locates the magnified sperm-and-egg schematic inside the flower. Trace the joined cell to a magnified seed-bearing achene cutaway containing the developing plant, then to a genuine seed-grown strawberry seedling. These stages are at different times and not to scale. Do not imply that pollen itself is the sperm cell.",
+        "motionPurpose": "The leader locates the cell model within the actual flower. The sperm-cell model joins the egg; the diagram then progresses from joined cell through development inside a seed to a later seedling. New stages appear only at their narration cues.",
         "activeFacts": [
           "This is a stated cross between genetically different plants.",
           "Sperm and egg contribute inherited DNA.",
@@ -207,37 +247,44 @@
           {
             "at": 0,
             "line": "Genetically different parents have different inherited DNA.",
-            "view": "parents"
+            "view": "parents",
+            "spokenCue": "Consider a cross between two genetically different plants"
           },
           {
             "at": 252,
             "line": "Inside a flower, a sperm cell joins an egg cell.",
-            "view": "cells"
+            "view": "cells",
+            "spokenCue": "Inside a flower of one parent"
           },
           {
             "at": 428,
             "line": "Gametes are reproductive cells, such as sperm and egg.",
-            "view": "cells"
+            "view": "cells",
+            "spokenCue": "Sperm and egg are reproductive cells"
           },
           {
             "at": 617,
             "line": "Each reproductive cell contributes DNA.",
-            "view": "cells"
+            "view": "cells",
+            "spokenCue": "Each contributes DNA."
           },
           {
             "at": 743,
             "line": "Gametes join: sexual reproduction.",
-            "view": "cells-joined"
+            "view": "cells-joined",
+            "spokenCue": "Reproduction in which gametes join"
           },
           {
             "at": 920,
             "line": "A new plant develops inside a seed.",
-            "view": "offspring"
+            "view": "seed",
+            "spokenCue": "The developing new plant is inside a seed"
           },
           {
             "at": 1084,
             "line": "The seed can grow into a seedling.",
-            "view": "offspring"
+            "view": "seedling",
+            "spokenCue": "and that seed can grow into a seedling"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -256,8 +303,8 @@
       "teachingReset": {
         "role": "Explain inherited variation without chromosome vocabulary",
         "visualDecision": "adjust-new-cross-context",
-        "physicalVisual": "Keep the same two actual flowering parent plants as the reference. Use their magnified reproductive-cell inset to compare two possible joining events, shown one after the other: one sperm/egg pair and a different pair. Different schematic DNA selections within the cells identify the differing inherited contributions. Label this as a simplified information model, with no chromosome counts, gene names or allele cards. Connect each possible joining event to its later recognisable seedling, then hold both possibilities together. The examples illustrate possibilities from the same parents, not observed offspring or an exhaustive set. In the final beat, retain the actual runner daughter on one side and crossed seedlings on the other, each with one short relationship label.",
-        "motionPurpose": "Show the first possible reproductive-cell pairing, then the second, at the corresponding cause. Reveal its later seedling only after each joining event. Keep parents unchanged to show that different offspring do not require a new parent pair. No leaf-colour, fruit-quality or disease outcome is assigned to either seedling. Then hold the two reproductive routes side by side.",
+        "physicalVisual": "Keep recognisable strawberry flower context, then one possible sperm-and-egg pair while selections are explained. At different pairs, show two possible joining events from the same parents. Each path connects joined cell, seed development and a later true seedling. Retain matching green and blue symbolic DNA shapes from each joined cell beside its later seedling so inherited combinations can be compared. Both seedlings use the same organism-reference art; that art does not claim a visible genetic trait.",
+        "motionPurpose": "First isolate one pair while differing inherited selections are explained. Then trace two joining paths to their later offspring. DNA marks retain their identity across the path; no plant becomes sick, drought tolerant or otherwise visibly successful.",
         "activeFacts": [
           "The cross uses genetically different parents.",
           "The two routes differ in retaining or combining inherited information.",
@@ -267,37 +314,44 @@
           {
             "at": 0,
             "line": "How can the same parents produce different offspring?",
-            "view": "parents"
+            "view": "parents",
+            "spokenCue": "How can the same two parents"
           },
           {
             "at": 164,
             "line": "Different sperm cells can carry different inherited selections.",
-            "view": "pair-one"
+            "view": "pair-one",
+            "spokenCue": "Different sperm cells can carry"
           },
           {
             "at": 351,
             "line": "Egg cells can differ too.",
-            "view": "pair-one"
+            "view": "pair-one",
+            "spokenCue": "Egg cells can differ in the same way."
           },
           {
             "at": 480,
             "line": "Different pairs can give different DNA combinations.",
-            "view": "pair-two"
+            "view": "pair-two",
+            "spokenCue": "When different pairs join"
           },
           {
             "at": 667,
             "line": "Genetic variation means inherited differences.",
-            "view": "pair-two"
+            "view": "pair-two",
+            "spokenCue": "Those differences in inherited information"
           },
           {
             "at": 831,
             "line": "Runner: usually keeps a combination. Cross: can vary it.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "Here is the contrast we need"
           },
           {
             "at": 1053,
             "line": "Variation does not tell us which plant performs best.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "It does not tell us which one"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -327,32 +381,38 @@
           {
             "at": 0,
             "line": "The grower copied a useful plant.",
-            "view": "copy"
+            "view": "copy",
+            "spokenCue": "Now return to the disease"
           },
           {
             "at": 259,
             "line": "If it has an inherited weakness, clones may share it.",
-            "view": "disease"
+            "view": "disease",
+            "spokenCue": "But if that plant also has"
           },
           {
             "at": 518,
             "line": "Shared risk does not mean every plant gets infected.",
-            "view": "disease"
+            "view": "disease",
+            "spokenCue": "That is a shared risk"
           },
           {
             "at": 662,
             "line": "Relevant inherited differences may change the response.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "Seedlings with different inherited combinations"
           },
           {
             "at": 1138,
             "line": "Copy to keep. Cross to compare.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "For this grower, a useful reminder is"
           },
           {
             "at": 1339,
             "line": "The useful choice depends on purpose and conditions.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "The choice still depends"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -370,8 +430,8 @@
       "captions": [],
       "teachingReset": {
         "role": "Genuine transfer decision under changed conditions",
-        "visualDecision": "adjust-with-missing-seedling-art",
-        "physicalVisual": "Show neutral group A runner daughters and group B crossed seedlings in adjacent planting trays. Identify origin with short captions. Both trays show healthy young plants. A small neutral dry-soil trial area supplies the new setting without showing outcomes.",
+        "visualDecision": "adjust",
+        "physicalVisual": "Show neutral group A with the established runner-daughter art and group B with the true seed-grown strawberry seedling art. Keep origin, search goal, untested dry-soil condition and all three demands visible throughout the response opportunity. Both plants remain healthy context references, with no trial outcome depicted.",
         "motionPurpose": "Reveal the complete origin and condition labels during the prompt, then stop motion for the response interval. The two physical groups stay equally prominent. No winner outline, unequal disease/drought symptoms, answer subtitle or copy/variation summary appears during the attempt.",
         "activeFacts": [
           "The search concerns inherited responses to dry soil.",
@@ -384,7 +444,8 @@
           {
             "at": 0,
             "line": "Choose a starting group. Explain why. Name one unknown result.",
-            "view": "attempt"
+            "view": "attempt",
+            "spokenCue": "A nursery wants to find"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment.",
@@ -426,7 +487,7 @@
       "teachingReset": {
         "role": "Explain the choice and its limit one stage at a time",
         "visualDecision": "adjust",
-        "physicalVisual": "Retain the two identified groups, goal and untested condition. Highlight B when the choice is spoken. Reveal one short explanation line at a time near the relevant tray. Remove that line before the prediction-limit line, while keeping the case facts visible. Do not change seedling appearance to announce a successful result.",
+        "physicalVisual": "Retain the two identified organism groups, goal, untested condition and all three demands. Show one short reasoning or prediction-limit phrase near the relevant plant. The phrase changes rather than accumulating. Do not change seedling appearance to announce a successful result.",
         "motionPurpose": "Focus each current causal sentence on its physical group. Fade the current reasoning line before the next stage rather than accumulating answer history. Leave unknown trial outcomes unchanged.",
         "activeFacts": [
           "Both groups remain untested.",
@@ -436,32 +497,38 @@
           {
             "at": 0,
             "line": "B gives a wider search for inherited differences.",
-            "view": "feedback-b"
+            "view": "feedback-b",
+            "spokenCue": "The crossed seedlings are the better"
           },
           {
             "at": 224,
             "line": "Different reproductive-cell pairings can give different combinations.",
-            "view": "feedback-b"
+            "view": "feedback-b",
+            "spokenCue": "They receive DNA through sexual reproduction"
           },
           {
             "at": 436,
             "line": "A usually retains one parent's inherited combination.",
-            "view": "feedback-a"
+            "view": "feedback-a",
+            "spokenCue": "Runner offspring usually copy"
           },
           {
             "at": 634,
             "line": "Which plant will grow well is still unknown.",
-            "view": "feedback-unknown"
+            "view": "feedback-unknown",
+            "spokenCue": "But we still cannot predict"
           },
           {
             "at": 858,
             "line": "Useful inherited differences may not be present.",
-            "view": "feedback-unknown"
+            "view": "feedback-unknown",
+            "spokenCue": "The parents may not carry useful differences"
           },
           {
             "at": 1069,
             "line": "Test the plants in the stated conditions.",
-            "view": "feedback-unknown"
+            "view": "feedback-unknown",
+            "spokenCue": "We would need to compare"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -489,22 +556,26 @@
           {
             "at": 0,
             "line": "New offspring inherit information.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "Reproduction provides new individuals"
           },
           {
             "at": 172,
             "line": "Copying keeps a combination. Sexual reproduction can vary it.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "Copying can keep a useful combination"
           },
           {
             "at": 335,
             "line": "Neither method guarantees offspring survival.",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "Neither route guarantees"
           },
           {
             "at": 460,
             "line": "Next: how do animals reproduce?",
-            "view": "compare"
+            "view": "compare",
+            "spokenCue": "Next, we'll look at"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment."
@@ -532,7 +603,8 @@
           {
             "at": 0,
             "line": "Copy these notes now, or pause for more time.",
-            "view": "notes"
+            "view": "notes",
+            "spokenCue": "If you'd like a short set of notes"
           }
         ],
         "timingStatus": "Estimated semantic staging, not measured narration alignment.",
@@ -544,5 +616,6 @@
         "Sexual reproduction joins gametes and can produce different inherited combinations. Useful differences depend on the conditions."
       ]
     }
-  ]
+  ],
+  "teachingRenderer": "b1Continuity"
 }

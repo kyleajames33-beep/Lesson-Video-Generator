@@ -349,6 +349,26 @@
       "scope": "New silent C1/B1 teaching drafts, additive C1 layout with earlier speech, review desk, native stills and a short silent C1 motion checkpoint. Sources use Git. New narration and release pending.",
       "verification": "All ZIP member CRCs and SHAs pass; remote uploaded sizes and SHA256 digests match. Compatible with existing transfer manifest; separate restoration test not run.",
       "evidencePath": "docs/production/module5-starters-2026-10-10/learning-reset-media-backup-v6.json"
+    },
+    {
+      "name": "module5-teaching-batch-media-2026-10-11-v1.zip",
+      "bytes": 296144549,
+      "sha256": "2e5358dd0272d8170d0248831110ac931e76dd280d428d07adbd255a652ba31f",
+      "files": 883,
+      "status": "published-verified",
+      "scope": "Selected full teaching resets with fresh speech/alignment, measured scenes, actual production Players, captions, native samples and artwork. Sources use Git. Exact full voiced review, human listening and release remain pending. Both additive archives were actually restored in an isolated workspace and every non-skipped member hash checked.",
+      "verification": "All ZIP member CRCs and SHAs pass; remote uploaded sizes and SHA256 digests match. Both additive archives actually restored in an isolated workspace; all 1086 non-skipped member hashes pass and a conflicting local mutable review desk is preserved.",
+      "evidencePath": "docs/production/module5-starters-2026-10-10/teaching-batch-media-backup-v1.json"
+    },
+    {
+      "name": "module5-teaching-batch-media-2026-10-11-v2.zip",
+      "bytes": 87196377,
+      "sha256": "346ba83aa101b45e0c3ec20e766a45ade320e8ecdb1a911517ae76b1b23b527e",
+      "files": 205,
+      "status": "published-verified",
+      "scope": "Additive silent source-review proof pages and native stills used before recording the ten current replacements. Restore after teaching-batch v1, which holds the fresh audio, alignments, actual voiced Players and original artwork. This supplement grants no continuous voiced, human listening or release approval. Both additive archives were actually restored in an isolated workspace and every non-skipped member hash checked.",
+      "verification": "All ZIP member CRCs and SHAs pass; remote uploaded sizes and SHA256 digests match. Both additive archives actually restored in an isolated workspace; all 1086 non-skipped member hashes pass and a conflicting local mutable review desk is preserved.",
+      "evidencePath": "docs/production/module5-starters-2026-10-10/teaching-batch-media-backup-v2.json"
     }
   ]
 }

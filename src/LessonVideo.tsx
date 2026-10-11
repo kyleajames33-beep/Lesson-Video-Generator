@@ -14,6 +14,13 @@ import {MarginaliaSlide} from './slides/MarginaliaSlide';
 import {LabFootageSlide} from './slides/LabFootageSlide';
 import {EndCardSlide} from './slides/EndCardSlide';
 import {MnemonicSlide} from './slides/MnemonicSlide';
+import {B1ContinuityTeachingScene} from './prototypes/B1ContinuityTeachingReset';
+import {C1BottleTeachingScene} from './prototypes/C1BottleTeachingReset';
+import {C4PressureTeachingResetScene} from './prototypes/C4PressureTeachingReset';
+import {C4CatalystTeachingResetScene} from './prototypes/C4CatalystTeachingReset';
+import {B2AnimalTeachingScene} from './prototypes/B2AnimalTeachingReset';
+import {FungiMouldTeachingSlide} from './slides/FungiMouldTeachingSlide';
+import {PlantTeachingScene} from './prototypes/PlantTeachingReset';
 import {MolarMassTeachingSlide} from './slides/MolarMassTeachingSlide';
 import {SceneVoiceover} from './audio/SceneVoiceover';
 import {BackgroundMusic} from './audio/BackgroundMusic';
@@ -43,6 +50,14 @@ type LessonVideoProps = {
 };
 
 const renderSlide = (scene: SceneData, lesson: LessonData, sceneIndex: number, totalScenes: number) => {
+  const selectedRenderer=(scene as SceneData & {metadata?:{teachingRenderer?:string}}).metadata?.teachingRenderer;
+  if (lesson.teachingRenderer === 'b1Continuity') return <B1ContinuityTeachingScene scene={scene} lesson={lesson}/>;
+  if (lesson.teachingRenderer === 'c1Bottle') return <C1BottleTeachingScene scene={scene} lesson={lesson}/>;
+  if (lesson.teachingRenderer === 'b2Animals') return <B2AnimalTeachingScene scene={scene} lesson={lesson}/>;
+  if (lesson.teachingRenderer === 'mouldSpores') return <FungiMouldTeachingSlide scene={scene} lesson={lesson}/>;
+  if (lesson.teachingRenderer === 'plantSeed' || lesson.teachingRenderer === 'plantRunner') return <PlantTeachingScene scene={scene} lesson={lesson}/>;
+  if (selectedRenderer === 'c4Pressure') return <C4PressureTeachingResetScene scene={scene} lesson={lesson}/>;
+  if (selectedRenderer === 'c4Catalyst') return <C4CatalystTeachingResetScene scene={scene} lesson={lesson}/>;
   if (scene.teachingLayout) return <MolarMassTeachingSlide scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
   switch (scene.type) {
     case 'title':

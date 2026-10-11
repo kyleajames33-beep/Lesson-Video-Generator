@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01",
+  "lessonPath": "docs/production/fungi-design-reset-2026-10-11/teaching-reset/lesson.json",
+  "lessonSha256": "657753f96933fb8d7f19d88ec87240500e89603452ee4c48e457d49fbb164408",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset/production-brief.json",
+    "sha256": "9f20aab5d95afeaf3de862bd3c7ab7ffd5cf4884abb152bc465cb2e72fd230f9"
+  },
+  "scenes": [
+    {
+      "id": "mould-hook",
+      "parentSceneId": "mould-hook",
+      "text": "You may have seen a fuzzy patch spreading across old bread. That patch is a fungus. But how could it start growing on another piece of bread without the two pieces touching? Let’s follow one example, a bread mould called Rhizopus stolonifer.",
+      "hash": "80c276764e50",
+      "textSha256": "80c276764e508ce8460ecb08242ed4099253c8bcdd77e941fed7de4d323a9666",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-hook.80c276764e50.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-hook.80c276764e50.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-hook.80c276764e50.generation.json",
+      "plannedRequestSha256": "94f755ac7acc9c0d1847df7e1005d63a95aed9d5456f5261c09b20ed397e0933"
+    },
+    {
+      "id": "mould-threads",
+      "parentSceneId": "mould-threads",
+      "text": "Close up, the mould is made of thin branching threads. One thread is called a hypha; several are hyphae. These threads grow over and into the bread. The fungus gets nutrients from the bread, which support its growth. The fuzzy patch is a growing fungal body, rather than a pile of loose spores.",
+      "hash": "3e9e8abb6030",
+      "textSha256": "3e9e8abb6030759a37695d09dafca1904eb4ad7a40e1cbe46cdad9e33c756b0c",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-threads.3e9e8abb6030.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-threads.3e9e8abb6030.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-threads.3e9e8abb6030.generation.json",
+      "plannedRequestSha256": "43470cc30f60a67d9b3dfc190c6871217bf7e97501c7f44b86764b997233ff68"
+    },
+    {
+      "id": "mould-spore-case",
+      "parentSceneId": "mould-spore-case",
+      "text": "Some threads form upright stalks with rounded heads. Inside a head, the fungus produces many tiny reproductive cells called spores. A spore can begin new fungal growth. The rounded structure where these spores form is called a sporangium. So the sporangium makes the spores; the spores are the cells that can begin a new fungus.",
+      "hash": "0a904a9902b8",
+      "textSha256": "0a904a9902b8a9ba79fd8fdb90a804521e23d7d26a0c351d6cd39dbe9b5be8a4",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-spore-case.0a904a9902b8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-spore-case.0a904a9902b8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-spore-case.0a904a9902b8.generation.json",
+      "plannedRequestSha256": "366e87aef6402c6bbabbc100df7a54e2c27e33d43a097308d77443bd4fe1cc6d"
+    },
+    {
+      "id": "mould-release",
+      "parentSceneId": "mould-release",
+      "text": "When the sporangium matures, its wall breaks down and spores can be released. Air movement can carry them away from the parent mould. This allows a spore to reach another food surface, even when no fungal thread joins the two places. Arriving is only the first step. The spore still needs conditions that allow it to grow.",
+      "hash": "a25b858b21d9",
+      "textSha256": "a25b858b21d9df3bfcb330af2f83c074c65d8d785537d23bc21de891131fff42",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-release.a25b858b21d9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-release.a25b858b21d9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-release.a25b858b21d9.generation.json",
+      "plannedRequestSha256": "fdd2fe32fe1a142e0210a5b16ffaeb3cb3ec7446d917e1491ad34d928681bb68"
+    },
+    {
+      "id": "mould-new-growth",
+      "parentSceneId": "mould-new-growth",
+      "text": "On suitable food, with enough moisture and a suitable temperature, the spore can begin to grow. We call that germination. A thin thread grows out from the spore, then branches to build a new fungal body. In the production route we have shown, the parent mould made the spores without reproductive cells joining. That is asexual reproduction. Rhizopus also has a sexual route, so finding a spore on its own would not tell us how it was produced.",
+      "hash": "3e0f7ccef1e2",
+      "textSha256": "3e0f7ccef1e29eca9680e98955b20846fd024afb129df110ebe5fdcba491d61a",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-new-growth.3e0f7ccef1e2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-new-growth.3e0f7ccef1e2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-new-growth.3e0f7ccef1e2.generation.json",
+      "plannedRequestSha256": "b81a3e1936d4ab0841b72f72b9e1922587fd9535e5f8b9fe1576a2b4b68faeb2"
+    },
+    {
+      "id": "mould-attempt",
+      "parentSceneId": "mould-attempt",
+      "text": "Here is a new arrangement. Bread A has Rhizopus mould with mature spore cases. Bread B has no mould initially. The pieces do not touch, but share moving air. B is moist, supplies nutrients and is at a suitable temperature. How could mould reach B, and what would begin growing there? Pause and explain the two steps.",
+      "hash": "f496b469edd7",
+      "textSha256": "f496b469edd7a5e3b09c27ac1882c9bdfcc101db29c7ca190af88edbfa26f23c",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-attempt.f496b469edd7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-attempt.f496b469edd7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-attempt.f496b469edd7.generation.json",
+      "plannedRequestSha256": "d7ad4574853c9aeb8b02f07542c55fbdbd5f273d9e2298b269721cb138fc86af"
+    },
+    {
+      "id": "mould-feedback",
+      "parentSceneId": "mould-feedback",
+      "text": "The pieces do not need to touch. Mature spore cases on A can release spores, and moving air can carry some towards B. If a spore lands on B, the moist bread provides water and nutrients. At the stated suitable temperature, it can germinate: a fungal thread begins to grow, then branches into a new colony.",
+      "hash": "2f5b9848618e",
+      "textSha256": "2f5b9848618e634973ceee0b293532125579d0bcc306f9c51de754e69d3ab8c6",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-feedback.2f5b9848618e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-feedback.2f5b9848618e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-feedback.2f5b9848618e.generation.json",
+      "plannedRequestSha256": "18bd316adfbd8d31cc18a500ac2e3abfeaf8c1cd891626a109397024b1385141"
+    },
+    {
+      "id": "mould-memory",
+      "parentSceneId": "mould-memory",
+      "text": "That gives us a useful reminder: threads feed, spores spread. The threads get nutrients where the fungus is growing. The spores can carry this reproductive route to a new place. In the route we followed, the parent produces spores without reproductive cells joining, so it is asexual reproduction. Next, we will see how one yeast cell makes another by budding.",
+      "hash": "f08c313db89b",
+      "textSha256": "f08c313db89b02ac17e9a5e0300f16f4df52dc741201c3211e4bc5b7374235db",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-memory.f08c313db89b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-memory.f08c313db89b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-memory.f08c313db89b.generation.json",
+      "plannedRequestSha256": "ae982f59087f2a6d02f63ecb851e6b5c84290ae07a4c8eb94ca80a5afa0ac07e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "If you would like notes, copy these now, or pause for more time.",
+      "hash": "aeeac76ac9ef",
+      "textSha256": "aeeac76ac9efe564b16c37f949b1b2f82f371f091d966a6ac32a531f7c85f64a",
+      "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/key-notes.aeeac76ac9ef.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/key-notes.aeeac76ac9ef.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/key-notes.aeeac76ac9ef.generation.json",
+      "plannedRequestSha256": "22b88913fe8d3752efc429c3873bf34f9f2cd6cfaf08876416fbb7731d92c799"
+    }
+  ]
+}

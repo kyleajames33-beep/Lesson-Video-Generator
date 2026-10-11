@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/measured/lesson.json",
+    "lessonSha256": "cffeee6af81ea77dc479aee76a5b1302305ba1f8d9cd0e6f67750fd22d5167e0"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "An organism is one living individual; a population is a group of individuals of the same species. Plants consist of cells, and cells contain DNA. Offspring are new individuals produced by reproduction. No chromosome terminology is assumed.",
+    "startsWith": "A grower copies a strawberry plant with valued fruit characteristics, then encounters a new disease. Follow its rooted offspring to connect reproduction, inherited information and later generations.",
+    "stopsAfter": "Explain how offspring and inherited DNA connect generations, and use copying versus different inherited combinations to compare asexual and sexual reproduction under stated conditions. Apply the comparison to an untested dry-soil trial without promising a favourable outcome.",
+    "nextLesson": "Animal reproduction: how sperm and egg meet, and how offspring develop in different animals. Focused plant and other-organism mechanisms. The later plant route explains how a flower produces a seed and how a runner establishes a new plant."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/student-learning-review.md",
+    "docs/production/module5-memory-aids-2026-10-11.md"
+  ],
+  "teaching": {
+    "task": "Choose a reproductive starting group for a stated purpose and explain the choice using inherited DNA, copying or different inherited combinations, then bound the prediction.",
+    "causalExplanation": "A rooted daughter plant is a new individual, so reproduction can provide another generation even though a parent has a limited lifetime. The daughter receives DNA from its parent. In runner reproduction, new cells copy the parent's DNA, so the daughter usually retains very similar inherited information. In a sexual cross, sperm and egg join inside a flower and each contributes DNA. Different reproductive cells can carry different inherited selections, so joining different pairs can produce different offspring combinations even with the same two parents. A copied plant can retain valued inherited characteristics and a shared inherited weakness. Different inherited combinations may give different responses to a changed condition, if the relevant differences are present. Producing offspring permits continuity. Enough offspring still need to survive and reproduce for a population to continue.",
+    "conversationalApproach": "Show the current plants and at most the short label needed for the current explanation. Clear previous definition prose before the next mechanism. Do not display the full narration, a six-term definition list, comparative tables or an earlier answer trail beside new reasoning.",
+    "openingDecision": "How can reproduction keep a species going, while either copying a useful plant or producing inherited variation?",
+    "understandingCheck": "Choose a reproductive starting group for a stated purpose and explain the choice using inherited DNA, copying or different inherited combinations, then bound the prediction.",
+    "curriculumScope": "This is the opening conceptual contribution to the reproduction action. The ledger still records the catalogue source as source-present-unreviewed. Neither the original declared content point nor this proposal completes the required variety-of-organisms mechanism analysis. Current and new-course action approval remains separate from source presence."
+  },
+  "scenes": [
+    {
+      "sceneId": "grower-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png",
+      "teachingReason": "Start with the mature parent and daughter visible in the actual plate. Identify the mature plant as the grower's chosen parent. The valued fruit is a supplied scenario condition, not a fruit image invented inside this plate. A short new-disease scenario label appears beside the same plants; no plant turns sick yet.",
+      "narrationCue": "[{\"spokenCue\":\"Imagine you've grown a strawberry plant\",\"estimatedLocalFrame\":0,\"view\":\"parent\",\"line\":\"A good plant is worth keeping.\"},{\"spokenCue\":\"You can make new plants from it\",\"estimatedLocalFrame\":243,\"view\":\"whole\",\"line\":\"A runner can produce a new plant.\"},{\"spokenCue\":\"Could those copies share a weakness\",\"estimatedLocalFrame\":510,\"view\":\"disease\",\"line\":\"Could the copies share a weakness?\"}]",
+      "motionPurpose": "Draw the leader to the daughter when new plants are named. Change only the scenario label when conditions change. Movement locates the question; it does not disclose the disease outcome.",
+      "holdPurpose": "{\"kind\": \"rhetorical-reading\", \"plannedSeconds\": null, \"limit\": \"No claim of an independent response opportunity.\"}"
+    },
+    {
+      "sceneId": "continuity",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png",
+      "teachingReason": "Hold the whole parent-runner-daughter relationship while explaining growth versus a new individual. Then show two adjacent botanical panels: this parent with its daughter, and a later established daughter with another rooted offspring. The later panel is an illustrative future example, not a claim that the raster records growth. Keep one current relationship highlighted.",
+      "narrationCue": "[{\"spokenCue\":\"First, a plant growing more leaves\",\"estimatedLocalFrame\":0,\"view\":\"parent\",\"line\":\"More leaves do not make another individual.\"},{\"spokenCue\":\"Reproduction makes another individual\",\"estimatedLocalFrame\":192,\"view\":\"daughter\",\"line\":\"An offspring is a new individual.\"},{\"spokenCue\":\"Once established, it can grow separately\",\"estimatedLocalFrame\":420,\"view\":\"generations\",\"line\":\"It can later become a parent too.\"},{\"spokenCue\":\"The new plant also receives DNA\",\"estimatedLocalFrame\":732,\"view\":\"generations\",\"line\":\"The parent passes on inherited information in DNA.\"},{\"spokenCue\":\"For the population to continue\",\"estimatedLocalFrame\":984,\"view\":\"generations\",\"line\":\"Enough offspring must survive and reproduce.\"}]",
+      "motionPurpose": "Shift attention from the parent's leaves to the daughter's roots and leaves. Reveal the later-generation panel only after the daughter is established. Parent and offspring can overlap in time; never make a parent disappear before an offspring exists. A simple relationship leader may carry the DNA label, but do not animate a literal DNA ribbon moving through a runner.",
+      "holdPurpose": "{\"kind\": \"explanation\", \"plannedSeconds\": null, \"limit\": \"Hold the current relationship through each causal sentence. No speed or survival guarantee.\"}"
+    },
+    {
+      "sceneId": "copying",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png",
+      "teachingReason": "Show the true connecting stem and daughter. Keep their actual structures visible throughout. A parent/daughter relationship label states that the DNA is usually very similar. Do not represent DNA as an unexplained card hand, coloured balls or literal moving material in the stem.",
+      "narrationCue": "[{\"spokenCue\":\"The connecting stem is a runner.\",\"estimatedLocalFrame\":0,\"view\":\"whole\",\"line\":\"A runner is a connecting stem.\"},{\"spokenCue\":\"A new plant grows from it without\",\"estimatedLocalFrame\":184,\"view\":\"whole\",\"line\":\"No sperm and egg join: asexual reproduction.\"},{\"spokenCue\":\"As the new cells form\",\"estimatedLocalFrame\":443,\"view\":\"copy\",\"line\":\"New cells copy the parent's DNA.\"},{\"spokenCue\":\"The daughter usually has almost\",\"estimatedLocalFrame\":640,\"view\":\"copy\",\"line\":\"Clonal offspring usually retain very similar DNA.\"},{\"spokenCue\":\"That's why runners are useful\",\"estimatedLocalFrame\":861,\"view\":\"copy\",\"line\":\"Copying can keep a valued inherited combination.\"},{\"spokenCue\":\"Similar DNA does not mean\",\"estimatedLocalFrame\":1107,\"view\":\"copy\",\"line\":\"Growing conditions can still affect the plants.\"}]",
+      "motionPurpose": "The runner leader draws to the real stem once. Shift the emphasis from parent to daughter at the DNA sentence, then hold them together for the causal benefit. Do not simulate painted growth.",
+      "holdPurpose": "{\"kind\": \"explanation\", \"plannedSeconds\": null, \"limit\": \"No separate mutation lesson, identical-growth promise or universal rapid-growth claim.\"}"
+    },
+    {
+      "sceneId": "sexual-cross",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png; new strawberry-flower-botanical-b1-v1.png, strawberry-seed-cutaway-b1-v1.png and strawberry-seedling-botanical-b1-v1.png, selected by stage",
+      "teachingReason": "Use existing parent art only to identify the two supplied parent plants. Then show the recognisable strawberry flower with many separate pistils. A leader from its centre locates the magnified sperm-and-egg schematic inside the flower. Trace the joined cell to a magnified seed-bearing achene cutaway containing the developing plant, then to a genuine seed-grown strawberry seedling. These stages are at different times and not to scale. Do not imply that pollen itself is the sperm cell.",
+      "narrationCue": "[{\"spokenCue\":\"Consider a cross between two genetically different plants\",\"estimatedLocalFrame\":0,\"view\":\"parents\",\"line\":\"Genetically different parents have different inherited DNA.\"},{\"spokenCue\":\"Inside a flower of one parent\",\"estimatedLocalFrame\":252,\"view\":\"cells\",\"line\":\"Inside a flower, a sperm cell joins an egg cell.\"},{\"spokenCue\":\"Sperm and egg are reproductive cells\",\"estimatedLocalFrame\":428,\"view\":\"cells\",\"line\":\"Gametes are reproductive cells, such as sperm and egg.\"},{\"spokenCue\":\"Each contributes DNA.\",\"estimatedLocalFrame\":617,\"view\":\"cells\",\"line\":\"Each reproductive cell contributes DNA.\"},{\"spokenCue\":\"Reproduction in which gametes join\",\"estimatedLocalFrame\":743,\"view\":\"cells-joined\",\"line\":\"Gametes join: sexual reproduction.\"},{\"spokenCue\":\"The developing new plant is inside a seed\",\"estimatedLocalFrame\":920,\"view\":\"seed\",\"line\":\"A new plant develops inside a seed.\"},{\"spokenCue\":\"and that seed can grow into a seedling\",\"estimatedLocalFrame\":1084,\"view\":\"seedling\",\"line\":\"The seed can grow into a seedling.\"}]",
+      "motionPurpose": "The leader locates the cell model within the actual flower. The sperm-cell model joins the egg; the diagram then progresses from joined cell through development inside a seed to a later seedling. New stages appear only at their narration cues.",
+      "holdPurpose": "{\"kind\": \"explanation\", \"plannedSeconds\": null, \"limit\": \"No self-fertilisation detour. This stated seed-forming sexual event does not claim all seed formation is sexual.\"}"
+    },
+    {
+      "sceneId": "sexual-variation",
+      "visualDecision": "new",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png; new strawberry-flower-botanical-b1-v1.png, strawberry-seed-cutaway-b1-v1.png and strawberry-seedling-botanical-b1-v1.png, selected by stage",
+      "teachingReason": "Keep recognisable strawberry flower context, then one possible sperm-and-egg pair while selections are explained. At different pairs, show two possible joining events from the same parents. Each path connects joined cell, seed development and a later true seedling. Retain matching green and blue symbolic DNA shapes from each joined cell beside its later seedling so inherited combinations can be compared. Both seedlings use the same organism-reference art; that art does not claim a visible genetic trait.",
+      "narrationCue": "[{\"spokenCue\":\"How can the same two parents\",\"estimatedLocalFrame\":0,\"view\":\"parents\",\"line\":\"How can the same parents produce different offspring?\"},{\"spokenCue\":\"Different sperm cells can carry\",\"estimatedLocalFrame\":164,\"view\":\"pair-one\",\"line\":\"Different sperm cells can carry different inherited selections.\"},{\"spokenCue\":\"Egg cells can differ in the same way.\",\"estimatedLocalFrame\":351,\"view\":\"pair-one\",\"line\":\"Egg cells can differ too.\"},{\"spokenCue\":\"When different pairs join\",\"estimatedLocalFrame\":480,\"view\":\"pair-two\",\"line\":\"Different pairs can give different DNA combinations.\"},{\"spokenCue\":\"Those differences in inherited information\",\"estimatedLocalFrame\":667,\"view\":\"pair-two\",\"line\":\"Genetic variation means inherited differences.\"},{\"spokenCue\":\"Here is the contrast we need\",\"estimatedLocalFrame\":831,\"view\":\"compare\",\"line\":\"Runner: usually keeps a combination. Cross: can vary it.\"},{\"spokenCue\":\"It does not tell us which one\",\"estimatedLocalFrame\":1053,\"view\":\"compare\",\"line\":\"Variation does not tell us which plant performs best.\"}]",
+      "motionPurpose": "First isolate one pair while differing inherited selections are explained. Then trace two joining paths to their later offspring. DNA marks retain their identity across the path; no plant becomes sick, drought tolerant or otherwise visibly successful.",
+      "holdPurpose": "{\"kind\": \"comparison\", \"plannedSeconds\": null, \"limit\": \"No universal variation amount, offspring improvement or useful-trait promise.\"}"
+    },
+    {
+      "sceneId": "grower-tradeoff",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png; new strawberry-flower-botanical-b1-v1.png, strawberry-seed-cutaway-b1-v1.png and strawberry-seedling-botanical-b1-v1.png, selected by stage",
+      "teachingReason": "Bring back the chosen parent and established daughter. Label the shared inherited weakness as a conditional scenario. Set crossed seedlings beside them only when different responses are explained. Both groups remain recognisable healthy plants; no predetermined sick/survivor count is shown.",
+      "narrationCue": "[{\"spokenCue\":\"Now return to the disease\",\"estimatedLocalFrame\":0,\"view\":\"copy\",\"line\":\"The grower copied a useful plant.\"},{\"spokenCue\":\"But if that plant also has\",\"estimatedLocalFrame\":259,\"view\":\"disease\",\"line\":\"If it has an inherited weakness, clones may share it.\"},{\"spokenCue\":\"That is a shared risk\",\"estimatedLocalFrame\":518,\"view\":\"disease\",\"line\":\"Shared risk does not mean every plant gets infected.\"},{\"spokenCue\":\"Seedlings with different inherited combinations\",\"estimatedLocalFrame\":662,\"view\":\"compare\",\"line\":\"Relevant inherited differences may change the response.\"},{\"spokenCue\":\"For this grower, a useful reminder is\",\"estimatedLocalFrame\":1138,\"view\":\"compare\",\"line\":\"Copy to keep. Cross to compare.\"},{\"spokenCue\":\"The choice still depends\",\"estimatedLocalFrame\":1339,\"view\":\"compare\",\"line\":\"The useful choice depends on purpose and conditions.\"}]",
+      "motionPurpose": "Draw the parent-to-daughter relationship at the shared-weakness cue, then direct attention to crossed seedlings. Hold the comparison through the conclusion. No spread animation implies every clone is infected, and no green winner highlight implies a universal best method.",
+      "holdPurpose": "{\"kind\": \"causal-explanation\", \"plannedSeconds\": null, \"limit\": \"The one sentence distinguishing risk from certainty is the complete misconception repair here. Detailed disease caveats remain author notes.\"}"
+    },
+    {
+      "sceneId": "dry-soil-attempt",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png; new strawberry-flower-botanical-b1-v1.png, strawberry-seed-cutaway-b1-v1.png and strawberry-seedling-botanical-b1-v1.png, selected by stage",
+      "teachingReason": "Show neutral group A with the established runner-daughter art and group B with the true seed-grown strawberry seedling art. Keep origin, search goal, untested dry-soil condition and all three demands visible throughout the response opportunity. Both plants remain healthy context references, with no trial outcome depicted.",
+      "narrationCue": "[{\"spokenCue\":\"A nursery wants to find\",\"estimatedLocalFrame\":0,\"view\":\"attempt\",\"line\":\"Choose a starting group. Explain why. Name one unknown result.\"}]",
+      "motionPurpose": "Reveal the complete origin and condition labels during the prompt, then stop motion for the response interval. The two physical groups stay equally prominent. No winner outline, unequal disease/drought symptoms, answer subtitle or copy/variation summary appears during the attempt.",
+      "holdPurpose": "{\"kind\": \"answer-free-response\", \"plannedSeconds\": 12, \"status\": \"planning hypothesis, not measured silence\", \"start\": \"After the final spoken pause invitation and its last caption have finished.\", \"end\": \"At the first visible or audible feedback cue in the next scene, including the start of any fade.\", \"assemblyRequirement\": \"Record prompt and feedback separately, then assemble an exact quiet response gap and align the earliest answer disclosure to its measured end. The renderer must retain the complete question through the hold and prevent feedback transition overlap from leaking an answer.\"}"
+    },
+    {
+      "sceneId": "dry-soil-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png; new strawberry-flower-botanical-b1-v1.png, strawberry-seed-cutaway-b1-v1.png and strawberry-seedling-botanical-b1-v1.png, selected by stage",
+      "teachingReason": "Retain the two identified organism groups, goal, untested condition and all three demands. Show one short reasoning or prediction-limit phrase near the relevant plant. The phrase changes rather than accumulating. Do not change seedling appearance to announce a successful result.",
+      "narrationCue": "[{\"spokenCue\":\"The crossed seedlings are the better\",\"estimatedLocalFrame\":0,\"view\":\"feedback-b\",\"line\":\"B gives a wider search for inherited differences.\"},{\"spokenCue\":\"They receive DNA through sexual reproduction\",\"estimatedLocalFrame\":224,\"view\":\"feedback-b\",\"line\":\"Different reproductive-cell pairings can give different combinations.\"},{\"spokenCue\":\"Runner offspring usually copy\",\"estimatedLocalFrame\":436,\"view\":\"feedback-a\",\"line\":\"A usually retains one parent's inherited combination.\"},{\"spokenCue\":\"But we still cannot predict\",\"estimatedLocalFrame\":634,\"view\":\"feedback-unknown\",\"line\":\"Which plant will grow well is still unknown.\"},{\"spokenCue\":\"The parents may not carry useful differences\",\"estimatedLocalFrame\":858,\"view\":\"feedback-unknown\",\"line\":\"Useful inherited differences may not be present.\"},{\"spokenCue\":\"We would need to compare\",\"estimatedLocalFrame\":1069,\"view\":\"feedback-unknown\",\"line\":\"Test the plants in the stated conditions.\"}]",
+      "motionPurpose": "Focus each current causal sentence on its physical group. Fade the current reasoning line before the next stage rather than accumulating answer history. Leave unknown trial outcomes unchanged.",
+      "holdPurpose": "{\"kind\": \"feedback\", \"plannedSeconds\": null, \"limit\": \"Keep the complete task and conditions available through the reasoning. No official marking or mastery claim.\"}"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png; new strawberry-flower-botanical-b1-v1.png, strawberry-seed-cutaway-b1-v1.png and strawberry-seedling-botanical-b1-v1.png, selected by stage",
+      "teachingReason": "Show one quiet parent/daughter relationship beside the crossed parents and seedlings, with no abstract lineage parade. Finish with the next question while the plant examples remain stable.",
+      "narrationCue": "[{\"spokenCue\":\"Reproduction provides new individuals\",\"estimatedLocalFrame\":0,\"view\":\"compare\",\"line\":\"New offspring inherit information.\"},{\"spokenCue\":\"Copying can keep a useful combination\",\"estimatedLocalFrame\":172,\"view\":\"compare\",\"line\":\"Copying keeps a combination. Sexual reproduction can vary it.\"},{\"spokenCue\":\"Neither route guarantees\",\"estimatedLocalFrame\":335,\"view\":\"compare\",\"line\":\"Neither method guarantees offspring survival.\"},{\"spokenCue\":\"Next, we'll look at\",\"estimatedLocalFrame\":460,\"view\":\"compare\",\"line\":\"Next: how do animals reproduce?\"}]",
+      "motionPurpose": "A restrained final comparison and next-question reveal. Do not repeat the whole lesson as a moving note list.",
+      "holdPurpose": "{\"kind\": \"ending\", \"plannedSeconds\": null, \"limit\": \"Next-lesson scope is a planned handoff, not a promise that the upload is already available.\"}"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "none",
+      "visualReference": "src/prototypes/B1ContinuityTeachingReset.tsx; existing strawberry-runner-botanical-v1.png",
+      "teachingReason": "No separate diagram is needed. This is a deliberately stable copy board after the organism-based explanation, not a diagram slot filled with text.",
+      "narrationCue": "[{\"spokenCue\":\"If you'd like a short set of notes\",\"estimatedLocalFrame\":0,\"view\":\"notes\",\"line\":\"Copy these notes now, or pause for more time.\"}]",
+      "motionPurpose": "All notes settle together before quiet copying begins. No sequential teaching reveal, plant motion or new spoken reasoning during the hold.",
+      "holdPurpose": "{\"kind\": \"quiet-optional-copying\", \"plannedSeconds\": 18, \"status\": \"planning hypothesis\", \"start\": \"After the invitation and its captions end and all notes have settled.\", \"limit\": \"Check actual phone reading and copying load. Leave the optional pause invitation visible. Do not reuse the parent's quiet duration or measured note evidence as approval for these new words.\"}"
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/student_learning_reviewer_sol",
+    "evidence": {
+      "path": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/source-review.json",
+      "sha256": "f0954416bd3a18064c8a17c8a0c0e5f76c153e7d397b601b37a5e91e8adc927e"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/student_learning_reviewer_sol",
+    "evidence": {
+      "path": "docs/production/module5-starters-2026-10-10/biology/teaching-reset/source-review.json",
+      "sha256": "f0954416bd3a18064c8a17c8a0c0e5f76c153e7d397b601b37a5e91e8adc927e"
+    },
+    "scope": "New v6 source and actual botanical sequence, plus same-view joining-motion repair, require independent review closure. Earlier v2 findings retained separately."
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending.",
+  "previousStudentLearningReview": {
+    "status": "changes-required",
+    "reviewer": "/root/student_learning_reviewer_sol (gpt-6.1-sol)",
+    "evidence": {
+      "path": "docs/production/overnight-module5-2026-10-10/early-audit/learning-quality-audit-2026-10-11.json",
+      "sha256": "86b2f2182f0fada283b33171670bee233569c9b5aaf4b92cad7a7b719b70eb2a"
+    },
+    "scope": "New unvoiced source and sampled native preview. Science/script and exact voiced approvals separate."
+  },
+  "implementation": {
+    "revision": "v6",
+    "previewPath": "out/prototypes/b1-continuity-teaching-reset-2026-10-11-v6",
+    "sceneRenderer": "B1ContinuityTeachingScene({lesson:LessonData,scene:SceneData})",
+    "localTiming": "Selected scene local frame; unique spokenCue metadata for root measured alignment.",
+    "captionReserve": "Bottom 120 pixels reserved. Narrative/feedback teaching content ends before y960.",
+    "artworkProvenance": {
+      "toolMode": "Built-in image_gen, fresh generation",
+      "flower": {
+        "path": "public/assets/biology/strawberry-flower-botanical-b1-v1.png",
+        "prompt": "Use case: scientific-educational. Create one isolated botanical teaching illustration of a strawberry (Fragaria x ananassa) flower, in naturalistic fine ink linework and restrained watercolour washes, dark green, pale yellow, muted earth colours. Pure white background, no typography, arrows, panels or decorative frame. Composition: one large recognisable open strawberry flower shown in a slightly oblique front view, five broad white petals with fine veins, small green pointed sepals visible behind, many golden-yellow anthers arranged in a ring, and a distinct central pale-green slightly conical receptacle densely covered with MANY small separate pistils, each with its own ovary and slender style. Attach a short slender pedicel angled down left and one smaller trifoliate strawberry leaf on a neighbouring short petiole at lower left to establish organism context without obscuring the flower. The flower fills around 80 percent of the image; plenty of clear margin. Botanically accurate strawberry anatomy, NOT one large lily-style central ovary, NOT a single central pistil. Do not depict enlarged egg cells, sperm, pollen grains in transit, insects, fruit, roots or a runner. No realistic photographic texture, no heavy solid graphic outlines, no logos. Intended later overlay will point to one of the numerous pistils and show a magnified cell joining model, so keep the centre clear, crisp and anatomically distinguishable. This is physical organism art rather than a rendered infographic."
+      },
+      "seedling": {
+        "path": "public/assets/biology/strawberry-seedling-botanical-b1-v1.png",
+        "prompt": "Use case: scientific-educational. Create one isolated botanical teaching illustration of a young strawberry plant grown FROM A SEED, in delicate naturalistic ink linework and restrained green watercolour, on pure white background with no labels, arrows, lettering, panels or decorative frame. Side-on teaching view of a small healthy seedling: two low rounded oval cotyledons on a tiny short stem, above them two small serrated trifoliate true leaves with clear strawberry leaflet shapes emerging from the young crown, and a slender branching root system extending below a thin irregular short earth surface line. Keep the complete leaves, crown and all fine roots within image with generous clear margins; plant fills about 80 percent height, centred. Natural scale relationships. This is a newly established young seed-grown strawberry, no connecting horizontal runner or stolon, no mature fruit, flower or bulb. Do not add a giant visible seed at root, pot, face, pedestal or ornamental landscape. Scientifically plausible young plant illustration, no trait comparison claim."
+      },
+      "seed": {
+        "path": "public/assets/biology/strawberry-seed-cutaway-b1-v1.png",
+        "prompt": "Use case: scientific-educational. A single botanical ink-and-watercolour teaching asset on pure white background, with no text, numbers, labels, arrows or frames. Draw ONE greatly magnified strawberry achene, the tiny dry single-seeded fruit normally visible on the outside of a strawberry, shown as a longitudinal opened cutaway. Slender small oval teardrop-shaped achene with muted golden-brown papery outer fruit wall, thin seed coat inside, and a pale cream developing embryo protected inside the seed. The embryo has two small fleshy cotyledons and a short radicle below them; keep structure simplified but botanically plausible for a dicot seed, no bean-sized dark seed or loose pollen grain. Show a removed narrow front window so that the seed and embryo are visibly inside a retaining outer wall, rather than floating outside. Stand alone on white, generous margins, delicate fine botanical hatch lines and gentle watercolour shading. No strawberry fruit flesh, extra seeds, roots emerging out of it, germination sprout, detached parts or magnified cells. It will accompany the sentence 'The developing new plant is inside a seed'; fine structures do not need separate labels. Match naturalistic educational botanical plate style."
+      }
+    },
+    "scope": [
+      "Runner art shows established plant relationships, not literal animated growth.",
+      "Generated botanical flower, seed-bearing achene cutaway and seedling art supply organism context. The simplified cutaway is not a detailed strawberry seed anatomy lesson. All magnifications and growth stages are not to scale.",
+      "Repeated seedling art identifies the organism. Matching symbolic DNA marks trace different inherited selections through each joining to a later offspring; they do not demonstrate visible traits, chromosome counts or guaranteed performance."
+    ]
+  }
+}

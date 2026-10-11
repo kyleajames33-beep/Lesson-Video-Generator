@@ -6,12 +6,12 @@ import {DioramaDefs, DioramaPlinth} from '../../diorama';
 import {AtomDefs, Ball} from './shared';
 
 export type DisturbanceMode = 'additionHook' | 'addA' | 'removeB' | 'fixedK' | 'associationHeat' | 'temperatureResponse';
-export type Module5DisturbanceProps = {mode: DisturbanceMode; at: Record<string, number>; barReferenceStyle?: 'solidMarks'; uncluttered?: boolean};
+export type Module5DisturbanceProps = {mode: DisturbanceMode; at: Record<string, number>; barReferenceStyle?: 'solidMarks'; uncluttered?: boolean; showK?: boolean; plainHeat?: boolean; qualitativeReferences?: boolean};
 
 // Reuse the reviewed mathematical model and cue API; change presentation only.
 import {disturbanceState, temperatureResponseState} from './Module5DisturbanceDiagram';
 
-export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle, uncluttered = false}: Module5DisturbanceProps) => {
+export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle, uncluttered = false, showK = true, plainHeat = false, qualitativeReferences = false}: Module5DisturbanceProps) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const theme = useAccent();
@@ -111,8 +111,8 @@ export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle, unc
       {text(1160, 208, panelHeading, TOK.inkDim, 32)}
       <path d="M1160 230 H1650" stroke={TOK.rule} strokeWidth={2}/>
       {showReference ? <>
-        {text(1160, 310, mode === 'addA' ? 'A = 4' : 'A = 5/3', primary, 44)}
-        {text(1160, 390, mode === 'addA' ? 'B = 2' : 'B = 5/6', other, 44)}
+        {text(1160, 310, qualitativeReferences ? (mode === 'addA' ? 'A above original' : 'A below original') : (mode === 'addA' ? 'A = 4' : 'A = 5/3'), primary, 44)}
+        {text(1160, 390, qualitativeReferences ? (mode === 'addA' ? 'B above original' : 'B below original') : (mode === 'addA' ? 'B = 2' : 'B = 5/6'), other, 44)}
         {text(1160, 485, mode === 'addA' ? 'Both above the original' : 'B stays below its original level', TOK.ink, 32)}
       </> : shown('response') ? <>
         {text(1160, 310, 'A falls', primary, 44)}{text(1160, 390, 'B rises', other, 44)}
@@ -179,7 +179,7 @@ export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle, unc
         {text(1160, 231, cooling ? 'Cooling' : heating ? 'Heating' : reverse ? 'Reverse: splitting' : 'Forward: joining')}
         {text(1160, 306, absorbs ? 'Splitting absorbs heat' : 'Joining releases heat', absorbs ? other : primary)}
         {text(1160, 380, cooling ? 'Favours joining' : heating ? 'Favours splitting' : reverse ? 'Endothermic' : 'Exothermic')}
-        {text(1160, 454, reverse ? 'Forward ΔH < 0' : 'ΔH < 0: forward')}
+        {!plainHeat && text(1160, 454, reverse ? 'Forward \u0394H < 0' : '\u0394H < 0: forward')}
         {arrow(absorbs ? 1090 : 880, absorbs ? 880 : 1090, uncluttered ? 155 : 285, other)}
         {uncluttered ? text(1025, 210, 'Heat', other, 32, 'middle') : [0, 1, 2].map(i => {
           const origin = absorbs ? 1070 : 880;
@@ -213,11 +213,11 @@ export const Module5DisturbanceClearDiagram = ({mode, at, barReferenceStyle, unc
     {text(120, 527, 'Before')}{text(340, 527, 'T step')}{text(840, 527, 'Later →', TOK.ink, 50, 'middle')}
     {card(1110, 163, 570, 350)}
     {text(1140, 230, shown('event') ? 'Temperature ↑' : 'Original temperature', primary)}
-    {text(1140, 305, shown('event') ? 'K ↓ for the new T' : 'K for the original T', other)}
-    {text(1140, 383, shown('response') && frame >= cue('response') + 6 * fps ? 'Final reference' : shown('response') ? 'New T held fixed' : shown('defineNewK') ? 'K changes with T' : shown('continuousConcentrations') ? 'No material transferred' : 'Rapid heating')}
-    {text(1140, 458, shown('response') && frame >= cue('response') + 6 * fps ? 'NO₂ ↑; N₂O₄ ↓' : shown('response') ? 'K fixed at new T' : 'No instant change')}
+    {text(1140, 305, showK ? (shown('event') ? 'K \u2193 for the new T' : 'K for the original T') : (shown('event') ? 'Heating favours splitting' : 'Opposing rates balance'), other)}
+    {text(1140, 383, shown('response') && frame >= cue('response') + 6 * fps ? 'Final reference' : shown('response') ? 'New T held fixed' : shown('defineNewK') ? (showK ? 'K changes with T' : 'New temperature') : shown('continuousConcentrations') ? 'No material transferred' : 'Rapid heating')}
+    {text(1140, 458, shown('response') && frame >= cue('response') + 6 * fps ? 'NO₂ ↑; N₂O₄ ↓' : shown('response') ? (showK ? 'K fixed at new T' : 'Amounts respond gradually') : 'No instant change')}
     {shown('response') && frame >= cue('response') + 6 * fps ? <>
-      {text(40, 593, 'Still approaching balance; final reference shown separately.')}
-    </> : text(40, 593, shown('response') ? 'New temperature held fixed; K stays the same.' : 'Temperature and K change first; composition responds afterwards.')}
-  </>, 'Idealised rapid heating in a closed fixed-volume 2NO2 to N2O4 equilibrium with a heat-releasing forward direction. Temperature rises and qualitative K decreases at the imposed event. Both concentrations are continuous, then NO2 increases and N2O4 decreases. K stays fixed while composition approaches the new balance. Atom-conserving qualitative traces are not measured kinetics or numeric K data. Separate final-reference text, no finite exact equilibrium marker.');
+      {text(40, 593, showK ? 'Still approaching balance; final reference shown separately.' : 'Moving towards a new balance.')}
+    </> : text(40, 593, showK ? (shown('response') ? 'New temperature held fixed; K stays the same.' : 'Temperature and K change first; composition responds afterwards.') : (shown('response') ? 'Keep the new temperature fixed.' : 'Heating changes the rates; composition responds afterwards.'))}
+  </>, showK ? 'Idealised rapid heating in a closed fixed-volume 2NO2 to N2O4 equilibrium with a heat-releasing forward direction. Temperature rises and qualitative K decreases at the imposed event. Both concentrations are continuous, then NO2 increases and N2O4 decreases. K stays fixed while composition approaches the new balance. Atom-conserving qualitative traces are not measured kinetics or numeric K data. Separate final-reference text, no finite exact equilibrium marker.' : 'Closed fixed-volume nitrogen dioxide and dinitrogen tetroxide mixture, initially at equilibrium. Heating favours the heat-absorbing splitting direction. Concentrations have no instantaneous step, then nitrogen dioxide rises and dinitrogen tetroxide falls towards a new balance.');
 };

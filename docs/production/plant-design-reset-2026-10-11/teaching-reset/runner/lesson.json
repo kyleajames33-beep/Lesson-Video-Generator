@@ -1,0 +1,337 @@
+{
+  "title": "How does a strawberry runner make a new plant?",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Plants: runner",
+  "syllabusNeutral": true,
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusDotPoints": [
+    "analyse sexual and asexual reproduction in plants"
+  ],
+  "productionRole": "prototype",
+  "teachingRenderer": "plantRunner",
+  "lessonIntent": "Explain how roots and leaves at a runner node allow a strawberry plantlet to become independent.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "teachingNotes": [
+    "A runner is a stem from the parent.",
+    "Roots and leaves develop at a suitable node.",
+    "An established plantlet can grow separately using its own roots and leaves.",
+    "This is asexual reproduction: sperm and egg did not join."
+  ],
+  "teachingReset": {
+    "proposalPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
+    "routeId": "bio-m5-b02b",
+    "deliveryPart": 2,
+    "syllabusAction": "B-plants",
+    "timingStatus": "Unrecorded source. Cue frames and quiet boundaries are provisional; map exact anchors to measured new narration.",
+    "assetPaths": [
+      "assets/biology/strawberry-runner-botanical-v1.png"
+    ],
+    "authorNotes": [
+      "Completed painted illustration shows one successful established outcome. It does not animate real growth.",
+      "No nuclear-division or mutation lesson is inserted. Bud development and independence depend on conditions."
+    ],
+    "visualLimits": [
+      "One completed botanical plate locates the runner and established daughter plant.",
+      "The early rootless-bud stimulus is a clearly identified code-native model."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "runner-question",
+      "type": "concept",
+      "heading": "How can a stem become a separate plant?",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 684,
+      "voiceover": {
+        "text": "This strawberry parent is connected to a smaller plant by a long stem. No seed made the smaller plant. How can part of a stem become a plant that can live separately? We'll follow the connecting stem and then ask why the new plant's own roots and leaves matter."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "This strawberry parent",
+            "view": "whole",
+            "line": "A parent stem connects to a new rooted plant.",
+            "at": 0
+          }
+        ],
+        "reason": "Begin with the actual recognisable strawberry parent, runner and daughter in the completed illustration."
+      }
+    },
+    {
+      "id": "runner-stem",
+      "type": "concept",
+      "heading": "A runner is a stem from the parent.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 796,
+      "voiceover": {
+        "text": "The long stem grows from the base of the parent and extends across the ground. We call this stem a runner. It is above the soil, while the roots grow down into it. The runner stays connected to the parent while the new plant develops. So we are following a stem route, not a root spreading sideways."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "The long stem grows",
+            "view": "runner",
+            "line": "Runner: a stem that grows from the parent.",
+            "at": 0
+          },
+          {
+            "spokenCue": "It is above the soil",
+            "view": "runner",
+            "line": "The runner is above the soil. Roots grow into it.",
+            "at": 350
+          }
+        ],
+        "reason": "Trace the actual painted connecting stem while retaining the parent origin."
+      }
+    },
+    {
+      "id": "runner-node",
+      "type": "concept",
+      "heading": "Roots and leaves develop at a node.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 949,
+      "voiceover": {
+        "text": "A bud can develop at a point on the runner called a node. In suitable growing conditions, it forms leaves above the soil and roots below. New cells build these parts as the young plant grows. Our illustration shows a successful later stage: the small plant has its own roots and leaves at that node. A tiny bud alone would not yet show that it can live independently."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "A bud can develop",
+            "view": "node",
+            "line": "Node: a point on the stem where a bud can develop.",
+            "at": 0
+          },
+          {
+            "spokenCue": "In suitable growing conditions",
+            "view": "parts",
+            "line": "Roots and leaves develop at the node.",
+            "at": 300
+          },
+          {
+            "spokenCue": "Our illustration shows a successful later stage",
+            "view": "parts",
+            "line": "This plantlet has its own roots and leaves.",
+            "at": 650
+          }
+        ],
+        "reason": "Select the real daughter crown and its roots/leaves without pretending the completed raster animates growth."
+      }
+    },
+    {
+      "id": "runner-resources",
+      "type": "concept",
+      "heading": "Own roots and leaves can support its growth.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 894,
+      "voiceover": {
+        "text": "Why do those new parts matter? The roots take up water from the soil. The leaves use light to make food through photosynthesis. Those resources support the young plant's growth. While it is developing, the connecting runner can support it too. But once the plantlet is established with enough roots and leaves, it can support itself. That is the reason it can become independent."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Why do those new parts matter?",
+            "view": "roots",
+            "line": "Roots take up water from the soil.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The leaves use light",
+            "view": "leaves",
+            "line": "Leaves make food in light.",
+            "at": 270
+          },
+          {
+            "spokenCue": "But once the plantlet is established",
+            "view": "parts",
+            "line": "Enough roots and leaves allow independent growth.",
+            "at": 620
+          }
+        ],
+        "reason": "Select water uptake at daughter roots, then light at daughter leaves, before the independence conclusion."
+      }
+    },
+    {
+      "id": "runner-independent",
+      "type": "concept",
+      "heading": "Established plants can grow separately.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 796,
+      "voiceover": {
+        "text": "Now imagine the connection is cut after the plantlet is established. Its roots are already in the soil, and it already has leaves. It can keep taking up water and making food, so it can continue growing separately when conditions remain suitable. Cutting the runner did not create the roots. The new plant needed those structures first."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Now imagine the connection is cut",
+            "view": "cut",
+            "line": "The established plant can grow after separation.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Cutting the runner did not create the roots.",
+            "view": "cut",
+            "line": "Roots and leaves developed before separation.",
+            "at": 380
+          }
+        ],
+        "reason": "Illustrative cut in the existing stem, with both actual plants stationary and the rooted daughter retained."
+      }
+    },
+    {
+      "id": "runner-asexual",
+      "type": "concept",
+      "heading": "A new plant grew from the parent stem.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 894,
+      "voiceover": {
+        "text": "No sperm cell joined an egg cell to make this runner plant. The new plant grew from part of the parent, so this is asexual reproduction. You may also hear vegetative propagation: making a new plant from a parent part such as this stem. In the flower example, sperm and egg joining started the embryo. Here, roots and leaves developed on the runner instead."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "No sperm cell joined",
+            "view": "whole",
+            "line": "No sperm and egg joined to make this plant.",
+            "at": 0
+          },
+          {
+            "spokenCue": "You may also hear vegetative propagation",
+            "view": "whole",
+            "line": "Vegetative propagation: a new plant from a parent part.",
+            "at": 320
+          }
+        ],
+        "reason": "Name the classification and its useful plain meaning only after showing the stem route."
+      }
+    },
+    {
+      "id": "runner-attempt",
+      "type": "concept",
+      "heading": "A bud has leaves but no roots yet.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 1300,
+      "voiceover": {
+        "text": "Try an earlier stage. A small bud on a strawberry runner has begun growing leaves, but it has no roots yet. It is still attached to the parent. Does that show it can already grow separately if the connection is cut? Explain using the resource it cannot yet take up for itself. Pause and decide."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Try an earlier stage.",
+            "view": "bud",
+            "line": "Can it already grow separately? Explain which resource it cannot yet take up for itself.",
+            "at": 0
+          }
+        ],
+        "reason": "Show a physical node with bud/leaves but no roots. Preserve all conditions and hide the explanation."
+      },
+      "responseRole": "attempt",
+      "responseHold": {
+        "startFrame": 850,
+        "endFrame": 1300
+      }
+    },
+    {
+      "id": "runner-feedback",
+      "type": "concept",
+      "heading": "Leaves alone do not show independence.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 880,
+      "voiceover": {
+        "text": "Not yet. The bud has leaves, but no roots to take up its own water from the soil. It still depends on its connection while it develops. It may grow roots later if conditions allow, but the supplied early stage does not show an established independent plant. That is why the order matters: roots and leaves develop before the plant can grow separately."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Not yet.",
+            "view": "bud",
+            "line": "No roots means no own water uptake from the soil.",
+            "at": 0
+          },
+          {
+            "spokenCue": "It may grow roots later",
+            "view": "bud",
+            "line": "The supplied early stage does not show independence.",
+            "at": 360
+          }
+        ],
+        "reason": "Use the supplied early bud, rather than replacing it with the successful rooted outcome."
+      },
+      "responseRole": "feedback"
+    },
+    {
+      "id": "runner-memory",
+      "type": "concept",
+      "heading": "Roots and leaves first. Separation later.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 880,
+      "voiceover": {
+        "text": "Remember the reason, not just the word runner: roots and leaves first, separation later. The roots take up water, and the leaves make food in light. Once the new plant can support itself, it can grow separately. This stem route is asexual because sperm and egg did not join. Next, we will follow how bread mould can begin growing somewhere new using spores."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Remember the reason",
+            "view": "parts",
+            "line": "Roots and leaves first. Separation later.",
+            "at": 0
+          },
+          {
+            "spokenCue": "This stem route is asexual",
+            "view": "whole",
+            "line": "A new plant grew from the parent stem.",
+            "at": 420
+          }
+        ],
+        "reason": "Recall the structures responsible for independence after their functions have been explained."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "heading": "Key notes: what to write in your book",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 960,
+      "voiceover": {
+        "text": "If you would like notes, copy these now, or pause for longer."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "If you would like notes",
+            "view": "notes",
+            "line": "",
+            "at": 0
+          }
+        ],
+        "reason": "Stable quiet copy board.",
+        "quietHoldStartFrame": 220
+      }
+    }
+  ]
+}

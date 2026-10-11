@@ -1,0 +1,3723 @@
+{
+  "title": "How bread mould starts growing somewhere new",
+  "subtitle": "Threads, spores and new growth",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Fungi: bread mould",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusNeutral": true,
+  "syllabusDotPoints": [
+    "fungi: budding, spores"
+  ],
+  "nesaOutcomes": [
+    "BIO12-12"
+  ],
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "teachingRenderer": "mouldSpores",
+  "lessonIntent": "Explain how spores travel from a mould colony and start new fungal growth under suitable conditions.",
+  "inquiryQuestion": "How can mould reach another piece of bread without the pieces touching?",
+  "teachingNotes": [
+    "Hyphae are fungal threads that take up nutrients.",
+    "Sporangia produce spores that can move in air.",
+    "A spore can begin new threads when conditions are suitable.",
+    "The illustrated spore-making route is asexual reproduction."
+  ],
+  "teachingReset": {
+    "proposalPath": "docs/production/fungi-design-reset-2026-10-11/teaching-proposal.json",
+    "parentLessonPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+    "routeId": "bio-m5-b02b",
+    "deliveryPart": 3,
+    "syllabusAction": "B-fungi",
+    "coverage": "Candidate mould contribution only. Yeast budding remains separate and outstanding.",
+    "assetPaths": [
+      "assets/biology/rhizopus-bread-mould-botanical-v1.png",
+      "assets/biology/rhizopus-germination-botanical-v1.png",
+      "assets/biology/clean-bread-mould-question-v1.png"
+    ],
+    "visualLimits": [
+      "Painted source states are magnified teaching illustrations, not photographs or recorded time-lapse.",
+      "Released-spore movement is a representative coded transport model, not a claim of a fixed path."
+    ],
+    "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending.",
+    "releaseStatus": "Fresh measured narration assembled. Exact voiced review and human listening pending. Not released."
+  },
+  "scenes": [
+    {
+      "id": "mould-hook",
+      "type": "concept",
+      "caption": "How does mould reach another piece of bread?",
+      "heading": "How does mould reach another piece of bread?",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 521,
+      "voiceover": {
+        "text": "You may have seen a fuzzy patch spreading across old bread. That patch is a fungus. But how could it start growing on another piece of bread without the two pieces touching? Let’s follow one example, a bread mould called Rhizopus stolonifer.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-hook.80c276764e50.mp3",
+        "startFrame": 0,
+        "endFrame": 461
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "You may have seen",
+            "view": "whole",
+            "line": "How can another piece of bread develop mould?",
+            "at": 0
+          }
+        ],
+        "reason": "Establish the bread and organism before microscopic terms.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "You",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 240,
+          "endMs": 320,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 400,
+          "endMs": 480,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " seen",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 800,
+          "endMs": 880,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " fuzzy",
+          "startMs": 960,
+          "endMs": 1200,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " spreading",
+          "startMs": 1760,
+          "endMs": 2000,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 2080,
+          "endMs": 2400,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " old",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " bread.",
+          "startMs": 2720,
+          "endMs": 3360,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 3600,
+          "endMs": 3840,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 4080,
+          "endMs": 4320,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4480,
+          "endMs": 4560,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " fungus.",
+          "startMs": 4800,
+          "endMs": 5640,
+          "timestampMs": 5220,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 6080,
+          "endMs": 6240,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 6440,
+          "endMs": 6480,
+          "timestampMs": 6460,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 6560,
+          "endMs": 6800,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " growing",
+          "startMs": 6880,
+          "endMs": 7200,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 7240,
+          "endMs": 7280,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 7360,
+          "endMs": 7760,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " piece",
+          "startMs": 7840,
+          "endMs": 8000,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 8080,
+          "endMs": 8160,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " bread",
+          "startMs": 8240,
+          "endMs": 8480,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 8720,
+          "endMs": 9040,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9080,
+          "endMs": 9120,
+          "timestampMs": 9100,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " pieces",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " touching?",
+          "startMs": 9760,
+          "endMs": 10560,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " Let’s",
+          "startMs": 10880,
+          "endMs": 11120,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " follow",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11520,
+          "endMs": 11600,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " example,",
+          "startMs": 11680,
+          "endMs": 12560,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " bread",
+          "startMs": 12840,
+          "endMs": 12960,
+          "timestampMs": 12900,
+          "confidence": null
+        },
+        {
+          "text": " mould",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 13440,
+          "endMs": 13680,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " Rhizopus",
+          "startMs": 13760,
+          "endMs": 14400,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " stolonifer.",
+          "startMs": 14480,
+          "endMs": 15360,
+          "timestampMs": 14920,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mould-threads",
+      "type": "concept",
+      "caption": "The mould is a body of branching threads.",
+      "heading": "The mould is a body of branching threads.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 660,
+      "voiceover": {
+        "text": "Close up, the mould is made of thin branching threads. One thread is called a hypha; several are hyphae. These threads grow over and into the bread. The fungus gets nutrients from the bread, which support its growth. The fuzzy patch is a growing fungal body, rather than a pile of loose spores.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-threads.3e9e8abb6030.mp3",
+        "startFrame": 0,
+        "endFrame": 600
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Close up",
+            "view": "threads",
+            "line": "Hyphae are the thin threads of the fungus.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The fungus gets nutrients",
+            "view": "threads",
+            "line": "The threads take up nutrients from the bread.",
+            "at": 336
+          }
+        ],
+        "reason": "Connect the visible patch to the feeding body.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Close",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " up,",
+          "startMs": 400,
+          "endMs": 880,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 960,
+          "endMs": 1000,
+          "timestampMs": 980,
+          "confidence": null
+        },
+        {
+          "text": " mould",
+          "startMs": 1040,
+          "endMs": 1360,
+          "timestampMs": 1200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " thin",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " branching",
+          "startMs": 2400,
+          "endMs": 2880,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " threads.",
+          "startMs": 2960,
+          "endMs": 3800,
+          "timestampMs": 3380,
+          "confidence": null
+        },
+        {
+          "text": " One",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " thread",
+          "startMs": 4320,
+          "endMs": 4640,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " hypha;",
+          "startMs": 5280,
+          "endMs": 6160,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " several",
+          "startMs": 6240,
+          "endMs": 6640,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " hyphae.",
+          "startMs": 7000,
+          "endMs": 7520,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " These",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " threads",
+          "startMs": 8520,
+          "endMs": 8720,
+          "timestampMs": 8620,
+          "confidence": null
+        },
+        {
+          "text": " grow",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 9120,
+          "endMs": 9440,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9520,
+          "endMs": 9680,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 9760,
+          "endMs": 10080,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10120,
+          "endMs": 10160,
+          "timestampMs": 10140,
+          "confidence": null
+        },
+        {
+          "text": " bread.",
+          "startMs": 10240,
+          "endMs": 10640,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 11200,
+          "endMs": 11280,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " fungus",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 11760,
+          "endMs": 11920,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " nutrients",
+          "startMs": 12000,
+          "endMs": 12560,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12760,
+          "endMs": 12800,
+          "timestampMs": 12780,
+          "confidence": null
+        },
+        {
+          "text": " bread,",
+          "startMs": 12880,
+          "endMs": 13280,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " support",
+          "startMs": 13520,
+          "endMs": 13840,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " growth.",
+          "startMs": 14080,
+          "endMs": 14560,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " fuzzy",
+          "startMs": 15280,
+          "endMs": 15600,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 15680,
+          "endMs": 16000,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16239.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " growing",
+          "startMs": 16360,
+          "endMs": 16720,
+          "timestampMs": 16540,
+          "confidence": null
+        },
+        {
+          "text": " fungal",
+          "startMs": 16800,
+          "endMs": 17120,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " body,",
+          "startMs": 17280,
+          "endMs": 17840,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " rather",
+          "startMs": 18000,
+          "endMs": 18160,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " pile",
+          "startMs": 18640,
+          "endMs": 18800,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 18840,
+          "endMs": 18880,
+          "timestampMs": 18860,
+          "confidence": null
+        },
+        {
+          "text": " loose",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " spores.",
+          "startMs": 19280,
+          "endMs": 20000,
+          "timestampMs": 19640,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mould-spore-case",
+      "type": "concept",
+      "caption": "A rounded spore case produces new reproductive cells.",
+      "heading": "A rounded spore case produces new reproductive cells.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 771,
+      "voiceover": {
+        "text": "Some threads form upright stalks with rounded heads. Inside a head, the fungus produces many tiny reproductive cells called spores. A spore can begin new fungal growth. The rounded structure where these spores form is called a sporangium. So the sporangium makes the spores; the spores are the cells that can begin a new fungus.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-spore-case.0a904a9902b8.mp3",
+        "startFrame": 0,
+        "endFrame": 711
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Some threads form",
+            "view": "head",
+            "line": "Upright stalks carry rounded spore cases.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Inside a head",
+            "view": "spores",
+            "line": "Spores are reproductive cells that can start new growth.",
+            "at": 116
+          },
+          {
+            "spokenCue": "The rounded structure",
+            "view": "head",
+            "line": "A sporangium is the structure where spores form.",
+            "at": 394
+          }
+        ],
+        "reason": "Distinguish enclosing structure and released cells using the existing mature and releasing heads.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Some",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " threads",
+          "startMs": 520,
+          "endMs": 720,
+          "timestampMs": 620,
+          "confidence": null
+        },
+        {
+          "text": " form",
+          "startMs": 800,
+          "endMs": 1040,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " upright",
+          "startMs": 1200,
+          "endMs": 1600,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " stalks",
+          "startMs": 1680,
+          "endMs": 2080,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 2160,
+          "endMs": 2240,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " rounded",
+          "startMs": 2320,
+          "endMs": 2720,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " heads.",
+          "startMs": 2800,
+          "endMs": 3560,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " Inside",
+          "startMs": 3840,
+          "endMs": 4240,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " head,",
+          "startMs": 4560,
+          "endMs": 5040,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " fungus",
+          "startMs": 5280,
+          "endMs": 5600,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " produces",
+          "startMs": 5680,
+          "endMs": 6240,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 6320,
+          "endMs": 6560,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " tiny",
+          "startMs": 6720,
+          "endMs": 7040,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 7200,
+          "endMs": 7840,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 7920,
+          "endMs": 8240,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 8400,
+          "endMs": 8640,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " spores.",
+          "startMs": 8720,
+          "endMs": 9440,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 10240,
+          "endMs": 10640,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 10720,
+          "endMs": 10880,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " begin",
+          "startMs": 11040,
+          "endMs": 11200,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 11280,
+          "endMs": 11520,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " fungal",
+          "startMs": 11600,
+          "endMs": 11920,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " growth.",
+          "startMs": 12000,
+          "endMs": 12480,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " rounded",
+          "startMs": 13280,
+          "endMs": 13600,
+          "timestampMs": 13440,
+          "confidence": null
+        },
+        {
+          "text": " structure",
+          "startMs": 13680,
+          "endMs": 14080,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 14360,
+          "endMs": 14480,
+          "timestampMs": 14420,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 14560,
+          "endMs": 14880,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " form",
+          "startMs": 14960,
+          "endMs": 15360,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 15600,
+          "endMs": 15760,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16160,
+          "endMs": 16200,
+          "timestampMs": 16180,
+          "confidence": null
+        },
+        {
+          "text": " sporangium.",
+          "startMs": 16239.999999999998,
+          "endMs": 17120,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 17680,
+          "endMs": 17840,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " sporangium",
+          "startMs": 18160,
+          "endMs": 18880,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19280,
+          "endMs": 19320,
+          "timestampMs": 19300,
+          "confidence": null
+        },
+        {
+          "text": " spores;",
+          "startMs": 19360,
+          "endMs": 20400,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20440,
+          "endMs": 20480,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 20560,
+          "endMs": 21040,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21240,
+          "endMs": 21280,
+          "timestampMs": 21260,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 21440,
+          "endMs": 21760,
+          "timestampMs": 21600,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 21840,
+          "endMs": 21920,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " begin",
+          "startMs": 22240,
+          "endMs": 22400,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22480,
+          "endMs": 22560,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 22640,
+          "endMs": 22800,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " fungus.",
+          "startMs": 22880,
+          "endMs": 23680,
+          "timestampMs": 23280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mould-release",
+      "type": "concept",
+      "caption": "Moving air can carry spores to a new place.",
+      "heading": "Moving air can carry spores to a new place.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 694,
+      "voiceover": {
+        "text": "When the sporangium matures, its wall breaks down and spores can be released. Air movement can carry them away from the parent mould. This allows a spore to reach another food surface, even when no fungal thread joins the two places. Arriving is only the first step. The spore still needs conditions that allow it to grow.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-release.a25b858b21d9.mp3",
+        "startFrame": 0,
+        "endFrame": 634
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "When the sporangium matures",
+            "view": "release",
+            "line": "The mature wall breaks down and releases spores.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Air movement",
+            "view": "release",
+            "line": "Air can carry spores away from the parent mould.",
+            "at": 166
+          }
+        ],
+        "reason": "Keep the named colony visible while explaining airborne travel.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "When",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 200,
+          "endMs": 240,
+          "timestampMs": 220,
+          "confidence": null
+        },
+        {
+          "text": " sporangium",
+          "startMs": 320,
+          "endMs": 960,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " matures,",
+          "startMs": 1000,
+          "endMs": 1920,
+          "timestampMs": 1460,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 2040,
+          "endMs": 2160,
+          "timestampMs": 2100,
+          "confidence": null
+        },
+        {
+          "text": " wall",
+          "startMs": 2240,
+          "endMs": 2480,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " breaks",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 2960,
+          "endMs": 3280,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 3600,
+          "endMs": 4000,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " released.",
+          "startMs": 4400,
+          "endMs": 4960,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " Air",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " movement",
+          "startMs": 5760,
+          "endMs": 6160,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 6280,
+          "endMs": 6400,
+          "timestampMs": 6340,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 6520,
+          "endMs": 6640,
+          "timestampMs": 6580,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " away",
+          "startMs": 6880,
+          "endMs": 7200,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7400,
+          "endMs": 7440,
+          "timestampMs": 7420,
+          "confidence": null
+        },
+        {
+          "text": " parent",
+          "startMs": 7520,
+          "endMs": 7840,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " mould.",
+          "startMs": 7920,
+          "endMs": 8400,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " This",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " allows",
+          "startMs": 9280,
+          "endMs": 9440,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 9680,
+          "endMs": 9920,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 10200,
+          "endMs": 10320,
+          "timestampMs": 10260,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 10520,
+          "endMs": 10720,
+          "timestampMs": 10620,
+          "confidence": null
+        },
+        {
+          "text": " food",
+          "startMs": 10800,
+          "endMs": 11040,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " surface,",
+          "startMs": 11120,
+          "endMs": 11840,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " even",
+          "startMs": 11920,
+          "endMs": 12160,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 12240,
+          "endMs": 12400,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " fungal",
+          "startMs": 12800,
+          "endMs": 13040,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " thread",
+          "startMs": 13200,
+          "endMs": 13520,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " joins",
+          "startMs": 13600,
+          "endMs": 13840,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " places.",
+          "startMs": 14240,
+          "endMs": 14800,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " Arriving",
+          "startMs": 15520,
+          "endMs": 16160,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16239.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 16480,
+          "endMs": 16720,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 16960,
+          "endMs": 17200,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " step.",
+          "startMs": 17400,
+          "endMs": 18000,
+          "timestampMs": 17700,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 18040,
+          "endMs": 18080,
+          "timestampMs": 18060,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 18160,
+          "endMs": 18560,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 18720,
+          "endMs": 18880,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 19480,
+          "endMs": 19760,
+          "timestampMs": 19620,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 19840,
+          "endMs": 19920,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " allow",
+          "startMs": 20080,
+          "endMs": 20240,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 20280,
+          "endMs": 20320,
+          "timestampMs": 20300,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " grow.",
+          "startMs": 20560,
+          "endMs": 21120,
+          "timestampMs": 20840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mould-new-growth",
+      "type": "concept",
+      "caption": "A landed spore can begin a new fungal thread.",
+      "heading": "A landed spore can begin a new fungal thread.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 941,
+      "voiceover": {
+        "text": "On suitable food, with enough moisture and a suitable temperature, the spore can begin to grow. We call that germination. A thin thread grows out from the spore, then branches to build a new fungal body. In the production route we have shown, the parent mould made the spores without reproductive cells joining. That is asexual reproduction. Rhizopus also has a sexual route, so finding a spore on its own would not tell us how it was produced.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-new-growth.3e0f7ccef1e2.mp3",
+        "startFrame": 0,
+        "endFrame": 881
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "spokenCue": "On suitable food, with enough moisture",
+            "view": "germinate",
+            "line": "Moisture, food and suitable temperature allow growth."
+          },
+          {
+            "at": 188,
+            "spokenCue": "We call that germination.",
+            "view": "germinate",
+            "line": "Germination means beginning to grow."
+          },
+          {
+            "at": 257,
+            "spokenCue": "A thin thread grows out",
+            "view": "germinate",
+            "line": "A new thread grows out from the landed spore."
+          },
+          {
+            "at": 435,
+            "spokenCue": "In the production route we have shown",
+            "view": "germinate",
+            "line": "This parent makes spores without reproductive cells joining."
+          },
+          {
+            "at": 695,
+            "spokenCue": "Rhizopus also has a sexual route",
+            "view": "germinate",
+            "line": "A spore alone does not identify its production route."
+          }
+        ],
+        "reason": "The actual germination artwork shows the spore connected to its growing thread.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "On",
+          "startMs": 0,
+          "endMs": 120,
+          "timestampMs": 60,
+          "confidence": null
+        },
+        {
+          "text": " suitable",
+          "startMs": 160,
+          "endMs": 600,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " food,",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " enough",
+          "startMs": 1560,
+          "endMs": 1760,
+          "timestampMs": 1660,
+          "confidence": null
+        },
+        {
+          "text": " moisture",
+          "startMs": 1840,
+          "endMs": 2400,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2600,
+          "endMs": 2640,
+          "timestampMs": 2620,
+          "confidence": null
+        },
+        {
+          "text": " suitable",
+          "startMs": 2720,
+          "endMs": 3040,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " temperature,",
+          "startMs": 3120,
+          "endMs": 4080,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4120,
+          "endMs": 4160,
+          "timestampMs": 4140,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 4240,
+          "endMs": 4560,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4640,
+          "endMs": 4800,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " begin",
+          "startMs": 4960,
+          "endMs": 5120,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " grow.",
+          "startMs": 5360,
+          "endMs": 5760,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 6240,
+          "endMs": 6400,
+          "timestampMs": 6320,
+          "confidence": null
+        },
+        {
+          "text": " call",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 6640,
+          "endMs": 6880,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " germination.",
+          "startMs": 7120,
+          "endMs": 7920,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 8560,
+          "endMs": 8640,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " thin",
+          "startMs": 8800,
+          "endMs": 9040,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " thread",
+          "startMs": 9200,
+          "endMs": 9520,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " grows",
+          "startMs": 9600,
+          "endMs": 9920,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10400,
+          "endMs": 10440,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " spore,",
+          "startMs": 10480,
+          "endMs": 11120,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 11240,
+          "endMs": 11360,
+          "timestampMs": 11300,
+          "confidence": null
+        },
+        {
+          "text": " branches",
+          "startMs": 11680,
+          "endMs": 12000,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " build",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 12560,
+          "endMs": 12800,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " fungal",
+          "startMs": 12880,
+          "endMs": 13200,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " body.",
+          "startMs": 13280,
+          "endMs": 14040,
+          "timestampMs": 13660,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 14480,
+          "endMs": 14520,
+          "timestampMs": 14500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " production",
+          "startMs": 14880,
+          "endMs": 15120,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 15240,
+          "endMs": 15360,
+          "timestampMs": 15300,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 15400,
+          "endMs": 15440,
+          "timestampMs": 15420,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " shown,",
+          "startMs": 15880,
+          "endMs": 16320,
+          "timestampMs": 16100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " parent",
+          "startMs": 16640,
+          "endMs": 16800,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " mould",
+          "startMs": 16880,
+          "endMs": 17200,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 17280,
+          "endMs": 17440,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17480,
+          "endMs": 17520,
+          "timestampMs": 17500,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 17600,
+          "endMs": 18000,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 18560,
+          "endMs": 19120,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " joining.",
+          "startMs": 19600,
+          "endMs": 20480,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 20640,
+          "endMs": 20800,
+          "timestampMs": 20720,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 20920,
+          "endMs": 21040,
+          "timestampMs": 20980,
+          "confidence": null
+        },
+        {
+          "text": " asexual",
+          "startMs": 21120,
+          "endMs": 21680,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " reproduction.",
+          "startMs": 21760,
+          "endMs": 23120,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " Rhizopus",
+          "startMs": 23160,
+          "endMs": 23760,
+          "timestampMs": 23460,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 23840,
+          "endMs": 24160,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 24240,
+          "endMs": 24320,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24400,
+          "endMs": 24560,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " sexual",
+          "startMs": 24760,
+          "endMs": 24960,
+          "timestampMs": 24860,
+          "confidence": null
+        },
+        {
+          "text": " route,",
+          "startMs": 25040,
+          "endMs": 25680,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 25760,
+          "endMs": 25920,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " finding",
+          "startMs": 26080,
+          "endMs": 26240,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 26280,
+          "endMs": 26320,
+          "timestampMs": 26300,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 26400,
+          "endMs": 26640,
+          "timestampMs": 26520,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 26680,
+          "endMs": 26720,
+          "timestampMs": 26700,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 26800,
+          "endMs": 26960,
+          "timestampMs": 26880,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 27040,
+          "endMs": 27280,
+          "timestampMs": 27160,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 27400,
+          "endMs": 27520,
+          "timestampMs": 27460,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 27600,
+          "endMs": 27760,
+          "timestampMs": 27680,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 27840,
+          "endMs": 28000,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 28080,
+          "endMs": 28160,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 28240,
+          "endMs": 28320,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 28360,
+          "endMs": 28400,
+          "timestampMs": 28380,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 28480,
+          "endMs": 28640,
+          "timestampMs": 28560,
+          "confidence": null
+        },
+        {
+          "text": " produced.",
+          "startMs": 28760,
+          "endMs": 29360,
+          "timestampMs": 29060,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mould-attempt",
+      "type": "concept",
+      "caption": "The bread pieces never touch. Could mould reach B?",
+      "heading": "The bread pieces never touch. Could mould reach B?",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 1190,
+      "voiceover": {
+        "text": "Here is a new arrangement. Bread A has Rhizopus mould with mature spore cases. Bread B has no mould initially. The pieces do not touch, but share moving air. B is moist, supplies nutrients and is at a suitable temperature. How could mould reach B, and what would begin growing there? Pause and explain the two steps.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-attempt.f496b469edd7.mp3",
+        "startFrame": 0,
+        "endFrame": 704
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Here is a new arrangement",
+            "view": "attempt",
+            "line": "How could mould reach B? What would begin growing there?",
+            "at": 0
+          }
+        ],
+        "reason": "A real spatial inference. No travel arrows, spores or growth outcome during the response.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "responseRole": "attempt",
+      "responseHold": {
+        "startFrame": 716,
+        "endFrame": 1166
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " arrangement.",
+          "startMs": 800,
+          "endMs": 1640,
+          "timestampMs": 1220,
+          "confidence": null
+        },
+        {
+          "text": " Bread",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 2320,
+          "endMs": 2640,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " Rhizopus",
+          "startMs": 3040,
+          "endMs": 3520,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " mould",
+          "startMs": 3600,
+          "endMs": 3920,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 4000,
+          "endMs": 4080,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " mature",
+          "startMs": 4120,
+          "endMs": 4560,
+          "timestampMs": 4340,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 4640,
+          "endMs": 4880,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " cases.",
+          "startMs": 4960,
+          "endMs": 5600,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " Bread",
+          "startMs": 6160,
+          "endMs": 6400,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 6480,
+          "endMs": 6800,
+          "timestampMs": 6640,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 6960,
+          "endMs": 7200,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 7280,
+          "endMs": 7440,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " mould",
+          "startMs": 7520,
+          "endMs": 7760,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " initially.",
+          "startMs": 7840,
+          "endMs": 8400,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " pieces",
+          "startMs": 9120,
+          "endMs": 9440,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 9720,
+          "endMs": 9840,
+          "timestampMs": 9780,
+          "confidence": null
+        },
+        {
+          "text": " touch,",
+          "startMs": 9920,
+          "endMs": 10400,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 10720,
+          "endMs": 11040,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " moving",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " air.",
+          "startMs": 11440,
+          "endMs": 11840,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 12480,
+          "endMs": 12720,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12800,
+          "endMs": 12960,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " moist,",
+          "startMs": 13040,
+          "endMs": 13680,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " supplies",
+          "startMs": 13760,
+          "endMs": 14160,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " nutrients",
+          "startMs": 14280,
+          "endMs": 14720,
+          "timestampMs": 14500,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14880,
+          "endMs": 15120,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 15200,
+          "endMs": 15280,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 15320,
+          "endMs": 15360,
+          "timestampMs": 15340,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15440,
+          "endMs": 15480,
+          "timestampMs": 15460,
+          "confidence": null
+        },
+        {
+          "text": " suitable",
+          "startMs": 15520,
+          "endMs": 15840,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " temperature.",
+          "startMs": 15920,
+          "endMs": 16560,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " How",
+          "startMs": 17200,
+          "endMs": 17360,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 17440,
+          "endMs": 17600,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " mould",
+          "startMs": 17680,
+          "endMs": 17920,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 18000,
+          "endMs": 18240,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 18400,
+          "endMs": 19040,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 19280,
+          "endMs": 19360,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 19440,
+          "endMs": 19520,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " begin",
+          "startMs": 19600,
+          "endMs": 19840,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " growing",
+          "startMs": 19920,
+          "endMs": 20320,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " there?",
+          "startMs": 20440,
+          "endMs": 20720,
+          "timestampMs": 20580,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 21280,
+          "endMs": 21680,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21840,
+          "endMs": 21920,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22440,
+          "endMs": 22480,
+          "timestampMs": 22460,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 22560,
+          "endMs": 22720,
+          "timestampMs": 22640,
+          "confidence": null
+        },
+        {
+          "text": " steps.",
+          "startMs": 22800,
+          "endMs": 23440,
+          "timestampMs": 23120,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1166,
+        "responseHoldStart": 716,
+        "pausePrompt": 716
+      }
+    },
+    {
+      "id": "mould-feedback",
+      "type": "concept",
+      "caption": "The spores can travel. The new thread grows after arrival.",
+      "heading": "The spores can travel. The new thread grows after arrival.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 687,
+      "voiceover": {
+        "text": "The pieces do not need to touch. Mature spore cases on A can release spores, and moving air can carry some towards B. If a spore lands on B, the moist bread provides water and nutrients. At the stated suitable temperature, it can germinate: a fungal thread begins to grow, then branches into a new colony.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-feedback.2f5b9848618e.mp3",
+        "startFrame": 0,
+        "endFrame": 627
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "The pieces do not need",
+            "view": "travel",
+            "line": "Moving air can carry released spores to B.",
+            "at": 0
+          },
+          {
+            "spokenCue": "If a spore lands",
+            "view": "arrive",
+            "line": "A landed spore has water and nutrients on B.",
+            "at": 264
+          },
+          {
+            "spokenCue": "it can germinate",
+            "view": "grow",
+            "line": "The spore begins a thread, which can branch.",
+            "at": 465
+          }
+        ],
+        "reason": "Explain movement and establishment as distinct current stages.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "responseRole": "feedback",
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " pieces",
+          "startMs": 160,
+          "endMs": 560,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 640,
+          "endMs": 720,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 880,
+          "endMs": 1120,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " touch.",
+          "startMs": 1720,
+          "endMs": 2200,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " Mature",
+          "startMs": 2480,
+          "endMs": 2880,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " cases",
+          "startMs": 3280,
+          "endMs": 3600,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 3680,
+          "endMs": 3840,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 4000,
+          "endMs": 4240,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4320,
+          "endMs": 4480,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 4680,
+          "endMs": 4880,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " spores,",
+          "startMs": 4960,
+          "endMs": 5680,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " moving",
+          "startMs": 5920,
+          "endMs": 6240,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " air",
+          "startMs": 6320,
+          "endMs": 6560,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 7200,
+          "endMs": 7440,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " towards",
+          "startMs": 7547,
+          "endMs": 7760,
+          "timestampMs": 7653.5,
+          "confidence": null
+        },
+        {
+          "text": " B.",
+          "startMs": 7920,
+          "endMs": 8720,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8907,
+          "endMs": 8933,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " spore",
+          "startMs": 8960,
+          "endMs": 9280,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " lands",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 9760,
+          "endMs": 9840,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 9920,
+          "endMs": 10480,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " moist",
+          "startMs": 10720,
+          "endMs": 10960,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " bread",
+          "startMs": 11040,
+          "endMs": 11360,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " provides",
+          "startMs": 11440,
+          "endMs": 11840,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 12040,
+          "endMs": 12240,
+          "timestampMs": 12140,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12320,
+          "endMs": 12400,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " nutrients.",
+          "startMs": 12520,
+          "endMs": 13520,
+          "timestampMs": 13020,
+          "confidence": null
+        },
+        {
+          "text": " At",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13720,
+          "endMs": 13760,
+          "timestampMs": 13740,
+          "confidence": null
+        },
+        {
+          "text": " stated",
+          "startMs": 13840,
+          "endMs": 14240,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " suitable",
+          "startMs": 14320,
+          "endMs": 14720,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " temperature,",
+          "startMs": 15000,
+          "endMs": 15440,
+          "timestampMs": 15220,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15480,
+          "endMs": 15520,
+          "timestampMs": 15500,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 15600,
+          "endMs": 15760,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " germinate:",
+          "startMs": 15840,
+          "endMs": 16720,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " fungal",
+          "startMs": 16920,
+          "endMs": 17280,
+          "timestampMs": 17100,
+          "confidence": null
+        },
+        {
+          "text": " thread",
+          "startMs": 17360,
+          "endMs": 17680,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " begins",
+          "startMs": 17760,
+          "endMs": 18080,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18120,
+          "endMs": 18160,
+          "timestampMs": 18140,
+          "confidence": null
+        },
+        {
+          "text": " grow,",
+          "startMs": 18240,
+          "endMs": 18800,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 18920,
+          "endMs": 19040,
+          "timestampMs": 18980,
+          "confidence": null
+        },
+        {
+          "text": " branches",
+          "startMs": 19320,
+          "endMs": 19600,
+          "timestampMs": 19460,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 19720,
+          "endMs": 19840,
+          "timestampMs": 19780,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19920,
+          "endMs": 20000,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 20080,
+          "endMs": 20160,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " colony.",
+          "startMs": 20240,
+          "endMs": 20880,
+          "timestampMs": 20560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mould-memory",
+      "type": "concept",
+      "caption": "Threads feed. Spores spread.",
+      "heading": "Threads feed. Spores spread.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 800,
+      "voiceover": {
+        "text": "That gives us a useful reminder: threads feed, spores spread. The threads get nutrients where the fungus is growing. The spores can carry this reproductive route to a new place. In the route we followed, the parent produces spores without reproductive cells joining, so it is asexual reproduction. Next, we will see how one yeast cell makes another by budding.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/mould-memory.f08c313db89b.mp3",
+        "startFrame": 0,
+        "endFrame": 740
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "That gives us",
+            "view": "threads",
+            "line": "Threads feed.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The spores can carry",
+            "view": "spores",
+            "line": "Spores spread.",
+            "at": 255
+          },
+          {
+            "spokenCue": "In the route we followed",
+            "view": "head",
+            "line": "The illustrated spore-making route is asexual.",
+            "at": 377
+          }
+        ],
+        "reason": "Give the causal anchor after its explanation. One necessary boundary prevents treating all spores as asexual.",
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "That",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 240,
+          "endMs": 400,
+          "timestampMs": 320,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 480,
+          "endMs": 560,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 640,
+          "endMs": 720,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 800,
+          "endMs": 1120,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " reminder:",
+          "startMs": 1400,
+          "endMs": 2160,
+          "timestampMs": 1780,
+          "confidence": null
+        },
+        {
+          "text": " threads",
+          "startMs": 2240,
+          "endMs": 2640,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " feed,",
+          "startMs": 2720,
+          "endMs": 3360,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 3440,
+          "endMs": 4000,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " spread.",
+          "startMs": 4160,
+          "endMs": 4720,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 5280,
+          "endMs": 5360,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " threads",
+          "startMs": 5440,
+          "endMs": 5840,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " nutrients",
+          "startMs": 6080,
+          "endMs": 6640,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " fungus",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 7400,
+          "endMs": 7440,
+          "timestampMs": 7420,
+          "confidence": null
+        },
+        {
+          "text": " growing.",
+          "startMs": 7520,
+          "endMs": 8080,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 8640,
+          "endMs": 9120,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 9240,
+          "endMs": 9360,
+          "timestampMs": 9300,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 9440,
+          "endMs": 9680,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 9760,
+          "endMs": 9920,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 10000,
+          "endMs": 10560,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 10680,
+          "endMs": 10800,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10840,
+          "endMs": 10880,
+          "timestampMs": 10860,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " place.",
+          "startMs": 11360,
+          "endMs": 11920,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12720,
+          "endMs": 12760,
+          "timestampMs": 12740,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 12800,
+          "endMs": 13040,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 13160,
+          "endMs": 13280,
+          "timestampMs": 13220,
+          "confidence": null
+        },
+        {
+          "text": " followed,",
+          "startMs": 13440,
+          "endMs": 14000,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " parent",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " produces",
+          "startMs": 14560,
+          "endMs": 15040,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " spores",
+          "startMs": 15120,
+          "endMs": 15520,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 15720,
+          "endMs": 15920,
+          "timestampMs": 15820,
+          "confidence": null
+        },
+        {
+          "text": " reproductive",
+          "startMs": 16000,
+          "endMs": 16560,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 16640,
+          "endMs": 16880,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " joining,",
+          "startMs": 17040,
+          "endMs": 17760,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 17920,
+          "endMs": 18080,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 18120,
+          "endMs": 18160,
+          "timestampMs": 18140,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " asexual",
+          "startMs": 18640,
+          "endMs": 19120,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " reproduction.",
+          "startMs": 19200,
+          "endMs": 20280,
+          "timestampMs": 19740,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 20640,
+          "endMs": 21120,
+          "timestampMs": 20880,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 21160,
+          "endMs": 21200,
+          "timestampMs": 21180,
+          "confidence": null
+        },
+        {
+          "text": " will",
+          "startMs": 21280,
+          "endMs": 21360,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " see",
+          "startMs": 21440,
+          "endMs": 21600,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 21720,
+          "endMs": 21840,
+          "timestampMs": 21780,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 22000,
+          "endMs": 22160,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " yeast",
+          "startMs": 22240,
+          "endMs": 22480,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 22560,
+          "endMs": 22800,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 22880,
+          "endMs": 23040,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 23120,
+          "endMs": 23520,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 23760,
+          "endMs": 23920,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " budding.",
+          "startMs": 24000,
+          "endMs": 24640,
+          "timestampMs": 24320,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "caption": "Key notes: what to write in your book",
+      "heading": "Key notes: what to write in your book",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 834,
+      "voiceover": {
+        "text": "If you would like notes, copy these now, or pause for more time.",
+        "audioFile": "public/audio/Biology-Y12-M5-Mould-teaching-reset-2026-10-11-take01/key-notes.aeeac76ac9ef.mp3",
+        "startFrame": 0,
+        "endFrame": 130
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "If you would like notes",
+            "view": "notes",
+            "line": "",
+            "at": 0
+          }
+        ],
+        "reason": "Quiet optional notes follow, rather than compete with, the new reasoning.",
+        "quietHoldStartFrame": 142,
+        "timingStatus": "Measured from this fresh take. Exact playback and human listening pending."
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "If",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 200,
+          "endMs": 240,
+          "timestampMs": 220,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " notes,",
+          "startMs": 720,
+          "endMs": 1360,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 1440,
+          "endMs": 1680,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 1800,
+          "endMs": 1920,
+          "timestampMs": 1860,
+          "confidence": null
+        },
+        {
+          "text": " now,",
+          "startMs": 2000,
+          "endMs": 2560,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 2680,
+          "endMs": 2800,
+          "timestampMs": 2740,
+          "confidence": null
+        },
+        {
+          "text": " pause",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 3440,
+          "endMs": 3520,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " time.",
+          "startMs": 3760,
+          "endMs": 4320,
+          "timestampMs": 4040,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

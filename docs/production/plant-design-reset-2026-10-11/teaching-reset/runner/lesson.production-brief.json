@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/lesson.json",
+    "lessonSha256": "e5dcd16b9d520c1809d8ef3496a4ae1d716f96b2a681877ce4fb532744eabcac"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Fresh Year 12 students know plants have stems, roots and leaves. Explain root water uptake and leaf food-making in light before using them to justify independence. Earlier flower route supports only the final contrast.",
+    "startsWith": "A recognisable strawberry parent is visibly connected to a rooted daughter by a runner stem.",
+    "stopsAfter": "Explain how roots and leaves develop at a node, why their resource functions support independence, and why the supplied rootless bud does not establish independence. Classification follows the mechanism.",
+    "nextLesson": "bio-m5-b02b delivery part 3: How bread mould starts growing somewhere new."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/module5-memory-aids-2026-10-11.md",
+    "docs/production/module5-video-route-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Explain how roots and leaves at a runner node allow a strawberry plantlet to become independent.",
+    "causalExplanation": "A runner grows from parent stem. At a suitable node, roots and leaves develop. Roots supply water and leaves make food in light, so an established daughter can support growth independently. A rootless earlier bud cannot yet take up its own soil water.",
+    "conversationalApproach": "Introduce each term with an object and action in the current picture. Retain only the current causal sentence. Explain before classifying or offering a memory contrast.",
+    "openingDecision": "Ask how a connected stem becomes a separate plant. Select actual strawberry structure, not an isolated stem-definition card.",
+    "understandingCheck": "An attached bud has leaves but no roots. Students explain whether the supplied state establishes independent growth using the missing resource uptake. Full early model and conditions remain during the separate quiet hold.",
+    "curriculumScope": "Focused candidate contribution to B-plants in canonical bio-m5-b02b. Flower and runner are separate delivery parts. Source presence and visual fit do not establish reviewed action coverage."
+  },
+  "scenes": [
+    {
+      "sceneId": "runner-question",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Begin with the actual recognisable strawberry parent, runner and daughter in the completed illustration.",
+      "narrationCue": "This strawberry parent",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-stem",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Trace the actual painted connecting stem while retaining the parent origin.",
+      "narrationCue": "The long stem grows | It is above the soil",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-node",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Select the real daughter crown and its roots/leaves without pretending the completed raster animates growth.",
+      "narrationCue": "A bud can develop | In suitable growing conditions | Our illustration shows a successful later stage",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-resources",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Select water uptake at daughter roots, then light at daughter leaves, before the independence conclusion.",
+      "narrationCue": "Why do those new parts matter? | The leaves use light | But once the plantlet is established",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-independent",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Illustrative cut in the existing stem, with both actual plants stationary and the rooted daughter retained.",
+      "narrationCue": "Now imagine the connection is cut | Cutting the runner did not create the roots.",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-asexual",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Name the classification and its useful plain meaning only after showing the stem route.",
+      "narrationCue": "No sperm cell joined | You may also hear vegetative propagation",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-attempt",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Show a physical node with bud/leaves but no roots. Preserve all conditions and hide the explanation.",
+      "narrationCue": "Try an earlier stage.",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Keep complete supplied stimulus and all demands answer-free. Provisional hold requires measured prompt and assembled silence before feedback."
+    },
+    {
+      "sceneId": "runner-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Use the supplied early bud, rather than replacing it with the successful rooted outcome.",
+      "narrationCue": "Not yet. | It may grow roots later",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "runner-memory",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Recall the structures responsible for independence after their functions have been explained.",
+      "narrationCue": "Remember the reason | This stem route is asexual",
+      "motionPurpose": "Select the actual stem, daughter node, roots and leaves in the completed painting. Trace the connecting stem or resource arrow only when it explains the current cause; keep labels fixed. The cut is illustrative after establishment.",
+      "holdPurpose": "Hold the current reasoning case and only its needed reference facts while the cause is spoken."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "none",
+      "visualReference": "src/prototypes/PlantTeachingReset.tsx and public/assets/biology/strawberry-runner-botanical-v1.png. Early bud task uses an explicit code-native stage model.",
+      "teachingReason": "Stable quiet copy board.",
+      "narrationCue": "If you would like notes",
+      "motionPurpose": "Stable quiet essentials after the short invitation.",
+      "holdPurpose": "Quiet reading/copy hold with optional pause. Final boundary must follow the actual invitation take."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/measured_review_final",
+    "evidence": {
+      "path": "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/source-review.json",
+      "sha256": "ccb57f6b9d212d78994757a511df639b374d9a060111f5e41dbe457b79ffc70e"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/measured_review_final",
+    "evidence": {
+      "path": "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/source-review.json",
+      "sha256": "ccb57f6b9d212d78994757a511df639b374d9a060111f5e41dbe457b79ffc70e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Independent full source science/learning and sampled native review passed. Exact measured voiced review, continuous playback, human listening and public release remain pending."
+}

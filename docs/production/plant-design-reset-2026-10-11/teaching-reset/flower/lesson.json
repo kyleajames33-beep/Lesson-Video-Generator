@@ -1,0 +1,359 @@
+{
+  "title": "How does a flower make a seed?",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Plants: flower",
+  "syllabusNeutral": true,
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusDotPoints": [
+    "analyse sexual and asexual reproduction in plants"
+  ],
+  "productionRole": "prototype",
+  "teachingRenderer": "plantSeed",
+  "lessonIntent": "Explain why pollen arrival needs a pollen-tube route before an embryo forms inside a seed.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "teachingNotes": [
+    "Pollination: pollen reaches a stigma.",
+    "A pollen tube carries sperm towards an egg inside an ovule.",
+    "Fertilisation: sperm joins egg. The fertilised egg develops into an embryo.",
+    "The ovule becomes a seed containing the embryo."
+  ],
+  "teachingReset": {
+    "proposalPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
+    "routeId": "bio-m5-b02b",
+    "deliveryPart": 1,
+    "syllabusAction": "B-plants",
+    "timingStatus": "Unrecorded source. Cue frames and quiet boundaries are provisional; map exact anchors to measured new narration.",
+    "assetPaths": [],
+    "authorNotes": [
+      "Generic flowering-plant model, not strawberry anatomy. Existing strawberry flower and achene plates were inspected and rejected for this single-ovary model.",
+      "The embryo-forming sperm-egg event is selected. Double fertilisation, endosperm development, apomixis and fruit anatomy are deferred; the selected route is not a claim about every seed."
+    ],
+    "visualLimits": [
+      "Simplified generic cutaway and magnified ovule/seed models; not anatomical scale.",
+      "One embryo-forming route is followed; the diagram omits the second fertilisation event."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "flower-question",
+      "type": "concept",
+      "heading": "Pollen arrives. Is a new plant already made?",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 698,
+      "voiceover": {
+        "text": "A flower receives pollen. Is that already a new plant? Not yet. The egg is in a different place inside the flower. Let's follow a successful flowering-plant example, from pollen arriving to an embryo inside a seed. The embryo is the young plant that can later grow from that seed."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "A flower receives pollen.",
+            "view": "whole",
+            "line": "Pollen arriving is the beginning of a route.",
+            "at": 0
+          }
+        ],
+        "reason": "Establish one learner question and distinguish arrival from a young plant."
+      }
+    },
+    {
+      "id": "flower-egg",
+      "type": "concept",
+      "heading": "The egg is inside an ovule.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 768,
+      "voiceover": {
+        "text": "First, find the egg. The flower has a swollen part called the ovary. Inside it are structures called ovules. In our selected ovule, an egg cell lies inside. Sperm and egg are reproductive cells that can join. The sperm must reach this egg before the young plant can begin in the route we are following."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "First, find the egg.",
+            "view": "egg",
+            "line": "An ovule inside the ovary contains an egg.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Sperm and egg are reproductive cells",
+            "view": "egg",
+            "line": "Sperm must reach the egg.",
+            "at": 380
+          }
+        ],
+        "reason": "Locate the destination before explaining how pollen supplies its route."
+      }
+    },
+    {
+      "id": "flower-pollination",
+      "type": "concept",
+      "heading": "Pollination puts pollen on the stigma.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 740,
+      "voiceover": {
+        "text": "Pollen is produced in the flower's anthers. When pollen reaches a receiving surface called the stigma, that is pollination. The stigma is above the ovary in this model. The pollen is on the stigma, while the egg is still down inside an ovule. Pollen arriving does not mean sperm and egg have joined."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Pollen is produced",
+            "view": "pollen-source",
+            "line": "Anthers produce pollen.",
+            "at": 0
+          },
+          {
+            "spokenCue": "When pollen reaches",
+            "view": "pollen",
+            "line": "Pollination: pollen reaches the stigma.",
+            "at": 210
+          },
+          {
+            "spokenCue": "The pollen is on the stigma",
+            "view": "pollen",
+            "line": "Pollen and egg are still in different places.",
+            "at": 460
+          }
+        ],
+        "reason": "Keep pollen distinct from a sperm cell and show the physical gap."
+      }
+    },
+    {
+      "id": "flower-tube",
+      "type": "concept",
+      "heading": "A pollen tube provides a route to the egg.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 894,
+      "voiceover": {
+        "text": "When compatible pollen lands on a suitable stigma, it can grow a pollen tube. The tube grows down through the flower towards an ovule. Sperm cells associated with that pollen travel inside the tube. The tube reaches the ovule and delivers sperm near the egg. So the tube bridges the distance between pollen arriving at the top and the egg waiting inside the ovule."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "When compatible pollen lands",
+            "view": "tube",
+            "line": "Compatible pollen can grow a pollen tube.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Sperm cells associated",
+            "view": "deliver",
+            "line": "Sperm travels inside the tube.",
+            "at": 350
+          },
+          {
+            "spokenCue": "The tube reaches the ovule",
+            "view": "delivered",
+            "line": "The tube delivers sperm near the egg.",
+            "at": 650
+          }
+        ],
+        "reason": "Animate the route in the relevant structure; round sperm cells have no swimming tails."
+      }
+    },
+    {
+      "id": "flower-join",
+      "type": "concept",
+      "heading": "One sperm joins the egg.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 796,
+      "voiceover": {
+        "text": "One sperm cell joins the egg. That event is fertilisation. The fertilised egg can divide and develop into an embryo, a young plant. We are following the embryo-forming part of this flower's reproductive route. This is sexual reproduction because sperm and egg joined. The pollen was the arrival stage; joining at the egg starts the embryo's development."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "One sperm cell joins the egg.",
+            "view": "join",
+            "line": "Fertilisation: sperm joins the egg.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The fertilised egg can divide",
+            "view": "embryo",
+            "line": "The fertilised egg develops into an embryo.",
+            "at": 250
+          },
+          {
+            "spokenCue": "This is sexual reproduction",
+            "view": "embryo",
+            "line": "Sperm and egg joining makes this route sexual.",
+            "at": 550
+          }
+        ],
+        "reason": "Explain joining, subsequent development and classification in that order. The second fertilisation event is deferred in author notes."
+      }
+    },
+    {
+      "id": "flower-seed",
+      "type": "concept",
+      "heading": "The ovule develops into a seed around the embryo.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 796,
+      "voiceover": {
+        "text": "As development continues, the ovule develops into a seed containing the embryo. The embryo is the young plant inside; it is not the whole seed. The seed's outer covering protects what is inside. Later, if conditions support germination, the embryo can begin growing out into a seedling. Making the seed and growing the seedling are different stages."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "As development continues",
+            "view": "seed",
+            "line": "The ovule becomes a seed containing the embryo.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The embryo is the young plant inside",
+            "view": "seed",
+            "line": "Embryo: the young plant inside the seed.",
+            "at": 240
+          },
+          {
+            "spokenCue": "Later, if conditions support germination",
+            "view": "seed",
+            "line": "Later suitable conditions can allow a seedling to grow.",
+            "at": 540
+          }
+        ],
+        "reason": "Use a magnified model with embryo nested inside the seed; no strawberry-fruit transformation."
+      }
+    },
+    {
+      "id": "flower-attempt",
+      "type": "concept",
+      "heading": "The tube stops before reaching the ovule.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 1300,
+      "voiceover": {
+        "text": "Try this changed case. Compatible pollen reaches the stigma. Its pollen tube starts growing but stops before reaching the only ovule in this model. No other pollen tube reaches that ovule. Has pollination happened? Has this egg been fertilised? Explain whether the embryo-forming route we followed can continue. Pause and use the locations in the picture."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Try this changed case.",
+            "view": "stopped",
+            "line": "Has pollination happened? Has this egg been fertilised? Explain whether this egg can develop into an embryo.",
+            "at": 0
+          }
+        ],
+        "reason": "Keep pollen at stigma, the stopped tube and egg inside ovule visible, without an answer or outcome."
+      },
+      "responseRole": "attempt",
+      "responseHold": {
+        "startFrame": 850,
+        "endFrame": 1300
+      }
+    },
+    {
+      "id": "flower-feedback",
+      "type": "concept",
+      "heading": "Arrival happened. The route to the egg did not finish.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 894,
+      "voiceover": {
+        "text": "Pollination happened because pollen reached the stigma. But this tube stopped before reaching the ovule, and no other tube reached it. The sperm was not delivered to this egg, so the egg was not fertilised. The embryo-forming pathway we followed cannot continue from this egg. This is why pollen arriving and fertilisation are different events: the sperm still needs a route to the egg."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Pollination happened",
+            "view": "stopped",
+            "line": "Pollen at stigma means pollination happened.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The sperm was not delivered",
+            "view": "stopped",
+            "line": "The stopped tube did not deliver sperm to the egg.",
+            "at": 360
+          },
+          {
+            "spokenCue": "The embryo-forming pathway",
+            "view": "stopped",
+            "line": "This egg cannot start the embryo-forming route shown.",
+            "at": 670
+          }
+        ],
+        "reason": "Retain the complete changed case and explain the broken causal link."
+      },
+      "responseRole": "feedback"
+    },
+    {
+      "id": "flower-memory",
+      "type": "concept",
+      "heading": "Arrival is not joining.",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 949,
+      "voiceover": {
+        "text": "Keep the two landmarks in mind: pollen arrives at the stigma; sperm joins the egg inside the ovule. Arrival is not joining. That short contrast helps you explain a stopped tube rather than just remember two definitions. After joining, the fertilised egg develops into an embryo while the ovule becomes a seed around it. Next, we will follow a strawberry stem that makes another plant without a seed."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Keep the two landmarks",
+            "view": "pollen",
+            "line": "Pollen arrives at the stigma.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Arrival is not joining.",
+            "view": "delivered",
+            "line": "Sperm must reach the egg before joining.",
+            "at": 280
+          },
+          {
+            "spokenCue": "After joining",
+            "view": "seed",
+            "line": "The embryo is inside the seed.",
+            "at": 570
+          }
+        ],
+        "reason": "Retrieve physical landmarks after explaining their causal relationship."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "heading": "Key notes: what to write in your book",
+      "caption": "",
+      "body": "",
+      "durationInFrames": 1050,
+      "voiceover": {
+        "text": "If you would like notes, copy these now, or pause for longer."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "If you would like notes",
+            "view": "notes",
+            "line": "",
+            "at": 0
+          }
+        ],
+        "reason": "Quiet copy board after new reasoning.",
+        "quietHoldStartFrame": 220
+      }
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "reviewer": "/root/c4_review_final",
+  "scope": "Independent source, exact alignment and sampled actual native visual review. Not a continuous voiced watch or human listening review.",
+  "result": "pass-no-material-blockers-in-inspected-scope",
+  "source": {
+    "path": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/teaching-reset/measured/lesson.json",
+    "sha256": "716f2f8896292f61984bf53a73db2214e3b1f7d910c134f9e3dc324cca7c8952",
+    "snapshotSourceSha256": "716f2f8896292f61984bf53a73db2214e3b1f7d910c134f9e3dc324cca7c8952"
+  },
+  "renderer": {
+    "path": "src/prototypes/C4PressureTeachingReset.tsx",
+    "sha256": "ed1ba2c85519e08112e66817674c37eca2990de731029619f86a92e7e67155f8"
+  },
+  "page": {
+    "directory": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3",
+    "inputsPath": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/inputs.json",
+    "inputsSha256": "b2f960b65a066d58172013e045c9c7e0eac83f61575db05bfceef665d06e36b3",
+    "reviewJsSha256": "a91c831bdfc69f46e6515334a3ea5fb401f0665ee8c51ca14cd75acc5b3cc76f",
+    "pageSha256": "1e7b43076024dfbc3179b360aed83053dfd5e294c063c282d650821bd9e70d54"
+  },
+  "inspectedFrames": [
+    {
+      "path": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/native-c4a-compress-0.png",
+      "sha256": "7db13edc4227716791e66d13037f084719b23c58e0900b2dac0e54b1f021e934"
+    },
+    {
+      "path": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/native-c4a-compress-48.png",
+      "sha256": "9759bd6a0ccb2f6fb35e57656c92b5e18f33aede13b9ac3ee386bf308bb34aaa"
+    },
+    {
+      "path": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/native-c4a-compress-96.png",
+      "sha256": "1baf2d054c07927100bd9cf8f2369778bf2dfb288934b323bd0c73b63149f3ff"
+    },
+    {
+      "path": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/native-c4a-response-465.png",
+      "sha256": "73ebd1532d4dd82ad10fd69d3f371c9155d5325d4cc0992f3be4964a38963b6a"
+    },
+    {
+      "path": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/native-c4a-response-466.png",
+      "sha256": "c999ce9d3d9c14ffb9e30ae56972287f399f7cdeee5ce68e48b82e248d3df7a2"
+    },
+    {
+      "path": "out/prototypes/c4a-production-voiced-reset-2026-10-11-v3/native-c4a-response-480.png",
+      "sha256": "dc8ccae129b2c9ffecd4aafabb0b33b5105904d178176268c055b2f9c8352d94"
+    }
+  ],
+  "cueValidation": {
+    "count": 16,
+    "method": "Exact phrase occurs once in selected alignment; ceil(character start seconds * 30) equals registered cue frame.",
+    "selectedCues": [
+      {
+        "sceneId": "c4a-mixture",
+        "cues": [],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4a-compress",
+        "cues": [
+          {
+            "key": "pressurePilot285",
+            "phrase": "Pushing the piston",
+            "frame": 0
+          },
+          {
+            "key": "pressurePilot390",
+            "phrase": "The same gas molecules",
+            "frame": 96
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4a-impacts",
+        "cues": [],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4a-equation",
+        "cues": [],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4a-fewer",
+        "cues": [
+          {
+            "key": "pressurePilot1020",
+            "phrase": "At constant temperature",
+            "frame": 0
+          },
+          {
+            "key": "pressurePilot1090",
+            "phrase": "A net forward reaction",
+            "frame": 312
+          },
+          {
+            "key": "pressurePilot1210",
+            "phrase": "reduces the total amount of gas",
+            "frame": 408
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4a-response",
+        "cues": [
+          {
+            "key": "pressurePilot1350",
+            "phrase": "Now hold the piston",
+            "frame": 0
+          },
+          {
+            "key": "pressurePilot1380",
+            "phrase": "The pressure rose",
+            "frame": 137
+          },
+          {
+            "key": "pressurePilot1450",
+            "phrase": "As more ammonia forms",
+            "frame": 243
+          },
+          {
+            "key": "pressurePilot1510",
+            "phrase": "The reaction partly offsets",
+            "frame": 466
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "c4a-transfer-attempt",
+        "cues": [],
+        "responseHold": {
+          "startFrame": 742,
+          "endFrame": 1192
+        }
+      },
+      {
+        "sceneId": "c4a-transfer-feedback",
+        "cues": [
+          {
+            "key": "revealDelays.stepAts.0",
+            "phrase": "Pressure falls immediately",
+            "frame": 0
+          },
+          {
+            "key": "calculationPresentation.stages.0.lineAts.0",
+            "phrase": "Pressure falls immediately",
+            "frame": 0
+          },
+          {
+            "key": "calculationPresentation.stages.0.lineAts.1",
+            "phrase": "because the same gas has more space",
+            "frame": 53
+          },
+          {
+            "key": "revealDelays.stepAts.1",
+            "phrase": "The reaction then favours",
+            "frame": 135
+          },
+          {
+            "key": "calculationPresentation.focusedContext.1.at",
+            "phrase": "The reaction then favours",
+            "frame": 135
+          },
+          {
+            "key": "calculationPresentation.stages.1.lineAts.0",
+            "phrase": "The reaction then favours",
+            "frame": 135
+          },
+          {
+            "key": "calculationPresentation.stages.1.lineAts.1",
+            "phrase": "The increased amount of gas partly offsets",
+            "frame": 478
+          }
+        ],
+        "responseHold": null
+      }
+    ],
+    "note": "Current assembler also records exact process-point cues; all 16 current report anchors verified by the bounded eight-page audit."
+  },
+  "learnerAndScienceFindings": "Initial apparatus state at transition frame 0, halfway compression at 48 and completed compression at spoken frame 96. Offset annotation absent at 465, fade starts at spoken 466 and visible at 480. Actual-frame particle clock and volume integration resolve the isothermal speed warp.",
+  "continuousVoicedReview": "pending-not-performed",
+  "humanListening": "pending-not-performed",
+  "releaseApproval": "not-granted"
+}

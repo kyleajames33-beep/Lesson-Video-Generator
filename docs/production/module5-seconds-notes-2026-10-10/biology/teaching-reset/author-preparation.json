@@ -1,0 +1,42 @@
+{
+  "reviewer": "B2 source finish author agent",
+  "scope": "Author preparation and sampled native layout inspection only. Not independent review.",
+  "previewPath": "out/prototypes/b2-animal-teaching-reset-2026-10-11-v2",
+  "inputs": [
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/biology/teaching-reset/lesson.json",
+      "sha256": "cdf347edb5d18a2095364606dab20b5e14c5c1e2afea4b77cc3e7a1482a4481b"
+    },
+    {
+      "path": "docs/production/module5-seconds-notes-2026-10-10/biology/teaching-reset/lesson.production-brief.json",
+      "sha256": "d0e94ce8218d2e580b726e16eb232c6f6fac3cd0799084e1f6f9a668a8a840b0"
+    },
+    {
+      "path": "src/prototypes/B2AnimalTeachingReset.tsx",
+      "sha256": "c1e0e2bca590063dce1573c82266e0ee9661f9843bb9634b59832c1e5a1bd142"
+    },
+    {
+      "path": "scripts/build-b2-animal-teaching-reset.mjs",
+      "sha256": "1b531d076d6a11a1068be00ddc6a3f0ac83b6379eca89aeed8607ec124783f69"
+    }
+  ],
+  "observations": [
+    "Frog pond, recognisable amplexus and egg patch are visible; the leader connects a spawn egg to the magnified model.",
+    "Hen cutaway exposes a simplified internal tract; repaired the leader from back feathers to upper oviduct funnel at 532,567.",
+    "Joined-cell inset labels the outcome fertilised egg rather than egg.",
+    "Attempt keeps all shared conditions, group conditions and demands visible without joined-cell or outcome labels. Feedback is a different scene.",
+    "Notes show three already-explained essentials with quiet hold metadata and optional pausing."
+  ],
+  "checks": [
+    "Brief schema3 draft check: ready with zero blockers and all reviews pending.",
+    "Bundled current silent preview and completed fourteen 1920x1080 native stills.",
+    "All spokenCue anchors occur exactly once within their scene narration."
+  ],
+  "remaining": [
+    "Independent scientific/script and student learning reviews, including selected hen mnemonic assumptions.",
+    "Measured voice cue alignment; replace provisional response hold and notes hold boundaries using actual takes.",
+    "Exact voiced continuous playback, phone/caption fit, independent learning review and human listening.",
+    "Full export and release gates."
+  ],
+  "limitation": "No paid narration, full render, listening or release approval performed."
+}

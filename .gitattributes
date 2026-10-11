@@ -1,6 +1,12 @@
 # Keep source tooling stable across Windows and Linux checkouts.
 * text=auto eol=lf
 
+# Preserve the exact fresh B2 teaching preview dependency bytes.
+src/prototypes/B2AnimalTeachingReset.tsx -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Retain their reviewed EOF spacer without changing frozen dependency hashes.
+scripts/build-b2-animal-teaching-reset.mjs -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+src/prototypes/C4PressureTeachingReset.tsx -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+
 # Reviewed catalogue fingerprints were established against these exact bytes.
 # Preserve the working-file convention without changing recorded lesson copy.
 src/data/biology-*.json text eol=crlf

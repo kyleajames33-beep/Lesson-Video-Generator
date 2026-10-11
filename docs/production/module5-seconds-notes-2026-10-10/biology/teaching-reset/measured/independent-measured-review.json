@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "reviewer": "/root/c4_review_final",
+  "scope": "Independent source, exact alignment and sampled actual native visual review. Not a continuous voiced watch or human listening review.",
+  "result": "pass-no-material-blockers-in-inspected-scope",
+  "source": {
+    "path": "docs/production/module5-seconds-notes-2026-10-10/biology/teaching-reset/measured/lesson.json",
+    "sha256": "6d1399ff81e69d165a2ad076bd0c73d406dd6822e7796c49396908628ea1c74d",
+    "snapshotSourceSha256": "6d1399ff81e69d165a2ad076bd0c73d406dd6822e7796c49396908628ea1c74d"
+  },
+  "renderer": {
+    "path": "src/prototypes/B2AnimalTeachingReset.tsx",
+    "sha256": "c1e0e2bca590063dce1573c82266e0ee9661f9843bb9634b59832c1e5a1bd142"
+  },
+  "page": {
+    "directory": "out/prototypes/b2-production-voiced-reset-2026-10-11-v2",
+    "inputsPath": "out/prototypes/b2-production-voiced-reset-2026-10-11-v2/inputs.json",
+    "inputsSha256": "df69aeec6b826c9afd85fe14a9ce4951cd0fd19799aa500afd771f5fbe5b6dde",
+    "reviewJsSha256": "4d7c793ebda3898229e000914182dc9a2012421741fe5968aa1b2d1fcd334824",
+    "pageSha256": "7b54e2d51252325bb274dd22ea670d781c3061c50f281bbfaf8fb801cecbc74e"
+  },
+  "inspectedFrames": [
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v1/native-frog-joining.png",
+      "sha256": "08ce04dc8c2ff340103754ffc3f635730473f272635bbe6d9ece530775963ca1"
+    },
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v1/native-hen-inside.png",
+      "sha256": "982f49f8651801551a6b646b9a904ca25c047ac4a2b3d316512f5f5d82054aab"
+    },
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v1/native-join-shell-lay.png",
+      "sha256": "2bcba157e50b50236fb378028d5a725b9d85fe1da88d5a4f99e8721f4b66f87e"
+    },
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v1/native-key-notes.png",
+      "sha256": "289ab637465cb08380de6b521412950815ddc917bfa9cfdc84e9404df5cee0e1"
+    },
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v1/native-pond-current-attempt.png",
+      "sha256": "7e055d15485bbc7a1df1cd9b025e05aa0e6396b1d0a3d62cd28c4e3d71de7544"
+    },
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v1/native-pond-current-feedback.png",
+      "sha256": "540282bd607a68d75d02f1d271908db23f524d8c8edba664c95440536f2ca1b0"
+    },
+    {
+      "path": "out/prototypes/b2-production-voiced-reset-2026-10-11-v2/native-pond-current-attempt.png",
+      "sha256": "7569eca742c2b31825e507f58eb1bf3a98819864ee438496a96115ca8dc06747",
+      "observation": "Actual v2 clarified question fits completely. Explicit comparison, Explain and unknown-result demands remain readable beside all necessary conditions."
+    }
+  ],
+  "cueValidation": {
+    "count": 27,
+    "method": "Exact phrase occurs once in selected alignment; ceil(character start seconds * 30) equals registered cue frame.",
+    "selectedCues": [
+      {
+        "sceneId": "pond-and-nest",
+        "cues": [
+          {
+            "key": "opening",
+            "phrase": "A female common frog",
+            "frame": 0
+          },
+          {
+            "key": "opening",
+            "phrase": "Both eggs are outside the body",
+            "frame": 380
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "frog-joining",
+        "cues": [
+          {
+            "key": "frog-cells",
+            "phrase": "Recall from the previous lesson",
+            "frame": 0
+          },
+          {
+            "key": "frog-joined",
+            "phrase": "When a sperm joins an egg",
+            "frame": 288
+          },
+          {
+            "key": "frog-joined",
+            "phrase": "The joining happens in water",
+            "frame": 680
+          },
+          {
+            "key": "frog-joined",
+            "phrase": "That makes it external fertilisation",
+            "frame": 776
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "water-and-encounters",
+        "cues": [
+          {
+            "key": "frog-near",
+            "phrase": "Why release the gametes close together?",
+            "frame": 0
+          },
+          {
+            "key": "frog-near",
+            "phrase": "The water keeps these exposed gametes",
+            "frame": 267
+          },
+          {
+            "key": "frog-current",
+            "phrase": "A current can carry sperm away",
+            "frame": 545
+          },
+          {
+            "key": "frog-timing",
+            "phrase": "If the two types of gamete",
+            "frame": 634
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "hen-inside",
+        "cues": [
+          {
+            "key": "hen-tract",
+            "phrase": "Sperm is transferred into the female",
+            "frame": 70
+          },
+          {
+            "key": "hen-cells",
+            "phrase": "Inside her body, it can reach an egg",
+            "frame": 178
+          },
+          {
+            "key": "hen-joined",
+            "phrase": "Joining there is internal fertilisation",
+            "frame": 406
+          },
+          {
+            "key": "hen-joined",
+            "phrase": "The moist reproductive tract",
+            "frame": 502
+          },
+          {
+            "key": "hen-joined",
+            "phrase": "That protection does not remove",
+            "frame": 684
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "join-shell-lay",
+        "cues": [
+          {
+            "key": "hen-sequence",
+            "phrase": "In a hen, sperm reaches the egg",
+            "frame": 84
+          },
+          {
+            "key": "hen-sequence",
+            "phrase": "The egg then passes along",
+            "frame": 221
+          },
+          {
+            "key": "hen-sequence",
+            "phrase": "In our supplied fertilised egg",
+            "frame": 406
+          },
+          {
+            "key": "hen-sequence",
+            "phrase": "For this bird, remember the order",
+            "frame": 695
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "pond-current-attempt",
+        "cues": [
+          {
+            "key": "attempt",
+            "phrase": "Try a changed condition.",
+            "frame": 0
+          }
+        ],
+        "responseHold": {
+          "startFrame": 992,
+          "endFrame": 1352
+        }
+      },
+      {
+        "sceneId": "pond-current-feedback",
+        "cues": [
+          {
+            "key": "feedback-location",
+            "phrase": "The fertilisation is external",
+            "frame": 0
+          },
+          {
+            "key": "feedback-meeting",
+            "phrase": "For B, the stronger current",
+            "frame": 192
+          },
+          {
+            "key": "feedback-meeting",
+            "phrase": "Equal starting numbers do not remove",
+            "frame": 454
+          },
+          {
+            "key": "feedback-unknown",
+            "phrase": "We cannot calculate an exact number",
+            "frame": 764
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "handoff",
+        "cues": [
+          {
+            "key": "comparison",
+            "phrase": "We used two animal examples",
+            "frame": 0
+          },
+          {
+            "key": "comparison",
+            "phrase": "Next, we'll follow",
+            "frame": 526
+          }
+        ],
+        "responseHold": null
+      },
+      {
+        "sceneId": "key-notes",
+        "cues": [
+          {
+            "key": "notes",
+            "phrase": "If you'd like a short set of notes",
+            "frame": 0
+          }
+        ],
+        "responseHold": null
+      }
+    ]
+  },
+  "learnerAndScienceFindings": "Sperm and egg joining remains visible; hen funnel and join-shell-lay order are scoped to the hen. Current application retains equal gamete numbers, timing, lifetime and stronger current conditions; no answer during the protected hold.",
+  "continuousVoicedReview": "pending-not-performed",
+  "humanListening": "pending-not-performed",
+  "releaseApproval": "not-granted",
+  "revisionNote": "Display-only task clarification. Prior v1 organism and feedback inspections retained as historical evidence; source speech, selected audio and all 27 cue anchors unchanged. Current v2 task independently inspected."
+}

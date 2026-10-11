@@ -1,0 +1,413 @@
+{
+  "title": "Where does fertilisation happen?",
+  "subtitle": "Follow sperm and egg in a frog pond and a hen",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 2a",
+  "syllabusNeutral": true,
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusDotPoints": [
+    "analyse the features of fertilisation in animals, including external and internal fertilisation"
+  ],
+  "productionRole": "production",
+  "teachingRenderer": "b2Animals",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "lessonIntent": "Locate sperm-and-egg joining in named animal examples and explain how supplied conditions affect encounters; distinguish joining inside from later egg laying outside.",
+  "teachingReset": {
+    "parentLessonPath": "docs/production/module5-seconds-notes-2026-10-10/biology/fit-v3/lesson.json",
+    "parentLessonSha256": "2bb222469a279f251128304bfc3e4ac51d09c18af13fdcc62dde5e6042db610f",
+    "routeId": "bio-m5-b02a",
+    "timingStatus": "Unrecorded source with provisional silent staging. Unique exact spokenCue metadata must be mapped to new measured takes.",
+    "artworkProvenance": {
+      "toolMode": "Built-in image_gen, fresh generation",
+      "frog": {
+        "path": "public/assets/biology/common-frog-pond-b2-v1.png",
+        "prompt": "Use case: scientific-educational. One naturalistic ink and muted watercolour illustration for a Year 12 animal reproduction lesson. White background with generous margins. Show a small clear pond-edge cross section with a pair of COMMON FROGS (Rana temporaria), the smaller male naturally resting on the female's back in amplexus, mostly above shallow water with lower bodies in the pond. Both are recognisable brown olive frogs with realistic bulging eyes, skin folds and long bent hindlegs, side view facing left, no cartoon faces. Just behind the female near the right side of their lower bodies, show a modest irregular clump of natural frogspawn in the WATER: transparent spherical jelly capsules each containing one small dark egg, not a giant egg or a fruit. A few submerged stems and a short muddy pond bank provide physical place. Keep open unobstructed pale blue-green water across lower right so a later magnified sperm-and-egg inset can be connected to the spawn. Do NOT draw giant sperm, fertilisation rings, developmental stages, tadpoles, arrows, labels, text, diagrams, frames, plinths or symbols. The art supplies organism and egg-release context, not a number of successful fertilisations. Fine realistic scientific field-guide pen linework and gentle painted washes, mostly white surrounding paper. Wide landscape composition around 3:2."
+      },
+      "hen": {
+        "path": "public/assets/biology/hen-nest-b2-v1.png",
+        "prompt": "Use case: scientific-educational. One naturalistic ink and restrained watercolour illustration on pure white background for a Year12 animal reproduction lesson. A recognisable adult brown chicken HEN in side profile facing left, standing beside a small straw ground nest containing ONE complete intact pale cream chicken egg. Show accurate bird anatomy with feathered body, short red comb, yellow scaled legs, appropriate three forward toes and one back toe, short tail at right. Hen and egg in nest occupy a wide landscape composition with generous clear margins and no background farm buildings or props. The hen is upright enough that the abdomen region is clearly seen, for later comparison with a reproductive-tract cutaway; here all feathers and the body surface are intact with NO cutaway, NO organs, NO translucent body, NO embryo, and NO mating depiction. Fine naturalistic scientific field-guide pen linework, muted earthy brown, cream and green-grey washes, gentle texture, mostly clear white paper. The egg's fertilised state will be a supplied narrated example and must not be represented by marks on the shell. No labels, arrows, captions, balls, plinths, diagram boxes, decorative borders, logos or typography."
+      },
+      "anatomy": {
+        "path": "public/assets/biology/hen-reproductive-location-b2-v1.png",
+        "prompt": "Use case: scientific-educational. Create one careful naturalistic zoological teaching illustration of an adult brown CHICKEN HEN, side profile facing LEFT, on pure white background. Fine field-guide ink linework and restrained watercolour. Hen has recognisable feathered head, neck, breast, wing outline, tail at right and two legs. In the trunk only, a clean softly edged transparent cutaway lets the viewer see a SIMPLIFIED left female reproductive tract inside the body: the ovary appears as a small cluster of yellow follicles near the upper back (not in neck or outside body), the funnel-shaped beginning of the oviduct lies just below that ovary, and a long softly pink coiled tube descends through the posterior abdomen towards the rear vent below the tail. A slightly broader lower shell-gland region can be shown but NO complete shelled egg is drawn at the upper funnel. Keep other digestive organs absent to focus only on location, while preserving credible hen body proportions. Reproductive tract clearly remains within the body outline. There is NO visible giant sperm or egg-cell model, NO embryo, NO baby chick within the abdomen. Keep ample white margins. No anatomy labels, leader lines, text, numbers, coloured circles, arrows, symbols, diagram boxes or decorative frames. The later code will use a leader from the upper funnel to a magnified sperm-and-egg joining inset. Accuracy priority: fertilisation in upper oviduct near the ovary, BEFORE shell formation further down the tract. Illustrated location model, not photographic surgery."
+      }
+    },
+    "visualLimits": [
+      "Reproductive-cell insets are magnified simplified models of possible events, not success counts, literal gamete sizes or full fertilisation molecular steps.",
+      "The hen cutaway locates a simplified tract in the real organism. Detailed tract regions, hormones, embryology and chromosome sets are outside this lesson.",
+      "The supplied hen egg is fertilised. Intact shells do not visibly disclose that state; not every laid hen egg is fertilised."
+    ],
+    "authorNotes": [
+      "One question owns this cut: where sperm and egg join, with conditions that make encounters possible. Hydra budding, haploid/diploid/meiosis, genetic variation mechanisms and detailed parental investment are deferred.",
+      "Common frog (Rana temporaria) is the stated external example, not all frogs or all amphibians. Internal fertilisation also occurs in some aquatic animals. Do not classify from habitat alone.",
+      "The mnemonic join, shell, lay applies to the hen sequence after its cause is explained, not to every animal reproduction route.",
+      "Timing and response silence are provisional. Root must align exact cues and assemble the measured prompt/quiet/feedback boundary before voiced review."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "pond-and-nest",
+      "type": "concept",
+      "heading": "Both eggs are outside. Did joining happen there?",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 690,
+      "voiceover": {
+        "text": "A female common frog releases eggs into pond water while a male releases sperm close by. Now look at a hen's egg in a nest. In this example, it is already fertilised. Both eggs are outside the body when we see them. But did sperm and egg join in the same place? To answer, we need to follow the reproductive event, rather than classify an animal from where its egg ends up."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "A frog pond and a hen's nest.",
+            "view": "opening",
+            "spokenCue": "A female common frog"
+          },
+          {
+            "at": 345,
+            "line": "An egg outside does not tell us the joining place.",
+            "view": "opening",
+            "spokenCue": "Both eggs are outside the body"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "New realistic common-frog pond and hen-with-nest plates replace the parent's word cards. The supplied hen egg is fertilised; no mark on its shell claims that an unobserved fertilisation is visible.",
+        "motionPurpose": "Hold the two physical cases side by side while the question is introduced. No classification labels or predetermined outcome symbols.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "frog-joining",
+      "type": "concept",
+      "heading": "Follow sperm to the egg in the pond.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 930,
+      "voiceover": {
+        "text": "Recall from the previous lesson that sperm and egg are reproductive cells called gametes. Each carries inherited information in DNA. When a sperm joins an egg, we call that fertilisation. It can begin the development of a new animal. In this common-frog example, the female's eggs are already in the pond when sperm reaches them. The joining happens in water outside her body. That makes it external fertilisation. External describes the joining place, not whether the parents live in water."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Sperm and egg are reproductive cells.",
+            "view": "frog-cells",
+            "spokenCue": "Recall from the previous lesson"
+          },
+          {
+            "at": 232,
+            "line": "Fertilisation joins sperm and egg.",
+            "view": "frog-joined",
+            "spokenCue": "When a sperm joins an egg"
+          },
+          {
+            "at": 465,
+            "line": "The joining happens outside the female's body.",
+            "view": "frog-joined",
+            "spokenCue": "The joining happens in water"
+          },
+          {
+            "at": 697,
+            "line": "Outside joining: external fertilisation.",
+            "view": "frog-joined",
+            "spokenCue": "That makes it external fertilisation"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Retain the real frogs, water line and frogspawn. A leader from an egg in the spawn locates a magnified sperm-and-egg model in the pond. Sperm reaches one egg; the inset represents one possible fertilisation, not a fraction of all spawn that succeeds.",
+        "motionPurpose": "First locate both gametes. At the spoken joining cue, sperm approaches the egg and its outline clears as the first new cell appears. Joining stays complete while the explanatory text changes. Actual frog art does not animate a second breeding event.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "water-and-encounters",
+      "type": "concept",
+      "heading": "Water helps. Sperm still has to reach an egg.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1020,
+      "voiceover": {
+        "text": "Why release the gametes close together? A sperm must reach an egg before it can join it. Nearby release shortens that journey. The water keeps these exposed gametes from drying out and provides liquid in which sperm can swim. But water alone does not guarantee a meeting. A current can carry sperm away from the eggs. If the two types of gamete are not present at the same time, they may miss each other too. So a suitable watery setting, a nearby release and overlapping timing support fertilisation in this case."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Nearby release reduces the distance to an egg.",
+            "view": "frog-near",
+            "spokenCue": "Why release the gametes close together?"
+          },
+          {
+            "at": 255,
+            "line": "Water limits drying and lets sperm swim.",
+            "view": "frog-near",
+            "spokenCue": "The water keeps these exposed gametes"
+          },
+          {
+            "at": 510,
+            "line": "A current can separate sperm from the eggs.",
+            "view": "frog-current",
+            "spokenCue": "A current can carry sperm away"
+          },
+          {
+            "at": 765,
+            "line": "Both types of gamete need overlapping timing.",
+            "view": "frog-timing",
+            "spokenCue": "If the two types of gamete"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Keep common frogs and spawn on screen. The located inset compares a nearby sperm approach with sperm being carried away while the egg remains. Show timing as sperm absent from the egg patch, without depicting dead gametes or numerical success fractions.",
+        "motionPurpose": "Use one magnified event. The near route directs attention to the sperm's journey. A current arrow then carries the schematic sperm away; it does not turn the pictured spawn into a success/failure chart. End with a stable case and current condition.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "hen-inside",
+      "type": "concept",
+      "heading": "The hen keeps the joining place inside.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1080,
+      "voiceover": {
+        "text": "The hen uses a different route. Sperm is transferred into the female during mating. Inside her body, it can reach an egg near the beginning of a tube called the oviduct, the passage that carries the egg onwards. Joining there is internal fertilisation. The moist reproductive tract reduces the gametes' exposure to drying, which is useful on land. That protection does not remove the need for sperm to enter the female and reach an egg. The location gives a useful advantage under dry conditions. It does not promise that every egg will be fertilised or that an offspring will survive."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Sperm enters the female during mating.",
+            "view": "hen-tract",
+            "spokenCue": "Sperm is transferred into the female"
+          },
+          {
+            "at": 216,
+            "line": "Sperm can reach an egg inside the oviduct.",
+            "view": "hen-cells",
+            "spokenCue": "Inside her body, it can reach an egg"
+          },
+          {
+            "at": 432,
+            "line": "Inside joining: internal fertilisation.",
+            "view": "hen-joined",
+            "spokenCue": "Joining there is internal fertilisation"
+          },
+          {
+            "at": 648,
+            "line": "A moist tract reduces exposure to drying.",
+            "view": "hen-joined",
+            "spokenCue": "The moist reproductive tract"
+          },
+          {
+            "at": 864,
+            "line": "Protection supports fertilisation, without guaranteeing it.",
+            "view": "hen-joined",
+            "spokenCue": "That protection does not remove"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Use the real hen cutaway with a simplified reproductive tract entirely inside its body. Locate the upper oviduct near the ovary with a leader to a magnified reproductive-cell model. The egg is not shown as a complete shelled egg at this site. The brown hen from the opening remains the organism context.",
+        "motionPurpose": "Locate the upper joining site in the actual body. The cell inset first shows a sperm and egg, then one possible joining. It remains joined across later text cues. Do not show a chick or complete egg growing in the female, or count surviving offspring.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "join-shell-lay",
+      "type": "concept",
+      "heading": "The nest is a later destination.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1020,
+      "voiceover": {
+        "text": "Return to the egg in our opening nest. In a hen, sperm reaches the egg before the hard shell is added. The egg then passes along the reproductive tract, the shell forms around it, and the hen lays it. In our supplied fertilised egg, the joining has already happened inside the body. Later development can continue in the laid egg when conditions support it. For this bird, remember the order: join, shell, lay. That order explains why an egg in a nest does not make fertilisation external. Find the joining place first."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Joining happens before the shell is added.",
+            "view": "hen-sequence",
+            "spokenCue": "In a hen, sperm reaches the egg"
+          },
+          {
+            "at": 255,
+            "line": "The shell forms later, before the egg is laid.",
+            "view": "hen-sequence",
+            "spokenCue": "The egg then passes along"
+          },
+          {
+            "at": 510,
+            "line": "The supplied egg was fertilised before laying.",
+            "view": "hen-sequence",
+            "spokenCue": "In our supplied fertilised egg"
+          },
+          {
+            "at": 765,
+            "line": "For the hen: join, shell, lay.",
+            "view": "hen-sequence",
+            "spokenCue": "For this bird, remember the order"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Place the actual hen cutaway and its located joined-cell inset before the actual whole hen with nest. A short stage arrow connects earlier joining inside to the later laid egg. Keep the sequence temporal, not a claim that gametes join through a shell. The nest egg is the given fertilised case; no visible shell trait classifies it.",
+        "motionPurpose": "Reveal the later nest only after the already explained joining site. Trace a single direction from upper joining site to later egg laying. Retain the earlier joining place through the compact memory anchor. No new embryology or parental-care mechanism.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "pond-current-attempt",
+      "type": "concept",
+      "heading": "A current changes the pond.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1170,
+      "voiceover": {
+        "text": "Try a changed condition. Two groups of common frogs release the same numbers of eggs and sperm into pond water at the same time. Their gametes remain able to fertilise for the same length of time. In group B, a stronger current carries sperm away from the egg patch. Classify the fertilisation in this route. Predict how B's opportunities for sperm to reach eggs compare with group A, and explain why. Then name one result these observations cannot tell us. Pause here to decide."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Classify, predict and explain, then name one unknown result.",
+            "view": "attempt",
+            "spokenCue": "Try a changed condition."
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Retain neutral frog-pond plates for A and B, each with a magnified unfertilised egg/sperm context. B's arrow represents the supplied current carrying sperm away, not an answer label. Every condition and demand stays visible; no joined cells, success counts, fewer-opportunities caption or winner marker during the hold.",
+        "motionPurpose": "Show the two supplied pond conditions. Settle into a still, answer-free response interval. Do not keep swimming endlessly while the student reads. Root will assemble a measured quiet gap after the prompt and before the first feedback.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment.",
+        "attempt": {
+          "shared": "Both groups release eggs and sperm into pond water. Same gamete numbers, release time and time able to fertilise.",
+          "groupA": "A: nearby release, weaker current",
+          "groupB": "B: stronger current carries sperm away from eggs",
+          "demands": "Classify fertilisation. Predict B's opportunities and explain why. Name one unknown result."
+        }
+      },
+      "responseHold": {
+        "startFrame": 810,
+        "endFrame": 1170
+      }
+    },
+    {
+      "id": "pond-current-feedback",
+      "type": "concept",
+      "heading": "The joining place stays the same. Encounters change.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 1050,
+      "voiceover": {
+        "text": "The fertilisation is external because sperm and egg join in pond water outside the female. For B, the stronger current carries sperm away from the eggs, so sperm has fewer opportunities to reach them in the stated comparison. Equal starting numbers do not remove that extra separation. The unchanged viable lifetime, the time gametes remain able to fertilise, does not remove it either. We cannot calculate an exact number of fertilised eggs from these observations. Nor can we predict how many young will survive and later reproduce. The evidence supports a change in meeting opportunities, rather than a guaranteed offspring count."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Joining outside the female: external fertilisation.",
+            "view": "feedback-location",
+            "spokenCue": "The fertilisation is external"
+          },
+          {
+            "at": 262,
+            "line": "B gives sperm fewer opportunities to reach eggs.",
+            "view": "feedback-meeting",
+            "spokenCue": "For B, the stronger current"
+          },
+          {
+            "at": 525,
+            "line": "Equal numbers and viable lifetime do not remove separation.",
+            "view": "feedback-meeting",
+            "spokenCue": "Equal starting numbers do not remove"
+          },
+          {
+            "at": 787,
+            "line": "Exact fertilisation and later survival counts are unknown.",
+            "view": "feedback-unknown",
+            "spokenCue": "We cannot calculate an exact number"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Keep the complete two-group stimulus, condition labels and all three demands. Add only one current causal phrase next to the relevant located pond inset. The actual spawn stays unchanged, with no success/failure rings or survival percentage.",
+        "motionPurpose": "Focus the explanation on the common location, then on the sperm separation in B, then the unknown count. Clear the preceding phrase when the next reasoning step appears. Do not alter the response evidence during feedback.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "heading": "Classify the joining place, then explain its conditions.",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 420,
+      "voiceover": {
+        "text": "We used two animal examples to locate fertilisation and explain a relevant advantage. Common frogs join gametes outside in water. Our hen joins them inside before shell formation and laying. Different routes still depend on suitable conditions. Next, we'll follow how a flower produces a seed. Detailed mammalian reproduction comes later."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Frog: outside. Hen: inside before laying.",
+            "view": "comparison",
+            "spokenCue": "We used two animal examples"
+          },
+          {
+            "at": 210,
+            "line": "Next: follow how a flower produces a seed.",
+            "view": "comparison",
+            "spokenCue": "Next, we'll follow"
+          }
+        ],
+        "visualDecision": "new",
+        "physicalVisual": "Return to real frog-pond and hen-nest images with small location anchors that have now been explained. Keep the familiar cases stable rather than adding other animals or chromosome models.",
+        "motionPurpose": "Deliberate closing comparison. The next-question line replaces the current conclusion, rather than building a large summary board.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "summary",
+      "heading": "Key notes: what to write in your book",
+      "body": "",
+      "caption": "",
+      "durationInFrames": 930,
+      "voiceover": {
+        "text": "If you'd like a short set of notes, copy these now, or pause for longer."
+      },
+      "captions": [],
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "line": "Copy these notes now, or pause for longer.",
+            "view": "notes",
+            "spokenCue": "If you'd like a short set of notes"
+          }
+        ],
+        "visualDecision": "none",
+        "physicalVisual": "A quiet optional copy board after the physical explanations. It does not replace an organism diagram or introduce new narrated content.",
+        "motionPurpose": "Stable notes through the quiet hold. No swimming, reproductive-cell animation or new sequential reveal.",
+        "timingStatus": "Estimated stage frames, unique exact spokenCue for measured alignment.",
+        "quietHoldStartFrame": 180
+      },
+      "points": [
+        "Fertilisation joins sperm and egg. External: outside the female. Internal: inside.",
+        "Common-frog example: water limits drying; nearby release at the same time supports encounters.",
+        "Hen: join, shell, lay. An egg laid outside can already have been fertilised inside."
+      ]
+    }
+  ]
+}

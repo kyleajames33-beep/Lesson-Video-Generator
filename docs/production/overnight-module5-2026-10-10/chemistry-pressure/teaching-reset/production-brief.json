@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/teaching-reset/lesson.json",
+    "lessonSha256": "953f9dca73aeed9d4745db712fae806f15a4fa1bf4e30fcb888b30bcae77cd15"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1/C2 opposing rates and gas particle model; C3 imposed change versus reaction response; balanced equation coefficients.",
+    "startsWith": "Closed gaseous ammonia equilibrium before fixed-temperature compression.",
+    "stopsAfter": "Explain immediate pressure change, gas-count response and opposite expansion application. Equal-gas/inert-gas extension deferred and unclaimed.",
+    "nextLesson": "C4B catalyst delivery part, plus required separate pressure edge-case support before complete C4A coverage."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Why does compression produce more ammonia?",
+    "causalExplanation": "Same gas in less space gives more wall impacts; atom-conserving ammonia formation reduces gas count and partly offsets the imposed pressure rise.",
+    "conversationalApproach": "Plain meaning before terms, current physical change before labels; separate prompt-only and feedback takes.",
+    "openingDecision": "Concrete comparison, explained before independent new-case thinking.",
+    "understandingCheck": "Complete supplied conditions and both demands, question-only narration followed by 15-second hold; separate answer narration.",
+    "curriculumScope": "Focused unequal-gas-count compression/expansion cut. Equal-gas-total and inert-gas-at-fixed-volume extension remains required later support, not covered here.",
+    "notes": "Separate 20-second quiet optional book notes; source and practical coverage remain pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "c4a-mixture",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4PressureTeachingReset.tsx",
+      "teachingReason": "Preserve actual piston pilot hardware, molecule artwork and pressure-trace explanation.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Pressure\",\"visualStart\":0,\"visualEnd\":239}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-compress",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4PressureTeachingReset.tsx",
+      "teachingReason": "Preserve actual piston pilot hardware, molecule artwork and pressure-trace explanation.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Pressure\",\"visualStart\":240,\"visualEnd\":479}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-impacts",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4PressureTeachingReset.tsx",
+      "teachingReason": "Preserve actual piston pilot hardware, molecule artwork and pressure-trace explanation.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Pressure\",\"visualStart\":480,\"visualEnd\":749}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-equation",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4PressureTeachingReset.tsx",
+      "teachingReason": "Preserve actual piston pilot hardware, molecule artwork and pressure-trace explanation.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Pressure\",\"visualStart\":750,\"visualEnd\":1019}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-fewer",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4PressureTeachingReset.tsx",
+      "teachingReason": "Preserve actual piston pilot hardware, molecule artwork and pressure-trace explanation.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Pressure\",\"visualStart\":1020,\"visualEnd\":1349}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-response",
+      "visualDecision": "adjust",
+      "visualReference": "src/prototypes/C4PressureTeachingReset.tsx",
+      "teachingReason": "Preserve actual piston pilot hardware, molecule artwork and pressure-trace explanation.",
+      "narrationCue": "{\"teachingRenderer\":\"c4Pressure\",\"visualStart\":1350,\"visualEnd\":1619}",
+      "motionPurpose": "Make the scientific relationship visible rather than animate a paragraph.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-transfer-attempt",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "narrationCue": "{\"heading\":0,\"responseHoldStart\":835,\"pausePrompt\":775,\"answerVisibleStart\":1285,\"stepAts\":[]}",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "15-second thinking hold after prompt-only audio."
+    },
+    {
+      "sceneId": "c4a-transfer-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "narrationCue": "[{\"path\":\"revealDelays.stepAts.0\",\"phrase\":\"Pressure falls immediately\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.0.lineAts.0\",\"phrase\":\"Pressure falls immediately\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.0.lineAts.1\",\"phrase\":\"because the same gas has more space\",\"unit\":\"frames\"},{\"path\":\"revealDelays.stepAts.1\",\"phrase\":\"The reaction then favours\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.focusedContext.1.at\",\"phrase\":\"The reaction then favours\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.1.lineAts.0\",\"phrase\":\"The reaction then favours\",\"unit\":\"frames\"},{\"path\":\"calculationPresentation.stages.1.lineAts.1\",\"phrase\":\"The increased amount of gas partly offsets\",\"unit\":\"frames\"}]",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "Hold current cause/reference through its narration."
+    },
+    {
+      "sceneId": "c4a-notes",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Current reasoning only, full attempt conditions retained; quiet notes after explanation.",
+      "narrationCue": "{\"heading\":0,\"takeawayAts\":[0,0,0]}",
+      "motionPurpose": "Stable attempt or current explanation, no premature answer.",
+      "holdPurpose": "20-second quiet copying/pause opportunity."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/c4_review_final",
+    "evidence": {
+      "path": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/teaching-reset/source-review.json",
+      "sha256": "fcd3f5865781040fb60e1cd99f6fbc03f1153033c5721f1606577e6aa1e1b324"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/c4_review_final",
+    "evidence": {
+      "path": "docs/production/overnight-module5-2026-10-10/chemistry-pressure/teaching-reset/source-review.json",
+      "sha256": "fcd3f5865781040fb60e1cd99f6fbc03f1153033c5721f1606577e6aa1e1b324"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Independent complete source and sampled actual silent native images. Not exact measured playback, human listening, subject-teacher acceptance or release approval."
+}

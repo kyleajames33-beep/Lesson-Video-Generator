@@ -1,0 +1,39 @@
+{
+  "scope": "Author preparation and sampled native geometry, not independent student learning approval.",
+  "lessonPath": "docs/production/plant-design-reset-2026-10-11/teaching-reset/flower/lesson.json",
+  "lessonSha256": "15dfde72aa913447f329e91a11206ddb8caec924a8e12d295d58a8303f462227",
+  "rendererPath": "src/prototypes/PlantTeachingReset.tsx",
+  "rendererSha256": "1c19df0fba40538c64dbe4dc6c09d42a13ed13d30eed05eba256dc23e1fe503b",
+  "builderPath": "scripts/prepare-plant-teaching-reset.mjs",
+  "builderSha256": "f854b53be89c164c6dbe5b63586039b78fe946eb6727bf346db8e0a9d99dc65c",
+  "previewPath": "out/prototypes/plant-flower-teaching-reset-2026-10-11-v5",
+  "nativeSamples": 19,
+  "primaryReferences": [
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization",
+      "supports": "Pollen arrival at stigma, pollen-tube route, sperm delivery and egg fertilisation, fertilised ovule becoming seed. Selected explanation follows only the embryo-forming event; additional fertilisation detail remains deferred."
+    }
+  ],
+  "visualDecisions": [
+    "Inspected existing strawberry flower and achene artwork; unsuitable for the generic single-ovary model, retained in B1 rather than repurposed inaccurately.",
+    "Code-native cutaway shows physical flower structures and the pollen-to-egg route. Botanical contours, shading, veins and tissue boundaries retain a useful clear process.",
+    "Pollen appears at the opening stigma; pollen-source beat locates anther before stigma-arrival cue.",
+    "Completed tube persists through sperm delivery and fertilisation instead of retracting when the text changes.",
+    "Magnified seed has an embryo recognisably nested inside the covering.",
+    "Attempt retains every condition and all demands, including explicit Explain, without a fertilisation answer."
+  ],
+  "memoryAid": {
+    "selected": "Arrival is not joining.",
+    "bankReference": "module5-memory-aids-2026-10-11.md, Pollination is not fertilisation entry",
+    "assumptions": "Pollen on the stigma establishes pollination; this embryo-forming route requires sperm to reach and join the egg. Explain locations first; the stopped-tube task applies the contrast."
+  },
+  "checks": [
+    "Exact unique cue anchors and prohibited punctuation checked.",
+    "Schema3 draft briefs passed with zero blockers and pending independent/voiced/listening reviews.",
+    "Native samples rendered through actual LessonVideo dispatch, then inspected for mechanism referents, task demands and quiet note fit."
+  ],
+  "remaining": [
+    "Root attaches independent final native review and owns measured narration/cue alignment.",
+    "Exact voiced learner, caption and phone checks; human listening; full export and release."
+  ]
+}

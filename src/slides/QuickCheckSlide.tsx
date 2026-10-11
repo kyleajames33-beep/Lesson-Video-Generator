@@ -33,6 +33,7 @@ const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as c
 
 export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickCheckSlideProps) => {
 	const rd = scene.revealDelays ?? {};
+	const isFeedback = scene.responseRole === 'feedback';
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const timing = answerTiming(rd, scene.responseHold);
@@ -46,9 +47,9 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 		const ats = (rd as {stepAts?: number[]}).stepAts;
 		const delays = scene.answerSteps.map((_, i) => Math.max(answerStart, ats?.[i] ?? answerStart + 16 + i * 68));
 		return <SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
-			<CalculationProblem presentation={scene.calculationPresentation} eyebrow="QUICK CHECK · TRY IT FIRST" delay={rd.heading ?? 24} prompt={scene.pausePrompt} promptOpacity={pauseOpacity} />
-			{answerProgress < 0.98 ? <>
+			<SlideChrome lesson={lesson} topic={isFeedback ? 'EXPLANATION' : 'YOUR TURN'} sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<CalculationProblem presentation={scene.calculationPresentation} eyebrow={isFeedback ? 'CHECK YOUR REASONING' : 'QUICK CHECK \u00b7 TRY IT FIRST'} delay={rd.heading ?? 24} prompt={scene.pausePrompt} promptOpacity={pauseOpacity} />
+			{!isFeedback && answerProgress < 0.98 ? <>
 				{scene.calculationPresentation.reducedReading ? <div style={{position: 'absolute', left: 774, right: 64, top: 830, opacity: pauseOpacity, fontSize: 36, color: TOK.inkDim}}>Pause if you would like longer.</div> : <>
 					<PauseCountdown startFrame={pauseStartFrame} endFrame={answerStart} fps={fps} durationSeconds={(answerStart - pauseStartFrame) / fps} opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
 					<PauseInstruction opacity={pauseOpacity} focused captionSafeWorking={captionSafeWorking} />
@@ -60,7 +61,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic={isFeedback ? 'EXPLANATION' : 'YOUR TURN'} sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<FadeUp
 				delay={rd.pauseBadge ?? 14}
