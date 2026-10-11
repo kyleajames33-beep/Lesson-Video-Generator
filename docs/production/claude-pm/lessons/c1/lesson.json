@@ -1,0 +1,108 @@
+{
+  "title": "Static and dynamic equilibrium",
+  "subtitle": "Has everything stopped?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 1,
+  "lessonIntent": "Classify a system as static equilibrium, dynamic equilibrium or neither, and explain why dynamic equilibrium needs a closed system.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This bottle of soda water has been sitting in the fridge for a week, with the cap screwed on tight. Nothing about it changes. The bubbles don't grow, the level doesn't move, and if you checked tomorrow it would look exactly the same. So has everything inside it stopped? Or is something still going on that we just can't see?"
+      }
+    },
+    {
+      "id": "look-inside",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's zoom in to the surface, where the liquid meets the gas above it. The bottle holds dissolved carbon dioxide in the water, and carbon dioxide gas in the space at the top. Particles are always moving, so every second some dissolved molecules at the surface break free and escape into the gas. And every second, some gas molecules hit the water and dissolve back in. When the cap first went on, more escaped than returned. But as gas built up in the space above, more of it dived back in each second, until the return rate caught up with the escape rate. From then on, they match: for every molecule that leaves, another one comes back. The double arrow in this equation means both directions are happening at once."
+      }
+    },
+    {
+      "id": "dynamic-name",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This is called dynamic equilibrium. Dynamic, because both processes keep going. Equilibrium, because their effects cancel out, so nothing changes overall. Here's a picture to hold onto. Think of the water and the gas as two towns, joined by a road at the surface, with molecules as the traffic. The same number of cars drive each way every minute, so the traffic never stops, but each town's population stays the same. Unlike drivers, molecules don't choose where to go, they just move about at random. And notice the towns don't have to be the same size. Equal rates, not equal amounts."
+      }
+    },
+    {
+      "id": "static",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now compare a campfire. The wood burns, gives off heat, light and gases, and eventually all that's left is cold ash. That reaction has finished. It can't run backwards: the ash won't turn back into wood. Nothing is happening in either direction any more, so both rates are zero. That's static equilibrium: no change, because nothing is happening at all. It's not dynamic equilibrium running slowly. It has completely stopped."
+      }
+    },
+    {
+      "id": "open-vs-closed",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Back to our soda water. What happens if we take the cap off? Carbon dioxide escaping from the water can now drift out into the room, and the room is huge, so very little of it ever comes back. Molecules keep leaving faster than they return, and the drink slowly goes flat. With the cap on, the bottle is a closed system: matter can't get in or out. With the cap off, it's an open system. That's why dynamic equilibrium needs a closed system. If the returning half of the exchange keeps getting lost, the two rates can never match."
+      }
+    },
+    {
+      "id": "worked-classify",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's use this to classify systems, the way an exam question might ask. Ask these questions in order. First: has the reaction finished, so it can't run backwards? If yes, it's static. If it can still go both ways, ask two more. Is the system closed? And are the things we can observe, like colour or concentration, staying constant? If both answers are yes, it's dynamic. If not, it's neither. Try it on a sealed flask of hydrogen and iodine gas, kept at 450 degrees for several hours. The purple colour isn't changing. Has the reaction finished? No, it can go both ways. Is it closed? Yes, it's sealed. Is the colour steady? Yes. So that's dynamic equilibrium."
+      }
+    },
+    {
+      "id": "worked-more",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the cold ash from our campfire. Has the reaction finished? Yes, and it can't reverse, so it's static. We don't need the other questions, even though the ash is sitting out in the open air. Last, a beaker of water slowly evaporating in a warm room. Evaporation can go both ways, because some vapour does condense back in, so it hasn't finished. Is it closed? No, it's open, and far more water escapes than returns, so the level keeps dropping. That makes it neither."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Use the same questions to classify each of these as static, dynamic or neither, and give your reason. One: a sealed jar of salt water that has sat untouched for weeks. The water is saturated, which means it can't dissolve any more salt overall, and the pile of crystals at the bottom stays exactly the same size. Two: a cup of hot coffee cooling on a desk. Three: a strip of magnesium that has burned completely to white powder. Pause the video if you'd like more time."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 750
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The salt jar is dynamic. Dissolving can go both ways: salt keeps dissolving from the pile, and dissolved salt keeps crystallising back onto it, at the same rate, in a closed jar. That's why the pile stays the same size. If you said static, that's the trap: still-looking doesn't mean stopped. The coffee is neither. The cup is open, and heat and steam keep leaving, so it's still changing. It isn't at equilibrium at all. And the burned magnesium is static. If you said neither because it's sitting in open air, go back to the first question: the reaction has finished and can't run backwards, so it's static."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's the order to use in any question. First, has the reaction finished, so it can't run backwards? Then it's static. If it can still go both ways, and the system is closed and steady, it's dynamic. If it's open, or still changing, it's neither. And remember, at dynamic equilibrium the rates are equal, not the amounts. Next, we'll watch a reaction actually reach equilibrium, by following its two rates as they change."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

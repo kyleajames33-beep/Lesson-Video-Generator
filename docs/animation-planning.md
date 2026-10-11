@@ -73,7 +73,7 @@ for U+2014 before production.
 - Does the visual arrive when its narration refers to it?
 - Are essential labels, units and equations legible at phone size and stable
   after revealing? Does the learner have time to read or think?
-- Can the same point be explained more clearly with less movement?
+- Can the same point be explained more clearly with less movement? Equally: does the picture actually show each change the narration describes? A static slideshow fails the [motion and design standard](production/motion-design-standard.md).
 
 Record failures and uncertainty. A polished preview is not evidence of improved
 learning, and a subjective preference is not a reason to replace good assets.

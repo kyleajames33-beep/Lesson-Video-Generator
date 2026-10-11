@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C2-claude-2026-10-11-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c2/lesson.json",
+  "lessonSha256": "d5294ea77652b8027681e0e1675abb0f8408e2a1df6f0c0accb4c6b655502453",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c2/lesson.production-brief.json",
+    "sha256": "c1bbe9c43d37eaa151e4bc5bbd158553a607d170565c71717c67ebd5b02c725b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here is a sealed glass flask, heated to about two hundred and fifty degrees Celsius and held there, hot enough that everything inside stays a gas. We fill it with just one gas, phosphorus pentachloride, written P C L five, and nothing else. This reaction is reversible. A P C L five molecule can split into phosphorus trichloride, P C L three, and chlorine, and those two can join back up into P C L five. But right now the flask holds only P C L five, so there is nothing yet to run backwards. So how does a flask that starts with only reactant end up as a mixture that stays exactly the same? To find out, we'll follow it from the moment it's sealed.",
+      "hash": "b31f29b725dc",
+      "textSha256": "b31f29b725dc5990c4f97f30a462cf540e088ceaa1a485e38fe4a8aea47db7ca",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/hook.b31f29b725dc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/hook.b31f29b725dc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/hook.b31f29b725dc.generation.json",
+      "plannedRequestSha256": "bf1aa36df1de732c055a03076e9d34e7639f05252df02838971919abf77a4ef1"
+    },
+    {
+      "id": "start",
+      "parentSceneId": "start",
+      "text": "At the very beginning, the flask holds 0.20 moles of P C L five in every litre. That is its concentration, and there is no P C L three or chlorine at all. In the equation, the reaction going left to right, here splitting, is the forward reaction. The one going right to left, joining, is the reverse reaction. Every P C L five molecule is a candidate to split, and some do every second, so the forward reaction can begin straight away. On a made-up scale, where bigger means more splits each second, the forward rate starts at fifty. The reverse reaction can't start yet. To rejoin, a P C L three molecule has to meet a chlorine molecule, and neither exists. So the reverse rate is exactly zero.",
+      "hash": "bf89e3d11bad",
+      "textSha256": "bf89e3d11bad8818bfe8bff254e77a9099c2a8784e856bad259fbd2287760698",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/start.bf89e3d11bad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/start.bf89e3d11bad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/start.bf89e3d11bad.generation.json",
+      "plannedRequestSha256": "a47a42ba63bfbdebea9f1d309b054817ca12e0f06d7ff160e30aa47d1bfe0598"
+    },
+    {
+      "id": "forward-falls",
+      "parentSceneId": "forward-falls",
+      "text": "A little later, some of the P C L five has split. The flask now holds 0.16 moles per litre of P C L five, and 0.04 moles per litre of each product. The forward rate has dropped from fifty to forty. Each P C L five molecule has the same chance of splitting in any one second, so with fewer molecules in the flask, fewer split. Meanwhile, the reverse reaction has started. P C L three and chlorine now exist, so now and then one of each meets and joins back into P C L five. That's a reverse rate of eight. But forward is still bigger than reverse, so more P C L five splits each second than is rebuilt, and its concentration keeps falling, but more slowly.",
+      "hash": "d46f741aae29",
+      "textSha256": "d46f741aae293fd00a7963de47c04b15184962be7c54bbeb70f7b5d3efcc6c76",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/forward-falls.d46f741aae29.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/forward-falls.d46f741aae29.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/forward-falls.d46f741aae29.generation.json",
+      "plannedRequestSha256": "406d1a2038a01c1aca6a7825364c8b61f915dd28d767e215b4b2661daf9da638"
+    },
+    {
+      "id": "closing-in",
+      "parentSceneId": "closing-in",
+      "text": "Later again, P C L five is down to 0.14 moles per litre, and each product is up to 0.06. The forward rate has slipped to thirty-five, because there is even less to split. The reverse rate has climbed to seventeen, because with more P C L three and chlorine in the same space, they find each other more often. The gap between the two rates is shrinking. While the forward rate is bigger, P C L five is lost faster than it is made, so it is still falling, just more slowly again.",
+      "hash": "e83100d4080f",
+      "textSha256": "e83100d4080fcb864d3799a982f6c170a9868ea7787c8e3fd32964a5d4050b38",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/closing-in.e83100d4080f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/closing-in.e83100d4080f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/closing-in.e83100d4080f.generation.json",
+      "plannedRequestSha256": "5bec80b38ea965c9655736ff6ac0de5241308a529c681c2d74408eb6e6316b22"
+    },
+    {
+      "id": "equal",
+      "parentSceneId": "equal",
+      "text": "Then comes the moment they are equal. At 0.12 moles per litre of P C L five and 0.08 of each product, both rates are thirty. Now P C L five is made as fast as it is lost, so its concentration stops changing. That is why the P C L five never runs out. Both reactions are still running at thirty, and their effects cancel. That is the dynamic equilibrium from last time. You can even see it. Chlorine is a pale yellow-green gas, while P C L five vapour is pale and nearly colourless, so the flask slowly turns yellow-green, then stops getting any darker, because the chlorine concentration has stopped changing.",
+      "hash": "d74ce2d28899",
+      "textSha256": "d74ce2d288991eb82bceff9cab5156217e5ad47f4e746303423453c4245c1103",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/equal.d74ce2d28899.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/equal.d74ce2d28899.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/equal.d74ce2d28899.generation.json",
+      "plannedRequestSha256": "3d5ecc327309734c262625f965694a754cc4a9f685f2a14320673456c3437e1f"
+    },
+    {
+      "id": "graphs",
+      "parentSceneId": "graphs",
+      "text": "Here is the whole journey as graphs. First, the concentrations. P C L five falls, then flattens. P C L three and chlorine rise together, and flatten too, because they are made in equal numbers. Notice they flatten at 0.08 moles per litre, below the P C L five at 0.12. The concentrations don't have to match. Now the rates. The forward rate starts high and falls. The reverse rate starts at zero and rises. Where the two lines meet, the concentrations stop changing, and from there both rates stay level. Check the height of that flat line: it is thirty, not zero. A common slip is to say the reaction stops at equilibrium. Neither rate drops to zero.",
+      "hash": "1de5d43046d5",
+      "textSha256": "1de5d43046d5ef29fb48e008b67374ccb4887a014f1b519626d04498d073f743",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/graphs.1de5d43046d5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/graphs.1de5d43046d5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/graphs.1de5d43046d5.generation.json",
+      "plannedRequestSha256": "a4328566c4c9895dadea7888eccf3e49d5fcc0e7e7bd79a2124ef0c029fa05e9"
+    },
+    {
+      "id": "towns-aid",
+      "parentSceneId": "towns-aid",
+      "text": "Remember the two towns from the last video? Start with everyone in the left town. At first, all the traffic flows from left to right. With fewer people left in the left town, less traffic leaves it each minute. And as the right town fills up, more cars head back. The traffic going left builds until it matches the traffic going right, and from then on the populations stay steady, although cars still drive both ways. In our flask, the forward rate is the faster one at the start. If we had started with only products, it would be the other way round. So in a sealed flask at a steady temperature, hold onto this line: the faster rate falls, the slower rate rises, they meet and stay level.",
+      "hash": "d6388eb71516",
+      "textSha256": "d6388eb71516c001d114fef5b646972af87013087c0aad675e1689a3e0e0a52f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/towns-aid.d6388eb71516.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/towns-aid.d6388eb71516.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/towns-aid.d6388eb71516.generation.json",
+      "plannedRequestSha256": "33d7c262e1f2214fd94e1c01c7c1d835ea1ee2623b2de42e5eaf4583a5b5c01c"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn, with a different start. A new sealed flask, the same size, at the same temperature, is filled with 0.20 moles per litre of P C L three and 0.20 of chlorine, and no P C L five at all. Answer three things. One: which rate is zero at the very start, and why? Two: as time passes, which rate falls, which rises, and what happens to the concentration of each substance? Three: once the two rates are equal, are the reactions still going? Pause the video if you'd like more time.",
+      "hash": "2a5d6c963a0c",
+      "textSha256": "2a5d6c963a0ccb3458894ba7487517c7529703ab48b58154c25274b66168e340",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/attempt.2a5d6c963a0c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/attempt.2a5d6c963a0c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/attempt.2a5d6c963a0c.generation.json",
+      "plannedRequestSha256": "fb7983383a77215040414a08820bbb6cc19a3f743a9f15f810b99c9b55c9abac"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "At the start, the forward rate is zero, because there is no P C L five yet to split. Only the reverse reaction can happen: P C L three and chlorine meet and join. So P C L five rises from zero to 0.12 moles per litre, while P C L three and chlorine fall from 0.20 to 0.08, the same mixture as before. That happens because the total phosphorus and chlorine, the flask size and the temperature are the same. Here is how the rates change. The reverse rate falls, because those two are being used up, and the forward rate rises, because P C L five is building up. So the aid still holds: the reverse rate was the faster one, and it fell. And yes, both reactions are still going. If you said the reverse rate is zero, check what is in this flask: there is no P C L five, so the forward rate is zero. If you said forward falls and reverse rises, check which side is full: the rate with more to work on starts high. If you said the reaction stops, remember the concentrations stop changing, but the rates stay equal and above zero.",
+      "hash": "2d4c808e5306",
+      "textSha256": "2d4c808e5306175d014051cc4d8f8b35e5ef1cd6487917ce3e37abf391515bcc",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/feedback.2d4c808e5306.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/feedback.2d4c808e5306.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/feedback.2d4c808e5306.generation.json",
+      "plannedRequestSha256": "334c66782df815914cc2a4ade5f32b43dedf34cc5c5ed36cf59fca3aa0ee5483"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So whenever a question asks how a reaction reaches equilibrium, tell the story in order. Start from one side only: that side's rate is at its highest and the other rate is zero. As that side is used up, its rate falls. As the other side builds up, its rate rises. When the two rates are equal, the concentrations stop changing, but neither rate is zero. Next, we'll take a flask that is already at equilibrium and disturb it, to see what it does about it.",
+      "hash": "a26adc12f48c",
+      "textSha256": "a26adc12f48ce12ad38f85fbec4f2df0052ca0990e67af5d2d91520dfb718de8",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/memory.a26adc12f48c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/memory.a26adc12f48c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/memory.a26adc12f48c.generation.json",
+      "plannedRequestSha256": "6b8e37b8dc46adf828ec9d2daf8b96353218d43477effa849af857218f9b27e8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C2-claude-2026-10-11-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

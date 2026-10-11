@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b1/lesson.json",
+    "lessonSha256": "c6837638b84ec9847b5d4c49e809b49e69a9a9edcd83a3368ae36a6ea47737c4"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Cells contain DNA; DNA carries inherited information (Year 11 Biology). Chromosomes, genes and alleles get plain meanings in the lesson.",
+    "startsWith": "Every Cavendish banana plant is a clone, and TR4 is spreading.",
+    "stopsAfter": "Explaining how sexual and asexual reproduction support continuity and judging which suits stable or changing conditions.",
+    "nextLesson": "B2: how animals bring sperm and egg together."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b01.md"
+  ],
+  "teaching": {
+    "task": "Explain how each reproduction method supports continuity and choose between them for given conditions.",
+    "causalExplanation": "Continuity needs DNA passed on and offspring that survive to reproduce; asexual copying is fast but clones share weaknesses; gamete fusion creates new allele combinations so some individuals may survive change.",
+    "conversationalApproach": "Real Cavendish and TR4 story, strawberry mechanisms, building an HSC compare answer on screen.",
+    "openingDecision": "Why would sharing one set of DNA be risky for bananas?",
+    "understandingCheck": "Choose a strategy for a stable pond, a lone island plant and a crop facing new disease, with reasons.",
+    "curriculumScope": "Explain the mechanisms of reproduction that ensure continuity of a species by analysing sexual and asexual methods (BIO12-12, Module 5 IQ1)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted botanical plates with coded cell animations.",
+    "transitionPlan": "Banana bunch duplicates to clones then cuts to plantation; generation chain pans; montage panels slide in; scene crossfades with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "b1 Cavendish bunch and TR4 plantation plates",
+      "teachingReason": "A real high-stakes case gives a reason to care",
+      "narrationCue": "clone / TR4",
+      "motionPurpose": "Bunch duplicates into identical clones, then the diseased plantation appears",
+      "motionRole": "explain",
+      "onScreenChange": "Bunch duplicates on \"clone\"; plantation and country chip appear on \"TR4\"; heading writes on",
+      "motionTools": [
+        "plate duplicate",
+        "CameraStage push",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Brief look at the plantation"
+    },
+    {
+      "sceneId": "continuity",
+      "visualDecision": "new",
+      "visualReference": "Strawberry runner plates arranged as a generation chain",
+      "teachingReason": "Shows continuity as a chain of reproduction and survival",
+      "narrationCue": "reproduce / DNA / survive",
+      "motionPurpose": "Chain extends generation by generation with a DNA line; one branch fades",
+      "motionRole": "explain",
+      "onScreenChange": "Chain draws left to right; DNA line runs through; a failed branch fades on \"survive\"",
+      "motionTools": [
+        "DrawPath chain",
+        "DNA line draw",
+        "branch fade"
+      ],
+      "holdPurpose": "Hold the continuity statement"
+    },
+    {
+      "sceneId": "asexual",
+      "visualDecision": "adjust",
+      "visualReference": "Strawberry runner plate plus coded bacterium fission and yeast budding",
+      "teachingReason": "Shows one parent copying itself in three organisms",
+      "narrationCue": "runner / splits / bud / mutation",
+      "motionPurpose": "Runner draws on, bacterium divides, yeast buds, one DNA mark changes",
+      "motionRole": "explain",
+      "onScreenChange": "Three panels animate on their cue words; tiny DNA change highlights on \"mutation\"",
+      "motionTools": [
+        "path draw-on",
+        "coded cell division",
+        "coded budding",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Settle on the three panels"
+    },
+    {
+      "sceneId": "gametes",
+      "visualDecision": "new",
+      "visualReference": "Strawberry flower for context, then schematic gametes and chromosome-set icons",
+      "teachingReason": "Explains gamete joining and one set plus one set before alleles",
+      "narrationCue": "join / chromosomes / one set / two sets",
+      "motionPurpose": "Two gametes travel and join; one set plus one set combines into two sets",
+      "motionRole": "explain",
+      "onScreenChange": "Gametes meet on \"join\"; chromosome-set icons combine on \"two sets\"",
+      "motionTools": [
+        "particle travel",
+        "set icons merge",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the two-sets result"
+    },
+    {
+      "sceneId": "variation",
+      "visualDecision": "adjust",
+      "visualReference": "Allele beads, gamete mixes, varied seedlings plate",
+      "teachingReason": "Explains why siblings differ: different gamete mixes plus chance",
+      "narrationCue": "mix / chance / variation",
+      "motionPurpose": "Gametes show different bead mixes, a random pick, then seedlings reveal with their own patterns",
+      "motionRole": "explain",
+      "onScreenChange": "Bead mixes appear on \"mix\"; random pick shuffle on \"chance\"; seedlings wipe in; variation definition writes on",
+      "motionTools": [
+        "bead reveal",
+        "shuffle pick",
+        "plate wipe reveal",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the varied seedlings and definition"
+    },
+    {
+      "sceneId": "trade-off",
+      "visualDecision": "new",
+      "visualReference": "Clone row with disease and varied seedlings plates, plantation plate",
+      "teachingReason": "Links variation to survival when conditions change",
+      "narrationCue": "conditions / change / survive / Cavendish",
+      "motionPurpose": "Clone row all affected while some varied seedlings stay healthy",
+      "motionRole": "explain",
+      "onScreenChange": "Split board stable versus change; disease spreads across clones; survivors highlight; aid writes on",
+      "motionTools": [
+        "split board",
+        "disease spread tint",
+        "ScribbleCircle survivors",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the aid to read"
+    },
+    {
+      "sceneId": "worked-compare",
+      "visualDecision": "new",
+      "visualReference": "Coded criteria table",
+      "teachingReason": "Models how to structure a compare answer",
+      "narrationCue": "compare / criteria / Variation / Speed / Partners / similarity",
+      "motionPurpose": "Table rows fill on each criterion as spoken",
+      "motionRole": "explain",
+      "onScreenChange": "Command verb underlined; rows fill on cue words; link row highlights",
+      "motionTools": [
+        "table row reveal",
+        "ScribbleUnderline",
+        "MarginNote"
+      ],
+      "holdPurpose": "Hold the completed table to read"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Stable pond, lone island plant and diseased crop plates",
+      "teachingReason": "Unseen decision applying the trade-off",
+      "narrationCue": "Pause",
+      "motionPurpose": "Countdown ring runs through the quiet hold",
+      "motionRole": "explain",
+      "onScreenChange": "Three numbered vignettes appear as named; countdown after narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same attempt board",
+      "teachingReason": "Explains each choice and the clone-weakness trap",
+      "narrationCue": "asexual / asexual / variation / bananas",
+      "motionPurpose": "Verdict stamps and reason cards appear per case; plantation thumbnail returns",
+      "motionRole": "explain",
+      "onScreenChange": "Verdict stamp and reason card for each vignette; banana thumbnail on \"bananas\"",
+      "motionTools": [
+        "stamp pop",
+        "Enter reveals",
+        "plate thumbnail"
+      ],
+      "holdPurpose": "Settle on all verdicts"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Aid with runner and flower icons",
+      "teachingReason": "Reusable summary and handoff",
+      "narrationCue": "fast and stable / slow and varied / next",
+      "motionPurpose": "Aid writes on with icons and condition symbols",
+      "motionRole": "explain",
+      "onScreenChange": "Aid writes on; icons pop; next chip",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the aid"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Four notes appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex brief 03 fact check (science, syllabus, copy); findings applied by Claude",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b1-check.md",
+      "sha256": "384537a4c105d8603fc5bf8d3f5701ee5b6a850416bf9e6b5a8f04995193b544"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, revision 2 pass)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b1-learning-review.md",
+      "sha256": "465566d105bd171285c4f0dce63b8d2b843dd3080ac170ee1e55e025e614a67e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

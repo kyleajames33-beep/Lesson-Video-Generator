@@ -1,6 +1,6 @@
 # Teaching and visual brief for each selected video
 
-Use this before new or revised narration. It connects the existing [research](../research/hsc-video-production-standard-2026-10-02.md), [implementation plan](../research/library-implementation-plan.md), [task templates](teaching-templates.md) and [animation planning](../animation-planning.md) to an actual lesson. Preserve usable artwork and layouts. Planning does not mean replacing every scene or adding more animation.
+Use this before new or revised narration. It connects the existing [research](../research/hsc-video-production-standard-2026-10-02.md), [implementation plan](../research/library-implementation-plan.md), [task templates](teaching-templates.md) and [animation planning](../animation-planning.md) to an actual lesson. Preserve usable artwork and layouts. Planning does not mean replacing every scene or adding motion for its own sake, and it never means a static slideshow: meet the [motion and design standard](motion-design-standard.md).
 
 ## Small authoring brief
 
@@ -14,7 +14,7 @@ Use this before new or revised narration. It connects the existing [research](..
 | Understanding check | A new application or explanation, with targeted feedback and a protected response opportunity when appropriate. |
 | Key notes | Optional brief "what to write in your book" essentials after explanation. Identify the existing summary/board to reuse, what clears, and the stable quiet copying/pause hold. No item quota. |
 
-For every selected scene, record: its ID, reuse/adjust/new/none visual decision, existing component or asset reference, why it teaches this point, narration cue, movement's purpose and reading/thinking hold. “None” is valid for a useful stable board. A new asset must solve a specific gap. No feature count, animation frequency, joke, painted backdrop or diorama quota is required. Essential labels remain coded and stable.
+For every selected scene, record: its ID, reuse/adjust/new/none visual decision, existing component or asset reference, why it teaches this point, narration cue, movement's purpose and reading/thinking hold. “None” is valid for a useful stable board. Schema 4 briefs also record the shared renderer, visual system and transition plan, and per scene a `motionRole`, a specific `onScreenChange` and the `motionTools` used; response holds name the countdown (see the [motion and design standard](motion-design-standard.md)). A new asset must solve a specific gap. No feature count, animation frequency, joke, painted backdrop or diorama quota is required. Essential labels remain coded and stable.
 
 Record the beginner support for the selected explanation: a first-use meaning
 for necessary terms, any prerequisite reminder and the reason connecting

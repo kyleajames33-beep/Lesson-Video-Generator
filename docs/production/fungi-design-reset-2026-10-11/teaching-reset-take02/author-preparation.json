@@ -1,0 +1,44 @@
+{
+  "scope": "Author preparation and sampled native layout, not independent approval.",
+  "previewPath": "out/prototypes/fungi-mould-teaching-reset-2026-10-11-v3",
+  "inputs": [
+    {
+      "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/lesson.json",
+      "sha256": "657753f96933fb8d7f19d88ec87240500e89603452ee4c48e457d49fbb164408"
+    },
+    {
+      "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/production-brief.json",
+      "sha256": "9ee960232ada21c185f3d206f9e2dc14b8ee8da9e9ef312e56df403ecc0528f1"
+    },
+    {
+      "path": "src/slides/FungiMouldTeachingSlide.tsx",
+      "sha256": "d918db99a7d7c387ae4bbaf1958b2253d3ce8c81e493cc07399f041b77b30c9e"
+    }
+  ],
+  "primaryReference": {
+    "url": "https://www.bio.utexas.edu/courses/bio206/FungalReprod.pdf",
+    "page": 4,
+    "inspection": "Primary page-4 extracted text supports hyphal body, stalks and sporangia, mature-wall breakdown, air dispersal and new hyphae in suitable habitat. The source figure was not visually inspected locally. Existing generated paint was visually inspected separately.",
+    "limits": "Historical higher-level taxonomy and chromosome teaching are not imported."
+  },
+  "changes": [
+    "Retained existing botanical colony and germination plates, with fresh clean-bread case.",
+    "Five exact unique cues now separate germination conditions, plain meaning, new thread, asexual classification and necessary spore-route boundary.",
+    "Inside-spore label selects cells in the opened case; released-spore label remains reserved for release.",
+    "Attempt crop shows intact mature cases and mouldy bread but excludes released spores. All conditions and both question demands remain visible.",
+    "Feedback movement completes one journey, then a landed spore becomes the current state before the germination plate.",
+    "Replaced SVG external images with Remotion Img in clipped windows after a native sample showed unregistered raster-load failure. All nine current native images completed and memory artwork verified restored.",
+    "Removed duplicate sexual-route caveat from memory narration; retained its necessary boundary once in growth scene.",
+    "Replaced unnecessary time-lapse learner prose with spore and emerging-thread labels."
+  ],
+  "checks": [
+    "Source cue uniqueness and prohibited punctuation checked.",
+    "Schema3 brief draft ready, zero blockers, independent reviews still explicitly pending in author version.",
+    "Native actual production dispatch built nine 1920x1080 sampled stills."
+  ],
+  "remaining": [
+    "Independent evidence attachment by root.",
+    "Measured narration timing and true prompt/quiet/feedback assembly.",
+    "Exact voiced learner, timing, captions and phone checks; human listening; export/release."
+  ]
+}

@@ -12,7 +12,7 @@ function fixture() {
   const root = mkdtempSync(path.join(parent, 'run-'));
   const put = (file, content) => {mkdirSync(path.dirname(path.join(root, file)), {recursive: true}); writeFileSync(path.join(root, file), content);};
   for (const file of ['package.json', 'package-lock.json', 'remotion.config.ts', 'entry.tsx']) put(file, '{}');
-  for (const file of ['docs/research/hsc-video-production-standard-2026-10-02.md', 'docs/production/teaching-templates.md', 'docs/animation-planning.md', 'docs/production/course-progression-plan-2026-10-09.md']) put(file, 'Fixture reference');
+  for (const file of ['docs/research/hsc-video-production-standard-2026-10-02.md', 'docs/production/teaching-templates.md', 'docs/animation-planning.md', 'docs/production/motion-design-standard.md', 'docs/production/course-progression-plan-2026-10-09.md']) put(file, 'Fixture reference');
   put('public/audio/selected.mp3', 'Selected recording fixture');
   put('public/audio/selected.alignment.json', '{}');
   const lesson = {title: 'Fixture', subject: 'Chemistry', fps: 30, introDurationInFrames: 0, scenes: [{id: 'concept', type: 'concept', durationInFrames: 300, voiceover: {text: 'Because each mole contributes the same mass.', audioFile: 'public/audio/selected.mp3'}}]};
@@ -26,7 +26,8 @@ function fixture() {
   const readyToRecord = () => {
     Object.assign(brief.progression, {prerequisiteKnowledge: 'Moles and units', startsWith: 'One mole has a stated mass', stopsAfter: 'Connect mass with amount', nextLesson: 'Reaction ratios'});
     for (const key of Object.keys(brief.teaching)) brief.teaching[key] = 'Specific fixture decision';
-    Object.assign(brief.scenes[0], {visualDecision: 'reuse', visualReference: 'Existing board', teachingReason: 'Show proportionality', narrationCue: 'Each mole', motionPurpose: 'Reveal the contribution', holdPurpose: 'Read the stable units'});
+    Object.assign(brief.scenes[0], {visualDecision: 'reuse', visualReference: 'Existing board', teachingReason: 'Show proportionality', narrationCue: 'Each mole', motionPurpose: 'Reveal the contribution', motionRole: 'explain', onScreenChange: 'The contribution bar grows as each mole is named', motionTools: ['DiagramPrimitives bar build', 'ScribbleCircle'], holdPurpose: 'Read the stable units'});
+    Object.assign(brief.design, {visualSystem: 'Shared light editorial system with doodle layer', transitionPlan: 'Camera move into the board; fade between worked stages'});
     brief.scriptReview = {status: 'pass', reviewer: 'Named fixture reviewer', evidence};
     brief.studentLearningReview = {status: 'pass', reviewer: 'Independent fixture learning reviewer', evidence}; save();
   };
@@ -66,7 +67,7 @@ test('existing version-one briefs retain their previous review contract', () => 
 
 test('new briefs require learning review before recording and again for exact voiced export', () => {
   const f=fixture();f.readyToExport();
-  assert.equal(f.brief.schemaVersion,3);
+  assert.equal(f.brief.schemaVersion,4);
   f.brief.studentLearningReview.status='changes-required';f.save();
   assert.ok(f.check('recording').blockers.some(item=>item.detail==='Student learning source review: changes-required'));
   f.brief.studentLearningReview.status='pass';
@@ -157,4 +158,42 @@ test('full render rejects a voiced-preview brief after selected audio drifts', (
   const f = fixture(); f.readyToExport();
   f.put('public/audio/selected.mp3', 'Changed selected take');
   assert.throws(() => prepareRenderProductionBrief(f.root, {lessonPath: 'lesson.json', teachingBriefPath: 'lesson.production-brief.json'}), /BRIEF_PREVIEW_CHANGED|BRIEF_PREVIEW_AUDIO_MISMATCH/);
+});
+
+test('motion plans reject pasted boilerplate and prohibition-only purposes', () => {
+  const f = fixture(); f.readyToRecord();
+  const scene = id => ({...f.brief.scenes[0], sceneId: id});
+  f.lesson.scenes = ['a', 'b', 'c'].map(id => ({...f.lesson.scenes[0], id}));
+  f.put('lesson.json', JSON.stringify(f.lesson));
+  f.brief.source.lessonSha256 = sha256(readFileSync(path.join(f.root, 'lesson.json')));
+  f.brief.scenes = ['a', 'b', 'c'].map(scene);
+  for (const row of f.brief.scenes) row.motionPurpose = 'Make the scientific relationship visible rather than animate a paragraph.';
+  f.save();
+  assert.ok(f.check('recording').blockers.some(item => item.code === 'BRIEF_MOTION_BOILERPLATE'));
+  assert.equal(f.check('draft').ready, true);
+  f.brief.scenes.forEach((row, i) => { row.motionPurpose = 'Specific change ' + i; });
+  f.brief.scenes[1].motionPurpose = 'Do not claim raster animation is actual growth.'; f.save();
+  assert.ok(f.check('recording').blockers.some(item => item.code === 'BRIEF_MOTION_PROHIBITION_ONLY'));
+  f.brief.scenes[1].motionPurpose = 'Specific change 1'; f.save();
+  assert.equal(f.check('recording').ready, true);
+});
+
+test('schema-four briefs need shared renderer, on-screen change, tools and response countdown', () => {
+  const f = fixture(); f.readyToRecord();
+  assert.equal(f.brief.schemaVersion, 4);
+  f.brief.design.renderer = 'src/prototypes/OneOffReset.tsx'; f.save();
+  assert.ok(f.check('recording').blockers.some(item => item.code === 'BRIEF_PROTOTYPE_RENDERER'));
+  assert.ok(!f.check('draft').blockers.some(item => item.code === 'BRIEF_PROTOTYPE_RENDERER'));
+  f.brief.design.renderer = 'src/LessonVideo.tsx'; f.brief.scenes[0].motionTools = []; f.brief.scenes[0].onScreenChange = ''; f.save();
+  const blockers = f.check('recording').blockers;
+  assert.ok(blockers.some(item => item.code === 'BRIEF_MOTION_TOOLS_MISSING'));
+  assert.ok(blockers.some(item => item.detail === 'concept.onScreenChange'));
+  f.brief.scenes[0].motionRole = 'hold'; f.save();
+  assert.equal(f.check('recording').ready, true);
+  f.lesson.scenes[0].responseHold = {startFrame: 100, endFrame: 250};
+  f.put('lesson.json', JSON.stringify(f.lesson));
+  f.brief.source.lessonSha256 = sha256(readFileSync(path.join(f.root, 'lesson.json'))); f.save();
+  assert.ok(f.check('recording').blockers.some(item => item.code === 'BRIEF_RESPONSE_COUNTDOWN_MISSING'));
+  f.brief.scenes[0].motionTools = ['QuickCheck countdown ring']; f.save();
+  assert.equal(f.check('recording').ready, true);
 });

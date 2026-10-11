@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 3,
+  "source": {
+    "lessonPath": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/lesson.json",
+    "lessonSha256": "0c5cf5240283fab654f40bfcf4a8eeb4b13c7d40d5aba695ad0bdf45159789d2"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Reproduction can produce new individuals. No chromosome or nuclear-division knowledge is assumed.",
+    "startsWith": "How can mould reach another piece of bread without the pieces touching?",
+    "stopsAfter": "Hyphae, sporangial spore release, movement and germination. Explain this asexual route; detailed sexual cycle is deferred.",
+    "nextLesson": "Yeast budding, the next focused B-fungi delivery part."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/student-learning-review.md",
+    "docs/production/module5-memory-aids-2026-10-11.md",
+    "docs/production/module5-video-route-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Explain how spores travel from a mould colony and start new fungal growth under suitable conditions.",
+    "causalExplanation": "The fungal threads obtain nutrients. Mature spore cases release reproductive cells; moving air can carry them to separate food. Water, food and suitable temperature support germination into new threads. Travel and growth are different steps.",
+    "conversationalApproach": "Keep recognisable bread and the named mould through the explanation. Plain meanings precede scientific names. A cause is explained before its memory aid.",
+    "openingDecision": "How can mould reach another piece of bread without the pieces touching?",
+    "understandingCheck": "Explain transport and establishment in a separated-bread arrangement. Complete conditions and demands remain visible during an answer-free hold.",
+    "curriculumScope": "Candidate mould contribution only. Yeast budding remains separate and outstanding."
+  },
+  "scenes": [
+    {
+      "sceneId": "mould-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Establish the bread and organism before microscopic terms.",
+      "narrationCue": "[{\"spokenCue\":\"You may have seen\",\"view\":\"whole\",\"line\":\"How can another piece of bread develop mould?\",\"at\":0}]",
+      "motionPurpose": "The clean slice and the mouldy slice slide in apart, then a question mark and a dashed gap draw between them so students see the slices never touch.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "mould-threads",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Connect the visible patch to the feeding body.",
+      "narrationCue": "[{\"spokenCue\":\"Close up\",\"view\":\"threads\",\"line\":\"Hyphae are the thin threads of the fungus.\",\"at\":0},{\"spokenCue\":\"The fungus gets nutrients\",\"view\":\"threads\",\"line\":\"The threads take up nutrients from the bread.\",\"at\":260}]",
+      "motionPurpose": "The camera pushes into the mould plate while thread lines draw outward across the bread, then a callout points at the threads as they are named.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "mould-spore-case",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Distinguish enclosing structure and released cells using the existing mature and releasing heads.",
+      "narrationCue": "[{\"spokenCue\":\"Some threads form\",\"view\":\"head\",\"line\":\"Upright stalks carry rounded spore cases.\",\"at\":0},{\"spokenCue\":\"Inside a head\",\"view\":\"spores\",\"line\":\"Spores are reproductive cells that can start new growth.\",\"at\":260},{\"spokenCue\":\"The rounded structure\",\"view\":\"head\",\"line\":\"A sporangium is the structure where spores form.\",\"at\":520}]",
+      "motionPurpose": "The view zooms to one stalk, the spore case is circled and labelled as it is named, and spores fill the case to show they form inside it.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "mould-release",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Keep the named colony visible while explaining airborne travel.",
+      "narrationCue": "[{\"spokenCue\":\"When the sporangium matures\",\"view\":\"release\",\"line\":\"The mature wall breaks down and releases spores.\",\"at\":0},{\"spokenCue\":\"Air movement\",\"view\":\"release\",\"line\":\"Air can carry spores away from the parent mould.\",\"at\":260}]",
+      "motionPurpose": "The spore case opens and a burst of spores drifts out on animated air paths towards a second slice, following the narration of release and travel.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "mould-new-growth",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "The actual germination artwork shows the spore connected to its growing thread.",
+      "narrationCue": "[{\"at\":0,\"spokenCue\":\"On suitable food, with enough moisture\",\"view\":\"germinate\",\"line\":\"Moisture, food and suitable temperature allow growth.\"},{\"at\":280,\"spokenCue\":\"We call that germination.\",\"view\":\"germinate\",\"line\":\"Germination means beginning to grow.\"},{\"at\":430,\"spokenCue\":\"A thin thread grows out\",\"view\":\"germinate\",\"line\":\"A new thread grows out from the landed spore.\"},{\"at\":680,\"spokenCue\":\"In the route we have followed\",\"view\":\"germinate\",\"line\":\"This parent makes spores without reproductive cells joining.\"},{\"at\":910,\"spokenCue\":\"Rhizopus also has a sexual route\",\"view\":\"germinate\",\"line\":\"A spore alone does not identify its production route.\"}]",
+      "motionPurpose": "A spore germinates on the plate, a new thread grows and branches on cue, the three conditions tick in, then the route card builds parent mould, spores, new mould and crosses out joining cells.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "mould-attempt",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "A real spatial inference. No travel arrows, spores or growth outcome during the response.",
+      "narrationCue": "[{\"spokenCue\":\"Here is a new arrangement\",\"view\":\"attempt\",\"line\":\"How could mould reach B? What would begin growing there?\",\"at\":0}]",
+      "motionPurpose": "Slices A and B appear with a circled patch of mature spore cases and a dashed not-touching line, then the countdown ring runs through the thinking pause.",
+      "holdPurpose": "Separate question-only take, protected quiet response, then separate feedback. Estimates require fresh measured assembly."
+    },
+    {
+      "sceneId": "mould-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Explain movement and establishment as distinct current stages.",
+      "narrationCue": "[{\"spokenCue\":\"The pieces do not need\",\"view\":\"travel\",\"line\":\"Moving air can carry released spores to B.\",\"at\":0},{\"spokenCue\":\"If a spore lands\",\"view\":\"arrive\",\"line\":\"A landed spore has water and nutrients on B.\",\"at\":260},{\"spokenCue\":\"it can germinate\",\"view\":\"grow\",\"line\":\"The spore begins a thread, which can branch.\",\"at\":520}]",
+      "motionPurpose": "A representative spore moves only during the transport explanation. The growing thread is a separate illustrated later state.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "mould-memory",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Give the causal anchor after its explanation. One necessary boundary prevents treating all spores as asexual.",
+      "narrationCue": "[{\"spokenCue\":\"That gives us\",\"view\":\"threads\",\"line\":\"Threads feed.\",\"at\":0},{\"spokenCue\":\"The spores can carry\",\"view\":\"spores\",\"line\":\"Spores spread.\",\"at\":260},{\"spokenCue\":\"In the route we followed\",\"view\":\"head\",\"line\":\"The illustrated spore-making route is asexual.\",\"at\":520}]",
+      "motionPurpose": "The memory aid writes on word by word and each step lights its matching icon, so the sequence can be recalled as one chain.",
+      "holdPurpose": "Hold the current view while its cause is explained."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "none",
+      "visualReference": "src/slides/FungiMouldTeachingSlide.tsx; selected rhizopus botanical plate, germination plate and clean bread question asset",
+      "teachingReason": "Quiet optional notes follow, rather than compete with, the new reasoning.",
+      "narrationCue": "[{\"spokenCue\":\"If you would like notes\",\"view\":\"notes\",\"line\":\"\",\"at\":0}]",
+      "motionPurpose": "The key notes enter one at a time on a quiet hold so students can copy them without competing narration.",
+      "holdPurpose": "Quiet copying time follows the invitation. Notes remain stable and the learner can pause."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "/root/c4_review_final",
+    "evidence": {
+      "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/source-review.json",
+      "sha256": "1aba5f7ee888c11ea37da13351d90fffaf5e40123696323bdedfaef52b0f7306"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "/root/c4_review_final",
+    "evidence": {
+      "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/source-review.json",
+      "sha256": "1aba5f7ee888c11ea37da13351d90fffaf5e40123696323bdedfaef52b0f7306"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Independent source and sampled silent native pass. Exact voiced review and human listening pending."
+}

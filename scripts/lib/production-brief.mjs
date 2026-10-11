@@ -32,13 +32,20 @@ export function prepareRenderProductionBrief(root, config) {
   return {inputs: [...new Set([...inputs, relative])], teachingBrief: {path: relative, sha256: sha256(readFileSync(absolute)), stage: 'export', pending: report.pending}};
 }
 
+// Motion and design guards (added 11 October 2026 after a batch of selected
+// lessons shipped as static slides). See docs/production/motion-design-standard.md.
+const PROHIBITION_ONLY = /^\s*(do not|don't|avoid|never|no\s)/i;
+const PROTOTYPE_RENDERER = /(^|\/)src\/prototypes\//;
+const isResponseScene = scene => scene?.type === 'quickCheck' || Boolean(scene?.responseHold) || Boolean(scene?.planningResponseInterval);
+
 export function createProductionBrief(root, lessonPath) {
   const bytes = readFileSync(inside(root, lessonPath)), lesson = JSON.parse(bytes);
-  return {schemaVersion: 3, source: {lessonPath, lessonSha256: sha256(bytes)},
+  return {schemaVersion: 4, source: {lessonPath, lessonSha256: sha256(bytes)},
     progression: {planPath: 'docs/production/course-progression-plan-2026-10-09.md', prerequisiteKnowledge: '', startsWith: '', stopsAfter: '', nextLesson: ''},
-    researchReferences: ['docs/research/hsc-video-production-standard-2026-10-02.md', 'docs/production/teaching-templates.md', 'docs/animation-planning.md'],
+    researchReferences: ['docs/research/hsc-video-production-standard-2026-10-02.md', 'docs/production/teaching-templates.md', 'docs/animation-planning.md', 'docs/production/motion-design-standard.md'],
     teaching: {task: lesson.lessonIntent ?? '', causalExplanation: '', conversationalApproach: '', openingDecision: '', understandingCheck: '', curriculumScope: ''},
-    scenes: lesson.scenes.map(scene => ({sceneId: scene.id, visualDecision: '', visualReference: '', teachingReason: '', narrationCue: '', motionPurpose: '', holdPurpose: ''})),
+    design: {renderer: 'src/LessonVideo.tsx', visualSystem: '', transitionPlan: ''},
+    scenes: lesson.scenes.map(scene => ({sceneId: scene.id, visualDecision: '', visualReference: '', teachingReason: '', narrationCue: '', motionPurpose: '', motionRole: 'explain', onScreenChange: '', motionTools: [], holdPurpose: ''})),
     scriptReview: {status: 'pending', reviewer: '', evidence: null},
     studentLearningReview: {status: 'pending', reviewer: '', evidence: null},
     voicedPreview: {status: 'pending', reviewer: '', mode: '', inputSnapshotPath: '', evidence: null,
@@ -57,7 +64,7 @@ export function checkProductionBrief(root, briefPath, {stage = 'export', expecte
     lessonPath = inside(root, brief.source?.lessonPath);
     lessonBytes = readFileSync(lessonPath); lesson = JSON.parse(lessonBytes);
   } catch (error) { return {ready: false, stage, blockers: [{code: 'BRIEF_INPUT_INVALID', detail: error.message}], pending}; }
-  if (![1, 2, 3].includes(brief.schemaVersion) || !lesson || !Array.isArray(lesson.scenes) || !lesson.scenes.every(scene => scene && filled(scene.id))) {
+  if (![1, 2, 3, 4].includes(brief.schemaVersion) || !lesson || !Array.isArray(lesson.scenes) || !lesson.scenes.every(scene => scene && filled(scene.id))) {
     return {ready: false, stage, blockers: [{code: 'BRIEF_SCHEMA_INVALID', detail: 'Use the production teaching/visual brief template with a valid selected lesson.'}], pending};
   }
   if (brief.source.lessonSha256 !== sha256(lessonBytes)) block('BRIEF_LESSON_CHANGED', 'Selected lesson changed. Reconcile the brief and review the affected scenes before updating its source hash.');
@@ -88,6 +95,30 @@ export function checkProductionBrief(root, briefPath, {stage = 'export', expecte
       (stage === 'draft' ? pending : blockers).push({code: 'BRIEF_VISUAL_DECISION', detail: scene.sceneId + ': choose reuse, adjust, new or none.'});
     }
     for (const name of ['visualReference', 'teachingReason', 'narrationCue', 'motionPurpose', 'holdPurpose']) requireDecision(scene[name], scene.sceneId + '.' + name);
+  }
+  // Every schema: a motion plan must describe each scene's own change, not a
+  // pasted sentence or a list of prohibitions.
+  if (stage !== 'draft') {
+    const repeats = new Map();
+    for (const scene of scenes) {
+      const text = typeof scene.motionPurpose === 'string' ? scene.motionPurpose.trim().toLowerCase() : '';
+      if (text) repeats.set(text, (repeats.get(text) ?? 0) + 1);
+      if (PROHIBITION_ONLY.test(scene.motionPurpose ?? '')) block('BRIEF_MOTION_PROHIBITION_ONLY', scene.sceneId + ': motionPurpose must say what visibly changes on screen, not only what to avoid.');
+    }
+    for (const [text, count] of repeats) if (count >= 3) block('BRIEF_MOTION_BOILERPLATE', count + ' scenes share one motionPurpose ("' + text.slice(0, 80) + '"). Describe each scene\'s own on-cue change.');
+  }
+  if (brief.schemaVersion >= 4) {
+    for (const name of ['renderer', 'visualSystem', 'transitionPlan']) requireDecision(brief.design?.[name], 'design.' + name);
+    if (stage !== 'draft' && PROTOTYPE_RENDERER.test(String(brief.design?.renderer ?? '').replaceAll('\\', '/'))) block('BRIEF_PROTOTYPE_RENDERER', 'Selected lessons record and export through the shared engine (src/LessonVideo.tsx with shared slide and animation components). Port one-off prototype visuals into shared components first.');
+    const lessonScenes = new Map(lesson.scenes.map(scene => [scene.id, scene]));
+    for (const scene of scenes) {
+      if (!['explain', 'hold'].includes(scene.motionRole)) block('BRIEF_MOTION_ROLE', scene.sceneId + ': motionRole must be explain or hold.');
+      const tools = Array.isArray(scene.motionTools) ? scene.motionTools.filter(filled) : [];
+      if (stage !== 'draft' && isResponseScene(lessonScenes.get(scene.sceneId)) && !tools.some(tool => /countdown/i.test(tool))) block('BRIEF_RESPONSE_COUNTDOWN_MISSING', scene.sceneId + ': a thinking or response hold shows the shared countdown.');
+      if (scene.motionRole === 'hold') continue;
+      requireDecision(scene.onScreenChange, scene.sceneId + '.onScreenChange');
+      if (!tools.length) (stage === 'draft' ? pending : blockers).push({code: 'BRIEF_MOTION_TOOLS_MISSING', detail: scene.sceneId + ': name the shared animation components or techniques that make the change visible.'});
+    }
   }
   const evidence = (item, label) => {
     try {

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C1-claude-2026-10-11-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c1/lesson.json",
+  "lessonSha256": "2e382a377a0429e955be494511e36888f20523be23ccfa4b139f0d2ba19874cf",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c1/lesson.production-brief.json",
+    "sha256": "47b64f551d0b96502c9aa8c0e007669a42d7f430ea3b730d68ef03b760b30bc7"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This bottle of soda water has been sitting in the fridge for a week, with the cap screwed on tight. Nothing about it changes. The bubbles don't grow, the level doesn't move, and if you checked tomorrow it would look exactly the same. So has everything inside it stopped? Or is something still going on that we just can't see?",
+      "hash": "51b447202551",
+      "textSha256": "51b4472025510e1f0eb19229b8bf7bdb8b851552c0482e6c7724c0532a5a7fe2",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/hook.51b447202551.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/hook.51b447202551.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/hook.51b447202551.generation.json",
+      "plannedRequestSha256": "b4ebc5706ecd3f9abea138b7c35803a0165033349910b90c05ff48f3f4429f9e"
+    },
+    {
+      "id": "look-inside",
+      "parentSceneId": "look-inside",
+      "text": "Let's zoom in to the surface, where the liquid meets the gas above it. The bottle holds dissolved carbon dioxide in the water, and carbon dioxide gas in the space at the top. Particles are always moving, so every second some dissolved molecules at the surface break free and escape into the gas. And every second, some gas molecules hit the water and dissolve back in. When the cap first went on, more escaped than returned. But as gas built up in the space above, more of it dived back in each second, until the return rate caught up with the escape rate. From then on, they match: for every molecule that leaves, another one comes back. The double arrow in this equation means both directions are happening at once.",
+      "hash": "ca4665e114a7",
+      "textSha256": "ca4665e114a7f43b530c693900f54c02b32b5430029ac3bb326ca5042a4dab6f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/look-inside.ca4665e114a7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/look-inside.ca4665e114a7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/look-inside.ca4665e114a7.generation.json",
+      "plannedRequestSha256": "f08321e40654e1bbdc384a4e0c32f3abaffd41216fd3a979da1968b213ec37dc"
+    },
+    {
+      "id": "dynamic-name",
+      "parentSceneId": "dynamic-name",
+      "text": "This is called dynamic equilibrium. Dynamic, because both processes keep going. Equilibrium, because their effects cancel out, so nothing changes overall. Here's a picture to hold onto. Think of the water and the gas as two towns, joined by a road at the surface, with molecules as the traffic. The same number of cars drive each way every minute, so the traffic never stops, but each town's population stays the same. Unlike drivers, molecules don't choose where to go, they just move about at random. And notice the towns don't have to be the same size. Equal rates, not equal amounts.",
+      "hash": "25ebb98a7558",
+      "textSha256": "25ebb98a75588c19ce07363075dfdd38d1b57ca3502b0dd6f13a9203844ee0c0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/dynamic-name.25ebb98a7558.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/dynamic-name.25ebb98a7558.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/dynamic-name.25ebb98a7558.generation.json",
+      "plannedRequestSha256": "f931b851cf46006430e35f5aa78850e8da1f61947aa06566a492beb1bca0e45e"
+    },
+    {
+      "id": "static",
+      "parentSceneId": "static",
+      "text": "Now compare a campfire. The wood burns, gives off heat, light and gases, and eventually all that's left is cold ash. That reaction has finished. It can't run backwards: the ash won't turn back into wood. Nothing is happening in either direction any more, so both rates are zero. That's static equilibrium: no change, because nothing is happening at all. It's not dynamic equilibrium running slowly. It has completely stopped.",
+      "hash": "1011a9655746",
+      "textSha256": "1011a9655746fc981957e8c1e5ed9a335af8e286fa7a26409cbbab9089c9386a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/static.1011a9655746.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/static.1011a9655746.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/static.1011a9655746.generation.json",
+      "plannedRequestSha256": "4efdb5e2e4a43ebeff5c46633ae073d6acaf974e292d37f2c9929723a89dadb7"
+    },
+    {
+      "id": "open-vs-closed",
+      "parentSceneId": "open-vs-closed",
+      "text": "Back to our soda water. What happens if we take the cap off? Carbon dioxide escaping from the water can now drift out into the room, and the room is huge, so very little of it ever comes back. Molecules keep leaving faster than they return, and the drink slowly goes flat. With the cap on, the bottle is a closed system: matter can't get in or out. With the cap off, it's an open system. That's why dynamic equilibrium needs a closed system. If the returning half of the exchange keeps getting lost, the two rates can never match.",
+      "hash": "96c2097c7d01",
+      "textSha256": "96c2097c7d017de8e5d17659fcf4e2e50b2c82a09cc97c4279afcbd9add3494a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/open-vs-closed.96c2097c7d01.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/open-vs-closed.96c2097c7d01.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/open-vs-closed.96c2097c7d01.generation.json",
+      "plannedRequestSha256": "0aa5c51c367a7b1e971c6996caccdfbe63e9e60137279ed327ade73f72cc69e4"
+    },
+    {
+      "id": "worked-classify",
+      "parentSceneId": "worked-classify",
+      "text": "Let's use this to classify systems, the way an exam question might ask. Ask these questions in order. First: has the reaction finished, so it can't run backwards? If yes, it's static. If it can still go both ways, ask two more. Is the system closed? And are the things we can observe, like colour or concentration, staying constant? If both answers are yes, it's dynamic. If not, it's neither. Try it on a sealed flask of hydrogen and iodine gas, kept at 450 degrees for several hours. The purple colour isn't changing. Has the reaction finished? No, it can go both ways. Is it closed? Yes, it's sealed. Is the colour steady? Yes. So that's dynamic equilibrium.",
+      "hash": "8bfeac61e5fe",
+      "textSha256": "8bfeac61e5fe9ee9cad2fe1bf480c77a977d0da89bf358b99418d1ea5cbd287c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/worked-classify.8bfeac61e5fe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/worked-classify.8bfeac61e5fe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/worked-classify.8bfeac61e5fe.generation.json",
+      "plannedRequestSha256": "610e2fe0c9e08846b799e1b9467aca025ecdce3735423d8eff2a86dcd1b8d700"
+    },
+    {
+      "id": "worked-more",
+      "parentSceneId": "worked-more",
+      "text": "Now the cold ash from our campfire. Has the reaction finished? Yes, and it can't reverse, so it's static. We don't need the other questions, even though the ash is sitting out in the open air. Last, a beaker of water slowly evaporating in a warm room. Evaporation can go both ways, because some vapour does condense back in, so it hasn't finished. Is it closed? No, it's open, and far more water escapes than returns, so the level keeps dropping. That makes it neither.",
+      "hash": "fa1dbba20c0a",
+      "textSha256": "fa1dbba20c0a89e5e21f3f683f1a89408f15da0369dfc557b639793b5cae9b23",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/worked-more.fa1dbba20c0a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/worked-more.fa1dbba20c0a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/worked-more.fa1dbba20c0a.generation.json",
+      "plannedRequestSha256": "29b6f16eeb3e8988f30b03ae36a4bfdbe6f7e555b31c652a66dce5eecf05f470"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Use the same questions to classify each of these as static, dynamic or neither, and give your reason. One: a sealed jar of salt water that has sat untouched for weeks. The water is saturated, which means it can't dissolve any more salt overall, and the pile of crystals at the bottom stays exactly the same size. Two: a cup of hot coffee cooling on a desk. Three: a strip of magnesium that has burned completely to white powder. Pause the video if you'd like more time.",
+      "hash": "e1d1bb5638f2",
+      "textSha256": "e1d1bb5638f26ac9b91af92bc69ad794ba1ad78e8abef04f8e2af9d90eb71df1",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/attempt.e1d1bb5638f2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/attempt.e1d1bb5638f2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/attempt.e1d1bb5638f2.generation.json",
+      "plannedRequestSha256": "c8ca58746341ce0178885eb211d1000976cadcad91cf2a20ed1bf098e5437f92"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "The salt jar is dynamic. Dissolving can go both ways: salt keeps dissolving from the pile, and dissolved salt keeps crystallising back onto it, at the same rate, in a closed jar. That's why the pile stays the same size. If you said static, that's the trap: still-looking doesn't mean stopped. The coffee is neither. The cup is open, and heat and steam keep leaving, so it's still changing. It isn't at equilibrium at all. And the burned magnesium is static. If you said neither because it's sitting in open air, go back to the first question: the reaction has finished and can't run backwards, so it's static.",
+      "hash": "86d7ab9bead8",
+      "textSha256": "86d7ab9bead88a09c506676f0abccef6dba9e02da1a69ea0a47e27b510648513",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/feedback.86d7ab9bead8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/feedback.86d7ab9bead8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/feedback.86d7ab9bead8.generation.json",
+      "plannedRequestSha256": "42ad7218c3f36fe690907101f7c5e9e6ff649df4fe148bc22105a4886d3666de"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So here's the order to use in any question. First, has the reaction finished, so it can't run backwards? Then it's static. If it can still go both ways, and the system is closed and steady, it's dynamic. If it's open, or still changing, it's neither. And remember, at dynamic equilibrium the rates are equal, not the amounts. Next, we'll watch a reaction actually reach equilibrium, by following its two rates as they change.",
+      "hash": "e3efbda8cac2",
+      "textSha256": "e3efbda8cac2d4eee5d4496f15a9969a2eda33d2fef0b9770a0d039bbdb8e8ef",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/memory.e3efbda8cac2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/memory.e3efbda8cac2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/memory.e3efbda8cac2.generation.json",
+      "plannedRequestSha256": "448c38c8ddcbfbc67f15e186f24f369000a50ab5f256516ac8924bd2a58d180a"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C1-claude-2026-10-11-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

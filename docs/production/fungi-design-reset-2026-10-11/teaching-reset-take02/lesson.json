@@ -1,0 +1,354 @@
+{
+  "title": "How bread mould starts growing somewhere new",
+  "subtitle": "Threads, spores and new growth",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Fungi: bread mould",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Heredity",
+  "syllabusNeutral": true,
+  "syllabusDotPoints": [
+    "fungi: budding, spores"
+  ],
+  "nesaOutcomes": [
+    "BIO12-12"
+  ],
+  "productionRole": "prototype",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "teachingRenderer": "mouldSpores",
+  "lessonIntent": "Explain how spores travel from a mould colony and start new fungal growth under suitable conditions.",
+  "inquiryQuestion": "How can mould reach another piece of bread without the pieces touching?",
+  "teachingNotes": [
+    "Hyphae are fungal threads that take up nutrients.",
+    "Sporangia produce spores that can move in air.",
+    "A spore can begin new threads when conditions are suitable.",
+    "The illustrated spore-making route is asexual reproduction."
+  ],
+  "teachingReset": {
+    "proposalPath": "docs/production/fungi-design-reset-2026-10-11/teaching-proposal.json",
+    "parentLessonPath": "docs/production/overnight-module5-2026-10-10/biology-fungi/revision-02/lesson.json",
+    "routeId": "bio-m5-b02b",
+    "deliveryPart": 3,
+    "syllabusAction": "B-fungi",
+    "coverage": "Candidate mould contribution only. Yeast budding remains separate and outstanding.",
+    "assetPaths": [
+      "assets/biology/rhizopus-bread-mould-botanical-v1.png",
+      "assets/biology/rhizopus-germination-botanical-v1.png",
+      "assets/biology/clean-bread-mould-question-v1.png"
+    ],
+    "visualLimits": [
+      "Painted source states are magnified teaching illustrations, not photographs or recorded time-lapse.",
+      "Released-spore movement is a representative coded transport model, not a claim of a fixed path."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "mould-hook",
+      "type": "concept",
+      "caption": "How does mould reach another piece of bread?",
+      "heading": "How does mould reach another piece of bread?",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 693,
+      "voiceover": {
+        "text": "You may have seen a fuzzy patch spreading across old bread. That patch is a fungus. But how could it start growing on another piece of bread without the two pieces touching? Let’s follow one example, a bread mould called Rhizopus stolonifer."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "You may have seen",
+            "view": "whole",
+            "line": "How can another piece of bread develop mould?",
+            "at": 0
+          }
+        ],
+        "reason": "Establish the bread and organism before microscopic terms."
+      }
+    },
+    {
+      "id": "mould-threads",
+      "type": "concept",
+      "caption": "The mould is a body of branching threads.",
+      "heading": "The mould is a body of branching threads.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 825,
+      "voiceover": {
+        "text": "Close up, the mould is made of thin branching threads. One thread is called a hypha; several are hyphae. These threads grow over and into the bread. The fungus gets nutrients from the bread, which support its growth. The fuzzy patch is a growing fungal body, rather than a pile of loose spores."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Close up",
+            "view": "threads",
+            "line": "Hyphae are the thin threads of the fungus.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The fungus gets nutrients",
+            "view": "threads",
+            "line": "The threads take up nutrients from the bread.",
+            "at": 260
+          }
+        ],
+        "reason": "Connect the visible patch to the feeding body."
+      }
+    },
+    {
+      "id": "mould-spore-case",
+      "type": "concept",
+      "caption": "A rounded spore case produces new reproductive cells.",
+      "heading": "A rounded spore case produces new reproductive cells.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 910,
+      "voiceover": {
+        "text": "Some threads form upright stalks with rounded heads. Inside a head, the fungus produces many tiny reproductive cells called spores. A spore can begin new fungal growth. The rounded structure where these spores form is called a sporangium. So the sporangium makes the spores; the spores are the cells that can begin a new fungus."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Some threads form",
+            "view": "head",
+            "line": "Upright stalks carry rounded spore cases.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Inside a head",
+            "view": "spores",
+            "line": "Spores are reproductive cells that can start new growth.",
+            "at": 260
+          },
+          {
+            "spokenCue": "The rounded structure",
+            "view": "head",
+            "line": "A sporangium is the structure where spores form.",
+            "at": 520
+          }
+        ],
+        "reason": "Distinguish enclosing structure and released cells using the existing mature and releasing heads."
+      }
+    },
+    {
+      "id": "mould-release",
+      "type": "concept",
+      "caption": "Moving air can carry spores to a new place.",
+      "heading": "Moving air can carry spores to a new place.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 895,
+      "voiceover": {
+        "text": "When the sporangium matures, its wall breaks down and spores can be released. Air movement can carry them away from the parent mould. This allows a spore to reach another food surface, even when no fungal thread joins the two places. Arriving is only the first step. The spore still needs conditions that allow it to grow."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "When the sporangium matures",
+            "view": "release",
+            "line": "The mature wall breaks down and releases spores.",
+            "at": 0
+          },
+          {
+            "spokenCue": "Air movement",
+            "view": "release",
+            "line": "Air can carry spores away from the parent mould.",
+            "at": 260
+          }
+        ],
+        "reason": "Keep the named colony visible while explaining airborne travel."
+      }
+    },
+    {
+      "id": "mould-new-growth",
+      "type": "concept",
+      "caption": "A landed spore can begin a new fungal thread.",
+      "heading": "A landed spore can begin a new fungal thread.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 1200,
+      "voiceover": {
+        "text": "On suitable food, with enough moisture and a suitable temperature, the spore can begin to grow. We call that germination. A thin thread grows out from the spore, then branches to build a new fungal body. In the route we have followed, the parent mould made the spores without reproductive cells joining. That is asexual reproduction. Rhizopus also has a sexual route, so finding a spore on its own would not tell us how it was produced."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "at": 0,
+            "spokenCue": "On suitable food, with enough moisture",
+            "view": "germinate",
+            "line": "Moisture, food and suitable temperature allow growth."
+          },
+          {
+            "at": 280,
+            "spokenCue": "We call that germination.",
+            "view": "germinate",
+            "line": "Germination means beginning to grow."
+          },
+          {
+            "at": 430,
+            "spokenCue": "A thin thread grows out",
+            "view": "germinate",
+            "line": "A new thread grows out from the landed spore."
+          },
+          {
+            "at": 680,
+            "spokenCue": "In the route we have followed",
+            "view": "germinate",
+            "line": "This parent makes spores without reproductive cells joining."
+          },
+          {
+            "at": 910,
+            "spokenCue": "Rhizopus also has a sexual route",
+            "view": "germinate",
+            "line": "A spore alone does not identify its production route."
+          }
+        ],
+        "reason": "The actual germination artwork shows the spore connected to its growing thread."
+      }
+    },
+    {
+      "id": "mould-attempt",
+      "type": "concept",
+      "caption": "The bread pieces never touch. Could mould reach B?",
+      "heading": "The bread pieces never touch. Could mould reach B?",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 1474,
+      "voiceover": {
+        "text": "Here is a new arrangement. Bread A has Rhizopus mould with mature spore cases. Bread B has no mould initially. The pieces do not touch, but share moving air. B is moist, supplies nutrients and is at a suitable temperature. How could mould reach B, and what would begin growing there? Pause and explain the two steps."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "Here is a new arrangement",
+            "view": "attempt",
+            "line": "How could mould reach B? What would begin growing there?",
+            "at": 0
+          }
+        ],
+        "reason": "A real spatial inference. No travel arrows, spores or growth outcome during the response."
+      },
+      "responseRole": "attempt",
+      "responseHold": {
+        "startFrame": 1000,
+        "endFrame": 1450
+      }
+    },
+    {
+      "id": "mould-feedback",
+      "type": "concept",
+      "caption": "The spores can travel. The new thread grows after arrival.",
+      "heading": "The spores can travel. The new thread grows after arrival.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 853,
+      "voiceover": {
+        "text": "The pieces do not need to touch. Mature spore cases on A can release spores, and moving air can carry some towards B. If a spore lands on B, the moist bread provides water and nutrients. At the stated suitable temperature, it can germinate: a fungal thread begins to grow, then branches into a new colony."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "The pieces do not need",
+            "view": "travel",
+            "line": "Moving air can carry released spores to B.",
+            "at": 0
+          },
+          {
+            "spokenCue": "If a spore lands",
+            "view": "arrive",
+            "line": "A landed spore has water and nutrients on B.",
+            "at": 260
+          },
+          {
+            "spokenCue": "it can germinate",
+            "view": "grow",
+            "line": "The spore begins a thread, which can branch.",
+            "at": 520
+          }
+        ],
+        "reason": "Explain movement and establishment as distinct current stages."
+      },
+      "responseRole": "feedback"
+    },
+    {
+      "id": "mould-memory",
+      "type": "concept",
+      "caption": "Threads feed. Spores spread.",
+      "heading": "Threads feed. Spores spread.",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 1215,
+      "voiceover": {
+        "text": "That gives us a useful reminder: threads feed, spores spread. The threads get nutrients where the fungus is growing. The spores can carry this reproductive route to a new place. In the route we followed, the parent produces spores without reproductive cells joining, so it is asexual reproduction. Next, we will see how one yeast cell makes another by budding."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "That gives us",
+            "view": "threads",
+            "line": "Threads feed.",
+            "at": 0
+          },
+          {
+            "spokenCue": "The spores can carry",
+            "view": "spores",
+            "line": "Spores spread.",
+            "at": 260
+          },
+          {
+            "spokenCue": "In the route we followed",
+            "view": "head",
+            "line": "The illustrated spore-making route is asexual.",
+            "at": 520
+          }
+        ],
+        "reason": "Give the causal anchor after its explanation. One necessary boundary prevents treating all spores as asexual."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "caption": "Key notes: what to write in your book",
+      "heading": "Key notes: what to write in your book",
+      "points": [],
+      "diagram": {
+        "kind": "none"
+      },
+      "durationInFrames": 900,
+      "voiceover": {
+        "text": "If you would like notes, copy these now, or pause for more time."
+      },
+      "teachingReset": {
+        "previewBeats": [
+          {
+            "spokenCue": "If you would like notes",
+            "view": "notes",
+            "line": "",
+            "at": 0
+          }
+        ],
+        "reason": "Quiet optional notes follow, rather than compete with, the new reasoning.",
+        "quietHoldStartFrame": 220
+      }
+    }
+  ]
+}

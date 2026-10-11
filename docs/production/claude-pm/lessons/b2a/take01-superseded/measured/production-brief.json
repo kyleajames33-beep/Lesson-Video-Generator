@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b2a/measured/lesson.json",
+    "lessonSha256": "f6531cfca9fe07c77ceb34980c203c21183a4c3935f92b8eef7fc6df675f2bfb"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B1: gametes (sperm and egg) join in sexual reproduction; a gamete carries one set of chromosomes and two gametes make a full two sets; offspring must survive for a species to continue.",
+    "startsWith": "Coral spawning millions of eggs on the Great Barrier Reef, against a harbour seal with one egg and one pup.",
+    "stopsAfter": "Describing external and internal fertilisation with named animals, explaining which conditions favour each, and linking fertilisation type to egg number and parental investment in a short answer.",
+    "nextLesson": "B2b: how plants, fungi and microbes reproduce."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b02a.md"
+  ],
+  "teaching": {
+    "task": "Explain why external fertilisers release far more eggs than internal fertilisers and relate this to parental investment.",
+    "causalExplanation": "Gametes must meet, and in open water they are scattered, eaten and spread thin so huge egg numbers offset the loss; internal fertilisation protects the gametes so far fewer eggs are needed; a parent has limited energy, so many eggs with little care trades off against few young with more care.",
+    "conversationalApproach": "Contrasting real animals (coral, salmon, frog, seal, hen), a trap about where fertilisation versus development happens, and an exam answer built on screen one sentence at a time.",
+    "openingDecision": "Why would one animal release millions of eggs while another gets by with one?",
+    "understandingCheck": "Decide the fertilisation type for a desert lizard and a sea turtle, and judge which of oysters and dugongs recovers more slowly from a storm that kills nine in ten young.",
+    "curriculumScope": "Describe the mechanisms of reproduction in animals, comparing external and internal fertilisation and their link to egg number and parental investment (BIO12-12, Module 5). Meiosis, haploid and diploid, pregnancy and plants are deferred to later lessons."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted animal plates with coded gamete fields, seesaw balance and answer cards.",
+    "transitionPlan": "Push-through from the coral plate to the seal plate; the board splits into outside and inside columns; plates change one animal at a time; the dot field dims as the internal fertilisation view arrives; scene crossfades with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Painted coral spawning plate and harbour seal with pup plate",
+      "teachingReason": "Sets a striking contrast to motivate the question",
+      "narrationCue": "millions of tiny eggs / harbour seal / a single egg / a single pup",
+      "motionPurpose": "Egg cloud swells over the coral, then a push-through shows the seal with one dot for one egg",
+      "motionRole": "explain",
+      "onScreenChange": "Egg cloud swells over the reef on \"millions of tiny eggs\"; push-through to the seal plate on \"harbour seal\"; one egg dot on \"a single egg\" and a scribble circle round the pup on \"a single pup\"; heading writes on",
+      "motionTools": [
+        "particle cloud",
+        "CameraStage push-through",
+        "ScribbleCircle",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Brief look at the seal and pup"
+    },
+    {
+      "sceneId": "meeting",
+      "visualDecision": "new",
+      "visualReference": "Coded sperm, egg and zygote strips on a plain board",
+      "teachingReason": "Introduces fertilisation, the zygote and the meeting problem, reusing B1 wording",
+      "narrationCue": "one set of chromosomes / half of the instructions / joins / zygote / two main ways",
+      "motionPurpose": "Gamete strips fill half an instruction bar each and complete inside one zygote cell when the sperm joins",
+      "motionRole": "explain",
+      "onScreenChange": "Each gamete shows one chromosome strip on \"one set of chromosomes\"; the strips fill halves of an instruction bar on \"half of the instructions\"; the sperm travels in and the bar completes inside one cell labelled \"zygote\" on \"joins\"; pin, short path and drying droplet doodles draw on the three problems; the board splits into two columns on \"two main ways\"",
+      "motionTools": [
+        "gamete travel",
+        "bar fill",
+        "HandText write-on",
+        "DrawPath doodles",
+        "column split"
+      ],
+      "holdPurpose": "Hold the empty two-column board"
+    },
+    {
+      "sceneId": "external-where",
+      "visualDecision": "adjust",
+      "visualReference": "Droplet and swimming sperm icons, then coral, frog pond and salmon plates in turn",
+      "teachingReason": "Shows what external fertilisation is and why water is needed",
+      "narrationCue": "water matters for two reasons / sea / pond / gravel",
+      "motionPurpose": "Two reason icons draw, then three animal plates appear one at a time with place chips collecting on a rail",
+      "motionRole": "explain",
+      "onScreenChange": "A droplet and a swimming sperm draw on \"two reasons\"; the coral spawn cloud appears on \"sea\", the frog pond plate on \"pond\", and salmon eggs and a sperm trail in the gravel on \"gravel\"; place chips collect on the rail",
+      "motionTools": [
+        "DrawPath icons",
+        "plate reveal",
+        "particle trail",
+        "rail chips"
+      ],
+      "holdPurpose": "Hold the three place chips"
+    },
+    {
+      "sceneId": "external-timing",
+      "visualDecision": "adjust",
+      "visualReference": "Coral, salmon and frog plates again with moon, scent-wave and calendar doodles",
+      "teachingReason": "Shows how external fertilisers get gametes into the same place and time",
+      "narrationCue": "same few nights / scent / same place / clasps / right over the eggs",
+      "motionPurpose": "The coral cloud crowds into one patch, a scent wave guides salmon to one gravel bed, and the frog pair is pushed in on for the clasp",
+      "motionRole": "explain",
+      "onScreenChange": "A moon chip and the cloud crowding into one patch on \"same few nights\"; a scent wave from the river mouth and fish converging on one bed on \"scent\" and \"same place\"; the camera pushes to the clasping frogs on \"clasps\" and the sperm trail lands on the spawn on \"right over the eggs\"",
+      "motionTools": [
+        "scent wave draw",
+        "fish converge",
+        "CameraStage push",
+        "particle trail"
+      ],
+      "holdPurpose": "Hold the frog pair with the sperm on the spawn"
+    },
+    {
+      "sceneId": "odds",
+      "visualDecision": "new",
+      "visualReference": "Coded field of hundreds of gamete dots over water with current and fish silhouettes",
+      "teachingReason": "Shows two separate kinds of loss and why huge numbers answer them",
+      "narrationCue": "sweep / eat / spread so thin / four thousand to fourteen thousand / a few still make it",
+      "motionPurpose": "Dots shear away, fish remove dots, the few pairs become eggs and most of those fade, leaving a handful circled",
+      "motionRole": "explain",
+      "onScreenChange": "Dots shear sideways on \"sweep\"; fish silhouettes remove dots on \"eat\"; dots fade apart on \"spread so thin\"; the egg count chip ticks on at the number; only a handful stay lit and are circled on \"a few still make it\"; the rule line writes on",
+      "motionTools": [
+        "particle field",
+        "fish silhouettes",
+        "NumberTicker counter",
+        "ScribbleCircle",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the rule line"
+    },
+    {
+      "sceneId": "internal",
+      "visualDecision": "adjust",
+      "visualReference": "Painted bearded dragon cut-away on dry sand beside the dimmed dot field from the odds scene",
+      "teachingReason": "Shows how internal fertilisation protects gametes so far fewer eggs are needed",
+      "narrationCue": "inside the female's body / short distance / far fewer eggs / plenty of sperm / sharks / find each other",
+      "motionPurpose": "A sperm path draws inside the female while the dot field dims, then a male silhouette and two approaching animals show what stays costly",
+      "motionRole": "explain",
+      "onScreenChange": "A sperm path draws inside the female and ends at the egg on \"inside the female's body\", with a circle on \"short distance\"; the earlier dot field dims with a \"far fewer eggs\" chip; a sperm cloud stays beside a male on \"plenty of sperm\"; a shark icon pops on \"sharks\"; two silhouettes meet on \"find each other\"",
+      "motionTools": [
+        "DrawPath sperm path",
+        "ScribbleCircle",
+        "plate dim",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the split-screen comparison"
+    },
+    {
+      "sceneId": "trap",
+      "visualDecision": "new",
+      "visualReference": "Hen cut-away plate, then a coded location grid with hen, seal and frog crops",
+      "teachingReason": "Corrects the idea that egg laying means external fertilisation",
+      "narrationCue": "inside the hen / before the shell forms / hen / seal / frog",
+      "motionPurpose": "A sperm travels up the oviduct, the shell draws on after it, and a grid fills row by row with the hen row circled",
+      "motionRole": "explain",
+      "onScreenChange": "A sperm travels to the yolk on \"inside the hen\" and the shell draws on after it on \"before the shell forms\"; the two-column grid writes on and the hen, seal and frog rows fill as each is named; the hen row is circled in amber",
+      "motionTools": [
+        "particle travel",
+        "DrawPath shell",
+        "table row reveal",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold the completed grid"
+    },
+    {
+      "sceneId": "numbers-care",
+      "visualDecision": "new",
+      "visualReference": "Coded cause strip, seesaw balance with salmon and seal plates, buried-egg doodle",
+      "teachingReason": "Explains the trade-off between egg number and parental investment and its limits",
+      "narrationCue": "limited supply / thousands of eggs / single pup / parental investment / some reptiles",
+      "motionPurpose": "A fixed energy bar splits between eggs and care, and the seesaw tilts from the salmon side to the seal side",
+      "motionRole": "explain",
+      "onScreenChange": "The cause strip draws phrase by phrase; the energy bar draws on \"limited supply\"; the salmon side fills with egg dots on \"thousands of eggs\" and a crossed parent icon appears; the seal side fills with one pup on \"single pup\"; the seesaw tilts on \"or\"; a buried-egg doodle labelled \"trend, not a rule\" appears on \"some reptiles\"",
+      "motionTools": [
+        "DrawPath bars",
+        "seesaw tilt",
+        "icon pop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the tilted seesaw"
+    },
+    {
+      "sceneId": "worked-explain",
+      "visualDecision": "new",
+      "visualReference": "Question card and a chain of four written answer cards with salmon and seal icons",
+      "teachingReason": "Models how to build a linked explain answer one sentence at a time",
+      "narrationCue": "explain / cause / effect / contrast / link",
+      "motionPurpose": "Four answer cards land in turn, the word because is circled on three of them and earlier cards shrink to the top rail",
+      "motionRole": "explain",
+      "onScreenChange": "The question card writes on with \"explain\" underlined; the cause, effect, contrast and link cards land on their cue words; \"because\" is circled on the first three and the linking word underlined in a second colour; earlier cards shrink to the rail",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "ScribbleCircle",
+        "ScribbleUnderline",
+        "chip shrink"
+      ],
+      "holdPurpose": "Hold the four cards to read"
+    },
+    {
+      "sceneId": "bad-year",
+      "visualDecision": "new",
+      "visualReference": "Two rows: a coded seal colony and a coded cod population with a dense egg cloud",
+      "teachingReason": "Shows that few young per adult means slow recovery from equal losses",
+      "narrationCue": "storm year / survive / how many young each adult adds / rebuilds slowly / rebuild faster",
+      "motionPurpose": "Nine in ten young are slashed in both rows, the adults stay lit, and the cod refill dial fills quickly while the seal dial creeps",
+      "motionRole": "explain",
+      "onScreenChange": "Red slashes remove nine in ten young in both rows on \"storm year\" while the adults stay lit on \"survive\"; \"adds next year\" chips show about 1 for seals and millions for cod; the seal refill dial creeps on \"rebuilds slowly\" and the cod dial fills on \"rebuild faster\"",
+      "motionTools": [
+        "slash marks",
+        "refill dials",
+        "NumberTicker chips",
+        "particle cloud"
+      ],
+      "holdPurpose": "Hold the two dials"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Three painted vignettes: desert lizard, sea turtle nest, and oysters beside a dugong with calf",
+      "teachingReason": "Unseen transfer with every condition visible, including that the adults survive in both populations",
+      "narrationCue": "Pause",
+      "motionPurpose": "Countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "Three numbered vignettes appear as each situation is named; the storm and surviving-adults conditions stay on the board; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same three vignettes with verdict stamps, sperm paths and the seesaw and refill dials",
+      "teachingReason": "Explains each answer and names the lays-eggs, beach and lost-eggs slips",
+      "narrationCue": "internal / inside the female / dugong / oysters",
+      "motionPurpose": "Each vignette gets a verdict stamp and reason card, with a sperm path inside the lizard and turtle and the slow dugong dial against the fast oyster dial",
+      "motionRole": "explain",
+      "onScreenChange": "The lizard gets an \"internal\" stamp with a sperm path inside; the turtle shows a sperm path inside her and an \"inside, before the eggs were laid\" stamp; the dugong dial creeps while the oyster dial fills; amber doodles mark each trap",
+      "motionTools": [
+        "stamp pop",
+        "DrawPath sperm path",
+        "refill dials",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Settle on all three verdicts"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Aid written large with wave, dot cloud, animal pair and shield icons and the hen",
+      "teachingReason": "Gives a reusable summary aid and hands off to plants, fungi and microbes",
+      "narrationCue": "External / Internal / where they meet / Next",
+      "motionPurpose": "The aid writes on in two halves with icons, then the trap line and the next chip appear",
+      "motionRole": "explain",
+      "onScreenChange": "The \"External\" half writes on with a wave and dot cloud, then the \"Internal\" half with the pair and shield; the trap line writes on beside the hen; the next-lesson chip appears",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the aid"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, revision 3 pass)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b2a-learning-review.md",
+      "sha256": "5dcebd33bdf499ae262044db2a115758ab4d9e3fbb25de43ff1a6fc4668f1277"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex fact check (science, syllabus, copy); findings applied by Claude",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b2a-check.md",
+      "sha256": "8aa7d2c1323b8cf647eab214dc192217135fe18487fa92c62eed4724899c9bc1"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

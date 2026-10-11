@@ -1,0 +1,108 @@
+{
+  "title": "How reversible reactions approach equilibrium",
+  "subtitle": "How does a flask that starts with only reactant end up unchanging?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 2,
+  "lessonIntent": "Explain how forward and reverse rates change from a reactant-only start until they are equal, so the concentrations stop changing, and read concentration-time and rate-time graphs.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is a sealed glass flask, heated to about two hundred and fifty degrees Celsius and held there, hot enough that everything inside stays a gas. We fill it with just one gas, phosphorus pentachloride, written P C L five, and nothing else. This reaction is reversible. A P C L five molecule can split into phosphorus trichloride, P C L three, and chlorine, and those two can join back up into P C L five. But right now the flask holds only P C L five, so there is nothing yet to run backwards. So how does a flask that starts with only reactant end up as a mixture that stays exactly the same? To find out, we'll follow it from the moment it's sealed."
+      }
+    },
+    {
+      "id": "start",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At the very beginning, the flask holds 0.20 moles of P C L five in every litre. That is its concentration, and there is no P C L three or chlorine at all. In the equation, the reaction going left to right, here splitting, is the forward reaction. The one going right to left, joining, is the reverse reaction. Every P C L five molecule is a candidate to split, and some do every second, so the forward reaction can begin straight away. On a made-up scale, where bigger means more splits each second, the forward rate starts at fifty. The reverse reaction can't start yet. To rejoin, a P C L three molecule has to meet a chlorine molecule, and neither exists. So the reverse rate is exactly zero."
+      }
+    },
+    {
+      "id": "forward-falls",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A little later, some of the P C L five has split. The flask now holds 0.16 moles per litre of P C L five, and 0.04 moles per litre of each product. The forward rate has dropped from fifty to forty. Each P C L five molecule has the same chance of splitting in any one second, so with fewer molecules in the flask, fewer split. Meanwhile, the reverse reaction has started. P C L three and chlorine now exist, so now and then one of each meets and joins back into P C L five. That's a reverse rate of eight. But forward is still bigger than reverse, so more P C L five splits each second than is rebuilt, and its concentration keeps falling, but more slowly."
+      }
+    },
+    {
+      "id": "closing-in",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Later again, P C L five is down to 0.14 moles per litre, and each product is up to 0.06. The forward rate has slipped to thirty-five, because there is even less to split. The reverse rate has climbed to seventeen, because with more P C L three and chlorine in the same space, they find each other more often. The gap between the two rates is shrinking. While the forward rate is bigger, P C L five is lost faster than it is made, so it is still falling, just more slowly again."
+      }
+    },
+    {
+      "id": "equal",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Then comes the moment they are equal. At 0.12 moles per litre of P C L five and 0.08 of each product, both rates are thirty. Now P C L five is made as fast as it is lost, so its concentration stops changing. That is why the P C L five never runs out. Both reactions are still running at thirty, and their effects cancel. That is the dynamic equilibrium from last time. You can even see it. Chlorine is a pale yellow-green gas, while P C L five vapour is pale and nearly colourless, so the flask slowly turns yellow-green, then stops getting any darker, because the chlorine concentration has stopped changing."
+      }
+    },
+    {
+      "id": "graphs",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is the whole journey as graphs. First, the concentrations. P C L five falls, then flattens. P C L three and chlorine rise together, and flatten too, because they are made in equal numbers. Notice they flatten at 0.08 moles per litre, below the P C L five at 0.12. The concentrations don't have to match. Now the rates. The forward rate starts high and falls. The reverse rate starts at zero and rises. Where the two lines meet, the concentrations stop changing, and from there both rates stay level. Check the height of that flat line: it is thirty, not zero. A common slip is to say the reaction stops at equilibrium. Neither rate drops to zero."
+      }
+    },
+    {
+      "id": "towns-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Remember the two towns from the last video? Start with everyone in the left town. At first, all the traffic flows from left to right. With fewer people left in the left town, less traffic leaves it each minute. And as the right town fills up, more cars head back. The traffic going left builds until it matches the traffic going right, and from then on the populations stay steady, although cars still drive both ways. In our flask, the forward rate is the faster one at the start. If we had started with only products, it would be the other way round. So in a sealed flask at a steady temperature, hold onto this line: the faster rate falls, the slower rate rises, they meet and stay level."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn, with a different start. A new sealed flask, the same size, at the same temperature, is filled with 0.20 moles per litre of P C L three and 0.20 of chlorine, and no P C L five at all. Answer three things. One: which rate is zero at the very start, and why? Two: as time passes, which rate falls, which rises, and what happens to the concentration of each substance? Three: once the two rates are equal, are the reactions still going? Pause the video if you'd like more time."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 1050
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At the start, the forward rate is zero, because there is no P C L five yet to split. Only the reverse reaction can happen: P C L three and chlorine meet and join. So P C L five rises from zero to 0.12 moles per litre, while P C L three and chlorine fall from 0.20 to 0.08, the same mixture as before. That happens because the total phosphorus and chlorine, the flask size and the temperature are the same. Here is how the rates change. The reverse rate falls, because those two are being used up, and the forward rate rises, because P C L five is building up. So the aid still holds: the reverse rate was the faster one, and it fell. And yes, both reactions are still going. If you said the reverse rate is zero, check what is in this flask: there is no P C L five, so the forward rate is zero. If you said forward falls and reverse rises, check which side is full: the rate with more to work on starts high. If you said the reaction stops, remember the concentrations stop changing, but the rates stay equal and above zero."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So whenever a question asks how a reaction reaches equilibrium, tell the story in order. Start from one side only: that side's rate is at its highest and the other rate is zero. As that side is used up, its rate falls. As the other side builds up, its rate rises. When the two rates are equal, the concentrations stop changing, but neither rate is zero. Next, we'll take a flask that is already at equilibrium and disturb it, to see what it does about it."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

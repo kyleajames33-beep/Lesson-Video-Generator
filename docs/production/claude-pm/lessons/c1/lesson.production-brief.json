@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c1/lesson.json",
+    "lessonSha256": "2e382a377a0429e955be494511e36888f20523be23ccfa4b139f0d2ba19874cf"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Reversible and irreversible reactions; particles are always moving; rate means how much changes per second (Year 11).",
+    "startsWith": "A sealed bottle of soda water that looks completely still.",
+    "stopsAfter": "Classifying systems as static, dynamic or neither and explaining why dynamic equilibrium needs a closed system.",
+    "nextLesson": "C2: how a reaction reaches equilibrium, rates changing over time."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c01.md"
+  ],
+  "teaching": {
+    "task": "Classify static, dynamic or neither, and explain the closed-system requirement.",
+    "causalExplanation": "Opposing processes continue at equal rates so amounts stay constant; static means both rates are zero because the reaction finished; opening the system loses the returning half of the exchange.",
+    "conversationalApproach": "Concrete sealed drink and campfire, two-towns traffic analogy, teacher-led three-question classification.",
+    "openingDecision": "Has everything stopped in a still-looking sealed bottle?",
+    "understandingCheck": "Classify a saturated salt jar, a cooling coffee and burned magnesium with reasons.",
+    "curriculumScope": "Model static and dynamic equilibrium and analyse the differences between open and closed systems (CH12-12). Rate graphs deferred to C2."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted plates with coded molecule views.",
+    "transitionPlan": "Lens zoom from bottle to molecules; crossfade sealed to open bottle pair; campfire burning to ash crossfade; scene crossfades with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "c1 sparkling bottle sealed plate",
+      "teachingReason": "Sets a concrete puzzle before any terms",
+      "narrationCue": "stopped",
+      "motionPurpose": "Camera push builds curiosity on the still bottle",
+      "motionRole": "explain",
+      "onScreenChange": "Slow push in on the sealed bottle; heading writes on at \"stopped\"",
+      "motionTools": [
+        "CameraStage push",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Brief look at the still bottle"
+    },
+    {
+      "sceneId": "look-inside",
+      "visualDecision": "new",
+      "visualReference": "Explainer lens over the bottle surface with coded CO2 molecules",
+      "teachingReason": "Shows both processes happening at once",
+      "narrationCue": "escape / dissolve / exactly the same rate",
+      "motionPurpose": "Molecules cross the surface in both directions while counters match",
+      "motionRole": "explain",
+      "onScreenChange": "Lens zooms in; molecules arc up on \"escape\" and down on \"dissolve\"; two equal live counters",
+      "motionTools": [
+        "lens zoom",
+        "particle arcs",
+        "NumberTicker counters"
+      ],
+      "holdPurpose": "Counters hold equal for comparison"
+    },
+    {
+      "sceneId": "dynamic-name",
+      "visualDecision": "new",
+      "visualReference": "Two-towns traffic doodle and molecule view",
+      "teachingReason": "Gives the term after the cause and a precise analogy",
+      "narrationCue": "dynamic equilibrium / same size",
+      "motionPurpose": "Cars flow both ways at equal rate between unequal towns",
+      "motionRole": "explain",
+      "onScreenChange": "Term writes on with meanings; traffic doodle animates; aid writes on and is underlined",
+      "motionTools": [
+        "HandText write-on",
+        "path traffic dots",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the aid \"Equal rates, not equal amounts\" to read"
+    },
+    {
+      "sceneId": "static",
+      "visualDecision": "new",
+      "visualReference": "c1 campfire burning and ash pair",
+      "teachingReason": "Contrasts a finished irreversible reaction with dynamic exchange",
+      "narrationCue": "ash / zero / static equilibrium",
+      "motionPurpose": "Fire burns down to ash and both rate gauges drop to zero",
+      "motionRole": "explain",
+      "onScreenChange": "Crossfade burning to ash on \"ash\"; two gauges fall to 0 on \"zero\"; cross on \"slow\"",
+      "motionTools": [
+        "plate crossfade",
+        "gauge needles",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the ash with both gauges at zero"
+    },
+    {
+      "sceneId": "open-vs-closed",
+      "visualDecision": "adjust",
+      "visualReference": "c1 bottle sealed and open pair plus molecule lens",
+      "teachingReason": "Shows why an open system cannot reach equilibrium",
+      "narrationCue": "cap off / flat / closed system / open system",
+      "motionPurpose": "Returning molecules thin out while escaping ones leave the frame",
+      "motionRole": "explain",
+      "onScreenChange": "Bottle crossfades to open; escaping arcs leave frame; counters diverge; boundary line breaks",
+      "motionTools": [
+        "plate crossfade",
+        "particle arcs",
+        "NumberTicker counters",
+        "DrawPath boundary"
+      ],
+      "holdPurpose": "Hold diverging counters briefly"
+    },
+    {
+      "sceneId": "worked-classify",
+      "visualDecision": "new",
+      "visualReference": "Hand-drawn decision flowchart with iodine flask, ash and evaporating beaker plates",
+      "teachingReason": "Teacher models the three-question classification on site examples",
+      "narrationCue": "reversible / closed / staying constant / dynamic / static / neither",
+      "motionPurpose": "A pen traces each case through the flowchart to a stamped verdict",
+      "motionRole": "explain",
+      "onScreenChange": "Flowchart diamonds build on each question; each case gets a traced path and verdict stamp",
+      "motionTools": [
+        "DrawPath flowchart",
+        "pen trace",
+        "stamp pop"
+      ],
+      "holdPurpose": "Short settle after each verdict"
+    },
+    {
+      "sceneId": "worked-more",
+      "visualDecision": "adjust",
+      "visualReference": "Same flowchart with campfire ash and evaporating beaker plates",
+      "teachingReason": "Applies the ordered questions to a static case and a neither case",
+      "narrationCue": "static / neither",
+      "motionPurpose": "Ash traces straight to STATIC; beaker fails at Closed and lands on NEITHER",
+      "motionRole": "explain",
+      "onScreenChange": "First case shrinks to a chip; ash and beaker paths trace in turn with verdict stamps",
+      "motionTools": [
+        "pen trace",
+        "stamp pop",
+        "chip shrink"
+      ],
+      "holdPurpose": "Settle on both verdicts"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Salt jar, hot coffee and burned magnesium plates with small flowchart",
+      "teachingReason": "Unseen transfer decision with all conditions visible",
+      "narrationCue": "Pause",
+      "motionPurpose": "Countdown ring runs through the quiet hold",
+      "motionRole": "explain",
+      "onScreenChange": "Three numbered vignettes appear as named; countdown ring starts after narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same attempt board with flowchart",
+      "teachingReason": "Explains each verdict and names the still-looks-stopped trap",
+      "narrationCue": "dynamic / neither / static",
+      "motionPurpose": "Each vignette gets its flowchart trace and verdict; salt pile zoom shows ions leaving and rejoining",
+      "motionRole": "explain",
+      "onScreenChange": "Verdict stamps in turn; small zoom into the salt pile with ions exchanging",
+      "motionTools": [
+        "pen trace",
+        "stamp pop",
+        "lens zoom",
+        "particle arcs"
+      ],
+      "holdPurpose": "Settle on all three verdicts"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Decision rule with icons",
+      "teachingReason": "Gives a reusable decision rule and the key aid",
+      "narrationCue": "rule lines and next",
+      "motionPurpose": "Three rule lines write on with icons",
+      "motionRole": "explain",
+      "onScreenChange": "Rule lines write on in turn; aid repeated; next-lesson chip",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the rule to read"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Four notes appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex brief 03 fact check (science, syllabus, copy); findings applied by Claude",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c1-check.md",
+      "sha256": "509887a9cd3894e38a2a2196c7e0550e49de71ab0a78fe93fc734f05d57236cb"
+    }
+  },
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, revision 2 pass)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c1-learning-review.md",
+      "sha256": "55275409fa36fa5bbee6cc4a3a92bf5cdb8fbb5da895e3a7ac9ec1bc9e82473a"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

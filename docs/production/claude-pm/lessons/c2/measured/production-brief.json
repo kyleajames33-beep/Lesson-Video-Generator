@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c2/measured/lesson.json",
+    "lessonSha256": "f04fbd85fce939bb2ad8169bced612c53d546448981fdd1b854b32718f4381f5"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1: reversible reactions run both ways; dynamic equilibrium means equal non-zero rates in a closed system; equal rates do not mean equal amounts. Rate means how much changes per second, and more particles available means more events per second.",
+    "startsWith": "A sealed, steadily heated flask filled with only phosphorus pentachloride.",
+    "stopsAfter": "Explaining how forward and reverse rates change from a reactant-only start until they are equal and the concentrations stop changing, and reading both graph types.",
+    "nextLesson": "C3: what a flask already at equilibrium does when it is disturbed."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c02.md"
+  ],
+  "teaching": {
+    "task": "Explain how a reaction that starts with only reactant reaches equilibrium, and predict the pattern for a products-only start.",
+    "causalExplanation": "Each reactant molecule has the same chance of splitting each second, so fewer molecules means a falling forward rate; products cannot rejoin until they exist and meet more often as they build up, so the reverse rate rises; the concentration of each substance is the net result of the two rates, so equal rates give steady concentrations while both reactions keep running.",
+    "conversationalApproach": "One sealed phosphorus pentachloride flask followed stage by stage with made-up rate numbers, a colour clue, the C1 two-towns traffic picture, and a products-only start for the learner to predict.",
+    "openingDecision": "How does a flask that starts with only reactant end up as a mixture that never changes?",
+    "understandingCheck": "Predict the rates and concentrations for a flask that starts with only phosphorus trichloride and chlorine, and say whether the reactions are still going at equilibrium.",
+    "curriculumScope": "Describe how the rates of forward and reverse reactions change over time until equilibrium is reached, using collision-theory reasoning and concentration and rate graphs (CH12-12). K, Le Chatelier, catalysts and activation energy are deferred to later lessons."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, coded flask with 20 particles, rate bars and live graphs, with a painted flask pair for the colour evidence. Colour key: PCl5 navy, PCl3 violet, Cl2 green, forward blue, reverse amber, equal teal.",
+    "transitionPlan": "Stopper presses in and the camera pushes into the flask; the board slides from flask and table to the two-panel graph layout; the colourless flask plate crossfades to the pale yellow-green plate; the towns doodle replaces the flask; scene crossfades with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Painted hot sealed flask (or coded flask) with equation chip and stopwatch",
+      "teachingReason": "Poses the puzzle of a reactant-only start before any mechanism",
+      "narrationCue": "split / join / sealed",
+      "motionPurpose": "Equation arrows light in turn and the stopper seals the flask",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the stopper presses in on \"sealed\"; the equation chip writes on at \"split\" with the blue forward arrow lit and the amber reverse arrow lights at \"join\"; the stopwatch starts at 0",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath equation chip",
+        "CameraStage push"
+      ],
+      "holdPurpose": "Brief look at the sealed flask"
+    },
+    {
+      "sceneId": "start",
+      "visualDecision": "new",
+      "visualReference": "Coded flask with 20 navy particles, rate bars and first table row",
+      "teachingReason": "Establishes the starting stage: forward rate at its highest, reverse rate zero, with the cause for each",
+      "narrationCue": "concentration / forward / reverse / fifty / zero",
+      "motionPurpose": "Navy particles split while the forward bar grows and the reverse bar stays empty",
+      "motionRole": "explain",
+      "onScreenChange": "Camera zooms into 20 navy particles; the forward bar grows to 50 on \"fifty\" as some particles split into violet and green; the reverse bar stays empty with a pen ring on \"zero\"; the first table row writes in",
+      "motionTools": [
+        "lens zoom",
+        "particle split arcs",
+        "NumberTicker rate bars",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold the first table row and the empty reverse bar"
+    },
+    {
+      "sceneId": "forward-falls",
+      "visualDecision": "adjust",
+      "visualReference": "Same flask at stage 1 with the earlier row ghosted and the gap column added",
+      "teachingReason": "Shows why the forward rate falls and the reverse rate starts, and links the rates to the net change",
+      "narrationCue": "forty / started / meets / forward is still bigger than reverse / keeps falling",
+      "motionPurpose": "Forward bar shrinks to 40, a violet and a green particle join into navy as the reverse bar rises to 8, and the net arrow shortens",
+      "motionRole": "explain",
+      "onScreenChange": "Forward bar shrinks to 40 on \"forty\"; a violet and a green particle drift together and merge on \"meets\" while the reverse bar rises to 8; a pen bracket spans the bar difference on \"forward is still bigger\"; the gap column and the net arrow shrink from 50 to 32 on \"keeps falling\"",
+      "motionTools": [
+        "particle merge",
+        "NumberTicker rate bars",
+        "pen bracket",
+        "table column reveal"
+      ],
+      "holdPurpose": "Hold the two rows side by side"
+    },
+    {
+      "sceneId": "closing-in",
+      "visualDecision": "adjust",
+      "visualReference": "Same flask at stage 2 with only the last two table rows in full",
+      "teachingReason": "Shows the gap between the rates shrinking while the reactant still falls",
+      "narrationCue": "thirty-five / seventeen / gap",
+      "motionPurpose": "Rate bars close to 35 and 17 and the net arrow shrinks to 18",
+      "motionRole": "explain",
+      "onScreenChange": "Rate bars move to 35 and 17; a pen bracket spans the gap on \"gap\" and the net arrow shrinks to 18; the \"closer\" table row writes in while earlier rows ghost; splits become rarer and joins more frequent",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "pen bracket",
+        "particle events",
+        "table row reveal"
+      ],
+      "holdPurpose": "Hold the closer row"
+    },
+    {
+      "sceneId": "equal",
+      "visualDecision": "adjust",
+      "visualReference": "Same flask at equilibrium plus the painted colourless and pale yellow-green flask pair",
+      "teachingReason": "Shows equal rates giving steady concentrations while both reactions continue, with a visible colour clue",
+      "narrationCue": "equal / thirty / yellow-green",
+      "motionPurpose": "Rate bars lock together, the net arrow vanishes, and the flask plate crossfades to pale yellow-green and then stops darkening",
+      "motionRole": "explain",
+      "onScreenChange": "Bars lock at 30 with a teal \"equal\" bracket on \"equal\" and \"net change 0\" replaces the net arrow; the equilibrium row writes with a teal highlight; split and join events keep running with a \"still happening both ways\" tag; on \"yellow-green\" the colourless flask plate crossfades to the pale plate and a swatch strip fills then stops",
+      "motionTools": [
+        "bar lock",
+        "teal bracket",
+        "plate crossfade",
+        "swatch fill"
+      ],
+      "holdPurpose": "Hold the equal bars while the colour stops changing"
+    },
+    {
+      "sceneId": "graphs",
+      "visualDecision": "new",
+      "visualReference": "Two aligned coded graphs: concentration against time above and rate against time below",
+      "teachingReason": "Lets the learner read the whole journey in both graph types and corrects the reaction-stops idea",
+      "narrationCue": "falls / rises / level / not zero",
+      "motionPurpose": "Four curves draw live and the rate curves merge into one flat line at 30",
+      "motionRole": "explain",
+      "onScreenChange": "Board slides to two stacked graphs; the PCl5 curve draws on \"falls\" and the PCl3 and Cl2 curves rise together; forward and reverse rate curves draw on \"falls\" and \"rises\" and merge; a teal dashed line marks the equal point; a pen traces the flat line down to 30 and a crossed \"the reaction stops\" bubble appears",
+      "motionTools": [
+        "DrawPath curves",
+        "graph slide layout",
+        "dashed marker",
+        "Mark cross",
+        "pen trace"
+      ],
+      "holdPurpose": "Hold the finished graphs"
+    },
+    {
+      "sceneId": "towns-aid",
+      "visualDecision": "adjust",
+      "visualReference": "C1 two-towns traffic doodle, swap diagram and memory aid",
+      "teachingReason": "Gives a mental picture for rates meeting, and a memory aid that works for either start",
+      "narrationCue": "left / back / faster rate falls",
+      "motionPurpose": "Blue traffic thins while amber traffic builds until both lanes match, then the swap diagram flips and the aid writes on",
+      "motionRole": "explain",
+      "onScreenChange": "Cars all drive right at first; blue traffic thins on \"left\" as amber cars build on \"back\" until both lanes match; the swap diagram flips the faster and slower labels on \"the other way round\"; the aid writes on with falls, rises and level underlined",
+      "motionTools": [
+        "path traffic dots",
+        "swap diagram flip",
+        "HandText write-on",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the aid on screen to read"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded products-only flask with 20 violet and 20 green particles and three numbered questions",
+      "teachingReason": "Unseen transfer to a products-only start with all conditions visible",
+      "narrationCue": "Pause",
+      "motionPurpose": "Countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "Products-only flask and the three numbered questions appear as named; the equation chip stays for reference; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same flask run in reverse, taller rate axis, ghosted first run and small rate-time graph",
+      "teachingReason": "Explains the products-start answer, shows the same final mixture and names the likely wrong answers",
+      "narrationCue": "forward / rises / same mixture / falls / still going",
+      "motionPurpose": "Violet and green merge into navy at a high reverse rate, the counts settle on 12, 8 and 8, and the small graph draws the swapped curves",
+      "motionRole": "explain",
+      "onScreenChange": "Forward bar empty with a pen ring on \"forward\"; the navy count climbs from 0 on \"rises\" and settles on 12, 8 and 8 on \"same mixture\"; a small rate graph draws reverse falling and forward rising with the first run ghosted on \"falls\"; wrong-answer chips appear crossed as each is named",
+      "motionTools": [
+        "particle merge",
+        "NumberTicker counts",
+        "DrawPath rate graph",
+        "ScribbleCircle",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the matching flat level"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Five-step story with small rate-bar icons and a final flask",
+      "teachingReason": "Gives the reusable order of events for any how-does-it-reach-equilibrium question and hands off to disturbances",
+      "narrationCue": "start / falls / rises / equal / disturb",
+      "motionPurpose": "Five story steps write on one by one and the final flask shakes at \"disturb\"",
+      "motionRole": "explain",
+      "onScreenChange": "Five steps write on in turn with rate-bar icons; the steady-state flask shakes slightly on \"disturb\" and a next-lesson chip appears",
+      "motionTools": [
+        "HandText write-on",
+        "rate-bar icons",
+        "flask shake"
+      ],
+      "holdPurpose": "Hold the five steps to read"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes and the aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, revision 3 pass)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c2-learning-review.md",
+      "sha256": "a608a3371f992040e4210f4a6c00683168f81325f0ac6acf5d7683a173b9c93d"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex fact check (science, syllabus, copy); findings applied by Claude",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c2-check.md",
+      "sha256": "27f8332ddd4fe93132ee678b70a6b94c107c7df6b4a93286f86c4862ad741deb"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

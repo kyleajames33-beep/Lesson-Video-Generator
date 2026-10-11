@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B1-claude-2026-10-11-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b1/lesson.json",
+  "lessonSha256": "c6837638b84ec9847b5d4c49e809b49e69a9a9edcd83a3368ae36a6ea47737c4",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b1/lesson.production-brief.json",
+    "sha256": "882453d7a3cc66d624dcca878758483bbf075ac2754129f642f0a3000bee22f0"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Almost every banana shipped between countries for sale is the same variety, the Cavendish. And here's the strange part: every Cavendish plant is a clone. They're all grown from pieces of earlier plants, so they all carry essentially the same DNA. That's useful, because every banana comes out just the way growers want. But a fungal disease called TR4 is now spreading through banana plantations in more than twenty countries. Why would sharing the same DNA make that a serious problem?",
+      "hash": "635b4e84e88c",
+      "textSha256": "635b4e84e88c2a84f0a09cfb18fc790077a5893b7d17317434dfb9e72b7a657a",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/hook.635b4e84e88c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/hook.635b4e84e88c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/hook.635b4e84e88c.generation.json",
+      "plannedRequestSha256": "71402f714de68050be43ec56c4c9c35d0a20114103eaacd7ca32502a6259655a"
+    },
+    {
+      "id": "continuity",
+      "parentSceneId": "continuity",
+      "text": "Start with the big idea. Every individual plant or animal eventually dies. A species only continues if individuals reproduce, making offspring, and pass on their DNA, the inherited information that shapes how each offspring grows. And that's not quite enough. Those offspring also have to survive long enough to reproduce themselves. If that chain keeps going, generation after generation, the species continues.",
+      "hash": "41f02edac8bc",
+      "textSha256": "41f02edac8bc912d0ef2ee5bb78b24a6219dfce88351e9b02e0cf0136608142f",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/continuity.41f02edac8bc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/continuity.41f02edac8bc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/continuity.41f02edac8bc.generation.json",
+      "plannedRequestSha256": "2f6ef913215f7de442a1a6d70a09867eb1cd5044360a822a1e1272509562b69a"
+    },
+    {
+      "id": "asexual",
+      "parentSceneId": "asexual",
+      "text": "There are two ways to make offspring. The first is asexual reproduction. One parent makes offspring on its own, without any reproductive cells joining. A strawberry plant sends out a runner that grows into a new plant. A bacterium splits in two. A yeast cell grows a bud that breaks away. In each case the offspring gets a copy of the parent's DNA, so it's a clone. It's fast, it needs no partner, and a successful plant can fill a field quickly. Copying isn't perfect, though. Occasional copying errors, called mutations, mean even clones can differ a little.",
+      "hash": "c727b9624d0c",
+      "textSha256": "c727b9624d0cf7a74a673996fc70fdf28754d059d6bb50f4afe4d663c6cd89db",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/asexual.c727b9624d0c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/asexual.c727b9624d0c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/asexual.c727b9624d0c.generation.json",
+      "plannedRequestSha256": "ce72c24a89b877e314567a07cd9909e2fb154784a329c13382ba704fa80fde4b"
+    },
+    {
+      "id": "gametes",
+      "parentSceneId": "gametes",
+      "text": "The second way is sexual reproduction. Here, two reproductive cells called gametes, like a sperm cell and an egg cell, join together. To see why that matters, we need one more idea. Inside each cell, DNA is packed into structures called chromosomes. In humans and many other organisms, most body cells carry two sets of chromosomes. A gamete carries just one set. So when two gametes join, one set plus one set gives the new offspring a full two sets, usually one from each parent.",
+      "hash": "60816357ff43",
+      "textSha256": "60816357ff43e441fd85b70e491cb7d03492f33b26a9a44ca28185398fbf6470",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/gametes.60816357ff43.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/gametes.60816357ff43.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/gametes.60816357ff43.generation.json",
+      "plannedRequestSha256": "5c93a7e095d049181ca74a14428fe9e1577bda2f269276e5ab6a0f22b1726083"
+    },
+    {
+      "id": "variation",
+      "parentSceneId": "variation",
+      "text": "A gene is a section of DNA that carries the instructions for one characteristic, like the size of a strawberry. Genes come in different versions, called alleles: one version might give bigger fruit, another smaller fruit. Here's the key part. The gametes made by one parent aren't all identical. Each one carries a different mix of that parent's alleles. And which sperm meets which egg comes down to chance. So every seedling ends up with its own combination of alleles. That's why seedlings from the same two strawberry parents all look a bit different. Those differences between individuals are called variation. Each seedling isn't a blend of its parents, and it isn't a copy. It's a new mix. The cost is that sexual reproduction is slower, takes more energy, and usually needs a mate.",
+      "hash": "024cce35d1e5",
+      "textSha256": "024cce35d1e5209ed93995ba06abb21f64dc3dd507f3ededcf9f47aed153f90d",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/variation.024cce35d1e5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/variation.024cce35d1e5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/variation.024cce35d1e5.generation.json",
+      "plannedRequestSha256": "60d48937ffc9a3dcd594fa8ec6550edb24e36d291c660bc1b4dbcf3e9020bd16"
+    },
+    {
+      "id": "trade-off",
+      "parentSceneId": "trade-off",
+      "text": "So which is better? It depends on the conditions. When conditions are stable, copying a plant that already does well is a great strategy, because every copy does well too. But when conditions change, say a new disease arrives, it's a different story. Whether a plant can resist a disease depends partly on its alleles. In a group of clones, they all carry the same alleles, so either they all resist it, or none of them do. In a varied group, some plants may carry an allele that helps them survive, and those survivors keep the species going. That's the Cavendish problem. Every plant has the same DNA, so once TR4 can attack one, it can attack them all. Here's a way to remember it: asexual is fast and alike, sexual is slow and varied. Alike suits stable conditions. Varied helps when conditions change.",
+      "hash": "8540dbe5198b",
+      "textSha256": "8540dbe5198bb467620c00cdd365c5ca79ae33a8f4f4ba7902712ebec1147f53",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/trade-off.8540dbe5198b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/trade-off.8540dbe5198b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/trade-off.8540dbe5198b.generation.json",
+      "plannedRequestSha256": "51f9adb18423472b9a10e4d62a327808693181e7620b933654ba2b8577046b41"
+    },
+    {
+      "id": "worked-compare",
+      "parentSceneId": "worked-compare",
+      "text": "Here's how you'd turn this into a strong answer if a question asks you to compare sexual and asexual reproduction. A comparison needs both similarities and differences, organised by criteria. Start with variation: clones have almost the same DNA, while sexual offspring get new combinations of alleles. Then speed: copying builds a population quickly, joining gametes is slower. Then partners and energy: no mate is needed for asexual reproduction, while sexual reproduction usually needs one and costs more energy. And one similarity: both pass DNA to the next generation, and both can be changed by mutation. Then each row becomes a sentence, like this one. Asexual reproduction produces offspring with almost identical DNA, whereas sexual reproduction produces new combinations of alleles. Finish by linking to conditions: stable conditions favour asexual, changing conditions favour sexual.",
+      "hash": "d4be7d3b2bdf",
+      "textSha256": "d4be7d3b2bdf3fdbf5af6350e07c44cc9a82cdc83bf398436e9c7e72e4b11c84",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/worked-compare.d4be7d3b2bdf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/worked-compare.d4be7d3b2bdf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/worked-compare.d4be7d3b2bdf.generation.json",
+      "plannedRequestSha256": "532f0dcf3df688462d503ff3a07d55f3ebaf7bbb61f2a736e6d9617141c52e09"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. For each situation, decide whether asexual or sexual reproduction would better help the species continue, and explain why. One: bacteria living in a warm pond where the conditions have stayed the same for years. Two: a single plant that has reached an island with no others of its kind, and it can't fertilise itself. Three: a strawberry plant that can send out runners and also make seeds, in a field that's getting hotter and drier every year. Which method gives its offspring the better chance in the long run? Pause the video if you'd like more time.",
+      "hash": "7efcb6046fb5",
+      "textSha256": "7efcb6046fb50de67d2ace6fbfc75249d3740d4a03d0d49b08996865915f8987",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/attempt.7efcb6046fb5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/attempt.7efcb6046fb5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/attempt.7efcb6046fb5.generation.json",
+      "plannedRequestSha256": "26b5bf6b4b24e4ea6752a9a6d70a345b464558e75ea03cc98de8b3361372861c"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "In the stable pond, asexual reproduction works well. The bacteria already suit their pond, so fast copying builds the population and keeps that winning combination. If you chose sexual because variation sounds better, remember variation only helps when conditions change. On the island, asexual reproduction is the plant's only option. With no mate and no way to fertilise itself, it can only start a population by copying itself, for example by growing runners. And for the strawberry in the warming field, sexual reproduction gives the better long-term chance. Its seeds produce varied seedlings, so some may carry alleles that cope better with heat and drought. Runners would only make more copies of a plant that may struggle as conditions keep changing.",
+      "hash": "afbf1667897b",
+      "textSha256": "afbf1667897b522de5aa61580f5f7c7f255b7b52c48d428eb74c2803050a6af7",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/feedback.afbf1667897b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/feedback.afbf1667897b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/feedback.afbf1667897b.generation.json",
+      "plannedRequestSha256": "29df70bdad51a658c69e1b3d2a908000d32c06cd839dd68aa74f0767077b4456"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So, a species continues when DNA is passed on and offspring survive to reproduce. Asexual reproduction is fast and alike. Sexual reproduction is slow and varied. Which one helps more depends on whether conditions stay the same or change. Next, we'll see how different animals actually bring sperm and egg together.",
+      "hash": "c7126d29fcc0",
+      "textSha256": "c7126d29fcc0882e3f2636ab2d9edee0e1c30d98f7c323e496816fbf95f0146d",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/memory.c7126d29fcc0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/memory.c7126d29fcc0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/memory.c7126d29fcc0.generation.json",
+      "plannedRequestSha256": "bb6cd5d5596f4e1ca8271e47fb4994fcb3548185b4411b4eaebd6a45facf361f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B1-claude-2026-10-11-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

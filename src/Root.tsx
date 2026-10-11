@@ -5,6 +5,12 @@ import {ReferenceStyleGallery} from './ReferenceStyleGallery';
 import {HAND_DRAWN_CLIPS, HandDrawnClip, HandDrawnShowcase, showcaseDuration} from './dev/HandDrawnShowcase';
 import {lessons} from './data/lessonRegistry';
 import {getLessonDurationInFrames} from './lesson/timing';
+import {ExplainerVideo} from './explainer/ExplainerVideo';
+import {explainers} from './explainer/registry';
+import {totalFrames as explainerFrames} from './explainer/types';
+
+// One wrapper per explainer keeps function-valued config out of defaultProps.
+const explainerWrappers = explainers.map(config => ({config, Wrapped: () => <ExplainerVideo config={config} />}));
 
 const Hi = () => (
   <AbsoluteFill style={{background: '#f5f8ff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 32}}>
@@ -42,6 +48,17 @@ export const Root = () => {
           key={id}
           width={VIDEO_WIDTH}
           defaultProps={{lesson: data}}
+        />
+      ))}
+      {explainerWrappers.map(({config, Wrapped}) => (
+        <Composition
+          id={config.id}
+          component={Wrapped}
+          durationInFrames={explainerFrames(config)}
+          fps={30}
+          height={1080}
+          key={config.id}
+          width={1920}
         />
       ))}
     </>

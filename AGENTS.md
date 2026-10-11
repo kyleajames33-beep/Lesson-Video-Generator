@@ -25,6 +25,14 @@
 - Follow docs/visual-design-handbook.md and docs/animation-planning.md for
   scene selection and review. Motion must explain, direct attention or give
   useful context. Deliberate reading and thinking holds are valid.
+- A static slideshow is a failed video, even when the science and reading
+  load pass. Meet docs/production/motion-design-standard.md: build selected
+  lessons on src/LessonVideo.tsx and the shared animation kit (not one-off
+  src/prototypes components), show each narrated change on screen, point at
+  named parts, use meaningful transitions, show the countdown in thinking
+  pauses and keep one visual system. New briefs use schema 4; the checker
+  rejects pasted or prohibition-only motion plans and prototype renderers.
+  Judge motion only at playback speed, never from stills.
 - Before preparing a selected video, read the existing research in
   docs/research/hsc-video-production-standard-2026-10-02.md and its
   implementation plan, plus docs/production/teaching-templates.md. Apply

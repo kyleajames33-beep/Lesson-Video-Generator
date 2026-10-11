@@ -1,0 +1,98 @@
+[
+  {
+    "path": "public/assets/chemistry/c1-campfire-burning-v1.png",
+    "sha256": "f59c8bc89d1dc8e6aa80820e29a557da41e9053c08bb0d4b614606deff978255",
+    "prompt": "Use case: scientific-educational. Create one naturalistic fine ink and watercolour scientific illustration, a modern textbook plate matching the visible strawberry botanical references in precise contour lines, subtle painted texture and calm warm natural colour. Subject: a small campfire of crossed wooden logs within a low oval ring of irregular grey stones, side view, burning with yellow-orange flames and a little soft grey smoke. Isolated single centred subject group, no surroundings except the ring and compact earth within it. Landscape canvas 1800 x 1200 or larger, actual transparent PNG with a real alpha channel. Complete fire including smoke must fit inside minimum 12% empty transparent margin on every side. No ground shadow or haze outside the subject, no white halo. Stone ring centered on canvas, lower portion of image. Keep each stone clearly distinguishable because a later edit will preserve exactly this stone ring for burned-out ash. No text, labels, numbers, arrows, watermarks or frames anywhere.\nRetake: remove ALL ambient glow, grey/brown haze and cast shadow outside the stones. Smoke must be only one small thin wisp immediately over the flame, NOT a broad cloud. Make subject group smaller with minimum 14% genuinely empty alpha-zero margin at top and bottom as well as both sides. Keep detailed crossed logs and stone ring, no opaque backdrop.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and transparent canvas padding",
+    "retakes": 1,
+    "notes": "Final 1800 x 1250 PNG. Transparent padding at (132, 113) without resampling; pixels with alpha 5 or less cleared. Checkerboard inspection passed: crossed burning logs, stone ring, flames and one small smoke wisp; no text or halo. This image supplies the shared visible stones for the ash pair."
+  },
+  {
+    "path": "public/assets/chemistry/c1-campfire-ash-v1.png",
+    "sha256": "bde04d73e66b38f068d5b63c51b4daa648203f0e5be4a13a20ee3608ffde53f3",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET burning campfire, image 2 is only a supporting reference for cold ash. Edit image 1 without any resizing/reframing/cropping: copy every stone and its outlines/texture exactly unchanged at the same pixel coordinates. Mask for editing is ONLY the flames, smoke and logs, never stones. Replace flames/smoke with alpha-zero transparent background and replace logs inside ring with cold grey-white ash and three small charred stubs. No flame, no smoke, no embers, no reddish glow. Preserve full original stone ring EXACTLY, it must stay stationary when laid over image 1. Output same1536x1024. Do not redesign. Transparent PNG real alpha, naturalistic ink-watercolour scientific plate. No text/labels/numbers/arrows/watermarks/frames.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup, transparent padding and preservation of the original visible stones",
+    "retakes": 2,
+    "notes": "Final 1800 x 1250 PNG, same padding at (132, 113) as burning image. Generated cold ash interior and newly exposed rear stones; original foreground and side stone pixels restored with a mask, with a 2-pixel blend at its inner boundary. This keeps visible stone contours aligned. Pixels with alpha 5 or less cleared. Final checkerboard and native overlay inspected independently after fixing a right-edge mask seam. No remaining visible errors; cold grey-white ash and charred stubs, no flame or smoke."
+  },
+  {
+    "path": "public/assets/chemistry/c1-sealed-flask-iodine-v1.png",
+    "sha256": "e322a877e292c41c302a090d817cf272a350566ed7ff9781922eabfc0ec515b8",
+    "prompt": "Use case: precise-object-edit. Edit the reference textbook illustration of the sealed violet flask. Change only the iodine vapour inside the glass flask: replace the mottled dark cloudy swirls with a single uniform, even, steady transparent violet-purple wash filling the whole spherical flask and neck below the stopper. The colour must be evenly distributed throughout, with no clouds, no swirls, no patches, no dense dark areas, no bottom accumulation and no liquid surface or meniscus. Use a flat translucent violet wash with only extremely subtle uniform watercolour grain. Keep the glass highlights visible. Preserve exactly the existing round-bottom flask shape, fitted glass stopper, clamp, metal stand and base, their fine ink and watercolour rendering, framing, position and proportions. Real transparent alpha background, no glow or halo, no shadow outside the apparatus, no text or labels. Keep at least 10% transparent margin on every side and at least 1600 pixels on the long edge.",
+    "tool": "built-in image_gen.imagegen",
+    "retakes": 1,
+    "notes": "Retook cloudy vapour as a targeted edit of the first flask. Final violet wash is even, without dark swirls or a liquid surface. Apparatus preserved. Generated alpha preserved. Transparent padding added without resampling. Final 1600 by 1718 px with more than 8% transparent margin on all sides. Checkerboard composite inspected: no text, opaque background or halo."
+  },
+  {
+    "path": "public/assets/chemistry/c1-evaporating-beaker-v1.png",
+    "sha256": "c60800b7c9f8ab6bb14b21517a61e46a984fbce6a1ebff731f3d4d4cdde751f8",
+    "prompt": "Use case: scientific-educational. Create a transparent PNG textbook illustration, at least 1600 pixels on the long edge. Subject: one open clear glass laboratory beaker of water standing on a small simple warm wooden bench section. Water fills about half of the beaker. A subtle horizontal former waterline mark on the glass sits slightly above the current water surface, clearly showing the water level has dropped. Faint pale grey vapour wisps rise above the water, gentle evaporation without boiling or bubbles. Three-quarter front view. Naturalistic fine ink and watercolour scientific plate matching detailed strawberry botanical textbook illustrations: delicate precise sepia-grey outlines, translucent washes, subtle pigment texture and restrained warm natural colours. Centre the complete beaker and bench vignette with at least 10% fully transparent empty margin on every side. No text, labels, numbers, graduations, arrows, frame, watermark, background paper, opaque backdrop, drop shadow or halo. Real transparent alpha, clean soft edges.",
+    "tool": "built-in image_gen.imagegen",
+    "retakes": 0,
+    "notes": "Generated alpha preserved. Added transparent padding without resampling to meet at least 1600 px long edge and 8% margins. Checkerboard composite inspected: no text, opaque background or halo. Former waterline sits above current water surface; faint steam visible."
+  },
+  {
+    "path": "public/assets/chemistry/c1-salt-jar-crystals-v1.png",
+    "sha256": "f87e984f25f30078858d322219aea529868d204ca45f5e02fb9d413d0917944d",
+    "prompt": "Use case: scientific-educational. Create a transparent PNG textbook illustration, at least 1600 pixels on the long edge. Subject: one sealed clear glass jar containing clear salt water with a small pile of white undissolved salt crystals resting on its bottom. A plain fitted screw lid is tightly closed. Clear liquid fills roughly two thirds of the jar, leaving a visible air space above. The pile is visible through the water and glass; individual tiny angular white salt crystals show fine restrained grey contour detail. Calm and still, no bubbles. Three-quarter front view. Naturalistic fine ink and watercolour scientific illustration matching detailed strawberry botanical plates: delicate precise sepia-grey outlines, translucent muted washes, subtle pigment texture, warm natural colour. Centre the entire jar with at least 10% fully transparent empty margin on every side. No text, labels, numbers, arrows, frame, watermark, background paper, opaque backdrop, drop shadow or halo. Real transparent alpha and clean soft edges.",
+    "tool": "built-in image_gen.imagegen",
+    "retakes": 0,
+    "notes": "Generated alpha preserved. Added transparent padding without resampling to meet at least 1600 px long edge and 8% margins. Checkerboard composite inspected: no text, opaque background or halo. Lid closed, clear water and undissolved crystals visible."
+  },
+  {
+    "path": "public/assets/chemistry/c1-hot-coffee-v1.png",
+    "sha256": "f5cd5d2585f8f3996570fb7b5f2813741ab2be8b8acb0b56b0a989d827312319",
+    "prompt": "Use case: scientific-educational. Create a transparent PNG textbook illustration, at least 1600 pixels on the long edge. Subject: one simple warm ivory ceramic cup of hot black coffee on a matching saucer, with a few fine pale grey wisps of steam rising visibly above the coffee. The dark brown-black liquid surface is visible within the open cup. No milk, foam, decoration or spoon. Three-quarter front view. Naturalistic fine ink and watercolour scientific plate matching detailed strawberry botanical textbook illustrations: delicate precise sepia-grey ink outlines, layered translucent washes, subtle pigment texture and restrained warm natural colours. Centre the entire cup, saucer and steam, with at least 10% fully transparent empty margin on every side. No text, labels, numbers, arrows, frame, watermark, background paper, opaque backdrop, drop shadow or halo. Real transparent alpha and clean soft edges.",
+    "tool": "built-in image_gen.imagegen",
+    "retakes": 0,
+    "notes": "Generated alpha preserved. Added transparent padding without resampling to meet at least 1600 px long edge and 8% margins. Checkerboard composite inspected: no text, opaque background or halo. Black coffee and steam visible."
+  },
+  {
+    "path": "public/assets/chemistry/c1-burned-magnesium-v1.png",
+    "sha256": "11195c40cada9f4cf37b3789b830d02a3df414161ed35f4b07c446b6e318023a",
+    "prompt": "Use case: scientific-educational. Create a transparent PNG textbook illustration, at least 1600 pixels on the long edge. Subject: a small heap of fine white magnesium oxide powder from a completely burned magnesium strip, resting at the centre of a plain square ceramic heatproof laboratory mat. Simple metal laboratory tongs rest beside the powder on the mat. Show powder as soft fine chalky white grains with restrained grey detail, no remaining metallic ribbon. Three-quarter elevated front view so the powder and square mat are clearly visible. No flame, glow, smoke or steam. Naturalistic fine ink and watercolour scientific plate matching detailed strawberry botanical textbook illustrations: delicate precise sepia-grey outlines, layered translucent washes, subtle pigment texture and restrained warm natural colours. Centre the complete mat, powder and tongs with at least 10% fully transparent empty margin on every side. No text, labels, numbers, arrows, frame, watermark, background paper, opaque backdrop, drop shadow or halo. Real transparent alpha and clean soft edges.",
+    "tool": "built-in image_gen.imagegen",
+    "retakes": 0,
+    "notes": "Generated alpha preserved. Added transparent padding without resampling to meet at least 1600 px long edge and 8% margins. Checkerboard composite inspected: no text, opaque background or halo. White powder, heatproof mat and metal tongs visible; no flame."
+  },
+  {
+    "path": "public/assets/biology/b1-cavendish-bunch-v1.png",
+    "sha256": "74d876d8fe576eb0183e07de5708b8f9b017e7de27cdb629bf23d162a9363d2d",
+    "prompt": "Use case: scientific-educational. Create a transparent PNG textbook plate of one healthy hand of ripe yellow Cavendish bananas, joined naturally at one short crown, about seven gently curved bananas. Naturalistic fine warm ink outlines and precise translucent watercolour washes, detailed subtle botanical surface texture, calm warm natural colours, consistent with a traditional strawberry botanical textbook plate. Single centred isolated subject, three-quarter view, no plate or props. At least 1600 pixels on the long edge. Entire subject inside the central 80% of the canvas with at least 8% fully transparent empty margin on each side. Real alpha transparency, clean soft edges, no white halo, no background wash, no paper backdrop, no text, labels, numbers, arrows, watermark or frame.",
+    "tool": "built-in image_gen.imagegen; transparent_background=true",
+    "retakes": 0,
+    "notes": "Checked final checkerboard composite: real alpha, no text, no halo, subject matches brief. Transparent canvas padding only, no resampling or artwork changes. Long edge 1842 px. At least 8% transparent margins each side."
+  },
+  {
+    "path": "public/assets/biology/b1-banana-plantation-tr4-v1.png",
+    "sha256": "96ad57bc27b3c945ebc5b8a8480b65a4864b5c3ad9d375ca711ba0c35eac62f7",
+    "prompt": "Use case: scientific-educational. Transparent PNG botanical textbook plate: a compact isolated row of six Cavendish banana plants on a narrow brown plantation ground strip, wide side view. Four plants show Panama disease TR4 symptoms: yellow and brown older leaves collapse and hang down alongside the pseudostems, some wilted crowns; two plants still have healthy broad green upright leaves. Realistic banana anatomy, calm not gory. Naturalistic fine warm ink outlines, precise translucent watercolour washes and delicate detailed botanical texture, warm natural greens and ochres, matching strawberry botanical textbook plates. The entire row and ground form one centred isolated vignette, no horizon, sky or distant scenery. At least 1600 pixels long edge. Keep all artwork inside central 80% canvas with at least 8% fully transparent empty margin on every side. Real alpha transparency, clean edges, no white halo or background wash, no paper backdrop, no text, labels, arrows, numbers, watermark or frame.",
+    "tool": "built-in image_gen.imagegen; transparent_background=true",
+    "retakes": 0,
+    "notes": "Checked final checkerboard composite: real alpha, no text, no halo, subject matches brief. Transparent canvas padding only, no resampling or artwork changes. Long edge 2330 px. At least 8% transparent margins each side."
+  },
+  {
+    "path": "public/assets/biology/b1-stable-pond-v1.png",
+    "sha256": "903923a914af2e3bedcd2a9cf6281bd66b2cf85693df1deab7336d93b0073104",
+    "prompt": "Use case: scientific-educational. Transparent PNG textbook plate of a small calm sunlit pond with clear pale blue-green water, a few slender reeds along its bank, and a small natural grassy earthen rim. Peaceful stable conditions, no microbes visible. Compact isolated oval pond vignette viewed slightly from above, entire pond and bank visible, no horizon, sky, landscape backdrop or extra objects. Naturalistic fine warm ink outlines and precise translucent watercolour washes, delicate botanical detail, warm natural colour, matching traditional strawberry botanical textbook plates. Single centred subject group. At least 1600 pixels long edge; at least 8% fully transparent empty margin around every side, artwork within central 80% canvas. Genuine alpha transparency and clean edges, no white halo, background wash or paper texture outside the subject, no text, labels, numbers, arrows, watermark or frame.",
+    "tool": "built-in image_gen.imagegen; transparent_background=true",
+    "retakes": 0,
+    "notes": "Checked final checkerboard composite: real alpha, no text, no halo, subject matches brief. Transparent canvas padding only, no resampling or artwork changes. Long edge 1842 px. At least 8% transparent margins each side."
+  },
+  {
+    "path": "public/assets/biology/b1-lone-island-plant-v1.png",
+    "sha256": "a0f1e2d79ddb3bf4ed686fbcbc236d6160171a5127729889c5589e9c6c127aaf",
+    "prompt": "Use case: scientific-educational. Transparent PNG textbook plate of a tiny sandy island surrounded by a small oval patch of calm blue seawater, with exactly one young flowering plant growing from the sand. The plant is a small broadleaf herb with a few leaves and one modest pale flower, no other plants anywhere. Compact isolated centred vignette, slightly elevated side view, whole island and local water patch visible, no horizon or sky or scenery backdrop. Naturalistic fine warm ink outlines and precise translucent watercolour washes, delicate botanical detail, warm natural colour, matching traditional strawberry botanical textbook plates. At least 1600 pixels long edge, all artwork inside central 80% canvas and at least 8% fully transparent empty margin on every side. Genuine alpha transparency, clean soft edges with no white halo, no paper backdrop or background wash, no text, labels, arrows, numbers, watermark or frame.",
+    "tool": "built-in image_gen.imagegen; transparent_background=true",
+    "retakes": 0,
+    "notes": "Checked final checkerboard composite: real alpha, no text, no halo, subject matches brief. Transparent canvas padding only, no resampling or artwork changes. Long edge 1842 px. At least 8% transparent margins each side."
+  },
+  {
+    "path": "public/assets/biology/b1-diseased-crop-field-v1.png",
+    "sha256": "e12dd1f23ffbbd324d3b3a5747e3e721fdfa50fe881e6e5260a2ccdb8d71bbbf",
+    "prompt": "Use case: scientific-educational. Transparent PNG textbook plate of a small field of one leafy vegetable crop, cabbage, planted in neat short rows. A new leaf disease visibly affects patches of this same crop: two clusters of plants have mottled yellow leaves with distinct brown leaf spots and some drooping leaves, while nearby patches remain healthy green. Wide framing, slightly elevated side view, plants large enough for leaf symptoms to read. Calm realistic, no insects or fungi drawn separately, no symbols. The field is one compact isolated subject group on a shallow earthen ground strip, no horizon, sky or background scenery. Naturalistic fine warm ink outlines, precise translucent watercolour washes, delicate botanical textures and warm natural colours matching traditional strawberry botanical textbook plates. At least 1600 pixels long edge, central 80% artwork with at least 8% fully transparent margin every side. Real alpha transparency, clean edges, no white halo, background wash, paper backdrop, text, labels, numbers, arrows, watermark or frame.",
+    "tool": "built-in image_gen.imagegen; transparent_background=true",
+    "retakes": 0,
+    "notes": "Checked final checkerboard composite: real alpha, no text, no halo, subject matches brief. Transparent canvas padding only, no resampling or artwork changes. Long edge 1842 px. At least 8% transparent margins each side."
+  }
+]
