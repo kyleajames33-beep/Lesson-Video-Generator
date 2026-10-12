@@ -337,7 +337,7 @@ export const HeatTagIcon: React.FC<{dir: 'in' | 'out'; color?: string}> = ({dir,
 		<path d={dir === 'in' ? 'M-12,18 L0,26 L12,18' : 'M-12,-14 L0,-22 L12,-14'} fill="none" stroke={color} strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" />
 	</svg>
 );
-export const RxnChip: React.FC<{x: number; y: number; at: number; left: Piece[]; right: Piece[]; size?: number; fwdLit?: number; revLit?: number; fwdWordAt?: number; revWordAt?: number; fwdTag?: {text: string; at: number; color?: string; icon?: 'in' | 'out'}; revTag?: {text: string; at: number; color?: string; icon?: 'in' | 'out'}; border?: string; words?: boolean; capPad?: number}> = ({x, y, at, left, right, size = 46, fwdLit, revLit, fwdWordAt, revWordAt, fwdTag, revTag, border = TEAL, words = true, capPad = 0}) => {
+export const RxnChip: React.FC<{x: number; y: number; at: number; left: Piece[]; right: Piece[]; size?: number; fwdLit?: number; revLit?: number; fwdWordAt?: number; revWordAt?: number; fwdTag?: {text: string; at: number; out?: number; color?: string; icon?: 'in' | 'out'}; revTag?: {text: string; at: number; out?: number; color?: string; icon?: 'in' | 'out'}; border?: string; words?: boolean; capPad?: number}> = ({x, y, at, left, right, size = 46, fwdLit, revLit, fwdWordAt, revWordAt, fwdTag, revTag, border = TEAL, words = true, capPad = 0}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 14);
 	if (o <= 0.01) return null;
@@ -355,8 +355,8 @@ export const RxnChip: React.FC<{x: number; y: number; at: number; left: Piece[];
 					</svg>
 					{words && fwdWordAt !== undefined ? <div style={{position: 'absolute', left: 0, right: 0, top: -size * 0.66, textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: size * 0.7, color: FWD, opacity: prog(f, fwdWordAt, 12)}}>forward</div> : null}
 					{words && revWordAt !== undefined ? <div style={{position: 'absolute', left: 0, right: 0, top: size * 1.1, textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: size * 0.7, color: AMBER_INK, opacity: prog(f, revWordAt, 12)}}>reverse</div> : null}
-					{fwdTag ? <div style={{position: 'absolute', left: AW / 2, bottom: size * 1.15 + 20, transform: 'translateX(-50%)', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: fwdTag.color ?? HEAT, opacity: prog(f, fwdTag.at, 12)}}>{fwdTag.icon ? <HeatTagIcon dir={fwdTag.icon} color={fwdTag.color} /> : null}{fwdTag.text}</div> : null}
-					{revTag ? <div style={{position: 'absolute', left: AW / 2, top: size * 1.15 + 20 + capPad * 1.3, transform: 'translateX(-50%)', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: revTag.color ?? HEAT, opacity: prog(f, revTag.at, 12)}}>{revTag.icon ? <HeatTagIcon dir={revTag.icon} color={revTag.color} /> : null}{revTag.text}</div> : null}
+					{fwdTag ? <div style={{position: 'absolute', left: AW / 2, bottom: size * 1.15 + 20, transform: 'translateX(-50%)', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: fwdTag.color ?? HEAT, opacity: prog(f, fwdTag.at, 12) * (fwdTag.out === undefined ? 1 : 1 - prog(f, fwdTag.out, 10))}}>{fwdTag.icon ? <HeatTagIcon dir={fwdTag.icon} color={fwdTag.color} /> : null}{fwdTag.text}</div> : null}
+					{revTag ? <div style={{position: 'absolute', left: AW / 2, top: size * 1.15 + 20 + capPad * 1.3, transform: 'translateX(-50%)', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: revTag.color ?? HEAT, opacity: prog(f, revTag.at, 12) * (revTag.out === undefined ? 1 : 1 - prog(f, revTag.out, 10))}}>{revTag.icon ? <HeatTagIcon dir={revTag.icon} color={revTag.color} /> : null}{revTag.text}</div> : null}
 				</div>
 				<PieceRow pieces={right} size={size} />
 			</div>

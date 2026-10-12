@@ -1,0 +1,69 @@
+{
+  "brief": 19,
+  "date": "2026-10-13",
+  "status": "complete using the permitted coded fallbacks",
+  "provenancePathDecision": "Brief 19 names this file and takes precedence over the older wave1b-provenance.json paths in the lesson asset sections.",
+  "assets": [
+    {
+      "path": "public/assets/chemistry/c5-copper-ammonia-tube-v1.png",
+      "status": "skipped_optional",
+      "sha256": null,
+      "prompt": null,
+      "tool": null,
+      "retakes": 0,
+      "notes": "C5 explicitly permits a coded tube fallback. No image generated or image QA claimed. The two C5 findings change the K interpretation and attempt conditions, not this optional tube."
+    },
+    {
+      "path": "public/assets/chemistry/c6-no2-vessel-v1.png",
+      "status": "skipped_optional",
+      "sha256": null,
+      "prompt": null,
+      "tool": null,
+      "retakes": 0,
+      "notes": "C6 explicitly permits a coded vessel fallback. No image generated or image QA claimed."
+    },
+    {
+      "path": "public/assets/chemistry/c7-haber-converter-v1.png",
+      "status": "skipped_optional",
+      "sha256": null,
+      "prompt": null,
+      "tool": null,
+      "retakes": 0,
+      "notes": "C7 explicitly permits a coded converter fallback. No image generated or image QA claimed."
+    },
+    {
+      "path": "public/assets/chemistry/c8-pressure-vessel-v1.png",
+      "status": "skipped_optional",
+      "sha256": null,
+      "prompt": null,
+      "tool": null,
+      "retakes": 0,
+      "notes": "C8 explicitly permits a coded pressure-vessel fallback. No image generated or image QA claimed."
+    }
+  ],
+  "checks": [
+    {"lesson": "C5", "revision": 4, "report": "docs/production/claude-pm/checks/c5-check.md", "findings": 2},
+    {"lesson": "C6", "revision": 3, "report": "docs/production/claude-pm/checks/c6-check.md", "findings": 0},
+    {"lesson": "C7", "revision": 4, "report": "docs/production/claude-pm/checks/c7-check.md", "findings": 0},
+    {"lesson": "C8", "revision": 4, "report": "docs/production/claude-pm/checks/c8-check.md", "findings": 0}
+  ],
+  "ownerNotes": [
+    {
+      "lesson": "C5",
+      "notes": "The l09 site extract already exists and was read. Site-corrections.md confirms that K = 54 at 25 C for H2 + I2 is wrong; the familiar value belongs near 430 C. The 2NO + O2 constant near 10^12 is pressure-based, so it is not a concentration constant to reuse without conversion. Reversal and scaling go to C6; temperature dependence goes to C9. The invented A + B item replaces the older esterification item, which the extract still mentions."
+    },
+    {
+      "lesson": "C6",
+      "notes": "Site lesson 10's PCl3 + Cl2 forming PCl5 example gives K = 65.0 at 250 C; its reciprocal is 0.01538, unlike the C6 illustrative splitting value 0.05333. Site-corrections.md leaves the proposed literature splitting value near 0.04 unresolved pending an authoritative table. The HI extended-response data give 0.480^2/(0.360^2) = 1.7778 rather than 54.3, a confirmed site error. The dimensionless Keq convention is explicitly justified by activities on the site and is marked NOT AN ERROR in site-corrections.md; the unnormalised N2O4 concentration expression has formal units mol/L. No change to learner copy was made."
+    },
+    {
+      "lesson": "C7",
+      "notes": "The design asks Claude to revisit site lesson 07's claim of acceptable uncatalysed Haber rates at approximately 600 to 700 C. C7 does not repeat that numerical claim. Higher temperature reduces the equilibrium ammonia yield. This site claim is recorded for the owner, not treated here as a newly verified rate measurement."
+    },
+    {
+      "lesson": "C8",
+      "notes": "NIST ideal-gas thermochemical data at 673.15 K give Kc about 0.563 L^2 mol^-2 and Kp about 1.84 x 10^-4 atm^-2, supporting the stated near-0.5 magnitude. The design's approximate Kp = 1.6 x 10^-4 converts to Kc = 0.488. See c8-check.md for source links. The video avoids the site SO3 examples with K = 270 versus 280 and the CO methanation question with K = 5.67 x 10^6, already identified in site-corrections.md. Site lesson 12's HI worked example checks: 0.148^2/(0.020 x 0.020) = 54.76, rounded 54.8."
+    }
+  ],
+  "remaining": "Claude must resolve the two C5 science findings before recording. Screen appearance, listening and release approval were outside this check."
+}

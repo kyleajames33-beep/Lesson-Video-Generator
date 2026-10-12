@@ -102,7 +102,7 @@ export const SceneProblemCopy: React.FC = () => {
 	return (
 		<>
 			<Heading items={[[0, 'How does one cell copy itself?'], [c.copy, 'Step 1: copy the DNA']]} size={72} />
-			<Pill at={4} out={c.now} x={100} y={196} size={44}>Recall: asexual = one parent, a copy</Pill>
+			<Pill at={4} out={c.now + 70} x={100} y={196} size={44}>Recall: asexual = one parent, a copy</Pill>
 			<div style={{position: 'absolute', inset: 0, opacity: plateIn}}>
 				{split ? (
 					<Split cut={cutX} d={70 * slide} leftStyle={{filter: `grayscale(${grey}) opacity(${1 - 0.55 * grey})`}}>

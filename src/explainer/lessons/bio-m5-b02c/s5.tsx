@@ -282,8 +282,8 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 11. Key notes ----------
 const NOTES = [
-	'Binary fission: a cell copies its DNA, the copies move apart, and the cell splits into two. It is asexual, so the new cells are clones of the parent, apart from rare copying errors. Bacteria, amoebae and paramecia reproduce this way.',
-	"Budding: a new cell grows from the parent and breaks away. In baker's yeast the DNA is copied first and one copy moves into the bud. Baker's yeast usually reproduces this way, and so do a few protists such as Acineta.",
+	'Binary fission: a cell copies its DNA, the copies move apart, and the cell splits into two. It is asexual, so the new cells are clones of the parent, apart from rare copying errors. Bacteria, amoebae and paramecia do this.',
+	"Budding: a new cell grows from the parent and breaks away. In baker's yeast the DNA is copied first and one copy moves into the bud. Baker's yeast usually does this, as does Acineta.",
 	'Copy, share, split. The DNA must be copied before the cell splits, or one new cell would have none and no instructions.',
 	'Under good conditions some bacteria divide every 20 minutes. Starting from one cell, the number after n doublings is 2 to the power n. Running out of food, or a build-up of waste, slows or stops this.',
 	'Conjugation passes DNA from one existing bacterium to another. It changes cells that already exist, but makes no new cell, so it is not reproduction.',

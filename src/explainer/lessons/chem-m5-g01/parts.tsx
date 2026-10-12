@@ -224,7 +224,7 @@ export const AnswerBox: React.FC<{x: number; y: number; at: number; text: string
 );
 
 // ---------- calibration guide bar ----------
-export const GuideBar: React.FC<{x: number; y: number; w: number; at: number; s?: number; marker?: boolean; markerAt?: number; leftAt?: number; rightAt?: number; thumb?: boolean; splitR?: number; lab?: number; twoLine?: boolean}> = ({x, y, w, at, s = 1, marker = false, markerAt = 0, leftAt, rightAt, thumb = true, splitR = 0.74, lab, twoLine = false}) => {
+export const GuideBar: React.FC<{x: number; y: number; w: number; at: number; s?: number; marker?: boolean; markerAt?: number; leftAt?: number; rightAt?: number; thumb?: boolean; splitR?: number; lab?: number; twoLine?: boolean; out?: number}> = ({x, y, w, at, out, s = 1, marker = false, markerAt = 0, leftAt, rightAt, thumb = true, splitR = 0.74, lab, twoLine = false}) => {
 	const f = useCurrentFrame();
 	const LS = lab ?? 42 * s;
 	const lines = twoLine ? 2 : 1;
@@ -240,7 +240,7 @@ export const GuideBar: React.FC<{x: number; y: number; w: number; at: number; s?
 		</text>
 	);
 	return (
-		<div style={{position: 'absolute', left: x, top: y, width: w, height: H, opacity: prog(f, at, 12)}}>
+		<div style={{position: 'absolute', left: x, top: y, width: w, height: H, opacity: prog(f, at, 12) * (out === undefined ? 1 : 1 - prog(f, out, 12))}}>
 			<svg width={w} height={H} viewBox={`0 0 ${w} ${H}`} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
 				<rect x={0} y={bandY} width={split} height={bandH} rx={bandH / 2} fill="#cfe8dc" stroke={TEAL} strokeWidth={3} />
 				<rect x={split + 8 * s} y={bandY} width={w - split - 8 * s} height={bandH} rx={bandH / 2} fill="#f6e3b8" stroke="#b58a1d" strokeWidth={3} />

@@ -47,23 +47,25 @@ const potatoCopies = (i: number, at: number, y: number, spots = false) => (
 	</>
 );
 
+const BRUSH_TUBE: [number, number][] = [[506, 335], [504, 450], [503, 560], [503, 640], [520, 680], [542, 692]];
 const FlowerBrush: React.FC<{i: number; at: number; tubeAt: number; p: number; w?: number; y?: number}> = ({i, at, tubeAt, p, w = 215, y = 90}) => {
 	const f = useCurrentFrame();
 	const X = CX[i] + (CW - w) / 2;
-	const m = mapper(ART.flower, X, FY + y, w);
-	const tp = TUBE_BOX.map(([a, b]) => m(a, b));
-	const stig = m(470, 128);
+	const plate = HAVE.has(PAINTBRUSH);
+	const m = mapper(plate ? ART.brush : ART.flower, X, FY + y, w);
+	const tp = (plate ? BRUSH_TUBE : TUBE_BOX).map(([a, b]) => m(a, b));
+	const stig = plate ? m(506, 320) : m(470, 128);
 	const tip = prog(f, tubeAt, 50) * p;
 	return (
 		<>
-			<Art a={ART.flower} x={X} y={FY + y} w={w} style={{opacity: prog(f, at, 16)}} />
+			<Art a={plate ? ART.brush : ART.flower} x={X} y={FY + y} w={w} style={{opacity: prog(f, at, 16)}} />
 			<Overlay>
 				<g opacity={prog(f, tubeAt, 4) ? 1 : 0}>
 					<path d={pathOf(tp)} fill="none" stroke="#8a5a0c" strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - tip} />
 					<path d={pathOf(tp)} fill="none" stroke={GOLD} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - tip} />
 				</g>
-				<Specks pts={[[stig[0] - 8, stig[1] - 6], [stig[0] + 6, stig[1] - 10], [stig[0] + 14, stig[1] - 2]]} r={4} o={prog(f, at + 10, 10)} />
-				{HAVE.has(PAINTBRUSH) ? null : <Brush x={stig[0] + 6} y={stig[1] - 8} rot={75} s={0.45} o={prog(f, at + 6, 14)} />}
+				{plate ? null : <Specks pts={[[stig[0] - 8, stig[1] - 6], [stig[0] + 6, stig[1] - 10], [stig[0] + 14, stig[1] - 2]]} r={4} o={prog(f, at + 10, 10)} />}
+				{plate ? null : <Brush x={stig[0] + 6} y={stig[1] - 8} rot={75} s={0.45} o={prog(f, at + 6, 14)} />}
 			</Overlay>
 		</>
 	);
@@ -83,7 +85,7 @@ export const SceneAttempt: React.FC = () => {
 			<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Your turn: three situations" at={c.turn} size={76} cps={30} /></div>
 			<Frame i={0} at={c.one} /><Frame i={1} at={c.two} /><Frame i={2} at={c.three} />
 			<Art a={ART.bagged} x={CX[0] + (CW - bw) / 2} y={FY + 78} w={bw} style={{opacity: prog(useCurrentFrame(), c.c1, 16)}} />
-			<FlowerBrush i={1} at={c.c2} tubeAt={c.c2b} p={0.55} w={176} y={76} />
+			<FlowerBrush i={1} at={c.c2} tubeAt={c.c2b} p={0.55} w={226} y={70} />
 			{potatoCopies(2, c.c3, 76)}
 			<Art a={ART.seedlings} x={CX[2] + 50} y={FY + 188} w={250} style={{opacity: prog(useCurrentFrame(), c.c3b, 16)}} />
 			<Overlay>
@@ -160,7 +162,7 @@ export const SceneFeedback: React.FC = () => {
 				<Reason at={c.mesh} color={AMBER}>The bag stops the arrival: no pollen reaches the stigma.</Reason>
 				<Reason at={c.knock} color={INK_SOFT} size={26}>No fertilisation either: a knock-on effect.</Reason>
 			</RCol>
-			<FlowerBrush i={1} at={-20} tubeAt={-20} p={0.55} w={160} y={76} />
+			<FlowerBrush i={1} at={-20} tubeAt={-20} p={0.55} w={216} y={64} />
 			<MiniStrip i={1} y={290} at={c.v2} states={['lit', 'half', 'off', 'off']} crossAt={[null, null, null, null]} />
 			<Stamp i={1} at={c.v2} text="NOT YET" color="#c4432f" y={354} size={28} />
 			<RCol i={1} y={420}>
@@ -229,11 +231,12 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 13. Key notes ----------
 const NOTES = [
-	'Pollination is pollen moving from an anther to a stigma (by wind, water or animals). Fertilisation is a sperm cell joining an egg cell in an ovule to make a zygote. Pollination is not fertilisation.',
-	'The pollen grain grows a pollen tube down the style to an ovule. The tube carries the sperm cells to the egg.',
-	'The zygote develops into an embryo. The ovule becomes a seed (embryo, food store and coat). In many plants the ovary becomes a fruit.',
-	'Vegetative propagation (runners, bulbs, tubers, cuttings) is asexual: a piece of the parent grows into a new plant, so the offspring are usually clones.',
-	'Seeds come from sexual reproduction, so they vary and can travel. Clones are fast and alike, but share the same weaknesses.',
+	'Pollination: pollen reaches a stigma (by wind, water or animals). It is not fertilisation.',
+	'Fertilisation: a sperm cell joins an egg cell in an ovule to make a zygote.',
+	'The pollen tube grows down the style and carries the sperm cells to the egg.',
+	'The zygote becomes an embryo, the ovule becomes a seed, and in many plants the ovary becomes a fruit.',
+	'Vegetative propagation (runners, bulbs, tubers, cuttings) is asexual, so the offspring are usually clones.',
+	'Seeds vary and can travel. Clones are fast and alike, but share the same weaknesses.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>

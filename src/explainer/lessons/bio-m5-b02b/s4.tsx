@@ -130,7 +130,7 @@ export const SceneSeedsBetter: React.FC = () => {
 		when: 'So when is making', depends: 'depends on the conditions', paddock: 'steady paddock', runners: 'spread fast by runners', nocarrier: 'no carrier needed', disease: 'a new disease', clones: 'a field of clones',
 		fail: 'fail together', seeds: 'Seeds come from sexual', vary: 'the seedlings vary', survive: 'some may survive', far: 'Seeds can travel far', newp: 'reach new places', sum1: 'Runners are fast', sum2: 'Seeds make varied',
 	});
-	const RN = {x: 150, y: 300, w: 640};
+	const RN = {x: 190, y: 290, w: 560};
 	const CR = {x: 1070, y: 270, w: 620};
 	const SL = {x: 1100, y: 486, w: 560};
 	const arc = prog(f, c.newp, 40);
@@ -139,27 +139,28 @@ export const SceneSeedsBetter: React.FC = () => {
 	return (
 		<>
 			<Heading items={[[c.when, 'When are seeds the better route?']]} size={72} />
-			<Panel x={96} y={190} w={840} h={690} at={c.paddock - 10} title="Steady paddock" color={GREEN} />
-			<Panel x={984} y={190} w={840} h={690} at={c.disease - 10} title="New disease arrives" color={FEMALE} />
+			<Panel x={96} y={190} w={840} h={556} at={c.paddock - 10} title="Steady paddock" color={GREEN} />
+			<Panel x={984} y={190} w={840} h={556} at={c.disease - 10} title="New disease arrives" color={FEMALE} />
+			<Panel x={96} y={762} w={1728} h={190} at={c.far - 12} title="Need to reach new places" color={TEAL} />
 			<Art a={ART.runner} x={RN.x} y={RN.y} w={RN.w} style={{opacity: prog(f, c.runners, 18)}} />
 			<Art a={ART.cloneRow} x={CR.x} y={CR.y} w={CR.w} style={{opacity: prog(f, c.clones, 18)}} />
 			<Art a={ART.seedlings} x={SL.x} y={SL.y} w={SL.w} style={{opacity: prog(f, c.vary, 18)}} />
 			<Overlay>
-				<Fade at={c.runners}><Label x={RN.x + 320} y={rb + 60} at={c.runners} text="runners spread fast" size={50} color={GREEN} /></Fade>
-				<Fade at={c.nocarrier}><Label x={RN.x + 320} y={rb + 120} at={c.nocarrier} text="no carrier needed" size={46} color={INK_SOFT} /></Fade>
+				<Fade at={c.runners}><Label x={RN.x + 280} y={rb + 46} at={c.runners} text="runners spread fast" size={46} color={GREEN} /></Fade>
+				<Fade at={c.nocarrier}><Label x={RN.x + 280} y={rb + 92} at={c.nocarrier} text="no carrier needed" size={42} color={INK_SOFT} /></Fade>
 				<Mark x={800} y={250} at={c.nocarrier + 20} kind="tick" size={56} />
-				<Fade at={c.sum1}><Label x={RN.x + 320} y={rb + 190} at={c.sum1} text="alike and close" size={54} color={AMBER_INK} /></Fade>
+				<Fade at={c.sum1}><Label x={RN.x + 280} y={rb + 146} at={c.sum1} text="alike and close" size={50} color={AMBER_INK} /></Fade>
 				<Fade at={c.fail}><Label x={CR.x + 310} y={CR.y + artH(ART.cloneRow, CR.w) + 50} at={c.fail} text="same weakness, so they fail together" size={42} color="#c4432f" /></Fade>
 				{[1, 3].map((p, i) => <Scribble key={p} cx={SL.x + POTS[p] * SL.w} cy={SL.y + artH(ART.seedlings, SL.w) * 0.55} rx={40} ry={62} at={c.survive + i * 8} color={GREEN} seed={p + 2} width={6} />)}
 				<Fade at={c.survive}><Label x={SL.x + 280} y={sb + 44} at={c.survive} text="varied, so some survive" size={42} color={GREEN} /></Fade>
 				{/* seed travels over a fence to a bare patch */}
 				<g opacity={prog(f, c.far, 14)}>
-					<path d="M1330,860 L1330,806 M1370,860 L1370,806 M1410,860 L1410,806 M1316,822 L1424,822" stroke="#8a6a3c" strokeWidth={6} strokeLinecap="round" />
-					<rect x={1560} y={816} width={210} height={54} rx={14} fill="none" stroke={INK_SOFT} strokeWidth={4} strokeDasharray="4 12" />
-					<text x={1665} y={806} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={INK_SOFT}>new place</text>
-					<g transform={`translate(${1120 + 540 * arc},${850 - Math.sin(arc * Math.PI) * 120})`}><ellipse rx={13} ry={18} fill="#c9a86a" stroke="#6b4b1d" strokeWidth={3} /></g>
+					<path d="M1180,925 L1180,850 M1230,925 L1230,850 M1280,925 L1280,850 M1160,872 L1300,872" stroke="#8a6a3c" strokeWidth={8} strokeLinecap="round" />
+					<rect x={1480} y={860} width={250} height={66} rx={16} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeDasharray="5 14" />
+					<text x={1625} y={906} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={INK_SOFT}>new place</text>
+					<g transform={`translate(${760 + 730 * arc},${920 - Math.sin(arc * Math.PI) * 120})`}><ellipse rx={18} ry={25} fill="#c9a86a" stroke="#6b4b1d" strokeWidth={4} /></g>
 				</g>
-				<Fade at={c.sum2}><Label x={1760} y={248} at={c.sum2} text="varied and far" size={54} color={AMBER_INK} anchor="end" /></Fade>
+				<Fade at={c.sum2}><Label x={1780} y={814} at={c.sum2} text="varied and far" size={54} color={AMBER_INK} anchor="end" /></Fade>
 			</Overlay>
 			<Enter at={c.depends} style={{position: 'absolute', left: 1000, top: 100}}><Note size={40}>it depends on the conditions</Note></Enter>
 		</>
@@ -167,7 +168,7 @@ export const SceneSeedsBetter: React.FC = () => {
 };
 
 // ---------- 9. Worked outline ----------
-const KEYW = /(pollen tube|pollination|fertilisation|zygote|embryo|seed|fruit|sperm cell)/gi;
+const KEYW = /(pollen tube|pollination|fertilisation|zygote|embryo|seed|fruit|sperm cells?)/gi;
 const Sentence: React.FC<{lead: string; rest: string; k: SeqKind; at: number; y: number; h?: number}> = ({lead, rest, k, at, y, h = 118}) => {
 	const parts = rest.split(KEYW);
 	return (

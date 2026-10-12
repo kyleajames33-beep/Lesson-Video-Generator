@@ -35,8 +35,8 @@ export const ART: Record<string, ArtDef> = {
 	pod: {src: A.POD, nat: [1600, 1600], box: [325, 634, 951, 332]},
 	grain: {src: A.GRAIN, nat: [1600, 1600], box: [444, 260, 712, 1081]},
 	bagged: {src: A.BAGGED, nat: [1600, 1600], box: [321, 231, 958, 1139]},
-	// stand-in entries (file not delivered yet; box is a guess until the plate arrives)
-	brush: {src: A.PAINTBRUSH, nat: [1600, 1600], box: [200, 200, 1200, 1200]},
+	// brush plate delivered; tube overlay still a stand-in (tube is coded)
+	brush: {src: A.PAINTBRUSH, nat: [1683, 1600], box: [332, 251, 1136, 1081]},
 	tubeOverlay: {src: A.TUBE_OVERLAY, nat: [1600, 1600], box: [324, 205, 953, 1189]},
 	// reused B1 plates
 	runner: B1ART.runner, strawFlower: B1ART.flower, cloneRow: B1ART.cloneRow, seedlings: B1ART.seedlings,

@@ -63,7 +63,7 @@ export const SceneMeeting: React.FC = () => {
 				<div style={{position: 'absolute', inset: 0, opacity: plateIn}}><TractPair p={MP} /></div>
 				<Overlay>
 					<Callout from={m(190, 252)} to={m(30, 335)} at={c.ovary} text="ovary" color={INK} size={54} />
-					<Callout from={m(190, 20)} to={m(280, -20)} at={c.tube} text="oviduct" sub="tube to the uterus" color={INK} size={54} />
+					<Callout from={m(190, 20)} to={m(150, 88)} at={c.tube} text="oviduct" sub="tube to uterus" color={INK} size={54} />
 					<Callout from={m(640, 300)} to={m(790, 420)} at={c.uterus} text="uterus" sub="where the baby will grow" color={INK} size={54} />
 					{eggT > 0 ? <EggDot x={ex} y={ey} r={15} o={prog(f, c.rel, 8)} /> : null}
 					<Scribble cx={fp[0]} cy={fp[1]} rx={72} ry={64} at={c.fert} color={AMBER} seed={5} width={7} />
@@ -176,12 +176,12 @@ export const SceneZygote: React.FC = () => {
 					<circle cx={EGGC[0] - 14} cy={EGGC[1] - 8} r={20} fill="#6c3f92" opacity={0.7} />
 					<circle cx={EGGC[0] + 16} cy={EGGC[1] + 10} r={16} fill="#6c3f92" opacity={0.7} />
 				</g>
-				<Sperm x={headX} y={sy} s={0.9} phase={f / 5} tailO={spermVis * (1 - enter * 0.9)} o={spermVis} />
+				<Sperm x={headX} y={sy} s={0.9 - 0.34 * enter - 0.26 * prog(f, c.get + 50, 50)} phase={f / 5} tailO={1 - prog(f, c.nuc - 24, 22)} o={spermVis} />
 				<g opacity={nucOn * (1 - merged)}>
 					<circle cx={nucX} cy={sy} r={30} fill={SPERM_BLUE} stroke="#27466d" strokeWidth={5} />
 				</g>
 				<Dots pts={[[1130, sy - 10], [1190, sy - 60], [1240, sy - 30]]} at={c.brk} n={4} period={46} color={TEAL} r={7} end={c.get} />
-				<Callout from={[1290, 392]} to={[1010, 340]} at={c.outer} text="outer layer" color={INK} size={54} align="right" />
+				<Fade at={c.outer} out={c.set - 8}><Callout from={[1290, 392]} to={[1010, 340]} at={c.outer} text="outer layer" color={INK} size={54} align="right" /></Fade>
 				<Callout from={[EGGC[0] + 150, EGGC[1] + 120]} to={[1760, 800]} at={c.zyg} text="zygote" color={AMBER_INK} size={60} align="right" />
 			</Overlay>
 			{/* one set plus one set */}
@@ -192,12 +192,12 @@ export const SceneZygote: React.FC = () => {
 			</Enter>
 			<Overlay>
 				<g opacity={prog(f, c.set, 14)} transform="translate(0,0)">
-					<g transform="translate(700,372)">{bars(0, SPERM_BLUE)}</g>
-					<text x={790} y={388} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 64}} fill={INK} opacity={prog(f, c.plus, 10)}>+</text>
-					<g transform="translate(880,372)" opacity={prog(f, c.plus, 12)}>{bars(0, EGG_LINE)}</g>
-					<text x={970} y={388} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 64}} fill={INK} opacity={prog(f, c.full - 10, 10)}>=</text>
-					<g transform="translate(1050,372)" opacity={prog(f, c.full - 8, 12)}>{bars(-34, SPERM_BLUE)}{bars(34, EGG_LINE)}</g>
-					<text x={700} y={452} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={AMBER_INK} opacity={prog(f, c.full, 12)}>one set + one set = a full two sets</text>
+					<g transform="translate(680,372)">{bars(0, SPERM_BLUE)}</g>
+					<text x={760} y={388} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 64}} fill={INK} opacity={prog(f, c.plus, 10)}>+</text>
+					<g transform="translate(840,372)" opacity={prog(f, c.plus, 12)}>{bars(0, EGG_LINE)}</g>
+					<text x={930} y={388} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 64}} fill={INK} opacity={prog(f, c.full - 10, 10)}>=</text>
+					<g transform="translate(1070,372)" opacity={prog(f, c.full - 8, 12)}>{bars(-36, SPERM_BLUE)}{bars(36, EGG_LINE)}</g>
+					<text x={620} y={462} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={AMBER_INK} opacity={prog(f, c.full, 12)}>one set + one set = a full two sets</text>
 				</g>
 			</Overlay>
 			<Rail upTo={1} />

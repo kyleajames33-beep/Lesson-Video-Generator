@@ -28,7 +28,7 @@ export const BAGGED = B + 'b2b-bagged-flower-v1.png';
 export const PAINTBRUSH = B + 'b2b-paintbrush-pollination-v1.png';
 export const TUBE_OVERLAY = B + 'b2b-pollen-tube-overlay-v1.png';
 
-export const HAVE = new Set<string>([BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED]);
+export const HAVE = new Set<string>([BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED, PAINTBRUSH]);
 const ALL = [BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED, PAINTBRUSH, TUBE_OVERLAY];
 // Reused B1 plates (runner, strawberry flower, clone row, varied seedlings) are listed here too.
 const REUSE = [

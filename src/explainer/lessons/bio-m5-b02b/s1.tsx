@@ -33,14 +33,14 @@ export const SceneHook: React.FC = () => {
 	const specksO = prog(f, c.pollen, 6) * (1 - prog(f, c.q, 40));
 	return (
 		<>
-			<Heading items={[[c.two, 'One plant, two routes'], [c.how, 'How does a flower make a seed?']]} size={76} />
+			<Heading items={[[0, 'One strawberry plant'], [c.two, 'One plant, two routes'], [c.how, 'How does a flower make a seed?']]} size={76} />
 			<div style={{position: 'absolute', inset: 0, opacity: 1 - out, transform: `translateX(${-out * 220}px)`}}>
-				<Art a={ART.runner} x={RUN.x} y={RUN.y} w={RUN.w} style={{opacity: prog(f, c.two - 20, 24)}} />
+				<Art a={ART.runner} x={RUN.x} y={RUN.y} w={RUN.w} style={{opacity: 1}} />
 				<Overlay>
 					<DrawPath d={stemD} at={c.runner} dur={60} color={AMBER} width={14} />
-					<Label x={rm(400, 360)[0] - 20} y={rm(400, 360)[1] - 40} at={c.runner + 10} text="parent plant" size={48} color={INK_SOFT} />
-					<Label x={rm(1380, 320)[0]} y={rm(1380, 320)[1] - 30} at={c.newp} text="new plant" size={52} color={AMBER_INK} />
 				</Overlay>
+				<Chip x={330} y={180} at={4} text="parent plant" color={INK} size={44} />
+				<Chip x={1290} y={332} at={c.newp} text="new plant" color={INK} size={44} />
 			</div>
 			<div style={{opacity: flowerIn}}>
 				<Art a={ART.strawFlower} x={SF.x} y={SF.y} w={SF.w} />

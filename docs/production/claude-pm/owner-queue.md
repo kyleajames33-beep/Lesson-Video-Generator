@@ -1,5 +1,19 @@
 # Owner queue: Codex prompts to send
 
+## Send these now (13 Oct)
+
+Each is one line to paste into Codex, in this order.
+
+1. C4b and B3a part 2 fact checks, then artwork (both already voiced; C4b has no artwork yet):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/16-c4b-b3a2-check-and-assets.md.`
+2. Independent check and artwork for the four Chemistry lessons waiting to be voiced (C5, C6, C7, C8):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/19-chem-c5-c8-check-and-assets.md.`
+3. Independent check and artwork for the four Biology lessons waiting to be voiced (B3b, B4, B5a, B5b):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/20-bio-b3b-b5b-check-and-assets.md.`
+4. YouTube upload of C3 and B2c (both rendered 13 Oct, ready to send):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/18-youtube-upload-c3-b2c.md.`
+
+Already done by Codex: brief 11 (C2 and B2a uploaded), 13 (paintbrush plate), 14 (C3 and B2c checks and art), 15 (C4a and B3a checks and art), 17 (coverage ledger update).
 ## Update 13 Oct
 
 - C3 approved with one change, done: the practice question now says "Pause here to answer." and shows a 10 second countdown (only that scene re-recorded, 683 characters; C3 now 9:31). This is now the standing rule for every video.
@@ -54,13 +68,13 @@ Send these in order when you are back. Each is one line to paste into Codex. Cla
 - C3 preview built: http://127.0.0.1:8778/Explainer-chem-m5-c03-preview-v1/ (10:33, real Codex tube art; flagged slightly over 10 min, scene 4 is the first trim).
 - B2c preview built: http://127.0.0.1:8778/Explainer-bio-m5-b02c-preview-v1/ (real Codex art). If previews do not load, restart the server: `node scripts/serve-prototype-review.mjs`.
 - Note: Sonnet sub-agents hit a session limit overnight (reset 11pm); interrupted jobs were resumed.
-- Ready to voice, waiting for your OK (two learning reviews and a Claude science check each, nothing pending): C5 (about 8.8 min, about 6.3k chars), B3b agriculture (9.4 min), C6 ICE tables (9.4 min), B4 DNA (9.75 min), B5a mitosis (9.5 min), C8 reaction quotient (9.3 min), C7 industrial equilibrium (9.7 min). Roughly 45k characters together.
+- Ready to voice, waiting for your OK (two learning reviews and a Claude science check each, nothing pending): C5 (about 8.8 min, about 6.3k chars), B3b agriculture (9.4 min), C6 ICE tables (9.4 min), B4 DNA (9.75 min), B5a mitosis (9.5 min), C8 reaction quotient (9.3 min), C7 industrial equilibrium (9.7 min), B5b meiosis (7.7 min). Roughly 51k characters together. All now use "Pause here to answer." with a 10 s countdown, so runtimes drop by 1 to 2 minutes each.
 
 - Site corrections: 33 confirmed science errors across Module 5 site lessons, verified against sources and the raw HTML: docs/production/claude-pm/site-corrections.md (ranked). Applied 31 of 33 on a LOCAL branch fix/site-science-corrections-2026-10-12 (worktree C:/Users/kygs/hscscience-site-fixes, commit 5fdf278), site checks passed, NOT pushed. Two were extract artefacts, not site errors. Your decisions: read the rewritten sentences (C2, C14, C16, B2, B7 in site-fixes-applied.md), pick 208 or 895 for lesson 13's Keq, then push if happy.
 
 ## To watch (browser previews, nothing rendered)
 
-- G01, enthalpy and entropy (10:02): http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v1/
-- B2b, flowering plants (9:47): http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v1/ (paintbrush in the attempt is a coded stand-in until brief 13 delivers it)
+- G01, enthalpy and entropy (10:02), fixed after the voiced review: http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v2/
+- B2b, flowering plants (9:47), fixed after the voiced review, real paintbrush plate: http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 
 ## Done without you

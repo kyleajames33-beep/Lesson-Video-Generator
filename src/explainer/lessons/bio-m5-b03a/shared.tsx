@@ -310,7 +310,7 @@ export const OvulationMarker: React.FC<{at: number}> = ({at}) => {
 /** Stacked progesterone supply for the hand-over (local space 800 x 520). `p` reveals left to right. */
 const smooth = (t: number) => { const u = Math.max(0, Math.min(1, t)); return u * u * (3 - 2 * u); };
 const tot = (x: number) => 150 + 120 * smooth((x - 100) / 670);
-const clShare = (x: number) => 1 - smooth((x - 330) / 310);
+const clShare = (x: number) => 1 - smooth((x - 372) / 176);
 export const StackedSupply: React.FC<{p: number; labels?: boolean; fade?: number}> = ({p, labels = true, fade = 0}) => {
 	const xs = Array.from({length: 45}, (_, i) => 100 + (i / 44) * 670);
 	const lim = 100 + p * 670;
@@ -324,7 +324,7 @@ export const StackedSupply: React.FC<{p: number; labels?: boolean; fade?: number
 	return (
 		<g>
 			<path d={poly(mid, base)} fill="#f6c86a" stroke={YELLOW} strokeWidth={5} strokeLinejoin="round" opacity={0.95} />
-			<path d={poly(top, mid)} fill="#f0a830" fillOpacity={0.85} stroke={TEAL} strokeWidth={6} strokeLinejoin="round" />
+			<path d={poly(top, mid)} fill="#f0a830" fillOpacity={0.85} /><path d={`M${mid.map(q => q.join(',')).join(' L')}`} fill="none" stroke={TEAL} strokeWidth={6} strokeLinecap="round" />
 			<path d={`M${top.map(q => q.join(',')).join(' L')}`} fill="none" stroke={AMBER} strokeWidth={8} strokeLinecap="round" />
 			{labels ? null : null}
 		</g>

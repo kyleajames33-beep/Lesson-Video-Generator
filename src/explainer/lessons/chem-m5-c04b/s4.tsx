@@ -27,7 +27,7 @@ export const SceneCatEq: React.FC = () => {
 				<Ring cx={366} cy={372} rx={70} ry={50} at={KE.makes + 24} out={KE.makes + 80} color={METAL_DARK} seed={4} />
 				{/* two panels */}
 				<GraphAxes g={G1} at={KE.settled} xTicks={[]} xLabel="" yLabel="amount (units)" yTicks={[0, 5, 10, 15]} />
-				<GraphAxes g={G2} at={KE.fifth - 20} yLabel="rate (units per tick)" xTicks={[0, 2, 4, 6]} yTicks={[0, 1, 2]} />
+				<GraphAxes g={G2} at={KE.fifth - 20} yLabel="" xTicks={[0, 2, 4, 6]} yTicks={[0, 1, 2]} />
 				<Curve g={G1} fn={() => 14} upTo={clock} color="#3d424a" width={8} />
 				<Curve g={G1} fn={() => 2} upTo={clock} color="#9aa0a6" width={12} />
 				<Curve g={G1} fn={() => 2} upTo={clock} color={I2C} width={5} />
@@ -35,18 +35,19 @@ export const SceneCatEq: React.FC = () => {
 				<Curve g={G2} fn={rate} upTo={clock} color={AMBER} width={5} />
 				<Fade at={KE.steady}>
 					<SvgText x={G1.px(6) - 6} y={G1.py(14) - 14} text="HI 14" size={40} color={HI_INK} anchor="end" at={KE.steady} />
-					<SvgText x={G1.px(6) - 6} y={G1.py(2) - 18} text="H_2 and I_2 2" size={40} color={I2_INK} anchor="end" at={KE.steady} />
+					<SvgText x={G1.px(6) - 6} y={G1.py(2) - 18} text="H_2 and I_2: 2 each" size={40} color={I2_INK} anchor="end" at={KE.steady} />
 				</Fade>
 				<Fade at={KE.fifth}>
+					<SvgText x={G2.x + 22} y={G2.y + 34} text="rate (units per tick)" size={28} color={INK_SOFT} hand={false} weight={600} at={KE.fifth} />
 					<SvgText x={G2.px(0) + 14} y={G2.py(0.2) - 20} text="0.2" size={44} color={FWD} at={KE.fifth} />
 				</Fade>
 				<Fade at={KE.two}>
 					<SvgText x={G2.px(6) - 6} y={G2.py(2) - 18} text="2 and 2" size={44} color={FWD} anchor="end" at={KE.two} />
 				</Fade>
-				<Fade at={KE.stillEq}><SvgText x={G2.px(3.4)} y={G2.py(1.45)} text="still equal" size={52} color={TEAL} anchor="middle" at={KE.stillEq} /></Fade>
+				<Fade at={KE.stillEq}><SvgText x={G2.px(3.4)} y={G2.py(1.55)} text="still equal" size={52} color={TEAL} anchor="middle" at={KE.stillEq} /></Fade>
 				<path d={`M${G1.px(TC)},${G1.y} L${G1.px(TC)},${G2.y + G2.h}`} stroke={METAL_DARK} strokeWidth={4} strokeDasharray="10 8" opacity={prog(f, KE.makes, 10)} />
 				<SvgText x={G1.px(TC) + 10} y={G1.y + 40} text="catalyst added" size={38} color={METAL_DARK} at={KE.makes} />
-				<Fade at={KE.noChange}><Ring cx={G1.px(4)} cy={G1.py(8)} rx={170} ry={90} at={KE.noChange} color={TEAL} seed={5} /><SvgText x={G1.px(4)} y={G1.py(8) + 10} text="no change" size={56} color={TEAL} anchor="middle" at={KE.noChange + 6} /></Fade>
+				<Fade at={KE.noChange}><Ring cx={G1.px(4)} cy={G1.py(8.3)} rx={150} ry={64} at={KE.noChange} color={TEAL} seed={5} /><SvgText x={G1.px(4)} y={G1.py(8.3) + 10} text="no change" size={56} color={TEAL} anchor="middle" at={KE.noChange + 6} /></Fade>
 				{/* the two beats */}
 				<Fade at={KE.moment}>
 					<path d={`M${G2.px(TC) - 36},${G2.y - 40} L${G2.px(TC) - 36},${G2.y - 52} L${G2.px(TC) + 36},${G2.y - 52} L${G2.px(TC) + 36},${G2.y - 40}`} fill="none" stroke={INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
@@ -55,9 +56,9 @@ export const SceneCatEq: React.FC = () => {
 				<Fade at={KE.resp}>
 					<path d={`M${G2.px(2.4)},${G2.y - 40} L${G2.px(2.4)},${G2.y - 52} L${G2.px(5.9)},${G2.y - 52} L${G2.px(5.9)},${G2.y - 40}`} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
 					<SvgText x={G2.px(2.4)} y={G2.y - 66} text="the response: none" size={42} color={INK_SOFT} at={KE.resp} />
-					<Mark x={G2.px(4.1)} y={G2.y - 112} at={KE.resp + 10} kind="cross" size={34} />
+					<Mark x={G2.px(4.1)} y={G2.y - 52} at={KE.resp + 10} kind="cross" size={30} />
 				</Fade>
-				<Fade at={KE.ahead}><SvgText x={G2.px(2.4)} y={G2.y - 108} text="neither rate pulls ahead" size={34} color={INK} hand={false} weight={600} at={KE.ahead} /></Fade>
+				<Fade at={KE.ahead}><SvgText x={G2.px(3.4)} y={G2.py(0.95)} text="neither rate pulls ahead" size={34} anchor="middle" color={INK} hand={false} weight={600} at={KE.ahead} /></Fade>
 			</Overlay>
 			{/* left notes */}
 			<Enter at={KE.fifth} style={{position: 'absolute', left: 96, top: 520, width: 600}}>
@@ -108,7 +109,7 @@ export const SceneWhich: React.FC = () => {
 			<Overlay>
 				{/* row 1 */}
 				{row('Add a reacting substance', KW.adding, 262)}
-				<Dropper x={520} y={196} s={1.1} at={KW.adding} />
+				<Dropper x={650} y={290} s={1.1} at={KW.adding} />
 				<Bars2 x={700} base={400} before={[40, 40]} after={[110, 40]} atB={KW.adding} atA={KW.one} label="" labelAt={KW.adding} />
 				<Fade at={KW.one}><SvgText x={1090} y={316} text="one rate changes" size={46} color={INK_SOFT} at={KW.one} /></Fade>
 				{/* row 2 */}
@@ -124,7 +125,7 @@ export const SceneWhich: React.FC = () => {
 					<SvgText x={96} y={722} text="the climb that takes in heat" size={34} color={AMBER_INK} hand={false} weight={600} at={KW.takes + 6} />
 				</Fade>
 				<Ring cx={216} cy={564} rx={74} ry={34} at={KW.ridge} out={KW.sqEq} color={TEAL} seed={6} />
-				<SvgText x={216} y={528} text="higher ridge" size={40} color={TEAL} anchor="middle" at={KW.ridge} />
+				<SvgText x={310} y={548} text="higher ridge" size={40} color={TEAL} at={KW.ridge} />
 				<Fade at={KW.shifted}>
 					<Arrow x1={1560} y1={262} x2={1760} y2={262} at={KW.shifted} color={FWD} width={9} />
 					<SvgText x={1660} y={316} text="shifts" size={52} color={FWD} anchor="middle" at={KW.shifted + 6} />
@@ -136,7 +137,7 @@ export const SceneWhich: React.FC = () => {
 				<Bars2 x={560} base={960} before={[40, 40]} after={[160, 160]} atB={KW.sqEq} atA={KW.raised} label="squeeze: equal gas counts" labelAt={KW.sqEq} tag="x4" tagAt={KW.raised + 10} tagColor={INK} />
 				<Plunger x={500} y={880} s={0.8} at={KW.sqEq} down={1} />
 				<Bars2 x={1010} base={960} before={[15, 15]} after={[150, 150]} atB={KW.cat} atA={KW.rise} label="catalyst" labelAt={KW.cat} tag="x10" tagAt={KW.factor} tagColor={METAL_DARK} eqAt={KW.pulls} />
-				<Crumple x={950} y={886} s={66} opacity={prog(f, KW.cat, 12)} />
+				<Crumple x={1168} y={762} s={52} opacity={prog(f, KW.cat, 12)} />
 				<Fade at={KW.nothing}>
 					<path d="M1560,880 L1760,880" stroke={TEAL} strokeWidth={9} strokeLinecap="round" />
 					<SvgText x={1660} y={934} text="no shift" size={52} color={TEAL} anchor="middle" at={KW.nothing + 6} />

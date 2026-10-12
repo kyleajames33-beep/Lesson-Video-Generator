@@ -28,6 +28,7 @@ export const SceneFewer: React.FC = () => {
 			<RxnChip x={96} y={200} at={K1.why - 10} left={left1} right={right1} size={44} words={false} fwdLit={K1.fewer} revLit={-100} capPad={36} fwdTag={{text: 'squeeze: shift right', at: K1.squeeze, color: FWD}} />
 			<RxnChip x={96} y={520} at={K1.ammonia} left={left2} right={right2} size={44} words={false} fwdLit={K1.fwd} revLit={-100} capPad={36} fwdTag={{text: 'squeeze: shift right', at: K1.squeezing, color: FWD}} />
 			<Overlay>
+				<Pill x={96} y={716} w={600} text="in this simple model (one-step reactions)" at={K1.dep} color={INK_SOFT} size={30} h={50} />
 				<Fade at={K1.dep}><SvgText x={96} y={472} text="joining depends on more gas particles, so it gains more" size={32} color={FWD} at={K1.dep} hand={false} weight={600} /></Fade>
 				<Fade at={K1.count}><SvgText x={96} y={858} text="Count only the gases" size={54} color={TEAL} at={K1.count} /></Fade>
 				<Fade at={K1.moles}><SvgText x={96} y={918} text="moles of gas = the numbers in front of the gases" size={34} color={INK} at={K1.moles} hand={false} weight={600} /></Fade>
@@ -69,7 +70,7 @@ export const SceneEqual: React.FC = () => {
 			<Overlay>
 				<Pill x={1010} y={92} w={330} text="hot gases" at={K2.hot} color={INK_SOFT} size={40} h={58} />
 				<Fade at={K2.two}><SvgText x={96} y={450} text="gas particles: 2 against 2" size={44} color={TEAL} at={K2.two} /></Fade>
-				<Fade at={K2.h2}><SvgText x={150} y={700} text="I_2: purple" size={38} color={IODINE_INK} hand={false} weight={700} at={K2.h2} /><SvgText x={420} y={700} text="HI and H_2: colourless" size={38} color={HI_INK} hand={false} weight={700} at={K2.hi} /></Fade>
+				<Fade at={K2.h2}><SvgText x={150} y={730} text="I_2: purple" size={38} color={IODINE_INK} hand={false} weight={700} at={K2.h2} /><SvgText x={420} y={730} text="HI and H_2: colourless" size={38} color={HI_INK} hand={false} weight={700} at={K2.hi} /></Fade>
 				<Fade at={K2.darker}><SvgText x={96} y={790} text="darker, but no shift" size={54} color={IODINE_INK} at={K2.darker} /></Fade>
 				<Fade at={K2.meet}><SvgText x={700} y={420} text="both reactions need" size={36} color={INK} at={K2.meet} hand={false} weight={600} /><SvgText x={700} y={466} text="two particles to meet" size={36} color={INK} at={K2.meet + 6} hand={false} weight={600} /></Fade>
 				<Bars x0={BX} fwd={bar} rev={bar} at={K2.dbl} scale={BAR_SCALE} fwdLabel={f >= K2.four ? '× 4' : '24'} revLabel={f >= K2.four ? '× 4' : '24'} />

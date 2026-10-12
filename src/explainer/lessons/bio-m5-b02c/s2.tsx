@@ -13,7 +13,7 @@ const vis = (f: number, from: number, to?: number, d = 14) => prog(f, from, d) *
 export const SceneDoubling: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('doubling'), {
-		every: 'every 20 minutes', follow: 'Follow one cell', two: 'there are two', split2: 'Each of those splits', four: 'there are four', eight: 'then eight', sixteen: 'then sixteen', whole: 'whole crowd doubles',
+		warm: 'In warm conditions', every: 'every 20 minutes', follow: 'Follow one cell', two: 'there are two', split2: 'Each of those splits', four: 'there are four', eight: 'then eight', sixteen: 'then sixteen', whole: 'whole crowd doubles',
 		howmany: 'how many cells after 3 hours', h3: 'Three hours is', min180: ['180 minutes', 1], each: 'Each doubling takes', count: 'we count how many', steps: '20-minute steps', div: '180 divided by', nine: ['nine doublings', 1],
 		mult: 'multiplies the crowd', nines: 'nine 2s multiplied', power: '2 to the power 9', five: '512 cells', ten: 'Keep going for 10 hours', thirty: 'thirty doublings', billion: 'about a billion', food: 'only if the food',
 		acid: 'acid and other waste', slows: 'growth slows',
@@ -51,7 +51,7 @@ export const SceneDoubling: React.FC = () => {
 		<>
 			<Heading items={[[0, 'How fast can one cell become a crowd?']]} size={68} />
 			{/* the task, kept on screen */}
-			<Card x={96} y={176} w={1180} at={c.every} pad="14px 26px">
+			<Card x={96} y={176} w={1180} at={c.warm} pad="14px 26px">
 				<Body size={38} weight={700}>Start with <span style={{color: AMBER_INK}}>1 cell</span>. It divides every <span style={{color: AMBER_INK}}>20 min</span>.</Body>
 				<Enter at={c.howmany} dy={8}><Body size={38} weight={700} color={SPLIT}>How many cells after 3 hours?</Body></Enter>
 			</Card>
@@ -59,13 +59,13 @@ export const SceneDoubling: React.FC = () => {
 			{/* A. one cell becomes a crowd */}
 			<div style={{position: 'absolute', inset: 0, opacity: 1 - crowdOut, transform: `translateX(${crowdOut * 160}px) scale(${1 - 0.3 * crowdOut})`, transformOrigin: '800px 600px'}}>
 				<Overlay>
-					<Crowd cx={520} cy={650} stageAt={stageAt} r={42} sp={116} cols={4} o={prog(f, c.follow - 8, 14)} />
-					<Clock x={1130} y={480} r={96} deg={deg} o={prog(f, c.follow, 14)} />
-					<text x={1130} y={640} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56}} fill={INK_SOFT} opacity={prog(f, c.follow, 14)}>{secsPerStage[stageNow]}</text>
-					<g transform={`translate(1130,820) scale(${tickPop})`} opacity={prog(f, c.follow, 14)}>
+					<Crowd cx={520} cy={650} stageAt={stageAt} r={42} sp={116} cols={4} o={prog(f, c.warm + 20, 14)} />
+					<Clock x={1130} y={480} r={96} deg={deg} o={prog(f, c.warm + 20, 14)} />
+					<text x={1130} y={640} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56}} fill={INK_SOFT} opacity={prog(f, c.warm + 20, 14)}>{secsPerStage[stageNow]}</text>
+					<g transform={`translate(1130,820) scale(${tickPop})`} opacity={prog(f, c.warm + 20, 14)}>
 						<text textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 170}} fill={AMBER_INK}>{2 ** stageNow}</text>
 					</g>
-					<text x={1270} y={800} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56}} fill={INK_SOFT} opacity={prog(f, c.follow, 14)}>{stageNow === 0 ? 'cell' : 'cells'}</text>
+					<text x={1270} y={800} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56}} fill={INK_SOFT} opacity={prog(f, c.warm + 20, 14)}>{stageNow === 0 ? 'cell' : 'cells'}</text>
 				</Overlay>
 				<Pill at={c.whole} x={1380} y={430} size={52}>the whole crowd doubles</Pill>
 				<Pill at={c.whole + 14} x={1380} y={520} size={64} color={SPLIT}>x 2 each time</Pill>
@@ -128,7 +128,7 @@ export const SceneDoubling: React.FC = () => {
 					<span style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 130, color: AMBER_INK}}>= {bigN} cells</span>
 				</div>
 				<Overlay>
-					<DrawPath d={scribbleEllipse(780, 770, 410, 90, 9)} at={c.five + 16} dur={26} color={AMBER} width={8} />
+					<DrawPath d={scribbleEllipse(790, 790, 440, 78, 9)} at={c.five + 16} dur={26} color={AMBER} width={8} />
 				</Overlay>
 			</div>
 

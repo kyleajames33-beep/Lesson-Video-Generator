@@ -34,7 +34,7 @@ export const SceneAttempt: React.FC = () => {
 				<ChemSvgLite x={168} y={892} t="N_2O_4: colourless" at={KA.colourless} color={N2O4_INK} />
 				<circle cx={140} cy={938} r={12} fill={NO2C} stroke={INK} strokeWidth={3} opacity={prog(f, KA.brown, 12)} />
 				<ChemSvgLite x={168} y={950} t="NO_2: brown" at={KA.brown} color={NO2_INK} />
-				<Pill x={96} y={190} w={780} text="sealed, steady temperature, at equilibrium" at={KA.starts} color={TEAL} size={32} h={56} />
+				<Pill x={96} y={190} w={800} text="sealed, warm water, steady temperature, at equilibrium" at={KA.starts} color={TEAL} size={30} h={56} />
 				<Countdown start={hold.startFrame} end={hold.endFrame} x={1740} y={850} r={48} />
 			</Overlay>
 			<RxnChip x={900} y={120} at={KA.turn + 10} left={CHIP_L} right={CHIP_R} size={44} fwdLit={KA.turn + 10} revLit={KA.turn + 10} words={false} />

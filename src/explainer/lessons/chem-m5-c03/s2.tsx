@@ -180,8 +180,8 @@ export const SceneGraphs: React.FC = () => {
 				{/* never back to 10 */}
 				<Fade at={K6.fifteen + 40}>
 					<path d={`M${gx(T_ADD)},${cy(10)} L${gx(UMAX)},${cy(10)}`} stroke={RED_INK} strokeWidth={3} strokeDasharray="12 9" />
-					<Mark x={gx(6.95)} y={cy(10) + 2} at={K6.fifteen + 52} kind="cross" size={26} />
-					<SvgText x={gx(UMAX) - 6} y={cy(10) + 10} text="back to 10?" size={30} color={RED_INK} anchor="end" at={K6.fifteen + 46} />
+					<Mark x={gx(6.45)} y={cy(10) + 2} at={K6.fifteen + 52} kind="cross" size={26} />
+					<SvgText x={gx(UMAX) - 6} y={cy(10) + 22} text="not back to 10" size={26} color={RED_INK} anchor="end" at={K6.fifteen + 46} />
 				</Fade>
 				{/* rates */}
 				<DrawPath d={`M${gx(T_ADD)},${ry(30)} L${gx(T_ADD)},${ry(51)}`} at={K6.steps} dur={12} color={FWD} width={11} />

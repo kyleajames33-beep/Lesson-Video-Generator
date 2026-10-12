@@ -19,7 +19,7 @@ export const SceneImplantation: React.FC = () => {
 	const A = 1 - prog(f, c.notfert - 6, 16);
 	// phase B and C: tract inset with pins, then thin lining and a bounce
 	const bIn = prog(f, c.notfert, 20);
-	const grow = prog(f, c.ready - 30, 40);
+	const grow = prog(f, c.ready - 4, 40);
 	const p: TP = {x: interpolate(grow, [0, 1], [96, 510]), y: interpolate(grow, [0, 1], [300, 250]), w: interpolate(grow, [0, 1], [540, 900])};
 	const m = tt(p);
 	const pin1 = m(40, 88), pin2 = m(450, 205);
@@ -39,12 +39,12 @@ export const SceneImplantation: React.FC = () => {
 	const swap = vis(f, c.plac - 6);
 	return (
 		<>
-			<Heading items={[[0, 'The blastocyst reaches the lining'], [c.impl, 'Implantation'], [c.notfert, 'Not the same as fertilisation'], [c.ready, 'If the lining is not ready']]} size={72} />
+			<Heading items={[[0, 'The blastocyst reaches the lining'], [c.notfert, 'Not the same as fertilisation'], [c.ready, 'If the lining is not ready']]} size={72} />
 			<div style={{position: 'absolute', inset: 0, opacity: A}}>
 				<PSeq arts={[PL.im1, PL.im2, PL.im3]} x={IPL.x} y={IPL.y} w={IPL.w} at={[c.grow + 20, c.closes + 6]} dur={26} />
 				<Overlay>
-					<Callout from={im(330, 70)} to={im(30, 35)} at={c.attach + 6} text="blastocyst" color={INK} size={54} />
-					<Callout from={im(150, 200)} to={im(20, 140)} at={c.attach + 16} text="lining" color={INK} size={54} />
+					<Fade at={c.attach + 6} out={c.grow + 30}><Callout from={im(330, 70)} to={im(30, 35)} at={c.attach + 6} text="blastocyst" color={INK} size={54} /></Fade>
+					<Fade at={c.attach + 16} out={c.grow + 30}><Callout from={im(150, 200)} to={im(20, 140)} at={c.attach + 16} text="lining" color={INK} size={54} /></Fade>
 					{[345, 395, 445].map((tx, i) => <Fade key={tx} at={c.grow + i * 4} out={c.closes}><Arrow x1={im(tx, 176)[0]} y1={im(tx, 176)[1]} x2={im(tx, 224)[0]} y2={im(tx, 224)[1]} at={c.grow + i * 4} color={TEAL} width={9} dur={18} head={18} /></Fade>)}
 					{/* food and oxygen come from the lining around the embryo */}
 					{food.map((pts, i) => <Dots key={i} pts={pts} at={c.food + i * 10} n={3} period={56} color={i % 2 ? O2 : AMBER} r={9} end={c.plac} />)}
@@ -148,7 +148,7 @@ export const SceneHcg: React.FC = () => {
 				<svg width={420} height={120}><TestStick x={0} y={0} w={400} line={1} /></svg>
 			</Enter>
 			<Hand at={c.test} x={96} y={778} size={50} w={560}>this is what a test detects</Hand>
-			<Overlay><Arrow x1={300} y1={640} x2={250} y2={520} at={c.test + 10} color={TEAL} width={7} dur={18} head={18} /></Overlay>
+			<Overlay><Arrow x1={300} y1={640} x2={262} y2={588} at={c.test + 10} color={TEAL} width={7} dur={18} head={18} /></Overlay>
 			<Rail upTo={4} newAt={c.sends} />
 		</>
 	);

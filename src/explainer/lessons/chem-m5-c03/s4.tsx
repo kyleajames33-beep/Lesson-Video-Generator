@@ -51,7 +51,7 @@ export const SceneTempResponse: React.FC = () => {
 					<Fade at={K.straight} out={K.faster}><SvgText x={620} y={640} text="no concentration changes" size={34} color={TEAL} at={K.straight} /></Fade>
 					<StageTable rows={rows} at={K.were - 12} gapAt={K.were + 14} />
 				</Overlay>
-				<RxnChip x={900} y={84} at={K.faster - 20} left={COB_L} right={COB_R} size={32} fwdLit={K.faster} revLit={K.revWins} words={false} fwdTag={{text: 'shift right', at: K.shifted, color: FWD}} revTag={{text: 'shift left', at: K.revWins, color: AMBER_INK}} />
+				<RxnChip x={900} y={84} at={K.faster - 20} left={COB_L} right={COB_R} size={32} fwdLit={K.faster} revLit={K.revWins} words={false} fwdTag={{text: 'shift right', at: K.shifted, out: K.cool - 10, color: FWD}} revTag={{text: 'shift left', at: K.revWins, color: AMBER_INK}} />
 			</div>
 			<div style={{opacity: tri, position: 'absolute', left: 0, top: 0, width: 1920, height: 1080}}>
 				{tri > 0 ? [[312, 0, 'cold (ice)', 'pink'], [832, 1, 'room temperature', 'purple'], [1352, 2, 'hot water', 'blue']].map(([x, sv, a, b]) => (

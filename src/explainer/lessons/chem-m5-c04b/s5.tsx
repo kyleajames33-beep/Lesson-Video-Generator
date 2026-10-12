@@ -108,7 +108,7 @@ export const SceneFeedback1: React.FC = () => {
 				<GraphAxes g={GF} at={4} xTicks={[]} yTicks={[]} yLabel="amount of ammonia (made-up)" />
 				<Curve g={GF} fn={t => modelA(t).hi} upTo={clock} color={INK_SOFT} width={5} />
 				<Curve g={GF} fn={t => modelB(t).hi} upTo={clock} color={METAL_DARK} width={11} />
-				<SvgText x={GF.px(2.2)} y={GF.py(14) - 18} text="B (iron)" size={46} color={METAL_DARK} at={KF1.bFirst} />
+				<SvgText x={GF.px(5)} y={GF.py(14) - 30} text="B (iron)" size={46} color={METAL_DARK} at={KF1.bFirst} />
 				<SvgText x={GF.px(9)} y={GF.py(13.4) + 70} text="A (no catalyst)" size={46} color={INK_SOFT} at={KF1.bFirst + 8} />
 				<VLine g={GF} t={3} at={KF1.stop} label="stop early" color={INK} dy={-14} size={40} out={KF1.settled} />
 				<Fade at={KF1.bMore} out={KF1.settled}><SvgText x={GF.px(3) + 24} y={GF.py(7)} text="B is ahead" size={50} color={METAL_DARK} at={KF1.bMore} /></Fade>
@@ -123,19 +123,19 @@ export const SceneFeedback1: React.FC = () => {
 				<ProfileCurve g={g} peak={g.yP} at={KF1.lower + 20} dur={40} color={METAL_DARK} dash="18 12" width={8} />
 				<path d={`M${g.x0},${g.yL} L${g.x0 + 0.13 * g.w},${g.yL} M${g.x0 + 0.87 * g.w},${g.yR} L${g.x0 + g.w},${g.yR}`} stroke={INK} strokeWidth={9} strokeLinecap="round" opacity={prog(f, KF1.lower, 12)} />
 				<SvgText x={xm} y={g.yT - 20} text="A: high ridge" size={42} color={INK} anchor="middle" at={KF1.lower} />
-				<SvgText x={xm} y={g.yP + 56} text="B: lower pass (iron)" size={42} color={METAL_DARK} anchor="middle" at={KF1.lower + 24} />
+				<SvgText x={xm} y={g.yP + 90} text="B: lower pass" size={42} color={METAL_DARK} anchor="middle" at={KF1.lower + 24} />
 				<Bracket x={g.x0 + 0.09 * g.w} y1={g.yL} y2={topY} color={FWD} at={KF1.both} side="right" />
 				<Bracket x={g.x0 + 0.91 * g.w} y1={g.yR} y2={topY} color={AMBER_INK} at={KF1.both + 8} side="left" />
 				<Fade at={KF1.both}>
-					<SvgText x={g.x0 + 0.09 * g.w + 20} y={(g.yL + g.yT) / 2 + 12} text="forward" size={40} color={FWD} at={KF1.both} />
-					<SvgText x={g.x0 + 0.91 * g.w - 20} y={(g.yR + g.yT) / 2 + 12} text="back" size={40} color={AMBER_INK} anchor="end" at={KF1.both + 8} />
+					<SvgText x={g.x0 + 0.075 * g.w} y={g.yL + 56} text="forward" size={40} color={FWD} anchor="middle" at={KF1.both} />
+					<SvgText x={g.x0 + 0.935 * g.w} y={g.yR + 56} text="back" size={40} color={AMBER_INK} anchor="middle" at={KF1.both + 8} />
 				</Fade>
 				<Fade at={KF1.factor}><SvgText x={g.x0 + g.w / 2} y={g.y0 + g.h + 100} text="both rates rise by the same factor" size={48} color={TEAL} anchor="middle" at={KF1.factor} /></Fade>
 				<Fade at={KF1.mix} out={KF1.ends}><SvgText x={450} y={760} text="a catalyst changes the speed, not the destination" size={60} color={INK} anchor="middle" at={KF1.mix} /></Fade>
-				<WrongChip at={KF1.ends} out={KF1.rem2} x={190} y={720} chip="B ends with more ammonia" fix="" w={640} />
-				<Fade at={KF1.rem1}><SvgText x={190} y={850} text="same destination, reached sooner" size={50} color={TEAL} at={KF1.rem1} /></Fade>
-				<WrongChip at={KF1.early} out={9999} x={190} y={720} chip="the same early on" fix="" w={640} />
-				<Fade at={KF1.rem2}><SvgText x={190} y={850} text="B's rates are larger, so B is ahead early" size={50} color={TEAL} at={KF1.rem2} /></Fade>
+				<WrongChip at={KF1.ends} out={KF1.rem2} x={190} y={780} chip="B ends with more ammonia" fix="" w={640} />
+				<Fade at={KF1.rem1} out={KF1.early}><SvgText x={190} y={900} text="same destination, reached sooner" size={50} color={TEAL} at={KF1.rem1} /></Fade>
+				<WrongChip at={KF1.early} out={9999} x={190} y={780} chip="the same early on" fix="" w={640} />
+				<Fade at={KF1.rem2}><SvgText x={190} y={900} text="B's rates are larger, so B is ahead early" size={50} color={TEAL} at={KF1.rem2} /></Fade>
 			</Overlay>
 		</>
 	);
@@ -163,22 +163,22 @@ export const SceneFeedback2: React.FC = () => {
 				</Fade>
 				<Fade at={K9.amount}>
 					<SvgText x={205} y={654} text="ammonia: steady" size={42} color={TEAL} anchor="middle" at={K9.amount} />
-					<Ring cx={205} cy={415} rx={125} ry={160} at={K9.amount} color={TEAL} seed={3} />
+					<Ring cx={205} cy={415} rx={112} ry={150} at={K9.amount} color={TEAL} seed={3} />
 				</Fade>
-				<RateBars x0={420} base={740} scale={100} fwd={step} rev={step} at={4} unlabelled ghost={f >= K9.raises + 20 ? {fwd: 0.2, rev: 0.2} : undefined} eqAt={K9.wereEq} axisLabel="rate (units per tick)" />
-				<Fade at={K9.factor}><SvgText x={540} y={320} text="both rise by the same factor" size={44} color={INK} anchor="middle" at={K9.factor} /></Fade>
-				<Fade at={K9.stay}><SvgText x={540} y={266} text="still equal" size={50} color={TEAL} anchor="middle" at={K9.stay} /></Fade>
+				<RateBars x0={420} base={640} scale={100} fwd={step} rev={step} at={4} unlabelled ghost={f >= K9.raises + 20 ? {fwd: 0.2, rev: 0.2} : undefined} eqAt={K9.wereEq} axisLabel="rate (units per tick)" />
+				<Fade at={K9.factor}><SvgText x={430} y={300} text="both rise by the same factor" size={44} color={INK} at={K9.factor} /></Fade>
+				<Fade at={K9.stay}><SvgText x={430} y={246} text="still equal" size={50} color={TEAL} at={K9.stay} /></Fade>
 				{/* one lowered pass serves both trips */}
 				<ProfileAxes g={g} at={K9.back - 40} />
 				<ProfileCurve g={g} peak={g.yP} at={K9.back - 40} dur={30} color={METAL_DARK} width={8} />
 				<path d={`M${g.x0},${g.yL} L${g.x0 + 0.13 * g.w},${g.yL} M${g.x0 + 0.87 * g.w},${g.yR} L${g.x0 + g.w},${g.yR}`} stroke={INK} strokeWidth={9} strokeLinecap="round" opacity={prog(f, K9.back - 40, 12)} />
-				<Arrow x1={g.x0 + 0.2 * g.w} y1={g.yL - 90} x2={g.x0 + 0.78 * g.w} y2={g.yP - 70} at={K9.back - 10} color={FWD} width={7} />
-				<Arrow x1={g.x0 + 0.8 * g.w} y1={g.yR - 100} x2={g.x0 + 0.22 * g.w} y2={g.yP - 40} at={K9.back + 6} color={AMBER_INK} width={7} />
-				<SvgText x={xm} y={g.yP - 120} text="one lowered pass, both trips" size={44} color={METAL_DARK} anchor="middle" at={K9.back} />
-				<WrongChip at={K9.shifts} out={K9.only - 4} x={90} y={780} chip="it shifts toward ammonia" fix="" w={640} />
-				<Fade at={K9.ahead} out={K9.only - 4}><SvgText x={90} y={900} text="no rate pulled ahead" size={50} color={TEAL} at={K9.ahead} /></Fade>
-				<WrongChip at={K9.only} out={9999} x={90} y={780} chip="only the forward rate rises" fix="" w={640} />
-				<Fade at={K9.amt}><SvgText x={90} y={900} text="both rates, same factor" size={50} color={TEAL} at={K9.amt} /></Fade>
+				<Arrow x1={g.x0 + 0.2 * g.w} y1={g.yP - 100} x2={g.x0 + 0.8 * g.w} y2={g.yP - 100} at={K9.back - 10} color={FWD} width={7} />
+				<Arrow x1={g.x0 + 0.8 * g.w} y1={g.yP - 50} x2={g.x0 + 0.2 * g.w} y2={g.yP - 50} at={K9.back + 6} color={AMBER_INK} width={7} />
+				<SvgText x={xm} y={g.yP - 150} text="one lowered pass, both trips" size={44} color={METAL_DARK} anchor="middle" at={K9.back} />
+				<WrongChip at={K9.shifts} out={K9.only - 4} x={90} y={800} chip="it shifts toward ammonia" fix="" w={640} />
+				<Fade at={K9.ahead} out={K9.only - 4}><SvgText x={90} y={920} text="no rate pulled ahead" size={50} color={TEAL} at={K9.ahead} /></Fade>
+				<WrongChip at={K9.only} out={9999} x={90} y={800} chip="only the forward rate rises" fix="" w={640} />
+				<Fade at={K9.amt}><SvgText x={90} y={920} text="both rates, same factor" size={50} color={TEAL} at={K9.amt} /></Fade>
 			</Overlay>
 		</>
 	);

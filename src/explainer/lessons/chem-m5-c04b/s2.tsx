@@ -29,9 +29,8 @@ export const SceneLowerPass: React.FC = () => {
 				{/* valleys have not moved */}
 				<Ring cx={g.x0 + 0.075 * g.w} cy={g.yL - 6} rx={100} ry={34} at={KL.valleys} out={KL.valleys + 80} color={TEAL} seed={5} />
 				<Ring cx={g.x0 + 0.935 * g.w} cy={g.yR - 6} rx={100} ry={34} at={KL.valleys + 24} out={KL.valleys + 104} color={TEAL} seed={6} />
-				<Fade at={KL.valleys + 10}><SvgText x={g.x0 + 0.075 * g.w} y={g.yL - 30} text="same level" size={40} color={TEAL} anchor="middle" at={KL.valleys + 10} /></Fade>
-				<Fade at={KL.valleys + 30}><SvgText x={g.x0 + 0.935 * g.w} y={g.yR - 30} text="same level" size={40} color={TEAL} anchor="middle" at={KL.valleys + 30} /></Fade>
-				{/* the energy difference between the valleys */}
+				<Fade at={KL.valleys + 10}><SvgText x={g.x0 + 0.075 * g.w} y={g.yL + 104} text="same level" size={40} color={TEAL} anchor="middle" at={KL.valleys + 10} /></Fade>
+								{/* the energy difference between the valleys */}
 				<Fade at={KL.diff}><path d={`M${g.x0 + 0.13 * g.w},${g.yL} L${xh},${g.yL}`} stroke={TEAL} strokeWidth={3.5} strokeDasharray="10 9" /></Fade>
 				<Bracket x={xh} y1={g.yL} y2={g.yR} color={TEAL} at={KL.diff} side="right" />
 				<SvgText x={xh + 24} y={(g.yL + g.yR) / 2 + 6} text="the same difference" size={42} color={TEAL} at={KL.same} />
@@ -54,7 +53,7 @@ export const SceneLowerPass: React.FC = () => {
 void DrawPath; void Enter; void FONT_DISPLAY; void FONT_HAND; void prog; void Ball;
 
 // ---------- 3. A lower pass speeds both trips ----------
-const PB = mkP(150, 200, 700, 480);
+const PB = mkP(150, 210, 740, 580);
 const K4 = cues(sc('lower-pass-both-ways'), {lower: 'lower pass', more: 'more collisions', through: 'get through', twenty: 'twenty collisions', one: 'one gets', ten: 'ten get through', times: 'ten times as many', back: 'going back', newTop: 'same new top', lowerBy: 'lower by the same height', drop: 'A drop of the same height', factor: 'the same factor', side: 'whichever side', rise: 'rise ten times', madeUp: 'made-up factor'});
 export const SceneBothWays: React.FC = () => {
 	const f = useCurrentFrame();
@@ -80,11 +79,11 @@ export const SceneBothWays: React.FC = () => {
 				<Ball g={g} peak={g.yP} s={sB} color="#bcd6ee" opacity={f >= K4.more + 6 && f < K4.twenty ? 1 : 0} />
 				<Ball g={g} peak={g.yP} s={sA} color={AMBER} opacity={f >= K4.back && f < K4.side ? 1 : 0} />
 				<Bracket x={x1} y1={g.yL} y2={topY} color={FWD} at={-60} side="right" />
-				<SvgText x={x1 + 20} y={(g.yL + topY) / 2 + 12} text="forward" size={42} color={FWD} at={-60} />
+				<SvgText x={g.x0 + 0.075 * g.w} y={g.yL + 56} text="forward climb" size={42} color={FWD} anchor="middle" at={-60} />
 				<Bracket x={x2} y1={g.yR} y2={topY} color={AMBER_INK} at={K4.back} side="left" />
-				<SvgText x={x2 - 20} y={(g.yR + topY) / 2 + 12} text="reverse" size={42} color={AMBER_INK} anchor="end" at={K4.back + 10} />
+				<SvgText x={g.x0 + 0.935 * g.w} y={g.yR + 56} text="reverse climb" size={42} color={AMBER_INK} anchor="middle" at={K4.back + 10} />
 				<Arrow x1={xm} y1={g.yT + 12} x2={xm} y2={g.yP - 12} at={K4.lowerBy} color={INK} width={6} />
-				<Fade at={K4.drop}><SvgText x={xm + 22} y={(g.yT + g.yP) / 2 + 12} text="same drop" size={44} color={INK} at={K4.drop} /></Fade>
+				<Fade at={K4.drop}><SvgText x={xm + 22} y={(g.yT + g.yP) / 2 - 4} text="same" size={40} color={INK} at={K4.drop} /><SvgText x={xm + 22} y={(g.yT + g.yP) / 2 + 36} text="drop" size={40} color={INK} at={K4.drop + 4} /></Fade>
 				{/* forward trip: the same twenty collisions */}
 				<Fade at={K4.twenty}>
 					<SvgText x={950} y={232} text="forward trip: the same twenty collisions" size={46} color={FWD} at={K4.twenty} />

@@ -107,8 +107,8 @@ export const SceneRidge: React.FC = () => {
 				<path d={`M${g.x0},${g.yL} L${g.x0 + 0.13 * g.w},${g.yL} M${g.x0 + 0.87 * g.w},${g.yR} L${g.x0 + g.w},${g.yR}`} stroke={INK} strokeWidth={9} strokeLinecap="round" opacity={prog(f, K2.minimum + 30, 12)} />
 				<Fade at={K2.top}><path d={`M${xb1},${g.yT} L${xb2},${g.yT}`} stroke={FWD} strokeWidth={3.5} strokeDasharray="10 9" /></Fade>
 				<Bracket x={xb1} y1={g.yL} y2={g.yT} color={FWD} at={K2.ae} side="right" />
-				<SvgText x={xb1 + 20} y={(g.yL + g.yT) / 2 - 10} text="activation" size={46} color={FWD} at={K2.ae + 10} />
-				<SvgText x={xb1 + 20} y={(g.yL + g.yT) / 2 + 36} text="energy" size={46} color={FWD} at={K2.ae + 14} />
+				<SvgText x={xb1 + 20} y={g.yT + 56} text="activation" size={46} color={FWD} at={K2.ae + 10} />
+				<SvgText x={xb1 + 20} y={g.yT + 102} text="energy" size={46} color={FWD} at={K2.ae + 14} />
 				<Ring cx={g.x0 + 0.5 * g.w} cy={g.yT} rx={130} ry={50} at={K2.ridge} out={K2.ridge + 50} color={INK} seed={3} />
 				{/* the height is energy */}
 				<Arrow x1={g.x0 - 8} y1={g.yL + 20} x2={g.x0 - 8} y2={g.yT - 6} at={K2.height} color={INK_SOFT} width={5} dur={22} />
@@ -123,8 +123,8 @@ export const SceneRidge: React.FC = () => {
 				<Fade at={K2.reach} out={K2.reach + 66}><SvgText x={short[0] - 34} y={short[1] - 52} text="not enough: falls back" size={40} color={INK_SOFT} anchor="end" at={K2.reach} /></Fade>
 				<Fade at={K2.reach + 80} out={K2.back}><SvgText x={g.x0 + 0.26 * g.w} y={g.yT + 90} text="enough energy" size={44} color={FWD} anchor="end" at={K2.reach + 80} /></Fade>
 				<Bracket x={xb2} y1={g.yR} y2={g.yT} color={AMBER_INK} at={K2.climb} side="left" />
-				<SvgText x={xb2 - 20} y={(g.yR + g.yT) / 2 - 10} text="the same climb" size={42} color={AMBER_INK} anchor="end" at={K2.climb + 12} />
-				<SvgText x={xb2 - 20} y={(g.yR + g.yT) / 2 + 34} text="to go back" size={42} color={AMBER_INK} anchor="end" at={K2.back} />
+				<SvgText x={xb2 + 18} y={(g.yR + g.yT) / 2 - 10} text="same climb" size={42} color={AMBER_INK} at={K2.climb + 12} />
+				<SvgText x={xb2 + 18} y={(g.yR + g.yT) / 2 + 34} text="to go back" size={42} color={AMBER_INK} at={K2.back} />
 			</Overlay>
 			<Enter at={K2.ae} style={{position: 'absolute', left: 1230, top: 500, width: 590}}>
 				<div style={{background: '#fffdf8', border: `3px solid ${FWD}`, borderRadius: 18, padding: '12px 24px 16px', boxShadow: '0 12px 28px rgba(60,45,20,0.10)'}}>
@@ -138,22 +138,22 @@ export const SceneRidge: React.FC = () => {
 
 // ---------- 2b. The alternative pathway ----------
 const K3 = cues(sc('route'), {path: 'alternative pathway', route: 'different route', land: 'land on the metal', split: 'split into atoms', stick: 'stick to the surface', pair: 'pair up', leave: 'and leave', unch: 'ends up unchanged', ready: 'ready for the next'});
-const SURF = 760, STEP = 56;
+const SURF = 760, STEP = 84;
 const Cluster: React.FC<{cx: number; off: number}> = ({cx, off}) => {
 	const f = useCurrentFrame();
 	const e = (a: number, b: number) => smooth((f - a) / (b - a));
 	const tl = K3.land + off, ts = K3.split + off, tp = K3.pair + off, tv = K3.leave + off;
 	const drop = e(tl - 70, tl + 10), sp = e(ts, ts + 24), pr = e(tp, tp + 36), lv = e(tv, tv + 70);
 	const fade = 1 - e(tv + 44, tv + 74);
-	const rH = 12, rI = 18, yH = SURF - 22 - rH, yI = SURF - 22 - rI;
+	const rH = 18, rI = 27, yH = SURF - 34 - rH, yI = SURF - 34 - rI;
 	const yIn = (y: number) => y - 380 * (1 - drop);
 	// H atoms
-	const h1x = cx - 56 - (rH + 16 * sp);
-	const h2x0 = cx - 56 + (rH + 16 * sp);
-	const h2x = h2x0 + (cx - 2 - (cx - 28)) * pr;   // inner H moves toward the inner I
-	const h1xs = h1x + (cx + 54 - (cx - 84)) * pr;  // outer H hops over to the outer I
-	const h1y = yH - 90 * Math.sin(Math.PI * pr);
-	const i1x = cx + 56 - (rI + 10 * sp), i2x = cx + 56 + (rI + 10 * sp);
+	const h1x = cx - 84 - (rH + 24 * sp);
+	const h2x0 = cx - 84 + (rH + 24 * sp);
+	const h2x = h2x0 + (cx - 3 - (cx - 42)) * pr;   // inner H moves toward the inner I
+	const h1xs = h1x + (cx + 81 - (cx - 126)) * pr;  // outer H hops over to the outer I
+	const h1y = yH - 120 * Math.sin(Math.PI * pr);
+	const i1x = cx + 84 - (rI + 15 * sp), i2x = cx + 84 + (rI + 15 * sp);
 	const lift = -330 * lv;
 	const alpha = f < tl - 70 ? 0 : fade;
 	const bond = pr > 0.95;
@@ -172,7 +172,7 @@ const Cluster: React.FC<{cx: number; off: number}> = ({cx, off}) => {
 };
 export const SceneRoute: React.FC = () => {
 	const f = useCurrentFrame();
-	const atoms = Array.from({length: 30}, (_, k) => 140 + k * STEP);
+	const atoms = Array.from({length: 21}, (_, k) => 140 + k * STEP);
 	const stage = (txt: string, at: number, out?: number) => <Fade at={at} out={out}><SvgText x={960} y={900} text={txt} size={58} color={TEAL} anchor="middle" at={at} /></Fade>;
 	return (
 		<>
@@ -183,27 +183,27 @@ export const SceneRoute: React.FC = () => {
 			<Overlay>
 				{/* metal surface */}
 				<Fade at={4}>
-					{atoms.map((x, k) => <circle key={'a' + k} cx={x} cy={SURF} r={23} fill={METAL} stroke={METAL_DARK} strokeWidth={3.5} />)}
-					{atoms.map((x, k) => <circle key={'b' + k} cx={x + STEP / 2} cy={SURF + 48} r={23} fill={METAL} stroke={METAL_DARK} strokeWidth={3.5} />)}
-					<SvgText x={140} y={SURF + 126} text="the metal catalyst" size={46} color={METAL_DARK} at={4} />
+					{atoms.map((x, k) => <circle key={'a' + k} cx={x} cy={SURF} r={34} fill={METAL} stroke={METAL_DARK} strokeWidth={4} />)}
+					{atoms.map((x, k) => <circle key={'b' + k} cx={x + STEP / 2} cy={SURF + 62} r={34} fill={METAL} stroke={METAL_DARK} strokeWidth={4} />)}
+					<SvgText x={140} y={SURF + 140} text="the metal catalyst" size={50} color={METAL_DARK} at={4} />
 				</Fade>
-				<Cluster cx={616} off={0} />
-				<Cluster cx={1288} off={14} />
-				<Fade at={K3.land}>
-					<SvgText x={560} y={330} text="H_2" size={48} color={H2_INK} anchor="middle" at={K3.land} />
-					<SvgText x={672} y={330} text="I_2" size={48} color={I2_INK} anchor="middle" at={K3.land} />
+				<Cluster cx={602} off={0} />
+				<Cluster cx={1442} off={14} />
+				<Fade at={K3.land - 40} out={K3.split}>
+					<SvgText x={518} y={430} text="H_2" size={52} color={H2_INK} anchor="middle" at={K3.land - 40} />
+					<SvgText x={686} y={430} text="I_2" size={52} color={I2_INK} anchor="middle" at={K3.land - 40} />
 				</Fade>
-				<Ring cx={616} cy={SURF - 46} rx={170} ry={58} at={K3.split + 4} out={K3.split + 60} color={TEAL} seed={4} />
-				<Ring cx={1288} cy={SURF - 46} rx={170} ry={58} at={K3.leave} out={K3.leave + 50} color={TEAL} seed={5} />
+				<Ring cx={602} cy={SURF - 60} rx={230} ry={70} at={K3.split + 4} out={K3.split + 60} color={TEAL} seed={4} />
+				<Ring cx={1442} cy={SURF - 60} rx={230} ry={70} at={K3.leave} out={K3.leave + 50} color={TEAL} seed={5} />
 				{stage('1  they land on the metal', K3.land, K3.split - 4)}
 				{stage('2  they split into single atoms', K3.split, K3.pair - 4)}
 				{stage('3  the atoms pair up as HI', K3.pair, K3.leave - 4)}
 				{stage('4  the HI molecules leave', K3.leave, K3.unch - 4)}
 				{stage('5  the metal is unchanged', K3.unch)}
 				<Fade at={K3.unch}>
-					<Mark x={1530} y={380} at={K3.unch} size={60} />
-					<SvgText x={1580} y={398} text="same metal" size={56} color={METAL_DARK} at={K3.unch + 8} />
-					<SvgText x={1580} y={448} text="ready for the next molecules" size={38} color={INK_SOFT} at={K3.ready} />
+					<Mark x={1560} y={560} at={K3.unch} size={60} />
+					<SvgText x={1610} y={578} text="same metal" size={56} color={METAL_DARK} at={K3.unch + 8} />
+					<SvgText x={1610} y={628} text="ready for the next molecules" size={38} color={INK_SOFT} at={K3.ready} />
 				</Fade>
 			</Overlay>
 		</>

@@ -10,11 +10,11 @@ import {attemptGroups} from './s4';
 
 const NO_L: Piece[] = [{t: '2NO(g)', color: NO_INK, dot: NOC}, {t: '+'}, {t: 'O_2(g)', color: O2_INK, dot: O2C}];
 const NO_R: Piece[] = [{t: '2NO_2(g)', color: NO2_INK, dot: NO2C}];
-const HotPill: React.FC<{at: number; y?: number}> = ({at, y = 440}) => <Pill x={96} y={y} w={520} text="hot cylinder: no N_2O_4" at={at} color={INK_SOFT} size={36} h={58} />;
+const HotPill: React.FC<{at: number; y?: number}> = ({at, y = 440}) => <Pill x={96} y={y} w={520} text="hot cylinder: no N₂O₄" at={at} color={INK_SOFT} size={36} h={58} />;
 
 // ---------- 10a. Feedback, item one ----------
 const K1 = cues(sc('feedback-one'), {one: 'One count the gases', three: 'three particles on the left', two: 'two on the right', dbl: 'A squeeze doubles', fwd: 'forward reaction depends', gains: 'gains more', right: 'goes right', dark: 'The colour darkens at once', twice: 'twice as crowded', keeps: 'keeps darkening', nothing: 'nothing here removes', notfade: 'does not fade', makes: 'makes the brown gas', ifsaid: 'If you said', check: 'check which side'});
-const SK = {x0: 130, y0: 930, base: 880};
+const SK = {x0: 130, y0: 955, base: 905};
 export const SceneFeedbackOne: React.FC = () => {
 	const f = useCurrentFrame();
 	const vol = kf(f, [[K1.dbl, 1], [K1.dbl + 60, 0.5]]);
@@ -30,31 +30,32 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Syringe x={96} y={190} w={900} vol={vol} cyl groups={attemptGroups(no, o2, no2)} tint={shade(t)} seed={11} />
 			<RxnChip x={1020} y={60} at={-100} left={NO_L} right={NO_R} size={38} words={false} fwdLit={K1.right} revLit={-100} fwdTag={{text: 'shift right', at: K1.right, color: FWD}} />
 			<Overlay>
-				<ColourStrip x={260} y={400} w={560} from={PALE} to={DEEP} t={t} at={-100} label="colour" h={40} mark={1 / 3} />
-				<Fade at={K1.dark}><SvgText x={820} y={490} text="darker at once" size={34} color={NO2_INK} anchor="end" at={K1.dark} /></Fade>
-				<HotPill at={-100} />
+				<ColourStrip x={260} y={395} w={560} from={PALE} to={DEEP} t={t} at={-100} label="colour" h={40} mark={1 / 3} />
+				<Fade at={K1.dark}><SvgText x={260} y={480} text="darker at once" size={34} color={NO2_INK} anchor="start" at={K1.dark} /></Fade>
+				<HotPill at={-100} y={510} />
 				<Fade at={K1.one}>
-					<SvgText x={96} y={572} text="Count only the gases:" size={46} color={TEAL} at={K1.one} />
-					<SvgText x={96} y={626} text="3 on the left, 2 on the right" size={44} color={TEAL} at={K1.three} />
+					<SvgText x={96} y={612} text="Count only the gases:" size={46} color={TEAL} at={K1.one} />
+					<SvgText x={96} y={662} text="3 on the left, 2 on the right" size={44} color={TEAL} at={K1.three} />
 				</Fade>
 				<Bars fwd={fwd} rev={rev} at={K1.dbl} scale={2.6} fwdLabel="" revLabel="" x0={BX} />
 				<Fade at={K1.three}><SvgText x={1190} y={770} text="3 particles" size={38} color={FWD} at={K1.three} /></Fade>
 				<Fade at={K1.two}><SvgText x={1390} y={770} text="2 particles" size={38} color={AMBER_INK} at={K1.two} /></Fade>
+				<Pill x={1190} y={850} w={640} text="in this simple model (one-step reactions)" at={K1.gains} color={INK_SOFT} size={30} h={54} />
 				<Fade at={K1.gains}><SvgText x={1190} y={820} text="forward gains more" size={38} color={FWD} at={K1.gains} /></Fade>
-				<NetBar xc={760} y={400} gap={fwd - rev} at={K1.right - 20} scale={4.5} lines={[{text: 'net reaction', at: K1.right}, {text: 'goes right', at: K1.right + 8}]} />
+				<NetBar xc={930} y={300} gap={fwd - rev} at={K1.right - 20} scale={4.5} lines={[{text: 'net reaction', at: K1.right}, {text: 'goes right', at: K1.right + 8}]} />
 				{/* colour over time: the cylinder keeps darkening, the syringe faded back */}
 				<Fade at={K1.dark}>
-					<path d={`M${SK.x0},${SK.y0} L${SK.x0},690 M${SK.x0},${SK.y0} L${SK.x0 + 520},${SK.y0}`} stroke={INK} strokeWidth={4} fill="none" strokeLinecap="round" />
+					<path d={`M${SK.x0},${SK.y0} L${SK.x0},715 M${SK.x0},${SK.y0} L${SK.x0 + 520},${SK.y0}`} stroke={INK} strokeWidth={4} fill="none" strokeLinecap="round" />
 					<path d={`M${SK.x0},${SK.base} L${SK.x0 + 520},${SK.base}`} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="8 8" />
 					<SvgText x={SK.x0 + 520} y={SK.base + 36} text="start" size={30} color={INK_SOFT} anchor="end" at={K1.dark} hand={false} weight={600} />
-					<SvgText x={SK.x0 + 8} y={680} text="colour over time (darker is higher)" size={30} color={INK_SOFT} at={K1.dark} hand={false} weight={600} />
+					<SvgText x={SK.x0 + 8} y={745} text="colour over time" size={30} color={INK_SOFT} at={K1.dark} hand={false} weight={600} />
 				</Fade>
 				<DrawPath d={`M${SK.x0},${SK.base} L${SK.x0 + 120},${SK.base} L${SK.x0 + 120},${SK.base - 70}`} at={K1.dark} dur={24} color={NO2C} width={9} />
 				<DrawPath d={`M${SK.x0 + 120},${SK.base - 70} Q${SK.x0 + 300},${SK.base - 90} ${SK.x0 + 500},${SK.base - 150}`} at={K1.keeps} dur={60} color={NO2C} width={9} />
-				<Fade at={K1.keeps}><SvgText x={SK.x0 + 500} y={SK.base - 172} text="cylinder: keeps darkening" size={32} color={NO2_INK} anchor="end" at={K1.keeps} hand={false} weight={700} /></Fade>
+				<Fade at={K1.keeps}><SvgText x={SK.x0 + 500} y={SK.base - 190} text="cylinder: keeps darkening" size={32} color={NO2_INK} anchor="end" at={K1.keeps} hand={false} weight={700} /></Fade>
 				<DrawPath d={`M${SK.x0 + 120},${SK.base - 70} Q${SK.x0 + 300},${SK.base - 70} ${SK.x0 + 500},${SK.base - 25}`} at={K1.notfade} dur={50} color={INK_SOFT} width={6} dash="12 9" />
 				<Fade at={K1.notfade}><SvgText x={SK.x0 + 500} y={SK.base + 4} text="syringe: fades" size={30} color={INK_SOFT} anchor="end" at={K1.notfade + 20} hand={false} weight={700} /></Fade>
-				<Fade at={K1.makes}><SvgText x={700} y={940} text="the shift makes the brown gas" size={40} color={NO2_INK} at={K1.makes} /></Fade>
+				<Fade at={K1.makes}><SvgText x={720} y={940} text="the shift makes the brown gas" size={40} color={NO2_INK} at={K1.makes} /></Fade>
 				<WrongChip at={K1.ifsaid} out={K1.check - 6} x={960} y={600} chip="the brown always fades" fix="Check which side this shift favours." w={640} />
 				<WrongChip at={K1.check + 10} out={99999} x={960} y={600} chip="shifts toward more gas particles" fix="A squeeze helps the reaction that depends on more." w={760} />
 			</Overlay>
@@ -81,9 +82,9 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<Dial x={704} y={420} w={280} label="NO_2" value={8} text="same" color={NO2_INK} at={K2.vol + 16} ring={f >= K2.each} />
 				<Fade at={K2.vol}><SvgText x={96} y={650} text="volume not changed: each gas is as crowded as before" size={34} color={INK} at={K2.vol} hand={false} weight={600} /></Fade>
 				<ColourStrip x={260} y={720} w={560} from={PALE} to={DEEP} t={1 / 3} at={K2.same - 20} label="colour" h={40} mark={1 / 3} />
-				<Fade at={K2.fav}><SvgText x={96} y={850} text="no change in crowding, no direction favoured" size={40} color={TEAL} at={K2.fav} /></Fade>
-				<Fade at={K2.nothing}><SvgText x={96} y={910} text="nothing shifts, colour stays the same" size={44} color={TEAL} at={K2.nothing} /></Fade>
-				<HotPill at={-100} y={560} />
+				<Fade at={K2.fav}><SvgText x={96} y={912} text="no change in crowding, no direction favoured" size={40} color={TEAL} at={K2.fav} /></Fade>
+				<Fade at={K2.nothing}><SvgText x={96} y={962} text="nothing shifts, colour stays the same" size={44} color={TEAL} at={K2.nothing} /></Fade>
+				<HotPill at={-100} y={790} />
 				<WrongChip at={K2.ifsaid} out={99999} x={1020} y={620} chip="pressure doubled, so it shifts right" fix="total pressure up, crowding unchanged" w={780} />
 			</Overlay>
 			<div style={{display: 'none'}}>{K2.sep}</div>

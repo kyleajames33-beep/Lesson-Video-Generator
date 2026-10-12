@@ -17,3 +17,7 @@ Write `docs/production/claude-pm/checks/c4b-check.md` and `b3a2-check.md`.
 Make the images listed in the "Codex asset brief" section at the end of each design file, following those instructions exactly (transparent PNG with a real alpha channel, aligned sets overlay exactly, textbook and respectful style). B3a part 2 reuses part 1 plates from brief 15; do not duplicate them. Provenance: `docs/production/claude-pm/assets/c4b-provenance.json` and `b3a2-provenance.json`.
 
 Append one hand-in to `status.md` covering both parts.
+
+## Part C: one missing B3a plate
+
+Make `public/assets/biology/b3a-tract-thin-lining-v1.png`: the same tract as `b3a-tract-thick-lining-v1.png` (same canvas, position and scale so the two overlay exactly), but with a thin uterine lining instead of the thick one. Textbook, respectful style, transparent PNG with a real alpha channel, no text. Add it to the B3a provenance file.

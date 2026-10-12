@@ -13,7 +13,7 @@ const EQ_BURN = 'C_6H_12O_6(s) + 6O_2(g) → 6CO_2(g) + 6H_2O(l)';
 const K8 = cues(sc('photo-reverse'), {back: 'run it backwards', flips: 'flips', dh: 'plus two thousand eight hundred and three', energy: 'energy has to go in', light: 'is light', twelve: 'twelve particles', seven: 'seven', settles: 'settles into a crystal', falls: 'entropy falls', tds: 'minus seventy-eight', eqn: 'delta g equals', neg: 'minus negative', adds: 'minus a negative adds', e81: 'eighty-one', own: 'run on its own', any: 'at any temperature'});
 export const ScenePhotoReverse: React.FC = () => {
 	const f = useCurrentFrame();
-	const q = 1 - prog(f, K8.twelve + 10, 130);
+	const q = 1 - prog(f, K8.seven - 20, 110);
 	const BX = 730, BY = 300, BW = 1100, BH = 520;
 	return (
 		<>
@@ -45,6 +45,7 @@ export const ScenePhotoReverse: React.FC = () => {
 				<Fade at={K8.twelve - 6} out={K8.eqn - 4}>
 					<ReactionBox x={BX} y={BY} w={BW} h={BH} q={q} ms={2.5} />
 					<SvgText x={BX + BW / 2} y={BY - 18} text="12 particles become 7: crystal and 6 O_2" size={42} color={SPREAD} anchor="middle" at={K8.twelve} />
+					<Pill x={BX + 40} y={BY + BH + 22} w={300} text="12 particles" at={K8.twelve} out={K8.seven} color={SPREAD} size={46} h={66} />
 					<Pill x={BX + 40} y={BY + BH + 22} w={420} text="12 particles to 7" at={K8.seven} color={SPREAD} size={46} h={66} />
 					<Pill x={BX + 500} y={BY + BH + 22} w={400} text="more packed" at={K8.falls} color={SPREAD} size={46} h={66} />
 				</Fade>
@@ -58,10 +59,6 @@ export const ScenePhotoReverse: React.FC = () => {
 			</Enter>
 			<Enter at={K8.adds} style={{position: 'absolute', left: 770, top: 392}}><T size={52} color={BAD} hand>minus a negative adds</T></Enter>
 			<AnswerBox x={760} y={470} at={K8.e81} text="= +2881 kJ/mol" size={88} />
-			<Enter at={K8.e81 + 30} style={{position: 'absolute', left: 770, top: 612}}>
-				<T size={34} color={HEAT} weight={700}>ΔH = +2803 is the heat term</T>
-				<T size={34} color={DG} weight={800}>ΔG = +2881 is the result</T>
-			</Enter>
 			<Overlay>
 				<Fade at={K8.own}>
 					<SvgText x={770} y={810} text="can it run on its own?" size={58} color={INK} at={K8.own} />

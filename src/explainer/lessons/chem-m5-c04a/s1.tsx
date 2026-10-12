@@ -32,6 +32,7 @@ export const SceneHook: React.FC = () => {
 				<Fade at={K1.watch}><SvgText x={260 + 320} y={610} text="start" size={38} color={INK_SOFT} anchor="middle" at={K1.watch} /></Fade>
 				<Fade at={K1.dark}><SvgText x={260 + 640} y={610} text="darker at once" size={38} color={NO2_INK} anchor="end" at={K1.dark} /></Fade>
 				<Fade at={K1.settles}><SvgText x={260 + 640 * 0.78} y={664} text="settles darker than the start" size={38} color={TEAL} anchor="middle" at={K1.settles} /></Fade>
+				<Pill x={960} y={560} w={520} text="imagine an instant squeeze" at={K1.push} out={K1.dark + 200} color={INK_SOFT} size={34} h={58} />
 				<TempGlyph x={1400} y={780} at={K1.room} label="room temperature" />
 				<Fade at={K1.hour} out={K1.push - 10}>
 					<circle cx={1000} cy={540} r={44} fill="#fffdf8" stroke={INK} strokeWidth={5} />
@@ -93,13 +94,12 @@ export const SceneSqueeze: React.FC = () => {
 			<BeatLabel text="the moment of the change" at={K3.halve} />
 			<Syringe x={SYX.x} y={SYX.y} w={SYX.w} vol={vol} groups={[NO2G(16), N2O4G(8)]} tint={shade(0.5 / vol)} />
 			<Overlay>
-				<ColourStrip x={260} y={500} w={520} from={PALE} to={DEEP} t={0.5 / vol} at={K3.halve} label="colour" h={40} mark={0.5} />
+				<ColourStrip x={260} y={500} w={380} from={PALE} to={DEEP} t={0.5 / vol} at={K3.halve} label="colour" h={40} mark={0.5} />
 				<Dial x={96} y={580} label="NO_2" value={8 / vol} text={String(Math.round(8 / vol))} color={NO2_INK} at={-100} />
 				<Dial x={400} y={580} label="N_2O_4" value={4 / vol} text={String(Math.round(4 / vol))} color={N2O4_INK} at={-100} />
 				<Fade at={K3.same}><SvgText x={96} y={810} text="same particles, half the room" size={40} color={INK} at={K3.same} /></Fade>
+				<Pill x={690} y={486} w={400} text="imagine an instant squeeze" at={K3.halve} color={INK_SOFT} size={30} h={52} />
 				<Fade at={K3.nothing}><SvgText x={96} y={866} text="no reaction yet, but the brown" size={40} color={NO2_INK} at={K3.nothing} /><SvgText x={96} y={914} text="is already darker" size={40} color={NO2_INK} at={K3.darker} /></Fade>
-				<Bars fwd={32} rev={32} at={-100} scale={BAR_SCALE} x0={BX} />
-				<SvgText x={BX + 160} y={BARS.base - 32 * BAR_SCALE - 90} text="rates not touched yet" size={36} color={INK_SOFT} anchor="middle" at={K3.nothing + 20} />
 				<StageTable rows={rows} at={-100} heads={HEADS} gapAt={-100} />
 			</Overlay>
 			<RxnChip x={1020} y={60} at={-100} left={CHIP_L} right={CHIP_R} size={38} words={false} fwdLit={-100} revLit={-100} fwdTag={{text: 'forward = joining', at: -100, color: FWD}} revTag={{text: 'reverse = splitting', at: -100, color: AMBER_INK}} />
@@ -111,8 +111,8 @@ export const SceneSqueeze: React.FC = () => {
 const K4 = cues(sc('joining-gains-more'), {rates: 'Now the rates', join: 'Joining needs', meet: 'to meet', twice: 'twice as crowded', over: 'twice over', calc: 'thirty-two times two', hund: 'one hundred and twenty-eight', split: 'Splitting needs', doubles: 'only doubles', sixty: 'sixty-four', boosts: 'boosts both', gains: 'gains more'});
 export const SceneJoining: React.FC = () => {
 	const f = useCurrentFrame();
-	const fwd = kf(f, [[K4.over, 32], [K4.hund + 20, 128]]);
-	const rev = kf(f, [[K4.doubles, 32], [K4.sixty + 10, 64]]);
+	const fwd = kf(f, [[K4.calc, 0], [K4.hund + 20, 128]]);
+	const rev = kf(f, [[K4.doubles, 0], [K4.sixty + 10, 64]]);
 	const bursts = [...train(K4.join, 1100, 20, 'join'), ...train(K4.split, 1100, 40, 'split')];
 	const rows: TRow[] = [
 		{label: 'at equilibrium', at: -100, cells: [['8', -100], ['4', -100], ['32', -100], ['32', -100]], gap: ['0', -100]},
@@ -128,15 +128,16 @@ export const SceneJoining: React.FC = () => {
 				<Dial x={96} y={580} label="NO_2" value={16} color={NO2_INK} at={-100} />
 				<Dial x={400} y={580} label="N_2O_4" value={8} color={N2O4_INK} at={-100} />
 				<Fade at={K4.join}>
-					<SvgText x={100} y={830} text="joining: 2 NO_2 must meet" size={40} color={FWD} at={K4.join} />
-					<path d="M150,845 L180,880 M240,845 L212,880" stroke={FWD} strokeWidth={6} strokeLinecap="round" />
+					<SvgText x={100} y={855} text="joining: 2 NO_2 must meet" size={40} color={FWD} at={K4.join} />
+					<path d="M150,868 L180,898 M240,868 L212,898" stroke={FWD} strokeWidth={6} strokeLinecap="round" />
 				</Fade>
-				<Fade at={K4.split}><SvgText x={100} y={930} text="splitting: 1 N_2O_4 on its own" size={40} color={AMBER_INK} at={K4.split} /></Fade>
+				<Fade at={K4.split}><SvgText x={100} y={950} text="splitting: 1 N_2O_4 on its own" size={40} color={AMBER_INK} at={K4.split} /></Fade>
 				<Fade at={K4.twice}><SvgText x={690} y={500} text="each one is twice as crowded" size={30} color={NO2_INK} at={K4.twice} hand={false} weight={600} /></Fade>
 				<Fade at={K4.over}><SvgText x={690} y={556} text="forward: 32 × 2 × 2" size={40} color={FWD} at={K4.over} hand={false} /></Fade>
 				<Fade at={K4.hund}><SvgText x={690} y={612} text="= 128" size={52} color={FWD} at={K4.hund} hand={false} weight={800} /></Fade>
 				<Fade at={K4.doubles}><SvgText x={690} y={694} text="reverse: 32 × 2 = 64" size={38} color={AMBER_INK} at={K4.doubles} hand={false} /></Fade>
-				<Bars fwd={fwd} rev={rev} at={K4.rates} scale={BAR_SCALE} x0={BX} />
+				<Bars fwd={fwd} rev={rev} at={K4.calc} scale={BAR_SCALE} x0={BX} />
+				<Pill x={96} y={762} w={600} text="in this simple model (one-step reactions)" at={K4.gains} color={INK_SOFT} size={30} h={50} />
 				<Fade at={K4.gains}><DrawPath d={ring} at={K4.gains} dur={24} color={TEAL} width={6} /><SvgText x={BX + 190} y={BARS.base - 128 * BAR_SCALE - 70} text="gains more" size={44} color={TEAL} at={K4.gains + 10} /></Fade>
 				<StageTable rows={rows} at={-100} heads={HEADS} gapAt={K4.boosts} />
 			</Overlay>

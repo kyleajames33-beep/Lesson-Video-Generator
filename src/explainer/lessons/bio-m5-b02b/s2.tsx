@@ -124,7 +124,7 @@ export const ScenePollenTube: React.FC = () => {
 	const panelOut = 1 - prog(f, c.reaches + 6, 14);
 	const ovIn = prog(f, c.reaches + 8, 16);
 	const split = prog(f, c.form + 20, 20);
-	const dotT = (i: number) => Math.max(0, Math.min(tubeP - 0.05 - i * 0.07, prog(f, c.travel, c.reaches - c.travel + 30, lin)));
+	const dotT = (i: number) => Math.max(0, Math.min(tubeP - 0.08 - i * 0.13, prog(f, c.travel, c.reaches - c.travel + 30, lin)));
 	const sig = useMemo(() => { const r = rng(21); return Array.from({length: 9}, () => ({o: r(), s: 0.5 + r() * 0.6})); }, []);
 	const eggS = fp(EGG_BOX[0], EGG_BOX[1]);
 	const spill = prog(f, c.releases, 24);
@@ -149,11 +149,12 @@ export const ScenePollenTube: React.FC = () => {
 				<circle cx={fp(470, 128)[0]} cy={fp(470, 128)[1] - 4} r={11 + 4 * prog(f, c.water, 30)} fill={POLLEN} stroke={AMBER_INK} strokeWidth={3} />
 				{[0, 1].map(i => {
 					const p = along(tp, dotT(i));
-					return f >= c.travel ? <SpermDot key={i} x={p[0]} y={p[1]} s={0.7} rot={90} o={1 - prog(f, c.releases, 4)} /> : null;
+					return f >= c.travel ? <SpermDot key={i} x={p[0]} y={p[1]} s={2.1} rot={90} o={1 - prog(f, c.releases, 4)} /> : null;
 				})}
+				{f >= c.travel ? (() => { const p = along(tp, dotT(0)); return <Label x={800} y={Math.max(200, p[1]) + 10} at={c.travel} text="two sperm cells" size={46} color={BLUE} anchor="end" out={c.releases + 40} />; })() : null}
 				<Fade at={c.tube + 4} out={c.tube + 120}><Callout2 from={fp(466, 360)} to={[800, 430]} at={c.tube + 4} text="pollen tube" /></Fade>
 				{/* spill beside the egg in the main flower */}
-				{f >= c.releases ? [0, 1].map(i => <SpermDot key={i} x={eggS[0] + (i ? 40 : -40) * spill} y={eggS[1] - 20 + 6 * spill} s={0.7} rot={i ? 20 : 160} />) : null}
+				{f >= c.releases ? [0, 1].map(i => <SpermDot key={i} x={eggS[0] + (i ? 44 : -44) * spill} y={eggS[1] - 24 + 6 * spill} s={1.6} rot={i ? 20 : 160} />) : null}
 				<Scribble cx={fp(527, 672)[0]} cy={fp(527, 672)[1]} rx={32} ry={32} at={c.opening} color={AMBER} seed={6} width={5} />
 			</Overlay>
 			{/* right-hand zoom panel: pollen grain, then the ovule close-up */}
@@ -167,7 +168,7 @@ export const ScenePollenTube: React.FC = () => {
 					})}
 					<g opacity={prog(f, c.form, 12)}>
 						{split < 0.05 ? <circle cx={grain[0]} cy={grain[1]} r={26} fill="#fff6d6" stroke={AMBER_INK} strokeWidth={3} /> : null}
-						{split >= 0.05 ? [-1, 1].map(i => <SpermDot key={i} x={grain[0] + i * 18 * split} y={grain[1]} s={0.55} rot={i < 0 ? 180 : 0} />) : null}
+						{split >= 0.05 ? [-1, 1].map(i => <SpermDot key={i} x={grain[0] + i * 34 * split} y={grain[1]} s={1.5} rot={i < 0 ? 180 : 0} />) : null}
 					</g>
 					<Fade at={c.form + 30}><Label x={GP.x + GP.w / 2} y={GP.y + artH(ART.grain, GP.w) + 40} at={c.form + 30} text="two sperm cells form" size={42} color={BLUE} /></Fade>
 				</Overlay>
@@ -179,7 +180,7 @@ export const ScenePollenTube: React.FC = () => {
 					<path d={`M${openO[0]},${OV.y - 18} L${openO[0]},${openO[1] + 6}`} stroke="#8a5a0c" strokeWidth={13} strokeLinecap="round" opacity={tubeIn} />
 					<path d={`M${openO[0]},${OV.y - 18} L${openO[0]},${openO[1] + 6}`} stroke={GOLD} strokeWidth={8} strokeLinecap="round" opacity={tubeIn} />
 					<Scribble cx={eggO[0]} cy={eggO[1]} rx={46} ry={40} at={c.releases + 20} color={FEMALE} seed={8} width={5} />
-					{f >= c.releases ? [0, 1].map(i => <SpermDot key={i} x={openO[0] + (i ? 42 : -42) * spill} y={openO[1] + 50 + 36 * spill} s={0.8} rot={i ? 40 : 140} />) : null}
+					{f >= c.releases ? [0, 1].map(i => <SpermDot key={i} x={openO[0] + (i ? 52 : -52) * spill} y={openO[1] + 50 + 36 * spill} s={1.7} rot={i ? 40 : 140} />) : null}
 				</Overlay>
 			</div>
 			<NameKey items={fullKey(-20, [{text: 'pollen tube', color: GOLD, at: c.tube + 40}])} />

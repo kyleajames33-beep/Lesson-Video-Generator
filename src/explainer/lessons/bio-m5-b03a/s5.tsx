@@ -33,7 +33,7 @@ const Col: React.FC<{i: number; y: number; children: React.ReactNode}> = ({i, y,
 );
 const Para: React.FC<{at: number; q?: boolean; children: React.ReactNode}> = ({at, q, children}) => (
 	<Enter at={at}>
-		<Body size={q ? 32 : 30} weight={q ? 800 : 600} color={q ? AMBER_INK : INK} style={{lineHeight: 1.2}}>{children}</Body>
+		<Body size={q ? 30 : 28} weight={q ? 800 : 600} color={q ? AMBER_INK : INK} style={{lineHeight: 1.2}}>{children}</Body>
 	</Enter>
 );
 
@@ -54,7 +54,7 @@ export const SceneAttempt: React.FC = () => {
 	const route: [number, number][] = [[dish.x + 40, dish.y], [dish.x + 90, dish.y + 40], [um(500, 440)[0], um(500, 440)[1]], [um(500, 330)[0], um(500, 330)[1]]];
 	const [bx, by] = along(route, travel);
 	// column 2: timeline
-	const TLY = FY + 255;
+	const TLY = FY + 252;
 	const t1 = CX[1] + 125, t2 = CX[1] + 440;
 	return (
 		<>
@@ -84,13 +84,13 @@ export const SceneAttempt: React.FC = () => {
 					<g opacity={prog(f, c.wk3, 12)}><circle cx={t1} cy={TLY} r={14} fill={AMBER} /></g>
 					<g opacity={prog(f, c.mo5, 12)}><circle cx={t2} cy={TLY} r={14} fill={AMBER} /></g>
 					<text x={t1} y={TLY + 44} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30}} fill={INK} opacity={prog(f, c.wk3, 12)}>3 weeks</text>
-					<text x={t1} y={TLY + 78} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT} opacity={prog(f, c.wk3, 12)}>after fertilisation</text>
+					
 					<text x={t2} y={TLY + 44} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30}} fill={INK} opacity={prog(f, c.mo5, 12)}>5 months</text>
-					<text x={t2} y={TLY + 78} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT} opacity={prog(f, c.mo5, 12)}>after fertilisation</text>
+					<text x={CX[1] + 284} y={TLY + 78} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT} opacity={prog(f, c.wk3, 12)}>after fertilisation</text>
 				</Overlay>
 				<GreyTag at={c.wk3 + 10} x={CX[1] + 104} y={FY + 108} text="stopped" size={28} />
 				<Enter at={c.healthy + 24} style={{position: 'absolute', left: CX[1] + 346, top: FY + 82}}><div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 28, color: TEAL_INK, background: '#f0faf8', border: `3px solid ${TEAL}`, borderRadius: 14, padding: '2px 14px'}}>making hCG</div></Enter>
-				<GreyTag at={c.nohorm} x={CX[1] + 346} y={FY + 138} text="no hormones given" size={26} />
+				<GreyTag at={c.nohorm} x={CX[1] + 290} y={FY + 172} text="no hormones given" size={26} />
 			</div>
 			{/* 3: the student's sentence beside the fetus and placenta plate */}
 			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.three + 10, 16)}}>
@@ -104,7 +104,7 @@ export const SceneAttempt: React.FC = () => {
 				<Para at={c.placed}>It is placed in a woman's uterus, but her body is making no progesterone, and none is given.</Para>
 				<Para at={c.q1} q>What do you predict will happen, and why?</Para>
 			</Col>
-			<Col i={1} y={360}>
+			<Col i={1} y={350}>
 				<Para at={c.two}>A woman's corpus luteum stops working three weeks after fertilisation.</Para>
 				<Para at={c.healthy}>The embryo is healthy and is making hCG, and no hormones are given.</Para>
 				<Para at={c.q2} q>What do you expect to happen, and why?</Para>
@@ -121,7 +121,7 @@ export const SceneAttempt: React.FC = () => {
 };
 
 // ---------- 9a. Feedback, item one ----------
-const FU: TP = {x: 330, y: 290, w: 780};
+const FU: TP = {x: 300, y: 270, w: 860};
 const Dish: React.FC<{x: number; y: number}> = ({x, y}) => (
 	<>
 		<Overlay><ellipse cx={x} cy={y + 24} rx={96} ry={36} fill="#e6f1f7" stroke={INK_SOFT} strokeWidth={5} /></Overlay>
@@ -149,24 +149,25 @@ export const SceneFeedbackOne: React.FC = () => {
 	return (
 		<>
 			<Heading items={[[0, 'One: the blastocyst cannot implant']]} size={72} />
-			<Dish x={200} y={500} />
+			<Dish x={170} y={520} />
 			<UterusOutline p={FU} o={outline} />
 			<TractPair p={FU} thin={thin} o={prog(f, c.notready - 4, 24)} />
 			<Overlay>
-				<DrawPath d="M300,520 L420,590" at={6} dur={14} color={INK_SOFT} width={5} />
+				
 				<g opacity={prog(f, 16, 8)}>
 					<circle cx={fx} cy={fy} r={16} fill="#eef2f8" stroke="#6f7fa8" strokeWidth={5} />
 					<circle cx={fx + 5} cy={fy + 6} r={5} fill="#f3dcc2" />
 				</g>
 				<Cross x={hit[0]} y={hit[1] + 6} s={1.1} at={c.notready + 56} />
 			</Overlay>
-			<GreyTag at={c.nopreg} x={330} y={730} text="no pregnancy begins" size={40} />
+			<GreyTag at={c.nopreg} x={420} y={790} text="no pregnancy begins" size={40} />
 			<Enter at={c.prog} style={{position: 'absolute', left: 1180, top: 250, width: 640}}>
 				<div style={{background: '#fff8ea', border: `4px solid ${AMBER}`, borderRadius: 22, padding: '12px 26px 16px', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: AMBER_INK, lineHeight: 1.08}}>no progesterone,<br />lining not ready,<br />no attachment</div>
 			</Enter>
 			<WrongChip at={c.fine} x={1180} y={560} text="the blastocyst can't form" size={40} />
 			<WrongChip at={c.ifhcg} x={1180} y={650} text="hCG would fix it" size={40} />
-			<Say at={c.makes} x={1180} y={750} w={640} size={32} weight={600}>hCG is made once the embryo is implanting. This blastocyst cannot implant, so there is no hCG yet.</Say>
+			<GreyTag at={c.ifhcg + 24} x={1180} y={716} text="no progesterone, so the lining is not kept ready" size={28} />
+			<Say at={c.makes} x={1180} y={790} w={640} size={32} weight={600}>hCG is made once the embryo is implanting. This blastocyst cannot implant, so there is no hCG yet.</Say>
 			<div style={{display: 'none'}}>{[c.none, Arrow, Card, Hand, Label, Line, Stamp, TEAL, YELLOW, ROSE, O2, Tick, vis, pathOf, Bracket, SPERM_BLUE, EGG_LINE, Egg, Sperm, TestStick, GraphAxes, G, StackedSupply, PArt, DrawPath].length}</div>
 		</>
 	);
@@ -214,10 +215,10 @@ export const SceneFeedbackTwo: React.FC = () => {
 			<div style={{position: 'absolute', inset: 0, opacity: p2}}>
 				<Overlay>
 					<g transform="translate(96,250)">
-						<GraphAxes at={c.mo5} xlabel="time after fertilisation" labels />
+						<GraphAxes at={c.mo5} xlabel="time after fertilisation (not to scale)" labels />
 						<StackedSupply p={1} />
-						<line x1={700} x2={700} y1={72} y2={G.y0} stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 9" />
-						<text x={760} y={54} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32}} fill={INK}>5 months after fertilisation</text>
+						<line x1={730} x2={730} y1={72} y2={G.y0} stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 9" />
+						<text x={770} y={54} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32}} fill={INK}>5 months: much later</text>
 						<g transform="translate(110,70)"><rect width={34} height={22} rx={4} fill="#f0a830" stroke={TEAL} strokeWidth={5} /><text x={46} y={20} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32}} fill={INK}>from the placenta</text></g>
 					</g>
 				</Overlay>
@@ -321,9 +322,9 @@ export const SceneMemory: React.FC = () => {
 				<div style={{display: 'inline-block', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: '#2a5f8f', background: '#fffdf8', border: '3px solid #2a5f8f', borderRadius: 18, padding: '2px 24px 8px', whiteSpace: 'nowrap'}}>Next: how birth starts</div>
 			</Enter>
 			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.next + 14, 14)}}>
-				<UterusOutline p={{x: 1660, y: 750, w: 220}} />
+				<UterusOutline p={{x: 1720, y: 750, w: 160}} />
 				<Overlay>
-					<g transform="translate(1590,858)">
+					<g transform="translate(1660,850)">
 						<circle r={34} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={5} />
 						<line x1={0} y1={0} x2={0} y2={-22} stroke="#c4432f" strokeWidth={5} strokeLinecap="round" transform={`rotate(${f * 4})`} />
 						<circle r={4} fill={INK} />

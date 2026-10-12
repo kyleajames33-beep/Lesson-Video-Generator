@@ -53,7 +53,7 @@ export const SceneConjugation: React.FC = () => {
 					<ellipse cx={ring[0]} cy={ring[1]} rx={26} ry={18} fill="none" stroke="#4a2a70" strokeWidth={11} />
 					<ellipse cx={ring[0]} cy={ring[1]} rx={26} ry={18} fill="none" stroke={PURPLE} strokeWidth={6} />
 				</g>
-				<Fade at={c.passes + 14} out={c.count}><Label x={(bridgeL + bridgeR) / 2} y={midY + 70} at={c.passes + 14} text="a copy of some DNA" size={50} color={PURPLE} /></Fade>
+				<Fade at={c.passes + 14} out={c.count}><Label x={(bridgeL + bridgeR) / 2} y={CY1 + 290} at={c.passes + 14} text="a copy of some DNA" size={50} color={PURPLE} /></Fade>
 				<Fade at={c.called}><Label x={(bridgeL + bridgeR) / 2} y={CY1 - 28} at={c.called} text="conjugation" size={66} color={AMBER_INK} /></Fade>
 				{/* receiver now carries something new */}
 				<g opacity={beadP * (1 - prog(f, c.fis - 10, 10))}>

@@ -4,7 +4,7 @@ import {Callout} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Bracket, Card, DayCounter, DrawPath, Dots, Enter, Fade, FONT_DISPLAY, FONT_HAND, GraphAxes, Hand, Heading, INK, INK_SOFT, Label, LOBES, OvulationMarker, Overlay, PArt, PL, PSeq,
-	prog, Rail, Say, S, Scribble, Squiggle, TEAL, TEAL_INK, TractInset, TractPair, TR, TR3, tt, Underlined, Vessel, YELLOW, Zoom, G, G_RISE, along, PAPER_DEEP, VESSEL,
+	prog, vis, Rail, Say, S, Scribble, Squiggle, TEAL, TEAL_INK, TractInset, TractPair, TR, TR3, tt, Underlined, Vessel, YELLOW, Zoom, G, G_RISE, along, PAPER_DEEP, VESSEL,
 } from './shared';
 
 const CP = {x: 700, y: 222, w: 640};
@@ -42,7 +42,7 @@ export const SceneCleavage: React.FC = () => {
 			<DashRing pulse={pulse} />
 			<Overlay>
 				<Bracket x1={CP.x} x2={CP.x + CP.w} y={206} at={c.whole} down={false} color={AMBER_INK} />
-				<Label x={CP.x + CP.w + 90} y={206} at={c.whole + 12} text="same size" size={46} color={AMBER_INK} />
+				<Label x={CP.x + CP.w / 2} y={192} at={c.whole + 12} text="same size" size={46} color={AMBER_INK} />
 				{/* one split, drawn as a small demo cell */}
 				<g opacity={prog(f, c.copies - 14, 14)}>
 					<circle cx={px} cy={py} r={96 * (1 - sep * 0.3)} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={1 - sep} />
@@ -92,7 +92,7 @@ export const SceneBlastocyst: React.FC = () => {
 			<Overlay>
 				{/* teal ring round the outer cells, amber ring round the inner clump */}
 				<g opacity={outerOn}>
-					<circle cx={CC[0]} cy={CC[1]} r={CP.w * 0.37} fill="none" stroke={TEAL} strokeWidth={16} opacity={0.75} strokeLinecap="round" />
+					<circle cx={CC[0]} cy={CC[1]} r={CP.w * 0.405} fill="none" stroke={TEAL} strokeWidth={20} opacity={0.6} strokeLinecap="round" />
 				</g>
 				<Scribble cx={clump[0]} cy={clump[1]} rx={60} ry={52} at={c.clump} color={AMBER} seed={4} width={9} />
 				<g opacity={outerOn}><DrawPath d={`M${CC[0] + CP.w * 0.37 * 0.9},${CC[1] - 120} L1380,470`} at={c.outer + 8} dur={20} color={TEAL} width={5} /></g>
@@ -213,7 +213,7 @@ export const SceneProgesterone: React.FC = () => {
 						<circle cx={ycx} cy={ycy} r={46} fill="#f2c81f" opacity={wash * 0.62} />
 						<circle cx={ycx} cy={ycy} r={47} fill="none" stroke={YELLOW} strokeWidth={8} opacity={wash} />
 					</g>
-					<Callout from={[foll[0] - 14, foll[1] + 46]} to={[724, 640]} at={c.cl} text="corpus luteum" color="#a9760a" size={54} sub="yellow body" />
+					<Callout from={[foll[0] - 14, foll[1] + 46]} to={[900, 720]} at={c.cl} text="corpus luteum" color="#a9760a" size={54} sub="yellow body" />
 					<Vessel pts={vpts} at={c.rel - 4} dur={40} width={13} />
 					<Dots pts={vpts} at={c.rel + 4} n={7} period={72} color={AMBER} r={10} />
 					{LOBES.map((d, i) => (

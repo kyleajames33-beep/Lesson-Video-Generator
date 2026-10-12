@@ -33,8 +33,8 @@ export const SceneResponse: React.FC = () => {
 			<BeatLabel text="the response" at={4} color={TEAL} w={330} />
 			<Syringe x={SYX.x} y={SYX.y} w={SYX.w} vol={0.5} groups={[NO2G(no2), N2O4G(n2o4)]} tint={shade(conc / 16)} bursts={bursts} />
 			<Overlay>
-				<ColourStrip x={260} y={500} w={520} from={PALE} to={DEEP} t={conc / 16} at={-100} label="colour" h={40} mark={0.5} />
-				<Fade at={K5.fade}><SvgText x={810} y={528} text="fading" size={36} color={NO2_INK} at={K5.fade} /></Fade>
+				<ColourStrip x={260} y={500} w={380} from={PALE} to={DEEP} t={conc / 16} at={-100} label="colour" h={40} mark={0.5} />
+				<Fade at={K5.fade}><SvgText x={420} y={490} text="fading" size={36} color={NO2_INK} at={K5.fade} /></Fade>
 				<Dial x={96} y={580} label="NO_2" value={no2} text={String(Math.round(no2))} color={NO2_INK} at={-100} />
 				<Dial x={400} y={580} label="N_2O_4" value={n2o4} text={String(Math.round(n2o4))} color={N2O4_INK} at={-100} />
 				<NetBar xc={250} y={860} gap={fwd - rev} at={K5.faster} scale={5.5} lines={[{text: 'more join than split', at: K5.fade}]} />
@@ -83,14 +83,14 @@ export const SceneNewEq: React.FC = () => {
 			<BeatLabel text="the response" at={-100} color={TEAL} w={330} />
 			<Syringe x={SYX.x} y={SYX.y} w={SYX.w} vol={0.5} groups={[NO2G(nCount), N2O4G(pairs)]} tint={shade(no2 / 16)} bursts={bursts} />
 			<Overlay>
-				<ColourStrip x={260} y={500} w={520} from={PALE} to={DEEP} t={no2 / 16} at={-100} label="colour" h={40} mark={0.5} />
+				<ColourStrip x={260} y={500} w={380} from={PALE} to={DEEP} t={no2 / 16} at={-100} label="colour" h={40} mark={0.5} />
 				<Dial x={96} y={560} label="NO_2" value={no2} text={settled ? '≈12.5' : String(Math.round(no2))} color={NO2_INK} at={-100} />
 				<Dial x={400} y={560} label="N_2O_4" value={n2o4} text={settled ? '≈9.8' : String(Math.round(n2o4))} color={N2O4_INK} at={-100} />
 				<Fade at={K6.twelve}><SvgText x={96} y={776} text="≈ means about (rounded)" size={30} color={INK_SOFT} anchor="start" at={K6.twelve} hand={false} weight={600} /></Fade>
 				<Bars fwd={fwd} rev={rev} at={-100} scale={BAR_SCALE} x0={BX} />
 				<g opacity={prog(f, K6.s78 + 20, 14)}>
 					<path d={`M${BX + BARS.w},${BARS.base - 78 * BAR_SCALE} L${BX + BARS.gx},${BARS.base - 78 * BAR_SCALE}`} stroke={TEAL} strokeWidth={6} strokeDasharray="10 8" />
-					<text x={BX + (BARS.gx + BARS.w) / 2} y={BARS.base - 78 * BAR_SCALE - 70} textAnchor="middle" fill={TEAL} style={{fontFamily: 'Caveat, cursive', fontWeight: 700, fontSize: 52}}>equal, about 78</text>
+					<text x={BX + (BARS.gx + BARS.w) / 2} y={BARS.base - 78 * BAR_SCALE - 105} textAnchor="middle" fill={TEAL} style={{fontFamily: 'Caveat, cursive', fontWeight: 700, fontSize: 52}}>equal</text>
 				</g>
 				<Fade at={K6.higher}><SvgText x={690} y={500} text="both rates higher than before" size={30} color={INK} at={K6.higher} hand={false} weight={600} /><SvgText x={690} y={540} text="because everything is" size={30} color={INK} at={K6.crowd} hand={false} weight={600} /><SvgText x={690} y={578} text="more crowded" size={30} color={INK} at={K6.crowd + 10} hand={false} weight={600} /></Fade>
 				{/* number line for NO2: start, instant, settled */}
@@ -112,7 +112,7 @@ export const SceneNewEq: React.FC = () => {
 					<SvgText x={(nx(8) + nx(16)) / 2} y={NL.y - 70} text="between the start and the instant" size={32} color={TEAL} anchor="middle" at={K6.darker} />
 				</Fade>
 				<StageTable rows={rows} at={-100} heads={HEADS} gapAt={-100} />
-				<Fade at={K6.shifted}><SvgText x={1020} y={312} text="net reaction runs forward until the rates match" size={32} color={FWD} at={K6.shifted} hand={false} weight={600} /></Fade>
+				<Fade at={K6.shifted}><SvgText x={1130} y={272} text="net reaction runs forward until the rates match" size={32} color={FWD} at={K6.shifted} hand={false} weight={600} /></Fade>
 				<Fade at={K6.partly}><SvgText x={690} y={650} text="it only partly cancelled" size={36} color={TEAL} at={K6.partly} /><SvgText x={690} y={692} text="the squeeze" size={36} color={TEAL} at={K6.partly + 8} /></Fade>
 			</Overlay>
 			<Chip fwdTag={{text: 'shift right', at: K6.shifted, color: FWD}} />
@@ -147,8 +147,8 @@ export const SceneGraphs: React.FC = () => {
 			<Overlay>
 				<DrawPath d={`M${GX},236 L${GX},500 L${GX + GW + 20},500`} at={K7.moment - 30} dur={26} color={INK} width={5} />
 				<DrawPath d={`M${GX},600 L${GX},870 L${GX + GW + 20},870`} at={K7.moment - 20} dur={26} color={INK} width={5} />
-				<SvgText x={GX + 20} y={236} text="concentration (units)" size={32} color={INK_SOFT} at={K7.moment - 10} />
-				<SvgText x={GX + 20} y={596} text="rate (made-up units)" size={32} color={INK_SOFT} at={K7.moment - 4} />
+				<SvgText x={GX + 20} y={548} text="concentration (units)" size={32} color={INK_SOFT} at={K7.moment - 10} />
+				<SvgText x={GX + 20} y={912} text="rate (made-up units)" size={32} color={INK_SOFT} at={K7.moment - 4} />
 				<SvgText x={GX + GW + 36} y={500} text="time" size={42} color={INK_SOFT} at={K7.moment} />
 				<SvgText x={GX + GW + 36} y={870} text="time" size={42} color={INK_SOFT} at={K7.moment + 4} />
 				{[16, 12.5, 8, 4].map(v => <SvgText key={v} x={GX - 14} y={cy(v) + 11} text={String(v)} size={30} color={INK_SOFT} anchor="end" hand={false} at={K7.moment} />)}
@@ -161,13 +161,13 @@ export const SceneGraphs: React.FC = () => {
 				{/* the squeeze */}
 				<Fade at={K7.moment + 10}>
 					<path d={`M${gx(T_SQ)},248 L${gx(T_SQ)},${cy(16) - 14} M${gx(T_SQ) - 14},${cy(16) - 34} L${gx(T_SQ)},${cy(16) - 10} L${gx(T_SQ) + 14},${cy(16) - 34}`} fill="none" stroke={TEAL} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
-					<SvgText x={gx(T_SQ) - 22} y={272} text="squeeze" size={36} color={TEAL} anchor="end" at={K7.moment + 10} />
+					<SvgText x={gx(T_SQ) - 48} y={290} text="squeeze" size={36} color={TEAL} anchor="end" at={K7.moment + 10} />
 				</Fade>
 				<DrawPath d={`M${gx(T_SQ)},${cy(8)} L${gx(T_SQ)},${cy(16)}`} at={K7.jump} dur={12} color={NO2C} width={12} />
 				<DrawPath d={`M${gx(T_SQ)},${cy(4)} L${gx(T_SQ)},${cy(8)}`} at={K7.jump + 2} dur={12} color={GREY} width={9} />
 				<DrawPath d={`M${gx(T_SQ)},${ry(32)} L${gx(T_SQ)},${ry(128)}`} at={K7.step} dur={14} color={FWD} width={11} />
 				<DrawPath d={`M${gx(T_SQ)},${ry(32)} L${gx(T_SQ)},${ry(64)}`} at={K7.step + 4} dur={14} color={AMBER} width={5} />
-				<Fade at={K7.joining}><DrawPath d={scribbleEllipse(gx(T_SQ), ry(100), 44, 82, 6)} at={K7.joining} dur={22} color={TEAL} width={6} /><SvgText x={gx(T_SQ) + 60} y={ry(100)} text="joining steps up more" size={34} color={FWD} at={K7.joining + 8} /></Fade>
+				<Fade at={K7.joining}><DrawPath d={scribbleEllipse(gx(T_SQ), ry(100), 44, 82, 6)} at={K7.joining} dur={22} color={TEAL} width={6} /><SvgText x={gx(T_SQ) + 70} y={ry(128) - 24} text="joining steps up more" size={34} color={FWD} at={K7.joining + 8} /></Fade>
 				{/* the response */}
 				<DrawPath d={slide(no2f, cy)} at={K7.slides} dur={100} color={NO2C} width={12} />
 				<DrawPath d={slide(n2o4f, cy)} at={K7.creeps} dur={100} color={GREY} width={9} />

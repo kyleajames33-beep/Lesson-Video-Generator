@@ -70,8 +70,8 @@ export const SceneNonEq: React.FC = () => {
 	const f = useCurrentFrame();
 	const BASE = 720, BH = 240;
 	const fwdH = kf(f, [[K2.flask, BH], [K2.matched + 30, BH]]);
-	const fireH = kf(f, [[K2.one, 300], [K2.out + 40, 0]], false);
-	const toAsh = prog(f, K2.out + 20, 40);
+	const fireH = kf(f, [[K2.one, 300], [K2.term + 60, 150], [K2.photo + 30, 150], [K2.photo + 90, 0]], false);
+	const toAsh = prog(f, K2.photo + 40, 40);
 	const FW = 600;
 	return (
 		<>
@@ -94,10 +94,10 @@ export const SceneNonEq: React.FC = () => {
 					<DrawPath d={scribbleEllipse(1765, BASE - 150, 100, 190, 9)} at={K2.bal} dur={28} color={BAD} width={6} />
 					<SvgText x={1700} y={BASE - 372} text="nothing runs back" size={40} color={BAD} anchor="middle" at={K2.bal + 14} />
 				</Fade>
-				<Pill x={980} y={700} w={480} text="all used: nothing left to run" at={K2.out + 50} color={INK_SOFT} size={38} h={58} />
 			</Overlay>
 			<Plate src={A.CAMP_FIRE} natural={A.CAMP_NAT} crop={A.CAMP_CROP} width={FW} style={{left: 940, top: 240, opacity: (1 - toAsh) * prog(f, K2.fire, 16)}} />
 			<Plate src={A.CAMP_ASH} natural={A.CAMP_NAT} crop={A.CAMP_CROP} width={FW} style={{left: 940, top: 240, opacity: toAsh}} />
+			<Overlay><Pill x={1000} y={775} w={500} text="all used: nothing left to run" at={K2.photo + 90} color={INK_SOFT} size={38} h={56} /></Overlay>
 			<div style={{position: 'absolute', left: 96, top: 825}}><HandText text="non-equilibrium system" at={K2.term} size={70} color={DG} cps={26} /></div>
 			<Enter at={K2.term + 30} style={{position: 'absolute', left: 100, top: 905}}><T size={34} color={INK}>net change still going, no steady balance</T></Enter>
 			<Overlay>

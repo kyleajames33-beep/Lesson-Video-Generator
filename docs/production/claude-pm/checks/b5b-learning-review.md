@@ -181,3 +181,75 @@ With cut 1 and 2: about 1,120 words (363 s) plus 203 s: **about 9.4 minutes**. D
 - Does scene 8 give the reason a gamete cannot keep doubled chromosomes, and call the cells "left" and "right"?
 - Do the notes carry the 2^n conditions, "not new alleles" for both crossing over and assortment, and "usually different"?
 - Recount the narration after edits, confirm the runtime is not over 10 minutes (target about 9.4), and recheck for U+2014.
+
+## Re-review
+
+Reviewer: fresh independent reviewer (neither the design author nor the first reviewer). Scope: AI source review of `lessons/bio-m5-b05b.md` revision 2, read as a student starting Year 12 who has watched bio-m5-b01 to b05a, with `student-learning-review.md` and `teaching-playbook.md`. Narration recounted by script: 1,137 words in 20 voiced files (matches the design total; the design's per-scene counts for scene 11 (says 77, is 81) and scene 16 (says 85, is 91) are off, the total is right). U+2014 searched in the design: none. No stills, voiced preview or audio inspected. Human listening pending. Owner rule noted: attempt holds are now a 10 second countdown after "Pause here to answer."; nothing below asks for a longer hold.
+
+### Prior findings: all resolved
+
+| Prior item | Fixing line in revision 2 | Result |
+| --- | --- | --- |
+| BLOCKER 1, tracker chromatid naming | Scene 10: "After the second, each of four cells holds two chromosomes, and none has a sister chromatid, because the copies have been pulled apart." Row label "chromatids (joined copies only)", model 0, 8, 4, 0, human 0, 92, 46, 0; notes: "each chromosome a single strand (no sister chromatids)". No "one chromatid each" remains. | resolved |
+| BLOCKER 2, allele letter code | Scene 3: "the upper gene has a plum version and a teal version, and so does the lower gene... We label each pair of versions with a capital and a small letter, only to tell them apart." Dotted "same gene, two versions" link; letters not spoken; "letters are labels only, no dominance". | resolved |
+| SF3, scene 5 density | Split into 5a (41 words, what happens) and 5b (28, what it makes); side tags moved to a held caption. | resolved |
+| SF4, scene 6 density | 6a (22) and 6b (40); mitosis inset and same-end tag removed. | resolved |
+| SF5, "single chromosomes" | Scene 14: "each chromosome lines up on its own". Remaining "single" only means a single strand (scene 10, notes). | resolved |
+| SF6, scene 9 | 45 words; "in this cell the letters show that all four differ. Now switch crossing over off. Without it there would be only two kinds, each twice."; male and polar bodies are screen tags. | resolved (see SHOULD FIX 2 on the polar body tag) |
+| SF7, unqualified "different" | Scene 14 "usually different from each other"; notes bullet 8 "usually different". | resolved |
+| SF8, scene 11 link | "A pair's direction decides which partner goes into a particular gamete... Two pairs give two times two, which is 4... almost never match, but it is possible." Mini gametes labelled by line-up and end. | resolved |
+| SF9, scene 13 mismatch | Scene 13 cut. | resolved |
+| SF10, attempt names the process | Scene 15: "a cell that is making gametes, part-way through a division"; "meiosis" absent from stem and narration. | resolved |
+| SF11, 16,384 | Scene 16: "If you said 16,384, you used 14 for n, but n counts pairs." Chips match. | resolved |
+| SF12, "the copies" | Scene 18: "the sister chromatids, the two halves of each doubled chromosome." | resolved |
+| SF13, notes | Bullet 7 has "each facing either way... crossing over ignored"; bullets 2, 3 carry "not new alleles"; bullet 5 no sister chromatids. | resolved |
+| SF14, hook and 12 gametes | Hook: "a gamete with a mix of plum and teal bars"; scene 12 mixes plus the "plum and teal now mean the cell's two sets" tag. | resolved |
+| SF15, why a second division | Scene 8: "A gamete cannot keep doubled chromosomes, because it would carry twice the DNA of one set, so each cell divides again to share out the two chromatids of each chromosome."; cells called left and right. | resolved |
+
+### Fresh pass
+
+Consistency check as a student: set (one of each kind) holds in scenes 1, 2, 7, 18. Pair is always a homologous pair; sister chromatids are never "a pair". Chromatid is only used for joined copies, in the tracker and scenes 4, 5, 7, 8. Haploid after meiosis I is shown as "half the number: haploid (each chromosome still doubled)" with the "4 chromatids" tag and explained by the scene 8 DNA argument; this is coherent. The tracker obeys the b05a rule at every column. The allele display is readable: the dotted link makes A/a and B/b two genes, and "A b" is read as upper-plum, lower-teal.
+
+**BLOCKER**: none.
+
+**SHOULD FIX**
+1. Attempt hold is out of date against the new owner rule. Scene 15, the Attempt decision (line 16), the Practice section and the length estimate still say "about 90 seconds" and "Pause the video if you would like more time". Change to: narration ends "Pause here to answer." and a 10 second countdown starts after that line. Because 10 seconds is only a cue, keep every demand and condition for both items on screen throughout, keep the pause invitation, and keep the "no tracker, no strip, no tags" rule. Consider shortening the scene 15 narration, since the demands are on screen (see cuts).
+2. Scene 9 and design claim 11: the screen tag "female: one egg, three polar bodies that break down" overstates. Sources differ on whether the first polar body divides (see the science check, finding 1). Use "one egg and polar bodies that break down" so the tag cannot be marked wrong.
+3. The Decisions bullet "Narration" (line 20) still contains the placeholders "XXWORDS" and "XXMIN" and says "near 9.4 minutes". Fill from the length section. With the 10 second attempt the runtime is about 8.1 minutes (see Length), so the design should state the new figure.
+
+**NOTE**
+1. Scene 7 narration never says "haploid" (it is in the tag and in scene 9 "four haploid cells"). A student can reasonably ask "if the cells are already one set, why divide again?" Scene 8 answers it with the DNA argument, so no change is needed. If the voiced preview feels abrupt, add four words in scene 8: "Each cell is haploid but doubled."
+2. The Practice section still lists "14 or 49 combinations (... the spoken list names 14)"; scene 16 speaks 14 and 16,384 only. Align the Practice list to scene 16 (49 may stay as a screen-only chip or be dropped).
+3. Scene 6a says the nuclear envelope "breaks down" in metaphase one; textbooks place this at the prophase I to metaphase I transition. Acceptable at this level, and the design deliberately holds back prometaphase.
+4. Scene 8 "Each cell goes straight into the second division": fine for the model. Real human oocytes arrest, but the design holds that back on purpose.
+5. Re-teaching and term load: unchanged from the first review, acceptable. Scene 10 at 96 words remains the densest narration; keep the build to one column per cue.
+6. Item 2 readability and the six-chromosome choice stand.
+
+### Length and cuts
+
+At 185 wpm, 1,137 words is 368 s. Holds: attempt 10 s (new rule, was 90 s), key notes 75 s, other holds about 35 s. Total about 488 s, **about 8.1 minutes**, well inside 10. If the old 90 s attempt were kept the figure is 9.5 minutes, as the design states. Either way, these cuts (about 40 words) lose nothing causal, because each is carried by the screen or repeated in another scene:
+
+1. Scene 9: delete "In a female, only one of the four becomes an egg." (11). The tag carries it.
+2. Scene 10: replace the human sentence with "A human cell goes the same way, from 46 chromosomes to 23 in each of four cells." (cuts 13). The 92 and 46 chromatid figures stay on the tracker.
+3. Scene 11: delete "before crossing over adds more" (6). The screen tag and notes carry it.
+4. Scene 14: "identical to each other, barring errors" to "identical, barring errors" (3).
+5. Scene 7: delete "That is how meiosis one halves it." (7). The bracket "half the number: haploid" and scene 18 say it. Restore if the voiced preview loses the answer to the main question.
+
+Total 40 words (about 13 s). Optional: scene 15 can drop the repeated demand lists (about 25 words) now that the countdown is short and the demands are on screen, as long as "Pause here to answer." is the final line. Re-count and recheck U+2014 after edits.
+
+### Key notes, suggested version (207 words, hold 75 s)
+
+1. Meiosis turns one diploid cell (two sets) into four haploid cells (one set each). The DNA is copied once, then the cell divides twice.
+2. Prophase I: homologous chromosomes pair up, and crossing over swaps matching pieces between non-sister chromatids. Metaphase I: homologous pairs line up in the middle, each facing either way, independently of the other pairs (independent assortment). Both make new combinations of alleles, not new alleles. Only mutation makes new alleles.
+3. Anaphase I: homologous partners separate and the centromeres do not split. Each cell has half the chromosome number (one set), and each chromosome still has two chromatids.
+4. Meiosis II: the centromeres split and the sister chromatids separate. Result: four haploid cells, each chromosome a single strand.
+5. Human cell: 46 chromosomes; after copying, 46 chromosomes and 92 chromatids; then 23 in each of two cells; then 23 in each of four. Fertilisation joins two gametes: 23 + 23 = 46.
+6. With n homologous pairs, assortment alone gives 2^n combinations of whole chromosomes in a gamete (crossing over ignored; human 2^23, over 8 million).
+7. Mitosis: one division, two cells, same number, identical (barring errors). Meiosis: two divisions, four cells, half the number, usually different.
+8. Meiosis I splits the homologous pairs. Meiosis II splits the sister chromatids.
+
+This merges old bullets 2 and 3 and drops the "gametes almost never match" sentence (scene 11 carries it). Each bullet can be copied alone.
+
+### Verdict
+
+**Pass.** Both blockers and all thirteen should-fix items are resolved, and the revision introduced no vocabulary collision in set, pair, chromosome, chromatid or haploid; the tracker and allele display are consistent. Before recording: apply SHOULD FIX 1 to 3 (10 second attempt wording, the polar body tag, the placeholders), take the optional cuts, and keep the science check findings in view. Then repeat this review on the exact voiced preview for scenes 3, 5a, 5b, 6b, 8, 9, 10, 11, the attempt, 16 and 17. Human listening is still pending.

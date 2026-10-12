@@ -51,6 +51,7 @@ const KA = cues(sc('tube-a'), {nineH: 'nine units of hydrogen', nineI: 'nine of 
 export const SceneTubeA: React.FC = () => {
 	const f = useCurrentFrame();
 	const clock = kf(f, [[KA.rises, 0], [KA.nearly + 10, 13.4], [KA.nearly + 40, 16]], false);
+	const dial = Math.min(13.4, clock);
 	const s = modelA(clock);
 	const reveal = prog(f, 4, 20);
 	const run = f >= KA.rises;
@@ -64,10 +65,9 @@ export const SceneTubeA: React.FC = () => {
 			<Overlay>
 				<Fade at={KA.nineH}><Pill x={96} y={178} w={pillW('made-up numbers to show the pattern', 34) + 10} text="made-up numbers to show the pattern" at={KA.nineH} color={INK_SOFT} size={34} h={58} /></Fade>
 				<GasTube x={96} y={262} w={620} h={140} counts={{h: s.h, i: s.i, hi: s.hi}} seed={5} reveal={reveal} />
-				<SvgText x={96} y={236} text="tube A" size={44} color={INK_SOFT} at={6} />
 				<TubeKey x={110} y={478} at={KA.nineH - 20} />
 				<ColourStrip x={250} y={560} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - s.i) / 7)} at={KA.nineI} label="colour" />
-				<Dial cx={790} cy={410} r={40} clock={clock} at={KA.rises - 20} />
+				<Dial cx={790} cy={410} r={40} clock={dial} at={KA.rises - 20} />
 				{/* rate bars */}
 				<RateBars x0={140} base={840} scale={52} fwd={s.fwd} rev={s.rev} at={KA.fwdRate} fwdLabel={run ? s.fwd.toFixed(1) : 'about 4'} revLabel={run ? s.rev.toFixed(1) : '0'} eqAt={KA.nearly} subs={['makes HI', 'splits HI']} />
 				<Arrow x1={272} y1={840 - 195} x2={272} y2={840 - 110} at={KA.falls} color={FWD} width={8} out={KA.rises + 10} />
@@ -81,8 +81,8 @@ export const SceneTubeA: React.FC = () => {
 				<Curve g={GG} fn={t => modelA(t).hi} upTo={clock} color={HI_LINE} width={5} />
 				<Head g={GG} t={clock} v={s.i} color={I2C} show={run && clock < 16} />
 				<Head g={GG} t={clock} v={s.hi} color="#c9ccd2" show={run && clock < 16} />
-				<VLine g={GG} t={13} at={KA.thirteen} label="A settles about 13" color={INK_SOFT} dy={-44} size={34} />
-				<Fade at={KA.settles}><SvgText x={GG.px(13) + 14} y={GG.py(11.2)} text="near enough" size={36} color={INK_SOFT} at={KA.settles} /></Fade>
+				<VLine g={GG} t={13} at={KA.thirteen} label="A settles about 13" color={INK_SOFT} dy={-30} size={34} />
+				<Fade at={KA.settles}><SvgText x={GG.px(13) + 14} y={GG.py(10.3)} text="near enough" size={36} color={INK_SOFT} at={KA.settles} /></Fade>
 				<NoteCard x={1220} y={402} w={580} lines={['each reaction uses 1 H_2 and 1 I_2', 'and makes 2 HI']} at={KA.thirteen + 30} color={INK} size={30} />
 				<NoteCard x={1220} y={512} w={580} lines={['settles = almost stops changing']} at={KA.settles} color={TEAL} size={30} />
 				<StageTable rows={rows} at={KA.nineH - 20} />
@@ -111,21 +111,21 @@ export const SceneTubeB: React.FC = () => {
 				<SvgText x={96} y={236} text="tube A: no catalyst" size={42} color={INK_SOFT} at={4} />
 				<GasTube x={96} y={252} w={620} h={110} counts={{h: sa.h, i: sa.i, hi: sa.hi}} seed={5} reveal={0.85} />
 				<Fade at={KB.now}>
-					<SvgText x={96} y={494} text="tube B: with the metal catalyst" size={42} color={METAL_DARK} at={KB.now} />
+					<SvgText x={96} y={520} text="tube B: with the metal catalyst" size={42} color={METAL_DARK} at={KB.now} />
 				</Fade>
 				<g opacity={prog(f, KB.now, 16)} transform={`translate(0,${(1 - prog(f, KB.now, 16)) * 30})`}>
-					<GasTube x={96} y={510} w={620} h={110} counts={{h: sb.h, i: sb.i, hi: sb.hi}} seed={9} heavy />
+					<GasTube x={96} y={536} w={620} h={110} counts={{h: sb.h, i: sb.i, hi: sb.hi}} seed={9} heavy />
 				</g>
-				<Fade at={KB.tenX}><SvgText x={96} y={680} text="its rates are x10 at the same mixture" size={40} color={METAL_DARK} at={KB.tenX} /></Fade>
+				<Fade at={KB.tenX}><SvgText x={96} y={706} text="its rates are x10 at the same mixture" size={40} color={METAL_DARK} at={KB.tenX} /></Fade>
 				{/* play button: the same film at ten times the speed */}
 				<Fade at={KB.film}>
-					<circle cx={170} cy={436} r={36} fill="#fffdf8" stroke={TEAL} strokeWidth={6} />
-					<path d="M158,418 L158,454 L190,436 Z" fill={TEAL} />
-					<SvgText x={224} y={450} text="the same film at x10 speed" size={42} color={TEAL} at={KB.film} />
+					<circle cx={170} cy={440} r={36} fill="#fffdf8" stroke={TEAL} strokeWidth={6} />
+					<path d="M158,422 L158,458 L190,440 Z" fill={TEAL} />
+					<SvgText x={224} y={454} text="the same film at x10 speed" size={42} color={TEAL} at={KB.film} />
 				</Fade>
-				<ColourStrip x={250} y={740} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sa.i) / 7)} at={KB.any} label="A" />
-				<ColourStrip x={250} y={800} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sb.i) / 7)} at={KB.any} label="B" />
-				<TubeKey x={110} y={728} at={KB.same} scale={false} />
+				<ColourStrip x={250} y={782} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sa.i) / 7)} at={KB.any} label="A" />
+				<ColourStrip x={250} y={838} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sb.i) / 7)} at={KB.any} label="B" />
+				<TubeKey x={110} y={752} at={KB.same} scale={false} />
 				<Dial cx={790} cy={420} r={40} clock={blueClock} at={KB.any - 10} />
 				{/* graph */}
 				<GraphAxes g={GG} at={4} />
@@ -136,8 +136,8 @@ export const SceneTubeB: React.FC = () => {
 				<Curve g={GG} fn={t => modelA(t).hi} upTo={clock} color={HI_LINE} width={4} opacity={0.9} />
 				<Curve g={GG} fn={t => modelB(t).i} upTo={clock} color={I2C} width={10} />
 				<Curve g={GG} fn={t => modelB(t).hi} upTo={clock} color={HI_LINE} width={10} />
-				<VLine g={GG} t={13} at={KB.div} label="A settles about 13" color={INK_SOFT} dy={-44} size={34} />
-				<VLine g={GG} t={1.3} at={KB.onept} label="B about 1.3" color={METAL_DARK} dy={-44} size={34} dx={30} anchor="start" />
+				<VLine g={GG} t={13} at={KB.div} label="A settles about 13" color={INK_SOFT} dy={-30} size={34} />
+				<VLine g={GG} t={1.3} at={KB.onept} label="B about 1.3" color={METAL_DARK} dy={GG.h - 8} size={34} dx={14} anchor="start" />
 				<Fade at={KB.follows}>
 					<path d={`M${GG.x},${GG.py(14)} L${GG.x + GG.w},${GG.py(14)}`} stroke={TEAL} strokeWidth={3.5} strokeDasharray="12 9" />
 					<SvgText x={GG.x + GG.w - 4} y={GG.py(14) + 36} text="same level" size={38} color={TEAL} anchor="end" at={KB.follows} />
@@ -158,7 +158,7 @@ export const SceneSameMix: React.FC = () => {
 	const grow2 = kf(f, [[KM.ten2, 0.2], [KM.is2 + 14, 2]]);
 	const gO = kf(f, [[KM.tenUn, 1], [KM.tenUn + 40, 10]]);
 	const shrink = prog(f, KM.stops, 30);
-	const sc2 = 1 - 0.5 * shrink;
+	const sc2 = 1 - 0.3 * shrink;
 	const BASE = 770, SCALE = 90;
 	return (
 		<>
@@ -210,9 +210,9 @@ export const SceneLimited: React.FC = () => {
 				<GraphAxes g={GL} at={4} yLabel="hydrogen iodide (units)" />
 				<Curve g={GL} fn={t => modelA(t).hi} upTo={16} color={HI_LINE} width={5} />
 				<Curve g={GL} fn={t => modelB(t).hi} upTo={16} color={HI_LINE} width={11} />
-				<SvgText x={GL.px(1.6)} y={GL.py(14) - 18} text="tube B: catalyst" size={46} color={METAL_DARK} at={8} />
+				<SvgText x={GL.px(6)} y={GL.py(14) - 22} text="tube B: catalyst" size={46} color={METAL_DARK} at={8} />
 				<SvgText x={GL.px(7.2)} y={GL.py(13.1) + 70} text="tube A: no catalyst" size={46} color={INK_SOFT} at={8} />
-				<VLine g={GL} t={3} at={KT.clock} label="clock 3" color={INK} dy={-14} size={40} />
+				<VLine g={GL} t={3} at={KT.clock} label="clock 3" color={INK} dy={GL.h - 14} size={40} dx={12} anchor="start" />
 				<Fade at={KT.ten}><Head g={GL} t={3} v={aV} color="#c9ccd2" r={13} /><SvgText x={x3 + 22} y={GL.py(aV) + 50} text="about 10" size={46} color={INK} at={KT.ten} /></Fade>
 				<Fade at={KT.fourteen}><Head g={GL} t={3} v={bV} color="#c9ccd2" r={13} /><SvgText x={x3 + 22} y={GL.py(bV) - 20} text="14" size={46} color={INK} at={KT.fourteen} /></Fade>
 				<Fade at={KT.more} out={KT.long}>

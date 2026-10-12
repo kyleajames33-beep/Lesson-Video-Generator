@@ -1,9 +1,10 @@
 // G01 scenes 5 to 7: burning glucose worked example, how strong the pull is, heading versus speed.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {DrawPath, Enter, FONT_HAND, HandText, INK, INK_SOFT, prog} from '../../kit';
+import {DrawPath, Enter, FONT_HAND, HandText, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {cues} from '../../cues';
 import {DG, HEAT, SPREAD, kf, sc, Heading} from './common';
+import * as A from './assets';
 import {AnswerBox, Fade, GFormula, GivensCard, GuideBar, LevelDiagram, Overlay, Panel, Pill, ReactionBox, RateBar, StageTabs, Sub, SvgText, T, TEAL, rbPos, ClockCal} from './parts';
 
 const EQ_BURN = 'C_6H_12O_6(s) + 6O_2(g) → 6CO_2(g) + 6H_2O(l)';
@@ -122,18 +123,21 @@ const Bowl: React.FC<{cx: number; cy: number; at: number}> = ({cx, cy, at}) => (
 );
 export const SceneHeading: React.FC = () => {
 	const f = useCurrentFrame();
-	const barH = kf(f, [[K7.still, 300], [K7.gone + 10, 0]], false);
+	const barH = kf(f, [[K7.still, 300], [K7.gone - 20, 300], [K7.gone + 20, 0]], false);
+	const toAsh = prog(f, K7.gone, 30);
 	return (
 		<>
 			<Heading text="Where it heads, not how fast" at={4} />
+			<Plate src={A.CAMP_FIRE} natural={A.CAMP_NAT} crop={A.CAMP_CROP} width={380} style={{left: 96, top: 300, opacity: (1 - toAsh) * prog(f, 2, 14)}} />
+			<Plate src={A.CAMP_ASH} natural={A.CAMP_NAT} crop={A.CAMP_CROP} width={380} style={{left: 96, top: 300, opacity: toAsh}} />
 			<Overlay>
-				<RateBar x={170} base={700} h={barH} w={120} color={HEAT} label="burning rate" labelColor={HEAT} at={K7.still - 6} />
+				<RateBar x={500} base={640} h={barH} w={100} color={HEAT} label="burning rate" labelColor={HEAT} at={2} />
 				<Pill x={96} y={230} w={460} text="non-equilibrium" at={K7.still} out={K7.gone} color={HEAT} size={46} h={66} />
 				<Pill x={96} y={230} w={560} text="static: both rates zero" at={K7.gone} color="#7b5c3a" size={46} h={66} />
-				<Fade at={K7.gone}><SvgText x={96} y={800} text="the C1 case: finished, nothing running" size={38} color="#7b5c3a" at={K7.gone + 12} /></Fade>
-				<Compass cx={520} cy={440} r={105} at={K7.head} />
-				<SvgText x={520} y={590} text="where it ends up" size={50} color={HEAT} anchor="middle" at={K7.head + 20} />
-				<Pill x={300} y={630} w={520} text="ΔG = −2881: heading" at={K7.head + 40} color={HEAT} size={46} h={70} />
+				<Fade at={K7.gone}><SvgText x={96} y={800} text="finished: nothing running" size={42} color="#7b5c3a" at={K7.gone + 12} /></Fade>
+				<Compass cx={730} cy={400} r={90} at={K7.head} />
+				<SvgText x={720} y={535} text="where it ends up" size={46} color={HEAT} anchor="middle" at={K7.head + 20} />
+				<Pill x={450} y={640} w={380} text="ΔG = −2881: heading" at={K7.head + 40} color={HEAT} size={42} h={66} />
 				<g transform="translate(1150,700) scale(2) translate(-1150,-700)"><Bowl cx={1150} cy={700} at={K7.bowl} /></g>
 				<ClockCal cx={1100} cy={340} r={100} at={K7.bowl + 10} />
 				<Pill x={1500} y={560} w={340} text="speed: very slow here" at={K7.fast} color="#8a5a00" size={42} h={70} />
