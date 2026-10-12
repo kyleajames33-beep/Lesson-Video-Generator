@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B2c-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b2c/lesson.json",
+  "lessonSha256": "07879a4ad1b39e0bef0aad98b132f7fe6647b6eeaeec65c8f8569f338366a84d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b2c/lesson.production-brief.json",
+    "sha256": "8ee711f6b2e82c502475a3a6e3ec18e31ce2507e598e0696896caca38dfa4c9d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A glass of milk sits on a warm bench. At first it's fine. Within a day or two it smells sour. But that milk started with only a few bacteria, and a bacterium has no partner to join with. So how does one cell make another cell? And once it can, how does that become a crowd?",
+      "hash": "b64b50dbe54e",
+      "textSha256": "b64b50dbe54e353e6950c9e0a98cd443d3825f5b4eb70702497a9dd24fa315c8",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/hook.b64b50dbe54e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/hook.b64b50dbe54e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/hook.b64b50dbe54e.generation.json",
+      "plannedRequestSha256": "7e921eea1d79d7e059e13728d87b1718c75b2513f1b12dc3a32ab815a6700ef5"
+    },
+    {
+      "id": "problem-copy",
+      "parentSceneId": "problem-copy",
+      "text": "In the first video of this series you saw this as an example of copying. Now let's see how it works, step by step. Here is one bacterium. Its DNA is a single loop, lying in the cell. Suppose the cell simply pinched in half. One half would get the loop, and the other half would get nothing. The DNA holds the instructions a cell needs to grow and work, so a cell with none can't. So the first step is to copy the DNA, and now there are two identical loops.",
+      "hash": "d9831608c491",
+      "textSha256": "d9831608c491bad4e5a6d80b7f1e531ca141d89dd06481718892652126852d05",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/problem-copy.d9831608c491.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/problem-copy.d9831608c491.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/problem-copy.d9831608c491.generation.json",
+      "plannedRequestSha256": "0491ca58c367b5b4dc5bbdf5470d94cc5b7d4c89a618b0f8d256c6c14f1255ea"
+    },
+    {
+      "id": "share-split",
+      "parentSceneId": "share-split",
+      "text": "The cell grows longer, and the two loops move apart, one towards each end. Then a new wall grows across the middle and pinches the cell in two. Each new cell has its own loop, so each is a complete bacterium. This is called binary fission. Binary means two, and fission means splitting. It's asexual: one parent, nothing joins, and the two new cells are clones of the parent, apart from rare copying errors.",
+      "hash": "71735d868ecd",
+      "textSha256": "71735d868ecdde021161ae76f80755c5f2e78c28585cdef38c75aed3e4d25119",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/share-split.71735d868ecd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/share-split.71735d868ecd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/share-split.71735d868ecd.generation.json",
+      "plannedRequestSha256": "3757a3b0e605791f2184c6989403ccbe28f87f608272a690a5f7e09ebd438b2b"
+    },
+    {
+      "id": "doubling",
+      "parentSceneId": "doubling",
+      "text": "Now, how fast? In warm conditions with plenty of food, some bacteria can divide as often as every 20 minutes. Follow one cell. After 20 minutes there are two. Each of those splits in the next 20 minutes, so there are four, then eight, then sixteen. Every time, all the cells split, so the whole crowd doubles. So how many cells after 3 hours? Three hours is 180 minutes. Each doubling takes 20 minutes, so we count how many 20-minute steps fit into 180 minutes. 180 divided by 20 is 9, so that's nine doublings. Each doubling multiplies the crowd by 2, so nine doublings means nine 2s multiplied together, 2 to the power 9, which is 512 cells. Keep going for 10 hours and that's thirty doublings, about a billion cells, but only if the food never runs out. In real milk, the acid and other waste build up, so growth slows and stops.",
+      "hash": "2ebe641cd83a",
+      "textSha256": "2ebe641cd83aef3d79e042246536c80e604be2494548f24a261842a7c7a11494",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/doubling.2ebe641cd83a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/doubling.2ebe641cd83a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/doubling.2ebe641cd83a.generation.json",
+      "plannedRequestSha256": "6052303d5e78f7d17fd2cfd2164128b506726763c3d8155c998825abc1d85cb0"
+    },
+    {
+      "id": "yeast-budding",
+      "parentSceneId": "yeast-budding",
+      "text": "Yeast is a fungus that lives as a single cell. Baker's yeast, the kind used to make bread, usually reproduces by budding when sugar is plentiful. A small bump, called a bud, grows out from the side of the parent cell. In a yeast cell the DNA is inside a nucleus, a small compartment that holds it. The yeast copies its DNA, and one copy moves into the bud. The bud grows bigger, using materials from the parent. Then a wall forms across the narrow neck, and the bud breaks away as a new cell, a clone of its parent. The steps are the same as in fission: copy, share, split. But there's one difference. In fission, the parent becomes two new cells. In budding, the parent carries on, and a new cell grows from it.",
+      "hash": "e61513c32c96",
+      "textSha256": "e61513c32c9674a58f909433bb87c4d3efc8547bfd290aa1a704f72a37028a07",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/yeast-budding.e61513c32c96.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/yeast-budding.e61513c32c96.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/yeast-budding.e61513c32c96.generation.json",
+      "plannedRequestSha256": "6c7e36cb59276bf0f863a601b1591f296e7ef06b9eda8aabac8b536c5788b4f2"
+    },
+    {
+      "id": "protist-fission",
+      "parentSceneId": "protist-fission",
+      "text": "Protists are a mixed group of living things that are not animals, plants or fungi, and many of them live in pond water. Some are single cells. An amoeba is a shapeless cell that crawls along. It copies its DNA, inside its nucleus, then pulls apart into two amoebae. That's binary fission again. A paramecium is a slipper-shaped cell covered in tiny hairs. It copies its DNA, then divides across the middle, so each new cell gets its own copy.",
+      "hash": "facb6ea5341b",
+      "textSha256": "facb6ea5341bc8d340e265ccf69fb4310034dc42d1dccd2742ea33372da5bdbe",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/protist-fission.facb6ea5341b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/protist-fission.facb6ea5341b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/protist-fission.facb6ea5341b.generation.json",
+      "plannedRequestSha256": "76f07517971b8b93844fb421a85cb724f53b24bfb46b788d42f12af0885deb07"
+    },
+    {
+      "id": "acineta",
+      "parentSceneId": "acineta",
+      "text": "And a few protists reproduce by budding, such as the stalked Acineta, which releases a small swimming bud. So the same two methods turn up in very different organisms. Copy, share, split.",
+      "hash": "43bc0722149e",
+      "textSha256": "43bc0722149ecb954fe63f6d397864bc08440c1e7c93ed9ae580fa0d986374f5",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/acineta.43bc0722149e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/acineta.43bc0722149e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/acineta.43bc0722149e.generation.json",
+      "plannedRequestSha256": "be1970fda9ad320dc5e309d420890e0a85ea420ebcb9851cdd7df8ac0acce144"
+    },
+    {
+      "id": "conjugation",
+      "parentSceneId": "conjugation",
+      "text": "One more thing about bacteria. Sometimes two bacteria touch, and a thin bridge forms between them. One cell passes a copy of some of its DNA across to the other. This is called conjugation. Now count the cells. Before, there were two. After, there are still two. Nothing divided, so no new cell was made. For a single-celled organism, making a new individual means making a new cell. So conjugation isn't reproduction. It changes what the cells carry, so it can spread a feature through a crowd, such as resistance to an antibiotic, which means surviving a drug that kills bacteria or stops them growing. Fission makes more cells. Conjugation changes cells that already exist. Fast copying makes lots of cells, but copies of one cell are alike, apart from rare errors.",
+      "hash": "56d53d5bea94",
+      "textSha256": "56d53d5bea94f517249fe42bb2d0481882aa30c5bdc375894ce9b79a59fd8674",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/conjugation.56d53d5bea94.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/conjugation.56d53d5bea94.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/conjugation.56d53d5bea94.generation.json",
+      "plannedRequestSha256": "8f608523985f44b4d914ef5159ff3cb3b9f8ae40596b08590574f8ee43db0e47"
+    },
+    {
+      "id": "same-pattern",
+      "parentSceneId": "same-pattern",
+      "text": "Put the three side by side. A bacterium, a yeast and a paramecium each copy their DNA, share the copies and split, and when they reproduce this way no cell joins another.",
+      "hash": "db0e6ad5d22f",
+      "textSha256": "db0e6ad5d22f6220d343243d6c1529e53c3175ec836c0cf655534de518413f0b",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/same-pattern.db0e6ad5d22f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/same-pattern.db0e6ad5d22f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/same-pattern.db0e6ad5d22f.generation.json",
+      "plannedRequestSha256": "844861e6ba3a4e9ed1430391e3ae86f04994d48bff965018b6c4c085630359b7"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Three situations. One: a scientist watches a bacterium split into two cells. One new cell has one loop of DNA, and the other has none. Which step went wrong first, copy, share or split, and what will the cell with no DNA be unable to do? Two: two bacteria lie side by side. A thin bridge forms between them, and one passes a copy of a gene to the other. Then the bridge breaks and they separate. Is this reproduction? What changed, and what stayed the same? Three: a different bacterium divides every 40 minutes. One cell goes into a flask with plenty of food and space. Every cell divides on time, and none die. How many cells are there after 2 hours? Pause the video if you'd like more time.",
+      "hash": "cb62ce37641b",
+      "textSha256": "cb62ce37641bb5a6d46ff4576ad8ca502bf2356f943c38e3841c3adfecce15a3",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/attempt.cb62ce37641b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/attempt.cb62ce37641b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/attempt.cb62ce37641b.generation.json",
+      "plannedRequestSha256": "30c3f333dc963d70f19ea8a3191b0f107119163f5892103916ba6bc02d173f11"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "One, the copy step did not happen, so there was only one loop to give out. Sharing needs two loops, so copying is where it went wrong. A cell with no DNA has no instructions to follow, so it can't grow or work properly. If you said share, remember that sharing needs two loops to hand out. And if you said both cells would be fine because they split evenly, size isn't the point. A cell can look healthy and still hold no instructions. Two, no. Count the cells. Before, there were two, and after, there are still two. A copy of a gene moved, so one cell now carries something new. That is what changed. The number of cells stayed the same, and copy and share happened, but there was no split, so no new cell was made. If you said yes because a gene was passed on, remember that passing on a gene changes what a cell carries. It doesn't add a cell. Three, eight. Two hours is 120 minutes, and 120 divided by 40 is 3 doublings. One cell becomes 2, then 4, then 8. If you said 6, you may have multiplied the 3 by 2. If you said 9, you squared the 3. If you said 3, you counted the doublings but did not double the crowd. Each doubling doubles the whole crowd.",
+      "hash": "3a4be8c08aa0",
+      "textSha256": "3a4be8c08aa0a7ca70fa6f4a19f4b8cacb4b5b23754ebd23bdf9a84120267082",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/feedback.3a4be8c08aa0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/feedback.3a4be8c08aa0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/feedback.3a4be8c08aa0.generation.json",
+      "plannedRequestSha256": "81ba4a6368a00b8abae643488567779de93a210d207b5e3850b5d118daa960b5"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So, keep hold of one pattern. Copy the DNA first, then split. Copy, share, split. In fission, the parent becomes two new cells. In budding, a new cell grows from the parent. Conjugation copies and shares DNA too, but it never splits, so it makes no new cell. Fission makes more cells. Conjugation changes cells that already exist. Next: what happens after a mammal's egg is fertilised.",
+      "hash": "a8c6a221a659",
+      "textSha256": "a8c6a221a6591831bf46b955e9390b84a5535eda275e5cb194651c7c01981d72",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/memory.a8c6a221a659.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/memory.a8c6a221a659.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/memory.a8c6a221a659.generation.json",
+      "plannedRequestSha256": "b4bc5d54c7e2515be6951108007978362be327a4fc05d619d99faa17c350044d"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2c-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

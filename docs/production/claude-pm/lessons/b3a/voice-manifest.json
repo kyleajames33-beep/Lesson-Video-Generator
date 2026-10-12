@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B3a-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b3a/lesson.json",
+  "lessonSha256": "97ba94934e96ed7c49ba2b5a46eb36f250d45480c975dcaf79881286d6594c18",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b3a/lesson.production-brief.json",
+    "sha256": "3a606a327cdb7482e3d5abb889fdecb4874aa0244f038f2284ee3a7c6723b24a"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A home pregnancy test doesn't detect the embryo itself. It detects a chemical that the embryo makes and sends out. So here's the question. A sperm has just joined an egg. What has to happen next before there is a pregnancy? And why would a tiny embryo need to send a message at all?",
+      "hash": "285de39dd6b9",
+      "textSha256": "285de39dd6b9e4571f6fa1e8545a891d2592570d34acd2d8cceab99b2ceed3a4",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/hook.285de39dd6b9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/hook.285de39dd6b9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/hook.285de39dd6b9.generation.json",
+      "plannedRequestSha256": "f726baa11a5d7544184a671e1cad332eeb8a3c80cc004495e953e6a8f1b409df"
+    },
+    {
+      "id": "meeting",
+      "parentSceneId": "meeting",
+      "text": "Here's where it happens in a human. An ovary releases an egg, and the egg enters the oviduct, a tube that leads to the uterus, the organ where the baby will grow. Fertilisation usually happens in the oviduct, so that is where the sperm and egg meet.",
+      "hash": "575f9d70e5b9",
+      "textSha256": "575f9d70e5b990b86e4e3d9ce800928e764da8826aaf7ad9558defd3442f9d0c",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/meeting.575f9d70e5b9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/meeting.575f9d70e5b9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/meeting.575f9d70e5b9.generation.json",
+      "plannedRequestSha256": "8fc32b0214c16ac5d2868d2b25b282f5ee064f8c15c58a66dbb6259d3b467b4c"
+    },
+    {
+      "id": "gametes",
+      "parentSceneId": "gametes",
+      "text": "The sperm has a tail to swim, many mitochondria that release the energy for swimming, and a cap at the front, the acrosome, that holds enzymes. The egg is large because it carries a store of food. It cannot swim, so the oviduct moves it along.",
+      "hash": "52311883d574",
+      "textSha256": "52311883d5746912cc19cd045fc0796a4f4ba5ebd698cd4ca860e5967c6fb806",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/gametes.52311883d574.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/gametes.52311883d574.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/gametes.52311883d574.generation.json",
+      "plannedRequestSha256": "be1d1a5d87358622a35a7480fa4839726a1081a6bd46692839feaff15f1f5dab"
+    },
+    {
+      "id": "zygote",
+      "parentSceneId": "zygote",
+      "text": "When a sperm reaches the egg, the enzymes break down the egg's outer layer so the sperm can get in. Then the nuclei of the sperm and egg come together. One set of chromosomes plus one set makes a full two sets, in one new cell, the zygote.",
+      "hash": "e97fb3ceaf98",
+      "textSha256": "e97fb3ceaf9809848e9c4dc102087485bb577ff5b87ebd67b0d8c1d1cef6fcd3",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/zygote.e97fb3ceaf98.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/zygote.e97fb3ceaf98.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/zygote.e97fb3ceaf98.generation.json",
+      "plannedRequestSha256": "780347eede05257cfe49223210cb610606df8e2ddd09277d3c13e53b3370c11e"
+    },
+    {
+      "id": "cleavage",
+      "parentSceneId": "cleavage",
+      "text": "The zygote doesn't stay still. As the oviduct carries it towards the uterus, it divides. Each time, a cell copies its DNA and then splits, so every new cell keeps the full two sets. But the whole ball doesn't grow, because each cell splits again before it has grown, so the cells just get smaller with each split. This early splitting is called cleavage.",
+      "hash": "d30af228e305",
+      "textSha256": "d30af228e30571e2ab3d3426d5c0a9985a70282e1a12d2c497eb9c0ce09f9f67",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/cleavage.d30af228e305.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/cleavage.d30af228e305.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/cleavage.d30af228e305.generation.json",
+      "plannedRequestSha256": "efb317cbab816b35efea4c210df9583b18d3f1a65a15b8fd1e52394b148baabb"
+    },
+    {
+      "id": "blastocyst",
+      "parentSceneId": "blastocyst",
+      "text": "After about five days, it has become a hollow ball of cells, a blastocyst. Its outer cells will help build the placenta, the organ that will link it to its mother, and a small clump inside will become the embryo, the earliest form of the baby.",
+      "hash": "f7013f4b98fb",
+      "textSha256": "f7013f4b98fb67218873a2530c1d565ce48ece5f5c78d7f4790cf016fc5e2c58",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/blastocyst.f7013f4b98fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/blastocyst.f7013f4b98fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/blastocyst.f7013f4b98fb.generation.json",
+      "plannedRequestSha256": "c7528365a31b1580ad5bde74864a280e48ebf92b1e7b3cf26ae54167c004cdab"
+    },
+    {
+      "id": "lining",
+      "parentSceneId": "lining",
+      "text": "Next, the blastocyst needs somewhere to go. The wall of the uterus has a lining, rich in blood vessels, and that lining is its way in to the mother's supply. After the egg is released, the lining stays thick for about two weeks, but it welcomes a blastocyst for only a few of those days. So what keeps it thick?",
+      "hash": "85d0ede68723",
+      "textSha256": "85d0ede6872395835f6501096ccf5ff9c3790f5faca25ac2f7cbc893a0f7881e",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/lining.85d0ede68723.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/lining.85d0ede68723.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/lining.85d0ede68723.generation.json",
+      "plannedRequestSha256": "9d10b34b69b3218028e7cdf09f368f87c58430c950a2ddc426924ba5b673ac44"
+    },
+    {
+      "id": "progesterone",
+      "parentSceneId": "progesterone",
+      "text": "A hormone does. A hormone is a chemical messenger: one organ makes it, the blood carries it, and it changes what another organ does. When the egg was released, the small sac that held it stayed behind in the ovary and became the corpus luteum, which means yellow body. The corpus luteum releases the hormone progesterone, and progesterone keeps the lining thick and ready.",
+      "hash": "82a98af22890",
+      "textSha256": "82a98af228900be8df3a2156c7cca094fb788c057b29e776d336e6d801fa3fcf",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/progesterone.82a98af22890.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/progesterone.82a98af22890.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/progesterone.82a98af22890.generation.json",
+      "plannedRequestSha256": "cb94926ede7a6b0d8a0fd4eb1ae842acf4327a959fecd9ec546a579f3eeb9cb8"
+    },
+    {
+      "id": "implantation",
+      "parentSceneId": "implantation",
+      "text": "The blastocyst reaches the lining and attaches. Its outer cells grow into the lining, and the lining closes over it. This is implantation. A pregnancy begins from this point. From now on the embryo can begin to take food and oxygen from the lining around it, as well as what the egg carried. As the placenta forms, it will get them from its mother's blood. Implantation is not fertilisation. It happens about a week later, in the uterus. And if the lining isn't ready, the blastocyst can't attach, and no pregnancy begins.",
+      "hash": "e55b6dea21a2",
+      "textSha256": "e55b6dea21a20a91544b046e41b806e3c7e93b842398830de76d1eda7694df1e",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/implantation.e55b6dea21a2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/implantation.e55b6dea21a2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/implantation.e55b6dea21a2.generation.json",
+      "plannedRequestSha256": "d6ad3888bd9ee1cf96a2d99d6cbf498cdbb6aa102d18c875328c9380725b30d4"
+    },
+    {
+      "id": "hcg",
+      "parentSceneId": "hcg",
+      "text": "But the corpus luteum is short-lived. In a month with no pregnancy, it breaks down about two weeks after the egg is released. Progesterone falls, and the lining is shed. That's a period. If that happened now, the lining would be shed and the pregnancy would end. So the embryo sends a message. Once it is implanting, its outer cells make a hormone called hCG. The blood carries hCG to the ovary, and it tells the corpus luteum to keep working. So progesterone keeps flowing, and the lining stays. hCG acts on the corpus luteum. Progesterone acts on the lining. And hCG is the chemical a pregnancy test detects.",
+      "hash": "ffb3a638dd4c",
+      "textSha256": "ffb3a638dd4c445cf03b362e5bedf8b81abc0aa46783cbeacef82594dd9d1568",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/hcg.ffb3a638dd4c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/hcg.ffb3a638dd4c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/hcg.ffb3a638dd4c.generation.json",
+      "plannedRequestSha256": "9a94757a88b8b69970ab8fa17a1edeb095472675b43df821bb6e9879325d0a87"
+    },
+    {
+      "id": "handover",
+      "parentSceneId": "handover",
+      "text": "The corpus luteum doesn't last long enough for a whole pregnancy, so a new organ takes over. As the embryo grows, the placenta forms where it attached, built from the embryo's tissue and the mother's lining. Over the first two to three months after fertilisation, the placenta takes over making the progesterone, and the pregnancy no longer depends on the corpus luteum.",
+      "hash": "1c2941ffbac3",
+      "textSha256": "1c2941ffbac339bbc08ed9b9c97e66378e111501904c7752075786ab29dabb31",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/handover.1c2941ffbac3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/handover.1c2941ffbac3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/handover.1c2941ffbac3.generation.json",
+      "plannedRequestSha256": "0547e332ce0c4187b0abb52e49884c26aa224bbc7bd88c0174ec16d5c6bc2b58"
+    },
+    {
+      "id": "exchange",
+      "parentSceneId": "exchange",
+      "text": "Early in pregnancy, the developing baby is called an embryo, while its organs are forming. Later it is called a fetus, while it grows and matures. Later in pregnancy, the placenta feeds the fetus like this. The mother's blood and the baby's blood flow close together, with thin membranes between them, but they don't mix. Oxygen moves from the mother's blood, where there is more of it, into the baby's blood. Nutrients cross too. Carbon dioxide and other wastes go the other way.",
+      "hash": "eb5699362bb5",
+      "textSha256": "eb5699362bb5e2e3f9d70f361e778fbf96a71aa913ed4aaacb5c082bdf87d9ff",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/exchange.eb5699362bb5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/exchange.eb5699362bb5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/exchange.eb5699362bb5.generation.json",
+      "plannedRequestSha256": "371f61a64441ada254c10562c503293ede14acd2b4a525d107bc75b3b419db30"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Three situations. One: in a clinic, an egg is fertilised in a dish and grows normally into a blastocyst. It is placed in a woman's uterus, but her body is making no progesterone, and none is given. What do you predict will happen, and why? Two: a woman's corpus luteum stops working three weeks after fertilisation. The embryo is healthy and is making hCG, and no hormones are given. What do you expect to happen, and why? Then, what if the corpus luteum stopped working five months after fertilisation? Three: a student writes, \"In the placenta, the mother's blood flows into the fetus's blood, delivering oxygen.\" What is wrong with this, and how does oxygen really get to the fetus? Pause the video if you'd like more time.",
+      "hash": "22f9cc5777b9",
+      "textSha256": "22f9cc5777b915d59e7e68c31cea372a6ed76a2bd203f26c16723b9d4e8c52c1",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/attempt.22f9cc5777b9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/attempt.22f9cc5777b9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/attempt.22f9cc5777b9.generation.json",
+      "plannedRequestSha256": "1e323957d65341e6588d42f81dd0bb086bde0f19d152300d471946294d025584"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One, the blastocyst can't implant, so no pregnancy begins. The embryo is fine, but progesterone is what keeps the lining thick and ready, so without it the lining isn't ready to receive the blastocyst. If you said hCG would fix it, remember that the embryo makes hCG once it is implanting, and this blastocyst can't implant, so there is no hCG to rescue anything.",
+      "hash": "b077a92fdd12",
+      "textSha256": "b077a92fdd120ca06d8a8ee405245b4f612f62b7ff71bd1bfb5b2a9b2ed90349",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-one.b077a92fdd12.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-one.b077a92fdd12.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-one.b077a92fdd12.generation.json",
+      "plannedRequestSha256": "156efef56476d3d1d2d29f46ef480158a35125be264cc9a975640db31efaffa6"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two, at three weeks the pregnancy is likely to end. The corpus luteum was the main source of progesterone, so progesterone falls and the lining is shed. hCG can't help, because the corpus luteum it acts on has stopped working. At five months, the pregnancy carries on, because the placenta now makes the progesterone. If you said hCG keeps the lining, separate the two jobs. hCG keeps the corpus luteum going, and progesterone keeps the lining.",
+      "hash": "86d1047cde4f",
+      "textSha256": "86d1047cde4fbc4e387aa06e688b361de459fded609d6fbefa5735dccfaab630",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-two.86d1047cde4f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-two.86d1047cde4f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-two.86d1047cde4f.generation.json",
+      "plannedRequestSha256": "4165e2d4564365729d18bf52060aa5440f66e66bca079eb2409e9f430c6d21b1"
+    },
+    {
+      "id": "feedback-three",
+      "parentSceneId": "feedback-three",
+      "text": "Three, the two blood supplies don't mix. They flow side by side with thin membranes between them, and oxygen moves from the mother's blood, which has more of it, across into the fetus's blood.",
+      "hash": "04804a2b855b",
+      "textSha256": "04804a2b855b5d227958cd1f8a8de21cf02ba03b71317c3a5750fc5cf242c2fa",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-three.04804a2b855b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-three.04804a2b855b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-three.04804a2b855b.generation.json",
+      "plannedRequestSha256": "f79eb1970130bb83509fd802660b31483b2ff86897523ee844a00a5ca7580631"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "The egg is released, and the corpus luteum makes progesterone to get the lining ready. The blastocyst implants. The embryo makes hCG, which keeps the corpus luteum going. Then the placenta takes over the progesterone. To keep the hormones straight, progesterone is pro-gestation, because it holds the lining so a pregnancy can go on. And hCG is the embryo's message to the corpus luteum. Next time: how birth starts, and why labour speeds up.",
+      "hash": "276dac8dc09f",
+      "textSha256": "276dac8dc09f40c8772d2ff5b96defd0a0af4396bb7f93e90253da32c4d749c3",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/memory.276dac8dc09f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/memory.276dac8dc09f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/memory.276dac8dc09f.generation.json",
+      "plannedRequestSha256": "62484236cb9e58fe6ae2261757edc22c086fc17f01a1ef5fbf716f3579e4ceb4"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

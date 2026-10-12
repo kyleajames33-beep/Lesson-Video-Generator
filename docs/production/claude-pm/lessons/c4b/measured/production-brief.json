@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c4b/measured/lesson.json",
+    "lessonSha256": "a735d9cac44330b8eee09700d1381de665ce887526ee0a068105d4c200b9c771"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C4a and Year 11: dynamic equilibrium means equal non-zero rates in a closed system; rate means how much changes per second; the faster rate falls and the slower rate rises until they meet; a disturbance shows up as the moment of the change then the response; only collisions with enough energy make a reaction happen (C3); heating helps the reaction that takes in heat most (C3); a squeeze with unequal gas counts changes the two rates by different factors, and the equal-count H2 + I2 squeeze raised both by the same factor with no shift (C4a).",
+    "startsWith": "Two identical sealed tubes of hydrogen and purple iodine vapour, one with a pinch of metal catalyst, fading at very different speeds to the same pale shade.",
+    "stopsAfter": "Explaining a catalyst as an alternative pathway with a lower activation energy that raises the forward and reverse rates, so equilibrium is reached sooner at an unchanged mixture; telling product formed in a limited time from the amount at equilibrium; and stating what a catalyst does to a mixture already at equilibrium. No K or Q, no Boltzmann distribution, no mechanisms beyond one picture of a surface, no industrial trade-offs.",
+    "nextLesson": "C05: putting a number on where an equilibrium sits (not named in this video)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c04b.md"
+  ],
+  "teaching": {
+    "task": "Explain why a catalyst makes equilibrium arrive sooner without changing the mixture it arrives at, and say what it does to a mixture already at equilibrium.",
+    "causalExplanation": "A catalyst gives an alternative pathway with a lower activation energy. The valleys do not move, so the lowered ridge is the same height whether climbed forward or back, and both rates rise by the same factor. Rates that were equal at one mixture stay equal there, so the catalysed tube settles at the same mixture in a fraction of the time, and a catalyst added at equilibrium changes nothing. Product formed in a limited time can be higher with a catalyst, but the amount at equilibrium is the same.",
+    "conversationalApproach": "Two tubes that fade at different speeds to the same pale shade, a ridge picture of activation energy, one surface picture, a lower pass that speeds both directions, two tubes followed on a made-up clock (the same film at ten times the speed), a sorting board of every disturbance by whether the rates change by the same factor, and an unseen Haber vessel attempt.",
+    "openingDecision": "A catalyst makes a reaction faster. So why does it not give more product at equilibrium?",
+    "understandingCheck": "For two vessels of N2 and H2, one with iron: say which settles first, which has more ammonia early and after both have settled using activation energy, and what iron does to the forward rate, the reverse rate and the ammonia in a vessel already at equilibrium.",
+    "curriculumScope": "Explain the effect of a catalyst on a system at equilibrium using activation energy (Module 5). K, Q, Boltzmann distributions, surface mechanisms beyond one picture and industrial trade-offs are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, coded tubes, a coded energy profile with brackets, a metal-catalyst surface mini-scene, C2 to C4a rate bars, graphs with snapshot dots and a stage table. Colour key: H2 and HI pale grey, I2 purple, forward blue, reverse amber, equal teal, catalyst and iron metallic grey; tube A is drawn in a muted line weight and tube B in a heavier one.",
+    "transitionPlan": "The two tubes shrink away for the collision strip and the energy profile; the surface scene replaces the profile and the profile returns with a lower pass; the tube board returns with tube A first and tube B added over it; the board clears to the settled rate bars; the two-panel graph shows the catalyst added at equilibrium; the comparison board assembles one row at a time; the vessel vignette replaces the aids for the attempt; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Two coded sealed tubes of purple iodine and hydrogen, a metal catalyst crumple, swatch strips and the equation chip",
+      "teachingReason": "Poses how a catalyst can change how fast but not where the mixture ends",
+      "narrationCue": "pinch of a metal catalyst / a catalyst is / purple / the same pale shade / not where it ends",
+      "motionPurpose": "A catalyst crumple drops into the right tube, its purple fades quickly while the left fades slowly, then both reach the same pale shade joined by a dashed line",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; a grey crumple drops into the right tube on \"pinch of a metal catalyst\" with a pen ring and the definition chip; pen rings go to each tube on \"purple\" and the right tube fades quickly; both tubes reach the same pale purple and a dashed line joins the swatch strips on \"exactly the same pale shade\"; the equation chip draws with \"forward makes HI\" and \"reverse splits HI\"",
+      "motionTools": [
+        "CameraStage push",
+        "particle drop",
+        "swatch strip fill",
+        "ScribbleCircle",
+        "dashed line reveal"
+      ],
+      "holdPurpose": "Brief look at the matching pale shades"
+    },
+    {
+      "sceneId": "ridge",
+      "visualDecision": "adjust",
+      "visualReference": "C3 collision strip then a coded energy profile with two valleys, a ridge, brackets and a rolling ball",
+      "teachingReason": "Introduces activation energy as a ridge a collision must climb, in both directions",
+      "narrationCue": "Only collisions with enough energy / activation energy / the height is energy / go back",
+      "motionPurpose": "A slow bump bounces off and a hard bump reacts, then the profile draws on, a ball rolls part way up and back and then tips over, and an amber ball rolls back over the same ridge",
+      "motionRole": "explain",
+      "onScreenChange": "The collision strip shows a bounce and then a reaction; the profile draws on with labelled axes, a left valley \"H2 + I2\" and a lower right valley \"2HI\"; a blue bracket rises to the ridge top on \"activation energy\" with its plain meaning; a pen arrow runs up the axis and each valley is ringed on \"The height is energy\"; a ball rolls part way up and back, then another tips over; an amber bracket and ball go back over the same ridge on \"go back\"",
+      "motionTools": [
+        "collision animation",
+        "DrawPath curve",
+        "bracket draw",
+        "ScribbleCircle",
+        "ball roll"
+      ],
+      "holdPurpose": "Hold the ridge and brackets"
+    },
+    {
+      "sceneId": "route",
+      "visualDecision": "new",
+      "visualReference": "Coded metal-catalyst surface mini-scene: grey atom grid with H2 and I2 landing, splitting into atoms, pairing into HI and lifting away",
+      "teachingReason": "Gives the alternative pathway one concrete picture without inventing a mechanism",
+      "narrationCue": "alternative pathway / land on the metal / split into atoms / leave / unchanged",
+      "motionPurpose": "Molecules land on the metal grid, split into single atoms, pair into HI that lifts away, and the metal ends with a same metal tick",
+      "motionRole": "explain",
+      "onScreenChange": "The surface fills the width; H2 and I2 molecules land and split into single atoms with a pen ring on \"split\"; the atoms pair into HI molecules that lift away with a pen ring on \"leave\"; \"alternative pathway\" writes large with \"a different route from reactants to products\"; a \"same metal\" tick lands at the end",
+      "motionTools": [
+        "particle landing",
+        "molecule split",
+        "TravelingDotOnPath",
+        "ScribbleCircle",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the unchanged metal"
+    },
+    {
+      "sceneId": "lower-pass",
+      "visualDecision": "adjust",
+      "visualReference": "The profile returns with a second dashed curve through a lower pass, a same level tag on the valleys and a heat-of-reaction bracket",
+      "teachingReason": "Shows the catalyst lowers the ridge but leaves the valleys, and so the heat of reaction, where they were",
+      "narrationCue": "needs less energy / new pass is lower / have not moved / heat of the reaction",
+      "motionPurpose": "A dashed lower pass draws across, the valleys are ringed as unmoved, and a heat-of-reaction bracket with down and up arrows writes on",
+      "motionRole": "explain",
+      "onScreenChange": "The profile returns and a dashed curve through a lower pass labelled \"with catalyst\" draws on with a pen arrow marking the drop; the valleys are ringed with \"same level\" on \"have not moved\"; a bracket \"heat of reaction\" with the tag \"unchanged\" writes on, with \"down: gives out heat\" and \"up: takes in heat\" arrows",
+      "motionTools": [
+        "DrawPath curve",
+        "ScribbleCircle",
+        "bracket draw",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold so the two ridges can be compared"
+    },
+    {
+      "sceneId": "lower-pass-both-ways",
+      "visualDecision": "adjust",
+      "visualReference": "The profile with both ridges, a row of 20 collision slots for each route, x10 tags and a lower-start amber strip",
+      "teachingReason": "Shows a lower pass multiplies successful collisions by the same factor in both directions",
+      "narrationCue": "the same twenty collisions / ten times as many / going back / made-up factor",
+      "motionPurpose": "One slot lights over the high ridge and ten over the low pass with a x10 bracket, the amber ball climbs to the same new top, and an amber strip repeats the same factor from a lower start",
+      "motionRole": "explain",
+      "onScreenChange": "A row of 20 collision slots: one lights blue on \"one gets over\", ten light on the low-pass strip with a \"x10\" tag and bracket; the amber ball rolls back to the same new top on \"going back\"; a pen arrow shows the same drop in height from both brackets and they shorten together; an amber strip \"1 in 100 to 10 in 100\" repeats \"x10\" with \"higher ridge, fewer succeed, same factor\"; \"made-up factor\" appears",
+      "motionTools": [
+        "collision slots",
+        "DrawPath arrows",
+        "bracket draw",
+        "ball roll",
+        "tag pop"
+      ],
+      "holdPurpose": "Brief hold on the two strips"
+    },
+    {
+      "sceneId": "tube-a",
+      "visualDecision": "adjust",
+      "visualReference": "Tube board with tube A emphasised: particle view, rate bars in H2 used per tick, concentration curves for I2 and HI, a clock dial and a stage table",
+      "teachingReason": "Follows the uncatalysed tube from its start to a settled mixture at about 13 on the clock",
+      "narrationCue": "nine units / about four units / falls / starts at zero and rises / about thirteen / fourteen",
+      "motionPurpose": "The purple and pale dots pair into pale pairs, the forward bar falls from about 4 while the reverse rises from 0 until they nearly meet, and the I2 and HI curves draw on to plateaus",
+      "motionRole": "explain",
+      "onScreenChange": "The chip \"made-up numbers\" appears; tube A particle events run; the forward bar starts at about 4 and falls while the reverse starts at 0 and rises, closing in near 0.2 with the teal bracket on \"nearly equal\" and a clock dial ticking to about 13; the I2 curve falls from 9 to 2 and the HI curve rises from 0 to 14 under a dashed \"A settles\" line with \"near enough\"; the chips \"settles = almost stops changing\" and \"each reaction uses 1 H2 and 1 I2 and makes 2 HI\" appear; table rows \"A start\" and \"A settled\" write in teal on the spoken numbers",
+      "motionTools": [
+        "particle pairing",
+        "NumberTicker rate bars",
+        "lineGraph draw-on",
+        "clock dial",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the settled row and plateau"
+    },
+    {
+      "sceneId": "tube-b",
+      "visualDecision": "adjust",
+      "visualReference": "Tube B joins A in heavier outline, a x10 fast-forward clock, B curves squashed over A on the same axes and the 13 / 10 sum",
+      "teachingReason": "Shows the catalysed tube follows the same path ten times faster and settles in a tenth of the time",
+      "narrationCue": "ten times / thirteen divided by ten / one point three / same film",
+      "motionPurpose": "Tube B runs the same events ten times as fast, its curves draw over tube A in heavier weight at a tenth of the width, and a second dashed line lands at 1.3",
+      "motionRole": "explain",
+      "onScreenChange": "Tube B joins with a heavier outline; the same particle events run ten times as fast with a \"x10\" tag and a fast clock dial; the swatch strip fills quickly to the same pale shade; a play-button icon \"x10\" appears between the tubes on \"same film\"; B curves draw over the same axis with the pen tracing \"same curve, ten times narrower\"; \"B settles\" lands with \"13 / 10 = 1.3\"; a dashed line at 14 marks \"same level\"; the row \"B settled\" writes",
+      "motionTools": [
+        "particle speedup",
+        "lineGraph draw-on",
+        "clock dial",
+        "DrawPath trace",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the two plateaus and settle lines"
+    },
+    {
+      "sceneId": "same-mixture",
+      "visualDecision": "adjust",
+      "visualReference": "Rate bars at the settled mixture growing tenfold with sums, a second unequal pair growing tenfold, and a seesaw balance icon",
+      "teachingReason": "Explains why the catalysed tube settles at the same mixture: only equal rates stop the change",
+      "narrationCue": "a fifth / ten times a fifth is two / still equal / ten times unequal is still unequal",
+      "motionPurpose": "Tube A bars at 0.2 grow to 2 on a taller axis with sums, an unequal pair grows tenfold and stays unequal, then the bars shrink to the corner beside a balanced seesaw",
+      "motionRole": "explain",
+      "onScreenChange": "Tube A bars at 0.2 and 0.2 with the teal bracket; each grows to 2 on a taller axis with \"0.2 x 10 = 2\" under each bar while the old bars ghost; a second unequal pair grows tenfold with a \"x10\" tag and a pen bracket on the unchanged ratio \"still unequal, still moving\"; the bars shrink to the corner and a balanced seesaw appears with \"balance point: same mixture 2, 2, 14\"",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "bracket draw",
+        "ghost overlay",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the balance point"
+    },
+    {
+      "sceneId": "limited-time",
+      "visualDecision": "adjust",
+      "visualReference": "The two HI curves alone with a vertical pen line at clock time 3, two dots with about 10 and 14, brackets and a crossed wrong-answer chip",
+      "teachingReason": "Separates product formed in a limited time from the amount at equilibrium",
+      "narrationCue": "time three / about ten / fourteen / after a long time / same amount",
+      "motionPurpose": "A vertical line drops at time 3, two dots land on the curves with a bracket for more product, then the plateau lights with a zero-height bracket and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The HI curves return alone; a vertical pen line draws at clock time 3; two dots land with \"about 10\" (A) and \"14\" (B) and a bracket \"more product if the clock stops early\" with the tag \"early = before the slower tube has settled\"; on \"after a long time\" the plateau region lights with a zero-height bracket \"same amount at equilibrium\"; the chip \"a catalyst gives more product at equilibrium\" is crossed on \"same amount\"",
+      "motionTools": [
+        "lineGraph reuse",
+        "DrawPath line",
+        "bracket draw",
+        "Mark cross"
+      ],
+      "holdPurpose": "Brief hold on the plateau bracket"
+    },
+    {
+      "sceneId": "catalyst-at-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "Two-panel graph (concentration above, rate below) with a catalyst crumple at time 1, rate lines stepping to 2 together and a crossed response bracket",
+      "teachingReason": "Shows a catalyst added at equilibrium changes both rates together, so there is a moment of change but no response",
+      "narrationCue": "already settled / ten times bigger / still equal / moment of the change, but no response",
+      "motionPurpose": "The catalyst drops in at time 1, both rate lines step up together and stay level, the concentrations stay flat, and the response bracket is crossed out",
+      "motionRole": "explain",
+      "onScreenChange": "Flat concentration lines (H2, I2 at 2, HI at 14) and level rate lines at 0.2 with the teal bracket; at time 1 the crumple drops with a pen arrow; both rate lines step up together to 2 on a taller axis and stay equal; the concentration lines stay flat with a ring \"no change\"; the brackets \"the moment of the change\" and \"the response\" appear with the response bracket crossed and labelled \"none: neither rate pulls ahead\"",
+      "motionTools": [
+        "lineGraph draw-on",
+        "particle drop",
+        "DrawPath arrow",
+        "bracket draw",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the crossed response bracket"
+    },
+    {
+      "sceneId": "which-rates-change",
+      "visualDecision": "adjust",
+      "visualReference": "Three-row comparison board of paired rate bars with dropper, thermometer, plunger and catalyst icons, a small energy profile and shift arrows",
+      "teachingReason": "Sorts every disturbance by whether the rates change by different factors, so only some cause a shift",
+      "narrationCue": "one rate / both rates by different factors / higher ridge / same factor / nothing pulls ahead",
+      "motionPurpose": "Rows write on one at a time: one bar jumps, both bars grow unequally with the higher ridge ringed, and both bars grow by the same factor, then shift arrows touch rows one and two and a flat tag touches row three",
+      "motionRole": "explain",
+      "onScreenChange": "Row 1 \"add a reacting substance\" shows one bar jumping and the other staying; row 2 \"heat\" and \"squeeze, unequal gas counts\" show both bars growing by different factors with the longer gain highlighted and a small profile with the higher ridge ringed; row 3 \"catalyst\" and \"squeeze, equal gas counts\" show both bars growing by the same factor (x10, x4) with the teal bracket staying; on \"shifted\" a blue arrow touches rows 1 and 2 and a flat \"no shift\" tag touches row 3",
+      "motionTools": [
+        "row build",
+        "NumberTicker rate bars",
+        "ScribbleCircle",
+        "icon pop",
+        "arrow slide"
+      ],
+      "holdPurpose": "Hold the three rows"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Large handwritten aid with a signpost icon pointing from two tubes to the same pale shade",
+      "teachingReason": "Gives a speed, not destination, shortcut after the activation energy explains why",
+      "narrationCue": "shortcut / speed, not the destination / how soon",
+      "motionPurpose": "The aid writes on large with its condition tag and a signpost points from both tube icons to the same pale shade",
+      "motionRole": "explain",
+      "onScreenChange": "The aid writes on: \"A catalyst changes the speed, not the destination.\" with the condition tag; a signpost icon points from both tube icons to the same pale shade",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "DrawPath arrow"
+      ],
+      "holdPurpose": "Hold the aid for about 3 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded vessels A and B (B with iron pellets) and a settled vessel C with an iron pellet icon waiting, the Haber equation chip and two numbered questions",
+      "teachingReason": "Unseen transfer on speed versus amount with all conditions visible and no curves, arrows or ridge picture",
+      "narrationCue": "Your turn / Haber process / iron / stop the clock early / Pause",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "Vessels A and B side by side with the thermometer glyph, grey iron pellets in B, and vessel C \"already settled at equilibrium\" with a pellet icon waiting appear as each is named; the equation chip with the tags \"same start: N2 and H2 only\" and the settling note stays; the two numbered questions with every demand appear; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown (about 75 seconds)"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Vessels replay with a two-line ammonia graph, early and late markers, a small profile with ridge A and lower pass B, and crossed wrong-answer chips",
+      "teachingReason": "Explains which vessel settles first and why both end at the same amount",
+      "narrationCue": "Vessel B settles first / lower activation energy / same amount / how soon, not how much",
+      "motionPurpose": "Two ammonia curves draw with B rising first, an early line shows B above A, the plateau shows them equal, and the profile brackets shorten together",
+      "motionRole": "explain",
+      "onScreenChange": "The two ammonia curves draw on the same axes with B rising first and both reaching the same level; an early vertical line shows B above A and the late plateau shows equal; a small profile shows ridge A and lower pass B with both brackets shortening on \"same amount\"; \"a catalyst changes the speed, not the destination\" returns; the chips \"B ends with more ammonia\" and \"the same early on\" are crossed with correcting captions",
+      "motionTools": [
+        "lineGraph draw-on",
+        "DrawPath line",
+        "bracket draw",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the corrected graph"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Vessel C replay with both rate bars stepping up together, an unmoved ammonia dial and the profile with one lowered pass serving both directions",
+      "teachingReason": "Explains that iron added at equilibrium raises both rates by the same factor so nothing shifts",
+      "narrationCue": "raises the forward rate and the reverse rate by the same factor / stay equal / the amount of ammonia does not change",
+      "motionPurpose": "Both rate bars step up together with the teal bracket staying, the ammonia dial holds with a ring, and two wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "Vessel C replays; both rate bars step up together by the same factor with the teal bracket; the ammonia dial stays put with a pen ring; the profile shows the single lowered pass with an arrow forward and an arrow back; the chips \"shifts toward ammonia\" and \"only the forward rate rises\" are crossed as named with the caption \"both rates, same factor\"",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "ScribbleCircle",
+        "bracket draw",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the unchanged dial"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three question cards with a metal catalyst, a two-curve graph and a rate-pair icon, then the settled tube shaking with a next chip",
+      "teachingReason": "Packs the lesson into a reusable question order and hands off to putting a number on equilibrium",
+      "narrationCue": "speed or the mixture / same final level reached sooner / same factor or not / putting a number",
+      "motionPurpose": "Three cards write on one by one, then the settled tube shakes slightly and a next chip with a balance icon slides in",
+      "motionRole": "explain",
+      "onScreenChange": "Three question cards write on with the metal catalyst (\"catalyst: speed only, both ways\"), a graph of two curves reaching one plateau, and a rate-pair (\"other change: same factor or not?\"); on \"putting a number\" the settled tube shakes slightly and a \"Next\" chip with a balance icon appears",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "flask shake",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the three questions for about 3 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c4b-learning-review.md",
+      "sha256": "475794d519ac80958f96bbb7dbac29d50e8b2481c1810f1283f1a3175ca6ca06"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c4b-claude-science-check.md",
+      "sha256": "fc66c7adaef2aa146b802fb64a7e2ed186d0f500f6f99be8ee71c3b127dc760e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

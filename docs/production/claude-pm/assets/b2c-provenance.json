@@ -1,0 +1,70 @@
+[
+  {
+    "path": "public/assets/biology/b2c-amoeba-fission-1-v1.png",
+    "prompt": "Use case: scientific-educational. Naturalistic precise ink and watercolour scientific textbook plate, warm calm natural colours, fine drawn edges and delicate textured translucent washes matching the viewed strawberry botanical, green bacterium and cream yeast plates. Purple nuclei. No text, labels, numbers, arrows, watermarks, frame, shadow or background. Real transparent alpha background, isolated subject with at least 8 percent empty margin. Landscape canvas 1800 by 1200 if possible. One Amoeba proteus style cell centered at canvas center. Single pale warm cream slightly sage transparent cytoplasm, rounded broad irregular pseudopods, one large central darker purple disc nucleus, only a few small food vacuoles. Cell occupies about 55 percent canvas width and 55 percent height, horizontal balanced shape. This is first plate in an aligned division sequence. Single cell only.",
+    "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-520c5611-73f5-4dd7-805d-45feac9a6c7a.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "retakes": 1,
+    "retake_prompt": "Edit target: the attached amoeba plate. Remove ONLY the broad luminous blurred beige halo outside the cell. Outside its fine ink membrane edge must be fully transparent alpha, without glow or shadow or wash. Preserve the amoeba outline, purple nucleus, vacuoles, precise original position, scale and landscape canvas. No other changes. No text.",
+    "retake_raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-d404d4d0-0aaa-4334-9f08-09d36dd3dcf7.png",
+    "sha256": "06f90925ae8fbb3347b735332c4fd723a37104b4918d38ac69ea036eb3868187",
+    "notes": "Transparent padding to 1800x1200 and integer translation (-21,-30), no resampling, brings initial nucleus near the midpoint of stage 2 nuclei. Cleanup retake discarded: apparent glow was hidden RGB at alpha 0 and disappears on actual compositing. Original alpha preserved."
+  },
+  {
+    "path": "public/assets/biology/b2c-amoeba-fission-2-v1.png",
+    "prompt": "Use case: precise-object-edit. Edit target: attached first amoeba. Produce ONLY the second stage of its binary fission. Keep exact same landscape canvas, visual center, colour palette, ink line and watercolour texture, and overall biological scale. The amoeba retracts its pseudopods and rounds up into a broad oval, with only a shallow beginning pinch at the vertical middle. Exactly TWO purple nuclei now, one centered within each left and right half, same colour as original nucleus. Keep a few food vacuoles. Still ONE joined cell, not two. Preserve canvas alignment and original overall cell center. No lettering. Transparent background, no glow or outside wash or drop shadow; sharp clean ink membrane perimeter. This is a sequence plate, not a page of diagrams.",
+    "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-01af2e7f-b41d-424f-b2db-33890280ed6b.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "retakes": 0,
+    "retake_prompt": null,
+    "retake_raw_path": null,
+    "sha256": "b1581752d56f217e06ffd6b29645d3ade5e5b4a53fe30d731fa17a6ffa3983dc",
+    "notes": "Generated RGBA preserved. Centered transparent padding to 1800x1200, no resampling. Hidden RGB outside alpha does not appear on checkerboard. See b2c-qa for raw paths, exact prompts and inspection."
+  },
+  {
+    "path": "public/assets/biology/b2c-amoeba-fission-3-v1.png",
+    "prompt": "Edit target attached joined amoeba stage. FINAL division plate. Preserve this exact original canvas, each nucleus exactly at its current coordinates, same scale, painted texture and colour. ONLY open a narrow 35 pixel transparent gap down the vertical center of the cell where shallow pinch is now, completing separation into two cells. Round off cut edges gently, keep all outer contours and BOTH nucleus positions and sizes unchanged. Do not spread cells, enlarge cells, zoom, recenter, change food vacuoles or add pseudopods. Two cells, each one purple nucleus. No halo, clean alpha background.",
+    "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-b2242a9f-aae1-41a6-aa1a-08add697d3c8.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "retakes": 1,
+    "retake_prompt": "Edit target attached joined amoeba stage. FINAL division plate. Preserve this exact original canvas, each nucleus exactly at its current coordinates, same scale, painted texture and colour. ONLY open a narrow 35 pixel transparent gap down the vertical center of the cell where shallow pinch is now, completing separation into two cells. Round off cut edges gently, keep all outer contours and BOTH nucleus positions and sizes unchanged. Do not spread cells, enlarge cells, zoom, recenter, change food vacuoles or add pseudopods. Two cells, each one purple nucleus. No halo, clean alpha background.",
+    "retake_raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-89d8dbeb-7a3e-4fcf-b5e6-0585358360c7.png",
+    "selected_raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-89d8dbeb-7a3e-4fcf-b5e6-0585358360c7.png",
+    "initial_prompt": "Use case: precise-object-edit. Edit target: attached second-stage amoeba. Create ONLY final third plate: separate the central membrane neck into TWO separate smaller amoebae with a small transparent gap of about 50 pixels between them. Each daughter has exactly one purple nucleus, retaining nuclei at same left and right coordinates as reference. Keep daughter centers at the same left-half and right-half positions, same overall center at canvas center. Keep same canvas dimensions, horizontal orientation, ink and watercolour texture, pale cream sage colours, same scale, same vacuoles, modest rounded pseudopods returning. Do not enlarge or recenter either daughter. No labels or arrows. Real transparent background without exterior glow or blur or shadow. Two cells only.",
+    "sha256": "a5b27906ffae9738189a0f46f82b6bee36f815944a009411e947deac80eb5f40",
+    "notes": "One necessary registration resample (BICUBIC, scale 0.856748) aligns the daughter nucleus centers to stage 2 within approximately 1 pixel. Raw output retained. Same 1800x1200 padded canvas. Cell outlines naturally change during division and painted texture differs across generated plates, so this is anatomical registration, not pixel-identical artwork."
+  },
+  {
+    "path": "public/assets/biology/b2c-paramecium-v1.png",
+    "prompt": "Use case: scientific-educational. Naturalistic precise ink and watercolour scientific textbook plate, warm calm natural colours, fine drawn edges and delicate textured translucent washes matching the viewed strawberry botanical, green bacterium and cream yeast plates. Purple nuclei. No text, labels, numbers, arrows, watermarks, frame, shadow or background. Real transparent alpha background, isolated subject with at least 8 percent empty margin. Landscape canvas 1800 by 1200 if possible. One Paramecium caudatum scientific cutaway illustration, slipper shaped cell with horizontal long axis, single undivided cell. Fine regularly spaced short cilia around whole perimeter, delicate not shaggy. Pale cream gold cytoplasm with a visible oral groove recessed on lower side. One large dark purple kidney-shaped macronucleus at center and EXACTLY one much smaller dark purple circular micronucleus immediately beside it, distinct and clear. Few vacuoles, two subtle contractile vacuoles toward ends. Whole cell centered, occupies 65 percent width. Thin ink perimeter. Genuine transparent backdrop with no glow, no exterior wash, no dark vignette, no drop shadow. No fission furrow, no text.",
+    "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-ee552c57-36ce-4624-8279-03e84ec8e981.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "retakes": 0,
+    "retake_prompt": null,
+    "retake_raw_path": null,
+    "sha256": "952caf6d241ac9b2c1b4b63ee140cf94aeba69f3edfdba1eb583c40e41cb4bc7",
+    "notes": "Generated RGBA preserved. Centered transparent padding to 1800x1200, no resampling. Hidden RGB outside alpha does not appear on checkerboard. See b2c-qa for raw paths, exact prompts and inspection."
+  },
+  {
+    "path": "public/assets/biology/b2c-acineta-bud-v1.png",
+    "prompt": "Use case: scientific-educational. Naturalistic precise ink and watercolour scientific textbook plate, warm calm natural colours, fine drawn edges and delicate textured translucent washes matching the viewed strawberry botanical, green bacterium and cream yeast plates. Purple nuclei. No text, labels, numbers, arrows, watermarks, frame, shadow or background. Real transparent alpha background, isolated subject with at least 8 percent empty margin. Landscape canvas 1800 by 1200 if possible. One Acineta tuberosa stalked suctorian protist, precise side-view transparent cutaway illustration. Adult pale cream gold inverted conical cell sits INSIDE a thin vase-shaped cup-like lorica shell, its shell rim clearly distinct from the cell, with a thin solid stalk beneath and tiny basal attachment disc. Two separated small bundles of stiff straight capitate feeding tentacles project from top opening, tentacles have small knobs at tips and are not hairs or cilia. A large purple rounded nucleus visible in adult lower-middle. INSIDE the upper right of the adult cell, a transparent cutaway reveals an INTERNAL pale brood pouch containing exactly one small pale oval swimming swarmer with fine short cilia and its own tiny purple nucleus. Swarmer lies fully inside parent outline, visibly separate from adult nucleus and tentacles, with enough clear space around it for a cutout layer. Birth pore opens at upper cell surface leading toward lorica opening. Never an external yeast-like bud. No other organism, labels or arrows. Entire upright stalked organism centered with generous margin, occupies about 70 percent canvas height. Clean ink edges; no exterior glow or shadow or vignette. Real alpha transparent background.",
+    "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-f34acc20-2266-49c8-b548-18accfc93a68.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "retakes": 0,
+    "retake_prompt": null,
+    "retake_raw_path": null,
+    "sha256": "621ac2fde40e94e840d94b2d2e844245a54aa3193371ea8f220adf4d549e5e43",
+    "notes": "Generated RGBA preserved. Centered transparent padding to 1800x1200, no resampling. Hidden RGB outside alpha does not appear on checkerboard. See b2c-qa for raw paths, exact prompts and inspection."
+  },
+  {
+    "path": "public/assets/biology/b2c-milk-glass-bench-v1.png",
+    "prompt": "Use case: scientific-educational. Naturalistic precise ink and watercolour scientific textbook plate, warm calm natural colours, fine drawn edges and delicate textured translucent washes matching the viewed strawberry botanical, green bacterium and cream yeast plates. Purple nuclei. No text, labels, numbers, arrows, watermarks, frame, shadow or background. Real transparent alpha background, isolated subject with at least 8 percent empty margin. Landscape canvas 1800 by 1200 if possible. Clear straight-sided drinking glass about three quarters full of white milk, standing on a plain wooden bench top represented by a short narrow horizontal strip only. Side view, faint sheen on clear glass rim and wall, believable elliptical milk surface below rim with clear air space above it. Milk opaque warm white. Soft ground contact shadow confined to bench strip directly under glass. Glass centered, bench short enough to leave ample transparent margin. Natural precise ink and watercolour illustration matching botanical textbook plates. No kitchen, backdrop, bubbles, spills, decorative objects, text or arrows. Preserve genuine alpha transparent outside glass and bench, no exterior glow.",
+    "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a12ef1-e77a-7df0-8c99-2f37451c0320\\exec-9a1e5a21-e3bf-4a5f-9fdf-27eee8cd994f.png",
+    "tool": "image_gen.imagegen (built-in)",
+    "retakes": 0,
+    "retake_prompt": null,
+    "retake_raw_path": null,
+    "sha256": "efb8fe59dc6457443ef702dc606f239c7ded5fe936b23e29d659019696baa1a7",
+    "notes": "Generated RGBA preserved. Centered transparent padding to 1800x1200, no resampling. Hidden RGB outside alpha does not appear on checkerboard. See b2c-qa for raw paths, exact prompts and inspection."
+  }
+]

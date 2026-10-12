@@ -1,0 +1,346 @@
+[
+  {
+    "path": "public/assets/biology/b2b-bagged-flower-v1.png",
+    "sha256": "32d47893a59cd511fbbe4eb2947f3f7d2a57887e78f4c077bf5edf00fd9ac6d5",
+    "prompt": "Use case: precise-object-edit. Edit target: the referenced naturalistic ink and watercolour plate of two separate pink flowers, left inside fine white mesh bag tied with string, right open with a hovering honeybee. The lesson now specifies that the grower REMOVED ALL ANTHERS from the left bagged flower before bagging it. Change only the left flower's reproductive centre: remove EVERY yellow anther and all yellow pollen from inside the bag; leave its green female stigma and carpel, pink petals and sepals intact. No yellow knobs, yellow stamens or pollen inside the bag. Keep the bag's delicate fine white mesh and tied string. Keep the right open flower, its yellow anthers and hovering bee unchanged in identity, anatomy, pose, colour, size and position. Keep separate stems, leaves, same framing and ink-watercolour botanical style. Do not add text, labels, numbers, arrows, symbols or extra objects. Real transparent exterior with clean edges, no background paper, wash, halo, haze or shadow. Retain generous empty margins at least 12 percent all sides.",
+    "tool": "image_gen.imagegen (built-in); Pillow for transparent padding and QA",
+    "retakes": 2,
+    "notes": "Replaced because current scene 10 specifies removal of anthers. Left bagged flower has no anthers or pollen; right open flower retains its anthers. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/followup-processing.json",
+    "size": [
+      1652,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bagged-flower-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bagged-flower-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bagged-flower-v1-light.jpg"
+    ],
+    "rawPath": "C:/Users/kygs/.codex/generated_images/01a12ef0-f1df-7430-b877-af0596a89229/exec-e23635da-d11a-41bf-9d45-24d8a8de605f.png",
+    "rawSha256": "1b539e3819704626ee6a0b5f5ca0f966803ba67c6a9fda7bd3aa057c519f7a44",
+    "previousPath": "docs/production/claude-pm/assets/b2b-qa/b2b-bagged-flower-v1-before-brief13.png",
+    "previousSha256": "19ff9248b23d54712b6f78b28707ebd8ff3adfb42d5427093327caf9a389e481",
+    "processing": "Original generated RGBA preserved without resampling. Transparent margins added."
+  },
+  {
+    "path": "public/assets/biology/b2b-bean-seed-cutaway-v1.png",
+    "sha256": "5a4481bd2d21eb0161ecaa57603efb7e962b61c27798b5e9b18dd60809718673",
+    "prompt": "COMMON BEAN Phaseolus vulgaris seed only, cut open lengthwise, no pod or fruit wall. Two large pale cream cotyledons filling most seed, opened gently apart to show at one end a small embryo shoot plumule and short embryo root radicle between them. Thin tan brown seed coat separate outer skin lifted slightly at right edge like peeled skin. Cotyledons, small shoot and root and thin skin all distinct for video labels. Whole seed centred, no extra detached parts.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "OpenAI imagegen raw image; Python PIL and SciPy alpha cleanup",
+    "retakes": 0,
+    "notes": "Existing plate kept. Two large pale cotyledons, small shoot and root between them, and a thin brown coat lifted at the right edge are visible. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/part3-provenance.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bean-seed-cutaway-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bean-seed-cutaway-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bean-seed-cutaway-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-eaf43fb4-03c1-40e0-8ef4-f1aec895473d.png",
+    "rawSha256": "238a7d51c1b4f455b7a29a0d12c5135e13079c6b62e7111566110dcd00f6e7ba",
+    "processing": "Alpha-only cleanup. 5x5 local luminance standard deviation > 4 defines textured foreground; remove components <=10 px, close two pixels, fill enclosed holes, dilate one pixel, and soften 0.45 px. RGB copied without repainting or resampling. Exterior glow removed. "
+  },
+  {
+    "path": "public/assets/biology/b2b-bean-seedling-v1.png",
+    "sha256": "f551f2a81f1583d6bf33851585af6b5d89a59c369c32b0d4eb89444a11a6acd4",
+    "prompt": "COMMON BEAN Phaseolus vulgaris young seedling germinating in narrow soil cutaway strip. Hook now straightened young green hypocotyl has lifted two thick pale-green cotyledons ABOVE soil surface, split brown seed coat still partly clinging to one cotyledon. Short root downward below soil, fine root hairs, green stem between cotyledons and two small first true simple leaves. All connected anatomically, seedling only. No pod.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "OpenAI imagegen raw image; Python PIL and SciPy alpha cleanup",
+    "retakes": 0,
+    "notes": "Existing plate kept. Two attached cotyledons above soil, split coat on one cotyledon, two first leaves, connected stem and downward roots in soil section are visible. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/part3-provenance.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bean-seedling-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bean-seedling-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bean-seedling-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-40de888e-3c55-4441-9f25-a7a6ec2516f8.png",
+    "rawSha256": "38bfd9c0ab6dd5b6773e1ca5d5cfb05e8ee7ad45a8593e3ee74414cd9c96c5e9",
+    "processing": "Alpha-only cleanup. 5x5 local luminance standard deviation > 4 defines textured foreground; remove components <=10 px, close two pixels, fill enclosed holes, dilate one pixel, and soften 0.45 px. RGB copied without repainting or resampling. Exterior glow removed. "
+  },
+  {
+    "path": "public/assets/biology/b2b-bee-on-flower-v1.png",
+    "sha256": "e2f6d124775f7749e155ccae673e7d4cc5a6dbd4de2ca59dc9852ee23fe5c121",
+    "prompt": "European honeybee Apis mellifera on a simple open pale pink flower, side view, hairy thorax dusted with yellow pollen, orange-yellow packed pollen in corbicula on hind leg, few loose pollen grains on petal. Accurate insect with six legs attached to thorax, two antennae, two pairs translucent wings, segmented striped abdomen. Distinct readable six legs, far side legs partly visible. Flower simple and bee anatomy detailed.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 0,
+    "notes": "Existing plate kept. Hairy worker bee with pollen on body and hind leg. Three near legs are visible; far legs are hidden, so six separately countable legs remain unverified. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/new-provenance-part1.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bee-on-flower-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bee-on-flower-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-bee-on-flower-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-f6a035fd-a238-4ff6-a69d-6c1a7a59931f.png",
+    "rawSha256": "cd9c51bcfb34bda20f2384f2d89eef2a27ea1c9c9efc30fde6b3ecb2af8b43e7"
+  },
+  {
+    "path": "public/assets/biology/b2b-flower-cutaway-v1.png",
+    "sha256": "647837c8016d6f4892d4a74b2fa37d42c6610222636dd687c4ade756f14e8547",
+    "prompt": "Scientific textbook plate in naturalistic fine ink and watercolour, calm precise warm natural colour, matching the botanical reference plates seen earlier. One simple generic flower in longitudinal section, one central carpel only, not strawberry. Five petals with the front petals cut away to reveal interior, 4 stamens with yellow pollen-dusted anthers on slender filaments. Sticky-looking stigma at top, wide clear EMPTY continuous channel through the central pale green style to a rounded cut-open ovary at base. Exactly three small oval ovules inside ovary, each with faint paler egg area near small top opening facing style. No pollen tube. Green sepals and short stem below. Centre carpel, generous open space beside it for later video labels. Delicate pale blush petals and mid-green anatomy. Portrait 1024x1536 or larger, at least 10% empty margin all sides. Fully transparent real alpha background, no white paper or grey wash, no surrounding glow, halo, drop shadow or ground. No text, labels, arrows, numbers, watermark or frame.\nRetake: Edit this flower plate, retain ink and watercolour botanical treatment and the three ovules and four stamens. Remove ALL soft glow and background haze around subject, actual alpha-zero background immediately outside crisp painted contours, no outer feathered glow or shadow. Show five petals in original flower with two front petals cut away, leaving three back petals visible. IMPORTANT central style is longitudinally cut open, with a wide pale empty OPEN channel between two thin green walls running continuously from stigma top down into ovary interior so a tube can later be animated within it. Do not put a green rod or separate septum down the channel. Three ovules lie within ONE ovary chamber. Keep each ovule opening toward channel and pale egg area below opening. No pollen tube, no labels. Generous 12% margins. Same canvas and framing.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 1,
+    "notes": "Existing plate kept. One central carpel, stigma above a wide empty style channel, three ovules within the ovary, four stamens, three rear petals after removal of near petals. Tube is to be drawn with code. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/new-provenance-part1.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-flower-cutaway-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-flower-cutaway-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-flower-cutaway-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-a6927a6d-23c9-4516-945b-23604e8bcebc.png",
+    "rawSha256": "60fe2247bc83469ceb2ae6dfff814ae6873468547d15d1a649ad14669bd65a6b"
+  },
+  {
+    "path": "public/assets/biology/b2b-grass-flower-wind-v1.png",
+    "sha256": "43a929de3ebac1d1f3fd3ee10971d93e99dd633b0b94eb6b74d45e424da3b55a",
+    "prompt": "One flowering wild grass stem side view, several small open grass spikelets showing long dangling yellow anthers shedding fine loose pollen and projecting feathery white-green stigmas. Accurate inconspicuous grass florets, no colourful petals, no wind lines drawn. Short green leaves, single subject.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 0,
+    "notes": "Existing plate kept. Dangling anthers, feathery stigmas and loose pollen, no painted wind lines. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/new-provenance-part1.json",
+    "size": [
+      1600,
+      1756
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-grass-flower-wind-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-grass-flower-wind-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-grass-flower-wind-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-3191ac4a-c492-4a37-a53a-745dff4d3a5a.png",
+    "rawSha256": "36e27a0a81dde3002ea07dfb8553cf619468b78404ba59069d2af6e84e76f0cb"
+  },
+  {
+    "path": "public/assets/biology/b2b-mint-cutting-glass-v1.png",
+    "sha256": "04393c3bcf870ae2c51ea7d727f3226b20005680260771293429d35bd0a18490",
+    "prompt": "Single mint stem cutting upright in clear cylindrical drinking glass of water. Opposite pairs of green serrated mint leaves above, few leaves only. New fine white branching roots from lower stem and cut end beneath water. Side view, glass outline and horizontal waterline clearly visible, water colourless and translucent. No soil, no decorative objects. Same scale and botanical treatment as geranium cutting.\nundefined\nRetake: Create new illustration, not a photograph. one mint stem with few opposite serrated leaves, in clear glass water, new WHITE roots below at cut end and nodes, side view, glass outline and water line visible. Naturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger. IMPORTANT fine ink outlines and watercolour brush texture as in the earlier strawberry plates. Whole subject MUST fit inside canvas, short stem, contained soil or glass, no clipped objects. No photographic garden or sky. Plain alpha background no glow. This is a retake of prior photograph to restore illustrated style.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 1,
+    "notes": "Existing plate kept. Opposite serrated leaves, white roots from stem nodes, including the basal node at the cut end; glass edge and waterline visible. Point at basal roots for the cut-end cue. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/provenance-part2.json",
+    "size": [
+      1344,
+      1856
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-mint-cutting-glass-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-mint-cutting-glass-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-mint-cutting-glass-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-1c166aa3-43bd-447a-8752-fdad040d6074.png",
+    "rawSha256": "5306ad0966943d56012de303de0272dd8d18375272c412e0be83e48d9e2685e0"
+  },
+  {
+    "path": "public/assets/biology/b2b-onion-bulb-offsets-v1.png",
+    "sha256": "4b960152e390e92904ffa7a6aacaa687c9d31b691016b52d5f1cd3835d6e3ac3",
+    "prompt": "One onion bulb underground in a narrow soil cut-away strip, with EXACTLY TWO small new bulbs visibly joined directly to sides of the parent's basal plate at bottom, roots below basal plate and a few narrow green hollow leaves above. Papery tan-brown skin, bulbs anatomically plausible, daughter bulbs separate rounded contours joined to base, not floating or merely adjacent.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 0,
+    "notes": "Existing plate kept. Two side bulbs joined at parent basal region, papery skin, roots below, green leaves above and soil section. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/new-provenance-part1.json",
+    "size": [
+      1600,
+      1782
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-onion-bulb-offsets-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-onion-bulb-offsets-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-onion-bulb-offsets-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-617a5e0a-227d-442f-8bfb-1d4fbfb11c1c.png",
+    "rawSha256": "e42d6621b2618ff1fc8ae8f1912dd5c4c895d86f93d19ef2aff406862ad054fa"
+  },
+  {
+    "path": "public/assets/biology/b2b-ovary-ovules-v1.png",
+    "sha256": "fe45ec8f37e3df333c2dfa9ee4788e028586b4f640101a6fbcc7ce83c7d6fda7",
+    "prompt": "One immature pea-type ovary cut open longitudinally, elongated horizontal pale green pea-pod shape on a short curved green stalk at left. Exactly THREE small round green ovules in one row, each attached by short funiculus to the SAME upper seam of ovary wall. Cut wall revealing interior, clear single chamber, thin ovary wall. This is first of aligned pair, will crossfade to mature pod so keep simple outer pod contour. Centered horizontal single subject, generous margins. Naturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 0,
+    "notes": "Existing plate kept. Three ovules attached along the upper seam. Alpha, stalk and outer wall exactly match pod plate. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/part-pair.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-ovary-ovules-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-ovary-ovules-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-ovary-ovules-v1-light.jpg"
+    ],
+    "rawSha256": "4956478f0b7180f72bf8c96e24471f98d9a0644bc3a473757eab49d01334b8e7"
+  },
+  {
+    "path": "public/assets/biology/b2b-ovule-closeup-v1.png",
+    "sha256": "13658b9f38986239dfa9b4b045c1b19463b7f2ece779ff520babe018039af2ec",
+    "prompt": "Large isolated longitudinal cutaway close-up of one light green rounded ovule inside just a small surrounding green arc of ovary wall. Same pale mid-green colours as flower cutaway reference, fine watercolour. Clear small opening called micropyle at TOP facing incoming style channel; a small paler oval egg cell INSIDE ovule immediately below this opening. Only one cell drawn, no others, generous plain interior. No pollen tube.\nundefined\nRetake: One isolated large rounded pale green ovule shown in longitudinal section, completely enclosed contour except tiny micropyle opening at TOP, with one small paler oval egg cell INSIDE near top opening. No other cells. Below is ONLY a small fully contained green crescent of ovary wall joined via short funiculus, no large wall arms, no cropped parts. Same colours as flower cutaway, whole subject within margin.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "OpenAI imagegen raw image; Python PIL and SciPy alpha cleanup",
+    "retakes": 1,
+    "notes": "Existing revised plate kept. Green ovule matches flower colours; top opening and one pale egg just below it, short attachment stalk and contained ovary-wall crescent are visible. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/part3-provenance.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-ovule-closeup-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-ovule-closeup-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-ovule-closeup-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-a333f277-d5de-4433-afd2-dc7ecf85ab96.png",
+    "rawSha256": "95bbec055fbccb83a6946f8242ad28b750d9b4ba103c8f5a865755b99aa00f2d",
+    "processing": "Alpha-only cleanup. 5x5 local luminance standard deviation > 4 defines textured foreground; remove components <=10 px, close two pixels, fill enclosed holes, dilate one pixel, and soften 0.45 px. RGB copied without repainting or resampling. Exterior glow removed. "
+  },
+  {
+    "path": "public/assets/biology/b2b-paintbrush-pollination-v1.png",
+    "sha256": "0ba5ec954b9ca19553be1183c4f92b110b5a6857bb1a81bff4bb45f4ca0f72fa",
+    "prompt": "Use case: scientific-educational. Create a single scientific ink and watercolour textbook plate matching the reference flower cutaway's pale pink petals, green carpel and yellow anthers, and the earlier naturalistic strawberry botanical references. A small soft artist's paintbrush with no hand approaches from upper right, its fine bristles actually touching the sticky stigma at the very TOP of the single central carpel. A few tiny yellow pollen grains sit on the bristles and at their contact with the stigma. Show a simple pink flower of the same kind as the reference, side or three-quarter view, longitudinally opened enough that stigma and top of style are clearly visible. Stigma at top, one narrow green style below, ovary at base, anthers on separate filaments around it. Do not touch an anther or petal with the brush. No pollen tube, no sperm, no cell dots. Naturalistic delicate ink outlines and warm precise watercolour texture. Transparent PNG with real alpha, no paper, background wash, haze, halo, glow or shadow. Whole brush and flower contained with generous empty transparent margins at least 12% every side, long side at least 1600 pixels if available. No text, labels, numbers, arrows, frames, watermarks or people.",
+    "tool": "image_gen.imagegen (built-in); Pillow for transparent padding and QA",
+    "retakes": 0,
+    "notes": "New plate. Bristles touch the top stigma. No pollen tube painted. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/followup-processing.json",
+    "size": [
+      1683,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-paintbrush-pollination-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-paintbrush-pollination-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-paintbrush-pollination-v1-light.jpg"
+    ],
+    "rawPath": "C:/Users/kygs/.codex/generated_images/01a12ef0-f1df-7430-b877-af0596a89229/exec-7806a868-ff98-4d04-89ce-cc44321256a3.png",
+    "rawSha256": "59fcf6367d3000a9c9c7367baa90221d4c3c172f82122bd13385afb31d87d8a0",
+    "processing": "Original generated RGBA preserved without resampling. Transparent margins added."
+  },
+  {
+    "path": "public/assets/biology/b2b-pod-seeds-v1.png",
+    "sha256": "f580c208164b917b2d3877263b8976d7fcb077a1c54dd977f71bf7092abfc9c9",
+    "prompt": "Edit this immature ovary into a mature open pea pod for an exactly aligned crossfade. Preserve EXACT canvas, stalk, outer wall silhouette and position pixel for pixel. Change only the THREE small round ovules into slightly fuller mature green pea seeds at EXACT SAME centres and attached along same upper seam. Wall remains same position and outline, mature darker green paint inside only. Three seeds no others. No labels, no glow, real alpha background. Ink and watercolour textbook treatment.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 0,
+    "notes": "Existing plate kept. Three larger seeds attached along the same upper seam. Alpha, stalk and outer wall exactly match ovary plate. Original pair record stores common integer anchors for seed and ovule positions. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/part-pair.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-pod-seeds-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-pod-seeds-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-pod-seeds-v1-light.jpg"
+    ],
+    "rawSha256": "68260d119cad8c557b930f94fab136388c912994e1cf66fcd8ffb9bb14e63089"
+  },
+  {
+    "path": "public/assets/biology/b2b-pollen-grain-closeup-v1.png",
+    "sha256": "40ca747144eccba9dc6d10ee196799a5f7c749b99dc84a84516d5365f758938e",
+    "prompt": "Use case: precise-object-edit. Edit the referenced scientific ink and watercolour pollen-grain closeup. Keep the same single yellow pollen grain resting on a small pale green stigma surface, naturalistic textbook illustration, scale, framing, colours and silhouette. Change the grain to a longitudinal cutaway: retain fine yellow outer wall texture around its rim, but show a large plain pale cream-yellow interior occupying the central 65 percent of the grain. The interior must be empty and softly painted, no stippling, bumps, cells, nuclei, sperm or dots. This plain space will receive animated cell dots in the video. Keep stigma papillae below. Real transparent alpha exterior with no wash, haze, halo or shadow. No text, labels, arrows, numbers or watermarks. Whole subject within at least 12 percent empty transparent margins.",
+    "tool": "image_gen.imagegen (built-in); Pillow for transparent padding and QA",
+    "retakes": 1,
+    "notes": "Replaced because the old grain's textured centre did not leave a plain interior for animated cells. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/followup-processing.json",
+    "size": [
+      1628,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-pollen-grain-closeup-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-pollen-grain-closeup-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-pollen-grain-closeup-v1-light.jpg"
+    ],
+    "rawPath": "C:/Users/kygs/.codex/generated_images/01a12ef0-f1df-7430-b877-af0596a89229/exec-b0b1a8f3-636d-4b60-933c-77877b6777c9.png",
+    "rawSha256": "07f01714a0d78bc8f5b27ae6a7056bb99054369f11793b14b1f8cfddf65f2ae3",
+    "previousPath": "docs/production/claude-pm/assets/b2b-qa/b2b-pollen-grain-closeup-v1-before-brief13.png",
+    "previousSha256": "b28290d80c8d12c1c916c816e147cae6d220cffc26a8e22b9af57b17ad734ee4",
+    "processing": "Original generated RGBA preserved without resampling. Transparent margins added."
+  },
+  {
+    "path": "public/assets/biology/b2b-potato-tuber-sprouts-v1.png",
+    "sha256": "3b3aa0c8c9f1f5c075c836225a636fe4aa265452fc4ac8f6f206cba070a31852",
+    "prompt": "One potato tuber on a narrow soil cut-away strip, EXACTLY THREE sprouting eyes, each with short pale purple-cream shoot growing directly from a small bud depression in tuber skin. Brown potato skin natural texture. No leaves above, no roots as sprouts, no other tubers. Side view.\nNaturalistic fine ink and watercolour scientific textbook plate, calm precise warm natural colours, fine botanical contour lines and painted texture matching strawberry botanical plates. No text, labels, arrows, numbers, watermark or frame. Real transparent alpha background with absolutely no paper, wash, haze, halo, glow or drop shadow around subject. Centered subject with at least 12% completely empty margins, canvas at least 1600 px long side if available, portrait 1024x1536 or larger.",
+    "tool": "image_gen.imagegen (built-in); Pillow, NumPy and SciPy for earlier alpha cleanup and pair alignment",
+    "retakes": 0,
+    "notes": "Existing plate kept. Three short shoots arise from tuber eyes, no expanded leaves, soil section below. Final checkerboard and dark views inspected on 12 October 2026: no text or exterior halo.",
+    "sourceRecord": "docs/production/claude-pm/assets/b2b-qa/new-provenance-part1.json",
+    "size": [
+      1600,
+      1600
+    ],
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "qaFiles": [
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-potato-tuber-sprouts-v1-checker.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-potato-tuber-sprouts-v1-dark.jpg",
+      "docs/production/claude-pm/assets/b2b-qa/followup-b2b-potato-tuber-sprouts-v1-light.jpg"
+    ],
+    "rawPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a12c96-1e14-7cf2-a9be-f5d1a024b418\\exec-778221a9-a535-40a0-bdad-2e4165b83ce4.png",
+    "rawSha256": "8b9b2876ceac32c606b5b23f81bea4fffa1282c4aa7a09dc8e82fff5eb1e62e8"
+  }
+]

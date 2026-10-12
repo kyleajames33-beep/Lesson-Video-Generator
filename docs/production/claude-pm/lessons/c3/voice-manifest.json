@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C3-claude-2026-10-13-take02",
+  "lessonPath": "docs/production/claude-pm/lessons/c3/lesson.json",
+  "lessonSha256": "e41e25891e112b63c102b8a2bfef4c7ee4a79321a13a8cb80af239a15c4ca45a",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c3/lesson.production-brief.json",
+    "sha256": "261b98056fd86fe0df10a2c3c27507059abe01f9857a2bed70dc4201db0aa17a"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This test tube holds iron three plus ions and thiocyanate ions, which join to make a red ion. It has sat for an hour at the same pale red, because joining and splitting are running at equal rates. That is a dynamic equilibrium, like the sealed flask of P C L five, because none of the ions can escape from the solution. Now we drop in a few crystals that dissolve and add more iron three plus ions. Watch the colour. It deepens. So how does a settled mixture respond when we change it, and which way does it go?",
+      "hash": "c60761295512",
+      "textSha256": "c60761295512e510e52d547f9b27e5a1868d67f481c01eeb3a3596e430462620",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/hook.c60761295512.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/hook.c60761295512.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/hook.c60761295512.generation.json",
+      "plannedRequestSha256": "31550c2d3365eb5ddfd4dc59058dcf586d60745bda4c19e63e57cf4baafbbd23"
+    },
+    {
+      "id": "tube-equilibrium",
+      "parentSceneId": "tube-equilibrium",
+      "text": "Here is the tube at equilibrium, on the same kind of made-up scale as the flask. Both rates are thirty, so the amounts are steady: ten units of iron three plus, ten of thiocyanate and ten of the red ion. Joining is the forward reaction and splitting is the reverse.",
+      "hash": "7c7b7cf3ea80",
+      "textSha256": "7c7b7cf3ea8031ff0aca136c3eb1f7a9021bd4b07e22d89a9effb6886f95dc48",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/tube-equilibrium.7c7b7cf3ea80.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/tube-equilibrium.7c7b7cf3ea80.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/tube-equilibrium.7c7b7cf3ea80.generation.json",
+      "plannedRequestSha256": "f0328aff18ae9c3e6a40666ddf6bddc249e903ed492a63a3e2bf8ad291d3f4d6"
+    },
+    {
+      "id": "moment-of-change",
+      "parentSceneId": "moment-of-change",
+      "text": "Now we add seven units more of iron three plus, as solid, so the volume hardly changes. Joining needs an iron ion to meet a thiocyanate ion, and there are more iron ions to meet. Joining speeds up in step with the iron count, so seventeen tenths of thirty is fifty-one. Splitting depends only on how many red ions there are, and we have not touched those, so the reverse rate stays at thirty. At that moment nothing has reacted yet, but the two rates no longer match.",
+      "hash": "9ec33d7d8997",
+      "textSha256": "9ec33d7d8997bb948453c97e6d656b595c8bf08f561ba14060f207af602249ba",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/moment-of-change.9ec33d7d8997.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/moment-of-change.9ec33d7d8997.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/moment-of-change.9ec33d7d8997.generation.json",
+      "plannedRequestSha256": "93e4693e4d99a6422cd8b256ccf5b67f9cafb4c08162bb72102057f2ead1aee4"
+    },
+    {
+      "id": "response",
+      "parentSceneId": "response",
+      "text": "Now the forward reaction is faster, so more red ions form each second than split, and the amounts start to move. Iron and thiocyanate ions are used up, so the forward rate falls. Red ions build up, so the reverse rate rises. A little later the forward rate is forty-three and the reverse rate is thirty-three, so the difference between the rates is closing. It is the same story as the P C L five flask: the faster rate falls, the slower rate rises.",
+      "hash": "a9c556bf1b5e",
+      "textSha256": "a9c556bf1b5e44372b84c497e74f8852daa7925cad54630a5250fd64fbbb9063",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/response.a9c556bf1b5e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/response.a9c556bf1b5e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/response.a9c556bf1b5e.generation.json",
+      "plannedRequestSha256": "199124467b495fa2dffe2f4f159a7ce8218d4911946768a557155b6db127a9fe"
+    },
+    {
+      "id": "new-equilibrium",
+      "parentSceneId": "new-equilibrium",
+      "text": "Then the rates meet again at thirty-six. Both rates are higher than before, because there is more red ion to split, and more iron to meet the thiocyanate that is left. The red ion has gone from ten to twelve, so the tube is a deeper red. Now look at the iron. We added seven units and it is only down to fifteen, not back to ten. It partly cancelled our change, but never fully. We say the equilibrium has shifted to the right: the net reaction ran forward until the rates matched again. The new mixture is a new position of equilibrium.",
+      "hash": "12cb0ab0d06e",
+      "textSha256": "12cb0ab0d06e598773e2f0a4169715f7f5fc07f41b7ba96da0f1e1bb1221e394",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/new-equilibrium.12cb0ab0d06e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/new-equilibrium.12cb0ab0d06e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/new-equilibrium.12cb0ab0d06e.generation.json",
+      "plannedRequestSha256": "19b464c641a1cba7062df15e3fc19dd8750e0ded3c47773079d1ea20e94bee71"
+    },
+    {
+      "id": "graphs",
+      "parentSceneId": "graphs",
+      "text": "Here are the graphs. The iron jumps up the instant we add it, then slides down to fifteen. The red ion climbs to twelve. The forward rate steps up to fifty-one and then falls. The reverse rate does not move at the moment of the change, then rises, and the two lines meet at thirty-six. So two things happen, in order. Adding the iron changed a concentration at once. The reaction responded afterwards.",
+      "hash": "20afc0d4523c",
+      "textSha256": "20afc0d4523c9a099119812bd6983cbd43f57e3ca690389ea81c54fb711f0cd7",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/graphs.20afc0d4523c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/graphs.20afc0d4523c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/graphs.20afc0d4523c.generation.json",
+      "plannedRequestSha256": "2e518666787f7f4848d1b619c89f721ac774500f529c01e93d3e4e89f641db0d"
+    },
+    {
+      "id": "removal",
+      "parentSceneId": "removal",
+      "text": "In a fresh tube at equilibrium, we add a few drops of silver nitrate, so the volume hardly changes. Silver ions lock thiocyanate ions away as a white solid. We take out four of the ten units of thiocyanate, so six are left. Joining slows in step, so six tenths of thirty is eighteen. Splitting is untouched, so the reverse rate stays at thirty. Now reverse is the faster reaction, red ions split faster than they form, and the colour fades. The shift is to the left, toward what we took away, and again it only goes part of the way.",
+      "hash": "a5217deae759",
+      "textSha256": "a5217deae7595d140229c3cc188ed4545334159e2371cdf1f6c5228af147978f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/removal.a5217deae759.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/removal.a5217deae759.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/removal.a5217deae759.generation.json",
+      "plannedRequestSha256": "8ccc698012dbd35b5a1279d78c3d5f79ea76fe6ae6c5791b23730a7fa226a9bc"
+    },
+    {
+      "id": "principle",
+      "parentSceneId": "principle",
+      "text": "This pattern is Le Chatelier's principle. When something disturbs an equilibrium, the mixture shifts in the direction that partly cancels the disturbance. In these examples, it is what the rates do. A change to a concentration alters one rate first, then the rates close in. So adding a substance sends the shift away from it, and removing a substance sends the shift toward it.",
+      "hash": "ca7c90d31889",
+      "textSha256": "ca7c90d31889e33e6ad9dd809ec69f8a72204d68622ece095806659d0789f3eb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/principle.ca7c90d31889.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/principle.ca7c90d31889.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/principle.ca7c90d31889.generation.json",
+      "plannedRequestSha256": "0bbf3aa40aa74783235a1b2a7a22d7dde3003d3a77adec61bb435de1646a1764"
+    },
+    {
+      "id": "heat-cobalt",
+      "parentSceneId": "heat-cobalt",
+      "text": "A different kind of disturbance now. This tube holds pink cobalt ions in a solution with lots of chloride ions. Pink cobalt ion plus chloride ions makes a blue ion plus water. An experiment shows that this reaction takes in heat, so it is endothermic. Its reverse gives out the same amount of heat, so it is exothermic. At room temperature the tube is between pink and blue, a purple.",
+      "hash": "4cbb52d7fba1",
+      "textSha256": "4cbb52d7fba12da927b64b4317d18830973470019cb46dd1926266bf4e6d86a5",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/heat-cobalt.4cbb52d7fba1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/heat-cobalt.4cbb52d7fba1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/heat-cobalt.4cbb52d7fba1.generation.json",
+      "plannedRequestSha256": "0344b5abecf9757c2c2113ef345e3454f6be09104cbf04142d4b88a7c9f8fd32"
+    },
+    {
+      "id": "warming",
+      "parentSceneId": "warming",
+      "text": "Now we warm it in a hot water bath. That adds no ions and removes none, so no concentration changes at that moment. Instead, heating changes the rates. Only collisions with enough energy make a reaction happen, and heating makes those high-energy collisions much more common. A reaction that takes in heat needs more energy from each collision than the one that gives it out, so it gains the most from the extra heat. So both rates go up, but the heat-absorbing one goes up more.",
+      "hash": "62b65985b7c2",
+      "textSha256": "62b65985b7c2dbf25d9e3b1260b78095e45feb9840889a23022d7d8172df21e7",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/warming.62b65985b7c2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/warming.62b65985b7c2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/warming.62b65985b7c2.generation.json",
+      "plannedRequestSha256": "6caae014c01dd60c18ede7135b6176fbab20ed47e4022925bd8f939869e5aa7a"
+    },
+    {
+      "id": "temperature-response",
+      "parentSceneId": "temperature-response",
+      "text": "On the same made-up scale, both rates were thirty. Straight after heating, the forward rate is fifty and the reverse is thirty-eight. Forward is faster, so the net reaction goes right and blue ions form. As they build up, the forward rate falls and the reverse rate rises until they meet at forty-four. Both rates are higher than before, because it is hotter, and the mixture has shifted to the right, so the tube turns bluer. Taking in heat is the shift that partly cancels the warming. Cool it in ice instead and both rates drop, but the forward rate drops more, so reverse wins and the tube turns pink.",
+      "hash": "032ab0f00fe4",
+      "textSha256": "032ab0f00fe4e37a25a33c8640d60ab95075cacb6b1baac887e69009b539cfba",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/temperature-response.032ab0f00fe4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/temperature-response.032ab0f00fe4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/temperature-response.032ab0f00fe4.generation.json",
+      "plannedRequestSha256": "ab65556cc1c431ef4569580f4330ffbe880024c27a8a6a8da2e6798ea119a90b"
+    },
+    {
+      "id": "heat-aid",
+      "parentSceneId": "heat-aid",
+      "text": "Here is a shortcut. Write heat into the equation as if it were a chemical. This reaction takes in heat, so heat is a reactant: pink ion, plus chloride, plus heat, makes the blue ion and water. Where the heat goes depends on the reaction. If the forward reaction takes in heat, write heat on the left. If it gives out heat, write heat on the right, and then heating pushes the shift left, towards the reactants. Now treat heat like any other substance. Heat the tube and you have added heat, so the shift goes away from it. Cool it and you have taken heat away, so the shift goes toward it. It is a direction rule. The reason is still the rates.",
+      "hash": "c2e7541638bd",
+      "textSha256": "c2e7541638bd2fe7c0904cb10f4a089268b4ee8e6bd3bd4e250b2dc3e023fee9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/heat-aid.c2e7541638bd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/heat-aid.c2e7541638bd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/heat-aid.c2e7541638bd.generation.json",
+      "plannedRequestSha256": "03b96b2c5c452ace3bcd755be9b7e0ef8f16a268ab95bffbdded7bf443257451"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. In a sealed tube, colourless N two O four turns into brown N O two, and back again. The forward reaction takes in heat: delta H is plus fifty-seven kilojoules for each mole of N two O four. The tube starts at equilibrium in warm water at a steady temperature, and looks brown. One: a chemical removes some of the N O two, without changing the size or temperature of the tube. Which rate changes straight away, which way does the net reaction go, and what happens to the colour straight away, and then once the mixture has settled again? Two: instead, the original tube is moved into ice water. Which way does it shift, and what happens to the colour? Pause here to answer.",
+      "hash": "a40dc1bd67c6",
+      "textSha256": "a40dc1bd67c66f6e818982fe3c5c4f6963386d0a0c150b69e00f5eb46fd67628",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/attempt.a40dc1bd67c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/attempt.a40dc1bd67c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/attempt.a40dc1bd67c6.generation.json",
+      "plannedRequestSha256": "2af813d2b1abdabb2e3fbc9374b461d104a5147a2971e2909be15be061b37210"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "One. Nitrogen dioxide is what joins in the reverse reaction, two N O two making N two O four. With less N O two around, the reverse rate drops straight away and the forward rate does not change. Forward is faster, so the net reaction goes forward. The brown fades at once, because N O two is the brown substance, then partly returns, but it stays paler than before, because the shift only partly cancels the change. Two. The forward reaction takes in heat, so cooling removes more of the hard collisions it relies on, and slows it more than the reverse. Reverse wins, the net reaction goes toward N two O four, and the tube becomes much paler. If you said the brown fully returns, remember the shift is only partial. If you said the forward rate dropped when the N O two was removed, check which reaction uses N O two. If you said cooling only slows the forward reaction, both slow, but the one that takes in heat slows more.",
+      "hash": "17418157f4e0",
+      "textSha256": "17418157f4e059f38d15ce71f8667ec27384e09ea9e024fc5e529cabb6009131",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/feedback.17418157f4e0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/feedback.17418157f4e0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/feedback.17418157f4e0.generation.json",
+      "plannedRequestSha256": "f562dc0df2d4c089365b8039a808dc1dc90c9b2523f140daf37d0878ce5b810a"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question disturbs an equilibrium, ask what the change touched, a concentration or the temperature, and which rate is now faster. The net reaction goes that way, only part of the way back, until the rates match again. Next: squeezing a gas mixture and adding a catalyst.",
+      "hash": "e13fb4b065a9",
+      "textSha256": "e13fb4b065a9d1bc4471f2b48b093f8a8bf9c02d1c391e73bb37bc6040cc104b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/decision-rule.e13fb4b065a9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/decision-rule.e13fb4b065a9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/decision-rule.e13fb4b065a9.generation.json",
+      "plannedRequestSha256": "4dac716f9ecea8d4d54d451b70bb16fef934ad68ad613a4c318158ae1ba0f8af"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C3-claude-2026-10-13-take02/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

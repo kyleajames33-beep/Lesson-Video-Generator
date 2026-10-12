@@ -1,0 +1,51 @@
+# C5 science check (Claude, independent)
+
+Checked `lessons/chem-m5-c05.md`, Revision 3: all quoted narration, Visual text, key notes, memory aid and the design's own fact-check list, against `site-extracts/chem-m5-l09.md`, `site-corrections.md` and NSW 2017 Stage 6 Chemistry Module 5. No stills exist, so no screen checks. No U+2014 in the design. "Supplied" appears only in author or decision notes, not in learner copy.
+
+| # | type | where | problem | fix |
+| --- | --- | --- | --- | --- |
+| 1 | science | 8 item two, 9b, author note (f): "in dilute aqueous solution ... In this question K is four" for K = [CH3COOC2H5]/([CH3COOH][C2H5OH]) | The textbook K near 4 is for the expression that includes water, [ester][water]/([acid][alcohol]), for the neat liquid mixture (equimolar start gives x/(1-x) = 2, x = 2/3, 67% ester). In dilute aqueous solution the water-free constant is about 4/55.5 = 0.072 L/mol, and at 0.1 mol/L each the real mixture is about 0.7% ester (0.072(0.1-x)^2 = x gives x about 0.0007), i.e. almost all reactants. The item states a real-sounding system whose conclusion ("measurable amounts of both") contradicts the real chemistry. With K = 4 taken literally, 4(0.1-x)^2 = x gives x = 0.0234 (23% ester, 0.0766 of each reactant): "measurable amounts of both" is correct only for the hypothetical. K for this expression also has units (L/mol), so comparing "4" with 1000 is not a clean test. | Present item two as an invented system (for example "a made-up reaction A + B making C, in dilute solution at about 0.1 mol/L, K = 4") or use a real equal-count reaction with dimensionless K. Do not label it as the ethanoic acid and ethanol equilibrium in dilute water. |
+| 2 | science | 7 memory aid, 10, key note 3: "pure solids and liquids drop out" | "Liquids" used alone is wrong for liquids that are mixed with each other. In neat esterification, CH3COOH(l) + C2H5OH(l) ⇌ CH3COOC2H5(l) + H2O(l), all four are (l), none is pure, and all four appear in K (the Kc = 4 above). A learner applying the aid by state symbol would drop every species. The condition tag helps but the three-line aid itself is false as worded. | Reword: "pure solids, a pure liquid and the solvent drop out" (or "a separate pure solid or liquid phase, or the solvent"). Keep "(l) alone does not decide" in the author note. |
+| 3 | science | 3a: "Joining needs a hydrogen and an iodine to meet ... Splitting needs two hydrogen iodide to meet" (no "in this model" cue) | The rate laws k[H2][I2] and k'[HI]^2 are experimentally right, but the single-collision picture for H2 + I2 is not (the accepted mechanism involves iodine atoms, Sullivan 1967, from memory, UNVERIFIED here). 2a says "In this model" but 3a drops the qualifier before the mechanism-style claim. | Open 3a with "In the model for this tube," or "In this model, joining needs...". |
+| 4 | syllabus | Throughout: symbol "K" and "equilibrium constant, K" | The site, and I believe the NESA dotpoint ("deduce the equilibrium expression (in terms of Keq)"), use Keq. The video never mentions Keq, so a student may not link K to exam wording. I could not retrieve the dotpoint wording (UNVERIFIED), but the site extract confirms Keq on the lesson page. | In 2b (and key note 1) say "the equilibrium constant, K, also written Keq". |
+| 5 | science | Author note (g) and asset brief: "K at 25 C is far larger" than 54 | Overstated. From formation free energies K(25 C) is about 610 (also in `site-corrections.md` C8); van 't Hoff from 54.3 at 430 C with dH = -9.4 kJ gives about 480. That is about ten times larger, not "far". Author note only, not learner copy. | Write "about ten times larger (roughly 500 to 600)". |
+
+Count: 5 findings (4 science, 1 syllabus); none changes the lesson's core explanation or arithmetic.
+
+## Arithmetic and facts verified, no error
+
+- Iron tube: 10/(10 x 10) = 0.1; 12/(15 x 8) = 12/120 = 0.1. Rate model: 0.3 x 10 x 10 = 30 = 3 x 10; 0.3 x 15 x 8 = 36 = 3 x 12. Mass balance: Fe 10 + 10 + 7 added = 27 = 15 + 12; SCN 20 = 8 + 12. The second settled state is the unique solution: with x extra complex, (10 + x)/((17 - x)(10 - x)) = 0.1 gives x^2 - 37x + 70 = 0, x = 2, so 15, 8, 12. Dividing by 3 and [Fe3+][SCN-] gives 0.3/3 = 0.1. Correct. The value 0.1 is labelled made-up (real Kc for FeSCN2+ is of order 10^2 to 10^3, site lesson 13 gives 208 to 895), so it is acceptable only because of the "made-up numbers" chip.
+- H2 + I2 tube: 0.05 x 2 x 2 = 0.2; 0.2/14^2 = 0.2/196 = 0.05/49 (= 0.00102); (0.05/49) x 14^2 = 0.2; ratio 14^2/(2 x 2) = 196/4 = 49. Correct.
+- Second mixture: start 16 H2, 22 I2; lose 14 each; 16 - 14 = 2, 22 - 14 = 8, HI = 28. Rates 0.05 x 2 x 8 = 0.8 (the model forward rate at settled 2, 8; the 0.05 x 16 in the design's Numbers is the starting forward-rate factor, not the settled rate, so say "settled rates 0.05 x 2 x 8 = 0.8 and (0.05/49) x 28^2 = 0.8"); 28^2/(2 x 8) = 784/16 = 49. Correct.
+- Wrong forms: 14/(2 x 2) = 3.5; 28/(2 x 8) = 1.75; adding: 14/(2 + 2) = 3.5, 28/(2 + 8) = 2.8. All correct and different.
+- Cobalt equation [Co(H2O)6]2+ + 4Cl- ⇌ [CoCl4]2- + 6H2O, pink to blue, with K = [[CoCl4]2-]/([[Co(H2O)6]2+][Cl-]^4): correct. Omitting water as solvent is standard school practice; in the concentrated-HCl lab version water changes by roughly 1%, so "steady" is acceptable.
+- Water about 55 mol/L: 997 g/L / 18.015 g/mol = 55.3 mol/L. Correct.
+- Carbon case K = [CO]^2/[CO2]; H2O(g) included: correct, matches site.
+- Copper ammonia: formation constant 1.1 x 10^13 at 25 C ([Alameda formation constants table](https://alameda.edu/wp-content/uploads/2023/07/Formation_Constants_of_Complex_Ions.pdf)); other texts 1.0 x 10^13 to 2.1 x 10^13 ([Sydney exam answer](https://scilearn.sydney.edu.au/firstyear/exams/chem1102/2013answers/2013-N-6.2.pdf), [Saylor](https://saylordotorg.github.io/text_general-chemistry-principles-patterns-and-applications-v1.0/s21-03-the-formation-of-complex-ions.html)). "Near ten to the thirteen" correct. Ratio complex/Cu2+ = K[NH3]^4: 10^13 at 1 mol/L free NH3 ("plenty"), 10 at 0.001 mol/L, so "plenty of ammonia" is a necessary and stated condition.
+- N2 + O2 ⇌ 2NO at 25 C: dG = 2 x 86.55 = 173.1 kJ/mol, K = exp(-173100/(8.314 x 298.15)) = 4.7 x 10^-31 (equal moles, dimensionless). "Near ten to the minus thirty" is acceptable as an order-of-magnitude figure and matches the site's 1 x 10^-30; "about 10^-30" is the safer spoken form.
+- H2 + I2 ⇌ 2HI: Kc 50.2 to 50.5 at 448 C and 54.3 at 430 C ([sources found in search](https://uomus.edu.iq/img/lectures21/MUCLecture_2022_13135972.pdf)). 49 at 450 C is within a few per cent of the textbook value and is what the C4B model uses. Equal moles, so Kc = Kp and dimensionless. Correct.
+- K bands 10^3 and 10^-3: for a 1:1 to 1:1 reaction with 0.1 mol/L start, K = 1000 gives sqrt(K)/(1 + sqrt(K)) = 97% products; K = 4 gives 2/3 = 67% products. Valid as rough guides only for equal-count expressions, which is why the condition on concentration is needed (finding 1 shows the failure for unequal counts).
+- Key notes 1 to 4: no false statement. "Stays constant even when a disturbance changes every amount" is correctly limited by "at a given temperature". A catalyst or volume change leaves K unchanged.
+- Site corrections: 54 at 25 C is wrong (value near 430 C, confirmed above); 1 x 10^12 for 2NO + O2 ⇌ 2NO2 is a pressure-based value (own calculation Kp about 5 x 10^12 bar^-1, Kc about 10^14 L/mol), consistent with the design's statement. Complete the "Reversal and scaling" omission as intended; not an error.
+- Pure solid concentration constant, activity 1 by convention, and folding into the rate constants: acceptable school statements, with the strict reason correctly kept in author note (b).
+
+## UNVERIFIED
+
+- NESA dotpoint wording ("Keq" versus "K"): not retrieved.
+- Sullivan 1967 atomic mechanism for H2 + I2 (finding 3): from memory.
+- Real rate of dilute aqueous esterification at 0.1 mol/L (finding 1): computed from the textbook Kc = 4 and 55.5 mol/L water, no direct measurement found.
+
+## Resolution (Claude science check)
+
+Applied 12 Oct to `../lessons/chem-m5-c05.md` (Revision 4, "Claude science check resolved; ready to voice"). Narration is now 1125 words (unchanged in total; scene 8 +8, 9b -22, 10 +4, 7 +4, 2b +3, 3a +3). No U+2014 characters were introduced.
+
+| # | Item | Resolution |
+| --- | --- | --- |
+| 1 | Esterification item with K = 4 in dilute water | Replaced by a clearly labelled made-up equal-count reaction, A(aq) + B(aq) ⇌ C(aq) + D(aq), "in this question K is four". K is dimensionless there and equal amounts give two thirds products, so "measurable amounts of both" is exactly right. The 0.1 mol/L tag and the 9b phrase were dropped for it; the concentration condition stays on the scene 6 band label and key note 4. Scene 8, the board, 9b, the model answer and the wrong-answer chip were updated. The water-included slip moved to a short unspoken on-screen note in 9b ("A pure liquid solvent, such as water, would stay out."); scene 4 still teaches the omission. |
+| 2 | "pure solids and liquids drop out" | Now "pure solids, a pure liquid and the solvent drop out" in scenes 7 and 10, key note 3, the memory aid and its check. The author note records that (l) alone does not decide (neat esterification: all four liquids, none pure, all in K). |
+| 3 | Mechanism-style claim in 3a without a qualifier | 3a now reads "In this model, joining needs a hydrogen and an iodine to meet". |
+| 4 | Keq not linked | 2b and key note 1 now say "the equilibrium constant, K, also written Keq". |
+| 5 | Author note (g) "far larger" | Now "about ten times larger, roughly 500 to 600". |
+| Numbers slip | 0.05 x 16 = 0.8 | Now "settled rates 0.05 x 2 x 8 = 0.8 and (0.05 / 49) x 28^2 = 0.8". |
+
+UNVERIFIED items stay open in the design for Codex (NESA wording Keq versus K, the atomic mechanism of H2 + I2, and the dilute esterification rate, which is no longer used).

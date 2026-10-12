@@ -1,0 +1,156 @@
+{
+  "title": "Squeezing a gas mixture at equilibrium",
+  "subtitle": "Squeeze a gas mixture that is sitting at equilibrium. Which way does it go, and does every rise in pressure do the same thing?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 5,
+  "lessonIntent": "Predict the shift on compression or expansion by counting only gas particles, explain it as which reaction gains more when every gas is more crowded, handle an equal count and a solid, and tell a squeeze from adding an inert gas at fixed volume.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This syringe holds brown nitrogen dioxide, N O two, mixed with colourless N two O four. It has sat at the same shade for an hour, so it is a dynamic equilibrium, and none of the gas can escape. Now we push the plunger in slowly, squeezing the gas into half the space, and let it return to room temperature. Watch the colour. It darkens at once, then slowly fades a little, and it settles darker than where it started. So why darker, why the fade, and does every rise in pressure do this?"
+      }
+    },
+    {
+      "id": "syringe-equilibrium",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is the syringe at equilibrium, on a made-up scale. Concentration means how crowded a gas is. N O two is eight units and N two O four is four. Joining, two N O two into one N two O four, is the forward reaction, and splitting is the reverse. Both rates are thirty-two, so the amounts are steady."
+      }
+    },
+    {
+      "id": "squeeze-doubles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now we halve the volume. The same particles have half the room, so every concentration doubles: N O two goes from eight to sixteen, and N two O four from four to eight. Nothing has reacted yet, but the brown is already darker, because N O two is the brown gas."
+      }
+    },
+    {
+      "id": "joining-gains-more",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the rates. Joining needs two N O two to meet, and each one is twice as crowded, so joining speeds up twice over: thirty-two times two times two is one hundred and twenty-eight. Splitting needs only one N two O four, so it only doubles, to sixty-four. The squeeze boosts both reactions, but joining gains more."
+      }
+    },
+    {
+      "id": "response",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Joining is now faster, so more N O two is lost each second than is rebuilt, and the brown starts to fade. Two N O two join into one N two O four, so the number of gas particles falls. One joining step later, N O two has fallen to fourteen and N two O four has risen to nine. Joining depends on the N O two count twice over, so it slows from one hundred and twenty-eight to ninety-eight. Splitting depends on the N two O four count once, so it rises from sixty-four to seventy-two. The difference between the rates is closing."
+      }
+    },
+    {
+      "id": "new-equilibrium",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Then the rates meet again, at about seventy-eight. N O two settles at about twelve and a half. That is between the eight we started with and the sixteen straight after the squeeze, which is why the brown ends darker than the start, but paler than right after the squeeze. Both rates are higher than before, because everything is more crowded. The mixture has shifted to the right, toward N two O four, and it only partly cancelled the squeeze."
+      }
+    },
+    {
+      "id": "graphs",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At the moment of the squeeze, both concentrations jump together, and both rates step up, joining by more. Then the reaction responds: N O two slides down, N two O four creeps up, and the rates meet."
+      }
+    },
+    {
+      "id": "fewer-gas-particles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So why did joining gain more? Because it depends on more gas particles. That gives a rule. A squeeze speeds up most the reaction that depends on more gas particles, so the shift goes toward the side with fewer gas particles. Count only the gases. Chemists say moles of gas. It is the same count: the numbers in front of the gases in the balanced equation. In nitrogen plus three hydrogen making two ammonia, there are four gas particles on the left and two on the right, so the forward reaction depends on more gas particles and gains more. Squeezing shifts it right. Expanding does the opposite, so the shift goes toward the side with more gas particles."
+      }
+    },
+    {
+      "id": "equal-counts",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "What if both sides have the same number of gas particles? Take hydrogen plus purple iodine vapour making two colourless hydrogen iodide, as hot gases: two against two. A squeeze doubles every concentration, and both reactions need two particles to meet, so both rates go up four times and stay equal. The gas is more crowded and the purple is darker, but nothing shifts."
+      }
+    },
+    {
+      "id": "solids",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Pure solids and pure liquids do not count, because squeezing does not make them any more crowded. So in solid carbon plus carbon dioxide making two carbon monoxide, only the gases count: one on the left, two on the right. The same rule applies: a squeeze favours the side with fewer gas particles, so it shifts left."
+      }
+    },
+    {
+      "id": "squeeze-or-argon",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A squeeze raises the total pressure, because the crowded particles hit the walls more often. But pressure can also rise without a squeeze. Take our N O two syringe, lock the plunger so the volume cannot change, and pump in argon. Argon is an inert gas, which means it takes no part in the reaction. But the N O two and the N two O four have the same room as before, so each is exactly as crowded as before. Argon does not crowd N O two any closer to N two O four, so it does not favour either direction, and there is no shift and no colour change. A squeeze and an argon top-up can raise the total pressure equally, but only the squeeze crowds the reacting gases. So total pressure by itself is not the cause. Crowding of the reacting gases is."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is a shortcut for the direction. Squeeze it, and the shift goes toward fewer gas particles. Argon added in a fixed box does not shift it. It gives the direction only. The reason is still how crowded each reacting gas becomes."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. In a cylinder with a piston, colourless nitric oxide, N O, and colourless oxygen are in equilibrium with brown N O two: two N O plus oxygen make two N O two. The temperature stays steady. The cylinder is hot, so the N O two stays as single molecules and does not join to make N two O four. One: you push the piston in to halve the volume. Which way does the net reaction go, and why? What does the colour do straight away, and then once the mixture has settled again? Two: back at the original equilibrium, you lock the piston and pump in argon until the total pressure doubles. What happens to the shift and to the colour, and why? Pause the video if you'd like more time."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 1800
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One. Count the gases: three particles on the left, two on the right. A squeeze doubles every concentration. The forward reaction depends on more gas particles, so it gains more, and the net reaction goes right, toward N O two. The colour darkens at once, because the N O two is twice as crowded, and then keeps darkening as more N O two forms, because nothing here removes the N O two. This time the brown does not fade, because the shift makes the brown gas. If you said the brown fades, check which side this shift favours."
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two. Argon takes no part, and the volume has not changed, so nitric oxide, oxygen and nitrogen dioxide are each exactly as crowded as before. Argon does not favour either direction, so nothing shifts and the colour stays the same. If you said it shifts right because the pressure doubled, separate the total pressure from how crowded the reacting gases are."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question changes the pressure, ask first whether the reacting gases got more or less crowded. If the volume changed, they did, so count the gas particles on each side. A squeeze shifts toward fewer, an expansion toward more, and equal counts mean no shift. If you added a reacting gas in a fixed box, that is the concentration case from the iron tube. If you added only an inert gas in a fixed box, nothing is more crowded, so nothing shifts. Next: adding a catalyst."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

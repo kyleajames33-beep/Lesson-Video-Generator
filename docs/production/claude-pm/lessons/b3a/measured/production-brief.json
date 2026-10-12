@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b3a/measured/lesson.json",
+    "lessonSha256": "cedf0d42af413bb492f733f6a68c6fdbecea0c105a01b867508e602e7d15985f"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "First video of this series: a gamete carries one set of chromosomes and one set plus one set makes the full two sets in the zygote. The animals video: mammals fertilise internally and invest in a few young. Year 11: cells, enzymes, mitochondria and diffusion as movement from more to less. No hormone and no menstrual cycle is assumed.",
+    "startsWith": "A home pregnancy test that detects a chemical the embryo makes, and the question of what has to happen after a sperm joins an egg.",
+    "stopsAfter": "Tracing a human pregnancy from fertilisation in the oviduct, through cleavage and the blastocyst, to implantation in a lining prepared by progesterone from the corpus luteum; explaining why the embryo's hCG is needed; stating that the placenta takes over progesterone over the first two to three months after fertilisation; describing placental exchange without blood mixing; separating embryo from fetus; and not confusing hCG (acts on the corpus luteum) with progesterone (acts on the lining).",
+    "nextLesson": "B3a part 2: how birth starts and why labour speeds up (oxytocin, the cervix, positive feedback, and milk)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b03a.md"
+  ],
+  "teaching": {
+    "task": "Trace how a pregnancy is established and kept going, and explain why a tiny embryo needs to send a hormone message.",
+    "causalExplanation": "Fertilisation in the oviduct makes a zygote that divides without growing into a blastocyst, which implants in a lining that the corpus luteum's progesterone keeps thick. With no pregnancy the corpus luteum breaks down about two weeks after the egg is released, progesterone falls and the lining is shed, so the embryo's outer cells make hCG, which keeps the corpus luteum making progesterone. Over the first two to three months the placenta takes over, and it passes oxygen and nutrients to the baby and wastes back across thin membranes without the bloods mixing.",
+    "conversationalApproach": "Opens on a pregnancy test that detects the embryo's message, builds a numbered rail (meet, divide, attach, signal, hand over), draws one progesterone graph a stage at a time across the lining, hCG and hand-over scenes, and tests the model with an IVF-style, a timing and a misconception question.",
+    "openingDecision": "A sperm has just joined an egg. What has to happen next before there is a pregnancy, and why would a tiny embryo need to send a message?",
+    "understandingCheck": "Predict what happens when a blastocyst reaches a uterus with no progesterone, what happens if the corpus luteum stops three weeks versus five months after fertilisation while the embryo makes hCG, and correct a student who says the mother's blood flows into the fetus's blood.",
+    "curriculumScope": "Analyse the features of fertilisation, implantation and hormonal control of pregnancy in a scoped human mammalian model (Module 5). Feedback loops, birth, lactation, oestrogen and oxytocin are in part 2; contraception, haploid and diploid and meiosis are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted reproductive tract, cleavage, blastocyst, implantation and fetus-and-placenta plates with coded gamete close-ups, a progesterone graph, hormone particles, an organ chain, a numbered rail and a placental exchange close-up. Colour key: amber progesterone, teal hCG and embryo tissue, yellow outline corpus luteum, rose mother's blood, purple baby's blood.",
+    "transitionPlan": "The test stick hooks onto the embryo; the tract plate gains labels and a camera push; a lens pushes into the gametes and the zygote; the cleavage plates crossfade inside a fixed outline while a dot travels the oviduct; the camera pushes to the uterus wall and the lining; implantation plates crossfade; the graph enlarges and slides to the rail; the placenta plate and exchange close-up follow; the attempt board removes the rail and it returns in the memory scene; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Coded pregnancy test stick, a small blastocyst plate scaled down, teal particles on a path and a second line drawing in the window",
+      "teachingReason": "Poses what has to happen after fertilisation and why an embryo sends a message, with the test as the surprise",
+      "narrationCue": "doesn't detect the embryo itself / a chemical that the embryo makes / send a message",
+      "motionPurpose": "A test stick appears with a crossed-out link to the embryo, teal particles travel from the embryo to the window where a second line draws on, and the question holds",
+      "motionRole": "explain",
+      "onScreenChange": "The stick and embryo ball appear with a crossed-out doodle between them on \"doesn't detect the embryo itself\"; teal dots travel from the embryo along a path to the window and a second line draws on; the heading writes on and holds about two seconds on the question mark; the smaller second question appears on \"send a message\"; the tag \"fertilisation is not yet a pregnancy\" stays",
+      "motionTools": [
+        "ParticleEmitter",
+        "TravelingDotOnPath",
+        "DrawPath line",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold on the question mark for about two seconds"
+    },
+    {
+      "sceneId": "meeting",
+      "visualDecision": "new",
+      "visualReference": "New painted reproductive tract plate (thick lining) with leader labels, an egg dot, a coded sperm trail and a numbered rail starting",
+      "teachingReason": "Places fertilisation in the oviduct so the rest of the journey has a map",
+      "narrationCue": "ovary / oviduct / uterus / Fertilisation usually happens in the oviduct",
+      "motionPurpose": "The camera drifts over the tract, labels draw on, an egg dot lifts from the ovary into the oviduct, a circle marks the upper oviduct and a sperm trail swims up to meet the egg",
+      "motionRole": "explain",
+      "onScreenChange": "The tract plate appears with a slow camera push; labels \"ovary\", \"oviduct (tube to the uterus)\" and \"uterus (where the baby will grow)\" draw on with leader lines; an egg dot lifts from the follicle and travels into the oviduct on \"releases an egg\"; a scribble circle marks the upper oviduct and a sperm trail swims up on \"Fertilisation usually happens in the oviduct\" with \"fertilisation\" writing on; \"1 meet\" starts the rail",
+      "motionTools": [
+        "CameraStage push",
+        "leader line draw-on",
+        "TravelingDotOnPath",
+        "ScribbleCircle",
+        "rail build"
+      ],
+      "holdPurpose": "Brief hold on the circled oviduct"
+    },
+    {
+      "sceneId": "gametes",
+      "visualDecision": "new",
+      "visualReference": "Coded close-up of a large sperm with tail ripple, mitochondria sparks and acrosome enzymes, and a much larger egg with a food store",
+      "teachingReason": "Links each gamete feature to its job so the features are reasons, not a list",
+      "narrationCue": "tail to swim / mitochondria / acrosome / large because it carries a store of food / cannot swim",
+      "motionPurpose": "A lens pushes into the close-up, the sperm features are labelled one at a time with a ripple, sparks and enzyme dots, then the large egg slides in and the oviduct wall nudges it along",
+      "motionRole": "explain",
+      "onScreenChange": "A lens pushes from the oviduct circle to the close-up; leader lines draw on in turn: \"tail: swims\" with a ripple, \"mitochondria: energy\" with a ring and sparks, \"acrosome: enzymes\" with a ring and seeping dots; a much larger egg slides in with a bracket \"much larger\" and \"food store\"; the oviduct wall nudges the egg along on \"cannot swim, so the oviduct moves it along\"",
+      "motionTools": [
+        "MagnifyLens",
+        "leader line draw-on",
+        "ScribbleCircle",
+        "particle seep",
+        "TravelingDotOnPath"
+      ],
+      "holdPurpose": "Hold the labelled pair"
+    },
+    {
+      "sceneId": "zygote",
+      "visualDecision": "new",
+      "visualReference": "The coded close-up continuing: enzyme dots opening the egg layer, the sperm entering, two nuclei joining and a recall chip of chromosome strips",
+      "teachingReason": "Shows how fertilisation makes the zygote with a full two sets, in plain words",
+      "narrationCue": "enzymes break down / nuclei come together / one set plus one set / zygote",
+      "motionPurpose": "Enzyme dots open a gap, the sperm enters head first, the two nuclei glide together and touch, and a chip shows two single strips joining into a full pair",
+      "motionRole": "explain",
+      "onScreenChange": "Enzyme dots open a gap in the outer layer and the sperm enters head first; the two nuclei glide together and touch on \"come together\"; a recall chip \"from the earlier videos\" shows two single chromosome strips joining into a full two-strip on \"one set plus one set makes a full two sets\"; \"zygote\" writes on with a leader line",
+      "motionTools": [
+        "particle seep",
+        "TravelingDotOnPath",
+        "chip pop",
+        "leader line draw-on",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the labelled zygote"
+    },
+    {
+      "sceneId": "cleavage",
+      "visualDecision": "new",
+      "visualReference": "Aligned cleavage plates 1 to 4 inside a fixed dashed outline, a tract inset with a travelling ball and a rail",
+      "teachingReason": "Shows the zygote splitting without growing, so the cells get smaller",
+      "narrationCue": "it divides / copies its DNA and then splits / doesn't grow / get smaller / cleavage",
+      "motionPurpose": "The plates crossfade as each cell copies its DNA and splits inside the same dashed outline, the outline pulses to show no growth, and a ball travels toward the uterus in the inset",
+      "motionRole": "explain",
+      "onScreenChange": "Plates 1 to 4 sit inside a dashed outline; a DNA squiggle doubles and a line draws across before each crossfade on \"copies its DNA\" and \"then splits\"; the outline pulses with a \"same size\" bracket and the tag \"splits again before it grows\"; a scribble underline runs under the small cells; \"cleavage\" writes on with \"early splitting\"; the inset dot travels along the oviduct; \"2 divide\" joins the rail",
+      "motionTools": [
+        "plate crossfade",
+        "DrawPath cut line",
+        "particle duplicate",
+        "ScribbleUnderline",
+        "TravelingDotOnPath"
+      ],
+      "holdPurpose": "Hold the smallest cells in the outline"
+    },
+    {
+      "sceneId": "blastocyst",
+      "visualDecision": "new",
+      "visualReference": "Blastocyst plate in the same outline, a day counter ticking 1 to 5 beside the tract inset, and teal and amber outlines with labels",
+      "teachingReason": "Names the blastocyst and what its two parts will become",
+      "narrationCue": "about five days / hollow ball of cells / outer cells / small clump inside",
+      "motionPurpose": "The day counter ticks to 5 as the ball reaches the uterus, the blastocyst plate crossfades in, then a teal outline and label for the outer cells and an amber outline and label for the clump appear one after the other",
+      "motionRole": "explain",
+      "onScreenChange": "The day counter ticks 1 to 4 as the inset dot arrives in the uterus, reaches 5 on \"about five days\" with the dot free in the cavity, and the blastocyst plate crossfades in; a teal outline traces the ring with \"outer cells: help build the placenta\" and clears; an amber outline traces the clump with \"inner clump: becomes the embryo\"",
+      "motionTools": [
+        "NumberTicker",
+        "TravelingDotOnPath",
+        "plate crossfade",
+        "outline trace",
+        "label write-on"
+      ],
+      "holdPurpose": "Hold the two outlines"
+    },
+    {
+      "sceneId": "lining",
+      "visualDecision": "adjust",
+      "visualReference": "The thick-lining tract plate with a camera push to the uterus wall, a highlight wipe, a calendar strip with a two-week bar and a few-days window",
+      "teachingReason": "Poses the question of what keeps the lining thick, with the receptive window as the narrow condition",
+      "narrationCue": "wall of the uterus / two weeks / only a few of those days / What keeps it thick?",
+      "motionPurpose": "The camera pushes to the uterus wall, the lining is lit, a two-week bar fills with a short window lighting inside it, and the question writes on and holds",
+      "motionRole": "explain",
+      "onScreenChange": "The camera pushes to the uterus on \"wall of the uterus\"; a highlight wipe lights the lining with \"lining (rich in blood vessels)\"; a calendar strip lands with a two-week bar filling; a short window lights inside it with \"welcomes a blastocyst: a few days\"; \"What keeps it thick?\" writes in amber and holds about a second and a half",
+      "motionTools": [
+        "CameraStage push",
+        "HighlightWipe",
+        "bar fill",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the question for about a second and a half"
+    },
+    {
+      "sceneId": "progesterone",
+      "visualDecision": "adjust",
+      "visualReference": "Organ-blood-organ chain, the ovary follicle washing yellow into the corpus luteum, amber progesterone particles flowing to the lining and a progesterone graph panel",
+      "teachingReason": "Explains hormone as a messenger and shows the corpus luteum keeping the lining thick",
+      "narrationCue": "chemical messenger / corpus luteum / progesterone / keeps the lining thick",
+      "motionPurpose": "A three-icon chain draws on, the empty follicle washes yellow, amber particles flow to the uterus and brighten the lining, and a progesterone curve rises from an ovulation marker",
+      "motionRole": "explain",
+      "onScreenChange": "A chain of organ, vessel, organ icons draws on, one per word; the empty follicle pulses then washes yellow with \"corpus luteum\" and \"yellow body\"; amber progesterone dots flow along a vessel path to the uterus and the lining brightens; the graph axes draw on, an \"ovulation (egg released)\" marker lands and the amber curve rises in step with \"releases the hormone progesterone\"",
+      "motionTools": [
+        "icon chain build",
+        "ParticleEmitter",
+        "TravelingDotOnPath",
+        "plate wash",
+        "DrawPath curve"
+      ],
+      "holdPurpose": "Hold the rising curve"
+    },
+    {
+      "sceneId": "implantation",
+      "visualDecision": "new",
+      "visualReference": "Three aligned implantation plates with a camera push, teal arrows, a nutrient flow, a fertilisation versus implantation pin card and the thin-lining plate",
+      "teachingReason": "Defines implantation, separates it from fertilisation, and shows why a lining that is not ready blocks it",
+      "narrationCue": "attaches / grow into the lining / closes over it / not fertilisation / about a week later / isn't ready",
+      "motionPurpose": "The blastocyst attaches, teal arrows show it growing in, the plates crossfade as the lining closes over it, and a pin card separates the oviduct from the uterus a week later, before a blastocyst bounces off a thin lining",
+      "motionRole": "explain",
+      "onScreenChange": "Plate 1 shows the blastocyst and lining with labels; teal arrows from the outer cells draw on and the plate crossfades to plate 2 then plate 3 on \"closes over it\"; \"implantation\" and \"a pregnancy begins here\" write on; amber and pale blue dots flow from the lining into the embryo with a bracket \"as well as what the egg carried\"; a card pins \"fertilisation: oviduct\" and \"implantation: uterus, about a week later\"; the thin-lining plate replaces the thick one and a blastocyst bounces off with a cross and \"no attachment, no pregnancy\"; \"3 attach\" joins the rail",
+      "motionTools": [
+        "CameraStage push",
+        "plate crossfade",
+        "DrawPath arrows",
+        "particle flow",
+        "Mark cross",
+        "pin drop"
+      ],
+      "holdPurpose": "Hold the bounce and the tag"
+    },
+    {
+      "sceneId": "hcg",
+      "visualDecision": "adjust",
+      "visualReference": "Enlarged progesterone graph with a grey dashed no-pregnancy branch, a uterus inset crossfading thick to thin lining, teal hCG particles to the ovary, then an organ chain and a test stick",
+      "teachingReason": "Shows why the embryo must send hCG: without it the corpus luteum fails and the lining is shed",
+      "narrationCue": "no pregnancy / progesterone falls / the embryo sends a message / hCG / keep working / acts on the corpus luteum",
+      "motionPurpose": "A grey branch shows progesterone falling and the lining shed, then teal hCG travels from the embryo to the ovary and the amber curve carries on, and the chain labels each hormone's target in turn",
+      "motionRole": "explain",
+      "onScreenChange": "The graph enlarges; a grey dashed branch peaks and falls at \"about 2 weeks after ovulation\" while the uterus inset crossfades thick to thin lining with \"lining shed\"; the inset shows the implanted embryo with the lining falling away and \"pregnancy ends\"; teal hCG dots travel from the embryo to the ovary on \"the embryo sends a message\" and the corpus luteum glows; the amber curve carries on solid while the lining stays thick; the graph slides left and the chain \"embryo, hCG, corpus luteum, progesterone, lining\" draws arrow by arrow; a test stick lands with \"this is what a test detects\"; \"4 signal\" joins the rail",
+      "motionTools": [
+        "DrawPath curve",
+        "plate crossfade",
+        "ParticleEmitter",
+        "TravelingDotOnPath",
+        "icon chain build",
+        "rail build"
+      ],
+      "holdPurpose": "Hold the labelled chain"
+    },
+    {
+      "sceneId": "handover",
+      "visualDecision": "adjust",
+      "visualReference": "Stacked-area progesterone graph with corpus luteum and placenta shares, a broken-axis bracket, the fetus-and-placenta plate with a wash and the organ chain greying hCG",
+      "teachingReason": "Shows the placenta taking over progesterone so the pregnancy no longer depends on the corpus luteum",
+      "narrationCue": "a new organ takes over / the placenta forms / two to three months / no longer depends",
+      "motionPurpose": "The progesterone area is redrawn as two shares, the placenta share grows as the corpus luteum share fades, and the chain greys the hCG arrow and lights the placenta arrow",
+      "motionRole": "explain",
+      "onScreenChange": "The amber curve is redrawn as a stacked area; a second share \"from the placenta\" with a teal outline grows beneath \"from the corpus luteum\" which fades over a bracket \"first 2 to 3 months after fertilisation\" with a broken-axis mark; the fetus-and-placenta plate crossfades in with \"later in pregnancy (about 5 months)\" and a teal and rose wash merging on the placenta; in the small chain the hCG arrow greys and \"placenta\" lights with a progesterone arrow to the lining; \"5 hand over\" joins the rail",
+      "motionTools": [
+        "stacked area draw-on",
+        "plate crossfade",
+        "HighlightWipe",
+        "icon chain",
+        "rail build"
+      ],
+      "holdPurpose": "Hold the hand-over graph"
+    },
+    {
+      "sceneId": "exchange",
+      "visualDecision": "new",
+      "visualReference": "Embryo and fetus stage chips with small drawings, then a magnified coded placenta exchange of two blood channels with a thin barrier and oxygen, nutrient and waste dots",
+      "teachingReason": "Separates embryo from fetus and shows exchange across a barrier without the bloods mixing",
+      "narrationCue": "embryo / fetus / don't mix / oxygen moves / nutrients cross too / the other way",
+      "motionPurpose": "Two stage chips write on, a lens pushes into the placenta, oxygen dots drift across the barrier from the crowded mother side, amber nutrient dots follow, and wastes drift back the other way",
+      "motionRole": "explain",
+      "onScreenChange": "The chips \"embryo: organs forming\" and \"fetus: grows and matures\" write on with small drawings; a lens pushes into the placenta where two channels (rose mother, purple baby) sit apart with a crossed joining arrow \"no mixing\"; many oxygen dots in the rose channel drift across the barrier and the purple side fills; amber nutrient dots cross the same way; grey carbon dioxide and waste dots drift from purple to rose; the card \"no mixing: things cross the thin barrier\" lands",
+      "motionTools": [
+        "stage chip write-on",
+        "MagnifyLens",
+        "TravelingDotOnPath",
+        "particle drift",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the closing exchange card"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Three numbered vignettes on one board: a dish blastocyst and neutral uterus outline, a two-marker timeline with hCG and corpus luteum tags, and a quote card beside the fetus-and-placenta plate",
+      "teachingReason": "Unseen transfer on progesterone, hCG timing and placental exchange with all conditions visible and no answer cues",
+      "narrationCue": "Your turn / no progesterone / three weeks / five months / mother's blood flows into / Pause",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The three numbered vignettes appear as each situation is named; the rail and the attach and implant labels are absent; every condition and demand stays on screen; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown (about 75 seconds)"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette one with the thin-lining plate appearing for the first time, a blastocyst bouncing off with a cross and crossed wrong-answer chips",
+      "teachingReason": "Explains that without progesterone the lining is not ready, and hCG cannot rescue a blastocyst that cannot implant",
+      "narrationCue": "can't implant / progesterone is what keeps the lining thick / hCG would fix it",
+      "motionPurpose": "The neutral outline becomes a thin-lining uterus, the blastocyst bounces off with a cross, an amber card explains why, and two wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The thin-lining plate replaces the neutral outline on \"the lining isn't ready\" and the blastocyst bounces off with a cross; the amber card \"no progesterone, lining not ready, no attachment\" writes on; the chips \"the blastocyst can't form\" and \"hCG would fix it\" land and are crossed",
+      "motionTools": [
+        "plate crossfade",
+        "Mark cross",
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold the corrected board"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Timeline at three weeks with a greyed corpus luteum, falling amber curve and thinning lining, then at five months with the placenta share carrying on, and the chain replayed",
+      "teachingReason": "Explains why the same failure ends a pregnancy at three weeks but not at five months, and separates the two hormone jobs",
+      "narrationCue": "three weeks / the pregnancy is likely to end / hCG can't help / five months / separate the two jobs",
+      "motionPurpose": "At three weeks the corpus luteum greys, the amber curve falls and the lining thins, then at five months the placenta share carries the supply, and the chain draws each hormone's target in turn",
+      "motionRole": "explain",
+      "onScreenChange": "At three weeks the corpus luteum greys, the amber curve falls, the lining thins (aligned pair) and a grey \"likely to end\" stamp lands; an arrow from hCG to the greyed corpus luteum is crossed out; at five months the placenta share carries the progesterone and \"pregnancy carries on\" lands; the chain replays with \"hCG: corpus luteum\" and \"progesterone: lining\" drawn in turn; the chip \"hCG keeps the lining\" is crossed",
+      "motionTools": [
+        "DrawPath curve",
+        "plate crossfade",
+        "stamp pop",
+        "Mark cross",
+        "icon chain build"
+      ],
+      "holdPurpose": "Hold the two jobs written out"
+    },
+    {
+      "sceneId": "feedback-three",
+      "visualDecision": "adjust",
+      "visualReference": "The placenta exchange close-up replayed with the student quote struck through at don't mix and a corrected sentence written beneath",
+      "teachingReason": "Corrects the mixing misconception by returning to the barrier picture",
+      "narrationCue": "don't mix / thin membranes / oxygen moves",
+      "motionPurpose": "The close-up replays, the quote is struck through at \"mixing\" and the corrected sentence writes beneath it",
+      "motionRole": "explain",
+      "onScreenChange": "The exchange close-up replays; the quote \"the mother's blood flows into the fetus's blood\" is struck through on \"don't mix\"; the corrected sentence \"oxygen crosses the thin barrier from mother's blood to fetus's blood; wastes (such as carbon dioxide) cross back\" writes beneath",
+      "motionTools": [
+        "particle drift",
+        "strike-through",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the corrected sentence"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "adjust",
+      "visualReference": "The full numbered rail written large with icons lit in order, two amber aid lines, the organ chain and a next-lesson chip",
+      "teachingReason": "Gives a five-step sequence and two name aids for progesterone and hCG, then hands off to birth",
+      "narrationCue": "The egg is released / pro-gestation / the embryo's message / Next time",
+      "motionPurpose": "The rail writes on large with each icon lighting as its step is spoken, two aid lines write on under it with the chain as a reminder, and a next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The rail \"1 meet, 2 divide, 3 attach, 4 signal, 5 hand over\" writes on large, each chip with its icon lighting in order; \"pro-gest-erone = pro-gestation: it holds the lining\" and \"hCG = the embryo's message: I'm here, keep going\" write on with the organ chain beneath; a chip \"Next: how birth starts\" with a uterus outline and clock ring slides in",
+      "motionTools": [
+        "HandText write-on",
+        "rail build",
+        "icon light",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the rail and aid lines"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid and rail in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Six notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b3a-learning-review.md",
+      "sha256": "338045656ba99c69d266a6dc143d29585f5cddfd8704ce5270d6987f8415b92a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b3a-claude-science-check.md",
+      "sha256": "d97af5b41499eb0e0869e3533950b476a49e567cde14e0db0843e922dc12843b"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

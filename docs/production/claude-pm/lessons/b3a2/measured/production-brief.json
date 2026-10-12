@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b3a2/measured/lesson.json",
+    "lessonSha256": "5134940b324bf791502c20f4d10143f237f7001e45f50489e976a90f8efb943f"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B3a part 1 and earlier: gametes, internal fertilisation, the corpus luteum, hCG and progesterone, and the placenta taking charge of progesterone. Students may have heard of periods and labour but not of FSH, LH, the pituitary or feedback.",
+    "startsWith": "The question left by part 1: an egg is released about once a month, so what stops another egg for nine months?",
+    "stopsAfter": "Explaining that progesterone returning in the blood turns FSH and LH down (negative feedback) so no new egg is released through pregnancy; that late oestrogen makes the uterus muscle more responsive to oxytocin; tracing the birth loop as positive feedback that ends when the baby is born; separating prolactin (makes milk) from oxytocin (ejects milk) and why milk is held back in pregnancy; and writing an Explain answer using both loops.",
+    "nextLesson": "The agriculture video: how people use what we know about reproduction (plants and animals) to change outcomes, and how to evaluate it."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b03a2.md"
+  ],
+  "teaching": {
+    "task": "Explain how negative and positive feedback are both used in the hormonal control of pregnancy and birth, and say which hormone makes and which moves milk.",
+    "causalExplanation": "FSH and LH from the pituitary grow a follicle and release an egg, and progesterone in the blood acts back on the pituitary and turns them down, which is negative feedback. In pregnancy the source of progesterone changes from the corpus luteum to the placenta but the pituitary senses it the same way, so the brake stays on. At birth the baby's head stretches the cervix, nerve signals make the pituitary release oxytocin, the muscle contracts harder and stretches the cervix more, so the result adds to the process, which is positive feedback, until the baby is born and the stretch stops. Prolactin makes milk and oxytocin squeezes it out.",
+    "conversationalApproach": "Starts from the question part 1 left open, builds each loop one arrow at a time with a persistent loop card, maps the brake onto a thermostat, shows the birth loop as a ring that gets stronger on each lap, defines negative and positive by what the result does to the process, models an Explain answer, then tests an unseen tablet case, a milk case and a feelings-based misconception.",
+    "openingDecision": "What stops the next egg for nine months, why does labour only get stronger once it starts, and how does the body make milk and move it?",
+    "understandingCheck": "Predict FSH, LH and ovulation for a non-pregnant woman taking a progesterone-like hormone at a pregnancy-level concentration, say whether prolactin or oxytocin is the problem when milk is made but little comes out, and correct a student who calls labour negative feedback because it is painful.",
+    "curriculumScope": "Analyse the required features and hormonal control of a scoped mammalian model (Module 5): progesterone negative feedback on FSH and LH, oestrogen effect on the uterus muscle, birth as positive feedback with oxytocin, and prolactin and oxytocin in lactation. Contraception, a full hormone cycle, fetal hormone signals and the hypothalamus detail are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, part 1 tract and fetus-and-placenta plates reused with one new aligned term uterus pair, coded brain and pituitary outline, loop diagrams, a thermostat loop, a hormone graph and a milk gland schematic. Fixed hormone colours: amber progesterone, slate FSH and LH, magenta oestrogen, violet oxytocin, green prolactin, cream milk; negative loops use a flat-ended arrow and a minus, positive loops a plus.",
+    "transitionPlan": "The tract plate stays while the brain outline slides in; the plate fades to a quiet field for the loop diagram; the loop slides up for the thermostat; the graph replaces the loop; the camera pushes into the uterus wall and then the cervix; the chain moves to the centre and closes into a ring; the two loop icons enlarge into a comparison card; the milk gland replaces the plates; the attempt board removes the loop card and it returns in the feedback; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Part 1 recap chip and thick-lining tract plate with a coded calendar strip, egg dots, contraction trace and a small milk gland icon",
+      "teachingReason": "Poses the three linked questions the video answers and shows the egg stopping for nine months",
+      "narrationCue": "an egg is released about once a month / nine months / only get stronger / make milk and move it",
+      "motionPurpose": "Egg dots lift from the ovary once a month then stop as the strip extends to nine blocks, a contraction trace draws on with taller waves, and a milk icon lands",
+      "motionRole": "explain",
+      "onScreenChange": "A recap chip shows the corpus luteum greying and the placenta lighting for two seconds; the calendar strip of three months lands and an egg dot travels to the oviduct three times; on \"nine months\" the strip becomes nine blocks and the dots stop with an amber question mark over the ovary; the contraction trace draws on with waves growing taller and closer; the heading writes on; a milk-gland icon with a green and a violet dot lands on \"make milk and move it\"; the tag \"two loops, then two jobs\" lands",
+      "motionTools": [
+        "plate reuse",
+        "DrawPath trace",
+        "TravelingDotOnPath",
+        "HandText write-on",
+        "strip extend"
+      ],
+      "holdPurpose": "Hold on the question mark for about two seconds"
+    },
+    {
+      "sceneId": "fsh-lh",
+      "visualDecision": "reuse",
+      "visualReference": "Part 1 tract plate with a coded brain and pituitary outline, slate hormone dots, follicle rings and a mini surge graph",
+      "teachingReason": "Teaches what starts an egg growing and releasing before anything is said about the brake",
+      "narrationCue": "pituitary / FSH / follicle / surge of LH / ovulation / corpus luteum",
+      "motionPurpose": "The brain outline slides in, slate dots travel to the ovary, the follicle grows, a spike draws in a mini graph, the egg is released and the follicle turns yellow",
+      "motionRole": "explain",
+      "onScreenChange": "The brain outline slides in and a scribble circle marks the pituitary with its plain label; slate FSH dots travel a blood path to the ovary on \"hormones from the pituitary\"; the follicle ring grows with \"FSH: follicle grows\"; a slate spike draws in a corner graph on \"a surge of LH\"; the follicle opens and the egg dot enters the oviduct with \"ovulation: the egg is released\"; a yellow wash covers the follicle and an amber progesterone dot leaves on \"corpus luteum\"",
+      "motionTools": [
+        "CameraStage slide",
+        "ScribbleCircle",
+        "ParticleEmitter",
+        "TravelingDotOnPath",
+        "DrawPath spike",
+        "plate wash"
+      ],
+      "holdPurpose": "Brief look at the yellow follicle"
+    },
+    {
+      "sceneId": "brake",
+      "visualDecision": "new",
+      "visualReference": "Coded loop diagram: pituitary on the left, ovary on the right, amber return arrow, brake-pedal doodle and a growing-follicle inset",
+      "teachingReason": "Shows progesterone acting back on the pituitary and defines negative feedback",
+      "narrationCue": "travels in the blood / release less FSH and LH / works like a brake / negative feedback",
+      "motionPurpose": "The loop builds one arrow at a time, an amber arrow returns to the pituitary and ends in a flat bar with a minus, the slate dots thin out and the follicle stops growing",
+      "motionRole": "explain",
+      "onScreenChange": "The loop diagram builds large; an amber \"progesterone\" arrow draws back to the pituitary with dots flowing on \"travels in the blood\"; on \"release less FSH and LH\" it lands in a flat bar-head with a minus, the slate dot flow thins and the follicle inset stops growing; a brake-pedal doodle draws with \"brake: slows FSH and LH down\"; \"no new egg\" tags the follicle; \"negative feedback\" writes large with its meaning; the loop card fills with the minus icon",
+      "motionTools": [
+        "DrawPath arrows",
+        "ParticleEmitter",
+        "emitter rate fade",
+        "HandText write-on",
+        "icon fill"
+      ],
+      "holdPurpose": "Hold the definition on screen"
+    },
+    {
+      "sceneId": "thermostat",
+      "visualDecision": "new",
+      "visualReference": "Coded thermostat loop (heater, warm room, thermostat) drawn beneath the body loop with dotted pairing lines",
+      "teachingReason": "Maps a familiar negative feedback loop onto the hormone loop part by part",
+      "narrationCue": "thermostat / switches the heater off / cold / FSH and LH lead to progesterone",
+      "motionPurpose": "The body loop slides up, the thermostat loop draws in underneath and dotted lines pair each part, then a cold room switches the heater back on",
+      "motionRole": "explain",
+      "onScreenChange": "The loop diagram slides up and the heater, warm room and thermostat draw on beneath; dotted lines pair heater to ovary, warmth to progesterone, thermostat to pituitary and switching off to \"less FSH and LH\" on their cues; the thermometer drops with a snowflake and the heater relights with \"cold: heater on\" on \"If the room gets cold\"; a pen note about a heat source held against the thermostat holds for about two seconds",
+      "motionTools": [
+        "slide-up",
+        "DrawPath loop",
+        "dotted pairing lines",
+        "thermometer drop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the pen note for about two seconds"
+    },
+    {
+      "sceneId": "brake-stays-on",
+      "visualDecision": "new",
+      "visualReference": "Coded hormone graph (no numbers) with amber and slate lines, hCG chip, source label swap, tract inset and loop card",
+      "teachingReason": "Shows why the brake stays on in pregnancy: the source changes but the pituitary senses progesterone the same way",
+      "narrationCue": "no pregnancy / progesterone falls / hCG keeps the corpus luteum going / the placenta / the source has changed",
+      "motionPurpose": "The axes draw on and a grey dashed month shows progesterone falling as FSH and LH rise, then the pregnancy line keeps climbing while the source label swaps and the slate line stays low",
+      "motionRole": "explain",
+      "onScreenChange": "Axes draw on; on \"In a month with no pregnancy\" a grey dashed branch shows the amber line peaking and falling at \"about 2 weeks after ovulation\" while the slate line rises with \"brake off\"; on \"hCG keeps the corpus luteum going\" the amber line continues with a yellow outline and a teal hCG chip; on \"then the placenta\" the outline turns teal with a bracket \"the whole pregnancy\"; the source label swaps while a copy of the brake loop stays the same; the slate line stays low; \"brake on\" and \"in pregnancy\" write on the loop card",
+      "motionTools": [
+        "DrawPath lines",
+        "label swap",
+        "bracket draw",
+        "chip pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the low slate line under the bracket"
+    },
+    {
+      "sceneId": "oestrogen",
+      "visualDecision": "reuse",
+      "visualReference": "Part 1 fetus-and-placenta plate with a camera push to the uterus wall, coded oestrogen bar, calm trace and a muscle cell close-up",
+      "teachingReason": "Shows oestrogen making the muscle respond more strongly to the same amount of oxytocin",
+      "narrationCue": "mostly muscle / keep calm / more and more oestrogen / oxytocin / bigger response",
+      "motionPurpose": "The camera pushes to the uterus wall, the muscle is lit, the magenta bar grows, and a close-up shows the same three oxytocin dots fitting better and squeezing the cell harder",
+      "motionRole": "explain",
+      "onScreenChange": "A slow camera push reaches the uterus wall and a highlight wipe lights the muscle with \"uterus wall: mostly muscle\"; amber dots settle and a calm trace draws flat; a magenta oestrogen bar grows from the placenta on \"more and more oestrogen\"; a lens pushes into a muscle cell where three violet dots arrive and one fits, then after the bar rises many fit and the cell squeezes strongly; the bracket \"same amount of oxytocin, bigger response\" lands",
+      "motionTools": [
+        "CameraStage push",
+        "HighlightWipe",
+        "bar resize",
+        "MagnifyLens",
+        "TravelingDotOnPath",
+        "DrawPath trace"
+      ],
+      "holdPurpose": "Hold the bracket"
+    },
+    {
+      "sceneId": "trigger",
+      "visualDecision": "new",
+      "visualReference": "Two new aligned painted term uterus plates (cervix unstretched then stretched), brain inset and a five-icon chain",
+      "teachingReason": "Traces the birth loop from stretch to oxytocin to harder contractions and admits what is not yet known",
+      "narrationCue": "still being worked out / cervix / stretches it / nerve signals / oxytocin / contracts harder",
+      "motionPurpose": "A question tag clears, the camera pushes to the cervix, the plates crossfade as it stretches, and five chain icons build while a signal dot and violet dots travel to the brain and back",
+      "motionRole": "explain",
+      "onScreenChange": "The tag \"first trigger: still being worked out\" sits by a calm trace then clears; the camera pushes to the cervix with a scribble circle and its label; a pressure arrow lands on \"push the baby's head down\"; plate 1 crossfades to plate 2 on \"stretches it\" while a gauge rises; the chain icons stretch, nerve signal, pituitary, oxytocin, contraction land one per word; a dashed path and travelling dot reach the brain inset; violet dots travel to the muscle and the contraction trace gets a bigger wave on \"contracts harder\"",
+      "motionTools": [
+        "CameraStage push",
+        "plate crossfade",
+        "ScribbleCircle",
+        "TravelingDotOnPath",
+        "ParticleEmitter",
+        "icon chain build",
+        "bar resize"
+      ],
+      "holdPurpose": "Brief hold on the finished chain"
+    },
+    {
+      "sceneId": "loop-closes",
+      "visualDecision": "adjust",
+      "visualReference": "The five-icon chain moved to the centre as a ring with a lap counter, stretch and oxytocin bars, contraction trace and the loop card",
+      "teachingReason": "Shows the result feeding back to make the process stronger and defines positive feedback",
+      "narrationCue": "more firmly / more oxytocin / positive feedback / nothing in this loop turns it down / until the baby is born",
+      "motionPurpose": "A curved arrow closes the chain into a ring, a lap counter ticks while the bars and trace waves grow, a plus lands at the centre, and the stretch gauge falls to zero at birth",
+      "motionRole": "explain",
+      "onScreenChange": "The chain moves to the centre and a curved arrow draws from \"contraction\" back to \"stretch\"; a lap counter ticks 1, 2, 3 while the stretch and oxytocin bars step up and the trace waves grow taller and closer; a plus in a circle lands and \"positive feedback\" writes large with \"the result pushes the process further\"; a crossed-out flat-ended brake arrow flashes on \"Nothing in this loop turns it down\"; the stretch gauge falls to zero, the ring greys with \"the stretch stops, so the loop stops\"; the loop card fills with the plus icon",
+      "motionTools": [
+        "DrawPath ring",
+        "NumberTicker",
+        "bar resize",
+        "Mark cross",
+        "HandText write-on",
+        "icon fill"
+      ],
+      "holdPurpose": "Hold the greyed ring"
+    },
+    {
+      "sceneId": "two-kinds",
+      "visualDecision": "adjust",
+      "visualReference": "Two loop icons enlarged as a side-by-side comparison card with a doodled thumbs-down and thumbs-up",
+      "teachingReason": "Removes the good and bad meaning of negative and positive by defining each by what the result does to the process",
+      "narrationCue": "Negative does not mean bad / opposes a change / adds to a change",
+      "motionPurpose": "The two icons enlarge side by side, thumbs doodles draw on and are crossed out, and the rows write on one at a time as they are spoken",
+      "motionRole": "explain",
+      "onScreenChange": "The minus and plus icons enlarge into a comparison card; the thumbs-down and thumbs-up doodles draw on and each gets a scribble cross, then clear; rows write on in turn: \"opposes the change\", \"adds to the change\", \"keeps things steady\", \"speeds up until the stimulus ends\", then the examples; after the narration a quiet chip writes \"most hormone loops are negative; birth is one of the few positive ones\" with illustrative bars",
+      "motionTools": [
+        "icon enlarge",
+        "HandText write-on",
+        "Mark cross",
+        "bar resize",
+        "row build"
+      ],
+      "holdPurpose": "Hold the finished card while the chip writes on"
+    },
+    {
+      "sceneId": "explain-answer",
+      "visualDecision": "new",
+      "visualReference": "Question card from the site and two model answer cards for pregnancy and birth with loop icons",
+      "teachingReason": "Models an Explain answer that uses both loops, one stage at a time, with the because clauses marked",
+      "narrationCue": "First, the negative feedback / Second, the positive feedback / because",
+      "motionPurpose": "The question writes on, card one lights its three clauses in order, then card two lights its clauses, each because gets circled and its loop icon lights",
+      "motionRole": "explain",
+      "onScreenChange": "The question card writes on at the top; answer card 1 \"Pregnancy: negative feedback\" lights its clauses in order (progesterone stays high, so FSH and LH fall, so no egg is released); card 2 \"Birth: positive feedback\" lights its clauses (stretch, oxytocin, stronger contractions, more stretch; ends at birth); a scribble circle lands on each \"because\" with the minus then plus icon lighting; the cards stay on screen",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "ScribbleCircle",
+        "clause highlight",
+        "icon light"
+      ],
+      "holdPurpose": "Quiet two second hold on both cards"
+    },
+    {
+      "sceneId": "milk-jobs",
+      "visualDecision": "new",
+      "visualReference": "Coded milk gland schematic (sacs, duct, muscle crescents) with the brain outline and a bridge card",
+      "teachingReason": "Separates making milk from moving milk as two hormone jobs",
+      "narrationCue": "after the birth / Prolactin / produce milk / tiny muscle cells / squeeze",
+      "motionPurpose": "A bridge card clears, green dots fill the sacs with cream, then violet dots arrive and muscle crescents squeeze cream out along the duct",
+      "motionRole": "explain",
+      "onScreenChange": "The bridge card \"after the birth: feeding the baby\" writes on and clears; green prolactin dots reach the sacs and they fill with cream with \"prolactin: makes milk\" on \"produce milk\"; muscle crescents with a violet outline fade in around the sacs; violet dots arrive on \"squeeze\", the crescents pulse and cream dots travel the duct with \"oxytocin: squeezes the milk out\"",
+      "motionTools": [
+        "ParticleEmitter",
+        "fill-level animation",
+        "scale pulse",
+        "TravelingDotOnPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the labelled gland"
+    },
+    {
+      "sceneId": "milk-trigger",
+      "visualDecision": "adjust",
+      "visualReference": "Milk gland with a dashed nerve path to the brain inset, a split board with a held-back band and the part 1 placenta plate",
+      "teachingReason": "Shows the suckling trigger and why progesterone and oestrogen hold milk back until the placenta leaves",
+      "narrationCue": "when the baby suckles / held back / during pregnancy / the placenta leaves the body",
+      "motionPurpose": "A dashed path and dot run to the brain, green then violet dots return, the board splits to show amber and magenta dots blocking the gland, then the band lifts and the sacs fill",
+      "motionRole": "explain",
+      "onScreenChange": "A dashed path draws from the duct to the brain inset and a dot travels it on \"when the baby suckles\", the pituitary pulses and releases green then violet dots to the gland; the board splits and amber and magenta dots sit in a band at the gland entrance with \"held back\" and thin sacs beside a small washed placenta; on \"the placenta leaves the body\" the wash fades, the band lifts and the sacs fill with \"levels fall, milk production begins\"",
+      "motionTools": [
+        "DrawPath path",
+        "TravelingDotOnPath",
+        "ParticleEmitter",
+        "split board",
+        "fill-level animation"
+      ],
+      "holdPurpose": "Hold the filled sacs"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Three numbered vignettes on one board: tablet beside pituitary and ovary outlines, the full milk gland with a baby icon, and a student quote card",
+      "teachingReason": "Unseen transfer on the brake, prolactin versus oxytocin and the two kinds of feedback with all conditions visible and no answer cues",
+      "narrationCue": "Your turn / daily tablet / breastfeeding / Labour is negative feedback / Pause",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The three numbered vignettes appear as each situation is named with their pen notes and plain chips; the loop card, minus and plus icons and hormone direction arrows are absent; all conditions and demands stay on screen; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown (about 90 seconds)"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette one enlarged with the brake loop replayed using the tablet as the source, ovary inset and two crossed chips",
+      "teachingReason": "Shows the pituitary senses progesterone whatever its source, so the tablet acts as the same brake",
+      "narrationCue": "LH stays low / whatever its source / same brake / isn't pregnant",
+      "motionPurpose": "The brake loop replays with the tablet as the source, a flat-ended arrow lands with the minus, the slate dots thin and the follicle stays still, and two wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The loop diagram replays on the board with the tablet replacing the corpus luteum; amber dots flow to the pituitary, the flat-ended arrow lands with the minus, the slate dots thin out and the ovary inset shows no growing follicle; the chips \"she isn't pregnant, so she ovulates\" and \"FSH and LH rise\" appear and are crossed; the doodle \"the pituitary senses progesterone, whatever its source\" writes on; the small thermostat heat-source note returns",
+      "motionTools": [
+        "DrawPath arrows",
+        "ParticleEmitter",
+        "emitter rate fade",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the corrected loop"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette two enlarged with prolactin and oxytocin chips, full sacs, flat muscle crescents and a replay of the squeeze",
+      "teachingReason": "Separates making milk from moving milk to diagnose the blocked step",
+      "narrationCue": "oxytocin / plenty of milk / prolactin is working / squeezed out",
+      "motionPurpose": "The prolactin chip lights green with a tick, the oxytocin chip lights violet while the crescents stay flat with a cross on the duct, and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "\"prolactin: makes milk\" lights green with a tick over the full sacs; \"oxytocin: squeezes milk out\" lights violet while the crescents stay flat and a cross sits on the duct; a short replay of the earlier squeeze plays beside it; the chip \"prolactin, because it is the milk hormone\" is crossed; the doodle \"make it, then move it\" writes on",
+      "motionTools": [
+        "chip highlight",
+        "Mark cross",
+        "scale pulse",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the two labelled jobs"
+    },
+    {
+      "sceneId": "feedback-three",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette three enlarged with the quote words struck through and the loop card returned as a two-column fix",
+      "teachingReason": "Corrects the feelings-based use of negative and positive by testing whether the result opposes or adds to the process",
+      "narrationCue": "depends on whether the result opposes the process or adds to it / negative / positive",
+      "motionPurpose": "The words negative and positive are struck through in the quote, then a two-column card fills in the brake as negative and labour as positive while the feeling chips are crossed out",
+      "motionRole": "explain",
+      "onScreenChange": "Two words in the quote, \"negative\" and \"positive\", are struck through; the loop card returns as two columns filled by the spoken sentences: \"pregnancy brake: negative (it opposes the change: turns FSH and LH down)\" and \"labour: positive (the result pushes the process further)\" with the minus and plus icons; the chips \"painful\" and \"protects the pregnancy\" are crossed out with \"opposes or adds, not feelings\"",
+      "motionTools": [
+        "strike-through",
+        "HandText write-on",
+        "icon fill",
+        "Mark cross",
+        "column build"
+      ],
+      "holdPurpose": "Hold the two-column fix"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "reuse",
+      "visualReference": "Large loop card with both icons, two amber aid lines with hormone dots, the question rule, the chain, a next-lesson chip and a silent who-does-what strip",
+      "teachingReason": "Gives reusable aids for oxytocin and prolactin and a test for any hormone loop, then hands off to farming and offers a retrieval strip",
+      "narrationCue": "oxytocin squeezes / pro-lactation / opposes the change / adds to it / Next",
+      "motionPurpose": "The loop card returns, the aid lines and rule write on, the chain lights in turn and a next chip slides in, then after the narration six hormone rows write on silently, one every 1.5 seconds",
+      "motionRole": "explain",
+      "onScreenChange": "The loop card returns large; \"oxytocin squeezes: uterus and breast\" writes on with a violet dot on each and \"prolactin = pro-lactation: makes milk\" with a green dot; the rule \"Does the result oppose the change (negative) or add to it (positive)?\" writes large and the chain icons light in turn; a chip \"Next: reproduction and farming\" slides in; after about ten silent seconds a who-does-what strip of six rows writes on, one every 1.5 seconds, in the fixed hormone colours",
+      "motionTools": [
+        "HandText write-on",
+        "icon light",
+        "chip slide-in",
+        "row build",
+        "dot colour coding"
+      ],
+      "holdPurpose": "About ten second silent hold with the who-does-what strip"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b3a2-learning-review.md",
+      "sha256": "a1caa73ff515b81c3c2909cb7d3de7b8d58dbbe2f215fe0da8d3047712f3da9b"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b3a2-claude-science-check.md",
+      "sha256": "406ca0d738d9e73a477769a2803a94a7a133099fcde703988abbe86689dfb72c"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

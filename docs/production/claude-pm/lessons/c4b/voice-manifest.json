@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C4b-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c4b/lesson.json",
+  "lessonSha256": "a5244cf4407dbf89db9b66f5ca4ace6289267efa88f608f8491882206d7bf5f7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c4b/lesson.production-brief.json",
+    "sha256": "e1a2ba3f8b0338ba5227cd1d84f52185f999a46a79530dc0f7f10dc1a36d0965"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are two identical sealed tubes of hydrogen and purple iodine vapour, heated to the same temperature. We add a pinch of a metal catalyst to the tube on the right. A catalyst is a substance that speeds a reaction up without being used up. Watch the purple. In the catalyst tube it fades fast, in the other slowly. But wait long enough, and both end up the same pale shade. So a catalyst changed how fast, but not where it ends. How can it change one and not the other?",
+      "hash": "4064c4eb294e",
+      "textSha256": "4064c4eb294e40d9dd96c742856ceec175ee4bbb6cf567912bd799989c6d78ea",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/hook.4064c4eb294e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/hook.4064c4eb294e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/hook.4064c4eb294e.generation.json",
+      "plannedRequestSha256": "61fc5921942a5444ccb94cd7665196d81f71c2a48907f3c683c1f201610f27ef"
+    },
+    {
+      "id": "ridge",
+      "parentSceneId": "ridge",
+      "text": "Most collisions just bounce apart. Only collisions with enough energy make a reaction happen. The minimum energy a collision needs is called the activation energy. Picture it as a ridge between two valleys. The height is energy: each valley is the energy stored in those molecules. Hydrogen and iodine sit in one valley, hydrogen iodide in the other, and the top of the ridge is the energy a collision must reach. Hydrogen iodide has to climb the same ridge to go back.",
+      "hash": "a2088970fbe2",
+      "textSha256": "a2088970fbe2450d3fe81345f48efc353543818969d7ecaaef77ac38bdec9d91",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/ridge.a2088970fbe2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/ridge.a2088970fbe2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/ridge.a2088970fbe2.generation.json",
+      "plannedRequestSha256": "04d7f88174773644e408b8367fb618b57f326559c4dc245c414906c2e1b6ac87"
+    },
+    {
+      "id": "route",
+      "parentSceneId": "route",
+      "text": "A catalyst gives the molecules an alternative pathway, a different route. They land on the metal, split into atoms that stick to the surface, the atoms pair up as hydrogen iodide and leave. The metal ends up unchanged, ready for the next molecules.",
+      "hash": "71318ca7cd29",
+      "textSha256": "71318ca7cd29e4291d070dd5a4f823a228d1f514a3fe39d4981c9d63c06833c6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/route.71318ca7cd29.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/route.71318ca7cd29.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/route.71318ca7cd29.generation.json",
+      "plannedRequestSha256": "6fe971a4e9dfa393edcdab077f6a357e01f9b8ad612f99f14d08b00bcc92301a"
+    },
+    {
+      "id": "lower-pass",
+      "parentSceneId": "lower-pass",
+      "text": "Even the hardest step on that route needs less energy than the old ridge, so the new pass is lower. The valleys have not moved, so the energy difference between them is the same as before. That difference is the heat of the reaction: going down the slope gives out heat, going up takes it in.",
+      "hash": "88ff9132c8e4",
+      "textSha256": "88ff9132c8e4691431d1bf647778990f2e77cf10785b0ed0f1c26bdea7746cc6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/lower-pass.88ff9132c8e4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/lower-pass.88ff9132c8e4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/lower-pass.88ff9132c8e4.generation.json",
+      "plannedRequestSha256": "d34aa792a227a0a3d6a746a92d40172479277ce19393aafa06800b431955f848"
+    },
+    {
+      "id": "lower-pass-both-ways",
+      "parentSceneId": "lower-pass-both-ways",
+      "text": "A lower pass means a faster reaction, because more collisions have enough energy to get through. Of the same twenty collisions, say one gets over the high ridge, and ten get through the low pass. That is ten times as many successful collisions every second. Hydrogen iodide going back climbs to the same new top. The valleys have not moved, so its climb is lower by the same height. A drop of the same height multiplies the successful collisions by the same factor, whichever side you start from, so its successful collisions also rise ten times. Ten is a made-up factor.",
+      "hash": "27b6c49a8d10",
+      "textSha256": "27b6c49a8d10ad0de0145325c7f5a89760022458ff0b6512ddb468541b934bbc",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/lower-pass-both-ways.27b6c49a8d10.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/lower-pass-both-ways.27b6c49a8d10.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/lower-pass-both-ways.27b6c49a8d10.generation.json",
+      "plannedRequestSha256": "60866a86a636c05c395df45e982ca15fbd8b267528e6af27e449feb1c5a570f8"
+    },
+    {
+      "id": "tube-a",
+      "parentSceneId": "tube-a",
+      "text": "Follow both tubes. The tube without the catalyst starts with nine units of hydrogen, nine of iodine and no hydrogen iodide. The forward rate, which makes hydrogen iodide, starts high, at about four units of hydrogen used per tick of our made-up clock, and falls. The reverse rate starts at zero and rises. At about thirteen on the clock the rates are nearly equal, close to a fifth of a unit per tick, and the mixture settles at about two units of hydrogen, two of iodine and fourteen of hydrogen iodide.",
+      "hash": "692b67f76319",
+      "textSha256": "692b67f7631987cdb8cde0db9082f9343cca1f58032ccc017bf6137893b5a241",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/tube-a.692b67f76319.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/tube-a.692b67f76319.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/tube-a.692b67f76319.generation.json",
+      "plannedRequestSha256": "693ea04f42896bc149cbd78980b84ecfcb0aebf98a3d54288e74d9de7d378e24"
+    },
+    {
+      "id": "tube-b",
+      "parentSceneId": "tube-b",
+      "text": "Now the tube with the catalyst, with the same start. At any mixture, its rates are ten times the first tube's rates at that same mixture. So every change takes a tenth of the time, thirteen divided by ten, which is one point three. It follows the same path, like the same film played at ten times the speed.",
+      "hash": "4f0746e95307",
+      "textSha256": "4f0746e9530797472d986a82283443387573f3633f4ff5eb4d20d76c0d4599f7",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/tube-b.4f0746e95307.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/tube-b.4f0746e95307.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/tube-b.4f0746e95307.generation.json",
+      "plannedRequestSha256": "1813cacfae064406087f986423eff9a261e552f16088404fbd280418ba997851"
+    },
+    {
+      "id": "same-mixture",
+      "parentSceneId": "same-mixture",
+      "text": "Why the same mixture? In the first tube, that mixture has rates of a fifth and a fifth. With the catalyst, ten times a fifth is two, and ten times a fifth is two. The rates are still equal there. Any other mixture has unequal rates, and ten times unequal is still unequal. The tube stops changing only where the rates are equal, and that is still the same mixture.",
+      "hash": "b9cca2bc0882",
+      "textSha256": "b9cca2bc088249b548abe05b87e0862abf64463fee0837179d21c43f88b3cd01",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/same-mixture.b9cca2bc0882.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/same-mixture.b9cca2bc0882.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/same-mixture.b9cca2bc0882.generation.json",
+      "plannedRequestSha256": "b356b46dc5ae84b0eb1c8402d4865277855235ba7a04684db7b272946a354ef8"
+    },
+    {
+      "id": "limited-time",
+      "parentSceneId": "limited-time",
+      "text": "Stop the clock early, though. At time three, the first tube has about ten units of hydrogen iodide, and the catalyst tube already has fourteen. So if the clock stops early, a catalyst gives more product. After a long time, both tubes hold the same amount.",
+      "hash": "f564bce1d626",
+      "textSha256": "f564bce1d6262e0503868cfad932a0d8be703865694a1b28e68f8797250b83e0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/limited-time.f564bce1d626.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/limited-time.f564bce1d626.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/limited-time.f564bce1d626.generation.json",
+      "plannedRequestSha256": "cc4deb5b0e2147de05487d82d372243c03722849d6e4a4cdf52a53d95fadc38a"
+    },
+    {
+      "id": "catalyst-at-equilibrium",
+      "parentSceneId": "catalyst-at-equilibrium",
+      "text": "What if we add the catalyst to a tube that has already settled? Both rates are a fifth and the amounts are steady. The catalyst makes both rates ten times bigger at the same moment. They are two and two, still equal, so the amounts do not change. There is a moment of the change, but no response, because neither rate pulls ahead.",
+      "hash": "74f0ec7b9342",
+      "textSha256": "74f0ec7b934211f6fff93dfdb75d7183a60f5cde4bb236b5f8cc1c13ae7cb2e3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/catalyst-at-equilibrium.74f0ec7b9342.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/catalyst-at-equilibrium.74f0ec7b9342.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/catalyst-at-equilibrium.74f0ec7b9342.generation.json",
+      "plannedRequestSha256": "3c988d64db2e2bd440ae0ffc603db102e8bf03485375f758097f11bf1cf78f92"
+    },
+    {
+      "id": "which-rates-change",
+      "parentSceneId": "which-rates-change",
+      "text": "Adding a reacting substance changed one rate. Heating, or squeezing a gas with different gas counts on each side, changed both rates by different factors, so one reaction pulled ahead and the mixture shifted. When we heated, the reaction that takes in heat gained most, and that is the one with the higher ridge. Squeezing hydrogen and iodine, with two gas particles on each side, raised both rates by the same factor, and nothing shifted. A catalyst lowers both ridges by the same height, so it is like that case: both rates rise by the same factor and nothing pulls ahead.",
+      "hash": "244a1958a401",
+      "textSha256": "244a1958a40112c92225509d85d85f864879dcf8a42af7860bfef76543c043a1",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/which-rates-change.244a1958a401.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/which-rates-change.244a1958a401.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/which-rates-change.244a1958a401.generation.json",
+      "plannedRequestSha256": "1976f5f59e2d49e199340c19c067364e0163a9dba8e67c7764b115051fe525a0"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here is a shortcut. A catalyst changes the speed, not the destination. It tells you how soon the mixture arrives, never what the mixture is.",
+      "hash": "f7b37533de54",
+      "textSha256": "f7b37533de545c7fdd07cb4b4e3bfadf672bce5f9261f0983b1fdcd45e827c83",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/memory-aid.f7b37533de54.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/memory-aid.f7b37533de54.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/memory-aid.f7b37533de54.generation.json",
+      "plannedRequestSha256": "8e83a878747a80f34842c965166bdbdc4e17a9310802f28efd2ef5ff11ecf8a9"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Nitrogen and hydrogen make ammonia, N H three, in the Haber process. Two identical rigid sealed vessels start with only nitrogen and hydrogen, at the same steady temperature. Imagine both are left long enough to settle; without a catalyst that takes an extremely long time. Vessel B contains iron, a catalyst, and vessel A does not. One: which vessel settles first? Which has more ammonia if we stop the clock early, before either vessel has settled? And which has more once both have settled? Explain it using activation energy. Two: a third vessel has already settled at equilibrium and we add iron. What happens to the forward rate, the reverse rate and the amount of ammonia, and why? Pause the video if you'd like more time.",
+      "hash": "5be299d97ba0",
+      "textSha256": "5be299d97ba07bf1ffcaca44a743b73a296322c4279085612a33fad86a8478f6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/attempt.5be299d97ba0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/attempt.5be299d97ba0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/attempt.5be299d97ba0.generation.json",
+      "plannedRequestSha256": "8b370b4d2be496636fa7aeb0240213663f01b703493186a3749f45305e3b2227"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One. Vessel B settles first. Iron gives the molecules a route with a lower activation energy, so more collisions succeed in both directions. If you stop early, before either has settled, B has more ammonia. Once both have settled, they hold the same amount, however long vessel A takes. The iron lowers the activation energy by the same amount for the trip back, so both rates rise by the same factor. They were equal at the old mixture, so they are still equal there, and the vessels settle at the same mixture. If you said B ends with more ammonia, remember a catalyst changes how soon, not how much. If you said the vessels hold the same early on, remember B's rates are larger.",
+      "hash": "d7e83dc13a25",
+      "textSha256": "d7e83dc13a251e144c4415dd0b768b1ee8928b2bde37cae9ad121ef780c73e59",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/feedback-one.d7e83dc13a25.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/feedback-one.d7e83dc13a25.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/feedback-one.d7e83dc13a25.generation.json",
+      "plannedRequestSha256": "2eef80c34f22b72e97df67622fce0f264ffed93f539e1a7875952ae23e2a612c"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two. Iron raises the forward rate and the reverse rate by the same factor. They were equal, so they stay equal, and the amount of ammonia does not change. If you said it shifts toward ammonia, check whether one rate pulled ahead. If you said only the forward rate rises, remember the iron lowers the activation energy for the trip back by the same amount.",
+      "hash": "6f67aece0e3d",
+      "textSha256": "6f67aece0e3db6c46363f69d713282c5fd569f9563aa7d64ecd53aecd93e6997",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/feedback-two.6f67aece0e3d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/feedback-two.6f67aece0e3d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/feedback-two.6f67aece0e3d.generation.json",
+      "plannedRequestSha256": "702f65e11cfab16140d530ebe32a272db7f0d56b1d6f2925b7c5dc1334473587"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question adds a catalyst, ask whether it changes the speed or the mixture. It changes the speed, in both directions. On a graph, draw the same final level reached sooner, or no change at all if the mixture was already at equilibrium. For any other change, ask which rates change and whether by the same factor. Next: putting a number on where an equilibrium sits.",
+      "hash": "afe073be2331",
+      "textSha256": "afe073be2331c9c6bb51e2b231ab03398fd944d8ea65169874f2e81861fb1894",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/decision-rule.afe073be2331.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/decision-rule.afe073be2331.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/decision-rule.afe073be2331.generation.json",
+      "plannedRequestSha256": "71764db3cdba6c34f03242f6c36427dd6d5c55dc76447d30ccd7c1c935a31cec"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4b-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

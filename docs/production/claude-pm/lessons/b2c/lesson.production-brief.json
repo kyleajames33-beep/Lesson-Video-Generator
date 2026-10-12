@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b2c/lesson.json",
+    "lessonSha256": "07879a4ad1b39e0bef0aad98b132f7fe6647b6eeaeec65c8f8569f338366a84d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "First video of this series: asexual reproduction is one parent making a copy without gametes joining, offspring are clones apart from rare copying errors, and fast copying suits steady conditions. Cells contain DNA, and some cells have a nucleus (given a one-clause meaning in scene 4). Powers of two.",
+    "startsWith": "A glass of milk on a warm bench that turns sour, and the single bacterium it started from.",
+    "stopsAfter": "Describing binary fission and budding as copy, share, split with a bacterium, baker's yeast, an amoeba, a paramecium and a budding protist; explaining why DNA is copied before the cell splits; working out a doubling time example; and separating conjugation (DNA moved, no split, no new cell) from reproduction.",
+    "nextLesson": "B3a: what happens after a mammal's egg is fertilised (implantation, pregnancy and hormones)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b02c.md"
+  ],
+  "teaching": {
+    "task": "Explain how a single-celled organism makes a new cell, work out how many cells a doubling population reaches, and decide whether conjugation is reproduction.",
+    "causalExplanation": "A cell that simply pinched in half would leave one half with no DNA and no instructions, so the DNA is copied first, the copies are shared, then the cell splits. Fission turns the parent into two new cells and budding grows a new cell from a parent that carries on. Each doubling multiplies the whole crowd by two, so n doublings gives 2 to the power n cells until food runs out or waste builds up. Conjugation passes DNA between two existing cells without a split, so the number of cells does not change and it is not reproduction.",
+    "conversationalApproach": "Opens with sour milk and one bacterium with no partner, asks what goes wrong if a cell just pinches in half, builds one pattern (copy, share, split) across a bacterium, yeast, amoeba, paramecium and Acineta, works the doubling calculation one stage at a time, and separates conjugation with a count of cells before and after.",
+    "openingDecision": "A bacterium has no partner to join with. How does one cell make another cell, and how does that become a crowd?",
+    "understandingCheck": "Say which step failed when one new cell has one DNA loop and the other none, decide whether a bridge passing a gene between two bacteria is reproduction and what changed and what stayed the same, and work out the cells after 2 hours for a 40 minute doubling time.",
+    "curriculumScope": "Describe asexual reproduction in single-celled organisms: binary fission and budding, with conjugation separated from reproduction (Module 5). Mitosis stages, spores and mould, and sexual protist life cycles are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, B1 fission and budding plates reused with new aligned amoeba plates and single painted milk glass, paramecium and Acineta plates, a coded numbered copy, share, split strip, a doubling grid and a coded conjugation bridge.",
+    "transitionPlan": "The magnifier pushes from the milk glass to one bacterium; fission plates crossfade in order with the strip as a rail; the board clears for the doubling example; the budding plates replace the bacterium; a pond-water field replaces the bench for the protists; the conjugation drawing reuses the bacterium art; the three-column board assembles one column at a time; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "New painted milk glass plate, B1 bacterium fission plate 1 on a pale blue field, coded clock ring and magnifier ring",
+      "teachingReason": "Poses how one cell with no partner makes another cell and then a crowd",
+      "narrationCue": "sour / only a few bacteria / no partner / a crowd",
+      "motionPurpose": "The clock ring ticks and the milk tints, a magnifier pushes in to one bacterium, a crossed-out partner doodle lands and the heading holds on its question mark",
+      "motionRole": "explain",
+      "onScreenChange": "The clock ring ticks once as wavy smell lines rise on \"sour\"; a magnifier ring pushes in on the milk to a single bacterium on \"only a few bacteria\"; a crossed-out partner doodle appears on \"no partner\"; the heading \"How does one cell make another?\" writes on and holds about two seconds, with the second question as a smaller line on \"a crowd\" and the tag \"one cell, no partner\"",
+      "motionTools": [
+        "CameraStage push",
+        "MagnifyLens",
+        "Mark cross",
+        "HandText write-on",
+        "particle smell lines"
+      ],
+      "holdPurpose": "Hold on the question mark"
+    },
+    {
+      "sceneId": "problem-copy",
+      "visualDecision": "reuse",
+      "visualReference": "B1 fission plate 1 (bacterium with one DNA loop), coded cut line, instructions page icon and numbered strip",
+      "teachingReason": "Gives the cause for copying DNA before splitting by showing a half cell with no loop",
+      "narrationCue": "DNA is a single loop / simply pinched in half / holds the instructions / copy the DNA",
+      "motionPurpose": "A dashed cut sweeps the cell and one half greys out with no DNA, the loop lifts an instructions page, then the loop copies itself and a step chip lands",
+      "motionRole": "explain",
+      "onScreenChange": "A scribble circle and a leader label mark the loop on \"single loop\"; a dashed cut sweeps across on \"pinched in half\", the half with the loop gets a tick and the empty half greys with \"no DNA\" and a cross; an instructions page icon lifts from the loop on \"holds the instructions\" and the empty half gets \"no instructions\"; the loop draws a second loop on \"copy the DNA\" and \"1 copy\" lands in the numbered strip",
+      "motionTools": [
+        "ScribbleCircle",
+        "leader line draw-on",
+        "DrawPath cut line",
+        "Mark cross",
+        "loop duplicate",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the two identical loops for about a second"
+    },
+    {
+      "sceneId": "share-split",
+      "visualDecision": "reuse",
+      "visualReference": "B1 fission plates 2 and 3 crossfaded in order with the numbered strip",
+      "teachingReason": "Shows the share and split steps ending in two complete cells and names binary fission",
+      "narrationCue": "grows longer / new wall grows across the middle / binary fission / clones",
+      "motionPurpose": "The cell lengthens as the loops part, a wall draws across and pinches it, and the cells separate while the strip fills",
+      "motionRole": "explain",
+      "onScreenChange": "The plate crossfades to plate 2 with \"2 share\" on \"grows longer\"; a coded wall draws in from both sides and the plate crossfades to plate 3 with \"3 split\" on \"new wall grows across the middle\"; the number 2 writes large on \"binary\" with \"splitting\" on \"fission\"; an amber \"asexual: no joining\" stamp lands; the strip stays as a rail",
+      "motionTools": [
+        "plate crossfade",
+        "DrawPath wall",
+        "HandText write-on",
+        "stamp pop",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the finished strip"
+    },
+    {
+      "sceneId": "doubling",
+      "visualDecision": "new",
+      "visualReference": "Clean worked-example board: task card, one-cell grid with clock ring, givens, nine 20-minute blocks, equations and a lineGraph",
+      "teachingReason": "Works the doubling example one stage at a time and shows why growth levels off",
+      "narrationCue": "every 20 minutes / nine doublings / 2 to the power 9 / 512 / acid and other waste",
+      "motionPurpose": "One cell splits into 2, 4, 8, 16 with a ticking count, a bar fills with nine blocks, the working writes line by line to a circled 512, and the grid then flattens",
+      "motionRole": "explain",
+      "onScreenChange": "The task card writes on; the grid doubles to 2, 4, 8, 16 with the clock ring and NumberTicker count; the givens write on \"180 minutes\", nine 20-minute blocks fill a bar, \"180 min / 20 min = 9 doublings\" writes with the units cancelling, then \"2 x 2 x ... = 2 to the 9 = 512 cells\" with the nine 2s counted and the 512 circled; on \"10 hours\" the count races to about 1 billion with a \"30 doublings\" tag and a \"only if food never runs out\" card; the grid edge fades and a lineGraph flattens on \"waste build up\"",
+      "motionTools": [
+        "NumberTicker",
+        "UnitCancel",
+        "HandText write-on",
+        "lineGraph draw-on",
+        "particle split",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold the circled 512"
+    },
+    {
+      "sceneId": "yeast-budding",
+      "visualDecision": "reuse",
+      "visualReference": "B1 budding plates 1 to 3 with a coded bump, nucleus label, DNA travelling dot and a ghost of the bacterium plate",
+      "teachingReason": "Shows budding as copy, share, split and sets it apart from fission",
+      "narrationCue": "bud / nucleus / copies its DNA / wall forms across the narrow neck / the parent carries on",
+      "motionPurpose": "A bump grows on the yeast cell, the nucleus is circled, a DNA copy travels into the bud, a wall draws across the neck and the bud drifts clear",
+      "motionRole": "explain",
+      "onScreenChange": "A bump grows from the upper right edge and \"bud\" writes on with a leader line; a scribble circle and the label \"nucleus (holds the DNA)\" mark the nucleus for two seconds; a DNA copy travels through the neck on \"copies its DNA\" and \"1 copy, 2 share\" lights; the bud scales up with material dots; a wall draws across the neck on \"wall forms\" and the bud drifts clear into plate 3 with \"3 split\"; a ghost of two equal cells contrasts with the parent that stays, ticked",
+      "motionTools": [
+        "plate crossfade",
+        "ScribbleCircle",
+        "TravelingDotOnPath",
+        "DrawPath wall",
+        "ghost overlay",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the parent with its new cell"
+    },
+    {
+      "sceneId": "protist-fission",
+      "visualDecision": "adjust",
+      "visualReference": "Coded pond-water field, new aligned amoeba plates 1 to 3 and the paramecium plate with coded cilia and pinch",
+      "teachingReason": "Shows protists using the same copy, share, split pattern in two more organisms",
+      "narrationCue": "shapeless cell that crawls / pulls apart / binary fission / tiny hairs / divides across the middle",
+      "motionPurpose": "The amoeba crawls, its nucleus copies, and the cell pinches into two, then a paramecium slides in, its two nuclei double and a line pinches it across the middle",
+      "motionRole": "explain",
+      "onScreenChange": "The pond field fades in and the amoeba slides with a pseudopod pulse; a scribble circle marks the nucleus and a duplicate appears, then plates 2 and 3 crossfade as the cell pulls apart on \"pulls apart into two amoebae\" and \"binary fission\" writes on; the paramecium slides in, a cilia wave ticks on \"tiny hairs\", both its nuclei glow and double, a line draws across the middle on \"divides across the middle\" and each half lights with a tick and \"its own copy\"",
+      "motionTools": [
+        "plate crossfade",
+        "ScribbleCircle",
+        "cilia wave",
+        "particle duplicate",
+        "DrawPath cut line",
+        "leader line draw-on"
+      ],
+      "holdPurpose": "Hold the two paramecium halves"
+    },
+    {
+      "sceneId": "acineta",
+      "visualDecision": "new",
+      "visualReference": "Painted Acineta plate (stalked cell in a vase-shaped shell with an internal bud), coded bud cut-out and the four-example row",
+      "teachingReason": "Shows a budding protist and joins the examples under the two method names",
+      "narrationCue": "stalked Acineta / swimming bud / the same two methods / Copy, share, split",
+      "motionPurpose": "The Acineta plate slides in, the bud leaves through the opening and swims away, then the two method labels sit side by side over four example icons",
+      "motionRole": "explain",
+      "onScreenChange": "The plate slides in from the left; the bud leaves through the opening on \"releases a small swimming bud\" and swims off with a cilia flicker; \"budding\" writes on; on \"the same two methods\" the labels \"binary fission\" and \"budding\" sit side by side with four example icons beneath; \"Copy, share, split\" writes large on its cue above the numbered strip",
+      "motionTools": [
+        "plate slide-in",
+        "TravelingDotOnPath",
+        "cilia flicker",
+        "HandText write-on",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the two labels and examples"
+    },
+    {
+      "sceneId": "conjugation",
+      "visualDecision": "adjust",
+      "visualReference": "Two rod bacteria from the fission plate 3 art with a coded bridge, DNA ring dot, counters, a resistance mini panel and a clone row",
+      "teachingReason": "Separates passing DNA between existing cells from making a new cell, so conjugation is not reproduction",
+      "narrationCue": "thin bridge / passes a copy / Before, two. After, there are still two / not reproduction / antibiotic",
+      "motionPurpose": "A bridge draws between two cells, a DNA ring travels across, the counters read 2 and 2, then the receiver changes colour and the two-line rule writes on",
+      "motionRole": "explain",
+      "onScreenChange": "A coded bridge draws between the cells and a DNA ring travels it on \"passes a copy\" with a ghost copy staying behind; counters \"Before: 2\" and \"After: 2\" tick with a crossed-out \"new cell\"; an amber card writes \"reproduction = making a new individual = a new cell\"; a bead of a new colour appears in the receiver; a mini panel shows three of four cells surviving a drug; the rule \"fission = more cells\" and \"conjugation = changes cells that already exist\" writes on beside a row of identical clones",
+      "motionTools": [
+        "DrawPath bridge",
+        "TravelingDotOnPath",
+        "NumberTicker counters",
+        "Mark cross",
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the two-line rule"
+    },
+    {
+      "sceneId": "same-pattern",
+      "visualDecision": "adjust",
+      "visualReference": "Three-column board: bacterium fission strip, yeast budding strip and paramecium pinch, with the numbered strip along the bottom",
+      "teachingReason": "Lets students see copy, share and split repeat across three organisms and that no cell joins another",
+      "narrationCue": "bacterium, a yeast and a paramecium / copy / share / split / no cell joins another",
+      "motionPurpose": "The three columns build one at a time, in each the nucleus or loop glows and doubles, the copies part and the cells separate",
+      "motionRole": "explain",
+      "onScreenChange": "The board assembles one column at a time; on \"copy\" the loop or nucleus in each strip glows and doubles, on \"share\" an arrow shows the copies parting, on \"split\" the cells separate; the numbered strip lights all three chips together; a crossed-out sperm and egg doodle with \"no joining\" lands on \"no cell joins another\"",
+      "motionTools": [
+        "column build",
+        "particle duplicate",
+        "DrawPath arrows",
+        "Mark cross",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the finished board for about two seconds"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Three numbered vignettes: split bacterium with one empty cell, bridged pair with a gene bead, and a flask with one cell and a 40 minute clock ring",
+      "teachingReason": "Unseen transfer on the copy step, conjugation and doubling with every demand visible and no answer words",
+      "narrationCue": "Your turn / one loop and none / thin bridge / every 40 minutes / Pause",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The three numbered vignettes appear as each situation is named, the conditions stay on screen, the bridged pair shows a gene bead crossing then the bridge breaking with no cell counter, and the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "TravelingDotOnPath"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown (about 60 seconds)"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same three vignettes with verdict stamps, the numbered strip states, a conjugation counter and the doubling grid",
+      "teachingReason": "Explains each answer and names the likeliest slips for the copy step, the cell count and the doubling arithmetic",
+      "narrationCue": "copy step did not happen / Count the cells / Three, eight / 3 doublings",
+      "motionPurpose": "Each vignette gets its verdict on cue: a skipped tag on copy, a counter reading 2 and 2 with split greyed out, and a grid doubling in three steps to 8",
+      "motionRole": "explain",
+      "onScreenChange": "Vignette one lights \"1 copy\" with a red \"skipped\" tag and the empty cell fades with \"no instructions\"; vignette two shows the counter \"Before: 2 cells, After: 2 cells\" for the first time with \"3 split\" greyed and crossed and a \"not reproduction\" stamp beside a fission ghost; vignette three doubles 1, 2, 4, 8 with \"3 doublings\" and \"8\" circled; the wrong-answer chips appear crossed as each is named",
+      "motionTools": [
+        "stamp pop",
+        "NumberTicker counter",
+        "particle split",
+        "Mark cross",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Settle on all three verdicts"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "reuse",
+      "visualReference": "Large numbered strip with icons, the conjugation drawing with split greyed, two rule lines and a next-lesson chip",
+      "teachingReason": "Gives the reusable copy, share, split pattern and the repair line for conjugation, then hands off to pregnancy",
+      "narrationCue": "Copy, share, split / never splits / Fission makes more cells / Next",
+      "motionPurpose": "The strip writes on large, the conjugation drawing greys out its split step on \"never splits\", the two rules write on and the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The strip \"1 copy, 2 share, 3 split\" writes on with its loop, arrows and wall icons; beside it the conjugation drawing lights copy and share and greys \"3 split\" with a cross on \"never splits\"; \"fission = more cells\" and \"conjugation = changes cells that already exist\" write on with a crossed plus-one icon; a chip \"Next: after a mammal's egg is fertilised\" with an egg and uterus outline slides in",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "Mark cross",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the strip and rules"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b2c-learning-review.md",
+      "sha256": "c8e19fe46a2e5cdc89413537191452d7bccc7e0628adc91c135035698acd088b"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b2c-claude-science-check.md",
+      "sha256": "9d35436521da9daa34c8bb4ec5edf5ed535b5f799a47d9436a8fab95d4f1f1c5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

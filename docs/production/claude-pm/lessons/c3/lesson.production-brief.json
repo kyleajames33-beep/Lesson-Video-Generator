@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c3/lesson.json",
+    "lessonSha256": "e41e25891e112b63c102b8a2bfef4c7ee4a79321a13a8cb80af239a15c4ca45a"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1, C2, G01 and Year 11: dynamic equilibrium means equal non-zero rates in a closed system; rate means how much changes per second; more particles meeting means more events per second; the faster rate falls and the slower rate rises until they meet (C2); a reaction that takes in heat is endothermic and its reverse gives out the same amount. C3 also stands on C1 and C2 alone, because G01 is a branch.",
+    "startsWith": "A test tube of iron three plus and thiocyanate ions at a steady pale red, and a crystal of iron three plus dropped in.",
+    "stopsAfter": "Predicting the direction of the shift for adding or removing a substance and for heating or cooling, explaining each as which rate changes first and which becomes faster, and telling the immediate change from the reaction response. No K, no pressure or volume, no catalysts.",
+    "nextLesson": "C4: squeezing a gas mixture (pressure and volume) and adding a catalyst."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c03.md"
+  ],
+  "teaching": {
+    "task": "Predict and explain which way an equilibrium shifts when a substance is added or removed or the temperature is changed, using which rate changes first.",
+    "causalExplanation": "Joining needs particles to meet, so adding a substance speeds up only the reaction that uses it and removing it slows only that one, so the net reaction runs away from an added substance and toward a removed one until the rates match again at a new position, only partly cancelling the change. Heating makes high-energy collisions much more common, so both rates rise but the heat-absorbing reaction gains most. The change in concentration or temperature is immediate and the reaction responds afterwards.",
+    "conversationalApproach": "One painted tube that deepens when iron three plus is added, a made-up scale shared with C2, one stage at a time (the tube at equilibrium, the moment of the change, the response, the new equilibrium), then removal, the named principle, a cobalt tube for temperature, a heat-in-the-equation shortcut and an unseen N2O4 and NO2 attempt.",
+    "openingDecision": "A settled mixture looks finished. What does an equilibrium do when we disturb it, and which way does it go?",
+    "understandingCheck": "For a sealed N2O4 and NO2 tube with delta H plus 57 kJ: say which rate changes straight away, which way the net reaction goes and what the colour does straight away and once settled when NO2 is removed, and which way and what colour change follows cooling in ice water.",
+    "curriculumScope": "Predict and explain how changes in concentration and temperature disturb a system at equilibrium (Module 5). K, Q, pressure and volume, catalysts, activation energy and industrial examples are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted test tube plates with a coded particle view, C2 style rate bars and graphs, a staged table and a heat-in-the-equation chip. Colour key: Fe3+ pale yellow, SCN- grey, FeSCN2+ red, forward blue, reverse amber, equal teal, heat terracotta.",
+    "transitionPlan": "The painted tube zooms into the particle view; the moment of the change and the response share one board and swap labels; the table keeps only the last two rows; the cobalt tube in a beaker replaces the iron tube; plates crossfade pink, purple and blue; the attempt board replaces the aids; the steady flask shakes into the next lesson; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted iron thiocyanate test tube (pale and deeper red plates) with the C2 flask and rate-bar thumbnail",
+      "teachingReason": "Poses the disturbing question on a real tube and recalls the sealed flask in one clause",
+      "narrationCue": "iron three plus ions / dynamic equilibrium / sealed flask of P C L five / colour",
+      "motionPurpose": "The tube holds still at pale red, a crystal drops in and the tube deepens in colour, then the C2 flask thumbnail flashes in a corner",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the equation chip draws with a blue forward and amber reverse arrow; a coded crystal drops in and the painted tube crossfades from pale to deeper red on \"colour\" while a swatch strip fills; a two second C2 flask thumbnail with bars 30 and 30 appears on \"sealed flask of P C L five\"",
+      "motionTools": [
+        "CameraStage push",
+        "HandText write-on",
+        "plate crossfade",
+        "swatch strip fill",
+        "thumbnail pop"
+      ],
+      "holdPurpose": "Brief look at the deeper red tube"
+    },
+    {
+      "sceneId": "tube-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "Coded particle view of the tube (10 pale yellow, 10 grey, 10 red dots), C2 rate bars at 30 and 30 and a stage table",
+      "teachingReason": "Sets the starting row so every later change has something to be compared with",
+      "narrationCue": "Both rates are thirty / ten units / forward / reverse",
+      "motionPurpose": "The tube zooms into dots, equal rate bars sit with a teal bracket, and the first table row writes on the spoken numbers",
+      "motionRole": "explain",
+      "onScreenChange": "Tube zooms to the particle view with the key \"1 dot = 1 unit\"; two rate bars at 30 and 30 get a teal \"equal\" bracket and the \"made-up numbers\" chip; the row \"at equilibrium\" (10, 10, 10, 30, 30, 0) writes on each spoken number; the equation arrows light blue on \"forward\" and amber on \"reverse\"",
+      "motionTools": [
+        "particle dots",
+        "NumberTicker rate bars",
+        "table row write-on",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold the starting row into the next scene"
+    },
+    {
+      "sceneId": "moment-of-change",
+      "visualDecision": "adjust",
+      "visualReference": "Same particle view and rate bars, seven new dots and the second table row",
+      "teachingReason": "Shows that adding a substance changes the forward rate at once while the reverse rate stays put",
+      "narrationCue": "seven units / fifty-one / thirty / nothing has reacted yet",
+      "motionPurpose": "Seven pale yellow dots drop in, the forward bar grows to 51 with the sum under it, the reverse bar stays at 30 and the gap appears",
+      "motionRole": "explain",
+      "onScreenChange": "Label \"the moment of the change\" writes on; seven pale yellow dots drop in with the tag \"added as solid, volume hardly changes\"; the forward bar grows from 30 to 51 with \"30 x 17/10 = 51\"; a pen ring on the reverse bar on \"stays\"; the row \"just after adding\" (17, 10, 10, 51, 30, 21) writes; the tag \"the instant after adding, before the reaction responds\" holds",
+      "motionTools": [
+        "particle drop",
+        "NumberTicker rate bars",
+        "ScribbleCircle",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the unmoved colour and the gap"
+    },
+    {
+      "sceneId": "response",
+      "visualDecision": "adjust",
+      "visualReference": "Particle view running, bars falling and rising, net arrow and a table showing only the last two rows",
+      "teachingReason": "Shows the faster rate falling and the slower rate rising as the amounts move",
+      "narrationCue": "forward reaction is faster / forward rate falls / reverse rate rises / forty-three / thirty-three",
+      "motionPurpose": "Dots pair into red, the forward bar falls to 43 and the reverse bar rises to 33 while the net arrow shrinks and the tube reddens",
+      "motionRole": "explain",
+      "onScreenChange": "Label switches to \"the response\"; yellow and grey dots pair into red and the counts shift to 16, 9, 11; the forward bar falls with a down arrow and the reverse bar rises with an up arrow; a pen bracket spans the gap; the row \"a little later\" (16, 9, 11, 43, 33, 10) writes while the earlier row ghosts; the net arrow shrinks from 21 to 10 and the tube tints redder",
+      "motionTools": [
+        "particle pairing",
+        "NumberTicker rate bars",
+        "bracket draw",
+        "net arrow shrink",
+        "table ghosting"
+      ],
+      "holdPurpose": "Brief hold on the closing gap"
+    },
+    {
+      "sceneId": "new-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "Settled particle view, bars meeting at 36, new-equilibrium row, pen trace on the iron count and the shift arrow on the equation chip",
+      "teachingReason": "Shows the rates matching again at a new position and that the change is only partly cancelled",
+      "narrationCue": "thirty-six / deeper red / fifteen, not back to ten / shifted / position",
+      "motionPurpose": "Bars meet at 36, the iron count is traced from 17 down to 15 against a dashed 10, and a blue arrow slides across the equation on \"shifted\"",
+      "motionRole": "explain",
+      "onScreenChange": "Counts settle at 15, 8, 12; both bars meet at 36 with the teal bracket and \"net change 0\"; the row \"new equilibrium\" writes in teal with the tags \"the amounts do not need to match\" and \"more red ion, more iron to meet the thiocyanate left: higher rates\"; a pen traces iron from 17 to 15 and across to a dashed 10 labelled \"not back to 10\"; a blue \"shift right\" arrow slides across the chip on \"shifted\"; \"position\" writes with its gloss and the swatch lands on the deeper red",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "DrawPath trace",
+        "arrow slide",
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the settled board"
+    },
+    {
+      "sceneId": "graphs",
+      "visualDecision": "adjust",
+      "visualReference": "C2 style two-panel graph (concentration above, rate below) with the teal rates-equal line and two brackets",
+      "teachingReason": "Separates the instant concentration change from the slower response on the graphs",
+      "narrationCue": "jumps up the instant / slides down to fifteen / steps up to fifty-one / two things happen, in order",
+      "motionPurpose": "Axes draw on, the iron curve steps up then slides down, the forward line steps then falls, the reverse line stays level then rises to meet it",
+      "motionRole": "explain",
+      "onScreenChange": "A pen arrow drops in at \"added\"; the Fe3+ curve steps up and slides to 15 while the red curve rises to 12 and the grey falls to 8; in the lower panel the blue forward line steps to 51 and falls to 36 while the amber reverse line stays level then rises; the brackets \"the moment of the change\" and \"the response\" land on \"two things happen, in order\"; a crossed-out \"back to 10\" appears with the dashed 10 line",
+      "motionTools": [
+        "lineGraph draw-on",
+        "DrawPath arrow",
+        "bracket draw",
+        "Mark cross",
+        "dashed line reveal"
+      ],
+      "holdPurpose": "Hold the two brackets"
+    },
+    {
+      "sceneId": "removal",
+      "visualDecision": "adjust",
+      "visualReference": "Fresh particle view back at 10, 10, 10 with a silver nitrate drop, white solid specks and the rate bars",
+      "teachingReason": "Shows removal slowing only the forward rate so the shift goes toward what was taken away",
+      "narrationCue": "silver nitrate / eighteen / thirty / fades / toward what we took away",
+      "motionPurpose": "Grey dots turn into white specks that sink, the forward bar falls to 18 while the reverse stays at 30, and the colour fades as the bars close in near 26",
+      "motionRole": "explain",
+      "onScreenChange": "A pen arrow shows a few drops with the tag \"few drops, volume hardly changes\"; four grey dots turn to white specks and sink as a small solid; \"30 x 6/10 = 18\" writes as the forward bar falls and a pen ring marks the steady reverse bar; the net arrow points left on \"the response\" and the swatch fades paler; a dashed 10 line labelled \"not back to 10\" shows grey going 10, 6, about 7.5; \"about\" tags mark red and iron on the graph",
+      "motionTools": [
+        "particle conversion",
+        "NumberTicker rate bars",
+        "ScribbleCircle",
+        "arrow draw",
+        "dashed line reveal"
+      ],
+      "holdPurpose": "Hold the partial return"
+    },
+    {
+      "sceneId": "principle",
+      "visualDecision": "adjust",
+      "visualReference": "Equation chip with two arrows, colour swatches from the earlier scenes and a rate-bar icon",
+      "teachingReason": "Names Le Chatelier's principle only after two worked cases and ties it back to the rates",
+      "narrationCue": "Le Chatelier's principle / what the rates do / away from it / toward it",
+      "motionPurpose": "The chip gets two direction arrows with their swatches, the principle name writes large and a dashed arrow stops short of the start line",
+      "motionRole": "explain",
+      "onScreenChange": "The equation chip carries \"add Fe3+: shift right (away from it)\" and \"remove SCN-: shift left (toward what was removed)\" with matching swatches; \"Le Chatelier's principle\" writes large with its plain meaning; \"In these examples, it is what the rates do\" is underlined beside a bar icon where one bar jumps and the other stays; a dashed arrow stops short of the start line",
+      "motionTools": [
+        "arrow draw",
+        "HandText write-on",
+        "ScribbleUnderline",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the principle and its meaning"
+    },
+    {
+      "sceneId": "heat-cobalt",
+      "visualDecision": "adjust",
+      "visualReference": "Painted cobalt tube in a beaker (purple) with the full formula chip and a coded thermometer",
+      "teachingReason": "Introduces the heat-absorbing reaction before the temperature change so the direction has a cause",
+      "narrationCue": "pink cobalt ions / endothermic / exothermic / purple",
+      "motionPurpose": "The beaker tube appears with the formula chip, heat icons point in on the forward arrow and out on the reverse arrow, and the thermometer reads 20 degrees",
+      "motionRole": "explain",
+      "onScreenChange": "The purple tube sits in the beaker; the formula chip with pink and blue swatches writes on; a terracotta heat-wave icon points in on the forward arrow with \"takes in heat: endothermic\" and out on the reverse arrow with \"gives out heat: exothermic\" on their cues; the thermometer settles at 20 degrees Celsius",
+      "motionTools": [
+        "plate pop",
+        "HandText write-on",
+        "heat icon draw",
+        "thermometer reveal"
+      ],
+      "holdPurpose": "Hold the labelled equation"
+    },
+    {
+      "sceneId": "warming",
+      "visualDecision": "adjust",
+      "visualReference": "Cobalt tube in a hot bath, thermometer climbing, collision strip and the existing C2 rate bars",
+      "teachingReason": "Shows heating changes both rates with no change in concentrations, and why the heat-absorbing one gains most",
+      "narrationCue": "hot water bath / no concentration changes / high-energy collisions / goes up more",
+      "motionPurpose": "The thermometer climbs and the bath glows, a slow bump does nothing and a fast bump reacts, and both bars rise with the forward one rising further",
+      "motionRole": "explain",
+      "onScreenChange": "The label \"the moment of the change\" writes on; the thermometer climbs and the bath glows on \"warm\"; a pen ring and \"no concentration changes\" hold on the counts; a collision strip shows a slow bump with no reaction and a fast bump with a reaction, the forward arrow labelled \"needs a hard collision\"; both rate bars rise, the forward bar further, on \"goes up more\"",
+      "motionTools": [
+        "thermometer climb",
+        "ScribbleCircle",
+        "collision animation",
+        "NumberTicker rate bars"
+      ],
+      "holdPurpose": "Hold the longer forward gain"
+    },
+    {
+      "sceneId": "temperature-response",
+      "visualDecision": "adjust",
+      "visualReference": "Rate bars and table for the made-up temperature numbers, tube plates pink, purple and blue and an ice bath",
+      "teachingReason": "Shows the same two-beat response for heating and then the cooling case",
+      "narrationCue": "fifty and thirty-eight / forty-four / bluer / pink",
+      "motionPurpose": "Bars jump to 50 and 38, close in to 44 as the tube crossfades to blue, then an ice bath shrinks both bars and the tube turns pink",
+      "motionRole": "explain",
+      "onScreenChange": "The \"made-up numbers\" chip returns; bars go 30, 30 then 50 and 38 with a pen bracket on the gap of 12; table rows write (50, 38, 12; 46, 41, 5; 44, 44, 0); the net arrow points right and the tube plate crossfades purple to blue on \"bluer\"; a fresh run shows an ice bath, the thermometer dropping, both bars shrinking with the blue one more, a left arrow and the tube turning pink; a final panel shows pink, purple and blue plates in a row",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "plate crossfade",
+        "bracket draw",
+        "table row write-on",
+        "thermometer drop"
+      ],
+      "holdPurpose": "Hold the pink, purple and blue row"
+    },
+    {
+      "sceneId": "heat-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Cobalt equation with heat written as a terracotta term, ghost chip A + B = C + heat, heat and ice doodles",
+      "teachingReason": "Gives a direction shortcut after the rates have explained the cause",
+      "narrationCue": "heat into the equation / heat on the right / added heat / taken heat away / still the rates",
+      "motionPurpose": "The heat term writes into the equation, a generic exothermic chip appears and holds, then heat arrows point away from or toward the heat side and the aid writes large",
+      "motionRole": "explain",
+      "onScreenChange": "The cobalt equation writes on with \"+ heat\" in terracotta on the left; on \"write heat on the right\" a ghost chip \"A + B = C + heat\" writes below with the heating arrow pointing left and holds two seconds; a heat wave drops in on \"added heat\" with an arrow away from it, an ice cube on \"taken heat away\" with an arrow toward it; the aid writes large with its condition tag; \"The reason is still the rates\" is underlined with the rate-bar icon",
+      "motionTools": [
+        "HandText write-on",
+        "heat wave pop",
+        "DrawPath arrows",
+        "ScribbleUnderline",
+        "ghost chip"
+      ],
+      "holdPurpose": "Hold the aid on screen to the end"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded sealed tube vignette (N2O4 and NO2 dots in a brown tint), equation chip with delta H and two numbered questions",
+      "teachingReason": "Unseen transfer with every demand and condition visible, and nothing that gives the answer",
+      "narrationCue": "Your turn / removes some of the N O two / ice water / Pause",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The sealed tube, the equation chip with \"delta H = +57 kJ per mole of N2O4\", the tag \"sealed, same size, equilibrium at a steady temperature\" and the two numbered questions appear as each is named; the aid and earlier boards are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same board with the tube replaying question one as two beats, an ice bath for question two and wrong-answer chips",
+      "teachingReason": "Explains the answer through which rate changes first and corrects the three likeliest slips",
+      "narrationCue": "Nitrogen dioxide / reverse rate drops / returns / cooling / reverse wins",
+      "motionPurpose": "A pen arrow removes four brown dots and the colour fades at once, the reverse bar drops, the brown partly returns and then an ice bath shrinks both bars unequally",
+      "motionRole": "explain",
+      "onScreenChange": "Question one replays: four brown dots are removed and the colour fades at once, the reverse bar drops with a pen ring while the forward bar stays, the net arrow points right and the brown partly returns on \"returns\" with a dashed line for the original colour; question two shows an ice bath, both bars shrinking with the forward one more, and the tube paling; \"N2O4 + heat = 2NO2\" appears with the shift arrow on \"toward N two O four\"; the chips \"back to exactly the same\", \"forward rate dropped\" and \"only forward slows\" appear crossed as named",
+      "motionTools": [
+        "particle removal",
+        "NumberTicker rate bars",
+        "ScribbleCircle",
+        "Mark cross",
+        "plate crossfade"
+      ],
+      "holdPurpose": "Settle on the corrected board"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three question cards with dropper, thermometer and rate-bar icons, a short arrow and the steady-state flask with a piston icon",
+      "teachingReason": "Packs the lesson into a reusable question order and hands off to pressure and catalysts",
+      "narrationCue": "what the change touched / which rate is now faster / only part of the way / squeeze",
+      "motionPurpose": "Three cards write on one by one, a short arrow stops part way, then the final flask shakes slightly and a piston chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "Three question cards write on one at a time with a dropper, a thermometer and rate bars; a short arrow ends at \"only part of the way\"; on \"squeeze\" the steady flask shakes slightly and a piston icon appears with \"Next: pressure, volume and catalysts\"",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "DrawPath arrow",
+        "flask shake"
+      ],
+      "holdPurpose": "Hold the three questions to read"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Four notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c3-learning-review.md",
+      "sha256": "f33550ce12aa5558ff7dbb1b0f315e81875b84ac360bc31151250c303ce35087"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c3-claude-science-check.md",
+      "sha256": "66764e540ec208aa720e936f3d9d6e7d76e7ac8e6d4ebd72966fb8f1ce698a82"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}
