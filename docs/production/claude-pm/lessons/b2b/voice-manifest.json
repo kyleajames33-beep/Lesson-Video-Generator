@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B2b-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b2b/lesson.json",
+  "lessonSha256": "6bdd1c3298f180046545523dc73f06a1ba5cd1bcef26a60f78c2dfe818463bec",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b2b/lesson.production-brief.json",
+    "sha256": "ac178d0082c9df27f265680c22b5fcdd8dbc12209e03fb98f872c14e45f498a8"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A gardener has one strawberry plant, and wants more. There are two ways the plant can make them. It can send a runner along the ground, and a new plant grows at the end. Or it can flower. Now picture a bee landing on one of those flowers and brushing off a little yellow dust, called pollen. Has the plant made a seed yet? Not yet. The seed hasn't started. So how does a flower make a seed, and when is that a better route than a runner? By the end, you'll be able to outline the whole journey in an exam answer.",
+      "hash": "ad6470758185",
+      "textSha256": "ad6470758185745fa4da582e36c07f660525b87df582863b21e0a7196b5b8ccb",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/hook.ad6470758185.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/hook.ad6470758185.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/hook.ad6470758185.generation.json",
+      "plannedRequestSha256": "5c3044f6a34f054c308032e97ee7640f0ba00b9dbe3fcb392becc398d4de15f5"
+    },
+    {
+      "id": "male-side",
+      "parentSceneId": "male-side",
+      "text": "Here is a typical flower, cut in half. The plant has a problem. The cells that will become sperm are in one place, and its egg cells are somewhere else. Around the centre of the flower, the stamens hold the anthers, and the anthers make pollen. Each tiny pollen grain carries the cells that will become sperm. So the male side is up here.",
+      "hash": "8c0203fb18d6",
+      "textSha256": "8c0203fb18d6352a8532615135433b8cb7bf93cf35a572ca88fee7b8782fe06f",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/male-side.8c0203fb18d6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/male-side.8c0203fb18d6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/male-side.8c0203fb18d6.generation.json",
+      "plannedRequestSha256": "3b4e690504353e7f4a9b311ef42f7229325144ca32a21086fc1602eb51f4cc1a"
+    },
+    {
+      "id": "female-side",
+      "parentSceneId": "female-side",
+      "text": "The female part is the carpel. Its sticky top is the stigma, and below it a narrow stalk, the style, leads down to the ovary. Inside the ovary are small structures called ovules, and each ovule holds an egg cell. So the egg is buried deep inside the flower. The sperm of a flowering plant can't swim, so how will they ever get there?",
+      "hash": "60fefc081ce5",
+      "textSha256": "60fefc081ce515ddc5eb37ab49bc2c64f72dfc33fa39db733d2750c3eceae78f",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/female-side.60fefc081ce5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/female-side.60fefc081ce5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/female-side.60fefc081ce5.generation.json",
+      "plannedRequestSha256": "f6fb8a151d0a69b41731fa1d09c52a9741abca364aa51f5d7223396dcb970ef4"
+    },
+    {
+      "id": "pollination",
+      "parentSceneId": "pollination",
+      "text": "The first step is pollination. Pollen moves from an anther to a stigma. Plants can't walk, so they use carriers. A bee visits for nectar, and pollen sticks to its hairy body. At the next flower, some of it rubs off onto the stigma. Grasses use the wind instead, and they release huge clouds of light pollen. Some water plants use water. But look at what has happened so far. The pollen has only arrived. The cells that will become sperm are still in the pollen grain, and the egg is still deep inside. So pollination is not fertilisation. It only puts the pollen in the right place.",
+      "hash": "570c1f219112",
+      "textSha256": "570c1f2191122eb75702ff633118e1030818898ceb9e3c5ce1e37b0251f7ae31",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/pollination.570c1f219112.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/pollination.570c1f219112.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/pollination.570c1f219112.generation.json",
+      "plannedRequestSha256": "1458875c9a06471a31c1985f85ee3c26021d574ac449798ebebcfd1aa2d78f13"
+    },
+    {
+      "id": "pollen-tube",
+      "parentSceneId": "pollen-tube",
+      "text": "What happens next takes place inside the flower. The pollen grain lands on the sticky stigma and takes in water. Then it grows a thin tube, the pollen tube, down through the style, guided by chemical signals from the ovule. The two sperm cells form inside the tube as it grows, and they travel along it, so they are protected, and they don't need to swim. When the tube reaches the ovule, it grows in through a small opening and releases the sperm cells right beside the egg cell. So the tube solves the plant's distance problem. It carries the sperm to the egg.",
+      "hash": "0efb482e094e",
+      "textSha256": "0efb482e094e581d179cecfdf88b6d59227ee451f8d2dad9daf9b6d23cc9784f",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/pollen-tube.0efb482e094e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/pollen-tube.0efb482e094e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/pollen-tube.0efb482e094e.generation.json",
+      "plannedRequestSha256": "3cf398417a1805fc60cf2c18657a7d273e89efd993cd6168fe430df3de9ecf1b"
+    },
+    {
+      "id": "fertilisation",
+      "parentSceneId": "fertilisation",
+      "text": "Now comes fertilisation. One sperm cell joins the egg cell. That joining makes one new cell, the zygote, the first cell of a new plant. Just as in the first video of this series, one set from the sperm plus one set from the egg make a full two sets. The zygote then divides again and again and grows into a tiny young plant, called an embryo. So this is the moment the new plant actually begins, and it happens only because the tube took the sperm to the egg.",
+      "hash": "4a7986fd82ee",
+      "textSha256": "4a7986fd82ee21a9af7b43b7149b337b4fd5f9bada584a0153e95ebf7175979c",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/fertilisation.4a7986fd82ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/fertilisation.4a7986fd82ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/fertilisation.4a7986fd82ee.generation.json",
+      "plannedRequestSha256": "d7e9df156dadd23a4f2ea89e9235176d5f79b2e135eb9057d06a0e3e345a17bf"
+    },
+    {
+      "id": "seed-fruit",
+      "parentSceneId": "seed-fruit",
+      "text": "After fertilisation, the ovule changes. It becomes a seed: a protective package holding the embryo, a store of food and a tough outer coat. The food is there because the embryo has no leaves yet to make its own. In many plants, the ovary around the ovules grows into a fruit, like a pea pod, and it protects the seeds inside.",
+      "hash": "317a143bc221",
+      "textSha256": "317a143bc22105ae9c040dddddf88cd73f62523db9c9110e3296b01244adcd2b",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/seed-fruit.317a143bc221.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/seed-fruit.317a143bc221.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/seed-fruit.317a143bc221.generation.json",
+      "plannedRequestSha256": "73db8c81bae8d442e323b828c1f08b44fff861fb50d803d691844f4bf0633689"
+    },
+    {
+      "id": "dispersal",
+      "parentSceneId": "dispersal",
+      "text": "Seeds are made for waiting and for travelling. The coat protects the embryo from drying out, and wind, water or animals can carry seeds away from the parent. That is seed dispersal, which is a different job from pollination. Later, when it has water, oxygen and a suitable temperature, the embryo germinates, which means it starts to grow roots and leaves.",
+      "hash": "d66fe6a8969f",
+      "textSha256": "d66fe6a8969f7f0e732e4c4235f8026d56b05f4b052d513cbd0cdd5ec8f7336e",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/dispersal.d66fe6a8969f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/dispersal.d66fe6a8969f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/dispersal.d66fe6a8969f.generation.json",
+      "plannedRequestSha256": "56fd3d53533486988fe5117d64199376ed2c948e5b02ae8af16abc6581bca379"
+    },
+    {
+      "id": "vegetative",
+      "parentSceneId": "vegetative",
+      "text": "Plants have a second way of making new plants, with no flowers at all. A piece of the parent grows roots and leaves and becomes a separate plant. This is called vegetative propagation. You saw one example at the start, the strawberry runner. An onion bulb grows small new bulbs from the side of the parent bulb. A potato tuber sprouts new shoots from its eyes. And a gardener's cutting grows roots from the cut end of a stem. In every case, no sperm joined an egg. So this is asexual reproduction, and the new plant is a clone of the parent, apart from rare copying errors. It also doesn't need a bee or the wind to carry pollen.",
+      "hash": "14216aba375b",
+      "textSha256": "14216aba375be2c1f2474b7d8aa0057973c971055d3a39e79d2308c46e4578ed",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/vegetative.14216aba375b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/vegetative.14216aba375b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/vegetative.14216aba375b.generation.json",
+      "plannedRequestSha256": "6f3ffeb2c0dc69fd56241770bd57f8e27d89bf986e8a9afa46a957b54040c95b"
+    },
+    {
+      "id": "seeds-better",
+      "parentSceneId": "seeds-better",
+      "text": "So when is making seeds the better route? It depends on the conditions, just as in the first video. In a steady paddock with plenty of water, a plant that is already doing well can spread fast by runners, with no carrier needed. But if a new disease arrives, a field of clones has the same weakness everywhere, and the plants can fail together. Seeds come from sexual reproduction, so the seedlings vary, and some may survive. Seeds can travel far, so the plant can reach new places. Runners are fast and keep the plant alike, close by. Seeds make varied plants, and they can travel far.",
+      "hash": "c20035dc7b9d",
+      "textSha256": "c20035dc7b9d88cc538abed76c4dcc786a35423ee413efaefe70d5d21bbaeb30",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/seeds-better.c20035dc7b9d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/seeds-better.c20035dc7b9d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/seeds-better.c20035dc7b9d.generation.json",
+      "plannedRequestSha256": "efb7058c64e89b423e36237c0dfc9f7b27a04e6d1485f11e6d1e736cfc5b6977"
+    },
+    {
+      "id": "worked-outline",
+      "parentSceneId": "worked-outline",
+      "text": "Let's build a model answer. The question: outline sexual reproduction in flowering plants from pollination to seed formation. The command word outline means give the main steps, in order, so we use sequence words. First, pollen is transferred from an anther to a stigma, by wind, water or animals. Then the pollen grain grows a pollen tube down the style to an ovule, carrying sperm cells. Next, a sperm cell joins the egg cell in the ovule. That is fertilisation, and it forms a zygote that develops into an embryo. Finally, the ovule develops into a seed holding the embryo, and in many plants the ovary develops into a fruit.",
+      "hash": "f3f45eae2ac8",
+      "textSha256": "f3f45eae2ac879d5e411c253d2cd8e1c900d4d29bee1b7c03276c6d67b1d7f1b",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/worked-outline.f3f45eae2ac8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/worked-outline.f3f45eae2ac8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/worked-outline.f3f45eae2ac8.generation.json",
+      "plannedRequestSha256": "6df3deeec2f98f7707635b299fe0173c01a7ab758bdc5437254047ebaa4f7ab2"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Three situations. One: a grower covers some flowers with fine mesh bags before they open, so that bees and wind can't get to them. The grower also removes their anthers, so these flowers have no pollen of their own. Those flowers never make seeds. Which step failed, and why? Two: a gardener brushes pollen onto the stigma of a flower with a small paintbrush. Two days later, pollen tubes are growing down the style but have not reached the ovules. Has fertilisation happened yet? Why or why not? Three: a farmer grows a whole field of potatoes from pieces of last year's tubers, and a new disease arrives. Why is that field at more risk than a field grown from seed? Pause the video if you'd like more time.",
+      "hash": "2eb607f5bbc1",
+      "textSha256": "2eb607f5bbc1d0e24e63a0baa290e65ad729439f87385bb4262ead3eda93b760",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/attempt.2eb607f5bbc1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/attempt.2eb607f5bbc1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/attempt.2eb607f5bbc1.generation.json",
+      "plannedRequestSha256": "3e4a18dea400b7a25f7b7c96f71d473b4ef8c63b6f1339c99e5dd34f88e369c7"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "One, pollination failed. The mesh kept out pollen from other flowers, and with their anthers removed these flowers had no pollen of their own, so no pollen reached the stigmas, no pollen tube grew, no sperm met an egg, and no seeds formed. Fertilisation did not happen either, but that is a knock-on effect. The first step to fail was pollination. Two, not yet. The brush did the pollination, and the tubes are still on their way. Fertilisation happens when a sperm joins an egg in the ovule. If you said yes because the pollen is already on the flower, that's pollination, not fertilisation. Three, the potatoes are all clones, so they share the same alleles. A disease that can attack one can attack them all. Seedlings from seed vary, so some might survive. If you said clones grow worse, they do just as well until something changes.",
+      "hash": "f3310f8428e5",
+      "textSha256": "f3310f8428e5ffb4eb554bd788e409be7569e9ad72b210ff08804aba2b75dc49",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/feedback.f3310f8428e5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/feedback.f3310f8428e5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/feedback.f3310f8428e5.generation.json",
+      "plannedRequestSha256": "f41df04ac0e29acb0880c249d620f55f54ada0006218d3f7a98aa9048eabe6cd"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So, hold on to one rule. Pollination is the pollen arriving. Fertilisation is the sperm joining the egg. In between, the pollen tube does the carrying. In order: land, tube, join, seed. And to keep the parts straight, stamen has \"men\" in it, so the stamen is the male part. Next: how single-celled organisms make copies of themselves.",
+      "hash": "f85604d67e45",
+      "textSha256": "f85604d67e45befe1f01197190c0a843b6bfa5afb4e0f0acbbd80921e4231e23",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/memory.f85604d67e45.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/memory.f85604d67e45.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/memory.f85604d67e45.generation.json",
+      "plannedRequestSha256": "b5025e36d5762ac92efd077bc60d3051b70bc8c02f3d20a45aca49094e1293c7"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B2b-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

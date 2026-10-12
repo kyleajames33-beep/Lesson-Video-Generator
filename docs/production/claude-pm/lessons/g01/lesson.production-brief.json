@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/g01/lesson.json",
+    "lessonSha256": "c645eadc05616249f41d4e1f18984a9c5a2529a2d5f6132837fd6e7ff76847a7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 and C2: reversible reactions and dynamic equilibrium, rates and amounts, a flask settling into a steady mixture. Year 11: exothermic and endothermic, entropy as spread of particles and energy, delta G = delta H - T delta S with negative delta G meaning spontaneous (recalled in scene 3b).",
+    "startsWith": "A log burning to ash, set against a tree building sugar and wood from carbon dioxide and water.",
+    "stopsAfter": "Explaining why combustion and photosynthesis are non-equilibrium systems using the signs of delta H and entropy change, reading the sign of delta G, and keeping favourability separate from speed.",
+    "nextLesson": "C3: what a flask already at equilibrium does when it is disturbed (concentration and temperature)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-g01.md"
+  ],
+  "teaching": {
+    "task": "Explain why a fire runs all the way to ash while photosynthesis cannot run on its own, using enthalpy, entropy and delta G, and predict a new combustion case.",
+    "causalExplanation": "Giving out heat (negative delta H) and spreading out (more entropy) each favour a change; delta G combines them. Burning glucose has both terms pushing the same way, so delta G is hugely negative and the reverse is too slight to measure, so it runs essentially to completion. Photosynthesis is the reverse, so every sign flips and delta G is hugely positive; a leaf manages only because it is an open system with continuous light. Delta G says where a change is heading, never how fast.",
+    "conversationalApproach": "One question (fire versus tree), the C2 flask recalled in one line, a staged worked example with the numbers in groups, a calibration bar so students can judge new values, a speed warning with a sugar bowl, and an unseen hydrogen case with a sealed tube.",
+    "openingDecision": "Why does a fire run all the way one way, while a tree can build the other way?",
+    "understandingCheck": "Work out delta G for hydrogen burning (delta H -572 kJ, T delta S -98 kJ), judge whether it ends as a mixture or nearly all products, and explain why a sealed tube that has not reacted does not contradict that.",
+    "curriculumScope": "Explain why combustion and photosynthesis are non-equilibrium systems in terms of enthalpy and entropy changes (Module 5). Delta G is recalled from Year 11 as a tool. K, Q, delta G = 0 at equilibrium, the delta G to K link, activation energy and catalysts are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, coded energy-level diagrams, particle spreading, rate bars and a staged worked-example board. Colour key for this video: heat terracotta, spreading indigo, delta G dark ink, positive values on a warm tag and negative on a cool tag.",
+    "transitionPlan": "Fire bar and C2 bar pair cut to the term card; the energy-level diagram ghosts as the particles scatter; the worked-example board is reused with every sign flipped for photosynthesis; the board cuts to the leaf and back; the attempt board replaces the aids; the steady flask returns at the end; scene crossfades with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "C1 campfire and ash idea (painted plate if it fits, else coded flames fading to grey) with coded tree and heat and spread icons",
+      "teachingReason": "Poses the fire versus tree puzzle and names the two Year 11 ideas the lesson needs",
+      "narrationCue": "log / enthalpy / entropy",
+      "motionPurpose": "Log burns to ash while smoke drifts up, a reverse arrow is crossed out, then a tree appears and the heat and spreading icons write on",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the log burns to ash with smoke particles; a pen arrow with \"?\" tries ash back to log and is crossed out on \"log\"; a coded tree with CO2 and H2O arrow appears on \"tree\"; a terracotta heat-wave icon writes on at \"enthalpy\" and an indigo scattering-dots icon at \"entropy\"",
+      "motionTools": [
+        "HandText write-on",
+        "particle smoke",
+        "Mark cross",
+        "DrawPath arrow"
+      ],
+      "holdPurpose": "Brief look at the ash and the two icons"
+    },
+    {
+      "sceneId": "non-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "C2 rate-bar pair thumbnail beside a single falling fire bar, with the term card",
+      "teachingReason": "Contrasts a balanced flask with a fire that nothing balances and defines non-equilibrium system",
+      "narrationCue": "balances / non-equilibrium system / opposite reasons",
+      "motionPurpose": "The matched C2 bars sit small with a teal tick while the fire bar falls to empty with no second bar rising, then two arrows split from the new term",
+      "motionRole": "explain",
+      "onScreenChange": "The fire bar falls to empty with no second bar; a pen ring circles the missing bar on \"balances\"; \"non-equilibrium system\" writes large with its plain meaning; two arrows split from the term on \"opposite reasons\"",
+      "motionTools": [
+        "NumberTicker rate bar",
+        "ScribbleCircle",
+        "HandText write-on",
+        "DrawPath arrows"
+      ],
+      "holdPurpose": "Hold the two arrows to read"
+    },
+    {
+      "sceneId": "recall-heat-spread",
+      "visualDecision": "adjust",
+      "visualReference": "Coded energy-level diagram with surroundings box, then a 20-particle crystal that scatters",
+      "teachingReason": "Recalls enthalpy and entropy in plain words and keeps the heat term apart from the particle spreading term",
+      "narrationCue": "surroundings / fly",
+      "motionPurpose": "A terracotta drop with heat arrows into the surroundings, then the diagram ghosts and a packed grid of indigo particles scatters, ending with two separate tags",
+      "motionRole": "explain",
+      "onScreenChange": "The energy-level diagram draws live with the terracotta drop and heat arrows into the surroundings box on \"surroundings\"; it ghosts and the 20 packed particles scatter across the frame on \"fly\" with no heat arrows; two tags (delta H term: heat leaving, entropy term: particles in the mixture) land side by side",
+      "motionTools": [
+        "DrawPath energy levels",
+        "particle scatter",
+        "heat arrows",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the two tags"
+    },
+    {
+      "sceneId": "recall-delta-g",
+      "visualDecision": "adjust",
+      "visualReference": "Large formula delta G = delta H - T delta S alone on the board with a tick tag",
+      "teachingReason": "Recalls the Year 11 combination in one formula and defines spontaneous",
+      "narrationCue": "T delta S / spontaneous",
+      "motionPurpose": "The formula writes on with the two terms underlined in their colours, then a tick and the gloss \"runs on its own\" appear",
+      "motionRole": "explain",
+      "onScreenChange": "The formula writes on large; delta H underlined terracotta and T delta S underlined indigo on \"T delta S\" with a \"T in kelvin\" chip; a teal tick and \"negative delta G: runs on its own\" appear; \"spontaneous\" writes beside the tick on its cue",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleUnderline",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold the formula alone"
+    },
+    {
+      "sceneId": "glucose",
+      "visualDecision": "adjust",
+      "visualReference": "Board with short task, equation with phases, grouped givens, level diagram, particle spreading stage and staged substitution",
+      "teachingReason": "Works the glucose example one stage at a time: heat, then spreading, then delta G",
+      "narrationCue": "minus two thousand eight hundred and three / plus seventy-eight / twelve / two thousand eight hundred and eighty-one",
+      "motionPurpose": "Givens appear on their spoken numbers, the heat stage then the spreading stage replace each other, and the substitution writes line by line to a boxed result",
+      "motionRole": "explain",
+      "onScreenChange": "The task and phased equation write on; \"delta H = -2803 kJ/mol\" and \"T delta S = +78 kJ/mol\" appear on their numbers; stage 1 shows the long terracotta drop with heat arrows; stage 2 clears them and the crystal and six O2 break into 12 particles with the \"7 particles to 12\" chip; the substitution writes with a pen bracket and the -2881 result is boxed in dark ink on \"eighty-one\"; two arrows point down together on \"push the same way\"",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath energy levels",
+        "particle spreading",
+        "NumberTicker chip",
+        "pen bracket"
+      ],
+      "holdPurpose": "Hold the boxed result"
+    },
+    {
+      "sceneId": "how-strong",
+      "visualDecision": "adjust",
+      "visualReference": "Glucose result kept large with a long arrow, a shrinking reverse arrow and a two-label calibration bar",
+      "teachingReason": "Gives students a rough scale so a new delta G value can be judged",
+      "narrationCue": "measured / rough guide",
+      "motionPurpose": "A long arrow runs to \"all products\" while a small reverse arrow shrinks to a dot, then the two-label bar appears",
+      "motionRole": "explain",
+      "onScreenChange": "The terracotta and indigo arrow runs down to \"all products\"; the reverse arrow shrinks to a dot on \"measured\"; the bar with \"close to zero: a real mixture\" (C2 flask thumbnail) and \"hundreds below zero: essentially all products\" appears on \"rough guide\" and stays",
+      "motionTools": [
+        "DrawPath arrows",
+        "dot shrink",
+        "bar reveal",
+        "thumbnail pop"
+      ],
+      "holdPurpose": "Hold the bar on screen"
+    },
+    {
+      "sceneId": "heading-not-speed",
+      "visualDecision": "adjust",
+      "visualReference": "Fire bar tagged non-equilibrium then static, compass arrow, coded sugar bowl and calendar clock",
+      "teachingReason": "Joins the lesson to C1 and separates where a change is heading from how fast it gets there",
+      "narrationCue": "non-equilibrium system / static / heading",
+      "motionPurpose": "The fire bar empties and its tag changes to static, a heading arrow appears, then a sugar bowl sits unchanged while a calendar flips",
+      "motionRole": "explain",
+      "onScreenChange": "The fire bar returns with \"non-equilibrium\"; on \"gone\" the bar empties and the tag changes to \"static: both rates zero\"; a compass arrow \"where it ends up\" appears on \"heading\"; the sugar bowl and calendar clock appear with \"heading is not speed\" and the bowl does not change",
+      "motionTools": [
+        "NumberTicker rate bar",
+        "tag swap",
+        "icon pop",
+        "calendar flip"
+      ],
+      "holdPurpose": "Hold the unchanged bowl and clock"
+    },
+    {
+      "sceneId": "photo-reverse",
+      "visualDecision": "adjust",
+      "visualReference": "Glucose board returned with the equation reversed, updated givens, level diagram climbing and particles gathering into a crystal",
+      "teachingReason": "Shows every sign flipping, including the double negative, so photosynthesis cannot run on its own",
+      "narrationCue": "flips / negative",
+      "motionPurpose": "A flip arrow reverses the equation, the givens change sign, the energy arrow climbs, and the substitution writes with the double negative ringed",
+      "motionRole": "explain",
+      "onScreenChange": "A pen flip arrow appears on \"flips\" and the equation reverses; the givens swap to +2803 and -78 (old values ghost); the level arrow climbs labelled \"energy in (light)\" with a light-ray icon; particles gather into a crystal with the \"12 particles to 7\" chip; a pen ring marks -78 on \"negative\", then \"minus a negative adds\" and the boxed +2881; a red cross lands over \"runs on its own\"",
+      "motionTools": [
+        "pen flip arrow",
+        "DrawPath energy levels",
+        "particle gather",
+        "ScribbleCircle",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the boxed +2881"
+    },
+    {
+      "sceneId": "photo-leaf",
+      "visualDecision": "adjust",
+      "visualReference": "Coded leaf in sunlight with CO2 and O2 arrows, dashed open-system boundary and a separate respiration pair",
+      "teachingReason": "Explains why a leaf can run an uphill change: open system with a constant light supply",
+      "narrationCue": "open system / stops / respiration / constant light input",
+      "motionPurpose": "Rays and gas arrows move, then the rays fade and the photosynthesis arrows stop while a separate respiration pair appears beneath",
+      "motionRole": "explain",
+      "onScreenChange": "Yellow rays arrive, CO2 arrows go in and O2 arrows leave the leaf with a dashed boundary on \"open system\"; on \"stops\" the rays fade and the photosynthesis arrows freeze and grey out; a separate smaller respiration pair appears in another colour on \"respiration\"; a pen underline writes \"light in = photosynthesis going\"",
+      "motionTools": [
+        "particle arrows",
+        "ray fade",
+        "dashed boundary",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the underlined line"
+    },
+    {
+      "sceneId": "aid",
+      "visualDecision": "new",
+      "visualReference": "Four-row sign table with fire and leaf icons and the handwritten memory aid",
+      "teachingReason": "Gives a reusable aid for the cases where both terms agree and flags the disagreeing cases",
+      "narrationCue": "agree / disagree",
+      "motionPurpose": "Four table rows write on, rows one and two light up, rows three and four grey, then the aid writes on large",
+      "motionRole": "explain",
+      "onScreenChange": "The sign table writes on row by row; row 1 (fire) and row 2 (leaf) light up, rows 3 and 4 grey with \"work out delta G\"; the aid writes on large with terracotta and indigo underlines and the tag \"when both terms agree\"",
+      "motionTools": [
+        "table row reveal",
+        "HandText write-on",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Short reading hold on the aid"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "New board with the hydrogen equation, sealed tube vignette, grouped givens, formula, small rough-guide bar and three numbered questions",
+      "teachingReason": "Unseen mixed-sign transfer with every demand and supplied value visible",
+      "narrationCue": "Pause",
+      "motionPurpose": "Countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The hydrogen equation, the sealed tube with drifting molecules and a slow calendar, the givens, the formula and bar, and the three numbered questions appear as named; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same board with line-by-line substitution, small level diagram, rough-guide bar, tube fast-forward and wrong-answer chips",
+      "teachingReason": "Explains the answer, shows heat outweighing lost spreading, and corrects the likeliest slips",
+      "narrationCue": "four hundred and seventy-four / nearly all water / fast",
+      "motionPurpose": "The substitution writes to a boxed -474, a heat bar beats a smaller spreading bar, a marker lands in the all-products label and the tube fills with water while the calendar flips",
+      "motionRole": "explain",
+      "onScreenChange": "The substitution writes line by line and the double negative is ringed; the -670 chip appears crossed as \"sign slip\"; the 572 and 98 bars show the net drop of 474; the marker lands on \"hundreds below zero\"; the tube molecules convert to water with the C2 flask thumbnail crossed out on \"nearly all water\"; the clock and calendar return on \"fast\"; wrong-answer chips appear crossed as named",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "bar compare",
+        "particle convert",
+        "calendar flip"
+      ],
+      "holdPurpose": "Settle on the boxed answer"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three question cards with icons, two outcome arrows, speed warning chip and the C2 steady-state flask",
+      "teachingReason": "Packs the lesson into a reusable three-question rule and hands off to disturbing an equilibrium",
+      "narrationCue": "disturb",
+      "motionPurpose": "Three question cards write on one by one, two outcome arrows and a speed chip follow, then the steady flask shakes with a next chip",
+      "motionRole": "explain",
+      "onScreenChange": "Three question cards write on with heat wave, scattering dots and delta G icons; the arrows \"very negative: runs to completion\" and \"very positive: needs energy fed in all the time\" draw with fire and leaf icons; a \"not the speed\" chip with a clock appears; on \"disturb\" the steady-state flask shakes and the next-lesson chip appears",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "DrawPath arrows",
+        "flask shake"
+      ],
+      "holdPurpose": "Hold the three questions to read"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Six notes and the aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, revision 3 pass; findings resolved in revision 5)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g01-learning-review.md",
+      "sha256": "718ac3b5c9a9e0b264de3706a4226a1a41d6d26082b1b2f71bca138414b59ab1"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex fact check (science, syllabus, copy); findings applied by Claude",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g01-check.md",
+      "sha256": "59f3c9679cd4d8a86b4a47c7f5ab3c0e219cb2b588bbcb429825624003048aa9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

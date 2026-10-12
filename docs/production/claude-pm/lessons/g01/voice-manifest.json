@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-G01-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/g01/lesson.json",
+  "lessonSha256": "c645eadc05616249f41d4e1f18984a9c5a2529a2d5f6132837fd6e7ff76847a7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/g01/lesson.production-brief.json",
+    "sha256": "365fdc9cca19f7ae38e7d31351b88e7c2e183fe2a55faee9d7fe3e546f34fa46"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Light a log in a fire and within the hour it's ash, smoke and a warm room. Now try the reverse. Put the ash, smoke and warm air together and you will never get the log back. Yet a tree makes sugar and wood out of carbon dioxide and water, all day long. So why does a fire run all the way one way, while a tree can build the other way? To find out, we need two ideas from Year 11: enthalpy, which is about heat, and entropy, which is about spreading out.",
+      "hash": "a33c7cfb1f0a",
+      "textSha256": "a33c7cfb1f0a018cffc5be49f8d31610712cbb1c64ba629eedd8fd6c5ae48d31",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/hook.a33c7cfb1f0a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/hook.a33c7cfb1f0a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/hook.a33c7cfb1f0a.generation.json",
+      "plannedRequestSha256": "f8020d82db8d6335bf151af23fac7b29c2e82b57b1dc8c9c15e92a799fee84a3"
+    },
+    {
+      "id": "non-equilibrium",
+      "parentSceneId": "non-equilibrium",
+      "text": "Last time, a sealed flask settled into a mixture where the forward and reverse rates matched and the amounts stopped changing. A fire is different. Its change keeps going one way until the fuel or the oxygen runs out, and nothing balances it. A system where the net change is still going, with no steady balance, is called a non-equilibrium system. Combustion is one, and photosynthesis is another. They stay away from equilibrium for opposite reasons.",
+      "hash": "c1158f25021c",
+      "textSha256": "c1158f25021cf7c439aa97189376d27cd36f3bf7f2c9f29acc8ad0a5abe5c58e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/non-equilibrium.c1158f25021c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/non-equilibrium.c1158f25021c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/non-equilibrium.c1158f25021c.generation.json",
+      "plannedRequestSha256": "f61aabe9bc712aee4956e6676fd9af7fb2d4babab72075cf4209271fba5d8ccf"
+    },
+    {
+      "id": "recall-heat-spread",
+      "parentSceneId": "recall-heat-spread",
+      "text": "First, heat. The enthalpy change, written delta H, is the heat a reaction gives out or takes in. A negative delta H means heat flows out into the surroundings, like a fire. Giving out heat spreads energy into the surroundings, and that is why it helps a reaction. Second, spreading. Entropy, written S, measures how spread out the particles and the energy are, in other words how many ways they can be arranged. The change in entropy is written delta S. A tightly packed crystal has low entropy. When it breaks into separate molecules that fly about, the particles are more spread out, so delta S is positive. Keep the two apart: heat leaving is the delta H term, and the particles spreading out in the reacting mixture is the entropy term.",
+      "hash": "4e8c77129734",
+      "textSha256": "4e8c77129734f1fee469e2868d21170fd9e5fc473c07c070b4a93d4576a6bea3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/recall-heat-spread.4e8c77129734.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/recall-heat-spread.4e8c77129734.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/recall-heat-spread.4e8c77129734.generation.json",
+      "plannedRequestSha256": "4cc643ae8305fb40d356b54f76c00d85bd056ccff67d8e1074b7e3beaaba97e2"
+    },
+    {
+      "id": "recall-delta-g",
+      "parentSceneId": "recall-delta-g",
+      "text": "A reaction is helped along by giving out heat and by spreading out. You met the combination in Year 11, as one number called the free energy change, delta G, which equals delta H minus T delta S, where T is the temperature in kelvin, which is always positive, so T delta S has the same sign as delta S. If delta G is negative, the reaction can run on its own. The word for that is spontaneous.",
+      "hash": "2ae6174a7ebe",
+      "textSha256": "2ae6174a7ebec6344467e6194f3f2a59e2f314f3ee2b77bb98838d7888d7d3ab",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/recall-delta-g.2ae6174a7ebe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/recall-delta-g.2ae6174a7ebe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/recall-delta-g.2ae6174a7ebe.generation.json",
+      "plannedRequestSha256": "e27844d9d6d5852dfeb686158c35aea09327d03b1b47e5f1195c90430650b839"
+    },
+    {
+      "id": "glucose",
+      "parentSceneId": "glucose",
+      "text": "Glucose plus oxygen makes carbon dioxide and water. Burning one mole of glucose gives a delta H of minus two thousand eight hundred and three kilojoules, and at room temperature T delta S is plus seventy-eight kilojoules. First, heat. Delta H is negative, so heat flows out, and that helps. Second, spreading. A solid sugar crystal and six oxygen molecules become six carbon dioxide gas molecules and six liquid water molecules. The crystal is gone and seven particles become twelve, so there are more ways to arrange them. Entropy goes up, and T delta S is positive. Now, delta G is delta H minus T delta S, which is minus two thousand eight hundred and three, minus seventy-eight, giving minus two thousand eight hundred and eighty-one kilojoules per mole. Both terms push the same way, but the heat term does almost all the work, and spreading adds a little more.",
+      "hash": "560e987a2199",
+      "textSha256": "560e987a2199934359d4df5ad5dcf6fbb90341f4d10f7c7c4b3d2ab2cdaf72c0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/glucose.560e987a2199.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/glucose.560e987a2199.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/glucose.560e987a2199.generation.json",
+      "plannedRequestSha256": "420e2bf56fe635ec0c3856c5352d336dbb83b9b8e05a740235bb7da2bc0b03a3"
+    },
+    {
+      "id": "how-strong",
+      "parentSceneId": "how-strong",
+      "text": "How big is big? Minus two thousand eight hundred and eighty-one kilojoules is a very strong pull towards products. The reverse reaction is so slight that the leftover reactants can't even be measured, so we treat the reaction as running to completion. As a rough guide, a delta G close to zero, within a few tens of kilojoules, leaves a real mixture of reactants and products, like the flask last time. A delta G hundreds of kilojoules below zero leaves essentially all products. That is why ash never becomes a log again.",
+      "hash": "7e9e052eb200",
+      "textSha256": "7e9e052eb200ee325e5df0cef80cd36cbc768185a29203e46978da9437dd7aec",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/how-strong.7e9e052eb200.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/how-strong.7e9e052eb200.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/how-strong.7e9e052eb200.generation.json",
+      "plannedRequestSha256": "600d993f6beba05fa602d6b0744aa073e3e01b25d8a615e9c789e5778a40344a"
+    },
+    {
+      "id": "heading-not-speed",
+      "parentSceneId": "heading-not-speed",
+      "text": "While the fuel is still burning, the system is a non-equilibrium system. Once the fuel is gone and nothing is left to run, it is the static case from the first video: finished, with both rates zero. One warning, though. Delta G tells you where a change is heading, not how fast it gets there. A bowl of sugar sits in the air for years, even though its delta G is hugely negative, until something gets it started.",
+      "hash": "94ad2b7181d9",
+      "textSha256": "94ad2b7181d91914e449b3c25965c97456c15f5bb2bdfb9bbf734b34d99d747e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/heading-not-speed.94ad2b7181d9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/heading-not-speed.94ad2b7181d9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/heading-not-speed.94ad2b7181d9.generation.json",
+      "plannedRequestSha256": "7c35bb3b2c1e8b4e814d10333ac11c9f7b0ba5ef5eef4ece8ac1f1cb486447b7"
+    },
+    {
+      "id": "photo-reverse",
+      "parentSceneId": "photo-reverse",
+      "text": "Now run it backwards. Photosynthesis makes sugar from carbon dioxide and water, which is burning in reverse, so every sign flips. Delta H is plus two thousand eight hundred and three, because energy has to go in, and in a leaf that energy is light. Twelve particles become seven, and the sugar settles into a crystal, so entropy falls and T delta S is minus seventy-eight. Delta G equals delta H minus T delta S: plus two thousand eight hundred and three, minus negative seventy-eight. Minus a negative adds, so delta G is plus two thousand eight hundred and eighty-one kilojoules per mole. It can't run on its own at any temperature.",
+      "hash": "89cf208793d5",
+      "textSha256": "89cf208793d5e35ce1ca8af2040d695482bf232afb77a74e93de83f1541f936e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/photo-reverse.89cf208793d5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/photo-reverse.89cf208793d5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/photo-reverse.89cf208793d5.generation.json",
+      "plannedRequestSha256": "a155f5072770dab202ca39be2aa9b987c83df4619f28d07c0ce61b4c3174de5c"
+    },
+    {
+      "id": "photo-leaf",
+      "parentSceneId": "photo-leaf",
+      "text": "So how does a leaf do it? A leaf is an open system. Sunlight keeps supplying energy, carbon dioxide keeps arriving and oxygen leaves. Cut off the light and photosynthesis stops, because nothing supplies the energy any more. The leaf's sugar can still be broken down by respiration, but that is a separate process, and it runs in the light and in the dark. So it is the constant light input that keeps photosynthesis going, away from equilibrium.",
+      "hash": "195d1b5a4a3d",
+      "textSha256": "195d1b5a4a3dbb39ec570ff1466e084531c9ce9d223779dc18cc52890ae2aa34",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/photo-leaf.195d1b5a4a3d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/photo-leaf.195d1b5a4a3d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/photo-leaf.195d1b5a4a3d.generation.json",
+      "plannedRequestSha256": "f603a16e4db23d837cd715fb4803011c95cee3423578e46a19c0feba8d43703c"
+    },
+    {
+      "id": "aid",
+      "parentSceneId": "aid",
+      "text": "Here's a way to hold onto this. When the two terms agree, heat out and spread out, the reaction can run on its own. Heat in and packed in, and it needs energy fed in all the time. If the two disagree, work out delta G, because the sizes and the temperature then matter.",
+      "hash": "07bb6a876b8b",
+      "textSha256": "07bb6a876b8b14b718af1ec29f6d83496bdbea9c586126f4b04e472e1ad1a55f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/aid.07bb6a876b8b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/aid.07bb6a876b8b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/aid.07bb6a876b8b.generation.json",
+      "plannedRequestSha256": "15d0d7e0167de053ac6c90781b14398f8334356d1935cb1d06ae6814917fa097"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn, with a new reaction. Hydrogen burns in oxygen to make liquid water: two H two plus O two gives two H two O. For the equation as written, which makes two moles of water, delta H is minus five hundred and seventy-two kilojoules, and T delta S is minus ninety-eight kilojoules at room temperature, because three gas molecules become a liquid. A sealed tube of hydrogen and oxygen sits at room temperature and nothing happens for years. One: work out delta G. Two: if the gases did react, would you end up with a mixture of reactants and products, or nearly all products? Give a reason. Three: why doesn't the unchanged tube contradict your answer to two? Pause the video if you'd like more time.",
+      "hash": "c5198b12f5a2",
+      "textSha256": "c5198b12f5a227c1f2a24323af461ce97ebc8d70d5897ef1c27b34c34b1f2e0b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/attempt.c5198b12f5a2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/attempt.c5198b12f5a2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/attempt.c5198b12f5a2.generation.json",
+      "plannedRequestSha256": "a24323618090aba2ab71a05bd8915bb03a64ce603d994782afc9b0749a5e3973"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "Delta G is delta H minus T delta S, which is minus five hundred and seventy-two, minus the negative ninety-eight, so minus four hundred and seventy-four kilojoules. The heat released outweighs the lost spreading, so delta G is still strongly negative and the reaction can run on its own. Minus four hundred and seventy-four is hundreds of kilojoules below zero, so the reverse is negligible and the end would be nearly all water. The tube doesn't contradict that, because delta G says where the change is heading, not how fast it gets there. If you got minus six hundred and seventy, check the sign: minus a negative adds. If you said a mixture because the entropy term opposes it, compare the sizes: the heat term is five hundred and seventy-two, the entropy term only ninety-eight, so heat wins by a long way. If you said the tube must be at equilibrium because nothing changes, remember what dynamic equilibrium needs: both reactions running at equal rates. This tube has not reacted at all, so it is neither.",
+      "hash": "56937e4634ad",
+      "textSha256": "56937e4634adab72b6b36bb2b6da2de1ee3383df3f4cd84d796bc7f38935471c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/feedback.56937e4634ad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/feedback.56937e4634ad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/feedback.56937e4634ad.generation.json",
+      "plannedRequestSha256": "4ae81a0ee0aa7510a87a669669e79582375782de17959cc583ae4d7450a9cc89"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a reaction runs one way to the end, or needs constant help to run at all, ask three questions. Is heat going out or in? Is it spreading out or packing in? Then combine them in delta G. A very positive delta G means it needs energy fed in all the time, like sunlight in a leaf, and that is why a tree needs sunlight while a fire does not. And delta G never tells you the speed. Next, we'll take a flask that is already at equilibrium and disturb it.",
+      "hash": "44a31934b0d3",
+      "textSha256": "44a31934b0d385630b282a27059d044cdead749a06bfadefea7379203aa982db",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/decision-rule.44a31934b0d3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/decision-rule.44a31934b0d3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/decision-rule.44a31934b0d3.generation.json",
+      "plannedRequestSha256": "d3b77b6af65a6369c22ac4e849aa98e9348abde5619b860c5b2139b8dff751de"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G01-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b2b/measured/lesson.json",
+    "lessonSha256": "231895e9872cac8ce65a2102c3882725c6e1ae8464e26b9b0426921d5b95b2e6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B1: gametes (sperm, egg) join in sexual reproduction, copies without joining are asexual, a clone and the conditions favouring clones or variety. B2a: fertilisation and zygote. Roots take up water and leaves make food in light.",
+    "startsWith": "A gardener with one strawberry plant, a runner, a flower and a bee brushing off pollen.",
+    "stopsAfter": "Sequencing pollination to seed with the pollen tube explained, separating pollination from fertilisation, naming vegetative propagation as the asexual plant route, and matching each to conditions in a short answer.",
+    "nextLesson": "B2c: reproduction without flowers or seeds: yeast, bacteria and protists."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b02b.md"
+  ],
+  "teaching": {
+    "task": "Outline how a flowering plant makes a seed from pollination to seed formation, and say when seeds suit better than vegetative propagation.",
+    "causalExplanation": "The sperm-forming cells are in the pollen and the egg is deep in the ovary, and plant sperm cannot swim, so pollination only delivers pollen; the pollen tube grows down the style, guided by chemical signals, carrying sperm to the egg, where fertilisation makes a zygote that becomes an embryo; the ovule becomes a seed and the ovary a fruit. Vegetative propagation makes clones without sperm or egg, so runners are fast and alike while seeds are varied and travel.",
+    "conversationalApproach": "Opens with a bee brushing pollen onto a strawberry flower and asks whether a seed exists yet, builds the journey with a persistent name key and a land, tube, join, seed strip, then builds an outline answer on screen one sentence at a time.",
+    "openingDecision": "A bee brushes pollen onto a flower. Has the plant made a seed yet, and what has to happen before it does?",
+    "understandingCheck": "Say which step failed when bagged flowers make no seed, whether fertilisation has happened when tubes are part-way down the style, and why a potato field grown from tubers is at more risk from a new disease.",
+    "curriculumScope": "Describe the mechanisms of reproduction in flowering plants and vegetative propagation (BIO12-12, Module 5). Meiosis, haploid and diploid, self- and cross-pollination, double fertilisation, and fungi, bacteria and protists (B2c) are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted flower and plant plates with a coded pollen tube path, sperm dots, a persistent name key, a land, tube, join, seed strip and answer cards.",
+    "transitionPlan": "Push-through from the runner to the flower; the camera pushes into the stamens then travels down the carpel; the bee flies between flowers; the camera follows the growing tube; crossfade from ovary to pod and from seed to seedling; plates change one plant at a time; the board splits for the conditions comparison; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Strawberry runner and flower plates (alpha) with the bee plate and coded pollen specks",
+      "teachingReason": "Poses the question of whether pollen arriving means a seed has formed, and names the two plant routes",
+      "narrationCue": "runner / Or it can flower / bee landing / Has the plant made a seed yet",
+      "motionPurpose": "The runner stem draws on, the board pushes through to the flower, a bee flies in and shakes off pollen, then a question mark and empty seed outline hold still",
+      "motionRole": "explain",
+      "onScreenChange": "The connecting stem draws on at \"runner\"; push-through to the flower plate on \"Or it can flower\"; the bee flies in and yellow pollen specks fall on the centre; a question mark and empty \"seed?\" outline appear and hold about two seconds before \"Not yet\"; the heading writes on",
+      "motionTools": [
+        "DrawPath stem",
+        "CameraStage push-through",
+        "particle specks",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold on the question mark"
+    },
+    {
+      "sceneId": "male-side",
+      "visualDecision": "new",
+      "visualReference": "Flower cut-away plate with coded pollen grain and stacked name key",
+      "teachingReason": "Shows where the sperm-forming cells are made and introduces the part names one at a time",
+      "narrationCue": "stamens / anthers / pollen grain / up here",
+      "motionPurpose": "The camera pushes into the stamens, names draw on and drop into the name key, and a pollen grain pops out of an anther",
+      "motionRole": "explain",
+      "onScreenChange": "The cut-away appears with \"typical flower\"; the camera pushes in on \"stamens\"; a scribble circle on \"anthers\" and a plain-cell pollen grain pops out; each name draws on with a leader line and drops into the stacked key; the STAMEN has MEN tag writes on; a pin lands on the anthers on \"up here\"",
+      "motionTools": [
+        "CameraStage push",
+        "ScribbleCircle",
+        "leader line draw-on",
+        "name key stack",
+        "pin drop"
+      ],
+      "holdPurpose": "Hold the name key"
+    },
+    {
+      "sceneId": "female-side",
+      "visualDecision": "new",
+      "visualReference": "Same flower cut-away with ovule close-up crossfade and persistent name key",
+      "teachingReason": "Shows where the egg sits and sets the distance problem the pollen tube solves",
+      "narrationCue": "stigma / style / ovary / egg cell / buried deep / can't swim",
+      "motionPurpose": "The camera travels down the carpel, names drop into the key, the ovule close-up shows the egg, and a dotted measure line links the two pins",
+      "motionRole": "explain",
+      "onScreenChange": "The camera follows the carpel on \"stigma\", \"style\", \"ovary\"; names draw on and join the key; the ovule close-up crossfades in with the egg dot lit on \"egg cell\"; a second pin lands on \"buried deep\"; a dotted red measure line and a crossed-out swimming sperm appear on \"can't swim\"",
+      "motionTools": [
+        "CameraStage travel",
+        "leader line draw-on",
+        "plate crossfade",
+        "pin drop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the long measure line"
+    },
+    {
+      "sceneId": "pollination",
+      "visualDecision": "new",
+      "visualReference": "Bee flight between two flower plates, grass and wind plate, water icon, then the cut-away with the name key",
+      "teachingReason": "Defines pollination and shows it only delivers pollen, so it is not fertilisation",
+      "narrationCue": "pollination / rubs off / wind / not fertilisation",
+      "motionPurpose": "The bee flies flower to flower and pollen drops on the stigma, carrier icons gain a carries-pollen tag, then a bracket shows pollen and egg still far apart",
+      "motionRole": "explain",
+      "onScreenChange": "The bee flies along a motion path with pollen specks and a few drop on the stigma on \"rubs off\"; a pollen cloud drifts from the grass plate on \"wind\" and a ripple icon appears for water; each carrier gets an amber \"carries pollen\" tag; back at the cut-away a bracket reads \"still far apart\" and a tick on arrival and cross on \"= seed\" appear on \"not fertilisation\"",
+      "motionTools": [
+        "motion path",
+        "particle cloud",
+        "tag pop",
+        "bracket draw",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the pollination = arrival doodle"
+    },
+    {
+      "sceneId": "pollen-tube",
+      "visualDecision": "new",
+      "visualReference": "Cut-away with coded pollen tube path, chemical signal dots, sperm dots and pollen grain close-up",
+      "teachingReason": "Explains how the tube solves the distance problem and carries sperm to the egg",
+      "narrationCue": "takes in water / grows a thin tube / guided by chemical signals / the two sperm cells form / small opening",
+      "motionPurpose": "The grain swells, the tube draws down the style toward signal dots, two sperm dots form and travel inside it, and they spill out beside the egg",
+      "motionRole": "explain",
+      "onScreenChange": "Water droplets enter the grain and it swells; the tube draws down the style over about 8 seconds with the camera following the tip; faint signal dots drift from the ovule and the tip bends toward them; the plain cell enters the tube and splits into two sperm dots that travel along it; the tube enters the ovule opening and the sperm spill out beside the egg with a scribble circle; the \"pollen tube\" label draws on",
+      "motionTools": [
+        "DrawPath tube",
+        "CameraStage follow",
+        "particle drift",
+        "cell split",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold the sperm beside the egg"
+    },
+    {
+      "sceneId": "fertilisation",
+      "visualDecision": "new",
+      "visualReference": "Ovule close-up with coded sperm dots, zygote circle, doubling cells and the sequence strip",
+      "teachingReason": "Shows fertilisation as one sperm joining the egg and the zygote growing into an embryo",
+      "narrationCue": "fertilisation / zygote / divides again and again / embryo",
+      "motionPurpose": "One sperm dot merges with the egg into a zygote circle, then it doubles to a tiny embryo while the land, tube, join strip builds at the bottom",
+      "motionRole": "explain",
+      "onScreenChange": "One sperm dot moves into the egg and merges into a circle labelled \"zygote\"; the \"one set + one set = two sets\" chip appears; the circle splits to two, four and a cluster that grows into the embryo outline; \"embryo\" draws on; the strip icons for land, tube and join land on their cue words",
+      "motionTools": [
+        "particle merge",
+        "cell doubling",
+        "chip pop",
+        "DrawPath outline",
+        "sequence strip build"
+      ],
+      "holdPurpose": "Hold the embryo and the strip"
+    },
+    {
+      "sceneId": "seed-fruit",
+      "visualDecision": "new",
+      "visualReference": "Aligned ovary and pod plates, then the bean seed cut-away with three leader lines",
+      "teachingReason": "Shows the ovule becoming a seed and the ovary becoming a fruit, and what a seed holds",
+      "narrationCue": "seed / fruit / pea pod",
+      "motionPurpose": "The ovary crossfades into an open pod with seeds, then the bean seed cut-away gains three leader lines",
+      "motionRole": "explain",
+      "onScreenChange": "The ovary with three ovules crossfades to the pod with three seeds on \"becomes a seed\" and \"grows into a fruit\"; \"pea pod\", \"fruit\" and \"seeds inside\" draw on with leader lines; the bean seed appears with leader lines for embryo, food store (cotyledons) and seed coat; \"seed\" is added to the strip",
+      "motionTools": [
+        "plate crossfade",
+        "leader line draw-on",
+        "HandText write-on",
+        "sequence strip build"
+      ],
+      "holdPurpose": "Hold the labelled bean seed"
+    },
+    {
+      "sceneId": "dispersal",
+      "visualDecision": "new",
+      "visualReference": "Bean seed anchor, carrier icons in a second colour, condition chips and the bean seedling plate",
+      "teachingReason": "Separates seed dispersal from pollination and explains what a seed waits for before growing",
+      "narrationCue": "carry seeds away / seed dispersal / water, oxygen and a suitable temperature / germinates",
+      "motionPurpose": "Carrier icons return tagged carries seeds, three condition chips draw on, and the seedling fades in over the seed with roots down and leaves up",
+      "motionRole": "explain",
+      "onScreenChange": "The bean seed shrinks to the side; wind, water and animal icons return in blue-green with \"carries seeds\" and \"seed dispersal\" writes on with a tick and cross against the amber pollination tags; water drop, oxygen bubbles and thermometer chips draw on; the seedling fades in on \"germinates\" with roots drawing down and leaves lifting",
+      "motionTools": [
+        "icon pop",
+        "tag pop",
+        "DrawPath chips",
+        "plate crossfade",
+        "growth reveal"
+      ],
+      "holdPurpose": "Hold the seedling"
+    },
+    {
+      "sceneId": "vegetative",
+      "visualDecision": "reuse",
+      "visualReference": "Strawberry runner recall, then onion bulb, potato tuber and mint cutting plates in turn",
+      "teachingReason": "Names vegetative propagation as the asexual plant route with concrete examples",
+      "narrationCue": "vegetative propagation / onion bulb / potato tuber / cutting / clone",
+      "motionPurpose": "The runner stem draws on, three plates appear one at a time with the new part circled, then the plate duplicates into a clone pair",
+      "motionRole": "explain",
+      "onScreenChange": "The runner stem draws on as a recall; push-through to the onion, potato and mint plates one at a time with a scribble circle on the new bulb, sprouting eye and new roots; a \"piece of parent, roots and leaves, new plant\" strip runs under each; sperm and egg dots cross out; the plate duplicates on \"clone\"; a bee icon and wind line cross out",
+      "motionTools": [
+        "DrawPath stem",
+        "CameraStage push-through",
+        "ScribbleCircle",
+        "plate duplicate",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the clone pair"
+    },
+    {
+      "sceneId": "seeds-better",
+      "visualDecision": "reuse",
+      "visualReference": "Split board with the B1 clone row with disease and varied seedlings plates",
+      "teachingReason": "Matches each route to conditions, retrieving B1 reasoning about clones and variety",
+      "narrationCue": "steady paddock / new disease / reach new places",
+      "motionPurpose": "The board splits into a healthy paddock of runners and a diseased clone row, then varied seedlings show a few survivors and a seed arcs over a fence",
+      "motionRole": "explain",
+      "onScreenChange": "A split board writes on; the paddock side shows runners spreading with a tick; the disease side shows every clone plant spotted, then the varied seedlings with survivors circled; a seed icon arcs over a fence on \"reach new places\"; \"alike and close\" and \"varied and far\" tags land",
+      "motionTools": [
+        "split board",
+        "DrawPath runners",
+        "ScribbleCircle",
+        "arc motion",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the two tags"
+    },
+    {
+      "sceneId": "worked-outline",
+      "visualDecision": "new",
+      "visualReference": "Question card and four answer cards with sequence icons and marking brackets",
+      "teachingReason": "Models how to build an outline answer one ordered sentence at a time",
+      "narrationCue": "outline / First / Then / Next / Finally",
+      "motionPurpose": "The question card writes on, then four answer cards land on their sequence words with brackets, earlier cards shrinking to the rail",
+      "motionRole": "explain",
+      "onScreenChange": "The question writes on and \"outline\" is underlined with the margin note; the four cards land on \"First\", \"Then\", \"Next\" and \"Finally\" with sequence words underlined and key terms highlighted; each carries its strip icon; brackets for the three marking groups appear as each card lands; earlier cards shrink to the top rail",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "ScribbleUnderline",
+        "bracket draw",
+        "chip shrink"
+      ],
+      "holdPurpose": "Hold the four cards to read"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Three numbered vignettes: bagged flower, paintbrush on a stigma with part-way tubes, potato field beside seedling row",
+      "teachingReason": "Unseen transfer with every condition visible, including that the bagged flowers cannot self-pollinate",
+      "narrationCue": "Pause",
+      "motionPurpose": "Countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The three numbered vignettes appear as each situation is named; the conditions stay on the board; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "Same three vignettes with verdict stamps, sequence strip states and clone and seedling rows",
+      "teachingReason": "Explains each answer and names the knock-on, arrival-versus-joining and clones-worse slips",
+      "narrationCue": "pollination failed / not yet / clones",
+      "motionPurpose": "Each vignette gets a verdict stamp and one-line card, with the strip showing which icons never start, which are lit, and the diseased clone row beside survivors",
+      "motionRole": "explain",
+      "onScreenChange": "Vignette one crosses out \"land\" with the bag and greys the later icons, then a knock-on arrow from \"join\" appears; vignette two lights \"land\" and \"tube\" with the tip short of the ovule and the verdict \"not yet\"; vignette three shows the spotted clone row beside circled survivors; amber doodles mark each trap",
+      "motionTools": [
+        "stamp pop",
+        "sequence strip states",
+        "Mark cross",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Settle on all three verdicts"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "reuse",
+      "visualReference": "Land, tube, join, seed strip written large with the stamen tag and next-lesson chip",
+      "teachingReason": "Gives a reusable sequence aid and hands off to single-celled organisms",
+      "narrationCue": "Pollination / Fertilisation / land, tube, join, seed / Next",
+      "motionPurpose": "The four icons write on in a row with arrival and joining labels, the stamen tag returns, then the next chip with three cell icons appears",
+      "motionRole": "explain",
+      "onScreenChange": "The strip writes on large with \"arrival\" under land and \"joining\" under join; the STAMEN has MEN tag returns beside the stamen; the next-lesson chip appears with a budding yeast, a splitting bacterium and a protist outline",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold the strip"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes and the aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, revision 3 pass; findings resolved in revision 5)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b2b-learning-review.md",
+      "sha256": "2e88720d22d2b4c8af76d7e2e16b1a5844862995408da3c40b48584ca3118227"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Codex fact check (science, syllabus, copy); findings applied by Claude",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b2b-check.md",
+      "sha256": "9cf836ccb7d8f75e4d85e9c6f5f81b6b85e1d3433914c568b46eaf0b3512f7fc"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}
