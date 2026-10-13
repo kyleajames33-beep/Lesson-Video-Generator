@@ -108,7 +108,7 @@ export const SceneFeedback1: React.FC = () => {
 				<GraphAxes g={GF} at={4} xTicks={[]} yTicks={[]} yLabel="amount of ammonia (made-up)" />
 				<Curve g={GF} fn={t => modelA(t).hi} upTo={clock} color={INK_SOFT} width={5} />
 				<Curve g={GF} fn={t => modelB(t).hi} upTo={clock} color={METAL_DARK} width={11} />
-				<SvgText x={GF.px(5)} y={GF.py(14) - 30} text="B (iron)" size={46} color={METAL_DARK} at={KF1.bFirst} />
+				<SvgText x={GF.px(9.8)} y={GF.py(14) - 24} text="B (iron)" size={46} color={METAL_DARK} at={KF1.bFirst} />
 				<SvgText x={GF.px(9)} y={GF.py(13.4) + 70} text="A (no catalyst)" size={46} color={INK_SOFT} at={KF1.bFirst + 8} />
 				<VLine g={GF} t={3} at={KF1.stop} label="stop early" color={INK} dy={-14} size={40} out={KF1.settled} />
 				<Fade at={KF1.bMore} out={KF1.settled}><SvgText x={GF.px(3) + 24} y={GF.py(7)} text="B is ahead" size={50} color={METAL_DARK} at={KF1.bMore} /></Fade>
@@ -132,7 +132,7 @@ export const SceneFeedback1: React.FC = () => {
 				</Fade>
 				<Fade at={KF1.factor}><SvgText x={g.x0 + g.w / 2} y={g.y0 + g.h + 100} text="both rates rise by the same factor" size={48} color={TEAL} anchor="middle" at={KF1.factor} /></Fade>
 				<Fade at={KF1.mix} out={KF1.ends}><SvgText x={450} y={760} text="a catalyst changes the speed, not the destination" size={60} color={INK} anchor="middle" at={KF1.mix} /></Fade>
-				<WrongChip at={KF1.ends} out={KF1.rem2} x={190} y={780} chip="B ends with more ammonia" fix="" w={640} />
+				<WrongChip at={KF1.ends} out={KF1.early} x={190} y={780} chip="B ends with more ammonia" fix="" w={640} />
 				<Fade at={KF1.rem1} out={KF1.early}><SvgText x={190} y={900} text="same destination, reached sooner" size={50} color={TEAL} at={KF1.rem1} /></Fade>
 				<WrongChip at={KF1.early} out={9999} x={190} y={780} chip="the same early on" fix="" w={640} />
 				<Fade at={KF1.rem2}><SvgText x={190} y={900} text="B's rates are larger, so B is ahead early" size={50} color={TEAL} at={KF1.rem2} /></Fade>

@@ -49,3 +49,12 @@ Applied 12 Oct to `../lessons/chem-m5-c05.md` (Revision 4, "Claude science check
 | Numbers slip | 0.05 x 16 = 0.8 | Now "settled rates 0.05 x 2 x 8 = 0.8 and (0.05 / 49) x 28^2 = 0.8". |
 
 UNVERIFIED items stay open in the design for Codex (NESA wording Keq versus K, the atomic mechanism of H2 + I2, and the dilute esterification rate, which is no longer used).
+
+## Codex check resolution (13 Oct)
+
+Applied to `../lessons/chem-m5-c05.md` (Revision 5, "Codex fact check resolved; ready to voice"). Root decisions applied; narration grew by about 51 words (1121 to 1172 by plain count).
+
+| # | Finding | Decision | New wording |
+| --- | --- | --- | --- |
+| 1 | Universal composition bands ("almost all products" above about a thousand) in scene 6, scene 10, key note 4 and the number line | Keep the K size guide as a rough guide that depends on the equation; no universal composition claim. Specific cases (K = 49, 10^-30, 10^13 with plenty of ammonia) stay because they describe real mixtures. | Scene 6: "As a rough guide, a K above about a thousand means the mixture at equilibrium is mostly products, and a K below about a thousandth means it is mostly reactants. In between, both are present in measurable amounts. It is only a rough guide, because it depends on the equation." Scene 10: "When it gives you K, read its size first, as a rough guide: above about a thousand, mostly products, below about a thousandth, mostly reactants, and in between, both in measurable amounts." Key note 4: "Rough guides (they depend on the equation; for typical laboratory concentrations): K above about 10^3, the mixture at equilibrium is mostly products; below about 10^-3, mostly reactants; in between, both are present in measurable amounts." Number line labels: "mostly reactants", "both present in measurable amounts", "mostly products", band label "rough guides, depend on the equation, for concentrations around 0.1 to 1 mol/L". |
+| 2 | Invented A + B item: K = 4 does not fix the mixture without starting amounts | Add equal starting concentrations of A and B and no C or D to the stem, on-screen conditions and feedback. | Scene 8: "We start with equal concentrations of A and B, and no C or D. In this question K is four." Scene 9b: "We started with only A and B, in equal amounts. A K of four works out to about two thirds of the A reacting, so the settled mixture holds measurable amounts of all four, not almost all products." Check: K = x^2 / (a - x)^2 = 4 gives x / (a - x) = 2, so x = 2a/3. Author note rewritten to match. |

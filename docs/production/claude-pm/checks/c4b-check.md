@@ -1,41 +1,19 @@
 # C4b independent fact check
 
-Checked `lessons/chem-m5-c04b.md`, Revision 4: quoted narration, Visual text, key notes, memory aid and numerical author notes. Compared `site-extracts/chem-m5-l06.md` and the official NSW 2017 Chemistry syllabus. No stills exist, so screen checks were skipped.
+Checked `lessons/chem-m5-c04b.md`, Status Revision 4, on 13 October 2026, against the full `site-extracts/chem-m5-l06.md`. Narration, Visual lines, key notes, memory aid and author calculations checked. No stills exist.
 
 | # | type | where | problem | fix |
 | --- | --- | --- | --- | --- |
-| 1 | science | Numbers and author note (d): "within about 5 per cent of the way to their final values (clock 13.4 for tube A, 1.34 for tube B)" | Five per cent of the total concentration change is reached at 8.7322 and 0.87322 ticks; 13.4 and 1.34 instead correspond to H2 and I2 being about 5% above their final concentration. | Define the threshold as H2 and I2 within about 5% of their final concentration; retain about 13 and 1.3. |
-| 2 | science | 6: "A catalyst lowers both ridges by the same height ... both rates rise by the same factor"; 9a: "The iron lowers the activation energy by the same amount for the trip back, so both rates rise by the same factor"; key note 2: "at a steady temperature both rates rise by the same factor" | These general statements apply the single-barrier, equal-multiplier explanation to real catalysts and the Haber process, although alternative multistep pathways need not preserve the uncatalysed rate laws or enhancement factors away from equilibrium. | Keep the equal multiplier at every mixture specific to the numerical example; explain the general and Haber conclusions using faster forward and reverse reactions and unchanged equilibrium composition. |
+| 1 | science | Scene 6: "A catalyst lowers both ridges by the same height"; scene 9a: "both rates rise by the same factor"; key note 2: "at a steady temperature both rates rise by the same factor" | These general statements extend the example's equal-factor rate law to real catalysts away from equilibrium, although a different surface mechanism can change concentration dependence and apparent activation energies. | Keep equal factors within the illustrated rate law; explain the general result using equal forward and reverse rates at the unchanged equilibrium mixture. |
+| 2 | science | Decisions, Numbers and author note (d): "within about 5 per cent of the way to their final values (clock 13.4 for tube A, 1.34 for tube B)" | At 13.4 only 1.44% of the initial-to-equilibrium change remains, while 5% remaining occurs at 8.732; 13.437 instead corresponds to H2 and I2 being 5% above their final concentrations. | Define the existing settle times as H2 and I2 being within about 5% of their final concentrations. |
+| 3 | science | Scene 4a rate-bar axis and stage-table units: "H2 used per tick"; scene 4c reuses those bars | The reverse reaction produces H2, so a positive reverse rate cannot be labelled H2 used. | Label the shared scale "reaction events per tick", or label forward H2 used and reverse H2 made separately. |
 
-Syllabus: None found. Necessary new terms are introduced, and omitting K here follows the stated lesson boundary rather than contradicting the site.
+Syllabus and site mismatch: None found. Necessary terms are introduced; withholding K for the next lesson does not contradict the site.
 
-Screen: Not checked: no stills.
+Screen: Not checked, no stills exist. Copy: None found in learner copy, including the U+2014 check.
 
-Copy: None found in learner text. No U+2014 found.
+Independent arithmetic: with h = [H2] = [I2], [HI] = 18 - 2h, solve h' = -0.05h^2 + (0.05/49)(18 - 2h)^2. The exact solution is h = (2 + 3.6q)/(1 - q), q = (5/9)exp(-9t/35). This gives [HI](3) = 10.12877, [HI](30) = 13.99722, and h(12) = 2.14587 with rates 0.23024 and 0.19175. The start rates are 4.05 and 0; equilibrium is 2, 2, 14, K = 49, rates 0.2 and 0.2; multiplying both rate laws by ten gives 2 and 2 and exactly divides every corresponding clock time by ten. The brief's older 20/200 rate values are absent from Revision 4.
 
-## Numerical trace
+Sources: [OpenStax, catalyst and equilibrium](https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle) explicitly limits its shared transition-state argument to a simple elementary reaction; [OpenStax, catalysis and Haber](https://openstax.org/books/chemistry-atoms-first/pages/17-7-catalysis) supports unchanged equilibrium and the ammonia equation. [OCR 2018 examiner report](https://www.ocr.org.uk/Images/537985-examiners-report-periodic-table-elements-and-physical-chemistry.pdf) supports platinum-catalysed HI decomposition. [Original HI synthesis patent](https://patents.google.com/patent/US9272922B2/en) supports gas-phase H2/I2 synthesis using supported platinum-group catalysts, without establishing the exact depicted surface sequence or foil performance at 450 C. [Austrian Chemistry Olympiad 2022](https://www.oecho.at/assets/austrian-chemistry-olympiad/exercises/National-Competition-Tasks-2022.pdf) gives 184 kJ/mol for uncatalysed decomposition. [Atkins data section, Table 25.3, printed p. 1023 (PDF p. 36)](https://www.fkit.unizg.hr/_download/repository/Akins%20tablice%5B1%5D.pdf) lists 2HI decomposition at 184 kJ/mol without a catalyst and 59 kJ/mol on Pt(s), citing G. C. Bond, Heterogeneous catalysis (Clarendon Press, 1986). This verifies the author-note values for decomposition, not measured synthesis kinetics at 450 C. [OpenStax Chapter 13 exercises 25(b), 65 and 79](https://openstax.org/books/chemistry-2e/pages/13-exercises) give Kc = 50.2 at 448 C for H2 + I2 ⇌ 2HI, supporting K = 49 as close to textbook near 450 C. Source correction: the previous unverified statement reflected an incomplete source search; these specific textbook sources now verify both comparisons. The web PDF fetch timed out, but direct in-memory retrieval and PDF text extraction succeeded. [NSW 2017 syllabus entry](https://test.educationstandards.nsw.edu.au/wps/portal/nesa/11-12/stage-6-learning-areas/stage-6-science/chemistry-2017) identifies the requested syllabus, alongside the content quoted in the site extract.
 
-Independently integrated with fourth-order Runge-Kutta, step 0.0001 tick: let h = [H2] = [I2], [HI] = 18 - 2h, and dh/dt = -0.05h^2 + (0.05/49)(18 - 2h)^2, h(0) = 9. The exact threshold times follow from the integrated quadratic rate equation. Multiplying its right-hand side by 10 gives B(t) = A(10t).
-
-| A clock | H2 = I2 | HI | forward | reverse |
-| --- | --- | --- | --- | --- |
-| 0 | 9 | 0 | 4.05 | 0 |
-| 3 | 3.935615 | 10.128769 | 0.774453 | 0.104686 |
-| 12 | 2.145873 | 13.708254 | 0.230239 | 0.191751 |
-| 13 | 2.112135 | 13.775730 | 0.223056 | 0.193644 |
-| 13.4 | 2.100977 | 13.798046 | 0.220705 | 0.194272 |
-| 30 | 2.001389 | 13.997222 | 0.200278 | 0.199921 |
-| equilibrium | 2 | 14 | 0.2 | 0.2 |
-
-B at 1.3 equals A at 13 for concentrations, with rates ten times larger; B at 1.34 likewise equals A at 13.4. B at clock 3 has HI = 13.997222, so the displayed 14 is correct to the chosen precision. The exact 5% threshold relative to final H2/I2 is 13.43714 ticks for A and 1.343714 for B. K = 14^2/(2 x 2) = 49. Equilibrium catalysed rates are 2 and 2, not 200 and 200: Revision 4 changed the scale, and its current numbers are internally consistent. The scene 5 addition at clock 1 is an arbitrary event time, with no approach-time calculation attached.
-
-## Source trace and verification limits
-
-- [Official NESA 2017 syllabus](https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx), Module 5: checked the concentration, temperature, pressure/volume, collision-theory and activation-energy/heat-of-reaction content directly in the DOCX.
-- [Atkins, Table 25.3, p. 1023](https://www.fkit.unizg.hr/_download/repository/Akins%20tablice%5B1%5D.pdf), citing G. C. Bond, *Heterogeneous Catalysis*: confirms 2HI decomposition activation energies 184 kJ/mol without catalyst and 59 kJ/mol with platinum. These are decomposition figures, as the design states.
-- [Primary platinum HI-decomposition study](https://www.sciencedirect.com/science/article/abs/pii/0360319984902672): measurements over Pt/alumina at 480 to 700 K support platinum as a catalyst for this reversible reaction. The exact formation mechanism and performance of bare foil near 450 C were not verified; this is a verification limit, not a finding that platinum cannot catalyse HI formation.
-- [OpenStax catalyst energy profiles](https://openstax.org/books/chemistry-2e/pages/12-7-catalysis) and [primary iron ammonia-synthesis mechanism study](https://pubs.rsc.org/en/Content/ArticleLanding/2019/CP/C9CP01611B): alternative pathways can involve several steps; the iron study reports ten surface reactions and composition-dependent rates. This supports finding 2. The same-factor result at equilibrium remains correct.
-- [OpenStax Chemistry 2e, Chapter 13, exercises 25(b), 65 and 79](https://openstax.org/books/chemistry-2e/pages/13-exercises): the publisher gives Kc = 50.2 at 448 C for H2 + I2 forming 2HI. The design's 49 is 2.4% lower and is close to a textbook value near 450 C, as claimed.
-- [RSC Haber teaching resource](https://edu.rsc.org/resources/ammonia/17.article): confirms iron, the reversible nitrogen/hydrogen reaction and ordinary Haber conditions. The identical rigid, sealed, isothermal vessels have the same equilibrium composition; the narration already states that the uncatalysed wait is extremely long. No attempt-system error found beyond finding 2.
-
-Count: 2 findings (science 2, syllabus 0, screen 0, copy 0).
+Findings: 3 (science 3, syllabus 0, screen not checked, copy 0).

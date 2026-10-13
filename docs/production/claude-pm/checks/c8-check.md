@@ -23,4 +23,6 @@ Independent calculation using the NIST Shomate data for [ammonia](https://webboo
 
 Recomputed Q = 6.25, 256, 49, 16.333..., 12.25, 100 and 0.80, all rate ratios, conservation totals, concentration changes, dot counts, wrong-answer calculations and timing arithmetic. No numerical error found. The lesson deliberately excludes the site SO3 examples with inconsistent K = 270 and 280, and the CO + 3H2 example with K = 5.67 x 10^6. The requested site calculation 0.148^2 / (0.020 x 0.020) = 54.76 also checks.
 
+Revalidation of the same Revision 4 hash: Q values and rate ratios were independently recomputed again; 49/6.25 = 7.84, 49/256 = 0.19140625, 256/49 = 5.22449 and 49/(0.49/0.030) = 3. The stated Kp conversion gives Kc = 0.488210 and the ideal-gas pressure is 60.7626 atm. Recalculation from the linked NIST Shomate coefficients reproduces Kp = 1.845 x 10^-4 atm^-2 and Kc = 0.56285 at 673.15 K. The [official 2017 syllabus PDF](https://kiama-h.schools.nsw.gov.au/content/dam/doe/sws/schools/k/kiama-h/content/learning-at-our-school/chemistry-stage6-syllabus-pdf.pdf), page 50, confirms the ACSCH096 calculation and prediction scope. No findings change.
+
 Count: 0 findings (science 0, syllabus 0, screen 0, copy 0).

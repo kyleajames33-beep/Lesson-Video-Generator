@@ -1,0 +1,164 @@
+{
+  "title": "How does DNA copy itself so accurately?",
+  "subtitle": "A cell has to copy billions of DNA letters almost without error. How, and what happens to the original?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 8,
+  "lessonIntent": "Describe a DNA nucleotide, complementary and antiparallel base pairing and the template idea, explain the copying steps and semi-conservative replication, trace a short molecule into two labelled daughters, and qualify errors as rare, proofread and repaired, with a surviving error called a mutation.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before a cell divides, it has to copy all of its DNA: billions of letters, in your own cells, packed into a nucleus far smaller than a pinhead. Copy a book that long and the copy would drift. Yet your cells copy DNA almost perfectly. How, and what happens to the original?"
+      }
+    },
+    {
+      "id": "nucleotides",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "DNA is a long chain of small units called nucleotides. Each has three parts: a sugar called deoxyribose, a phosphate group, which holds phosphorus and oxygen atoms, and a nitrogenous base, the part that carries the letter. The sugars and phosphates link in a backbone, and the bases hang off it, in four kinds: A, T, C and G. The order of those letters is the information a cell stores."
+      }
+    },
+    {
+      "id": "pairing",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "DNA has two strands twisted around each other, a shape called a double helix. The backbones run on the outside, and the bases point inward and meet, but not at random. A always pairs with T, and C always pairs with G, because only those pairs fit together, like jigsaw pieces. This is complementary base pairing. Weak attractions called hydrogen bonds hold each pair: two between A and T, three between C and G. To remember the pairs: Apple in the Tree, Car in the Garage, in DNA."
+      }
+    },
+    {
+      "id": "antiparallel",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each sugar joins to the next phosphate on one particular side, so a strand has a start end and a finish end, like an arrow. The start is called the 5' end, said five prime, and the finish is the 3' end, said three prime. In a double helix the two strands point in opposite directions: one runs 5' to 3', its partner 3' to 5'. We call them antiparallel, like the two lanes of a road."
+      }
+    },
+    {
+      "id": "template",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Because A only pairs with T, and C only with G, one strand fixes the order of the other. If one strand reads A, T, C, G, its partner has to read T, A, G, C. So each strand holds the information to rebuild its partner. Used like this, it is called a template, a pattern to copy from. And because hydrogen bonds are weak, the strands can be pulled apart without breaking either backbone, which strong covalent bonds, where atoms share electrons, hold together."
+      }
+    },
+    {
+      "id": "copy-steps",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, an enzyme, a protein that speeds up a reaction, called helicase unwinds the helix and breaks the hydrogen bonds, at a point called the replication fork. Each original strand is now a template. Second, loose nucleotides in the cell pair with the exposed bases, A with T and C with G. Third, an enzyme called DNA polymerase joins each new nucleotide to the last with covalent bonds, building the new backbone."
+      }
+    },
+    {
+      "id": "semi-conservative",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now we have two new DNA molecules, called daughter molecules, each with one original strand and one new strand. That is why this is called semi-conservative replication. Semi means half, and conservative means kept. It could have gone another way: one molecule could keep both original strands, and the other be all new. It does not. The original is shared out, one strand to each. Half old, half new."
+      }
+    },
+    {
+      "id": "worked-molecule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's copy a short piece of DNA, four pairs of bases long. This time the top strand is drawn the other way round, with its 3' end on the left, and reads A, T, C, G. Its partner underneath, 5' to 3', reads T, A, G, C. Step one: the strands separate. Both are templates now, so we colour them blue, because they are original."
+      }
+    },
+    {
+      "id": "worked-bottom",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the top template. Its first base is A, so the new strand needs a T. Then T needs an A, C needs a G, and G needs a C. The new strand, in green, reads T, A, G, C, and it runs opposite to its template. Now turn the pair round, so the template has its 5' end on the left. The letters swap order too: the template now reads G, C, T, A, and the new strand reads C, G, A, T from its 3' end."
+      }
+    },
+    {
+      "id": "worked-top",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the bottom template, which has its 5' end on the left and reads T, A, G, C. T needs an A, A needs a T, G needs a C, and C needs a G. So the new top strand reads A, T, C, G, 3' end on the left, exactly like the original top strand."
+      }
+    },
+    {
+      "id": "worked-daughters",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now put the molecules together. Each daughter has one blue original strand and one green new strand, and both read exactly like the molecule we began with. Why? Each new strand has the same bases as the original partner of its template. Each template rebuilds its missing partner, and that is how the information survives."
+      }
+    },
+    {
+      "id": "errors-repair",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Copying is accurate, but not perfect. Occasionally a wrong nucleotide is added. DNA polymerase checks each base and can back up to remove a mistake, and repair proteins check the new strand afterwards, so almost every mistake is fixed. One that survives can become a mutation, a change in the base order."
+      }
+    },
+    {
+      "id": "errors-effects",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Many mutations have no effect, some harm the cell, and a few are useful. When that DNA is copied again, the changed base gets its own partner, so one new copy has a changed base pair and the other is normal. That changed pair then passes to every cell that divides from it. In a bacterium that splits in two, only one of the two new cells gets the changed pair. In a person, a body cell's mutation passes only to the cells made from it, and reaches children only if it is in a cell that makes gametes."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two questions. One: this DNA template strand is written 5' to 3' and reads T, G, C, C, A, T. Write the new strand built beneath it, base for base, and label both ends. Two: both strands of one DNA molecule carry a heavy tag. It is copied once, then each new molecule is copied once more. New strands are always built from light nucleotides, and no strand is ever broken down. For each of the four final molecules, say how many strands are heavy and how many light. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One. Pair each base with its partner. The template's 5' end is on the left, so the new strand's 3' end is on the left: A, C, G, G, T, A, from 3' to 5'. Read from its own 5' end, that is A, T, G, G, C, A. If you wrote A, T, G, G, C, A beneath the template from the left, the letters are the right ones, but they are in the wrong order beneath this template: that is how the new strand reads from its own 5' end, which is on the right. If you wrote U, that is RNA, and DNA uses T. If both strands have 5' on the left, they are not antiparallel."
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two. After the first copy there are two molecules, each with one heavy original strand and one light new strand. Copy those again, and each strand, heavy or light, is a template for a new light strand. So you end with two molecules that have one heavy and one light strand, and two with two light strands. If you said all four are partly heavy, remember there are only two heavy strands, and they never multiply."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Remember: half old, half new. In every round, each new DNA molecule gets one old strand, the one it was copied from, and one new strand. The old strand might itself have been made a round earlier. The very first strands never multiply: after two rounds, only two of the four molecules still hold one. Next time: how a cell shares its copied DNA between two new cells."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

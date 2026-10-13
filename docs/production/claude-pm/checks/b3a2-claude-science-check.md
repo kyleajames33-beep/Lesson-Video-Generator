@@ -36,3 +36,12 @@ Applied to `lessons/bio-m5-b03a2.md` (revision 4, 12 Oct).
 4. Finding 4 (cervix at term): asset brief plate 1 now reads "a narrow, long, closed cervical canal" with no "firm". Resolved.
 
 Word count after these changes: 1,179 narrated words (one more than revision 3), runtime near 9.3 minutes. No U+2014 in either file.
+
+## Codex check resolution (13 Oct, Claude)
+
+Codex `checks/b3a2-check.md` (2 science findings), both accepted and fixed in the design (Revision 5) and the recording:
+
+1. "No new follicle grows" overstated: follicles can still grow without ovulating. Scene brake now says "With less FSH and LH, no follicle matures enough to release an egg." Key note 1 matches. Visuals show the follicle staying short of ripening and the egg staying in it ("no egg released"); the attempt feedback label no longer says "no growing follicle". The explain-answer line "no follicles mature and no egg is released" was already accurate and is unchanged.
+2. "Milk production begins" after the placenta leaves: small amounts are secreted in late pregnancy. Scene milk-trigger now says "those levels fall, and milk production increases", and the label matches.
+
+Re-recorded only scenes brake and milk-trigger (take02, 698 characters, same voice and settings); the other 16 scenes reuse take 1 audio by hash. Practice hold set to 10 s. Runtime 8:42.

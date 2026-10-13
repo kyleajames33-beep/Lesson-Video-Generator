@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B4-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b4/lesson.json",
+  "lessonSha256": "61d5bf0dc738340584547605cf9627f91ff77887809cdcf8f6570eabc0012ead",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b4/lesson.production-brief.json",
+    "sha256": "96077f6d76afcfd2c1ca08ae0af34f783af09d738e9c1cf9f42bed9c131f19b0"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Before a cell divides, it has to copy all of its DNA: billions of letters, in your own cells, packed into a nucleus far smaller than a pinhead. Copy a book that long and the copy would drift. Yet your cells copy DNA almost perfectly. How, and what happens to the original?",
+      "hash": "ec3252e992bb",
+      "textSha256": "ec3252e992bbb848763c7429f95f6a063d161805f1b8908cb790cc786fd91477",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/hook.ec3252e992bb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/hook.ec3252e992bb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/hook.ec3252e992bb.generation.json",
+      "plannedRequestSha256": "f04eef08c07de1abc741c52591d11769487f1cc0ae43b18d65d52a4aa8c92347"
+    },
+    {
+      "id": "nucleotides",
+      "parentSceneId": "nucleotides",
+      "text": "DNA is a long chain of small units called nucleotides. Each has three parts: a sugar called deoxyribose, a phosphate group, which holds phosphorus and oxygen atoms, and a nitrogenous base, the part that carries the letter. The sugars and phosphates link in a backbone, and the bases hang off it, in four kinds: A, T, C and G. The order of those letters is the information a cell stores.",
+      "hash": "b14c6732ada3",
+      "textSha256": "b14c6732ada38d8913fc201bf02ce86545c014c4587c5d23b161de050c40628d",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/nucleotides.b14c6732ada3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/nucleotides.b14c6732ada3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/nucleotides.b14c6732ada3.generation.json",
+      "plannedRequestSha256": "d9de90b6ad94ee13a6bf374fc6a4c8aa7b945b5e1de5f0d8dc2711ee28961f74"
+    },
+    {
+      "id": "pairing",
+      "parentSceneId": "pairing",
+      "text": "DNA has two strands twisted around each other, a shape called a double helix. The backbones run on the outside, and the bases point inward and meet, but not at random. A always pairs with T, and C always pairs with G, because only those pairs fit together, like jigsaw pieces. This is complementary base pairing. Weak attractions called hydrogen bonds hold each pair: two between A and T, three between C and G. To remember the pairs: Apple in the Tree, Car in the Garage, in DNA.",
+      "hash": "17ff83021b57",
+      "textSha256": "17ff83021b571ce78ed312a97c0f72750011d836f695e6ee9e125be816b477c4",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/pairing.17ff83021b57.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/pairing.17ff83021b57.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/pairing.17ff83021b57.generation.json",
+      "plannedRequestSha256": "795f4b0141c80d0bb382c7b69b2cf1a07b918506f9ec9b6d610280f79e124680"
+    },
+    {
+      "id": "antiparallel",
+      "parentSceneId": "antiparallel",
+      "text": "Each sugar joins to the next phosphate on one particular side, so a strand has a start end and a finish end, like an arrow. The start is called the 5' end, said five prime, and the finish is the 3' end, said three prime. In a double helix the two strands point in opposite directions: one runs 5' to 3', its partner 3' to 5'. We call them antiparallel, like the two lanes of a road.",
+      "hash": "cf180412f80f",
+      "textSha256": "cf180412f80fec1c7453c043e0a0074891d58807d1a657325e620ef25e31083d",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/antiparallel.cf180412f80f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/antiparallel.cf180412f80f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/antiparallel.cf180412f80f.generation.json",
+      "plannedRequestSha256": "8f5c2615bd406a467c25e7779063f4c3e2ae95813619948826624cdb17b95d36"
+    },
+    {
+      "id": "template",
+      "parentSceneId": "template",
+      "text": "Because A only pairs with T, and C only with G, one strand fixes the order of the other. If one strand reads A, T, C, G, its partner has to read T, A, G, C. So each strand holds the information to rebuild its partner. Used like this, it is called a template, a pattern to copy from. And because hydrogen bonds are weak, the strands can be pulled apart without breaking either backbone, which strong covalent bonds, where atoms share electrons, hold together.",
+      "hash": "ece776b0b7cd",
+      "textSha256": "ece776b0b7cd046b1ad20402d06655c416d98467822bebd3a291945534331a5d",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/template.ece776b0b7cd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/template.ece776b0b7cd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/template.ece776b0b7cd.generation.json",
+      "plannedRequestSha256": "ba49671d94bcb1761182032114eb2f0c58bf4acc12856ee76eb2cd386e3b8ff0"
+    },
+    {
+      "id": "copy-steps",
+      "parentSceneId": "copy-steps",
+      "text": "First, an enzyme, a protein that speeds up a reaction, called helicase unwinds the helix and breaks the hydrogen bonds, at a point called the replication fork. Each original strand is now a template. Second, loose nucleotides in the cell pair with the exposed bases, A with T and C with G. Third, an enzyme called DNA polymerase joins each new nucleotide to the last with covalent bonds, building the new backbone.",
+      "hash": "78667a0d1256",
+      "textSha256": "78667a0d1256758c192ff5c38555231f7a885ea0979767f8ff424e289e9d42cb",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/copy-steps.78667a0d1256.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/copy-steps.78667a0d1256.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/copy-steps.78667a0d1256.generation.json",
+      "plannedRequestSha256": "c937ea0200bb73083ba5027595108a6175098e83c437061bcf9b7326fbbc2d09"
+    },
+    {
+      "id": "semi-conservative",
+      "parentSceneId": "semi-conservative",
+      "text": "Now we have two new DNA molecules, called daughter molecules, each with one original strand and one new strand. That is why this is called semi-conservative replication. Semi means half, and conservative means kept. It could have gone another way: one molecule could keep both original strands, and the other be all new. It does not. The original is shared out, one strand to each. Half old, half new.",
+      "hash": "63d9c60e1ce5",
+      "textSha256": "63d9c60e1ce5436ab768994fcd386d0fc22c8c42926177a981dd970ab1d3ffd7",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/semi-conservative.63d9c60e1ce5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/semi-conservative.63d9c60e1ce5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/semi-conservative.63d9c60e1ce5.generation.json",
+      "plannedRequestSha256": "3770718d227dd9197da3ff5607437b3aa79284cdb1923b44fc141f66186a4507"
+    },
+    {
+      "id": "worked-molecule",
+      "parentSceneId": "worked-molecule",
+      "text": "Let's copy a short piece of DNA, four pairs of bases long. This time the top strand is drawn the other way round, with its 3' end on the left, and reads A, T, C, G. Its partner underneath, 5' to 3', reads T, A, G, C. Step one: the strands separate. Both are templates now, so we colour them blue, because they are original.",
+      "hash": "f8be464bc4cc",
+      "textSha256": "f8be464bc4cc6777c7895b3721ee7afeef87f10cdd7869dda4282c126e86e178",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-molecule.f8be464bc4cc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-molecule.f8be464bc4cc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-molecule.f8be464bc4cc.generation.json",
+      "plannedRequestSha256": "932881efb3a737a123c57126e69aa9a30d8a23f9aa65079423ff6b6994032602"
+    },
+    {
+      "id": "worked-bottom",
+      "parentSceneId": "worked-bottom",
+      "text": "Start with the top template. Its first base is A, so the new strand needs a T. Then T needs an A, C needs a G, and G needs a C. The new strand, in green, reads T, A, G, C, and it runs opposite to its template. Now turn the pair round, so the template has its 5' end on the left. The letters swap order too: the template now reads G, C, T, A, and the new strand reads C, G, A, T from its 3' end.",
+      "hash": "86c3f8f68974",
+      "textSha256": "86c3f8f68974bbfef8972efe4115b836ef834102f3f0432262b9e8aec821bbd0",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-bottom.86c3f8f68974.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-bottom.86c3f8f68974.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-bottom.86c3f8f68974.generation.json",
+      "plannedRequestSha256": "247a89d24f385faa11a264c1b6acf8d8f12d378cc9e2c627051adf551b6a2789"
+    },
+    {
+      "id": "worked-top",
+      "parentSceneId": "worked-top",
+      "text": "Now the bottom template, which has its 5' end on the left and reads T, A, G, C. T needs an A, A needs a T, G needs a C, and C needs a G. So the new top strand reads A, T, C, G, 3' end on the left, exactly like the original top strand.",
+      "hash": "3027d6cea776",
+      "textSha256": "3027d6cea7768d0fecb4836dd2e820f8403fb110d5b412067e2814535f389550",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-top.3027d6cea776.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-top.3027d6cea776.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-top.3027d6cea776.generation.json",
+      "plannedRequestSha256": "6dde49cfa84619ba543658d6a6713d906bafc9f115917ae4cde20de38fae3717"
+    },
+    {
+      "id": "worked-daughters",
+      "parentSceneId": "worked-daughters",
+      "text": "Now put the molecules together. Each daughter has one blue original strand and one green new strand, and both read exactly like the molecule we began with. Why? Each new strand has the same bases as the original partner of its template. Each template rebuilds its missing partner, and that is how the information survives.",
+      "hash": "3d3aa38ef04b",
+      "textSha256": "3d3aa38ef04b4b80009398abd8bf75b0f7514e2521fc7f2cae60bad98ce6d609",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-daughters.3d3aa38ef04b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-daughters.3d3aa38ef04b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/worked-daughters.3d3aa38ef04b.generation.json",
+      "plannedRequestSha256": "d6b5f1042198da7f2c28128be65373ff2fe35531774482e93254c32960eb6794"
+    },
+    {
+      "id": "errors-repair",
+      "parentSceneId": "errors-repair",
+      "text": "Copying is accurate, but not perfect. Occasionally a wrong nucleotide is added. DNA polymerase checks each base and can back up to remove a mistake, and repair proteins check the new strand afterwards, so almost every mistake is fixed. One that survives can become a mutation, a change in the base order.",
+      "hash": "95cd44c6771a",
+      "textSha256": "95cd44c6771a56483c2f26f3bd39ab42b3c9ed2ea27a147858e736fb8137d3d9",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/errors-repair.95cd44c6771a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/errors-repair.95cd44c6771a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/errors-repair.95cd44c6771a.generation.json",
+      "plannedRequestSha256": "bc52d2e6d239c24c082cc3c3486f5db10867e42c94075d952bcc3cf963ec57f7"
+    },
+    {
+      "id": "errors-effects",
+      "parentSceneId": "errors-effects",
+      "text": "Many mutations have no effect, some harm the cell, and a few are useful. When that DNA is copied again, the changed base gets its own partner, so one new copy has a changed base pair and the other is normal. That changed pair then passes to every cell that divides from it. In a bacterium that splits in two, only one of the two new cells gets the changed pair. In a person, a body cell's mutation passes only to the cells made from it, and reaches children only if it is in a cell that makes gametes.",
+      "hash": "200b95531050",
+      "textSha256": "200b95531050affe8d2f860120cece0a70e98b098293585203ed14a00c90e8b4",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/errors-effects.200b95531050.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/errors-effects.200b95531050.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/errors-effects.200b95531050.generation.json",
+      "plannedRequestSha256": "a14a79c1772204a1fee244478d5ce609df48b466a09ccf80e83be528d147fd6f"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two questions. One: this DNA template strand is written 5' to 3' and reads T, G, C, C, A, T. Write the new strand built beneath it, base for base, and label both ends. Two: both strands of one DNA molecule carry a heavy tag. It is copied once, then each new molecule is copied once more. New strands are always built from light nucleotides, and no strand is ever broken down. For each of the four final molecules, say how many strands are heavy and how many light. Pause here to answer.",
+      "hash": "2f37db0730d7",
+      "textSha256": "2f37db0730d7e538ea0f33a2099a79d34b9fe500d184798465a22fde50ee3296",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/attempt.2f37db0730d7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/attempt.2f37db0730d7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/attempt.2f37db0730d7.generation.json",
+      "plannedRequestSha256": "d63618d422ae481eea13abe2ddd8f3eabbfb6273364cddf100948187915b0cd7"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One. Pair each base with its partner. The template's 5' end is on the left, so the new strand's 3' end is on the left: A, C, G, G, T, A, from 3' to 5'. Read from its own 5' end, that is A, T, G, G, C, A. If you wrote A, T, G, G, C, A beneath the template from the left, the letters are the right ones, but they are in the wrong order beneath this template: that is how the new strand reads from its own 5' end, which is on the right. If you wrote U, that is RNA, and DNA uses T. If both strands have 5' on the left, they are not antiparallel.",
+      "hash": "e35f351ee0b8",
+      "textSha256": "e35f351ee0b8cd156e99a29663d3241530fd4b088c0183659b41fbaefea99289",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/feedback-one.e35f351ee0b8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/feedback-one.e35f351ee0b8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/feedback-one.e35f351ee0b8.generation.json",
+      "plannedRequestSha256": "36da9789d2ad3a0e4650cea0cbd3dd2eee919725fba725bc99807b3f0fa44811"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two. After the first copy there are two molecules, each with one heavy original strand and one light new strand. Copy those again, and each strand, heavy or light, is a template for a new light strand. So you end with two molecules that have one heavy and one light strand, and two with two light strands. If you said all four are partly heavy, remember there are only two heavy strands, and they never multiply.",
+      "hash": "9c3a83bd3a95",
+      "textSha256": "9c3a83bd3a95cc4ba95b9983f96b2f34f4af6ec9c7da6ca84ff5881b4cc0eec7",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/feedback-two.9c3a83bd3a95.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/feedback-two.9c3a83bd3a95.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/feedback-two.9c3a83bd3a95.generation.json",
+      "plannedRequestSha256": "0e283824a10733037a11f900fb81acaf85668ccc39d61d3779e9dde467f0aaa2"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Remember: half old, half new. In every round, each new DNA molecule gets one old strand, the one it was copied from, and one new strand. The old strand might itself have been made a round earlier. The very first strands never multiply: after two rounds, only two of the four molecules still hold one. Next time: how a cell shares its copied DNA between two new cells.",
+      "hash": "9ecfdb96caca",
+      "textSha256": "9ecfdb96caca60dda793aa31ce074ade2ef34dac5f3095374fdd5837a6bcc8d6",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/memory.9ecfdb96caca.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/memory.9ecfdb96caca.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/memory.9ecfdb96caca.generation.json",
+      "plannedRequestSha256": "ef14f7917f92d81ee1dc866cb6226ba91bbbdf9c0ab4449cefa950b4dfec386f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B4-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

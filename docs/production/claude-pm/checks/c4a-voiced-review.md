@@ -1,0 +1,55 @@
+# C4a exact voiced preview review (student learning review)
+
+Composition: Explainer-chem-m5-c04a (squeezing a gas mixture at equilibrium). Reviewer: independent, did not build it. Method: narration and word timings from `lessons/c4a/measured/lesson.json` (voiced take, attempt hold of 300 frames with "Pause here to answer." and a 10 s countdown); 119 stills rendered at cue words, mid-scene, scene ends and inside the attempt hold, all viewed. Source and still observations only. Motion at playback speed and human listening are NOT covered and stay pending.
+
+Scene starts (frames): hook 0, syringe-equilibrium 1057, squeeze-doubles 1792, joining-gains-more 2419, response 3180, new-equilibrium 4340, graphs 5209, fewer-gas-particles 5709, equal-counts 7082, solids 7915, squeeze-or-argon 8650, memory-aid 10244, attempt 10768 (narration ends f12204, scene ends f12540), feedback-one 12540, feedback-two 13664, decision-rule 14454, key-notes 15539 (ends 16295).
+
+## What works (keep)
+
+- Hook (f0 to f1057): the painted syringe with NO2 and N2O4 labelled as the narrator names them (f60, f250), the equation card, a "imagine an instant squeeze" chip (f450 to f1040) that settles the slow-versus-instant question the science check raised, the colour slider darkening then easing back with "darker at once" and "settles darker than the start" (f760 to f900), and the three handwritten questions (f1040). One clear question.
+- Worked example (f1057 to f4340): one syringe, one rate-bar picture and one growing table carry the whole derivation. Values appear as spoken: 8 and 4 (f1300 to f1450), both rates 32 and "equal" with "net change 0" (f1560 to f1780), 8 to 16 and 4 to 8 on "sixteen" (f2050), "no reaction yet, but the brown is already darker" (f2200 to f2330), "joining: 2 NO2 must meet" with two converging ticks (f2530), 32 x 2 x 2 = 128 on "twice over" (f2700 to f2850), 32 x 2 = 64 on "sixty-four" (f2960), the ringed 128 on "joining gains more" (f3100). The "in this simple model (one-step reactions)" chip (f3100 on) keeps the necessary condition in view.
+- Response and new equilibrium (f3180 to f5190): "more join than split" arrow, "2 NO2 join into 1 N2O4: fewer gas particles" (f3450), the colour thumb easing back with "fading", 14 and 9 (f3640 to f3850), "128 x 14/16 x 14/16 = 98" and "64 x 9/8 = 72" on the matching words (f3850 to f4050), the gap shrinking to 26 (f4330), then 78 and 78 "equal", 12.5 with the 8, 12.5, 16 number line on "between the eight ... and the sixteen" (f4600 to f4800), "shift right" and "it only partly cancelled the squeeze" (f5050 to f5190). Numbers agree with narration throughout (98, 72, 78, 12.5).
+- Graphs (f5209 to f5649): concentration and rate graphs build in step with "the moment of the squeeze", "both rates step up" and "joining steps up more" (f5230 to f5480).
+- Rule scenes (f5709 to f7082): the 128 versus 64 bars stay on screen while "joining depends on 2 gas particles, splitting on 1" is written (f5820 to f5900); the N2 + 3H2 case counts 1, 3 and 2 (f6480) and an expansion mini-case shows "joining 32 x 1/2 x 1/2 = 8, splitting 32 x 1/2 = 16, toward more gas" (f7000), so "expanding does the opposite" is shown, not just said.
+- Equal counts and solids (f7082 to f8650): H2 + I2 with 2 against 2, both bars "x 4" and "equal", "darker, but no shift" (f7250 to f7900); the solid carbon box "squeeze, same size" (f8150) and 1 versus 2 gas circles with "toward the side with fewer gas particles" (f8450 to f8600). These stop "pressure always shifts right".
+- Squeeze or argon (f8650 to f10244): two matching panels with the same pressure gauge at 2, the left one with the crowding numbers 16 and 8 and the jump in rates, the right one "fixed volume" with 8 and 4 unchanged and "no shift" (f8850 to f10150). The separation of total pressure from crowding is visible, with the gauge as the shared landmark.
+- Memory aid (f10244 to f10768): short card, the condition tag "gases only, temperature steady. Squeeze: volume changes. Argon: volume fixed." (f10560), "It gives the direction only", and the reason underlined (f10650).
+- Attempt (f10768 to f12540): equation, legend for NO, O2, NO2 colours, "temperature steady, no gas escapes" and "hot cylinder: no N2O4" chips (f11500), both questions visible together from f11900, "Pause here to answer." in handwriting with a ring countdown that reads 9 at f12250, 8 at f12300, 4 at f12400 and 1 at f12500, running to the end of the scene. Question wording matches narration. Meets the 10 s rule. The new system breaks the worked-example colour pattern on purpose (brown product on the side with fewer gases), so it tests the reason, not the colour.
+- Feedback (f12540 to f14454): item 1 counts 3 against 2, bars show forward gaining more, "net reaction goes right", "colour over time" graph jumps then keeps rising with a dashed "syringe: fades" contrast (f12700 to f13500). Item 2 shows each gas "same", "volume not changed: each gas is as crowded as before", the gauge at 2, and a crossed-out "pressure doubled, so it shifts right" chip with a one-line correction (f14020 to f14380).
+- Decision rule and key notes: three numbered cards build on the three spoken cases (f14470 to f15250), with a small picture per card and "Next: catalysts" (f15420). Key notes appear after a hold with five bullets, the memory aid, and "Pause the video if you need more time to copy" (f15620 to f16290).
+- No em dashes in the scene source or in the recorded text (grep clean).
+
+## Findings
+
+### BLOCKER
+None.
+
+### SHOULD FIX
+
+1. **Feedback one, f13500 to f13660: the two wrong-answer chips collide with the rate-bar graph and its labels.** At f13500 the "the brown always fades" chip crosses the baseline and the word "forward" of the bar chart. At f13600 the second chip "shifts toward more gas particles" lies across the "forward" and "reverse" labels, and the grey line "A squeeze helps the reaction that depends on more." runs on top of "rate (made-up units)" so both are unreadable. The dashed "syringe: fades" label also sits on top of the "start" axis label (f13500 to f13600). The second chip and the grey line are never spoken. Fix: park wrong-answer chips in the empty lower right (below the "in this simple model" chip, about y 440 to 500 of 540) or fade the bar chart out when the chips appear (about f13440); drop or narrate the second chip; move "syringe: fades" up the graph beside the dashed curve instead of onto the axis.
+2. **Feedback one, f13030: "keeps darkening as more N O two forms, because nothing here removes the N O two."** This is still in the recorded narration. The reverse reaction does remove NO2 (the C4a check, finding 3, and the C3 principle "both reactions keep going"). A student who learned "joining and splitting both continue" hears a contradiction. Fix when next narration is re-recorded: "keeps darkening as more N O two forms each second than is used up, until the rates match." Only the on-screen graph label needs no change. Not worth re-voicing alone if the rest passes, but flag it for the science owner.
+3. **Attempt, f12144: the spoken cue is "Pause the video if you'd like more time."** The owner rule is a spoken "Pause here to answer." followed by the 10 s countdown. The screen already shows "Pause here to answer." with the countdown from about f12240, so a student sees the right thing, but the words they hear differ and the voice finishes about 3 s before the prompt appears. Fix: either re-record that one sentence as "Pause here to answer." (a short clip) or accept as is and say so in the board.
+4. **Counting rule, f6480 to f7070: crowded and competing items.** At f6480 the line "left: 1 + 3 = 4 gas particles, right: 2" touches the "in this simple model" chip above it and "Count only the gases" below it, and from f7000 the screen carries the NO2 card, the ammonia card, the expansion syringe with two formulas and a left arrow, and three handwritten captions at once. Each appears on its cue, but nothing is cleared. Fix: grey or fade the NO2 line and the "joining depends on more gas particles, so it gains more" sentence once the ammonia equation appears (about f6300), and add about 12 px of space around the "left: 1 + 3 = 4" line.
+
+### NICE TO HAVE
+
+1. Hook, f640: the colour slider thumb is already at the dark end on "Watch the colour" (f622), before "It darkens at once" (f662). Start the move about 1 s later.
+2. Joining scene, f3170: the green "gains more" label sits against the bottom edge of the equation card and under "reverse = splitting". Move it left or drop it (the ring and the bars already say it).
+3. New equilibrium, f4470: the counter still shows 14 and 9 while the voice says "twelve and a half" (the 12.5 appears by f4600). A lag of about 0.7 s.
+4. Graphs, f5230 to f5600: the two concentration lines (brown for NO2, grey for N2O4) and the rate lines have no direct labels. Add "NO2" and "N2O4" at the line ends (and the 9.8 level) so the slide stands alone.
+5. Argon panel, f9150 to f10150: argon is drawn as white circles close to the white N2O4 sticks, and there is no key. Add a small "argon" label or a distinct grey on the argon circles.
+6. Solids, f7950: the left half of the screen is empty for the first 6 seconds, and "pure liquids" has no picture. Acceptable as a reading hold.
+7. Memory-aid card and decision-rule scenes have large empty lower halves (f10450 to f10750, f14470 to f15250). Acceptable as short reading holds.
+8. Feedback one, f12850: "net reaction goes right" touches the right edge of the cylinder. Shift down about 15 px.
+
+## Student learning trace (entry knowledge: C1, C2, C3)
+
+- One question carries the video: why is the gas darker after a squeeze, why does it fade, and does every pressure rise do this. The same table and rate-bar picture used in C3 is reused with a new cause (crowding of gases), so the pattern transfers.
+- Causes are shown before the rule: each gas twice as crowded, joining needs two meetings so gains twice over, then the count of gas particles is named as the shortcut, with N2 + 3H2, H2 + I2 and C(s) + CO2 as new cases. Numbers are labelled made-up and the "simple model" condition is visible.
+- Misconception control: the equal-count case, the solids case and the argon panel stop "pressure always shifts right" and "pressure up means more crowded". The attempt tests exactly these (different colour pattern, argon at fixed volume), and the feedback reasons from the same picture.
+- Reading load: moderate on the table scenes but each row arrives with its number; heavier on the rule scene after f6480 (finding 4). Attempt shows all question demands and conditions together.
+- Memory aid: supports a new case (the attempt), carries its condition, and is placed after the explanation.
+
+## Verdict
+
+**Fix first (small).** No blockers. SHOULD FIX 1 (feedback-one chips over the graph) and 4 (rule scene clutter) are scene-source edits. SHOULD FIX 2 and 3 touch recorded narration and are the owner's call. The attempt meets the 10 s countdown and shows every condition. Playback-speed motion and human listening remain pending.

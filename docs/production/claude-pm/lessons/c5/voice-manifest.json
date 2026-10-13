@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C5-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c5/lesson.json",
+  "lessonSha256": "493ee7a291e25eec5d570873f35659b6375b76e5491717fabdc4caf53d1d5060",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c5/lesson.production-brief.json",
+    "sha256": "1f88dac230a4a07de4b534583d1447c972e812765df72a99df710f719249be6c"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here is the iron thiocyanate tube from earlier, settled at ten units of iron three plus, ten of thiocyanate and ten of the red ion. We add more iron, and it settles again, at fifteen, eight and twelve. Every amount has changed. Yet one thing has not. Take the red ion, and divide by the iron times the thiocyanate. Ten over ten times ten is a tenth. Twelve over fifteen times eight is also a tenth. So what is this ratio, why does it stay put, and how do we write it for any reaction?",
+      "hash": "798966bfe04e",
+      "textSha256": "798966bfe04e33d7e4c45f0e25c5ffe714080bd4a74729b2d53e7a10352d6997",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/hook.798966bfe04e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/hook.798966bfe04e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/hook.798966bfe04e.generation.json",
+      "plannedRequestSha256": "29463ab814d90e8929a86260add8db82d3cad527155ec0e64edbec3ca3e823ef"
+    },
+    {
+      "id": "rates-equal",
+      "parentSceneId": "rates-equal",
+      "text": "We write a species in square brackets for its amount per litre. Now remember the rates. In this model, joining runs at point three times the iron times the thiocyanate, and splitting runs at three times the red ion. At equilibrium the rates are equal, so point three times iron times thiocyanate equals three times the red ion.",
+      "hash": "e41daf13e664",
+      "textSha256": "e41daf13e6642a46c44e13637a65104e3dac5062fb2e1b9f6afaa1f3a00df39a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/rates-equal.e41daf13e664.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/rates-equal.e41daf13e664.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/rates-equal.e41daf13e664.generation.json",
+      "plannedRequestSha256": "ff046ee1e8c3f574f59bdc1dab3459db3eafcf66378316ee3c1295cb635f2de8"
+    },
+    {
+      "id": "ratio-name",
+      "parentSceneId": "ratio-name",
+      "text": "Divide both sides by three, and by the iron times the thiocyanate. The red ion over iron times thiocyanate equals point three over three, a tenth. Those two numbers are fixed for this reaction at one temperature, so the ratio comes out the same whenever the rates are equal. Chemists give that value a name, the equilibrium constant, K, also written Keq.",
+      "hash": "105b5809b21c",
+      "textSha256": "105b5809b21c24dbc1106a162c7a3b5eceb9d3df16eb061e0d0caf1695a8dfd0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/ratio-name.105b5809b21c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/ratio-name.105b5809b21c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/ratio-name.105b5809b21c.generation.json",
+      "plannedRequestSha256": "02d73f3e48a91135b98f157b208855239f8df0e9734654b1b54928d7383d6804"
+    },
+    {
+      "id": "coefficient-power",
+      "parentSceneId": "coefficient-power",
+      "text": "Now the hydrogen iodide tube from the catalyst video, settled at two, two and fourteen, with both rates a fifth. In this model, joining needs a hydrogen and an iodine to meet, so we write it as a number times hydrogen times iodine. With hydrogen and iodine both at two, a fifth means that number is point oh five. Splitting needs two hydrogen iodide to meet. Like the nitrogen dioxide pairs in the squeeze video, that makes the rate depend on hydrogen iodide squared. With fourteen of them and a fifth, its number is point oh five over forty-nine. Set the rates equal, and hydrogen iodide squared over hydrogen times iodine equals forty-nine. The coefficient two has become a power of two.",
+      "hash": "31449acdeffc",
+      "textSha256": "31449acdeffce2c78b4299f2dbd4f7409e03e303e285f99cf6fe5d4cf01d5422",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/coefficient-power.31449acdeffc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/coefficient-power.31449acdeffc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/coefficient-power.31449acdeffc.generation.json",
+      "plannedRequestSha256": "67acf5f00934861094426c5fbf475426316e7678e365f7d01d93293652c9505f"
+    },
+    {
+      "id": "any-equation",
+      "parentSceneId": "any-equation",
+      "text": "We have shown why for two reactions. Real reactions are often several smaller steps, but measurements on many reactions give the same pattern, so we use it as the rule for any balanced equation, for the equation exactly as given. Products go on top, reactants underneath, and each concentration is raised to the power of its coefficient. Our settled tube has two, two and fourteen, and fourteen squared over two times two is a hundred and ninety-six over four, forty-nine. A tube that started with more iodine than hydrogen settles at two, eight and twenty-eight, and twenty-eight squared over two times eight is seven hundred and eighty-four over sixteen, forty-nine again. Leave the power off and you get three and a half, then one point seven five, so the ratio no longer stays put.",
+      "hash": "2fe23747d861",
+      "textSha256": "2fe23747d8614efff0be9e23d7fa34f546e7fd601079ccf30b57bcd0f7a4f0c9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/any-equation.2fe23747d861.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/any-equation.2fe23747d861.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/any-equation.2fe23747d861.generation.json",
+      "plannedRequestSha256": "11e7a2d0736fe541b5a23068ace6d98e5c5442c1837015813d9f92388846227b"
+    },
+    {
+      "id": "from-scratch",
+      "parentSceneId": "from-scratch",
+      "text": "Let us write an equilibrium expression, the ratio for one equation, from scratch, using the cobalt tube. The pink cobalt water ion and chloride ions make the blue cobalt chloride ion and water. First, the states. Species in solution have concentrations that change, so they go in. The water is a liquid, the solvent, so it stays out. Second, products over reactants. Third, each concentration to the power of its coefficient, so chloride, with a four in front, is raised to the fourth power. The square brackets go around the whole ion, including its own brackets and charge.",
+      "hash": "1173cc15221b",
+      "textSha256": "1173cc15221bde9e2563586da8f8467314c83c530c714e145628326903491c27",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/from-scratch.1173cc15221b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/from-scratch.1173cc15221b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/from-scratch.1173cc15221b.generation.json",
+      "plannedRequestSha256": "500c6ba524233771fe10098a7a325e3078a4414fc804de88d4ed60f017a688df"
+    },
+    {
+      "id": "left-out",
+      "parentSceneId": "left-out",
+      "text": "Why leave out the solvent, or a solid? Because their concentration does not change while the reaction runs. Remember the rate equations: a number times the concentrations. If one concentration never changes, it is just another fixed number, so it folds into the fixed numbers we already have, and K already includes it. We met this with carbon in the squeeze video, which squeezing could not make any more crowded. So for carbon plus carbon dioxide making two carbon monoxide, K is the carbon monoxide squared over the carbon dioxide, and the carbon never appears. If water is a gas, as steam, its concentration changes, so it counts.",
+      "hash": "4b578282c598",
+      "textSha256": "4b578282c598888b09ea43e5021dd5673cf600c53e81f19737841ceeb4e65d9e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/left-out.4b578282c598.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/left-out.4b578282c598.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/left-out.4b578282c598.generation.json",
+      "plannedRequestSha256": "20b2fa05b7a976f3f716dc242e2ee7fef4848825659f093a5b45b0e32facc489"
+    },
+    {
+      "id": "size-of-k",
+      "parentSceneId": "size-of-k",
+      "text": "What does the number tell us? K is products over reactants, so the bigger it is, the more the settled mixture leans towards products. As a rough guide, a K above about a thousand means the mixture at equilibrium is mostly products, and a K below about a thousandth means it is mostly reactants. In between, both are present in measurable amounts. It is only a rough guide, because it depends on the equation. Hydrogen and iodine at four hundred and fifty degrees have a K of forty-nine: in between, so our tube holds a lot of hydrogen iodide, with some hydrogen and iodine left. Nitrogen and oxygen making nitric oxide have a K near ten to the minus thirty at room temperature, so almost no nitric oxide forms. Copper ions with plenty of ammonia make a deep blue ion with a K near ten to the thirteen, so almost all the copper ends up in that ion. K tells you where the mixture settles, not how fast it gets there.",
+      "hash": "b565304c4d22",
+      "textSha256": "b565304c4d22927c80c2c3a708325e67d50e08fca41a994047d2e046ca2d863a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/size-of-k.b565304c4d22.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/size-of-k.b565304c4d22.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/size-of-k.b565304c4d22.generation.json",
+      "plannedRequestSha256": "3c1f32153e404b4597dfb95f1fb32b6c1714a92e0c8b706d4872aa577cc8de52"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here is a shortcut for writing any expression. Products over reactants, coefficients become powers, pure solids, a pure liquid and the solvent drop out.",
+      "hash": "f9e87ea888ce",
+      "textSha256": "f9e87ea888cef001cfd095bb938dab79c32fa89428bc35492f7f4a9e0a5db1a5",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/memory-aid.f9e87ea888ce.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/memory-aid.f9e87ea888ce.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/memory-aid.f9e87ea888ce.generation.json",
+      "plannedRequestSha256": "973f83516d7c37635e7b9438698d38bf4cd01bf9fe91ecc98dde071b2157c846"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Two settled mixtures, each at a steady temperature. One: in dilute aqueous solution, copper two plus ions and ammonia make a deep blue ion. Write the equilibrium expression. Two: a made-up reaction in dilute aqueous solution, where A and B make C and D, each with a one in front. Write the expression. We start with equal concentrations of A and B, and no C or D. In this question K is four. What does that tell you about the settled mixture? Pause here to answer.",
+      "hash": "820f9eb2249d",
+      "textSha256": "820f9eb2249d787f8e72f78e671908d7210af87a1a6f50412cb1f3f9276023e8",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/attempt.820f9eb2249d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/attempt.820f9eb2249d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/attempt.820f9eb2249d.generation.json",
+      "plannedRequestSha256": "4c31a04d37b2f6f6051278a84c086b6fb080500410a7b4210414df4a8bae3247"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One. Products on top, reactants underneath. The new ion goes on top. Underneath goes the copper ion times the ammonia to the power of four, because the coefficient four becomes a power. If you wrote four times the ammonia, remember a coefficient is a power, not a multiplier. If you added the concentrations underneath, remember joining needs the particles to meet, so the counts multiply.",
+      "hash": "1b811ef8c342",
+      "textSha256": "1b811ef8c342135a0149472e3ef1d42a82c67c3e781134df450bdde23938f23b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/feedback-one.1b811ef8c342.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/feedback-one.1b811ef8c342.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/feedback-one.1b811ef8c342.generation.json",
+      "plannedRequestSha256": "3c8efdc3ef307764b6c51df0c8b20d756cf4b04313d357c0b995acca36887bf0"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two. The products go on top, C times D. Underneath go the reactants, A times B. We started with only A and B, in equal amounts. A K of four works out to about two thirds of the A reacting, so the settled mixture holds measurable amounts of all four, not almost all products.",
+      "hash": "eabfeace8e28",
+      "textSha256": "eabfeace8e28598d8ce3bc867e4e6c1f0707a0a023cbf207bfbef14eee946d5c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/feedback-two.eabfeace8e28.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/feedback-two.eabfeace8e28.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/feedback-two.eabfeace8e28.generation.json",
+      "plannedRequestSha256": "1022e9270f7a7ea978da20b0ca358760a433cdae580fca10e1c821cb82595f7f"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question gives an equation, write products over reactants, give each concentration the power of its coefficient, and leave out pure solids, a pure liquid and the solvent. When it gives you K, read its size first, as a rough guide: above about a thousand, mostly products, below about a thousandth, mostly reactants, and in between, both in measurable amounts. Next: when you only know the starting amounts, how do you find the settled mixture?",
+      "hash": "695b93890087",
+      "textSha256": "695b938900872a4be773da9bc9b1387c0da679ee8ec608108396a642297d1573",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/decision-rule.695b93890087.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/decision-rule.695b93890087.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/decision-rule.695b93890087.generation.json",
+      "plannedRequestSha256": "beadb272e162b6c43ec79387185180f5b56bf8a3322565dc79eb1386d5522e1e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C5-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

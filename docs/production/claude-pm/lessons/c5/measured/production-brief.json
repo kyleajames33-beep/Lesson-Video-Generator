@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c5/measured/lesson.json",
+    "lessonSha256": "42651cb26c1e53296def03ddfbdefa8c78f8b32f177d1bbee3cd5ac5fcd49556"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C4B and Year 11: dynamic equilibrium means equal non-zero rates in a closed system; each rate depends on how often the reacting particles meet; a disturbance takes the mixture to a new settled mixture with different amounts; the C3 iron thiocyanate and cobalt tubes and the C4 hydrogen and iodine tube; pure solids do not count in a squeeze (C4A); concentration is amount per volume; coefficients count particles in a balanced equation; state symbols. Nothing about K, Q or ICE tables is assumed.",
+    "startsWith": "The iron thiocyanate tube settled at 10, 10, 10 and again at 15, 8, 12 after more iron is added, where every amount has changed but one ratio has not.",
+    "stopsAfter": "Stating that a fixed-temperature equilibrium has a constant concentration ratio and naming it K; writing the expression for a homogeneous solution reaction (and gas cases) from a balanced equation, with coefficients as powers and pure liquids and solids left out; reading a large, small or middling K for a stated reaction. No calculation of K from data, no ICE tables, no Q, no equation reversal or scaling, no temperature dependence, no Ka or Ksp.",
+    "nextLesson": "C6: when only the starting amounts are known, finding the settled mixture and K with an ICE table (the method is not named in this video)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c05.md"
+  ],
+  "teaching": {
+    "task": "Explain why the concentration ratio of a settled mixture stays constant, write the equilibrium expression for a balanced equation, and read the size of K.",
+    "causalExplanation": "Each rate is a fixed number times the concentrations of the particles that must meet, and at equilibrium the two rates are equal, so dividing both sides leaves a ratio of fixed numbers that holds at one temperature. This ratio is K. When a species has a coefficient above one, that many particles must meet, so its concentration appears that many times over, which becomes a power. A pure solid or a solvent has a concentration that does not change, so it folds into the fixed numbers and is left out. K is products over reactants, so a large K means the settled mixture leans to products, and it says where the mixture settles, not how fast.",
+    "conversationalApproach": "Opens on the iron tube where every amount changes but one ratio does not, derives the ratio from equal rates on two rate models, tests the product-with-powers form against two mixtures, then writes an expression from scratch for the cobalt tube, explains the left-out solid and solvent, reads K on a number line, and ends with an unseen copper ammonia and made-up A + B attempt.",
+    "openingDecision": "When a settled mixture changes all its amounts, what stays the same, and how do you write it for any reaction?",
+    "understandingCheck": "Write the equilibrium expression for Cu2+(aq) + 4NH3(aq) = [Cu(NH3)4]2+(aq) in dilute aqueous solution, and for A(aq) + B(aq) = C(aq) + D(aq) say what K = 4 tells you about a mixture that starts with equal A and B and no C or D.",
+    "curriculumScope": "Deduce school concentration expressions for homogeneous solution reactions and read the magnitude of the equilibrium constant (Module 5). Calculating K from data, ICE tables, Q, reversing or scaling equations, temperature dependence of K, Ka and Ksp are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the C3 iron and cobalt tubes and the C4 hot H2 + I2 tube (coded or painted) with C2 to C4B rate bars, a coded expression builder, a fraction bar with a same value tag, and a large versus small K number line. Colour key: Fe3+ pale yellow, SCN- grey, FeSCN2+ red, forward blue, reverse amber, equal teal.",
+    "transitionPlan": "The iron tube shrinks to the corner for the rate bars; the same board carries the divide-both-sides step into the named K; the hot H2 + I2 tube replaces the iron tube for the power of two; the cobalt equation strip fills the board for the from-scratch stages; the beaker and carbon views replace it for the left-out scene; the number line draws on for the size of K; the attempt board removes the aids; the number line returns in the feedback; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "C3 iron thiocyanate tube (coded or painted) with three dot counts and a swatch strip, then two coded fractions and a dashed same value line",
+      "teachingReason": "Poses the puzzle on a tube the learner already knows: every amount changes but one ratio does not",
+      "narrationCue": "Here is the iron thiocyanate tube from earlier / Every amount has changed / Ten over ten times ten is a tenth / how do we write it for any reaction",
+      "motionPurpose": "Seven pale yellow dots drop in and the counts slide from 10, 10, 10 to 15, 8, 12, then two fractions fill with the spoken numbers and a dashed line joins the two matching 0.1 values",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the made-up numbers chip appears; seven iron dots drop in and the counts slide to 15, 8, 12 with a bracket \"every amount has changed\"; a fraction bar draws with the red ion on top; the first mixture drops in and \"= 0.1\" writes; the second drops in and \"12 / 120 = 0.1\" writes; a dashed \"same value\" line joins the two; a pen ring lands on the fraction on \"this ratio\"",
+      "motionTools": [
+        "DrawPath fraction",
+        "particle drop",
+        "NumberTicker counts",
+        "HandText write-on",
+        "dashed line reveal",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Brief hold on the two matching tenths"
+    },
+    {
+      "sceneId": "rates-equal",
+      "visualDecision": "adjust",
+      "visualReference": "C2 to C4B style rate bars (forward blue, reverse amber, teal equal bracket) with the iron tube shrunk to the corner",
+      "teachingReason": "Gives the cause of the constant ratio: each rate is a fixed number times the concentrations that must meet, and the rates are equal",
+      "narrationCue": "We write a species in square brackets for its amount per litre / joining runs at point three times the iron times the thiocyanate / splitting runs at three times the red ion / At equilibrium the rates are equal",
+      "motionPurpose": "The tube shrinks away, a bracket pair writes round Fe3+, the forward line writes under the blue bar and the reverse line under the amber bar, and the two lines join with an equals sign",
+      "motionRole": "explain",
+      "onScreenChange": "The tube shrinks to the corner and two level rate bars sit under the teal bracket; a bracket pair writes round Fe3+ with the tag \"amount per litre\"; \"forward = 0.3 x [Fe3+][SCN-]\" writes under the blue bar with the three brackets ringed in turn; \"reverse = 3 x [FeSCN2+]\" writes under the amber bar; the lines join into \"0.3 x [Fe3+][SCN-] = 3 x [FeSCN2+]\"",
+      "motionTools": [
+        "CameraStage shrink",
+        "bracket draw",
+        "HandText write-on",
+        "ScribbleCircle",
+        "NumberTicker rate bars"
+      ],
+      "holdPurpose": "Hold the finished equal rates line for a beat"
+    },
+    {
+      "sceneId": "ratio-name",
+      "visualDecision": "adjust",
+      "visualReference": "The rate equation from the previous scene with pen cancelling and a fraction that writes step by step, then a large K",
+      "teachingReason": "Shows the fixed numbers divide to a constant ratio and only then names it as the equilibrium constant",
+      "narrationCue": "Divide both sides by three / equals point three over three, a tenth / Those two numbers are fixed / the equilibrium constant, K",
+      "motionPurpose": "Pen divides both sides, the threes and the concentration brackets cancel and reappear on the other side, the fraction writes to 0.1, the two fixed numbers are circled and K writes large last",
+      "motionRole": "explain",
+      "onScreenChange": "\"divide by 3\" writes under the right side and the 3 cancels; \"divide by [Fe3+][SCN-]\" writes under the left and the brackets cancel and reappear under the red ion; the fraction \"[FeSCN2+] / ([Fe3+][SCN-]) = 0.3 / 3 = 0.1\" writes in steps; the 0.3 and 3 are circled with \"fixed at one temperature\"; K writes large on \"name\" with its plain meaning",
+      "motionTools": [
+        "HandText write-on",
+        "cancel strike",
+        "ScribbleCircle",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the fraction and the named K into the next scene"
+    },
+    {
+      "sceneId": "coefficient-power",
+      "visualDecision": "adjust",
+      "visualReference": "C4 hot H2 + I2 tube at 2, 2, 14 with two rate bars at 0.2 and the equation chip, plus a callback chip to the 2NO2 squeeze",
+      "teachingReason": "Shows why a coefficient of two becomes a power of two: two HI must meet to split",
+      "narrationCue": "joining needs a hydrogen and an iodine to meet / that number is point oh five / Splitting needs two hydrogen iodide to meet / hydrogen iodide squared / The coefficient two has become a power of two",
+      "motionPurpose": "One H2 and one I2 drift together, 0.05 replaces the unknown number, two HI meet and split, their two brackets merge into a squared bracket, and the divide-both-sides move ends at 49",
+      "motionRole": "explain",
+      "onScreenChange": "One H2 and one I2 meet with a pen ring and \"forward = number x [H2][I2]\" writes, then \"0.05 x 2 x 2 = 0.2\"; two HI particles meet and split with the chip \"like 2NO2 in the squeeze video\" and \"reverse = number x [HI] x [HI]\" merges to \"[HI]^2\" with an arrow to the exponent; \"0.2 / 14^2 = 0.05 / 49\" writes; the rates are set equal and the ratio ends at 49 with the coefficient 2 flying to a power",
+      "motionTools": [
+        "particle meeting",
+        "HandText write-on",
+        "ScribbleCircle",
+        "bracket merge",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold the 49 and the power of two"
+    },
+    {
+      "sceneId": "any-equation",
+      "visualDecision": "adjust",
+      "visualReference": "Coded expression builder (balanced equation strip, fraction, coefficients flying up as powers) and two H2 + I2 + HI tubes with dot counts",
+      "teachingReason": "States the rule for any balanced equation and checks that the ratio stays put, but fails without the power",
+      "narrationCue": "Products go on top, reactants underneath / raised to the power of its coefficient / fourteen squared over two times two / twenty-eight squared over two times eight / Leave the power off",
+      "motionPurpose": "The general expression assembles term by term, then two tubes get their fractions in three beats each with a dashed same value line joining 49 and 49, and a second row without powers gives 3.5 and 1.75",
+      "motionRole": "explain",
+      "onScreenChange": "aA + bB = cC + dD writes and K assembles beneath it with each coefficient flying up as a power; the tag \"checking that the ratio stays put\" appears; two tubes (2, 2, 14 and 2, 8, 28) get \"14^2 / (2 x 2) = 196 / 4 = 49\" and \"28^2 / (2 x 8) = 784 / 16 = 49\" joined by a dashed same value line; a second row writes the no-power results 3.5 and 1.75 with a cross",
+      "motionTools": [
+        "expression builder",
+        "DrawPath fraction",
+        "NumberTicker",
+        "dashed line reveal",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the two 49s and the failed no-power row"
+    },
+    {
+      "sceneId": "from-scratch",
+      "visualDecision": "adjust",
+      "visualReference": "Equation strip for the cobalt tube with C3 pink and blue ion tints, state symbols, an empty fraction and the coefficient 4 flying to a power",
+      "teachingReason": "Models writing an expression in three stages (states, products over reactants, powers) on an unseen equation",
+      "narrationCue": "First, the states / so it stays out / Second, products over reactants / Third, each concentration to the power of its coefficient",
+      "motionPurpose": "State symbols are ringed one by one, the water is struck out, the ions lift into a fraction and the 4 flies up to chloride as a power",
+      "motionRole": "explain",
+      "onScreenChange": "The equation strip writes on large; each state symbol is ringed, the three (aq) species get ticks and water gets a bar through it with \"solvent: huge, steady amount\"; an empty fraction draws and the blue ion lifts to the top, the pink ion and chloride to the bottom; the 4 flies to the top right of [Cl-] and the faint 1s fade; the finished expression writes and a pen ring marks the outer brackets",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "expression builder",
+        "Mark cross",
+        "DrawPath fraction"
+      ],
+      "holdPurpose": "Hold the finished expression"
+    },
+    {
+      "sceneId": "left-out",
+      "visualDecision": "adjust",
+      "visualReference": "Beaker with many water dots and a few reacting dots, two counters, a coded carbon block with a CO2 and CO particle view, and the C4A carbon equation",
+      "teachingReason": "Gives the reason a solid or the solvent drops out: its concentration does not change, so it folds into a fixed number",
+      "narrationCue": "their concentration does not change / just another fixed number / the carbon never appears / its concentration changes, so it counts",
+      "motionPurpose": "A water counter stays level while a dissolved counter ticks, the locked counter slides into the fixed number, the carbon is greyed out of the expression, and a steam icon gets a tick",
+      "motionRole": "explain",
+      "onScreenChange": "The water counter stays level while a dissolved-species counter ticks up and down; the locked counter slides into the circled fixed number with \"fixed x fixed = fixed\"; a carbon block appears with its level counter and \"pure solid\" tag; C(s) + CO2(g) = 2CO(g) writes, the (s) is crossed and \"K = [CO]^2 / [CO2]\" builds; a steam icon lands with \"(g): concentration changes\" and a tick",
+      "motionTools": [
+        "counter reveal",
+        "ScribbleCircle",
+        "Mark cross",
+        "expression builder",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the carbon expression"
+    },
+    {
+      "sceneId": "size-of-k",
+      "visualDecision": "new",
+      "visualReference": "Coded horizontal log number line from 10^-30 to 10^13 with three rough guide bands and markers with H2 + I2, N2 + O2 and copper ammonia icons",
+      "teachingReason": "Teaches reading the size of K as a rough guide and that K says where the mixture settles, not how fast",
+      "narrationCue": "the bigger it is / a K above about a thousand / a K of forty-nine / ten to the minus thirty / ten to the thirteen / not how fast it gets there",
+      "motionPurpose": "The number line writes on, a pen arrow runs right on \"bigger\", the band edges ring in turn and three markers drop one at a time with their icons and tags",
+      "motionRole": "explain",
+      "onScreenChange": "The log line writes on with the bands \"below about 10^-3: mostly reactants\", \"10^-3 to 10^3: both present in measurable amounts\" and \"above about 10^3: mostly products\" and the tag \"rough guides, around 0.1 to 1 mol/L\"; a pen arrow runs right; the two band edges ring in turn; markers drop at 49 (H2 + I2 tube, \"lots of HI, some H2 and I2 left\"), at 10^-30 (N2 and O2 flask, \"very little NO\") and at 10^13 (copper ammonia, \"almost all the copper is in the ion\"); a tag \"where it settles, not how fast\" lands last",
+      "motionTools": [
+        "DrawPath number line",
+        "ScribbleCircle",
+        "marker drop",
+        "tag pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the three markers"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Large handwritten aid in three lines, each lifting to a small icon (fraction bar, power arrow, greyed solid and droplet), with the condition tag",
+      "teachingReason": "Gives a reusable writing shortcut after the cause is explained",
+      "narrationCue": "Here is a shortcut for writing any expression / Products over reactants, coefficients become powers / the solvent drop out",
+      "motionPurpose": "The aid writes on in three short lines, each lifting to its icon, and the solid and droplet grey out on the last line",
+      "motionRole": "explain",
+      "onScreenChange": "The three aid lines write on large; a fraction bar, a coefficient flying to a power, and a greyed solid and droplet (\"or the solvent\") appear in turn; the condition tag \"written for the equation as given, concentrations in mol/L, water as solvent or gas\" lands and the board holds",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "greyed term"
+      ],
+      "holdPurpose": "Hold the aid for about 3 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded vignette: a pale blue copper tube with the Cu2+ and NH3 equation strip, and a made-up A + B flask with its strip, plus two numbered demands",
+      "teachingReason": "Unseen transfer on the power of four and the product over reactant form, and on reading K = 4, with every condition visible and no answer cues",
+      "narrationCue": "Your turn / copper two plus ions and ammonia make a deep blue ion / where A and B make C and D / In this question K is four / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The copper tube with its equation and condition tag and the made-up flask with \"start with equal A and B and no C or D\" appear as each is named; the two numbered demands stay on screen; earlier boards and the aid are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The copper equation strip with the expression builder, a numerator lift, a coefficient flying up as a power and two crossed wrong-answer chips",
+      "teachingReason": "Explains item one stage by stage and corrects the multiplier and the addition slips",
+      "narrationCue": "Products on top, reactants underneath / to the power of four / a coefficient is a power, not a multiplier / so the counts multiply",
+      "motionPurpose": "The copper strip writes on and the expression builds, the new ion lifts up, the 4 flies to ammonia as a power and two wrong chips are crossed on their cues",
+      "motionRole": "explain",
+      "onScreenChange": "The equation strip writes on; the new ion lifts to the numerator, Cu2+ and NH3 to the denominator, and the 4 flies up as a power; \"K = [[Cu(NH3)4]2+] / ([Cu2+][NH3]^4)\" holds; the chip \"4[NH3] in the denominator\" is crossed with \"a coefficient is a power\"; the chip \"[Cu2+] + [NH3]^4 underneath\" is crossed with \"counts multiply: particles must meet\" and a callback tag to the iron tube",
+      "motionTools": [
+        "expression builder",
+        "Mark cross",
+        "chip pop",
+        "DrawPath fraction"
+      ],
+      "holdPurpose": "Settle on the corrected expression"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The A + B strip with the expression builder, the K number line with a marker at 4 and a bar showing one third left and two thirds converted",
+      "teachingReason": "Explains item two and shows that K = 4 means measurable amounts of all four, not mostly products",
+      "narrationCue": "The products go on top, C times D / Underneath go the reactants, A times B / about two thirds of the A reacting / not almost all products",
+      "motionPurpose": "The expression builds with no powers, a marker drops at 4 inside the middle band, a short working line writes and a bar splits into one third A and two thirds products",
+      "motionRole": "explain",
+      "onScreenChange": "The strip writes on and \"K = [C][D] / ([A][B])\" builds; the number line returns with a marker at 4 in the middle band, a tick on \"both present\" and a cross on \"mostly products\"; the working line \"x / (a - x) = 2, so x = two thirds of a\" writes; a bar shows one third of A left and two thirds turned into C and D; a short unspoken note about the solvent sits under the expression",
+      "motionTools": [
+        "expression builder",
+        "marker drop",
+        "Mark cross",
+        "bar fill",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the bar and the corrected reading"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Two question cards with fraction, power arrow and state-symbol icons and a miniature K number line, then a tube with starting counts and a question mark",
+      "teachingReason": "Packs the lesson into two reusable questions and hands off to finding the settled mixture",
+      "narrationCue": "write products over reactants / leave out pure solids, a pure liquid and the solvent / When it gives you K, read its size first / when you only know the starting amounts",
+      "motionPurpose": "Two cards write on one by one, then a tube with starting counts appears with a question mark over the settled counts and a next chip",
+      "motionRole": "explain",
+      "onScreenChange": "The first card \"Given an equation: fraction, powers, check the states.\" writes on with its icons; the second card \"Given K: above about 1000, below about 1/1000, or between?\" writes on with the mini number line; on \"starting amounts\" a tube with starting counts and a \"?\" over the settled counts appears with a Next chip",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "icon pop",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about 3 seconds after the last word"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c5-learning-review.md",
+      "sha256": "c4d0d928bcb571b61c212c3e3d32798eb5b8fa6fb7259e3dc01d7261ea87b499"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c5-claude-science-check.md",
+      "sha256": "517f3e836bafef8852eb4790a5c23d37a562c3752c721a3c9872daaf8c11be06"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

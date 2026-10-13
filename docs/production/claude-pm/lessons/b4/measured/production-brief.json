@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b4/measured/lesson.json",
+    "lessonSha256": "1c15e55ef1037ea1ab62a7028a8d700eed748e6b685b55cbddf72d6052f01292"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "The first video of this series: DNA is inherited information, a gene is a section of DNA, alleles are versions, a copying error is a mutation. The video on single-celled organisms: a cell copies its DNA, shares it, then splits. Year 11: DNA exists, bases are named, covalent and hydrogen bonds, enzymes. Not assumed: nucleotide, deoxyribose, phosphate group, nitrogenous base, double helix, complementary, antiparallel, 5 prime and 3 prime, template, helicase, DNA polymerase, replication fork, semi-conservative, daughter molecule, proofreading.",
+    "startsWith": "A cell that must copy billions of DNA letters before it divides, in a nucleus smaller than a pinhead, and the question of what happens to the original.",
+    "stopsAfter": "Naming the parts of a nucleotide and the bonds in the backbone and the middle; pairing A with T and C with G and saying why only those pairs fit; saying what antiparallel means; explaining why one strand fixes the order of the other; saying how the strands separate and what DNA copying adds; defining semi-conservative replication and tracing a short molecule into two labelled daughters; qualifying errors; writing a new strand with its ends on an unseen template; tracing a heavy tag through two rounds of copying. No leading and lagging strands, no Okazaki fragments, no RNA.",
+    "nextLesson": "Mitosis: how a cell shares its copied DNA between two new cells when it divides."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b04.md"
+  ],
+  "teaching": {
+    "task": "Explain how DNA is copied accurately while its information is kept, and trace the original strands through a copy.",
+    "causalExplanation": "DNA is a chain of nucleotides with a sugar and phosphate backbone and a base that carries the letter. Because A fits only T and C fits only G, each strand fixes the order of its partner and so acts as a template. Weak hydrogen bonds let the strands separate without breaking either backbone. Helicase separates them, loose nucleotides pair with the exposed bases, and DNA polymerase joins them into a new backbone, so each daughter molecule keeps one original strand and one new strand. Proofreading and repair fix almost every mistake, and one that survives becomes a mutation that is copied into later cells.",
+    "conversationalApproach": "Opens on the size of the copying job, builds the molecule from one nucleotide to a ladder, uses jigsaw pieces and an apple-and-car aid for pairing, shows the copying as three numbered steps, and then works a four-pair molecule into two coloured daughters one stage at a time before an unseen strand and heavy-tag trace.",
+    "openingDecision": "A cell has to copy billions of DNA letters almost without error. How can DNA be copied accurately, and what happens to the original?",
+    "understandingCheck": "Write the new strand under an unseen template written 5 prime to 3 prime and label both ends, and trace a heavy tag through two rounds of copying to say how many strands in each of four molecules are heavy and light.",
+    "curriculumScope": "Replication of DNA using the Watson and Crick model, including nucleotide composition, pairing and bonding (Module 5). Leading and lagging strands, ligase, Okazaki fragments, RNA and chromosome structure are held back."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, coded nucleotide, base tiles with jigsaw outlines, strand ribbons with direction arrows and 5 prime and 3 prime tags, hydrogen bond dots, fork, helicase and polymerase icons, a numbered step strip and the amoeba plate in the hook. Colour key: blue original strands and green new strands from the copying scene on, neutral backbones before it, warm tiles for A and T, purple tiles for C and G, flat grey tags for mismatches.",
+    "transitionPlan": "The amoeba plate pushes into its nucleus and a DNA thread draws out; one nucleotide enlarges and more snap on; the helix flattens into the ladder board; the ladder stays through direction, template and copying scenes; the numbered strip lands and stays; the worked example clears to a clean four-rung ladder and builds one strand at a time; the attempt board removes the key and hints and the ladder returns in the feedback; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Amoeba fission plate 1 tagged only a cell, a camera push to its nucleus, a coded DNA thread drawing out, a pinhead dot and an opening book icon",
+      "teachingReason": "Poses the copying problem on a real cell: huge amount of information, tiny space, and a question about the original",
+      "narrationCue": "billions of letters / packed into a nucleus far smaller than a pinhead / Copy a book that long and the copy would drift / what happens to the original",
+      "motionPurpose": "The camera pushes into the nucleus, a thread draws out across the screen, a pinhead dot sits beside the nucleus, and a book opens with a drifting copy",
+      "motionRole": "explain",
+      "onScreenChange": "The amoeba plate is centred; a slow push reaches the nucleus and a scribble circle lands on it; a long DNA thread keeps drawing out across the screen width; a pinhead dot appears with its size note on \"far smaller than a pinhead\"; a book icon opens and a second copy drifts on \"the copy would drift\"; the heading writes on",
+      "motionTools": [
+        "CameraStage push",
+        "ScribbleCircle",
+        "DrawPath thread",
+        "HandText write-on",
+        "book icon"
+      ],
+      "holdPurpose": "Hold on the question about the original"
+    },
+    {
+      "sceneId": "nucleotides",
+      "visualDecision": "new",
+      "visualReference": "One large coded nucleotide (sugar pentagon, phosphate circle, base tile) with amber join notches, then two more nucleotides snapping on",
+      "teachingReason": "Builds the unit before any pairing, so the backbone and the letter are separate ideas",
+      "narrationCue": "a long chain of small units called nucleotides / a sugar called deoxyribose / a phosphate group / the part that carries the letter / The order of those letters is the information a cell stores",
+      "motionPurpose": "Labels draw on part by part with each part pulsing, two more nucleotides snap on at the same join points, and the four base letters appear",
+      "motionRole": "explain",
+      "onScreenChange": "One nucleotide appears centred; leader labels write on for sugar, phosphate and base as each is named and each part pulses amber; two more nucleotides slide in and snap at the amber notches on \"link in a long backbone\"; four base tiles A, T, C and G appear and the order row writes on",
+      "motionTools": [
+        "DrawPath leader lines",
+        "part pulse",
+        "snap slide-in",
+        "HandText write-on",
+        "tile pop"
+      ],
+      "holdPurpose": "Hold the chain with its four letters"
+    },
+    {
+      "sceneId": "pairing",
+      "visualDecision": "reuse",
+      "visualReference": "Twisting double helix helper that flattens into a ladder board, jigsaw-shaped base tiles and dotted hydrogen bonds",
+      "teachingReason": "Shows the pairing rule from the shapes first, then names it, and gives a mnemonic after the rule is understood",
+      "narrationCue": "double helix / A always pairs with T, and C always pairs with G / like jigsaw pieces / two between A and T, three between C and G / Apple in the Tree, Car in the Garage",
+      "motionPurpose": "The helix turns once and flattens into a ladder, tiles slide together, a wrong tile clashes, then dotted bonds draw on and the aid writes in",
+      "motionRole": "explain",
+      "onScreenChange": "The helix draws on and rotates once; a credit tag writes on; the camera pushes into a stretch and it unwinds into the ladder; tiles meet on \"meet\"; an A tile dragged to a C tile clashes in shape; A fits T and C fits G on \"jigsaw pieces\"; two then three dotted lines draw on the pairs; the aid writes in amber",
+      "motionTools": [
+        "Helix helper",
+        "CameraStage push",
+        "tile slide",
+        "DrawPath bonds",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the ladder with the aid"
+    },
+    {
+      "sceneId": "antiparallel",
+      "visualDecision": "new",
+      "visualReference": "Ladder board with amber join notches, a direction arrow along the top backbone and tags 5' and 3', plus a two-lane road doodle",
+      "teachingReason": "Gives the direction of a strand its cause (the join always on one side) before the end names and the word antiparallel",
+      "narrationCue": "start end and a finish end / said five prime / antiparallel / the two lanes of a road",
+      "motionPurpose": "Join notches flash along the top backbone, an arrow draws from the start end to the finish end, the end tags land, and the partner strand gets an opposite arrow with a road doodle",
+      "motionRole": "explain",
+      "onScreenChange": "The notches flash on \"one particular side\"; an arrow draws along the top ribbon with \"start\" and \"finish\"; scribble circles land on the 5' and 3' tags; the bottom ribbon gets its opposite arrow; \"antiparallel\" writes on with a two-lane road doodle",
+      "motionTools": [
+        "DrawPath arrow",
+        "ScribbleCircle",
+        "notch flash",
+        "HandText write-on",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the two opposite arrows"
+    },
+    {
+      "sceneId": "template",
+      "visualDecision": "new",
+      "visualReference": "Four-rung ladder A-T, T-A, C-G, G-C with the bottom row erased, empty slots filling with matching tiles, and dotted bonds stretching",
+      "teachingReason": "Shows that pairing makes one strand fix the order of the other, and why weak bonds let the strands separate while the backbones stay whole",
+      "narrationCue": "one strand fixes the order of the other / its partner has to read T, A, G, C / a pattern to copy from / the strands can be pulled apart without breaking either backbone",
+      "motionPurpose": "The bottom row is erased, the empty slots fill with matching tiles, a template tag lands, and the dotted bonds stretch and pop while the backbones stay whole",
+      "motionRole": "explain",
+      "onScreenChange": "The ladder shows four rungs; the bottom row erases on \"one strand fixes the order of the other\"; slots fill one tile at a time with ticks; a scribble circle and \"template: a pattern to copy from\" land on the top row; the dotted lines highlight and stretch on \"hydrogen bonds are weak\" while the backbones stay whole",
+      "motionTools": [
+        "tile snap",
+        "ScribbleCircle",
+        "DrawPath bonds",
+        "HandText write-on",
+        "bond stretch"
+      ],
+      "holdPurpose": "Brief hold on the separated strands"
+    },
+    {
+      "sceneId": "copy-steps",
+      "visualDecision": "new",
+      "visualReference": "Longer eight-rung ladder with a helicase wedge, a numbered step strip along the bottom, free tiles and a polymerase icon",
+      "teachingReason": "Puts the three copying steps in order and says what each enzyme does before leaning on its name",
+      "narrationCue": "First, an enzyme / helicase unwinds the helix / replication fork / Second, loose nucleotides / DNA polymerase joins each new nucleotide",
+      "motionPurpose": "The wedge opens the ladder from left to right, loose tiles pair with the exposed bases, and the polymerase icon joins them into a new backbone as each step chip lands",
+      "motionRole": "explain",
+      "onScreenChange": "The step chip \"1 separate\" lands; the helicase wedge moves and the ladder opens into a Y with a scribble circle on the fork; the separated backbones recolour blue; \"2 pair\" lands and free tiles drop onto exposed bases; \"3 join\" lands and the polymerase icon draws a green backbone behind the tiles in short stretches",
+      "motionTools": [
+        "ladder unzip",
+        "step chip",
+        "tile drop",
+        "DrawPath backbone",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold the three step chips"
+    },
+    {
+      "sceneId": "semi-conservative",
+      "visualDecision": "new",
+      "visualReference": "Two daughter molecules separated vertically, each with a blue original strand and a green new strand, a half-and-half icon and a grey ghost alternative",
+      "teachingReason": "Names semi-conservative replication after showing what each daughter holds, and rules out the other way it could have gone",
+      "narrationCue": "two new DNA molecules / semi-conservative replication / Semi means half, and conservative means kept / Half old, half new",
+      "motionPurpose": "The two daughters separate, circles mark the blue and green strands, a half-filled icon appears, and a ghost alternative shows and is crossed out",
+      "motionRole": "explain",
+      "onScreenChange": "The daughters separate vertically with \"daughter molecule\" tags; scribble circles land on the blue strand (\"original\") and the green strand (\"new\") of each; the half-circle icon fills; \"semi = half, conservative = kept\" writes on; a grey ghost with one all-blue and one all-green molecule appears on \"It could have gone another way\" and is crossed; \"Half old, half new\" writes large",
+      "motionTools": [
+        "strand recolour",
+        "ScribbleCircle",
+        "half icon fill",
+        "ghost overlay",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the aid on screen"
+    },
+    {
+      "sceneId": "worked-molecule",
+      "visualDecision": "new",
+      "visualReference": "Clean worked-example board: task line, a four-rung ladder drawn the other way round with 3' on the left of the top strand, end tags and a step chip",
+      "teachingReason": "Starts the worked example with the givens and the first step, and shows a flipped drawing so the unseen attempt is fair",
+      "narrationCue": "four pairs of bases long / the other way round / Step one: the strands separate / we colour them blue",
+      "motionPurpose": "The task writes on, the end tags land on the flipped ladder, then the strands separate and recolour blue",
+      "motionRole": "explain",
+      "onScreenChange": "The task \"Copy this molecule. Label original and new strands and every end.\" writes on; the ladder shows tiles A T C G over T A G C with end tags; a note \"drawn the other way round this time\" writes on; the chip \"1 separate\" lands and the ladder opens vertically; both strands recolour blue on \"colour them blue\"",
+      "motionTools": [
+        "HandText write-on",
+        "tile snap",
+        "ladder unzip",
+        "strand recolour",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the two blue templates"
+    },
+    {
+      "sceneId": "worked-bottom",
+      "visualDecision": "new",
+      "visualReference": "Top template with exposed bases, free green tiles dropping in, a green backbone with an arrow, end tags, then the pair turned round",
+      "teachingReason": "Builds the new bottom strand one base at a time and shows how the letters swap order when the pair is turned round",
+      "narrationCue": "needs a T / The new strand, in green / it runs opposite to its template / turn the pair round",
+      "motionPurpose": "The bottom strand slides away, green tiles drop in on each spoken letter, a green backbone and its end tags write on, and the pair turns round with the letters swapping order",
+      "motionRole": "explain",
+      "onScreenChange": "The chip \"2 build the new bottom strand\" lands; green tiles T, A, G, C drop in with a tick each; a green backbone with a direction arrow draws and end tags write on with a circle linking new 5' under template 3'; the pair rotates and the reading orders swap with the new labels",
+      "motionTools": [
+        "tile drop",
+        "DrawPath backbone",
+        "ScribbleCircle",
+        "board rotate",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the pair for about a second"
+    },
+    {
+      "sceneId": "worked-top",
+      "visualDecision": "new",
+      "visualReference": "Blue bottom template in the centre with an empty top row, green tiles dropping in, and the old blue top strand parked above for comparison",
+      "teachingReason": "Builds the second new strand and shows that it matches the original top strand",
+      "narrationCue": "the bottom template / T needs an A / exactly like the original top strand",
+      "motionPurpose": "The blue template slides in, green tiles drop in on each spoken letter, and a bracket and tick compare the new top strand with the parked original",
+      "motionRole": "explain",
+      "onScreenChange": "The chip \"3 build the new top strand\" lands; green tiles A, T, C, G drop in with ticks; the green backbone and end tags write on; the parked blue top strand pulses and a bracket and tick appear between the two rows",
+      "motionTools": [
+        "tile drop",
+        "DrawPath backbone",
+        "bracket draw",
+        "step chip"
+      ],
+      "holdPurpose": "Brief hold on the matching rows"
+    },
+    {
+      "sceneId": "worked-daughters",
+      "visualDecision": "new",
+      "visualReference": "Two daughter molecules (blue top with green bottom, green top with blue bottom), a ghost of the starting molecule with ticks and a dashed matching arrow",
+      "teachingReason": "Puts the result together and states why the information survives",
+      "narrationCue": "one blue original strand and one green new strand / exactly like the molecule we began with / that is how the information survives",
+      "motionPurpose": "The two daughters assemble, the starting molecule fades in as a ghost with ticks across all three, and a dashed arrow links each new strand to the old partner it matches",
+      "motionRole": "explain",
+      "onScreenChange": "The daughters assemble one above the other; the strand key lights; the starting molecule fades in as a ghost with ticks across the three; a curved dashed arrow runs from each new strand to the original partner of its template with an equals sign; \"information survives\" writes on",
+      "motionTools": [
+        "strand assemble",
+        "ghost overlay",
+        "DrawPath arrow",
+        "tick pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the three matching molecules"
+    },
+    {
+      "sceneId": "errors-repair",
+      "visualDecision": "new",
+      "visualReference": "Short ladder with a wrong tile snapping in, a polymerase icon backing up, a repair sweep and a third wrong tile that survives",
+      "teachingReason": "Qualifies the accuracy: rare mistakes, two checks, and the few that survive become mutations",
+      "narrationCue": "accurate, but not perfect / DNA polymerase checks each base / repair proteins check the new strand afterwards / a mutation",
+      "motionPurpose": "A wrong tile glows grey, the polymerase backs up and removes it, a second wrong tile is swept out by repair proteins, and a third survives and is tagged",
+      "motionRole": "explain",
+      "onScreenChange": "A wrong G opposite T snaps in with a \"mismatch\" circle; the polymerase icon backs up one step, the tile pops out and the correct A drops in; a second wrong tile is removed by a repair sweep; a third wrong tile stays tagged \"survived\" and the note about a mutation writes on",
+      "motionTools": [
+        "tile snap",
+        "ScribbleCircle",
+        "icon sweep",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the surviving mismatch"
+    },
+    {
+      "sceneId": "errors-effects",
+      "visualDecision": "new",
+      "visualReference": "Three plain outcome chips, the mismatched ladder unzipping into a normal copy and a changed copy, then a dividing-cell strip for a bacterium and a person",
+      "teachingReason": "Shows the effect of a mutation, how it is passed on at the next copying, and when it reaches children",
+      "narrationCue": "Many mutations have no effect / one new copy has a changed base pair / only one of the two new cells gets the changed pair / reaches children only if it is in a cell that makes gametes",
+      "motionPurpose": "Three outcome chips appear, the mismatched ladder unzips into one changed and one normal copy, and the change follows the dividing cells for a bacterium and a body cell",
+      "motionRole": "explain",
+      "onScreenChange": "Grey chips \"no effect\", \"harmful\" and \"useful\" come up beside the changed ladder; the ladder unzips and each strand takes a new partner giving \"normal copy\" and \"changed pair\"; a bacterium splits with only one new cell marked; a body cell lineage is marked and only a gamete-making cell carries it to children",
+      "motionTools": [
+        "chip pop",
+        "ladder unzip",
+        "lineage strip",
+        "cell split",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the lineage strip"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Two numbered vignettes: a template row of six tiles T G C C A T with end tags and empty slots, and a ladder with heavy-tag beads; no key, no colours, no hints",
+      "teachingReason": "Unseen transfer on pairing and ends and on tracing old strands over two rounds of copying, with every demand and condition visible",
+      "narrationCue": "Two questions / Write the new strand built beneath it, base for base / both strands of one DNA molecule carry a heavy tag / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The two vignettes appear as each is named with their demands and conditions; the strand key, blue and green, the pairing card and direction arrows are absent; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette one enlarged: slots filling with ticks, end tags written on, a curved amber reading arrow and four crossed wrong-answer chips",
+      "teachingReason": "Explains the answer by pairing and then by ends, and corrects the likeliest slips (order, U for T, both ends the same)",
+      "narrationCue": "Pair each base with its partner / If you wrote U, that is RNA / they are not antiparallel",
+      "motionPurpose": "The six slots fill on each spoken letter, the end tags write on, an arrow reads the new strand from its own 5' end, and the wrong chips are crossed in turn",
+      "motionRole": "explain",
+      "onScreenChange": "The slots fill with pair snaps and ticks; end tags 3' on the left and 5' on the right write on; a curved amber arrow reads the new strand from its 5' end; four chips including \"U for T (RNA)\" appear and are crossed with grey scribbles",
+      "motionTools": [
+        "tile snap",
+        "DrawPath arrow",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the corrected strand"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette two enlarged: a heavy molecule copied twice as a trace, hybrid daughters, four final molecules with bead counts and a running count",
+      "teachingReason": "Traces old strands through two rounds and corrects the mistake that all four molecules are partly heavy",
+      "narrationCue": "one heavy original strand and one light new strand / two with two light strands / they never multiply",
+      "motionPurpose": "Round one gives two hybrids, round two gives two hybrids and two all-light molecules, and a running count shows only two heavy strands throughout",
+      "motionRole": "explain",
+      "onScreenChange": "The heavy molecule opens and takes light partners giving two labelled hybrids; both hybrids open again giving two hybrids and two all-light molecules; bead counts label the four finals; a running count under the board stays at 2 heavy strands; the chip \"all four are partly heavy\" is crossed",
+      "motionTools": [
+        "strand split",
+        "NumberTicker count",
+        "bead label",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the four final molecules"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "adjust",
+      "visualReference": "Ladder board with the starting molecule and two daughters small, the aid in large amber writing with a blue and green half icon, the pairing aid and a four-molecule row",
+      "teachingReason": "Gives the reusable half old, half new rule, shows why first strands never multiply and hands off to cell division",
+      "narrationCue": "half old, half new / The very first strands never multiply / Next time: how a cell shares its copied DNA",
+      "motionPurpose": "The aid writes large over the small daughters, the pairing aid returns, two of the four molecules light as holding a first strand, and the three-step rule writes on",
+      "motionRole": "explain",
+      "onScreenChange": "The starting molecule and two daughters return small; \"Half old, half new.\" writes on with the half icon and the old-strand tag; the pairing aid returns smaller; the four-molecule row returns with two lit and two greyed; the three-step rule writes on silently; the next chip slides in",
+      "motionTools": [
+        "HandText write-on",
+        "half icon fill",
+        "ghost overlay",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the aid and the three-step rule"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The key notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 75 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b4-learning-review.md",
+      "sha256": "b19cf61406991f7105a4a16f557c7752f9e71e0c881a2e8bf75b79f5cd1e7eef"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b4-claude-science-check.md",
+      "sha256": "be046648cce5764c0e07e55bf63a0edf925039ef76a4d0a5e3652db31ac1daaf"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

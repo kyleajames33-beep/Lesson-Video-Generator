@@ -1,0 +1,144 @@
+{
+  "title": "The reaction quotient, Q: which way will the mixture run?",
+  "subtitle": "Given a mixture that has not settled, and the K for that temperature, how can you tell which way it will run before anything changes?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 10,
+  "lessonIntent": "Write Q for an equation and calculate it from supplied concentrations, compare Q with K at the same temperature to state the direction with the rate reason, and explain that a disturbance changes Q and not K.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is the hot hydrogen iodide tube again, at about four hundred and fifty degrees, where K is forty-nine. But this time nobody let it settle first. Someone has just mixed 0.20 moles per litre of hydrogen, 0.20 of iodine and 0.50 of hydrogen iodide. It has not reached equilibrium, so something is about to change. Will the tube make more hydrogen iodide, or break some down? There is a way to know before anything moves."
+      }
+    },
+    {
+      "id": "q-fraction",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So far K has always taken the settled values. Now take the same fraction, hydrogen iodide squared over hydrogen times iodine, and put in the concentrations in the tube right now, settled or not. That number is the reaction quotient, Q. It follows the same rules as K, with powers for coefficients, and solids and the solvent left out. At equilibrium Q is K. At any other moment, Q can be any value."
+      }
+    },
+    {
+      "id": "calculate-q",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Substitute the values now. Hydrogen iodide squared is 0.50 squared, which is 0.25. Underneath, hydrogen times iodine is 0.20 times 0.20, which is 0.040. So Q is 0.25 over 0.040, which is 6.25."
+      }
+    },
+    {
+      "id": "compare-q-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now compare it with K. Each tick on this line is ten times the one before, so small and large numbers fit on it. Q is 6.25 and K is forty-nine, so Q is smaller than K. Compared with the reactants, this tube holds less hydrogen iodide than a settled tube at this temperature would. So which reaction is quicker, hydrogen and iodine joining, or hydrogen iodide splitting?"
+      }
+    },
+    {
+      "id": "rate-link",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Remember the rate model from the expressions video: joining is a fixed number times hydrogen times iodine, and splitting is another fixed number times hydrogen iodide squared. Divide the two. The two fixed numbers divide to give K. The concentrations divide to give the Q fraction upside down, hydrogen times iodine over hydrogen iodide squared. So in this model forward over reverse is K times one over Q, which is K over Q. That is forty-nine over 6.25, about eight, so the forward reaction runs about eight times faster, and hydrogen iodide is made."
+      }
+    },
+    {
+      "id": "q-chases-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "As hydrogen iodide forms, the top of Q grows and the bottom shrinks, so Q climbs. The forward rate falls, the reverse rate rises, just as in the flask videos, until the two are equal, because K over Q is then one. That happens exactly when Q reaches K, here at 0.10, 0.10 and 0.70, the settled tube from the ICE table video, where Q is forty-nine. Q chases K."
+      }
+    },
+    {
+      "id": "other-side",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now start from the other side. A tube holds 0.05 of hydrogen, 0.05 of iodine and 0.80 of hydrogen iodide. That is almost all hydrogen iodide, so does nothing more form? Work out Q. 0.80 squared is 0.64, over 0.05 times 0.05, which is 0.0025, so Q is 256. K is forty-nine. Which way will it run? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "other-side-answer",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Q is above K, so this tube has too much hydrogen iodide for this temperature, and the reverse reaction wins. Forward over reverse is 49 over 256, about 0.19, so the reverse is about five times faster. Hydrogen iodide splits, Q falls, and the tube ends at the same settled tube again. The first tube was mostly hydrogen iodide too, yet its Q was below K. Whether there is too much product depends on K, so work out Q and compare."
+      }
+    },
+    {
+      "id": "q-equals-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If Q equals K, as in the settled tube, forward and reverse run at the same rate and nothing changes overall. That does not mean equal concentrations: this tube has 0.10, 0.10 and 0.70. And if a flask holds only reactants, like the P C L five flask at the start, the top of Q is zero, so Q is below any K and the reaction runs forward. If it holds only products, the bottom is zero, Q is off the scale, above any K, and it runs in reverse."
+      }
+    },
+    {
+      "id": "disturbance",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This also explains the disturbance videos. Take the settled tube, 0.10, 0.10 and 0.70, where Q is forty-nine. Now, in the same sealed tube, add 0.20 moles per litre of hydrogen, so hydrogen is 0.30. The bottom of Q gets bigger, so Q drops to 0.49 over 0.030, about sixteen, below K. Forward over reverse is forty-nine over sixteen, about three, so the forward reaction wins, uses up some of the extra hydrogen, and the mixture shifts right."
+      }
+    },
+    {
+      "id": "k-unchanged",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Taking out some hydrogen iodide does the same, and adding hydrogen iodide pushes Q above K and sends it left. K never changed: it is still forty-nine. Adding or removing a substance changes Q only. Only a change of temperature changes K, and that is a later video."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Ammonia is made from nitrogen and hydrogen in a sealed vessel with an iron catalyst, held at four hundred degrees Celsius, where K is 0.50 for this equation. A mixture has just been made up, with nitrogen at 0.40 moles per litre, hydrogen at 0.50 and ammonia at 0.20. One: calculate Q for N two plus three H two making two N H three. Two: will the mixture make more ammonia or less, and why? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Write Q as ammonia squared over nitrogen times hydrogen cubed. Ammonia squared is 0.040. Hydrogen cubed is 0.50 times 0.50 times 0.50, 0.125, and times the nitrogen that is 0.050. So Q is 0.040 over 0.050, which is 0.80. Q is above K, 0.50, so the mixture holds too much ammonia for this temperature. The reverse reaction is faster and ammonia breaks down, so it makes less. If you got 0.20, you left the cube off the hydrogen, and that wrong number sits below K, so you would have said more ammonia. If you found 0.80 and still said more ammonia, you flipped the rule: a Q above K means too much product, not too little."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question gives you a mixture and a K, write the expression, put in the concentrations from now, calculate Q, and compare it with K at the same temperature. Q below K, the reaction runs forward. Q above K, it runs back. Equal, nothing changes overall. That gives you the direction, not how far it goes. Finding how far uses an ICE table and K, and the harder cases come next."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

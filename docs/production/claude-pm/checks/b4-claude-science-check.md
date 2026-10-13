@@ -66,3 +66,14 @@ Applied to `lessons/bio-m5-b04.md` (revision 4), 12 Oct.
 3. UNVERIFIED 2 (3' hydroxyl and 5' phosphate detail): not spoken. Scene 2c says only that each sugar joins the next phosphate on one particular side, so a strand has a start end and a finish end; nothing about hydroxyl groups appears in learner copy.
 4. UNVERIFIED 3 (plant germline timing): softened. The spoken example in 6b is "a person" only; key note 5 says "an organism that reproduces sexually" without a plant claim.
 
+
+## Codex check resolution (13 Oct)
+
+Applied to `../lessons/bio-m5-b04.md` (Revision 5, "Codex fact check resolved; ready to voice"). Narration grew by about 27 words (1275 to 1302 by plain count).
+
+| # | Finding | Decision | New wording |
+| --- | --- | --- | --- |
+| 1 | Key note 4: "never copied twice; they are shared out" | Originals are kept and reused as templates; only their number stays fixed. | Key note 4: "The original strands are kept and used again as templates, but their number never increases." Scene 9 already says "The very first strands never multiply", left as is (it is about number). |
+| 2 | Mutation passes to every descendant before the next replication fixes it | Show the next replication turning the mismatch into a stable changed base pair in one copy only, then the inheritance claim. | Scene 6a: "One that survives can become a mutation, a change in the base order." Scene 6b: "When that DNA is copied again, the changed base gets its own partner, so one new copy has a changed base pair and the other is normal. That changed pair then passes to every cell that divides from it. In a bacterium that splits in two, only one of the two new cells gets the changed pair." Visual: mismatched ladder unzips, normal A-T ladder on one side, amber G-C changed pair on the other. Key note 5: "A mistake that survives can become a mutation: when the DNA is copied again, the changed base gets its own partner, so one new copy has a changed base pair and the other is normal. The changed pair passes to every cell that divides from the cell that receives it, and in an organism that reproduces sexually it reaches offspring only through a cell that makes gametes." |
+| 3 | Scene 8a chip mismatched beneath the template | Label the arrangement and show the correct strand. | Chip: "wrong order beneath this template" (A T G G C A from the left, crossed out) with 3' A C G G T A 5' shown beneath the given strand T G C C A T (5' on the left). Narration: "the letters are the right ones, but they are in the wrong order beneath this template: that is how the new strand reads from its own 5' end, which is on the right." |
+| 4 | Person example ended in a strawberry seedling | Human offspring icon. | Scene 6b visual: the gamete arrow ends at a small human child icon, tag "reaches offspring". The strawberry seedling plate is removed from the asset list for this scene. |

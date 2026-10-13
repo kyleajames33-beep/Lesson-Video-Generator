@@ -1,0 +1,132 @@
+{
+  "title": "Industrial equilibrium: why factories compromise",
+  "subtitle": "Why does industry choose conditions that do not give the highest equilibrium yield?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 9,
+  "lessonIntent": "Tell equilibrium yield from rate and from cost and safety limits, justify stated temperature, pressure, catalyst and removal for an exothermic fewer-gas-particle reaction in a staged written answer, and explain why a plant removes product and recycles the rest.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ammonia is the starting point for most nitrogen fertiliser, made from nitrogen and hydrogen in the Haber process. Cooling the mixture and squeezing it both shift the balance toward ammonia, yet real plants run hot, at about 450 degrees Celsius, and at about 200 atmospheres, not the thousand that would give more. Why choose conditions that make less ammonia in the settled mixture?"
+      }
+    },
+    {
+      "id": "yield",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, what gives the most ammonia in the settled mixture? Chemists call how much of the nitrogen and hydrogen has become ammonia, once settled, the equilibrium yield. For one starting gas and pressure, more ammonia in the settled gas means a higher yield. The forward reaction gives out heat, 92 kilojoules for each mole of nitrogen, so heat goes on the right. Cooling takes heat away, and the shift goes toward it, so it raises the yield. Squeezing shifts toward fewer gas particles, two against four, so it does too. Pulling the ammonia out leaves the settled mixture the same, but lets the rest of the gas make more, so the total made rises. The catalyst changes only the speed."
+      }
+    },
+    {
+      "id": "time-in-reactor",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But a factory is paid for the ammonia it makes while the gas flows over its iron catalyst, not for a mixture that has had all day to settle. The iron comes next. Cooling lowers both rates, because fewer collisions have enough energy, and nitrogen molecules are hard to split."
+      }
+    },
+    {
+      "id": "three-temperatures",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are three temperatures at the same pressure, 200 atmospheres, with the gas starting as three hydrogen to one nitrogen. These numbers are illustrative. The cool one would settle at about sixty percent ammonia, but it crawls, so the gas leaves with only a little. The hot one settles at once, at only about nine. The middle one would settle at about twenty-five, and it gets close in the time available, so it gives the most."
+      }
+    },
+    {
+      "id": "catalyst-speed",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what does the iron do? It gives the molecules a lower-energy pathway in both directions, so the middle temperature is fast enough. Take it away and even the middle temperature crawls. The ceiling does not move: the settled mixture has the same share of ammonia, reached sooner. Without iron the plant would need a hotter reactor, with a lower ceiling."
+      }
+    },
+    {
+      "id": "pressure-limit",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Pressure helps both. Squeezing crowds the particles, so collisions are more frequent and both rates rise, and it shifts the balance toward the side with two gas particles. So why not a thousand atmospheres? Each extra bit of pressure buys less extra ammonia, but the thicker steel, stronger pumps and extra energy cost more each time, and a leak is dangerous. The plant settles where the extra ammonia stops paying for the extra cost, at about two hundred atmospheres."
+      }
+    },
+    {
+      "id": "recycle",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Even at this compromise, only part of the gas reacts on each pass: about a fifth of the gas leaving the reactor is ammonia, a little under the settled value, since the gas does not stay to settle fully. So the gas is cooled until the ammonia turns to a liquid, called condensing, and is drawn off, while the nitrogen and hydrogen stay gases. The unused gas is pumped back into the reactor, which is recycling. It holds less ammonia than a settled mixture would, so the shift runs forward again. Over many trips, more than ninety-five percent of the gas fed in ends up as ammonia."
+      }
+    },
+    {
+      "id": "model-answer",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Write it as an exam answer, one condition at a time: what it does to the yield and why, to the rate and why, and what limits it. Temperature: the reaction gives out heat, so cooling raises the yield, but fewer collisions have enough energy, so both rates fall. So the plant uses about 450 degrees with iron. Pressure: four gas particles become two, so squeezing raises the yield and the rate, but strong equipment costs more and is less safe. So it uses about 200 atmospheres. Removal: taking the ammonia out keeps the reverse rate low, so the forward reaction stays ahead."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "When the forward reaction gives out heat and is too slow when cold, yield asks for cold and speed asks for hot, so industry compromises. That means a middle temperature, neither best for the yield nor best for the speed, that gives the most ammonia in the time it has."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Methanol, C H three O H, is made from carbon monoxide and hydrogen: C O plus two H two makes methanol, and the forward reaction gives out 91 kilojoules for each mole of methanol. A plant runs at about 250 degrees Celsius and 50 to 100 atmospheres, with a copper-based catalyst, condenses the methanol out and recycles the unused gas. A student says the plant should use 25 degrees and 500 atmospheres for the highest yield. Justify the plant's conditions: the temperature, the pressure and removing the methanol. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-temperature",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Temperature. The reaction gives out heat, so cooling shifts it toward methanol and raises the yield. But at 25 degrees almost no collisions have enough energy, so the rates are tiny and almost no methanol forms in time. At 250 degrees the rates are workable, and the catalyst speeds both directions without changing where the mixture settles. If you said the catalyst increases the yield, remember it changes the speed, not the destination. If you said hotter is always better because it is faster, remember that hotter also lowers the yield."
+      }
+    },
+    {
+      "id": "feedback-pressure-removal",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Pressure and removal. Three gas particles become one, so squeezing shifts toward methanol, and the crowding raises the rates too. Five hundred atmospheres would give somewhat more, but it costs far more and a leak is more dangerous, so the plant stops at 50 to 100. Condensing the methanol takes it away, so the reverse rate stays low and the shift runs forward again. If you said pressure slows the reaction, remember it crowds the particles. If you gave no reason against the highest pressure, add cost and safety."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question asks you to justify industrial conditions, take one condition at a time: what it does to the yield and why, to the rate and why, and what limits it. When the forward reaction gives out heat and is too slow when cold, yield and speed pull apart on temperature, so the plant compromises. If it takes in heat, heat helps both. Later, K puts numbers on this. Next: reading equilibrium graphs you have not seen before."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

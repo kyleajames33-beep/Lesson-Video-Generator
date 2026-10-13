@@ -108,7 +108,7 @@ export const SceneAttempt: React.FC = () => {
 				<Para at={c.c3b}>A new disease arrives.</Para>
 				<Para at={c.q3} q>Why is this field at more risk than a field grown from seed?</Para>
 			</Col>
-			<Enter at={c.pause} style={{position: 'absolute', left: 900, top: 112}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, color: INK_SOFT}}>Pause the video if you would like more time.</span></Enter>
+			<Enter at={c.pause} style={{position: 'absolute', left: 900, top: 112}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58, color: AMBER_INK, lineHeight: 1}}>Pause here to answer.</span></Enter>
 		</>
 	);
 };

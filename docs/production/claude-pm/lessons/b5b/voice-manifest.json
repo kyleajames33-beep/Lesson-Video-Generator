@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B5b-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b5b/lesson.json",
+  "lessonSha256": "8e6a3a17c39b08d9f51b5c439dd22b2428653418fe6d6ca88b36797b8df23f40",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b5b/lesson.production-brief.json",
+    "sha256": "b34fcb80f270a30582a0b3aaaf09eaf50728fb77b05848a71161e5303c542125"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two brothers have the same parents, yet they can look quite different. Each began from one sperm and one egg, and each of those carried just one set of chromosomes, not two. So how does a cell halve its chromosome number, and make gametes that differ from each other?",
+      "hash": "63bf929fe819",
+      "textSha256": "63bf929fe8195254ec2a140d795460aa593df5916ec3a347f8945a9d19549f8a",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/hook.63bf929fe819.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/hook.63bf929fe819.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/hook.63bf929fe819.generation.json",
+      "plannedRequestSha256": "329ede137b14923e1ae29e486c609dd96c9b80956a746ba8a4b65c4532278d41"
+    },
+    {
+      "id": "why-halve",
+      "parentSceneId": "why-halve",
+      "text": "Suppose sperm and eggs were made by mitosis, like skin cells. Each would carry 46 chromosomes, so a fertilised egg would start with 92, and the next generation with 184. Gametes need one set, 23 chromosomes. A cell makes them with a different kind of division called meiosis: it copies its DNA once, then divides twice.",
+      "hash": "6c2ec8cfba6d",
+      "textSha256": "6c2ec8cfba6d68a2b141107293324180d82ef512b81069eef530d501816901e1",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/why-halve.6c2ec8cfba6d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/why-halve.6c2ec8cfba6d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/why-halve.6c2ec8cfba6d.generation.json",
+      "plannedRequestSha256": "a45fe4082ffaca1f7a2c152ba053ba5af69f42d98689b516d3970e0b72295c0d"
+    },
+    {
+      "id": "model-alleles",
+      "parentSceneId": "model-alleles",
+      "text": "Here is our model cell again, two pairs of chromosomes. This time we mark three genes. On the long pair, the upper gene has a plum version and a teal version, and so does the lower gene. The short pair has one gene marked, again with a plum version and a teal version. We label each pair of versions with a capital and a small letter, only to tell them apart.",
+      "hash": "68a425bee4c1",
+      "textSha256": "68a425bee4c1fc66d0511abb884ba6f0151686d4adae33b34dff5b5680e71c0a",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/model-alleles.68a425bee4c1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/model-alleles.68a425bee4c1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/model-alleles.68a425bee4c1.generation.json",
+      "plannedRequestSha256": "ff6a8bc4b1572caa9cd926fbee595257cf3ef9dd8c6acbd089204a18c78baa8d"
+    },
+    {
+      "id": "prophase-one",
+      "parentSceneId": "prophase-one",
+      "text": "Meiosis starts like mitosis: in interphase every chromosome is copied, so each one has two sister chromatids. Then comes the first difference. In prophase one, each chromosome finds its homologous partner, and the two lie side by side, gene against gene. That lets the cell later send one partner of each pair to each end.",
+      "hash": "68a2c609aa65",
+      "textSha256": "68a2c609aa65fc9d9bb4e86d999941473d6360b4c2ed58fb94e98b1c2da49f65",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/prophase-one.68a2c609aa65.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/prophase-one.68a2c609aa65.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/prophase-one.68a2c609aa65.generation.json",
+      "plannedRequestSha256": "9b0fd61db94ce9af5fe274ad5b72e89e86c87110baac8922f426f15ca215ca1f"
+    },
+    {
+      "id": "crossing-what",
+      "parentSceneId": "crossing-what",
+      "text": "While they are paired, a chromatid from one chromosome and a chromatid from its partner break at the same place and swap the matching pieces. These two belong to different chromosomes, so they are called non-sister chromatids. This is crossing over.",
+      "hash": "ebbfabb9c98d",
+      "textSha256": "ebbfabb9c98d0c2f456ebed87e095f862d10687b9f2aa7874efaf221d2379440",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/crossing-what.ebbfabb9c98d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/crossing-what.ebbfabb9c98d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/crossing-what.ebbfabb9c98d.generation.json",
+      "plannedRequestSha256": "0f3f9625bd9917c2802c19cb405cf990e9f6238e471c765acf835a18e9f97514"
+    },
+    {
+      "id": "crossing-makes",
+      "parentSceneId": "crossing-makes",
+      "text": "It does not make new alleles. It makes new combinations of the alleles already there, so the four long chromatids are now all different, even the sister chromatids.",
+      "hash": "467c3cde6235",
+      "textSha256": "467c3cde623541b24c3c1a871d5caef03a7fbced41f184fe95947ed26afdd375",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/crossing-makes.467c3cde6235.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/crossing-makes.467c3cde6235.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/crossing-makes.467c3cde6235.generation.json",
+      "plannedRequestSha256": "020c0a1b280b0a716d2b434bda6586a5df17c56d8b564926b5d63aa95d8594a3"
+    },
+    {
+      "id": "metaphase-one-line-up",
+      "parentSceneId": "metaphase-one-line-up",
+      "text": "At the end of prophase one, the nuclear envelope breaks down. Then, in metaphase one, the pairs line up across the middle, with one partner facing each end.",
+      "hash": "965b87e3c076",
+      "textSha256": "965b87e3c076ae9211697ebb6747c26691762750e623af6fab17d87f07a9540a",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/metaphase-one-line-up.965b87e3c076.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/metaphase-one-line-up.965b87e3c076.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/metaphase-one-line-up.965b87e3c076.generation.json",
+      "plannedRequestSha256": "b1657303d3fd2e801cdc950af16e53868472ab87a4f170b641854c1ad843ce8f"
+    },
+    {
+      "id": "independent-assortment",
+      "parentSceneId": "independent-assortment",
+      "text": "Which partner faces which end is chance, and each pair decides on its own. Here plum long and plum short face left. Another cell could line up with plum long and teal short on the left. This is independent assortment.",
+      "hash": "9c3b1ab1d78d",
+      "textSha256": "9c3b1ab1d78d453b0c149c3bff3b9d791038d589e68432f27c2acd892af8917e",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/independent-assortment.9c3b1ab1d78d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/independent-assortment.9c3b1ab1d78d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/independent-assortment.9c3b1ab1d78d.generation.json",
+      "plannedRequestSha256": "800fff2bfc68f9b6fd8d2e58d782873c7adf848e42e36ab660a47c54f3bf4977"
+    },
+    {
+      "id": "first-division",
+      "parentSceneId": "first-division",
+      "text": "In anaphase one, the fibres pull the homologous partners apart, but the centromeres do not split, so each chromosome still has two chromatids. Each end now holds one of each kind of chromosome, which is one set. Telophase and cytokinesis finish the first division, and there are two cells, each with half the chromosome number. That is how meiosis one halves it.",
+      "hash": "1da49782bcd4",
+      "textSha256": "1da49782bcd440d7555f78c6297fb235589e1bb5d3fc558090cc07bc909e91b5",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/first-division.1da49782bcd4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/first-division.1da49782bcd4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/first-division.1da49782bcd4.generation.json",
+      "plannedRequestSha256": "8c50afcc449757f76269677a8ad9c450230c796ad580044cae96440acebf9b83"
+    },
+    {
+      "id": "second-division",
+      "parentSceneId": "second-division",
+      "text": "Each cell goes straight into the second division. A gamete cannot keep doubled chromosomes, because it would carry twice the DNA of one set, so each cell divides again to share out the two chromatids of each chromosome. In metaphase two, each chromosome lines up on its own. In anaphase two, the centromeres split and the sister chromatids are pulled apart. Because of crossing over, the two chromatids of a chromosome can differ, so the two cells get different chromosomes.",
+      "hash": "421cfdbe11c0",
+      "textSha256": "421cfdbe11c0ed210b984881c64ba582300b5c3333e57efe425a316a501ce0ac",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/second-division.421cfdbe11c0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/second-division.421cfdbe11c0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/second-division.421cfdbe11c0.generation.json",
+      "plannedRequestSha256": "63cee50ebdfde2a08047d83f0799a651df3c9dd1aeb218cc1a4aea9b4035691c"
+    },
+    {
+      "id": "four-cells",
+      "parentSceneId": "four-cells",
+      "text": "So one cell has made four haploid cells, and in this cell the letters show that all four differ. Now switch crossing over off. Without it there would be only two kinds, each twice.",
+      "hash": "db85182a9c07",
+      "textSha256": "db85182a9c07e4b09cee76a5073ce58e1b7dbe1153449731518bf7407d89ba6b",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/four-cells.db85182a9c07.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/four-cells.db85182a9c07.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/four-cells.db85182a9c07.generation.json",
+      "plannedRequestSha256": "13b4279acbd366ff6f35f92b9c47aefcd3b7b36d7548ddc925a47045982719df"
+    },
+    {
+      "id": "tracking",
+      "parentSceneId": "tracking",
+      "text": "Let's track the numbers in our model cell, which starts with four chromosomes. After copying, it still has four chromosomes, because we count centromeres, but now eight chromatids. After the first division, each of the two cells holds two chromosomes and four chromatids. After the second, each of four cells holds two chromosomes, and none has a sister chromatid, because the copies have been pulled apart. A human cell goes the same way, from 46 chromosomes to 23 in each of four cells.",
+      "hash": "4b92265b505a",
+      "textSha256": "4b92265b505a033c3423d723d8f4a53aed1595e79dec64027541fcf6ab1a36e5",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/tracking.4b92265b505a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/tracking.4b92265b505a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/tracking.4b92265b505a.generation.json",
+      "plannedRequestSha256": "b90c0e09b4a8aac13ab8dee1e409a59e18b49d7d5f603ee7f88f92e20ac04fca"
+    },
+    {
+      "id": "combinations",
+      "parentSceneId": "combinations",
+      "text": "How many combinations can assortment alone make? A pair's direction decides which partner goes into a particular gamete, and each pair decides on its own, so the choices multiply. Two pairs give two times two, which is 4. With n pairs, it is 2 to the power n. A human has 23 pairs, so 2 to the power 23, more than 8 million. So two gametes from one person almost never match, but it is possible.",
+      "hash": "115e97f80841",
+      "textSha256": "115e97f808416809b642e8c2dcacb9b475e76241e5c2bdb451f1f9e8ec99bea5",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/combinations.115e97f80841.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/combinations.115e97f80841.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/combinations.115e97f80841.generation.json",
+      "plannedRequestSha256": "0e0d7e4f4782eb0366f39c264e4665609b74f771688cb0f34d3ef270afc2e60e"
+    },
+    {
+      "id": "fertilisation",
+      "parentSceneId": "fertilisation",
+      "text": "Fertilisation joins two gametes, so 23 plus 23 makes 46 again. Meiosis halves the number and fertilisation restores it, so the number stays the same in every generation.",
+      "hash": "dccec80ea50d",
+      "textSha256": "dccec80ea50d899c7abf61adcef1b8eec3fc9352fa363734d1119510c34ae466",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/fertilisation.dccec80ea50d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/fertilisation.dccec80ea50d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/fertilisation.dccec80ea50d.generation.json",
+      "plannedRequestSha256": "8915f224a9f105a6a4530750ced5cd2d7d3f3d8ecdc4ada557df3ed10f5c1635"
+    },
+    {
+      "id": "compare",
+      "parentSceneId": "compare",
+      "text": "Mitosis is one division that makes two cells with the parent's chromosomes, identical, barring errors. Meiosis is two divisions after one copy, and makes four cells with half the number, and they are usually different from each other. The difference starts at the middle: in mitosis, each chromosome lines up on its own and its sister chromatids separate. In meiosis one, homologous pairs line up and the partners separate.",
+      "hash": "f5ab619e566f",
+      "textSha256": "f5ab619e566fbfa457be6ac90b7b8ee60d1fe977358e11cba1d753bd04c315c9",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/compare.f5ab619e566f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/compare.f5ab619e566f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/compare.f5ab619e566f.generation.json",
+      "plannedRequestSha256": "be1b4d48196aecea56a164be203ac47c4b9500cd9717722b6454c77a61acfe1c"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two questions, both on screen: the first about a pea plant, the second about a cell that is making gametes, part-way through a division. Pause here to answer.",
+      "hash": "6bb8186a1a94",
+      "textSha256": "6bb8186a1a94fcd76382b7f83ca29b877612d4d0bc98fd61f99496d91ae5ff5c",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/attempt.6bb8186a1a94.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/attempt.6bb8186a1a94.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/attempt.6bb8186a1a94.generation.json",
+      "plannedRequestSha256": "89b023ed74b815626c7fb93d6a39255828a5b4307bfa3848295aaa4c5140c811"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One. Each gamete holds 7 chromosomes, one from each pair. Each pair can send either partner, so the choices multiply: 2 to the power 7, which is 128. The fertilised egg holds 14, because 7 plus 7. If you said 14 for the gamete, you used the mitosis rule. If you said 14 for the combinations, you added up 2 seven times instead of multiplying. If you said 16,384, you used 14 for n, but n counts pairs. If you said 7 for the egg, you forgot that two gametes join.",
+      "hash": "b391b5393c1a",
+      "textSha256": "b391b5393c1a42ecf775977b6c9d98660e4c9365895007237183bd58d978d100",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/feedback-one.b391b5393c1a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/feedback-one.b391b5393c1a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/feedback-one.b391b5393c1a.generation.json",
+      "plannedRequestSha256": "2389ebfc5366ab383e719f8365981b14bce3e52da1f7e6ca6da17d822222b03a"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two. The chromosomes are lined up in homologous pairs, with no centromeres split, so this is metaphase of meiosis one. Six chromosomes in three pairs means each cell will hold 3 when this division finishes. If you said 6, you kept the number, but this division separates the homologous partners. If you said 12, you counted chromatids. If you said metaphase of mitosis or meiosis two, remember that in those each chromosome lines up on its own.",
+      "hash": "64d3ffb2eaf0",
+      "textSha256": "64d3ffb2eaf0127826e32879d22642fc71f72bfd666eeec772cf2cbf93d8367d",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/feedback-two.64d3ffb2eaf0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/feedback-two.64d3ffb2eaf0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/feedback-two.64d3ffb2eaf0.generation.json",
+      "plannedRequestSha256": "bbb53f980e32e5e75c30f5e41e1a371d824d98633a8823c6a1a15b9bb34d625b"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "To keep it straight: meiosis one splits the homologous pairs, and that halves the number. Meiosis two splits the sister chromatids, the two halves of each doubled chromosome. Then fertilisation joins two gametes and restores the number. Next: how DNA is arranged in different kinds of cell.",
+      "hash": "9cebd7170fb0",
+      "textSha256": "9cebd7170fb0d3ecfcba188be899d5c76ebd3153414fdd30abdd0d71edcd8a6c",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/memory.9cebd7170fb0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/memory.9cebd7170fb0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/memory.9cebd7170fb0.generation.json",
+      "plannedRequestSha256": "bbea36cb0d2ac31f915367aa1cd218992c8e67078f748a8c7051a19401bcf416"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B5b-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

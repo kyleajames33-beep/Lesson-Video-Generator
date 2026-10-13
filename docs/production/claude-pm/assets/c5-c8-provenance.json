@@ -42,10 +42,30 @@
     }
   ],
   "checks": [
-    {"lesson": "C5", "revision": 4, "report": "docs/production/claude-pm/checks/c5-check.md", "findings": 2},
-    {"lesson": "C6", "revision": 3, "report": "docs/production/claude-pm/checks/c6-check.md", "findings": 0},
-    {"lesson": "C7", "revision": 4, "report": "docs/production/claude-pm/checks/c7-check.md", "findings": 0},
-    {"lesson": "C8", "revision": 4, "report": "docs/production/claude-pm/checks/c8-check.md", "findings": 0}
+    {
+      "lesson": "C5",
+      "revision": 4,
+      "report": "docs/production/claude-pm/checks/c5-check.md",
+      "findings": 2
+    },
+    {
+      "lesson": "C6",
+      "revision": 3,
+      "report": "docs/production/claude-pm/checks/c6-check.md",
+      "findings": 0
+    },
+    {
+      "lesson": "C7",
+      "revision": 4,
+      "report": "docs/production/claude-pm/checks/c7-check.md",
+      "findings": 0
+    },
+    {
+      "lesson": "C8",
+      "revision": 4,
+      "report": "docs/production/claude-pm/checks/c8-check.md",
+      "findings": 0
+    }
   ],
   "ownerNotes": [
     {
@@ -65,5 +85,27 @@
       "notes": "NIST ideal-gas thermochemical data at 673.15 K give Kc about 0.563 L^2 mol^-2 and Kp about 1.84 x 10^-4 atm^-2, supporting the stated near-0.5 magnitude. The design's approximate Kp = 1.6 x 10^-4 converts to Kc = 0.488. See c8-check.md for source links. The video avoids the site SO3 examples with K = 270 versus 280 and the CO methanation question with K = 5.67 x 10^6, already identified in site-corrections.md. Site lesson 12's HI worked example checks: 0.148^2/(0.020 x 0.020) = 54.76, rounded 54.8."
     }
   ],
-  "remaining": "Claude must resolve the two C5 science findings before recording. Screen appearance, listening and release approval were outside this check."
+  "remaining": "Claude must resolve the two C5 science findings before recording. Screen appearance, listening and release approval were outside this check.",
+  "revalidation": {
+    "date": "2026-10-13",
+    "result": "Current lesson hashes match the earlier hand-in. Independently rechecked all four lessons; C5 retains two findings, C6 to C8 have none. Optional artwork decisions unchanged.",
+    "reports": [
+      {
+        "path": "docs/production/claude-pm/checks/c5-check.md",
+        "sha256": "389d0d7be585546be0aae1de9615a022415d874c19f8f9fc28aa7b2fcb4b914c"
+      },
+      {
+        "path": "docs/production/claude-pm/checks/c6-check.md",
+        "sha256": "cd04a810f504279e28b0d95d57ccee5c62d216a76faf26cc283d7e58a6c3c817"
+      },
+      {
+        "path": "docs/production/claude-pm/checks/c7-check.md",
+        "sha256": "f9a8a709aedc54f8bcc900c55388e304a274c932e4dfdd5a8f621d3933ca5b47"
+      },
+      {
+        "path": "docs/production/claude-pm/checks/c8-check.md",
+        "sha256": "dc2dda4a2b40629c10f651839e52e01bbf5fa5ce90532a3fafcebf2cac505ff0"
+      }
+    ]
+  }
 }

@@ -1,16 +1,31 @@
-# B3b independent check
+# B3b independent fact check
 
-Checked design Revision 4, site extract bio-m5-l05 and site-corrections against primary science sources and the NSW Biology Stage 6 (2017) agriculture content point.
+Checked 13 October 2026 for Brief 20 Part A, using Brief 03.
+
+Checked file: `docs/production/claude-pm/lessons/bio-m5-b03b.md`, Status Revision 4 (12 October), including the 13 October owner countdown change. SHA-256 of the exact file bytes: `ce1f414fcfd25a8b3eae189a05b2734d7ad060fbe905fd5387deeece7b42e305`.
+
+Scope: all quoted narration, Visual text and instructions, attempt conditions and feedback, key notes, memory aid and assumptions, author factual claims and asset descriptions. Read standing rules, plan, Brief 20, matching site extract `bio-m5-l05.md`, the adjacent l06 to l08 extracts and `site-corrections.md` (no L05 correction). Checked against NSW Biology Stage 6 (2017), not the replacement syllabus. No stills exist, so still-frame screen checks were skipped. This is an independent factual check, not listening or playback approval.
 
 | # | type | where | problem | fix |
 | --- | --- | --- | --- | --- |
-| 1 | science | Scene 2c: "a proven bull, one whose merit for milk is shown by its daughters' records or DNA tests" | DNA tests predict a young bull's genetic merit, but a proven bull has evidence from its daughters' performance. | Define proven using daughters' records; describe DNA tests as predicting merit. |
-| 2 | science | Scene 2c: "a disease or a harmful allele that one cow cannot resist can spread across the herd" | A harmful allele is inherited, not something a cow resists or catches from another cow. | Separate the mechanisms: shared susceptibility lets disease spread, while a bull can pass a harmful allele to many offspring. |
+| 1 | science | Scene 10 key note 1: "at the right time around ovulation (when she is on heat)"; repeated in Stops after and Revision 4 notes | The parenthesis equates ovulation with heat, although cows normally ovulate after standing heat ends, contradicting the corrected scene 2b. | Use "during heat, before ovulation" for the insemination timing. |
+| 2 | science | Scene 2c: "a disease or a harmful allele that one cow cannot resist can spread across the herd"; Visual: "On 'a disease or a harmful allele that one cow cannot resist can spread' a coded leaf-spot style disease icon passes along the orange cows" | A harmful allele is inherited through reproduction, not resisted or transmitted between cows like an infectious disease. | Separate shared disease susceptibility from harmful alleles passed to offspring; use the disease pulse only for infectious disease. |
+| 3 | science | Scene 2c: "a proven bull, one whose merit for milk is shown by its daughters' records or DNA tests"; author claim 4 | A DNA prediction alone does not make a dairy bull progeny-proven, which requires daughters' performance records. | Define "proven bull" through daughters' records; describe DNA-tested young bulls as having predicted merit. |
 
-Syllabus and site mismatch: None found.
+Evidence for finding 1: [Penn State, Heat Detection in Beef Cattle](https://extension.psu.edu/heat-detection-in-beef-cattle) explains ovulation about 25 to 32 hours after heat begins, sperm preparation time and insemination during the last half of heat. The issue is the retained key note, not the revised scene 2b narration or its separate heat and egg-ready bars.
 
-Screen: None found in the written visual descriptions. No still frames were provided for a layout check.
+Evidence for finding 2: [Herefords Australia, Understanding Genetic Conditions](https://www.herefordsaustralia.com.au/wp-content/uploads/2025/01/Understanding-Genetic-Conditions-Jan-25.pdf) distinguishes inherited alleles, carriers and affected offspring. [DataGene, Breeding replacements from herd bulls](https://www.datagene.com.au/wp-content/uploads/2023/11/Fact-sheet-30-natural-sires-genomics.pdf) advises genetic screening and avoiding bulls carrying recessive defects. The later statements that an allele can spread through descendants are valid; the error is resisting an allele and showing it moving between existing cows.
 
-Copy: None found.
+Evidence for finding 3: [Genetics Australia, Holsteins shine in December ABVs](https://genaust.com.au/news/holsteins-shine-in-december-abvs/) identifies proven bulls with milking daughters separately from the genomic list. [Genetics Australia, Reliability is King](https://genaust.com.au/news/eliability-king-genetics-australia/) distinguishes daughter-proven sires from their earlier genomic promise. [DataGene's natural-sire fact sheet](https://www.datagene.com.au/wp-content/uploads/2023/11/Fact-sheet-30-natural-sires-genomics.pdf) confirms that genomic predictions exist for sires with no milking daughters.
 
-Findings: 2 (science 2, syllabus 0, screen 0, copy 0).
+Syllabus and site mismatch: None found. The agriculture objective is confirmed in the [NSW Department of Education Biology study workbook](https://education.nsw.gov.au/content/dam/main-education/teaching-and-learning/curriculum/key-learning-areas/science/media/documents/biology-s6-aurora-hsc-study-day-notes-and-workbook.pdf), under the [official Biology Stage 6 (2017) syllabus](https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017). The direct legacy syllabus PDF failed to load. The lesson's plant and animal examples do not contradict the matching site extract. Necessary learner terms are defined or recalled from stated entry knowledge.
+
+Screen: None found in the written visual instructions beyond the science finding above. Still checks skipped because no stills exist.
+
+Copy: None found. No U+2014 in the design file. "Model answer" and "model judgement" identify example answers rather than filler.
+
+Other source checks used: [Penn State reproductive anatomy and AI placement](https://extension.psu.edu/dairy-repro-101-anatomy-and-function-in-a-dairy-cow); [USDA Holstein milk production and fertility research](https://www.ars.usda.gov/news-events/news/research-news/2009/ars-scientists-study-holstein-milk-production-fertility/); [USDA 2007 fertility study](https://www.aipl.arsusda.gov/publish/jds/2007/90_1008.pdf); [CIMMYT wheat crossing and segregating generations](https://repository.cimmyt.org/server/api/core/bitstreams/024ea3c6-d070-4569-bdc5-4c602084714b/content); [USDA Ug99 recovery plan](https://www.ars.usda.gov/ARSUserFiles/00000000/opmp/Wheat%20Stem%20Rust%20Ug99%20101016.pdf), which supports discovery in 1998 and characterisation in 1999; [Australian Wool Innovation, 50-year frozen semen result](https://www.wool.com/globalassets/wool/about-awi/media-resources/publications/beyond-the-bale/beyond-the-bale---december-2018.pdf); [University of Maryland dairy reproduction](https://dev.extension.umd.edu/resource/dairy-reproduction), supporting reduced bull-management expense; [NSW DPI wheat rust guide](https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0006/158964/stripe-rust-in-wheat.pdf), distinguishing rust species and their pustules. The generic rust hook plate is not presented as a Ug99 identification picture, so it creates no confirmed factual error. The conditional dairy verdict is an explicitly labelled judgement. The wheat attempt's resistance condition is explicitly hypothetical.
+
+Artwork impact: None of the three requested painted plates needs a change. Finding 2 changes the coded herd animation. Finding 1 changes the key notes only; the scene 2b timing visual already separates heat from ovulation.
+
+Findings: 3 total (science 3, syllabus 0, screen 0, copy 0).

@@ -462,7 +462,7 @@ LESSONS = {
         'design': D + 'lessons/bio-m5-b02c.md',
         'meta': {'title': 'How single-celled organisms make copies of themselves', 'subtitle': 'A bacterium has no partner to join with. How does one cell make another?', 'subject': 'Biology', 'yearLevel': 12, 'module': 5, 'lesson': 4,
                  'lessonIntent': 'Describe binary fission and budding as copy, share, split in named single-celled organisms, explain why DNA is copied before the cell splits, work out a doubling time example, and separate conjugation from reproduction.'},
-        'hold_seconds': 60,
+        'hold_seconds': 10,
         'ids': ['hook', 'problem-copy', 'share-split', 'doubling', 'yeast-budding', 'protist-fission', 'acineta', 'conjugation', 'same-pattern', 'attempt', 'feedback', 'memory', 'key-notes'],
         'progression': {
             'prerequisiteKnowledge': 'First video of this series: asexual reproduction is one parent making a copy without gametes joining, offspring are clones apart from rare copying errors, and fast copying suits steady conditions. Cells contain DNA, and some cells have a nucleus (given a one-clause meaning in scene 4). Powers of two.',
@@ -486,7 +486,7 @@ LESSONS = {
         'design': D + 'lessons/bio-m5-b03a2.md',
         'meta': {'title': 'What holds a pregnancy steady, then makes labour build?', 'subtitle': 'What stops another egg for nine months, and why does labour only get stronger once it starts?', 'subject': 'Biology', 'yearLevel': 12, 'module': 5, 'lesson': 6,
                  'lessonIntent': 'Explain progesterone as negative feedback on FSH and LH during pregnancy, trace birth as a positive feedback loop with oxytocin, separate prolactin (makes milk) from oxytocin (ejects milk), and write an Explain answer that uses both loops.'},
-        'hold_seconds': 90,
+        'hold_seconds': 10,
         'ids': ['hook', 'fsh-lh', 'brake', 'thermostat', 'brake-stays-on', 'oestrogen', 'trigger', 'loop-closes', 'two-kinds', 'explain-answer', 'milk-jobs', 'milk-trigger', 'attempt', 'feedback-one', 'feedback-two', 'feedback-three', 'memory', 'key-notes'],
         'progression': {
             'prerequisiteKnowledge': 'B3a part 1 and earlier: gametes, internal fertilisation, the corpus luteum, hCG and progesterone, and the placenta taking charge of progesterone. Students may have heard of periods and labour but not of FSH, LH, the pituitary or feedback.',
@@ -510,7 +510,7 @@ LESSONS = {
         'design': D + 'lessons/chem-m5-c04a.md',
         'meta': {'title': 'Squeezing a gas mixture at equilibrium', 'subtitle': 'Squeeze a gas mixture that is sitting at equilibrium. Which way does it go, and does every rise in pressure do the same thing?', 'subject': 'Chemistry', 'yearLevel': 12, 'module': 5, 'lesson': 5,
                  'lessonIntent': 'Predict the shift on compression or expansion by counting only gas particles, explain it as which reaction gains more when every gas is more crowded, handle an equal count and a solid, and tell a squeeze from adding an inert gas at fixed volume.'},
-        'hold_seconds': 60,
+        'hold_seconds': 10,
         'ids': ['hook', 'syringe-equilibrium', 'squeeze-doubles', 'joining-gains-more', 'response', 'new-equilibrium', 'graphs', 'fewer-gas-particles', 'equal-counts', 'solids', 'squeeze-or-argon', 'memory-aid', 'attempt', 'feedback-one', 'feedback-two', 'decision-rule', 'key-notes'],
         'progression': {
             'prerequisiteKnowledge': 'C1, C2, C3 and Year 11: dynamic equilibrium means equal non-zero rates in a closed system; rate means how much changes per second; more particles meeting means more events per second; the faster rate falls and the slower rate rises until they meet; a change shows up as the moment of the change then the response, only partly cancelled; gas pressure is particles hitting the walls; the numbers in front of species in a balanced equation count particles.',
@@ -534,7 +534,7 @@ LESSONS = {
         'design': D + 'lessons/chem-m5-c04b.md',
         'meta': {'title': 'Catalysts and equilibrium', 'subtitle': 'A catalyst makes a reaction faster. So why does it not give more product at equilibrium?', 'subject': 'Chemistry', 'yearLevel': 12, 'module': 5, 'lesson': 6,
                  'lessonIntent': 'Explain a catalyst as an alternative pathway with a lower activation energy that raises the forward and reverse rates, so equilibrium is reached sooner at an unchanged mixture, and tell product formed in a limited time from the amount at equilibrium.'},
-        'hold_seconds': 75,
+        'hold_seconds': 10,
         'ids': ['hook', 'ridge', 'route', 'lower-pass', 'lower-pass-both-ways', 'tube-a', 'tube-b', 'same-mixture', 'limited-time', 'catalyst-at-equilibrium', 'which-rates-change', 'memory-aid', 'attempt', 'feedback-one', 'feedback-two', 'decision-rule', 'key-notes'],
         'progression': {
             'prerequisiteKnowledge': 'C1 to C4a and Year 11: dynamic equilibrium means equal non-zero rates in a closed system; rate means how much changes per second; the faster rate falls and the slower rate rises until they meet; a disturbance shows up as the moment of the change then the response; only collisions with enough energy make a reaction happen (C3); heating helps the reaction that takes in heat most (C3); a squeeze with unequal gas counts changes the two rates by different factors, and the equal-count H2 + I2 squeeze raised both by the same factor with no shift (C4a).',
@@ -558,7 +558,7 @@ LESSONS = {
         'design': D + 'lessons/bio-m5-b03a.md',
         'meta': {'title': 'Fertilisation, implantation and keeping a pregnancy going', 'subtitle': 'A sperm has just joined an egg. What has to happen next before there is a pregnancy?', 'subject': 'Biology', 'yearLevel': 12, 'module': 5, 'lesson': 5,
                  'lessonIntent': 'Trace a human pregnancy from fertilisation to implantation, explain why the embryo\'s hCG is needed to keep the corpus luteum making progesterone, state that the placenta takes over progesterone, describe placental exchange without blood mixing, and separate embryo from fetus.'},
-        'hold_seconds': 75,
+        'hold_seconds': 10,
         'ids': ['hook', 'meeting', 'gametes', 'zygote', 'cleavage', 'blastocyst', 'lining', 'progesterone', 'implantation', 'hcg', 'handover', 'exchange', 'attempt', 'feedback-one', 'feedback-two', 'feedback-three', 'memory', 'key-notes'],
         'progression': {
             'prerequisiteKnowledge': 'First video of this series: a gamete carries one set of chromosomes and one set plus one set makes the full two sets in the zygote. The animals video: mammals fertilise internally and invest in a few young. Year 11: cells, enzymes, mitochondria and diffusion as movement from more to less. No hormone and no menstrual cycle is assumed.',

@@ -54,3 +54,15 @@ Applied to `../lessons/bio-m5-b05b.md` (Revision 3, 13 Oct).
 | 1 | Scene 9 no longer speaks any polar body point (the female sentence was cut). The screen tag now reads "female: one egg and polar bodies that break down" with no number, and claim 11 says the same and records that textbooks differ on whether the first polar body divides. |
 | 2 | The placeholders in the Decisions "Narration" bullet are filled from the length section: 1,053 words, about 5.7 minutes of narration, plus a 10 second attempt countdown (owner pause rule), 75 s of key notes and about 35 s of other holds, a runtime of about 7.7 minutes. |
 | UNVERIFIED 1 to 3 | No change: "crossing points help hold the pair together" is a screen-only tag (chiasmata, supported); pea 2n = 14 is long established; the polar body count is no longer stated. |
+
+## Codex check resolution (13 Oct)
+
+Applied to `../lessons/bio-m5-b05b.md` (Revision 4, "Codex fact check resolved; ready to voice").
+
+| # | Finding | Decision | New wording |
+| --- | --- | --- | --- |
+| 1 | Scene 1 called a 46-chromosome cell a gamete | Pull back from the gamete to a diploid precursor cell before the 23 plus 23 reduction. | Visual: on "halve its chromosome number" the camera pulls back to a parent's gamete-making cell tagged "before: 46 chromosomes, two sets", then a flat arrow cuts the rows to a small cell tagged "gamete: 23". Narration unchanged. |
+| 2 | Envelope breakdown placed in metaphase I | Breaks down at the end of prophase I; chips reordered. | Scene 6a: "At the end of prophase one, the nuclear envelope breaks down. Then, in metaphase one, the pairs line up across the middle, with one partner facing each end." Chip "1 prophase I" stays lit during the breakdown; chip "2 metaphase I" lands on "in metaphase one". |
+| 3 | "Single strand" implied single-stranded DNA | Use one DNA molecule or undoubled chromosome. | Scene 10 tags: "0: none to count, one DNA molecule each" and "none: each chromosome is undoubled again (one chromatid, one DNA molecule)". Key note 4: "Result: four haploid cells, each chromosome undoubled (one chromatid, one DNA molecule)." |
+| 4 | Scene 12 mixed-colour gametes do not make one set per colour | Colour each gamete's whole contribution as one set first. | Scene 12 visual: left gamete all plum, right gamete all teal, tag "each gamete brings one set"; zygote holds a plum set of 23 and a teal set of 23, tag "now plum and teal mean the cell's two sets: one from each gamete". |
+| 5 | Scene 8 cue typo | Use the narration phrase. | Cue: "the two cells get different chromosomes" (present verbatim in the scene 8 narration). |

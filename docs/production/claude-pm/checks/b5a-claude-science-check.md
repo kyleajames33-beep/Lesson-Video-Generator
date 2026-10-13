@@ -86,3 +86,11 @@ Applied to `../lessons/bio-m5-b05a.md` (Revision 4, 13 Oct).
 | U2 | Kept: "Checks catch many of these, but not all" (qualitative, supported). |
 | U3 | "Without tangling" dropped; 4a says "easier to move". |
 | U4, U5 | No change: wording matches standard textbooks; amoeba mitosis is not in doubt. The amoeba envelope detail is not stated in the learner copy. |
+
+## Codex check resolution (13 Oct)
+
+Applied to `../lessons/bio-m5-b05a.md` (Revision 5, "Codex fact check resolved; ready to voice").
+
+| # | Finding | Decision | New wording |
+| --- | --- | --- | --- |
+| 1 | Scene 6b non-disjunction drawing showed one unopened X (one centromere) going right, so the stated counting rule gives 4, not 5 | Show two separate daughter chromosomes, each with its own centromere, moving to the same pole: five on the right, three on the left, counting rule kept (one centromere, one chromosome). Because the visual now shows the chromatids already separated, the narration and key note no longer say "fail to separate". | Scene 6b: "Rarely, the two chromatids of one chromosome both move to the same end of the cell, so one new cell gets an extra chromosome and the other is one short." Key note: "Rarely both sister chromatids move to the same end of the cell: one cell gains a chromosome, one loses one." Visual: the long plum X splits at its centromere into two daughter chromosomes, each with its own centromere, both travel right; tags "3 chromosomes" (left) and "5 chromosomes" (right). |

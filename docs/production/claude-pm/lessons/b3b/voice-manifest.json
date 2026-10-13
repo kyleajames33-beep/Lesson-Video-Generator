@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B3b-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b3b/lesson.json",
+  "lessonSha256": "c27d1a2e08fcc0453d3a8d18e5c2f944410ffe27bfb51d63f1cfaef2a18aaa18",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b3b/lesson.production-brief.json",
+    "sha256": "f7c2f4ec935c3396688c3bbda36c64d7e1c2d865fe5b6a7b223ae7ef9b8fcb94"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A dairy farmer wants her calves fathered by the best bull in the country, but he lives hours away. A wheat breeder wants one plant with the high yield of one variety and the rust resistance of another. Rust is a fungal disease of wheat. How could each of them use what we know about reproduction, and how would you judge whether it is worth the cost?",
+      "hash": "99b2cbb85dcf",
+      "textSha256": "99b2cbb85dcfc1ad10d35b15a6134e1267271d05973718b0f38e2a00b6855c9d",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/hook.99b2cbb85dcf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/hook.99b2cbb85dcf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/hook.99b2cbb85dcf.generation.json",
+      "plannedRequestSha256": "4ab5cb54ebcc96696c96d24d9c4241301c524b1a31ea5fb476006783ac012969"
+    },
+    {
+      "id": "insemination",
+      "parentSceneId": "insemination",
+      "text": "The dairy farmer uses artificial insemination, which means placing semen, the fluid that carries sperm, into a female's reproductive tract without natural mating. His semen is collected, diluted and split into many small doses, and usually frozen in thin straws that can be sent to any farm. There, a trained worker thaws one dose and uses a thin tube to place it inside the cow's uterus.",
+      "hash": "04f8dd30341d",
+      "textSha256": "04f8dd30341dc93bbed913982d1d34d0faaa6f951aad80ba1a1ea78cd807b078",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/insemination.04f8dd30341d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/insemination.04f8dd30341d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/insemination.04f8dd30341d.generation.json",
+      "plannedRequestSha256": "bb7b479c94f73c517e122333aac729184248323af9bfd2b7224c8150cb9e45f2"
+    },
+    {
+      "id": "heat-timing",
+      "parentSceneId": "heat-timing",
+      "text": "This works only because of what we know about reproduction. A cow has an egg ready for only a short time in each cycle, around ovulation, the release of an egg. Farmers call the time when she is ready to mate being on heat. She releases her egg about a day after it starts, so the dose must go in during heat, before the egg is released.",
+      "hash": "350f28c34a8f",
+      "textSha256": "350f28c34a8f3670a0bf8a8aac3945493fa3610c5a26953794facb39a25e4979",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/heat-timing.350f28c34a8f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/heat-timing.350f28c34a8f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/heat-timing.350f28c34a8f.generation.json",
+      "plannedRequestSha256": "df64f7a65c7e367f0332524fb8387f825ad24fe9c1c871bf169a5cc03038e00e"
+    },
+    {
+      "id": "gain-and-risk",
+      "parentSceneId": "gain-and-risk",
+      "text": "What does it gain? Calves from a proven bull, one whose merit for milk is shown by its daughters' milk records, on many farms, and faster improvement in traits like milk yield than leaving mating to chance. But the same reach is the risk. If a few bulls father most of the calves, the herd's gene pool, its variety of alleles, narrows. The cows then share more of the same alleles. If the herd is closely related, the cows share a weakness to a disease, so one disease can spread through the whole herd. And a harmful allele carried by a popular bull can be passed to many calves.",
+      "hash": "871b505001b4",
+      "textSha256": "871b505001b45847b6b9a933ca3e98fe76eb14c15d23ad3c714a34cf59819dae",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/gain-and-risk.871b505001b4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/gain-and-risk.871b505001b4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/gain-and-risk.871b505001b4.generation.json",
+      "plannedRequestSha256": "c6c0c211245d721cf0477b2b6448648be52eca2fc1eaa124c91a19d09b783875"
+    },
+    {
+      "id": "fertility-cost",
+      "parentSceneId": "fertility-cost",
+      "text": "Studies of Holstein cows in several countries found that as milk yield rose through selection, the chance of becoming pregnant after each insemination fell, and part of the fall was genetic. Insemination makes it easy to use the top milk bulls everywhere, so selection for one trait runs fast, and so does its side effect. A cow that struggles to get pregnant can have a harder life on the farm. Semen and a trained worker cost money, but usually less than buying and keeping a top bull on every farm.",
+      "hash": "cedc4ed56ffa",
+      "textSha256": "cedc4ed56ffad5724f096cd8591adb8f8c744fe2425df1b1db87e62991ce8326",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/fertility-cost.cedc4ed56ffa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/fertility-cost.cedc4ed56ffa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/fertility-cost.cedc4ed56ffa.generation.json",
+      "plannedRequestSha256": "30e4ebfd6ea42531b102e0e4b85fcc98f9480d1e5876ccda53429221cb9458f8"
+    },
+    {
+      "id": "pollination",
+      "parentSceneId": "pollination",
+      "text": "The wheat breeder uses artificial pollination, where a person, not the wind or an insect, puts pollen on a chosen stigma. Wheat flowers usually pollinate themselves, so she first removes the anthers from the plant that will make the seeds, before they release any pollen. Then she places pollen from the rust-resistant plant on the stigmas and covers the flowers with a bag, so no other pollen can arrive.",
+      "hash": "59890f69cd1f",
+      "textSha256": "59890f69cd1fd05d039008c80140f1bf51ee91eac6cdac9ada9d9ef861cabbf9",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/pollination.59890f69cd1f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/pollination.59890f69cd1f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/pollination.59890f69cd1f.generation.json",
+      "plannedRequestSha256": "61f43487c4a35c60ff1e1adac103eea292d7549cf283d65d9a302dc90e029b35"
+    },
+    {
+      "id": "pollination-knowledge",
+      "parentSceneId": "pollination-knowledge",
+      "text": "Pollen is made in the anthers, lands on a stigma, and a tube carries sperm to the egg. Every seed has the two parents she picked, so her first seedlings all carry alleles from both. When their seeds grow, the alleles are mixed in new ways, as we saw in the first video, so only some plants show both traits. She keeps those and repeats this for several generations. The gain is a new variety, but it takes years of hand work.",
+      "hash": "fc8d24a8d779",
+      "textSha256": "fc8d24a8d7797ca3b2722efc0a6879e60e2a4fd275e337c7cf44ac15d13292a4",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/pollination-knowledge.fc8d24a8d779.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/pollination-knowledge.fc8d24a8d779.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/pollination-knowledge.fc8d24a8d779.generation.json",
+      "plannedRequestSha256": "8d540d6abf0ea68e1e1cdb1d6cb6b0ffbd7653530fd8dae7b25cbb6e67259269"
+    },
+    {
+      "id": "shared-weakness",
+      "parentSceneId": "shared-weakness",
+      "text": "And if farmers everywhere grow that one variety, they share the same defences. A new strain of the stem rust fungus, first found in Uganda in 1998 to 1999, overcame a resistance gene that many wheat varieties carried.",
+      "hash": "843d62f946d5",
+      "textSha256": "843d62f946d5117847ba36cf70210ed5d591bc3bf079fafced9fe68be084e12d",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/shared-weakness.843d62f946d5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/shared-weakness.843d62f946d5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/shared-weakness.843d62f946d5.generation.json",
+      "plannedRequestSha256": "9a6b8be4c2e0b0516e828c878e4bd9432d515da41eb7e955e004d3b5b3529b75"
+    },
+    {
+      "id": "cloning",
+      "parentSceneId": "cloning",
+      "text": "There is a third option: copy the winner. A potato grower can plant pieces of tubers from one excellent plant, and every new plant has the same alleles, so it is a clone. That gives a uniform crop quickly. It also means every plant shares one weakness, as the Cavendish banana shows.",
+      "hash": "0b7e11b6ab60",
+      "textSha256": "0b7e11b6ab60e339bf85f764028929331944cf8c570590a510ddbd70acba9c44",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/cloning.0b7e11b6ab60.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/cloning.0b7e11b6ab60.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/cloning.0b7e11b6ab60.generation.json",
+      "plannedRequestSha256": "e0835157de08ea85d6a5d1389ecf1a2facebfbdcefd2e2bc5b706b029a3f9ba4"
+    },
+    {
+      "id": "evaluate",
+      "parentSceneId": "evaluate",
+      "text": "Evaluate means make a judgement using criteria, which are the things you judge it by. Four make a good start. Gain: what does it improve, shown by evidence such as a comparison with similar farms that do not use it? Variety: does it narrow the gene pool? Cost: money, time and skill. And for animals, welfare, which is how well their lives go. A good answer gives a judgement, reasons from each criterion, a weighing, and when it would change.",
+      "hash": "171ee81666bd",
+      "textSha256": "171ee81666bd66e15ddfc93525c067cb94753ae0dac530ec49658da02d8fa020",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/evaluate.171ee81666bd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/evaluate.171ee81666bd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/evaluate.171ee81666bd.generation.json",
+      "plannedRequestSha256": "973b1fcd1ffabc7509765414b55833eeb173de69c3197540a536bcedd3014744"
+    },
+    {
+      "id": "model-judgement-gain",
+      "parentSceneId": "model-judgement-gain",
+      "text": "Here is a model answer for dairy farming. First, the judgement. It is worthwhile when many unrelated bulls are used, each on only a share of the cows, and health traits count in choosing them. Second, the gain. Records can compare herds using proven bulls with similar herds that mate naturally, and show faster gains in traits such as milk yield.",
+      "hash": "fd11113d4e57",
+      "textSha256": "fd11113d4e57670af9368a6f4179fdefc933a66017e927f580841268d534157c",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-judgement-gain.fd11113d4e57.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-judgement-gain.fd11113d4e57.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-judgement-gain.fd11113d4e57.generation.json",
+      "plannedRequestSha256": "9918c5a5f26ff97a87c8325e0b1c289ba2f3bf7f701746e10638d42de80363fe"
+    },
+    {
+      "id": "model-variety-cost",
+      "parentSceneId": "model-variety-cost",
+      "text": "Third, the variety. If a few bulls father most of the calves, the gene pool narrows, so one disease can spread widely. Fourth, cost and welfare. Semen and trained workers cost money, and selecting only for milk yield has been linked with lower fertility, which can be a welfare cost for the cow.",
+      "hash": "38d53457e5f9",
+      "textSha256": "38d53457e5f9825d567cc9dec404833cea55490669fdefb69144e94eb1e346aa",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-variety-cost.38d53457e5f9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-variety-cost.38d53457e5f9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-variety-cost.38d53457e5f9.generation.json",
+      "plannedRequestSha256": "6bd7f4a756e93b7714d3d05368fa734ce6da21ee2d4a7795ce62a0c725d6bd84"
+    },
+    {
+      "id": "model-verdict",
+      "parentSceneId": "model-verdict",
+      "text": "Finally, weigh them. Here the gain can be large and the money cost is usually lower than keeping top bulls on every farm, so the answer turns on variety and welfare, and both depend on how the bulls are chosen. The verdict: the benefit is real, and it lasts if many unrelated bulls are used, each on only a share of the cows, and health traits count in choosing them. Frozen semen, which can be stored for decades, from older, different bulls, heritage breeds, which are older breeds still bred, and outcrossing, which means breeding with unrelated animals, can also protect variety.",
+      "hash": "4966f5f0ed22",
+      "textSha256": "4966f5f0ed22ddd35b532027c91725945ce3afd7ad88bb5a6590d9e90db3e4d5",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-verdict.4966f5f0ed22.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-verdict.4966f5f0ed22.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/model-verdict.4966f5f0ed22.generation.json",
+      "plannedRequestSha256": "9eeec4f8a51ed13b1faf9a6d5a94d72b9a6a0ec4a660b7de56a030986a43f368"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Two situations. One: a sheep farmer uses frozen semen from one champion ram on every ewe in her flock for ten years, and the farms that buy her breeding lambs do the same. Give one benefit of this plan, one risk to the flock over those ten years, and one change that keeps the benefit and lowers that risk. Two: a breeder wants wheat variety P to gain rust resistance from variety Q. The flowers of P pollinate themselves. She places pollen from Q on P's open flowers and leaves the plants in the paddock. Assume Q's pollen is healthy and every seed it fertilises grows into a resistant plant, yet many seedlings are not resistant. Suggest why, and name two steps she should add. Pause here to answer.",
+      "hash": "7d26fc74ba6a",
+      "textSha256": "7d26fc74ba6a8ab17df8a8cc661cc62fd5afb8a2bdfd7704aa3a13f44dadaa5e",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/attempt.7d26fc74ba6a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/attempt.7d26fc74ba6a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/attempt.7d26fc74ba6a.generation.json",
+      "plannedRequestSha256": "d731fd74550855d87f957ea6ebdacfac87ba264531929bbc5b421fde1446bb39"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One, the benefit is the champion's traits spreading quickly across the flock, usually at a lower cost than keeping a ram on every farm. The strongest risk is a narrow gene pool: after ten years most animals share his alleles, so one disease, or one harmful allele he carries, can reach them all. Using semen from several unrelated good rams keeps the benefit and lowers that risk. A risk that the semen might not work is a cost of one dose, not what ten years of one ram does to the flock.",
+      "hash": "cf56cd32a019",
+      "textSha256": "cf56cd32a019e011352ba188c4b9286ab66ed3441be87d13ead754c6c0383d01",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/feedback-one.cf56cd32a019.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/feedback-one.cf56cd32a019.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/feedback-one.cf56cd32a019.generation.json",
+      "plannedRequestSha256": "113ae0c1b6b67867acb1b2fd6fbb7ea9c603f31f50ceb7df977ee0339448793c"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two, some seeds were fertilised by P's own pollen, or by pollen blown in, because the anthers were still there and the flowers were open. She should remove P's anthers before they release pollen, and cover the flowers with a bag after adding Q's pollen. If you said Q's pollen failed, the question says it is healthy, so the problem is which pollen arrived.",
+      "hash": "eb38c05befef",
+      "textSha256": "eb38c05befefe5395477617569424d66523936104d90a8837713a10b88c4d2e3",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/feedback-two.eb38c05befef.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/feedback-two.eb38c05befef.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/feedback-two.eb38c05befef.generation.json",
+      "plannedRequestSha256": "5cd18cf52540a3b486360c2c513267cb41d2bbb2c6b02a0d815d4643fd781cf3"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Remember, picking a few parents and using them widely speeds up the gain and risks the variety. So when you see a farming method, ask four things: gain, variety, cost, welfare, and then say when it is worth it. Next time: how a cell copies its DNA, the step behind every clone.",
+      "hash": "b418c667d4dd",
+      "textSha256": "b418c667d4dd15a8e4627895f3d2e74ad09f244dc4dbe60743d1ee1dd2edefdd",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/memory.b418c667d4dd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/memory.b418c667d4dd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/memory.b418c667d4dd.generation.json",
+      "plannedRequestSha256": "e86976ded815f0008eb4ea4c987083b7b873a6db0e4218e0bd57433f626bd0a1"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3b-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

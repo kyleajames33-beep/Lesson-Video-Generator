@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b3b/lesson.json",
+    "lessonSha256": "c27d1a2e08fcc0453d3a8d18e5c2f944410ffe27bfb51d63f1cfaef2a18aaa18"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "The first video of this series: clone, alleles, variation, asexual copying is fast and alike while sexual reproduction is slow and varied, and the Cavendish banana as a clone with one shared weakness. The plant reproduction video: anthers make pollen, a stigma receives it, a pollen tube carries sperm to the egg, pollination is not fertilisation, bags keep pollen out. The mammal videos: sperm must reach an egg and an egg is released at ovulation. Not assumed: selective breeding, artificial insemination, artificial pollination, gene pool, semen, being on heat, rust, evaluate, criteria.",
+    "startsWith": "A dairy farmer who wants calves from a bull that lives hours away, and a wheat breeder who wants the yield of one variety and the rust resistance of another.",
+    "stopsAfter": "Saying what artificial insemination and artificial pollination do and which reproduction knowledge each depends on; saying why copying a winner gives a uniform crop and a shared weakness; defining evaluate as making a judgement using criteria and using gain, variety, cost and welfare as a good start; building a model Evaluate answer with a judgement, gain with evidence, variety, cost and welfare, and a weighing with a verdict that says when; applying the same reasoning to an unseen sheep case and an unseen plant fault.",
+    "nextLesson": "DNA structure and semi-conservative replication: how a cell copies its DNA, the step behind every clone and every egg and sperm."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b03b.md"
+  ],
+  "teaching": {
+    "task": "Explain how farmers use knowledge of reproduction to improve animals and crops, and evaluate the gain and the cost of each method.",
+    "causalExplanation": "Artificial insemination works because an egg is ready for only a short time around ovulation, so semen that is collected, split into doses and usually frozen can be placed in the cow during heat from a bull on any farm. Artificial pollination works because anthers make pollen, pollen landing on a stigma leads to a pollen tube that carries sperm to the egg, and bags keep other pollen out. Both speed up improvement by picking few parents, and the same reach narrows the gene pool, so one disease can reach every animal or plant, and chasing one trait can harm another. A good evaluation weighs the gain, the variety, the cost and the welfare and says when the method is worth it.",
+    "conversationalApproach": "Opens on two farmers with a wish and a distance or a disease, shows what each person does with their hands before naming the method, fills one scorecard of gain, variety, cost and welfare across the three methods, then names evaluate and builds a model answer one card at a time before an unseen sheep and wheat case.",
+    "openingDecision": "A dairy farmer wants calves from the best bull in the country and a wheat breeder wants yield and rust resistance in one plant. How could each of them use what we know about reproduction, and how would you judge whether it is worth the cost?",
+    "understandingCheck": "Give one benefit, one ten-year risk and one change that keeps the benefit for a sheep farmer using one champion ram, and name why many seedlings are not resistant and two steps that fix it when a wheat breeder places pollen on open flowers of a plant that pollinates itself.",
+    "curriculumScope": "Evaluate the impact of scientific knowledge on the manipulation of plant and animal reproduction in agriculture (Module 5). Embryo transfer, general selective breeding, DNA and the nucleus, cloning of animals and the 6-mark Assess question are held back."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted dairy bull and cow, wheat ear and floret, and wheat leaf with rust plates beside coded straws, freezer, cycle strip, gene pool bead tray, scorecard, model answer cards, attempt boards and countdown. Colour key: green gain, blue variety, amber cost, rose welfare, flat grey tags for risks so nothing reads as a score.",
+    "transitionPlan": "The hook plates slide in side by side; the bull plate stays while the straw route draws; the tract outline enlarges for the timing scene; the scorecard and gene pool tray appear in the gain and risk scene and stay in the same positions; the camera pushes into one wheat floret; the flower cutaway crossfades in as a recall; the potato and banana plates crossfade in; the scorecard enlarges for the evaluate scene and cards stack for the model answer; the attempt board removes the scorecard and tray and they return in the feedback and memory scenes; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Painted dairy bull and cow pair on the left, the wheat leaf plate (rust beside healthy) and the wheat ear plate on the right, a coded map chip and two small trait chips",
+      "teachingReason": "Poses two linked questions on two real farmers: how each gets what they want, then how to judge whether it is worth it",
+      "narrationCue": "wants her calves fathered by the best bull in the country / hours away / Rust is a fungal disease of wheat / how would you judge whether it is worth the cost",
+      "motionPurpose": "A dashed line draws between the two farms, a ring marks the rust spots, two trait chips point to one wheat ear with a question mark, and the heading holds on its question",
+      "motionRole": "explain",
+      "onScreenChange": "The bull and cow plate fills the left; a map chip draws a dashed line on \"hours away\"; the rust leaf plate shows a scribble circle on the pustules on \"Rust is a fungal disease of wheat\"; the ear plate slides in with \"high yield\" and \"rust resistant\" chips arrowing to one ear; the heading writes on and its second half writes on \"worth the cost\"",
+      "motionTools": [
+        "CameraStage push",
+        "HandText write-on",
+        "DrawPath",
+        "ScribbleCircle",
+        "plate slide-in"
+      ],
+      "holdPurpose": "Hold on the question mark for about two seconds"
+    },
+    {
+      "sceneId": "insemination",
+      "visualDecision": "new",
+      "visualReference": "Bull plate at the left, coded collection vial, straws, freezer icon and a coded cutaway of the cow's reproductive tract with a thin tube",
+      "teachingReason": "Shows what the farmer does, step by step, before the name artificial insemination is used again as a label",
+      "narrationCue": "artificial insemination / collected, diluted and split into many small doses / usually frozen / any farm / thaws one dose",
+      "motionPurpose": "The vial fills and splits into a row of straws, frost spreads, one straw travels to the cow plate, thaws, and a thin tube carries the dose into the uterus",
+      "motionRole": "explain",
+      "onScreenChange": "The vial fills on \"collected\"; its contents divide into straws on \"split into many small doses\"; a frost wash and an opening freezer icon appear on \"usually frozen\"; a dot carries one straw along a dashed route on \"any farm\"; the frost fades and a thin tube draws into the cow's tract outline on \"thaws one dose\"",
+      "motionTools": [
+        "TravelingDotOnPath",
+        "DrawPath",
+        "frost wash",
+        "HandText write-on",
+        "plate reuse"
+      ],
+      "holdPurpose": "Brief hold on the dose reaching the uterus"
+    },
+    {
+      "sceneId": "heat-timing",
+      "visualDecision": "new",
+      "visualReference": "Enlarged cow tract outline, coded cycle strip with an on heat bar and a short green egg-ready arc, and a clock ring",
+      "teachingReason": "Shows why timing matters: the egg is ready for only a short window, so the dose must be placed during heat",
+      "narrationCue": "an egg ready for only a short time in each cycle / being on heat / about a day after it starts / during heat, before the egg is released",
+      "motionPurpose": "The tract enlarges, a short green window draws on the cycle strip, an egg leaves the ovary, and a clock ring ticks across the heat bar before the dose is placed",
+      "motionRole": "explain",
+      "onScreenChange": "The tract outline enlarges; the cycle strip draws with a short green \"egg ready\" arc on \"an egg ready for only a short time\"; an egg dot leaves an ovary on \"ovulation\"; the label \"on heat\" writes over the heat bar with a ticking clock ring; the egg follows about a day later and the dose arrow lands inside the heat bar",
+      "motionTools": [
+        "CameraStage push",
+        "DrawPath arc",
+        "TravelingDotOnPath",
+        "clock ring",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the heat bar and the egg window together"
+    },
+    {
+      "sceneId": "gain-and-risk",
+      "visualDecision": "new",
+      "visualReference": "Coded scorecard (gain, variety, cost, welfare by method), gene pool tray of 24 beads in six colours with a herd of cow icons, a gentle rising line marked illustrative",
+      "teachingReason": "Names the gain first, then shows with the tray how the same reach narrows the herd's variety",
+      "narrationCue": "What does it gain? / a proven bull / the same reach is the risk / If a few bulls father most of the calves / one disease can spread through the whole herd",
+      "motionPurpose": "The scorecard gains a green tick row, a rising line draws on, then one bead colour spreads through the tray until the herd shares it and a disease icon moves along the herd",
+      "motionRole": "explain",
+      "onScreenChange": "The scorecard appears with four rows; the gain row writes on with a green tick and the rising line draws on; the gene pool tray appears with six bead colours; the bull's orange bead spreads across the herd on \"If a few bulls father most of the calves\"; the variety row fills with a blue bead; a disease icon passes along the herd and lights each cow grey",
+      "motionTools": [
+        "table row write-on",
+        "DrawPath trace",
+        "bead colour spread",
+        "ParticleEmitter",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the narrowed tray"
+    },
+    {
+      "sceneId": "fertility-cost",
+      "visualDecision": "new",
+      "visualReference": "Source chip, three-step chain with a steepening line and a falling line (both illustrative), welfare heart and cost coin on the scorecard",
+      "teachingReason": "Gives the fertility trade-off with its source, then fills welfare and cost on the scorecard",
+      "narrationCue": "Studies of Holstein cows in several countries / the chance of becoming pregnant after each insemination fell / A cow that struggles to get pregnant can have a harder life on the farm / usually less than buying and keeping a top bull on every farm",
+      "motionPurpose": "A source chip writes on, a three-step chain builds with one line steepening and another falling, a rose heart lands on welfare and an amber coin lands on cost",
+      "motionRole": "explain",
+      "onScreenChange": "The source chip writes on; the chain steps land one per spoken idea; the rising line steepens and a second short line falls; the welfare row writes on with a rose heart; an amber coin falls on the cost row on \"Semen and a trained worker cost money\" with the comparison note writing on",
+      "motionTools": [
+        "chain build",
+        "DrawPath lines",
+        "icon pop",
+        "coin drop",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the filled column"
+    },
+    {
+      "sceneId": "pollination",
+      "visualDecision": "new",
+      "visualReference": "Wheat ear plate with a camera push to one floret, coded forceps, bag and donor plant; scorecard shrunk to a chip",
+      "teachingReason": "Shows what the breeder does with her hands before the technique has a name and why self-pollination must be stopped",
+      "narrationCue": "artificial pollination / removes the anthers / rust-resistant plant / covers the flowers with a bag",
+      "motionPurpose": "The camera pushes to the floret, forceps lift the anthers out, pollen from the donor plant travels to the stigma and a bag covers the ear",
+      "motionRole": "explain",
+      "onScreenChange": "A slow push reaches one open floret; a scribble circle lands on the anthers on \"removes the anthers\" and forceps lift them out; two tags mark the seed parent and the pollen parent; a pollen dot travels from the donor to the stigma; a coded bag draws over the ear on \"covers the flowers with a bag\"",
+      "motionTools": [
+        "CameraStage push",
+        "ScribbleCircle",
+        "TravelingDotOnPath",
+        "DrawPath bag",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the bagged ear"
+    },
+    {
+      "sceneId": "pollination-knowledge",
+      "visualDecision": "reuse",
+      "visualReference": "Flower cutaway plate (anther, stigma, pollen tube) as a recall, two plant icons sending dots to seeds, seedling rows with allele beads, and the second scorecard column",
+      "teachingReason": "Ties the technique back to the pollen tube and sexual mixing, and shows the new variety takes generations",
+      "narrationCue": "a tube carries sperm to the egg / Every seed has the two parents she picked / the alleles are mixed in new ways / only some plants show both traits / takes years of hand work",
+      "motionPurpose": "The flower plate recalls the tube path, two parents send dots to a seed, identical first seedlings grow, then the next generation mixes and only some show both traits",
+      "motionRole": "explain",
+      "onScreenChange": "The cutaway plate crossfades in with anther, stigma and tube labels writing on in turn, then shrinks; green and gold plants send dots to a seed; three identical seedlings grow; the next row shows mixed bead pairs with only some ringed as showing both traits; the scorecard column gains gain and cost",
+      "motionTools": [
+        "plate crossfade",
+        "DrawPath",
+        "TravelingDotOnPath",
+        "ScribbleCircle",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the kept plants"
+    },
+    {
+      "sceneId": "shared-weakness",
+      "visualDecision": "new",
+      "visualReference": "Gene pool tray in one colour, coded field of identical wheat plants with shield icons, coded Uganda pin and rust wash",
+      "teachingReason": "Shows why growing one variety everywhere shares one weakness, with a sourced example",
+      "narrationCue": "share the same defences / first found in Uganda in 1998 to 1999 / overcame a resistance gene",
+      "motionPurpose": "The tray turns to one colour, a field of shielded plants fills the screen, a pin drops on Uganda, an orange wash spreads and the shields shatter",
+      "motionRole": "explain",
+      "onScreenChange": "The tray shows one colour; identical shielded plants fill the right half on \"share the same defences\"; a pin drops on a coded Africa outline on \"first found in Uganda\"; a rust wash spreads across the field; the shields shatter on \"overcame a resistance gene\"; the variety row writes \"one variety everywhere: shared weakness\"",
+      "motionTools": [
+        "tray recolour",
+        "DrawPath pin",
+        "rust wash",
+        "shield shatter",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the source chip over the field"
+    },
+    {
+      "sceneId": "cloning",
+      "visualDecision": "reuse",
+      "visualReference": "Potato tuber plate, clone row plate, Cavendish bunch and banana plantation plates, third scorecard column",
+      "teachingReason": "Names cloning as the third option and ties it back to the first video's banana",
+      "narrationCue": "copy the winner / pieces of tubers / it is a clone / shares one weakness / Cavendish banana",
+      "motionPurpose": "Tuber pieces duplicate into a clone row, identical plants ripple out, disease marks spread along the whole row and the banana plates crossfade in",
+      "motionRole": "explain",
+      "onScreenChange": "The tuber plate crossfades in with a sprout row duplicating on \"pieces of tubers\"; \"clone: the same alleles\" writes on in amber; plants ripple along the row on \"uniform crop quickly\"; disease marks spread plant to plant on \"shares one weakness\"; the Cavendish and plantation plates land with a ring on the wilting plants; the third column fills",
+      "motionTools": [
+        "plate crossfade",
+        "row ripple",
+        "DrawPath",
+        "ScribbleCircle",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the three filled columns"
+    },
+    {
+      "sceneId": "evaluate",
+      "visualDecision": "new",
+      "visualReference": "Scorecard enlarged to a three-column comparison with a balance doodle, amber hand type and four gloss lines in the four criterion colours",
+      "teachingReason": "Names the verb evaluate and the criteria only after the student has used them on three methods",
+      "narrationCue": "make a judgement using criteria / the things you judge it by / Gain: what does it improve / Variety: does it narrow the gene pool? / for animals, welfare",
+      "motionPurpose": "The scorecard enlarges, the verb and its meaning write on large, a balance doodle appears and clears, and each criterion is circled with its gloss in turn",
+      "motionRole": "explain",
+      "onScreenChange": "\"evaluate: make a judgement using criteria\" writes on with \"criteria: the things you judge it by\"; a balance doodle with \"worth it?\" draws and clears; scribble circles land on the gain, variety, cost and welfare row labels in turn with a short gloss writing beside each; a checklist line \"judgement, reasons, weighing, when it would change\" writes on",
+      "motionTools": [
+        "table enlarge",
+        "HandText write-on",
+        "ScribbleCircle",
+        "balance doodle",
+        "checklist build"
+      ],
+      "holdPurpose": "Hold the finished checklist"
+    },
+    {
+      "sceneId": "model-judgement-gain",
+      "visualDecision": "new",
+      "visualReference": "Question card, model answer card 1 (judgement) and card 2 (gain) with two herd icons and a pair of rising lines (illustrative)",
+      "teachingReason": "Starts the model Evaluate answer with the judgement first, then the gain with comparison evidence",
+      "narrationCue": "Here is a model answer for dairy farming / First, the judgement / worthwhile when many unrelated bulls are used / Second, the gain / similar herds that mate naturally",
+      "motionPurpose": "The question writes on, the judgement card writes on with its condition lit, then the gain card fills while two herd icons face each other with two rising lines",
+      "motionRole": "explain",
+      "onScreenChange": "The question card writes on at the top; card 1 \"Judgement\" writes on with \"worthwhile when\" lit in amber; card 2 \"Gain\" writes on with a green tick; two herd icons face each other on \"similar herds that mate naturally\" and a pair of rising lines draws with the faster one on the straw herd",
+      "motionTools": [
+        "card slide-in",
+        "HandText write-on",
+        "clause highlight",
+        "DrawPath lines"
+      ],
+      "holdPurpose": "Hold both cards"
+    },
+    {
+      "sceneId": "model-variety-cost",
+      "visualDecision": "adjust",
+      "visualReference": "Cards 3 and 4 beside the small gene pool tray, amber coin and rose heart, scorecard rows lighting in step",
+      "teachingReason": "Adds the variety, cost and welfare cards using the tray the student has already seen",
+      "narrationCue": "Third, the variety / the gene pool narrows / Fourth, cost and welfare / lower fertility",
+      "motionPurpose": "Card 3 writes on while the tray replays its narrowing, card 4 writes on with a coin and a heart, and the scorecard rows light in step",
+      "motionRole": "explain",
+      "onScreenChange": "Card 3 \"Variety\" writes on with a blue bead and the small tray replays the colour change; card 4 \"Cost and welfare\" writes on with the coin and the heart; earlier cards stay on screen; scorecard rows light as each is spoken",
+      "motionTools": [
+        "card slide-in",
+        "HandText write-on",
+        "bead colour spread",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold the four cards"
+    },
+    {
+      "sceneId": "model-verdict",
+      "visualDecision": "adjust",
+      "visualReference": "Card 5 with a small balance tipping to the risk pan, the tray refilling with six colours, a freezer-and-straw icon and an old-breed cow icon",
+      "teachingReason": "Finishes the model answer with the weighing and a verdict that says when, and names the ways to protect variety",
+      "narrationCue": "Finally, weigh them / the answer turns on variety and welfare / The verdict / Frozen semen / outcrossing",
+      "motionPurpose": "The balance tips to the risk pan, a circle lands on the condition, and the tray refills with six colours as three repair icons appear beside it",
+      "motionRole": "explain",
+      "onScreenChange": "Card 5 writes on with a balance tipping to the risk pan; a scribble circle lands on \"lasts if\"; unrelated bulls' beads enter the tray and \"outcrossing\" writes on; the freezer-and-straw icon and the old-breed cow icon appear with their labels",
+      "motionTools": [
+        "balance tip",
+        "ScribbleCircle",
+        "bead colour spread",
+        "icon pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the finished answer"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Two numbered vignettes: a coded sheep outline with a straw and farm icons, and a wheat floret outline with a donor head; no scorecard, tray or hints",
+      "teachingReason": "Unseen transfer on a new species and on a plant fault, with every demand and condition visible and no answer cues",
+      "narrationCue": "Your turn / one champion ram / Give one benefit of this plan / Suggest why, and name two steps she should add / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The two vignettes appear as each situation is named with their pen notes and demands; the scorecard, tray, criteria rows and trend arrows are absent; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette one enlarged with the gene pool tray replayed over a ten-year strip, a disease icon, extra rams' beads and two crossed chips",
+      "teachingReason": "Explains the benefit, the strongest risk and a change that keeps the benefit, and corrects a one-dose cost mistaken for the risk",
+      "narrationCue": "the champion's traits spreading quickly / a narrow gene pool / several unrelated good rams / a cost of one dose",
+      "motionPurpose": "The ram's bead colour spreads along the farm icons over ten ticks, a disease icon greys them, three more rams' beads refill the tray, and the wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The tray replays on the flock board; the ram's colour spreads along the farm icons across the ten-year strip; a disease icon lights the farms grey; a second path adds three more rams' colours and the tray refills with \"several unrelated good rams\"; the chips \"the semen might not work\" and a second wrong chip appear crossed; a note says another valid risk is accepted",
+      "motionTools": [
+        "bead colour spread",
+        "DrawPath arrows",
+        "ParticleEmitter",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the refilled tray"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette two enlarged replaying the floret: P's own pollen, wind-blown pollen, forceps, Q pollen and a bag",
+      "teachingReason": "Shows which pollen actually reached the stigma and what two steps fix it",
+      "narrationCue": "fertilised by P's own pollen / remove P's anthers / cover the flowers with a bag / the problem is which pollen arrived",
+      "motionPurpose": "A yellow dot from P's own anther and a grey wind dot both land, then forceps remove the anthers, Q's pollen goes on and a bag makes the wind dot bounce off",
+      "motionRole": "explain",
+      "onScreenChange": "P's pollen dot lifts and lands on its stigma; a wind wisp brings a grey dot; the repair draws step by step with forceps, Q's pollen and the bag; labels \"1 remove P's anthers\" and \"2 cover with a bag\" write on; the chip \"Q's pollen failed\" is crossed with the assumed note",
+      "motionTools": [
+        "TravelingDotOnPath",
+        "DrawPath",
+        "Mark cross",
+        "HandText write-on",
+        "dot bounce"
+      ],
+      "holdPurpose": "Hold the two steps"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "adjust",
+      "visualReference": "Scorecard returned large with three columns, amber aid line with a green tick and blue bead, the four criteria in colour, Cavendish thumbnail and next-lesson chip",
+      "teachingReason": "Gives a reusable aid and a four-word checklist, then hands off to DNA copying",
+      "narrationCue": "picking a few parents and using them widely / gain, variety, cost, welfare / say when it is worth it / how a cell copies its DNA",
+      "motionPurpose": "The scorecard returns, the aid writes on large, the four words write on in their colours, and a chip with a double helix doodle slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The scorecard returns large; \"Pick few parents: gain speed, risk variety.\" writes on with a tick and a bead; \"gain, variety, cost, welfare\" writes on in the four colours with icons; \"then say when it is worth it\" writes on large; the Cavendish thumbnail lands small; the next chip slides in",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "table enlarge",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the aid and the checklist"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The key notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b3b-learning-review.md",
+      "sha256": "60e4e89080a1ef56397ef230ffc81820a604c9aa902e9ddc21d5a1fa3afeb404"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b3b-claude-science-check.md",
+      "sha256": "f470acfc1657a8032a94ce6b5c51d92f373298c0c4063e277890618bb890662d"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

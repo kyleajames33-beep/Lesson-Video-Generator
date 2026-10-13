@@ -1,0 +1,160 @@
+{
+  "title": "Calculating K and equilibrium concentrations with an ICE table",
+  "subtitle": "How do you turn a starting mixture and one measured value into every equilibrium concentration and K, and what if you start from K?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 8,
+  "lessonIntent": "Build an ICE table in three steps, find K from a start and one measured equilibrium value with a check, find equilibrium concentrations from K in a perfect-square case, and state how K changes when the equation is reversed.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Back to the P C L five flask from earlier. Suppose we seal 0.40 moles of P C L five into a 2.0 litre flask and heat it, and this time we measure just one thing. Chlorine is yellow-green, so its colour tells us how much is there, and at equilibrium it reads 0.080 moles per litre. Can we work out the other two concentrations from it, and then the equilibrium constant?"
+      }
+    },
+    {
+      "id": "ice-initial",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This is an I C E table, spelled I, C, E, for initial, change and equilibrium. It has a column for each substance and a row for each of those three stages. We fill the initial row first. K uses concentrations, not moles, so divide: 0.40 moles over 2.0 litres is 0.20 moles per litre of P C L five, and the two products start at zero."
+      }
+    },
+    {
+      "id": "change-row",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the change row. We know chlorine rose from zero to 0.080, so its change is plus 0.080. How much did the others change? Each P C L five that splits makes one P C L three and one chlorine. So P C L three also rises by 0.080, and P C L five falls by 0.080, because one is used up for every chlorine made. The change row follows the coefficients in the equation. A substance used up gets a minus sign and a substance made gets a plus."
+      }
+    },
+    {
+      "id": "equilibrium-row",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The equilibrium row is the initial row plus the change row. P C L five: 0.20 plus the change, minus 0.080, is 0.12. P C L three and chlorine are 0.080 each."
+      }
+    },
+    {
+      "id": "find-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now K. Products over reactants, with every coefficient one: K equals P C L three times chlorine, over P C L five. Substitute the equilibrium values: 0.080 times 0.080, over 0.12. The top is 0.0064, and 0.0064 divided by 0.12 is 0.0533, so K is 0.053 to two significant figures. Check the subtraction: 0.12 plus 0.080 is 0.20, what we started with."
+      }
+    },
+    {
+      "id": "k-given",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the other way round. We know K and the start, and want the settled concentrations. This is the hot hydrogen and iodine tube from the catalyst and expressions videos, where K is 49. Each dot is 0.05 moles per litre, so the start is 0.45 moles per litre of hydrogen, 0.45 of iodine and no hydrogen iodide."
+      }
+    },
+    {
+      "id": "unknown-x",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "We don't know how much reacts, so call the amount of hydrogen used up x, in moles per litre. The equation, H two plus I two making two H I, gives the rest. For each hydrogen used, one iodine is used and two hydrogen iodide are made. So the change row is minus x, minus x and plus two x."
+      }
+    },
+    {
+      "id": "substitute",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The equilibrium row is initial plus change: 0.45 minus x for hydrogen and for iodine, and two x for hydrogen iodide. Substitute into K. Hydrogen iodide squared is two x all squared, over hydrogen times iodine, and both of those are 0.45 minus x, so the bottom is 0.45 minus x, all squared. That equals 49. The top is squared and the bottom is squared, so the whole fraction is squared: two x over 0.45 minus x, all squared, equals 49. Something squared equals a square number, a perfect square, and 49 is seven squared. So take the square root of both sides: two x over 0.45 minus x equals seven. Hydrogen iodide and hydrogen are both positive, so this ratio is positive and we keep plus seven."
+      }
+    },
+    {
+      "id": "solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now rearrange. Multiply both sides by 0.45 minus x: two x equals 7 times 0.45 minus x, which is 3.15 minus 7x. Add 7x to both sides, so nine x equals 3.15. Find x. Pause here and try it."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "x is 0.35. So hydrogen and iodine are each 0.45 minus 0.35, 0.10 moles per litre, and hydrogen iodide is two times 0.35, 0.70. Check by substituting back: 0.70 squared is 0.49, over 0.10 times 0.10, which is 0.010, gives 49. Why not minus seven? That would need x of 0.63, more than the 0.45 we started with, so hydrogen would be negative."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is the habit. Only the change row follows the coefficients: minus 0.35, minus 0.35 and plus 0.70 are in the ratio one, one, two. The initial and equilibrium rows do not have to be in that ratio: 0.10, 0.10 and 0.70 are not."
+      }
+    },
+    {
+      "id": "reverse-equation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "K belongs to the equation as it is written. Take the same settled tube, 0.10, 0.10 and 0.70, and write the equation backwards: two H I making hydrogen plus iodine. K is now hydrogen times iodine over H I squared: 0.10 times 0.10, over 0.70 squared, is 0.010 over 0.49, about 0.020, and that is one over 49. Flip the equation, flip K. Double every coefficient and every power doubles, so K is squared: 49 squared is 2401."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Dinitrogen tetroxide, N two O four, splits into nitrogen dioxide, N O two. We seal 0.100 moles of N two O four, and nothing else, in a 2.00 litre vessel at a steady temperature, and at equilibrium the concentration of N O two is 0.0300 moles per litre. One: find K for N two O four making two N O two. Two: what is K for the equation written the other way, two N O two making N two O four, at the same temperature? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One. Start with concentrations: 0.100 moles over 2.00 litres is 0.0500 moles per litre. N O two rose by 0.0300, and the equation makes two N O two for each N two O four, so N two O four fell by half of that, 0.0150. Equilibrium N two O four is 0.0500 minus 0.0150, 0.0350. K is N O two squared over N two O four: 0.0300 squared is 0.000900, over 0.0350, gives 0.0257. If you got about 0.018, you used the starting 0.0500 instead of the equilibrium 0.0350. If you got 0.045, you took off the whole 0.0300 instead of half of it. And if you got about 0.86, you forgot to square the N O two."
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two. Written backwards, K is the old value flipped, so it is one over 0.0257, which is 38.9. The expression is N two O four over N O two squared. If you wrote 0.0257 again, check the direction of the equation: the products are now the N two O four."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question gives a start and one settled value, write the expression, put the concentrations in the initial row, fill the change row by the coefficients, add to get the equilibrium row, then substitute and check. When it gives K instead, call the change x, substitute and solve. That works in a clean way here because hydrogen and iodine started equal. Other starts give an equation that needs a different method, which comes later. Next: why factories do not wait for equilibrium."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -34,3 +34,12 @@ Applied to `lessons/chem-m5-c04b.md`, now Revision 4 (Claude science check resol
 | 3 | Platinum over H2 + I2 unverified | Learner narration and visuals say "a metal catalyst" (or "the catalyst", "the metal"); the asset brief is renamed `c4b-metal-catalyst-v1.png`. Platinum survives only in author note (a), which keeps the teaching-model explanation, mentions the adsorbed-iodine caveat, and gives 184 and 59 kJ/mol only as "roughly" values. |
 
 Narration recounted by script after the edits: 1,229 words, about 6.6 minutes, about 9.2 minutes in total. No U+2014.
+
+
+## Codex check resolution (13 Oct, Claude)
+
+Codex `checks/c4b-check.md` (3 findings), resolved without re-recording:
+
+1. "Both ridges lowered by the same height" and "both rates rise by the same factor". Kept. This is the standard Stage 6 statement for a catalyst (one catalysed pathway, unchanged heat of reaction, so the forward and reverse activation energies fall by the same amount). The video teaches it on the illustrated rate law, and the at-equilibrium claim (rates stay equal, nothing shifts) holds in general by microscopic reversibility. The surface-mechanism caveat stays in author notes; adding it to learner copy would not change any HSC answer and would add load.
+2. Settle-time definition. Author note only, corrected in the design ("H2 and I2 within about 5 per cent of their final concentrations"). Nothing on screen or spoken uses the percentage.
+3. Rate axis "H2 used per tick". The built scenes already label every shared rate axis "rate (units per tick)"; the design's visual line is now corrected to match. The narration's "hydrogen used per tick" describes only the forward rate, which is correct.

@@ -1,19 +1,23 @@
 # Owner queue: Codex prompts to send
 
-## Send these now (13 Oct)
+## Send these now (13 Oct, evening)
 
-Each is one line to paste into Codex, in this order.
+C3 and B2c are now public (brief 18 finished). Codex has also finished briefs 16, 19 and 20.
 
-1. C4b and B3a part 2 fact checks, then artwork (both already voiced; C4b has no artwork yet):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/16-c4b-b3a2-check-and-assets.md.`
-2. Independent check and artwork for the four Chemistry lessons waiting to be voiced (C5, C6, C7, C8):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/19-chem-c5-c8-check-and-assets.md.`
-3. Independent check and artwork for the four Biology lessons waiting to be voiced (B3b, B4, B5a, B5b):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/20-bio-b3b-b5b-check-and-assets.md.`
-4. YouTube upload of C3 and B2c (both rendered 13 Oct, ready to send):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/18-youtube-upload-c3-b2c.md.`
+1. Add the syllabus dotpoint to all seven published video descriptions (your request; also now a standing rule for every future upload):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/21-youtube-add-dotpoints.md.`
 
-Already done by Codex: brief 11 (C2 and B2a uploaded), 13 (paintbrush plate), 14 (C3 and B2c checks and art), 15 (C4a and B3a checks and art), 17 (coverage ledger update).
+Already done by Codex: briefs 11, 13 to 20 (18b not needed).
+
+## Update 13 Oct (evening)
+
+- Voiced with your OK (50.7k characters, after both Claude and Codex fact checks): C5 8:24, C6 10:27 (a dense calculation lesson, 27 s over; accepted rather than cut), C7 7:41, C8 8:57, B3b 8:48, B4 9:23, B5a 8:44, B5b 7:53. Scene builds started (C5 and B3b first).
+- B3a part 2: built; two scenes re-recorded for Codex's science fixes (698 characters). Preview after the voiced review.
+
+## Update 13 Oct (afternoon)
+
+- The voiced-but-unrendered lessons (C4a, C4b, B3a parts 1 and 2) now use the 10 s practice hold, no re-recording needed. C4b layout fixes done; the C4a memory-aid overlap was already fixed. B3a part 2 scenes are being built.
+
 ## Update 13 Oct
 
 - C3 approved with one change, done: the practice question now says "Pause here to answer." and shows a 10 second countdown (only that scene re-recorded, 683 characters; C3 now 9:31). This is now the standing rule for every video.
@@ -74,9 +78,10 @@ Send these in order when you are back. Each is one line to paste into Codex. Cla
 
 ## To watch (browser previews, nothing rendered)
 
-- C4a, pressure and volume (9.9 min): http://127.0.0.1:8778/Explainer-chem-m5-c04a-preview-v1/ (known fix pending: syringe icon covers the memory-aid text)
-- C4b, catalysts (9.7 min): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v1/ (known fix pending: two text lines overlap in item one's feedback; artwork stand-ins until Codex brief 16)
-- B3a part 1, fertilisation to keeping a pregnancy (9.6 min): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v1/ (thin-lining plate is a stand-in until Codex brief 16)
+- C4a, pressure and volume (9:03, practice hold now 10 s): http://127.0.0.1:8778/Explainer-chem-m5-c04a-preview-v2/
+- C4b, catalysts (8:37, practice hold now 10 s, graph label and chip overlap fixed; artwork stand-ins until Codex brief 16): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v2/
+- B3a part 1, fertilisation to keeping a pregnancy (8:31, practice hold now 10 s; thin-lining plate is a stand-in until Codex brief 16): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v2/
+- An independent voiced review of these three is running; Claude applies its fixes before asking you to watch.
 
 - G01, enthalpy and entropy (10:02), fixed after the voiced review: http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v2/
 - B2b, flowering plants (9:47), fixed after the voiced review, real paintbrush plate: http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/

@@ -1,0 +1,29 @@
+[
+  {
+    "path": "public/assets/biology/b2b-pod-seeds-v1.png",
+    "size": [
+      1600,
+      1600
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent_pixels": 2384963,
+    "alpha_bbox": [
+      322,
+      631,
+      1278,
+      969
+    ],
+    "sha256": "f580c208164b917b2d3877263b8976d7fcb077a1c54dd977f71bf7092abfc9c9",
+    "action": "reuse candidate",
+    "notes": "Mature open pea pod with three round green seeds, confirmed by original b2b-provenance.json prompt. Clean alpha and readable at 400 px canvas width. Existing plate unchanged.",
+    "checks": {
+      "alpha": "pass",
+      "reads_at_400_px": "pass"
+    },
+    "source_record": "docs/production/claude-pm/assets/b2b-provenance.json"
+  }
+]

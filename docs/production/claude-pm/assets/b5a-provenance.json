@@ -1,0 +1,28 @@
+[
+  {
+    "path": "public/assets/biology/b1-fission-1-v1.png",
+    "size": [
+      1800,
+      1200
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent_pixels": 1967571,
+    "alpha_bbox": [
+      573,
+      449,
+      1228,
+      773
+    ],
+    "sha256": "6d7f2d65bc2d4425c9ffe9bce32990e458215c80fafa3006b86520c269925988",
+    "action": "reuse",
+    "notes": "Clean alpha. Single bacterium reads clearly in the full plate reduced to 220 px wide. No text or exterior halo. Existing plate unchanged.",
+    "checks": {
+      "alpha": "pass",
+      "reads_at_220_px": "pass"
+    }
+  }
+]

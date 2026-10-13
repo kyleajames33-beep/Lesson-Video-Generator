@@ -1,0 +1,392 @@
+{
+  "brief": 20,
+  "date": "2026-10-13",
+  "mode": "Recovered built-in imagegen plates, with original prompts and raw files; no new generation needed in this continuation.",
+  "part_a_before_part_b": true,
+  "assets": [
+    {
+      "path": "public/assets/biology/b3b-dairy-bull-cow-v1.png",
+      "size": [
+        2200,
+        1200
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 2040900,
+      "alpha_bbox": [
+        234,
+        163,
+        1967,
+        1043
+      ],
+      "sha256": "204bbb58ce868b83a24560fcfe9f817735bf75dfe69e21cfe39d146c7db7e539",
+      "prompt": "Use case scientific-educational. Naturalistic precise ink and watercolour textbook plate, clean fine ink linework, soft textured watercolour wash, warm muted natural colours matching botanical strawberry and flower textbook plates. No text, labels, numbers, arrows, watermark or frame. Genuinely transparent alpha background, no exterior wash, glow, halo or drop shadow. Landscape canvas at least 1600 pixels wide, generous 8 percent transparent margin. Two calm Holstein-Friesian dairy cattle in full side view, separated by a clear transparent gap: dairy cow on right, black and white patches, slim dairy build with a clearly visible natural udder; bull on left, same black and white breed, larger body with thick muscular neck and masculine build, anatomically accurate. Both stand neutrally, all legs and hooves visible, no overlap between animals, respectful non-graphic. No nose ring, no nose pull, no farm buildings, no fence. Only a very thin soft grass strip directly beneath each animal's feet, nothing else. Single paired teaching plate; bull and cow must remain clearly distinguishable at half size.",
+      "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a131d4-6051-7981-a8a3-dbd6e6aff816\\exec-f2ee21f9-2954-4b0c-806d-66883d5a8f54.png",
+      "raw_sha256": "8763cb728633470e728f188d555bee2ec2d7e530cfc20c06a32b35a747d606d1",
+      "tool": "image_gen.imagegen (built-in), recovered from unfinished 13 October session",
+      "retakes": 0,
+      "notes": "Original RGBA preserved. Added centred transparent padding only, without resampling or alpha edits. Original prompts recovered in recovered-imagegen-calls.json.",
+      "visual_check": "Calm separated side-view Holstein bull and cow, cow udder visible, bull larger with a thick neck. Readable at half size. No text, nose ring, halo or shadow.",
+      "checks": {
+        "alpha": "pass",
+        "no_text": "pass",
+        "no_halo": "pass",
+        "half_size": "pass"
+      },
+      "inspection_views": [
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-dairy-bull-cow-v1-checker.png",
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-dairy-bull-cow-v1-dark.png",
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-dairy-bull-cow-v1-light.png"
+      ]
+    },
+    {
+      "path": "public/assets/biology/b3b-wheat-ear-floret-v1.png",
+      "size": [
+        1900,
+        1300
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1953051,
+      "alpha_bbox": [
+        182,
+        140,
+        1688,
+        1162
+      ],
+      "sha256": "74521e308262e6923e5c7b04786b37f08c9992e80ffb5e049dd116d6927af091",
+      "prompt": "Use case scientific-educational. Precise naturalistic ink and watercolour botanical textbook plate matching strawberry botanical illustrations: fine clean ink linework, delicate textured watercolour, muted golden straw and natural sage green. No text, labels, numbers, arrows, watermark or frame. Genuine transparent alpha background, no exterior glow, halo, shadow or background wash. Landscape canvas at least 1600px wide with at least 8 percent transparent margin all sides. On LEFT one recognisable mature awned bread-wheat ear (Triticum aestivum), compact alternating wheat spikelets on a central rachis, wheat not barley, on its stem with exactly two long narrow leaves. On RIGHT at larger scale exactly ONE open wheat floret, botanical detail, separate from the ear with ample transparent gap. Exactly THREE distinct yellow elongated bilobed anthers dangling at separate positions from three thin curved filaments, not touching or hiding each other. At the centre one small green ovary with exactly TWO feathery branching stigma arms rising from it. Stigma feather branches are green pale sage and visibly different from yellow anthers. Behind these organs the pale straw husks lemma and palea are parted open. Floret occupies enough space to show all three anthers and both feathered stigma branches clearly on a camera push. No extra florets or flowers. All organ bases connect anatomically to the one floret, not a detached diagram of organs. Both parts form one balanced teaching plate.",
+      "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a131d4-6051-7981-a8a3-dbd6e6aff816\\exec-cf5efc21-26ee-4340-8032-e2e451e69495.png",
+      "raw_sha256": "bd073c3cfdb308d19e683f5bb2784c3647f95e4bc8b9d68b795478700383f441",
+      "tool": "image_gen.imagegen (built-in), recovered from unfinished 13 October session",
+      "retakes": 0,
+      "notes": "Original RGBA preserved. Added centred transparent padding only, without resampling or alpha edits. Original prompts recovered in recovered-imagegen-calls.json.",
+      "visual_check": "Recognisable awned wheat ear with two leaves. One open floret with three separate bilobed yellow anthers and two feathery stigma arms above the green ovary. Pale husks parted. No text or halo.",
+      "checks": {
+        "alpha": "pass",
+        "no_text": "pass",
+        "no_halo": "pass",
+        "half_size": "pass"
+      },
+      "inspection_views": [
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-wheat-ear-floret-v1-checker.png",
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-wheat-ear-floret-v1-dark.png",
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-wheat-ear-floret-v1-light.png"
+      ]
+    },
+    {
+      "path": "public/assets/biology/b3b-wheat-rust-leaf-v1.png",
+      "size": [
+        1900,
+        1300
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 2299304,
+      "alpha_bbox": [
+        247,
+        165,
+        1674,
+        1139
+      ],
+      "sha256": "4eb604d2e9697b7c4dccdc9e834ad93824fea7fdb36aa1f4d743edbf10e8de16",
+      "prompt": "Use case scientific-educational. Naturalistic precise ink and watercolour botanical textbook plate matching painted cabbage disease and strawberry botanical plates: fine clean ink contours, soft textured muted natural green watercolour, realistic leaf veins. No text, labels, numbers, arrows, watermark or frame. Real transparent alpha background, no background wash, no glow, no halo, no shadow. Landscape canvas at least 1600 pixels wide, ample 8 percent transparent margin around all sides. Exactly TWO wheat leaves side by side with a clear gap, same scale, same soft lighting and same anatomical shape: long narrow blade with parallel veins, tapered tip, attached to a short slender wheat stem section. LEFT healthy smooth green leaf and clean green stem. RIGHT leaf and stem have scattered raised rusty orange-brown pustules, visible oval or elongated rust lesions breaking through the surface, distributed along both leaf and stem, with some local yellowing but still clearly a wheat leaf. Individual raised pustules should read clearly against the smooth healthy leaf at half size. No other leaves, plant, ground or objects. Balanced pair, isolated, upright gently curved leaves with no overlap.",
+      "raw_path": "C:\\Users\\kygs\\.codex\\generated_images\\01a131d4-6051-7981-a8a3-dbd6e6aff816\\exec-c58beab6-cb20-4b5f-a7fb-2703875d134a.png",
+      "raw_sha256": "b6c0bdb4625422654c8b354e77fbb5d2a936925578f700ee685ceb801391173f",
+      "tool": "image_gen.imagegen (built-in), recovered from unfinished 13 October session",
+      "retakes": 0,
+      "notes": "Original RGBA preserved. Added centred transparent padding only, without resampling or alpha edits. Original prompts recovered in recovered-imagegen-calls.json.",
+      "visual_check": "Healthy leaf left and rusty leaf right at matching scale and lighting. Orange-brown raised pustules clearly visible on the right blade and stem. No text or halo. Generic rust contrast, not a diagnostic Ug99 illustration.",
+      "checks": {
+        "alpha": "pass",
+        "no_text": "pass",
+        "no_halo": "pass",
+        "half_size": "pass"
+      },
+      "inspection_views": [
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-wheat-rust-leaf-v1-checker.png",
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-wheat-rust-leaf-v1-dark.png",
+        "docs/production/claude-pm/assets/b3b-b5b-qa/b3b-wheat-rust-leaf-v1-light.png"
+      ]
+    },
+    {
+      "path": "public/assets/biology/b2c-amoeba-fission-1-v1.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1732551,
+      "alpha_bbox": [
+        152,
+        93,
+        1609,
+        1082
+      ],
+      "sha256": "06f90925ae8fbb3347b735332c4fd723a37104b4918d38ac69ea036eb3868187",
+      "action": "reuse, conditional new plate not needed",
+      "nucleus_center_pixels": [
+        904.23,
+        610.2
+      ],
+      "nucleus_center_fractions": [
+        0.50235,
+        0.5085
+      ],
+      "nucleus_bounds_pixels": [
+        813,
+        528,
+        989,
+        695
+      ],
+      "notes": "Purple round nucleus clearly visible near centre, crisp at approximately three-times push. Centre measured from purple pixels inside the visually identified central nucleus. Existing plate unchanged.",
+      "checks": {
+        "alpha": "pass",
+        "nucleus_visibility": "pass",
+        "three_times_push": "pass"
+      }
+    },
+    {
+      "path": "public/assets/biology/b1-fission-1-v1.png",
+      "size": [
+        1800,
+        1200
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1967571,
+      "alpha_bbox": [
+        573,
+        449,
+        1228,
+        773
+      ],
+      "sha256": "6d7f2d65bc2d4425c9ffe9bce32990e458215c80fafa3006b86520c269925988",
+      "action": "reuse",
+      "notes": "Clean alpha. Single bacterium reads clearly in the full plate reduced to 220 px wide. No text or exterior halo. Existing plate unchanged.",
+      "checks": {
+        "alpha": "pass",
+        "reads_at_220_px": "pass"
+      }
+    },
+    {
+      "path": "public/assets/biology/b2b-pod-seeds-v1.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 2384963,
+      "alpha_bbox": [
+        322,
+        631,
+        1278,
+        969
+      ],
+      "sha256": "f580c208164b917b2d3877263b8976d7fcb077a1c54dd977f71bf7092abfc9c9",
+      "action": "reuse candidate",
+      "notes": "Mature open pea pod with three round green seeds, confirmed by original b2b-provenance.json prompt. Clean alpha and readable at 400 px canvas width. Existing plate unchanged.",
+      "checks": {
+        "alpha": "pass",
+        "reads_at_400_px": "pass"
+      },
+      "source_record": "docs/production/claude-pm/assets/b2b-provenance.json"
+    }
+  ],
+  "b3b_reuse": [
+    {
+      "path": "public/assets/biology/b1-cavendish-bunch-v1.png",
+      "size": [
+        1842,
+        1330
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1823130,
+      "alpha_bbox": [
+        153,
+        180,
+        1661,
+        1177
+      ],
+      "sha256": "74d876d8fe576eb0183e07de5708b8f9b017e7de27cdb629bf23d162a9363d2d",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    },
+    {
+      "path": "public/assets/biology/b1-banana-plantation-tr4-v1.png",
+      "size": [
+        2330,
+        1197
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 2041463,
+      "alpha_bbox": [
+        233,
+        213,
+        2120,
+        1003
+      ],
+      "sha256": "96ad57bc27b3c945ebc5b8a8480b65a4864b5c3ad9d375ca711ba0c35eac62f7",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    },
+    {
+      "path": "public/assets/biology/b1-clone-row-disease-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1009390,
+      "alpha_bbox": [
+        232,
+        146,
+        1925,
+        590
+      ],
+      "sha256": "7cfa6f2c9af588dd7c5d5630c414f308eb344180a716144ffabaebc21ac857d5",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    },
+    {
+      "path": "public/assets/biology/b2b-flower-cutaway-v1.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 2014708,
+      "alpha_bbox": [
+        321,
+        203,
+        1280,
+        1397
+      ],
+      "sha256": "647837c8016d6f4892d4a74b2fa37d42c6610222636dd687c4ade756f14e8547",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    },
+    {
+      "path": "public/assets/biology/b2b-bagged-flower-v1.png",
+      "size": [
+        1652,
+        1600
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 2162325,
+      "alpha_bbox": [
+        199,
+        224,
+        1453,
+        1375
+      ],
+      "sha256": "32d47893a59cd511fbbe4eb2947f3f7d2a57887e78f4c077bf5edf00fd9ac6d5",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    },
+    {
+      "path": "public/assets/biology/b2b-potato-tuber-sprouts-v1.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 2111959,
+      "alpha_bbox": [
+        325,
+        416,
+        1275,
+        1184
+      ],
+      "sha256": "3b3aa0c8c9f1f5c075c836225a636fe4aa265452fc4ac8f6f206cba070a31852",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    },
+    {
+      "path": "public/assets/biology/b1-diseased-crop-field-v1.png",
+      "size": [
+        1842,
+        1330
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1565373,
+      "alpha_bbox": [
+        153,
+        153,
+        1675,
+        1177
+      ],
+      "sha256": "e12dd1f23ffbbd324d3b3a5747e3e721fdfa50fe881e6e5260a2ccdb8d71bbbf",
+      "action": "reuse unchanged",
+      "visual_check": "Opened on checkerboard in b3b-reuse-contact.png. Existing subject and clean transparency confirmed; no redraw needed."
+    }
+  ],
+  "b5b_inventory": {
+    "searched": "All files in public/assets, including public/assets/biology. asset-inventory.txt records 310 filenames before saving the three new B3b plates.",
+    "family_or_brothers": "No suitable plate found.",
+    "pea": "b2b-pod-seeds-v1.png is suitable.",
+    "optional_brothers": "Not requested, not painted."
+  },
+  "conditional_and_optional": {
+    "b4_cell_nucleus": "Not needed, existing nucleus passes.",
+    "b5a_skin_graze": "Not requested, not painted."
+  },
+  "alignment": "No new aligned sequence requested. Existing reusable plates left unchanged.",
+  "fact_check_artwork_impact": "Findings affect text and coded DNA, chromosome or herd diagrams. No new painted plate changes required.",
+  "unfinished": [],
+  "qa": "docs/production/claude-pm/assets/b3b-b5b-qa/",
+  "per_lesson_records": [
+    "docs/production/claude-pm/assets/b3b-provenance.json",
+    "docs/production/claude-pm/assets/b4-provenance.json",
+    "docs/production/claude-pm/assets/b5a-provenance.json",
+    "docs/production/claude-pm/assets/b5b-provenance.json"
+  ]
+}

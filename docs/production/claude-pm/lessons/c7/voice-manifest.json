@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C7-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c7/lesson.json",
+  "lessonSha256": "19fe753cce0d2472e7697a4832b683d51ce0985099171cdfb59da851945e5347",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c7/lesson.production-brief.json",
+    "sha256": "3cc931269f14c402fb3403d7bacc4043745495de286da24b2efa60e196a5d217"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Ammonia is the starting point for most nitrogen fertiliser, made from nitrogen and hydrogen in the Haber process. Cooling the mixture and squeezing it both shift the balance toward ammonia, yet real plants run hot, at about 450 degrees Celsius, and at about 200 atmospheres, not the thousand that would give more. Why choose conditions that make less ammonia in the settled mixture?",
+      "hash": "4da974a29c4e",
+      "textSha256": "4da974a29c4ec141a36f700910ce5d82261a586fa7b7c8e98914a5db44350298",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/hook.4da974a29c4e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/hook.4da974a29c4e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/hook.4da974a29c4e.generation.json",
+      "plannedRequestSha256": "1eb97d75d2abeafbba4bb6d5e3350f577fc1c6a5d6d682644b524f75f3b951bc"
+    },
+    {
+      "id": "yield",
+      "parentSceneId": "yield",
+      "text": "First, what gives the most ammonia in the settled mixture? Chemists call how much of the nitrogen and hydrogen has become ammonia, once settled, the equilibrium yield. For one starting gas and pressure, more ammonia in the settled gas means a higher yield. The forward reaction gives out heat, 92 kilojoules for each mole of nitrogen, so heat goes on the right. Cooling takes heat away, and the shift goes toward it, so it raises the yield. Squeezing shifts toward fewer gas particles, two against four, so it does too. Pulling the ammonia out leaves the settled mixture the same, but lets the rest of the gas make more, so the total made rises. The catalyst changes only the speed.",
+      "hash": "8fa21ef37afd",
+      "textSha256": "8fa21ef37afd00282c3f773c918769c99070ad8b6532885ee0c622466e136c5c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/yield.8fa21ef37afd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/yield.8fa21ef37afd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/yield.8fa21ef37afd.generation.json",
+      "plannedRequestSha256": "a53396d02dba3f516a366394a0c98431b3c86bda027c078e3a73856dee9bf496"
+    },
+    {
+      "id": "time-in-reactor",
+      "parentSceneId": "time-in-reactor",
+      "text": "But a factory is paid for the ammonia it makes while the gas flows over its iron catalyst, not for a mixture that has had all day to settle. The iron comes next. Cooling lowers both rates, because fewer collisions have enough energy, and nitrogen molecules are hard to split.",
+      "hash": "7778f310407a",
+      "textSha256": "7778f310407a60b1aec4c9793d1241d6fc9a396e6ad1fd91bf0e7e76a0d15aec",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/time-in-reactor.7778f310407a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/time-in-reactor.7778f310407a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/time-in-reactor.7778f310407a.generation.json",
+      "plannedRequestSha256": "c721cdad905a59fa5887ecc3fcfccaff56bd5ae446de1dc3f4384c63509a6c34"
+    },
+    {
+      "id": "three-temperatures",
+      "parentSceneId": "three-temperatures",
+      "text": "Here are three temperatures at the same pressure, 200 atmospheres, with the gas starting as three hydrogen to one nitrogen. These numbers are illustrative. The cool one would settle at about sixty percent ammonia, but it crawls, so the gas leaves with only a little. The hot one settles at once, at only about nine. The middle one would settle at about twenty-five, and it gets close in the time available, so it gives the most.",
+      "hash": "b339138035f9",
+      "textSha256": "b339138035f9d78ea3d1459bd809f05829de5dc23aec41130bd389eb109c28f4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/three-temperatures.b339138035f9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/three-temperatures.b339138035f9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/three-temperatures.b339138035f9.generation.json",
+      "plannedRequestSha256": "08637c2ac775f2302ca107de46888e2b3c3d68cee825d1710d8b4e75a8cd7283"
+    },
+    {
+      "id": "catalyst-speed",
+      "parentSceneId": "catalyst-speed",
+      "text": "So what does the iron do? It gives the molecules a lower-energy pathway in both directions, so the middle temperature is fast enough. Take it away and even the middle temperature crawls. The ceiling does not move: the settled mixture has the same share of ammonia, reached sooner. Without iron the plant would need a hotter reactor, with a lower ceiling.",
+      "hash": "d79205ad9c8b",
+      "textSha256": "d79205ad9c8ba11a85025ba37683263e15fd19f3a6d77bfed89d1e3dabb18732",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/catalyst-speed.d79205ad9c8b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/catalyst-speed.d79205ad9c8b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/catalyst-speed.d79205ad9c8b.generation.json",
+      "plannedRequestSha256": "77073256c1cf6247a9525b0d5eecc1085f2159b24e32dbcb5c0a6933528aa2e2"
+    },
+    {
+      "id": "pressure-limit",
+      "parentSceneId": "pressure-limit",
+      "text": "Pressure helps both. Squeezing crowds the particles, so collisions are more frequent and both rates rise, and it shifts the balance toward the side with two gas particles. So why not a thousand atmospheres? Each extra bit of pressure buys less extra ammonia, but the thicker steel, stronger pumps and extra energy cost more each time, and a leak is dangerous. The plant settles where the extra ammonia stops paying for the extra cost, at about two hundred atmospheres.",
+      "hash": "e23a0615adc0",
+      "textSha256": "e23a0615adc06d54eb1dec7125d393a236186aaa3de193a9c164f466251de635",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/pressure-limit.e23a0615adc0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/pressure-limit.e23a0615adc0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/pressure-limit.e23a0615adc0.generation.json",
+      "plannedRequestSha256": "702cb25613988b53e802a459e7784612d96650b25f88f1cec80a0d8e8eef2c50"
+    },
+    {
+      "id": "recycle",
+      "parentSceneId": "recycle",
+      "text": "Even at this compromise, only part of the gas reacts on each pass: about a fifth of the gas leaving the reactor is ammonia, a little under the settled value, since the gas does not stay to settle fully. So the gas is cooled until the ammonia turns to a liquid, called condensing, and is drawn off, while the nitrogen and hydrogen stay gases. The unused gas is pumped back into the reactor, which is recycling. It holds less ammonia than a settled mixture would, so the shift runs forward again. Over many trips, more than ninety-five percent of the gas fed in ends up as ammonia.",
+      "hash": "4590eab815c2",
+      "textSha256": "4590eab815c2de667c389552a0fd45fead2a757e4a8b4e8f0fd1fc094b75638b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/recycle.4590eab815c2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/recycle.4590eab815c2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/recycle.4590eab815c2.generation.json",
+      "plannedRequestSha256": "1ce12daa2afb40b28764d18f4fb90699fea98e768b6ee336c8c63e7d51a94234"
+    },
+    {
+      "id": "model-answer",
+      "parentSceneId": "model-answer",
+      "text": "Write it as an exam answer, one condition at a time: what it does to the yield and why, to the rate and why, and what limits it. Temperature: the reaction gives out heat, so cooling raises the yield, but fewer collisions have enough energy, so both rates fall. So the plant uses about 450 degrees with iron. Pressure: four gas particles become two, so squeezing raises the yield and the rate, but strong equipment costs more and is less safe. So it uses about 200 atmospheres. Removal: taking the ammonia out keeps the reverse rate low, so the forward reaction stays ahead.",
+      "hash": "dbadb7678a09",
+      "textSha256": "dbadb7678a094529e3846a92ac28398eaefdcd36111f15a6ab4aef92aa6f2a14",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/model-answer.dbadb7678a09.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/model-answer.dbadb7678a09.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/model-answer.dbadb7678a09.generation.json",
+      "plannedRequestSha256": "037faa6de202b5734101e8d85a9811f39c6018cd4f40c33e16cbb36e5bd0684e"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "When the forward reaction gives out heat and is too slow when cold, yield asks for cold and speed asks for hot, so industry compromises. That means a middle temperature, neither best for the yield nor best for the speed, that gives the most ammonia in the time it has.",
+      "hash": "9d717e709a4f",
+      "textSha256": "9d717e709a4f53c9349fc9cdea60a44558c77cc11221ae93c768bbc23ada5abb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/memory-aid.9d717e709a4f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/memory-aid.9d717e709a4f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/memory-aid.9d717e709a4f.generation.json",
+      "plannedRequestSha256": "7dea0ec111b0ebc36336126efd0008f6a8b6516d20acd548ff57a5d192677ded"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Methanol, C H three O H, is made from carbon monoxide and hydrogen: C O plus two H two makes methanol, and the forward reaction gives out 91 kilojoules for each mole of methanol. A plant runs at about 250 degrees Celsius and 50 to 100 atmospheres, with a copper-based catalyst, condenses the methanol out and recycles the unused gas. A student says the plant should use 25 degrees and 500 atmospheres for the highest yield. Justify the plant's conditions: the temperature, the pressure and removing the methanol. Pause here to answer.",
+      "hash": "c6e239bdfcab",
+      "textSha256": "c6e239bdfcaba13ea6b4f5236d6a111d8d8eeb0d1332821e14833cc595dc4726",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/attempt.c6e239bdfcab.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/attempt.c6e239bdfcab.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/attempt.c6e239bdfcab.generation.json",
+      "plannedRequestSha256": "47528dba29c517d28817fb1c4260766d92ddbd10f6e90088a3e0d7817fa55ee2"
+    },
+    {
+      "id": "feedback-temperature",
+      "parentSceneId": "feedback-temperature",
+      "text": "Temperature. The reaction gives out heat, so cooling shifts it toward methanol and raises the yield. But at 25 degrees almost no collisions have enough energy, so the rates are tiny and almost no methanol forms in time. At 250 degrees the rates are workable, and the catalyst speeds both directions without changing where the mixture settles. If you said the catalyst increases the yield, remember it changes the speed, not the destination. If you said hotter is always better because it is faster, remember that hotter also lowers the yield.",
+      "hash": "e0936f62666d",
+      "textSha256": "e0936f62666d125dee1dab3847667dd47a56022ce68d542e90e0ea4c3a4dfccf",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/feedback-temperature.e0936f62666d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/feedback-temperature.e0936f62666d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/feedback-temperature.e0936f62666d.generation.json",
+      "plannedRequestSha256": "c53d1f801d43714ac2d428b09e61ee4edd2cfd3b5ff9f6d8f4609924be3cd5c7"
+    },
+    {
+      "id": "feedback-pressure-removal",
+      "parentSceneId": "feedback-pressure-removal",
+      "text": "Pressure and removal. Three gas particles become one, so squeezing shifts toward methanol, and the crowding raises the rates too. Five hundred atmospheres would give somewhat more, but it costs far more and a leak is more dangerous, so the plant stops at 50 to 100. Condensing the methanol takes it away, so the reverse rate stays low and the shift runs forward again. If you said pressure slows the reaction, remember it crowds the particles. If you gave no reason against the highest pressure, add cost and safety.",
+      "hash": "1dc1aef7f52f",
+      "textSha256": "1dc1aef7f52f419c69936348fbcbce5d936c34b8816da261772c4934cce46c9c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/feedback-pressure-removal.1dc1aef7f52f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/feedback-pressure-removal.1dc1aef7f52f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/feedback-pressure-removal.1dc1aef7f52f.generation.json",
+      "plannedRequestSha256": "fb0f064db863a6b4ae6136b9711fe21fe255721a3c22973a29f7500c02817713"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question asks you to justify industrial conditions, take one condition at a time: what it does to the yield and why, to the rate and why, and what limits it. When the forward reaction gives out heat and is too slow when cold, yield and speed pull apart on temperature, so the plant compromises. If it takes in heat, heat helps both. Later, K puts numbers on this. Next: reading equilibrium graphs you have not seen before.",
+      "hash": "036bd7a45526",
+      "textSha256": "036bd7a45526c9c44f42b9742bac26f98f5fa6bbe5e584f01c0850be3ee819e1",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/decision-rule.036bd7a45526.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/decision-rule.036bd7a45526.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/decision-rule.036bd7a45526.generation.json",
+      "plannedRequestSha256": "2fc6dd7287765be6954eae07417aa237ad749bbb0526d60d0fdc8c2fb678827a"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C7-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

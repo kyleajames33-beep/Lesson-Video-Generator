@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C6-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c6/lesson.json",
+  "lessonSha256": "43cf2614424ba9ff18ed624175308db335a8ae4f15deda909caa22d0d918e74e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c6/lesson.production-brief.json",
+    "sha256": "47dd3282db2ecbbbba7029c62a230b87513fc9aa89429806baab903ab1e934a5"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Back to the P C L five flask from earlier. Suppose we seal 0.40 moles of P C L five into a 2.0 litre flask and heat it, and this time we measure just one thing. Chlorine is yellow-green, so its colour tells us how much is there, and at equilibrium it reads 0.080 moles per litre. Can we work out the other two concentrations from it, and then the equilibrium constant?",
+      "hash": "e89e21e9ba65",
+      "textSha256": "e89e21e9ba655a0b2aa8d3c190827d233ea6c9b479498eced38688605698f0a8",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/hook.e89e21e9ba65.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/hook.e89e21e9ba65.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/hook.e89e21e9ba65.generation.json",
+      "plannedRequestSha256": "466c8af5dd7b2d34eee0188a395d5157327eeda5c08e49b3424ecc439efc4335"
+    },
+    {
+      "id": "ice-initial",
+      "parentSceneId": "ice-initial",
+      "text": "This is an I C E table, spelled I, C, E, for initial, change and equilibrium. It has a column for each substance and a row for each of those three stages. We fill the initial row first. K uses concentrations, not moles, so divide: 0.40 moles over 2.0 litres is 0.20 moles per litre of P C L five, and the two products start at zero.",
+      "hash": "5b7c350cff9a",
+      "textSha256": "5b7c350cff9a057c3ff4b623390e92cc0b8326bbea408613077f609a3685ff0d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/ice-initial.5b7c350cff9a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/ice-initial.5b7c350cff9a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/ice-initial.5b7c350cff9a.generation.json",
+      "plannedRequestSha256": "ac08e158781963d7f189fa066db6bbc804b6b3df9d54992f7901563eb80d5f57"
+    },
+    {
+      "id": "change-row",
+      "parentSceneId": "change-row",
+      "text": "Now the change row. We know chlorine rose from zero to 0.080, so its change is plus 0.080. How much did the others change? Each P C L five that splits makes one P C L three and one chlorine. So P C L three also rises by 0.080, and P C L five falls by 0.080, because one is used up for every chlorine made. The change row follows the coefficients in the equation. A substance used up gets a minus sign and a substance made gets a plus.",
+      "hash": "31357fce0ba2",
+      "textSha256": "31357fce0ba21e4b46d65441c43119024bfb936c7b6816dfbd94f27f39a7f519",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/change-row.31357fce0ba2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/change-row.31357fce0ba2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/change-row.31357fce0ba2.generation.json",
+      "plannedRequestSha256": "1b99eb776942d40c5deb24d8f0c285e6e28dde054cc63a2d19c74a5ed6faf67c"
+    },
+    {
+      "id": "equilibrium-row",
+      "parentSceneId": "equilibrium-row",
+      "text": "The equilibrium row is the initial row plus the change row. P C L five: 0.20 plus the change, minus 0.080, is 0.12. P C L three and chlorine are 0.080 each.",
+      "hash": "25418ede8633",
+      "textSha256": "25418ede8633a249ee22f570e8809599d4c8bacc2afa54fcaa80f90f498a2cf2",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/equilibrium-row.25418ede8633.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/equilibrium-row.25418ede8633.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/equilibrium-row.25418ede8633.generation.json",
+      "plannedRequestSha256": "a7f89d6cd687791c566f958a6b8ba9372d422d70885ad89858c1015c8305ff96"
+    },
+    {
+      "id": "find-k",
+      "parentSceneId": "find-k",
+      "text": "Now K. Products over reactants, with every coefficient one: K equals P C L three times chlorine, over P C L five. Substitute the equilibrium values: 0.080 times 0.080, over 0.12. The top is 0.0064, and 0.0064 divided by 0.12 is 0.0533, so K is 0.053 to two significant figures. Check the subtraction: 0.12 plus 0.080 is 0.20, what we started with.",
+      "hash": "80d1671adeb0",
+      "textSha256": "80d1671adeb08045c0aaf536f040a25f974192fc9cd11dc724c2a79cb016971e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/find-k.80d1671adeb0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/find-k.80d1671adeb0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/find-k.80d1671adeb0.generation.json",
+      "plannedRequestSha256": "f3ef1c89e6d2fb3d376a7ca5cb5c051765f719c33bc6e5432dc07f213ea1af61"
+    },
+    {
+      "id": "k-given",
+      "parentSceneId": "k-given",
+      "text": "Now the other way round. We know K and the start, and want the settled concentrations. This is the hot hydrogen and iodine tube from the catalyst and expressions videos, where K is 49. Each dot is 0.05 moles per litre, so the start is 0.45 moles per litre of hydrogen, 0.45 of iodine and no hydrogen iodide.",
+      "hash": "8c0ff760a5b9",
+      "textSha256": "8c0ff760a5b942caaa6925a8e3fc270edc33f1e7a3e720a6d3a063b95aedb5fb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/k-given.8c0ff760a5b9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/k-given.8c0ff760a5b9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/k-given.8c0ff760a5b9.generation.json",
+      "plannedRequestSha256": "d4cf85cef1eac3cc3dee970c514fcbaeff0c399a10fa2abc8e03a99eefbe052b"
+    },
+    {
+      "id": "unknown-x",
+      "parentSceneId": "unknown-x",
+      "text": "We don't know how much reacts, so call the amount of hydrogen used up x, in moles per litre. The equation, H two plus I two making two H I, gives the rest. For each hydrogen used, one iodine is used and two hydrogen iodide are made. So the change row is minus x, minus x and plus two x.",
+      "hash": "8699815c4b45",
+      "textSha256": "8699815c4b455cd5abc74bea950855590f33f436a1a7800e3c5b9117880e138c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/unknown-x.8699815c4b45.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/unknown-x.8699815c4b45.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/unknown-x.8699815c4b45.generation.json",
+      "plannedRequestSha256": "0241115fdd24cfae58cb4cae7a914702b69c2edfb384ccf7771e0d0a1bf62d8c"
+    },
+    {
+      "id": "substitute",
+      "parentSceneId": "substitute",
+      "text": "The equilibrium row is initial plus change: 0.45 minus x for hydrogen and for iodine, and two x for hydrogen iodide. Substitute into K. Hydrogen iodide squared is two x all squared, over hydrogen times iodine, and both of those are 0.45 minus x, so the bottom is 0.45 minus x, all squared. That equals 49. The top is squared and the bottom is squared, so the whole fraction is squared: two x over 0.45 minus x, all squared, equals 49. Something squared equals a square number, a perfect square, and 49 is seven squared. So take the square root of both sides: two x over 0.45 minus x equals seven. Hydrogen iodide and hydrogen are both positive, so this ratio is positive and we keep plus seven.",
+      "hash": "8ae8a6bae2e6",
+      "textSha256": "8ae8a6bae2e6d9fb03cd0ecab9c04eae73eba7c15c8596f8897afcfd3db3661f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/substitute.8ae8a6bae2e6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/substitute.8ae8a6bae2e6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/substitute.8ae8a6bae2e6.generation.json",
+      "plannedRequestSha256": "9f68bd9faff027a977aa285fa7736996ac528556f026814bcfb833cb05dbb062"
+    },
+    {
+      "id": "solve",
+      "parentSceneId": "solve",
+      "text": "Now rearrange. Multiply both sides by 0.45 minus x: two x equals 7 times 0.45 minus x, which is 3.15 minus 7x. Add 7x to both sides, so nine x equals 3.15. Find x. Pause here and try it.",
+      "hash": "b927be84488f",
+      "textSha256": "b927be84488f0134960f1c211f6d1b6c9e9049bac751c00a495e9a0ed72c7fd9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/solve.b927be84488f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/solve.b927be84488f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/solve.b927be84488f.generation.json",
+      "plannedRequestSha256": "bf9903c8f9f7b81be4eefe2a16acaf3ea809334b48cea833ccf59694ac873b35"
+    },
+    {
+      "id": "check",
+      "parentSceneId": "check",
+      "text": "x is 0.35. So hydrogen and iodine are each 0.45 minus 0.35, 0.10 moles per litre, and hydrogen iodide is two times 0.35, 0.70. Check by substituting back: 0.70 squared is 0.49, over 0.10 times 0.10, which is 0.010, gives 49. Why not minus seven? That would need x of 0.63, more than the 0.45 we started with, so hydrogen would be negative.",
+      "hash": "03cdba6de353",
+      "textSha256": "03cdba6de353b51159e93c1f3b1f1671bc59e42ab71f1ebdb41bf7445813e472",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/check.03cdba6de353.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/check.03cdba6de353.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/check.03cdba6de353.generation.json",
+      "plannedRequestSha256": "47f1907df37658513aaba29b48affbc3724634f2d19ce71ef0793ad219906672"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here is the habit. Only the change row follows the coefficients: minus 0.35, minus 0.35 and plus 0.70 are in the ratio one, one, two. The initial and equilibrium rows do not have to be in that ratio: 0.10, 0.10 and 0.70 are not.",
+      "hash": "6c452bc7a1f5",
+      "textSha256": "6c452bc7a1f5f9842af507c47c946c6d0b93ee27bfa2d1f1d2baba231dd32d4d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/memory-aid.6c452bc7a1f5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/memory-aid.6c452bc7a1f5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/memory-aid.6c452bc7a1f5.generation.json",
+      "plannedRequestSha256": "27efe596f1eac7b23d96b805008dedc71709d1b6e2ca8641402b1b6a7f2d1504"
+    },
+    {
+      "id": "reverse-equation",
+      "parentSceneId": "reverse-equation",
+      "text": "K belongs to the equation as it is written. Take the same settled tube, 0.10, 0.10 and 0.70, and write the equation backwards: two H I making hydrogen plus iodine. K is now hydrogen times iodine over H I squared: 0.10 times 0.10, over 0.70 squared, is 0.010 over 0.49, about 0.020, and that is one over 49. Flip the equation, flip K. Double every coefficient and every power doubles, so K is squared: 49 squared is 2401.",
+      "hash": "a2607836538b",
+      "textSha256": "a2607836538b285b649f6b4056298051407a29f4b3eda2ea3d00504a6476bb41",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/reverse-equation.a2607836538b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/reverse-equation.a2607836538b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/reverse-equation.a2607836538b.generation.json",
+      "plannedRequestSha256": "df148bdd8086c52769d6d3f52ac02477024954f640dd673336c1cd5c8ad4f41b"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Dinitrogen tetroxide, N two O four, splits into nitrogen dioxide, N O two. We seal 0.100 moles of N two O four, and nothing else, in a 2.00 litre vessel at a steady temperature, and at equilibrium the concentration of N O two is 0.0300 moles per litre. One: find K for N two O four making two N O two. Two: what is K for the equation written the other way, two N O two making N two O four, at the same temperature? Pause here to answer.",
+      "hash": "0793dd3f1e6a",
+      "textSha256": "0793dd3f1e6af70b9d8e479152174d3f6a0ec39be3708128bc2c2f72288475e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/attempt.0793dd3f1e6a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/attempt.0793dd3f1e6a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/attempt.0793dd3f1e6a.generation.json",
+      "plannedRequestSha256": "01fbe35db5da63abed9340965b4ac69271c68ca8428d8de76bc2d19a762fb41c"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One. Start with concentrations: 0.100 moles over 2.00 litres is 0.0500 moles per litre. N O two rose by 0.0300, and the equation makes two N O two for each N two O four, so N two O four fell by half of that, 0.0150. Equilibrium N two O four is 0.0500 minus 0.0150, 0.0350. K is N O two squared over N two O four: 0.0300 squared is 0.000900, over 0.0350, gives 0.0257. If you got about 0.018, you used the starting 0.0500 instead of the equilibrium 0.0350. If you got 0.045, you took off the whole 0.0300 instead of half of it. And if you got about 0.86, you forgot to square the N O two.",
+      "hash": "951cffda8f50",
+      "textSha256": "951cffda8f50a5e5ce33b75ec0ca3a5a2e1adc9a795c592914dd57074306056b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/feedback-one.951cffda8f50.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/feedback-one.951cffda8f50.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/feedback-one.951cffda8f50.generation.json",
+      "plannedRequestSha256": "fcdab0443a055636d17991bcf8ab3c375c260890efa2bd4a802b66aab147fe31"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two. Written backwards, K is the old value flipped, so it is one over 0.0257, which is 38.9. The expression is N two O four over N O two squared. If you wrote 0.0257 again, check the direction of the equation: the products are now the N two O four.",
+      "hash": "a02b9ccb61de",
+      "textSha256": "a02b9ccb61de19debd678a404797d4ac509892d4c37299f8ed79e3422aa4a838",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/feedback-two.a02b9ccb61de.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/feedback-two.a02b9ccb61de.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/feedback-two.a02b9ccb61de.generation.json",
+      "plannedRequestSha256": "e23d59aef1827d4901670220d4c8198743905b9529744e8a8126b9b762292150"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question gives a start and one settled value, write the expression, put the concentrations in the initial row, fill the change row by the coefficients, add to get the equilibrium row, then substitute and check. When it gives K instead, call the change x, substitute and solve. That works in a clean way here because hydrogen and iodine started equal. Other starts give an equation that needs a different method, which comes later. Next: why factories do not wait for equilibrium.",
+      "hash": "b8286f83b040",
+      "textSha256": "b8286f83b0406070dd8640be08d1940cb6fd7844488bde73eb2bcbab5d8fc726",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/decision-rule.b8286f83b040.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/decision-rule.b8286f83b040.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/decision-rule.b8286f83b040.generation.json",
+      "plannedRequestSha256": "2598423cef3d29caeaa79125993fd114f371c327c55871746aafda8546e679df"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

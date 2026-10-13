@@ -97,7 +97,8 @@ export const TubeKey: React.FC<{x: number; y: number; at: number; scale?: boolea
 /** Coded grey metal crumple (or the painted plate once delivered). */
 export const Crumple: React.FC<{x: number; y: number; s: number; rot?: number; opacity?: number}> = ({x, y, s, rot = 0, opacity = 1}) => {
 	if (opacity <= 0.01) return null;
-	if (HAVE.has(CATALYST)) return <image href={staticFile(CATALYST)} x={x - s / 2} y={y - s / 2} width={s} height={s} opacity={opacity} />;
+	// the plate's metal fills about 40% of its square canvas (alpha box 541..1259 of 1800), so draw the canvas 2.35x to match the coded size
+	if (HAVE.has(CATALYST)) { const c = s * 2.35; return <image href={staticFile(CATALYST)} x={x - c / 2} y={y - c / 2} width={c} height={c} opacity={opacity} transform={`rotate(${rot} ${x} ${y})`} />; }
 	const k = s / 100;
 	return (
 		<g transform={`translate(${x},${y}) rotate(${rot}) scale(${k})`} opacity={opacity}>

@@ -21,4 +21,6 @@ Screen: None found in the written visual instructions. Still-frame checks skippe
 
 Copy: None found.
 
+Revalidation of the same Revision 4 hash: the stated van 't Hoff inputs give settled NH3 percentages 56.77 (300 C), 23.68 (450 C), 17.03 (500 C) and 8.99 (600 C); the separate 300 C table input gives 61.88. Pressure calculations at 450 C give 8.51, 14.77, 23.68, 34.69 and 50.27 percent at 50, 100, 200, 400 and 1000 atm. Nitrogen conversion follows 2y/(1+y), giving 75, 40 and 16.5 percent for the stated 60, 25 and 9 percent gas fractions. NIST formation values give Haber -91.88 kJ and methanol -90.96 kJ, supporting the narrated rounding. [NIST methanol](https://webbook.nist.gov/cgi/cbook.cgi?ID=C67561&Mask=1) supplies the methanol value. The [official 2017 syllabus PDF](https://kiama-h.schools.nsw.gov.au/content/dam/doe/sws/schools/k/kiama-h/content/learning-at-our-school/chemistry-stage6-syllabus-pdf.pdf), page 50, confirms the disturbance and collision-theory scope. No findings change.
+
 Count: 0 findings.

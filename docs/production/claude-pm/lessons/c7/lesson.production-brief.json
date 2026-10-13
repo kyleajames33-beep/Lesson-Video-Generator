@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c7/lesson.json",
+    "lessonSha256": "19fe753cce0d2472e7697a4832b683d51ce0985099171cdfb59da851945e5347"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C6 and Year 11: cooling, squeezing and removing a product each shift an exothermic, fewer-gas-particle reaction toward product (C3, C4a); a catalyst changes the speed, not the destination, and can give more product in a limited time (C4b); both rates fall when the mixture is cooled, because fewer collisions have enough energy (C3); concentration is crowding (C2, C4a).",
+    "startsWith": "The Haber process running hot at about 450 degrees Celsius and about 200 atmospheres, although cooling and squeezing would shift the settled mixture further toward ammonia.",
+    "stopsAfter": "Telling the equilibrium yield (where the mixture settles) from the rate (how soon) and from the cost and safety limits; justifying a stated temperature, pressure, catalyst and removal for an exothermic, fewer-gas-particle reaction in a staged written answer; explaining why a plant removes product and recycles the rest; and noting that the temperature compromise exists only when the forward reaction gives out heat. No K values, no Q, no calculation of yields, no temperature dependence of K, no Contact process, no history.",
+    "nextLesson": "G02: reading equilibrium graphs you have not seen before."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c07.md"
+  ],
+  "teaching": {
+    "task": "Justify the temperature, pressure, catalyst and product removal used in an industrial equilibrium process by what each does to the yield and the rate and what limits it.",
+    "causalExplanation": "Cooling and squeezing raise the yield of an exothermic, fewer-gas-particle reaction, but a factory is paid for what leaves the reactor in the time available. Cooling slows both rates because fewer collisions have enough energy, so the best temperature in the time available is a middle one. A catalyst lowers the activation energy in both directions, so it changes the speed and not the settled mixture. Pressure raises the rates and the yield, but each step buys less extra product and costs more in equipment, energy and safety. Taking the product out keeps the reverse rate low so the forward reaction stays ahead, and recycling reuses the unreacted gas.",
+    "conversationalApproach": "Opens with the surprise that real plants run at conditions that give less ammonia, separates yield from rate with three curves on one time plot, shows the catalyst fixing speed and not the ceiling, weighs pressure against cost, follows the plant loop, models a staged answer one cell at a time, and tests an unseen methanol case.",
+    "openingDecision": "Why does a plant choose conditions that make less ammonia in the settled mixture?",
+    "understandingCheck": "For methanol made from CO and 2H2 with the forward reaction giving out 91 kJ per mole: justify about 250 degrees Celsius, 50 to 100 atmospheres and removing the methanol, and answer a student who claims 25 degrees and 500 atmospheres give the highest yield.",
+    "curriculumScope": "Explain how industrial processes use equilibrium principles and the trade-offs among yield, rate, cost and safety (Module 5). K values, Q, yield calculations, the temperature dependence of K, the Contact process and history are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, a painted converter tower or coded plant outline, a coded dashboard of sliders and gauges, a time plot of three curves, a pressure axis with paired bars, a coded plant loop and a Yield, Rate and Limit answer frame. Colour key: yield green, rate blue, limit red, ammonia green dots, nitrogen navy, hydrogen pale grey, iron metallic grey.",
+    "transitionPlan": "The tower push gives way to the dashboard; the dashboard shrinks away for the reactor pipe; the time plot draws on and keeps the vertical line; the plot clears for the pressure axis; the plant loop replaces the plot; the answer frame fills a cell at a time; the attempt board removes the aids and the feedback fills the same lines; the next chips slide in for the later K video and the graphs video; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted converter tower (or coded plant outline) with the Haber equation strip and a coded dashboard of two sliders and two gauges",
+      "teachingReason": "Poses why real plants run at conditions that give less ammonia than cooling and squeezing would",
+      "narrationCue": "Ammonia is the starting point / Cooling the mixture and squeezing it / about 450 degrees Celsius / about 200 atmospheres / Why choose conditions that make less ammonia",
+      "motionPurpose": "A slow push on the tower, a ghost hand moves the sliders and a faint yield needle rises to the highest possible mark, then the plant values land lower",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the equation strip writes with \"+ heat\" and the tag \"forward gives out heat\"; the dashboard builds; a ghost hand slides temperature down and pressure up and a faint yield needle rises to a \"highest possible yield\" mark; the real plant values 450 C and 200 atm land lower on the sliders",
+      "motionTools": [
+        "CameraStage push",
+        "HandText write-on",
+        "slider slide",
+        "gauge needle",
+        "tag pop"
+      ],
+      "holdPurpose": "Brief hold on the question"
+    },
+    {
+      "sceneId": "yield",
+      "visualDecision": "adjust",
+      "visualReference": "The full dashboard with the yield gauge, the equation strip with heat chip and gas-count chips 4 and 2, and the shift arrows",
+      "teachingReason": "Defines equilibrium yield and shows what cooling, squeezing and removal each do to it, and that the catalyst does not",
+      "narrationCue": "what gives the most ammonia in the settled mixture / equilibrium yield / gives out heat, 92 kilojoules / Cooling takes heat away / Squeezing shifts toward fewer gas particles / The catalyst changes only the speed",
+      "motionPurpose": "The yield gauge name writes on, the temperature slider drops and the yield needle climbs, the pressure slider rises with gas-count chips and a shift arrow, and the catalyst leaves the needle still",
+      "motionRole": "explain",
+      "onScreenChange": "The yield gauge name writes with its plain meaning; the heat chip pulses with \"-92 kJ for each mole of N2\"; the temperature slider slides down and the yield needle climbs; the pressure slider slides up, the chips 4 and 2 appear with a shift arrow and the needle climbs again; removal and the catalyst are shown as separate small rows with the catalyst leaving the needle still",
+      "motionTools": [
+        "slider slide",
+        "gauge needle",
+        "HandText write-on",
+        "shift arrow draw",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold the labelled dashboard"
+    },
+    {
+      "sceneId": "time-in-reactor",
+      "visualDecision": "adjust",
+      "visualReference": "Coded pipe with green and navy dots drifting through an iron catalyst box, a vertical time line, small C2 rate bars and the C3 collision strip",
+      "teachingReason": "Shows a factory is paid for what leaves the reactor in the time available, and why cooling slows both rates",
+      "narrationCue": "not for a mixture that has had all day to settle / Cooling lowers both rates / fewer collisions have enough energy / hard to split",
+      "motionPurpose": "The dashboard shrinks away, dots drift through the iron box past a vertical time line, two small rate bars drop together and a collision strip shows fewer successes",
+      "motionRole": "explain",
+      "onScreenChange": "The dashboard shrinks away; a pipe runs across the top with dots drifting through a box tagged \"iron catalyst\" and a vertical line \"time the gas spends over the catalyst\" draws in; two small rate bars (forward blue, reverse amber) drop together; the collision strip shows fewer successes; a pen ring goes to an N2 molecule with \"needs energetic collisions\"",
+      "motionTools": [
+        "pipe flow",
+        "DrawPath line",
+        "NumberTicker rate bars",
+        "collision animation",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "three-temperatures",
+      "visualDecision": "new",
+      "visualReference": "Large coded time plot (ammonia % against a made-up clock) with three curves, dashed ceilings and dots on the vertical time line",
+      "teachingReason": "Shows three temperatures so the learner sees the middle one wins in the time available",
+      "narrationCue": "three temperatures at the same pressure / These numbers are illustrative / settle at about sixty percent ammonia / it crawls / settles at once / gets close in the time available",
+      "motionPurpose": "The axes draw on and the cool curve climbs slowly to a high dashed ceiling, the hot curve shoots to a low ceiling, and the middle curve gets a green ring as it reaches its ceiling and the dot sits highest",
+      "motionRole": "explain",
+      "onScreenChange": "The time plot draws on with the tag \"200 atm, N2 : H2 = 1 : 3, illustrative, about\"; the cool curve climbs slowly toward a dashed ceiling \"settles at about 60\" with a low dot on the vertical line; the hot curve shoots to a low ceiling \"settles at about 9\"; the middle curve reaches \"settles at about 25\" with a high dot, a green ring and a label \"most ammonia in the time available\"",
+      "motionTools": [
+        "lineGraph draw-on",
+        "dashed line reveal",
+        "marker drop",
+        "ScribbleCircle",
+        "label write-on"
+      ],
+      "holdPurpose": "Hold the three curves and the green ring"
+    },
+    {
+      "sceneId": "catalyst-speed",
+      "visualDecision": "adjust",
+      "visualReference": "The same plot with a dashed no-catalyst copy of the middle curve, the C4b ridge profile as an inset and the hot curve returning",
+      "teachingReason": "Shows the iron fixes the speed and not the ceiling, and explains why a plant without iron would need a hotter, lower-ceiling reactor",
+      "narrationCue": "So what does the iron do? / lower-energy pathway in both directions / The ceiling does not move / a hotter reactor, with a lower ceiling",
+      "motionPurpose": "A pen ring goes to the iron tag, a slower dashed curve climbs with its dot staying low, the ridge inset shows the lower pass in both directions and a zero-height bracket reads same ceiling",
+      "motionRole": "explain",
+      "onScreenChange": "A pen ring goes to the iron pellet tag; a dashed \"no catalyst\" copy of the middle curve climbs slowly with its dot low while the solid dot stays high; the C4b ridge profile appears as an inset with a lower pass and a brace \"both directions\"; a zero-height bracket on the ceiling reads \"same ceiling\" with \"sooner, not different\"; the hot curve returns with its lower ceiling",
+      "motionTools": [
+        "lineGraph draw-on",
+        "ScribbleCircle",
+        "bracket draw",
+        "DrawPath curve",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the two ceilings and the bracket"
+    },
+    {
+      "sceneId": "pressure-limit",
+      "visualDecision": "new",
+      "visualReference": "Coded pressure axis with paired green and red bars that shrink and grow along it, a steel wall, a pump, a flame and a warning pipe",
+      "teachingReason": "Explains why the plant stops at a middle pressure: each step buys less extra ammonia but costs more",
+      "narrationCue": "Pressure helps both / toward the side with two gas particles / So why not a thousand atmospheres? / a leak is dangerous / about two hundred atmospheres",
+      "motionPurpose": "Two icons land for the rate and the shift, then pairs of bars step along the pressure axis with the green bar shrinking and the red bar growing until a band marks about 200 atm",
+      "motionRole": "explain",
+      "onScreenChange": "The plot clears and a pressure axis draws on with the tag \"illustrative shapes, no numbers\"; a rising rate bar pair and the 4 to 2 chip with a green shift arrow appear; pairs of bars step up the axis with the green \"extra ammonia\" bar shrinking and the red \"extra cost\" bar growing, the steel wall thickening, a pump growing and a flame; a warning mark lands on a pipe on \"a leak\"; a band closes on about 200 atm where the bars cross",
+      "motionTools": [
+        "axis draw-on",
+        "bar resize",
+        "icon pop",
+        "band reveal",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the band at the crossing point"
+    },
+    {
+      "sceneId": "recycle",
+      "visualDecision": "new",
+      "visualReference": "Coded plant loop: fresh gas in, reactor with iron beds, cooler, liquid tank and a recycle pipe with a pump",
+      "teachingReason": "Shows removing the product and recycling the unused gas so most of the feed ends up as ammonia",
+      "narrationCue": "about a fifth of the gas leaving the reactor is ammonia / turns to a liquid, called condensing / while the nitrogen and hydrogen stay gases / pumped back into the reactor, which is recycling / more than ninety-five percent",
+      "motionPurpose": "Five dots leave the reactor with one green, the green dots drop into the tank as liquid, the unused dots run back along a lit recycle pipe and a counter climbs past ninety-five percent",
+      "motionRole": "explain",
+      "onScreenChange": "Fresh N2 and H2 dots enter and pass the reactor box tagged \"450 C\" and \"200 atm\"; five dots leave with one green and a pen ring; the green dots drop into the tank as liquid and \"condensing\" writes at the cooler; a pen ring goes to the gases that stay; the recycle pipe lights, \"recycling\" writes on it and the unused dots re-enter; the shift runs forward again; a counter climbs past 95 percent over many trips",
+      "motionTools": [
+        "pipe flow",
+        "particle drop",
+        "ScribbleCircle",
+        "label write-on",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold the closed loop and the counter"
+    },
+    {
+      "sceneId": "model-answer",
+      "visualDecision": "adjust",
+      "visualReference": "C6 style board with a conditions card and a three-column frame (Yield green, Rate blue, Limit red) with a row per condition",
+      "teachingReason": "Models the staged written answer one cell at a time for temperature, pressure and removal",
+      "narrationCue": "one condition at a time / Temperature: the reaction gives out heat / So the plant uses about 450 degrees with iron / Pressure: four gas particles become two / Removal: taking the ammonia out",
+      "motionPurpose": "The frame writes on and the rows fill one cell at a time on their spoken cues with ticks",
+      "motionRole": "explain",
+      "onScreenChange": "The task line and conditions card sit on the board; the frame \"Yield / Rate / Limit\" writes on; the Temperature row fills cell by cell (\"exothermic: cooling shifts toward NH3\", \"fewer collisions have enough energy\", \"rate falls, so a middle temperature, about 450 C, plus iron\"); the Pressure row and the Removal row fill in turn on their cues with ticks; the finished answer holds",
+      "motionTools": [
+        "table build",
+        "HandText write-on",
+        "tick",
+        "colour coding"
+      ],
+      "holdPurpose": "Hold the finished answer for a beat"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Large handwritten aid \"Haber is a compromise\" over a two-force tug of war between a snowflake and a flame with a flag settling at about 450 C",
+      "teachingReason": "Gives a yield versus speed shortcut for temperature after the cause has been explained",
+      "narrationCue": "yield asks for cold and speed asks for hot, so industry compromises / a middle temperature / neither best for the yield nor best for the speed",
+      "motionPurpose": "The aid writes on, the two figures pull the rope toward the snowflake and the flame, and the flag settles at about 450 C with its plain meaning",
+      "motionRole": "explain",
+      "onScreenChange": "The aid writes large; the cold-blue \"yield\" figure pulls toward a snowflake and the hot-orange \"speed\" figure toward a flame; the flag settles at \"about 450 C\" with \"a middle temperature that gives the most in the time available\"; the condition tag \"forward reaction gives out heat and is too slow when cold. If it takes in heat, heat helps both.\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath rope",
+        "figure pull",
+        "flag settle"
+      ],
+      "holdPurpose": "Hold for about 3 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded board with the methanol equation strip, a grouped conditions card, a separate student claim card and three empty labelled lines with yield, rate and limit tags",
+      "teachingReason": "Unseen transfer to a new exothermic fewer-gas-particle reaction with every condition and demand visible and no answer cues",
+      "narrationCue": "Your turn / Methanol, C H three O H, is made from carbon monoxide and hydrogen / A plant runs at about 250 degrees Celsius / A student says the plant should use 25 degrees and 500 atmospheres / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The task line, equation strip with \"forward gives out about 91 kJ for each mole of CH3OH\" and the grouped conditions card appear as each is named; the separate student claim card lands; the three empty labelled lines with yield, rate and limit tags stay as a first-use scaffold; the aid and earlier boards are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "card slide-in"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-temperature",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt board with the Temperature line filling its three coloured cells, a small two-curve inset and two crossed wrong-answer chips",
+      "teachingReason": "Explains the temperature answer by yield, rate and limit and corrects the catalyst and always-hotter slips",
+      "narrationCue": "Temperature. The reaction gives out heat / at 25 degrees almost no collisions have enough energy / the catalyst speeds both directions / it changes the speed, not the destination / hotter also lowers the yield",
+      "motionPurpose": "The Temperature line fills cell by cell, a small inset replays the cool and middle curves, and two wrong chips are crossed as they are named",
+      "motionRole": "explain",
+      "onScreenChange": "The Temperature cells fill: Yield \"exothermic: cooling shifts toward CH3OH\" with a tick, Rate \"fewer collisions have enough energy\", Limit \"rate falls, so a middle temperature, about 250 C, plus a catalyst\"; a two-curve inset replays the cool and 250 C curves with the same colours and no numbers; the chips \"the catalyst increases the yield\" and \"always hotter, because faster\" are crossed with correcting captions",
+      "motionTools": [
+        "table build",
+        "lineGraph reuse",
+        "Mark cross",
+        "tick",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the corrected temperature line"
+    },
+    {
+      "sceneId": "feedback-pressure-removal",
+      "visualDecision": "adjust",
+      "visualReference": "The Pressure and Removal lines filling their cells, 3 to 1 gas-count chips with a shift arrow, and an inset of the extra-yield and extra-cost bars with a band at 50 to 100 atm",
+      "teachingReason": "Explains the pressure and removal answers and corrects the pressure slows it and no reason against the highest pressure slips",
+      "narrationCue": "Three gas particles become one / it costs far more and a leak is more dangerous / Condensing the methanol takes it away / pressure slows the reaction, remember it crowds the particles",
+      "motionPurpose": "The 3 to 1 chips and a shift arrow appear, the Pressure and Removal lines fill in on their cues, the cost inset marks 50 to 100 atm with a cross at 500, and two wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The 3 to 1 gas-count chips appear over the equation strip with a green shift arrow; the Pressure line fills (\"3 gas to 1: squeeze shifts toward CH3OH\", \"more crowded, more collisions\", \"500 atm costs more and is less safe, so 50 to 100 atm\"); the Removal line fills (\"taking CH3OH away: more is made in total\", \"reverse rate stays low, so forward stays ahead\", \"recycle the unused gas\"); the bar inset shows the 50 to 100 atm band and a cross at 500; two wrong chips are crossed",
+      "motionTools": [
+        "table build",
+        "shift arrow draw",
+        "band reveal",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the corrected board"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Two question cards with the yield, rate and limit tags and a split thermometer, then two chips with a K thermometer glyph and a curve icon",
+      "teachingReason": "Packs the lesson into a reusable question order, notes the compromise exists only when the forward reaction gives out heat, and hands off to graphs",
+      "narrationCue": "take one condition at a time / yield and speed pull apart on temperature / If it takes in heat, heat helps both / Later, K puts numbers on this / Next: reading equilibrium graphs",
+      "motionPurpose": "Two cards write on, the yield, rate and limit tags light in turn, a heat-helps-both branch greys, and two chips slide in for the later K video and the next video",
+      "motionRole": "explain",
+      "onScreenChange": "The card \"Justify a condition: yield and why, rate and why, what limits it.\" writes on with the tags lighting in turn; the card on temperature writes on with a thermometer split into snowflake and flame and the second branch greyed \"heat helps both\"; on \"Later, K\" a chip \"K and temperature: a later video\" appears with a thermometer glyph; on \"Next\" the chip \"Next: reading equilibrium graphs\" appears with a curve icon",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "tag light",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 90 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c7-learning-review.md",
+      "sha256": "bb8d5f9695fd3c4f330210cc7c1b4b2e714e70025b97d720701dc42ba50ff133"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c7-claude-science-check.md",
+      "sha256": "0e13266d92194b9e79ef4f6e36c9fdeefbedf64936f47f891013e63b8fb10eb2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

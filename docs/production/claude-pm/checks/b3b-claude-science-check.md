@@ -87,3 +87,13 @@ Applied to `lessons/bio-m5-b03b.md` (revision 4, 12 Oct). The check covered revi
 12. U6 (wheat practice): the bee doodle in 3a is replaced by a wind wisp, and the breeder "places pollen" (3a, attempt item two and its board, 8b) instead of brushing; the visual uses a donor wheat head.
 
 Word count after these changes: 1,274 narrated words (about 6.9 minutes of narration, a runtime near 9.4 minutes with the 75 second attempt hold, 60 second notes hold and about 14 seconds of other holds).
+
+## Codex check resolution (13 Oct)
+
+Applied to `../lessons/bio-m5-b03b.md` (Revision 5, "Codex fact check resolved; ready to voice"). Narration grew by about 22 words (1269 to 1291 by plain count).
+
+| # | Finding | Decision | New wording |
+| --- | --- | --- | --- |
+| 1 | Key note 1 and Stops after equate heat with ovulation | Use "during heat, before ovulation" everywhere. | Key note 1: "placed in a female's reproductive tract during heat, before ovulation." Stops after: "placed in the female's reproductive tract during heat, before ovulation". Scene 2b: "She releases her egg about a day after it starts, so the dose must go in during heat, before the egg is released." |
+| 2 | Scene 2c treats a harmful allele like a catchable disease | Separate the two ideas; disease pulse only for the infectious disease; show the allele passing from bull to calves as inheritance. | Scene 2c: "If the herd is closely related, the cows share a weakness to a disease, so one disease can spread through the whole herd. And a harmful allele carried by a popular bull can be passed to many calves." Visual: pulse on "so one disease can spread through the whole herd"; red-dotted "harmful allele" chip travels by inheritance arrows from the bull icon to calf icons on the second sentence. |
+| 3 | "Proven bull" defined as daughters' records or DNA tests | Define through daughters' milk records only; DNA tests not spoken. | Scene 2c: "Calves from a proven bull, one whose merit for milk is shown by its daughters' milk records, on many farms". Author claim 4: young bulls can be DNA tested to predict their merit but are not "proven" until daughters are recorded. |

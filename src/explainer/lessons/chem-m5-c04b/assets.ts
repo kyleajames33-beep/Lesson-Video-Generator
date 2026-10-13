@@ -13,6 +13,6 @@ const A = 'assets/chemistry/';
 export const SEALED_TUBE = A + 'c4b-sealed-tube-v1.png';
 export const CATALYST = A + 'c4b-metal-catalyst-v1.png';
 
-export const HAVE = new Set<string>([]);
+export const HAVE = new Set<string>([CATALYST]);
 const ALL = [SEALED_TUBE, CATALYST];
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

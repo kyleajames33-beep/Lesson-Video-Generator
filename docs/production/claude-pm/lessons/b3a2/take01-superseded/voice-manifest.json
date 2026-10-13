@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B3a2-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b3a2/lesson.json",
+  "lessonSha256": "e1457b4615a155676268873fcba49add5872211be27426f25e260b2cb6a98e7a",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b3a2/lesson.production-brief.json",
+    "sha256": "01eba284b71eb44c402d385e3f299c1e6292649a93d48a24721695bfa4082b9b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "The last video showed the placenta taking charge of progesterone. But before a pregnancy, an egg is released about once a month. So what stops the ovaries releasing another egg for nine months? At the end, why does labour, once it starts, only get stronger? And once the baby is born, how does the body make milk and move it? Two of the answers are hormone loops, and the third is two hormone jobs.",
+      "hash": "c7381d7577ac",
+      "textSha256": "c7381d7577ac1e8c5dc11687a917b6c964c843d601026ce2e33f1813fa1393e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/hook.c7381d7577ac.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/hook.c7381d7577ac.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/hook.c7381d7577ac.generation.json",
+      "plannedRequestSha256": "a5cc87ca7055c5e5409956f02913be74c5fee90035bb3e28359f033ab2ded70d"
+    },
+    {
+      "id": "fsh-lh",
+      "parentSceneId": "fsh-lh",
+      "text": "Normally, an egg is prepared and released by hormones from the pituitary, a small gland at the base of the brain. FSH makes a follicle, the small sac that holds an egg, grow. Then a surge of LH, a sudden rise, makes the follicle release its egg, which is called ovulation. The empty follicle becomes the corpus luteum, which makes progesterone.",
+      "hash": "a3e81a984e48",
+      "textSha256": "a3e81a984e488964b537211d835440c1eea2b7c6714a738628b8165664119ec1",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/fsh-lh.a3e81a984e48.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/fsh-lh.a3e81a984e48.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/fsh-lh.a3e81a984e48.generation.json",
+      "plannedRequestSha256": "d0c0fc3ece10c10a933ba2cbee219818f9ce37ce35db92934cb745d88acafe26"
+    },
+    {
+      "id": "brake",
+      "parentSceneId": "brake",
+      "text": "Progesterone travels in the blood to the pituitary, and it tells the pituitary to release less FSH and LH. Progesterone works like a brake on FSH and LH. With less FSH and LH, no new follicle grows, so no egg is released. That is negative feedback: hormone acts back on the pituitary, the gland that controls the process, and turns that process down.",
+      "hash": "791caeee7716",
+      "textSha256": "791caeee7716bb02993780fd4fc8edf9b1804aef1420bab0c2ffb5bce8c9c756",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/brake.791caeee7716.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/brake.791caeee7716.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/brake.791caeee7716.generation.json",
+      "plannedRequestSha256": "381bba219bdda1d65017b2e8c70067c6e9bcaebd4a558418ea735179048ac5db"
+    },
+    {
+      "id": "thermostat",
+      "parentSceneId": "thermostat",
+      "text": "A thermostat works the same way. The heater warms the room, the thermostat senses the warmth and switches the heater off. If the room gets cold, it switches the heater on, so negative feedback pushes back in either direction. Here, FSH and LH lead to progesterone, and progesterone turns FSH and LH down.",
+      "hash": "724209c8254b",
+      "textSha256": "724209c8254bc63e712ce2cf0499be453f39ffe282b9a852a3655b63a94134e9",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/thermostat.724209c8254b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/thermostat.724209c8254b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/thermostat.724209c8254b.generation.json",
+      "plannedRequestSha256": "3cd920e05f5b91ffcd41bbd4c70d5725bc82610e5eff9a763de148644519e3ea"
+    },
+    {
+      "id": "brake-stays-on",
+      "parentSceneId": "brake-stays-on",
+      "text": "In a month with no pregnancy, the corpus luteum breaks down, progesterone falls, the brake comes off, and the next follicle can grow. In a pregnancy, hCG keeps the corpus luteum going, and then the placenta makes the progesterone, so progesterone stays high for the whole pregnancy. The source has changed, but the brake works the same way: the pituitary senses progesterone in the blood and releases less FSH and LH. So the brake stays on, and no new egg is released.",
+      "hash": "7c5c7e0d980c",
+      "textSha256": "7c5c7e0d980cada6c44d82db9c45d573bc06a9ed2e0a7eb0e184984b8eeea267",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/brake-stays-on.7c5c7e0d980c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/brake-stays-on.7c5c7e0d980c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/brake-stays-on.7c5c7e0d980c.generation.json",
+      "plannedRequestSha256": "bf58c7a18ad56e27f273c976f556f7afa889c3a83a1594f2de5d285abfdbc52f"
+    },
+    {
+      "id": "oestrogen",
+      "parentSceneId": "oestrogen",
+      "text": "The wall of the uterus is mostly muscle, and through the pregnancy progesterone helps keep it calm. Late in pregnancy, the placenta makes more and more oestrogen, another hormone. Oestrogen makes the muscle react more strongly to oxytocin, the hormone that makes it contract. So by the end, even a small amount of oxytocin makes the muscle contract strongly.",
+      "hash": "f81809434cf5",
+      "textSha256": "f81809434cf5765026d2d3fd9eb219b29fb0593d0b0ffef662d49f7ddb2bfa2f",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/oestrogen.f81809434cf5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/oestrogen.f81809434cf5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/oestrogen.f81809434cf5.generation.json",
+      "plannedRequestSha256": "ba709dd6ef5f52f6b68b4a9fefa20b22544250e50088e5486f3c6f57324a9165"
+    },
+    {
+      "id": "trigger",
+      "parentSceneId": "trigger",
+      "text": "Exactly what sets off the first contractions is still being worked out. But once they begin, they push the baby's head down onto the cervix, the narrow lower end of the uterus, and stretch it. The stretch sends nerve signals to the brain, and the pituitary releases oxytocin into the blood. Oxytocin reaches the uterus muscle, and the muscle contracts harder.",
+      "hash": "d3fe1d49429c",
+      "textSha256": "d3fe1d49429c7eacdf7d2cc328962f99a5ce8c7d60c901d5542b31fa9f900787",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/trigger.d3fe1d49429c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/trigger.d3fe1d49429c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/trigger.d3fe1d49429c.generation.json",
+      "plannedRequestSha256": "4990e20567f5fa33873aaacbc5354345853d49a5454942739fd4b72eb3f806d4"
+    },
+    {
+      "id": "loop-closes",
+      "parentSceneId": "loop-closes",
+      "text": "Harder contractions push the baby's head against the cervix more firmly, so the cervix stretches more, so more oxytocin is released. Here the result of the process pushes the process further, in the same direction. That is positive feedback. Nothing in this loop turns it down, so the contractions build until the baby is born. Then nothing stretches the cervix any more, and the loop stops.",
+      "hash": "fa68e3cf78fb",
+      "textSha256": "fa68e3cf78fbc33f88ecbbcee66ca79317f92413426822e3ec39e6ff7062b252",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/loop-closes.fa68e3cf78fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/loop-closes.fa68e3cf78fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/loop-closes.fa68e3cf78fb.generation.json",
+      "plannedRequestSha256": "958908cd856f3f9da099dc950651e33f52d657e7181ad494977b3230fcbad618"
+    },
+    {
+      "id": "two-kinds",
+      "parentSceneId": "two-kinds",
+      "text": "Negative does not mean bad, and positive does not mean good. They describe whether the result opposes the process or adds to it. Negative feedback opposes a change, so it keeps conditions steady. Positive feedback adds to a change, so it speeds up until something ends it.",
+      "hash": "14f70ad7ec91",
+      "textSha256": "14f70ad7ec91ca12bdeebd2dcf38b7de5ede12bb2ceb85a3174fd16d7112d3db",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/two-kinds.14f70ad7ec91.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/two-kinds.14f70ad7ec91.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/two-kinds.14f70ad7ec91.generation.json",
+      "plannedRequestSha256": "694550da81d6fe73a5df9b994b1e6bf03cb4df34459ea179e7f601c8ec03e0f4"
+    },
+    {
+      "id": "explain-answer",
+      "parentSceneId": "explain-answer",
+      "text": "Here is an Explain answer. First, the negative feedback. During pregnancy, the corpus luteum and then the placenta keep progesterone high. This is negative feedback, because high progesterone reduces the pituitary's release of FSH and LH, so no follicles mature and no egg is released. Second, the positive feedback. At birth, the baby's head stretches the cervix, which makes the pituitary release oxytocin. This is positive feedback, because oxytocin strengthens the contractions, which stretch the cervix more and release more oxytocin. It continues until the baby is born, when the stretch stops.",
+      "hash": "b98f841b3dc4",
+      "textSha256": "b98f841b3dc4a9cd68370a12d0b3fc1e964ec88cb09a9410bd2b6189ba2dd687",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/explain-answer.b98f841b3dc4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/explain-answer.b98f841b3dc4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/explain-answer.b98f841b3dc4.generation.json",
+      "plannedRequestSha256": "1e15b145ecb022c51cf788a02531629b775d5f267539556fe9e1f28595e41dc7"
+    },
+    {
+      "id": "milk-jobs",
+      "parentSceneId": "milk-jobs",
+      "text": "One more hormone job after the birth: feeding the baby. Prolactin makes the breast produce milk. Oxytocin makes tiny muscle cells around the milk-making glands squeeze, which pushes the milk out.",
+      "hash": "6dfc570fa843",
+      "textSha256": "6dfc570fa8437ac66403f11b945e37d9c18ce82358043f4e9c3b6bb4a41b02f6",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/milk-jobs.6dfc570fa843.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/milk-jobs.6dfc570fa843.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/milk-jobs.6dfc570fa843.generation.json",
+      "plannedRequestSha256": "70c43099e9a1bcb34cffc2303d1646054640b74f92975f0a16e6973da4edd392"
+    },
+    {
+      "id": "milk-trigger",
+      "parentSceneId": "milk-trigger",
+      "text": "Both are released when the baby suckles, because nerve signals from the nipple reach the brain and the pituitary releases them. Plenty of milk is not made during pregnancy, because the high progesterone and oestrogen from the placenta hold it back. When the placenta leaves the body after the baby, those levels fall, and milk production begins.",
+      "hash": "e872540495f7",
+      "textSha256": "e872540495f7370f9db3a1bf12da4227f3f9b76333acdf145d7899ab3a3442dc",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/milk-trigger.e872540495f7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/milk-trigger.e872540495f7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/milk-trigger.e872540495f7.generation.json",
+      "plannedRequestSha256": "aefbef1121ff8fe19a0b839e9472f2d4e0a09523f0d019ffd6ff30f6a40c8d61"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Three situations. One: a woman who is not pregnant takes a daily tablet with a hormone that copies progesterone's action on the pituitary, and it keeps the level in her blood as high as in late pregnancy. What do you predict happens to her FSH and LH, and to ovulation, the release of an egg, and why? Two: a woman is breastfeeding. Her baby suckles well and her breasts are making plenty of milk, but very little milk comes out. Which hormone's release is more likely to be the problem, prolactin or oxytocin, and why? Three: a student writes, \"Labour is negative feedback because it is painful, and the progesterone brake in pregnancy is positive feedback because it protects the pregnancy.\" What is wrong with this, and which kind of feedback is each, and why? Pause the video if you'd like more time.",
+      "hash": "478496825433",
+      "textSha256": "478496825433ca072922e08d395cf5b312dc28b4c01d205a551d38c132cbf016",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/attempt.478496825433.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/attempt.478496825433.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/attempt.478496825433.generation.json",
+      "plannedRequestSha256": "8bef746bc69aa29c28d749de72f80e8932296668c060abaf03bfcd7bbb30eab2"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One, LH stays low, so no egg is released, and FSH is turned down too. The pituitary senses progesterone, whatever its source, and turns FSH and LH down. It is the same brake as in pregnancy, so it is negative feedback acting on the pituitary. If you said she would still ovulate because she isn't pregnant, remember that the pituitary senses the hormone, not the pregnancy. If you said FSH and LH would rise, check which way the brake pushes.",
+      "hash": "11ff864826e8",
+      "textSha256": "11ff864826e8d108b5aaab9e6e94824f2934282f1140b9c80fffffc979beea3f",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-one.11ff864826e8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-one.11ff864826e8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-one.11ff864826e8.generation.json",
+      "plannedRequestSha256": "81f2b4b1a77880737312a7594b172717a17ae5da309e0bfae6ff6f8af94cc93e"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two, oxytocin. Her breasts are making plenty of milk, so prolactin is working. The milk is not being squeezed out, so oxytocin is the more likely problem. If you said prolactin because it is the milk hormone, separate making milk from moving milk. Prolactin makes it, and oxytocin squeezes it out.",
+      "hash": "724143bdd27c",
+      "textSha256": "724143bdd27c43a85ba3414e40fad6490872822c1061c4c7ce048f51fed9e407",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-two.724143bdd27c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-two.724143bdd27c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-two.724143bdd27c.generation.json",
+      "plannedRequestSha256": "6421e657ae4f1998caf89e74fbbd21c41456934d77fd532bb5d6b5b3a624576b"
+    },
+    {
+      "id": "feedback-three",
+      "parentSceneId": "feedback-three",
+      "text": "Three, the type of feedback depends on whether the result opposes the process or adds to it, not on how it feels. In pregnancy, high progesterone acts on the pituitary to turn FSH and LH down, the same brake that works in a normal month, so it is negative. In labour, oxytocin strengthens the contractions, which stretch the cervix more and release more oxytocin, so it is positive.",
+      "hash": "7a75b9ad09ea",
+      "textSha256": "7a75b9ad09eab0a99c1417634345f3da634f4d41a41e21008864a4185ddd929e",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-three.7a75b9ad09ea.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-three.7a75b9ad09ea.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/feedback-three.7a75b9ad09ea.generation.json",
+      "plannedRequestSha256": "65576307f27fbe4433583af7b217a889996a08ab0773a82172985434fca560f5"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Remember, oxytocin squeezes, in the uterus for birth and in the breast for milk, and prolactin is pro-lactation, it makes the milk. And when you see a hormone loop, ask whether the result opposes the change or adds to it. Negative opposes the change. Positive adds to it. In these two loops, negative turned the process down and positive pushed it further. Next time: how people use reproduction to change what farms produce.",
+      "hash": "c9568100f4c0",
+      "textSha256": "c9568100f4c08d104ab653a5a22d516e0eabed53621569b78d1ef02f25c7d0b3",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/memory.c9568100f4c0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/memory.c9568100f4c0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/memory.c9568100f4c0.generation.json",
+      "plannedRequestSha256": "450466436328d00e6ab802baa1f6d1fa0835a2beec1bc8d060df472e802dd3ef"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B3a2-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

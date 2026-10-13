@@ -1,7 +1,7 @@
 // G01 scenes 11 to 14: attempt, feedback, decision rule, key notes.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {Countdown, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, Mark, Plate, prog} from '../../kit';
+import {AMBER_INK, Countdown, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, Mark, Plate, prog} from '../../kit';
 import {cues} from '../../cues';
 import type {CueScene} from '../../cues';
 import {BAD, DG, HEAT, SPREAD, kf, sc, Heading} from './common';
@@ -44,7 +44,7 @@ export const SceneAttempt: React.FC = () => {
 				</Enter>
 			))}
 			<Enter at={K12.pause} style={{position: 'absolute', left: 860, top: 850}}>
-				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, color: INK_SOFT}}>Pause the video if you need more time.</div>
+				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58, color: AMBER_INK}}>Pause here to answer.</div>
 			</Enter>
 		</>
 	);

@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b5b/lesson.json",
+    "lessonSha256": "8e6a3a17c39b08d9f51b5c439dd22b2428653418fe6d6ca88b36797b8df23f40"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "The mitosis video: chromosome, set, homologous pair, diploid, haploid, chromatid, sister chromatids, centromere, the counting rule, interphase and S phase, the four steps of mitosis, the model cell and the human 46, 92, 92, 46 tracker. The first video of this series: a gamete carries one set, alleles are versions of a gene, sexual reproduction gives new combinations. The DNA copying video: DNA is copied accurately before division. Not assumed: meiosis, prophase I, metaphase I, anaphase I, the second division, crossing over, non-sister chromatids, independent assortment, 2 to the power n.",
+    "startsWith": "Two brothers with the same parents who look different, and the question of how a cell halves its chromosome number and makes gametes that differ from each other.",
+    "stopsAfter": "Saying why gametes must be haploid; saying meiosis is one copying and two divisions making four haploid cells; saying what happens in prophase I, metaphase I, anaphase I and meiosis II; tracking chromosome and chromatid numbers; saying why crossing over and assortment make new combinations but not new alleles; counting whole-chromosome combinations as 2 to the power n; saying how fertilisation restores the number; contrasting mitosis and meiosis on the same model; applying the counts and stage recognition to an unseen case. No Punnett squares, no genotype ratios, no non-disjunction.",
+    "nextLesson": "DNA in prokaryotes and eukaryotes: how DNA is arranged in different kinds of cell. The later variation video returns to crossing over, assortment, random fertilisation and mutation together."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b05b.md"
+  ],
+  "teaching": {
+    "task": "Explain how meiosis halves a cell's chromosome number and makes gametes that differ from each other.",
+    "causalExplanation": "If gametes were made by mitosis each would carry two sets and the number would double every generation, so a cell copies its DNA once and divides twice. In prophase I homologous partners pair gene against gene and non-sister chromatids swap matching pieces, which makes new combinations of existing alleles. In metaphase I the pairs line up and each pair faces either way by chance, in anaphase I the homologous partners separate with their centromeres intact, which halves the number of sets, and in meiosis II the sister chromatids separate. Fertilisation then joins two haploid gametes and restores the number.",
+    "conversationalApproach": "Starts from two different brothers, shows the doubling problem with a crossed chain, reuses the model cell with alleles marked, runs each stage with the same stage strip as mitosis, tracks the numbers on the same tracker, counts combinations with coins and a doubling grid, and compares the two divisions on the model cell.",
+    "openingDecision": "Two brothers have the same parents and each began from one sperm and one egg carrying one set of chromosomes. How does a cell halve its chromosome number and make gametes that differ from each other?",
+    "understandingCheck": "For a pea plant body cell with 14 chromosomes in 7 pairs and no crossing over, give the chromosomes in each gamete, the number of combinations and the chromosomes in a fertilised egg, and name the division and stage and the chromosome count per cell for a drawn cell with six lined-up chromosomes in three pairs.",
+    "curriculumScope": "Model meiosis, crossing over and independent assortment and explain chromosome continuity (Module 5). Sub-stage names inside prophase I, chiasma, linkage, non-disjunction, spermatogenesis and oogenesis detail and genotype prediction are held back."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the b05a model cell with long and short chromosome bars, centromere discs, allele beads with dotted same-gene links, spindle fibres, stage strip with meiosis I and II dividers, count tracker, combinations grid and compare board. Colour key: plum is one parent's set and teal the other's, cream centromere discs with ink outline, alleles as white beads with a letter, amber for tags and emphasis, grey for crossed wrong ideas.",
+    "transitionPlan": "The family scene draws gametes into zygotes; the doubling chain is crossed and the board wipes to the correct chain; the b05a model cell returns and gains allele beads; the stage strip lands with a meiosis I divider; a camera push reaches the paired chromosomes for crossing over; the board stays for metaphase I and the ghost line-up appears beside it; the second-division chips land with a divider and the left cell enlarges; the four-cell row builds under the parent; the tracker draws on and shrinks; the compare board builds beside the full tracker; the attempt board removes tracker and strip and they return in the feedback; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Coded family scene: parents holding an egg and a sperm cell, two brothers with visibly different features, paths from the gametes to a zygote above each brother",
+      "teachingReason": "Poses the two questions on a familiar observation: siblings differ, yet each began from one set of chromosomes from each parent",
+      "narrationCue": "Two brothers have the same parents / one sperm and one egg / halve its chromosome number",
+      "motionPurpose": "A sperm and an egg path-draw from the parents to a small cell above each brother, a ring marks the one set each carried, and the heading writes on its question",
+      "motionRole": "explain",
+      "onScreenChange": "The parents and the two brothers appear with differing features; a sperm and an egg draw from the parents and meet in a zygote above each brother on \"one sperm and one egg\"; a scribble circle lands on one gamete with \"one set\"; the heading writes on",
+      "motionTools": [
+        "DrawPath",
+        "ScribbleCircle",
+        "HandText write-on",
+        "plate build"
+      ],
+      "holdPurpose": "Hold on the two brothers and the question"
+    },
+    {
+      "sceneId": "why-halve",
+      "visualDecision": "new",
+      "visualReference": "Body cell with a 46 ticker, a mitosis arrow making a sperm and an egg tagged 46, a zygote climbing to 92 and 184 with a grey cross, then the correct chain 46, 23, 46",
+      "teachingReason": "Shows the cause for halving before meiosis is named: gametes made by mitosis would double the number every generation",
+      "narrationCue": "made by mitosis, like skin cells / 92 / 184 / one set, 23 chromosomes / copies its DNA once, then divides twice",
+      "motionPurpose": "The wrong chain climbs from 46 to 92 to 184 and is crossed, then the board wipes to the correct chain 46, 23, 46 and the rule one copy, two divisions writes on",
+      "motionRole": "explain",
+      "onScreenChange": "The body cell ticks to 46; the mitosis arrow makes gametes tagged 46; the zygote ticker climbs to 92 and then 184 with a grey cross and \"the number would double every generation\"; the board wipes to the correct chain with 23 in each gamete and 46 in the zygote; \"one copy, two divisions\" writes on on the meiosis cue",
+      "motionTools": [
+        "NumberTicker",
+        "DrawPath arrows",
+        "Mark cross",
+        "board wipe",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the correct chain"
+    },
+    {
+      "sceneId": "model-alleles",
+      "visualDecision": "adjust",
+      "visualReference": "The b05a model cell (long and short plum and teal bars) with labelled allele beads and dotted same-gene links",
+      "teachingReason": "Adds alleles to the familiar model so crossing over and assortment can be seen as mixing existing versions",
+      "narrationCue": "our model cell again / a plum version and a teal version / a capital and a small letter, only to tell them apart",
+      "motionPurpose": "The model cell returns as single threads, beads pop onto matching levels of the plum and teal bars and dotted lines link each pair of versions",
+      "motionRole": "explain",
+      "onScreenChange": "The model cell settles with its tag; a plum bead appears near the top of the long plum bar and a teal bead at the same level of the long teal bar with a dotted link and \"same gene, two versions\"; the lower gene and the short pair follow; a grey tag says the letters are labels only",
+      "motionTools": [
+        "bead pop",
+        "DrawPath link",
+        "HandText write-on",
+        "plate reuse"
+      ],
+      "holdPurpose": "Hold the labelled model cell"
+    },
+    {
+      "sceneId": "prophase-one",
+      "visualDecision": "adjust",
+      "visualReference": "Four bars doubling into joined threads with alleles on both chromatids, the stage strip with a meiosis I divider, and homologous partners sliding side by side",
+      "teachingReason": "Starts the first division and gives the reason for pairing: one partner of each pair can then go to each end",
+      "narrationCue": "every chromosome is copied / prophase one / side by side, gene against gene / one partner of each pair to each end",
+      "motionPurpose": "The bars double, the stage strip lands, and each chromosome slides beside its homologous partner, gene against gene",
+      "motionRole": "explain",
+      "onScreenChange": "The four bars duplicate and snap at a centromere disc with \"copied once: each chromosome has 2 sister chromatids\"; the stage strip lands with the divider \"meiosis I\" and \"1 prophase I\"; the plum and teal long chromosomes slide together and the short pair follows, with dotted links lining up the matching genes",
+      "motionTools": [
+        "bar duplicate",
+        "PairUp slide",
+        "step chip",
+        "DrawPath link"
+      ],
+      "holdPurpose": "Hold the paired chromosomes"
+    },
+    {
+      "sceneId": "crossing-what",
+      "visualDecision": "new",
+      "visualReference": "Paired long chromosomes enlarged, inner chromatids lit, an amber break mark between the two genes, and a CrossOver swap of the lower pieces",
+      "teachingReason": "Shows what crossing over is before naming it, and separates non-sister from sister chromatids",
+      "narrationCue": "break at the same place and swap the matching pieces / non-sister chromatids / This is crossing over",
+      "motionPurpose": "A push reaches the pair, the two inner chromatids light, both break at the same level and the lower pieces swap with their colours following their origin",
+      "motionRole": "explain",
+      "onScreenChange": "The camera pushes to the pair; scribble circles land on the inner plum and teal chromatids in turn; an amber break mark appears between the two genes on both; the lower pieces swap over three seconds; \"non-sister chromatids\" and \"crossing over\" write on",
+      "motionTools": [
+        "CameraStage push",
+        "ScribbleCircle",
+        "CrossOver",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the swapped chromatids"
+    },
+    {
+      "sceneId": "crossing-makes",
+      "visualDecision": "new",
+      "visualReference": "The same board with the four long chromatids tagged A B, A b, a B, a b, a crossed ghost bead labelled new and a caption",
+      "teachingReason": "Shows crossing over makes new combinations of existing alleles and no new alleles",
+      "narrationCue": "It does not make new alleles / new combinations of the alleles already there / even the sister chromatids",
+      "motionPurpose": "Circles land on the four long chromatids with their letter tags, a ghost bead labelled new is crossed out, and a caption says it is normal and regulated",
+      "motionRole": "explain",
+      "onScreenChange": "Scribble circles land on the four long chromatids in turn with tags \"A B\", \"A b\", \"a B\", \"a b\" and a bracket \"4 different chromatids\"; a ghost bead labelled \"new\" gets a flat grey cross with \"no new allele\"; a caption says \"normal and regulated, not an error\"",
+      "motionTools": [
+        "ScribbleCircle",
+        "bracket draw",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the four different chromatids"
+    },
+    {
+      "sceneId": "metaphase-one-line-up",
+      "visualDecision": "adjust",
+      "visualReference": "The nuclear envelope dashing away, spindle poles and fibres, and the two pairs sliding to the middle with one partner facing each pole",
+      "teachingReason": "Shows the first lining-up and how it differs from mitosis (pairs, not single chromosomes)",
+      "narrationCue": "the nuclear envelope breaks down / metaphase one / one partner facing each end",
+      "motionPurpose": "The envelope breaks into dashes, fibres grow, and the two pairs slide to the middle with one partner facing each pole and fibres attaching",
+      "motionRole": "explain",
+      "onScreenChange": "The first chip stays lit; the envelope dashes away and fibres draw from the poles; the chip \"2 metaphase I\" lands; the pairs slide to the middle as two units with one partner facing the left pole and the other the right; fibres attach to the centromeres",
+      "motionTools": [
+        "envelope fade",
+        "DrawPath fibres",
+        "PairUp slide",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the lined-up pairs"
+    },
+    {
+      "sceneId": "independent-assortment",
+      "visualDecision": "new",
+      "visualReference": "Same board with coin flips above each pair, a TwoWays shuffle landing on line-up 1 and a ghost board showing line-up 2",
+      "teachingReason": "Shows the direction is chance for each pair and names independent assortment after the idea",
+      "narrationCue": "Which partner faces which end is chance / plum long and teal short on the left / This is independent assortment",
+      "motionPurpose": "A coin flips above each pair in turn and the pairs face either way, a ghost board shows the other line-up, and the name writes on",
+      "motionRole": "explain",
+      "onScreenChange": "A coin flips above each pair one at a time and each pair slides to face either way, landing on line-up 1; a ghost copy appears beside it with the short pair flipped and tagged \"line-up 2\"; \"independent assortment\" writes on in amber",
+      "motionTools": [
+        "coin flip",
+        "TwoWays shuffle",
+        "ghost overlay",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold both line-ups side by side"
+    },
+    {
+      "sceneId": "first-division",
+      "visualDecision": "new",
+      "visualReference": "Line-up 1 whole X shapes travelling to opposite poles with discs staying whole, brackets for one of each kind, and two cells with half the number",
+      "teachingReason": "Shows what separates in the first division and that this is the step that halves the number",
+      "narrationCue": "the fibres pull the homologous partners apart / the centromeres do not split / one of each kind of chromosome, which is one set / half the chromosome number",
+      "motionPurpose": "Whole X shapes travel to opposite ends with their centromeres intact, brackets mark one of each kind at each end, and the cell divides into two with half the number",
+      "motionRole": "explain",
+      "onScreenChange": "The chip \"3 anaphase I\" lands; the plum pair goes left and the teal pair goes right as whole X shapes; a circle on one disc reads \"centromere stays whole: chromatids not separated\"; brackets read \"one of each kind\"; the chips telophase I and cytokinesis land and two cells form tagged \"half the number\"",
+      "motionTools": [
+        "PairUp slide",
+        "ScribbleCircle",
+        "bracket draw",
+        "cell pinch",
+        "step chip"
+      ],
+      "holdPurpose": "Hold the two cells"
+    },
+    {
+      "sceneId": "second-division",
+      "visualDecision": "new",
+      "visualReference": "Meiosis II divider and stage chips, a grey tag for no copying between divisions, the left cell enlarged with its chromosomes lining up on their own and chromatids separating",
+      "teachingReason": "Gives the cause for a second division and shows what separates in it",
+      "narrationCue": "A gamete cannot keep doubled chromosomes / In anaphase two, the centromeres split / the two cells get different chromosomes",
+      "motionPurpose": "The second-division chips land with a no copying tag, each doubled chromosome lines up on its own, the centromeres split and the chromatids are pulled apart",
+      "motionRole": "explain",
+      "onScreenChange": "The divider \"meiosis II\" and chips for prophase II to telophase II land in turn; a grey tag with a cross reads \"no copying between the divisions\"; the left cell enlarges and its chromosomes line up each on its own; the centromeres split and the chromatids move apart; the two cells receive different chromosomes",
+      "motionTools": [
+        "step chip",
+        "Mark cross",
+        "bar split",
+        "cell pinch"
+      ],
+      "holdPurpose": "Hold the finished second division"
+    },
+    {
+      "sceneId": "four-cells",
+      "visualDecision": "new",
+      "visualReference": "FourCells row under the parent cell with letter labels and haploid tags, a bracket for four different cells and a crossing-over toggle that collapses them to two kinds twice",
+      "teachingReason": "Shows the end state and what crossing over adds, with the no crossing over contrast",
+      "narrationCue": "one cell has made four haploid cells / all four differ / Now switch crossing over off / only two kinds, each twice",
+      "motionPurpose": "Four cells settle in a row with their letter labels and a bracket, then a toggle switches crossing over off and the labels collapse to two kinds, each twice",
+      "motionRole": "explain",
+      "onScreenChange": "Four cells appear under the parent each with two single-thread chromosomes, letter labels and \"haploid: 2 chromosomes\"; a bracket reads \"4 different haploid cells (in this cell)\"; a toggle switches off on \"switch crossing over off\" and the labels collapse to two kinds each twice",
+      "motionTools": [
+        "FourCells",
+        "bracket draw",
+        "toggle flip",
+        "label collapse"
+      ],
+      "holdPurpose": "Hold the two-kinds row"
+    },
+    {
+      "sceneId": "tracking",
+      "visualDecision": "adjust",
+      "visualReference": "Count tracker with four columns (start, after copying, after division 1 each cell, after division 2 each cell), mini cell icons, chromosome row and a chromatids-joined-copies-only row, then the human numbers",
+      "teachingReason": "Tracks the numbers through both divisions so the halving and the loss of sister chromatids are visible",
+      "narrationCue": "which starts with four chromosomes / eight chromatids / none has a sister chromatid / from 46 chromosomes to 23 in each of four cells",
+      "motionPurpose": "Each column fills as its figure is spoken, the chromatid row stays at zero in the last column, and the human row repeats the pattern",
+      "motionRole": "explain",
+      "onScreenChange": "The tracker draws on beside the small model cell; columns tick 4, 4, 2, 2 for chromosomes and 0, 8, 4, 0 for chromatids as spoken; the last column notes no sister chromatids; a human row runs 46, 46, 23, 23 with 92 chromatids after copying",
+      "motionTools": [
+        "CountTracker",
+        "NumberTicker",
+        "chip pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the full tracker"
+    },
+    {
+      "sceneId": "combinations",
+      "visualDecision": "new",
+      "visualReference": "CombosGrid on the model board: two coins flipping, a 2 by 2 grid of mini gametes, a doubling to 2 to the power n, and a human row to 2 to the power 23",
+      "teachingReason": "Counts the whole-chromosome combinations from assortment alone and states honestly that two gametes almost never match",
+      "narrationCue": "the choices multiply / 2 to the power n / more than 8 million / almost never match, but it is possible",
+      "motionPurpose": "Two coins flip, a 2 by 2 grid of mini gametes appears, the doubling rule writes on, and the human number counts up",
+      "motionRole": "explain",
+      "onScreenChange": "The tracker shrinks to a thin strip; the two pairs return as coins flipping between two faces; a 2 by 2 grid of mini gametes draws with the four line-up labels; \"2 to the power n\" writes on; a human row shows 23 pairs and \"2 to the power 23\" with \"more than 8 million\"; a caveat chip says almost never match, but it is possible",
+      "motionTools": [
+        "CombosGrid",
+        "coin flip",
+        "NumberTicker",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the grid and the human count"
+    },
+    {
+      "sceneId": "fertilisation",
+      "visualDecision": "new",
+      "visualReference": "Two 23 gametes in one colour each travelling together and merging into a 46 zygote, with the generation chain 46, 23, 46 repeating",
+      "teachingReason": "Closes the loop: meiosis halves and fertilisation restores, so the number stays steady",
+      "narrationCue": "23 plus 23 makes 46 again / Meiosis halves the number and fertilisation restores it / the number stays the same in every generation",
+      "motionPurpose": "Two gametes each tagged 23 travel together and merge into a 46 zygote, then the chain repeats for another generation",
+      "motionRole": "explain",
+      "onScreenChange": "A plum gamete and a teal gamete tagged \"each gamete brings one set\" travel together and merge; the zygote nucleus shows a plum set and a teal set tagged \"one from each gamete\"; the generation chain ticks 46, 23, 46 and repeats once",
+      "motionTools": [
+        "TravelingDotOnPath",
+        "merge animation",
+        "NumberTicker",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the repeating chain"
+    },
+    {
+      "sceneId": "compare",
+      "visualDecision": "new",
+      "visualReference": "CompareBoard with mitosis and meiosis columns and rows for divisions, cells made, chromosomes in each and alike or different, on the same model cell with the tracker at full size",
+      "teachingReason": "Lets the student compare the two divisions on the one model cell, and puts the key difference where it starts, at the middle",
+      "narrationCue": "Mitosis is one division that makes two cells / Meiosis is two divisions after one copy / usually different from each other / homologous pairs line up and the partners separate",
+      "motionPurpose": "The board builds one row at a time on the spoken words, the tracker columns for each new cell sit beside it, and the line-up in the middle is shown for each",
+      "motionRole": "explain",
+      "onScreenChange": "The two columns build row by row: divisions 1 against 2, cells made 2 against 4, chromosomes in each 4 against 2, alike or different; the tracker is redrawn at full size; the middle line-up is shown with single chromosomes for mitosis and homologous pairs for meiosis I",
+      "motionTools": [
+        "CompareBoard",
+        "row build",
+        "CountTracker",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the finished comparison"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Two numbered vignettes: a pea plant body cell with 14 chromosomes in 7 homologous pairs and its conditions, and a part-way cell with six lined-up X shapes in three pairs and its demands; no tracker, stage strip or hints",
+      "teachingReason": "Unseen transfer on halving, combinations and stage recognition, with every demand and condition visible",
+      "narrationCue": "Two questions, both on screen / a pea plant / part-way through a division / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The two vignettes appear as each is named with all conditions and demands on screen; the tracker, stage strip and tags are absent; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette one replayed with seven pairs and seven coins, a counter to 7, the grid doubling seven times to 128, two gametes joining to 14 and four crossed chips",
+      "teachingReason": "Explains the three answers by the rule and corrects the likeliest slips (14 for the gamete, adding instead of multiplying, using 14 for n, forgetting the second gamete)",
+      "narrationCue": "which is 128 / The fertilised egg holds 14 / you used the mitosis rule / n counts pairs",
+      "motionPurpose": "Seven coins flip, a counter ticks to 7, the grid doubles seven times to 128, two gametes of 7 join into 14, and four wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "Seven pairs with seven coins flip; a counter ticks 1 to 7; the grid doubles through 2, 4, 8, 16, 32, 64, 128 with 128 held in amber; two gametes of 7 join into 14; four chips including \"16,384\" appear and are crossed with grey scribbles",
+      "motionTools": [
+        "coin flip",
+        "CombosGrid",
+        "NumberTicker",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the corrected answers"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Vignette two replayed: a pen taps six centromeres, the pairs light together as meiosis I, an arrow separates the partners to opposite ends with 3 at each end and three crossed chips",
+      "teachingReason": "Explains the stage from the pairs lined up with no centromeres split, and the count after the division",
+      "narrationCue": "with no centromeres split / metaphase of meiosis one / each cell will hold 3 / If you said 12, you counted chromatids",
+      "motionPurpose": "A pen taps six discs, the pairs light as meiosis I, the partners pull apart with 3 at each end, and the wrong stage and count chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "A pen taps each disc with a counter to 6 and the tag \"6 chromosomes in 3 homologous pairs\"; the pairs light with \"pairs lined up: meiosis I\"; an arrow pulls the partners apart and each end reads \"3 chromosomes\" with \"3 + 3\"; three chips appear and are crossed",
+      "motionTools": [
+        "pen tap counter",
+        "NumberTicker counter",
+        "DrawPath arrow",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the 3 + 3 split"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "adjust",
+      "visualReference": "Two big amber lines with icons (paired bars pulled apart, a doubled bar splitting), a third join icon line, a silent who-does-what strip and a next-lesson chip",
+      "teachingReason": "Gives the reusable aid, keeps pair and copy distinct, closes with fertilisation and hands off to DNA arrangement",
+      "narrationCue": "meiosis one splits the homologous pairs / Meiosis two splits the sister chromatids / fertilisation joins two gametes and restores the number / how DNA is arranged in different kinds of cell",
+      "motionPurpose": "The two lines write on one at a time under their icons, the fertilisation line joins them, and a next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "\"Meiosis I splits the homologous pairs\" writes on with a paired-bar icon and \"halves the number\"; \"Meiosis II splits the sister chromatids\" writes on with a doubled-bar icon and \"the two halves of each doubled chromosome\"; \"fertilisation restores it\" writes on with a join icon; a chip \"Next: how DNA is arranged\" slides in",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the three lines"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The key notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 75 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b5b-learning-review.md",
+      "sha256": "8773037afd0deacca614a85d067b6b44b046fb442c63178d15a222c051c83d95"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b5b-claude-science-check.md",
+      "sha256": "dca5cfb32ec8c33091efc22537275c6f55369edb3790cc3156bd6b5111defd03"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

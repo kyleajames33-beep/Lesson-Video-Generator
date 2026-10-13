@@ -11,5 +11,6 @@ import {config_b02a} from './lessons/bio-m5-b02a/config';
 import {config_b02b} from './lessons/bio-m5-b02b/config';
 import {config_b02c} from './lessons/bio-m5-b02c/config';
 import {config_b03a} from './lessons/bio-m5-b03a/config';
+import {config_b03a2} from './lessons/bio-m5-b03a2/config';
 
-export const explainers: ExplainerConfig[] = [mouldConfig, config_c01, config_c02, config_c03, config_c04a, config_c04b, config_g01, config_b01, config_b02a, config_b02b, config_b02c, config_b03a];
+export const explainers: ExplainerConfig[] = [mouldConfig, config_c01, config_c02, config_c03, config_c04a, config_c04b, config_g01, config_b01, config_b02a, config_b02b, config_b02c, config_b03a, config_b03a2];
