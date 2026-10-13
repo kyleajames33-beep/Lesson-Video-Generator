@@ -1,0 +1,307 @@
+[
+  {
+    "file": "public/assets/biology/b2b-disp-wind-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-03137efa-e33c-4079-b8d2-b164cddd99c8.png",
+    "size": [
+      2200,
+      1600
+    ],
+    "prompt": "Use case: scientific-educational. Naturalistic fine ink and watercolour textbook botanical plate: one dandelion seed head breaking up, side view, slender green stalk and white feathery spherical seed head left of centre, several parachute seeds lift off and drift to the RIGHT. Each travelling seed clearly has a fine feathery pappus canopy, thin stalk, and small brown seed below. Calm precise warm natural colours and subtle grain inside painted colour, not glossy, not cartoon. Landscape 2200 x 1600, all subjects inside 12 percent fully transparent margin all edges. Real transparent alpha, no background, ground patch, cast shadow, glow, halo, text, labels, numbers, arrows, watermark or frame. Simple clear teaching silhouette readable at200px. b2b-disp-wind-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": null,
+    "part_of": null,
+    "sha256": "b129e23d4335c3968cc2bc3bdafe765f07f0ca699d0cd9e2f943c97394af04f2",
+    "checks": {
+      "rgba": true,
+      "size": [
+        2200,
+        1600
+      ],
+      "transparent_margins": [
+        0.11136363636363636,
+        0.1,
+        0.11181818181818182,
+        0.1
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-disp-water-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-a3bd69a3-918e-4737-895b-378c6526efb9.png",
+    "size": [
+      2200,
+      1600
+    ],
+    "prompt": "Use case: scientific-educational. Naturalistic ink and watercolour botanical textbook plate of ONE coconut still in its brown fibrous husk, slightly open at top with a tiny green sprout tip, floating on calm shallow clear blue sea with small gentle ripples around it. Side view with slight view down to water surface, coconut buoyant with its lower portion in the water. Compact local water patch only, edges soft fading to real transparent alpha, no shoreline or landscape. Landscape2200x1600, at least12 percent empty transparent margin each edge. Warm natural colours, fine ink, subtle paper grain inside colour, bold simple silhouette readable200px. No background, ground, cast shadow, outside glow, halo, text, labels, numbers, arrows, watermark or frame. b2b-disp-water-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": null,
+    "part_of": null,
+    "sha256": "cb3fb2d54c566b30dec0f2a06432ef1949b111c4e011cd29d51b775a59c482e6",
+    "checks": {
+      "rgba": true,
+      "size": [
+        2200,
+        1600
+      ],
+      "transparent_margins": [
+        0.10045454545454545,
+        0.116875,
+        0.1,
+        0.1175
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-disp-animal-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-78b2ff71-a81c-485f-ae43-4f3f5eadea85.png",
+    "size": [
+      2200,
+      1600
+    ],
+    "prompt": "Edit this transparent scientific textbook plate. Preserve the TWO separated groups: dog flank fur only on left and silvereye bird with ripe red fruit twig on right. Change only the burr on the left: make the hooked burr SEED CASE much larger and visibly distinct, about45% of fur patch width. Draw its compact round body golden brown with dark ink outlines and large clearly curled hooked spines attaching to the fur, so the burr is immediately recognizable when the entire scene is shrunk to200px. Retain naturalistic fine ink and watercolour textbook style. Retain true transparent alpha with no background, shadow, outside glow, halo, text, arrows, labels or frame. Keep generous transparent margins. b2b-disp-animal-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 1,
+    "set": null,
+    "part_of": null,
+    "initial_prompt": "Use case: scientific-educational. Ink and watercolour naturalistic textbook plate in landscape2200x1600. TWO distinctly separated teaching groups with empty transparent gap between them. LEFT half: close-up patch of brown dog's flank fur only, no head or legs, with one round burr seed case visibly caught in fur, its hooked spines clear. RIGHT half: ripe red fleshy fruit hangs on a short twig; a small silvereye bird perches beside it with beak close to fruit, identifiable greenish back grey head pale eye ring, anatomically normal bird. Warm calm natural colours, fine ink linework, subtle paper grain inside washes, not cartoon or glossy. Bold readable groups at200px. Real transparent alpha background, at least12 percent empty margin every edge, no ground, shadow, glow, halo, labels, text, numbers, arrows, watermark or frame. b2b-disp-animal-v1.png.",
+    "sha256": "ba5cfd7b3ef2d6101da4e0c04ecca2771e0aa82fee2aa33d76e467e5a9473b1f",
+    "checks": {
+      "rgba": true,
+      "size": [
+        2200,
+        1600
+      ],
+      "transparent_margins": [
+        0.1,
+        0.200625,
+        0.1,
+        0.20125
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-seed-parachute-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-d10ad354-e08c-4e87-8c29-c37bf85d60ee.png",
+    "size": [
+      1600,
+      1600
+    ],
+    "prompt": "Use case: scientific-educational. Scientifically accurate botanical plate of ONE single dandelion achene seed with upright parachute pappus. At bottom a small ribbed narrow brown achene, above it a thin long stalk, at top an umbrella fan of about40 separate VERY THIN HAIR-LIKE BRISTLES radiating from one point. Each bristle is a fine grey ink line with only tiny side barbs. Crucial: clearly visible transparent EMPTY GAPS between all bristles. NO webbing, membrane, fabric, broad feathers, leaf shapes, filled canopy or white disc between the hairs. Ink and watercolour naturalistic textbook illustration, warm light brown seed and delicate grey hairs with strong enough line contrast visible at200px on cream. Centered1600x1600 canvas,12% empty transparent margins, real alpha. No background, ground, shadow, glow, halo, text, labels, numbers, arrows, frames or watermark. b2b-seed-parachute-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 2,
+    "set": null,
+    "part_of": null,
+    "initial_prompt": "Use case: scientific-educational. ONE upright dandelion parachute seed isolated on transparent1600x1600 canvas. White cream feathery umbrella-shaped pappus at top, a thin long pale stalk beneath, and a small tapered ribbed brown seed at bottom. Naturalistic fine ink and watercolour textbook botanical plate, subtle paper grain inside colour, calm warm natural colours. Bold silhouette with clear fine feathery canopy visible at150to200px, use soft grey ink contours so pale hairs remain visible on cream. Centered with at least12 percent fully empty transparent margin all sides. Real transparent alpha no background, ground, shadow, glow, halo, labels, text, numbers, arrows, watermark or frame. b2b-seed-parachute-v1.png.",
+    "retake_prompts": [
+      "Edit this transparent dandelion seed textbook plate. Preserve upright single seed anatomy, thin stalk and ribbed brown seed below. Make the feathery parachute at top clearly readable at200px on cream paper #f6f1e7: increase soft charcoal-grey ink contrast on the individual radiating hairs and fine feather branches. Keep open space between hairs, avoid a solid white membrane canopy. Naturalistic fine ink and watercolour botanical plate, pale cream hairs with grey delicate but visible contours, no cartoon. Keep actual alpha transparency and generous empty margin all sides. No background, glow, halo, shadow, text, arrows, numbers or labels. b2b-seed-parachute-v1.png."
+    ],
+    "sha256": "7913ab421af5ed126689ab2efa650fee7c5fa2fe69e815c47713ee58ac65b5a2",
+    "checks": {
+      "rgba": true,
+      "size": [
+        1600,
+        1600
+      ],
+      "transparent_margins": [
+        0.175,
+        0.1,
+        0.175,
+        0.1
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring.",
+    "notes": "Two retakes increased pappus contrast and separated the bristles. Fine hair texture remains simplified by the painted treatment."
+  },
+  {
+    "file": "public/assets/biology/b2b-seed-burr-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-3fbd4080-4e6d-4a7f-ace3-a07eef6ea5f1.png",
+    "size": [
+      1600,
+      1600
+    ],
+    "prompt": "Use case: scientific-educational. ONE single burr seed case, small round warm brown spiky burr with visibly HOOKED curved spine tips, isolated at three-quarter view. Naturalistic fine ink and watercolour botanical textbook plate, warm muted olive brown with fine contours and subtle paper grain inside washes. Strong simple silhouette readable at150to200px, hooked spines bold enough to see when shrunk. Centered1600x1600 canvas at least12 percent fully transparent empty margin all sides. Real transparent alpha, no fur, other objects, background, ground, shadow, glow, halo, labels, text, numbers, arrows, watermark or frame. b2b-seed-burr-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": null,
+    "part_of": null,
+    "sha256": "3eeab5c56afc132f7e8afc72999f2a36d42aec803acbad6ac2728f5b9952ea7d",
+    "checks": {
+      "rgba": true,
+      "size": [
+        1600,
+        1600
+      ],
+      "transparent_margins": [
+        0.128125,
+        0.1,
+        0.128125,
+        0.1
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-seed-fruit-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-5d7f50cb-7d1c-48dc-80fa-73aecbadfd32.png",
+    "size": [
+      1600,
+      1600
+    ],
+    "prompt": "Use case: scientific-educational. ONE single ripe red fleshy fruit, round plump berry like a small cherry with a short curved brown stem and no leaves, isolated on1600x1600 transparent canvas. Naturalistic fine ink and watercolour textbook botanical plate, rich calm red washes, subtle handpainted texture and paper grain inside subject, not glossy plastic or cartoon. Simple bold silhouette readable at150to200px. Centered at least12 percent fully empty transparent margin all edges. True alpha background, no ground, shadow, glow, halo, other objects, labels, text, numbers, arrows, watermark or frame. b2b-seed-fruit-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": null,
+    "part_of": null,
+    "sha256": "4e8694d687d2510908fa3c5e6204246c6b8acd0d7ec7d8b1461247938d45bfc1",
+    "checks": {
+      "rgba": true,
+      "size": [
+        1600,
+        1600
+      ],
+      "transparent_margins": [
+        0.20375,
+        0.100625,
+        0.20375,
+        0.1
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-far-fence-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-4505bdaa-468c-41cd-b95d-3275bf94ec2f.png",
+    "size": [
+      2200,
+      800
+    ],
+    "prompt": "Use case: scientific-educational. ONE short rural timber post-and-rail fence in exact side elevation, four sturdy brown wooden posts and two horizontal rails joining them, no gates. Naturalistic fine ink and watercolour textbook plate, warm weathered wood and subtle painted woodgrain, calm natural colour, not flat cartoon. Canvas2200x800 landscape, complete fence inside at least12 percent fully empty transparent margin all sides. Bold readable silhouette at200px. Actual alpha background behind and below fence, NO ground, grass, landscape, cast shadow, glow, halo, text, labels, numbers, arrows, watermark or frame. b2b-far-fence-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": null,
+    "part_of": null,
+    "sha256": "10bb221d97ed798f6c7c2947fbb8c95e364f7cff0bbff792795d232c6f5b3f5f",
+    "checks": {
+      "rgba": true,
+      "size": [
+        2200,
+        800
+      ],
+      "transparent_margins": [
+        0.1,
+        0.25375,
+        0.1,
+        0.255
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection"
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-far-patch-bare-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-be91a587-016f-4453-b48c-8528bb626b3c.png",
+    "size": [
+      2200,
+      800
+    ],
+    "prompt": "Use case: scientific-educational. ONE low patch of bare brown soil with a few small stones, side view with slightly visible upper surface, no grass and no plant. Compact simple rounded flattened patch wide enough for one seedling to grow later. Fine ink and watercolour naturalistic textbook botanical plate, warm earth-brown soft granular washes and subtle papergrain inside soil, clearly defined soft edges fading cleanly to transparency with no surrounding haze. Canvas2200x800, patch centered horizontally at lower middle, width about1600 height250, leaving room above for seedling. At least12 percent fully transparent empty margin every side. Actual alpha, no separate ground, cast shadow, glow, halo, background, text, labels, numbers, arrows, watermark or frame. b2b-far-patch-bare-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": "b2b-far-patch",
+    "part_of": null,
+    "sha256": "6448a9240fe362c388b9b27ff9a61eb3b8f4a6592271ad58ce48ccc286257ff4",
+    "checks": {
+      "rgba": true,
+      "size": [
+        2200,
+        800
+      ],
+      "transparent_margins": [
+        0.12045454545454545,
+        0.5,
+        0.12045454545454545,
+        0.15
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection",
+      "aligned_set_review": "Exact soil artwork retained; seedling added only. 50 percent overlay inspected."
+    },
+    "postprocess": "Alpha values <=5 cleared; subject fitted to exact transparent canvas without painting or recolouring."
+  },
+  {
+    "file": "public/assets/biology/b2b-far-patch-sprout-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-5b4a-7283-9d30-e1042adec4c9\\exec-e6424fff-b27d-4aea-98d3-4a63555670bb.png",
+    "size": [
+      2200,
+      800
+    ],
+    "prompt": "Use case: scientific-educational. ONE small newly emerged green seedling, short upright thin stem with two small rounded cotyledons spreading left and right. Simple naturalistic fine ink and watercolour botanical textbook plate, warm green soft washes and subtle grain inside colour, not cartoon. Isolated on real transparent alpha1600x1600 canvas, no roots, NO SOIL, no pot. Stem points straight down and ends cleanly at bottom, to be composited above an existing soil patch without changing that patch. Bold silhouette readable at200px. Centered at least12 percent transparent empty margin all sides. No background, ground, cast shadow, glow, halo, text, labels, numbers, arrows, watermark or frame. This seedling will be the sole added artwork in b2b-far-patch-sprout-v1.png.",
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": "b2b-far-patch",
+    "part_of": "b2b-far-patch-bare-v1.png",
+    "postprocess": "Exact bare soil copied; generated seedling added at centre. Soil pixels and stones stay identical.",
+    "sha256": "6376b2ac33f207ec3a2df0cf09edd92412158910d240451df1d9c88a4947b84f",
+    "checks": {
+      "rgba": true,
+      "size": [
+        2200,
+        800
+      ],
+      "transparent_margins": [
+        0.12045454545454545,
+        0.2375,
+        0.12045454545454545,
+        0.15
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text": true,
+      "small_size_review": "Passed at200 px long side on cream and checkerboard",
+      "no_background_or_halo": "Passed visual inspection",
+      "aligned_set_review": "Exact soil artwork retained; seedling added only. 50 percent overlay inspected."
+    }
+  }
+]

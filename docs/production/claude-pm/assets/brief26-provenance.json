@@ -1,0 +1,45 @@
+{
+  "brief": 26,
+  "date": "2026-10-14",
+  "tool": "built-in imagegen",
+  "styleReferences": [
+    "public/assets/chemistry/c3-iron-tube-start-v1.png",
+    "public/assets/chemistry/c2-flask-start-v1.png"
+  ],
+  "assets": [
+    {
+      "path": "public/assets/chemistry/c6-no2-vessel-colourless-v1.png",
+      "sha256": "5d1db1c8f987f667ccfb7ebbc4f38b6bc16b40657a55732906d851c4deb0cdf5",
+      "prompt": "Use case: scientific-educational. Create a clean cutout textbook plate of a sealed round-bottom clear glass gas flask, front view, upright, short narrow neck with a plain red-brown rubber stopper, standing in a simple short metal ring stand. Follow the overall round flask silhouette and scale of the provided C2 flask style reference, but remove its thermometer, heating mantle, and glow. The vessel contains colourless transparent gas, so its interior remains clear. Fine dark ink contour lines, restrained warm grey and pale blue watercolour shading on the glass, soft specular highlights, matching the provided C3 tube line weight and wash. One centered object with at least 8 percent empty transparent margin on every side. No text, labels, numbers, arrows, bubbles, condensation, flame, extra objects, backdrop, shadow or halo. Real alpha transparency. At least 1600 pixels on the long side. This is the colourless state of an overlay pair: keep the exact flask geometry and canvas for a later pale brown gas tint edit.",
+      "retakes": 1,
+      "notes": "Generated from the C2 and C3 references. Added transparent canvas margin without resampling the plate. This is the base geometry for both C6 states."
+    },
+    {
+      "path": "public/assets/chemistry/c6-no2-vessel-brown-v1.png",
+      "sha256": "12ecddad0eab641db5cd3a5f6e8613a32d35e3499ec7dae64b4fa29aec18287c",
+      "prompt": "Use case: precise-object-edit. This is the colourless member of an aligned textbook chemistry plate pair. Change only the gas inside the round glass bulb to an even, light, transparent pale reddish-brown tint, like dilute nitrogen dioxide. Keep every other pixel of the flask, stopper, stand, highlights, outline, scale, canvas, and transparent background exactly unchanged. No bubbles, condensation, text, labels, numbers or new objects. Preserve the real alpha channel and at least 8 percent transparent margin. The gas must remain see-through, not dark or opaque.",
+      "retakes": 0,
+      "notes": "The generated edit changed the outer silhouette, so the final state uses its pale gas colour applied inside the original flask. The two final PNGs have identical canvas and alpha, and the apparatus pixels outside the gas are unchanged."
+    },
+    {
+      "path": "public/assets/chemistry/c7-haber-converter-v1.png",
+      "sha256": "2ea84cbd7b7cdb2f55bb64896d26b69042428e5016c95133de3d1a5582c9ea74",
+      "prompt": "Use case: scientific-educational. Transparent PNG textbook plate. A tall industrial high-pressure Haber ammonia converter: heavy vertical steel cylindrical reactor with a domed top, thick bolted flanges, two or three clearly visible inlet and outlet pipes, plus an external return pipe forming a visible recycling loop, all attached to a short concrete plinth. Front three-quarter view so pipes read at 200 px. Faint warm glow in the lower half suggests heat. Fine dark ink contours and restrained warm grey watercolour wash, matching the provided chemistry tube reference line weight and painterly shading. Single centered structure with at least 8 percent transparent margin. No people, flames, smoke, chimney, labels, symbols, logos, text, landscape, backdrop, shadow or halo. Actual alpha transparency, at least 1600 pixels on the long side.",
+      "retakes": 1,
+      "notes": "The reactor reads as heavy steel at 200 px. Its connected outer pipe shows a return loop. Added transparent canvas margin without resampling the generated plate."
+    },
+    {
+      "path": "public/assets/chemistry/c8-pressure-vessel-v1.png",
+      "sha256": "bdf69364b6f5a99cfbfc93abb927f4fe9dab14b36d910c66797686a9cccb1276",
+      "prompt": "Use case: scientific-educational. Make one cutout ink-and-watercolour textbook plate of a sealed thick-walled stainless steel laboratory pressure vessel. Short upright cylindrical body, bolted lid, one small pressure gauge on top with a blank dial face, simple tick marks and a single needle but no numerals or lettering, one capped inlet pipe, short sturdy stand. Front three-quarter view; clearly a laboratory pressure vessel, not an industrial tower. Soft cool metal highlights, fine dark ink contours and restrained wash matching the provided C3 chemistry tube plate. Centered with at least 8 percent empty margin on each side. Transparent PNG with true alpha, at least 1600 pixels on the long side. No flames, steam, heating jacket, extra objects, backdrop, shadow, halo, labels, text, numbers, logos or arrows.",
+      "retakes": 0,
+      "notes": "The gauge has plain tick marks and a needle, with no text or numerals. Added transparent canvas margin without resampling the generated plate."
+    }
+  ],
+  "qa": {
+    "folder": "docs/production/claude-pm/assets/brief26-qa/",
+    "canvas": [1280, 1920],
+    "checks": "All four PNGs have true alpha, at least 8 percent clear margin on every side, no visible halo or text, and were inspected on a checkerboard and at 200 px. C6 pair alpha channels are pixel-identical."
+  },
+  "ownerNotes": "The C6, C7 and C8 site and source notes requested by their design asset briefs were already recorded in c5-c8-provenance.json under Brief 19."
+}

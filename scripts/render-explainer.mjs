@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {execFileSync} from 'node:child_process';
+import {execFileSync, spawnSync} from 'node:child_process';
 import {bundle} from '@remotion/bundler';
 import {renderMedia, selectComposition} from '@remotion/renderer';
 import {FFMPEG, ROOT, buildSlimPublic, loadConfig, totalFrames, writeEntry} from './lib/explainer-common.mjs';
@@ -22,6 +22,14 @@ const entry = path.join(base, 'entry.tsx');
 writeEntry(config, entry);
 const serveUrl = await bundle({entryPoint: entry, publicDir: pub});
 const run = (args) => execFileSync(FFMPEG, args, {stdio: 'inherit'});
+export const LOUDNESS = {I: -14, TP: -1.5, LRA: 11};
+function normaliseLoudness(inWav, outWav) {
+	const target = `I=${LOUDNESS.I}:TP=${LOUDNESS.TP}:LRA=${LOUDNESS.LRA}`;
+	const r = spawnSync(FFMPEG, ['-hide_banner', '-nostats', '-i', inWav, '-af', `loudnorm=${target}:print_format=json`, '-f', 'null', '-'], {encoding: 'utf8', maxBuffer: 64 * 1024 * 1024});
+	const m = JSON.parse(r.stderr.slice(r.stderr.lastIndexOf('{'), r.stderr.lastIndexOf('}') + 1));
+	run(['-y', '-i', inWav, '-af', `loudnorm=${target}:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true:print_format=summary`, '-ar', '48000', '-c:a', 'pcm_s16le', outWav]);
+	console.log(`Loudness: input ${m.input_i} LUFS, normalised to ${LOUDNESS.I} LUFS`);
+}
 try {
 	const composition = await selectComposition({serveUrl, id, timeoutInMilliseconds: 60000});
 	const total = composition.durationInFrames, size = 150, files = [];
@@ -57,9 +65,13 @@ try {
 	const fc = filters.join(';') + ';' + Array.from({length: k}, (_, i) => `[a${i}]`).join('') + `amix=inputs=${k}:normalize=0,apad,atrim=0:${secs}[out]`;
 	const wav = path.join(chunkDir, 'narration.wav');
 	run(['-y', ...inputs, '-filter_complex', fc, '-map', '[out]', '-c:a', 'pcm_s16le', wav]);
+	// Loudness: YouTube plays at about -14 LUFS and never turns quiet videos up, so raw narration
+	// (about -28 LUFS) sounded too quiet. Two-pass loudnorm to -14 LUFS, true peak -1.5 dB.
+	const normWav = path.join(chunkDir, 'narration-norm.wav');
+	normaliseLoudness(wav, normWav);
 	const list = path.join(chunkDir, 'list.txt');
 	fs.writeFileSync(list, files.map((f) => `file '${f.split(path.sep).join('/')}'`).join('\n'));
-	run(['-y', '-f', 'concat', '-safe', '0', '-i', list, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', finalMp4]);
+	run(['-y', '-f', 'concat', '-safe', '0', '-i', list, '-i', normWav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', finalMp4]);
 	console.log(`Output: ${finalMp4}`);
 	console.log(`Duration: ${secs} s (${total} frames)`);
 	try { fs.rmSync(chunkDir, {recursive: true, force: true, maxRetries: 10, retryDelay: 500}); } catch (e) { console.warn(`Could not remove ${chunkDir} (${e.code}); delete it later.`); }

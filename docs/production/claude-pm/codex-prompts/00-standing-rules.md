@@ -30,3 +30,4 @@ Append a short entry to `docs/production/claude-pm/status.md` under "Codex hand-
 
 Every video description quotes the syllabus dotpoint(s) the video teaches, word for word from the official syllabus for that course version, in a block after the course line and before the official course link:
 "Syllabus dotpoint (NSW <Subject> Stage 6, <year>, Module <n>):" followed by the quoted dotpoint. Claude names the dotpoint in each upload brief; check the wording against the official syllabus. See brief 21 for the format.
+

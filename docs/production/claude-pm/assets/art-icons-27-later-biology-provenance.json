@@ -1,0 +1,464 @@
+[
+  {
+    "file": "public/assets/biology/b3b-cow-tract-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-d0b4dd2f-6e03-490b-a15b-4f5106478740.png",
+    "prompt": "Use case: scientific-educational. Create one isolated ink and watercolour veterinary textbook plate, fine dark ink contours, soft pale pink tissue washes with subtle grain inside pigment, naturalistic not glossy or cartoon. Cow reproductive tract in a side cut-away with branches gently spread for visibility: vagina on right leading through clearly ridged cervix to short uterine body, two long curved uterine horns branching toward left, each narrowing to a slender curled oviduct with an open funnel close to a separate oval ovary. Exactly two ovaries, two funnels, two oviducts, two uterine horns. Continuous pale open lumen visible through vagina, cervix, body and horns. No animal body. Clear spacious anatomy at 200px. Landscape canvas 2200x1400, whole subject within central 78%, at least 10% fully transparent margin all sides. Real transparent alpha background, no ground, shadow, glow, halo, labels, arrows, text or numbers. Save a single PNG.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "d1450fbd4a5e56277984191f2fc9c1b28520c8d6ff2b7fe7d0d3e4bd4a689901",
+    "set": null,
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2200,
+        1400
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "not applicable"
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3b-straw-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-68a1b4c6-058d-40f7-8105-1a3877664097.png",
+    "prompt": "Use case scientific-educational. Single isolated veterinary semen straw, thin straight pale yellow translucent plastic tube with a small blue coloured plug at left end and sealed right end. Horizontal, no bend. Ink and watercolour textbook plate matching soft natural washes and fine ink of the glass tube reference. Not a capsule, not a syringe. Simple bold silhouette readable at 200px. Transparent PNG alpha. Canvas landscape 2200x500, straw occupies central 76% width and 20% height, centre y=250. At least 10% transparent margin. No text, numbers, labels, arrow, background, ground, shadow, glow or halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "fb58318dd9bee74e523b19712f96b8a326b2ab0c6c6087a0b09a368d5693344a",
+    "set": "straw",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2200,
+        500
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.10045454545454545,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3b-straw-frost-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-790d5248-e3e3-4c1c-be1c-f100b66a65d4.png",
+    "prompt": "Edit reference image. Preserve this exact single yellow semen straw and blue plug, horizontal position, shape, ink watercolour style, size and all transparent pixels. Add only a fine pale blue-white crystalline frost coating to the outside of the tube and plug. Frost must be visibly frosted at 200px but not hide yellow tube. Do not move or redraw tube, do not add any text, ground, background, shadows, halo. True transparent PNG.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "0fdcfe94265b261d6c91e353c24fdbe8318aa5f5178283ffcb7c71dc9571e16f",
+    "set": "straw",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2200,
+        500
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3b-vial-empty-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-3633a10f-b234-46d0-bb86-95a515350aef.png",
+    "prompt": "Use case scientific-educational. One empty clear glass veterinary semen collection vial standing upright, plain pale blue screw cap screwed onto top, simple cylindrical glass bottle with softly rounded shoulder and flat base. No markings or writing. Naturalistic ink and watercolour textbook plate, fine ink outlines, soft translucent pale blue glass washes, subtle pigment grain, not glossy and not cartoon. Portrait canvas 1000x1600, centred, generous at least 12% fully transparent margin every side, no ground or cast shadow. Transparent PNG alpha. Readable silhouette at 200px. No text, numbers, labels, arrow, halo, background.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "2b337032ac1fc8567777c93968105d4f739f3efa710ae88369b770fc5b024478",
+    "set": "vial",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1000,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3b-vial-full-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-30526532-2c28-47d1-a33f-5d4334f4a75d.png",
+    "prompt": "Edit the reference vial. Change only its contents: add creamy pale ivory veterinary semen filling exactly the lower half of the bottle body, with a gently horizontal liquid surface halfway up. Keep exact glass bottle shape, outlines, screw cap, dimensions and position and ink-watercolour style unchanged. Preserve transparent background. No text, arrows, ground, halo or shadow.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "22f83da396ae87e7b88c89610cae7af0b3ef2e203003538aeb2ce07f354408c1",
+    "set": "vial",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1000,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a2-brain-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-9f5d545f-1f57-4343-83f7-7ffafc424bee.png",
+    "prompt": "Use case scientific-educational. Isolated human brain in median sagittal side section, front/anterior facing LEFT. Naturalistic ink and watercolour anatomy textbook plate matching pale pink tissue and precise ink linework of reference. Clearly show large cerebrum above, cerebellum at lower RIGHT rear, brain stem downward at lower right and small oval pituitary gland hanging beneath front central brain base on thin short stalk. Pituitary distinct peach oval with unambiguous stalk and surrounding transparent gap, no skull or head skin. Soft salmon, pale peach, muted brown ink, subtle grain. Canvas 1800x1600, at least 12% fully transparent margin every side. Clear silhouette at 200px. Transparent PNG alpha. No words, numbers, arrows, flat graphic shapes, ground, cast shadow, glow or halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "5ae8eb95308a38220d93120d79dec9281f3ef1e66548af69934aec688831695b",
+    "set": "brain",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1800,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a2-pituitary-part-v1.png",
+    "source": "C:\\lesson-video-generator\\docs\\production\\claude-pm\\assets\\art-icons-27-qa\\later-biology-pituitary-extracted-source.png",
+    "prompt": "Exact pituitary pixels extracted from accepted brain source with polygon alpha mask. No new subject generation. Same canvas and shared transform as brain.",
+    "model": "derived from built-in generated brain",
+    "retakes": 0,
+    "sha256": "f05918ae972fe7c3ab71831e786b5e5356bfdaf8f34509744e34cf2b27e120b6",
+    "set": "brain",
+    "part_of": "public/assets/biology/b3a2-brain-v1.png",
+    "checks": {
+      "dimensions": [
+        1800,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.3325,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Exact source pixels extracted with polygon alpha mask, then same crop and transform as brain. Parent authorised deterministic extraction after built-in part generation was moderation blocked."
+  },
+  {
+    "file": "public/assets/biology/b3a2-milk-gland-empty-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-320c1aa6-aca9-4d11-b853-d48d8a1c5b1c.png",
+    "prompt": "Use case scientific-educational. One medical textbook plate of mammary gland duct tree in side cut-away, nipple on right, five or six rounded alveolar clusters at branching ends toward left. Six clearly separated small rounded milk sacs, empty pale interiors, connected by visible branching ducts that converge at right nipple. Soft peach tissue washes, fine ink linework, subtle natural pigment grain. Isolated scientific anatomy, no person, skin body or decorative scene. Canvas 2000x1500, central 76%, 12% transparent margins. True transparent PNG alpha. Bold clean readable tree at 200px. No labels, text, numbers, arrows, squeezing rings, flat cartoon shapes, background, shadow, halo or glow.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "1bcc8488f22af5084cb3b3fc803ff99ef58563cf52b58df66babe932d49080d5",
+    "set": "milk-gland",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2000,
+        1500
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a2-milk-gland-full-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-f2fbbaf1-45a4-4d27-a256-8a50a96a7355.png",
+    "prompt": "Edit this educational anatomy plate to create a milk-filled state. Keep every duct, nipple, tissue outline, sac position, size and entire canvas unchanged. Change only the interiors of the alveolar sacs: show all small sac lumens containing visibly opaque cream-white milk with a soft pale gold edge, distinct from the pale empty translucent state. Preserve all ink contours. No other changes, no text, arrows, rings, labels or background. Transparent PNG.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "76f6a45363515d9273c7687cd6522643954bc038979c3404e369597fef954dda",
+    "set": "milk-gland",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2000,
+        1500
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-test-1-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-2135dd65-7820-4c61-ba88-6f5147347ccd.png",
+    "prompt": "Use case scientific-educational. Single home pregnancy test stick flat top view, sample end on LEFT, rectangular result window toward RIGHT containing exactly ONE thin pink control line. Plain ivory plastic body, pale blue grip on far right, long simple silhouette. Ink and watercolour textbook plate, fine precise ink, softly textured natural pigment washes, no gloss, not cartoon. Absolutely no writing, letters, numbers, symbols, arrows or labels on stick. Transparent background PNG alpha. Landscape 2200x600, subject central 76% width and 55% height, 12% transparent margins all sides. No cast shadow, ground, glow or halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "9c9a6a048d4e89b3e478576be69fc0350edda8f6b977ea29bb9daadec3f3afa6",
+    "set": "pregnancy-test",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2200,
+        600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-test-2-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-a4075c68-3462-4e10-b81f-f63732f63812.png",
+    "prompt": "Edit reference pregnancy test plate. Preserve the exact test stick, result window, existing pink control line, position, dimensions and ink watercolour rendering. Add ONLY one second thin pink vertical line inside the window, to the LEFT of existing control line. Exactly two lines total. Keep transparent background, no text, numbers, symbols, arrows, ground or shadow.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "c1b97dec40a20c7cb2cf38d16b260d6bfb2891e81f8c6b175030404af4bd0d49",
+    "set": "pregnancy-test",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2200,
+        600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-egg-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-b3d7de81-f3a1-47c7-9ca3-4a322044a04f.png",
+    "prompt": "Use case scientific-educational. Single human egg cell as microscope textbook ink and watercolour plate, large round centred sphere shown in section with peach cytoplasm, one visible violet nucleus slightly right of centre, and a thick clear pale zona pellucida ring surrounding cell. Naturalistic fine ink contour and translucent washes with visible soft pigment grain inside cell, not flat vector cartoon, not glossy 3D. No surrounding cells. Square 2000x2000 canvas with 15% fully transparent margins. Clear silhouette and distinct outer layer at 200px. True transparent alpha PNG. No text, labels, arrows, numbers, background, shadow, glow or white halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "1e6ffc72778728c6e426e6ce50b682c6b3b045dbcbb92128247d334e329d21c7",
+    "set": "egg",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-egg-open-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-afb8387e-cf42-4326-b3a7-9589e4fa1db4.png",
+    "prompt": "Correct only the LEFT-side opening in the egg outer layer in this illustration. The current shallow notch does not pass through the thick pale ring. Create a narrow full-thickness gap through that ring at the 9 o'clock position: remove pale outer layer all the way inward to the peach cytoplasm boundary over a short 10% circumference arc. The underlying peach egg cell remains intact, with its edge now exposed through the opening. Keep egg size, position, purple nucleus and every other feature unchanged. Transparent PNG, textbook ink watercolour style, no text, labels or arrows.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 1,
+    "sha256": "8dc266df6ab54566c918ff2d7e27c4eb3133ca5fe454dce5d89ead518d1839ad",
+    "set": "egg",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-egg-nucleus-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-0bb76d35-6c70-4834-8c0e-f8e9070d1f96.png",
+    "prompt": "Edit this scientific cell plate into a separate nucleus animation part. Keep ONLY the violet round nucleus, in its exact original position and size on the exact same canvas. Remove all peach cytoplasm and pale outer ring to full transparency. Preserve nucleus ink outline and fine natural watercolor texture. Do not move, centre, resize or redraw nucleus. Transparent PNG alpha with no background, shadow, halo, labels or text.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "91b75b95fcdb2d226d2f30b459adbbf3c0bbbb851a937d7d805c4ebf0c8e517a",
+    "set": "egg",
+    "part_of": "public/assets/biology/b3a-egg-v1.png",
+    "checks": {
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1215,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-sperm-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-bc7f78a3-251c-4c58-a91b-25b099a0b49e.png",
+    "prompt": "Use case scientific-educational. One isolated human sperm cell in side view swimming toward RIGHT: oval pale blue-violet head on right with a distinct pale rose acrosome cap covering its front right half, short narrow midpiece immediately left of head with gentle golden mitochondrial texture, and one very long fine tail curving gracefully leftward. Microscope textbook ink and watercolour plate, soft translucent pigment washes, fine ink contour, subtle grain, not flat cartoon, not glossy 3D. Landscape 2200x1600 canvas, entire cell central 76% width with 12% fully transparent margins every side. Tail thicker enough to read at 200px. Transparent PNG alpha. No extra cells, text, labels, arrows, numbers, shadows, background or halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "e07eaea0f7e7966685b09a54bf95eae54f90b3b9331e3673c155156912fd0536",
+    "set": "sperm",
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        2200,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-sperm-head-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-1e00e988-9eda-4a08-9a2a-3ab80f0970ab.png",
+    "prompt": "Edit this textbook cell illustration for an animation part. Retain only the oval sperm head and short gold-textured midpiece at their EXACT current position and size on the SAME canvas. Remove only the long tail to full transparency. Do not reposition, centre, enlarge or redraw the retained head or midpiece. Preserve pale rose acrosome cap, blue-violet head, ink contours and watercolour texture. All other pixels transparent. No words, labels, background, halo or shadow.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "7de6dd3c566f52966ee01f7b6670c94d4299f03aface056c0113ace89c673d43",
+    "set": "sperm",
+    "part_of": "public/assets/biology/b3a-sperm-v1.png",
+    "checks": {
+      "dimensions": [
+        2200,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "pass: shared crop and transform; 50% overlay inspected. Small surface wash differences in generated edits."
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a2-tablet-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-4b333df3-16be-410c-a8a8-7609e743662b.png",
+    "prompt": "One isolated two-colour medicine capsule tablet, pale ivory left half and muted warm yellow right half, horizontal in three-quarter view. Naturalistic ink and watercolour textbook plate, fine ink seam line, subtle paper grain inside softly painted pigment, no text or imprint, no glossy 3D or cartoon look. Transparent PNG alpha. Landscape 1600x800 with 12% fully transparent margins, capsule occupies central 70% width, simple silhouette readable at 110px. No labels, arrows, background, shadow, halo or glow.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "edec359196bc069896bbd2dd2c7417c1a8faba9055c74adf8cdd4e9405ab6eba",
+    "set": null,
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1600,
+        800
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "not applicable"
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-embryo-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-c47c0eea-c75d-4aab-b194-b3b4f018612d.png",
+    "prompt": "Use case scientific-educational. One very early human embryo at about five weeks after fertilisation, side view, naturally curled C shape, bean-sized form, large rounded head with small dark eye spot, curved trunk with faint segment ridges and tiny simple limb buds, no developed fingers or toes. Medical textbook ink and watercolour illustration matching pale salmon tissue washes and fine ink contours of anatomy reference. Naturalistic, not a cartoon face, not glossy 3D. Isolated only embryo, square 1600x1600 transparent alpha PNG, 15% fully transparent margin. Clear silhouette readable at 110px. No womb, sac, text, labels, numbers, arrows, background, ground, shadow or halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "12a6c11f86b2fbe11adbda698c0cb346e0f462096087f6a5c2fed48433dfe122",
+    "set": null,
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "not applicable"
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3a-petri-dish-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-7d59bf50-4fd8-43a0-a148-9810daec60f0.png",
+    "prompt": "Use case scientific-educational. Single EMPTY clear shallow glass petri dish seen three-quarter from slightly above, low broad circular rim, elliptical silhouette, translucent pale blue-grey glass highlights. No lid, no liquid, no cells, no markings. Naturalistic fine ink linework and soft watercolour washes matching glass tube scientific plate, subtle pigment grain, not glossy 3D, not flat vector cartoon. Landscape 1600x800 transparent PNG alpha with 12% clear margin every side. Bold clean rim readable at 200px. No background, surface, ground, shadow, halo, text, numbers, arrows or labels.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "ad9180565da9300b6b4cf9918fb5900cf7817fd2f90cd4fc184d54aefa616721",
+    "set": null,
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1600,
+        800
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "not applicable"
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3b-freezer-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-02485eea-25d4-4256-843f-ed07307309eb.png",
+    "prompt": "One isolated small laboratory liquid nitrogen storage dewar tank, upright cylindrical silver insulated vessel with rounded shoulders, two short side carrying handles, open round lid tilted beside neck, small rack of thin semen straws clearly visible rising within opening. No vapour cloud. Naturalistic ink and watercolour scientific textbook plate, fine dark ink, soft cool silver-blue washes with grain, no glossy 3D or cartoon. Square 1600x1600 transparent PNG alpha, at least 12% transparent margin. Bold simple silhouette readable at 200px. No text, markings, labels, numbers, arrows, ground, cast shadow, glow or halo.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "17cf992370264527cf5d551d2bfa7df027532967098b774116e3cc5aa50f5904",
+    "set": null,
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "not applicable"
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  },
+  {
+    "file": "public/assets/biology/b3b-forceps-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f3-6cd4-7090-b751-bb50d619e58b\\exec-ad837edb-970b-46b3-ac02-c853f1c6b115.png",
+    "prompt": "Single pair of fine steel laboratory forceps, long narrow tweezers upright with tips pointing DOWN, slightly open so two slender pointed tips distinct. No hand. Naturalistic scientific ink and watercolour textbook plate with fine precise dark contours, subtle cool blue-grey metal washes and pigment grain. No glossy 3D or cartoon. Portrait 800x1600 transparent PNG alpha with at least 12% transparent margin. Simple bold silhouette readable at 200px. No text, labels, arrows, ground, shadow, halo or background.",
+    "model": "built-in imagegen (model name not exposed)",
+    "retakes": 0,
+    "sha256": "e22bb0de92cad2825ab0439475005709dd263f2617a6856ca1983c890c2c604d",
+    "set": null,
+    "part_of": null,
+    "checks": {
+      "dimensions": [
+        800,
+        1600
+      ],
+      "real_alpha": true,
+      "minimum_margin": 0.1,
+      "subject_visual_review": "pass",
+      "200px_visual_review": "pass on cream and checkerboard",
+      "alignment": "not applicable"
+    },
+    "processing": "Only shared canvas crop, scale and transparent padding. No subject paint changes."
+  }
+]

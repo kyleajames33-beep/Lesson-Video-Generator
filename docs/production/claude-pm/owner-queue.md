@@ -1,22 +1,31 @@
 # Owner queue: Codex prompts to send
 
-## Send these now (13 Oct, night)
+**Mode (13 Oct, owner decision): consolidation.** No new designs or voicing. Finish what is recorded (C7, C8, B5a, B5b builds), voiced reviews of C5, B3b, C6, B4, render each preview the owner approves (one at a time), upload in batches through Codex. C9 and B6a wait at the Codex check; Module 6 stays at extracts.
 
-Paste one at a time, in any order (they do not depend on each other). Each is one line.
+## Owner verdicts (14 Oct)
 
-1. Syllabus dotpoint in all seven published YouTube descriptions:
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/21-youtube-add-dotpoints.md.`
-2. Painted art upgrades for built lessons (B3b cow, bull, calf, sheep; C5 copper tubes; B3a part 2 ovary close-ups; B5a and B5b optional plates):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/23-art-upgrade-pack.md.`
-3. Site extracts for all 38 Module 6 lessons, plus an index and any site science errors (big job, lets Claude plan Module 6):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/22-site-extracts-m6.md.`
-4. Three YouTube thumbnail styles on two videos, for you to choose from (nothing uploaded):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/24-youtube-thumbnail-concepts.md.`
+- C4a: approved (14 Oct). Rendering now (no plate to wire in; owner happy with current art).
+- B4: approved (14 Oct). Renders after C4a.
+- G01: approved, except the coded tree (too basic). Render after Codex paints the tree (brief 27).
+- B2b: needs painted icons (seedling embryo, propagation row, bee and wind, seed dispersal, land / tube / join / seed steps). Brief 27.
+- Volume: videos were about -28 LUFS (YouTube plays at -14). Render script now normalises to -14; published seven can be re-uploaded louder (owner to decide).
 
-5. Independent fact check and artwork for the next two designs, C9 (temperature and K) and B6a (DNA forms in bacteria and in our cells):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/25-c9-b6a-check-and-assets.md.`
+## Send next (14 Oct)
 
-Already done by Codex: briefs 11, 13 to 20.
+1. Painted icons for the unpublished lessons (B2b and the G01 tree first):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/27-painted-icon-pack.md.`
+2. (Thumbnails on hold: owner scrapped the AI-made concepts on 14 Oct; Claude is designing new ones. Do not send brief 29.)
+3. ONLY after Claude says the C4a and B4 renders are finished: upload both, then refresh the coverage ledger:
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/28-youtube-upload-c4a-b4-and-ledger.md.`
+
+## Send these now (13 Oct, late)
+
+Codex finished briefs 22, 23, 24 and 25. Brief 21 saved the dotpoints for C1, C2 and C3 only (browser control kept dropping). Make sure the Codex browser extension is connected, then:
+
+1. Finish the dotpoint edits (B1 check, Mould, B2a, B2c) and make the three missing chemistry plates (C6 vessel, C7 Haber converter, C8 pressure vessel):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/26-finish-dotpoints-and-chem-plates.md.`
+
+Your decision when you have a minute: Codex made three thumbnail styles (open docs/production/claude-pm/thumbnails/concepts/index.html). Tell Claude A, B or C (or none).
 
 ## Update 13 Oct (evening)
 
