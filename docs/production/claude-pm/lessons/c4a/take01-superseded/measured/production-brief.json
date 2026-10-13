@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c4a/measured/lesson.json",
+    "lessonSha256": "909c393c65700f26d20aec4396d0c8b6658f4ed271f5423db4b5b2ba0eac3e68"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1, C2, C3 and Year 11: dynamic equilibrium means equal non-zero rates in a closed system; rate means how much changes per second; more particles meeting means more events per second; the faster rate falls and the slower rate rises until they meet; a change shows up as the moment of the change then the response, only partly cancelled; gas pressure is particles hitting the walls; the numbers in front of species in a balanced equation count particles.",
+    "startsWith": "A syringe of brown NO2 and colourless N2O4 at equilibrium, squeezed to half the volume, going darker at once then fading a little.",
+    "stopsAfter": "Predicting the shift on compression or expansion by counting only gas particles, explaining it as which reaction gains more when every gas is more crowded, handling an equal count and a solid, and telling a squeeze from adding an inert gas at fixed volume. No K or Q, no constant-pressure argon, no temperature or catalyst in the prediction.",
+    "nextLesson": "C4B: adding a catalyst."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c04a.md"
+  ],
+  "teaching": {
+    "task": "Predict which way a gas equilibrium shifts when the volume is changed or an inert gas is added at fixed volume, and explain it using which reaction gains more.",
+    "causalExplanation": "Squeezing the same particles into half the space makes every gas twice as crowded, so every concentration doubles at once. A reaction that needs more gas particles to meet gains more from that crowding, so the shift goes toward the side with fewer gas particles, and expansion does the opposite. Equal gas counts raise both rates by the same factor, so nothing shifts, and pure solids do not count. An inert gas in a fixed volume raises the total pressure but leaves every reacting gas as crowded as before, so nothing shifts.",
+    "conversationalApproach": "One syringe that darkens, fades a little and settles darker than it started, a made-up scale shared with C2 and C3, one stage at a time (at equilibrium, the squeeze, why joining gains more, the response, the new equilibrium), then a counting rule, the equal and solid cases, a squeeze set against argon, and an unseen 2NO + O2 attempt.",
+    "openingDecision": "Why does a squeezed gas go darker, fade a little and settle darker than it started, and does every rise in pressure do the same thing?",
+    "understandingCheck": "For 2NO + O2 = 2NO2 at a steady temperature: say which way the net reaction goes when the volume is halved and why, what the colour does straight away and once settled, and what happens to the shift and colour when argon is pumped into the locked cylinder until the total pressure doubles.",
+    "curriculumScope": "Predict and explain the effect of pressure and volume changes on a gas equilibrium (Module 5). K, Q, constant-pressure argon, and temperature or catalyst effects in the prediction are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, a painted or coded syringe with a coded particle view, crowding dials, C2 and C3 style rate bars, graphs and staged table, and a total pressure gauge introduced in the argon scene. Colour key: NO2 brown, N2O4 pale with a dark outline, argon white with a faint outline, forward blue, reverse amber, equal teal.",
+    "transitionPlan": "The syringe zooms into the particle view; the moment of the change and the response share one board and swap labels; the table keeps only the last two rows; the board splits into a squeeze card and an argon card; the cylinder vignette replaces the aids for the attempt; the feedback replays on the same cylinder; the plunger and pellet icons lead into the next lesson; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted or coded syringe of brown NO2 and N2O4 with the plunger, colour swatch strip, equation chip and the C2 flask thumbnail",
+      "teachingReason": "Poses why a squeezed gas goes darker, fades a little, and settles darker than it started",
+      "narrationCue": "dynamic equilibrium / pushing in / colour / darker than where it started",
+      "motionPurpose": "The plunger slides to half, the brown deepens at once then eases back to a shade between the two against a dashed starting-shade line",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the plunger slides to half on \"pushing in\"; on \"colour\" the tint crossfades from medium to deep brown with a swatch strip filling, then eases back over about 5 seconds against a dashed line at the starting shade; the equation chip 2NO2 = N2O4 draws with a blue forward and amber reverse arrow; a two second C2 flask thumbnail with equal bars appears on \"dynamic equilibrium\"",
+      "motionTools": [
+        "CameraStage push",
+        "HandText write-on",
+        "plate crossfade",
+        "swatch strip fill",
+        "thumbnail pop"
+      ],
+      "holdPurpose": "Brief look at the settled shade against the dashed line"
+    },
+    {
+      "sceneId": "syringe-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "Coded particle view of the syringe, two crowding dials, C2 rate bars at 32 and 32 and the stage table",
+      "teachingReason": "Sets the starting row and defines concentration as how crowded a gas is",
+      "narrationCue": "concentration means how crowded / eight units / four / thirty-two",
+      "motionPurpose": "The syringe zooms into brown dots and pale pairs, the dials read 8 and 4, equal bars sit with a teal bracket, and the first table row writes on the spoken numbers",
+      "motionRole": "explain",
+      "onScreenChange": "Particle view with dials NO2 8 and N2O4 4; two rate bars at 32 and 32 with a teal \"equal\" bracket and the \"made-up numbers\" chip; the row \"at equilibrium\" (8, 4, 32, 32, 0) writes on each spoken number; the arrows light blue on \"forward\" and amber on \"reverse\" and the tags \"forward = joining\" and \"reverse = splitting\" stay on the chip",
+      "motionTools": [
+        "particle dots",
+        "NumberTicker dials",
+        "NumberTicker rate bars",
+        "table row write-on",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold the starting row into the next scene"
+    },
+    {
+      "sceneId": "squeeze-doubles",
+      "visualDecision": "adjust",
+      "visualReference": "Same syringe with the plunger at half, dots crowded together, doubling dials and the second table row",
+      "teachingReason": "Shows a squeeze doubles every concentration at once before anything has reacted",
+      "narrationCue": "halve the volume / sixteen / eight / brown is already darker",
+      "motionPurpose": "The plunger slides to half, the same dots crowd into the smaller space, the dials count to 16 and 8 and the swatch strip darkens",
+      "motionRole": "explain",
+      "onScreenChange": "Label \"the moment of the change\" writes on; the plunger slides to half; the dials count 8 to 16 and 4 to 8 on their cues; the swatch strip fills darker; the row \"just after squeezing\" (16, 8) writes; the tag \"no reaction yet, but the brown is already darker\" holds; the rate bars stay untouched",
+      "motionTools": [
+        "plunger slide",
+        "NumberTicker dials",
+        "swatch strip fill",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the crowding into the next scene"
+    },
+    {
+      "sceneId": "joining-gains-more",
+      "visualDecision": "adjust",
+      "visualReference": "Rate bars with the sums under them, pen arrows for the two NO2 that must meet and a one-particle tag for the splitting",
+      "teachingReason": "Shows why joining, which needs two NO2 to meet, gains more than splitting when every gas is twice as crowded",
+      "narrationCue": "twice over / one hundred and twenty-eight / sixty-four / gains more",
+      "motionPurpose": "The forward bar grows from 32 to 128 with its sum, the reverse bar grows to 64, and a ring marks the longer blue gain",
+      "motionRole": "explain",
+      "onScreenChange": "The forward bar grows to 128 with \"32 x 2 x 2 = 128\" and a \"2 particles must meet\" tag with two pen arrows; the reverse bar grows to 64 with \"32 x 2 = 64\" and a \"1 particle\" tag; a pen ring marks the longer blue gain on \"gains more\"; the second table row completes (16, 8, 128, 64, 64)",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "DrawPath arrows",
+        "ScribbleCircle",
+        "table row write-on"
+      ],
+      "holdPurpose": "Hold the two bars and the gap"
+    },
+    {
+      "sceneId": "response",
+      "visualDecision": "adjust",
+      "visualReference": "Particle view with joining pairs, dials moving to 14 and 9, falling and rising bars with sums, net arrow and the last two table rows",
+      "teachingReason": "Shows the faster rate falling and the slower rate rising as gas particles are lost",
+      "narrationCue": "number of gas particles falls / fourteen / nine / ninety-eight / seventy-two",
+      "motionPurpose": "Brown dots join into pale pairs, the forward bar falls to 98 and the reverse bar rises to 72, and the net arrow shrinks as the tint eases paler",
+      "motionRole": "explain",
+      "onScreenChange": "Label switches to \"the response\"; brown dots pair into pale pairs and the dials move to 14 and 9; \"128 x 14/16 x 14/16 = 98\" writes as the forward bar falls and \"64 x 9/8 = 72\" as the reverse bar rises; a pen bracket spans the gap; the row \"a little later\" (14, 9, 98, 72, 26) writes while the earlier row ghosts; the net arrow shrinks from 64 to 26 with \"more join than split\"",
+      "motionTools": [
+        "particle pairing",
+        "NumberTicker rate bars",
+        "bracket draw",
+        "net arrow shrink",
+        "table ghosting"
+      ],
+      "holdPurpose": "Brief hold on the closing gap"
+    },
+    {
+      "sceneId": "new-equilibrium",
+      "visualDecision": "adjust",
+      "visualReference": "Settled dials and bars meeting at about 78, a number line tracing NO2 from 8 to 16 to 12.5 with three shade swatches, and the shift arrow on the chip",
+      "teachingReason": "Shows why the brown ends darker than the start but paler than right after the squeeze",
+      "narrationCue": "seventy-eight / twelve and a half / between the eight and the sixteen / shifted",
+      "motionPurpose": "Bars meet at about 78, a pen traces NO2 across a number line from 8 to 16 and back to 12.5, and a blue arrow slides across the equation on \"shifted\"",
+      "motionRole": "explain",
+      "onScreenChange": "Dials settle at \"about 12.5\" and \"about 9.8\"; both bars meet at \"about 78\" with the teal bracket and \"net change 0\"; the row \"new equilibrium\" writes in teal; a pen traces NO2 on a mini number line 8, 16, 12.5 with three shades on the swatch strip and a dashed \"between\" bracket; a blue \"shift right\" arrow slides across the chip on \"shifted\" with \"net reaction runs forward until the rates match\"; the settled tint lands on the middle shade",
+      "motionTools": [
+        "NumberTicker dials",
+        "NumberTicker rate bars",
+        "DrawPath trace",
+        "swatch strip",
+        "arrow slide"
+      ],
+      "holdPurpose": "Hold the three shades side by side"
+    },
+    {
+      "sceneId": "graphs",
+      "visualDecision": "adjust",
+      "visualReference": "C2 and C3 style two-panel graph with a plunger icon at time 1, brown and pale curves, blue and amber rate lines and the teal rates-equal line",
+      "teachingReason": "Separates the instant jump from the slower response on the graphs",
+      "narrationCue": "jump together / step up / slides down / creeps up",
+      "motionPurpose": "A plunger pushes in at time 1, both concentrations step up together, NO2 slides down and N2O4 creeps up, while the rate lines step up and meet",
+      "motionRole": "explain",
+      "onScreenChange": "A plunger icon pushes in at time 1; in the upper panel NO2 steps 8 to 16 and N2O4 steps 4 to 8 together, then NO2 slides to about 12.5 and N2O4 creeps to about 9.8; in the lower panel the blue forward line steps 32 to 128 and falls to about 78 while the amber reverse line steps to 64 and rises to meet it; brackets \"the moment of the change\" and \"the response\" land; dashed \"start\" and \"instant\" lines frame the settled value",
+      "motionTools": [
+        "lineGraph draw-on",
+        "DrawPath arrow",
+        "bracket draw",
+        "dashed line reveal"
+      ],
+      "holdPurpose": "Hold the two brackets"
+    },
+    {
+      "sceneId": "fewer-gas-particles",
+      "visualDecision": "adjust",
+      "visualReference": "Syringe equation chip with gas particle icons, the ammonia equation with counts and a shift arrow, and the expansion replay on the same bars",
+      "teachingReason": "Turns the worked case into a counting rule and shows expansion does the opposite",
+      "narrationCue": "depends on more gas particles / fewer gas particles / moles of gas / Expanding does the opposite",
+      "motionPurpose": "Particle icons count the gases under each equation, a pen arrow marks the side that depends on more gas particles, and the plunger pulls out to halve the concentrations and reverse the bars",
+      "motionRole": "explain",
+      "onScreenChange": "The chip gets \"2 gas particles to 1: squeeze shifts right\" with particle icons; the ammonia equation writes with \"1 + 3 = 4\" and \"2\" counts, a pen arrow along the forward arrow reads \"depends on more gas particles: gains more\" and a blue shift right arrow follows; on \"Expanding\" the plunger pulls out, the concentrations halve and the bars read \"32 x 1/2 x 1/2 = 8\" and \"32 x 1/2 = 16\" with the amber bar longer and an arrow left to \"toward more gas particles\"; \"moles of gas = numbers in front of the gases\" writes on",
+      "motionTools": [
+        "particle icons",
+        "DrawPath arrows",
+        "plunger slide",
+        "NumberTicker rate bars",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the counting rule"
+    },
+    {
+      "sceneId": "equal-counts",
+      "visualDecision": "adjust",
+      "visualReference": "H2 + I2 = 2HI equation with 2 and 2 counts, two bars rising by the same factor and a purple tint that deepens once",
+      "teachingReason": "Shows equal gas counts raise both rates by the same factor so nothing shifts",
+      "narrationCue": "two against two / both rates go up four times / darker, but nothing shifts",
+      "motionPurpose": "The equation shows two and two, both bars rise fourfold and stay equal, the purple deepens once, and a flat no shift tag lands",
+      "motionRole": "explain",
+      "onScreenChange": "The equation writes with \"2 and 2\"; two rate bars rise by the same factor with \"x4 and x4\" tags and the teal \"equal\" bracket staying; the purple tint deepens once and stays, with the card \"darker, but no shift\" and a flat \"no shift\" tag",
+      "motionTools": [
+        "NumberTicker rate bars",
+        "bracket draw",
+        "tint deepen",
+        "tag pop"
+      ],
+      "holdPurpose": "Brief hold on the no shift tag"
+    },
+    {
+      "sceneId": "solids",
+      "visualDecision": "adjust",
+      "visualReference": "C(s) + CO2(g) = 2CO(g) with the solid greyed and bracketed, gas particle icons and a left arrow",
+      "teachingReason": "Shows only gases count and applies the counting rule to a new equation",
+      "narrationCue": "solids and pure liquids do not count / one on the left, two on the right / left",
+      "motionPurpose": "The solid carbon term greys out, gas icons count one against two, and a pen arrow points left to the side with fewer gas particles",
+      "motionRole": "explain",
+      "onScreenChange": "The equation writes with C greyed and bracketed \"does not count\"; \"1\" under CO2 and \"2\" under CO appear with gas particle icons; a pen arrow points left on \"left\" with the tag \"fewer gas particles\"; no rate bars or factors appear",
+      "motionTools": [
+        "HandText write-on",
+        "particle icons",
+        "DrawPath arrow",
+        "greyed term"
+      ],
+      "holdPurpose": "Hold the one-line card"
+    },
+    {
+      "sceneId": "squeeze-or-argon",
+      "visualDecision": "new",
+      "visualReference": "Split screen: squeeze card with dials, bars and a total pressure gauge, and an argon card with a padlocked plunger, inlet valve and white argon dots",
+      "teachingReason": "Separates raising total pressure from crowding the reacting gases",
+      "narrationCue": "total pressure / lock the plunger / argon / each is exactly as crowded / only the squeeze crowds",
+      "motionPurpose": "The gauge doubles as the plunger halves, then the board splits and argon dots drop into the locked syringe, the gauge doubles again while the NO2 and N2O4 dials stay put",
+      "motionRole": "explain",
+      "onScreenChange": "The corner gauge \"total pressure (relative)\" goes 1 to 2 as the plunger halves; the board splits into a squeeze card (dials 8 to 16, bars jump) and an argon card with a padlocked plunger and inlet; argon dots drop in on \"pump in argon\" and the gauge goes 1 to 2 while the NO2 and N2O4 dials stay at 8 and 4 with pen rings and \"no change in crowding, so no direction is favoured, no shift\"; the chip \"same total pressure, different crowding of the reacting gases\" lands",
+      "motionTools": [
+        "split board",
+        "gauge reveal",
+        "particle drop",
+        "ScribbleCircle",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the two cards side by side"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Large handwritten aid with a mini plunger, a padlocked box and a crowding dial icon",
+      "teachingReason": "Gives a direction shortcut after crowding has explained the cause",
+      "narrationCue": "shortcut / fewer gas particles / fixed box / still how crowded",
+      "motionPurpose": "The aid writes on large, a plunger squeezes under the first line, a padlocked box sits under the second, and the reason line is underlined",
+      "motionRole": "explain",
+      "onScreenChange": "The aid writes on: \"Squeeze it and the shift goes to fewer gas particles. Argon in a fixed box does not shift it.\" with the condition tag; a mini plunger squeezes under the first line and a padlocked box appears under the second; \"The reason is still how crowded each reacting gas becomes\" is underlined with the dial icon",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "ScribbleUnderline"
+      ],
+      "holdPurpose": "Hold the aid for about 3 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded cylinder vignette with a piston and pale brown tint, the 2NO + O2 = 2NO2 chip, conditions tags and two numbered questions",
+      "teachingReason": "Unseen transfer with the opposite colour behaviour to the worked syringe, all conditions visible and no answer cues",
+      "narrationCue": "Your turn / halve the volume / lock the piston / argon / Pause",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The cylinder, the equation chip with the colour key, the tags \"temperature steady, no gas escapes\" and \"hot cylinder: no N2O4\" and the two numbered questions appear as each is named; the aid and earlier boards are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with countdown (about 60 seconds)"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "Cylinder replay with the piston halving, NO2 dial doubling, bars with 3 and 2 particle tags, a second darkening step and a ghost of the syringe fade",
+      "teachingReason": "Explains the answer by counting gases and contrasts it with the syringe, where the brown faded",
+      "narrationCue": "three particles on the left, two on the right / keeps darkening / does not fade",
+      "motionPurpose": "The piston halves and the brown darkens at once, the forward bar gains more, the net arrow points right and the tint darkens a second time",
+      "motionRole": "explain",
+      "onScreenChange": "The piston halves, the NO2 dial doubles and the tint darkens (\"the moment of the change\"); the forward bar gains more than the reverse with \"3 particles\" against \"2 particles\" tags; the net arrow points right, more brown dots form and the tint deepens a second time on \"keeps darkening\" with a small ghost line for the syringe fade; \"Count only the gases\" returns; chips \"the brown always fades\" and \"shifts toward more gas particles\" appear crossed with a correcting caption",
+      "motionTools": [
+        "plunger slide",
+        "NumberTicker dials",
+        "NumberTicker rate bars",
+        "swatch strip",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the corrected board"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "Cylinder replay with a locked piston, argon dots, the gauge at 2 and three unchanged dials",
+      "teachingReason": "Explains that argon in a fixed volume leaves every reacting gas as crowded as before",
+      "narrationCue": "argon takes no part / exactly as crowded / nothing shifts",
+      "motionPurpose": "Argon dots drop into the locked cylinder, the gauge doubles and the three dials stay put with no rate bars",
+      "motionRole": "explain",
+      "onScreenChange": "A locked piston and argon dots appear; the gauge goes to 2; the NO, O2 and NO2 dials stay unchanged with pen rings and \"no change in crowding, no direction favoured\"; the chip \"pressure doubled, so it shifts right\" is crossed with the caption \"total pressure up, crowding unchanged\"",
+      "motionTools": [
+        "particle drop",
+        "gauge reveal",
+        "ScribbleCircle",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the unchanged dials"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three question cards with plunger, dropper and padlocked argon box icons, then a catalyst pellet chip",
+      "teachingReason": "Packs the lesson into a reusable question order and hands off to catalysts",
+      "narrationCue": "more or less crowded / count the gas particles / inert gas in a fixed box / catalyst",
+      "motionPurpose": "Three cards write on one by one, each with its icon, then a catalyst pellet icon slides in with the next chip",
+      "motionRole": "explain",
+      "onScreenChange": "Three question cards write on with a plunger (\"volume changed: count the gases\"), a dropper (\"reacting gas added: one rate, as before\") and a padlocked box with argon dots (\"inert gas, fixed volume: no shift\"); on \"catalyst\" a pellet icon appears with \"Next: catalysts\"",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "icon pop",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold the three questions for about 3 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "Five notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c4a-learning-review.md",
+      "sha256": "23cc2398314f2719e19e509934f0606415eddd0c7c3268d531a1085d2e3f4e10"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c4a-claude-science-check.md",
+      "sha256": "61492f039812de51629e24b4ae71a2b490e1c6eca0c36d60f7c9800bc24dfd73"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

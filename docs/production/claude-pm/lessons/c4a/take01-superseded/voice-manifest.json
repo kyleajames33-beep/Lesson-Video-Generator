@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C4a-claude-2026-10-12-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c4a/lesson.json",
+  "lessonSha256": "2bae90fa6a1ef08ea221060e835888523f31ad18f2f3524238feaa53335d469e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c4a/lesson.production-brief.json",
+    "sha256": "1e97d340b6e8f4c7bb3180a86b3e4dbd74e411463541fe6cb2707b280e315421"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This syringe holds brown nitrogen dioxide, N O two, mixed with colourless N two O four. It has sat at the same shade for an hour, so it is a dynamic equilibrium, and none of the gas can escape. Now we push the plunger in slowly, squeezing the gas into half the space, and let it return to room temperature. Watch the colour. It darkens at once, then slowly fades a little, and it settles darker than where it started. So why darker, why the fade, and does every rise in pressure do this?",
+      "hash": "5bf9b2f9f508",
+      "textSha256": "5bf9b2f9f5086f762bf10850402a6430ae1814e472ef25005789b2ecfbdb6ed6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/hook.5bf9b2f9f508.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/hook.5bf9b2f9f508.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/hook.5bf9b2f9f508.generation.json",
+      "plannedRequestSha256": "ad38f109552593fd86f63d61ef967b8dc7281af92eef2c85c454a87dc6e58028"
+    },
+    {
+      "id": "syringe-equilibrium",
+      "parentSceneId": "syringe-equilibrium",
+      "text": "Here is the syringe at equilibrium, on a made-up scale. Concentration means how crowded a gas is. N O two is eight units and N two O four is four. Joining, two N O two into one N two O four, is the forward reaction, and splitting is the reverse. Both rates are thirty-two, so the amounts are steady.",
+      "hash": "aa2639b84781",
+      "textSha256": "aa2639b8478160c6e99db0f9af7cac41c7f84424742db2bfa943065e07c92f50",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/syringe-equilibrium.aa2639b84781.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/syringe-equilibrium.aa2639b84781.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/syringe-equilibrium.aa2639b84781.generation.json",
+      "plannedRequestSha256": "15a8414c3a2e8572bb5039b17d7b1e1468fc2d504c5f66868e7d8c0c1c665e28"
+    },
+    {
+      "id": "squeeze-doubles",
+      "parentSceneId": "squeeze-doubles",
+      "text": "Now we halve the volume. The same particles have half the room, so every concentration doubles: N O two goes from eight to sixteen, and N two O four from four to eight. Nothing has reacted yet, but the brown is already darker, because N O two is the brown gas.",
+      "hash": "335938e6998d",
+      "textSha256": "335938e6998d2076d9ecee1d1b0c0973611e690eb31b2ec51c16d6e95c2f7bda",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/squeeze-doubles.335938e6998d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/squeeze-doubles.335938e6998d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/squeeze-doubles.335938e6998d.generation.json",
+      "plannedRequestSha256": "88d6c464150364f54a587a62bf43d01404daafa25e33b0e29ff37c09f4e9e7f8"
+    },
+    {
+      "id": "joining-gains-more",
+      "parentSceneId": "joining-gains-more",
+      "text": "Now the rates. Joining needs two N O two to meet, and each one is twice as crowded, so joining speeds up twice over: thirty-two times two times two is one hundred and twenty-eight. Splitting needs only one N two O four, so it only doubles, to sixty-four. The squeeze boosts both reactions, but joining gains more.",
+      "hash": "4dc29da899e9",
+      "textSha256": "4dc29da899e95caa8bfcdac8da902c2c8b572eb05d8d565c366c3211e7888618",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/joining-gains-more.4dc29da899e9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/joining-gains-more.4dc29da899e9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/joining-gains-more.4dc29da899e9.generation.json",
+      "plannedRequestSha256": "87c0061bc2f7a619ab06e5d9073abb2268f7383144e7f9e2e73992193a9a111c"
+    },
+    {
+      "id": "response",
+      "parentSceneId": "response",
+      "text": "Joining is now faster, so more N O two is lost each second than is rebuilt, and the brown starts to fade. Two N O two join into one N two O four, so the number of gas particles falls. One joining step later, N O two has fallen to fourteen and N two O four has risen to nine. Joining depends on the N O two count twice over, so it slows from one hundred and twenty-eight to ninety-eight. Splitting depends on the N two O four count once, so it rises from sixty-four to seventy-two. The difference between the rates is closing.",
+      "hash": "0ce05a0d96b8",
+      "textSha256": "0ce05a0d96b890fc59769a142da6008e70be923cbe85bd239488bcb9856ad2bb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/response.0ce05a0d96b8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/response.0ce05a0d96b8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/response.0ce05a0d96b8.generation.json",
+      "plannedRequestSha256": "70bfa7f1447beeadbe55e76412724e01da6fd925b735ffa745d57326f6d94e62"
+    },
+    {
+      "id": "new-equilibrium",
+      "parentSceneId": "new-equilibrium",
+      "text": "Then the rates meet again, at about seventy-eight. N O two settles at about twelve and a half. That is between the eight we started with and the sixteen straight after the squeeze, which is why the brown ends darker than the start, but paler than right after the squeeze. Both rates are higher than before, because everything is more crowded. The mixture has shifted to the right, toward N two O four, and it only partly cancelled the squeeze.",
+      "hash": "7246079f5619",
+      "textSha256": "7246079f5619d1f9b91f5833eb9eb00ae5f93a297bb980de6f1bc4620a10f235",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/new-equilibrium.7246079f5619.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/new-equilibrium.7246079f5619.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/new-equilibrium.7246079f5619.generation.json",
+      "plannedRequestSha256": "2f031dc0d1295351ae98adabfd27eed5308be62c9c3e1e0be23938e5bb1aedc2"
+    },
+    {
+      "id": "graphs",
+      "parentSceneId": "graphs",
+      "text": "At the moment of the squeeze, both concentrations jump together, and both rates step up, joining by more. Then the reaction responds: N O two slides down, N two O four creeps up, and the rates meet.",
+      "hash": "5438eface826",
+      "textSha256": "5438eface826da65df4ca86b0e49e2d88415f1cea3a8021ef7d9c66f667c424d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/graphs.5438eface826.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/graphs.5438eface826.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/graphs.5438eface826.generation.json",
+      "plannedRequestSha256": "52f96a205af33db48e9cfc70dab53b99418b5d1d60fc94e4f72bf38f1f56b6da"
+    },
+    {
+      "id": "fewer-gas-particles",
+      "parentSceneId": "fewer-gas-particles",
+      "text": "So why did joining gain more? Because it depends on more gas particles. That gives a rule. A squeeze speeds up most the reaction that depends on more gas particles, so the shift goes toward the side with fewer gas particles. Count only the gases. Chemists say moles of gas. It is the same count: the numbers in front of the gases in the balanced equation. In nitrogen plus three hydrogen making two ammonia, there are four gas particles on the left and two on the right, so the forward reaction depends on more gas particles and gains more. Squeezing shifts it right. Expanding does the opposite, so the shift goes toward the side with more gas particles.",
+      "hash": "831541eb3444",
+      "textSha256": "831541eb344486c5a3b856dda590b27f924c0e22b58ec3de477a1b028449577a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/fewer-gas-particles.831541eb3444.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/fewer-gas-particles.831541eb3444.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/fewer-gas-particles.831541eb3444.generation.json",
+      "plannedRequestSha256": "51a251f3e8c7a916cf700d4bfba885d208162f8dbfc4a78430a2d48666a4728c"
+    },
+    {
+      "id": "equal-counts",
+      "parentSceneId": "equal-counts",
+      "text": "What if both sides have the same number of gas particles? Take hydrogen plus purple iodine vapour making two colourless hydrogen iodide, as hot gases: two against two. A squeeze doubles every concentration, and both reactions need two particles to meet, so both rates go up four times and stay equal. The gas is more crowded and the purple is darker, but nothing shifts.",
+      "hash": "b6890feff61e",
+      "textSha256": "b6890feff61e0aa3854369afedeb9d62846873fc444c6436bd38196cfcc37609",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/equal-counts.b6890feff61e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/equal-counts.b6890feff61e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/equal-counts.b6890feff61e.generation.json",
+      "plannedRequestSha256": "0179a5698ee2a5c7bf70ac6ca31c0ce528d84da4a276827ec71089209d17b78a"
+    },
+    {
+      "id": "solids",
+      "parentSceneId": "solids",
+      "text": "Pure solids and pure liquids do not count, because squeezing does not make them any more crowded. So in solid carbon plus carbon dioxide making two carbon monoxide, only the gases count: one on the left, two on the right. The same rule applies: a squeeze favours the side with fewer gas particles, so it shifts left.",
+      "hash": "79b50e61123d",
+      "textSha256": "79b50e61123db9d17338c59026536545967825c0d3c178d0471ebde82065c891",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/solids.79b50e61123d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/solids.79b50e61123d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/solids.79b50e61123d.generation.json",
+      "plannedRequestSha256": "d278cb482de287c1f8d9d310c25e6b0642385a470700dcc19978a5cbfaacaed5"
+    },
+    {
+      "id": "squeeze-or-argon",
+      "parentSceneId": "squeeze-or-argon",
+      "text": "A squeeze raises the total pressure, because the crowded particles hit the walls more often. But pressure can also rise without a squeeze. Take our N O two syringe, lock the plunger so the volume cannot change, and pump in argon. Argon is an inert gas, which means it takes no part in the reaction. But the N O two and the N two O four have the same room as before, so each is exactly as crowded as before. Argon does not crowd N O two any closer to N two O four, so it does not favour either direction, and there is no shift and no colour change. A squeeze and an argon top-up can raise the total pressure equally, but only the squeeze crowds the reacting gases. So total pressure by itself is not the cause. Crowding of the reacting gases is.",
+      "hash": "0c60c9c15513",
+      "textSha256": "0c60c9c15513fa38a6173ec5b12e2614eb91f39c95d89ab7d60dbb9d63778ce3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/squeeze-or-argon.0c60c9c15513.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/squeeze-or-argon.0c60c9c15513.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/squeeze-or-argon.0c60c9c15513.generation.json",
+      "plannedRequestSha256": "13cb71917a734fdc18bb92f4f7323d8e682c793eb7bf4d30f112101fe7311e25"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here is a shortcut for the direction. Squeeze it, and the shift goes toward fewer gas particles. Argon added in a fixed box does not shift it. It gives the direction only. The reason is still how crowded each reacting gas becomes.",
+      "hash": "d448f8c448ec",
+      "textSha256": "d448f8c448ec27333397cb809ea25a211fb51d9dcd4af8dc7c7ebda5aa919661",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/memory-aid.d448f8c448ec.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/memory-aid.d448f8c448ec.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/memory-aid.d448f8c448ec.generation.json",
+      "plannedRequestSha256": "238861cd565516bd660a86a5d2fbbb90026d46d5034aa503eeb563ac79d9c2ed"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. In a cylinder with a piston, colourless nitric oxide, N O, and colourless oxygen are in equilibrium with brown N O two: two N O plus oxygen make two N O two. The temperature stays steady. The cylinder is hot, so the N O two stays as single molecules and does not join to make N two O four. One: you push the piston in to halve the volume. Which way does the net reaction go, and why? What does the colour do straight away, and then once the mixture has settled again? Two: back at the original equilibrium, you lock the piston and pump in argon until the total pressure doubles. What happens to the shift and to the colour, and why? Pause the video if you'd like more time.",
+      "hash": "39d7d7d92566",
+      "textSha256": "39d7d7d925661dd99fe26d60d1b186e4d7f311a39d52cd1a42fea22a0ad04316",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/attempt.39d7d7d92566.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/attempt.39d7d7d92566.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/attempt.39d7d7d92566.generation.json",
+      "plannedRequestSha256": "54c0a58c7428a402a04a555e1fbe1ae86322c97917e36763e84750c58351d482"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One. Count the gases: three particles on the left, two on the right. A squeeze doubles every concentration. The forward reaction depends on more gas particles, so it gains more, and the net reaction goes right, toward N O two. The colour darkens at once, because the N O two is twice as crowded, and then keeps darkening as more N O two forms, because nothing here removes the N O two. This time the brown does not fade, because the shift makes the brown gas. If you said the brown fades, check which side this shift favours.",
+      "hash": "3d14a3a618c9",
+      "textSha256": "3d14a3a618c9e9b76710ad92c9fb515046301fadee2746dc3ec6f32b75f9d17a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/feedback-one.3d14a3a618c9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/feedback-one.3d14a3a618c9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/feedback-one.3d14a3a618c9.generation.json",
+      "plannedRequestSha256": "ac4bb2e489ba69c1cd4ce9063ee0ce1b851f38d1ccd713a8922e652dc697239b"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Two. Argon takes no part, and the volume has not changed, so nitric oxide, oxygen and nitrogen dioxide are each exactly as crowded as before. Argon does not favour either direction, so nothing shifts and the colour stays the same. If you said it shifts right because the pressure doubled, separate the total pressure from how crowded the reacting gases are.",
+      "hash": "00cb0845f56f",
+      "textSha256": "00cb0845f56fee27b7d8e5166827bcaacc4bc56549883781bed88b9801c376aa",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/feedback-two.00cb0845f56f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/feedback-two.00cb0845f56f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/feedback-two.00cb0845f56f.generation.json",
+      "plannedRequestSha256": "65748a03ed05baf5f123c130002c63b20a74bcf974c377d54b3f2794cfac37e2"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question changes the pressure, ask first whether the reacting gases got more or less crowded. If the volume changed, they did, so count the gas particles on each side. A squeeze shifts toward fewer, an expansion toward more, and equal counts mean no shift. If you added a reacting gas in a fixed box, that is the concentration case from the iron tube. If you added only an inert gas in a fixed box, nothing is more crowded, so nothing shifts. Next: adding a catalyst.",
+      "hash": "dd46ede9aeb3",
+      "textSha256": "dd46ede9aeb3b53c6ab2f8f2a5815f82f4c1f9841aefd56f4a5b1cf84976d550",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/decision-rule.dd46ede9aeb3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/decision-rule.dd46ede9aeb3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/decision-rule.dd46ede9aeb3.generation.json",
+      "plannedRequestSha256": "8d08e93127b05eb03a1ed098326efdc1ed20839b3aa0d8362e9b0d8ee51c2f3f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C4a-claude-2026-10-12-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

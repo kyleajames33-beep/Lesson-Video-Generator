@@ -13,7 +13,7 @@ const NO_R: Piece[] = [{t: '2NO_2(g)', color: NO2_INK, dot: NO2C}];
 const HotPill: React.FC<{at: number; y?: number}> = ({at, y = 440}) => <Pill x={96} y={y} w={520} text="hot cylinder: no N₂O₄" at={at} color={INK_SOFT} size={36} h={58} />;
 
 // ---------- 10a. Feedback, item one ----------
-const K1 = cues(sc('feedback-one'), {one: 'One count the gases', three: 'three particles on the left', two: 'two on the right', dbl: 'A squeeze doubles', fwd: 'forward reaction depends', gains: 'gains more', right: 'goes right', dark: 'The colour darkens at once', twice: 'twice as crowded', keeps: 'keeps darkening', nothing: 'nothing here removes', notfade: 'does not fade', makes: 'makes the brown gas', ifsaid: 'If you said', check: 'check which side'});
+const K1 = cues(sc('feedback-one'), {one: 'One count the gases', three: 'three particles on the left', two: 'two on the right', dbl: 'A squeeze doubles', fwd: 'forward reaction depends', gains: 'gains more', right: 'goes right', dark: 'The colour darkens at once', twice: 'twice as crowded', keeps: 'keeps darkening', nothing: 'than is used up', notfade: 'does not fade', makes: 'makes the brown gas', ifsaid: 'If you said', check: 'check which side'});
 const SK = {x0: 130, y0: 955, base: 905};
 export const SceneFeedbackOne: React.FC = () => {
 	const f = useCurrentFrame();
