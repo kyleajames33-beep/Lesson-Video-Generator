@@ -129,7 +129,7 @@ export const SceneThermostat: React.FC = () => {
 					<rect x={-7} y={60 - merc} width={14} height={merc + 6} fill="#e0482f" />
 					<text x={50} y={20} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42}} fill={INK}>{cold > 0.5 ? 'room: cold' : 'room: warm'}</text>
 				</g>
-				<g opacity={cold} transform="translate(860,720)">
+				<g opacity={cold} transform="translate(440,730)">
 					{[0, 60, 120].map(a => <line key={a} x1={-34} y1={0} x2={34} y2={0} stroke="#4a90c9" strokeWidth={7} strokeLinecap="round" transform={`rotate(${a})`} />)}
 				</g>
 				{pair(LX, c.heater + 20, '')}

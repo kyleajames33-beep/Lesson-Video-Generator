@@ -137,7 +137,6 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Hand at={c.whatever} x={640} y={880} w={1200} size={52} color={AMBER_INK}>the pituitary senses progesterone, whatever its source</Hand>
 			<WrongChip at={c.if1} x={640} y={735} text="she isn't pregnant, so she ovulates" size={40} />
 			<WrongChip at={c.if2} x={640} y={805} text="FSH and LH rise" size={40} />
-			<Say at={c.rem} x={640} y={954} w={1200} size={28} color={INK_SOFT} weight={600}>a heat source held against the thermostat switches the heater off too</Say>
 			<div style={{display: 'none'}}>{[c.same, c.senses, c.check, Arrow, TEAL, YELLOW, Tick, Cross].length}</div>
 		</>
 	);
@@ -295,7 +294,8 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 10. Key notes ----------
 const NOTES = [
-	'FSH (from the pituitary) makes a follicle grow, and a surge of LH makes it release its egg. Progesterone returning in the blood turns FSH and LH down. This is negative feedback: progesterone acts back on the pituitary and turns the process down. In pregnancy the corpus luteum (kept going by hCG) and then the placenta keep progesterone high, so no egg is released.',
+	'FSH (from the pituitary) makes a follicle grow, and a surge of LH makes it release its egg.',
+	'Progesterone returning in the blood turns FSH and LH down. This is negative feedback: progesterone acts back on the pituitary and turns the process down. In pregnancy the corpus luteum (kept going by hCG) and then the placenta keep progesterone high, so no egg is released.',
 	'Progesterone helps keep the uterus muscle calm. Late in pregnancy the placenta makes more oestrogen, which makes the muscle react more strongly to oxytocin.',
 	"At birth, the baby's head stretches the cervix, nerve signals reach the brain, and the pituitary releases oxytocin, so the muscle contracts harder and stretches the cervix more. This is positive feedback: the stronger contractions add to the stretch that caused them. It ends when the baby is born and the stretch stops.",
 	'Prolactin makes the breast produce milk, and oxytocin squeezes the milk out. Both are released when the baby suckles. High progesterone and oestrogen from the placenta hold milk production back in pregnancy.',
@@ -311,7 +311,7 @@ export const SceneNotes: React.FC = () => (
 					<Body size={30}>{n}</Body>
 				</Enter>
 			))}
-			<Enter at={80} style={{marginTop: 12, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
+			<Enter at={90} style={{marginTop: 12, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK, lineHeight: 1.1}}>Oxytocin squeezes (uterus and breast). Prolactin is pro-lactation.</div>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: '#1f6fb2', lineHeight: 1.1, marginTop: 4}}>stretch, oxytocin, squeeze, more stretch</div>
 			</Enter>

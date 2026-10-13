@@ -14,7 +14,8 @@ const K1 = cues(sc('hook'), {syr: 'This syringe', brown: 'brown nitrogen dioxide
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
 	const vol = kf(f, [[K1.push, 1], [K1.dark - 10, 0.5]]);
-	const t = f < K1.fades ? 0.5 + (1 - vol) * 1.0 : kf(f, [[K1.fades, 1], [K1.fades + 150, 0.78]]);
+	const dk = kf(f, [[K1.dark - 4, 0], [K1.dark + 18, 0.5]]);
+	const t = f < K1.fades ? 0.5 + dk : kf(f, [[K1.fades, 1], [K1.fades + 150, 0.78]]);
 	const no2 = kf(f, [[K1.fades, 16], [K1.fades + 150, 12]], false);
 	const n2o4 = kf(f, [[K1.fades, 8], [K1.fades + 150, 10]], false);
 	const push = 1 + 0.05 * prog(f, 0, 900);
@@ -138,7 +139,7 @@ export const SceneJoining: React.FC = () => {
 				<Fade at={K4.doubles}><SvgText x={690} y={694} text="reverse: 32 × 2 = 64" size={38} color={AMBER_INK} at={K4.doubles} hand={false} /></Fade>
 				<Bars fwd={fwd} rev={rev} at={K4.calc} scale={BAR_SCALE} x0={BX} />
 				<Pill x={96} y={762} w={600} text="in this simple model (one-step reactions)" at={K4.gains} color={INK_SOFT} size={30} h={50} />
-				<Fade at={K4.gains}><DrawPath d={ring} at={K4.gains} dur={24} color={TEAL} width={6} /><SvgText x={BX + 190} y={BARS.base - 128 * BAR_SCALE - 70} text="gains more" size={44} color={TEAL} at={K4.gains + 10} /></Fade>
+				<Fade at={K4.gains}><DrawPath d={ring} at={K4.gains} dur={24} color={TEAL} width={6} /><SvgText x={BX + 196} y={BARS.base - 128 * BAR_SCALE + 60} text="gains more" size={44} color={TEAL} at={K4.gains + 10} /></Fade>
 				<StageTable rows={rows} at={-100} heads={HEADS} gapAt={K4.boosts} />
 			</Overlay>
 			<RxnChip x={1020} y={60} at={-100} left={CHIP_L} right={CHIP_R} size={38} words={false} fwdLit={-100} revLit={-100} fwdTag={{text: 'forward = joining', at: -100, color: FWD}} revTag={{text: 'reverse = splitting', at: -100, color: AMBER_INK}} />

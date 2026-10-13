@@ -100,7 +100,7 @@ const INH = cH(IN.w, INSET);
 const NERVE: [number, number][] = [[966, 700], [1100, 740], [1300, 600], [1500, 420], [1600, 300]];
 const BLOOD: [number, number][] = [[PIT[0] - 20, PIT[1] + 30], [1500, 260], [1150, 215], [800, 215], [560, 250], [470, 300]];
 const CHX = [840, 1070, 1300, 1530, 1760];
-const CHY = 890;
+const CHY = 880;
 export const SceneTrigger: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('trigger'), {
@@ -131,7 +131,7 @@ export const SceneTrigger: React.FC = () => {
 				<div style={{position: 'absolute', left: 540, top: 340, width: 30, height: 400, border: `4px solid ${INK}`, borderRadius: 10, boxSizing: 'border-box', background: '#fffdf8'}}>
 					<div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: `${12 + 80 * s}%`, background: MUSCLE, borderRadius: 6}} />
 				</div>
-				<div style={{position: 'absolute', left: 495, top: 744, width: 120, textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 30, color: INK}}>stretch</div>
+				<div style={{position: 'absolute', left: 495, top: 296, width: 120, textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 30, color: INK}}>stretch</div>
 			</div>
 			<Overlay>
 				<Brain at={c.nerve - 30} pulse={pulse} />
@@ -159,7 +159,7 @@ export const SceneTrigger: React.FC = () => {
 					);
 				})}
 			</Overlay>
-			<Say at={c.narrow} x={610} y={806} w={800} size={30} color={INK_SOFT} weight={600}>the narrow lower end of the uterus</Say>
+			<Say at={c.narrow} x={610} y={826} w={800} size={28} color={INK_SOFT} weight={600}>the narrow lower end of the uterus</Say>
 			<LoopCard at={0} fill1={0} />
 			<div style={{display: 'none'}}>{[PIT, SLATE_INK, Cross, AMBER, along, CERVIX_BOX, LoopIcon, MAGENTA, VIOLET, BarHead, HandText, FONT_DISPLAY, INK].length}</div>
 		</>
@@ -185,7 +185,7 @@ export const SceneLoopCloses: React.FC = () => {
 	const oxyH = (() => { let h = 0; heights.forEach((v, i) => { h = h + (v - (i ? heights[i - 1] : 0)) * lapP(i); }); return h; })();
 	const greyRing = prog(f, c.stops, 20);
 	const ringCol = greyRing > 0.5 ? '#b9b3a8' : INK_SOFT;
-	const rowPos = (i: number): [number, number] => [[840, 1070, 1300, 1530, 1760][i], 890];
+	const rowPos = (i: number): [number, number] => [[840, 1070, 1300, 1530, 1760][i], 880];
 	const pos = (i: number): [number, number] => {
 		const a = rowPos(i), b = ringPt(i * 72);
 		return [a[0] + (b[0] - a[0]) * mv, a[1] + (b[1] - a[1]) * mv];
@@ -221,7 +221,7 @@ export const SceneLoopCloses: React.FC = () => {
 					);
 				})}
 				{/* positive feedback in the middle */}
-				<LoopIcon k="pos" cx={RC.x} cy={428} r={44} o={prog(f, c.pos, 14)} />
+				<LoopIcon k="pos" cx={RC.x} cy={450} r={44} o={prog(f, c.pos, 14)} />
 				{/* the brake is not part of this loop */}
 				<g opacity={prog(f, c.nothing, 12) * (1 - prog(f, c.build - 6, 10))}>
 					<DrawPath d="M820,730 L980,730" at={c.nothing} dur={14} color={AMBER} width={9} />
@@ -240,8 +240,8 @@ export const SceneLoopCloses: React.FC = () => {
 				</g>
 				<DrawPath d={traceD(1450, 850, 380, 80, 'grow', 4)} at={c.closes} dur={80} color={VIOLET_INK} width={5} />
 			</Overlay>
-			<Enter at={c.pos} style={{position: 'absolute', left: 660, top: 490}}><HandText text="positive feedback" at={c.pos} size={78} color={AMBER_INK} cps={26} /></Enter>
-			<Say at={c.pos + 20} x={680} y={590} w={470} size={32} color={INK} weight={600}>the result pushes the process further</Say>
+			<Enter at={c.pos} style={{position: 'absolute', left: 660, top: 512}}><HandText text="positive feedback" at={c.pos} size={78} color={AMBER_INK} cps={26} /></Enter>
+			<Say at={c.pos + 20} x={680} y={612} w={470} size={32} color={INK} weight={600}>the result pushes the process further</Say>
 			<Pill at={c.then} x={760} y={900} size={40} color={INK_SOFT}>the stretch stops, so the loop stops</Pill>
 			<LoopCard at={0} fill1={0} second={c.pos + 30} fill2={c.stops} />
 			<div style={{display: 'none'}}>{[Brain, PIT, Arrow, Label, PArt, PL, VIOLET, along, Vein, Dots, Scribble, SLATE_INK, Callout, MAGENTA_INK, FONT_DISPLAY, INK, AMBER, MUSCLE].length}</div>
@@ -290,8 +290,8 @@ export const SceneTwoKinds: React.FC = () => {
 			{col(96, 'negative feedback', 'neg')}
 			{col(994, 'positive feedback', 'pos')}
 			<Overlay>
-				<Thumb x={400} y={376} down at={c.neg} out={c.describe - 6} crossAt={c.neg + 40} />
-				<Thumb x={1300} y={376} at={c.pos} out={c.describe - 6} crossAt={c.pos + 40} />
+				<Thumb x={400} y={486} down at={c.neg} out={c.describe - 6} crossAt={c.neg + 40} />
+				<Thumb x={1300} y={440} at={c.pos} out={c.describe - 6} crossAt={c.pos + 40} />
 			</Overlay>
 			<Row x={126} y={460} w={770} at={c.negF} big="opposes the change" small="(here, turns the process down)" color={SLATE_INK} />
 			<Row x={1024} y={460} w={770} at={c.posF} big="adds to the change" small="(here, pushes the process further)" color={MAGENTA_INK} />

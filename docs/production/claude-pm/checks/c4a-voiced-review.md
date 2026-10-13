@@ -53,3 +53,18 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers. SHOULD FIX 1 (feedback-one chips over the graph) and 4 (rule scene clutter) are scene-source edits. SHOULD FIX 2 and 3 touch recorded narration and are the owner's call. The attempt meets the 10 s countdown and shows every condition. Playback-speed motion and human listening remain pending.
+
+## Fixes applied (13 Oct)
+
+Scene source only (`src/explainer/lessons/chem-m5-c04a`). Feedback-one was re-recorded (take02); frames from feedback-one onward were recomputed (feedback-one starts f12540, feedback-two f13690, decision-rule f14480, key-notes f15565). Stills re-rendered and viewed at f640, f3140, f5640, f6500, f10100, f12850, f13300 and f13620.
+
+- SHOULD FIX 1 (feedback-one chips over the graph): the rate bars, "3 particles", "2 particles" and "forward gains more" now fade out just before "If you said" (cue). The single wrong-answer chip "the brown always fades" with its correction sits in the cleared area (x 1100, y 560) and stays to the end. The unspoken second chip and the grey line "A squeeze helps the reaction that depends on more." are removed. "syringe: fades" moved off the "start" axis label ("start" now sits left, below the dashed baseline). The "colour over time" axis title was lifted clear of "cylinder: keeps darkening".
+- SHOULD FIX 2 (nothing removes NO2): already re-recorded ("more N O two forms each second than is used up"). No on-screen text contradicts it, so no visual change.
+- SHOULD FIX 3 (spoken "Pause the video..." in the attempt): accepted per owner decision, nothing changed.
+- SHOULD FIX 4 (counting rule clutter): the NO2 / N2O4 card is dimmed to 30 percent and the "joining depends on more gas particles" line fades out when the ammonia equation arrives (cue "nitrogen plus three hydrogen"). Spacing added around the "left: 1 + 3 = 4 gas particles, right: 2" line, the "in this simple model" pill moved up 16 px and "Count only the gases" and the moles line lowered slightly.
+- NICE 1 (hook slider f640): the slider thumb and gas tint now stay at the start shade until "darkens at once" and then ease dark, so the thumb is at "start" on "Watch the colour".
+- NICE 2 ("gains more" label): moved to the right of the ringed bar, clear of the equation card and the "reverse = splitting" tag.
+- NICE 4 (graph line labels): "NO2" and "N2O4" now label the concentration lines from the first drawn segment (the end labels remain), and "forward (joining)" and "reverse (splitting)" label the rate lines at the right end from the step-up.
+- NICE 5 (argon key): a white circle key with "argon" appears when the argon is pumped in, followed by "takes no part".
+- NICE 8 (net reaction label touching the cylinder): the net-reaction arrow and its label moved right of the cylinder.
+- Not done (not in scope): NICE 3 (12.5 lag), 6 and 7 (acceptable reading holds).

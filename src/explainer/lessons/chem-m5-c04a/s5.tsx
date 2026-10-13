@@ -37,27 +37,28 @@ export const SceneFeedbackOne: React.FC = () => {
 					<SvgText x={96} y={612} text="Count only the gases:" size={46} color={TEAL} at={K1.one} />
 					<SvgText x={96} y={662} text="3 on the left, 2 on the right" size={44} color={TEAL} at={K1.three} />
 				</Fade>
-				<Bars fwd={fwd} rev={rev} at={K1.dbl} scale={2.6} fwdLabel="" revLabel="" x0={BX} />
-				<Fade at={K1.three}><SvgText x={1190} y={770} text="3 particles" size={38} color={FWD} at={K1.three} /></Fade>
-				<Fade at={K1.two}><SvgText x={1390} y={770} text="2 particles" size={38} color={AMBER_INK} at={K1.two} /></Fade>
+				<Fade at={0} out={K1.ifsaid - 14}>
+					<Bars fwd={fwd} rev={rev} at={K1.dbl} scale={2.6} fwdLabel="" revLabel="" x0={BX} />
+					<Fade at={K1.three}><SvgText x={1190} y={770} text="3 particles" size={38} color={FWD} at={K1.three} /></Fade>
+					<Fade at={K1.two}><SvgText x={1390} y={770} text="2 particles" size={38} color={AMBER_INK} at={K1.two} /></Fade>
+					<Fade at={K1.gains}><SvgText x={1190} y={820} text="forward gains more" size={38} color={FWD} at={K1.gains} /></Fade>
+				</Fade>
 				<Pill x={1190} y={850} w={640} text="in this simple model (one-step reactions)" at={K1.gains} color={INK_SOFT} size={30} h={54} />
-				<Fade at={K1.gains}><SvgText x={1190} y={820} text="forward gains more" size={38} color={FWD} at={K1.gains} /></Fade>
-				<NetBar xc={930} y={300} gap={fwd - rev} at={K1.right - 20} scale={4.5} lines={[{text: 'net reaction', at: K1.right}, {text: 'goes right', at: K1.right + 8}]} />
+				<NetBar xc={1010} y={300} gap={fwd - rev} at={K1.right - 20} scale={4.5} lines={[{text: 'net reaction', at: K1.right}, {text: 'goes right', at: K1.right + 8}]} />
 				{/* colour over time: the cylinder keeps darkening, the syringe faded back */}
 				<Fade at={K1.dark}>
-					<path d={`M${SK.x0},${SK.y0} L${SK.x0},715 M${SK.x0},${SK.y0} L${SK.x0 + 520},${SK.y0}`} stroke={INK} strokeWidth={4} fill="none" strokeLinecap="round" />
+					<path d={`M${SK.x0},${SK.y0} L${SK.x0},714 M${SK.x0},${SK.y0} L${SK.x0 + 520},${SK.y0}`} stroke={INK} strokeWidth={4} fill="none" strokeLinecap="round" />
 					<path d={`M${SK.x0},${SK.base} L${SK.x0 + 520},${SK.base}`} stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="8 8" />
-					<SvgText x={SK.x0 + 520} y={SK.base + 36} text="start" size={30} color={INK_SOFT} anchor="end" at={K1.dark} hand={false} weight={600} />
-					<SvgText x={SK.x0 + 8} y={745} text="colour over time" size={30} color={INK_SOFT} at={K1.dark} hand={false} weight={600} />
+					<SvgText x={SK.x0 + 8} y={SK.base + 36} text="start" size={30} color={INK_SOFT} anchor="start" at={K1.dark} hand={false} weight={600} />
+					<SvgText x={SK.x0 + 8} y={704} text="colour over time" size={30} color={INK_SOFT} at={K1.dark} hand={false} weight={600} />
 				</Fade>
 				<DrawPath d={`M${SK.x0},${SK.base} L${SK.x0 + 120},${SK.base} L${SK.x0 + 120},${SK.base - 70}`} at={K1.dark} dur={24} color={NO2C} width={9} />
 				<DrawPath d={`M${SK.x0 + 120},${SK.base - 70} Q${SK.x0 + 300},${SK.base - 90} ${SK.x0 + 500},${SK.base - 150}`} at={K1.keeps} dur={60} color={NO2C} width={9} />
-				<Fade at={K1.keeps}><SvgText x={SK.x0 + 500} y={SK.base - 190} text="cylinder: keeps darkening" size={32} color={NO2_INK} anchor="end" at={K1.keeps} hand={false} weight={700} /></Fade>
+				<Fade at={K1.keeps}><SvgText x={SK.x0 + 500} y={SK.base - 168} text="cylinder: keeps darkening" size={32} color={NO2_INK} anchor="end" at={K1.keeps} hand={false} weight={700} /></Fade>
 				<DrawPath d={`M${SK.x0 + 120},${SK.base - 70} Q${SK.x0 + 300},${SK.base - 70} ${SK.x0 + 500},${SK.base - 25}`} at={K1.notfade} dur={50} color={INK_SOFT} width={6} dash="12 9" />
-				<Fade at={K1.notfade}><SvgText x={SK.x0 + 500} y={SK.base + 4} text="syringe: fades" size={30} color={INK_SOFT} anchor="end" at={K1.notfade + 20} hand={false} weight={700} /></Fade>
+				<Fade at={K1.notfade}><SvgText x={SK.x0 + 500} y={SK.base + 36} text="syringe: fades" size={30} color={INK_SOFT} anchor="end" at={K1.notfade + 20} hand={false} weight={700} /></Fade>
 				<Fade at={K1.makes}><SvgText x={720} y={940} text="the shift makes the brown gas" size={40} color={NO2_INK} at={K1.makes} /></Fade>
-				<WrongChip at={K1.ifsaid} out={K1.check - 6} x={960} y={600} chip="the brown always fades" fix="Check which side this shift favours." w={640} />
-				<WrongChip at={K1.check + 10} out={99999} x={960} y={600} chip="shifts toward more gas particles" fix="A squeeze helps the reaction that depends on more." w={760} />
+				<WrongChip at={K1.ifsaid} out={99999} x={1100} y={560} chip="the brown always fades" fix="Check which side this shift favours." w={640} />
 			</Overlay>
 			<div style={{display: 'none'}}>{AMBER}{FONT_HAND}{K1.twice}{K1.nothing}</div>
 		</>

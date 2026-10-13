@@ -58,3 +58,19 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers. SHOULD FIX 1 to 3 and 5 to 6 are scene-source edits (clipped text, label overlaps, the orange ball), SHOULD FIX 4 touches recorded narration and is the owner's call. The attempt shows every condition and meets the 10 s countdown. Painted metal plate and coded metal lattice do not hurt the teaching. Playback-speed motion and human listening remain pending.
+
+## Fixes applied (13 Oct)
+
+Scene source only (`src/explainer/lessons/chem-m5-c04b`). Frame numbers in this review are unchanged in the current measured timeline. Stills re-rendered and viewed at f520, f1900, f2000, f2560, f4750, f4950, f5700, f6400, f10400, f11200, f12100, f12900, f13000 and f14900.
+
+- SHOULD FIX 1 (route caption clipped): the tick, "same metal" and "ready for the next molecules" moved left (x 1290 and 1340), so the whole line is inside the safe area.
+- SHOULD FIX 2 (tube A bar vs slider): the rate bars are scaled down (52 to 40) and the colour slider moved to y 552, so "about 4" no longer sits on the slider and the "falls" arrow was re-fitted. The tube B sliders sit under the table in a clear band (checked at f5700). Left open: the "colour" caption is partly hidden by the slider thumb when the thumb is at the start, a shared ColourStrip detail (also on the hook strips), outside the named folders.
+- SHOULD FIX 3 (ridge ball): the blue ball now crosses the ridge on "must reach", turns amber in the 2HI valley on "climb" and climbs the right-hand slope to the top by "to go back", where it stays (a hair right of the apex so it clears "top of the ridge"). "enough energy" now shows only while the blue ball crosses.
+- SHOULD FIX 4 (spoken "Pause the video..."): accepted per owner decision, nothing changed.
+- SHOULD FIX 5 (stop early label): moved to the right of the dashed line near the time axis, clear of the y-axis title.
+- SHOULD FIX 6 (ghost chip text): the never-spoken "same destination, reached sooner" is removed.
+- NICE 1 (hook ring): ring shortened and lowered so it no longer crosses the "same start, same temperature, sealed" chip (still hand-wobbly by design).
+- NICE 4 (premature "equal"): the "equal" label is hidden while the two bars grow and fades in only when both reach 2.
+- NICE 6 (key notes): bullet 2 is one sentence ("A catalyst lowers the activation energy of the forward and reverse reactions by the same amount (the heat of reaction is unchanged), so at a steady temperature both rates rise by the same factor."), same content as before.
+- NICE 7 (attempt card spacing): question 1 and 2 cards moved down 18 and 20 px.
+- Not done: NICE 2, 3, 5, 8 (acceptable as noted).

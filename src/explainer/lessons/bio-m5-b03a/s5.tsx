@@ -164,7 +164,6 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Enter at={c.prog} style={{position: 'absolute', left: 1180, top: 250, width: 640}}>
 				<div style={{background: '#fff8ea', border: `4px solid ${AMBER}`, borderRadius: 22, padding: '12px 26px 16px', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: AMBER_INK, lineHeight: 1.08}}>no progesterone,<br />lining not ready,<br />no attachment</div>
 			</Enter>
-			<WrongChip at={c.fine} x={1180} y={560} text="the blastocyst can't form" size={40} />
 			<WrongChip at={c.ifhcg} x={1180} y={650} text="hCG would fix it" size={40} />
 			<GreyTag at={c.ifhcg + 24} x={1180} y={716} text="no progesterone, so the lining is not kept ready" size={28} />
 			<Say at={c.makes} x={1180} y={790} w={640} size={32} weight={600}>hCG is made once the embryo is implanting. This blastocyst cannot implant, so there is no hCG yet.</Say>
@@ -337,11 +336,15 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 11. Key notes ----------
 const NOTES = [
-	'Fertilisation (a sperm joins an egg to make a zygote) usually happens in the oviduct. The zygote divides by cleavage as it moves toward the uterus and becomes a blastocyst, which implants in the uterine lining about a week after fertilisation. Fertilisation and implantation are different events, and a pregnancy begins at implantation.',
+	'A sperm has a tail to swim, mitochondria for energy and an acrosome with enzymes to get into the egg.',
+	'The egg is large because it carries a food store for the early embryo.',
+	'Fertilisation (a sperm joins an egg to make a zygote) usually happens in the oviduct.',
+	'The zygote divides by cleavage as it moves toward the uterus and becomes a blastocyst. The blastocyst implants in the uterine lining about a week after fertilisation.',
+	'Fertilisation and implantation are different events. A pregnancy begins at implantation.',
 	'After the egg is released, the corpus luteum makes progesterone, which keeps the uterine lining thick and ready. With no pregnancy the corpus luteum breaks down about two weeks after ovulation and the lining is shed.',
 	'Once the embryo is implanting, its outer cells make hCG. hCG acts on the corpus luteum, so it keeps making progesterone. Progesterone acts on the lining.',
-	"Over the first two to three months after fertilisation, the placenta takes over making progesterone. Later in pregnancy, the placenta passes oxygen and nutrients from the mother's blood to the baby and carbon dioxide and wastes back, without the bloods mixing.",
-	'A sperm has a tail to swim, mitochondria for energy and an acrosome with enzymes to get into the egg. The egg is large because it carries a food store for the early embryo.',
+	'Over the first two to three months after fertilisation, the placenta takes over making progesterone.',
+	"Later in pregnancy, the placenta passes oxygen and nutrients from the mother's blood to the baby and carbon dioxide and wastes back, without the bloods mixing.",
 ];
 export const SceneNotes: React.FC = () => (
 	<>
@@ -353,7 +356,7 @@ export const SceneNotes: React.FC = () => (
 					<Body size={30}>{n}</Body>
 				</Enter>
 			))}
-			<Enter at={80} style={{marginTop: 14, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
+			<Enter at={110} style={{marginTop: 14, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK, lineHeight: 1.1}}>Progesterone is pro-gestation. hCG is the embryo's message to the corpus luteum.</div>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: '#1f6fb2', lineHeight: 1.1, marginTop: 4}}>meet, divide, attach, signal, hand over</div>
 			</Enter>

@@ -63,3 +63,19 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers. SHOULD FIX 1 to 5 and 7 are label and layout collisions in the scene source and are quick edits. SHOULD FIX 6 is deleting a stray line. SHOULD FIX 8 touches recorded narration and is the owner's call. The attempt does not show its answer, keeps every condition visible and meets the 10 s countdown. Playback-speed motion and human listening remain pending.
+
+## Fixes applied (13 Oct)
+
+Scene source only (`src/explainer/lessons/bio-m5-b03a2`). Frame numbers are unchanged in the current measured timeline. Stills re-rendered and viewed at f3140, f5705, f6411, f6731, f9400, f12595 and f16000 (and before/after at f2930, f3700, f7171).
+
+- SHOULD FIX 1 (trigger chain behind the caption): the five-step chain moved up (icon row y 880, labels now end near y 950, clear of the caption band), the "stretch" meter caption moved above the meter, and the "the narrow lower end of the uterus" note re-set smaller and lower so it sits between the cervix inset and the chain.
+- SHOULD FIX 2 (+ over the stretch node): the "+" circle, the "positive feedback" word and its sentence moved down about 20 px so the stretch node and its label are clear.
+- SHOULD FIX 3 (warmth label): the "warmth" label was already clear of the thermometer in the current render; the cold snowflake that appears on "cold" was moved from under the label to the left of the thermometer so it can no longer touch it.
+- SHOULD FIX 4 (hCG pill over the date label): not reproduced in the current render (f3560 to f3930: the date label, hCG pill and "brake off" ghost are separate), so no change.
+- SHOULD FIX 5 (thumbs on card titles): both thumbs lowered to y 440 to 486, well below the titles; they fade out before the rows arrive.
+- SHOULD FIX 6 (leftover thermostat line in feedback one): removed. The same line in the thermostat scene is kept (it sits clear of the diagram).
+- SHOULD FIX 7 (milk legend): "progesterone" (amber dot) and "oestrogen" (magenta dot) labels appear above the uterus plate on "during pregnancy", and the "held back" chip moved right of the duct, away from the alveoli.
+- SHOULD FIX 8 (spoken "Pause the video..."): accepted per owner decision, nothing changed.
+- SHOULD FIX 9 (key notes): bullet 1 split into two (FSH and LH, then the progesterone brake and negative feedback in pregnancy), same content.
+- NICE "illust..." label (two kinds): the label is fully visible in the current render ("illustrative"), so no change.
+- NICE ovary hard crop edge (brake): not changed (not a simple fix without a new plate).

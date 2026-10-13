@@ -186,6 +186,21 @@ export const SceneProgesterone: React.FC = () => {
 			<Heading items={[[0, 'What keeps the lining thick?'], [c.hormone, 'A hormone is a chemical messenger'], [c.cl, 'The corpus luteum makes progesterone']]} size={68} />
 			{/* hormone chain: organ, blood, organ */}
 			<div style={{position: 'absolute', inset: 0, opacity: chainOut}}>
+				{/* the question first: the lining, with a question mark, until the definition starts */}
+				<div style={{position: 'absolute', inset: 0, opacity: vis(f, 2, c.hormone + 8)}}>
+					<TractPair p={TR3} />
+					<Overlay><text x={m(500, 235)[0]} y={m(500, 235)[1] + 40} textAnchor="middle" fill={AMBER_INK} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 150}}>?</text></Overlay>
+				</div>
+				{/* empty slots for the definition: organ, blood, organ */}
+				<Overlay>
+					<g opacity={vis(f, c.hormone + 10, c.changes + 20)}>
+						<rect x={250} y={290} width={320} height={160} rx={26} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeDasharray="14 12" />
+						<rect x={1430} y={275} width={190} height={215} rx={26} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeDasharray="14 12" />
+						<path d="M810,375 C880,335 920,415 990,375 S1060,360 1092,375" fill="none" stroke="#e9a49c" strokeWidth={26} strokeLinecap="round" strokeDasharray="2 22" />
+						<text x={410} y={385} textAnchor="middle" fill={INK_SOFT} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}}>organ</text>
+						<text x={1525} y={392} textAnchor="middle" fill={INK_SOFT} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}}>organ</text>
+					</g>
+				</Overlay>
 				<Enter at={c.one} style={{position: 'absolute', left: 250, top: 290}}>
 					<div style={{width: 320, height: 160, borderRadius: 26, overflow: 'hidden', position: 'relative', border: `5px solid ${INK_SOFT}`}}><PArt a={PL.ovary} x={0} y={0} w={320} /></div>
 				</Enter>

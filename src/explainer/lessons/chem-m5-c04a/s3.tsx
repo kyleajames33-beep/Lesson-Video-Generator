@@ -25,14 +25,16 @@ export const SceneFewer: React.FC = () => {
 	return (
 		<>
 			<Title text="The counting rule" />
-			<RxnChip x={96} y={200} at={K1.why - 10} left={left1} right={right1} size={44} words={false} fwdLit={K1.fewer} revLit={-100} capPad={36} fwdTag={{text: 'squeeze: shift right', at: K1.squeeze, color: FWD}} />
+			<div style={{opacity: 1 - 0.7 * prog(f, K1.ammonia - 8, 16)}}>
+				<RxnChip x={96} y={200} at={K1.why - 10} left={left1} right={right1} size={44} words={false} fwdLit={K1.fewer} revLit={-100} capPad={36} fwdTag={{text: 'squeeze: shift right', at: K1.squeeze, color: FWD}} />
+			</div>
 			<RxnChip x={96} y={520} at={K1.ammonia} left={left2} right={right2} size={44} words={false} fwdLit={K1.fwd} revLit={-100} capPad={36} fwdTag={{text: 'squeeze: shift right', at: K1.squeezing, color: FWD}} />
 			<Overlay>
-				<Pill x={96} y={716} w={600} text="in this simple model (one-step reactions)" at={K1.dep} color={INK_SOFT} size={30} h={50} />
-				<Fade at={K1.dep}><SvgText x={96} y={472} text="joining depends on more gas particles, so it gains more" size={32} color={FWD} at={K1.dep} hand={false} weight={600} /></Fade>
-				<Fade at={K1.count}><SvgText x={96} y={858} text="Count only the gases" size={54} color={TEAL} at={K1.count} /></Fade>
-				<Fade at={K1.moles}><SvgText x={96} y={918} text="moles of gas = the numbers in front of the gases" size={34} color={INK} at={K1.moles} hand={false} weight={600} /></Fade>
-				<Fade at={K1.four}><SvgText x={96} y={800} text="left: 1 + 3 = 4 gas particles, right: 2" size={34} color={FWD} at={K1.four} hand={false} weight={600} /></Fade>
+				<Pill x={96} y={700} w={600} text="in this simple model (one-step reactions)" at={K1.dep} color={INK_SOFT} size={30} h={50} />
+				<Fade at={K1.dep} out={K1.ammonia - 8}><SvgText x={96} y={472} text="joining depends on more gas particles, so it gains more" size={32} color={FWD} at={K1.dep} hand={false} weight={600} /></Fade>
+				<Fade at={K1.count}><SvgText x={96} y={870} text="Count only the gases" size={54} color={TEAL} at={K1.count} /></Fade>
+				<Fade at={K1.moles}><SvgText x={96} y={932} text="moles of gas = the numbers in front of the gases" size={34} color={INK} at={K1.moles} hand={false} weight={600} /></Fade>
+				<Fade at={K1.four}><SvgText x={96} y={806} text="left: 1 + 3 = 4 gas particles, right: 2" size={34} color={FWD} at={K1.four} hand={false} weight={600} /></Fade>
 				<Fade at={K1.fewer}><SvgText x={1250} y={260} text={ex ? 'volume doubled' : 'squeezed to half'} size={38} color={INK_SOFT} at={K1.why} /></Fade>
 				<Bars fwd={fwd} rev={rev} at={K1.why} scale={BAR_SCALE} x0={1330} />
 				<Fade at={K1.dep} out={E - 10}>

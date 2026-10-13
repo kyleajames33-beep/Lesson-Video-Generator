@@ -66,12 +66,12 @@ export const SceneTubeA: React.FC = () => {
 				<Fade at={KA.nineH}><Pill x={96} y={178} w={pillW('made-up numbers to show the pattern', 34) + 10} text="made-up numbers to show the pattern" at={KA.nineH} color={INK_SOFT} size={34} h={58} /></Fade>
 				<GasTube x={96} y={262} w={620} h={140} counts={{h: s.h, i: s.i, hi: s.hi}} seed={5} reveal={reveal} />
 				<TubeKey x={110} y={478} at={KA.nineH - 20} />
-				<ColourStrip x={250} y={560} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - s.i) / 7)} at={KA.nineI} label="colour" />
+				<ColourStrip x={250} y={552} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - s.i) / 7)} at={KA.nineI} label="colour" />
 				<Dial cx={790} cy={410} r={40} clock={dial} at={KA.rises - 20} />
 				{/* rate bars */}
-				<RateBars x0={140} base={840} scale={52} fwd={s.fwd} rev={s.rev} at={KA.fwdRate} fwdLabel={run ? s.fwd.toFixed(1) : 'about 4'} revLabel={run ? s.rev.toFixed(1) : '0'} eqAt={KA.nearly} subs={['makes HI', 'splits HI']} />
-				<Arrow x1={272} y1={840 - 195} x2={272} y2={840 - 110} at={KA.falls} color={FWD} width={8} out={KA.rises + 10} />
-				<Fade at={KA.falls + 8} out={KA.rises + 10}><SvgText x={288} y={840 - 150} text="falls" size={46} color={FWD} at={KA.falls + 8} /></Fade>
+				<RateBars x0={140} base={840} scale={40} fwd={s.fwd} rev={s.rev} at={KA.fwdRate} fwdLabel={run ? s.fwd.toFixed(1) : 'about 4'} revLabel={run ? s.rev.toFixed(1) : '0'} eqAt={KA.nearly} subs={['makes HI', 'splits HI']} />
+				<Arrow x1={272} y1={840 - 150} x2={272} y2={840 - 85} at={KA.falls} color={FWD} width={8} out={KA.rises + 10} />
+				<Fade at={KA.falls + 8} out={KA.rises + 10}><SvgText x={288} y={840 - 112} text="falls" size={46} color={FWD} at={KA.falls + 8} /></Fade>
 				<Arrow x1={512} y1={815} x2={512} y2={745} at={KA.rises} color={AMBER_INK} width={8} out={KA.rises + 60} />
 				<Fade at={KA.rises + 6} out={KA.rises + 60}><SvgText x={528} y={790} text="rises" size={46} color={AMBER_INK} at={KA.rises + 6} /></Fade>
 				{/* graph */}
@@ -166,7 +166,7 @@ export const SceneSameMix: React.FC = () => {
 			<Overlay>
 				<g transform={`translate(110,${BASE}) scale(${sc2}) translate(-110,${-BASE})`} opacity={1 - 0.2 * shrink}>
 					<SvgText x={170} y={250} text="the settled mixture, tube A" size={44} color={INK_SOFT} anchor="start" at={KM.first} />
-					<RateBars x0={200} base={BASE} scale={SCALE} fwd={f < KM.ten1 ? 0.2 : grow1} rev={f < KM.ten2 ? 0.2 : grow2} at={KM.first} fwdLabel={f < KM.ten1 ? '0.2' : grow1 > 1.95 ? '2' : grow1.toFixed(1)} revLabel={f < KM.ten2 ? '0.2' : grow2 > 1.95 ? '2' : grow2.toFixed(1)} ghost={f >= KM.ten1 ? {fwd: 0.2, rev: 0.2} : undefined} eqAt={KM.fifthA + 20} axisLabel={null} />
+					<RateBars x0={200} base={BASE} scale={SCALE} fwd={f < KM.ten1 ? 0.2 : grow1} rev={f < KM.ten2 ? 0.2 : grow2} at={KM.first} fwdLabel={f < KM.ten1 ? '0.2' : grow1 > 1.95 ? '2' : grow1.toFixed(1)} revLabel={f < KM.ten2 ? '0.2' : grow2 > 1.95 ? '2' : grow2.toFixed(1)} ghost={f >= KM.ten1 ? {fwd: 0.2, rev: 0.2} : undefined} eqAt={f < KM.ten1 ? KM.fifthA + 20 : f < KM.is2 + 14 ? undefined : KM.is2 + 14} axisLabel={null} />
 					<SvgText x={255} y={BASE + 108} text="0.2 x 10 = 2" size={46} color={FWD} anchor="middle" at={KM.is1} />
 					<SvgText x={485} y={BASE + 108} text="0.2 x 10 = 2" size={46} color={AMBER_INK} anchor="middle" at={KM.is2} />
 					<SvgText x={370} y={BASE + 162} text="rate (units per tick)" size={28} color={INK_SOFT} anchor="middle" at={KM.first} hand={false} weight={600} />

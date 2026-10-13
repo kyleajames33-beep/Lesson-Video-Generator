@@ -39,7 +39,11 @@ export const SceneArgon: React.FC = () => {
 				<Dial x={1224} y={440} w={260} label="NO_2" value={8} text="8" color={NO2_INK} at={K1.take + 10} ring={f >= K1.each} />
 				<Dial x={1514} y={440} w={260} label="N_2O_4" value={4} text="4" color={N2O4_INK} at={K1.take + 10} ring={f >= K1.each} />
 				<Gauge x={1084} y={540} r={62} value={pR} at={K1.take + 10} />
-				<Fade at={K1.nopart}><SvgText x={1014} y={745} text="argon: takes no part" size={36} color={INK_SOFT} at={K1.nopart} /></Fade>
+				<Fade at={K1.pump}>
+					<circle cx={1028} cy={733} r={11} fill="#ffffff" stroke={INK_SOFT} strokeWidth={3.5} />
+					<SvgText x={1052} y={745} text="argon" size={36} color={INK_SOFT} at={K1.pump} />
+				</Fade>
+				<Fade at={K1.nopart}><SvgText x={1138} y={745} text="takes no part" size={36} color={INK_SOFT} at={K1.nopart} /></Fade>
 								<Fade at={K1.crowd}>
 					<SvgText x={1014} y={920} text="no change in crowding," size={36} color={TEAL} at={K1.crowd} />
 					<SvgText x={1014} y={962} text="so no direction is favoured" size={36} color={TEAL} at={K1.favour} />

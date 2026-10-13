@@ -35,7 +35,7 @@ export const SceneHandover: React.FC = () => {
 					</g>
 					<Bracket x1={379} x2={546} y={500} at={c.over} />
 					<line x1={379} x2={379} y1={G.y0} y2={G.y0 + 10} stroke={INK} strokeWidth={4} /><line x1={546} x2={546} y1={G.y0} y2={G.y0 + 10} stroke={INK} strokeWidth={4} />
-					<text x={462} y={542} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={AMBER_INK} opacity={prog(f, c.over + 12, 14)}>weeks 5 to 8</text>
+					<text x={462} y={542} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={AMBER_INK} opacity={prog(f, c.over + 12, 14)}>first 2 to 3 months</text>
 				</g>
 			</Overlay>
 						{/* the organ chain returns small */}
@@ -59,8 +59,8 @@ export const SceneHandover: React.FC = () => {
 				</Overlay>
 				<Say at={c.forms + 16} x={1250} y={862} w={640} size={32} color={INK_SOFT} weight={600}>later in pregnancy (about 5 months)</Say>
 			</div>
-			<Hand at={c.over + 12} x={930} y={300} w={380} size={46} color={AMBER_INK}>weeks 5 to 7: the main shift</Hand>
-			<Hand at={c.takes + 20} x={930} y={440} w={380} size={46} color={TEAL_INK}>placenta the main source by about week 8</Hand>
+			<Hand at={c.over + 12} x={930} y={300} w={380} size={46} color={AMBER_INK}>the main shift</Hand>
+			<Hand at={c.takes + 20} x={930} y={440} w={380} size={46} color={TEAL_INK}>placenta the main source</Hand>
 			<Rail upTo={5} newAt={c.takes} />
 			<div style={{display: 'none'}}>{[AMBER, DrawPath, GREYTAG, INK, O2, PURPLE, RoundPlate, Cross, vis, Say, Overlay].length}</div>
 		</>
@@ -71,7 +71,7 @@ export const SceneHandover: React.FC = () => {
 const PX = 1180, PY = 230, PW = 650, PH = 640;
 const RY = 330, BY = 510;
 export type ExCues = {flow: number; mix: number; more: number; cross: number; nutr: number; waste: number};
-const O2_X = Array.from({length: 11}, (_, i) => 1235 + i * 52);
+const O2_X = Array.from({length: 11}, (_, i) => 1340 + i * 38);
 const O2_Y0 = (i: number) => 382 + ((i * 37) % 70);
 const O2_Y1 = (i: number) => 556 + ((i * 29) % 70);
 export const ExchangePanel: React.FC<{c: ExCues; ox?: number; oy?: number; o?: number; title?: string; fillAt?: number; fall?: boolean}> = ({c, ox = PX, oy = PY, o = 1, title = 'later in pregnancy: the fetal stage', fillAt = 0}) => {
@@ -96,18 +96,24 @@ export const ExchangePanel: React.FC<{c: ExCues; ox?: number; oy?: number; o?: n
 			<rect x={1200} y={RY + 140} width={610} height={40} fill="#fffdf8" stroke="none" />
 			<line x1={1200} x2={1810} y1={RY + 141} y2={RY + 141} stroke={INK_SOFT} strokeWidth={4} />
 			<line x1={1200} x2={1810} y1={RY + 179} y2={RY + 179} stroke={INK_SOFT} strokeWidth={4} />
-			<text x={1216} y={RY + 168} textAnchor="start" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT} opacity={prog(f, c.mix - 20, 12)}>thin membranes</text>
+			<text x={1300} y={RY + 168} textAnchor="start" style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}} fill={INK_SOFT} opacity={prog(f, c.mix - 20, 12)}>thin membranes</text>
 			{/* baby's blood */}
 			<rect x={1200} y={BY + 20} width={610} height={140} rx={16} fill="#e6dcf3" stroke={PURPLE} strokeWidth={5} />
 			<text x={1216} y={BY + 150} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32}} fill="#573a86">baby's blood</text>
 			<g opacity={prog(f, c.flow, 14)}>{chev(0)}{chev(1)}</g>
-			{/* no mixing */}
+			{/* no mixing: the two bloods stop at the membrane (droplets), separate from the oxygen arrow */}
 			<g opacity={prog(f, c.mix, 12)}>
-				<path d={`M1770,${RY + 100} L1770,${BY + 70}`} stroke={INK_SOFT} strokeWidth={7} strokeLinecap="round" />
-				<path d={`M1752,${BY + 52} L1770,${BY + 72} L1788,${BY + 52}`} fill="none" stroke={INK_SOFT} strokeWidth={7} strokeLinecap="round" />
+				<path d={`M1788,${RY + 98} C1802,${RY + 118} 1800,${RY + 132} 1788,${RY + 132} C1776,${RY + 132} 1774,${RY + 118} 1788,${RY + 98}Z`} fill={ROSE} stroke="#a1485a" strokeWidth={3} />
+				<path d={`M1788,${BY + 54} C1802,${BY + 34} 1800,${BY + 20} 1788,${BY + 20} C1776,${BY + 20} 1774,${BY + 34} 1788,${BY + 54}Z`} fill={PURPLE} stroke="#573a86" strokeWidth={3} />
 			</g>
-			<Cross x={1770} y={RY + 168} s={1.3} at={c.mix + 8} />
-			<Label x={1730} y={RY + 168 + 8} at={c.mix + 14} text="no mixing" size={42} color="#c4432f" anchor="end" />
+			<Cross x={1788} y={RY + 160} s={1.2} at={c.mix + 8} />
+			<Label x={1750} y={RY + 168 + 8} at={c.mix + 14} text="no mixing" size={42} color="#c4432f" anchor="end" />
+			{/* oxygen crosses: its own arrow */}
+			<g opacity={prog(f, c.cross, 14)}>
+				<path d={`M1276,${RY + 64} L1276,${BY + 54}`} stroke="#2f8f5b" strokeWidth={7} strokeLinecap="round" />
+				<path d={`M1260,${BY + 38} L1276,${BY + 58} L1292,${BY + 38}`} fill="none" stroke="#2f8f5b" strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" />
+				<text transform={`translate(1254,${(RY + BY + 118) / 2}) rotate(-90)`} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 24}} fill="#2f8f5b">crosses the barrier</text>
+			</g>
 			{/* oxygen */}
 			{O2_X.map((x, i) => {
 				const appear = prog(f, c.more + i * 2, 8);
@@ -115,21 +121,21 @@ export const ExchangePanel: React.FC<{c: ExCues; ox?: number; oy?: number; o?: n
 				const y = O2_Y0(i) + (O2_Y1(i) - O2_Y0(i)) * move;
 				return <g key={i} opacity={appear}>{blue(x + Math.sin(i + f / 14) * 4, y, i)}</g>;
 			})}
-			{[0, 1, 2].map(i => <g key={'p' + i} opacity={prog(f, c.more + 20, 10)}>{blue(1300 + i * 190, 598 + (i % 2) * 24, 100 + i)}</g>)}
+			{[0, 1, 2].map(i => <g key={'p' + i} opacity={prog(f, c.more + 20, 10)}>{blue(1340 + i * 180, 598 + (i % 2) * 24, 100 + i)}</g>)}
 			<Label x={1792} y={RY + 38} at={c.more} text="more oxygen" size={36} color="#2f6a9d" anchor="end" />
 			<Label x={1792} y={BY + 150} at={c.more + 30} text="less oxygen" size={36} color="#2f6a9d" anchor="end" />
 			{/* nutrients cross the same way */}
 			{Array.from({length: 6}, (_, i) => {
 				const move = prog(f, c.nutr + i * 6, 44);
 				const y0 = 400 + ((i * 41) % 60), y1 = 580 + ((i * 23) % 50);
-				const x = 1262 + i * 96;
+				const x = 1340 + i * 72;
 				return <circle key={i} cx={x} cy={y0 + (y1 - y0) * move} r={10} fill={AMBER} stroke={AMBER_INK} strokeWidth={2.5} opacity={prog(f, c.nutr, 8)} />;
 			})}
 			{/* carbon dioxide and wastes go the other way */}
 			{Array.from({length: 6}, (_, i) => {
 				const move = prog(f, c.waste + i * 6, 44);
 				const y0 = 590 + ((i * 17) % 40), y1 = 405 + ((i * 31) % 50);
-				const x = 1290 + i * 90;
+				const x = 1350 + i * 68;
 				return <rect key={i} x={x - 9} y={y0 + (y1 - y0) * move - 9} width={18} height={18} rx={5} fill="#8d949b" stroke="#5d646b" strokeWidth={2.5} opacity={prog(f, c.waste, 8)} />;
 			})}
 			{/* legend */}
@@ -153,7 +159,7 @@ const EmbryoDraw: React.FC<{x: number; y: number}> = ({x, y}) => (
 export const SceneExchange: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('exchange'), {
-		emb: 'called an embryo', forming: 'organs are forming', fetus: 'called a fetus', grows: 'grows and matures', later: 'Later in pregnancy', like: 'like this', flow: 'flow close together', mix: "don't mix", more: 'Oxygen moves', cross: "into the baby's blood", nutr: 'Nutrients cross too', waste: 'Carbon dioxide',
+		emb: 'called an embryo', forming: 'organs are forming', fetus: 'called a fetus', grows: 'grows and matures', later1: 'Later it is', later: 'Later in pregnancy', like: 'like this', flow: 'flow close together', mix: "don't mix", more: 'Oxygen moves', cross: "into the baby's blood", nutr: 'Nutrients cross too', waste: 'Carbon dioxide',
 	});
 	const lens = prog(f, c.later, 34);
 	const FPL = {x: 610, y: 215, w: 460};
@@ -161,21 +167,21 @@ export const SceneExchange: React.FC = () => {
 	return (
 		<>
 			<Heading items={[[0, 'Embryo, then fetus'], [c.later, 'How the placenta feeds the fetus']]} size={72} />
-			<Enter at={c.emb - 10} style={{position: 'absolute', left: 96, top: 250, width: 470}}>
+			<Enter at={8} style={{position: 'absolute', left: 96, top: 250, width: 470}}>
 				<div style={{background: '#fffdf8', borderRadius: 22, padding: '18px 22px', boxShadow: '0 18px 40px rgba(60,45,20,0.10)', border: '1.5px solid rgba(60,45,20,0.08)', height: 150, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 20}}>
 					<svg width={110} height={110} viewBox="-10 -24 110 124"><EmbryoDraw x={0} y={0} /></svg>
 					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 32, color: INK, lineHeight: 1.18}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: TEAL_INK}}>embryo</span><br />organs forming</div>
 				</div>
 			</Enter>
-			<Enter at={c.fetus - 6} style={{position: 'absolute', left: 96, top: 440, width: 470}}>
+			<Enter at={c.later1 - 4} style={{position: 'absolute', left: 96, top: 440, width: 470}}>
 				<div style={{background: '#fffdf8', borderRadius: 22, padding: '18px 22px', boxShadow: '0 18px 40px rgba(60,45,20,0.10)', border: '1.5px solid rgba(60,45,20,0.08)', height: 150, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 20}}>
 					<div style={{width: 110, height: 110, flex: 'none', position: 'relative'}}><RoundPlate a={PL.fetusHead} x={0} y={0} d={110} ring={INK_SOFT} /></div>
 					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 32, color: INK, lineHeight: 1.18}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: AMBER_INK}}>fetus</span><br />grows and matures</div>
 				</div>
 			</Enter>
-			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.fetus - 4, 24)}}>
+			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.later1 - 2, 24)}}>
 				<PArt a={PL.fetus} x={FPL.x} y={FPL.y} w={FPL.w} />
-				<Say at={c.fetus + 14} x={560} y={812} w={600} size={32} color={INK_SOFT}>later in pregnancy (about 5 months)</Say>
+				<Say at={c.later1 + 20} x={560} y={812} w={600} size={32} color={INK_SOFT}>later in pregnancy (about 5 months)</Say>
 			</div>
 			<Overlay>
 				<g opacity={lens}>

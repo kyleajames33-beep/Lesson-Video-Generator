@@ -32,8 +32,8 @@ export const SceneHook: React.FC = () => {
 				<SvgText x={B_X + TW / 2} y={TY + TH + 64} text="with a metal catalyst" size={46} color={METAL_DARK} anchor="middle" at={K1.catalyst} />
 				<Ring cx={B_X + TW / 2} cy={TY + TH - 56} rx={70} ry={54} at={K1.right + 8} color={METAL_DARK} seed={4} out={K1.defn} />
 				<Thermo2 x={(A_X + TW + B_X) / 2} y={440} at={K1.temp} />
-				<Ring cx={A_X + TW / 2} cy={TY + TH / 2} rx={125} ry={300} at={K1.watch} out={K1.watch + 70} color={I2_INK} seed={6} />
-				<Ring cx={B_X + TW / 2} cy={TY + TH / 2} rx={125} ry={300} at={K1.watch + 14} out={K1.watch + 70} color={I2_INK} seed={7} />
+				<Ring cx={A_X + TW / 2} cy={TY + TH / 2 + 16} rx={125} ry={268} at={K1.watch} out={K1.watch + 70} color={I2_INK} seed={6} />
+				<Ring cx={B_X + TW / 2} cy={TY + TH / 2 + 16} rx={125} ry={268} at={K1.watch + 14} out={K1.watch + 70} color={I2_INK} seed={7} />
 				{/* colour strips and the shared pale shade */}
 				<ColourStrip x={1380} y={650} w={400} from={I2_DEEP} to={shadeEnd} t={tA} at={K1.watch} label="no catalyst" />
 				<ColourStrip x={1380} y={730} w={400} from={I2_DEEP} to={shadeEnd} t={tB} at={K1.watch} label="catalyst" />
@@ -74,8 +74,8 @@ export const SceneRidge: React.FC = () => {
 	const g = P1;
 	const xb1 = g.x0 + 0.09 * g.w, xb2 = g.x0 + 0.91 * g.w;
 	// ball: sits in the left valley, falls short, goes over, then (as HI) goes back over the same ridge
-	const s = f < K2.reach ? 0 : f < K2.reach + 52 ? kf(f, [[K2.reach, 0], [K2.reach + 24, 0.6], [K2.reach + 48, 0]]) : f < K2.back ? kf(f, [[K2.reach + 70, 0], [K2.reach + 112, 1], [K2.reach + 134, 2]], false) : kf(f, [[K2.back, 2], [K2.back + 34, 1], [K2.back + 70, 0]]);
-	const goingBack = f >= K2.climb + 20;
+	const s = f < K2.reach ? 0 : f < K2.reach + 36 ? kf(f, [[K2.reach, 0], [K2.reach + 18, 0.6], [K2.reach + 36, 0]]) : f < K2.climb ? kf(f, [[K2.reach + 36, 0], [K2.reach + 56, 1], [K2.reach + 78, 2]], false) : kf(f, [[K2.climb, 2], [K2.back + 20, 1.12]], false);
+	const goingBack = f >= K2.climb;
 	const ballOn = f >= K2.hydrogen;
 	const short = profPoint(g, g.yT, 0.6);
 	// collision strip (molecules bump)
@@ -120,8 +120,8 @@ export const SceneRidge: React.FC = () => {
 				<SvgText x={g.x0 + 0.5 * g.w} y={g.yT - 22} text="top of the ridge" size={42} color={INK} anchor="middle" at={K2.top} />
 				{/* ball */}
 				<Ball g={g} peak={g.yT} s={s} color={goingBack ? AMBER : '#bcd6ee'} opacity={ballOn ? 1 : 0} />
-				<Fade at={K2.reach} out={K2.reach + 66}><SvgText x={short[0] - 34} y={short[1] - 52} text="not enough: falls back" size={40} color={INK_SOFT} anchor="end" at={K2.reach} /></Fade>
-				<Fade at={K2.reach + 80} out={K2.back}><SvgText x={g.x0 + 0.26 * g.w} y={g.yT + 90} text="enough energy" size={44} color={FWD} anchor="end" at={K2.reach + 80} /></Fade>
+				<Fade at={K2.reach} out={K2.reach + 40}><SvgText x={short[0] - 34} y={short[1] - 52} text="not enough: falls back" size={40} color={INK_SOFT} anchor="end" at={K2.reach} /></Fade>
+				<Fade at={K2.reach + 46} out={K2.climb}><SvgText x={g.x0 + 0.26 * g.w} y={g.yT + 90} text="enough energy" size={44} color={FWD} anchor="end" at={K2.reach + 46} /></Fade>
 				<Bracket x={xb2} y1={g.yR} y2={g.yT} color={AMBER_INK} at={K2.climb} side="left" />
 				<SvgText x={xb2 + 18} y={(g.yR + g.yT) / 2 - 10} text="same climb" size={42} color={AMBER_INK} at={K2.climb + 12} />
 				<SvgText x={xb2 + 18} y={(g.yR + g.yT) / 2 + 34} text="to go back" size={42} color={AMBER_INK} at={K2.back} />
@@ -201,9 +201,9 @@ export const SceneRoute: React.FC = () => {
 				{stage('4  the HI molecules leave', K3.leave, K3.unch - 4)}
 				{stage('5  the metal is unchanged', K3.unch)}
 				<Fade at={K3.unch}>
-					<Mark x={1560} y={560} at={K3.unch} size={60} />
-					<SvgText x={1610} y={578} text="same metal" size={56} color={METAL_DARK} at={K3.unch + 8} />
-					<SvgText x={1610} y={628} text="ready for the next molecules" size={38} color={INK_SOFT} at={K3.ready} />
+					<Mark x={1290} y={560} at={K3.unch} size={60} />
+					<SvgText x={1340} y={578} text="same metal" size={56} color={METAL_DARK} at={K3.unch + 8} />
+					<SvgText x={1340} y={628} text="ready for the next molecules" size={38} color={INK_SOFT} at={K3.ready} />
 				</Fade>
 			</Overlay>
 		</>

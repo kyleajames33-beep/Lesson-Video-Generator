@@ -56,3 +56,16 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers. SHOULD FIX 1 and 2 are the visible gaps (two blank spoken definitions) and are scene-source edits. SHOULD FIX 3 needs the science owner to pick one set of week numbers. SHOULD FIX 4 and 6 are scene-source edits; SHOULD FIX 5 touches recorded narration and is the owner's call. The attempt meets the 10 s countdown, shows every condition, and does not draw the answer. Playback-speed motion and human listening remain pending.
+
+## Fixes applied (13 Oct)
+
+Scene source only (`src/explainer/lessons/bio-m5-b03a`). Frame numbers are unchanged in the current measured timeline. Stills re-rendered and viewed at f4350, f4420, f8250, f8380, f8540, f9250, f9330, f11500, f13350 and f14900.
+
+- SHOULD FIX 1 (hormone definition): the organ, blood, organ chain was already drawn from "one organ makes it" (f4464), but f4342 to f4464 was a blank page. The tract plate now stays on screen with a "?" on the lining while "What keeps it thick? A hormone does." is spoken, and from "A hormone is a chemical messenger" three dashed empty slots (organ, blood, organ) show, which the ovary, blood trail and uterus then fill on their cues.
+- SHOULD FIX 2 (embryo and fetus cards late): the embryo card now appears at the start of "Early in pregnancy" (f8360), the fetus card, the fetus plate and its "later in pregnancy (about 5 months)" caption on "Later it is called a fetus".
+- SHOULD FIX 3 (handover week labels): all week numbers removed. The axis bracket now reads "first 2 to 3 months", the side notes read "the main shift" and "placenta the main source". The science owner can still confirm the figure, but screen and narration now agree.
+- SHOULD FIX 4 (no-mixing cross on the oxygen arrow): the grey arrow and cross are replaced by a rose droplet and a purple droplet stopped at the membrane with the cross between them and the "no mixing" label at the membrane line. Oxygen has its own green arrow labelled "crosses the barrier" at the left of the panel, and the oxygen, nutrient and waste dots were re-spaced so none passes through the cross. Applies to the exchange scene and feedback three.
+- SHOULD FIX 5 (spoken "Pause the video..."): accepted per owner decision, nothing changed.
+- SHOULD FIX 6 (key notes): split into nine shorter bullets with the gametes bullets first (sperm, egg), then fertilisation, cleavage and blastocyst, the fertilisation versus implantation line, progesterone, hCG, and the placenta handover and exchange as two bullets. No new facts. The memory aid appears after the bullets. Everything stays above the caption band.
+- NICE 4 (crossed "the blastocyst can't form" chip in feedback one): removed.
+- Not done: NICE 1 to 3, 5 to 8 (not in the requested list).

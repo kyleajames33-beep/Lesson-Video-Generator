@@ -153,6 +153,10 @@ export const SceneGraphs: React.FC = () => {
 				<SvgText x={GX + GW + 36} y={870} text="time" size={42} color={INK_SOFT} at={K7.moment + 4} />
 				{[16, 12.5, 8, 4].map(v => <SvgText key={v} x={GX - 14} y={cy(v) + 11} text={String(v)} size={30} color={INK_SOFT} anchor="end" hand={false} at={K7.moment} />)}
 				{[128, 78, 32].map(v => <SvgText key={v} x={GX - 14} y={ry(v) + 11} text={String(v)} size={30} color={INK_SOFT} anchor="end" hand={false} at={K7.moment} />)}
+				<SvgText x={GX + 24} y={cy(8) - 20} text="NO_2" size={34} color={NO2_INK} at={K7.moment - 10} hand={false} />
+				<SvgText x={GX + 24} y={cy(4) + 44} text="N_2O_4" size={34} color={N2O4_INK} at={K7.moment - 6} hand={false} />
+				<SvgText x={gx(UMAX) + 16} y={ry(78) - 6} text="forward (joining)" size={30} color={FWD} at={K7.step + 10} hand={false} />
+				<SvgText x={gx(UMAX) + 16} y={ry(78) + 30} text="reverse (splitting)" size={30} color={AMBER_INK} at={K7.step + 20} hand={false} />
 				{/* before the squeeze */}
 				<DrawPath d={`M${gx(0)},${cy(8)} L${gx(T_SQ)},${cy(8)}`} at={K7.moment - 20} dur={24} color={NO2C} width={12} />
 				<DrawPath d={`M${gx(0)},${cy(4)} L${gx(T_SQ)},${cy(4)}`} at={K7.moment - 16} dur={24} color={GREY} width={9} />

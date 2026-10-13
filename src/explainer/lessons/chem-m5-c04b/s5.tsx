@@ -81,8 +81,8 @@ export const SceneAttempt: React.FC = () => {
 					<div style={{marginTop: 6, color: TEAL}}>Imagine both are left long enough to settle. Without a catalyst that takes an extremely long time.</div>
 				</div>
 			</Enter>
-			<Q n="1" at={KT.one} top={462}>Which vessel settles first? Which has more ammonia if we stop the clock early, before either vessel has settled? Which has more once both have settled? Explain it using activation energy.</Q>
-			<Q n="2" at={KT.two} top={680}>A third vessel has already settled at equilibrium and we add iron. What happens to the forward rate, the reverse rate and the amount of ammonia, and why?</Q>
+			<Q n="1" at={KT.one} top={480}>Which vessel settles first? Which has more ammonia if we stop the clock early, before either vessel has settled? Which has more once both have settled? Explain it using activation energy.</Q>
+			<Q n="2" at={KT.two} top={700}>A third vessel has already settled at equilibrium and we add iron. What happens to the forward rate, the reverse rate and the amount of ammonia, and why?</Q>
 			<Enter at={KT.pause} style={{position: 'absolute', left: 880, top: 880}}>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58, color: AMBER_INK}}>Pause here to answer.</div>
 			</Enter>
@@ -110,7 +110,7 @@ export const SceneFeedback1: React.FC = () => {
 				<Curve g={GF} fn={t => modelB(t).hi} upTo={clock} color={METAL_DARK} width={11} />
 				<SvgText x={GF.px(9.8)} y={GF.py(14) - 24} text="B (iron)" size={46} color={METAL_DARK} at={KF1.bFirst} />
 				<SvgText x={GF.px(9)} y={GF.py(13.4) + 70} text="A (no catalyst)" size={46} color={INK_SOFT} at={KF1.bFirst + 8} />
-				<VLine g={GF} t={3} at={KF1.stop} label="stop early" color={INK} dy={-14} size={40} out={KF1.settled} />
+				<VLine g={GF} t={3} at={KF1.stop} label="stop early" color={INK} dy={GF.h - 14} dx={12} anchor="start" size={40} out={KF1.settled} />
 				<Fade at={KF1.bMore} out={KF1.settled}><SvgText x={GF.px(3) + 24} y={GF.py(7)} text="B is ahead" size={50} color={METAL_DARK} at={KF1.bMore} /></Fade>
 				<Fade at={KF1.settled}>
 					<rect x={GF.px(13)} y={GF.y} width={GF.px(16) - GF.px(13)} height={GF.h} fill="rgba(13,107,82,0.12)" />
@@ -133,7 +133,6 @@ export const SceneFeedback1: React.FC = () => {
 				<Fade at={KF1.factor}><SvgText x={g.x0 + g.w / 2} y={g.y0 + g.h + 100} text="both rates rise by the same factor" size={48} color={TEAL} anchor="middle" at={KF1.factor} /></Fade>
 				<Fade at={KF1.mix} out={KF1.ends}><SvgText x={450} y={760} text="a catalyst changes the speed, not the destination" size={60} color={INK} anchor="middle" at={KF1.mix} /></Fade>
 				<WrongChip at={KF1.ends} out={KF1.early} x={190} y={780} chip="B ends with more ammonia" fix="" w={640} />
-				<Fade at={KF1.rem1} out={KF1.early}><SvgText x={190} y={900} text="same destination, reached sooner" size={50} color={TEAL} at={KF1.rem1} /></Fade>
 				<WrongChip at={KF1.early} out={9999} x={190} y={780} chip="the same early on" fix="" w={640} />
 				<Fade at={KF1.rem2}><SvgText x={190} y={900} text="B's rates are larger, so B is ahead early" size={50} color={TEAL} at={KF1.rem2} /></Fade>
 			</Overlay>
@@ -243,7 +242,7 @@ export const SceneDecision: React.FC = () => {
 // ---------- 11. Key notes ----------
 const NOTES = [
 	'Activation energy is the minimum energy a collision needs to react. A catalyst gives the reaction an alternative pathway with a lower activation energy, and it is not used up.',
-	'The heat of reaction is the energy difference between reactants and products, and a catalyst does not change it. So the catalyst lowers the activation energy of the forward and reverse reactions by the same amount, and at a steady temperature both rates rise by the same factor.',
+	'A catalyst lowers the activation energy of the forward and reverse reactions by the same amount (the heat of reaction is unchanged), so at a steady temperature both rates rise by the same factor.',
 	'A catalyst makes a mixture settle sooner but does not change the mixture it settles at. Before the uncatalysed mixture has settled, a catalyst can give more product. Once both have settled, the amounts are the same.',
 	'Added to a mixture already at equilibrium, a catalyst raises both rates by the same factor, so they stay equal. There is a moment of the change but no response, and nothing shifts.',
 	'A shift needs the two rates to change by different factors. Adding a reacting substance, heating, or squeezing a gas with different gas counts does that. A catalyst, or squeezing a gas with equal gas counts, does not. The reaction that takes in heat has the higher activation energy, so heating helps it most.',

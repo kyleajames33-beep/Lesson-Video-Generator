@@ -132,7 +132,15 @@ export const SceneMilkTrigger: React.FC = () => {
 				<PArt a={PL.fetus} x={PLT.x} y={PLT.y} w={PLT.w} />
 				<Overlay><ellipse cx={PLT.x + 0.78 * PLT.w} cy={PLT.y + 0.37 * PLH} rx={0.17 * PLT.w} ry={0.22 * PLH} fill={MAGENTA} opacity={0.35 * wash} /></Overlay>
 			</Enter>
-			<Pill at={c.hold - 10} out={c.fall + 20} x={770} y={400} size={44}>held back</Pill>
+			<Pill at={c.hold - 10} out={c.fall + 20} x={820} y={420} size={44}>held back</Pill>
+			<Overlay>
+				<g opacity={prog(f, c.during + 10, 12)}>
+					<circle cx={1566} cy={424} r={9} fill={AMBER} stroke="#fff" strokeWidth={2} />
+					<text x={1586} y={433} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={AMBER_INK}>progesterone</text>
+					<circle cx={1566} cy={462} r={9} fill={MAGENTA} stroke="#fff" strokeWidth={2} />
+					<text x={1586} y={471} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={MAGENTA_INK}>oestrogen</text>
+				</g>
+			</Overlay>
 			<Hand at={c.fall} x={1130} y={700} w={420} size={40} color={AMBER_INK}>levels fall, milk production increases</Hand>
 			<Label2 />
 			<div style={{display: 'none'}}>{[AMBER, FONT_HAND, INK, SLATE_INK, along, Callout, Scribble, Cross, Say, MAGENTA_INK, CREAM_LINE, INK_SOFT, c.prod].length}</div>

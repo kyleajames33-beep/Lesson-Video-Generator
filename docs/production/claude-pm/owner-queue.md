@@ -76,14 +76,20 @@ Send these in order when you are back. Each is one line to paste into Codex. Cla
 
 - Site corrections: 33 confirmed science errors across Module 5 site lessons, verified against sources and the raw HTML: docs/production/claude-pm/site-corrections.md (ranked). Applied 31 of 33 on a LOCAL branch fix/site-science-corrections-2026-10-12 (worktree C:/Users/kygs/hscscience-site-fixes, commit 5fdf278), site checks passed, NOT pushed. Two were extract artefacts, not site errors. Your decisions: read the rewritten sentences (C2, C14, C16, B2, B7 in site-fixes-applied.md), pick 208 or 895 for lesson 13's Keq, then push if happy.
 
-## To watch (browser previews, nothing rendered)
+## To watch (browser previews, nothing rendered; checked in stills, motion and listening are yours)
 
-- C4a, pressure and volume (9:03, practice hold now 10 s): http://127.0.0.1:8778/Explainer-chem-m5-c04a-preview-v2/
-- C4b, catalysts (8:37, practice hold now 10 s, graph label and chip overlap fixed; artwork stand-ins until Codex brief 16): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v2/
-- B3a part 1, fertilisation to keeping a pregnancy (8:31, practice hold now 10 s; thin-lining plate is a stand-in until Codex brief 16): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v2/
-- An independent voiced review of these three is running; Claude applies its fixes before asking you to watch.
+Fixed after the independent voiced review (no blockers in any):
+- C4a, pressure and volume (8:51): http://127.0.0.1:8778/Explainer-chem-m5-c04a-preview-v3/
+- C4b, catalysts (8:37): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v3/
+- B3a part 1, fertilisation to keeping a pregnancy (8:31): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v3/
+- B3a part 2, pregnancy hormones, birth and milk (9:05): http://127.0.0.1:8778/Explainer-bio-m5-b03a2-preview-v2/
+- G01, enthalpy and entropy (9:28, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v2/
+- B2b, flowering plants (9:17, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 
-- G01, enthalpy and entropy (10:02), fixed after the voiced review: http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v2/
-- B2b, flowering plants (9:47), fixed after the voiced review, real paintbrush plate: http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
+Built, voiced review still to come:
+- C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v2/
+- B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v1/
+
+Known and accepted: in the C4a, C4b, B3a and B3a part 2 practice questions the voice says "Pause the video if you'd like more time" while the screen shows "Pause here to answer." with the 10 s countdown (re-recording four practice scenes was not worth the credits; say if you want it). If previews do not load: `node scripts/serve-prototype-review.mjs`.
 
 ## Done without you
