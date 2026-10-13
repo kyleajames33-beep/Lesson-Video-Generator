@@ -1,6 +1,6 @@
 ## 1. Title and main question
 
-Buffers, Mechanism, Calculations & Natural Systems. How does a buffer resist a pH change, and how can its pH and capacity be calculated?
+Buffer Solutions, Henderson-Hasselbalch and Buffer Capacity. How does a buffer resist a pH change, and how can its pH and capacity be calculated?
 
 Source: `C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson13.sa.html`.
 
@@ -47,6 +47,7 @@ Preparing and testing acetate and phosphate buffers; blood H₂CO₃/HCO₃⁻ a
 
 Multiple choice, buffer preparation, ratio and capacity calculations, blood-pH responses and review prompts. Representative question: “A student adds 20.0 mL of 0.300 mol/L NaOH to 50.0 mL of 0.300 mol/L lactic acid (CH₃CH(OH)COOH, Ka = 1.38 × 10⁻⁴). (a) Show that a buffer forms and identify its components. (b) Calculate the pH of the resulting buffer using the Henderson-Hasselbalch equation.”
 
-## 9. Anything the current video script contradicts or omits
+## 9. No current video script
 
 No current video script.
+

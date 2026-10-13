@@ -126,3 +126,61 @@ Claimed runtime 8.3 minutes (1,144 words at 185 wpm = 371 s, attempt 10 s, notes
 ## Verdict
 
 **Pass after blocker.** Fix the attempt stem and the item 2 condition (blocker 1), then apply findings 2 to 11 in the same script lock pass; findings 3 to 6 and 10 change the most. Then repeat this review on the exact voiced preview for scenes 2, 4, 7a, 7b, 8a, 8b, 9, the attempt and the notes. Human listening is still pending.
+
+## Re-review (Revision 2, 13 Oct)
+
+**Verdict: pass after listed fixes.** The blocker and all ten should-fix items are resolved or substantially resolved, and the revision adds no new blocker. Seven small should-fix items remain, mostly wording that would make a student ask "which number?" or "is that the same 46?". None needs a structural change or a longer attempt hold.
+
+Inspected: source only (the revised design, narration, visual plan, attempt, feedback, notes). No stills, voiced preview or audio; motion not judged. Narration total re-summed: 1,093 words (sums correctly); hook 94 and scene 9 69 spot-counted and match. Key notes counted at about 200 words (bullets about 114, table about 51, compare and memory lines about 34), so "about 190" holds. U+2014 searched in the design and in this file: none. Science figures not checked (separate check). Human listening pending.
+
+### First-review items
+
+| # | Item | Status | Evidence |
+| --- | --- | --- | --- |
+| B1 | Attempt stem gives away item 1; item 2 claim false in a second way | **Resolved** | Stem is "Cell Q has 8 chromosomes in its main DNA" (no "nucleus"); (b) reads "Besides those 8 chromosomes"; claim says "A human body cell that is not dividing"; 13b adds the 92 clause. The evidence for (a) now has to come from the drawing. |
+| 1 | Packaging cell says "no histones" under Prokaryote | **Resolved** | Table and scene 10 row 4 read "In bacteria: coiled and held by proteins, not on histones"; scene 2 adds "Bacteria are the prokaryotes we will use as our example." Archaea stay out of learner copy. |
+| 2 | Scene 7 too dense | **Resolved** | 7a (67 words, why and how) and 7b (16 words, the two names). 7a still has about five visual events; acceptable. |
+| 3 | Tag mechanism missing in scene 8 | **Resolved** | 8a: "Some tags weaken a histone's positive charge, so it grips the DNA less tightly", with the "+" fading as the thread loosens. Charge now runs through 7a, 8a and the notes. |
+| 4 | Scene 8 had two jobs | **Resolved** | 8a (reading genes, 58 words) and 8b (tight for division, 34 words; 10,000 figure screen only). |
+| 5 | Scene 9 heavy | **Resolved** (one wording issue, N1) | 69 words, one idea per beat, 16,000 figure dropped from speech, "extra to the 46" lands. |
+| 6 | "Coils in loops" is two pictures | **Resolved** | "Proteins grip the coiled ring at many points to hold it compact"; no separate loops drawn. |
+| 7 | Three scale ratios, never compared | **Partly resolved** | A comparison line was added, but it is screen-only text carrying a fourth number (330,000) that was never spoken. See N2. |
+| 8 | Same comparison said five times | **Resolved** | Scene 11 cut to 55 words with no table rows; scene 14 cut to 44 words (three questions plus handoff). Scenes 10 and 10b kept, which is right. |
+| 9 | Attempt: seven answers, one crowded screen | **Mostly resolved** | Two sequential scenes, each ending "Pause here to answer." with its own 10 s countdown; conditions stay on screen; plasmid naming moved to feedback; item 1 asks for evidence. Still about seven answer parts (N6), but one reasoning stage per screen. |
+| 10 | Key notes too long, no charge cause | **Resolved** | About 200 words; charge cause in bullet 3; plasmid-as-tool link in bullet 2; table kept. Bullet 2 says "small, separate" twice (cosmetic). |
+
+Nice-to-haves taken and confirmed: B4 callback opens the hook; thread tag "one thread = the whole double helix"; dim rule for scenes 3 to 9; nucleoid and eukaryote word pair in scene 11; first 13a chip dropped; resistance-spread clause removed from scene 5.
+
+### Trace of the revised lesson (student who has watched B2c, B4, B5a, B5b)
+
+The hook now answers B4's "billions of letters in a nucleus" tease. Scenes 2 to 6 define each term after its cause on a fixed split board, with the inactive half dimmed so only one side is explained at a time. Scene 7a gives the why (tangle), the how (spool) and the grip (opposite charges) before 7b names the units; scene 8a uses that charge for the tag mechanism, so the winding story is one chain. Scene 9 gives a clear reason for rings. Scenes 10 and 10b give the table and the exam sentence once each, scene 11 gives two aids without repeating rows, and the attempt is two short unseen items with a countdown after "Pause here to answer." (owner rule respected; no longer hold requested). Cells and DNA are shown (painted plates plus coded plum DNA), not text boxes. There is no re-teaching: each recall is one clause. A student can follow this end to end.
+
+### New or remaining items (all should-fix, none blocking)
+
+| # | Scene and exact words | Likely student question | Repair | Severity |
+| --- | --- | --- | --- | --- |
+| N1 | 9: "This ring is extra to the 46 chromosomes in the nucleus", spoken straight after the plant cell and chloroplasts beat | "Do plants have 46?" The 46 is the human count, but the previous beat is a plant cell. | Say "In our cells, this ring is extra to the 46 chromosomes in the nucleus" (+3 words), or return the animal cell on screen before this sentence (the plan does in beat 4; make the narration match). | should fix |
+| N2 | 4: screen line "ring about 800 times the cell's length; human DNA about 330,000 times the nucleus's width" | Four different "times" figures now appear on screen (11,000 in the hook, 800, 330,000, 10,000 in 8b). 330,000 appears from nowhere, and a long line competes with the narration about enzymes and rubber bands. | Keep only "about 800 times the cell's length" in scene 4. Make the human comparison in scene 6, where the narration says "that is why the packing matters so much here" (screen: "2 m in a nucleus 6 micrometres across"). The scene 6 bar "6 billion vs 4.6 million" is a competing screen-only comparison during the payoff sentence and can go. | should fix |
+| N3 | 4: narration "about one and a half millimetres" against screen "ring about 1.6 mm" | Which is it? | Use one value in both. Science check sets the figure. | should fix |
+| N4 | 13b: "forty-six is only the count of chromosomes in the nucleus ... After copying it would be ninety-two, but that is nuclear DNA again." | B5a taught that after copying there are still 46 chromosomes, each with two sister chromatids, so "ninety-two" read as a chromosome count contradicts it. The sentence also mixes "chromosomes" and "DNA molecules". | "After copying there would be ninety-two DNA molecules, two in each of the 46 chromosomes, but that is nuclear DNA again." Use "DNA molecules" consistently in 13b. | should fix |
+| N5 | 8a: "a gene can only be read when the cell can reach it" | "What does reading a gene mean?" Used in 8a and implied in the hook ("still use it") with no gloss; the explanation is the next video. | Add 5 to 8 words: "so the cell can use its instructions (the next video shows how)". Keep the handoff in 14. | should fix |
+| N6 | 12a: demand (a) bundles three asks (which cell, evidence, name the region); item 1 has five answer parts in two boxes. 12b (c): "Correct the first part" | The 10 s countdown is a cue, so time is not the problem; the risk is losing a part. The first sentence of the claim contains a true statement ("Bacteria have no nucleus"). | Number the boxes (a1, a2, a3) or move "name the region" to (b) or feedback. Reword (c) as "Correct the idea that their DNA floats loose." Keep every demand visible as now. | should fix |
+| N7 | 2: "the helix then splits into two copies that slide to the left and right cells" | A student fresh from B4 reads a splitting helix as DNA replication. | Show the same helix moving into each cell, not splitting, or tag it "the same DNA in both". | should fix |
+
+Nits for the build, no review change needed: the green tick in 13a conflicts with the design's own "blue and green are not used" rule (use amber or ink); "pairs of bases" in scene 6 versus "letters" in the hook (one tying clause: "the letters you met in the copying video"); the notes lead-in could also show the heading "Key notes: what to write in your book"; the painted plates (bacterium, animal and plant cells, mitochondrion, chloroplast) do not exist yet, so the attempt drawings P and Q and scene 9 depend on the asset brief or a coded fallback.
+
+### Checks
+
+| Question | Result |
+| --- | --- |
+| Density and one stage at a time | Good after the splits and dim rule. Watch scenes 4 and 6 screen text (N2). |
+| Cells and DNA shown, not text boxes | Yes by plan; stills not inspected. |
+| Each attempt item fits "Pause here to answer." plus its own 10 s countdown | Yes (12a and 12b, 20 s total, demands on screen throughout). |
+| Key notes about 190 words | About 200; fine. |
+| Re-teaching | None. |
+| Em dashes U+2014 | None in design or review. |
+| Runtime | About 8.2 minutes, inside the target. |
+
+### Verdict
+
+**Pass after listed fixes.** Apply N1 to N5 and N7 in the script lock (about +15 words net, no scene changes), and N6 as the author prefers. Then repeat this review on the exact voiced preview for scenes 4, 6, 8a, 9, 12a, 12b and 13b. Human listening remains pending; this review is not learner evidence.

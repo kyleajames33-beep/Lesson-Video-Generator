@@ -1,6 +1,6 @@
 ## 1. Title and main question
 
-Titration, Standard Solutions, Technique & Calculations. How is an unknown acid or base concentration measured accurately by titration?
+Titration Calculations, Standard Solutions, Concordant Titres & Errors. How is an unknown acid or base concentration measured accurately by titration?
 
 Source: `C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson14.sa.html`.
 
@@ -47,6 +47,7 @@ Na₂CO₃ and oxalic acid dihydrate primary standards; burette, pipette, conica
 
 Practical technique, calculation and error-analysis questions, multiple choice and a ten-mark procedure response. Representative question: “A vitamin C tablet is dissolved in water and made up to 100.0 mL. A 25.00 mL aliquot is titrated against 0.1000 mol/L NaOH. Average titre = 23.45 mL. The tablet label states 1000 mg ascorbic acid (M = 176.1 g/mol, monoprotic). (a) Calculate the mass of ascorbic acid in the 100.0 mL solution.”
 
-## 9. Anything the current video script contradicts or omits
+## 9. No current video script
 
 No current video script.
+

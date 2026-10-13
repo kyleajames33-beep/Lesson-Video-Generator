@@ -1,6 +1,6 @@
 ## 1. Title and main question
 
-Ka, pKa & Comparing Acid Strengths. How do Ka and pKa compare acid strength, conjugate bases and successive ionisations?
+Ka, pKa and Acid Strength Rankings. How do Ka and pKa compare acid strength, conjugate bases and successive ionisations?
 
 Source: `C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson12.sa.html`.
 
@@ -45,6 +45,7 @@ Tooth enamel hydroxyapatite, cola, sparkling water, vinegar, fruit juice, wine t
 
 Multiple choice, acid ranking, conjugate-base calculations, polyprotic equations, environmental data analysis and error spotting. Representative question: “Phosphoric acid (H₃PO₄) is a triprotic acid. Ka1 = 7.5 × 10⁻³; Ka2 = 6.2 × 10⁻⁸; Ka3 = 4.8 × 10⁻¹³. (a) Write the three ionisation equations with correct arrow notation. (b) Calculate the pH of a 0.0800 mol/L H₃PO₄ solution, showing all steps including an assumption check.”
 
-## 9. Anything the current video script contradicts or omits
+## 9. No current video script
 
 No current video script.
+

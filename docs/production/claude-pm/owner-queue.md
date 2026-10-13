@@ -13,6 +13,9 @@ Paste one at a time, in any order (they do not depend on each other). Each is on
 4. Three YouTube thumbnail styles on two videos, for you to choose from (nothing uploaded):
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/24-youtube-thumbnail-concepts.md.`
 
+5. Independent fact check and artwork for the next two designs, C9 (temperature and K) and B6a (DNA forms in bacteria and in our cells):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/25-c9-b6a-check-and-assets.md.`
+
 Already done by Codex: briefs 11, 13 to 20.
 
 ## Update 13 Oct (evening)

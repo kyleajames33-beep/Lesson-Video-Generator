@@ -1,6 +1,6 @@
 ## 1. Title and main question
 
-Indicators, Mechanism & Selecting the Right One. Why do indicators change colour, and which indicator suits each titration?
+Indicators, Equivalence Point pH & Titration Curve Shapes. Why do indicators change colour, and which indicator suits each titration?
 
 Source: `C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson15.sa.html`.
 
@@ -44,6 +44,7 @@ Methyl orange (3.1–4.4), bromothymol blue (6.0–7.6), phenolphthalein (8.3–
 
 Multiple choice, indicator choice, hydrolysis equations, equivalence-point calculation and error-direction explanation. Representative question: “Explain why phenolphthalein is suitable for a titration of ethanoic acid (CH₃COOH) with sodium hydroxide (NaOH), but not for a titration of hydrochloric acid (HCl) with ammonia (NH₃). Your response must include the equivalence point pH for each titration and the reasoning behind the EP pH direction.”
 
-## 9. Anything the current video script contradicts or omits
+## 9. No current video script
 
 No current video script.
+

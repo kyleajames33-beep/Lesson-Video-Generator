@@ -130,3 +130,76 @@ Aid (large): *Change T, change K. Change anything else, K stays.* Second line: *
 - Does scene 7 use 0.0884 and 0.0232, show the Q working line and "Q: no unit written", and split into 7a and 7b?
 - Is the table-reading direction narrated in scene 11 before it appears in the notes?
 - Recount the narration after edits and recheck for U+2014.
+
+## Re-review (Revision 2, 13 Oct)
+
+Reviewer: fresh independent student-learning reviewer (did not write the design or the first review). Inspected: the Revision 2 text of `../lessons/chem-m5-c09.md` only (script, visual plans, numbers, aid check, attempt, key notes, change list). No stills, audio or voiced preview. Read as a student starting Year 12 who has watched C3, C5, C6 and C8 (and, by playlist order, c07, g02 and g03). K values not checked (separate science check). U+2014 search of the design and of this file: none. Narration word sum re-added by hand: 1196, matches the design. AI beginner-perspective review, not learner evidence; human listening pending.
+
+### First-review items
+
+| # | First-review item | Status | Evidence |
+| --- | --- | --- | --- |
+| 1 | Made-up rates used as evidence (4a, 4b) | Resolved | 4a now leads with measured K ("textbook values"), the pale and deep brown tubes and the percent grids. 4b asks what the numbers must have done, says "made-up" aloud and shows "made-up scale". The 1/164 and 200/408 fractions are gone; only "x 200", "x 2.5" and "200 / 2.5 = 80" remain. Wording point in new item 5. |
+| 2 | Splitting/joining clash with C8 | Resolved in C9, one risk | "Forward number" and "reverse number" are used in scenes 2, 3, 4b, 5a, 10a and the notes; splitting and joining are descriptions only; the relabelling beat is deleted. Risk: C5 appears to call them "fixed numbers", and I could not confirm the voiced words "forward number" in C5 or C8 (new item 9). |
+| 3 | Scene 2 re-derives K | Resolved | Scene 2 is a one-clause recall (60 words, from about 116), no "rearrange" beat, "in this model" kept. |
+| 4 | Four-way contrast told twice | Partly | Scene 3 is now cause only for the temperature effect, but it still names adding, squeezing and a catalyst, and scene 6 still narrates all four in full (81 words) with the same "both numbers rise by the same factor" clause. The table is the right place, so scene 6 could narrate a lead-in plus its last three sentences. A repeat, not a learning blocker. |
+| 5 | Scene 5 too many stages | Partly | Split into 5a and 5b and "top and bottom" is gone, but 5a is still 100 words with five moves (reverse equation, heat given out, flip, two values, K falls, then the reason). See new item 4. |
+| 6 | Aid blurs shift and K | Resolved | Scene 8 puts the invariant first, uses heat-as-chemical for direction only, and says "Unlike a real reactant, heat changes the numbers themselves, which is why K moves." Aid-check limit (g) added. "Heating pushes the mixture right and K goes up" keeps the old sentence shape, but the next sentence undoes the conflation. Acceptable. |
+| 7 | Attempt asks two items in 10 s | Resolved | One demand (above, equal or below 49, short reason), every condition on the card, ends "Pause here to answer.", 10 s countdown, heat sign only in the givens card. Fits the owner rule. See new item 3 for the feedback gap. |
+| 8 | Q does not reproduce; scene 7 stacked | Resolved for 7a, new problem in 7b | 0.0232 squared over 0.0884 is 0.00609, rounds to 0.0061, with the "Q: no unit written" tag, and the scene is split. But 7b's hot amounts 0.035 and 0.13 give 0.0169 / 0.035 = 0.483 on a calculator (new item 2). |
+| 9 | Key note 5 teaches an unnarrated direction | Resolved, one clause open | Scene 11 now narrates "if a table shows K rising as the temperature rises, the forward reaction takes in heat". The note's last sentence ("the bigger the heat of reaction, the bigger the change in K") is narrated only by one clause in 10a ("only slightly, because the heat involved is small"). See new item 8. |
+| NTH 1 to 9 | Hook tension, one log line, no rate bars in 4a, content names, "what a bigger K looks like", ICE tag, heat on the givens card, fewer numerals | Resolved | All visible in the revised scenes. NTH 6 raises new item 7. |
+
+### New findings introduced by Revision 2
+
+No blockers. Nine should-fix items, all script-lock edits.
+
+| # | Scene | Exact words | Likely student question | Concrete repair | What it enables |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 7b | "Forward over reverse is K over Q, so about eighty times quicker, in this model." | The lesson has just taught "K is the forward number over the reverse number". "Forward over reverse" now means a different ratio (forward rate over reverse rate, equal to K over Q). The same words name two things in the next breath. | Say "forward rate over reverse rate is K over Q" and label the bars "forward rate" and "reverse rate" on screen. Add half a sentence: "These are the rates right now, not the fixed numbers." | One meaning per phrase, so Q below K reads as a speed difference and not a restated K. |
+| 2 | 7b | Visual readouts "0.035 and 0.13 mol/L" with K 0.49 and the tag "you can check them" | 0.13 squared over 0.035 is 0.483 on a calculator, not 0.49. This is the checkability fault the first review fixed in 7a. | Show 0.0348 and 0.1305 (0.1305 squared over 0.0348 is 0.489, rounds to 0.49). | Numbers the tag invites a student to check do check. |
+| 3 | 10a, 10b | 10a names only "K rises because everything is faster". 10b's chip "K changed because it shifted" answers a question nobody was asked. | After a lesson that says "change anything else, K stays", the most likely wrong answer to "above, equal or below 49" is **equal to 49**. The feedback never meets it, and the 10b wrong answer is not an answer to the attempt as now written. | In 10a add a chip and one clause: "If you said equal, remember K stays fixed only while the temperature stays fixed." Keep the "K rises" chip. Introduce 10b as an extra check of the aid's first line ("Now the first line of the aid") rather than "the other half of the rule", and keep its chip. | Feedback matches the real wrong answers to the real question, and 10b reads as an extra example, not a missed demand. |
+| 4 | 5a, 5b | 5a: "...So here K falls when you heat it. The reason is the same: heating speeds up the reaction that takes in heat more, and that is now the reverse reaction, so the reverse number grows more than the forward number." | 100 words: flip, two numerals, a sign change and a causal reason before the rule is stated. The reason arrives while the learner is still checking 160 and 2.0. | 5a ends at "So here K falls when you heat it." 5b opens with the reason (about 30 words, dials visual already planned) and then gives the two-case rule. Word count unchanged, one stage each. | One stage per scene as the revision claims, with the reason attached to the rule it supports. |
+| 5 | 4b, 4a | 4b: "the forward number must have grown about eighty times more than the reverse number". 4a: "K is about eighty times bigger." | "Eighty times more" reads as a difference or as 81 times. The meaning is a ratio of growth factors. The made-up pair shows it, but the sentence before is ambiguous. | "...must have grown about eighty times as much as the reverse number, in proportion." Use "eighty times as big" in 4a. | The ratio idea is stated before the example, not inferred from it. |
+| 6 | 11 | "Takes in, heating raises K and cooling lowers it. Gives out, heating lowers K and cooling raises it." | The third spoken statement of the rule (5b, 8, 11), plus note 3 and the aid. Scene 11 should tell the student what to do with a question, not recap again. | Keep the question card, the converse (table to sign), the "everything else, K stays" line and the handoff; replace the two rule sentences with "Use the rule you just saw." About 30 words fewer, no cause lost. | A decision scene instead of a third recap, and the new converse sentence stands out. |
+| 7 | 4a | "...Start with 0.10 moles per litre of N two O four. At twenty-five degrees it settles with only about twelve percent split... At a hundred degrees about sixty-five percent... K is about eighty times bigger." (82 words, 7 numerals). Tag: "you can check them with the ICE table method." | Two stages (the K values, then the tube) with seven spoken numerals. The tag relies on g03, but the design's entry-knowledge list stops at C1 to C8, so a learner without g03 meets "ICE table" cold. | Reveal in two beats matched to narration (K values with the log line; then 0.10 and the tubes). Use the existing reserve cut: delete "K is about eighty times bigger" (the bracket shows it and 4b says it). Add g03 to entry knowledge, or reword the tag "solved off screen, not needed here". | Lower listening load for the heaviest evidence scene, and no unexplained method named. |
+| 8 | 10a, 10b | 10b: "the hydrogen underneath gets bigger, so Q falls below K". 10a: "the heat involved is small". Note 5: "the bigger the heat of reaction, the bigger the change in K". | "Underneath" is the top-and-bottom wording the first review removed from scene 5, and the size claim in the notes is half narrated. | 10b: "more hydrogen in the reactants makes Q smaller, so Q falls below K". 10a: add "the N two O four reaction takes in much more heat, and K changed eighty times". | Plain wording, and the size sentence in the notes is taught before it is copied. |
+| 9 | 2 | "Remember the rate model from the expressions video... equals the forward number divided by the reverse number." | The design says the names are "as in C5 and C8", but the C5 design uses "fixed numbers" and I found "forward number" only in a C8 author note. If the voiced C5 and C8 never said it, it is a new term used without introduction. | At first use say "the two fixed numbers: call them the forward number and the reverse number". Confirm against the voiced C5 and C8 words before recording. | The vocabulary is introduced, not assumed. |
+
+### Nice to have
+
+1. Scene 1 "K is the ratio of the settled amounts" is loose for N2O4 (a squared term). "K is built from the settled amounts" avoids a later quibble.
+2. The "eighty" in 4a (K ratio) and in 7b (rate ratio) are equal only because the cold settled Q equals the old K. A half sentence in 7b ("the same eighty, since Q was the old K") stops it looking like a coincidence.
+3. Scene 12 heading should read "Key notes: what to write in your book" as in AGENTS. Note 5 holds table reading, the flip and size (three ideas); consider giving the flip its own line.
+4. Scene 8 is 91 words; it can lose "to hold it in your head" and one "K goes up" without loss.
+
+### Learner trace (revised lesson)
+
+1. Scene 1: the tube from C3, K fixed through additions, now a real tension. Passes.
+2. Scene 2: short recall. Works if "forward number" is introduced (item 9).
+3. Scene 3: cause of the temperature effect with a moving dial. Passes; some repeat of scene 6.
+4. Scenes 4a, 4b: evidence first, example second, logic now honest. Items 5 and 7 are wording and load.
+5. Scenes 5a, 5b: one idea, both signs. Item 4 (move the reason).
+6. Scene 6: table separates what you do, what moves, K. Passes.
+7. Scenes 7a, 7b: 7a clean and checkable. 7b has the double meaning of "forward over reverse" and a figure that does not check (items 1, 2).
+8. Scene 8: aid with its limit said aloud. Passes.
+9. Scene 9: one demand, every given visible, 10 s countdown after "Pause here to answer." Passes. Placing the heat sign, applying the rule and saying "below" with a short reason fits ten seconds.
+10. Scenes 10a, 10b: cause explained, wrong answers only partly matched (items 3, 8).
+11. Scenes 11, 12: converse now narrated; third recap of the rule (item 6). Key notes short and copyable.
+
+### Checks
+
+| Question | Result |
+| --- | --- |
+| One main question | Yes. |
+| One stage at a time | Mostly. 5a, 4a and 7b still carry two stages each (items 4, 7, 1). |
+| Visual medium | Yes in plan: dials, log line with a moving K marker, tubes with percent grids, table, Q climbing. 4a is the busiest board. |
+| Attempt fits "Pause here to answer." plus 10 s | Yes. One demand, owner rule respected, no longer hold asked. |
+| Key notes | Yes. Five items plus the aid, optional hold; notes now match what was narrated apart from the size clause (item 8). |
+| No re-teaching | Better. Scene 2 is a recall. The rule is spoken three times (item 6). |
+| Em dashes (U+2014) | None. |
+| Length | 1196 words, about 8.5 minutes, inside the 8 to 9.5 target. Items 6 and 7 save about 40 words; items 3, 4 and 8 add about 40. Net unchanged. |
+
+### Verdict
+
+**Pass after listed fixes.** No blocker remains. Of the nine first-review items, seven are resolved and two (4 and 5) are partly resolved; the revision improved the logic (evidence first, one vocabulary, a single-demand attempt). Apply new items 1 to 9 in the script lock (priority 1, 2, 3, 9, then 4, 5, 6, 7, 8), plus the scene 6 trim from partly resolved item 4. Then re-review the voiced preview for scenes 2, 4a, 4b, 5a, 5b, 7b, 10a, 10b and 11. Human listening pending.
