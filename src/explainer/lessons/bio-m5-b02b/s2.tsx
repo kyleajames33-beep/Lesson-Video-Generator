@@ -4,7 +4,7 @@ import {rng} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, ANTHERS, along, Arrow, ART, Art, artH, BeeIcon, BLUE, Droplet, DrawPath, Enter, EGG_BOX, Fade, FEMALE, FL, fp, fullKey, GOLD, Heading, INK, INK_SOFT, Label,
-	mapper, MALE, NameKey, Note, Overlay, pathOf, POLLEN, prog, S, Scribble, SeqStrip, SpermDot, Specks, TEAL, TUBE_BOX, WATER_LINE,
+	mapper, MALE, NameKey, Note, Overlay, pathOf, POLLEN, prog, S, Scribble, SeqStrip, SpermDot, Specks, TEAL, TUBE_BOX, WATER_LINE, has, SvgArt, SvgArtC,
 } from './shared';
 
 // ---------- 3. Pollination ----------
@@ -48,7 +48,7 @@ export const ScenePollination: React.FC = () => {
 					<Label x={FS.x + FS.w / 2} y={FS.y + artH(ART.flower, FS.w) + 50} at={c.moves + 20} text="anther to stigma" size={44} color={AMBER_INK} />
 					<Scribble cx={bm(690, 430)[0]} cy={bm(690, 430)[1]} rx={44} ry={56} at={c.sticks} color={AMBER} seed={4} width={6} />
 					<Fade at={c.bee + 30}><Label x={BEE.x + 250} y={BEE.y + artH(ART.bee, BEE.w) + 50} at={c.bee + 30} text="carries pollen" size={50} color={AMBER_INK} /></Fade>
-					{flightP > 0 && flightP < 1 ? <BeeIcon x={beePos[0]} y={beePos[1]} s={0.95} rot={flightP * 14} /> : null}
+					{flightP > 0 && flightP < 1 ? (has(ART.beeFly) ? <SvgArtC a={ART.beeFly} cx={beePos[0]} cy={beePos[1]} d={130} rot={-6 + flightP * 14} /> : <BeeIcon x={beePos[0]} y={beePos[1]} s={0.95} rot={flightP * 14} />) : null}
 					<Specks pts={[0, 1, 2].map(drop)} o={prog(f, c.rubs + 40, 4)} r={6} />
 					{/* wind */}
 					{[0, 1, 2].map(i => <DrawPath key={i} d={`M1190,${300 + i * 110} q36,-26 72,0 t72,0 t72,0`} at={c.wind + i * 8} dur={26} color={WATER_LINE} width={6} />)}
@@ -59,8 +59,12 @@ export const ScenePollination: React.FC = () => {
 					<Fade at={c.wind + 30}><Label x={1400} y={GR.y + artH(ART.grass, GR.w) + 50} at={c.wind + 30} text="carries pollen" size={50} color={AMBER_INK} /></Fade>
 					{/* water */}
 					<g opacity={prog(f, c.water, 14)}>
-						{[0, 1, 2].map(i => <path key={i} d={`M1620,${470 + i * 44} q28,-22 56,0 t56,0 t56,0`} fill="none" stroke={WATER_LINE} strokeWidth={7} strokeLinecap="round" />)}
-						{[0, 1, 2, 3].map(i => <circle key={i} cx={1650 + i * 50} cy={452 + Math.sin(f / 9 + i * 1.7) * 6} r={7} fill={POLLEN} stroke={AMBER_INK} strokeWidth={1.4} />)}
+						{has(ART.waterPollen) ? <g transform={`translate(0,${Math.sin(f / 14) * 4})`}><SvgArt a={ART.waterPollen} x={1590} y={455} w={280} /></g> : (
+							<>
+								{[0, 1, 2].map(i => <path key={i} d={`M1620,${470 + i * 44} q28,-22 56,0 t56,0 t56,0`} fill="none" stroke={WATER_LINE} strokeWidth={7} strokeLinecap="round" />)}
+								{[0, 1, 2, 3].map(i => <circle key={i} cx={1650 + i * 50} cy={452 + Math.sin(f / 9 + i * 1.7) * 6} r={7} fill={POLLEN} stroke={AMBER_INK} strokeWidth={1.4} />)}
+							</>
+						)}
 						<text x={1730} y={660} textAnchor="middle" style={{fontFamily: "'Caveat', cursive", fontWeight: 700, fontSize: 50}} fill={AMBER_INK}>carries pollen</text>
 					</g>
 				</Overlay>
@@ -118,7 +122,7 @@ export const ScenePollenTube: React.FC = () => {
 	const tip = along(tp, tubeP);
 	const GP = {x: 1530, y: 160, w: 300};
 	const gm = mapper(ART.grain, GP.x, GP.y, GP.w);
-	const grain = gm(349, 150);
+	const grain = gm(326, 163);
 	const OV = {x: 1545, y: 400, w: 280};
 	const om = mapper(ART.ovule, OV.x, OV.y, OV.w);
 	const panelOut = 1 - prog(f, c.reaches + 6, 14);
@@ -167,7 +171,7 @@ export const ScenePollenTube: React.FC = () => {
 						return <g key={i} opacity={prog(f, c.water + i * 10, 6) * (1 - t)} transform={`translate(${grain[0] - 130 + 130 * t + i * 8},${grain[1] - 70 + 70 * t - i * 26}) scale(0.5)`}><DropIcon /></g>;
 					})}
 					<g opacity={prog(f, c.form, 12)}>
-						{split < 0.05 ? <circle cx={grain[0]} cy={grain[1]} r={26} fill="#fff6d6" stroke={AMBER_INK} strokeWidth={3} /> : null}
+						{split < 0.05 ? <circle cx={grain[0]} cy={grain[1]} r={34} fill="#fff6d6" stroke={AMBER_INK} strokeWidth={3} /> : null}
 						{split >= 0.05 ? [-1, 1].map(i => <SpermDot key={i} x={grain[0] + i * 34 * split} y={grain[1]} s={1.5} rot={i < 0 ? 180 : 0} />) : null}
 					</g>
 					<Fade at={c.form + 30}><Label x={GP.x + GP.w / 2} y={GP.y + artH(ART.grain, GP.w) + 40} at={c.form + 30} text="two sperm cells form" size={42} color={BLUE} /></Fade>

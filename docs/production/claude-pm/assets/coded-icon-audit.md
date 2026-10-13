@@ -187,3 +187,25 @@ Fine in B4: ladders, tiles, `Helicase`, `Polymerase`, `RepairIcon`, `HalfIcon`, 
 | B3a2 | 3 | 1 | 4 |
 | B3b | 7 | 3 | 4 |
 | B4 | 3 | 0 | 6 |
+
+## Wired (14 Oct)
+
+### G01 (chem-m5-g01)
+Replaced with painted plates (files added to `assets.ts` ASSETS; helper `SvgPaint` and `G1` boxes in `common.tsx`):
+- Hook tree: `g1-tree-v1.png` (alpha box placed at x 1212, y 250, 416 px wide). Coded CO2, H2O and "sugar and wood" arrows and labels kept and re-aimed at the painted canopy and roots (CO2 into the left of the crown, H2O up into the roots, sugar and wood out of the top right).
+- Leaf in the open-system scene: `g1-leaf-v1.png`, 530 px wide. When the light is cut it desaturates and dims (the old coded leaf did not change).
+- Sugar bowl in "heading, not speed": `g1-sugar-bowl-v1.png` (468 px wide, replaces the coded bowl at scale 2).
+- Fire icon (rows, 80 to 90 px): `g1-flame-v1.png`. Leaf icon (rows): `g1-leaf-v1.png` (the leaf reads better than the tree at this size).
+Left coded: sun, clock, calendar, compass, particle blocks, rate bars.
+
+### B2b (bio-m5-b02b)
+All new plates are in `PAINTED`/`HAVE` in `assets.ts`; remove one from HAVE and the coded icon returns. `ART` boxes in `shared.tsx` use [x, y, w, h] from PIL (alpha > 20); `SvgArt`/`SvgArtC`/`has` added.
+- Step cards land, tube, join, seed: `b2b-step-*` in `SeqIcon`, so every use is painted (strip pills, sentence cards 64 px, attempt and feedback chips 40 px, memory cards).
+- Fertilisation: zygote 1, 2, 4, 8 aligned set crossfaded as the cells double; embryo plate replaces the stick sprout and grows in.
+- Vegetative: parent plant with the red cut line, piece then rooting (aligned, crossfade shows roots appearing), new plant; clone pair uses the new-plant plate at 50 px; "no carrier needed" now uses bee-on-flower and grass-flower-wind plates (previously unwired) with the cross over them.
+- Pollination: flying bee plate replaces `BeeIcon` on the flight to the stigma; `b2b-water-pollen` replaces the wave lines.
+- Dispersal: `b2b-disp-wind`, `-water`, `-animal` replace the three coded icons (labels below moved down about 15 to 35 px).
+- Seeds better: fence, bare patch to sprout (aligned pair) and a parachute seed arcing over the fence replace the coded strip; sprout appears on landing.
+- Male side: painted pollen grain (top of `b2b-pollen-grain-closeup`, clipped to the grain) replaces the dotted circle. Memory scene glyphs: pollen grain, join and zygote-1 plates.
+- Fixed two stale ART entries that did not match the delivered files: `grain` (nat 1628 x 1600, box 544, 373, 558, 844; nucleus anchor moved) and `bagged` (nat 1652 x 1600, box 397, 263, 877, 1035).
+Left coded: `SpermDot`, `EggDot`, pollen specks, droplet, germination glyphs, paintbrush stand-in (plate not delivered), wind lines in pollination, pollen tube path. Unused plates: `b2b-seed-burr`, `b2b-seed-fruit`. Small land and tube step icons look alike at 40 px (labels carry the difference).

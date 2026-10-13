@@ -21,8 +21,7 @@
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/30-g02-g03-check-and-assets.md.`
    Then read the two scripts yourself before any voicing: docs/production/claude-pm/lessons/chem-m5-g02.md and chem-m5-g03.md (about 10 and 10.5 minutes).
 
-1. Painted icons for the unpublished lessons (B2b and the G01 tree first):
-   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/27-painted-icon-pack.md.`
+1. (Done by Codex 14 Oct: brief 27, all 69 painted icons; brief 26, dotpoints on all seven videos plus the C6, C7, C8 plates. Claude is wiring them in: G01 and B2b first.)
 2. (Thumbnails on hold: owner scrapped the AI-made concepts on 14 Oct; Claude is designing new ones. Do not send brief 29.)
 3. C4a and B4 renders are finished: upload both, then refresh the coverage ledger:
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/28-youtube-upload-c4a-b4-and-ledger.md.`
@@ -114,6 +113,7 @@ Fixed after the independent voiced review (no blockers in any):
 - B2b, flowering plants (9:17, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 
 Built, voiced review still to come:
+- C7, industrial equilibrium (Haber): http://127.0.0.1:8778/Explainer-chem-m5-c07-preview-v1/
 - C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v3/
 - B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v2/
 

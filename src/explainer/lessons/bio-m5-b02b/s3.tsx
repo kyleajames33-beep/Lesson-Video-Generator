@@ -4,11 +4,15 @@ import {Callout, Mark} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, ART, Art, artH, BLUE, Chip, DrawPath, Droplet, Enter, Fade, FEMALE, fullKey, GOLD, Heading, INK, INK_SOFT, Label, mapper, MALE, NameKey, Note, Overlay, pathOf,
-	prog, S, Scribble, SeqStrip, SpermDot, TEAL, Cross, FONT_HAND, POLLEN,
+	prog, S, Scribble, SeqStrip, SpermDot, TEAL, Cross, FONT_HAND, POLLEN, has, SvgArt,
 } from './shared';
 
 // ---------- 5. Fertilisation and the embryo ----------
-const Embryo: React.FC<{x: number; y: number; s: number; o: number}> = ({x, y, s, o}) => (
+const Embryo: React.FC<{x: number; y: number; s: number; o: number}> = ({x, y, s, o}) => has(ART.embryo) ? (
+	<g transform={`translate(${x},${y}) scale(${s / 1.9})`} opacity={o}>
+		<SvgArt a={ART.embryo} x={-125} y={-150} w={245} />
+	</g>
+) : (
 	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
 		<ellipse cx={-30} cy={-36} rx={30} ry={15} fill="#9fd08a" stroke="#2f6a2c" strokeWidth={3.5} transform="rotate(-28 -30 -36)" />
 		<ellipse cx={30} cy={-36} rx={30} ry={15} fill="#9fd08a" stroke="#2f6a2c" strokeWidth={3.5} transform="rotate(28 30 -36)" />
@@ -51,14 +55,27 @@ export const SceneFertilisation: React.FC = () => {
 				<SpermDot x={right[0]} y={right[1]} s={0.8} rot={150} o={1 - prog(f, c.join + 10, 20)} />
 				<g opacity={prog(f, c.join + 30, 12)}><circle cx={egg[0]} cy={egg[1]} r={24} fill="none" stroke={FEMALE} strokeWidth={5} /></g>
 				<Fade at={c.zygote}><Callout from={[egg[0] + 18, egg[1] - 10]} to={[1090, 210]} at={c.zygote} text="zygote" color={FEMALE} size={52} /></Fade>
-				{/* big zygote and the divisions */}
-				<g opacity={prog(f, c.first, 14) * (1 - embryoIn)}>
-					{circ().map(([dx, dy, r], i) => <circle key={`${d < 0.18 ? 0 : d < 0.4 ? 1 : d < 0.65 ? 2 : 3}-${i}`} cx={PX + dx} cy={PY + dy} r={r} fill="#f6b0a4" stroke={FEMALE} strokeWidth={4} />)}
-				</g>
-				<g opacity={prog(f, c.first, 14) * (1 - embryoIn)}><circle cx={PX} cy={PY} r={d < 0.18 ? 20 : 0} fill="#fff6d6" stroke={FEMALE} strokeWidth={3} /></g>
-				<Embryo x={PX} y={PY + 10} s={1.9 * (0.6 + 0.4 * embryoIn)} o={embryoIn} />
-				<Fade at={c.first} out={c.embryo}><Label x={PX} y={PY + 140} at={c.first} text={d < 0.18 ? 'zygote' : 'dividing again and again'} size={46} color={FEMALE} /></Fade>
-				<Fade at={c.embryo + 14}><Callout from={[PX + 70, PY - 70]} to={[PX + 150, PY - 150]} at={c.embryo + 14} text="embryo" color={TEAL} size={54} /></Fade>
+				{/* big zygote and the divisions: one aligned set, crossfaded as the cells double */}
+				{has(ART.zyg1) ? (
+					<g opacity={prog(f, c.first, 14) * (1 - embryoIn)}>
+						{[ART.zyg1, ART.zyg2, ART.zyg4, ART.zyg8].map((z, n) => {
+							const edges = [0, 0.18, 0.4, 0.65, 2];
+							const a0 = n === 0 ? 1 : prog(d, edges[n], 0.04);
+							const a1 = 1 - (n === 3 ? 0 : prog(d, edges[n + 1], 0.04));
+							return <SvgArt key={n} a={z} x={PX - 170} y={PY - 160} w={340} o={a0 * a1} />;
+						})}
+					</g>
+				) : (
+					<>
+						<g opacity={prog(f, c.first, 14) * (1 - embryoIn)}>
+							{circ().map(([dx, dy, r], i) => <circle key={`${d < 0.18 ? 0 : d < 0.4 ? 1 : d < 0.65 ? 2 : 3}-${i}`} cx={PX + dx} cy={PY + dy} r={r} fill="#f6b0a4" stroke={FEMALE} strokeWidth={4} />)}
+						</g>
+						<g opacity={prog(f, c.first, 14) * (1 - embryoIn)}><circle cx={PX} cy={PY} r={d < 0.18 ? 20 : 0} fill="#fff6d6" stroke={FEMALE} strokeWidth={3} /></g>
+					</>
+				)}
+				<Embryo x={PX} y={PY + 10} s={1.9 * (0.7 + 0.3 * embryoIn)} o={embryoIn} />
+				<Fade at={c.first} out={c.embryo}><Label x={PX} y={PY + 215} at={c.first} text={d < 0.18 ? 'zygote' : 'dividing again and again'} size={46} color={FEMALE} /></Fade>
+				<Fade at={c.embryo + 14}><Callout from={[PX + 50, PY - 110]} to={[PX + 150, PY - 190]} at={c.embryo + 14} text="embryo" color={TEAL} size={54} /></Fade>
 			</Overlay>
 			<Enter at={c.sets} style={{position: 'absolute', left: 1180, top: 300}}>
 				<span style={{display: 'inline-block', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: BLUE, background: '#fffdf8', border: `3px solid ${BLUE}`, borderRadius: 999, padding: '0 24px 4px', whiteSpace: 'nowrap'}}>one set + one set = two sets</span>
@@ -150,25 +167,35 @@ export const SceneDispersal: React.FC = () => {
 			<Overlay>
 				<Fade at={c.coat}><Label x={SD.x + SD.w / 2} y={SD.y + artH(ART.bean, SD.w) + 52} at={c.coat} text="the coat stops it drying out" size={40} color="#7a4a2b" out={c.germ} /></Fade>
 				<Fade at={c.germ + 10}><Label x={SL.x + SL.w / 2} y={SL.y + artH(ART.seedling, SL.w) + 50} at={c.germ + 10} text="germinates: roots and leaves" size={40} color={TEAL} /></Fade>
-				<WindIcon x={760} y={330} at={c.wind} />
-				<WaterIcon x={1060} y={330} at={c.wind + 14} />
-				<AnimalIcon x={1380} y={320} at={c.wind + 28} />
-				<Fade at={c.carry + 30}><Label x={1070} y={470} at={c.carry + 30} text="carries seeds" size={54} color={TEAL} /></Fade>
-				<Fade at={c.disp}><Label x={1070} y={560} at={c.disp} text="seed dispersal" size={72} color={TEAL} /></Fade>
+				{has(ART.dispWind) ? (
+					<>
+						<g opacity={prog(f, c.wind, 16)} transform={`translate(${(1 - prog(f, c.wind, 30)) * -30 + Math.sin(f / 22) * 5},0)`}><SvgArt a={ART.dispWind} x={560} y={208} w={340} /></g>
+						<g opacity={prog(f, c.wind + 14, 16)} transform={`translate(0,${(1 - prog(f, c.wind + 14, 24)) * 20 + Math.sin(f / 17) * 3})`}><SvgArt a={ART.dispWater} x={950} y={212} w={340} /></g>
+						<g opacity={prog(f, c.wind + 28, 16)} transform={`translate(0,${(1 - prog(f, c.wind + 28, 24)) * 20})`}><SvgArt a={ART.dispAnimal} x={1340} y={230} w={340} /></g>
+					</>
+				) : (
+					<>
+						<WindIcon x={760} y={330} at={c.wind} />
+						<WaterIcon x={1060} y={330} at={c.wind + 14} />
+						<AnimalIcon x={1380} y={320} at={c.wind + 28} />
+					</>
+				)}
+				<Fade at={c.carry + 30}><Label x={1070} y={505} at={c.carry + 30} text="carries seeds" size={54} color={TEAL} /></Fade>
+				<Fade at={c.disp}><Label x={1070} y={585} at={c.disp} text="seed dispersal" size={72} color={TEAL} /></Fade>
 				<g opacity={prog(f, c.job, 14)}>
-					<text x={1070} y={650} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={AMBER_INK}>not pollination (that carries pollen)</text>
-					<Cross x={1400} y={632} s={1.4} at={c.job + 14} />
+					<text x={1070} y={665} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={AMBER_INK}>not pollination (that carries pollen)</text>
+					<Cross x={1400} y={647} s={1.4} at={c.job + 14} />
 				</g>
 				{/* conditions to germinate */}
-				<g opacity={prog(f, c.later, 14)}><text x={1070} y={730} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={INK_SOFT}>to germinate it needs</text></g>
-				<g opacity={prog(f, c.water, 12)} transform="translate(780,820)">
+				<g opacity={prog(f, c.later, 14)}><text x={1070} y={738} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={INK_SOFT}>to germinate it needs</text></g>
+				<g opacity={prog(f, c.water, 12)} transform="translate(780,830)">
 					<Droplet x={0} y={0} s={0.9} /><text x={44} y={14} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={BLUE}>water</text>
 				</g>
-				<g opacity={prog(f, c.oxy, 12)} transform="translate(1040,820)">
+				<g opacity={prog(f, c.oxy, 12)} transform="translate(1040,830)">
 					{[[-16, 6, 10], [8, -14, 14], [14, 14, 8]].map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={r} fill="#e6f3fb" stroke="#7fb0d6" strokeWidth={3} />)}
 					<text x={44} y={14} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill="#4a86b0">oxygen</text>
 				</g>
-				<g opacity={prog(f, c.temp, 12)} transform="translate(1330,820)">
+				<g opacity={prog(f, c.temp, 12)} transform="translate(1330,830)">
 					<rect x={-8} y={-30} width={16} height={50} rx={8} fill="#fff" stroke={INK} strokeWidth={3.5} />
 					<circle cx={0} cy={26} r={14} fill="#d4614a" stroke={INK} strokeWidth={3.5} />
 					<rect x={-3.5} y={-6} width={7} height={30} fill="#d4614a" />

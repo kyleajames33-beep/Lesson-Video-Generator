@@ -1,5 +1,5 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import lesson from '../../../../docs/production/claude-pm/lessons/b2b/measured/lesson.json';
 import {AMBER, AMBER_INK, BLUE, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, PAPER_DEEP, prog} from '../../kit';
 import type {CueScene} from '../../cues';
@@ -33,11 +33,38 @@ export const ART: Record<string, ArtDef> = {
 	ovule: {src: A.OVULE, nat: [1600, 1600], box: [519, 261, 563, 1078]},
 	ovary: {src: A.OVARY, nat: [1600, 1600], box: [325, 634, 951, 332]},
 	pod: {src: A.POD, nat: [1600, 1600], box: [325, 634, 951, 332]},
-	grain: {src: A.GRAIN, nat: [1600, 1600], box: [444, 260, 712, 1081]},
-	bagged: {src: A.BAGGED, nat: [1600, 1600], box: [321, 231, 958, 1139]},
+	grain: {src: A.GRAIN, nat: [1628, 1600], box: [544, 373, 558, 844]},
+	// the grain alone (top of the grain plate), for the male-side pop-out
+	grainOnly: {src: A.GRAIN, nat: [1628, 1600], box: [708, 372, 287, 293]},
+	bagged: {src: A.BAGGED, nat: [1652, 1600], box: [397, 263, 877, 1035]},
 	// brush plate delivered; tube overlay still a stand-in (tube is coded)
 	brush: {src: A.PAINTBRUSH, nat: [1683, 1600], box: [332, 251, 1136, 1081]},
 	tubeOverlay: {src: A.TUBE_OVERLAY, nat: [1600, 1600], box: [324, 205, 953, 1189]},
+	// painted icon pack (alpha > 20 boxes as [x, y, w, h])
+	stepLand: {src: A.STEP_LAND, nat: [1600, 1600], box: [160, 201, 1280, 1198]},
+	stepTube: {src: A.STEP_TUBE, nat: [1600, 1600], box: [160, 201, 1280, 1198]},
+	stepJoin: {src: A.STEP_JOIN, nat: [1600, 1600], box: [303, 302, 993, 994]},
+	stepSeed: {src: A.STEP_SEED, nat: [1600, 1600], box: [444, 313, 712, 973]},
+	// zygote set: one shared crop (union of 1, 2, 4, 8) keeps the centre fixed while cells divide
+	zyg1: {src: A.ZYG1, nat: [1600, 1600], box: [193, 226, 1215, 1148]},
+	zyg2: {src: A.ZYG2, nat: [1600, 1600], box: [193, 226, 1215, 1148]},
+	zyg4: {src: A.ZYG4, nat: [1600, 1600], box: [193, 226, 1215, 1148]},
+	zyg8: {src: A.ZYG8, nat: [1600, 1600], box: [193, 226, 1215, 1148]},
+	embryo: {src: A.EMBRYO, nat: [1600, 1600], box: [337, 233, 926, 1132]},
+	propParent: {src: A.PROP_PARENT, nat: [1600, 1600], box: [357, 196, 885, 1208]},
+	// piece and rooting share one crop so the cutting does not move when roots appear
+	propPiece: {src: A.PROP_PIECE, nat: [1600, 1600], box: [214, 160, 1171, 1280]},
+	propRooting: {src: A.PROP_ROOTING, nat: [1600, 1600], box: [214, 160, 1171, 1280]},
+	propNew: {src: A.PROP_NEW, nat: [1600, 1600], box: [490, 242, 621, 1118]},
+	beeFly: {src: A.BEE_FLY, nat: [1600, 1600], box: [198, 318, 1210, 966]},
+	waterPollen: {src: A.WATER_POLLEN, nat: [2200, 1600], box: [279, 280, 1650, 1030]},
+	dispWind: {src: A.DISP_WIND, nat: [2200, 1600], box: [246, 161, 1703, 1278]},
+	dispWater: {src: A.DISP_WATER, nat: [2200, 1600], box: [227, 188, 1748, 1218]},
+	dispAnimal: {src: A.DISP_ANIMAL, nat: [2200, 1600], box: [221, 322, 1759, 956]},
+	seedPara: {src: A.SEED_PARA, nat: [1600, 1600], box: [280, 161, 1038, 1279]},
+	farFence: {src: A.FAR_FENCE, nat: [2200, 800], box: [221, 204, 1758, 391]},
+	farBare: {src: A.FAR_BARE, nat: [2200, 800], box: [265, 191, 1669, 489]},
+	farSprout: {src: A.FAR_SPROUT, nat: [2200, 800], box: [265, 191, 1669, 489]},
 	// reused B1 plates
 	runner: B1ART.runner, strawFlower: B1ART.flower, cloneRow: B1ART.cloneRow, seedlings: B1ART.seedlings,
 };
@@ -71,6 +98,27 @@ export const fp = mapper(ART.flower, FL.x, FL.y, FL.w);
 export const ANTHERS: [number, number][] = [[270, 395], [350, 300], [600, 310], [680, 390]];
 export const TUBE_BOX: [number, number][] = [[470, 140], [468, 200], [466, 300], [464, 420], [463, 540], [468, 600], [488, 636], [512, 654], [527, 664]];
 export const EGG_BOX: [number, number] = [527, 676];
+
+/** True when the painted plate is delivered and listed in HAVE. */
+export const has = (a: ArtDef) => A.HAVE.has(a.src);
+
+/** Painted plate inside an SVG: the plate's alpha box goes to (x, y) at width w. */
+export const SvgArt: React.FC<{a: ArtDef; x: number; y: number; w: number; o?: number; rot?: number; filter?: string; clip?: boolean}> = ({a, x, y, w, o = 1, rot = 0, filter, clip}) => {
+	const sc = w / a.box[2];
+	const h = a.box[3] * sc;
+	return (
+		<g opacity={o} transform={rot ? `rotate(${rot} ${x + w / 2} ${y + h / 2})` : undefined}>
+			{clip ? <clipPath id={`clip-${a.box.join('-')}`}><ellipse cx={x + w / 2} cy={y + h / 2 - h * 0.01} rx={w * 0.515} ry={h * 0.5} /></clipPath> : null}
+			<image clipPath={clip ? `url(#clip-${a.box.join('-')})` : undefined} href={staticFile(a.src)} x={x - a.box[0] * sc} y={y - a.box[1] * sc} width={a.nat[0] * sc} height={a.nat[1] * sc} style={filter ? {filter} : undefined} />
+		</g>
+	);
+};
+/** Same, centred on (cx, cy) with the longest side of the alpha box = d. */
+export const SvgArtC: React.FC<{a: ArtDef; cx: number; cy: number; d: number; o?: number; rot?: number}> = ({a, cx, cy, d, o = 1, rot = 0}) => {
+	const sc = d / Math.max(a.box[2], a.box[3]);
+	const w = a.box[2] * sc, h = a.box[3] * sc;
+	return <SvgArt a={a} x={cx - w / 2} y={cy - h / 2} w={w} o={o} rot={rot} />;
+};
 
 /** Group fade with optional fade out. */
 export const Fade: React.FC<{at: number; out?: number; children: React.ReactNode; dur?: number}> = ({at, out, children, dur = 12}) => {
@@ -114,30 +162,32 @@ export const fullKey = (at: number, extra: {text: string; color: string; at: num
 
 // ---------- sequence strip: land, tube, join, seed ----------
 export type SeqKind = 'land' | 'tube' | 'join' | 'seed';
+const SEQ_ART: Record<SeqKind, ArtDef> = {land: ART.stepLand, tube: ART.stepTube, join: ART.stepJoin, seed: ART.stepSeed};
 export const SeqIcon: React.FC<{k: SeqKind; x: number; y: number; s?: number}> = ({k, x, y, s = 1}) => (
 	<g transform={`translate(${x},${y}) scale(${s})`}>
-		{k === 'land' ? (
+		{has(SEQ_ART[k]) ? <SvgArtC a={SEQ_ART[k]} cx={0} cy={0} d={56} /> : null}
+		{!has(SEQ_ART[k]) && k === 'land' ? (
 			<>
 				<path d="M-16,-4 Q0,-22 16,-4" fill="#e8f1c8" stroke={FEMALE} strokeWidth={4} strokeLinecap="round" />
 				<path d="M0,-6 L0,22" stroke={FEMALE} strokeWidth={5} strokeLinecap="round" />
 				<circle cx={0} cy={-15} r={6} fill={POLLEN} stroke={AMBER_INK} strokeWidth={2} />
 			</>
 		) : null}
-		{k === 'tube' ? (
+		{!has(SEQ_ART[k]) && k === 'tube' ? (
 			<>
 				<circle cx={-8} cy={-18} r={7} fill={POLLEN} stroke={AMBER_INK} strokeWidth={2} />
 				<path d="M-8,-14 C-18,0 10,8 6,22" fill="none" stroke={AMBER_INK} strokeWidth={9} strokeLinecap="round" />
 				<path d="M-8,-14 C-18,0 10,8 6,22" fill="none" stroke={GOLD} strokeWidth={5} strokeLinecap="round" />
 			</>
 		) : null}
-		{k === 'join' ? (
+		{!has(SEQ_ART[k]) && k === 'join' ? (
 			<>
 				<circle cx={-6} cy={2} r={16} fill="#f6b0a4" stroke={FEMALE} strokeWidth={3} />
 				<ellipse cx={12} cy={2} rx={9} ry={6} fill={BLUE} />
 				<path d="M20,2 q8,-4 14,0" stroke={BLUE} strokeWidth={3} fill="none" strokeLinecap="round" />
 			</>
 		) : null}
-		{k === 'seed' ? (
+		{!has(SEQ_ART[k]) && k === 'seed' ? (
 			<>
 				<ellipse cx={0} cy={2} rx={14} ry={20} fill="#c9a86a" stroke="#6b4b1d" strokeWidth={3} />
 				<path d="M-3,-10 C6,-2 6,8 -2,16" fill="none" stroke="#6b4b1d" strokeWidth={2.5} />

@@ -3,7 +3,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {DrawPath, Enter, FONT_HAND, HandText, INK, INK_SOFT, Mark, Plate, prog, scribbleEllipse} from '../../kit';
 import {cues} from '../../cues';
-import {BAD, DG, HEAT, SPREAD, kf, sc, Heading} from './common';
+import {BAD, DG, G1, HEAT, SPREAD, SvgPaint, kf, sc, Heading} from './common';
 import {DotBlock, Fade, GFormula, HeatIcon, LevelDiagram, Overlay, Panel, Pill, RateBar, SpreadIcon, SvgText, T, TEAL} from './parts';
 import * as A from './assets';
 
@@ -38,19 +38,16 @@ export const SceneHook: React.FC = () => {
 				</Fade>
 				<Fade at={K1.back}><Mark x={900} y={490} at={K1.back + 4} kind="cross" size={130} /></Fade>
 				{/* the tree */}
-				<g opacity={treeP}>
-					<rect x={1385} y={520} width={32} height={190} rx={8} fill="#8a6a45" stroke={INK} strokeWidth={3} />
-					{[[1400, 420, 104], [1316, 480, 74], [1486, 480, 74], [1356, 356, 72], [1446, 356, 72]].map(([cx, cy, r], i) => <circle key={i} cx={cx} cy={cy} r={r} fill="#7fbf5a" stroke={INK} strokeWidth={3.5} />)}
-				</g>
+				<SvgPaint {...G1.tree} x={1212} y={250} w={416} opacity={treeP} />
 				<Fade at={K1.tree + 8}>
-					<DrawPath d="M1150,420 L1262,436" at={K1.tree + 10} dur={20} color={INK} width={6} />
-					<DrawPath d="M1244,414 L1264,436 L1240,452" at={K1.tree + 26} dur={8} color={INK} width={6} />
-					<SvgText x={1090} y={400} text="CO_2" size={58} color={INK} at={K1.tree + 14} />
-					<DrawPath d="M1400,790 L1400,730" at={K1.tree + 16} dur={20} color={ESC} width={6} />
-					<DrawPath d="M1380,752 L1400,728 L1420,752" at={K1.tree + 32} dur={8} color={ESC} width={6} />
-					<SvgText x={1440} y={780} text="H_2O" size={58} color={ESC} at={K1.tree + 20} />
-					<DrawPath d="M1500,330 L1640,262" at={K1.tree + 36} dur={20} color={TEAL} width={6} />
-					<SvgText x={1500} y={240} text="sugar and wood" size={52} color={TEAL} at={K1.tree + 48} />
+					<DrawPath d="M1090,420 L1205,440" at={K1.tree + 10} dur={20} color={INK} width={6} />
+					<DrawPath d="M1185,418 L1207,440 L1182,456" at={K1.tree + 26} dur={8} color={INK} width={6} />
+					<SvgText x={1010} y={400} text="CO_2" size={58} color={INK} at={K1.tree + 14} />
+					<DrawPath d="M1700,800 L1624,736" at={K1.tree + 16} dur={20} color={ESC} width={6} />
+					<DrawPath d="M1630,766 L1622,734 L1654,738" at={K1.tree + 32} dur={8} color={ESC} width={6} />
+					<SvgText x={1712} y={800} text="H_2O" size={58} color={ESC} at={K1.tree + 20} />
+					<DrawPath d="M1570,310 L1660,236" at={K1.tree + 36} dur={20} color={TEAL} width={6} />
+					<SvgText x={1500} y={210} text="sugar and wood" size={52} color={TEAL} at={K1.tree + 48} />
 				</Fade>
 				{/* the two ideas */}
 				<HeatIcon cx={300} cy={870} s={1.2} at={K1.enth} />

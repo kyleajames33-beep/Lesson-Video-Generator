@@ -5,7 +5,7 @@ import {cues} from '../../cues';
 import {POTS} from '../bio-m5-b01/shared';
 import {
 	AMBER, AMBER_INK, ART, Art, artH, BeeIcon, BLUE, Body, Cross, DrawPath, EggDot, Enter, Fade, FEMALE, FONT_DISPLAY, FONT_HAND, GREEN, Heading, INK, INK_SOFT, Label, mapper, MALE,
-	Note, Overlay, prog, S, Scribble, SeqIcon, SeqKind, SpermDot, TEAL, WATER_LINE, POLLEN, Arrow, Chip,
+	Note, Overlay, prog, S, Scribble, SeqIcon, SeqKind, SpermDot, TEAL, WATER_LINE, POLLEN, Arrow, Chip, has, SvgArt,
 } from './shared';
 
 const Pill: React.FC<{at: number; children: React.ReactNode; color?: string}> = ({at, children, color = TEAL}) => (
@@ -52,14 +52,25 @@ export const SceneVegetative: React.FC = () => {
 			<Overlay>
 				<g opacity={1 - prog(f, c.strawb - 6, 16)}>
 					<g opacity={prog(f, c.piece, 14)}>
-						<MiniPlant x={330} y={680} s={4.2} />
-						<path d="M140,684 L520,684" stroke="#6b4b1d" strokeWidth={10} strokeLinecap="round" />
+						{has(ART.propParent) ? <SvgArt a={ART.propParent} x={330 - 147} y={300} w={294} /> : (
+							<>
+								<MiniPlant x={330} y={680} s={4.2} />
+								<path d="M140,684 L520,684" stroke="#6b4b1d" strokeWidth={10} strokeLinecap="round" />
+							</>
+						)}
 						<text x={330} y={760} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={INK}>the parent plant</text>
-						<DrawPath d="M440,590 L610,640" at={c.piece + 20} dur={14} color="#c4432f" width={5} dash="3 10" />
-						<text x={560} y={560} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill="#c4432f" opacity={prog(f, c.piece + 24, 10)}>a piece</text>
+						<DrawPath d={has(ART.propParent) ? 'M200,545 L470,545' : 'M440,590 L610,640'} at={c.piece + 20} dur={14} color="#c4432f" width={5} dash="3 10" />
+						<text x={has(ART.propParent) ? 490 : 560} y={has(ART.propParent) ? 552 : 560} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill="#c4432f" opacity={prog(f, c.piece + 24, 10)}>a piece</text>
 					</g>
 					<g opacity={prog(f, c.grows, 14)}>
 						<Arrow x1={700} y1={600} x2={880} y2={600} at={c.grows} color={INK_SOFT} />
+						{has(ART.propPiece) ? (
+							<>
+								<SvgArt a={ART.propPiece} x={1100 - 183} y={296} w={366} o={1 - prog(f, c.grows + 14, 24)} />
+								<SvgArt a={ART.propRooting} x={1100 - 183} y={296} w={366} o={prog(f, c.grows + 14, 24)} />
+								<text x={1100} y={800} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={INK}>roots and leaves grow</text>
+							</>
+						) : (
 						<g transform="translate(1100,640)">
 							<path d="M0,-140 L0,40" stroke="#2f6a2c" strokeWidth={14} strokeLinecap="round" />
 							<ellipse cx={-48} cy={-120} rx={48} ry={22} fill="#9fd08a" stroke="#2f6a2c" strokeWidth={5} transform="rotate(-25 -48 -120)" />
@@ -67,10 +78,11 @@ export const SceneVegetative: React.FC = () => {
 							<path d="M0,40 C-10,80 -34,100 -46,130 M0,40 C4,86 10,108 8,138 M0,40 C20,76 44,96 60,122" fill="none" stroke="#8a6a3c" strokeWidth={7} strokeLinecap="round" opacity={prog(f, c.grows + 14, 30)} />
 							<text x={0} y={200} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={INK}>roots and leaves grow</text>
 						</g>
+						)}
 					</g>
 					<g opacity={prog(f, c.sep, 14)}>
 						<Arrow x1={1330} y1={600} x2={1480} y2={600} at={c.sep} color={INK_SOFT} />
-						<MiniPlant x={1640} y={680} s={4.2} />
+						{has(ART.propNew) ? <SvgArt a={ART.propNew} x={1640 - 112} y={300} w={224} /> : <MiniPlant x={1640} y={680} s={4.2} />}
 						<text x={1640} y={760} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48}} fill={TEAL}>a separate new plant</text>
 					</g>
 				</g>
@@ -100,16 +112,15 @@ export const SceneVegetative: React.FC = () => {
 				<Cross x={200} y={930} s={1.6} at={c.nosperm + 12} />
 				{/* clone */}
 				<g opacity={prog(f, c.clone, 14)}>
-					<MiniPlant x={800} y={950} s={1.5} /><MiniPlant x={880} y={950} s={1.5} />
+					{has(ART.propNew) ? (<><SvgArt a={ART.propNew} x={772} y={862} w={50} /><SvgArt a={ART.propNew} x={846} y={862} w={50} /></>) : (<><MiniPlant x={800} y={950} s={1.5} /><MiniPlant x={880} y={950} s={1.5} /></>)}
 					<text x={940} y={944} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={TEAL}>a clone of the parent</text>
 				</g>
 				{/* no carrier needed */}
 				<g opacity={prog(f, c.carrier, 12)}>
-					<BeeIcon x={1360} y={926} s={0.8} />
-					<DrawPath d="M1420,914 q22,-18 44,0 t44,0" at={c.carrier} dur={14} color={WATER_LINE} width={6} />
+					{has(ART.bee) ? (<><SvgArt a={ART.bee} x={1306} y={870} w={86} /><SvgArt a={ART.grass} x={1412} y={866} w={46} /></>) : (<><BeeIcon x={1360} y={926} s={0.8} /><DrawPath d="M1420,914 q22,-18 44,0 t44,0" at={c.carrier} dur={14} color={WATER_LINE} width={6} /></>)}
 					<text x={1530} y={944} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={INK}>no carrier needed</text>
 				</g>
-				<Cross x={1400} y={926} s={1.7} at={c.carrier + 10} />
+				<Cross x={1383} y={920} s={1.7} at={c.carrier + 10} />
 			</Overlay>
 		</>
 	);
@@ -154,12 +165,22 @@ export const SceneSeedsBetter: React.FC = () => {
 				{[1, 3].map((p, i) => <Scribble key={p} cx={SL.x + POTS[p] * SL.w} cy={SL.y + artH(ART.seedlings, SL.w) * 0.55} rx={40} ry={62} at={c.survive + i * 8} color={GREEN} seed={p + 2} width={6} />)}
 				<Fade at={c.survive}><Label x={SL.x + 280} y={sb + 44} at={c.survive} text="varied, so some survive" size={42} color={GREEN} /></Fade>
 				{/* seed travels over a fence to a bare patch */}
+				{has(ART.farFence) ? (
+					<g opacity={prog(f, c.far, 14)}>
+						<SvgArt a={ART.farFence} x={1010} y={866} w={330} />
+						<SvgArt a={ART.farBare} x={1400} y={846} w={330} o={1 - prog(f, c.newp + 42, 18)} />
+						<SvgArt a={ART.farSprout} x={1400} y={846} w={330} o={prog(f, c.newp + 42, 18)} />
+						<text x={1565} y={822} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={INK_SOFT}>new place</text>
+						<SvgArt a={ART.seedPara} x={760 + 790 * arc - 42} y={895 - 50 * arc - Math.sin(arc * Math.PI) * 55 - 52} w={84} rot={-30 + 60 * arc} o={1 - prog(f, c.newp + 40, 8)} />
+					</g>
+				) : (
 				<g opacity={prog(f, c.far, 14)}>
 					<path d="M1180,925 L1180,850 M1230,925 L1230,850 M1280,925 L1280,850 M1160,872 L1300,872" stroke="#8a6a3c" strokeWidth={8} strokeLinecap="round" />
 					<rect x={1480} y={860} width={250} height={66} rx={16} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeDasharray="5 14" />
 					<text x={1625} y={906} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}} fill={INK_SOFT}>new place</text>
 					<g transform={`translate(${760 + 730 * arc},${920 - Math.sin(arc * Math.PI) * 120})`}><ellipse rx={18} ry={25} fill="#c9a86a" stroke="#6b4b1d" strokeWidth={4} /></g>
 				</g>
+				)}
 				<Fade at={c.sum2}><Label x={1780} y={814} at={c.sum2} text="varied and far" size={54} color={AMBER_INK} anchor="end" /></Fade>
 			</Overlay>
 			<Enter at={c.depends} style={{position: 'absolute', left: 1000, top: 100}}><Note size={40}>it depends on the conditions</Note></Enter>

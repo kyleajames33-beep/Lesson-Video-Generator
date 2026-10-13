@@ -3,7 +3,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {DrawPath, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, Mark, prog} from '../../kit';
 import {cues} from '../../cues';
-import {BAD, DG, HEAT, LIGHT, RESP, SPREAD, kf, sc, Heading} from './common';
+import {BAD, DG, G1, SvgPaint, HEAT, LIGHT, RESP, SPREAD, kf, sc, Heading} from './common';
 import {AnswerBox, FireIcon, Fade, GFormula, GivensCard, LeafIcon, LevelDiagram, Overlay, Panel, Pill, ReactionBox, StageTabs, Sub, SvgText, T, TEAL} from './parts';
 
 const EQ_PHOTO = '6CO_2(g) + 6H_2O(l) → C_6H_12O_6(s) + 6O_2(g)';
@@ -95,9 +95,7 @@ export const ScenePhotoLeaf: React.FC = () => {
 			<Overlay>
 				<Fade at={K9.open}><ellipse cx={960} cy={470} rx={470} ry={235} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeDasharray="30 24" /></Fade>
 				<Pill x={810} y={196} w={300} text="open system" at={K9.open} color={INK} size={44} h={62} />
-				<path d="M700,540 C740,330 980,290 1230,350 C1210,520 1000,650 700,540 Z" transform="translate(0,-40)" fill="#7fbf5a" stroke={INK} strokeWidth={5} strokeLinejoin="round" />
-				<path d="M700,540 C860,470 1060,420 1220,360" transform="translate(0,-40)" fill="none" stroke={INK} strokeWidth={4} strokeLinecap="round" />
-				{[0, 1, 2].map(i => <path key={i} d={`M${860 + i * 100},${422 - i * 22} l${30 + i * 8},${60 - i * 8}`} stroke={INK} strokeWidth={3} strokeLinecap="round" opacity={0.6} />)}
+				<SvgPaint {...G1.leaf} x={700} y={275} w={530} opacity={0.7 + 0.3 * live} filter={`saturate(${0.45 + 0.55 * live})`} />
 				{/* sunlight in */}
 				<Fade at={K9.sun}>
 					<circle cx={1560} cy={250} r={46} fill={LIGHT} stroke={INK} strokeWidth={3} opacity={0.35 + 0.65 * live} />

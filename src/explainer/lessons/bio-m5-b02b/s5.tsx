@@ -6,7 +6,7 @@ import {HAVE, PAINTBRUSH} from './assets';
 import {POTS} from '../bio-m5-b01/shared';
 import {
 	AMBER, AMBER_INK, ART, Art, artH, BLUE, Body, Brush, Cross, DrawPath, Enter, Fade, FEMALE, fp, FONT_DISPLAY, FONT_HAND, GOLD, GREEN, HandText, Heading, INK, INK_SOFT, Label, mapper, Note,
-	Overlay, pathOf, POLLEN, prog, S, Scribble, SeqIcon, SeqKind, Specks, TEAL, TUBE_BOX, Chip, RED,
+	Overlay, pathOf, POLLEN, prog, S, Scribble, SeqIcon, SeqKind, Specks, TEAL, TUBE_BOX, Chip, RED, has, SvgArtC,
 } from './shared';
 
 const FY = 230, FH = 710;
@@ -191,9 +191,17 @@ const TinyCells: React.FC<{at: number}> = ({at}) => {
 	const f = useCurrentFrame();
 	return (
 		<g opacity={prog(f, at, 14)} transform="translate(1520,930)">
+			{has(ART.zyg1) ? (
+				<>
+					<SvgArtC a={ART.grain} cx={0} cy={0} d={64} />
+					<SvgArtC a={ART.stepJoin} cx={110} cy={0} d={64} />
+					<SvgArtC a={ART.zyg1} cx={220} cy={0} d={64} />
+				</>
+			) : (<>
 			<circle cx={0} cy={4} r={20} fill="#f2e3b6" stroke={INK} strokeWidth={3} /><circle cx={20} cy={-14} r={10} fill="#f2e3b6" stroke={INK} strokeWidth={3} />
 			<g transform="translate(110,0)"><rect x={-34} y={-16} width={68} height={32} rx={16} fill="#cfe8da" stroke={INK} strokeWidth={3} /><path d="M0,-16 L0,16" stroke={INK} strokeWidth={3} strokeDasharray="4 4" /></g>
 			<g transform="translate(220,0)"><path d="M-30,0 C-30,-26 10,-30 30,-10 C40,10 10,30 -20,22 C-34,16 -30,6 -30,0Z" fill="#dbeaf6" stroke={INK} strokeWidth={3} /><circle cx={-4} cy={0} r={6} fill={BLUE} /></g>
+			</>)}
 		</g>
 	);
 };

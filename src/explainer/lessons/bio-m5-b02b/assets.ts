@@ -28,8 +28,33 @@ export const BAGGED = B + 'b2b-bagged-flower-v1.png';
 export const PAINTBRUSH = B + 'b2b-paintbrush-pollination-v1.png';
 export const TUBE_OVERLAY = B + 'b2b-pollen-tube-overlay-v1.png';
 
-export const HAVE = new Set<string>([BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED, PAINTBRUSH]);
-const ALL = [BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED, PAINTBRUSH, TUBE_OVERLAY];
+// Painted icon pack (brief 27, 14 Oct). Each is in HAVE, so the scenes draw the plate; remove one from HAVE to fall back to the coded icon.
+export const STEP_LAND = B + 'b2b-step-land-v1.png';
+export const STEP_TUBE = B + 'b2b-step-tube-v1.png';
+export const STEP_JOIN = B + 'b2b-step-join-v1.png';
+export const STEP_SEED = B + 'b2b-step-seed-v1.png';
+export const ZYG1 = B + 'b2b-zygote-1-v1.png';
+export const ZYG2 = B + 'b2b-zygote-2-v1.png';
+export const ZYG4 = B + 'b2b-zygote-4-v1.png';
+export const ZYG8 = B + 'b2b-zygote-8-v1.png';
+export const EMBRYO = B + 'b2b-embryo-v1.png';
+export const PROP_PARENT = B + 'b2b-prop-parent-v1.png';
+export const PROP_PIECE = B + 'b2b-prop-piece-v1.png';
+export const PROP_ROOTING = B + 'b2b-prop-rooting-v1.png';
+export const PROP_NEW = B + 'b2b-prop-new-plant-v1.png';
+export const BEE_FLY = B + 'b2b-bee-flying-v1.png';
+export const WATER_POLLEN = B + 'b2b-water-pollen-v1.png';
+export const DISP_WIND = B + 'b2b-disp-wind-v1.png';
+export const DISP_WATER = B + 'b2b-disp-water-v1.png';
+export const DISP_ANIMAL = B + 'b2b-disp-animal-v1.png';
+export const SEED_PARA = B + 'b2b-seed-parachute-v1.png';
+export const FAR_FENCE = B + 'b2b-far-fence-v1.png';
+export const FAR_BARE = B + 'b2b-far-patch-bare-v1.png';
+export const FAR_SPROUT = B + 'b2b-far-patch-sprout-v1.png';
+const PAINTED = [STEP_LAND, STEP_TUBE, STEP_JOIN, STEP_SEED, ZYG1, ZYG2, ZYG4, ZYG8, EMBRYO, PROP_PARENT, PROP_PIECE, PROP_ROOTING, PROP_NEW, BEE_FLY, WATER_POLLEN, DISP_WIND, DISP_WATER, DISP_ANIMAL, SEED_PARA, FAR_FENCE, FAR_BARE, FAR_SPROUT];
+
+export const HAVE = new Set<string>([...PAINTED, BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED, PAINTBRUSH]);
+const ALL = [...PAINTED, BEE, FLOWER_CUT, GRASS, ONION, POTATO, MINT, BEAN_SEED, BEAN_SEEDLING, OVULE, OVARY, POD, GRAIN, BAGGED, PAINTBRUSH, TUBE_OVERLAY];
 // Reused B1 plates (runner, strawberry flower, clone row, varied seedlings) are listed here too.
 const REUSE = [
 	B + 'strawberry-runner-botanical-v1-alpha.png', B + 'strawberry-flower-botanical-b1-v1-alpha.png',

@@ -3,7 +3,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {DrawPath, Enter, FONT_HAND, HandText, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {cues} from '../../cues';
-import {DG, HEAT, SPREAD, kf, sc, Heading} from './common';
+import {DG, G1, SvgPaint, HEAT, SPREAD, kf, sc, Heading} from './common';
 import * as A from './assets';
 import {AnswerBox, Fade, GFormula, GivensCard, GuideBar, LevelDiagram, Overlay, Panel, Pill, ReactionBox, RateBar, StageTabs, Sub, SvgText, T, TEAL, rbPos, ClockCal} from './parts';
 
@@ -112,14 +112,7 @@ const Compass: React.FC<{cx: number; cy: number; r: number; at: number}> = ({cx,
 	);
 };
 const Bowl: React.FC<{cx: number; cy: number; at: number}> = ({cx, cy, at}) => (
-	<Fade at={at}>
-		<path d={`M${cx - 150},${cy - 40} C${cx - 140},${cy + 100} ${cx + 140},${cy + 100} ${cx + 150},${cy - 40} Z`} fill="#fffdf8" stroke={INK} strokeWidth={5} />
-		<ellipse cx={cx} cy={cy - 40} rx={150} ry={36} fill="#fffdf8" stroke={INK} strokeWidth={5} />
-		<path d={`M${cx - 118},${cy - 46} C${cx - 80},${cy - 96} ${cx + 80},${cy - 96} ${cx + 118},${cy - 46} C${cx + 60},${cy - 24} ${cx - 60},${cy - 24} ${cx - 118},${cy - 46} Z`} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={3} />
-		{[[-60, -56], [-20, -70], [30, -64], [70, -52], [0, -44], [-80, -44], [48, -40]].map(([dx, dy], i) => <circle key={i} cx={cx + dx} cy={cy + dy} r={4} fill="#d9d0be" />)}
-		<path d={`M${cx + 40},${cy - 40} L${cx + 130},${cy - 130}`} stroke="#8a6a45" strokeWidth={8} strokeLinecap="round" />
-		<ellipse cx={cx + 140} cy={cy - 140} rx={18} ry={10} transform={`rotate(-45 ${cx + 140} ${cy - 140})`} fill="#c9c2b3" stroke={INK} strokeWidth={3} />
-	</Fade>
+	<Fade at={at}><SvgPaint {...G1.bowl} x={cx - 234} y={cy - 130} w={468} /></Fade>
 );
 export const SceneHeading: React.FC = () => {
 	const f = useCurrentFrame();
@@ -138,7 +131,7 @@ export const SceneHeading: React.FC = () => {
 				<Compass cx={730} cy={400} r={90} at={K7.head} />
 				<SvgText x={720} y={535} text="where it ends up" size={46} color={HEAT} anchor="middle" at={K7.head + 20} />
 				<Pill x={450} y={640} w={380} text="ΔG = −2881: heading" at={K7.head + 40} color={HEAT} size={42} h={66} />
-				<g transform="translate(1150,700) scale(2) translate(-1150,-700)"><Bowl cx={1150} cy={700} at={K7.bowl} /></g>
+				<Bowl cx={1150} cy={570} at={K7.bowl} />
 				<ClockCal cx={1100} cy={340} r={100} at={K7.bowl + 10} />
 				<Pill x={1500} y={560} w={340} text="speed: very slow here" at={K7.fast} color="#8a5a00" size={42} h={70} />
 				<Pill x={1500} y={650} w={340} text="heading is not speed" at={K7.fast + 20} color={DG} size={42} h={70} />

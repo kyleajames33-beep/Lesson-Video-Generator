@@ -1,5 +1,5 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import lesson from '../../../../docs/production/claude-pm/lessons/g01/measured/lesson.json';
 import {HandText, INK, prog} from '../../kit';
 import type {CueScene} from '../../cues';
@@ -43,3 +43,16 @@ export const kf = (f: number, pts: [number, number][], smooth = true): number =>
 	return pts[pts.length - 1][1];
 };
 export const smooth = (u: number) => (u <= 0 ? 0 : u >= 1 ? 1 : u * u * (3 - 2 * u));
+
+/** Painted plate inside an SVG. box = alpha bbox (alpha > 20) in the file; (x, y) = where that box's top left goes, w = its width on screen. */
+export const SvgPaint: React.FC<{src: string; nat: [number, number]; box: [number, number, number, number]; x: number; y: number; w: number; opacity?: number; filter?: string}> = ({src, nat, box, x, y, w, opacity = 1, filter}) => {
+	const s = w / (box[2] - box[0]);
+	return <image href={staticFile(src)} x={x - box[0] * s} y={y - box[1] * s} width={nat[0] * s} height={nat[1] * s} opacity={opacity} style={filter ? {filter} : undefined} />;
+};
+const C = 'assets/chemistry/';
+export const G1 = {
+	tree: {src: C + 'g1-tree-v1.png', nat: [1800, 2200] as [number, number], box: [231, 264, 1568, 1935] as [number, number, number, number]},
+	leaf: {src: C + 'g1-leaf-v1.png', nat: [2200, 1400] as [number, number], box: [331, 274, 1870, 1126] as [number, number, number, number]},
+	bowl: {src: C + 'g1-sugar-bowl-v1.png', nat: [1600, 1400] as [number, number], box: [128, 126, 1470, 1273] as [number, number, number, number]},
+	flame: {src: C + 'g1-flame-v1.png', nat: [1400, 1800] as [number, number], box: [406, 145, 993, 1656] as [number, number, number, number]},
+};

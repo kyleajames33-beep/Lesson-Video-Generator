@@ -4,7 +4,7 @@ import {Callout, scribbleEllipse} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, ANTHERS, ART, Art, artH, BeeIcon, BLUE, Chip, DrawPath, Enter, Fade, FEMALE, FL, fp, fullKey, Heading, HandText, INK, INK_SOFT, KEY_FEMALE, KEY_MALE,
-	Label, mapper, MALE, NameKey, Note, Overlay, Pin, POLLEN, prog, S, Scribble, SpermDot, Specks, EggDot, TEAL, Cross,
+	Label, mapper, MALE, NameKey, Note, Overlay, Pin, POLLEN, prog, S, Scribble, SpermDot, Specks, EggDot, TEAL, Cross, has, SvgArt,
 } from './shared';
 
 // ---------- 1. Hook ----------
@@ -86,11 +86,15 @@ export const SceneMale: React.FC = () => {
 				{/* pollen grain pops out of an anther */}
 				<g opacity={pop}>
 					<DrawPath d={`M${anthers[3][0] + 30},${anthers[3][1]} C${anthers[3][0] + 120},${anthers[3][1] - 40} 1480,420 1550,462`} at={c.grain} dur={20} color={MALE} width={4} dash="3 10" />
+					{has(ART.grainOnly) ? (
+						<g transform={`translate(1640,480) scale(${0.4 + 0.6 * pop})`}><SvgArt a={ART.grainOnly} x={-100} y={-102} w={200} clip /></g>
+					) : (
 					<g transform={`translate(1640,480) scale(${0.4 + 0.6 * pop})`}>
 						<circle r={86} fill={POLLEN} stroke={AMBER_INK} strokeWidth={5} />
 						{Array.from({length: 14}, (_, i) => <circle key={i} cx={Math.cos(i * 0.9) * 66} cy={Math.sin(i * 0.9) * 66} r={6} fill="#f7dc7a" />)}
 						<circle r={30} fill="#fff6d6" stroke={AMBER_INK} strokeWidth={3} opacity={prog(f, c.cells, 14)} />
 					</g>
+					)}
 				</g>
 				<Fade at={c.grain + 14}><Label x={1640} y={620} at={c.grain + 14} text="pollen grain" size={50} color={MALE} /></Fade>
 				<Fade at={c.cells}><Label x={1640} y={668} at={c.cells} text="a plain cell inside," size={34} color={INK_SOFT} font="body" weight={600} /><Label x={1640} y={708} at={c.cells + 6} text="which will become sperm" size={34} color={INK_SOFT} font="body" weight={600} /></Fade>

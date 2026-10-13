@@ -3,7 +3,7 @@ import React, {useMemo} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {DrawPath, Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, PAPER_DEEP, Plate, prog, rng} from '../../kit';
 import {Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
-import {BAD, HEAT, HEAT_SOFT, LIGHT, OXY, SPREAD, SPREAD_SOFT, SURR, smooth} from './common';
+import {BAD, G1, HEAT, HEAT_SOFT, LIGHT, OXY, SPREAD, SPREAD_SOFT, SURR, SvgPaint, smooth} from './common';
 import * as A from './assets';
 
 export {Fade, Overlay, SvgText, TEAL};
@@ -311,14 +311,12 @@ export const DgIcon: React.FC<{cx: number; cy: number; s?: number; o?: number}> 
 );
 export const FireIcon: React.FC<{cx: number; cy: number; s?: number; lit?: number}> = ({cx, cy, s = 1, lit = 1}) => (
 	<g transform={`translate(${cx},${cy}) scale(${s})`} opacity={0.35 + 0.65 * lit}>
-		<path d="M0,-44 C10,-24 30,-14 28,10 C26,30 12,40 0,40 C-14,40 -28,28 -26,8 C-24,-6 -14,-12 -12,-26 C-6,-20 -2,-30 0,-44 Z" fill="#f08a3c" stroke={INK} strokeWidth={3.5} />
-		<path d="M0,2 C8,12 14,18 10,28 C8,34 -8,34 -10,26 C-12,16 -4,12 0,2 Z" fill="#ffd36a" />
+		<SvgPaint {...G1.flame} x={-17} y={-46} w={34} />
 	</g>
 );
 export const LeafIcon: React.FC<{cx: number; cy: number; s?: number; lit?: number}> = ({cx, cy, s = 1, lit = 1}) => (
 	<g transform={`translate(${cx},${cy}) scale(${s})`} opacity={0.35 + 0.65 * lit}>
-		<path d="M-34,26 C-40,-18 -4,-44 38,-40 C42,2 14,38 -34,26 Z" fill="#7fbf5a" stroke={INK} strokeWidth={3.5} />
-		<path d="M-34,26 C-14,6 6,-14 30,-30" fill="none" stroke={INK} strokeWidth={3} />
+		<SvgPaint {...G1.leaf} x={-43} y={-24} w={86} />
 	</g>
 );
 
