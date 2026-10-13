@@ -51,6 +51,13 @@ export const PL: Record<string, PDef> = {
 	plantation: {src: A.PLANTATION, nat: [2330, 1197], box: [246, 267, 1835, 645]},
 	flowerCut: {src: A.FLOWER_CUT, nat: [1600, 1600], box: [324, 205, 953, 1189]},
 	bagged: {src: A.BAGGED, nat: [1652, 1600], box: [397, 263, 877, 1035]},
+	// painted side views (alpha boxes measured with alpha > 20)
+	cowSide: {src: A.COW_SIDE, nat: [2200, 1600], box: [404, 460, 1392, 900]},
+	bullSide: {src: A.BULL_SIDE, nat: [2200, 1600], box: [401, 460, 1397, 900]},
+	calfSide: {src: A.CALF_SIDE, nat: [2200, 1600], box: [782, 910, 636, 450]},
+	sheepSide: {src: A.SHEEP_SIDE, nat: [2200, 1600], box: [549, 560, 1102, 800]},
+	potatoPlant: {src: A.POTATO_PLANT, nat: [1400, 1600], box: [180, 194, 1078, 1245]},
+	potatoSick: {src: A.POTATO_SICK, nat: [1400, 1600], box: [180, 194, 1078, 1245]},
 };
 export const pH = (a: PDef, w: number) => (w * a.box[3]) / a.box[2];
 /** Map plate-native coordinates to screen for a plate placed at x,y with width w. */
@@ -64,9 +71,22 @@ export const PArt: React.FC<{a: PDef; x: number; y: number; w: number; o?: numbe
 	return <Plate src={a.src} natural={a.nat} crop={a.box} width={w} style={{left: x, top: y, opacity: o, ...style}} />;
 };
 
+/** A painted plate drawn inside an SVG (foreignObject), top-left at x,y with width w. Draws nothing when the file is missing. */
+export const SvgPlate: React.FC<{a: PDef; x: number; y: number; w: number; filter?: string}> = ({a, x, y, w, filter}) => {
+	if (!A.HAVE.has(a.src)) return null;
+	const h = pH(a, w);
+	return (
+		<foreignObject x={x} y={y} width={w} height={h} style={{overflow: 'visible'}}>
+			<div style={{position: 'relative', width: w, height: h, filter}}>
+				<Plate src={a.src} natural={a.nat} crop={a.box} width={w} style={{left: 0, top: 0}} />
+			</div>
+		</foreignObject>
+	);
+};
+
 // ---------- tiny icons (svg, centre origin) ----------
 /** Coded side-view cow, bull or sheep, about 110 wide. `grey` 0..1 washes it grey (infected). */
-export const AnimalIcon: React.FC<{x: number; y: number; s?: number; kind?: 'cow' | 'bull' | 'sheep'; grey?: number; o?: number; flip?: boolean; ring?: string}> = ({x, y, s = 1, kind = 'cow', grey = 0, o = 1, flip, ring}) => {
+export const AnimalIconCoded: React.FC<{x: number; y: number; s?: number; kind?: 'cow' | 'bull' | 'sheep'; grey?: number; o?: number; flip?: boolean; ring?: string}> = ({x, y, s = 1, kind = 'cow', grey = 0, o = 1, flip, ring}) => {
 	const dark = '#4a4540';
 	return (
 		<g transform={`translate(${x},${y}) scale(${flip ? -s : s},${s})`} opacity={o}>
@@ -94,6 +114,25 @@ export const AnimalIcon: React.FC<{x: number; y: number; s?: number; kind?: 'cow
 					{grey > 0 ? <rect x={-50} y={kind === 'bull' ? -32 : -28} width={100} height={kind === 'bull' ? 50 : 42} rx={20} fill={GREYC} opacity={grey * 0.85} /> : null}
 				</g>
 			)}
+		</g>
+	);
+};
+
+/** Painted side-view animal (hooves at y + 34, facing right; `flip` mirrors). `calf` is the young animal. Uses the coded animal if a plate is missing. */
+const ANIMALS: Record<'cow' | 'bull' | 'sheep' | 'calf', {a: PDef; w: number; ring: [number, number]}> = {
+	cow: {a: PL.cowSide, w: 140, ring: [84, 58]},
+	bull: {a: PL.bullSide, w: 140, ring: [84, 58]},
+	sheep: {a: PL.sheepSide, w: 112, ring: [70, 52]},
+	calf: {a: PL.calfSide, w: 92, ring: [58, 44]},
+};
+export const AnimalIcon: React.FC<{x: number; y: number; s?: number; kind?: 'cow' | 'bull' | 'sheep' | 'calf'; grey?: number; o?: number; flip?: boolean; ring?: string}> = ({x, y, s = 1, kind = 'cow', grey = 0, o = 1, flip, ring}) => {
+	const d = ANIMALS[kind];
+	if (!A.HAVE.has(d.a.src)) return <AnimalIconCoded x={x} y={y} s={s} kind={kind === 'calf' ? 'cow' : kind} grey={grey} o={o} flip={flip} ring={ring} />;
+	const h = pH(d.a, d.w);
+	return (
+		<g transform={`translate(${x},${y}) scale(${flip ? -s : s},${s})`} opacity={o}>
+			{ring ? <ellipse cx={0} cy={34 - h / 2} rx={d.ring[0]} ry={d.ring[1]} fill="none" stroke={ring} strokeWidth={6} /> : null}
+			<SvgPlate a={d.a} x={-d.w / 2} y={34 - h} w={d.w} filter={grey > 0 ? `grayscale(${grey * 0.9}) brightness(${1 - grey * 0.1})` : undefined} />
 		</g>
 	);
 };
@@ -138,21 +177,28 @@ export const BarnIcon: React.FC<{x: number; y: number; s?: number; o?: number; c
 	</g>
 );
 
-/** Wheat plant icon for coded fields (a few grains on a stem). */
-export const WheatIcon: React.FC<{x: number; y: number; s?: number; o?: number; rust?: number; shield?: number}> = ({x, y, s = 1, o = 1, rust = 0, shield = 0}) => (
-	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
-		<path d="M0,56 L0,-6" stroke="#6f8a3a" strokeWidth={5} strokeLinecap="round" />
-		<path d="M0,40 C-18,34 -26,22 -28,10 M0,30 C18,24 26,12 28,0" fill="none" stroke="#6f8a3a" strokeWidth={4} strokeLinecap="round" />
-		{[[-8, -14], [8, -18], [-8, -34], [8, -38], [0, -54]].map(([gx, gy], i) => <ellipse key={i} cx={gx} cy={gy} rx={8} ry={14} fill="#e8c35b" stroke="#9a7a1f" strokeWidth={2.5} transform={`rotate(${gx < 0 ? -14 : gx > 0 ? 14 : 0} ${gx} ${gy})`} />)}
-		{rust > 0 ? [[-2, 36], [-14, 18], [10, 8], [-6, -10], [6, -32]].map(([rx, ry], i) => <circle key={i} cx={rx} cy={ry} r={6} fill="#c25a1c" opacity={rust} />) : null}
-		{shield > 0 ? (
-			<g transform="translate(26,-36)" opacity={shield}>
-				<path d="M0,-18 L16,-12 L14,6 C12,16 6,20 0,24 C-6,20 -12,16 -14,6 L-16,-12Z" fill="#cfe6d6" stroke={GAIN} strokeWidth={4} strokeLinejoin="round" />
-				<path d="M-6,2 L-1,8 L8,-6" fill="none" stroke={GAIN} strokeWidth={4} strokeLinecap="round" />
-			</g>
-		) : null}
-	</g>
-);
+/** Wheat plant icon for fields and rows: the painted ear and leaves plate (coded rust spots and the shield are overlays). */
+export const WheatIcon: React.FC<{x: number; y: number; s?: number; o?: number; rust?: number; shield?: number}> = ({x, y, s = 1, o = 1, rust = 0, shield = 0}) => {
+	const painted = A.HAVE.has(PL.ear.src);
+	return (
+		<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
+			{painted ? <SvgPlate a={PL.ear} x={-31} y={-72} w={62} /> : (
+				<g>
+					<path d="M0,56 L0,-6" stroke="#6f8a3a" strokeWidth={5} strokeLinecap="round" />
+					<path d="M0,40 C-18,34 -26,22 -28,10 M0,30 C18,24 26,12 28,0" fill="none" stroke="#6f8a3a" strokeWidth={4} strokeLinecap="round" />
+					{[[-8, -14], [8, -18], [-8, -34], [8, -38], [0, -54]].map(([gx, gy], i) => <ellipse key={i} cx={gx} cy={gy} rx={8} ry={14} fill="#e8c35b" stroke="#9a7a1f" strokeWidth={2.5} transform={`rotate(${gx < 0 ? -14 : gx > 0 ? 14 : 0} ${gx} ${gy})`} />)}
+				</g>
+			)}
+			{rust > 0 ? [[-2, 36], [-14, 18], [10, 8], [-6, -10], [6, -32]].map(([rx, ry], i) => <circle key={i} cx={rx} cy={ry} r={4.5} fill="#c25a1c" stroke="#8a3a0c" strokeWidth={1.5} opacity={rust} />) : null}
+			{shield > 0 ? (
+				<g transform="translate(26,-36)" opacity={shield}>
+					<path d="M0,-18 L16,-12 L14,6 C12,16 6,20 0,24 C-6,20 -12,16 -14,6 L-16,-12Z" fill="#cfe6d6" stroke={GAIN} strokeWidth={4} strokeLinejoin="round" />
+					<path d="M-6,2 L-1,8 L8,-6" fill="none" stroke={GAIN} strokeWidth={4} strokeLinecap="round" />
+				</g>
+			) : null}
+		</g>
+	);
+};
 
 /** Shattered shield: two halves flying apart as `p` goes 0..1. */
 export const ShieldBreak: React.FC<{x: number; y: number; s?: number; p: number; o?: number}> = ({x, y, s = 1, p, o = 1}) => (
@@ -298,7 +344,7 @@ export const HerdGrid: React.FC<{x: number; y: number; cols?: number; n?: number
 				const ringP = ringed.includes(i) ? prog(f, ringAt, 12) : 0;
 				return (
 					<g key={i}>
-						<AnimalIcon x={cx} y={cy} s={s} kind={kind} grey={grey ? grey(i) : 0} />
+						<AnimalIconCoded x={cx} y={cy} s={s} kind={kind} grey={grey ? grey(i) : 0} />
 						<BeadDot cx={cx} cy={cy - 40 * s - 12} r={11} color={color(i)} />
 						{ringP > 0 ? <ellipse cx={cx} cy={cy - 8} rx={66 * ringP} ry={50 * ringP} fill="none" stroke={ringColor} strokeWidth={6} opacity={ringP} /> : null}
 					</g>

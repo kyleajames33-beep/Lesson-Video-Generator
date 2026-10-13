@@ -31,7 +31,9 @@ export const SceneCoef: React.FC = () => {
 	const rx = rowXs(revItems, 50, LX);
 	const merged: Term = {...HIs, p: '2', at: K4.squared + 4, pAt: K4.squared + 14};
 	const fw1 = cw(C, 'a fifth means that number is point oh five', 0);
-	const valF: Term[] = [{t: '0.05', br: false, at: K4.five}, {t: '×', br: false, at: K4.five + 14}, {t: '2', br: false, at: K4.five + 20}, {t: '×', br: false, at: K4.five + 26}, {t: '2', br: false, at: K4.five + 32}, {t: '=', br: false, at: K4.five + 40}, {t: '0.2', br: false, at: K4.five + 46, color: FWD}];
+	const fOut = vals(0) - 6;
+	const valF: Term[] = [{t: '0.05', br: false, at: K4.five, out: fOut}, {t: '×', br: false, at: K4.five + 14, out: fOut}, {t: '2', br: false, at: K4.five + 20, out: fOut}, {t: '×', br: false, at: K4.five + 26, out: fOut}, {t: '2', br: false, at: K4.five + 32, out: fOut}, {t: '=', br: false, at: K4.five + 40, out: fOut}, {t: '0.2', br: false, at: K4.five + 46, color: FWD, out: fOut}];
+	const algebra: Term[] = [{t: '0.05', br: false, at: K4.set + 6}, {t: '×', br: false, at: K4.set + 12}, {...H2s, at: K4.set + 16}, {...I2s, at: K4.set + 22}, {t: '=', br: false, at: K4.set + 30}, {t: '0.05 / 49', br: false, at: K4.set + 36, color: AMBER_INK}, {t: '×', br: false, at: K4.set + 42}, {...HIs, p: '2', at: K4.set + 46, pAt: K4.set + 50}];
 	const valR: Term[] = [{t: '0.2 / 14', p: '2', br: false, at: vals(0)}, {t: '= 0.2 / 196', br: false, at: vals(4)}, {t: '= 0.05 / 49', br: false, at: cw(C, 'point oh five over forty-nine', 0, 1), color: AMBER_INK}];
 	// final fraction
 	const FS = 56, FCX = 1130, FCY = 880;
@@ -69,11 +71,14 @@ export const SceneCoef: React.FC = () => {
 				<Dot x={870 - 46 * sR} y={540 - 20 * sR} r={12} fill={H2C} stroke={H2_INK} opacity={sR > 0.02 ? 1 : 0} />
 				<Dot x={890 + 46 * sR} y={540 + 20 * sR} r={16} fill={I2C} opacity={sR > 0.02 ? 1 : 0} />
 				<Ring cx={880} cy={540} rx={90} ry={50} at={K4.split + 34} out={K4.split + 84} color={AMBER_INK} seed={8} />
+				<Sx x={1000} y={620} text="two HI meet" size={34} hand color={AMBER_INK} anchor="end" at={K4.split + 10} out={K4.split + 84} />
+				<Sx x={980} y={620} text="split into H_2 and I_2" size={34} hand color={INK_SOFT} anchor="end" at={K4.split + 90} />
 				<Line x={LX} y={540} size={50} items={revItems} />
 				{f >= K4.squared ? <TermAt m={merged} x={rx[3].x} y={540} size={50} /> : null}
 				<DrawPath d={`M${rx[3].x + 60},${470} Q${rx[3].x + 120},${440} ${rx[3].x + 150},${486}`} at={K4.squared + 16} dur={18} color={TEAL} width={5} />
 				<Chip x={LX} y={576} w={640} h={54} text="like 2NO_2 in the squeeze video" size={36} at={K4.nitro} color={INK_SOFT} />
 				<Line x={LX} y={700} size={42} items={valR} />
+				<Line x={LX} y={772} size={40} items={algebra} />
 				{/* set equal */}
 				<Fade at={K4.set}>
 					<DrawPath d="M770,330 Q735,430 770,530" at={K4.set} dur={20} color={TEAL} width={7} />
@@ -98,7 +103,7 @@ const TermAt: React.FC<{m: Term; x: number; y: number; size: number}> = ({m, x, 
 
 // ---------- 3b. The pattern for any equation, and a check ----------
 const D = 'any-equation';
-const K5 = cues(sc(D), {shown: 'We have shown why', any: 'any balanced equation', top: 'Products go on top', under: 'reactants underneath', raised: 'raised to the power of its coefficient', given: 'for the equation exactly as given', tube1: 'Our settled tube', leave: 'Leave the power off', put: 'no longer stays put', tube2: 'A tube that started with more iodine', again: 'forty-nine again'});
+const K5 = cues(sc(D), {shown: 'We have shown why', two: 'for two reactions', real: 'Real reactions', many: 'measurements on many reactions', pattern: 'same pattern', any: 'any balanced equation', top: 'Products go on top', under: 'reactants underneath', raised: 'raised to the power of its coefficient', given: 'for the equation exactly as given', tube1: 'Our settled tube', leave: 'Leave the power off', put: 'no longer stays put', tube2: 'A tube that started with more iodine', again: 'forty-nine again'});
 const c1 = (k: number) => cw(D, 'fourteen squared over two times two', k);
 const c1b = (k: number) => cw(D, 'a hundred and ninety-six over four', k);
 const c2 = (k: number) => cw(D, 'twenty-eight squared over two times eight', k);
@@ -120,8 +125,9 @@ export const SceneAny: React.FC = () => {
 		{t: 'B', p: 'b', at: K5.under + 14, from: sp(2), color: '#c4582f', pAt: raised + 12, pFrom: co(2)},
 	];
 	const shrink = kf(f, [[K5.tube1 - 6, 0], [K5.tube1 + 34, 1]]);
-	const px = 960 + (430 - 960) * shrink, py = 640 + (975 - 640) * shrink, ss = 1 - 0.5 * shrink;
+	const px = 960 + (300 - 960) * shrink, py = 640 + (218 - 640) * shrink, ss = 1 - 0.5 * shrink;
 	const stageA = 1 - prog(f, K5.tube1 - 6, 14);
+	const stageB0 = 1 - prog(f, K5.top - 20, 14);
 	const tubeA = prog(f, K5.tube1, 20);
 	const S = 52, yA = 330, yB = 650;
 	const n14: Term[] = [{t: '14', p: '2', br: false, at: c1(0), pAt: c1(1)}];
@@ -142,18 +148,35 @@ export const SceneAny: React.FC = () => {
 			<Overlay>
 				{/* stage A: the general form */}
 				<g opacity={stageA}>
-					<Sx x={GX - 330} y={214} text="the equation, as given" size={42} color={INK_SOFT} hand at={K5.shown} />
+					<Sx x={GX - 170} y={192} text="the equation, as given" size={42} color={INK_SOFT} hand at={K5.shown} />
 					<EqStrip items={GEN} x={GX} y={GY} size={GS} at={K5.any} anchor="middle" />
+				</g>
+				{/* the two worked cases, then the bridge sentence */}
+				<g opacity={stageB0}>
+					<Fade at={K5.shown + 6}>
+						<rect x={330} y={430} width={540} height={250} rx={24} fill="#fffdf8" stroke={FWD} strokeWidth={3.5} />
+						<Sx x={620} y={484} text="iron tube" size={40} color={FWD} hand anchor="middle" at={K5.shown + 8} />
+					</Fade>
+					<Frac cx={610} cy={570} size={44} num={[{t: 'FeSCN^{2+}', br: true, at: K5.shown + 14}]} den={[{t: 'Fe^{3+}', at: K5.shown + 20}, {t: 'SCN^{−}', at: K5.shown + 26}]} barAt={K5.shown + 12} prefix="K =" />
+					<Sx x={620} y={660} text="each coefficient 1: power 1" size={34} color={INK_SOFT} hand anchor="middle" at={K5.shown + 30} />
+					<Fade at={K5.two}>
+						<rect x={1050} y={430} width={540} height={250} rx={24} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={3.5} />
+						<Sx x={1340} y={484} text="hydrogen iodide tube" size={40} color={AMBER_INK} hand anchor="middle" at={K5.two + 2} />
+					</Fade>
+					<Frac cx={1350} cy={570} size={44} num={[{t: 'HI', p: '2', at: K5.two + 8, pAt: K5.two + 12}]} den={[{t: 'H_2', at: K5.two + 14}, {t: 'I_2', at: K5.two + 20}]} barAt={K5.two + 6} prefix="K =" />
+					<Sx x={1340} y={660} text="coefficient 2: power 2" size={34} color={INK_SOFT} hand anchor="middle" at={K5.two + 24} />
+					<Sx x={960} y={770} text="real reactions: often several smaller steps" size={40} color={INK_SOFT} hand anchor="middle" at={K5.real} />
+					<Sx x={960} y={830} text="many reactions measured: the same pattern" size={44} color={TEAL} hand anchor="middle" at={K5.many} />
 				</g>
 				<g transform={`translate(${px} ${py}) scale(${ss}) translate(-960 -640)`}>
 					<Frac cx={960} cy={640} size={78} num={num} den={den} barAt={K5.top - 6} prefix="K =" />
 				</g>
 				<Sx x={960} y={830} text="for the equation as given" size={48} color={TEAL} anchor="middle" hand at={K5.given} out={K5.tube1 - 6} />
 				{/* stage B: the check */}
-				<GasTube x={120} y={240} w={360} h={180} counts={{h: 2, i: 2, hi: 14}} seed={5} reveal={tubeA} clamps={false} />
-				<GasTube x={120} y={560} w={360} h={180} counts={{h: 2, i: 8, hi: 28}} seed={9} reveal={prog(f, K5.tube2 - 8, 20)} clamps={false} />
-				<Sx x={120} y={470} text="settled: 2, 2, 14" size={40} color={INK_SOFT} hand at={K5.tube1 + 6} />
-				<Sx x={120} y={790} text="started with 16 H_2 and 22 I_2, settles at 2, 8, 28" size={36} color={INK_SOFT} hand at={K5.tube2 + 6} />
+				<GasTube x={120} y={296} w={360} h={180} counts={{h: 2, i: 2, hi: 14}} seed={5} reveal={tubeA} clamps={false} />
+				<GasTube x={120} y={600} w={360} h={180} counts={{h: 2, i: 8, hi: 28}} seed={9} reveal={prog(f, K5.tube2 - 8, 20)} clamps={false} />
+				<Sx x={120} y={524} text="settled: 2, 2, 14" size={40} color={INK_SOFT} hand at={K5.tube1 + 6} />
+				<Sx x={120} y={834} text="started with 16 H_2 and 22 I_2, settles at 2, 8, 28" size={36} color={INK_SOFT} hand at={K5.tube2 + 6} />
 				{/* row 1 */}
 				<Frac cx={640} cy={yA} size={S} num={n14} den={d22} barAt={c1(0)} />
 				<Sx x={742} y={yA + 17} text="=" size={S} anchor="middle" at={c1b(0) - 4} />
@@ -171,10 +194,12 @@ export const SceneAny: React.FC = () => {
 				{/* without the power */}
 				{wrong('14', d22, K5.leave, cw(D, 'three and a half', 0), '3.5', yA)}
 				{wrong('28', d28, cw(D, 'then one point seven five', 0), cw(D, 'one point seven five', 0), '1.75', yB)}
+				<Sx x={1540} y={yA - 84} text="no power on [HI]" size={36} color={AMBER_INK} anchor="middle" hand at={K5.leave + 4} />
+				<Sx x={1540} y={yB - 84} text="no power on [HI]" size={36} color={AMBER_INK} anchor="middle" hand at={cw(D, 'then one point seven five', 0)} />
 				<Sx x={1640} y={510} text="not constant" size={48} color={AMBER_INK} anchor="middle" hand at={K5.put} />
 				<Cross x={1810} y={496} at={K5.put} s={26} />
-				<Chip x={760} y={900} w={420} text="same temperature" size={38} at={K5.tube1 + 20} color={INK_SOFT} />
-				<Chip x={1220} y={900} w={660} text="made-up numbers to show the pattern" size={36} at={K5.tube1 + 24} color={INK_SOFT} />
+				<Chip x={760} y={860} w={420} text="same temperature" size={38} at={K5.tube1 + 20} color={INK_SOFT} />
+				<Chip x={1220} y={860} w={660} text="made-up numbers to show the pattern" size={36} at={K5.tube1 + 24} color={INK_SOFT} />
 				{INK ? null : null}
 			</Overlay>
 		</>

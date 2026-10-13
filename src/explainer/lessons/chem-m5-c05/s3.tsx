@@ -18,11 +18,13 @@ const EQ: EqItem[] = [
 	{k: 'sp', t: '[CoCl_4]^{2−}(aq)', color: COBLUE_INK}, {k: 'plus'},
 	{k: 'sp', coef: '6', t: 'H_2O(l)', color: INK_SOFT},
 ];
+/** Hand-drawn underline or overline that stays clear of the fraction bar and the ion charges. */
+const Under: React.FC<{x1: number; x2: number; y: number; at: number; color: string}> = ({x1, x2, y, at, color}) => <DrawPath d={`M${x1 - 6},${y} L${x2 + 6},${y - 3}`} at={at} dur={16} color={color} width={7} />;
 export const SceneScratch: React.FC = () => {
 	const f = useCurrentFrame();
 	const eq = eqLayout(EQ, ES, 960 - eqWidth(EQ, ES) / 2);
 	const P = eq.pos;
-	const stateCx = (i: number) => P[i].sx + P[i].w - tw('(aq)', ES) / 2 - 18;
+	const stateCx = (i: number) => P[i].sx + P[i].w - tw("(aq)", ES) / 2 + 14;
 	const colour = kf(f, [[K6.pink - 4, 0], [K6.blue, 0], [K6.blue + 50, 2]]);
 	const FS = 66, FCX = 1100, FCY = 650;
 	const ion = (i: number): [number, number] => [P[i].sx, EY];
@@ -39,9 +41,9 @@ export const SceneScratch: React.FC = () => {
 			<Overlay>
 				<EqStrip items={EQ} x={960} y={EY} size={ES} anchor="middle" at={K6.pink - 4} />
 				{/* stage 1: the states */}
-				<Ring cx={stateCx(0)} cy={EY - 14} rx={64} ry={38} at={K6.states} color={GREEN} seed={2} />
-				<Ring cx={stateCx(2)} cy={EY - 14} rx={64} ry={38} at={K6.states + 14} color={GREEN} seed={3} />
-				<Ring cx={stateCx(4)} cy={EY - 14} rx={64} ry={38} at={K6.states + 28} color={GREEN} seed={4} />
+				<Ring cx={stateCx(0)} cy={EY - 14} rx={40} ry={30} at={K6.states} color={GREEN} seed={2} />
+				<Ring cx={stateCx(2)} cy={EY - 14} rx={40} ry={30} at={K6.states + 14} color={GREEN} seed={3} />
+				<Ring cx={stateCx(4)} cy={EY - 14} rx={40} ry={30} at={K6.states + 28} color={GREEN} seed={4} />
 				<Ring cx={P[6].sx + P[6].w - tw('(l)', ES) / 2} cy={EY - 14} rx={46} ry={38} at={K6.water} color={INK_SOFT} seed={5} />
 				<Tick x={P[0].sx + P[0].w / 2} y={336} at={K6.aq} />
 				<Tick x={P[2].sx + P[2].w / 2} y={336} at={K6.aq + 14} />
@@ -58,9 +60,9 @@ export const SceneScratch: React.FC = () => {
 				<Sx x={FCX + g.W / 2 + 50} y={FCY + 24} text="no power written for 1" size={34} color={INK_SOFT} hand at={K6.third + 70} />
 				{/* last sentence: each ion matched */}
 				<Ring cx={P[4].sx + P[4].w / 2 - 40} cy={EY - 14} rx={120} ry={44} at={K6.brackets + 20} color={COBLUE_INK} seed={7} />
-				<Ring cx={g.num[0].x + g.num[0].w / 2} cy={FCY - 36} rx={g.num[0].w / 2 + 22} ry={58} at={K6.brackets + 30} color={COBLUE_INK} seed={9} />
-				<Ring cx={g.den[0].x + g.den[0].w / 2} cy={FCY + 75} rx={g.den[0].w / 2 + 20} ry={58} at={K6.brackets + 44} color={PINK_INK} seed={11} />
-				<Ring cx={g.den[1].x + g.den[1].w / 2} cy={FCY + 75} rx={g.den[1].w / 2 + 20} ry={58} at={K6.brackets + 58} color={CLC_INK} seed={13} />
+				<Under x1={g.num[0].x} x2={g.num[0].x + g.num[0].w} y={FCY - FS * 0.86 - 22} at={K6.brackets + 30} color={COBLUE_INK} />
+				<Under x1={g.den[0].x} x2={g.den[0].x + g.den[0].w} y={FCY + FS * 1.1 + FS * 0.28 + 16} at={K6.brackets + 44} color={PINK_INK} />
+				<Under x1={g.den[1].x} x2={g.den[1].x + g.den[1].w} y={FCY + FS * 1.1 + FS * 0.28 + 16} at={K6.brackets + 58} color={CLC_INK} />
 				<Sx x={FCX} y={900} text="outer brackets go round the whole ion, with its own brackets and charge" size={46} color={TEAL} anchor="middle" hand at={K6.brackets + 10} />
 			</Overlay>
 		</>

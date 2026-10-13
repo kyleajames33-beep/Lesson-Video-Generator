@@ -68,9 +68,9 @@ export const SceneEvaluate: React.FC = () => {
 // ---------- model answer pieces ----------
 const CARDS: {key: RowKey | 'judge' | 'weigh'; title: string; color: string; body: React.ReactNode}[] = [
 	{key: 'judge', title: 'Judgement', color: AMBER_INK, body: <><span style={{background: 'rgba(224,162,27,0.35)', borderRadius: 6, padding: '0 6px'}}>worthwhile when</span> many unrelated bulls are used, each on only a share of the cows, and health traits count</>},
-	{key: 'gain', title: 'Gain', color: GAIN, body: <>records compare herds using proven bulls with similar herds that mate naturally: faster gains in traits such as milk yield</>},
-	{key: 'variety', title: 'Variety', color: VAR, body: <>a few bulls father most calves, so the gene pool narrows and one disease can spread widely</>},
-	{key: 'cost', title: 'Cost and welfare', color: COST_INK, body: <>semen and trained workers cost money; selecting only for milk yield is linked with lower fertility, a welfare cost for the cow</>},
+	{key: 'gain', title: 'Gain', color: GAIN, body: <>proven-bull herds beat similar herds that mate naturally: faster gains, such as milk yield</>},
+	{key: 'variety', title: 'Variety', color: VAR, body: <>a few bulls father most calves: narrower gene pool, one disease can spread</>},
+	{key: 'cost', title: 'Cost and welfare', color: COST_INK, body: <>semen and workers cost money; selecting for milk yield links to lower fertility, a welfare cost</>},
 	{key: 'weigh', title: 'Weigh, then verdict: when', color: INK, body: <>the benefit is real, and it lasts if many unrelated bulls are used, each on only a share of the cows, and health traits count</>},
 ];
 const CY = [182, 300, 418, 536, 654];
@@ -182,7 +182,7 @@ export const SceneModelVerdict: React.FC = () => {
 			<RowCard i={1} at={-40} />
 			<RowCard i={2} at={-40} />
 			<RowCard i={3} at={-40} />
-			<RowCard i={4} at={c.fin} />
+			<RowCard i={4} at={c.verdict} />
 			<Overlay>
 				<Balance x={BX} y={BY} w={BW} angle={tip} o={prog(f, c.fin + 20, 14)} />
 				<g opacity={prog(f, c.large, 12)}><Tick x={pans.left[0] - 36} y={pans.left[1] - 22} at={c.large} s={0.9} /><CoinIcon x={pans.left[0] + 30} y={pans.left[1] - 24} r={22} /></g>
@@ -217,7 +217,6 @@ export const SceneModelVerdict: React.FC = () => {
 				</Overlay>
 			</SlideIn>
 			<Tag at={c.protect} x={96} y={742} text="keep variety safe" color={VAR} size={44} />
-			<Pill at={c.verdict} x={1100} y={530} color={GAIN} size={40}>verdict: the benefit is real, and it lasts if...</Pill>
 		</>
 	);
 };

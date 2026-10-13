@@ -51,13 +51,13 @@ export const SceneAttempt: React.FC = () => {
 			{/* 1: the ram's straws go to every farm */}
 			<Overlay>
 				<g opacity={prog(f, c.ram, 14)}>
-					<AnimalIcon x={X1 + 640} y={Y + 150} s={1.3} kind="sheep" />
-					<Straw x={X1 + 640} y={Y + 80} w={110} rot={-10} frost={1} />
+					<AnimalIcon x={X1 + 640} y={Y + 190} s={1.3} kind="sheep" />
+					<Straw x={X1 + 640} y={Y + 60} w={110} rot={-10} frost={1} />
 				</g>
 				{[0, 1, 2, 3, 4].map(i => (
 					<g key={i} opacity={prog(f, c.ewe + i * 6, 12)}>
 						<BarnIcon x={X1 + 470 + i * 80} y={Y + 330} s={0.8} />
-						<AnimalIcon x={X1 + 470 + i * 80} y={Y + 270} s={0.34} kind="sheep" />
+						<AnimalIcon x={X1 + 470 + i * 80} y={Y + 286} s={0.5} kind="sheep" />
 					</g>
 				))}
 				<g opacity={prog(f, c.same, 12)}>{[0, 1, 2, 3, 4].map(i => <Straw key={i} x={X1 + 470 + i * 80} y={Y + 372} w={44} rot={0} />)}</g>
@@ -116,8 +116,7 @@ export const SceneFeedbackOne: React.FC = () => {
 			<NoteCard x={1000} y={520} w={830} at={c.using} color={AMBER_INK} title="change" size={27}>semen from several unrelated good rams keeps the benefit and lowers that risk</NoteCard>
 			<WrongChip at={c.notwork} x={1000} y={690} text="the semen might not work" size={36} />
 			<Tag at={c.cost1} x={1000} y={756} text="a cost of one dose, not ten years of one ram" color={INK_SOFT} size={32} />
-			<Tag at={c.tenyr + 10} x={1000} y={812} text="best for the traits chosen, not for every disease" color={AMBER_INK} size={40} w={830} />
-			<Tag at={c.tenyr + 40} x={1000} y={886} text="another valid risk is accepted if your change answers it" color={INK_SOFT} size={30} w={830} />
+			<Tag at={c.tenyr + 20} x={1000} y={830} text="another valid risk is accepted if your change answers it" color={INK_SOFT} size={34} w={830} />
 		</>
 	);
 };
@@ -156,7 +155,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 						<ellipse cx={a[0]} cy={a[1]} rx={50} ry={96} fill="none" stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 10" />
 					</g>
 				))}
-				{f >= c.remove && f < t0 + 3 * slot ? <Forceps x={A[Math.min(2, Math.max(0, Math.floor((f - t0) / slot)))][0]} y={A[Math.min(2, Math.max(0, Math.floor((f - t0) / slot)))][1] - 40} s={0.7} open={0.6} /> : null}
+				{f >= c.remove && f < t0 + 3 * slot ? <Forceps x={A[Math.min(2, Math.max(0, Math.floor((f - t0) / slot)))][0]} y={A[Math.min(2, Math.max(0, Math.floor((f - t0) / slot)))][1] - 40} s={0.7} open={0.6} rot={-35} /> : null}
 				<PollenFlow pts={[[780, 360], [600, 430], [st[0] + 6, st[1] + 4]]} at={c.addq} n={6} per={7} dur={44} color="#3b6fa8" />
 				<CoverBag x={150} y={170} w={520} h={690} p={bag} />
 				<Wisp x={780 - Math.sin(Math.min(1, Math.max(0, wt)) * Math.PI) * 60} y={300} o={wt > 0 ? 1 : 0} s={0.8} />
@@ -223,23 +222,26 @@ export const SceneMemory: React.FC = () => {
 
 // ---------- 10. Key notes ----------
 const NOTES = [
-	'Artificial insemination: semen from a chosen male is collected, divided into many doses, usually frozen, and placed in a female\'s reproductive tract during heat, before ovulation. It spreads one male\'s alleles widely, usually at a lower cost than buying and keeping a male on every farm.',
-	'Artificial pollination: the breeder removes the anthers of the seed parent, puts pollen from the chosen parent on its stigma and covers the flowers. Over several generations she keeps the plants with the wanted traits.',
-	'Copying the winner (cloning, for example potato tubers) gives identical plants quickly. They share the same weaknesses, as the Cavendish banana shows.',
-	'Using a few parents on many farms narrows the gene pool, the variety of alleles in a population, so one disease or harmful allele can spread. Frozen semen from other bulls, heritage breeds and outcrossing (breeding with unrelated individuals) help protect variety.',
-	'Evaluate means make a judgement using criteria, the things you judge it by. Use gain (with evidence, such as comparing with similar farms that do not use it), variety, cost and welfare (for animals, how well their lives go). Give a judgement, reasons from each criterion, a weighing, and when it would change.',
+	'Artificial insemination: semen from a chosen male is collected, divided, usually frozen and placed in the female\'s tract during heat, before ovulation. One male\'s alleles spread widely and cheaply.',
+	'Artificial pollination: remove the seed parent\'s anthers, put chosen pollen on its stigma, cover the flowers and keep plants with wanted traits.',
+	'Cloning (such as potato tubers) gives identical plants quickly, with shared weaknesses.',
+	'Few parents used widely narrow the gene pool, so one disease or harmful allele can spread. Frozen semen, heritage breeds and outcrossing protect variety.',
+	'Evaluate: make a judgement using criteria. Use gain (with evidence), variety, cost and (for animals) welfare. Give a judgement, reasons from each criterion, a weighing, and when it would change.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 92}}><HandText text="Key notes: what to write in your book" at={2} size={68} cps={40} /></div>
+		<Enter at={110} style={{position: 'absolute', left: 1180, top: 96}}>
+			<div style={{fontFamily: FONT_HAND, fontSize: 40, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
+		</Enter>
 		<div style={{position: 'absolute', left: 110, top: 190, width: 1700}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 20, marginBottom: 14}}>
+				<Enter key={i} at={34 + i * 12} style={{display: 'flex', gap: 20, marginBottom: 18}}>
 					<div style={{flex: 'none', width: 16, height: 16, marginTop: 11, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 28, color: INK, lineHeight: 1.22}}>{n}</div>
+					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 36, color: INK, lineHeight: 1.22}}>{n}</div>
 				</Enter>
 			))}
-			<Enter at={80} style={{marginTop: 10, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
+			<Enter at={100} style={{marginTop: 10, background: '#fffdf8', border: `4px solid ${AMBER}`, borderRadius: 24, padding: '10px 30px', width: 'fit-content'}}>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 62, color: AMBER_INK, lineHeight: 1.1}}>Pick few parents: gain speed, risk variety.</div>
 				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 500, fontSize: 26, color: INK, marginTop: 4}}>Few parents, used widely. Speed means faster improvement than leaving mating to chance.</div>
 			</Enter>

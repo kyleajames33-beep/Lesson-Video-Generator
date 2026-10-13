@@ -4,7 +4,7 @@ import {AMBER, AMBER_INK, DrawPath, Enter, FONT_DISPLAY, HandText, INK, INK_SOFT
 import {cues} from '../../cues';
 import {Arrow, CuTube, EqStrip, FWD, Fade, Frac, GasTube, Overlay, Ring, Sx, TEAL, Flask, Cross, wob} from './parts';
 import type {EqItem, Term} from './parts';
-import {CU_DEEP, GREEN, Heading, cw, sc} from './common';
+import {GREEN, Heading, cw, sc} from './common';
 
 // ---------- 6. What the size of K tells you ----------
 const Z = 'size-of-k';
@@ -80,9 +80,8 @@ export const SceneSizeK: React.FC = () => {
 					<Arrow x1={1640} y1={690} x2={X(13) - 6} y2={612} at={K8.n13} color={FWD} width={6} />
 					<circle cx={X(13) - 6} cy={BY + BH / 2} r={16 * mark(f, K8.n13 + 10)} fill={FWD} stroke={INK} strokeWidth={3} />
 					<Fade at={K8.n13 - 6}>
-						<rect x={1440} y={690} width={430} height={262} rx={22} fill="#fffdf8" stroke={FWD} strokeWidth={3.5} />
+						<rect x={1440} y={690} width={430} height={272} rx={22} fill="#fffdf8" stroke={FWD} strokeWidth={3.5} />
 					</Fade>
-					<CuTube x={1470} y={730} w={70} h={220} color={CU_DEEP} at={K8.n13} />
 					<Sx x={1566} y={772} text="K near 10^{13}" size={42} color={FWD} hand at={K8.n13 + 6} />
 					<Sx x={1566} y={826} text="plenty of NH_3:" size={34} color={INK_SOFT} hand at={K8.n13 + 12} />
 					<Sx x={1566} y={866} text="almost all the" size={34} color={INK_SOFT} hand at={K8.n13 + 16} />
@@ -97,6 +96,7 @@ export const SceneSizeK: React.FC = () => {
 					<Sx x={1130} y={282} text="K says where, not how fast" size={56} color={TEAL} hand at={K8.fast + 16} />
 				</Fade>
 			</Overlay>
+			<CuTube x={1480} y={730} h={220} deep={mark(f, K8.n13 + 14)} at={K8.n13} />
 		</>
 	);
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, Countdown, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Chip, Cross, EqStrip, Fade, FracX, GivensCard, MiniIce, Overlay, Radical, Ring, Sx, Tag, TEAL, Tick, CodedVessel, FurnaceIcon, DotRow, eqLayout, tw} from './parts';
+import {Arrow, Chip, Cross, EqStrip, Fade, FracX, GivensCard, MiniIce, Overlay, Radical, Ring, Sx, Tag, TEAL, Tick, NO2Vessel, FurnaceIcon, DotRow, eqLayout, tw} from './parts';
 import type {EqItem, Term} from './parts';
 import {toks} from '../chem-m5-c05/parts';
 import {IceTable, iceCell} from './ice';
@@ -14,7 +14,7 @@ const N2O4_EQ: EqItem[] = [{k: 'sp', t: 'N_2O_4(g)', color: N2O4C}, {k: 'arrow'}
 const N2O4_REV: EqItem[] = [{k: 'sp', coef: '2', t: 'NO_2(g)', color: NO2C}, {k: 'arrow'}, {k: 'sp', t: 'N_2O_4(g)', color: N2O4C}];
 const nCols = (a: number) => [{name: 'N_2O_4', at: a, color: N2O4C}, {name: 'NO_2', at: a + 8, color: NO2C}];
 const T = {x: 720, y: 620, s: 0.76};
-const VES = {x: 740, y: 330, w: 170, h: 240};
+const VES = {x: 757, y: 322, h: 272};
 const card = (at: number, ats?: number[]) => [
 	{text: 'N_2O_4 start: 0.100 mol', at: ats ? ats[0] : at, size: 34},
 	{text: 'start: no NO_2', at: ats ? ats[1] : at, size: 34},
@@ -42,7 +42,6 @@ export const SceneAttempt: React.FC = () => {
 				<Tag x={440} y={96} w={330} text="illustrative values" at={KA.seal} />
 				<EqStrip items={N2O4_EQ} x={96} y={250} size={56} at={KA.eq} />
 				<GivensCard x={96} y={330} w={560} h={420} at={KA.seal - 10} lh={52} lines={card(0, [KA.seal + 14, KA.nothing, KA.ves, KA.conc, KA.val, KA.steady])} />
-				<CodedVessel x={VES.x} y={VES.y} w={VES.w} h={VES.h} tint={0} at={KA.seal} />
 				{/* the two demands stay visible */}
 				<Badge x={1000} y={320} n="1" at={KA.one} />
 				<Sx x={1050} y={334} text="Find K for" size={42} at={KA.one + 6} />
@@ -56,6 +55,7 @@ export const SceneAttempt: React.FC = () => {
 				<Sx x={1290} y={680} text="Pause here to answer." size={58} color={AMBER_INK} hand at={KA.pause} />
 				<Countdown start={hold.startFrame} end={hold.endFrame} x={1650} y={810} r={72} />
 			</Overlay>
+			<NO2Vessel x={VES.x} y={VES.y} h={VES.h} tint={0} at={KA.seal} />
 		</>
 	);
 };
@@ -98,7 +98,6 @@ export const SceneFeedback1: React.FC = () => {
 			<Overlay>
 				<EqStrip items={N2O4_EQ} x={96} y={250} size={56} at={-100} />
 				<GivensCard x={96} y={330} w={560} h={420} at={-100} lh={52} lines={card(-100)} />
-				<CodedVessel x={VES.x} y={VES.y} w={VES.w} h={VES.h} tint={tint} at={-100} />
 				<IceTable x={T.x} y={T.y} s={T.s} outlineAt={-400} cols={nCols(-100)} rows={ice(
 					{at: -100, lit: [KF1.start, KF1.is + 50], cells: [
 						{text: '0.0500', at: KF1.is + 6, color: N2O4C, from: [330, 850], flyDur: 30},
@@ -156,17 +155,23 @@ export const SceneFeedback1: React.FC = () => {
 				<Sx x={1310} y={905} text="K = 0.0257" size={84} color={TEAL} hand at={KF1.r257} />
 				<Fade at={KF1.r257 + 50}>
 					<Sx x={96} y={890} text="check" size={36} color={TEAL} hand at={KF1.r257 + 50} />
-					<Sx x={96} y={940} text="0.0350 + 0.0300 ÷ 2 = 0.0500" size={36} color={INK_SOFT} at={KF1.r257 + 56} />
+					<Sx x={96} y={940} text="0.0350 + 0.0150 = 0.0500" size={36} color={INK_SOFT} at={KF1.r257 + 56} />
 					<Tick x={650} y={930} at={KF1.r257 + 80} s={36} />
 				</Fade>
 				{/* wrong answers */}
 				<Chip x={1320} y={290} w={540} text="0.018: initial used" size={38} at={KF1.w1} color={INK_SOFT} cross={KF1.w1b + 30} />
 				<Arrow x1={1318} y1={324} x2={c(0, 0)[0] + 60} y2={c(0, 0)[1] - 6} at={KF1.w1b} color={CROSS} width={5} out={KF1.w2 - 10} />
 				<Chip x={1320} y={372} w={540} text="0.045: change not halved" size={38} at={KF1.w2} color={INK_SOFT} cross={KF1.w2b + 30} />
-				<Arrow x1={1318} y1={406} x2={c(1, 0)[0] + 110} y2={c(1, 0)[1] + 80} at={KF1.w2b} color={CROSS} width={5} out={KF1.w3 - 10} />
+				<Arrow x1={1318} y1={406} x2={c(1, 0)[0] + 76} y2={c(1, 0)[1] - 20} at={KF1.w2b} color={CROSS} width={5} out={KF1.w3 - 10} />
+				<Ring cx={c(1, 0)[0]} cy={c(1, 0)[1]} rx={86} ry={32} at={KF1.w2b + 10} out={KF1.w3 - 10} color={CROSS} seed={5} />
+				<Fade at={KF1.w2b + 24} out={KF1.w3 - 10}>
+					<Sx x={706} y={806} text="not halved: −0.0300" size={38} color={INK_SOFT} anchor="end" hand at={KF1.w2b + 24} />
+					<Sx x={706} y={852} text="leaves 0.0200" size={38} color={INK_SOFT} anchor="end" hand at={KF1.w2b + 32} />
+				</Fade>
 				<Chip x={1320} y={454} w={540} text="0.86: power left off" size={38} at={KF1.w3} color={INK_SOFT} cross={KF1.w3b + 30} />
 				<Ring cx={1690} cy={560} rx={22} ry={28} at={KF1.w3b} color={CROSS} seed={3} />
 			</Overlay>
+			<NO2Vessel x={VES.x} y={VES.y} h={VES.h} tint={tint} at={-100} />
 		</>
 	);
 };
@@ -248,8 +253,8 @@ export const SceneDecision: React.FC = () => {
 					<Radical x={120} y={560} w={270} h={40} at={KD.solve} />
 					<Sx x={450} y={600} text="Given K:" size={52} hand at={KD.k2} />
 					<Sx x={450} y={676} text="x, substitute, solve." size={66} color={TEAL} hand at={KD.x} />
-					<Sx x={450} y={750} text="clean when both sides are perfect squares;" size={36} color={INK_SOFT} hand at={KD.clean} />
-					<Sx x={450} y={796} text="other starts: later" size={36} color={INK_SOFT} hand at={KD.clean + 14} />
+					<Sx x={450} y={750} text="root is clean when the K expression is a perfect square," size={34} color={INK_SOFT} hand at={KD.clean} />
+					<Sx x={450} y={796} text="as here: H_2 and I_2 start equal. Other starts: later" size={34} color={INK_SOFT} hand at={KD.clean + 14} />
 				</Fade>
 				<Fade at={KD.next - 6}>
 					<rect x={1330} y={200} width={530} height={630} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={4} />
@@ -267,24 +272,24 @@ export const SceneDecision: React.FC = () => {
 // ---------- 12. Key notes ----------
 const rich = (text: string) => toks(text).map((t, i) => t.k === 1 ? <sub key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{t.s}</sub> : t.k === 2 ? <sup key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{t.s}</sup> : <span key={i}>{t.s}</span>);
 const NOTES = [
-	'An ICE table has a column for each substance and three rows: Initial, Change and Equilibrium. Work in concentrations: concentration (mol/L) = moles divided by litres.',
-	'The change row follows the coefficients of the balanced equation. A substance used up is minus and a substance made is plus. The initial and equilibrium rows need not follow the coefficients (the start is given and K sets the equilibrium row). Equilibrium = initial + change.',
-	'To find K: write the expression, fill the table from the start and the one measured value, substitute the equilibrium values (never the initial ones), and check the subtraction.',
-	'To find a concentration from K: call the change x, write the change row by the coefficients, substitute and solve. The square root shortcut works only when both sides are perfect squares, for example H_2 and I_2 starting equal. Other starts need a method from a later video. Keep the positive root, and check that no concentration comes out negative.',
-	'K belongs to the equation as written, at one temperature. Reverse the equation: K becomes 1 / K. Multiply every coefficient by n: K goes to the power n (halving gives the square root).',
+	'An ICE table has a column for each substance and rows Initial, Change and Equilibrium. Work in mol/L.',
+	'The change row follows the coefficients (minus for used up, plus for made). The other rows need not. Equilibrium = initial + change.',
+	'To find K: fill the table from the start and the one measured value, then substitute the equilibrium values.',
+	'To find a concentration from K: call the change x, use the coefficients for the change row, substitute and solve. The square root shortcut works when the K expression is a perfect square, as here because H_2 and I_2 start equal. Keep the positive root.',
+	'Reverse the equation: K becomes 1 / K. Multiply every coefficient by n: K goes to the power n.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>
 		<div style={{position: 'absolute', left: 96, top: 84}}><HandText text="Key notes: what to write in your book" at={2} size={64} cps={40} /></div>
 		<div style={{position: 'absolute', left: 120, top: 176, width: 1690}}>
 			{NOTES.map((n, i) => (
-				<Enter key={i} at={14 + i * 10} style={{display: 'flex', gap: 22, marginBottom: 12}}>
+				<Enter key={i} at={34 + i * 12} style={{display: 'flex', gap: 22, marginBottom: 20}}>
 					<div style={{flex: 'none', width: 16, height: 16, marginTop: 11, borderRadius: 999, background: AMBER}} />
-					<div style={{fontFamily: FONT_DISPLAY, fontSize: 29, fontWeight: 500, color: INK, lineHeight: 1.24}}>{rich(n)}</div>
+					<div style={{fontFamily: FONT_DISPLAY, fontSize: 34, fontWeight: 500, color: INK, lineHeight: 1.25}}>{rich(n)}</div>
 				</Enter>
 			))}
 		</div>
-		<Enter at={70} style={{position: 'absolute', left: 96, top: 716, width: 1730}}>
+		<Enter at={96} style={{position: 'absolute', left: 96, top: 730, width: 1730}}>
 			<div style={{background: '#fffdf8', border: `4px solid ${TEAL}`, borderRadius: 22, padding: '8px 30px 10px', boxShadow: '0 12px 28px rgba(60,45,20,0.10)'}}>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34, color: INK_SOFT}}>Memory aid</div>
 				<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56, color: INK, lineHeight: 1.06}}><span style={{color: TEAL}}>Only the change row</span> follows the coefficients.</div>
@@ -292,7 +297,7 @@ export const SceneNotes: React.FC = () => (
 				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 26, color: TEAL, marginTop: 4}}>used up is minus, made is plus; same temperature, equation as written.</div>
 			</div>
 		</Enter>
-		<Enter at={90} style={{position: 'absolute', left: 1180, top: 88}}>
+		<Enter at={110} style={{position: 'absolute', left: 1180, top: 88}}>
 			<div style={{fontFamily: FONT_HAND, fontSize: 40, fontWeight: 700, color: AMBER_INK}}>Pause the video if you need more time to copy.</div>
 		</Enter>
 	</>

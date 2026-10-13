@@ -104,7 +104,7 @@ void FWD; void RED;
 
 // ---------- 2a. The two rates, set equal ----------
 const R = 'rates-equal';
-const K2 = cues(sc(R), {brackets: 'square brackets', remember: 'Now remember the rates', joining: 'joining runs at', splitting: 'splitting runs at', equal: 'the rates are equal'});
+const K2 = cues(sc(R), {brackets: 'square brackets', amount: 'its amount per litre', remember: 'Now remember the rates', joining: 'joining runs at', splitting: 'splitting runs at', equal: 'the rates are equal'});
 const fw = (k: number) => cw(R, 'point three times the iron times the thiocyanate', k);
 const rv = (k: number) => cw(R, 'three times the red ion', k);
 const fin = (k: number) => cw(R, 'so point three times iron times thiocyanate equals three times the red ion', k);
@@ -128,7 +128,7 @@ export const SceneRates: React.FC = () => {
 		{t: '0.3', br: false, at: fin(1)}, {t: '×', br: false, at: fin(3)}, {...FEs, at: fin(4)}, {...SCNs, at: fin(6)},
 		{t: '=', br: false, at: fin(7)}, {t: '3', br: false, at: fin(8)}, {t: '×', br: false, at: fin(9)}, {...REDs, at: fin(11)},
 	];
-	const br0: Term = {...FEs, at: K2.brackets + 20};
+	const br0: Term = {...FEs, at: K2.brackets};
 	const bx = rowXs([br0], 80, 640);
 	return (
 		<>
@@ -138,7 +138,7 @@ export const SceneRates: React.FC = () => {
 				<RateBars x0={170} base={730} scale={9} fwd={30} rev={30} at={K2.remember} fwdLabel="30" revLabel="30" eqAt={K2.equal} bw={110} gx={230} axisLabel="rate (units per tick)" />
 				{/* square brackets mean amount per litre */}
 				<Line x={640} y={262} size={80} items={[br0]} />
-				<Sx x={bx[0].x + bx[0].w + 36} y={262} text="= the amount of Fe^{3+} per litre" size={46} hand color={INK_SOFT} at={K2.brackets + 34} />
+				<Sx x={bx[0].x + bx[0].w + 36} y={262} text="= the amount of Fe^{3+} per litre" size={46} hand color={INK_SOFT} at={K2.amount - 4} />
 				{/* rate lines */}
 				<Line x={640} y={400} size={SZ} items={fwdItems} />
 				<Line x={640} y={540} size={SZ} items={revItems} />

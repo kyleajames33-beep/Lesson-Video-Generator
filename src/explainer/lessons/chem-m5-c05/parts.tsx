@@ -1,10 +1,11 @@
 // Drawing parts for the C5 lesson: the expression builder (rows, fractions, equation strips), tubes and small icons.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {AMBER, AMBER_INK, DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
+import {AMBER, AMBER_INK, DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {Arrow, Bracket, GasTube, RateBars, Ring, smooth} from '../chem-m5-c04b/parts';
 import {ESC, Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
 import {CROSS, GLASS, GREEN} from './common';
+import {CU_DEEP_PLATE, CU_PALE_PLATE} from './assets';
 
 export {Arrow, Bracket, GasTube, RateBars, Ring, smooth, ESC, Fade, Overlay, SvgText, TEAL};
 export const FWD = ESC;
@@ -211,19 +212,19 @@ export const Tick: React.FC<{x: number; y: number; at: number; s?: number}> = ({
 	<DrawPath d={`M${x - s * 0.5},${y} L${x - s * 0.12},${y + s * 0.45} L${x + s * 0.55},${y - s * 0.5}`} at={at} dur={12} color={GREEN} width={8} />
 );
 
-/** Coded test tube: liquid colour, optional label drawn by the caller. */
-export const CuTube: React.FC<{x: number; y: number; w: number; h: number; color: string; level?: number; at?: number; opacity?: number}> = ({x, y, w, h, color, level = 0.66, at = 0, opacity = 1}) => {
+/** Painted copper tube (aligned pale and deep plates, alpha box 410,183,790,1617 of 1200 x 1800). Placed by its visible box; `deep` 0..1 crossfades pale to deep. */
+const CU_NAT: [number, number] = [1200, 1800];
+const CU_BOX: [number, number, number, number] = [410, 183, 380, 1434];
+export const CuTube: React.FC<{x: number; y: number; h: number; deep?: number; at?: number; opacity?: number}> = ({x, y, h, deep = 0, at = 0, opacity = 1}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 16) * opacity;
 	if (o <= 0.01) return null;
-	const r = w / 2, bot = y + h, top = y + h * (1 - level);
+	const w = (CU_BOX[2] / CU_BOX[3]) * h;
 	return (
-		<g opacity={o}>
-			<path d={`M${x},${y} L${x},${bot - r} A${r},${r} 0 0 0 ${x + w},${bot - r} L${x + w},${y}`} fill={GLASS} fillOpacity={0.55} stroke={INK} strokeWidth={4.5} strokeLinecap="round" />
-			<path d={`M${x + 3},${top} L${x + 3},${bot - r} A${r - 3},${r - 3} 0 0 0 ${x + w - 3},${bot - r} L${x + w - 3},${top} Z`} fill={color} fillOpacity={0.9} />
-			<path d={`M${x + w * 0.22},${top + 14} L${x + w * 0.22},${bot - r - 6}`} stroke="#fff" strokeOpacity={0.6} strokeWidth={5} strokeLinecap="round" />
-			<path d={`M${x - 8},${y} L${x + w + 8},${y}`} stroke={INK} strokeWidth={4.5} strokeLinecap="round" />
-		</g>
+		<div style={{position: 'absolute', left: x, top: y, width: w, height: h, opacity: o}}>
+			<Plate src={CU_PALE_PLATE} natural={CU_NAT} crop={CU_BOX} width={w} style={{left: 0, top: 0}} />
+			{deep > 0 ? <Plate src={CU_DEEP_PLATE} natural={CU_NAT} crop={CU_BOX} width={w} style={{left: 0, top: 0, opacity: Math.min(1, deep)}} /> : null}
+		</div>
 	);
 };
 /** Coded flask for a clear solution. */

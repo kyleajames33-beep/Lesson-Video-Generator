@@ -32,8 +32,8 @@ export const SceneUnknownX: React.FC = () => {
 		const x0 = i === 2 ? src.cx + 8 : src.sx + src.w / 2, y0 = EQ.y - 14;
 		const [x1, y1] = iceCell(TB.x, TB.y, 1, 1, i);
 		const e = prog(f, at, 30);
-		const px = x0 + (x1 - x0) * e, py = y0 + (y1 - 54 - y0) * e;
-		const o = prog(f, at, 6) * (1 - prog(f, at + 56, 12));
+		const px = x0 + (x1 - 46 - x0) * e, py = y0 + (y1 - 6 - y0) * e * e * e;
+		const o = prog(f, at, 6) * (1 - prog(f, at + 36, 10));
 		if (o <= 0.01) return null;
 		return (
 			<g key={i} opacity={o}>
@@ -78,8 +78,7 @@ export const SceneUnknownX: React.FC = () => {
 				{chip(0, KU.so - 4, '× 1', '1')}
 				{chip(1, KU.so + 4, '× 1', '1')}
 				{chip(2, KU.so + 22, '× 2', '2')}
-				<Chip x={860} y={800} w={380} text="+x for HI" size={40} at={KU.p2 + 14} color={INK_SOFT} cross={KU.p2 + 38} />
-				<Sx x={860} y={900} text="the coefficient is 2" size={44} color={AMBER_INK} hand at={KU.p2 + 46} />
+				<Sx x={860} y={820} text="the coefficient is 2" size={44} color={AMBER_INK} hand at={KU.p2 + 20} />
 			</Overlay>
 		</>
 	);
@@ -94,6 +93,7 @@ export const SceneSubstitute: React.FC = () => {
 	const s = kf(f, [[316, 1], [358, 0.72]]);
 	const tx = kf(f, [[316, TB.x], [358, 96]]), ty = kf(f, [[316, TB.y], [358, 270]]);
 	const cell = (c: number): [number, number] => iceCell(96, 270, 0.72, 2, c);
+	const below = (c: number): [number, number] => { const p = cell(c); return [p[0] + 20, p[1] + 124]; };
 	const eqT = sw('0.45 minus x', 0), iodT = sw('for iodine', 0), hiT = sw('two x for hydrogen', 0);
 	const overH = sw('over hydrogen times iodine', 1), overI = sw('over hydrogen times iodine', 3);
 	const v2a = sw('0.45 minus x', 0, 2), bottom = sw('the bottom is 0.45', 3), allSq = sw('all squared', 0, 3);
@@ -105,7 +105,7 @@ export const SceneSubstitute: React.FC = () => {
 		[{t: '(2x)', p: '2', br: false, at: sq2x, color: HIK}],
 	];
 	const den1: Term[][] = [
-		[{t: 'H_2', at: overH, from: cell(0), color: H2K, dur: 30, out: v2a - 4}, {t: 'I_2', at: overI, from: cell(1), color: I2K, dur: 30, out: v2a - 4}],
+		[{t: 'H_2', at: overH, from: below(0), color: H2K, dur: 30, out: v2a - 4}, {t: 'I_2', at: overI, from: below(1), color: I2K, dur: 30, out: v2a - 4}],
 		[{t: '0.45 − x', at: v2a - 4, color: H2K, br: true, out: bottom - 4}, {t: '0.45 − x', at: v2a + 44, color: I2K, br: true, out: bottom - 4}],
 		[{t: '(0.45 − x)', p: '2', br: false, at: bottom, pAt: sw('all squared', 0, 2) - 4}],
 	];
@@ -135,11 +135,11 @@ export const SceneSubstitute: React.FC = () => {
 				<DrawPath d={`M${TB.x + 220},${TB.y + 190} L${TB.x + 220},${TB.y + 230}`} at={KS.plus + 6} dur={8} color={AMBER_INK} width={8} opacity={1 - prog(f, KS.sub - 10, 12)} />
 				{/* K expression with the table cells dropping in */}
 				<Gone at={glide}>
-					<FracX cx={E1.cx} cy={E1.cy} size={E1.size} num={num1} den={den1} barAt={KS.sub + 6} prefix="K =" prefixAt={KS.sub + 6} hold={400} />
-					<Sx x={E1.cx + 200 + 30} y={E1.cy + 22} text="= 49" size={56} color={TEAL} at={eq49a} />
+					<FracX cx={E1.cx} cy={E1.cy} size={E1.size} num={num1} den={den1} barAt={KS.sub + 6} prefix="K =" prefixAt={KS.hiSq + 30} hold={580} />
+					<Sx x={E1.cx + 290 + 30} y={E1.cy + 22} text="= 49" size={56} color={TEAL} at={eq49a} />
 					<Chip x={960} y={250} w={760} text="(2x)^{2} = 2x times 2x, not 2x^{2}" size={36} at={sq2x} out={sq2x + 130} color={AMBER_INK} />
 					<Fade at={KS.sub + 20} out={KS.whole - 12}>
-						<Sx x={96} y={640} text="equilibrium row only" size={40} color={AMBER_INK} hand at={KS.sub + 20} />
+						<Sx x={96} y={612} text="equilibrium row only" size={40} color={AMBER_INK} hand at={KS.sub + 20} />
 					</Fade>
 				</Gone>
 				{/* the whole fraction is squared */}

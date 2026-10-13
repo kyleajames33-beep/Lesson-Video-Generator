@@ -50,7 +50,7 @@ export const SceneGain: React.FC = () => {
 			<SlideIn at={c.few - 20}>
 				<Overlay>
 					<AnimalIcon x={bull[0]} y={bull[1]} s={1.15} kind="bull" ring={ORANGE} />
-					<BeadDot cx={bull[0]} cy={bull[1] - 62} r={14} color={ORANGE} />
+					<BeadDot cx={bull[0]} cy={bull[1] - 84} r={14} color={ORANGE} />
 				</Overlay>
 			</SlideIn>
 			<Overlay>
@@ -59,7 +59,7 @@ export const SceneGain: React.FC = () => {
 					const t = (f - (c.few + k * per - 8)) / 10;
 					if (t < 0 || t > 1) return null;
 					const [tx, ty] = cellPos(i);
-					return <circle key={i} cx={bull[0] + 20 + (tx - bull[0] - 20) * t} cy={bull[1] - 62 + (ty - 52 - bull[1] + 62) * t} r={9} fill={ORANGE} stroke={INK} strokeWidth={2} />;
+					return <circle key={i} cx={bull[0] + 20 + (tx - bull[0] - 20) * t} cy={bull[1] - 84 + (ty - 52 - bull[1] + 84) * t} r={9} fill={ORANGE} stroke={INK} strokeWidth={2} />;
 				})}
 				{/* the infectious disease pulse */}
 				{f >= c.disease + 6 && f < c.disease + 110 ? <Germ x={gx} y={gy - 8} r={16} at={c.disease + 6} /> : null}
@@ -70,13 +70,13 @@ export const SceneGain: React.FC = () => {
 			<Overlay>
 				<g opacity={prog(f, c.harmful, 12)}>
 					<AnimalIcon x={bull2[0]} y={bull2[1]} s={0.9} kind="bull" ring={ORANGE} />
-					<circle cx={bull2[0] + 4} cy={bull2[1] - 68} r={20} fill="#f3d4cc" stroke={HARM} strokeWidth={4} />
-					{[[-8, -5], [6, -8], [2, 8], [-9, 7]].map(([dx, dy], i) => <circle key={i} cx={bull2[0] + 4 + dx} cy={bull2[1] - 68 + dy} r={4.5} fill={HARM} />)}
-					<text x={bull2[0] + 34} y={bull2[1] - 60} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={HARM}>harmful allele</text>
+					<circle cx={bull2[0] + 4} cy={bull2[1] - 80} r={20} fill="#f3d4cc" stroke={HARM} strokeWidth={4} />
+					{[[-8, -5], [6, -8], [2, 8], [-9, 7]].map(([dx, dy], i) => <circle key={i} cx={bull2[0] + 4 + dx} cy={bull2[1] - 80 + dy} r={4.5} fill={HARM} />)}
+					<text x={bull2[0] + 34} y={bull2[1] - 72} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={HARM}>harmful allele</text>
 				</g>
 				{calves.map(([cx, cy], i) => (
 					<g key={i}>
-						<g opacity={prog(f, c.passed - 20 + i * 5, 12)}><AnimalIcon x={cx} y={cy} s={0.55} kind="cow" /></g>
+						<g opacity={prog(f, c.passed - 20 + i * 5, 12)}><AnimalIcon x={cx} y={cy} s={0.8} kind="calf" /></g>
 						<DrawPath d={`M${bull2[0] + 30},${bull2[1] - 76} Q${(bull2[0] + cx) / 2},${bull2[1] - 150 - i * 6} ${cx + 8},${cy - 54}`} at={c.harmful + 24 + i * 6} dur={22} color={HARM} width={4} />
 						<g opacity={prog(f, c.harmful + 44 + i * 6, 10)}>
 							<circle cx={cx + 8} cy={cy - 38} r={12} fill="#f3d4cc" stroke={HARM} strokeWidth={3} />

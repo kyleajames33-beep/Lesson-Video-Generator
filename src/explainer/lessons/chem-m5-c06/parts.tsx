@@ -2,7 +2,7 @@
 // the one-molecule demo, coded vessel, dial and small icons. The ICE table itself is in ice.tsx.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {AMBER, AMBER_INK, DrawPath, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
+import {AMBER, AMBER_INK, DrawPath, FONT_HAND, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {Arrow, Bracket, GasTube, Ring, smooth} from '../chem-m5-c04b/parts';
 import {slotXY as tubeSlot} from '../chem-m5-c04b/parts';
 import {H2C, H2_INK, HIC, HI_INK, I2C, I2_INK} from '../chem-m5-c04b/common';
@@ -10,6 +10,7 @@ import {ESC, Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
 import {Chip, Cross, EqStrip, Sx, Tick, eqLayout, rowGeom, rowXs, TermView, tw} from '../chem-m5-c05/parts';
 import type {EqItem, Term} from '../chem-m5-c05/parts';
 import {CROSS, GLASS, GREEN, MINUS, PLUS} from './common';
+import {NO2_BROWN, NO2_COLOURLESS} from './assets';
 
 export {Arrow, Bracket, GasTube, Ring, smooth, ESC, Fade, Overlay, SvgText, TEAL, Chip, Cross, EqStrip, Sx, Tick, eqLayout, tw};
 export type {EqItem, Term};
@@ -109,28 +110,25 @@ export const MeetDemo: React.FC<{x: number; y: number; at: number; out?: number}
 					<circle cx={mx + 34 * b} cy={y + 40 * b} r={15} fill={HIC} stroke={HI_INK} strokeWidth={3} />
 				</>
 			) : null}
+			<Sx x={x - 4} y={y + 86} text="one H_2 meets one I_2" size={34} color={INK_SOFT} hand at={at + 4} out={at + 66} />
 			<Sx x={x - 4} y={y + 86} text="1 H_2 + 1 I_2 make 2 HI" size={34} color={TEAL} hand at={at + 70} />
 		</g>
 	);
 };
 
-// ---------- vessel for the N2O4 question ----------
-export const CodedVessel: React.FC<{x: number; y: number; w: number; h: number; tint: number; at: number; label?: string}> = ({x, y, w, h, tint, at, label}) => {
+// ---------- vessel for the N2O4 question (painted pair, HTML: place it after the Overlay) ----------
+const V_NAT: [number, number] = [1280, 1920];
+const V_BOX: [number, number, number, number] = [305, 331, 669, 1332];
+export const NO2Vessel: React.FC<{x: number; y: number; h: number; tint: number; at: number}> = ({x, y, h, tint, at}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 16);
 	if (o <= 0.01) return null;
-	const nw = w * 0.32, nx = x + (w - nw) / 2, neck = y + h * 0.34;
-	const body = `M${nx},${y + 10} L${nx},${neck} L${x},${y + h - 22} Q${x},${y + h} ${x + 22},${y + h} L${x + w - 22},${y + h} Q${x + w},${y + h} ${x + w},${y + h - 22} L${nx + nw},${neck} L${nx + nw},${y + 10}`;
-	const gas = `M${nx + 3},${y + 14} L${nx + 3},${neck} L${x + 4},${y + h - 22} Q${x + 4},${y + h - 4} ${x + 24},${y + h - 4} L${x + w - 24},${y + h - 4} Q${x + w - 4},${y + h - 4} ${x + w - 4},${y + h - 22} L${nx + nw - 3},${neck} L${nx + nw - 3},${y + 14} Z`;
+	const w = (V_BOX[2] / V_BOX[3]) * h;
 	return (
-		<g opacity={o}>
-			<path d={gas} fill="#c47a3a" fillOpacity={0.05 + 0.34 * tint} />
-			<path d={body} fill={GLASS} fillOpacity={0.4} stroke={INK} strokeWidth={4.5} strokeLinejoin="round" />
-			<path d={`M${x + w * 0.18},${y + h * 0.58} L${x + w * 0.1},${y + h - 40}`} stroke="#fff" strokeOpacity={0.7} strokeWidth={6} strokeLinecap="round" />
-			<rect x={nx - 8} y={y - 16} width={nw + 16} height={30} rx={8} fill="#b98a58" stroke={INK} strokeWidth={4} />
-			<path d={`M${x - 14},${y + h + 8} L${x + w + 14},${y + h + 8}`} stroke={INK} strokeWidth={6} strokeLinecap="round" />
-			{label ? <Sx x={x + w / 2} y={y + h + 52} text={label} size={32} color={INK_SOFT} anchor="middle" hand at={at + 6} /> : null}
-		</g>
+		<div style={{position: 'absolute', left: x, top: y, width: w, height: h, opacity: o}}>
+			<Plate src={NO2_COLOURLESS} natural={V_NAT} crop={V_BOX} width={w} style={{left: 0, top: 0}} />
+			{tint > 0 ? <Plate src={NO2_BROWN} natural={V_NAT} crop={V_BOX} width={w} style={{left: 0, top: 0, opacity: Math.min(1, tint)}} /> : null}
+		</div>
 	);
 };
 

@@ -4,8 +4,9 @@
  *   (the slim bundler fails on missing files) and shared.tsx draws a labelled dashed stand-in instead.
  * - Delivered and used: dairy bull and cow, wheat ear and open floret, wheat rust leaf pair (all b3b-*).
  * - Reused plates: potato tuber, Cavendish bunch, banana plantation with TR4, strawberry flower cut-away and bagged flower (recall).
- * - Coded (no art needed): collection vial, straws, freezer, cow tract cut-away, cycle strip, scorecard, gene pool tray,
- *   cow and sheep icons, balance, forceps, coded potato clone row, Uganda map chip, countdown, key notes.
+ * - Painted side views wired into AnimalIcon (cow, bull, calf, merino sheep), WheatIcon (ear plate) and PotatoPlant (healthy and sick pair).
+ * - Coded (no art needed): collection vial, straws, freezer, cow tract cut-away, cycle strip, scorecard, gene pool tray and its
+ *   herd grid icons (HerdGrid keeps the coded animal so it can grey), balance, forceps, Uganda map chip, countdown, key notes.
  */
 const B = 'assets/biology/';
 export const BULL_COW = B + 'b3b-dairy-bull-cow-v1.png';
@@ -17,6 +18,13 @@ export const PLANTATION = B + 'b1-banana-plantation-tr4-v1.png';
 export const FLOWER_CUT = B + 'b2b-flower-cutaway-v1.png';
 export const BAGGED = B + 'b2b-bagged-flower-v1.png';
 
-const ALL = [BULL_COW, WHEAT, RUST, POTATO, BUNCH, PLANTATION, FLOWER_CUT, BAGGED];
+export const COW_SIDE = B + 'b3b-dairy-cow-side-v1.png';
+export const BULL_SIDE = B + 'b3b-dairy-bull-side-v1.png';
+export const CALF_SIDE = B + 'b3b-calf-side-v1.png';
+export const SHEEP_SIDE = B + 'b3b-merino-sheep-side-v1.png';
+export const POTATO_PLANT = B + 'b3b-potato-plant-v1.png';
+export const POTATO_SICK = B + 'b3b-potato-plant-sick-v1.png';
+
+const ALL = [BULL_COW, WHEAT, RUST, POTATO, BUNCH, PLANTATION, FLOWER_CUT, BAGGED, COW_SIDE, BULL_SIDE, CALF_SIDE, SHEEP_SIDE, POTATO_PLANT, POTATO_SICK];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

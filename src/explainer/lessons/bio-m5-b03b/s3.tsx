@@ -3,7 +3,7 @@ import {interpolate, useCurrentFrame} from 'remotion';
 import {Callout} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, AnimalIcon as _a, Arrow, BeadDot, Cam, CoinIcon as _c, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, Forceps, GAIN, Germ, Hand, Heading, INK, INK_SOFT, Label, NoteCard, Overlay, PArt, PL, plateMap, PollenFlow, POLLEN, Pill, prog, S, Scorecard, Scribble, ShieldBreak, SlideIn, Tag, Tick, Cross, VAR, WheatIcon, Wisp, along, pathOf, pH, GREYC, HARM, TEAL, WELF_INK, COST_INK, CoverBag, fadeTo, Bracket,
+	AMBER, AMBER_INK, AnimalIcon as _a, Arrow, BeadDot, Cam, CoinIcon as _c, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, Forceps, GAIN, Germ, Hand, Heading, INK, INK_SOFT, Label, NoteCard, Overlay, PArt, PL, SvgPlate, plateMap, PollenFlow, POLLEN, Pill, prog, S, Scorecard, Scribble, ShieldBreak, SlideIn, Tag, Tick, Cross, VAR, WheatIcon, Wisp, along, pathOf, pH, GREYC, HARM, TEAL, WELF_INK, COST_INK, CoverBag, fadeTo, Bracket,
 } from './shared';
 
 const ease = (f: number, ks: number[], vs: number[]) => interpolate(f, ks, vs, {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
@@ -84,6 +84,11 @@ export const ScenePollination: React.FC = () => {
 				))}
 				{f >= t0 - 14 && f < t0 + 3 * slot ? <Forceps x={fpos[0]} y={fpos[1] + 110} s={0.9} open={carry >= 0 ? 0 : 0.8} rot={0} /> : null}
 				{carry >= 0 ? <ellipse cx={fpos[0]} cy={fpos[1] + 130} rx={26} ry={62} fill="#e8b81f" stroke="#a9830a" strokeWidth={4} /> : null}
+				{/* the parts, named as they are spoken */}
+				<g opacity={1 - prog(f, c.place - 40, 14)}>
+					<Callout from={[stig[0] + 6, stig[1] + 8]} to={[1520, 640]} at={c.stigma} text="stigma" sub="where pollen lands" color={'#d4614a'} size={50} />
+				</g>
+				<Callout from={[A[0][0], A[0][1]]} to={[780, 600]} at={c.remove + 2} text="anther" sub="makes the pollen" color={AMBER_INK} size={50} align="right" />
 				{/* her chosen pollen */}
 				<PollenFlow pts={pollenPath} at={c.place + 20} n={9} per={5} dur={50} r={9} />
 				<g opacity={prog(f, c.place + 60, 12)}><circle cx={stig[0]} cy={stig[1]} r={50} fill={POLLEN} fillOpacity={0.35} stroke="#a9830a" strokeWidth={5} /></g>
@@ -100,11 +105,12 @@ export const ScenePollination: React.FC = () => {
 
 // ---------- 3b. The knowledge it uses, and how the new variety is made ----------
 const GREEN_AL = '#5aa14a', BLUE_AL = '#3b6fa8';
-const PlantRow: React.FC<{y: number; x0: number; gap?: number; at: number; per?: number; plants: {beads: string[]; both?: boolean; show?: boolean}[]; label: string; labelAt: number; tickAt?: number; seedFirst?: boolean}> = ({y, x0, gap = 160, at, per = 8, plants, label, labelAt, tickAt = at + 40, seedFirst}) => {
+const PlantRow: React.FC<{y: number; x0: number; gap?: number; at: number; per?: number; plants: {beads: string[]; both?: boolean; show?: boolean}[]; label: string; labelAt: number; tickAt?: number; seedFirst?: boolean; count?: string; countColor?: string}> = ({y, x0, gap = 160, at, per = 8, plants, label, labelAt, tickAt = at + 40, seedFirst, count, countColor = GAIN}) => {
 	const f = useCurrentFrame();
 	return (
 		<g>
 			<g opacity={prog(f, labelAt, 12)}><text x={x0 - 40} y={y + 8} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK_SOFT}>{label}</text></g>
+			{count ? <g opacity={prog(f, tickAt + 24, 12)}><text x={x0 + 5 * gap - 90} y={y + 8} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36}} fill={countColor}>{count}</text></g> : null}
 			{plants.map((p, i) => {
 				const px = x0 + i * gap;
 				const o = prog(f, at + i * per, 12);
@@ -127,14 +133,15 @@ export const ScenePollinationKnowledge: React.FC = () => {
 	const c = cues(S('pollination-knowledge'), {
 		pollen: 'Pollen is made', anthers: 'in the anthers', lands: 'lands on a stigma', tube: 'a tube carries sperm', egg: 'to the egg', every: 'Every seed has the two parents', first: 'her first seedlings', mixed: 'the alleles are mixed in new ways', some: 'only some plants show both traits', keeps: 'She keeps those', reps: 'repeats this for several generations', gain: 'The gain is a new variety', years: 'years of hand work',
 	});
-	const R = {x: 96, y: 200, w: 520};
-	const bm = (bx: number, by: number): [number, number] => [R.x + (bx * R.w) / 953, R.y + (by * R.w) / 953];
-	const anth = bm(270, 395), stg = bm(470, 140), eggP = bm(527, 676);
-	const tube: [number, number][] = [[470, 140], [468, 200], [466, 300], [464, 420], [463, 540], [468, 600], [488, 636], [512, 654], [527, 664]].map(p => bm(p[0], p[1]));
+	const R = {x: 96, y: 210, w: 480};
+	const kk = R.w / 730;
+	const bm = (nx: number, ny: number): [number, number] => [R.x + (nx - 885) * kk, R.y + (ny - 225) * kk];
+	const anth = bm(1255, 365), stg = bm(1195, 525), eggP = bm(1265, 745);
+	const tube: [number, number][] = [[1195, 525], [1225, 580], [1252, 640], [1262, 700], [1265, 745]].map(p => bm(p[0], p[1]));
 	const recallOut = c.every - 16;
 	const small = prog(f, recallOut, 22);
 	const sw = 520 - 300 * small;
-	const gridO = prog(f, c.every - 10, 14) * (1 - prog(f, c.gain - 14, 14));
+	const gridO = prog(f, c.every - 10, 14) * (1 - prog(f, c.gain - 10, 12));
 	const g1 = [0, 1, 2].map(() => ({beads: [GREEN_AL, BLUE_AL]}));
 	const g2 = [
 		{beads: [GREEN_AL, BLUE_AL], both: true}, {beads: [GREEN_AL, GREEN_AL], both: false}, {beads: [BLUE_AL, BLUE_AL], both: false}, {beads: [GREEN_AL, BLUE_AL], both: true}, {beads: [GREEN_AL, GREEN_AL], both: false},
@@ -150,17 +157,18 @@ export const ScenePollinationKnowledge: React.FC = () => {
 			<Heading items={[[c.pollen - 4, 'How a new variety is made']]} size={64} />
 			{/* recall of the flower cut-away, then shrunk to the corner */}
 			<div style={{position: 'absolute', inset: 0, opacity: 1 - small}}>
-				<PArt a={PL.flowerCut} x={R.x} y={R.y} w={R.w} />
+				<PArt a={PL.floret} x={R.x} y={R.y} w={R.w} />
 			</div>
 			<div style={{position: 'absolute', inset: 0, opacity: small}}>
-				<PArt a={PL.flowerCut} x={R.x} y={R.y} w={220} />
+				<PArt a={PL.floret} x={R.x} y={R.y} w={220} />
 			</div>
 			<Overlay>
 				<g opacity={1 - small}>
-					<Callout from={[anth[0], anth[1]]} to={[700, 300]} at={c.anthers - 6} text="anther: makes pollen" color={AMBER_INK} size={42} />
-					<Callout from={[stg[0], stg[1] + 6]} to={[700, 220]} at={c.lands - 6} text="stigma: pollen lands" color={'#d4614a'} size={42} />
+					<Callout from={[anth[0], anth[1]]} to={[690, 290]} at={c.anthers - 6} text="anther: makes pollen" color={AMBER_INK} size={42} />
+					<Callout from={[stg[0], stg[1] + 6]} to={[690, 410]} at={c.lands - 6} text="stigma: pollen lands" color={'#d4614a'} size={42} />
 					<DrawPath d={pathOf(tube)} at={c.tube} dur={40} color={TEAL} width={9} />
-					<Callout from={[tube[4][0], tube[4][1]]} to={[700, 560]} at={c.tube} text="tube: carries sperm to the egg" color={TEAL} size={42} />
+					<text x={R.x + 20} y={R.y + 600} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 34}} fill={INK_SOFT} opacity={prog(f, c.pollen, 12)}>a wheat floret (it has no petals)</text>
+					<Callout from={[tube[4][0], tube[4][1]]} to={[690, 640]} at={c.tube} text="tube: carries sperm to the egg" color={TEAL} size={42} />
 					<PollenFlow pts={[[anth[0] + 40, anth[1] - 20], [stg[0] - 80, stg[1] - 40], [stg[0], stg[1] - 4]]} at={c.lands - 4} n={5} per={5} dur={34} />
 					<circle cx={eggP[0]} cy={eggP[1]} r={14 * prog(f, c.egg - 8, 10)} fill="#f08f86" stroke="#c4432f" strokeWidth={4} />
 				</g>
@@ -184,13 +192,14 @@ export const ScenePollinationKnowledge: React.FC = () => {
 					<text x={1500} y={382} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36}} fill={INK_SOFT}>seed with both parents</text>
 				</g>
 				<PlantRow y={470} x0={820} at={c.first} plants={g1} label="first seedlings" labelAt={c.first} seedFirst />
-				<PlantRow y={600} x0={820} at={c.mixed} plants={g2} label="their seeds" labelAt={c.mixed} tickAt={c.some} />
-				<PlantRow y={730} x0={820} at={c.reps} per={7} plants={g3} label="generation 3" labelAt={c.reps} tickAt={c.reps + 50} />
-				<PlantRow y={860} x0={820} at={c.reps + 50} per={7} plants={g4} label="generation 4" labelAt={c.reps + 50} tickAt={c.reps + 100} />
-				<g opacity={prog(f, c.keeps, 12)}><text x={1700} y={610} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={GAIN}>keeps these</text></g>
-				<g opacity={prog(f, c.reps, 12)}><text x={1740} y={740} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 32}} fill={GREYC}>illustrative</text></g>
+				<PlantRow y={600} x0={820} at={c.mixed} plants={g2} label="their seeds" labelAt={c.mixed} tickAt={c.some} count="2 of 5 show both" />
+				<PlantRow y={730} x0={820} at={c.reps - 24} per={5} plants={g3} label="generation 3" labelAt={c.reps - 24} tickAt={c.reps - 12} count="3 of 5 show both" />
+				<PlantRow y={860} x0={820} at={c.reps - 6} per={5} plants={g4} label="generation 4" labelAt={c.reps - 6} tickAt={c.reps + 8} count="4 of 5: more each time" />
+				<g opacity={prog(f, c.keeps, 12)}><text x={1500} y={548} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={GAIN}>she keeps these</text></g>
+				<g opacity={prog(f, c.some, 12)}><text x={1250} y={478} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 30}} fill={INK_SOFT}>in this example, one of each allele shows both traits</text></g>
+				<g opacity={prog(f, c.reps - 24, 12)}><text x={1740} y={800} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 32}} fill={GREYC}>illustrative</text></g>
 			</Overlay>
-			<Scorecard x={470} y={250} s={0.95} at={c.gain - 6} colW={470} titles={[{text: 'artificial insemination'}, {text: 'artificial pollination'}]} cells={{gain: [COL1.gain, {at: c.gain + 14, text: 'a new variety with both traits'}], variety: [COL1.variety, null], cost: [COL1.cost, {at: c.years, text: 'years of hand work'}], welfare: [COL1.welfare, {at: c.years + 36, text: 'not an animal issue', grey: true}]}} lit={{gain: c.gain + 8, cost: c.years - 6}} />
+			<Scorecard x={470} y={250} s={0.95} at={c.gain + 2} colW={470} titles={[{text: 'artificial insemination'}, {text: 'artificial pollination'}]} cells={{gain: [COL1.gain, {at: c.gain + 14, text: 'a new variety with both traits'}], variety: [COL1.variety, null], cost: [COL1.cost, {at: c.years, text: 'years of hand work'}], welfare: [COL1.welfare, {at: c.years + 36, text: 'not an animal issue', grey: true}]}} lit={{gain: c.gain + 8, cost: c.years - 6}} />
 		</>
 	);
 };
@@ -256,10 +265,8 @@ const AFRICA = (x: number, y: number, w: number, h: number) => {
 // ---------- 4. Copying the winner ----------
 const PotatoPlant: React.FC<{x: number; y: number; s?: number; o?: number; sick?: number}> = ({x, y, s = 1, o = 1, sick = 0}) => (
 	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
-		<rect x={-44} y={20} width={88} height={20} rx={10} fill="#8a6a4a" stroke="#5a4028" strokeWidth={3} />
-		<path d="M0,22 L0,-24" stroke="#5f8a3a" strokeWidth={6} strokeLinecap="round" />
-		{[[-26, -26, -30], [26, -26, 30], [-16, -50, -10], [18, -50, 12], [0, -64, 0]].map(([lx, ly, r], i) => <ellipse key={i} cx={lx} cy={ly} rx={20} ry={11} fill={sick > 0 ? '#9a9a4a' : '#7fb04e'} stroke="#3f6a26" strokeWidth={3} transform={`rotate(${r} ${lx} ${ly})`} />)}
-		{sick > 0 ? [[-26, -26], [26, -26], [-16, -50], [18, -50], [0, -64]].map(([lx, ly], i) => <circle key={i} cx={lx} cy={ly} r={6 * sick} fill="#6e3b2c" />) : null}
+		<SvgPlate a={PL.potatoPlant} x={-52} y={-80} w={104} />
+		{sick > 0 ? <g opacity={Math.min(1, sick)}><SvgPlate a={PL.potatoSick} x={-52} y={-80} w={104} /></g> : null}
 	</g>
 );
 

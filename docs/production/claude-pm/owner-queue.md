@@ -10,7 +10,7 @@
 ## Owner verdicts (14 Oct)
 
 - C4a: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4 (9:04, loudness -15.3 LUFS). Upload with brief 28 once B4 is done.
-- B4: approved (14 Oct). Renders after C4a.
+- B4: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-bio-m5-b04/Explainer-bio-m5-b04-v1.mp4. Both C4a and B4 are ready: send brief 28.
 - G01: approved, except the coded tree (too basic). Render after Codex paints the tree (brief 27).
 - B2b: needs painted icons (seedling embryo, propagation row, bee and wind, seed dispersal, land / tube / join / seed steps). Brief 27.
 - Volume: videos were about -28 LUFS (YouTube plays at -14). Render script now normalises to -14; published seven can be re-uploaded louder (owner to decide).
@@ -24,7 +24,7 @@
 1. Painted icons for the unpublished lessons (B2b and the G01 tree first):
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/27-painted-icon-pack.md.`
 2. (Thumbnails on hold: owner scrapped the AI-made concepts on 14 Oct; Claude is designing new ones. Do not send brief 29.)
-3. ONLY after Claude says the C4a and B4 renders are finished: upload both, then refresh the coverage ledger:
+3. C4a and B4 renders are finished: upload both, then refresh the coverage ledger:
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/28-youtube-upload-c4a-b4-and-ledger.md.`
 
 ## Send these now (13 Oct, late)
@@ -114,8 +114,8 @@ Fixed after the independent voiced review (no blockers in any):
 - B2b, flowering plants (9:17, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 
 Built, voiced review still to come:
-- C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v2/
-- B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v1/
+- C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v3/
+- B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v2/
 
 Known and accepted: in the C4a, C4b, B3a and B3a part 2 practice questions the voice says "Pause the video if you'd like more time" while the screen shows "Pause here to answer." with the 10 s countdown (re-recording four practice scenes was not worth the credits; say if you want it). If previews do not load: `node scripts/serve-prototype-review.mjs`.
 
