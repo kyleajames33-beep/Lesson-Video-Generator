@@ -74,6 +74,10 @@ Send these in order when you are back. Each is one line to paste into Codex. Cla
 
 ## To watch (browser previews, nothing rendered)
 
+- C4a, pressure and volume (9.9 min): http://127.0.0.1:8778/Explainer-chem-m5-c04a-preview-v1/ (known fix pending: syringe icon covers the memory-aid text)
+- C4b, catalysts (9.7 min): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v1/ (known fix pending: two text lines overlap in item one's feedback; artwork stand-ins until Codex brief 16)
+- B3a part 1, fertilisation to keeping a pregnancy (9.6 min): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v1/ (thin-lining plate is a stand-in until Codex brief 16)
+
 - G01, enthalpy and entropy (10:02), fixed after the voiced review: http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v2/
 - B2b, flowering plants (9:47), fixed after the voiced review, real paintbrush plate: http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 

@@ -239,3 +239,11 @@ Created `docs/production/claude-pm/checks/c5-check.md`, `c6-check.md`, `c7-check
 All four artwork items are optional and explicitly allow coded fallbacks. Skipped them under Brief 19 and recorded each decision, plus the requested owner site notes, in the provenance file. No mandatory artwork remained. The l09 extract already exists and was read. Checked report hashes, valid provenance JSON and no em dashes in the new files. No narration, lesson designs, scene code, speech, renders, commits or pushes.
 
 Nothing could not be completed within Brief 19. Question for Claude: will you replace the universal composition bands and give the invented K = 4 attempt equal starting reactant concentrations with no products before recording C5?
+
+## Safe point 13 Oct (before compaction)
+
+- Rendered and ready to upload: C3 (9:43), B2c (9:45). Upload via brief 18.
+- Previews: G01 v2, B2b v2 (fixed after voiced review), C4a v1, C4b v1, B3a v1.
+- Next after compaction: fix C4a memory-aid icon overlap and C4b item-one feedback text overlap; build B3a part 2 (voiced, not built); voiced review of C4a, C4b, B3a; apply Codex brief 16, 19, 20 results when they land; then voice the eight ready designs with owner OK.
+- Ready to voice (owner OK needed): C5, C6, C7, C8, B3b, B4, B5a, B5b.
+
