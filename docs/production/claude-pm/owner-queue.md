@@ -2,15 +2,24 @@
 
 **Mode (13 Oct, owner decision): consolidation.** No new designs or voicing. Finish what is recorded (C7, C8, B5a, B5b builds), voiced reviews of C5, B3b, C6, B4, render each preview the owner approves (one at a time), upload in batches through Codex. C9 and B6a wait at the Codex check; Module 6 stays at extracts.
 
+## For you when you are back (14 Oct)
+
+- Thumbnail concepts (13 designs, built from our own plates and lettering, no AI images, based on ten top channels): http://127.0.0.1:8778/thumbnail-concepts/ . Research: docs/production/claude-pm/thumbnails/research-top-channels.md. Pick favourites; the recommendation is frame A as default and a YouTube "Test and compare" of #1 vs #3 vs #2 on C3.
+- Which "equilibrium" video is cleared for render: C5 (the equilibrium constant K), C6 (ICE tables) or C4b (catalysts)?
+
 ## Owner verdicts (14 Oct)
 
-- C4a: approved (14 Oct). Rendering now (no plate to wire in; owner happy with current art).
+- C4a: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4 (9:04, loudness -15.3 LUFS). Upload with brief 28 once B4 is done.
 - B4: approved (14 Oct). Renders after C4a.
 - G01: approved, except the coded tree (too basic). Render after Codex paints the tree (brief 27).
 - B2b: needs painted icons (seedling embryo, propagation row, bee and wind, seed dispersal, land / tube / join / seed steps). Brief 27.
 - Volume: videos were about -28 LUFS (YouTube plays at -14). Render script now normalises to -14; published seven can be re-uploaded louder (owner to decide).
 
 ## Send next (14 Oct)
+
+0. Fact check of the two HSC equilibrium question-type videos (part 1 explain and predict, part 2 calculations), both through review and science checks:
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/30-g02-g03-check-and-assets.md.`
+   Then read the two scripts yourself before any voicing: docs/production/claude-pm/lessons/chem-m5-g02.md and chem-m5-g03.md (about 10 and 10.5 minutes).
 
 1. Painted icons for the unpublished lessons (B2b and the G01 tree first):
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/27-painted-icon-pack.md.`

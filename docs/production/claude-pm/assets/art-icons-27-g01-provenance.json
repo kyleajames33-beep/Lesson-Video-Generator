@@ -1,16 +1,16 @@
 [
   {
     "file": "public/assets/chemistry/g1-tree-v1.png",
-    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136f2-a1b8-7530-a5aa-5ad6a45b5b27\\exec-5181588f-4b68-43c1-88f3-b3858efa2e1e.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a136fd-7157-7e83-98c3-a1b89f59d3e4\\exec-342628f0-58c2-433e-9f13-abf4a3417ffc.png",
     "size": [
       1800,
       2200
     ],
     "model": "built-in imagegen",
-    "retakes": 0,
+    "retakes": 1,
     "set": null,
     "part_of": null,
-    "sha256": "4bb6f0128fdca8fd5e4b0f19172dd068a7b8031aaaf18c9c72b63235b026294e",
+    "sha256": "ccb0862ccc94be7ffb3f4a91acc7e324750551b0a73797ffd683e2182197336f",
     "checks": {
       "rgba": true,
       "size": [
@@ -27,10 +27,11 @@
       "visual_subject_checked": true,
       "no_text": true,
       "small_size_review": "200 px on cream and checkerboard",
-      "no_background_or_halo": "visually checked"
+      "no_background_or_halo": "visually checked",
+      "ground_line": "Thin soil cross-section now visible behind roots"
     },
     "postprocess": "Cleared alpha <=5; fitted subject to exact canvas with transparent margins; no painting or recolouring.",
-    "prompt": "Use case: scientific-educational. Create a single transparent PNG botanical textbook plate of one mature leafy broadleaf tree, like a eucalypt or fig, viewed from the side. Ink and watercolour style matching an HSC Science botanical plate: fine ink linework, soft transparent natural green and brown washes, subtle paper grain within the painted subject, restrained and naturalistic, no glossy digital look, no cartoon treatment. Strong simple silhouette readable small. The crown is open and rounded in the upper 55 percent of a portrait 1800 by 2200 canvas, with at least 12 percent entirely empty transparent margin on both left and right. Visible trunk and major roots spreading below a thin ground cross-section containing the root zone, not a landscape. Leave clear transparent margin above and below. Make leaves, bark, root structure legible. No background, ground patch, cast shadow, glow, halo, white edge, text, labels, numbers, arrows, watermark or frame. Real alpha channel. Match the provided reference plate fine ink and watercolour treatment, but exclude the reference soft background glow. Output intended as g1-tree-v1.png."
+    "prompt": "Edit this exact transparent ink-and-watercolour tree plate. Preserve the entire leafy canopy, trunk, main roots, their position, scale, colour and delicate linework. Add a narrow horizontal cross-section of brown soil at the trunk base, behind the upper roots, extending modestly left and right under the canopy; the roots must remain clearly visible below the line. Keep it a thin soil section, not a landscape or full ground patch. Preserve the transparent margin on all four sides. No labels, arrows, text, frame, halo or shadow."
   },
   {
     "file": "public/assets/chemistry/g1-leaf-v1.png",
