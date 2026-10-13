@@ -1,0 +1,145 @@
+[
+  {
+    "path": "public/assets/biology/b6a-bacterium-v1.png",
+    "sha256": "f6a5d83a1ed5ef0fef692782e27480241566f30dc55a50f3bcd65ecde7d77fef",
+    "prompt": "Use case: scientific-educational. Asset type: transparent painted plate for a Year 12 biology video. Make one rod-shaped bacterium in side view, centred with at least 10 percent clear margin. Show a thin double outline for cell wall and membrane, pale warm cytoplasm, sparse tiny ribosome dots, and a large empty pale central patch reserved for DNA animation. Add one short flagellum or a few pili. Draw absolutely no DNA, chromosome, thread, ring, loop, nucleoid, nucleus or genetic material. Match naturalistic fine ink and watercolour scientific textbook plates, calm precise muted natural colours. Transparent PNG with real alpha, no backdrop or halo. No text, labels, arrows, numbers, shadow, watermark or extra bacterium. At least 1600 pixels on long side.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing",
+    "retakes": 0,
+    "notes": "Empty pale central patch; no DNA. Reads at 200 px. Transparent canvas padded (122px horizontal, 0px vertical each side) to keep at least 8% clear margin.",
+    "size": [
+      2044,
+      900
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b6a-bacterium-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/biology/b6a-animal-cell-v1.png",
+    "sha256": "783bb203dc500c6c17dced1cd5be7136756a07b1306ea652fa61a02df8ec8576",
+    "prompt": "Use case: scientific-educational. Asset type: transparent painted plate for a Year 12 biology video. One round animal cell cutaway, centered with generous clear margins. Show the plasma membrane, a large round nucleus with a double-line envelope and completely empty pale interior, two or three oval mitochondria outside the nucleus with clear folded inner membranes and no contents drawn in their matrix, and a little Golgi apparatus and endoplasmic reticulum for context. Absolutely no DNA, chromatin, chromosomes, nucleolus, thread, ring or genetic material anywhere, including organelles. Fine ink linework and soft muted natural watercolour washes like a modern textbook plate. Transparent PNG with real alpha, no background, shadow or halo. No text, labels, arrows, numbers or watermark. At least 1600 pixels on the long side.\nRetake prompt: Use case: precise-object-edit. Edit the referenced animal cell plate. Keep the exact anatomy, layout, size and transparent background. Change only the colour scheme to warm muted natural watercolour: cell cytoplasm cream and pale warm grey, membrane sepia ink, nucleus pale warm ivory, mitochondria muted terracotta, Golgi soft sand and lavender. Eliminate all blue and green, including organelles and outlines. Keep the nucleus and mitochondrial matrices empty of DNA, chromosomes, rings, nucleolus or chromatin. No text, labels, halo or background. Real alpha transparency.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing",
+    "retakes": 1,
+    "notes": "One colour retake removed blue and green. Empty nucleus and mitochondria; reads at 200 px. Transparent canvas padded (93px horizontal, 96px vertical each side) to keep at least 8% clear margin.",
+    "size": [
+      1986,
+      1992
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b6a-animal-cell-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/biology/b6a-plant-cell-v1.png",
+    "sha256": "531c393939fa3e7bd0468700fe0ff59e5a831d0888ef93601a1d79d59dc6ce8d",
+    "prompt": "Use case: scientific-educational. Transparent painted textbook plate for a Year 12 biology video. One rectangular plant cell in cutaway, centered with generous clear margins. Show a firm cell wall and inner cell membrane, a large central vacuole, one nucleus with double-line envelope and completely empty pale interior, three oval muted green chloroplasts with clear stacked thylakoid grana, and two oval terracotta mitochondria with folded inner membranes. Leave the interiors of the nucleus and all organelles free of DNA. Draw no DNA, chromosomes, chromatin, nucleolus, threads, circles or rings anywhere. Fine precise sepia ink linework, soft muted natural watercolour washes, coherent with an animal-cell textbook plate. Transparent PNG with real alpha, no backdrop, shadow or halo. No text, labels, arrows, numbers or watermark. At least 1600 pixels on the long side.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing",
+    "retakes": 0,
+    "notes": "Empty nucleus and organelles; three chloroplasts and two mitochondria; reads at 200 px. Transparent canvas padded (36px horizontal, 92px vertical each side) to keep at least 8% clear margin.",
+    "size": [
+      1529,
+      1984
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b6a-plant-cell-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/biology/b6a-mitochondrion-v1.png",
+    "sha256": "5890affe47a3a01178de8a0c33e88eb6d07d461fecb2fe99c81d908873cfe699",
+    "prompt": "Use case: scientific-educational. One mitochondrion in lengthwise cutaway as a standalone transparent textbook plate for Year 12 biology. Center the organelle with 12 percent clear margin. Show its smooth oval outer membrane and folded inner membrane with scientifically recognizable cristae, in muted warm terracotta and sand with fine sepia ink and soft watercolour texture. Leave an open pale central matrix area wide enough for a DNA ring to be animated there later. Draw absolutely no DNA, ring, thread, chromosomes, granules or text within the matrix. No labels, arrows, numbers, watermark, background, drop shadow or halo. Real alpha transparency, at least 1600 pixels on the long side.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing",
+    "retakes": 0,
+    "notes": "Open matrix for coded DNA ring; reads at 200 px. Transparent canvas padded (85px horizontal, 0px vertical each side) to keep at least 8% clear margin.",
+    "size": [
+      1970,
+      900
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b6a-mitochondrion-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/biology/b6a-chloroplast-v1.png",
+    "sha256": "6e411647d3ec07fd123c3021a89b442d407f9bd3bf1613c8b0a7c3036ee9d8f6",
+    "prompt": "Use case: scientific-educational. A single chloroplast in lengthwise cutaway as a standalone transparent textbook plate for Year 12 biology. Center the organelle with at least 12 percent empty clear margin. Show a double outer envelope and three or four distinct stacks of flattened thylakoid discs (grana), connected by thin lamellae. Leave visible pale stroma in the center and between stacks, empty for a DNA ring that will be drawn later in code. No DNA, thread, ring, chromosome or nucleoid anywhere in the illustration. Muted natural olive green with fine sepia ink and soft watercolour wash, anatomically clear at small size. Transparent PNG with real alpha. No backdrop, halo, shadow, text, labels, arrows, numbers or watermark. At least 1600 pixels on the long side.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing",
+    "retakes": 0,
+    "notes": "Grana, connecting lamellae and open stroma; reads at 200 px. Transparent canvas padded (27px horizontal, 0px vertical each side) to keep at least 8% clear margin.",
+    "size": [
+      1854,
+      1151
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b6a-chloroplast-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/biology/b6a-sewing-spool-v1.png",
+    "sha256": "1da7d394d540d7117af3c73d3c7d422857af53becc4b64e86caf794a069c7b72",
+    "prompt": "Use case: scientific-educational. Single wooden sewing spool as a transparent painted analogy plate for a Year 12 biology video. Warm muted natural colours. Three-quarter view of a small wooden spool with a few turns of neutral off-white or soft plum sewing thread wound around its middle and one short loose end trailing out. The physical thread is an ordinary sewing thread, not a DNA helix. Fine clean ink linework with gentle watercolour wash, coherent with a modern scientific textbook illustration. Center one subject with at least 12 percent clear margin. Transparent PNG with real alpha, no backdrop, shadow, halo, text, labels, arrows, numbers or watermark. At least 1600 pixels on long side.\nRetake prompt: Use case: precise-object-edit. Keep the wooden sewing spool, its wound off-white thread and short loose thread exactly as drawn, same scale and position. Remove the entire brown ambient glow, haze and cast shadow outside the spool and thread. The surrounding canvas must be fully transparent alpha 0, right up to clean soft silhouette edges, with no coloured halo. Preserve at least 10 percent clear margin. No text or extra objects.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing; OpenCV GrabCut for halo cleanup",
+    "retakes": 1,
+    "notes": "One imagegen retake retained a broad glow. GrabCut segmentation removed that glow while preserving the loose thread. Checked at 200 and 600 px. Transparent canvas padded (58px horizontal, 0px vertical each side) to keep at least 8% clear margin.",
+    "size": [
+      1316,
+      1800
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b6a-sewing-spool-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/chemistry/c9-no2-tube-pale-v1.png",
+    "sha256": "139f4db4d92b42547cf8d58a8e7faf631840dde0a8b1452f2ef666bbe30749ba",
+    "prompt": "Use case: scientific-educational. Transparent painted chemistry plate, pale state of an aligned two-image pair. Front view: one sealed upright clear glass gas tube with a simple rubber stopper, standing centrally inside one short empty clear glass beaker. The tube contains gas that is almost colourless with the faintest transparent tan tint. No liquid in the gas tube or beaker, no flames, steam, bath, thermometer or extra objects. Fine sepia ink linework and restrained watercolour glass highlights matching modern textbook apparatus art. Symmetrical composition, full tube and beaker within 12 percent empty transparent margin. Transparent PNG with real alpha, no background, glow, halo or cast shadow. No text, labels, arrows, numbers or watermark. At least 1600 pixels on the long side. Keep a simple silhouette suitable for exact overlay with a second colour variant.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing",
+    "retakes": 0,
+    "notes": "Base of aligned pair. Beaker is clear and empty. Reads at 200 px. Transparent canvas padded (0px horizontal, 34px vertical each side) to keep at least 8% clear margin. Added 8px more transparent margin top and bottom.",
+    "size": [
+      1200,
+      1884
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/c9-no2-tube-pale-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/chemistry/c9-no2-tube-brown-v1.png",
+    "sha256": "d0853f278f91baeb261e0248b3428446f113816f035b5fc3893f85fa4dcad925",
+    "prompt": "Use case: precise-object-edit. Create the hot colour state of this exact chemistry apparatus plate. Change ONLY the gas within the sealed inner tube from near-colourless pale tan to a transparent deep reddish-brown. Preserve pixel-exact position, scale, outlines, stopper, glass highlights, beaker, canvas and transparency wherever possible. Do not recolour the surrounding beaker or make the gas opaque. Do not add flame, steam, thermometer, water, text or other objects. The two states must overlay exactly. Transparent PNG with a real alpha channel, no background or halo.",
+    "tool": "image_gen.imagegen (built-in); Pillow for alpha cleanup and resizing; gas colour transfer onto shared base for exact alignment",
+    "retakes": 0,
+    "notes": "Imagegen colour edit supplied the reddish-brown gas. Gas colour alone was transferred to the pale base for exact alpha and fixed outer apparatus pixels. Pair checked overlaid and at 200 px. Transparent canvas padded (0px horizontal, 34px vertical each side) to keep at least 8% clear margin. Added 8px more transparent margin top and bottom.",
+    "size": [
+      1200,
+      1884
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/c9-no2-tube-brown-v1-checker-200.png"
+  },
+  {
+    "path": "public/assets/biology/b1-fission-1-v1.png",
+    "sha256": "6d7f2d65bc2d4425c9ffe9bce32990e458215c80fafa3006b86520c269925988",
+    "prompt": null,
+    "tool": "Pillow checkerboard inspection",
+    "retakes": 0,
+    "notes": "Clean alpha and reads at 400 px. Not suitable as the second bacterium in scene 5 because an orange DNA loop is already painted inside; B6A uses coded plum DNA.",
+    "size": [
+      1800,
+      1200
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/b1-fission-1-v1-existing-checker-400.png"
+  },
+  {
+    "path": "public/assets/dna-helix.png",
+    "sha256": "a231c6c3c9a62d31262eb25d6163393d22fe4886e6561625e7de4dd4995ed758",
+    "prompt": null,
+    "tool": "Pillow checkerboard inspection",
+    "retakes": 0,
+    "notes": "Clean alpha and reads at 400 px. Existing glossy blue/green strand key differs from the B6A plum DNA system; coded Helix is preferable.",
+    "size": [
+      1024,
+      1024
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/dna-helix-existing-checker-400.png"
+  },
+  {
+    "path": "public/assets/dna-helix-purple.png",
+    "sha256": "9804e0ba429e9f947d10853f213151b7d9881fa00331ee15b3c814f6e97d6c86",
+    "prompt": null,
+    "tool": "Pillow checkerboard inspection",
+    "retakes": 0,
+    "notes": "Clean alpha and reads at 400 px. Existing glossy purple helix is usable for a brief recall, though coded Helix better matches the plate style.",
+    "size": [
+      1024,
+      1024
+    ],
+    "qa": "docs/production/claude-pm/assets/c9-b6a-qa/dna-helix-purple-existing-checker-400.png"
+  }
+]
