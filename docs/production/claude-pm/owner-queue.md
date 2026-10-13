@@ -1,13 +1,19 @@
 # Owner queue: Codex prompts to send
 
-## Send these now (13 Oct, evening)
+## Send these now (13 Oct, night)
 
-C3 and B2c are now public (brief 18 finished). Codex has also finished briefs 16, 19 and 20.
+Paste one at a time, in any order (they do not depend on each other). Each is one line.
 
-1. Add the syllabus dotpoint to all seven published video descriptions (your request; also now a standing rule for every future upload):
+1. Syllabus dotpoint in all seven published YouTube descriptions:
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/21-youtube-add-dotpoints.md.`
+2. Painted art upgrades for built lessons (B3b cow, bull, calf, sheep; C5 copper tubes; B3a part 2 ovary close-ups; B5a and B5b optional plates):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/23-art-upgrade-pack.md.`
+3. Site extracts for all 38 Module 6 lessons, plus an index and any site science errors (big job, lets Claude plan Module 6):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/22-site-extracts-m6.md.`
+4. Three YouTube thumbnail styles on two videos, for you to choose from (nothing uploaded):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/24-youtube-thumbnail-concepts.md.`
 
-Already done by Codex: briefs 11, 13 to 20 (18b not needed).
+Already done by Codex: briefs 11, 13 to 20.
 
 ## Update 13 Oct (evening)
 

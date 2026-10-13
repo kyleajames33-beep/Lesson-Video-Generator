@@ -15,7 +15,7 @@ Use the words exactly as the official 2017 syllabus prints them (lower-case star
 
 ## Videos and dotpoints
 
-Chemistry wording below is copied from the official syllabus (cached at `out/research/curriculum/chemistry-2017-paragraphs.json`; check it). For Biology, copy the official wording from the NSW Biology Stage 6 (2017) syllabus, Year 12 Module 5 Heredity, Inquiry question "How does reproduction ensure the continuity of a species?"; the paraphrases below say which point.
+Chemistry wording below is copied from the official syllabus (cached at `out/research/curriculum/chemistry-2017-paragraphs.json`; check it). For Biology, the 2017 text is cached at `out/research/continuity-2026-10-08/biology-2017-paragraphs.json` (use it, then confirm against the official NSW Biology Stage 6 (2017) syllabus), Year 12 Module 5 Heredity, Inquiry question "How does reproduction ensure the continuity of a species?"; the paraphrases below say which point.
 
 | Video | URL | Dotpoint(s) |
 | --- | --- | --- |

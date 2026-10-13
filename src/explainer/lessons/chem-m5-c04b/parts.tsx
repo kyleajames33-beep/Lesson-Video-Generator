@@ -48,7 +48,7 @@ const slotsFor = (seed: number, type: number): SlotP[] => {
 	}
 	return s;
 };
-const slotXY = (seed: number, type: number, i: number, f: number, cx: number, cy: number, ax: number, ay: number) => {
+export const slotXY = (seed: number, type: number, i: number, f: number, cx: number, cy: number, ax: number, ay: number) => {
 	const s = slotsFor(seed, type)[i % 24];
 	return {x: cx + ax * (0.62 * Math.sin(f * s.w1 + s.p1) + 0.38 * Math.sin(f * s.w3 + s.p3)), y: cy + ay * (0.62 * Math.sin(f * s.w2 + s.p2) + 0.38 * Math.sin(f * s.w4 + s.p4))};
 };
