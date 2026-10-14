@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C8-claude-2026-10-13-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c8/lesson.json",
+  "lessonSha256": "774b955aee5f00dc945b4fdff4ee6670ec4d5fc4526ab540a5e9460a59885f58",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c8/lesson.production-brief.json",
+    "sha256": "46e1c7c6a0d900c6a395caa5f39a799c544fcbf9be2da013d392d73f2ef74fe2"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here is the hot hydrogen iodide tube again, at about four hundred and fifty degrees, where K is forty-nine. But this time nobody let it settle first. Someone has just mixed 0.20 moles per litre of hydrogen, 0.20 of iodine and 0.50 of hydrogen iodide. It has not reached equilibrium, so something is about to change. Will the tube make more hydrogen iodide, or break some down? There is a way to know before anything moves.",
+      "hash": "f6cc010b09ef",
+      "textSha256": "f6cc010b09efcdd6b38ee8869518e87e9a91f858a0a12e7e3d450ad8262311c0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/hook.f6cc010b09ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/hook.f6cc010b09ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/hook.f6cc010b09ef.generation.json",
+      "plannedRequestSha256": "16cb9e1220c8e4e9fdc49db5aab4208cab89b0c369c429e4f05dccbaf1f093a2"
+    },
+    {
+      "id": "q-fraction",
+      "parentSceneId": "q-fraction",
+      "text": "So far K has always taken the settled values. Now take the same fraction, hydrogen iodide squared over hydrogen times iodine, and put in the concentrations in the tube right now, settled or not. That number is the reaction quotient, Q. It follows the same rules as K, with powers for coefficients, and solids and the solvent left out. At equilibrium Q is K. At any other moment, Q can be any value.",
+      "hash": "6cc9ea0278b6",
+      "textSha256": "6cc9ea0278b6f82a53444c3eb79afd0fd021b4c9f6736bf26a45b7fdc7318201",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-fraction.6cc9ea0278b6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-fraction.6cc9ea0278b6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-fraction.6cc9ea0278b6.generation.json",
+      "plannedRequestSha256": "c1732fd8e995eaabd6de7028ac9ac5765bc2729bb3c3f7062147e49f48da68f5"
+    },
+    {
+      "id": "calculate-q",
+      "parentSceneId": "calculate-q",
+      "text": "Substitute the values now. Hydrogen iodide squared is 0.50 squared, which is 0.25. Underneath, hydrogen times iodine is 0.20 times 0.20, which is 0.040. So Q is 0.25 over 0.040, which is 6.25.",
+      "hash": "bf4216894052",
+      "textSha256": "bf421689405267b8fc7f4a95f7d49ff56d348aa74192b06d9bfb79bff6ed7a5b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/calculate-q.bf4216894052.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/calculate-q.bf4216894052.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/calculate-q.bf4216894052.generation.json",
+      "plannedRequestSha256": "e3e93f9e5084b10331b777f8e71d72b99ba7ff07887fbb951d2081cc2217eebc"
+    },
+    {
+      "id": "compare-q-k",
+      "parentSceneId": "compare-q-k",
+      "text": "Now compare it with K. Each tick on this line is ten times the one before, so small and large numbers fit on it. Q is 6.25 and K is forty-nine, so Q is smaller than K. Compared with the reactants, this tube holds less hydrogen iodide than a settled tube at this temperature would. So which reaction is quicker, hydrogen and iodine joining, or hydrogen iodide splitting?",
+      "hash": "450b7e6774c4",
+      "textSha256": "450b7e6774c4b34632c6872c414e56cccfe26fb4402fe3d7a695a59c59531a6e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/compare-q-k.450b7e6774c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/compare-q-k.450b7e6774c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/compare-q-k.450b7e6774c4.generation.json",
+      "plannedRequestSha256": "1341ad044db6a089f9d4c05cfeea7af5a7b6a111610af942215642aed1534d1a"
+    },
+    {
+      "id": "rate-link",
+      "parentSceneId": "rate-link",
+      "text": "Remember the rate model from the expressions video: joining is a fixed number times hydrogen times iodine, and splitting is another fixed number times hydrogen iodide squared. Divide the two. The two fixed numbers divide to give K. The concentrations divide to give the Q fraction upside down, hydrogen times iodine over hydrogen iodide squared. So in this model forward over reverse is K times one over Q, which is K over Q. That is forty-nine over 6.25, about eight, so the forward reaction runs about eight times faster, and hydrogen iodide is made.",
+      "hash": "1ab5c092fbf4",
+      "textSha256": "1ab5c092fbf46531d83beec024f3df37d03aa61730197a3313714ed6b5c5208c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/rate-link.1ab5c092fbf4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/rate-link.1ab5c092fbf4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/rate-link.1ab5c092fbf4.generation.json",
+      "plannedRequestSha256": "00f24816cf7b12481d6ac77fa290920d4d3376cd1e497af3404a306f72176b0c"
+    },
+    {
+      "id": "q-chases-k",
+      "parentSceneId": "q-chases-k",
+      "text": "As hydrogen iodide forms, the top of Q grows and the bottom shrinks, so Q climbs. The forward rate falls, the reverse rate rises, just as in the flask videos, until the two are equal, because K over Q is then one. That happens exactly when Q reaches K, here at 0.10, 0.10 and 0.70, the settled tube from the ICE table video, where Q is forty-nine. Q chases K.",
+      "hash": "0d45e50d4298",
+      "textSha256": "0d45e50d42982c8e6e8eefe2485890d9ca690c73c9233a1c6e807d80b60ece9c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-chases-k.0d45e50d4298.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-chases-k.0d45e50d4298.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-chases-k.0d45e50d4298.generation.json",
+      "plannedRequestSha256": "0c1ac8c01c44f2c18d9681f605128e1fde0c03f8beb9536ac9cc749f8301bda1"
+    },
+    {
+      "id": "other-side",
+      "parentSceneId": "other-side",
+      "text": "Now start from the other side. A tube holds 0.05 of hydrogen, 0.05 of iodine and 0.80 of hydrogen iodide. That is almost all hydrogen iodide, so does nothing more form? Work out Q. 0.80 squared is 0.64, over 0.05 times 0.05, which is 0.0025, so Q is 256. K is forty-nine. Which way will it run? Pause here to answer.",
+      "hash": "096850ddc389",
+      "textSha256": "096850ddc38997331bed5596c6d0a43c40fb0a23bd772363e689f93a20953955",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/other-side.096850ddc389.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/other-side.096850ddc389.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/other-side.096850ddc389.generation.json",
+      "plannedRequestSha256": "2577596561f76ccf1c7129119d0a97d1f176633fdbf3f20465b97f47ca81da11"
+    },
+    {
+      "id": "other-side-answer",
+      "parentSceneId": "other-side-answer",
+      "text": "Q is above K, so this tube has too much hydrogen iodide for this temperature, and the reverse reaction wins. Forward over reverse is 49 over 256, about 0.19, so the reverse is about five times faster. Hydrogen iodide splits, Q falls, and the tube ends at the same settled tube again. The first tube was mostly hydrogen iodide too, yet its Q was below K. Whether there is too much product depends on K, so work out Q and compare.",
+      "hash": "db5ee800beec",
+      "textSha256": "db5ee800beec82679c3f6660c3f9238afb5cb218fe83c8c6e3b76d192339b22f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/other-side-answer.db5ee800beec.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/other-side-answer.db5ee800beec.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/other-side-answer.db5ee800beec.generation.json",
+      "plannedRequestSha256": "7608693a3a5bb4b5965308f24b40e32380f56db21bfc75d24411e4c325137ed3"
+    },
+    {
+      "id": "q-equals-k",
+      "parentSceneId": "q-equals-k",
+      "text": "If Q equals K, as in the settled tube, forward and reverse run at the same rate and nothing changes overall. That does not mean equal concentrations: this tube has 0.10, 0.10 and 0.70. And if a flask holds only reactants, like the P C L five flask at the start, the top of Q is zero, so Q is below any K and the reaction runs forward. If it holds only products, the bottom is zero, Q is off the scale, above any K, and it runs in reverse.",
+      "hash": "8437bbe376c8",
+      "textSha256": "8437bbe376c8975959ec7cff72570365014bb6fdfc9affbb7bc9408b7c3a9bf9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-equals-k.8437bbe376c8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-equals-k.8437bbe376c8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/q-equals-k.8437bbe376c8.generation.json",
+      "plannedRequestSha256": "cfc3ca21e65fb915c899900248122534d142f02c01fcb6896e0bb5a60fda51ab"
+    },
+    {
+      "id": "disturbance",
+      "parentSceneId": "disturbance",
+      "text": "This also explains the disturbance videos. Take the settled tube, 0.10, 0.10 and 0.70, where Q is forty-nine. Now, in the same sealed tube, add 0.20 moles per litre of hydrogen, so hydrogen is 0.30. The bottom of Q gets bigger, so Q drops to 0.49 over 0.030, about sixteen, below K. Forward over reverse is forty-nine over sixteen, about three, so the forward reaction wins, uses up some of the extra hydrogen, and the mixture shifts right.",
+      "hash": "5e7398baa875",
+      "textSha256": "5e7398baa8758b0d906961b9df1f590d25afa261c53de18da0b4f91ac3ac7caf",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/disturbance.5e7398baa875.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/disturbance.5e7398baa875.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/disturbance.5e7398baa875.generation.json",
+      "plannedRequestSha256": "a59e22bbb8eb743a10c984fab07bc0ac89dcc9d531b8ec5e346ad89cfd0c5108"
+    },
+    {
+      "id": "k-unchanged",
+      "parentSceneId": "k-unchanged",
+      "text": "Taking out some hydrogen iodide does the same, and adding hydrogen iodide pushes Q above K and sends it left. K never changed: it is still forty-nine. Adding or removing a substance changes Q only. Only a change of temperature changes K, and that is a later video.",
+      "hash": "94ce7de2d40c",
+      "textSha256": "94ce7de2d40c9994a01957fda184a17e7b3917ced30cfda1a29c1af57be693cb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/k-unchanged.94ce7de2d40c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/k-unchanged.94ce7de2d40c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/k-unchanged.94ce7de2d40c.generation.json",
+      "plannedRequestSha256": "904a9dca3413f1077a16ca6c7fa1b2d52de25e28abfa086074c9ea11dbd76623"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Ammonia is made from nitrogen and hydrogen in a sealed vessel with an iron catalyst, held at four hundred degrees Celsius, where K is 0.50 for this equation. A mixture has just been made up, with nitrogen at 0.40 moles per litre, hydrogen at 0.50 and ammonia at 0.20. One: calculate Q for N two plus three H two making two N H three. Two: will the mixture make more ammonia or less, and why? Pause here to answer.",
+      "hash": "c92b32d4a952",
+      "textSha256": "c92b32d4a952314b3364a1a276dfa012b7cbd8adfe15ccd98a16f85344789a53",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/attempt.c92b32d4a952.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/attempt.c92b32d4a952.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/attempt.c92b32d4a952.generation.json",
+      "plannedRequestSha256": "a6469ca6c1299673c5b77f6376b1ba9f6c446c9ce21c32fff197a8e03932d8c4"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "Write Q as ammonia squared over nitrogen times hydrogen cubed. Ammonia squared is 0.040. Hydrogen cubed is 0.50 times 0.50 times 0.50, 0.125, and times the nitrogen that is 0.050. So Q is 0.040 over 0.050, which is 0.80. Q is above K, 0.50, so the mixture holds too much ammonia for this temperature. The reverse reaction is faster and ammonia breaks down, so it makes less. If you got 0.20, you left the cube off the hydrogen, and that wrong number sits below K, so you would have said more ammonia. If you found 0.80 and still said more ammonia, you flipped the rule: a Q above K means too much product, not too little.",
+      "hash": "3ce3183d462a",
+      "textSha256": "3ce3183d462a58a900a1acb810ee4ca5f6284910509c5c00851e40c527318054",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/feedback.3ce3183d462a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/feedback.3ce3183d462a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/feedback.3ce3183d462a.generation.json",
+      "plannedRequestSha256": "108beb3b3e51273c45628bd5519164de34ad046ac685faf3196763410c9161cc"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question gives you a mixture and a K, write the expression, put in the concentrations from now, calculate Q, and compare it with K at the same temperature. Q below K, the reaction runs forward. Q above K, it runs back. Equal, nothing changes overall. That gives you the direction, not how far it goes. Finding how far uses an ICE table and K, and the harder cases come next.",
+      "hash": "5e23650382fd",
+      "textSha256": "5e23650382fd40ad15b29c8d05bb0ca9a4e11699301c194ef31d66601dbf0a92",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/decision-rule.5e23650382fd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/decision-rule.5e23650382fd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/decision-rule.5e23650382fd.generation.json",
+      "plannedRequestSha256": "c47e9ce8f8a8853c681bbe580cfcde8612d42e31910c868bcf36f43cfcf2b2bb"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C8-claude-2026-10-13-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

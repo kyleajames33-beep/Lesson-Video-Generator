@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/c5/measured/lesson.json",
-    "lessonSha256": "42651cb26c1e53296def03ddfbdefa8c78f8b32f177d1bbee3cd5ac5fcd49556"
+    "lessonSha256": "02b025d21489247b12d79edd88f20ec530ff8cc91c8ef54b5f89edf4bb16ec92"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -53,57 +53,21 @@
       "holdPurpose": "Brief hold on the two matching tenths"
     },
     {
-      "sceneId": "rates-equal",
-      "visualDecision": "adjust",
-      "visualReference": "C2 to C4B style rate bars (forward blue, reverse amber, teal equal bracket) with the iron tube shrunk to the corner",
-      "teachingReason": "Gives the cause of the constant ratio: each rate is a fixed number times the concentrations that must meet, and the rates are equal",
-      "narrationCue": "We write a species in square brackets for its amount per litre / joining runs at point three times the iron times the thiocyanate / splitting runs at three times the red ion / At equilibrium the rates are equal",
-      "motionPurpose": "The tube shrinks away, a bracket pair writes round Fe3+, the forward line writes under the blue bar and the reverse line under the amber bar, and the two lines join with an equals sign",
-      "motionRole": "explain",
-      "onScreenChange": "The tube shrinks to the corner and two level rate bars sit under the teal bracket; a bracket pair writes round Fe3+ with the tag \"amount per litre\"; \"forward = 0.3 x [Fe3+][SCN-]\" writes under the blue bar with the three brackets ringed in turn; \"reverse = 3 x [FeSCN2+]\" writes under the amber bar; the lines join into \"0.3 x [Fe3+][SCN-] = 3 x [FeSCN2+]\"",
-      "motionTools": [
-        "CameraStage shrink",
-        "bracket draw",
-        "HandText write-on",
-        "ScribbleCircle",
-        "NumberTicker rate bars"
-      ],
-      "holdPurpose": "Hold the finished equal rates line for a beat"
-    },
-    {
       "sceneId": "ratio-name",
       "visualDecision": "adjust",
-      "visualReference": "The rate equation from the previous scene with pen cancelling and a fraction that writes step by step, then a large K",
-      "teachingReason": "Shows the fixed numbers divide to a constant ratio and only then names it as the equilibrium constant",
-      "narrationCue": "Divide both sides by three / equals point three over three, a tenth / Those two numbers are fixed / the equilibrium constant, K",
-      "motionPurpose": "Pen divides both sides, the threes and the concentration brackets cancel and reappear on the other side, the fraction writes to 0.1, the two fixed numbers are circled and K writes large last",
+      "visualReference": "The two iron thiocyanate fractions from the hook kept as evidence, square brackets explained, then a large K with the \"at one temperature\" condition",
+      "teachingReason": "Names the constant ratio as the equilibrium constant from evidence, with no rate model",
+      "narrationCue": "Square brackets around a species / is our ratio / at one temperature / the equilibrium constant",
+      "motionPurpose": "The two fractions stay up, a bracket meaning tag writes on, the ratio fraction builds with brackets, \"same at one temperature\" ticks both tenths, K writes large",
       "motionRole": "explain",
-      "onScreenChange": "\"divide by 3\" writes under the right side and the 3 cancels; \"divide by [Fe3+][SCN-]\" writes under the left and the brackets cancel and reappear under the red ion; the fraction \"[FeSCN2+] / ([Fe3+][SCN-]) = 0.3 / 3 = 0.1\" writes in steps; the 0.3 and 3 are circled with \"fixed at one temperature\"; K writes large on \"name\" with its plain meaning",
+      "onScreenChange": "The hook fractions stay at the left; \"[X] = concentration in mol/L\" writes on; the red ion over iron times thiocyanate builds with brackets; both tenths get ticks and \"at one temperature\"; \"K (Keq)\" writes large",
       "motionTools": [
         "HandText write-on",
-        "cancel strike",
-        "ScribbleCircle",
-        "tag pop"
+        "fraction build",
+        "tick",
+        "large label"
       ],
-      "holdPurpose": "Hold the fraction and the named K into the next scene"
-    },
-    {
-      "sceneId": "coefficient-power",
-      "visualDecision": "adjust",
-      "visualReference": "C4 hot H2 + I2 tube at 2, 2, 14 with two rate bars at 0.2 and the equation chip, plus a callback chip to the 2NO2 squeeze",
-      "teachingReason": "Shows why a coefficient of two becomes a power of two: two HI must meet to split",
-      "narrationCue": "joining needs a hydrogen and an iodine to meet / that number is point oh five / Splitting needs two hydrogen iodide to meet / hydrogen iodide squared / The coefficient two has become a power of two",
-      "motionPurpose": "One H2 and one I2 drift together, 0.05 replaces the unknown number, two HI meet and split, their two brackets merge into a squared bracket, and the divide-both-sides move ends at 49",
-      "motionRole": "explain",
-      "onScreenChange": "One H2 and one I2 meet with a pen ring and \"forward = number x [H2][I2]\" writes, then \"0.05 x 2 x 2 = 0.2\"; two HI particles meet and split with the chip \"like 2NO2 in the squeeze video\" and \"reverse = number x [HI] x [HI]\" merges to \"[HI]^2\" with an arrow to the exponent; \"0.2 / 14^2 = 0.05 / 49\" writes; the rates are set equal and the ratio ends at 49 with the coefficient 2 flying to a power",
-      "motionTools": [
-        "particle meeting",
-        "HandText write-on",
-        "ScribbleCircle",
-        "bracket merge",
-        "chip pop"
-      ],
-      "holdPurpose": "Hold the 49 and the power of two"
+      "holdPurpose": "Hold K and its condition"
     },
     {
       "sceneId": "any-equation",
