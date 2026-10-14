@@ -38,6 +38,20 @@ Updated by Claude. Codex appends hand-ins at the bottom.
 
 ## Codex hand-ins
 
+### Brief 28: wave 4 YouTube uploads and coverage ledger (14 October 2026)
+
+Created `docs/production/claude-pm/youtube/wave4-uploads.json` and updated `docs/production/claude-pm/coverage-ledger.md`. Published G01 https://youtu.be/BdF_sRrt5Yw, C4a https://youtu.be/yk5KVdipGRE and B4 https://youtu.be/P9jyiLiGhZI. The JSON records each MP4 hash, full description, settings, caption hash, thumbnail, playlist position and Studio URL. All three are Public, not made for kids, Education, English (Australia), with AI disclosure and published timed captions. Studio showed complete HD processing, no notices and no audio warning. Biology syllabus quotes in the draft were checked against the 2017 syllabus extract and official NSW source.
+
+The public Chemistry playlist is in manual order C1, C2, G01, C3, C4a. B4 is at the end of the current Biology playlist. B2b could not be uploaded because its MP4 is absent; its URL is pending render. Insert B2b between B2a and B2c when rendered, then insert later Biology lessons before B4. The ledger now records the current C5 to C9, B3b, B4, B5a, B5b and B6a designs, lesson states, existing syllabus owners and the known B2b/B1 teaching overlap. No new ownership change or overlap was found. The channel's one-off verification still limits external links in descriptions to plain text. Question for Claude: send the B2b render when ready for its upload follow-up. No narration, lesson designs, route, speech, render, commit or push was changed.
+
+### Brief 31: painted plates for C7, C8, B5a and B5b (14 October 2026)
+
+Created eight C7 plates in `public/assets/chemistry/`: `c7-reactor-bed-v1.png`, `c7-condenser-cooler-v1.png`, `c7-ammonia-storage-tank-v1.png`, `c7-gas-compressor-pump-v1.png`, `c7-iron-catalyst-pellets-v1.png`, `c7-thick-steel-wall-v1.png`, `c7-flame-energy-v1.png` and `c7-pipe-leak-v1.png`. Created four C8 plates in the same folder: `c8-hot-hi-tube-v1.png`, `c8-thermometer-hot-v1.png`, `c8-stopwatch-v1.png` and `c8-round-flask-v1.png`. Created `public/assets/biology/b5a-epithelium-shedding-v1.png`, `b5a-plant-cell-plate-v1.png` and `b5b-parents-v1.png`.
+
+Prompts, model, hashes, canvas sizes and alpha checks are in `docs/production/claude-pm/assets/brief31-provenance.json`. Checkerboard and cream views, 200 px views and an audit are in `docs/production/claude-pm/assets/brief31-qa/`. All 15 have real alpha, at least 10% transparent margin and a long side over 1600 px. I inspected the 200 px sheet. No retakes were needed.
+
+The optional skin-graze close-up was not made because the voiced review records a later fix that reduced the hook zoom. Question for Claude: the voiced review calls the parents plate `b5b-parents-pair-v1`, while Brief 31 asks for `b5b-parents-v1.png`. I used the Brief 31 filename. No scene code, narration, speech, renders, commits or pushes were changed.
+
 ### Brief 27: painted icon pack (14 October 2026)
 
 Created all 69 requested transparent PNG plates in `public/assets/biology/` and `public/assets/chemistry/`. The exact file paths, prompts, retakes, model, hashes, checks, aligned sets and parts are in `docs/production/claude-pm/assets/art-icons-27-provenance.json`. Full-size and 200 px checkerboard and cream reviews, plus aligned-set overlays, are in `docs/production/claude-pm/assets/art-icons-27-qa/`.
@@ -332,4 +346,12 @@ Science question for Claude: the requested `b3a-egg-open-v1.png` shows a pre-exi
 - Previews: G01 v2, B2b v2 (fixed after voiced review), C4a v1, C4b v1, B3a v1.
 - Next after compaction: fix C4a memory-aid icon overlap and C4b item-one feedback text overlap; build B3a part 2 (voiced, not built); voiced review of C4a, C4b, B3a; apply Codex brief 16, 19, 20 results when they land; then voice the eight ready designs with owner OK.
 - Ready to voice (owner OK needed): C5, C6, C7, C8, B3b, B4, B5a, B5b.
+
+### Brief 30: G02 and G03 fact checks and assets (14 October 2026)
+
+Created `docs/production/claude-pm/checks/g02-check.md` and `g03-check.md`. G02 Revision 3 has three findings: the graph-jump key note, the claim that air is free, and a narration typo. G03 Revision 3 has two findings: missing divisor brackets in scene 8b and a comparison of K with a concentration in scene 8a. Recomputed the worked values, shortcuts and named wrong answers. No stills or audio exist for these designs. Spot checks of NESA papers found no copied question.
+
+Created `docs/production/claude-pm/assets/g02-g03-provenance.json` and `docs/production/claude-pm/assets/g02-g03-qa/README.md`. Neither design requests new painted art. Both use coded vessels by default and allow a later approved C8 vessel reuse. No image was generated. No lesson design, narration, scene code, speech, render, commit or push was changed.
+
+Question for Claude: will you resolve the five findings before recording? Nothing in Brief 30 remains unfinished.
 

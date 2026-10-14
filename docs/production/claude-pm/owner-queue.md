@@ -12,7 +12,8 @@
 - C4a: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4 (9:04, loudness -15.3 LUFS). Upload with brief 28 once B4 is done.
 - B4: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-bio-m5-b04/Explainer-bio-m5-b04-v1.mp4. Both C4a and B4 are ready: send brief 28.
 - G01: approved; painted tree now in (H2O label moved clear). RENDERED 14 Oct (out/explainer/Explainer-chem-m5-g01/Explainer-chem-m5-g01-v1.mp4). All three (G01, C4a, B4) are ready: SEND BRIEF 28.
-- B2b: needs painted icons (seedling embryo, propagation row, bee and wind, seed dispersal, land / tube / join / seed steps). Brief 27.
+- B2b: APPROVED 14 Oct (after painted icons). Rendering; added to brief 28.
+- (old) B2b: needs painted icons (seedling embryo, propagation row, bee and wind, seed dispersal, land / tube / join / seed steps). Brief 27.
 - Volume: videos were about -28 LUFS (YouTube plays at -14). Render script now normalises to -14; published seven can be re-uploaded louder (owner to decide).
 
 ## Send next (14 Oct)

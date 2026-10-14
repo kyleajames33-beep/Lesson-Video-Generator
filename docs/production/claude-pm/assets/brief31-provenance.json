@@ -1,0 +1,298 @@
+{
+  "brief": 31,
+  "model": "built-in image_gen",
+  "style_references": [
+    "public/assets/chemistry/c7-haber-converter-v1.png",
+    "public/assets/chemistry/c3-iron-tube-start-v1.png",
+    "public/assets/biology/b5a-skin-graze-v1.png",
+    "public/assets/biology/b5b-brothers-v1.png"
+  ],
+  "normalization": "PIL cropped near-invisible edge noise, added 10% transparent margins, and upscaled with Lanczos where needed to exceed 1600 px on the long side.",
+  "plates": [
+    {
+      "file": "public/assets/chemistry/c7-reactor-bed-v1.png",
+      "prompt": "Use case: scientific-educational. Asset: one isolated textbook plate for a Year 12 Haber process video. Draw a vertical industrial Haber reactor bed, a thick bolted steel cylindrical pressure vessel shown in partial cutaway with clearly visible horizontal bed of dark iron catalyst pellets and a warm orange reaction zone. The object must read at 200 px. Match the fine black ink linework, warm watercolour steel washes, and restrained paper texture of the existing c7-haber-converter-v1.png reference image seen in context. Transparent background with actual alpha, no background or floor, no glow, no shadows, no text, labels, arrows, numbers, watermark or border. Keep at least 8% empty transparent margin on all sides. Long side at least 1600 px.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "ff8d5ae51adff1ec14efcd639c08c135344e96bd8bfcd19a2a0b7f78e406ad6c",
+      "size": [
+        880,
+        1895
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-condenser-cooler-v1.png",
+      "prompt": "Use case: scientific-educational. Single isolated ink and watercolour textbook plate of an industrial condenser cooler in a Haber process. Horizontal finned metal heat exchanger with an inlet pipe and outlet pipe, pale blue cooling coils visible in a cutaway; clear simple silhouette at 200 px. Match existing c7-haber-converter-v1.png plate style: fine black ink, warm silver steel washes, restrained watercolour texture. Genuine transparent alpha background, at least 8% empty margin on every side, no ground, shadow, glow, label, text, number, arrow, watermark or frame. Long side at least 1600 px.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "db18fb951c179b6ea707e46f87541179ff063787f32b26cfd9609ed5b609438e",
+      "size": [
+        2150,
+        925
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-ammonia-storage-tank-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 Haber process video. Match the fine black ink contours, warm silver steel washes and restrained paper texture of the existing c7-haber-converter-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. One sturdy cylindrical steel liquid-ammonia storage tank with rounded ends, short legs and a small inlet valve, slight cutaway showing a pale liquid level. Clear silhouette.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "aae1b75858735820c7c60c4118f8779ab566822d0cad1b3b0ba9e159a5b4fada",
+      "size": [
+        1742,
+        1065
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-gas-compressor-pump-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 Haber process video. Match the fine black ink contours, warm silver steel washes and restrained paper texture of the existing c7-haber-converter-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. One industrial gas compressor pump: squat cast steel body, round motor housing, inlet and outlet pipe flanges, visible compressed-gas cylinder. Clear silhouette, no arrows.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "c76af9d84da2f3051822ceaf6de802266a27da608c4d5301c8d759e0b6dedbc1",
+      "size": [
+        1795,
+        1125
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-iron-catalyst-pellets-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 Haber process video. Match the fine black ink contours, warm silver steel washes and restrained paper texture of the existing c7-haber-converter-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. A small clustered bed of dark grey porous iron catalyst pellets, irregular pea-size granules, one bold pile that reads at icon size; no container.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "2593535d5eba065c5d62a4fd6a65638e76d3cb9020c8a011930570a143237ce8",
+      "size": [
+        1800,
+        1019
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-thick-steel-wall-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 Haber process video. Match the fine black ink contours, warm silver steel washes and restrained paper texture of the existing c7-haber-converter-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. A cutaway cross section of an exceptionally thick bolted steel reactor wall: curved double metal shell, exposed thickness, broad flange and bolts, no complete reactor. Readable as thick pressure steel.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "32379c0d1fb899c76003bdd0d67b4f69dda38bebbf1d6a114c9ccb8c05c374e8",
+      "size": [
+        1147,
+        1800
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-flame-energy-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 Haber process video. Match the fine black ink contours, warm silver steel washes and restrained paper texture of the existing c7-haber-converter-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. One single orange-red gas flame rising from a small steel industrial burner nozzle. Bold readable flame silhouette, natural uneven edge.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "765e55491e325a1a15f4d14a7404dd67103e54240f09cc8c36b5ff1cde58d63d",
+      "size": [
+        505,
+        1800
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c7-pipe-leak-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 Haber process video. Match the fine black ink contours, warm silver steel washes and restrained paper texture of the existing c7-haber-converter-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. One thick industrial steel gas pipe with a visible cracked joint and a short spray of escaping gas. Small tear and pressure escaping from the joint; no warning triangle or arrows.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "00968e974595f9169ae845ad3a088c6165d033933a61d9fc074ce5f401f76da8",
+      "size": [
+        2111,
+        1002
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c8-hot-hi-tube-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 reaction quotient video. Match the fine ink linework, transparent glass washes, warm natural colour and restrained paper texture of existing c3-iron-tube-start-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. A sealed clear glass reaction tube held horizontally in a compact ceramic tube furnace, viewed from the side. Inside the glass a faint violet iodine vapour, but the central glass window stays mostly transparent so colored dots can be overlaid by video code. Show modest orange heat in the furnace wall. Keep one bold, legible apparatus silhouette.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "154c8476c41d89201f65377d48c7d064b7d2c2f8d9fb4caf8a114cd36f5d1770",
+      "size": [
+        2094,
+        679
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c8-thermometer-hot-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 reaction quotient video. Match the fine ink linework, transparent glass washes, warm natural colour and restrained paper texture of existing c3-iron-tube-start-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. A classic laboratory glass thermometer, vertical, with bulb and visible red fluid column high in the stem to convey hot temperature. No scale markings, numbers or labels. Clear simple silhouette.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "72af9fc4b8e8516d3d859816fb153add24a8a0c2aa96368b1f441183ac5ff97f",
+      "size": [
+        216,
+        1988
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c8-stopwatch-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 reaction quotient video. Match the fine ink linework, transparent glass washes, warm natural colour and restrained paper texture of existing c3-iron-tube-start-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. A handheld metal analogue stopwatch with a round dial, two top buttons and a single dark hand. No numerals, ticks, letters or other text. Readable at 150 px.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "c6e1169d5f1410cdfcb1af27ea2defcd0f0294cf32b067a3876cb40c62896925",
+      "size": [
+        1367,
+        1800
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/chemistry/c8-round-flask-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated ink and watercolour textbook plate for Year 12 reaction quotient video. Match the fine ink linework, transparent glass washes, warm natural colour and restrained paper texture of existing c3-iron-tube-start-v1.png. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. One round-bottom glass laboratory flask with a narrow neck and stopper, side view, pale near-clear contents and crisp glass outline. No label or text. The same plate can be reused twice in edge-case scenes.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "7d0f98d68cb8e029dcad0dd631695a08fe4b929a9bdc7f54761f892de4b6351b",
+      "size": [
+        1002,
+        1800
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/biology/b5a-epithelium-shedding-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated Year 12 biology textbook plate. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. A close section of human skin surface with a thin top layer of old flattened cells visibly flaking upward and fresh rounded cells beneath rising to replace them. One clear section, no wound. Match the warm peach skin layers, fine ink contours and watercolor grain of b5a-skin-graze-v1.png. No chromosomes.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "93aefdc98a1682501415b6d465cc71a180021583fbabc08995336b869d232311",
+      "size": [
+        1800,
+        1222
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/biology/b5a-plant-cell-plate-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated Year 12 biology textbook plate. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. One dividing plant cell in a close cutaway: firm greenish outer cell wall, two separated daughter nuclei, and a new cell plate forming as a thin line across the centre between the nuclei. No chromosomes drawn. The plate is the teaching focus, broad and visible at 200 px. Fine ink with pale green and cream watercolour like b5a-skin-graze-v1.png.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "5c205ce44af3cfce7f602d13a5ab766db64d4ea43ebee4b96041e1aba84c8b68",
+      "size": [
+        1438,
+        1800
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    },
+    {
+      "file": "public/assets/biology/b5b-parents-v1.png",
+      "prompt": "Use case: scientific-educational. Isolated Year 12 biology textbook plate. Genuine transparent alpha background, at least 8% fully empty margin on each side, long side at least 1600 px. No background, floor, cast shadow, glow, text, labels, numbers, arrows, watermark or border. Two parents of the boys shown in b5b-brothers-v1.png, standing side by side in a warm painterly textbook portrait, full figures. Mother and father with believable family resemblance: one parent with brown hair and warm brown eyes, one parent with fair blond hair and blue eyes; simple casual clothing in muted olive and blue. Natural human proportions, clear at small size. Same ink-and-watercolour treatment as the brothers plate.",
+      "model": "built-in image_gen",
+      "retakes": 0,
+      "sha256": "ebabf02e663be09297718a8dc85b80c33079e887337d094db3015d7999005ed4",
+      "size": [
+        937,
+        1800
+      ],
+      "checks": {
+        "real_alpha": true,
+        "margin_at_least_8_percent": true,
+        "checkerboard_200px": true,
+        "cream_preview": true
+      },
+      "set": null,
+      "part_of": null
+    }
+  ]
+}

@@ -40,7 +40,7 @@ try {
 		if (fs.existsSync(out)) continue;
 		for (let attempt = 1; attempt <= 4; attempt++) {
 			try {
-				await renderMedia({composition, serveUrl, codec: 'h264', crf: 20, concurrency: 2, muted: true, timeoutInMilliseconds: 45000, frameRange: [start, end], outputLocation: out});
+				await renderMedia({composition, serveUrl, codec: 'h264', crf: 20, concurrency: Number(process.env.RENDER_CONCURRENCY || 2), muted: true, timeoutInMilliseconds: 45000, frameRange: [start, end], outputLocation: out});
 				console.log('chunk', start, end, 'ok');
 				break;
 			} catch (e) {
