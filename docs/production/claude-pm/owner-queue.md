@@ -2,6 +2,11 @@
 
 **Mode (13 Oct, owner decision): consolidation.** No new designs or voicing. Finish what is recorded (C7, C8, B5a, B5b builds), voiced reviews of C5, B3b, C6, B4, render each preview the owner approves (one at a time), upload in batches through Codex. C9 and B6a wait at the Codex check; Module 6 stays at extracts.
 
+## Published 14 Oct (brief 28)
+
+- G01 https://youtu.be/BdF_sRrt5Yw, C4a https://youtu.be/yk5KVdipGRE, B4 https://youtu.be/P9jyiLiGhZI. B2b uploads after its render (follow-up prompt from Claude).
+- Brief 31 plates delivered (C7, C8, B5a, B5b): Claude wires them in after the B2b render.
+
 ## For you when you are back (14 Oct)
 
 - Thumbnail concepts (13 designs, built from our own plates and lettering, no AI images, based on ten top channels): http://127.0.0.1:8778/thumbnail-concepts/ . Research: docs/production/claude-pm/thumbnails/research-top-channels.md. Pick favourites; the recommendation is frame A as default and a YouTube "Test and compare" of #1 vs #3 vs #2 on C3.
