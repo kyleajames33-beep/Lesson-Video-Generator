@@ -109,3 +109,12 @@ Resolved in Revision 3 of `../lessons/chem-m5-g03.md` (14 Oct).
 6. Finding 6: root decision, the label is "HSC-style question, written for HSCScience" everywhere (matching g02), tagged on scenes 3, 7b and 8a as well; the file never implies NESA wrote a question. Resolved.
 7. Finding 7: key note 4 reworded to "takes more off a starting species than there was"; the memory aid check follows. Resolved.
 8. Finding 8: the 5 per cent test is called "a school rule of thumb" on the 7a rule card and in key note 5. Resolved.
+
+## Codex check resolution (14 Oct)
+
+Source: `g03-check.md` (2 findings, both science). Both applied as recommended in `../lessons/chem-m5-g03.md` (now Revision 4).
+
+1. Finding 1 (science, scene 8b Visual): applied. Old: `x^3 = 0.040 / 4.0 x 10^10 = 1.0 x 10^-12`. New: `x^3 = 0.040 / (4.0 x 10^10) = 1.0 x 10^-12`. The same bracketed form is used in "Numbers to verify". Spoken line unchanged (it already says x cubed is one times ten to the minus twelve).
+2. Finding 2 (science, scene 8a Visual tag): applied. Old: "K much larger than the start, so almost nothing splits". New: "K is very large; test how little SO3 splits". The numerical test stays in 8c (2x = 0.00020 is 0.05 per cent of 0.400). Author note (c), which quoted the older tag, now carries the new wording.
+
+Length: no narration change, still 1494 words and about 10.1 minutes. Status line updated. Owner steers unchanged. Nothing recorded.

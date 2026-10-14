@@ -96,3 +96,13 @@ Applied in `../lessons/chem-m5-g02.md` Revision 3 (14 Oct). Root resolution, one
 - Claims table, 3d chip: fixed. The chip is stated for NO2 (above its old level, below the jump) and N2O4 (above the jump), and each slip names its graph.
 - Claims table, no-shift aid tag: fixed. Tag adds that the volume may change only if the gas count is equal.
 - UNVERIFIED 1 (activation energies): handled as illustrative (finding 10). UNVERIFIED 2 (type frequency and marker-feedback slips): no frequency claim is made in the video; the footer tag says the types are our grouping. Codex fact check to confirm; the research file should cite the syllabus and a named year if a frequency claim is ever added.
+
+## Codex check resolution (14 Oct)
+
+Source: `g02-check.md` (3 findings: 2 science, 1 copy). All applied as recommended in `../lessons/chem-m5-g02.md` (now Revision 4).
+
+1. Finding 1 (science, scene 9 key notes): applied. Old: "Only an added or removed substance jumps. A volume change makes every gas concentration jump but no amount jumps." New: "Only the added or removed substance jumps on its own. A volume change makes every gas concentration jump, but no amount jumps." The clause about amounts is kept because scene 4b says the amount graph has no jump.
+2. Finding 2 (science, 6c narration and air row): applied. Narration old: "Excess air pushes the mixture towards sulfur trioxide, and air is free." New: "Excess air pushes the mixture towards sulfur trioxide. Air is readily available and cheaper than sulfur dioxide." Air row reason old: "air is free; SO2 is the costly one". New: "air is readily available and cheaper than SO2". The author-note and Codex-request mentions of "air is free" were updated to match.
+3. Finding 3 (copy, 7c narration): applied. Old: "At time t one something changes." New: "At time t one, something changes."
+
+Length: narration 1510 to 1515 words (scene 6c 102 to 107), about 2 s more, total still near 10.0 minutes. Status line updated. No other scene changed; owner steers unchanged. Nothing recorded.
