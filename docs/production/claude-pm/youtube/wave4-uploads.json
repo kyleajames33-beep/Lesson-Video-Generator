@@ -1,6 +1,6 @@
 {
   "brief": "28-youtube-upload-c4a-b4-and-ledger",
-  "status": "partial: B2b pending render",
+  "status": "complete",
   "channel": {
     "name": "HSCScience",
     "handle": "@HSCScience-u7i",
@@ -8,10 +8,9 @@
   },
   "recordDate": "2026-10-14",
   "timezone": "Australia/Sydney",
-  "verification": "Studio showed Public visibility, complete HD processing and no notices for G01, C4a and B4. Timed English (Australia) SRT tracks were imported and Studio confirmed publication. No audio warning appeared. Thumbnail frames were visually checked. Public playlist pages showed Manual sorting and the recorded positions after reload.",
-  "playlistOrderNote": "Chemistry: C1, C2, G01, C3, C4a. Biology: B1, B2a, mould, B2c, B4. Insert B2b between B2a and B2c when its render is available. Later Biology lessons need insertion before B4.",
+  "verification": "Studio showed Public visibility, complete HD processing and no notices for G01, C4a, B2b and B4. Timed English (Australia) SRT tracks were imported and Studio confirmed publication. No audio warning appeared. Thumbnail frames were visually checked. Public playlist pages showed Manual sorting and the recorded positions after reload.",
+  "playlistOrderNote": "Chemistry: C1, C2, G01, C3, C4a. Biology: B1, B2a, B2b, B2c, mould, B4. Later Biology lessons need insertion before B4.",
   "unresolved": [
-    "B2b has no MP4 and remains pending render.",
     "External description links remain plain text until YouTube channel one-off verification."
   ],
   "videos": [
@@ -91,15 +90,38 @@
     {
       "lessonId": "bio-m5-b02b",
       "file": "out/explainer/Explainer-bio-m5-b02b/Explainer-bio-m5-b02b-v1.mp4",
+      "sha256": "5a65e1a488764865873633203820cb46fac910edcadfbf57f3237a605a49cd77",
       "title": "Flowering Plant Reproduction: Pollination to Seed | Year 12 Biology",
-      "status": "pending render",
-      "reason": "No MP4 at the brief 28 upload check. No YouTube upload or URL.",
+      "description": "Sequence reproduction in flowering plants from pollination to seed, and explain why pollination is not yet fertilisation. Explain how a pollen tube carries sperm to the egg. Name vegetative propagation as the asexual route in plants, then match each route to the conditions where it works best.\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing sexual and asexual reproduction in plants.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms, including but not limited to:\n- plants: asexual and sexual reproduction\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Sexual and asexual reproduction, gametes joining at fertilisation, clones, and the conditions that favour clones or variety. Next: Reproduction without flowers or seeds: yeast, bacteria and protists.\n\n#Year12Biology #Reproduction #HSCScience",
+      "syllabusDotpoints": [
+        "explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms, including but not limited to:\n- plants: asexual and sexual reproduction"
+      ],
+      "status": "published",
+      "visibility": "Public",
+      "requestedVisibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": "Yes",
       "playlist": {
         "title": "Year 12 Biology: Module 5, Heredity (2017 syllabus)",
         "id": "PLSRtz9v2ybMg",
-        "url": "https://www.youtube.com/playlist?list=PLSRtz9v2ybMg"
+        "url": "https://www.youtube.com/playlist?list=PLSRtz9v2ybMg",
+        "position": 3,
+        "membership": "Confirmed on public playlist page after reload",
+        "visibility": "Public",
+        "sorting": "Manual"
       },
-      "captionFile": "docs/production/claude-pm/lessons/b2b/measured/captions.srt"
+      "captionFile": "docs/production/claude-pm/lessons/b2b/measured/captions.srt",
+      "captionSha256": "d0cf3434937b513ded9f305c8998c00da5d8ce515060b5506956a9ab8f5d5e29",
+      "captionLanguage": "English (Australia)",
+      "captionStatus": "Published",
+      "thumbnail": "Auto-generated frame 2: fertilisation diagram showing the ovule and egg.",
+      "duration": "9:17",
+      "videoId": "j2fxl5xvDwE",
+      "url": "https://youtu.be/j2fxl5xvDwE",
+      "studioUrl": "https://studio.youtube.com/video/j2fxl5xvDwE/edit",
+      "uploadDate": "2026-10-14"
     },
     {
       "lessonId": "bio-m5-b04",
@@ -121,7 +143,7 @@
         "title": "Year 12 Biology: Module 5, Heredity (2017 syllabus)",
         "id": "PLSRtz9v2ybMg",
         "url": "https://www.youtube.com/playlist?list=PLSRtz9v2ybMg",
-        "position": 5,
+      "position": 6,
         "membership": "Confirmed on public playlist page",
         "visibility": "Public",
         "sorting": "Manual"

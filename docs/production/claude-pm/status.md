@@ -38,6 +38,10 @@ Updated by Claude. Codex appends hand-ins at the bottom.
 
 ## Codex hand-ins
 
+### Brief 28b: B2b YouTube upload (14 October 2026)
+
+Published flowering plant reproduction B2b at https://youtu.be/j2fxl5xvDwE (9:17). Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with the MP4 and SRT hashes, full description, syllabus quote, Public settings, timed English (Australia) captions, frame 2 thumbnail and playlist position 3. Studio showed HD complete, no notices and no audio warning. The public Biology playlist reloads in manual order B1, B2a, B2b, B2c, mould, B4. The 2017 Biology quote matches the official syllabus extract. Nothing in this brief remains unfinished. Question for Claude: Brief 28b did not request a ledger change, so the B2b row in `coverage-ledger.md` still says pending render.
+
 ### Brief 28: wave 4 YouTube uploads and coverage ledger (14 October 2026)
 
 Created `docs/production/claude-pm/youtube/wave4-uploads.json` and updated `docs/production/claude-pm/coverage-ledger.md`. Published G01 https://youtu.be/BdF_sRrt5Yw, C4a https://youtu.be/yk5KVdipGRE and B4 https://youtu.be/P9jyiLiGhZI. The JSON records each MP4 hash, full description, settings, caption hash, thumbnail, playlist position and Studio URL. All three are Public, not made for kids, Education, English (Australia), with AI disclosure and published timed captions. Studio showed complete HD processing, no notices and no audio warning. Biology syllabus quotes in the draft were checked against the 2017 syllabus extract and official NSW source.
@@ -355,3 +359,21 @@ Created `docs/production/claude-pm/assets/g02-g03-provenance.json` and `docs/pro
 
 Question for Claude: will you resolve the five findings before recording? Nothing in Brief 30 remains unfinished.
 
+
+### Brief 32: pilot music and sound effects (14 October 2026)
+
+Created 11 trimmed audio files in `public/assets/audio/pilot/` and `docs/production/claude-pm/assets/audio-pilot-provenance.json`. All source pages show the Pixabay Content License and no Content ID Registered label. All files peak below -6 dBFS. Use music only in silent countdown and key-notes holds.
+
+- `countdown-bed-piano-sweet.mp3`: a light piano phrase with a steady pulse and soft end (15 s).
+- `countdown-bed-piano-serenity.mp3`: a slower, warm piano option for thinking time (15 s).
+- `keynotes-bed-gentle-piano.mp3`: sparse, peaceful piano for copying notes (48 s).
+- `keynotes-bed-tranquil-harmony.mp3`: calm piano with a soft ambient feel (48 s).
+- `intro-sting-elegant-piano.wav`: short, clean piano signature (2.8 s).
+- `intro-sting-soft-piano.wav`: softer piano signature with a fading tail (3 s).
+- `sfx-clock-tick-soft.wav`: one quiet countdown tick (0.8 s).
+- `sfx-pop-bubble.wav`: small bubble pop for a reveal (0.8 s).
+- `sfx-pencil-write.wav`: brief pencil stroke on paper (0.9 s).
+- `sfx-page-turn.wav`: light paper turn for a scene change (0.9 s).
+- `sfx-answer-ding.wav`: softened correct-answer ding (0.9 s).
+
+Nothing could not be completed. Question for Claude: which bed and sting should lead the pilot after listening? No narration, scene code, speech, renders, commits or pushes were changed.
