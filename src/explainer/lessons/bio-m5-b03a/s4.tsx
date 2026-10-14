@@ -40,17 +40,17 @@ export const SceneHandover: React.FC = () => {
 				</g>
 			</Overlay>
 						{/* the organ chain returns small */}
-			<Pill2 at={20} x={96} y={776} w={160} text="embryo" color={TEAL} />
-			<Pill2 at={20} x={440} y={776} w={250} text="corpus luteum" color={YELLOW} grey={grey} />
-			<Pill2 at={20} x={900} y={776} w={150} text="lining" color={AMBER} />
+			<Pill2 at={20} x={96} y={764} w={160} text="embryo" color={TEAL} />
+			<Pill2 at={20} x={440} y={764} w={250} text="corpus luteum" color={YELLOW} grey={grey} />
+			<Pill2 at={20} x={900} y={764} w={150} text="lining" color={AMBER} />
 			<Overlay>
-				<Arrow x1={262} y1={802} x2={432} y2={802} at={20} color={grey > 0.5 ? '#b9b3a8' : TEAL} width={7} dur={14} head={16} />
-				<Label x={346} y={790} at={24} text="hCG" size={40} color={grey > 0.5 ? '#9a948a' : TEAL_INK} />
-				<Arrow x1={696} y1={802} x2={892} y2={802} at={20} color={grey > 0.5 ? '#b9b3a8' : AMBER} width={7} dur={14} head={16} />
-				<Arrow x1={696} y1={858} x2={940} y2={836} at={c.takes + 10} color={AMBER} width={7} dur={18} head={16} />
-				<Label x={800} y={850} at={c.takes + 20} text="progesterone" size={34} color={AMBER_INK} anchor="middle" />
+				<Arrow x1={262} y1={790} x2={432} y2={790} at={20} color={grey > 0.5 ? '#b9b3a8' : TEAL} width={7} dur={14} head={16} />
+				<Label x={346} y={778} at={24} text="hCG" size={40} color={grey > 0.5 ? '#9a948a' : TEAL_INK} />
+				<Arrow x1={696} y1={790} x2={892} y2={790} at={20} color={grey > 0.5 ? '#b9b3a8' : AMBER} width={7} dur={14} head={16} />
+				<Arrow x1={696} y1={862} x2={918} y2={826} at={c.takes + 10} color={AMBER} width={7} dur={18} head={16} />
+				<Label x={990} y={862} at={c.takes + 20} text="progesterone" size={34} color={AMBER_INK} anchor="middle" />
 			</Overlay>
-			<Pill2 at={c.takes} x={440} y={834} w={250} text="placenta" color={TEAL} />
+			<Pill2 at={c.takes} x={440} y={836} w={250} text="placenta" color={TEAL} />
 			{/* fetus and placenta plate */}
 			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.forms - 4, 24)}}>
 				<PArt a={PL.fetus} x={FP.x} y={FP.y} w={FP.w} />

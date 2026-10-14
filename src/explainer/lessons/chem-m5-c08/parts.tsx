@@ -1,7 +1,7 @@
 // Drawing parts for the C8 lesson: the hot tube with 0.05 mol/L dots, the log number line with fixed K marker and
 // sliding Q marker, lit equation arrows, live rate bars, stopwatch and the painted pressure vessel.
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {slotXY} from '../chem-m5-c04b/parts';
 import {tubeColour} from '../chem-m5-c04b/common';
@@ -9,7 +9,9 @@ import {Arrow, Bracket, Chip, Cross, EqStrip, Fade, FracX, GivensCard, Overlay, 
 import type {EqItem, Term} from '../chem-m5-c06/parts';
 import {RateBars} from '../chem-m5-c05/parts';
 import {GLASS, H2C, H2_INK, HIC, HI_INK, I2C, QINK} from './common';
-import {HAVE8, VESSEL} from './assets';
+import {HAVE8, PL8, VESSEL} from './assets';
+import type {PDef} from './assets';
+import {ParticleLens} from '../chem-m5-c02/parts';
 
 export {Arrow, Bracket, Chip, Cross, EqStrip, Fade, FracX, GivensCard, Overlay, Ring, Sx, SvgText, Tag, TEAL, Tick, TubeScale, eqLayout, tw};
 export type {EqItem, Term};
@@ -46,16 +48,27 @@ export const LitArrows: React.FC<{items: EqItem[]; x?: number; y?: number; size?
 	);
 };
 
+// ---------- painted plates (SVG): fit a plate by its alpha box into a slot ----------
+export const picRect = (p: PDef, x: number, y: number, w: number, h: number) => {
+	const k = Math.min(w / p.box[2], h / p.box[3]);
+	return {x: x + (w - p.box[2] * k) / 2, y: y + (h - p.box[3] * k) / 2, w: p.box[2] * k, h: p.box[3] * k, k};
+};
+export const Pic: React.FC<{p: PDef; x: number; y: number; w: number; h: number; o?: number; children?: React.ReactNode}> = ({p, x, y, w, h, o = 1, children}) => {
+	if (!HAVE8.has(p.src)) return <>{children}</>;
+	const r = picRect(p, x, y, w, h);
+	return <image href={staticFile(p.src)} x={r.x - p.box[0] * r.k} y={r.y - p.box[1] * r.k} width={p.nat[0] * r.k} height={p.nat[1] * r.k} opacity={o} />;
+};
+
 // ---------- tube with changing counts ----------
 export type Kind = {c: string; ink: string; r: number};
 export const HI_KINDS: Kind[] = [{c: H2C, ink: H2_INK, r: 7.5}, {c: I2C, ink: INK, r: 9.5}, {c: HIC, ink: HI_INK, r: 8}];
 export const cst = (...n: number[]) => () => n;
-export const Tube: React.FC<{x: number; y: number; w: number; h: number; counts: (f: number) => number[]; kinds?: Kind[]; seed?: number; reveal?: number; ghost?: boolean; agit?: (f: number) => number; tint?: boolean}> = ({x, y, w, h, counts, kinds = HI_KINDS, seed = 7, reveal = 1, ghost = false, agit, tint = true}) => {
+export const Tube: React.FC<{x: number; y: number; w: number; h: number; counts: (f: number) => number[]; kinds?: Kind[]; seed?: number; reveal?: number; ghost?: boolean; agit?: (f: number) => number; tint?: boolean; bare?: boolean}> = ({x, y, w, h, counts, kinds = HI_KINDS, seed = 7, reveal = 1, ghost = false, agit, tint = true, bare = false}) => {
 	const f = useCurrentFrame();
 	if (reveal <= 0.01) return null;
 	const c = counts(f).map(Math.round);
 	const cx = x + w / 2, cy = y + h / 2;
-	const ax = w / 2 - 28, ay = h / 2 - 30;
+	const ax = bare ? w / 2 : w / 2 - 28, ay = bare ? h / 2 : h / 2 - 30;
 	const amp = agit ? agit(f) : 0;
 	const age = (t: number, k: number) => {
 		for (let j = 1; j <= 9; j++) if (Math.round(counts(f - j)[t]) <= k) return j - 1;
@@ -65,16 +78,37 @@ export const Tube: React.FC<{x: number; y: number; w: number; h: number; counts:
 	const fill = tint ? tubeColour(c[1] ?? 0) : '#ffffff';
 	return (
 		<g opacity={reveal * (ghost ? 0.62 : 1)}>
-			<rect x={x} y={y} width={w} height={h} rx={rx} fill={GLASS} fillOpacity={0.55} />
-			<rect x={x + 5} y={y + 5} width={w - 10} height={h - 10} rx={rx - 5} fill={fill} fillOpacity={0.5} />
-			<rect x={x} y={y} width={w} height={h} rx={rx} fill="none" stroke={INK} strokeWidth={ghost ? 3.5 : 5} strokeDasharray={ghost ? '12 8' : undefined} />
-			<path d={`M${x + 18},${y + 40} L${x + 18},${y + h - 40}`} stroke="#fff" strokeOpacity={0.7} strokeWidth={6} strokeLinecap="round" />
+			{bare ? null : (
+				<>
+					<rect x={x} y={y} width={w} height={h} rx={rx} fill={GLASS} fillOpacity={0.55} />
+					<rect x={x + 5} y={y + 5} width={w - 10} height={h - 10} rx={rx - 5} fill={fill} fillOpacity={0.5} />
+					<rect x={x} y={y} width={w} height={h} rx={rx} fill="none" stroke={INK} strokeWidth={ghost ? 3.5 : 5} strokeDasharray={ghost ? '12 8' : undefined} />
+					<path d={`M${x + 18},${y + 40} L${x + 18},${y + h - 40}`} stroke="#fff" strokeOpacity={0.7} strokeWidth={6} strokeLinecap="round" />
+				</>
+			)}
 			{kinds.map((kd, t) => Array.from({length: c[t] ?? 0}, (_, k) => {
 				const p = slotXY(seed + (ghost ? 3 : 0), t, k, f, cx, cy, ax, ay);
 				const s = 0.45 + 0.55 * Math.min(1, age(t, k) / 8);
 				const jx = amp * Math.sin(f * 1.7 + k * 2.1 + t), jy = amp * Math.cos(f * 1.9 + k * 1.3 + t);
 				return <circle key={`${t}-${k}`} cx={p.x + jx} cy={p.y + jy} r={kd.r * s} fill={kd.c} stroke={kd.ink} strokeWidth={2.3} />;
 			}))}
+		</g>
+	);
+};
+
+
+/**
+ * The painted furnace tube with the dots over its clear glass window (hook only; the board tube stays coded).
+ * The window of the plate (alpha box coordinates) is x 395 to 1290, y 180 to 290; dots stay inside it.
+ */
+export const HotTube: React.FC<{x: number; y: number; w: number; counts: (f: number) => number[]; agit?: (f: number) => number; reveal?: number}> = ({x, y, w, counts, agit, reveal = 1}) => {
+	if (reveal <= 0.01) return null;
+	const p = PL8.tube, k = w / p.box[2];
+	const cx = x + 842 * k, cy = y + 235 * k, ax = 395 * k, ay = 40 * k;
+	return (
+		<g opacity={reveal}>
+			<Pic p={p} x={x} y={y} w={w} h={p.box[3] * k} />
+			<Tube x={cx - ax} y={cy - ay} w={2 * ax} h={2 * ay} counts={counts} agit={agit} bare tint={false} />
 		</g>
 	);
 };
@@ -204,11 +238,30 @@ export const EmptyBars: React.FC<{at: number; out?: number; x0?: number; bw?: nu
 );
 
 // ---------- stopwatch ----------
+/** Painted stopwatch: the plate's baked hand is covered by a patch the colour of the dial face, and a coded hand (12 o'clock, trembling) is drawn from the hub. */
+const PaintedWatch: React.FC<{cx: number; cy: number; r: number; tremble: number}> = ({cx, cy, r, tremble}) => {
+	const p = PL8.watch;
+	const h = 2.6 * r + 20, k = h / p.box[3];
+	const x0 = cx - 0.5 * p.box[2] * k, y0 = cy - (1062 - p.box[1]) * k;
+	const X = (u: number) => x0 + (u - p.box[0]) * k, Y = (v: number) => y0 + (v - p.box[1]) * k;
+	const hx = X(698), hy = Y(1062);
+	return (
+		<g>
+			<Pic p={p} x={x0} y={y0} w={p.box[2] * k} h={p.box[3] * k} />
+			<filter id="c8watchblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation={Math.max(2, 12 * k)} /></filter>
+			<path d={`M${X(720)},${Y(1042)} L${X(995)},${Y(758)}`} stroke="#ece6da" strokeWidth={42 * k} strokeLinecap="round" filter="url(#c8watchblur)" />
+			<path d={`M${hx},${hy} L${hx + tremble},${hy - 300 * k}`} stroke={AMBER_INK} strokeWidth={Math.max(5, 14 * k)} strokeLinecap="round" />
+			<circle cx={hx} cy={hy} r={44 * k} fill="#6b6f77" stroke={INK} strokeWidth={3} />
+			<text x={hx} y={hy + 250 * k} textAnchor="middle" fill={INK} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 88 * k}}>0.0 s</text>
+		</g>
+	);
+};
 export const Stopwatch: React.FC<{cx: number; cy: number; r: number; at: number; out?: number; freeze?: number}> = ({cx, cy, r, at, out, freeze}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 14) * (out === undefined ? 1 : 1 - prog(f, out, 10));
 	if (o <= 0.01) return null;
 	const tremble = freeze !== undefined && f >= freeze ? 0 : Math.sin(f * 0.9) * 3;
+	if (HAVE8.has(PL8.watch.src)) return <g opacity={o}><PaintedWatch cx={cx} cy={cy} r={r} tremble={tremble} /></g>;
 	return (
 		<g opacity={o}>
 			<rect x={cx - 14} y={cy - r - 36} width={28} height={22} rx={6} fill={INK_SOFT} stroke={INK} strokeWidth={4} />
@@ -220,6 +273,26 @@ export const Stopwatch: React.FC<{cx: number; cy: number; r: number; at: number;
 			<path d={`M${cx},${cy} L${cx + tremble},${cy - (r - 28)}`} stroke={AMBER_INK} strokeWidth={7} strokeLinecap="round" />
 			<circle cx={cx} cy={cy} r={9} fill={INK} />
 			<text x={cx} y={cy + r * 0.55} textAnchor="middle" fill={INK} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: r * 0.34}}>0.0 s</text>
+		</g>
+	);
+};
+
+/** Painted hot thermometer (hook). */
+export const HotThermo: React.FC<{x: number; y: number; h: number; at: number; out?: number}> = ({x, y, h, at, out}) => (
+	<Fade at={at} out={out}>
+		<Pic p={PL8.thermo} x={x - 40} y={y} w={80} h={h} />
+	</Fade>
+);
+
+/** Painted round flask with the particle dots drawn over its round body (bare ParticleLens). cx, cy is the centre of the body. */
+export const FlaskLens: React.FC<{cx: number; cy: number; h: number; counts: (f: number) => {n: number; v: number}}> = ({cx, cy, h, counts}) => {
+	const p = PL8.flask, k = h / p.box[3];
+	const x0 = cx - 0.5 * p.box[2] * k, y0 = cy - (1218 - p.box[1]) * k;
+	const rr = 300 * k;
+	return (
+		<g>
+			<Pic p={p} x={x0} y={y0} w={p.box[2] * k} h={p.box[3] * k} />
+			<ParticleLens cx={cx} cy={cy + 8} r={rr} counts={counts} seed={4} rScale={0.46} bare />
 		</g>
 	);
 };

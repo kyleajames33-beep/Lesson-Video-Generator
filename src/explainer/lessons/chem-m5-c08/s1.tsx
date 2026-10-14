@@ -4,7 +4,8 @@ import {AMBER_INK, DrawPath, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
 import {H2I2_EQ} from '../chem-m5-c06/board';
 import {Thermo} from '../chem-m5-c04b/parts';
-import {BLUE, CARD8, Chip, EQ8, EqStrip, Fade, FracX, GivensCard, KEY8, Overlay, Ring, Stopwatch, Sx, Tag, Tube, TubeScale, TUBE8, cardH, cst, eqLayout} from './parts';
+import {HAVE8, PL8} from './assets';
+import {BLUE, CARD8, Chip, EQ8, EqStrip, Fade, FracX, GivensCard, HotThermo, HotTube, KEY8, Overlay, Ring, Stopwatch, Sx, Tag, Tube, TubeScale, TUBE8, cardH, cst, eqLayout} from './parts';
 import type {Term} from './parts';
 import {Key8} from './board';
 import {Heading, cw, kf, sc} from './common';
@@ -14,6 +15,7 @@ const hiPos = eqLayout(H2I2_EQ, EQ8.s, EQ8.x).pos;
 
 // ---------- 1. Hook: a mixture that has not settled ----------
 const H = 'hook';
+const PAINTED = HAVE8.has(PL8.tube.src);
 const K1 = cues(sc(H), {tube: 'hot hydrogen iodide tube', fifty: 'four hundred and fifty', k49: 'forty-nine', settle: 'nobody let it settle first', mixed: 'mixed', v1: ['0.20', 1], v2: ['0.20', 2], v3: '0.50', notEq: 'not reached equilibrium', change: 'something is about to change', more: 'make more hydrogen iodide', brk: 'break some down', before: 'before anything moves'});
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
@@ -33,10 +35,11 @@ export const SceneHook: React.FC = () => {
 				]} />
 				<Key8 at={K1.tube + 24} x={900} y={340} out={K1.k49 + 10} />
 				<Key8 at={K1.k49 + 50} />
-				<Tube x={tx} y={ty} w={tw2} h={th} counts={cst(4, 4, 10)} reveal={prog(f, K1.tube - 10, 18)} agit={agit} />
+				{PAINTED ? <HotTube x={900} y={430} w={800} counts={cst(4, 4, 10)} agit={agit} reveal={prog(f, K1.tube - 10, 18) * (1 - prog(f, K1.k49 + 6, 16))} /> : null}
+				<Tube x={tx} y={ty} w={tw2} h={th} counts={cst(4, 4, 10)} reveal={PAINTED ? prog(f, K1.k49 + 6, 16) : prog(f, K1.tube - 10, 18)} agit={agit} />
 				<Fade at={K1.fifty} out={K1.k49 + 10}>
-					<Chip x={1410} y={560} w={330} h={64} text="about 450 °C" size={40} at={K1.fifty} color="#c4582f" />
-					<Thermo x={1350} y={584} s={2.2} at={K1.fifty} />
+					<Chip x={PAINTED ? 1500 : 1410} y={PAINTED ? 720 : 560} w={330} h={64} text="about 450 °C" size={40} at={K1.fifty} color="#c4582f" />
+					{PAINTED ? <HotThermo x={1780} y={440} h={250} at={K1.fifty} /> : <Thermo x={1350} y={584} s={2.2} at={K1.fifty} />}
 				</Fade>
 				<Chip x={360} y={690} w={330} h={56} text="just mixed, not settled" size={34} at={K1.settle} color={AMBER_INK} />
 				<Chip x={360} y={766} w={330} h={56} text="made-up mixture" size={34} at={K1.settle + 12} color={INK_SOFT} />

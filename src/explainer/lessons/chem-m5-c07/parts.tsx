@@ -1,9 +1,11 @@
 // Drawing parts for the C7 lesson: dashboard sliders, switches and gauges, small icons, the answer table.
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, PAPER_DEEP, prog} from '../../kit';
 import {Arrow, Chip, Fade, Ring, Sx, Tag, Tick, eqLayout, tw} from '../chem-m5-c06/parts';
 import type {EqItem} from '../chem-m5-c06/parts';
+import {HAVE7, PL7} from './assets';
+import type {PDef} from './assets';
 import {COLD, GREEN, H2C, HEAT, IRON, IRON_DARK, N2C, NH3C, hexMix} from './common';
 
 export {Arrow, Chip, Fade, Ring, Sx, Tag, Tick, eqLayout, tw};
@@ -84,6 +86,20 @@ export const GhostHand: React.FC<{x: number; y: number; o?: number}> = ({x, y, o
 	</g>
 );
 
+
+/** Fit a painted plate (by its alpha box) into the slot x, y, w, h, centred (or bottom aligned). Draws `fallback` (the coded stand-in) when the plate is not in HAVE7. */
+export const picRect = (p: PDef, x: number, y: number, w: number, h: number, bottom = false) => {
+	const k = Math.min(w / p.box[2], h / p.box[3]);
+	const rw = p.box[2] * k, rh = p.box[3] * k;
+	return {x: x + (w - rw) / 2, y: bottom ? y + h - rh : y + (h - rh) / 2, w: rw, h: rh, k};
+};
+export const Pic: React.FC<{p: PDef; x: number; y: number; w: number; h: number; o?: number; flip?: boolean; bottom?: boolean; children?: React.ReactNode}> = ({p, x, y, w, h, o = 1, flip, bottom, children}) => {
+	if (!HAVE7.has(p.src)) return <>{children}</>;
+	const r = picRect(p, x, y, w, h, bottom);
+	const img = <image href={staticFile(p.src)} x={r.x - p.box[0] * r.k} y={r.y - p.box[1] * r.k} width={p.nat[0] * r.k} height={p.nat[1] * r.k} opacity={o} />;
+	return flip ? <g transform={`translate(${2 * r.x + r.w},0) scale(-1,1)`}>{img}</g> : img;
+};
+
 // ---------- small icons ----------
 export const Snowflake: React.FC<{x: number; y: number; s?: number; color?: string}> = ({x, y, s = 1, color = COLD}) => (
 	<g transform={`translate(${x},${y}) scale(${s})`} stroke={color} strokeWidth={6} strokeLinecap="round" fill="none">
@@ -91,9 +107,13 @@ export const Snowflake: React.FC<{x: number; y: number; s?: number; color?: stri
 	</g>
 );
 export const Flame: React.FC<{x: number; y: number; s?: number; flick?: number}> = ({x, y, s = 1, flick = 1}) => (
-	<g transform={`translate(${x},${y}) scale(${s},${s * flick})`}>
-		<path d="M0,40 Q-34,26 -26,-6 Q-20,-22 -6,-40 Q-4,-18 10,-8 Q30,6 22,28 Q16,40 0,40 Z" fill={AMBER} stroke={AMBER_INK} strokeWidth={4} strokeLinejoin="round" />
-		<path d="M0,40 Q-14,34 -8,16 Q0,24 8,14 Q16,30 0,40 Z" fill="#f7d77a" />
+	<g transform={`translate(0,${y + 46 * s}) scale(1,${flick}) translate(0,${-(y + 46 * s)})`}>
+		<Pic p={PL7.flame} x={x - 40 * s} y={y - 54 * s} w={80 * s} h={100 * s} bottom>
+			<g transform={`translate(${x},${y}) scale(${s},${s})`}>
+				<path d="M0,40 Q-34,26 -26,-6 Q-20,-22 -6,-40 Q-4,-18 10,-8 Q30,6 22,28 Q16,40 0,40 Z" fill={AMBER} stroke={AMBER_INK} strokeWidth={4} strokeLinejoin="round" />
+				<path d="M0,40 Q-14,34 -8,16 Q0,24 8,14 Q16,30 0,40 Z" fill="#f7d77a" />
+			</g>
+		</Pic>
 	</g>
 );
 /** A few grey iron pellets filling a box. */

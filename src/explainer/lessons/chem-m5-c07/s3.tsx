@@ -2,7 +2,8 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Chip, CrowdBox, Cross, DotP, Fade, Flame, GasKey, Overlay, Pellets, Ring, Sx, Tag} from './parts';
+import {Arrow, Chip, CrowdBox, Cross, DotP, Fade, Flame, GasKey, Overlay, Pellets, Pic, Ring, Sx, Tag} from './parts';
+import {HAVE7, PL7} from './assets';
 import {Heading, H2C, HEAT, IRON_DARK, N2C, NH3C, RATE, YIELD, COST, CROSS, kf, sc} from './common';
 
 const clamp = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
@@ -66,16 +67,20 @@ export const ScenePressure: React.FC = () => {
 				{/* what the cost is made of */}
 				<Fade at={K1.steel}>
 					<g transform="translate(1460,250)">
-						<rect x={0} y={0} width={wall} height={96} fill="#c9ced4" stroke={IRON_DARK} strokeWidth={4} />
-						{[24, 48, 72].map(y => <path key={y} d={`M0,${y} L${wall},${y}`} stroke={IRON_DARK} strokeWidth={2} />)}
+						<Pic p={PL7.wall} x={-10} y={116 - (46 + 74 * prog(f, K1.steel, 60))} w={110} h={46 + 74 * prog(f, K1.steel, 60)} bottom>
+							<rect x={0} y={0} width={wall} height={96} fill="#c9ced4" stroke={IRON_DARK} strokeWidth={4} />
+							{[24, 48, 72].map(y => <path key={y} d={`M0,${y} L${wall},${y}`} stroke={IRON_DARK} strokeWidth={2} />)}
+						</Pic>
 						<Sx x={50} y={146} text="thicker" size={26} color={INK_SOFT} anchor="middle" at={K1.steel} /><Sx x={50} y={176} text="steel" size={26} color={INK_SOFT} anchor="middle" at={K1.steel} />
 					</g>
 				</Fade>
 				<Fade at={K1.pumps}>
-					<g transform={`translate(1650,298) scale(${pump * 0.85})`}>
-						<circle r={44} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
-						<path d="M-16,-22 L24,0 L-16,22 Z" fill={RATE} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
-					</g>
+					<Pic p={PL7.pump} x={1650 - 62 * pump} y={298 - 45 * pump} w={124 * pump} h={90 * pump}>
+						<g transform={`translate(1650,298) scale(${pump * 0.85})`}>
+							<circle r={44} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
+							<path d="M-16,-22 L24,0 L-16,22 Z" fill={RATE} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
+						</g>
+					</Pic>
 					<Sx x={1650} y={376} text="stronger" size={26} color={INK_SOFT} anchor="middle" at={K1.pumps} /><Sx x={1650} y={406} text="pumps" size={26} color={INK_SOFT} anchor="middle" at={K1.pumps} />
 				</Fade>
 				<Fade at={K1.energy}>
@@ -85,11 +90,13 @@ export const ScenePressure: React.FC = () => {
 				{/* a leak */}
 				<Fade at={K1.leak}>
 					<g transform="translate(-20,0)">
-					<rect x={1450} y={470} width={220} height={44} rx={10} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
-					<path d="M1560,470 l-8,-16 l14,8 l-4,-22 l14,18 l4,-14 l6,26" fill="none" stroke={COST} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
-					<path d="M1560,515 q-18,22 -34,44 M1566,515 q6,26 4,52 M1572,515 q22,18 40,32" fill="none" stroke={HEAT} strokeWidth={5} strokeLinecap="round" opacity={0.8} />
-					<path d="M1620,420 L1644,462 L1596,462 Z" fill="#f5c542" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
-					<text x={1620} y={456} textAnchor="middle" fill={INK} style={{fontWeight: 800, fontSize: 28}}>!</text>
+					<Pic p={PL7.leak} x={1470} y={440} w={250} h={124}>
+						<rect x={1450} y={470} width={220} height={44} rx={10} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
+						<path d="M1560,470 l-8,-16 l14,8 l-4,-22 l14,18 l4,-14 l6,26" fill="none" stroke={COST} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+						<path d="M1560,515 q-18,22 -34,44 M1566,515 q6,26 4,52 M1572,515 q22,18 40,32" fill="none" stroke={HEAT} strokeWidth={5} strokeLinecap="round" opacity={0.8} />
+						<path d="M1620,420 L1644,462 L1596,462 Z" fill="#f5c542" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+						<text x={1620} y={456} textAnchor="middle" fill={INK} style={{fontWeight: 800, fontSize: 28}}>!</text>
+					</Pic>
 					<Sx x={1560} y={612} text="a leak is dangerous" size={30} color={COST} anchor="middle" hand at={K1.leak + 6} />
 					</g>
 				</Fade>
@@ -121,6 +128,8 @@ export const ScenePressure: React.FC = () => {
 const Rc = 'recycle';
 const K2 = cues(sc(Rc), {even: 'Even at this', part: 'only part of the gas', fifth: 'a fifth', under: 'a little under', cooled: 'cooled until', liquid: 'turns to a liquid', cond: 'called condensing', drawn: 'drawn off', stay: 'stay gases', pumped: 'pumped back', recyc: 'which is recycling', less: 'holds less ammonia', fwd: 'shift runs forward', many: 'Over many trips', over: 'more than ninety-five'});
 const V = 6;
+const PAINTED_TANK = HAVE7.has(PL7.tank.src);
+const TANK_LIQ_X = 1272, TANK_LIQ_Y = 522, TANK_LIQ_H = 42, TANK_LIQ_W = 64;
 const ROUTE: [number, number][] = [[96, 500], [560, 500], [740, 500], [900, 500], [1090, 500], [1260, 500], [1370, 500], [1370, 360], [1370, 250], [400, 250], [400, 500]];
 const CUM = ROUTE.reduce<number[]>((a, p, i) => { a.push(i === 0 ? 0 : a[i - 1] + Math.hypot(p[0] - ROUTE[i - 1][0], p[1] - ROUTE[i - 1][1])); return a; }, []);
 const pt = (s: number): [number, number] => {
@@ -151,7 +160,7 @@ const simulate = (f: number, k: Record<string, number>) => {
 			}
 			const tArr = tAt(S_TANK);
 			if (f < tArr) { const s = s0 + (f - t) * V; const [x, y] = pt(s); dots.push({x, y, fill: s > S_REACT && green ? NH3C : base, o: 1}); break; }
-			const hx = 1310 + ((j * 29) % 120), hyU = 385 + ((j * 17) % 70), hyG = 505 + ((j * 13) % 60);
+			const hx = 1310 + ((j * 29) % 120), hyU = PAINTED_TANK ? 450 + ((j * 17) % 45) : 385 + ((j * 17) % 70), hyG = 505 + ((j * 13) % 60);
 			if (green) {
 				const dropT = Math.max(tArr, k.liquid + (j % 5) * 7);
 				if (f < dropT) { dots.push({x: hx, y: hyG, fill: NH3C, o: 1}); break; }
@@ -186,9 +195,11 @@ export const SceneRecycle: React.FC = () => {
 				<Fade at={4}>
 					<path d={`M96,${pipeY} L560,${pipeY} M740,${pipeY} L860,${pipeY}`} stroke={INK_SOFT} strokeWidth={26} strokeLinecap="butt" opacity={0.28} />
 					<Sx x={96} y={pipeY - 38} text="fresh N_2 and H_2" size={34} color={INK_SOFT} hand at={4} />
-					<rect x={560} y={330} width={180} height={290} rx={36} fill="#e9eaed" stroke={IRON_DARK} strokeWidth={6} />
-					<rect x={566} y={430} width={168} height={186} rx={30} fill="#f6b87a" opacity={0.45} />
-					{[360, 430, 500, 570].map(y => <g key={y}><Pellets x={574} y={y} w={152} h={46} r={8} /></g>)}
+					<Pic p={PL7.reactor} x={560} y={322} w={180} h={306}>
+						<rect x={560} y={330} width={180} height={290} rx={36} fill="#e9eaed" stroke={IRON_DARK} strokeWidth={6} />
+						<rect x={566} y={430} width={168} height={186} rx={30} fill="#f6b87a" opacity={0.45} />
+						{[360, 430, 500, 570].map(y => <g key={y}><Pellets x={574} y={y} w={152} h={46} r={8} /></g>)}
+					</Pic>
 					<Sx x={650} y={312} text="reactor" size={36} color={IRON_DARK} anchor="middle" hand at={4} />
 					<Sx x={650} y={672} text="450 C, 200 atm" size={34} color={AMBER_INK} anchor="middle" hand at={K2.even} />
 					<Sx x={650} y={712} text="iron catalyst" size={30} color={INK_SOFT} anchor="middle" hand at={K2.even + 8} />
@@ -196,14 +207,25 @@ export const SceneRecycle: React.FC = () => {
 				{/* the cooler, the tank and the way out */}
 				<Fade at={K2.cooled}>
 					<path d="M860,500 L900,500 M1090,500 L1260,500" stroke={INK_SOFT} strokeWidth={26} opacity={0.28} />
-					<rect x={900} y={410} width={190} height={180} rx={24} fill="#dcecf6" stroke="#4f8fc0" strokeWidth={6} />
-					<path d="M920,460 q20,-24 40,0 t40,0 t40,0 M920,500 q20,-24 40,0 t40,0 t40,0 M920,540 q20,-24 40,0 t40,0 t40,0" fill="none" stroke="#4f8fc0" strokeWidth={5} strokeLinecap="round" />
+					<Pic p={PL7.cooler} x={865} y={450} w={260} h={112}>
+						<rect x={900} y={410} width={190} height={180} rx={24} fill="#dcecf6" stroke="#4f8fc0" strokeWidth={6} />
+						<path d="M920,460 q20,-24 40,0 t40,0 t40,0 M920,500 q20,-24 40,0 t40,0 t40,0 M920,540 q20,-24 40,0 t40,0 t40,0" fill="none" stroke="#4f8fc0" strokeWidth={5} strokeLinecap="round" />
+					</Pic>
 					<Sx x={995} y={392} text="cooler" size={36} color="#4f8fc0" anchor="middle" hand at={K2.cooled} />
 				</Fade>
 				<Fade at={K2.liquid - 30}>
-					<rect x={1260} y={360} width={220} height={280} rx={26} fill="#fffdf8" stroke={IRON_DARK} strokeWidth={6} />
-					<rect x={1266} y={640 - 6 - 270 * level} width={208} height={Math.max(0, 270 * level)} rx={10} fill={NH3C} opacity={0.5} />
-					<Sx x={1500} y={390} text="tank" size={36} color={IRON_DARK} anchor="start" hand at={K2.liquid - 30} />
+					{PAINTED_TANK ? (
+						<>
+							<Pic p={PL7.tank} x={1180} y={378} w={380} h={236} />
+							<rect x={TANK_LIQ_X} y={TANK_LIQ_Y - TANK_LIQ_H * Math.min(1, level * 2)} width={TANK_LIQ_W} height={Math.max(0, TANK_LIQ_H * Math.min(1, level * 2))} rx={6} fill={NH3C} opacity={0.5} />
+						</>
+					) : (
+						<>
+							<rect x={1260} y={360} width={220} height={280} rx={26} fill="#fffdf8" stroke={IRON_DARK} strokeWidth={6} />
+							<rect x={1266} y={640 - 6 - 270 * level} width={208} height={Math.max(0, 270 * level)} rx={10} fill={NH3C} opacity={0.5} />
+						</>
+					)}
+					<Sx x={PAINTED_TANK ? 1560 : 1500} y={390} text="tank" size={36} color={IRON_DARK} anchor="start" hand at={K2.liquid - 30} />
 				</Fade>
 				<Fade at={K2.drawn}>
 					<path d="M1370,640 L1370,720 L1700,720" fill="none" stroke={NH3C} strokeWidth={22} opacity={0.55} />
@@ -215,10 +237,12 @@ export const SceneRecycle: React.FC = () => {
 					<DrawPath d="M1370,360 L1370,250 L400,250 L400,500" at={K2.pumped} dur={60} color={INK_SOFT} width={22} opacity={0.28} />
 				</g>
 				<Fade at={K2.pumped + 30}>
-					<g transform="translate(900,250)">
-						<circle r={34} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
-						<path d="M-12,-16 L18,0 L-12,16 Z" fill={RATE} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
-					</g>
+					<Pic p={PL7.pump} x={835} y={206} w={130} h={88}>
+						<g transform="translate(900,250)">
+							<circle r={34} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
+							<path d="M-12,-16 L18,0 L-12,16 Z" fill={RATE} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
+						</g>
+					</Pic>
 				</Fade>
 				<Fade at={K2.recyc}>
 					<Sx x={1130} y={222} text="recycling" size={52} color={RATE} anchor="middle" hand at={K2.recyc} />
@@ -240,7 +264,7 @@ export const SceneRecycle: React.FC = () => {
 				</Fade>
 				<Ring cx={1380} cy={420} rx={120} ry={56} at={K2.stay} out={K2.stay + 90} color={AMBER_INK} seed={4} />
 				<Fade at={K2.stay}>
-					<Sx x={1500} y={490} text="stay gases" size={36} color={AMBER_INK} anchor="start" hand at={K2.stay} />
+					<Sx x={PAINTED_TANK ? 1590 : 1500} y={490} text="stay gases" size={36} color={AMBER_INK} anchor="start" hand at={K2.stay} />
 				</Fade>
 				{/* shift forward again at the reactor */}
 				<g opacity={fwdFlash}>

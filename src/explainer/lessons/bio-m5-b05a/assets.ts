@@ -15,6 +15,12 @@ export const AMOEBA = B + 'b2c-amoeba-fission-1-v1.png';
 export const CUTTING = B + 'b2b-mint-cutting-glass-v1.png';
 export const BACTERIUM = B + 'b1-fission-1-v1.png';
 
-const ALL = [SKIN, EMBRYO, YEAST, AMOEBA, CUTTING, BACTERIUM];
+// Brief 31 plates (14 Oct): old surface cells flaking off with new cells beneath (uses, replacement), and a plant cell
+// with the new cell plate between two nuclei (telophase and cytokinesis inset, drawn rotated so the wall is vertical).
+// Remove either from ALL (HAVE) and the coded stand-in returns. No skin close-up plate was delivered, so the hook zoom stays at 2.4x.
+export const EPI = B + 'b5a-epithelium-shedding-v1.png';
+export const PLANT = B + 'b5a-plant-cell-plate-v1.png';
+
+const ALL = [SKIN, EMBRYO, YEAST, AMOEBA, CUTTING, BACTERIUM, EPI, PLANT];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

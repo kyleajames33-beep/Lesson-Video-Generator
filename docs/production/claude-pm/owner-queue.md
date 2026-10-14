@@ -122,10 +122,10 @@ Fixed after the independent voiced review (no blockers in any):
 - B2b, flowering plants (9:17, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 
 Built, reviewed and fixed:
-- C7, industrial equilibrium (Haber): http://127.0.0.1:8778/Explainer-chem-m5-c07-preview-v2/
-- C8, reaction quotient Q: http://127.0.0.1:8778/Explainer-chem-m5-c08-preview-v2/
-- B5a, mitosis: http://127.0.0.1:8778/Explainer-bio-m5-b05a-preview-v2/
-- B5b, meiosis: http://127.0.0.1:8778/Explainer-bio-m5-b05b-preview-v2/
+- C7, industrial equilibrium (Haber): http://127.0.0.1:8778/Explainer-chem-m5-c07-preview-v3/
+- C8, reaction quotient Q: http://127.0.0.1:8778/Explainer-chem-m5-c08-preview-v3/
+- B5a, mitosis: http://127.0.0.1:8778/Explainer-bio-m5-b05a-preview-v3/
+- B5b, meiosis: http://127.0.0.1:8778/Explainer-bio-m5-b05b-preview-v3/
 - C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v4/
 - B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v3/
 

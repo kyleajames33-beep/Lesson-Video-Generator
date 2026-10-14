@@ -5,6 +5,8 @@ import {cues} from '../../cues';
 import {H2I2_EQ, PclLens} from '../chem-m5-c06/board';
 import {Arrow, BARS8, BLUE, Bars8, BrokenEnd, CARD8, EQ8, EqStrip, Fade, GHOST8, KEY8, KMarker, LN, LitArrows, LogLine, Overlay, QKGap, QMarker, Ring, Sx, Tag, TEAL, Tick, Tube, TubeScale, TUBE8, cst, lx} from './parts';
 import {HiCard, Key8} from './board';
+import {HAVE8, PL8} from './assets';
+import {FlaskLens} from './parts';
 import {Heading, kf, sc} from './common';
 
 const H2K = '#6b6358', I2K = '#5f2f94', HIK = '#4a4f57';
@@ -50,7 +52,7 @@ export const SceneEquals: React.FC = () => {
 				</Fade>
 				{/* the two ends of the scale */}
 				<g opacity={lensL}>
-					<PclLens counts={() => ({n: 20, v: 0})} cx={960} cy={720} r={104} />
+					{HAVE8.has(PL8.flask.src) ? <FlaskLens counts={() => ({n: 20, v: 0})} cx={960} cy={742} h={272} /> : <PclLens counts={() => ({n: 20, v: 0})} cx={960} cy={720} r={104} />}
 				</g>
 				<Fade at={KE.onlyR + 14}>
 					<Sx x={960} y={866} text="only reactants" size={40} color={BLUE} anchor="middle" hand at={KE.onlyR + 14} />
@@ -60,7 +62,7 @@ export const SceneEquals: React.FC = () => {
 					<Arrow x1={760} y1={LN.y + 200} x2={1250} y2={LN.y + 200} at={KE.below} color={BLUE} width={7} />
 				</Fade>
 				<g opacity={lensR}>
-					<PclLens counts={() => ({n: 0, v: 20})} cx={1560} cy={720} r={104} />
+					{HAVE8.has(PL8.flask.src) ? <FlaskLens counts={() => ({n: 0, v: 20})} cx={1560} cy={742} h={272} /> : <PclLens counts={() => ({n: 0, v: 20})} cx={1560} cy={720} r={104} />}
 				</g>
 				<Fade at={KE.onlyP + 14}>
 					<Sx x={1560} y={866} text="only products" size={40} color={AMBER_INK} anchor="middle" hand at={KE.onlyP + 14} />

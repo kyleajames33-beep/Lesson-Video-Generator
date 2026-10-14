@@ -6,6 +6,8 @@ import {
 	AMBER, AMBER_INK, anaOffsets, arcPath, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, clamp01, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyCross, GreyTag, Hand, Heading,
 	INK, INK_SOFT, Kind, lerp, META_Y, NUC_FILL, NUC_LINE, onCircle, Overlay, PenTap, PlateArt, PLATES, plateH, Pill, Pole, prog, PLUM, S, Scribble, SplitCells, StageStrip, TEALC, Tick, vis, Chip, Bracket, Arrow,
 } from './shared';
+import {HAVE} from './assets';
+import {SvgPlate} from './shared';
 
 const GREY = '#7a8088';
 
@@ -52,25 +54,34 @@ export const SceneUses: React.FC = () => {
 			{/* replacement: worn-out skin sheds, new cells rise */}
 			<div style={{opacity: tile(c.worn), position: 'absolute', inset: 0}}>
 				<Overlay>
-					<rect x={1120} y={420} width={300} height={110} rx={14} fill="#f4d7bd" stroke="#c58a62" strokeWidth={4} />
-					{[0, 1, 2, 3, 4].map(k => {
-						const t = surf(k);
-						return (
-							<g key={'old' + k} opacity={1 - t} transform={`translate(${1150 + k * 60},${390 - 70 * t}) rotate(${t * 18})`}>
-								<ellipse rx={27} ry={20} fill="#e9c9ad" stroke="#c58a62" strokeWidth={3.5} />
-								<circle r={6} fill="#a98bd1" />
-							</g>
-						);
-					})}
-					{[0, 1, 2, 3, 4].map(k => {
-						const t = surf(k);
-						return (
-							<g key={'new' + k} opacity={0.4 + 0.6 * t} transform={`translate(${1150 + k * 60},${490 - 66 * t})`}>
-								<ellipse rx={27} ry={20} fill="#e2d9ee" stroke="#8e7aa9" strokeWidth={3.5} />
-								<circle r={6} fill="#9b7cc4" />
-							</g>
-						);
-					})}
+					{HAVE.has(PLATES.epi.src) ? (
+						<g transform={`translate(0,${(1 - prog(f, c.worn - 4, 24)) * 16})`}>
+							<SvgPlate a={PLATES.epi} cx={1270} cy={410} w={340} o={prog(f, c.worn - 4, 24)} />
+							<Arrow x1={1180} y1={470} x2={1180} y2={400} at={c.gut} color={AMBER_INK} width={7} />
+						</g>
+					) : (
+						<>
+							<rect x={1120} y={420} width={300} height={110} rx={14} fill="#f4d7bd" stroke="#c58a62" strokeWidth={4} />
+							{[0, 1, 2, 3, 4].map(k => {
+								const t = surf(k);
+								return (
+									<g key={'old' + k} opacity={1 - t} transform={`translate(${1150 + k * 60},${390 - 70 * t}) rotate(${t * 18})`}>
+										<ellipse rx={27} ry={20} fill="#e9c9ad" stroke="#c58a62" strokeWidth={3.5} />
+										<circle r={6} fill="#a98bd1" />
+									</g>
+								);
+							})}
+							{[0, 1, 2, 3, 4].map(k => {
+								const t = surf(k);
+								return (
+									<g key={'new' + k} opacity={0.4 + 0.6 * t} transform={`translate(${1150 + k * 60},${490 - 66 * t})`}>
+										<ellipse rx={27} ry={20} fill="#e2d9ee" stroke="#8e7aa9" strokeWidth={3.5} />
+										<circle r={6} fill="#9b7cc4" />
+									</g>
+								);
+							})}
+						</>
+					)}
 					<MiniDivide x={1270} y={690} at={c.worn + 24} />
 				</Overlay>
 				<Hand at={c.worn + 6} x={1130} y={560} size={60} color={AMBER_INK}>replacement</Hand>

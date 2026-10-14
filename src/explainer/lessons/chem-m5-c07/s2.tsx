@@ -2,7 +2,8 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Chip, DotP, Fade, GasKey, Overlay, Pellets, Ring, Sx, Tag} from './parts';
+import {Arrow, Chip, DotP, Fade, GasKey, Overlay, Pellets, Pic, Ring, Sx, Tag} from './parts';
+import {PL7} from './assets';
 import {Bracket, Curve, GraphAxes, Head, VLine, mkG} from '../chem-m5-c04b/parts';
 import {Heading, H2C, HEAT, IRON_DARK, N2C, NH3C, RATE, YIELD, CROSS, kf, sc} from './common';
 
@@ -49,7 +50,8 @@ export const SceneTimeInReactor: React.FC = () => {
 				<Fade at={K3.fac}>
 					<rect x={96} y={266} width={1728} height={68} rx={34} fill="#efe9da" stroke={INK_SOFT} strokeWidth={4} />
 					<rect x={560} y={246} width={320} height={108} rx={18} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
-					<Pellets x={566} y={252} w={308} h={96} r={10} />
+					<Pic p={PL7.pellets} x={566} y={252} w={190} h={96} bottom><Pellets x={566} y={252} w={308} h={96} r={10} /></Pic>
+					<Pic p={PL7.pellets} x={690} y={252} w={190} h={96} bottom flip><g /></Pic>
 				</Fade>
 				<Fade at={K3.flows}>{dots}</Fade>
 				<GasKey x={1330} y={150} at={K3.flows} />
@@ -177,7 +179,7 @@ export const SceneCatalyst: React.FC = () => {
 				{/* the iron pellet tag */}
 				<g>
 					<rect x={470} y={286} width={130} height={62} rx={14} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={4} />
-					<Pellets x={474} y={290} w={122} h={54} r={9} />
+					<Pic p={PL7.pellets} x={474} y={288} w={122} h={58} bottom><Pellets x={474} y={290} w={122} h={54} r={9} /></Pic>
 					<Sx x={540} y={384} text="iron" size={36} color={IRON_DARK} anchor="middle" hand at={-100} />
 				</g>
 				<Ring cx={535} cy={330} rx={96} ry={58} at={K5.so + 20} out={K5.path - 10} color={AMBER_INK} seed={2} />

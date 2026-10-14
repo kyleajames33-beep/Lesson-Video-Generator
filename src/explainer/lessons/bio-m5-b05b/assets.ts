@@ -10,6 +10,12 @@ const B = 'assets/biology/';
 export const BROTHERS = B + 'b5b-brothers-v1.png';
 export const POD = B + 'b2b-pod-seeds-v1.png';
 
-const ALL = [BROTHERS, POD];
+// Brief 31 plate (14 Oct): the brothers' parents. The sperm and egg reuse the B3a plates (as B3a does). Remove a file from
+// ALL (HAVE) and the coded pictogram or dot returns.
+export const PARENTS = B + 'b5b-parents-v1.png';
+export const SPERM = B + 'b3a-sperm-v1.png';
+export const EGG = B + 'b3a-egg-v1.png';
+
+const ALL = [BROTHERS, POD, PARENTS, SPERM, EGG];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

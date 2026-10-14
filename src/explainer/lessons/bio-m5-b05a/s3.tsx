@@ -5,6 +5,8 @@ import {
 	AMBER, AMBER_INK, anaOffsets, ANA_GRID, ANA_X, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, clamp01, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading,
 	INK, INK_SOFT, Arrow, lerp, META_Y, NUC_R, NUC_X, Overlay, Pole, prog, RX, S, Scribble, SplitCells, StageStrip, vis, Bracket, Line,
 } from './shared';
+import {HAVE} from './assets';
+import {PLATES, SvgPlate} from './shared';
 
 const PLUM_INK = '#7e3a69';
 const TEAL_INK = '#1f7a6f';
@@ -180,9 +182,18 @@ export const SceneTelophase: React.FC = () => {
 				</g>
 				{/* plant cell inset (screen only) */}
 				<g opacity={prog(f, c.pinch - 10, 16)}>
-					<rect x={1560} y={520} width={250} height={160} rx={26} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
-					<circle cx={1685} cy={600} r={14} fill="#e2d9ee" stroke="#6a4c93" strokeWidth={3} />
-					<DrawPath d="M1685,600 L1685,526 M1685,600 L1685,676" at={c.pinch} dur={50} color="#6f7f2a" width={9} cap="butt" />
+					{HAVE.has(PLATES.plant.src) ? (
+						<>
+							<SvgPlate a={PLATES.plant} cx={1685} cy={600} w={192} rot={90} />
+							<DrawPath d="M1685,600 L1685,512 M1685,600 L1685,688" at={c.pinch} dur={50} color="#6f7f2a" width={7} cap="butt" />
+						</>
+					) : (
+						<>
+						<rect x={1560} y={520} width={250} height={160} rx={26} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+						<circle cx={1685} cy={600} r={14} fill="#e2d9ee" stroke="#6a4c93" strokeWidth={3} />
+						<DrawPath d="M1685,600 L1685,526 M1685,600 L1685,676" at={c.pinch} dur={50} color="#6f7f2a" width={9} cap="butt" />
+						</>
+					)}
 				</g>
 				{/* parent and ticks */}
 				<g opacity={parentO}>
@@ -196,7 +207,7 @@ export const SceneTelophase: React.FC = () => {
 			<Hand at={c.env + 36} out={c.cyto + 20} x={96} y={290} size={50} w={360}>two nuclei</Hand>
 			<Hand at={c.splitting} out={c.animal + 20} x={96} y={290} size={50} w={360}>cytokinesis: the cytoplasm splits</Hand>
 			<Hand at={c.animal + 6} x={1500} y={230} size={50} w={340}>animal cell: membrane pinches in</Hand>
-			<Hand at={c.pinch + 20} x={1540} y={700} size={44} w={300} color={INK_SOFT}>plant cell: new wall</Hand>
+			<Hand at={c.pinch + 20} x={1540} y={720} size={44} w={300} color={INK_SOFT}>plant cell: new wall</Hand>
 			<Hand at={c.now + 4} x={96} y={730} size={44} w={300} color={INK_SOFT}>parent cell</Hand>
 			<Hand at={c.each} x={600} y={812} size={56} color={AMBER_INK}>same chromosomes as the parent</Hand>
 			<StageStrip at={[-999, -999, -999, c.telo, c.cyto]} active={f >= c.cyto ? 4 : 3} />

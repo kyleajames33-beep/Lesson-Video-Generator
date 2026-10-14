@@ -259,3 +259,31 @@ The animal side views, wheat ear, rust leaf and potato pair were already wired (
 - Cover bag (`pollination`, `feedback-two`): `b3b-cover-bag-v1.png` at 80 per cent opacity so the floret still shows through, lowered as before.
 - Barn (`fertility-cost` rows, `gain-and-risk` pans, attempt card): `b3b-barn-v1.png`, 84 px wide.
 Left coded: herd grids (per-animal colour), scorecard, balance, symbols (coin, heart, shield).
+
+### C7 (chem-m5-c07, brief 31)
+Plates added to `assets.ts` (`PL7` with PIL alpha boxes, in `HAVE7`); new helper `Pic` (fit a plate by its alpha box into a slot, coded drawing as the child fallback) in `parts.tsx`. Remove a plate from `HAVE7` and the coded drawing returns.
+- Recycle scene: `c7-reactor-bed-v1` (about 140 x 306 px), `c7-condenser-cooler-v1` (260 px wide), `c7-ammonia-storage-tank-v1` (380 px wide, headspace dots re-aimed at the painted body, coded green liquid overlay grows inside the painted cutaway window), `c7-gas-compressor-pump-v1` on the recycle pipe (130 px). "tank" and "stay gases" labels moved right of the wider tank.
+- Pressure scene: `c7-thick-steel-wall-v1` grows in height on "thicker steel", pump plate (scales in), `c7-flame-energy-v1` (scales in and flickers), `c7-pipe-leak-v1` (250 px wide, moved right of the last bar; the coded warning triangle is gone).
+- Flame icon everywhere (`Flame`: memory-aid tug of war, model answer, decision rule): painted flame plate, about 100 px tall per unit scale.
+- Iron catalyst: `c7-iron-catalyst-pellets-v1` as two piles in the reactor housing (time-in-reactor) and one pile in the catalyst tag.
+Left coded: snowflake, gauges, sliders, CrowdBox, dots, graphs.
+
+### C8 (chem-m5-c08, brief 31)
+Plates added to `assets.ts` (`PL8` with PIL alpha boxes, in `HAVE8`); helpers `Pic`, `HotTube`, `HotThermo`, `FlaskLens` and a painted branch of `Stopwatch` in `parts.tsx`. Remove a plate from `HAVE8` and the coded drawing returns.
+- Hook: `c8-hot-hi-tube-v1` (800 px wide furnace tube) with the coded 0.05 mol/L dots (new `bare` mode of `Tube`) kept inside the plate's clear glass window; on "forty-nine" it crossfades to the coded board tube, which slides to the left slot as before. The board tube and the settled-tube thumbnails stay coded (a 3:1 furnace does not fit the 230 x 236 slot).
+- Thermometer: `c8-thermometer-hot-v1` (250 px tall) replaces the coded thermometer; the "about 450 C" chip moved below it.
+- Stopwatch: `c8-stopwatch-v1` (about 360 px tall). The plate's baked hand is hidden by a blurred dial-colour stripe (a faint trace is visible on close inspection) and the coded amber hand (still trembles, freezes on "before anything moves") and "0.0 s" are drawn over the hub.
+- Q equals K edge cases: `c8-round-flask-v1` (272 px tall) with the coded particle dots over the round body (bare `ParticleLens`); both flasks reuse the plate.
+Left coded: board tube and ghost tubes, bars, number line, rate model.
+
+### B5a (bio-m5-b05a, brief 31)
+Plates added to `assets.ts` (`EPI`, `PLANT`, in HAVE; `PLATES.epi` and `PLATES.plant` in `shared.tsx`, new SVG helper `SvgPlate` places a plate by its alpha box, optionally rotated). Remove one from HAVE and the coded drawing returns.
+- Uses scene, "replacement": `b5a-epithelium-shedding-v1` (340 px wide, rises in on "worn-out skin") replaces the tan box with sliding ovals; an amber arrow shows the new cells rising on "gut lining".
+- Telophase and cytokinesis plant-cell inset (about 240 x 192 px): `b5a-plant-cell-plate-v1` rotated 90 degrees so the new wall is vertical like the coded one. The coded olive wall line still draws outward from the centre on "pinches in" over the painted wall (the plate already shows a finished wall, so the line reads as it forming). "plant cell: new wall" label moved 20 px down.
+- Not done: `b5a-skin-graze-closeup-v1` was not delivered (not in the provenance file), so the hook zoom stays at the 2.4x applied on 14 Oct.
+
+### B5b (bio-m5-b05b, brief 31)
+Plates added to `assets.ts` (`PARENTS`, plus the B3a `SPERM` and `EGG` plates reused as B3a wires them; all in HAVE). `PL` entries and an SVG helper `SvgPlate` (plate by alpha box, optional rotation, coded child as fallback) in `shared.tsx`; `SpermArt` and `EggArt` in `sA.tsx` wrap the old `SpermDot` and `EggDot` as fallback. Remove a file from HAVE and the coded drawing returns.
+- Hook: `b5b-parents-v1` (208 px wide, one plate with mother and father side by side) replaces the two grey pictograms. The "mother" and "father" labels sit left and right of the pair (they are no longer under each figure) and the dotted paths to the egg and sperm are shortened to start at their feet.
+- Hook and why-halve: painted egg (88 px, about 96 px in the chains) and painted sperm (about 170 px, 156 px in the chains) replace the dot and squiggle on the travel to the ringed positions and in the two "gamete" chains (the sperm plate does not swim or sway; it travels as the old squiggle did).
+Left coded: the small gamete circles and the sperm and egg thumbnails in the meiosis outcome scenes (cells, not objects), chromosomes, spindles and trackers. The painted sperm is pale next to the egg at 156 px.

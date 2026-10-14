@@ -4,10 +4,11 @@ import {HandText} from '../../kit';
 import {cues} from '../../cues';
 import {EggDot, SpermDot} from '../bio-m5-b02a/shared';
 import {
-	AMBER, AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, MC, MiniBar, Overlay, PArt, PL, pH, Pill, PP, prog,
+	AMBER, AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, MC, MiniBar, Overlay, PArt, PL, pH, Pill, PP, prog, SvgPlate,
 	S, Scribble, TT, Tick, clamp01, Col, Num, GreyCross, Line,
 } from './shared';
 import {rng} from '../../kit';
+import {HAVE} from './assets';
 
 const Person: React.FC<{x: number; y: number; s?: number; color: string; o?: number}> = ({x, y, s = 1, color, o = 1}) => (
 	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
@@ -16,7 +17,16 @@ const Person: React.FC<{x: number; y: number; s?: number; color: string; o?: num
 	</g>
 );
 
+/** Sperm and egg: painted plates (egg 2.5 x r wide, sperm about 4.2 x s wide) with the coded dot or squiggle as the fallback. */
+const SpermArt: React.FC<{x: number; y: number; s?: number; rot?: number; o?: number}> = ({x, y, s = 1, rot = 0, o = 1}) => (
+	<SvgPlate a={PL.sperm} cx={x - 8 * s} cy={y} w={68 * s} rot={rot} o={o}><SpermDot x={x} y={y} s={s} rot={rot} o={o} /></SvgPlate>
+);
+const EggArt: React.FC<{x: number; y: number; r?: number; o?: number}> = ({x, y, r = 8, o = 1}) => (
+	<SvgPlate a={PL.egg} cx={x} cy={y} w={r * 2.4} o={o}><EggDot x={x} y={y} r={r} o={o} /></SvgPlate>
+);
+
 // ---------- 1. Hook ----------
+const PAINTED_PARENTS = HAVE.has(PL.parents.src);
 const NC = 23, X0 = 210, DX = 50, ROW_P = 500, ROW_T = 620;
 const pick = (seed: number): Col[] => { const r = rng(seed); return Array.from({length: NC}, () => (r() < 0.5 ? 'P' : 'T')); };
 const PICK1 = pick(11);
@@ -46,14 +56,20 @@ export const SceneHook: React.FC = () => {
 					<GreyTag at={c.diff} x={150} y={915} text="simplified" size={26} />
 				</div>
 				<Overlay>
-					<Person x={1100} y={250} color="#d9b8c8" o={prog(f, c.parents, 16)} />
-					<Person x={1540} y={250} color="#b8cbd9" o={prog(f, c.parents + 6, 16)} />
+					{HAVE.has(PL.parents.src) ? (
+						<SvgPlate a={PL.parents} cx={1335} cy={300} w={208} o={prog(f, c.parents, 16)} />
+					) : (
+						<>
+							<Person x={1100} y={250} color="#d9b8c8" o={prog(f, c.parents, 16)} />
+							<Person x={1540} y={250} color="#b8cbd9" o={prog(f, c.parents + 6, 16)} />
+						</>
+					)}
 					<g opacity={prog(f, c.each, 16)}>
-						<DrawPath d="M1100,330 C1100,420 1230,480 1230,570" at={c.each} dur={40} color="#b9a98f" width={4} dash="3 12" />
-						<DrawPath d="M1540,330 C1540,420 1440,480 1440,570" at={c.each} dur={40} color="#b9a98f" width={4} dash="3 12" />
+						<DrawPath d={PAINTED_PARENTS ? 'M1290,510 C1290,540 1230,530 1230,568' : 'M1100,330 C1100,420 1230,480 1230,570'} at={c.each} dur={40} color="#b9a98f" width={4} dash="3 12" />
+						<DrawPath d={PAINTED_PARENTS ? 'M1385,510 C1385,540 1440,530 1440,568' : 'M1540,330 C1540,420 1440,480 1440,570'} at={c.each} dur={40} color="#b9a98f" width={4} dash="3 12" />
 					</g>
-					{f >= c.egg - 6 ? <EggDot x={eg[0]} y={eg[1]} r={40} o={prog(f, c.egg - 6, 8)} /> : null}
-					{f >= c.sperm - 6 ? <SpermDot x={sp[0]} y={sp[1]} s={2.4} rot={20} o={prog(f, c.sperm - 6, 8)} /> : null}
+					{f >= c.egg - 6 ? <EggArt x={eg[0]} y={eg[1]} r={44} o={prog(f, c.egg - 6, 8)} /> : null}
+					{f >= c.sperm - 6 ? <SpermArt x={sp[0]} y={sp[1]} s={2.5} rot={20} o={prog(f, c.sperm - 6, 8)} /> : null}
 					<g opacity={prog(f, c.carried - 10, 14)}>
 						<text x={1230} y={700} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK_SOFT}>egg</text>
 						<text x={1440} y={700} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK_SOFT}>sperm</text>
@@ -63,8 +79,8 @@ export const SceneHook: React.FC = () => {
 				</Overlay>
 				<Hand at={c.carried + 24} x={1110} y={760} size={52}>one set: 23 chromosomes</Hand>
 				<GreyTag at={c.not2} x={1230} y={850} text="not two sets" size={32} />
-				<Hand at={c.parents + 10} x={1030} y={332} size={40} color={INK_SOFT}>mother</Hand>
-				<Hand at={c.parents + 14} x={1480} y={332} size={40} color={INK_SOFT}>father</Hand>
+				<Hand at={c.parents + 10} x={PAINTED_PARENTS ? 1130 : 1030} y={PAINTED_PARENTS ? 300 : 332} size={40} color={INK_SOFT}>mother</Hand>
+				<Hand at={c.parents + 14} x={PAINTED_PARENTS ? 1470 : 1480} y={PAINTED_PARENTS ? 300 : 332} size={40} color={INK_SOFT}>father</Hand>
 			</div>
 			{/* precursor cell, then the reduction */}
 			<div style={{position: 'absolute', inset: 0, opacity: bOp, transformOrigin: '1250px 600px', transform: `scale(${bz})`}}>
@@ -116,7 +132,7 @@ const Gam: React.FC<{x: number; y: number; at: number; kind: 'sperm' | 'egg'; n:
 	const p = prog(f, at, 14);
 	return (
 		<g opacity={p}>
-			{kind === 'egg' ? <EggDot x={x} y={y} r={38} /> : <SpermDot x={x} y={y} s={2.2} rot={0} />}
+			{kind === 'egg' ? <EggArt x={x} y={y} r={40} /> : <SpermArt x={x} y={y} s={2.3} rot={0} />}
 			<text x={x + (kind === 'egg' ? 70 : 74)} y={y + 14} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46, opacity: prog(f, nAt, 10)}} fill={color}>{n}</text>
 		</g>
 	);

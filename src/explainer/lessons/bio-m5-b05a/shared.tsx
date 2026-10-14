@@ -1,5 +1,6 @@
 import React from 'react';
 import lesson from '../../../../docs/production/claude-pm/lessons/b5a/measured/lesson.json';
+import {staticFile} from 'remotion';
 import {PAPER_DEEP, Plate} from '../../kit';
 import type {CueScene} from '../../cues';
 import * as A from './assets';
@@ -32,6 +33,8 @@ export const PLATES: Record<string, PDef> = {
 	amoeba: {src: A.AMOEBA, nat: [1800, 1200], box: [152, 93, 1457, 989]},
 	cutting: {src: A.CUTTING, nat: [1344, 1856], box: [306, 248, 736, 1305]},
 	bacterium: {src: A.BACTERIUM, nat: [1800, 1200], box: [573, 449, 655, 324]},
+	epi: {src: A.EPI, nat: [1800, 1222], box: [180, 122, 1440, 978]},
+	plant: {src: A.PLANT, nat: [1438, 1800], box: [143, 180, 1151, 1440]},
 };
 export const plateH = (a: PDef, w: number) => (w * a.box[3]) / a.box[2];
 /** A painted plate placed at x,y with width w, or a labelled coded stand-in when the file is not in HAVE. */
@@ -43,3 +46,13 @@ export const PlateArt: React.FC<{a: PDef; x: number; y: number; w: number; o?: n
 };
 /** Map a point in the plate's natural pixels to screen, for a plate placed at x,y with width w. */
 export const plateAt = (a: PDef, x: number, y: number, w: number) => (px: number, py: number): [number, number] => [x + ((px - a.box[0]) * w) / a.box[2], y + ((py - a.box[1]) * w) / a.box[2]];
+
+/** SVG plate by its alpha box, centred at (cx, cy), width w (before rotation), optional clockwise rotation in degrees. */
+export const SvgPlate: React.FC<{a: PDef; cx: number; cy: number; w: number; rot?: number; o?: number}> = ({a, cx, cy, w, rot = 0, o = 1}) => {
+	const k = w / a.box[2];
+	return (
+		<g transform={`translate(${cx},${cy}) rotate(${rot}) scale(${k})`} opacity={o}>
+			<image href={staticFile(a.src)} x={-(a.box[0] + a.box[2] / 2)} y={-(a.box[1] + a.box[3] / 2)} width={a.nat[0]} height={a.nat[1]} />
+		</g>
+	);
+};
