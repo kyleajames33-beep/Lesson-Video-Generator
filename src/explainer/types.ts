@@ -10,6 +10,8 @@ export type ExplainerConfig = {
 	topicLabel: string;
 	accent?: string;
 	tracker?: {labels: string[]; stageOf: Record<string, number>};
+	/** Optional pilot soundtrack (owner audio pilot, 14 Oct): music only where nobody speaks. Files are public-relative and must also be in assets. */
+	soundtrack?: {sting?: string; countdownBed?: string; keynotesBed?: string; tick?: string; transition?: string};
 	/** public-relative paths the lesson uses (images etc.). Audio comes from the lesson JSON. */
 	assets: string[];
 };

@@ -2,6 +2,12 @@
 
 **Mode (13 Oct, owner decision): consolidation.** No new designs or voicing. Finish what is recorded (C7, C8, B5a, B5b builds), voiced reviews of C5, B3b, C6, B4, render each preview the owner approves (one at a time), upload in batches through Codex. C9 and B6a wait at the Codex check; Module 6 stays at extracts.
 
+## Audio pilot (14 Oct): compare these two
+
+- C5 without sound: http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v4/
+- C5 with the pilot soundtrack: http://127.0.0.1:8778/Explainer-chem-m5-c05-audio-preview-v1/
+  (soft piano sting under the opening seconds; a very quiet page turn at each scene change; soft piano under the 10 s practice countdown with three quiet ticks at the end; calm piano under the key-notes copy time; nothing under the narration). Pixabay licence, no Content ID. Tell Claude: keep all, keep some, or none; louder or quieter.
+
 ## Published 14 Oct (brief 28)
 
 - G01 https://youtu.be/BdF_sRrt5Yw, C4a https://youtu.be/yk5KVdipGRE, B4 https://youtu.be/P9jyiLiGhZI. B2b RENDERED 14 Oct (9:17): send brief 28b to upload it.
