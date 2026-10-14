@@ -106,16 +106,19 @@ Send these in order when you are back. Each is one line to paste into Codex. Cla
 
 Fixed after the independent voiced review (no blockers in any):
 - C4a, pressure and volume (8:51): http://127.0.0.1:8778/Explainer-chem-m5-c04a-preview-v3/
-- C4b, catalysts (8:37): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v3/
-- B3a part 1, fertilisation to keeping a pregnancy (8:31): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v3/
-- B3a part 2, pregnancy hormones, birth and milk (9:05): http://127.0.0.1:8778/Explainer-bio-m5-b03a2-preview-v2/
+- C4b, catalysts (8:37): http://127.0.0.1:8778/Explainer-chem-m5-c04b-preview-v4/
+- B3a part 1, fertilisation to keeping a pregnancy (8:31): http://127.0.0.1:8778/Explainer-bio-m5-b03a-preview-v4/
+- B3a part 2, pregnancy hormones, birth and milk (9:05): http://127.0.0.1:8778/Explainer-bio-m5-b03a2-preview-v3/
 - G01, enthalpy and entropy (9:28, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-chem-m5-g01-preview-v2/
 - B2b, flowering plants (9:17, 10 s countdown added; rebuild pending): http://127.0.0.1:8778/Explainer-bio-m5-b02b-preview-v2/
 
 Built, voiced review still to come:
 - C7, industrial equilibrium (Haber): http://127.0.0.1:8778/Explainer-chem-m5-c07-preview-v1/
-- C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v3/
-- B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v2/
+- C8, reaction quotient Q: http://127.0.0.1:8778/Explainer-chem-m5-c08-preview-v1/
+- B5a, mitosis: http://127.0.0.1:8778/Explainer-bio-m5-b05a-preview-v1/
+- B5b, meiosis: http://127.0.0.1:8778/Explainer-bio-m5-b05b-preview-v1/
+- C5, equilibrium expressions (8:24): http://127.0.0.1:8778/Explainer-chem-m5-c05-preview-v4/
+- B3b, reproduction in agriculture (9:02): http://127.0.0.1:8778/Explainer-bio-m5-b03b-preview-v3/
 
 Known and accepted: in the C4a, C4b, B3a and B3a part 2 practice questions the voice says "Pause the video if you'd like more time" while the screen shows "Pause here to answer." with the 10 s countdown (re-recording four practice scenes was not worth the credits; say if you want it). If previews do not load: `node scripts/serve-prototype-review.mjs`.
 

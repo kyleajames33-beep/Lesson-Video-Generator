@@ -1,7 +1,7 @@
 // Drawing parts for the C6 lesson: givens card, expression builder with swappable rows, hot tube helpers,
 // the one-molecule demo, coded vessel, dial and small icons. The ICE table itself is in ice.tsx.
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, FONT_HAND, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {Arrow, Bracket, GasTube, Ring, smooth} from '../chem-m5-c04b/parts';
 import {slotXY as tubeSlot} from '../chem-m5-c04b/parts';
@@ -10,7 +10,7 @@ import {ESC, Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
 import {Chip, Cross, EqStrip, Sx, Tick, eqLayout, rowGeom, rowXs, TermView, tw} from '../chem-m5-c05/parts';
 import type {EqItem, Term} from '../chem-m5-c05/parts';
 import {CROSS, GLASS, GREEN, MINUS, PLUS} from './common';
-import {NO2_BROWN, NO2_COLOURLESS} from './assets';
+import {FURNACE, HAVE6, NO2_BROWN, NO2_COLOURLESS} from './assets';
 
 export {Arrow, Bracket, GasTube, Ring, smooth, ESC, Fade, Overlay, SvgText, TEAL, Chip, Cross, EqStrip, Sx, Tick, eqLayout, tw};
 export type {EqItem, Term};
@@ -162,6 +162,17 @@ export const Dial: React.FC<{cx: number; cy: number; r: number; at: number; out?
 export const FurnaceIcon: React.FC<{x: number; y: number; at: number}> = ({x, y, at}) => {
 	const f = useCurrentFrame();
 	const flick = 1 + 0.08 * Math.sin(f * 0.5);
+	if (HAVE6.has(FURNACE)) {
+		// painted furnace (2200 x 900 plate, alpha box 222, 220, 1758 x 460): 360 px wide, centred on the old 120 px high slot; the glow breathes like the old flame
+		const k = 360 / 1758, hh = 460 * k;
+		const ox = x - 222 * k, oy = y + (120 - hh) / 2 - 220 * k;
+		return (
+			<Fade at={at}>
+				<image href={staticFile(FURNACE)} x={ox} y={oy} width={2200 * k} height={900 * k} />
+				<ellipse cx={x + 180} cy={y + 60 - 2} rx={62} ry={16} fill="#ffb347" opacity={0.16 + 0.12 * Math.sin(f * 0.5) * 1} />
+			</Fade>
+		);
+	}
 	return (
 		<Fade at={at}>
 			<rect x={x} y={y} width={150} height={120} rx={10} fill="#d9a07a" stroke={INK} strokeWidth={5} />

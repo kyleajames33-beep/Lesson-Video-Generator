@@ -13,6 +13,12 @@ const A = 'assets/chemistry/';
 export const SEALED_TUBE = A + 'c4b-sealed-tube-v1.png';
 export const CATALYST = A + 'c4b-metal-catalyst-v1.png';
 
-export const HAVE = new Set<string>([CATALYST]);
-const ALL = [SEALED_TUBE, CATALYST];
+// Brief 27 painted icons (14 Oct): sealed tube (glass is sliced so the tube can be any length), plunger, dropper, seesaw.
+export const PLUNGER = A + 'c4-icon-plunger-push-v1.png';
+export const DROPPER = A + 'c4-icon-dropper-v1.png';
+export const SEESAW_BASE = A + 'c4b-seesaw-base-v1.png';
+export const SEESAW_BEAM = A + 'c4b-seesaw-beam-v1.png';
+
+export const HAVE = new Set<string>([CATALYST, SEALED_TUBE, PLUNGER, DROPPER, SEESAW_BASE, SEESAW_BEAM]);
+const ALL = [SEALED_TUBE, CATALYST, PLUNGER, DROPPER, SEESAW_BASE, SEESAW_BEAM];
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

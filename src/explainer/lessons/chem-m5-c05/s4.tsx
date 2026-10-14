@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, Enter, FONT_DISPLAY, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, CuTube, EqStrip, FWD, Fade, Frac, GasTube, Overlay, Ring, Sx, TEAL, Flask, Cross, wob} from './parts';
+import {Arrow, CuTube, EqStrip, FWD, Fade, Frac, GasTube, Overlay, Ring, Sx, TEAL, Flask, Cross, SolidLump, wob} from './parts';
 import type {EqItem, Term} from './parts';
 import {GREEN, Heading, cw, sc} from './common';
 
@@ -134,7 +134,7 @@ export const SceneAid: React.FC = () => {
 				{pe >= 1 ? <Sx x={1640} y={382} text="2" size={40} color={TEAL} at={0} /> : null}
 				{/* icon 3: solid and droplet greyed out */}
 				<Fade at={K9.three + 6}>
-					<rect x={1480} y={566} width={90} height={58} rx={8} fill="#cfc7b8" stroke={INK_SOFT} strokeWidth={4} />
+					<SolidLump cx={1525} cy={595} h={76} />
 					<Cross x={1525} y={595} at={K9.three + 24} s={34} />
 					<Sx x={1525} y={660} text="solid" size={34} color={INK_SOFT} anchor="middle" hand at={K9.three + 10} />
 				</Fade>

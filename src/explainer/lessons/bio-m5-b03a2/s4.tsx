@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {Callout} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, Brain, Circled, CREAM_LINE, DrawPath, Dots, Enter, FONT_DISPLAY, FONT_HAND, Hand, Heading, INK, INK_SOFT, Label, LoopIcon, MAGENTA, MAGENTA_INK, MilkGland, NIPPLE, Overlay, PArt, PL, Pill, PIT, prog, PROLACTIN, S, Say,
+	AMBER, AMBER_INK, Brain, Circled, CREAM_LINE, DrawPath, Dots, Enter, FONT_DISPLAY, FONT_HAND, Hand, Heading, INK, INK_SOFT, Label, LoopIcon, MAGENTA, MAGENTA_INK, MilkGland, NIPPLE, JUNCT, SAC_LABEL, Overlay, PArt, PL, Pill, PIT, prog, PROLACTIN, S, Say,
 	SACS, SLATE_INK, Vein, VIOLET, VIOLET_INK, gm, pathOf, along, Scribble, Cross,
 } from './shared';
 
@@ -57,7 +57,7 @@ const GX = 330, GY = 250, GS = 1.15;
 const g = gm(GX, GY, GS);
 const SAC_S = SACS.map(s => g(s[0], s[1]));
 const NIP = g(NIPPLE[0], NIPPLE[1]);
-const JUNC = g(330, 260);
+const JUNC = g(JUNCT[0], JUNCT[1]);
 const BLOODP: [number, number][] = [[PIT[0] - 20, PIT[1] + 30], [1450, 330], [1000, 280], [750, 300]];
 
 // ---------- 6a. Milk: two hormones, two jobs ----------
@@ -86,7 +86,7 @@ export const SceneMilkJobs: React.FC = () => {
 			<Hand at={c.prol} x={1200} y={540} size={54} color={PROLACTIN}>prolactin: makes milk</Hand>
 			<Hand at={c.out} x={1200} y={630} size={54} color={VIOLET_INK}>oxytocin: squeezes the milk out</Hand>
 			<Overlay>
-				<Label x={SAC_S[0][0]} y={SAC_S[0][1] - 100} at={c.cells + 20} text="muscle cells" size={36} color={VIOLET_INK} />
+				<Label x={SAC_S[SAC_LABEL][0]} y={SAC_S[SAC_LABEL][1] - 100} at={c.cells + 20} text="muscle cells" size={36} color={VIOLET_INK} />
 			</Overlay>
 			<div style={{display: 'none'}}>{[AMBER, FONT_HAND, INK, SLATE_INK, along, Callout, Scribble, Cross, Say, Pill, MAGENTA, CREAM_LINE, INK_SOFT, Enter, DrawPath].length}</div>
 		</>

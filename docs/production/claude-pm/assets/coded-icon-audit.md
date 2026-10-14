@@ -209,3 +209,53 @@ All new plates are in `PAINTED`/`HAVE` in `assets.ts`; remove one from HAVE and 
 - Male side: painted pollen grain (top of `b2b-pollen-grain-closeup`, clipped to the grain) replaces the dotted circle. Memory scene glyphs: pollen grain, join and zygote-1 plates.
 - Fixed two stale ART entries that did not match the delivered files: `grain` (nat 1628 x 1600, box 544, 373, 558, 844; nucleus anchor moved) and `bagged` (nat 1652 x 1600, box 397, 263, 877, 1035).
 Left coded: `SpermDot`, `EggDot`, pollen specks, droplet, germination glyphs, paintbrush stand-in (plate not delivered), wind lines in pollination, pollen tube path. Unused plates: `b2b-seed-burr`, `b2b-seed-fruit`. Small land and tube step icons look alike at 40 px (labels carry the difference).
+
+### C04b (chem-m5-c04b)
+Plates added to `assets.ts` HAVE (remove one and the coded icon returns). New helper `Plate` (fit a plate by its alpha box into a slot), `PaintedTube` and `PaintedSeesaw` in `parts.tsx`.
+- Gas tubes (hook two upright tubes, tube A and B, limited-time scenes, decision tube): `c4b-sealed-tube-v1.png` is one horizontal 4:1 tube with clamp rings, so it is drawn in three slices (two painted end caps and a stretched plain middle) at any length, rotated 90 degrees for upright tubes. The coded purple iodine tint stays behind the clear painted glass and the coded dots stay on top. Horizontal tubes show the painted clamp rings (the coded clamp feet are dropped, the plate stand rail is not used because it would run into the legends below). Upright tubes keep the coded base line. Tube B keeps its heavy outline as a coded ink ring around the painted glass.
+- Plunger icon (`which-rates-change`, two squeeze rows): `c4-icon-plunger-push-v1.png`, about 136 px tall. The old coded "down 24 px" press (one use) is now a 24 px shift of the whole painted syringe.
+- Dropper (`which-rates-change`): `c4-icon-dropper-v1.png`, about 176 px tall.
+- Seesaw ("balance point" and the next-step chip): `c4b-seesaw-base-v1.png` and `-beam-v1.png` (beam rotates about the pivot pin at plate (1100, 500), `tilt` still works); coded blue (forward) and amber (reverse) weights sit on the beam ends. Next-step chip seesaw is small (about 150 px wide).
+Left coded: thermometer, the energy-profile ball, particle dots, rate bars.
+
+### B3a (bio-m5-b03a)
+Plates added to `assets.ts` (`PAINTED`, in HAVE); `PL` entries `sperm`, `egg`, `eggOpen`, `eggNuc`, `test1`, `test2`, `embryo`, `dish` in `shared.tsx`; new SVG helpers `SArt` and `SFit` (plate by alpha box inside an svg). Remove a plate from HAVE and the coded drawing returns.
+- Sperm (`gametes`, `zygote`): `b3a-sperm-v1.png`, head centre anchored at plate (1740, 834) at 0.27 x the old scale. The tail and mid piece are the part left of the neck (x 1530) and sway about the neck with the old `phase`, so it still swims; `tailO` fades them as the head enters (head and acrosome stay). The head-only plate is not needed.
+- Egg: `b3a-egg-v1.png` at the old 460 px diameter. The gap opening is `b3a-egg-open-v1.png` fading in over it (the plates are aligned). The nuclei merging: `b3a-egg-nucleus-v1.png` scaled 1.22 fades in over the egg's own nucleus (the nucleus cannot be removed from the baked egg), replacing the coded purple blob.
+- Pregnancy test (`hook`, `hcg`): `b3a-test-1` (control line only) with `b3a-test-2` (two lines) fading in as the second line used to draw. The result window sits where the coded one was, so the hormone path still ends on it. Hook size 700 px wide, hcg card 400 px (the second line is small there).
+- Embryo card (`exchange`, 110 px): `b3a-embryo-v1.png`.
+- Petri dish (`feedback-one`): `b3a-petri-dish-v1.png` (248 px), with the painted blastocyst round plate seated in it.
+- `cleavage` demo cell (1610, 380): cleavage-1 and cleavage-2 crossfade (230 px) with the coded DNA squiggles and red cut line over the nucleus; replaces the flat circles.
+Left coded: the blue sperm nucleus circle that travels in the zygote scene (colour code blue = sperm), energy sparks and enzyme dots, hormone graphs, chains, the placenta panel.
+
+### B3a part 2 (bio-m5-b03a2)
+Plates added to `assets.ts` (`PAINTED`, in HAVE); remove one and the coded drawing returns.
+- Brain with pituitary (every scene that used `Brain`): `b3a2-brain-v1.png` at 0.2 x scale (about 288 x 244 px), placed so the painted pituitary lands exactly on `PIT`, so every route, label and bar head still starts on it. `b3a2-pituitary-part-v1.png` (aligned part) scales about its centre as the old `pulse`, with a soft amber glow. The painted pituitary is small (about 19 px).
+- Milk gland (`hook`, `milk-jobs`, `milk-trigger`, feedback two, attempt card): `b3a2-milk-gland-empty` and `-full` (aligned) at 0.45 of plate scale, so the milk fills by crossfade as `fill` rises and falls. `NIPPLE`, the duct junction (`JUNCT`) and the six sac centres (`SACS`, measured on a plate grid) are re-mapped, so the flowing dots and the violet oxytocin rings sit on the painted clusters; the rings shrink as the old squeeze. "muscle cells" label now points at the left cluster (`SAC_LABEL`). Coded fallback is unchanged.
+- Tablet (attempt card, feedback one): `b3a2-tablet-v1.png`, same footprint (about 150 px per unit of scale), tilted to match the old angle.
+- Ovary (`brake`, `explain-answer`, feedback one): `OvaryRound` now draws the aligned pair `b3a2-ovary-closeup` and `b3a2-ovary-no-ripening` as a free oval (1.25 x the old round slot, no ring), with `mix`. In `brake` the ovary starts with the ripe follicle and crossfades to no ripening at "with less FSH and LH"; the other two uses show no ripening. The coded yellow follicle glow and the red `EggMark` on the ovary are turned off when painted (the egg is in the plate).
+Left coded: `ChainIcon` badges (the pituitary and other glyphs are 92 px badges), thermostat, muscle-cell schematic, loop cards, graphs, the `EggMark` small 28 px elsewhere.
+
+### C05 (chem-m5-c05)
+The copper tube pair (`CuTube`) was already painted in the code (the audit row was stale), so only two items were left.
+- Clear flask (s4 memory card 110 x 150, s5 attempt 130 x 170): `c5-flask-clear-v1.png`, fitted into the old slot by its alpha box (about 90 and 102 px wide). The coded `Flask` is the fallback.
+- Solid in the "pure solid drops out" icon (about 90 x 58 px): `c5-solid-lump-v1.png` as `SolidLump` (76 px tall) with the cross still drawn over it.
+- The painted C4b sealed tube now also shows in C05 (the lesson re-uses the C4b `GasTube`), so `chem-m5-c05/assets.ts` lists `c4b-sealed-tube-v1.png`: tubes in `coefficient-power` (upright 190 x 430), `any-equation` (two horizontal 360 x 180), the K card and the decision rule.
+Left coded: the black carbon block in "left out" (340 x 150, labelled "carbon", particles wobble against it; the carbon-lump plate was made for C04a and would need its white label moved), the droplet icon, the beaker, particle dots, number line, rate bars.
+
+### C06 (chem-m5-c06)
+The NO2 vessel pair (`NO2Vessel`) was already painted in the code (the audit row was stale). Done now:
+- Furnace with tube (next-step teaser card, 340 x 120): `c6-furnace-tube-v1.png` in `FurnaceIcon`, 360 px wide, with a faint coded glow ellipse over the heating zone that breathes like the old flame flicker. The coded icon is the fallback.
+- Hot sealed tubes (`k-given`, `unknown-x`, `check`, `reverse-equation`, 140 x 330 upright): now the painted C4b sealed tube through the shared `GasTube` (purple tint behind painted glass, coded dots on top). `chem-m5-c06/assets.ts` lists `c4b-sealed-tube-v1.png`.
+Left coded: the ICE tables, particle dots, tube scale legend, dials.
+
+### B3b (bio-m5-b03b)
+The animal side views, wheat ear, rust leaf and potato pair were already wired (the audit rows were stale), so the remaining plates went in now (`assets.ts` `ICONS`, in HAVE; `PL` entries and `ImgPlate` in `shared.tsx`; each coded drawing is the fallback):
+- Cow reproductive tract (`insemination`, `heat-timing`): `b3b-cow-tract-v1.png`, mirrored so the opening is on the left and the ovaries on the right as in the old cut-away. `CT` (opening, cervix, uterus, ovaries, funnel) is re-measured on a plate grid, so the applicator tube, the doses, the egg leaving the ovary for the funnel, the uterus scribble and labels sit on the painted anatomy. The applicator now enters from the left edge along the lumen (the old route came down from above).
+- Straws (hook strip, travelling straw, tract, heat timeline, barns row, feedback): `b3b-straw-v1.png` with `b3b-straw-frost-v1.png` fading in as `frost`. The plug is mirrored to the right as before and the straw is stretched 2 x thicker for legibility (it is a plain cylinder). At 44 to 64 px wide the straws are still hair thin.
+- Collection vial: `b3b-vial-empty` and `b3b-vial-full` (aligned) crossfade as the semen is collected and then split into doses. 80 px wide.
+- Freezer: `b3b-freezer-v1.png` (storage tank, lid open, straws racked), about 136 px wide, with a coded snow mark beside it. The old coded "door closing" is gone.
+- Forceps (`pollination`, `feedback-two`): `b3b-forceps-v1.png`, tips down (does not open or close, it moves as before).
+- Cover bag (`pollination`, `feedback-two`): `b3b-cover-bag-v1.png` at 80 per cent opacity so the floret still shows through, lowered as before.
+- Barn (`fertility-cost` rows, `gain-and-risk` pans, attempt card): `b3b-barn-v1.png`, 84 px wide.
+Left coded: herd grids (per-animal colour), scorecard, balance, symbols (coin, heart, shield).

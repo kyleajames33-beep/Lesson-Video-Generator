@@ -2,11 +2,13 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {Callout} from '../../kit';
 import {cues} from '../../cues';
+import * as A from './assets';
 import {
-	AMBER, AMBER_INK, Bracket, Card, DayCounter, DrawPath, Dots, Enter, Fade, FONT_DISPLAY, FONT_HAND, GraphAxes, Hand, Heading, INK, INK_SOFT, Label, LOBES, OvulationMarker, Overlay, PArt, PL, PSeq,
+	AMBER, AMBER_INK, Bracket, Card, DayCounter, DrawPath, Dots, Enter, Fade, FONT_DISPLAY, FONT_HAND, GraphAxes, Hand, Heading, INK, INK_SOFT, Label, LOBES, OvulationMarker, Overlay, PArt, PL, PSeq, SArt,
 	prog, vis, Rail, Say, S, Scribble, Squiggle, TEAL, TEAL_INK, TractInset, TractPair, TR, TR3, tt, Underlined, Vessel, YELLOW, Zoom, G, G_RISE, along, PAPER_DEEP, VESSEL,
 } from './shared';
 
+const HAVE_P = A.HAVE.has(A.CLEAVAGE[0]);
 const CP = {x: 700, y: 222, w: 640};
 const CC: [number, number] = [CP.x + CP.w / 2, CP.y + (CP.w * 1370) / 1374 / 2];
 const INSET = {x: 96, y: 290, w: 480};
@@ -45,18 +47,27 @@ export const SceneCleavage: React.FC = () => {
 				<Label x={CP.x + CP.w / 2} y={192} at={c.whole + 12} text="same size" size={46} color={AMBER_INK} />
 				{/* one split, drawn as a small demo cell */}
 				<g opacity={prog(f, c.copies - 14, 14)}>
-					<circle cx={px} cy={py} r={96 * (1 - sep * 0.3)} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={1 - sep} />
-					<circle cx={px - 70 * sep} cy={py} r={64} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={sep} />
-					<circle cx={px + 70 * sep} cy={py} r={64} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={sep} />
+					{HAVE_P ? (
+						<>
+							<SArt a={PL.cl1} x={px - 115} y={py - 115} w={230} />
+							<SArt a={PL.cl2} x={px - 115} y={py - 115} w={230} o={sep} />
+						</>
+					) : (
+						<>
+							<circle cx={px} cy={py} r={96 * (1 - sep * 0.3)} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={1 - sep} />
+							<circle cx={px - 70 * sep} cy={py} r={64} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={sep} />
+							<circle cx={px + 70 * sep} cy={py} r={64} fill="#f6d9c8" stroke="#d9a08a" strokeWidth={5} opacity={sep} />
+						</>
+					)}
 					<g opacity={1 - sep}>
-						<Squiggle x={px - 46} y={py - 8} w={92} />
-						<Squiggle x={px - 46} y={py + 18} w={92} o={sq} />
+						<Squiggle x={px - 26} y={py - 12} w={52} />
+						<Squiggle x={px - 26} y={py + 8} w={52} o={sq} />
 					</g>
 					<g opacity={sep}>
-						<Squiggle x={px - 70 * sep - 34} y={py} w={68} />
-						<Squiggle x={px + 70 * sep - 34} y={py} w={68} />
+						<Squiggle x={px - 40 - 24} y={py - 4} w={48} />
+						<Squiggle x={px + 40 - 24} y={py - 4} w={48} />
 					</g>
-					<line x1={px} x2={px} y1={py - 100 * cut} y2={py + 100 * cut} stroke="#c4432f" strokeWidth={7} strokeLinecap="round" opacity={1 - sep} />
+					<line x1={px} x2={px} y1={py - 96 * cut} y2={py + 96 * cut} stroke="#c4432f" strokeWidth={7} strokeLinecap="round" opacity={1 - sep} />
 				</g>
 				<Label x={px} y={py - 130} at={c.copies} text="copy the DNA" size={46} color={AMBER_INK} out={c.splits - 4} />
 				<Label x={px} y={py - 130} at={c.splits} text="then split" size={46} color="#c4432f" />

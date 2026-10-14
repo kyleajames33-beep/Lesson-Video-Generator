@@ -1,11 +1,11 @@
 // Drawing parts for the C5 lesson: the expression builder (rows, fractions, equation strips), tubes and small icons.
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {Arrow, Bracket, GasTube, RateBars, Ring, smooth} from '../chem-m5-c04b/parts';
 import {ESC, Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
 import {CROSS, GLASS, GREEN} from './common';
-import {CU_DEEP_PLATE, CU_PALE_PLATE} from './assets';
+import {CU_DEEP_PLATE, CU_PALE_PLATE, FLASK_PLATE, HAVE5, LUMP_PLATE} from './assets';
 
 export {Arrow, Bracket, GasTube, RateBars, Ring, smooth, ESC, Fade, Overlay, SvgText, TEAL};
 export const FWD = ESC;
@@ -232,6 +232,11 @@ export const Flask: React.FC<{x: number; y: number; w: number; h: number; color:
 	const f = useCurrentFrame();
 	const o = prog(f, at, 16) * opacity;
 	if (o <= 0.01) return null;
+	if (HAVE5.has(FLASK_PLATE)) {
+		// painted flask (1200 x 1600 plate, alpha box 217, 162, 764 x 1275), fitted into the old slot
+		const k = Math.min(w / 764, h / 1275);
+		return <image href={staticFile(FLASK_PLATE)} x={x + (w - 764 * k) / 2 - 217 * k} y={y + (h - 1275 * k) / 2 - 162 * k} width={1200 * k} height={1600 * k} opacity={o} />;
+	}
 	const nw = w * 0.34, nx = x + (w - nw) / 2, neck = y + h * 0.36;
 	const body = `M${nx},${y} L${nx},${neck} L${x},${y + h - 14} Q${x},${y + h} ${x + 16},${y + h} L${x + w - 16},${y + h} Q${x + w},${y + h} ${x + w},${y + h - 14} L${nx + nw},${neck} L${nx + nw},${y}`;
 	const liqTop = y + h * 0.62;
@@ -244,6 +249,12 @@ export const Flask: React.FC<{x: number; y: number; w: number; h: number; color:
 	);
 };
 
+/** A solid lump (painted plate, alpha box 160, 213, 1280 x 1172), or a grey block when the plate is absent. Centred on (cx, cy), `h` tall. */
+export const SolidLump: React.FC<{cx: number; cy: number; h: number}> = ({cx, cy, h}) => {
+	if (!HAVE5.has(LUMP_PLATE)) return <rect x={cx - h * 0.78} y={cy - h / 2} width={h * 1.55} height={h} rx={8} fill="#cfc7b8" stroke={INK_SOFT} strokeWidth={4} />;
+	const k = h / 1172;
+	return <image href={staticFile(LUMP_PLATE)} x={cx - (1280 * k) / 2 - 160 * k} y={cy - h / 2 - 213 * k} width={1600 * k} height={1600 * k} />;
+};
 /** Wobbling particle at a slot (deterministic, frame driven). */
 export const wob = (f: number, seed: number, cx: number, cy: number, ax: number, ay: number) => ({
 	x: cx + ax * (0.6 * Math.sin(f * 0.031 + seed * 1.7) + 0.4 * Math.sin(f * 0.057 + seed * 2.9)),

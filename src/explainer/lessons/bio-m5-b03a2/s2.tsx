@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, Arrow, BarHead, Brain, Chip, Cross, DrawPath, Dots, EggDot, EggMark, OvaryRound, ovFol, Enter, Fade, FONT_DISPLAY, FONT_HAND, GreyTag, HandText, Hand, Heading, INK, INK_SOFT, Label, LoopCard, LoopIcon, Overlay, PArt, PL, Pill, PIT,
+	AMBER, AMBER_INK, Arrow, BarHead, Brain, Chip, Cross, DrawPath, Dots, EggDot, EggMark, OvaryRound, OVARY_PAINTED, ovFol, Enter, Fade, FONT_DISPLAY, FONT_HAND, GreyTag, HandText, Hand, Heading, INK, INK_SOFT, Label, LoopCard, LoopIcon, Overlay, PArt, PL, Pill, PIT,
 	prog, S, Say, SLATE, SLATE_INK, TEAL, TEAL_INK, along, pathOf, Vein, YELLOW, Bracket,
 } from './shared';
 
@@ -28,13 +28,13 @@ export const SceneBrake: React.FC = () => {
 		<>
 			<Heading items={[[0, 'The brake on FSH and LH']]} size={72} />
 			<div style={{position: 'absolute', inset: 0, opacity: prog(f, 0, 20)}}>
-				<OvaryRound x={OV.x} y={OV.y} d={OV.d} />
+				<OvaryRound x={OV.x} y={OV.y} d={OV.d} mix={prog(f, c.withLess, 30)} />
 			</div>
 			<Hand at={4} x={OV.x - 10} y={OV.y + OVH + 12} w={520} size={40} color={INK}>ovary: follicle, then corpus luteum</Hand>
 			<Overlay>
 				<Brain at={0} />
 				<Label x={PIT[0] + 40} y={PIT[1] + 76} at={c.pit1} text="pituitary" size={44} color={SLATE_INK} />
-				<circle cx={FOL[0]} cy={FOL[1]} r={36} fill="#f2c81f" opacity={0.45} />
+				<circle cx={FOL[0]} cy={FOL[1]} r={OVARY_PAINTED ? 70 : 36} fill="#f2c81f" opacity={OVARY_PAINTED ? 0 : 0.45} />
 				{/* slate: FSH and LH leave the pituitary and thin out */}
 				<Vein d={pathOf(P1)} at={4} dur={36} o={0.7} />
 				<Dots pts={P1} at={14} n={7} period={70} color={SLATE} r={11} end={c.release} />
@@ -48,7 +48,7 @@ export const SceneBrake: React.FC = () => {
 				<BarHead x={P2[5][0] + 6} y={P2[5][1] + 2} ang={polyAng(P2)} at={c.release} color={AMBER} />
 				<LoopIcon k="neg" cx={1490} cy={396} r={30} o={prog(f, c.release + 6, 12)} />
 				{/* the egg stays in the ovary */}
-				<g opacity={prog(f, c.matures, 14)}><EggMark x={FOL[0]} y={FOL[1]} r={14} /></g>
+				<g opacity={OVARY_PAINTED ? 0 : prog(f, c.matures, 14)}><EggMark x={FOL[0]} y={FOL[1]} r={14} /></g>
 				{/* brake pedal doodle */}
 				<g opacity={prog(f, c.works, 14) * (1 - prog(f, brakeOut, 10))} transform="translate(900,780)">
 					<rect x={-55} y={-18} width={110} height={36} rx={8} fill="#6b6358" transform="rotate(-15)" />
@@ -206,9 +206,9 @@ export const SceneBrakeStaysOn: React.FC = () => {
 				</g>
 			</Overlay>
 			{/* right: the ovary and the unchanged loop */}
-			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.src, 20)}}><OvaryRound x={OVX} y={OVY} d={OVW} /></div>
+			<div style={{position: 'absolute', inset: 0, opacity: prog(f, c.src, 20)}}><OvaryRound x={OVX} y={OVY} d={OVW} mix={1} /></div>
 			<Overlay>
-				<g opacity={prog(f, c.noegg, 14)}><EggMark x={fol[0]} y={fol[1]} r={14} /></g>
+				<g opacity={OVARY_PAINTED ? 0 : prog(f, c.noegg, 14)}><EggMark x={fol[0]} y={fol[1]} r={14} /></g>
 			</Overlay>
 			<GreyTag at={c.noegg + 6} x={OVX - 60} y={OVY + ovh + 16} text="no new egg is released" size={34} />
 			<Enter at={c.same} style={{position: 'absolute', left: 1130, top: 640}}>

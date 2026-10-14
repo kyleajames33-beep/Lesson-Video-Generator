@@ -4,8 +4,9 @@ import {Countdown, HandText} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Arrow, Body, Card, CurveGraph, Cross, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, GraphAxes, G, GreyTag, Hand, Heading, INK, INK_SOFT, Label, Overlay, PArt, PL, prog, RoundPlate, S, Say, StackedSupply,
-	TEAL, TEAL_INK, TractPair, UterusOutline, tt, vis, WrongChip, YELLOW, ROSE, O2, Tick, TP, Stamp, Line, along, pathOf, Bracket, SPERM_BLUE, EGG_LINE, Egg, Sperm, TestStick,
+	TEAL, TEAL_INK, TractPair, UterusOutline, tt, vis, WrongChip, YELLOW, ROSE, O2, Tick, TP, Stamp, Line, along, pathOf, Bracket, SPERM_BLUE, EGG_LINE, Egg, Sperm, TestStick, SArt,
 } from './shared';
+import * as A from './assets';
 import {ExchangePanel} from './s4';
 
 // ---------- 8. Attempt ----------
@@ -124,8 +125,17 @@ export const SceneAttempt: React.FC = () => {
 const FU: TP = {x: 300, y: 270, w: 860};
 const Dish: React.FC<{x: number; y: number}> = ({x, y}) => (
 	<>
-		<Overlay><ellipse cx={x} cy={y + 24} rx={96} ry={36} fill="#e6f1f7" stroke={INK_SOFT} strokeWidth={5} /></Overlay>
-		<RoundPlate a={PL.cl5} x={x - 52} y={y - 66} d={104} ring={INK_SOFT} />
+		{A.HAVE.has(A.DISH) ? (
+			<>
+				<Overlay><SArt a={PL.dish} x={x - 124} y={y - 28} w={248} /></Overlay>
+				<RoundPlate a={PL.cl5} x={x - 38} y={y - 36} d={76} ring={INK_SOFT} />
+			</>
+		) : (
+			<>
+				<Overlay><ellipse cx={x} cy={y + 24} rx={96} ry={36} fill="#e6f1f7" stroke={INK_SOFT} strokeWidth={5} /></Overlay>
+				<RoundPlate a={PL.cl5} x={x - 52} y={y - 66} d={104} ring={INK_SOFT} />
+			</>
+		)}
 	</>
 );
 export const SceneFeedbackOne: React.FC = () => {

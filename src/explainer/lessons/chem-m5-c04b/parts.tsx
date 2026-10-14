@@ -5,7 +5,7 @@ import {AMBER, AMBER_INK, DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog
 import {ESC, Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
 import {Pill} from '../chem-m5-c02/parts';
 import {RxnChip, WrongChip} from '../chem-m5-c03/parts';
-import {CATALYST, HAVE} from './assets';
+import {CATALYST, DROPPER, HAVE, PLUNGER, SEALED_TUBE, SEESAW_BASE, SEESAW_BEAM} from './assets';
 import {GLASS, H2C, H2_INK, HIC, HI_INK, I2C, I2_INK, METAL, METAL_DARK, METAL_LIGHT, hexMix, tubeColour} from './common';
 
 export {Fade, Overlay, SvgText, TEAL, ESC, Pill, RxnChip, WrongChip};
@@ -31,6 +31,38 @@ export const Arrow: React.FC<{x1: number; y1: number; x2: number; y2: number; at
 		<g opacity={o}>
 			<DrawPath d={`M${x1},${y1} L${x2},${y2}`} at={at} dur={dur} color={color} width={width} />
 			<path d={`M${hx(0.5)},${hy(0.5)} L${x2},${y2} L${hx(-0.5)},${hy(-0.5)}`} fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" strokeLinejoin="round" opacity={prog(f, at + dur - 4, 8)} />
+		</g>
+	);
+};
+
+
+/** Painted plate fitted (contain) into a slot, from its alpha box [x, y, w, h] on a natural canvas [W, H]. */
+export const Plate: React.FC<{src: string; nat: [number, number]; box: [number, number, number, number]; x: number; y: number; w: number; h: number; opacity?: number}> = ({src, nat, box, x, y, w, h, opacity = 1}) => {
+	const k = Math.min(w / box[2], h / box[3]);
+	return <image href={staticFile(src)} x={x + (w - box[2] * k) / 2 - box[0] * k} y={y + (h - box[3] * k) / 2 - box[1] * k} width={nat[0] * k} height={nat[1] * k} opacity={opacity} />;
+};
+// Painted sealed tube (1800 x 1800 plate). Glass runs x 234..1566 and y 768..921; the clamp rings sit at x 410..468 and 1330..1392.
+// The tube is drawn in three slices (two end caps and a stretched plain middle) so it can be any length, and rotated for upright tubes.
+const TUBE_Y0 = 768, TUBE_GH = 153, TUBE_VY = 758, TUBE_VH = 190;
+const PaintedTube: React.FC<{x: number; y: number; w: number; h: number; rings: boolean}> = ({x, y, w, h, rings}) => {
+	const horiz = w >= h;
+	const L = horiz ? w : h, T = horiz ? h : w;
+	const s = T / TUBE_GH;
+	const capN = rings ? 246 : 166; // native length of each cap
+	const capW = Math.min(capN * s, L / 2 - 4);
+	const midW = Math.max(L - 2 * capW, 4);
+	const ox = horiz ? x : x + w / 2 - L / 2, oy = horiz ? y : y + h / 2 - T / 2;
+	const top = oy - (TUBE_Y0 - TUBE_VY) * s, vh = TUBE_VH * s;
+	const slice = (px: number, pw: number, v: [number, number]) => (
+		<svg x={px} y={top} width={pw} height={vh} viewBox={`${v[0]} ${TUBE_VY} ${v[1] - v[0]} ${TUBE_VH}`} preserveAspectRatio="none" overflow="hidden">
+			<image href={staticFile(SEALED_TUBE)} x={0} y={0} width={1800} height={1800} />
+		</svg>
+	);
+	return (
+		<g transform={horiz ? undefined : `rotate(90 ${x + w / 2} ${y + h / 2})`}>
+			{slice(ox, capW, rings ? [234, 480] : [234, 400])}
+			{slice(ox + capW, midW, [480, 1320])}
+			{slice(ox + capW + midW, capW, rings ? [1320, 1566] : [1400, 1566])}
 		</g>
 	);
 };
@@ -63,15 +95,26 @@ export const GasTube: React.FC<{x: number; y: number; w: number; h: number; coun
 	const ax = ((w - 2 * rx * 0.55) / 2) * 0.95 - 14, ay = ((h - 2 * rx * 0.55) / 2) * 0.95 - 14;
 	const n = [Math.round(counts.h), Math.round(counts.i), Math.round(counts.hi)];
 	const horiz = w > h;
+	const paint = HAVE.has(SEALED_TUBE);
 	return (
 		<g opacity={reveal}>
-			{clamps ? (horiz
+			{clamps && !(paint && horiz) ? (horiz
 				? [0.2, 0.8].map(u => <path key={u} d={`M${x + w * u - 16},${y + h + 4} L${x + w * u - 16},${y + h + 26} M${x + w * u + 16},${y + h + 4} L${x + w * u + 16},${y + h + 26} M${x + w * u - 26},${y + h + 26} L${x + w * u + 26},${y + h + 26}`} stroke={METAL_DARK} strokeWidth={5} strokeLinecap="round" fill="none" />)
 				: <path d={`M${x - 14},${y + h + 6} L${x + w + 14},${y + h + 6}`} stroke={METAL_DARK} strokeWidth={6} strokeLinecap="round" />) : null}
-			<rect x={x} y={y} width={w} height={h} rx={rx} fill={GLASS} fillOpacity={0.55} />
-			<rect x={x + 5} y={y + 5} width={w - 10} height={h - 10} rx={Math.max(4, rx - 5)} fill={tubeColour(tintI ?? counts.i)} fillOpacity={0.5} />
-			<rect x={x} y={y} width={w} height={h} rx={rx} fill="none" stroke={INK} strokeWidth={sw} />
-			<path d={horiz ? `M${x + rx * 0.9},${y + 14} L${x + w - rx * 0.9},${y + 14}` : `M${x + 14},${y + rx * 0.9} L${x + 14},${y + h - rx * 0.9}`} stroke="#fff" strokeOpacity={0.7} strokeWidth={6} strokeLinecap="round" />
+			{paint ? (
+				<>
+					<rect x={x + 6} y={y + 6} width={w - 12} height={h - 12} rx={Math.max(4, rx - 6)} fill={tubeColour(tintI ?? counts.i)} fillOpacity={0.55} />
+					{heavy ? <rect x={x - 3} y={y - 3} width={w + 6} height={h + 6} rx={rx + 3} fill="none" stroke={INK} strokeWidth={5} /> : null}
+					<PaintedTube x={x} y={y} w={w} h={h} rings={clamps && horiz} />
+				</>
+			) : (
+				<>
+					<rect x={x} y={y} width={w} height={h} rx={rx} fill={GLASS} fillOpacity={0.55} />
+					<rect x={x + 5} y={y + 5} width={w - 10} height={h - 10} rx={Math.max(4, rx - 5)} fill={tubeColour(tintI ?? counts.i)} fillOpacity={0.5} />
+					<rect x={x} y={y} width={w} height={h} rx={rx} fill="none" stroke={INK} strokeWidth={sw} />
+					<path d={horiz ? `M${x + rx * 0.9},${y + 14} L${x + w - rx * 0.9},${y + 14}` : `M${x + 14},${y + rx * 0.9} L${x + 14},${y + h - rx * 0.9}`} stroke="#fff" strokeOpacity={0.7} strokeWidth={6} strokeLinecap="round" />
+				</>
+			)}
 			{dots ? (
 				<>
 					{Array.from({length: n[0]}, (_, k) => { const p = slotXY(seed, 0, k, f, cx, cy, ax, ay); return <circle key={`h${k}`} cx={p.x} cy={p.y} r={8} fill={H2C} stroke={H2_INK} strokeWidth={2.2} />; })}
@@ -304,12 +347,12 @@ export const StageTable: React.FC<{rows: TRow[]; at: number; rowH?: number}> = (
 // ---------- small icons ----------
 export const Plunger: React.FC<{x: number; y: number; s?: number; at: number; down?: number}> = ({x, y, s = 1, at, down = 0}) => (
 	<Fade at={at}>
-		<g transform={`translate(${x},${y}) scale(${s})`}>
+		{HAVE.has(PLUNGER) ? <Plate src={PLUNGER} nat={[1600, 1600]} box={[626, 162, 346, 1278]} x={x - 40 * s} y={y - 85 * s + down * 24 * s} w={80 * s} h={170 * s} /> : <g transform={`translate(${x},${y}) scale(${s})`}>
 			<rect x={-40} y={0} width={80} height={60} rx={8} fill={GLASS} fillOpacity={0.7} stroke={INK} strokeWidth={4} />
 			<rect x={-34} y={-6 + down * 24} width={68} height={14} rx={5} fill={INK_SOFT} stroke={INK} strokeWidth={3} />
 			<path d={`M0,${-44 + down * 24} L0,${-6 + down * 24}`} stroke={INK} strokeWidth={6} strokeLinecap="round" />
 			<rect x={-26} y={-60 + down * 24} width={52} height={14} rx={6} fill={INK} />
-		</g>
+		</g>}
 	</Fade>
 );
 export const Thermo: React.FC<{x: number; y: number; s?: number; at: number; color?: string}> = ({x, y, s = 1, at, color = '#c4582f'}) => (
@@ -323,24 +366,40 @@ export const Thermo: React.FC<{x: number; y: number; s?: number; at: number; col
 );
 export const Dropper: React.FC<{x: number; y: number; s?: number; at: number}> = ({x, y, s = 1, at}) => (
 	<Fade at={at}>
-		<g transform={`translate(${x},${y}) scale(${s})`}>
+		{HAVE.has(DROPPER) ? <Plate src={DROPPER} nat={[1600, 1600]} box={[657, 161, 287, 1279]} x={x - 40 * s} y={y - 80 * s} w={80 * s} h={160 * s} /> : <g transform={`translate(${x},${y}) scale(${s})`}>
 			<path d="M-9,-34 L-9,2 L0,22 L9,2 L9,-34 Z" fill="#fffdf8" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
 			<rect x={-14} y={-52} width={28} height={18} rx={8} fill={INK_SOFT} stroke={INK} strokeWidth={3} />
 			<circle cx={0} cy={44} r={7} fill={FWD} />
-		</g>
+		</g>}
 	</Fade>
 );
 export const Seesaw: React.FC<{x: number; y: number; at: number; s?: number; tilt?: number}> = ({x, y, at, s = 1, tilt = 0}) => (
 	<Fade at={at}>
-		<g transform={`translate(${x},${y}) scale(${s})`}>
+		{HAVE.has(SEESAW_BASE) && HAVE.has(SEESAW_BEAM) ? <PaintedSeesaw x={x} y={y} s={s} tilt={tilt} /> : <g transform={`translate(${x},${y}) scale(${s})`}>
 			<path d="M0,0 L-30,60 L30,60 Z" fill="#fffdf8" stroke={INK} strokeWidth={5} strokeLinejoin="round" />
 			<g transform={`rotate(${tilt})`}>
 				<path d="M-110,-6 L110,-6" stroke={TEAL} strokeWidth={10} strokeLinecap="round" />
 				<circle cx={-90} cy={-30} r={20} fill="#bcd6ee" stroke={FWD} strokeWidth={5} />
 				<circle cx={90} cy={-30} r={20} fill="#f6dfae" stroke={AMBER} strokeWidth={5} />
 			</g>
-		</g>
+		</g>}
 	</Fade>
 );
+/** Painted seesaw: base and beam share a 2200 x 1000 canvas, pivot pin at (1100, 500). Coded forward (blue) and reverse (amber) weights sit on the beam ends. */
+export const PaintedSeesaw: React.FC<{x: number; y: number; s: number; tilt?: number}> = ({x, y, s, tilt = 0}) => {
+	// (x, y) is the beam pivot; the painted beam is scaled to the old coded beam length (220 px per unit of s)
+	const k = (s * 220) / 1756;
+	const plate = (src: string) => <image href={staticFile(src)} x={-1100} y={-500} width={2200} height={1000} />;
+	return (
+		<g transform={`translate(${x},${y}) scale(${k})`}>
+			{plate(SEESAW_BASE)}
+			<g transform={`rotate(${tilt})`}>
+				{plate(SEESAW_BEAM)}
+				<circle cx={-700} cy={-125} r={74} fill="#bcd6ee" stroke={FWD} strokeWidth={20} />
+				<circle cx={700} cy={-125} r={74} fill="#f6dfae" stroke={AMBER} strokeWidth={20} />
+			</g>
+		</g>
+	);
+};
 export const mix = hexMix;
 void AMBER; void Overlay; void Img;

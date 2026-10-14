@@ -1,5 +1,5 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import lesson from '../../../../docs/production/claude-pm/lessons/b3a2/measured/lesson.json';
 import {Plate, rng} from '../../kit';
 import type {CueScene} from '../../cues';
@@ -33,6 +33,19 @@ export const Brain: React.FC<{at?: number; o?: number; pulse?: number; out?: num
 	const f = useCurrentFrame();
 	const p = prog(f, at, 18) * (out === undefined ? 1 : 1 - prog(f, out, 12)) * o;
 	const sc = 1 + 0.35 * pulse;
+	if (A.HAVE.has(A.BRAIN)) {
+		// painted brain (1800 x 1600 plate): the pituitary (plate 717, 1014) sits on PIT, so every route still starts on it; the part plate pulses
+		const K = 0.2, ox = PIT[0] - 717.5 * K, oy = PIT[1] - 1014.5 * K;
+		return (
+			<g opacity={p}>
+				<image href={staticFile(A.BRAIN)} x={ox} y={oy} width={1800 * K} height={1600 * K} />
+				{pulse > 0 ? <circle cx={PIT[0]} cy={PIT[1]} r={26 * pulse} fill={AMBER} opacity={0.35 * pulse} /> : null}
+				<g transform={`translate(${PIT[0]},${PIT[1]}) scale(${sc}) translate(${-PIT[0]},${-PIT[1]})`}>
+					<image href={staticFile(A.PIT_PART)} x={ox} y={oy} width={1800 * K} height={1600 * K} />
+				</g>
+			</g>
+		);
+	}
 	return (
 		<g transform={`translate(${BRAIN.x},${BRAIN.y})`} opacity={p}>
 			<path d="M60,150 C40,60 140,10 230,30 C310,48 335,130 290,190 C270,215 230,215 200,208 C170,200 120,212 90,200 C70,192 62,170 60,150Z" fill="#f3e7ee" stroke={INK_SOFT} strokeWidth={5} strokeLinejoin="round" />
@@ -128,12 +141,28 @@ export const ChainIcon: React.FC<{k: number; cx: number; cy: number; s?: number;
 };
 
 // ---------- the milk gland schematic (local space 700 x 520) ----------
-export const SACS: [number, number][] = [[180, 115], [110, 260], [180, 405], [310, 75], [310, 445]];
-export const SAC_R = 54;
+const PG = A.HAVE.has(A.GLAND[0]) && A.HAVE.has(A.GLAND[1]);
+// painted gland (2000 x 1500 plate, scale 0.45): nipple tip at plate (1687, 810) lands on local (692, 260); six sac clusters measured on the plate grid
+const PS = 0.45;
+const plateXY = (px: number, py: number): [number, number] => [692 - (1687 - px) * PS, 260 + (py - 810) * PS];
+export const SACS: [number, number][] = PG ? [[713, 313], [1047, 467], [473, 633], [560, 933], [800, 1127], [1080, 1133]].map(p => plateXY(p[0], p[1])) : [[180, 115], [110, 260], [180, 405], [310, 75], [310, 445]];
+export const SAC_R = PG ? 46 : 54;
+/** Which sac the "muscle cells" label points at. */
+export const SAC_LABEL = PG ? 2 : 0;
 export const DUCT_MAIN = 'M650,260 L330,260';
 export const DUCT_BRANCH = ['M330,260 C280,200 240,160 205,138', 'M330,260 C270,260 220,260 160,260', 'M330,260 C280,320 240,360 205,382', 'M270,215 C250,170 280,110 296,100', 'M270,305 C250,350 280,410 296,420'];
-export const NIPPLE: [number, number] = [662, 260];
-export const MilkGland: React.FC<{x: number; y: number; s?: number; o?: number; fill?: number; crescent?: number; squeeze?: number; draw?: number; idp?: string}> = ({x, y, s = 1, o = 1, fill = 0.12, crescent = 0, squeeze = 0, draw = 1, idp = 'mg'}) => (
+export const NIPPLE: [number, number] = PG ? [684, 260] : [662, 260];
+/** Where the main duct splits (local space). */
+export const JUNCT: [number, number] = PG ? plateXY(1000, 790) : [330, 260];
+export const MilkGland: React.FC<{x: number; y: number; s?: number; o?: number; fill?: number; crescent?: number; squeeze?: number; draw?: number; idp?: string}> = ({x, y, s = 1, o = 1, fill = 0.12, crescent = 0, squeeze = 0, draw = 1, idp = 'mg'}) => PG ? (
+	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o * draw}>
+		{/* empty and full plates are aligned: the milk fills by crossfade (fill 0.1 empty, about 0.95 full) */}
+		<image href={staticFile(A.GLAND[0])} x={692 - 1687 * PS} y={260 - 810 * PS} width={2000 * PS} height={1500 * PS} />
+		<image href={staticFile(A.GLAND[1])} x={692 - 1687 * PS} y={260 - 810 * PS} width={2000 * PS} height={1500 * PS} opacity={Math.max(0, Math.min(1, (fill - 0.1) / 0.85))} />
+		{/* oxytocin: a violet ring round each sac that squeezes in as the muscle cells contract */}
+		{SACS.map((c, i) => <circle key={i} cx={c[0]} cy={c[1]} r={SAC_R + 14 - 9 * squeeze} fill="none" stroke={VIOLET} strokeWidth={8} strokeLinecap="round" strokeDasharray="64 36" opacity={crescent} transform={`rotate(${i * 50},${c[0]},${c[1]})`} />)}
+	</g>
+) : (
 	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
 		<defs>
 			{SACS.map((c, i) => (
@@ -188,7 +217,12 @@ export const Strike: React.FC<{at: number; children: React.ReactNode}> = ({at, c
 };
 
 /** A tablet (capsule) icon. */
-export const Tablet: React.FC<{x: number; y: number; s?: number; o?: number; rot?: number}> = ({x, y, s = 1, o = 1, rot = -20}) => (
+export const Tablet: React.FC<{x: number; y: number; s?: number; o?: number; rot?: number}> = ({x, y, s = 1, o = 1, rot = -20}) => A.HAVE.has(A.TABLET) ? (
+	// painted capsule (plate box 288, 97, 1023 x 605, already tilted about 12 degrees); width 150 per unit of s keeps the old footprint
+	<g transform={`translate(${x},${y}) rotate(${rot + 12}) scale(${(150 * s) / 1023}) translate(${-(288 + 511.5)},${-(97 + 302.5)})`} opacity={o}>
+		<image href={staticFile(A.TABLET)} x={0} y={0} width={1600} height={800} />
+	</g>
+) : (
 	<g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`} opacity={o}>
 		<rect x={-70} y={-30} width={140} height={60} rx={30} fill="#fffdf8" stroke={INK} strokeWidth={5} />
 		<path d="M0,-30 L0,30" stroke={INK} strokeWidth={4} />
@@ -222,9 +256,30 @@ export const EggMark: React.FC<{x: number; y: number; r?: number; o?: number}> =
 
 /** The left ovary of the tract plate as a round inset (no hard crop edges). The follicle sits at fraction (0.487, 0.5). */
 export const OVARY_DEF = {src: A.TRACT_THICK, nat: [1920, 1280] as [number, number], box: [310, 430, 230, 230] as [number, number, number, number]};
-export const OvaryRound: React.FC<{x: number; y: number; d: number; o?: number}> = ({x, y, d, o = 1}) => (
+const OVP = {nat: [1800, 1800] as [number, number], box: [183, 427, 1434, 946] as [number, number, number, number], fol: [0.289, 0.556] as [number, number]};
+const OVARY_ON = A.HAVE.has(A.OVARY[0]) && A.HAVE.has(A.OVARY[1]);
+const OV_W = 1.25;
+/** mix 0 shows the ovary with its ripe follicle, 1 the aligned ovary where nothing ripens. */
+export const OvaryRound: React.FC<{x: number; y: number; d: number; o?: number; mix?: number}> = ({x, y, d, o = 1, mix = 0}) => {
+	if (OVARY_ON) {
+		const w = d * OV_W, k = w / OVP.box[2];
+		const img = (src: string, op: number) => (
+			<img src={staticFile(src)} style={{position: 'absolute', left: -OVP.box[0] * k + (d - w) / 2, top: -OVP.box[1] * k + (d - OVP.box[3] * k) / 2, width: OVP.nat[0] * k, height: OVP.nat[1] * k, opacity: op}} />
+		);
+		return (
+			<div style={{position: 'absolute', left: x, top: y, width: d, height: d, opacity: o}}>
+				{img(A.OVARY[0], 1)}
+				{mix > 0 ? img(A.OVARY[1], mix) : null}
+			</div>
+		);
+	}
+	return (
 	<div style={{position: 'absolute', left: x, top: y, width: d, height: d, borderRadius: '50%', overflow: 'hidden', border: `6px solid ${INK_SOFT}`, boxSizing: 'border-box', background: '#f1eadb', opacity: o}}>
 		<Plate src={OVARY_DEF.src} natural={OVARY_DEF.nat} crop={OVARY_DEF.box} width={d} style={{left: -6, top: -6}} />
 	</div>
-);
-export const ovFol = (x: number, y: number, d: number): [number, number] => [x + 0.487 * d, y + 0.5 * d];
+	);
+};
+export const ovFol = (x: number, y: number, d: number): [number, number] => OVARY_ON
+	? [x + d / 2 + (OVP.fol[0] - 0.5) * d * OV_W, y + d / 2 + (OVP.fol[1] - 0.5) * ((d * OV_W * OVP.box[3]) / OVP.box[2])]
+	: [x + 0.487 * d, y + 0.5 * d];
+export const OVARY_PAINTED = OVARY_ON;

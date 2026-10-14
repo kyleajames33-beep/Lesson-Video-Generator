@@ -2,8 +2,9 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {HandText} from '../../kit';
 import {cues} from '../../cues';
+import * as A from './assets';
 import {
-	AMBER, AMBER_INK, AnimalIcon, Arrow, CowTract, CT, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, GAIN, Heading, INK, INK_SOFT, Label, Overlay, PArt, PL, pH, prog, S, Scribble, SlideIn, Straw, along, pathOf, Tick, Tag, Hand, Line, Pill, POLLEN, GREYC, Fade, Bracket, VAR,
+	AMBER, AMBER_INK, AnimalIcon, Arrow, CowTract, CT, TRACT_PAINTED, SvgPlate, ImgPlate, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, GAIN, Heading, INK, INK_SOFT, Label, Overlay, PArt, PL, pH, prog, S, Scribble, SlideIn, Straw, along, pathOf, Tick, Tag, Hand, Line, Pill, POLLEN, GREYC, Fade, Bracket, VAR,
 } from './shared';
 
 // ---------- 1. Hook: two farmers, one question ----------
@@ -49,6 +50,7 @@ export const SceneHook: React.FC = () => {
 	);
 };
 
+const VIAL_P = A.HAVE.has(A.VIAL[0]) && A.HAVE.has(A.FREEZER);
 // ---------- 2a. Artificial insemination: what the farmer does ----------
 export const SceneInsemination: React.FC = () => {
 	const f = useCurrentFrame();
@@ -74,24 +76,42 @@ export const SceneInsemination: React.FC = () => {
 			<SlideIn at={4} dx={-50}><PArt a={PL.bull} x={60} y={540} w={540} /></SlideIn>
 			<SlideIn at={c.ai} dx={50}><PArt a={PL.cow} x={1150} y={560} w={560} /></SlideIn>
 			<Overlay>
-				{/* vial */}
+				{/* vial: painted pair (empty and half full, aligned) crossfades as the semen is collected and then split into doses */}
 				<g opacity={prog(f, c.collected - 10, 14)}>
-					<path d="M190,300 L190,450 C190,478 270,478 270,450 L270,300" fill="#fffdf8" fillOpacity={0.7} stroke={INK_SOFT} strokeWidth={5} strokeLinejoin="round" />
-					<clipPath id="vialClip"><path d="M193,300 L193,450 C193,474 267,474 267,450 L267,300Z" /></clipPath>
-					<rect x={190} y={470 - 170 * fill} width={80} height={180} fill="#f1ead6" stroke="none" clipPath="url(#vialClip)" />
-					<line x1={180} y1={300} x2={280} y2={300} stroke={INK_SOFT} strokeWidth={6} strokeLinecap="round" />
+					{VIAL_P ? (
+						<>
+							<ImgPlate a={PL.vialEmpty} x={190} y={296} w={80} />
+							<ImgPlate a={PL.vialFull} x={190} y={296} w={80} o={Math.min(1, fill / 0.8)} />
+						</>
+					) : (
+						<>
+							<path d="M190,300 L190,450 C190,478 270,478 270,450 L270,300" fill="#fffdf8" fillOpacity={0.7} stroke={INK_SOFT} strokeWidth={5} strokeLinejoin="round" />
+							<clipPath id="vialClip"><path d="M193,300 L193,450 C193,474 267,474 267,450 L267,300Z" /></clipPath>
+							<rect x={190} y={470 - 170 * fill} width={80} height={180} fill="#f1ead6" stroke="none" clipPath="url(#vialClip)" />
+							<line x1={180} y1={300} x2={280} y2={300} stroke={INK_SOFT} strokeWidth={6} strokeLinecap="round" />
+						</>
+					)}
 				</g>
 				<Arrow x1={290} y1={400} x2={338} y2={400} at={c.split} color={INK_SOFT} dur={14} />
 				<g opacity={prog(f, c.collected, 12)}><text x={230} y={510} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK_SOFT}>semen</text></g>
 				{/* rack of small doses */}
 				{[0, 1, 2, 3, 4].map(i => <Straw key={i} x={420} y={316 + i * 36} w={140} frost={prog(f, c.frozen, 30)} o={prog(f, c.split + i * 10, 10)} />)}
 				<g opacity={prog(f, c.split + 20, 14)}><text x={420} y={514} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK_SOFT}>many small doses</text></g>
-				{/* freezer */}
+				{/* freezer: the painted storage tank (lid open, straws racked inside); the coded snow mark shows the cold */}
 				<g opacity={prog(f, c.frozen - 8, 14)}>
-					<rect x={560} y={290} width={150} height={200} rx={16} fill="#e8f1f6" stroke={INK_SOFT} strokeWidth={5} />
-					<g transform="translate(560,290)"><rect x={10} y={10} width={130} height={180} rx={10} fill="#cfe3ee" stroke={INK_SOFT} strokeWidth={3} transform={`translate(0,0) scale(${1 - 0.8 * door},1)`} />
-						{[0, 1, 2].map(i => <rect key={i} x={18} y={34 + i * 50} width={114} height={8} rx={4} fill="#fff" opacity={door} />)}</g>
-					<path d="M635,350 L635,430 M600,390 L670,390 M610,365 L660,415 M660,365 L610,415" stroke="#7fb0d6" strokeWidth={5} strokeLinecap="round" opacity={1 - door} />
+					{VIAL_P ? (
+						<>
+							<ImgPlate a={PL.freezer} x={560 + 14} y={282} w={136} />
+							<path d="M722,330 L722,386 M694,358 L750,358 M702,338 L742,378 M742,338 L702,378" stroke="#7fb0d6" strokeWidth={5} strokeLinecap="round" opacity={door} />
+						</>
+					) : (
+						<>
+							<rect x={560} y={290} width={150} height={200} rx={16} fill="#e8f1f6" stroke={INK_SOFT} strokeWidth={5} />
+							<g transform="translate(560,290)"><rect x={10} y={10} width={130} height={180} rx={10} fill="#cfe3ee" stroke={INK_SOFT} strokeWidth={3} transform={`translate(0,0) scale(${1 - 0.8 * door},1)`} />
+								{[0, 1, 2].map(i => <rect key={i} x={18} y={34 + i * 50} width={114} height={8} rx={4} fill="#fff" opacity={door} />)}</g>
+							<path d="M635,350 L635,430 M600,390 L670,390 M610,365 L660,415 M660,365 L610,415" stroke="#7fb0d6" strokeWidth={5} strokeLinecap="round" opacity={1 - door} />
+						</>
+					)}
 					<text x={635} y={526} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill="#4a7fa8">frozen</text>
 				</g>
 				{/* route and travelling straw */}
@@ -106,7 +126,7 @@ export const SceneInsemination: React.FC = () => {
 			</Overlay>
 			{/* cut-away of the cow's tract */}
 			<Overlay>
-				<CowTract x={T.x} y={T.y} at={c.tract - 10} labels={[{text: 'uterus', at: c.uterus - 6, x: 330, y: 150}, {text: 'female reproductive tract', at: c.tract, x: 40, y: 330}]} />
+				<CowTract x={T.x} y={T.y} at={c.tract - 10} labels={[{text: 'uterus', at: c.uterus - 6, x: TRACT_PAINTED ? 190 : 330, y: TRACT_PAINTED ? 92 : 150}, {text: 'female reproductive tract', at: c.tract, x: 40, y: 330}]} />
 				{atCow ? <Straw x={T.x + 56} y={T.y + 86} w={90} rot={90} frost={0} o={prog(f, c.thaws + 10, 14)} /> : null}
 				<DrawPath d={pathOf(dosePts)} at={c.tube} dur={30} color="#7d7a76" width={9} />
 				{Array.from({length: 7}, (_, i) => {
@@ -117,7 +137,7 @@ export const SceneInsemination: React.FC = () => {
 					const jx = done ? Math.cos(i * 2.4) * 28 : 0, jy = done ? Math.sin(i * 2.4) * 18 : 0;
 					return <circle key={i} cx={px + jx} cy={py + jy} r={7} fill="#fffdf8" stroke={INK} strokeWidth={2.5} />;
 				})}
-				<Scribble cx={T.x + 372} cy={T.y + 200} rx={120} ry={74} at={c.inside} color={AMBER_INK} seed={6} />
+				<Scribble cx={T.x + (TRACT_PAINTED ? CT.uterus[0] : 372)} cy={T.y + (TRACT_PAINTED ? CT.uterus[1] : 200)} rx={TRACT_PAINTED ? 130 : 120} ry={TRACT_PAINTED ? 88 : 74} at={c.inside} color={AMBER_INK} seed={6} />
 			</Overlay>
 		</>
 	);
@@ -144,7 +164,7 @@ export const SceneHeat: React.FC = () => {
 		<>
 			<Heading items={[[c.works, 'Why the timing matters']]} size={64} />
 			<Overlay>
-				<CowTract x={P.x} y={P.y} s={P.s} at={4} labels={[{text: 'ovary', at: c.ovu, x: CT.ovaryA[0] + 44, y: CT.ovaryA[1] + 50}]} />
+				<CowTract x={P.x} y={P.y} s={P.s} at={4} labels={[{text: 'ovary', at: c.ovu, x: TRACT_PAINTED ? CT.ovaryA[0] - 62 : CT.ovaryA[0] + 44, y: TRACT_PAINTED ? CT.ovaryA[1] + 62 : CT.ovaryA[1] + 50}]} />
 				{/* the egg leaves the ovary into the funnel of the oviduct */}
 				<circle cx={ovA[0] + (fun[0] - ovA[0]) * egg - 4 * egg} cy={ovA[1] + (fun[1] - ovA[1]) * egg} r={13} fill="#f08f86" stroke="#c4432f" strokeWidth={4} opacity={prog(f, c.ovu, 12)} />
 				<Scribble cx={ovA[0]} cy={ovA[1]} rx={52} ry={42} at={c.release} color={AMBER_INK} seed={5} />

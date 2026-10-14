@@ -145,7 +145,7 @@ export const SceneHcg: React.FC = () => {
 			<Chain f={f} a={c.acts - 14} b={c.acts} cc={c.prog} />
 			<Fade at={c.test} out={c.test + 400}><g /></Fade>
 			<Enter at={c.test - 20} style={{position: 'absolute', left: 96, top: 640}}>
-				<svg width={420} height={120}><TestStick x={0} y={0} w={400} line={1} /></svg>
+				<svg width={460} height={120}><TestStick x={0} y={0} w={400} line={1} /></svg>
 			</Enter>
 			<Hand at={c.test} x={96} y={778} size={50} w={560}>this is what a test detects</Hand>
 			<Overlay><Arrow x1={300} y1={640} x2={262} y2={588} at={c.test + 10} color={TEAL} width={7} dur={18} head={18} /></Overlay>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Easing, interpolate, useCurrentFrame} from 'remotion';
+import {Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import lesson from '../../../../docs/production/claude-pm/lessons/b3a/measured/lesson.json';
 import {AMBER, AMBER_INK, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, PAPER_DEEP, Plate, prog, rng} from '../../kit';
 import type {CueScene} from '../../cues';
@@ -53,6 +53,26 @@ export const PL: Record<string, PDef> = {
 	im3crop: {src: A.IMPLANT[2], nat: [1800, 1200], box: [187, 547, 1427, 473]},
 	// the head and upper body of the fetus
 	fetusHead: {src: A.FETUS, nat: SQ, box: [420, 330, 560, 560]},
+	// brief 27 painted icons (alpha boxes measured with PIL, alpha > 20)
+	sperm: {src: A.SPERM, nat: [2200, 1600], box: [264, 640, 1672, 318]},
+	egg: {src: A.EGG, nat: [2000, 2000], box: [240, 252, 1519, 1496]},
+	eggOpen: {src: A.EGG_OPEN, nat: [2000, 2000], box: [247, 252, 1513, 1496]},
+	eggNuc: {src: A.EGG_NUC, nat: [2000, 2000], box: [819, 833, 363, 368]},
+	test1: {src: A.TEST[0], nat: [2200, 600], box: [221, 180, 1758, 240]},
+	test2: {src: A.TEST[1], nat: [2200, 600], box: [220, 179, 1760, 242]},
+	embryo: {src: A.EMBRYO, nat: [1200, 1200], box: [266, 144, 668, 912]},
+	dish: {src: A.DISH, nat: [1600, 800], box: [193, 100, 1215, 599]},
+};
+const have = (a: PDef) => A.HAVE.has(a.src);
+/** SVG version of PArt: draws the alpha box of a plate at (x, y) with width w (no HTML wrapper, so it can sit inside an svg). */
+export const SArt: React.FC<{a: PDef; x: number; y: number; w: number; o?: number}> = ({a, x, y, w, o = 1}) => {
+	const k = w / a.box[2];
+	return <image href={staticFile(a.src)} x={x - a.box[0] * k} y={y - a.box[1] * k} width={a.nat[0] * k} height={a.nat[1] * k} opacity={o} />;
+};
+/** Same, but fitted (contain) into a w x h slot and centred. */
+export const SFit: React.FC<{a: PDef; x: number; y: number; w: number; h: number; o?: number}> = ({a, x, y, w, h, o = 1}) => {
+	const k = Math.min(w / a.box[2], h / a.box[3]);
+	return <SArt a={a} x={x + (w - a.box[2] * k) / 2} y={y + (h - a.box[3] * k) / 2} w={a.box[2] * k} o={o} />;
 };
 export const pH = (a: PDef, w: number) => (w * a.box[3]) / a.box[2];
 
@@ -174,6 +194,21 @@ export const Sperm: React.FC<{x: number; y: number; s?: number; phase?: number; 
 		const py = Math.sin(u * 9 - phase) * (4 + u * 14);
 		pts.push(`${i ? 'L' : 'M'}${px.toFixed(1)},${py.toFixed(1)}`);
 	}
+	if (have(PL.sperm)) {
+		// painted sperm (plate 2200 x 1600): head centre at (1740, 834), neck cut at x 1530; the tail and mid piece sway about the neck
+		const wave = Math.sin(phase) * 5;
+		const part = (x0: number, x1: number) => (
+			<svg x={x0} y={600} width={x1 - x0} height={400} viewBox={`${x0} 600 ${x1 - x0} 400`} overflow="hidden">
+				<image href={staticFile(A.SPERM)} x={0} y={0} width={2200} height={1600} />
+			</svg>
+		);
+		return (
+			<g transform={`translate(${x},${y}) rotate(${rot}) scale(${s * 0.27}) translate(-1740,-834)`} opacity={o}>
+				<g opacity={tailO}><g transform={`rotate(${wave} 1530 834)`}>{part(250, 1530)}</g></g>
+				{part(1530, 1960)}
+			</g>
+		);
+	}
 	return (
 		<g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`} opacity={o}>
 			<path d={pts.join(' ')} fill="none" stroke="#4b6f9e" strokeWidth={7} strokeLinecap="round" opacity={tailO} />
@@ -193,6 +228,17 @@ export const Egg: React.FC<{x: number; y: number; r?: number; gap?: number; nuc?
 		const rr = rng(11);
 		return Array.from({length: 90}, () => { const a = rr() * Math.PI * 2; const d = Math.sqrt(rr()) * (r - 60); return [Math.cos(a) * d, Math.sin(a) * d, 2.5 + rr() * 3.5] as const; });
 	}, [r]);
+	if (have(PL.egg)) {
+		// painted egg (2000 x 2000, centre 1000, outer layer 1519 px wide); the open plate fades in as the gap opens, the nucleus part fades in over the egg's own nucleus as the nuclei merge
+		const k = (2 * r) / 1519;
+		return (
+			<g transform={`translate(${x},${y}) scale(${k}) translate(-1000,-1000)`} opacity={o}>
+				<image href={staticFile(A.EGG)} x={0} y={0} width={2000} height={2000} />
+				{gap > 0 ? <image href={staticFile(A.EGG_OPEN)} x={0} y={0} width={2000} height={2000} opacity={Math.min(1, gap)} /> : null}
+				{nuc < 1 ? <image href={staticFile(A.EGG_NUC)} x={0} y={0} width={2000} height={2000} opacity={1 - nuc} transform="translate(1000 1017) scale(1.22) translate(-1000 -1017)" /> : null}
+			</g>
+		);
+	}
 	const ringR = r - 17;
 	const half = (gap * 32 * Math.PI) / 180;
 	const a0 = Math.PI + half, a1 = Math.PI + Math.PI * 2 - half;
@@ -246,6 +292,17 @@ export const Vessel: React.FC<{pts: [number, number][]; at: number; dur?: number
 /** Brand-neutral coded pregnancy test stick. `line` 0..1 draws the second line. */
 export const TestStick: React.FC<{x: number; y: number; w?: number; line?: number; o?: number}> = ({x, y, w = 640, line = 0, o = 1}) => {
 	const h = w * 0.23;
+	if (have(PL.test1)) {
+		// painted stick: keep the result window where the coded one had it (x + 0.73 w, y + h / 2); window centre is at (1340, 305) in the plate
+		const k = w / 1758;
+		const bx = x + 0.73 * w - (1340 - 221) * k, by = y + h / 2 - (305 - 180) * k;
+		return (
+			<g opacity={o}>
+				<SArt a={PL.test1} x={bx} y={by} w={w} />
+				{line > 0 ? <SArt a={{...PL.test2, box: PL.test1.box}} x={bx} y={by} w={w} o={line} /> : null}
+			</g>
+		);
+	}
 	return (
 		<g transform={`translate(${x},${y})`} opacity={o}>
 			<rect x={0} y={0} width={w} height={h} rx={h * 0.3} fill="#fffdf8" stroke={INK} strokeWidth={6} />

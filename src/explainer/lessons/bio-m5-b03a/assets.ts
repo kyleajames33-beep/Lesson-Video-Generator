@@ -20,5 +20,15 @@ export const FETUS = B + 'b3a-fetus-placenta-v1.png';
 export const TRACT_THICK = B + 'b3a-tract-thick-lining-v1.png';
 export const TRACT_THIN = B + 'b3a-tract-thin-lining-v1.png';
 
-export const HAVE = new Set<string>([...CLEAVAGE, ...IMPLANT, FETUS, TRACT_THICK, TRACT_THIN]);
-export const ASSETS: string[] = [...CLEAVAGE, ...IMPLANT, FETUS, TRACT_THICK, TRACT_THIN].filter(a => HAVE.has(a));
+// Brief 27 painted icons (14 Oct): sperm, egg (aligned pair + nucleus part), pregnancy test pair, embryo, petri dish.
+export const SPERM = B + 'b3a-sperm-v1.png';
+export const EGG = B + 'b3a-egg-v1.png';
+export const EGG_OPEN = B + 'b3a-egg-open-v1.png';
+export const EGG_NUC = B + 'b3a-egg-nucleus-v1.png';
+export const TEST = [1, 2].map(n => `${B}b3a-test-${n}-v1.png`);
+export const EMBRYO = B + 'b3a-embryo-v1.png';
+export const DISH = B + 'b3a-petri-dish-v1.png';
+const PAINTED = [SPERM, EGG, EGG_OPEN, EGG_NUC, ...TEST, EMBRYO, DISH];
+
+export const HAVE = new Set<string>([...CLEAVAGE, ...IMPLANT, FETUS, TRACT_THICK, TRACT_THIN, ...PAINTED]);
+export const ASSETS: string[] = [...CLEAVAGE, ...IMPLANT, FETUS, TRACT_THICK, TRACT_THIN, ...PAINTED].filter(a => HAVE.has(a));

@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, Countdown, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Ball, Bracket, Crumple, Curve, Fade, FWD, GasTube, GraphAxes, Overlay, Pill, ProfileAxes, ProfileCurve, RateBars, RxnChip, Ring, Seesaw, SvgText, TEAL, VLine, WrongChip, mkG, mkP, pillW} from './parts';
+import {Arrow, Ball, Bracket, Crumple, Curve, Fade, FWD, GasTube, GraphAxes, Overlay, Pill, ProfileAxes, ProfileCurve, PaintedSeesaw, RateBars, RxnChip, Ring, Seesaw, SvgText, TEAL, VLine, WrongChip, mkG, mkP, pillW} from './parts';
 import {ChemH, GLASS, H2C, H2_INK, HI_INK, I2_INK, METAL, METAL_DARK, Heading, hexMix, kf, modelA, modelB, sc, tubeColour} from './common';
 
 const N2C = '#2f4b7c', NH3C = '#6cb58a', NH3_INK = '#3f7d5a';
@@ -231,7 +231,7 @@ export const SceneDecision: React.FC = () => {
 			</div>
 			<Enter at={KD.next} style={{position: 'absolute', left: 1160, top: 820, width: 700}}>
 				<div style={{display: 'flex', alignItems: 'center', gap: 20, background: '#fffdf8', border: `3px solid ${TEAL}`, borderRadius: 20, padding: '12px 24px', boxShadow: '0 12px 28px rgba(60,45,20,0.10)'}}>
-					<svg width={120} height={90} viewBox="-110 -60 220 140"><g transform="scale(0.8)"><path d="M0,0 L-30,60 L30,60 Z" fill="#fffdf8" stroke={INK} strokeWidth={5} strokeLinejoin="round" /><path d="M-110,-6 L110,-6" stroke={TEAL} strokeWidth={10} strokeLinecap="round" /><circle cx={-90} cy={-30} r={20} fill="#bcd6ee" stroke={FWD} strokeWidth={5} /><circle cx={90} cy={-30} r={20} fill="#f6dfae" stroke={AMBER} strokeWidth={5} /></g></svg>
+					<svg width={150} height={110} viewBox="-110 -75 220 160" style={{overflow: 'visible'}}><PaintedSeesaw x={0} y={0} s={0.95} /></svg>
 					<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: TEAL, lineHeight: 1.05}}>Next: putting a number on where an equilibrium sits</div>
 				</div>
 			</Enter>

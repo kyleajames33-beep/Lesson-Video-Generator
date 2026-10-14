@@ -3,8 +3,9 @@ import {interpolate, useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Arrow, Bracket, Cross, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, GREYTAG, Hand, Heading, INK, INK_SOFT, Label, O2, Overlay, PArt, PL, prog, PURPLE, Rail, RoundPlate, ROSE, S, Say,
-	StackedSupply, TEAL, TEAL_INK, GraphAxes, G, YELLOW, vis,
+	StackedSupply, TEAL, TEAL_INK, GraphAxes, G, YELLOW, vis, SFit,
 } from './shared';
+import * as A from './assets';
 
 // ---------- 7a. The hand-over ----------
 const Pill2: React.FC<{at: number; x: number; y: number; w: number; text: string; color: string; lit?: number; grey?: number}> = ({at, x, y, w, text, color, grey = 0}) => (
@@ -169,7 +170,7 @@ export const SceneExchange: React.FC = () => {
 			<Heading items={[[0, 'Embryo, then fetus'], [c.later, 'How the placenta feeds the fetus']]} size={72} />
 			<Enter at={8} style={{position: 'absolute', left: 96, top: 250, width: 470}}>
 				<div style={{background: '#fffdf8', borderRadius: 22, padding: '18px 22px', boxShadow: '0 18px 40px rgba(60,45,20,0.10)', border: '1.5px solid rgba(60,45,20,0.08)', height: 150, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 20}}>
-					<svg width={110} height={110} viewBox="-10 -24 110 124"><EmbryoDraw x={0} y={0} /></svg>
+					<svg width={110} height={110} viewBox="-10 -24 110 124">{A.HAVE.has(A.EMBRYO) ? <SFit a={PL.embryo} x={-10} y={-24} w={110} h={124} /> : <EmbryoDraw x={0} y={0} />}</svg>
 					<div style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 32, color: INK, lineHeight: 1.18}}><span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 52, color: TEAL_INK}}>embryo</span><br />organs forming</div>
 				</div>
 			</Enter>

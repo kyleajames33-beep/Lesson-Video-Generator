@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {Countdown, HandText} from '../../kit';
 import {cues, speechEnd} from '../../cues';
 import {
-	AMBER, AMBER_INK, Arrow, BarHead, Body, Brain, ChainIcon, CHAIN, Cross, DrawPath, Dots, EggDot, EggMark, OvaryRound, ovFol, Enter, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, Label, LoopIcon, MAGENTA, MAGENTA_INK, MilkGland, NIPPLE, Overlay, PArt, PL, Pill, PIT,
+	AMBER, AMBER_INK, Arrow, BarHead, Body, Brain, ChainIcon, CHAIN, Cross, DrawPath, Dots, EggDot, EggMark, OvaryRound, OVARY_PAINTED, ovFol, Enter, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, Label, LoopIcon, MAGENTA, MAGENTA_INK, MilkGland, NIPPLE, Overlay, PArt, PL, Pill, PIT,
 	prog, PROLACTIN, S, Say, SLATE, SLATE_INK, Strike, Tablet, Tick, Vein, VIOLET, VIOLET_INK, WrongChip, pathOf, TEAL, YELLOW,
 } from './shared';
 
@@ -130,9 +130,9 @@ export const SceneFeedbackOne: React.FC = () => {
 				<Dots pts={Q1} at={14} n={7} period={70} color={SLATE} r={11} end={c.low} />
 				<Dots pts={Q1} at={c.low + 40} n={2} period={110} color={SLATE} r={11} />
 				<Label x={1100} y={650} at={c.fsh} text="less FSH and LH" size={44} color={SLATE_INK} />
-				<g opacity={prog(f, c.low, 14)}><EggMark x={FOL1[0]} y={FOL1[1]} r={13} /></g>
+				<g opacity={OVARY_PAINTED ? 0 : prog(f, c.low, 14)}><EggMark x={FOL1[0]} y={FOL1[1]} r={13} /></g>
 			</Overlay>
-			<div style={{position: 'absolute', inset: 0, opacity: prog(f, 0, 20)}}><OvaryRound x={OV1.x} y={OV1.y} d={OV1.w} /></div>
+			<div style={{position: 'absolute', inset: 0, opacity: prog(f, 0, 20)}}><OvaryRound x={OV1.x} y={OV1.y} d={OV1.w} mix={1} /></div>
 			<GreyTag at={c.noegg} x={OV1.x - 10} y={760} text="egg stays in the ovary" size={34} />
 			<Hand at={c.whatever} x={640} y={880} w={1200} size={52} color={AMBER_INK}>the pituitary senses progesterone, whatever its source</Hand>
 			<WrongChip at={c.if1} x={640} y={735} text="she isn't pregnant, so she ovulates" size={40} />

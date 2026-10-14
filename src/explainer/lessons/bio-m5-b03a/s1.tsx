@@ -2,6 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {Callout} from '../../kit';
 import {cues} from '../../cues';
+import * as A from './assets';
 import {
 	AMBER, AMBER_INK, Arrow, Bracket, Cam, Cross, DrawPath, Dots, Egg, EggDot, Enter, Fade, FONT_DISPLAY, FONT_HAND, Hand, Heading, INK, INK_SOFT, Label, Overlay,
 	PArt, PL, Pill, prog, Rail, RoundPlate, S, Scribble, Sperm, SPERM_BLUE, Strip1, TEAL, TEAL_INK, TestStick, Trail, TractPair, tt, vis, along, pathOf, TR, ROSE, PURPLE, EGG_LINE, Say,
@@ -171,7 +172,7 @@ export const SceneZygote: React.FC = () => {
 			<Field />
 			<Overlay>
 				<Egg x={EGGC[0]} y={EGGC[1]} r={230} gap={gap} nuc={1 - merged} />
-				<g opacity={merged}>
+				<g opacity={A.HAVE.has(A.EGG_NUC) ? 0 : merged}>
 					<circle cx={EGGC[0]} cy={EGGC[1]} r={64} fill="#b48ad2" stroke="#6c3f92" strokeWidth={6} />
 					<circle cx={EGGC[0] - 14} cy={EGGC[1] - 8} r={20} fill="#6c3f92" opacity={0.7} />
 					<circle cx={EGGC[0] + 16} cy={EGGC[1] + 10} r={16} fill="#6c3f92" opacity={0.7} />

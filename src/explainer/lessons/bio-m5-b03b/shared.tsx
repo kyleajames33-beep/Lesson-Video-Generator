@@ -1,5 +1,5 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import lesson from '../../../../docs/production/claude-pm/lessons/b3b/measured/lesson.json';
 import {AMBER, AMBER_INK, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, PAPER_DEEP, Plate, prog, rng} from '../../kit';
 import type {CueScene} from '../../cues';
@@ -58,7 +58,18 @@ export const PL: Record<string, PDef> = {
 	sheepSide: {src: A.SHEEP_SIDE, nat: [2200, 1600], box: [549, 560, 1102, 800]},
 	potatoPlant: {src: A.POTATO_PLANT, nat: [1400, 1600], box: [180, 194, 1078, 1245]},
 	potatoSick: {src: A.POTATO_SICK, nat: [1400, 1600], box: [180, 194, 1078, 1245]},
+	// brief 27 painted icons (alpha boxes measured with PIL, alpha > 20)
+	tract: {src: A.COW_TRACT, nat: [2200, 1400], box: [221, 213, 1759, 974]},
+	straw: {src: A.STRAW[0], nat: [2200, 500], box: [224, 204, 1748, 92]},
+	strawFrost: {src: A.STRAW[0 + 1], nat: [2200, 500], box: [224, 204, 1748, 92]},
+	vialEmpty: {src: A.VIAL[0], nat: [1000, 1600], box: [209, 163, 580, 1276]},
+	vialFull: {src: A.VIAL[1], nat: [1000, 1600], box: [209, 163, 580, 1276]},
+	freezer: {src: A.FREEZER, nat: [1600, 1600], box: [414, 192, 774, 1215]},
+	forceps: {src: A.FORCEPS, nat: [800, 1600], box: [308, 192, 184, 1216]},
+	bag: {src: A.COVER_BAG, nat: [1400, 2000], box: [206, 202, 988, 1596]},
+	barn: {src: A.BARN, nat: [1600, 1400], box: [161, 228, 1279, 944]},
 };
+const have = (a: PDef) => A.HAVE.has(a.src);
 export const pH = (a: PDef, w: number) => (w * a.box[3]) / a.box[2];
 /** Map plate-native coordinates to screen for a plate placed at x,y with width w. */
 export const plateMap = (a: PDef, x: number, y: number, w: number) => (cx: number, cy: number): [number, number] => [x + ((cx - a.box[0]) * w) / a.box[2], y + ((cy - a.box[1]) * w) / a.box[2]];
@@ -82,6 +93,13 @@ export const SvgPlate: React.FC<{a: PDef; x: number; y: number; w: number; filte
 			</div>
 		</foreignObject>
 	);
+};
+
+/** SVG <image> version of SvgPlate (safe under mirrored or stretched transforms): alpha box top-left at x,y, width w. */
+export const ImgPlate: React.FC<{a: PDef; x: number; y: number; w: number; o?: number}> = ({a, x, y, w, o = 1}) => {
+	if (!A.HAVE.has(a.src)) return null;
+	const k = w / a.box[2];
+	return <image href={staticFile(a.src)} x={x - a.box[0] * k} y={y - a.box[1] * k} width={a.nat[0] * k} height={a.nat[1] * k} opacity={o} />;
 };
 
 // ---------- tiny icons (svg, centre origin) ----------
@@ -145,7 +163,20 @@ export const BeadDot: React.FC<{cx: number; cy: number; r?: number; color: strin
 );
 
 /** A frozen-semen straw: thin tube with a plug. `frost` 0..1 adds a pale blue wash and dots. */
-export const Straw: React.FC<{x: number; y: number; w?: number; rot?: number; frost?: number; o?: number; fill?: string}> = ({x, y, w = 120, rot = 0, frost = 0, o = 1, fill = '#f6e7a6'}) => (
+export const Straw: React.FC<{x: number; y: number; w?: number; rot?: number; frost?: number; o?: number; fill?: string}> = ({x, y, w = 120, rot = 0, frost = 0, o = 1, fill = '#f6e7a6'}) => {
+	if (have(PL.straw)) {
+		// painted straw (2200 x 500 plate): plug mirrored to the right as in the coded one, thickened 2x for legibility; the frosted plate fades in over it
+		const k = w / PL.straw.box[2], h = PL.straw.box[3] * k;
+		return (
+			<g transform={`translate(${x},${y}) rotate(${rot})`} opacity={o}>
+				<g transform={`scale(-1,2) translate(${-w / 2},${-h / 2})`}>
+					<ImgPlate a={PL.straw} x={0} y={0} w={w} />
+					{frost > 0 && have(PL.strawFrost) ? <ImgPlate a={PL.strawFrost} x={0} y={0} w={w} o={frost} /> : null}
+				</g>
+			</g>
+		);
+	}
+	return (
 	<g transform={`translate(${x},${y}) rotate(${rot})`} opacity={o}>
 		<rect x={-w / 2} y={-8} width={w} height={16} rx={8} fill={fill} stroke={INK_SOFT} strokeWidth={3} />
 		<rect x={w / 2 - 22} y={-8} width={22} height={16} rx={8} fill="#c9b3a3" stroke={INK_SOFT} strokeWidth={3} />
@@ -156,7 +187,8 @@ export const Straw: React.FC<{x: number; y: number; w?: number; rot?: number; fr
 			</g>
 		) : null}
 	</g>
-);
+	);
+};
 
 export const CoinIcon: React.FC<{x: number; y: number; r?: number; o?: number}> = ({x, y, r = 30, o = 1}) => (
 	<g opacity={o}>
@@ -170,7 +202,10 @@ export const HeartIcon: React.FC<{x: number; y: number; s?: number; o?: number}>
 	<path transform={`translate(${x},${y}) scale(${s})`} opacity={o} d="M0,22 C-34,-2 -26,-30 -8,-26 C-2,-24 0,-18 0,-14 C0,-18 2,-24 8,-26 C26,-30 34,-2 0,22Z" fill={WELF} stroke={WELF_INK} strokeWidth={4} strokeLinejoin="round" />
 );
 
-export const BarnIcon: React.FC<{x: number; y: number; s?: number; o?: number; color?: string}> = ({x, y, s = 1, o = 1, color = '#d9c9a8'}) => (
+export const BarnIcon: React.FC<{x: number; y: number; s?: number; o?: number; color?: string}> = ({x, y, s = 1, o = 1, color = '#d9c9a8'}) => have(PL.barn) ? (
+	// painted barn: the old icon was 68 wide and 58 tall about its centre, so the plate is fitted to 84 wide
+	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}><SvgPlate a={PL.barn} x={-42} y={-pH(PL.barn, 84) / 2 - 2} w={84} /></g>
+) : (
 	<g transform={`translate(${x},${y}) scale(${s})`} opacity={o}>
 		<path d="M-34,24 L-34,-8 L0,-34 L34,-8 L34,24Z" fill={color} stroke={INK_SOFT} strokeWidth={4} strokeLinejoin="round" />
 		<rect x={-10} y={2} width={20} height={22} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={3} />
@@ -386,7 +421,10 @@ export const NoteCard: React.FC<{x: number; y: number; w: number; at: number; ou
 );
 
 /** Coded forceps (two arms meeting at a pivot), tip at x,y, pointing down-left. `open` 0..1. */
-export const Forceps: React.FC<{x: number; y: number; s?: number; open?: number; rot?: number; o?: number}> = ({x, y, s = 1, open = 0.5, rot = 0, o = 1}) => (
+export const Forceps: React.FC<{x: number; y: number; s?: number; open?: number; rot?: number; o?: number}> = ({x, y, s = 1, open = 0.5, rot = 0, o = 1}) => have(PL.forceps) ? (
+	// painted forceps, tips down, tip at (x, y); the plate is slightly open and does not open further
+	<g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`} opacity={o}><SvgPlate a={PL.forceps} x={-18} y={-pH(PL.forceps, 36) + 4} w={36} /></g>
+) : (
 	<g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`} opacity={o}>
 		<path d={`M${-4 - open * 10},0 L-4,-110 L-26,-230`} fill="none" stroke="#7d7a76" strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" />
 		<path d={`M${4 + open * 10},0 L4,-110 L26,-230`} fill="none" stroke="#9a9792" strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" />
@@ -395,7 +433,12 @@ export const Forceps: React.FC<{x: number; y: number; s?: number; open?: number;
 );
 
 /** Plain bag shape (translucent) over a region, for the cover step. `p` 0..1 draws it down over the floret. */
-export const CoverBag: React.FC<{x: number; y: number; w: number; h: number; p: number}> = ({x, y, w, h, p}) => (
+export const CoverBag: React.FC<{x: number; y: number; w: number; h: number; p: number}> = ({x, y, w, h, p}) => have(PL.bag) ? (
+	// painted cover bag, fitted by height into the old slot and lowered the same way
+	<g transform={`translate(0,${-(1 - p) * 120})`} opacity={Math.min(1, p * 2) * 0.8}>
+		<SvgPlate a={PL.bag} x={x + (w - (h * PL.bag.box[2]) / PL.bag.box[3]) / 2} y={y - 20} w={(h * PL.bag.box[2]) / PL.bag.box[3]} />
+	</g>
+) : (
 	<g transform={`translate(0,${-(1 - p) * 120})`} opacity={Math.min(1, p * 2)}>
 		<path d={`M${x},${y + 40} C${x},${y - 10} ${x + w * 0.2},${y - 20} ${x + w / 2},${y - 20} C${x + w * 0.8},${y - 20} ${x + w},${y - 10} ${x + w},${y + 40} L${x + w * 0.92},${y + h} L${x + w * 0.08},${y + h}Z`} fill="#eef5f7" fillOpacity={0.55} stroke="#9bb7c2" strokeWidth={6} strokeLinejoin="round" />
 		<path d={`M${x + w * 0.1},${y + h - 10} L${x + w * 0.9},${y + h - 10}`} stroke="#c4a15a" strokeWidth={10} strokeLinecap="round" />
@@ -436,14 +479,27 @@ export const SlideIn: React.FC<{at: number; dx?: number; dy?: number; out?: numb
 	return <div style={{position: 'absolute', inset: 0, opacity: p * o, transform: `translate(${(1 - p) * dx}px,${(1 - p) * dy}px)`, pointerEvents: 'none'}}>{children}</div>;
 };
 
-// ---------- the cow's reproductive tract (coded side cut-away, local space 560 x 340) ----------
-export const CT = {
+// ---------- the cow's reproductive tract (local space 560 x 340) ----------
+// Painted plate (2200 x 1400, mirrored so the opening is on the left and the ovaries on the right, as the coded cut-away was):
+// local x = (1980 - plate x) * K, local y = (plate y - 213) * K + 10, with K = 560 / 1759. Landmarks measured on a plate grid.
+const TK = 560 / 1759;
+const TP = (px: number, py: number): [number, number] => [Math.round((1980 - px) * TK), Math.round((py - 213) * TK + 10)];
+export const TRACT_PAINTED = A.HAVE.has(A.COW_TRACT);
+const CODED_CT = {
 	entrance: [36, 262] as [number, number], cervix: [215, 236] as [number, number], body: [300, 214] as [number, number], uterus: [372, 188] as [number, number],
 	ovaryA: [452, 62] as [number, number], ovaryB: [508, 196] as [number, number], funnelA: [428, 40] as [number, number],
 	hornA: 'M318,208 C372,186 416,138 440,90', hornB: 'M318,214 C372,236 436,236 482,206',
 	vagina: 'M36,262 C100,262 160,244 214,236', uterusBody: 'M240,234 L318,212',
 	tube: [[60, 120], [64, 190], [70, 252], [150, 252], [214, 238], [262, 226], [320, 210], [372, 188]] as [number, number][],
 };
+const PAINT_CT = {
+	entrance: TP(1940, 728), cervix: TP(1415, 728), body: TP(1180, 728), uterus: TP(1050, 728),
+	ovaryA: TP(300, 464), ovaryB: TP(336, 950), funnelA: TP(400, 414),
+	hornA: '', hornB: '', vagina: '', uterusBody: '',
+	// the applicator enters from the left edge and runs along the middle of the vagina and cervix into the uterus
+	tube: [[-4, 174], [40, 174], [110, 174], [180, 174], [250, 174], [296, 174]] as [number, number][],
+};
+export const CT = TRACT_PAINTED ? PAINT_CT : CODED_CT;
 export const CowTract: React.FC<{x: number; y: number; s?: number; o?: number; at?: number; labels?: {text: string; at: number; x: number; y: number}[]}> = ({x, y, s = 1, o = 1, at = 0, labels = []}) => {
 	const f = useCurrentFrame();
 	const p = prog(f, at, 24);
@@ -451,11 +507,16 @@ export const CowTract: React.FC<{x: number; y: number; s?: number; o?: number; a
 	return (
 		<g transform={`translate(${x},${y}) scale(${s})`} opacity={o * Math.min(1, p * 3)}>
 			<rect x={-10} y={-10} width={580} height={360} rx={26} fill="#fffdf8" fillOpacity={0.7} stroke={PAPER_DEEP} strokeWidth={4} />
-			{[CT.vagina, CT.uterusBody, CT.hornA, CT.hornB].map((d, i) => <path key={i} d={d} fill="none" stroke={line} strokeWidth={(i < 2 ? 40 : 26) + 6} strokeLinecap="round" />)}
-			{[CT.vagina, CT.uterusBody, CT.hornA, CT.hornB].map((d, i) => <path key={'i' + i} d={d} fill="none" stroke={wall} strokeWidth={i < 2 ? 40 : 26} strokeLinecap="round" />)}
-			<ellipse cx={CT.cervix[0] + 8} cy={CT.cervix[1]} rx={11} ry={28} fill="#e0877b" stroke={line} strokeWidth={4} />
-			{[CT.ovaryA, CT.ovaryB].map((c, i) => <ellipse key={i} cx={c[0]} cy={c[1]} rx={26} ry={20} fill="#f6d9c8" stroke="#c9906f" strokeWidth={4} />)}
-			<path d="M410,52 C418,30 438,26 446,38" fill="none" stroke={line} strokeWidth={8} strokeLinecap="round" />
+			{TRACT_PAINTED ? (
+				<g transform={`translate(${1980 * TK},${10 - 213 * TK}) scale(${-TK},${TK})`}>
+					<image href={staticFile(A.COW_TRACT)} x={0} y={0} width={2200} height={1400} />
+				</g>
+			) : null}
+			{TRACT_PAINTED ? null : [CT.vagina, CT.uterusBody, CT.hornA, CT.hornB].map((d, i) => <path key={i} d={d} fill="none" stroke={line} strokeWidth={(i < 2 ? 40 : 26) + 6} strokeLinecap="round" />)}
+			{TRACT_PAINTED ? null : [CT.vagina, CT.uterusBody, CT.hornA, CT.hornB].map((d, i) => <path key={'i' + i} d={d} fill="none" stroke={wall} strokeWidth={i < 2 ? 40 : 26} strokeLinecap="round" />)}
+			{TRACT_PAINTED ? null : <ellipse cx={CT.cervix[0] + 8} cy={CT.cervix[1]} rx={11} ry={28} fill="#e0877b" stroke={line} strokeWidth={4} />}
+			{TRACT_PAINTED ? null : [CT.ovaryA, CT.ovaryB].map((c, i) => <ellipse key={i} cx={c[0]} cy={c[1]} rx={26} ry={20} fill="#f6d9c8" stroke="#c9906f" strokeWidth={4} />)}
+			{TRACT_PAINTED ? null : <path d="M410,52 C418,30 438,26 446,38" fill="none" stroke={line} strokeWidth={8} strokeLinecap="round" />}
 			{labels.map((l, i) => <text key={i} x={l.x} y={l.y} opacity={prog(f, l.at, 14)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK}>{l.text}</text>)}
 		</g>
 	);
