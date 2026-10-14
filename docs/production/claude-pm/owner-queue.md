@@ -4,7 +4,7 @@
 
 ## Published 14 Oct (brief 28)
 
-- G01 https://youtu.be/BdF_sRrt5Yw, C4a https://youtu.be/yk5KVdipGRE, B4 https://youtu.be/P9jyiLiGhZI. B2b uploads after its render (follow-up prompt from Claude).
+- G01 https://youtu.be/BdF_sRrt5Yw, C4a https://youtu.be/yk5KVdipGRE, B4 https://youtu.be/P9jyiLiGhZI. B2b RENDERED 14 Oct (9:17): send brief 28b to upload it.
 - Brief 31 plates delivered (C7, C8, B5a, B5b): Claude wires them in after the B2b render.
 
 ## For you when you are back (14 Oct)
