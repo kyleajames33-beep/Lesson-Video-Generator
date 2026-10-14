@@ -69,7 +69,7 @@ export const SceneQFraction: React.FC = () => {
 	const KY = 430;
 	const kNum: Term[][] = [[{t: 'HI', p: '2', at: qw(0), pAt: qw(2) , color: '#4a4f57'}]];
 	const kDen: Term[][] = [[{t: 'H_2', at: qw(4), color: '#6b6358'}, {t: 'I_2', at: qw(6), color: '#5f2f94'}]];
-	const qNum: Term[][] = [[{t: 'HI', p: '2', at: KQ.rightnow + 14, pAt: KQ.powers, pFrom: [hiPos[4].cx, EQ8.y - 14], color: '#4a4f57'}]];
+	const qNum: Term[][] = [[{t: 'HI', p: '2', at: KQ.rightnow + 14, color: '#4a4f57'}]];
 	const qDen: Term[][] = [[{t: 'H_2', at: KQ.rightnow + 22, color: '#6b6358'}, {t: 'I_2', at: KQ.rightnow + 30, color: '#5f2f94'}]];
 	const eqOn = prog(f, KQ.eq, 12);
 	return (

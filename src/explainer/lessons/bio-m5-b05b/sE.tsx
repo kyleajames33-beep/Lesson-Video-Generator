@@ -85,9 +85,9 @@ export const SceneCombinations: React.FC = () => {
 			<Hand at={c.mult + 8} x={96} y={578} size={40} w={260} color={AMBER_INK}>2 ways</Hand>
 			<Hand at={c.npairs + 8} x={96} y={822} size={40} w={300} color={AMBER_INK}>and a third pair</Hand>
 			{slots4.map((sl, i) => (
-				<Hand key={i} at={slotsAt(i) + 8} out={c.npairs + 20} x={SX(sl.col) - 100} y={SY(sl.row) + 74} size={26} w={200} color={INK_SOFT}><span style={{display: 'block', textAlign: 'center', fontFamily: FONT_DISPLAY, fontWeight: 600}}>{`line-up ${sl.col + 1}, ${sl.row ? 'right' : 'left'} end`}</span></Hand>
+				<Hand key={i} at={slotsAt(i) + 8} out={c.npairs - 4} x={SX(sl.col) - 100} y={SY(sl.row) + 74} size={26} w={200} color={INK_SOFT}><span style={{display: 'block', textAlign: 'center', fontFamily: FONT_DISPLAY, fontWeight: 600}}>{`gamete ${i + 1}`}</span></Hand>
 			))}
-			<Hand at={c.is4} out={c.npairs + 16} x={1160} y={300} size={150} color={AMBER_INK}>4</Hand>
+			<Hand at={c.is4} out={c.npairs - 4} x={1160} y={300} size={150} color={AMBER_INK}>4</Hand>
 			<Hand at={c.pow - 20} x={1330} y={200} size={130} color={AMBER_INK}>8</Hand>
 			<Hand at={c.tt + 30} out={c.npairs + 10} x={1330} y={500} size={36} w={520} color={INK_SOFT}>{'line-up 1: A B D, a b d'}</Hand>
 			<Hand at={c.tt + 44} out={c.npairs + 10} x={1330} y={548} size={36} w={520} color={INK_SOFT}>{'line-up 2: A B d, a b D'}</Hand>
@@ -171,7 +171,6 @@ export const SceneFertilisation: React.FC = () => {
 			<Hand at={c.halves} x={1230} y={170} size={46} w={640} color={AMBER_INK}>meiosis halves</Hand>
 			<Hand at={c.restores} x={1230} y={226} size={46} w={640} color={AMBER_INK}>fertilisation restores</Hand>
 			<Hand at={c.stays + 14} x={1230} y={760} size={40} w={640} color={AMBER_INK}>the number stays the same in every generation</Hand>
-			<GreyTag at={c.gen + 20} x={1230} y={880} text="which sperm meets which egg is also chance" size={28} />
 			<TrackStrip at={0} />
 		</>
 	);

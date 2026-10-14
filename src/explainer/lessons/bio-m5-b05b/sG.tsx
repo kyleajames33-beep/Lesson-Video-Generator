@@ -83,10 +83,11 @@ export const SceneMemory: React.FC = () => {
 // ---------- 19. Key notes ----------
 export const NOTES = [
 	'Meiosis: one diploid cell (two sets) makes four haploid cells (one set each). DNA is copied once, then the cell divides twice.',
-	'Prophase I: homologous chromosomes pair up, and crossing over swaps pieces between non-sister chromatids. Metaphase I: pairs line up either way round, independently (independent assortment). Both make new combinations of alleles, not new alleles.',
+	'Prophase I: homologous pairs pair up, and crossing over swaps pieces between non-sister chromatids.',
+	'Metaphase I: pairs line up either way round (independent assortment). Both give new combinations of alleles, not new alleles.',
 	'Meiosis I separates homologous pairs, so the number halves. Meiosis II separates sister chromatids.',
 	'Human: 46, then 23 in each of two cells, then 23 in each of four. Fertilisation: 23 + 23 = 46.',
-	'n pairs give 2^n combinations from assortment alone (crossing over ignored).',
+	'n pairs give 2 to the power n combinations from assortment alone (crossing over ignored).',
 	'Mitosis: one division, two identical cells. Meiosis: two divisions, four cells, half the number, usually different.',
 ];
 export const SceneNotes: React.FC = () => (

@@ -96,15 +96,15 @@ export const SceneFeedback: React.FC = () => {
 				<Sx x={W + 290} y={520} text="0.050" size={44} color={N2C} at={KF.v050} />
 				<Sx x={W} y={600} text="Q = 0.040 ÷ 0.050 =" size={46} at={KF.soq} />
 				<Sx x={W} y={696} text="0.80" size={100} color={TEAL} hand at={KF.v080} />
-				<Ring cx={W + 110} cy={668} rx={120} ry={66} at={KF.v080 + 12} color={AMBER} seed={6} width={6} />
+				<Ring cx={W + 110} cy={684} rx={120} ry={58} at={KF.v080 + 12} color={AMBER} seed={6} width={6} />
 				<Tick x={1720} y={640} at={KF.v080 + 26} s={50} />
 				{/* the number line returns with K and Q */}
 				<LogLine ln={LN_NH3} at={KF.soq + 10} />
 				<QMarker ln={LN_NH3} at={KF.v080 + 6} value={0.8} label="Q = 0.80" side="right" labelAt={KF.v080 + 12} />
-				<KMarker ln={LN_NH3} k={0.5} at={KF.k50} label="K = 0.50" />
-				<QKGap ln={LN_NH3} at={KF.k50 + 14} qx={lx(0.8, LN_NH3)} kx={lx(0.5, LN_NH3)} />
-				<Fade at={KF.above}>
-					<Sx x={1590} y={756} text="Q > K" size={64} color={AMBER_INK} hand at={KF.above} />
+				<KMarker ln={LN_NH3} k={0.5} at={KF.above - 8} label="K = 0.50" />
+				<QKGap ln={LN_NH3} at={KF.above + 4} qx={lx(0.8, LN_NH3)} kx={lx(0.5, LN_NH3)} />
+				<Fade at={KF.above + 16}>
+					<Sx x={1590} y={756} text="Q > K" size={64} color={AMBER_INK} hand at={KF.above + 16} />
 				</Fade>
 				<Fade at={KF.too}>
 					<Sx x={1480} y={904} text="too much ammonia" size={42} color={AMBER_INK} hand at={KF.too} />
@@ -194,8 +194,8 @@ export const SceneDecision: React.FC = () => {
 const rich = (text: string) => toks(text).map((t, i) => t.k === 1 ? <sub key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{t.s}</sub> : t.k === 2 ? <sup key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{t.s}</sup> : <span key={i}>{t.s}</span>);
 export const NOTES = [
 	'The reaction quotient, Q, is the K expression worked out with the concentrations at any moment. K uses settled values only. At equilibrium, Q equals K.',
-	'Compare Q with K at the same temperature. Q below K: the forward reaction is faster and the mixture runs right. Q above K: the reverse reaction is faster and it runs left. Q equals K: equal rates, no net change.',
-	'In a simple rate model, forward rate divided by reverse rate equals K divided by Q. Equal rates are not equal concentrations.',
+	'Compare Q with K at the same temperature. Q below K: the forward reaction is faster, so the mixture runs right. Q above K: the reverse reaction is faster, so it runs left. Q equals K: no net change.',
+	'In a simple rate model, forward rate ÷ reverse rate = K ÷ Q. Equal rates are not equal concentrations.',
 	'Adding or removing a substance changes Q, not K. Only temperature changes K. Q gives direction only.',
 	'Method: expression, concentrations now, calculate Q, compare with K, state the direction.',
 ];

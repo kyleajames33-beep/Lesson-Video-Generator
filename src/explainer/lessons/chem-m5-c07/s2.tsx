@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Chip, DotP, Fade, Overlay, Pellets, Ring, Sx, Tag} from './parts';
+import {Arrow, Chip, DotP, Fade, GasKey, Overlay, Pellets, Ring, Sx, Tag} from './parts';
 import {Bracket, Curve, GraphAxes, Head, VLine, mkG} from '../chem-m5-c04b/parts';
 import {Heading, H2C, HEAT, IRON_DARK, N2C, NH3C, RATE, YIELD, CROSS, kf, sc} from './common';
 
@@ -52,6 +52,7 @@ export const SceneTimeInReactor: React.FC = () => {
 					<Pellets x={566} y={252} w={308} h={96} r={10} />
 				</Fade>
 				<Fade at={K3.flows}>{dots}</Fade>
+				<GasKey x={1330} y={150} at={K3.flows} />
 				<Fade at={K3.flows}>
 					<Sx x={720} y={226} text="iron catalyst" size={40} color={IRON_DARK} anchor="middle" hand at={K3.iron} />
 					<Sx x={96} y={392} text="gas in" size={34} color={INK_SOFT} hand at={K3.flows} />
@@ -191,22 +192,25 @@ export const SceneCatalyst: React.FC = () => {
 				</Fade>
 				{/* the C4b ridge inset */}
 				<Fade at={K5.path}>
-					<rect x={1456} y={232} width={380} height={278} rx={20} fill="#fffdf8" stroke="rgba(60,45,20,0.18)" strokeWidth={3} />
+					<rect x={1456} y={232} width={380} height={330} rx={20} fill="#fffdf8" stroke="rgba(60,45,20,0.18)" strokeWidth={3} />
+					<path d="M1470,440 L1470,262 M1470,440 L1820,440" fill="none" stroke={INK_SOFT} strokeWidth={3} strokeLinecap="round" />
+					<Sx x={1480} y={258} text="energy" size={24} color={INK_SOFT} at={K5.path + 6} />
+					<Sx x={1820} y={470} text="progress of reaction" size={24} color={INK_SOFT} anchor="end" at={K5.path + 6} />
 					<path d={ridge(272)} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeDasharray="12 9" />
 					<path d={ridge(332)} fill="none" stroke={RATE} strokeWidth={7} strokeLinecap="round" />
 					<Sx x={1646} y={262} text="no iron" size={28} color={INK_SOFT} anchor="middle" at={K5.path + 6} />
 					<Sx x={1646} y={366} text="with iron" size={30} color={RATE} anchor="middle" hand at={K5.path + 10} />
 				</Fade>
 				<Fade at={K5.both}>
-					<path d="M1500,466 L1790,466 M1516,452 L1500,466 L1516,480 M1774,452 L1790,466 L1774,480" fill="none" stroke={RATE} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
-					<Sx x={1645} y={500} text="lower pass, both directions" size={28} color={RATE} anchor="middle" at={K5.both + 6} />
+					<path d="M1500,500 L1790,500 M1516,486 L1500,500 L1516,514 M1774,486 L1790,500 L1774,514" fill="none" stroke={RATE} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+					<Sx x={1646} y={544} text="lower pathway, both directions" size={24} color={RATE} anchor="middle" at={K5.both + 6} />
 				</Fade>
 				<Fade at={K5.fast}>
 					<Sx x={PG.px(TL) + 24} y={PG.py(MIDF(TL)) - 34} text="fast enough" size={38} color={RATE} hand at={K5.fast} />
 				</Fade>
 				{/* same ceiling */}
-				<Ring cx={CEIL_X + 130} cy={PG.py(25) - 4} rx={190} ry={46} at={K5.notmove} color={AMBER_INK} seed={5} />
-				<Bracket x={CEIL_X + 4} y1={PG.py(25) + 52} y2={PG.py(25) + 52} color={YIELD} at={K5.same} label="same ceiling" sub="sooner, not different" size={38} lx={CEIL_X + 26} ly={PG.py(25) + 64} />
+				<Ring cx={CEIL_X + 150} cy={PG.py(25)} rx={250} ry={52} at={K5.notmove} color={AMBER_INK} seed={5} />
+				<Bracket x={CEIL_X + 4} y1={PG.py(25) + 82} y2={PG.py(25) + 82} color={YIELD} at={K5.same} out={K5.hot - 10} label="same ceiling" sub="sooner, not different" size={38} lx={CEIL_X + 26} ly={PG.py(25) + 96} />
 				{/* without iron: a hotter reactor with a lower ceiling */}
 				<Curve g={PG} fn={HOTF} upTo={uHot} color={HEAT} width={6} dash="12 10" />
 				<Fade at={K5.hot + 20}>

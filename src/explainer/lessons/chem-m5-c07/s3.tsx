@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Chip, Cross, DotP, Fade, Flame, Overlay, Pellets, Ring, Sx, Tag} from './parts';
+import {Arrow, Chip, CrowdBox, Cross, DotP, Fade, Flame, GasKey, Overlay, Pellets, Ring, Sx, Tag} from './parts';
 import {Heading, H2C, HEAT, IRON_DARK, N2C, NH3C, RATE, YIELD, COST, CROSS, kf, sc} from './common';
 
 const clamp = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
@@ -19,7 +19,7 @@ export const ScenePressure: React.FC = () => {
 	const wall = 30 + 60 * prog(f, K1.steel, 60);
 	const pump = 0.5 + 0.5 * prog(f, K1.pumps, 40);
 	const flame = (0.5 + 0.5 * prog(f, K1.energy, 40)) * (1 + 0.06 * Math.sin(f * 0.4));
-	const rt = 28 + 70 * prog(f, K1.both + 10, 60);
+	const rt = 28 + 70 * prog(f, K1.rise - 20, 60);
 	return (
 		<>
 			<Heading text="Pressure helps both. What stops it?" at={4} size={56} />
@@ -30,6 +30,10 @@ export const ScenePressure: React.FC = () => {
 					<rect x={110} y={196} width={46} height={rt} rx={5} fill={RATE} stroke={INK} strokeWidth={3} transform={`translate(0,${100 - rt})`} />
 					<rect x={168} y={196} width={46} height={rt * 0.9} rx={5} fill="#d99a2b" stroke={INK} strokeWidth={3} transform={`translate(0,${100 - rt * 0.9})`} />
 					<Sx x={236} y={262} text="both rates rise" size={38} color={RATE} hand at={K1.rise} />
+				</Fade>
+				<CrowdBox x={350} y={385} w={480} h={230} at={K1.crowd} out={K1.why + 20} squeezeAt={K1.crowd + 14} squeezeDur={60} labelAt={K1.crowd + 20} />
+				<Fade at={K1.crowd + 90} out={K1.why + 20}>
+					<Sx x={590} y={706} text="more collisions each second" size={32} color={RATE} anchor="middle" hand at={K1.crowd + 90} />
 				</Fade>
 				<Chip x={620} y={214} w={250} text="4 gas particles" size={32} at={K1.shift} color={N2C} />
 				<Chip x={980} y={214} w={250} text="2 gas particles" size={32} at={K1.two} color={NH3C} />
@@ -80,19 +84,21 @@ export const ScenePressure: React.FC = () => {
 				</Fade>
 				{/* a leak */}
 				<Fade at={K1.leak}>
+					<g transform="translate(-20,0)">
 					<rect x={1450} y={470} width={220} height={44} rx={10} fill="#dfe2e6" stroke={IRON_DARK} strokeWidth={5} />
 					<path d="M1560,470 l-8,-16 l14,8 l-4,-22 l14,18 l4,-14 l6,26" fill="none" stroke={COST} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
 					<path d="M1560,515 q-18,22 -34,44 M1566,515 q6,26 4,52 M1572,515 q22,18 40,32" fill="none" stroke={HEAT} strokeWidth={5} strokeLinecap="round" opacity={0.8} />
 					<path d="M1620,420 L1644,462 L1596,462 Z" fill="#f5c542" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
 					<text x={1620} y={456} textAnchor="middle" fill={INK} style={{fontWeight: 800, fontSize: 28}}>!</text>
 					<Sx x={1560} y={612} text="a leak is dangerous" size={30} color={COST} anchor="middle" hand at={K1.leak + 6} />
+					</g>
 				</Fade>
 				{/* 1000 atm */}
 				<Fade at={K1.thou}>
-					<path d={`M1700,590 L1700,${AX}`} stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 8" />
-					<Sx x={1700} y={AX + 100} text="1000 atm" size={40} color={INK} anchor="middle" hand at={K1.thou} />
+					<path d={`M1760,590 L1760,${AX}`} stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 8" />
+					<Sx x={1760} y={AX + 100} text="1000 atm" size={40} color={INK} anchor="middle" hand at={K1.thou} />
 				</Fade>
-				<Cross x={1700} y={566} at={K1.thou + 20} s={24} />
+				<Cross x={1760} y={566} at={K1.thou + 20} s={24} />
 				<Fade at={K1.stops - 10}>
 					<Sx x={1830} y={AX + 150} text="extra ammonia no longer pays" size={30} color={INK_SOFT} anchor="end" hand at={K1.stops - 10} />
 					<Sx x={1830} y={AX + 186} text="for the extra cost" size={30} color={INK_SOFT} anchor="end" hand at={K1.stops - 4} />
@@ -169,8 +175,8 @@ export const SceneRecycle: React.FC = () => {
 	const level = Math.min(0.5, drops * 0.04);
 	const pipeY = 500;
 	const feed = prog(f, 0, 14);
-	const made = clamp(drops / endDrops);
 	const pct = 20 + 76 * prog(f, K2.many, 150);
+	const made = Math.max(0.4 * clamp(drops / endDrops), f >= K2.many ? pct / 100 : 0);
 	const fwdFlash = Math.max(0, Math.sin(clamp((f - K2.fwd) / 50) * Math.PI));
 	return (
 		<>
@@ -220,20 +226,21 @@ export const SceneRecycle: React.FC = () => {
 				<Fade at={K2.cond}>
 					<Sx x={995} y={640} text="condensing" size={52} color="#4f8fc0" anchor="middle" hand at={K2.cond} />
 				</Fade>
+				<GasKey x={1330} y={150} at={4} />
 				{/* the moving gas */}
 				<g opacity={feed}>{dots.map((d, i) => <DotP key={i} x={d.x} y={d.y} r={9} fill={d.fill} o={d.o} />)}</g>
 				{/* a sample of the leaving gas: about a fifth is ammonia */}
 				<Fade at={K2.fifth} out={K2.cooled}>
-					{[0, 1, 2, 3, 4].map(i => <DotP key={i} x={790 + i * 34} y={436} r={11} fill={i === 3 ? NH3C : i % 2 ? N2C : H2C} />)}
-					<Sx x={876} y={384} text="about a fifth is ammonia" size={32} color={NH3C} anchor="middle" hand at={K2.fifth} />
+					{[0, 1, 2, 3, 4].map(i => <DotP key={i} x={910 + i * 34} y={436} r={11} fill={i === 3 ? NH3C : i % 2 ? N2C : H2C} />)}
+					<Sx x={996} y={384} text="about a fifth is ammonia" size={32} color={NH3C} anchor="middle" hand at={K2.fifth} />
 				</Fade>
-				<Ring cx={876} cy={436} rx={110} ry={34} at={K2.fifth + 10} out={K2.cooled} color={AMBER_INK} seed={3} />
+				<Ring cx={996} cy={436} rx={110} ry={34} at={K2.fifth + 10} out={K2.cooled} color={AMBER_INK} seed={3} />
 				<Fade at={K2.under} out={K2.cooled}>
-					<Sx x={876} y={338} text="a little under the settled value" size={30} color={INK_SOFT} anchor="middle" hand at={K2.under} />
+					<Sx x={996} y={338} text="a little under the settled value" size={30} color={INK_SOFT} anchor="middle" hand at={K2.under} />
 				</Fade>
 				<Ring cx={1380} cy={420} rx={120} ry={56} at={K2.stay} out={K2.stay + 90} color={AMBER_INK} seed={4} />
 				<Fade at={K2.stay}>
-					<Sx x={1500} y={430} text="stay gases" size={36} color={AMBER_INK} anchor="start" hand at={K2.stay} />
+					<Sx x={1500} y={490} text="stay gases" size={36} color={AMBER_INK} anchor="start" hand at={K2.stay} />
 				</Fade>
 				{/* shift forward again at the reactor */}
 				<g opacity={fwdFlash}>

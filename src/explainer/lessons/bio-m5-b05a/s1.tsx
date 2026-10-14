@@ -24,7 +24,7 @@ export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('hook'), {
 		fill: 'new skin has filled', same: 'the same instructions', beside: 'the cells beside it', n46: '46', dna: 'the DNA packages',
-		half: 'only half the job', copies: 'the copies still', shared: 'shared out', how: 'How does',
+		half: 'only half the job', copies: 'the copies still', shared: 'shared out', how: 'How does', keepEvery: 'keep every', parentS: "parent's",
 	});
 	const PX = 200, PY = 215, PW = 1520;
 	const pa = plateAt(PLATES.skin, PX, PY, PW);
@@ -39,8 +39,8 @@ export const SceneHook: React.FC = () => {
 	const gap = [[858, 392], [900, 400], [985, 418], [1060, 408], [1120, 392], [1128, 440], [1080, 472], [985, 482], [900, 472], [860, 440]].map(([a, b]) => pa(a, b));
 	const gapD = 'M' + gap.map(p => p.join(',')).join(' L') + ' Z';
 	const S1 = pa(950, 428), S2 = pa(1010, 428);
-	const camO = 1 - prog(f, c.half + 40, 24);
-	const insideO = prog(f, c.half + 44, 26);
+	const camO = 1 - prog(f, c.half + 36, 30);
+	const insideO = prog(f, c.half + 40, 30);
 	const shapes = useMemo(() => {
 		const r = rng(11);
 		return Array.from({length: 8}, () => {
@@ -62,7 +62,7 @@ export const SceneHook: React.FC = () => {
 	return (
 		<>
 			<div style={{opacity: camO * prog(f, 0, 20), position: 'absolute', inset: 0}}>
-				<Cam keys={[[0, 1, 960, 540], [c.half - 8, 1, 960, 540], [c.half + 56, 5.5, S1[0], S1[1]]]}>
+				<Cam keys={[[0, 1, 960, 540], [c.half - 8, 1, 960, 540], [c.half + 56, 2.4, S1[0], S1[1]]]}>
 					<PlateArt a={PLATES.skin} x={PX} y={PY} w={PW} />
 					<Overlay>
 						<path d={gapD} fill="#f2c9a8" opacity={heal * 0.96} />
@@ -91,14 +91,16 @@ export const SceneHook: React.FC = () => {
 						</g>
 						<Scribble cx={S1[0]} cy={S1[1]} rx={46} ry={42} at={c.same} color={AMBER_INK} seed={5} />
 						<Scribble cx={S2[0]} cy={S2[1]} rx={46} ry={42} at={c.beside} color={AMBER_INK} seed={9} />
-						<DrawPath d={`M${S1[0]},${S1[1] - 44} L${S1[0] - 60},${S1[1] - 120}`} at={c.n46} dur={10} color={AMBER_INK} width={4} />
-						<DrawPath d={`M${S2[0]},${S2[1] - 44} L${S2[0] + 60},${S2[1] - 120}`} at={c.n46 + 20} dur={10} color={AMBER_INK} width={4} />
+						<g opacity={1 - prog(f, c.half - 24, 10)}>
+							<DrawPath d={`M${S1[0]},${S1[1] - 44} L${S1[0] - 60},${S1[1] - 120}`} at={c.n46} dur={10} color={AMBER_INK} width={4} />
+							<DrawPath d={`M${S2[0]},${S2[1] - 44} L${S2[0] + 60},${S2[1] - 120}`} at={c.n46 + 20} dur={10} color={AMBER_INK} width={4} />
+						</g>
 					</Overlay>
-					<Hand at={c.n46} x={S1[0] - 330} y={S1[1] - 190} size={54}>46 chromosomes</Hand>
-					<Hand at={c.n46 + 20} x={S2[0] + 40} y={S2[1] - 190} size={54}>46 chromosomes</Hand>
-					<Hand at={c.dna} x={S1[0] - 330} y={S1[1] - 132} size={40} color={INK_SOFT}>the DNA packages</Hand>
+					<Hand at={c.n46} out={c.half - 20} x={S1[0] - 330} y={S1[1] - 190} size={54}>46 chromosomes</Hand>
+					<Hand at={c.n46 + 20} out={c.half - 20} x={S2[0] + 40} y={S2[1] - 190} size={54}>46 chromosomes</Hand>
+					<Hand at={c.dna} out={c.half - 20} x={S1[0] - 330} y={S1[1] - 122} size={54}>the DNA packages</Hand>
 					<GreyTag at={c.fill + 10} out={c.same + 60} x={330} y={190} text="cells move in and divide" size={34} />
-					<GreyTag at={c.fill + 40} out={c.half + 30} x={1230} y={190} text="skin cells, simplified" size={34} />
+					<GreyTag at={c.fill + 40} out={c.half + 30} x={1330} y={64} text="skin cells, simplified" size={34} />
 				</Cam>
 			</div>
 			{/* inside one new skin cell */}
@@ -118,7 +120,8 @@ export const SceneHook: React.FC = () => {
 				<Hand at={c.copies} out={c.how - 6} x={1440} y={330} size={46} w={400}>two copies of every thread</Hand>
 				<Hand at={c.shared} out={c.how - 6} x={1440} y={440} size={46} w={400}>shared out into two cells</Hand>
 			</div>
-			<div style={{position: 'absolute', left: 96, top: 92, opacity: f >= c.how ? 1 : 0}}><HandText text="How do both new cells keep every chromosome?" at={c.how} size={64} cps={30} /></div>
+			<div style={{position: 'absolute', left: 96, top: 92, opacity: f >= c.how ? 1 : 0}}><HandText text="How does a cell divide so that both new cells" at={c.how} size={56} cps={(45 * 30) / (c.keepEvery - c.how)} /></div>
+			<div style={{position: 'absolute', left: 96, top: 160, opacity: f >= c.keepEvery ? 1 : 0}}><HandText text="keep every chromosome, an exact copy of the parent's?" at={c.keepEvery} size={56} cps={(53 * 30) / (c.parentS - c.keepEvery + 24)} /></div>
 		</>
 	);
 };
@@ -208,8 +211,8 @@ export const SceneChromosomeSets: React.FC = () => {
 					<Hand at={c.parent} x={250} y={612} size={46} color={TEAL_INK}>set from the other parent</Hand>
 					<Hand at={c.kind} x={760} y={250} size={50}>a set = one of each kind</Hand>
 					<Hand at={c.twice} x={1000} y={690} size={52}>every kind appears twice</Hand>
-					<Overlay><DrawPath d="M1520,596 L1380,672" at={c.xy} dur={14} color={INK_SOFT} width={4} /></Overlay>
-					<div style={{position: 'absolute', left: 900, top: 680, width: 640}}><GreyTag at={c.xy} x={0} y={0} text="in males, X and Y are different and only partly match (23rd pair)" size={28} /></div>
+					<Overlay><DrawPath d="M1520,606 L1520,766" at={c.xy} dur={14} color={INK_SOFT} width={4} /></Overlay>
+					<div style={{position: 'absolute', left: 900, top: 770, width: 640}}><GreyTag at={c.xy} x={0} y={0} text="in males, X and Y are different and only partly match (23rd pair)" size={28} /></div>
 				</div>
 				<div style={{position: 'absolute', left: 1480, top: 156, width: 360, opacity: shrink}}>
 					<GreyTag at={c.two} x={0} y={0} text="two sets of 23" size={28} />
@@ -224,7 +227,7 @@ export const SceneChromosomeSets: React.FC = () => {
 					<Scribble cx={1360} cy={550} rx={74} ry={256} at={c.homol + 24} color={AMBER_INK} seed={7} />
 					<DrawPath d="M1434,550 L1480,550" at={c.homol + 40} dur={10} color={AMBER_INK} width={4} />
 				</Overlay>
-				<Hand at={c.homol + 6} x={770} y={460} size={52} color={AMBER_INK} w={480}>homologous pair: a matching pair, one from each parent</Hand>
+				<Hand at={c.homol + 6} x={770} y={440} size={48} color={AMBER_INK} w={440}>homologous pair: a matching pair, one from each parent</Hand>
 				<Hand at={c.homol + 40} x={1490} y={520} size={52} color={AMBER_INK} w={330}>another pair</Hand>
 				<Hand at={c.two - 20} x={96} y={225} size={44} color={INK_SOFT}>a simpler example: two kinds, long and short</Hand>
 				<Hand at={c.two - 16} x={96} y={380} size={40} color={PLUM_INK} w={400}>set from one parent</Hand>

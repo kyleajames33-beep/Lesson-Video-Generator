@@ -44,7 +44,7 @@ export const SceneModelAnswer: React.FC = () => {
 		{label: 'Temperature', at: K1.temp, cells: [
 			{text: 'exothermic: cooling shifts toward NH_3', at: K1.cool, tick: K1.cool + 40},
 			{text: 'fewer collisions have enough energy', at: K1.both - 20},
-			{text: 'rate falls, so a middle temperature, about 450 C, plus iron', at: K1.uses},
+			{text: 'rate falls, so a middle temperature, about 450 C, plus iron', at: K1.uses},
 		]},
 		{label: 'Pressure', at: K1.press, cells: [
 			{text: '4 gas to 2: squeeze shifts toward NH_3', at: K1.four, tick: K1.four + 50},
@@ -54,7 +54,7 @@ export const SceneModelAnswer: React.FC = () => {
 		{label: 'Removal', at: K1.rem, cells: [
 			{text: 'taking NH_3 away: more is made in total', at: K1.out, tick: K1.out + 60},
 			{text: 'reverse rate stays low, so forward stays ahead', at: K1.rev},
-			{text: 'recycle the unused gas', at: K1.ahead},
+			null,
 		]},
 	];
 	return (

@@ -85,3 +85,26 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers and every count recomputes. SHOULD FIX 1 (notes hold), 2 to 10 (overlaps and stale labels on lines the student is reading), 13 (pixelated zoom) and 15 (a wrong count on screen in feedback two) should be fixed before the full export; 11, 12, 14 and 16 are first-frame, pacing and timing polish. SHOULD FIX 17 is the painted-plate list under the owner standing rule (epithelium shedding, plant cell plate). No narration change is required (finding 7 offers an optional narration alternative). Playback-speed motion, the chromatid pull in anaphase and human listening remain pending.
+
+
+## Fixes applied (14 Oct)
+
+Visual, reveal-timing and on-screen text changes only; narration, audio and alignment untouched. Checked with stills at the changed frames; playback-speed motion and human listening are still pending. Preview: Explainer-bio-m5-b05a-preview-v2.
+
+1. Key notes: done. Five bullets, 115 words (was about 150); the stage list is one block; the rare-error bullet became "Order: IPMAT. Interphase comes first and is not part of mitosis."; "Pause the video if you need more time to copy." kept; scene length unchanged.
+2. Chromosome sets X and Y tag: done. Moved 90 px lower with its pointer re-routed so it no longer touches "every kind appears twice".
+3. Homologous pair label: done. Text box narrowed and sized down; the second ring no longer crosses it.
+4. Hook labels: done. The "skin cells, simplified" tag moved to the top right above the label row; "the DNA packages" is set at the same size as "46 chromosomes".
+5. Model cell label: not reproducible in the current stills (label is clear of the cell outline at f2202); no change needed.
+6. Stale leader line: done. The "nuclear envelope" label, ring, leader and the "animal and plant cells" tag now fade together shortly after "breaks down"; none remains at f5013, f5193 or f5453.
+7. "cytokinesis" and "split" in interphase: done. The red cytokinesis label, the word "split" and the red arc are removed; "copy, share," stays. Cytokinesis first appears where it is taught.
+8. "4 + 4" overprint: done. Lifted 8 px; it is clear of the bars at f7715 and f8035.
+9. Attempt cell icon: done. The icon is smaller and 25 px further right so the card text never reflows under it.
+10. Memory aid: done. The unlabelled clock icon is removed and the Next card moved 80 px right.
+11. Feedback one first frame: done. Row spacing increased (124 to 150 px) so the long bars do not touch.
+12. S phase label: done. The ring and label moved to the free top-left strip, clear of the cell outline and the "8" labels.
+13. Hook zoom: done. The zoom is 2.4x (was 5.5x), the 46 labels and leaders fade out before the zoom and the cross-fade to the cell diagram starts earlier.
+14. Uses scene: done. The growth plate now starts on "an organism" instead of "grows from one cell". The identical-offspring label did not overprint the replacement icons in the current stills.
+15. "6 chromatids" line: done. The second line now appears only on "12 chromatids" and reads "6 x 2 = 12 chromatids".
+16. Hook question typing: done. The question is typed in two lines with the spoken wording, each line timed to its words ("How does" and "keep every").
+17. Painted plates (epithelium shedding, plant cell plate): deferred to brief 31. The coded epithelium and cytokinesis plant cell stay and are tidy.

@@ -84,3 +84,18 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers and every count and letter recomputes. SHOULD FIX 1 (an undefined term at the point of use), 2 (competing unspoken notes), 3 (a stale pointer), 4 and 5 (overprinted labels), 6 (an early answer flash) and 7 (a contradicting note) change what a student can read or follow and should be fixed before the full export; SHOULD FIX 9 is the painted-plate list under the owner standing rule (parents; reuse the existing sperm and egg plates). Item 8 is a pacing edit. The narration needs only the optional glosses in SHOULD FIX 1. Playback-speed motion and human listening remain pending.
+
+
+## Fixes applied (14 Oct)
+
+Visual, reveal-timing and on-screen text changes only; narration, audio and alignment untouched. Checked with stills at the changed frames; playback-speed motion and human listening are still pending. Preview: Explainer-bio-m5-b05b-preview-v2.
+
+1. "allele" definition: done. The early tag is removed from the model-alleles scene; "allele: a version of a gene" now appears with "no new allele" when "new alleles" is spoken in crossing-makes. A small "gene: a section of DNA with one instruction" tag shows when the three genes are marked.
+2. Crossing-makes notes: done. Cut to the four letters, "no new allele", the allele definition and "4 different chromatids" (plus the existing sister ring). The unspoken notes and the crossing-point leader are removed.
+3. Stale ring: done. The ring on the short plum gene is now tied to "The short pair" and fades before the labelling sentence.
+4. Overlays: (a) "the number would double every generation" moved clear of the labels; (b) "one of each kind" is one centred label between the two end brackets, inside the cell; (c) the unspoken "which sperm meets which egg is also chance" chip is removed; (d) the homologous pair labels are opaque callouts so the nucleus line no longer cuts them.
+5. Gamete labels: done. They read "gamete 1" to "gamete 4", and the labels and the big "4" leave before the third pair is added.
+6. 128 chain: the chain is cued to "2 to the power" (and 128 to "is 128"); it did not show early in the current stills, so no further change.
+7. Tracking note: only the short note is drawn in the current build; no change needed.
+8. Key notes: done. Seven short bullets, 121 words (was about 135); bullet 2 split into prophase I and metaphase I; the exponent reads "2 to the power n"; "Pause the video if you need more time to copy." kept; scene length unchanged.
+9. Painted plates (mother and father pictograms, sperm and egg): deferred to brief 31 (the existing b3a sperm and egg plates can be reused). The coded versions stay.

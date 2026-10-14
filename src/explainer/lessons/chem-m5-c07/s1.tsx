@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, HandText, INK, INK_SOFT, Plate, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Chip, DGauge, DotP, Fade, GhostHand, HABER_EQ, Overlay, Ring, Slider, Switch, Sx, eqLayout} from './parts';
+import {Arrow, Chip, DGauge, DotP, Fade, GasKey, GhostHand, HABER_EQ, Overlay, Ring, Slider, Switch, Sx, eqLayout} from './parts';
 import {CONVERTER, HAVE7} from './assets';
 import {Heading, H2C, HEAT, IRON, IRON_DARK, N2C, NH3C, RATE, YIELD, kf, rateOf, sc, yieldOf} from './common';
 
@@ -111,8 +111,10 @@ export const SceneYield: React.FC = () => {
 	const pres = kf(f, [[0, 0.4], [K2.sq, 0.4], [K2.sq + 50, 0.88]]);
 	const rem = prog(f, K2.pull, 14);
 	const cat = prog(f, K2.cat, 14);
-	const yv = yieldOf(temp, pres);
-	const rv = rateOf(temp, pres, cat);
+	// squeezing lifts the yield a little and the rate part-way (the dashboard shows the effect of the pressure slider)
+	const pb = prog(f, K2.sq, 50);
+	const yv = clamp(yieldOf(temp, pres) + 0.1 * pb);
+	const rv = clamp(rateOf(temp, pres, cat) + 0.2 * pb);
 	const tot = clamp(0.12 + 0.4 * yv + 0.3 * prog(f, K2.pull + 60, 90));
 	const L = pos[0].sx, R1 = pos[2].sx + pos[2].w, L2 = pos[4].cx, R2 = pos[4].sx + pos[4].w;
 	const cW = 250;
@@ -160,6 +162,7 @@ export const SceneYield: React.FC = () => {
 					<rect x={640} y={750} width={210} height={80} rx={14} fill="#f4f0e6" stroke={INK_SOFT} strokeWidth={3} />
 					{[0, 1, 2, 3, 4, 5].map(i => <DotP key={i} x={670 + (i % 3) * 56 + 6 * Math.sin(f * 0.2 + i)} y={774 + Math.floor(i / 3) * 34 + 5 * Math.cos(f * 0.23 + i)} r={9} fill={i % 2 ? NH3C : i % 3 ? N2C : H2C} />)}
 					<Sx x={745} y={862} text="the gas" size={28} color={INK_SOFT} anchor="middle" hand at={K2.pull} />
+					<GasKey x={600} y={924} at={K2.pull} size={26} />
 				</Fade>
 				{dots}
 				{/* rings on each lever as it is spoken */}
@@ -174,6 +177,9 @@ export const SceneYield: React.FC = () => {
 					<Sx x={1000} y={826} text="total ammonia made" size={40} color={YIELD} hand at={K2.pull + 20} />
 					<rect x={1000} y={846} width={800} height={34} rx={17} fill="#e6dcc8" />
 					<rect x={1000} y={846} width={Math.max(2, 800 * tot)} height={34} rx={17} fill={YIELD} />
+				</Fade>
+				<Fade at={K2.sq + 40} out={K2.pull}>
+					<Sx x={1620} y={440} text="faster too" size={38} color={RATE} anchor="middle" hand at={K2.sq + 40} />
 				</Fade>
 				<Fade at={K2.same} out={K2.total + 40}>
 					<Sx x={1150} y={440} text="yield stays put" size={38} color={AMBER_INK} anchor="middle" hand at={K2.same} />

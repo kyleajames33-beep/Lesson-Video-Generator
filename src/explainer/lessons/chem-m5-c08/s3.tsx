@@ -60,9 +60,7 @@ export const SceneChases: React.FC = () => {
 					<Tick x={1400} y={812} at={KS.where + 30} s={42} />
 				</Fade>
 				<Fade at={KS.icet} out={KS.chase - 4}>
-					<rect x={1130} y={858} width={700} height={96} rx={18} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={2.5} strokeDasharray="8 6" />
-					<Sx x={1150} y={894} text="same total hydrogen and iodine, same K," size={28} color={INK_SOFT} at={KS.icet} />
-					<Sx x={1150} y={930} text="so the same settled tube: 0.20 + 0.25 = 0.45, 0.10 + 0.35 = 0.45" size={26} color={INK_SOFT} at={KS.icet + 10} />
+					<Sx x={1130} y={900} text="the same settled tube as the ICE table video" size={36} color={INK_SOFT} hand at={KS.icet} />
 				</Fade>
 				{land ? null : null}
 				<Fade at={KS.chase}>

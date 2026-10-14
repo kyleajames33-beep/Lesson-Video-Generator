@@ -170,8 +170,8 @@ export const SceneFirstDivision: React.FC = () => {
 				{[0, 1, 2, 3].map(i => <MC key={i} x={pos(i)[0]} y={pos(i)[1]} kind={KIND[i]} a={SPEC[i][0]} b={SPEC[i][1]} />)}
 				{/* one of each kind: one set at each end */}
 				<g opacity={vis(f, c.each, c.telo - 20, 12)}>
-					<Bracket x1={CX - 400} x2={CX - 200} y={CY + 168} at={c.kind} color={AMBER_INK} />
-					<Bracket x1={CX + 200} x2={CX + 400} y={CY + 168} at={c.kind + 6} color={AMBER_INK} />
+					<Bracket x1={CX - 380} x2={CX - 212} y={CY + 168} at={c.kind} color={AMBER_INK} />
+					<Bracket x1={CX + 212} x2={CX + 380} y={CY + 168} at={c.kind + 6} color={AMBER_INK} />
 				</g>
 								<g opacity={vis(f, c.set, c.telo - 12, 10)}>
 					<Scribble cx={CX - 296} cy={CY} rx={130} ry={150} at={c.set} color={AMBER_INK} seed={4} />
@@ -183,8 +183,7 @@ export const SceneFirstDivision: React.FC = () => {
 				<PenTap pts={penR} at={[c.two + 60, c.two + 78]} badge={[-40, -30]} showPen={false} />
 			</Overlay>
 			<Pill at={c.dont + 4} out={c.each + 10} x={CX - 400} y={168} size={42}>centromere stays whole: chromatids not separated</Pill>
-			<Hand at={c.kind + 12} out={c.telo - 10} x={CX - 420} y={CY + 186} size={34} w={250} color={AMBER_INK}>long, short: one of each kind</Hand>
-			<Hand at={c.kind + 18} out={c.telo - 10} x={CX + 170} y={CY + 186} size={34} w={250} color={AMBER_INK}>long, short: one of each kind</Hand>
+			<Hand at={c.kind + 12} out={c.telo - 10} x={CX - 190} y={CY + 150} size={30} w={380} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>one of each kind at each end</span></Hand>
 			<Pill at={c.set + 8} out={c.telo - 10} x={CX - 440} y={CY - 250} size={40}>one set</Pill>
 			<Pill at={c.set + 16} out={c.telo - 10} x={CX + 330} y={CY - 250} size={40}>one set</Pill>
 			<Pill at={c.telo + 24} out={c.fin + 20} x={CX - 130} y={168} size={42}>cytokinesis</Pill>

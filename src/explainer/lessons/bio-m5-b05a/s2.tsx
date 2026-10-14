@@ -149,7 +149,6 @@ export const SceneInterphase: React.FC = () => {
 				<path d={arcPath(RC[0], RC[1], RR, 358, 360)} fill="none" stroke="#d8cdb6" strokeWidth={34} opacity={prog(f, c.itself + 20, 14)} />
 				<path d={arcPath(RC[0], RC[1], RR, 126, 126 + 72 * sArc)} fill="none" stroke={COPYC} strokeWidth={34} />
 				<path d={arcPath(RC[0], RC[1], RR, 324, 358)} fill="none" stroke={SHAREC} strokeWidth={34} opacity={mArc} />
-				<path d={arcPath(RC[0], RC[1], RR, 358, 360)} fill="none" stroke={SPLITC} strokeWidth={34} opacity={prog(f, c.itself + 24, 14)} />
 				<circle cx={dot[0]} cy={dot[1]} r={19} fill={AMBER} stroke={AMBER_INK} strokeWidth={5} opacity={dotO} />
 				{/* grows, makes what it needs */}
 				<g transform={`translate(${gI.pt[0]},${gI.pt[1]}) scale(${gI.pop})`}>
@@ -173,13 +172,11 @@ export const SceneInterphase: React.FC = () => {
 			<Hand at={c.grows} out={c.copies - 12} x={96} y={250} size={50} w={540}>grows, makes what it needs</Hand>
 			<Hand at={c.sph + 6} x={780} y={830} size={56} color={COPYC}>S phase: DNA copied</Hand>
 			<Hand at={c.short} x={840} y={215} size={54} color={SHAREC}>mitosis</Hand>
-			<Hand at={c.itself + 30} x={1160} y={165} size={50} color={SPLITC}>cytokinesis</Hand>
 			<Hand at={c.shares} x={96} y={420} size={52} color={SHAREC} w={560}>mitosis shares the copies out</Hand>
 			<Hand at={c.never + 10} x={96} y={560} size={52} color={INK_SOFT} w={560}>no copying here</Hand>
 			<Hand at={c.two + 40} x={96} y={690} size={46} w={600} color={INK}>every chromosome already has two chromatids</Hand>
 			<Line at={c.copies + 10} x={96} y={800} size={60} hand color={COPYC}>copy,</Line>
 			<Line at={c.shares + 10} x={290} y={800} size={60} hand color={SHAREC}>share,</Line>
-			<Line at={c.itself + 34} x={520} y={800} size={60} hand color={SPLITC}>split</Line>
 		</>
 	);
 };

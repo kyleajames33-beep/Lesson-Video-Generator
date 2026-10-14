@@ -97,7 +97,6 @@ export const SceneMemory: React.FC = () => {
 				<Chrom x={330} y={850} kind="L" color={PLUM} dup={prog(f, c.count - 20, 14)} coil={1} s={1.2} o={prog(f, c.count - 30, 14)} />
 				<PenTap pts={[[330, 850]]} at={[c.count + 24]} badge={[60, -10]} out={c.next - 20} />
 				<DrawPath d="M410,850 L470,850" at={c.count + 20} dur={10} color={AMBER_INK} width={5} />
-				<Clock x={1790} y={860} at={c.next + 10} />
 			</Overlay>
 			{kw('copies', c.copied, 0)}
 			{kw('coils', c.pro + 10, 1)}
@@ -108,7 +107,7 @@ export const SceneMemory: React.FC = () => {
 			<Hand at={c.pro + 24} x={LX[1] + 100} y={650} size={46} color={AMBER_INK}>the four steps of mitosis</Hand>
 			<Pill at={c.cyto} x={1520} y={700} size={42}>then split</Pill>
 			<Hand at={c.count} x={490} y={800} size={52} color={AMBER_INK} w={470}>centromeres, not chromatids</Hand>
-			<Enter at={c.next} style={{position: 'absolute', left: 1040, top: 790}}>
+			<Enter at={c.next} style={{position: 'absolute', left: 1120, top: 790}}>
 				<div style={{display: 'flex', alignItems: 'center', gap: 22, background: '#fffdf8', border: `4px solid ${AMBER_INK}`, borderRadius: 28, padding: '10px 28px 14px'}}>
 					<svg width={110} height={90} viewBox="0 0 110 90">
 						<circle cx={55} cy={45} r={38} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
@@ -125,9 +124,9 @@ export const SceneMemory: React.FC = () => {
 export const NOTES = [
 	'DNA is copied in interphase, before mitosis. A copied chromosome has two sister chromatids joined at a centromere. Count centromeres, not chromatids.',
 	'A set is one of each kind. Diploid: two sets (human body cell: 46). Haploid: one set (gamete: 23).',
-	'Prophase: chromosomes coil, the nuclear envelope breaks down, the spindle forms. Metaphase: chromosomes line up in the middle. Anaphase: centromeres split, chromatids are pulled apart. Telophase: new nuclei form. Cytokinesis: the cytoplasm splits.',
+	'Mitosis: prophase (chromosomes coil, the nuclear envelope breaks down, the spindle forms), metaphase (chromosomes line up in the middle), anaphase (centromeres split, chromatids are pulled apart), telophase (new nuclei form). Then cytokinesis: the cytoplasm splits.',
 	'Each new cell gets a copy of every chromosome, so the number is not halved. Human: 46, 92 chromatids, 92 chromosomes in anaphase, 46 in each new cell.',
-	'Order: IPMAT. Rarely both chromatids go to one end: one cell gains a chromosome, one loses one.',
+	'Order: IPMAT. Interphase comes first and is not part of mitosis.',
 ];
 export const SceneNotes: React.FC = () => (
 	<>

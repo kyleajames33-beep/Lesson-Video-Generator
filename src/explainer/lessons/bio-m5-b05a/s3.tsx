@@ -54,15 +54,15 @@ export const ScenePhase: React.FC = () => {
 					return <Chrom key={i} x={CX + x} y={CY + y} kind={ch.kind} color={ch.color} dup={1} coil={cp} hiA={(i === 0 || i === 1) ? glowPartner : 0} hiB={(i === 0 || i === 1) ? glowPartner : 0} />;
 				})}
 				{/* the nuclear envelope circled */}
-				<g opacity={vis(f, c.env, c.breaks + 30, 10)}><Scribble cx={CX + NUC_R * 0.72} cy={CY - NUC_R * 0.7} rx={46} ry={46} at={c.env} color={AMBER_INK} seed={6} /></g>
+				<g opacity={vis(f, c.env, c.breaks + 24, 10)}><Scribble cx={CX + NUC_R * 0.72} cy={CY - NUC_R * 0.7} rx={46} ry={46} at={c.env} color={AMBER_INK} seed={6} /></g>
 				<g opacity={vis(f, c.one, c.line - 6, 10)}><Scribble cx={CX + SCAT[0][0]} cy={CY + SCAT[0][1]} rx={36} ry={36} at={c.one} color={AMBER_INK} seed={4} /></g>
 				{/* tags and the pairing contrast after line-up */}
 				{lu > 0.99 ? <DrawPath d={`M${CX + 110},${CY + META_Y[1]} Q${CX + 190},${CY - 60} ${CX + 110},${CY + META_Y[0]}`} at={c.notnext} dur={22} color="#7a8088" width={4} dash="3 12" /> : null}
 			</Overlay>
 			<Hand at={c.easier} out={c.breaks - 6} x={96} y={290} size={50} w={360}>coils up: easier to move</Hand>
-			<Hand at={c.env} out={c.spindle + 30} x={1500} y={250} size={50} w={340}>nuclear envelope</Hand>
-			<Overlay><g opacity={vis(f, c.env, c.spindle + 30, 10)}><DrawPath d={`M1500,285 L${CX + NUC_R * 0.72 + 46},${CY - NUC_R * 0.7 - 10}`} at={c.env + 8} dur={14} color={AMBER_INK} width={4} /></g></Overlay>
-			<GreyTag at={c.breaks + 4} out={c.spindle + 30} x={1500} y={330} text="animal and plant cells" size={30} />
+			<Hand at={c.env} out={c.breaks + 24} x={1500} y={250} size={50} w={340}>nuclear envelope</Hand>
+			<Overlay><g opacity={vis(f, c.env, c.breaks + 24, 10)}><DrawPath d={`M1500,285 L${CX + NUC_R * 0.72 + 46},${CY - NUC_R * 0.7 - 10}`} at={c.env + 8} dur={14} color={AMBER_INK} width={4} /></g></Overlay>
+			<GreyTag at={c.breaks + 4} out={c.breaks + 40} x={1500} y={330} text="animal and plant cells" size={30} />
 			<Hand at={c.spindle + 12} out={c.attach - 10} x={1500} y={430} size={50} w={340}>spindle fibres: thin protein threads</Hand>
 			<Hand at={c.one} out={c.line + 20} x={96} y={470} size={46} w={360}>fibres from opposite ends, one end to each chromatid</Hand>
 			<Hand at={c.own} x={96} y={290} size={50} w={370}>each chromosome on its own, not paired up</Hand>

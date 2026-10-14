@@ -4,7 +4,7 @@ import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, PAPER_DEEP, prog} from '../../kit';
 import {Arrow, Chip, Fade, Ring, Sx, Tag, Tick, eqLayout, tw} from '../chem-m5-c06/parts';
 import type {EqItem} from '../chem-m5-c06/parts';
-import {COLD, GREEN, HEAT, IRON, IRON_DARK, N2C, NH3C, hexMix} from './common';
+import {COLD, GREEN, H2C, HEAT, IRON, IRON_DARK, N2C, NH3C, hexMix} from './common';
 
 export {Arrow, Chip, Fade, Ring, Sx, Tag, Tick, eqLayout, tw};
 export {Overlay, Cross, EqStrip} from '../chem-m5-c06/parts';
@@ -171,4 +171,62 @@ export const AnswerTable: React.FC<{x: number; y: number; labelW: number; colW: 
 		})}
 	</g>
 );
+/** Small colour key for the gas dots: N2 navy, H2 pale grey, NH3 green. */
+export const GasKey: React.FC<{x: number; y: number; at: number; out?: number; size?: number}> = ({x, y, at, out, size = 28}) => {
+	const items: [string, string][] = [[N2C, 'N_2'], [H2C, 'H_2'], [NH3C, 'NH_3']];
+	let cx = x;
+	return (
+		<Fade at={at} out={out}>
+			{items.map(([c, t]) => {
+				const x0 = cx;
+				cx += 22 + tw(t.replace('_', ''), size) + 26;
+				return (
+					<g key={t}>
+						<DotP x={x0 + 9} y={y - 9} r={9} fill={c} />
+						<Sx x={x0 + 26} y={y} text={t} size={size} color={INK_SOFT} weight={600} at={at} />
+					</g>
+				);
+			})}
+		</Fade>
+	);
+};
+
+/**
+ * A gas in a box with a piston: the same particles bounce in a smaller space after the squeeze,
+ * so they hit the walls (flashes) more often. Coded teaching picture, no numbers.
+ */
+export const CrowdBox: React.FC<{x: number; y: number; w: number; h: number; at: number; out?: number; squeezeAt: number; squeezeDur?: number; labelAt?: number}> = ({x, y, w, h, at, out, squeezeAt, squeezeDur = 60, labelAt}) => {
+	const f = useCurrentFrame();
+	const u = prog(f, squeezeAt, squeezeDur);
+	const pistonY = y + 20 + u * (h * 0.46);
+	const lo = (a: number, b: number, v: number, ph: number) => {
+		const span = b - a;
+		const m = (((v + ph * span) % (2 * span)) + 2 * span) % (2 * span);
+		return a + (m > span ? 2 * span - m : m);
+	};
+	const N = 9;
+	const parts = Array.from({length: N}, (_, i) => {
+		const x0 = x + 18, x1 = x + w - 18, y0 = pistonY + 18, y1 = y + h - 18;
+		const sx = 4.2 + (i % 3) * 0.8, sy = 3.4 + (i % 4) * 0.6;
+		const px = lo(x0, x1, f * sx, (i * 0.37) % 1), py = lo(y0, y1, f * sy, (i * 0.61 + 0.2) % 1);
+		const hit = Math.abs(px - x0) < sx * 1.1 || Math.abs(px - x1) < sx * 1.1 || Math.abs(py - y0) < sy * 1.1 || Math.abs(py - y1) < sy * 1.1;
+		return {px, py, hit, c: i % 3 === 0 ? N2C : i % 3 === 1 ? H2C : N2C};
+	});
+	return (
+		<Fade at={at} out={out}>
+			<rect x={x} y={y} width={w} height={h} rx={14} fill="#fbf8ef" stroke={INK} strokeWidth={5} />
+			<rect x={x + 6} y={pistonY - 14} width={w - 12} height={28} rx={8} fill="#c9ced4" stroke={IRON_DARK} strokeWidth={4} />
+			<path d={`M${x + w / 2},${pistonY - 14} L${x + w / 2},${y - 40}`} stroke={IRON_DARK} strokeWidth={10} strokeLinecap="round" />
+			<rect x={x + w / 2 - 44} y={y - 58} width={88} height={20} rx={8} fill="#c9ced4" stroke={IRON_DARK} strokeWidth={4} />
+			<path d={`M${x + w / 2},${y - 112} L${x + w / 2},${y - 74} M${x + w / 2 - 14},${y - 90} L${x + w / 2},${y - 74} L${x + w / 2 + 14},${y - 90}`} fill="none" stroke={AMBER_INK} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" opacity={u * (1 - prog(f, squeezeAt + squeezeDur + 10, 10))} />
+			{parts.map((p, i) => (
+				<g key={i}>
+					{p.hit ? <path d={`M${p.px},${p.py - 22} L${p.px + 5},${p.py - 7} L${p.px + 20},${p.py} L${p.px + 5},${p.py + 7} L${p.px},${p.py + 22} L${p.px - 5},${p.py + 7} L${p.px - 20},${p.py} L${p.px - 5},${p.py - 7} Z`} fill="#f5c542" stroke={AMBER_INK} strokeWidth={2.5} strokeLinejoin="round" /> : null}
+					<DotP x={p.px} y={p.py} r={9} fill={p.c} />
+				</g>
+			))}
+			<Sx x={x + w / 2} y={y + h + 46} text="same particles, less space" size={32} color={INK} anchor="middle" hand at={labelAt ?? squeezeAt} />
+		</Fade>
+	);
+};
 void Chip; void Ring; void Arrow; void Tag; void eqLayout;

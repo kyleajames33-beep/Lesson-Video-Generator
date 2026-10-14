@@ -83,3 +83,19 @@ None.
 ## Verdict
 
 **Fix first (small).** No blockers and every number recomputes. SHOULD FIX 1 (Q shown without its square), 2 (unexplained 12.25 and 100), 3 (K marker after "Q > K"), 4 (red text over the answer), 5 (a strike-through line and an unreadable note) and 6 (a chip over "reverse") change what a student can read or follow and should be fixed before the full export. SHOULD FIX 7 is the painted-plate list under the owner standing rule (hot hydrogen iodide tube, thermometer, stopwatch, round flasks). 8, 9 and 10 are screen layout and pacing edits. No narration change is required. Playback-speed motion and human listening remain pending.
+
+
+## Fixes applied (14 Oct)
+
+Visual, reveal-timing and on-screen text changes only; narration, audio and alignment untouched. Checked with stills at the changed frames; playback-speed motion and human listening are still pending. Preview: Explainer-chem-m5-c08-preview-v2.
+
+1. First Q fraction: done. The numerator is drawn with its square from its first frame (the flying exponent is removed); the ring on the square still lands on "powers for coefficients".
+2. K unchanged amounts: done. On-screen tags "HI: 0.70 to 0.35 mol/L" (take out) and "HI: 0.70 to 1.00 mol/L" (add) sit under the tube beside "take out HI" and "add HI", so 12.25 and 100 can be reproduced. Narration is unchanged.
+3. "Q > K" before K: done. The K marker and the gap line now arrive just before "Q is above K", and "Q > K" is written after them.
+4. Feedback overprints: done in the current build. The red line sits under the chip and does not cross the answer; the "0.80" ring was tightened and moved down so it no longer cuts the working line.
+5. Givens strike-through: not reproducible as a line through the card in the current stills. The dashed note under "Q chases K" (13 px type, ran out of its box, new idea with no spoken support) is replaced by one body-size line, "the same settled tube as the ICE table video", which matches the narration.
+6. Rate link chips: done. The two chips are now one chip ("made-up rate scale, in this model") above the forward bar; the tube ring is tube-sized.
+7. Painted plates (hot HI tube, thermometer, stopwatch, round flasks): deferred to brief 31. The coded versions stay and are labelled.
+8. Q equals K condition chip: done. The "same temperature, same equation as written for Q and K" chip moved to the top right, so the bar labels are clear.
+9. Flask captions: done. With the chip moved away, the lowest item on screen is about 80 px clear of the caption band.
+10. Key notes: done. Five bullets, 114 words (was about 130); bullet 2 is one flow, the rate model is one short line; "Pause the video if you need more time to copy." kept; scene length unchanged.

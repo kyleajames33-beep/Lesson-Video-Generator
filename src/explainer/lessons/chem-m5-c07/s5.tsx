@@ -29,7 +29,7 @@ export const SceneFeedbackTemp: React.FC = () => {
 		{label: 'Temperature', at: K1.temp, cells: [
 			{text: 'exothermic: cooling shifts toward CH_3OH', at: K1.yc, tick: K1.yc + 40},
 			{text: 'fewer collisions have enough energy', at: K1.nocol},
-			{text: 'rate falls, so a middle temperature, about 250 C, plus a catalyst', at: K1.at250},
+			{text: 'rate falls, so a middle temperature, about 250 C, plus a catalyst', at: K1.at250},
 		]},
 		{label: 'Pressure', at: -100, cells: [null, null, null]},
 		{label: 'Removal', at: -100, cells: [null, null, null]},
@@ -55,13 +55,13 @@ export const SceneFeedbackTemp: React.FC = () => {
 					<path d={path(cool, u1)} fill="none" stroke={RATE} strokeWidth={6} strokeLinecap="round" />
 					<path d={path(mid, u2)} fill="none" stroke={RATE} strokeWidth={6} strokeLinecap="round" opacity={u2 > 0 ? 1 : 0} />
 					<Sx x={ox + W - 4} y={py(0.95) - 10} text="25 C: high ceiling, but it crawls" size={26} color={COLD} anchor="end" hand at={K1.at25 + 10} />
-					<Sx x={ox + 300} y={py(0.5) - 14} text="250 C: lower, but sooner" size={26} color={HEAT} anchor="end" hand at={K1.at250} />
+					<Sx x={ox + 8} y={py(0.5) - 24} text="250 C: lower, but sooner" size={26} color={HEAT} hand at={K1.at250} />
 				</Fade>
 				<Wrong y={590} chip="the catalyst increases the yield" fix="speed, not destination: same ceiling" at={K1.w1} crossAt={K1.w1b + 30} fixAt={K1.w1b} />
 				<Wrong y={740} chip="always hotter, because faster" fix="hotter lowers the ceiling" at={K1.w2} crossAt={K1.w2b + 30} fixAt={K1.w2b} />
 				<Fade at={K1.cat} out={K1.w1}>
-					<Sx x={RC} y={570} text="a catalyst speeds both directions," size={32} color={RATE} hand at={K1.cat} />
-					<Sx x={RC} y={612} text="the settled mixture stays put" size={32} color={RATE} hand at={K1.settles} />
+					<Sx x={RC} y={628} text="a catalyst speeds both directions," size={32} color={RATE} hand at={K1.cat} />
+					<Sx x={RC} y={670} text="the settled mixture stays put" size={32} color={RATE} hand at={K1.settles} />
 				</Fade>
 			</Overlay>
 		</>
@@ -77,7 +77,7 @@ export const SceneFeedbackPressure: React.FC = () => {
 		{label: 'Temperature', at: -100, cells: [
 			{text: 'exothermic: cooling shifts toward CH_3OH', at: -100, tick: -100},
 			{text: 'fewer collisions have enough energy', at: -100},
-			{text: 'rate falls, so a middle temperature, about 250 C, plus a catalyst', at: -100},
+			{text: 'rate falls, so a middle temperature, about 250 C, plus a catalyst', at: -100},
 		]},
 		{label: 'Pressure', at: K2.press, cells: [
 			{text: '3 gas to 1: squeeze shifts toward CH_3OH', at: K2.shifts, tick: K2.shifts + 50},
@@ -87,7 +87,7 @@ export const SceneFeedbackPressure: React.FC = () => {
 		{label: 'Removal', at: K2.cond, cells: [
 			{text: 'taking CH_3OH away: more is made in total', at: K2.away, tick: K2.away + 60},
 			{text: 'reverse rate stays low, so forward stays ahead', at: K2.rev},
-			{text: 'recycle the unused gas', at: K2.fwd + 30},
+			null,
 		]},
 	];
 	// the extra-ammonia and extra-cost bars, small, with the plant band and a cross at 500 atm
@@ -184,10 +184,11 @@ export const SceneDecision: React.FC = () => {
 // ---------- 12. Key notes ----------
 const rich = (text: string) => text.split(/(_\d)/).map((p, i) => p.startsWith('_') ? <sub key={i} style={{fontSize: '0.64em', lineHeight: 0}}>{p.slice(1)}</sub> : <span key={i}>{p}</span>);
 export const NOTES = [
-	'Equilibrium yield is how much of the reactants has become product once settled. The rate decides how soon. A plant needs both.',
-	'If the forward reaction gives out heat, cooling raises the yield but lowers both rates, so industry uses a moderate temperature and a catalyst (Haber: about 450 degrees Celsius, iron).',
-	'A catalyst makes the mixture settle sooner but does not change the settled mixture.',
-	'More pressure raises the yield (fewer gas particles) and the rate, but cost and safety limit it (Haber: about 200 atmospheres). Condensing out the product and recycling the rest raises the overall conversion (Haber: above 95 percent).',
+	'Equilibrium yield: how much of the reactants have become product once settled. The rate decides how soon. A plant needs both.',
+	'If the forward reaction gives out heat, cooling raises the yield but lowers both rates. Industry uses a moderate temperature and a catalyst (Haber: about 450 degrees Celsius, iron).',
+	'A catalyst makes the mixture settle sooner. It does not change the settled mixture.',
+	'More pressure raises the yield (fewer gas particles) and the rate. Cost and safety limit it (Haber: about 200 atmospheres).',
+	'Condensing out the product and recycling the rest raises the overall conversion (Haber: above 95 percent).',
 	'To justify a condition: yield and why, rate and why, what limits it.',
 ];
 export const SceneNotes: React.FC = () => (

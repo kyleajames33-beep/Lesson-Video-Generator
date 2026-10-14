@@ -194,7 +194,7 @@ export const SceneWhyHalve: React.FC = () => {
 				</g>
 			</Overlay>
 			<Hand at={c.skin} x={110} y={410} size={40} color={INK_SOFT}>body cell, like skin</Hand>
-			<Hand at={c.n184 + 44} x={460} y={400} size={50} color={WRONG_C} w={1000}>the number would double every generation</Hand>
+			<Hand at={c.n184 + 44} x={460} y={424} size={46} color={WRONG_C} w={1000}>the number would double every generation</Hand>
 			<Hand at={c.set} x={110} y={690} size={42} color={AMBER_INK}>a gamete needs one set</Hand>
 			<Hand at={c.copies + 14} x={380} y={920} size={42} color={AMBER_INK}>1 copy, 2 divisions</Hand>
 			<Hand at={c.divides + 40} x={1380} y={830} size={42} color={AMBER_INK}>1 cell, 4 cells</Hand>

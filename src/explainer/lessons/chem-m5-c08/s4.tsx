@@ -72,7 +72,7 @@ export const SceneEquals: React.FC = () => {
 				<Fade at={KE.rev + 20}>
 					<Sx x={1000} y={196} text="Q chases K." size={92} color={TEAL} hand at={KE.rev + 20} />
 				</Fade>
-				<Tag x={700} y={920} w={1120} text="same temperature, same equation as written for Q and K" at={KE.settled} size={30} color={INK_SOFT} />
+				<Tag x={900} y={80} w={920} text="same temperature, same equation as written for Q and K" at={KE.settled} size={30} color={INK_SOFT} />
 			</Overlay>
 		</>
 	);
@@ -147,9 +147,11 @@ export const SceneKUnchanged: React.FC = () => {
 				<Tube x={TUBE8.x} y={TUBE8.y} w={TUBE8.w} h={TUBE8.h} counts={counts} />
 				<Fade at={KU.out} out={KU.add - 24}>
 					<Sx x={360} y={760} text="take out HI" size={40} color={BLUE} hand at={KU.out} />
+					<Sx x={360} y={806} text="HI: 0.70 to 0.35 mol/L" size={34} color={BLUE} hand at={KU.out + 12} />
 				</Fade>
 				<Fade at={KU.add}>
 					<Sx x={360} y={760} text="add HI" size={40} color={AMBER_INK} hand at={KU.add} />
+					<Sx x={360} y={806} text="HI: 0.70 to 1.00 mol/L" size={34} color={AMBER_INK} hand at={KU.add + 12} />
 				</Fade>
 				<LogLine at={-100} />
 				<KMarker k={49} at={-100} label="K = 49" ring={KU.never} ringOut={KU.never + 90} />

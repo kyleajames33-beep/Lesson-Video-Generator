@@ -144,7 +144,7 @@ export const SceneTracking: React.FC = () => {
 			<Cen at={c.centro} out={c.eight} x={col(1)} y={496} w={300} size={42} color={AMBER_INK}>count centromeres</Cen>
 			<Cen at={c.eight + 24} x={col(1)} y={610} w={300} size={42} color={AMBER_INK}>8 chromatids</Cen>
 			<Cen at={c.chromo} x={col(2)} y={610} w={300} size={42} color={AMBER_INK}>8 chromosomes</Cen>
-			<Cen at={c.fourEnd} x={col(2)} y={496} w={300} size={46} color={AMBER_INK}>4 + 4</Cen>
+			<Cen at={c.fourEnd} x={col(2)} y={488} w={300} size={46} color={AMBER_INK}>4 + 4</Cen>
 			<Cen at={c.newFour + 10} x={col(3)} y={610} w={300} size={42} color={AMBER_INK}>4 in each</Cen>
 			{/* human numbers */}
 			<Num at={c.h46} x={col(0)} y={686} text="46" />

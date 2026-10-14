@@ -25,7 +25,7 @@ const MiniDivide: React.FC<{x: number; y: number; at: number}> = ({x, y, at}) =>
 export const SceneUses: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('uses'), {
-		because: 'Because every new cell', grows: 'grows from one cell', graze: 'a graze heals', worn: 'worn-out skin', gut: 'gut lining', also: 'It is also how yeast', amoeba: 'an amoeba', ident: 'identical offspring',
+		because: 'Because every new cell', organism: 'an organism', grows: 'grows from one cell', graze: 'a graze heals', worn: 'worn-out skin', gut: 'gut lining', also: 'It is also how yeast', amoeba: 'an amoeba', ident: 'identical offspring',
 		bact: 'Bacteria have no nucleus', fission: 'fission', without: 'without mitosis',
 	});
 	const tile = (at: number) => prog(f, at - 6, 18);
@@ -38,7 +38,7 @@ export const SceneUses: React.FC = () => {
 			<Heading items={[[0, 'What mitosis is used for']]} size={64} />
 			<Hand at={c.because} x={96} y={186} size={46} color={INK_SOFT}>every new cell gets the same chromosomes</Hand>
 			{/* growth */}
-			<div style={{opacity: tile(c.grows), position: 'absolute', inset: 0}}>
+			<div style={{opacity: tile(c.organism), position: 'absolute', inset: 0}}>
 				<PlateArt a={PLATES.embryo} x={170} y={250} w={300} />
 				<Overlay><MiniDivide x={320} y={690} at={c.grows + 20} /></Overlay>
 				<Hand at={c.grows + 6} x={220} y={560} size={60} color={AMBER_INK}>growth</Hand>
@@ -147,8 +147,8 @@ export const SceneAttempt: React.FC = () => {
 			{/* 1: the fruit fly cell, counted in the answer */}
 			<Overlay>
 				<g opacity={prog(f, c.fly, 14)}>
-					<ellipse cx={X1 + 665} cy={Y + 175} rx={90} ry={68} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
-					<circle cx={X1 + 665} cy={Y + 175} r={40} fill={NUC_FILL} stroke={NUC_LINE} strokeWidth={4} strokeDasharray="14 7" />
+					<ellipse cx={X1 + 690} cy={Y + 175} rx={72} ry={56} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+					<circle cx={X1 + 690} cy={Y + 175} r={32} fill={NUC_FILL} stroke={NUC_LINE} strokeWidth={4} strokeDasharray="14 7" />
 				</g>
 			</Overlay>
 			<Note x={X1 + 30} y={Y + 92} w={500} at={c.fly} size={28}>A fruit fly body cell has 8 chromosomes, in 2 sets.</Note>
@@ -240,7 +240,7 @@ export const SceneFeedbackOne: React.FC = () => {
 	const d = 250 * prog(f, c.each8 - 6, 64);
 	const slots: {x: number; y: number; kind: Kind; color: string; i: number}[] = [];
 	const K1 = 0.7;
-	[0, 1].forEach(row => [0, 1, 2, 3].forEach(col => slots.push({x: MC[0] + (col - 1.5) * 80, y: MC[1] + (row - 0.5) * 124, kind: KINDS8[col], color: row ? TEALC : PLUM, i: row * 4 + col})));
+	[0, 1].forEach(row => [0, 1, 2, 3].forEach(col => slots.push({x: MC[0] + (col - 1.5) * 80, y: MC[1] + (row - 0.5) * 150, kind: KINDS8[col], color: row ? TEALC : PLUM, i: row * 4 + col})));
 	const bend = prog(f, c.each8 - 6, 30);
 	const nums = prog(f, c.each8 + 12, 12);
 	const cell = d < 1 ? <CellBody cx={MC[0]} cy={MC[1]} rx={330} ry={270} /> : <SplitCells cx={MC[0]} cy={MC[1]} rx={330} ry={270} d={d} />;
@@ -260,13 +260,13 @@ export const SceneFeedbackOne: React.FC = () => {
 					const xa = lerp(0, -250 / K1, e), xb = lerp(0, 250 / K1, e);
 					return <Chrom key={s.i} x={s.x} y={s.y} kind={s.kind} color={s.color} dup={dup} coil={coil} s={K1} xa={dup > 0 && coil > 0 && e > 0 ? xa : undefined} xb={dup > 0 && coil > 0 && e > 0 ? xb : undefined} sep={e > 0 ? Math.min(1, e * 25) : undefined} bend={bend} />;
 				})}
-				<MiniRing x={160} y={860} r={50} at={c.copying} />
+				<MiniRing x={170} y={236} r={44} at={c.copying} />
 				<g opacity={nums}>
 					<Tick x={MC[0] - 250 + 70} y={MC[1] + 205} at={c.parent} s={0.9} />
 					<Tick x={MC[0] + 250 + 70} y={MC[1] + 205} at={c.parent + 6} s={0.9} />
 				</g>
 			</Overlay>
-			<Hand at={c.copying + 20} x={236} y={826} size={34} color={INK_SOFT} w={330}>S phase: copying, before mitosis</Hand>
+			<Hand at={c.copying + 20} x={96} y={296} size={32} color={INK_SOFT} w={250}>S phase: copying, before mitosis</Hand>
 			<Hand at={c.each8 + 14} x={MC[0] - 250 - 10} y={MC[1] + 180} size={64} color={AMBER_INK}>8</Hand>
 			<Hand at={c.each8 + 20} x={MC[0] + 250 - 10} y={MC[1] + 180} size={64} color={AMBER_INK}>8</Hand>
 			<Hand at={c.first} x={640} y={868} size={52} color={AMBER_INK}>doubled first, then shared back</Hand>
@@ -296,7 +296,6 @@ export const SceneFeedbackTwo: React.FC = () => {
 	const pts: [number, number][] = six.map((_, i) => [cc[0], yAt(i)]);
 	const chromN = Math.min(6, [0, 1, 2, 3, 4, 5].filter(i => f >= taps[i]).length);
 	const hiAt = (i: number) => vis(f, c.each2 + i * 12, c.each2 + i * 12 + 14, 4);
-	const chrN = Math.min(12, 2 * [0, 1, 2, 3, 4, 5].filter(i => f >= c.each2 + i * 12).length);
 	return (
 		<>
 			<Heading items={[[0, 'Question 2: the cell']]} size={64} />
@@ -325,7 +324,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 				</g>
 			</Overlay>
 			<Hand at={c.count + 14} x={96} y={830} size={52} color={AMBER_INK}>{`${chromN} centromeres = ${chromN} chromosomes`}</Hand>
-			<Hand at={c.each2 + 4} x={96} y={890} size={52} color={AMBER_INK}>{`${chrN} chromatids`}</Hand>
+			<Hand at={c.twelve} x={96} y={890} size={52} color={AMBER_INK}>6 x 2 = 12 chromatids</Hand>
 			<Right at={c.meta} x={980} y={200}>metaphase</Right>
 			<Right at={c.six + 4} x={980} y={286}>6 chromosomes (12 chromatids)</Right>
 			<Wrong at={c.w1} x={980} y={410} w={850} text="12 chromosomes" why="you counted chromatids" />

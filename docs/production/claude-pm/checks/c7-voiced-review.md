@@ -70,3 +70,22 @@ None.
 ## Verdict
 
 **Fix first (small to medium).** No blockers. SHOULD FIX 1 (overprinted axis label), 2 and 3 (pressure raises the rate with no picture or gauge response), 4 to 6 (overprints), 7 (bar against "over 95%") and 9 (an unspoken cell) should be fixed before the full export. SHOULD FIX 10 is the painted-plate list under the owner standing rule. 8 and 11 are screen edits. No narration change is required apart from the optional clause in SHOULD FIX 9. Playback-speed motion, particle animation timing and human listening remain pending.
+
+
+## Fixes applied (14 Oct)
+
+Visual, reveal-timing and on-screen text changes only; narration, audio and alignment untouched. Checked with stills at the changed frames; playback-speed motion and human listening are still pending. Preview: Explainer-chem-m5-c07-preview-v2.
+
+1. Feedback temperature catalyst note: done. The note now sits 58 px under the axis label (y 628 and 670); the "250 C: lower, but sooner" label moved to the left, above its dashed line, clear of both curves.
+2. Pressure scene crowding picture: done. A coded gas box with a piston (CrowdBox) squeezes the same particles into less space on "Squeezing crowds the particles", collision flashes become more frequent, the caption "more collisions each second" appears, and the two rate bars now rise on "both rates rise". It fades out before the extra ammonia key arrives.
+3. Yield scene gauge response: done. When the pressure slider moves ("Squeezing shifts..."), the yield needle lifts and the rate needle moves part-way, with a "faster too" tag over the rate gauge.
+4. Catalyst scene labels: done. The inset gained axis labels (energy, progress of reaction), reads "lower pathway, both directions" inside its (taller) card, "same ceiling / sooner, not different" moved 30 px down and fades before the hotter-reactor labels, and the ring is wider.
+5. Pressure scene cost labels and cross: done. The leak group moved left and the 1000 atm marker and cross moved right, so the cross no longer lands on the pipe. The three cost labels did not collide in the stills rendered here.
+6. Recycle labels: done. "stay gases" moved below "tank" (no double draw); the fifth-ammonia sample and its two labels moved 120 px right of the reactor and its label.
+7. Recycle bar versus "over 95%": done. The "total ammonia made" bar now follows the percentage and ends at about 95 percent.
+8. Dot colour key: done. A small N2, H2, NH3 key (GasKey) shows in the yield gas box, the time tube and the plant loop scenes.
+9. Unspoken Removal Limit cells: done. "recycle the unused gas" removed from the model answer table and from the feedback pressure and removal table (neither is spoken there).
+10. Painted plates: deferred to brief 31. Coded reactor, cooler, tank, pump, steel wall, flame, leak and iron pellets stay for now; they are tidy and labelled.
+11. Key notes: done. Six bullets, 113 words (was about 150); "has" corrected to "have"; condensing and recycling split into its own bullet; the aid card and "Pause the video if you need more time to copy." kept; scene length unchanged.
+
+Nice to have also done: "450 C" no longer wraps (non-breaking space).

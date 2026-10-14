@@ -12,6 +12,7 @@ const KIND = ['L', 'L', 'S', 'S'] as const;
 const NUC = 262;
 const HL = 125; // half length of the long chromosome (200 * SZ / 2)
 const GL = '#5d646b';
+const HALO = '0 0 5px #ece3ee, 0 0 5px #ece3ee, 0 0 8px #ece3ee, 0 0 8px #ece3ee';
 
 const Bubble: React.FC<{x: number; y: number; at: number; r?: number}> = ({x, y, at, r = 26}) => {
 	const f = useCurrentFrame();
@@ -25,7 +26,7 @@ const Bubble: React.FC<{x: number; y: number; at: number; r?: number}> = ({x, y,
 export const SceneModelAlleles: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('model-alleles'), {
-		here: 'Here is our model', pairs: 'two pairs', upper: 'the upper gene', plum1: ['plum version', 1], teal1: ['teal version', 1], lower: 'the lower gene', short: 'The short pair', plum2: ['plum version', 2], teal2: ['teal version', 2], label: 'We label', cap: 'a capital', again: 'again',
+		here: 'Here is our model', genes: 'three genes', pairs: 'two pairs', upper: 'the upper gene', plum1: ['plum version', 1], teal1: ['teal version', 1], lower: 'the lower gene', short: 'The short pair', plum2: ['plum version', 2], teal2: ['teal version', 2], label: 'We label', cap: 'a capital', again: 'again',
 	});
 	const P = posI;
 	const bd = (i: number, lvl: 'top' | 'bot'): [number, number] => { const [x, y] = P(i, 0); return beadAt(x, y, KIND[i], 1, lvl, 'A', 0); };
@@ -53,8 +54,8 @@ export const SceneModelAlleles: React.FC = () => {
 			<Pill at={c.pairs} out={c.upper - 10} x={CX - 345} y={170} size={44}>model cell: 4 chromosomes (2 sets of 2)</Pill>
 			<Pill at={c.upper + 24} x={CX - 310} y={168} size={44}>same gene, two versions</Pill>
 			<Overlay><DrawPath d={`M${CX - 160},234 Q${CX - 150},330 ${CX - 128},${CY - 66}`} at={c.upper + 40} dur={20} color={AMBER_INK} width={4} dash="3 10" /></Overlay>
-			<Pill at={c.again} x={130} y={880} size={44}>allele: a version of a gene</Pill>
-			<Overlay><Scribble cx={beadAt(CX + SCATTER[2][0], CY + SCATTER[2][1], 'S', 1, 'top', 'A', 0)[0]} cy={beadAt(CX + SCATTER[2][0], CY + SCATTER[2][1], 'S', 1, 'top', 'A', 0)[1]} rx={30} ry={30} at={c.again} color={AMBER_INK} seed={2} /></Overlay>
+			<GreyTag at={c.genes} out={c.upper + 60} x={130} y={880} text="gene: a section of DNA with one instruction" size={32} />
+			<Overlay><g opacity={vis(f, c.short + 10, c.label - 8, 10)}><Scribble cx={beadAt(CX + SCATTER[2][0], CY + SCATTER[2][1], 'S', 1, 'top', 'A', 0)[0]} cy={beadAt(CX + SCATTER[2][0], CY + SCATTER[2][1], 'S', 1, 'top', 'A', 0)[1]} rx={30} ry={30} at={c.short + 10} color={AMBER_INK} seed={2} /></g></Overlay>
 			<GreyTag at={c.label} x={820} y={888} text="letters are labels only, no dominance" size={34} />
 		</>
 	);
@@ -97,8 +98,8 @@ export const ScenePairUp: React.FC = () => {
 				<Arrow x1={CX + 275} y1={CY - 60} x2={CX + 430} y2={CY - 60} at={c.end} color={AMBER_INK} width={6} />
 			</Overlay>
 			<Pill at={c.sister} out={c.pro - 6} x={CX - 400} y={168} size={42}>copied once: each chromosome has 2 sister chromatids</Pill>
-			<Hand at={c.side + 14} x={mid1 - 135} y={CY + 158} size={38} w={270} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pair, side by side</span></Hand>
-			<Hand at={c.side + 22} x={mid2 - 125} y={CY + 158} size={38} w={250} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pair</span></Hand>
+			<Pill at={c.side + 14} x={mid1 - 130} y={CY + 158} size={30}>homologous pair,<br />side by side</Pill>
+			<Pill at={c.side + 22} x={mid2 - 80} y={CY + 158} size={30}>another pair</Pill>
 			<GreyTag at={c.first} x={1450} y={330} text="mitosis: no pairing" size={34} />
 			<MStrip at={[c.pro, null, null, null, null, null, null, null]} active={f >= c.pro ? 0 : -1} note={c.pro + 28} />
 		</>
@@ -216,11 +217,6 @@ export const SceneCrossingMakes: React.FC = () => {
 					<DrawPath d="M1290,290 L1370,370" at={c.newA} dur={8} color="#7a8088" width={8} />
 					<DrawPath d="M1370,290 L1290,370" at={c.newA + 6} dur={8} color="#7a8088" width={8} />
 				</g>
-				{/* the crossing point */}
-				<g opacity={prog(f, c.combos + 20, 14)}>
-					<circle cx={ZX(PAIRED[0][0] + 45)} cy={ZY(0.62 * 250 - HL)} r={14} fill="none" stroke={AMBER} strokeWidth={5} />
-					<DrawPath d={`M${ZX(PAIRED[0][0] + 45) + 16},${ZY(24)} L1010,780`} at={c.combos + 24} dur={16} color={AMBER_INK} width={3.5} dash="3 9" />
-				</g>
 				<g opacity={prog(f, c.sister, 12)}>
 					<Scribble cx={ZX(xs[0]) + 30} cy={ZY(0)} rx={84} ry={236} at={c.sister} color={AMBER_INK} seed={5} />
 				</g>
@@ -228,10 +224,7 @@ export const SceneCrossingMakes: React.FC = () => {
 			{tags.map((tg, i) => <Hand key={tg} at={tAt[i] + 8} x={LBX[i] - 52} y={ZY(-HL) - 120} size={52} w={104} color={INK}><span style={{display: 'block', textAlign: 'center'}}>{tg}</span></Hand>)}
 			<Hand at={c.all + 14} x={ZX(xs[0]) - 20} y={ZY(136) + 14} size={50}>4 different chromatids</Hand>
 			<GreyTag at={c.newA + 8} x={1390} y={310} text="no new allele" size={38} />
-			<Line at={c.combos + 8} x={1260} y={440} w={620} size={34} weight={700}>normal and regulated, not an error</Line>
-			<Line at={c.sister + 4} x={1260} y={540} w={620} size={34} weight={700}>swapped pieces keep their colour: sister chromatids now differ</Line>
-			<Line at={c.sister + 28} x={1260} y={680} w={620} size={34} weight={700} color={INK_SOFT}>the short pair can cross over too (not drawn)</Line>
-			<GreyTag at={c.combos + 40} x={1010} y={790} text="crossing points also help hold the pair together" size={30} />
+			<Pill at={c.newA + 20} x={96} y={100} size={38}>allele: a version of a gene</Pill>
 			<MStrip at={[-100, null, null, null, null, null, null, null]} active={0} />
 		</>
 	);

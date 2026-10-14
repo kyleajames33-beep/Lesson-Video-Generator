@@ -127,7 +127,7 @@ export const SceneRateLink: React.FC = () => {
 				<HiCard h="0.20" i="0.20" hi="0.50" />
 				<Key8 at={-100} />
 				<Tube x={TUBE8.x} y={TUBE8.y} w={TUBE8.w} h={TUBE8.h} counts={counts} />
-				<Ring cx={TUBE8.x + TUBE8.w / 2} cy={TUBE8.y + TUBE8.h / 2} rx={140} ry={140} at={KR.made + 10} out={KR.made + 70} color={BLUE} seed={5} width={5} />
+				<Ring cx={TUBE8.x + TUBE8.w / 2} cy={TUBE8.y + TUBE8.h / 2} rx={128} ry={132} at={KR.made + 10} out={KR.made + 70} color={BLUE} seed={5} width={5} />
 				{/* the two rate lines */}
 				<Sx x={AX} y={300} text="forward = 0.05 × [H_2][I_2]" size={38} color={BLUE} at={KR.join} />
 				<Sx x={AX} y={400} text="reverse = (0.05 ÷ 49) × [HI]^{2}" size={38} color={AMBER_INK} at={KR.split} />
@@ -164,8 +164,7 @@ export const SceneRateLink: React.FC = () => {
 				<Fade at={KR.ab8}>
 					<Sx x={BARS8.x0} y={526} text="forward about 8 times faster" size={36} color={BLUE} hand at={KR.ab8} />
 				</Fade>
-				<Tag x={BARS8.x0} y={566} w={270} text="made-up rate scale" at={KR.faster} size={24} />
-				<Tag x={BARS8.x0 + 282} y={566} w={170} text="in this model" at={KR.faster + 8} size={24} />
+				<Tag x={BARS8.x0} y={580} w={440} text="made-up rate scale, in this model" at={KR.faster} size={24} />
 			</Overlay>
 		</>
 	);
