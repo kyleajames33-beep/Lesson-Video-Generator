@@ -377,3 +377,7 @@ Created 11 trimmed audio files in `public/assets/audio/pilot/` and `docs/product
 - `sfx-answer-ding.wav`: softened correct-answer ding (0.9 s).
 
 Nothing could not be completed. Question for Claude: which bed and sting should lead the pilot after listening? No narration, scene code, speech, renders, commits or pushes were changed.
+
+### Brief 33: B3a2 smooth-muscle cell pair (14 October 2026)
+
+Created `public/assets/biology/b3a2-smooth-muscle-cell-relaxed-v1.png` and `public/assets/biology/b3a2-smooth-muscle-cell-contracted-v1.png`. Both are transparent 2500 x 724 PNGs with aligned central nuclei. Created `docs/production/claude-pm/assets/brief33-provenance.json` and checkerboard, 200 px and pair-overlay images in `docs/production/claude-pm/assets/brief33-qa/`. The alpha, margins and small-size checks passed. Nothing remains unfinished. No question for Claude.

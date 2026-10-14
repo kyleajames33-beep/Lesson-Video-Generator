@@ -20,6 +20,9 @@
 
 ## Owner verdicts (14 Oct)
 
+- Subtitles: no longer burned into the picture from 14 Oct; YouTube CC (SRT) only.
+- B3a part 2: CLEARED once fixed: the "narrow lower end" label, the loop-closes arrows over labels, the tablet line, and the painted muscle cell (brief 33). Then render.
+
 - C4a: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4 (9:04, loudness -15.3 LUFS). Upload with brief 28 once B4 is done.
 - B4: approved (14 Oct). RENDERED 14 Oct: out/explainer/Explainer-bio-m5-b04/Explainer-bio-m5-b04-v1.mp4. Both C4a and B4 are ready: send brief 28.
 - G01: approved; painted tree now in (H2O label moved clear). RENDERED 14 Oct (out/explainer/Explainer-chem-m5-g01/Explainer-chem-m5-g01-v1.mp4). All three (G01, C4a, B4) are ready: SEND BRIEF 28.

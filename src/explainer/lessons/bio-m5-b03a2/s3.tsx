@@ -159,7 +159,7 @@ export const SceneTrigger: React.FC = () => {
 					);
 				})}
 			</Overlay>
-			<Say at={c.narrow} x={610} y={826} w={800} size={28} color={INK_SOFT} weight={600}>the narrow lower end of the uterus</Say>
+			<Say at={c.narrow} x={300} y={846} w={440} size={28} color={INK_SOFT} weight={600}>the narrow lower end of the uterus</Say>
 			<LoopCard at={0} fill1={0} />
 			<div style={{display: 'none'}}>{[PIT, SLATE_INK, Cross, AMBER, along, CERVIX_BOX, LoopIcon, MAGENTA, VIOLET, BarHead, HandText, FONT_DISPLAY, INK].length}</div>
 		</>

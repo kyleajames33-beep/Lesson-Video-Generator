@@ -1,0 +1,70 @@
+[
+  {
+    "file": "public/assets/biology/b3a2-smooth-muscle-cell-relaxed-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a139a6-e025-7d41-ab22-595e4345e2b4\\exec-9bc1edfb-0b9d-4bcf-a6c3-5151d3daa7d4.png",
+    "size": [
+      2500,
+      724
+    ],
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": "B3a2 smooth-muscle cell pair",
+    "part_of": null,
+    "sha256": "87a565d2aa05920c535d4ebf45abf5b324258d8d712c0f26c4f4ed04e9451e7c",
+    "prompt": "One uterine smooth-muscle cell in relaxed state, long slim horizontal spindle with tapered ends, single elongated central nucleus, soft pink-red cytoplasm with faint lengthwise fibres. Naturalistic ink and watercolour textbook plate matching the B3a thick-lining uterus reference. Transparent background. No receptors, hormone molecules, surface marks, text, labels, arrows or numbers.",
+    "postprocess": "Centred original pixels on a wider transparent canvas to provide at least 8 percent margin; no drawing, scaling or recolouring.",
+    "checks": {
+      "rgba": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_margins": [
+        0.0832,
+        0.2831,
+        0.0912,
+        0.297
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text_labels_arrows_numbers": true,
+      "no_receptors_or_hormones": true,
+      "small_size_review": "200 px checkerboard QA image",
+      "aligned_nucleus": "Visual overlay checked"
+    }
+  },
+  {
+    "file": "public/assets/biology/b3a2-smooth-muscle-cell-contracted-v1.png",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a139a6-e025-7d41-ab22-595e4345e2b4\\exec-30815d6b-f1d2-4e80-9117-ed7e15656d45.png",
+    "size": [
+      2500,
+      724
+    ],
+    "model": "built-in imagegen",
+    "retakes": 0,
+    "set": "B3a2 smooth-muscle cell pair",
+    "part_of": null,
+    "sha256": "8d84ec4696be178b85a0a0780129fa6666aa92ff147aba0b498a1716256f87c2",
+    "prompt": "Edit the relaxed cell into the contracted state on the same transparent canvas. Keep its central nucleus in the same position and size, preserve the pink-red ink and watercolour style and clear cell surface. Shorten and thicken the body with subtle bunching of the lengthwise fibres. No receptors, hormone molecules, text, labels, arrows or numbers.",
+    "postprocess": "Centred original pixels on a wider transparent canvas to provide at least 8 percent margin; no drawing, scaling or recolouring.",
+    "checks": {
+      "rgba": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_margins": [
+        0.24,
+        0.2541,
+        0.24,
+        0.2555
+      ],
+      "minimum_margin_pass": true,
+      "visual_subject_checked": true,
+      "no_text_labels_arrows_numbers": true,
+      "no_receptors_or_hormones": true,
+      "small_size_review": "200 px checkerboard QA image",
+      "aligned_nucleus": "Visual overlay checked"
+    }
+  }
+]

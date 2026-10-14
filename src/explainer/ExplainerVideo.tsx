@@ -130,7 +130,7 @@ export const ExplainerVideo: React.FC<{config: ExplainerConfig}> = ({config}) =>
 				<span style={{color: accent}}>{config.subjectLabel}</span> · {config.topicLabel}
 			</div>
 			<Tracker config={config} starts={starts} accent={accent} />
-			<Captions groups={groups} starts={starts} />
+			{config.burnCaptions ? <Captions groups={groups} starts={starts} /> : null}
 		</AbsoluteFill>
 	);
 };
