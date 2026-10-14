@@ -17,6 +17,9 @@
 
 ## Send next (14 Oct)
 
+00. Painted plates the reviewers asked for in C7, C8, B5a and B5b (reactor, cooler, tank, compressor, catalyst pellets; hot tube, thermometer, stopwatch, flasks; shedding skin cells, plant cell plate; the brothers' parents):
+   `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/31-plates-c7-c8-b5a-b5b.md.`
+
 0. Fact check of the two HSC equilibrium question-type videos (part 1 explain and predict, part 2 calculations), both through review and science checks:
    `Read docs/production/claude-pm/codex-prompts/00-standing-rules.md, then do docs/production/claude-pm/codex-prompts/30-g02-g03-check-and-assets.md.`
    Then read the two scripts yourself before any voicing: docs/production/claude-pm/lessons/chem-m5-g02.md and chem-m5-g03.md (about 10 and 10.5 minutes).
