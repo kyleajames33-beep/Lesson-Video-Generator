@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b6a/lesson.json",
+    "lessonSha256": "551aa72a10a0466113503709188323dc65b1c0760e46e6aa97d364b115575b95"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B4 to B5b and the single-celled organisms video: DNA is a double helix of two strands with four bases (A, T, C, G) copied accurately before division; a chromosome is one long DNA molecule, and the human body cell has 46 in two sets of 23; chromosomes are condensed for mitosis; bacteria divide by binary fission, have no nucleus, pass DNA by conjugation and can be antibiotic resistant; mitochondria release energy from food and chloroplasts carry out photosynthesis; opposite charges attract. Not assumed: prokaryote, eukaryote, nucleoid, plasmid, histone, nucleosome, chromatin, circular and linear molecules, supercoiling, endosymbiosis.",
+    "startsWith": "About two metres of DNA in a nucleus a few thousandths of a millimetre across, and the question of how a cell stores DNA this long and still uses it, with a bacterium that has no nucleus for comparison.",
+    "stopsAfter": "Saying the difference is where DNA is kept and how it is arranged, not what it is made of; naming prokaryote and eukaryote by the nucleus; describing a bacterium's usual DNA (one circular chromosome in the nucleoid, no membrane, coiled and held by proteins) and plasmids; describing a eukaryote's DNA (several linear chromosomes in a nucleus, wound on histones as nucleosomes and chromatin, loosened to read a gene and tightened for division); describing the small circular DNA in mitochondria and chloroplasts and why it looks bacterial; comparing the forms side by side; applying all of it to an unseen drawing and an unseen claim. No Griffith or Avery history, no transformation, no archaeal histones, no nucleosome numbers, no transcription detail.",
+    "nextLesson": "B6b: how a cell reads one gene by copying a section of DNA into mRNA."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b06a.md"
+  ],
+  "teaching": {
+    "task": "Compare how DNA is arranged in a prokaryotic and a eukaryotic cell and explain why the arrangement matters.",
+    "causalExplanation": "Both cell types store genes in the same double helix, so the difference is where it is kept and how it is arranged. A bacterium has no nucleus, so its main DNA is one ring lying in the membrane-free nucleoid, and because the ring is several hundred times longer than the cell, enzymes twist it and proteins grip the coils to hold it compact, with plasmids as small separate rings. A eukaryote keeps several linear chromosomes in a nucleus, and because DNA is negatively charged and histones positively charged, the thread winds on histones into nucleosomes and chromatin. The winding is adjustable, so the cell can loosen the thread to read a gene and tighten it before division. Mitochondria and chloroplasts keep their own small rings because they came from bacteria.",
+    "conversationalApproach": "Opens on two metres of thread in a tennis-ball nucleus, keeps one fixed split board of bacterium and eukaryote cell throughout, dims the half not being explained, explains each cause before naming the term, uses a thread-on-spool picture and a twisted rubber band with their limits stated, builds the side-by-side table, teaches the compare sentence frame, and checks with two short unseen items.",
+    "openingDecision": "If you unwound the DNA in one of your cells you would have a thread about two metres long in a nucleus a few thousandths of a millimetre across. How does a cell store it and still use it, and does a bacterium do it differently?",
+    "understandingCheck": "For two drawn cells where Q has a nucleus holding 8 chromosomes, say which is the prokaryote with one piece of evidence and where Q has other DNA and its shape; then correct the claim that bacterial DNA floats loose and that 46 is all of a human cell's DNA.",
+    "curriculumScope": "Construct appropriate representations to model and compare the forms in which DNA exists in eukaryotes and prokaryotes (Module 5, p1045). The learner construction stays with the practical-style video. Griffith and Avery, transformation, archaeal histones, nucleosome numbers and transcription are held back."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, one deep plum DNA thread colour for every ring, rod and thread, warm sand histone spools, dashed ink rings for membranes and solid ink for walls, a fixed split board (bacterium left, eukaryotic cell right), thread and spool winding, a coiling ring, scale bars and a compare table. Amber is the tag and emphasis colour; blue and green are not used.",
+    "transitionPlan": "The hook board splits into the fixed bacterium and eukaryote halves; the half not being explained dims to about 30 per cent through scenes 3 to 9; camera pushes reach the bacterium and the rod; the spool plate fades while the wound discs stay; the compare table builds on the same split board with both halves at full strength and stays for the sentence frame; the attempt boards remove the aids and the feedback rebuilds the drawing and the claim card; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Coded human cell (or painted animal cell plate) with a plum DNA thread drawing out of the nucleus, a tennis ball morph, a landmark strip and a bacterium sliding in to split the board",
+      "teachingReason": "Poses the scale puzzle (two metres of DNA in a tiny nucleus) and the comparison question with a bacterium that has no nucleus",
+      "narrationCue": "two metres / six thousandths of a millimetre / Blow that nucleus up / a bacterium, which has no nucleus",
+      "motionPurpose": "A helix flashes then a plum thread draws out of the nucleus across the screen, the nucleus morphs to a tennis ball while the thread runs off the edge past landmarks, then a bacterium slides in and the board splits",
+      "motionRole": "explain",
+      "onScreenChange": "The helix flashes with \"billions of letters\"; the cell centres with a pen ring on the nucleus; the plum thread draws across the full width with \"about 2 metres\"; a tiny ring reads \"nucleus: about 6 micrometres (0.006 mm)\"; on \"Blow that nucleus up\" the nucleus morphs into a tennis ball tagged \"enlarged about 11,000 times\" and the thread runs off the edge past landmarks to \"more than 10 km\"; a bacterium slides in on the left, the board splits and the heading \"How is DNA arranged in a bacterium and in your cells?\" writes on",
+      "motionTools": [
+        "DrawPath thread",
+        "CameraStage push",
+        "ScribbleCircle",
+        "morph",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the question"
+    },
+    {
+      "sceneId": "two-kinds-of-cell",
+      "visualDecision": "adjust",
+      "visualReference": "Split board with a bacterium on the left and a eukaryotic cell on the right, the b04 helix collapsing to a plum thread in each, a dashed nuclear envelope and a grey cross over a ghost envelope",
+      "teachingReason": "Says where the DNA sits and what encloses it before naming prokaryote and eukaryote, and keeps the DNA as the same molecule in both",
+      "narrationCue": "the same double helix / where the DNA is kept / a nucleus, an inner compartment with a membrane / has no nucleus / Bacteria are the prokaryotes",
+      "motionPurpose": "The helix draws on and collapses to a plum thread in each cell, scribble circles land on each interior, the dashed envelope draws round the right cell DNA, and a cross lands on a ghost envelope on the left",
+      "motionRole": "explain",
+      "onScreenChange": "The helix draws on with \"same four bases, A, T, C, G\" then collapses to a plum thread in each cell tagged \"one thread = the whole double helix\"; scribble circles land on each cell interior; the dashed envelope draws round the right DNA with \"eukaryote: DNA inside a nucleus\"; a grey cross lands on a ghost envelope on the left with \"prokaryote: no nucleus\"; a bacterium doodle ticks",
+      "motionTools": [
+        "DrawPath helix",
+        "ScribbleCircle",
+        "dashed ring draw",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "bacterium-ring",
+      "visualDecision": "adjust",
+      "visualReference": "Camera push into a painted rod-shaped bacterium plate with a coded plum DNA thread whose ends fuse into a ring, a pale nucleoid patch and a ghost dashed ring",
+      "teachingReason": "Builds the bacterial chromosome in order: ends joined, so a ring, then the membrane-free nucleoid region",
+      "narrationCue": "whose two ends are joined / lies in one region / nucleoid / has no membrane",
+      "motionPurpose": "The thread draws across the cell with amber end dots, the ends travel together and fuse into a ring with a click, the ring settles into a pale patch that is circled, and a grey cross lands on a ghost dashed ring",
+      "motionRole": "explain",
+      "onScreenChange": "The right half of the board dims; the thread draws with amber end dots; on \"whose two ends are joined\" the ends fuse into a ring and \"circular chromosome: a ring\" writes on; on \"lies in one region\" the ring settles into a pale patch with a scribble circle; \"nucleoid\" writes in amber with the gloss \"nucleus-like\"; on \"has no membrane\" a grey cross lands on a ghost dashed ring with \"no membrane around it\"",
+      "motionTools": [
+        "CameraStage push",
+        "DrawPath thread",
+        "ring fuse",
+        "ScribbleCircle",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "coiling",
+      "visualDecision": "new",
+      "visualReference": "Coded giant ring crossing the cell wall with a scale bar (about 1.5 mm against 2 to 4 micrometres), a rubber-band loop twisting, a coiled ring with sand-coloured protein blobs, and a crossed tangled ghost",
+      "teachingReason": "Shows why the ring cannot float loose (far longer than the cell) and how twisting and protein grips pack it without a membrane",
+      "narrationCue": "one and a half millimetres / Enzymes twist the ring / proteins grip the coiled ring / not floating loose",
+      "motionPurpose": "The ring swells to a giant loop beside the scale bar, a rubber-band loop twists, the cell ring twists into coils, protein blobs snap on at many points, and a cross lands on a tangled ghost",
+      "motionRole": "explain",
+      "onScreenChange": "The ring swells into a giant loop crossing the cell wall with the scale bar \"ring about 1.5 mm; cell about 2 to 4 micrometres\"; a rubber-band loop tagged \"analogy: twisting a loop of rubber band\" twists; the cell ring twists and folds into coils; sand-coloured blobs snap on at many points with \"held compact by proteins\"; the coiled ring fits the nucleoid patch; a grey cross lands on a tangled ghost with \"not floating loose\"",
+      "motionTools": [
+        "scale bar",
+        "coil twist",
+        "blob snap-on",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "plasmids",
+      "visualDecision": "new",
+      "visualReference": "Two or three small plum rings in the bacterium outside the nucleoid, a gene bead with a pill icon, a second bacterium joined by a conjugation tube, and a grey tool tag",
+      "teachingReason": "Defines plasmids as small separate rings, copied separately, and ties antibiotic resistance spread to conjugation the learner has seen",
+      "narrationCue": "small, separate rings / copies a plasmid separately from the main chromosome / extra genes / pass DNA to each other",
+      "motionPurpose": "Small rings appear and are circled, one plasmid pulses and splits while the main ring stays still, a resistance bead lights, then a second bacterium slides in and a plasmid copy travels across a thin tube",
+      "motionRole": "explain",
+      "onScreenChange": "Two or three small rings appear outside the nucleoid with a scribble circle and \"plasmid: small, separate ring\", marked \"not to scale\"; one plasmid pulses and splits while the main ring stays still; a gene bead with a pill icon lights on one plasmid with \"e.g. antibiotic resistance gene\"; a second bacterium slides in with a thin tube \"conjugation, as in the single-celled video\" and a plasmid copy travels across and lights; the grey tag \"plasmids are also used as tools in biotechnology, later\" lands",
+      "motionTools": [
+        "ScribbleCircle",
+        "ring split",
+        "TravelingDotOnPath",
+        "gene bead light",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "eukaryote-linear",
+      "visualDecision": "adjust",
+      "visualReference": "Coded eukaryotic cell cutaway with the nucleus enlarged, plum rods with amber end dots, a ticker to 46 with a model of 8 rods, and the rods straightening into the long thread",
+      "teachingReason": "Shows that the eukaryotic DNA is several linear chromosomes, each one molecule with two ends, and sets up why the packing matters",
+      "narrationCue": "one ring / several chromosomes / one DNA molecule with two ends / those two metres / That is why the packing matters",
+      "motionPurpose": "The camera moves to the right cell, a ghost ring flashes grey, the rods are counted by a pen tap, one rod lights with its two ends flashing, then the rods straighten into the long thread beside a nucleus-size line",
+      "motionRole": "explain",
+      "onScreenChange": "The camera moves to the right cell and the left half dims; plum rods fill the nucleus; on \"one ring\" a ghost ring flashes grey and fades; on \"several chromosomes\" a ticker runs to 46 with \"model: 8 shown; human: 46\"; on \"one DNA molecule with two ends\" one rod lights and its ends flash with \"linear: two ends\"; on \"those two metres\" the rods straighten end to end with \"all 46 together: about 2 metres\"; on \"That is why the packing matters\" the line \"2 m of DNA in a nucleus about 6 micrometres across\" writes on with \"about 6 billion base pairs\"",
+      "motionTools": [
+        "CameraStage push",
+        "NumberTicker",
+        "ScribbleCircle",
+        "rod straighten",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "why-thread-winds",
+      "visualDecision": "new",
+      "visualReference": "Zoom into one rod, a painted spool and thread plate for one beat, sand-coloured histone discs with the plum thread winding round each, and negative and positive signs",
+      "teachingReason": "Explains why the thread winds (it must fit and be found) and what holds it (opposite charges) before naming histones",
+      "narrationCue": "wraps around groups of proteins called histones / negative charge / positive one / opposite charges attract",
+      "motionPurpose": "The camera zooms into one rod, a spool plate appears and fades, histone discs appear along the thread and the thread winds round each in turn, and minus and plus signs pulse",
+      "motionRole": "explain",
+      "onScreenChange": "The left half stays dimmed; a painted spool and thread plate tagged \"analogy: thread on a spool\" shows for one beat; on \"wraps around groups of proteins called histones\" sand discs appear along the thread and it winds round each in turn over about three seconds; \"-\" signs on the thread and \"+\" signs on the discs pulse on \"negative charge\" and \"positive one\" with \"opposite charges attract\"; the tag \"histone: a packaging protein\" lands",
+      "motionTools": [
+        "CameraStage push",
+        "WindOnSpools",
+        "sign pulse",
+        "plate fade",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "nucleosome-chromatin",
+      "visualDecision": "adjust",
+      "visualReference": "The wound discs from the last scene kept on screen with a scribble circle on one disc, a bracket along the beaded thread and the thread folding into a looser coil",
+      "teachingReason": "Names the nucleosome and chromatin as a separate short beat on a picture the learner has just seen",
+      "narrationCue": "nucleosome / chromatin / folds it further",
+      "motionPurpose": "The spool plate fades, a scribble circle lands on one wound disc, a bracket draws along the whole beaded thread, and the thread folds into a shorter coil",
+      "motionRole": "explain",
+      "onScreenChange": "The spool plate fades while the wound discs stay; on \"nucleosome\" a scribble circle lands on one disc with \"DNA wound on histones\"; on \"chromatin\" a bracket along the whole beaded thread writes \"chromatin\"; on \"folds it further\" the beaded thread folds into a looser, shorter coil with \"wound on histones, then folded further\"",
+      "motionTools": [
+        "ScribbleCircle",
+        "bracket draw",
+        "coil fold",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "loosen-to-read",
+      "visualDecision": "new",
+      "visualReference": "The beaded thread loosening and tightening around a gene bead, a magnifying glass reaching in, and a histone plus sign fading so the grip loosens",
+      "teachingReason": "Shows why the winding is adjustable: a gene can only be used when reachable, and chemical tags change how tightly histones grip",
+      "narrationCue": "loosen the thread where it needs to read a gene / tighten it elsewhere / weaken a histone's positive charge",
+      "motionPurpose": "The beaded thread loosens and tightens in a short loop, a pen taps a gene bead, the discs slide apart around it as a magnifying glass reaches in, the rest contracts, and a plus sign fades so the thread loosens",
+      "motionRole": "explain",
+      "onScreenChange": "The beaded thread loosens and tightens in a short loop while a pen taps a stretch with an amber gene bead; on \"loosen the thread where it needs to read a gene\" the discs slide apart around the bead and a magnifying glass reaches in with \"gene reachable\"; on \"tighten it elsewhere\" the rest contracts; on \"weaken a histone's positive charge\" the \"+\" on one histone fades and the thread loosens with \"weaker + : looser grip\"; the tags \"histone tag: a small chemical group added to a histone\" and \"read a gene = use its instructions (next video)\" land",
+      "motionTools": [
+        "WindOnSpools reverse",
+        "gene bead light",
+        "icon slide",
+        "sign fade",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "tight-for-division",
+      "visualDecision": "adjust",
+      "visualReference": "The nucleus with a chromatin fibre folding into the b05a bar and X chromosome shapes in the same plum colour, and a scale bar",
+      "teachingReason": "Ties the packing to mitosis the learner has met: much tighter winding makes short thick chromosomes that move without tangling",
+      "narrationCue": "wound far more tightly / thousands of times",
+      "motionPurpose": "The chromatin fibre folds and refolds into the bar and X chromosome shapes while the scale bar reads about 10,000 times shorter",
+      "motionRole": "explain",
+      "onScreenChange": "The board switches to the nucleus; the chromatin fibre folds and re-folds into the b05a bar and X shapes with \"mitosis chromosomes: chromatin wound tightly\"; the scale bar reads \"about 10,000 times shorter than stretched out\" (screen only)",
+      "motionTools": [
+        "fibre fold",
+        "scale bar",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "organelle-dna",
+      "visualDecision": "new",
+      "visualReference": "Painted animal cell cutaway with oval mitochondria outside the nucleus, a zoom to a small plum ring inside, a painted plant cell with chloroplasts, a bacterium drifting into a larger cell, and the 46 ticker with a ring added",
+      "teachingReason": "Shows extra circular DNA outside the nucleus and gives the reason (bacterial origin), and prevents 46 being read as all of the cell DNA",
+      "narrationCue": "Mitochondria / chloroplasts / came from bacteria that began living inside larger cells / In our cells / extra to the 46",
+      "motionPurpose": "The animal cell shows mitochondria and a zoom to a plum ring with copies fading in, a plant cell slides in with chloroplast rings, a bacterium drifts into a larger cell and a double arrow joins the two small rings, then the 46 ticker gains a ring",
+      "motionRole": "explain",
+      "onScreenChange": "An animal cell cutaway shows oval mitochondria outside an empty nucleus; a zoom shows a small plum ring with a few copies fading in and \"many copies (one ring drawn for clarity)\"; a plant cell slides in with chloroplast rings; a bacterium-shaped cell drifts into a larger cell with the grey tag \"endosymbiosis\"; the mitochondrion ring and a bacterium ring sit side by side with \"alike: small rings, own DNA\"; the animal cell returns and on \"extra to the 46\" the 46 ticker holds with a plum ring added and \"46 is the nucleus count only\"",
+      "motionTools": [
+        "CameraStage push",
+        "plate slide-in",
+        "ring copy fade",
+        "double arrow draw",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "side-by-side",
+      "visualDecision": "new",
+      "visualReference": "Coded compare table on the fixed split board with rows nucleus, main DNA, where, packaging and extra DNA, tiny plum icons in each cell and a same-double-helix bar under it",
+      "teachingReason": "Brings both arrangements together on the board the learner has used all lesson and states that the difference is the arrangement",
+      "narrationCue": "one main ring in the nucleoid / several linear chromosomes in a nucleus / same double helix / The difference is the arrangement",
+      "motionPurpose": "The table builds one row at a time on the cue words with a plum icon in each cell, and a bar for the same double helix and four bases appears beneath it",
+      "motionRole": "explain",
+      "onScreenChange": "Both halves return to full strength; the table builds with headings \"typical prokaryote (e.g. a bacterium)\" and \"typical eukaryote\"; row 1 nucleus (none / present), row 2 main DNA (one ring / several linear chromosomes), row 3 where (nucleoid, no membrane / inside the nucleus), row 4 packaging (coiled, held by proteins / wound on histones: chromatin), row 5 extra DNA (plasmids / rings in mitochondria and chloroplasts) each with a tiny icon; the bar \"same double helix, same four bases\" appears under the table",
+      "motionTools": [
+        "table build",
+        "icon pop",
+        "HandText write-on",
+        "bar reveal"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "writing-comparison",
+      "visualDecision": "new",
+      "visualReference": "The compare table with a pen lighting row 2, a sentence frame in hand type with blanks filling from the row, and a crossed one-sided chip",
+      "teachingReason": "Shows how a table row becomes a compare sentence with both sides, since exam answers need both sides in one sentence",
+      "narrationCue": "both sides in one sentence / a circular chromosome / several linear chromosomes / Try the packaging row / coiled and held by proteins / wound on histones as chromatin",
+      "motionPurpose": "A pen lights row 2, the sentence frame writes beneath it and the blanks fill with whereas in amber, a one-sided chip is crossed, then row 4 lights and the frame resets and fills",
+      "motionRole": "explain",
+      "onScreenChange": "A pen tap lights row 2 and the frame \"Bacterial DNA is ____, whereas eukaryotic DNA is ____.\" writes beneath; on \"a circular chromosome\" and \"several linear chromosomes\" the blanks fill with \"whereas\" in amber; the chip \"Bacteria have a ring. (one side only)\" is crossed; on \"Try the packaging row\" row 4 lights, the frame resets and the blanks fill on \"coiled and held by proteins\" and \"wound on histones as chromatin\"",
+      "motionTools": [
+        "pen tap",
+        "HandText write-on",
+        "Mark cross",
+        "row highlight"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Two big handwritten amber lines with a bare bacterium doodle and a nucleus doodle, the nucleoid gloss sliding in, and a second pair of lines with a ring, rods and a mitochondrion",
+      "teachingReason": "Gives two reusable aids after the arrangement is understood: the Greek roots for the nucleus and a ring-versus-lines shape line",
+      "narrationCue": "Karyon / Pro means before / Eu means good / bacteria use a ring",
+      "motionPurpose": "The pro-karyote line writes on, then the eu-karyote line, the nucleoid gloss slides in beside them, and a second pair of lines writes on with a ring, rods and a mitochondrion",
+      "motionRole": "explain",
+      "onScreenChange": "\"pro-karyote: before a kernel (no nucleus)\" writes on with a bare bacterium doodle; \"eu-karyote: eu = good, a proper (true) nucleus\" writes on with a nucleus doodle; underlines land under \"pro\", \"eu\" and \"karyon\"; the \"nucleoid = nucleus-like\" gloss slides in as the same word family; then \"bacteria: ring\" and \"us: lines, in a nucleus\" write on with the ring and rods, and \"ring kept in mitochondria\" with a small mitochondrion",
+      "motionTools": [
+        "HandText write-on",
+        "underline draw",
+        "icon pop",
+        "gloss slide-in"
+      ],
+      "holdPurpose": "Hold about half a second after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Two coded cells P and Q at the same size with only the letters on them (P a rod with a coiled ring in a clear patch and two small rings, Q a round cell with a dashed nucleus holding eight rods and two oval organelles with small rings), the stem and two demands",
+      "teachingReason": "Unseen transfer on telling the cell types apart and locating the extra DNA, with every condition visible and no answer cues",
+      "narrationCue": "a drawing of two cells / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "Cells P and Q draw in with only their letters; the stem \"Cell Q has 8 chromosomes in its main DNA.\" and the demands \"(a) Which cell is the prokaryote? Give one piece of evidence from the drawing. (b) Besides those 8 chromosomes, where else in Q is there DNA, and what shape is it?\" write on with two answer boxes; no structure is named; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "A quotation card with a student claim about floating loose DNA and 46 as all of the DNA, two demands and two answer boxes",
+      "teachingReason": "Unseen transfer on two likely misconceptions, with the whole claim and both demands visible and no answer cues",
+      "narrationCue": "a student's claim / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The quotation card writes on; the demands \"(c) Correct the idea that their DNA floats loose. (d) Correct the idea that 46 is all of the cell's DNA.\" appear with two answer boxes; the card and demands stay on screen; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt drawing enlarged with a tick on P, a cross on the empty nucleus space, the nucleoid and plasmids circled and labelled, the eight rods in Q ticked and the mitochondria zoomed with their rings",
+      "teachingReason": "Explains item one with the drawing: P is the prokaryote, its nucleoid and plasmids, Q nucleus rods, and the extra rings sit in mitochondria",
+      "narrationCue": "Cell P is the prokaryote / two small rings are plasmids / Cell Q has a nucleus / small rings inside each mitochondrion",
+      "motionPurpose": "A tick lands on P, the clear patch is circled and named, the plasmids are circled, the envelope on Q pulses as eight rods tick, and the mitochondria zoom with their rings while a wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The drawing enlarges; on \"Cell P is the prokaryote\" a green tick lands on P and a grey cross on the empty space where a nucleus would be; a scribble circle lands on the clear patch and \"nucleoid\" writes in amber; on \"two small rings are plasmids\" a circle lands on each with \"plasmids\"; on \"Cell Q has a nucleus\" the dashed envelope pulses and the eight rods tick 1 to 8; on \"small rings inside each mitochondrion\" the organelles zoom and are labelled \"mitochondria\" with a dashed arrow \"outside the nucleus\"; the chip \"the extra DNA is in the nucleus\" is crossed",
+      "motionTools": [
+        "tick",
+        "Mark cross",
+        "ScribbleCircle",
+        "NumberTicker",
+        "CameraStage push"
+      ],
+      "holdPurpose": "Settle on the corrected drawing"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The quotation card enlarged with each half struck through in turn, the coiled ring replaying in the nucleoid, the nucleus with the 46 ticker and mitochondria rings, and the 92 count",
+      "teachingReason": "Explains item two: bacterial DNA is organised, 46 is the nuclear count only, and copying gives 92 nuclear molecules",
+      "narrationCue": "does not float loose / twisted into coils / forty-six / ninety-two",
+      "motionPurpose": "The card enlarges and the first half is struck through as the ring replays coiled in the nucleoid, then the 46 ticker gains the mitochondrial rings and briefly shows 92 before the corrected statements write on",
+      "motionRole": "explain",
+      "onScreenChange": "The card enlarges and each half takes a grey strike-through as it is corrected; the ring replays coiled in the nucleoid with \"coiled, held by proteins: organised, not loose\"; the nucleus with 46 rods and the ticker \"46\" shows mitochondria rings and a second counter \"46 + rings\" with \"46 = nuclear DNA molecules only (before copying)\"; on \"ninety-two\" the ticker briefly shows 92 with each rod showing two strands and \"after copying: 2 DNA molecules in each of the 46 chromosomes = 92, still nuclear DNA\"; the corrected statements write on in amber",
+      "motionTools": [
+        "strike-through",
+        "coil twist",
+        "NumberTicker",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Settle on the corrected statements"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three question chips with nucleus, ring and rod, and spool icons that tick on the matching half of the split board, and a next chip with a gene-to-mRNA doodle",
+      "teachingReason": "Packs the lesson into three reusable questions about any picture of DNA and hands off to how a gene is read",
+      "narrationCue": "is there a nucleus / a ring or a line / wound on histones / Next",
+      "motionPurpose": "The three question chips write on one at a time and each ticks on the matching half of the board, then a next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "Three chips write on one at a time (\"nucleus?\", \"ring or line?\", \"on histones?\") each with a small icon; each ticks on the matching half so the left lights \"bacterium\" and the right lights \"eukaryote\" (screen only); both halves are at full strength; the chip \"Next: how a gene is copied into mRNA\" slides in with a gene-to-mRNA doodle",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the compare table, the four essentials and the memory line in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the compare table appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 75 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b6a-learning-review.md",
+      "sha256": "354b1b9584b28c4229c49bdd2d7367f4dfd1a4307985170001ee1850dbaafe11"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b6a-claude-science-check.md",
+      "sha256": "d1da3070f064cd0f872e9689168ab4205078f31ebd1e2119b9f48e4cec672523"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

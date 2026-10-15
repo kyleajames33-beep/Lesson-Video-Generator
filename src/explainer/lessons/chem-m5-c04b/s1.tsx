@@ -2,8 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, Enter, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, Mark, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Ball, Bracket, Crumple, Fade, FWD, GasTube, Overlay, Pill, ProfileAxes, ProfileCurve, RxnChip, Ring, SvgText, TEAL, mkP, pillW, profPoint, smooth} from './parts';
-import {ColourStrip} from '../chem-m5-c03/parts';
+import {Arrow, Ball, Bracket, Crumple, Fade, FWD, GasTube, Overlay, Pill, Strip, ProfileAxes, ProfileCurve, RxnChip, Ring, SvgText, TEAL, mkP, pillW, profPoint, smooth} from './parts';
 import {H2_INK, HI_INK, HIC, I2C, I2_DEEP, I2_INK, METAL, METAL_DARK, H2C, Heading, kf, sc, tubeColour} from './common';
 
 // ---------- 1. Hook ----------
@@ -17,7 +16,7 @@ export const SceneHook: React.FC = () => {
 	const push = 1 + 0.035 * (f / 1000);
 	const drop = kf(f, [[K1.pinch, 110], [K1.right + 6, 690]], false);
 	const shadeEnd = tubeColour(2);
-	const A_X = 245, B_X = 715, TY = 250, TW = 170, TH = 520;
+	const A_X = 205, B_X = 665, TY = 250, TW = 170, TH = 520;
 	return (
 		<>
 			<Heading text="What does a catalyst change?" at={4} />
@@ -35,8 +34,8 @@ export const SceneHook: React.FC = () => {
 				<Ring cx={A_X + TW / 2} cy={TY + TH / 2 + 16} rx={125} ry={268} at={K1.watch} out={K1.watch + 70} color={I2_INK} seed={6} />
 				<Ring cx={B_X + TW / 2} cy={TY + TH / 2 + 16} rx={125} ry={268} at={K1.watch + 14} out={K1.watch + 70} color={I2_INK} seed={7} />
 				{/* colour strips and the shared pale shade */}
-				<ColourStrip x={1380} y={650} w={400} from={I2_DEEP} to={shadeEnd} t={tA} at={K1.watch} label="no catalyst" />
-				<ColourStrip x={1380} y={730} w={400} from={I2_DEEP} to={shadeEnd} t={tB} at={K1.watch} label="catalyst" />
+				<Strip x={1380} y={650} w={400} from={I2_DEEP} to={shadeEnd} t={tA} at={K1.watch} label="no catalyst" />
+				<Strip x={1380} y={730} w={400} from={I2_DEEP} to={shadeEnd} t={tB} at={K1.watch} label="catalyst" />
 				<Fade at={K1.shade}>
 					<path d="M1780,628 L1780,800" stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 8" />
 					<SvgText x={1780} y={846} text="same pale shade" size={44} color={I2_INK} anchor="end" at={K1.shade} />
@@ -120,8 +119,9 @@ export const SceneRidge: React.FC = () => {
 				<SvgText x={g.x0 + 0.5 * g.w} y={g.yT - 22} text="top of the ridge" size={42} color={INK} anchor="middle" at={K2.top} />
 				{/* ball */}
 				<Ball g={g} peak={g.yT} s={s} color={goingBack ? AMBER : '#bcd6ee'} opacity={ballOn ? 1 : 0} />
-				<Fade at={K2.reach} out={K2.reach + 40}><SvgText x={short[0] - 34} y={short[1] - 52} text="not enough: falls back" size={40} color={INK_SOFT} anchor="end" at={K2.reach} /></Fade>
-				<Fade at={K2.reach + 46} out={K2.climb}><SvgText x={g.x0 + 0.26 * g.w} y={g.yT + 90} text="enough energy" size={44} color={FWD} anchor="end" at={K2.reach + 46} /></Fade>
+				{/* inside the hill, clear of the activation-energy bracket and its label */}
+				<Fade at={K2.reach} out={K2.reach + 40}><SvgText x={g.x0 + 0.5 * g.w} y={g.yL - 40} text="not enough: falls back" size={40} color={INK_SOFT} anchor="middle" at={K2.reach} /></Fade>
+				<Fade at={K2.reach + 46} out={K2.climb}><SvgText x={g.x0 + 0.5 * g.w} y={g.yL - 40} text="enough energy" size={44} color={FWD} anchor="middle" at={K2.reach + 46} /></Fade>
 				<Bracket x={xb2} y1={g.yR} y2={g.yT} color={AMBER_INK} at={K2.climb} side="left" />
 				<SvgText x={xb2 + 18} y={(g.yR + g.yT) / 2 - 10} text="same climb" size={42} color={AMBER_INK} at={K2.climb + 12} />
 				<SvgText x={xb2 + 18} y={(g.yR + g.yT) / 2 + 34} text="to go back" size={42} color={AMBER_INK} at={K2.back} />

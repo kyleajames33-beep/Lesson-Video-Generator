@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c8/measured/lesson.json",
+    "lessonSha256": "11c0711fab8c1fc2af9bdbe0d485434c9fb76c9c25f04a82fe9dcace6f9e249e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C6 and Year 11: dynamic equilibrium and equal rates; the faster rate falls and the slower rate rises (C2); the C4b and C6 H2 + I2 tubes; K as a products-over-reactants fraction with coefficient powers (C5); the C6 settled tube 0.10, 0.10, 0.70 with K = 49 and equilibrium values only for K; concentration in mol/L; the rate model with fixed numbers (C5).",
+    "startsWith": "The hot H2 + I2 tube at K = 49, freshly mixed at 0.20, 0.20 and 0.50 mol/L before it has settled, and the question of which way it will run.",
+    "stopsAfter": "Writing Q for an equation and calculating it from supplied concentrations; comparing Q with K at the same temperature and stating the direction with the rate reason; saying that Q = K means equal rates and no net change; saying that a disturbance changes Q and not K; using the five steps on an unseen mixture. No how-far calculation, no ICE table, no quadratic, no temperature dependence, no Qsp.",
+    "nextLesson": "G03: harder ICE tables and Q decisions."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c08.md"
+  ],
+  "teaching": {
+    "task": "Calculate the reaction quotient Q for a mixture that has not settled, compare it with K at the same temperature, and state which way the mixture will run and why.",
+    "causalExplanation": "Q is the K fraction with the concentrations from the moment in question. Q below K means less product than a settled mixture at this temperature, so with more reactant particles to collide the forward reaction is faster and the mixture makes more product until Q reaches K; Q above K means too much product, so the reverse reaction is faster. A disturbance changes Q, not K",
+    "conversationalApproach": "A freshly mixed hot H2 and I2 tube asks which way it will run, Q is built from the K fraction and calculated in three beats, compared with K on a log number line, tied to the rates by comparing the live tube with a settled tube, tested on the other side with a short thinking hold, linked back to the disturbance videos, and checked on an unseen ammonia mixture.",
+    "openingDecision": "Will the freshly mixed tube make more hydrogen iodide or break some down, and can we know before anything moves?",
+    "understandingCheck": "For N2 + 3H2 = 2NH3 at 400 degrees Celsius with K = 0.50 and [N2] = 0.40, [H2] = 0.50, [NH3] = 0.20 mol/L: write and calculate Q, and say whether more or less ammonia forms and why.",
+    "curriculumScope": "Calculate the reaction quotient and compare it with K to predict the direction of change (Module 5). How far the mixture moves, ICE tables for the harder cases, the temperature dependence of K and Qsp are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the C4B hot H2 + I2 tube with a coded particle view, the C5 expression builder, a coded log number line with K and Q markers, C2 to C6 rate bars, and a grouped givens card. Colour key: K marker teal, Q marker in the pen colour, forward blue, reverse amber, equal teal.",
+    "transitionPlan": "The hot tube and givens card set the first mixture; the K fraction and the Q fraction sit side by side; the log number line draws on and keeps its markers through the next scenes; a fresh board in the same zones carries the other-side tube; the settled tube returns for the disturbance; the attempt board removes the aids and the feedback rebuilds Q and the number line; the next chip slides in for the harder cases; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "C4B hot H2 + I2 tube with dots 4, 4, 10, the K chip, a stopwatch frozen at 0 and a givens card",
+      "teachingReason": "Poses a mixture that has not settled and asks which way it will run before anything moves",
+      "narrationCue": "the hot hydrogen iodide tube again / where K is forty-nine / nobody let it settle first / There is a way to know before anything moves",
+      "motionPurpose": "The tube shows 4, 4 and 10 dots with the made-up chip, the K chip pops, the givens card builds value by value and a stopwatch freezes at zero with a pen ring",
+      "motionRole": "explain",
+      "onScreenChange": "Heading writes on; the tube (4 H2, 4 I2, 10 HI dots, key \"1 dot = 0.05 mol/L\") appears with the tags \"just mixed, not settled\" and \"made-up mixture\"; the K chip pops on \"forty-nine\" and the equation strip writes on with both arrows dim; the givens card builds as each value is said; the stopwatch freezes at 0 with a pen ring on \"before anything moves\"",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "particle jostle",
+        "stopwatch freeze",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Brief hold on the frozen stopwatch"
+    },
+    {
+      "sceneId": "q-fraction",
+      "visualDecision": "adjust",
+      "visualReference": "C5 expression builder writing K and then Q side by side with different tags, and a pen arrow from the tube dots to the brackets",
+      "teachingReason": "Names Q as the K fraction with the numbers from now",
+      "narrationCue": "put in the concentrations in the tube right now / That number is the reaction quotient, Q / powers for coefficients / At equilibrium Q is K",
+      "motionPurpose": "The K fraction writes with the tag settled values only, a second copy writes beside it as Q with the tag values right now, Q writes large and the two join with an equals sign on settled",
+      "motionRole": "explain",
+      "onScreenChange": "The builder writes \"K = [HI]^2 / ([H2][I2])\" with \"settled values only\"; a second copy writes as \"Q = ...\" with \"values right now\" and a pen arrow from the tube dots to the brackets; Q writes large with \"the K fraction with the numbers from now\"; the coefficient 2 flies to the exponent; the fractions join with an equals sign and the tag \"only when settled\"",
+      "motionTools": [
+        "expression builder",
+        "DrawPath arrows",
+        "HandText write-on",
+        "coefficient fly-in"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "calculate-q",
+      "visualDecision": "adjust",
+      "visualReference": "The Q fraction with numbers dropping in from the givens card, a three-beat working and a large ringed result",
+      "teachingReason": "Calculates Q from the supplied mixture one step at a time",
+      "narrationCue": "Substitute the values now / 0.50 squared, which is 0.25 / 0.20 times 0.20, which is 0.040 / which is 6.25",
+      "motionPurpose": "The three concentrations drop into the brackets, the working writes in three beats and 6.25 ticks large with a ring",
+      "motionRole": "explain",
+      "onScreenChange": "The three numbers drop from the givens card into the brackets with pen arrows; \"0.50^2 = 0.25\", \"0.20 x 0.20 = 0.040\" and \"Q = 0.25 / 0.040 = 6.25\" write in three beats; the tag \"Q: no unit written\" stays throughout; the result ticks large and is ringed; the K fraction fades to a small line at the top right",
+      "motionTools": [
+        "DrawPath arrows",
+        "HandText write-on",
+        "ScribbleCircle",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold the ringed result"
+    },
+    {
+      "sceneId": "compare-q-k",
+      "visualDecision": "new",
+      "visualReference": "Coded log number line with ticks 0.1 to 1000, a teal K marker at 49, a Q marker at 6.25, a bracket between them and a ghost settled tube beside the live tube",
+      "teachingReason": "Compares Q with K on a log scale and leads to the question of which reaction is quicker",
+      "narrationCue": "Each tick on this line is ten times the one before / Q is 6.25 and K is forty-nine / Q is smaller than K / which reaction is quicker",
+      "motionPurpose": "The log line draws on with x10 hops, the K marker and the Q marker drop in, a bracket and a less-than sign appear and a ghost settled tube joins the live tube",
+      "motionRole": "explain",
+      "onScreenChange": "The log line draws on with the tag \"each tick is 10 times the last\" and a pen arrow hopping tick to tick with \"x 10\"; the teal K marker drops at 49; the Q marker drops at 6.25 with a bracket between them; a \"<\" sign writes between the markers; a ghost tube (2, 2, 14) appears beside the live tube (4, 4, 10) with the tag \"less product than a settled tube\"",
+      "motionTools": [
+        "DrawPath number line",
+        "marker drop",
+        "bracket draw",
+        "ghost overlay",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the two markers and the question"
+    },
+    {
+      "sceneId": "rate-link",
+      "visualDecision": "adjust",
+      "visualReference": "The live tube beside the ghost settled tube with ringed dot counts, the two rate bars growing unequal with no numbers, and the forward arrow lighting",
+      "teachingReason": "Gives the direction a plain cause: too little product compared with a settled tube, so joining outpaces splitting",
+      "narrationCue": "Q compares products with reactants / too little hydrogen iodide / joining happens faster than splitting / forward reaction wins / hydrogen iodide is made",
+      "motionPurpose": "The tubes are compared dot by dot, the forward bar grows taller than the reverse bar, the forward arrow lights and an H2 and I2 dot merge into HI",
+      "motionRole": "explain",
+      "onScreenChange": "A \"products / reactants\" tag writes under the Q marker; the live tube (4, 4, 10) and the settled ghost tube (2, 2, 14) sit side by side with pen rings on their HI and H2/I2 dots; the \"?\" marks clear and the blue forward bar grows clearly taller than the amber bar (\"forward faster\", no numbers); the forward arrow lights blue; an H2 and an I2 dot merge into HI",
+      "motionTools": [
+        "ScribbleCircle",
+        "NumberTicker rate bars",
+        "arrow light",
+        "particle merge"
+      ],
+      "holdPurpose": "Hold the unequal bars"
+    },
+    {
+      "sceneId": "q-chases-k",
+      "visualDecision": "adjust",
+      "visualReference": "The Q marker sliding along the log line toward K with the rate bars following live and the tube dots changing to the settled tube",
+      "teachingReason": "Shows Q climbing to K as the rates meet and ties it to the settled tube from the ICE table video",
+      "narrationCue": "the top of Q grows and the bottom shrinks, so Q climbs / The forward rate falls, the reverse rate rises / exactly when Q reaches K / 0.10, 0.10 and 0.70 / Q chases K",
+      "motionPurpose": "The Q marker slides toward 49 and slows near it, the forward bar shrinks and the reverse bar grows until they meet at the teal bracket, and the tube dots change to 2, 2, 14",
+      "motionRole": "explain",
+      "onScreenChange": "The Q marker slides right from 6.25 toward 49, slowing as it approaches; the rate bars follow until they meet at the teal bracket as the marker lands with a small teal flash; the tube dots change from 4, 4, 10 to 2, 2, 14; the settled values 0.10, 0.10, 0.70 tick under the tube and \"0.70^2 / (0.10 x 0.10) = 49 = K\" writes with a teal tick; a quiet tag about equal totals shows for about 2 seconds",
+      "motionTools": [
+        "marker slide",
+        "NumberTicker rate bars",
+        "particle settle",
+        "bracket draw",
+        "tick"
+      ],
+      "holdPurpose": "Hold the landed marker briefly"
+    },
+    {
+      "sceneId": "other-side",
+      "visualDecision": "new",
+      "visualReference": "Fresh board with a tube at 1 H2, 1 I2 and 16 HI dots, the Q working in three beats, a far-right Q marker at 256 and the shared countdown ring",
+      "teachingReason": "Starts from the other side with a thinking hold so the learner predicts the direction before the answer",
+      "narrationCue": "Now start from the other side / 0.05 of hydrogen, 0.05 of iodine and 0.80 of hydrogen iodide / so Q is 256 / Which way will it run?",
+      "motionPurpose": "A fresh board builds, the Q working writes in beats, a Q marker drops far right of K and the question holds with the countdown ring",
+      "motionRole": "explain",
+      "onScreenChange": "A fresh board in the same zones shows the givens card and a tube of 1, 1, 16 dots with the made-up chip; \"0.80^2 = 0.64\", \"0.05 x 0.05 = 0.0025\" and \"Q = 0.64 / 0.0025 = 256\" write in beats; the Q marker drops far right of the K marker; the question \"Which way will it run?\" holds with the countdown ring for about 10 seconds and the small line \"pause if you need longer\"",
+      "motionTools": [
+        "board build",
+        "HandText write-on",
+        "marker drop",
+        "Countdown ring"
+      ],
+      "holdPurpose": "About 10 second answer-free thinking hold after the question"
+    },
+    {
+      "sceneId": "other-side-answer",
+      "visualDecision": "new",
+      "visualReference": "A greater-than sign between the markers, the amber reverse arrow, the reverse bar growing taller than the forward bar, and a thumbnail of the first tube",
+      "teachingReason": "Gives the answer, gives the rate reason and teaches that too much product depends on K",
+      "narrationCue": "Q is above K / splitting happens faster than joining / the reverse reaction wins / Whether there is too much product depends on K",
+      "motionPurpose": "The greater-than sign writes, the reverse arrow lights, the reverse bar grows taller than the forward bar, the Q marker slides left and the tube lands on the settled picture, and three markers are shown in turn",
+      "motionRole": "explain",
+      "onScreenChange": "A \">\" writes between the markers and the reverse arrow lights amber; the reverse bar grows clearly taller than the forward bar (\"reverse faster\", no numbers); the Q marker slides left toward 49 with the bars following and the dots change (HI 16 to 14, H2 and I2 1 to 2); a thumbnail of the first tube appears; the closing tag lists Q below K, Q equal K and Q above K with the three markers shown in turn",
+      "motionTools": [
+        "marker slide",
+        "NumberTicker rate bars",
+        "particle settle",
+        "thumbnail pop",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold the three markers"
+    },
+    {
+      "sceneId": "q-equals-k",
+      "visualDecision": "adjust",
+      "visualReference": "Both markers at K with the equal-rates bracket, the broken-axis segments with a zero marker and an off the scale marker, and the C2 flask thumbnails",
+      "teachingReason": "Covers Q equals K without equal concentrations and the two ends of the scale (only reactants, only products)",
+      "narrationCue": "If Q equals K / That does not mean equal concentrations / if a flask holds only reactants / the top of Q is zero / If it holds only products / Q is off the scale",
+      "motionPurpose": "Both markers sit on K with the settled tube ticked, the line gains a broken axis at the far left for the reactants-only flask and at the far right for the products-only flask, and the aid writes large",
+      "motionRole": "explain",
+      "onScreenChange": "Both markers sit at the K position with the equal-rates bracket and the tag \"rates equal, not concentrations equal\" beside the settled tube; a broken-axis segment at the far left with a 0 marker and the C2 reactants-only flask thumbnail with a pen arrow toward K; a broken-axis segment at the far right with an off the scale marker and the products-only thumbnail with a pen arrow toward K; \"Q chases K.\" writes large",
+      "motionTools": [
+        "marker drop",
+        "broken axis draw",
+        "thumbnail pop",
+        "DrawPath arrows",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the aid on the line"
+    },
+    {
+      "sceneId": "disturbance",
+      "visualDecision": "adjust",
+      "visualReference": "The settled hot tube with the log line, the Q marker at 49, four H2 dots dropping in, the Q marker dropping to 16.3 and the forward bar stepping up",
+      "teachingReason": "Links Q to the disturbance videos: adding hydrogen lowers Q, and the forward rate wins",
+      "narrationCue": "This also explains the disturbance videos / add 0.20 moles per litre of hydrogen / The bottom of Q gets bigger / about sixteen, below K / too little product / the mixture shifts right",
+      "motionPurpose": "Four hydrogen dots drop into the settled tube, a pen ring moves to the bottom of Q, the Q marker drops left to 16.3 and the forward bar steps up above the reverse bar",
+      "motionRole": "explain",
+      "onScreenChange": "The settled tube (2, 2, 14) with the log line, the K marker and the Q marker at 49 sits with level rate bars; the card gains \"same volume, same temperature\"; four H2 dots drop in and the card shows \"[H2] = 0.30 mol/L\"; a pen ring moves to the denominator; the Q marker drops to 16.3 with \"0.70^2 / (0.30 x 0.10) = 0.49 / 0.030 = 16.3\"; on \"too little product\" the forward bar steps up above the reverse bar (\"forward faster\", no numbers); a pen arrow runs right and Q begins to climb back",
+      "motionTools": [
+        "particle drop",
+        "ScribbleCircle",
+        "marker slide",
+        "NumberTicker rate bars",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the shifted markers"
+    },
+    {
+      "sceneId": "k-unchanged",
+      "visualDecision": "adjust",
+      "visualReference": "Two ghost markers on the line for removing and adding HI and a pulsing teal K marker",
+      "teachingReason": "Shows removal and addition move Q only, and that K does not change unless the temperature does",
+      "narrationCue": "Taking out some hydrogen iodide does the same / pushes Q above K and sends it left / K never changed / Only a change of temperature changes K",
+      "motionPurpose": "Two ghost markers appear with arrows right and left, then the K marker pulses with a pen ring and its fixed tag",
+      "motionRole": "explain",
+      "onScreenChange": "Two small ghost markers appear at 12.25 (removing HI) and 100 (adding HI) with arrows right and left and tags only; on \"K never changed\" the teal K marker pulses with a pen ring and the tag \"K = 49 (fixed at this temperature)\"",
+      "motionTools": [
+        "marker drop",
+        "ScribbleCircle",
+        "tag pop",
+        "DrawPath arrows"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded sealed vessel with a pressure gauge, the Haber equation strip, a grouped givens card with units and two numbered demands",
+      "teachingReason": "Unseen transfer on writing and calculating Q with a cube and judging the direction, with every given and condition visible and no answer cues",
+      "narrationCue": "Your turn / held at four hundred degrees Celsius, where K is 0.50 / nitrogen at 0.40 moles per litre, hydrogen at 0.50 and ammonia at 0.20 / will the mixture make more ammonia or less, and why / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The vessel, the equation strip, the grouped givens card (K = 0.50 at 400 C, sealed vessel with iron catalyst, the three concentrations in mol/L) and the made-up mixture chip appear as each is named; the two numbered demands stay on screen; earlier boards and the aid are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "The C5 builder writing Q with the 2 and 3 flying up as powers, a three-beat working, the number line with Q at 0.80 right of K at 0.50 and three wrong-answer chips",
+      "teachingReason": "Explains the answer stage by stage and corrects the missing cube and the flipped rule",
+      "narrationCue": "ammonia squared over nitrogen times hydrogen cubed / Hydrogen cubed is 0.50 times 0.50 times 0.50 / So Q is 0.040 over 0.050, which is 0.80 / Q is above K, 0.50 / you left the cube off the hydrogen / a Q above K means too much product",
+      "motionPurpose": "The expression builds with powers flying up, the working writes in three beats, the Q marker lands right of K with a greater-than sign and the ammonia dots fall, and three wrong chips are crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The equation strip writes on and Q builds in the C5 builder with the 2 flying up on ammonia and the 3 flying up on hydrogen; \"0.20^2 = 0.040\", \"0.50^3 = 0.125, 0.40 x 0.125 = 0.050\" and \"Q = 0.040 / 0.050 = 0.80\" write in beats; the number line returns with K at 0.50 and Q landing at 0.80 with a \">\" sign and the amber reverse arrow; the NH3 dots fall while N2 and H2 dots rise, looped once; three wrong-answer chips are crossed with captions",
+      "motionTools": [
+        "expression builder",
+        "HandText write-on",
+        "marker drop",
+        "particle drift",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the corrected board"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Two question cards with a miniature number line and three small arrows (blue, amber, teal bracket), then a next chip with a table-and-number-line icon",
+      "teachingReason": "Packs the method into a reusable order, states the limit that it gives direction only, and hands off to harder ICE and Q decisions",
+      "narrationCue": "write the expression, put in the concentrations from now, calculate Q / Q below K, the reaction runs forward / Q above K, it runs back / That gives you the direction, not how far it goes",
+      "motionPurpose": "Two cards write on one by one with the mini number line and three arrows, a tag says direction only, and the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The first card \"Given a mixture and K: Q, compare, direction.\" writes on with a mini number line and the Q marker chasing the K marker; the second card \"Q < K forward. Q > K reverse. Q = K no net change.\" writes on with blue, amber and teal arrows and the tag \"direction only, not how far\"; on \"next\" the chip \"Next: harder ICE tables and Q decisions\" appears with a table-and-number-line icon",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "DrawPath arrows",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 90 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c8-learning-review.md",
+      "sha256": "097400d49dd139d313dd5037d6bff08a2c86c5419995ed4e6b0bb5b19c28ae20"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c8-claude-science-check.md",
+      "sha256": "c7f0eeee56a77f811d1814c5467ce84d4a6e19a66e80d79f18dab1c880295c74"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

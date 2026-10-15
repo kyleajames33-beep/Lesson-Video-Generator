@@ -195,7 +195,7 @@ const rich = (text: string) => toks(text).map((t, i) => t.k === 1 ? <sub key={i}
 export const NOTES = [
 	'The reaction quotient, Q, is the K expression worked out with the concentrations at any moment. K uses settled values only. At equilibrium, Q equals K.',
 	'Compare Q with K at the same temperature. Q below K: the forward reaction is faster, so the mixture runs right. Q above K: the reverse reaction is faster, so it runs left. Q equals K: no net change.',
-	'In a simple rate model, forward rate ÷ reverse rate = K ÷ Q. Equal rates are not equal concentrations.',
+	'Why: Q below K means less product than a settled mixture at this temperature, so the forward reaction is faster. Q above K means more product, so the reverse reaction is faster. As the faster reaction runs, Q moves toward K and stops there. Equal rates do not mean equal concentrations.',
 	'Adding or removing a substance changes Q, not K. Only temperature changes K. Q gives direction only.',
 	'Method: expression, concentrations now, calculate Q, compare with K, state the direction.',
 ];

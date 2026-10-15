@@ -35,7 +35,7 @@ export const SceneLowerPass: React.FC = () => {
 				<Bracket x={xh} y1={g.yL} y2={g.yR} color={TEAL} at={KL.diff} side="right" />
 				<SvgText x={xh + 24} y={(g.yL + g.yR) / 2 + 6} text="the same difference" size={42} color={TEAL} at={KL.same} />
 				<Fade at={KL.heat}>
-					<rect x={xh + 12} y={(g.yL + g.yR) / 2 + 44} width={430} height={130} rx={18} fill="#fffdf8" stroke={TEAL} strokeWidth={3.5} />
+					<rect x={xh + 12} y={(g.yL + g.yR) / 2 + 44} width={490} height={130} rx={18} fill="#fffdf8" stroke={TEAL} strokeWidth={3.5} />
 					<SvgText x={xh + 30} y={(g.yL + g.yR) / 2 + 100} text="heat of reaction" size={58} color={TEAL} at={KL.heat} />
 					<SvgText x={xh + 30} y={(g.yL + g.yR) / 2 + 152} text="unchanged by the catalyst" size={36} color={INK} at={KL.heat + 14} hand={false} weight={600} />
 				</Fade>
@@ -79,7 +79,7 @@ export const SceneBothWays: React.FC = () => {
 				<Ball g={g} peak={g.yP} s={sB} color="#bcd6ee" opacity={f >= K4.more + 6 && f < K4.twenty ? 1 : 0} />
 				<Ball g={g} peak={g.yP} s={sA} color={AMBER} opacity={f >= K4.back && f < K4.side ? 1 : 0} />
 				<Bracket x={x1} y1={g.yL} y2={topY} color={FWD} at={-60} side="right" />
-				<SvgText x={g.x0 + 0.075 * g.w} y={g.yL + 56} text="forward climb" size={42} color={FWD} anchor="middle" at={-60} />
+				<SvgText x={g.x0 + 6} y={g.yL + 70} text="forward climb" size={42} color={FWD} at={-60} />
 				<Bracket x={x2} y1={g.yR} y2={topY} color={AMBER_INK} at={K4.back} side="left" />
 				<SvgText x={g.x0 + 0.935 * g.w} y={g.yR + 56} text="reverse climb" size={42} color={AMBER_INK} anchor="middle" at={K4.back + 10} />
 				<Arrow x1={xm} y1={g.yT + 12} x2={xm} y2={g.yP - 12} at={K4.lowerBy} color={INK} width={6} />

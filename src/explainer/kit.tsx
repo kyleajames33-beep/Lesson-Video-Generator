@@ -1,6 +1,6 @@
 // Shared helpers for the explainer engine (paper, hand-drawn editorial style).
 import React, {useMemo} from 'react';
-import {continueRender, delayRender, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {continueRender, delayRender, Easing, Freeze, Img, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND, TOK} from '../styles/tokens';
 
 // Lean font loader for the explainer engine: only the two latin faces used, with a
@@ -148,6 +148,44 @@ export const Plate: React.FC<{src: string; natural: [number, number]; crop: [num
 		</div>
 	);
 };
+
+/**
+ * A short AI "process clip" (start and end frames are our own painted plates, on a white
+ * background). Before `at` it shows the first frame, from `at` it plays once (optionally
+ * slowed by `rate` < 1), then holds the last frame. Multiply blending drops the white
+ * background onto the paper, so slight background drift in the clip never shows.
+ * List the clip file in the lesson config's assets like a plate.
+ */
+export const ProcessClip: React.FC<{src: string; at: number; seconds?: number; rate?: number; x: number; y: number; width: number; height: number; style?: React.CSSProperties; crop?: {x: number; y: number; w: number; h: number}}> = ({src, at, seconds = 5, rate = 1, x, y, width, height, style, crop}) => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+	const span = Math.round((seconds * fps) / rate);
+	// Hold the first frame before `at` and the last frame after the clip, but let the video play
+	// naturally in between. (Freezing it frame by frame forces a seek on every frame, which stalls
+	// the browser preview, voice included.)
+	const phase = frame < at ? 'before' : frame < at + span ? 'play' : 'after';
+	// The scene wrapper (transform) is an isolated compositing group, so a multiply blend there sees no paper
+	// behind it. The clip therefore carries its own copy of the paper (grain tile and gradient, aligned to the
+	// frame) in an isolated box and multiplies onto that. `crop` (frame coordinates) limits the box to the
+	// object so the paper copy never covers neighbouring content.
+	const box = crop ?? {x, y, w: width, h: height};
+	return (
+		<div style={{position: 'absolute', left: box.x, top: box.y, width: box.w, height: box.h, overflow: 'hidden', isolation: 'isolate',
+			background: `url(${staticFile(CLIP_PAPER_GRAIN)}) ${-box.x}px ${-box.y}px repeat, radial-gradient(ellipse at 50% 40%, #fbf7ef 0%, ${PAPER} 55%, #efe6d6 100%) ${-box.x}px ${-box.y}px / 1920px 1080px no-repeat`, ...style}}>
+			<div style={{position: 'absolute', left: x - box.x, top: y - box.y, width, height, mixBlendMode: 'multiply'}}>
+				{phase === 'play' ? null : (
+					<Freeze frame={phase === 'before' ? 0 : span - 1}>
+						<OffthreadVideo src={staticFile(src)} muted playbackRate={rate} pauseWhenBuffering={false} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
+					</Freeze>
+				)}
+				<Sequence from={at} durationInFrames={span} layout="none">
+					<OffthreadVideo src={staticFile(src)} muted playbackRate={rate} pauseWhenBuffering={false} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain'}} />
+				</Sequence>
+			</div>
+		</div>
+	);
+};
+const CLIP_PAPER_GRAIN = 'assets/explainer-paper-grain.png';
 
 /** Procedural branching hyphae grown from an origin. Returns segments with a birth time 0..1. */
 export type Seg = {d: string; born: number; len: number; tip: [number, number]; depth: number};

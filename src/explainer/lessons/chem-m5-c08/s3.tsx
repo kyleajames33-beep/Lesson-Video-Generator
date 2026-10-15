@@ -113,7 +113,7 @@ export const SceneOtherSide: React.FC = () => {
 
 // ---------- 7b. The answer and what it teaches ----------
 const A2 = 'other-side-answer';
-const KA = cues(sc(A2), {above: 'Q is above K', toomuch: 'too much hydrogen iodide', rev: 'reverse reaction wins', fo: 'Forward over reverse', r19: '0.19', five: 'five times faster', splits: 'Hydrogen iodide splits', falls: 'Q falls', again: 'same settled tube again', first: 'The first tube', depends: 'depends on K', wq: 'work out Q and compare'});
+const KA = cues(sc(A2), {above: 'Q is above K', toomuch: 'too much hydrogen iodide', rev: 'reverse reaction wins', split: 'splitting happens faster than joining', splits: 'Hydrogen iodide splits', falls: 'Q falls', again: 'same settled tube again', first: 'The first tube', against: '0.50 against 0.40', depends: 'depends on K', wq: 'work out Q and compare'});
 export const SceneOtherAnswer: React.FC = () => {
 	const f = useCurrentFrame();
 	const t0 = KA.splits, t1 = KA.again + 10;
@@ -125,7 +125,7 @@ export const SceneOtherAnswer: React.FC = () => {
 		return qOf(c.h, c.i, c.hi);
 	};
 	const c = m(f);
-	const g = prog(f, KA.r19, 30);
+	const g = prog(f, KA.split, 30);
 	const fwd = fwdRate(c.h, c.i), rev = revRate(c.hi);
 	const k = 35;
 	return (
@@ -140,25 +140,24 @@ export const SceneOtherAnswer: React.FC = () => {
 				<Fade at={KA.first}>
 					<Tube x={GHOST8.x} y={GHOST8.y} w={GHOST8.w} h={GHOST8.h} counts={cst(4, 4, 10)} ghost seed={9} />
 					<Sx x={GHOST8.x + 4} y={GHOST8.y - 14} text="the first tube" size={34} color={INK_SOFT} hand at={KA.first} />
+					<Sx x={GHOST8.x + GHOST8.w / 2} y={GHOST8.y + GHOST8.h + 44} text="10 HI vs 8 H_2 + I_2" size={34} color={BLUE} anchor="middle" hand at={KA.against} />
 				</Fade>
 				<LogLine at={-100} />
 				<KMarker k={49} at={-100} label="K = 49" />
 				<QMarker at={-100} value={q} label={ff => `Q = ${fmtQ(q(ff))}`} side="right" />
 				<QKGap at={KA.above - 6} qx={ff => lx(q(ff))} kx={lx(49)} sign=">" signAt={KA.above} />
 				<QMarker at={KA.first} value={6.25} ghost label="first tube: 6.25" side="left" labelAt={KA.first + 6} />
-				<Bars8 fwd={fwd * g} rev={rev * g} scale={k} at={KA.fo} eqAt={KA.again + 6} />
-				<Fade at={KA.fo} out={KA.falls + 10}>
-					<Sx x={1130} y={600} text="forward ÷ reverse = K ÷ Q" size={40} color={INK_SOFT} at={KA.fo} />
+				<Bars8 fwd={fwd * g} rev={rev * g} scale={k} at={KA.split - 4} eqAt={KA.again + 6} />
+				<Fade at={KA.split + 14} out={KA.falls + 10}>
+					<Sx x={BARS8.x0 + BARS8.gx + BARS8.bw / 2} y={BARS8.base - rev * g * k - 22} text="reverse faster" size={44} color={AMBER_INK} anchor="middle" hand at={KA.split + 14} />
 				</Fade>
-				<Fade at={KA.r19} out={KA.falls + 10}>
-					<Sx x={1130} y={664} text="49 ÷ 256 = 0.19" size={58} color={TEAL} at={KA.r19} />
-				</Fade>
-				<Fade at={KA.five} out={KA.falls + 10}>
-					<Sx x={1130} y={740} text="reverse about 5 times faster" size={44} color={AMBER_INK} hand at={KA.five} />
+				<Fade at={KA.split} out={KA.first}>
+					<Sx x={1220} y={664} text="splitting: HI breaks into H_2 + I_2" size={40} color={AMBER_INK} hand at={KA.split} />
+					<Sx x={1220} y={720} text="joining: H_2 + I_2 make HI" size={40} color={BLUE} hand at={KA.split + 10} />
 				</Fade>
 				<Fade at={KA.depends} out={KA.wq + 60}>
 					<rect x={1150} y={780} width={700} height={170} rx={20} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={2.5} />
-					<Sx x={1176} y={828} text="all three are mostly product:" size={34} color={INK_SOFT} hand at={KA.depends} />
+					<Sx x={1176} y={828} text="all three: more product than reactant" size={34} color={INK_SOFT} hand at={KA.depends} />
 					<Sx x={1176} y={870} text="first tube: Q = 6.25, below K" size={34} color={BLUE} at={KA.depends + 8} />
 					<Sx x={1176} y={906} text="settled tube: Q = 49, equal to K" size={34} color={TEAL} at={KA.depends + 16} />
 					<Sx x={1176} y={942} text="this tube: Q = 256, above K" size={34} color={AMBER_INK} at={KA.depends + 24} />

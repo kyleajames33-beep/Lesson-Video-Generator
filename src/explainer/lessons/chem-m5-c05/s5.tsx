@@ -58,7 +58,7 @@ export const SceneAttempt: React.FC = () => {
 
 // ---------- 9a. Feedback, item one ----------
 const F1 = 'feedback-one';
-const KF1 = cues(sc(F1), {one: 'One', top: 'Products on top', under: 'reactants underneath', newion: 'The new ion', underneath: 'Underneath goes', because: 'because the coefficient four', wrote: 'If you wrote four times', r1: ['remember', 1], added: 'If you added the concentrations', r2: ['remember', 2]});
+const KF1 = cues(sc(F1), {one: 'One', top: 'Products on top', under: 'reactants underneath', newion: 'The new ion', underneath: 'Underneath goes', because: 'because the coefficient four', wrote: 'If you wrote four times', r1: ['remember', 1], added: 'If you added the concentrations', r2: ['remember', 2], mult: 'multiplying them gave', adding: 'adding would not'});
 const cu = (k: number) => cw(F1, 'Underneath goes the copper ion times the ammonia to the power of four', k);
 export const SceneFeedback1: React.FC = () => {
 	const ES = 54, EY = 260;
@@ -77,11 +77,14 @@ export const SceneFeedback1: React.FC = () => {
 			<Overlay>
 				<EqStrip items={CU_EQ} x={x0} y={EY} size={ES} at={KF1.one} />
 				<Frac cx={FCX} cy={FCY} size={FS} num={num} den={den} barAt={KF1.top} prefix="K =" />
-				<Sx x={FCX} y={770} text="the coefficient 4 became a power" size={44} color={TEAL} anchor="middle" hand at={KF1.because} />
-				<Chip x={96} y={810} w={800} text="4[NH_3] in the denominator" size={42} at={KF1.wrote} color={AMBER_INK} cross={KF1.r1} />
-				<Sx x={96} y={920} text="a coefficient is a power, not a multiplier" size={46} color={TEAL} hand at={KF1.r1} />
-				<Chip x={980} y={810} w={880} text="[Cu^{2+}] + [NH_3]^{4} underneath" size={46} at={KF1.added} color={AMBER_INK} cross={KF1.r2} />
-				<Sx x={980} y={920} text="counts multiply: particles must meet" size={46} color={TEAL} hand at={KF1.r2} />
+				<Sx x={FCX} y={730} text="the coefficient 4 became a power" size={44} color={TEAL} anchor="middle" hand at={KF1.because} />
+				<Chip x={96} y={770} w={800} text="4[NH_3] in the denominator" size={42} at={KF1.wrote} color={AMBER_INK} cross={KF1.r1} />
+				<Sx x={96} y={884} text="a coefficient is a power, not a multiplier" size={46} color={TEAL} hand at={KF1.r1} />
+				<Chip x={980} y={770} w={880} text="[Cu^{2+}] + [NH_3]^{4} underneath" size={46} at={KF1.added} color={AMBER_INK} cross={KF1.r2} />
+				<Sx x={980} y={884} text="multiply, as in the iron tube" size={46} color={TEAL} hand at={KF1.r2} />
+				<Sx x={980} y={944} text="×:  10 / (10 × 10) = 0.1,  12 / (15 × 8) = 0.1" size={30} color={TEAL} at={KF1.mult} />
+				<Sx x={980} y={994} text="+:  10 / (10 + 10) = 0.5,  12 / (15 + 8) = 0.52" size={30} color={AMBER_INK} at={KF1.adding} />
+				<Cross x={1580} y={984} at={KF1.adding + 16} s={16} />
 			</Overlay>
 		</>
 	);

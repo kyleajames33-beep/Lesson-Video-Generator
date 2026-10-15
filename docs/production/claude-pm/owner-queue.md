@@ -149,3 +149,10 @@ Built, reviewed and fixed:
 Known and accepted: in the C4a, C4b, B3a and B3a part 2 practice questions the voice says "Pause the video if you'd like more time" while the screen shows "Pause here to answer." with the 10 s countdown (re-recording four practice scenes was not worth the credits; say if you want it). If previews do not load: `node scripts/serve-prototype-review.mjs`.
 
 ## Done without you
+
+## 14 Oct evening
+- B3a part 2 rendered (9:06, -15.3 LUFS, painted muscle cell, overlaps fixed). Upload: brief 28e (after 28d visibility fix).
+- To watch: C5 preview v5 (reworked opening), C8 preview v4 (rate-link: forward number / reverse number = K).
+- C5 rendered (7:11, -15.3 LUFS). Upload: brief 28f.
+- C8 Revision 6 (owner: rate algebra removed): 4 scenes re-recorded (take03, 8:35), preview v5 to watch.
+- Later: strip the rate model from the C9 design before voicing.

@@ -3,10 +3,11 @@ import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
 import {H2I2_EQ} from '../chem-m5-c06/board';
-import {BARS8, BLUE, Bars8, CARD8, EQ8, EmptyBars, EqStrip, Fade, FracX, GHOST8, KEY8, KMarker, LN, LitArrows, LogLine, Overlay, QKGap, QMarker, Ring, Sx, Tag, TEAL, Tick, Tube, TubeScale, TUBE8, cardY, cst, lx} from './parts';
+import {BARS8, BLUE, Bars8, CARD8, EQ8, EmptyBars, EqStrip, Fade, FracX, GHOST8, HI_KINDS, KEY8, KMarker, LN, LitArrows, LogLine, Overlay, QKGap, QMarker, Ring, Sx, Tag, TEAL, Tick, Tube, TubeScale, TUBE8, cardY, cst, lx} from './parts';
 import type {Term} from './parts';
 import {HiCard, Key8} from './board';
-import {Heading, fwdRate, revRate, sc} from './common';
+import {slotXY} from '../chem-m5-c04b/parts';
+import {Heading, QINK, fwdRate, revRate, sc} from './common';
 
 const H2K = '#6b6358', I2K = '#5f2f94', HIK = '#4a4f57';
 
@@ -102,69 +103,81 @@ export const SceneCompare: React.FC = () => {
 };
 
 // ---------- 5. Why a small Q means the forward reaction wins ----------
+// No rate algebra: the reason is the products-versus-reactants comparison with the settled tube,
+// then the collision picture (more H2 and I2, so joining is faster). Bars show only which is taller.
 const R = 'rate-link';
-const KR = cues(sc(R), {join: 'joining is', split: 'splitting is', div: 'Divide the two', fixed: 'The two fixed numbers', givek: 'give K', conc: 'The concentrations divide', up: 'upside down', fo: 'forward over reverse', kq: 'K times one over Q', n49: 'forty-nine over 6.25', ab8: 'about eight', faster: 'eight times faster', made: 'hydrogen iodide is made'});
+const KR = cues(sc(R), {which: 'which reaction wins', comp: 'compares products with reactants', smaller: 'smaller than K', settled: 'compared with a settled tube', little: 'too little hydrogen iodide', much: 'too much hydrogen and iodine', collide: 'more hydrogen and iodine to collide', join: 'joining happens faster than splitting', faster: ['faster', 1], wins: 'forward reaction wins', made: 'hydrogen iodide is made'});
 export const SceneRateLink: React.FC = () => {
 	const f = useCurrentFrame();
-	const g = prog(f, KR.n49, 36);
+	const g = prog(f, KR.join, 30);
 	const fwd = fwdRate(0.2, 0.2) * g, rev = revRate(0.5) * g;
-	// the tube loses one H2 and one I2 and gains two HI, once
-	const j = f >= KR.made + 14 ? 1 : 0;
-	const counts = () => [4 - j, 4 - j, 10 + 2 * j];
-	const AX = 1190;
-	const fnum: Term[][] = [[{t: 'forward', br: false, at: KR.div + 6, color: BLUE}]];
-	const fden: Term[][] = [[{t: 'reverse', br: false, at: KR.div + 6, color: AMBER_INK}]];
-	const n2: Term[][] = [[{t: '0.05', br: false, at: KR.div + 14, color: BLUE}, {t: '×', br: false, at: KR.div + 14}, {t: 'H_2', at: KR.div + 14, color: H2K}, {t: 'I_2', at: KR.div + 14, color: I2K}]];
-	const d2: Term[][] = [[{t: '(0.05 ÷ 49)', br: false, at: KR.div + 18, color: AMBER_INK}, {t: '×', br: false, at: KR.div + 18}, {t: 'HI', p: '2', at: KR.div + 18, color: HIK}]];
-	const rn: Term[][] = [[{t: 'H_2', at: KR.conc, color: H2K}, {t: 'I_2', at: KR.conc + 6, color: I2K}]];
-	const rd: Term[][] = [[{t: 'HI', p: '2', at: KR.conc + 10, color: HIK}]];
+	// one H2 and one I2 dot leave their places, meet and join into two HI, once
+	const m0 = KR.made, m1 = KR.made + 16;
+	const j = f >= m1 ? 1 : 0;
+	const counts = (ff: number) => (ff >= m1 ? [3, 3, 12] : ff >= m0 ? [3, 3, 10] : [4, 4, 10]);
+	const tcx = TUBE8.x + TUBE8.w / 2, tcy = TUBE8.y + TUBE8.h / 2, tax = TUBE8.w / 2 - 28, tay = TUBE8.h / 2 - 30;
+	const pH = slotXY(7, 0, 3, m0, tcx, tcy, tax, tay), pI = slotXY(7, 1, 3, m0, tcx, tcy, tax, tay);
+	const mx = (pH.x + pI.x) / 2, my = (pH.y + pI.y) / 2;
+	const mu = Math.min(1, Math.max(0, (f - m0) / (m1 - m0)));
+	const me = mu * mu * (3 - 2 * mu);
+	const qx = lx(6.25);
+	const topF = BARS8.base - fwd * 12;
+	// dot-count labels under each tube (pen rings land on them as they are spoken)
+	const CY1 = 992, CY2 = 1036;
+	const tx = TUBE8.x + TUBE8.w / 2, gx = GHOST8.x + GHOST8.w / 2;
 	return (
 		<>
-			<Heading text="Q below K: forward wins" at={4} size={58} />
+			<Heading text="Q below K: which reaction wins?" at={4} size={58} />
 			<Overlay>
 				<EqStrip items={H2I2_EQ} x={EQ8.x} y={EQ8.y} size={EQ8.s} at={-100} />
-				<LitArrows items={H2I2_EQ} fwd={KR.made} />
+				<LitArrows items={H2I2_EQ} fwd={KR.wins + 4} />
 				<HiCard h="0.20" i="0.20" hi="0.50" />
 				<Key8 at={-100} />
+				{/* the live tube beside the ghost settled tube */}
 				<Tube x={TUBE8.x} y={TUBE8.y} w={TUBE8.w} h={TUBE8.h} counts={counts} />
-				<Ring cx={TUBE8.x + TUBE8.w / 2} cy={TUBE8.y + TUBE8.h / 2} rx={128} ry={132} at={KR.made + 10} out={KR.made + 70} color={BLUE} seed={5} width={5} />
-				{/* the two rate lines */}
-				<Sx x={AX} y={300} text="forward = 0.05 × [H_2][I_2]" size={38} color={BLUE} at={KR.join} />
-				<Sx x={AX} y={400} text="reverse = (0.05 ÷ 49) × [HI]^{2}" size={38} color={AMBER_INK} at={KR.split} />
-				<Fade at={KR.join + 14}>
-					<Sx x={AX + 196} y={338} text="fixed number" size={28} color={INK_SOFT} hand at={KR.join + 14} />
+				<Tube x={GHOST8.x} y={GHOST8.y} w={GHOST8.w} h={GHOST8.h} counts={cst(2, 2, 14)} ghost />
+				<Sx x={GHOST8.x + 4} y={GHOST8.y - 14} text="settled tube" size={34} color={INK_SOFT} hand at={-100} />
+				<Sx x={TUBE8.x + 4} y={TUBE8.y - 14} text="this tube" size={34} color={INK_SOFT} hand at={-100} />
+				{f >= m0 && f < m1 + 4 ? (
+					<g opacity={f < m1 ? 1 : 1 - (f - m1) / 4}>
+						<circle cx={pH.x + (mx - 8 - pH.x) * me} cy={pH.y + (my - pH.y) * me} r={HI_KINDS[0].r} fill={HI_KINDS[0].c} stroke={HI_KINDS[0].ink} strokeWidth={2.3} />
+						<circle cx={pI.x + (mx + 8 - pI.x) * me} cy={pI.y + (my - pI.y) * me} r={HI_KINDS[1].r} fill={HI_KINDS[1].c} stroke={HI_KINDS[1].ink} strokeWidth={2.3} />
+					</g>
+				) : null}
+				<Ring cx={mx} cy={my} rx={34} ry={30} at={m1 - 4} out={m1 + 40} color={BLUE} seed={5} width={5} />
+				{/* the dot counts: HI first, then H2 and I2 */}
+				<Sx x={tx} y={CY1} text={j ? '12 HI' : '10 HI'} size={32} color={HIK} anchor="middle" at={KR.little} weight={700} />
+				<Sx x={gx} y={CY1} text="14 HI" size={32} color={HIK} anchor="middle" at={KR.little + 8} weight={700} />
+				<Ring cx={tx} cy={CY1 - 11} rx={78} ry={26} at={KR.little + 10} out={KR.much} color={AMBER} seed={3} width={5} />
+				<Ring cx={gx} cy={CY1 - 11} rx={78} ry={26} at={KR.little + 18} out={KR.much} color={AMBER} seed={8} width={5} />
+				<Sx x={tx} y={CY2} text={j ? '3 H_2, 3 I_2' : '4 H_2, 4 I_2'} size={30} color={H2K} anchor="middle" at={KR.much} weight={700} />
+				<Sx x={gx} y={CY2} text="2 H_2, 2 I_2" size={30} color={H2K} anchor="middle" at={KR.much + 8} weight={700} />
+				<Ring cx={tx} cy={CY2 - 10} rx={100} ry={24} at={KR.much + 12} out={KR.join} color={AMBER} seed={4} width={5} />
+				<Ring cx={gx} cy={CY2 - 10} rx={100} ry={24} at={KR.much + 20} out={KR.join} color={AMBER} seed={6} width={5} />
+				{/* the number line from the compare scene stays */}
+				<LogLine at={-100} />
+				<KMarker k={49} at={-100} label="K = 49" />
+				<QMarker at={-100} value={6.25} label="Q = 6.25" side="left" />
+				<QKGap at={-100} qx={qx} kx={lx(49)} sign="<" signAt={-100} />
+				<Ring cx={qx + 40} cy={LN.y + 134} rx={140} ry={44} at={KR.smaller} out={KR.smaller + 50} color={AMBER} seed={2} width={5} />
+				<Fade at={KR.comp}>
+					<Sx x={qx} y={LN.y + 214} text="products / reactants" size={38} color={QINK} anchor="middle" hand at={KR.comp} />
 				</Fade>
-				<Fade at={KR.split + 14}>
-					<Sx x={AX + 196} y={438} text="another fixed number" size={28} color={INK_SOFT} hand at={KR.split + 14} />
+				<Fade at={-100} out={KR.join - 4}>
+					<Sx x={1300} y={LN.y + 280} text="less product than a settled tube" size={44} color={AMBER_INK} anchor="middle" hand at={-100} />
 				</Fade>
-				{/* divide the two */}
-				<FracX cx={1330} cy={560} size={44} num={fnum} den={fden} barAt={KR.div} hold={160} />
-				<Sx x={1426} y={574} text="=" size={52} at={KR.div + 10} />
-				<FracX cx={1670} cy={560} size={44} num={n2} den={d2} barAt={KR.div + 12} hold={400} />
-				<Fade at={KR.fixed}>
-					<Sx x={AX} y={690} text="0.05 ÷ (0.05 ÷ 49) = 49 = K" size={44} color={TEAL} at={KR.fixed} />
+				<Ring cx={1300} cy={LN.y + 266} rx={360} ry={40} at={KR.settled + 6} out={KR.little} color={AMBER} seed={7} width={5} />
+				{/* the rate bars: "?" until joining is said to be faster */}
+				<EmptyBars at={-100} out={KR.join - 4} />
+				<Bars8 fwd={fwd} rev={rev} scale={12} at={KR.join - 4} />
+				<Fade at={KR.faster}>
+					<Sx x={BARS8.x0 + BARS8.bw / 2} y={topF - 22} text="forward faster" size={44} color={BLUE} anchor="middle" hand at={KR.faster} />
 				</Fade>
-				<Ring cx={1712} cy={676} rx={40} ry={32} at={KR.givek} color={AMBER} seed={4} width={5} />
-				{/* the concentrations divide to give the Q fraction upside down */}
-				<Sx x={AX} y={810} text="the rest:" size={38} color={INK_SOFT} at={KR.conc} />
-				<FracX cx={1500} cy={790} size={44} num={rn} den={rd} barAt={KR.conc} hold={190} />
-				<Fade at={KR.up}>
-					<Sx x={1640} y={810} text="= Q upside down" size={38} color={AMBER_INK} hand at={KR.up} />
-					<DrawPath d="M1420,730 C1310,760 1310,850 1420,880" at={KR.up + 6} dur={20} color={AMBER_INK} width={5} />
+				<Sx x={1130} y={700} text="joining: H_2 + I_2 make HI" size={42} color={BLUE} hand at={-100} />
+				<Sx x={1130} y={770} text="splitting: HI breaks into H_2 + I_2" size={42} color={AMBER_INK} hand at={-100} />
+				<Fade at={KR.collide}>
+					<Sx x={1130} y={840} text="more H_2 and I_2 to collide: more joining" size={36} color={BLUE} hand at={KR.collide} />
 				</Fade>
-				<Fade at={KR.fo}>
-					<Sx x={AX} y={930} text="forward ÷ reverse = K ÷ Q" size={72} color={AMBER_INK} hand at={KR.fo} />
-				</Fade>
-				{/* the bars follow K ÷ Q */}
-				<EmptyBars at={-100} out={KR.n49 - 4} />
-				<Bars8 fwd={fwd} rev={rev} scale={12} at={KR.n49 - 4} />
-				<Fade at={KR.n49 + 6}>
-					<Sx x={BARS8.x0} y={470} text="49 ÷ 6.25 = 7.84" size={46} color={TEAL} at={KR.n49 + 6} />
-				</Fade>
-				<Fade at={KR.ab8}>
-					<Sx x={BARS8.x0} y={526} text="forward about 8 times faster" size={36} color={BLUE} hand at={KR.ab8} />
-				</Fade>
-				<Tag x={BARS8.x0} y={580} w={440} text="made-up rate scale, in this model" at={KR.faster} size={24} />
 			</Overlay>
 		</>
 	);

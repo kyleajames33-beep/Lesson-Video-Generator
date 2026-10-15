@@ -1,0 +1,128 @@
+{
+  "title": "Every type of HSC equilibrium calculation, part 2: find concentrations and the amount added",
+  "subtitle": "A calculation gives you K and a start, or an old equilibrium with something added. How do you find the amounts, and how do you check the shortcut?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 12,
+  "lessonIntent": "Find equilibrium concentrations from K and a start by choosing and testing the tiny-K or huge-K shortcut, and solve an amount-added problem with the added substance in the initial row, K unchanged and the answer converted to moles.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This is part two of the five types: the two where you find amounts. K and a start, asking for the settled concentrations. Or an old equilibrium, something added, and a new value, asking how much was added. They are the hardest two, so we take them one step at a time."
+      }
+    },
+    {
+      "id": "tiny-k-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Type three: K and a start, and you want the settled concentrations. You can use the quadratic formula if you like, but HSC questions are written so you shouldn't need it. Look for a perfect square or a tiny K. N two O four splits into two N O two, K is 4.0 times ten to the minus four, and the start is 0.500 moles per litre of N two O four, with no N O two. Which shortcut fits? Find the N O two. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "tiny-k-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If x of the N two O four splits, the N two O four left is 0.500 minus x and N O two is two x, so K is two x all squared, over 0.500 minus x. The bottom is not a square, so the square root will not help. But K is tiny next to the start, so drop the x: 0.500 minus x is about 0.500."
+      }
+    },
+    {
+      "id": "tiny-k-solve-and-test",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Four x squared over 0.500 is eight x squared, and that equals 4.0 times ten to the minus four. So x squared is 5.0 times ten to the minus five, and x is 0.0071. N O two is two x, which is 0.014. Test it: the amount taken off the start, 0.0071, is 1.4 per cent of 0.500, under about 5 per cent, so the shortcut holds."
+      }
+    },
+    {
+      "id": "huge-k-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A huge K is the mirror image. Start with sulfur trioxide alone, 0.400 moles per litre, where K for sulfur dioxide and oxygen making it is 4.0 times ten to the ten. Almost nothing splits, so let the oxygen be x. Sulfur dioxide is two x, and sulfur trioxide is about 0.400."
+      }
+    },
+    {
+      "id": "huge-k-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In K, 0.400 squared is 0.160, and 0.160 over four x cubed is 0.040 over x cubed. So x cubed is one times ten to the minus twelve, and x is one times ten to the minus four."
+      }
+    },
+    {
+      "id": "huge-k-test-and-reactant-start",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Test it: the amount taken off the start, two x, is 0.00020, a tiny part of 0.400. Now the other way round. If you started with just the reactants, in the ratio of the equation, and K was huge, nearly all of it would turn to products first, and you would take a small x back from there. An excess of one reactant would stay."
+      }
+    },
+    {
+      "id": "addition-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Type five is the hardest: an amount added. Carbon monoxide and steam make carbon dioxide and hydrogen, K is 4.00, and a 2.00 litre vessel holds, at equilibrium, 0.400 moles of carbon monoxide, 0.400 of steam and 0.800 each of carbon dioxide and hydrogen. Steam is added, and the new equilibrium has 0.200 moles of carbon monoxide. How much steam was added? First convert to moles per litre: 0.200, 0.200, 0.400, 0.400. The new carbon monoxide is 0.100."
+      }
+    },
+    {
+      "id": "addition-ice-table",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Right after the steam goes in, before anything reacts, the vessel is the old equilibrium plus the extra steam. So the unknown goes in the initial row: steam is the old 0.200 plus y, where y is the added steam in moles per litre. The new carbon monoxide, 0.100, goes in the equilibrium row first, so its change is 0.100 minus the old 0.200, which is minus 0.100, and the ratio is one to one all round. Steam also falls 0.100, because some of the added steam is used up, and the two products each rise 0.100."
+      }
+    },
+    {
+      "id": "addition-k-equation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At equilibrium that is 0.100, 0.100 plus y, 0.500 and 0.500. K has not changed, because the temperature has not: it is 4.00. So 0.500 times 0.500, all over 0.100 times the bracket 0.100 plus y, equals 4.00. Solve for y, in moles per litre. Pause here and try it."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "addition-answer-and-slips",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The top is 0.250, so 0.100 plus y is 0.250 divided by the product of 4.00 and 0.100, which is 0.625, and y is 0.525 moles per litre. The vessel is 2.00 litres, so the steam added is 1.05 moles. Check: 0.250 divided by the product of 0.100 and 0.625 is 4.00. The slips: 0.525 on its own forgets the volume. 0.425 moles per litre forgets that some steam was used up."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So read what you are given and what you are asked. A start and a K, for concentrations: x, then a perfect square, or a tiny or huge K, and test any shortcut. An amount added: y in the initial row, K unchanged, answer in moles. Next: practice questions, each with a trap in it."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

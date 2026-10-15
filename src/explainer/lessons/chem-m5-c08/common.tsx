@@ -41,7 +41,7 @@ export const NH3_INK = '#8a6a50';
 /** The H2 + I2 model. K = 49. Concentrations in mol/L. */
 export const K49 = 49;
 export const qOf = (h: number, i: number, hi: number) => (hi * hi) / (h * i);
-/** Made-up rate units: forward = 500 [H2][I2], reverse = 500 [HI]^2 / 49 (the C5 rate model, scaled). */
+/** Made-up rate units: forward = 500 [H2][I2], reverse = 500 [HI]^2 / 49 (a made-up scale for the bar heights only; never shown). */
 export const fwdRate = (h: number, i: number) => 500 * h * i;
 export const revRate = (hi: number) => (500 * hi * hi) / K49;
 /** Mixture A extent x (0 to 0.10) to concentrations. */

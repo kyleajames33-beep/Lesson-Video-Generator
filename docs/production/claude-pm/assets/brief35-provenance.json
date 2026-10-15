@@ -1,0 +1,338 @@
+{
+  "brief": "35-process-clip-plate-pairs",
+  "date": "2026-10-15",
+  "files": [
+    {
+      "file": "public/assets/biology/b6a-endosymbiosis-outside-v1.png",
+      "prompt": "Ink and watercolour ancient host cell with violet nucleus at left and a whole rod bacterium touching its right membrane; transparent 2000 x 1300 canvas. Brief 35 pair 1.",
+      "model": "OpenAI built-in image_gen; exact model identifier not exposed",
+      "canvas": [
+        2000,
+        1300
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "transparentPixelCount": 1759593,
+        "eightPercentMarginsClear": true
+      },
+      "sha256": "60d787754279638882ebf2ebc5232e5b641bdf74dde34926de7c094236c2e4dd",
+      "aligned_to": "public/assets/biology/b6a-animal-cell-v1.png; public/assets/biology/b6a-bacterium-v1.png",
+      "method": "generated source exec-3acbb05c-1722-43b6-ba4f-37177736c9d6.png, then shared crop and scale in tmp/brief35-assemble.py"
+    },
+    {
+      "file": "public/assets/biology/b6a-endosymbiosis-inside-v1.png",
+      "prompt": "Same ancient host cell, same bacterium moved intact into cytoplasm to the right of the nucleus, thin enclosing membrane, host membrane closed. Brief 35 pair 1.",
+      "model": "OpenAI built-in image_gen; exact model identifier not exposed",
+      "canvas": [
+        2000,
+        1300
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "transparentPixelCount": 1814664,
+        "eightPercentMarginsClear": true
+      },
+      "sha256": "496f13823503801d36121545b285e13aceee3a6059d44c835d4570fa61cbbfd8",
+      "aligned_to": "biology/b6a-endosymbiosis-outside-v1.png",
+      "method": "generated source exec-5d233365-b105-4ad6-ad05-1802ca4c9605.png; shared crop and scale, then local composite in x1050-1840 y420-880 with 12 px feather"
+    },
+    {
+      "file": "public/assets/chemistry/c11-cuso4-beaker-crystal-v1.png",
+      "prompt": "Ink and watercolour clear glass beaker about two thirds full of colourless water, one bright blue copper(II) sulfate prism at bottom centre; transparent 1400 x 1800 canvas. Brief 35 pair 2.",
+      "model": "OpenAI built-in image_gen; exact model identifier not exposed",
+      "canvas": [
+        1400,
+        1800
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "transparentPixelCount": 1451074,
+        "eightPercentMarginsClear": true
+      },
+      "sha256": "2bded2a60227e0a9e00722bb1d9f734eaefe05d2de943cd7e8dec6e0cb11361d",
+      "aligned_to": "public/assets/chemistry/c3-cobalt-tube-pink-v1.png; public/assets/chemistry/c5-copper-tube-pale-v1.png",
+      "method": "generated source exec-049107ed-a75e-4d62-a5f5-421b88a57cc8.png, shared crop and scale, then neutralized start-water cast"
+    },
+    {
+      "file": "public/assets/chemistry/c11-cuso4-beaker-dissolved-v1.png",
+      "prompt": "Same clear glass beaker and same liquid level, crystal gone, transparent even pale blue solution. Brief 35 pair 2. Follow-up precise object edit: remove faint ghost crystal from glass bottom and restore clear blue-grey reflections.",
+      "model": "OpenAI built-in image_gen; exact model identifier not exposed",
+      "canvas": [
+        1400,
+        1800
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "transparentPixelCount": 1451074,
+        "eightPercentMarginsClear": true
+      },
+      "sha256": "90c5360ccc55ce6e44e0833e7b189a8ab01b07e3c7e54d94c41265f285c285fc",
+      "aligned_to": "chemistry/c11-cuso4-beaker-crystal-v1.png",
+      "method": "generated source exec-b3a7694b-05aa-4667-9deb-13650888742b.png, shared crop and scale, local composite; ghost crystal removed with image_gen edit exec-3f77639e-2954-43a7-8e12-38a06d4a2658.png, then feathered glass-base patch"
+    },
+    {
+      "file": "public/assets/chemistry/c13-pbi2-tube-clear-v1.png",
+      "prompt": null,
+      "model": null,
+      "provenance_note": "Existing local painted asset. Original prompt and model could not be recovered. Low-alpha red specks beneath the tube removed. The end image copies only changed liquid and pipette contents onto the start apparatus.",
+      "canvas": [
+        1280,
+        1792
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "has_transparent_pixels": true,
+        "fully_transparent_margin_fraction": {
+          "left": 0.14375,
+          "top": 0.09542,
+          "right": 0.14297,
+          "bottom": 0.11607
+        }
+      },
+      "sha256": "2ed292cbcb18b89ad64ab45b3aa860127736dc7489b61eba8a30c7bf4e9851eb",
+      "aligned_to": "public/assets/chemistry/c3-iron-tube-start-v1.png",
+      "change_region": "pipette contents and test tube liquid"
+    },
+    {
+      "file": "public/assets/chemistry/c13-pbi2-tube-precipitate-v1.png",
+      "prompt": null,
+      "model": null,
+      "provenance_note": "Existing local painted asset. Original prompt and model could not be recovered. Low-alpha red specks beneath the tube removed. The end image copies only changed liquid and pipette contents onto the start apparatus.",
+      "canvas": [
+        1280,
+        1792
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "has_transparent_pixels": true,
+        "fully_transparent_margin_fraction": {
+          "left": 0.14375,
+          "top": 0.09542,
+          "right": 0.14297,
+          "bottom": 0.11607
+        }
+      },
+      "sha256": "a5c26fc207c292d4755f60e6b99eedda153d0923351ccd64095829df10418839",
+      "aligned_to": "public/assets/chemistry/c13-pbi2-tube-clear-v1.png",
+      "change_region": "pipette contents and test tube liquid"
+    },
+    {
+      "file": "public/assets/biology/b5a-skin-graze-v1.png",
+      "prompt": null,
+      "model": null,
+      "provenance_note": "Existing local asset discovered before this audit; original prompt and model were not recoverable. The current image was preserved.",
+      "canvas": [
+        1920,
+        1280
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "has_transparent_pixels": true,
+        "fully_transparent_margin_fraction": {
+          "left": 0.13802,
+          "top": 0.10625,
+          "right": 0.13333,
+          "bottom": 0.10625
+        }
+      },
+      "sha256": "f60f5a968cb3fbb67d6fd2d67e1b8306f35f0db90c81df81c5fbf5184b782e93",
+      "aligned_to": "public/assets/biology/b5a-skin-graze-v1.png",
+      "change_region": "top skin wound"
+    },
+    {
+      "file": "public/assets/biology/b5a-skin-healed-v1.png",
+      "prompt": null,
+      "model": null,
+      "provenance_note": "Existing local painted asset. Original prompt and model could not be recovered. Bright surface pixels were toned to match the healed skin.",
+      "canvas": [
+        1920,
+        1280
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "has_transparent_pixels": true,
+        "fully_transparent_margin_fraction": {
+          "left": 0.13802,
+          "top": 0.10625,
+          "right": 0.13333,
+          "bottom": 0.10625
+        }
+      },
+      "sha256": "53d87bbb598b6e091b7b1649ce457bf1ebbd0657d2e7097dacd979b0286bcbeb",
+      "aligned_to": "public/assets/biology/b5a-skin-graze-v1.png",
+      "change_region": "top skin wound"
+    },
+    {
+      "file": "public/assets/biology/b2b-pollen-tube-start-v1.png",
+      "prompt": null,
+      "model": null,
+      "provenance_note": "Existing local asset discovered before this audit; original prompt and model were not recoverable. The current image was preserved.",
+      "canvas": [
+        1600,
+        1600
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "has_transparent_pixels": true,
+        "fully_transparent_margin_fraction": {
+          "left": 0.1,
+          "top": 0.125,
+          "right": 0.1,
+          "bottom": 0.12562
+        }
+      },
+      "sha256": "8e13ec3fdd07811c5f0f09f38465adcab90db6994b10f0f55b8d05bba20e77e8",
+      "aligned_to": "public/assets/biology/b2b-step-tube-v1.png",
+      "change_region": "pollen tube"
+    },
+    {
+      "file": "public/assets/biology/b2b-step-tube-v1.png",
+      "prompt": null,
+      "model": null,
+      "provenance_note": "Existing local asset discovered before this audit; original prompt and model were not recoverable. The current image was preserved.",
+      "canvas": [
+        1600,
+        1600
+      ],
+      "alpha_check": {
+        "mode": "RGBA",
+        "has_transparent_pixels": true,
+        "fully_transparent_margin_fraction": {
+          "left": 0.1,
+          "top": 0.125,
+          "right": 0.1,
+          "bottom": 0.12562
+        }
+      },
+      "sha256": "7bb6d8a8eb143821962141db1ec9bb321a5f67b8f3aeaa537440e91ca1fad511",
+      "aligned_to": "public/assets/biology/b2b-step-tube-v1.png",
+      "change_region": "pollen tube"
+    },
+    {
+      "file": "public/assets/chemistry/c7-condenser-collector-empty-v1.png",
+      "prompt": "Pre-existing painted condenser start plate; original generation prompt unavailable.",
+      "model": "existing asset, model unknown",
+      "canvas": [
+        2150,
+        1300
+      ],
+      "mode": "RGBA",
+      "alpha_check": {
+        "min": 0,
+        "max": 255,
+        "bbox": [
+          228,
+          120,
+          1918,
+          1164
+        ],
+        "fully_transparent_margins_px": [
+          228,
+          120,
+          232,
+          136
+        ],
+        "eight_percent_margin_pass": true
+      },
+      "sha256": "69272223f3d94020ae90e7e79da2f356a54ad0e9e11a926e896954ed894f0eeb",
+      "aligned_to": "c7-condenser-cooler-v1.png"
+    },
+    {
+      "file": "public/assets/chemistry/c7-condenser-collector-liquid-v1.png",
+      "prompt": "Brief 35 C7: clear colourless liquid halfway up sight window with visible level and a few clear condensate droplets; preserve all shared apparatus pixels.",
+      "model": "image_gen edit plus pixel-safe compositing",
+      "canvas": [
+        2150,
+        1300
+      ],
+      "mode": "RGBA",
+      "alpha_check": {
+        "min": 0,
+        "max": 255,
+        "bbox": [
+          228,
+          120,
+          1918,
+          1164
+        ],
+        "fully_transparent_margins_px": [
+          228,
+          120,
+          232,
+          136
+        ],
+        "eight_percent_margin_pass": true
+      },
+      "sha256": "fd9e0731dca20e4fc8ff6c76ff63865828ab9633f4e814215a3d14f238a3a56c",
+      "aligned_to": "c7-condenser-collector-empty-v1.png"
+    },
+    {
+      "file": "public/assets/biology/b3a2-follicle-small-v1.png",
+      "prompt": "Brief 35 B3a2: remove all but one small egg-bearing follicle in the former ripe-follicle area; fill the rest with continuous fibrous ovarian tissue; preserve the rest of the plate.",
+      "model": "image_gen edit plus local masked compositing",
+      "canvas": [
+        1800,
+        1800
+      ],
+      "mode": "RGBA",
+      "alpha_check": {
+        "min": 0,
+        "max": 255,
+        "bbox": [
+          180,
+          424,
+          1620,
+          1375
+        ],
+        "fully_transparent_margins_px": [
+          180,
+          424,
+          180,
+          425
+        ],
+        "eight_percent_margin_pass": true
+      },
+      "sha256": "f3ac061d1c18daa1c0f1e4e39d5ea00f51247d32021844e8ab85de094fdc75cb",
+      "aligned_to": "b3a2-ovary-closeup-v1.png"
+    },
+    {
+      "file": "public/assets/biology/b3a2-follicle-ripe-v1.png",
+      "prompt": "Exact copy of b3a2-ovary-closeup-v1.png for the ripe follicle.",
+      "model": "existing asset copy",
+      "canvas": [
+        1800,
+        1800
+      ],
+      "mode": "RGBA",
+      "alpha_check": {
+        "min": 0,
+        "max": 255,
+        "bbox": [
+          180,
+          424,
+          1620,
+          1375
+        ],
+        "fully_transparent_margins_px": [
+          180,
+          424,
+          180,
+          425
+        ],
+        "eight_percent_margin_pass": true
+      },
+      "sha256": "82ad095cd45c640c68ce719384f0fd80a74ee8cf8f916342152fcff1dbc5e545",
+      "aligned_to": "b3a2-ovary-closeup-v1.png"
+    }
+  ],
+  "pair_notes": {
+    "b6a": "Difference remains in the right-side uptake region, including the nearby vesicle where the engulfment membrane occludes it and the closing host membrane. The nucleus and left host are pixel-identical.",
+    "c11": "Only solution colour, the crystal, its glass-base reflection and the shared liquid surface tint differ; the beaker outline and water level are fixed.",
+    "c13_b5a_b2b": "Existing assets preserved; QA generated on 2026-10-15. Original generation metadata unknown.",
+    "c7_b3a2": [
+      "C7 end repaired from the pre-existing start plate, preserving shared pixels.",
+      "B3a2 small plate has one small egg-bearing follicle within the former large follicle area. The outer outline, right follicles and tissue outside the left replacement mask are exact pixels from the ripe plate. Some fibrous tissue and nearby vessel pixels inside the replacement mask differ; owner visual review remains needed before clip generation."
+    ]
+  },
+  "provenance_note": "Some source plates existed locally before this hand-in. Unknown original prompts and model identifiers are left unknown. Where prompt text is supplied for a pre-existing plate, it summarizes the brief rather than a verbatim generation call."
+}

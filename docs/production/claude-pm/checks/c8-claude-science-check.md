@@ -62,3 +62,7 @@ Applied 13 October 2026 to `../lessons/chem-m5-c08.md`, Revision 4. The check fo
 | Rate-ratio claim (K/Q) | The check agreed that the learner copy is accurate ("in this model" and key note 3 "simple model"). No change. |
 
 The learning re-review edits (scene 6 "because K over Q is then one", four cuts, stale Status and length text) were applied in the same revision; no science claim changed. Nothing UNVERIFIED remains in learner copy.
+
+## Revision 6 check (14 Oct, owner request: rate algebra removed)
+
+Scenes rate-link, q-chases-k, other-side-answer and disturbance now give the direction from a comparison with the settled tube instead of forward / reverse = K / Q. Checked against the elementary-step picture used in C2: for tube A, [H2][I2] = 0.040 is above the settled 0.010 and [HI]^2 = 0.25 is below the settled 0.49, so forward outpaces reverse ("joining happens faster than splitting") is correct. Tube B: [H2][I2] = 0.0025 below 0.010 and [HI]^2 = 0.64 above 0.49, so splitting outpaces joining is correct. Disturbance: added H2 raises [H2][I2] from 0.010 to 0.030 at the same [HI], so the forward reaction wins. "Q compares products with reactants, just like K does" is a fair school statement. No new numbers. No em dashes. Resolution: pass.

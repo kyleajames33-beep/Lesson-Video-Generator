@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cueFrame, cues} from '../../cues';
 import {IronTube} from '../chem-m5-c03/parts';
-import {Arrow, FWD, Fade, Frac, Line, Overlay, RateBars, Ring, Sx, TEAL, fracGeom, rowXs, Tick} from './parts';
+import {Arrow, FWD, Fade, Frac, Line, Overlay, Ring, Sx, TEAL, fracGeom, termW, Tick} from './parts';
 import type {Term} from './parts';
 import {Heading, FE, FE_INK, RED, RED_INK, SCN_INK, SCN, cw, kf, sc} from './common';
 
@@ -102,114 +102,69 @@ export const SceneHook: React.FC = () => {
 const tw0 = (s: string) => s.length * 33;
 void FWD; void RED;
 
-// ---------- 2a. The two rates, set equal ----------
-const R = 'rates-equal';
-const K2 = cues(sc(R), {brackets: 'square brackets', amount: 'its amount per litre', remember: 'Now remember the rates', joining: 'joining runs at', splitting: 'splitting runs at', equal: 'the rates are equal'});
-const fw = (k: number) => cw(R, 'point three times the iron times the thiocyanate', k);
-const rv = (k: number) => cw(R, 'three times the red ion', k);
-const fin = (k: number) => cw(R, 'so point three times iron times thiocyanate equals three times the red ion', k);
-export const SceneRates: React.FC = () => {
-	const f = useCurrentFrame();
-	const s = kf(f, [[0, 0], [44, 1]]);
-	const th = 560 + (300 - 560) * s, tx = 150 + (1690 - 150) * s, ty = 260 + (150 - 260) * s;
-	const SZ = 52;
-	const fwdItems: Term[] = [
-		{t: 'forward =', br: false, hand: true, color: FWD, at: K2.joining},
-		{t: '0.3', br: false, at: fw(0)}, {t: '×', br: false, at: fw(2)},
-		{...FEs, at: fw(4)}, {...SCNs, at: fw(7)},
-	];
-	const revItems: Term[] = [
-		{t: 'reverse =', br: false, hand: true, color: AMBER_INK, at: K2.splitting},
-		{t: '3', br: false, at: rv(0)}, {t: '×', br: false, at: rv(1)},
-		{...REDs, at: rv(3)},
-	];
-	const fx = rowXs(fwdItems, SZ, 640), rx = rowXs(revItems, SZ, 640);
-	const comb: Term[] = [
-		{t: '0.3', br: false, at: fin(1)}, {t: '×', br: false, at: fin(3)}, {...FEs, at: fin(4)}, {...SCNs, at: fin(6)},
-		{t: '=', br: false, at: fin(7)}, {t: '3', br: false, at: fin(8)}, {t: '×', br: false, at: fin(9)}, {...REDs, at: fin(11)},
-	];
-	const br0: Term = {...FEs, at: K2.brackets};
-	const bx = rowXs([br0], 80, 640);
-	return (
-		<>
-			<Heading text="The two rates, set equal" at={4} size={68} />
-			<IronTube x={tx} y={ty} h={th} t={0.75} opacity={1} />
-			<Overlay>
-				<RateBars x0={170} base={730} scale={9} fwd={30} rev={30} at={K2.remember} fwdLabel="30" revLabel="30" eqAt={K2.equal} bw={110} gx={230} axisLabel="rate (units per tick)" />
-				{/* square brackets mean amount per litre */}
-				<Line x={640} y={262} size={80} items={[br0]} />
-				<Sx x={bx[0].x + bx[0].w + 36} y={262} text="= the amount of Fe^{3+} per litre" size={46} hand color={INK_SOFT} at={K2.amount - 4} />
-				{/* rate lines */}
-				<Line x={640} y={400} size={SZ} items={fwdItems} />
-				<Line x={640} y={540} size={SZ} items={revItems} />
-				<Ring cx={fx[3].x + fx[3].w / 2} cy={400 - 16} rx={fx[3].w / 2 + 14} ry={52} at={fw(4) + 14} color={FWD} seed={2} />
-				<Ring cx={fx[4].x + fx[4].w / 2} cy={400 - 16} rx={fx[4].w / 2 + 14} ry={52} at={fw(7) + 14} color={FWD} seed={5} />
-				<Ring cx={rx[3].x + rx[3].w / 2} cy={540 - 16} rx={rx[3].w / 2 + 14} ry={52} at={rv(3) + 14} color={AMBER_INK} seed={7} />
-				{/* the two lines join */}
-				<DrawPath d="M600,350 Q566,400 566,470 Q566,540 600,590" at={K2.equal} dur={22} color={TEAL} width={7} />
-				<Sx x={520} y={494} text="=" size={90} color={TEAL} anchor="middle" at={K2.equal + 10} />
-				<Fade at={fin(0) - 10}>
-					<rect x={600} y={650} width={1080} height={130} rx={26} fill="#fffdf8" stroke={TEAL} strokeWidth={4} />
-				</Fade>
-				<Line x={640} y={738} size={62} items={comb} />
-			</Overlay>
-		</>
-	);
-};
-
-// ---------- 2b. The ratio that stays put, and its name ----------
+// ---------- 2. Square brackets, and the name K ----------
 const N = 'ratio-name';
-const K3 = cues(sc(N), {both3: 'Divide both sides by three', andBy: 'and by the iron', ratioIs: 'The red ion over', oh: 'equals point three over three', fixed: 'fixed', eqc: 'the equilibrium constant', kk: 'K also written', keq: 'also written Keq', name: 'a name'});
+const K2 = cues(sc(N), {
+	first: 'First, some notation', brackets: 'Square brackets', conc: 'mean its concentration', amount: 'its amount per litre', moles: 'in moles per litre',
+	red: 'So the red ion', iron: 'the iron times', thio: 'the thiocyanate in brackets', ratio: 'is our ratio', any: 'For any settled mixture', temp: 'at one temperature',
+	same: 'it comes out the same', tenth: 'a tenth in both', name: 'a name', eqc: 'the equilibrium constant', kk: 'K also written', keq: 'also written Keq',
+});
+const brW = (k: number) => cw(N, 'in brackets', 1, k);
 export const SceneRatio: React.FC = () => {
 	const f = useCurrentFrame();
-	const SZ = 56;
-	const l1: Term[] = [
-		{t: '0.3', br: false, at: -1000}, {t: '×', br: false, at: -1000}, {...FEs, at: -1000, strike: K3.andBy + 16}, {...SCNs, at: -1000, strike: K3.andBy + 22},
-		{t: '=', br: false, at: -1000}, {t: '3', br: false, at: -1000, strike: K3.both3 + 14}, {t: '×', br: false, at: -1000, strike: K3.both3 + 20}, {...REDs, at: -1000},
-	];
-	const L1X = 960 - 150;
-	const xs = rowXs(l1, SZ, L1X, 'middle');
-	const l1y = 280;
-	const cell = (i: number): [number, number] => [xs[i].x + 17, l1y];
-	const gfr = fracGeom(560, 640, 60, [REDs], [FEs, SCNs]);
-	const num: Term[] = [{...REDs, at: K3.ratioIs, from: cell(7), dur: 30}];
-	const den: Term[] = [{...FEs, at: K3.andBy + 24, from: cell(2), dur: 30}, {...SCNs, at: K3.andBy + 34, from: cell(3), dur: 30}];
-	const p3 = (k: number) => cw(N, 'equals point three over three', k);
-	const tenth = cw(N, 'a tenth', 1);
-	const eqX = gfr.x2 + 38;
+	// the evidence: the hook's two fractions, smaller, on the left
+	const EX = 300, eA = 520, eB = 760, ES = 50;
+	const ev = (n: string, d1: string, d2: string, cy: number, label: string) => (
+		<>
+			<Sx x={EX - 190} y={cy - 92} text={label} size={36} color={INK_SOFT} hand at={6} />
+			<Frac cx={EX} cy={cy} size={ES} num={[{t: n, br: false, at: 6, color: RED_INK}]} den={[{t: d1, br: false, at: 6, color: FE_INK}, {t: '×', br: false, at: 6}, {t: d2, br: false, at: 6, color: SCN_INK}]} barAt={4} />
+			<Sx x={EX + 122} y={cy + 17} text="=" size={ES} anchor="middle" at={8} />
+			<Sx x={EX + 152} y={cy + 24} text="0.1" size={64} color={TEAL} at={8} />
+		</>
+	);
+	// the symbolic ratio, built as the narration names each species
+	const RS = 64, RCX = 1050, RCY = 560;
+	const num: Term[] = [{...REDs, at: K2.red + 8}];
+	const den: Term[] = [{...FEs, at: K2.iron + 2}, {...SCNs, at: K2.thio + 2}];
+	const g = fracGeom(RCX, RCY, RS, num, den);
 	return (
 		<>
-			<Heading text="The ratio that stays put" at={4} size={68} />
-			<IronTube x={1690} y={150} h={300} t={0.75} opacity={1} />
+			<Heading text="Square brackets, and the name K" at={4} size={64} />
+			<IronTube x={1690} y={150} h={300} t={0.75} opacity={prog(f, 0, 14)} />
 			<Overlay>
-				<Line x={L1X} y={l1y} size={SZ} items={l1} anchor="middle" />
-				{/* divide both sides by 3 */}
-				<Sx x={xs[0].x + xs[0].w / 2} y={l1y + 74} text="÷ 3" size={46} hand color={INK} anchor="middle" at={K3.both3 + 6} />
-				<Sx x={xs[5].x + (xs[7].x + xs[7].w - xs[5].x) / 2} y={l1y + 74} text="÷ 3" size={46} hand color={INK} anchor="middle" at={K3.both3 + 14} />
-				<Fade at={K3.andBy}>
-					<Sx x={xs[2].x + (xs[3].x + xs[3].w - xs[2].x) / 2} y={l1y + 74} text="÷ [Fe^{3+}][SCN^{−}]" size={42} hand color={INK} anchor="middle" at={K3.andBy + 4} />
-					<Sx x={xs[7].x + xs[7].w / 2} y={l1y + 126} text="÷ [Fe^{3+}][SCN^{−}]" size={42} hand color={INK} anchor="middle" at={K3.andBy + 10} />
+				{/* evidence kept from the hook */}
+				{ev('10', '10', '10', eA, 'first mixture')}
+				{ev('12', '15', '8', eB, 'after more iron')}
+				<DrawPath d={`M${EX + 262},${eA + 6} L${EX + 292},${eA + 6} L${EX + 292},${eB + 6} L${EX + 262},${eB + 6}`} at={10} dur={20} color={TEAL} width={6} dash="12 10" />
+				<Sx x={EX + 310} y={(eA + eB) / 2 + 14} text="same value" size={40} color={TEAL} hand at={14} />
+				<Fade at={8}>
+					<rect x={96} y={880} width={560} height={58} rx={29} fill="#fffdf8" stroke={INK_SOFT} strokeWidth={3} />
+					<Sx x={376} y={919} text="units, as in earlier videos" size={36} color={INK_SOFT} anchor="middle" hand at={8} />
 				</Fade>
-				{/* the new ratio */}
-				<Frac cx={560} cy={640} size={60} num={num} den={den} barAt={K3.andBy + 20} />
-				<Sx x={eqX + 12} y={658} text="=" size={56} anchor="middle" at={K3.oh} />
-				<Frac cx={gfr.x2 + 200} cy={640} size={60} num={[{t: '0.3', br: false, at: p3(1)}]} den={[{t: '3', br: false, at: p3(3)}]} barAt={p3(1)} />
-				<Sx x={gfr.x2 + 332} y={658} text="=" size={56} anchor="middle" at={tenth - 4} />
-				<Sx x={gfr.x2 + 372} y={664} text="0.1" size={68} color={TEAL} at={tenth} />
-				<Ring cx={gfr.x2 + 200} cy={650} rx={96} ry={104} at={K3.fixed} color={AMBER_INK} seed={3} />
-				<Sx x={gfr.x2 + 200} y={800} text="fixed at one temperature" size={46} hand color={AMBER_INK} anchor="middle" at={K3.fixed + 8} />
+				{/* square brackets mean concentration */}
+				<Line x={860} y={300} size={84} items={[{...FEs, at: K2.brackets}]} />
+				<Ring cx={860 + termW({...FEs, at: 0}, 84) / 2} cy={274} rx={termW({...FEs, at: 0}, 84) / 2 + 22} ry={70} at={K2.brackets + 18} out={K2.red} color={TEAL} seed={2} />
+				<Sx x={1110} y={268} text="concentration:" size={46} color={INK} hand at={K2.conc} />
+				<Sx x={1110} y={322} text="amount per litre (mol/L)" size={46} color={INK} hand at={K2.amount} />
+				{/* the ratio in bracket form, each pair ringed as it is spoken */}
+				<Frac cx={RCX} cy={RCY} size={RS} num={num} den={den} barAt={K2.red} />
+				<Ring cx={g.num[0].x + g.num[0].w / 2} cy={g.yn - RS * 0.3} rx={g.num[0].w / 2 + 14} ry={52} at={brW(1)} out={K2.ratio + 4} color={RED_INK} seed={3} />
+				<Ring cx={g.den[0].x + g.den[0].w / 2} cy={g.yd - RS * 0.3} rx={g.den[0].w / 2 + 12} ry={50} at={K2.iron + 14} out={K2.ratio + 4} color={FE_INK} seed={5} />
+				<Ring cx={g.den[1].x + g.den[1].w / 2} cy={g.yd - RS * 0.3} rx={g.den[1].w / 2 + 12} ry={50} at={brW(2)} out={K2.ratio + 4} color={SCN_INK} seed={7} />
+				<Ring cx={RCX} cy={RCY + 22} rx={g.W / 2 + 22} ry={104} at={K2.ratio} color={TEAL} seed={4} />
+				<Sx x={RCX} y={RCY + 176} text="any settled mixture of this reaction" size={40} color={INK_SOFT} anchor="middle" hand at={K2.any} />
+				<Sx x={RCX} y={RCY + 226} text="at one temperature" size={46} color={AMBER_INK} anchor="middle" hand at={K2.temp} />
+				{/* = 0.1, the same value as both pieces of evidence */}
+				<Sx x={g.x2 + 50} y={RCY + 18} text="= 0.1" size={64} color={TEAL} at={K2.tenth} />
+				<Ring cx={EX + 204} cy={eA + 4} rx={54} ry={46} at={K2.tenth + 4} color={TEAL} seed={6} />
+				<Ring cx={EX + 204} cy={eB + 4} rx={54} ry={46} at={K2.tenth + 10} color={TEAL} seed={8} />
 				{/* the name */}
-				<Arrow x1={gfr.x2 + 480} y1={640} x2={gfr.x2 + 590} y2={700} at={K3.eqc - 6} color={TEAL} width={6} />
-				<Sx x={1330} y={560} text="the equilibrium constant" size={58} hand color={TEAL} at={K3.eqc} />
-				<Sx x={1280} y={800} text="K" size={230} hand color={TEAL} at={K3.kk} />
-				<Sx x={1450} y={740} text="also written Keq" size={46} hand color={INK_SOFT} at={K3.keq} />
-				<Fade at={K3.kk + 20}>
-					<Sx x={1450} y={800} text="the value the ratio settles at," size={36} color={INK_SOFT} at={K3.kk + 20} />
-					<Sx x={1450} y={846} text="at a given temperature" size={36} color={INK_SOFT} at={K3.kk + 26} />
-				</Fade>
-				{f < 0 ? null : null}
+				<Arrow x1={g.x2 + 110} y1={RCY + 50} x2={1490} y2={690} at={K2.name} color={TEAL} width={6} />
+				<Sx x={1500} y={830} text="K" size={200} hand color={TEAL} at={K2.kk} />
+				<Sx x={1420} y={890} text="the equilibrium constant" size={44} hand color={TEAL} at={K2.eqc} />
+				<Sx x={1420} y={946} text="also written Keq" size={40} hand color={INK_SOFT} at={K2.keq} />
 			</Overlay>
 		</>
 	);
 };
-void cueFrame; void prog; void INK;
+void cueFrame; void INK; void K2.first; void K2.moles; void K2.same;

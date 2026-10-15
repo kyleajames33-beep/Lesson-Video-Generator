@@ -128,7 +128,7 @@ export const SceneFeedback1: React.FC = () => {
 				<Bracket x={g.x0 + 0.91 * g.w} y1={g.yR} y2={topY} color={AMBER_INK} at={KF1.both + 8} side="left" />
 				<Fade at={KF1.both}>
 					<SvgText x={g.x0 + 0.075 * g.w} y={g.yL + 56} text="forward" size={40} color={FWD} anchor="middle" at={KF1.both} />
-					<SvgText x={g.x0 + 0.935 * g.w} y={g.yR + 56} text="back" size={40} color={AMBER_INK} anchor="middle" at={KF1.both + 8} />
+					<SvgText x={g.x0 + 0.93 * g.w} y={g.yR - 22} text="back" size={40} color={AMBER_INK} at={KF1.both + 8} />
 				</Fade>
 				<Fade at={KF1.factor}><SvgText x={g.x0 + g.w / 2} y={g.y0 + g.h + 100} text="both rates rise by the same factor" size={48} color={TEAL} anchor="middle" at={KF1.factor} /></Fade>
 				<Fade at={KF1.mix} out={KF1.ends}><SvgText x={450} y={760} text="a catalyst changes the speed, not the destination" size={60} color={INK} anchor="middle" at={KF1.mix} /></Fade>
@@ -217,11 +217,11 @@ export const SceneDecision: React.FC = () => {
 					<Curve g={{x: 1110, y: 450, w: 130, h: 70, tMax: 16, vMax: 15, px: t => 1110 + (t / 16) * 130, py: v => 520 - (v / 15) * 70}} fn={t => modelB(t).hi} upTo={16} color={METAL_DARK} width={8} />
 				</Fade>
 				<Fade at={KD.which}>
-					<rect x={1100} y={715} width={34} height={50} fill="#bcd6ee" stroke={FWD} strokeWidth={4} rx={3} />
-					<rect x={1146} y={735} width={34} height={30} fill="#f6dfae" stroke={AMBER} strokeWidth={4} rx={3} />
-					<text x={1190} y={700} fill={INK} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}}>?</text>
+					<rect x={1100} y={693} width={34} height={50} fill="#bcd6ee" stroke={FWD} strokeWidth={4} rx={3} />
+					<rect x={1146} y={713} width={34} height={30} fill="#f6dfae" stroke={AMBER} strokeWidth={4} rx={3} />
+					<text x={1190} y={680} fill={INK} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44}}>?</text>
 				</Fade>
-				<Fade at={KD.factor}><path d="M1200,740 L1240,740" stroke={TEAL} strokeWidth={7} strokeLinecap="round" /></Fade>
+				<Fade at={KD.factor}><path d="M1200,718 L1240,718" stroke={TEAL} strokeWidth={7} strokeLinecap="round" /></Fade>
 			</Overlay>
 			<div style={{position: 'absolute', left: 1450 + shake, top: 230, opacity: prog(f, KD.both, 14)}}>
 				<svg width={300} height={540} viewBox="0 0 300 540" style={{overflow: 'visible'}}>

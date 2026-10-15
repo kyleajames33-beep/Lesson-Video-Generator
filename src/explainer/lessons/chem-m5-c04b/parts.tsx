@@ -4,7 +4,7 @@ import {Img, staticFile, useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog, rng, scribbleEllipse} from '../../kit';
 import {ESC, Fade, Overlay, SvgText, TEAL} from '../chem-m5-c01/parts';
 import {Pill} from '../chem-m5-c02/parts';
-import {RxnChip, WrongChip} from '../chem-m5-c03/parts';
+import {ColourStrip, RxnChip, WrongChip} from '../chem-m5-c03/parts';
 import {CATALYST, DROPPER, HAVE, PLUNGER, SEALED_TUBE, SEESAW_BASE, SEESAW_BEAM} from './assets';
 import {GLASS, H2C, H2_INK, HIC, HI_INK, I2C, I2_INK, METAL, METAL_DARK, METAL_LIGHT, hexMix, tubeColour} from './common';
 
@@ -68,6 +68,7 @@ const PaintedTube: React.FC<{x: number; y: number; w: number; h: number; rings: 
 };
 
 // ---------- gas tube with particles ----------
+const CAVITY = '#f6f2ea'; // paper tone under the gas tint inside a clean tube
 type SlotP = {p1: number; p2: number; p3: number; p4: number; w1: number; w2: number; w3: number; w4: number};
 const slotCache = new Map<string, SlotP[]>();
 const slotsFor = (seed: number, type: number): SlotP[] => {
@@ -96,6 +97,8 @@ export const GasTube: React.FC<{x: number; y: number; w: number; h: number; coun
 	const n = [Math.round(counts.h), Math.round(counts.i), Math.round(counts.hi)];
 	const horiz = w > h;
 	const paint = HAVE.has(SEALED_TUBE);
+	const ringed = clamps && horiz;
+	const ins = Math.min(w, h) * 0.15; // the painted glass wall is about 15% of the tube thickness
 	return (
 		<g opacity={reveal}>
 			{clamps && !(paint && horiz) ? (horiz
@@ -103,9 +106,15 @@ export const GasTube: React.FC<{x: number; y: number; w: number; h: number; coun
 				: <path d={`M${x - 14},${y + h + 6} L${x + w + 14},${y + h + 6}`} stroke={METAL_DARK} strokeWidth={6} strokeLinecap="round" />) : null}
 			{paint ? (
 				<>
-					<rect x={x + 6} y={y + 6} width={w - 12} height={h - 12} rx={Math.max(4, rx - 6)} fill={tubeColour(tintI ?? counts.i)} fillOpacity={0.55} />
+					{ringed ? <rect x={x + 6} y={y + 6} width={w - 12} height={h - 12} rx={Math.max(4, rx - 6)} fill={tubeColour(tintI ?? counts.i)} fillOpacity={0.55} /> : null}
 					{heavy ? <rect x={x - 3} y={y - 3} width={w + 6} height={h + 6} rx={rx + 3} fill="none" stroke={INK} strokeWidth={5} /> : null}
-					<PaintedTube x={x} y={y} w={w} h={h} rings={clamps && horiz} />
+					<PaintedTube x={x} y={y} w={w} h={h} rings={ringed} />
+					{/* Upright and ringless tubes: a clean flat interior over the painted glass, so the plate's inner-wall
+					    shading (a frosted smear once the plate is sliced and stretched) never shows inside the tube. */}
+					{ringed ? null : <>
+						<rect x={x + ins} y={y + ins} width={w - 2 * ins} height={h - 2 * ins} rx={Math.min(w, h) / 2 - ins} fill={CAVITY} />
+						<rect x={x + ins} y={y + ins} width={w - 2 * ins} height={h - 2 * ins} rx={Math.min(w, h) / 2 - ins} fill={tubeColour(tintI ?? counts.i)} fillOpacity={0.55} />
+					</>}
 				</>
 			) : (
 				<>
@@ -155,7 +164,7 @@ export const Crumple: React.FC<{x: number; y: number; s: number; rot?: number; o
 // ---------- graph ----------
 export type G = {x: number; y: number; w: number; h: number; tMax: number; vMax: number; px: (t: number) => number; py: (v: number) => number};
 export const mkG = (x: number, y: number, w: number, h: number, tMax = 16, vMax = 15): G => ({x, y, w, h, tMax, vMax, px: t => x + (t / tMax) * w, py: v => y + h - (v / vMax) * h});
-export const GraphAxes: React.FC<{g: G; at: number; xLabel?: string; yLabel?: string; xTicks?: number[]; yTicks?: number[]; fmt?: (v: number) => string}> = ({g, at, xLabel = 'time (made-up clock)', yLabel = 'amount (units)', xTicks = [0, 5, 10, 15], yTicks = [0, 5, 10, 15], fmt = v => String(v)}) => (
+export const GraphAxes: React.FC<{g: G; at: number; xLabel?: string; yLabel?: string; xTicks?: number[]; yTicks?: number[]; fmt?: (v: number) => string}> = ({g, at, xLabel = 'time', yLabel = 'concentration (units)', xTicks = [0, 5, 10, 15], yTicks = [0, 5, 10, 15], fmt = v => String(v)}) => (
 	<Fade at={at}>
 		<path d={`M${g.x},${g.y - 8} L${g.x},${g.y + g.h} L${g.x + g.w + 10},${g.y + g.h}`} fill="none" stroke={INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
 		{xTicks.map(t => <g key={'x' + t}><path d={`M${g.px(t)},${g.y + g.h} L${g.px(t)},${g.y + g.h + 10}`} stroke={INK} strokeWidth={3} /><text x={g.px(t)} y={g.y + g.h + 40} textAnchor="middle" fill={INK_SOFT} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}}>{fmt(t)}</text></g>)}
@@ -309,23 +318,24 @@ export const RateBars: React.FC<{x0: number; base: number; scale: number; fwd: n
 
 // ---------- stage table ----------
 export type TRow = {label: string; at: number; cells: [string, number][]; color?: string};
+const TDY = 18; // the table sits a little lower so its header clears the graph's x-axis label
 const COLX = {label: 700, c: [975, 1075, 1175], fwd: 1315, rev: 1455, sett: 1650};
 export const StageTable: React.FC<{rows: TRow[]; at: number; rowH?: number}> = ({rows, at, rowH = 58}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 14);
 	if (o <= 0.01) return null;
 	const newest = rows.reduce((s, r) => s + smooth((f - r.at) / 14), 0) - 1;
-	const base0 = 862;
+	const base0 = 862 + TDY;
 	const xs = [...COLX.c, COLX.fwd, COLX.rev, COLX.sett];
-	const th = (x: number, text: string, color = INK) => <SvgText key={text + x} x={x} y={812} text={text} size={30} hand={false} weight={700} color={color} anchor="middle" />;
+	const th = (x: number, text: string, color = INK) => <SvgText key={text + x} x={x} y={812 + TDY} text={text} size={30} hand={false} weight={700} color={color} anchor="middle" />;
 	return (
 		<g opacity={o}>
-			<SvgText x={COLX.c[1]} y={774} text="amount (units)" size={28} hand={false} weight={600} color={INK_SOFT} anchor="middle" />
-			<path d={`M${COLX.c[0] - 50},784 L${COLX.c[2] + 50},784`} stroke={INK_SOFT} strokeWidth={2.5} />
-			<SvgText x={(COLX.fwd + COLX.rev) / 2} y={774} text="rate (units per tick)" size={28} hand={false} weight={600} color={INK_SOFT} anchor="middle" />
-			<path d={`M${COLX.fwd - 64},784 L${COLX.rev + 64},784`} stroke={INK_SOFT} strokeWidth={2.5} />
+			<SvgText x={COLX.c[1]} y={774 + TDY} text="concentration (units)" size={28} hand={false} weight={600} color={INK_SOFT} anchor="middle" />
+			<path d={`M${COLX.c[0] - 50},${784 + TDY} L${COLX.c[2] + 50},${784 + TDY}`} stroke={INK_SOFT} strokeWidth={2.5} />
+			<SvgText x={(COLX.fwd + COLX.rev) / 2} y={774 + TDY} text="rate (units per tick)" size={28} hand={false} weight={600} color={INK_SOFT} anchor="middle" />
+			<path d={`M${COLX.fwd - 64},${784 + TDY} L${COLX.rev + 64},${784 + TDY}`} stroke={INK_SOFT} strokeWidth={2.5} />
 			{th(COLX.c[0], 'H_2', H2_INK)}{th(COLX.c[1], 'I_2', I2_INK)}{th(COLX.c[2], 'HI', HI_INK)}{th(COLX.fwd, 'forward', FWD)}{th(COLX.rev, 'reverse', AMBER_INK)}{th(COLX.sett, 'settles at', INK)}
-			<path d={`M${COLX.label - 10},826 L${COLX.sett + 100},826`} stroke={INK} strokeWidth={3} />
+			<path d={`M${COLX.label - 10},${826 + TDY} L${COLX.sett + 100},${826 + TDY}`} stroke={INK} strokeWidth={3} />
 			{rows.map((r, i) => {
 				const p = newest - i;
 				const op = p <= -1 ? 0 : p < 0 ? 1 + p : p < 1 ? 1 - 0.32 * p : Math.max(0, 0.68 * (2 - p));
@@ -399,6 +409,18 @@ export const PaintedSeesaw: React.FC<{x: number; y: number; s: number; tilt?: nu
 				<circle cx={700} cy={-125} r={74} fill="#f6dfae" stroke={AMBER} strokeWidth={20} />
 			</g>
 		</g>
+	);
+};
+/** Colour strip with its label set clear of the knob (the shared strip's label sits under the knob at t = 0). */
+export const Strip: React.FC<React.ComponentProps<typeof ColourStrip>> = ({label = 'tube colour', ...p}) => {
+	const f = useCurrentFrame();
+	const h = p.h ?? 34;
+	const o = prog(f, p.at, 14);
+	return (
+		<>
+			<ColourStrip {...p} label="" />
+			{o > 0.01 ? <text x={p.x - h * 0.72 - 16} y={p.y + h - 4} textAnchor="end" fill={INK_SOFT} opacity={o} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}}>{label}</text> : null}
+		</>
 	);
 };
 export const mix = hexMix;

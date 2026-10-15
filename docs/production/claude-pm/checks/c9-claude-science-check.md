@@ -134,3 +134,24 @@ Applied in Revision 3 of `../lessons/chem-m5-c09.md` (13 Oct). Root kept K = 0.0
 7. Finding 7 (both numbers rise, real reverse barrier near zero): resolved in author note (a). Learner copy unchanged; the 4b pair stays labelled "made-up".
 8. Finding 8 ("settled amounts" in scene 1): resolved. Scene 1 now reads "K is built from the settled concentrations, so if the hot tube settles with very different concentrations, can K really stay fixed?".
 9. UNVERIFIED 1 to 4: no learner copy depends on any; units of K stay omitted (C5 policy); the 25 C N2O4 vapour pressure, a source for Kc = 0.36 and the heat-capacity estimates remain open for the Codex fact check.
+
+## Revision 4 check
+
+Checked 15 Oct by an independent reviewer: every claim changed by Revision 4 (rate model removed) and the Revision 5 fixes in `../lessons/chem-m5-c09.md`. Text only.
+
+| Claim | Verdict | Basis |
+| --- | --- | --- |
+| "Heating speeds up both reactions, but the one that takes in heat speeds up more" (3, 5b, 10a, key note 2) | Correct at school level. For the forward and reverse directions Ea(forward) - Ea(reverse) = ΔH, so the endothermic direction has the higher barrier. By the Arrhenius relation the proportional rise in rate on heating is larger for the higher barrier. Just before heating the two rates are equal and the amounts have not changed, so the bigger proportional rise is also the bigger rise in rate at that moment, which is what the bars show. Precise wording kept in author note (a): "speeds up more" means by a bigger factor; it is not a claim about later absolute rates. | Arrhenius relation; energy profile with ΔH = Ea(f) - Ea(r) (Year 11 Module 4) |
+| "needs harder collisions, so it gains the most" (3, key note 2) | Correct plain-language form of the higher activation energy; matches C3 scene 7b wording. | As above |
+| Idealisation for N2O4 / NO2 | Recorded, not learner copy. NO2 recombination has almost no barrier and a rate constant that changes little with temperature (it may fall slightly), so "both speed up" is the general school picture; the relative gain of the endothermic direction, which is what changes K, holds exactly (kf / kr tracks K for an elementary step; the sign of the K change follows ΔH by thermodynamics for any mechanism). Omitting it teaches no wrong idea about K. | Finding 7 above; author note (a) |
+| "A catalyst speeds up both reactions by the same factor, so the rates stay equal, nothing shifts, and K stays the same" (3, 6 row 3, key note 2) | Correct. A catalyst lowers both barriers by the same amount (shared transition state), multiplying both rate constants by the same factor; K is unchanged. | C4b; standard kinetics |
+| Scene 2: a disturbance changes the amounts, the mixture returns to the same ratio, "each collision is just as likely to work as before"; heating "makes collisions more likely to work" | Correct. At fixed temperature the fraction of successful collisions is unchanged, so K is unchanged; heating raises the fraction of collisions with enough energy. | Collision theory |
+| Scene 5b: heating 2NO2 ⇌ N2O4 uses up N2O4 (the product), so K falls | Correct; the Revision 4 visual showing N2O4 rising was wrong and is fixed. | Same data as 5a (160 to 2.0) |
+| Scene 7b: Q below K means too little NO2 compared with a settled tube at 100 C, so N2O4 splits faster than it forms | Correct; consistent with C8. | C8 sources |
+| Scene 10a: small heat, small change | Correct qualitatively (size of the K change scales with the size of ΔH). | Finding 3 above |
+
+Numbers after the 4b deletion: re-checked. K 0.0061 and 0.49, ratio 80.3 (spoken "about eighty times", now in 4a again), flipped 163.9 and 2.04 (about 160 and 2.0), cold 0.0329 and 0.0142 (Q = 0.00613), hot 0.0082 and 0.0635 (0.4917), 17.7 and 79.4 percent, attempt K 49 and about 42 at 500 C: all unchanged and consistent. The 200 and 2.5 multipliers and the "forward rate / reverse rate = K / Q = 80" line are removed from the Numbers used table, Numbers to verify and author notes. Stale rate-model references were also removed from Decisions, Teaching checks, Memory aid check, Assets and Open decisions.
+
+**Count: 1 error in a visual description (5b direction, fixed), 0 errors in narration, 0 new UNVERIFIED items.**
+
+Resolution: all Revision 4 claims checked and correct; the 5b visual direction error and every stale reference to the rate model, dials, x 200 and x 2.5 are fixed in Revision 5 of the design (15 Oct). Ready to voice, subject to the remaining Codex fact check of the Revision 3 arithmetic and human listening.

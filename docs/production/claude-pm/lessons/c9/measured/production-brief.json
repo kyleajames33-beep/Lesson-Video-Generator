@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c9/measured/lesson.json",
+    "lessonSha256": "5d4610967b29473cbd953c94b8c341efb993571bc42dba2ef0a45e1e206e263d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C8 and Year 11: dynamic equilibrium and equal rates (C1); the faster rate falls and the slower rate rises (C2); only hard enough collisions react, so heating speeds up the heat-absorbing reaction more, and the N2O4 and NO2 tube (C3); a catalyst raises both rates equally (C4b); K as products over reactants with coefficient powers, the same for any settled mixture at one temperature (C5); the settled H2 + I2 tube with K = 49, the ICE table and flipping the equation flips K (C6); Q compared with K (C8). Nothing about how K depends on temperature is assumed.",
+    "startsWith": "The sealed NO2 and N2O4 tube that darkens in hot water and fades in ice, and the question of whether K can change when nothing but the temperature does.",
+    "stopsAfter": "Saying that only temperature changes K for a given equation; explaining with the unequal speed-up of the two reactions why heating changes K; stating the rule for a heat-absorbing and a heat-releasing forward reaction; reading the rule backwards from a K table; separating a shift (Q moves) from a change in K; describing a heated mixture as a new K followed by Q moving toward it; applying the rule to an unseen reaction. No van t Hoff, no K at a new temperature from the heat of reaction, no colourimetry, no Gibbs free energy.",
+    "nextLesson": "P02: how measured colour data can give K."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c09.md"
+  ],
+  "teaching": {
+    "task": "Say what happens to K when the temperature of a mixture at equilibrium changes, explain why, and predict the direction for an unseen reaction from the heat of reaction.",
+    "causalExplanation": "A disturbance of concentration or pressure changes the amounts, so for a while one reaction runs faster, and the mixture shifts until products over reactants is the same number again, so K stays. Heating speeds up both reactions, but the one that takes in heat needs harder collisions and gains the most, so the rates balance again only at a mixture with more of that reaction's products, and K changes. A catalyst speeds up both by the same factor, so nothing shifts. Written backwards the same data give K falling, so the sign follows whether the forward reaction takes in or gives out heat. After heating, K moves first and Q is left behind, so the mixture then moves until Q reaches the new K.",
+    "conversationalApproach": "Starts from the NO2 tube that darkens when heated and the earlier videos where K never moved, explains why K stayed fixed, gives the cause in one chain, shows measured values with the tubes, flips the same data for the other sign, puts the four changes in a table, links heating to Q and K, adds the memory aid, then asks for an unseen H2 and I2 prediction with a short pause and feedback.",
+    "openingDecision": "K never moved when we added, removed or squeezed. Does it move when the temperature changes, and which way?",
+    "understandingCheck": "For H2(g) + I2(g) = 2HI(g), where the forward reaction gives out about 10 kJ per mole of H2 and K is 49 at about 450 degrees Celsius, the tube is heated to 500 degrees and left to settle: is K above, equal to or below 49, and why?",
+    "curriculumScope": "Qualitatively analyse the effect of temperature on the value of Keq (Module 5). The van t Hoff equation, K at a new temperature from the heat of reaction, colourimetry, Gibbs free energy and industrial trade-offs are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the C3 coded NO2 and N2O4 tube with hot and ice baths, the C8 log number line with a teal K marker and a pen-colour Q marker, C2 to C8 rate bars, the C5 expression builder, the C6 flip, and a coded four-row change table. Colour key: N2O4 pale grey, NO2 brown, I2 purple, forward blue, reverse amber, equal teal, hot tint terracotta, cold tint pale blue.",
+    "transitionPlan": "The tube and the teal K marker open the lesson and stay as the anchor; the disturbance thumbnails return for the reason K stayed fixed; the rate bars and collision strip carry the cause; one wide log line carries the measured and the flipped points; the equation flips for the backwards case; the four-row table appears row by row; the settled tube and Q working return for the new K; the attempt board removes the aids and the feedback rebuilds the strip and the line; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "C3 sealed NO2 and N2O4 tube (coded, brown tint) in hot and ice baths, the C8 log number line with a small teal K marker, three ghost disturbance icons and a question arrow",
+      "teachingReason": "Poses the puzzle: K held still through every disturbance, so does heating change it, and which way",
+      "narrationCue": "K never moved / hot water / ice / can K really stay fixed",
+      "motionPurpose": "The tube and equation write on, three ghost icons pass over a teal K marker that holds still, the tube darkens in a hot bath and fades in ice, then the marker pulses with a question mark",
+      "motionRole": "explain",
+      "onScreenChange": "Heading \"Does temperature change K?\" writes on; the tube and N2O4(g) = 2NO2(g) draw in; on \"K never moved\" a teal K marker holds still with a pen tick while a plus dot, a minus dot and a squeeze arrow pass over it; on \"hot water\" the tube moves into a terracotta bath and the brown deepens; on \"ice\" it moves into a pale blue bath and the brown fades; on \"can K really stay fixed\" the marker pulses with a \"?\" and an up-down arrow",
+      "motionTools": [
+        "HandText write-on",
+        "particle dots",
+        "bath slide",
+        "tint change",
+        "marker pulse"
+      ],
+      "holdPurpose": "Brief hold on the question marker"
+    },
+    {
+      "sceneId": "k-stayed-fixed",
+      "visualDecision": "adjust",
+      "visualReference": "C4a disturbance thumbnails (add, squeeze) over the tube, the C8 log line with a teal K marker and a pen-colour Q marker, and a thermometer icon",
+      "teachingReason": "Explains why K stayed fixed (a disturbance moves the amounts, not the chance a collision works) so temperature can be set against it",
+      "narrationCue": "faster than the other / the same number again / the same K / Temperature is different",
+      "motionPurpose": "The thumbnails pop in, the Q marker jumps away from the K marker and slides back with a teal tick, then a thermometer rises and the K marker gets a pen ring and a question mark",
+      "motionRole": "explain",
+      "onScreenChange": "The add and squeeze thumbnails pop in a row with pen arrows to the log line; on \"faster than the other\" the Q marker jumps away from the teal K marker; on \"the same number again\" it slides back and the tag \"Q moves, K stays\" writes on; on \"the same K\" the K marker gets a teal tick; on \"Temperature is different\" a thermometer rises beside the tube and the K marker is ringed with a \"?\"",
+      "motionTools": [
+        "thumbnail pop",
+        "marker slide",
+        "tick",
+        "ScribbleCircle",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "temperature-cause",
+      "visualDecision": "adjust",
+      "visualReference": "Blue and amber rate bars with the teal equal bracket, the C3 heat-in-the-equation chip, the C3 collision strip, a flame icon and a catalyst chip",
+      "teachingReason": "Gives the cause of the K change: heating speeds up the heat-absorbing reaction more, so the rates only balance again at a browner mixture",
+      "narrationCue": "both / takes in heat / far more / N O two builds up / equal again / more N O two / K is bigger / catalyst",
+      "motionPurpose": "Both bars rise on heating with the blue bar much further, brown NO2 dots build while the bars rebalance at the teal bracket, the K marker slides right, then a catalyst chip raises both bars equally",
+      "motionRole": "explain",
+      "onScreenChange": "The level rate bars stand with the teal bracket; on \"takes in heat\" the chip \"N2O4 + heat = 2NO2\" appears and the collision strip replays with \"needs a hard collision\"; on \"far more\" a flame heats the tube and both bars rise, blue much further, tagged \"splitting speeds up more\"; on \"N O two builds up\" brown dots build, N2O4 dots leave and the bars meet again at the bracket on \"equal again\"; on \"K is bigger\" the K reminder pulses and the teal marker slides right; on \"catalyst\" both bars rise equally and a tick lands on \"same K\"",
+      "motionTools": [
+        "rate bars",
+        "collision animation",
+        "chip pop",
+        "particle dots",
+        "marker slide",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "evidence",
+      "visualDecision": "new",
+      "visualReference": "Wide coded log line from 0.001 to 1000 with a teal K marker, a pen bracket, and two coded tubes with 100-square percent grids (18 and 79 brown)",
+      "teachingReason": "Shows the measured K values and the tubes so a bigger K is tied to the deeper brown the learner can see",
+      "narrationCue": "0.49 / eighty times / eighteen percent / pale / seventy-nine percent / deep brown",
+      "motionPurpose": "The K marker drops at 0.0061 and slides to 0.49 with a bracket, then two tubes fill their percent grids and tint pale and deep brown",
+      "motionRole": "explain",
+      "onScreenChange": "The chip \"measured values (from pressure data)\" and the log line appear; the K marker drops at 0.0061 and on \"a hundred degrees\" slides to 0.49 with a bracket \"about 80 times\"; two tubes with 100-square grids appear with \"start: 0.040 mol/L N2O4\"; 18 squares fill brown and the tube stays pale; 79 squares fill and the tube deepens; the tag \"settled amounts given; you can check them with the ICE table from C6\" lands",
+      "motionTools": [
+        "lineGraph draw-on",
+        "marker slide",
+        "bracket draw",
+        "grid fill",
+        "tint change"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "backwards",
+      "visualDecision": "adjust",
+      "visualReference": "The equation strip flipping with the C6 curved arrow, and the same wide log line with mirror-image points at about 160 and 2.0",
+      "teachingReason": "Shows the exothermic case from the same data written backwards, with K falling on heating",
+      "narrationCue": "backwards / 160 / 2.0 / falls",
+      "motionPurpose": "The equation flips with a curved arrow and the heat term moves to the right, then reciprocal points land as mirror images of the first pair and the marker slides left",
+      "motionRole": "explain",
+      "onScreenChange": "The strip flips to 2NO2(g) = N2O4(g) + heat with the heat term in terracotta on the right; the points about 160 (cold) and about 2.0 (hot) drop on the wide log line as mirror images about 1 with the tag \"flip\"; the teal marker slides left with the arrow \"K falls\"",
+      "motionTools": [
+        "equation flip",
+        "marker drop",
+        "marker slide",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "reason-and-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The browning hot tube, rate bars relabelled for the backwards equation, the flipped K expression, and two rule cards with flame and arrow icons",
+      "teachingReason": "Gives the reason for the falling K (the same tube, with N2O4 now the product) and the two-case rule",
+      "narrationCue": "Why? / reverse / less product / takes in / gives out / Cooling does the opposite",
+      "motionPurpose": "The tube browns again with the tag same tube written the other way, the amber bar rises further, the N2O4 term is ringed, then two rule cards write on and a cool-it tag lands",
+      "motionRole": "explain",
+      "onScreenChange": "On \"Why?\" the tube browns in the hot bath with \"same tube, written the other way\"; the bars return labelled \"joining, forward\" and \"splitting, reverse\"; on \"reverse\" both rise and the amber bar rises further; on \"less product\" N2O4 dots fall and NO2 dots rise with a pen ring on the N2O4 term of \"K = [N2O4] / [NO2]^2\"; the card \"forward takes in heat: heat it, K rises\" writes on, then \"forward gives out heat: heat it, K falls\"; the tag \"cool it: opposite\" lands",
+      "motionTools": [
+        "particle dots",
+        "rate bars",
+        "ScribbleCircle",
+        "card slide-in",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "four-changes",
+      "visualDecision": "new",
+      "visualReference": "Coded four-row change table with columns what you do, what moves and K, a one-beat tube icon for each row and a flame icon on the last row",
+      "teachingReason": "Contrasts the four changes so the learner sees only heating moves the target, and separates a shift from a change in K",
+      "narrationCue": "The first three / Heat the tube / K changes / A shift is Q moving / Only temperature moves the target",
+      "motionPurpose": "Rows one to three write on with teal ticks, row four writes on with a pen ring and flame, then two lines separate a shift from a change in K",
+      "motionRole": "explain",
+      "onScreenChange": "The table appears one row at a time: add N2O4, squeeze and catalyst each write on with \"same\" and a teal tick; on \"Heat the tube\" the heat row writes on with \"changes\", a pen ring and a flame; \"shift: Q moves\" and \"K changes: the target moves\" write on separate lines with a pen \"not the same thing\"",
+      "motionTools": [
+        "table build",
+        "tick",
+        "ScribbleCircle",
+        "icon pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "new-k",
+      "visualDecision": "adjust",
+      "visualReference": "The cold settled tube with readouts, the C5 expression builder writing the Q working line, the wide log line with K and Q markers, and a boiling-water bath",
+      "teachingReason": "Links heating to the reaction quotient: the amounts have not moved but K has, so Q is left below K",
+      "narrationCue": "0.0329 / 0.0142 / 0.0061 / boiling water / K is now 0.49 / Q is below K",
+      "motionPurpose": "The readouts write on and the Q working line builds to 0.0061 with both markers together, then the tube drops into boiling water, the K marker jumps right and a bracket marks the gap",
+      "motionRole": "explain",
+      "onScreenChange": "The tube tagged \"settled at 25 C\" shows [N2O4] = 0.0329 mol/L and [NO2] = 0.0142 mol/L; the builder writes \"Q = 0.0142^2 / 0.0329 = 0.0061\" with the tag \"Q: no unit written\"; the K and Q markers sit together at 0.0061 with the teal bracket; the tube drops into the hot bath, the K marker jumps to 0.49 with a small flash while Q stays, and a bracket reads \"Q below K\"",
+      "motionTools": [
+        "expression builder",
+        "HandText write-on",
+        "marker jump",
+        "bracket draw",
+        "bath slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "mixture-moves",
+      "visualDecision": "adjust",
+      "visualReference": "Rate bars labelled splitting and joining, the Q marker climbing the log line to the new K as the tube browns, and two large step labels",
+      "teachingReason": "Shows the second step of heating: the mixture moves until Q reaches the new K",
+      "narrationCue": "splits faster than it forms / builds up / first K changes, then the mixture moves to match it / reaches the new K",
+      "motionPurpose": "The bars show a question mark then the blue bar grows taller, the Q marker climbs as the tube browns and lands with a teal flash, and two numbered steps write large",
+      "motionRole": "explain",
+      "onScreenChange": "The splitting (blue) and joining (amber) bars appear with \"?\"; on \"splits faster than it forms\" the blue bar grows taller with \"splitting faster\"; the Q marker climbs toward the new K as the tube browns and lands with a teal flash as the bars meet; the readouts tick to 0.0082 mol/L and 0.0635 mol/L with \"0.0635^2 / 0.0082 = 0.49\"; \"1. K changes\" and \"2. Q moves to the new K\" write large in turn",
+      "motionTools": [
+        "rate bars",
+        "marker slide",
+        "particle dots",
+        "NumberTicker",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Large handwritten aid with a pen arrow to the K marker, two equation lines with a terracotta flame on the left and right, and a condition tag",
+      "teachingReason": "Gives the invariant and the heat-on-a-side shortcut after the cause is explained, with its limit",
+      "narrationCue": "change T, change K / Change anything else, K stays / heat like a chemical / left / up / right / down",
+      "motionPurpose": "The first aid line writes large, then two equation lines write on with the flame on each side and the K up and K down labels",
+      "motionRole": "explain",
+      "onScreenChange": "The aid line \"Change T, change K. Change anything else, K stays.\" writes large with a pen arrow to the K marker; \"reactants + heat = products\" writes on with the flame on the left and \"K up when heated\"; \"reactants = products + heat\" writes on with the flame on the right and \"K down when heated\"; the tags \"direction only; heat changes the rates unequally\" and \"same equation as written; heat is never put in the K expression\" land",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath arrow",
+        "icon pop",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded hot H2 + I2 tube (purple iodine), the H2(g) + I2(g) = 2HI(g) equation strip with no heat term, a grouped givens card with units and one numbered demand",
+      "teachingReason": "Unseen transfer to an exothermic reaction with every given visible and no answer cues",
+      "narrationCue": "sealed tube / 10 kilojoules / 49 / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The tube and the equation strip appear as each is named; the givens card writes on \"K = 49 (about 450 C)\", \"sealed tube, constant volume\" and \"forward reaction gives out about 10 kJ per mole of H2\"; the demand \"Heated to 500 C and settled: is K above, equal to or below 49? Give a short reason.\" stays on screen; earlier boards and the aid are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-heating",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt board with the heat term now on the right of the strip, rate bars rising unequally, the K marker sliding slightly left, and two crossed wrong-answer chips",
+      "teachingReason": "Explains the answer by which reaction takes in heat and corrects the rises and equal slips",
+      "narrationCue": "reverse / falls / slightly / eighty times / rises / equal",
+      "motionPurpose": "The strip writes the heat on the right, both bars rise with the amber bar a little further, the K marker slides slightly left, and two wrong chips are crossed on their cues",
+      "motionRole": "explain",
+      "onScreenChange": "The strip rewrites with the heat on the right and a flame icon pointing at the left; both bars rise with the amber reverse bar a little further; the K marker slides slightly left with \"small heat, small change\"; the tag \"N2O4: K x 80\" sits beside it; the chip \"K up: both speed up, but one speeds up more\" is crossed with a pen arrow to the unequal bars; the chip \"K equal: K stays fixed only at a fixed temperature\" is crossed with the thermometer icon; a tick lands on \"below 49\"",
+      "motionTools": [
+        "rate bars",
+        "marker slide",
+        "Mark cross",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Settle on the corrected board"
+    },
+    {
+      "sceneId": "feedback-extra-check",
+      "visualDecision": "adjust",
+      "visualReference": "The tube gaining four H2 dots, the log line with the K marker pulsing still at 49 while the Q marker drops and climbs back, and one crossed chip",
+      "teachingReason": "Checks the first aid line as a stated extra case: adding hydrogen moves Q and leaves K alone",
+      "narrationCue": "stay at 49 / Q / shifts right / K itself did not move",
+      "motionPurpose": "Four hydrogen dots drop in, the K marker pulses still while the Q marker drops left and begins climbing back, and the shift chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The tube gains four H2 dots with a pen arrow; the teal K marker pulses still at 49 while the Q marker drops left and begins climbing back; the forward arrow lights blue; the chip \"K changed because it shifted\" is crossed with the caption \"a shift is Q moving; K is the target\"",
+      "motionTools": [
+        "particle drop",
+        "marker pulse",
+        "marker slide",
+        "arrow light",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "A question card with flame and arrow icons and a quiet second line with a still teal marker, a two-row table, and a next chip with a colourimeter icon",
+      "teachingReason": "Packs the lesson into one reusable question, shows the table read backwards, and hands off to colour measurements",
+      "narrationCue": "take in / give it out / backwards / Next",
+      "motionPurpose": "The question card writes on, a small two-row table writes in on backwards with the K marker moving right, then the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The card \"Temperature changed? Does the forward reaction take in or give out heat?\" writes on with a flame and up and down arrows, with a quiet line \"Anything else changed? K stays. Q moves.\"; on \"backwards\" a two-row table \"T up: K up\" and \"forward takes in heat\" writes on with the K marker moving right; on \"Next\" the chip \"Next: finding K from measured colour\" appears with a colourimeter and cuvette icon",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "marker slide",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 90 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c9-rev4-learning-review.md",
+      "sha256": "396165de3edd942bbf6fa0e616afb246a29b1fbc390225013e42cdacd86fd4aa"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c9-claude-science-check.md",
+      "sha256": "2a55170a53d00b7b6fe032752e5aa8beefb68caa1de662b20460e01785411978"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

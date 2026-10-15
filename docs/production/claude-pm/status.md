@@ -381,3 +381,53 @@ Nothing could not be completed. Question for Claude: which bed and sting should 
 ### Brief 33: B3a2 smooth-muscle cell pair (14 October 2026)
 
 Created `public/assets/biology/b3a2-smooth-muscle-cell-relaxed-v1.png` and `public/assets/biology/b3a2-smooth-muscle-cell-contracted-v1.png`. Both are transparent 2500 x 724 PNGs with aligned central nuclei. Created `docs/production/claude-pm/assets/brief33-provenance.json` and checkerboard, 200 px and pair-overlay images in `docs/production/claude-pm/assets/brief33-qa/`. The alpha, margins and small-size checks passed. Nothing remains unfinished. No question for Claude.
+### Brief 28c: B3a part 1 YouTube upload (14 October 2026)
+
+Published B3a part 1 at https://youtu.be/bUPs256KyVY (Studio duration 8:31). Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with the MP4 and SRT hashes, description, syllabus quote, settings, thumbnail and playlist position 6. B2b was already uploaded. Studio confirmed Public visibility, complete HD processing, no notices, no copyright issue and published timed English (Australia) captions. The Biology playlist reloaded in manual order B1, B2a, B2b, B2c, mould, B3a part 1, B4 in the signed-in view. The syllabus wording matches the official NSW 2017 Biology syllabus. No audio warning appeared.
+
+Question for Claude: Studio currently shows B4, C4a and G01 as Private, although `wave4-uploads.json` records them as Public. I left their visibility unchanged. B4 moved to playlist position 7 when B3a was inserted; later Biology videos still need insertion before B4. Nothing else in Brief 28c remains unfinished.
+
+
+### Brief 28d: YouTube visibility fix (15 October 2026)
+
+Checked for an earlier completion before starting. No Brief 28d hand-in or completion record was present. Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with Studio's before-and-after visibility checks.
+
+- G01, https://youtu.be/BdF_sRrt5Yw: Private before, changed to Public and saved.
+- C4a, https://youtu.be/yk5KVdipGRE: Private before, changed to Public and saved.
+- B4, https://youtu.be/P9jyiLiGhZI: Private before, changed to Public and saved.
+- B2b, https://youtu.be/j2fxl5xvDwE: Studio showed Public; no change.
+- B3a part 1, https://youtu.be/bUPs256KyVY: Studio showed Public; no change.
+
+Changed only the three visibility settings. Each save confirmed All changes saved and Public. Titles, descriptions, captions and thumbnails were not edited. The JSON visibility values now match Studio.
+
+Checked both public 2017 Module 5 playlists. Each video appears once and both use Manual sorting. No playlist change was needed. Final Chemistry order: C1, C2, G01, C3, C4a. Final Biology order: B1, B2a, B2b, B2c, mould, B3a part 1, B4. B3a part 2 and B3b can be inserted before B4 later.
+
+Nothing unfinished. Questions for Claude: none.
+
+### Brief 28e: B3a part 2 YouTube upload (15 October 2026)
+
+Published B3a part 2 at https://youtu.be/Mlz5XT5XR7o. Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with the matching MP4 hash, timed SRT hash, metadata and Studio settings. Studio showed Public, published English (Australia) captions and no copyright issue. The Biology playlist shows B3a part 2 once at position 7, directly after B3a part 1 and before B4. The syllabus quote matches the official 2017 Biology extract. Studio showed 9:06. No audio warning appeared. HD processing later completed; Studio showed no notices. Auto-generated frame 2 shows the hormone feedback loop. No question for Claude.
+
+### Brief 28f: C5 YouTube upload (15 October 2026)
+
+Published C5 at https://youtu.be/NJjEgjilgAE. Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with the matching MP4 hash, timed SRT hash, metadata and Studio settings. Studio showed Public, published English (Australia) captions, HD processing complete and no copyright issue. The Chemistry playlist shows C5 once at position 6, after C4a. C4b has not been uploaded. The syllabus quote matches the official 2017 Chemistry extract. Studio showed 7:12, while the brief described the local file as 7:11. Auto-generated frame 2 shows a worked equilibrium expression. No audio warning appeared. No question for Claude.
+
+### Brief 34: C6a, C6b and G03 check and painted plates (15 October 2026)
+
+Created `docs/production/claude-pm/checks/c6ab-g03-codex-check.md` with an error-only check of all three designs. All "Numbers to verify" arithmetic passes. Two findings remain for Claude: the C6b author note mixes iodine Kp and Kc at 800 K, and official NESA wording does not establish the universal claim that an HSC question never needs a quadratic formula. The report cites NIST, JANAF, the 2017 syllabus and NESA exam feedback. No scripts were edited.
+
+Created `public/assets/chemistry/c6b-engine-cylinder-v1.png`, `c6b-hot-iodine-tube-v1.png` and `g03-carbon-vessel-v1.png`. Prompts, source paths, hashes and alpha checks are in `docs/production/claude-pm/assets/brief34-provenance.json`. Checkerboard and 200 px QA views are in `docs/production/claude-pm/assets/brief34-qa/`. All three are transparent 1600 x 2400 PNGs with more than 8 percent empty margin on every side. No video code, speech, renders, commits or pushes were changed. Nothing in the brief remains unfinished. Question for Claude: will you resolve the two fact-check findings before recording?
+
+### Brief 28g: C4b and C8 YouTube upload (15 October 2026)
+
+Both local MP4 SHA-256 hashes match the brief. The C4b and C8 syllabus quotes match the wording in the official 2017 Chemistry document held at `out/research/curriculum/chemistry-2017-syllabus.docx`. The requested C8 description correction is already in `docs/production/claude-pm/youtube/wave4-metadata-draft.json`. Both timed caption files exist and were hashed.
+
+Upload and Studio verification remain unfinished. Browser control repeatedly failed to load its request-header policy, and the Windows computer-use fallback could not connect to its native pipe. A pre-existing Studio tab points to C8 video ID `IWS7_MDw-yc`; YouTube's public oEmbed endpoint identifies that ID with the C8 title and HSCScience channel. Its file, visibility, captions and playlist position are unverified, so no new upload record or URL was added to `wave4-uploads.json`. C4b also remains unverified. Question for Claude: can Studio access be restored so both uploads and playlist order can be checked without creating a duplicate C8 video?
+
+### Brief 35: aligned process clip plate pairs (15 October 2026)
+
+Completed seven plate pairs. New or revised files are `public/assets/biology/b6a-endosymbiosis-outside-v1.png`, `b6a-endosymbiosis-inside-v1.png`, `b5a-skin-healed-v1.png`, `b2b-pollen-tube-start-v1.png`, `b3a2-follicle-small-v1.png`, `b3a2-follicle-ripe-v1.png`, and `public/assets/chemistry/c11-cuso4-beaker-crystal-v1.png`, `c11-cuso4-beaker-dissolved-v1.png`, `c13-pbi2-tube-clear-v1.png`, `c13-pbi2-tube-precipitate-v1.png`, `c7-condenser-collector-empty-v1.png`, `c7-condenser-collector-liquid-v1.png`. The B5a and B2b pairs use their existing start or end plate as specified.
+
+Created `docs/production/claude-pm/assets/brief35-provenance.json` and 63 QA PNGs in `docs/production/claude-pm/assets/brief35-qa/`. All plates have the requested canvas, alpha channel and 8 percent transparent margins. The difference images are local to the described process regions. The B6a difference includes a vesicle partly covered by the bacterium's enclosing membrane and the host membrane closing at entry. The B3a2 start has one small egg-bearing follicle; its surrounding tissue was repainted locally. No pair remains unaligned. Original prompts and model identifiers for some plates that already existed locally could not be recovered and are marked unknown in provenance.
+
+Questions for Claude: please inspect the B3a2 tissue transition at playback speed before making a clip, and confirm the C13 lead(II) iodide example when its lesson design is written. No video clips, lesson designs, code, speech, renders, commits or pushes were made.

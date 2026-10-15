@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c6a/lesson.json",
+    "lessonSha256": "42106910d11fac81b3b2aaefb3611821e038d0d9c7ee6f3c1c02e70d6a6075e7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C5 and Year 11: K as products over reactants with coefficients as powers, solids and the solvent left out, and the size of K (C5); the C2 PCl5 flask (0.20 mol/L start, settling at 0.12, 0.080, 0.080); the C4b hot H2 + I2 tube (dots 9, 9, 0 settling at 2, 2, 14); concentration is moles divided by litres; coefficients give mole ratios. Nothing about ICE tables or x is assumed.",
+    "startsWith": "The question of which of three types a K calculation is, decided by what the question gives.",
+    "stopsAfter": "Finding K for type one (every equilibrium concentration given) and type two (the start and one equilibrium value given, with the measured value in the Equilibrium row first, the change as equilibrium minus initial, the other changes from the coefficients, and a check), and saying how K changes when the equation is reversed or its coefficients are multiplied. No type three (C6b), no Q (C8), no temperature dependence (C9).",
+    "nextLesson": "C6b: type three, finding equilibrium concentrations from K and a start."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c06a.md"
+  ],
+  "teaching": {
+    "task": "Tell which of three types a K calculation is, and find K for a start plus one measured equilibrium value with an ICE table.",
+    "causalExplanation": "K needs every equilibrium concentration, and a question may give them all, give one, or give none, so what the question gives decides the method. K uses concentrations, so moles are divided by litres first. The measured value goes in the Equilibrium row and its change is equilibrium minus initial, because the change is how far it moved from the start. The other changes follow the coefficients, because each splitting event uses and makes whole particles in the ratio of the equation, with used up as minus and made as plus. Every other equilibrium value is initial plus change, and K uses the equilibrium row only. K belongs to the equation as written, so reversing it gives one over K and multiplying every coefficient by n raises K to the power n.",
+    "conversationalApproach": "Opens by naming three types by what the question gives, does the quickest type on the settled H2 + I2 tube with a reversal, then takes the PCl5 flask one stage per scene with the measured value first, adds two habits, and tests an unseen N2O4 question with a reversal, with feedback that names the likely wrong numbers.",
+    "openingDecision": "When a question asks you to calculate K, how do you tell which type it is?",
+    "understandingCheck": "For 0.100 mol of N2O4 sealed in 2.00 L with [NO2] = 0.0300 mol/L at equilibrium: find K for N2O4 = 2NO2, and find K for 2NO2 = N2O4 at the same temperature.",
+    "curriculumScope": "Calculate equilibrium constants from supplied data using an ICE table (Module 5). Type three (C6b), Q, direction prediction, temperature dependence, acid and Ksp calculations are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted C2 PCl5 flask and N2O4 vessel, the C4B hot H2 + I2 tube, coded type cards with mini ICE tables, the coded ICE table with row and column labels, the C5 expression builder and a grouped givens card with units. Colour key: PCl5 navy, PCl3 violet, Cl2 green, H2 and HI pale grey, I2 purple, N2O4 pale grey, NO2 brown, made plus green, used up minus red, K teal.",
+    "transitionPlan": "The type cards give way to the type one tube and the reversal on the same board; the cards return briefly and slide to the task line for the PCl5 flask; the flask sits beside the ICE table, which fills one stage per scene; the finished table carries the two habits; the attempt board removes the aids and the feedback rebuilds the table in the same order; the cards return for the decision rule with card three dimmed; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook-types",
+      "visualDecision": "new",
+      "visualReference": "Three type cards in a column, each with a one-line label and a mini ICE table of shaded cells showing which rows the question fills in, and a K chip",
+      "teachingReason": "Names the three question types by what the question gives, so the learner can pick a method before calculating",
+      "narrationCue": "three types / Type one / Type two / one value / K and the start / next",
+      "motionPurpose": "Three cards build one per cue, the single shaded cell on card two and the K chip on card three get pen rings, and card three dims with a next video tag",
+      "motionRole": "explain",
+      "onScreenChange": "Heading \"Calculating with K: three types\" writes on; card 1 (only the Equilibrium row shaded, K chip \"?\") builds on \"Type one\"; card 2 (Initial row and one Equilibrium cell shaded) builds on \"Type two\" with a pen ring on the single shaded cell; card 3 (Initial row shaded, filled K chip, Equilibrium row \"?\") builds on \"K and the start\" with a ring on the K chip; on \"next\" card 3 dims with the tag \"next video\" and cards 1 and 2 brighten",
+      "motionTools": [
+        "card slide-in",
+        "mini ICE table",
+        "ScribbleCircle",
+        "dim and brighten",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second on the three cards"
+    },
+    {
+      "sceneId": "type-one",
+      "visualDecision": "adjust",
+      "visualReference": "Card 1 as the task line, the equation strip, the C4b/C6 hot H2 + I2 tube (2, 2, 14 dots, 1 dot = 0.05 mol/L), the grouped givens card and the C5 expression builder",
+      "teachingReason": "Teaches the quickest type: write the expression with the coefficient as a power and substitute the settled concentrations",
+      "narrationCue": "so it holds 0.10 moles per litre / squared / 0.70 squared is 0.49 / which is 49 / divide by the volume first",
+      "motionPurpose": "The tube values fill the givens card line by line, the 2 flies from the equation strip to a power, the numbers drop into the brackets and the working writes to K = 49 in teal",
+      "motionRole": "explain",
+      "onScreenChange": "Card 1 slides to the top-left as \"Find K\" and the other cards leave; the equation strip and tube appear; the givens card fills \"[H2] = 0.10, [I2] = 0.10, [HI] = 0.70 mol/L\" with pen arrows from the dot groups; the builder writes K = [HI]^2 / ([H2][I2]) with the 2 flying up; \"0.70^2 = 0.49\", \"0.10 x 0.10 = 0.010\" and \"K = 0.49 / 0.010 = 49\" write in beats with the tag \"K: no unit written\"; a small grey aside \"given moles? divide by litres first\" writes under the givens card",
+      "motionTools": [
+        "CardSlide",
+        "particle dots",
+        "expression builder",
+        "DrawPath arrows",
+        "HandText write-on",
+        "coefficient fly-in"
+      ],
+      "holdPurpose": "Hold about 2 seconds on K = 49"
+    },
+    {
+      "sceneId": "reverse-equation",
+      "visualDecision": "adjust",
+      "visualReference": "The settled tube values 0.10, 0.10 and 0.70 at the left, the original equation with K = 49, the flipped equation strip, the C5 builder and a doubled-coefficient line",
+      "teachingReason": "Shows that K belongs to the equation as written, so flipping the equation flips K and doubling the coefficients squares it",
+      "narrationCue": "write the equation backwards / 0.010 over 0.49 / one over 49 / Flip the equation, flip K / Double every coefficient / 49 squared is 2401",
+      "motionPurpose": "The equation flips with a curved arrow, the new fraction builds and gives 0.020 beside 1 / 49, then a doubled-coefficient line gives K = 49^2 = 2401",
+      "motionRole": "explain",
+      "onScreenChange": "The type one tube and K = 49 stay at the left; the species swap sides with a curved arrow and \"[H2][I2] / [HI]^2\" builds with \"0.10 x 0.10 / 0.70^2 = 0.010 / 0.49 = 0.020\" and a bar \"1 / 49\" tagged \"flipped\"; \"Flip the equation, flip K.\" writes with the tag \"same temperature, equation as written\"; a second line \"2H2 + 2I2 = 4HI\" has its coefficients ringed and \"K = 49^2 = 2401\" writes",
+      "motionTools": [
+        "equation flip",
+        "expression builder",
+        "HandText write-on",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the flipped and doubled K values"
+    },
+    {
+      "sceneId": "type-two",
+      "visualDecision": "new",
+      "visualReference": "The three type cards returning, card 1 ticked, card 2 lifting with its mini table pulsing",
+      "teachingReason": "Names type two and what it gives before the worked example starts",
+      "narrationCue": "Now type two / just one value / you have to find K",
+      "motionPurpose": "Card 1 gains a tick, card 2 lifts and its single shaded Equilibrium cell is ringed, then card 2 slides to the top-left as the task line and the board clears",
+      "motionRole": "explain",
+      "onScreenChange": "The cards return in their column; card 1 gains a tick; card 2 lifts and its mini table pulses with a pen ring on the one shaded Equilibrium cell on \"one value\"; card 2 slides to the top-left as the task line \"Find K\" and the board clears for the flask",
+      "motionTools": [
+        "card slide-in",
+        "tick",
+        "ScribbleCircle",
+        "table pulse"
+      ],
+      "holdPurpose": "About 4 seconds in all, no extra hold"
+    },
+    {
+      "sceneId": "one-value",
+      "visualDecision": "reuse",
+      "visualReference": "The painted C2 flask on its burner, the givens card, a swatch strip and sensor dial, and dashed question marks over the unknowns, with the empty table outline at the end",
+      "teachingReason": "Poses the type two problem on a flask the learner knows, with colour as the reason one measured value exists",
+      "narrationCue": "Back to the P C L five flask from earlier / 0.40 moles / 2.0 litre / Chlorine is yellow-green / 0.080 moles per litre / the equilibrium constant",
+      "motionPurpose": "The givens card fills on the amounts, the gas tints yellow-green, the dial settles on 0.080 and dashed question marks appear over the unknowns",
+      "motionRole": "explain",
+      "onScreenChange": "The painted flask appears; the givens card fills \"0.40 mol\" and \"2.0 L\" with pen rings; the flask tints and the sensor dial settles on \"0.080\" with the card line \"at equilibrium: [Cl2] = 0.080 mol/L\"; dashed question marks appear over PCl5, PCl3 and K; the empty table outline draws on at the end",
+      "motionTools": [
+        "CameraStage push",
+        "HandText write-on",
+        "swatch strip fill",
+        "NumberTicker dial",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Brief look at the question marks"
+    },
+    {
+      "sceneId": "ice-initial",
+      "visualDecision": "adjust",
+      "visualReference": "Coded ICE table with the letters I, C and E becoming row labels, PCl5, PCl3 and Cl2 column headings with mol/L, the givens card division and the PCl5 particle lens",
+      "teachingReason": "Introduces the ICE table by what each letter stands for and fills the initial row by converting moles to concentration",
+      "narrationCue": "I C E table / I for initial / C for change / E for equilibrium / 0.40 moles over 2.0 litres is 0.20 moles per litre / zero",
+      "motionPurpose": "Three large letters settle into the row labels one by one, the division flies into the first Initial cell and the product cells tick to zero",
+      "motionRole": "explain",
+      "onScreenChange": "The task line, equation strip and givens card sit on the board; I C E writes as three large letters; \"I\" becomes \"Initial\", \"C\" becomes \"Change\", \"E\" becomes \"Equilibrium\" each on its own cue with a pen ring; the column headings write on; the Initial row highlights; \"0.40 mol / 2.0 L = 0.20 mol/L\" flies into the first Initial cell; the two product cells tick to 0; the lens shows 20 navy particles",
+      "motionTools": [
+        "table build",
+        "ScribbleCircle",
+        "NumberTicker division",
+        "HandText write-on",
+        "particle dots"
+      ],
+      "holdPurpose": "Hold the initial row"
+    },
+    {
+      "sceneId": "equilibrium-first",
+      "visualDecision": "new",
+      "visualReference": "The ICE table with a pen arrow from the givens card into the Cl2 Equilibrium cell, an E minus I bracket up the Cl2 column, a small rule chip and a ghost inset of the 8 measured green particles",
+      "teachingReason": "Teaches the first two moves of type two: the measured value goes in the Equilibrium row, then subtraction gives its change",
+      "narrationCue": "it goes straight into the equilibrium row / Change is equilibrium minus initial / the change is how far it moved from the start / plus 0.080",
+      "motionPurpose": "A pen arrow puts 0.080 into the Equilibrium cell, a bracket runs up the column to the Change cell and the working 0.080 minus 0 ticks to plus 0.080",
+      "motionRole": "explain",
+      "onScreenChange": "A pen arrow runs from \"[Cl2] = 0.080 mol/L\" into the Cl2 Equilibrium cell, which ticks to \"0.080\" with a ring; the other two Equilibrium cells show dashed \"?\"; a bracket \"E - I\" draws up the Cl2 column with \"0.080 - 0 = +0.080\" and the Change cell ticks to \"+0.080\" in the made colour; the rule chip \"1 measured value into E. 2 Change = E - I.\" writes under the table; a ghost inset shows \"measured: 8 green at equilibrium\"; no particle splits in this scene",
+      "motionTools": [
+        "DrawPath arrow",
+        "bracket draw",
+        "table cell tick",
+        "ScribbleCircle",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the first two rule lines"
+    },
+    {
+      "sceneId": "change-row",
+      "visualDecision": "adjust",
+      "visualReference": "The ICE table with the Change row, a particle lens showing PCl5 splitting into PCl3 and Cl2, coefficient chips flying into the cells and a ratio chip",
+      "teachingReason": "Shows that the other changes follow the coefficients, with used up as minus and made as plus",
+      "narrationCue": "one P C L three and one chlorine / because one is used up for every chlorine made / The change row follows the coefficients / a plus",
+      "motionPurpose": "One navy particle splits into a violet and a green, the coefficient chips fly into the cells and the other two cells tick to plus and minus 0.080 with made and used up labels",
+      "motionRole": "explain",
+      "onScreenChange": "The ghost inset fades; one navy particle in the lens splits into one violet and one green with pen rings and the rest follow in a quick wave; the coefficient chips fly from the equation strip into the PCl3 and PCl5 Change cells; PCl3 ticks to \"+0.080\" with \"made\" and PCl5 to \"-0.080\" with \"used up\"; the chip \"1 : 1 : 1\" lies along the row; the rule chip gains \"3 Other changes from the coefficients.\"",
+      "motionTools": [
+        "particle split",
+        "coefficient fly-in",
+        "table cell tick",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold the change row"
+    },
+    {
+      "sceneId": "equilibrium-row",
+      "visualDecision": "adjust",
+      "visualReference": "The ICE table with a pen plus between the Initial and Change rows, a teal tick on the already filled Cl2 cell and the lens settling to 12, 8, 8",
+      "teachingReason": "Completes the Equilibrium row as initial plus change and checks it against the measured value",
+      "narrationCue": "complete the equilibrium row / initial value plus the change / minus 0.080, is 0.12 / it agrees",
+      "motionPurpose": "A pen plus draws between the rows, the PCl5 and PCl3 cells tick in turn, the measured Cl2 cell gets a teal tick and the lens settles to 12, 8, 8",
+      "motionRole": "explain",
+      "onScreenChange": "A pen plus draws between the Initial and Change rows; the PCl5 cell ticks with \"0.20 + (-0.080)\" then \"0.12\"; the PCl3 cell ticks \"0 + 0.080\" then \"0.080\"; on \"agrees\" the Cl2 cell gets a teal tick and \"0 + 0.080 = 0.080\" writes small beside it; the lens settles to 12 navy, 8 violet, 8 green; the rule chip gains \"4 Complete E = I + C.\"; the plus and equals marks fade when the row is full",
+      "motionTools": [
+        "pen draw",
+        "table cell tick",
+        "particle settle",
+        "tick"
+      ],
+      "holdPurpose": "Hold the finished table"
+    },
+    {
+      "sceneId": "find-k",
+      "visualDecision": "reuse",
+      "visualReference": "C5 expression builder beside the finished table, pen arrows from the Equilibrium cells and a check line 12 + 8 = 20",
+      "teachingReason": "Calculates K from the equilibrium row only and checks the subtraction against the start",
+      "narrationCue": "Products over reactants / equilibrium values / 0.0064 divided by 0.12 is 0.0533 / K is 0.053 / 0.12 plus 0.080 is 0.20",
+      "motionPurpose": "The expression builds beside the table, the equilibrium values drop in by pen arrows and the working writes to 0.053, then the particle counts are ringed for the check",
+      "motionRole": "explain",
+      "onScreenChange": "The earlier rows dim as the Equilibrium row is highlighted with the tag \"equilibrium values only\"; the builder writes K = [PCl3][Cl2] / [PCl5]; \"0.080 x 0.080 / 0.12 = 0.0064 / 0.12 = 0.0533\" writes, then \"K = 0.053\" larger with \"2 s.f.\"; the tag \"K: no unit written\" stays; \"12 + 8 = 20 = start\" writes with a tick",
+      "motionTools": [
+        "expression builder",
+        "DrawPath arrows",
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the checked result"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "The finished PCl5 table with two handwritten habit lines, the Change row lit with a 1 : 1 : 1 chip and the Equilibrium row marked with a crossed ratio chip",
+      "teachingReason": "Gives two habits for type two after the cause is explained: measured value first, and only the change row follows the coefficients",
+      "narrationCue": "Two habits / equilibrium row / only the change row follows the coefficients / one to one to one / are not",
+      "motionPurpose": "The first habit writes large with the pen arrow replaying once, the second habit writes beneath, the Change row gets a ratio tick and the Equilibrium row a ratio cross",
+      "motionRole": "explain",
+      "onScreenChange": "The finished table fills the board; \"Measured value: Equilibrium row first.\" writes large with the pen arrow from scene 6 replaying once; \"Only the change row follows the coefficients.\" writes beneath; the Change row lights with the chip \"1 : 1 : 1\" and a tick; the Equilibrium row gets \"0.12 : 0.080 : 0.080\" with a cross and \"not 1 : 1 : 1\"; the condition tag \"used up is minus, made is plus\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath arrow",
+        "row highlight",
+        "chip pop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "reuse",
+      "visualReference": "Painted colourless N2O4 vessel, the equation strip, a grouped givens card with units, two numbered demands and an empty ICE outline as a first-use scaffold",
+      "teachingReason": "Unseen transfer on a type two question with a 1 : 2 ratio, then a reversal, with every given and unit visible and no answer cues",
+      "narrationCue": "Your turn / N two O four / 0.100 moles / 2.00 litre / 0.0300 moles per litre / the equation written the other way / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The vessel, the equation, the givens card and the illustrative values chip appear as each is named; the two numbered demands stay on screen with an empty ICE outline; earlier boards and the aids are removed; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt board with the ICE table building in the equilibrium-row-first order, the E minus I bracket, a divide by two arrow and a dot strip of 3 of 10 N2O4 dots splitting",
+      "teachingReason": "Explains item one stage by stage using the same order as the worked example",
+      "narrationCue": "0.0500 moles per litre / equilibrium row / plus 0.0300 / half of that / 0.0350 / 0.0257",
+      "motionPurpose": "The table fills in the taught order, the half-of-the-change arrow draws and the working writes to 0.0257",
+      "motionRole": "explain",
+      "onScreenChange": "The givens card divides 0.100 / 2.00 into the N2O4 Initial cell and 0 ticks into NO2; the pen arrow puts 0.0300 into the NO2 Equilibrium cell and the E - I bracket gives \"+0.0300\"; coefficient chips 1 and 2 fly in with a pen \"divide by 2\" arrow to \"-0.0150\"; \"0.0500 - 0.0150 = 0.0350\" ticks; \"0.0300^2 = 0.000900\", \"0.000900 / 0.0350\" and \"K = 0.0257\" write in beats; a silent check line ticks",
+      "motionTools": [
+        "table cell tick",
+        "DrawPath arrow",
+        "bracket draw",
+        "coefficient fly-in",
+        "particle split",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Keep the table for the next scene"
+    },
+    {
+      "sceneId": "feedback-slips",
+      "visualDecision": "adjust",
+      "visualReference": "Three wrong-answer chips with pen arrows to the table cells that cause them",
+      "teachingReason": "Corrects the three likeliest numerical slips by naming the cell each one came from",
+      "narrationCue": "0.018 / 0.045 / 0.86 / forgot to square the N O two",
+      "motionPurpose": "Each chip fades in on its number, a pen arrow or ring points at the cause and the chip is crossed with its caption",
+      "motionRole": "explain",
+      "onScreenChange": "\"0.018: initial used\" with a pen arrow to the N2O4 Initial cell; \"0.045: change not halved\" with an arrow to the Change cell and grey \"not halved: -0.0300, leaves 0.0200\"; \"0.86: power left off\" with a ring on the missing square; each chip is crossed on its number",
+      "motionTools": [
+        "chip pop",
+        "Mark cross",
+        "DrawPath arrow",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Settle on the corrected table"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "reuse",
+      "visualReference": "The flipped equation strip with the expression builder and the finished table, with one crossed wrong-answer chip",
+      "teachingReason": "Explains item two as the flip of the item one value",
+      "narrationCue": "one over 0.0257, which is 38.9 / The expression is N two O four over N O two squared / 0.0257 again / check the direction of the equation",
+      "motionPurpose": "The equation strip flips, the fraction builds and gives 38.9 with a one over 0.0257 tag, and the repeated 0.0257 chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The equation strip flips; \"[N2O4] / [NO2]^2 = 0.0350 / 0.000900 = 38.9\" builds with the tag \"= 1 / 0.0257\" and the answer lands after the expression; the chip \"0.0257 again\" is crossed with \"direction flipped\"; the finished table and both K values hold together",
+      "motionTools": [
+        "equation flip",
+        "expression builder",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The three type cards returning with card 3 dimmed, method lines on cards 1 and 2, a four-step rule chip and a reversed chip, then a next chip",
+      "teachingReason": "Packs types one and two into a reusable order and hands off to type three",
+      "narrationCue": "type one / equilibrium row / coefficients / flip K / Next",
+      "motionPurpose": "Card 1 gains its method line, card 2 lights its four steps in turn on the spoken words, a reversed chip attaches and card 3 lifts on the word next",
+      "motionRole": "explain",
+      "onScreenChange": "The type cards return with card 3 dimmed; card 1 gains \"write K, substitute\" on \"type one\"; card 2 gains the four-step chip with each step lighting on its words; \"reversed: 1 / K\" attaches under card 1 on \"flip K\"; on \"Next\" card 3 lifts with the chip \"Next: K and a start, find the concentrations\"",
+      "motionTools": [
+        "card slide-in",
+        "step light",
+        "chip pop",
+        "dim and brighten"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Key notes card with the memory aids in large writing and their condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c6a-learning-review.md",
+      "sha256": "c1ca171ca414de22252fcd6b4d407b5b88290ab1d155bac1f7ee419709bef9ba"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c6a-claude-science-check.md",
+      "sha256": "d170fcb70d07ad8f24f33109716283d9b881abab7a9eaa19835cf6cd34b5cabe"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

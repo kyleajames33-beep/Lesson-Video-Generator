@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/c8/lesson.json",
-    "lessonSha256": "10a0376abaedb86452807b7a100dfd9d804b4f4471c0688b289884e1039aa7c6"
+    "lessonSha256": "c486de2990288ed74532969dc52d979f151cdd47592df02417b5174b6bcfbc04"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -21,8 +21,8 @@
   ],
   "teaching": {
     "task": "Calculate the reaction quotient Q for a mixture that has not settled, compare it with K at the same temperature, and state which way the mixture will run and why.",
-    "causalExplanation": "Q is the K fraction with the concentrations from the moment in question. Dividing the forward rate by the reverse rate in the rate model gives K over Q, so when Q is below K the forward rate is larger and the mixture makes more product, when Q is above K the reverse rate is larger, and when Q equals K the rates are equal and there is no net change. A disturbance changes the concentrations and so changes Q, while K stays the same at the same temperature. A mixture of only reactants has Q of zero and runs forward, and only products makes Q off the scale and runs in reverse.",
-    "conversationalApproach": "A freshly mixed hot H2 and I2 tube asks which way it will run, Q is built from the K fraction and calculated in three beats, compared with K on a log number line, tied to the rates as K over Q, tested on the other side with a short thinking hold, linked back to the disturbance videos, and checked on an unseen ammonia mixture.",
+    "causalExplanation": "Q is the K fraction with the concentrations from the moment in question. Q below K means less product than a settled mixture at this temperature, so with more reactant particles to collide the forward reaction is faster and the mixture makes more product until Q reaches K; Q above K means too much product, so the reverse reaction is faster. A disturbance changes Q, not K",
+    "conversationalApproach": "A freshly mixed hot H2 and I2 tube asks which way it will run, Q is built from the K fraction and calculated in three beats, compared with K on a log number line, tied to the rates by comparing the live tube with a settled tube, tested on the other side with a short thinking hold, linked back to the disturbance videos, and checked on an unseen ammonia mixture.",
     "openingDecision": "Will the freshly mixed tube make more hydrogen iodide or break some down, and can we know before anything moves?",
     "understandingCheck": "For N2 + 3H2 = 2NH3 at 400 degrees Celsius with K = 0.50 and [N2] = 0.40, [H2] = 0.50, [NH3] = 0.20 mol/L: write and calculate Q, and say whether more or less ammonia forms and why.",
     "curriculumScope": "Calculate the reaction quotient and compare it with K to predict the direction of change (Module 5). How far the mixture moves, ICE tables for the harder cases, the temperature dependence of K and Qsp are deferred."
@@ -106,18 +106,17 @@
     {
       "sceneId": "rate-link",
       "visualDecision": "adjust",
-      "visualReference": "Two rate bars with the two rate lines, a fraction bar, number boxes sliding together, a flipped Q fraction and the forward over reverse equals K over Q line",
-      "teachingReason": "Connects Q and K to the rates so the comparison gives the direction for a cause, not just a rule",
-      "narrationCue": "joining is a fixed number times hydrogen times iodine / Divide the two / forward over reverse is K times one over Q / forty-nine over 6.25, about eight / the forward reaction runs about eight times faster",
-      "motionPurpose": "The two rate lines write under the bars, a fraction bar divides them, the fixed numbers slide together to make K, the Q fraction flips and K over Q writes large, then the forward bar grows about eight times the reverse bar",
+      "visualReference": "The live tube beside the ghost settled tube with ringed dot counts, the two rate bars growing unequal with no numbers, and the forward arrow lighting",
+      "teachingReason": "Gives the direction a plain cause: too little product compared with a settled tube, so joining outpaces splitting",
+      "narrationCue": "Q compares products with reactants / too little hydrogen iodide / joining happens faster than splitting / forward reaction wins / hydrogen iodide is made",
+      "motionPurpose": "The tubes are compared dot by dot, the forward bar grows taller than the reverse bar, the forward arrow lights and an H2 and I2 dot merge into HI",
       "motionRole": "explain",
-      "onScreenChange": "The forward line writes under the blue bar and the reverse line under the amber bar; a fraction bar draws between them; the two number boxes slide together with \"0.05 / (0.05 / 49) = 49 = K\"; the Q fraction flips with a curved arrow; \"forward / reverse = K / Q\" writes large with K and Q ringed; \"49 / 6.25 = 7.84\" writes and the forward bar grows to about eight times the reverse bar",
+      "onScreenChange": "A \"products / reactants\" tag writes under the Q marker; the live tube (4, 4, 10) and the settled ghost tube (2, 2, 14) sit side by side with pen rings on their HI and H2/I2 dots; the \"?\" marks clear and the blue forward bar grows clearly taller than the amber bar (\"forward faster\", no numbers); the forward arrow lights blue; an H2 and an I2 dot merge into HI",
       "motionTools": [
-        "HandText write-on",
-        "DrawPath fraction",
-        "curved arrow flip",
+        "ScribbleCircle",
         "NumberTicker rate bars",
-        "ScribbleCircle"
+        "arrow light",
+        "particle merge"
       ],
       "holdPurpose": "Hold the unequal bars"
     },
@@ -129,7 +128,7 @@
       "narrationCue": "the top of Q grows and the bottom shrinks, so Q climbs / The forward rate falls, the reverse rate rises / exactly when Q reaches K / 0.10, 0.10 and 0.70 / Q chases K",
       "motionPurpose": "The Q marker slides toward 49 and slows near it, the forward bar shrinks and the reverse bar grows until they meet at the teal bracket, and the tube dots change to 2, 2, 14",
       "motionRole": "explain",
-      "onScreenChange": "The Q marker slides right from 6.25 toward 49, slowing as it approaches; the rate bars follow K / Q until they meet at the teal bracket as the marker lands with a small teal flash; the tube dots change from 4, 4, 10 to 2, 2, 14; the settled values 0.10, 0.10, 0.70 tick under the tube and \"0.70^2 / (0.10 x 0.10) = 49 = K\" writes with a teal tick; a quiet tag about equal totals shows for about 2 seconds",
+      "onScreenChange": "The Q marker slides right from 6.25 toward 49, slowing as it approaches; the rate bars follow until they meet at the teal bracket as the marker lands with a small teal flash; the tube dots change from 4, 4, 10 to 2, 2, 14; the settled values 0.10, 0.10, 0.70 tick under the tube and \"0.70^2 / (0.10 x 0.10) = 49 = K\" writes with a teal tick; a quiet tag about equal totals shows for about 2 seconds",
       "motionTools": [
         "marker slide",
         "NumberTicker rate bars",
@@ -159,12 +158,12 @@
     {
       "sceneId": "other-side-answer",
       "visualDecision": "new",
-      "visualReference": "A greater-than sign between the markers, the amber reverse arrow, the reverse bar about five times the forward bar, and a thumbnail of the first tube",
+      "visualReference": "A greater-than sign between the markers, the amber reverse arrow, the reverse bar growing taller than the forward bar, and a thumbnail of the first tube",
       "teachingReason": "Gives the answer, gives the rate reason and teaches that too much product depends on K",
-      "narrationCue": "Q is above K / the reverse reaction wins / so the reverse is about five times faster / Whether there is too much product depends on K",
-      "motionPurpose": "The greater-than sign writes, the reverse arrow lights, the reverse bar grows to about five times the forward bar, the Q marker slides left and the tube lands on the settled picture, and three markers are shown in turn",
+      "narrationCue": "Q is above K / splitting happens faster than joining / the reverse reaction wins / Whether there is too much product depends on K",
+      "motionPurpose": "The greater-than sign writes, the reverse arrow lights, the reverse bar grows taller than the forward bar, the Q marker slides left and the tube lands on the settled picture, and three markers are shown in turn",
       "motionRole": "explain",
-      "onScreenChange": "A \">\" writes between the markers and the reverse arrow lights amber; \"49 / 256 = 0.19\" writes and the reverse bar grows to about 5.2 times the forward bar; the Q marker slides left toward 49 with the bars following and the dots change (HI 16 to 14, H2 and I2 1 to 2); a thumbnail of the first tube appears; the closing tag lists Q below K, Q equal K and Q above K with the three markers shown in turn",
+      "onScreenChange": "A \">\" writes between the markers and the reverse arrow lights amber; the reverse bar grows clearly taller than the forward bar (\"reverse faster\", no numbers); the Q marker slides left toward 49 with the bars following and the dots change (HI 16 to 14, H2 and I2 1 to 2); a thumbnail of the first tube appears; the closing tag lists Q below K, Q equal K and Q above K with the three markers shown in turn",
       "motionTools": [
         "marker slide",
         "NumberTicker rate bars",
@@ -197,10 +196,10 @@
       "visualDecision": "adjust",
       "visualReference": "The settled hot tube with the log line, the Q marker at 49, four H2 dots dropping in, the Q marker dropping to 16.3 and the forward bar stepping up",
       "teachingReason": "Links Q to the disturbance videos: adding hydrogen lowers Q, and the forward rate wins",
-      "narrationCue": "This also explains the disturbance videos / add 0.20 moles per litre of hydrogen / The bottom of Q gets bigger / about sixteen, below K / the mixture shifts right",
-      "motionPurpose": "Four hydrogen dots drop into the settled tube, a pen ring moves to the bottom of Q, the Q marker drops left to 16.3 and the forward bar steps up to about three times the reverse bar",
+      "narrationCue": "This also explains the disturbance videos / add 0.20 moles per litre of hydrogen / The bottom of Q gets bigger / about sixteen, below K / too little product / the mixture shifts right",
+      "motionPurpose": "Four hydrogen dots drop into the settled tube, a pen ring moves to the bottom of Q, the Q marker drops left to 16.3 and the forward bar steps up above the reverse bar",
       "motionRole": "explain",
-      "onScreenChange": "The settled tube (2, 2, 14) with the log line, the K marker and the Q marker at 49 sits with level rate bars; the card gains \"same volume, same temperature\"; four H2 dots drop in and the card shows \"[H2] = 0.30 mol/L\"; a pen ring moves to the denominator; the Q marker drops to 16.3 with \"0.70^2 / (0.30 x 0.10) = 0.49 / 0.030 = 16.3\"; the forward bar steps up to about 3 times the reverse bar (\"49 / 16.3 = 3.0\"); a pen arrow runs right and Q begins to climb back",
+      "onScreenChange": "The settled tube (2, 2, 14) with the log line, the K marker and the Q marker at 49 sits with level rate bars; the card gains \"same volume, same temperature\"; four H2 dots drop in and the card shows \"[H2] = 0.30 mol/L\"; a pen ring moves to the denominator; the Q marker drops to 16.3 with \"0.70^2 / (0.30 x 0.10) = 0.49 / 0.030 = 16.3\"; on \"too little product\" the forward bar steps up above the reverse bar (\"forward faster\", no numbers); a pen arrow runs right and Q begins to climb back",
       "motionTools": [
         "particle drop",
         "ScribbleCircle",
@@ -305,7 +304,7 @@
     "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
     "evidence": {
       "path": "docs/production/claude-pm/checks/c8-claude-science-check.md",
-      "sha256": "c09ab9d1f4db9f0cd374faea49f7ffe874d434dd39a4edaec3de0791bfa712b8"
+      "sha256": "c7f0eeee56a77f811d1814c5467ce84d4a6e19a66e80d79f18dab1c880295c74"
     }
   },
   "voicedPreview": {

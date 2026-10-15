@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/g03b/lesson.json",
+    "lessonSha256": "a524d4f22c6b4885ab89191d688f0d44ee1322ef9e757528f585497e3406bab4"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C8 (including C6a and C6b), G03a and Year 11: x from the coefficients, the perfect-square root and the tiny-K drop with its 5 per cent check (C6b); the measured value in the Equilibrium row first (C6a); Q against K (C8, G03a); the effect of adding a reactant (C3); c = n / V, square roots and powers of ten. Nothing about huge-K shortcuts or addition problems is assumed.",
+    "startsWith": "The two types that find amounts: K and a start, and an old equilibrium with something added.",
+    "stopsAfter": "Choosing and testing the tiny-K shortcut; the huge-K shortcut with its check, including a one-sentence reactant-start case; an amount-added problem in a vessel that is not 1 L, answered in moles. HSC questions are written so the quadratic formula should not be needed; no colorimetry, no temperature dependence of K.",
+    "nextLesson": "G03c: equilibrium calculations, HSC-style practice."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-g03b.md"
+  ],
+  "teaching": {
+    "task": "Find equilibrium concentrations from K and a start with a tested shortcut, and find the amount added to reach a new equilibrium.",
+    "causalExplanation": "With K and a start the change is x. HSC questions are written so you should not need the quadratic formula: the expression is a perfect square or has a tiny or huge K. A tiny K means hardly any reactant changes, so x is small next to the start and can be dropped from start minus x, which is then tested against about 5 per cent of the start. A huge K means the reaction runs almost fully to products, so the small unknown is what is left. An addition changes Q and leaves K alone, so the added substance goes in the initial row as the old equilibrium plus y, the new value goes in the Equilibrium row first and gives the change, the added substance is also used up in the change row, and the old K is reused; y in mol/L is multiplied by the volume to give moles.",
+    "conversationalApproach": "Opens with the five-card board and lights the two types of part two, asks which shortcut fits an N2O4 case with a pause, solves and tests it, mirrors it with a huge K, then spends longest on the amount-added worked example one stage per scene with a try-it, and closes with the decision board and a handoff to the practice set.",
+    "openingDecision": "A question gives you K and a start, or something added to an equilibrium. How do you find the amounts?",
+    "understandingCheck": "For N2O4 = 2NO2 with K = 4.0 x 10^-4 and a start of 0.500 mol/L N2O4 and no NO2: which shortcut fits, and what is [NO2] at equilibrium?",
+    "curriculumScope": "Calculate equilibrium concentrations from K and supplied data, including after a change to an equilibrium mixture (Module 5). Every question is written for HSCScience and is not presented as an official question. Types one, two and four (G03a), marks allocation, colorimetry, temperature dependence of K, Ksp and acid calculations are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the five type cards with lit, ticked and dim states, the C6 ICE table with the equilibrium-row-first pen arrow and E minus I bracket, the C5 expression builder, the C6 algebra line, the C6b check ruler and two-shortcut card, the C8 mini log line and a coded reactant-start diagram. Colour key as C2 to C8: forward blue, reverse amber, equal teal, made plus green, used up minus red.",
+    "transitionPlan": "The five-card board sets the lesson and returns at the end; each type gets a fresh board in the same three zones; the C6b ruler and shortcut card return for the tiny-K and huge-K cases; the amount-added example runs across four boards with the table and equation kept; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook-board",
+      "visualDecision": "adjust",
+      "visualReference": "The five-card board from part one with cards 1, 2 and 4 ticked, cards 3 and 5 lifting and lighting, a flame on card 5, a bracket from card 3 to card 4 and a small step strip",
+      "teachingReason": "Poses part two: the two types that find amounts, and why they are taken one step at a time",
+      "narrationCue": "amounts / start / added / one step at a time",
+      "motionPurpose": "Cards 1, 2 and 4 tick, cards 3 and 5 lift and light on their cues, a flame lands on card 5, a bracket joins cards 3 and 4 and a step strip writes",
+      "motionRole": "explain",
+      "onScreenChange": "The board returns with cards 1, 2 and 4 ticked \"part one\"; on \"amounts\" cards 3 and 5 lift; card 3 shows \"Start + K: how much of each? (x)\" on \"start\"; card 5 shows its given and gains a flame icon on \"added\"; a bracket \"same givens as type four, different demand\" joins card 3 to the dim card 4; on \"one step at a time\" the strip \"convert, table, K, test\" writes",
+      "motionTools": [
+        "card slide-in",
+        "tick",
+        "icon pop",
+        "bracket draw",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "tiny-k-question",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh question board with both demands on the task line, the N2O4 equation strip, the givens card, a small fading card on the quadratic formula, the C6b two-shortcut card with headings only and an empty ICE outline",
+      "teachingReason": "Poses a type three practice question where the learner must choose the shortcut, with every given and demand visible",
+      "narrationCue": "K and a start / quadratic formula / shouldn't need it / perfect square / tiny K / 4.0 times ten to the minus four / Which shortcut fits / Pause here to answer",
+      "motionPurpose": "The board builds as each given is named, a small card on the quadratic formula writes and fades, the two shortcut headings appear with neither ticked, and the countdown ring runs through the answer-free hold",
+      "motionRole": "explain",
+      "onScreenChange": "The task line \"Which shortcut fits? Find [NO2] at equilibrium.\" and the equation appear; the givens card shows \"K = 4.0 x 10^-4\" and \"start: [N2O4] = 0.500 mol/L, no NO2\" with the two tags; on \"quadratic formula\" a grey card \"Quadratic formula: allowed. HSC questions are written so you should not need it.\" writes and fades; on \"perfect square\" and \"tiny K\" the two-shortcut card appears with headings only; the empty ICE outline stays; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "card slide-in",
+        "fade and grey",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "tiny-k-setup",
+      "visualDecision": "adjust",
+      "visualReference": "The ICE table filling on the cues, the K line, the bottom ringed, the perfect-square half of the shortcut card crossed and the tiny-K half ticked",
+      "teachingReason": "Chooses the shortcut for the question: the bottom is not a square, K is tiny",
+      "narrationCue": "0.500 minus x / two x / not a square / tiny / drop the x",
+      "motionPurpose": "The table fills in order, the bottom is ringed and the perfect-square half is crossed, the tiny-K half ticks and the x greys out of the bottom",
+      "motionRole": "explain",
+      "onScreenChange": "The table fills Initial 0.500 and 0; Change \"-x\" and \"+2x\" with chips \"1 : 2\"; Equilibrium \"0.500 - x\" and \"2x\"; the line \"(2x)^2 / (0.500 - x) = 4.0 x 10^-4\" writes; on \"not a square\" the bottom is ringed and the perfect-square half greys with a cross; on \"tiny\" the tiny-K half ticks; on \"drop the x\" the \"- x\" greys and slides out and the cell shows \"about 0.500\"; an unspoken crossed chip \"(2x)^2 = 2x^2\" appears",
+      "motionTools": [
+        "table cell tick",
+        "coefficient fly-in",
+        "ScribbleCircle",
+        "Mark cross",
+        "tick",
+        "text slide-out"
+      ],
+      "holdPurpose": "Hold the dropped line"
+    },
+    {
+      "sceneId": "tiny-k-solve-and-test",
+      "visualDecision": "adjust",
+      "visualReference": "The working writing in beats, the C6b check ruler with x against the start and a dashed 5 per cent line, and an exact-value tag",
+      "teachingReason": "Solves with the shortcut and tests it before trusting it",
+      "narrationCue": "Four x squared / eight x squared / 5.0 times ten to the minus five / 0.0071 / 0.014 / Test it / 1.4 per cent",
+      "motionPurpose": "The working writes in beats to 0.014, then the ruler shows 1.4 per cent well under the dashed line with a tick and the aid chip lands",
+      "motionRole": "explain",
+      "onScreenChange": "The working writes \"4x^2 / 0.500 = 8x^2 = 4.0 x 10^-4\", \"x^2 = 5.0 x 10^-5\", \"x = 0.0071\", \"[NO2] = 2x = 0.014 mol/L\"; the ruler shows x = 0.0071 against 0.500 at \"1.4%\" under the dashed 5 per cent line (\"a school rule of thumb\") with a tick; the tag \"exact answer 0.0140; the shortcut is about 0.7% high\" appears; the aid chip \"Test it or don't use it\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "bar draw",
+        "dashed line reveal",
+        "tick",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "huge-k-setup",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh board with the 2SO2 + O2 = 2SO3 strip, a givens card with a huge K and a product-only start, and an ICE table with signs reversed",
+      "teachingReason": "Sets up the mirror case: with a huge K and a product start almost nothing splits",
+      "narrationCue": "huge K / 4.0 times ten to the ten / oxygen / two x / about 0.400",
+      "motionPurpose": "The board builds, the ICE table fills with plus 2x, plus x and minus 2x, and the last cell shades to about 0.400 with a tag about how little splits",
+      "motionRole": "explain",
+      "onScreenChange": "Task \"Find [O2] at equilibrium\", the equation, and the givens card \"K = 4.0 x 10^10\", \"start: [SO3] = 0.400 mol/L, no SO2, no O2\" with the two tags appear; the table fills Initial 0, 0, 0.400; Change +2x, +x, -2x; Equilibrium 2x, x, 0.400 - 2x with the last cell shaded to about 0.400 and the tag \"K is very large; test how little SO3 splits\"",
+      "motionTools": [
+        "board build",
+        "table build",
+        "coefficient fly-in",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "huge-k-solve",
+      "visualDecision": "adjust",
+      "visualReference": "The C5 builder writing K for the product start and the working in beats down to x cubed, with an unspoken crossed (2x)^2 chip",
+      "teachingReason": "Solves the huge-K case with each step shown",
+      "narrationCue": "0.160 / one times ten to the minus twelve / one times ten to the minus four / x cubed",
+      "motionPurpose": "The expression builds and the working writes in beats to x = 1.0 x 10^-4",
+      "motionRole": "explain",
+      "onScreenChange": "The builder writes K; the working writes \"0.400^2 / ((2x)^2 x) = 4.0 x 10^10\", \"0.160 / 4x^3 = 0.040 / x^3\", \"x^3 = 0.040 / (4.0 x 10^10) = 1.0 x 10^-12\", \"x = 1.0 x 10^-4 mol/L\" with the tag \"K: no unit written\"; an unspoken crossed chip \"(2x)^2 = 2x^2\" appears",
+      "motionTools": [
+        "expression builder",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the answer line"
+    },
+    {
+      "sceneId": "huge-k-test-and-reactant-start",
+      "visualDecision": "adjust",
+      "visualReference": "The check ruler with 2x against 0.400 at 0.05 per cent, then a coded mini diagram of reactants running all the way to products with a small x bar returning",
+      "teachingReason": "Tests the huge-K shortcut and states the reactant-start case in one sentence",
+      "narrationCue": "Test it / 0.00020 / Now the other way round / started with just the reactants / products / back / An excess of one reactant would stay",
+      "motionPurpose": "The ruler shows 2x as a hair against the start, the final concentrations write, and a mini diagram shows reactants going to products with a small x taken back",
+      "motionRole": "explain",
+      "onScreenChange": "The ruler shows 2x = 0.00020 against 0.400 at \"0.05%\" under the 5 per cent line with a tick; the final line \"[O2] = 1.0 x 10^-4 mol/L, [SO2] = 2.0 x 10^-4 mol/L\" writes; on \"started with just the reactants\" a mini diagram shows 2SO2 + O2 running all the way to 2SO3 with a dashed arrow and a small bar \"take x back\" returning; the tag about reactants in the equation ratio and an excess reactant staying appears",
+      "motionTools": [
+        "bar draw",
+        "tick",
+        "diagram build",
+        "DrawPath arrow",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "addition-setup",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh board with the CO + H2O = CO2 + H2 strip, a grouped givens card of old and new amounts, and the amounts dividing into a mol/L column",
+      "teachingReason": "Starts the worked example for the hardest type: reads the question and converts every amount to concentration",
+      "narrationCue": "amount added / 2.00 litre / convert / 0.200 moles / The new carbon monoxide is 0.100",
+      "motionPurpose": "The givens card builds line by line, the old amounts divide by 2.00 into a mol/L column and the new carbon monoxide converts to 0.100",
+      "motionRole": "explain",
+      "onScreenChange": "Task \"How many moles of steam were added?\", the equation and the grouped givens card appear with the tag \"HSC-style question, written for HSCScience\"; on \"convert\" the old amounts divide by 2.00 into a mol/L column (0.200, 0.200, 0.400, 0.400) and the new CO converts to 0.100 mol/L; the chip \"Concentrations, not moles\" shows",
+      "motionTools": [
+        "board build",
+        "NumberTicker division",
+        "DrawPath arrows",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold the converted column"
+    },
+    {
+      "sceneId": "addition-ice-table",
+      "visualDecision": "adjust",
+      "visualReference": "The C6 ICE table with CO, H2O, CO2 and H2 columns, a caption over the Initial row, y written in the pen colour with an added-steam icon, the E minus I bracket and 1 : 1 : 1 : 1 coefficient chips",
+      "teachingReason": "Shows why y sits in the initial row, how the measured value gives the first change and how the other changes follow",
+      "narrationCue": "Right after the steam goes in / initial row / plus y / equilibrium row / minus 0.100 / used up",
+      "motionPurpose": "A caption names the instant after adding, y writes into the steam cell, the pen arrow and bracket give the CO change, the chips fly in and the equilibrium row completes",
+      "motionRole": "explain",
+      "onScreenChange": "The caption \"the instant after adding, before anything reacts: old equilibrium + y\" appears over the Initial row; the row ticks 0.200, \"0.200 + y\", 0.400, 0.400 with y and the label \"y = steam added, mol/L\"; the pen arrow puts 0.100 into the CO Equilibrium cell and the \"E - I\" bracket with \"0.100 - 0.200\" gives \"-0.100\"; the chips \"1 : 1 : 1 : 1\" fill H2O -0.100, CO2 +0.100, H2 +0.100; the Equilibrium row completes \"0.100 + y\", 0.500, 0.500; a ghost crossed chip \"y in the change row\" fades; the aid \"The added substance goes in the initial row\" writes",
+      "motionTools": [
+        "table cell tick",
+        "DrawPath arrow",
+        "bracket draw",
+        "coefficient fly-in",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold the finished table"
+    },
+    {
+      "sceneId": "addition-k-equation",
+      "visualDecision": "adjust",
+      "visualReference": "The C5 builder with the equilibrium cells dropping in, the equation 0.500 x 0.500 over 0.100 x (0.100 + y) = 4.00, and the question y = ? with the countdown ring",
+      "teachingReason": "Sets up the K equation and lets the learner solve for y before the answer",
+      "narrationCue": "0.100 plus y / K has not changed / 4.00 / moles per litre / Pause here and try it",
+      "motionPurpose": "The expression builds, the equilibrium values drop in, the equation writes and y = ? holds with the countdown ring",
+      "motionRole": "explain",
+      "onScreenChange": "The builder writes the K expression and the equilibrium cells drop in; \"0.500 x 0.500 / (0.100 x (0.100 + y)) = 4.00\" writes with the tag \"K: no unit written\"; the question \"y = ? mol/L\" holds with the countdown ring and \"Pause here and try it.\" written beside it; no values for y are shown",
+      "motionTools": [
+        "expression builder",
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here and try it.\""
+    },
+    {
+      "sceneId": "addition-answer-and-slips",
+      "visualDecision": "adjust",
+      "visualReference": "The working writing in beats to y = 0.525 mol/L and 1.05 mol, a teal K check, two crossed wrong-answer chips with pen arrows and a silent Q mini number line",
+      "teachingReason": "Gives the answer in moles, checks it and names the two classic slips",
+      "narrationCue": "0.250 / 0.625 / 0.525 / 1.05 moles / volume / used up",
+      "motionPurpose": "The working writes to 0.525 mol/L, multiplies by 2.00 L to 1.05 mol, the independent check ticks in teal and the two wrong chips are crossed with arrows to their causes",
+      "motionRole": "explain",
+      "onScreenChange": "The working writes \"0.500 x 0.500 = 0.250\", \"0.100 + y = 0.250 / (4.00 x 0.100) = 0.625\", \"y = 0.525 mol/L\", then \"0.525 mol/L x 2.00 L = 1.05 mol\" with a tick; the check \"0.250 / (0.100 x 0.625) = 4.00\" gets a teal \"= K\" tick; the chips \"0.525 (mol/L, not mol): volume forgotten\" and \"0.425 mol/L: steam used up not counted\" are crossed with arrows to the 2.00 L and the -0.100 cell; a silent mini number line shows Q at 1.10 below K = 4.00; the aid chip \"Initial row: plus y. K stays.\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "tick",
+        "Mark cross",
+        "DrawPath arrow",
+        "marker drop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "The five-card board returning with cards 1, 2 and 4 ticked, cards 3 and 5 gaining their method lines and slips, and a next chip with a checklist icon",
+      "teachingReason": "Packs part two into one decision order and hands off to the practice set",
+      "narrationCue": "given / asked / perfect square / test any shortcut / initial row / Next / trap",
+      "motionPurpose": "Cards 3 and 5 gain their method lines and slips as the narration reaches them and the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The board returns with cards 1, 2 and 4 ticked; card 3 gains \"x; perfect square, tiny K or huge K, then test\" with its slip; card 5 gains \"y in the initial row; new value into E first; K stays; moles at the end\" with its slip; on \"Next\" the chip \"Next: practice questions, each with a trap\" appears with a checklist icon",
+      "motionTools": [
+        "card slide-in",
+        "HandText write-on",
+        "chip slide-in",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Key notes card with the memory aids in large writing and their condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 45 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Claude designer self-review of the G03 split (owner-requested quick review; reused scenes keep the G03 Revision 5 independent review); independent review of the exact voiced preview pending",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g03b-learning-review.md",
+      "sha256": "1659cfcc62745d079bd3960128b726295c647d6e48f4a2f37fa74672760e07ee"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g03b-claude-science-check.md",
+      "sha256": "0d328a5ad0b1b2212d1f6bee6a8c5f281e917e295961f95b7fa9e096dc6944e3"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

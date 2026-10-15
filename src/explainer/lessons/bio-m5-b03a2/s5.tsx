@@ -104,7 +104,7 @@ export const SceneAttempt: React.FC = () => {
 // ---------- shared loop pieces for feedback one ----------
 const OV1 = {x: 130, y: 520, w: 220};
 const FOL1 = ovFol(OV1.x, OV1.y, OV1.w);
-const Q2: [number, number][] = [[310, 322], [700, 262], [1200, 232], [1560, 292], [1668, 346]];
+const Q2: [number, number][] = [[340, 318], [700, 262], [1200, 232], [1560, 292], [1668, 346]];
 const Q1: [number, number][] = [[PIT[0] - 28, PIT[1] + 28], [1540, 480], [1200, 560], [850, 620], [560, 680], [FOL1[0] + 50, FOL1[1] + 20]];
 
 // ---------- 8a. Feedback, item one ----------
@@ -120,7 +120,7 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Overlay>
 				<Brain at={0} />
 				<Tablet x={220} y={330} s={1.1} />
-				<text x={220} y={406} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={INK}>daily tablet</text>
+				<text x={220} y={440} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40}} fill={INK}>daily tablet</text>
 				<DrawPath d={pathOf(Q2)} at={4} dur={50} color={AMBER} width={9} />
 				<Dots pts={Q2} at={30} n={6} period={80} color={AMBER} r={10} />
 				<BarHead x={Q2[4][0] + 6} y={Q2[4][1] + 2} ang={Math.atan2(Q2[4][1] - Q2[3][1], Q2[4][0] - Q2[3][0])} at={c.low - 10} color={AMBER} />

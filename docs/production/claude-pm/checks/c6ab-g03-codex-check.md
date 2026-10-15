@@ -1,0 +1,21 @@
+# Brief 34, Part 1: C6a, C6b and G03 fact check
+
+Checked 15 October 2026. Files checked: `chem-m5-c06a.md` Revision 2, `chem-m5-c06b.md` Revision 2 and `chem-m5-g03.md` Revision 5. Scripts were not edited.
+
+## Findings
+
+1. **C6b author note (e) confuses Kp with Kc at 800 K.** The quoted Brown value, 3.1 x 10^-5 at 800 K, cannot be another Kc value for I2(g) ⇌ 2I(g). NIST thermochemical data give Kp = 3.05 x 10^-5 and Kc = 4.59 x 10^-7 at 800 K. Here the gas mole change is +1, so Kc = Kp / (RT), with R = 0.0831446 L bar mol^-1 K^-1. The note currently presents the 800 K number alongside Kc at 1000 K without this distinction. Sources: [NIST iodine](https://webbook.nist.gov/cgi/cbook.cgi?ID=C7553562&Mask=1&Units=SI), [NIST atomic iodine](https://webbook.nist.gov/cgi/cbook.cgi?ID=C14362448&Mask=FFFFFF&Units=SI), [JANAF atomic iodine](https://janaf.nist.gov/tables/I-001.html).
+
+2. **The universal HSC claim is not established by the official wording found.** C6b scene 10 says an HSC question should never need the quadratic formula; G03 scene 4a says an HSC question never needs it. The syllabus does not state this exclusion. Official NESA feedback for 2019 Chemistry, Question 31, does say: "avoiding solving for quadratic equations, making x approximation if appropriate". That is advice about the question and an appropriate approximation, not an express guarantee for every HSC question. No official blanket exclusion was found in the syllabus or the official searches. Source: [NESA 2019 Chemistry exam feedback, Question 31](https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/chemistry/2019). The methods used in these three lessons do solve their examples without the quadratic formula.
+
+## Required checks
+
+Every value in all three "Numbers to verify" sections was recomputed, including the deliberately wrong answers, exact positive roots, percentage tests, reciprocal and squared K values, Q values, atom check and amount-added calculations. No arithmetic errors found at the stated rounding. The small-x results and their tests are consistent: iodine x = 0.0010, 0.4%; NO x = 0.0050, 1.0%; G03 NO2 x = 0.0070711, 1.414%; huge-K case x = 0.000100, 0.05% removed. Exact iodine x = 0.000998002 and exact G03 NO2 = 0.01404249 confirm the stated approximation errors.
+
+**Iodine near 1000 K:** calculation from the NIST Shomate coefficients gives Kp = 0.0030813, hence Kc = 3.706 x 10^-5 at 1000 K. This supports the cited textbook value of about 3.8 x 10^-5. At 950 K the same calculation gives Kc = 1.474 x 10^-5, so describing 1.6 x 10^-5 as illustrative and roughly appropriate near 950 K is consistent. The labelled illustrative learner value is not an error. Sources: [NIST iodine](https://webbook.nist.gov/cgi/cbook.cgi?ID=C7553562&Mask=1&Units=SI), [NIST atomic iodine](https://webbook.nist.gov/cgi/cbook.cgi?ID=C14362448&Mask=FFFFFF&Units=SI).
+
+**N2 + O2 ⇌ 2NO near 2000 K:** JANAF gives log10 Kf = -1.699 for forming one mole of NO at 2000 K. For the equation making two NO, K = 10^(-3.398) = 3.9994 x 10^-4. The gas mole change is zero, so Kc = Kp. The lesson value 4.0 x 10^-4 is supported. Source: [NIST-JANAF NO table, 2000 K row](https://janaf.nist.gov/tables/N-005.html).
+
+**2017 syllabus:** the current official DOCX was downloaded and its text checked. Module 5 requires calculations of Keq and substance concentrations in an equilibrium system, followed by use of those values to predict reaction direction (ACSCH096). The three lessons address those actions. The document contains no occurrence of "quadratic" and does not prescribe ICE-row order or a 5% rule. Source: [official Chemistry Stage 6 Syllabus DOCX](https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx), linked from [NESA's 2017 course page](https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017). The 2017 course remains the applicable Year 12 syllabus before the published transition to the new course.
+
+The E-row-first method is followed in the measured-value examples. Types 1, 2 and 3 are introduced in that order across C6a and C6b. Small-x approximations retain x in the product terms and check the amount removed against the initial concentration. No additional errors found.

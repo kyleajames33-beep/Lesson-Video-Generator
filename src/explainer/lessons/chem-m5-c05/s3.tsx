@@ -71,7 +71,7 @@ export const SceneScratch: React.FC = () => {
 
 // ---------- 5. Why a solid or the solvent is left out ----------
 const L = 'left-out';
-const K7 = cues(sc(L), {nochg: 'their concentration does not change', remember: 'Remember the rate equations', fixed: 'just another fixed number', folds: 'it folds into', incl: 'K already includes it', carbon: 'We met this with carbon', carb2: 'So for carbon plus carbon dioxide', never: 'the carbon never appears', steam: 'as steam', counts: 'its concentration changes'});
+const K7 = cues(sc(L), {nochg: 'Their concentration does not change', never: 'can never make the ratio move', incl: 'K already includes them', carbon: 'We met this with carbon', carb2: 'So for carbon plus carbon dioxide', nev2: 'the carbon never appears', steam: 'as steam', counts: 'its concentration changes'});
 const solv = cw(L, 'Why leave out the solvent', 4);
 const kk = (k: number) => cw(L, 'the carbon monoxide squared over the carbon dioxide', k);
 const CEQ: EqItem[] = [{k: 'sp', t: 'C(s)', color: INK}, {k: 'plus'}, {k: 'sp', t: 'CO_2(g)', color: INK}, {k: 'arrow'}, {k: 'sp', coef: '2', t: 'CO(g)', color: INK}];
@@ -86,12 +86,7 @@ export const SceneLeftOut: React.FC = () => {
 	const cnum: Term[] = [{t: 'CO', p: '2', at: kk(2), from: [cp[4].sx, CY], dur: 30, pAt: kk(3), pFrom: [cp[4].cx, CY]}];
 	const cden: Term[] = [{t: 'CO_2', at: kk(6), from: [cp[2].sx, CY], dur: 30}];
 	const gC = fracGeom(CX, FCY, FS, cnum, cden);
-	// flying chip (water counter into the fixed number)
-	const fp = kf(f, [[K7.fixed, 0], [K7.fixed + 36, 1]]);
-	const fx = 720 + (1130 - 720) * fp, fy = 350 + (330 - 350) * fp - Math.sin(fp * Math.PI) * 60;
-	const line1: Term[] = [{t: 'rate =', br: false, hand: true, at: K7.remember}, {t: 'number', br: false, hand: true, at: K7.remember + 12}, {t: '×', br: false, at: K7.remember + 20}, {t: 'A', at: K7.remember + 26}, {t: '×', br: false, at: K7.remember + 34}, {t: 'water', at: K7.remember + 40, color: FWD}];
-	const line2: Term[] = [{t: 'rate =', br: false, hand: true, at: K7.folds}, {t: '(number × water)', br: false, hand: true, at: K7.folds + 6, color: TEAL}, {t: '×', br: false, at: K7.folds + 14}, {t: 'A', at: K7.folds + 18}];
-	const x1 = 1000;
+	const x1 = 1040;
 	return (
 		<>
 			<Heading text="Why a solid or the solvent is left out" at={4} size={58} out={K7.carbon - 6} />
@@ -102,7 +97,7 @@ export const SceneLeftOut: React.FC = () => {
 					<path d="M140,330 L162,650 Q300,690 438,650 L460,330 Z" fill="#cfe3f1" fillOpacity={0.6} />
 					{Array.from({length: 46}, (_, k) => { const p = wob(f, k, 190 + (k % 8) * 38, 380 + Math.floor(k / 8) * 46, 14, 14); return <circle key={k} cx={p.x} cy={p.y} r={6} fill="#9cc8e6" stroke="#5b8fb3" strokeWidth={1.5} />; })}
 					{Array.from({length: 6}, (_, k) => { const p = wob(f, k + 60, 210 + k * 44, 470 + (k % 2) * 90, 26, 22); return <circle key={'r' + k} cx={p.x} cy={p.y} r={11} fill={k % 2 ? '#3d6fd6' : '#e58ab0'} stroke={INK} strokeWidth={2.4} />; })}
-					<Ring cx={300} cy={470} rx={190} ry={190} at={solv} out={K7.fixed} color={FWD} seed={3} />
+					<Ring cx={300} cy={470} rx={190} ry={190} at={solv} out={K7.never} color={FWD} seed={3} />
 					{/* counters */}
 					<Fade at={K7.nochg}>
 						<rect x={540} y={280} width={380} height={140} rx={20} fill="#fffdf8" stroke={FWD} strokeWidth={4} />
@@ -113,16 +108,17 @@ export const SceneLeftOut: React.FC = () => {
 						<Sx x={560} y={558} text={`${dissolved.toFixed(2)} mol/L`} size={54} color={INK} at={K7.nochg + 8} />
 					</Fade>
 					<Sx x={730} y={640} text="water: very large and steady" size={36} color={INK_SOFT} anchor="middle" hand at={K7.nochg + 24} />
-					{/* the rate equation */}
-					<Line x={x1} y={340} size={54} items={line1} />
-					<Fade at={K7.fixed - 2} out={K7.fixed + 44}>
-						<circle cx={fx} cy={fy} r={34} fill="#fffdf8" stroke={FWD} strokeWidth={4} />
-						<Sx x={fx} y={fy + 10} text="55" size={32} anchor="middle" at={K7.fixed - 2} />
+					{/* the steady counter cannot move the ratio */}
+					<Ring cx={730} cy={350} rx={220} ry={92} at={K7.never} color={TEAL} seed={5} />
+					<Arrow x1={960} y1={350} x2={x1 - 16} y2={350} at={K7.never + 10} color={TEAL} width={6} />
+					<Sx x={x1} y={330} text="steady, so it can never" size={54} color={TEAL} hand at={K7.never + 6} />
+					<Sx x={x1} y={394} text="make the ratio move" size={54} color={TEAL} hand at={K7.never + 14} />
+					<Fade at={K7.incl - 4}>
+						<rect x={x1 - 10} y={470} width={720} height={170} rx={24} fill="#fffdf8" stroke={TEAL} strokeWidth={4} />
 					</Fade>
-					<Ring cx={x1 + 190} cy={324} rx={90} ry={44} at={K7.fixed + 30} color={TEAL} seed={5} />
-					<Line x={x1} y={500} size={54} items={line2} />
-					<Sx x={x1} y={590} text="fixed × fixed = fixed" size={52} color={TEAL} hand at={K7.fixed + 24} />
-					<Sx x={x1} y={660} text="so K already includes it" size={50} color={TEAL} hand at={K7.incl} />
+					<Sx x={x1 + 20} y={540} text="its steady amount is" size={48} color={INK} hand at={K7.incl} />
+					<Sx x={x1 + 20} y={604} text="already included in K" size={54} color={TEAL} hand at={K7.incl + 8} />
+					<Sx x={x1} y={720} text="so leave it out of the expression" size={44} color={INK_SOFT} hand at={K7.incl + 30} />
 				</g>
 				{/* carbon */}
 				<Heading0 />
@@ -138,8 +134,8 @@ export const SceneLeftOut: React.FC = () => {
 				<Fade at={K7.carb2 - 6}>
 					<Sx x={CX} y={CY - 76} text="the equation from the squeeze video" size={38} color={INK_SOFT} anchor="middle" hand at={K7.carb2 - 6} />
 				</Fade>
-				<DrawPath d={`M${cp[0].sx - 8},${CY - 20} L${cp[0].sx + cp[0].w + 8},${CY - 26}`} at={K7.never} dur={14} color={INK_SOFT} width={9} />
-				<Sx x={CX} y={CY + 54} text="(s): left out" size={38} color={INK_SOFT} anchor="middle" hand at={K7.never + 14} />
+				<DrawPath d={`M${cp[0].sx - 8},${CY - 20} L${cp[0].sx + cp[0].w + 8},${CY - 26}`} at={K7.nev2} dur={14} color={INK_SOFT} width={9} />
+				<Sx x={CX} y={CY + 54} text="(s): left out" size={38} color={INK_SOFT} anchor="middle" hand at={K7.nev2 + 14} />
 				<Frac cx={CX} cy={FCY} size={FS} num={cnum} den={cden} barAt={kk(0)} prefix="K =" />
 				<Fade at={K7.steam}>
 					<rect x={CX - 360} y={770} width={720} height={150} rx={22} fill="#fffdf8" stroke={GREEN} strokeWidth={3.5} />

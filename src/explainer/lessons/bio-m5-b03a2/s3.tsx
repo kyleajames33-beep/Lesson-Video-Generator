@@ -1,19 +1,44 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import {Callout} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Arrow, BarHead, Brain, ChainIcon, CHAIN, cmap, CervixPair, cH, CERVIX_BOX, Cross, DrawPath, Dots, Enter, FONT_DISPLAY, FONT_HAND, Hand, HandText, Heading, INK, INK_SOFT, Label, LoopCard, LoopIcon, MAGENTA, MAGENTA_INK,
 	Overlay, PArt, PIT, PL, Pill, prog, S, Say, Scribble, SLATE_INK, traceD, Vein, VIOLET, VIOLET_INK, pathOf, along, MUSCLE, type CBox,
 } from './shared';
+import {MUSCLE_CELL} from './assets';
 
 // ---------- 3. Oestrogen: from calm to ready ----------
 const FPL = {x: 96, y: 250, w: 480};
 const FPH = (FPL.w * 1439) / 1143;
 const fpm = (fx: number, fy: number): [number, number] => [FPL.x + fx * FPL.w, FPL.y + fy * FPH];
 const PANEL = {x: 860, y: 215, w: 980, h: 655};
-const CELL = {cx: 1350, cy: 580, rx: 360, ry: 92};
-const edgeY = (dx: number) => CELL.cy - CELL.ry * Math.sqrt(Math.max(0, 1 - (dx / CELL.rx) ** 2));
+// Painted smooth muscle cell pair (2500 x 724, aligned on the nucleus; cell centre 1247, 356 in plate pixels).
+const CELL = {cx: 1350, cy: 580, s: 0.42};
+const PC = {x: 1247, y: 356};
+// top edge of the cell (plate y every 50 px from x = 200), measured from the alpha channel
+const TOP_R = [356, 352, 347, 342, 337, 331, 324, 315, 303, 292, 281, 272, 262, 252, 242, 232, 224, 216, 210, 207, 206, 207, 210, 214, 219, 225, 232, 241, 251, 262, 273, 285, 295, 303, 311, 318, 325, 330, 335, 339, 345, 353, 356];
+const TOP_C = [356, 356, 356, 356, 356, 356, 356, 356, 356, 344, 338, 329, 314, 294, 271, 247, 226, 210, 197, 190, 186, 186, 186, 190, 197, 209, 227, 250, 273, 294, 315, 329, 338, 344, 356, 356, 356, 356, 356, 356, 356, 356, 356];
+const topAt = (arr: number[], px: number) => {
+	const u = Math.max(0, Math.min(arr.length - 1.001, (px - 200) / 50));
+	const i = Math.floor(u);
+	return arr[i] + (arr[i + 1] - arr[i]) * (u - i);
+};
+/** Screen point on the top surface of the cell for a receptor slot dx (relaxed spacing); k = 0 relaxed, 1 contracted (shorter, fatter). */
+const edgePt = (dx: number, k: number): [number, number] => {
+	const px = PC.x + (dx / CELL.s) * (1 - 0.367 * k);
+	const py = topAt(TOP_R, px) * (1 - k) + topAt(TOP_C, px) * k;
+	return [CELL.cx + (px - PC.x) * CELL.s, CELL.cy + (py - PC.y) * CELL.s];
+};
+const MuscleCell: React.FC<{k: number}> = ({k}) => {
+	const w = 2500 * CELL.s, h = 724 * CELL.s, x = CELL.cx - PC.x * CELL.s, y = CELL.cy - PC.y * CELL.s;
+	return (
+		<g>
+			<image href={staticFile(MUSCLE_CELL[0])} x={x} y={y} width={w} height={h} opacity={1 - k} />
+			<image href={staticFile(MUSCLE_CELL[1])} x={x} y={y} width={w} height={h} opacity={k} />
+		</g>
+	);
+};
 const SOCK_BEFORE = [-200, 140];
 const SOCK_AFTER = [-280, -200, -120, -40, 40, 120, 200, 280];
 export const SceneOestrogen: React.FC = () => {
@@ -31,8 +56,9 @@ export const SceneOestrogen: React.FC = () => {
 	const squeeze1 = prog(f, c.contract, 14) * (1 - prog(f, c.so - 6, 10));
 	const after1 = prog(f, c.small, 44);
 	const squeeze2 = prog(f, c.strong, 18);
-	const sx = 1 - 0.04 * squeeze1 - 0.2 * squeeze2;
-	const sy = 1 + 0.03 * squeeze1 + 0.12 * squeeze2;
+	// small squeeze: the relaxed cell shortens a little; strong squeeze: crossfade to the contracted plate
+	const k = squeeze2;
+	const sx = 1 - 0.07 * squeeze1, sy = 1 + 0.1 * squeeze1;
 	const dotXs = [-200, -40, 120];
 	const wallPt = (deg: number): [number, number] => [336 + 220 * Math.cos((deg * Math.PI) / 180), 504 + 234 * Math.sin((deg * Math.PI) / 180)];
 	const wallArc = Array.from({length: 41}, (_, i) => `${i ? 'L' : 'M'}${wallPt(-190 + i * 5).map(v => v.toFixed(1)).join(',')}`).join(' ');
@@ -64,24 +90,25 @@ export const SceneOestrogen: React.FC = () => {
 					<text x={PANEL.x + 30} y={PANEL.y + 56} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30}} fill={INK_SOFT}>one muscle cell of the uterus wall</text>
 					<text x={PANEL.x + 30} y={PANEL.y + 112} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46}} fill={f < c.so ? INK : MAGENTA_INK}>{f < c.so ? 'without the extra oestrogen' : 'late in pregnancy, with oestrogen'}</text>
 					<g transform={`translate(${CELL.cx},${CELL.cy}) scale(${sx},${sy}) translate(${-CELL.cx},${-CELL.cy})`}>
-						<ellipse cx={CELL.cx} cy={CELL.cy} rx={CELL.rx} ry={CELL.ry} fill="#f3b9b3" stroke="#b5605c" strokeWidth={6} />
-						<ellipse cx={CELL.cx + 20} cy={CELL.cy + 6} rx={70} ry={34} fill="#d98a86" stroke="#b5605c" strokeWidth={4} />
+						<MuscleCell k={k} />
 						{sockets.map((dx, i) => {
 							const idx = f < c.so ? 1 : prog(f, c.so + i * 4, 10);
-							return <circle key={dx} cx={CELL.cx + dx} cy={edgeY(dx)} r={15} fill="#fffdf8" stroke={VIOLET} strokeWidth={5} opacity={idx} />;
+							const [ex, ey] = edgePt(dx, k);
+							return <circle key={dx} cx={ex} cy={ey - 4} r={15} fill="#fffdf8" stroke={VIOLET} strokeWidth={5} opacity={idx} />;
+						})}
+						{/* three oxytocin dots, each landing on its receptor */}
+						{dotXs.map((dx, i) => {
+							const fits = f < c.so ? i === 0 : true;
+							const t = f < c.so ? before1 : after1;
+							const [ex, ey] = edgePt(dx, k);
+							const targetY = ey - 26;
+							const y0 = 360;
+							const rise = f < c.so && !fits ? bounce : 0;
+							const y = y0 + (targetY - y0) * t - rise * (targetY - y0 - 20) * (f < c.so ? 1 : 0) * 0.9;
+							const o = f < c.so ? (i === 0 ? 1 : 1 - rise * 0.9) : 1;
+							return <circle key={i} cx={ex} cy={y} r={14} fill={VIOLET} stroke="#fff" strokeWidth={2.5} opacity={Math.min(1, t * 4) * o} />;
 						})}
 					</g>
-					{/* three oxytocin dots */}
-					{dotXs.map((dx, i) => {
-						const fits = f < c.so ? i === 0 : true;
-						const t = f < c.so ? before1 : after1;
-						const targetY = edgeY(dx) - 22;
-						const y0 = 360;
-						const rise = f < c.so && !fits ? bounce : 0;
-						const y = y0 + (targetY - y0) * t - rise * (targetY - y0 - 20) * (f < c.so ? 1 : 0) * 0.9;
-						const o = f < c.so ? (i === 0 ? 1 : 1 - rise * 0.9) : 1;
-						return <circle key={i} cx={CELL.cx + dx} cy={y} r={14} fill={VIOLET} stroke="#fff" strokeWidth={2.5} opacity={Math.min(1, t * 4) * o} />;
-					})}
 					<DrawPath d={traceD(1010, 800, 640, 64, f < c.so ? 'small' : 'big', 4)} at={f < c.so ? c.contract : c.strong} dur={50} color={VIOLET_INK} width={6} />
 				</g>
 			</Overlay>
@@ -159,7 +186,7 @@ export const SceneTrigger: React.FC = () => {
 					);
 				})}
 			</Overlay>
-			<Say at={c.narrow} x={300} y={846} w={440} size={28} color={INK_SOFT} weight={600}>the narrow lower end of the uterus</Say>
+			<Say at={c.narrow} x={356} y={846} w={420} size={27} color={INK_SOFT} weight={600}>the narrow lower end of the uterus</Say>
 			<LoopCard at={0} fill1={0} />
 			<div style={{display: 'none'}}>{[PIT, SLATE_INK, Cross, AMBER, along, CERVIX_BOX, LoopIcon, MAGENTA, VIOLET, BarHead, HandText, FONT_DISPLAY, INK].length}</div>
 		</>
@@ -216,7 +243,8 @@ export const SceneLoopCloses: React.FC = () => {
 					return (
 						<g key={t}>
 							<ChainIcon k={i} cx={x} cy={y} s={1 + 0.1 * mv} lit={greyRing < 0.5} />
-							<text x={x} y={i === 0 ? y - 62 : y + 84} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36}} fill={INK}>{t}</text>
+							{/* side nodes (nerve signal, contraction) carry their label outward, off the ring arrows */}
+							<text x={x + (i === 1 ? 1 : i === 4 ? -1 : 0) * (62 + t.length * 8) * mv} y={i === 0 ? y - 62 : y + 84 - ((i === 1 || i === 4) ? 72 * mv : 0)} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36}} fill={INK}>{t}</text>
 						</g>
 					);
 				})}
@@ -230,15 +258,15 @@ export const SceneLoopCloses: React.FC = () => {
 				</g>
 				{/* lap counter and the two bars */}
 				<g opacity={prog(f, c.closes, 14)}>
-					<text x={1460} y={262} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 60}} fill={INK_SOFT}>lap</text>
-					{[0, 1, 2, 3].map(i => <text key={i} x={1560} y={264 + (1 - lapTick(i)) * 30 + (lapNow > i + 1 ? -40 : 0)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 84}} fill={AMBER_INK} opacity={lapNow === i + 1 ? 1 : 0}>{i + 1}</text>)}
-					<line x1={1440} x2={1840} y1={655} y2={655} stroke={INK} strokeWidth={5} />
-					<rect x={1480} y={655 - 300 * stretchH} width={90} height={300 * stretchH} fill={MUSCLE} />
-					<rect x={1690} y={655 - 300 * oxyH} width={90} height={300 * oxyH} fill={greyRing > 0.5 ? '#b9b3a8' : VIOLET} />
-					<text x={1525} y={700} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK}>stretch</text>
-					<text x={1735} y={700} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK}>oxytocin</text>
+					<text x={1560} y={262} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 60}} fill={INK_SOFT}>lap</text>
+					{[0, 1, 2, 3].map(i => <text key={i} x={1660} y={264 + (1 - lapTick(i)) * 30 + (lapNow > i + 1 ? -40 : 0)} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 84}} fill={AMBER_INK} opacity={lapNow === i + 1 ? 1 : 0}>{i + 1}</text>)}
+					<line x1={1560} x2={1840} y1={655} y2={655} stroke={INK} strokeWidth={5} />
+					<rect x={1585} y={655 - 300 * stretchH} width={80} height={300 * stretchH} fill={MUSCLE} />
+					<rect x={1730} y={655 - 300 * oxyH} width={80} height={300 * oxyH} fill={greyRing > 0.5 ? '#b9b3a8' : VIOLET} />
+					<text x={1625} y={700} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK}>stretch</text>
+					<text x={1770} y={700} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK}>oxytocin</text>
 				</g>
-				<DrawPath d={traceD(1450, 850, 380, 80, 'grow', 4)} at={c.closes} dur={80} color={VIOLET_INK} width={5} />
+				<DrawPath d={traceD(1500, 850, 340, 80, 'grow', 4)} at={c.closes} dur={80} color={VIOLET_INK} width={5} />
 			</Overlay>
 			<Enter at={c.pos} style={{position: 'absolute', left: 660, top: 512}}><HandText text="positive feedback" at={c.pos} size={78} color={AMBER_INK} cps={26} /></Enter>
 			<Say at={c.pos + 20} x={680} y={612} w={470} size={32} color={INK} weight={600}>the result pushes the process further</Say>

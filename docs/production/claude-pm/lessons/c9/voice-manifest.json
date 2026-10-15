@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C9-claude-2026-10-15-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c9/lesson.json",
+  "lessonSha256": "23b0c9be264ca569342ec8715edd51fbed6f8c3f41b3cbd0be4f17c208020de1",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c9/lesson.production-brief.json",
+    "sha256": "f3c0fcb4b406c09da0b1b9228a995a8663b8aeb388adfc82eb8a77041f7aadff"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the last few videos we did all sorts of things to a mixture at equilibrium. We added a reactant, took out a product, squeezed the container. The mixture shifted every time, but K never moved. Here is a sealed tube of nitrogen dioxide, the brown gas, in balance with colourless N two O four. In hot water it goes darker. In ice it fades. K is built from the settled concentrations, so if the hot tube settles with very different concentrations, can K really stay fixed? The question is: does K change when the temperature does, and which way?",
+      "hash": "57a61fc35cc4",
+      "textSha256": "57a61fc35cc441328215914413f6b4dbea6998097f1196d38128088cbc67a9d3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/hook.57a61fc35cc4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/hook.57a61fc35cc4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/hook.57a61fc35cc4.generation.json",
+      "plannedRequestSha256": "78f8218f7725d49ec0620ac5f89deead6ec9e196c03419f0a937355471f00f78"
+    },
+    {
+      "id": "k-stayed-fixed",
+      "parentSceneId": "k-stayed-fixed",
+      "text": "First, why did K stay fixed? Adding a chemical or squeezing the container changes the amounts, so particles meet more or less often, and for a while one reaction runs faster than the other. The mixture shifts until products over reactants is the same number again, even though the amounts are now different. Each collision is just as likely to work as before, so the mixture settles at the same K. Temperature is different: heating makes collisions more likely to work, even with the same amounts in the tube, and that moves K itself.",
+      "hash": "9cec97b09b0a",
+      "textSha256": "9cec97b09b0a8fa0b4d0905410614282cd7bff58c1c373cd473c97cb133ab069",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/k-stayed-fixed.9cec97b09b0a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/k-stayed-fixed.9cec97b09b0a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/k-stayed-fixed.9cec97b09b0a.generation.json",
+      "plannedRequestSha256": "c87a3105ef8bb45b3cc542c100237662ab688a6cef6783c6a0c5f7e88b1062b0"
+    },
+    {
+      "id": "temperature-cause",
+      "parentSceneId": "temperature-cause",
+      "text": "Here is how. Heating speeds up both reactions, but not equally. As with the cobalt tube, the reaction that takes in heat needs harder collisions, so it gains the most. Going forward, N two O four splitting takes in heat, so splitting speeds up far more than joining. N O two builds up and N two O four is used up, so splitting slows and joining speeds up, until the rates are equal again with more N O two and less N two O four than before. More product on top, less reactant underneath, so K is bigger. A catalyst is different: it speeds up both reactions by the same factor, so the rates stay equal, nothing shifts, and K stays the same.",
+      "hash": "d3cfc4c97260",
+      "textSha256": "d3cfc4c9726036af1cff11600bb5ffce227571688e7a726aa621d171f0146a91",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/temperature-cause.d3cfc4c97260.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/temperature-cause.d3cfc4c97260.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/temperature-cause.d3cfc4c97260.generation.json",
+      "plannedRequestSha256": "dba708ad2f8522d19a5e04844e56be9f038c6bfd1bbf51a6d616664b58947cf7"
+    },
+    {
+      "id": "evidence",
+      "parentSceneId": "evidence",
+      "text": "Now the evidence. The measured values for this reaction give K as 0.0061 at twenty-five degrees Celsius, and about 0.49 at a hundred degrees, about eighty times bigger. Now fill a tube with 0.040 moles per litre of N two O four. At twenty-five degrees only about eighteen percent of it splits, so the tube is pale. At a hundred degrees about seventy-nine percent has split, so it is a deep brown. A bigger K is what that deeper brown looks like.",
+      "hash": "d13f2d2f6e09",
+      "textSha256": "d13f2d2f6e09920d2a3f23285441928355b186946f3069560b56ab918e919f37",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/evidence.d13f2d2f6e09.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/evidence.d13f2d2f6e09.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/evidence.d13f2d2f6e09.generation.json",
+      "plannedRequestSha256": "1f012a6b68e35fa37a92af954ebe2f43ca908d27b702659acffe735a7d143b9f"
+    },
+    {
+      "id": "backwards",
+      "parentSceneId": "backwards",
+      "text": "Now write the same reaction backwards: two N O two making N two O four. Going this way the reaction gives out heat, the same amount that the other way takes in. Its K is the flip of the old one. One over 0.0061 is about 160 at twenty-five degrees, and one over 0.49 is about 2.0 at a hundred. So here K falls when you heat it.",
+      "hash": "b4a4d80fd669",
+      "textSha256": "b4a4d80fd669a967260a7b3e1cb5a79fc91cdbea4bcd608c8f31f020da2cdeae",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/backwards.b4a4d80fd669.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/backwards.b4a4d80fd669.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/backwards.b4a4d80fd669.generation.json",
+      "plannedRequestSha256": "8148a039fe4652cc89f9a2498d869b65650525f70b32e210f520145feacdb984"
+    },
+    {
+      "id": "reason-and-rule",
+      "parentSceneId": "reason-and-rule",
+      "text": "Why? It is the same tube going brown; only the way we write it has changed. Heating speeds up the reaction that takes in heat more, and written this way that is the reverse reaction, N two O four splitting. So N two O four, which is now the product, gets used up, and the settled mixture holds less product. K is smaller. So here is the rule. If the forward reaction takes in heat, heating raises K. If the forward reaction gives out heat, heating lowers K. Cooling does the opposite.",
+      "hash": "040309bac71d",
+      "textSha256": "040309bac71dcd3b7ce07eba1a16a99d0b2d819cbb53021d786696d2b2a1738b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/reason-and-rule.040309bac71d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/reason-and-rule.040309bac71d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/reason-and-rule.040309bac71d.generation.json",
+      "plannedRequestSha256": "a22e28645123e694758e0eaa7c6b9c88d175dc5438bd404d554a3810f6cfccb1"
+    },
+    {
+      "id": "four-changes",
+      "parentSceneId": "four-changes",
+      "text": "Let's put the four changes side by side in a table. The first three, adding N two O four, squeezing the container and adding a catalyst, leave K alone. Heat the tube, and the two reactions speed up by different amounts, so K changes. A shift is Q moving. A change in K is the target itself moving. Only temperature moves the target.",
+      "hash": "cd5b74dbaf7a",
+      "textSha256": "cd5b74dbaf7a5593c75f4e2cf160f522d63597d1395240fa95adadba31ae53f8",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/four-changes.cd5b74dbaf7a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/four-changes.cd5b74dbaf7a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/four-changes.cd5b74dbaf7a.generation.json",
+      "plannedRequestSha256": "cd1a694cde8357bfd20921dfab6db649cdbc069e7090fa53a965f5c1bd8d4d3c"
+    },
+    {
+      "id": "new-k",
+      "parentSceneId": "new-k",
+      "text": "Link it to the reaction quotient video. Take the tube settled at twenty-five degrees, with 0.0329 moles per litre of N two O four and 0.0142 of N O two. Q is 0.0142 squared over 0.0329, which is 0.0061, equal to K. Now drop it in boiling water. The amounts have not had time to change, so Q is still 0.0061, but K is now 0.49. Q is below K.",
+      "hash": "4a615dc16231",
+      "textSha256": "4a615dc1623128ce0703546b926fcfc5f8339cc1f74aeede1f0800d4e8d120fd",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/new-k.4a615dc16231.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/new-k.4a615dc16231.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/new-k.4a615dc16231.generation.json",
+      "plannedRequestSha256": "23ca39bd2170d379759e6ba5b48fa82bc38f79a2ca506ad4b33d2ac1d80d2d45"
+    },
+    {
+      "id": "mixture-moves",
+      "parentSceneId": "mixture-moves",
+      "text": "Q below K means that, compared with a tube settled at a hundred degrees, this tube holds too little N O two, so N two O four now splits faster than it forms. N O two builds up, and Q climbs until it reaches the new K. So heating works in two steps: first K changes, then the mixture moves to match it.",
+      "hash": "0e285d25923c",
+      "textSha256": "0e285d25923cd35490f6f66e915b4a5ee89a6de624b84dc40708ca71cf3a86d9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/mixture-moves.0e285d25923c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/mixture-moves.0e285d25923c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/mixture-moves.0e285d25923c.generation.json",
+      "plannedRequestSha256": "5f55be5971642e6dae7493a98a3e25b14a908ffac9c1950d88b618125d2e8713"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here are two lines. First: change T, change K. Change anything else, K stays. Second, to find the direction, treat heat like a chemical on one side of the equation, but only for the direction. If the reaction takes in heat, heat is on the left, so heating pushes the mixture right and K goes up. If it gives out heat, heat is on the right, so K goes down. Unlike a real reactant, heat speeds the two reactions up by different amounts, which is why K moves.",
+      "hash": "0de49af71698",
+      "textSha256": "0de49af716988dbeded9e9bc3af5bb7ae78360bf1295d4fd623ccecdfc102390",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/memory-aid.0de49af71698.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/memory-aid.0de49af71698.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/memory-aid.0de49af71698.generation.json",
+      "plannedRequestSha256": "f949158254fe808a84470f50687fe1cda33a2ccd6401762e2f3c13531c742516"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Hydrogen and iodine make hydrogen iodide in a sealed tube, H two plus I two making two H I. The forward reaction gives out about 10 kilojoules for each mole of hydrogen used. At about 450 degrees Celsius, K is 49. The tube is heated to 500 degrees and left to settle. Is K now above 49, equal to 49, or below 49? Give a short reason. Pause here to answer.",
+      "hash": "473910ed83ea",
+      "textSha256": "473910ed83ea241c0829de22d764aae52aeb42dc379b607dadf8f584695ce32b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/attempt.473910ed83ea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/attempt.473910ed83ea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/attempt.473910ed83ea.generation.json",
+      "plannedRequestSha256": "c3bce4bd33bb7aa6f8f8307b58af2703171f8a336d40db6abdc4447d1f57b7e4"
+    },
+    {
+      "id": "feedback-heating",
+      "parentSceneId": "feedback-heating",
+      "text": "The forward reaction gives out heat, so the reverse reaction is the one that takes in heat. Heating speeds up the reverse reaction more than the forward one, so the settled tube ends with a little less hydrogen iodide, and K falls: it is below 49. It falls only slightly, because the heat involved is small. The N two O four reaction takes in much more heat, and its K grew about eighty times. If you said K rises because everything is faster, remember that both speed up, and it is which one speeds up more that decides. If you said equal, remember that K stays fixed only while the temperature stays fixed.",
+      "hash": "6d55177ff569",
+      "textSha256": "6d55177ff56978f8a01ad75cb4cac81ae612a711172c04e1474462e930c46dff",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/feedback-heating.6d55177ff569.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/feedback-heating.6d55177ff569.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/feedback-heating.6d55177ff569.generation.json",
+      "plannedRequestSha256": "3eea177407306a42fabdea16a085814d088cdcaf94a3dae54b26c1815f6af048"
+    },
+    {
+      "id": "feedback-extra-check",
+      "parentSceneId": "feedback-extra-check",
+      "text": "Now the first line of the aid, as an extra check. Back at about 450 degrees, if we added more hydrogen instead, K would stay at 49, because adding hydrogen changes the amounts, not the temperature. What changes is Q: more hydrogen in the reactants makes Q smaller, so Q falls below K, and the mixture shifts right to use some of the extra hydrogen. If you think K changed because the mixture shifted, separate the two: a shift means Q moved toward K. K itself did not move.",
+      "hash": "c7d15842e273",
+      "textSha256": "c7d15842e2732c04d6da555b65bad5d6567a4b1589622187c5bc56f2343b7261",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/feedback-extra-check.c7d15842e273.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/feedback-extra-check.c7d15842e273.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/feedback-extra-check.c7d15842e273.generation.json",
+      "plannedRequestSha256": "e05e84319128824d719c5615bbdb0b4844268e1265a19b03eadb1a820b55e37b"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question changes the temperature, ask: does the forward reaction take in heat or give it out? Then use the rule you just saw. You can run the rule backwards too: if a table shows K rising as the temperature rises, the forward reaction takes in heat. Next: how a colour reading can give you a real K.",
+      "hash": "e047f517ab9d",
+      "textSha256": "e047f517ab9d872b347d67368f9c6aaa61f49c85e2b59997a4dace2a504525cc",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/decision-rule.e047f517ab9d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/decision-rule.e047f517ab9d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/decision-rule.e047f517ab9d.generation.json",
+      "plannedRequestSha256": "469b726156b4af96495c02028275b2c87f3a0781e46a15b981f0129a06126fb8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C9-claude-2026-10-15-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

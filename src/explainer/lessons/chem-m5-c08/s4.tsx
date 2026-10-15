@@ -82,13 +82,13 @@ export const SceneEquals: React.FC = () => {
 
 // ---------- 9a. A disturbance changes Q, not K: adding hydrogen ----------
 const D = 'disturbance';
-const KD = cues(sc(D), {dist: 'disturbance videos', settled: 'settled tube', v10: ['0.10', 1], v70: '0.70', qis: 'where Q is forty-nine', same: 'same sealed tube', add: 'add 0.20', per: 'moles per litre of hydrogen', h30: '0.30', bottom: 'bottom of Q gets bigger', drops: 'Q drops', v049: '0.49', v030: '0.030', s16: 'about sixteen', below: 'below K', fo: 'Forward over reverse', n16: 'forty-nine over sixteen', three: 'about three', wins: 'forward reaction wins', uses: 'uses up some of the extra', right: 'shifts right'});
+const KD = cues(sc(D), {dist: 'disturbance videos', settled: 'settled tube', v10: ['0.10', 1], v70: '0.70', qis: 'where Q is forty-nine', same: 'same sealed tube', add: 'add 0.20', per: 'moles per litre of hydrogen', h30: '0.30', bottom: 'bottom of Q gets bigger', drops: 'Q drops', v049: '0.49', v030: '0.030', s16: 'about sixteen', below: 'below K', little: 'too little product', wins: 'forward reaction wins', uses: 'uses up some of the extra', right: 'shifts right'});
 const LN49 = Math.log(49), LN16 = Math.log(0.49 / 0.03), LN24 = Math.log(24.4);
 export const SceneDisturbance: React.FC = () => {
 	const f = useCurrentFrame();
 	const q = (ff: number) => Math.exp(kf(ff, [[KD.drops, LN49], [KD.drops + 26, LN16], [KD.right, LN16], [KD.right + 60, LN24]]));
 	const counts = (ff: number) => [2 + Math.max(0, Math.min(4, Math.floor((ff - (KD.add + 6)) / 9) + 1)), 2, 14];
-	const fwdU = (ff: number) => kf(ff, [[KD.fo, 5], [KD.fo + 30, 15]]);
+	const fwdU = (ff: number) => kf(ff, [[KD.little, 5], [KD.little + 30, 15]]);
 	const lab = (ff: number) => (ff < KD.drops ? 'Q = 49' : `Q = ${q(ff).toFixed(1)}`);
 	return (
 		<>
@@ -112,18 +112,20 @@ export const SceneDisturbance: React.FC = () => {
 				<KMarker k={49} at={-100} label="K = 49" ring={KD.drops + 40} ringOut={KD.drops + 110} />
 				<QMarker at={-100} value={q} label={lab} side="left" />
 				<QKGap at={KD.drops + 20} qx={ff => lx(q(ff))} kx={XK} sign="<" signAt={KD.below} />
-				<Fade at={-100} out={KD.fo - 6}>
+				<Fade at={-100} out={KD.little - 6}>
 					<Bars8 fwd={5} rev={5} scale={12} at={-100} eqAt={-100} />
 				</Fade>
-				<Bars8 fwd={fwdU(f)} rev={5} scale={12} at={KD.fo - 6} />
+				<Bars8 fwd={fwdU(f)} rev={5} scale={12} at={KD.little - 6} />
+				<Fade at={KD.little + 16}>
+					<Sx x={BARS8.x0 + BARS8.bw / 2} y={BARS8.base - fwdU(f) * 12 - 22} text="forward faster" size={44} color={BLUE} anchor="middle" hand at={KD.little + 16} />
+				</Fade>
 				<Fade at={KD.bottom}>
 					<Ring cx={1250} cy={666} rx={150} ry={36} at={KD.bottom + 6} out={KD.v049} color={AMBER_INK} seed={5} width={5} />
 				</Fade>
 				<Sx x={1130} y={676} text="Q = 0.70^{2} ÷ (0.30 × 0.10)" size={40} at={KD.bottom} />
 				<Sx x={1130} y={742} text="= 0.49 ÷ 0.030" size={44} at={KD.v049} />
 				<Sx x={1450} y={742} text="= 16.3" size={50} color={TEAL} at={KD.s16} />
-				<Sx x={1130} y={810} text="49 ÷ 16.3 = 3.0" size={52} color={TEAL} at={KD.n16} />
-				<Sx x={1130} y={866} text="forward about 3 times faster" size={42} color={BLUE} hand at={KD.three} />
+				<Sx x={1130} y={830} text="too little product for this temperature" size={42} color={AMBER_INK} hand at={KD.little} />
 				<Fade at={KD.right}>
 					<Arrow x1={1130} y1={920} x2={1420} y2={920} at={KD.right} color={BLUE} width={8} />
 					<Sx x={1450} y={934} text="shifts right" size={50} color={BLUE} hand at={KD.right + 6} />

@@ -26,7 +26,7 @@ export const SceneCatEq: React.FC = () => {
 				<Fade at={KE.add} out={KE.makes}><SvgText x={450} y={236} text="metal catalyst" size={42} color={METAL_DARK} at={KE.add} /></Fade>
 				<Ring cx={366} cy={372} rx={70} ry={50} at={KE.makes + 24} out={KE.makes + 80} color={METAL_DARK} seed={4} />
 				{/* two panels */}
-				<GraphAxes g={G1} at={KE.settled} xTicks={[]} xLabel="" yLabel="amount (units)" yTicks={[0, 5, 10, 15]} />
+				<GraphAxes g={G1} at={KE.settled} xTicks={[]} xLabel="" yLabel="concentration (units)" yTicks={[0, 5, 10, 15]} />
 				<GraphAxes g={G2} at={KE.fifth - 20} yLabel="" xTicks={[0, 2, 4, 6]} yTicks={[0, 1, 2]} />
 				<Curve g={G1} fn={() => 14} upTo={clock} color="#3d424a" width={8} />
 				<Curve g={G1} fn={() => 2} upTo={clock} color="#9aa0a6" width={12} />
@@ -35,10 +35,11 @@ export const SceneCatEq: React.FC = () => {
 				<Curve g={G2} fn={rate} upTo={clock} color={AMBER} width={5} />
 				<Fade at={KE.steady}>
 					<SvgText x={G1.px(6) - 6} y={G1.py(14) - 14} text="HI 14" size={40} color={HI_INK} anchor="end" at={KE.steady} />
-					<SvgText x={G1.px(6) - 6} y={G1.py(2) - 18} text="H_2 and I_2: 2 each" size={40} color={I2_INK} anchor="end" at={KE.steady} />
+					<SvgText x={G1.px(6) - 6} y={G1.py(2) - 28} text="H_2 and I_2: 2 each" size={40} color={I2_INK} anchor="end" at={KE.steady} />
 				</Fade>
 				<Fade at={KE.fifth}>
-					<SvgText x={G2.x + 22} y={G2.y + 34} text="rate (units per tick)" size={28} color={INK_SOFT} hand={false} weight={600} at={KE.fifth} />
+					{/* upright beside the axis, clear of the dashed "catalyst added" line */}
+						<text x={G2.x - 62} y={G2.y + G2.h / 2} textAnchor="middle" transform={`rotate(-90 ${G2.x - 62} ${G2.y + G2.h / 2})`} fill={INK_SOFT} style={{fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 28}}>rate (units per tick)</text>
 					<SvgText x={G2.px(0) + 14} y={G2.py(0.2) - 20} text="0.2" size={44} color={FWD} at={KE.fifth} />
 				</Fade>
 				<Fade at={KE.two}>
@@ -56,7 +57,7 @@ export const SceneCatEq: React.FC = () => {
 				<Fade at={KE.resp}>
 					<path d={`M${G2.px(2.4)},${G2.y - 40} L${G2.px(2.4)},${G2.y - 52} L${G2.px(5.9)},${G2.y - 52} L${G2.px(5.9)},${G2.y - 40}`} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
 					<SvgText x={G2.px(2.4)} y={G2.y - 66} text="the response: none" size={42} color={INK_SOFT} at={KE.resp} />
-					<Mark x={G2.px(4.1)} y={G2.y - 52} at={KE.resp + 10} kind="cross" size={30} />
+					<Mark x={G2.px(5.3)} y={G2.y - 52} at={KE.resp + 10} kind="cross" size={30} />
 				</Fade>
 				<Fade at={KE.ahead}><SvgText x={G2.px(3.4)} y={G2.py(0.95)} text="neither rate pulls ahead" size={34} anchor="middle" color={INK} hand={false} weight={600} at={KE.ahead} /></Fade>
 			</Overlay>

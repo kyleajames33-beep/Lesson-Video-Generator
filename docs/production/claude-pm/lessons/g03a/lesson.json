@@ -1,0 +1,96 @@
+{
+  "title": "Every type of HSC equilibrium calculation, part 1: find K and compare Q",
+  "subtitle": "A calculation gives you some concentrations or amounts. How do you know whether to find K, build an ICE table, or work out Q?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 12,
+  "lessonIntent": "Choose the method from what is given and what is asked, find K from settled amounts and from a start plus one settled value with an ICE table, decide a direction from Q against K with a solid present, and explain why the same numbers give K only for a mixture at equilibrium.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Almost every equilibrium calculation is one of five types, and what you are given, and what you are asked, tells you which. This video takes the three where you find K, or compare with it. Settled amounts, and you want K. A start plus one settled value. A mixture and a K, asking which way it goes. The other two find amounts, and they are in part two."
+      }
+    },
+    {
+      "id": "direct-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Type one: settled amounts. A two litre vessel holds 0.300 moles of sulfur dioxide, 0.150 of oxygen and 0.600 of sulfur trioxide. K uses concentrations, so divide by two first: 0.150, 0.0750 and 0.300 moles per litre. Write the expression with the coefficients as powers, not multipliers, and K is 0.300 squared, over the product of 0.150 squared and 0.0750, which is 53.3. Use moles and you get 26.7, which is wrong."
+      }
+    },
+    {
+      "id": "ice-one-value",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Type two: a start and one settled value. Put 0.400 moles of sulfur dioxide and 0.300 of oxygen in another two litre vessel, at a different temperature, and at equilibrium sulfur trioxide is 0.160 moles per litre. The start is 0.200 and 0.150 moles per litre. The measured 0.160 goes in the equilibrium row first, so sulfur trioxide's change is plus 0.160. Then the coefficients: sulfur dioxide falls 0.160 and oxygen falls half of that. The equilibrium row is 0.0400 and 0.0700, and only that row goes into K, giving 229."
+      }
+    },
+    {
+      "id": "q-vs-k-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Type four: a mixture and a K, asked for a direction. Carbon, a solid in excess, sits with carbon dioxide and carbon monoxide. K is 1.90, carbon dioxide is 0.500 moles per litre and carbon monoxide is 0.800. Work out Q for this mixture. Which way will it run? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q-vs-k-answer",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Leave the solid out. Q is 0.800 squared over 0.500, which is 1.28, below K. That is too little product, so the forward reaction wins and carbon monoxide builds up. Q chases K: below it, Q climbs. If carbon monoxide were 1.50 moles per litre, Q would be 4.50, above K, and it would run back."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A new vessel is at the same temperature as the ICE table question, where K is 229. It holds 0.150 moles per litre of sulfur dioxide, 0.0750 of oxygen and 0.300 of sulfur trioxide: the same concentrations as the first vessel. Which way will it run? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Same concentrations as the first vessel, so the same working gives 53.3. But nothing says this mixture has settled, so 53.3 is Q, not K. Q is below K, which is 229, so there is too little product. The forward reaction wins, and more sulfur trioxide forms. The slip is calling 53.3 the new K. You only calculate K from a mixture at equilibrium."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So read what you are given and what you are asked. Settled amounts: divide by the volume, find K. A start and one value: ICE table, with the measured value in the equilibrium row first. A mixture and a K, for a direction: work out Q and compare. Next: K and a start, and an amount added."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

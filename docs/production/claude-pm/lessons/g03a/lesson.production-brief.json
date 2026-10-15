@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/g03a/lesson.json",
+    "lessonSha256": "fb9b6618033f87c91a493e896ff74f624f39cf2dae1755eef10596cea81a6a4f"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C8 (including C6a and C6b) and Year 11: K expressions with powers and without solids and water (C5); the three calculation types and ICE tables with the measured value in the Equilibrium row first (C6a); Q and the Q against K rule (C8); mole ratios, c = n / V and powers.",
+    "startsWith": "What a calculation question gives and what it asks, and how that decides the method.",
+    "stopsAfter": "Finding K from settled amounts; finding K from a start plus one settled value with an ICE table; deciding a direction from Q against K with a solid present; saying why the same numbers are K only for an equilibrium mixture. No x, shortcuts or amount added (G03b).",
+    "nextLesson": "G03b: every type of HSC equilibrium calculation, part 2: find concentrations and the amount added."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-g03a.md"
+  ],
+  "teaching": {
+    "task": "Pick the method for an unseen equilibrium calculation that gives concentrations or amounts, find K or compare Q with K, and avoid the classic slip for that type.",
+    "causalExplanation": "What a question gives and what it asks decide the method. K is a ratio of concentrations, so amounts in a vessel are divided by its volume first, and coefficients are powers. The measured value goes in the Equilibrium row, its change is equilibrium minus initial and the coefficients set the other changes; only equilibrium values go into K. Q has the form of K with the current concentrations, and Q below K means too little product, so the forward reaction wins. The same ratio is K only when the mixture is at equilibrium; for any other mixture it is Q, compared with K.",
+    "conversationalApproach": "Opens with the five-card board and lights the three types of part one, takes types one, two and four in short segments with one example and one named slip each, including a pause-and-answer on direction with a solid, then tests the K or Q decision on the first vessel numbers at another temperature, and closes with the decision board and a handoff to part two.",
+    "openingDecision": "A calculation gives you some concentrations or amounts. Do you find K, build an ICE table, or work out Q?",
+    "understandingCheck": "For 2SO2 + O2 = 2SO3 with K = 229 at this temperature, a vessel holds [SO2] = 0.150, [O2] = 0.0750 and [SO3] = 0.300 mol/L: which way will it run?",
+    "curriculumScope": "Calculate equilibrium constants from supplied data and use the reaction quotient to predict direction (Module 5). Every question is written for HSCScience and is not presented as an official question. Concentrations from K, amount-added problems (G03b), marks allocation, temperature dependence of K, Ksp and acid calculations are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the C6a type cards extended to five with lit and dim states, the C6 ICE table with the equilibrium-row-first pen arrow and E minus I bracket, the C5 expression builder, the C8 log number line and small coded vessel vignettes. Colour key as C2 to C8: forward blue, reverse amber, equal teal, made plus green, used up minus red.",
+    "transitionPlan": "The five-card board sets the lesson and returns at the end; each type gets a fresh board in the same three zones; the scene 2 concentrations stay as a small thumbnail and the scene 3 K as a teal card for the attempt; the log number line returns for Q; the feedback rebuilds the scene 2 line and relabels it; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook-board",
+      "visualDecision": "adjust",
+      "visualReference": "The five-card type board with a one-line given and asked on each, a ghost question card, cards 1, 2 and 4 lit and cards 3 and 5 dimmed with a part two tag",
+      "teachingReason": "Poses the main question for part one: what the question gives and asks decides whether to find K, build an ICE table or work out Q",
+      "narrationCue": "five types / given / asked / Settled amounts / one / mixture / amounts",
+      "motionPurpose": "The five cards build as a column, the words given and asked get pen rings on a ghost question card, cards 1, 2 and 4 light on their cues and cards 3 and 5 dim",
+      "motionRole": "explain",
+      "onScreenChange": "The heading \"What you are given and asked decides the method\" writes on; five cards build in a column; \"given\" and \"asked\" are pen ringed on the ghost question card; cards 1, 2 and 4 light on \"Settled amounts\", \"one\" and \"mixture\"; on \"amounts\" cards 3 and 5 dim with the tag \"part two\"; the tag \"HSC-style questions, written for HSCScience\" shows",
+      "motionTools": [
+        "card slide-in",
+        "ScribbleCircle",
+        "card light",
+        "card dim",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "direct-k",
+      "visualDecision": "adjust",
+      "visualReference": "Task and equation strip with a givens card of moles, a mol/L column the amounts divide into, the C5 builder, a moles-only crossed chip and a silent CaCO3 card",
+      "teachingReason": "Practises type one and the classic trap of using moles in K",
+      "narrationCue": "two litre / divide by two first / powers / 53.3 / 26.7",
+      "motionPurpose": "The amounts divide by 2.00 and fly to a mol/L column, the builder writes the expression with the powers flying up, the working writes to 53.3 and a moles-only chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The givens card shows \"vessel: 2.00 L\" and the three amounts; on \"divide by two first\" each amount divides by 2.00 and flies into a mol/L column (0.150, 0.0750, 0.300); the builder writes K = [SO3]^2 / ([SO2]^2 [O2]) with the 2s flying up and a crossed ghost \"2 x [SO2]\" captioned \"power, not multiplier\"; \"0.300^2 = 0.0900\", \"0.150^2 x 0.0750 = 0.0016875\" and \"K = 53.3\" write in beats; the chip \"moles used: 26.7\" is crossed with \"K needs mol/L\"; a silent CaCO3 card shows two greyed solids",
+      "motionTools": [
+        "NumberTicker division",
+        "expression builder",
+        "coefficient fly-in",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "ice-one-value",
+      "visualDecision": "adjust",
+      "visualReference": "The C6 ICE table with SO2, O2 and SO3 columns, the equilibrium-row-first pen arrow and E minus I bracket, coefficient chips, the C5 builder and three silent crossed slip chips",
+      "teachingReason": "Practises type two with the measured value in the equilibrium row first, in a case with a 2 : 1 ratio",
+      "narrationCue": "one settled value / another two litre vessel / different temperature / 0.160 moles per litre / equilibrium row / plus 0.160 / falls / half / only / 229",
+      "motionPurpose": "The table fills in the taught order, the pen arrow and bracket give the measured change, the coefficient chips fly in and only the equilibrium values drop into K",
+      "motionRole": "explain",
+      "onScreenChange": "The givens card and the tag \"a different temperature from the last question, so a different K\" appear; the Initial row ticks 0.200, 0.150, 0; the pen arrow puts 0.160 into the SO3 Equilibrium cell and the \"E - I\" bracket gives \"+0.160\"; SO2 ticks \"-0.160\" with chip \"2 : 2\"; O2 ticks \"-0.0800\" with chip \"1 : 2\" and a \"divide by 2\" arrow; the Equilibrium row completes 0.0400 and 0.0700; the builder writes K with the tag \"equilibrium values only\" and \"K = 0.0256 / 0.000112 = 229\"; three silent crossed chips carry the slips",
+      "motionTools": [
+        "table cell tick",
+        "DrawPath arrow",
+        "bracket draw",
+        "coefficient fly-in",
+        "expression builder",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "q-vs-k-question",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh board with a sealed vessel holding a carbon lump, the C(s) + CO2 = 2CO strip, the givens card, the five-card strip with card 4 lit and the C8 log line with K only and an empty Q slot",
+      "teachingReason": "Poses a type four question with a solid in the way and every given visible, with no answer cues",
+      "narrationCue": "mixture and a K / direction / 1.90 / Work out Q / Which way will it run / Pause here to answer",
+      "motionPurpose": "The board builds as each given is named, the type strip flashes with card 4 lit, the number line shows only K and an empty Q slot, and the countdown ring runs",
+      "motionRole": "explain",
+      "onScreenChange": "The task \"Which way will it run?\", the equation and the givens card appear; the small vessel with a carbon lump shows; the five-card strip flashes once with card 4 lit and cards 3 and 5 dim; the log line shows a teal K marker at 1.90 and an empty slot \"Q?\" with two empty rate bars; the countdown ring starts after the narration; nothing is greyed or answered",
+      "motionTools": [
+        "Countdown ring",
+        "card flash",
+        "board build",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q-vs-k-answer",
+      "visualDecision": "adjust",
+      "visualReference": "The solid greying in the equation strip, the C5 builder writing Q, the C8 log line with the Q marker landing left of K, a forward arrow and CO dots rising, then a second marker right of K",
+      "teachingReason": "Answers the direction question, gives the solid-leaves-out reason and recalls Q chases K once",
+      "narrationCue": "Leave the solid out / 1.28 / below K / forward / Q chases K / 1.50 moles per litre / back",
+      "motionPurpose": "The carbon greys out, Q builds and lands at 1.28 left of K, the forward arrow lights and the CO dots rise, then a second marker lands at 4.50 and the reverse arrow lights",
+      "motionRole": "explain",
+      "onScreenChange": "The solid carbon greys; the builder writes Q = [CO]^2 / [CO2] and \"0.800^2 = 0.640\", \"0.640 / 0.500 = 1.28\"; the Q marker lands left of the K marker; a \"<\" writes, the forward arrow lights blue and the CO dots rise; \"Q chases K\" writes with a pen arrow from Q to K; on \"1.50\" a second marker lands at 4.50 right of K, the sign turns to \">\" and the reverse arrow lights amber; unspoken crossed chips \"left: rule flipped\" and \"carbon in Q\"",
+      "motionTools": [
+        "expression builder",
+        "marker drop",
+        "arrow light",
+        "particle drift",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "A fresh board with the 2SO2 + O2 = 2SO3 strip, the teal K = 229 card from the ICE table question sliding into the givens card, three current concentrations, a small vessel 1 thumbnail and the C8 log line with K only",
+      "teachingReason": "Unseen transfer on the decision this video is about: the same numbers as a type one question, but asked for a direction at another temperature, so they give Q",
+      "narrationCue": "Your turn / 229 / first / Which way will it run / Pause here to answer",
+      "motionPurpose": "The teal K card slides into the givens, the vessel 1 thumbnail pulses on first, the log line shows only K and an empty Q slot, and the countdown ring runs through the answer-free hold",
+      "motionRole": "explain",
+      "onScreenChange": "Task \"Which way will it run?\"; the teal card \"K = 229\" slides into the givens card with \"same temperature as the ICE table question\" and \"now: [SO2] = 0.150, [O2] = 0.0750, [SO3] = 0.300 mol/L\"; on \"first\" the vessel 1 thumbnail (mol/L column only) pulses; the log line shows K at 229 and an empty \"Q?\" slot; the countdown ring starts after the narration; no 53.3, no K or Q label, no arrows",
+      "motionTools": [
+        "card slide-in",
+        "thumbnail pulse",
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "new",
+      "visualReference": "The scene 2 working line returning with its K label crossed and rewritten as Q, the Q marker landing left of K on the log line, a forward arrow with SO3 dots rising, a bracket joining type cards 1 and 4 and a crossed chip",
+      "teachingReason": "Explains that the same ratio is K only for an equilibrium mixture, so here it is Q, and Q below K runs forward",
+      "narrationCue": "53.3 / Q, not K / below K / forward / the new K / at equilibrium",
+      "motionPurpose": "The working returns, K is crossed and rewritten as Q, the Q marker lands left of K, the forward arrow lights, cards 1 and 4 are bracketed and the slip chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"53.3\" the line \"0.300^2 / (0.150^2 x 0.0750) = 53.3\" returns headed \"K =\"; on \"Q, not K\" the K is crossed and rewritten \"Q\" with \"not said to be at equilibrium\"; the Q marker lands at 53.3 left of K at 229 and \"<\" writes on \"below K\"; on \"forward\" the forward arrow lights blue and SO3 dots rise; a bracket joins cards 1 and 4 \"same numbers: at equilibrium, K; any mixture, Q\"; on \"the new K\" the chip \"K = 53.3 at this temperature\" is crossed; on \"at equilibrium\" the tag \"K: only from an equilibrium mixture\" writes; aid chip \"Q chases K\"",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "marker drop",
+        "arrow light",
+        "particle drift",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "The five-card board returning with cards 1, 2 and 4 gaining their method lines and slips, cards 3 and 5 dim, and a next chip",
+      "teachingReason": "Packs part one into one decision order and hands off to part two",
+      "narrationCue": "given / asked / divide by the volume / equilibrium row first / work out Q / Next",
+      "motionPurpose": "Cards 1, 2 and 4 gain their method lines and slips as the narration reaches them, and the next chip slides in as cards 3 and 5 light briefly",
+      "motionRole": "explain",
+      "onScreenChange": "The board returns; card 1 gains \"divide by V; powers, not multipliers\" with the slip \"moles in K\"; card 2 gains \"ICE table; measured value into E first\" with its slip; card 4 gains \"Q, same form as K; compare\" with the slip \"solid in Q, rule flipped, Q called K\"; cards 3 and 5 stay dim with \"part two\"; on \"Next\" the chip \"Next: K and a start, and an amount added\" appears and cards 3 and 5 light briefly",
+      "motionTools": [
+        "card slide-in",
+        "HandText write-on",
+        "chip slide-in",
+        "card light"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Key notes card with the memory aids in large writing and their condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 45 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Claude designer self-review of the G03 split (owner-requested quick review; reused scenes keep the G03 Revision 5 independent review); independent review of the exact voiced preview pending",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g03a-learning-review.md",
+      "sha256": "806759705847c4ae5d1c418f8618938d7bd66dcdce7f6edc7d0fc598d993b6d5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g03a-claude-science-check.md",
+      "sha256": "8fee64620786135606a3ad536e642273ac9ca52e1ed9a080d267f633b6227fa0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

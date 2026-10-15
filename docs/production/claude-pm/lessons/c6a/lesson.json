@@ -1,0 +1,156 @@
+{
+  "title": "Calculating K: the three question types, and ICE tables",
+  "subtitle": "When a question asks you to calculate K, how do you tell which type it is, and how do you fill an ICE table from a start and one measured value?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 8,
+  "lessonIntent": "Tell the three types of K calculation apart by what the question gives, find K by direct substitution (type one) and from a start plus one measured equilibrium value with an ICE table built measured value first (type two), and state how K changes when the equation is reversed or its coefficients are multiplied.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook-types",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You can write K for any equation. Now we put numbers in. Almost every question that asks you to calculate with K is one of three types, and what the question gives you tells you which. Type one gives you every concentration at equilibrium, so you substitute straight into K. Type two gives you the start and just one value at equilibrium, so you need a table to find the rest first. Type three gives you K and the start, and asks for the concentrations at equilibrium. We'll take them easiest first: types one and two in this video, and type three in the next."
+      }
+    },
+    {
+      "id": "type-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Type one is the quick one. Here is the hot hydrogen and iodine tube from earlier, settled. Each dot is 0.05 moles per litre, so it holds 0.10 moles per litre of hydrogen, 0.10 of iodine and 0.70 of hydrogen iodide. Write the expression first: hydrogen iodide squared, because its coefficient is two, over hydrogen times iodine. Then substitute: 0.70 squared is 0.49, and 0.10 times 0.10 is 0.010, so K is 0.49 over 0.010, which is 49. If a type one question gives moles in a vessel, divide by the volume first, because K uses concentrations."
+      }
+    },
+    {
+      "id": "reverse-equation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "K belongs to the equation as it is written. Take the same settled tube, 0.10, 0.10 and 0.70, and write the equation backwards: two H I making hydrogen plus iodine. K is now hydrogen times iodine over H I squared: 0.10 times 0.10, over 0.70 squared, is 0.010 over 0.49, about 0.020, and that is one over 49. Flip the equation, flip K. Double every coefficient and every power doubles, so K is squared: 49 squared is 2401."
+      }
+    },
+    {
+      "id": "type-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now type two, where the question gives you the start and just one value at equilibrium, and you have to find K."
+      }
+    },
+    {
+      "id": "one-value",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Back to the P C L five flask from earlier. Suppose we seal 0.40 moles of P C L five into a 2.0 litre flask and heat it, and this time we measure just one thing. Chlorine is yellow-green, so its colour tells us how much is there, and at equilibrium it reads 0.080 moles per litre. Can we work out the other two concentrations from it, and then the equilibrium constant?"
+      }
+    },
+    {
+      "id": "ice-initial",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To keep track of every concentration, we use an I C E table: I for initial, C for change, and E for equilibrium. It has a column for each substance and a row for each of those three stages. We fill the initial row first. K uses concentrations, not moles, so divide: 0.40 moles over 2.0 litres is 0.20 moles per litre of P C L five, and the two products start at zero."
+      }
+    },
+    {
+      "id": "equilibrium-first",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Next, the one value we measured. Chlorine is 0.080 moles per litre at equilibrium, so it goes straight into the equilibrium row, under chlorine. Now the table gives us its change. Change is equilibrium minus initial, because the change is how far it moved from the start: 0.080 minus zero is plus 0.080. That is always the first move in a type two question: the measured value goes in the equilibrium row, then subtract to find its change."
+      }
+    },
+    {
+      "id": "change-row",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "How much did the others change? Each P C L five that splits makes one P C L three and one chlorine. So P C L three also rises by 0.080, and P C L five falls by 0.080, because one is used up for every chlorine made. The change row follows the coefficients in the equation. A substance used up gets a minus sign and a substance made gets a plus."
+      }
+    },
+    {
+      "id": "equilibrium-row",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now complete the equilibrium row. Each box is the initial value plus the change. P C L five: 0.20 plus the change, minus 0.080, is 0.12. P C L three: zero plus 0.080 is 0.080. Chlorine is already filled in, and it agrees: zero plus 0.080 is 0.080."
+      }
+    },
+    {
+      "id": "find-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now K. Products over reactants, with every coefficient one: K equals P C L three times chlorine, over P C L five. Substitute the equilibrium values: 0.080 times 0.080, over 0.12. The top is 0.0064, and 0.0064 divided by 0.12 is 0.0533, so K is 0.053 to two significant figures. Check the subtraction: 0.12 plus 0.080 is 0.20, what we started with."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two habits make type two work. First, the measured value goes in the equilibrium row, and its change comes from the table. Second, only the change row follows the coefficients: minus 0.080, plus 0.080 and plus 0.080 are one to one to one. The equilibrium row does not have to be in that ratio: 0.12, 0.080 and 0.080 are not."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Dinitrogen tetroxide, N two O four, splits into nitrogen dioxide, N O two. We seal 0.100 moles of N two O four, and nothing else, in a 2.00 litre vessel at a steady temperature, and at equilibrium the concentration of N O two is 0.0300 moles per litre. One: find K for N two O four making two N O two. Two: what is K for the equation written the other way, two N O two making N two O four, at the same temperature? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One. Start with concentrations: 0.100 moles over 2.00 litres is 0.0500 moles per litre of N two O four, and N O two starts at zero. The measured 0.0300 goes in the equilibrium row first, under N O two, so its change is 0.0300 minus zero, plus 0.0300. The equation makes two N O two for each N two O four, so N two O four fell by half of that, 0.0150. Equilibrium N two O four is 0.0500 minus 0.0150, 0.0350. K is N O two squared over N two O four: 0.0300 squared is 0.000900, over 0.0350, gives 0.0257."
+      }
+    },
+    {
+      "id": "feedback-slips",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If you got about 0.018, you used the starting 0.0500 instead of the equilibrium 0.0350. If you got 0.045, you took off the whole 0.0300 instead of half of it. And if you got about 0.86, you forgot to square the N O two."
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two. Written backwards, K is the old value flipped, so it is one over 0.0257, which is 38.9. The expression is N two O four over N O two squared. If you wrote 0.0257 again, check the direction of the equation: the products are now the N two O four."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, for type one, every equilibrium concentration is given: write the expression and substitute. For type two, you get the start and one equilibrium value. Put the start in the initial row and the measured value in the equilibrium row, subtract to get its change, use the coefficients for the other changes, then complete the equilibrium row and substitute. If the equation is written backwards, flip K. Next: type three, where you know K and have to find the concentrations."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -203,3 +203,7 @@ No blockers. Nine should-fix items, all script-lock edits.
 ### Verdict
 
 **Pass after listed fixes.** No blocker remains. Of the nine first-review items, seven are resolved and two (4 and 5) are partly resolved; the revision improved the logic (evidence first, one vocabulary, a single-demand attempt). Apply new items 1 to 9 in the script lock (priority 1, 2, 3, 9, then 4, 5, 6, 7, 8), plus the scene 6 trim from partly resolved item 4. Then re-review the voiced preview for scenes 2, 4a, 4b, 5a, 5b, 7b, 10a, 10b and 11. Human listening pending.
+
+## Re-review (Revision 4, 15 Oct)
+
+See `c9-rev4-learning-review.md` (rate model removed; 2 blockers and 3 should-fix items, all resolved in Revision 5 of the design).

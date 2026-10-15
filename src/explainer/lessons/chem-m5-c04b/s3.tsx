@@ -2,9 +2,8 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER_INK, FONT_DISPLAY, FONT_HAND, HandText, INK, INK_SOFT, PAPER_DEEP, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Arrow, Curve, Fade, FWD, GasTube, GraphAxes, Head, Overlay, Pill, RateBars, Ring, Seesaw, StageTable, SvgText, TEAL, TubeKey, VLine, WrongChip, mkG, pillW} from './parts';
+import {Arrow, Curve, Fade, FWD, GasTube, GraphAxes, Head, Overlay, Pill, RateBars, Ring, Seesaw, StageTable, Strip, SvgText, TEAL, TubeKey, VLine, WrongChip, mkG, pillW} from './parts';
 import type {TRow} from './parts';
-import {ColourStrip} from '../chem-m5-c03/parts';
 import {HI_INK, I2C, I2_DEEP, I2_INK, METAL_DARK, Heading, kf, modelA, modelB, sc, tubeColour} from './common';
 
 const GG = mkG(900, 304, 900, 356, 16, 15);
@@ -66,7 +65,7 @@ export const SceneTubeA: React.FC = () => {
 				<Fade at={KA.nineH}><Pill x={96} y={178} w={pillW('made-up numbers to show the pattern', 34) + 10} text="made-up numbers to show the pattern" at={KA.nineH} color={INK_SOFT} size={34} h={58} /></Fade>
 				<GasTube x={96} y={262} w={620} h={140} counts={{h: s.h, i: s.i, hi: s.hi}} seed={5} reveal={reveal} />
 				<TubeKey x={110} y={478} at={KA.nineH - 20} />
-				<ColourStrip x={250} y={552} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - s.i) / 7)} at={KA.nineI} label="colour" />
+				<Strip x={250} y={552} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - s.i) / 7)} at={KA.nineI} label="colour" />
 				<Dial cx={790} cy={410} r={40} clock={dial} at={KA.rises - 20} />
 				{/* rate bars */}
 				<RateBars x0={140} base={840} scale={40} fwd={s.fwd} rev={s.rev} at={KA.fwdRate} fwdLabel={run ? s.fwd.toFixed(1) : 'about 4'} revLabel={run ? s.rev.toFixed(1) : '0'} eqAt={KA.nearly} subs={['makes HI', 'splits HI']} />
@@ -123,8 +122,8 @@ export const SceneTubeB: React.FC = () => {
 					<path d="M158,422 L158,458 L190,440 Z" fill={TEAL} />
 					<SvgText x={224} y={454} text="the same film at x10 speed" size={42} color={TEAL} at={KB.film} />
 				</Fade>
-				<ColourStrip x={250} y={782} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sa.i) / 7)} at={KB.any} label="A" />
-				<ColourStrip x={250} y={838} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sb.i) / 7)} at={KB.any} label="B" />
+				<Strip x={250} y={782} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sa.i) / 7)} at={KB.any} label="A" />
+				<Strip x={250} y={838} w={380} from={I2_DEEP} to={tubeColour(2)} t={Math.min(1, (9 - sb.i) / 7)} at={KB.any} label="B" />
 				<TubeKey x={110} y={752} at={KB.same} scale={false} />
 				<Dial cx={790} cy={420} r={40} clock={blueClock} at={KB.any - 10} />
 				{/* graph */}
@@ -207,7 +206,7 @@ export const SceneLimited: React.FC = () => {
 		<>
 			<Heading text="Product in a limited time" at={4} />
 			<Overlay>
-				<GraphAxes g={GL} at={4} yLabel="hydrogen iodide (units)" />
+				<GraphAxes g={GL} at={4} yLabel="concentration of HI (units)" />
 				<Curve g={GL} fn={t => modelA(t).hi} upTo={16} color={HI_LINE} width={5} />
 				<Curve g={GL} fn={t => modelB(t).hi} upTo={16} color={HI_LINE} width={11} />
 				<SvgText x={GL.px(6)} y={GL.py(14) - 22} text="tube B: catalyst" size={46} color={METAL_DARK} at={8} />

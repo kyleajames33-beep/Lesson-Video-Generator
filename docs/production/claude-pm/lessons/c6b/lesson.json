@@ -1,0 +1,176 @@
+{
+  "title": "Finding equilibrium concentrations from K, without the quadratic formula",
+  "subtitle": "If a question gives you K and the start, how do you find the equilibrium concentrations, and which shortcut gets you there without the quadratic formula?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 8,
+  "lessonIntent": "Set up type three with an unknown x and the change row from the coefficients, solve a perfect-square case with the positive root, solve a tiny-K case by dropping x with a stated condition and a 5 per cent check, and explain that HSC questions are written so you should not need the quadratic formula (it can be used): look for a perfect square or a tiny K.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the last video, the settled hydrogen iodide tube gave us K: 0.70 squared, over 0.10 times 0.10, is 49. That was type one, with every concentration given. This video is type three. The question gives you K and the starting concentrations, and nothing at equilibrium is measured. So there is no value to write in the equilibrium row, and the change has to be an unknown."
+      }
+    },
+    {
+      "id": "k-given",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the other way round. We know K and the start, and want the settled concentrations. This is the hot hydrogen and iodine tube from the catalyst and expressions videos, where K is 49. Each dot is 0.05 moles per litre, so the start is 0.45 moles per litre of hydrogen, 0.45 of iodine and no hydrogen iodide."
+      }
+    },
+    {
+      "id": "unknown-x",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "We don't know how much reacts, so call the amount of hydrogen used up x, in moles per litre. The equation, H two plus I two making two H I, gives the rest. For each hydrogen used, one iodine is used and two hydrogen iodide are made. So the change row is minus x, minus x and plus two x."
+      }
+    },
+    {
+      "id": "substitute",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The equilibrium row is initial plus change: 0.45 minus x for hydrogen and for iodine, and two x for hydrogen iodide. Substitute into K. Hydrogen iodide squared is two x all squared, over hydrogen times iodine, and both of those are 0.45 minus x, so the bottom is 0.45 minus x, all squared. That equals 49. The top is squared and the bottom is squared, so the whole fraction is squared: two x over 0.45 minus x, all squared, equals 49. Something squared equals a square number, a perfect square, and 49 is seven squared. So take the square root of both sides: two x over 0.45 minus x equals seven. Hydrogen iodide and hydrogen are both positive, so this ratio is positive and we keep plus seven."
+      }
+    },
+    {
+      "id": "solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now rearrange. Multiply both sides by 0.45 minus x: two x equals 7 times 0.45 minus x, which is 3.15 minus 7x. Add 7x to both sides, so nine x equals 3.15. Find x. Pause here and try it."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "x is 0.35. So hydrogen and iodine are each 0.45 minus 0.35, 0.10 moles per litre, and hydrogen iodide is two times 0.35, 0.70. Check by substituting back: 0.70 squared is 0.49, over 0.10 times 0.10, which is 0.010, gives 49. Why not minus seven? That would need x of 0.63, more than the 0.45 we started with, so hydrogen would be negative."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is the habit. Only the change row follows the coefficients: minus 0.35, minus 0.35 and plus 0.70 are in the ratio one, one, two. The initial and equilibrium rows do not have to be in that ratio: 0.10, 0.10 and 0.70 are not."
+      }
+    },
+    {
+      "id": "square-condition",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why did the square root work so neatly? Hydrogen and iodine started equal, so the bottom of the fraction was 0.45 minus x, times itself, a square, just like the top. K does not have to be a square number. If K were 50, the root would be about 7.07, and the method would still work. What it needs is a top and a bottom that are both squares, so the whole fraction is something squared. That is what a perfect square means from now on: the fraction, not the number K. Many questions are not built like that, and the most common other case is a tiny K."
+      }
+    },
+    {
+      "id": "tiny-k-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is iodine again, on its own and very hot. A few I two molecules split into iodine atoms: I two makes two I. K is tiny: take it as 1.6 times ten to the minus five, and we start with 0.25 moles per litre of I two and no atoms. Call the I two that splits x. Each I two makes two atoms, so the change row is minus x and plus two x, and the equilibrium row is 0.25 minus x and two x. So K is two x all squared, over 0.25 minus x."
+      }
+    },
+    {
+      "id": "tiny-k-drop",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The bottom is not a square, so the square root will not help. But look at the size of K. A tiny K means hardly any I two splits, so x is tiny next to 0.25. Taking a tiny amount from 0.25 still leaves about 0.25, so we drop the x from the bottom. Keep the x on top, because that is the answer we want. This shortcut needs two things: K very small, and a start that is not tiny."
+      }
+    },
+    {
+      "id": "tiny-k-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the equation is easy. Two x all squared is four x squared. Dividing by 0.25 is the same as multiplying by four, so the left side is sixteen x squared. That equals 1.6 times ten to the minus five, so divide both sides by sixteen: x squared is 1.0 times ten to the minus six, and x is 0.0010 moles per litre. The iodine atoms are two x, 0.0020 moles per litre, and the I two is still about 0.25."
+      }
+    },
+    {
+      "id": "tiny-k-check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now check that dropping x was fair. x is 0.0010, and 0.0010 out of 0.25 is 0.4 per cent. The usual rule of thumb is that x should be under about 5 per cent of the start, so the shortcut is safe. With a K this small and a normal start, it passes easily. Substitute back to be sure: 0.0020 squared is 4.0 times ten to the minus six, over 0.25, gives 1.6 times ten to the minus five."
+      }
+    },
+    {
+      "id": "no-quadratic",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Notice what we never needed: the quadratic formula. You can use it if you like, but HSC questions are written so you shouldn't need it. When K and a start give you an equation in x, look for one of two things. Is it a perfect square? Take the square root. Is K tiny, with a start that is not? Drop the x, then check it."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. In a very hot engine, nitrogen and oxygen make a little nitrogen monoxide: N two plus O two makes two N O. At this temperature K is 4.0 times ten to the minus four. The gases start at 0.50 moles per litre of nitrogen, 0.50 of oxygen, and no N O. Find the concentration of N O at equilibrium. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-square",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Nitrogen and oxygen each fall by x, and N O rises by two x, so K is two x all squared, over 0.50 minus x, all squared. You could use either shortcut here. The starts are equal, so it is a perfect square: take the square root, and two x over 0.50 minus x is 0.020. Rearrange as before, and x is 0.00495, so N O is 0.0099 moles per litre."
+      }
+    },
+    {
+      "id": "feedback-tiny-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Or K is tiny, so drop the x: the bottom becomes 0.50 times 0.50, which is 0.25, and four x squared over 0.25 is sixteen x squared, which equals 4.0 times ten to the minus four. x squared is 2.5 times ten to the minus five, x is 0.0050, and N O is 0.010. Check it: x is about 1 per cent of 0.50, well under 5 per cent, so the shortcut is safe, and the two answers agree to about 1 per cent."
+      }
+    },
+    {
+      "id": "feedback-slips",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If you got 0.0050, that is x, but N O is two x. If you got 0.014, you put 0.50 on the bottom instead of 0.50 times 0.50. And if you wrote plus x for N O, look at the coefficient: two N O are made each time."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, for a type three question: call the change x, write the change row from the coefficients, add to get the equilibrium row, and substitute into K. Then look for a shortcut. A perfect square: take the square root and keep the positive root. A tiny K: drop the x, and check it is under about 5 per cent of the start. Either way, substitute back to check. Next: why factories do not wait for equilibrium."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}
