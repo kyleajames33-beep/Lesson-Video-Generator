@@ -18,6 +18,7 @@ export const SAND = '#e6cc98', SAND_INK = '#9a7a45';
 export const NUC_LINE = '#5b4d70', NUC_FILL = 'rgba(226,214,238,0.45)';
 export const GREYT = '#8d949b', GREY_INK = '#5d646b';
 export const GREEN = '#2f8a5b', RED = '#c4432f';
+export {scribbleEllipse};
 
 export type SceneL = CueScene & {durationInFrames: number; responseHold?: {startFrame: number; endFrame: number}};
 export const S = (id: string): SceneL => {
@@ -52,6 +53,9 @@ export const PL = {
 	mito: {src: A.MITO, nat: [1970, 900], ref: [985, 420]} as PDef,
 	chloro: {src: A.CHLORO, nat: [1854, 1151], ref: [926, 572]} as PDef,
 	spool: {src: A.SPOOL, nat: [1316, 1800], ref: [605, 775]} as PDef,
+	/** Ball body radius is about 600 natural pixels around the reference point. */
+	tennis: {src: A.TENNIS, nat: [1600, 1600], ref: [801, 791]} as PDef,
+	walk: {src: A.WALK, nat: [4000, 800], ref: [0, 0]} as PDef,
 };
 export const Pl: React.FC<{p: PDef; x: number; y: number; k: number; o?: number; rot?: number}> = ({p, x, y, k, o = 1, rot = 0}) => {
 	if (o <= 0.01) return null;

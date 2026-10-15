@@ -1,0 +1,40 @@
+{
+  "status": "visual-pilot-available-owner-direction-pending",
+  "parent": "docs/production/plant-design-reset-2026-10-11/teaching-reset/runner/measured/lesson.json",
+  "parentSha256": "9b4cddfb5cb00c6ffd90c0acedf0b05166cad032ca73c2e5381b43e1e58ba0e7",
+  "lesson": "docs/production/plant-design-reset-2026-10-11/motion-pilot/lesson.json",
+  "lessonSha256": "fdd7db88fdb87aa3ecee63e3ad33512b1007de59389fa3edbfbe003d434c00e4",
+  "recordedInputs": "Identical voiceover metadata, captions, durations and response holds for all ten scenes.",
+  "renderer": "LessonVideo -> ConceptSlide diagramBoard -> DiagramRenderer -> bioM5RunnerMotion",
+  "reused": [
+    "SlideFrame",
+    "SlideChrome",
+    "FadeUp",
+    "ScribbleAnnotation",
+    "ScribbleCircle",
+    "ScribbleUnderline",
+    "QuickCheckSlide.PauseCountdown",
+    "existing transitions",
+    "strawberry-runner-botanical-v1.png"
+  ],
+  "limitations": [
+    "Camera, drawn annotation and illustrated development using two related botanical stages; not a filmed time-lapse.",
+    "The early-stage practice uses a separately generated matching rootless-bud plate, visually inspected against the original.",
+    "Existing recorded supplied early stage wording remains audible until separately re-recorded.",
+    "Complete owner playback and visual approval pending."
+  ],
+  "reviewUrl": "http://127.0.0.1:8778/runner-motion-recovery-2026-10-11-v4/",
+  "inputSnapshot": "out/prototypes/runner-motion-recovery-2026-10-11-v4/inputs.json",
+  "checks": {
+    "typescript": "npm run check passed",
+    "recordedInputs": "All ten source voiceover objects, captions, durations and protected holds identical to parent",
+    "rootVisual": "Selected native frames, browser playback progress and sampled normal-speed states. Not a complete watch/listen review.",
+    "independent": "/root/recover_asset_inventory reviewed source and sampled native task, feedback and node. Confirmed timer/conditions/answer withholding. Root repaired reported node soil seam.",
+    "notPerformed": "No full MP4 export, no new speech generation, no publication; complete listening and owner design approval pending."
+  },
+  "newAsset": {
+    "path": "public/assets/biology/strawberry-runner-early-bud-v1.png",
+    "method": "Built-in image_gen edit of original plate",
+    "prompt": "README.md, Exact image prompt"
+  }
+}

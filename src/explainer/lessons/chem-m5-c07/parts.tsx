@@ -144,7 +144,7 @@ export const wrapLines = (text: string, size: number, maxW: number) => {
 };
 
 // ---------- the yield, rate, limit answer table ----------
-export type TCell = {text: string; at: number; tick?: number} | null;
+export type TCell = {text: string; at: number; tick?: number; size?: number} | null;
 export type TRow = {label: string; at: number; cells: [TCell, TCell, TCell]};
 export const COLS = [{name: 'Yield', color: GREEN}, {name: 'Rate', color: '#1f6fb2'}, {name: 'Limit', color: '#b3392a'}];
 export const AnswerTable: React.FC<{x: number; y: number; labelW: number; colW: number; rowH: number; size: number; rows: TRow[]; headAt: [number, number, number]; placeholders?: number; headSize?: number}> = ({x, y, labelW, colW, rowH, size, rows, headAt, placeholders, headSize = 40}) => (
@@ -172,16 +172,17 @@ export const AnswerTable: React.FC<{x: number; y: number; labelW: number; colW: 
 							</Fade>
 						) : null;
 						if (!cell) return <g key={ci}>{ph}</g>;
-						const lines = wrapLines(cell.text, size, colW - 44);
-						const lh = size * 1.18;
-						const ty = ry + rowH / 2 - ((lines.length - 1) * lh) / 2 + size * 0.32;
+						const cs = cell.size ?? size;
+						const lines = wrapLines(cell.text, cs, colW - 44);
+						const lh = cs * 1.18;
+						const ty = ry + rowH / 2 - ((lines.length - 1) * lh) / 2 + cs * 0.32;
 						return (
 							<g key={ci}>
 								{ph}
 								<Fade at={cell.at}>
 									<rect x={cx0 + 6} y={ry + 6} width={colW - 12} height={rowH - 12} rx={18} fill={hexMix('#fffdf8', col, 0.1)} stroke={col} strokeWidth={3} />
 								</Fade>
-								{lines.map((l, li) => <Sx key={li} x={cx0 + 22} y={ty + li * lh} text={l} size={size} weight={600} at={cell.at + 4 + li * 3} />)}
+								{lines.map((l, li) => <Sx key={li} x={cx0 + 22} y={ty + li * lh} text={l} size={cs} weight={600} at={cell.at + 4 + li * 3} />)}
 								{cell.tick !== undefined ? <Tick x={cx0 + colW - 40} y={ry + 36} at={cell.tick} s={26} /> : null}
 							</g>
 						);

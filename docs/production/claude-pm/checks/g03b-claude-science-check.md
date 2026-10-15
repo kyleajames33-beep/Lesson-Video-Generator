@@ -17,3 +17,21 @@ Scope: `../lessons/chem-m5-g03b.md` Revision 1. The reused scenes (tiny-k-setup 
 ## Resolution
 
 Finding 1 is applied in scene 2a, its visual card and key note 2; author note (a) records the source. No other change needed. Codex check of the new wording is welcome before render.
+
+## Revision 2 science check (16 Oct)
+
+Scope: `../lessons/chem-m5-g03b.md` Revision 2. New: hook-board, type-three-recall, decision-board, key notes; one reworded on-screen tag in 3a; a pen tag in 3b and 4d. The seven reused take02 scenes are unchanged in narration and keep the checks above and the Codex checks. U+2014 search of new copy: none.
+
+1. **Hook type descriptions.** Type 1 (settled concentrations, find K) and type 2 (a start plus one equilibrium value, ICE table then K) match C6a's types one and two. Type 3 (K and a start, find concentrations, perfect square or tiny K) matches C6b; huge K is the third type 3 case, taught here. Type 4 (a mixture and K, compare Q with K for the direction) matches C8. Type 5 (how much was added) matches 4a to 4d. Correct, and the numbering matches C6a's "three types" (types 1 to 3).
+2. **Scene 2 recall.** "A tiny K meant hardly any reactant changed, so x was tiny next to the start. We dropped it from start minus x, then tested it." Matches C6b 9b to 9d. Thumbnail numbers from C6b: I2 = 2I, K = 1.6 x 10^-5, start 0.25 mol/L; 16x^2 = 1.6 x 10^-5 gives x = 0.0010; 0.0010 / 0.25 = 0.4 per cent. Correct.
+3. **Decision board.** Row 2 "measured value into the E row first, Change = E - I" (C6a). Row 3 "huge K (go to products, x is what is left)" matches 3a to 3c; for a reactant start this needs reactants in the equation's ratio, which 3c says aloud. Row 4 "Q below K: forward; Q above K: reverse" (C8). Row 5 matches 4b to 4d. Correct.
+4. **Key notes.** Five lines checked against the scenes and C6a, C6b and C8. "Test the shortcut (under about 5 per cent of the start)" keeps the condition. Correct.
+5. **3a tag reworded.** "a different temperature again, so a different K" referred to the cut G03a values; now "a different temperature from other SO3 questions, so a different K". K = 4.0 x 10^10 stays an illustrative value. Correct.
+6. **Pen tag "multiply both sides by the bottom, then divide" (3b, 4d).** 3b: x^3 = 0.040 / (4.0 x 10^10); 4d: 0.100 + y = 0.250 / (4.00 x 0.100). Both are that rearrangement. Correct.
+7. **Quadratic line.** Not in Revision 2 narration (it was in the cut tiny-k-question). No claim about the quadratic is made, so no new risk.
+
+0 errors. 0 UNVERIFIED in learner copy.
+
+### Resolution
+
+Revision 2: no errors found. Finding 5 is applied in the design (3a visual and the Decisions units bullet). No narration change to any reused take. Codex check of the new hook, recall and decision board is welcome before render.

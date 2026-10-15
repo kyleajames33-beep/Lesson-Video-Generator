@@ -1,0 +1,124 @@
+{
+  "title": "Equilibrium calculations: HSC-style practice, part 2",
+  "subtitle": "In an equilibrium calculation you have not seen, where is the trap, and what do you do first so it cannot catch you?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 12,
+  "lessonIntent": "Solve three unseen HSC-style equilibrium calculations (a K given for the other equation that is also tiny, with a moles answer, and a two-part question that finds K and reuses it in a hidden perfect square), avoid the trap in each, and say the first move for each trap.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook-traps",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This is part two of the practice set, with questions three and four. The method is the same as part one: divide by the volume first, then the I C E table, I for initial, C for change, E for equilibrium. Question three gives K for the other equation, so you will have to flip it, and its K is tiny, so the 5 per cent check goes on the amount actually taken off, which here is two x. Question four has two parts: part a finds K, and part b hides a perfect square. Pause and try each one, then we'll work it through one step at a time."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. For two N O plus chlorine making two N O C L, nitrosyl chloride, K is 6.25 times ten to the four at a certain temperature. 2.00 moles of N O C L is placed in an empty 4.00 litre vessel at that temperature, and some of it splits. How many moles of chlorine are present at equilibrium? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-flip-and-table",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Look at which way the equation runs. K was given for the equation that makes N O C L, but this vessel starts with N O C L, which splits. K belongs to the equation as it is written, so write the equation the way this vessel runs, and flip K with it: one over 6.25 times ten to the four is 1.6 times ten to the minus five, which is tiny. Question two ran backwards too, but we kept its equation as given, so its K stayed the same. Now the table. The start is 2.00 over 4.00, 0.500 moles per litre. If x of chlorine forms, then two x of N O C L splits and two x of N O forms, so the equilibrium row is 0.500 minus two x, two x, and x."
+      }
+    },
+    {
+      "id": "q3-drop-and-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "K is two x all squared, times x, over 0.500 minus two x, all squared. K is tiny, so very little splits: drop the two x from the bottom, and keep the x on top, because that is the answer. The bottom becomes 0.500 squared, 0.250. On top, two x all squared, times x, is four x cubed. Multiply both sides by the bottom, 0.250: four x cubed is 4.0 times ten to the minus six. Then divide both sides by four: x cubed is 1.0 times ten to the minus six, and x is 0.0100."
+      }
+    },
+    {
+      "id": "q3-check-and-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Check the shortcut. The amount taken off the start is two x, not x: 0.0200 out of 0.500 is 4 per cent. That is under about 5, so it passes, but only just. Chlorine is 0.0100 moles per litre, times 4.00 litres, which is 0.0400 moles. The classic mistake is putting 6.25 times ten to the four into the splitting expression without flipping it. That gives x of about 16 moles per litre, far more than the 0.500 you started with, which is impossible."
+      }
+    },
+    {
+      "id": "q4a-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four has two parts. Nitrogen dioxide and sulfur dioxide react to make nitrogen monoxide and sulfur trioxide, all gases. At 460 degrees, a 5.00 litre vessel at equilibrium holds 0.100 moles of N O two, 0.200 of S O two, 0.900 of N O and 1.80 of S O three. Part a: calculate K. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4a-answer",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Divide each amount by 5.00: 0.0200, 0.0400, 0.180 and 0.360 moles per litre. Every coefficient is one, so K is N O times S O three, over N O two times S O two. On top, 0.180 times 0.360 is 0.0648. Underneath, 0.0200 times 0.0400 is 0.000800. So K is 81.0."
+      }
+    },
+    {
+      "id": "q4b-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b. At the same temperature, 0.500 moles of N O two and 0.500 moles of S O two are placed in an empty 2.00 litre vessel. Find the concentration of N O two at equilibrium. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4b-square",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Same temperature, so the same K: 81.0 from part a. The start is 0.250 of each reactant. Each reactant changes by minus x, and each product by plus x. So K is x times x, over 0.250 minus x, times 0.250 minus x. That looks like it needs the quadratic formula. You can use it if you like, but HSC questions are written so you shouldn't need it, so look again. The top is x squared, and the bottom is 0.250 minus x, all squared. It is a perfect square, because the two reactants started equal."
+      }
+    },
+    {
+      "id": "q4b-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Take the square root of both sides: x over 0.250 minus x is 9.00. Multiply both sides by the bottom, 0.250 minus x: x equals 2.25 minus 9 x. Add 9 x to both sides, so ten x is 2.25, then divide by ten: x is 0.225. But the question asks for N O two, which is 0.250 minus x: 0.0250 moles per litre. Check: 0.225 squared over 0.0250 squared is 81. The classic mistake is stopping at x and giving 0.225 as the answer. x is the change, not the N O two."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here is what to look for. K for a different equation: flip it if the equation is reversed, square it if it is doubled. K and a start: look for a perfect square, or a tiny K with the 5 per cent check on the amount taken off. Asked for moles: convert back at the end, and answer what was asked, because x is the change. And two parts at the same temperature use the same K. Next: how temperature changes K."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # G03a: Every type of HSC equilibrium calculation, part 1: find K and compare Q (design)
 
-Status: Revision 1 (15 Oct): split from G03 (owner); ready to voice (owner approved voicing without reading). Five of the nine scenes reuse a G03 take01 recording verbatim; four are new (see Scene reuse). Self-checks: `../checks/g03a-learning-review.md`, `../checks/g03a-claude-science-check.md`; split notes `../checks/g03ab-split-notes.md`.
+Status: Dropped (owner 16 Oct): content covered by C6a, C8 and the reworked G03b; not to be published
+
+Previous status: Revision 1 (15 Oct): split from G03 (owner); was ready to voice (owner approved voicing without reading). Five of the nine scenes reuse a G03 take01 recording verbatim; four are new (see Scene reuse). Self-checks: `../checks/g03a-learning-review.md`, `../checks/g03a-claude-science-check.md`; split notes `../checks/g03ab-split-notes.md`.
 
 Video type 3 in the teaching playbook (practice walkthrough), authored questions only. Every question here is written for HSCScience and is never presented, said or implied to be an official NESA question; the board carries the tag "HSC-style question, written for HSCScience" on each question card. Split from `chem-m5-g03.md` Revision 5 (superseded), because the G03 take01 voiced at 12:34 (owner decision B, 15 Oct). Route entry: the first half of chem-m5-g03 ("Harder ICE tables and Q decisions", playlist order 12; syllabus actions C-calculate-K and C-predict-direction, p1078). Part 2 is `chem-m5-g03b.md`; the practice set is `chem-m5-g03c.md`. Learner copy never mentions marks. No em dash.
 

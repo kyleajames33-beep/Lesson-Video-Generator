@@ -1,0 +1,112 @@
+{
+  "title": "Equilibrium calculations: HSC-style practice, part 1",
+  "subtitle": "In an equilibrium calculation you have not seen, where is the trap, and what do you do first so it cannot catch you?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 12,
+  "lessonIntent": "Solve two unseen HSC-style equilibrium calculations (a solid with a mass answer, and a start plus one equilibrium value in a mixture that runs backwards), avoid the trap in each, and say the first move for each trap.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook-traps",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Equilibrium calculations stump a lot of students, and it is rarely the algebra. It is a small trap early on: moles where K needs concentrations, a coefficient missed in the change row, a value that does not start at zero, or a solid left in K. Here are two HSC-style questions, and part two has two more. Each hides at least one trap. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Iron two oxide, a solid, reacts with carbon monoxide to make solid iron and carbon dioxide. At about 800 degrees, K is 0.50. A sealed 2.00 litre vessel holds an excess of iron two oxide and 0.600 moles of carbon monoxide, with no iron or carbon dioxide at the start. What mass of iron is present at equilibrium? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-expression",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the expression. Iron two oxide and iron are solids, so they stay out of K. That leaves K equals carbon dioxide over carbon monoxide, with no powers at all. Now the I C E table: I for initial, C for change, E for equilibrium. The carbon monoxide is in moles, so divide first: 0.600 over 2.00 is 0.300 moles per litre, and carbon dioxide starts at zero. Nothing at equilibrium is measured, so the change is x: carbon monoxide ends at 0.300 minus x, and carbon dioxide at x."
+      }
+    },
+    {
+      "id": "q1-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So x over 0.300 minus x equals 0.50. K is not tiny, so do not drop the x. You do not need to: this equation is already simple. Multiply both sides by the bottom, 0.300 minus x: x equals 0.150 minus 0.50 x. Add 0.50 x to both sides, so 1.50 x is 0.150. Then divide both sides by 1.50, and x is 0.100. Check: 0.100 over 0.200 is 0.50."
+      }
+    },
+    {
+      "id": "q1-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But the question asks for a mass of iron. The equation makes one iron for every carbon dioxide, so the moles of iron formed equal the moles of carbon dioxide formed. That is 0.100 moles per litre, times 2.00 litres, which is 0.200 moles. Times 55.85 grams per mole, that is 11.2 grams of iron. The classic mistake is stopping at the concentration, or forgetting the volume and getting 5.6 grams."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Carbon monoxide and hydrogen make methanol gas: C O plus two H two makes methanol. A 2.00 litre vessel at about 230 degrees starts with 0.200 moles of carbon monoxide, 0.400 moles of hydrogen and 0.400 moles of methanol. At equilibrium, it holds 0.320 moles of methanol. Calculate K. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-initial",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Everything here is in moles, so first divide by 2.00. The initial row is 0.100 for carbon monoxide, 0.200 for hydrogen and 0.200 for methanol. The measured methanol, 0.320 moles, is 0.160 moles per litre, and it goes in the equilibrium row. Change is equilibrium minus initial: 0.160 minus 0.200 is minus 0.0400. Methanol went down, so this mixture ran backwards. You did not have to guess that: the subtraction gave you the sign."
+      }
+    },
+    {
+      "id": "q2-change-and-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the coefficients. Each methanol that splits gives one carbon monoxide and two hydrogen, so carbon monoxide rises by 0.0400 and hydrogen rises by 0.0800. Add each change to its start: carbon monoxide 0.140, hydrogen 0.280. K is methanol over carbon monoxide times hydrogen squared. 0.280 squared is 0.0784, and times 0.140 that is 0.01098. Keep the extra figures until the end. 0.160 over 0.01098 gives K is 14.6."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake here is writing the measured 0.160 straight into the change row. It is not a change, it is where methanol ended up. Put it in the equilibrium row, and let equilibrium minus initial give you the change, sign and all."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here is what to look for. Moles and a volume: divide first. One equilibrium value: it goes in the equilibrium row, and equilibrium minus initial gives the change and its sign. A coefficient: the change row follows it. A solid, or water as the solvent: leave it out of K. Asked for grams: convert back at the end. Next: part two, with a K for the other equation, a tiny K, and a hidden perfect square."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

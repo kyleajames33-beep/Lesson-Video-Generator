@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-G03C-claude-2026-10-16-take02",
+  "lessonPath": "docs/production/claude-pm/lessons/g03c/lesson.json",
+  "lessonSha256": "df7adaf9b603c583225fefb68431021eef5bef7527f46b1022f7ea0cf8a521f5",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/g03c/lesson.production-brief.json",
+    "sha256": "52af4bdddd30e45e01da4db7c52e6d75f871d3668f94cbc9e21b9ed6b2cda7ca"
+  },
+  "scenes": [
+    {
+      "id": "hook-traps",
+      "parentSceneId": "hook-traps",
+      "text": "Equilibrium calculations stump a lot of students, and it is rarely the algebra. It is a small trap early on: moles where K needs concentrations, a coefficient missed in the change row, a value that does not start at zero, or a solid left in K. Here are two HSC-style questions, and part two has two more. Each hides at least one trap. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake.",
+      "hash": "2ef1b8fe13f0",
+      "textSha256": "2ef1b8fe13f08ec16da7e7cc8c11785d89a2f12e18a9aa2ec7cbcc926140e3ff",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/hook-traps.2ef1b8fe13f0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/hook-traps.2ef1b8fe13f0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/hook-traps.2ef1b8fe13f0.generation.json",
+      "plannedRequestSha256": "2a8e9239ed2926b8b4cba398c397d45ff0d2f7bf6e4992fb02edf5ccba8cf71e"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Iron two oxide, a solid, reacts with carbon monoxide to make solid iron and carbon dioxide. At about 800 degrees, K is 0.50. A sealed 2.00 litre vessel holds an excess of iron two oxide and 0.600 moles of carbon monoxide, with no iron or carbon dioxide at the start. What mass of iron is present at equilibrium? Pause here to answer.",
+      "hash": "beb6a4006d4a",
+      "textSha256": "beb6a4006d4adeea2e4670752d7e8c8c9debcbcb2511d7a2acf33284d8ff8b9c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-question.beb6a4006d4a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-question.beb6a4006d4a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-question.beb6a4006d4a.generation.json",
+      "plannedRequestSha256": "4fa95d18d52da59b9548dec8e246b615a64875842c386df6c5de9c3db11ccf17"
+    },
+    {
+      "id": "q1-expression",
+      "parentSceneId": "q1-expression",
+      "text": "Start with the expression. Iron two oxide and iron are solids, so they stay out of K. That leaves K equals carbon dioxide over carbon monoxide, with no powers at all. Now the I C E table: I for initial, C for change, E for equilibrium. The carbon monoxide is in moles, so divide first: 0.600 over 2.00 is 0.300 moles per litre, and carbon dioxide starts at zero. Nothing at equilibrium is measured, so the change is x: carbon monoxide ends at 0.300 minus x, and carbon dioxide at x.",
+      "hash": "1bf8ef1cdafd",
+      "textSha256": "1bf8ef1cdafd68e31a6020e43c4c33f5c97db8013afc055fcefd7ab44a446e56",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-expression.1bf8ef1cdafd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-expression.1bf8ef1cdafd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-expression.1bf8ef1cdafd.generation.json",
+      "plannedRequestSha256": "dec27b8b74c91d0c8abfc2d50bb727f0f0f4989026aa29bfd973d9798cc63c4d"
+    },
+    {
+      "id": "q1-solve",
+      "parentSceneId": "q1-solve",
+      "text": "So x over 0.300 minus x equals 0.50. K is not tiny, so do not drop the x. You do not need to: this equation is already simple. Multiply both sides by the bottom, 0.300 minus x: x equals 0.150 minus 0.50 x. Add 0.50 x to both sides, so 1.50 x is 0.150. Then divide both sides by 1.50, and x is 0.100. Check: 0.100 over 0.200 is 0.50.",
+      "hash": "61e05e9df811",
+      "textSha256": "61e05e9df8116a5ba5d0cb9215e8cc41aa1fa5b189346c6ab73fab44a4f70ccf",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-solve.61e05e9df811.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-solve.61e05e9df811.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-solve.61e05e9df811.generation.json",
+      "plannedRequestSha256": "bc3dc8cae67088e7ca10b5697aa8d01c3b9de6847ab25fbf7c6a08397b5e3cf2"
+    },
+    {
+      "id": "q1-mass",
+      "parentSceneId": "q1-mass",
+      "text": "But the question asks for a mass of iron. The equation makes one iron for every carbon dioxide, so the moles of iron formed equal the moles of carbon dioxide formed. That is 0.100 moles per litre, times 2.00 litres, which is 0.200 moles. Times 55.85 grams per mole, that is 11.2 grams of iron. The classic mistake is stopping at the concentration, or forgetting the volume and getting 5.6 grams.",
+      "hash": "fb616cd550d6",
+      "textSha256": "fb616cd550d63fcc0ed7fa78281e9f58b66d8423815aad7e897c64a55557e32b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-mass.fb616cd550d6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-mass.fb616cd550d6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q1-mass.fb616cd550d6.generation.json",
+      "plannedRequestSha256": "680eef836b6d6936e64510cfbfc5c4cff6ba7e99a12157c18bf2d30920a79082"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Carbon monoxide and hydrogen make methanol gas: C O plus two H two makes methanol. A 2.00 litre vessel at about 230 degrees starts with 0.200 moles of carbon monoxide, 0.400 moles of hydrogen and 0.400 moles of methanol. At equilibrium, it holds 0.320 moles of methanol. Calculate K. Pause here to answer.",
+      "hash": "72006d4496f3",
+      "textSha256": "72006d4496f3d2d9ebe64f1d7f8ac992e54f9d3d5f9e521fe1bd6562e1ed1650",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-question.72006d4496f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-question.72006d4496f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-question.72006d4496f3.generation.json",
+      "plannedRequestSha256": "831ebbefd53469ad0687bfc0ed6efb6b25c561fa19c91793f3281eaa292a9234"
+    },
+    {
+      "id": "q2-initial",
+      "parentSceneId": "q2-initial",
+      "text": "Everything here is in moles, so first divide by 2.00. The initial row is 0.100 for carbon monoxide, 0.200 for hydrogen and 0.200 for methanol. The measured methanol, 0.320 moles, is 0.160 moles per litre, and it goes in the equilibrium row. Change is equilibrium minus initial: 0.160 minus 0.200 is minus 0.0400. Methanol went down, so this mixture ran backwards. You did not have to guess that: the subtraction gave you the sign.",
+      "hash": "8ab4218b0015",
+      "textSha256": "8ab4218b00159d84b179750cdc43387a07c6984ac2dd0bc8c2d66608dcb668af",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-initial.8ab4218b0015.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-initial.8ab4218b0015.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-initial.8ab4218b0015.generation.json",
+      "plannedRequestSha256": "e9f64c865dfc28d9a86192d609c0febe86165780031bdd12358637282752ae5a"
+    },
+    {
+      "id": "q2-change-and-k",
+      "parentSceneId": "q2-change-and-k",
+      "text": "Now the coefficients. Each methanol that splits gives one carbon monoxide and two hydrogen, so carbon monoxide rises by 0.0400 and hydrogen rises by 0.0800. Add each change to its start: carbon monoxide 0.140, hydrogen 0.280. K is methanol over carbon monoxide times hydrogen squared. 0.280 squared is 0.0784, and times 0.140 that is 0.01098. Keep the extra figures until the end. 0.160 over 0.01098 gives K is 14.6.",
+      "hash": "2359d4331693",
+      "textSha256": "2359d4331693bc500217514e89f0c9fea9eb4ff904d29121774d657752c30856",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-change-and-k.2359d4331693.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-change-and-k.2359d4331693.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-change-and-k.2359d4331693.generation.json",
+      "plannedRequestSha256": "a07349cba7e53d976f3e0454abf1045c31bbf0ca98c58238ba3e810e9750760a"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake here is writing the measured 0.160 straight into the change row. It is not a change, it is where methanol ended up. Put it in the equilibrium row, and let equilibrium minus initial give you the change, sign and all.",
+      "hash": "6dc0373941e1",
+      "textSha256": "6dc0373941e10c69b1d405c2c53b8df6c844602ebc71790be30f3dcca2c437d3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-mistake.6dc0373941e1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-mistake.6dc0373941e1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/q2-mistake.6dc0373941e1.generation.json",
+      "plannedRequestSha256": "1aaa5f0df92b166d60d8d8e2f078b4dfcbd33762c3ceaf27a3b01df97fd68a1e"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here is what to look for. Moles and a volume: divide first. One equilibrium value: it goes in the equilibrium row, and equilibrium minus initial gives the change and its sign. A coefficient: the change row follows it. A solid, or water as the solvent: leave it out of K. Asked for grams: convert back at the end. Next: part two, with a K for the other equation, a tiny K, and a hidden perfect square.",
+      "hash": "ac4fa717b7dd",
+      "textSha256": "ac4fa717b7ddadcfcb3b346ce001abb801c0946de9caa44e143cb311c8de83ab",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/decision-board.ac4fa717b7dd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/decision-board.ac4fa717b7dd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/decision-board.ac4fa717b7dd.generation.json",
+      "plannedRequestSha256": "69f73db027057dde4a7d0412bf39a35e6674ee54da0fcbc6bc204996c764df58"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03C-claude-2026-10-16-take02/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -156,3 +156,20 @@ Known and accepted: in the C4a, C4b, B3a and B3a part 2 practice questions the v
 - C5 rendered (7:11, -15.3 LUFS). Upload: brief 28f.
 - C8 Revision 6 (owner: rate algebra removed): 4 scenes re-recorded (take03, 8:35), preview v5 to watch.
 - Later: strip the rate model from the C9 design before voicing.
+
+## 15 Oct night: Codex queue (send in any order; 28h and 36 first)
+- 28h upload C6a + C9; 36 B6a tennis ball + long-walk strip
+- 37 fact-check sweep (G03a/b/c, C6b rev 4, C9, B6a); 38 chemistry solubility/acid/colourimetry plates; 39 biology genetics plates
+- 40 coded-icon audit + replacement plates for new lessons; 41 pre-design packs (next 6 chem + 6 bio); 42 YouTube chapters, end screens, audit
+Claude overnight: C6b render; B6a harder questions (re-record) + overlap fixes; G03c review, voice and build.
+
+## 16 Oct morning summary
+- Rendered overnight: C6b (11:15), upload brief 28i. (C6a, C9 via 28h.)
+- To watch: B6a v2 (harder questions, overlap fixes, endosymbiosis clip, tennis ball + long walk); G03c v1 and G03d v1 (practice set split for length); C7 v3, B3b v3, B5a v3, B5b v3; G03a v1, G03b v1; C9 v2 (clip freeze fix).
+- Codex queue: 28h, 28i, 37, 38, 39, 40, 41, 42 (36 done).
+- Not committed since c89eea3 (waiting for owner OK).
+
+## 16 Oct: practice video titles (owner approved)
+- G03a / G03b: "Every type of HSC equilibrium calculation (quick guide), part 1 / part 2"
+- G03c / G03d: "Hard HSC equilibrium calculation practice, part 1 / part 2"
+- Passed: B6a v2 (with sweep-37 wording fix), G03c v1, G03d v1. Render order: G03c, B6a, G03d.

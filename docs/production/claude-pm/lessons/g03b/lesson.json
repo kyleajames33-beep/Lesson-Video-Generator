@@ -1,11 +1,11 @@
 {
-  "title": "Every type of HSC equilibrium calculation, part 2: find concentrations and the amount added",
-  "subtitle": "A calculation gives you K and a start, or an old equilibrium with something added. How do you find the amounts, and how do you check the shortcut?",
+  "title": "All 5 types of HSC equilibrium calculation (plus huge K and amount added)",
+  "subtitle": "Every HSC equilibrium calculation is one of five types. How do you tell which one you have, and how do you do huge K and an amount added?",
   "subject": "Chemistry",
   "yearLevel": 12,
   "module": 5,
   "lesson": 12,
-  "lessonIntent": "Find equilibrium concentrations from K and a start by choosing and testing the tiny-K or huge-K shortcut, and solve an amount-added problem with the added substance in the initial row, K unchanged and the answer converted to moles.",
+  "lessonIntent": "Name all five types of equilibrium calculation from what a question gives and asks, use the huge-K shortcut and test it, and solve an amount-added problem with the added substance in the initial row, K unchanged and the answer converted to moles.",
   "fps": 30,
   "width": 1920,
   "height": 1080,
@@ -17,35 +17,15 @@
       "type": "concept",
       "durationInFrames": 300,
       "voiceover": {
-        "text": "This is part two of the five types: the two where you find amounts. K and a start, asking for the settled concentrations. Or an old equilibrium, something added, and a new value, asking how much was added. They are the hardest two, so we take them one step at a time."
+        "text": "In the C6 videos we met three types of calculation. Two more turn up in HSC questions, so there are five in all. Type one gives you the settled concentrations, and you find K. Type two gives you a start and one equilibrium value, so you fill an ICE table, then find K. Those two are from the first C6 video. Type three gives you K and a start, and you find the concentrations, using a perfect square or a tiny K, from the second C6 video. And today, one more case: a huge K. Type four gives you a mixture and K, and you compare Q with K to find the direction, as in the Q video. Type five asks how much was added, and that's today too."
       }
     },
     {
-      "id": "tiny-k-question",
+      "id": "type-three-recall",
       "type": "concept",
       "durationInFrames": 300,
       "voiceover": {
-        "text": "Type three: K and a start, and you want the settled concentrations. You can use the quadratic formula if you like, but HSC questions are written so you shouldn't need it. Look for a perfect square or a tiny K. N two O four splits into two N O two, K is 4.0 times ten to the minus four, and the start is 0.500 moles per litre of N two O four, with no N O two. Which shortcut fits? Find the N O two. Pause here to answer."
-      },
-      "responseHold": {
-        "startFrame": 0,
-        "endFrame": 300
-      }
-    },
-    {
-      "id": "tiny-k-setup",
-      "type": "concept",
-      "durationInFrames": 300,
-      "voiceover": {
-        "text": "If x of the N two O four splits, the N two O four left is 0.500 minus x and N O two is two x, so K is two x all squared, over 0.500 minus x. The bottom is not a square, so the square root will not help. But K is tiny next to the start, so drop the x: 0.500 minus x is about 0.500."
-      }
-    },
-    {
-      "id": "tiny-k-solve-and-test",
-      "type": "concept",
-      "durationInFrames": 300,
-      "voiceover": {
-        "text": "Four x squared over 0.500 is eight x squared, and that equals 4.0 times ten to the minus four. So x squared is 5.0 times ten to the minus five, and x is 0.0071. N O two is two x, which is 0.014. Test it: the amount taken off the start, 0.0071, is 1.4 per cent of 0.500, under about 5 per cent, so the shortcut holds."
+        "text": "Type three first. In the second C6 video, a tiny K meant hardly any reactant changed, so x was tiny next to the start. We dropped it from start minus x, then tested it."
       }
     },
     {
@@ -113,7 +93,7 @@
       "type": "concept",
       "durationInFrames": 300,
       "voiceover": {
-        "text": "So read what you are given and what you are asked. A start and a K, for concentrations: x, then a perfect square, or a tiny or huge K, and test any shortcut. An amount added: y in the initial row, K unchanged, answer in moles. Next: practice questions, each with a trap in it."
+        "text": "So read what you're given and what you're asked. Settled concentrations: put them into K. A start and one equilibrium value: an ICE table, I for initial, C for change, E for equilibrium, with the E row first. K and a start: call the change x, look for a perfect square, a tiny K or a huge K, and test any shortcut. A mixture and K: work out Q and compare. Something added: y in the initial row, K unchanged, answer in moles. Next: practice questions, each with a trap in it."
       }
     },
     {

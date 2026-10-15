@@ -431,3 +431,149 @@ Completed seven plate pairs. New or revised files are `public/assets/biology/b6a
 Created `docs/production/claude-pm/assets/brief35-provenance.json` and 63 QA PNGs in `docs/production/claude-pm/assets/brief35-qa/`. All plates have the requested canvas, alpha channel and 8 percent transparent margins. The difference images are local to the described process regions. The B6a difference includes a vesicle partly covered by the bacterium's enclosing membrane and the host membrane closing at entry. The B3a2 start has one small egg-bearing follicle; its surrounding tissue was repainted locally. No pair remains unaligned. Original prompts and model identifiers for some plates that already existed locally could not be recovered and are marked unknown in provenance.
 
 Questions for Claude: please inspect the B3a2 tissue transition at playback speed before making a clip, and confirm the C13 lead(II) iodide example when its lesson design is written. No video clips, lesson designs, code, speech, renders, commits or pushes were made.
+
+### Brief 28g completion: C4b and C8 YouTube verification (15 October 2026)
+
+Studio showed that both videos had already been uploaded. C4b is Public at https://youtu.be/jDkHt4rf6bI (8:37), and C8 is Public at https://youtu.be/IWS7_MDw-yc (8:51). Both filenames match the approved local MP4s. Studio showed HD complete, no notices, AI disclosure Yes, Education, English (Australia), and published timed captions. The public Chemistry playlist showed C4b once after C4a and C8 once after C5, with Manual sorting. Both local MP4 hashes match Brief 28g. Added the two entries to `docs/production/claude-pm/youtube/wave4-uploads.json`. No duplicate upload was made. Nothing in Brief 28g remains unfinished. No question for Claude.
+
+### Brief 36: B6a scale plates (15 October 2026)
+
+Created `public/assets/biology/b6a-tennis-ball-v1.png` (1600 x 1600) and `public/assets/biology/b6a-long-walk-strip-v1.png` (4000 x 800). Both are ink and watercolour RGBA plates. The ball has more than 8 percent clear margin and reads at 200 px. The walk has a connected path, with the house, park, shops, oval, river and bridge, hill and town in order. Created `docs/production/claude-pm/assets/brief36-provenance.json` and seven QA images in `docs/production/claude-pm/assets/brief36-qa/`, including checkerboard views, 200 px views and three 1920 px pan crops. Nothing remains unfinished. Question for Claude: place the coded ball and thread so the small starting house remains visible when that matters to the opening comparison.
+
+### Brief 28h: C6a and C9 YouTube upload (15 October 2026)
+
+Published C6a at https://youtu.be/_NLAkMBNyRY (10:17) and C9 at https://youtu.be/9TxH_y3ZOdU (8:49 in Studio). Both local MP4 SHA-256 hashes matched Brief 28h. Corrected and checked the 2017 Chemistry syllabus quotes in `wave4-metadata-draft.json` before upload. Studio confirmed the approved filenames and descriptions, Public, not Made for Kids, AI disclosure Yes, Education, English (Australia), published timed SRT captions, HD complete and no notices. The copyright checks found no issues. Both use auto-generated frame 2 as their thumbnail. The public Chemistry playlist uses Manual sorting and, after reload, shows C6a once directly after C5 at position 8, C8 at position 9 and C9 once after C8 at position 10. Updated `wave4-uploads.json` with both records and C8's new position. Nothing in Brief 28h remains unfinished. No question for Claude.
+
+### Brief 37: fact-check sweep (16 October 2026)
+
+Created `docs/production/claude-pm/checks/codex-sweep-37.md`. Recomputed the G03a, G03b, G03c, moved G03d, C6b Revision 4, C9 Revision 5 and B6a scale values; checked the cited 2017 syllabus wording and science sources. Found two B6a on-screen science overstatements: chromosomal genes shown as spreading only by division, and plant organelle DNA presented as invariably circular. All requested arithmetic passed. G03d holds the NOCl and NO2/SO2 questions named in the brief after the 16 October split. Nothing remains unchecked. Question for Claude: please resolve the two B6a findings before release.
+
+### Brief 41: pre-design packs (16 October 2026)
+
+Created twelve packs in `docs/production/claude-pm/pre-design/`: `chem-c10-colourimetry.md`, `chem-c11-ka-kb.md`, `chem-c12-dissolution-indigenous.md`, `chem-c13-solubility-rules-precipitation.md`, `chem-c14-ksp.md`, `chem-c15-qsp-common-ion.md`, `bio-b7-transcription.md`, `bio-b8-translation.md`, `bio-b9-proteins-phenotype.md`, `bio-b10-inheritance-patterns.md`, `bio-b11-punnett-pedigrees.md`, and `bio-b12-population-genetics-technologies.md`. Each draws on the raw site lesson and extract, quotes the 2017 syllabus, checks worked values, and records exam traps, real visual subjects, prior teaching and questions for Claude. No narration or site files were changed.
+
+Site findings for Claude: L13 Chemistry's K ≈ 208 does not establish that most initial reactants became product; L14's HF dissociation at 0.100 mol/L is about 7.9%, its HNO₂ Ka depends on the reference, and its Haber K pair needs a valid source; L15's cycasin-as-solid-dissolution model conflicts with hydrolysis and leaching accounts; L16's carbonate choice ignores calcium and magnesium co-precipitation; L17's raw Ca(OH)₂ and Ag₂SO₄ values still need the recorded site corrections; L18's groundwater solubility question ignores existing calcium. Biology L11 needs anticodon direction labels; L12 overstates the Beadle and Tatum conclusion; L15 miscredits discovery of AB and has an unsupported transfusion fatality figure; L16 to L19 retain the Belmont, Pitchfork, UK Biobank and deCODE problems recorded in `site-corrections.md`, plus unsupported case statistics flagged in the B12 pack. The PbSO₄ value 1.6 × 10⁻⁸ is supported by university references; its precipitation example is valid. Brief 38 and 39 `m5x-` plates were not present at the asset check.
+
+Open question for Claude: Brief 41's C10 to C15 and B10 to B12 labels do not match the current canonical route IDs one for one. Which video IDs and focused boundaries should the designs use? Nothing in the requested pack set remains unfinished.
+
+### Brief 40: coded-icon audit and plates (16 October 2026)
+
+Audited C06a, C06b, C09, G03a, G03b and B06a against source and existing stills. Added the "15 Oct audit (brief 40)" table to `docs/production/claude-pm/assets/coded-icon-audit.md`. Created seven plates: `public/assets/chemistry/c9-ice-cube-v1.png`, `c9-colourimeter-v1.png`, `g03a-clear-vessel-v1.png`, and `public/assets/biology/b6a-anonymous-cell-v1.png`, `b6a-magnifier-v1.png`, `b6a-band-loop-v1.png`, `b6a-band-twist-v1.png`. Wrote `docs/production/claude-pm/assets/brief40-provenance.json` and QA views in `docs/production/claude-pm/assets/brief40-qa/`. All seven are transparent PNGs with a visible long side of at least 1600 px and at least 8 percent clear margin. No code, speech or render was changed. Question for Claude: preserve the B6a rubber band's visible twisting movement when choosing whether to use the matched painted endpoints; keep the current morph until then.
+
+### Brief 28i: C6b YouTube upload (16 October 2026)
+
+Published C6b at https://youtu.be/Zs1oO5eCIqc (11:15). The local MP4 SHA-256 matched the brief, and the description's quoted Chemistry dotpoint matched the official 2017 syllabus. Studio confirmed the approved filename and metadata, Public, not Made for Kids, AI disclosure Yes, Education, English (Australia), published timed take03 SRT captions, HD complete and no notices. The copyright check found no issues. The thumbnail is auto-generated frame 3. After a reload, the public Chemistry playlist showed C6b once at position 9 directly after C6a, with Manual sorting. Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with C6b and the shifted C8/C9 positions. Nothing in Brief 28i remains unfinished. No question for Claude.
+
+
+### Brief 42: YouTube chapters, end screens and audit (16 October 2026)
+
+Added or verified 5 to 9 chapters in the Studio descriptions of all 12 wave 4 videos. The first chapter is 0:00, every chapter lasts at least 10 seconds, and the original description and syllabus block remain in place. C6b's nine chapters were computed from its measured scene starts. The chapters and audit are recorded in `docs/production/claude-pm/youtube/wave4-uploads.json`.
+
+Checked all 19 published Module 5 videos in Studio and both public playlists. Playlist order is correct, with 11 Chemistry and eight Biology videos. Studio shows Public, HD complete, a thumbnail, the syllabus dotpoint and no notices for each. Upload records show published English (Australia) captions and clear copyright checks. No caption or playlist fix was needed.
+
+| Video | Playlist position | Visibility | Captions | Dotpoint | Thumbnail | Warnings | End screen |
+| --- | ---: | --- | --- | --- | --- | --- | --- |
+| [Sexual and Asexual Reproduction: Continuity and Variation](https://youtu.be/44FFfv7RGck) | Bio 1 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [External and Internal Fertilisation: Why Egg Numbers Differ](https://youtu.be/0P33z4D2q0E) | Bio 2 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [bio-m5-b02b](https://youtu.be/j2fxl5xvDwE) | Bio 3 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [How Single-Celled Organisms Reproduce: Fission and Budding](https://youtu.be/kG-KexGgCzc) | Bio 4 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [How Bread Mould Spreads: Spores and New Growth](https://youtu.be/w7edKqGAUwA) | Bio 5 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [bio-m5-b03a](https://youtu.be/bUPs256KyVY) | Bio 6 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [bio-m5-b03a2](https://youtu.be/Mlz5XT5XR7o) | Bio 7 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [bio-m5-b04](https://youtu.be/P9jyiLiGhZI) | Bio 8 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [Static and Dynamic Equilibrium: Equal Rates, Not Equal Amounts](https://youtu.be/zaC5iXuovKg) | Chem 1 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [How Reversible Reactions Approach Equilibrium](https://youtu.be/vd9Ory9-flE) | Chem 2 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-g01](https://youtu.be/BdF_sRrt5Yw) | Chem 3 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [Le Chatelier’s Principle: Concentration and Temperature](https://youtu.be/w0GzgApQhQY) | Chem 4 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c04a](https://youtu.be/yk5KVdipGRE) | Chem 5 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c04b](https://youtu.be/jDkHt4rf6bI) | Chem 6 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c05](https://youtu.be/NJjEgjilgAE) | Chem 7 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c06a](https://youtu.be/_NLAkMBNyRY) | Chem 8 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c06b](https://youtu.be/Zs1oO5eCIqc) | Chem 9 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c08](https://youtu.be/IWS7_MDw-yc) | Chem 10 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+| [chem-m5-c09](https://youtu.be/9TxH_y3ZOdU) | Chem 11 | Public | EN-AU published | Yes | Set | None shown | Skipped: key notes |
+
+End screens were skipped as the brief permits. The final 15 to 20 seconds show key notes across the placement area. Studio's video plus subscribe template covered the C5 notes during inspection, so the draft was discarded. The other final frames use the same full notes treatment. No end-screen change was saved.
+
+
+### Brief 39: Biology genetics plates (16 October 2026)
+
+Completed 23 transparent, 2000 x 2000 Biology plates. Six were generated in this pass, and 17 pre-existing files were inspected and retained. Each has at least 8 percent clear margin on every side. The source of the 17 existing plates could not be recovered, so provenance marks it unknown.
+
+Plate | Status
+--- | ---
+`public/assets/biology/m5x-blood-typing-tile-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-cattle-red-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-cattle-roan-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-cattle-white-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-cell-protein-synthesis-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-cheek-swab-v1.png` | Created and QA checked
+`public/assets/biology/m5x-enzyme-substrate-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-fly-red-eye-v1.png` | Created and QA checked
+`public/assets/biology/m5x-fly-white-eye-v1.png` | Created and QA checked
+`public/assets/biology/m5x-gel-tank-v1.png` | Created and QA checked
+`public/assets/biology/m5x-hydrangea-blue-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-hydrangea-pink-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-pea-green-round-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-pea-green-wrinkled-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-pea-short-v1.png` | Created and QA checked
+`public/assets/biology/m5x-pea-tall-v1.png` | Created and QA checked
+`public/assets/biology/m5x-pea-yellow-round-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-pea-yellow-wrinkled-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-red-blood-cells-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-ribosome-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-snapdragon-pink-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-snapdragon-red-v1.png` | Existing, inspected and QA checked
+`public/assets/biology/m5x-snapdragon-white-v1.png` | Existing, inspected and QA checked
+
+Provenance and per-plate QA views: `docs/production/claude-pm/assets/brief39-provenance.json` and `docs/production/claude-pm/assets/brief39-qa/`. The six pair or set views cover plants, seeds, cattle, snapdragons, flies and hydrangeas.
+
+Site match: the four existing seed colour and shape plates cover the round and wrinkled pea examples. The site population lesson uses earlobe samples, so a field quadrat would be unrelated and was not made. The site protein extract does not name hair or muscle as specific examples, so those plates were not made. Fruit flies, cheek swab and gel tank are prepared assets, but the site does not explicitly use those subjects. Confirm their role when designing the lessons.
+
+New image prompts used built-in image generation: tall and short mature garden peas in the same natural-history watercolour style; a matching top-view red-eyed Drosophila and a white-eye edit retaining the pose; a sterile cheek swab beside a sample tube; and a blank gel electrophoresis tank with wells, leads and power supply. All requested no labels or background and a true alpha channel. The fly pair had bright edge artefacts removed in postprocessing.
+
+Nothing else in Brief 39 remains to produce from the site examples. Question for Claude: if the sex-linkage lesson uses only human colour blindness or haemophilia, should the fruit fly pair stay as reserve artwork?
+
+
+
+### Brief 38: Chemistry solubility plates (16 October 2026)
+
+Completed 22 painted Chemistry plates on 16 October 2026. Generated with built-in imagegen, then centred on 2000 x 2000 transparent canvases.
+
+Provenance: docs/production/claude-pm/assets/brief38-provenance.json
+QA: docs/production/claude-pm/assets/brief38-qa/
+
+## Plates
+
+- public/assets/chemistry/m5x-colourimeter-v1.png: Open school colourimeter showing the sample slot.
+- public/assets/chemistry/m5x-cuvette-1-v1.png: Iron thiocyanate coloured solution, palest standard.
+- public/assets/chemistry/m5x-cuvette-2-v1.png: Iron thiocyanate coloured solution, second standard.
+- public/assets/chemistry/m5x-cuvette-3-v1.png: Iron thiocyanate coloured solution, middle standard.
+- public/assets/chemistry/m5x-cuvette-4-v1.png: Iron thiocyanate coloured solution, fourth standard.
+- public/assets/chemistry/m5x-cuvette-5-v1.png: Iron thiocyanate coloured solution, deepest standard.
+- public/assets/chemistry/m5x-cuvette-unknown-v1.png: Iron thiocyanate coloured solution, unknown middle shade.
+- public/assets/chemistry/m5x-strong-acid-mg-v1.png: Magnesium ribbon in clear acid with many gas bubbles.
+- public/assets/chemistry/m5x-weak-acid-mg-v1.png: Matching magnesium ribbon in clear acid with few gas bubbles.
+- public/assets/chemistry/m5x-vinegar-bottle-v1.png: Plain unlabelled bottle of pale vinegar.
+- public/assets/chemistry/m5x-saturated-beaker-v1.png: Clear solution with undissolved salt crystals at the bottom.
+- public/assets/chemistry/m5x-unsaturated-beaker-v1.png: Matching clear solution with no solid remaining.
+- public/assets/chemistry/m5x-limestone-cave-v1.png: Limestone cave with stalactites and stalagmites.
+- public/assets/chemistry/m5x-kidney-stone-v1.png: Layered mineral stone with blank disc for scale.
+- public/assets/chemistry/m5x-barium-meal-glass-v1.png: Glass of opaque white barium sulfate suspension.
+- public/assets/chemistry/m5x-ppt-agcl-white-v1.png: Tube with white settled silver chloride precipitate.
+- public/assets/chemistry/m5x-ppt-pbi2-yellow-v1.png: Tube with yellow settled lead(II) iodide precipitate.
+- public/assets/chemistry/m5x-ppt-cuoh2-blue-v1.png: Tube with pale blue settled copper(II) hydroxide precipitate.
+- public/assets/chemistry/m5x-ppt-feoh3-brown-v1.png: Tube with brown settled iron(III) hydroxide precipitate.
+- public/assets/chemistry/m5x-no-ppt-clear-v1.png: Matching tube with clear colourless liquid and no solid.
+- public/assets/chemistry/m5x-cycad-plant-v1.png: Generic Australian Macrozamia cycad with a seed cone.
+- public/assets/chemistry/m5x-cycad-leaching-v1.png: Crushed cycad kernels in a plain woven bag in flowing fresh water.
+
+## QA and use notes
+
+All 22 files have real alpha, at least 8% clear margin, and 200 px checkerboard and cream views. Cuvettes, acid beakers, salt beakers and precipitate tubes have side-by-side sheets. The plate sets align by object bounding box; minor hand-painted interior detail differs across imagegen edits.
+The cycad plates are generic. The site extract does not identify a Nation or region, and museum research says preparation varied by plant and place. See provenance before narration.
+The colourimeter, geology and clinical plates are art for design use, not scientific measurement evidence.
+
+
+
+Briefs 38 and 39 local media handoff: `out/archives/brief38-39-plates-2026-10-16.zip` contains all 45 plate PNGs and 101 QA PNGs. ZIP CRC and all member hashes passed. See `docs/production/claude-pm/assets/brief38-39-media-checkpoint.json`. The archive has not been uploaded, so transfer it before reviewing these assets on another computer.

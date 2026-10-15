@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/g03c/measured/lesson.json",
+    "lessonSha256": "03d0c157cae864a0e04131772ecbb66a8ab409adfada60616586a677b18a21ce"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C5, C6a, C6b, G03a, G03b and Year 11: K expressions with powers and without solids and water, and no unit written (C5); the ICE table (I for initial, C for change, E for equilibrium) with the measured value in the Equilibrium row first and Change = E minus I (C6a); x from the coefficients, the tiny-K drop with its 5 per cent check, and multiply both sides by the bottom then divide (C6b); the five calculation types (G03a, G03b); c = n / V, n = m / M and mole ratios.",
+    "startsWith": "An unseen equilibrium calculation with a small early trap in it, and the trap checklist.",
+    "stopsAfter": "Two worked answers (a solid with a mass answer; a start plus one equilibrium value that runs backwards), each with its traps avoided and its classic mistake crossed out, and a decision board of first moves. No reversed K, tiny K, hidden perfect square or two-part question (G03d); no Q against K, amount-added or huge-K questions (G03a, G03b); no temperature and K (C9); no marks.",
+    "nextLesson": "G03d: equilibrium calculations, HSC-style practice, part 2."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-g03c.md"
+  ],
+  "teaching": {
+    "task": "Solve unseen HSC-style equilibrium calculations by spotting the trap in each and making the right first move.",
+    "causalExplanation": "K is a ratio of concentrations, so every amount in a vessel, including a measured equilibrium amount, is divided by the volume first. A measured value is where a substance ended up, so it goes in the Equilibrium row, and Change = equilibrium minus initial gives the change and its sign, which also shows which way the mixture ran. Only the change row follows the coefficients. Solids stay out of K because their concentration does not change, which can leave a simple linear equation; x is dropped only when K is tiny. The answer is converted back to what was asked: concentration times volume gives moles, and moles times molar mass give grams.",
+    "conversationalApproach": "Opens with the owner framing that these questions stump students because of a small early trap and builds a trap checklist, then gives two HSC-style questions (a warm-up built from callbacks, then a mixture that runs backwards), each with a pause and a 10 second countdown, worked one reasoning stage per scene with its classic mistake crossed out, and closes with a decision board of first moves and a handoff to part 2.",
+    "openingDecision": "In an equilibrium calculation you have not seen, where is the trap, and what do you do first so it cannot catch you?",
+    "understandingCheck": "Two response opportunities: the mass of iron at equilibrium for FeO(s) + CO with K = 0.50 (0.600 mol CO in 2.00 L); and K for CO + 2H2 = CH3OH from a start of 0.200, 0.400 and 0.400 mol and 0.320 mol methanol at equilibrium in 2.00 L.",
+    "curriculumScope": "Calculate equilibrium constants and equilibrium concentrations and amounts from supplied data (Module 5). Every question is written for HSCScience and is not presented as an official question. Reversed K, tiny K, perfect squares and two-part questions (G03d), Q against K, amount-added and huge-K questions (G03a, G03b), temperature dependence of K, colorimetry, Ksp, acid calculations and mark allocation are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the C6 three-zone board (task line, equation strip, grouped givens card), the C6 ICE table with the C6a equilibrium-row-first pen arrow and E minus I bracket, the C5 expression builder, the C6 algebra line, the C6b check ruler, type badges from the C6a, G03a and G03b type cards, G03a coded sealed vessels, a new coded trap checklist and convert-back chain, and the countdown ring. Colour key as C6 and G03: made plus green, used up minus red, K teal, pen for rings and the measured value.",
+    "transitionPlan": "The trap checklist opens the lesson, shrinks to a strip on the far left that ticks the traps each question meets and dims during each countdown, and returns as the two-column decision board; each question gets a fresh board in the same three zones with the earlier question cleared; the next chip points to part 2; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook-traps",
+      "visualDecision": "new",
+      "visualReference": "Coded trap checklist board with five empty tick boxes, two question cards fanning out with two faint part 2 cards behind, and a method strip with a mini ICE table",
+      "teachingReason": "Earns attention with the owner framing (these questions stump students) and gives the part 1 trap checklist that both questions tick",
+      "narrationCue": "trap / zero / solid / two HSC-style questions / one step at a time",
+      "motionPurpose": "The checklist rows write on as each trap is said, two question cards fan out with faint part 2 cards behind, and the method strip writes under them, then the checklist shrinks to a strip on the left",
+      "motionRole": "explain",
+      "onScreenChange": "Heading \"Where equilibrium calculations go wrong\" writes on; four checklist rows write on their cues (moles, coefficient, zero, solid) and \"convert back to moles or grams\" writes on quietly; on \"two HSC-style questions\" two cards fan out with the tag \"HSC-style question, written for HSCScience\" and two faint cards marked \"part 2\" behind them; on \"one step at a time\" the strip \"I C E: equilibrium value into E first, then Change = E - I, then the coefficients\" writes with a mini ICE table; the checklist shrinks to a strip on the far left",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "mini ICE table",
+        "panel shrink"
+      ],
+      "holdPurpose": "Hold about 1 second, then the checklist shrinks"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "Fresh three-zone board: the task line, the FeO(s) + CO strip with state symbols, the G03a coded sealed vessel with a grey-black FeO lump, a grouped givens card with the molar mass of iron and an empty ICE outline with row labels only",
+      "teachingReason": "Unseen practice on a solid in K, a linear K equation and converting back to grams, with every given and the demand visible and no answer cues",
+      "narrationCue": "Question one / solid / 0.50 / 2.00 litre / 0.600 moles / mass of iron / Pause here to answer",
+      "motionPurpose": "The board builds as each given is named, the (s) on FeO and the task line get pen rings, the trap strip dims and the countdown ring runs through the answer-free hold",
+      "motionRole": "explain",
+      "onScreenChange": "Type badge \"Type 3: K + start\"; task \"Find the mass of iron at equilibrium.\"; the equation strip with \"(s)\" visible; givens \"K = 0.50 (about 800 C)\", \"vessel: 2.00 L\", \"FeO: solid, in excess\", \"start: CO 0.600 mol\", \"start: no Fe, no CO2\", \"Fe: 55.85 g/mol\" with the two tags; pen rings on \"(s)\" and on the task line; an empty ICE outline with I, C and E only; the trap strip dims; the countdown ring starts after the narration with \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "board build",
+        "ScribbleCircle",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q1-expression",
+      "visualDecision": "adjust",
+      "visualReference": "The FeO and Fe in the strip greying out, the C5 expression builder with a crossed ghost expression, the C6 ICE table with CO and CO2 columns, a division on the givens card and 1 : 1 coefficient chips",
+      "teachingReason": "Leaves the solids out of K, names the ICE rows and builds the table with x because nothing at equilibrium is measured",
+      "narrationCue": "solids / I C E table / 0.300 moles per litre / x",
+      "motionPurpose": "The two solids grey out, the builder writes K = [CO2] / [CO] beside a crossed ghost, the ICE letters expand, 0.300 flies into the table and the change and equilibrium rows fill with x",
+      "motionRole": "explain",
+      "onScreenChange": "On \"solids\" FeO and Fe grey out with \"solids: not in K\"; the builder writes K = [CO2] / [CO] with a crossed ghost \"[Fe][CO2] / ([FeO][CO])\"; an unspoken chip \"same rule: pure liquids and water as the solvent stay out\"; on \"I C E table\" the row letters expand to Initial, Change, Equilibrium and the CO and CO2 headings write on; on \"0.300 moles per litre\" the division runs on the card into the CO Initial cell and CO2 ticks 0; on \"x\" the Change row fills -x and +x with chips \"1 : 1\" and the Equilibrium row fills \"0.300 - x\" and \"x\"; the trap strip ticks \"a solid\" and \"moles given\"",
+      "motionTools": [
+        "grey-out",
+        "expression builder",
+        "Mark cross",
+        "ICE letter expand",
+        "NumberTicker division",
+        "coefficient fly-in",
+        "table cell tick"
+      ],
+      "holdPurpose": "Hold the finished table"
+    },
+    {
+      "sceneId": "q1-solve",
+      "visualDecision": "adjust",
+      "visualReference": "The K line with the C6b check ruler flashing a crossed ghost case at 50 per cent, the C6 algebra line with pen asides for multiply both sides by the bottom and divide, and a teal check",
+      "teachingReason": "Shows that K = 0.50 is not tiny, so x is kept, and solves the linear equation with the general rearranging move",
+      "narrationCue": "do not drop the x / Multiply both sides by the bottom / divide both sides by 1.50 / x is 0.100",
+      "motionPurpose": "A ghost ruler shows dropping x would take half the start and is crossed, then the algebra line moves one stage at a time to x = 0.100 and a teal check ticks",
+      "motionRole": "explain",
+      "onScreenChange": "The K line \"x / (0.300 - x) = 0.50\" with \"K: no unit written\"; on \"do not drop the x\" the check ruler flashes \"drop x: x = 0.150, half the start\" far past the dashed 5 per cent line, crossed, \"K = 0.50 is not tiny\"; on \"Multiply both sides by the bottom\" a pen arrow carries (0.300 - x) across, \"x = 0.50 (0.300 - x)\", \"x = 0.150 - 0.50x\", the 0.50x slides across, \"1.50x = 0.150\"; on \"divide both sides by 1.50\" the aside and \"x = 0.100 mol/L\"; the Equilibrium row ticks 0.200 and 0.100; \"0.100 / 0.200 = 0.50 = K\" gets a teal tick",
+      "motionTools": [
+        "bar draw",
+        "Mark cross",
+        "DrawPath arrow",
+        "term slide",
+        "HandText write-on",
+        "tick"
+      ],
+      "holdPurpose": "Hold the answer line"
+    },
+    {
+      "sceneId": "q1-mass",
+      "visualDecision": "new",
+      "visualReference": "A pen bracket joining Fe and CO2 with 1 : 1, a new coded convert-back chain (mol/L, times L, mol, times g/mol, g), metal flecks in the vessel and two crossed wrong-answer chips",
+      "teachingReason": "Converts the answer back to what was asked, a mass, and names the classic slip of forgetting the volume",
+      "narrationCue": "mass of iron / one iron for every carbon dioxide / 2.00 litres / 11.2 grams / 5.6 grams",
+      "motionPurpose": "The task line pulses, the 1 : 1 bracket draws, the convert-back chain builds link by link to 11.2 g, flecks of iron appear in the vessel and the 5.6 g chip is crossed with an arrow to the volume",
+      "motionRole": "explain",
+      "onScreenChange": "On \"mass of iron\" the task line pulses; on \"one iron for every carbon dioxide\" a pen bracket joins Fe and CO2 with \"1 : 1\"; the chain builds \"[CO2] = 0.100 mol/L\", \"x 2.00 L\", \"= 0.200 mol CO2 = 0.200 mol Fe\", \"x 55.85 g/mol\", \"= 11.2 g Fe\" with a tick; the lump gains grey metal flecks; on \"5.6 grams\" the chip \"0.100 x 55.85 = 5.6 g: volume forgotten\" is crossed with a pen arrow to \"2.00 L\"; an unspoken chip \"0.100: a concentration, not a mass\" is crossed; the trap strip ticks \"convert back\"; aid chip \"Convert back last.\"",
+      "motionTools": [
+        "bracket draw",
+        "chain build",
+        "tick",
+        "particle flecks",
+        "Mark cross",
+        "DrawPath arrow"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "Fresh three-zone board: the CO + 2H2 = CH3OH strip with the 2 highlighted, a coded sealed vessel, a grouped givens card with a non-zero methanol start and one equilibrium amount, and an empty ICE outline",
+      "teachingReason": "Unseen practice on a start plus one equilibrium value where the product starts above its equilibrium value, with every given visible and no answer cues",
+      "narrationCue": "Question two / 2.00 litre / 0.400 moles of methanol / 0.320 moles / Calculate K / Pause here to answer",
+      "motionPurpose": "The board builds as each given is named, the methanol start and the equilibrium line get pen rings, the trap strip dims and the countdown ring runs through the answer-free hold",
+      "motionRole": "explain",
+      "onScreenChange": "Type badge \"Type 2: start + one equilibrium value\"; task \"Calculate K.\"; the equation strip with the 2 highlighted; givens \"vessel: 2.00 L\", \"start: CO 0.200 mol, H2 0.400 mol, CH3OH 0.400 mol\", \"at equilibrium: CH3OH 0.320 mol\", \"about 230 C\" with the tags; pen rings on the methanol start and on the equilibrium line; an empty ICE outline with mol/L headings; the trap strip dims; the countdown ring starts after the narration; no divisions, signs or arrows",
+      "motionTools": [
+        "Countdown ring",
+        "board build",
+        "ScribbleCircle",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q2-initial",
+      "visualDecision": "adjust",
+      "visualReference": "The C6 ICE table with divisions flying from the givens card, the C6a E-row-first pen arrow, the E minus I bracket and a right-to-left pen arrow under the equation strip",
+      "teachingReason": "Practises the owner order: divide first, measured value into the E row, change as E minus I, and reads the direction from the sign",
+      "narrationCue": "divide by 2.00 / equilibrium row / equilibrium minus initial / minus 0.0400 / down",
+      "motionPurpose": "Each start divides into the Initial row, the measured value flies into the Equilibrium cell, the E minus I bracket draws up the column to give -0.0400 and a reverse arrow appears under the equation",
+      "motionRole": "explain",
+      "onScreenChange": "On \"divide by 2.00\" each start divides on the card with \"÷ 2.00\" and flies into the Initial row (0.100, 0.200, 0.200); \"0.320 mol / 2.00 L = 0.160 mol/L\" converts; on \"equilibrium row\" the pen arrow carries 0.160 into the CH3OH Equilibrium cell and the other two show dashed \"?\"; on \"equilibrium minus initial\" the \"E - I\" bracket draws with \"0.160 - 0.200\" and on \"minus 0.0400\" the Change cell ticks -0.0400 in red; on \"down\" a pen arrow under the strip points right to left with \"ran backwards: the sign says so\"; the trap strip ticks \"a value that does not start at zero\"",
+      "motionTools": [
+        "NumberTicker division",
+        "DrawPath arrow",
+        "bracket draw",
+        "table cell tick",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q2-change-and-k",
+      "visualDecision": "adjust",
+      "visualReference": "Coefficient chips flying into the Change row, a pen plus between the Initial and Change rows, the C5 expression builder with the power flying up and the working in beats with a grey guard-digit aside",
+      "teachingReason": "Shows that only the change row follows the coefficients, completes the table and finds K from the equilibrium row only",
+      "narrationCue": "two / 0.0800 / Add each change to its start / squared / extra figures / K is 14.6",
+      "motionPurpose": "The 1 and 2 chips fly into the Change row, the Equilibrium row completes, the builder writes K with the power flying up and the working writes in beats to K = 14.6",
+      "motionRole": "explain",
+      "onScreenChange": "On \"two\" the chips fly to the CO and H2 Change cells: +0.0400 and, on \"0.0800\", +0.0800 with a \"x 2\" arrow and the ratio chip \"1 : 2 : 1\"; on \"Add each change to its start\" a pen plus draws and the Equilibrium row completes 0.140 and 0.280; on \"squared\" the builder writes K = [CH3OH] / ([CO][H2]^2) with the 2 flying up and \"equilibrium values only\"; \"0.280^2 = 0.0784\", \"0.140 x 0.0784 = 0.010976\", the aside \"rounding to 0.0110 gives 14.5\" on \"extra figures\", then \"K = 0.160 / 0.010976 = 14.6\" in teal with \"K: no unit written\"; the trap strip ticks \"a coefficient\"",
+      "motionTools": [
+        "coefficient fly-in",
+        "table cell tick",
+        "expression builder",
+        "HandText write-on",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold the K line"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "adjust",
+      "visualReference": "A ghost copy of the ICE table with the measured value in the Change row, crossed in red beside the real table, and two smaller crossed wrong-answer chips",
+      "teachingReason": "Names the classic slip for this question type and shows why the measured value is an equilibrium value, not a change",
+      "narrationCue": "change row / ended up",
+      "motionPurpose": "A ghost table with +0.160 in the Change cell appears and is crossed, then the real table returns with a pen ring on 0.160 in the Equilibrium row",
+      "motionRole": "explain",
+      "onScreenChange": "A ghost table shows \"+0.160\" in the CH3OH Change cell and \"0.360\" in its Equilibrium cell; on \"change row\" it is crossed in red with \"that is the equilibrium value, not the change\"; on \"ended up\" the real table returns with a pen ring on 0.160 in the Equilibrium row; unspoken crossed chips \"H2 +0.0400 (coefficient missed): K = 19.8\" and \"moles put into K: 3.64\" fade in; aid chip \"E row first.\"",
+      "motionTools": [
+        "ghost table",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "The part 1 trap checklist returning full size as a two-column board (what you see, what you do first) with question badges, a quiet K-not-tiny footer and a next chip with three small part 2 icons",
+      "teachingReason": "Packs part 1 into a short list of first moves and hands off to part 2",
+      "narrationCue": "Moles and a volume / One equilibrium value / coefficient / solid / grams / Next",
+      "motionPurpose": "The checklist grows into a two-column board and each row lights on its cue with the badge of the question that used it, then the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The strip grows to a two-column board \"What you see in the question\" and \"What you do first\"; rows light on their cues: moles and a volume (Q1, Q2), one equilibrium value (Q2), a coefficient (Q2), a solid or water as the solvent (Q1), mol or g (Q1); a quiet footer \"K not tiny (like 0.50): keep x (Q1)\"; on \"Next\" the chip \"Next: part 2, questions 3 and 4\" slides in with a flipping strip, a tiny-K mark and a square bracket icon",
+      "motionTools": [
+        "panel grow",
+        "row light",
+        "HandText write-on",
+        "chip slide-in",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Key notes card with the memory aids in large writing and their condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 45 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude student-learning reviewer (AI source review of the full practice set; findings resolved in Revision 2); Revision 3 split for length reuses every question scene verbatim, with a new hook and decision board (Claude designer self-review); independent review of the exact voiced preview pending",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g03c-learning-review.md",
+      "sha256": "9c0927bd9cc112dd80fc5acebca2f8e02a9ba1bd94d5f13b004bb78c591af7a2"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g03c-claude-science-check.md",
+      "sha256": "b1e7b9e1ae234eec8faada0ea897930034dd90f992a4c1245c2e82b3412c460f"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

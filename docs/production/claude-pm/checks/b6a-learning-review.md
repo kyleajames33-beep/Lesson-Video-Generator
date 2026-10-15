@@ -184,3 +184,42 @@ Nits for the build, no review change needed: the green tick in 13a conflicts wit
 ### Verdict
 
 **Pass after listed fixes.** Apply N1 to N5 and N7 in the script lock (about +15 words net, no scene changes), and N6 as the author prefers. Then repeat this review on the exact voiced preview for scenes 4, 6, 8a, 9, 12a, 12b and 13b. Human listening remains pending; this review is not learner evidence.
+
+
+## Re-review (Revision 5, 15 Oct, owner: harder questions)
+
+Scope: the new attempt and feedback scenes 12a to 12d only (all other scenes are recorded take 01 and unchanged). Text only; stills and audio not inspected. Reviewer stance: a student starting Year 12 who has watched this video and B2c, B4, B5a and B5b.
+
+### Trace
+
+- **12a (two cells described by their DNA).** Entry: the student has seen every structure on the card, but never as words without a picture. To answer, they must translate "compartment with a membrane" into "nucleus" (scene 2 used exactly this gloss), "two different kinds of organelle" with rings into mitochondria and chloroplasts (scene 9 showed both, and only those two), and "one ring, no membrane, held by proteins" plus "small separate rings" into the nucleoid and plasmids (scenes 3 to 5). "As precisely as you can" makes the student go past "eukaryote" to "plant cell", which needs the second organelle: a real step up from the take 01 item. Part (b) asks for the endosymbiosis cause from scene 9 rather than a recalled fact. All of it is reachable from the lesson; none of it is answered on the card.
+- **12b (feedback one).** Each conclusion follows its evidence ("That is a nucleus, so X is a eukaryote"; "There is no nucleus, so Y is a prokaryote"), which models the justify move. The animal-cell contrast explains why "plant" is more precise. The crossed mistake ("circular DNA makes X a prokaryote") is the one item (b) invites, and the fix points back to the scene 14 rule (the nucleus decides). The model-answer column builds one line per point, with earlier pictures shrunk, so only the current stage is large.
+- **12c (explain the faster spread).** Needs a cause chain: a chromosome gene is inherited at division (B2c recall), a plasmid is copied separately (scene 5), conjugation passes plasmids (scene 5), and new carriers pass it on. The condition "mixed with bacteria that lack the gene" is necessary and is on the card and in the narration. No answer cue is drawn.
+- **12d (feedback two).** One cause per line, with the two 16-cell populations showing the difference (down only, against sideways and down). "It spreads sideways, not just down the generations" is a short, useful memory line. The crossed mistake (conjugation is reproduction) matches B2c's teaching and the likely confusion.
+
+### Findings
+
+| # | Where | Issue | Recommendation | Severity |
+| --- | --- | --- | --- | --- |
+| L1 | 12c draft | "strain" was used for the two bacteria; the term is not taught or glossed. | Use "type A" and "type B". | should fix |
+| L2 | 12c draft | "spread through a population" left open which population; the explanation depends on there being bacteria without the gene. | State the condition: each type is mixed with bacteria that lack the gene; keep it on the card. | should fix |
+| L3 | 12a | The card is text where a diagram might sit. | Accept: the item tests translating descriptions into structures, and any drawing of the structures would give the answer. Keep neutral grey cell outlines only, two short columns at reading size. | note |
+| L4 | 12b | The longest new scene (about 45 s). | Keep: one point per line with pictures; if the take runs long, cut the animal-cell sentence first (the chip keeps it). | note |
+| L5 | 12a | Two demands plus four evidence rows is the heaviest card in the video. | Fine for a paused item: every row is short, the card stays at full size through and after the countdown, and the narration reads both demands. | note |
+
+### Checks
+
+| Question | Result |
+| --- | --- |
+| Harder than take 01, at HSC level | Yes: unfamiliar descriptions, a precision demand, and an explain demand with a cause chain. |
+| Inside what the video taught | Yes, plus the B2c recall of fission and conjugation. |
+| "Pause here to answer." then a 10 s countdown, all data on screen | Yes for 12a and 12c. |
+| Feedback one point at a time, each tied to evidence or a cause, one classic mistake crossed | Yes for 12b and 12d. |
+| Mark-allocation language | None. |
+| Stacked single-word sentences | None ("Second, bacteria of type A ..."). |
+| Em dashes U+2014 | None. |
+| Runtime | About 9.5 minutes, at the top of the target. |
+
+### Verdict
+
+**Pass after L1 and L2 (applied in Revision 5).** Repeat this review on the exact voiced preview of 12a to 12d before full export. Human listening remains pending; this review is not learner evidence.

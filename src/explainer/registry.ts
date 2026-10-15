@@ -15,6 +15,8 @@ import {config_c09} from './lessons/chem-m5-c09/config';
 import {config_g01} from './lessons/chem-m5-g01/config';
 import {config_g03a} from './lessons/chem-m5-g03a/config';
 import {config_g03b} from './lessons/chem-m5-g03b/config';
+import {config_g03c} from './lessons/chem-m5-g03c/config';
+import {config_g03d} from './lessons/chem-m5-g03d/config';
 import {config_b01} from './lessons/bio-m5-b01/config';
 import {config_b02a} from './lessons/bio-m5-b02a/config';
 import {config_b02b} from './lessons/bio-m5-b02b/config';
@@ -27,4 +29,4 @@ import {config_b05a} from './lessons/bio-m5-b05a/config';
 import {config_b05b} from './lessons/bio-m5-b05b/config';
 import {config_b06a} from './lessons/bio-m5-b06a/config';
 
-export const explainers: ExplainerConfig[] = [mouldConfig, config_c01, config_c02, config_c03, config_c04a, config_c04b, config_c05, config_c06, config_c06a, config_c06b, config_c07, config_c08, config_c09, config_g01, config_g03a, config_g03b, config_b01, config_b02a, config_b02b, config_b02c, config_b03a, config_b03a2, config_b03b, config_b04, config_b05a, config_b05b, config_b06a];
+export const explainers: ExplainerConfig[] = [mouldConfig, config_c01, config_c02, config_c03, config_c04a, config_c04b, config_c05, config_c06, config_c06a, config_c06b, config_c07, config_c08, config_c09, config_g01, config_g03a, config_g03b, config_g03c, config_g03d, config_b01, config_b02a, config_b02b, config_b02c, config_b03a, config_b03a2, config_b03b, config_b04, config_b05a, config_b05b, config_b06a];

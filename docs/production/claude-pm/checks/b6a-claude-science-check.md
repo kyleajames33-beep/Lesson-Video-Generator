@@ -64,3 +64,30 @@ Revision 3 of `lessons/bio-m5-b06a.md` (13 Oct). All 8 findings applied as recom
 8. Finding 8 (table): first header cell "Typical forms", scene 10 columns "typical prokaryote" and "typical eukaryote".
 
 UNVERIFIED items 1 to 4 are unchanged and remain for Codex fact check; no spoken figure depends on them (the 10,000 and 40-fold figures are screen-only or author-note).
+
+
+## Revision 5 science check (15 Oct, new questions 12a to 12d)
+
+Scope: the new attempt cards, narration and model answers in scenes 12a to 12d of `lessons/bio-m5-b06a.md`. Checked against standard texts (Campbell Biology; Alberts, Molecular Biology of the Cell) and the claims already verified above. No new figures are spoken. Not web-fetched in this pass.
+
+Claims checked:
+1. Linear DNA wound on histones inside a membrane-bound compartment identifies a nucleus and so a eukaryote. Correct. (Archaea can have histones but have no nucleus, so the membrane compartment is what decides.)
+2. Small circular DNA in two different kinds of organelle identifies mitochondria and chloroplasts; an animal cell has organelle DNA in mitochondria only. Correct at this level. See S2.
+3. One circular main DNA molecule with no membrane, coiled and held by proteins, plus small separate rings with a resistance gene identifies a prokaryote such as a bacterium, with a nucleoid and plasmids. Correct. See S4.
+4. Organelle DNA is circular because mitochondria and chloroplasts descend from bacteria (endosymbiosis). Correct as the lesson already states it (scene 9). Plant organelle DNA is often linear or branched in living cells; the card says "circular", matching the lesson's model (author note, unchanged).
+5. "Circular DNA makes X a prokaryote" is wrong because the presence of a nucleus defines the cell type. Correct.
+6. A gene on the main chromosome is passed on when the cell divides (binary fission), to that cell's offspring. Correct, with S1.
+7. A plasmid is replicated independently of the main chromosome; in conjugation a copy passes from donor to recipient and the donor keeps a copy (one strand is transferred and both cells make the complementary strand). Correct. See S3.
+8. A cell that receives a conjugative plasmid can itself act as a donor, so the gene can keep spreading; conjugative plasmids are a main route for the spread of antibiotic resistance between bacteria (horizontal gene transfer). Correct; "can" covers plasmids that are not self-transmissible.
+9. Conjugation does not make a new cell. Correct (it transfers DNA between existing cells; reproduction is by binary fission).
+
+Findings:
+- S1 (minor). Chromosomal genes can also move between bacteria (for example by transformation, transduction, or conjugation from a chromosome-integrated plasmid). Recommendation: say the chromosome gene "usually" reaches new cells only at division.
+- S2 (minor). Plants are not the only eukaryotes with chloroplasts (algae and some protists have them). Recommendation: "most likely a plant cell" in narration, and accept any photosynthetic eukaryote with the same reasoning in the model answer.
+- S3 (wording). The donor keeps its plasmid. Recommendation: say "passes a copy to a neighbour and keeps its own" and show a "kept" tag, so the student does not picture the plasmid leaving the donor.
+- S4 (minor). Y's description does not by itself exclude an archaeon. Recommendation: "a prokaryote, such as a bacterium", consistent with the lesson's B11 rule.
+- S5 (screen). Any counter of cells with the gene is an illustration, not data. Recommendation: tag it "illustration, not measured data".
+
+No error found in the new model answers once S1 to S5 are applied.
+
+Resolution (Revision 5 science check): all five findings applied in `lessons/bio-m5-b06a.md` Revision 5. S1: 12d says "usually reaches new cells only when its cell divides". S2: 12b says "most likely a plant cell"; the model answer accepts any photosynthetic eukaryote with the same reasoning. S3: 12d says "passes a copy to a neighbour and keeps its own", with a "kept" tag on the donor. S4: 12b says "a prokaryote, such as a bacterium". S5: the 12d counter carries "illustration, not measured data".

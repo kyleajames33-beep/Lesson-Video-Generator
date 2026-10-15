@@ -1,0 +1,57 @@
+{
+  "brief": "36-b6a-scale-plates",
+  "date": "2026-10-15",
+  "model": "OpenAI built-in image_gen; exact model identifier not exposed",
+  "files": [
+    {
+      "file": "public/assets/biology/b6a-tennis-ball-v1.png",
+      "prompt": "Transparent textbook plate for a Year 12 biology lesson. Draw one tennis ball in the traditional ink and watercolour style of the B6a bacterium and animal-cell reference plates: sepia pen contours, translucent ochre and olive yellow-green washes, restrained felt stipple, curved white seam. Slightly elevated three-quarter view. Centered, about 72 percent of square canvas width, with at least 8 percent transparent margin. Very small soft contact shadow. Readable at 200 px. No photograph, text, numbers, arrows, labels, background, ground plane, halo, frame or watermark.",
+      "reference_images": [
+        "public/assets/biology/b6a-bacterium-v1.png",
+        "public/assets/biology/b6a-animal-cell-v1.png"
+      ],
+      "source": "C:/Users/kygs/.codex/generated_images/01a13f3e-8683-7481-beac-7e4ebcef2b1c/exec-dfd124e6-81ef-43ea-9164-961155294f8e.png",
+      "retakes": 1,
+      "method": "Resized the generated 1254 x 1254 RGBA plate to 1600 x 1600. Removed alpha values below 8 to clear isolated edge specks.",
+      "canvas": [1600, 1600],
+      "sha256": "3a5e694350bfc50c237c99a1d1876299b846f2b42bc3c8384479fd29aa9319fc",
+      "checks": {
+        "alpha_mode": "RGBA",
+        "alpha_bbox": [174, 165, 1428, 1417],
+        "eight_percent_margins_clear": true,
+        "visible_at_200px": true,
+        "no_text_labels_arrows_or_numbers": true
+      }
+    },
+    {
+      "file": "public/assets/biology/b6a-long-walk-strip-v1.png",
+      "prompt": "Extra-wide panoramic transparent illustrated walking map. One continuous winding footpath from the far left edge to the far right edge, seen slightly from above. Keep the beginning quiet for a tennis-ball and plum-thread overlay. Small landmarks in left-to-right order: house, park with trees, a few shops, sports oval, river and bridge carrying the same path, green hill, distant town. Fine sepia ink and muted translucent watercolour matching the B6a reference plates. Simple shapes that read in a 1920 px crop. No people, cars, signs, text, labels, numbers, arrows, frame, sky or watermark. Real alpha transparency around the painted path and landmarks.",
+      "reference_images": [
+        "public/assets/biology/b6a-bacterium-v1.png",
+        "public/assets/biology/b6a-animal-cell-v1.png"
+      ],
+      "source": "C:/Users/kygs/.codex/generated_images/01a13f3e-8683-7481-beac-7e4ebcef2b1c/exec-39438e76-f633-441e-bc4c-66c847ff3c5c.png",
+      "retakes": 0,
+      "method": "Cropped transparent height from the generated 2191 x 718 RGBA panorama to 2191 x 438, then resized uniformly to 4000 x 800.",
+      "canvas": [4000, 800],
+      "sha256": "314363617a1b669ef2d2131475d8f017b4030975711fd89a5f7d79f4e19bca04",
+      "checks": {
+        "alpha_mode": "RGBA",
+        "path_reaches_both_horizontal_edges": true,
+        "path_continuous_in_left_middle_and_right_crops": true,
+        "landmarks_in_requested_order": true,
+        "no_people_cars_signs_or_text": true
+      }
+    }
+  ],
+  "qa_dir": "docs/production/claude-pm/assets/brief36-qa",
+  "qa_files": [
+    "b6a-tennis-ball-v1-checkerboard.png",
+    "b6a-tennis-ball-v1-200px.png",
+    "b6a-long-walk-strip-v1-checkerboard.png",
+    "b6a-long-walk-strip-v1-200px.png",
+    "b6a-long-walk-strip-v1-left-1920px.png",
+    "b6a-long-walk-strip-v1-middle-1920px.png",
+    "b6a-long-walk-strip-v1-right-1920px.png"
+  ]
+}

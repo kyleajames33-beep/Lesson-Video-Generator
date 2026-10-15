@@ -1,11 +1,12 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {staticFile, useCurrentFrame} from 'remotion';
 import {AMBER_INK, Countdown, DrawPath, FONT_HAND, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
 import {AnswerTable, Chip, Fade, Flame, HABER_EQ, MEOH_EQ, Overlay, Snowflake, Sx, eqLayout} from './parts';
 import type {TRow} from './parts';
 import {GivensCard} from '../chem-m5-c06/parts';
 import {Heading, COLD, COST, HEAT, RATE, YIELD, GREEN, sc} from './common';
+import {HAVE_TUG, TUG, TUG_NAT, TUG_PLATE_ICONS} from './assets';
 
 const clamp = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 
@@ -54,7 +55,8 @@ export const SceneModelAnswer: React.FC = () => {
 		{label: 'Removal', at: K1.rem, cells: [
 			{text: 'taking NH_3 away: more is made in total', at: K1.out, tick: K1.out + 60},
 			{text: 'reverse rate stays low, so forward stays ahead', at: K1.rev},
-			null,
+			// owner fix (16 Oct): the Removal limit. No narration of its own, so it writes on during the Removal row, after the rate cell.
+			{text: 'cooling to condense NH_3 costs energy; unreacted N_2 and H_2 are recycled', at: K1.rev + 30, size: 30},
 		]},
 	];
 	return (
@@ -89,6 +91,28 @@ const Figure: React.FC<{cx: number; dir: 1 | -1; color: string; jitter: number}>
 		</g>
 	);
 };
+/**
+ * Painted tug of war (Codex brief 43): three aligned layers on one canvas. The rope-and-flag layer slides with the
+ * wobble and settles centred (the flag at the middle); each figure leans back and slides a little with its end of the rope.
+ */
+const TG = {x: 400, y: 215, w: 1120};
+const TugPlates: React.FC<{wob: number; flagDx: number; leftAt: number; rightAt: number; settle: number}> = ({wob, flagDx, leftAt, rightAt, settle}) => {
+	const f = useCurrentFrame();
+	const h = (TG.w / TUG_NAT[0]) * TUG_NAT[1];
+	const lean = (1 - settle) * 2.2 * Math.sin(f * 0.21);
+	const layer = (src: string, dx: number, rot: number, px: number) => (
+		<g transform={`translate(${dx},0) rotate(${rot},${px},${TG.y + h * 0.95})`}>
+			<image href={staticFile(src)} x={TG.x} y={TG.y} width={TG.w} height={h} />
+		</g>
+	);
+	return (
+		<>
+			<Fade at={leftAt}>{layer(TUG.rope, flagDx, 0, TG.x + TG.w / 2)}</Fade>
+			<Fade at={leftAt}>{layer(TUG.left, wob, -2.5 - lean, TG.x + TG.w * 0.2)}</Fade>
+			<Fade at={rightAt}>{layer(TUG.right, -wob, 2.5 + lean, TG.x + TG.w * 0.8)}</Fade>
+		</>
+	);
+};
 export const SceneAid: React.FC = () => {
 	const f = useCurrentFrame();
 	const settle = prog(f, K2.comp, 40);
@@ -101,15 +125,16 @@ export const SceneAid: React.FC = () => {
 			<Overlay>
 				{/* the two forces */}
 				<Fade at={K2.yc}>
-					<Snowflake x={170} y={528} s={2.2} />
+					{TUG_PLATE_ICONS && HAVE_TUG ? null : <Snowflake x={170} y={528} s={2.2} />}
 					<Sx x={290} y={360} text="yield" size={68} color={COLD} anchor="middle" hand at={K2.yc} />
 					<Sx x={290} y={400} text="asks for cold" size={36} color={COLD} anchor="middle" hand at={K2.yc + 8} />
 				</Fade>
 				<Fade at={K2.sh}>
-					<Flame x={1750} y={528} s={2.2} />
+					{TUG_PLATE_ICONS && HAVE_TUG ? null : <Flame x={1750} y={528} s={2.2} />}
 					<Sx x={1630} y={360} text="speed" size={68} color={HEAT} anchor="middle" hand at={K2.sh} />
 					<Sx x={1630} y={400} text="asks for hot" size={36} color={HEAT} anchor="middle" hand at={K2.sh + 8} />
 				</Fade>
+				{HAVE_TUG ? <TugPlates wob={wob} flagDx={flag - 960} leftAt={K2.yc} rightAt={K2.sh} settle={settle} /> : <>
 				<Fade at={K2.yc}>
 					<g opacity={1}><Figure cx={lx} dir={-1} color="#cfe3f3" jitter={0} /></g>
 				</Fade>
@@ -124,12 +149,13 @@ export const SceneAid: React.FC = () => {
 					<path d={`M${flag},520 L${flag},438`} stroke={INK} strokeWidth={6} strokeLinecap="round" />
 					<path d={`M${flag},438 L${flag + 70},458 L${flag},478 Z`} fill="#f5c542" stroke={AMBER_INK} strokeWidth={4} strokeLinejoin="round" />
 				</Fade>
+				</>}
 				<Fade at={K2.comp}>
-					<Sx x={960} y={606} text="about 450 C" size={56} color={AMBER_INK} anchor="middle" hand at={K2.comp} />
+					<Sx x={960} y={HAVE_TUG ? 636 : 606} text="about 450 C" size={56} color={AMBER_INK} anchor="middle" hand at={K2.comp} />
 				</Fade>
 				<Fade at={K2.mid}>
-					<Sx x={960} y={680} text="a middle temperature that gives the most" size={38} color={INK} anchor="middle" hand at={K2.mid} />
-					<Sx x={960} y={726} text="in the time available" size={38} color={INK} anchor="middle" hand at={K2.mid + 8} />
+					<Sx x={960} y={HAVE_TUG ? 692 : 680} text="a middle temperature that gives the most" size={38} color={INK} anchor="middle" hand at={K2.mid} />
+					<Sx x={960} y={HAVE_TUG ? 736 : 726} text="in the time available" size={38} color={INK} anchor="middle" hand at={K2.mid + 8} />
 				</Fade>
 				{/* when it applies */}
 				<Fade at={K2.mean}>

@@ -148,6 +148,8 @@ export const SceneAddAnswer: React.FC = () => {
 			<Sx x={720} y={406} text="= 4.00" size={46} color={TEAL} at={-100} />
 			<Sx x={X} y={560} text="0.100 + y = 0.250 ÷ (4.00 × 0.100) =" size={42} at={KD.py} />
 			<Sx x={X + tw('0.100 + y = 0.250 ÷ (4.00 × 0.100) = ', 42)} y={560} text="0.625" size={46} color={H2OK} at={KD.r625} />
+			{/* Revision 2 pen tag (owner rule): how the 0.100 + y line was rearranged */}
+			<Tag x={96} y={466} w={600} text="multiply both sides by the bottom, then divide" at={KD.py + 10} size={28} color={AMBER_INK} />
 			<Sx x={X} y={640} text="y = 0.625 − 0.100 = 0.525 mol/L" size={44} at={KD.y525} />
 			<Sx x={X} y={740} text={l2} size={46} at={KD.vessel} />
 			<Sx x={X + tw(l2, 46)} y={746} text="1.05 mol" size={66} color={TEAL} hand at={KD.r105} />

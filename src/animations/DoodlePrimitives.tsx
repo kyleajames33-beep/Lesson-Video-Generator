@@ -605,6 +605,7 @@ export const ScribbleAnnotation = ({
 	delay = 0,
 	leaderDurationFrames = 12,
 	labelDurationFrames = 12,
+	fontSize = 28,
 }: {
 	x: number;
 	y: number;
@@ -617,6 +618,7 @@ export const ScribbleAnnotation = ({
 	delay?: number;
 	leaderDurationFrames?: number;
 	labelDurationFrames?: number;
+	fontSize?: number;
 }) => {
 	const frame = useCurrentFrame();
 	const leaderDraw = interpolate(frame, [delay, delay + leaderDurationFrames], [0, 1], clamp);
@@ -672,7 +674,7 @@ export const ScribbleAnnotation = ({
 							? `translate(8px, calc(-50% + ${labelTy}px))`
 							: `translate(calc(-100% - 8px), calc(-50% + ${labelTy}px))`,
 					fontFamily: '"Caveat", "Kalam", cursive',
-					fontSize: 28,
+					fontSize,
 					color,
 					fontWeight: 600,
 					whiteSpace: 'nowrap',

@@ -1,5 +1,12 @@
 # Project working rules
 
+- The old slide engine (src/LessonVideo.tsx, src/slides/, src/animations/) is
+  frozen, read-only legacy (owner, 16 October 2026). Build new videos on
+  src/explainer. Port only useful calculation logic into the explainer when a
+  lesson needs it, redrawn in explainer style. Never archive or delete the
+  legacy engine without the owner's OK. See
+  docs/production/claude-pm/legacy-engine-policy.md.
+
 - Read REPO-GUIDE.md for orientation: what is in the repo, which docs are
   current, which areas are leftovers, and the shipping priority.
 

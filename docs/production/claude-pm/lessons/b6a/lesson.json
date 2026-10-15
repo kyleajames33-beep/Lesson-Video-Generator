@@ -129,19 +129,7 @@
       "type": "concept",
       "durationInFrames": 300,
       "voiceover": {
-        "text": "Two questions, one at a time. First, a drawing of two cells. Pause here to answer."
-      },
-      "responseHold": {
-        "startFrame": 0,
-        "endFrame": 300
-      }
-    },
-    {
-      "id": "attempt-two",
-      "type": "concept",
-      "durationInFrames": 300,
-      "voiceover": {
-        "text": "Now a student's claim. Pause here to answer."
+        "text": "Two harder questions now. First, cells X and Y, described only by their DNA. Say what kind of cell each one is, as precisely as you can, with evidence. Then explain why some of X's DNA is circular, like Y's. Pause here to answer."
       },
       "responseHold": {
         "startFrame": 0,
@@ -153,7 +141,19 @@
       "type": "concept",
       "durationInFrames": 300,
       "voiceover": {
-        "text": "One. Cell P is the prokaryote. It has no nucleus, and its main DNA is a ring lying in a clear region with no membrane. The region that holds its main DNA is the nucleoid, and the two small rings are plasmids. Cell Q has a nucleus holding its eight chromosomes. Its other DNA is outside the nucleus: small rings inside each mitochondrion. If you said that extra DNA is in the nucleus, look again at where those rings sit."
+        "text": "X first. Its main DNA is linear and wound on histones, inside a compartment with a membrane. That is a nucleus, so X is a eukaryote. Its small rings sit in two kinds of organelle, mitochondria and chloroplasts, so X is most likely a plant cell. An animal cell would have them in mitochondria only. Y's main DNA is one ring with no membrane around it, coiled and held by proteins, plus plasmids. There is no nucleus, so Y is a prokaryote, such as a bacterium. X's organelles have rings because they came from bacteria and kept that kind of DNA. If you said circular DNA makes X a prokaryote, look again. X has a nucleus."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second, bacteria of type A carry a gene for antibiotic resistance on a plasmid. Type B carry the gene on their main chromosome. Each type is mixed with bacteria that lack the gene. Explain why the gene can spread faster from type A. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
       }
     },
     {
@@ -161,7 +161,7 @@
       "type": "concept",
       "durationInFrames": 300,
       "voiceover": {
-        "text": "Two. Bacteria have no nucleus, but their DNA does not float loose. It sits in the nucleoid, twisted into coils and held by proteins. And forty-six is the number of DNA molecules in the nucleus of a cell that has not yet copied its DNA. A human cell also has small rings of DNA in its mitochondria, so forty-six is not all of its DNA. After copying there would be ninety-two DNA molecules, two in each of the forty-six chromosomes, but that is nuclear DNA again."
+        "text": "In type B, the gene is on the main chromosome, so it usually reaches new cells only when its cell divides. Only that cell's offspring get it. In type A, the plasmid is copied separately, and in conjugation a bacterium passes a copy to a neighbour and keeps its own. So the gene also reaches the bacteria that lacked it, and each new carrier can pass it on. It spreads sideways, not just down the generations. If you called conjugation reproduction, fix it. No new cell is made, only a copy of DNA moves."
       }
     },
     {

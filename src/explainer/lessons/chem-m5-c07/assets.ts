@@ -23,5 +23,20 @@ export const PL7 = {
 	leak: mk('c7-pipe-leak-v1.png', [2111, 1002], [211, 100, 1900, 902]),
 };
 const PAINTED = Object.values(PL7).map(p => p.src);
+
+// Codex brief 43 (16 Oct): the tug of war for "Haber is a compromise" (memory-aid scene), three aligned layers on one
+// canvas of about 3000 x 1000: the left (cold, yield) figure, the right (hot, speed) figure, and the rope with its flag.
+// PENDING: the files do not exist yet. When all three are delivered, check TUG_NAT against the real canvas size and add
+// ...TUG_LAYERS to HAVE7 below; the scene then draws the plates instead of the coded stick figures and rope.
+// If the painted layers include the frost and the flame, set TUG_PLATE_ICONS = true to drop the coded snowflake and flame.
+export const TUG = {
+	left: A + 'c7-tug-left-v1.png',
+	right: A + 'c7-tug-right-v1.png',
+	rope: A + 'c7-tug-rope-flag-v1.png',
+};
+export const TUG_NAT: [number, number] = [3000, 1000];
+export const TUG_PLATE_ICONS = false;
+const TUG_LAYERS = [TUG.left, TUG.right, TUG.rope];
 export const HAVE7 = new Set<string>([CONVERTER, ...PAINTED]);
-export const ASSETS: string[] = [CONVERTER, ...PAINTED].filter(a => HAVE7.has(a));
+export const HAVE_TUG = TUG_LAYERS.every(t => HAVE7.has(t));
+export const ASSETS: string[] = [CONVERTER, ...PAINTED, ...TUG_LAYERS].filter(a => HAVE7.has(a));

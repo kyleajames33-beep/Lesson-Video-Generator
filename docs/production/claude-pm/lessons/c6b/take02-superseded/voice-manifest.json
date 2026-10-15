@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C6B-claude-2026-10-15-take02",
+  "lessonPath": "docs/production/claude-pm/lessons/c6b/lesson.json",
+  "lessonSha256": "03e8d7cfa35acb594e773a4e66f2778f504505a8b214bf053d97bf1c88ef10fb",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c6b/lesson.production-brief.json",
+    "sha256": "b189557d6577800cc5326975d45f8bb03dc9da2b98cac490fb28b5b2aa2f13b6"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the last video, the settled hydrogen iodide tube gave us K: 0.70 squared, over 0.10 times 0.10, is 49. That was type one, with every concentration given. This video is type three. The question gives you K and the starting concentrations, and nothing at equilibrium is measured. So there is no value to write in the equilibrium row, and the change has to be an unknown.",
+      "hash": "6ee41dd3cfc2",
+      "textSha256": "6ee41dd3cfc257299b1c53c1caf1419310780e24db0f1687991f4a92aaa1ce97",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/hook.6ee41dd3cfc2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/hook.6ee41dd3cfc2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/hook.6ee41dd3cfc2.generation.json",
+      "plannedRequestSha256": "231df9150766d0a4586586d05143766a97908dc40e783617176c0aaf898cc9ac"
+    },
+    {
+      "id": "k-given",
+      "parentSceneId": "k-given",
+      "text": "Now the other way round. We know K and the start, and want the settled concentrations. This is the hot hydrogen and iodine tube from the catalyst and expressions videos, where K is 49. Each dot is 0.05 moles per litre, so the start is 0.45 moles per litre of hydrogen, 0.45 of iodine and no hydrogen iodide.",
+      "hash": "8c0ff760a5b9",
+      "textSha256": "8c0ff760a5b942caaa6925a8e3fc270edc33f1e7a3e720a6d3a063b95aedb5fb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/k-given.8c0ff760a5b9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/k-given.8c0ff760a5b9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/k-given.8c0ff760a5b9.generation.json",
+      "plannedRequestSha256": "d4cf85cef1eac3cc3dee970c514fcbaeff0c399a10fa2abc8e03a99eefbe052b"
+    },
+    {
+      "id": "unknown-x",
+      "parentSceneId": "unknown-x",
+      "text": "We don't know how much reacts, so call the amount of hydrogen used up x, in moles per litre. The equation, H two plus I two making two H I, gives the rest. For each hydrogen used, one iodine is used and two hydrogen iodide are made. So the change row is minus x, minus x and plus two x.",
+      "hash": "8699815c4b45",
+      "textSha256": "8699815c4b455cd5abc74bea950855590f33f436a1a7800e3c5b9117880e138c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/unknown-x.8699815c4b45.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/unknown-x.8699815c4b45.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/unknown-x.8699815c4b45.generation.json",
+      "plannedRequestSha256": "0241115fdd24cfae58cb4cae7a914702b69c2edfb384ccf7771e0d0a1bf62d8c"
+    },
+    {
+      "id": "substitute",
+      "parentSceneId": "substitute",
+      "text": "The equilibrium row is initial plus change: 0.45 minus x for hydrogen and for iodine, and two x for hydrogen iodide. Substitute into K. Hydrogen iodide squared is two x all squared, over hydrogen times iodine, and both of those are 0.45 minus x, so the bottom is 0.45 minus x, all squared. That equals 49. The top is squared and the bottom is squared, so the whole fraction is squared: two x over 0.45 minus x, all squared, equals 49. Something squared equals a square number, a perfect square, and 49 is seven squared. So take the square root of both sides: two x over 0.45 minus x equals seven. Hydrogen iodide and hydrogen are both positive, so this ratio is positive and we keep plus seven.",
+      "hash": "8ae8a6bae2e6",
+      "textSha256": "8ae8a6bae2e6d9fb03cd0ecab9c04eae73eba7c15c8596f8897afcfd3db3661f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/substitute.8ae8a6bae2e6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/substitute.8ae8a6bae2e6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/substitute.8ae8a6bae2e6.generation.json",
+      "plannedRequestSha256": "9f68bd9faff027a977aa285fa7736996ac528556f026814bcfb833cb05dbb062"
+    },
+    {
+      "id": "solve",
+      "parentSceneId": "solve",
+      "text": "Now rearrange. Multiply both sides by 0.45 minus x: two x equals 7 times 0.45 minus x, which is 3.15 minus 7x. Add 7x to both sides, so nine x equals 3.15. Find x. Pause here and try it.",
+      "hash": "b927be84488f",
+      "textSha256": "b927be84488f0134960f1c211f6d1b6c9e9049bac751c00a495e9a0ed72c7fd9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/solve.b927be84488f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/solve.b927be84488f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/solve.b927be84488f.generation.json",
+      "plannedRequestSha256": "bf9903c8f9f7b81be4eefe2a16acaf3ea809334b48cea833ccf59694ac873b35"
+    },
+    {
+      "id": "check",
+      "parentSceneId": "check",
+      "text": "x is 0.35. So hydrogen and iodine are each 0.45 minus 0.35, 0.10 moles per litre, and hydrogen iodide is two times 0.35, 0.70. Check by substituting back: 0.70 squared is 0.49, over 0.10 times 0.10, which is 0.010, gives 49. Why not minus seven? That would need x of 0.63, more than the 0.45 we started with, so hydrogen would be negative.",
+      "hash": "03cdba6de353",
+      "textSha256": "03cdba6de353b51159e93c1f3b1f1671bc59e42ab71f1ebdb41bf7445813e472",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/check.03cdba6de353.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/check.03cdba6de353.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/check.03cdba6de353.generation.json",
+      "plannedRequestSha256": "47f1907df37658513aaba29b48affbc3724634f2d19ce71ef0793ad219906672"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here is the habit. Only the change row follows the coefficients: minus 0.35, minus 0.35 and plus 0.70 are in the ratio one, one, two. The initial and equilibrium rows do not have to be in that ratio: 0.10, 0.10 and 0.70 are not.",
+      "hash": "6c452bc7a1f5",
+      "textSha256": "6c452bc7a1f5f9842af507c47c946c6d0b93ee27bfa2d1f1d2baba231dd32d4d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/memory-aid.6c452bc7a1f5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/memory-aid.6c452bc7a1f5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/memory-aid.6c452bc7a1f5.generation.json",
+      "plannedRequestSha256": "27efe596f1eac7b23d96b805008dedc71709d1b6e2ca8641402b1b6a7f2d1504"
+    },
+    {
+      "id": "square-condition",
+      "parentSceneId": "square-condition",
+      "text": "Why did the square root work so neatly? Hydrogen and iodine started equal, so the bottom of the fraction was 0.45 minus x, times itself, a square, just like the top. K does not have to be a square number. If K were 50, the root would be about 7.07, and the method would still work. What it needs is a top and a bottom that are both squares, so the whole fraction is something squared. That is what a perfect square means from now on: the fraction, not the number K. Many questions are not built like that, and the most common other case is a tiny K.",
+      "hash": "9a4e3db27651",
+      "textSha256": "9a4e3db27651de8deb753927d6bfa275547821c6ef2d4f3e71f0e2f108dc7d25",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/square-condition.9a4e3db27651.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/square-condition.9a4e3db27651.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/square-condition.9a4e3db27651.generation.json",
+      "plannedRequestSha256": "faf6207b30f6a60a938a9cc4940aff5b6d64ab84c54b9f20bdbbb6d1c2220f6a"
+    },
+    {
+      "id": "tiny-k-setup",
+      "parentSceneId": "tiny-k-setup",
+      "text": "Here is iodine again, on its own and very hot. A few I two molecules split into iodine atoms: I two makes two I. K is tiny: take it as 1.6 times ten to the minus five, and we start with 0.25 moles per litre of I two and no atoms. Call the I two that splits x. Each I two makes two atoms, so the change row is minus x and plus two x, and the equilibrium row is 0.25 minus x and two x. So K is two x all squared, over 0.25 minus x.",
+      "hash": "61bb748a9e23",
+      "textSha256": "61bb748a9e2302860fdf00c8947ced9fa57246a521e7a0852dbbf3a15966aada",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-setup.61bb748a9e23.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-setup.61bb748a9e23.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-setup.61bb748a9e23.generation.json",
+      "plannedRequestSha256": "37da3ccd42cbee08136bb50ef5f8d32eceb93465db3c31833ca55113f3ee4800"
+    },
+    {
+      "id": "tiny-k-drop",
+      "parentSceneId": "tiny-k-drop",
+      "text": "The bottom is not a square, so the square root will not help. But look at the size of K. A tiny K means hardly any I two splits, so x is tiny next to 0.25. Taking a tiny amount from 0.25 still leaves about 0.25, so we drop the x from the bottom. Keep the x on top, because that is the answer we want. This shortcut needs two things: K very small, and a start that is not tiny.",
+      "hash": "9262d3497174",
+      "textSha256": "9262d3497174faea4213b70597303eacec9b77cf007824eb90ca35f23910b66d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-drop.9262d3497174.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-drop.9262d3497174.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-drop.9262d3497174.generation.json",
+      "plannedRequestSha256": "c8e52ec5f315374ae23dace436d31820109fdcd8b2e1d7e1f61fca78f527deda"
+    },
+    {
+      "id": "tiny-k-solve",
+      "parentSceneId": "tiny-k-solve",
+      "text": "Now the equation is easy. Two x all squared is four x squared. Dividing by 0.25 is the same as multiplying by four, so the left side is sixteen x squared. That equals 1.6 times ten to the minus five, so divide both sides by sixteen: x squared is 1.0 times ten to the minus six, and x is 0.0010 moles per litre. The iodine atoms are two x, 0.0020 moles per litre, and the I two is still about 0.25.",
+      "hash": "0a5562ecdd84",
+      "textSha256": "0a5562ecdd842897d91ed6f6d1699bb2c5503adb53ca2366b51f21187cd13a36",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-solve.0a5562ecdd84.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-solve.0a5562ecdd84.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-solve.0a5562ecdd84.generation.json",
+      "plannedRequestSha256": "29610f37ea1a2482177858f787a8212113720f8afeaaf7a87b33537ad014f852"
+    },
+    {
+      "id": "tiny-k-check",
+      "parentSceneId": "tiny-k-check",
+      "text": "Now check that dropping x was fair. x is 0.0010, and 0.0010 out of 0.25 is 0.4 per cent. The usual rule of thumb is that x should be under about 5 per cent of the start, so the shortcut is safe. With a K this small and a normal start, it passes easily. Substitute back to be sure: 0.0020 squared is 4.0 times ten to the minus six, over 0.25, gives 1.6 times ten to the minus five.",
+      "hash": "cb05dc006039",
+      "textSha256": "cb05dc006039070ecf58a133e3cc68756be1b0b6a30b0593db79b9579b19090b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-check.cb05dc006039.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-check.cb05dc006039.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/tiny-k-check.cb05dc006039.generation.json",
+      "plannedRequestSha256": "e10e9ddaa3db57ee129fffb980c5646ad5d83f0c8fea7ac13a33c7687279b2f9"
+    },
+    {
+      "id": "no-quadratic",
+      "parentSceneId": "no-quadratic",
+      "text": "Notice what we never needed: the quadratic formula. You can use it if you like, but HSC questions are written so you shouldn't need it. When K and a start give you an equation in x, look for one of two things. Is it a perfect square? Take the square root. Is K tiny, with a start that is not? Drop the x, then check it.",
+      "hash": "e28ab2af6ff0",
+      "textSha256": "e28ab2af6ff0b9f2c66bd3965568ce09886937c4445a8ef09cecfa27c344996e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/no-quadratic.e28ab2af6ff0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/no-quadratic.e28ab2af6ff0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/no-quadratic.e28ab2af6ff0.generation.json",
+      "plannedRequestSha256": "ab8f79bdef5b8642572c508e50ea9a0da538a435545349e1ba55e711eb1be6d4"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. In a very hot engine, nitrogen and oxygen make a little nitrogen monoxide: N two plus O two makes two N O. At this temperature K is 4.0 times ten to the minus four. The gases start at 0.50 moles per litre of nitrogen, 0.50 of oxygen, and no N O. Find the concentration of N O at equilibrium. Pause here to answer.",
+      "hash": "cd84f79a9c3b",
+      "textSha256": "cd84f79a9c3ba6f0f27d7b561c46e5c84ec567b4d193e9d012ed5866e22b43f6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/attempt.cd84f79a9c3b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/attempt.cd84f79a9c3b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/attempt.cd84f79a9c3b.generation.json",
+      "plannedRequestSha256": "0b718060abf6ee8c35fbd5576973f492f18bb4e4f0962e1d09f056e76190623f"
+    },
+    {
+      "id": "feedback-square",
+      "parentSceneId": "feedback-square",
+      "text": "Nitrogen and oxygen each fall by x, and N O rises by two x, so K is two x all squared, over 0.50 minus x, all squared. You could use either shortcut here. The starts are equal, so it is a perfect square: take the square root, and two x over 0.50 minus x is 0.020. Rearrange as before, and x is 0.00495, so N O is 0.0099 moles per litre.",
+      "hash": "ffea3f104643",
+      "textSha256": "ffea3f104643ce19b303dc5479e9a2ae13044450f3b42929b13f4b5c1dc6a8df",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-square.ffea3f104643.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-square.ffea3f104643.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-square.ffea3f104643.generation.json",
+      "plannedRequestSha256": "ceb937517353be1012e26dc37ff3f72a3323772ae1b192947bfb6b95db59a121"
+    },
+    {
+      "id": "feedback-tiny-k",
+      "parentSceneId": "feedback-tiny-k",
+      "text": "Or K is tiny, so drop the x: the bottom becomes 0.50 times 0.50, which is 0.25, and four x squared over 0.25 is sixteen x squared, which equals 4.0 times ten to the minus four. x squared is 2.5 times ten to the minus five, x is 0.0050, and N O is 0.010. Check it: x is about 1 per cent of 0.50, well under 5 per cent, so the shortcut is safe, and the two answers agree to about 1 per cent.",
+      "hash": "6e0d7f53bd41",
+      "textSha256": "6e0d7f53bd41009b59bf55ebd496ca70c44123178665bdc7f93acb4345bf4593",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-tiny-k.6e0d7f53bd41.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-tiny-k.6e0d7f53bd41.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-tiny-k.6e0d7f53bd41.generation.json",
+      "plannedRequestSha256": "c41cb0815869611756e34c700f781badf470871b7cb0bbe504a6191c6570b7f6"
+    },
+    {
+      "id": "feedback-slips",
+      "parentSceneId": "feedback-slips",
+      "text": "If you got 0.0050, that is x, but N O is two x. If you got 0.014, you put 0.50 on the bottom instead of 0.50 times 0.50. And if you wrote plus x for N O, look at the coefficient: two N O are made each time.",
+      "hash": "68fd86cd4db9",
+      "textSha256": "68fd86cd4db9f05398acbc91a3ff1e4ccb2d78a62d148f8b97b7084bf5141531",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-slips.68fd86cd4db9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-slips.68fd86cd4db9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/feedback-slips.68fd86cd4db9.generation.json",
+      "plannedRequestSha256": "5257b4bb98b28117fe48b2c84e8942dbbf0d8debc0ab4bef9f5adb4ee04a7819"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, for a type three question: call the change x, write the change row from the coefficients, add to get the equilibrium row, and substitute into K. Then look for a shortcut. A perfect square: take the square root and keep the positive root. A tiny K: drop the x, and check it is under about 5 per cent of the start. Either way, substitute back to check. Next: why factories do not wait for equilibrium.",
+      "hash": "8bb6d9402a08",
+      "textSha256": "8bb6d9402a083c39c5d21c23eaec2ecbfced0fb77ae2f400de1ac7028591e983",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/decision-rule.8bb6d9402a08.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/decision-rule.8bb6d9402a08.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/decision-rule.8bb6d9402a08.generation.json",
+      "plannedRequestSha256": "9d446d996b32b62470716615704c4e102d40ee86f073d7239f459a7f38ce877e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C6B-claude-2026-10-15-take02/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

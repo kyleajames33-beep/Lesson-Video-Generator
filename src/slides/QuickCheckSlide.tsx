@@ -5,6 +5,7 @@
 // keeps the HSC calculation answer restrained and copyable.
 
 import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import type {CSSProperties} from 'react';
 import type {LessonData, QuickCheckScene} from '../lesson/types';
 import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
@@ -197,7 +198,7 @@ const PauseBadge = () => (
 // the slide while the narrator continues talking through the gap.
 const COUNTDOWN_SECONDS = 3;
 
-const PauseCountdown = ({
+export const PauseCountdown = ({
 	startFrame,
 	endFrame: _endFrame,
 	fps,
@@ -205,6 +206,7 @@ const PauseCountdown = ({
 	durationSeconds,
 	focused = false,
 	captionSafeWorking = false,
+	position,
 }: {
 	startFrame: number;
 	endFrame: number;
@@ -213,6 +215,7 @@ const PauseCountdown = ({
 	durationSeconds: number;
 	focused?: boolean;
 	captionSafeWorking?: boolean;
+	position?: CSSProperties;
 }) => {
 	const frame = useCurrentFrame();
 	if (frame < startFrame) return null;
@@ -244,6 +247,7 @@ const PauseCountdown = ({
 				justifyContent: 'center',
 				pointerEvents: 'none',
 				opacity: opacity * enter,
+					...position,
 			}}
 		>
 			<div style={{position: 'relative', width: SIZE, height: SIZE}}>

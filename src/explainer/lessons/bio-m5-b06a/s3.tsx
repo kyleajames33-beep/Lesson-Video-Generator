@@ -1,6 +1,8 @@
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {Img, staticFile, useCurrentFrame} from 'remotion';
+import {PAPER, ProcessClip} from '../../kit';
 import {cues} from '../../cues';
+import {CLIP_ENDO, ENDO_IN, ENDO_OUT} from './assets';
 import {
 	AMBER, AMBER_INK, DnaRing, DrawPath, EUK, Envelope, Fade, GreyTag, Grips, Hand, Heading, INK, INK_SOFT, MITO_IN_ANIMAL, NUC, Overlay,
 	PL, PLUM, Pl, Plasmid, Ring2, Rod, S, Sx, TagP, Ticker, eukPt, prog, tw,
@@ -8,11 +10,67 @@ import {
 import {Beads} from './shared';
 import {MAIN_Q} from './s1';
 
+// ---------- endosymbiosis process clip geometry ----------
+/** Alpha bounding box of the endosymbiosis pair (2000 x 1300 natural pixels). */
+const ENDO_BOX = {x0: 267, y0: 117, x1: 1736, y1: 1176};
+/** The clip (1280 x 720) shows the pair centred on a 1920 x 1080 white canvas at most 1700 x 960: scale and offset there. */
+const CANVAS_K = Math.min(1700 / 2000, 960 / 1300);
+const CANVAS_OFF: [number, number] = [(1920 - 2000 * CANVAS_K) / 2, (1080 - 1300 * CANVAS_K) / 2];
+/**
+ * Geometry for showing the pair (plates or clip) with the painted cell's bounding-box centre at (cx, cy) and the plates
+ * at scale kp. The clip box is scaled so its canvas lands exactly on the plates (checked: frame 0 and the last frame
+ * match the outside and inside plates to about 1.7/255 mean difference at this mapping). `crop` limits the paper box.
+ */
+export const ENDO_CLIP_GEOM = (cx: number, cy: number, kp: number) => {
+	const left = cx - ((ENDO_BOX.x0 + ENDO_BOX.x1) / 2) * kp, top = cy - ((ENDO_BOX.y0 + ENDO_BOX.y1) / 2) * kp;
+	const s = kp / CANVAS_K;
+	return {
+		plate: {left, top, w: 2000 * kp, h: 1300 * kp},
+		clip: {x: left - CANVAS_OFF[0] * s, y: top - CANVAS_OFF[1] * s, width: 1920 * s, height: 1080 * s},
+		crop: {x: Math.round(left + ENDO_BOX.x0 * kp - 14), y: Math.round(top + ENDO_BOX.y0 * kp - 14), w: Math.round((ENDO_BOX.x1 - ENDO_BOX.x0) * kp + 28), h: Math.round((ENDO_BOX.y1 - ENDO_BOX.y0) * kp + 28)},
+	};
+};
+const CLIP_PAPER_GRAIN = 'assets/explainer-paper-grain.png';
+/**
+ * A plate in the same paper box as ProcessClip (its own copy of the paper, plate multiplied onto it), so a plate and
+ * the clip's first or last frame look identical and the handover has no jump in tone.
+ */
+const PaperPlate: React.FC<{src: string; g: ReturnType<typeof ENDO_CLIP_GEOM>; o?: number}> = ({src, g, o = 1}) => {
+	if (o <= 0.01) return null;
+	const b = g.crop;
+	return (
+		<div style={{position: 'absolute', left: b.x, top: b.y, width: b.w, height: b.h, overflow: 'hidden', isolation: 'isolate', opacity: o,
+			background: `url(${staticFile(CLIP_PAPER_GRAIN)}) ${-b.x}px ${-b.y}px repeat, radial-gradient(ellipse at 50% 40%, #fbf7ef 0%, ${PAPER} 55%, #efe6d6 100%) ${-b.x}px ${-b.y}px / 1920px 1080px no-repeat`}}>
+			<Img src={staticFile(src)} style={{position: 'absolute', left: g.plate.left - b.x, top: g.plate.top - b.y, width: g.plate.w, height: g.plate.h, mixBlendMode: 'multiply'}} />
+		</div>
+	);
+};
+/**
+ * Endosymbiosis beat: the outside plate, then the process clip (a bacterium is taken into a larger cell), then the
+ * inside plate. Plates and clip share one aligned box, so each handover is an instant swap of matching frames.
+ */
+export const EndoSequence: React.FC<{cx: number; cy: number; kp: number; at: number; rate?: number; o: number}> = ({cx, cy, kp, at, rate = 1, o}) => {
+	const f = useCurrentFrame();
+	if (o <= 0.01) return null;
+	const g = ENDO_CLIP_GEOM(cx, cy, kp);
+	const span = Math.round((5 * 30) / rate);
+	const playing = f >= at - 3 && f < at + span + 3;
+	return (
+		<div style={{position: 'absolute', inset: 0, opacity: o, pointerEvents: 'none'}}>
+			{playing ? <ProcessClip src={CLIP_ENDO} at={at} seconds={5} rate={rate} {...g.clip} crop={g.crop} /> : null}
+			<PaperPlate src={ENDO_OUT} g={g} o={f < at ? 1 : 0} />
+			<PaperPlate src={ENDO_IN} g={g} o={f >= at + span ? 1 : 0} />
+		</div>
+	);
+};
+
 // ---------- 9. DNA in mitochondria and chloroplasts ----------
 const H9 = 'organelle-dna';
 const K9 = cues(S(H9), {outside: 'outside the nucleus too', mito: 'Mitochondria where cells', copies: 'many copies', ring: 'small ring of DNA', chloro: 'so do chloroplasts', photo: 'photosynthesis', why: 'Why a ring', came: 'came from bacteria', inside: 'living inside larger cells', still: 'still carry', our: 'In our cells', extra: 'extra to the 46'});
 const INS = {x: 560, y: 520};
 const COPIES: [number, number][] = [[0, 0], [-92, -24], [96, 30], [40, -52], [-60, 44]];
+/** Endosymbiosis pair: painted cell bounding-box centre and plate scale. */
+const ENDO = {x: 560, y: 590, k: 0.5};
 export const SceneOrganelle: React.FC = () => {
 	const f = useCurrentFrame();
 	const animalO = 1 - prog(f, K9.chloro - 6, 18) + prog(f, K9.our - 20, 18);
@@ -20,7 +78,8 @@ export const SceneOrganelle: React.FC = () => {
 	const mitoIn = prog(f, K9.mito - 6, 16) * (1 - prog(f, K9.chloro - 6, 14));
 	const chlIn = prog(f, K9.chloro + 4, 16) * (1 - prog(f, K9.came - 10, 14));
 	const endo = prog(f, K9.came - 6, 16) * (1 - prog(f, K9.our - 20, 14));
-	const drift = prog(f, K9.inside - 10, 40);
+	/** The process clip starts just after "came from bacteria"; the engulfing (about 2.7 s in) lands on "larger cells". */
+	const clipAt = K9.came + 10;
 	const pair = prog(f, K9.still - 6, 16) * (1 - prog(f, K9.our - 20, 14));
 	const m0 = MITO_IN_ANIMAL[0];
 	const mp = eukPt(m0[0], m0[1]);
@@ -32,6 +91,7 @@ export const SceneOrganelle: React.FC = () => {
 	return (
 		<>
 			<Heading text="DNA outside the nucleus" at={4} size={60} />
+			<EndoSequence cx={ENDO.x} cy={ENDO.y} kp={ENDO.k} at={clipAt} o={endo} />
 			<Overlay>
 				{/* right: the cell (animal, then plant, then animal again) */}
 				<Pl p={PL.animal} x={EUK.x} y={EUK.y} k={EUK.k} o={Math.min(1, animalO) * (1 - 0.0)} />
@@ -53,15 +113,11 @@ export const SceneOrganelle: React.FC = () => {
 					<Sx x={INS.x} y={300} text="chloroplast: photosynthesis" size={36} color={INK} hand anchor="middle" at={K9.chloro + 8} />
 					<Sx x={INS.x} y={740} text="small rings of DNA here too" size={36} color={PLUM} hand anchor="middle" at={K9.photo} />
 				</g>
-				{/* beat 3: they came from bacteria */}
+				{/* beat 3: they came from bacteria (the process clip is in the HTML layer below the overlay) */}
 				<g opacity={endo}>
-					<circle cx={INS.x} cy={INS.y} r={210} fill="#fbf6e8" stroke="#8a7a63" strokeWidth={5} strokeDasharray="20 10" />
-					<Sx x={INS.x} y={INS.y - 230} text="a larger cell" size={34} color={INK_SOFT} hand anchor="middle" at={K9.came} />
-					<g transform={`translate(${-300 * (1 - drift)},${-40 * (1 - drift)})`}>
-						<Pl p={PL.bact} x={INS.x} y={INS.y + 20} k={0.15} />
-						<DnaRing cx={INS.x + 10} cy={INS.y + 20} rx={40} ry={12} width={3} />
-					</g>
-					<GreyTag x={INS.x} y={INS.y + 240} text="endosymbiosis" anchor="middle" at={K9.inside + 10} />
+					<Sx x={ENDO.x} y={ENDO.y - 285} text="a larger cell" size={34} color={INK_SOFT} hand anchor="middle" at={K9.came} />
+					<Sx x={ENDO.x + 330} y={ENDO.y - 84} text="a bacterium" size={30} color={INK_SOFT} hand anchor="middle" at={K9.came + 6} out={K9.inside + 30} />
+					<GreyTag x={ENDO.x} y={ENDO.y + 285} text="endosymbiosis" anchor="middle" at={K9.inside + 10} />
 				</g>
 				<g opacity={pair}>
 					<Pl p={PL.mito} x={1250} y={560} k={0.13} />

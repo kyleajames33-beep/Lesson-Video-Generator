@@ -1,97 +1,50 @@
 {
   "source": "docs/production/claude-pm/lessons/g03b/lesson.json",
-  "sourceSha256": "a524d4f22c6b4885ab89191d688f0d44ee1322ef9e757528f585497e3406bab4",
-  "manifestSha256": "a122ba8780d537d91d230db066de2df989d81fa671fb20d0eb33978488b49616",
+  "sourceSha256": "841b7b415b707893ef4fdeedd467626d30035dd5f3bec0cf3eed03f3b19e4328",
+  "manifestSha256": "409973bfb9f582eebf37f79b3b03d1c39d1b6c1fd5825f9df7210e27c5e9cf3c",
   "scope": "Measured audio lengths and exact character alignment; not listening approval.",
   "scenes": [
     {
       "sceneId": "hook-board",
-      "seconds": 18.64,
-      "frames": 560,
+      "seconds": 46.4,
+      "frames": 1392,
       "cues": [],
       "responseHold": null,
       "terminalPunctuationBounded": 0.0799999999999983,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/hook-board.203fa93f4fd8.mp3",
-          "sha256": "c2b05c81d686aace8919ea1ae89c0b2d0c7694328bf07297942b9949cc8aa595"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/hook-board.7163157bef76.mp3",
+          "sha256": "ebb1f99b1f12e05584787732df085a0381e408b2b91696158b80159f033535ff"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/hook-board.203fa93f4fd8.alignment.json",
-          "sha256": "df643b7b1ce6b97ff26826982a3ec199d59d64fc2884032ed82fecfcf5ee2ed7"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/hook-board.7163157bef76.alignment.json",
+          "sha256": "533295e4f47b273accc4f623e39ff0a74f6c495ef690d09532b8013c23181d01"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/hook-board.203fa93f4fd8.generation.json",
-          "sha256": "91c6a529948806cae98a83ffadee7a070d9f982fb63e57450e7aee3f1a6fee5f"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/hook-board.7163157bef76.generation.json",
+          "sha256": "6e606e646156843d24100cc96c41ee447f9f7df8e12a696a22e0cd03ccd76a3a"
         }
       ]
     },
     {
-      "sceneId": "tiny-k-question",
-      "seconds": 33.68,
-      "frames": 1011,
-      "cues": [],
-      "responseHold": {
-        "startFrame": 1023,
-        "endFrame": 1323
-      },
-      "terminalPunctuationBounded": 0.0799999999999983,
-      "files": [
-        {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-question.74202797cc94.mp3",
-          "sha256": "6ae9787842154ec2c87b419b2dd7768d57d186579fd2df86c01dcd19931dd31f"
-        },
-        {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-question.74202797cc94.alignment.json",
-          "sha256": "f9a4a3734ae774b703234eb7791e9aee99154cbedc63eb7ed091796f17c31bcd"
-        },
-        {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-question.74202797cc94.generation.json",
-          "sha256": "f5bc643bb21bee0d3e875bacd340f98b7d5705d06c798b2f6aaab079cd3e1774"
-        }
-      ]
-    },
-    {
-      "sceneId": "tiny-k-setup",
-      "seconds": 29.6,
-      "frames": 888,
+      "sceneId": "type-three-recall",
+      "seconds": 13.68,
+      "frames": 411,
       "cues": [],
       "responseHold": null,
-      "terminalPunctuationBounded": 0.0799999999999983,
+      "terminalPunctuationBounded": 0.08000000000000007,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-setup.55a7d629a2d1.mp3",
-          "sha256": "74f687b8a813c04091fe70d2202eaa9b3bd451dd9412bdfc26435f940bf3ca6e"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/type-three-recall.5508a91b6bb7.mp3",
+          "sha256": "b4ad0675a0fa71b3021dbdad1ba87a2898ceae5f1297c0ae22cafd218baf1711"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-setup.55a7d629a2d1.alignment.json",
-          "sha256": "e3772ad78e117641f91cd79485678637115c5d4b87977cb9503963a410fdbc53"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/type-three-recall.5508a91b6bb7.alignment.json",
+          "sha256": "a9f9c9586e4b6a14ea316d46db53349c91afc199d93bef6ba2def270a91b869a"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-setup.55a7d629a2d1.generation.json",
-          "sha256": "ea31c7decbd6c0baec1191400888016020324a006ba2aa7531f2e603d7c0422b"
-        }
-      ]
-    },
-    {
-      "sceneId": "tiny-k-solve-and-test",
-      "seconds": 34,
-      "frames": 1020,
-      "cues": [],
-      "responseHold": null,
-      "terminalPunctuationBounded": 0.0799999999999983,
-      "files": [
-        {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-solve-and-test.1805d244b35c.mp3",
-          "sha256": "9e2faebc15bc52eb2d4725337ffa5313f1733f13d1751cbf674683587e8601c6"
-        },
-        {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-solve-and-test.1805d244b35c.alignment.json",
-          "sha256": "5bd9b843365d1f4f59abb2ed0f6bd8718d72a2e69f5942073b02957e2aa3b1f1"
-        },
-        {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/tiny-k-solve-and-test.1805d244b35c.generation.json",
-          "sha256": "0d0795988929bdfeac8396e1dac1c15aae1fbfff0d1a0fe299a3d894532919a8"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/type-three-recall.5508a91b6bb7.generation.json",
+          "sha256": "da5ceb68bbd135ed6df9f2d3a566a7ca435827a9d922e9b261c413fb91962b4d"
         }
       ]
     },
@@ -104,15 +57,15 @@
       "terminalPunctuationBounded": 0.0799999999999983,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-setup.b71e32ab8df5.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-setup.b71e32ab8df5.mp3",
           "sha256": "8d979d5aa77d925df51f0a26e873b5e2d452cf3716dac0702b02dafa98015928"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-setup.b71e32ab8df5.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-setup.b71e32ab8df5.alignment.json",
           "sha256": "ebe278d6aa1219664c07582c300c84f55584eed2e6581837758c6b631fc7fbae"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-setup.b71e32ab8df5.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-setup.b71e32ab8df5.generation.json",
           "sha256": "b3ebf56fa67ee2ff7017d1dff807044c9f73a4a607904308a4e3789be56a6f90"
         }
       ]
@@ -126,15 +79,15 @@
       "terminalPunctuationBounded": 0.08000000000000185,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-solve.dc7fc143fa2c.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-solve.dc7fc143fa2c.mp3",
           "sha256": "1f4fec312c64d5e78cf8959efa66a9975f396daa71390cbf4ed3331ea3c65f31"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-solve.dc7fc143fa2c.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-solve.dc7fc143fa2c.alignment.json",
           "sha256": "0c25f933479bf9c080a703c6c997e3db815a0cc430b8ec91c38730642567a1bf"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-solve.dc7fc143fa2c.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-solve.dc7fc143fa2c.generation.json",
           "sha256": "0010167fb249ebfec80c74fd292c3f9459aa02132172514985244aea9c109fc1"
         }
       ]
@@ -148,15 +101,15 @@
       "terminalPunctuationBounded": 0.08000000000000185,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-test-and-reactant-start.8c97f7e14836.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-test-and-reactant-start.8c97f7e14836.mp3",
           "sha256": "48d48c350b0f345317b411871f3af07ae657004c2e57adf026108f7a1bf2f861"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-test-and-reactant-start.8c97f7e14836.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-test-and-reactant-start.8c97f7e14836.alignment.json",
           "sha256": "c24e6416367fd1972449d1122ae8b49a65bf357e5f650014741984db245de43b"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/huge-k-test-and-reactant-start.8c97f7e14836.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/huge-k-test-and-reactant-start.8c97f7e14836.generation.json",
           "sha256": "0f211f3d79c064a89e65e0dfea9530c411f4d1b79bbb97d356f392a11f824409"
         }
       ]
@@ -170,15 +123,15 @@
       "terminalPunctuationBounded": 0.0799999999999983,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-setup.af59f81e1b02.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-setup.af59f81e1b02.mp3",
           "sha256": "ec39511c98f719eee3abb415269b759203e3a97a8387bb5177a7a914bc452cfe"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-setup.af59f81e1b02.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-setup.af59f81e1b02.alignment.json",
           "sha256": "5d36ca8c32cc9f5f26ed21019738caafc34589991db0607a83f88934ddad43cb"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-setup.af59f81e1b02.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-setup.af59f81e1b02.generation.json",
           "sha256": "19a6421000173dbd580cd208812261794dc134ed568181ef0eac10bb2428cfba"
         }
       ]
@@ -192,15 +145,15 @@
       "terminalPunctuationBounded": 0.0799999999999983,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-ice-table.83ff7cd27826.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-ice-table.83ff7cd27826.mp3",
           "sha256": "a6a1edbd54e030a8929326fbb491122786502dd7cc6278ea037b7220ce52283a"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-ice-table.83ff7cd27826.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-ice-table.83ff7cd27826.alignment.json",
           "sha256": "3de800f3332762f8f7255acb6d6a4b919e7333c60f5a4fda26ae3ac6cbd79e35"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-ice-table.83ff7cd27826.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-ice-table.83ff7cd27826.generation.json",
           "sha256": "a7b44e1d2cb9d46c60b37b0f61551f5373f195413c66252b850786b3bf0a2d78"
         }
       ]
@@ -217,15 +170,15 @@
       "terminalPunctuationBounded": 0.0799999999999983,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-k-equation.7ab1f8ad48db.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-k-equation.7ab1f8ad48db.mp3",
           "sha256": "6e51c5500174b32b0d8f9ca2180d6b9ef5ffe978a212a39a82ecb23ad130b5e9"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-k-equation.7ab1f8ad48db.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-k-equation.7ab1f8ad48db.alignment.json",
           "sha256": "decbc2ee6e6fc844e4cadd26e17dc435a6ed048a1ec8d19d67263df100a16de8"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-k-equation.7ab1f8ad48db.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-k-equation.7ab1f8ad48db.generation.json",
           "sha256": "217003056736fef7fc38876032538065d437a311aa170891510d1b33da53fc35"
         }
       ]
@@ -239,38 +192,38 @@
       "terminalPunctuationBounded": 0.0799999999999983,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-answer-and-slips.f489e82e2810.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-answer-and-slips.f489e82e2810.mp3",
           "sha256": "1136532c000b37d39d1dfc41ef14e55ed64b375a38f5a4644b9c97f1eedb0044"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-answer-and-slips.f489e82e2810.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-answer-and-slips.f489e82e2810.alignment.json",
           "sha256": "2a22fe21981acdabe6f14d3c7c7eaeedf18b22b39048935be6f3d34c0234ed30"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/addition-answer-and-slips.f489e82e2810.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/addition-answer-and-slips.f489e82e2810.generation.json",
           "sha256": "5c054ba7bec61ecdb9a078570356f06b8a80ebdecfb6eafacf69c8f31cb75a55"
         }
       ]
     },
     {
       "sceneId": "decision-board",
-      "seconds": 22.4,
-      "frames": 672,
+      "seconds": 38.56,
+      "frames": 1157,
       "cues": [],
       "responseHold": null,
-      "terminalPunctuationBounded": 0.08000000000000185,
+      "terminalPunctuationBounded": null,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/decision-board.64b61ac31d4a.mp3",
-          "sha256": "9370efbd2f4caad7b92e2d068b451dbb9d58b4d1f5b98a4594f2e81bfc6e6794"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/decision-board.b96874c0e2cb.mp3",
+          "sha256": "eef7c250e4d1b404b0d44d760ba1c79cef171ef3f9d55457c30be684b9666459"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/decision-board.64b61ac31d4a.alignment.json",
-          "sha256": "bd3d27b0169e94c223e75f86ae7968626d56ca8b2211b49e98e6b558fd8d3ef7"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/decision-board.b96874c0e2cb.alignment.json",
+          "sha256": "9ea93f544d460f8812474513e9b3eadd73f7f31e87f5582a76bb40c8bf009a1d"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/decision-board.64b61ac31d4a.generation.json",
-          "sha256": "53a3296327071709b3b55d49d0491312173df0d9245e4eca26696e09e6435281"
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/decision-board.b96874c0e2cb.generation.json",
+          "sha256": "a219f44ced3e8d1b58c37d53ae11bec4a90ba88258b67a30d8663310c70453fd"
         }
       ]
     },
@@ -283,15 +236,15 @@
       "terminalPunctuationBounded": 0.07999999999999918,
       "files": [
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/key-notes.231477bff795.mp3",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/key-notes.231477bff795.mp3",
           "sha256": "ab0ee889199b9abb7949c90de29d9d3495f93a0d505a84da4202a8993fd32526"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/key-notes.231477bff795.alignment.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/key-notes.231477bff795.alignment.json",
           "sha256": "5d1242964e2ab5796a573b19da0f6c60f3dff1d2e654cfffd341ea514814a83e"
         },
         {
-          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-15-take02/key-notes.231477bff795.generation.json",
+          "path": "public/audio/Chemistry-Y12-M5-G03B-claude-2026-10-16-take03/key-notes.231477bff795.generation.json",
           "sha256": "eb66bab2d8e5381d20eb0082a6b9df6f702666b607fb39679e25313a3903041b"
         }
       ]

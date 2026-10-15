@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-G03D-claude-2026-10-16-take02",
+  "lessonPath": "docs/production/claude-pm/lessons/g03d/lesson.json",
+  "lessonSha256": "16263dc8e77dbc51fb981d09dff57d4df362eaccd1bea6d0b658b2cb578bfc73",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/g03d/lesson.production-brief.json",
+    "sha256": "3c3dde609870d35a51c3500161076765b22be1d7c3612abfcdf3822053a2eaa7"
+  },
+  "scenes": [
+    {
+      "id": "hook-traps",
+      "parentSceneId": "hook-traps",
+      "text": "This is part two of the practice set, with questions three and four. The method is the same as part one: divide by the volume first, then the I C E table, I for initial, C for change, E for equilibrium. Question three gives K for the other equation, so you will have to flip it, and its K is tiny, so the 5 per cent check goes on the amount actually taken off, which here is two x. Question four has two parts: part a finds K, and part b hides a perfect square. Pause and try each one, then we'll work it through one step at a time.",
+      "hash": "9c7babc73581",
+      "textSha256": "9c7babc735818e090f5f2f0cf06a04a7125785c47194744087a0506299de260c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/hook-traps.9c7babc73581.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/hook-traps.9c7babc73581.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/hook-traps.9c7babc73581.generation.json",
+      "plannedRequestSha256": "84f45d8113644fee3b796ab7303533a95e42bcdf8fba9b9133f9d70b9f002eb3"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. For two N O plus chlorine making two N O C L, nitrosyl chloride, K is 6.25 times ten to the four at a certain temperature. 2.00 moles of N O C L is placed in an empty 4.00 litre vessel at that temperature, and some of it splits. How many moles of chlorine are present at equilibrium? Pause here to answer.",
+      "hash": "586e1003849c",
+      "textSha256": "586e1003849c5a48014a7283e6e0dc9820cc306d8e7909eaa1de1b6037dd5d78",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-question.586e1003849c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-question.586e1003849c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-question.586e1003849c.generation.json",
+      "plannedRequestSha256": "260365a8a7cbdb37241fe749a242d719e8c245d4e5f870434a80e9fd14f3fda0"
+    },
+    {
+      "id": "q3-flip-and-table",
+      "parentSceneId": "q3-flip-and-table",
+      "text": "Look at which way the equation runs. K was given for the equation that makes N O C L, but this vessel starts with N O C L, which splits. K belongs to the equation as it is written, so write the equation the way this vessel runs, and flip K with it: one over 6.25 times ten to the four is 1.6 times ten to the minus five, which is tiny. Question two ran backwards too, but we kept its equation as given, so its K stayed the same. Now the table. The start is 2.00 over 4.00, 0.500 moles per litre. If x of chlorine forms, then two x of N O C L splits and two x of N O forms, so the equilibrium row is 0.500 minus two x, two x, and x.",
+      "hash": "368aa6a2728b",
+      "textSha256": "368aa6a2728b071ec188e7b671a3f84276738e923b2c24869c529abb520f03f1",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-flip-and-table.368aa6a2728b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-flip-and-table.368aa6a2728b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-flip-and-table.368aa6a2728b.generation.json",
+      "plannedRequestSha256": "953634f5f00a0ec72c08dff041611a46238ba0c106e99f07e61ffaf5d94f7789"
+    },
+    {
+      "id": "q3-drop-and-solve",
+      "parentSceneId": "q3-drop-and-solve",
+      "text": "K is two x all squared, times x, over 0.500 minus two x, all squared. K is tiny, so very little splits: drop the two x from the bottom, and keep the x on top, because that is the answer. The bottom becomes 0.500 squared, 0.250. On top, two x all squared, times x, is four x cubed. Multiply both sides by the bottom, 0.250: four x cubed is 4.0 times ten to the minus six. Then divide both sides by four: x cubed is 1.0 times ten to the minus six, and x is 0.0100.",
+      "hash": "14e728488a64",
+      "textSha256": "14e728488a646774fe7014e0201e06b75e4778239d6454812bb5ce7e281ca158",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-drop-and-solve.14e728488a64.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-drop-and-solve.14e728488a64.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-drop-and-solve.14e728488a64.generation.json",
+      "plannedRequestSha256": "2667e1ed58b30a987f86ac671e1bc73baa1d5eb8ad2643e5dfb537ecf04cd435"
+    },
+    {
+      "id": "q3-check-and-moles",
+      "parentSceneId": "q3-check-and-moles",
+      "text": "Check the shortcut. The amount taken off the start is two x, not x: 0.0200 out of 0.500 is 4 per cent. That is under about 5, so it passes, but only just. Chlorine is 0.0100 moles per litre, times 4.00 litres, which is 0.0400 moles. The classic mistake is putting 6.25 times ten to the four into the splitting expression without flipping it. That gives x of about 16 moles per litre, far more than the 0.500 you started with, which is impossible.",
+      "hash": "4ab606a4e29f",
+      "textSha256": "4ab606a4e29fb62f669285af9429fc95ba01f7f7e314ab01a4eba413b9e37c4d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-check-and-moles.4ab606a4e29f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-check-and-moles.4ab606a4e29f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q3-check-and-moles.4ab606a4e29f.generation.json",
+      "plannedRequestSha256": "0797a5e90ee82f12e6cd8ed498c9487244386681ccf26930cbe1e245fe8abd6b"
+    },
+    {
+      "id": "q4a-question",
+      "parentSceneId": "q4a-question",
+      "text": "Question four has two parts. Nitrogen dioxide and sulfur dioxide react to make nitrogen monoxide and sulfur trioxide, all gases. At 460 degrees, a 5.00 litre vessel at equilibrium holds 0.100 moles of N O two, 0.200 of S O two, 0.900 of N O and 1.80 of S O three. Part a: calculate K. Pause here to answer.",
+      "hash": "fedc60a52bb6",
+      "textSha256": "fedc60a52bb6f6452a1e500d21636154e2d6645ad78a09cb886de975b9d8e49f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4a-question.fedc60a52bb6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4a-question.fedc60a52bb6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4a-question.fedc60a52bb6.generation.json",
+      "plannedRequestSha256": "9f54c8d1361931ce2cd1e9aa7ccbebb38dce90003684c24b6bccb8130e019378"
+    },
+    {
+      "id": "q4a-answer",
+      "parentSceneId": "q4a-answer",
+      "text": "Divide each amount by 5.00: 0.0200, 0.0400, 0.180 and 0.360 moles per litre. Every coefficient is one, so K is N O times S O three, over N O two times S O two. On top, 0.180 times 0.360 is 0.0648. Underneath, 0.0200 times 0.0400 is 0.000800. So K is 81.0.",
+      "hash": "be5a50bbda81",
+      "textSha256": "be5a50bbda81079957bf157f5fa0e01b2957754d5f69c48f9376ab4d66546585",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4a-answer.be5a50bbda81.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4a-answer.be5a50bbda81.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4a-answer.be5a50bbda81.generation.json",
+      "plannedRequestSha256": "b1a59ea02b441aca8af0b6b1d02999dd18f7c10ed8af3df9613f429c72115882"
+    },
+    {
+      "id": "q4b-question",
+      "parentSceneId": "q4b-question",
+      "text": "Part b. At the same temperature, 0.500 moles of N O two and 0.500 moles of S O two are placed in an empty 2.00 litre vessel. Find the concentration of N O two at equilibrium. Pause here to answer.",
+      "hash": "b56bdc14242c",
+      "textSha256": "b56bdc14242c88a52cc04e2b76bca6954385fc55d372af6183bad389017732cc",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-question.b56bdc14242c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-question.b56bdc14242c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-question.b56bdc14242c.generation.json",
+      "plannedRequestSha256": "aed7403d5fb73dd6938b66de31619108cb1e31845cba43ac0e98e1f3e0a056b6"
+    },
+    {
+      "id": "q4b-square",
+      "parentSceneId": "q4b-square",
+      "text": "Same temperature, so the same K: 81.0 from part a. The start is 0.250 of each reactant. Each reactant changes by minus x, and each product by plus x. So K is x times x, over 0.250 minus x, times 0.250 minus x. That looks like it needs the quadratic formula. You can use it if you like, but HSC questions are written so you shouldn't need it, so look again. The top is x squared, and the bottom is 0.250 minus x, all squared. It is a perfect square, because the two reactants started equal.",
+      "hash": "66b5895d0187",
+      "textSha256": "66b5895d01872f989f9a3a63ab78790a81b6004f52e5d2b051a6921dab89b82c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-square.66b5895d0187.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-square.66b5895d0187.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-square.66b5895d0187.generation.json",
+      "plannedRequestSha256": "01af3c245da1733592fe61e6b29c5c8a2f4a434d2b27a567144d70f8de75e4ad"
+    },
+    {
+      "id": "q4b-solve",
+      "parentSceneId": "q4b-solve",
+      "text": "Take the square root of both sides: x over 0.250 minus x is 9.00. Multiply both sides by the bottom, 0.250 minus x: x equals 2.25 minus 9 x. Add 9 x to both sides, so ten x is 2.25, then divide by ten: x is 0.225. But the question asks for N O two, which is 0.250 minus x: 0.0250 moles per litre. Check: 0.225 squared over 0.0250 squared is 81. The classic mistake is stopping at x and giving 0.225 as the answer. x is the change, not the N O two.",
+      "hash": "113d81514acc",
+      "textSha256": "113d81514acc322e5ad01ef31db0b416720bd8ae9eb3b060cb9060907bd4c890",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-solve.113d81514acc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-solve.113d81514acc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/q4b-solve.113d81514acc.generation.json",
+      "plannedRequestSha256": "e0a9cb58d5fa0dc48245d37058e0638c355b37101c7bcb2748d9e5f1aff3d8ab"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here is what to look for. K for a different equation: flip it if the equation is reversed, square it if it is doubled. K and a start: look for a perfect square, or a tiny K with the 5 per cent check on the amount taken off. Asked for moles: convert back at the end, and answer what was asked, because x is the change. And two parts at the same temperature use the same K. Next: how temperature changes K.",
+      "hash": "a74936c174de",
+      "textSha256": "a74936c174de063d05971de0b7f2e9f1f73b2ddb32064b2851f141ce5d790d05",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/decision-board.a74936c174de.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/decision-board.a74936c174de.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/decision-board.a74936c174de.generation.json",
+      "plannedRequestSha256": "5a88a7c2ea3208958b7f218ba82d1e100c677f23747d9db7a717964fe88968e1"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-G03D-claude-2026-10-16-take02/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

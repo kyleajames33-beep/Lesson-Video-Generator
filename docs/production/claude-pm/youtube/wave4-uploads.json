@@ -8,8 +8,8 @@
   },
   "recordDate": "2026-10-14",
   "timezone": "Australia/Sydney",
-  "verification": "Brief 28d, 15 October 2026: Studio initially showed G01, C4a and B4 as Private. Changed only their visibility to Public; each details page confirmed All changes saved and Public. Studio showed B2b and B3a as Public without changes. Public Module 5 playlist pages confirmed Manual sorting, the recorded positions and one occurrence of each video. Briefs 28e and 28f, 15 October: B3a part 2 and C5 published Public with timed English (Australia) SRT captions, AI disclosure and Education category. Studio playlist videos show each once in syllabus order. Copyright checks found no issues.",
-  "playlistOrderNote": "Chemistry: C1, C2, G01, C3, C4a, C5. Biology: B1, B2a, B2b, B2c, mould, B3a part 1, B3a part 2, B4. C4b and B3b can be inserted later.",
+  "verification": "Brief 28d, 15 October 2026: Studio initially showed G01, C4a and B4 as Private. Changed only their visibility to Public; each details page confirmed All changes saved and Public. Studio showed B2b and B3a as Public without changes. Public Module 5 playlist pages confirmed Manual sorting, the recorded positions and one occurrence of each video. Briefs 28e and 28f, 15 October: B3a part 2 and C5 published Public with timed English (Australia) SRT captions, AI disclosure and Education category. Studio playlist videos show each once in syllabus order. Copyright checks found no issues. Brief 28g, 15 October: Studio confirmed C4b and C8 Public, HD complete, no notices, AI disclosure Yes, Education, English (Australia), and published timed captions. The public Chemistry playlist showed each once in manual syllabus order. Brief 28h, 15 October: C6a and C9 uploaded Public from matching MP4 hashes with timed English (Australia) captions, AI disclosure Yes, Education, HD complete and no notices. Public Chemistry playlist confirmed Manual sorting and positions 8 through 10 after reload. Brief 28i, 16 October: C6b uploaded Public from the matching MP4 hash with timed English (Australia) captions, AI disclosure Yes and Education category. Studio showed HD complete, no notices and no copyright issues. Public Chemistry playlist confirmed Manual sorting and C6b at position 9 directly after C6a following a reload.",
+  "playlistOrderNote": "Chemistry: C1, C2, G01, C3, C4a, C4b, C5, C6a, C6b, C8, C9. Biology: B1, B2a, B2b, B2c, mould, B3a part 1, B3a part 2, B4. C7 and the remaining G videos will be inserted later.",
   "unresolved": [
     "External description links remain plain text until YouTube channel one-off verification."
   ],
@@ -19,7 +19,7 @@
       "file": "out/explainer/Explainer-chem-m5-g01/Explainer-chem-m5-g01-v1.mp4",
       "sha256": "d310d648e92b43d0a0b5b37fc7bbbde66a4d5b8c242dd959949f356ae74a43ab",
       "title": "Enthalpy, Entropy and Non-Equilibrium Reactions | Year 12 Chemistry",
-      "description": "Explain why burning glucose and photosynthesis stay away from equilibrium, using the signs of the enthalpy change and the entropy change. Read the sign of the Gibbs free energy change (delta G) to decide whether a reaction is favoured, and keep that separate from how fast it runs. Work through the glucose example one step at a time, then compare the reverse process, photosynthesis.\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports analysing non-equilibrium systems in terms of the effect of entropy and enthalpy.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"analyse examples of non-equilibrium systems in terms of the effect of entropy and enthalpy, for example:\n- combustion reactions\n- photosynthesis\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Dynamic equilibrium in a closed system, exothermic and endothermic reactions, entropy as the spread of particles and energy, and the link between enthalpy, entropy and delta G. Next: What a flask already at equilibrium does when it is disturbed by a change in concentration or temperature.\n\n#Year12Chemistry #Entropy #HSCScience",
+      "description": "Explain why burning glucose and photosynthesis stay away from equilibrium, using the signs of the enthalpy change and the entropy change. Read the sign of the Gibbs free energy change (delta G) to decide whether a reaction is favoured, and keep that separate from how fast it runs. Work through the glucose example one step at a time, then compare the reverse process, photosynthesis.\n\n0:00 The puzzle\n1:05 Heat and entropy\n2:28 Burning glucose\n4:38 Photosynthesis in reverse\n6:17 Practice question\n7:18 Working through the answer\n9:02 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports analysing non-equilibrium systems in terms of the effect of entropy and enthalpy.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"analyse examples of non-equilibrium systems in terms of the effect of entropy and enthalpy, for example:\n- combustion reactions\n- photosynthesis\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Dynamic equilibrium in a closed system, exothermic and endothermic reactions, entropy as the spread of particles and energy, and the link between enthalpy, entropy and delta G. Next: What a flask already at equilibrium does when it is disturbed by a change in concentration or temperature.\n\n#Year12Chemistry #Entropy #HSCScience",
       "syllabusDotpoints": [
         "analyse examples of non-equilibrium systems in terms of the effect of entropy and enthalpy, for example:\n- combustion reactions\n- photosynthesis"
       ],
@@ -55,6 +55,30 @@
         "before": "Private",
         "after": "Public",
         "action": "Changed visibility only and saved"
+      },
+      "chapters": [
+        "0:00 The puzzle",
+        "1:05 Heat and entropy",
+        "2:28 Burning glucose",
+        "4:38 Photosynthesis in reverse",
+        "6:17 Practice question",
+        "7:18 Working through the answer",
+        "9:02 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 3,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
       }
     },
     {
@@ -62,7 +86,7 @@
       "file": "out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4",
       "sha256": "e6a083d57116847be38419c3dead95aab71cbbf2bf88b0eb3c6626ab49d5d37b",
       "title": "Squeezing a Gas Equilibrium: Predicting the Shift | Year 12 Chemistry",
-      "description": "Squeeze a gas mixture that is sitting at equilibrium and predict which way it shifts by counting only the gas particles. Explain the shift as the side with fewer gas particles becoming favoured when every gas is more crowded. Handle equal gas counts and solids, and tell a squeeze apart from adding an inert gas at fixed volume.\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports explaining how pressure and volume changes affect an equilibrium, using Le Chatelier’s principle and collision theory.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier’s principle can be used to predict such effects\"\n\"explain the overall observations about equilibrium in terms of the collision theory\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Le Chatelier’s principle for concentration and temperature changes, why a disturbance is only partly cancelled, and gas pressure as particles hitting the walls (Year 11). Next: Catalysts and equilibrium, a faster route to the same mixture.\n\n#Year12Chemistry #Equilibrium #HSCScience",
+      "description": "Squeeze a gas mixture that is sitting at equilibrium and predict which way it shifts by counting only the gas particles. Explain the shift as the side with fewer gas particles becoming favoured when every gas is more crowded. Handle equal gas counts and solids, and tell a squeeze apart from adding an inert gas at fixed volume.\n\n0:00 The syringe puzzle\n0:59 What a squeeze changes\n2:53 Reading the graphs\n3:56 Equal gas counts\n4:48 Squeeze or add argon\n5:58 Practice question\n6:58 Working through the answer\n8:38 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports explaining how pressure and volume changes affect an equilibrium, using Le Chatelier’s principle and collision theory.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier’s principle can be used to predict such effects\"\n\"explain the overall observations about equilibrium in terms of the collision theory\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Le Chatelier’s principle for concentration and temperature changes, why a disturbance is only partly cancelled, and gas pressure as particles hitting the walls (Year 11). Next: Catalysts and equilibrium, a faster route to the same mixture.\n\n#Year12Chemistry #Equilibrium #HSCScience",
       "syllabusDotpoints": [
         "investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier’s principle can be used to predict such effects",
         "explain the overall observations about equilibrium in terms of the collision theory"
@@ -99,6 +123,31 @@
         "before": "Private",
         "after": "Public",
         "action": "Changed visibility only and saved"
+      },
+      "chapters": [
+        "0:00 The syringe puzzle",
+        "0:59 What a squeeze changes",
+        "2:53 Reading the graphs",
+        "3:56 Equal gas counts",
+        "4:48 Squeeze or add argon",
+        "5:58 Practice question",
+        "6:58 Working through the answer",
+        "8:38 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 5,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
       }
     },
     {
@@ -106,7 +155,7 @@
       "file": "out/explainer/Explainer-bio-m5-b02b/Explainer-bio-m5-b02b-v1.mp4",
       "sha256": "5a65e1a488764865873633203820cb46fac910edcadfbf57f3237a605a49cd77",
       "title": "Flowering Plant Reproduction: Pollination to Seed | Year 12 Biology",
-      "description": "Sequence reproduction in flowering plants from pollination to seed, and explain why pollination is not yet fertilisation. Explain how a pollen tube carries sperm to the egg. Name vegetative propagation as the asexual route in plants, then match each route to the conditions where it works best.\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing sexual and asexual reproduction in plants.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms, including but not limited to:\n- plants: asexual and sexual reproduction\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Sexual and asexual reproduction, gametes joining at fertilisation, clones, and the conditions that favour clones or variety. Next: Reproduction without flowers or seeds: yeast, bacteria and protists.\n\n#Year12Biology #Reproduction #HSCScience",
+      "description": "Sequence reproduction in flowering plants from pollination to seed, and explain why pollination is not yet fertilisation. Explain how a pollen tube carries sperm to the egg. Name vegetative propagation as the asexual route in plants, then match each route to the conditions where it works best.\n\n0:00 Two ways to make plants\n1:25 Pollination\n2:45 Fertilisation and seeds\n4:10 Making plants without seeds\n5:36 Building an answer\n6:23 Practice question\n7:24 Working through the answer\n8:51 Key notes\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing sexual and asexual reproduction in plants.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms, including but not limited to:\n- plants: asexual and sexual reproduction\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Sexual and asexual reproduction, gametes joining at fertilisation, clones, and the conditions that favour clones or variety. Next: Reproduction without flowers or seeds: yeast, bacteria and protists.\n\n#Year12Biology #Reproduction #HSCScience",
       "syllabusDotpoints": [
         "explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms, including but not limited to:\n- plants: asexual and sexual reproduction"
       ],
@@ -142,6 +191,31 @@
         "before": "Public",
         "after": "Public",
         "action": "No change needed"
+      },
+      "chapters": [
+        "0:00 Two ways to make plants",
+        "1:25 Pollination",
+        "2:45 Fertilisation and seeds",
+        "4:10 Making plants without seeds",
+        "5:36 Building an answer",
+        "6:23 Practice question",
+        "7:24 Working through the answer",
+        "8:51 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 3,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
       }
     },
     {
@@ -149,7 +223,7 @@
       "file": "out/explainer/Explainer-bio-m5-b04/Explainer-bio-m5-b04-v1.mp4",
       "sha256": "0349049f16894a57d4c464d641fdbf6fad7e084da2625c539ee37f9029aa2e8a",
       "title": "How DNA Is Copied: Base Pairing and Replication | Year 12 Biology",
-      "description": "Explain how a cell copies billions of DNA letters almost without error. Name the parts of a DNA nucleotide, pair A with T and C with G, and explain why one strand acts as a template for the other. Trace a short molecule through semi-conservative replication, where each new molecule keeps one original strand, and explain why copying errors are rare.\n\nBiology 2017: Year 12 Module 5, Heredity. Supports modelling DNA replication using the Watson and Crick model, including nucleotide composition, pairing and bonding.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"model the processes involved in cell replication, including but not limited to:\n- DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: DNA as inherited information, genes, alleles and copying errors, and how a single cell copies its DNA before it splits. Next: Mitosis, how a cell shares its copied chromosomes between two new cells.\n\n#Year12Biology #DNA #HSCScience",
+      "description": "Explain how a cell copies billions of DNA letters almost without error. Name the parts of a DNA nucleotide, pair A with T and C with G, and explain why one strand acts as a template for the other. Trace a short molecule through semi-conservative replication, where each new molecule keeps one original strand, and explain why copying errors are rare.\n\n0:00 How cells copy DNA\n0:52 Base pairing\n2:38 Replication steps\n3:43 Copy a DNA molecule\n5:34 Copying errors and repair\n6:34 Practice questions\n7:24 Working through the answers\n9:11 Key notes\n\nBiology 2017: Year 12 Module 5, Heredity. Supports modelling DNA replication using the Watson and Crick model, including nucleotide composition, pairing and bonding.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"model the processes involved in cell replication, including but not limited to:\n- DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: DNA as inherited information, genes, alleles and copying errors, and how a single cell copies its DNA before it splits. Next: Mitosis, how a cell shares its copied chromosomes between two new cells.\n\n#Year12Biology #DNA #HSCScience",
       "syllabusDotpoints": [
         "model the processes involved in cell replication, including but not limited to:\n- DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding"
       ],
@@ -185,6 +259,31 @@
         "before": "Private",
         "after": "Public",
         "action": "Changed visibility only and saved"
+      },
+      "chapters": [
+        "0:00 How cells copy DNA",
+        "0:52 Base pairing",
+        "2:38 Replication steps",
+        "3:43 Copy a DNA molecule",
+        "5:34 Copying errors and repair",
+        "6:34 Practice questions",
+        "7:24 Working through the answers",
+        "9:11 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 8,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
       }
     },
     {
@@ -192,7 +291,7 @@
       "file": "out/explainer/Explainer-bio-m5-b03a/Explainer-bio-m5-b03a-v1.mp4",
       "sha256": "69f7f57120e758ba87d08c8adfcccf935f91ea77ffe250601f6ab86ea481bcd1",
       "title": "Human Pregnancy: Fertilisation to Implantation | Year 12 Biology",
-      "description": "Trace a human pregnancy from fertilisation in the oviduct, through cleavage and the blastocyst, to implantation in a uterine lining that progesterone has prepared. Explain why the embryo’s hCG keeps the corpus luteum making progesterone, and why the placenta takes over progesterone over the first two to three months. Separate hCG from progesterone, and an embryo from a fetus.\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing fertilisation, implantation and the hormonal control of pregnancy in mammals.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Sexual reproduction in animals, one set of chromosomes in each gamete, and internal fertilisation with few young. Next: How pregnancy hormone loops hold a pregnancy steady, and how labour builds.\n\n#Year12Biology #Pregnancy #HSCScience",
+      "description": "Trace a human pregnancy from fertilisation in the oviduct, through cleavage and the blastocyst, to implantation in a uterine lining that progesterone has prepared. Explain why the embryo’s hCG keeps the corpus luteum making progesterone, and why the placenta takes over progesterone over the first two to three months. Separate hCG from progesterone, and an embryo from a fetus.\n\n0:00 The pregnancy test puzzle\n1:17 From zygote to blastocyst\n2:24 Preparing the uterus\n3:27 Keeping progesterone flowing\n4:38 The placenta\n5:12 Practice questions\n6:16 Working through the answers\n8:05 Key notes\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing fertilisation, implantation and the hormonal control of pregnancy in mammals.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Sexual reproduction in animals, one set of chromosomes in each gamete, and internal fertilisation with few young. Next: How pregnancy hormone loops hold a pregnancy steady, and how labour builds.\n\n#Year12Biology #Pregnancy #HSCScience",
       "syllabusDotpoints": [
         "analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals"
       ],
@@ -228,13 +327,38 @@
         "before": "Public",
         "after": "Public",
         "action": "No change needed"
+      },
+      "chapters": [
+        "0:00 The pregnancy test puzzle",
+        "1:17 From zygote to blastocyst",
+        "2:24 Preparing the uterus",
+        "3:27 Keeping progesterone flowing",
+        "4:38 The placenta",
+        "5:12 Practice questions",
+        "6:16 Working through the answers",
+        "8:05 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 6,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
       }
     },
     {
       "lessonId": "bio-m5-b03a2",
       "file": "out/explainer/Explainer-bio-m5-b03a2/Explainer-bio-m5-b03a2-v1.mp4",
       "title": "Pregnancy Feedback and Labour: Hormone Loops | Year 12 Biology",
-      "description": "Explain how a pregnancy stays steady for nine months, and why no new egg is released during it. Use negative feedback, where progesterone turns down the pituitary hormones FSH and LH, to explain why ovulation stops. Explain how labour builds through positive feedback involving oxytocin and the cervix, and how prolactin and oxytocin help make and release milk.\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing the hormonal control of pregnancy and birth in mammals, including negative and positive feedback.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Human pregnancy from fertilisation to implantation, including hCG, progesterone and the placenta, and that a hormone is a messenger carried by the blood. Next: How farmers use reproduction knowledge to breed animals and crops.\n\n#Year12Biology #Pregnancy #HSCScience",
+      "description": "Explain how a pregnancy stays steady for nine months, and why no new egg is released during it. Use negative feedback, where progesterone turns down the pituitary hormones FSH and LH, to explain why ovulation stops. Explain how labour builds through positive feedback involving oxytocin and the cervix, and how prolactin and oxytocin help make and release milk.\n\n0:00 Two feedback systems\n0:55 Progesterone applies a brake\n2:21 Getting ready for birth\n3:12 Oxytocin and positive feedback\n4:01 Building an explanation\n5:23 Practice questions\n6:29 Working through the answers\n8:40 Key notes\n\nBiology 2017: Year 12 Module 5, Heredity. Supports analysing the hormonal control of pregnancy and birth in mammals, including negative and positive feedback.\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):\n\"analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: Human pregnancy from fertilisation to implantation, including hCG, progesterone and the placenta, and that a hormone is a messenger carried by the blood. Next: How farmers use reproduction knowledge to breed animals and crops.\n\n#Year12Biology #Pregnancy #HSCScience",
       "syllabusDotpoints": [
         "analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals"
       ],
@@ -265,13 +389,38 @@
       "url": "https://youtu.be/Mlz5XT5XR7o",
       "studioUrl": "https://studio.youtube.com/video/Mlz5XT5XR7o/edit",
       "uploadDate": "2026-10-15",
-      "processing": "HD complete; Studio showed no notices"
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 Two feedback systems",
+        "0:55 Progesterone applies a brake",
+        "2:21 Getting ready for birth",
+        "3:12 Oxytocin and positive feedback",
+        "4:01 Building an explanation",
+        "5:23 Practice questions",
+        "6:29 Working through the answers",
+        "8:40 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 7,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
     },
     {
       "lessonId": "chem-m5-c05",
       "file": "out/explainer/Explainer-chem-m5-c05/Explainer-chem-m5-c05-v1.mp4",
       "title": "The Equilibrium Constant, K: Writing Expressions | Year 12 Chemistry",
-      "description": "When a settled mixture changes all of its amounts, the ratio of concentrations stays the same at a fixed temperature. Name that ratio K and write its expression for a reaction in solution from a balanced equation, using coefficients as powers and leaving out solids and pure liquids. Read whether a stated K is large, small or middling for that reaction.\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports deducing equilibrium expressions for homogeneous reactions in solution.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"deduce the equilibrium expression (in terms of Keq) for homogeneous reactions occurring in solution\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Dynamic equilibrium with equal non-zero rates, the settled mixtures from the earlier flask and tube examples, and concentration as moles per litre. Next: Calculating K and equilibrium concentrations with an ICE table.\n\n#Year12Chemistry #Keq #HSCScience",
+      "description": "When a settled mixture changes all of its amounts, the ratio of concentrations stays the same at a fixed temperature. Name that ratio K and write its expression for a reaction in solution from a balanced equation, using coefficients as powers and leaving out solids and pure liquids. Read whether a stated K is large, small or middling for that reaction.\n\n0:00 The equilibrium puzzle\n1:08 Writing the expression\n1:57 A worked example\n3:15 What K tells us\n4:31 Practice questions\n5:19 Working through the answers\n6:45 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports deducing equilibrium expressions for homogeneous reactions in solution.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"deduce the equilibrium expression (in terms of Keq) for homogeneous reactions occurring in solution\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Dynamic equilibrium with equal non-zero rates, the settled mixtures from the earlier flask and tube examples, and concentration as moles per litre. Next: Calculating K and equilibrium concentrations with an ICE table.\n\n#Year12Chemistry #Keq #HSCScience",
       "syllabusDotpoints": [
         "deduce the equilibrium expression (in terms of Keq) for homogeneous reactions occurring in solution"
       ],
@@ -287,7 +436,7 @@
         "title": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 syllabus)",
         "id": "PLXlgpBwz61_4",
         "url": "https://www.youtube.com/playlist?list=PLXlgpBwz61_4",
-        "position": 6,
+        "position": 7,
         "membership": "Confirmed in Studio playlist videos",
         "visibility": "Public",
         "sorting": "Manual"
@@ -302,8 +451,480 @@
       "url": "https://youtu.be/NJjEgjilgAE",
       "studioUrl": "https://studio.youtube.com/video/NJjEgjilgAE/edit",
       "uploadDate": "2026-10-15",
-      "processing": "HD complete; Studio showed no notices"
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 The equilibrium puzzle",
+        "1:08 Writing the expression",
+        "1:57 A worked example",
+        "3:15 What K tells us",
+        "4:31 Practice questions",
+        "5:19 Working through the answers",
+        "6:45 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 7,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
+    },
+    {
+      "lessonId": "chem-m5-c04b",
+      "file": "out/explainer/Explainer-chem-m5-c04b/Explainer-chem-m5-c04b-v1.mp4",
+      "sha256": "c80e15b9768afb39455b76b04b644285af9a6e4902b984d816353188184cb600",
+      "title": "Catalysts and Equilibrium: Same Mixture, Sooner | Year 12 Chemistry",
+      "description": "A catalyst makes a reaction faster, so why does it not give more product at equilibrium? Explain a catalyst as an alternative pathway with a lower activation energy that speeds up both the forward and reverse reactions. Distinguish the product formed in a limited time from the amount present at equilibrium, and state what a catalyst does to a mixture that is already at equilibrium.\n\n0:00 Two sealed tubes\n1:07 How a catalyst works\n2:26 Comparing the tubes\n3:25 Why the mixture stays the same\n4:11 Adding a catalyst at equilibrium\n5:26 Practice question\n6:29 Working through the answer\n8:11 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports explaining that a catalyst changes how soon equilibrium is reached, not where it sits, using collision theory and activation energy.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"examine how activation energy and heat of reaction affect the position of equilibrium\"\n\"explain the overall observations about equilibrium in terms of the collision theory\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Squeezing a gas mixture and how the forward and reverse rates change by different factors, plus collisions that have enough energy to react. Next: Writing the equilibrium constant, K, from a balanced equation.\n\n#Year12Chemistry #Catalysts #HSCScience",
+      "syllabusDotpoints": [
+        "examine how activation energy and heat of reaction affect the position of equilibrium",
+        "explain the overall observations about equilibrium in terms of the collision theory"
+      ],
+      "status": "published",
+      "visibility": "Public",
+      "requestedVisibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": "Yes",
+      "playlist": {
+        "title": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 syllabus)",
+        "id": "PLXlgpBwz61_4",
+        "url": "https://www.youtube.com/playlist?list=PLXlgpBwz61_4",
+        "position": 6,
+        "membership": "Confirmed on public playlist page",
+        "visibility": "Public",
+        "sorting": "Manual"
+      },
+      "captionFile": "docs/production/claude-pm/lessons/c4b/measured/captions.srt",
+      "captionSha256": "5d8ad171af3f1102d0a1c18a2c2325ccbbbe949a05d19f5a71782b5aadb970d4",
+      "captionLanguage": "English (Australia)",
+      "captionStatus": "Published",
+      "thumbnail": "Auto-generated frame 2.",
+      "duration": "8:37",
+      "videoId": "jDkHt4rf6bI",
+      "url": "https://youtu.be/jDkHt4rf6bI",
+      "studioUrl": "https://studio.youtube.com/video/jDkHt4rf6bI/edit",
+      "uploadDate": "2026-10-15",
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 Two sealed tubes",
+        "1:07 How a catalyst works",
+        "2:26 Comparing the tubes",
+        "3:25 Why the mixture stays the same",
+        "4:11 Adding a catalyst at equilibrium",
+        "5:26 Practice question",
+        "6:29 Working through the answer",
+        "8:11 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 6,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
+    },
+    {
+      "lessonId": "chem-m5-c08",
+      "file": "out/explainer/Explainer-chem-m5-c08/Explainer-chem-m5-c08-v1.mp4",
+      "sha256": "c490926d0324bfab6630d8ee58ec868c6316513c2caf18c12ede27b9bc770a7c",
+      "title": "Reaction Quotient Q: Predicting the Direction | Year 12 Chemistry",
+      "description": "Given a mixture that has not settled, and the K for that temperature, decide which way it will run before anything changes. Write the reaction quotient, Q, from supplied concentrations, compare Q with K, and state the direction and the reason. Then use the same steps on an unseen mixture.\n\n0:00 Which way will it run?\n1:04 Calculate Q\n2:01 Why Q predicts direction\n3:00 Starting from the other side\n5:01 Changing a settled mixture\n6:04 Practice question\n6:52 Working through the answer\n8:25 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports using equilibrium quantities and constants to predict the direction in which a reaction may proceed.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Calculating K from settled concentrations, the K expression and its rules, and concentration in mol/L. Next: Harder ICE table and reaction quotient decisions.\n\n#Year12Chemistry #Equilibrium #HSCScience",
+      "syllabusDotpoints": [
+        "perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed"
+      ],
+      "status": "published",
+      "visibility": "Public",
+      "requestedVisibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": "Yes",
+      "playlist": {
+        "title": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 syllabus)",
+        "id": "PLXlgpBwz61_4",
+        "url": "https://www.youtube.com/playlist?list=PLXlgpBwz61_4",
+        "position": 10,
+        "membership": "Confirmed on public playlist page",
+        "visibility": "Public",
+        "sorting": "Manual"
+      },
+      "captionFile": "docs/production/claude-pm/lessons/c8/measured/captions.srt",
+      "captionSha256": "e05a1bb74261f2fd6c75270237b2a19808ed20d795a880afdd0d650a5310ba5d",
+      "captionLanguage": "English (Australia)",
+      "captionStatus": "Published",
+      "thumbnail": "Auto-generated frame 2.",
+      "duration": "8:51",
+      "videoId": "IWS7_MDw-yc",
+      "url": "https://youtu.be/IWS7_MDw-yc",
+      "studioUrl": "https://studio.youtube.com/video/IWS7_MDw-yc/edit",
+      "uploadDate": "2026-10-15",
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 Which way will it run?",
+        "1:04 Calculate Q",
+        "2:01 Why Q predicts direction",
+        "3:00 Starting from the other side",
+        "5:01 Changing a settled mixture",
+        "6:04 Practice question",
+        "6:52 Working through the answer",
+        "8:25 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 10,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
+    },
+    {
+      "lessonId": "chem-m5-c06a",
+      "file": "out/explainer/Explainer-chem-m5-c06a/Explainer-chem-m5-c06a-v1.mp4",
+      "title": "Calculating K: the Three Question Types and ICE Tables | Year 12 Chemistry",
+      "description": "Equilibrium calculation questions come in three types. Do the first two here: substitute settled concentrations straight into K, then use an ICE table (I for initial, C for change, E for equilibrium) when you are given a start and one measured equilibrium value. Put the measured value in the equilibrium row first, work out its change as equilibrium minus initial, then use the coefficients for the other changes. Also see how K flips when the equation is written backwards.\n\n0:00 Two types of K question\n1:33 Reversing the equation\n2:20 Using one measured value\n3:00 Starting an ICE table\n4:11 Finding the changes\n5:13 Calculate K\n6:30 Practice question\n7:21 Working through the answer\n9:51 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports performing calculations to find Keq and the concentrations of substances in an equilibrium system.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Writing equilibrium expressions and the meaning of K. Next: Finding equilibrium concentrations from K, with no quadratic needed.\n\n#Year12Chemistry #Keq #HSCScience",
+      "syllabusDotpoints": [
+        "perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed"
+      ],
+      "sha256": "286a6b1fbf72e85b671ceea612b03a4f1e848fbe11ce167dfe73a079531ff1ab",
+      "status": "published",
+      "visibility": "Public",
+      "requestedVisibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": "Yes",
+      "playlist": {
+        "title": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 syllabus)",
+        "id": "PLXlgpBwz61_4",
+        "url": "https://www.youtube.com/playlist?list=PLXlgpBwz61_4",
+        "position": 8,
+        "membership": "Confirmed on public playlist page after reload",
+        "visibility": "Public",
+        "sorting": "Manual"
+      },
+      "captionFile": "docs/production/claude-pm/lessons/c6a/measured/captions.srt",
+      "captionSha256": "4ead6b2ef7c57c1818186933ceb66a903cdfb9e9e6840aa16c78f4fdad0c5c47",
+      "captionLanguage": "English (Australia)",
+      "captionStatus": "Published",
+      "thumbnail": "Auto-generated frame 2.",
+      "duration": "10:17",
+      "videoId": "_NLAkMBNyRY",
+      "url": "https://youtu.be/_NLAkMBNyRY",
+      "studioUrl": "https://studio.youtube.com/video/_NLAkMBNyRY/edit",
+      "uploadDate": "2026-10-15",
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 Two types of K question",
+        "1:33 Reversing the equation",
+        "2:20 Using one measured value",
+        "3:00 Starting an ICE table",
+        "4:11 Finding the changes",
+        "5:13 Calculate K",
+        "6:30 Practice question",
+        "7:21 Working through the answer",
+        "9:51 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 8,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
+    },
+    {
+      "lessonId": "chem-m5-c09",
+      "file": "out/explainer/Explainer-chem-m5-c09/Explainer-chem-m5-c09-v1.mp4",
+      "title": "Temperature and the Equilibrium Constant: How Does Heat Change K? | Year 12 Chemistry",
+      "description": "Adding a chemical, squeezing the container or adding a catalyst never changes K. Changing the temperature does. See why with a sealed tube of brown nitrogen dioxide: heating speeds up both reactions, but the one that takes in heat speeds up more, so the mixture settles somewhere new and K changes. Learn the rule for endothermic and exothermic reactions, and how to read it backwards from a table of K values.\n\n0:00 What changes K?\n1:17 Why temperature matters\n2:04 Reading the evidence\n3:49 Comparing four changes\n5:19 Remember the rule\n5:54 Practice question\n6:37 Working through the answer\n8:23 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports explaining the effect of temperature on Keq.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"qualitatively analyse the effect of temperature on the value of Keq\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: K and the reaction quotient Q, and Le Chatelier's principle. Next: Finding K from a colour reading (colourimetry).\n\n#Year12Chemistry #Keq #HSCScience",
+      "syllabusDotpoints": [
+        "qualitatively analyse the effect of temperature on the value of Keq"
+      ],
+      "sha256": "08ae49b72958f1d1a512938fc10ce3df969ee6ca1ad058af1bf6201d842e23a6",
+      "status": "published",
+      "visibility": "Public",
+      "requestedVisibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": "Yes",
+      "playlist": {
+        "title": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 syllabus)",
+        "id": "PLXlgpBwz61_4",
+        "url": "https://www.youtube.com/playlist?list=PLXlgpBwz61_4",
+        "position": 11,
+        "membership": "Confirmed on public playlist page after reload",
+        "visibility": "Public",
+        "sorting": "Manual"
+      },
+      "captionFile": "docs/production/claude-pm/lessons/c9/measured/captions.srt",
+      "captionSha256": "523ef063fff9fcc368e25c48e964fb9723b38866d7748e918cf8a22abb15ef97",
+      "captionLanguage": "English (Australia)",
+      "captionStatus": "Published",
+      "thumbnail": "Auto-generated frame 2.",
+      "duration": "8:49",
+      "videoId": "9TxH_y3ZOdU",
+      "url": "https://youtu.be/9TxH_y3ZOdU",
+      "studioUrl": "https://studio.youtube.com/video/9TxH_y3ZOdU/edit",
+      "uploadDate": "2026-10-15",
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 What changes K?",
+        "1:17 Why temperature matters",
+        "2:04 Reading the evidence",
+        "3:49 Comparing four changes",
+        "5:19 Remember the rule",
+        "5:54 Practice question",
+        "6:37 Working through the answer",
+        "8:23 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 11,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
+    },
+    {
+      "lessonId": "chem-m5-c06b",
+      "file": "out/explainer/Explainer-chem-m5-c06b/Explainer-chem-m5-c06b-v1.mp4",
+      "title": "Finding Equilibrium Concentrations from K (No Quadratic Needed) | Year 12 Chemistry",
+      "description": "The third type of equilibrium calculation: you are given K and the starting amounts, and you need the equilibrium concentrations. Set up the ICE table with an unknown x, then use one of two shortcuts. If the equation is a perfect square, take the square root. If K is tiny and the start is not, drop the x from the bottom, solve by multiplying both sides by the bottom and dividing, then check that x is under about 5 per cent of the start.\n\n0:00 The unknown at equilibrium\n0:30 Set up the ICE table\n1:22 Solve a perfect square\n4:45 When K is tiny\n7:21 Choose the shortcut\n7:46 Practice question\n8:26 Work through the answer\n10:18 Recap and checks\n10:49 Key notes\n\nChemistry 2017: Year 12 Module 5, Equilibrium and Acid Reactions. Supports performing calculations to find Keq and the concentrations of substances in an equilibrium system.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 5):\n\"perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: ICE tables and the three question types. Next: Equilibrium in industry: yield, rate and cost.\n\n#Year12Chemistry #Keq #HSCScience",
+      "syllabusDotpoints": [
+        "perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed"
+      ],
+      "sha256": "a46f0addba619c1d5d0b59cee91d79c287c5a8045c40320a7a53b4e43f685f3a",
+      "status": "published",
+      "visibility": "Public",
+      "requestedVisibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": "Yes",
+      "playlist": {
+        "title": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 syllabus)",
+        "id": "PLXlgpBwz61_4",
+        "url": "https://www.youtube.com/playlist?list=PLXlgpBwz61_4",
+        "position": 9,
+        "membership": "Confirmed on public playlist page after reload",
+        "visibility": "Public",
+        "sorting": "Manual"
+      },
+      "captionFile": "docs/production/claude-pm/lessons/c6b/measured/captions.srt",
+      "captionSha256": "d8ab58af9622e590430c5fb582b0e3876fda2d9f1892428ad9e835d3ff8b1061",
+      "captionLanguage": "English (Australia)",
+      "captionStatus": "Published",
+      "thumbnail": "Auto-generated frame 3.",
+      "duration": "11:15",
+      "videoId": "Zs1oO5eCIqc",
+      "url": "https://youtu.be/Zs1oO5eCIqc",
+      "studioUrl": "https://studio.youtube.com/video/Zs1oO5eCIqc/edit",
+      "uploadDate": "2026-10-16",
+      "processing": "HD complete; Studio showed no notices",
+      "chapters": [
+        "0:00 The unknown at equilibrium",
+        "0:30 Set up the ICE table",
+        "1:22 Solve a perfect square",
+        "4:45 When K is tiny",
+        "7:21 Choose the shortcut",
+        "7:46 Practice question",
+        "8:26 Work through the answer",
+        "10:18 Recap and checks",
+        "10:49 Key notes"
+      ],
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show a full key notes page. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame at 15 seconds before the end, checked 2026-10-16. C5 template placement was also checked in Studio and discarded."
+      },
+      "audit": {
+        "checkedDate": "2026-10-16",
+        "visibility": "Public",
+        "captions": "Published, English (Australia)",
+        "dotpointPresent": true,
+        "playlistPosition": 9,
+        "thumbnailSet": true,
+        "processing": "HD complete",
+        "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check."
+      }
     }
   ],
-  "visibilityCheckDate": "2026-10-15"
+  "visibilityCheckDate": "2026-10-15",
+  "brief42": {
+    "status": "chapters-saved-end-screens-skipped-to-protect-notes",
+    "checkedDate": "2026-10-16",
+    "scope": "All 19 published Module 5 videos: 12 wave 4 records and seven earlier records.",
+    "chapterVerification": "Studio descriptions were checked after saving. B2b and C5 were reloaded to verify persistence.",
+    "playlistVerification": "Both public playlists used Manual sorting. Chemistry had 11 videos and Biology had 8, each in the recorded order."
+  },
+  "priorWavesAudit": [
+    {
+      "wave": 1,
+      "videoId": "zaC5iXuovKg",
+      "title": "Static and Dynamic Equilibrium: Equal Rates, Not Equal Amounts | Year 12 Chemistry",
+      "url": "https://youtu.be/zaC5iXuovKg",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 1,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    },
+    {
+      "wave": 1,
+      "videoId": "44FFfv7RGck",
+      "title": "Sexual and Asexual Reproduction: Continuity and Variation | Year 12 Biology",
+      "url": "https://youtu.be/44FFfv7RGck",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 1,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    },
+    {
+      "wave": 1,
+      "videoId": "w7edKqGAUwA",
+      "title": "How Bread Mould Spreads: Spores and New Growth | Year 12 Biology",
+      "url": "https://youtu.be/w7edKqGAUwA",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 5,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    },
+    {
+      "wave": 2,
+      "videoId": "vd9Ory9-flE",
+      "title": "How Reversible Reactions Approach Equilibrium | Year 12 Chemistry",
+      "url": "https://youtu.be/vd9Ory9-flE",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 2,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    },
+    {
+      "wave": 2,
+      "videoId": "0P33z4D2q0E",
+      "title": "External and Internal Fertilisation: Why Egg Numbers Differ | Year 12 Biology",
+      "url": "https://youtu.be/0P33z4D2q0E",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 2,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    },
+    {
+      "wave": 3,
+      "videoId": "w0GzgApQhQY",
+      "title": "Le Chatelier’s Principle: Concentration and Temperature | Year 12 Chemistry",
+      "url": "https://youtu.be/w0GzgApQhQY",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 4,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    },
+    {
+      "wave": 3,
+      "videoId": "kG-KexGgCzc",
+      "title": "How Single-Celled Organisms Reproduce: Fission and Budding | Year 12 Biology",
+      "url": "https://youtu.be/kG-KexGgCzc",
+      "visibility": "Public",
+      "captions": "Published, English (Australia)",
+      "dotpointPresent": true,
+      "playlistPosition": 4,
+      "thumbnailSet": true,
+      "processing": "HD complete",
+      "copyrightOrProcessingWarnings": "None shown in Studio details. Copyright was clear at upload check.",
+      "endScreen": {
+        "status": "skipped",
+        "reason": "The final 15 to 20 seconds show key notes across the placement area. Video and subscribe elements would cover study text.",
+        "evidence": "Local MP4 frame or Studio end screen preview checked 2026-10-16."
+      }
+    }
+  ]
 }

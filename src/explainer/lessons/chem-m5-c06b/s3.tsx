@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {AMBER, AMBER_INK, DrawPath, INK, INK_SOFT, prog} from '../../kit';
 import {cues} from '../../cues';
-import {Chip, EqStrip, Fade, FracX, Overlay, Ring, Sx, TEAL, Tick, Radical, fracXW, tw} from '../chem-m5-c06/parts';
+import {Arrow, Chip, EqStrip, Fade, FracX, Overlay, Ring, Sx, TEAL, Tick, Radical, fracXW, tw} from '../chem-m5-c06/parts';
 import type {Term} from '../chem-m5-c06/parts';
 import {IceTable, iceCell} from '../chem-m5-c06/ice';
 import {Heading, H2K, HIK, I2K, IAT_INK, cw, sc} from './common';
@@ -15,18 +15,22 @@ const Dim: React.FC<{at: number; to?: number; children: React.ReactNode}> = ({at
 	return <g opacity={1 - (1 - to) * prog(f, at, 14)}>{children}</g>;
 };
 
-// ---------- 9c. Solve the easier equation ----------
+// ---------- 9c. Solve the easier equation (Revision 4, take03: multiply both sides by the bottom, then divide by 4) ----------
 const C9 = 'tiny-k-solve';
-const KC = cues(sc(C9), {easy: 'the equation is easy', four: 'four x squared', div: 'Dividing by 0.25', mult: 'multiplying by four', left: 'the left side is', sixteen: ['sixteen x squared', 1], eq: 'That equals 1.6', divide: 'divide both sides', xsq: 'x squared is 1.0', x0010: '0.0010', atoms: 'The iodine atoms are', a0020: '0.0020', still: 'still about 0.25'});
-const e1 = cw(C9, '1.0 times ten to the minus six', 0);
+const KC = cues(sc(C9), {easy: 'the equation is easy', four: 'four x squared', over: 'four x squared over', mult: 'Multiply both sides by the bottom', e4: '4.0 times ten', divide: 'divide both sides by four', xsq: 'x squared is 1.0', x0010: '0.0010', atoms: 'The iodine atoms are', a0020: '0.0020', still: 'still about 0.25'});
+const b025 = cw(C9, 'the bottom 0.25', 2);
 export const SceneTinySolve: React.FC = () => {
 	const L1 = {cx: 960, cy: 320, size: 54};
 	const num: Term[][] = [[{t: '(2x)', p: '2', br: false, at: -100, color: IAT_INK, out: KC.four}], [{t: '4x', p: '2', br: false, at: KC.four + 4, color: IAT_INK}]];
 	const den: Term[][] = [[{t: '0.25', br: false, at: -100, color: I2K}]];
 	const W = fracXW(num, den, L1.size);
 	const rx = L1.cx + W / 2 + 24;
-	const X = 760;
-	const l2 = '16x^{2}';
+	const X = 760, S = 52;
+	const m1 = '4x^{2} = 1.6 × 10^{−5}', m2 = ' × 0.25';
+	const m3 = ' = 4.0 × 10^{−6}';
+	const Y = {a1: 436, l2: 500, a2: 574, l3: 634, l4: 714};
+	// tw over-measures a superscript tail, so the follow-on pieces are pulled back to a normal space
+	const p2 = X + tw(m1, S) - 26, p3 = p2 + tw(m2, S) - 4;
 	return (
 		<>
 			<Heading text="Find [I] at equilibrium" at={-100} size={62} />
@@ -37,26 +41,33 @@ export const SceneTinySolve: React.FC = () => {
 				<Ring cx={iceCell(TS.x, TS.y, TS.s, 2, 0)[0]} cy={iceCell(TS.x, TS.y, TS.s, 2, 0)[1]} rx={86} ry={34} at={KC.still} color={AMBER} seed={3} />
 				<Ring cx={iceCell(TS.x, TS.y, TS.s, 2, 1)[0]} cy={iceCell(TS.x, TS.y, TS.s, 2, 1)[1]} rx={86} ry={34} at={KC.a0020} out={KC.still} color={AMBER} seed={4} />
 				<Sx x={96} y={760} text="[I] = 2x = 0.0020 mol/L" size={38} color={TEAL} at={KC.a0020 + 6} />
-				{/* the algebra, one stage at a time */}
-				<Dim at={KC.sixteen}>
+				{/* the algebra, one stage per line, each written on its spoken step */}
+				<Dim at={KC.divide}>
 					<FracX cx={L1.cx} cy={L1.cy} size={L1.size} num={num} den={den} barAt={-100} />
-					<Sx x={rx} y={L1.cy + 20} text="≈" size={L1.size} color={AMBER_INK} at={-100} />
+					<Sx x={rx} y={L1.cy + 20} text="=" size={L1.size} color={AMBER_INK} at={-100} />
 					<Sx x={rx + 56} y={L1.cy + 20} text="1.6 × 10^{−5}" size={L1.size} color={TEAL} at={-100} />
-					<Sx x={L1.cx - W / 2 - 40} y={L1.cy - 64} text="(2x)^{2} = 2x × 2x = 4x^{2}" size={34} color={INK_SOFT} anchor="end" hand at={KC.four + 10} out={KC.div + 20} />
+					<Sx x={L1.cx - W / 2 - 40} y={L1.cy - 64} text="(2x)^{2} = 2x × 2x = 4x^{2}" size={34} color={INK_SOFT} anchor="end" hand at={KC.four + 10} out={KC.mult - 10} />
 				</Dim>
-				<Fade at={KC.div} out={KC.eq}>
-					<Sx x={X} y={456} text="÷ 0.25 is the same as × 4" size={42} color={AMBER_INK} hand at={KC.div} />
+				{/* step 1: multiply both sides by the bottom; the 0.25 is carried across */}
+				<Fade at={KC.mult} out={KC.divide}>
+					<Sx x={X} y={Y.a1} text="multiply both sides by the bottom" size={32} color={AMBER_INK} hand at={KC.mult} />
 				</Fade>
+				<Ring cx={L1.cx} cy={L1.cy + 52} rx={70} ry={36} at={KC.mult + 4} out={KC.e4 + 20} color={AMBER} seed={6} />
+				<Arrow x1={L1.cx + 84} y1={L1.cy + 40} x2={p2 + 110} y2={Y.l2 - 46} at={b025 - 4} color={AMBER_INK} width={4} out={KC.e4 + 20} />
 				<Dim at={KC.xsq}>
-					<Sx x={X} y={530} text={l2} size={56} color={IAT_INK} at={KC.sixteen} />
-					<Sx x={X + tw(l2, 56) + 24} y={530} text="= 1.6 × 10^{−5}" size={56} color={TEAL} at={KC.eq} />
+					<Sx x={X} y={Y.l2} text={m1} size={S} color={IAT_INK} at={b025} />
+					<Sx x={p2} y={Y.l2} text={m2} size={S} color={I2K} at={b025 + 8} />
+					<Sx x={p3} y={Y.l2} text={m3} size={S} color={TEAL} at={KC.e4} />
 				</Dim>
-				<Sx x={X + 620} y={530} text="÷ 16 on both sides" size={40} color={AMBER_INK} hand at={KC.divide} out={KC.x0010} />
+				{/* step 2: divide by 4 */}
+				<Fade at={KC.divide} out={KC.x0010}>
+					<Sx x={X} y={Y.a2} text="divide by 4" size={32} color={AMBER_INK} hand at={KC.divide} />
+				</Fade>
 				<Dim at={KC.x0010}>
-					<Sx x={X} y={612} text="x^{2} = 1.0 × 10^{−6}" size={56} at={e1} />
+					<Sx x={X} y={Y.l3} text="x^{2} = 1.0 × 10^{−6}" size={S} at={KC.xsq} />
 				</Dim>
-				<Sx x={X} y={694} text="x = 1.0 × 10^{−3} = 0.0010 mol/L" size={56} color={TEAL} at={KC.x0010} />
-				<Tick x={X + 960} y={676} at={KC.x0010 + 20} s={40} />
+				<Sx x={X} y={Y.l4} text="x = 0.0010 mol/L" size={S} color={TEAL} at={KC.x0010} />
+				<Tick x={X + tw('x = 0.0010 mol/L', S) + 40} y={Y.l4 - 18} at={KC.x0010 + 20} s={40} />
 				<ConditionCard at={-100} t1={-100} t2={-100} />
 			</Overlay>
 		</>

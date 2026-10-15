@@ -60,7 +60,7 @@ export const SceneHugeSetup: React.FC = () => {
 	return (
 		<Overlay>
 			<Board a={{task: 6, eq: KA.kfor, k: KA.k10, s: KA.s400, n: KA.s400 + 20}} />
-			<Tag x={720} y={204} w={640} text="a different temperature again, so a different K" at={KA.k10 + 12} size={28} color={AMBER_INK} />
+			<Tag x={720} y={204} w={640} text="a different temperature from other SO_3 questions" at={KA.k10 + 12} size={28} color={AMBER_INK} />
 			<Mirror at={KA.huge} hugeAt={KA.mirror} />
 			<Sx x={1380} y={630} text="almost nothing splits back" size={34} color={AMBER_INK} hand at={KA.almost} />
 			<IceTable x={HT.x} y={HT.y} s={HT.s} outlineAt={KA.start - 16} cols={soCols(KA.start - 8)} rows={ice(
@@ -100,6 +100,9 @@ export const SceneHugeSolve: React.FC = () => {
 			<Ring cx={X + 290} cy={732} rx={320} ry={46} at={KB.m4 + 10} color={AMBER} seed={7} />
 			<Tag x={X} y={800} w={330} text="K: no unit written" at={KB.ink + 30} color={AMBER_INK} size={28} />
 			<SlipChip x={1300} y={820} w={520} text="(2x)^{2} = 2x^{2}" at={KB.four + 20} out={KB.m4 + 30} note="(2x)^{2} = 4x^{2}" />
+			{/* Revision 2 pen tag (owner rule): how the x^3 line was rearranged */}
+			<Tag x={96} y={790} w={560} text="multiply both sides by the bottom, then divide" at={KB.xc + 12} size={26} color={AMBER_INK} />
+			<Arrow x1={560} y1={786} x2={706} y2={672} at={KB.xc + 18} color={AMBER_INK} width={4} dur={12} />
 		</Overlay>
 	);
 };

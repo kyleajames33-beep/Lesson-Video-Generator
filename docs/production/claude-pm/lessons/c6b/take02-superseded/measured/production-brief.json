@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c6b/measured/lesson.json",
+    "lessonSha256": "b077947ec23fa9d88d1da9d27bca57af34484131e16fc50e60ea3b9316ebe9d8"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C5, C6a and Year 11: the three types of K calculation and the ICE table (C6a); the settled H2 + I2 tube 0.10, 0.10, 0.70 with K = 49 (C6a type one); K expressions with coefficients as powers (C5); concentration in mol/L; rearranging a linear equation and taking a square root. The quadratic formula is neither needed nor assumed.",
+    "startsWith": "K and a start are given, nothing at equilibrium is measured, so the change has to be an unknown x.",
+    "stopsAfter": "Setting up x from the coefficients; solving a perfect-square case with the positive root and rejecting the negative root; solving a tiny-K case by dropping x with a stated condition and a 5 per cent check; saying that HSC questions are written so you should not need the quadratic formula, and which two shortcuts to look for. No huge-K or product-start case (G03), no Q (C8), no temperature dependence (C9).",
+    "nextLesson": "C7: why factories do not wait for equilibrium (industrial trade-offs)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c06b.md"
+  ],
+  "teaching": {
+    "task": "Find the equilibrium concentrations from K and a start, choosing between a square root and dropping x without the quadratic formula.",
+    "causalExplanation": "When K and the start are given, nothing at equilibrium is measured, so the change is an unknown x and the coefficients give the change row from it. The equilibrium row is initial plus change, substituted into K. When the top and the bottom of K are both squares (here because H2 and I2 started equal), the whole fraction is squared and a square root removes the powers, keeping the positive root because concentrations are positive; K itself need not be a square number. When K is tiny and the start is not, hardly any reactant changes, so x is tiny next to the start, start minus x is about the start, and x can be dropped from the bottom but kept where it is the answer. The shortcut is an assumption, so x is checked against about 5 per cent of the start and the answer is substituted back into K.",
+    "conversationalApproach": "Opens by saying why nothing measured makes the change an unknown, reuses the H2 + I2 perfect-square example with a 10 second try-it, explains why the root worked, teaches the tiny-K case on hot iodine one stage per scene with a ruler picture of the check, says plainly that you can use the quadratic formula but HSC questions are written so you should not need it, and tests an unseen N2 + O2 case where both shortcuts work and agree.",
+    "openingDecision": "If a question gives you K and the start, how do you find the equilibrium concentrations?",
+    "understandingCheck": "For N2 + O2 = 2NO with K = 4.0 x 10^-4, a start of 0.50 mol/L N2 and 0.50 mol/L O2 and no NO: find the equilibrium concentration of NO.",
+    "curriculumScope": "Calculate equilibrium concentrations from K and supplied starting data using an ICE table (Module 5). Huge-K and product-start cases (G03), Q, temperature dependence, weak acid Ka (Module 6) and the quadratic formula are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the C6a type cards, the C6 ICE table and algebra line, the C4B hot H2 + I2 tube, a coded hot iodine tube, the check ruler (a bar for the start with a sliver for x and a dashed 5 per cent line), the two-shortcut card and a coded engine cylinder. Colour key: H2 and HI pale grey, I2 purple, I atoms lighter violet, N2 navy, O2 red-orange, NO pale brown, made plus green, used up minus red, K teal.",
+    "transitionPlan": "The type cards lift card three to the task line; a camera push brings the H2 + I2 board and the algebra line moves up one stage at a time; the square-root equation returns for the condition; a fresh board in the same zones carries the iodine case, with the check ruler drawn under the equation; the two-shortcut card closes the teaching and is removed for the attempt; the feedback splits the board into two columns, one route per scene; the cards return for the decision rule; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "The C6a type cards in their column with cards 1 and 2 ticked and card 3 lifting to the centre, its mini ICE table showing a filled K chip and an empty Equilibrium row",
+      "teachingReason": "Poses type three and explains why nothing measured at equilibrium makes the change an unknown x",
+      "narrationCue": "type three / nothing at equilibrium is measured / the change has to be an unknown",
+      "motionPurpose": "Card 1 and 2 tick, card 3 lifts, a pen ring circles the empty Equilibrium row and an x writes into the Change row of the mini table",
+      "motionRole": "explain",
+      "onScreenChange": "Card 1 ticks with \"0.70^2 / (0.10 x 0.10) = 49\" on \"49\"; card 2 ticks; on \"type three\" card 3 lifts to the centre with its Equilibrium row of dashed \"?\" cells; on \"nothing\" a pen ring circles the empty row and a crossed ghost of the measured-value arrow fades in and out; on \"unknown\" an x writes into the Change row; card 3 then slides to the top-left as the task line",
+      "motionTools": [
+        "card slide-in",
+        "tick",
+        "ScribbleCircle",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Brief hold on the unknown x"
+    },
+    {
+      "sceneId": "k-given",
+      "visualDecision": "reuse",
+      "visualReference": "Fresh board with the task line, the H2 + I2 equation strip with the 2 highlighted, the givens card, the hot tube with 9, 9, 0 dots and a new ICE table outline",
+      "teachingReason": "Switches the task to K and the start known, with the settled concentrations wanted",
+      "narrationCue": "Now the other way round / K is 49 / 0.05 moles per litre / 0.45 moles per litre",
+      "motionPurpose": "The board builds, the K chip pops on 49 and the Initial row ticks to 0.45, 0.45 and 0",
+      "motionRole": "explain",
+      "onScreenChange": "The task line, equation strip and givens card \"K = 49 (450 C)\" write on; the tube with 9 H2 and 9 purple I2 dots and the key \"1 dot = 0.05 mol/L\" appears; the K chip pops on \"49\"; the Initial row ticks 0.45, 0.45, 0",
+      "motionTools": [
+        "CameraStage push",
+        "chip pop",
+        "table build",
+        "particle dots"
+      ],
+      "holdPurpose": "Hold the initial row into the next scene"
+    },
+    {
+      "sceneId": "unknown-x",
+      "visualDecision": "reuse",
+      "visualReference": "The ICE table, one H2 and one I2 dot becoming two HI dots, and coefficient chips flying into the Change row",
+      "teachingReason": "Introduces x as the amount used up and shows the change row follows the coefficients",
+      "narrationCue": "call the amount of hydrogen used up x / two H I / minus x, minus x and plus two x",
+      "motionPurpose": "An x writes with an arrow to one H2 dot, one H2 and one I2 meet and become two HI, and the Change row fills",
+      "motionRole": "explain",
+      "onScreenChange": "A bracket \"x = H2 used up, mol/L\" writes with an arrow to one H2 dot; a single H2 and I2 dot meet and become two HI dots; the coefficient chips fly into the Change row giving \"-x\", \"-x\", \"+2x\"",
+      "motionTools": [
+        "HandText write-on",
+        "particle meeting",
+        "coefficient fly-in"
+      ],
+      "holdPurpose": "Hold the change row"
+    },
+    {
+      "sceneId": "substitute",
+      "visualDecision": "reuse",
+      "visualReference": "The Equilibrium row algebra, the C5 expression returning, a pen ring on (2x)^2, a perfect-square label on the bracketed fraction and root signs over both sides",
+      "teachingReason": "Substitutes into K and shows the whole fraction is squared so a square root can be taken",
+      "narrationCue": "0.45 minus x / two x all squared / a perfect square / seven squared / we keep plus seven",
+      "motionPurpose": "The Equilibrium row fills with algebra, the equation writes as a squared fraction equal to 49, the label points at the bracketed fraction and the root signs draw over both sides",
+      "motionRole": "explain",
+      "onScreenChange": "The Equilibrium row fills \"0.45 - x\", \"0.45 - x\", \"2x\"; \"(2x)^2 / (0.45 - x)^2 = 49\" writes with a pen ring and a chip \"(2x)^2 = 2x times 2x, not 2x^2\"; the two (0.45 - x) factors are ringed with \"equal because H2 and I2 started equal\"; the line rewrites to \"(2x / (0.45 - x))^2 = 7^2\" with the label \"perfect square: something squared\"; two root signs draw and the line becomes 2x / (0.45 - x) = 7 with a tick",
+      "motionTools": [
+        "table cell tick",
+        "expression builder",
+        "ScribbleCircle",
+        "root sign draw",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the root line"
+    },
+    {
+      "sceneId": "solve",
+      "visualDecision": "reuse",
+      "visualReference": "The algebra line moving up one stage at a time, then the countdown ring beside 9x = 3.15 and x = ?",
+      "teachingReason": "Lets the learner finish the last step themselves before the answer",
+      "narrationCue": "Multiply both sides by 0.45 minus x / 7 times 0.45 minus x / Add 7x / nine x equals 3.15 / Find x. Pause here and try it.",
+      "motionPurpose": "The line transforms through 2x = 7(0.45 - x), 2x = 3.15 - 7x and 9x = 3.15, then holds on x = ? while the countdown runs",
+      "motionRole": "explain",
+      "onScreenChange": "The line becomes \"2x = 7(0.45 - x)\" with the 7 flying into the bracket, then \"2x = 3.15 - 7x\", then the 7x slides across to give \"9x = 3.15\"; the question \"x = ?\" holds with the countdown ring and \"Pause here and try it.\" in handwriting",
+      "motionTools": [
+        "HandText write-on",
+        "coefficient fly-in",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here and try it.\""
+    },
+    {
+      "sceneId": "check",
+      "visualDecision": "reuse",
+      "visualReference": "The answer x = 0.35, the Change and Equilibrium rows turning into numbers, a substitute-back check and the rejected negative root",
+      "teachingReason": "Gives the answer, completes the table, checks by substituting back and rejects the negative root",
+      "narrationCue": "x is 0.35 / 0.10 moles per litre / Check by substituting back / Why not minus seven / 0.63",
+      "motionPurpose": "x = 0.35 ticks, the table fills with numbers, the check writes to 49 and minus seven is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "\"x = 0.35 mol/L\" ticks; the Change cells become -0.35, -0.35, +0.70 and the Equilibrium cells 0.10, 0.10, 0.70; the tube moves to 2, 2, 14 with the tag \"the type one tube from the last video\"; \"0.70^2 / (0.10 x 0.10) = 49\" writes with a tick; \"-7 gives x = 0.63 > 0.45\" is crossed",
+      "motionTools": [
+        "NumberTicker",
+        "table cell tick",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the checked table"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "reuse",
+      "visualReference": "The finished H2 + I2 table with the Change row lit, ratio chips and a large handwritten habit line",
+      "teachingReason": "Reinforces that only the change row follows the coefficients",
+      "narrationCue": "Only the change row follows the coefficients / one, one, two / are not",
+      "motionPurpose": "The Change row lights with a 1 : 1 : 2 chip and a tick while the Equilibrium row gets a crossed ratio chip",
+      "motionRole": "explain",
+      "onScreenChange": "The aid writes large over the finished table; the Change row lights with \"1 : 1 : 2\" and a tick; the Equilibrium row gets \"0.10 : 0.10 : 0.70\" with a cross and \"not 1 : 1 : 2\"; a tag explains that H2 and I2 match only because they started equal; the condition tag \"used up is minus, made is plus\" lands",
+      "motionTools": [
+        "row highlight",
+        "chip pop",
+        "Mark cross",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "square-condition",
+      "visualDecision": "new",
+      "visualReference": "The K equation returning large with the two bottom factors ringed, brackets marking the top and bottom as squares, a K = 50 swap and a crossed unequal-starts example",
+      "teachingReason": "Explains why the square root worked: the top and the bottom are both squares, not because K is a square number",
+      "narrationCue": "started equal / a square / If K were 50 / both squares / the fraction, not the number K / tiny K",
+      "motionPurpose": "The two bottom factors ring together, square brackets mark the top and the bottom, the 49 swaps for 50 and still works, and a label defines perfect square as the whole fraction",
+      "motionRole": "explain",
+      "onScreenChange": "\"(2x)^2 / ((0.45 - x)(0.45 - x)) = 49\" returns large; on \"started equal\" the two factors ring with a pen line to \"start: [H2] = [I2] = 0.45\"; on \"square\" the bottom rewrites as \"(0.45 - x)^2\" and a bracket \"square\" lies under the top and the bottom; the 49 swaps for a grey 50 and \"2x / (0.45 - x) = 7.07\" ticks with \"still works\"; the label \"perfect square = the whole fraction is something squared\" writes; a crossed unequal-starts line appears; on \"tiny K\" the chip \"next: tiny K\" appears",
+      "motionTools": [
+        "ScribbleCircle",
+        "bracket draw",
+        "number swap",
+        "Mark cross",
+        "chip pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold the perfect-square label"
+    },
+    {
+      "sceneId": "tiny-k-setup",
+      "visualDecision": "new",
+      "visualReference": "Fresh board with a hot iodine tube of paired purple dots with one splitting into two atoms, a K scale at 10^-5, a two-column ICE table and the C5 builder",
+      "teachingReason": "Sets up a tiny-K case with the unknown x, the change row and the K line",
+      "narrationCue": "iodine atoms / 1.6 times ten to the minus five / 0.25 moles per litre / Call the I two that splits x / minus x and plus two x / two x all squared, over 0.25 minus x",
+      "motionPurpose": "One iodine molecule splits into two atoms, the K chip and scale show how small K is, the table fills stage by stage and the builder writes the K line",
+      "motionRole": "explain",
+      "onScreenChange": "A camera push brings the fresh board; the equation I2 = 2I writes with the 2 highlighted; one purple molecule splits into two violet dots with a ring; the givens card shows \"K = 1.6 x 10^-5 (very hot)\" with the chip \"illustrative value\" and a small scale showing 10^-5 far below 1; the table fills Initial 0.25 and 0, the bracket \"x = I2 that splits, mol/L\", Change \"-x\" and \"+2x\" with the 2 flying in, Equilibrium \"0.25 - x\" and \"2x\"; the builder writes K = (2x)^2 / (0.25 - x)",
+      "motionTools": [
+        "CameraStage push",
+        "particle split",
+        "table build",
+        "coefficient fly-in",
+        "expression builder"
+      ],
+      "holdPurpose": "Hold the K line"
+    },
+    {
+      "sceneId": "tiny-k-drop",
+      "visualDecision": "new",
+      "visualReference": "The new check ruler: a long purple bar for the start 0.25 with a hair-thin sliver for x, the equation line with the x greying out of the bottom, and a condition card",
+      "teachingReason": "Teaches why x can be dropped from start minus x when K is tiny, keeping x where it is the answer",
+      "narrationCue": "The bottom is not a square / x is tiny / drop the x / Keep the x on top / K very small / a start that is not tiny",
+      "motionPurpose": "The ruler shows the sliver is almost nothing next to the start, the x greys out of the bottom, a ring holds the top and the condition card writes with two ticks",
+      "motionRole": "explain",
+      "onScreenChange": "The ruler draws under the equation with the bar \"start: 0.25\" and a sliver \"x?\"; the bar without the sliver is laid over the full bar and they look the same; the \"- x\" in (0.25 - x) greys and slides out, the line becomes \"(2x)^2 / 0.25 = 1.6 x 10^-5\" and the cell shows \"about 0.25\"; a pen ring holds (2x)^2 with \"keep: this is the answer\"; the givens card shrinks to a one-line strip; the condition card \"Drop x only when: K very small, and the start not tiny\" writes with two ticks",
+      "motionTools": [
+        "bar draw",
+        "overlay compare",
+        "text slide-out",
+        "ScribbleCircle",
+        "tick"
+      ],
+      "holdPurpose": "Hold the condition card"
+    },
+    {
+      "sceneId": "tiny-k-solve",
+      "visualDecision": "new",
+      "visualReference": "The algebra line transforming one stage at a time with a pen aside, and the table Equilibrium row ticking",
+      "teachingReason": "Solves the easier equation with each algebra step explained",
+      "narrationCue": "four x squared / Dividing by 0.25 is the same as multiplying by four / sixteen x squared / divide both sides by sixteen / 0.0010 / 0.0020",
+      "motionPurpose": "The line transforms through 4x^2 / 0.25, 16x^2, x^2 = 1.0 x 10^-6 and x = 0.0010, then the table ticks 0.0020 and about 0.25",
+      "motionRole": "explain",
+      "onScreenChange": "The line \"4x^2 / 0.25 = 1.6 x 10^-5\" becomes \"16x^2 = 1.6 x 10^-5\" with a pen aside \"dividing by 0.25 is multiplying by 4\", then \"x^2 = 1.0 x 10^-6\", then \"x = 1.0 x 10^-3 = 0.0010 mol/L\"; the Equilibrium row ticks \"2x = 0.0020\" and \"about 0.25\"",
+      "motionTools": [
+        "HandText write-on",
+        "algebra line",
+        "table cell tick"
+      ],
+      "holdPurpose": "Hold the answer line"
+    },
+    {
+      "sceneId": "tiny-k-check",
+      "visualDecision": "new",
+      "visualReference": "The check ruler at full width with x drawn to scale against a dashed 5 per cent line, then a substitute-back working ending in a teal K tick",
+      "teachingReason": "Checks the shortcut was fair and substitutes back",
+      "narrationCue": "0.4 per cent / 5 per cent / rule of thumb / Substitute back / 1.6 times ten to the minus five",
+      "motionPurpose": "The sliver is labelled 0.4 per cent and ticked, the dashed 5 per cent line labels itself a rule of thumb and the substitution writes to K",
+      "motionRole": "explain",
+      "onScreenChange": "The ruler returns full width with the sliver x = 0.0010 against the start 0.25 and a dashed line at 5 per cent; \"0.0010 / 0.25 = 0.4%\" writes with a tick; the dashed line labels itself \"5%: a school rule of thumb\"; \"0.0020^2 = 4.0 x 10^-6\" and \"4.0 x 10^-6 / 0.25 = 1.6 x 10^-5\" write with a teal \"= K\" tick",
+      "motionTools": [
+        "bar draw",
+        "dashed line reveal",
+        "HandText write-on",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "no-quadratic",
+      "visualDecision": "new",
+      "visualReference": "A card saying the quadratic formula is allowed but HSC questions are written so you should not need it, a greyed sketch of the formula, and a two-shortcut card with a perfect-square half and a tiny-K half",
+      "teachingReason": "Says the quadratic formula may be used but HSC questions are written so you should not need it, and gives the two shortcuts to look for",
+      "narrationCue": "quadratic formula / shouldn't need / perfect square / Is K tiny / Drop the x, then check it",
+      "motionPurpose": "The card writes on, the formula sketch fades and greys on the words shouldn't need, and the two halves of the shortcut card build on their cues",
+      "motionRole": "explain",
+      "onScreenChange": "The card \"Quadratic formula: allowed. HSC questions are written so you should not need it.\" writes on with a grey sketch of the formula that fades and greys on the words should not need; the left half \"Perfect square: square root (keep the positive root)\" builds with a thumbnail of 2x / (0.45 - x) = 7; the right half \"Tiny K, start not tiny: drop x, then check under about 5%\" builds with a thumbnail of the check ruler",
+      "motionTools": [
+        "card slide-in",
+        "fade and grey",
+        "HandText write-on",
+        "thumbnail pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Coded engine cylinder vignette, the N2 + O2 = 2NO equation, a grouped givens card with units, the demand line and an empty ICE outline as a scaffold",
+      "teachingReason": "Unseen transfer where both shortcuts work, with every given and the demand visible and no answer cues",
+      "narrationCue": "Your turn / N two plus O two makes two N O / 4.0 times ten to the minus four / 0.50 moles per litre / no N O / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The cylinder, equation and givens card appear as each is named, with the chip \"illustrative values\"; the demand \"Find [NO] at equilibrium.\" stays on screen; the two-shortcut card is removed; an empty ICE outline stays; the countdown ring starts after the narration",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "card slide-in"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-square",
+      "visualDecision": "new",
+      "visualReference": "The ICE table filling on the cues and the board splitting into two columns under the two-shortcut headings, the left column filling with the square-root working",
+      "teachingReason": "Explains the attempt by the perfect-square route, one route in this scene",
+      "narrationCue": "two x / perfect square / take the square root / 0.020 / 0.0099",
+      "motionPurpose": "The table fills in order, the board splits into two columns, the root signs draw on the left and the working ends in a ticked NO concentration",
+      "motionRole": "explain",
+      "onScreenChange": "The table fills Initial 0.50, 0.50, 0; Change \"-x\", \"-x\", \"+2x\" with chips \"1 : 1 : 2\"; Equilibrium \"0.50 - x\", \"0.50 - x\", \"2x\"; the K line \"(2x)^2 / (0.50 - x)^2 = 4.0 x 10^-4\" writes; the board splits into two columns; on \"perfect square\" root signs draw and the left column writes \"2x / (0.50 - x) = 0.020\", \"2x = 0.010 - 0.020x\", \"2.02x = 0.010\", \"x = 0.00495\", \"[NO] = 2x = 0.0099 mol/L\" with a tick; the right column shows only its heading",
+      "motionTools": [
+        "table cell tick",
+        "coefficient fly-in",
+        "root sign draw",
+        "HandText write-on",
+        "tick"
+      ],
+      "holdPurpose": "Keep the left column for the next scene"
+    },
+    {
+      "sceneId": "feedback-tiny-k",
+      "visualDecision": "new",
+      "visualReference": "The left column kept with its working dimmed, the right column filling with the drop-the-x working, and the check ruler at 1 per cent with a bracket joining the two answers",
+      "teachingReason": "Explains the attempt by the tiny-K route and shows the two routes agree",
+      "narrationCue": "drop the x / sixteen x squared / 0.010 / 1 per cent / agree to about 1 per cent",
+      "motionPurpose": "The right column writes the drop-the-x working, the ruler shows x at 1 per cent under the dashed line and a bracket joins the two answers",
+      "motionRole": "explain",
+      "onScreenChange": "The left result line stays; the right column writes \"(0.50 - x)^2 is about 0.50 x 0.50 = 0.25\", \"4x^2 / 0.25 = 16x^2 = 4.0 x 10^-4\", \"x^2 = 2.5 x 10^-5, x = 0.0050\", \"[NO] = 2x = 0.010 mol/L\"; the ruler shows x = 0.0050 against 0.50 at \"1%\" under the dashed 5 per cent line with a tick; a bracket joins the two answers with \"agree to within about 1%\"; both columns carry a tick",
+      "motionTools": [
+        "HandText write-on",
+        "bar draw",
+        "bracket draw",
+        "tick"
+      ],
+      "holdPurpose": "Hold the two ticked columns"
+    },
+    {
+      "sceneId": "feedback-slips",
+      "visualDecision": "new",
+      "visualReference": "Three wrong-answer chips with pen arrows to the table cell, the denominator or the equation coefficient that causes each",
+      "teachingReason": "Corrects the three likeliest slips by naming their cause",
+      "narrationCue": "0.0050 / 0.014 / plus x for N O / coefficient",
+      "motionPurpose": "Three chips fade in on their cues and are crossed with captions while pen arrows point at the cause",
+      "motionRole": "explain",
+      "onScreenChange": "\"0.0050: that is x, [NO] = 2x\" with a pen arrow to the \"+2x\" cell; \"0.014: bottom should be [N2][O2] = 0.50 x 0.50\" with a ring on the denominator and grey working; \"+x for NO: coefficient 2\" with a pen arrow from the 2 in the equation strip; each chip is crossed on its cue",
+      "motionTools": [
+        "chip pop",
+        "Mark cross",
+        "DrawPath arrow",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The three type cards with cards 1 and 2 ticked, card 3 gaining a method line, the two-shortcut card attached beneath and a next chip with a furnace-and-tube icon",
+      "teachingReason": "Packs type three into a reusable order and hands off to why factories do not wait for equilibrium",
+      "narrationCue": "type three / perfect square / tiny K / substitute back / Next",
+      "motionPurpose": "Card 3 gains its method line, each half of the shortcut card lights on its cue, a teal tick appears under both and the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The cards return with cards 1 and 2 ticked; card 3 gains \"x from the coefficients, E = I + C, into K\" on \"type three\" and the two-shortcut card attaches beneath, each half lighting on its cue; a teal tick \"substitute back\" appears under both; on \"Next\" the chip \"Next: why factories do not wait for equilibrium\" appears with a furnace-and-tube icon",
+      "motionTools": [
+        "card slide-in",
+        "step light",
+        "tick",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "reuse",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c6b-learning-review.md",
+      "sha256": "3d2395b87441699f016ab63a0bf00b7464ca5a44e8a40fdbf12d4811442883ff"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c6b-claude-science-check.md",
+      "sha256": "d69206ce7f8a399ba4e5740ce216943923a0368484c3ef688a64ae3c04fdc544"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

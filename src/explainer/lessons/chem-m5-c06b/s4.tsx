@@ -100,22 +100,42 @@ const LeftCol: React.FC<{a: {root: number; r020: number; rearr: number; x495: nu
 		</>
 	);
 };
-const RightCol: React.FC<{a: {drop: number; q25: number; four: number; sixteen: number; equals: number; x2: number; x50: number; no010: number; check: number; one: number; under: number}; dim?: number}> = ({a, dim = 1}) => {
-	const X = 990, S = 40;
-	const r1 = '4x^{2} ÷ 0.25', r2 = '= 16x^{2}';
+type RA = {drop: number; q25: number; four: number; equals: number; mult: number; b025: number; e10: number; div: number; x2: number; x50: number; no010: number; check: number; one: number; under: number};
+const RightCol: React.FC<{a: RA; dim?: number}> = ({a, dim = 1}) => {
+	const f = useCurrentFrame();
+	const X = 990, S = 38;
+	const q0 = '(0.50 − x)^{2} ≈ 0.50 × 0.50';
+	const r1 = '4x^{2} ÷ 0.25';
+	const m1 = '4x^{2} = 4.0 × 10^{−4}', m2 = ' × 0.25';
 	const q1 = 'x^{2} = 2.5 × 10^{−5},';
+	// once checked, the working gives way to the check ruler; the results (x and [NO]) stay
+	const work = 1 - prog(f, a.check - 8, 14);
 	return (
 		<>
 			<g opacity={dim}>
-				<Sx x={X} y={650} text="(0.50 − x)^{2} ≈ 0.50 × 0.50" size={S} at={a.drop + 6} />
-				<Sx x={X + tw('(0.50 − x)^{2} ≈ 0.50 × 0.50', S) + 18} y={650} text="= 0.25" size={S} at={a.q25} />
-				<Sx x={X} y={715} text={r1} size={S} at={a.four} />
-				<Sx x={X + tw(r1, S) + 16} y={715} text={r2} size={S} at={a.sixteen} />
-				<Sx x={X + tw(r1 + r2, S) + 34} y={715} text="= 4.0 × 10^{−4}" size={S} color={TEAL} at={a.equals} />
-				<Sx x={X} y={780} text={q1} size={S} at={a.x2} />
-				<Sx x={X + tw(q1, S) + 18} y={780} text="x = 0.0050" size={S} at={a.x50} />
-				<CheckRuler x={X} y={810} w={800} h={22} frac={0.01} at={a.check} sliverAt={a.one} side="start" fiveAt={a.one + 10} labelSize={30} />
-				<Sx x={X} y={886} text="x is 1% of 0.50: under 5%, so the shortcut is safe" size={30} color={AMBER_INK} hand at={a.under} />
+				<g opacity={work}>
+					<Sx x={X} y={640} text={q0} size={S} at={a.drop + 6} />
+					<Sx x={X + tw(q0, S) + 2} y={640} text="= 0.25" size={S} at={a.q25} />
+					<g opacity={1 - 0.55 * prog(f, a.div, 14)}>
+						<Sx x={X} y={694} text={r1} size={S} at={a.four} />
+						<Sx x={X + tw(r1, S) + 14} y={694} text="= 4.0 × 10^{−4}" size={S} color={TEAL} at={a.equals} />
+					</g>
+					<Fade at={a.mult} out={a.div}>
+						<Sx x={X} y={738} text="multiply both sides by the bottom" size={32} color={AMBER_INK} hand at={a.mult} />
+					</Fade>
+					<g opacity={1 - 0.55 * prog(f, a.x2, 14)}>
+						<Sx x={X} y={786} text={m1} size={S} at={a.b025} />
+						<Sx x={X + tw(m1, S) - 6} y={786} text={m2} size={S} color={N2K} at={a.b025 + 8} />
+						<Sx x={X + tw(m1 + m2, S) + 2} y={786} text="= 1.0 × 10^{−4}" size={S} color={TEAL} at={a.e10} />
+					</g>
+					<Fade at={a.div} out={a.x50 + 20}>
+						<Sx x={X} y={830} text="divide by 4" size={32} color={AMBER_INK} hand at={a.div} />
+					</Fade>
+				</g>
+				<Sx x={X} y={878} text={q1} size={S} at={a.x2} />
+				<Sx x={X + tw(q1, S) + 18} y={878} text="x = 0.0050" size={S} color={TEAL} at={a.x50} />
+				<CheckRuler x={X} y={690} w={800} h={22} frac={0.01} at={a.check} sliverAt={a.one} side="start" fiveAt={a.one + 10} labelSize={30} />
+				<Sx x={X} y={790} text="x is 1% of 0.50: under 5%, so the shortcut is safe" size={30} color={AMBER_INK} hand at={a.under} />
 			</g>
 			<Sx x={X} y={942} text="[NO] = 2x = 0.010 mol/L" size={40} color={TEAL} at={a.no010} />
 			<Tick x={X + 500} y={926} at={a.no010 + 16} s={40} />
@@ -149,8 +169,8 @@ export const SceneFeedbackSquare: React.FC = () => {
 
 // ---------- 12b. Feedback: the tiny-K route, and the check ----------
 const F2 = 'feedback-tiny-k';
-const K2 = cues(sc(F2), {tiny: 'Or K is tiny', drop: 'drop the x', q25: 'which is 0.25', four: 'four x squared over', sixteen: 'sixteen x squared', equals: 'which equals 4.0', x2: 'x squared is 2.5', x50: '0.0050', no010: '0.010', check: 'Check it', one: ['1 per cent', 1], under: 'well under 5', agree: 'the two answers agree'});
-const R2 = {drop: K2.drop, q25: K2.q25, four: K2.four, sixteen: K2.sixteen, equals: K2.equals, x2: K2.x2, x50: K2.x50, no010: K2.no010, check: K2.check, one: K2.one, under: K2.under};
+const K2 = cues(sc(F2), {tiny: 'Or K is tiny', drop: 'drop the x', q25: 'which is 0.25', four: 'four x squared over', equals: 'equals 4.0', mult: 'Multiply both sides by 0.25', e10: '1.0 times ten', div: 'Divide by four', x2: 'x squared is 2.5', x50: '0.0050', no010: '0.010', check: 'Check it', one: ['1 per cent', 1], under: 'well under 5', agree: 'the two answers agree'});
+const R2: RA = {drop: K2.drop, q25: K2.q25, four: K2.four, equals: K2.equals, mult: K2.mult, b025: cw(F2, 'Multiply both sides by 0.25', 4), e10: K2.e10, div: K2.div, x2: K2.x2, x50: K2.x50, no010: K2.no010, check: K2.check, one: K2.one, under: K2.under};
 const DONE_L = {root: -100, r020: -100, rearr: -100, x495: -100, no99: -100};
 export const SceneFeedbackTiny: React.FC = () => {
 	const f = useCurrentFrame();
@@ -177,7 +197,7 @@ export const SceneFeedbackTiny: React.FC = () => {
 // ---------- 12c. Feedback: the likely slips ----------
 const F3 = 'feedback-slips';
 const K3 = cues(sc(F3), {w1: '0.0050', w1b: 'that is x', w1c: 'but N O is two x', w2: '0.014', w2b: 'you put 0.50', w2c: 'instead of 0.50 times', w3: 'if you wrote plus x', w3b: 'look at the coefficient', w3c: 'two N O are made'});
-const DONE_R = {drop: -100, q25: -100, four: -100, sixteen: -100, equals: -100, x2: -100, x50: -100, no010: -100, check: -100, one: -100, under: -100};
+const DONE_R: RA = {drop: -100, q25: -100, four: -100, equals: -100, mult: -100, b025: -100, e10: -100, div: -100, x2: -100, x50: -100, no010: -100, check: -100, one: -100, under: -100};
 export const SceneFeedbackSlipsB: React.FC = () => {
 	const f = useCurrentFrame();
 	const fade = 1 - prog(f, 4, 16);

@@ -4,7 +4,7 @@ import {cues} from '../../cues';
 import {Helix} from '../bio-m5-b01/shared';
 import {
 	AMBER, AMBER_INK, BAC, Cam, DnaRing, DrawPath, EUK, Fade, GhostRing, GreyCross, GreyTag, Grips, Hand, Heading, INK, INK_SOFT, NUC, NUCL,
-	Overlay, PL, PLUM, Pl, Plasmid, Ring2, S, Sx, TagP, TennisBall, TickM, camAt, kf, prog, toScreen,
+	Overlay, PL, PLUM, Pl, Plasmid, Ring2, S, Sx, TagP, TickM, camAt, kf, prog, toScreen,
 } from './shared';
 import type {CamKey} from './shared';
 
@@ -34,16 +34,42 @@ export const BoardCells: React.FC<{leftO?: number; rightO?: number; leftDx?: num
 // ---------- 1. Hook: two metres in a tennis ball ----------
 const H1 = 'hook';
 const KH = cues(S(H1), {copy: 'In the copying video', billions: 'billions of letters', how: 'How', unwind: 'If you could unwind', two: 'two metres', sits: 'It sits in a nucleus', six: 'six thousandths', blow: 'Blow that nucleus up', tennis: 'tennis ball', ten: 'more than ten kilometres', store: 'So how does a cell store', bact: 'And does a bacterium', none: 'no nucleus at all', diff: 'do it differently'});
+/** The long-walk strip (brief 36, 4000 x 800): path centreline in natural pixels, house door to the town. */
+const WALK_PATH: [number, number][] = [[200, 428], [300, 430], [420, 432], [500, 468], [600, 498], [750, 500], [900, 510], [1000, 505], [1100, 482], [1200, 462], [1350, 468], [1500, 478], [1650, 468], [1750, 440], [1850, 382], [1950, 345], [2100, 340], [2200, 362], [2300, 420], [2400, 460], [2520, 432], [2770, 428], [2850, 445], [2950, 460], [3050, 442], [3150, 400], [3220, 342], [3300, 302], [3400, 330], [3500, 350], [3650, 352], [3800, 340]];
+/** Where the tennis ball sits on the strip (beside the starting house, so the house stays visible) and its radius. */
+const WALK_BALL: [number, number] = [430, 330], WALK_BALL_R = 92;
+const smoothPath = (pts: [number, number][]) => pts.reduce((d, p, i) => {
+	if (i === 0) return `M${p[0]},${p[1]}`;
+	const q = pts[i - 1];
+	return d + ` Q${q[0]},${q[1]} ${((q[0] + p[0]) / 2).toFixed(1)},${((q[1] + p[1]) / 2).toFixed(1)}` + (i === pts.length - 1 ? ` L${p[0]},${p[1]}` : '');
+}, '');
+const WALK_THREAD = smoothPath([[WALK_BALL[0], WALK_BALL[1] + WALK_BALL_R - 6], [WALK_BALL[0] + 20, 434], ...WALK_PATH.filter(p => p[0] > WALK_BALL[0] + 40)]);
+const TennisPlate: React.FC<{cx: number; cy: number; r: number; o?: number}> = ({cx, cy, r, o = 1}) => <Pl p={PL.tennis} x={cx} y={cy} k={r / 600} o={o} />;
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
-	const keys: CamKey[] = [[0, 1, EUK.x, EUK.y], [KH.blow - 4, 1, EUK.x, EUK.y], [KH.blow + 36, 2.3, NUC.cx, NUC.cy], [KH.bact - 4, 2.3, NUC.cx, NUC.cy], [KH.bact + 34, 1, 960, 560]];
+	// zoom into the nucleus on "Blow that nucleus up"; while the cell is hidden for the walk, the camera resets to the board
+	const keys: CamKey[] = [[0, 1, EUK.x, EUK.y], [KH.blow - 4, 1, EUK.x, EUK.y], [KH.blow + 36, 2.3, NUC.cx, NUC.cy], [KH.ten + 14, 2.3, NUC.cx, NUC.cy], [KH.ten + 15, 1, 960, 560]];
 	const c = camAt(f, keys);
 	const thread = `M${NUC.cx},${NUC.cy} ` + Array.from({length: 40}, (_, i) => `L${(NUC.cx + 20 + i * 36).toFixed(0)},${(NUC.cy + 14 * Math.sin(i * 1.3)).toFixed(0)}`).join(' ');
-	const ball = prog(f, KH.tennis - 10, 20) * (1 - prog(f, KH.bact, 16));
-	const cellO = prog(f, KH.how - 6, 16);
+	// the zoomed cell gives way to the walk on "ten kilometres", and the board returns on "a bacterium"
+	const hide = prog(f, KH.ten - 6, 14) * (1 - prog(f, KH.bact - 6, 16));
+	const cellO = prog(f, KH.how - 6, 16) * (1 - hide);
 	const bacIn = prog(f, KH.bact + 6, 26);
-	const strip = prog(f, KH.ten - 4, 14) * (1 - prog(f, KH.store + 20, 14));
-	const scroll = (f * 7) % 240;
+	// the walk strip: shown at 0.62 (house and ball), panned to the town while the thread is laid along the path, then
+	// eased out to the whole strip so the ball and the town are both in view
+	const w1 = KH.ten + 30, w2 = KH.ten + 80, w3 = KH.ten + 106;
+	const wk = kf(f, [[w2, 0.62], [w3, 0.432]]);
+	const wx = kf(f, [[w1, 96], [w2, 1824 - 3900 * 0.62], [w3, 96]]);
+	const wy = 650 - 400 * wk;
+	const stripO = prog(f, KH.ten - 6, 14) * (1 - prog(f, KH.bact - 6, 14));
+	const lay = prog(f, w1, w2 - w1 + 6);
+	// one tennis ball: over the zoomed nucleus, then carried to its place beside the house on the strip
+	const z = toScreen(c, [NUC.cx, NUC.cy]);
+	const onStrip: [number, number] = [wx + WALK_BALL[0] * wk, wy + WALK_BALL[1] * wk];
+	const u = prog(f, KH.ten - 6, 24);
+	const ballC: [number, number] = [z[0] + (onStrip[0] - z[0]) * u, z[1] + (onStrip[1] - z[1]) * u];
+	const ballR = NUC.r * c.s + (WALK_BALL_R * wk - NUC.r * c.s) * u;
+	const ballO = prog(f, KH.tennis - 10, 20) * (1 - prog(f, KH.bact - 6, 14));
 	return (
 		<>
 			<Heading text="How does a cell store all that DNA?" at={KH.store - 4} out={KH.bact} size={60} />
@@ -60,34 +86,27 @@ export const SceneHook: React.FC = () => {
 					</g>
 					<g opacity={cellO}>
 						<Pl p={PL.animal} x={EUK.x} y={EUK.y} k={EUK.k} />
-						<g opacity={1 - prog(f, KH.bact, 16)}>
+						<g opacity={1 - prog(f, KH.ten - 6, 14)}>
 							<DrawPath d={thread} at={KH.unwind + 10} dur={70} color={PLUM} width={4} />
 						</g>
-						<TennisBall cx={NUC.cx} cy={NUC.cy} r={NUC.r} o={ball} />
 					</g>
 					<Ring2 cx={NUC.cx} cy={NUC.cy} rx={NUC.r + 16} ry={NUC.r + 16} at={KH.sits} out={KH.blow} width={4} />
 				</g>
-				<Hand x={1250} y={470} text="about 2 metres" at={KH.two} out={KH.blow} size={52} />
-				<TagP x={1130} y={250} text="nucleus: about 6 micrometres (0.006 mm)" at={KH.six} out={KH.blow} />
-				<TagP x={1290} y={250} text="enlarged about 11,000 times" at={KH.tennis + 6} out={KH.store + 20} />
-				<TagP x={1290} y={330} text="tennis ball = the nucleus" at={KH.tennis + 14} out={KH.store + 20} />
-				{/* the thread at tennis-ball scale: past a row of landmarks */}
-				{strip > 0.01 ? (
-					<g opacity={strip}>
-						<rect x={96} y={880} width={1728} height={150} rx={20} fill="#fffdf8" stroke="rgba(60,45,20,0.18)" strokeWidth={3} />
-						{Array.from({length: 9}, (_, i) => {
-							const x = 120 + ((i * 240 - scroll + 2400) % 2160) - 120;
-							if (x < 110 || x > 1790) return null;
-							return i % 2 ? (
-								<g key={i}><rect x={x} y={920} width={50} height={40} fill="#e8d9bd" stroke={INK} strokeWidth={2.5} /><path d={`M${x - 6},${922} L${x + 25},${898} L${x + 56},${922}`} fill="#c98b5a" stroke={INK} strokeWidth={2.5} /></g>
-							) : (
-								<g key={i}><path d={`M${x + 25},${960} L${x + 25},${934}`} stroke="#8a6a50" strokeWidth={5} /><circle cx={x + 25} cy={918} r={20} fill="#9fb98a" stroke={INK} strokeWidth={2.5} /></g>
-							);
-						})}
-						<path d="M110,990 L1810,990" stroke={PLUM} strokeWidth={4} />
-						<Sx x={1800} y={1018} text="more than 10 km (a long walk)" size={34} color={AMBER_INK} hand anchor="end" at={KH.ten + 6} />
+				{/* the thread at tennis-ball scale: laid along a long walk (painted strip, brief 36) */}
+				{stripO > 0.01 ? (
+					<g opacity={stripO}>
+						<g transform={`translate(${wx},${wy}) scale(${wk})`}>
+							<Pl p={PL.walk} x={0} y={0} k={1} />
+							{lay > 0 ? <path d={WALK_THREAD} fill="none" stroke={PLUM} strokeWidth={6 / wk} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - lay} /> : null}
+						</g>
+						<Sx x={1824} y={wy - 24} text="more than 10 km (a long walk)" size={40} color={AMBER_INK} hand anchor="end" at={w3 - 10} />
 					</g>
 				) : null}
+				<TennisPlate cx={ballC[0]} cy={ballC[1]} r={ballR} o={ballO} />
+				<Hand x={1250} y={470} text="about 2 metres" at={KH.two} out={KH.blow} size={52} />
+				<TagP x={1130} y={250} text="nucleus: about 6 micrometres (0.006 mm)" at={KH.six} out={KH.blow} />
+				<TagP x={1290} y={250} text="enlarged about 11,000 times" at={KH.tennis + 6} out={KH.store - 8} />
+				<TagP x={1290} y={330} text="tennis ball = the nucleus" at={KH.tennis + 14} out={KH.store - 8} />
 				<Sx x={430} y={790} text="a bacterium: no nucleus" size={40} color={INK_SOFT} hand anchor="middle" at={KH.none} />
 				<Sx x={960} y={1000} text="Does it do it differently?" size={44} color={AMBER_INK} hand anchor="middle" at={KH.diff} />
 			</Overlay>
@@ -242,7 +261,9 @@ const B2 = {x: 430, y: 880};
 export const ScenePlasmids: React.FC = () => {
 	const f = useCurrentFrame();
 	const zoomOut = K5.saw;
-	const keys: CamKey[] = [[0, BCAM[1], BCAM[2], BCAM[3]], [zoomOut, BCAM[1], BCAM[2], BCAM[3]], [zoomOut + 30, 1, 470, 720]];
+	// zoomed out, the two bacteria sit on the left so the conjugation labels have the right side to themselves
+	const keys: CamKey[] = [[0, BCAM[1], BCAM[2], BCAM[3]], [zoomOut, BCAM[1], BCAM[2], BCAM[3]], [zoomOut + 30, 1, 700, 720]];
+	const gene = bscr([P1[0] + 13, P1[1]]);
 	const cp = prog(f, K5.copies + 10, 26);
 	const in2 = prog(f, K5.saw + 10, 26);
 	const travel = prog(f, K5.conj + 4, 50);
@@ -256,7 +277,7 @@ export const ScenePlasmids: React.FC = () => {
 			<Heading text="Plasmids: small extra rings" at={4} size={60} />
 			<Overlay>
 				<Cam keys={keys}>
-					<BoardCells rightO={0.3} left={
+					<BoardCells rightO={0.3 * (1 - prog(f, zoomOut - 10, 16))} left={
 						<g>
 							<ellipse cx={NUCL.cx} cy={NUCL.cy} rx={150} ry={48} fill="#fff7e2" opacity={0.7} />
 							<DnaRing cx={NUCL.cx} cy={NUCL.cy} rx={RING.rx} ry={RING.ry} coil={1} width={4} />
@@ -279,25 +300,27 @@ export const ScenePlasmids: React.FC = () => {
 					{f >= K5.conj + 4 && !arrived ? <Plasmid cx={tp[0]} cy={tp[1]} at={-100} gene={-100} /> : null}
 					{arrived ? <Plasmid cx={360} cy={875} at={-100} gene={-100} /> : null}
 				</Cam>
-				{/* labels while pushed in */}
+				{/* labels while pushed in: above the bacterium (its top edge is at about y 326 on screen) or below it */}
 				<Fade at={K5.small} out={zoomOut - 6}>
-					<Sx x={960} y={300} text="plasmid: small, separate ring" size={50} color={PLUM} hand anchor="middle" at={K5.small} />
+					<Sx x={960} y={238} text="plasmid: small, separate ring" size={50} color={PLUM} hand anchor="middle" at={K5.small} />
 				</Fade>
 				<Ring2 cx={bscr(P2)[0] - 20} cy={bscr(P2)[1] + 30} rx={110} ry={90} at={K5.small + 4} out={K5.copies} />
-				<TagP x={960} y={800} text="usually much smaller than the main chromosome (not to scale)" anchor="middle" at={K5.smaller} out={zoomOut - 6} size={30} />
-				<Hand x={1200} y={380} text="copied on its own" at={K5.sep} out={zoomOut - 6} size={40} />
+				<TagP x={960} y={814} text="usually much smaller than the main chromosome (not to scale)" anchor="middle" at={K5.smaller} out={zoomOut - 6} size={30} />
+				<Hand x={1290} y={302} text="copied on its own" at={K5.sep} out={zoomOut - 6} size={40} />
 				<Fade at={K5.resist - 6} out={zoomOut - 6}>
-					<g transform={`translate(${bscr(P1)[0] - 120},${bscr(P1)[1] - 120}) rotate(-25)`}>
+					<g transform="translate(150,288) rotate(-25)">
 						<rect x={-34} y={-14} width={68} height={28} rx={14} fill="#fffdf8" stroke={INK} strokeWidth={3} />
 						<rect x={-34} y={-14} width={34} height={28} rx={14} fill="#e88a6a" stroke={INK} strokeWidth={3} />
 					</g>
-					<Sx x={bscr(P1)[0] - 60} y={bscr(P1)[1] - 110} text="e.g. antibiotic resistance gene" size={36} color={AMBER_INK} hand at={K5.resist} />
+					<Sx x={204} y={302} text="e.g. antibiotic resistance gene" size={36} color={AMBER_INK} hand at={K5.resist} />
+					<DrawPath d={`M420,316 C470,380 ${gene[0] - 30},${gene[1] - 70} ${gene[0] - 4},${gene[1] - 14}`} at={K5.resist + 4} dur={14} color={AMBER_INK} width={3} dash="7 6" />
 				</Fade>
-				{/* conjugation labels */}
-				<Sx x={1110} y={640} text="conjugation, as in the single-celled video" size={36} color={INK_SOFT} hand at={K5.conj + 6} />
-				<Sx x={1110} y={700} text="a copy of the plasmid passes across" size={36} color={PLUM} hand at={K5.conj + 30} />
-				<Sx x={1110} y={760} text="the resistance gene spreads" size={36} color={AMBER_INK} hand at={K5.often} />
-				<GreyTag x={960} y={990} text="plasmids are also used as tools in biotechnology, later" anchor="middle" at={K5.often + 20} />
+				{/* conjugation labels: on the right, clear of both bacteria (now on the left) */}
+				<Sx x={1290} y={566} text="conjugation" size={50} color={PLUM} hand at={K5.conj + 6} />
+				<Sx x={1290} y={606} text="as in the single-celled video" size={30} color={INK_SOFT} hand at={K5.conj + 10} />
+				<Sx x={1290} y={690} text="a copy of the plasmid passes across" size={34} color={PLUM} hand at={K5.conj + 30} />
+				<Sx x={1290} y={760} text="the resistance gene spreads" size={36} color={AMBER_INK} hand at={K5.often} />
+				<GreyTag x={960} y={930} text="plasmids are also used as tools in biotechnology, later" anchor="middle" at={K5.often + 20} />
 			</Overlay>
 		</>
 	);
