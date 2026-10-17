@@ -13,7 +13,7 @@ import {StripSummaries} from './s2';
 
 const vis = (f: number, at: number, out?: number, d = 12) => prog(f, at, d) * (out === undefined ? 1 : 1 - prog(f, out, d));
 /** Rabbit landmarks in the plate's natural pixels (a guess for a side view facing right; recheck when brief 59 lands). */
-const RB = {ears: [1350, 500] as [number, number], nose: [1660, 880] as [number, number], foot: [1380, 1600] as [number, number], tail: [330, 1180] as [number, number], body: [900, 1060] as [number, number], patch: [860, 760] as [number, number], foot2: [760, 1620] as [number, number]};
+const RB = {ears: [1350, 500] as [number, number], nose: [1660, 880] as [number, number], foot: [1380, 1600] as [number, number], tail: [330, 1180] as [number, number], body: [900, 1060] as [number, number], patch: [560, 960] as [number, number], foot2: [760, 1620] as [number, number]};
 
 // ---------- 11a. Attempt one (the Himalayan rabbit) ----------
 const K12 = cues(S('attempt'), {two: 'Two harder questions now', first: 'Himalayan rabbits have', white: 'white fur on the body', dark: 'dark fur on the ears', enzyme: 'made by an enzyme', shaved: 'Scientists shaved a patch', ice: 'kept an ice pack', grew: 'The new fur grew dark', explain: 'Explain why the new fur', predict: 'Then predict the back fur', pause: 'Pause here to answer'});
@@ -23,17 +23,13 @@ export const SceneAttemptB7: React.FC = () => {
 	const h = S('attempt').responseHold as {startFrame: number; endFrame: number};
 	const f = useCurrentFrame();
 	const R1 = {x: 360, y: 400, w: 400}, R2 = {x: 880, y: 400, w: 400};
-	const p1 = pbPt(PLT.rabbit, R1.x, R1.y, R1.w);
-	const ears = p1(...RB.ears), body = p1(...RB.body);
 	const b = wrap(DEM1B, 30, 1420);
 	return (
 		<>
 			<Heading text="The Himalayan rabbit" at={4} size={56} />
 			<Overlay>
 				<PlateB p={PLT.rabbit} cx={R1.x} cy={R1.y} w={R1.w} o={prog(f, K12.first, 14)} />
-				{PLT.rabbit.have !== false ? <Fade at={K12.dark}><line x1={ears[0]} y1={ears[1]} x2={300} y2={600} stroke={INK_SOFT} strokeWidth={3} /></Fade> : null}
 				<Sx x={150} y={630} text="dark: ears, nose, feet, tail" size={32} color={INK} hand at={K12.dark} />
-				{PLT.rabbit.have !== false ? <Fade at={K12.white}><line x1={body[0]} y1={body[1]} x2={body[0] - 60} y2={645} stroke={INK_SOFT} strokeWidth={3} /></Fade> : null}
 				<Sx x={150} y={672} text="white: body" size={32} color={INK} hand at={K12.white} />
 				<PlateB p={PLT.rabbitPatch} cx={R2.x} cy={R2.y} w={R2.w} o={prog(f, K12.shaved, 14)} />
 				<IcePack x={1170} y={330} s={0.9} o={prog(f, K12.ice, 12)} />

@@ -4,7 +4,7 @@
  *   the range bar and the spectrum are coded.
  * - HAVE lists the plate files that exist. A plate missing from HAVE is left out of ASSETS (the slim bundler fails on a
  *   missing file) and the scene draws a dashed stand-in box instead. The two Himalayan rabbit plates (Codex brief 59)
- *   are not delivered yet (17 Oct): add them to HAVE when they land and they drop into attempt one and its feedback.
+ *   were delivered 18 Oct (brief 59) and are in HAVE: they drop into attempt one and its feedback.
  */
 const B = 'assets/biology/';
 export const HYD_BLUE = B + 'm5x-hydrangea-blue-v1.png';
@@ -25,5 +25,5 @@ export const RABBIT_PATCH = B + 'm5x-rabbit-himalayan-patch-v1.png';
 
 const DELIVERED = [HYD_BLUE, HYD_PINK, ENZYME, RBC, SICKLE, MUSCLE_R, MUSCLE_C, BLOOD_TILE, SNAP_RED, SNAP_WHITE, PEA_YR, BACT];
 /** Add RABBIT and RABBIT_PATCH here once the files exist. */
-export const HAVE = new Set<string>(DELIVERED);
+export const HAVE = new Set<string>([...DELIVERED, RABBIT, RABBIT_PATCH]);
 export const ASSETS: string[] = [...DELIVERED, RABBIT, RABBIT_PATCH].filter(a => HAVE.has(a));

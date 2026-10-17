@@ -38,7 +38,7 @@ const HYD_BOX: [number, number, number, number] = [266, 289, 1737, 1718];
 const SNAP_BOX: [number, number, number, number] = [612, 218, 1452, 1781];
 const MUSCLE_BOX: [number, number, number, number] = [209, 185, 2271, 539];
 /** Rabbit box is a guess for a 2000 square side view; check it when brief 59 lands. */
-const RABBIT_BOX: [number, number, number, number] = [200, 300, 1800, 1700];
+const RABBIT_BOX: [number, number, number, number] = [200, 273, 1798, 1726];
 export const PLT = {
 	hydBlue: P(A.HYD_BLUE, [2000, 2000], HYD_BOX),
 	hydPink: P(A.HYD_PINK, [2000, 2000], HYD_BOX),
