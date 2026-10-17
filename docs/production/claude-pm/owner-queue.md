@@ -2,7 +2,14 @@
 
 ## 18 Oct (while you were away): read this first
 
-**Passed and rendered:** B9 (8:19), C11 (8:59). C14 is rendering. The upload brief follows when C14 is done.
+**Passed and rendered:** B9 (8:19), C11 (8:59), C14 (9:25). Send brief 28m to upload all three.
+
+**Previews to watch next:**
+- B7 v2 (Codex rabbit plates now in): http://127.0.0.1:8778/Explainer-bio-m5-b07-preview-v2/
+- C13 v2 (barium sulfate plate now in): http://127.0.0.1:8778/Explainer-chem-m5-c13-preview-v2/
+- C15 v1: http://127.0.0.1:8778/Explainer-chem-m5-c15-preview-v1/
+- P02 v5 (the "about equal" fix): http://127.0.0.1:8778/Explainer-chem-m5-p02-preview-v5/
+- Also waiting: B8, B10, B5a and B5b v5, C10 v2, B6b and B6c v2.
 
 **Fixed from the Codex fact check (brief 56):**
 - P02: the standards scene now says the red ion's concentration is "about equal to" the thiocyanate concentration (it is 97%, not equal), with "≈" on screen. Only that one scene was re-voiced (582 characters).
@@ -27,7 +34,7 @@ That is 41,552 characters across the seven. Also still waiting from before: Chem
 3. Fix the site before video design? The Year 11 Chemistry review found 45 correction jobs (13 wrong science). Brief 68 drafts the fixes for Modules 7 and 8 and Year 11 Biology without applying them.
 4. Thumbnail drafts are in `thumbnails/drafts/contact-sheet.png` (brief 63, not uploaded).
 
-**Codex queue:** 55, 60, 65 (site links in YouTube descriptions), 66 and 67 (fact checks), 68 (draft site fixes), 69 (Module 6 route), 70 and 71 (Biology plates).
+**Codex queue:** 28m (upload B9, C11, C14), 55, 65 (site links in YouTube descriptions), 66 and 67 (fact checks), 68 (draft site fixes), 69 (Module 6 route), 70 and 71 (Biology plates).
 
 **Mode (13 Oct, owner decision): consolidation.** No new designs or voicing. Finish what is recorded (C7, C8, B5a, B5b builds), voiced reviews of C5, B3b, C6, B4, render each preview the owner approves (one at a time), upload in batches through Codex. C9 and B6a wait at the Codex check; Module 6 stays at extracts.
 
