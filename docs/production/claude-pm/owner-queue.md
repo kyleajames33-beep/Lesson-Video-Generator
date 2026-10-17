@@ -202,3 +202,5 @@ Still from before: B5a v5, B5b v5, P02 v4, C10 v2, B6b v2, B6c v2.
 - C15 will it precipitate, common ion: http://127.0.0.1:8778/Explainer-chem-m5-c15-preview-v1/ (feedback 1 is ~34 s)
 C12 (Aboriginal and Torres Strait Islander solubility knowledge): designed, needs owner + cultural read before voicing: lessons/chem-m5-c12.md.
 Decisions: B5b hook family plates (keep or swap); site CaF2 Ksp 3.9e-11 vs video 3.45e-11; dihybrid video yes/no.
+New designs reviewed and ready to voice (waiting for owner go-ahead): P01 (reversibility practical, 10.0 min), P03 (solubility practical, 9.9), B11 (population frequencies + SNPs, 9.6; uses white clover leaf mark instead of earlobes), B12 (sequencing + profiling, 9.2).
+Codex: new brief 64 (practical apparatus + safety plates, gel tank v2, NSW chemical category check).
