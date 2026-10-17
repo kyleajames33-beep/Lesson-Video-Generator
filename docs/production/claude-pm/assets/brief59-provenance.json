@@ -1,0 +1,153 @@
+{
+  "brief": 59,
+  "date": "2026-10-18",
+  "generator": "image_gen.imagegen (built-in)",
+  "styleReferenceNote": "The named m5x-pea-round-v1.png does not exist. The existing m5x-pea-green-round-v1.png and m5x-cattle-red-v1.png were inspected for Biology style.",
+  "alphaCheck": "The existing b2b-pod-seeds-v1.png is a real transparent RGBA cutout. Its dark RGB outside the pod has zero alpha. On a cream background it has no vignette and aligns with b2b-ovary-ovules-v1.png, so no v2 was retained.",
+  "outputs": [
+    {
+      "path": "public/assets/biology/m5x-rabbit-himalayan-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14b8d-5688-7fa2-b45d-20fce643383c/exec-44ebe7ef-8ac6-477b-ad7c-f8811b208536.png",
+      "prompt": "Natural-history ink and watercolour plate of one adult Himalayan rabbit, full side view facing right, sitting. White body, dark ears, nose, four feet and tail, pink-red eye. Match cattle plate texture. Transparent, no setting, shadow or text.",
+      "postprocess": "Clean alpha values below 16 and fit the rabbit to a 2000 px square with matching pair placement.",
+      "sha256": "9f3ccc5d970e890e922834abadbf8b91e3fd9e61f4e35bffbed5f40a21743678",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        204,
+        274,
+        1798,
+        1723
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/biology/m5x-rabbit-himalayan-patch-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14b8d-5688-7fa2-b45d-20fce643383c/exec-6b5c45fa-28d3-4fe9-8c20-2c4fc030838a.png",
+      "prompt": "Edit rabbit base in place. Preserve silhouette, pose, face, points and transparent canvas. Add only a small oval patch of short dark regrown fur in the middle of its white back.",
+      "postprocess": "Clean alpha values below 16 and fit to the same 2000 px canvas and target box as the base rabbit.",
+      "sha256": "f4949e7ce900ce9b65195c9641ab1b6471badce9ec3a2ee2021387d7b3053c4c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        200,
+        273,
+        1800,
+        1727
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-thermometer-cold-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14b8d-5688-7fa2-b45d-20fce643383c/exec-266496ab-d193-4cf1-ad26-8fa5192d4a43.png",
+      "prompt": "Edit c8-thermometer-hot-v1.png into the same upright glass thermometer. Change the liquid to a short blue-tinted column, about one fifth from the bulb. Keep glass and angle, no scale, beaker or text, transparent.",
+      "postprocess": "Clean alpha values below 16 and fit to the existing hot thermometer 216 x 1988 canvas and alpha box.",
+      "sha256": "3af380c529ca13270d2cd109cd118bfe08e74e7e9479d5aabf962102a9fb88b0",
+      "size": [
+        216,
+        1988
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        21,
+        199,
+        194,
+        1789
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-hot-pack-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14b8d-5688-7fa2-b45d-20fce643383c/exec-6f230448-0c9f-4416-ac07-275a54be0094.png",
+      "prompt": "Ink and watercolour plate of one softly puffed sealed instant hot-pack pouch, diagonal three-quarter view, warm orange-red with faint glow. No hands, brand, text, setting or shadow, transparent.",
+      "postprocess": "Clean alpha values below 16 and fit to 2000 px square with 10 percent side margins.",
+      "sha256": "69b480bb951026a8984b31fe9b92fb1595e0a55fbe6c2fbe68af16a1b8fbdf9a",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        200,
+        412,
+        1799,
+        1588
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14b8d-5688-7fa2-b45d-20fce643383c/exec-7d78bfba-f293-48d6-a5b5-cf29cef54799.png",
+      "prompt": "Edit hot-pack pouch with identical angle, shape, scale and canvas. Change only tint to pale blue-white with restrained frosty sheen. No external snow, text or brand, transparent.",
+      "postprocess": "Clean alpha values below 16 and fit to the same 2000 px target box as the hot pack.",
+      "sha256": "56a771e410d1eba018e7cbaf118c281b85d303af18e98ef16cf6d2863ec1eecf",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        202,
+        412,
+        1800,
+        1588
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-ppt-baso4-white-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14b8d-5688-7fa2-b45d-20fce643383c/exec-4ea0110d-1667-4965-9ae2-819aaa8495bc.png",
+      "prompt": "Edit m5x-ppt-agcl-white-v1.png. Preserve tube, wooden rack, liquid level, framing and transparent canvas. Replace curdy AgCl with fine smooth milky white BaSO4 settling at the bottom, slightly cloudy liquid just above it. No text.",
+      "postprocess": "Clean alpha values below 16 and fit to the existing AgCl 2000 px canvas and alpha box.",
+      "sha256": "8ac8c83652c8baabfbd86d74cc02f0cf032c55109cdb3bafda233da6084a0eea",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        568,
+        201,
+        1432,
+        1800
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "retainedExisting": [
+    "public/assets/biology/b2b-pod-seeds-v1.png",
+    "public/assets/biology/m5x-pea-green-round-v1.png",
+    "public/assets/biology/m5x-pea-green-wrinkled-v1.png",
+    "public/assets/biology/m5x-pea-yellow-round-v1.png",
+    "public/assets/biology/m5x-pea-yellow-wrinkled-v1.png",
+    "public/assets/biology/m5x-fly-red-eye-v1.png",
+    "public/assets/biology/m5x-fly-white-eye-v1.png",
+    "public/assets/biology/strawberry-runner-botanical-v1-alpha.png",
+    "public/assets/biology/strawberry-seedling-botanical-b1-v1-alpha.png"
+  ],
+  "qaDirectory": "docs/production/claude-pm/assets/brief59-qa"
+}

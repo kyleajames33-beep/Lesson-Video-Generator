@@ -1,0 +1,638 @@
+{
+  "brief": 64,
+  "date": "2026-10-18",
+  "scope": "P01 and P03 chemistry practical plates plus B11 and B12 biology corrections",
+  "generator": "Built-in imagegen, one call per plate or edit variant. Some failed drafts were retried.",
+  "style": "Ink and watercolour matching existing m5x and m6 apparatus plates. No text, labels, numbers, logos, people, hands or faces.",
+  "qaFolder": "docs/production/claude-pm/assets/brief64-qa/",
+  "qaSummary": "All delivered files have RGBA alpha and a transparent canvas corner. Chemistry and biology plates were viewed on cream at 200 px. Pair views and 50 percent overlays were inspected. Cobalt, burner, iron, magnesium and well-plate pairs are visually aligned at review size. The gel wells run across the black electrode end and the gel has no bands. The swab gap is clear at 200 px.",
+  "technicalNotes": [
+    "Imagegen outputs were resampled onto 2000 px or 2048 px delivery canvases to meet the requested dimensions; native generated detail is lower than the delivery dimensions.",
+    "The P01 design specifies magnesium ribbon and ash on the same heatproof mat. Brief 64 also asks for oxide in an evaporating dish, so both ash plates are provided.",
+    "The two iron edits match the C3 source canvas dimensions and look aligned in the 50 percent overlays. Check the transition in the scene at playback size before freezing it.",
+    "The well plate has six rows and eight columns. The card or tile is visible through each empty well, so coded fills should be drawn over the well opening."
+  ],
+  "wellCentreGrid": {
+    "files": [
+      "public/assets/chemistry/p03-well-plate-black-card-v1.png",
+      "public/assets/chemistry/p03-well-plate-white-tile-v1.png"
+    ],
+    "canvas": [
+      2048,
+      1365
+    ],
+    "columnsX": [
+      488,
+      641,
+      794,
+      948,
+      1101,
+      1255,
+      1408,
+      1562
+    ],
+    "rowsY": [
+      349,
+      493,
+      636,
+      779,
+      923,
+      1065
+    ],
+    "units": "delivered PNG pixels",
+    "accuracy": "Visual centre estimate from the black plate. Confirm against the displayed scene before placing coded fills."
+  },
+  "biologyCheck": {
+    "cattleGrid70px": "Red and roan are distinguishable at 70 px wide on the paper background. See brief64-qa/b11-cattle-grid-70px.png.",
+    "cheekSwab": "v2 has the swab and tube with no detached specks visible in the gap at 200 px.",
+    "gelTank": "v2 shows a row of wells across the black negative end, perpendicular to travel toward the red positive end. No bands are painted."
+  },
+  "nswChemicalCategories": [
+    {
+      "chemical": "cobalt(II) chloride solid",
+      "category": null,
+      "status": "Pending staff CSIS lookup",
+      "officialLookup": "https://ecmjsp.education.nsw.gov.au/ecmjsp/chemicals/"
+    },
+    {
+      "chemical": "cobalt(II) chloride solution",
+      "category": null,
+      "status": "Pending staff CSIS lookup",
+      "officialLookup": "https://ecmjsp.education.nsw.gov.au/ecmjsp/chemicals/"
+    },
+    {
+      "chemical": "lead(II) nitrate",
+      "category": null,
+      "status": "Pending staff CSIS lookup",
+      "officialLookup": "https://ecmjsp.education.nsw.gov.au/ecmjsp/chemicals/"
+    },
+    {
+      "chemical": "barium nitrate",
+      "category": null,
+      "status": "Pending staff CSIS lookup",
+      "officialLookup": "https://ecmjsp.education.nsw.gov.au/ecmjsp/chemicals/"
+    }
+  ],
+  "categoryResearch": "The NSW Department of Education CSIS chemical lookup redirects unauthenticated access to staff sign-in. Public CSIS appendices mention cobalt(II) chloride storage but do not give its chemical category. No category has been inferred from related salts.",
+  "officialSources": [
+    {
+      "title": "NSW Department of Education Chemical Safety in Schools chemical lookup",
+      "url": "https://ecmjsp.education.nsw.gov.au/ecmjsp/chemicals/"
+    },
+    {
+      "title": "CSIS Volume 2 appendices, p. 139, cobalt(II) chloride storage",
+      "url": "https://education.nsw.gov.au/content/dam/main-education/asset-management/chemical-safety/5._Volume_2_Appendices.pdf"
+    },
+    {
+      "title": "CSIS Section 1, p. 39, category definitions",
+      "url": "https://education.nsw.gov.au/content/dam/main-education/asset-management/chemical-safety/1._Section_1_-_General_information_for_all_staff.pdf"
+    }
+  ],
+  "copyCheck": "No em dash found in chem-m5-p01.md or chem-m5-p03.md.",
+  "records": [
+    {
+      "path": "public/assets/chemistry/p01-cocl2-crystals-pink-v1.png",
+      "sha256": "dc0ca1b6cac200e1fc35d1604fb91a32ebf8bee91f807cb94303e154b10d610c",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        183,
+        185,
+        1800,
+        1811
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Nearly horizontal clamped dry test tube with pink cobalt chloride crystals.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Nearly horizontal clamped dry test tube with pink cobalt chloride crystals.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p01-cocl2-crystals-blue-v1.png",
+      "sha256": "b04e0ec992d99d54a972949840d7c342573376accc4d595c77f9c7e5109b96c6",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        185,
+        1811,
+        1813
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Same apparatus with blue anhydrous cobalt chloride and condensation near the mouth.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Same apparatus with blue anhydrous cobalt chloride and condensation near the mouth.",
+      "referenceImages": [
+        "public/assets/chemistry/p01-cocl2-crystals-pink-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-bunsen-burner-unlit-v1.png",
+      "sha256": "ec6fdd2b1832788b5c896cbef70dc437efb761b35e1dbb2ed8616e0532d4c932",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        301,
+        417,
+        1728,
+        1733
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Unlit school Bunsen burner, side view.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Unlit school Bunsen burner, side view.",
+      "referenceImages": [
+        "public/assets/chemistry/m5x-bunsen-burner-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-bunsen-burner-v1.png",
+      "sha256": "52ac83b5b0c0ff963040f1f426fb644d4c39d538b0e46865e1ce730b92cd4e8d",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        193,
+        239,
+        1784,
+        1777
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Matching school Bunsen burner with a steady blue flame.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Matching school Bunsen burner with a steady blue flame.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p01-mg-ribbon-v1.png",
+      "sha256": "1f1db1fc31bb0e9a344948fc7920e472291a48af02f1aaa980446ea3b612e756",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        160,
+        1805,
+        1835
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Magnesium ribbon on a square heatproof mat, as shown in P01 design.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Magnesium ribbon on a square heatproof mat, as shown in P01 design.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p01-mgo-ash-v1.png",
+      "sha256": "3b2985fdbbfc38ab47a92f90de3656f7574f7c6c4cb6cb8826c4b4d7914cda37",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        204,
+        361,
+        1805,
+        1840
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "White magnesium oxide ash on the matching heatproof mat, as shown in P01 design.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. White magnesium oxide ash on the matching heatproof mat, as shown in P01 design.",
+      "referenceImages": [
+        "public/assets/chemistry/p01-mg-ribbon-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-dropper-clear-v1.png",
+      "sha256": "b11aba5d2d663bb96f8289e79c520055e1df992ad1329bddf31a88cf534ecd02",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        212,
+        240,
+        1768,
+        1787
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Clear dropper with one colourless drop, matching the C4 dropper angle.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Clear dropper with one colourless drop, matching the C4 dropper angle.",
+      "referenceImages": [
+        "public/assets/chemistry/c4-icon-dropper-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p01-iron-tube-faded-ppt-v1.png",
+      "sha256": "7bd8a3a10ae055f94333a87f8d8a59a923ad392030a652c9d545395ab4fb099b",
+      "sourceSize": [
+        1060,
+        1484
+      ],
+      "size": [
+        1280,
+        1792
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        107,
+        147,
+        1171,
+        1648
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Pale orange-yellow C3-style iron tube with slight rust-brown precipitate.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Pale orange-yellow C3-style iron tube with slight rust-brown precipitate.",
+      "referenceImages": [
+        "public/assets/chemistry/c3-iron-tube-start-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p01-iron-tube-diluted-v1.png",
+      "sha256": "d3dd5e9e57ccc9f63c84c398f0f354114beb9d79bfda90817ef70d5a71f12b91",
+      "sourceSize": [
+        1060,
+        1484
+      ],
+      "size": [
+        1280,
+        1792
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        129,
+        204,
+        1157,
+        1646
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "C3-style iron tube with solution only slightly paler and a slightly higher level.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. C3-style iron tube with solution only slightly paler and a slightly higher level.",
+      "referenceImages": [
+        "public/assets/chemistry/c3-iron-tube-start-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-stopper-v1.png",
+      "sha256": "8b08cce752d590489955f353618b701c0681f252294b3ebaa00cccb04425d45c",
+      "sourceSize": [
+        1060,
+        1484
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        288,
+        213,
+        1770,
+        1777
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Single grey rubber test tube stopper.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Single grey rubber test tube stopper.",
+      "referenceImages": [
+        "public/assets/chemistry/c3-iron-tube-start-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+      "sha256": "67f294d79c9e2f4df6c57871b49782573e44218d8059f79c5b2d3ebfd1decec7",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        196,
+        218,
+        1794,
+        1515
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Clear laboratory safety glasses without a wearer.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Clear laboratory safety glasses without a wearer.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-gloves-v1.png",
+      "sha256": "97a28fe4446e13914e4dc00b31b2a21f905686de7b92ec071a14bf61bb5d2447",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        188,
+        1816,
+        1840
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Pair of blue nitrile gloves without hands.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Pair of blue nitrile gloves without hands.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-waste-bottle-v1.png",
+      "sha256": "87afde07f4fe4e0c5ba137f29d211dfcb45ff0b337aaff252b5e79a8de119882",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        265,
+        1813,
+        1768
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Amber laboratory waste bottle with blank cream label.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Amber laboratory waste bottle with blank cream label.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/m5x-test-tube-holder-v1.png",
+      "sha256": "1ee3b2cfd69c8d8ba175122e0f23d5432f01639b188c2cc1fc5d68e723a38441",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        204,
+        199,
+        1811,
+        1795
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Empty wooden spring test tube holder.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Empty wooden spring test tube holder.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p03-well-plate-black-card-v1.png",
+      "sha256": "4f95791c3020eb58c1cf0d87b6721d993f6d3079d6ef662dbd7f72aa68e1b62f",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        2048,
+        1365
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        164,
+        109,
+        1884,
+        1255
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Straight top-down six by eight empty well plate on black card.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Straight top-down six by eight empty well plate on black card.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p03-well-plate-white-tile-v1.png",
+      "sha256": "189c7946e6edf80bb0b1a03a2b8db5c6fa9f5b7f4ac73b7ca2664924b10b7da6",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        2048,
+        1365
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        164,
+        109,
+        1781,
+        1255
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Same six by eight empty well plate on white tile.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Same six by eight empty well plate on white tile.",
+      "referenceImages": [
+        "public/assets/chemistry/p03-well-plate-black-card-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p03-dropper-bottle-v1.png",
+      "sha256": "0ec65170131c5f6feb6e0a3f4ab1e2079102eb536469003674ad524252dc8015",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        201,
+        1800,
+        1773
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Small upright colourless reagent dropper bottle with blank label.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Small upright colourless reagent dropper bottle with blank label.",
+      "referenceImages": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/biology/m5x-cheek-swab-v2.png",
+      "sha256": "712f54c32fa254d40e027b0c33c84c86b541cab9a503f1bc545ceef549152b45",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        226,
+        1765,
+        1840
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Repainted swab and tube with the gap cleared of stray specks.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Repainted swab and tube with the gap cleared of stray specks.",
+      "referenceImages": [
+        "public/assets/biology/m5x-cheek-swab-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/biology/m5x-gel-tank-v2.png",
+      "sha256": "2417a098ae058562920bbff8673a7c541a8aa13a27b45461b97cb885efcd47f5",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        160,
+        1819,
+        1784
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "Corrected empty gel tank with wells across the negative end and no bands.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. Corrected empty gel tank with wells across the negative end and no bands.",
+      "referenceImages": [
+        "public/assets/biology/m5x-gel-tank-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/chemistry/p01-mgo-ash-dish-v1.png",
+      "sha256": "f9355f978c66c83afa9c8324ab11b8eb40a35bbbbca41511bd108d710d0acb65",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        271,
+        1821,
+        1816
+      ],
+      "alphaCorner": 0,
+      "method": "Built-in imagegen; transparent canvas normalized to delivery size with Lanczos resampling",
+      "description": "White magnesium oxide powder in an evaporating dish, as requested by Brief 64.",
+      "promptSummary": "Ink and watercolour textbook plate with true transparent alpha, no text or people. White magnesium oxide powder in an evaporating dish, as requested by Brief 64.",
+      "referenceImages": [
+        "public/assets/chemistry/p01-mgo-ash-v1.png"
+      ]
+    }
+  ],
+  "stopperAlignment": {
+    "coordinateSpace": "1280 x 1792 C3 tube PNG canvas",
+    "stopperSourceSize": [
+      2000,
+      2000
+    ],
+    "ironSeries": {
+      "scale": 0.078,
+      "topLeft": [
+        560,
+        115
+      ],
+      "qa": "brief64-qa/c3-iron-tube-start-v1-stopper-fit.png"
+    },
+    "cobaltSeries": {
+      "scale": 0.11,
+      "topLeft": [
+        527,
+        55
+      ],
+      "qa": "brief64-qa/c3-cobalt-tube-pink-v1-stopper-fit.png"
+    },
+    "note": "Fit checked visually against C3 source tubes. Place at these offsets when tube images render at native canvas size; scale together for scene display."
+  }
+}

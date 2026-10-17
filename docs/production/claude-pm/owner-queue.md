@@ -1,5 +1,34 @@
 # Owner queue: Codex prompts to send
 
+## 18 Oct (while you were away): read this first
+
+**Passed and rendered:** B9 (8:19), C11 (8:59). C14 is rendering. The upload brief follows when C14 is done.
+
+**Fixed from the Codex fact check (brief 56):**
+- P02: the standards scene now says the red ion's concentration is "about equal to" the thiocyanate concentration (it is 97%, not equal), with "≈" on screen. Only that one scene was re-voiced (582 characters).
+- C10: the dotpoint quote now includes the syllabus codes (ACSCH098, ACSCH099).
+
+**Designed, reviewed and ready to voice (your go-ahead needed):**
+- B13 (population genetics data, 6,029 characters)
+- G03 Biology (genetic risk, 5,686)
+- G01 Biology practice (sequences and chromosomes, 5,679)
+- G02 Biology practice (inheritance probability, 5,704)
+- P01 Biology practical (DNA and protein models, 6,414)
+- P02 Biology practical (meiosis bead model, 6,289)
+- P03 Biology practical (earlobe frequencies, 5,751)
+
+That is 41,552 characters across the seven. Also still waiting from before: Chemistry P01 and P03, and Biology B11 and B12.
+
+**Parked:** Chemistry G04 (a limiting-reactants refresher from Year 11). It is optional and outside the Module 5 dotpoints.
+
+**Your decisions:**
+1. Voice the 11 ready designs?
+2. NSW school chemical categories (CSIS) for cobalt chloride, lead nitrate and barium nitrate. The official lookup needs a staff login.
+3. Fix the site before video design? The Year 11 Chemistry review found 45 correction jobs (13 wrong science). Brief 68 drafts the fixes for Modules 7 and 8 and Year 11 Biology without applying them.
+4. Thumbnail drafts are in `thumbnails/drafts/contact-sheet.png` (brief 63, not uploaded).
+
+**Codex queue:** 55, 60, 65 (site links in YouTube descriptions), 66 and 67 (fact checks), 68 (draft site fixes), 69 (Module 6 route), 70 and 71 (Biology plates).
+
 **Mode (13 Oct, owner decision): consolidation.** No new designs or voicing. Finish what is recorded (C7, C8, B5a, B5b builds), voiced reviews of C5, B3b, C6, B4, render each preview the owner approves (one at a time), upload in batches through Codex. C9 and B6a wait at the Codex check; Module 6 stays at extracts.
 
 ## Audio pilot (14 Oct): compare these two

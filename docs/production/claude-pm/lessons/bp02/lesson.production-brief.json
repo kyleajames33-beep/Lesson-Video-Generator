@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/bp02/lesson.json",
+    "lessonSha256": "8504c2d01ce14eac4fd437b0223b3154dc86c671afe2b2818763185509ba3400"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Entry knowledge: B5a (chromosome, homologous pair, diploid, haploid, sister chromatids, count centromeres), B5b (one copy, two divisions; prophase I pairing and crossing over; metaphase I either way round, independently; anaphase I partners separate; meiosis II chromatids separate; 2^n; fertilisation restores the number), B8 (four sources; reshuffle against new allele; gamete types for two genes; crossover combinations rarer; mutation inherited only in the egg or sperm line). Allele and genotype from B5b and B8. Punnett squares are not assumed (B9 comes next); the expected 1 : 2 : 1 in scene 10 is given from the gamete reasoning in one clause (\"each parent gives either allele half the time\") with a grey tag \"Punnett squares: next video\".",
+    "startsWith": "The hook: Two parent plants can produce a hundred seeds, and no two are quite the same. Can you predict which genotypes their offspring could have?",
+    "stopsAfter": "building a parent cell with colour-tracked homologues and alleles at matching positions; copying each chromosome into sister chromatids and counting by centromeres; modelling crossing over at matching points and recording the new combinations; randomising each pair with a coin and dividing twice into four gametes; listing the four gamete types without crossing over (2 x 2) and the extra crossover types; modelling random fertilisation by random draw; adding a deliberate mutation and tracing the new allele into an offspring; tallying offspring for one gene and comparing observed with expected; assessing the model (strengths, limitations, validity, reliability); evaluating a conclusion drawn from too few trials. No Punnett square method (B9), no dihybrid ratios, no linkage maps.",
+    "nextLesson": "Punnett squares and pedigrees (route entry bio-m5-b09)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-p02.md"
+  ],
+  "teaching": {
+    "task": "How do you model meiosis, fertilisation and mutation to predict the genotypes offspring can have, and how far can you trust the predictions?",
+    "causalExplanation": "(1) the model can predict which offspring genotypes are possible, and test those predictions against chance (1); (2) colours track where each chromosome came from (2); (3) matching sticker positions because homologues carry the same genes at the same places (3); (4) copying before meiosis gives two sister chromatids, still one chromosome (4); (5) breaking at matching points means a crossover exchanges the same genes, so nothing is lost or doubled, and it makes new combinations (5); (6) a coin per pair makes each pair's direction random and independent (6); (7) without crossing over there are 2 x 2 = 4 gamete types; crossing over adds rarer mixed types (7); (8) a random draw models random fertilisation and restores two of each chromosome (8); (9) only mutation makes a new allele, and only in a gamete-making cell is it passed on (9); (10) observed counts differ from expected by chance; pooling brings them closer (10); (11) assessment: what the model represents, what it leaves out, and how to keep it valid and make it reliable (11 to 13).",
+    "conversationalApproach": "Opens on the hook (hook (one pair of parents, many offspring)), then works through aim and kit, step 1: build the parent cell, step 2: copy each chromosome, step 3: crossing over, step 4: line up and divide twice and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.",
+    "openingDecision": "Two parent plants can produce a hundred seeds, and no two are quite the same. Can you predict which genotypes their offspring could have?",
+    "understandingCheck": "a group models Rr x Rr but runs only four fertilisations; none gives rr; they conclude rr offspring cannot occur. Demand: evaluate. Answer: not supported; rr expected about one in four; four trials can easily give none by chance (about one time in three, (3/4)^4 = 0.32); repeat many times and pool. Crossed mistake: \"the model is wrong\" (it is the sample size, not the model).",
+    "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extracts ../site-extracts/bio-m5-l08.md and ../site-extracts/bio-m5-l13.md, and from site lesson 13 Activity 3 (\"Model Meiosis to Predict Gamete Variation\", read in full 18 Oct) and its Predict walkthrough (AaBb unlinked gives four gamete types; expected, not guaranteed, proportions), plus lesson 08's key ideas (2n to n to 2n; crossing over in prophase I; independent assortment at metaphase I). Route entry: bio-m5-p02 (\"Model meiosis, fertilisation and mutation in offspring\", playlist order 16, practical-support branch, prerequisite bio-m5-b08, next bio-m5-b09). Route start: \"A learner physically or interactively models the required processes.\" Route stop: \"Prepare practical modelling of offspring genotype variation through crossing over, fertilisation and mutation; retain actual conduct/results separately.\" Route syllabus actions: B-genotype-practical, B-new-genotypes. Syllabus (2017, p49): B5-IQ4-01 \"conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, including the crossing over of homologous chromosomes, fertilisation and mutations (ACSBL084)\"."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "B5b's lesson-local AlleleBead (white with ink outline and letter), PairUp, CrossOver, TwoWays (the coin flip, coded in B5b, reused here as the coin), CombosGrid; B8's amber-only-for-new-allele rule and GameteList; B5a's ModelCell counting chips; the real-structure comparison plates b5x-chromosome-duplicated-pink-v1.png, b5x-chromosome-duplicated-teal-v1.png and b5x-cell-dividing-nospindle-v1.png (scenes 4 and 11, small, \"the real thing\"). The explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam. Bead chains are built in code from the painted single pop-bead plates (Codex items, shared with bio-m5-p01). New coded items: the method step rail, the colour key chip, the gamete record table, the tally table and a small expected-against-observed column chart (counts, labelled axes), the assessment card, the attempt card. - No human figures: chromosomes are bead chains on a bench; cells are loops of string; gamete cards are face-down index cards that shuffle themselves; the coin flips on its own. No hands.",
+    "transitionPlan": "One bench persists across the practical: the step rail along the top shows where the student is, the bench holds only the beads and string the current step uses, and the right zone holds one card at a time. The parent cell is built, copied, crossed over, divided, recorded, fertilised and mutated in order, the results and assessment cards follow, the attempt card clears the bench and feedback shrinks it to a strip; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "the bench strip draws across.",
+      "teachingReason": "Hook (one pair of parents, many offspring): Two parent plants can produce a hundred seeds, and no two are quite the same.",
+      "narrationCue": "meiosis / fertilisation / mutation",
+      "motionPurpose": "A loose heap of painted pop-beads (plum and teal single-bead plates, Codex items 1 and 2, scattered by code) sits at the left; at the right a row of eight coded seed outlines appears, each with a different short letter label (screen only). On \"meiosis\" four bead chains assemble themselves in a string loop (item 3); on \"fertilisation\" two face-down cards slide together; on \"mutation\" one sticker on a chain turns amber",
+      "motionRole": "explain",
+      "onScreenChange": "the bench strip draws across. A loose heap of painted pop-beads (plum and teal single-bead plates, Codex items 1 and 2, scattered by code) sits at the left; at the right a row of eight coded seed outlines appears, each with a different short letter label (screen only). On \"meiosis\" four bead chains assemble themselves in a string loop (item 3); on \"fertilisation\" two face-down cards slide together; on \"mutation\" one sticker on a chain turns amber. The question writes on at the top left: \"Can a model predict offspring genotypes?\" Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "aim-kit",
+      "visualDecision": "adjust",
+      "visualReference": "the aim card writes on in the right zone.",
+      "teachingReason": "Aim and kit: The aim: model meiosis, fertilisation and mutation to predict the variation in offspring genotypes.",
+      "narrationCue": "die / Plum / teal",
+      "motionPurpose": "On each item the matching plate lands on the bench with a materials tag: plum and teal bead plates (items 1, 2), the centromere piece (item 4), a sheet of blank round stickers (item 5), B5b's coded coin, the painted die (m5x-die-v1.png, item 7), string loops (item 3), a stack of blank index cards (item 6) and the clipboard results sheet (m5x-clipboard-sheet-v1.png, shared item). On \"Plum\" and \"teal\" the colour key ch",
+      "motionRole": "explain",
+      "onScreenChange": "the aim card writes on in the right zone. On each item the matching plate lands on the bench with a materials tag: plum and teal bead plates (items 1, 2), the centromere piece (item 4), a sheet of blank round stickers (item 5), B5b's coded coin, the painted die (m5x-die-v1.png, item 7), string loops (item 3), a stack of blank index cards (item 6) and the clipboard results sheet (m5x-clipboard-sheet-v1.png, shared item). On \"Plum\" and \"teal\" the colour key chip builds two rows; small grey tag \"B5b colours\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "build-parent",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"1.",
+      "teachingReason": "Step 1: build the parent cell: Step one: build a parent cell with two pairs of chromosomes.",
+      "narrationCue": "matching positions / the same genes in the same places",
+      "motionPurpose": "Build the parent cell\". A string loop opens on the bench.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1. Build the parent cell\". A string loop opens on the bench. Bead chains assemble bead by bead (painted single-bead plates chained in code): long plum, long teal, short plum, short teal. On \"matching positions\" sticker dots (white, ink outline) land on each chain with letters on screen only: P and T on long plum (P near the top, T near the bottom), p and t on long teal at the same heights, R on short plum, r on short teal. On \"the same genes in the same places\" dashed level lines join P to p and T to t across the long pair, and R to r across the short pair; tag \"homologous pair: same genes, same places\" (grey tag \"B5a\"). Tag under the loop: \"2n = 4\". Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "copy",
+      "visualDecision": "adjust",
+      "visualReference": "step rail \"2.",
+      "teachingReason": "Step 2: copy each chromosome: Step two: the DNA is copied before meiosis starts.",
+      "narrationCue": "centromere / four",
+      "motionPurpose": "Copy\". Each chain duplicates beside itself (same colours, same stickers) and a painted centromere piece (item 4) clips the two together, forming an X-like pair of bead chains.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"2. Copy\". Each chain duplicates beside itself (same colours, same stickers) and a painted centromere piece (item 4) clips the two together, forming an X-like pair of bead chains. On \"sister chromatids\" the real plates b5x-chromosome-duplicated-pink-v1.png and -teal-v1.png fade in small at the right as \"the real thing\". On \"four\" B5a's counting chip counts centromeres: 1, 2, 3, 4 (each centromere piece rings in turn); a crossed chip \"8 chromosomes\" (grey tag \"count centromeres\"). Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "cross-over",
+      "visualDecision": "new",
+      "visualReference": "step rail \"3.",
+      "teachingReason": "Step 3: crossing over: Step three, in prophase one: crossing over.",
+      "narrationCue": "prophase one / die / swap the end pieces / matching points / purple with short / white with tall",
+      "motionPurpose": "Cross over (prophase I)\". The long pair slides together side by side (B5b's PairUp).",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"3. Cross over (prophase I)\". The long pair slides together side by side (B5b's PairUp). On \"die\" the painted die (m5x-die-v1.png) tumbles on the bench and settles; code draws six pips on its blank top face (tag \"six: cross over\"; a small rule chip \"1 to 5: no swap\" sits beside it). On \"Unclip\" one inner plum chromatid and one inner teal chromatid separate at the bead between P and T (a small gap opens at the same bead count on both, tag \"same point\"). On \"swap the end pieces\" the two end segments exchange places (B5b's CrossOver motion), keeping their own colours (B5b rule: swapped pieces keep their parent's colour). On \"matching points\" a level line confirms the gap is at the same position on both; a small inset shows an unmatched swap with one chromatid gaining an extra bead and the other losing one, grey cross, tag \"unmatched: genes lost or doubled\". On \"purple with short\" the plum-top, teal-bottom chromatid rings (P with t); on \"white with tall\" the teal-top, plum-bottom chromatid rings (p with T). The gamete record table opens in the right zone with the line \"new combinations: P t, p T\". Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "scribbleEllipse",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "line-up-divide",
+      "visualDecision": "new",
+      "visualReference": "step rail \"4.",
+      "teachingReason": "Step 4: line up and divide twice: Step four, in metaphase one: line the pairs up across the middle of the cell.",
+      "narrationCue": "metaphase one / coin / random / sister chromatids / four gametes",
+      "motionPurpose": "Line up (metaphase I), divide twice (meiosis I, II)\". A coded dashed equator draws across the loop; both pairs slide onto it.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"4. Line up (metaphase I), divide twice (meiosis I, II)\". A coded dashed equator draws across the loop; both pairs slide onto it. On \"coin\" B5b's TwoWays coin flips over the long pair (heads: plum left) and again over the short pair (tails: plum right), each result pinning a small tag. On \"random\" the second flip's tag reads \"decided separately\". On \"apart into two new loops\" the homologous partners separate to opposite sides and two new string loops close around them (tag \"partners separate; centromeres stay joined\", grey tag \"B5b\"). On \"sister chromatids\" each loop splits again, centromere pieces unclipping, into four small loops. On \"four gametes\" each small loop gets a \"n = 2\" tag and its alleles print beside it. Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "record-gametes",
+      "visualDecision": "new",
+      "visualReference": "step rail \"5.",
+      "teachingReason": "Step 5: record the gametes, and run it again: Step five: record each gamete's alleles on a card, then rebuild and run it again with different coin results.",
+      "narrationCue": "four types / mixed types",
+      "motionPurpose": "Record and repeat\". Each gamete's letters write onto a blank card plate (item 6) which slides into the record table.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"5. Record and repeat\". Each gamete's letters write onto a blank card plate (item 6) which slides into the record table. The bench resets with a quick rewind; the die rolls a three (code draws three pips; tag \"no swap this run\") and the coins flip differently; new, unmixed gametes drop in. The table sorts into two blocks: \"no crossover: P T R, P T r, p t R, p t r\" with \"2 x 2 = 4 = 2^n\" (grey tag \"site: confirm 2^n\"), and \"with a crossover: P t R, P t r, p T R, p T r\" with a smaller font and the tag \"less common: only on a six\". On \"like your die\" the die rolls once more beside the table. Grey tag \"B8\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "fertilise",
+      "visualDecision": "new",
+      "visualReference": "step rail \"6.",
+      "teachingReason": "Step 6: fertilisation by random draw: Step six: fertilisation.",
+      "narrationCue": "one at random / zygote",
+      "motionPurpose": "Fertilise\". Two card stacks sit at the left and right of the bench, labelled \"parent 1 gametes\" and \"parent 2 gametes\".",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"6. Fertilise\". Two card stacks sit at the left and right of the bench, labelled \"parent 1 gametes\" and \"parent 2 gametes\". On \"shuffles\" each stack shuffles itself (cards riffle in code). On \"one at random\" one card flips from each stack (P T r and p t R). On \"together in one loop\" their bead chromosomes join in one string loop; tag \"zygote: 2n = 4\". On \"Record its genotype\" the line \"Pp Tt Rr\" writes on a tally sheet; on \"return the cards\" both cards slide back into their stacks and reshuffle. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "mutate",
+      "visualDecision": "new",
+      "visualReference": "step rail \"7.",
+      "teachingReason": "Step 7: add a mutation: Step seven: mutation.",
+      "narrationCue": "new allele / neither parent had / new one",
+      "motionPurpose": "Mutate\". One gamete card is drawn; its R sticker peels off and an amber sticker lands in the same place, labelled \"R*\" (tag \"new allele\", B8 rule: amber only for a new allele).",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"7. Mutate\". One gamete card is drawn; its R sticker peels off and an amber sticker lands in the same place, labelled \"R*\" (tag \"new allele\", B8 rule: amber only for a new allele). On \"DNA change\" a small grey tag: \"in a cell that makes eggs or sperm (B8)\". On \"neither parent had\" the zygote forms with the amber sticker and both parents' cards show no amber (tags \"parent 1: no R*\", \"parent 2: no R*\"). On \"reshuffle\" the earlier white stickers pulse; on \"new one\" the amber sticker rings. Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "the tally table writes in the right zone: \"offspring genotype / tally / observed / expected\": \"RR / III / 3 / 4\", \"Rr / IIII IIII / 9 / 8\", \"rr / IIII / 4 / 4\".",
+      "teachingReason": "Results: expected against observed: Here's an example class result for just the seed-shape gene, from sixteen fertilisations.",
+      "narrationCue": "equally likely / expects / got",
+      "motionPurpose": "On \"equally often\" two small gamete chips \"R\", \"r\" appear under each parent label. On \"equally likely\" four pairing chips write on, one per spoken pairing: \"R + R\", \"R + r\", \"r + R\", \"r + r\" (parent 1 allele first); on \"Two of the four\" the two middle chips bracket together, tagged \"1 of each\".",
+      "motionRole": "explain",
+      "onScreenChange": "the tally table writes in the right zone: \"offspring genotype / tally / observed / expected\": \"RR / III / 3 / 4\", \"Rr / IIII IIII / 9 / 8\", \"rr / IIII / 4 / 4\". On \"equally often\" two small gamete chips \"R\", \"r\" appear under each parent label. On \"equally likely\" four pairing chips write on, one per spoken pairing: \"R + R\", \"R + r\", \"r + R\", \"r + r\" (parent 1 allele first); on \"Two of the four\" the two middle chips bracket together, tagged \"1 of each\". A line writes: \"1 : 2 : 1, so of 16: 4, 8, 4\" (no grid; grey tag \"Punnett squares: next video\"). On \"expects\" the expected column writes; on \"got\" the observed column writes. A small column chart builds under the table: three category pairs, observed (solid) beside expected (outline), y-axis \"number of offspring\" from 0 to 10, x-axis \"genotype\". Tag: \"example data\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "assess-strengths",
+      "visualDecision": "new",
+      "visualReference": "the assessment card writes in the right zone with three headings: \"Represents well\", \"Leaves out or distorts\", \"Keep it valid and reliable\".",
+      "teachingReason": "Assess: what the model represents well: Now assess the model.",
+      "narrationCue": "new combinations / restoring / predicts",
+      "motionPurpose": "Rows in the first column, one per cue, each pen-linked to the bench: \"same genes at matching places\"; \"crossing over: new combinations, no new alleles\"; \"random direction for each pair (coin)\"; \"2n to n to 2n\" (counter chips \"4, 2, 4\"); \"predicts possible gametes\". The real cell plate b5x-cell-dividing-nospindle-v1.png sits small beside the string loop (tag \"real cell\").",
+      "motionRole": "explain",
+      "onScreenChange": "the assessment card writes in the right zone with three headings: \"Represents well\", \"Leaves out or distorts\", \"Keep it valid and reliable\". Rows in the first column, one per cue, each pen-linked to the bench: \"same genes at matching places\"; \"crossing over: new combinations, no new alleles\"; \"random direction for each pair (coin)\"; \"2n to n to 2n\" (counter chips \"4, 2, 4\"); \"predicts possible gametes\". The real cell plate b5x-cell-dividing-nospindle-v1.png sits small beside the string loop (tag \"real cell\"). Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "assess-limits",
+      "visualDecision": "new",
+      "visualReference": "the second column fills, one row per cue: \"2 pairs: 4 combinations, so most variety is hidden; humans 23 pairs: 2^23, over 8 million\" (a number ticker runs from 4 to 8,388,608); \"crossover chosen: real position varies, often more than one\" (the chain shows two faint possible break points); \"mutation chosen: real ones rare, random, often no effect\"; \"no DNA, no spindle\" (a faint spindle outline ove",
+      "teachingReason": "Assess: limitations: Its limits matter too.",
+      "narrationCue": "over eight million / rare and random",
+      "motionPurpose": "Hold about 2 seconds (reading hold).",
+      "motionRole": "explain",
+      "onScreenChange": "the second column fills, one row per cue: \"2 pairs: 4 combinations, so most variety is hidden; humans 23 pairs: 2^23, over 8 million\" (a number ticker runs from 4 to 8,388,608); \"crossover chosen: real position varies, often more than one\" (the chain shows two faint possible break points); \"mutation chosen: real ones rare, random, often no effect\"; \"no DNA, no spindle\" (a faint spindle outline over the loop with a grey \"not modelled\" tag). Hold about 2 seconds (reading hold).",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds (reading hold)"
+    },
+    {
+      "sceneId": "valid-reliable",
+      "visualDecision": "new",
+      "visualReference": "the third column fills: \"valid (tests what meiosis really does): matching breaks, fresh die and coin each run, random draw\" (each pen-linked to the bench step); \"reliable (repeats agree): many repeats, pool the class\" (the tally table from scene 10 returns small; a pooled class row writes on beneath it with larger totals: \"class pooled: 41, 79, 40 / expected 40, 80, 40\", example data).",
+      "teachingReason": "Valid and reliable: To keep it valid, so it really tests what meiosis does, follow the real rules every time: break at matching points, roll and flip fresh each run, and draw at random.",
+      "narrationCue": "valid / reliable",
+      "motionPurpose": "A crossed chip: \"one run is enough\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the third column fills: \"valid (tests what meiosis really does): matching breaks, fresh die and coin each run, random draw\" (each pen-linked to the bench step); \"reliable (repeats agree): many repeats, pool the class\" (the tally table from scene 10 returns small; a pooled class row writes on beneath it with larger totals: \"class pooled: 41, 79, 40 / expected 40, 80, 40\", example data). A crossed chip: \"one run is enough\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no tally, no assessment card.",
+      "teachingReason": "Unseen transfer: attempt (countdown, 10 seconds), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "Your turn.",
+      "motionPurpose": "The card for \"attempt (countdown, 10 seconds)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no tally, no assessment card. The attempt card writes on: two parent chips \"R r\" and \"R r\"; a small results row of four offspring cards \"RR, Rr, Rr, Rr\"; the conclusion in a quote box \"rr offspring can't occur from these parents\". Key line: \"R = round allele, r = wrinkled allele\" (screen only). Givens line: \"4 fertilisations\". Demand: \"Evaluate their conclusion.\" One answer box. Nothing answer-bearing: no expected values, no fractions. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The card stays on screen during and after the countdown.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Feedback (brief): The conclusion isn't supported.",
+      "narrationCue": "one time in four / one time in three / repeat",
+      "motionPurpose": "On \"one time in four\" gamete chips \"r 1/2\" from each parent multiply to \"rr 1/4\". On \"three in four\" a chip \"not rr: 3/4\" appears under each of the four offspring cards; on \"one time in three\" the working line writes on: \"chance of no rr in 4 = 3/4 x 3/4 x 3/4 x 3/4 = (3/4)^4, about 0.32\".",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. On \"one time in four\" gamete chips \"r 1/2\" from each parent multiply to \"rr 1/4\". On \"three in four\" a chip \"not rr: 3/4\" appears under each of the four offspring cards; on \"one time in three\" the working line writes on: \"chance of no rr in 4 = 3/4 x 3/4 x 3/4 x 3/4 = (3/4)^4, about 0.32\". On \"repeat\" the pooled row from scene 13 flashes in small with its rr count. Answer line: \"not supported: rr expected 1/4; 4 trials is too few; repeat and pool\". On \"the model is wrong\" the chip \"the model is wrong\" writes on and takes a grey scribble cross, tag \"too few trials, not a bad model\". Hold about 1 second.",
+      "motionTools": [
+        "chip travel",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, one line per cue: \"Track by colour.\" \"Copy first.\" \"Die: cross over on a six, at matching points.\" \"Coin for each pair; random draw for fertilisation.\" \"Mutation: a new allele, on purpose.\" \"Repeat and pool.\" The bench shows the model small along the bottom.",
+      "teachingReason": "Decision rule and handoff: So, to model offspring variation: track each parent's chromosomes by colour, copy before dividing, cross over on a six at matching points, randomise every pair and every fertilisation, add a mutation on purpose, and repeat enough ",
+      "narrationCue": "Next",
+      "motionPurpose": "On \"Next\" a chip \"Next: Punnett squares and pedigrees\" appears with a small coded 2 x 2 grid outline. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, one line per cue: \"Track by colour.\" \"Copy first.\" \"Die: cross over on a six, at matching points.\" \"Coin for each pair; random draw for fertilisation.\" \"Mutation: a new allele, on purpose.\" \"Repeat and pool.\" The bench shows the model small along the bottom. On \"Next\" a chip \"Next: Punnett squares and pedigrees\" appears with a small coded 2 x 2 grid outline. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/bp02-learning-review.md",
+      "sha256": "bf68afe97459db5d4bc3ce74a65427912464639aa2cc225a7045acc8969c36f2"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/bp02-claude-science-check.md",
+      "sha256": "48dd7919d49279738f9ced1151449e3cfd2341e70e87d31716dfb365aa4611be"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

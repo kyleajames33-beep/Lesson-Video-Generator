@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/p02/measured/lesson.json",
+    "lessonSha256": "f6c194ee57a142e73d5d0efa104a0893dfe2cd795b8f879500f7acc631be0036"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C9 and Year 11: the iron thiocyanate tube and the effect of adding Fe3+ (C3); adding a reactant shifts an equilibrium right (C3, C4a); the K expression and its three size bands (C5); the ICE table with the measured value in the Equilibrium row first, and equilibrium values only in K (C6a); K changes only with temperature (C9); concentration and dilution (Year 11). Nothing about colourimeters, absorbance or calibration is assumed.",
+    "startsWith": "Every K so far was given. The iron thiocyanate tube again, with the question of how a colour reading could give a measured concentration and then a real K.",
+    "stopsAfter": "Explaining what a colourimeter measures and why the blank is used; stating that absorbance is proportional to concentration for a fixed cuvette and light (A = epsilon l c); explaining why calibration standards use a large excess of Fe3+; drawing a calibration line of best fit and reading a concentration from it; finding starting concentrations after mixing; using the E-row-first ICE table to find K from one measured value; judging repeat K values by their spread and recording the temperature. No Gibbs free energy, van t Hoff, K at another temperature, logarithm in absorbance, epsilon calculation or percentage uncertainty arithmetic.",
+    "nextLesson": "C10: Ka and Kb, the K values for acids and bases."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-p02.md"
+  ],
+  "teaching": {
+    "task": "Explain how a colour reading on an equilibrium mixture gives a measured K, and use calibration data to find K for an unseen mixture.",
+    "causalExplanation": "The red ion absorbs blue light, so more red ions absorb more of the beam, and with the same cuvette and light absorbance rises in step with concentration. Standards use a big excess of Fe3+, which pushes the equilibrium far right, so almost every SCN- becomes the red ion and its concentration is known. The calibration line from those known points turns a mixture's absorbance into its red ion concentration. Mixing dilutes both reactants, so starting concentrations come from the volumes. The measured value goes into the equilibrium row first, the one to one to one equation fixes the other changes, and substituting the equilibrium values gives K. Repeat mixtures should agree if K is constant at one temperature.",
+    "conversationalApproach": "Starts from the iron thiocyanate tube and the fact that every K was given, builds the instrument and the A = epsilon l c idea, makes standards, plots and uses the calibration graph on one worked mixture, separates dilution from the ICE table, corrects the K-in-the-hundreds misreading, shows five class repeats with their spread, adds two memory aids, then asks for an unseen mixture with unequal volumes and added water, with a short pause and feedback.",
+    "openingDecision": "Nobody can count ions in a test tube, yet K needs equilibrium concentrations. How does a colour reading give you a real K?",
+    "understandingCheck": "Same calibration graph and temperature: 4.50 mL of 0.00200 mol/L Fe3+, 3.50 mL of 0.00200 mol/L SCN- and 2.00 mL of water, absorbance 0.470. Find K (about 208, from reading 1.00 x 10^-4, starts 9.00 and 7.00 x 10^-4, equilibrium 8.00 and 6.00 x 10^-4).",
+    "curriculumScope": "Conduct an investigation to determine Keq of a chemical equilibrium system, for example the iron(III) thiocyanate equilibrium (ACSCH096, Module 5). The video prepares for and analyses the investigation and does not claim to replace conducting it. Gibbs free energy, van t Hoff, logarithms in absorbance and calculating epsilon are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted colourimeter and cuvette series, the painted C3 iron tubes, a coded colourimeter cutaway with a blue beam, a coded calibration graph with fitted line and across-then-down guides, the C6a ICE table, the C5 expression builder and three-band line, and a coded dilution strip. Colour key: Fe3+ pale yellow, SCN- grey, FeSCN2+ red, blue light beam blue, K teal, measured values pen colour. The chip \"illustrative class data\" sits under every data board.",
+    "transitionPlan": "The tube and the question open the lesson; the cutaway opens beside the painted colourimeter; the cuvette pair carries the doubling idea; the bottles and dots carry the standards; the five cuvettes fly into the calibration graph; the graph stays on the right while the mixture is read across and down; the dilution strip replaces the graph, then the ICE table replaces the strip; the builder and band line return for K; the results table and the thermometer follow; the five-step chain strip returns for the aids and the handoff; the attempt board clears the aids and the feedback rebuilds the graph, table and builder; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "C9 log line card with \"K = 0.0061\" and \"K = 0.49\", the painted C3 iron tube pair (pale to deep), painted magnifier, a coded dial icon and a teal K chip",
+      "teachingReason": "Poses the puzzle: every K so far was given, so how can a colour reading on a real tube become a measured K",
+      "narrationCue": "red / number / real K",
+      "motionPurpose": "The given-K card and a question mark write on, the magnifier fails to count ions, the tube deepens to red and a dial and a teal K chip land on the equation strip",
+      "motionRole": "explain",
+      "onScreenChange": "Heading \"Where do K values come from?\" writes on; the C9 card sits top right with a pen \"given\" tag; the painted C3 tube enters left; on \"count ions\" the magnifier moves over it and its lens shows a blur of dots with a pen cross \"too many to count\"; the equation strip writes under the tube; on \"red\" the tube deepens to the deep plate (or crossfades) with an arrow \"more red ion\"; on \"number\" a dial icon with \"?\" appears; on \"real K\" a teal \"K = ?\" chip lands on the strip",
+      "motionTools": [
+        "HandText write-on",
+        "plate crossfade",
+        "Enter reveals",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the question"
+    },
+    {
+      "sceneId": "colourimeter",
+      "visualDecision": "adjust",
+      "visualReference": "Painted colourimeter, a coded cutaway (lamp, blue filter, cuvette slot, detector, readout), painted cuvettes, a colour wheel chip and the painted blank cuvette",
+      "teachingReason": "Shows what the instrument measures: the red ion absorbs blue light, more ions absorb more, and a blank sets zero",
+      "narrationCue": "colourimeter / cuvette / blue light / absorbance / blank",
+      "motionPurpose": "The cutaway opens beside the colourimeter, a cuvette slides in, the beam turns blue and thins as red dots multiply, the readout rises, then the blank snaps it to zero",
+      "motionRole": "explain",
+      "onScreenChange": "The painted colourimeter gets a pen label; a coded cutaway opens beside it; the cuvette slides into the slot with the tag \"cuvette: holds the sample in the beam\"; a white beam leaves the filter blue (tag \"447 nm\") and the colour wheel chip marks blue as absorbed (\"absorbs blue, so it looks red\"); red dots multiply and the beam thins; the readout rises from 0.000 under \"absorbance: how much light is soaked up\"; the blank cuvette replaces the sample, the beam returns to full width and the readout snaps to 0.000 with \"blank: water, set to zero\"",
+      "motionTools": [
+        "plate slide",
+        "cutaway reveal",
+        "beam animation",
+        "particle dots",
+        "readout tick",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "absorbance",
+      "visualDecision": "new",
+      "visualReference": "Two coded cuvettes in the cutaway beam with 8 and 16 red dots, the A = epsilon l c equation, symbol tags, a pen bracket across the cuvette and teal lock icons",
+      "teachingReason": "Gives the relationship that lets a reading stand for a concentration: with fixed cuvette and light, absorbance rises in step with concentration",
+      "narrationCue": "doubling / doubles / epsilon / in step",
+      "motionPurpose": "The dots double and the readouts tick 0.20 then 0.40, then the equation writes and each symbol lights on its name before locks land on the fixed terms",
+      "motionRole": "explain",
+      "onScreenChange": "Two cuvettes with 8 and 16 dots sit in the beam with the key \"same cuvette, same light\"; on \"doubling\" the dots double; on \"doubles\" the readouts tick 0.20 then 0.40 (tag \"pattern, not data\"); \"A = εlc\" writes large and each symbol lights on its spoken name with a short tag (absorbance, concentration, cuvette width with a pen bracket, how strongly this ion absorbs this light); on \"stay fixed\" teal locks land on ε and l; on \"in step\" the tag \"A proportional to c\" writes beside it, with a small grey note that the transmitted light does not simply halve",
+      "motionTools": [
+        "particle dots",
+        "readout tick",
+        "HandText write-on",
+        "icon pop",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "standards",
+      "visualDecision": "new",
+      "visualReference": "Two painted reagent bottles (colourless KSCN, pale yellow Fe3+), grey and yellow dots, the equation strip with a heavy forward arrow, and the five painted cuvettes pale to deep",
+      "teachingReason": "Explains how a concentration can be known: a big excess of Fe3+ pushes the equilibrium right, so almost every SCN- becomes the red ion",
+      "narrationCue": "standards / big excess / almost every / five known concentrations",
+      "motionPurpose": "Yellow dots pour onto a few grey dots, a heavy arrow shifts the strip right, each grey dot pairs and turns red, then five cuvettes slide in with their labels",
+      "motionRole": "explain",
+      "onScreenChange": "The bottles appear with coded labels \"0.00200 mol/L KSCN\" and \"0.200 mol/L Fe3+, large excess\"; on \"big excess\" many yellow dots pour onto a small cluster of grey dots; the strip gets a heavy forward arrow tagged \"extra Fe3+ shifts it right\"; on \"almost every\" each grey dot pairs with a yellow one and turns red, leaving one grey dot; the equality \"[FeSCN2+] = [SCN-] in the standard\" writes with a teal tick; on \"five known concentrations\" the five cuvettes slide in labelled 0.40 to 2.00 (x 10^-4 mol/L); a tag says standards are not equilibrium mixtures and K is never calculated from one",
+      "motionTools": [
+        "plate slide",
+        "particle dots",
+        "shift arrow",
+        "tick",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "calibration",
+      "visualDecision": "new",
+      "visualReference": "Coded calibration graph with gridlines, the five painted standard cuvettes flying to their points, the blank point, a fitted line, a crossed dot-to-dot zigzag and the chip \"illustrative class data\"",
+      "teachingReason": "Shows how measured points become a calibration line, why the line passes near the origin, and why each instrument needs its own line",
+      "narrationCue": "absorbance up the side / straight line / calibration",
+      "motionPurpose": "The axes label, each cuvette flies to its point with its reading, the blank drops the origin point, the fitted line draws through them and the range limit fades the line beyond 2.00 to dashed",
+      "motionRole": "explain",
+      "onScreenChange": "Axes write on (\"absorbance\", \"[FeSCN2+] (x 10^-4 mol/L)\"); each standard cuvette shrinks and flies to its point with 0.191, 0.374, 0.566, 0.751, 0.939; the blank drops (0, 0.000); the fitted line draws through the cloud while a faint dashed zigzag is crossed; a pen ring on the origin with \"intercept 0.001: close to zero\"; the word \"calibration\" writes over the graph; the line beyond 2.00 fades to dashed with \"use the line only inside the standards\"",
+      "motionTools": [
+        "lineGraph draw-on",
+        "plate fly-in",
+        "readout tick",
+        "ScribbleCircle",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "read-mixture",
+      "visualDecision": "adjust",
+      "visualReference": "Task line and grouped givens card, a yellow, grey and red dot view, the painted unknown cuvette in the cutaway, the calibration graph with across-then-down guides, and a small equation card",
+      "teachingReason": "Shows a real equilibrium mixture and how its measured absorbance becomes the unknown concentration, by graph or by the line equation",
+      "narrationCue": "neither is in excess / 0.705 / across / down / 1.50 times ten to the minus four",
+      "motionPurpose": "The givens write in groups, the three-ion dot view appears, the readout ticks to 0.705, a pen guide runs across then down to 1.50, and the equation card solves the same value",
+      "motionRole": "explain",
+      "onScreenChange": "\"Find K for this mixture\" writes top left; the givens card fills in groups (5.00 mL of 0.00200 mol/L Fe3+, 5.00 mL of 0.00200 mol/L SCN-, total 10.00 mL, same temperature); on \"neither is in excess\" yellow, grey and red dots appear with \"real equilibrium: all three present\"; the unknown cuvette enters the cutaway and the readout ticks to \"A = 0.705\"; on \"across\" a guide runs from 0.705 to the line, on \"down\" it drops to the axis and \"1.50\" rings, writing \"[FeSCN2+]eq = 1.50 x 10^-4 mol/L\" into the card; the side card writes \"A = 4690c + 0.001\", \"0.705 - 0.001 = 4690c\", \"c = 0.704 / 4690 = 1.50 x 10^-4\" on the spoken moves",
+      "motionTools": [
+        "Enter reveals",
+        "particle dots",
+        "readout tick",
+        "guide line draw",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "dilution",
+      "visualDecision": "new",
+      "visualReference": "Two painted 5.00 mL pipettes emptying into one painted 10.00 mL volumetric flask with coded liquid fill, a dilution working line and a crossed bottle-value chip",
+      "teachingReason": "Teaches that mixing spreads each ion through twice the volume, so starting concentrations come from the volumes, never from the bottle",
+      "narrationCue": "10 millilitre / halves / 0.00100",
+      "motionPurpose": "The two pipettes empty into the flask, the liquid stands twice as tall with the dots at half density, the working writes under it and the bottle value is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "Two pipettes empty into the flask; the liquid is twice as tall and the yellow dots spread to half density (tag \"same particles, twice the volume\"); on \"halves\" \"0.00200 x 5.00 / 10.00 = 0.00100 mol/L\" writes with the 5.00 and 10.00 pen-linked to the volumes; on \"for iron and for thiocyanate\" it repeats as \"SCN-: 0.00100 mol/L\"; on \"never the bottle values\" the chip \"start = 0.00200 (bottle value)\" fades in and is crossed with \"mixing dilutes: use 0.00100\"; both starting values join the givens card",
+      "motionTools": [
+        "plate slide",
+        "liquid fill",
+        "particle dots",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "ice-table",
+      "visualDecision": "reuse",
+      "visualReference": "The C6a ICE table with row labels lighting on their letters, pen arrows from the givens card, the E-row-first arrow, the E - I bracket, 1 : 1 : 1 chips and the C6a rule chip",
+      "teachingReason": "Applies the known E-row-first method so the measured value fixes the change and the other equilibrium amounts follow",
+      "narrationCue": "I for initial / C for change / E for equilibrium / equilibrium row / plus / fall / 8.50 times ten to the minus four",
+      "motionPurpose": "Initial cells fill from the card, the measured value goes into the equilibrium cell first, the bracket gives the change, the 1 : 1 : 1 chips give the reactant falls and the equilibrium cells complete",
+      "motionRole": "explain",
+      "onScreenChange": "The ICE table replaces the dilution strip with each row label lighting on its letter; Initial ticks to 1.00 x 10^-3, 1.00 x 10^-3 and 0; the pen arrow puts 1.50 x 10^-4 in the FeSCN2+ Equilibrium cell; the E - I bracket gives +1.50 x 10^-4 in made colour; the 1 : 1 : 1 chips fly along the Change row and the reactant cells tick -1.50 x 10^-4 in used colour; the reactant Equilibrium cells tick 8.50 x 10^-4 with the subtraction shown; the rule chip lists the four steps",
+      "motionTools": [
+        "table fill",
+        "pen arrow draw",
+        "bracket draw",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "find-k",
+      "visualDecision": "adjust",
+      "visualReference": "The C5 expression builder, a 100-square grid with 15 red squares, the C5 three-band K line with a marker at 208 and a crossed products-favoured chip",
+      "teachingReason": "Substitutes the equilibrium values into K and stops a wrong reading of its size: 15 percent converted means the middle band, not mostly products",
+      "narrationCue": "squared / 208 / fifteen percent / middle band",
+      "motionPurpose": "The expression writes and the equilibrium values fly in, the denominator collapses to 7.225 x 10^-7, K = 208 lands in teal, then the grid fills 15 squares and the marker sits inside the middle band",
+      "motionRole": "explain",
+      "onScreenChange": "The builder writes \"K = [FeSCN2+] / ([Fe3+][SCN-])\" and the Equilibrium values fly in; on \"squared\" the denominator collapses to \"(8.50 x 10^-4)^2 = 7.225 x 10^-7\"; on \"208\" \"K = 208\" writes in teal with \"no unit written\"; on \"fifteen percent\" a 100-square grid colours 15 squares red with \"1.50 x 10^-4 / 1.00 x 10^-3 = 15%\"; on \"middle band\" the small C5 band line shows a marker at 208 and the chip \"K = 208, so mostly products\" is crossed with \"only 15% reacted\"",
+      "motionTools": [
+        "expression builder",
+        "value fly-in",
+        "grid fill",
+        "marker drop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "repeats",
+      "visualDecision": "new",
+      "visualReference": "Coded results table (five mixtures, A and K columns) with the chip \"illustrative class data\", a short strip plot, the C9 thermometer icon and three weak-point icons",
+      "teachingReason": "Shows that repeat mixtures give nearly the same K, that the spread measures trust, and that the temperature must be recorded",
+      "narrationCue": "five / same temperature / 205 and 214 / 208 / temperature",
+      "motionPurpose": "The table writes on, the K column fills with 214, 205, 209, 205, 208, a range bracket and mean line follow, the strip plot clusters and the thermometer asks for the temperature",
+      "motionRole": "explain",
+      "onScreenChange": "The results table writes on with the chip \"illustrative class data\" (SCN- added 1.00 to 5.00 mL, A 0.162 to 0.705); on \"five\" the K column fills 214, 205, 209, 205, 208 with row 5 pen-linked to the worked mixture; on \"205 and 214\" a bracket \"range 205 to 214\" and \"mean 208\" write under the column and the strip plot shows the five points clustered; on \"temperature\" the thermometer icon writes \"T = ___ C (record it)\"; on \"weak points\" three icons write in turn (small volumes, line fit, standards almost all red)",
+      "motionTools": [
+        "table fill",
+        "bracket draw",
+        "strip plot",
+        "icon pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Large handwritten aid with the colour wheel chip and a pen arrow from a red cuvette to the blue beam, a five-step chain strip, a \"dilute first\" clip tag and a condition tag",
+      "teachingReason": "Gives the absorbed-colour rule and the five-step order after both are explained, with the condition that the same instrument and temperature are used",
+      "narrationCue": "measure the colour it absorbs, not the colour you see / standards, graph, reading, ICE table, K / dilution",
+      "motionPurpose": "Aid one writes large with the wheel and arrow, then the five-step chain lights step by step and the dilute-first tag clips between reading and ICE table",
+      "motionRole": "explain",
+      "onScreenChange": "Aid one writes large with the colour wheel chip and a pen arrow from a red cuvette to the blue beam; aid two writes beneath as a chain strip lighting on its cues: five cuvettes (standards), the line (graph), the across-then-down guide (reading), a mini ICE table, teal K; on \"dilution\" the tag \"dilute first\" clips onto the arrow between reading and ICE table; the condition tag \"same instrument, cuvette and light; record the temperature\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath arrow",
+        "step highlight",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Calibration graph with no guides, the equation strip, a grouped givens card with units, one demand and an empty ICE outline",
+      "teachingReason": "Unseen transfer with unequal volumes and added water; every value and the demand stay visible and no answer cues are shown",
+      "narrationCue": "4.50 millilitres / 3.50 millilitres / 2.00 millilitres of water / 0.470 / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears to the calibration graph without guides, the strip and a new givens card (4.50 mL of 0.00200 mol/L Fe3+, 3.50 mL of 0.00200 mol/L SCN-, 2.00 mL of water, absorbance 0.470, same calibration graph and temperature); the demand \"Find K.\" stays; an empty ICE outline shows labels only; the countdown ring starts after the narration with \"Pause here to answer.\"; no totals, working or 208 on screen",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt board with an answer chip, a volume sum, two dilution lines, the pen guide on the graph, the ICE table with the E-row-first arrow and bracket, the K builder, the worked K = 208 chip and one crossed bottle-value chip",
+      "teachingReason": "Gives the answer first, shows the short working one line per cue, the payoff that a different mixture gives the same K at one temperature, and one crossed classic mistake",
+      "narrationCue": "208 / dilute / 9.00 / 7.00 / across / 1.00 / equilibrium row first / 8.00 / 6.00 / Divide / same K / 28",
+      "motionPurpose": "The answer chip pins, the volumes sum and each dilution line writes and flies into the table, the guide reads 1.00 from the graph, the E-row arrow and bracket give the changes, K writes as 208, the worked chip slides in with a teal equals sign and the bottle-value chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"208\" the chip \"K = 208\" pins top right; on \"dilute\" \"4.50 + 3.50 + 2.00 = 10.00 mL\" adds with the water ringed; on \"9.00\" \"Fe3+: 0.00200 x 4.50 / 10.00 = 9.00 x 10^-4\" writes and flies into the Initial row; on \"7.00\" \"SCN-: 0.00200 x 3.50 / 10.00 = 7.00 x 10^-4\" does the same; on \"across\" the guide runs from 0.470 to the line and down, and \"1.00 x 10^-4\" rings on \"1.00\"; on \"equilibrium row first\" the pen arrow places 1.00 x 10^-4, the bracket gives +1.00 x 10^-4 and the chips give -1.00 x 10^-4 twice; the cells tick 8.00 and 6.00 x 10^-4 on their words; on \"Divide\" the builder writes \"K = 1.00 x 10^-4 / (8.00 x 10^-4 x 6.00 x 10^-4) = 208\"; on \"same K\" the worked chip \"K = 208\" slides in with a teal equals sign and \"different mixture, same temperature, same K\"; on \"28\" the chip \"K = 28: bottle values 0.00200 used\" fades in and is crossed with a pen arrow to the dilution lines and the caption \"dilute first\"",
+      "motionTools": [
+        "chip pop",
+        "value fly-in",
+        "guide line draw",
+        "table fill",
+        "expression builder",
+        "chip slide-in",
+        "Mark cross",
+        "pen arrow draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The five-step chain strip returning along the top, a dilute-first tag, an E-row-first tag, the thermometer icon, a next chip and the painted vinegar bottle",
+      "teachingReason": "Collects the method into one order, ends on the temperature condition and hands off to Ka and Kb",
+      "narrationCue": "after mixing / temperature / Next / Ka and Kb",
+      "motionPurpose": "Each step of the chain lights on its words, the dilute-first and E-row-first tags light, the thermometer pulses and the next chip slides in with the vinegar bottle",
+      "motionRole": "explain",
+      "onScreenChange": "The chain strip returns along the top and each step lights on its words; \"dilute first\" lights between reading and ICE table on \"after mixing\"; \"E row first\" lights on the mini ICE table; the thermometer icon pulses on \"temperature\"; on \"Next\" the chip \"Next: Ka and Kb, K for acids and bases\" slides in with the small painted vinegar bottle",
+      "motionTools": [
+        "step highlight",
+        "icon pulse",
+        "chip slide-in",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the two memory aids in large writing and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes, the two aids and the condition tag appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 75 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/p02-learning-review.md",
+      "sha256": "ffab0fde414eeaa383f696c4e8b03c5fd1b02b027235e83da54bab13be75f262"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/p02-claude-science-check.md",
+      "sha256": "9f5c9a4210836ac8025c69a8ae8429d57053e70a14a7e8b5c14d9c70131ecc59"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

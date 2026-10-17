@@ -1370,6 +1370,1697 @@ B10_ROWS = {
 }
 
 
+BIO_B13_ROWS = {
+    "hook": [
+        "new",
+        "the data board.",
+        "Hook (half a million volunteers): UK Biobank is a shared research project that began recruiting in 2006.",
+        "Half a million volunteers / link their health records / 850,000 places / approved researchers / one family, or one hospital",
+        "A painted rack of sample tubes (m5x-sample-tube-rack-v1.png, new) sits at the left with the tag \"UK Biobank, recruiting from 2006\". On \"Half a million volunteers\" a coded TubeGrid fills the right side with small tube chips, a counter ticking to \"500,000\" (grey tag \"aged 40 to 69\"); on \"link their health records\" a thin line joins one chip to a small coded record card (no names, a heart and a pill icon).",
+        "explain",
+        "the data board. A painted rack of sample tubes (m5x-sample-tube-rack-v1.png, new) sits at the left with the tag \"UK Biobank, recruiting from 2006\". On \"Half a million volunteers\" a coded TubeGrid fills the right side with small tube chips, a counter ticking to \"500,000\" (grey tag \"aged 40 to 69\"); on \"link their health records\" a thin line joins one chip to a small coded record card (no names, a heart and a pill icon). On \"850,000 places\" one chip opens into a short DNA strip with many tiny ticks along it (tag \"about 850,000 variants measured\"; grey tag \"B12: reading DNA\"). On \"approved researchers\" five small coded lab badges ring the grid with dashed lines into it (tag \"shared with approved researchers\"). On \"one family, or one hospital\" a tiny pedigree of five symbols and a small 200-chip block appear beside the huge grid for scale. The heading writes on: \"What big shared data can show\". Hold two seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold two seconds"
+    ],
+    "why-scale": [
+        "adjust",
+        "on \"many researchers and sites pool their data\" five site badges each send a stream of chips into one central bar; the term writes on with the gloss \"many groups pooling data\".",
+        "Why scale matters: A project like this is called a large-scale collaborative project: many researchers and sites pool their data.",
+        "many researchers and sites pool their data / only nudge risk a little / In a small study / hundreds of thousands / inference / never certain",
+        "On \"only nudge risk a little\" two bars appear, \"carriers\" and \"non-carriers\", differing by a sliver (illustrative; tag \"a small real difference\"). On \"In a small study\" B11's SampleBounce runs with n = 200: repeated estimates of the difference scatter widely, some below zero (computed with seeded rng; as the first dots land the tag \"each dot: one small study's result\" writes on, then \"200 people: chance swamps it\").",
+        "explain",
+        "on \"many researchers and sites pool their data\" five site badges each send a stream of chips into one central bar; the term writes on with the gloss \"many groups pooling data\". On \"only nudge risk a little\" two bars appear, \"carriers\" and \"non-carriers\", differing by a sliver (illustrative; tag \"a small real difference\"). On \"In a small study\" B11's SampleBounce runs with n = 200: repeated estimates of the difference scatter widely, some below zero (computed with seeded rng; as the first dots land the tag \"each dot: one small study's result\" writes on, then \"200 people: chance swamps it\"). On \"hundreds of thousands\" the same simulation reruns with n = 200,000 and the dots cluster tightly above zero (tags \"each dot: one big study's result\" and \"200,000 people: the real difference shows\"). On \"inference\" the word writes on with the gloss \"a conclusion drawn from evidence\". On \"never certain\" a chip \"big data = certainty\" writes on and takes a grey scribble cross. Hold one second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold one second"
+    ],
+    "sickle-puzzle": [
+        "new",
+        "the map board.",
+        "The sickle cell puzzle: Pooling data isn't new.",
+        "should become rare / combined into one map / large parts of Africa / Mediterranean, the Middle East and India / can't explain",
+        "m6-red-cells-normal-sickle-v1.png sits small at the upper left (tag \"two copies: sickle cell anaemia\"). On \"should become rare\" a small coded line graph draws a frequency falling towards zero over generations (tag \"expected: selection removes it\"; grey tag \"Year 11: natural selection\").",
+        "explain",
+        "the map board. m6-red-cells-normal-sickle-v1.png sits small at the upper left (tag \"two copies: sickle cell anaemia\"). On \"should become rare\" a small coded line graph draws a frequency falling towards zero over generations (tag \"expected: selection removes it\"; grey tag \"Year 11: natural selection\"). On \"combined into one map\" many small survey dots drop onto the coded world outline and merge into shaded regions (WorldShade, banded legend written: \"under 1%\", \"1 to 5%\", \"5 to 10%\", \"over 10%\" of allele copies; source tag \"redrawn from Piel et al. 2010, bands simplified\"; shading drawn from the published figure, not by eye). On \"large parts of Africa\" the African bands brighten; on \"Mediterranean, the Middle East and India\" small shaded patches pulse in turn. On \"can't explain\" the falling expected line and the map sit side by side with a \"?\" between them. Hold one second.",
+        [
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "three-streams": [
+        "adjust",
+        "three EvidenceCards dock at the right of the map in turn.",
+        "Three kinds of evidence: Studies like this combine three kinds of evidence.",
+        "Family trees / one base / where it's common / No single kind / all three agreeing",
+        "Card 1 on \"Family trees\": B9's Pedigree (two open parent symbols, one filled child) with the tag \"recessive; carriers healthy\" (grey tag \"B9\"). Card 2 on \"one base\": B7's recall strip \"GAG to GTG\" with one amber tile (grey tag \"B7\").",
+        "explain",
+        "three EvidenceCards dock at the right of the map in turn. Card 1 on \"Family trees\": B9's Pedigree (two open parent symbols, one filled child) with the tag \"recessive; carriers healthy\" (grey tag \"B9\"). Card 2 on \"one base\": B7's recall strip \"GAG to GTG\" with one amber tile (grey tag \"B7\"). Card 3 on \"where it's common\": a thumbnail of the shaded map. On \"No single kind\" each card gets a small tag of what it cannot show: \"not how common\", \"not its effect in a population\", \"not why\". On \"all three agreeing\" three lines draw from the cards to one central chip: \"conclusion from agreement\". Hold one second.",
+        [
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "malaria-overlay": [
+        "new",
+        "on \"Lay a map of malaria\" a hatched overlay (WorldShade second layer, hatching not colour, tag \"historical malaria\") slides over the allele map; on \"across Africa\" the overlap regions ring amber in Africa only, and a grey tag writes on over Asia and the Americas: \"weaker match outside Africa\" (source tag \"Piel et al.",
+        "The malaria overlay: So why is it common in those places?",
+        "Lay a map of malaria / across Africa / a parasite that a mosquito passes on / infected cells tend to sickle and get cleared / carriers don't get the anaemia / survive and have children more often / heterozygote advantage",
+        "2010\"). On \"a parasite that a mosquito passes on\" the painted Anopheles plate (m5x-anopheles-mosquito-v1.png, new) and m7-plasmodium-red-cell-v1.png appear small at the lower left (tag \"malaria parasite inside a red cell\").",
+        "explain",
+        "on \"Lay a map of malaria\" a hatched overlay (WorldShade second layer, hatching not colour, tag \"historical malaria\") slides over the allele map; on \"across Africa\" the overlap regions ring amber in Africa only, and a grey tag writes on over Asia and the Americas: \"weaker match outside Africa\" (source tag \"Piel et al. 2010\"). On \"a parasite that a mosquito passes on\" the painted Anopheles plate (m5x-anopheles-mosquito-v1.png, new) and m7-plasmodium-red-cell-v1.png appear small at the lower left (tag \"malaria parasite inside a red cell\"). On \"infected cells tend to sickle and get cleared\" a small coded inset shows one infected red cell deforming into a sickle shape and fading out (tag \"infected carrier cells sickle and are removed\"). On \"carriers don't get the anaemia\" three genotype chips line up: \"two normal alleles\", \"carrier (one sickle allele)\", \"two sickle alleles\", each with two small bars, \"anaemia\" and \"severe malaria risk\": the carrier's anaemia bar is near zero and its malaria bar is short (illustrative heights; grey tag \"illustrative\"). On \"survive and have children more often\" a short generation strip shows the carrier chips passing more copies forward. On \"heterozygote advantage\" the term writes on with the gloss \"carriers do better than either kind of homozygote, here\". Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold one second"
+    ],
+    "match-not-proof": [
+        "new",
+        "on \"aren't proof\" the amber overlap rings dim and a chip \"maps match, so malaria caused it\" writes on with a grey \"?\" (tag \"association, not cause\"; grey tag \"B11\").",
+        "A match isn't proof: But two maps that line up aren't proof on their own.",
+        "aren't proof / other studies showed / another cause / a few of the founders",
+        "On \"other studies showed\" a coded study card slides in: \"carriers vs non-carriers: severe malaria\" with two bars, the carrier bar much shorter (illustrative heights, tag \"direct evidence\"). On \"another cause\" the map pans to a small island inset.",
+        "explain",
+        "on \"aren't proof\" the amber overlap rings dim and a chip \"maps match, so malaria caused it\" writes on with a grey \"?\" (tag \"association, not cause\"; grey tag \"B11\"). On \"other studies showed\" a coded study card slides in: \"carriers vs non-carriers: severe malaria\" with two bars, the carrier bar much shorter (illustrative heights, tag \"direct evidence\"). On \"another cause\" the map pans to a small island inset. On \"a few of the founders\" a boat icon carries five bead symbols (two amber) to the island; the island population grows from them and the amber share stays high (computed bead counts; tag \"founders\"; grey tag \"founder effect: Module 6\"). Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "scribbleEllipse"
+        ],
+        "Hold one second"
+    ],
+    "conservation": [
+        "new",
+        "the population board.",
+        "Protecting a threatened species: The same kind of data helps protect threatened species.",
+        "contagious facial cancer / very little genetic diversity / past population crashes / helps against a new disease / pair devils that are less related / doesn't guarantee survival",
+        "The painted devil plate (m5x-tasmanian-devil-v1.png, new) enters at the left with a small coded map chip of Tasmania. On \"contagious facial cancer\" a grey tag writes on: \"devil facial tumour disease, first seen 1996\".",
+        "explain",
+        "the population board. The painted devil plate (m5x-tasmanian-devil-v1.png, new) enters at the left with a small coded map chip of Tasmania. On \"contagious facial cancer\" a grey tag writes on: \"devil facial tumour disease, first seen 1996\". On \"very little genetic diversity\" two DiversityTrays draw side by side, each a row of five markers: \"a diverse population\" with many bead colours per marker, \"devils\" with one or two colours per marker (illustrative; grey tag \"illustrative pattern, not measured values\"). The term \"genetic diversity\" writes on with the gloss \"how many different alleles\". On \"past population crashes\" a small coded line drops sharply and recovers narrow (tag \"population crash (bottleneck)\"). On \"helps against a new disease\" a disease icon passes along both trays: in the diverse tray a few beads glow (tag \"some may resist\"); in the devil tray none glow. On \"pair devils that are less related\" two coded animal cards (devil silhouettes in the plate's style, no labels) join with a tick, while a closely related pair takes a cross (tag \"pair the least related\"). On \"doesn't guarantee survival\" a chip \"diversity guarantees survival\" takes a grey scribble cross (tag \"also habitat, disease, numbers\"). Hold one second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "human-evolution": [
+        "new",
+        "on \"1000 Genomes Project\" a coded title card writes on with \"2,504 people, 26 populations\" (source tag \"1000 Genomes Project, 2015\"); 26 small region dots light on a faint world outline.",
+        "What shared variants say about human history: Large data also show how human populations are related.",
+        "1000 Genomes Project / share more variants / the most variation / most common variants found elsewhere / each group that left was a small set of founders / the reference genome / four to five million places",
+        "On \"share more variants\" two pairs of variant strips compare: a pair sharing many amber ticks (tag \"more shared: more recent common ancestors\") and a pair sharing few. On \"the most variation\" VariantBars draw: five continental-group bars of variant sites per genome, the African-ancestry bar tallest (values from the phase 3 paper; tag \"variant sites per genome\").",
+        "explain",
+        "on \"1000 Genomes Project\" a coded title card writes on with \"2,504 people, 26 populations\" (source tag \"1000 Genomes Project, 2015\"); 26 small region dots light on a faint world outline. On \"share more variants\" two pairs of variant strips compare: a pair sharing many amber ticks (tag \"more shared: more recent common ancestors\") and a pair sharing few. On \"the most variation\" VariantBars draw: five continental-group bars of variant sites per genome, the African-ancestry bar tallest (values from the phase 3 paper; tag \"variant sites per genome\"). On \"most common variants found elsewhere\" nested coded circles draw, headed \"common variants\": a large circle \"found in African populations\" with smaller overlapping circles mostly inside it (grey tag \"rare variants: mostly found in one region\"). On \"each group that left was a small set of founders\" a SimilarityTree draws from one root, and at each branch a small handful of beads (scene 6's founder look) is drawn from the parent group's larger bead set (tag \"founders carry part of the variety\"; illustrative branching, no dates). On \"the reference genome\" a single strip labelled \"reference genome\" writes on, with three small donor symbols feeding it (pedigree squares and circles, no people) and the tag \"built from a few donors\". On \"four to five million places\" one person's strip slides under it and many differing ticks flash (tag \"a typical genome differs at 4 to 5 million sites\"). Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "improves-not-removes": [
+        "new",
+        "the data board returns as a two-column table, written row by row on each cue: left \"improves\": \"pattern detection\", \"confidence in broad trends\", \"comparison across populations\"; right \"does not remove\": \"a biased sample\", \"method limits\", \"uncertainty for one person\".",
+        "What big data improve, and what they don't: So, large data improve pattern detection, confidence in broad trends, and comparisons across many populations.",
+        "healthier on average / states both sides",
+        "On \"healthier on average\" the big tube grid tints slightly and a small comparison chip appears: \"volunteers vs whole population: volunteers healthier on average\" (source tag \"Fry et al. 2017\").",
+        "explain",
+        "the data board returns as a two-column table, written row by row on each cue: left \"improves\": \"pattern detection\", \"confidence in broad trends\", \"comparison across populations\"; right \"does not remove\": \"a biased sample\", \"method limits\", \"uncertainty for one person\". On \"healthier on average\" the big tube grid tints slightly and a small comparison chip appears: \"volunteers vs whole population: volunteers healthier on average\" (source tag \"Fry et al. 2017\"). On \"states both sides\" the two column headers pulse together. Hold one second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "two handwritten lines write on with small icons: \"big data sharpen the trend; they don't predict a person\" (the settled simulation dots), \"common but harmful?",
+        "Memory: Two lines to remember.",
+        "Two lines to remember.",
+        "carrier advantage, or chance in a small group\" (the carrier chip and the founder boat). Hold half a second.",
+        "explain",
+        "two handwritten lines write on with small icons: \"big data sharpen the trend; they don't predict a person\" (the settled simulation dots), \"common but harmful? carrier advantage, or chance in a small group\" (the carrier chip and the founder boat). Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no maps, cards or tags from earlier.",
+        "Unseen transfer: attempt one (frequency and malaria data), with every demand and condition on screen and nothing answer-bearing",
+        "Two questions now.",
+        "The card for \"attempt one (frequency and malaria data)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears: no maps, cards or tags from earlier. The card writes on, headed \"Example data: a red blood cell variant\". A table with three columns, \"region\", \"malaria\", \"variant allele frequency\": A none 0.01; B low 0.03; C moderate 0.06; D high 0.11; E high 0.13; F (island) none 0.10. Beside it a coded scatter of the same six points (x \"malaria level\", y \"allele frequency\"), island point drawn like the others (not highlighted). Demands: \"(a) Describe the trend.\" \"(b) Suggest one reason region F doesn't fit.\" Two answer boxes. Nothing answer-bearing: no trend line, no highlighted point. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback-one": [
+        "adjust",
+        "the card shrinks to a strip at the top (the table and demands stay readable).",
+        "Feedback, item one: The variant gets more common as malaria increases, which suggests carriers have an advantage where there's malaria.",
+        "more common as malaria increases / suggests / The island / the numbers match",
+        "(1) On \"more common as malaria increases\" a trend line draws through A to E (tag \"rises with malaria\"). (2) On \"suggests\" the line \"(a) frequency rises with malaria: suggests a carrier advantage\" writes on.",
+        "explain",
+        "the card shrinks to a strip at the top (the table and demands stay readable). (1) On \"more common as malaria increases\" a trend line draws through A to E (tag \"rises with malaria\"). (2) On \"suggests\" the line \"(a) frequency rises with malaria: suggests a carrier advantage\" writes on. (3) On \"The island\" point F rings amber; the line \"(b) F: no malaria, high frequency: e.g. founders carried it by chance\" writes on. (4) On \"the numbers match\" the chip \"the variant protects against malaria\" writes on and takes a grey scribble cross, with the tag \"a pattern; needs direct evidence\". Settle on the model answer for about a second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer: attempt two (conservation data), with every demand and condition on screen and nothing answer-bearing",
+        "Second.",
+        "The card for \"attempt two (conservation data)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears. The card shows two population panels, \"mainland\" and \"island\" (coded map chips, no animal plates needed; small wallaby silhouette icon), each with a DiversityTray summary bar: \"average alleles per marker: 9\" and \"3\" (example data, labelled). Demands: \"(a) What does this suggest about the island population?\" \"(b) Name one way managers could use this.\" Two answer boxes. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback-two": [
+        "adjust",
+        "the card shrinks to a strip.",
+        "Feedback, item two: The island animals have much less genetic diversity.",
+        "much less genetic diversity / past population crash, or a small founding group / move some mainland animals / guarantees they'll survive",
+        "(1) On \"much less genetic diversity\" the island bar rings amber (tag \"3 vs 9\"). (2) On \"past population crash, or a small founding group\" the line \"(a) low diversity: a past crash or few founders, and isolation\" writes on, with a small dropping line icon.",
+        "explain",
+        "the card shrinks to a strip. (1) On \"much less genetic diversity\" the island bar rings amber (tag \"3 vs 9\"). (2) On \"past population crash, or a small founding group\" the line \"(a) low diversity: a past crash or few founders, and isolation\" writes on, with a small dropping line icon. (3) On \"move some mainland animals\" an arrow draws from the mainland chip to the island chip; the line \"(b) move animals in (adds alleles), or pair the least related (keeps them)\" writes on. (4) On \"guarantees they'll survive\" the chip \"more diversity guarantees survival\" takes a grey scribble cross, with the tag \"improves the odds\". Settle on the model answer for about a second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "decision-rule": [
+        "new",
+        "three chips write on, one per cue: \"read the trend\" (the settled dots), \"what else could explain it?\" (the founder boat), \"what can't it tell you?\" (the \"does not remove\" column).",
+        "Decision rule and handoff: So, with any large data set, read the trend, ask what else could explain it, and say what the data can't tell you.",
+        "So, with any large data set, read the trend, ask what else could explain it, and say what ",
+        "A \"Next\" chip slides in at the lower right: \"Next: group risk and one person\" (a dot array with a \"?\" on one dot). Hold half a second before the notes.",
+        "explain",
+        "three chips write on, one per cue: \"read the trend\" (the settled dots), \"what else could explain it?\" (the founder boat), \"what can't it tell you?\" (the \"does not remove\" column). A \"Next\" chip slides in at the lower right: \"Next: group risk and one person\" (a dot array with a \"?\" on one dot). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
+BIO_BG03_ROWS = {
+    "hook": [
+        "adjust",
+        "the risk board.",
+        "Hook (seventy-two in a hundred): A collaborative study from several countries followed nearly 10,000 women who carry a harmful version of a gene called BRCA1 or BRCA2.",
+        "BRCA1 or BRCA2 / about 72 in every 100 / will get breast cancer?",
+        "B13's m5x-sample-tube-rack-v1.png sits small at the left; five coded site badges with country chips (\"UK\", \"Netherlands\", \"France\", \"Australia\", \"North America\"; tag \"and other countries\"; tag \"BRCA cohort consortium\") send streams into one bar with a counter to \"nearly 10,000 carriers\". On \"BRCA1 or BRCA2\" a coded chromosome bar appears with one locus marked (tag \"BRCA1: a gene\").",
+        "explain",
+        "the risk board. B13's m5x-sample-tube-rack-v1.png sits small at the left; five coded site badges with country chips (\"UK\", \"Netherlands\", \"France\", \"Australia\", \"North America\"; tag \"and other countries\"; tag \"BRCA cohort consortium\") send streams into one bar with a counter to \"nearly 10,000 carriers\". On \"BRCA1 or BRCA2\" a coded chromosome bar appears with one locus marked (tag \"BRCA1: a gene\"). On \"about 72 in every 100\" a large coded DotArray of 100 dots draws, and 72 fill one by one in seeded random order (tag \"estimated, by age 80\"; source tag \"Kuchenbaecker et al. 2017\"). On \"will get breast cancer?\" one open dot and one filled dot each get a \"?\". The heading writes on: \"Risk is not destiny\". Hold two seconds.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold two seconds"
+    ],
+    "group-not-person": [
+        "new",
+        "on \"100 dots\" the array tidies into a 10 x 10 block; on \"About 72\" the filled dots count to 72 (computed) and on \"about 28\" the open dots count to 28.",
+        "A group proportion, not one person's future: Here's what that number really says.",
+        "100 dots / About 72 / about 28 / measured across thousands / another large group / which dots are which / a probability, not a forecast",
+        "On \"measured across thousands\" the array briefly shrinks into one tile of a huge mosaic of similar tiles (tag \"thousands of carriers\"; grey tag \"B13: big data sharpen the trend\"). On \"another large group\" a second 100-dot array draws beside it, filling to 71 (seeded; tag \"a new group: close to the same proportion\").",
+        "explain",
+        "on \"100 dots\" the array tidies into a 10 x 10 block; on \"About 72\" the filled dots count to 72 (computed) and on \"about 28\" the open dots count to 28. On \"measured across thousands\" the array briefly shrinks into one tile of a huge mosaic of similar tiles (tag \"thousands of carriers\"; grey tag \"B13: big data sharpen the trend\"). On \"another large group\" a second 100-dot array draws beside it, filling to 71 (seeded; tag \"a new group: close to the same proportion\"). The term \"risk pattern\" writes on with the gloss \"how likely, across a group\". On \"which dots are which\" every dot turns grey and a single dot is picked out with an amber ring and a \"?\" (tag \"this person: filled or open? unknown\"). On \"a probability, not a forecast\" the tag \"about 72% chance by 80\" writes beside the ringed dot. Hold one second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "why-not-decided": [
+        "adjust",
+        "WorkingCopy.",
+        "Why the gene doesn't decide on its own: So why can't the gene decide on its own?",
+        "repair damaged DNA / one faulty copy / a cell also loses that working copy / chance damage, other genes and other factors / raises the risk",
+        "On \"repair damaged DNA\" a short coded DNA strip with a nick is mended by a small repair-protein blob (tag \"BRCA1 protein: DNA repair\"). On \"one faulty copy\" a chromosome pair appears in B5b's plum and teal: the plum copy's BRCA1 locus is marked with a grey cross (tag \"faulty copy, inherited\"), the teal copy's locus glows (tag \"working copy\"); a grey tag under the pair: \"inherited like a dominant trait; in a cell, bot",
+        "explain",
+        "WorkingCopy. On \"repair damaged DNA\" a short coded DNA strip with a nick is mended by a small repair-protein blob (tag \"BRCA1 protein: DNA repair\"). On \"one faulty copy\" a chromosome pair appears in B5b's plum and teal: the plum copy's BRCA1 locus is marked with a grey cross (tag \"faulty copy, inherited\"), the teal copy's locus glows (tag \"working copy\"); a grey tag under the pair: \"inherited like a dominant trait; in a cell, both copies must fail\". On \"a cell also loses that working copy\" a row of 20 coded cells appears, each carrying the pair; one cell's teal locus flickers out by chance (seeded) and that cell darkens (tag \"both copies lost: this cell can become a cancer\"). On \"chance damage, other genes and other factors\" three small tags write on around the row: \"chance\", \"other genes\", \"other factors: hormones, age\" (grey tag \"B7: environment affects phenotype\"). On \"raises the risk\" a single chip writes on: \"variant: raises risk, doesn't fix the outcome\". Hold one second.",
+        [
+            "HandText write-on",
+            "Enter reveals"
+        ],
+        "Hold one second"
+    ],
+    "not-certain": [
+        "new",
+        "on \"isn't a certain outcome\" a chip \"carrier, so she will get cancer\" writes on and takes a grey scribble cross.",
+        "Probability isn't certainty: So a higher probability isn't a certain outcome.",
+        "isn't a certain outcome / Most women who get breast cancer / testing negative for a BRCA variant / not genetic destiny",
+        "On \"Most women who get breast cancer\" a second coded DotArray of 100 dots draws, labelled \"women with breast cancer\", with about 2 dots amber-edged (tag \"BRCA carriers: about 2 in 100\"; grey source tag \"population studies\"). On \"testing negative for a BRCA variant\" the chip \"no variant, so no cancer\" writes on and takes a grey scribble cross.",
+        "explain",
+        "on \"isn't a certain outcome\" a chip \"carrier, so she will get cancer\" writes on and takes a grey scribble cross. On \"Most women who get breast cancer\" a second coded DotArray of 100 dots draws, labelled \"women with breast cancer\", with about 2 dots amber-edged (tag \"BRCA carriers: about 2 in 100\"; grey source tag \"population studies\"). On \"testing negative for a BRCA variant\" the chip \"no variant, so no cancer\" writes on and takes a grey scribble cross. On \"not genetic destiny\" the line writes on in hand type: \"genetic risk is not genetic destiny\". Hold one second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "carrier-estimate": [
+        "new",
+        "the calculation board.",
+        "A population prediction that works: Population predictions can be very accurate, though.",
+        "can't be counted by looking / one baby in 2,500 / times itself is one in 2,500 / Take the square root / the normal allele's is 0.98 / two ways to get that / two times 0.98 times 0.02",
+        "The painted blood-spot card (m5x-newborn-blood-spot-card-v1.png, new) sits small at the upper left (tag \"newborn screening\"). The task writes on at the top: \"How common are carriers?\" On \"can't be counted by looking\" three coded genotype chips appear, \"two normal\", \"carrier\", \"two CF alleles\", the first two drawn identically healthy (tag \"carriers look the same\").",
+        "explain",
+        "the calculation board. The painted blood-spot card (m5x-newborn-blood-spot-card-v1.png, new) sits small at the upper left (tag \"newborn screening\"). The task writes on at the top: \"How common are carriers?\" On \"can't be counted by looking\" three coded genotype chips appear, \"two normal\", \"carrier\", \"two CF alleles\", the first two drawn identically healthy (tag \"carriers look the same\"). On \"one baby in 2,500\" the givens group writes on: \"affected babies: 1 in 2,500 (two copies)\" and \"CF: recessive\". Then one stage at a time in the stage column, each on its cue, earlier results retained small at the left: (1) on \"times itself is one in 2,500\": \"q squared = 1/2,500 = 0.0004\" with the glosses \"q = CF allele frequency\" and \"from mother AND from father: q x q\" (grey tag \"B11: counting alleles\"); (2) on \"Take the square root\": \"q = 0.02\"; (3) on \"the normal allele's is 0.98\": \"p = 1 minus q = 0.98\"; (4) on \"two ways to get that\" two small arrows show \"CF from mother, normal from father\" and \"normal from mother, CF from father\"; (5) on \"two times 0.98 times 0.02\": \"carriers = 2pq = 2 x 0.98 x 0.02 = 0.039\" and on \"about one person in 25\" \"about 1 in 25\" (all computed). On \"Hardy-Weinberg principle\" the name writes on above the stage column, with the gloss \"allele frequencies predict genotype frequencies, if nothing disturbs them\". On \"rare disease, common carriers\" a PopBar draws: a hair-thin \"affected\" slice, a visible \"carriers\" slice and a long \"neither\" bar (computed widths; tag \"rare disease, common carriers\"). Grey tag at the lower right: \"example figures, similar to cystic fibrosis in some populations\". Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold one second"
+    ],
+    "when-predictions-hold": [
+        "new",
+        "the stage column dims; a checklist writes on, one line per cue: \"large population\", \"random mating\", \"no selection\", \"no migration\", \"no new mutations\" (tag \"Hardy-Weinberg conditions\").",
+        "When population predictions hold: But that estimate only holds if the population is large, mates at random, and isn't changed by selection, migration or new mutations.",
+        "that's useful too / DNA tests give the allele's frequency / more babies are affected than it predicts / a large population over a short time / In a small population",
+        "On \"that's useful too\" the tag \"a gap between prediction and data means something is acting\" writes on. On \"DNA tests give the allele's frequency\" a small coded DNA-test chip writes \"q from DNA tests\" and a bar \"predicted affected (from DNA tests: q x q)\" draws; on \"more babies are affected than it predicts\" an \"observed affected\" bar grows past it, the gap ringed amber (illustrative), and a small two-symbol marriage",
+        "explain",
+        "the stage column dims; a checklist writes on, one line per cue: \"large population\", \"random mating\", \"no selection\", \"no migration\", \"no new mutations\" (tag \"Hardy-Weinberg conditions\"). On \"that's useful too\" the tag \"a gap between prediction and data means something is acting\" writes on. On \"DNA tests give the allele's frequency\" a small coded DNA-test chip writes \"q from DNA tests\" and a bar \"predicted affected (from DNA tests: q x q)\" draws; on \"more babies are affected than it predicts\" an \"observed affected\" bar grows past it, the gap ringed amber (illustrative), and a small two-symbol marriage line with a double bar (pedigree convention for related parents) appears (tag \"relatives having children: not random mating\"). On \"a large population over a short time\" DriftTraces draws: five allele-frequency traces for a population of 10,000 stay close to their start of 0.1 across 50 generations (seeded; tag \"large: stays close\"). On \"In a small population\" five traces for a population of 20, also starting at 0.1, wander up and down in steps of 1/40, some hitting zero (seeded; tag \"illustrative starting frequency\"; tag \"small: chance pushes it either way\"; grey tag \"genetic drift: Module 6\"). Hold one second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold one second"
+    ],
+    "shared-with-relatives": [
+        "new",
+        "the family board.",
+        "Risk is shared with relatives: Genetic risk is also shared within families.",
+        "each of her children / brothers and sisters / one of her parents / never only about one person / Iceland's Supreme Court",
+        "B9's Pedigree builds: I-1 open square, I-2 circle with a small amber dot (tag \"carrier\"); II-1 the woman (circle with amber dot, amber ring), II-2 brother, II-3 sister; III-1 and III-2 her children. On \"each of her children\" tags \"1 in 2\" pin under III-1 and III-2 (grey tag \"B9: one in two per child\").",
+        "explain",
+        "the family board. B9's Pedigree builds: I-1 open square, I-2 circle with a small amber dot (tag \"carrier\"); II-1 the woman (circle with amber dot, amber ring), II-2 brother, II-3 sister; III-1 and III-2 her children. On \"each of her children\" tags \"1 in 2\" pin under III-1 and III-2 (grey tag \"B9: one in two per child\"). On \"brothers and sisters\" tags \"1 in 2\" pin under II-2 and II-3; on \"one of her parents\" I-2's amber dot pulses (tag \"a parent almost certainly carries it\"; grey tag \"unless it arose new in her\"). On \"never only about one person\" a thin amber outline spreads from II-1 across the whole pedigree. On \"Iceland's Supreme Court\" a coded Iceland outline chip and a document card \"2003: Supreme Court of Iceland\" slide in (no people, no names); a small two-symbol pedigree (father square, daughter circle) draws on the card with an arrow from father to daughter and the tag \"data about him reveal information about her\". Hold one second.",
+        [
+            "Enter slide",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "strong-wording": [
+        "new",
+        "the WordingCard writes on in two columns, one phrase per cue.",
+        "Strong and weak wording: So in an exam, match your claim to your evidence.",
+        "don't write that carriers will get the disease / more likely / precise and cautious",
+        "Left \"strong\": \"suggests a trend\", \"indicates increased risk\", \"more likely in this population\". Right \"weak\": \"proves every individual will\", \"guarantees\", \"removes all uncertainty\", each struck through in grey as it lands.",
+        "explain",
+        "the WordingCard writes on in two columns, one phrase per cue. Left \"strong\": \"suggests a trend\", \"indicates increased risk\", \"more likely in this population\". Right \"weak\": \"proves every individual will\", \"guarantees\", \"removes all uncertainty\", each struck through in grey as it lands. On \"don't write that carriers will get the disease\" the sentence \"Carriers will get the disease.\" writes on and takes a grey scribble cross; on \"more likely\" the replacement \"Carriers are more likely to get it.\" writes on beneath with a tick. On \"precise and cautious\" both column headers pulse. Hold one second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "three handwritten lines write on with small icons: \"population evidence, population conclusions\" (the 100-dot array), \"genetic risk is not genetic destiny\" (the single ringed dot), \"rare disease, common carriers\" (the PopBar).",
+        "Memory: Three lines to remember.",
+        "Three lines to remember.",
+        "Hold half a second.",
+        "explain",
+        "three handwritten lines write on with small icons: \"population evidence, population conclusions\" (the 100-dot array), \"genetic risk is not genetic destiny\" (the single ringed dot), \"rare disease, common carriers\" (the PopBar). Hold half a second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no arrays, pedigrees or wording card.",
+        "Unseen transfer: attempt one (an overclaim), with every demand and condition on screen and nothing answer-bearing",
+        "Two harder questions.",
+        "The card for \"attempt one (an overclaim)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears: no arrays, pedigrees or wording card. The card writes on, headed \"Example study: a heart disease variant\". Stimulus: \"50,000 adults followed. Carriers develop heart disease twice as often as non-carriers.\" Below it, a report chip: \"Report on one carrier: 'This person will get heart disease.'\" Demands: \"(a) What does the study support?\" \"(b) Rewrite the claim to match the evidence.\" Two answer boxes. Nothing answer-bearing. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback-one": [
+        "adjust",
+        "the card shrinks to a strip at the top.",
+        "Feedback, item one: The study supports a group trend: carriers, as a group, have about twice the risk.",
+        "a group trend / can't say what happens to one person / A better claim / fifty per cent chance",
+        "(1) On \"a group trend\" two small dot arrays draw, \"non-carriers\" and \"carriers\", with the carriers' filled count twice the other's (illustrative, for example 5 and 10 in 100; grey tag \"example numbers\"). The line \"(a) a group trend: carriers have about twice the risk\" writes on.",
+        "explain",
+        "the card shrinks to a strip at the top. (1) On \"a group trend\" two small dot arrays draw, \"non-carriers\" and \"carriers\", with the carriers' filled count twice the other's (illustrative, for example 5 and 10 in 100; grey tag \"example numbers\"). The line \"(a) a group trend: carriers have about twice the risk\" writes on. (2) On \"can't say what happens to one person\" one carrier dot rings with a \"?\". (3) On \"A better claim\" the line \"(b) 'This person has a higher risk of heart disease than a non-carrier.'\" writes on. (4) On \"fifty per cent chance\" the chip \"twice the risk = 50% chance\" writes on and takes a grey scribble cross, with the tag \"5 in 100 doubled is 10 in 100\". Settle on the model answer for about a second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer: attempt two (a carrier estimate), with every demand and condition on screen and nothing answer-bearing",
+        "Second.",
+        "The card for \"attempt two (a carrier estimate)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears. Task line: \"Estimate the carrier frequency.\" Givens group: \"affected babies: 1 in 10,000 (two copies)\", \"recessive\", \"assume Hardy-Weinberg\". Demands: \"(a) Estimate the carrier frequency.\" \"(b) Why is it less reliable in a small, isolated village?\" Two answer boxes. No equation lines shown (nothing answer-bearing). The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback-two": [
+        "adjust",
+        "the card shrinks to a strip.",
+        "Feedback, item two: The allele's frequency, squared, is one in 10,000, so the allele's frequency is 0.01, and the normal allele's is 0.99.",
+        "small village / one in 10,000",
+        "(1) One stage at a time on its cue (computed): \"q squared = 1/10,000 = 0.0001\", \"q = 0.01\", \"p = 0.99\", \"carriers = 2pq = 2 x 0.99 x 0.01 = 0.0198, about 1 in 50\". (2) On \"small village\" the line \"(b) small population: chance shifts frequencies; relatives marrying: not random mating\" writes on.",
+        "explain",
+        "the card shrinks to a strip. (1) One stage at a time on its cue (computed): \"q squared = 1/10,000 = 0.0001\", \"q = 0.01\", \"p = 0.99\", \"carriers = 2pq = 2 x 0.99 x 0.01 = 0.0198, about 1 in 50\". (2) On \"small village\" the line \"(b) small population: chance shifts frequencies; relatives marrying: not random mating\" writes on. (3) On \"one in 10,000\" the chip \"carriers = 1 in 10,000\" writes on and takes a grey scribble cross, with the tag \"that's q squared: affected\". Settle on the model answer for about a second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "decision-rule": [
+        "new",
+        "three chips write on, one per cue, under a header \"predicts well\": \"risk across a group\" (dot array), \"carrier frequencies\" (the PopBar), \"how alleles are spread\" (a small banded map chip from B13).",
+        "Decision rule and handoff: So, population genetics predicts group patterns well: risk across a group, carrier frequencies, how alleles are spread, and how related populations are.",
+        "Module 5",
+        "A fourth chip, \"how related populations are\" (a small similarity tree from B13), then a fifth chip with a grey border: \"can't fix one person's future\" (the ringed dot). On \"Module 5\" a thin chain draws along the bottom: \"reproduction, cell division, gene expression, inheritance, populations\" (grey, small).",
+        "explain",
+        "three chips write on, one per cue, under a header \"predicts well\": \"risk across a group\" (dot array), \"carrier frequencies\" (the PopBar), \"how alleles are spread\" (a small banded map chip from B13). A fourth chip, \"how related populations are\" (a small similarity tree from B13), then a fifth chip with a grey border: \"can't fix one person's future\" (the ringed dot). On \"Module 5\" a thin chain draws along the bottom: \"reproduction, cell division, gene expression, inheritance, populations\" (grey, small). A \"Next\" chip slides in at the lower right: \"Next: Module 6, genetic change\". Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
+BIO_G01B_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Trace it\" writes on.",
+        "Hook: Exam questions on DNA and meiosis rarely ask you to recite the steps.",
+        "which strand / which end / what you're counting",
+        "Four small stimulus thumbnails fan out on the right on \"something new\": a strand of tiles with \"3'\" on the left (on \"written from its 3' end\"), a pair of tiles with one red-ringed mismatch (on \"a copying error\"), the koala plate in a cell outline (on \"a cell you've never seen\"), a chromosome pair with a crossover mark. On the three checks, the trace checklist builds on the left, one row per spoken phrase: \"which stra",
+        "explain",
+        "heading \"Trace it\" writes on. Four small stimulus thumbnails fan out on the right on \"something new\": a strand of tiles with \"3'\" on the left (on \"written from its 3' end\"), a pair of tiles with one red-ringed mismatch (on \"a copying error\"), the koala plate in a cell outline (on \"a cell you've never seen\"), a chromosome pair with a crossover mark. On the three checks, the trace checklist builds on the left, one row per spoken phrase: \"which strand?\" (two strand icons), \"which end?\" (a \"5'\" tag), \"what am I counting?\" (a centromere dot beside a chromatid pair). On \"four HSC-style questions\" the thumbnails become four question cards, each with the tag \"HSC-style question, written for HSCScience\". Hold about 1 second; the checklist shrinks to a strip at the far left.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second; the checklist shrinks to a strip at the far left"
+    ],
+    "q1-question": [
+        "new",
+        "fresh board.",
+        "Unseen transfer: q1-question (question 1: a copying error), with every demand and condition on screen and nothing answer-bearing",
+        "G / not repaired / how many",
+        "The card for \"q1-question (question 1: a copying error)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "fresh board. Type badge \"Replication\". b6a-bacterium-v1.png small at top left, tagged \"a bacterium\". Task line: \"How many of the four molecules have a changed pair? Which pair?\" Stimulus: a short B4 ladder of five base pairs (original strands blue) with the middle pair \"T = A\" ringed amber on \"T paired with an A\". Givens card, one line per cue: \"round 1: G added opposite the T (an error)\", \"the error is not repaired\", \"round 2: both molecules copied again, no more errors\". Under the card, an empty row of four molecule outlines labelled \"after round 2\". Nothing answer-bearing: no new strands, no mismatch drawn. Countdown ring 10 seconds with \"Pause here to answer.\" on screen; the checklist strip dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q1-first-copy": [
+        "new",
+        "the ladder unzips (B4 motion).",
+        "Q1-first-copy (round one): Start with the first copy.",
+        "each one is a template / normal / mismatch",
+        "On \"each one is a template\" both blue strands glow and the tag \"each strand: a template\" writes on (grey tag \"B4\"). Left daughter: green tiles dock opposite the A strand; at the ringed spot a green T snaps to the A with a tick; tag \"normal\".",
+        "explain",
+        "the ladder unzips (B4 motion). On \"each one is a template\" both blue strands glow and the tag \"each strand: a template\" writes on (grey tag \"B4\"). Left daughter: green tiles dock opposite the A strand; at the ringed spot a green T snaps to the A with a tick; tag \"normal\". Right daughter: green tiles dock opposite the T strand; at the ringed spot a green G slides in and sits crooked against the T, with a red outline; on \"mismatch\" the tag \"T and G: a mismatch\" writes on. Checklist: \"which strand?\" ticks.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "scribbleEllipse"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q1-second-copy": [
+        "new",
+        "both daughters unzip together.",
+        "Q1-second-copy (round two): Now copy again.",
+        "two normal / C / one",
+        "Left: two normal molecules drop into the first two outlines with ticks. Right: the blue T strand picks up a new green A (tick, \"normal\"); the green G strand picks up a new C, and the pair \"G = C\" locks in with an amber ring.",
+        "explain",
+        "both daughters unzip together. Left: two normal molecules drop into the first two outlines with ticks. Right: the blue T strand picks up a new green A (tick, \"normal\"); the green G strand picks up a new C, and the pair \"G = C\" locks in with an amber ring. On \"one\" the four outlines fill: \"normal\", \"normal\", \"normal\", \"G-C: changed\", and the answer line writes on: \"1 of 4 molecules: G-C in place of T-A\". A thin family-tree line links each final molecule back to the strand it was copied from.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q1-mistake": [
+        "new",
+        "a ghost row \"normal, normal, changed, changed\" appears beside the answer; on \"two\" it takes a red scribble cross with the caption \"the mismatch does not copy into both\".",
+        "Q1-mistake (the classic mistake): The classic mistake is saying two, as if the mismatch copies itself into both daughters.",
+        "two / the mismatch does not copy into both / the T strand still holds the right base",
+        "On \"the T strand still holds the right base\" the T strand's tile pulses blue with the tag \"original base kept\". Hold about 1.5 seconds.",
+        "explain",
+        "a ghost row \"normal, normal, changed, changed\" appears beside the answer; on \"two\" it takes a red scribble cross with the caption \"the mismatch does not copy into both\". On \"the T strand still holds the right base\" the T strand's tile pulses blue with the tag \"original base kept\". Hold about 1.5 seconds.",
+        [
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "new",
+        "board clears.",
+        "Unseen transfer: q2-question (question 2: a strand written backwards), with every demand and condition on screen and nothing answer-bearing",
+        "coding strand / 3' end / how many",
+        "The card for \"q2-question (question 2: a strand written backwards)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "board clears. Type badge \"Transcription and translation\". The painted firefly plate (new, m5x-firefly-glow-v1.png) small at the top left, its lantern glowing, tagged \"firefly\". Task line: \"Write the mRNA (with ends). Give the amino acid chain and how many.\" Stimulus: one strand of 15 B4 tiles in plum, no codon gaps: \"3' C G G A A T A A A G G T G T A 5'\", labelled \"coding strand\"; on \"coding strand\" the label rings amber; on \"3' end\" the left \"3'\" tag rings. Grey chip: \"illustrative sequence, not the real gene\". The full B6c CodonChart sits at the right, unlit (cells from codonToAA; no pointer). Empty mRNA slot row under the strand with two blank end boxes. Nothing answer-bearing. Countdown 10 seconds; checklist dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q2-direction": [
+        "adjust",
+        "on \"Which strand?\" the checklist row lights and a chip \"coding strand: copy it, T becomes U\" writes on (recalls B6b's trap line, grey tag \"B6b\").",
+        "Q2-direction (which strand, which end): Two checks first.",
+        "Which strand? / Which end? / right / A U G",
+        "On \"Which end?\" the \"5'\" tag on the right pulses amber; on \"right\" an amber process arrow draws under the strand pointing right to left, labelled \"read from 5'\". The tiles then slide and re-order right to left into a terracotta mRNA row beneath the strand (letters stay upright; the \"5'\" tag stays attached to the A end), copied base for base with T turned to amber U, one codon per spoken group; the chip \"same letters,",
+        "explain",
+        "on \"Which strand?\" the checklist row lights and a chip \"coding strand: copy it, T becomes U\" writes on (recalls B6b's trap line, grey tag \"B6b\"). On \"Which end?\" the \"5'\" tag on the right pulses amber; on \"right\" an amber process arrow draws under the strand pointing right to left, labelled \"read from 5'\". The tiles then slide and re-order right to left into a terracotta mRNA row beneath the strand (letters stay upright; the \"5'\" tag stays attached to the A end), copied base for base with T turned to amber U, one codon per spoken group; the chip \"same letters, same direction as the coding strand (B6b)\" writes beside it: \"5' AUG UGG AAA UAA GGC 3'\". Codon gaps appear as each group lands. Checklist: \"which end?\" ticks.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q2-chain": [
+        "new",
+        "the CodonChart pointer runs each lookup (first base row, second base column, third base line) as each codon is spoken; a labelled bead pops out and joins the AminoChain: \"Met\" (with the chart's amber start flag), \"Trp\", \"Lys\".",
+        "Q2-chain (the chart, and the stop codon): Now the chart.",
+        "methionine / stop codon / three",
+        "On \"stop codon\" the UAA cell lights grey and a grey bracket \"stop: adds nothing\" closes the chain; the GGC codon greys out with the tag \"after the stop: not read\". On \"three\" the answer line writes on: \"mRNA 5' AUG UGG AAA UAA GGC 3'; chain Met-Trp-Lys: 3 amino acids\".",
+        "explain",
+        "the CodonChart pointer runs each lookup (first base row, second base column, third base line) as each codon is spoken; a labelled bead pops out and joins the AminoChain: \"Met\" (with the chart's amber start flag), \"Trp\", \"Lys\". On \"stop codon\" the UAA cell lights grey and a grey bracket \"stop: adds nothing\" closes the chain; the GGC codon greys out with the tag \"after the stop: not read\". On \"three\" the answer line writes on: \"mRNA 5' AUG UGG AAA UAA GGC 3'; chain Met-Trp-Lys: 3 amino acids\". All amino acids on screen are computed by translate, never typed.",
+        [
+            "HandText write-on"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q2-mistake": [
+        "new",
+        "a ghost mRNA \"C G G A A U A A A G G U G U A\" writes left to right under the original strand with the ghost chain \"Arg, Asn, Lys, Gly, Val\" (computed); on \"left\" it takes a red scribble cross with the caption \"read from the 3' end: wrong\".",
+        "Q2-mistake (the classic mistake): The classic mistake is reading from the left, because that's how we read English.",
+        "left / read from the 3' end: wrong",
+        "A second crossed chip, unspoken, lands only after the spoken cross has settled: \"paired it like a template: Ala, Leu, Phe, Pro, His\" with the tag \"it's the coding strand: copy, don't pair\". Hold about 1.5 seconds.",
+        "explain",
+        "a ghost mRNA \"C G G A A U A A A G G U G U A\" writes left to right under the original strand with the ghost chain \"Arg, Asn, Lys, Gly, Val\" (computed); on \"left\" it takes a red scribble cross with the caption \"read from the 3' end: wrong\". A second crossed chip, unspoken, lands only after the spoken cross has settled: \"paired it like a template: Ala, Leu, Phe, Pro, His\" with the tag \"it's the coding strand: copy, don't pair\". Hold about 1.5 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "new",
+        "board clears.",
+        "Unseen transfer: q3-question (question 3: counting through meiosis), with every demand and condition on screen and nothing answer-bearing",
+        "16 chromosomes / 7.0 picograms / prophase one / each cell after meiosis one / each sperm cell",
+        "The card for \"q3-question (question 3: counting through meiosis)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "board clears. Type badge \"Meiosis: counts\". The painted koala plate (new, m5x-koala-v1.png) small at the top left, tagged \"koala\". Task line: \"Chromosomes and DNA mass at three stages.\" Givens card: \"body cells: 16 chromosomes\", \"before copying: 16 chromosomes, 7.0 pg DNA\", grey gloss \"pg = picogram, a millionth of a millionth of a gram\", \"assume no mistakes in division\". On screen, a coded empty count table with three rows (\"prophase I\", \"each cell after meiosis I\", \"each sperm cell\") and two columns (\"chromosomes\", \"DNA (pg)\"). Beside it b5x-cell-dividing-nospindle-v1.png, empty. Nothing answer-bearing. Countdown 10 seconds; checklist dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q3-s-phase": [
+        "new",
+        "two rule chips write on, each with an icon: \"chromosomes: count centromeres\" (a single dot) and \"DNA: count chromatids\" (two arms).",
+        "Q3-s-phase (two rules, then the copy): Use two rules.",
+        "chromosomes / DNA / one centromere / 14 picograms",
+        "The cell shows 16 single chromosome plates (8 pink, 8 teal, small). On \"one centromere\" each plate is replaced by its duplicated plate (b5x-chromosome-duplicated-pink-v1.png, -teal-) and a centromere dot rings on one.",
+        "explain",
+        "two rule chips write on, each with an icon: \"chromosomes: count centromeres\" (a single dot) and \"DNA: count chromatids\" (two arms). The cell shows 16 single chromosome plates (8 pink, 8 teal, small). On \"one centromere\" each plate is replaced by its duplicated plate (b5x-chromosome-duplicated-pink-v1.png, -teal-) and a centromere dot rings on one. On \"14 picograms\" the first table row fills \"16\" and \"about 14.0\" with a pen \"x 2\" beside the DNA cell. Checklist: \"what am I counting?\" ticks.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q3-divisions": [
+        "new",
+        "the duplicated plates pair up across the middle (B5b metaphase I look, no stage drawing beyond the plates); on \"homologous pairs\" the partners slide to two daughter outlines (8 X-shaped plates each); row 2 fills \"8\" and \"about 7.0\" with a tag \"each still two chromatids\".",
+        "Q3-divisions (meiosis one, then meiosis two): Meiosis one separates the homologous pairs, so each cell gets 8 chromosomes.",
+        "homologous pairs / 7.0 picograms / sister chromatids / 3.5 picograms",
+        "On \"sister chromatids\" each daughter splits again into two, four cell outlines, each with 8 single plates; row 3 fills \"8\" and \"about 3.5\" (grey tag: \"about: X- and Y-carrying cells differ slightly\"). The bank line writes small under the table: \"Meiosis I splits the pairs.",
+        "explain",
+        "the duplicated plates pair up across the middle (B5b metaphase I look, no stage drawing beyond the plates); on \"homologous pairs\" the partners slide to two daughter outlines (8 X-shaped plates each); row 2 fills \"8\" and \"about 7.0\" with a tag \"each still two chromatids\". On \"sister chromatids\" each daughter splits again into two, four cell outlines, each with 8 single plates; row 3 fills \"8\" and \"about 3.5\" (grey tag: \"about: X- and Y-carrying cells differ slightly\"). The bank line writes small under the table: \"Meiosis I splits the pairs. Meiosis II splits the copies.\" A thin check row, unspoken: \"4 sperm x 3.5 = 14.0 pg: all the copied DNA accounted for\".",
+        [
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q3-mistake": [
+        "new",
+        "a ghost value \"3.5\" sits in row 2's DNA cell; on \"3.5 picograms\" it takes a red scribble cross with the caption \"still two chromatids each\".",
+        "Q3-mistake (the classic mistake): The classic mistake is 3.5 picograms after meiosis one.",
+        "3.5 picograms / still two chromatids each",
+        "A second crossed chip, unspoken, lands only after the spoken cross has settled: \"prophase I: 32 chromosomes (counted chromatids)\". Memory chip: \"Centromeres count the chromosomes; chromatids count the DNA.\" Hold about 1.5 seconds.",
+        "explain",
+        "a ghost value \"3.5\" sits in row 2's DNA cell; on \"3.5 picograms\" it takes a red scribble cross with the caption \"still two chromatids each\". A second crossed chip, unspoken, lands only after the spoken cross has settled: \"prophase I: 32 chromosomes (counted chromatids)\". Memory chip: \"Centromeres count the chromosomes; chromatids count the DNA.\" Hold about 1.5 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1"
+    ],
+    "q4-question": [
+        "new",
+        "board clears.",
+        "Unseen transfer: q4-question (question 4: one crossover, four cells), with every demand and condition on screen and nothing answer-bearing",
+        "same chromosome / single crossover / four pollen cells / less common than half",
+        "The card for \"q4-question (question 4: one crossover, four cells)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "board clears. Type badge \"Meiosis: alleles\". The painted sweet pea plates (new, m5x-sweetpea-purple-v1.png and m5x-sweetpea-red-v1.png) small at the top left, tagged \"purple flower\" and \"red flower\". Task line: \"(a) Alleles in each of the four pollen cells. (b) Using the givens, why are new combinations much less than half?\" Stimulus: one homologous pair as single chromosome plates (pink and teal) with allele beads: pink \"P\" (purple) above \"L\" (long), teal \"p\" (red) above \"l\" (round); a key strip \"P purple, p red; L long, l round\". Givens: \"genes on the same chromosome\", \"this cell: one crossover between the two genes\", \"most other anther cells: no crossover between these two genes\". Four empty pollen-cell outlines. Nothing answer-bearing: no chromatids drawn, no swap mark. Countdown 10 seconds; checklist dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q4-chromatids": [
+        "new",
+        "each single plate becomes its duplicated plate; the four chromatids are drawn as a coded chromatid strip (four parallel rods, two pink, two teal, each carrying its bead pair).",
+        "Q4-chromatids (copy, then cross over): Start with the chromatids.",
+        "chromatids / two / purple round / red long",
+        "On \"two\" an inner pink and an inner teal rod light; a swap mark draws between the two gene levels and the lower segments trade places (pink rod now ends teal with \"l\"; teal rod now ends pink with \"L\"). The outer two rods stay unchanged with a grey tag \"not touched\".",
+        "explain",
+        "each single plate becomes its duplicated plate; the four chromatids are drawn as a coded chromatid strip (four parallel rods, two pink, two teal, each carrying its bead pair). On \"two\" an inner pink and an inner teal rod light; a swap mark draws between the two gene levels and the lower segments trade places (pink rod now ends teal with \"l\"; teal rod now ends pink with \"L\"). The outer two rods stay unchanged with a grey tag \"not touched\". Bead labels update on their spoken words. Checklist: \"what am I counting?\" ticks (chromatids).",
+        [
+            "DrawPath"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q4-four-cells": [
+        "new",
+        "the pink pair and the teal pair move apart (meiosis I) into two outlines, then each splits (meiosis II) into the four pollen-cell outlines, each carrying one rod; labels write on in the cells: \"P L\", \"P l\", \"p L\", \"p l\".",
+        "Q4-four-cells (two divisions, four cells): Meiosis one sends the two partners to different cells, and meiosis two splits each pair of sister chromatids.",
+        "one chromatid / Two / new",
+        "On \"Two\" the parental pair gets a plain tag \"original\"; on \"new\" the recombinant pair gets amber rings and the tag \"new combination\". Answer line (a): \"PL, Pl, pL, pl: 2 original, 2 new\".",
+        "explain",
+        "the pink pair and the teal pair move apart (meiosis I) into two outlines, then each splits (meiosis II) into the four pollen-cell outlines, each carrying one rod; labels write on in the cells: \"P L\", \"P l\", \"p L\", \"p l\". On \"Two\" the parental pair gets a plain tag \"original\"; on \"new\" the recombinant pair gets amber rings and the tag \"new combination\". Answer line (a): \"PL, Pl, pL, pl: 2 original, 2 new\".",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q4-limit": [
+        "new",
+        "the four cells shrink to the left as \"this cell: 2 of 4 new\".",
+        "Q4-limit (why less than half, and the classic mistake): So why are new combinations much less than half?",
+        "only two / between these two genes / two chromatids",
+        "On \"between these two genes\" the card's given \"most other anther cells: no crossover between these two genes\" rings amber, and a second small cell writes on beside it with the crossover mark drawn outside the gene interval (grey tag \"crossover elsewhere\"), giving four \"original\" cells; a third cell with no crossover gives four \"original\" cells. A row of small pollen dots fills below, mostly plain with a few amber (il",
+        "explain",
+        "the four cells shrink to the left as \"this cell: 2 of 4 new\". On \"between these two genes\" the card's given \"most other anther cells: no crossover between these two genes\" rings amber, and a second small cell writes on beside it with the crossover mark drawn outside the gene interval (grey tag \"crossover elsewhere\"), giving four \"original\" cells; a third cell with no crossover gives four \"original\" cells. A row of small pollen dots fills below, mostly plain with a few amber (illustrative, no number), with the line (b): \"a cell with one crossover between the genes gives half new; most cells have none there, so far fewer than half overall\". On \"all four pollen cells are new\" a crossed chip \"all four cells new\" takes a red scribble cross with the caption \"only two chromatids swap\". Grey tag (author-approved model limit): \"real cells can have no crossover, or more than one, along a chromosome\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "new",
+        "the checklist returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question number badge: \"a sequence → which strand?",
+        "Decision-board: So here's how to start any trace.",
+        "sequence / copying error / count / crossover / Next",
+        "then find 5' (Q2)\"; \"a copying error → each strand is its own template (Q1)\"; \"a count → centromeres = chromosomes, chromatids = DNA (Q3)\"; \"a crossover → two chromatids change, not four (Q4)\". On \"Next\" a chip \"Next: from a chain to a trait\" with a small folded-blob doodle slides in at the lower right.",
+        "explain",
+        "the checklist returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question number badge: \"a sequence → which strand? then find 5' (Q2)\"; \"a copying error → each strand is its own template (Q1)\"; \"a count → centromeres = chromosomes, chromatids = DNA (Q3)\"; \"a crossover → two chromatids change, not four (Q4)\". On \"Next\" a chip \"Next: from a chain to a trait\" with a small folded-blob doodle slides in at the lower right. Hold about 2 seconds.",
+        [
+            "Enter slide"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
+BIO_G02B_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Choose the model, then the chance\" writes on.",
+        "Hook: Inheritance questions in the HSC rarely use peas.",
+        "choose the model / sure of / combine the chances",
+        "Four thumbnails fan out on the right: the blue chicken plate (on \"an animal you haven't met\"), the tortoiseshell cat plate, a small pedigree with a \"?\" (on \"a family\"), a pedigree with a question mark over its legend (on \"can't tell you\"). On the three moves, the first-moves strip builds on the left, one row per cue: \"1 choose the model\", \"2 genotypes you're sure of\", \"3 combine the chances\".",
+        "explain",
+        "heading \"Choose the model, then the chance\" writes on. Four thumbnails fan out on the right: the blue chicken plate (on \"an animal you haven't met\"), the tortoiseshell cat plate, a small pedigree with a \"?\" (on \"a family\"), a pedigree with a question mark over its legend (on \"can't tell you\"). On the three moves, the first-moves strip builds on the left, one row per cue: \"1 choose the model\", \"2 genotypes you're sure of\", \"3 combine the chances\". On \"four HSC-style questions\" the thumbnails become four question cards with the tag \"HSC-style question, written for HSCScience\". Hold about 1 second; the strip shrinks to the far left.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second; the strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "new",
+        "fresh board.",
+        "Unseen transfer: q1-question (question 1: Andalusian chickens), with every demand and condition on screen and nothing answer-bearing",
+        "all blue / ratio / first two chicks / only blue",
+        "The card for \"q1-question (question 1: Andalusian chickens)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "fresh board. Type badge hidden during the attempt (it names the model) and shown from 2b. Stimulus: the painted plates m5x-chicken-black-v1.png and m5x-chicken-splash-v1.png joined by \"x\", an arrow down to three small m5x-chicken-blue-v1.png copies tagged \"all blue\" on \"all blue\". Below, \"blue x blue\" with a \"?\" row. Givens card: \"black x splashed white gives all blue\", \"farmer: blue x blue\". Demands: \"(a) Why are some chicks black and some white? Give the ratio.\" \"(b) Probability that the first two chicks are both blue?\" \"(c) Which cross gives only blue chicks?\" Three answer boxes and an empty 2 x 2 grid outline (no letters). Nothing answer-bearing. Countdown 10 seconds; strip dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q1-model": [
+        "adjust",
+        "type badge \"Incomplete dominance\" writes on.",
+        "Q1-model (choose the model, fill the square): First, choose the model.",
+        "choose the model / incomplete dominance / 1 black, 2 blue, 1 white",
+        "On \"a third colour, in between\" the three plates line up black, blue, splashed white with the bank line \"Incomplete is in-between\" (grey tag \"B10\"). Allele chips \"C^B\" and \"C^W\" (on screen only) pin under the plates: \"C^B C^B\", \"C^B C^W\", \"C^W C^W\".",
+        "explain",
+        "type badge \"Incomplete dominance\" writes on. On \"a third colour, in between\" the three plates line up black, blue, splashed white with the bank line \"Incomplete is in-between\" (grey tag \"B10\"). Allele chips \"C^B\" and \"C^W\" (on screen only) pin under the plates: \"C^B C^B\", \"C^B C^W\", \"C^W C^W\". On \"Two blue parents\" GameteDiscs \"C^B\" and \"C^W\" slide along the top and down the side; the Punnett fills box by box (computed by cross with a a lesson-local in-between (incomplete dominance) phenotype map, inBetween('black', 'blue', 'splashed white'), written like B10's CO but named so no code path or label can show \"co-dominance\" on this question), each box gaining a tiny chicken plate. On \"1 black, 2 blue, 1 white\" the ratio strip writes \"1 black : 2 blue : 1 splashed white\" (computed). Answer line (a): \"blue = heterozygous; alleles separate: 1 : 2 : 1\". Strip: \"1 choose the model\" ticks.",
+        [
+            "HandText write-on",
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q1-chance": [
+        "new",
+        "the two blue boxes ring amber with \"2/4 = 1/2\" (computed).",
+        "Q1-chance (two chicks, then only blue): Each chick has a one in two chance of being blue, and each chick is a separate chance.",
+        "one in two / separate chance / one in four / black with white",
+        "On \"separate chance\" a coded two-step probability tree draws: first chick \"blue 1/2\" or \"not blue 1/2\", then from \"blue\" a second branch \"blue 1/2\"; on \"one in four\" the path blue-blue lights with \"1/2 x 1/2 = 1/4\" and answer line (b) writes on. The chip \"Separate offspring, known parents: multiply.\" writes small beside it.",
+        "explain",
+        "the two blue boxes ring amber with \"2/4 = 1/2\" (computed). On \"separate chance\" a coded two-step probability tree draws: first chick \"blue 1/2\" or \"not blue 1/2\", then from \"blue\" a second branch \"blue 1/2\"; on \"one in four\" the path blue-blue lights with \"1/2 x 1/2 = 1/4\" and answer line (b) writes on. The chip \"Separate offspring, known parents: multiply.\" writes small beside it. On \"black with white\" a second mini grid \"C^B C^B x C^W C^W\" fills four \"C^B C^W\" boxes (computed) with four blue chick plates; answer line (c): \"black x splashed white: all blue\". Strip: \"3 combine the chances\" ticks.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q1-mistake": [
+        "new",
+        "the chip \"blue x blue gives only blue\" writes on; on \"blue with blue\" it takes a red scribble cross with the caption \"heterozygotes don't breed true\".",
+        "Q1-mistake (the classic mistake): The classic mistake is crossing blue with blue to get blue chicks.",
+        "blue with blue / heterozygotes don't breed true",
+        "A second crossed chip, unspoken: \"1/2 + 1/2 = 1 (added instead of multiplied)\". Hold about 1.5 seconds.",
+        "explain",
+        "the chip \"blue x blue gives only blue\" writes on; on \"blue with blue\" it takes a red scribble cross with the caption \"heterozygotes don't breed true\". A second crossed chip, unspoken: \"1/2 + 1/2 = 1 (added instead of multiplied)\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "new",
+        "board clears.",
+        "Unseen transfer: q2-question (question 2: tortoiseshell cats), with every demand and condition on screen and nothing answer-bearing",
+        "X chromosome / both colours / female / tortoiseshell female / sons",
+        "The card for \"q2-question (question 2: tortoiseshell cats)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "board clears. Type badge hidden during the attempt. Stimulus: the painted plates m5x-cat-tortoiseshell-v1.png (tagged \"tortoiseshell\") and m5x-cat-orange-v1.png (tagged \"orange\"), joined by \"x\" with the pedigree symbols \"female\" (circle) and \"male\" (square) under them; m5x-cat-black-v1.png small in a key strip: \"on the X: orange allele, black allele; one of each: tortoiseshell\". Demands: \"(a) Why are tortoiseshell cats almost always female?\" \"(b) Probability that a kitten is a tortoiseshell female?\" \"(c) What fraction of their sons are black?\" Three answer boxes, an empty 2 x 2 grid outline. Nothing answer-bearing: no X or Y chips. Countdown 10 seconds; strip dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q2-why-female": [
+        "new",
+        "type badge \"X-linked\".",
+        "Q2-why-female (choose the model): The gene is on the X, and a tortoiseshell cat needs both alleles, so it needs two X chromosomes.",
+        "both / two X chromosomes / one colour",
+        "The tortoiseshell plate gets two chips \"X^O\" and \"X^o\" (on screen only) with a bracket \"both alleles: two X\"; the bank line \"Co shows both\" appears small (grey tag \"B10\") with the screen wording \"both alleles show, in different patches\" directly under it. On \"one X and a Y\" the orange male plate gets \"X^O Y\"; a ghost male \"X^O X^o?\" fades and is struck with the grey tag \"males: one X\".",
+        "explain",
+        "type badge \"X-linked\". The tortoiseshell plate gets two chips \"X^O\" and \"X^o\" (on screen only) with a bracket \"both alleles: two X\"; the bank line \"Co shows both\" appears small (grey tag \"B10\") with the screen wording \"both alleles show, in different patches\" directly under it. On \"one X and a Y\" the orange male plate gets \"X^O Y\"; a ghost male \"X^O X^o?\" fades and is struck with the grey tag \"males: one X\". Answer line (a): \"needs two different X alleles; males have one X\". Grey author tag, small: \"rare XXY males can be tortoiseshell\" (screen only, explains \"almost\").",
+        [
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q2-square": [
+        "adjust",
+        "Punnett with the mother's gametes \"X^O\", \"X^o\" down the side (teal-edged) and the father's \"X^O\", \"Y\" across the top (plum-edged).",
+        "Q2-square (fill it, then read it two ways): Now the cross.",
+        "daughter / son / one in four / one in two",
+        "On \"every daughter\" the X^O column fills two daughter boxes \"X^O X^O\" (orange), \"X^O X^o\" (tortoiseshell); on \"every son\" the Y column fills \"X^O Y\" (orange), \"X^o Y\" (black) (computed with B10's xlinked split). The bank line \"Dad gives his X to daughters and his Y to sons\" writes small (grey tag \"B10\").",
+        "explain",
+        "Punnett with the mother's gametes \"X^O\", \"X^o\" down the side (teal-edged) and the father's \"X^O\", \"Y\" across the top (plum-edged). On \"every daughter\" the X^O column fills two daughter boxes \"X^O X^O\" (orange), \"X^O X^o\" (tortoiseshell); on \"every son\" the Y column fills \"X^O Y\" (orange), \"X^o Y\" (black) (computed with B10's xlinked split). The bank line \"Dad gives his X to daughters and his Y to sons\" writes small (grey tag \"B10\"). On \"one in four\" all four boxes outline with the tortoiseshell box ringed: (b) \"1/4 of all kittens\". On \"one in two\" only the son column outlines with the black box ringed: (c) \"1/2 of sons\". Strip: \"2 genotypes\" and \"3 combine\" tick.",
+        [
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q2-mistake": [
+        "new",
+        "a ghost grid \"O o x O O\" fills (computed, autosomal) with two \"tortoiseshell\" boxes, one labelled with a square symbol; on \"autosome\" it takes a red scribble cross with the caption \"the gene is on the X\".",
+        "Q2-mistake (the classic mistake): The classic mistake is treating the gene as if it were on an autosome.",
+        "autosome / mother's X",
+        "On \"mother's X\" an arrow runs from the mother's chips to the son column. Hold about 1.5 seconds.",
+        "explain",
+        "a ghost grid \"O o x O O\" fills (computed, autosomal) with two \"tortoiseshell\" boxes, one labelled with a square symbol; on \"autosome\" it takes a red scribble cross with the caption \"the gene is on the X\". On \"mother's X\" an arrow runs from the mother's chips to the son column. Hold about 1.5 seconds.",
+        [
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "new",
+        "board clears.",
+        "Unseen transfer: q3-question (question 3: a PKU family), with every demand and condition on screen and nothing answer-bearing",
+        "P K U / brother / mother / first child / second child",
+        "The card for \"q3-question (question 3: a PKU family)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "board clears. Type badge \"Pedigree: probability\". Stimulus: B9 Pedigree (data P-Q3 in Numbers): generation I, two couples, I-1 and I-2 (both open), I-3 (filled circle) and I-4 (open square); generation II, II-1 (filled square, \"brother\"), II-2 (open circle, \"woman\"), II-3 (open square, \"partner\"), with a couple line from II-2 to II-3 and a \"?\" child below. Legend: \"filled: has PKU\". Givens card: \"PKU: autosomal recessive\", \"assume: one gene; no new mutation\". Demands: \"(a) Probability that their first child has PKU?\" \"(b) If the first child has PKU, probability for the second child?\" Two answer boxes. Nothing answer-bearing: no genotype chips, no grid. Countdown 10 seconds; strip dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q3-sure": [
+        "new",
+        "on \"two recessive alleles\" chip \"pp\" pins under I-3 and a \"p\" chip travels down to II-3; \"Pp\" pins under II-3 with the tag \"carrier: certain\" on \"carrier\".",
+        "Q3-sure (the genotypes you can be sure of): Start with the people you can be sure of.",
+        "sure of / carrier / both parents",
+        "On \"brother is affected\" \"pp\" pins under II-1; on \"both parents\" \"Pp\" chips pin under I-1 and I-2 with the trio bracket \"unaffected parents, affected child\" (B9 giveaway, grey tag \"B9\"). II-2 gets a dashed \"?\" chip.",
+        "explain",
+        "on \"two recessive alleles\" chip \"pp\" pins under I-3 and a \"p\" chip travels down to II-3; \"Pp\" pins under II-3 with the tag \"carrier: certain\" on \"carrier\". On \"brother is affected\" \"pp\" pins under II-1; on \"both parents\" \"Pp\" chips pin under I-1 and I-2 with the trio bracket \"unaffected parents, affected child\" (B9 giveaway, grey tag \"B9\"). II-2 gets a dashed \"?\" chip. Strip: \"2 genotypes you're sure of\" ticks.",
+        [
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q3-two-thirds": [
+        "new",
+        "a Punnett \"Pp x Pp\" fills beside I-1 and I-2 (computed).",
+        "Q3-two-thirds (cross out the box she can't be): Now the woman.",
+        "cross out / two / two in three / one in six",
+        "On \"cross out\" the \"pp\" box takes a grey scribble cross with the tag \"she's unaffected: not this box\"; the remaining three boxes ring, two amber (\"Pp\"), and \"2/3\" writes beside them (computed: 2 of 3 remaining). The chip \"Cross out the box they can't be.\" writes small.",
+        "explain",
+        "a Punnett \"Pp x Pp\" fills beside I-1 and I-2 (computed). On \"cross out\" the \"pp\" box takes a grey scribble cross with the tag \"she's unaffected: not this box\"; the remaining three boxes ring, two amber (\"Pp\"), and \"2/3\" writes beside them (computed: 2 of 3 remaining). The chip \"Cross out the box they can't be.\" writes small. A two-step chain writes on: \"P(she's a carrier) = 2/3\", \"x P(pp child from Pp x Pp) = 1/4\", \"= 2/12 = 1/6\"; the partner's certainty sits as \"x 1 (he's a carrier)\". Answer line (a): \"1/6\". Strip: \"3 combine the chances\" ticks.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q3-update": [
+        "new",
+        "a filled \"III-1\" symbol drops under the couple with the tag \"first child: PKU\"; on \"needed a recessive allele from her\" a \"p\" chip travels up from III-1 to II-2; on \"proves\" II-2's \"?\" chip becomes \"Pp\" with an amber tick; a mini grid \"Pp x Pp\" fills and its \"pp\" box rings; answer line (b): \"1/4 (she is now known to be a carrier; each child is a new chance)\".",
+        "Q3-update (new evidence, and the classic mistake): Now suppose their first child has P K U.",
+        "proves / one in four / one in two",
+        "On \"one in two\" the chip \"her carrier chance = 2/4 = 1/2, child = 1/8\" writes on and takes a red scribble cross, with an arrow to the crossed \"pp\" box. A second crossed chip, unspoken: \"1/4 for the first child (assumed both certain carriers)\".",
+        "explain",
+        "a filled \"III-1\" symbol drops under the couple with the tag \"first child: PKU\"; on \"needed a recessive allele from her\" a \"p\" chip travels up from III-1 to II-2; on \"proves\" II-2's \"?\" chip becomes \"Pp\" with an amber tick; a mini grid \"Pp x Pp\" fills and its \"pp\" box rings; answer line (b): \"1/4 (she is now known to be a carrier; each child is a new chance)\". On \"one in two\" the chip \"her carrier chance = 2/4 = 1/2, child = 1/8\" writes on and takes a red scribble cross, with an arrow to the crossed \"pp\" box. A second crossed chip, unspoken: \"1/4 for the first child (assumed both certain carriers)\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold about 1"
+    ],
+    "q4-question": [
+        "new",
+        "board clears.",
+        "Unseen transfer: q4-question (question 4: which pattern?), with every demand and condition on screen and nothing answer-bearing",
+        "rare / rule out / can't decide / more likely",
+        "The card for \"q4-question (question 4: which pattern?)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "board clears. Type badge \"Pedigree: which pattern?\". Stimulus: B9 Pedigree (data P-Q4 in Numbers) with Roman numerals, individual numbers and a legend (open unaffected, filled affected). Givens card: \"a rare condition\", \"choose from: autosomal dominant, autosomal recessive, X-linked recessive\", \"assume: one gene; anyone with the genotype for the trait shows it; no new mutation\". Demands: \"(a) Which pattern can you rule out? Justify using numbered individuals.\" \"(b) Why can't this pedigree decide between the other two?\" \"(c) Which is more likely? Why?\" Three answer boxes and an empty mode-test table (three rows, no ticks). Nothing answer-bearing. Countdown 10 seconds; strip dims.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "q4-rule-out": [
+        "new",
+        "mode-test table row \"X-linked recessive\" lights.",
+        "Q4-rule-out (test X-linked recessive): Test X-linked recessive first.",
+        "X-linked recessive / every son / unaffected / not",
+        "On \"affected mother\" I-2 rings amber; chips \"X^a X^a\" pin under her (dashed, \"if X-linked recessive\"); on \"every son\" an arrow runs from I-2 to II-2 carrying \"X^a\"; on \"unaffected\" II-2 rings and a red clash mark lands on the arrow. On \"her daughter is affected\" II-1 and I-1 ring with the bank rule tag \"affected daughter, unaffected father: not X-linked recessive\" (grey tag \"B10\").",
+        "explain",
+        "mode-test table row \"X-linked recessive\" lights. On \"affected mother\" I-2 rings amber; chips \"X^a X^a\" pin under her (dashed, \"if X-linked recessive\"); on \"every son\" an arrow runs from I-2 to II-2 carrying \"X^a\"; on \"unaffected\" II-2 rings and a red clash mark lands on the arrow. On \"her daughter is affected\" II-1 and I-1 ring with the bank rule tag \"affected daughter, unaffected father: not X-linked recessive\" (grey tag \"B10\"). On \"not\" the row takes a cross; answer line (a): \"not X-linked recessive: I-2 affected but her son II-2 unaffected (and II-1 affected with unaffected father I-1)\". Strip: \"1 choose the model\" ticks.",
+        [
+            "scribbleEllipse"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q4-both-fit": [
+        "adjust",
+        "B9's two Trio icons (\"Hidden in the parents: recessive\", \"Hidden in the child: dominant\") slide over the pedigree and scan each couple; none matches, and each gets a grey \"no match\" tag.",
+        "Q4-both-fit (no giveaway, so both fit): Now look for the giveaways.",
+        "giveaways / both patterns fit / both carriers",
+        "On \"both patterns fit\" the table rows \"autosomal dominant\" and \"autosomal recessive\" tick. Dominant: chips \"Aa\" under I-2, II-1, III-1 and \"aa\" under the rest (computed by onlyGeno or a fit from fitsMode).",
+        "explain",
+        "B9's two Trio icons (\"Hidden in the parents: recessive\", \"Hidden in the child: dominant\") slide over the pedigree and scan each couple; none matches, and each gets a grey \"no match\" tag. On \"both patterns fit\" the table rows \"autosomal dominant\" and \"autosomal recessive\" tick. Dominant: chips \"Aa\" under I-2, II-1, III-1 and \"aa\" under the rest (computed by onlyGeno or a fit from fitsMode). Recessive: the chips swap to the recessive set, and on \"both carriers\" I-1 and II-4 ring amber with \"Aa\" chips and the tag \"both must be carriers\". Answer line (b): \"no giveaway pattern: both fit (recessive needs I-1 and II-4 to be carriers)\".",
+        [
+            "scribbleEllipse"
+        ],
+        "Settle for about a second before the next scene"
+    ],
+    "q4-more-likely": [
+        "new",
+        "on \"rare\" the two ringed partner symbols (I-1 and II-4) pulse with the tag \"two unrelated carriers: unlikely if rare\"; on \"more likely\" answer line (c) writes on: \"autosomal dominant is more likely (recessive needs two unrelated carriers), but not proven\".",
+        "Q4-more-likely (judge, and the classic mistake): For a rare condition, two unrelated partners both being carriers is unlikely, so dominant is more likely.",
+        "rare / more likely / proven",
+        "A small grey tag, unspoken: \"decisive future evidence: II-3 and an unaffected partner having an affected child would mean recessive\". On \"every generation\" the chip \"dominant: it's in every generation\" writes on and takes a red scribble cross with the caption \"a clue, not proof\".",
+        "explain",
+        "on \"rare\" the two ringed partner symbols (I-1 and II-4) pulse with the tag \"two unrelated carriers: unlikely if rare\"; on \"more likely\" answer line (c) writes on: \"autosomal dominant is more likely (recessive needs two unrelated carriers), but not proven\". A small grey tag, unspoken: \"decisive future evidence: II-3 and an unaffected partner having an affected child would mean recessive\". On \"every generation\" the chip \"dominant: it's in every generation\" writes on and takes a red scribble cross with the caption \"a clue, not proof\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "new",
+        "the first-moves strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question badge: \"a third phenotype, or both shown → incomplete or co-dominance (Q1, Q2)\"; \"sons and daughters differ → a gene on the X (Q2)\"; \"certain genotypes first → affected people, parents of affected children (Q3)\"; \"an unaffected relative → cross ",
+        "Decision-board: So here's how to start.",
+        "Choose the model / sure of / cross out / separate offspring / no giveaway / Next",
+        "On \"Next\" a chip \"Next: frequencies in a population\" with a small herd-of-dots icon. Hold about 2 seconds.",
+        "explain",
+        "the first-moves strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question badge: \"a third phenotype, or both shown → incomplete or co-dominance (Q1, Q2)\"; \"sons and daughters differ → a gene on the X (Q2)\"; \"certain genotypes first → affected people, parents of affected children (Q3)\"; \"an unaffected relative → cross out the box they can't be (Q3)\"; \"two offspring, parents known → multiply (Q1)\"; \"no giveaway → name what fits; 'more likely' is not 'proven' (Q4)\". On \"Next\" a chip \"Next: frequencies in a population\" with a small herd-of-dots icon. Hold about 2 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
+BIO_BP01_ROWS = {
+    "hook": [
+        "new",
+        "the bench strip draws across the centre.",
+        "Hook (a model on the bench): This strip of paper cards is a model of twelve base pairs of DNA.",
+        "DNA copying / making a polypeptide",
+        "The finished coded card ladder (twelve pairs, blue backbones, jigsaw tabs, letters printed) slides on and settles. On \"can't do anything a real cell does\" the real helix plate (b5x-zoom-helix-v1.png) fades in small at the right with a grey \"?\" between it and the cards.",
+        "explain",
+        "the bench strip draws across the centre. The finished coded card ladder (twelve pairs, blue backbones, jigsaw tabs, letters printed) slides on and settles. On \"can't do anything a real cell does\" the real helix plate (b5x-zoom-helix-v1.png) fades in small at the right with a grey \"?\" between it and the cards. On \"follow the same rules\" one A card lifts and drops back onto its T partner with a soft snap. On \"DNA copying\" a small icon of two ladders appears above the bench; on \"making a polypeptide\" a small bead chain icon appears beside it. The question writes on at the top left: \"What does a model show, and what does it hide?\" Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "aim-kit": [
+        "new",
+        "the aim card writes on in the right zone: \"Aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes.\" On \"card in four colours\" the painted card sheets fan in (m5x-card-sheets-v1.png, Codex item 1); on \"scissors\" (m5x-scissors-v1.png, item 2), \"sticky tape\" (m5x-tape-roll-v1.png, item 3), \"pencil\" (m5x-pencil-v1.png, item 4) and \"pop-bea",
+        "Aim and kit: Here's the aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes.",
+        "Blue / green / yellow / orange",
+        "On \"Blue\", \"green\", \"yellow\" and \"orange\" the matching sheet lifts and the colour key chip builds one row per cue at the lower left; on \"amino acids\" a bead row joins the key. Small grey tag on \"scissors\": \"cut on the desk\".",
+        "explain",
+        "the aim card writes on in the right zone: \"Aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes.\" On \"card in four colours\" the painted card sheets fan in (m5x-card-sheets-v1.png, Codex item 1); on \"scissors\" (m5x-scissors-v1.png, item 2), \"sticky tape\" (m5x-tape-roll-v1.png, item 3), \"pencil\" (m5x-pencil-v1.png, item 4) and \"pop-beads\" (three bead plates, items 9 to 11) each land on the bench in turn with a small materials tag. On \"Blue\", \"green\", \"yellow\" and \"orange\" the matching sheet lifts and the colour key chip builds one row per cue at the lower left; on \"amino acids\" a bead row joins the key. Small grey tag on \"scissors\": \"cut on the desk\". Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "cut-nucleotides": [
+        "adjust",
+        "step rail lights \"1.",
+        "Step 1: cut nucleotides that only fit one partner: Step one: make the nucleotides.",
+        "phosphate / sugar / A only fits T / C only fits G / two / three",
+        "Make nucleotides\". The painted pile of cut cards (m5x-card-pile-v1.png, item 5) sits at the left of the bench.",
+        "explain",
+        "step rail lights \"1. Make nucleotides\". The painted pile of cut cards (m5x-card-pile-v1.png, item 5) sits at the left of the bench. One coded blank card enlarges at centre; on \"phosphate\" a small pencil circle draws at the strip's end (tag \"phosphate\"); on \"sugar\" a pencil pentagon draws beside it (tag \"sugar\"); on \"the tab is the base\" the tab outlines (tag \"base\"); a bracket over circle and pentagon reads \"backbone part\". On \"A only fits T\" an A card and a T card slide together and seat (snap); a C card tries the T and does not seat (small grey bounce, tag \"doesn't fit\"). On \"C only fits G\" C and G seat. On \"two\" two bumps on the A tab and two slots on the T tab pulse, with B4's HBonds two dotted lines between; on \"three\" the C-G tabs pulse with three dotted lines. Tag: \"notches = hydrogen bonds: A-T two, C-G three\" (B4 recall, grey tag \"B4\"). Hold about 1 second.",
+        [
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "make-synthesis-pieces": [
+        "new",
+        "step rail lights \"1b.",
+        "Make the pieces for the second model: While you're cutting, make the pieces for the second model too.",
+        "yellow / orange / three base tabs / ribosome",
+        "Make RNA, tRNA and ribosome\". No hands: the painted scissors (m5x-scissors-v1.png) rest beside each piece as it separates along a coded dashed cut line.",
+        "explain",
+        "step rail lights \"1b. Make RNA, tRNA and ribosome\". No hands: the painted scissors (m5x-scissors-v1.png) rest beside each piece as it separates along a coded dashed cut line. On \"yellow\" a yellow sheet (from the card sheets plate) gives up a row of coded yellow cards; one U card enlarges beside a blue T card, their tabs outlined side by side (tag \"U: same notches as T\"), and the U seats onto an A (snap). On \"orange\" the painted tRNA card (m5x-trna-card-v1.png, Codex item 7) cuts free; on \"three base tabs\" its three blank tabs outline and coded letters write on them, \"U A C\", with a small direction tag \"3' to 5'\" and the bracket \"anticodon\". On \"paper cup\" the cup on the plate pulses; on \"red bead\" a red pop-bead (m5x-popbead-red-v1.png) drops into the cup. On \"C G U\" and \"A A A\" two more cards slide in beside it with gold and green beads; a small codon chart excerpt (B6c style) rings AUG for Met, GCA for Ala and UUU for Phe as each card is filled (tag \"bead = the amino acid for the codon this card fits\"). On \"ribosome\" the painted card ribosome (m5x-paper-ribosome-v1.png, item 6) cuts free and three coded yellow tabs slide into its window and fit exactly (bracket \"three tabs: one codon\"). Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "build-molecule": [
+        "adjust",
+        "step rail \"2.",
+        "Step 2: build the starting molecule: Step two: build the starting molecule.",
+        "point the second arrow the other way / touch",
+        "Build the molecule\". Twelve blue cards slide into a row on the bench, tape strips appearing between backbones (coded tape pieces matching the painted roll); the sequence prints in the tabs: A T G G C A T T T T G A.",
+        "explain",
+        "step rail \"2. Build the molecule\". Twelve blue cards slide into a row on the bench, tape strips appearing between backbones (coded tape pieces matching the painted roll); the sequence prints in the tabs: A T G G C A T T T T G A. On \"pair a second blue strand\" the partner cards slide in one by one and seat: T A C C G T A A A A C T. On \"Draw a five prime to three prime arrow\" a pencil arrow draws along the top strand, left to right, with \"5'\" and \"3'\" tags at its ends (B4's Strand arrows); on \"point the second arrow the other way\" a second arrow draws along the partner strand right to left, tags \"3'\" left and \"5'\" right, and the two arrows pulse together (tag \"antiparallel: arrows opposite\"). On \"covalent bonds\" the tape strips glow with the tag \"tape: strong backbone bonds\"; on \"touch\" the tab joins show dotted HBonds with \"tabs: weak hydrogen bonds\". Hold about 1 second.",
+        [
+            "Enter slide",
+            "scribbleEllipse",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "replicate": [
+        "new",
+        "step rail \"3.",
+        "Step 3: model replication: Step three: copy it.",
+        "apart / template / two molecules",
+        "Copy (replicate)\". On \"apart\" the ladder opens like a zip from the left (B4's Fork motion), the dotted bonds vanishing pair by pair while the tape strips stay (tag \"tape unbroken\").",
+        "explain",
+        "step rail \"3. Copy (replicate)\". On \"apart\" the ladder opens like a zip from the left (B4's Fork motion), the dotted bonds vanishing pair by pair while the tape strips stay (tag \"tape unbroken\"). On \"template\" both blue strands get the tag \"template\". Green cards slide in from a small green pile, one per base on the template, each seating with a snap; a coded tape strip joins each new backbone. On \"two molecules\" the two ladders separate along the bench, each with a bracket: \"1 blue + 1 green\". The colour key's blue and green rows pulse. Hold about 1 second.",
+        [
+            "Enter slide"
+        ],
+        "Hold about 1 second"
+    ],
+    "record-check": [
+        "new",
+        "the record sheet (painted clipboard m5x-clipboard-sheet-v1.png, item 12, with a coded sketch drawing on it) in the right zone: two small ladders sketched, labels \"old (blue)\" and \"new (green)\" writing on.",
+        "Record and check: Now record what the model shows.",
+        "match base for base / semi-conservative / sister chromatids",
+        "On \"match base for base\" each molecule's top row reads across against the original sequence chip with ticks along it. On \"forcing a wrong card in\" a green C card tries an A on the template and tilts, not seated (grey tag \"mismatch: doesn't fit\"; small grey tag \"cells also proofread: B4\").",
+        "explain",
+        "the record sheet (painted clipboard m5x-clipboard-sheet-v1.png, item 12, with a coded sketch drawing on it) in the right zone: two small ladders sketched, labels \"old (blue)\" and \"new (green)\" writing on. On \"match base for base\" each molecule's top row reads across against the original sequence chip with ticks along it. On \"forcing a wrong card in\" a green C card tries an A on the template and tilts, not seated (grey tag \"mismatch: doesn't fit\"; small grey tag \"cells also proofread: B4\"). On \"semi-conservative\" the term writes on under the sketch: \"each copy keeps one original strand\". On \"sister chromatids\" the two ladders shrink and slide into the two arms of b5x-chromosome-duplicated-v1.png (small, grey tag \"B5a\"), each arm tagged \"one copy\". Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "transcribe": [
+        "new",
+        "step rail \"4.",
+        "Step 4: model transcription: Step four switches to the second model: making a polypeptide.",
+        "template strand / U instead of T / messenger RNA / unchanged",
+        "Transcribe\". One of the two molecules returns to centre; the colour key's yellow row pulses.",
+        "explain",
+        "step rail \"4. Transcribe\". One of the two molecules returns to centre; the colour key's yellow row pulses. On \"Unzip the whole gene\" the ladder opens across the twelve cards; the lower strand gets the tag \"template strand (3' to 5')\" and the upper strand dims (tag \"not read\"). On \"yellow cards\" yellow cards seat one by one opposite the template: A U G G C A U U U U G A, built from the 5' end (small arrow \"built 5' to 3'\", grey tag \"B6b\"). On \"U instead of T\" each U card rings briefly where an A sits opposite. On \"peel the yellow strand off\" it lifts away and the DNA ladder closes again with its dotted bonds back. On \"messenger RNA\" the yellow strip gets the tag \"mRNA\"; on \"unchanged\" the DNA gets a teal tick \"gene unchanged, can be read again\". Grey tag, unspoken: \"a cell opens only a short stretch at a time\". Hold about 1 second.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "translate": [
+        "new",
+        "step rail \"5.",
+        "Step 5: model translation: Step five: translation.",
+        "codon / anticodon / clip its bead / stop codon",
+        "Translate\". The painted paper ribosome (m5x-paper-ribosome-v1.png, item 6) sits at centre; the yellow mRNA strip slides into its window from the left, three cards visible in the window (bracket \"codon\").",
+        "explain",
+        "step rail \"5. Translate\". The painted paper ribosome (m5x-paper-ribosome-v1.png, item 6) sits at centre; the yellow mRNA strip slides into its window from the left, three cards visible in the window (bracket \"codon\"). On \"orange card\" a tRNA card plate (m5x-trna-card-v1.png, item 7) appears above the window with a coded red bead (m5x-popbead-red-v1.png) in its cup and its three base tabs lettered \"U A C\" (direction tag \"3' to 5'\"); on \"fit its codon\" its tabs seat into the codon's tabs in the window. On \"start codon\" it drops and seats over A U G (snap, tag \"start: methionine\"). On \"clip its bead\" the strip moves one codon left, a second card (gold bead, anticodon C G U) seats over G C A, and the gold bead clips to the red one (small coded peg joint, tag \"peptide bond\"). The first card lifts away empty. The third card (green bead, anticodon A A A) seats over U U U and its bead clips on. On \"stop codon\" U G A enters the window; an orange card hovers and finds no fit (grey \"?\"), tag \"stop: no tRNA\". On \"comes off\" the three-bead chain lifts free. Grey tag, unspoken: \"a real ribosome holds two tRNAs at a time\". Hold about 1 second.",
+        [
+            "Enter slide",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "results-table": [
+        "new",
+        "the results table writes in the right zone, one row per cue: \"codon / anticodon (3' to 5') / amino acid\": \"AUG / UAC / Met (start)\", \"GCA / CGU / Ala\", \"UUU / AAA / Phe\", \"UGA / none / stop\".",
+        "Results table: Record the results in a table: codon, anticodon and amino acid, using a codon chart.",
+        "methionine, alanine and phenylalanine / one card",
+        "A small codon chart excerpt (B6c style) sits under the table with each looked-up cell ringing as its row writes. On \"methionine, alanine and phenylalanine\" the bead chain sits under the table with each bead tagged \"Met\", \"Ala\", \"Phe\".",
+        "explain",
+        "the results table writes in the right zone, one row per cue: \"codon / anticodon (3' to 5') / amino acid\": \"AUG / UAC / Met (start)\", \"GCA / CGU / Ala\", \"UUU / AAA / Phe\", \"UGA / none / stop\". A small codon chart excerpt (B6c style) sits under the table with each looked-up cell ringing as its row writes. On \"methionine, alanine and phenylalanine\" the bead chain sits under the table with each bead tagged \"Met\", \"Ala\", \"Phe\". On \"one card\" one template card in the DNA (the C opposite the first base of codon 2; computed, see Numbers) flashes amber and the matching mRNA codon and bead flash with a \"?\" (no new amino acid named; grey tag \"a changed base can change an amino acid: B6b, B6c\"). Hold about 2 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "assess-strengths": [
+        "new",
+        "the assessment card writes in the right zone with three column headings: \"Represents well\", \"Leaves out or distorts\", \"Improvement\".",
+        "Assess: what the models represent well: Now assess the models.",
+        "represent well / threes",
+        "On each cue a row writes in the first column with a small pen link to the matching piece on the bench: \"pairing rule (tab shapes)\" to a seated A-T tab; \"one original strand kept (colours)\" to the two blue-green ladders; \"code read in threes (window)\" to the ribosome window, with m5x-ribosome-v1.png small beside the paper ribosome (tag \"real ribosome\"); \"tRNA links codon to amino acid\" to an orange card with its bead.",
+        "explain",
+        "the assessment card writes in the right zone with three column headings: \"Represents well\", \"Leaves out or distorts\", \"Improvement\". On each cue a row writes in the first column with a small pen link to the matching piece on the bench: \"pairing rule (tab shapes)\" to a seated A-T tab; \"one original strand kept (colours)\" to the two blue-green ladders; \"code read in threes (window)\" to the ribosome window, with m5x-ribosome-v1.png small beside the paper ribosome (tag \"real ribosome\"); \"tRNA links codon to amino acid\" to an orange card with its bead. Hold about 1 second.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "assess-limits": [
+        "new",
+        "the second column fills, one row per cue: \"no enzymes: hides who does each job\" with a small grey tag \"helicase, DNA polymerase, RNA polymerase\"; \"flat: hides the twist that must unwind\" with b5x-zoom-helix-v1.png sliding in beside the flat ladder; \"12 base pairs: hides how long copying takes\" with a scale bar that stretches far off screen; \"direction not enforced: hides one-way building\" with a g",
+        "Assess: limitations: Then the limits.",
+        "enzymes / flat / tiny / direction / folding",
+        "Hold about 2 seconds (reading hold).",
+        "explain",
+        "the second column fills, one row per cue: \"no enzymes: hides who does each job\" with a small grey tag \"helicase, DNA polymerase, RNA polymerase\"; \"flat: hides the twist that must unwind\" with b5x-zoom-helix-v1.png sliding in beside the flat ladder; \"12 base pairs: hides how long copying takes\" with a scale bar that stretches far off screen; \"direction not enforced: hides one-way building\" with a green card sliding on at the wrong end and a grey \"?\"; \"no folding: hides why order matters\" with the bead chain and a dotted fold outline (grey tag \"next video\"). Hold about 2 seconds (reading hold).",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 2 seconds (reading hold)"
+    ],
+    "improvements": [
+        "new",
+        "the third column fills opposite its limit, one per cue: \"add cards at the 3' end only\" (the scene 4 arrows pulse, and a green card is only allowed at the 3' end of a growing strand, tick); \"enzyme job cards\" (three small blank coded cards labelled \"unzip\", \"build DNA\", \"build RNA\" slide near the fork); \"twist into a helix\" (the card ladder twists a half turn on the bench).",
+        "Improving the model: A good assessment ends with improvements.",
+        "improvements / twist",
+        "On \"fixes one limit\" pen links join each improvement to its limit across the card. A crossed chip: \"the model is wrong because it's simplified\".",
+        "explain",
+        "the third column fills opposite its limit, one per cue: \"add cards at the 3' end only\" (the scene 4 arrows pulse, and a green card is only allowed at the 3' end of a growing strand, tick); \"enzyme job cards\" (three small blank coded cards labelled \"unzip\", \"build DNA\", \"build RNA\" slide near the fork); \"twist into a helix\" (the card ladder twists a half turn on the bench). On \"fixes one limit\" pen links join each improvement to its limit across the card. A crossed chip: \"the model is wrong because it's simplified\". Hold about 1 second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no colour key, no assessment card.",
+        "Unseen transfer: attempt (countdown, 10 seconds), with every demand and condition on screen and nothing answer-bearing",
+        "Your turn.",
+        "The card for \"attempt (countdown, 10 seconds)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears: no colour key, no assessment card. The attempt card writes on: two coded white-card ladders on the bench (all backbones white, letters printed, sequences identical), tag \"white cards only, original and new\"; givens line \"both copies match the original\"; demands \"(a) Explain why this model can't show semi-conservative replication.\" \"(b) Suggest one change.\" Two answer boxes. Nothing answer-bearing: no blue or green, no \"old\" or \"new\" labels. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The card stays on screen during and after the countdown.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback": [
+        "adjust",
+        "the card shrinks to a strip.",
+        "Feedback (brief): With one colour, old and new strands look the same, so you can't see that each new molecule keeps one original strand.",
+        "look the same / two colours",
+        "On \"look the same\" a \"?\" hovers over each white strand. On \"two colours\" the original strands recolour blue and the new ones green; bracket \"1 original + 1 new\" on each ladder.",
+        "explain",
+        "the card shrinks to a strip. On \"look the same\" a \"?\" hovers over each white strand. On \"two colours\" the original strands recolour blue and the new ones green; bracket \"1 original + 1 new\" on each ladder. Answer line writes on: \"(a) old and new strands look identical, so 'one original kept' can't be seen; (b) two colours, original and new\". On \"fine because the sequences match\" the chip \"fine: the sequences match\" writes on and takes a grey scribble cross, tag \"shows accuracy, not which strand is old\". Hold about 1 second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"Key: what each piece stands for.\" \"Build by the real rules (valid).\" \"Record what you see.\" \"Assess: represents well / leaves out / improve.\" The two models sit small along the bottom (ladders and bead chain).",
+        "Decision rule and handoff: So, to build and assess a model: decide what each piece stands for, follow the real rules so the model is valid, and record what you see.",
+        "Next",
+        "On \"Next\" a chip \"Next: from chain to protein to trait\" appears with the bead chain folding into a small blob. Hold about 1 second.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"Key: what each piece stands for.\" \"Build by the real rules (valid).\" \"Record what you see.\" \"Assess: represents well / leaves out / improve.\" The two models sit small along the bottom (ladders and bead chain). On \"Next\" a chip \"Next: from chain to protein to trait\" appears with the bead chain folding into a small blob. Hold about 1 second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
+BIO_BP02_ROWS = {
+    "hook": [
+        "new",
+        "the bench strip draws across.",
+        "Hook (one pair of parents, many offspring): Two parent plants can produce a hundred seeds, and no two are quite the same.",
+        "meiosis / fertilisation / mutation",
+        "A loose heap of painted pop-beads (plum and teal single-bead plates, Codex items 1 and 2, scattered by code) sits at the left; at the right a row of eight coded seed outlines appears, each with a different short letter label (screen only). On \"meiosis\" four bead chains assemble themselves in a string loop (item 3); on \"fertilisation\" two face-down cards slide together; on \"mutation\" one sticker on a chain turns amber",
+        "explain",
+        "the bench strip draws across. A loose heap of painted pop-beads (plum and teal single-bead plates, Codex items 1 and 2, scattered by code) sits at the left; at the right a row of eight coded seed outlines appears, each with a different short letter label (screen only). On \"meiosis\" four bead chains assemble themselves in a string loop (item 3); on \"fertilisation\" two face-down cards slide together; on \"mutation\" one sticker on a chain turns amber. The question writes on at the top left: \"Can a model predict offspring genotypes?\" Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "aim-kit": [
+        "adjust",
+        "the aim card writes on in the right zone.",
+        "Aim and kit: The aim: model meiosis, fertilisation and mutation to predict the variation in offspring genotypes.",
+        "die / Plum / teal",
+        "On each item the matching plate lands on the bench with a materials tag: plum and teal bead plates (items 1, 2), the centromere piece (item 4), a sheet of blank round stickers (item 5), B5b's coded coin, the painted die (m5x-die-v1.png, item 7), string loops (item 3), a stack of blank index cards (item 6) and the clipboard results sheet (m5x-clipboard-sheet-v1.png, shared item). On \"Plum\" and \"teal\" the colour key ch",
+        "explain",
+        "the aim card writes on in the right zone. On each item the matching plate lands on the bench with a materials tag: plum and teal bead plates (items 1, 2), the centromere piece (item 4), a sheet of blank round stickers (item 5), B5b's coded coin, the painted die (m5x-die-v1.png, item 7), string loops (item 3), a stack of blank index cards (item 6) and the clipboard results sheet (m5x-clipboard-sheet-v1.png, shared item). On \"Plum\" and \"teal\" the colour key chip builds two rows; small grey tag \"B5b colours\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "build-parent": [
+        "new",
+        "step rail lights \"1.",
+        "Step 1: build the parent cell: Step one: build a parent cell with two pairs of chromosomes.",
+        "matching positions / the same genes in the same places",
+        "Build the parent cell\". A string loop opens on the bench.",
+        "explain",
+        "step rail lights \"1. Build the parent cell\". A string loop opens on the bench. Bead chains assemble bead by bead (painted single-bead plates chained in code): long plum, long teal, short plum, short teal. On \"matching positions\" sticker dots (white, ink outline) land on each chain with letters on screen only: P and T on long plum (P near the top, T near the bottom), p and t on long teal at the same heights, R on short plum, r on short teal. On \"the same genes in the same places\" dashed level lines join P to p and T to t across the long pair, and R to r across the short pair; tag \"homologous pair: same genes, same places\" (grey tag \"B5a\"). Tag under the loop: \"2n = 4\". Hold about 1 second.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "copy": [
+        "adjust",
+        "step rail \"2.",
+        "Step 2: copy each chromosome: Step two: the DNA is copied before meiosis starts.",
+        "centromere / four",
+        "Copy\". Each chain duplicates beside itself (same colours, same stickers) and a painted centromere piece (item 4) clips the two together, forming an X-like pair of bead chains.",
+        "explain",
+        "step rail \"2. Copy\". Each chain duplicates beside itself (same colours, same stickers) and a painted centromere piece (item 4) clips the two together, forming an X-like pair of bead chains. On \"sister chromatids\" the real plates b5x-chromosome-duplicated-pink-v1.png and -teal-v1.png fade in small at the right as \"the real thing\". On \"four\" B5a's counting chip counts centromeres: 1, 2, 3, 4 (each centromere piece rings in turn); a crossed chip \"8 chromosomes\" (grey tag \"count centromeres\"). Hold about 1 second.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "cross-over": [
+        "new",
+        "step rail \"3.",
+        "Step 3: crossing over: Step three, in prophase one: crossing over.",
+        "prophase one / die / swap the end pieces / matching points / purple with short / white with tall",
+        "Cross over (prophase I)\". The long pair slides together side by side (B5b's PairUp).",
+        "explain",
+        "step rail \"3. Cross over (prophase I)\". The long pair slides together side by side (B5b's PairUp). On \"die\" the painted die (m5x-die-v1.png) tumbles on the bench and settles; code draws six pips on its blank top face (tag \"six: cross over\"; a small rule chip \"1 to 5: no swap\" sits beside it). On \"Unclip\" one inner plum chromatid and one inner teal chromatid separate at the bead between P and T (a small gap opens at the same bead count on both, tag \"same point\"). On \"swap the end pieces\" the two end segments exchange places (B5b's CrossOver motion), keeping their own colours (B5b rule: swapped pieces keep their parent's colour). On \"matching points\" a level line confirms the gap is at the same position on both; a small inset shows an unmatched swap with one chromatid gaining an extra bead and the other losing one, grey cross, tag \"unmatched: genes lost or doubled\". On \"purple with short\" the plum-top, teal-bottom chromatid rings (P with t); on \"white with tall\" the teal-top, plum-bottom chromatid rings (p with T). The gamete record table opens in the right zone with the line \"new combinations: P t, p T\". Hold about 1 second.",
+        [
+            "Enter slide",
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "line-up-divide": [
+        "new",
+        "step rail \"4.",
+        "Step 4: line up and divide twice: Step four, in metaphase one: line the pairs up across the middle of the cell.",
+        "metaphase one / coin / random / sister chromatids / four gametes",
+        "Line up (metaphase I), divide twice (meiosis I, II)\". A coded dashed equator draws across the loop; both pairs slide onto it.",
+        "explain",
+        "step rail \"4. Line up (metaphase I), divide twice (meiosis I, II)\". A coded dashed equator draws across the loop; both pairs slide onto it. On \"coin\" B5b's TwoWays coin flips over the long pair (heads: plum left) and again over the short pair (tails: plum right), each result pinning a small tag. On \"random\" the second flip's tag reads \"decided separately\". On \"apart into two new loops\" the homologous partners separate to opposite sides and two new string loops close around them (tag \"partners separate; centromeres stay joined\", grey tag \"B5b\"). On \"sister chromatids\" each loop splits again, centromere pieces unclipping, into four small loops. On \"four gametes\" each small loop gets a \"n = 2\" tag and its alleles print beside it. Hold about 1 second.",
+        [
+            "scribbleEllipse",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "record-gametes": [
+        "new",
+        "step rail \"5.",
+        "Step 5: record the gametes, and run it again: Step five: record each gamete's alleles on a card, then rebuild and run it again with different coin results.",
+        "four types / mixed types",
+        "Record and repeat\". Each gamete's letters write onto a blank card plate (item 6) which slides into the record table.",
+        "explain",
+        "step rail \"5. Record and repeat\". Each gamete's letters write onto a blank card plate (item 6) which slides into the record table. The bench resets with a quick rewind; the die rolls a three (code draws three pips; tag \"no swap this run\") and the coins flip differently; new, unmixed gametes drop in. The table sorts into two blocks: \"no crossover: P T R, P T r, p t R, p t r\" with \"2 x 2 = 4 = 2^n\" (grey tag \"site: confirm 2^n\"), and \"with a crossover: P t R, P t r, p T R, p T r\" with a smaller font and the tag \"less common: only on a six\". On \"like your die\" the die rolls once more beside the table. Grey tag \"B8\". Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "fertilise": [
+        "new",
+        "step rail \"6.",
+        "Step 6: fertilisation by random draw: Step six: fertilisation.",
+        "one at random / zygote",
+        "Fertilise\". Two card stacks sit at the left and right of the bench, labelled \"parent 1 gametes\" and \"parent 2 gametes\".",
+        "explain",
+        "step rail \"6. Fertilise\". Two card stacks sit at the left and right of the bench, labelled \"parent 1 gametes\" and \"parent 2 gametes\". On \"shuffles\" each stack shuffles itself (cards riffle in code). On \"one at random\" one card flips from each stack (P T r and p t R). On \"together in one loop\" their bead chromosomes join in one string loop; tag \"zygote: 2n = 4\". On \"Record its genotype\" the line \"Pp Tt Rr\" writes on a tally sheet; on \"return the cards\" both cards slide back into their stacks and reshuffle. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "mutate": [
+        "new",
+        "step rail \"7.",
+        "Step 7: add a mutation: Step seven: mutation.",
+        "new allele / neither parent had / new one",
+        "Mutate\". One gamete card is drawn; its R sticker peels off and an amber sticker lands in the same place, labelled \"R*\" (tag \"new allele\", B8 rule: amber only for a new allele).",
+        "explain",
+        "step rail \"7. Mutate\". One gamete card is drawn; its R sticker peels off and an amber sticker lands in the same place, labelled \"R*\" (tag \"new allele\", B8 rule: amber only for a new allele). On \"DNA change\" a small grey tag: \"in a cell that makes eggs or sperm (B8)\". On \"neither parent had\" the zygote forms with the amber sticker and both parents' cards show no amber (tags \"parent 1: no R*\", \"parent 2: no R*\"). On \"reshuffle\" the earlier white stickers pulse; on \"new one\" the amber sticker rings. Hold about 1 second.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "results": [
+        "new",
+        "the tally table writes in the right zone: \"offspring genotype / tally / observed / expected\": \"RR / III / 3 / 4\", \"Rr / IIII IIII / 9 / 8\", \"rr / IIII / 4 / 4\".",
+        "Results: expected against observed: Here's an example class result for just the seed-shape gene, from sixteen fertilisations.",
+        "equally likely / expects / got",
+        "On \"equally often\" two small gamete chips \"R\", \"r\" appear under each parent label. On \"equally likely\" four pairing chips write on, one per spoken pairing: \"R + R\", \"R + r\", \"r + R\", \"r + r\" (parent 1 allele first); on \"Two of the four\" the two middle chips bracket together, tagged \"1 of each\".",
+        "explain",
+        "the tally table writes in the right zone: \"offspring genotype / tally / observed / expected\": \"RR / III / 3 / 4\", \"Rr / IIII IIII / 9 / 8\", \"rr / IIII / 4 / 4\". On \"equally often\" two small gamete chips \"R\", \"r\" appear under each parent label. On \"equally likely\" four pairing chips write on, one per spoken pairing: \"R + R\", \"R + r\", \"r + R\", \"r + r\" (parent 1 allele first); on \"Two of the four\" the two middle chips bracket together, tagged \"1 of each\". A line writes: \"1 : 2 : 1, so of 16: 4, 8, 4\" (no grid; grey tag \"Punnett squares: next video\"). On \"expects\" the expected column writes; on \"got\" the observed column writes. A small column chart builds under the table: three category pairs, observed (solid) beside expected (outline), y-axis \"number of offspring\" from 0 to 10, x-axis \"genotype\". Tag: \"example data\". Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "scribbleEllipse",
+            "Enter reveals"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "assess-strengths": [
+        "new",
+        "the assessment card writes in the right zone with three headings: \"Represents well\", \"Leaves out or distorts\", \"Keep it valid and reliable\".",
+        "Assess: what the model represents well: Now assess the model.",
+        "new combinations / restoring / predicts",
+        "Rows in the first column, one per cue, each pen-linked to the bench: \"same genes at matching places\"; \"crossing over: new combinations, no new alleles\"; \"random direction for each pair (coin)\"; \"2n to n to 2n\" (counter chips \"4, 2, 4\"); \"predicts possible gametes\". The real cell plate b5x-cell-dividing-nospindle-v1.png sits small beside the string loop (tag \"real cell\").",
+        "explain",
+        "the assessment card writes in the right zone with three headings: \"Represents well\", \"Leaves out or distorts\", \"Keep it valid and reliable\". Rows in the first column, one per cue, each pen-linked to the bench: \"same genes at matching places\"; \"crossing over: new combinations, no new alleles\"; \"random direction for each pair (coin)\"; \"2n to n to 2n\" (counter chips \"4, 2, 4\"); \"predicts possible gametes\". The real cell plate b5x-cell-dividing-nospindle-v1.png sits small beside the string loop (tag \"real cell\"). Hold about 1 second.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 1 second"
+    ],
+    "assess-limits": [
+        "new",
+        "the second column fills, one row per cue: \"2 pairs: 4 combinations, so most variety is hidden; humans 23 pairs: 2^23, over 8 million\" (a number ticker runs from 4 to 8,388,608); \"crossover chosen: real position varies, often more than one\" (the chain shows two faint possible break points); \"mutation chosen: real ones rare, random, often no effect\"; \"no DNA, no spindle\" (a faint spindle outline ove",
+        "Assess: limitations: Its limits matter too.",
+        "over eight million / rare and random",
+        "Hold about 2 seconds (reading hold).",
+        "explain",
+        "the second column fills, one row per cue: \"2 pairs: 4 combinations, so most variety is hidden; humans 23 pairs: 2^23, over 8 million\" (a number ticker runs from 4 to 8,388,608); \"crossover chosen: real position varies, often more than one\" (the chain shows two faint possible break points); \"mutation chosen: real ones rare, random, often no effect\"; \"no DNA, no spindle\" (a faint spindle outline over the loop with a grey \"not modelled\" tag). Hold about 2 seconds (reading hold).",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 2 seconds (reading hold)"
+    ],
+    "valid-reliable": [
+        "new",
+        "the third column fills: \"valid (tests what meiosis really does): matching breaks, fresh die and coin each run, random draw\" (each pen-linked to the bench step); \"reliable (repeats agree): many repeats, pool the class\" (the tally table from scene 10 returns small; a pooled class row writes on beneath it with larger totals: \"class pooled: 41, 79, 40 / expected 40, 80, 40\", example data).",
+        "Valid and reliable: To keep it valid, so it really tests what meiosis does, follow the real rules every time: break at matching points, roll and flip fresh each run, and draw at random.",
+        "valid / reliable",
+        "A crossed chip: \"one run is enough\". Hold about 1 second.",
+        "explain",
+        "the third column fills: \"valid (tests what meiosis really does): matching breaks, fresh die and coin each run, random draw\" (each pen-linked to the bench step); \"reliable (repeats agree): many repeats, pool the class\" (the tally table from scene 10 returns small; a pooled class row writes on beneath it with larger totals: \"class pooled: 41, 79, 40 / expected 40, 80, 40\", example data). A crossed chip: \"one run is enough\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no tally, no assessment card.",
+        "Unseen transfer: attempt (countdown, 10 seconds), with every demand and condition on screen and nothing answer-bearing",
+        "Your turn.",
+        "The card for \"attempt (countdown, 10 seconds)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears: no tally, no assessment card. The attempt card writes on: two parent chips \"R r\" and \"R r\"; a small results row of four offspring cards \"RR, Rr, Rr, Rr\"; the conclusion in a quote box \"rr offspring can't occur from these parents\". Key line: \"R = round allele, r = wrinkled allele\" (screen only). Givens line: \"4 fertilisations\". Demand: \"Evaluate their conclusion.\" One answer box. Nothing answer-bearing: no expected values, no fractions. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The card stays on screen during and after the countdown.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback": [
+        "adjust",
+        "the card shrinks to a strip.",
+        "Feedback (brief): The conclusion isn't supported.",
+        "one time in four / one time in three / repeat",
+        "On \"one time in four\" gamete chips \"r 1/2\" from each parent multiply to \"rr 1/4\". On \"three in four\" a chip \"not rr: 3/4\" appears under each of the four offspring cards; on \"one time in three\" the working line writes on: \"chance of no rr in 4 = 3/4 x 3/4 x 3/4 x 3/4 = (3/4)^4, about 0.32\".",
+        "explain",
+        "the card shrinks to a strip. On \"one time in four\" gamete chips \"r 1/2\" from each parent multiply to \"rr 1/4\". On \"three in four\" a chip \"not rr: 3/4\" appears under each of the four offspring cards; on \"one time in three\" the working line writes on: \"chance of no rr in 4 = 3/4 x 3/4 x 3/4 x 3/4 = (3/4)^4, about 0.32\". On \"repeat\" the pooled row from scene 13 flashes in small with its rr count. Answer line: \"not supported: rr expected 1/4; 4 trials is too few; repeat and pool\". On \"the model is wrong\" the chip \"the model is wrong\" writes on and takes a grey scribble cross, tag \"too few trials, not a bad model\". Hold about 1 second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, one line per cue: \"Track by colour.\" \"Copy first.\" \"Die: cross over on a six, at matching points.\" \"Coin for each pair; random draw for fertilisation.\" \"Mutation: a new allele, on purpose.\" \"Repeat and pool.\" The bench shows the model small along the bottom.",
+        "Decision rule and handoff: So, to model offspring variation: track each parent's chromosomes by colour, copy before dividing, cross over on a six at matching points, randomise every pair and every fertilisation, add a mutation on purpose, and repeat enough ",
+        "Next",
+        "On \"Next\" a chip \"Next: Punnett squares and pedigrees\" appears with a small coded 2 x 2 grid outline. Hold about 1 second.",
+        "explain",
+        "the plan card writes, one line per cue: \"Track by colour.\" \"Copy first.\" \"Die: cross over on a six, at matching points.\" \"Coin for each pair; random draw for fertilisation.\" \"Mutation: a new allele, on purpose.\" \"Repeat and pool.\" The bench shows the model small along the bottom. On \"Next\" a chip \"Next: Punnett squares and pedigrees\" appears with a small coded 2 x 2 grid outline. Hold about 1 second.",
+        [
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
+BIO_BP03_ROWS = {
+    "hook": [
+        "new",
+        "the desk strip draws.",
+        "Hook (one class, one number): In one class, nine of the twenty-eight students who were counted have attached earlobes.",
+        "Not yet / does and doesn't show",
+        "A coded tally sheet on the painted clipboard (m5x-clipboard-sheet-v1.png) shows \"attached: 9 of 28\". On \"everyone your age\" the number zooms out to a wide coded field of small grey squares (abstract population, no people) with a \"?\" over it.",
+        "explain",
+        "the desk strip draws. A coded tally sheet on the painted clipboard (m5x-clipboard-sheet-v1.png) shows \"attached: 9 of 28\". On \"everyone your age\" the number zooms out to a wide coded field of small grey squares (abstract population, no people) with a \"?\" over it. On \"Not yet\" three chips write on under the field, one per cue: \"how collected?\", \"how big?\", \"how judged?\". On \"does and doesn't show\" the question writes on at the top left: \"How common is it, and how sure are you?\" Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "aim-characteristic": [
+        "new",
+        "the aim card writes on in the right zone.",
+        "Aim and choosing a characteristic: The aim: collect data on how common a characteristic is in a population, present it clearly, and identify trends, patterns and limitations.",
+        "easy to see / not sensitive / one-gene trait",
+        "On \"easy to see\" a checklist writes beside it: \"visible\", \"quick to judge\", \"not sensitive\", \"can't identify anyone\", each with a teal tick. Two candidate chips drop in: \"earlobe shape\" and \"tongue rolling\" (words only, no pictures).",
+        "explain",
+        "the aim card writes on in the right zone. On \"easy to see\" a checklist writes beside it: \"visible\", \"quick to judge\", \"not sensitive\", \"can't identify anyone\", each with a teal tick. Two candidate chips drop in: \"earlobe shape\" and \"tongue rolling\" (words only, no pictures). A crossed chip \"health conditions\" fades in (tag \"sensitive: not for a class survey\"). On \"one-gene trait\" a small grey tag writes: \"many genes involved: count the characteristic; allele frequencies, see the roan cattle (B11)\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "agreement-privacy": [
+        "new",
+        "step rail lights \"1.",
+        "Agreement and privacy: Data about people needs their agreement.",
+        "agreement / say no / no names",
+        "Plan and agree\". A coded plan card writes on: \"teacher approval\", \"say what and why\", \"anyone can say no\".",
+        "explain",
+        "step rail lights \"1. Plan and agree\". A coded plan card writes on: \"teacher approval\", \"say what and why\", \"anyone can say no\". On \"say no\" one blank slip stays on the desk, unticked, with the tag \"no reason needed\". On \"no names\" a painted blank slip (from m5x-slip-box-v1.png, item 2) enlarges with a coded \"name: ___\" line that takes a grey cross, leaving three tick boxes. Tag: \"anonymous: can't be traced\". Hold about 1 second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second"
+    ],
+    "define-categories": [
+        "new",
+        "step rail \"2.",
+        "Define the categories before counting: Next, write the definitions before anyone counts.",
+        "free / attached / unsure / test the definitions",
+        "Define\". The definition card writes in the right zone as a coded line diagram (no face, no head shape): in each of three panels, a vertical line tagged \"side of head\" and, beside it, a single ink outline of the lower half of an ear rim curving down into the lobe, with a pointer \"earlobe\" and a small dot \"join point\" where the lobe meets the line.",
+        "explain",
+        "step rail \"2. Define\". The definition card writes in the right zone as a coded line diagram (no face, no head shape): in each of three panels, a vertical line tagged \"side of head\" and, beside it, a single ink outline of the lower half of an ear rim curving down into the lobe, with a pointer \"earlobe\" and a small dot \"join point\" where the lobe meets the line. On \"free\" the first panel draws: the lobe rounds and hangs below the dot, the hanging part shaded teal and tagged \"hangs below the join\"; on \"attached\" the second: the rim runs straight into the line at the dot, amber outline, tagged \"joins directly\"; on \"unsure\" the third: a short lobe barely below the dot, grey, tagged \"in between\". On \"judge the same earlobe differently\" two coded tick marks land in different boxes for the same grey curve, with a pen \"?\" between them. On \"test the definitions\" three small practice outline curves appear under the card with two coded tick rows beneath; two ticks agree, one pair disagrees and the definition line \"hangs below the join\" gains an underline (tag \"sharpen the wording\"). Hold about 1 second.",
+        [
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "method": [
+        "new",
+        "step rail \"3.",
+        "The method: Now the method.",
+        "mirror / two people count",
+        "Collect\". The painted slip box (m5x-slip-box-v1.png, item 2) sits centre-left; the hand mirror (m5x-hand-mirror-v1.png, item 1) lies on the desk with only a soft highlight in its glass.",
+        "explain",
+        "step rail \"3. Collect\". The painted slip box (m5x-slip-box-v1.png, item 2) sits centre-left; the hand mirror (m5x-hand-mirror-v1.png, item 1) lies on the desk with only a soft highlight in its glass. On \"or asks a partner to look\" a small grey tag writes beside the mirror: \"earlobes are visible anyway; the slip stays unnamed\". On \"ticks one box\" a coded tick lands in a slip's box; the slip folds and drops into the box slot (no hand); several more follow. On \"two people count\" the slips tip out in a neat pile and two coded tally columns build side by side on the clipboard, one per counter, in two pencil colours (m5x-pencil-v1.png small); on \"totals agree\" both columns end \"30\" with a teal tick between them. Hold about 1 second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "record-frequency": [
+        "new",
+        "step rail \"4.",
+        "Record: the table and the frequency: Record the counts in a table: category, tally, count and frequency.",
+        "thirty / which total / thirty-two per cent",
+        "Record\". The table writes in the right zone (B11 table look): columns \"category / tally / count / frequency (%)\"; rows \"attached / IIII IIII / 9\", \"free / IIII IIII IIII IIII / 19\", \"unsure / II / 2\", \"total slips / 30\".",
+        "explain",
+        "step rail \"4. Record\". The table writes in the right zone (B11 table look): columns \"category / tally / count / frequency (%)\"; rows \"attached / IIII IIII / 9\", \"free / IIII IIII IIII IIII / 19\", \"unsure / II / 2\", \"total slips / 30\". On \"count divided by the total\" the formula line writes: \"frequency = count / total x 100\". On \"which total\" the 30 and a new \"classified: 28\" ring with a \"?\"; on \"Leave out the unsure slips\" the unsure row greys and a table footnote writes: \"frequency of the 28 classified (2 unsure left out)\". On \"thirty-two per cent\" the working \"9 / 28 x 100 = 32%\" writes in the attached row; then \"19 / 28 x 100 = 68%\" in the free row; a small check \"32 + 68 = 100\". Hold about 2 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "pool": [
+        "new",
+        "the table shrinks to a strip; a four-row class table writes: \"class 1: 9 / 28 = 32%\", \"class 2: 6 / 27 = 22%\", \"class 3: 8 / 29 = 28%\", \"class 4: 7 / 26 = 27%\", then a bold total row \"pooled: 30 / 110 = 27%\".",
+        "Pool the year group: One class is a small sample, so pool the results from four classes.",
+        "pool / twenty-seven per cent / better estimate",
+        "On \"pool\" the four tally sheets slide together into one. On \"jump around\" the four percentages pulse in turn; on \"better estimate\" the pooled row rings teal with the tag \"bigger sample\".",
+        "explain",
+        "the table shrinks to a strip; a four-row class table writes: \"class 1: 9 / 28 = 32%\", \"class 2: 6 / 27 = 22%\", \"class 3: 8 / 29 = 28%\", \"class 4: 7 / 26 = 27%\", then a bold total row \"pooled: 30 / 110 = 27%\". On \"pool\" the four tally sheets slide together into one. On \"jump around\" the four percentages pulse in turn; on \"better estimate\" the pooled row rings teal with the tag \"bigger sample\". Grey tag: \"add the counts, not the percentages\". Hold about 2 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "column-graph": [
+        "new",
+        "step rail \"5.",
+        "Present: a column graph: To present it, use a column graph, because the classes are separate groups, not points on a continuous scale.",
+        "column graph / starting from zero",
+        "Present\". A small tag on \"column graph\": \"column graph (a bar chart with vertical bars)\".",
+        "explain",
+        "step rail \"5. Present\". A small tag on \"column graph\": \"column graph (a bar chart with vertical bars)\". A coded column graph builds in the right zone: x-axis \"group\" with \"class 1, class 2, class 3, class 4, pooled\"; y-axis \"frequency of attached earlobes (%)\" from 0 to 40 in steps of 10; columns rise to 32, 22, 28, 27 and 27 (the pooled column in a darker fill); gaps between columns. On \"starting from zero\" the y-axis zero tick rings; a small inset shows the same columns on an axis starting at 20 with the differences looking huge, grey cross, tag \"axis must start at zero\". Title writes: \"Frequency of attached earlobes in four Year 12 classes (example data)\". A crossed chip \"line graph\" (tag \"categories, not a continuous scale\"). Hold about 2 seconds.",
+        [
+            "scribbleEllipse"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "bead-model": [
+        "new",
+        "a small grey tag \"B11: small samples bounce\" writes at the top of the right zone on \"You saw earlier\".",
+        "Why a bigger sample helps: a bead model: You saw earlier that small samples bounce around.",
+        "test it yourself / Small samples scatter",
+        "The painted bead bag (m5x-bead-bag-v1.png, item 3) sits centre with a coded tag \"200 beads: 50 red = 25%\". On \"draw ten\" ten bead plates (m5x-bead-red-v1.png, m5x-bead-white-v1.png, items 4 and 5) tumble out into a row (one red); they slide back in and the bag gives a small shake.",
+        "explain",
+        "a small grey tag \"B11: small samples bounce\" writes at the top of the right zone on \"You saw earlier\". The painted bead bag (m5x-bead-bag-v1.png, item 3) sits centre with a coded tag \"200 beads: 50 red = 25%\". On \"draw ten\" ten bead plates (m5x-bead-red-v1.png, m5x-bead-white-v1.png, items 4 and 5) tumble out into a row (one red); they slide back in and the bag gives a small shake. A dot-strip chart builds in the right zone: a horizontal axis 0 to 50 percent with a dashed line at 25 tagged \"true value\". On \"Ten-bead samples\" four amber dots land at 10, 40, 20 and 30 (row \"samples of 10\"); on \"Fifty-bead samples\" three teal dots land at 22, 28 and 26 (row \"samples of 50\"). On \"Small samples scatter\" a bracket spans the amber dots (tag \"wide spread\") and a narrow bracket spans the teal dots (tag \"close to 25%\"). Hold about 2 seconds.",
+        [
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "analyse-trend-pattern": [
+        "new",
+        "step rail \"6.",
+        "Analyse: trend and pattern: Now analyse.",
+        "trend / pattern",
+        "Analyse\". The analysis card writes in the right zone, one row per cue, each pen-linked to the graph: \"Trend (overall direction): free more common in every class\" (the four columns' free complements show above each attached column as pale outlines); \"Pattern (a repeated feature): every class 22% to 32% attached\" (a bracket across the column tops).",
+        "explain",
+        "step rail \"6. Analyse\". The analysis card writes in the right zone, one row per cue, each pen-linked to the graph: \"Trend (overall direction): free more common in every class\" (the four columns' free complements show above each attached column as pale outlines); \"Pattern (a repeated feature): every class 22% to 32% attached\" (a bracket across the column tops). Hold about 1 second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "analyse-relationship": [
+        "new",
+        "the analysis card stays; its third row writes: \"Relationship (two characteristics change together): needs both on each slip\" (a coded slip with two rows of boxes, \"earlobes\" and \"tongue rolling\").",
+        "Analyse: a relationship: A relationship is when two characteristics change together, so each slip needs both, like earlobes and tongue rolling.",
+        "relationship / no relationship",
+        "On \"Say twenty\" a 2 x 2 count grid fills: rows \"attached (30)\", \"free (80)\", columns \"can roll\", \"can't roll\": 20, 10 / 54, 26 (tag \"example data\"); on \"sixty-seven\" and \"sixty-eight\" two short bars draw beside the grid, \"attached: 20 / 30 = 67%\" and \"free: 54 / 80 = 68%\", nearly level; on \"no relationship\" a bracket joins the two bar tops with the tag \"about the same: no relationship in this sample\". On \"association",
+        "explain",
+        "the analysis card stays; its third row writes: \"Relationship (two characteristics change together): needs both on each slip\" (a coded slip with two rows of boxes, \"earlobes\" and \"tongue rolling\"). On \"Say twenty\" a 2 x 2 count grid fills: rows \"attached (30)\", \"free (80)\", columns \"can roll\", \"can't roll\": 20, 10 / 54, 26 (tag \"example data\"); on \"sixty-seven\" and \"sixty-eight\" two short bars draw beside the grid, \"attached: 20 / 30 = 67%\" and \"free: 54 / 80 = 68%\", nearly level; on \"no relationship\" a bracket joins the two bar tops with the tag \"about the same: no relationship in this sample\". On \"association, not proof\" a tag writes: \"association, not cause (B11)\". A sentence-starter strip writes along the bottom: \"In this sample, ... was more common than ...\" Hold about 1 second.",
+        [
+            "DrawPath",
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "limitations": [
+        "new",
+        "the limitations card writes, three columns \"Limitation / Why it matters / Improvement\", one row per cue: \"one school, 110 students / may not represent other places / sample several schools\"; \"self-judging, in-between lobes / classification errors / clear definition card, unsure box, practise on the diagrams first\"; then two summary chips: \"valid: measures what it claims (clear definitions, unsure ",
+        "Limitations, validity and reliability: Then the limits.",
+        "one school / valid / reliable",
+        "On \"in this sample\" a pair of chips: \"in this sample\" (teal tick) and \"in all people\" (grey cross). Hold about 2 seconds (reading hold).",
+        "explain",
+        "the limitations card writes, three columns \"Limitation / Why it matters / Improvement\", one row per cue: \"one school, 110 students / may not represent other places / sample several schools\"; \"self-judging, in-between lobes / classification errors / clear definition card, unsure box, practise on the diagrams first\"; then two summary chips: \"valid: measures what it claims (clear definitions, unsure box)\" and \"reliable: repeats agree (two counters, pool classes, recount)\". On \"in this sample\" a pair of chips: \"in this sample\" (teal tick) and \"in all people\" (grey cross). Hold about 2 seconds (reading hold).",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 2 seconds (reading hold)"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no tables, graphs or cards from earlier.",
+        "Unseen transfer: attempt (countdown, 10 seconds), with every demand and condition on screen and nothing answer-bearing",
+        "eighteen attached / forty-two free / thirty attached / thirty free",
+        "The card for \"attempt (countdown, 10 seconds)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+        "explain",
+        "the board clears: no tables, graphs or cards from earlier. The attempt card writes on: a two-row table \"group / attached / free\": \"A / 18 / 42\", \"B / 30 / 30\". Demands: \"(a) Frequency of attached earlobes in each group.\" \"(b) Compare the groups.\" \"(c) One limitation of the data.\" Three answer boxes. Nothing answer-bearing: no totals column, no percentages, no formula. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The card stays on screen during and after the countdown.",
+        [
+            "Countdown ring",
+            "Enter reveals"
+        ],
+        "Quiet answer-free thinking hold with a 10 second countdown"
+    ],
+    "feedback": [
+        "adjust",
+        "the card shrinks to a strip.",
+        "Feedback (brief): Each group has sixty people.",
+        "thirty per cent / fifty per cent",
+        "On \"sixty people\" a totals column writes on: \"60\", \"60\". On \"thirty per cent\" the working \"18 / 60 x 100 = 30%\" writes in row A; on \"fifty per cent\" \"30 / 60 x 100 = 50%\" in row B.",
+        "explain",
+        "the card shrinks to a strip. On \"sixty people\" a totals column writes on: \"60\", \"60\". On \"thirty per cent\" the working \"18 / 60 x 100 = 30%\" writes in row A; on \"fifty per cent\" \"30 / 60 x 100 = 50%\" in row B. Answer lines: \"(b) higher in group B (50% vs 30%) in these samples\"; \"(c) small sample from one school; difference could be chance\". On \"eighteen by forty-two\" the chip \"18 / 42 = 43%\" writes on and takes a grey scribble cross, tag \"divide by the whole group\". Hold about 1 second.",
+        [
+            "chip travel",
+            "scribbleEllipse",
+            "Mark cross"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, one line per cue: \"Agree; anonymous.\" \"Define first (with unsure).\" \"Two counters.\" \"Frequency = count / stated total.\" \"Column graph from zero.\" \"Name the limits; 'in this sample'.\" The column graph returns small along the bottom.",
+        "Decision rule and handoff: So, to collect frequency data well: get agreement and keep it anonymous, define the categories first, count with two people, divide by the right total and say which one, graph it clearly, and name the limits.",
+        "Next",
+        "On \"Next\" a chip \"Next: DNA sequencing and profiling\" appears with a small coded base-tile row. Hold about 1 second.",
+        "explain",
+        "the plan card writes, one line per cue: \"Agree; anonymous.\" \"Define first (with unsure).\" \"Two counters.\" \"Frequency = count / stated total.\" \"Column graph from zero.\" \"Name the limits; 'in this sample'.\" The column graph returns small along the bottom. On \"Next\" a chip \"Next: DNA sequencing and profiling\" appears with a small coded base-tile row. Hold about 1 second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes and the memory aid",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
 LESSONS = {
     'b3b': {
         'design': D + 'lessons/bio-m5-b03b.md',
@@ -1585,6 +3276,83 @@ LESSONS = {
         'teaching': {"task": "Explain why some crosses do not give 3 to 1, and tell sex linkage, incomplete dominance, co-dominance and multiple alleles apart.", "causalExplanation": "A gene on the X has no partner on the Y, so a male with one recessive allele has nothing to hide it and shows it, while a female needs two. A father gives his X to every daughter and his Y to every son, so sons depend on the mother, a father never passes an X-linked allele to a son, and all his daughters are carriers. That is why X-linked recessive conditions are far more common in males and why an affected daughter of an unaffected father rules the pattern out. For other relationships, read the heterozygote first. One working enzyme copy makes less pigment, so a snapdragon heterozygote is pink, and the alleles do not blend because red and white return. In roan cattle each hair is fully red or fully white, so both alleles are expressed. Two heterozygotes give 1 : 2 : 1 in both because the heterozygote looks different from both homozygotes. The ABO gene has three alleles in the population but each person carries two, A and B are co-dominant, and the i enzyme does not work, so type O is only two i alleles and an A parent and a B parent who each carry i can have any group.", "conversationalApproach": "Opens on the white-eyed flies that were all male, builds the sex chromosomes and Morgan's cross on a square with daughter and son bands, applies it to haemophilia and the pedigree pattern, then asks why not every cross gives 3 to 1 and teaches incomplete dominance, co-dominance and ABO by reading the heterozygote first, gives the memory aids, then asks two harder unseen items with a short pause and brief feedback.", "openingDecision": "Morgan's F2 flies gave white eyes again, but every white-eyed fly was male. Why would eye colour care whether a fly is male or female, and why do not all crosses give 3 to 1?", "understandingCheck": "Red-green colour blindness is an X-linked recessive allele: a woman with normal vision whose father was colour-blind has children with a man with normal vision, so find the chance of a colour-blind son among all children and among sons, and say whether a daughter could be colour-blind. Then a type A mother and a type B father have a type O child: give the genotypes and the chance that the next child is type AB.", "curriculumScope": "Model the formation of new combinations of genotypes produced during meiosis, including interpreting examples of sex-linkage, co-dominance, incomplete dominance and multiple alleles, and construct and interpret information from pedigrees and Punnett squares (Module 5, B5-IQ4-02, ACSBL085). X-linked dominance, Y-linked traits, Rh factor, epistasis and conditional probability are deferred."},
         'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted red and white-eyed flies, snapdragons, roan cattle and red blood cells, and coded X and Y chips with allele tags, daughter and son bands on the Punnett grid, a heterozygote board of rows, hair and petal zoom circles, antigen marks on a cell, a data-driven pedigree and a genotype table. Genotypes use superscripts on screen, never colour only. No people are drawn.", "transitionPlan": "The B8 jar and fly plates open the lesson and give way to the sex chromosome panels and the cross board for scenes 2 to 5; the heterozygote board builds one row per relationship from scene 6 to scene 9 and the cross board returns for the ABO square; each attempt card clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chip slides in; scene crossfade with settle."},
         'rows': B10_ROWS,
+    },
+    'b13': {
+        'design': D + 'lessons/bio-m5-b13.md',
+        'meta': {"title": "What Big Population Genetics Data Can Show", "subtitle": "What can data pooled from huge numbers of people (or animals) show that one family or one hospital can't, and how far can we trust what it shows?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 22, "lessonIntent": "saying what a large-scale collaborative project is (many researchers and sites pooling data); explaining why a large sample detects a small effect that chance hides in a small one, giving stronger inference but not certainty; describing how pooled frequency data revealed the sickle allele as unexpectedly common; naming the three evidence streams (pedigree, DNA, frequency) and why their agreement matters; explaining heterozygote advantage with malaria; giving two reasons a matching pattern is not proof (coincidence; founders and chance in a small group); explaining how diversity data guide conservation and why diversity does not guarantee survival; explaining how shared variants indicate more recent common ancestry and what the 1000 Genomes pattern suggests; saying the reference genome is a composite, not everyone's genome; stating what large data improve and what they do not remove; applying this to unseen frequency and diversity data."},
+        'hold_seconds': 10,
+        'holds': ['attempt', 'attempt-two'],
+        'ids': ['hook', 'why-scale', 'sickle-puzzle', 'three-streams', 'malaria-overlay', 'match-not-proof', 'conservation', 'human-evolution', 'improves-not-removes', 'memory', 'attempt', 'feedback-one', 'attempt-two', 'feedback-two', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B12: sequencing reads base order, profiling compares selected markers; sequencing thousands of people gives an allele's frequency. From B11: allele frequency = copies / all copies; a SNP is a one-base difference; association is not cause; sample size and representation limit conclusions. From B9: unaffected parents with an affected child show a recessive trait; carriers. From B7: the sickle allele is one base change in the haemoglobin gene; sickle-shaped red cells. Year 11 (Biological Diversity): natural selection removes alleles that lower survival or reproduction. Not assumed: large-scale collaborative project, inference, heterozygote advantage, genetic diversity as a population measure, founder, reference genome.", "startsWith": "The hook: UK Biobank is a shared research project that began recruiting in 2006. Half a million volunteers in Britain, aged 40 to 69, gave blood samples and agreed to link their health records.", "stopsAfter": "saying what a large-scale collaborative project is (many researchers and sites pooling data); explaining why a large sample detects a small effect that chance hides in a small one, giving stronger inference but not certainty; describing how pooled frequency data revealed the sickle allele as unexpectedly common; naming the three evidence streams (pedigree, DNA, frequency) and why their agreement matters; explaining heterozygote advantage with malaria; giving two reasons a matching pattern is not proof (coincidence; founders and chance in a small group); explaining how diversity data guide conservation and why diversity does not guarantee survival; explaining how shared variants indicate more recent common ancestry and what the 1000 Genomes pattern suggests; saying the reference genome is a composite, not everyone's genome; stating what large data improve and what they do not remove; applying this to unseen frequency and diversity data.", "nextLesson": "what population patterns can and cannot predict about one person's risk (route entry bio-m5-g03)."},
+        'teaching': {"task": "What can data pooled from huge numbers of people (or animals) show that one family or one hospital can't, and how far can we trust what it shows?", "causalExplanation": "Causes: why scale helps (chance swamps small effects in small samples, 2); why the sickle map is a puzzle (selection should remove a harmful allele, 3); why three streams are needed (each misses something, 4); why carriers are favoured (no anaemia, less severe malaria, so more children, 5); why a match is not proof (coincidence; founders, 6); why diversity matters (more alleles, more chance some resist a new disease, 7); why shared variants mean relatedness (inherited from common ancestors, 8). Visible case: one map, one devil tray pair, one bar chart. Video advantage: the simulation settles live; the malaria layer slides over the allele map; founder beads carry an allele to an island; a disease passes along two trays. Thinking opportunities: two unseen data items with every value and demand on screen. Reading load: one board at a time; the scene 8 frame is the busiest and builds one element per cue.", "conversationalApproach": "Opens on the hook (hook (half a million volunteers)), then works through why scale matters, the sickle cell puzzle, three kinds of evidence, the malaria overlay, a match isn't proof and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "UK Biobank is a shared research project that began recruiting in 2006. Half a million volunteers in Britain, aged 40 to 69, gave blood samples and agreed to link their health records. So what can data from half a million people show that one family, or one hospital, never could? And how far can we trust it?", "understandingCheck": "11a is a data table (example data, labelled) of a red blood cell variant's frequency and malaria level in six regions, one of them an island that breaks the trend: it tests describing a trend, naming a relationship as a suggestion, and giving a rival explanation. 11c is conservation data (example data) for a mainland and an island wallaby population: it tests reading diversity, inferring population history and naming a management use, with the diversity trap. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 s): answer, key reason, one crossed-out classic mistake. No mark-allocation talk.", "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, B5-IQ5-03 to B5-IQ5-06, p 50): \"investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships, for example: (ACSBL064, ACSBL073)\" with the examples \"the use of population genetics data in conservation management\", \"population genetics studies used to determine the inheritance of a disease or disorder\" and \"population genetics relating to human evolution\". The two spaces before \"for example\" are in the official DOCX extraction (pack note). Route action B-collaborative-data. The parent line is marked as a depth-study or practical opportunity; this video supplies the concepts and two analysis tasks, not a student investigation. Update the ledger row for B-collaborative-data when this design passes review."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Three boards, one at a time. (1) The data board (scenes 1, 2, 9): a coded grid of many small sample-tube chips that pools into one data bar; SampleBounce from B11 (seeded rng) reused to show a small study's estimate bouncing and a large study's estimate settling. (2) The map board (scenes 3 to 6, attempt 1): a coded world outline (simplified public-domain outline, for example Natural Earth 110 m, drawn as a single stroke; no painted map), with region shading for allele frequency drawn from banded values (legend with written bands, never colour only), a second overlay layer for malaria, and evidence cards (pedigree, DNA strip, frequency) docked at the side. (3) The population board (scenes 7, 8): allele-bead trays (B11's bead look) for diversity, and a coded bar chart and a simple coded similarity tree for the 1000 Genomes pattern. Individuals are never drawn as people: pedigree symbols, tube chips or beads only. Amber is the emphasis colour only.", "transitionPlan": "The data board (sample tubes pooling into one bar and the small-against-large simulation) opens the lesson and gives way to the map board for scenes 3 to 6, where the allele map, the evidence cards and the malaria overlay build on one outline; the population board takes over for scenes 7 and 8 and the data board returns for scene 9; each attempt card clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chip slides in; scene crossfade with settle."},
+        'rows': BIO_B13_ROWS,
+    },
+    'bg03': {
+        'design': D + 'lessons/bio-m5-g03.md',
+        'meta': {"title": "Genetic Risk: Population Patterns and Individual Limits", "subtitle": "If a big study shows that carriers of a variant are at high risk, what can that predict for a group, and what can't it tell one person?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 23, "lessonIntent": "reading a cohort estimate as a proportion of a group (about 72 in 100 BRCA1 carriers by age 80) and saying it cannot say which individuals; explaining why a variant raises risk without deciding the outcome (a working second copy must also be lost; other genes, environment and chance); saying that higher probability is not certainty and a negative result is not a guarantee; estimating a carrier frequency from the incidence of a recessive condition (q squared, q, p, 2pq) and explaining why carriers cannot be counted directly; stating the Hardy-Weinberg conditions, that deviation shows a force acting, and that predictions hold best in large populations over short times; explaining why a genetic result also gives information about relatives (one in two for each child, with the 2003 Icelandic ruling as a consequence); using strong, cautious wording; applying this to an unseen overclaim and an unseen carrier estimate."},
+        'hold_seconds': 10,
+        'holds': ['attempt', 'attempt-two'],
+        'ids': ['hook', 'group-not-person', 'why-not-decided', 'not-certain', 'carrier-estimate', 'when-predictions-hold', 'shared-with-relatives', 'strong-wording', 'memory', 'attempt', 'feedback-one', 'attempt-two', 'feedback-two', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B13: large samples give stronger inference, not certainty; a collaborative project pools data; heterozygote advantage. From B11: allele frequency = copies / all copies; association is not cause. From B9: autosomal dominant and recessive inheritance; carriers; each child of a heterozygous parent has a one in two chance of inheriting a given allele; a probability per child is not a guaranteed count. From B7: genes code for proteins; genotype and phenotype; environment can affect phenotype. From B4: DNA can be damaged and repaired (Year 11 and B4 level). Year 10 probability and square roots. Not assumed: risk pattern, the Hardy-Weinberg principle, carrier frequency estimates, the working-copy explanation.", "startsWith": "The hook: A collaborative study from several countries followed nearly 10,000 women who carry a harmful version of a gene called BRCA1 or BRCA2. Among the BRCA1 carriers, about 72 in every 100 were estimated to get breast cancer by age 80.", "stopsAfter": "reading a cohort estimate as a proportion of a group (about 72 in 100 BRCA1 carriers by age 80) and saying it cannot say which individuals; explaining why a variant raises risk without deciding the outcome (a working second copy must also be lost; other genes, environment and chance); saying that higher probability is not certainty and a negative result is not a guarantee; estimating a carrier frequency from the incidence of a recessive condition (q squared, q, p, 2pq) and explaining why carriers cannot be counted directly; stating the Hardy-Weinberg conditions, that deviation shows a force acting, and that predictions hold best in large populations over short times; explaining why a genetic result also gives information about relatives (one in two for each child, with the 2003 Icelandic ruling as a consequence); using strong, cautious wording; applying this to an unseen overclaim and an unseen carrier estimate.", "nextLesson": "Module 6, how mutation and technology change these patterns (route entry bio-m6-genetic-change-route)."},
+        'teaching': {"task": "If a big study shows that carriers of a variant are at high risk, what can that predict for a group, and what can't it tell one person?", "causalExplanation": "Causes: why a proportion cannot name individuals (it is measured across a group, 2); why one faulty copy does not decide the outcome (a working copy must also be lost, by chance, 3); why a negative result is no guarantee (most cases have other causes, 4); why carriers cannot be counted but can be estimated (they look healthy; affected babies reveal q squared; two ways to be a carrier, 5); why predictions fail in small populations (chance pushes frequencies either way, 6); why relatives share risk (one in two per child, 7). Visible case: one dot array, one chromosome pair and cell row, one stage column, one pedigree. Video advantage: dots fill and then lose their identity; one cell loses its working copy; the stage column builds; drift traces wander live. Thinking opportunities: two unseen items with every value and demand on screen. Reading load: scene 5 is the densest and builds one stage per cue with earlier results retained small.", "conversationalApproach": "Opens on the hook (hook (seventy-two in a hundred)), then works through a group proportion, not one person's future, why the gene doesn't decide on its own, probability isn't certainty, a population prediction that works, when population predictions hold and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "A collaborative study from several countries followed nearly 10,000 women who carry a harmful version of a gene called BRCA1 or BRCA2. Among the BRCA1 carriers, about 72 in every 100 were estimated to get breast cancer by age 80. So does carrying that variant mean a woman will get breast cancer? And can population genetics predict anything with real accuracy?", "understandingCheck": "10a is a cohort finding (carriers develop heart disease twice as often) with an overclaiming report about one carrier: it tests what group data support, the rewrite, and the relative-risk trap. 10c is a Hardy-Weinberg carrier estimate from a new incidence (1 in 10,000) with a reliability demand for a small isolated village: it transfers scene 5's stages and scene 6's assumptions. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working, one crossed-out classic mistake. No mark-allocation talk.", "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, B5-IQ5-03, p 50, inquiry question IQ5): \"investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships, for example: (ACSBL064, ACSBL073)\", example \"population genetics studies used to determine the inheritance of a disease or disorder\" (B5-IQ5-05). Inquiry question: \"Can population genetic patterns be predicted with any accuracy?\" Route action B-collaborative-data (shared with B13). The two spaces before \"for example\" are in the official DOCX extraction."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Three boards. (1) The risk board (scenes 1 to 4): a coded 10 x 10 dot array (dots, never people icons), with filled and open dots computed from the cohort proportion; a coded chromosome pair for the working-copy explanation; a coded cell row for \"a cell also loses that copy\". (2) The calculation board (scenes 5, 6): the task line, a givens group, a stage column; a coded population bar for affected, carriers and non-carriers (computed); a coded allele-frequency trace for large and small populations (B11's seeded rng sampling, illustrative). (3) The family and wording board (scenes 7, 8): B9's pedigree with one-in-two tags; a coded Iceland outline chip; a two-column strong and weak wording card. Amber is the emphasis colour only.", "transitionPlan": "The risk board (a 10 by 10 dot array) opens the lesson and carries scenes 1 to 4; the Hardy-Weinberg and conditions board builds in scenes 5 and 6; the relatives and wording boards follow in scenes 7 and 8; each attempt card clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chip slides in; scene crossfade with settle."},
+        'rows': BIO_BG03_ROWS,
+    },
+    'g01b': {
+        'design': D + 'lessons/bio-m5-g01.md',
+        'meta': {"title": "Trace a DNA Sequence or a Meiosis Cell: HSC-Style Practice", "subtitle": "When a question hands you a sequence or a cell you have never seen, what do you check first so the trace comes out right?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 12, "lessonIntent": "tracing a copying error through two rounds and counting the changed molecules; turning a coding strand written 3' to 5' into mRNA with ends and an amino acid chain that stops at a stop codon; tracking chromosome number and DNA mass through meiosis; listing the four products of one meiosis with one crossover and explaining why new combinations are less than half of a plant's gametes."},
+        'hold_seconds': 10,
+        'holds': ['q1-question', 'q2-question', 'q3-question', 'q4-question'],
+        'ids': ['hook', 'q1-question', 'q1-first-copy', 'q1-second-copy', 'q1-mistake', 'q2-question', 'q2-direction', 'q2-chain', 'q2-mistake', 'q3-question', 'q3-s-phase', 'q3-divisions', 'q3-mistake', 'q4-question', 'q4-chromatids', 'q4-four-cells', 'q4-limit', 'decision-board', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B4: A pairs with T, C with G; antiparallel strands with 5' and 3' ends; each original strand is a template; semi-conservative copying; a surviving error becomes a changed pair after the next copy. From B6b: template versus coding strand; mRNA is built 5' to 3' and matches the coding strand with U for T. From B6c: codon chart with mRNA codons only; start AUG; stop codons add no amino acid. From B5a: count chromosomes by centromeres; DNA is copied in interphase into two sister chromatids. From B5b: meiosis I separates homologous pairs, meiosis II separates sister chromatids; crossing over swaps matching pieces between non-sister chromatids and makes new combinations of existing alleles; four cells from one. Not assumed: DNA mass per cell (introduced in Q3 as \"the DNA follows the chromatids\"), linkage frequencies (B8, later in the route; Q4 reasons only from one cell).", "startsWith": "The hook: Exam questions on DNA and meiosis rarely ask you to recite the steps. They hand you something new, a sequence written from its 3' end, a copying error, a cell you've never seen, and ask you to trace it.", "stopsAfter": "tracing a copying error through two rounds and counting the changed molecules; turning a coding strand written 3' to 5' into mRNA with ends and an amino acid chain that stops at a stop codon; tracking chromosome number and DNA mass through meiosis; listing the four products of one meiosis with one crossover and explaining why new combinations are less than half of a plant's gametes.", "nextLesson": "proteins, phenotype and gene-environment interaction (route entry bio-m5-b07)."},
+        'teaching': {"task": "When a question hands you a sequence or a cell you have never seen, what do you check first so the trace comes out right?", "causalExplanation": "Why only one molecule changes (each strand templates its own partner; the T strand keeps the right base) (2b, 2c); why the mRNA is a copy, not a pair, of the coding strand, and why direction matters (mRNA read from 5') (3b); why GGC is not read (stop codon releases the chain) (3c); why copying doubles DNA but not chromosomes (sister chromatids share one centromere) (4b); why meiosis I halves chromosomes but not chromatid count per chromosome (4c); why only two products are new (the crossover joins two non-sister chromatids) and why the plant's overall share is lower (crossovers between these genes happen in only some cells) (5b to 5d).", "conversationalApproach": "Opens on the hook (hook), then works through q1-question (question 1: a copying error), q1-first-copy (round one), q1-second-copy (round two), q1-mistake (the classic mistake), q2-question (question 2: a strand written backwards) and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "Exam questions on DNA and meiosis rarely ask you to recite the steps. They hand you something new, a sequence written from its 3' end, a copying error, a cell you've never seen, and ask you to trace it.", "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a). Nothing answer-bearing during the holds; the checklist strip dims.", "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, p 49). B5-IQ2-01 \"model the processes involved in cell replication, including but not limited to:\" with \"mitosis and meiosis (ACSBL075)\" and \"DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding (ACSBL076, ACSBL077)\"; B5-IQ3-02 \"model the process of polypeptide synthesis, including: (ACSBL079)\" with \"transcription and translation\"; B5-IQ4-02 \"model the formation of new combinations of genotypes produced during meiosis, including but not limited to:\" (the crossing over part only); and, for the crossing over skill by name (Revision 2), B5-IQ4-01 \"conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, including the crossing over of homologous chromosomes, fertilisation and mutations (ACSBL084)\", whose practical coverage stays with P01 and P02. Practice and transfer only: the ledger rows stay with their core videos (B4, B5b, B6b, B6c, B8); G01 adds a practice row, not first coverage."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G03c layout: top-left the short task line, kept until the answer lands; under it the stimulus strip (sequence, cell or chromosome); under that the grouped givens card; the working fills the right two thirds; the type badge sits top-right (\"Replication\", \"Transcription and translation\", \"Meiosis: counts\", \"Meiosis: alleles\"). A trace checklist strip on the far left carries three rows, \"which strand?\", \"which end?\", \"what am I counting?\", and ticks the row each question used. It dims to an outline during every countdown. Earlier questions are cleared before the next card writes on.", "transitionPlan": "One practice board persists: the shared question card sits at the top left and each question clears the working area and writes on its stimulus; working scenes add one reasoning stage at a time, the classic-mistake chip crosses out at the end of each question, and the next question card slides in; the decision board gathers the four methods before the notes; scene crossfade with settle."},
+        'rows': BIO_G01B_ROWS,
+    },
+    'g02b': {
+        'design': D + 'lessons/bio-m5-g02.md',
+        'meta': {"title": "Inheritance Probability: Unfamiliar Crosses and Pedigrees", "subtitle": "When a cross or a family tree is new to you, how do you choose the model, find the probability, and say what the evidence can and cannot prove?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 18, "lessonIntent": "choosing incomplete dominance from a third phenotype and predicting a 1:2:1 cross and a two-birth probability; explaining why tortoiseshell cats are almost always female and finding sex-specific and overall probabilities in an X-linked cross; finding a 2/3 carrier chance and a 1/6 child probability across two families, then updating to 1/4 on new evidence; ruling out X-linked recessive with named individuals, explaining why autosomal dominant and recessive both fit, and judging which is more likely for a rare condition."},
+        'hold_seconds': 10,
+        'holds': ['q1-question', 'q2-question', 'q3-question', 'q4-question'],
+        'ids': ['hook', 'q1-question', 'q1-model', 'q1-chance', 'q1-mistake', 'q2-question', 'q2-why-female', 'q2-square', 'q2-mistake', 'q3-question', 'q3-sure', 'q3-two-thirds', 'q3-update', 'q4-question', 'q4-rule-out', 'q4-both-fit', 'q4-more-likely', 'decision-board', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B9: dominant, recessive, homozygous, heterozygous, carrier; each gamete gets one allele; the 2 x 2 square; a ratio is a chance per offspring; pedigree symbols and numbering; \"Hidden in the parents: recessive. Hidden in the child: dominant.\" with its assumptions. From B10: X and Y; a male's single X; \"Dad gives his X to daughters and his Y to sons\"; \"of all children\" against \"of sons\"; X-linked recessive pedigree pattern and the rule-out; \"Incomplete is in-between. Co shows both.\" Year 10: multiply for \"and\" (introduced in one sentence in Q1 as each birth being a separate chance). Not assumed: conditional probability (Q3 explains it as crossing out the box the person cannot be), X-linked dominant (not used).", "startsWith": "The hook: Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you.", "stopsAfter": "choosing incomplete dominance from a third phenotype and predicting a 1:2:1 cross and a two-birth probability; explaining why tortoiseshell cats are almost always female and finding sex-specific and overall probabilities in an X-linked cross; finding a 2/3 carrier chance and a 1/6 child probability across two families, then updating to 1/4 on new evidence; ruling out X-linked recessive with named individuals, explaining why autosomal dominant and recessive both fit, and judging which is more likely for a rare condition.", "nextLesson": "population frequencies and SNP evidence (route entry bio-m5-b11)."},
+        'teaching': {"task": "When a cross or a family tree is new to you, how do you choose the model, find the probability, and say what the evidence can and cannot prove?", "causalExplanation": "Why some chicks are black and white (the heterozygous parents each pass one allele; the alleles separate, they did not blend) (2b); why multiply (each chick is a separate fertilisation) (2c); why tortoiseshell needs two X chromosomes (both alleles must be present) (3b); why sons cannot get the father's X (he gives sons his Y) (3c); why the man is a certain carrier (his mother could only give a recessive allele) (4b); why 2/3 (the woman cannot be the affected box, leaving three equally likely boxes) (4c); why the second child's chance changes (an affected child proves she is a carrier) (4d); why X-linked recessive fails (an affected mother would have only affected sons) (5b); why both autosomal patterns fit (no giveaway trio) (5c); why dominant is more likely (recessive needs two unrelated carriers for a rare allele) (5d).", "conversationalApproach": "Opens on the hook (hook), then works through q1-question (question 1: Andalusian chickens), q1-model (choose the model, fill the square), q1-chance (two chicks, then only blue), q1-mistake (the classic mistake), q2-question (question 2: tortoiseshell cats) and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you.", "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a). The type badge is hidden during each hold in Q1 and Q2 because it names the model.", "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, B5-IQ4-02, p 49): \"model the formation of new combinations of genotypes produced during meiosis, including but not limited to:\" with \"interpreting examples of autosomal, sex-linkage, co-dominance, incomplete dominance and multiple alleles (ACSBL085)\" and \"constructing and interpreting information and data from pedigrees and Punnett squares\". Practice and transfer: ledger rows p1058 and p1059 stay with B9 and B10; G02 adds the practice row and the two items B9 deferred here (the 2/3 conditional probability and choosing between competing modes)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G03c layout: top-left the short task line; under it the stimulus (painted organism plates or a pedigree); under that the grouped givens card; the working fills the right two thirds; a type badge top-right (\"Incomplete dominance\", \"X-linked\", \"Pedigree: probability\", \"Pedigree: which pattern?\"). A first-moves strip on the far left carries three rows: \"1 choose the model\", \"2 write the genotypes you are sure of\", \"3 combine the chances\" and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Pedigrees use B9's data-driven Pedigree (standard symbols only, Roman numerals, individual numbers); no people, faces or bodies.", "transitionPlan": "One practice board persists: the question card at the top left, the working area below it. Each question clears the area, writes on its stimulus (square or pedigree) and then builds one reasoning stage per scene, with the classic-mistake chip crossed out at the end; the decision board gathers the four methods before the notes; scene crossfade with settle."},
+        'rows': BIO_G02B_ROWS,
+    },
+    'bp01': {
+        'design': D + 'lessons/bio-m5-p01.md',
+        'meta': {"title": "Build and Assess DNA Replication and Protein Synthesis Models", "subtitle": "How do you build a model of DNA copying and of making a polypeptide, and how do you judge what each model shows and what it hides?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 11, "lessonIntent": "stating what each piece and colour represents; building a paired, antiparallel DNA stretch whose tabs only fit A-T and C-G; modelling replication by separating at the tabs and adding new-colour cards, and recording two molecules each with one original strand; linking the two copies to sister chromatids; modelling transcription on the template strand with U for T and the gene unchanged; modelling translation codon by codon with tRNA cards and beads to a stop codon; recording a codon, anticodon and amino acid table; assessing each model by what it represents well, what it leaves out or distorts, and one improvement per limit; applying this to an unseen one-colour replication model. No enzyme names required, no Okazaki fragments, no folding mechanism (B7)."},
+        'hold_seconds': 10,
+        'holds': ['attempt'],
+        'ids': ['hook', 'aim-kit', 'cut-nucleotides', 'make-synthesis-pieces', 'build-molecule', 'replicate', 'record-check', 'transcribe', 'translate', 'results-table', 'assess-strengths', 'assess-limits', 'improvements', 'attempt', 'feedback', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "Entry knowledge: B4 (nucleotide = sugar, phosphate, base; A-T and C-G; hydrogen bonds between bases, covalent backbone; antiparallel 5' and 3' ends; template; semi-conservative replication; original blue and new green), B5a (copied chromosome = two sister chromatids; mitosis separates them), B6b (template strand; mRNA built with U opposite A; gene unchanged), B6c (codons of three; ribosome; tRNA with an anticodon and one amino acid; AUG start; stop codons; codon chart; a polypeptide must fold). Year 11 Working Scientifically: models represent part of reality and have limitations.", "startsWith": "The hook: This strip of paper cards is a model of twelve base pairs of DNA. It can't do anything a real cell does.", "stopsAfter": "stating what each piece and colour represents; building a paired, antiparallel DNA stretch whose tabs only fit A-T and C-G; modelling replication by separating at the tabs and adding new-colour cards, and recording two molecules each with one original strand; linking the two copies to sister chromatids; modelling transcription on the template strand with U for T and the gene unchanged; modelling translation codon by codon with tRNA cards and beads to a stop codon; recording a codon, anticodon and amino acid table; assessing each model by what it represents well, what it leaves out or distorts, and one improvement per limit; applying this to an unseen one-colour replication model. No enzyme names required, no Okazaki fragments, no folding mechanism (B7).", "nextLesson": "how a chain of amino acids folds into a protein and becomes a trait (route entry bio-m5-b07)."},
+        'teaching': {"task": "How do you build a model of DNA copying and of making a polypeptide, and how do you judge what each model shows and what it hides?", "causalExplanation": "(1) building a model makes you follow the real rules, which is why it is worth doing (1); (2) a fixed colour key lets you track old and new strands (2); (3) tab shapes that only fit the partner model complementary pairing, with two or three notches for the number of hydrogen bonds (3); (4) taped backbones and touching tabs model strong covalent bonds and weak hydrogen bonds, so strands separate without breaking (4, 5); (5) each template fixes its new partner, so both copies match the original and each keeps one original strand (5, 6); (6) the template strand alone is read to make mRNA, with U for T, and the gene is unchanged (7); (7) a ribosome reads three bases at a time and each tRNA links one codon to one amino acid, so the order of codons sets the order of beads (8, 9); (8) a model is assessed by what it represents accurately, what it leaves out or distorts, and how to improve it (10 to 12).", "conversationalApproach": "Opens on the hook (hook (a model on the bench)), then works through aim and kit, step 1: cut nucleotides that only fit one partner, make the pieces for the second model, step 2: build the starting molecule, step 3: model replication and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "This strip of paper cards is a model of twelve base pairs of DNA. It can't do anything a real cell does. So why build it?", "understandingCheck": "a replication model built with one colour of card for both original and new strands; both daughter molecules match the original. Demand: explain why the model cannot show semi-conservative replication, and suggest one change. Answer: old and new strands look identical, so you cannot see that each daughter keeps one original strand; use two colours (original and new). Crossed mistake: \"the model is fine because the sequences match\" (matching shows accurate copying, not which strand is old).", "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extracts ../site-extracts/bio-m5-l06.md and ../site-extracts/bio-m5-l07.md, and from site lessons 06 and 07 (read 18 Oct: lesson 06 \"Build and Pair\" activity, DNA Builder tool, Explain walkthrough and the \"Beyond the syllabus\" box; lesson 07 Explain walkthrough). Route entry: bio-m5-p01 (\"Build and assess replication and synthesis models\", playlist order 12, practical-support, prerequisite bio-m5-b06c, next bio-m5-b07). Route start: \"Learners construct and use a representation rather than only watch one.\" Route stop: \"Support construction, comparison and critique of DNA forms, replication/division and synthesis models; collect learner explanations/limitations as separate evidence.\" Route syllabus actions (candidates): B-DNA-replication, B-mitosis, B-meiosis, B-continuity, B-DNA-forms, B-transcription, B-translation, B-mRNA-tRNA. This design serves B-DNA-replication, B-transcription, B-translation and B-mRNA-tRNA; B-mitosis is linked in one sentence; B-meiosis and B-continuity sit with P02 and B5b; B-DNA-forms with B6a."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "B4's coded BasePiece jigsaw tiles, Strand ribbon with 5' and 3' tags and HBonds (two or three dotted lines), restyled as paper cards on the explainer paper grain (public/assets/explainer-paper-grain.png): card body tinted by strand (B4 blue original and green new; yellow RNA and orange tRNA are kit colours for this practical), base letter always printed, tab shape by pair family (B4 rule). B6c's codon chart excerpt and anticodon chip style. b5x-zoom-helix-v1.png (real helix, scene 11 comparison) and m5x-ribosome-v1.png (real ribosome, scene 10 and 11 comparison). B5a's b5x-chromosome-duplicated-v1.png (scene 6 link, small). The explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam. New coded items: the colour-key chip, the method step rail (step 1 to 5, one lit at a time), the record sheet (sketch plus labels), the codon results table, the assessment card (three columns: represents well / leaves out or distorts / improvement), the attempt card. New painted plates: see the Codex asset brief. - No human figures: every step is shown as cards moving on a bench by themselves (slide, flip, snap), tape strips appearing, scissors resting beside cut cards. No hands.", "transitionPlan": "One bench persists across the practical: the step rail along the top shows where the student is, the bench holds only the pieces the current step uses, and the right zone holds one card at a time. Replication is built on the bench, transcription and translation reuse the same twelve-base stretch, the results table and assessment cards follow, the attempt card clears the bench and feedback shrinks it to a strip; scene crossfade with settle."},
+        'rows': BIO_BP01_ROWS,
+    },
+    'bp02': {
+        'design': D + 'lessons/bio-m5-p02.md',
+        'meta': {"title": "Model Meiosis, Fertilisation and Mutation with Pop-Beads", "subtitle": "How do you model meiosis, fertilisation and mutation to predict the genotypes offspring can have, and how far can you trust the predictions?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 15, "lessonIntent": "building a parent cell with colour-tracked homologues and alleles at matching positions; copying each chromosome into sister chromatids and counting by centromeres; modelling crossing over at matching points and recording the new combinations; randomising each pair with a coin and dividing twice into four gametes; listing the four gamete types without crossing over (2 x 2) and the extra crossover types; modelling random fertilisation by random draw; adding a deliberate mutation and tracing the new allele into an offspring; tallying offspring for one gene and comparing observed with expected; assessing the model (strengths, limitations, validity, reliability); evaluating a conclusion drawn from too few trials. No Punnett square method (B9), no dihybrid ratios, no linkage maps."},
+        'hold_seconds': 10,
+        'holds': ['attempt'],
+        'ids': ['hook', 'aim-kit', 'build-parent', 'copy', 'cross-over', 'line-up-divide', 'record-gametes', 'fertilise', 'mutate', 'results', 'assess-strengths', 'assess-limits', 'valid-reliable', 'attempt', 'feedback', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "Entry knowledge: B5a (chromosome, homologous pair, diploid, haploid, sister chromatids, count centromeres), B5b (one copy, two divisions; prophase I pairing and crossing over; metaphase I either way round, independently; anaphase I partners separate; meiosis II chromatids separate; 2^n; fertilisation restores the number), B8 (four sources; reshuffle against new allele; gamete types for two genes; crossover combinations rarer; mutation inherited only in the egg or sperm line). Allele and genotype from B5b and B8. Punnett squares are not assumed (B9 comes next); the expected 1 : 2 : 1 in scene 10 is given from the gamete reasoning in one clause (\"each parent gives either allele half the time\") with a grey tag \"Punnett squares: next video\".", "startsWith": "The hook: Two parent plants can produce a hundred seeds, and no two are quite the same. Can you predict which genotypes their offspring could have?", "stopsAfter": "building a parent cell with colour-tracked homologues and alleles at matching positions; copying each chromosome into sister chromatids and counting by centromeres; modelling crossing over at matching points and recording the new combinations; randomising each pair with a coin and dividing twice into four gametes; listing the four gamete types without crossing over (2 x 2) and the extra crossover types; modelling random fertilisation by random draw; adding a deliberate mutation and tracing the new allele into an offspring; tallying offspring for one gene and comparing observed with expected; assessing the model (strengths, limitations, validity, reliability); evaluating a conclusion drawn from too few trials. No Punnett square method (B9), no dihybrid ratios, no linkage maps.", "nextLesson": "Punnett squares and pedigrees (route entry bio-m5-b09)."},
+        'teaching': {"task": "How do you model meiosis, fertilisation and mutation to predict the genotypes offspring can have, and how far can you trust the predictions?", "causalExplanation": "(1) the model can predict which offspring genotypes are possible, and test those predictions against chance (1); (2) colours track where each chromosome came from (2); (3) matching sticker positions because homologues carry the same genes at the same places (3); (4) copying before meiosis gives two sister chromatids, still one chromosome (4); (5) breaking at matching points means a crossover exchanges the same genes, so nothing is lost or doubled, and it makes new combinations (5); (6) a coin per pair makes each pair's direction random and independent (6); (7) without crossing over there are 2 x 2 = 4 gamete types; crossing over adds rarer mixed types (7); (8) a random draw models random fertilisation and restores two of each chromosome (8); (9) only mutation makes a new allele, and only in a gamete-making cell is it passed on (9); (10) observed counts differ from expected by chance; pooling brings them closer (10); (11) assessment: what the model represents, what it leaves out, and how to keep it valid and make it reliable (11 to 13).", "conversationalApproach": "Opens on the hook (hook (one pair of parents, many offspring)), then works through aim and kit, step 1: build the parent cell, step 2: copy each chromosome, step 3: crossing over, step 4: line up and divide twice and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "Two parent plants can produce a hundred seeds, and no two are quite the same. Can you predict which genotypes their offspring could have?", "understandingCheck": "a group models Rr x Rr but runs only four fertilisations; none gives rr; they conclude rr offspring cannot occur. Demand: evaluate. Answer: not supported; rr expected about one in four; four trials can easily give none by chance (about one time in three, (3/4)^4 = 0.32); repeat many times and pool. Crossed mistake: \"the model is wrong\" (it is the sample size, not the model).", "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extracts ../site-extracts/bio-m5-l08.md and ../site-extracts/bio-m5-l13.md, and from site lesson 13 Activity 3 (\"Model Meiosis to Predict Gamete Variation\", read in full 18 Oct) and its Predict walkthrough (AaBb unlinked gives four gamete types; expected, not guaranteed, proportions), plus lesson 08's key ideas (2n to n to 2n; crossing over in prophase I; independent assortment at metaphase I). Route entry: bio-m5-p02 (\"Model meiosis, fertilisation and mutation in offspring\", playlist order 16, practical-support branch, prerequisite bio-m5-b08, next bio-m5-b09). Route start: \"A learner physically or interactively models the required processes.\" Route stop: \"Prepare practical modelling of offspring genotype variation through crossing over, fertilisation and mutation; retain actual conduct/results separately.\" Route syllabus actions: B-genotype-practical, B-new-genotypes. Syllabus (2017, p49): B5-IQ4-01 \"conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, including the crossing over of homologous chromosomes, fertilisation and mutations (ACSBL084)\"."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "B5b's lesson-local AlleleBead (white with ink outline and letter), PairUp, CrossOver, TwoWays (the coin flip, coded in B5b, reused here as the coin), CombosGrid; B8's amber-only-for-new-allele rule and GameteList; B5a's ModelCell counting chips; the real-structure comparison plates b5x-chromosome-duplicated-pink-v1.png, b5x-chromosome-duplicated-teal-v1.png and b5x-cell-dividing-nospindle-v1.png (scenes 4 and 11, small, \"the real thing\"). The explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam. Bead chains are built in code from the painted single pop-bead plates (Codex items, shared with bio-m5-p01). New coded items: the method step rail, the colour key chip, the gamete record table, the tally table and a small expected-against-observed column chart (counts, labelled axes), the assessment card, the attempt card. - No human figures: chromosomes are bead chains on a bench; cells are loops of string; gamete cards are face-down index cards that shuffle themselves; the coin flips on its own. No hands.", "transitionPlan": "One bench persists across the practical: the step rail along the top shows where the student is, the bench holds only the beads and string the current step uses, and the right zone holds one card at a time. The parent cell is built, copied, crossed over, divided, recorded, fertilised and mutated in order, the results and assessment cards follow, the attempt card clears the bench and feedback shrinks it to a strip; scene crossfade with settle."},
+        'rows': BIO_BP02_ROWS,
+    },
+    'bp03': {
+        'design': D + 'lessons/bio-m5-p03.md',
+        'meta': {"title": "Collect and Present Population Frequency Data", "subtitle": "How do you collect, record and present data on how common a characteristic is, and how sure can you be about what it shows?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 20, "lessonIntent": "choosing a visible, non-sensitive, non-identifying characteristic and saying why it is counted, not converted to alleles; stating the agreement and anonymity rules; writing definitions with an \"unsure\" category before counting; describing an anonymous slip method with two counters; recording a tally table and calculating frequencies with a stated total; pooling classes and saying why the pooled value is a better estimate; drawing a column graph with correct conventions; explaining with a bead model why small samples scatter; identifying a trend, a pattern and a relationship (association, not cause); naming limitations and improvements to validity and reliability; using cautious language; applying all of it to the site's two-group earlobe task. SNP data analysis stays with B11."},
+        'hold_seconds': 10,
+        'holds': ['attempt'],
+        'ids': ['hook', 'aim-characteristic', 'agreement-privacy', 'define-categories', 'method', 'record-frequency', 'pool', 'column-graph', 'bead-model', 'analyse-trend-pattern', 'analyse-relationship', 'limitations', 'attempt', 'feedback', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "Entry knowledge: B11 (frequency = count over stated total, table and bar chart; allele frequency by copies; recessive phenotype frequency; SNPs; association, not cause; sample limits: size, representation, consistent definitions). Year 11 Working Scientifically: validity, reliability, graph conventions.", "startsWith": "The hook: In one class, nine of the twenty-eight students who were counted have attached earlobes. Does that tell you how common attached earlobes are in everyone your age?", "stopsAfter": "choosing a visible, non-sensitive, non-identifying characteristic and saying why it is counted, not converted to alleles; stating the agreement and anonymity rules; writing definitions with an \"unsure\" category before counting; describing an anonymous slip method with two counters; recording a tally table and calculating frequencies with a stated total; pooling classes and saying why the pooled value is a better estimate; drawing a column graph with correct conventions; explaining with a bead model why small samples scatter; identifying a trend, a pattern and a relationship (association, not cause); naming limitations and improvements to validity and reliability; using cautious language; applying all of it to the site's two-group earlobe task. SNP data analysis stays with B11.", "nextLesson": "DNA sequencing and profiling for inheritance studies (route entry bio-m5-b12)."},
+        'teaching': {"task": "How do you collect, record and present data on how common a characteristic is, and how sure can you be about what it shows?", "causalExplanation": "(1) one class's count is not yet a population frequency: method, sample size and classification decide what it means (1); (2) the characteristic must be visible, quick, non-sensitive, and is not a one-gene trait, so it is counted, not turned into alleles (2); (3) data about people need agreement and anonymity, so no result can be traced and no one feels pressured (3); (4) definitions before counting, with an \"unsure\" box, because different judgements make the numbers mean different things (4); (5) unnamed slips and two counters reduce bias and counting errors (5); (6) frequency is count over total, and the total must be stated (6); (7) pooling gives a bigger sample and a better estimate (7); (8) separate categories go on a column graph with gaps, from zero, titled and labelled (8); (9) small samples scatter by chance; bigger samples land closer to the true value (9); (10) trend, pattern and relationship, with association not cause (10); (11) limitations, validity and reliability, and cautious wording (11).", "conversationalApproach": "Opens on the hook (hook (one class, one number)), then works through aim and choosing a characteristic, agreement and privacy, define the categories before counting, the method, record: the table and the frequency and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "In one class, nine of the twenty-eight students who were counted have attached earlobes. Does that tell you how common attached earlobes are in everyone your age?", "understandingCheck": "group A 18 attached, 42 free; group B 30 attached, 30 free. Demands: frequency of attached in each group, compare, one limitation. Answer: A 18/60 = 30 percent; B 30/60 = 50 percent; attached more common in group B in these samples; limitation: 60 per group from one school is a small, possibly unrepresentative sample, so the difference could be chance. Crossed mistake: \"18 / 42 = 43 percent\" (divided by the other category, not the total).", "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extract ../site-extracts/bio-m5-l16.md and site lesson 16 (read 18 Oct: the frequency card with the earlobe populations, the \"Sample quality and limitations\" card, the four-step data interpretation sequence, the \"Read the Table\" earlobe task and the Analyse walkthrough). Route entry: bio-m5-p03 (\"Collect and present population-frequency data\", playlist order 21, practical-support branch, prerequisite bio-m5-b11, next bio-m5-b12). Route start: \"Select a teacher-approved dataset or characteristics collection protocol.\" Route stop: \"Prepare actual collection/recording/presentation and analyse trends, relationships and limitations; supplied data alone does not evidence learner collection.\" Route syllabus actions: B-frequency-collection, B-frequency-analysis. Syllabus (2017, p49): B5-IQ4-03 \"collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data; analysing single nucleotide polymorphism (SNP)\"."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "B11's coded frequency table and bar chart look, its \"in this sample\" tag style, its pool bar; B3b's coded gene-pool tray bead look for the bead population (round beads, painted bead plates below); the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter); B6a's WrongChip, GreyTag, Cross, Cam. Shared plates from bio-m5-p01: m5x-clipboard-sheet-v1.png (tally sheet), m5x-pencil-v1.png. New coded items: the definition line diagram, the slip (three boxes), tally table, frequency calculation lines, column graph, bead sample chart (dot strip), analysis card (trend, pattern, relationship), limitations card, attempt card. - No human figures: slips fold and drop into the box by themselves; the mirror lies on a desk and shows only a soft highlight; counters are represented by two pencil tallies agreeing on the clipboard. No people.", "transitionPlan": "One class-collection workflow persists across the practical: the step rail along the top shows where the student is and the right zone holds one card at a time. The slips, table, pooled year group, column graph and bead model build in order, the analysis and limitation cards follow, the attempt card clears the board and feedback shrinks it to a strip; scene crossfade with settle."},
+        'rows': BIO_BP03_ROWS,
     },
 }
 

@@ -17,7 +17,7 @@ const STD_LABELS = ['0.40', '0.80', '1.20', '1.60', '2.00'];
 
 // ---------- 4. Standards: solutions where you know the answer ----------
 const S = 'standards';
-const K4 = cues(sc(S), {need: 'we need solutions', std: 'These are the standards', meas: 'a measured amount', excess: 'big excess', pushes: 'pushes the equilibrium', far: 'far to the right', dist: 'disturbance videos', almost: 'almost every', ends: 'ends up in', means: 'That means', equals: 'equals the thiocyanate', made: 'how it was made', five: 'five known concentrations', pale: 'pale to deep'});
+const K4 = cues(sc(S), {need: 'we need solutions', std: 'These are the standards', meas: 'a measured amount', excess: 'big excess', pushes: 'pushes the equilibrium', far: 'far to the right', dist: 'disturbance videos', almost: 'almost every', ends: 'ends up in', means: 'That means', equals: 'about equal to', made: 'how it was made', five: 'five known concentrations', pale: 'pale to deep'});
 const LZ = {cx: 860, cy: 520, r: 190};
 const SCN_SLOTS = lensSlots(LZ.cx, LZ.cy, LZ.r * 0.7, 6, 3);
 const FE_SLOTS = lensSlots(LZ.cx, LZ.cy, LZ.r, 34, 9);
@@ -64,7 +64,7 @@ export const SceneStandards: React.FC = () => {
 				<Ring cx={SCN_SLOTS[5][0]} cy={SCN_SLOTS[5][1]} rx={24} ry={24} at={K4.ends + 20} color={AMBER} seed={3} />
 				<Sx x={LZ.cx} y={LZ.cy + LZ.r + 88} anchor="middle" text="almost all, not quite all" size={32} color={AMBER_INK} hand at={K4.ends + 24} />
 				{/* the known concentration */}
-				<Sx x={1110} y={430} text="[FeSCN^{2+}] = [SCN^{-}]" size={50} color={INK} at={K4.equals} />
+				<Sx x={1110} y={430} text="[FeSCN^{2+}] ≈ [SCN^{-}]" size={50} color={INK} at={K4.equals} />
 				<Sx x={1110} y={480} text="in the standard" size={36} color={INK_SOFT} hand at={K4.equals + 10} />
 				<Tick x={1700} y={410} at={K4.equals + 24} s={40} />
 				<Sx x={1110} y={530} text="known from how it was made" size={36} color={TEAL} hand at={K4.made} />

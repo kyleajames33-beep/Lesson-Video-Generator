@@ -1,0 +1,321 @@
+{
+  "brief": 60,
+  "subject": "chemistry",
+  "date": "2026-10-18",
+  "model_path": "built-in image_gen",
+  "style": "ink and watercolour textbook cutouts on true alpha",
+  "processing": "Pillow resized and centered on 2000 x 2000 transparent canvases with at least 8 percent visible margin; no artwork recolouring in local code",
+  "prompt_constraints": "No text, labels, numbers, people, faces or body figures; molecules and spectra are code assets, not painted. Blank instrument screens.",
+  "plates": [
+    {
+      "file": "public/assets/chemistry/m8-aas-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-d57f186c-1c9e-407b-a0d2-8f03d9f04b37.png",
+      "prompt_subject": "aas",
+      "source_site_extracts": "chem-m8-l04.md; chem-m8-l08.md",
+      "sha256": "1bdf654ccc560c2dc81412edc1e368be2b81e67b8a551b0597d6b79517593ff2",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: An atomic absorption spectrometer in three-quarter view with a visible detachable cylindrical hollow cathode lamp, central atomiser flame chamber, sample inlet and blank dark display. Cream and blue-grey instrument body.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-bromine-water-clear-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-e90be371-58e4-4d3c-ab53-7f4b4b0c78e2.png",
+      "prompt_subject": "bromine water clear",
+      "source_site_extracts": "chem-m8-l11.md",
+      "sha256": "5b3079a53f9481d689de62808c0ac739a7b76e87ac0260c93b045204f83ab489",
+      "edit_target": "public/assets/chemistry/m8-bromine-water-orange-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-bromine-water-orange-v1.png. Change only the orange-brown bromine water to clear colourless liquid after reaction. Keep the exact tube, rack, liquid level, perspective, size, canvas, alpha and ink and watercolour style. No extra objects, haze, backdrop, shadows, text, labels or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-bromine-water-orange-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-ee05213c-5a1a-41cf-8d53-684152b881ef.png",
+      "prompt_subject": "bromine water orange",
+      "source_site_extracts": "chem-m8-l11.md",
+      "sha256": "f554894aabf828a826ee5b914aa807d5be4b239ca42dda6e27375ea50934b57d",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry organic test plate. One clear glass test tube in a plain wooden rack, front view, matching existing m5x precipitation tube visual style. Fine black ink outlines and restrained watercolour. Centered on a genuinely transparent background with at least 8 percent clear margin. No text, labels, numbers, hands, people, backdrop, decorative shadow or other apparatus. Subject: The lower third of the test tube contains transparent orange-brown bromine water before reaction.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-dichromate-green-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-266b72e6-34d5-4816-81f8-068219ffd8d9.png",
+      "prompt_subject": "dichromate green",
+      "source_site_extracts": "chem-m8-l11.md",
+      "sha256": "8a3b367c5c746e47acfb37da505306600bae518ebaabfe3abe503a261d92b5d6",
+      "edit_target": "public/assets/chemistry/m8-dichromate-orange-v1.png",
+      "process_pair": "m8-dichromate-orange-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-dichromate-orange-v1.png. Change only the orange dichromate solution to the green Cr(III) result after oxidation. Keep the exact tube, rack, liquid level, perspective, size, canvas, alpha and ink and watercolour style. No extra objects, haze, backdrop, shadows, text, labels or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-dichromate-orange-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-95d67b10-8f1f-44c8-8e26-ec8b68cbfb02.png",
+      "prompt_subject": "dichromate orange",
+      "source_site_extracts": "chem-m8-l11.md",
+      "sha256": "d91c4e8912f103d9f96bb6ca2868840aebdc00d64592b804d051207f67f59d7c",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry organic test plate. One clear glass test tube in a plain wooden rack, front view, matching existing m5x precipitation tube visual style. Fine black ink outlines and restrained watercolour. Centered on a genuinely transparent background with at least 8 percent clear margin. No text, labels, numbers, hands, people, backdrop, decorative shadow or other apparatus. Subject: The lower third of the test tube contains clear vivid orange acidified dichromate solution before oxidation.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-ba-pale-green-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-5756ab6a-a4c3-4660-838f-e264544b50d6.png",
+      "prompt_subject": "flame ba pale green",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "de26b398c0e194fe36fd8738f5a885cc9c0c7b2ccbea8ff92f316a5db8fc4eb4",
+      "edit_target": "public/assets/chemistry/m8-flame-cu-blue-green-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-flame-cu-blue-green-v1.png. Change only the existing flame to a clean pale apple green barium test colour. Preserve the burner geometry, placement and scale, and the transparent surrounding canvas. Maintain the ink and watercolour texture. No extra objects, haze, vignette, rectangle, backdrop, cast shadow, letters or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-ca-brick-red-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-ecaadbc2-72c5-4953-afa6-fa1ee8b16b5f.png",
+      "prompt_subject": "flame ca brick red",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "cee764fe037e498fea27202c2c269bf094b4e30df19d078ba57bb5416b1d78f7",
+      "edit_target": "public/assets/chemistry/m8-flame-cu-blue-green-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-flame-cu-blue-green-v1.png. Change only the existing flame to a clean brick red calcium test colour. Preserve the burner geometry, placement and scale, and the transparent surrounding canvas. Maintain the ink and watercolour texture. No extra objects, haze, vignette, rectangle, backdrop, cast shadow, letters or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-cu-blue-green-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-38b24d1d-500a-4661-944a-895ee1270474.png",
+      "prompt_subject": "flame cu blue green",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "e097706a6aae482eeb62c45a2281795722e3a1164ddf52d2333992581815994c",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: One complete Bunsen burner, front three-quarter view, with one clean blue-green copper flame. Large simple silhouette. This is the base for a matched flame test set.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-k-lilac-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-3c8a5fde-171d-4934-9969-dff130f881df.png",
+      "prompt_subject": "flame k lilac",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "c2274891b5c18cd113bb79cde8b5c35a734e719dd50a34df215c34feb2d259ca",
+      "edit_target": "public/assets/chemistry/m8-flame-cu-blue-green-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-flame-cu-blue-green-v1.png. Change only the existing flame to a clean pale lilac potassium test colour. Preserve the burner geometry, placement and scale, and the transparent surrounding canvas. Maintain the ink and watercolour texture. No extra objects, haze, vignette, rectangle, backdrop, cast shadow, letters or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-na-yellow-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-0fb5d8e5-2677-4b7d-87fa-4cce3f92e0b8.png",
+      "prompt_subject": "flame na yellow",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "ef3d720f29968d130fd807f2f2336fa16fd398166cc38f7f83a275eb919474e5",
+      "edit_target": "public/assets/chemistry/m8-flame-cu-blue-green-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-flame-cu-blue-green-v1.png. Change only the existing flame to a clean intense golden yellow sodium test colour. Preserve the burner geometry, placement and scale, and the transparent surrounding canvas. Maintain the ink and watercolour texture. No extra objects, haze, vignette, rectangle, backdrop, cast shadow, letters or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-sr-crimson-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-46dcf5c8-6def-474e-8045-4a5bd1de5134.png",
+      "prompt_subject": "flame sr crimson",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "c88e582af92fcb28acea335ff0771982e17333a5eeb91e8a657f47c2f7fae389",
+      "edit_target": "public/assets/chemistry/m8-flame-cu-blue-green-v1.png",
+      "site_use": "Brief 60 request; no occurrence in current Chemistry Module 8 site HTML search. Optional plate, not evidence that a lesson uses it.",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-flame-cu-blue-green-v1.png. Change only the existing flame to a clean crimson red strontium test colour. Preserve the burner geometry, placement and scale, and the transparent surrounding canvas. Maintain the ink and watercolour texture. No extra objects, haze, vignette, rectangle, backdrop, cast shadow, letters or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-flame-test-off-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-f07f8cbe-eafc-4dfd-8a6e-a8918aa2f57b.png",
+      "prompt_subject": "flame test off",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "29e70d85dc648fb96144bfcabdf44c5001972b842a4db75d5a8af6e001819ed7",
+      "edit_target": "public/assets/chemistry/m8-flame-na-yellow-v1.png",
+      "process_pair": "m8-flame-na-yellow-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-flame-na-yellow-v1.png. Remove only the yellow flame, leaving the complete unlit Bunsen burner in exactly the same position and scale. Keep the canvas and transparent background. No extra objects, haze, backdrop, shadows, text, labels or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-ir-spectrometer-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-720754c0-620a-49ee-9ba1-cac60872e7be.png",
+      "prompt_subject": "ir spectrometer",
+      "source_site_extracts": "chem-m8-l13.md",
+      "sha256": "f0fb8b986baaa422c3375fc485e164217267e4383060f7e1f4b8c52b2e19ba6c",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: An infrared FTIR spectrometer in three-quarter view with a low rectangular body, open central sample compartment, hinged cover and blank display. Cream and blue-grey instrument body.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-mass-spectrometer-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-602e2577-7133-444d-909c-f557a52a548d.png",
+      "prompt_subject": "mass spectrometer",
+      "source_site_extracts": "chem-m8-l12.md",
+      "sha256": "a499db41dae719d0f54faa65ffbac44429f79901c92ceb7664945aef32fdcf52",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: A compact benchtop mass spectrometer in three-quarter view with sample inlet port, enclosed analyser cabinet and blank display. Cream and blue-grey instrument body. No spectrum.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-nmr-machine-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-ccd81179-9a42-4560-a278-df6652714588.png",
+      "prompt_subject": "nmr machine",
+      "source_site_extracts": "chem-m8-l14.md; chem-m8-l15.md",
+      "sha256": "c8f4e27d9683d50a33ad5ddcc910b88f1472562d5c951550caf25e051e860783",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: An NMR spectrometer with tall cylindrical superconducting magnet housing, narrow sample bore at the top and connected blank-screen console. No patient or medical setting.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-permanganate-clear-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-d900cc9b-27ae-4745-9585-5e497e76851e.png",
+      "prompt_subject": "permanganate clear",
+      "source_site_extracts": "chem-m8-l11.md",
+      "sha256": "46d59c9f25216ef671afb162483518d4f4f6d5ec3fdd421feeb8565f1ee592af",
+      "edit_target": "public/assets/chemistry/m8-permanganate-purple-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Edit target: m8-permanganate-purple-v1.png. Change only the purple permanganate solution to clear colourless liquid after the alkene reaction. No brown precipitate. Keep the exact tube, rack, liquid level, perspective, size, canvas, alpha and ink and watercolour style. No extra objects, haze, backdrop, shadows, text, labels or people.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-permanganate-purple-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-1ae8fff0-702d-40da-8b13-1913b7c0df4d.png",
+      "prompt_subject": "permanganate purple",
+      "source_site_extracts": "chem-m8-l11.md",
+      "sha256": "680c18e6da888d182036d99e1d26350e7e4c59ed0014b474b6f494cfac940068",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry organic test plate. One clear glass test tube in a plain wooden rack, front view, matching existing m5x precipitation tube visual style. Fine black ink outlines and restrained watercolour. Centered on a genuinely transparent background with at least 8 percent clear margin. No text, labels, numbers, hands, people, backdrop, decorative shadow or other apparatus. Subject: The lower third of the test tube contains clear purple acidified potassium permanganate solution before the alkene test.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-ppt-agbr-cream-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-bd54f1bf-8232-4efb-8e57-b2bd2f47648b.png",
+      "prompt_subject": "ppt agbr cream",
+      "source_site_extracts": "chem-m8-l03.md; pre-design/chem-m8-qualitative-ion-tests.md section 5",
+      "sha256": "6c654d8707eb631cb4f6ea230e24abf47e7ffeae3992e592304a67d41539febe",
+      "edit_target": "public/assets/chemistry/m8-ppt-agi-pale-yellow-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Change only the settled pale-yellow precipitate to a cream silver bromide precipitate. Keep the clear liquid above, exact test tube, wood rack, perspective, size and transparent canvas. Fine black ink outlines and restrained watercolour textbook plate. No text, labels, numbers, people, hands, extra objects, backdrop, vignette or cast shadow. This must match the AgI plate as a precipitation test set.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-ppt-agi-pale-yellow-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-05dfa162-7240-4878-955a-36a148ca5d09.png",
+      "prompt_subject": "ppt agi pale yellow",
+      "source_site_extracts": "chem-m8-l03.md",
+      "sha256": "dcd13bf5d8b97cbc1e654a8658a20c857bb3dd2c14e3b4551be0f855d4b0ee9d",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: One clear glass test tube in the same simple wooden rack form as existing m5x precipitation plates. Pale yellow silver iodide precipitate settled at the bottom under clear liquid.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-ppt-feoh2-green-v1.png",
+      "method": "built-in image_gen edit",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-5a42fa32-b85d-48ae-8025-b0c7adb2954a.png",
+      "prompt_subject": "ppt feoh2 green",
+      "source_site_extracts": "chem-m8-l03.md; pre-design/chem-m8-qualitative-ion-tests.md section 5",
+      "sha256": "e3389e5a5a65f5ef99590a6e04cc43b8eeedc47ca2a38fe45ee54f3312bcc732",
+      "edit_target": "public/assets/chemistry/m8-ppt-agi-pale-yellow-v1.png",
+      "final_prompt_spec": "Use case: precise-object-edit. Change only the settled precipitate to fresh pale green iron(II) hydroxide. It should be a soft green flocculent solid, not brown, beneath clear liquid. Keep exact test tube, wood rack, perspective, size and transparent canvas. Fine black ink outlines and restrained watercolour textbook plate. No text, labels, numbers, people, hands, extra objects, backdrop, vignette or cast shadow. This must match the AgI plate as a precipitation test set.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-river-sampling-bottle-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-98811994-cd2b-4929-8ff0-ce879e36df43.png",
+      "prompt_subject": "river sampling bottle",
+      "source_site_extracts": "chem-m8-l06.md; chem-m8-l07.md; chem-m8-l08.md",
+      "sha256": "3457e613084a0f35a061203c7ea29c9a415f60939155b4c51b4fe50d2e82ac63",
+      "qa_status": "Alternate with long dipper. Prefer v2 for a bottle alone at 200 px.",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: A clear capped laboratory sample bottle holding a little river water, with a slender handled sampling pole and a few droplets, isolated as one apparatus group.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-river-sampling-bottle-v2.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-2e3a3b5f-5d85-4417-af7e-5bf0129e246a.png",
+      "prompt_subject": "river sampling bottle",
+      "source_site_extracts": "chem-m8-l06.md; chem-m8-l07.md; chem-m8-l08.md",
+      "sha256": "d6a82ebac0535b4d20412661e06eee914bd5c8fdebcf57abed73dd113f2ba9be",
+      "qa_status": "Preferred simplified bottle.",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: One sealed clear glass river sampling bottle in three-quarter view, wide cylindrical form with simple screw cap and slightly cloudy river water filling the lower third. No pole or other apparatus.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-sediment-core-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-a63651cd-8de2-4345-9968-78edd7b8c567.png",
+      "prompt_subject": "sediment core",
+      "source_site_extracts": "",
+      "sha256": "48f1871b373714905c99725914342affc98942775c4a65bd3b18f5bebb85aa49",
+      "site_use": "Brief 60 request; no occurrence in current Chemistry Module 8 site HTML search. Optional plate, not evidence that a lesson uses it.",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: A transparent cylindrical sediment core tube showing layered river-bed mud, silt and sand, with end caps.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-sewage-treatment-pond-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-fbcfba42-ac7a-45f0-95cc-e8aa44dd9276.png",
+      "prompt_subject": "sewage treatment pond",
+      "source_site_extracts": "chem-m8-l10.md",
+      "sha256": "7d6349b365de6dcc1bc674e2e6efe0947ad982dc0de351dd6e5afd60ed6384dc",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: An aerial oblique view of one shallow rectangular sewage treatment pond with inlet pipe, outlet pipe, water surface and grassy embankment. Isolated landscape vignette with no background sky.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-uv-visible-spectrophotometer-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-82329f47-35f5-43b3-b261-2905d41ef61a.png",
+      "prompt_subject": "uv visible spectrophotometer",
+      "source_site_extracts": "chem-m8-l04.md",
+      "sha256": "58ef15765df7f4710f3b6aab5a0228f8f463b45a1b6af0eaca6c3928b4493990",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: A UV-visible spectrophotometer in the style of the existing cream and blue colourimeter, with open cuvette chamber holding a clear cuvette, blue panel and blank dark display.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    },
+    {
+      "file": "public/assets/chemistry/m8-water-testing-kit-v1.png",
+      "method": "built-in image_gen generate",
+      "source_image": "C:/Users/kygs/.codex/generated_images/01a14b9e-0ce1-73e0-947f-73627b3c4794/exec-671bd10a-20eb-44fe-ae34-868df85ed8b2.png",
+      "prompt_subject": "water testing kit",
+      "source_site_extracts": "chem-m8-l06.md",
+      "sha256": "5256d07cc8dc81af377141faf52ef64d96cbe54eae3c2f00a53a8c1d23bab9ee",
+      "final_prompt_spec": "Use case: scientific-educational. Asset type: Year 12 Chemistry painted textbook plate. Fine black ink outlines, restrained watercolour, simple realistic apparatus or object. Single large readable subject on a genuinely transparent background with at least 8 percent clear margin. No people, faces, hands, body figures, text, labels, numbers, brand marks, molecules, spectra, scenery or decorative shadow. Subject: An open portable water testing kit with plain blank handheld meter, reagent bottles, colour comparator vials and blank case. No printed labels.",
+      "prompt_record": "Reconstructed full spec from the imagegen tool request. It is not claimed as verbatim tool-call text."
+    }
+  ],
+  "reused_existing": [
+    {
+      "file": "public/assets/chemistry/m5x-ppt-agcl-white-v1.png",
+      "role": "existing white AgCl precipitation tube"
+    },
+    {
+      "file": "public/assets/chemistry/m5x-ppt-baso4-white-v1.png",
+      "role": "existing white BaSO4 precipitation tube"
+    },
+    {
+      "file": "public/assets/chemistry/m5x-ppt-cuoh2-blue-v1.png",
+      "role": "existing blue Cu(OH)2 precipitation tube"
+    },
+    {
+      "file": "public/assets/chemistry/m5x-ppt-feoh3-brown-v1.png",
+      "role": "existing brown Fe(OH)3 precipitation tube"
+    },
+    {
+      "file": "public/assets/chemistry/m5x-ppt-pbi2-yellow-v1.png",
+      "role": "existing yellow PbI2 precipitation tube"
+    },
+    {
+      "file": "public/assets/chemistry/m5x-colourimeter-v1.png",
+      "role": "style reference and reusable colourimeter plate"
+    }
+  ],
+  "site_decisions": [
+    "Added pale yellow AgI precipitation tube because chem-m8-l03.md names it and the existing m5x set has no AgI plate.",
+    "Strontium flame and sediment core were explicitly requested in brief 60 but not found in Chemistry Module 8 site HTML. They are optional until a lesson uses them.",
+    "The current site uses river water and treatment examples. The single capped bottle v2 is preferred over the dipper composite v1.",
+    "The organic test tubes follow chem-m8-l11.md and brief 60. The permanganate clear state represents the acidified colourless result; a brown precipitate can occur under other conditions described on the site.",
+    "The brief 57 qualitative-ion pre-design pack identified two further gaps in the precipitation set: cream AgBr and green Fe(OH)2. Both were added as imagegen edits of the AgI tube to match its rack and scale."
+  ]
+}

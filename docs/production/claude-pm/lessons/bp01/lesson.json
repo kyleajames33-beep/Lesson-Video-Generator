@@ -1,0 +1,156 @@
+{
+  "title": "Build and Assess DNA Replication and Protein Synthesis Models",
+  "subtitle": "How do you build a model of DNA copying and of making a polypeptide, and how do you judge what each model shows and what it hides?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 11,
+  "lessonIntent": "stating what each piece and colour represents; building a paired, antiparallel DNA stretch whose tabs only fit A-T and C-G; modelling replication by separating at the tabs and adding new-colour cards, and recording two molecules each with one original strand; linking the two copies to sister chromatids; modelling transcription on the template strand with U for T and the gene unchanged; modelling translation codon by codon with tRNA cards and beads to a stop codon; recording a codon, anticodon and amino acid table; assessing each model by what it represents well, what it leaves out or distorts, and one improvement per limit; applying this to an unseen one-colour replication model. No enzyme names required, no Okazaki fragments, no folding mechanism (B7).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This strip of paper cards is a model of twelve base pairs of DNA. It can't do anything a real cell does. So why build it? Because moving every piece yourself makes you follow the same rules the cell follows. In this practical you'll build two models, one of DNA copying and one of making a polypeptide, and then judge what each one gets right and what it gets wrong."
+      }
+    },
+    {
+      "id": "aim-kit",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes. You need card in four colours, scissors, sticky tape, a pencil, a handful of pop-beads and three small paper cups. Blue card is original DNA, green is new DNA, yellow is RNA, and orange cards are transfer RNAs. The beads are amino acids. Keep the colours the same all the way through, because they let you track old and new strands. The only hazard is the scissors, so cut on the desk."
+      }
+    },
+    {
+      "id": "cut-nucleotides",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step one: make the nucleotides. Each card is one nucleotide: draw a phosphate and a sugar on the strip, and the tab is the base. Cut the tabs so that A only fits T, and C only fits G. That shape rule is the heart of the model, because in real DNA only those partners fit and hold together with hydrogen bonds. So give A and T tabs two notches, and C and G tabs three, one notch per hydrogen bond."
+      }
+    },
+    {
+      "id": "make-synthesis-pieces",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "While you're cutting, make the pieces for the second model too. Cut yellow RNA cards exactly like the DNA cards, but write U wherever you'd write T. A U tab gets the same two notches as T, so it fits A. For each transfer RNA, cut an orange T-shaped card with three base tabs along its bottom edge. Those three tabs are its anticodon. Glue a paper cup on top to hold one bead. You need three: U A C with a red bead, C G U with a gold bead, and A A A with a green bead, matched using a codon chart. Last, cut a ribosome shape from card, with a window exactly three tabs wide, so it shows one codon at a time."
+      }
+    },
+    {
+      "id": "build-molecule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step two: build the starting molecule. Tape twelve blue cards into a row, backbone to backbone, in this order. Then pair a second blue strand against it, tab to tab. Draw a five prime to three prime arrow along each strand, and point the second arrow the other way, because DNA is antiparallel. The tape holds each backbone together, like strong covalent bonds, while the tabs only touch, like the weaker hydrogen bonds between bases."
+      }
+    },
+    {
+      "id": "replicate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step three: copy it. Pull the two strands apart at the tabs. The tape stays intact, just as the backbones do when the hydrogen bonds break. Now each blue strand is a template. Add green cards one at a time, each opposite its only matching partner, and tape the new backbone. You end up with two molecules. Each one has one blue strand and one green strand."
+      }
+    },
+    {
+      "id": "record-check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now record what the model shows. Draw both molecules and label the old and new strands. Then read each one against the original. They match base for base, because every new card was set by its template. Try forcing a wrong card in: it won't sit flat, so a mismatch stands out. One original strand in each molecule is the semi-conservative result. In a dividing cell, these two copies stay joined as the sister chromatids that mitosis later separates."
+      }
+    },
+    {
+      "id": "transcribe",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step four switches to the second model: making a polypeptide. Unzip the whole gene, and use only the template strand. Build an RNA strand from yellow cards, pairing as before, except that RNA has U instead of T, so a yellow U sits opposite every A. Then peel the yellow strand off and close the DNA back up. That yellow strip is your messenger RNA, and the gene itself is unchanged."
+      }
+    },
+    {
+      "id": "translate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step five: translation. Slide the messenger RNA through a paper ribosome, which shows three bases at a time, one codon. Each orange card carries one bead, its amino acid, and three tabs, its anticodon, that fit its codon. Match the first card to the start codon, A, U, G. Then match the next, and clip its bead to the first. Keep going until a stop codon, where no card fits. Then the bead chain comes off."
+      }
+    },
+    {
+      "id": "results-table",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Record the results in a table: codon, anticodon and amino acid, using a codon chart. This gene gives A, U, G, then G, C, A, then U, U, U, then the stop codon U, G, A. That's methionine, alanine and phenylalanine: three amino acids joined in order. Three bases chose each bead, so changing one card in the DNA can change a bead in the chain."
+      }
+    },
+    {
+      "id": "assess-strengths",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now assess the models. Start with what they represent well. The tab shapes show why A pairs with T and C with G. The colours show that each new molecule keeps one original strand. The ribosome window shows that the code is read in threes, and the orange cards show why transfer RNAs matter: each one links a codon to its amino acid."
+      }
+    },
+    {
+      "id": "assess-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Then the limits. Your hands did every job, so the model hides the enzymes that unzip DNA, build new strands and RNA, and load each transfer RNA. It's flat, so it hides the twist that has to unwind before copying. It's tiny, so it hides how long copying takes: real genes run to thousands of bases. Nothing makes new strands grow in the right direction, so it hides the rule that cells build only one way. And it never shows a bead chain folding into a working protein, so it hides why the order of amino acids matters."
+      }
+    },
+    {
+      "id": "improvements",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A good assessment ends with improvements. Add new cards only at the three prime end, following each strand's arrow, as cells do. Add labelled cards for each enzyme job. And twist the finished ladder to show the helix. Each change fixes one limit you named, which is what makes it an improvement, not just decoration."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student builds a replication model using white cards only, for both the original and the new strands. Both new molecules match the original exactly. Explain why this model can't show that replication is semi-conservative, and suggest one change. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "With one colour, old and new strands look the same, so you can't see that each new molecule keeps one original strand. Use two colours, one for original and one for new. Then each molecule shows one of each. If you wrote that the model is fine because the sequences match, matching shows accurate copying, not which strand is old."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to build and assess a model: decide what each piece stands for, follow the real rules so the model is valid, and record what you see. Then name what the model represents well, what it leaves out, and how to improve it. Next: how the chain of amino acids folds into a protein, and becomes a trait you can see."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

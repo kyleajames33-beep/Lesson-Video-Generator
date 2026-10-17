@@ -1,0 +1,184 @@
+{
+  "title": "Trace a DNA Sequence or a Meiosis Cell: HSC-Style Practice",
+  "subtitle": "When a question hands you a sequence or a cell you have never seen, what do you check first so the trace comes out right?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 12,
+  "lessonIntent": "tracing a copying error through two rounds and counting the changed molecules; turning a coding strand written 3' to 5' into mRNA with ends and an amino acid chain that stops at a stop codon; tracking chromosome number and DNA mass through meiosis; listing the four products of one meiosis with one crossover and explaining why new combinations are less than half of a plant's gametes.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Exam questions on DNA and meiosis rarely ask you to recite the steps. They hand you something new, a sequence written from its 3' end, a copying error, a cell you've never seen, and ask you to trace it. Every trace comes down to three checks: which strand, which end, and what you're counting. Here are four HSC-style questions. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. A bacterium is copying its DNA. At one spot, the DNA has a T paired with an A. Opposite that T, DNA polymerase makes a rare mistake: it adds a G instead of an A, and the mistake is not repaired. Both new molecules are then copied once more, with no more mistakes. Of the four molecules, how many have a changed base pair at this spot, and what is the changed pair? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-first-copy",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the first copy. The two strands separate, and each one is a template. The A strand gets a new T, so that molecule is normal. The T strand gets the wrong partner, a G. A T and a G aren't partners, so they pair badly, and this molecule has a mismatch. It isn't a changed pair yet."
+      }
+    },
+    {
+      "id": "q1-second-copy",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now copy again. The normal molecule makes two normal molecules. The mismatched one separates too. Its T strand pairs with an A, as it should, so that copy is normal. But its G strand pairs with a C. So only one of the four molecules has a changed pair: G with C, where T with A used to be. The error took two rounds of copying to become a real change."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is saying two, as if the mismatch copies itself into both daughters. It doesn't. Each strand is a template, and the T strand still holds the right base, so its new copy is normal."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Fireflies glow using an enzyme made from one gene. Here's a short section of that gene's coding strand, written from its 3' end to its 5' end. Using the codon chart, write the mRNA with its ends. Then give the chain of amino acids this section codes for, and say how many there are. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-direction",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two checks first. Which strand? It's the coding strand, so the mRNA is a copy of it, with U in place of T. No pairing. Which end? The mRNA runs the same way as the coding strand, so start at the strand's 5' end, on the right. Read right to left, T as U: A U G, U G G, A A A, U A A, G G C."
+      }
+    },
+    {
+      "id": "q2-chain",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the chart. A U G is the start codon, methionine. U G G is tryptophan, and A A A is lysine. U A A is a stop codon. It adds no amino acid, and the chain is released, so G G C is never read. The chain is methionine, tryptophan, lysine: three amino acids."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is reading from the left, because that's how we read English. That gives arginine, asparagine and three more, with no start codon at all. Always find the 5' end first."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A koala's body cells each have 16 chromosomes. Before its DNA is copied, a cell in a koala's testis holds 16 chromosomes and about 7.0 picograms of DNA. It then makes sperm by meiosis. Give the number of chromosomes and the mass of DNA in this cell in prophase one, in each cell after meiosis one, and in each sperm cell. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-s-phase",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Use two rules. Count the chromosomes by their centromeres, and count the DNA by the chromatids. Before prophase one, every chromosome is copied into two sister chromatids, still joined at one centromere. So the cell still has 16 chromosomes, but twice the DNA: 14 picograms. Copying doubles the DNA, not the chromosomes."
+      }
+    },
+    {
+      "id": "q3-divisions",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Meiosis one separates the homologous pairs, so each cell gets 8 chromosomes. But each chromosome still has both its chromatids, so each cell holds half of 14: 7.0 picograms. Meiosis two splits the sister chromatids. Each sperm cell keeps 8 chromosomes, now single, and half the DNA again: 3.5 picograms."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is 3.5 picograms after meiosis one. That's the sperm cell's amount. After meiosis one, each chromosome still has two chromatids, so each cell still holds 7.0."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. In sweet peas, the gene for flower colour and the gene for pollen shape are on the same chromosome. A plant has the purple and long alleles on one chromosome, and the red and round alleles on its partner. In one cell in an anther, a single crossover happens between the two genes. List the alleles in each of the four pollen cells it makes. Then, if most anther cells have no crossover between these genes, explain why new combinations are much less common than half. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-chromatids",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the chromatids. After copying, the pair has four: two purple long, and two red round. A crossover swaps matching pieces between two of them, one from each partner, and only those two. Now there's one purple long, one purple round, one red long and one red round."
+      }
+    },
+    {
+      "id": "q4-four-cells",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Meiosis one sends the two partners to different cells, and meiosis two splits each pair of sister chromatids. So each pollen cell gets one chromatid: purple long, purple round, red long and red round. Two are the plant's original combinations, and two are new. So this one cell made four different pollen cells."
+      }
+    },
+    {
+      "id": "q4-limit",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So why are new combinations much less than half? Even in this cell, only two of the four are new. And as the card says, most cells have no crossover between these two genes, so all four keep the original combinations. The classic mistake is saying all four pollen cells are new. The crossover only touched two chromatids."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start any trace. A sequence: ask which strand, then find the 5' end before you read. A copying error: follow each strand as its own template. A count: centromeres for chromosomes, chromatids for DNA. A crossover: it changes two chromatids, not four. Next: how a chain of amino acids becomes a trait."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

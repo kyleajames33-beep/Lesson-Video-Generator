@@ -1,0 +1,184 @@
+{
+  "title": "Inheritance Probability: Unfamiliar Crosses and Pedigrees",
+  "subtitle": "When a cross or a family tree is new to you, how do you choose the model, find the probability, and say what the evidence can and cannot prove?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 18,
+  "lessonIntent": "choosing incomplete dominance from a third phenotype and predicting a 1:2:1 cross and a two-birth probability; explaining why tortoiseshell cats are almost always female and finding sex-specific and overall probabilities in an X-linked cross; finding a 2/3 carrier chance and a 1/6 child probability across two families, then updating to 1/4 on new evidence; ruling out X-linked recessive with named individuals, explaining why autosomal dominant and recessive both fit, and judging which is more likely for a rare condition.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you. Every one starts the same way: choose the model, write the genotypes you're sure of, then combine the chances. Here are four HSC-style questions. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. In Andalusian chickens, a black bird crossed with a splashed white bird gives chicks that are all blue. A farmer crosses two blue chickens. Explain why some of their chicks are black and some are white, and give the ratio. Then find the probability that their first two chicks are both blue. Finally, which cross would give only blue chicks? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-model",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, choose the model. Black crossed with white gives a third colour, in between, so this is incomplete dominance. A blue bird is heterozygous, with one black allele and one white allele. Two blue parents each pass on one or the other, so the square gives 1 black, 2 blue, 1 white."
+      }
+    },
+    {
+      "id": "q1-chance",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each chick has a one in two chance of being blue, and each chick is a separate chance. So for the first chick and the second, multiply: one half times one half is one in four. And for only blue chicks, cross black with white: every chick gets one of each allele."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is crossing blue with blue to get blue chicks. Blue birds are heterozygous, so they can't breed true. The alleles separate again."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. In cats, a gene for coat colour is on the X chromosome. One allele gives orange fur, and the other gives black. A cat with one of each shows both colours, in patches: this is called tortoiseshell. Explain why tortoiseshell cats are almost always female. A tortoiseshell female then mates with an orange male. What's the probability that a kitten is a tortoiseshell female? And what fraction of their sons are black? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-why-female",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The gene is on the X, and a tortoiseshell cat needs both alleles, so it needs two X chromosomes. A male has one X and a Y, so his single X carries only one colour. That's why tortoiseshell cats are almost always female."
+      }
+    },
+    {
+      "id": "q2-square",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the cross. The mother gives an orange X or a black X. The father gives his orange X to every daughter, and his Y to every son. So daughters are orange or tortoiseshell, and sons are orange or black. Tortoiseshell females are one box of four: one in four of all kittens. Of the sons, one in two is black."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is treating the gene as if it were on an autosome. That gives tortoiseshell kittens of both sexes, half of all kittens. But sons only get their mother's X."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. Phenylketonuria, or P K U, is an autosomal recessive condition. In this family, a woman doesn't have P K U, but her brother does, and their parents don't. Her partner doesn't have P K U, but his mother does. What is the probability that their first child has P K U? And if their first child does have it, what is the probability for the second child? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-sure",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the people you can be sure of. The man's mother has two recessive alleles, so she gave him one. He's unaffected, so he must be a carrier. The woman's brother is affected, but their parents aren't, so both parents are carriers."
+      }
+    },
+    {
+      "id": "q3-two-thirds",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the woman. Her parents' square has four boxes, but she's unaffected, so cross out the affected box. That leaves three equally likely boxes, and two of them are carriers. So she has a two in three chance of being a carrier. If she is, each child has a one in four chance. Two thirds times one quarter is one in six."
+      }
+    },
+    {
+      "id": "q3-update",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now suppose their first child has P K U. The child needed a recessive allele from her, so that proves she's a carrier. Now both are carriers, so the second child's chance is one in four. The classic mistake is giving her a one in two chance of being a carrier. That keeps the affected box, which she can't be."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. This pedigree shows a rare condition. Of three patterns, autosomal dominant, autosomal recessive and X-linked recessive, which can you rule out? Justify with numbered individuals. Then explain why this pedigree can't decide between the other two, and say which is more likely. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-rule-out",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Test X-linked recessive first. Individual 2 in generation one is an affected mother. Under that pattern, both her X chromosomes carry the allele, so every son gets it. But her son, individual 2 in generation two, is unaffected. And her daughter is affected, with an unaffected father. So it's not X-linked recessive."
+      }
+    },
+    {
+      "id": "q4-both-fit",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now look for the giveaways. There are no unaffected parents with an affected child, and no affected parents with an unaffected child. Without one, both patterns fit. Dominant fits if each affected person has one copy of the allele. Recessive fits too, but only if the two unaffected partners, individual 1 in generation one and individual 4 in generation two, are both carriers."
+      }
+    },
+    {
+      "id": "q4-more-likely",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "For a rare condition, two unrelated partners both being carriers is unlikely, so dominant is more likely. But it isn't proven. The classic mistake is saying it must be dominant because it's in every generation. That's a clue, not proof: recessive fits too."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start. Choose the model: does the heterozygote look in between, or show both, and do sons and daughters differ? Write every genotype you can be sure of. For someone who's unaffected, cross out the affected box before you share the chance. For separate offspring of known parents, multiply. And if there's no giveaway, say what fits, and what's more likely. Next: how common an allele is across a whole population."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

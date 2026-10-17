@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/bp03/lesson.json",
+    "lessonSha256": "ef8a5d4b879ba1a7f5cfbe3642a6f866fe089fd3bc1f4f45e035904dc1d37c16"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Entry knowledge: B11 (frequency = count over stated total, table and bar chart; allele frequency by copies; recessive phenotype frequency; SNPs; association, not cause; sample limits: size, representation, consistent definitions). Year 11 Working Scientifically: validity, reliability, graph conventions.",
+    "startsWith": "The hook: In one class, nine of the twenty-eight students who were counted have attached earlobes. Does that tell you how common attached earlobes are in everyone your age?",
+    "stopsAfter": "choosing a visible, non-sensitive, non-identifying characteristic and saying why it is counted, not converted to alleles; stating the agreement and anonymity rules; writing definitions with an \"unsure\" category before counting; describing an anonymous slip method with two counters; recording a tally table and calculating frequencies with a stated total; pooling classes and saying why the pooled value is a better estimate; drawing a column graph with correct conventions; explaining with a bead model why small samples scatter; identifying a trend, a pattern and a relationship (association, not cause); naming limitations and improvements to validity and reliability; using cautious language; applying all of it to the site's two-group earlobe task. SNP data analysis stays with B11.",
+    "nextLesson": "DNA sequencing and profiling for inheritance studies (route entry bio-m5-b12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-p03.md"
+  ],
+  "teaching": {
+    "task": "How do you collect, record and present data on how common a characteristic is, and how sure can you be about what it shows?",
+    "causalExplanation": "(1) one class's count is not yet a population frequency: method, sample size and classification decide what it means (1); (2) the characteristic must be visible, quick, non-sensitive, and is not a one-gene trait, so it is counted, not turned into alleles (2); (3) data about people need agreement and anonymity, so no result can be traced and no one feels pressured (3); (4) definitions before counting, with an \"unsure\" box, because different judgements make the numbers mean different things (4); (5) unnamed slips and two counters reduce bias and counting errors (5); (6) frequency is count over total, and the total must be stated (6); (7) pooling gives a bigger sample and a better estimate (7); (8) separate categories go on a column graph with gaps, from zero, titled and labelled (8); (9) small samples scatter by chance; bigger samples land closer to the true value (9); (10) trend, pattern and relationship, with association not cause (10); (11) limitations, validity and reliability, and cautious wording (11).",
+    "conversationalApproach": "Opens on the hook (hook (one class, one number)), then works through aim and choosing a characteristic, agreement and privacy, define the categories before counting, the method, record: the table and the frequency and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.",
+    "openingDecision": "In one class, nine of the twenty-eight students who were counted have attached earlobes. Does that tell you how common attached earlobes are in everyone your age?",
+    "understandingCheck": "group A 18 attached, 42 free; group B 30 attached, 30 free. Demands: frequency of attached in each group, compare, one limitation. Answer: A 18/60 = 30 percent; B 30/60 = 50 percent; attached more common in group B in these samples; limitation: 60 per group from one school is a small, possibly unrepresentative sample, so the difference could be chance. Crossed mistake: \"18 / 42 = 43 percent\" (divided by the other category, not the total).",
+    "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extract ../site-extracts/bio-m5-l16.md and site lesson 16 (read 18 Oct: the frequency card with the earlobe populations, the \"Sample quality and limitations\" card, the four-step data interpretation sequence, the \"Read the Table\" earlobe task and the Analyse walkthrough). Route entry: bio-m5-p03 (\"Collect and present population-frequency data\", playlist order 21, practical-support branch, prerequisite bio-m5-b11, next bio-m5-b12). Route start: \"Select a teacher-approved dataset or characteristics collection protocol.\" Route stop: \"Prepare actual collection/recording/presentation and analyse trends, relationships and limitations; supplied data alone does not evidence learner collection.\" Route syllabus actions: B-frequency-collection, B-frequency-analysis. Syllabus (2017, p49): B5-IQ4-03 \"collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data; analysing single nucleotide polymorphism (SNP)\"."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "B11's coded frequency table and bar chart look, its \"in this sample\" tag style, its pool bar; B3b's coded gene-pool tray bead look for the bead population (round beads, painted bead plates below); the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter); B6a's WrongChip, GreyTag, Cross, Cam. Shared plates from bio-m5-p01: m5x-clipboard-sheet-v1.png (tally sheet), m5x-pencil-v1.png. New coded items: the definition line diagram, the slip (three boxes), tally table, frequency calculation lines, column graph, bead sample chart (dot strip), analysis card (trend, pattern, relationship), limitations card, attempt card. - No human figures: slips fold and drop into the box by themselves; the mirror lies on a desk and shows only a soft highlight; counters are represented by two pencil tallies agreeing on the clipboard. No people.",
+    "transitionPlan": "One class-collection workflow persists across the practical: the step rail along the top shows where the student is and the right zone holds one card at a time. The slips, table, pooled year group, column graph and bead model build in order, the analysis and limitation cards follow, the attempt card clears the board and feedback shrinks it to a strip; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "the desk strip draws.",
+      "teachingReason": "Hook (one class, one number): In one class, nine of the twenty-eight students who were counted have attached earlobes.",
+      "narrationCue": "Not yet / does and doesn't show",
+      "motionPurpose": "A coded tally sheet on the painted clipboard (m5x-clipboard-sheet-v1.png) shows \"attached: 9 of 28\". On \"everyone your age\" the number zooms out to a wide coded field of small grey squares (abstract population, no people) with a \"?\" over it.",
+      "motionRole": "explain",
+      "onScreenChange": "the desk strip draws. A coded tally sheet on the painted clipboard (m5x-clipboard-sheet-v1.png) shows \"attached: 9 of 28\". On \"everyone your age\" the number zooms out to a wide coded field of small grey squares (abstract population, no people) with a \"?\" over it. On \"Not yet\" three chips write on under the field, one per cue: \"how collected?\", \"how big?\", \"how judged?\". On \"does and doesn't show\" the question writes on at the top left: \"How common is it, and how sure are you?\" Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "aim-characteristic",
+      "visualDecision": "new",
+      "visualReference": "the aim card writes on in the right zone.",
+      "teachingReason": "Aim and choosing a characteristic: The aim: collect data on how common a characteristic is in a population, present it clearly, and identify trends, patterns and limitations.",
+      "narrationCue": "easy to see / not sensitive / one-gene trait",
+      "motionPurpose": "On \"easy to see\" a checklist writes beside it: \"visible\", \"quick to judge\", \"not sensitive\", \"can't identify anyone\", each with a teal tick. Two candidate chips drop in: \"earlobe shape\" and \"tongue rolling\" (words only, no pictures).",
+      "motionRole": "explain",
+      "onScreenChange": "the aim card writes on in the right zone. On \"easy to see\" a checklist writes beside it: \"visible\", \"quick to judge\", \"not sensitive\", \"can't identify anyone\", each with a teal tick. Two candidate chips drop in: \"earlobe shape\" and \"tongue rolling\" (words only, no pictures). A crossed chip \"health conditions\" fades in (tag \"sensitive: not for a class survey\"). On \"one-gene trait\" a small grey tag writes: \"many genes involved: count the characteristic; allele frequencies, see the roan cattle (B11)\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "agreement-privacy",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"1.",
+      "teachingReason": "Agreement and privacy: Data about people needs their agreement.",
+      "narrationCue": "agreement / say no / no names",
+      "motionPurpose": "Plan and agree\". A coded plan card writes on: \"teacher approval\", \"say what and why\", \"anyone can say no\".",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1. Plan and agree\". A coded plan card writes on: \"teacher approval\", \"say what and why\", \"anyone can say no\". On \"say no\" one blank slip stays on the desk, unticked, with the tag \"no reason needed\". On \"no names\" a painted blank slip (from m5x-slip-box-v1.png, item 2) enlarges with a coded \"name: ___\" line that takes a grey cross, leaving three tick boxes. Tag: \"anonymous: can't be traced\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "define-categories",
+      "visualDecision": "new",
+      "visualReference": "step rail \"2.",
+      "teachingReason": "Define the categories before counting: Next, write the definitions before anyone counts.",
+      "narrationCue": "free / attached / unsure / test the definitions",
+      "motionPurpose": "Define\". The definition card writes in the right zone as a coded line diagram (no face, no head shape): in each of three panels, a vertical line tagged \"side of head\" and, beside it, a single ink outline of the lower half of an ear rim curving down into the lobe, with a pointer \"earlobe\" and a small dot \"join point\" where the lobe meets the line.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"2. Define\". The definition card writes in the right zone as a coded line diagram (no face, no head shape): in each of three panels, a vertical line tagged \"side of head\" and, beside it, a single ink outline of the lower half of an ear rim curving down into the lobe, with a pointer \"earlobe\" and a small dot \"join point\" where the lobe meets the line. On \"free\" the first panel draws: the lobe rounds and hangs below the dot, the hanging part shaded teal and tagged \"hangs below the join\"; on \"attached\" the second: the rim runs straight into the line at the dot, amber outline, tagged \"joins directly\"; on \"unsure\" the third: a short lobe barely below the dot, grey, tagged \"in between\". On \"judge the same earlobe differently\" two coded tick marks land in different boxes for the same grey curve, with a pen \"?\" between them. On \"test the definitions\" three small practice outline curves appear under the card with two coded tick rows beneath; two ticks agree, one pair disagrees and the definition line \"hangs below the join\" gains an underline (tag \"sharpen the wording\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "method",
+      "visualDecision": "new",
+      "visualReference": "step rail \"3.",
+      "teachingReason": "The method: Now the method.",
+      "narrationCue": "mirror / two people count",
+      "motionPurpose": "Collect\". The painted slip box (m5x-slip-box-v1.png, item 2) sits centre-left; the hand mirror (m5x-hand-mirror-v1.png, item 1) lies on the desk with only a soft highlight in its glass.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"3. Collect\". The painted slip box (m5x-slip-box-v1.png, item 2) sits centre-left; the hand mirror (m5x-hand-mirror-v1.png, item 1) lies on the desk with only a soft highlight in its glass. On \"or asks a partner to look\" a small grey tag writes beside the mirror: \"earlobes are visible anyway; the slip stays unnamed\". On \"ticks one box\" a coded tick lands in a slip's box; the slip folds and drops into the box slot (no hand); several more follow. On \"two people count\" the slips tip out in a neat pile and two coded tally columns build side by side on the clipboard, one per counter, in two pencil colours (m5x-pencil-v1.png small); on \"totals agree\" both columns end \"30\" with a teal tick between them. Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "record-frequency",
+      "visualDecision": "new",
+      "visualReference": "step rail \"4.",
+      "teachingReason": "Record: the table and the frequency: Record the counts in a table: category, tally, count and frequency.",
+      "narrationCue": "thirty / which total / thirty-two per cent",
+      "motionPurpose": "Record\". The table writes in the right zone (B11 table look): columns \"category / tally / count / frequency (%)\"; rows \"attached / IIII IIII / 9\", \"free / IIII IIII IIII IIII / 19\", \"unsure / II / 2\", \"total slips / 30\".",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"4. Record\". The table writes in the right zone (B11 table look): columns \"category / tally / count / frequency (%)\"; rows \"attached / IIII IIII / 9\", \"free / IIII IIII IIII IIII / 19\", \"unsure / II / 2\", \"total slips / 30\". On \"count divided by the total\" the formula line writes: \"frequency = count / total x 100\". On \"which total\" the 30 and a new \"classified: 28\" ring with a \"?\"; on \"Leave out the unsure slips\" the unsure row greys and a table footnote writes: \"frequency of the 28 classified (2 unsure left out)\". On \"thirty-two per cent\" the working \"9 / 28 x 100 = 32%\" writes in the attached row; then \"19 / 28 x 100 = 68%\" in the free row; a small check \"32 + 68 = 100\". Hold about 2 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "pool",
+      "visualDecision": "new",
+      "visualReference": "the table shrinks to a strip; a four-row class table writes: \"class 1: 9 / 28 = 32%\", \"class 2: 6 / 27 = 22%\", \"class 3: 8 / 29 = 28%\", \"class 4: 7 / 26 = 27%\", then a bold total row \"pooled: 30 / 110 = 27%\".",
+      "teachingReason": "Pool the year group: One class is a small sample, so pool the results from four classes.",
+      "narrationCue": "pool / twenty-seven per cent / better estimate",
+      "motionPurpose": "On \"pool\" the four tally sheets slide together into one. On \"jump around\" the four percentages pulse in turn; on \"better estimate\" the pooled row rings teal with the tag \"bigger sample\".",
+      "motionRole": "explain",
+      "onScreenChange": "the table shrinks to a strip; a four-row class table writes: \"class 1: 9 / 28 = 32%\", \"class 2: 6 / 27 = 22%\", \"class 3: 8 / 29 = 28%\", \"class 4: 7 / 26 = 27%\", then a bold total row \"pooled: 30 / 110 = 27%\". On \"pool\" the four tally sheets slide together into one. On \"jump around\" the four percentages pulse in turn; on \"better estimate\" the pooled row rings teal with the tag \"bigger sample\". Grey tag: \"add the counts, not the percentages\". Hold about 2 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "column-graph",
+      "visualDecision": "new",
+      "visualReference": "step rail \"5.",
+      "teachingReason": "Present: a column graph: To present it, use a column graph, because the classes are separate groups, not points on a continuous scale.",
+      "narrationCue": "column graph / starting from zero",
+      "motionPurpose": "Present\". A small tag on \"column graph\": \"column graph (a bar chart with vertical bars)\".",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"5. Present\". A small tag on \"column graph\": \"column graph (a bar chart with vertical bars)\". A coded column graph builds in the right zone: x-axis \"group\" with \"class 1, class 2, class 3, class 4, pooled\"; y-axis \"frequency of attached earlobes (%)\" from 0 to 40 in steps of 10; columns rise to 32, 22, 28, 27 and 27 (the pooled column in a darker fill); gaps between columns. On \"starting from zero\" the y-axis zero tick rings; a small inset shows the same columns on an axis starting at 20 with the differences looking huge, grey cross, tag \"axis must start at zero\". Title writes: \"Frequency of attached earlobes in four Year 12 classes (example data)\". A crossed chip \"line graph\" (tag \"categories, not a continuous scale\"). Hold about 2 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "bead-model",
+      "visualDecision": "new",
+      "visualReference": "a small grey tag \"B11: small samples bounce\" writes at the top of the right zone on \"You saw earlier\".",
+      "teachingReason": "Why a bigger sample helps: a bead model: You saw earlier that small samples bounce around.",
+      "narrationCue": "test it yourself / Small samples scatter",
+      "motionPurpose": "The painted bead bag (m5x-bead-bag-v1.png, item 3) sits centre with a coded tag \"200 beads: 50 red = 25%\". On \"draw ten\" ten bead plates (m5x-bead-red-v1.png, m5x-bead-white-v1.png, items 4 and 5) tumble out into a row (one red); they slide back in and the bag gives a small shake.",
+      "motionRole": "explain",
+      "onScreenChange": "a small grey tag \"B11: small samples bounce\" writes at the top of the right zone on \"You saw earlier\". The painted bead bag (m5x-bead-bag-v1.png, item 3) sits centre with a coded tag \"200 beads: 50 red = 25%\". On \"draw ten\" ten bead plates (m5x-bead-red-v1.png, m5x-bead-white-v1.png, items 4 and 5) tumble out into a row (one red); they slide back in and the bag gives a small shake. A dot-strip chart builds in the right zone: a horizontal axis 0 to 50 percent with a dashed line at 25 tagged \"true value\". On \"Ten-bead samples\" four amber dots land at 10, 40, 20 and 30 (row \"samples of 10\"); on \"Fifty-bead samples\" three teal dots land at 22, 28 and 26 (row \"samples of 50\"). On \"Small samples scatter\" a bracket spans the amber dots (tag \"wide spread\") and a narrow bracket spans the teal dots (tag \"close to 25%\"). Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "analyse-trend-pattern",
+      "visualDecision": "new",
+      "visualReference": "step rail \"6.",
+      "teachingReason": "Analyse: trend and pattern: Now analyse.",
+      "narrationCue": "trend / pattern",
+      "motionPurpose": "Analyse\". The analysis card writes in the right zone, one row per cue, each pen-linked to the graph: \"Trend (overall direction): free more common in every class\" (the four columns' free complements show above each attached column as pale outlines); \"Pattern (a repeated feature): every class 22% to 32% attached\" (a bracket across the column tops).",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"6. Analyse\". The analysis card writes in the right zone, one row per cue, each pen-linked to the graph: \"Trend (overall direction): free more common in every class\" (the four columns' free complements show above each attached column as pale outlines); \"Pattern (a repeated feature): every class 22% to 32% attached\" (a bracket across the column tops). Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "analyse-relationship",
+      "visualDecision": "new",
+      "visualReference": "the analysis card stays; its third row writes: \"Relationship (two characteristics change together): needs both on each slip\" (a coded slip with two rows of boxes, \"earlobes\" and \"tongue rolling\").",
+      "teachingReason": "Analyse: a relationship: A relationship is when two characteristics change together, so each slip needs both, like earlobes and tongue rolling.",
+      "narrationCue": "relationship / no relationship",
+      "motionPurpose": "On \"Say twenty\" a 2 x 2 count grid fills: rows \"attached (30)\", \"free (80)\", columns \"can roll\", \"can't roll\": 20, 10 / 54, 26 (tag \"example data\"); on \"sixty-seven\" and \"sixty-eight\" two short bars draw beside the grid, \"attached: 20 / 30 = 67%\" and \"free: 54 / 80 = 68%\", nearly level; on \"no relationship\" a bracket joins the two bar tops with the tag \"about the same: no relationship in this sample\". On \"association",
+      "motionRole": "explain",
+      "onScreenChange": "the analysis card stays; its third row writes: \"Relationship (two characteristics change together): needs both on each slip\" (a coded slip with two rows of boxes, \"earlobes\" and \"tongue rolling\"). On \"Say twenty\" a 2 x 2 count grid fills: rows \"attached (30)\", \"free (80)\", columns \"can roll\", \"can't roll\": 20, 10 / 54, 26 (tag \"example data\"); on \"sixty-seven\" and \"sixty-eight\" two short bars draw beside the grid, \"attached: 20 / 30 = 67%\" and \"free: 54 / 80 = 68%\", nearly level; on \"no relationship\" a bracket joins the two bar tops with the tag \"about the same: no relationship in this sample\". On \"association, not proof\" a tag writes: \"association, not cause (B11)\". A sentence-starter strip writes along the bottom: \"In this sample, ... was more common than ...\" Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "limitations",
+      "visualDecision": "new",
+      "visualReference": "the limitations card writes, three columns \"Limitation / Why it matters / Improvement\", one row per cue: \"one school, 110 students / may not represent other places / sample several schools\"; \"self-judging, in-between lobes / classification errors / clear definition card, unsure box, practise on the diagrams first\"; then two summary chips: \"valid: measures what it claims (clear definitions, unsure ",
+      "teachingReason": "Limitations, validity and reliability: Then the limits.",
+      "narrationCue": "one school / valid / reliable",
+      "motionPurpose": "On \"in this sample\" a pair of chips: \"in this sample\" (teal tick) and \"in all people\" (grey cross). Hold about 2 seconds (reading hold).",
+      "motionRole": "explain",
+      "onScreenChange": "the limitations card writes, three columns \"Limitation / Why it matters / Improvement\", one row per cue: \"one school, 110 students / may not represent other places / sample several schools\"; \"self-judging, in-between lobes / classification errors / clear definition card, unsure box, practise on the diagrams first\"; then two summary chips: \"valid: measures what it claims (clear definitions, unsure box)\" and \"reliable: repeats agree (two counters, pool classes, recount)\". On \"in this sample\" a pair of chips: \"in this sample\" (teal tick) and \"in all people\" (grey cross). Hold about 2 seconds (reading hold).",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds (reading hold)"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no tables, graphs or cards from earlier.",
+      "teachingReason": "Unseen transfer: attempt (countdown, 10 seconds), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "eighteen attached / forty-two free / thirty attached / thirty free",
+      "motionPurpose": "The card for \"attempt (countdown, 10 seconds)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no tables, graphs or cards from earlier. The attempt card writes on: a two-row table \"group / attached / free\": \"A / 18 / 42\", \"B / 30 / 30\". Demands: \"(a) Frequency of attached earlobes in each group.\" \"(b) Compare the groups.\" \"(c) One limitation of the data.\" Three answer boxes. Nothing answer-bearing: no totals column, no percentages, no formula. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The card stays on screen during and after the countdown.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Feedback (brief): Each group has sixty people.",
+      "narrationCue": "thirty per cent / fifty per cent",
+      "motionPurpose": "On \"sixty people\" a totals column writes on: \"60\", \"60\". On \"thirty per cent\" the working \"18 / 60 x 100 = 30%\" writes in row A; on \"fifty per cent\" \"30 / 60 x 100 = 50%\" in row B.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. On \"sixty people\" a totals column writes on: \"60\", \"60\". On \"thirty per cent\" the working \"18 / 60 x 100 = 30%\" writes in row A; on \"fifty per cent\" \"30 / 60 x 100 = 50%\" in row B. Answer lines: \"(b) higher in group B (50% vs 30%) in these samples\"; \"(c) small sample from one school; difference could be chance\". On \"eighteen by forty-two\" the chip \"18 / 42 = 43%\" writes on and takes a grey scribble cross, tag \"divide by the whole group\". Hold about 1 second.",
+      "motionTools": [
+        "chip travel",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, one line per cue: \"Agree; anonymous.\" \"Define first (with unsure).\" \"Two counters.\" \"Frequency = count / stated total.\" \"Column graph from zero.\" \"Name the limits; 'in this sample'.\" The column graph returns small along the bottom.",
+      "teachingReason": "Decision rule and handoff: So, to collect frequency data well: get agreement and keep it anonymous, define the categories first, count with two people, divide by the right total and say which one, graph it clearly, and name the limits.",
+      "narrationCue": "Next",
+      "motionPurpose": "On \"Next\" a chip \"Next: DNA sequencing and profiling\" appears with a small coded base-tile row. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, one line per cue: \"Agree; anonymous.\" \"Define first (with unsure).\" \"Two counters.\" \"Frequency = count / stated total.\" \"Column graph from zero.\" \"Name the limits; 'in this sample'.\" The column graph returns small along the bottom. On \"Next\" a chip \"Next: DNA sequencing and profiling\" appears with a small coded base-tile row. Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/bp03-learning-review.md",
+      "sha256": "c530c7bbf13cd1e85fff6df51358a4b04cc40ed024c18b64b4442dd1ad02635e"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/bp03-claude-science-check.md",
+      "sha256": "022d35ed6ba8ecae9dba599c88650bb096d26e13c7907d55be5eaad98f81bbd2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

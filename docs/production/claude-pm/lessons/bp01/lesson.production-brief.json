@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/bp01/lesson.json",
+    "lessonSha256": "5ebd4b9396d7901b976f682cafb512daeaa533788911fac019f21600251de567"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Entry knowledge: B4 (nucleotide = sugar, phosphate, base; A-T and C-G; hydrogen bonds between bases, covalent backbone; antiparallel 5' and 3' ends; template; semi-conservative replication; original blue and new green), B5a (copied chromosome = two sister chromatids; mitosis separates them), B6b (template strand; mRNA built with U opposite A; gene unchanged), B6c (codons of three; ribosome; tRNA with an anticodon and one amino acid; AUG start; stop codons; codon chart; a polypeptide must fold). Year 11 Working Scientifically: models represent part of reality and have limitations.",
+    "startsWith": "The hook: This strip of paper cards is a model of twelve base pairs of DNA. It can't do anything a real cell does.",
+    "stopsAfter": "stating what each piece and colour represents; building a paired, antiparallel DNA stretch whose tabs only fit A-T and C-G; modelling replication by separating at the tabs and adding new-colour cards, and recording two molecules each with one original strand; linking the two copies to sister chromatids; modelling transcription on the template strand with U for T and the gene unchanged; modelling translation codon by codon with tRNA cards and beads to a stop codon; recording a codon, anticodon and amino acid table; assessing each model by what it represents well, what it leaves out or distorts, and one improvement per limit; applying this to an unseen one-colour replication model. No enzyme names required, no Okazaki fragments, no folding mechanism (B7).",
+    "nextLesson": "how a chain of amino acids folds into a protein and becomes a trait (route entry bio-m5-b07)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-p01.md"
+  ],
+  "teaching": {
+    "task": "How do you build a model of DNA copying and of making a polypeptide, and how do you judge what each model shows and what it hides?",
+    "causalExplanation": "(1) building a model makes you follow the real rules, which is why it is worth doing (1); (2) a fixed colour key lets you track old and new strands (2); (3) tab shapes that only fit the partner model complementary pairing, with two or three notches for the number of hydrogen bonds (3); (4) taped backbones and touching tabs model strong covalent bonds and weak hydrogen bonds, so strands separate without breaking (4, 5); (5) each template fixes its new partner, so both copies match the original and each keeps one original strand (5, 6); (6) the template strand alone is read to make mRNA, with U for T, and the gene is unchanged (7); (7) a ribosome reads three bases at a time and each tRNA links one codon to one amino acid, so the order of codons sets the order of beads (8, 9); (8) a model is assessed by what it represents accurately, what it leaves out or distorts, and how to improve it (10 to 12).",
+    "conversationalApproach": "Opens on the hook (hook (a model on the bench)), then works through aim and kit, step 1: cut nucleotides that only fit one partner, make the pieces for the second model, step 2: build the starting molecule, step 3: model replication and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.",
+    "openingDecision": "This strip of paper cards is a model of twelve base pairs of DNA. It can't do anything a real cell does. So why build it?",
+    "understandingCheck": "a replication model built with one colour of card for both original and new strands; both daughter molecules match the original. Demand: explain why the model cannot show semi-conservative replication, and suggest one change. Answer: old and new strands look identical, so you cannot see that each daughter keeps one original strand; use two colours (original and new). Crossed mistake: \"the model is fine because the sequences match\" (matching shows accurate copying, not which strand is old).",
+    "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extracts ../site-extracts/bio-m5-l06.md and ../site-extracts/bio-m5-l07.md, and from site lessons 06 and 07 (read 18 Oct: lesson 06 \"Build and Pair\" activity, DNA Builder tool, Explain walkthrough and the \"Beyond the syllabus\" box; lesson 07 Explain walkthrough). Route entry: bio-m5-p01 (\"Build and assess replication and synthesis models\", playlist order 12, practical-support, prerequisite bio-m5-b06c, next bio-m5-b07). Route start: \"Learners construct and use a representation rather than only watch one.\" Route stop: \"Support construction, comparison and critique of DNA forms, replication/division and synthesis models; collect learner explanations/limitations as separate evidence.\" Route syllabus actions (candidates): B-DNA-replication, B-mitosis, B-meiosis, B-continuity, B-DNA-forms, B-transcription, B-translation, B-mRNA-tRNA. This design serves B-DNA-replication, B-transcription, B-translation and B-mRNA-tRNA; B-mitosis is linked in one sentence; B-meiosis and B-continuity sit with P02 and B5b; B-DNA-forms with B6a."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "B4's coded BasePiece jigsaw tiles, Strand ribbon with 5' and 3' tags and HBonds (two or three dotted lines), restyled as paper cards on the explainer paper grain (public/assets/explainer-paper-grain.png): card body tinted by strand (B4 blue original and green new; yellow RNA and orange tRNA are kit colours for this practical), base letter always printed, tab shape by pair family (B4 rule). B6c's codon chart excerpt and anticodon chip style. b5x-zoom-helix-v1.png (real helix, scene 11 comparison) and m5x-ribosome-v1.png (real ribosome, scene 10 and 11 comparison). B5a's b5x-chromosome-duplicated-v1.png (scene 6 link, small). The explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam. New coded items: the colour-key chip, the method step rail (step 1 to 5, one lit at a time), the record sheet (sketch plus labels), the codon results table, the assessment card (three columns: represents well / leaves out or distorts / improvement), the attempt card. New painted plates: see the Codex asset brief. - No human figures: every step is shown as cards moving on a bench by themselves (slide, flip, snap), tape strips appearing, scissors resting beside cut cards. No hands.",
+    "transitionPlan": "One bench persists across the practical: the step rail along the top shows where the student is, the bench holds only the pieces the current step uses, and the right zone holds one card at a time. Replication is built on the bench, transcription and translation reuse the same twelve-base stretch, the results table and assessment cards follow, the attempt card clears the bench and feedback shrinks it to a strip; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "the bench strip draws across the centre.",
+      "teachingReason": "Hook (a model on the bench): This strip of paper cards is a model of twelve base pairs of DNA.",
+      "narrationCue": "DNA copying / making a polypeptide",
+      "motionPurpose": "The finished coded card ladder (twelve pairs, blue backbones, jigsaw tabs, letters printed) slides on and settles. On \"can't do anything a real cell does\" the real helix plate (b5x-zoom-helix-v1.png) fades in small at the right with a grey \"?\" between it and the cards.",
+      "motionRole": "explain",
+      "onScreenChange": "the bench strip draws across the centre. The finished coded card ladder (twelve pairs, blue backbones, jigsaw tabs, letters printed) slides on and settles. On \"can't do anything a real cell does\" the real helix plate (b5x-zoom-helix-v1.png) fades in small at the right with a grey \"?\" between it and the cards. On \"follow the same rules\" one A card lifts and drops back onto its T partner with a soft snap. On \"DNA copying\" a small icon of two ladders appears above the bench; on \"making a polypeptide\" a small bead chain icon appears beside it. The question writes on at the top left: \"What does a model show, and what does it hide?\" Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "aim-kit",
+      "visualDecision": "new",
+      "visualReference": "the aim card writes on in the right zone: \"Aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes.\" On \"card in four colours\" the painted card sheets fan in (m5x-card-sheets-v1.png, Codex item 1); on \"scissors\" (m5x-scissors-v1.png, item 2), \"sticky tape\" (m5x-tape-roll-v1.png, item 3), \"pencil\" (m5x-pencil-v1.png, item 4) and \"pop-bea",
+      "teachingReason": "Aim and kit: Here's the aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes.",
+      "narrationCue": "Blue / green / yellow / orange",
+      "motionPurpose": "On \"Blue\", \"green\", \"yellow\" and \"orange\" the matching sheet lifts and the colour key chip builds one row per cue at the lower left; on \"amino acids\" a bead row joins the key. Small grey tag on \"scissors\": \"cut on the desk\".",
+      "motionRole": "explain",
+      "onScreenChange": "the aim card writes on in the right zone: \"Aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes.\" On \"card in four colours\" the painted card sheets fan in (m5x-card-sheets-v1.png, Codex item 1); on \"scissors\" (m5x-scissors-v1.png, item 2), \"sticky tape\" (m5x-tape-roll-v1.png, item 3), \"pencil\" (m5x-pencil-v1.png, item 4) and \"pop-beads\" (three bead plates, items 9 to 11) each land on the bench in turn with a small materials tag. On \"Blue\", \"green\", \"yellow\" and \"orange\" the matching sheet lifts and the colour key chip builds one row per cue at the lower left; on \"amino acids\" a bead row joins the key. Small grey tag on \"scissors\": \"cut on the desk\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "cut-nucleotides",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"1.",
+      "teachingReason": "Step 1: cut nucleotides that only fit one partner: Step one: make the nucleotides.",
+      "narrationCue": "phosphate / sugar / A only fits T / C only fits G / two / three",
+      "motionPurpose": "Make nucleotides\". The painted pile of cut cards (m5x-card-pile-v1.png, item 5) sits at the left of the bench.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1. Make nucleotides\". The painted pile of cut cards (m5x-card-pile-v1.png, item 5) sits at the left of the bench. One coded blank card enlarges at centre; on \"phosphate\" a small pencil circle draws at the strip's end (tag \"phosphate\"); on \"sugar\" a pencil pentagon draws beside it (tag \"sugar\"); on \"the tab is the base\" the tab outlines (tag \"base\"); a bracket over circle and pentagon reads \"backbone part\". On \"A only fits T\" an A card and a T card slide together and seat (snap); a C card tries the T and does not seat (small grey bounce, tag \"doesn't fit\"). On \"C only fits G\" C and G seat. On \"two\" two bumps on the A tab and two slots on the T tab pulse, with B4's HBonds two dotted lines between; on \"three\" the C-G tabs pulse with three dotted lines. Tag: \"notches = hydrogen bonds: A-T two, C-G three\" (B4 recall, grey tag \"B4\"). Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "make-synthesis-pieces",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"1b.",
+      "teachingReason": "Make the pieces for the second model: While you're cutting, make the pieces for the second model too.",
+      "narrationCue": "yellow / orange / three base tabs / ribosome",
+      "motionPurpose": "Make RNA, tRNA and ribosome\". No hands: the painted scissors (m5x-scissors-v1.png) rest beside each piece as it separates along a coded dashed cut line.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1b. Make RNA, tRNA and ribosome\". No hands: the painted scissors (m5x-scissors-v1.png) rest beside each piece as it separates along a coded dashed cut line. On \"yellow\" a yellow sheet (from the card sheets plate) gives up a row of coded yellow cards; one U card enlarges beside a blue T card, their tabs outlined side by side (tag \"U: same notches as T\"), and the U seats onto an A (snap). On \"orange\" the painted tRNA card (m5x-trna-card-v1.png, Codex item 7) cuts free; on \"three base tabs\" its three blank tabs outline and coded letters write on them, \"U A C\", with a small direction tag \"3' to 5'\" and the bracket \"anticodon\". On \"paper cup\" the cup on the plate pulses; on \"red bead\" a red pop-bead (m5x-popbead-red-v1.png) drops into the cup. On \"C G U\" and \"A A A\" two more cards slide in beside it with gold and green beads; a small codon chart excerpt (B6c style) rings AUG for Met, GCA for Ala and UUU for Phe as each card is filled (tag \"bead = the amino acid for the codon this card fits\"). On \"ribosome\" the painted card ribosome (m5x-paper-ribosome-v1.png, item 6) cuts free and three coded yellow tabs slide into its window and fit exactly (bracket \"three tabs: one codon\"). Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "build-molecule",
+      "visualDecision": "adjust",
+      "visualReference": "step rail \"2.",
+      "teachingReason": "Step 2: build the starting molecule: Step two: build the starting molecule.",
+      "narrationCue": "point the second arrow the other way / touch",
+      "motionPurpose": "Build the molecule\". Twelve blue cards slide into a row on the bench, tape strips appearing between backbones (coded tape pieces matching the painted roll); the sequence prints in the tabs: A T G G C A T T T T G A.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"2. Build the molecule\". Twelve blue cards slide into a row on the bench, tape strips appearing between backbones (coded tape pieces matching the painted roll); the sequence prints in the tabs: A T G G C A T T T T G A. On \"pair a second blue strand\" the partner cards slide in one by one and seat: T A C C G T A A A A C T. On \"Draw a five prime to three prime arrow\" a pencil arrow draws along the top strand, left to right, with \"5'\" and \"3'\" tags at its ends (B4's Strand arrows); on \"point the second arrow the other way\" a second arrow draws along the partner strand right to left, tags \"3'\" left and \"5'\" right, and the two arrows pulse together (tag \"antiparallel: arrows opposite\"). On \"covalent bonds\" the tape strips glow with the tag \"tape: strong backbone bonds\"; on \"touch\" the tab joins show dotted HBonds with \"tabs: weak hydrogen bonds\". Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "scribbleEllipse",
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "replicate",
+      "visualDecision": "new",
+      "visualReference": "step rail \"3.",
+      "teachingReason": "Step 3: model replication: Step three: copy it.",
+      "narrationCue": "apart / template / two molecules",
+      "motionPurpose": "Copy (replicate)\". On \"apart\" the ladder opens like a zip from the left (B4's Fork motion), the dotted bonds vanishing pair by pair while the tape strips stay (tag \"tape unbroken\").",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"3. Copy (replicate)\". On \"apart\" the ladder opens like a zip from the left (B4's Fork motion), the dotted bonds vanishing pair by pair while the tape strips stay (tag \"tape unbroken\"). On \"template\" both blue strands get the tag \"template\". Green cards slide in from a small green pile, one per base on the template, each seating with a snap; a coded tape strip joins each new backbone. On \"two molecules\" the two ladders separate along the bench, each with a bracket: \"1 blue + 1 green\". The colour key's blue and green rows pulse. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "record-check",
+      "visualDecision": "new",
+      "visualReference": "the record sheet (painted clipboard m5x-clipboard-sheet-v1.png, item 12, with a coded sketch drawing on it) in the right zone: two small ladders sketched, labels \"old (blue)\" and \"new (green)\" writing on.",
+      "teachingReason": "Record and check: Now record what the model shows.",
+      "narrationCue": "match base for base / semi-conservative / sister chromatids",
+      "motionPurpose": "On \"match base for base\" each molecule's top row reads across against the original sequence chip with ticks along it. On \"forcing a wrong card in\" a green C card tries an A on the template and tilts, not seated (grey tag \"mismatch: doesn't fit\"; small grey tag \"cells also proofread: B4\").",
+      "motionRole": "explain",
+      "onScreenChange": "the record sheet (painted clipboard m5x-clipboard-sheet-v1.png, item 12, with a coded sketch drawing on it) in the right zone: two small ladders sketched, labels \"old (blue)\" and \"new (green)\" writing on. On \"match base for base\" each molecule's top row reads across against the original sequence chip with ticks along it. On \"forcing a wrong card in\" a green C card tries an A on the template and tilts, not seated (grey tag \"mismatch: doesn't fit\"; small grey tag \"cells also proofread: B4\"). On \"semi-conservative\" the term writes on under the sketch: \"each copy keeps one original strand\". On \"sister chromatids\" the two ladders shrink and slide into the two arms of b5x-chromosome-duplicated-v1.png (small, grey tag \"B5a\"), each arm tagged \"one copy\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "transcribe",
+      "visualDecision": "new",
+      "visualReference": "step rail \"4.",
+      "teachingReason": "Step 4: model transcription: Step four switches to the second model: making a polypeptide.",
+      "narrationCue": "template strand / U instead of T / messenger RNA / unchanged",
+      "motionPurpose": "Transcribe\". One of the two molecules returns to centre; the colour key's yellow row pulses.",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"4. Transcribe\". One of the two molecules returns to centre; the colour key's yellow row pulses. On \"Unzip the whole gene\" the ladder opens across the twelve cards; the lower strand gets the tag \"template strand (3' to 5')\" and the upper strand dims (tag \"not read\"). On \"yellow cards\" yellow cards seat one by one opposite the template: A U G G C A U U U U G A, built from the 5' end (small arrow \"built 5' to 3'\", grey tag \"B6b\"). On \"U instead of T\" each U card rings briefly where an A sits opposite. On \"peel the yellow strand off\" it lifts away and the DNA ladder closes again with its dotted bonds back. On \"messenger RNA\" the yellow strip gets the tag \"mRNA\"; on \"unchanged\" the DNA gets a teal tick \"gene unchanged, can be read again\". Grey tag, unspoken: \"a cell opens only a short stretch at a time\". Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "translate",
+      "visualDecision": "new",
+      "visualReference": "step rail \"5.",
+      "teachingReason": "Step 5: model translation: Step five: translation.",
+      "narrationCue": "codon / anticodon / clip its bead / stop codon",
+      "motionPurpose": "Translate\". The painted paper ribosome (m5x-paper-ribosome-v1.png, item 6) sits at centre; the yellow mRNA strip slides into its window from the left, three cards visible in the window (bracket \"codon\").",
+      "motionRole": "explain",
+      "onScreenChange": "step rail \"5. Translate\". The painted paper ribosome (m5x-paper-ribosome-v1.png, item 6) sits at centre; the yellow mRNA strip slides into its window from the left, three cards visible in the window (bracket \"codon\"). On \"orange card\" a tRNA card plate (m5x-trna-card-v1.png, item 7) appears above the window with a coded red bead (m5x-popbead-red-v1.png) in its cup and its three base tabs lettered \"U A C\" (direction tag \"3' to 5'\"); on \"fit its codon\" its tabs seat into the codon's tabs in the window. On \"start codon\" it drops and seats over A U G (snap, tag \"start: methionine\"). On \"clip its bead\" the strip moves one codon left, a second card (gold bead, anticodon C G U) seats over G C A, and the gold bead clips to the red one (small coded peg joint, tag \"peptide bond\"). The first card lifts away empty. The third card (green bead, anticodon A A A) seats over U U U and its bead clips on. On \"stop codon\" U G A enters the window; an orange card hovers and finds no fit (grey \"?\"), tag \"stop: no tRNA\". On \"comes off\" the three-bead chain lifts free. Grey tag, unspoken: \"a real ribosome holds two tRNAs at a time\". Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results-table",
+      "visualDecision": "new",
+      "visualReference": "the results table writes in the right zone, one row per cue: \"codon / anticodon (3' to 5') / amino acid\": \"AUG / UAC / Met (start)\", \"GCA / CGU / Ala\", \"UUU / AAA / Phe\", \"UGA / none / stop\".",
+      "teachingReason": "Results table: Record the results in a table: codon, anticodon and amino acid, using a codon chart.",
+      "narrationCue": "methionine, alanine and phenylalanine / one card",
+      "motionPurpose": "A small codon chart excerpt (B6c style) sits under the table with each looked-up cell ringing as its row writes. On \"methionine, alanine and phenylalanine\" the bead chain sits under the table with each bead tagged \"Met\", \"Ala\", \"Phe\".",
+      "motionRole": "explain",
+      "onScreenChange": "the results table writes in the right zone, one row per cue: \"codon / anticodon (3' to 5') / amino acid\": \"AUG / UAC / Met (start)\", \"GCA / CGU / Ala\", \"UUU / AAA / Phe\", \"UGA / none / stop\". A small codon chart excerpt (B6c style) sits under the table with each looked-up cell ringing as its row writes. On \"methionine, alanine and phenylalanine\" the bead chain sits under the table with each bead tagged \"Met\", \"Ala\", \"Phe\". On \"one card\" one template card in the DNA (the C opposite the first base of codon 2; computed, see Numbers) flashes amber and the matching mRNA codon and bead flash with a \"?\" (no new amino acid named; grey tag \"a changed base can change an amino acid: B6b, B6c\"). Hold about 2 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "assess-strengths",
+      "visualDecision": "new",
+      "visualReference": "the assessment card writes in the right zone with three column headings: \"Represents well\", \"Leaves out or distorts\", \"Improvement\".",
+      "teachingReason": "Assess: what the models represent well: Now assess the models.",
+      "narrationCue": "represent well / threes",
+      "motionPurpose": "On each cue a row writes in the first column with a small pen link to the matching piece on the bench: \"pairing rule (tab shapes)\" to a seated A-T tab; \"one original strand kept (colours)\" to the two blue-green ladders; \"code read in threes (window)\" to the ribosome window, with m5x-ribosome-v1.png small beside the paper ribosome (tag \"real ribosome\"); \"tRNA links codon to amino acid\" to an orange card with its bead.",
+      "motionRole": "explain",
+      "onScreenChange": "the assessment card writes in the right zone with three column headings: \"Represents well\", \"Leaves out or distorts\", \"Improvement\". On each cue a row writes in the first column with a small pen link to the matching piece on the bench: \"pairing rule (tab shapes)\" to a seated A-T tab; \"one original strand kept (colours)\" to the two blue-green ladders; \"code read in threes (window)\" to the ribosome window, with m5x-ribosome-v1.png small beside the paper ribosome (tag \"real ribosome\"); \"tRNA links codon to amino acid\" to an orange card with its bead. Hold about 1 second.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "assess-limits",
+      "visualDecision": "new",
+      "visualReference": "the second column fills, one row per cue: \"no enzymes: hides who does each job\" with a small grey tag \"helicase, DNA polymerase, RNA polymerase\"; \"flat: hides the twist that must unwind\" with b5x-zoom-helix-v1.png sliding in beside the flat ladder; \"12 base pairs: hides how long copying takes\" with a scale bar that stretches far off screen; \"direction not enforced: hides one-way building\" with a g",
+      "teachingReason": "Assess: limitations: Then the limits.",
+      "narrationCue": "enzymes / flat / tiny / direction / folding",
+      "motionPurpose": "Hold about 2 seconds (reading hold).",
+      "motionRole": "explain",
+      "onScreenChange": "the second column fills, one row per cue: \"no enzymes: hides who does each job\" with a small grey tag \"helicase, DNA polymerase, RNA polymerase\"; \"flat: hides the twist that must unwind\" with b5x-zoom-helix-v1.png sliding in beside the flat ladder; \"12 base pairs: hides how long copying takes\" with a scale bar that stretches far off screen; \"direction not enforced: hides one-way building\" with a green card sliding on at the wrong end and a grey \"?\"; \"no folding: hides why order matters\" with the bead chain and a dotted fold outline (grey tag \"next video\"). Hold about 2 seconds (reading hold).",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 2 seconds (reading hold)"
+    },
+    {
+      "sceneId": "improvements",
+      "visualDecision": "new",
+      "visualReference": "the third column fills opposite its limit, one per cue: \"add cards at the 3' end only\" (the scene 4 arrows pulse, and a green card is only allowed at the 3' end of a growing strand, tick); \"enzyme job cards\" (three small blank coded cards labelled \"unzip\", \"build DNA\", \"build RNA\" slide near the fork); \"twist into a helix\" (the card ladder twists a half turn on the bench).",
+      "teachingReason": "Improving the model: A good assessment ends with improvements.",
+      "narrationCue": "improvements / twist",
+      "motionPurpose": "On \"fixes one limit\" pen links join each improvement to its limit across the card. A crossed chip: \"the model is wrong because it's simplified\".",
+      "motionRole": "explain",
+      "onScreenChange": "the third column fills opposite its limit, one per cue: \"add cards at the 3' end only\" (the scene 4 arrows pulse, and a green card is only allowed at the 3' end of a growing strand, tick); \"enzyme job cards\" (three small blank coded cards labelled \"unzip\", \"build DNA\", \"build RNA\" slide near the fork); \"twist into a helix\" (the card ladder twists a half turn on the bench). On \"fixes one limit\" pen links join each improvement to its limit across the card. A crossed chip: \"the model is wrong because it's simplified\". Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no colour key, no assessment card.",
+      "teachingReason": "Unseen transfer: attempt (countdown, 10 seconds), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "Your turn.",
+      "motionPurpose": "The card for \"attempt (countdown, 10 seconds)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no colour key, no assessment card. The attempt card writes on: two coded white-card ladders on the bench (all backbones white, letters printed, sequences identical), tag \"white cards only, original and new\"; givens line \"both copies match the original\"; demands \"(a) Explain why this model can't show semi-conservative replication.\" \"(b) Suggest one change.\" Two answer boxes. Nothing answer-bearing: no blue or green, no \"old\" or \"new\" labels. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The card stays on screen during and after the countdown.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Feedback (brief): With one colour, old and new strands look the same, so you can't see that each new molecule keeps one original strand.",
+      "narrationCue": "look the same / two colours",
+      "motionPurpose": "On \"look the same\" a \"?\" hovers over each white strand. On \"two colours\" the original strands recolour blue and the new ones green; bracket \"1 original + 1 new\" on each ladder.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. On \"look the same\" a \"?\" hovers over each white strand. On \"two colours\" the original strands recolour blue and the new ones green; bracket \"1 original + 1 new\" on each ladder. Answer line writes on: \"(a) old and new strands look identical, so 'one original kept' can't be seen; (b) two colours, original and new\". On \"fine because the sequences match\" the chip \"fine: the sequences match\" writes on and takes a grey scribble cross, tag \"shows accuracy, not which strand is old\". Hold about 1 second.",
+      "motionTools": [
+        "chip travel",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"Key: what each piece stands for.\" \"Build by the real rules (valid).\" \"Record what you see.\" \"Assess: represents well / leaves out / improve.\" The two models sit small along the bottom (ladders and bead chain).",
+      "teachingReason": "Decision rule and handoff: So, to build and assess a model: decide what each piece stands for, follow the real rules so the model is valid, and record what you see.",
+      "narrationCue": "Next",
+      "motionPurpose": "On \"Next\" a chip \"Next: from chain to protein to trait\" appears with the bead chain folding into a small blob. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"Key: what each piece stands for.\" \"Build by the real rules (valid).\" \"Record what you see.\" \"Assess: represents well / leaves out / improve.\" The two models sit small along the bottom (ladders and bead chain). On \"Next\" a chip \"Next: from chain to protein to trait\" appears with the bead chain folding into a small blob. Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/bp01-learning-review.md",
+      "sha256": "003ecacba0e8854754c5b212edb07ec68d2df133b240cd27da0405aa8af321b5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/bp01-claude-science-check.md",
+      "sha256": "426d6d18a3d3e5ce33e25141a223ba44dabdd8e7bdddd4dbe4232b8cdf3fc919"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

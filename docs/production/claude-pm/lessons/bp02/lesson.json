@@ -1,0 +1,156 @@
+{
+  "title": "Model Meiosis, Fertilisation and Mutation with Pop-Beads",
+  "subtitle": "How do you model meiosis, fertilisation and mutation to predict the genotypes offspring can have, and how far can you trust the predictions?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 15,
+  "lessonIntent": "building a parent cell with colour-tracked homologues and alleles at matching positions; copying each chromosome into sister chromatids and counting by centromeres; modelling crossing over at matching points and recording the new combinations; randomising each pair with a coin and dividing twice into four gametes; listing the four gamete types without crossing over (2 x 2) and the extra crossover types; modelling random fertilisation by random draw; adding a deliberate mutation and tracing the new allele into an offspring; tallying offspring for one gene and comparing observed with expected; assessing the model (strengths, limitations, validity, reliability); evaluating a conclusion drawn from too few trials. No Punnett square method (B9), no dihybrid ratios, no linkage maps.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two parent plants can produce a hundred seeds, and no two are quite the same. Can you predict which genotypes their offspring could have? You can, with a few pop-beads on a desk. In this practical you'll model meiosis with crossing over, then fertilisation and a mutation, and use the model to predict the variety in the offspring, and to see where those predictions can go wrong."
+      }
+    },
+    {
+      "id": "aim-kit",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The aim: model meiosis, fertilisation and mutation to predict the variation in offspring genotypes. You need pop-beads in two colours, centromere pieces, small stickers, a coin, a die, string loops for cells, blank cards and a results sheet. Plum beads stand for chromosomes the parent got from its mother, and teal for those from its father. The colours let you track where every piece came from."
+      }
+    },
+    {
+      "id": "build-parent",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step one: build a parent cell with two pairs of chromosomes. Make a long plum chain and a long teal chain the same length, then a short pair the same way. Stick alleles at matching positions: purple and tall on the long plum chromosome, white and short on the long teal one, round on the short plum one, and wrinkled on the short teal one. Matching positions matter, because homologous chromosomes carry the same genes in the same places."
+      }
+    },
+    {
+      "id": "copy",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step two: the DNA is copied before meiosis starts. So build an identical twin of each chain, same colour, same stickers, and join the pair with a centromere piece. Each chromosome is now two sister chromatids. Count them: there are still four chromosomes, because you count centromeres, not chromatids."
+      }
+    },
+    {
+      "id": "cross-over",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step three, in prophase one: crossing over. Pair each long chromosome with its partner, and roll a die: cross over only on a six. Unclip one plum chromatid and one teal chromatid at the same point, between the two genes, and swap the end pieces. Break at exactly matching points, because a real crossover exchanges the same stretch of genes, so nothing is lost or doubled. Now one chromatid carries purple with short, and another carries white with tall. Record those new combinations."
+      }
+    },
+    {
+      "id": "line-up-divide",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step four, in metaphase one: line the pairs up across the middle of the cell. Flip the coin for each pair to decide which side the plum chromosome goes. The coin makes each pair's direction random, and independent of the other pair. Pull each pair apart into two new loops. Then, for meiosis two, pull the sister chromatids apart in each loop. You end up with four gametes, each with one long and one short chromosome."
+      }
+    },
+    {
+      "id": "record-gametes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step five: record each gamete's alleles on a card, then rebuild and run it again with different coin results. Without crossing over, you'll only ever find four types: purple and tall, or white and short, each with round or with wrinkled. That's two choices for each of two pairs: two times two. Crossing over adds the mixed types. They're less common because, like your die, a crossover between those two genes happens in only some cells."
+      }
+    },
+    {
+      "id": "fertilise",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step six: fertilisation. A partner group builds a second parent the same way and keeps every gamete card. Each group shuffles its cards face down and draws one at random. Put the two gametes together in one loop. That's the zygote, back to two of each chromosome. Record its genotype, return the cards, and repeat. The random draw models random fertilisation: any gamete can meet any gamete."
+      }
+    },
+    {
+      "id": "mutate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step seven: mutation. Before one fertilisation, swap one sticker in one gamete for a new allele in a new colour. That models a DNA change in a cell that makes gametes. The offspring from that gamete carries an allele that neither parent had. Crossing over, assortment and fertilisation only reshuffle alleles. Only mutation makes a new one."
+      }
+    },
+    {
+      "id": "results",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's an example class result for just the seed-shape gene, from sixteen fertilisations. Each parent gives round or wrinkled equally often, so four pairings are equally likely: round with round, round with wrinkled, wrinkled with round, and wrinkled with wrinkled. Two of the four give one of each. So out of sixteen, the model expects four, eight and four. The class got three, nine and four. Close, but not exact, because each draw is random."
+      }
+    },
+    {
+      "id": "assess-strengths",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now assess the model. It represents several things well. Matching sticker positions show that homologues carry the same genes. The swap shows crossing over making new combinations without new alleles. The coin makes each pair's direction random, and joining two gametes shows fertilisation restoring the chromosome number. And it predicts which gamete types are possible."
+      }
+    },
+    {
+      "id": "assess-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Its limits matter too. Two pairs give only four whole-chromosome combinations, so the model hides most of the variety: humans' twenty-three pairs give over eight million. You chose where the crossover went, but in real cells its position varies, and there can be several. You chose the mutation, but real mutations are rare and random, and many have no effect. And beads with stickers show alleles, but not the DNA itself, or the spindle that moves the chromosomes."
+      }
+    },
+    {
+      "id": "valid-reliable",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To keep it valid, so it really tests what meiosis does, follow the real rules every time: break at matching points, roll and flip fresh each run, and draw at random. To make it reliable, so repeats agree, repeat many times and pool the class results, because a few trials can land far from the prediction just by chance."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A group models two parents that each have one round and one wrinkled allele, but runs only four fertilisations. None of the four offspring has two wrinkled alleles. They conclude that offspring with two wrinkled alleles can't occur from these parents. Evaluate their conclusion. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The conclusion isn't supported. Each parent can give a wrinkled allele, so two wrinkled alleles are expected about one time in four. Each offspring has a three in four chance of missing out, so all four miss out about one time in three. They should repeat many more times and pool the results. If you said the model is wrong, it isn't: the sample is just too small."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to model offspring variation: track each parent's chromosomes by colour, copy before dividing, cross over on a six at matching points, randomise every pair and every fertilisation, add a mutation on purpose, and repeat enough times to trust the pattern. Next: Punnett squares and pedigrees, the quick way to predict crosses like these on paper."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

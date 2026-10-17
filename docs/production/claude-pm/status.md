@@ -639,3 +639,172 @@ Briefs 47, 48, 53 and 54 media handoff: `out/archives/brief47-48-53-54-plates-20
 ### Brief 52: Physics and Maths video feasibility (16 October 2026)
 
 Wrote `docs/production/programme/physics-maths-feasibility.md`. Counted 701 senior-adventure Physics and Maths pages by year and topic, checked for obvious placeholders, sampled three Physics and three Maths Advanced lessons, mapped existing explainer and read-only legacy capabilities, and checked four public HSC video sources. The report separates page presence from science or syllabus approval and proposes two narrow pilots and the missing shared visual components. No site or scene code changed. No owner decision requested yet.
+
+### Brief 56: P02, C10, B6b and B6c fact check (18 October 2026)
+
+Created `docs/production/claude-pm/checks/codex-check-56.md`. Found two errors: P02 states an approximate standards concentration as an equality (the recipe gives about 97.1% conversion), and C10 omits `(ACSCH098, ACSCH099)` from its quoted 2017 Chemistry syllabus subpoint. The remaining requested arithmetic, constants, sequences, mechanisms and syllabus wording checked out. Nothing could not be checked. Question for Claude: none.
+
+### Brief 28k: G03b and B3b YouTube uploads (18 October 2026)
+
+Uploaded both owner-approved MP4s after exact SHA256 checks. Both are Public, Education, English (Australia), not made for kids, AI use disclosed, with published timed SRT captions. HD processing completed; Studio showed no notices or copyright issues. Their descriptions include the official 2017 syllabus dotpoints and scene-timed chapters. Both end screens were skipped because the final key notes fill the screen. The public Manual playlists show G03b after C9 and before G03c at Chemistry position 12, and B3b after B3a part 2 and before B4 at Biology position 8.
+
+- G03b: https://youtu.be/A0Z2-OLzRCI (Studio displays 6:44). Thumbnail: auto-generated frame 2.
+- B3b: https://youtu.be/btrFMU7Yhxc (9:02). Thumbnail: auto-generated frame 2.
+
+Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with both records and the shifted positions. No unfinished upload step or question for Claude.
+
+### Brief 59: B7, B8, C11 and C13 plates (18 October 2026)
+
+Created `public/assets/biology/m5x-rabbit-himalayan-v1.png` and `m5x-rabbit-himalayan-patch-v1.png`, plus `public/assets/chemistry/m5x-thermometer-cold-v1.png`, `m5x-hot-pack-v1.png`, `m5x-cold-pack-v1.png` and `m5x-ppt-baso4-white-v1.png`. Provenance, dimensions, alpha boxes and hashes are in `docs/production/claude-pm/assets/brief59-provenance.json`. Checkerboard, 200 px and pair overlay views are in `docs/production/claude-pm/assets/brief59-qa/`. The rabbit, packs, thermometer and precipitate align with their paired plates in the inspected overlays.
+
+The B8 pod `b2b-pod-seeds-v1.png` already has a clean alpha cutout. Its dark RGB outside the pod has zero alpha, so no v2 was needed. The four pea-seed plates and two fly plates read at 160 px on cream; the runner and seedling read side by side at 300 px. Their views are in the same QA folder. The C11 lesson asset brief specifies a standalone thermometer aligned to `c8-thermometer-hot-v1.png`, while Brief 59 says it is in a beaker. I followed the C11 design. Question for Claude: is a separate beaker composition needed?
+### Brief 28l: C7 YouTube upload (18 October 2026)
+
+Uploaded the owner-approved C7 MP4 after its exact SHA256 check. C7 is Public at https://youtu.be/8hZ3MVi7kHU (7:51), Education, English (Australia), not made for kids, with AI use disclosed and the measured timed SRT captions published. Studio showed HD processing complete, no notices and no copyright issues. The description has nine scene-timed chapters and the complete 2017 Chemistry dotpoint wording; I changed the C7 draft's Le Chatelier apostrophe to a plain apostrophe. The public Manual Chemistry playlist shows C7 at position 10, after C6b and before C8, verified after reload. Auto-generated thumbnail frame 2 shows the yield and rate graph. An end screen was skipped because the final key notes fill the screen and elements would cover the text.
+
+Updated `docs/production/claude-pm/youtube/wave4-metadata-draft.json` and `docs/production/claude-pm/youtube/wave4-uploads.json`, including later Chemistry playlist positions. No unfinished upload step or question for Claude.
+
+### Brief 57: Year 12 Modules 7 and 8 pre-design packs (18 October 2026)
+
+Created 67 factual packs in `docs/production/claude-pm/pre-design/`: 18 `chem-m7-*.md`, 16 `bio-m7-*.md`, 14 `chem-m8-*.md` and 19 `bio-m8-*.md`. The complete pack lists, site lesson mapping, 2017 syllabus points, prerequisites and suggested order are in [m7-index.md](pre-design/m7-index.md) and [m8-index.md](pre-design/m8-index.md). Each pack has sections 1 to 7, stays below 1,500 words and lists painted plates needed. The site lessons were read-only. All 67 packs and both indexes passed section, local-link and em-dash checks.
+
+**Site errors found, Chemistry M7:** L06's C4H8 hydration case is underdetermined; L07's retained enol would not produce propan-2-ol; L11's methanol measurements give about -748 kJ/mol and 103%, not -383 kJ/mol and 53%; L18's litmus results contradict its expected compounds and its amide-protonation claim is wrong; L21's monomer recovery, PTFE and 260 °C statements need correction; L22 says nylon melting breaks intrachain amide bonds; L23 calls triglycerides polymers. The affected packs give the source and corrected reasoning.
+
+**Site errors found, Biology M7:** L01 assigns 11 million cases in 188 countries to 11 March 2020 instead of the WHO's over 118,000 cases in 114 countries; L02 places the oomycete Pythium among protozoans; L05 calls 4 CFU/100 mL four times a zero E. coli guideline; L12 conflates initial naive T-cell activation with target-cell recognition; L17 calls Wolbachia genetically modified; L18 calls 390 million four times 247 million and treats Wolbachia as inherently resistance-proof; L21 treats a three-country comparison as causal proof.
+
+**Site errors found, Chemistry M8:** L01 infers Mohr precipitation order from pure-water molar solubility; L04 uses an outdated lead guideline, so its comparison is about 1,400-fold, not 700-fold; L06 overstates coliform and conductivity claims; L08 loses L/kg units and overstates what field ratios and one mercury result prove; L11 conflates acidified permanganate with brown MnO2 conditions and overstates test specificity; L15 treats mass as a unique formula; L16 calls saponification base-catalysed and misstates the Pfizer sertraline change. Chromatography is a site extension, not a named 2017 Module 8 dotpoint.
+
+**Site error found, Biology M8:** L07 says PKU was usually diagnosed at age 2 to 4 before screening. Symptoms of untreated PKU can appear by 3 to 6 months, so the pack removes that unsupported historical age and cites the medical source. The L12 rate table and L13 treatment arithmetic reproduce. The L19 LASIK percentage and Australian price ranges require current source checks before use.
+
+**Could not finish independently:** Several Chemistry M7 property-table values, unspecified amine/amide Kb values, polymer grade figures and average bond-energy values need named reference checks. Chemistry M8 and Biology M8 packs mark other source-dependent claims at point of use. These are open source checks, not approved recording copy. Question for Claude: which of these source-dependent examples will actually enter a video? Check those before design or recording. No narration, lesson JSON, scene code or site page changed.
+
+### Brief 63: published Module 5 thumbnail drafts (18 October 2026)
+
+Created 18 review-only 1280 x 720 PNGs in `docs/production/claude-pm/thumbnails/drafts/<lessonId>.png`, plus `drafts/contact-sheet.png`. Extracted five candidate frames per published video into `drafts/candidates/`, with three candidate sheets. `drafts/frame-choices.json` records each chosen frame, time, crop and hook; `drafts/build_thumbnails.py` rebuilds the set. All 18 MP4s in `wave4-uploads.json` were available. No thumbnail was uploaded.
+
+The template uses an enlarged visual from the actual video on warm paper, a short white hook on a fixed left panel, Chemistry teal or Biology blue, an amber divider, and the HSCScience, Module 5 and lesson tags. Arial Bold was used because the site's Outfit and DM Sans files are WOFF2, not directly usable by Pillow here. Every draft is under 2 MB. G03b has no strong painted focal frame among the five samples, so its ICE table is the best honest choice. C05 is likewise formula-led and uses its K expression. Nothing else was blocked. Question for Claude: none.
+
+### Brief 61: Year 11 Biology pre-design packs (18 October 2026)
+
+Created 105 packs in `docs/production/claude-pm/pre-design/y11-bio/`: 34 `fa1-lNN-*.md`, 35 `fa2-lNN-*.md` and 36 `fa3-lNN-*.md`. [y11-bio-index.md](pre-design/y11-bio/y11-bio-index.md) lists every file, its suggested order, site lesson and 2025 syllabus IDs. All 75 site lessons are covered, an average of 1.4 videos per lesson. The site pages were read-only. Every pack has sections 1 to 7, exact ledger quotation with ID, page material and checks, traps, plate needs and Year 12 Module 5 overlap. All passed section, exact-quote, under-1,500-word, relative-link and no-em-dash checks.
+
+Source findings to resolve before design: FA1 L05 needs the syllabus field-of-view cell-size method in addition to image size divided by magnification; FA1 L24 should distinguish random segregation from independent assortment. FA2 L24 overgeneralises hormone responses; FA2 L25 treats approximate temperature values as hard limits and denaturation as permanent. FA3 L11 applies a mammal temperature range to birds; FA3 L15 calls illustrative resistance data published; FA3 L17 asks for a full branching tree from human-reference distances alone. The affected packs give the corrections and source context. Recomputed examples include cube ratios, potometer and glucose data, quadrat totals and mark-release-recapture estimates. No site page, narration, lesson JSON or scene code changed. Question for Claude: none.
+
+### Brief 64: P01, P03, B11 and B12 plates (18 October 2026)
+
+Created 18 Chemistry PNGs in `public/assets/chemistry/`: the P01 cobalt pink/blue pair, Bunsen unlit/lit pair, magnesium ribbon and oxide ash on matching mats, an additional oxide ash dish plate, clear dropper, faded and diluted iron tubes, stopper, safety glasses, gloves, waste bottle and test tube holder; plus the P03 black-card and white-tile 48-well plates and blank-label dropper bottle. Created `public/assets/biology/m5x-cheek-swab-v2.png` and `m5x-gel-tank-v2.png`. File names, hashes, prompts, source references, dimensions and the well-centre grid are in `docs/production/claude-pm/assets/brief64-provenance.json`. Checkerboard, 200 px, pair and overlay views are in `docs/production/claude-pm/assets/brief64-qa/`.
+
+The gel now has an empty row of wells across the black negative end, and the swab gap is clear at 200 px. The B11 cattle plates remain distinguishable in a 10 by 10 grid at 70 px. The P01 design uses a heatproof mat, while Brief 64 also requests an evaporating dish, so both ash treatments are supplied. The iron and cobalt pairs look aligned in overlay views; check them in the scene before freezing. NSW CSIS categories for cobalt(II) chloride solid and solution, lead(II) nitrate and barium nitrate remain unconfirmed because the official chemical lookup requires staff sign-in. No category was guessed. Question for Claude: can someone with staff CSIS access confirm those four entries?
+
+### Brief 62: 2025 Year 11 Chemistry draft site review (18 October 2026)
+
+Reviewed all 75 draft lesson pages read-only. Wrote `docs/production/claude-pm/site-corrections-y11-chem-new.md` and `docs/production/programme/y11-chem-new-site-review.md`. Recorded 45 lesson-level content correction jobs: FA1 19, FA2 10 and FA3 16. These include 13 wrong-science/calculation findings, 14 misleading findings and 18 lesson-specific incomplete-content findings; shared issues are separate. All 99 FA1 to FA3 syllabus points have topical pages, but required practical and source-investigation work is incomplete. The footer link is broken on all 75 pages, 63 pages lack a subject SVG/image/canvas, and launch comments still say 2027 instead of 2028. All 75 pages loaded locally and mounted Quick Check without page errors. No site files were edited. Question for Claude: will the owner fix the site and complete practical coverage before these pages become video sources?
+
+### Brief 58: Module 7 Chemistry and Biology plates (18 October 2026)
+
+Created 45 transparent 2000 x 2000 PNG plates, with provenance in `docs/production/claude-pm/assets/brief58-provenance.json` and checkerboard, cream, contact sheet and pair overlay views in `docs/production/claude-pm/assets/brief58-qa/`. Every file has real alpha and at least 8% clear margin. I inspected both contact sheets and the five pair overlays at 200 px. The pairs share a canvas, but their painted outlines are not pixel identical. Review the overlays before crossfading. Banana Panama disease was omitted because the site uses Banksia with Phytophthora and myrtle rust. Tapeworm, mosquito and tick are included because the site uses them. No people, formulas or labels were painted. No other item is unfinished. Question for Claude: none.
+
+- `public/assets/chemistry/m7-fractional-distillation-column-v1.png`: painted fractional distillation column plate.
+- `public/assets/chemistry/m7-school-distillation-setup-v1.png`: painted school distillation setup plate.
+- `public/assets/chemistry/m7-reflux-apparatus-v1.png`: painted reflux apparatus plate.
+- `public/assets/chemistry/m7-separating-funnel-clear-v1.png`: painted separating funnel clear plate.
+- `public/assets/chemistry/m7-separating-funnel-cloudy-v1.png`: painted separating funnel cloudy plate.
+- `public/assets/chemistry/m7-bromine-water-orange-v1.png`: painted bromine water orange plate.
+- `public/assets/chemistry/m7-bromine-water-colourless-v1.png`: painted bromine water colourless plate.
+- `public/assets/chemistry/m7-oil-gas-rig-v1.png`: painted oil gas rig plate.
+- `public/assets/chemistry/m7-crude-oil-barrel-v1.png`: painted crude oil barrel plate.
+- `public/assets/chemistry/m7-polymer-objects-v1.png`: painted polymer objects plate.
+- `public/assets/chemistry/m7-camping-gas-burner-v1.png`: painted camping gas burner plate.
+- `public/assets/chemistry/m7-ethanol-fuel-bottle-v1.png`: painted ethanol fuel bottle plate.
+- `public/assets/chemistry/m7-soap-making-v1.png`: painted soap making plate.
+- `public/assets/chemistry/m7-ester-fruit-v1.png`: painted ester fruit plate.
+- `public/assets/chemistry/m7-perfume-bottle-v1.png`: painted perfume bottle plate.
+- `public/assets/chemistry/m7-bromine-water-pair-v1.png`: painted bromine water pair plate.
+- `public/assets/biology/m7-bacterium-rod-coccus-v1.png`: painted bacterium rod coccus plate.
+- `public/assets/biology/m7-virus-particle-v1.png`: painted virus particle plate.
+- `public/assets/biology/m7-fungal-hyphae-v1.png`: painted fungal hyphae plate.
+- `public/assets/biology/m7-plasmodium-red-cell-v1.png`: painted plasmodium red cell plate.
+- `public/assets/biology/m7-prion-folded-protein-v1.png`: painted prion folded protein plate.
+- `public/assets/biology/m7-tapeworm-v1.png`: painted tapeworm plate.
+- `public/assets/biology/m7-mosquito-vector-v1.png`: painted mosquito vector plate.
+- `public/assets/biology/m7-tick-vector-v1.png`: painted tick vector plate.
+- `public/assets/biology/m7-petri-colonies-v1.png`: painted petri colonies plate.
+- `public/assets/biology/m7-agar-antibiotic-before-v1.png`: painted agar antibiotic before plate.
+- `public/assets/biology/m7-agar-antibiotic-after-v1.png`: painted agar antibiotic after plate.
+- `public/assets/biology/m7-microscope-v1.png`: painted microscope plate.
+- `public/assets/biology/m7-inoculating-loop-v1.png`: painted inoculating loop plate.
+- `public/assets/biology/m7-handwashing-sink-v1.png`: painted handwashing sink plate.
+- `public/assets/biology/m7-face-mask-v1.png`: painted face mask plate.
+- `public/assets/biology/m7-vaccine-vial-syringe-v1.png`: painted vaccine vial syringe plate.
+- `public/assets/biology/m7-quarantine-sign-v1.png`: painted quarantine sign plate.
+- `public/assets/biology/m7-healthy-leaf-v1.png`: painted healthy leaf plate.
+- `public/assets/biology/m7-infected-leaf-v1.png`: painted infected leaf plate.
+- `public/assets/biology/m7-banksia-phytophthora-v1.png`: painted banksia phytophthora plate.
+- `public/assets/biology/m7-myrtle-rust-leaf-v1.png`: painted myrtle rust leaf plate.
+- `public/assets/biology/m7-macrophage-v1.png`: painted macrophage plate.
+- `public/assets/biology/m7-neutrophil-v1.png`: painted neutrophil plate.
+- `public/assets/biology/m7-b-cell-v1.png`: painted b cell plate.
+- `public/assets/biology/m7-t-cell-v1.png`: painted t cell plate.
+- `public/assets/biology/m7-antibody-v1.png`: painted antibody plate.
+- `public/assets/biology/m7-mast-cell-v1.png`: painted mast cell plate.
+- `public/assets/biology/m7-macrophage-engulf-before-v1.png`: painted macrophage engulf before plate.
+- `public/assets/biology/m7-macrophage-engulf-after-v1.png`: painted macrophage engulf after plate.
+
+
+### Brief 60: Module 8 Chemistry and Biology plates (18 October 2026)
+
+Created 49 transparent 2000 x 2000 ink and watercolour plates, 26 Chemistry and 23 Biology. All pass RGBA, hash and 8% margin checks. The prompt specs, site decisions and retakes are in `docs/production/claude-pm/assets/brief60-provenance.json`. Light, dark, 200 px and pair QA views are in `docs/production/claude-pm/assets/brief60-qa/`.
+
+- `public/assets/chemistry/m8-aas-v1.png`: Atomic absorption spectrometer with hollow cathode lamp.
+- `public/assets/chemistry/m8-bromine-water-clear-v1.png`: Bromine water after decolourisation.
+- `public/assets/chemistry/m8-bromine-water-orange-v1.png`: Orange bromine water.
+- `public/assets/chemistry/m8-dichromate-green-v1.png`: Green acidified dichromate result.
+- `public/assets/chemistry/m8-dichromate-orange-v1.png`: Orange acidified dichromate.
+- `public/assets/chemistry/m8-flame-ba-pale-green-v1.png`: Barium pale-green flame.
+- `public/assets/chemistry/m8-flame-ca-brick-red-v1.png`: Calcium brick-red flame.
+- `public/assets/chemistry/m8-flame-cu-blue-green-v1.png`: Copper blue-green flame.
+- `public/assets/chemistry/m8-flame-k-lilac-v1.png`: Potassium lilac flame.
+- `public/assets/chemistry/m8-flame-na-yellow-v1.png`: Sodium yellow flame.
+- `public/assets/chemistry/m8-flame-sr-crimson-v1.png`: Strontium crimson flame.
+- `public/assets/chemistry/m8-flame-test-off-v1.png`: Unlit burner for flame-test process clip.
+- `public/assets/chemistry/m8-ir-spectrometer-v1.png`: Infrared spectrometer.
+- `public/assets/chemistry/m8-mass-spectrometer-v1.png`: Mass spectrometer.
+- `public/assets/chemistry/m8-nmr-machine-v1.png`: NMR machine.
+- `public/assets/chemistry/m8-permanganate-clear-v1.png`: Colourless acidified permanganate result.
+- `public/assets/chemistry/m8-permanganate-purple-v1.png`: Purple acidified permanganate.
+- `public/assets/chemistry/m8-ppt-agbr-cream-v1.png`: Cream silver bromide precipitate.
+- `public/assets/chemistry/m8-ppt-agi-pale-yellow-v1.png`: Pale-yellow silver iodide precipitate.
+- `public/assets/chemistry/m8-ppt-feoh2-green-v1.png`: Green iron(II) hydroxide precipitate.
+- `public/assets/chemistry/m8-river-sampling-bottle-v1.png`: River sample bottle with dipper, alternate.
+- `public/assets/chemistry/m8-river-sampling-bottle-v2.png`: River sample bottle alone, preferred.
+- `public/assets/chemistry/m8-sediment-core-v1.png`: Sediment core.
+- `public/assets/chemistry/m8-sewage-treatment-pond-v1.png`: Sewage treatment pond.
+- `public/assets/chemistry/m8-uv-visible-spectrophotometer-v1.png`: UV-visible spectrophotometer.
+- `public/assets/chemistry/m8-water-testing-kit-v1.png`: Water-testing kit.
+- `public/assets/biology/m8-cgm-reader-blank-v1.png`: Continuous glucose monitor reader with blank display, aligned with low and high states.
+- `public/assets/biology/m8-cgm-reader-high-v1.png`: Continuous glucose monitor reader, high bar, aligned edit.
+- `public/assets/biology/m8-cgm-reader-low-v1.png`: Continuous glucose monitor reader, low bar.
+- `public/assets/biology/m8-cochlear-implant-v1.png`: Cochlear implant device only.
+- `public/assets/biology/m8-contact-lenses-v1.png`: Contact lenses.
+- `public/assets/biology/m8-ear-cutaway-v1.png`: Ear cutaway.
+- `public/assets/biology/m8-eye-cutaway-v1.png`: Eye sagittal cutaway.
+- `public/assets/biology/m8-glasses-v1.png`: Eyeglasses.
+- `public/assets/biology/m8-hearing-aid-v1.png`: Hearing aid device only.
+- `public/assets/biology/m8-heart-v1.png`: Heart organ.
+- `public/assets/biology/m8-hospital-bed-v1.png`: Empty hospital bed.
+- `public/assets/biology/m8-insulin-pen-v1.png`: Plain insulin pen.
+- `public/assets/biology/m8-kidney-nephron-v1.png`: Kidney cutaway with adjacent nephron.
+- `public/assets/biology/m8-lungs-healthy-v1.png`: Healthy lungs, first matched state.
+- `public/assets/biology/m8-lungs-smoker-v1.png`: Smoker lungs, aligned edit of healthy lungs.
+- `public/assets/biology/m8-pancreas-v1.png`: Isolated pancreas gland.
+- `public/assets/biology/m8-skin-cross-section-v1.png`: Skin anatomy cross-section.
+- `public/assets/biology/m8-skin-melanoma-v1.png`: Skin block with melanoma lesion, aligned edit.
+- `public/assets/biology/m8-skin-normal-v1.png`: Skin block with an ordinary mole, first matched state.
+- `public/assets/biology/m8-sun-v1.png`: Standalone sun.
+- `public/assets/biology/m8-sun-protection-v1.png`: Hat and plain sunscreen bottle.
+- `public/assets/biology/m8-thermometer-v1.png`: Plain thermometer.
+- `public/assets/biology/m8-world-map-v1.png`: Unlabelled world map.
+
+Reused the AgCl, BaSO4, Cu(OH)2, Fe(OH)3 and PbI2 precipitation tubes and the colourimeter. Added cream AgBr, pale-yellow AgI and green Fe(OH)2 from the Module 8 ion-test pack. The six flame colours share one burner. Generated line differences in the flame and reagent process pairs call for cuts or short dissolves.
+
+Cataract and lens-clouding plates were omitted because no Module 8 Biology site lesson uses cataracts. The glucose pair uses the site continuous glucose monitor reader. Strontium flame, sediment core, hospital bed, insulin pen and map are brief-requested context artwork but are not named on the current site pages. The unlabelled map has watercolour-filled continents for legibility at 200 px. No other requested plate remains unfinished. Question for Claude: none.

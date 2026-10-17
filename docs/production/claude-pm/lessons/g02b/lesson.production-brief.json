@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/g02b/lesson.json",
+    "lessonSha256": "dd8c241701e662a909626fe34045b498a159d7190873da95897a495b84eb3de6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B9: dominant, recessive, homozygous, heterozygous, carrier; each gamete gets one allele; the 2 x 2 square; a ratio is a chance per offspring; pedigree symbols and numbering; \"Hidden in the parents: recessive. Hidden in the child: dominant.\" with its assumptions. From B10: X and Y; a male's single X; \"Dad gives his X to daughters and his Y to sons\"; \"of all children\" against \"of sons\"; X-linked recessive pedigree pattern and the rule-out; \"Incomplete is in-between. Co shows both.\" Year 10: multiply for \"and\" (introduced in one sentence in Q1 as each birth being a separate chance). Not assumed: conditional probability (Q3 explains it as crossing out the box the person cannot be), X-linked dominant (not used).",
+    "startsWith": "The hook: Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you.",
+    "stopsAfter": "choosing incomplete dominance from a third phenotype and predicting a 1:2:1 cross and a two-birth probability; explaining why tortoiseshell cats are almost always female and finding sex-specific and overall probabilities in an X-linked cross; finding a 2/3 carrier chance and a 1/6 child probability across two families, then updating to 1/4 on new evidence; ruling out X-linked recessive with named individuals, explaining why autosomal dominant and recessive both fit, and judging which is more likely for a rare condition.",
+    "nextLesson": "population frequencies and SNP evidence (route entry bio-m5-b11)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-g02.md"
+  ],
+  "teaching": {
+    "task": "When a cross or a family tree is new to you, how do you choose the model, find the probability, and say what the evidence can and cannot prove?",
+    "causalExplanation": "Why some chicks are black and white (the heterozygous parents each pass one allele; the alleles separate, they did not blend) (2b); why multiply (each chick is a separate fertilisation) (2c); why tortoiseshell needs two X chromosomes (both alleles must be present) (3b); why sons cannot get the father's X (he gives sons his Y) (3c); why the man is a certain carrier (his mother could only give a recessive allele) (4b); why 2/3 (the woman cannot be the affected box, leaving three equally likely boxes) (4c); why the second child's chance changes (an affected child proves she is a carrier) (4d); why X-linked recessive fails (an affected mother would have only affected sons) (5b); why both autosomal patterns fit (no giveaway trio) (5c); why dominant is more likely (recessive needs two unrelated carriers for a rare allele) (5d).",
+    "conversationalApproach": "Opens on the hook (hook), then works through q1-question (question 1: Andalusian chickens), q1-model (choose the model, fill the square), q1-chance (two chicks, then only blue), q1-mistake (the classic mistake), q2-question (question 2: tortoiseshell cats) and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.",
+    "openingDecision": "Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you.",
+    "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a). The type badge is hidden during each hold in Q1 and Q2 because it names the model.",
+    "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, B5-IQ4-02, p 49): \"model the formation of new combinations of genotypes produced during meiosis, including but not limited to:\" with \"interpreting examples of autosomal, sex-linkage, co-dominance, incomplete dominance and multiple alleles (ACSBL085)\" and \"constructing and interpreting information and data from pedigrees and Punnett squares\". Practice and transfer: ledger rows p1058 and p1059 stay with B9 and B10; G02 adds the practice row and the two items B9 deferred here (the 2/3 conditional probability and choosing between competing modes)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G03c layout: top-left the short task line; under it the stimulus (painted organism plates or a pedigree); under that the grouped givens card; the working fills the right two thirds; a type badge top-right (\"Incomplete dominance\", \"X-linked\", \"Pedigree: probability\", \"Pedigree: which pattern?\"). A first-moves strip on the far left carries three rows: \"1 choose the model\", \"2 write the genotypes you are sure of\", \"3 combine the chances\" and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Pedigrees use B9's data-driven Pedigree (standard symbols only, Roman numerals, individual numbers); no people, faces or bodies.",
+    "transitionPlan": "One practice board persists: the question card at the top left, the working area below it. Each question clears the area, writes on its stimulus (square or pedigree) and then builds one reasoning stage per scene, with the classic-mistake chip crossed out at the end; the decision board gathers the four methods before the notes; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Choose the model, then the chance\" writes on.",
+      "teachingReason": "Hook: Inheritance questions in the HSC rarely use peas.",
+      "narrationCue": "choose the model / sure of / combine the chances",
+      "motionPurpose": "Four thumbnails fan out on the right: the blue chicken plate (on \"an animal you haven't met\"), the tortoiseshell cat plate, a small pedigree with a \"?\" (on \"a family\"), a pedigree with a question mark over its legend (on \"can't tell you\"). On the three moves, the first-moves strip builds on the left, one row per cue: \"1 choose the model\", \"2 genotypes you're sure of\", \"3 combine the chances\".",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Choose the model, then the chance\" writes on. Four thumbnails fan out on the right: the blue chicken plate (on \"an animal you haven't met\"), the tortoiseshell cat plate, a small pedigree with a \"?\" (on \"a family\"), a pedigree with a question mark over its legend (on \"can't tell you\"). On the three moves, the first-moves strip builds on the left, one row per cue: \"1 choose the model\", \"2 genotypes you're sure of\", \"3 combine the chances\". On \"four HSC-style questions\" the thumbnails become four question cards with the tag \"HSC-style question, written for HSCScience\". Hold about 1 second; the strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second; the strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "Unseen transfer: q1-question (question 1: Andalusian chickens), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "all blue / ratio / first two chicks / only blue",
+      "motionPurpose": "The card for \"q1-question (question 1: Andalusian chickens)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden during the attempt (it names the model) and shown from 2b. Stimulus: the painted plates m5x-chicken-black-v1.png and m5x-chicken-splash-v1.png joined by \"x\", an arrow down to three small m5x-chicken-blue-v1.png copies tagged \"all blue\" on \"all blue\". Below, \"blue x blue\" with a \"?\" row. Givens card: \"black x splashed white gives all blue\", \"farmer: blue x blue\". Demands: \"(a) Why are some chicks black and some white? Give the ratio.\" \"(b) Probability that the first two chicks are both blue?\" \"(c) Which cross gives only blue chicks?\" Three answer boxes and an empty 2 x 2 grid outline (no letters). Nothing answer-bearing. Countdown 10 seconds; strip dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q1-model",
+      "visualDecision": "adjust",
+      "visualReference": "type badge \"Incomplete dominance\" writes on.",
+      "teachingReason": "Q1-model (choose the model, fill the square): First, choose the model.",
+      "narrationCue": "choose the model / incomplete dominance / 1 black, 2 blue, 1 white",
+      "motionPurpose": "On \"a third colour, in between\" the three plates line up black, blue, splashed white with the bank line \"Incomplete is in-between\" (grey tag \"B10\"). Allele chips \"C^B\" and \"C^W\" (on screen only) pin under the plates: \"C^B C^B\", \"C^B C^W\", \"C^W C^W\".",
+      "motionRole": "explain",
+      "onScreenChange": "type badge \"Incomplete dominance\" writes on. On \"a third colour, in between\" the three plates line up black, blue, splashed white with the bank line \"Incomplete is in-between\" (grey tag \"B10\"). Allele chips \"C^B\" and \"C^W\" (on screen only) pin under the plates: \"C^B C^B\", \"C^B C^W\", \"C^W C^W\". On \"Two blue parents\" GameteDiscs \"C^B\" and \"C^W\" slide along the top and down the side; the Punnett fills box by box (computed by cross with a a lesson-local in-between (incomplete dominance) phenotype map, inBetween('black', 'blue', 'splashed white'), written like B10's CO but named so no code path or label can show \"co-dominance\" on this question), each box gaining a tiny chicken plate. On \"1 black, 2 blue, 1 white\" the ratio strip writes \"1 black : 2 blue : 1 splashed white\" (computed). Answer line (a): \"blue = heterozygous; alleles separate: 1 : 2 : 1\". Strip: \"1 choose the model\" ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q1-chance",
+      "visualDecision": "new",
+      "visualReference": "the two blue boxes ring amber with \"2/4 = 1/2\" (computed).",
+      "teachingReason": "Q1-chance (two chicks, then only blue): Each chick has a one in two chance of being blue, and each chick is a separate chance.",
+      "narrationCue": "one in two / separate chance / one in four / black with white",
+      "motionPurpose": "On \"separate chance\" a coded two-step probability tree draws: first chick \"blue 1/2\" or \"not blue 1/2\", then from \"blue\" a second branch \"blue 1/2\"; on \"one in four\" the path blue-blue lights with \"1/2 x 1/2 = 1/4\" and answer line (b) writes on. The chip \"Separate offspring, known parents: multiply.\" writes small beside it.",
+      "motionRole": "explain",
+      "onScreenChange": "the two blue boxes ring amber with \"2/4 = 1/2\" (computed). On \"separate chance\" a coded two-step probability tree draws: first chick \"blue 1/2\" or \"not blue 1/2\", then from \"blue\" a second branch \"blue 1/2\"; on \"one in four\" the path blue-blue lights with \"1/2 x 1/2 = 1/4\" and answer line (b) writes on. The chip \"Separate offspring, known parents: multiply.\" writes small beside it. On \"black with white\" a second mini grid \"C^B C^B x C^W C^W\" fills four \"C^B C^W\" boxes (computed) with four blue chick plates; answer line (c): \"black x splashed white: all blue\". Strip: \"3 combine the chances\" ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "the chip \"blue x blue gives only blue\" writes on; on \"blue with blue\" it takes a red scribble cross with the caption \"heterozygotes don't breed true\".",
+      "teachingReason": "Q1-mistake (the classic mistake): The classic mistake is crossing blue with blue to get blue chicks.",
+      "narrationCue": "blue with blue / heterozygotes don't breed true",
+      "motionPurpose": "A second crossed chip, unspoken: \"1/2 + 1/2 = 1 (added instead of multiplied)\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the chip \"blue x blue gives only blue\" writes on; on \"blue with blue\" it takes a red scribble cross with the caption \"heterozygotes don't breed true\". A second crossed chip, unspoken: \"1/2 + 1/2 = 1 (added instead of multiplied)\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Unseen transfer: q2-question (question 2: tortoiseshell cats), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "X chromosome / both colours / female / tortoiseshell female / sons",
+      "motionPurpose": "The card for \"q2-question (question 2: tortoiseshell cats)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden during the attempt. Stimulus: the painted plates m5x-cat-tortoiseshell-v1.png (tagged \"tortoiseshell\") and m5x-cat-orange-v1.png (tagged \"orange\"), joined by \"x\" with the pedigree symbols \"female\" (circle) and \"male\" (square) under them; m5x-cat-black-v1.png small in a key strip: \"on the X: orange allele, black allele; one of each: tortoiseshell\". Demands: \"(a) Why are tortoiseshell cats almost always female?\" \"(b) Probability that a kitten is a tortoiseshell female?\" \"(c) What fraction of their sons are black?\" Three answer boxes, an empty 2 x 2 grid outline. Nothing answer-bearing: no X or Y chips. Countdown 10 seconds; strip dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q2-why-female",
+      "visualDecision": "new",
+      "visualReference": "type badge \"X-linked\".",
+      "teachingReason": "Q2-why-female (choose the model): The gene is on the X, and a tortoiseshell cat needs both alleles, so it needs two X chromosomes.",
+      "narrationCue": "both / two X chromosomes / one colour",
+      "motionPurpose": "The tortoiseshell plate gets two chips \"X^O\" and \"X^o\" (on screen only) with a bracket \"both alleles: two X\"; the bank line \"Co shows both\" appears small (grey tag \"B10\") with the screen wording \"both alleles show, in different patches\" directly under it. On \"one X and a Y\" the orange male plate gets \"X^O Y\"; a ghost male \"X^O X^o?\" fades and is struck with the grey tag \"males: one X\".",
+      "motionRole": "explain",
+      "onScreenChange": "type badge \"X-linked\". The tortoiseshell plate gets two chips \"X^O\" and \"X^o\" (on screen only) with a bracket \"both alleles: two X\"; the bank line \"Co shows both\" appears small (grey tag \"B10\") with the screen wording \"both alleles show, in different patches\" directly under it. On \"one X and a Y\" the orange male plate gets \"X^O Y\"; a ghost male \"X^O X^o?\" fades and is struck with the grey tag \"males: one X\". Answer line (a): \"needs two different X alleles; males have one X\". Grey author tag, small: \"rare XXY males can be tortoiseshell\" (screen only, explains \"almost\").",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q2-square",
+      "visualDecision": "adjust",
+      "visualReference": "Punnett with the mother's gametes \"X^O\", \"X^o\" down the side (teal-edged) and the father's \"X^O\", \"Y\" across the top (plum-edged).",
+      "teachingReason": "Q2-square (fill it, then read it two ways): Now the cross.",
+      "narrationCue": "daughter / son / one in four / one in two",
+      "motionPurpose": "On \"every daughter\" the X^O column fills two daughter boxes \"X^O X^O\" (orange), \"X^O X^o\" (tortoiseshell); on \"every son\" the Y column fills \"X^O Y\" (orange), \"X^o Y\" (black) (computed with B10's xlinked split). The bank line \"Dad gives his X to daughters and his Y to sons\" writes small (grey tag \"B10\").",
+      "motionRole": "explain",
+      "onScreenChange": "Punnett with the mother's gametes \"X^O\", \"X^o\" down the side (teal-edged) and the father's \"X^O\", \"Y\" across the top (plum-edged). On \"every daughter\" the X^O column fills two daughter boxes \"X^O X^O\" (orange), \"X^O X^o\" (tortoiseshell); on \"every son\" the Y column fills \"X^O Y\" (orange), \"X^o Y\" (black) (computed with B10's xlinked split). The bank line \"Dad gives his X to daughters and his Y to sons\" writes small (grey tag \"B10\"). On \"one in four\" all four boxes outline with the tortoiseshell box ringed: (b) \"1/4 of all kittens\". On \"one in two\" only the son column outlines with the black box ringed: (c) \"1/2 of sons\". Strip: \"2 genotypes\" and \"3 combine\" tick.",
+      "motionTools": [
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost grid \"O o x O O\" fills (computed, autosomal) with two \"tortoiseshell\" boxes, one labelled with a square symbol; on \"autosome\" it takes a red scribble cross with the caption \"the gene is on the X\".",
+      "teachingReason": "Q2-mistake (the classic mistake): The classic mistake is treating the gene as if it were on an autosome.",
+      "narrationCue": "autosome / mother's X",
+      "motionPurpose": "On \"mother's X\" an arrow runs from the mother's chips to the son column. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost grid \"O o x O O\" fills (computed, autosomal) with two \"tortoiseshell\" boxes, one labelled with a square symbol; on \"autosome\" it takes a red scribble cross with the caption \"the gene is on the X\". On \"mother's X\" an arrow runs from the mother's chips to the son column. Hold about 1.5 seconds.",
+      "motionTools": [
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Unseen transfer: q3-question (question 3: a PKU family), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "P K U / brother / mother / first child / second child",
+      "motionPurpose": "The card for \"q3-question (question 3: a PKU family)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge \"Pedigree: probability\". Stimulus: B9 Pedigree (data P-Q3 in Numbers): generation I, two couples, I-1 and I-2 (both open), I-3 (filled circle) and I-4 (open square); generation II, II-1 (filled square, \"brother\"), II-2 (open circle, \"woman\"), II-3 (open square, \"partner\"), with a couple line from II-2 to II-3 and a \"?\" child below. Legend: \"filled: has PKU\". Givens card: \"PKU: autosomal recessive\", \"assume: one gene; no new mutation\". Demands: \"(a) Probability that their first child has PKU?\" \"(b) If the first child has PKU, probability for the second child?\" Two answer boxes. Nothing answer-bearing: no genotype chips, no grid. Countdown 10 seconds; strip dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q3-sure",
+      "visualDecision": "new",
+      "visualReference": "on \"two recessive alleles\" chip \"pp\" pins under I-3 and a \"p\" chip travels down to II-3; \"Pp\" pins under II-3 with the tag \"carrier: certain\" on \"carrier\".",
+      "teachingReason": "Q3-sure (the genotypes you can be sure of): Start with the people you can be sure of.",
+      "narrationCue": "sure of / carrier / both parents",
+      "motionPurpose": "On \"brother is affected\" \"pp\" pins under II-1; on \"both parents\" \"Pp\" chips pin under I-1 and I-2 with the trio bracket \"unaffected parents, affected child\" (B9 giveaway, grey tag \"B9\"). II-2 gets a dashed \"?\" chip.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"two recessive alleles\" chip \"pp\" pins under I-3 and a \"p\" chip travels down to II-3; \"Pp\" pins under II-3 with the tag \"carrier: certain\" on \"carrier\". On \"brother is affected\" \"pp\" pins under II-1; on \"both parents\" \"Pp\" chips pin under I-1 and I-2 with the trio bracket \"unaffected parents, affected child\" (B9 giveaway, grey tag \"B9\"). II-2 gets a dashed \"?\" chip. Strip: \"2 genotypes you're sure of\" ticks.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q3-two-thirds",
+      "visualDecision": "new",
+      "visualReference": "a Punnett \"Pp x Pp\" fills beside I-1 and I-2 (computed).",
+      "teachingReason": "Q3-two-thirds (cross out the box she can't be): Now the woman.",
+      "narrationCue": "cross out / two / two in three / one in six",
+      "motionPurpose": "On \"cross out\" the \"pp\" box takes a grey scribble cross with the tag \"she's unaffected: not this box\"; the remaining three boxes ring, two amber (\"Pp\"), and \"2/3\" writes beside them (computed: 2 of 3 remaining). The chip \"Cross out the box they can't be.\" writes small.",
+      "motionRole": "explain",
+      "onScreenChange": "a Punnett \"Pp x Pp\" fills beside I-1 and I-2 (computed). On \"cross out\" the \"pp\" box takes a grey scribble cross with the tag \"she's unaffected: not this box\"; the remaining three boxes ring, two amber (\"Pp\"), and \"2/3\" writes beside them (computed: 2 of 3 remaining). The chip \"Cross out the box they can't be.\" writes small. A two-step chain writes on: \"P(she's a carrier) = 2/3\", \"x P(pp child from Pp x Pp) = 1/4\", \"= 2/12 = 1/6\"; the partner's certainty sits as \"x 1 (he's a carrier)\". Answer line (a): \"1/6\". Strip: \"3 combine the chances\" ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q3-update",
+      "visualDecision": "new",
+      "visualReference": "a filled \"III-1\" symbol drops under the couple with the tag \"first child: PKU\"; on \"needed a recessive allele from her\" a \"p\" chip travels up from III-1 to II-2; on \"proves\" II-2's \"?\" chip becomes \"Pp\" with an amber tick; a mini grid \"Pp x Pp\" fills and its \"pp\" box rings; answer line (b): \"1/4 (she is now known to be a carrier; each child is a new chance)\".",
+      "teachingReason": "Q3-update (new evidence, and the classic mistake): Now suppose their first child has P K U.",
+      "narrationCue": "proves / one in four / one in two",
+      "motionPurpose": "On \"one in two\" the chip \"her carrier chance = 2/4 = 1/2, child = 1/8\" writes on and takes a red scribble cross, with an arrow to the crossed \"pp\" box. A second crossed chip, unspoken: \"1/4 for the first child (assumed both certain carriers)\".",
+      "motionRole": "explain",
+      "onScreenChange": "a filled \"III-1\" symbol drops under the couple with the tag \"first child: PKU\"; on \"needed a recessive allele from her\" a \"p\" chip travels up from III-1 to II-2; on \"proves\" II-2's \"?\" chip becomes \"Pp\" with an amber tick; a mini grid \"Pp x Pp\" fills and its \"pp\" box rings; answer line (b): \"1/4 (she is now known to be a carrier; each child is a new chance)\". On \"one in two\" the chip \"her carrier chance = 2/4 = 1/2, child = 1/8\" writes on and takes a red scribble cross, with an arrow to the crossed \"pp\" box. A second crossed chip, unspoken: \"1/4 for the first child (assumed both certain carriers)\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q4-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Unseen transfer: q4-question (question 4: which pattern?), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "rare / rule out / can't decide / more likely",
+      "motionPurpose": "The card for \"q4-question (question 4: which pattern?)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge \"Pedigree: which pattern?\". Stimulus: B9 Pedigree (data P-Q4 in Numbers) with Roman numerals, individual numbers and a legend (open unaffected, filled affected). Givens card: \"a rare condition\", \"choose from: autosomal dominant, autosomal recessive, X-linked recessive\", \"assume: one gene; anyone with the genotype for the trait shows it; no new mutation\". Demands: \"(a) Which pattern can you rule out? Justify using numbered individuals.\" \"(b) Why can't this pedigree decide between the other two?\" \"(c) Which is more likely? Why?\" Three answer boxes and an empty mode-test table (three rows, no ticks). Nothing answer-bearing. Countdown 10 seconds; strip dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q4-rule-out",
+      "visualDecision": "new",
+      "visualReference": "mode-test table row \"X-linked recessive\" lights.",
+      "teachingReason": "Q4-rule-out (test X-linked recessive): Test X-linked recessive first.",
+      "narrationCue": "X-linked recessive / every son / unaffected / not",
+      "motionPurpose": "On \"affected mother\" I-2 rings amber; chips \"X^a X^a\" pin under her (dashed, \"if X-linked recessive\"); on \"every son\" an arrow runs from I-2 to II-2 carrying \"X^a\"; on \"unaffected\" II-2 rings and a red clash mark lands on the arrow. On \"her daughter is affected\" II-1 and I-1 ring with the bank rule tag \"affected daughter, unaffected father: not X-linked recessive\" (grey tag \"B10\").",
+      "motionRole": "explain",
+      "onScreenChange": "mode-test table row \"X-linked recessive\" lights. On \"affected mother\" I-2 rings amber; chips \"X^a X^a\" pin under her (dashed, \"if X-linked recessive\"); on \"every son\" an arrow runs from I-2 to II-2 carrying \"X^a\"; on \"unaffected\" II-2 rings and a red clash mark lands on the arrow. On \"her daughter is affected\" II-1 and I-1 ring with the bank rule tag \"affected daughter, unaffected father: not X-linked recessive\" (grey tag \"B10\"). On \"not\" the row takes a cross; answer line (a): \"not X-linked recessive: I-2 affected but her son II-2 unaffected (and II-1 affected with unaffected father I-1)\". Strip: \"1 choose the model\" ticks.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q4-both-fit",
+      "visualDecision": "adjust",
+      "visualReference": "B9's two Trio icons (\"Hidden in the parents: recessive\", \"Hidden in the child: dominant\") slide over the pedigree and scan each couple; none matches, and each gets a grey \"no match\" tag.",
+      "teachingReason": "Q4-both-fit (no giveaway, so both fit): Now look for the giveaways.",
+      "narrationCue": "giveaways / both patterns fit / both carriers",
+      "motionPurpose": "On \"both patterns fit\" the table rows \"autosomal dominant\" and \"autosomal recessive\" tick. Dominant: chips \"Aa\" under I-2, II-1, III-1 and \"aa\" under the rest (computed by onlyGeno or a fit from fitsMode).",
+      "motionRole": "explain",
+      "onScreenChange": "B9's two Trio icons (\"Hidden in the parents: recessive\", \"Hidden in the child: dominant\") slide over the pedigree and scan each couple; none matches, and each gets a grey \"no match\" tag. On \"both patterns fit\" the table rows \"autosomal dominant\" and \"autosomal recessive\" tick. Dominant: chips \"Aa\" under I-2, II-1, III-1 and \"aa\" under the rest (computed by onlyGeno or a fit from fitsMode). Recessive: the chips swap to the recessive set, and on \"both carriers\" I-1 and II-4 ring amber with \"Aa\" chips and the tag \"both must be carriers\". Answer line (b): \"no giveaway pattern: both fit (recessive needs I-1 and II-4 to be carriers)\".",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q4-more-likely",
+      "visualDecision": "new",
+      "visualReference": "on \"rare\" the two ringed partner symbols (I-1 and II-4) pulse with the tag \"two unrelated carriers: unlikely if rare\"; on \"more likely\" answer line (c) writes on: \"autosomal dominant is more likely (recessive needs two unrelated carriers), but not proven\".",
+      "teachingReason": "Q4-more-likely (judge, and the classic mistake): For a rare condition, two unrelated partners both being carriers is unlikely, so dominant is more likely.",
+      "narrationCue": "rare / more likely / proven",
+      "motionPurpose": "A small grey tag, unspoken: \"decisive future evidence: II-3 and an unaffected partner having an affected child would mean recessive\". On \"every generation\" the chip \"dominant: it's in every generation\" writes on and takes a red scribble cross with the caption \"a clue, not proof\".",
+      "motionRole": "explain",
+      "onScreenChange": "on \"rare\" the two ringed partner symbols (I-1 and II-4) pulse with the tag \"two unrelated carriers: unlikely if rare\"; on \"more likely\" answer line (c) writes on: \"autosomal dominant is more likely (recessive needs two unrelated carriers), but not proven\". A small grey tag, unspoken: \"decisive future evidence: II-3 and an unaffected partner having an affected child would mean recessive\". On \"every generation\" the chip \"dominant: it's in every generation\" writes on and takes a red scribble cross with the caption \"a clue, not proof\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the first-moves strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question badge: \"a third phenotype, or both shown → incomplete or co-dominance (Q1, Q2)\"; \"sons and daughters differ → a gene on the X (Q2)\"; \"certain genotypes first → affected people, parents of affected children (Q3)\"; \"an unaffected relative → cross ",
+      "teachingReason": "Decision-board: So here's how to start.",
+      "narrationCue": "Choose the model / sure of / cross out / separate offspring / no giveaway / Next",
+      "motionPurpose": "On \"Next\" a chip \"Next: frequencies in a population\" with a small herd-of-dots icon. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the first-moves strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question badge: \"a third phenotype, or both shown → incomplete or co-dominance (Q1, Q2)\"; \"sons and daughters differ → a gene on the X (Q2)\"; \"certain genotypes first → affected people, parents of affected children (Q3)\"; \"an unaffected relative → cross out the box they can't be (Q3)\"; \"two offspring, parents known → multiply (Q1)\"; \"no giveaway → name what fits; 'more likely' is not 'proven' (Q4)\". On \"Next\" a chip \"Next: frequencies in a population\" with a small herd-of-dots icon. Hold about 2 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g02b-learning-review.md",
+      "sha256": "3e4a7abfa99807b6fdb91703e3d4fa9d3fb1aa77a355ccd5f8415999656ef173"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g02b-claude-science-check.md",
+      "sha256": "56a9bea9a5a1c933ae501c5a70ee31e91acff4b7d309ed8fa1a5c0b9dad82cdd"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

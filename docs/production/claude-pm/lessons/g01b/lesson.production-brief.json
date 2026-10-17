@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/g01b/lesson.json",
+    "lessonSha256": "8a27c9a2f748e0625d161896eecf751f5f3306f72197ef00f05e4bec56e7f0b4"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B4: A pairs with T, C with G; antiparallel strands with 5' and 3' ends; each original strand is a template; semi-conservative copying; a surviving error becomes a changed pair after the next copy. From B6b: template versus coding strand; mRNA is built 5' to 3' and matches the coding strand with U for T. From B6c: codon chart with mRNA codons only; start AUG; stop codons add no amino acid. From B5a: count chromosomes by centromeres; DNA is copied in interphase into two sister chromatids. From B5b: meiosis I separates homologous pairs, meiosis II separates sister chromatids; crossing over swaps matching pieces between non-sister chromatids and makes new combinations of existing alleles; four cells from one. Not assumed: DNA mass per cell (introduced in Q3 as \"the DNA follows the chromatids\"), linkage frequencies (B8, later in the route; Q4 reasons only from one cell).",
+    "startsWith": "The hook: Exam questions on DNA and meiosis rarely ask you to recite the steps. They hand you something new, a sequence written from its 3' end, a copying error, a cell you've never seen, and ask you to trace it.",
+    "stopsAfter": "tracing a copying error through two rounds and counting the changed molecules; turning a coding strand written 3' to 5' into mRNA with ends and an amino acid chain that stops at a stop codon; tracking chromosome number and DNA mass through meiosis; listing the four products of one meiosis with one crossover and explaining why new combinations are less than half of a plant's gametes.",
+    "nextLesson": "proteins, phenotype and gene-environment interaction (route entry bio-m5-b07)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-g01.md"
+  ],
+  "teaching": {
+    "task": "When a question hands you a sequence or a cell you have never seen, what do you check first so the trace comes out right?",
+    "causalExplanation": "Why only one molecule changes (each strand templates its own partner; the T strand keeps the right base) (2b, 2c); why the mRNA is a copy, not a pair, of the coding strand, and why direction matters (mRNA read from 5') (3b); why GGC is not read (stop codon releases the chain) (3c); why copying doubles DNA but not chromosomes (sister chromatids share one centromere) (4b); why meiosis I halves chromosomes but not chromatid count per chromosome (4c); why only two products are new (the crossover joins two non-sister chromatids) and why the plant's overall share is lower (crossovers between these genes happen in only some cells) (5b to 5d).",
+    "conversationalApproach": "Opens on the hook (hook), then works through q1-question (question 1: a copying error), q1-first-copy (round one), q1-second-copy (round two), q1-mistake (the classic mistake), q2-question (question 2: a strand written backwards) and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.",
+    "openingDecision": "Exam questions on DNA and meiosis rarely ask you to recite the steps. They hand you something new, a sequence written from its 3' end, a copying error, a cell you've never seen, and ask you to trace it.",
+    "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a). Nothing answer-bearing during the holds; the checklist strip dims.",
+    "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, p 49). B5-IQ2-01 \"model the processes involved in cell replication, including but not limited to:\" with \"mitosis and meiosis (ACSBL075)\" and \"DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding (ACSBL076, ACSBL077)\"; B5-IQ3-02 \"model the process of polypeptide synthesis, including: (ACSBL079)\" with \"transcription and translation\"; B5-IQ4-02 \"model the formation of new combinations of genotypes produced during meiosis, including but not limited to:\" (the crossing over part only); and, for the crossing over skill by name (Revision 2), B5-IQ4-01 \"conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, including the crossing over of homologous chromosomes, fertilisation and mutations (ACSBL084)\", whose practical coverage stays with P01 and P02. Practice and transfer only: the ledger rows stay with their core videos (B4, B5b, B6b, B6c, B8); G01 adds a practice row, not first coverage."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G03c layout: top-left the short task line, kept until the answer lands; under it the stimulus strip (sequence, cell or chromosome); under that the grouped givens card; the working fills the right two thirds; the type badge sits top-right (\"Replication\", \"Transcription and translation\", \"Meiosis: counts\", \"Meiosis: alleles\"). A trace checklist strip on the far left carries three rows, \"which strand?\", \"which end?\", \"what am I counting?\", and ticks the row each question used. It dims to an outline during every countdown. Earlier questions are cleared before the next card writes on.",
+    "transitionPlan": "One practice board persists: the shared question card sits at the top left and each question clears the working area and writes on its stimulus; working scenes add one reasoning stage at a time, the classic-mistake chip crosses out at the end of each question, and the next question card slides in; the decision board gathers the four methods before the notes; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Trace it\" writes on.",
+      "teachingReason": "Hook: Exam questions on DNA and meiosis rarely ask you to recite the steps.",
+      "narrationCue": "which strand / which end / what you're counting",
+      "motionPurpose": "Four small stimulus thumbnails fan out on the right on \"something new\": a strand of tiles with \"3'\" on the left (on \"written from its 3' end\"), a pair of tiles with one red-ringed mismatch (on \"a copying error\"), the koala plate in a cell outline (on \"a cell you've never seen\"), a chromosome pair with a crossover mark. On the three checks, the trace checklist builds on the left, one row per spoken phrase: \"which stra",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Trace it\" writes on. Four small stimulus thumbnails fan out on the right on \"something new\": a strand of tiles with \"3'\" on the left (on \"written from its 3' end\"), a pair of tiles with one red-ringed mismatch (on \"a copying error\"), the koala plate in a cell outline (on \"a cell you've never seen\"), a chromosome pair with a crossover mark. On the three checks, the trace checklist builds on the left, one row per spoken phrase: \"which strand?\" (two strand icons), \"which end?\" (a \"5'\" tag), \"what am I counting?\" (a centromere dot beside a chromatid pair). On \"four HSC-style questions\" the thumbnails become four question cards, each with the tag \"HSC-style question, written for HSCScience\". Hold about 1 second; the checklist shrinks to a strip at the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second; the checklist shrinks to a strip at the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "Unseen transfer: q1-question (question 1: a copying error), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "G / not repaired / how many",
+      "motionPurpose": "The card for \"q1-question (question 1: a copying error)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge \"Replication\". b6a-bacterium-v1.png small at top left, tagged \"a bacterium\". Task line: \"How many of the four molecules have a changed pair? Which pair?\" Stimulus: a short B4 ladder of five base pairs (original strands blue) with the middle pair \"T = A\" ringed amber on \"T paired with an A\". Givens card, one line per cue: \"round 1: G added opposite the T (an error)\", \"the error is not repaired\", \"round 2: both molecules copied again, no more errors\". Under the card, an empty row of four molecule outlines labelled \"after round 2\". Nothing answer-bearing: no new strands, no mismatch drawn. Countdown ring 10 seconds with \"Pause here to answer.\" on screen; the checklist strip dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q1-first-copy",
+      "visualDecision": "new",
+      "visualReference": "the ladder unzips (B4 motion).",
+      "teachingReason": "Q1-first-copy (round one): Start with the first copy.",
+      "narrationCue": "each one is a template / normal / mismatch",
+      "motionPurpose": "On \"each one is a template\" both blue strands glow and the tag \"each strand: a template\" writes on (grey tag \"B4\"). Left daughter: green tiles dock opposite the A strand; at the ringed spot a green T snaps to the A with a tick; tag \"normal\".",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder unzips (B4 motion). On \"each one is a template\" both blue strands glow and the tag \"each strand: a template\" writes on (grey tag \"B4\"). Left daughter: green tiles dock opposite the A strand; at the ringed spot a green T snaps to the A with a tick; tag \"normal\". Right daughter: green tiles dock opposite the T strand; at the ringed spot a green G slides in and sits crooked against the T, with a red outline; on \"mismatch\" the tag \"T and G: a mismatch\" writes on. Checklist: \"which strand?\" ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q1-second-copy",
+      "visualDecision": "new",
+      "visualReference": "both daughters unzip together.",
+      "teachingReason": "Q1-second-copy (round two): Now copy again.",
+      "narrationCue": "two normal / C / one",
+      "motionPurpose": "Left: two normal molecules drop into the first two outlines with ticks. Right: the blue T strand picks up a new green A (tick, \"normal\"); the green G strand picks up a new C, and the pair \"G = C\" locks in with an amber ring.",
+      "motionRole": "explain",
+      "onScreenChange": "both daughters unzip together. Left: two normal molecules drop into the first two outlines with ticks. Right: the blue T strand picks up a new green A (tick, \"normal\"); the green G strand picks up a new C, and the pair \"G = C\" locks in with an amber ring. On \"one\" the four outlines fill: \"normal\", \"normal\", \"normal\", \"G-C: changed\", and the answer line writes on: \"1 of 4 molecules: G-C in place of T-A\". A thin family-tree line links each final molecule back to the strand it was copied from.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost row \"normal, normal, changed, changed\" appears beside the answer; on \"two\" it takes a red scribble cross with the caption \"the mismatch does not copy into both\".",
+      "teachingReason": "Q1-mistake (the classic mistake): The classic mistake is saying two, as if the mismatch copies itself into both daughters.",
+      "narrationCue": "two / the mismatch does not copy into both / the T strand still holds the right base",
+      "motionPurpose": "On \"the T strand still holds the right base\" the T strand's tile pulses blue with the tag \"original base kept\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost row \"normal, normal, changed, changed\" appears beside the answer; on \"two\" it takes a red scribble cross with the caption \"the mismatch does not copy into both\". On \"the T strand still holds the right base\" the T strand's tile pulses blue with the tag \"original base kept\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Unseen transfer: q2-question (question 2: a strand written backwards), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "coding strand / 3' end / how many",
+      "motionPurpose": "The card for \"q2-question (question 2: a strand written backwards)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge \"Transcription and translation\". The painted firefly plate (new, m5x-firefly-glow-v1.png) small at the top left, its lantern glowing, tagged \"firefly\". Task line: \"Write the mRNA (with ends). Give the amino acid chain and how many.\" Stimulus: one strand of 15 B4 tiles in plum, no codon gaps: \"3' C G G A A T A A A G G T G T A 5'\", labelled \"coding strand\"; on \"coding strand\" the label rings amber; on \"3' end\" the left \"3'\" tag rings. Grey chip: \"illustrative sequence, not the real gene\". The full B6c CodonChart sits at the right, unlit (cells from codonToAA; no pointer). Empty mRNA slot row under the strand with two blank end boxes. Nothing answer-bearing. Countdown 10 seconds; checklist dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q2-direction",
+      "visualDecision": "adjust",
+      "visualReference": "on \"Which strand?\" the checklist row lights and a chip \"coding strand: copy it, T becomes U\" writes on (recalls B6b's trap line, grey tag \"B6b\").",
+      "teachingReason": "Q2-direction (which strand, which end): Two checks first.",
+      "narrationCue": "Which strand? / Which end? / right / A U G",
+      "motionPurpose": "On \"Which end?\" the \"5'\" tag on the right pulses amber; on \"right\" an amber process arrow draws under the strand pointing right to left, labelled \"read from 5'\". The tiles then slide and re-order right to left into a terracotta mRNA row beneath the strand (letters stay upright; the \"5'\" tag stays attached to the A end), copied base for base with T turned to amber U, one codon per spoken group; the chip \"same letters,",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Which strand?\" the checklist row lights and a chip \"coding strand: copy it, T becomes U\" writes on (recalls B6b's trap line, grey tag \"B6b\"). On \"Which end?\" the \"5'\" tag on the right pulses amber; on \"right\" an amber process arrow draws under the strand pointing right to left, labelled \"read from 5'\". The tiles then slide and re-order right to left into a terracotta mRNA row beneath the strand (letters stay upright; the \"5'\" tag stays attached to the A end), copied base for base with T turned to amber U, one codon per spoken group; the chip \"same letters, same direction as the coding strand (B6b)\" writes beside it: \"5' AUG UGG AAA UAA GGC 3'\". Codon gaps appear as each group lands. Checklist: \"which end?\" ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q2-chain",
+      "visualDecision": "new",
+      "visualReference": "the CodonChart pointer runs each lookup (first base row, second base column, third base line) as each codon is spoken; a labelled bead pops out and joins the AminoChain: \"Met\" (with the chart's amber start flag), \"Trp\", \"Lys\".",
+      "teachingReason": "Q2-chain (the chart, and the stop codon): Now the chart.",
+      "narrationCue": "methionine / stop codon / three",
+      "motionPurpose": "On \"stop codon\" the UAA cell lights grey and a grey bracket \"stop: adds nothing\" closes the chain; the GGC codon greys out with the tag \"after the stop: not read\". On \"three\" the answer line writes on: \"mRNA 5' AUG UGG AAA UAA GGC 3'; chain Met-Trp-Lys: 3 amino acids\".",
+      "motionRole": "explain",
+      "onScreenChange": "the CodonChart pointer runs each lookup (first base row, second base column, third base line) as each codon is spoken; a labelled bead pops out and joins the AminoChain: \"Met\" (with the chart's amber start flag), \"Trp\", \"Lys\". On \"stop codon\" the UAA cell lights grey and a grey bracket \"stop: adds nothing\" closes the chain; the GGC codon greys out with the tag \"after the stop: not read\". On \"three\" the answer line writes on: \"mRNA 5' AUG UGG AAA UAA GGC 3'; chain Met-Trp-Lys: 3 amino acids\". All amino acids on screen are computed by translate, never typed.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost mRNA \"C G G A A U A A A G G U G U A\" writes left to right under the original strand with the ghost chain \"Arg, Asn, Lys, Gly, Val\" (computed); on \"left\" it takes a red scribble cross with the caption \"read from the 3' end: wrong\".",
+      "teachingReason": "Q2-mistake (the classic mistake): The classic mistake is reading from the left, because that's how we read English.",
+      "narrationCue": "left / read from the 3' end: wrong",
+      "motionPurpose": "A second crossed chip, unspoken, lands only after the spoken cross has settled: \"paired it like a template: Ala, Leu, Phe, Pro, His\" with the tag \"it's the coding strand: copy, don't pair\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost mRNA \"C G G A A U A A A G G U G U A\" writes left to right under the original strand with the ghost chain \"Arg, Asn, Lys, Gly, Val\" (computed); on \"left\" it takes a red scribble cross with the caption \"read from the 3' end: wrong\". A second crossed chip, unspoken, lands only after the spoken cross has settled: \"paired it like a template: Ala, Leu, Phe, Pro, His\" with the tag \"it's the coding strand: copy, don't pair\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Unseen transfer: q3-question (question 3: counting through meiosis), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "16 chromosomes / 7.0 picograms / prophase one / each cell after meiosis one / each sperm cell",
+      "motionPurpose": "The card for \"q3-question (question 3: counting through meiosis)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge \"Meiosis: counts\". The painted koala plate (new, m5x-koala-v1.png) small at the top left, tagged \"koala\". Task line: \"Chromosomes and DNA mass at three stages.\" Givens card: \"body cells: 16 chromosomes\", \"before copying: 16 chromosomes, 7.0 pg DNA\", grey gloss \"pg = picogram, a millionth of a millionth of a gram\", \"assume no mistakes in division\". On screen, a coded empty count table with three rows (\"prophase I\", \"each cell after meiosis I\", \"each sperm cell\") and two columns (\"chromosomes\", \"DNA (pg)\"). Beside it b5x-cell-dividing-nospindle-v1.png, empty. Nothing answer-bearing. Countdown 10 seconds; checklist dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q3-s-phase",
+      "visualDecision": "new",
+      "visualReference": "two rule chips write on, each with an icon: \"chromosomes: count centromeres\" (a single dot) and \"DNA: count chromatids\" (two arms).",
+      "teachingReason": "Q3-s-phase (two rules, then the copy): Use two rules.",
+      "narrationCue": "chromosomes / DNA / one centromere / 14 picograms",
+      "motionPurpose": "The cell shows 16 single chromosome plates (8 pink, 8 teal, small). On \"one centromere\" each plate is replaced by its duplicated plate (b5x-chromosome-duplicated-pink-v1.png, -teal-) and a centromere dot rings on one.",
+      "motionRole": "explain",
+      "onScreenChange": "two rule chips write on, each with an icon: \"chromosomes: count centromeres\" (a single dot) and \"DNA: count chromatids\" (two arms). The cell shows 16 single chromosome plates (8 pink, 8 teal, small). On \"one centromere\" each plate is replaced by its duplicated plate (b5x-chromosome-duplicated-pink-v1.png, -teal-) and a centromere dot rings on one. On \"14 picograms\" the first table row fills \"16\" and \"about 14.0\" with a pen \"x 2\" beside the DNA cell. Checklist: \"what am I counting?\" ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q3-divisions",
+      "visualDecision": "new",
+      "visualReference": "the duplicated plates pair up across the middle (B5b metaphase I look, no stage drawing beyond the plates); on \"homologous pairs\" the partners slide to two daughter outlines (8 X-shaped plates each); row 2 fills \"8\" and \"about 7.0\" with a tag \"each still two chromatids\".",
+      "teachingReason": "Q3-divisions (meiosis one, then meiosis two): Meiosis one separates the homologous pairs, so each cell gets 8 chromosomes.",
+      "narrationCue": "homologous pairs / 7.0 picograms / sister chromatids / 3.5 picograms",
+      "motionPurpose": "On \"sister chromatids\" each daughter splits again into two, four cell outlines, each with 8 single plates; row 3 fills \"8\" and \"about 3.5\" (grey tag: \"about: X- and Y-carrying cells differ slightly\"). The bank line writes small under the table: \"Meiosis I splits the pairs.",
+      "motionRole": "explain",
+      "onScreenChange": "the duplicated plates pair up across the middle (B5b metaphase I look, no stage drawing beyond the plates); on \"homologous pairs\" the partners slide to two daughter outlines (8 X-shaped plates each); row 2 fills \"8\" and \"about 7.0\" with a tag \"each still two chromatids\". On \"sister chromatids\" each daughter splits again into two, four cell outlines, each with 8 single plates; row 3 fills \"8\" and \"about 3.5\" (grey tag: \"about: X- and Y-carrying cells differ slightly\"). The bank line writes small under the table: \"Meiosis I splits the pairs. Meiosis II splits the copies.\" A thin check row, unspoken: \"4 sperm x 3.5 = 14.0 pg: all the copied DNA accounted for\".",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost value \"3.5\" sits in row 2's DNA cell; on \"3.5 picograms\" it takes a red scribble cross with the caption \"still two chromatids each\".",
+      "teachingReason": "Q3-mistake (the classic mistake): The classic mistake is 3.5 picograms after meiosis one.",
+      "narrationCue": "3.5 picograms / still two chromatids each",
+      "motionPurpose": "A second crossed chip, unspoken, lands only after the spoken cross has settled: \"prophase I: 32 chromosomes (counted chromatids)\". Memory chip: \"Centromeres count the chromosomes; chromatids count the DNA.\" Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost value \"3.5\" sits in row 2's DNA cell; on \"3.5 picograms\" it takes a red scribble cross with the caption \"still two chromatids each\". A second crossed chip, unspoken, lands only after the spoken cross has settled: \"prophase I: 32 chromosomes (counted chromatids)\". Memory chip: \"Centromeres count the chromosomes; chromatids count the DNA.\" Hold about 1.5 seconds.",
+      "motionTools": [
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q4-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Unseen transfer: q4-question (question 4: one crossover, four cells), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "same chromosome / single crossover / four pollen cells / less common than half",
+      "motionPurpose": "The card for \"q4-question (question 4: one crossover, four cells)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge \"Meiosis: alleles\". The painted sweet pea plates (new, m5x-sweetpea-purple-v1.png and m5x-sweetpea-red-v1.png) small at the top left, tagged \"purple flower\" and \"red flower\". Task line: \"(a) Alleles in each of the four pollen cells. (b) Using the givens, why are new combinations much less than half?\" Stimulus: one homologous pair as single chromosome plates (pink and teal) with allele beads: pink \"P\" (purple) above \"L\" (long), teal \"p\" (red) above \"l\" (round); a key strip \"P purple, p red; L long, l round\". Givens: \"genes on the same chromosome\", \"this cell: one crossover between the two genes\", \"most other anther cells: no crossover between these two genes\". Four empty pollen-cell outlines. Nothing answer-bearing: no chromatids drawn, no swap mark. Countdown 10 seconds; checklist dims.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "q4-chromatids",
+      "visualDecision": "new",
+      "visualReference": "each single plate becomes its duplicated plate; the four chromatids are drawn as a coded chromatid strip (four parallel rods, two pink, two teal, each carrying its bead pair).",
+      "teachingReason": "Q4-chromatids (copy, then cross over): Start with the chromatids.",
+      "narrationCue": "chromatids / two / purple round / red long",
+      "motionPurpose": "On \"two\" an inner pink and an inner teal rod light; a swap mark draws between the two gene levels and the lower segments trade places (pink rod now ends teal with \"l\"; teal rod now ends pink with \"L\"). The outer two rods stay unchanged with a grey tag \"not touched\".",
+      "motionRole": "explain",
+      "onScreenChange": "each single plate becomes its duplicated plate; the four chromatids are drawn as a coded chromatid strip (four parallel rods, two pink, two teal, each carrying its bead pair). On \"two\" an inner pink and an inner teal rod light; a swap mark draws between the two gene levels and the lower segments trade places (pink rod now ends teal with \"l\"; teal rod now ends pink with \"L\"). The outer two rods stay unchanged with a grey tag \"not touched\". Bead labels update on their spoken words. Checklist: \"what am I counting?\" ticks (chromatids).",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q4-four-cells",
+      "visualDecision": "new",
+      "visualReference": "the pink pair and the teal pair move apart (meiosis I) into two outlines, then each splits (meiosis II) into the four pollen-cell outlines, each carrying one rod; labels write on in the cells: \"P L\", \"P l\", \"p L\", \"p l\".",
+      "teachingReason": "Q4-four-cells (two divisions, four cells): Meiosis one sends the two partners to different cells, and meiosis two splits each pair of sister chromatids.",
+      "narrationCue": "one chromatid / Two / new",
+      "motionPurpose": "On \"Two\" the parental pair gets a plain tag \"original\"; on \"new\" the recombinant pair gets amber rings and the tag \"new combination\". Answer line (a): \"PL, Pl, pL, pl: 2 original, 2 new\".",
+      "motionRole": "explain",
+      "onScreenChange": "the pink pair and the teal pair move apart (meiosis I) into two outlines, then each splits (meiosis II) into the four pollen-cell outlines, each carrying one rod; labels write on in the cells: \"P L\", \"P l\", \"p L\", \"p l\". On \"Two\" the parental pair gets a plain tag \"original\"; on \"new\" the recombinant pair gets amber rings and the tag \"new combination\". Answer line (a): \"PL, Pl, pL, pl: 2 original, 2 new\".",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "q4-limit",
+      "visualDecision": "new",
+      "visualReference": "the four cells shrink to the left as \"this cell: 2 of 4 new\".",
+      "teachingReason": "Q4-limit (why less than half, and the classic mistake): So why are new combinations much less than half?",
+      "narrationCue": "only two / between these two genes / two chromatids",
+      "motionPurpose": "On \"between these two genes\" the card's given \"most other anther cells: no crossover between these two genes\" rings amber, and a second small cell writes on beside it with the crossover mark drawn outside the gene interval (grey tag \"crossover elsewhere\"), giving four \"original\" cells; a third cell with no crossover gives four \"original\" cells. A row of small pollen dots fills below, mostly plain with a few amber (il",
+      "motionRole": "explain",
+      "onScreenChange": "the four cells shrink to the left as \"this cell: 2 of 4 new\". On \"between these two genes\" the card's given \"most other anther cells: no crossover between these two genes\" rings amber, and a second small cell writes on beside it with the crossover mark drawn outside the gene interval (grey tag \"crossover elsewhere\"), giving four \"original\" cells; a third cell with no crossover gives four \"original\" cells. A row of small pollen dots fills below, mostly plain with a few amber (illustrative, no number), with the line (b): \"a cell with one crossover between the genes gives half new; most cells have none there, so far fewer than half overall\". On \"all four pollen cells are new\" a crossed chip \"all four cells new\" takes a red scribble cross with the caption \"only two chromatids swap\". Grey tag (author-approved model limit): \"real cells can have no crossover, or more than one, along a chromosome\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the checklist returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question number badge: \"a sequence → which strand?",
+      "teachingReason": "Decision-board: So here's how to start any trace.",
+      "narrationCue": "sequence / copying error / count / crossover / Next",
+      "motionPurpose": "then find 5' (Q2)\"; \"a copying error → each strand is its own template (Q1)\"; \"a count → centromeres = chromosomes, chromatids = DNA (Q3)\"; \"a crossover → two chromatids change, not four (Q4)\". On \"Next\" a chip \"Next: from a chain to a trait\" with a small folded-blob doodle slides in at the lower right.",
+      "motionRole": "explain",
+      "onScreenChange": "the checklist returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue word with the question number badge: \"a sequence → which strand? then find 5' (Q2)\"; \"a copying error → each strand is its own template (Q1)\"; \"a count → centromeres = chromosomes, chromatids = DNA (Q3)\"; \"a crossover → two chromatids change, not four (Q4)\". On \"Next\" a chip \"Next: from a chain to a trait\" with a small folded-blob doodle slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g01b-learning-review.md",
+      "sha256": "151e8c4b08e8fd6a3edcb22342365b6d3ce6ddf1cb6ad667cdde18d3a3ca3531"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/g01b-claude-science-check.md",
+      "sha256": "5cbafaeb36fa312744d841d6b88256618a127e030a994383eac69e5ae2195b27"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}
