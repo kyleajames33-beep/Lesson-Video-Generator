@@ -1,0 +1,152 @@
+{
+  "title": "Two tall parents, one short offspring: how do we predict inheritance and read it from a family tree?",
+  "subtitle": "Two tall pea plants have a short offspring. How does that happen, how do we predict it, and how can a family tree show whether a trait is dominant or recessive?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 16,
+  "lessonIntent": "Explain why one allele can hide another, use dominant, recessive, homozygous and heterozygous correctly, build a Punnett square for two heterozygotes and read the genotype and phenotype ratios as chances for each offspring, use a test cross, read pedigree symbols, identify autosomal recessive and dominant patterns citing numbered individuals, and apply all of it to an unseen pedigree and an unseen data set.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Mendel crossed tall pea plants with short ones, and every one of their offspring grew tall. The short trait seemed to have vanished. Then he let those tall offspring pollinate themselves. Out of 1,064 plants in the next generation, 277 were short. So how can two tall plants have a short offspring? And how can a family tree tell us the same kind of thing about people?"
+      }
+    },
+    {
+      "id": "hide-allele",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Remember, genes code for proteins, and many proteins are enzymes. The tall allele codes for an enzyme that makes a growth hormone. The short allele's version barely works. A plant with one of each still makes enough hormone, so it grows tall. That's what dominant means: the allele shows even with only one copy. The short allele is recessive: it shows only with two copies."
+      }
+    },
+    {
+      "id": "gametes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two of the same allele is called homozygous, and one of each is heterozygous. So which alleles go into a gamete? In meiosis, the two chromosomes of each pair separate, so each gamete gets just one allele of each gene. A heterozygous plant makes two kinds of gamete: half carry the tall allele, and half carry the short one. That explains Mendel's first cross. A tall plant with two tall alleles, crossed with a short plant, gives offspring that all get one of each. They're all tall, but every one carries the short allele."
+      }
+    },
+    {
+      "id": "punnett",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A Punnett square lays out every way the gametes can meet. One parent's gametes go across the top, the other's down the side. Each box is one equally likely fertilisation. Fill them in: one box with two tall alleles, two heterozygous boxes, and one with two short alleles. That's a genotype ratio of 1 to 2 to 1. Three of the four boxes have a tall allele, so the phenotype ratio is 3 tall to 1 short. Mendel's 787 to 277 is very close."
+      }
+    },
+    {
+      "id": "chance-per-offspring",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But 3 to 1 is a chance for each offspring, not a promise for every group of four. Each seed has a one in four chance of being short, whatever happened to the seed before it. Plant just four seeds from this cross, and you'll get exactly one short plant only about 42 per cent of the time. With hundreds of seeds, like Mendel had, the counts settle close to the ratio."
+      }
+    },
+    {
+      "id": "test-cross",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So how can you tell whether a tall plant is homozygous or heterozygous, when they look the same? Cross it with a short plant, which can only give the short allele. This is a test cross. A heterozygous tall plant gives each offspring a half chance of being short. So if even one offspring is short, the tall parent must carry the short allele. If they're all tall, it's probably homozygous, and more offspring make that more certain."
+      }
+    },
+    {
+      "id": "read-pedigree",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "We can't run test crosses on people, so instead we read family trees called pedigrees. Squares are males, circles are females, and a shaded symbol means the person has the trait. A line joins two parents, and a line down from it leads to their children. Each generation gets a Roman numeral, and each person a number, so you can point to exactly who you mean. In this video, the genes are all on autosomes, the chromosomes that aren't sex chromosomes."
+      }
+    },
+    {
+      "id": "recessive-pedigree",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a family with a recessive condition, such as cystic fibrosis. In generation one, an affected father has two unaffected children. Every child of his got one recessive allele from him, so his daughter carries it, hidden. In generation three, it reappears: two unaffected parents have an affected daughter. That's the giveaway. If the parents don't show it, but their child does, each parent must carry one hidden recessive allele. People like this are called carriers. So recessive traits can skip a generation."
+      }
+    },
+    {
+      "id": "dominant-pedigree",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now a dominant condition, such as Huntington's disease. Look for clues: it usually shows up in every generation, and every affected child has an affected parent. An affected, heterozygous parent and an unaffected parent give each child a half chance, the same square as the test cross. The giveaway here is the opposite: two affected parents with an unaffected child. Each parent must carry a hidden recessive allele, so the condition must be dominant. And dominant doesn't mean common. Huntington's is dominant, but rare."
+      }
+    },
+    {
+      "id": "giveaways",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's how to remember them. Hidden in the parents: recessive. Hidden in the child: dominant. In an answer, name the people. For example: individuals 3 and 4 in generation two are unaffected, but their daughter, individual 1 in generation three, is affected, so the condition is recessive. Then write their genotypes, and use a Punnett square for any probability."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two harder questions now. First, this pedigree shows a condition caused by a gene on an autosome. Is the condition dominant or recessive? Justify your answer using numbered individuals. Then give the genotypes of individuals 1 and 2 in generation one, and find the probability that their next child is unaffected. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It's dominant. Individuals 1 and 2 in generation one are both affected, but their daughter, individual 1 in generation two, is unaffected. So each parent carries a hidden recessive allele: both are heterozygous. Their square gives a one in four chance that the next child is unaffected. If you wrote \"dominant, because most of the family has it\", that isn't evidence. Cite the people."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. In peas, round seeds are dominant to wrinkled seeds. A plant grown from a round seed is crossed with a plant grown from a wrinkled seed. The cross produces 52 round seeds and 48 wrinkled seeds. Use a Punnett square to work out the genotype of the round parent. Then explain why the counts aren't exactly 50 to 50. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The wrinkled parent can only give the wrinkled allele. Some offspring are wrinkled, so the round parent gave a wrinkled allele too. It's heterozygous. The square gives half round, half wrinkled. Each seed is a separate chance, so 100 seeds vary a little around 1 to 1. If you said the round parent is homozygous, that cross would give only round seeds."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any cross: write the parents' genotypes, split each into its gametes, fill the square, and read the ratios as chances for each offspring. For a pedigree, look for the giveaway, test it against named people, and then use the square. Next: genes on the X chromosome, and alleles that aren't simply dominant or recessive."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

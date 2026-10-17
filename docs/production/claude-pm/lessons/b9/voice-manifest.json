@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B9-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b9/lesson.json",
+  "lessonSha256": "def53bfe7b0ed7ec6af63992a6f273e505bc84e84b55977dcf3d601a9aabdaf3",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b9/lesson.production-brief.json",
+    "sha256": "7a337e7e11c3489bc724a0ee0a18c1e6d94354ceba6919212dabba57fe4e8bc0"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Mendel crossed tall pea plants with short ones, and every one of their offspring grew tall. The short trait seemed to have vanished. Then he let those tall offspring pollinate themselves. Out of 1,064 plants in the next generation, 277 were short. So how can two tall plants have a short offspring? And how can a family tree tell us the same kind of thing about people?",
+      "hash": "2664637683de",
+      "textSha256": "2664637683de9cfd5c3e0e5103591924407c6d494449588686086be6dce63616",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/hook.2664637683de.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/hook.2664637683de.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/hook.2664637683de.generation.json",
+      "plannedRequestSha256": "d53af773c3ccf73e22b8df9f0297bc56ca9e6cb33f2a3a8c1153994daea0aa63"
+    },
+    {
+      "id": "hide-allele",
+      "parentSceneId": "hide-allele",
+      "text": "Remember, genes code for proteins, and many proteins are enzymes. The tall allele codes for an enzyme that makes a growth hormone. The short allele's version barely works. A plant with one of each still makes enough hormone, so it grows tall. That's what dominant means: the allele shows even with only one copy. The short allele is recessive: it shows only with two copies.",
+      "hash": "8164a7268477",
+      "textSha256": "8164a72684778a49163eaa7f8c47fa5b823f8af9db36add1dfd8ea42ffaa222d",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/hide-allele.8164a7268477.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/hide-allele.8164a7268477.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/hide-allele.8164a7268477.generation.json",
+      "plannedRequestSha256": "d133735ee525d05a02dbd7a03246f4e375d8358eebb62ecfc13513223c3fd092"
+    },
+    {
+      "id": "gametes",
+      "parentSceneId": "gametes",
+      "text": "Two of the same allele is called homozygous, and one of each is heterozygous. So which alleles go into a gamete? In meiosis, the two chromosomes of each pair separate, so each gamete gets just one allele of each gene. A heterozygous plant makes two kinds of gamete: half carry the tall allele, and half carry the short one. That explains Mendel's first cross. A tall plant with two tall alleles, crossed with a short plant, gives offspring that all get one of each. They're all tall, but every one carries the short allele.",
+      "hash": "9cf8ce6ca742",
+      "textSha256": "9cf8ce6ca742339f549b34553a199b1991699bed756c6690105b74a55cbfdd3d",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/gametes.9cf8ce6ca742.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/gametes.9cf8ce6ca742.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/gametes.9cf8ce6ca742.generation.json",
+      "plannedRequestSha256": "26969fc608fe0f9e5f015f0f681b86d6f353424cd087613440c57ca1a8a96698"
+    },
+    {
+      "id": "punnett",
+      "parentSceneId": "punnett",
+      "text": "A Punnett square lays out every way the gametes can meet. One parent's gametes go across the top, the other's down the side. Each box is one equally likely fertilisation. Fill them in: one box with two tall alleles, two heterozygous boxes, and one with two short alleles. That's a genotype ratio of 1 to 2 to 1. Three of the four boxes have a tall allele, so the phenotype ratio is 3 tall to 1 short. Mendel's 787 to 277 is very close.",
+      "hash": "7bfb948326f4",
+      "textSha256": "7bfb948326f469d20f99d10e51ee9c886358f51b7e8ae52fef498cdf552852ac",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/punnett.7bfb948326f4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/punnett.7bfb948326f4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/punnett.7bfb948326f4.generation.json",
+      "plannedRequestSha256": "db39a50d24aa75e0e06c837afb7f06fd1f872087601e079f28f69bbc94c30186"
+    },
+    {
+      "id": "chance-per-offspring",
+      "parentSceneId": "chance-per-offspring",
+      "text": "But 3 to 1 is a chance for each offspring, not a promise for every group of four. Each seed has a one in four chance of being short, whatever happened to the seed before it. Plant just four seeds from this cross, and you'll get exactly one short plant only about 42 per cent of the time. With hundreds of seeds, like Mendel had, the counts settle close to the ratio.",
+      "hash": "d04dc11a5643",
+      "textSha256": "d04dc11a5643181f3bd0cb9bc257c073f1a5df1ffaf6e46f040d4a2658053277",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/chance-per-offspring.d04dc11a5643.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/chance-per-offspring.d04dc11a5643.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/chance-per-offspring.d04dc11a5643.generation.json",
+      "plannedRequestSha256": "2479454a44aa8eef2c5d36421381398925c509c1b90be233ff85f4e713893a6d"
+    },
+    {
+      "id": "test-cross",
+      "parentSceneId": "test-cross",
+      "text": "So how can you tell whether a tall plant is homozygous or heterozygous, when they look the same? Cross it with a short plant, which can only give the short allele. This is a test cross. A heterozygous tall plant gives each offspring a half chance of being short. So if even one offspring is short, the tall parent must carry the short allele. If they're all tall, it's probably homozygous, and more offspring make that more certain.",
+      "hash": "03f7c4b56b54",
+      "textSha256": "03f7c4b56b54c6b259b2bf5d7a5bdf8e9a0a3a65c5d0dc14970c7d93eeaf5315",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/test-cross.03f7c4b56b54.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/test-cross.03f7c4b56b54.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/test-cross.03f7c4b56b54.generation.json",
+      "plannedRequestSha256": "a46717ab13be5d4217df83efd60cde5c9ea5f4b8954fccd4752e7efb10510844"
+    },
+    {
+      "id": "read-pedigree",
+      "parentSceneId": "read-pedigree",
+      "text": "We can't run test crosses on people, so instead we read family trees called pedigrees. Squares are males, circles are females, and a shaded symbol means the person has the trait. A line joins two parents, and a line down from it leads to their children. Each generation gets a Roman numeral, and each person a number, so you can point to exactly who you mean. In this video, the genes are all on autosomes, the chromosomes that aren't sex chromosomes.",
+      "hash": "f54e63965db2",
+      "textSha256": "f54e63965db2304ea2470c67439b2bc652056e0a66f0f189bc28b41d30c93bf7",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/read-pedigree.f54e63965db2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/read-pedigree.f54e63965db2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/read-pedigree.f54e63965db2.generation.json",
+      "plannedRequestSha256": "bbeb08d70d6f6c68ddfdc610f89366ce1f7aeabf20db2412251b57be448e0486"
+    },
+    {
+      "id": "recessive-pedigree",
+      "parentSceneId": "recessive-pedigree",
+      "text": "Here's a family with a recessive condition, such as cystic fibrosis. In generation one, an affected father has two unaffected children. Every child of his got one recessive allele from him, so his daughter carries it, hidden. In generation three, it reappears: two unaffected parents have an affected daughter. That's the giveaway. If the parents don't show it, but their child does, each parent must carry one hidden recessive allele. People like this are called carriers. So recessive traits can skip a generation.",
+      "hash": "c0826c35bc4f",
+      "textSha256": "c0826c35bc4f1379b830ea908b2aba89479b63645d4e566eb64417845baa8d73",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/recessive-pedigree.c0826c35bc4f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/recessive-pedigree.c0826c35bc4f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/recessive-pedigree.c0826c35bc4f.generation.json",
+      "plannedRequestSha256": "6eb514fe0b52e7794ebb7f312978306e4f31d65881ada9f8694fb75567946168"
+    },
+    {
+      "id": "dominant-pedigree",
+      "parentSceneId": "dominant-pedigree",
+      "text": "Now a dominant condition, such as Huntington's disease. Look for clues: it usually shows up in every generation, and every affected child has an affected parent. An affected, heterozygous parent and an unaffected parent give each child a half chance, the same square as the test cross. The giveaway here is the opposite: two affected parents with an unaffected child. Each parent must carry a hidden recessive allele, so the condition must be dominant. And dominant doesn't mean common. Huntington's is dominant, but rare.",
+      "hash": "160abddace4c",
+      "textSha256": "160abddace4c4e7f4cd157c0079f34329f2551792c1078e48d70467e3b124af4",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/dominant-pedigree.160abddace4c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/dominant-pedigree.160abddace4c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/dominant-pedigree.160abddace4c.generation.json",
+      "plannedRequestSha256": "cd071abf7ca7f2a9b428cf70274d03f4238591a7d009844ee9aece4038eb9bfb"
+    },
+    {
+      "id": "giveaways",
+      "parentSceneId": "giveaways",
+      "text": "Here's how to remember them. Hidden in the parents: recessive. Hidden in the child: dominant. In an answer, name the people. For example: individuals 3 and 4 in generation two are unaffected, but their daughter, individual 1 in generation three, is affected, so the condition is recessive. Then write their genotypes, and use a Punnett square for any probability.",
+      "hash": "09ac3d8e1f4c",
+      "textSha256": "09ac3d8e1f4cb10e616f3ae4eb2aad6c2643ff0b760d9d501d4bff315433f4f5",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/giveaways.09ac3d8e1f4c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/giveaways.09ac3d8e1f4c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/giveaways.09ac3d8e1f4c.generation.json",
+      "plannedRequestSha256": "caf0a5ca90483ecb7844abb861bd45672f0bf2933941c684e9e3d1ac85ddc3d9"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two harder questions now. First, this pedigree shows a condition caused by a gene on an autosome. Is the condition dominant or recessive? Justify your answer using numbered individuals. Then give the genotypes of individuals 1 and 2 in generation one, and find the probability that their next child is unaffected. Pause here to answer.",
+      "hash": "842bf06080b7",
+      "textSha256": "842bf06080b7417ec50f593db309843f575d3858873458968d0bbe18fc1f5447",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/attempt.842bf06080b7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/attempt.842bf06080b7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/attempt.842bf06080b7.generation.json",
+      "plannedRequestSha256": "96e87518f5bba37c64a6b222be61a9ddadd3b07b7352d009fbc8184cb0767b9c"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "It's dominant. Individuals 1 and 2 in generation one are both affected, but their daughter, individual 1 in generation two, is unaffected. So each parent carries a hidden recessive allele: both are heterozygous. Their square gives a one in four chance that the next child is unaffected. If you wrote \"dominant, because most of the family has it\", that isn't evidence. Cite the people.",
+      "hash": "a6fb7b8eb386",
+      "textSha256": "a6fb7b8eb38691aab5580da66790520a709cf7a6afb3c7964acb7463a39a12ee",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/feedback-one.a6fb7b8eb386.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/feedback-one.a6fb7b8eb386.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/feedback-one.a6fb7b8eb386.generation.json",
+      "plannedRequestSha256": "667685b5e687bec92eecfedccdf7b302020860a4da2901195313a8bd9a5888bd"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. In peas, round seeds are dominant to wrinkled seeds. A plant grown from a round seed is crossed with a plant grown from a wrinkled seed. The cross produces 52 round seeds and 48 wrinkled seeds. Use a Punnett square to work out the genotype of the round parent. Then explain why the counts aren't exactly 50 to 50. Pause here to answer.",
+      "hash": "3a4c77c63108",
+      "textSha256": "3a4c77c631088a718fed2d8ec83072d30d31916ec5cbbe52e1a39392d5cab443",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/attempt-two.3a4c77c63108.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/attempt-two.3a4c77c63108.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/attempt-two.3a4c77c63108.generation.json",
+      "plannedRequestSha256": "450994080beefe135d07a9945a296e3b22afa1e63a5634f2ff69496e03fa7fb7"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The wrinkled parent can only give the wrinkled allele. Some offspring are wrinkled, so the round parent gave a wrinkled allele too. It's heterozygous. The square gives half round, half wrinkled. Each seed is a separate chance, so 100 seeds vary a little around 1 to 1. If you said the round parent is homozygous, that cross would give only round seeds.",
+      "hash": "4de1ae6cc2f8",
+      "textSha256": "4de1ae6cc2f89f89c8f1d70329a2223cb0f879e62b910681f514913cb23a9352",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/feedback-two.4de1ae6cc2f8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/feedback-two.4de1ae6cc2f8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/feedback-two.4de1ae6cc2f8.generation.json",
+      "plannedRequestSha256": "303d3b2825dbc829abc9db8a726a6e7415b7b620017d0c1629ce990a34937ed4"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any cross: write the parents' genotypes, split each into its gametes, fill the square, and read the ratios as chances for each offspring. For a pedigree, look for the giveaway, test it against named people, and then use the square. Next: genes on the X chromosome, and alleles that aren't simply dominant or recessive.",
+      "hash": "f7413f7d5ba5",
+      "textSha256": "f7413f7d5ba54921f3771b2a0c0a19f9303042ac379f86444d7c3dbf24f362fe",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/decision-rule.f7413f7d5ba5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/decision-rule.f7413f7d5ba5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/decision-rule.f7413f7d5ba5.generation.json",
+      "plannedRequestSha256": "0b77143ab098238a7b2e7dd406fd75e4b70228273d8073cca85c4ba508ebb0c5"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B9-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C11-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c11/lesson.json",
+  "lessonSha256": "5063ea1e2ac7bf351dba5e334f5d9b537642551a273d1fefcd2779e96df0c577",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c11/lesson.production-brief.json",
+    "sha256": "e40e87b2d68e7a69fcc3e4cb805a708cc7eebf1939df8f34095473c9d915c797"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Drop a blue copper sulfate crystal into water and watch. Blue streaks drift off it, the crystal shrinks, and soon the whole beaker is evenly pale blue. That blue colour belongs to the copper ions, so you're watching ions spread out through the water. But in a crystal, ions are held tightly together. So what pulls them out? And why do some salts make the water hot, while others make it cold?",
+      "hash": "a379055c4cbc",
+      "textSha256": "a379055c4cbc3b6ccb35624ff67f3c22cc6ac267d476e6e763dbec3723121b08",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hook.a379055c4cbc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hook.a379055c4cbc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hook.a379055c4cbc.generation.json",
+      "plannedRequestSha256": "b2c721608f9dfa3d93c2809b050de74963add2d089c80fc303d9f3dee512b18e"
+    },
+    {
+      "id": "two-players",
+      "parentSceneId": "two-players",
+      "text": "An ionic solid like table salt is a lattice: a regular stack of positive sodium ions and negative chloride ions, where each ion is held by the pull of all the opposite charges around it. Water molecules are polar: the oxygen end is slightly negative, and the two hydrogen ends are slightly positive. You met both of these in Year 11.",
+      "hash": "30e6f3527ab9",
+      "textSha256": "30e6f3527ab93b24d2c64d10946261e25ab286662acf28d7a5c1435eaa4a8ba0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/two-players.30e6f3527ab9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/two-players.30e6f3527ab9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/two-players.30e6f3527ab9.generation.json",
+      "plannedRequestSha256": "9cd0bd1229a45d6f90d1a153df94b48bab7cdbcf24e4f3bed87e08fa48cacdd8"
+    },
+    {
+      "id": "hydration",
+      "parentSceneId": "hydration",
+      "text": "Water molecules crowd around the crystal and turn to face the ions: their oxygen ends point at the positive sodium ions, and their hydrogen ends point at the negative chloride ions. This pull between an ion and the oppositely charged end of a water molecule is called an ion-dipole attraction. An ion on a corner of the crystal has the fewest neighbours holding it, so it's the easiest to pull away. Once it's out, water molecules surround it completely. An ion wrapped in water like this is hydrated, and that's what aqueous means.",
+      "hash": "c6983c25ec4c",
+      "textSha256": "c6983c25ec4cd1ca8c44fe4930cb57164d2a391656ec386c26e14594a5fb74f6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hydration.c6983c25ec4c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hydration.c6983c25ec4c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hydration.c6983c25ec4c.generation.json",
+      "plannedRequestSha256": "55f9fd3a05945ae6d436218d9a8c64f4abb005b64bab32a75023d379293e4a0f"
+    },
+    {
+      "id": "equation",
+      "parentSceneId": "equation",
+      "text": "So dissolving salt is written as: sodium chloride solid gives sodium ions and chloride ions, both aqueous. Notice that no new ions are made. The ions were already there in the crystal. Dissolving just separates them, which is the dissociation you met last video, and wraps each one in water. So there are no salt molecules floating around.",
+      "hash": "6d117ec4d5f1",
+      "textSha256": "6d117ec4d5f10981ec70d7d37d4893c4ecb35d7f291a85960b05e0e6853af711",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/equation.6d117ec4d5f1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/equation.6d117ec4d5f1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/equation.6d117ec4d5f1.generation.json",
+      "plannedRequestSha256": "fa0c9f25ce0d35aea319d3302d94ff5d60f2801265f2b6c5c6318bc5df0c8ce6"
+    },
+    {
+      "id": "energy-steps",
+      "parentSceneId": "energy-steps",
+      "text": "Dissolving also involves energy, and you can count it in two steps. Step one: pulling the ions away from each other costs energy, because opposite charges attract. Energy goes in. Step two: when water molecules cling to the separated ions, energy is released. Energy comes out. In a real crystal both happen together, but splitting them lets us count the energy. The overall heat change when one mole dissolves is the enthalpy of solution, and it's just the two steps added together. If more energy comes out than goes in, the extra heats the water. If more goes in than comes out, that energy is taken from the water, and it gets colder.",
+      "hash": "8baedc24d503",
+      "textSha256": "8baedc24d5030b18d51a05a0c8eaf7aa02f46ae21bdb3a912653ed7ad8998958",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/energy-steps.8baedc24d503.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/energy-steps.8baedc24d503.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/energy-steps.8baedc24d503.generation.json",
+      "plannedRequestSha256": "df796809f5ced62f2055418703dbfb9913170e112d2dc21afa8227dc209c526f"
+    },
+    {
+      "id": "hot-cold-packs",
+      "parentSceneId": "hot-cold-packs",
+      "text": "Here are real numbers. Calcium chloride has an enthalpy of solution of minus 81 kilojoules per mole. Minus means energy comes out: hydrating its small, doubly charged calcium ions releases more energy than the lattice costs. That's why some instant hot packs use calcium chloride. Ammonium nitrate is plus 25.7. The lattice costs more than hydration pays back, so the water gets colder. That's what's inside many instant cold packs.",
+      "hash": "a1c92b55e13b",
+      "textSha256": "a1c92b55e13b1ea9e82d9a041ae07965bc9d034af543a895b7886ce3cf77120b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hot-cold-packs.a1c92b55e13b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hot-cold-packs.a1c92b55e13b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/hot-cold-packs.a1c92b55e13b.generation.json",
+      "plannedRequestSha256": "d1943cd9e5e9d79625d04400c72e5a284b1ebdb93a830d4076fdb1c57d7fd920"
+    },
+    {
+      "id": "salt-cancel",
+      "parentSceneId": "salt-cancel",
+      "text": "And table salt? Each of its two steps is close to 800 kilojoules per mole, but they almost cancel, leaving only plus 3.9. The difference between two big numbers sets the temperature change, not either one on its own.",
+      "hash": "e3886f231d1f",
+      "textSha256": "e3886f231d1f9b66bf55c1a535f16659d13169173967e7004469f9b0f507bae4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/salt-cancel.e3886f231d1f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/salt-cancel.e3886f231d1f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/salt-cancel.e3886f231d1f.generation.json",
+      "plannedRequestSha256": "50d774f0e672d51cae5f182a4e90571052118ba4f8f714fd9cff2c418e76c953"
+    },
+    {
+      "id": "entropy",
+      "parentSceneId": "entropy",
+      "text": "Here's a puzzle. If ammonium nitrate takes in energy to dissolve, why does it dissolve at all? Remember from the enthalpy and entropy video: a change is favoured by releasing heat, and also by spreading out. Ions locked in a lattice spread out through the water when they dissolve, a big increase in entropy. For ammonium nitrate, the spreading out wins over the energy cost. So you can't predict whether a salt dissolves from its energy change alone.",
+      "hash": "5326c25a4fe7",
+      "textSha256": "5326c25a4fe71f2ce0ff22daa7d02c07f7da568a2bb5e92dcb99df6a20578a6c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/entropy.5326c25a4fe7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/entropy.5326c25a4fe7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/entropy.5326c25a4fe7.generation.json",
+      "plannedRequestSha256": "a7efa23af4fcd619d6180ceccc7119a8231ee98f41331434356130bdfad8b8d6"
+    },
+    {
+      "id": "saturating",
+      "parentSceneId": "saturating",
+      "text": "Now keep adding salt to the same water, at the same temperature. At first every crystal disappears: the solution is unsaturated. Eventually some solid stays on the bottom, however long you wait. Now it's saturated: it holds the most it can at that temperature. It looks as if dissolving has stopped. But has it?",
+      "hash": "25a98e031a3a",
+      "textSha256": "25a98e031a3ab99e47a54a6e7264f2dedb255f6bf142674ecffcc75a978296c4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/saturating.25a98e031a3a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/saturating.25a98e031a3a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/saturating.25a98e031a3a.generation.json",
+      "plannedRequestSha256": "e5c69b2590e9818dc6fec7409e6768fef0c9dfe68b1e45935b0a9348d2f452b1"
+    },
+    {
+      "id": "rates-meet",
+      "parentSceneId": "rates-meet",
+      "text": "Zoom in. Ions keep leaving the crystal at a steady rate. But dissolved ions also bump into the crystal and stick to it. That's crystallising. At first there are few dissolved ions, so crystallising is slow. As more ions dissolve, they hit the crystal more often, so crystallising speeds up, until the two rates are equal. From then on ions still leave and rejoin, but the amount dissolved stays the same. That's a dynamic equilibrium, so it gets the two-way arrow. And its K, with the solid left out, is the Ksp from last video.",
+      "hash": "ad2d3fb0c46f",
+      "textSha256": "ad2d3fb0c46febe4df060e74015aacdf3ebecd7e1820be616e1087955d0564a9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/rates-meet.ad2d3fb0c46f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/rates-meet.ad2d3fb0c46f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/rates-meet.ad2d3fb0c46f.generation.json",
+      "plannedRequestSha256": "604a86f764321b101664ed5e35d8444bc2d486e9efa9f25fdb52db46269c6669"
+    },
+    {
+      "id": "tracer",
+      "parentSceneId": "tracer",
+      "text": "How do we know the swapping never stops? Add a crystal made with radioactive ions, which a detector can track, to a saturated solution of the same salt, potassium bromide. The amount dissolved doesn't change, yet radioactivity soon turns up in the solution. So ions must keep leaving the solid while others keep rejoining it.",
+      "hash": "3ed55d63e14e",
+      "textSha256": "3ed55d63e14ef4ac7d3eff6070d4d84fa0853ccdbdf5df4a62d297259b69a55f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/tracer.3ed55d63e14e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/tracer.3ed55d63e14e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/tracer.3ed55d63e14e.generation.json",
+      "plannedRequestSha256": "68c8e7655f84f184b70b6dddfad9633ed23f52b07b50882d64091e190d0cd891"
+    },
+    {
+      "id": "added-solid",
+      "parentSceneId": "added-solid",
+      "text": "One trap. What if you tip more salt into a saturated solution? The solution doesn't change. The extra solid just joins the pile, because the water already holds as much as it can at that temperature. In K terms, the solid is left out of the expression, so adding more doesn't change Q. Q still equals K, so there's no shift. Temperature is different, because it changes K itself. Potassium nitrate dissolves endothermically, so warming its saturated solution raises K, and more dissolves.",
+      "hash": "0f8ebeee44f6",
+      "textSha256": "0f8ebeee44f6f326642f1674b2b9780fa8cb0ce7c17aa96ecc7213c4595130b8",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/added-solid.0f8ebeee44f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/added-solid.0f8ebeee44f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/added-solid.0f8ebeee44f6.generation.json",
+      "plannedRequestSha256": "10a3532f0f5cbc8d8d22e93c086cf1dc4694eec54720ca9f7260e1438742b132"
+    },
+    {
+      "id": "memory-aids",
+      "parentSceneId": "memory-aids",
+      "text": "Two lines to remember. Lattice costs, hydration pays. Whichever is bigger decides whether the water warms or cools. And saturated means equal rates, not stopped.",
+      "hash": "ad8e4a1b7afd",
+      "textSha256": "ad8e4a1b7afddb57f8e89e3f1ae35ed8c6c378a40f3c18a600913940cd7ed375",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/memory-aids.ad8e4a1b7afd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/memory-aids.ad8e4a1b7afd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/memory-aids.ad8e4a1b7afd.generation.json",
+      "plannedRequestSha256": "5fb9efbe370741bcab1fd1e861138a7bb71bb0de7975a68d5a7b5f7e334133c2"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. When ammonium chloride dissolves in water, the temperature falls from 22 degrees to 17 degrees. Explain this using the two energy steps. Pause here to answer.",
+      "hash": "f77efc2f32d1",
+      "textSha256": "f77efc2f32d1f7844a413adbf895b996bcd3fdb2b7da90590b7015cd65f03422",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/attempt-1.f77efc2f32d1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/attempt-1.f77efc2f32d1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/attempt-1.f77efc2f32d1.generation.json",
+      "plannedRequestSha256": "187693d31f558233939948b67b013e2c8170102595e4ec1cf06d708e4ef77fcf"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The water cooled, so dissolving ammonium chloride is endothermic. Separating its ions from the lattice takes in more energy than hydrating them releases, so the extra energy is taken from the water. If you wrote that hydration takes in energy, flip it: water clinging to ions always releases energy.",
+      "hash": "8247a41fd57f",
+      "textSha256": "8247a41fd57f7fbdf0b3ecb36793281099debacd8b6da401497f68ad88da3030",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/feedback-1.8247a41fd57f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/feedback-1.8247a41fd57f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/feedback-1.8247a41fd57f.generation.json",
+      "plannedRequestSha256": "9ec6ade03c1fca184f6e44c25ae444a5576133cb2c290f97cd58026a061c24f8"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. You add more water to a saturated sodium chloride solution that still has solid on the bottom. You stir and wait, at the same temperature, and some solid is still left at the end. What happens to the mass of solid, and to the final concentration of the solution? Pause here to answer.",
+      "hash": "302ecdfdbdda",
+      "textSha256": "302ecdfdbdda7c77e6203194f579ff50382dd0a1048904871d8bb97c77aaae8d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/attempt-2.302ecdfdbdda.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/attempt-2.302ecdfdbdda.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/attempt-2.302ecdfdbdda.generation.json",
+      "plannedRequestSha256": "194f1f2e37f00d54015a4af4319e565e785db887c1e7b40c8973275a262a22c0"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The mass of solid goes down. Adding water lowers the ion concentrations, so Q falls below K, and more solid dissolves. It keeps dissolving until the solution is saturated again, so the final concentration is the same as before. If you said it ends up more dilute, check: solid is still there, so it's saturated again, at the same temperature.",
+      "hash": "52b39f94d634",
+      "textSha256": "52b39f94d634a484edc29269596dcc977ffdd2564b24541fb54c208feb22bee5",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/feedback-2.52b39f94d634.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/feedback-2.52b39f94d634.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/feedback-2.52b39f94d634.generation.json",
+      "plannedRequestSha256": "28c9131ab56769cb682447ca6b9d0647f14238c2d915e55e47f47bb2988406dc"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when an ionic solid dissolves, water molecules pull the ions out and hydrate them. To explain a temperature change, compare the cost of separating the ions with the payback from hydrating them. And with solid on the bottom, it's an equilibrium, so use K and Q. Next: how Aboriginal and Torres Strait Islander Peoples have used solubility to remove toxins from food.",
+      "hash": "ba1adcbcb14c",
+      "textSha256": "ba1adcbcb14c874ce7761ba4b6b093282de424d39ffad2eb1eb274e6e23bc819",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/decision-rule.ba1adcbcb14c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/decision-rule.ba1adcbcb14c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/decision-rule.ba1adcbcb14c.generation.json",
+      "plannedRequestSha256": "9442078ad46ad2cebbe04f9c0140ccda1d823b5940a1c1dfa64642be53691683"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C11-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

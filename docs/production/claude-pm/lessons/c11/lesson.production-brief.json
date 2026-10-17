@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c11/lesson.json",
+    "lessonSha256": "5063ea1e2ac7bf351dba5e334f5d9b537642551a273d1fefcd2779e96df0c577"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C10, G01 and Year 11: ionic compounds are lattices of positive and negative ions; water is polar; endothermic and exothermic; ions and state symbols (Year 11). Dynamic equilibrium with equal rates (C1); a slower rate rising to meet a falling one (C2); Q against K (C8); the K expression with pure solids left out (C5); K changes only with temperature and heating raises K for a heat-absorbing reaction (C9); Ksp named as K for a solid dissolving (C10); spreading out (entropy) as a second factor favouring a change (G01). Not assumed: lattice energy values, Hess cycles, solubility rules.",
+    "startsWith": "A blue copper sulfate crystal dissolving in water, with the question of what pulls the ions out of the crystal and why some salts make water hot while others make it cold.",
+    "stopsAfter": "Describing hydration with ion-dipole attractions; writing a dissociation equation with state symbols; explaining a temperature change on dissolving with both energy steps; saying why an endothermic salt can still dissolve (spreading out); explaining saturation as equal dissolving and crystallising rates, with tracer evidence; predicting the effect of adding solid and adding water on a saturated mixture, and saying why heating dissolves more of a salt that dissolves endothermically. No Ksp calculations, no solubility rules, no lattice energy arithmetic, no Gibbs free energy, no cycad case, no supersaturation.",
+    "nextLesson": "C12: how Aboriginal and Torres Strait Islander Peoples have used solubility to remove toxins from food; then C13: solubility rules and precipitation."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c11.md"
+  ],
+  "teaching": {
+    "task": "Say what pulls the ions out when an ionic solid dissolves, explain why the water warms or cools, and explain why dissolving in a saturated solution is an equilibrium.",
+    "causalExplanation": "The oppositely charged ends of polar water molecules attract the ions, and an exposed corner ion is held by the fewest neighbours, so water pulls ions off the lattice and surrounds them. The ions were already in the crystal, so dissolving only separates and hydrates them. Separating the ions costs energy and hydrating them releases energy, so the sum, the enthalpy of solution, is negative when hydration pays back more and the water warms, and positive when separation costs more and the water cools. A salt that takes in energy can still dissolve because spreading out also favours dissolving. In a saturated solution the dissolving rate is steady while the crystallising rate rises with the number of dissolved ions until the two are equal, so the amounts stay fixed, which is a dynamic equilibrium with its K the Ksp. The solid is left out of K, so adding more changes nothing, while heating changes K itself.",
+    "conversationalApproach": "Opens on a dissolving copper sulfate crystal and the hot and cold puzzle, builds the lattice and polar water, shows hydration and the equation, counts energy in two steps with real hot pack and cold pack values, resolves the endothermic puzzle with spreading out, builds saturation as two rates meeting with tracer evidence, adds the added-solid trap, gives two memory aids, then asks two unseen items with a short pause and brief feedback.",
+    "openingDecision": "Ions are held tightly in a crystal. What pulls them out into the water, and why do some salts make the water hot while others make it cold?",
+    "understandingCheck": "Ammonium chloride dissolves and the water falls from 22 degrees to 17 degrees: explain with the two energy steps. Then water is added to a saturated sodium chloride solution that still has solid at the end, at the same temperature: say what happens to the mass of solid and to the final concentration.",
+    "curriculumScope": "Describe and analyse the processes involved in the dissolution of ionic compounds in water (Module 5, C5-IQ4-01). Ksp calculations, solubility rules, lattice energy arithmetic, Gibbs free energy, the cycad case and supersaturation are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted copper sulfate beaker pair, the painted unsaturated and saturated beakers, the painted thermometer cues, a coded NaCl lattice with polar water, the coded two-step energy ledger and dH bar chart, the C2 two-rate meter, the C5 left-out tray and the C8 Q against K gauge. Colour key: positive ions amber, negative ions violet, water pale blue with delta marks, energy in warm red, energy out teal, radioactive ions green glow.",
+    "transitionPlan": "The beaker anchors the hook and shrinks to the left column while the lattice close-up opens; the equation strip sits above the close-up; the ledger replaces the close-up and returns small for the bar chart and the aids; the saturated beaker and the rate lens carry the equilibrium scenes; the tray and gauge return for the added-solid trap; each attempt clears the board and its feedback rebuilds the ledger or the gauge; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted copper sulfate beaker pair (crystal then dissolved, aligned) with the process clip or an interim crossfade, the painted hot thermometer and a cold cue",
+      "teachingReason": "Poses the puzzle: a crystal vanishes into even colour, so what pulls ions out of a lattice, and why do some salts warm the water while others cool it",
+      "narrationCue": "watch / shrinks / pale blue / hot / cold",
+      "motionPurpose": "The crystal beaker plays into the dissolved beaker, a ring marks the shrinking crystal, a tag names the spreading copper ions and two thermometers ask hot or cold",
+      "motionRole": "explain",
+      "onScreenChange": "Heading \"Where does a dissolving crystal go?\" writes on; on \"watch\" the crystal plate plays to the dissolved plate with blue streaks rising; on \"shrinks\" a pen ring circles the crystal; on \"pale blue\" the tag \"copper ions spread out\" writes; on \"hot\" the hot thermometer stands at the right with a pen \"?\"; on \"cold\" the cold cue stands beside it",
+      "motionTools": [
+        "HandText write-on",
+        "process clip crossfade",
+        "scribbleEllipse",
+        "plate slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the two questions"
+    },
+    {
+      "sceneId": "two-players",
+      "visualDecision": "new",
+      "visualReference": "Coded NaCl lattice block with amber sodium and larger violet chloride ions, and one enlarged polar water molecule with delta marks",
+      "teachingReason": "Gives the two players before the action: a lattice held by opposite charges and a polar water molecule, each with a plain meaning",
+      "narrationCue": "lattice / polar",
+      "motionPurpose": "The beaker shrinks to the left column, the lattice builds ion by ion, one ion links to its neighbours and the water molecule enlarges with its charge marks",
+      "motionRole": "explain",
+      "onScreenChange": "The beaker shrinks to the left column; on \"lattice\" the NaCl block builds, one inner Na+ pulses and six pen lines run to its neighbours with the tag \"held by every neighbour\" and the plain meaning \"a regular stack of ions\"; on \"polar\" one water molecule enlarges with delta-minus on the oxygen and delta-plus on each hydrogen and the tag \"one end slightly negative, the other slightly positive\"",
+      "motionTools": [
+        "column shrink",
+        "DrawPath",
+        "tile build",
+        "HandText write-on",
+        "label pulse"
+      ],
+      "holdPurpose": "Hold about 1 second so both definitions can be read"
+    },
+    {
+      "sceneId": "hydration",
+      "visualDecision": "new",
+      "visualReference": "Lattice close-up filling with pale blue water molecules, with oxygen ends toward sodium and hydrogen ends toward chloride, a corner ion lifting off and a full water shell",
+      "teachingReason": "Explains the cause of dissolving: oppositely charged ends pull on the ions, a corner ion is held by the fewest neighbours, and a water shell makes the ion aqueous",
+      "narrationCue": "turn to face the ions / ion-dipole attraction / corner / surround it completely / hydrated",
+      "motionPurpose": "Water molecules rotate to face the ions, a dashed attraction line pulses, a corner chloride with three neighbour lines lifts off, a shell of six waters closes round it and the aqueous labels land",
+      "motionRole": "explain",
+      "onScreenChange": "On \"turn to face the ions\" surface water molecules rotate, oxygen toward Na+ and hydrogen toward Cl-, with a pen arrow on one; on \"ion-dipole attraction\" a dashed line pulses between a Na+ and a water oxygen and the term and its plain meaning write below; on \"corner\" a corner Cl- is ringed with three neighbour lines against six inside and lifts off; on \"surround it completely\" a six-molecule shell closes round it and a Na+ follows; on \"hydrated\" the labels \"Na+(aq)\", \"Cl-(aq)\" and \"(aq) = surrounded by water\" land",
+      "motionTools": [
+        "particle rotation",
+        "dashed line pulse",
+        "scribbleEllipse",
+        "shell close",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the hydrated ions"
+    },
+    {
+      "sceneId": "equation",
+      "visualDecision": "adjust",
+      "visualReference": "Equation strip NaCl(s) to Na+(aq) + Cl-(aq) with the lattice and the drifting hydrated ions side by side and the dissolved copper sulfate beaker in the left column",
+      "teachingReason": "Shows that the ions were already in the crystal, so dissolving separates and hydrates them and no salt molecules exist in the water",
+      "narrationCue": "sodium ions and chloride ions / separates / no salt molecules",
+      "motionPurpose": "The equation writes on with the aqueous labels flying in from the close-up, the lattice and the free ions sit side by side, and a wrong chip about salt molecules is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"sodium ions and chloride ions\" the strip writes \"NaCl(s) -> Na+(aq) + Cl-(aq)\" with the (aq) labels flying in; on \"separates\" the lattice and the drifting hydrated ions sit side by side with the tag \"same ions, now apart\"; on \"no salt molecules\" the chip \"NaCl molecules in water\" fades in and is crossed with the caption \"only separate hydrated ions\"; the beaker tag becomes \"hydrated Cu2+ = the blue\"",
+      "motionTools": [
+        "HandText write-on",
+        "token fly-in",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the crossed chip"
+    },
+    {
+      "sceneId": "energy-steps",
+      "visualDecision": "adjust",
+      "visualReference": "Coded two-step energy ledger: a warm red bar rising for separating the ions, a teal bar falling for hydrating them, a net bar and a thermometer column",
+      "teachingReason": "Counts the energy in two steps so the sign of their sum explains warming or cooling",
+      "narrationCue": "away from each other / goes in / cling to / comes out / both happen together / enthalpy of solution / heats the water / from the water",
+      "motionPurpose": "A red bar rises, a teal bar falls from its top, a bracket joins them, a net bar appears, and the thermometer column rises or falls as the longer bar swaps",
+      "motionRole": "explain",
+      "onScreenChange": "The ledger replaces the close-up; on \"away from each other\" and \"goes in\" the red bar rises with the tag \"separate the ions: energy in, +\"; on \"cling to\" and \"comes out\" the teal bar falls with \"hydrate the ions: energy out, -\"; on \"both happen together\" a pen bracket joins them with \"counted separately, happen together\"; on \"enthalpy of solution\" the net bar shows \"dH(solution) = step 1 + step 2\"; on \"heats the water\" the teal bar outgrows the red, the net points down and the column rises; on \"from the water\" the lengths swap, the net points up and the column falls",
+      "motionTools": [
+        "bar grow",
+        "bracket draw",
+        "thermometer column",
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the finished ledger"
+    },
+    {
+      "sceneId": "hot-cold-packs",
+      "visualDecision": "adjust",
+      "visualReference": "Coded dH bar chart with CaCl2 below zero and NH4NO3 above, mini ledgers, hot pack and cold pack cues and a crossed always-endothermic chip",
+      "teachingReason": "Gives real values for both signs and corrects the idea that dissolving always takes in energy",
+      "narrationCue": "minus 81 kilojoules per mole / instant hot packs / plus 25.7 / instant cold packs",
+      "motionPurpose": "A teal bar drops for calcium chloride, a hot pack cue appears, a red bar rises for ammonium nitrate, a cold pack cue appears and a wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The chart draws with a zero line and \"kJ/mol, 25 C\"; on \"minus 81 kilojoules per mole\" a teal bar drops labelled \"calcium chloride, CaCl2: -81\" with a mini ledger showing the longer teal bar; on \"instant hot packs\" the hot pack cue stands under it; on \"plus 25.7\" a red bar rises labelled \"ammonium nitrate, NH4NO3: +25.7\" with a mini ledger; on \"instant cold packs\" the cold pack cue stands under it; the chip \"Dissolving always takes in energy\" fades in and is crossed with \"it can go either way\"",
+      "motionTools": [
+        "bar chart grow",
+        "plate slide",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the two bars"
+    },
+    {
+      "sceneId": "salt-cancel",
+      "visualDecision": "adjust",
+      "visualReference": "The bar chart kept faint with a tall compressed NaCl ledger, a magnifier ring on the tiny gap and a bracket",
+      "teachingReason": "Shows that the difference of two large steps, not either step alone, sets the temperature change",
+      "narrationCue": "close to 800 kilojoules per mole / plus 3.9 / difference",
+      "motionPurpose": "Two tall bars draw, a magnifier ring zooms the tiny gap between their ends and a bracket marks the difference",
+      "motionRole": "explain",
+      "onScreenChange": "The earlier bars fade back; on \"close to 800 kilojoules per mole\" a tall NaCl ledger draws with a red bar up \"about +800\" and a teal bar down \"about -800\"; on \"plus 3.9\" a magnifier ring zooms the gap labelled \"NaCl: +3.9 (measured)\" with the screen tag \"1 mol in 1 L: under 1 C cooler\"; on \"difference\" a pen bracket spans the gap with \"difference decides\"",
+      "motionTools": [
+        "bar grow",
+        "magnifier zoom",
+        "bracket draw",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the magnified gap"
+    },
+    {
+      "sceneId": "entropy",
+      "visualDecision": "new",
+      "visualReference": "Two-pan balance sketch with an energy cost pan and a spreading out pan, an ordered-to-scattered ion inset and a crossed big-cost chip",
+      "teachingReason": "Resolves the puzzle of an endothermic salt that still dissolves by recalling spreading out from the earlier video",
+      "narrationCue": "releasing heat / spreading out / increase in entropy / wins",
+      "motionPurpose": "The balance sketch writes, the ordered lattice scatters into a wide field of water, the balance tips toward spreading out and a wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The cold pack cue and its red bar return small; on \"releasing heat\" and \"spreading out\" the balance writes with left pan \"energy: +25.7 (against)\" and right pan \"spreading out (entropy): for\"; on \"increase in entropy\" an inset shows ordered amber and violet ions scattering through water; on \"wins\" the balance tips with \"NH4NO3 dissolves anyway\"; on the closing sentence the chip \"big dH cost = won't dissolve\" fades in and is crossed",
+      "motionTools": [
+        "balance tip",
+        "particle scatter",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second on the tipped balance"
+    },
+    {
+      "sceneId": "saturating",
+      "visualDecision": "reuse",
+      "visualReference": "Painted unsaturated and saturated beaker pair (aligned) with coded crystals falling in and a stopped question tag",
+      "teachingReason": "Defines unsaturated and saturated by what is seen, then asks whether dissolving has really stopped",
+      "narrationCue": "unsaturated / saturated / stopped",
+      "motionPurpose": "Crystals fall in and vanish, the beaker crossfades to the saturated plate with solid on the bottom, and a pen tag asks whether dissolving stopped",
+      "motionRole": "explain",
+      "onScreenChange": "The unsaturated plate shows with the label \"unsaturated: all the solid dissolves\" and coded crystals falling in and vanishing; on \"saturated\" it crossfades to the saturated plate with the label \"saturated: the most it can hold at this temperature\"; on \"stopped\" the pen tag \"stopped?\" hangs on the crystals",
+      "motionTools": [
+        "plate crossfade",
+        "falling crystals",
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the question"
+    },
+    {
+      "sceneId": "rates-meet",
+      "visualDecision": "adjust",
+      "visualReference": "Lens on the crystal surface with leaving and joining ions, a two-rate meter, the equation strip morphing to a two-way arrow and the left-out tray",
+      "teachingReason": "Explains why dissolving seems to stop: a steady dissolving rate is met by a rising crystallising rate until they are equal",
+      "narrationCue": "leaving / bump into / speeds up / equal / two-way arrow / Ksp",
+      "motionPurpose": "Ions leave at a steady count and dissolved ions join the surface, the crystallising bar climbs to meet the flat dissolving bar, the arrow becomes two-way and the solid drops into the left-out tray",
+      "motionRole": "explain",
+      "onScreenChange": "A lens opens on the saturated crystal; on \"leaving\" hydrated ions leave steadily; on \"bump into\" a dissolved ion hits and joins with the tag \"crystallising\"; the meter shows a flat \"dissolving rate\" and a low \"crystallising rate\"; on \"speeds up\" the dissolved count rises and the crystallising bar climbs; on \"equal\" the bars meet with a teal \"=\" and \"equal rates, not stopped\"; on \"two-way arrow\" the strip becomes \"NaCl(s) <=> Na+(aq) + Cl-(aq)\"; on \"Ksp\" the NaCl(s) tile drops into the tray and \"Ksp = [Na+][Cl-]\" writes small with \"calculations: later video\"",
+      "motionTools": [
+        "particle lens",
+        "two-rate meter",
+        "arrow morph",
+        "tray drop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the equal bars"
+    },
+    {
+      "sceneId": "tracer",
+      "visualDecision": "adjust",
+      "visualReference": "Saturated beaker plate with a small crystal of green-glowing ions, steady mass and concentration readouts and a rising radioactivity meter",
+      "teachingReason": "Gives the evidence that ions keep swapping in a saturated solution while the amounts stay fixed",
+      "narrationCue": "radioactive / in the solution / rejoining",
+      "motionPurpose": "A glowing crystal drops on the pile, the readouts stay fixed, glowing ions appear in the liquid and the radioactivity meter rises, then plain ions dock where glowing ones left",
+      "motionRole": "explain",
+      "onScreenChange": "The beaker shows \"saturated potassium bromide, KBr\"; on \"radioactive\" a small crystal with green-glowing ions drops onto the pile with the tag \"radioactive ions: a detector can track them\" and the readouts \"mass of solid: same\", \"concentration: same\" hold; on \"in the solution\" glowing hydrated ions appear one by one in a lens and the \"radioactivity in solution\" meter rises from zero; on \"rejoining\" plain ions dock where glowing ones left and the two-way arrows light",
+      "motionTools": [
+        "glow pulse",
+        "meter rise",
+        "particle lens",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the steady readouts"
+    },
+    {
+      "sceneId": "added-solid",
+      "visualDecision": "adjust",
+      "visualReference": "Saturated beaker with a growing pile, the left-out tray with a second solid tile, a small Q against K gauge unmoved and a KNO3 warming panel",
+      "teachingReason": "Blocks the trap that adding solid shifts the equilibrium, and contrasts it with temperature, which changes K itself",
+      "narrationCue": "more salt / left out / equals K / warming",
+      "motionPurpose": "Crystals tumble onto the pile while the concentration readout stays fixed, a second solid tile drops into the tray, the gauge pointer stays on the K notch and the KNO3 pile shrinks as it warms",
+      "motionRole": "explain",
+      "onScreenChange": "On \"more salt\" coded crystals tumble onto the pile with \"concentration: same\"; on \"left out\" the tray returns with NaCl(s) in it and a second solid tile drops beside it; on \"equals K\" the gauge shows Q on the K notch with the tag \"added solid: no shift\"; on \"warming\" a second panel relabels the beaker \"KNO3, dissolving endothermic\", shows \"heat-absorbing: heat it, K rises\", shrinks the pile and tags \"about 32 g per 100 g water at 20 C; about 64 g at 40 C\"",
+      "motionTools": [
+        "falling crystals",
+        "tray drop",
+        "gauge pointer",
+        "panel slide",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the warming panel"
+    },
+    {
+      "sceneId": "memory-aids",
+      "visualDecision": "new",
+      "visualReference": "Energy ledger returned small with costs and pays tags, then two large handwritten aids with a condition tag",
+      "teachingReason": "Gives two reusable lines after the causes are explained",
+      "narrationCue": "Lattice costs, hydration pays / saturated means equal rates, not stopped",
+      "motionPurpose": "The ledger returns small, the first aid writes large with its warms and cools line, the second aid writes beside the saturated beaker and the condition tag lands",
+      "motionRole": "explain",
+      "onScreenChange": "The ledger returns with the red bar tagged \"costs\" and the teal bar \"pays\"; the first aid \"Lattice costs, hydration pays.\" writes large with \"bigger payback: water warms. Bigger cost: water cools.\"; on \"saturated means equal rates, not stopped\" the second aid writes beside the saturated beaker; the tag \"same temperature; solid still present\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "tag pop",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds so the aids can be copied"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "Cleared board with a givens card for ammonium chloride and its temperatures, the demand line and the countdown ring",
+      "teachingReason": "Unseen transfer on the two energy steps with every condition visible and nothing answer-bearing",
+      "narrationCue": "falls / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; the givens card shows \"ammonium chloride, NH4Cl, dissolves in water\" and \"temperature: 22 C -> 17 C\"; the demand \"Explain the temperature change using the two energy steps.\" stays visible; the countdown ring starts after the narration with \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card with an answer chip, a mini ledger with a longer red bar, a falling thermometer and one crossed wrong chip",
+      "teachingReason": "Gives the answer and the key reason briefly and corrects the likeliest slip about hydration",
+      "narrationCue": "endothermic / more energy / releases",
+      "motionPurpose": "The answer chip pins, a mini ledger draws with the red bar longer and the thermometer falls, and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"endothermic\" the chip \"endothermic: dH(solution) > 0\" pins top right; on \"more energy\" a mini ledger draws with red \"separate NH4+ and Cl-: in\" longer than teal \"hydrate them: out\", the net points up and the thermometer falls; on \"releases\" the chip \"hydration takes in energy\" fades in and is crossed with \"hydration always releases energy\"",
+      "motionTools": [
+        "chip pin",
+        "bar grow",
+        "Mark cross",
+        "thermometer column"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "Saturated beaker with solid present, a wash bottle adding water, a givens card, two numbered demands and the countdown ring",
+      "teachingReason": "Unseen transfer on adding water to a saturated solution with every condition visible and nothing answer-bearing",
+      "narrationCue": "more water / still left / Pause here to answer",
+      "motionPurpose": "Water pours in and the level rises, then the countdown ring runs while both demands stay visible",
+      "motionRole": "explain",
+      "onScreenChange": "The beaker shows \"saturated NaCl, solid present\"; the wash bottle adds water and the level rises; the givens card reads \"water added\", \"same temperature\", \"some solid still left at the end\"; the demands \"1. Mass of solid?\" and \"2. Final concentration?\" stay visible; the countdown ring starts after the narration with \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "liquid rise",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt beaker with a shrinking pile, the Q against K gauge dropping below the notch and climbing back, answer chips and a crossed dilute chip",
+      "teachingReason": "Answers both demands by Q against K and corrects the dilution slip",
+      "narrationCue": "goes down / below K / same / more dilute",
+      "motionPurpose": "The pile shrinks, the gauge pointer drops below the K notch then climbs back, two answer chips pin and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"goes down\" the pile shrinks and \"1. less solid\" pins; on \"below K\" the gauge pointer drops below the K notch and climbs back as more dissolves; on \"same\" the chip \"2. same concentration (saturated again)\" pins; on \"more dilute\" the chip \"final solution more dilute\" fades in and is crossed with \"solid present: saturated at this temperature\"",
+      "motionTools": [
+        "gauge pointer",
+        "pile shrink",
+        "chip pin",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Question card with three lines lighting on their words and a next chip",
+      "teachingReason": "Packs the lesson into three reusable lines and hands off to the next video",
+      "narrationCue": "Next",
+      "motionPurpose": "Three lines write on and light in turn, then the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The three lines \"Dissolving: water pulls ions out and hydrates them.\", \"Temperature: compare separating (in) with hydrating (out).\" and \"Solid on the bottom: equilibrium; use K and Q.\" write on and light on their words; on \"Next\" the chip \"Next: solubility and food detoxification knowledge\" slides in",
+      "motionTools": [
+        "HandText write-on",
+        "line highlight",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the three lines"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes, the two memory aids and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes, the two aids and the condition tag appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c11-learning-review.md",
+      "sha256": "a34a02f1678e340295f58709669579b543b3ea2583c5d8eea882d08d5b051206"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c11-claude-science-check.md",
+      "sha256": "4d0d969cee96f035b37842099abb11f7c726396a01be0a771e8b9227f0798de5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

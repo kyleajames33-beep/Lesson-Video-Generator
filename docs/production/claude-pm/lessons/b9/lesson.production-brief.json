@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b9/lesson.json",
+    "lessonSha256": "def53bfe7b0ed7ec6af63992a6f273e505bc84e84b55977dcf3d601a9aabdaf3"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B8, B7, B5b, B2b, B1 and Year 10: tracing a parent's alleles into gametes, with letters as labels only (B8); genes code for polypeptides, many proteins are enzymes, genotype and phenotype (B7); homologous chromosomes separate in meiosis I so each gamete gets one of each pair (B5b); pea flowers and self-pollination (B2b); alleles as versions of a gene (B1); one in four and a half (Year 10 probability). Not assumed: dominant, recessive, homozygous, heterozygous, Punnett square, test cross, pedigree symbols, carrier, autosome.",
+    "startsWith": "Mendel's tall pea plants whose short offspring vanished and came back, with the question of how two tall plants can have a short offspring and how a family tree can show the same kind of thing in people.",
+    "stopsAfter": "Explaining why one allele can hide another; using dominant, recessive, homozygous and heterozygous; building a 2 x 2 Punnett square and reading 1 : 2 : 1 and 3 : 1; saying a ratio is a chance for each offspring and not a guaranteed count; using a test cross; reading pedigree symbols; identifying autosomal recessive and dominant patterns with numbered individuals; turning a pedigree into genotypes and a per-child probability. No sex linkage, no incomplete dominance, co-dominance or multiple alleles, no dihybrid crosses, no conditional probability.",
+    "nextLesson": "B10: sex linkage and alleles that are not simply dominant or recessive; then G02 for unfamiliar crosses and pedigrees."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b09.md"
+  ],
+  "teaching": {
+    "task": "Predict offspring with a Punnett square and decide from a pedigree whether an autosomal trait is dominant or recessive.",
+    "causalExplanation": "One working copy of a gene can make enough of a protein, so the tall allele shows with one copy and is dominant, while the short allele barely works and shows only with two copies. In meiosis the two chromosomes of each pair separate, so each gamete gets one allele of each gene and a heterozygous plant makes two kinds of gamete in equal numbers. A Punnett square lays out every equally likely fertilisation, so two heterozygotes give 1 : 2 : 1 genotypes and 3 : 1 phenotypes as a chance for each offspring, not a guaranteed count for every group of four. A test cross works because the short parent can only give the short allele, so one short offspring shows the tall parent carries it. In a pedigree, unaffected parents with an affected child must each carry a hidden recessive allele, and affected parents with an unaffected child must each carry a hidden recessive allele that the dominant allele covers, which shows the condition is dominant. Naming numbered individuals is the evidence.",
+    "conversationalApproach": "Opens on Mendel's vanishing and returning short plants, explains why one allele hides another with an enzyme, builds the gamete step and the square one box at a time, shows a ratio as a chance with replayed families, uses a test cross, teaches pedigree symbols, traces a recessive and a dominant family generation by generation, gives the hidden-in-the-parents memory aid, then asks two unseen items with a short pause and brief feedback.",
+    "openingDecision": "Mendel crossed tall and short pea plants and every offspring was tall, yet when those tall plants self-pollinated 277 of 1,064 were short. How can two tall plants have a short offspring, and how can a family tree tell us the same kind of thing about people?",
+    "understandingCheck": "In an unseen autosomal pedigree, say whether the condition is dominant or recessive using numbered individuals, give two genotypes and find the chance that the next child is unaffected. Then round seed by wrinkled seed gives 52 round and 48 wrinkled: find the round parent's genotype with a square and explain why the counts are not exactly 50 : 50.",
+    "curriculumScope": "Model the formation of new combinations of genotypes produced during meiosis, including interpreting examples of autosomal inheritance, and construct and interpret information and data from pedigrees and Punnett squares (Module 5, B5-IQ4-02, ACSBL085). Sex linkage, incomplete dominance, co-dominance, multiple alleles, dihybrid crosses and conditional probability are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted tall and short pea plants, round and wrinkled seed plates, the B5b plum and teal chromosome plates, and coded allele chips, gamete discs, a Punnett grid, a ratio strip, a family replay, a data-driven pedigree with standard symbols and an autosome strip. Allele chips are cream with an ink outline and a printed letter; the top parent is edged plum and the side parent teal. Amber is emphasis only. No people are drawn.",
+    "transitionPlan": "The painted plants open the lesson and carry the cross board from scene 2 to scene 6, with the grid shrinking to the corner for the chance scene; the board wipes to the pedigree board for scenes 7 to 10; each attempt card clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chips slide in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "The painted tall and short pea plants with four tall offspring copies, a coded field of 1,064 plant icons and a small pedigree sketch",
+      "teachingReason": "Poses how two tall plants can have a short offspring, using Mendel counts, and previews the family tree",
+      "narrationCue": "every one of their offspring grew tall / vanished / pollinate themselves / 1,064 plants / 277 were short / a family tree",
+      "motionPurpose": "Tall copies grow in a row, a ghost short plant fades in with a question mark, the field of icons fills to 1,064 and 277 drop short, then a small pedigree sketches in",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-pea-tall-v1.png` and `m5x-pea-short-v1.png` stand side by side on a soil strip, joined by a coded \"x\" (tag \"parents\"). On \"every one of their offspring grew tall\" four small copies of the tall plate grow up in a row below (tag \"all tall\"). On \"seemed to have vanished\" a ghost outline of the short plant fades beside them with a \"?\". On \"pollinate themselves\" a small coded loop arrow circles one tall offspring's flower. On \"1,064 plants\" a coded field of small plant icons fills a grid (tally ticker counting to 1,064, computed sum 787 + 277); on \"277 were short\" 277 of the icons drop to short height and a short-plant plate lifts out of the grid beside the ticker \"277 short\". On \"two tall plants have a short offspring\" the two tall parents and one short offspring pull to the centre with a bracket. On \"a family tree\" a small coded pedigree (three symbols, no people) sketches in at the lower right. The heading writes on: \"Predicting offspring\".",
+      "motionTools": [
+        "plate slide",
+        "ticker count",
+        "icon field fill",
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "hide-allele",
+      "visualDecision": "adjust",
+      "visualReference": "The B8 grey tag struck through, a coded gene to enzyme to hormone chain, a working and a weak enzyme, and allele chips on the stem outlines",
+      "teachingReason": "Explains why one allele can hide another through one working enzyme making enough hormone, before naming dominant and recessive",
+      "narrationCue": "genes code for proteins / makes a growth hormone / barely works / one of each / dominant / recessive",
+      "motionPurpose": "The old tag is struck and replaced by now, enzyme blobs release hormone dots into a stem that lengthens, and the dominant and recessive chips write on beside their plants",
+      "motionRole": "explain",
+      "onScreenChange": "the cross board's left side. B8's grey tag \"which version shows: next video\" slides in and is struck through, replaced by \"now\". On \"genes code for proteins\" a small gene card with an arrow to a coded enzyme blob (grey tag \"B7\"). On \"makes a growth hormone\" the enzyme blob turns small coded hormone dots out into a stem outline, which lengthens. On \"barely works\" a second enzyme blob with a slightly misshapen pocket makes one hormone dot (tag \"barely works\"). On \"one of each\" a stem outline with one working and one weak enzyme still fills with hormone dots and grows tall; `m5x-pea-tall-v1.png` stands beside it. On \"dominant\" a chip \"T\" (capital, large serif) writes \"dominant: shows with one copy\". On \"recessive\" a chip \"t\" writes \"recessive: shows only with two copies\", and `m5x-pea-short-v1.png` stands beside a \"t t\" card. A grey tag: \"genotype: the alleles; phenotype: what you see (B7)\".",
+      "motionTools": [
+        "tag strike",
+        "enzyme blob",
+        "dot flow",
+        "plate slide",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "gametes",
+      "visualDecision": "adjust",
+      "visualReference": "Three allele cards under tall and short plates, the B5b plum and teal chromosome plates, gamete discs and four offspring cards",
+      "teachingReason": "Names homozygous and heterozygous, shows each gamete gets one allele, and explains why the first cross gave all tall",
+      "narrationCue": "homozygous / heterozygous / separate / half carry / Mendel's first cross / every one carries the short allele",
+      "motionPurpose": "The three cards line up with their tags, the chromosomes slide apart into two gamete discs, four offspring cards drop in and each hidden short allele is ringed",
+      "motionRole": "explain",
+      "onScreenChange": "on \"homozygous\" three allele cards line up under three plates: \"TT\" (tall, tag \"homozygous\"), \"Tt\" (tall, tag \"heterozygous\" on its cue), \"tt\" (short, tag \"homozygous\"). Then the \"Tt\" card opens into B5b's plum and teal single chromosome plates, a \"T\" chip on the plum and a \"t\" chip on the teal (grey tag \"B5b\"). On \"separate\" the two chromosomes slide apart into two gamete discs (no stage drawing), each keeping one chip: \"T\" (plum edge) and \"t\" (teal edge). On \"half carry\" each disc gets \"1/2\" (computed). On \"Mendel's first cross\" the board shows \"TT x tt\": the TT parent sends only \"T\" discs, the tt parent only \"t\" discs; on \"all get one of each\" four offspring cards \"Tt\" drop in under four small tall plates; on \"every one carries the short allele\" each card's \"t\" chip gets a small amber ring (tag \"hidden, not lost\").",
+      "motionTools": [
+        "card line-up",
+        "chromosome slide",
+        "chip fly",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "punnett",
+      "visualDecision": "new",
+      "visualReference": "The coded Punnett grid for Tt x Tt filling box by box with a ratio strip and the hook ticker returning",
+      "teachingReason": "Builds the square as every equally likely fertilisation and reads the genotype and phenotype ratios",
+      "narrationCue": "across the top / down the side / Each box / Fill them in / 1 to 2 to 1 / Three of the four boxes / 787 to 277",
+      "motionPurpose": "Gamete discs slide along the top and side, one chip flies into each box in turn, the ratio rows compute and the ticker returns beside them",
+      "motionRole": "explain",
+      "onScreenChange": "`PunnettGrid` draws on the right: \"Tt x Tt\" above it. On \"across the top\" the plum-edged discs \"T\" and \"t\" slide along the top; on \"down the side\" the teal-edged discs slide down the side. On \"Each box\" one box pulses with two thin lines from its row and column disc (tag \"one fertilisation, chance 1/4\"). On \"Fill them in\" the boxes fill one per cue, each chip flying in from its disc: \"TT\", \"Tt\", \"Tt\", \"tt\". On \"1 to 2 to 1\" `RatioStrip` row 1 writes \"genotypes: 1 TT : 2 Tt : 1 tt\" (computed). On \"Three of the four boxes\" small tall plates pop into three boxes and a short plate into one; row 2 writes \"phenotypes: 3 tall : 1 short\" (computed by merging). On \"787 to 277\" the hook's ticker returns beside the strip: \"787 : 277 = 2.84 : 1\" (computed) with a tag \"close to 3 : 1\".",
+      "motionTools": [
+        "PunnettGrid",
+        "chip fly",
+        "ratio strip",
+        "ticker count"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "chance-per-offspring",
+      "visualDecision": "new",
+      "visualReference": "The grid shrunk to the corner, rows of four seeds from a seeded draw, a rolling die and a bar chart of short plants per four seeds",
+      "teachingReason": "Shows that a ratio is a chance for each offspring, not a count for every group, and that larger samples settle",
+      "narrationCue": "not a promise / whatever happened to the seed before it / about 42 per cent / hundreds of seeds",
+      "motionPurpose": "Rows of four seeds draw one at a time with different counts, a die rolls above each seed, the bar chart highlights exactly one at 42 per cent and a ticker settles near 26 per cent",
+      "motionRole": "explain",
+      "onScreenChange": "the grid shrinks to the corner with a tag \"1/4 short, for each seed\". `FamilyReplay`: rows of four seed plates (`m5x-pea-yellow-round-v1.png` used as a neutral seed token, with a small plant icon that grows tall or short above each) draw one row at a time, outcomes from a seeded random with p = 1/4: row 1 \"0 short\", row 2 \"2 short\", row 3 \"1 short\", row 4 \"1 short\", row 5 \"0 short\". On \"whatever happened to the seed before it\" a small coded die rolls fresh above each seed in turn (tag \"each seed: a new chance\"). On \"about 42 per cent\" a bar chart writes on: number of short plants in a group of four (0 to 4) with the \"exactly 1\" bar highlighted at 42% (computed: 27/64 = 42.2%; other bars 31.6%, 21.1%, 4.7%, 0.4%, labels on bars \"0\", \"1\", \"2\", \"3\", \"4\" only, percentages small). On \"hundreds of seeds\" a ticker runs the hook's 1,064 plants and the short share settles at 26% beside a dashed \"25%\" line (computed 277/1,064 = 26.0%).",
+      "motionTools": [
+        "family replay",
+        "die roll",
+        "bar chart",
+        "ticker count"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "test-cross",
+      "visualDecision": "new",
+      "visualReference": "Two tall plates with unknown genotype cards, a short plate and two small grids for the two possible tall parents",
+      "teachingReason": "Shows why a test cross works because the tester can only give the short allele",
+      "narrationCue": "homozygous or heterozygous / short plant / test cross / even one offspring is short / probably homozygous / more offspring",
+      "motionPurpose": "The short plate slides in, both small grids fill, one short offspring removes the question mark from the heterozygous card, and a counter and certainty bar rise for the all-tall grid",
+      "motionRole": "explain",
+      "onScreenChange": "two tall plates side by side with cards \"TT?\" and \"Tt?\" and a tag \"same phenotype\". A short plate with \"tt\" slides in below (tag \"can only give t\"). The grid splits into two small grids: left \"TT x tt\" fills with four \"Tt\" boxes (computed, tag \"all tall\"), right \"Tt x tt\" fills \"Tt, Tt, tt, tt\" (computed, tag \"1 tall : 1 short\"). On \"test cross\" the label writes over both. On \"even one offspring is short\" a single short plant icon appears under the right grid and the \"Tt?\" card loses its \"?\" with an amber tick. On \"probably homozygous\" the left grid's tag reads \"all tall: likely TT, not proven\"; on \"more offspring\" a counter of tall offspring under it rises 4, 10, 40 while a small certainty bar fills (no number).",
+      "motionTools": [
+        "PunnettGrid",
+        "plate slide",
+        "tick pop",
+        "counter bar"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "read-pedigree",
+      "visualDecision": "new",
+      "visualReference": "A coded pedigree legend and symbols with Roman numerals, individual numbers and an autosome strip",
+      "teachingReason": "Teaches the pedigree symbols and numbering so individuals can be named, and says what autosomes are",
+      "narrationCue": "pedigrees / Squares are males / shaded symbol / A line joins two parents / Roman numeral / each person a number / autosomes",
+      "motionPurpose": "The board wipes to the pedigree board, the legend and a couple with a sibship bar draw in, numerals and numbers write on, and the autosome pairs highlight",
+      "motionRole": "explain",
+      "onScreenChange": "the board wipes to the pedigree board. A legend writes on at the right, one entry per cue: an open square \"male\", an open circle \"female\", a filled square and circle \"has the trait\". On \"A line joins two parents\" a square and circle connect with a horizontal couple line; on \"a line down\" a vertical line drops to a sibship bar with three symbols. On \"Roman numeral\" \"I\", \"II\" write on at the left; on \"each person a number\" \"1, 2\" under generation I and \"1, 2, 3\" under generation II. A grey tag: \"carriers are often not marked\". On \"autosomes\" a small coded karyotype strip (22 numbered bar pairs plus an X and Y pair greyed) highlights the numbered pairs (tag \"autosomes: not X or Y\"). No people, faces or bodies.",
+      "motionTools": [
+        "Pedigree",
+        "DrawPath",
+        "HandText write-on",
+        "strip highlight"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "recessive-pedigree",
+      "visualDecision": "new",
+      "visualReference": "Pedigree P1 building generation by generation with travelling allele chips, genotype chips and amber rings",
+      "teachingReason": "Shows how unaffected parents can have an affected child because each carries a hidden recessive allele",
+      "narrationCue": "two unaffected children / got one recessive allele from him / In generation three / That's the giveaway / carriers / skip a generation",
+      "motionPurpose": "Each generation drops in, a recessive chip travels down the lines, amber rings and a bracket mark the giveaway, genotype chips pin and a skip arrow runs across",
+      "motionRole": "explain",
+      "onScreenChange": "`Pedigree` (data in Numbers, pedigree P1) builds generation by generation. Generation I: I-1 filled square, I-2 open circle. On \"two unaffected children\" II-2 (open square) and II-3 (open circle) drop in below. On \"got one recessive allele from him\" a small \"a\" chip travels down the line from I-1 to each child (genotype chips \"Aa\" pinned under II-2 and II-3). On \"In generation three\" II-4 (open square, married in) joins II-3 with a couple line, and III-1 (filled circle) and III-2 (open square) drop in. On \"That's the giveaway\" II-3, II-4 and III-1 get amber rings and a bracket \"unaffected parents, affected child\". On \"each parent must carry\" \"Aa\" chips pin under II-3 and II-4 and \"aa\" under III-1. On \"carriers\" a tag \"carrier: has one hidden recessive allele\" writes on. On \"skip a generation\" a soft amber arrow runs from I-1 past generation II to III-1 (tag \"skips a generation\"). A small assumption tag sits at the lower right throughout scenes 8 to 10: \"assume: one gene; the trait always shows when its allele pattern is present; no new mutation\".",
+      "motionTools": [
+        "Pedigree",
+        "chip travel",
+        "scribbleEllipse",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "dominant-pedigree",
+      "visualDecision": "new",
+      "visualReference": "Pedigree P2 with generation ticks and lines to affected parents, a half-chance grid, an inset trio and a crossed chip",
+      "teachingReason": "Teaches the dominant pedigree clues, the decisive affected parents with an unaffected child, and that dominant does not mean common",
+      "narrationCue": "every generation / every affected child has an affected parent / a half chance / two affected parents with an unaffected child / dominant doesn't mean common",
+      "motionPurpose": "Amber ticks and lines mark the clues, a small grid fills for the half chance, an inset trio shows the decisive pattern and a dominant equals common chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "the board slides to pedigree P2 (data in Numbers). I-1 filled square x I-2 open circle; generation II: II-1 filled circle, II-2 open square, II-3 filled square; II-1 x II-4 (open square, married in): III-1 filled square, III-2 open circle. On \"every generation\" each generation's filled symbols get a soft amber tick down the left margin, with a grey tag \"clues, not proof\". On \"every affected child has an affected parent\" thin amber lines run from II-1 and II-3 up to I-1, and from III-1 up to II-1. On \"a half chance\" a small grid \"Aa x aa\" fills beside I-1 and I-2 (\"Aa, Aa, aa, aa\", computed, tag \"1/2 affected, for each child\"). On \"two affected parents with an unaffected child\" a separate inset trio draws (two filled symbols with an open circle child, labelled \"inset\"), with chips \"Aa\", \"Aa\" above and \"aa\" below; a bracket \"affected parents, unaffected child\". On \"dominant doesn't mean common\" a chip \"dominant = common\" writes on and takes a grey scribble cross, with a tag \"Huntington's: dominant and rare\".",
+      "motionTools": [
+        "Pedigree",
+        "PunnettGrid",
+        "scribbleEllipse",
+        "strike"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "giveaways",
+      "visualDecision": "new",
+      "visualReference": "Two large handwritten rules with trio icons, pedigree P1 returning small with named individuals ringed and a three-part model answer",
+      "teachingReason": "Gives the memory aid and models naming numbered individuals in an answer",
+      "narrationCue": "Hidden in the parents / Hidden in the child / name the people / genotypes / Punnett square",
+      "motionPurpose": "The two rules write on, the pedigree returns small and each named person rings in turn, then the model answer writes in three short parts with a mini grid",
+      "motionRole": "explain",
+      "onScreenChange": "two big handwritten lines write on, each with a tiny trio icon beside it: \"Hidden in the parents: recessive\" (two open symbols, filled child) and \"Hidden in the child: dominant\" (two filled symbols, open child). On \"name the people\" pedigree P1 returns small, and as each person is named, \"II-3\", \"II-4\" and \"III-1\" ring in amber under their symbols. A model answer line writes on in three short parts, one per cue: \"II-3 and II-4 unaffected; their daughter III-1 affected: recessive\", \"II-3 Aa, II-4 Aa, III-1 aa\", and a mini grid \"Aa x Aa\" (computed) with \"next child: 1/4 affected\".",
+      "motionTools": [
+        "HandText write-on",
+        "Pedigree",
+        "scribbleEllipse",
+        "PunnettGrid"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "A cleared card with an unseen pedigree P3, a legend, three demands and answer boxes",
+      "teachingReason": "Unseen transfer on dominant against recessive with evidence, genotypes and a per-child chance, with nothing answer-bearing",
+      "narrationCue": "Two harder questions / numbered individuals / probability that their next child is unaffected / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no earlier pedigrees, tags or trio icons. The card writes on, headed \"A condition caused by a gene on an autosome\". Centre: pedigree P3 (data in Numbers) with Roman numerals and individual numbers, and a legend (open = unaffected, filled = affected). Demands: \"(a) Dominant or recessive? Justify using numbered individuals.\" \"(b) Give the genotypes of I-1 and I-2.\" \"(c) Probability that their next child is unaffected?\" Three answer boxes and an assumption line: \"assume: one gene; no new mutation\". Nothing answer-bearing: no genotype chips, no rings, no grid. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card shrunk to a strip, with amber rings, genotype chips, a mini grid and a crossed chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects the dominant-because-common slip",
+      "narrationCue": "It's dominant / both affected / both are heterozygous / one in four / most of the family has it",
+      "motionPurpose": "The pedigree rings the evidence, genotype chips pin, a mini grid fills with the unaffected box ringed and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (pedigree and demands stay readable). (1) On \"both affected\" I-1 and I-2 ring amber; on \"unaffected\" II-1 rings amber; the line \"(a) Dominant: I-1 and I-2 affected, their daughter II-1 unaffected (hidden in the child)\" writes on. (2) On \"both are heterozygous\" chips \"Aa\" pin under I-1 and I-2 and \"aa\" under II-1; the line \"(b) I-1 Aa, I-2 Aa\" writes on. (3) On \"one in four\" a mini grid \"Aa x Aa\" fills (computed) with the \"aa\" box ringed; \"(c) 1/4 (25%)\" writes on. (4) On \"most of the family has it\" the chip \"dominant, because most have it\" writes on and takes a grey scribble cross, with the tag \"cite individuals; dominant does not mean common\".",
+      "motionTools": [
+        "scribbleEllipse",
+        "chip pin",
+        "PunnettGrid",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "A cleared card with the round and wrinkled seed plates, the seed counts, two demands and an empty grid outline",
+      "teachingReason": "Unseen transfer on inferring a parent genotype from data and explaining sampling variation, with nothing answer-bearing",
+      "narrationCue": "Second / 52 round seeds and 48 wrinkled seeds / Use a Punnett square / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card shows `m5x-pea-yellow-round-v1.png` labelled \"round parent (seed)\" and `m5x-pea-yellow-wrinkled-v1.png` labelled \"wrinkled parent (seed)\" joined by \"x\", with the line \"round (R) is dominant to wrinkled (r)\". Below: a results box with a round seed plate \"52\" and a wrinkled seed plate \"48\". Demands: \"(a) Use a Punnett square to find the genotype of the round parent.\" \"(b) Explain why the counts are not exactly 50 : 50.\" Two answer boxes and an empty 2 x 2 grid outline (no letters). Nothing answer-bearing: no genotypes, no gametes, no ratio. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card shrunk to a strip, with parent genotypes, a filled grid, a seeded replay tally and a crossed chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects the homozygous round parent slip",
+      "narrationCue": "only give the wrinkled allele / heterozygous / a separate chance / the round parent is homozygous",
+      "motionPurpose": "Genotypes write beside the parents, the grid fills, a tally flickers through three replays and the homozygous chip is crossed with its all-round grid",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. (1) On \"can only give the wrinkled allele\" the wrinkled parent gets \"rr\" and its gamete discs \"r\", \"r\". (2) On \"heterozygous\" the round parent gets \"Rr\" with discs \"R\", \"r\"; the grid fills \"Rr, Rr, rr, rr\" (computed); the line \"(a) Rr x rr: 1 round : 1 wrinkled, so the round parent is Rr\" writes on. (3) On \"a separate chance\" a small tally flickers through three replays of 100 seeds (seeded: 52:48, 47:53, 50:50) beside the line \"(b) each seed is an independent chance; a sample of 100 varies around 1 : 1\" writing on. (4) On \"the round parent is homozygous\" the chip \"round parent RR\" writes on with a mini grid \"RR x rr\" filling four \"Rr\" boxes (computed, tag \"all round\"), and the chip takes a grey scribble cross.",
+      "motionTools": [
+        "PunnettGrid",
+        "family replay",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Four step chips with icons, a pedigree row and two next chips with the white-eyed fly and pink snapdragon plates",
+      "teachingReason": "Packs the method into reusable steps and hands off to sex linkage and other dominance patterns",
+      "narrationCue": "genotypes / split each into its gametes / fill the square / giveaway / Next",
+      "motionPurpose": "The step chips write on one per cue, the pedigree row follows and two next chips slide in with small plates",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on, one per cue, each with a tiny icon: \"1 genotypes\" (allele cards), \"2 gametes\" (discs), \"3 square\" (grid), \"4 ratios = chances per offspring\" (die). A second row: \"pedigree: giveaway, then named people, then square\" (trio icon). Two \"Next\" chips slide in at the lower right: \"Next: sex linkage\" (a small `m5x-fly-white-eye-v1.png`) and \"and beyond dominant and recessive\" (a small `m5x-snapdragon-pink-v1.png`).",
+      "motionTools": [
+        "HandText write-on",
+        "line highlight",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b9-learning-review.md",
+      "sha256": "8754e01a96c7b40cf4a6afbf70f96c46cf58b476d3d87a49f2e41ab8d037c962"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b9-claude-science-check.md",
+      "sha256": "771f24488b1c67a9c139faaf5abf2b8fd605c0edf53ac76e81ed3d2a68279fd6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

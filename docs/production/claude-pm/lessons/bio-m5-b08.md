@@ -1,6 +1,6 @@
 # B8: Same two parents, different offspring: where does genetic variation come from? (design)
 
-Status: Revision 2: learning review and Claude science check resolved; ready to voice (pending owner go-ahead). Revision 2 dated 17 Oct. Revision 1 (17 Oct) was the first design from the pre-design pack. Reviews: `checks/b8-learning-review.md`, `checks/b8-claude-science-check.md`. Nothing recorded; human listening pending.
+Status: Revision 2: learning review and Claude science check resolved; ready to voice (owner go-ahead 17 Oct). Revision 2 dated 17 Oct. Revision 1 (17 Oct) was the first design from the pre-design pack. Reviews: `checks/b8-learning-review.md`, `checks/b8-claude-science-check.md`. Nothing recorded; human listening pending.
 
 ## Decisions
 

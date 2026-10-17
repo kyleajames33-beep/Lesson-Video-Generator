@@ -1,0 +1,184 @@
+{
+  "title": "Ksp expressions and molar solubility: how much does an \"insoluble\" salt really dissolve?",
+  "subtitle": "A salt that barely dissolves still dissolves a little. How do you calculate how much from its Ksp, and how do you get Ksp from a measured solubility?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 18,
+  "lessonIntent": "Write the dissolving equation and the Ksp expression with powers and no denominator, define molar solubility, calculate it from Ksp for a 1 : 1 and a 1 : 2 salt with each ion as its count times s, calculate Ksp from a measured solubility with the measured value in the equilibrium row first, explain why Ksp values rank solubility only for the same formula type, and apply the method to an unseen lead iodide and an unseen silver carbonate item.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the precipitation video, barium sulfate was the safe one: it barely dissolves, so a barium meal passes through the gut. But barely isn't \"not at all\". Some barium sulfate does dissolve. So how much, exactly? You'll calculate it from one number in a data table, and you'll see why a bigger number in that table doesn't always mean a more soluble salt."
+      }
+    },
+    {
+      "id": "saturated",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Put excess barium sulfate in water and stir. A tiny amount dissolves, and the rest sits on the bottom. That's a saturated solution: it holds as much as it can at that temperature. As you saw in the dissolving video, ions keep leaving the solid and rejoining it at equal rates. So a saturated solution is an equilibrium, with an equation: solid barium sulfate in equilibrium with barium ions and sulfate ions."
+      }
+    },
+    {
+      "id": "ksp-expression",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Every equilibrium has a K. Products go on top. The reactant is a solid, and solids are left out, so there's no bottom at all. K is just the barium ion concentration times the sulfate ion concentration. It's a product of ion concentrations, so it's called the solubility product, K s p. Like every K, it changes only with temperature, and we write it without a unit. At 25 degrees, the data table gives barium sulfate a Ksp of 1.08 times ten to the minus ten."
+      }
+    },
+    {
+      "id": "powers",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If the formula has a subscript, the equation gets a coefficient. Calcium fluoride, C a F two, dissolves into one calcium ion and two fluoride ions. As in any K, the coefficient becomes a power: Ksp is calcium, times fluoride squared."
+      }
+    },
+    {
+      "id": "molar-solubility",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ksp isn't the solubility itself. The molar solubility, s, is the number of moles of solid that dissolve per litre, to make a saturated solution. To link the two, ask what one formula unit gives. Each barium sulfate that dissolves gives one barium ion and one sulfate ion. So if s moles per litre dissolve, both ion concentrations are s."
+      }
+    },
+    {
+      "id": "baso4-ice",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's put it in an I C E table: I for initial, C for change, and E for equilibrium. In pure water, both ions start at zero. s dissolves, so the change is plus s for each ion, and the equilibrium row is s and s. The solid gets no column in Ksp."
+      }
+    },
+    {
+      "id": "baso4-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Substitute: Ksp is s times s, which is s squared, and that equals 1.08 times ten to the minus ten. Take the square root of both sides: s is 1.04 times ten to the minus five moles per litre. Check: 1.04 times ten to the minus five, squared, gives 1.08 times ten to the minus ten. Multiply by the molar mass, 233 grams per mole, and that's about 2.4 milligrams in a whole litre. That's what barely means."
+      }
+    },
+    {
+      "id": "caf2-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now calcium fluoride, with a Ksp of 3.45 times ten to the minus eleven. Each formula unit gives one calcium ion and two fluoride ions. So if s dissolves, calcium rises by s, but fluoride rises by two s. The equilibrium row is s and two s. Substitute: Ksp is s, times two s, all squared. Two s all squared is two s times two s, which is four s squared, not two s squared. So Ksp is four s cubed."
+      }
+    },
+    {
+      "id": "caf2-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Four s cubed equals 3.45 times ten to the minus eleven. Divide both sides by four: s cubed is 8.63 times ten to the minus twelve. Then take the cube root: s is 2.05 times ten to the minus four moles per litre. The fluoride concentration is two s: 4.10 times ten to the minus four."
+      }
+    },
+    {
+      "id": "trap-2s",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is writing s for fluoride, instead of two s. Then Ksp looks like s cubed, and s comes out as 3.26 times ten to the minus four: about 1.6 times too big. The two comes from the formula, so it goes inside the bracket, before you square."
+      }
+    },
+    {
+      "id": "compare-ksp",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now compare the two salts. Barium sulfate has the bigger Ksp, but calcium fluoride's molar solubility is about twenty times bigger. How? Barium sulfate's Ksp is s squared, and calcium fluoride's is four s cubed. Different formulas give different powers, so their Ksp values aren't on the same scale. Compare Ksp values directly only for the same formula type, like barium sulfate against silver chloride. Otherwise, calculate s for each."
+      }
+    },
+    {
+      "id": "reverse-erow",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It also works backwards. A saturated magnesium hydroxide solution is found to contain 1.12 times ten to the minus four moles per litre of dissolved magnesium hydroxide. This time we have a measured value, so it goes into the equilibrium row first: magnesium ions, 1.12 times ten to the minus four. The change is equilibrium minus initial, the same amount."
+      }
+    },
+    {
+      "id": "reverse-ksp",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each formula unit gives two hydroxide ions, so hydroxide rises by twice that: 2.24 times ten to the minus four. Ksp is magnesium times hydroxide squared: 5.62 times ten to the minus twelve. Forget to double the hydroxide, and your Ksp comes out four times too small."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's the habit. Each ion is its count times s. Then raise it to that count. One to one gives s squared. One to two, either way round, gives four s cubed."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Lead iodide has a Ksp of 9.8 times ten to the minus nine at 25 degrees. Calculate its molar solubility in water. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each lead iodide gives one lead ion and two iodide ions, so Ksp is s times two s squared: four s cubed. Divide both sides by four, take the cube root, and s is 1.35 times ten to the minus three moles per litre. If you got 2.14 times ten to the minus three, you used s instead of two s for iodide."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A saturated solution of silver carbonate, A g two C O three, contains 0.0354 grams per litre. Its molar mass is 275.8 grams per mole. Calculate Ksp. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, convert to moles: 0.0354 divided by 275.8 is 1.28 times ten to the minus four moles per litre. That measured value goes in the equilibrium row: carbonate is s, and silver is two s. Ksp is two s squared, times s: 8.46 times ten to the minus twelve. Keep the unrounded s in your calculator. If you put 0.0354 straight in as s, you skipped the conversion to moles."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, for any Ksp question: write the dissolving equation, and each ion as its count times s. Given Ksp, solve for s with a square or cube root. Given a measured solubility, put it in the equilibrium row first, then multiply out. And compare Ksp directly only for the same formula type. Next: two solutions are mixed. Will a precipitate actually form?"
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

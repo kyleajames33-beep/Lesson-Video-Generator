@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C15-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c15/lesson.json",
+  "lessonSha256": "64f75ffd6a4806b99a83a6c31d68a2e094d2f08ab00913100c58ab1267085829",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c15/lesson.production-brief.json",
+    "sha256": "f7dcb21a8983ddf63b32c7f7e4d0ed8140156fb7635e0abe700b0d538c3cf6ef"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This is a kidney stone. Most are mainly calcium oxalate, which the solubility rules call insoluble. And urine always contains some calcium ions and some oxalate ions. Yet most of the time, no stone forms. So \"insoluble\" can't be the whole story. A solid only forms when there are enough ions. How many is enough?",
+      "hash": "9fe750965b4f",
+      "textSha256": "9fe750965b4fe5fdf4a13322bc5f8aaafb9d0e34f0b92c435817554538675349",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/hook.9fe750965b4f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/hook.9fe750965b4f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/hook.9fe750965b4f.generation.json",
+      "plannedRequestSha256": "bdff454e055b30b3749d0a7655239999cdec0d4bf8246670313252ac8c02e9c0"
+    },
+    {
+      "id": "qsp-idea",
+      "parentSceneId": "qsp-idea",
+      "text": "Ksp describes a saturated solution, at equilibrium. For the mixture in front of you right now, use the same expression with the concentrations you have at this moment. That's the ion product, Q s p. Just as Q is compared with K, it tells you which way things have to go. It uses the same powers too: for lead iodide, Qsp is lead times iodide squared.",
+      "hash": "fce37b4ca5b4",
+      "textSha256": "fce37b4ca5b4dcb519d5b0dabc6e5d08527fb550f182e88993aafbea1a139a5e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-idea.fce37b4ca5b4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-idea.fce37b4ca5b4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-idea.fce37b4ca5b4.generation.json",
+      "plannedRequestSha256": "99ab5582e027aa8d258e5781ebb22dc3b18cef70f14fa349f9121d0ed8d27f0d"
+    },
+    {
+      "id": "qsp-decision",
+      "parentSceneId": "qsp-decision",
+      "text": "If Qsp is bigger than Ksp, there are more ions than a saturated solution can hold. Ions lock together, and a precipitate forms, until Qsp falls back to Ksp. If Qsp equals Ksp, the solution is just saturated. If Qsp is smaller, nothing precipitates: the solution could even dissolve more.",
+      "hash": "23dfae1b3c02",
+      "textSha256": "23dfae1b3c02d1456c65c22c33ff7950a84baf8b7a8ba26c86c176b28f34f228",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-decision.23dfae1b3c02.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-decision.23dfae1b3c02.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-decision.23dfae1b3c02.generation.json",
+      "plannedRequestSha256": "33734a353d8b4ca13fd678dbc0945d8d139a7649924fdba3917c4a5eb4cb30b2"
+    },
+    {
+      "id": "mixing-dilutes",
+      "parentSceneId": "mixing-dilutes",
+      "text": "Here's the step most people miss. When two solutions are mixed, each ion spreads into the combined volume. Mix 50 millilitres with 50 millilitres, and every ion now has 100 millilitres to move in, so each concentration halves. Work out the concentrations after mixing first, then Qsp.",
+      "hash": "b0e4a9e019c6",
+      "textSha256": "b0e4a9e019c661dde0a076f15fa7f4804140ea19c8006711f519bd99b52e01cb",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/mixing-dilutes.b0e4a9e019c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/mixing-dilutes.b0e4a9e019c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/mixing-dilutes.b0e4a9e019c6.generation.json",
+      "plannedRequestSha256": "a639ef303e0b37e879c4fa4c762e5d9496bf2241432f147f6f90394664371bf3"
+    },
+    {
+      "id": "caso4-setup",
+      "parentSceneId": "caso4-setup",
+      "text": "Try it. Equal volumes of 0.010 moles per litre calcium chloride and 0.010 moles per litre sodium sulfate are mixed. The solid that could form is calcium sulfate: the rules call it slightly soluble, and its Ksp is 4.93 times ten to the minus five. After mixing, the volume doubles, so calcium and sulfate are each 0.0050 moles per litre.",
+      "hash": "550d0537f49e",
+      "textSha256": "550d0537f49ed03822cf9498121705969181a2a62966c1ee7b2811412743e71d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-setup.550d0537f49e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-setup.550d0537f49e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-setup.550d0537f49e.generation.json",
+      "plannedRequestSha256": "d19e66373e5643876fe508d5441e5d4c695a6e727be664ca48c3ba1dcb308f63"
+    },
+    {
+      "id": "caso4-compare",
+      "parentSceneId": "caso4-compare",
+      "text": "Qsp is calcium times sulfate: 0.0050 times 0.0050, which is 2.5 times ten to the minus five. That's less than Ksp, so no precipitate forms. Now the trap. Without diluting, you'd get 0.010 times 0.010, 1.0 times ten to the minus four: four times too big, and bigger than Ksp, so you'd wrongly predict a solid.",
+      "hash": "2b9815f6c438",
+      "textSha256": "2b9815f6c438ba09de9312cf1b451eecee27f87cab7e72d4acd36d223bdeba25",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-compare.2b9815f6c438.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-compare.2b9815f6c438.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-compare.2b9815f6c438.generation.json",
+      "plannedRequestSha256": "f4ce5518ba717e25d3be3db3c908be050230118a0a1ca059277a22e88a56b9eb"
+    },
+    {
+      "id": "pbso4-moles",
+      "parentSceneId": "pbso4-moles",
+      "text": "When the volumes aren't equal, work through moles. 25.0 millilitres of 4.0 times ten to the minus three moles per litre lead nitrate is mixed with 75.0 millilitres of 2.0 times ten to the minus four moles per litre sodium sulfate. Moles of lead ions are concentration times volume: 1.0 times ten to the minus four. Divide by the total volume, 0.100 litres: lead is 1.0 times ten to the minus three moles per litre. Sulfate: 1.5 times ten to the minus five moles, over 0.100 litres, is 1.5 times ten to the minus four.",
+      "hash": "fd97d78913cf",
+      "textSha256": "fd97d78913cfed114a36e77ea41876a1069e9ba28005c6ae5f8de7688349c045",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-moles.fd97d78913cf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-moles.fd97d78913cf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-moles.fd97d78913cf.generation.json",
+      "plannedRequestSha256": "091cbde330f04c1a18bb6a1932ce59ddf310ab3829228918405d236f8fef6d71"
+    },
+    {
+      "id": "pbso4-compare",
+      "parentSceneId": "pbso4-compare",
+      "text": "Qsp for lead sulfate is 1.0 times ten to the minus three, times 1.5 times ten to the minus four: 1.5 times ten to the minus seven. The data table gives Ksp as 2.53 times ten to the minus eight. Qsp is bigger, about six times, so a white precipitate of lead sulfate forms.",
+      "hash": "c2dd30bc8fe9",
+      "textSha256": "c2dd30bc8fe92b8edac317b9fed75f62e4a2cc0c849be7fa24a40a3f4c8a7e94",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-compare.c2dd30bc8fe9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-compare.c2dd30bc8fe9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-compare.c2dd30bc8fe9.generation.json",
+      "plannedRequestSha256": "7749c2974c708e8b80d14e3c65ed64ff3d40a752411d12bada61f2846a4bc59d"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's the order. Dilute first. Then Qsp. Over Ksp, it falls out.",
+      "hash": "882d27ac8775",
+      "textSha256": "882d27ac877510d1d3924d0dc2236c350ea7581e0c6474ba31f386b67cdfcf6a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/memory-aid.882d27ac8775.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/memory-aid.882d27ac8775.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/memory-aid.882d27ac8775.generation.json",
+      "plannedRequestSha256": "aed4f7a1a6ef61cf368bdf7d433e95c1d1a31e4c2d2d1766ebdd35246d865568"
+    },
+    {
+      "id": "common-ion",
+      "parentSceneId": "common-ion",
+      "text": "One more case. Here's a saturated silver chloride solution, with solid on the bottom. Now add some sodium chloride. Chloride is already part of this equilibrium, so it's a common ion. The chloride concentration jumps, so Qsp is suddenly bigger than Ksp. Silver ions and chloride ions lock onto the solid until Qsp is back down to Ksp: the equilibrium shifts left, as Le Chatelier's principle predicts. So less silver chloride stays dissolved. But Ksp itself hasn't changed: only temperature changes it.",
+      "hash": "97055e6c33cc",
+      "textSha256": "97055e6c33cc526de68d39faafc996225f9335758bb2134d5d2ae8e4101ad4e0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion.97055e6c33cc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion.97055e6c33cc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion.97055e6c33cc.generation.json",
+      "plannedRequestSha256": "87650c5b06cf836447f9beb7aaef250c52a5093a3695c5b2a26bea34c1f791da"
+    },
+    {
+      "id": "common-ion-ice",
+      "parentSceneId": "common-ion-ice",
+      "text": "How much less? Find silver chloride's solubility in 0.10 moles per litre sodium chloride, with Ksp 1.77 times ten to the minus ten. In the I C E table, silver starts at zero, but chloride starts at 0.10. s dissolves, so the equilibrium row is s, and 0.10 plus s. s is tiny next to 0.10, so 0.10 plus s is about 0.10. Keeping the s gives a quadratic. You can use it if you like, but HSC questions are written so you shouldn't need it.",
+      "hash": "77f39539a389",
+      "textSha256": "77f39539a389494273f55304e4ae28ee7a021452e57cf8e003baf2afc452df02",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-ice.77f39539a389.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-ice.77f39539a389.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-ice.77f39539a389.generation.json",
+      "plannedRequestSha256": "fc3fe80ca02bbeef6778c4e3c5fe2dceb3dd5bcba19b888bf9142d1345fad851"
+    },
+    {
+      "id": "common-ion-solve",
+      "parentSceneId": "common-ion-solve",
+      "text": "Ksp is s times 0.10. Divide both sides by 0.10: s is 1.77 times ten to the minus nine. That's far under 5 per cent of 0.10, so dropping it was safe. In pure water, s would be the square root of Ksp, 1.33 times ten to the minus five, so it's now about seven and a half thousand times less.",
+      "hash": "de40e883e4df",
+      "textSha256": "de40e883e4dfba86bfcd497ec9d4e1f3d93cbfc03b11deadad6252363d3c802e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-solve.de40e883e4df.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-solve.de40e883e4df.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-solve.de40e883e4df.generation.json",
+      "plannedRequestSha256": "368dac28cae5bce99e8ec98e4b57b08c6dcae3a8c95789d058b4a174b6e09903"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. 20.0 millilitres of 1.0 times ten to the minus three moles per litre lead nitrate is mixed with 30.0 millilitres of 2.0 times ten to the minus three moles per litre potassium iodide. The Ksp of lead iodide is 9.8 times ten to the minus nine. Will a precipitate form? Pause here to answer.",
+      "hash": "4bc086cbe136",
+      "textSha256": "4bc086cbe1361b8c5a210e782c73e30d0352f26f13d785b8724c82ada0831c7f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-1.4bc086cbe136.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-1.4bc086cbe136.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-1.4bc086cbe136.generation.json",
+      "plannedRequestSha256": "40198433298710ad381db4d023cc017a2b54811643625588974a5e185914f482"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Lead is 2.0 times ten to the minus five moles, over the total 0.0500 litres: 4.0 times ten to the minus four. Iodide is 1.2 times ten to the minus three. Qsp is lead times iodide squared: 5.8 times ten to the minus ten. That's less than Ksp, so no precipitate. If you forgot to square the iodide, you got 4.8 times ten to the minus seven, and wrongly predicted a solid.",
+      "hash": "b0e25cd40fe6",
+      "textSha256": "b0e25cd40fe6e01ae1e5658d9b39561fd741e7777560b4d8519c90ab42b52616",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-1.b0e25cd40fe6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-1.b0e25cd40fe6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-1.b0e25cd40fe6.generation.json",
+      "plannedRequestSha256": "15b770841d3ec06f1484e23fbfe24d97badc30fc4e76de371839b2833e757e68"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A beaker holds saturated calcium sulfate solution, with solid on the bottom. Solid sodium sulfate is stirred in and dissolves. The temperature doesn't change. What happens to the amount of calcium sulfate dissolved, and to its Ksp? Pause here to answer.",
+      "hash": "6498af806bd0",
+      "textSha256": "6498af806bd0e71420b961151917faeabccddcf79442c10ac2a1a6ede5460022",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-2.6498af806bd0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-2.6498af806bd0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-2.6498af806bd0.generation.json",
+      "plannedRequestSha256": "66e4426cdfa091774a39e19c65bb4f100a17d5361feb8a3e367e7dd5d5c2d12d"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Sulfate is a common ion. It pushes Qsp above Ksp, so calcium sulfate precipitates, and less stays dissolved. Ksp stays the same, because the temperature hasn't changed. If you said Ksp goes down, you've mixed up the solubility with the constant.",
+      "hash": "e0b449943271",
+      "textSha256": "e0b449943271fd47d579a44e81fdc63882bcf57efa73afff1d625a64078a3f4c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-2.e0b449943271.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-2.e0b449943271.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-2.e0b449943271.generation.json",
+      "plannedRequestSha256": "10e1892d6bc7e29b27a197dd6b6c4059cc41c1c71818098cfb6e3b8a716c9976"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to predict a precipitate: find each ion's concentration after mixing, as moles over the total volume. Write Qsp with the same powers as Ksp, and compare it with Ksp from the data table. If Qsp is bigger, a precipitate forms. A common ion lowers solubility, but never changes Ksp. And a kidney stone can start to form when calcium and oxalate push Qsp past Ksp. Next: Module 6, acids and bases, where K comes back as K a.",
+      "hash": "202b61396432",
+      "textSha256": "202b61396432527f654e1729c2c1372dd19968a73dda06c45103cdb8bcd5587c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/decision-rule.202b61396432.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/decision-rule.202b61396432.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/decision-rule.202b61396432.generation.json",
+      "plannedRequestSha256": "e25072d2e71888c1f5cf852ed4182c4bac789f3797eb6861eb5ec652540d0d36"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

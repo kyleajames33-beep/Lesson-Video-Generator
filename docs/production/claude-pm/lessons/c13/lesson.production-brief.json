@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c13/lesson.json",
+    "lessonSha256": "b2741ce68ea49cb98df647af6fe096fb2eee09315aca59f628054cb4aa68b3ee"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C11 and Year 11: a dissolved ionic compound is separate hydrated ions and dissolving depends on more than one factor (C11); ionic formulas from ion charges, polyatomic ions (nitrate, sulfate, carbonate, hydroxide, ammonium), balancing equations, state symbols and meeting precipitation reactions in Module 3 (Year 11). Not assumed: Ksp, Qsp, solubility rules.",
+    "startsWith": "Two clear colourless solutions, potassium iodide and lead nitrate, giving a bright yellow solid, with the question of where the solid came from and what is left in the liquid.",
+    "stopsAfter": "Listing the ions in two solutions; swapping partners and checking both products against supplied or learned rules; naming the precipitate (and its colour for the three syllabus pairs); writing the molecular, full ionic and net ionic equations with spectators identified and charge checked; recognising no precipitate with no net ionic equation; stating which ions remain dissolved after filtering, including an excess reagent. No Ksp, no Qsp, no water-treatment selectivity, no conduct of the investigation.",
+    "nextLesson": "P03: investigating the solubility rules yourself (practical support); then C14: Ksp, putting a number on insoluble."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c13.md"
+  ],
+  "teaching": {
+    "task": "Predict what forms when two ionic solutions are mixed, write the molecular, full ionic and net ionic equations, and say what stays dissolved.",
+    "causalExplanation": "Each bottle holds separate hydrated ions, so mixing gives four kinds of ion and the only new thing possible is new partners. One new pair holds together in a solid more than it stays hydrated, so it comes out as a precipitate, and the other ions stay dissolved and unchanged as spectators. The solubility rules summarise which pairs do this and were found by experiment, so both products are checked because either could be the insoluble one. The solid is not dissolved ions, so it is never split in the ionic equation, and the spectators are identical on both sides, so they cancel to leave the net ionic equation. Charges must balance, which is why lead iodide has two iodides. After filtering, the solution holds the spectators plus any ion that was added in excess, because it has no partner left.",
+    "conversationalApproach": "Starts from a yellow solid appearing from two clear solutions, shows the four ions and the new partners, gives the cause of a precipitate and the spectators, summarises the rules in order, then works the three syllabus pairs one equation line at a time with a charge check, adds the no-precipitate case and the filtrate, gives two memory aids and asks two unseen items with a short pause and brief feedback.",
+    "openingDecision": "Two clear solutions make a bright yellow solid, and neither bottle had anything yellow in it. Where did the solid come from, and what is left in the liquid?",
+    "understandingCheck": "Copper(II) sulfate and sodium hydroxide are mixed: name the precipitate and write the net ionic equation. Then silver nitrate is mixed with more than enough sodium chloride and the white solid is filtered off: which ions are in the filtrate?",
+    "curriculumScope": "Predict and analyse the composition of substances when two ionic solutions are mixed, for example potassium chloride and silver nitrate, potassium iodide and lead nitrate, and sodium sulfate and barium nitrate (Module 5, ACSCH065). The video predicts and analyses and does not replace the investigation. Ksp, Qsp and water-treatment selection are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted lead iodide tube pair, painted reagent bottles with coded labels, the painted precipitate tubes, the painted barium meal glass, coded hydrated-ion lenses, a coded rules card, swap cross and three-line equation stack with flying ion tokens and strikes, and an abstract filter funnel. Colour key: positive ions amber, negative ions violet, water shells pale blue, the precipitate always in its real colour, spectators grey when struck.",
+    "transitionPlan": "The bottles and the tube open the lesson and the bottles stay in the left column; the two lenses merge into one over the tube; the grid becomes the rules card and the card shrinks to the corner for the swap cross; the equation stack adds one line per scene and clears between pairs; the filter funnel carries the filtrate scene and attempt 2; the attempt boards clear the aids and the feedback rebuilds the cross, the stack or the lens; the next chips slide in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Two painted reagent bottles with coded labels and the painted lead iodide tube pair (clear then yellow solid, aligned) with the process clip or an interim crossfade",
+      "teachingReason": "Poses the puzzle: two clear liquids give a bright yellow solid, so where did it come from and what is left in the liquid",
+      "narrationCue": "potassium iodide / lead nitrate / bright yellow solid / what's left",
+      "motionPurpose": "Each bottle pulses as it is named, yellow specks bloom where the drops land and settle, and a ring marks the liquid above the solid",
+      "motionRole": "explain",
+      "onScreenChange": "Two bottles stand at the left labelled \"potassium iodide, KI(aq)\" and \"lead nitrate, Pb(NO3)2(aq)\" and each pulses on its name; the clear tube shows in the main zone; on \"bright yellow solid\" the clip plays to the precipitate tube; the heading \"Two clear solutions. Where did the solid come from?\" writes on; on \"what's left\" a pen ring circles the liquid above the solid with a \"?\" tag",
+      "motionTools": [
+        "label pulse",
+        "process clip crossfade",
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about 1 second on the ringed liquid"
+    },
+    {
+      "sceneId": "four-ions",
+      "visualDecision": "new",
+      "visualReference": "Particle lenses of hydrated amber K+ and violet I-, and amber Pb2+ and violet NO3-, sliding together into one lens over the tube",
+      "teachingReason": "Shows that each bottle holds separate hydrated ions, so mixing gives four kinds of ion and only new partners are possible",
+      "narrationCue": "potassium ions and iodide ions / lead ions and nitrate ions / four kinds of ions / new partners",
+      "motionPurpose": "Two lenses open above the bottles, slide together into one lens with all four ions mingling, and pen arcs link the possible new pairs",
+      "motionRole": "explain",
+      "onScreenChange": "A lens opens above each bottle: on \"potassium ions and iodide ions\" amber K+ and violet I- with water shells appear; on \"lead ions and nitrate ions\" amber Pb2+ and violet NO3- appear; on \"four kinds of ions\" the lenses merge over the tube with the tag \"4 kinds of ion\"; on \"new partners\" two pen arcs link Pb2+ to I- and K+ to NO3- labelled \"new pair?\"",
+      "motionTools": [
+        "particle lens",
+        "lens merge",
+        "DrawPath",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the four ions"
+    },
+    {
+      "sceneId": "precipitate-spectators",
+      "visualDecision": "new",
+      "visualReference": "The merged lens where Pb2+ and I- shed their water shells and lock into a yellow lattice cluster, spectator tags on K+ and NO3- and a composition card",
+      "teachingReason": "Explains the cause of a precipitate and names spectator ions, giving the composition of the mixture",
+      "narrationCue": "lead iodide / precipitate / spectator ions / solid lead iodide",
+      "motionPurpose": "Lead and iodide ions lock into a yellow cluster and sink, the other ions keep swimming and gain spectator tags, and a composition card writes",
+      "motionRole": "explain",
+      "onScreenChange": "In the merged lens Pb2+ and I- shed their shells, lock into a small yellow lattice (1 Pb2+ to 2 I-) and sink; on \"precipitate\" the term and its plain meaning write below and the painted tube pulses; on \"spectator ions\" K+ and NO3- keep swimming with grey \"spectator\" tags; on \"solid lead iodide\" the card writes \"solid: PbI2 (yellow)\" and \"dissolved: K+, NO3-\"; the chip \"every ionic compound dissolves in water\" fades in and is crossed",
+      "motionTools": [
+        "ion lock and sink",
+        "particle lens",
+        "HandText write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the composition card"
+    },
+    {
+      "sceneId": "rules-origin",
+      "visualDecision": "new",
+      "visualReference": "Coded 5 by 5 grid of cations and anions filling cell by cell with real precipitate colours, with the sodium row bracketed and a practical video chip",
+      "teachingReason": "Shows that the solubility rules summarise experiments, and points to the practical video where learners find them",
+      "narrationCue": "solubility rules / practical video",
+      "motionPurpose": "The grid fills cell by cell with clear, coloured and cloudy dots, a bracket groups the all-clear sodium row, and a practical chip writes on",
+      "motionRole": "explain",
+      "onScreenChange": "The grid fills with cations Na+, Ca2+, Ba2+, Pb2+, Ag+ down the side and anions Cl-, I-, SO4 2-, CO3 2-, OH- across, each cell showing clear, a coloured dot or a light cloud; on \"solubility rules\" a pen bracket groups the Na+ row with \"pattern: sodium salts all dissolve\"; on \"practical video\" the chip \"Practical video: find the rules by experiment\" writes with a pen \"later\" tag",
+      "motionTools": [
+        "grid fill",
+        "bracket draw",
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the grid"
+    },
+    {
+      "sceneId": "nagsag",
+      "visualDecision": "new",
+      "visualReference": "Rules card with six lettered rows stacking down the left, a bracket over the always soluble rows and a mostly insoluble box",
+      "teachingReason": "Gives the learnable rules in priority order, with exceptions on the card",
+      "narrationCue": "NAGSAG / Nitrates, Ammonium, and Group 1 / Sulfates / Acetates / Group 17 / silver and lead / carbonates and hydroxides / Barium hydroxide",
+      "motionPurpose": "Six letters stack down the left, each row writes on its cue, a teal bracket joins the first three and a mostly insoluble box writes below",
+      "motionRole": "explain",
+      "onScreenChange": "The letters \"N A G S A G\" stack down the left and each row writes on its cue: nitrates, ammonium and Group 1 with a teal bracket \"always soluble, no exceptions\"; sulfates \"soluble, except Ba2+, Pb2+ (insoluble); Ca2+, Ag+ (slightly)\"; acetates \"soluble\"; Group 17 halides \"soluble, except Ag+, Pb2+\" with a footnote \"PbCl2: slightly soluble\"; on \"carbonates and hydroxides\" a box writes \"Mostly insoluble unless with Group 1 or NH4+\"; on \"Barium hydroxide\" it adds \"Ba(OH)2 soluble; Ca(OH)2 slightly\"",
+      "motionTools": [
+        "row write-on",
+        "bracket draw",
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Reading hold of about 3 seconds on the full card"
+    },
+    {
+      "sceneId": "swap-method",
+      "visualDecision": "new",
+      "visualReference": "Swap cross with two compound tiles, crossing arrows, a tick box under each new pair and a crossed one-product chip",
+      "teachingReason": "Gives the method as a picture: swap partners, then check both products",
+      "narrationCue": "swap partners / check both",
+      "motionPurpose": "The cations cross over in an X, two new pairs form, a tick box appears under each, and a wrong chip about one product is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The tiles \"A+ B-\" and \"C+ D-\" sit on the left; on \"swap partners\" the cations cross over with pen arrows to give \"A+ D-\" and \"C+ B-\"; on \"check both\" a tick box appears under each new pair and the card shrinks to the corner; the chip \"checked one product only\" fades in and is crossed with \"check both\"",
+      "motionTools": [
+        "DrawPath",
+        "tile swap",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the two tick boxes"
+    },
+    {
+      "sceneId": "agcl-molecular",
+      "visualDecision": "adjust",
+      "visualReference": "Swap cross filled with KCl and AgNO3, the rules card in the corner, the painted white silver chloride tube and the first equation line",
+      "teachingReason": "Works the first syllabus pair step by step and writes the molecular equation",
+      "narrationCue": "silver chloride / soluble / insoluble / white / silver chloride solid",
+      "motionPurpose": "The cross fills and swaps, one product ticks green, the other is flagged and the halide row flashes, the white tube stands and the first equation line writes",
+      "motionRole": "explain",
+      "onScreenChange": "The cross fills with \"K+ Cl-\" and \"Ag+ NO3-\" and swaps to \"Ag+ Cl-\" and \"K+ NO3-\"; on \"soluble\" the KNO3 box ticks with \"nitrate, Group 1: soluble\"; on \"insoluble\" the AgCl box gets an amber flag \"halide with Ag+: insoluble\" and the halide row flashes; on \"white\" the painted silver chloride tube stands in the left column; on \"silver chloride solid\" line 1 writes \"KCl(aq) + AgNO3(aq) -> AgCl(s) + KNO3(aq)\" with the margin label \"molecular equation\"",
+      "motionTools": [
+        "tile swap",
+        "tick",
+        "plate slide",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second on the molecular equation"
+    },
+    {
+      "sceneId": "full-ionic",
+      "visualDecision": "adjust",
+      "visualReference": "Equation stack where each aqueous compound splits into ions that fly down to line two and the solid drops whole with a lock tag",
+      "teachingReason": "Shows which compounds split and why the precipitate is never split",
+      "narrationCue": "aqueous / solid / whole / full ionic equation",
+      "motionPurpose": "Each aqueous compound splits and its ions fly down to the second line while the solid drops straight down unsplit",
+      "motionRole": "explain",
+      "onScreenChange": "On \"aqueous\" each (aq) compound in line 1 splits and its ions fly down from their own token to line 2: \"K+(aq) + Cl-(aq) + Ag+(aq) + NO3-(aq) -> AgCl(s) + K+(aq) + NO3-(aq)\"; on \"solid\" the AgCl(s) token drops straight down with a teal lock icon and \"(s): never split\"; on \"full ionic equation\" the margin label writes",
+      "motionTools": [
+        "token flight",
+        "lock tag",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second on the full ionic line"
+    },
+    {
+      "sceneId": "net-ionic",
+      "visualDecision": "adjust",
+      "visualReference": "The three-line stack with pen links on matching ions, grey strikes, the net line, a charge tally and two ghost source chips",
+      "teachingReason": "Cancels the spectators to reach the net ionic equation, checks the charge and shows the net equation does not depend on the source",
+      "narrationCue": "unchanged on both sides / cross them out / net ionic equation / plus one and minus one / wherever",
+      "motionPurpose": "Pen links join matching ions, the pairs are struck grey, the net line writes, a charge tally writes and two source chips point at the same line",
+      "motionRole": "explain",
+      "onScreenChange": "On \"unchanged on both sides\" pen links join K+ to K+ and NO3- to NO3-; on \"cross them out\" each pair is struck grey on both sides; on \"net ionic equation\" line 3 writes \"Ag+(aq) + Cl-(aq) -> AgCl(s)\" with the margin label; on \"plus one and minus one\" the tally \"(+1) + (-1) = 0 -> 0\" writes; on \"wherever\" ghost chips \"from NaCl\" and \"from CaCl2\" point at line 3 with \"same net equation\"",
+      "motionTools": [
+        "DrawPath",
+        "strike",
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the net line"
+    },
+    {
+      "sceneId": "pbi2-formula",
+      "visualDecision": "adjust",
+      "visualReference": "Cleared stack with the swap cross for KI and Pb(NO3)2, charge tiles balancing one lead against two iodides, the yellow tube and the three equation lines",
+      "teachingReason": "Shows why the formula is PbI2 by charge balance and carries the 2 into the net equation",
+      "narrationCue": "lead iodide / P b I / two plus / one minus / two iodides / two potassium iodides / lead ion plus two iodide ions gives lead iodide solid",
+      "motionPurpose": "The cross swaps, a charge tile sits on each ion, a second iodide slides in to balance, then three equation lines write with the spectators struck",
+      "motionRole": "explain",
+      "onScreenChange": "The stack clears; the cross swaps \"K+ I-\" and \"Pb2+ NO3-\" to \"Pb2+ I-\" and \"K+ NO3-\" with KNO3 ticked and PbI2 flagged and the yellow tube standing at the left; on \"P b I\" the chip \"PbI\" fades in and is crossed; on \"two plus\" a tile \"+2\" sits over Pb2+; on \"one minus\" \"-1\" sits over I-; on \"two iodides\" a second I- slides in to give PbI2; on \"two potassium iodides\" line 1 and the token-flight line 2 write and the 2K+ and 2NO3- strike grey; on the net sentence line 3 writes \"Pb2+(aq) + 2I-(aq) -> PbI2(s)\" with the tally \"(+2) + 2(-1) = 0 -> 0\"",
+      "motionTools": [
+        "charge tiles",
+        "tile slide",
+        "token flight",
+        "strike",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the net line and tally"
+    },
+    {
+      "sceneId": "baso4-meal",
+      "visualDecision": "adjust",
+      "visualReference": "Swap cross for Na2SO4 and Ba(NO3)2, a white solid tube with coded label, the painted barium meal glass and two state chips",
+      "teachingReason": "Works the third syllabus pair and shows why barium sulfate is safe to swallow while dissolved barium ions are not",
+      "narrationCue": "barium sulfate / white / barium meal / poisonous / through the gut",
+      "motionPurpose": "The cross swaps, the sulfate row flashes at barium, a white tube stands, the barium meal glass appears and two chips are joined by a same element bracket",
+      "motionRole": "explain",
+      "onScreenChange": "The cross swaps \"Na+ SO4 2-\" and \"Ba2+ NO3-\" to \"Ba2+ SO4 2-\" and \"Na+ NO3-\" with NaNO3 ticked and BaSO4 flagged; on \"barium sulfate\" the sulfate row flashes \"except Ba2+\"; on \"white\" the white tube stands with the coded label \"BaSO4(s), white\"; line 1 and line 3 write with the tally \"(+2) + (-2) = 0\"; on \"barium meal\" the painted glass appears with \"BaSO4 suspension\"; on \"poisonous\" the chip \"Ba2+(aq): toxic\" writes; on \"through the gut\" the chip \"BaSO4(s): barely dissolves, so not absorbed\" writes and a pen bracket joins them with \"same element, different state\"",
+      "motionTools": [
+        "tile swap",
+        "row flash",
+        "plate slide",
+        "bracket draw",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the two state chips"
+    },
+    {
+      "sceneId": "no-precipitate",
+      "visualDecision": "adjust",
+      "visualReference": "Swap cross for KNO3 and NaCl with two green ticks, the clear tube plate, a crossed no reaction chip and an empty net line",
+      "teachingReason": "Teaches the no precipitate case: all ions are spectators and there is no net ionic equation",
+      "narrationCue": "Both soluble / no precipitate / spectator / no net ionic equation / no reaction",
+      "motionPurpose": "The cross swaps and both boxes tick green, the clear tube is labelled, a wrong chip is crossed, all four ions gain spectator tags and the net line shows an empty bracket",
+      "motionRole": "explain",
+      "onScreenChange": "The cross swaps \"K+ NO3-\" and \"Na+ Cl-\" to \"Na+ NO3-\" and \"K+ Cl-\"; on \"Both soluble\" both boxes tick green; the clear tube stands with the label \"no precipitate\"; on \"no reaction\" the chip \"no reaction\" fades in and is crossed with \"write: no precipitate\"; on \"spectator\" the four ions in a lens each get grey tags; on \"no net ionic equation\" line 3 shows an empty bracket with \"none: all spectators\"",
+      "motionTools": [
+        "tile swap",
+        "tick",
+        "Mark cross",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the empty bracket"
+    },
+    {
+      "sceneId": "filtrate",
+      "visualDecision": "new",
+      "visualReference": "Abstract coded filter funnel over a flask, white solid on the paper, a filtrate lens with spectator tags, an excess silver label and a composition card",
+      "teachingReason": "Answers what is left after filtering: the spectators plus any ion added in excess",
+      "narrationCue": "filter off / in excess / silver ions",
+      "motionPurpose": "White solid collects on the paper and clear liquid drips through, the lens shows the spectators, an excess label writes and extra silver ions appear in the lens",
+      "motionRole": "explain",
+      "onScreenChange": "On \"filter off\" the white AgCl collects on the paper with \"residue: AgCl(s)\" and clear liquid drips through with \"filtrate\"; a lens on the filtrate shows K+ and NO3- with grey spectator tags; on \"in excess\" the label \"AgNO3 added in excess\" writes; on \"silver ions\" a few amber Ag+ appear in the lens with \"leftover Ag+ (excess)\"; the card writes \"filtrate: K+, NO3-, plus the excess Ag+\"",
+      "motionTools": [
+        "funnel drip",
+        "particle lens",
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the composition card"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Swap cross returned small, the first aid in large handwriting, the three-line stack returned small and the second aid with a condition tag",
+      "teachingReason": "Gives two reusable lines after the method is explained",
+      "narrationCue": "Swap partners, check both / split only the aqueous",
+      "motionPurpose": "The cross returns small with its X of arrows, the first aid writes large, the stack returns with split arrows and strikes lighting in turn, and the second aid writes",
+      "motionRole": "explain",
+      "onScreenChange": "The swap cross returns small and \"Swap partners, check both.\" writes large; on \"split only the aqueous\" the KCl and AgNO3 stack returns small with the split arrows and the struck spectators lighting in turn; the second aid \"Split only (aq). Cross out what's the same on both sides.\" writes; the tag \"rules are a first prediction; the solid is never split\" lands",
+      "motionTools": [
+        "HandText write-on",
+        "arrow light",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds so the aids can be copied"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "Cleared board with two reagent bottles, a givens line, the rules card small in the corner, two numbered demands and the countdown ring",
+      "teachingReason": "Unseen transfer on a new pair with the supplied rules visible as in an exam, nothing answer-bearing",
+      "narrationCue": "copper two sulfate / sodium hydroxide / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; two bottles are labelled \"copper(II) sulfate, CuSO4(aq)\" and \"sodium hydroxide, NaOH(aq)\"; the givens \"Cu2+ is 2+\" and the small rules card stay visible; the demands \"1. Name the precipitate.\" and \"2. Write the net ionic equation.\" stay visible; the countdown ring starts after the narration with \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "Quick swap cross, the pale blue copper hydroxide tube, two answer chips with a charge tally and one crossed wrong chip",
+      "teachingReason": "Gives the answer and the key reason briefly and corrects the charge balance slip",
+      "narrationCue": "copper(II) hydroxide / pale blue / copper ion plus two hydroxide ions gives copper hydroxide solid / C u O H",
+      "motionPurpose": "The cross runs quickly with one tick and one flag, the tube stands beside the demands, two answer chips pin with a tally and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The cross runs quickly, Na2SO4 ticks and Cu(OH)2 flags amber; on \"pale blue\" the tube stands beside the demands and the chip \"1. copper(II) hydroxide, Cu(OH)2(s), pale blue\" pins; on the net sentence the chip \"2. Cu2+(aq) + 2OH-(aq) -> Cu(OH)2(s)\" pins with \"(+2) + 2(-1) = 0\"; on \"C u O H\" the chip \"Cu2+ + OH- -> CuOH(s)\" fades in and is crossed with \"2+ needs two OH-\"",
+      "motionTools": [
+        "tile swap",
+        "chip pin",
+        "Mark cross",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "Coded filter funnel with white solid on the paper, a givens card, one demand and the countdown ring",
+      "teachingReason": "Unseen transfer on what remains dissolved after filtering an excess mixture, with nothing answer-bearing",
+      "narrationCue": "more than enough / Pause here to answer",
+      "motionPurpose": "The countdown ring runs while the empty filtrate lens and the demand stay visible",
+      "motionRole": "explain",
+      "onScreenChange": "The funnel shows white solid on the paper; the givens card reads \"silver nitrate, AgNO3(aq)\", \"sodium chloride, NaCl(aq), more than enough (in excess)\" and \"white solid filtered off\"; the demand \"Which ions are in the filtrate?\" stays visible with an empty filtrate lens; the countdown ring starts after the narration with \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "The filtrate lens filling with grey tagged Na+ and NO3- then violet excess Cl-, an answer chip and one crossed wrong chip",
+      "teachingReason": "Gives the filtrate composition and corrects the forgotten excess ion",
+      "narrationCue": "sodium ions and nitrate ions / chloride ions / forgot the excess",
+      "motionPurpose": "The spectators appear in the lens, violet chloride ions join with an excess tag, the answer chip pins and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"sodium ions and nitrate ions\" grey-tagged Na+ and NO3- fill the lens; on \"chloride ions\" violet Cl- appear with the tag \"excess\" and the chip \"Na+, NO3-, and excess Cl-\" pins with the small tag \"Ag+: essentially all in AgCl(s); the trace left is a Ksp question (later)\"; on \"forgot the excess\" the chip \"Na+ and NO3- only\" fades in and is crossed with \"add the excess ion\"",
+      "motionTools": [
+        "particle lens",
+        "chip pin",
+        "Mark cross",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Question card with four lines lighting on their words and two next chips with small plates",
+      "teachingReason": "Packs the method into reusable lines and hands off to the practical video and Ksp",
+      "narrationCue": "practical video / Ksp / Next",
+      "motionPurpose": "Four lines write on and light in turn, then two next chips slide in with small plates",
+      "motionRole": "explain",
+      "onScreenChange": "The lines \"List the ions. Swap partners. Check both.\", \"Insoluble one = precipitate.\", \"Split only (aq); cross out spectators; check charges.\" and \"Still dissolved: spectators + any excess.\" write on and light on their words; on \"practical video\" the chip \"Next: investigating solubility rules (practical)\" appears with two small tube plates; on \"Ksp\" the chip \"Then: Ksp, how insoluble?\" appears with the small saturated beaker plate",
+      "motionTools": [
+        "HandText write-on",
+        "line highlight",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the chips"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes, the two memory aids and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes, the two aids and the condition tag appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c13-learning-review.md",
+      "sha256": "326b8293f460774d57ea050ff390d2bfef5610dde2a06e1f1b19e49310188cf4"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c13-claude-science-check.md",
+      "sha256": "477267a9600c2404c49d996dfc0e4d4fa3db295ccf48b33fd1c8731da6c28fc5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c15/lesson.json",
+    "lessonSha256": "64f75ffd6a4806b99a83a6c31d68a2e094d2f08ab00913100c58ab1267085829"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C14, C8, G03a, C13, C6b, C3 and Year 11: Ksp expressions, molar solubility and each ion as its count times s (C14); Q compared with K and the log number line (C8, G03a); solubility rules, spectators and net ionic equations (C13); dropping a tiny s with a 5 per cent check (C6b); Le Chatelier's principle (C3, C4); n = cV and mL to L (Year 11). Not assumed: Qsp, dilution on mixing, the common ion effect, Module 6 acid-base ideas.",
+    "startsWith": "A kidney stone made mainly of calcium oxalate, which the solubility rules call insoluble, and the question of how many ions are enough for a solid to form.",
+    "stopsAfter": "Finding each ion concentration after mixing from moles over the total volume; writing Qsp with the Ksp powers; comparing Qsp with a referenced Ksp to predict and justify a precipitate or none; explaining the common ion effect as Qsp exceeding Ksp with Ksp unchanged; calculating the solubility of a 1 : 1 salt in a common ion solution with the approximation checked. No titration methods, no selective precipitation, no temperature calculations, no Ksp from mixing data with the precipitate subtracted.",
+    "nextLesson": "Module 6, acids and bases (route chem-m6-acid-base-route), where K returns as Ka."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c15.md"
+  ],
+  "teaching": {
+    "task": "Predict whether a precipitate forms when two solutions are mixed, and say what a common ion does to solubility.",
+    "causalExplanation": "A solid needs enough ions, so insoluble ions can coexist without one. Qsp is the Ksp expression with the concentrations right now, with the same powers. When Qsp is bigger than Ksp there are more ions than a saturated solution can hold, so they lock together until Qsp falls to Ksp, when it is just saturated, and when Qsp is smaller nothing precipitates. Mixing spreads each ion through the combined volume, so concentrations fall before Qsp is calculated, which is why moles are found first and divided by the total volume. A common ion raises Qsp above Ksp, so solid forms and less stays dissolved, while Ksp itself is unchanged because only temperature changes it. With a common ion present the initial row is not zero, and the tiny s is dropped next to it and checked.",
+    "conversationalApproach": "Opens on a kidney stone and the question of how many ions are enough, defines Qsp and the three outcomes on a log number line, shows mixing spreading the ions, works a no-precipitate example with the undiluted trap and an unequal-volume example through moles, gives the memory aid, explains the common ion effect and calculates it with a non-zero initial row, then asks two unseen items with a short pause and brief feedback.",
+    "openingDecision": "Most kidney stones are calcium oxalate, which the rules call insoluble, and urine always contains calcium and oxalate ions. Yet usually no stone forms. How many ions is enough?",
+    "understandingCheck": "20.0 mL of 1.0 x 10^-3 mol/L lead nitrate is mixed with 30.0 mL of 2.0 x 10^-3 mol/L potassium iodide, with Ksp 9.8 x 10^-9: will a precipitate form? Then solid sodium sulfate dissolves in a saturated calcium sulfate solution at the same temperature: what happens to the amount of calcium sulfate dissolved and to Ksp?",
+    "curriculumScope": "Predict the formation of a precipitate given the standard reference values for Ksp (Module 5, 2017 syllabus p51). The common ion effect is taught as a Qsp consequence for one 1 : 1 salt. Titration methods, selective precipitation, temperature calculations and Ksp from mixing data with the precipitate subtracted are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted kidney stone, saturated and unsaturated beakers, the painted pipette and clear no-precipitate tube, the C8 log number line with a fixed teal Ksp marker and a coral Qsp marker, the C14 ICE table, the C6b check ruler, the C13 swap-cross thumbnail, a coded mixing card and the countdown ring. Colour key: positive ions amber, negative ions violet, water shells pale blue, spectators grey, Ksp teal, Qsp coral.",
+    "transitionPlan": "The kidney stone opens the lesson and returns small at the end; the two cards give way to the log number line, which carries the decision and every comparison; the beakers tip together for the mixing scene; each worked example clears to the same three-zone board; the saturated beaker carries the common ion scenes into the ICE table; each attempt clears the board and its feedback rebuilds the mixing card or the lens; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "The painted kidney stone with a coin, a C13 rules corner, a coded urine lens and a counter with a question mark",
+      "teachingReason": "Poses why insoluble ions can coexist without a solid and asks how many ions are enough",
+      "narrationCue": "calcium oxalate / calcium ions / oxalate ions / no stone / enough",
+      "motionPurpose": "Labels write beside the stone, a urine lens shows ions drifting apart without locking, a tick marks usually no solid and a counter with a question mark appears",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-kidney-stone-v1.png` centre (the coin gives scale; tag \"kidney stone (scale: coin)\"). On \"calcium oxalate\" a label \"mainly CaC2O4\" writes beside it, and a small C13 rules-card corner flashes \"mostly insoluble\". On \"calcium ions\" and \"oxalate ions\" a coded lens labelled \"urine\" opens with a few amber Ca2+ and violet C2O4 2- ions drifting apart, never locking. On \"no stone\" a pen tick beside the lens, tag \"usually no solid\". On \"enough\" a coded dial-free counter \"how many ions?\" appears with a \"?\". Heading \"Insoluble, but no solid. How many ions is enough?\"",
+      "motionTools": [
+        "plate callout",
+        "lens open",
+        "HandText write-on",
+        "tick pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "qsp-idea",
+      "visualDecision": "adjust",
+      "visualReference": "Two side-by-side cards for Ksp and Qsp with beaker thumbnails, a Q against K chip and a crossed unpowered chip",
+      "teachingReason": "Defines Qsp as the Ksp expression with the concentrations right now, with the same powers",
+      "narrationCue": "at this moment / ion product / Q is compared with K / powers",
+      "motionPurpose": "The right card writes on at this moment, the term writes in coral, a Q against K chip appears and an unpowered chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "two cards side by side. Left \"Ksp = [Ca2+][SO4 2-] at equilibrium (saturated)\" with the C14 saturated beaker thumbnail. On \"at this moment\" the right card writes \"Qsp = [Ca2+][SO4 2-] right now\" with an unsaturated beaker thumbnail and a clock tick icon. On \"ion product\" the term writes in coral with \"Ksp expression, current concentrations\". On \"Q is compared with K\" a mini C8 log line thumbnail (callback chip \"Q against K video\"). On \"powers\" a third line writes: \"PbI2: Qsp = [Pb2+][I-]^2\", and a chip \"[Pb2+][I-]\" fades in and is crossed (caption \"same powers as Ksp\").",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "strike"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "qsp-decision",
+      "visualDecision": "adjust",
+      "visualReference": "The C8 log number line with a fixed Ksp marker, a coral Qsp marker, a crowding lens and a rule card",
+      "teachingReason": "Shows that more ions than a saturated solution can hold lock together until Qsp falls to Ksp, and what equal and smaller mean",
+      "narrationCue": "Qsp is bigger than Ksp / precipitate / equals / smaller",
+      "motionPurpose": "The Qsp marker lands right and a white cluster forms and sinks while the marker slides back, then it sits on the mark, then lands left, and the rule card writes",
+      "motionRole": "explain",
+      "onScreenChange": "the C8 log number line, fixed teal Ksp marker in the middle (tag \"Ksp: saturated\"). On \"bigger than Ksp\" the coral Qsp marker lands to the right; a lens shows crowded ions locking into a small white cluster that sinks (ported Qsp motion, 1 : 1); the Qsp marker slides back to the Ksp mark as the solid forms (tag \"until Qsp = Ksp\"). On \"equals\" the marker sits on the mark (tag \"saturated\"). On \"smaller\" it lands to the left; the lens shows sparse ions, tag \"no precipitate; could dissolve more\". A rule card writes: \"Qsp > Ksp: precipitate. Qsp = Ksp: saturated. Qsp < Ksp: no precipitate.\" A chip \"Qsp < Ksp: precipitate\" fades in and is crossed.",
+      "motionTools": [
+        "log number line",
+        "lens crowd",
+        "marker slide",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "mixing-dilutes",
+      "visualDecision": "adjust",
+      "visualReference": "Two beakers tipping into a taller third beaker with an ion box doubling in height and a halving concentration bar",
+      "teachingReason": "Shows that each ion spreads into the combined volume so every concentration falls before Qsp is calculated",
+      "narrationCue": "combined volume / 100 millilitres / halves / after mixing",
+      "motionPurpose": "The beakers tip into one, the liquid doubles in height, the same ions spread through a taller box and the concentration bar halves",
+      "motionRole": "explain",
+      "onScreenChange": "the ported mix-and-dilute move: two `m5x-unsaturated-beaker-v1.png` beakers labelled \"50 mL\" tip into a third (coded) beaker; on \"combined volume\" the liquid is twice as tall, tag \"100 mL\". A lens on one beaker shows 8 amber ions in a square; on \"100 millilitres\" the same 8 ions spread through a box twice as tall; on \"halves\" a concentration bar drops to half with the tag \"same ions, twice the volume: half the concentration\". On \"after mixing\" a pen arrow labelled \"1 after-mixing concentrations, 2 Qsp\" points to the next board.",
+      "motionTools": [
+        "beaker pour",
+        "lens spread",
+        "bar drop",
+        "arrow pointer"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "caso4-setup",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh board with the swap-cross thumbnail, the calcium sulfate strip, a grouped givens card and a mixing card",
+      "teachingReason": "Sets up the first worked example and halves each concentration after equal volumes mix",
+      "narrationCue": "calcium chloride / sodium sulfate / slightly soluble / 4.93 times ten to the minus five / volume doubles / 0.0050",
+      "motionPurpose": "The thumbnail flags calcium sulfate, the givens card fills, and the mixing card writes the halved concentrations",
+      "motionRole": "explain",
+      "onScreenChange": "task \"Will CaSO4 precipitate?\" A C13 swap-cross thumbnail (CaCl2 + Na2SO4 to CaSO4 + NaCl) with NaCl ticked and CaSO4 flagged \"slightly soluble\" on \"slightly soluble\". Strip \"CaSO4(s) <=> Ca2+(aq) + SO4 2-(aq)\". Givens card: \"CaCl2(aq): 0.010 mol/L\", \"Na2SO4(aq): 0.010 mol/L\", \"equal volumes\", \"Ksp(CaSO4) = 4.93 x 10^-5 (25 C)\". On \"volume doubles\" the mixing card writes: \"volume x 2, so each concentration / 2\"; \"[Ca2+] = 0.0050 mol/L\", \"[SO4 2-] = 0.0050 mol/L\" on \"0.0050\". Na+ and Cl- appear small in grey with \"spectators\".",
+      "motionTools": [
+        "tick pop",
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "caso4-compare",
+      "visualDecision": "adjust",
+      "visualReference": "The Qsp line, the log number line with left and ghost right markers, and the clear no precipitate plate",
+      "teachingReason": "Compares Qsp with Ksp, concludes no precipitate and shows the undiluted slip flipping the answer",
+      "narrationCue": "2.5 times ten to the minus five / less than / no precipitate / Without diluting / predict a solid",
+      "motionPurpose": "The Qsp line writes, the marker lands left of the Ksp mark, the clear tube plate stands up, then a ghost marker lands right with a struck line and a crossed chip",
+      "motionRole": "explain",
+      "onScreenChange": "line \"Qsp = [Ca2+][SO4 2-] = (0.0050)(0.0050) = 2.5 x 10^-5\". On \"less than\" the log line: Qsp marker lands left of the Ksp mark (4.93 x 10^-5), tag \"Qsp < Ksp\". On \"no precipitate\" `m5x-no-ppt-clear-v1.png` stands in the left column with the label \"no precipitate\". On \"Without diluting\" a ghost Qsp marker lands right of the mark: ghost line \"(0.010)(0.010) = 1.0 x 10^-4\" with the tag \"4 x too big\" and a red strike; on \"predict a solid\" a ghost chip \"precipitate\" is crossed.",
+      "motionTools": [
+        "log number line",
+        "plate slide",
+        "strike",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "pbso4-moles",
+      "visualDecision": "adjust",
+      "visualReference": "A cleared board with the pipette plate, the lead sulfate strip, givens grouped by solution and a mixing card of mole lines",
+      "teachingReason": "Works unequal volumes through moles and the total volume, one line at a time",
+      "narrationCue": "25.0 millilitres / 75.0 millilitres / concentration times volume / total volume / 1.5 times ten to the minus four",
+      "motionPurpose": "The givens card fills and the mixing card writes one line per beat: moles of lead, the total volume, the lead concentration, then sulfate",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Task \"Will PbSO4 precipitate?\" `m5x-graduated-pipette-v1.png` small in the left column (measuring the volumes). Strip \"PbSO4(s) <=> Pb2+(aq) + SO4 2-(aq)\". Givens card grouped by solution: \"Pb(NO3)2(aq): 25.0 mL, 4.0 x 10^-3 mol/L\"; \"Na2SO4(aq): 75.0 mL, 2.0 x 10^-4 mol/L\". Mixing card, one line per beat: on \"concentration times volume\" \"n(Pb2+) = 4.0 x 10^-3 mol/L x 0.0250 L = 1.0 x 10^-4 mol\"; on \"total volume\" \"V total = 25.0 + 75.0 = 100.0 mL = 0.100 L\"; \"[Pb2+] = 1.0 x 10^-4 mol / 0.100 L = 1.0 x 10^-3 mol/L\"; then \"n(SO4 2-) = 2.0 x 10^-4 x 0.0750 = 1.5 x 10^-5 mol\", \"[SO4 2-] = 1.5 x 10^-4 mol/L\". Small aside \"mL to L: / 1000\".",
+      "motionTools": [
+        "HandText write-on",
+        "plate slide",
+        "line reveal"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "pbso4-compare",
+      "visualDecision": "adjust",
+      "visualReference": "The two after-mixing results kept, the Qsp line, the log number line with a right marker and a white precipitate",
+      "teachingReason": "Compares Qsp with the data table Ksp and concludes a precipitate forms",
+      "narrationCue": "1.5 times ten to the minus seven / 2.53 times ten to the minus eight / bigger / lead sulfate",
+      "motionPurpose": "The earlier working dims, the Qsp line writes, the marker lands right with an about six times bracket and white specks settle",
+      "motionRole": "explain",
+      "onScreenChange": "the two after-mixing results stay (working dimmed). Line \"Qsp = [Pb2+][SO4 2-] = (1.0 x 10^-3)(1.5 x 10^-4) = 1.5 x 10^-7\". Givens card adds \"Ksp(PbSO4) = 2.53 x 10^-8 (25 C)\" on \"2.53\". On \"bigger\" the log line: Qsp marker lands right of the mark, bracket \"about 6 x\". On \"lead sulfate\" a white precipitate tube stands in the left column (needed `m5x-ppt-baso4-white-v1.png`, already requested by C13, used here as a generic fine white precipitate with the coded label \"PbSO4(s), white\"; interim: coded white specks settling in the mixed beaker, no painted AgCl tube).",
+      "motionTools": [
+        "log number line",
+        "bracket draw",
+        "particle settle",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "A three-line handwritten aid, each line with a small thumbnail, and a condition tag",
+      "teachingReason": "Gives the order of steps as a reusable habit after the method is explained",
+      "narrationCue": "Dilute first / Over Ksp, it falls out",
+      "motionPurpose": "The three lines write one at a time, each lifting a small thumbnail, then the condition tag lands",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes large and handwritten in three lines, each with a thumbnail: \"Dilute first.\" (the tall mixed beaker), \"Then Qsp.\" (the Qsp line with a power highlighted), \"Over Ksp, it falls out.\" (the Qsp marker right of the mark with a falling white cluster). Condition tag: \"after-mixing concentrations; same powers as Ksp; Ksp at the same temperature\".",
+      "motionTools": [
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "common-ion",
+      "visualDecision": "adjust",
+      "visualReference": "The saturated beaker labelled silver chloride, an ion-docking lens, a small log line and a Ksp chip with a lock",
+      "teachingReason": "Explains the common ion effect as Qsp jumping above Ksp so solid forms, with Ksp itself unchanged",
+      "narrationCue": "sodium chloride / common ion / bigger than Ksp / left / less / hasn't changed",
+      "motionPurpose": "Chloride ions rain in, the Qsp marker jumps right, silver ions dock onto the crystal while the marker slides back, a dissolved bar drops and the Ksp chip locks beside a crossed chip",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-saturated-beaker-v1.png` with the coded label \"saturated AgCl(aq)\" and strip \"AgCl(s) <=> Ag+(aq) + Cl-(aq)\". Ported common-ion lens: Ag+ and Cl- leave and dock at the crystal at equal rates. On \"sodium chloride\" violet Cl- ions rain in with grey Na+ (spectator tags). On \"common ion\" a tag \"Cl-: already in the equilibrium\". On \"bigger than Ksp\" the coral Qsp marker jumps right of the teal mark on a small log line. On \"left\" the equilibrium arrow's left half thickens; several Ag+ ions dock onto the crystal with pen rings, and the Qsp marker slides back onto the mark. On \"less\" a dissolved-AgCl bar drops. On \"hasn't changed\" the teal Ksp chip \"Ksp = 1.77 x 10^-10 (25 C): unchanged\" gets a lock icon, and a chip \"added Cl- changes Ksp\" fades in and is crossed.",
+      "motionTools": [
+        "lens open",
+        "marker slide",
+        "bar drop",
+        "strike",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "common-ion-ice",
+      "visualDecision": "adjust",
+      "visualReference": "The C14 ICE table with a non-zero chloride start and the C6b check ruler",
+      "teachingReason": "Sets up the common-ion calculation with a non-zero initial row and drops the tiny s next to 0.10",
+      "narrationCue": "zero / 0.10 / about 0.10 / quadratic",
+      "motionPurpose": "Silver ticks zero, chloride is ringed at 0.10, the rows fill, the ruler shows s as a sliver and the plus s slides out",
+      "motionRole": "explain",
+      "onScreenChange": "task \"Find s for AgCl in 0.10 mol/L NaCl\". Givens \"Ksp(AgCl) = 1.77 x 10^-10 (25 C)\", \"[Cl-] from NaCl: 0.10 mol/L\". ICE (C14 component, columns Ag+ and Cl-, greyed solid column): on \"zero\" Initial Ag+ \"0\"; on \"0.10\" Initial Cl- \"0.10\" with a pen ring and tag \"from NaCl\" (the non-zero start is the new thing). Change \"+s\", \"+s\"; Equilibrium \"s\", \"0.10 + s\". On \"about 0.10\" the C6b check ruler draws: a long bar \"0.10\" with a hair-thin sliver \"s?\", and the \"+ s\" greys and slides out: \"~ 0.10\". On \"quadratic\" a small grey card \"Quadratic formula: allowed. HSC questions are written so you should not need it.\" fades in and out.",
+      "motionTools": [
+        "ICE table",
+        "scribbleEllipse",
+        "check ruler",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "common-ion-solve",
+      "visualDecision": "adjust",
+      "visualReference": "The same table and ruler with the algebra line, a 5 per cent mark, a pure water side line and a two-row comparison",
+      "teachingReason": "Solves for s by dividing, checks the approximation and compares with pure water",
+      "narrationCue": "Divide both sides by 0.10 / 5 per cent / square root of Ksp / seven and a half thousand times less",
+      "motionPurpose": "The algebra stage writes with a divide aside, the dashed 5 per cent line draws far beyond the sliver, the pure water line appears and a bracket links the two rows",
+      "motionRole": "explain",
+      "onScreenChange": "the table, ruler and givens stay. Algebra: \"Ksp = [Ag+][Cl-] ~ s x 0.10 = 1.77 x 10^-10\"; on \"Divide both sides by 0.10\" aside \"divide both sides by 0.10\"; \"s = 1.77 x 10^-9 mol/L\" ticks. On \"5 per cent\" the ruler shows the dashed 5 per cent line far beyond the sliver, tag \"s / 0.10 = 0.000002%\". On \"square root of Ksp\" a small side line \"pure water: s = sqrt (1.77 x 10^-10) = 1.33 x 10^-5 (C14 method)\". On \"seven and a half thousand\" a two-row comparison: \"pure water: s = 1.33 x 10^-5\" and \"0.10 mol/L Cl-: s = 1.77 x 10^-9\", bracket \"about 7,500 x less\".",
+      "motionTools": [
+        "HandText write-on",
+        "check ruler",
+        "bracket draw",
+        "tick pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "A cleared board with the task, givens grouped by solution and the Ksp, and a single demand",
+      "teachingReason": "Unseen transfer on mixing unequal volumes with a squared ion and every condition visible",
+      "narrationCue": "20.0 millilitres / 30.0 millilitres / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Task \"Will PbI2 precipitate?\" Givens card grouped by solution: \"Pb(NO3)2(aq): 20.0 mL, 1.0 x 10^-3 mol/L\"; \"KI(aq): 30.0 mL, 2.0 x 10^-3 mol/L\"; \"Ksp(PbI2) = 9.8 x 10^-9 (25 C)\". Demand \"Will a precipitate form? Show Qsp.\" Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no strip, no mixing card, no plate.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "The mixing card filling quickly, the Qsp line, the log line with a left marker, the clear tube plate and a crossed chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects the forgotten square",
+      "narrationCue": "total 0.0500 litres / squared / no precipitate / forgot to square",
+      "motionPurpose": "The mixing card fills, the Qsp line writes, the marker lands left, the answer chip pins and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "mixing card fills quickly: \"V total = 0.0500 L\", \"[Pb2+] = 2.0 x 10^-5 mol / 0.0500 L = 4.0 x 10^-4\", \"[I-] = 6.0 x 10^-5 mol / 0.0500 L = 1.2 x 10^-3\". Line \"Qsp = [Pb2+][I-]^2 = (4.0 x 10^-4)(1.2 x 10^-3)^2 = 5.8 x 10^-10\". Log line: Qsp left of the mark. Answer chip \"Qsp < Ksp: no precipitate\" pins with `m5x-no-ppt-clear-v1.png` small. On \"forgot to square\" a chip \"(4.0 x 10^-4)(1.2 x 10^-3) = 4.8 x 10^-7: precipitate\" fades in and is crossed (caption \"I- is squared\").",
+      "motionTools": [
+        "HandText write-on",
+        "log number line",
+        "chip pin",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "A cleared board with the saturated beaker plate, two givens and two numbered demands",
+      "teachingReason": "Unseen conceptual transfer on the common ion effect and Ksp with every condition visible",
+      "narrationCue": "sodium sulfate / What happens to the amount / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the saturated beaker plate with the coded label \"saturated CaSO4(aq), solid present\". Givens: \"add Na2SO4(s): dissolves\", \"same temperature\". Two numbered demands: \"1. Amount of CaSO4 dissolved?\" \"2. Ksp of CaSO4?\" Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no markers.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "The ion lens with sulfate raining in, the Qsp marker jumping and returning, two answer chips and a crossed chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects the idea that Ksp falls",
+      "narrationCue": "common ion / less stays dissolved / stays the same / Ksp goes down",
+      "motionPurpose": "Sulfate ions rain in, the marker jumps right and slides back as solid forms, two answer chips pin and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "sulfate ions rain into the lens; the Qsp marker jumps right, then slides back to the mark as white solid forms. Answer chips pin: \"1. less CaSO4 dissolved (more solid)\"; \"2. Ksp unchanged (same temperature)\". On \"Ksp goes down\" a chip \"Ksp decreases\" fades in and is crossed (caption \"solubility falls; Ksp fixed\").",
+      "motionTools": [
+        "lens open",
+        "marker slide",
+        "chip pin",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "A four-line decision card lighting on its words, the kidney stone returning small beside the log line, and a next chip",
+      "teachingReason": "Packs the method into reusable lines, closes the kidney stone loop and hands off to Module 6",
+      "narrationCue": "past Ksp / Next / K a",
+      "motionPurpose": "Four lines write and light in turn, the stone returns beside the log line with the marker crossing the mark, and the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "the decision card writes, each line lighting on its words: \"1 After mixing: n = cV, / total V.\" \"2 Qsp with the Ksp powers.\" \"3 Qsp > Ksp: precipitate. Qsp <= Ksp: none.\" \"4 Common ion: solubility down, Ksp unchanged.\" On \"past Ksp\" `m5x-kidney-stone-v1.png` returns small beside the log line with the Qsp marker crossing the mark (tag \"Qsp > Ksp: a solid can start to form\"). On \"K a\" a chip \"Next: Module 6, acids and bases (Ka)\".",
+      "motionTools": [
+        "HandText write-on",
+        "line highlight",
+        "plate slide",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes, the memory aid and its condition tag appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c15-learning-review.md",
+      "sha256": "b29f954a4de68dfae00b5ee1901b44c27c596ebe1ad27a0a313f8a0e55b65dc9"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c15-claude-science-check.md",
+      "sha256": "90e41e617e987c4332a839c67b18cc7a32f4ca14462e56d1e836478e8e90f9c9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

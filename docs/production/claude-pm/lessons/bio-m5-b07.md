@@ -1,6 +1,6 @@
 # B7: How does a chain of amino acids become a trait, and why can the same genes give different results? (design)
 
-Status: Revision 2: learning review and Claude science check resolved; ready to voice (pending owner go-ahead). Revision 2 dated 17 Oct. Revision 1 (17 Oct) was the first design from the pre-design pack. Reviews: `checks/b7-learning-review.md`, `checks/b7-claude-science-check.md`. Nothing recorded; human listening pending.
+Status: Revision 2: learning review and Claude science check resolved; ready to voice (owner go-ahead 17 Oct). Revision 2 dated 17 Oct. Revision 1 (17 Oct) was the first design from the pre-design pack. Reviews: `checks/b7-learning-review.md`, `checks/b7-claude-science-check.md`. Nothing recorded; human listening pending.
 
 ## Decisions
 

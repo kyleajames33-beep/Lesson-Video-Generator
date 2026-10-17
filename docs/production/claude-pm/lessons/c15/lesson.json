@@ -1,0 +1,168 @@
+{
+  "title": "Will mixing these solutions form a precipitate? Qsp against Ksp, and the common ion effect",
+  "subtitle": "When two solutions are mixed, how can you predict whether a precipitate will form, and why does adding an ion that is already there make a salt less soluble?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 19,
+  "lessonIntent": "Define Qsp as the Ksp expression with current concentrations, compare Qsp with Ksp to predict a precipitate, find each ion concentration after mixing from moles over the total volume, justify a prediction with a referenced Ksp, explain the common ion effect as Qsp exceeding Ksp with Ksp unchanged, calculate the solubility of a 1 : 1 salt in a common ion solution with the approximation checked, and apply the method to an unseen lead iodide mixture and an unseen calcium sulfate case.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This is a kidney stone. Most are mainly calcium oxalate, which the solubility rules call insoluble. And urine always contains some calcium ions and some oxalate ions. Yet most of the time, no stone forms. So \"insoluble\" can't be the whole story. A solid only forms when there are enough ions. How many is enough?"
+      }
+    },
+    {
+      "id": "qsp-idea",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ksp describes a saturated solution, at equilibrium. For the mixture in front of you right now, use the same expression with the concentrations you have at this moment. That's the ion product, Q s p. Just as Q is compared with K, it tells you which way things have to go. It uses the same powers too: for lead iodide, Qsp is lead times iodide squared."
+      }
+    },
+    {
+      "id": "qsp-decision",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If Qsp is bigger than Ksp, there are more ions than a saturated solution can hold. Ions lock together, and a precipitate forms, until Qsp falls back to Ksp. If Qsp equals Ksp, the solution is just saturated. If Qsp is smaller, nothing precipitates: the solution could even dissolve more."
+      }
+    },
+    {
+      "id": "mixing-dilutes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the step most people miss. When two solutions are mixed, each ion spreads into the combined volume. Mix 50 millilitres with 50 millilitres, and every ion now has 100 millilitres to move in, so each concentration halves. Work out the concentrations after mixing first, then Qsp."
+      }
+    },
+    {
+      "id": "caso4-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Try it. Equal volumes of 0.010 moles per litre calcium chloride and 0.010 moles per litre sodium sulfate are mixed. The solid that could form is calcium sulfate: the rules call it slightly soluble, and its Ksp is 4.93 times ten to the minus five. After mixing, the volume doubles, so calcium and sulfate are each 0.0050 moles per litre."
+      }
+    },
+    {
+      "id": "caso4-compare",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Qsp is calcium times sulfate: 0.0050 times 0.0050, which is 2.5 times ten to the minus five. That's less than Ksp, so no precipitate forms. Now the trap. Without diluting, you'd get 0.010 times 0.010, 1.0 times ten to the minus four: four times too big, and bigger than Ksp, so you'd wrongly predict a solid."
+      }
+    },
+    {
+      "id": "pbso4-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "When the volumes aren't equal, work through moles. 25.0 millilitres of 4.0 times ten to the minus three moles per litre lead nitrate is mixed with 75.0 millilitres of 2.0 times ten to the minus four moles per litre sodium sulfate. Moles of lead ions are concentration times volume: 1.0 times ten to the minus four. Divide by the total volume, 0.100 litres: lead is 1.0 times ten to the minus three moles per litre. Sulfate: 1.5 times ten to the minus five moles, over 0.100 litres, is 1.5 times ten to the minus four."
+      }
+    },
+    {
+      "id": "pbso4-compare",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Qsp for lead sulfate is 1.0 times ten to the minus three, times 1.5 times ten to the minus four: 1.5 times ten to the minus seven. The data table gives Ksp as 2.53 times ten to the minus eight. Qsp is bigger, about six times, so a white precipitate of lead sulfate forms."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's the order. Dilute first. Then Qsp. Over Ksp, it falls out."
+      }
+    },
+    {
+      "id": "common-ion",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more case. Here's a saturated silver chloride solution, with solid on the bottom. Now add some sodium chloride. Chloride is already part of this equilibrium, so it's a common ion. The chloride concentration jumps, so Qsp is suddenly bigger than Ksp. Silver ions and chloride ions lock onto the solid until Qsp is back down to Ksp: the equilibrium shifts left, as Le Chatelier's principle predicts. So less silver chloride stays dissolved. But Ksp itself hasn't changed: only temperature changes it."
+      }
+    },
+    {
+      "id": "common-ion-ice",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "How much less? Find silver chloride's solubility in 0.10 moles per litre sodium chloride, with Ksp 1.77 times ten to the minus ten. In the I C E table, silver starts at zero, but chloride starts at 0.10. s dissolves, so the equilibrium row is s, and 0.10 plus s. s is tiny next to 0.10, so 0.10 plus s is about 0.10. Keeping the s gives a quadratic. You can use it if you like, but HSC questions are written so you shouldn't need it."
+      }
+    },
+    {
+      "id": "common-ion-solve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ksp is s times 0.10. Divide both sides by 0.10: s is 1.77 times ten to the minus nine. That's far under 5 per cent of 0.10, so dropping it was safe. In pure water, s would be the square root of Ksp, 1.33 times ten to the minus five, so it's now about seven and a half thousand times less."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. 20.0 millilitres of 1.0 times ten to the minus three moles per litre lead nitrate is mixed with 30.0 millilitres of 2.0 times ten to the minus three moles per litre potassium iodide. The Ksp of lead iodide is 9.8 times ten to the minus nine. Will a precipitate form? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Lead is 2.0 times ten to the minus five moles, over the total 0.0500 litres: 4.0 times ten to the minus four. Iodide is 1.2 times ten to the minus three. Qsp is lead times iodide squared: 5.8 times ten to the minus ten. That's less than Ksp, so no precipitate. If you forgot to square the iodide, you got 4.8 times ten to the minus seven, and wrongly predicted a solid."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A beaker holds saturated calcium sulfate solution, with solid on the bottom. Solid sodium sulfate is stirred in and dissolves. The temperature doesn't change. What happens to the amount of calcium sulfate dissolved, and to its Ksp? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Sulfate is a common ion. It pushes Qsp above Ksp, so calcium sulfate precipitates, and less stays dissolved. Ksp stays the same, because the temperature hasn't changed. If you said Ksp goes down, you've mixed up the solubility with the constant."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to predict a precipitate: find each ion's concentration after mixing, as moles over the total volume. Write Qsp with the same powers as Ksp, and compare it with Ksp from the data table. If Qsp is bigger, a precipitate forms. A common ion lowers solubility, but never changes Ksp. And a kidney stone can start to form when calcium and oxalate push Qsp past Ksp. Next: Module 6, acids and bases, where K comes back as K a."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -183,3 +183,22 @@ Claude agents running: C10+C11 design, B7+B8 design, programme master plan (docs
 ## 17 Oct: Codex queue
 Codex has finished everything up to brief 54. To send: 28k (upload G03b + B3b), 28l (upload C7), 55 (B6b recipe-book plate), 56 (fact check P02, C10, B6b, B6c), 57 (pre-design packs M7 + M8), 58 (Module 7 plates, both subjects).
 To watch: C10 v1, P02 v3, B6b v2, B6c v2. Coming: P02 v4 / C10 v2 with real apparatus, B5a / B5b v5 with painted chromosomes.
+
+## 17 Oct night: Codex queue (all new; send in any order, short ones first)
+28k, 28l (uploads); 55 (recipe book plate); 56 (fact check P02 C10 B6b B6c); 59 (B7 B8 C11 C13 plates);
+57 (pre-design packs M7+M8); 58 (plates M7); 60 (plates M8); 61 (Y11 Biology pre-design packs); 62 (science review of draft new-syllabus Y11 Chemistry site lessons); 63 (non-AI thumbnail drafts for owner review, no upload).
+Claude overnight: voice + build C11, C13, B7, B8; design C14, C15, B9, B10, C12 (C12 needs owner + cultural read before voicing).
+
+## 18 Oct morning summary (overnight work)
+Previews ready to watch (all with brief answers):
+- C11 dissolving: http://127.0.0.1:8778/Explainer-chem-m5-c11-preview-v1/
+- C13 solubility rules: http://127.0.0.1:8778/Explainer-chem-m5-c13-preview-v1/
+- B7 proteins and phenotype: http://127.0.0.1:8778/Explainer-bio-m5-b07-preview-v1/ (rabbit question waits on brief 59 plates)
+- B8 sources of variation: http://127.0.0.1:8778/Explainer-bio-m5-b08-preview-v1/
+Still from before: B5a v5, B5b v5, P02 v4, C10 v2, B6b v2, B6c v2.
+- B9 Punnett and pedigrees: http://127.0.0.1:8778/Explainer-bio-m5-b09-preview-v1/
+- B10 sex linkage, co-dominance, ABO: http://127.0.0.1:8778/Explainer-bio-m5-b10-preview-v1/
+- C14 Ksp and molar solubility: http://127.0.0.1:8778/Explainer-chem-m5-c14-preview-v1/ (feedback 2 is ~37 s)
+- C15 will it precipitate, common ion: http://127.0.0.1:8778/Explainer-chem-m5-c15-preview-v1/ (feedback 1 is ~34 s)
+C12 (Aboriginal and Torres Strait Islander solubility knowledge): designed, needs owner + cultural read before voicing: lessons/chem-m5-c12.md.
+Decisions: B5b hook family plates (keep or swap); site CaF2 Ksp 3.9e-11 vs video 3.45e-11; dihybrid video yes/no.

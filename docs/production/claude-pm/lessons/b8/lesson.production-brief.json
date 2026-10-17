@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b8/lesson.json",
+    "lessonSha256": "a81bf5ede805feda20954f5f76f01f91acb04910253cd18112668e13b816e480"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B5b: homologous pairs, crossing over in prophase I makes new combinations of existing alleles, independent assortment at metaphase I, 2 to the power n (2 to the power 23 is more than 8 million), fertilisation restores the number, and letters are labels only. B5a: diploid, haploid, chromosome sets. B4: a copying error that survives proofreading and repair is a mutation, inherited only if it is in a cell that makes gametes. B7: genotype, phenotype, the same genotype in different environments, and the environment does not change the genotype. B2b: pollen tube, ovule, a pea pod's seeds are fertilised ovules. B1: clones, runners and variation helps a species survive change. Not assumed: tracing alleles across generations, genes on one chromosome travelling together, multiplying gamete types, genetic against environmental variation.",
+    "startsWith": "A pea pod whose seeds all have the same two parents yet differ, with the question of why offspring differ and whether one could carry an allele neither parent had.",
+    "stopsAfter": "Sorting the four sources into reshuffling existing alleles and making new alleles; tracing a parent's alleles to its own parents and listing four gamete types for two genes on different chromosomes with the assumptions stated; explaining why genes on the same chromosome are reshuffled only by crossing over and why those combinations are usually less common; multiplying gamete types at fertilisation; explaining why siblings share alleles but differ; saying mutation is the only source of new alleles and is inherited only from the egg or sperm line; separating genetic from environmental variation; saying why variation matters; applying all of it to an unseen fly cell and an unseen strawberry experiment. No linkage maps, no dominance or Punnett squares, no mutation types, no non-disjunction.",
+    "nextLesson": "P02: model meiosis, fertilisation and mutation yourself; then B9: predict offspring with Punnett squares and pedigrees."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b08.md"
+  ],
+  "teaching": {
+    "task": "Explain where the differences between offspring of the same parents come from, and where a brand-new allele comes from.",
+    "causalExplanation": "Crossing over, independent assortment and random fertilisation only rearrange alleles that already exist, like dealing new hands from the same deck, while mutation changes the DNA itself, so it is the only source of a new allele. A parent that got one set of chromosomes from each of its own parents makes four kinds of gamete for two genes on different chromosomes because each pair lines up either way on its own. Assortment moves whole chromosomes, so two genes on the same chromosome stay together until a swap between them, which happens in only some cells, so the swapped combinations are usually less common. Any pollen grain can reach any ovule, so fertilisation multiplies the gamete types. Siblings share alleles but differ because each came from different gametes, with no new mutation needed. A mutation is inherited only if it is in a cell that makes eggs or sperm. Environmental differences between clones are not inherited because the environment does not change the alleles in the gametes.",
+    "conversationalApproach": "Opens on a pod of different seeds from the same two parents, sorts the four sources by whether they reshuffle or make something new, traces one parent's alleles back and forward on one origin board, adds the same-chromosome case, multiplies at fertilisation, explains siblings and mutation with the white-eyed fly, separates genetic from environmental variation, says why variation matters, gives the memory aid, then asks two harder unseen items with a short pause and brief model answers.",
+    "openingDecision": "Seeds from one pod have the same two parents, yet they differ. Why, and where could a brand-new allele come from?",
+    "understandingCheck": "A cell in a fruit fly's ovary has D and E on one chromosome, d and e on its partner, and F and f on another pair: list the egg combinations with no crossing over, the extra ones with crossing over between D and E, and why those are less common. Then explain the variation in strawberry plants grown from runners against plants grown from seeds, and say which differences could be passed on through seeds.",
+    "curriculumScope": "Model the formation of new combinations of genotypes produced during meiosis and the knowledge half of the investigation of crossing over, fertilisation and mutation (Module 5, B5-IQ4-01 and B5-IQ4-02, ACSBL084). The video models on screen and does not claim learner modelling. Linkage maps, dominance, Punnett squares, mutation types and non-disjunction are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted ovary, pod, pea seed, fly, hydrangea, strawberry, sperm and egg plates, the B5b dividing cell plate with plum and teal chromosome plates, and coded allele beads, an origin board of three generation rows, a pairing grid, number tickers and a variation split. Allele beads are white with an outline and a letter; amber is reserved for a new allele and only a mutation bead is ever amber-filled.",
+    "transitionPlan": "The pod opens the lesson and crossfades from the ovary; the source chips sort into two bins; the origin board draws in three rows and persists from the tracing scene to the siblings scene, zooming to the long pair for the same-chromosome scene; the ovary and pod return for fertilisation; the DNA ladder and the fly jar carry mutation; the variation split carries the genetic against environmental scene; each attempt card clears the aids and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chips slide in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted ovary and pod pair with a coded paintbrush and pollen, four painted pea seed types in a row and a ghost fifth seed with an amber question bead",
+      "teachingReason": "Poses the puzzle that seeds from the same parents differ, and asks whether one could carry an allele neither parent had",
+      "narrationCue": "A few weeks later / same two parents / yellow / green / round / wrinkled / neither parent had",
+      "motionPurpose": "Pollen is dusted onto the ovary, the plate crossfades to the open pod, a bracket marks the same parents, four seed types land one per word and a ghost fifth seed appears",
+      "motionRole": "explain",
+      "onScreenChange": "The heading \"Same parents, different offspring\" writes on; the paintbrush dusts pollen with tags \"pollen from plant 1\" and \"flower of plant 2\"; on \"A few weeks later\" the ovary crossfades to the pod; on \"same two parents\" a bracket reads \"same two parents\"; the seeds lift out and the four pea plates land under the pod on \"yellow\", \"green\", \"round\" and \"wrinkled\"; on \"neither parent had\" a ghost fifth seed outline appears with an amber \"?\" bead",
+      "motionTools": [
+        "HandText write-on",
+        "plate crossfade",
+        "plate slide",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the ghost seed"
+    },
+    {
+      "sceneId": "two-jobs",
+      "visualDecision": "new",
+      "visualReference": "Source sort: four chips dropping into a reshuffle bin and a new allele bin, white allele beads, a coded deck splitting into hands and an amber new card",
+      "teachingReason": "Sorts the four sources by what they do, reshuffling existing alleles or making a new one, with a deck of cards as the one mapped analogy",
+      "narrationCue": "crossing over / independent assortment / random fertilisation / mutation / reshuffle alleles that already exist / dealing new hands from the same deck / brand-new allele / a new card",
+      "motionPurpose": "Four chips drop in on their names, three slide into the reshuffle bin with white beads that swap places, a deck splits into two hands, and the mutation chip enters the other bin and its bead and a card turn amber",
+      "motionRole": "explain",
+      "onScreenChange": "The chips drop in on \"crossing over\", \"independent assortment\", \"random fertilisation\" and \"mutation\"; the first two carry the tag \"B5b: meiosis\"; two bins draw: \"reshuffle existing alleles\" and \"make a new allele\"; on \"reshuffle alleles that already exist\" the first three chips slide left with white beads changing neighbours; on \"dealing new hands from the same deck\" a mini deck splits into two hands with \"same cards, new hands\"; on \"brand-new allele\" the mutation chip slides right and its bead fills amber; on \"a new card\" a deck card turns amber with \"a new card\"; the line \"crossing over makes no new alleles\" sits under the left bin",
+      "motionTools": [
+        "SourceSort chip drop",
+        "bead recolour",
+        "deck split",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the two bins"
+    },
+    {
+      "sceneId": "trace-parent",
+      "visualDecision": "new",
+      "visualReference": "Origin board with grandparent set-cards, the parent cell plate with plum and teal chromosomes, tracing lines, gamete cells with computed labels and an assumptions box",
+      "teachingReason": "Traces one parent's alleles back to its own parents and forward into four gamete types, with the assumptions stated",
+      "narrationCue": "one set of chromosomes from each / capital Y / capital R / each pair lines up either way / like the grandparents / two new mixes / If both ways are equally likely, and nothing mutates / a quarter",
+      "motionPurpose": "Three rows draw in, tracing lines run from the set-cards to the chromosomes, a coin flip plays on each pair, four gamete cells drop into the bottom row with lines back to the grandparents, and each gets a quarter",
+      "motionRole": "explain",
+      "onScreenChange": "The board draws \"its parents\" (plum Y and R, teal y and r), \"parent plant\" and \"gametes\"; on \"one set of chromosomes from each\" tracing lines run up to the set-cards and the tag \"letters are labels only; which version shows: next video\" lands; on \"each pair lines up either way\" the coin flip plays once over each pair; on \"like the grandparents\" gametes \"Y R\" and \"y r\" drop in with lines back to their grandparent card; on \"two new mixes\" gametes \"Y r\" and \"y R\" drop in with amber outline rings and \"new combination\"; on \"If both ways are equally likely, and nothing mutates\" the box \"assume: genes on different chromosomes; either way equally likely; no mutation\" writes; on \"a quarter\" each gamete shows \"1/4\"",
+      "motionTools": [
+        "OriginBoard draw",
+        "TwoWays coin flip",
+        "tracing line",
+        "gamete drop",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the four gametes"
+    },
+    {
+      "sceneId": "same-chromosome",
+      "visualDecision": "adjust",
+      "visualReference": "Origin board zoomed to the long pair with genes A, B, a and b, the crossover swap between the genes, a gamete strip adding the swapped types and eight cell icons showing swaps in two",
+      "teachingReason": "Shows that genes on one chromosome travel together until a swap between them, and why the swapped combinations are less common",
+      "narrationCue": "same / keep their alleles together / Crossing over is what splits them up / capital A and small b / small a with capital B / only some cells / usually less common",
+      "motionPurpose": "A ghost strip shows two kinds, the swap plays between the genes, the strip adds two kinds with amber rings, and eight cell icons show a swap in only two while the swapped gametes shrink",
+      "motionRole": "explain",
+      "onScreenChange": "The middle row zooms to the long pair with A and B on the plum chromosome and a and b on the teal; on \"keep their alleles together\" a strip shows \"A B\" and \"a b\" with the bracket \"no crossing over: 2 kinds\"; on \"Crossing over is what splits them up\" the swap plays between the A and B levels; on \"capital A and small b\" and \"small a with capital B\" the swapped chromatids light and the strip adds \"A b\" and \"a B\" with amber rings and \"new combinations, same alleles\"; on \"only some cells\" eight cell icons appear with a swap mark in two of them and \"swap here in some cells only\"; on \"usually less common\" the \"A b\" and \"a B\" gametes shrink beside the larger ones",
+      "motionTools": [
+        "zoom",
+        "CrossOver swap",
+        "gamete strip",
+        "tag pop",
+        "size change"
+      ],
+      "holdPurpose": "Hold about 1 second on the shrunken gametes"
+    },
+    {
+      "sceneId": "fertilisation",
+      "visualDecision": "adjust",
+      "visualReference": "Ovary plate with three coded pollen tubes, the pod with two-label seed tags, a 4 by 4 pairing grid and the painted sperm and egg with number tickers",
+      "teachingReason": "Shows that random fertilisation multiplies the gamete types, first with a pea pod and then with the human number held back from the meiosis video",
+      "narrationCue": "pollen tube / chance / a different pair of gametes / sixteen / For people / 70 trillion / before crossing over adds even more",
+      "motionPurpose": "Three tubes grow to different ovules and a different grain wins, the plate becomes the pod with a tag on each seed, the pairing grid fills to sixteen, and tickers run to about 70 trillion with a swap icon adding more",
+      "motionRole": "explain",
+      "onScreenChange": "The ovary plate returns with three pollen tubes tagged \"Y R\", \"y r\" and \"Y r\"; on \"pollen tube\" they grow to different ovules; on \"chance\" one hesitates and a different grain wins with the tag \"chance\"; on \"a different pair of gametes\" the plate crossfades to the pod and each seed gets a two-label tag; on \"sixteen\" the grid fills with 16 paired labels and \"4 x 4 = 16\" with \"pairings only; which seed looks how: next video\"; on \"For people\" the board wipes to the sperm and egg plates each with the ticker \"2^23 = 8,388,608\" and the product ticker runs; on \"70 trillion\" it reads about 70 trillion; on \"before crossing over adds even more\" a swap icon adds a plus",
+      "motionTools": [
+        "pollen tube grow",
+        "plate crossfade",
+        "PairingGrid fill",
+        "NumberTicker",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the ticker"
+    },
+    {
+      "sceneId": "siblings",
+      "visualDecision": "adjust",
+      "visualReference": "Full origin board with grandparent cards, two parent cells and two seed cells traced up, circled differences between the seeds, two painted seeds and a ghost amber bead that is crossed",
+      "teachingReason": "Explains that siblings share alleles but differ by combination, with no new mutation needed",
+      "narrationCue": "came from the same two parents / different combination / almost never genetically identical / No new mutation is needed",
+      "motionPurpose": "Tracing lines run from every bead in both seeds up to a parent, the differences are circled, two different painted seeds appear and a ghost amber bead is drawn and crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The board returns full; on \"came from the same two parents\" every bead in both seed cells traces up to a parent bead, all white; on \"different combination\" the two letter rows sit side by side with scribble rings round the differences; on \"almost never genetically identical\" a yellow round seed plate and a green wrinkled seed plate sit under the cells; on \"No new mutation is needed\" a ghost amber bead appears and takes a grey cross with \"no new allele needed\"",
+      "motionTools": [
+        "tracing line",
+        "scribbleEllipse",
+        "plate slide",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second on the crossed bead"
+    },
+    {
+      "sceneId": "mutation",
+      "visualDecision": "adjust",
+      "visualReference": "DNA ladder stretch with an unrepaired mismatch, a jar of red-eyed fly plates with one turning white-eyed, offspring flies and a fly outline with a gut cell and an egg or sperm line",
+      "teachingReason": "Shows mutation as the only source of a new allele and the condition for it to be inherited",
+      "narrationCue": "mutation / a copying error that isn't repaired / red-eyed fruit flies / white / passed it on / a cell that makes eggs or sperm / gut cell",
+      "motionPurpose": "One base pair mismatches and stays while the allele bead turns amber, a red-eyed fly turns white-eyed, offspring flies carry the new allele tag, and a gut cell mutation stops at the fly while an egg or sperm line mutation travels on",
+      "motionRole": "explain",
+      "onScreenChange": "The ladder draws; on \"mutation\" the allele bead above it is ready; on \"a copying error that isn't repaired\" one base pair mismatches in amber with \"copying error, not repaired\" and the bead turns amber with \"new allele\"; on \"red-eyed fruit flies\" five red-eyed fly plates sit in a jar outline; on \"white\" one crossfades to the white-eyed plate with an amber ring; on \"passed it on\" offspring flies appear with \"the new allele is inherited\"; on \"a cell that makes eggs or sperm\" the fly outline shows two cell lines; on \"gut cell\" its amber bead ends with a cross and \"stays in that fly\" while the egg or sperm line bead travels into a gamete and an offspring with a tick",
+      "motionTools": [
+        "DrawPath",
+        "bead recolour",
+        "plate crossfade",
+        "arrow travel",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second on the two cell lines"
+    },
+    {
+      "sceneId": "genetic-or-environmental",
+      "visualDecision": "adjust",
+      "visualReference": "Variation split: the blue and pink hydrangea plates on two soil strips beside four pea seeds with letter tags, same conditions strip and gamete arrows",
+      "teachingReason": "Separates genetic from environmental variation and shows that only genetic differences are inherited",
+      "narrationCue": "hydrangea cuttings / environment / genetic / same conditions / only genetic differences are inherited",
+      "motionPurpose": "Same conditions are applied to both panels, the hydrangeas converge on one colour while the seeds still differ, and a gamete arrow leaves each panel carrying unchanged or different letters",
+      "motionRole": "explain",
+      "onScreenChange": "The left panel \"environmental variation\" shows the two hydrangea plates with \"= genotype\" and the tag \"B7\"; the right panel \"genetic variation\" shows four pea seeds with letter tags; on \"hydrangea cuttings\" the left bracket lights; on \"environment\" a soil chip pulses; on \"genetic\" the seed tags pulse; on \"same conditions\" the right strip is labelled and the seeds still differ (\"differences remain: genetic\") while the two plants move onto one strip and turn the same colour (\"differences vanish: environmental\"); on \"only genetic differences are inherited\" a gamete arrow leaves the hydrangea with an unchanged gene card and one leaves the seeds with their different letters, ticked",
+      "motionTools": [
+        "VariationSplit panels",
+        "plate slide",
+        "plate crossfade",
+        "arrow travel",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second on the two gamete arrows"
+    },
+    {
+      "sceneId": "why-it-matters",
+      "visualDecision": "adjust",
+      "visualReference": "Row of eight painted seeds on a soil strip with a weather chip, then a split into one generation with a big ticker icon and long periods with a timeline of rare amber beads",
+      "teachingReason": "Says why variation matters and which source works on which timescale",
+      "narrationCue": "when conditions change / crossing over, assortment and fertilisation / Mutation is rare / every new allele",
+      "motionPurpose": "A dry spell crosses the seeds so some grey and some sprout, then the board splits into one generation with a combinations ticker and long periods with rare amber beads that are then mixed into white beads",
+      "motionRole": "explain",
+      "onScreenChange": "On \"when conditions change\" a dry soil chip slides across, some seeds grey and others sprout a shoot with \"some survive: the population continues\"; the board splits; on \"crossing over, assortment and fertilisation\" the left panel \"one generation\" shows three chips and a ticker icon \"huge numbers of combinations\"; on \"Mutation is rare\" the right panel \"long periods\" shows an amber bead appearing rarely; on \"every new allele\" each amber bead is copied into white-bead reshuffles with \"mutation supplies new alleles; reshuffling mixes them\"",
+      "motionTools": [
+        "weather chip slide",
+        "plate recolour",
+        "panel split",
+        "timeline write-on",
+        "bead copy"
+      ],
+      "holdPurpose": "Hold about 1 second on the timeline"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Three large amber handwritten words with underlined first letters and source chips, a reshuffle bracket and a mutation line with an amber bead",
+      "teachingReason": "Gives a reusable aid for the four sources after all four are explained",
+      "narrationCue": "Cross, Independently, Randomly / reshuffle / only Mutation makes new",
+      "motionPurpose": "Three words write on with their first letters underlined, a bracket groups them as reshuffling, and the mutation line writes with an amber-filled bead",
+      "motionRole": "explain",
+      "onScreenChange": "The words \"Cross\", \"Independently\" and \"Randomly\" write on in amber with the first letters underlined and small chips \"crossing over\", \"independent assortment\" and \"random fertilisation\" beneath; a bracket labelled \"reshuffle\" groups them; on \"only Mutation makes new\" the line writes on beneath with an amber-filled bead",
+      "motionTools": [
+        "HandText write-on",
+        "underline draw",
+        "bracket draw",
+        "bead recolour"
+      ],
+      "holdPurpose": "Hold half a second so the aid can be copied"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Cleared card headed with a fruit fly cell, the cell plate with two chromosome pairs and allele beads, an assumptions box, two demands and the countdown ring",
+      "teachingReason": "Unseen modelling item on genes on one pair and a third on another pair, with every condition visible and nothing answer-bearing",
+      "narrationCue": "fruit fly's ovary / D and E / no crossing over / crossing over happens between the D and E genes / less common / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold while the whole card stays visible",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the card writes on headed \"A cell in a fruit fly's ovary, making eggs\" with a small fly plate; the cell plate shows the long pair with D and E on one chromosome and d and e on the other and the short pair with F and f; the box \"assume: no mutation; the two pairs line up independently\" and demands (a) and (b) with two answer boxes stay visible; the countdown ring starts after \"Pause here to answer.\" and the card stays during and after",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "plate slide"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The card shrunk to a strip with travel together brackets, computed gamete cells, a swap mark with four smaller ringed gametes and one crossed wrong chip",
+      "teachingReason": "Gives the model answer in stages: four types with no crossing over, four more with a swap, why they are rarer, then corrects the all eight slip",
+      "narrationCue": "stays with capital E / four / Crossing over between the genes / four more / only some cells / listed all eight as equally common",
+      "motionPurpose": "Brackets join D with E and d with e, four gamete cells drop in, a swap mark draws and four smaller ringed cells follow, and the equal-eight chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The card shrinks to a strip; on \"stays with capital E\" brackets \"travel together\" join the D-E and d-e chromosomes; four gamete cells drop in and on \"four\" the line \"(a) DEF, DEf, deF, def\" writes; on \"Crossing over between the genes\" a swap mark draws and four smaller cells with amber rings drop in; on \"four more\" the line \"(b) DeF, Def, dEF, dEf\" writes; on \"only some cells\" the line \"less common: a crossover between D and E happens in only some cells\" writes; on \"listed all eight as equally common\" the chip writes and takes a grey cross with \"D and E are on the same chromosome\"",
+      "motionTools": [
+        "bracket draw",
+        "gamete drop",
+        "CrossOver swap",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about 1 second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "Cleared card with two columns: runner plants on sunny and shady beds and seedling plants on one sunny bed with a pollination chip, two demands and the countdown ring",
+      "teachingReason": "Unseen explain and justify item on clones against seedlings with every condition visible and nothing answer-bearing",
+      "narrationCue": "runners / seeds / Explain the source of the variation in each group / which group's differences could be passed on through seeds / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold while both columns and both demands stay visible",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; the left column \"Group A: from runners\" shows the runner plate with lines to plants on beds tagged \"sunny bed (10)\" and \"shady bed (10)\" and \"fruit size differs between beds\"; the right column \"Group B: from seeds\" shows seedlings on \"sunny bed (20)\" with the chip \"pollinated by another plant\" and \"fruit size, shape and colour vary\"; the grower's plant sits small at the top; demands (a) and (b) with two answer boxes stay; the countdown ring starts after \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "plate slide"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The card shrunk to a strip with an equals-genotype bracket on the runner plants, sun and shade chips, letter tags on the seedlings, reshuffle chips and one crossed wrong chip",
+      "teachingReason": "Gives the model answer in stages: clones differ by environment, seedlings by genetics, only the seedlings' differences are inherited, then corrects the shade slip",
+      "narrationCue": "clones, with the same genotype / environment / same bed / different gametes / Only Group B's differences can be passed on / the shady plants will pass on small fruit",
+      "motionPurpose": "An equals-genotype bracket links the runner plants and the sun and shade chips light, the seedling bed glows as the same conditions and each seedling gets a different letter tag, then the inheritance line writes and the shady chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The card shrinks to a strip; on \"clones, with the same genotype\" an \"= genotype\" bracket links the left plants; on \"environment\" the sun and shade chips light and \"(a) A: clones, same genotype; differences from the environment (light)\" writes; on \"same bed\" the right bed glows \"same conditions\"; on \"different gametes\" each seedling gets a different small letter tag and the three reshuffle chips light and \"B: same conditions; different genotypes from meiosis and fertilisation: genetic\" writes; on \"Only Group B's differences can be passed on\" \"(b) B: genetic differences are inherited; A's environmental differences are not\" writes; on \"the shady plants will pass on small fruit\" the chip writes and takes a grey cross with \"environment does not change the alleles\"",
+      "motionTools": [
+        "bracket draw",
+        "chip light",
+        "tag pop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three chips writing on one per cue, with an amber bead on the new allele chip, and two next chips with a kit icon and a pea seed",
+      "teachingReason": "Packs the lesson into a sort-first rule and hands off to modelling and Punnett squares",
+      "narrationCue": "crossing over, assortment and fertilisation / mutation in the egg or sperm line / environment / Next",
+      "motionPurpose": "Three chips write on one per cue and two next chips slide in at the lower right",
+      "motionRole": "explain",
+      "onScreenChange": "The chips \"new combinations: crossing over, assortment, fertilisation\", \"new allele: mutation in the egg or sperm line\" (with an amber bead) and \"same genotype, different phenotype: environment\" write on as each is said; on \"Next\" the chips \"Next: model it yourself\" with a small bead-and-card kit icon and \"Then: Punnett squares and pedigrees\" with a small pea seed slide in",
+      "motionTools": [
+        "HandText write-on",
+        "chip slide",
+        "bead recolour"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes and the memory line appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b8-learning-review.md",
+      "sha256": "50dbc1f0a09b4e77f048fc5815f93692ef9d9564bfac47b6cf76b85a9c28af9a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b8-claude-science-check.md",
+      "sha256": "768047189c4f44ead2ef623d4a081d03f8ffb2dd55d30bd6d14b4c0e07efeb26"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

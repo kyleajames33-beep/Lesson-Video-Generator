@@ -1,0 +1,7512 @@
+{
+  "title": "Will mixing these solutions form a precipitate? Qsp against Ksp, and the common ion effect",
+  "subtitle": "When two solutions are mixed, how can you predict whether a precipitate will form, and why does adding an ion that is already there make a salt less soluble?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 19,
+  "lessonIntent": "Define Qsp as the Ksp expression with current concentrations, compare Qsp with Ksp to predict a precipitate, find each ion concentration after mixing from moles over the total volume, justify a prediction with a referenced Ksp, explain the common ion effect as Qsp exceeding Ksp with Ksp unchanged, calculate the solubility of a 1 : 1 salt in a common ion solution with the approximation checked, and apply the method to an unseen lead iodide mixture and an unseen calcium sulfate case.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 771,
+      "voiceover": {
+        "text": "This is a kidney stone. Most are mainly calcium oxalate, which the solubility rules call insoluble. And urine always contains some calcium ions and some oxalate ions. Yet most of the time, no stone forms. So \"insoluble\" can't be the whole story. A solid only forms when there are enough ions. How many is enough?",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/hook.9fe750965b4f.mp3",
+        "startFrame": 0,
+        "endFrame": 711
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "This",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 693,
+          "endMs": 747,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " kidney",
+          "startMs": 800,
+          "endMs": 1120,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " stone.",
+          "startMs": 1200,
+          "endMs": 2080,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " Most",
+          "startMs": 2240,
+          "endMs": 2400,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 2440,
+          "endMs": 2480,
+          "timestampMs": 2460,
+          "confidence": null
+        },
+        {
+          "text": " mainly",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 3040,
+          "endMs": 3440,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " oxalate,",
+          "startMs": 3560,
+          "endMs": 4240,
+          "timestampMs": 3900,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 4360,
+          "endMs": 4480,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4520,
+          "endMs": 4560,
+          "timestampMs": 4540,
+          "confidence": null
+        },
+        {
+          "text": " solubility",
+          "startMs": 4640,
+          "endMs": 5200,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " rules",
+          "startMs": 5360,
+          "endMs": 5680,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " call",
+          "startMs": 5840,
+          "endMs": 6000,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " insoluble.",
+          "startMs": 6160,
+          "endMs": 7440,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " urine",
+          "startMs": 7680,
+          "endMs": 8080,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 8160,
+          "endMs": 8560,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " contains",
+          "startMs": 8840,
+          "endMs": 9120,
+          "timestampMs": 8980,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 9200,
+          "endMs": 9360,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 9440,
+          "endMs": 9920,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " ions",
+          "startMs": 10000,
+          "endMs": 10400,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10480,
+          "endMs": 10720,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 10800,
+          "endMs": 11040,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " oxalate",
+          "startMs": 11120,
+          "endMs": 11600,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " ions.",
+          "startMs": 11680,
+          "endMs": 12640,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " Yet",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 12960,
+          "endMs": 13200,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 13240,
+          "endMs": 13280,
+          "timestampMs": 13260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " time,",
+          "startMs": 13600,
+          "endMs": 14000,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 14080,
+          "endMs": 14240,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " stone",
+          "startMs": 14320,
+          "endMs": 14640,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " forms.",
+          "startMs": 14720,
+          "endMs": 15680,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 15800,
+          "endMs": 15920,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " \"insoluble\"",
+          "startMs": 16160,
+          "endMs": 17120,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 17240,
+          "endMs": 17440,
+          "timestampMs": 17340,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17640,
+          "endMs": 17680,
+          "timestampMs": 17660,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 17760,
+          "endMs": 17920,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " story.",
+          "startMs": 18000,
+          "endMs": 19120,
+          "timestampMs": 18560,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " solid",
+          "startMs": 19360,
+          "endMs": 19680,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 19840,
+          "endMs": 20080,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " forms",
+          "startMs": 20160,
+          "endMs": 20480,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 20560,
+          "endMs": 20640,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " enough",
+          "startMs": 21080,
+          "endMs": 21440,
+          "timestampMs": 21260,
+          "confidence": null
+        },
+        {
+          "text": " ions.",
+          "startMs": 21520,
+          "endMs": 22480,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " How",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 22720,
+          "endMs": 22880,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " enough?",
+          "startMs": 23120,
+          "endMs": 23680,
+          "timestampMs": 23400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "qsp-idea",
+      "type": "concept",
+      "durationInFrames": 838,
+      "voiceover": {
+        "text": "Ksp describes a saturated solution, at equilibrium. For the mixture in front of you right now, use the same expression with the concentrations you have at this moment. That's the ion product, Q s p. Just as Q is compared with K, it tells you which way things have to go. It uses the same powers too: for lead iodide, Qsp is lead times iodide squared.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-idea.fce37b4ca5b4.mp3",
+        "startFrame": 0,
+        "endFrame": 778
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Ksp",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " describes",
+          "startMs": 560,
+          "endMs": 1280,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " saturated",
+          "startMs": 1600,
+          "endMs": 2160,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " solution,",
+          "startMs": 2240,
+          "endMs": 3040,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium.",
+          "startMs": 3280,
+          "endMs": 4560,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4747,
+          "endMs": 4773,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " mixture",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " front",
+          "startMs": 5400,
+          "endMs": 5520,
+          "timestampMs": 5460,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5560,
+          "endMs": 5600,
+          "timestampMs": 5580,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 5680,
+          "endMs": 5840,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " right",
+          "startMs": 5960,
+          "endMs": 6080,
+          "timestampMs": 6020,
+          "confidence": null
+        },
+        {
+          "text": " now,",
+          "startMs": 6160,
+          "endMs": 6800,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7120,
+          "endMs": 7280,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 7400,
+          "endMs": 7520,
+          "timestampMs": 7460,
+          "confidence": null
+        },
+        {
+          "text": " expression",
+          "startMs": 7800,
+          "endMs": 8080,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8160,
+          "endMs": 8240,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " concentrations",
+          "startMs": 8520,
+          "endMs": 9200,
+          "timestampMs": 8860,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 9280,
+          "endMs": 9360,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 9440,
+          "endMs": 9600,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 9920,
+          "endMs": 10080,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " moment.",
+          "startMs": 10160,
+          "endMs": 11040,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " ion",
+          "startMs": 11520,
+          "endMs": 11840,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " product,",
+          "startMs": 11920,
+          "endMs": 12560,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 12880,
+          "endMs": 13040,
+          "timestampMs": 12960,
+          "confidence": null
+        },
+        {
+          "text": " p.",
+          "startMs": 13160,
+          "endMs": 13720,
+          "timestampMs": 13440,
+          "confidence": null
+        },
+        {
+          "text": " Just",
+          "startMs": 14160,
+          "endMs": 14320,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 14400,
+          "endMs": 14560,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 14640,
+          "endMs": 14960,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " compared",
+          "startMs": 15240,
+          "endMs": 15520,
+          "timestampMs": 15380,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 15640,
+          "endMs": 15760,
+          "timestampMs": 15700,
+          "confidence": null
+        },
+        {
+          "text": " K,",
+          "startMs": 15960,
+          "endMs": 16400,
+          "timestampMs": 16180,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16480,
+          "endMs": 16640,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " tells",
+          "startMs": 16680,
+          "endMs": 16880,
+          "timestampMs": 16780,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 17000,
+          "endMs": 17120,
+          "timestampMs": 17060,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 17240,
+          "endMs": 17360,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " things",
+          "startMs": 17800,
+          "endMs": 17920,
+          "timestampMs": 17860,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 18000,
+          "endMs": 18160,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18200,
+          "endMs": 18240,
+          "timestampMs": 18220,
+          "confidence": null
+        },
+        {
+          "text": " go.",
+          "startMs": 18320,
+          "endMs": 19120,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " uses",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 19920,
+          "endMs": 20080,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " powers",
+          "startMs": 20320,
+          "endMs": 20560,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " too:",
+          "startMs": 20640,
+          "endMs": 21440,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 21480,
+          "endMs": 21520,
+          "timestampMs": 21500,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 21600,
+          "endMs": 21760,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " iodide,",
+          "startMs": 21840,
+          "endMs": 22640,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 22720,
+          "endMs": 23440,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 23520,
+          "endMs": 23680,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 23760,
+          "endMs": 24240,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 24440,
+          "endMs": 24640,
+          "timestampMs": 24540,
+          "confidence": null
+        },
+        {
+          "text": " iodide",
+          "startMs": 24720,
+          "endMs": 25200,
+          "timestampMs": 24960,
+          "confidence": null
+        },
+        {
+          "text": " squared.",
+          "startMs": 25280,
+          "endMs": 25920,
+          "timestampMs": 25600,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "qsp-decision",
+      "type": "concept",
+      "durationInFrames": 771,
+      "voiceover": {
+        "text": "If Qsp is bigger than Ksp, there are more ions than a saturated solution can hold. Ions lock together, and a precipitate forms, until Qsp falls back to Ksp. If Qsp equals Ksp, the solution is just saturated. If Qsp is smaller, nothing precipitates: the solution could even dissolve more.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/qsp-decision.23dfae1b3c02.mp3",
+        "startFrame": 0,
+        "endFrame": 711
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "If",
+          "startMs": 0,
+          "endMs": 120,
+          "timestampMs": 60,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 160,
+          "endMs": 560,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 720,
+          "endMs": 1280,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " bigger",
+          "startMs": 1440,
+          "endMs": 1680,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 1920,
+          "endMs": 3040,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 3280,
+          "endMs": 3360,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " ions",
+          "startMs": 3760,
+          "endMs": 4160,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4360,
+          "endMs": 4400,
+          "timestampMs": 4380,
+          "confidence": null
+        },
+        {
+          "text": " saturated",
+          "startMs": 4480,
+          "endMs": 5040,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 5120,
+          "endMs": 5520,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 5600,
+          "endMs": 5760,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " hold.",
+          "startMs": 5840,
+          "endMs": 6560,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " Ions",
+          "startMs": 6880,
+          "endMs": 7280,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " lock",
+          "startMs": 7360,
+          "endMs": 7600,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " together,",
+          "startMs": 7680,
+          "endMs": 8240,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8280,
+          "endMs": 8320,
+          "timestampMs": 8300,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8400,
+          "endMs": 8440,
+          "timestampMs": 8420,
+          "confidence": null
+        },
+        {
+          "text": " precipitate",
+          "startMs": 8480,
+          "endMs": 9040,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " forms,",
+          "startMs": 9120,
+          "endMs": 9760,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " until",
+          "startMs": 9840,
+          "endMs": 10080,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 10240,
+          "endMs": 10560,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " falls",
+          "startMs": 10640,
+          "endMs": 11280,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " Ksp.",
+          "startMs": 11840,
+          "endMs": 12560,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 13360,
+          "endMs": 13680,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 13760,
+          "endMs": 14560,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 14720,
+          "endMs": 15680,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 16079.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16400,
+          "endMs": 16640,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 16720,
+          "endMs": 16960,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " saturated.",
+          "startMs": 17040,
+          "endMs": 18240,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 18320,
+          "endMs": 18400,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 18480,
+          "endMs": 19040,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " smaller,",
+          "startMs": 19400,
+          "endMs": 20080,
+          "timestampMs": 19740,
+          "confidence": null
+        },
+        {
+          "text": " nothing",
+          "startMs": 20160,
+          "endMs": 20480,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " precipitates:",
+          "startMs": 20600,
+          "endMs": 21600,
+          "timestampMs": 21100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21640,
+          "endMs": 21680,
+          "timestampMs": 21660,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 21760,
+          "endMs": 22240,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 22320,
+          "endMs": 22400,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " even",
+          "startMs": 22520,
+          "endMs": 22640,
+          "timestampMs": 22580,
+          "confidence": null
+        },
+        {
+          "text": " dissolve",
+          "startMs": 22680,
+          "endMs": 23120,
+          "timestampMs": 22900,
+          "confidence": null
+        },
+        {
+          "text": " more.",
+          "startMs": 23200,
+          "endMs": 23680,
+          "timestampMs": 23440,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "mixing-dilutes",
+      "type": "concept",
+      "durationInFrames": 694,
+      "voiceover": {
+        "text": "Here's the step most people miss. When two solutions are mixed, each ion spreads into the combined volume. Mix 50 millilitres with 50 millilitres, and every ion now has 100 millilitres to move in, so each concentration halves. Work out the concentrations after mixing first, then Qsp.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/mixing-dilutes.b0e4a9e019c6.mp3",
+        "startFrame": 0,
+        "endFrame": 634
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here's",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 360,
+          "endMs": 400,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " step",
+          "startMs": 480,
+          "endMs": 720,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 960,
+          "endMs": 1200,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 1280,
+          "endMs": 1600,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " miss.",
+          "startMs": 1680,
+          "endMs": 2320,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " When",
+          "startMs": 2560,
+          "endMs": 2800,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " solutions",
+          "startMs": 3040,
+          "endMs": 3520,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " mixed,",
+          "startMs": 3760,
+          "endMs": 4400,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 4480,
+          "endMs": 4720,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " ion",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " spreads",
+          "startMs": 5200,
+          "endMs": 5680,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 5800,
+          "endMs": 5920,
+          "timestampMs": 5860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5960,
+          "endMs": 6000,
+          "timestampMs": 5980,
+          "confidence": null
+        },
+        {
+          "text": " combined",
+          "startMs": 6080,
+          "endMs": 6560,
+          "timestampMs": 6320,
+          "confidence": null
+        },
+        {
+          "text": " volume.",
+          "startMs": 6640,
+          "endMs": 7400,
+          "timestampMs": 7020,
+          "confidence": null
+        },
+        {
+          "text": " Mix",
+          "startMs": 7680,
+          "endMs": 7920,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " 50",
+          "startMs": 8000,
+          "endMs": 8240,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 8320,
+          "endMs": 8880,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " 50",
+          "startMs": 9120,
+          "endMs": 9360,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " millilitres,",
+          "startMs": 9440,
+          "endMs": 10400,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10520,
+          "endMs": 10640,
+          "timestampMs": 10580,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 10720,
+          "endMs": 11040,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " ion",
+          "startMs": 11120,
+          "endMs": 11440,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " now",
+          "startMs": 11560,
+          "endMs": 11680,
+          "timestampMs": 11620,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 11800,
+          "endMs": 11920,
+          "timestampMs": 11860,
+          "confidence": null
+        },
+        {
+          "text": " 100",
+          "startMs": 12040,
+          "endMs": 12160,
+          "timestampMs": 12100,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 12240,
+          "endMs": 13120,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " move",
+          "startMs": 13360,
+          "endMs": 13520,
+          "timestampMs": 13440,
+          "confidence": null
+        },
+        {
+          "text": " in,",
+          "startMs": 13600,
+          "endMs": 14080,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14160,
+          "endMs": 14320,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 14400,
+          "endMs": 14640,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 14720,
+          "endMs": 15440,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " halves.",
+          "startMs": 15600,
+          "endMs": 16640,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " Work",
+          "startMs": 16720,
+          "endMs": 16880,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 16960,
+          "endMs": 17040,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " concentrations",
+          "startMs": 17280,
+          "endMs": 18080,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 18160,
+          "endMs": 18480,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " mixing",
+          "startMs": 18560,
+          "endMs": 18960,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " first,",
+          "startMs": 19040,
+          "endMs": 19840,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 19920,
+          "endMs": 20240,
+          "timestampMs": 20080,
+          "confidence": null
+        },
+        {
+          "text": " Qsp.",
+          "startMs": 20320,
+          "endMs": 21120,
+          "timestampMs": 20720,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "caso4-setup",
+      "type": "concept",
+      "durationInFrames": 963,
+      "voiceover": {
+        "text": "Try it. Equal volumes of 0.010 moles per litre calcium chloride and 0.010 moles per litre sodium sulfate are mixed. The solid that could form is calcium sulfate: the rules call it slightly soluble, and its Ksp is 4.93 times ten to the minus five. After mixing, the volume doubles, so calcium and sulfate are each 0.0050 moles per litre.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-setup.550d0537f49e.mp3",
+        "startFrame": 0,
+        "endFrame": 903
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Try",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 320,
+          "endMs": 560,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " Equal",
+          "startMs": 960,
+          "endMs": 1280,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " volumes",
+          "startMs": 1360,
+          "endMs": 1760,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1840,
+          "endMs": 2000,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " 0.010",
+          "startMs": 2080,
+          "endMs": 2720,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 2880,
+          "endMs": 4240,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 4480,
+          "endMs": 4720,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 4800,
+          "endMs": 5200,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " chloride",
+          "startMs": 5360,
+          "endMs": 5920,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6320,
+          "endMs": 6560,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " 0.010",
+          "startMs": 6720,
+          "endMs": 7360,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 7480,
+          "endMs": 8640,
+          "timestampMs": 8060,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 8720,
+          "endMs": 8800,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 8880,
+          "endMs": 9120,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 9200,
+          "endMs": 9600,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 9680,
+          "endMs": 10240,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 10320,
+          "endMs": 10480,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " mixed.",
+          "startMs": 10720,
+          "endMs": 11280,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 11600,
+          "endMs": 11760,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " solid",
+          "startMs": 11920,
+          "endMs": 12080,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " form",
+          "startMs": 12640,
+          "endMs": 12960,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 13280,
+          "endMs": 13760,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " sulfate:",
+          "startMs": 13840,
+          "endMs": 14800,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14840,
+          "endMs": 14880,
+          "timestampMs": 14860,
+          "confidence": null
+        },
+        {
+          "text": " rules",
+          "startMs": 14960,
+          "endMs": 15280,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " call",
+          "startMs": 15400,
+          "endMs": 15520,
+          "timestampMs": 15460,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " slightly",
+          "startMs": 15840,
+          "endMs": 16320,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " soluble,",
+          "startMs": 16400,
+          "endMs": 17200,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17240,
+          "endMs": 17280,
+          "timestampMs": 17260,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 17640,
+          "endMs": 18928,
+          "timestampMs": 18284,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " 4.93",
+          "startMs": 19440,
+          "endMs": 19680,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 19840,
+          "endMs": 20160,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20520,
+          "endMs": 20560,
+          "timestampMs": 20540,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 20640,
+          "endMs": 20960,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " five.",
+          "startMs": 21040,
+          "endMs": 21800,
+          "timestampMs": 21420,
+          "confidence": null
+        },
+        {
+          "text": " After",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " mixing,",
+          "startMs": 22480,
+          "endMs": 23040,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23120,
+          "endMs": 23160,
+          "timestampMs": 23140,
+          "confidence": null
+        },
+        {
+          "text": " volume",
+          "startMs": 23200,
+          "endMs": 23600,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " doubles,",
+          "startMs": 23680,
+          "endMs": 24480,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 24600,
+          "endMs": 24720,
+          "timestampMs": 24660,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 24880,
+          "endMs": 25200,
+          "timestampMs": 25040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25240,
+          "endMs": 25280,
+          "timestampMs": 25260,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 25360,
+          "endMs": 25840,
+          "timestampMs": 25600,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 25920,
+          "endMs": 26080,
+          "timestampMs": 26000,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 26160,
+          "endMs": 26400,
+          "timestampMs": 26280,
+          "confidence": null
+        },
+        {
+          "text": " 0.0050",
+          "startMs": 26720,
+          "endMs": 28880,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 29040,
+          "endMs": 29280,
+          "timestampMs": 29160,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 29360,
+          "endMs": 29520,
+          "timestampMs": 29440,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 29640,
+          "endMs": 30080,
+          "timestampMs": 29860,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "caso4-compare",
+      "type": "concept",
+      "durationInFrames": 1011,
+      "voiceover": {
+        "text": "Qsp is calcium times sulfate: 0.0050 times 0.0050, which is 2.5 times ten to the minus five. That's less than Ksp, so no precipitate forms. Now the trap. Without diluting, you'd get 0.010 times 0.010, 1.0 times ten to the minus four: four times too big, and bigger than Ksp, so you'd wrongly predict a solid.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/caso4-compare.2b9815f6c438.mp3",
+        "startFrame": 0,
+        "endFrame": 951
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Qsp",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 480,
+          "endMs": 1040,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 1120,
+          "endMs": 1680,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 1760,
+          "endMs": 2080,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " sulfate:",
+          "startMs": 2160,
+          "endMs": 3200,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " 0.0050",
+          "startMs": 3280,
+          "endMs": 3920,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 4040,
+          "endMs": 6000,
+          "timestampMs": 5020,
+          "confidence": null
+        },
+        {
+          "text": " 0.0050,",
+          "startMs": 6120,
+          "endMs": 8400,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " 2.5",
+          "startMs": 8920,
+          "endMs": 8960,
+          "timestampMs": 8940,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 9120,
+          "endMs": 10080,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10440,
+          "endMs": 10480,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 10560,
+          "endMs": 10880,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " five.",
+          "startMs": 10960,
+          "endMs": 11440,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 11920,
+          "endMs": 12160,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 12240,
+          "endMs": 12480,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 12720,
+          "endMs": 13600,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 13720,
+          "endMs": 13840,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 14080,
+          "endMs": 14240,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " precipitate",
+          "startMs": 14320,
+          "endMs": 14800,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " forms.",
+          "startMs": 14880,
+          "endMs": 15600,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16160,
+          "endMs": 16200,
+          "timestampMs": 16180,
+          "confidence": null
+        },
+        {
+          "text": " trap.",
+          "startMs": 16239.999999999998,
+          "endMs": 16720,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " Without",
+          "startMs": 17200,
+          "endMs": 17520,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " diluting,",
+          "startMs": 17600,
+          "endMs": 18320,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 18360,
+          "endMs": 18480,
+          "timestampMs": 18420,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 18560,
+          "endMs": 18720,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " 0.010",
+          "startMs": 18880,
+          "endMs": 19440,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 19600,
+          "endMs": 21040,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " 0.010,",
+          "startMs": 21160,
+          "endMs": 23120,
+          "timestampMs": 22140,
+          "confidence": null
+        },
+        {
+          "text": " 1.0",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 23440,
+          "endMs": 24400,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24640,
+          "endMs": 24720,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24760,
+          "endMs": 24800,
+          "timestampMs": 24780,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 24880,
+          "endMs": 25120,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " four:",
+          "startMs": 25280,
+          "endMs": 26160,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 26240,
+          "endMs": 26480,
+          "timestampMs": 26360,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 26640,
+          "endMs": 27040,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " too",
+          "startMs": 27120,
+          "endMs": 27280,
+          "timestampMs": 27200,
+          "confidence": null
+        },
+        {
+          "text": " big,",
+          "startMs": 27360,
+          "endMs": 27920,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28040,
+          "endMs": 28160,
+          "timestampMs": 28100,
+          "confidence": null
+        },
+        {
+          "text": " bigger",
+          "startMs": 28320,
+          "endMs": 28480,
+          "timestampMs": 28400,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 28560,
+          "endMs": 28640,
+          "timestampMs": 28600,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 28720,
+          "endMs": 29680,
+          "timestampMs": 29200,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 29760,
+          "endMs": 29920,
+          "timestampMs": 29840,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 30000,
+          "endMs": 30240,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " wrongly",
+          "startMs": 30360,
+          "endMs": 30560,
+          "timestampMs": 30460,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 30640,
+          "endMs": 30960,
+          "timestampMs": 30800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 31000,
+          "endMs": 31040,
+          "timestampMs": 31020,
+          "confidence": null
+        },
+        {
+          "text": " solid.",
+          "startMs": 31120,
+          "endMs": 31680,
+          "timestampMs": 31400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "pbso4-moles",
+      "type": "concept",
+      "durationInFrames": 1428,
+      "voiceover": {
+        "text": "When the volumes aren't equal, work through moles. 25.0 millilitres of 4.0 times ten to the minus three moles per litre lead nitrate is mixed with 75.0 millilitres of 2.0 times ten to the minus four moles per litre sodium sulfate. Moles of lead ions are concentration times volume: 1.0 times ten to the minus four. Divide by the total volume, 0.100 litres: lead is 1.0 times ten to the minus three moles per litre. Sulfate: 1.5 times ten to the minus five moles, over 0.100 litres, is 1.5 times ten to the minus four.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-moles.fd97d78913cf.mp3",
+        "startFrame": 0,
+        "endFrame": 1368
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "When",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 200,
+          "endMs": 240,
+          "timestampMs": 220,
+          "confidence": null
+        },
+        {
+          "text": " volumes",
+          "startMs": 320,
+          "endMs": 720,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " aren't",
+          "startMs": 880,
+          "endMs": 1120,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " equal,",
+          "startMs": 1200,
+          "endMs": 1840,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 2280,
+          "endMs": 2400,
+          "timestampMs": 2340,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 2480,
+          "endMs": 3120,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " 25.0",
+          "startMs": 3680,
+          "endMs": 4160,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 4320,
+          "endMs": 5680,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5840,
+          "endMs": 6080,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " 4.0",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 6400,
+          "endMs": 7440,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7680,
+          "endMs": 7760,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7840,
+          "endMs": 7920,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 8080,
+          "endMs": 8240,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 8400,
+          "endMs": 8560,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 8720,
+          "endMs": 8960,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 9200,
+          "endMs": 9440,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 9520,
+          "endMs": 9760,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " nitrate",
+          "startMs": 9840,
+          "endMs": 10400,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10800,
+          "endMs": 10960,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " mixed",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 11400,
+          "endMs": 11520,
+          "timestampMs": 11460,
+          "confidence": null
+        },
+        {
+          "text": " 75.0",
+          "startMs": 11600,
+          "endMs": 12160,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 12320,
+          "endMs": 13520,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " 2.0",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 14320,
+          "endMs": 15360,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 15400,
+          "endMs": 15440,
+          "timestampMs": 15420,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15680,
+          "endMs": 15720,
+          "timestampMs": 15700,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 15760,
+          "endMs": 16000,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 16160,
+          "endMs": 16320,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 16480,
+          "endMs": 16720,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 16960,
+          "endMs": 17200,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 17520,
+          "endMs": 17920,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " sulfate.",
+          "startMs": 18000,
+          "endMs": 18840,
+          "timestampMs": 18420,
+          "confidence": null
+        },
+        {
+          "text": " Moles",
+          "startMs": 19200,
+          "endMs": 19440,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 19680,
+          "endMs": 19840,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " ions",
+          "startMs": 19920,
+          "endMs": 20320,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 20400,
+          "endMs": 20560,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 20680,
+          "endMs": 21440,
+          "timestampMs": 21060,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 21520,
+          "endMs": 21840,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " volume:",
+          "startMs": 21920,
+          "endMs": 22880,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " 1.0",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 23200,
+          "endMs": 24240,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24600,
+          "endMs": 24640,
+          "timestampMs": 24620,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 24720,
+          "endMs": 24960,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " four.",
+          "startMs": 25120,
+          "endMs": 25440,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " Divide",
+          "startMs": 26000,
+          "endMs": 26320,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 26400,
+          "endMs": 26480,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26560,
+          "endMs": 26640,
+          "timestampMs": 26600,
+          "confidence": null
+        },
+        {
+          "text": " total",
+          "startMs": 26720,
+          "endMs": 27040,
+          "timestampMs": 26880,
+          "confidence": null
+        },
+        {
+          "text": " volume,",
+          "startMs": 27120,
+          "endMs": 27920,
+          "timestampMs": 27520,
+          "confidence": null
+        },
+        {
+          "text": " 0.100",
+          "startMs": 28000,
+          "endMs": 28640,
+          "timestampMs": 28320,
+          "confidence": null
+        },
+        {
+          "text": " litres:",
+          "startMs": 28720,
+          "endMs": 30880,
+          "timestampMs": 29800,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 30960,
+          "endMs": 31280,
+          "timestampMs": 31120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 31440,
+          "endMs": 31600,
+          "timestampMs": 31520,
+          "confidence": null
+        },
+        {
+          "text": " 1.0",
+          "startMs": 31680,
+          "endMs": 31760,
+          "timestampMs": 31720,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 31920,
+          "endMs": 32960,
+          "timestampMs": 32440,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 33040,
+          "endMs": 33120,
+          "timestampMs": 33080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 33200,
+          "endMs": 33280,
+          "timestampMs": 33240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33320,
+          "endMs": 33360,
+          "timestampMs": 33340,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 33440,
+          "endMs": 33680,
+          "timestampMs": 33560,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 33760,
+          "endMs": 34080,
+          "timestampMs": 33920,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 34240,
+          "endMs": 34480,
+          "timestampMs": 34360,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 34560,
+          "endMs": 34640,
+          "timestampMs": 34600,
+          "confidence": null
+        },
+        {
+          "text": " litre.",
+          "startMs": 34720,
+          "endMs": 35440,
+          "timestampMs": 35080,
+          "confidence": null
+        },
+        {
+          "text": " Sulfate:",
+          "startMs": 35760,
+          "endMs": 36720,
+          "timestampMs": 36240,
+          "confidence": null
+        },
+        {
+          "text": " 1.5",
+          "startMs": 36800,
+          "endMs": 36880,
+          "timestampMs": 36840,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 37040,
+          "endMs": 38000,
+          "timestampMs": 37520,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 38080,
+          "endMs": 38160,
+          "timestampMs": 38120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 38240,
+          "endMs": 38320,
+          "timestampMs": 38280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 38360,
+          "endMs": 38400,
+          "timestampMs": 38380,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 38480,
+          "endMs": 38800,
+          "timestampMs": 38640,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 38880,
+          "endMs": 39040,
+          "timestampMs": 38960,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 39200,
+          "endMs": 39840,
+          "timestampMs": 39520,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 40040,
+          "endMs": 40240,
+          "timestampMs": 40140,
+          "confidence": null
+        },
+        {
+          "text": " 0.100",
+          "startMs": 40360,
+          "endMs": 40880,
+          "timestampMs": 40620,
+          "confidence": null
+        },
+        {
+          "text": " litres,",
+          "startMs": 40960,
+          "endMs": 42720,
+          "timestampMs": 41840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 42800,
+          "endMs": 42960,
+          "timestampMs": 42880,
+          "confidence": null
+        },
+        {
+          "text": " 1.5",
+          "startMs": 43040,
+          "endMs": 43760,
+          "timestampMs": 43400,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 43920,
+          "endMs": 44240,
+          "timestampMs": 44080,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 44280,
+          "endMs": 44320,
+          "timestampMs": 44300,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 44480,
+          "endMs": 44560,
+          "timestampMs": 44520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 44600,
+          "endMs": 44640,
+          "timestampMs": 44620,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 44800,
+          "endMs": 44960,
+          "timestampMs": 44880,
+          "confidence": null
+        },
+        {
+          "text": " four.",
+          "startMs": 45120,
+          "endMs": 45600,
+          "timestampMs": 45360,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "pbso4-compare",
+      "type": "concept",
+      "durationInFrames": 776,
+      "voiceover": {
+        "text": "Qsp for lead sulfate is 1.0 times ten to the minus three, times 1.5 times ten to the minus four: 1.5 times ten to the minus seven. The data table gives Ksp as 2.53 times ten to the minus eight. Qsp is bigger, about six times, so a white precipitate of lead sulfate forms.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/pbso4-compare.c2dd30bc8fe9.mp3",
+        "startFrame": 0,
+        "endFrame": 716
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Qsp",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 480,
+          "endMs": 960,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 1040,
+          "endMs": 1200,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 1280,
+          "endMs": 1920,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " 1.0",
+          "startMs": 2320,
+          "endMs": 2480,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 2560,
+          "endMs": 3680,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3920,
+          "endMs": 4000,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4080,
+          "endMs": 4120,
+          "timestampMs": 4100,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 4160,
+          "endMs": 4480,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " three,",
+          "startMs": 4560,
+          "endMs": 5280,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 5440,
+          "endMs": 5600,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " 1.5",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 5840,
+          "endMs": 6960,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 7000,
+          "endMs": 7040,
+          "timestampMs": 7020,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 7560,
+          "endMs": 7760,
+          "timestampMs": 7660,
+          "confidence": null
+        },
+        {
+          "text": " four:",
+          "startMs": 7920,
+          "endMs": 8720,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " 1.5",
+          "startMs": 8760,
+          "endMs": 8800,
+          "timestampMs": 8780,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 8960,
+          "endMs": 10000,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10400,
+          "endMs": 10440,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 10480,
+          "endMs": 10800,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " seven.",
+          "startMs": 10880,
+          "endMs": 11280,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " table",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 13040,
+          "endMs": 13440,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 13520,
+          "endMs": 14080,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " 2.53",
+          "startMs": 14240,
+          "endMs": 14720,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 14800,
+          "endMs": 15840,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 15920,
+          "endMs": 16000,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16200,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16220,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 16320,
+          "endMs": 16560,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " eight.",
+          "startMs": 16720,
+          "endMs": 17600,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 17680,
+          "endMs": 18240,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18320,
+          "endMs": 18480,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " bigger,",
+          "startMs": 18560,
+          "endMs": 19120,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 19520,
+          "endMs": 19760,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " times,",
+          "startMs": 20000,
+          "endMs": 20640,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 20720,
+          "endMs": 20960,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " white",
+          "startMs": 21280,
+          "endMs": 21520,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " precipitate",
+          "startMs": 21600,
+          "endMs": 22160,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22200,
+          "endMs": 22240,
+          "timestampMs": 22220,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 22320,
+          "endMs": 22560,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 22640,
+          "endMs": 23120,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " forms.",
+          "startMs": 23200,
+          "endMs": 23840,
+          "timestampMs": 23520,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 284,
+      "voiceover": {
+        "text": "So here's the order. Dilute first. Then Qsp. Over Ksp, it falls out.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/memory-aid.882d27ac8775.mp3",
+        "startFrame": 0,
+        "endFrame": 224
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " here's",
+          "startMs": 320,
+          "endMs": 560,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 600,
+          "endMs": 640,
+          "timestampMs": 620,
+          "confidence": null
+        },
+        {
+          "text": " order.",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " Dilute",
+          "startMs": 1600,
+          "endMs": 2000,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " first.",
+          "startMs": 2080,
+          "endMs": 2640,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " Qsp.",
+          "startMs": 3600,
+          "endMs": 4720,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " Over",
+          "startMs": 5200,
+          "endMs": 5440,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 5520,
+          "endMs": 6480,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 6560,
+          "endMs": 6640,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " falls",
+          "startMs": 6800,
+          "endMs": 6960,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " out.",
+          "startMs": 7040,
+          "endMs": 7440,
+          "timestampMs": 7240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "common-ion",
+      "type": "concept",
+      "durationInFrames": 1193,
+      "voiceover": {
+        "text": "One more case. Here's a saturated silver chloride solution, with solid on the bottom. Now add some sodium chloride. Chloride is already part of this equilibrium, so it's a common ion. The chloride concentration jumps, so Qsp is suddenly bigger than Ksp. Silver ions and chloride ions lock onto the solid until Qsp is back down to Ksp: the equilibrium shifts left, as Le Chatelier's principle predicts. So less silver chloride stays dissolved. But Ksp itself hasn't changed: only temperature changes it.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion.97055e6c33cc.mp3",
+        "startFrame": 0,
+        "endFrame": 1133
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "One",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " case.",
+          "startMs": 480,
+          "endMs": 1160,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " Here's",
+          "startMs": 1440,
+          "endMs": 1680,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " saturated",
+          "startMs": 1880,
+          "endMs": 2480,
+          "timestampMs": 2180,
+          "confidence": null
+        },
+        {
+          "text": " silver",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " chloride",
+          "startMs": 2960,
+          "endMs": 3440,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " solution,",
+          "startMs": 3720,
+          "endMs": 4160,
+          "timestampMs": 3940,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " solid",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4880,
+          "endMs": 4920,
+          "timestampMs": 4900,
+          "confidence": null
+        },
+        {
+          "text": " bottom.",
+          "startMs": 4960,
+          "endMs": 5600,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 5920,
+          "endMs": 6240,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 6320,
+          "endMs": 6480,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 6560,
+          "endMs": 6640,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 6800,
+          "endMs": 7200,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " chloride.",
+          "startMs": 7280,
+          "endMs": 8160,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " Chloride",
+          "startMs": 8480,
+          "endMs": 8880,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 9200,
+          "endMs": 9600,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 9680,
+          "endMs": 9920,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 9960,
+          "endMs": 10000,
+          "timestampMs": 9980,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium,",
+          "startMs": 10240,
+          "endMs": 11040,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 11120,
+          "endMs": 11360,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 11400,
+          "endMs": 11520,
+          "timestampMs": 11460,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11560,
+          "endMs": 11600,
+          "timestampMs": 11580,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " ion.",
+          "startMs": 12000,
+          "endMs": 12680,
+          "timestampMs": 12340,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " chloride",
+          "startMs": 13120,
+          "endMs": 13440,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 13520,
+          "endMs": 14240,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " jumps,",
+          "startMs": 14400,
+          "endMs": 15120,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 15200,
+          "endMs": 15360,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 15520,
+          "endMs": 15920,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16000,
+          "endMs": 16480,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " suddenly",
+          "startMs": 16520,
+          "endMs": 16880,
+          "timestampMs": 16700,
+          "confidence": null
+        },
+        {
+          "text": " bigger",
+          "startMs": 17040,
+          "endMs": 17360,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 17440,
+          "endMs": 17520,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " Ksp.",
+          "startMs": 17680,
+          "endMs": 18400,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " Silver",
+          "startMs": 19120,
+          "endMs": 19440,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " ions",
+          "startMs": 19520,
+          "endMs": 19840,
+          "timestampMs": 19680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19920,
+          "endMs": 20000,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " chloride",
+          "startMs": 20160,
+          "endMs": 20560,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " ions",
+          "startMs": 20640,
+          "endMs": 20960,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " lock",
+          "startMs": 21120,
+          "endMs": 21360,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " onto",
+          "startMs": 21480,
+          "endMs": 21600,
+          "timestampMs": 21540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " solid",
+          "startMs": 21840,
+          "endMs": 22160,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " until",
+          "startMs": 22400,
+          "endMs": 22640,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 22800,
+          "endMs": 23120,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 23200,
+          "endMs": 23760,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 23880,
+          "endMs": 24000,
+          "timestampMs": 23940,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 24080,
+          "endMs": 24240,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " Ksp:",
+          "startMs": 24480,
+          "endMs": 25760,
+          "timestampMs": 25120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25800,
+          "endMs": 25840,
+          "timestampMs": 25820,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium",
+          "startMs": 25920,
+          "endMs": 26560,
+          "timestampMs": 26240,
+          "confidence": null
+        },
+        {
+          "text": " shifts",
+          "startMs": 26640,
+          "endMs": 26960,
+          "timestampMs": 26800,
+          "confidence": null
+        },
+        {
+          "text": " left,",
+          "startMs": 27120,
+          "endMs": 27680,
+          "timestampMs": 27400,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 27760,
+          "endMs": 27840,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " Le",
+          "startMs": 27880,
+          "endMs": 27920,
+          "timestampMs": 27900,
+          "confidence": null
+        },
+        {
+          "text": " Chatelier's",
+          "startMs": 28000,
+          "endMs": 28560,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " principle",
+          "startMs": 28640,
+          "endMs": 29040,
+          "timestampMs": 28840,
+          "confidence": null
+        },
+        {
+          "text": " predicts.",
+          "startMs": 29120,
+          "endMs": 29680,
+          "timestampMs": 29400,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 30240,
+          "endMs": 30400,
+          "timestampMs": 30320,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 30640,
+          "endMs": 30880,
+          "timestampMs": 30760,
+          "confidence": null
+        },
+        {
+          "text": " silver",
+          "startMs": 30960,
+          "endMs": 31280,
+          "timestampMs": 31120,
+          "confidence": null
+        },
+        {
+          "text": " chloride",
+          "startMs": 31360,
+          "endMs": 31840,
+          "timestampMs": 31600,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 31920,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32080,
+          "confidence": null
+        },
+        {
+          "text": " dissolved.",
+          "startMs": 32320,
+          "endMs": 33200,
+          "timestampMs": 32760,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 33520,
+          "endMs": 33600,
+          "timestampMs": 33560,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 33680,
+          "endMs": 34160,
+          "timestampMs": 33920,
+          "confidence": null
+        },
+        {
+          "text": " itself",
+          "startMs": 34240,
+          "endMs": 34720,
+          "timestampMs": 34480,
+          "confidence": null
+        },
+        {
+          "text": " hasn't",
+          "startMs": 34800,
+          "endMs": 35120,
+          "timestampMs": 34960,
+          "confidence": null
+        },
+        {
+          "text": " changed:",
+          "startMs": 35400,
+          "endMs": 36080,
+          "timestampMs": 35740,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 36280,
+          "endMs": 36480,
+          "timestampMs": 36380,
+          "confidence": null
+        },
+        {
+          "text": " temperature",
+          "startMs": 36720,
+          "endMs": 36960,
+          "timestampMs": 36840,
+          "confidence": null
+        },
+        {
+          "text": " changes",
+          "startMs": 37040,
+          "endMs": 37360,
+          "timestampMs": 37200,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 37440,
+          "endMs": 37760,
+          "timestampMs": 37600,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "common-ion-ice",
+      "type": "concept",
+      "durationInFrames": 1275,
+      "voiceover": {
+        "text": "How much less? Find silver chloride's solubility in 0.10 moles per litre sodium chloride, with Ksp 1.77 times ten to the minus ten. In the I C E table, silver starts at zero, but chloride starts at 0.10. s dissolves, so the equilibrium row is s, and 0.10 plus s. s is tiny next to 0.10, so 0.10 plus s is about 0.10. Keeping the s gives a quadratic. You can use it if you like, but HSC questions are written so you shouldn't need it.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-ice.77f39539a389.mp3",
+        "startFrame": 0,
+        "endFrame": 1215
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "How",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " less?",
+          "startMs": 560,
+          "endMs": 1240,
+          "timestampMs": 900,
+          "confidence": null
+        },
+        {
+          "text": " Find",
+          "startMs": 1520,
+          "endMs": 1840,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " silver",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " chloride's",
+          "startMs": 2240,
+          "endMs": 2720,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " solubility",
+          "startMs": 2800,
+          "endMs": 3520,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3680,
+          "endMs": 3840,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " 0.10",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 4320,
+          "endMs": 5760,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 6000,
+          "endMs": 6320,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 6400,
+          "endMs": 6800,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " chloride,",
+          "startMs": 6880,
+          "endMs": 7760,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 7840,
+          "endMs": 7920,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 8000,
+          "endMs": 9152,
+          "timestampMs": 8576,
+          "confidence": null
+        },
+        {
+          "text": " 1.77",
+          "startMs": 9440,
+          "endMs": 9600,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 9760,
+          "endMs": 10480,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10840,
+          "endMs": 10880,
+          "timestampMs": 10860,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " ten.",
+          "startMs": 11280,
+          "endMs": 11680,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12800,
+          "endMs": 12880,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " I",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 13120,
+          "endMs": 13280,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " E",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " table,",
+          "startMs": 13520,
+          "endMs": 14160,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " silver",
+          "startMs": 14240,
+          "endMs": 14560,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " starts",
+          "startMs": 14640,
+          "endMs": 14960,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " zero,",
+          "startMs": 15200,
+          "endMs": 15920,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 16000,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " chloride",
+          "startMs": 16160,
+          "endMs": 16720,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " starts",
+          "startMs": 16800,
+          "endMs": 17120,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 17200,
+          "endMs": 17280,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " 0.10.",
+          "startMs": 17360,
+          "endMs": 19360,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " dissolves,",
+          "startMs": 19680,
+          "endMs": 20480,
+          "timestampMs": 20080,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 20560,
+          "endMs": 20640,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20680,
+          "endMs": 20720,
+          "timestampMs": 20700,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium",
+          "startMs": 20800,
+          "endMs": 21440,
+          "timestampMs": 21120,
+          "confidence": null
+        },
+        {
+          "text": " row",
+          "startMs": 21520,
+          "endMs": 21760,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21840,
+          "endMs": 22080,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " s,",
+          "startMs": 22160,
+          "endMs": 22560,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22800,
+          "endMs": 22960,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " 0.10",
+          "startMs": 23040,
+          "endMs": 23280,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " plus",
+          "startMs": 23440,
+          "endMs": 24720,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " s.",
+          "startMs": 24800,
+          "endMs": 25200,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 26080,
+          "endMs": 26240,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26360,
+          "endMs": 26480,
+          "timestampMs": 26420,
+          "confidence": null
+        },
+        {
+          "text": " tiny",
+          "startMs": 26720,
+          "endMs": 26960,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " next",
+          "startMs": 27040,
+          "endMs": 27200,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 27280,
+          "endMs": 27360,
+          "timestampMs": 27320,
+          "confidence": null
+        },
+        {
+          "text": " 0.10,",
+          "startMs": 27440,
+          "endMs": 28960,
+          "timestampMs": 28200,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 29080,
+          "endMs": 29200,
+          "timestampMs": 29140,
+          "confidence": null
+        },
+        {
+          "text": " 0.10",
+          "startMs": 29360,
+          "endMs": 29520,
+          "timestampMs": 29440,
+          "confidence": null
+        },
+        {
+          "text": " plus",
+          "startMs": 29680,
+          "endMs": 30720,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 30960,
+          "endMs": 31280,
+          "timestampMs": 31120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 31440,
+          "endMs": 31520,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 31760,
+          "endMs": 32000,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " 0.10.",
+          "startMs": 32080,
+          "endMs": 33920,
+          "timestampMs": 33000,
+          "confidence": null
+        },
+        {
+          "text": " Keeping",
+          "startMs": 34000,
+          "endMs": 34240,
+          "timestampMs": 34120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 34320,
+          "endMs": 34400,
+          "timestampMs": 34360,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 34480,
+          "endMs": 34720,
+          "timestampMs": 34600,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 34760,
+          "endMs": 34880,
+          "timestampMs": 34820,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 34960,
+          "endMs": 35000,
+          "timestampMs": 34980,
+          "confidence": null
+        },
+        {
+          "text": " quadratic.",
+          "startMs": 35040,
+          "endMs": 35680,
+          "timestampMs": 35360,
+          "confidence": null
+        },
+        {
+          "text": " You",
+          "startMs": 36080,
+          "endMs": 36160,
+          "timestampMs": 36120,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 36240,
+          "endMs": 36320,
+          "timestampMs": 36280,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 36400,
+          "endMs": 36480,
+          "timestampMs": 36440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 36520,
+          "endMs": 36560,
+          "timestampMs": 36540,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 36640,
+          "endMs": 36720,
+          "timestampMs": 36680,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 36760,
+          "endMs": 36800,
+          "timestampMs": 36780,
+          "confidence": null
+        },
+        {
+          "text": " like,",
+          "startMs": 36880,
+          "endMs": 37520,
+          "timestampMs": 37200,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 37600,
+          "endMs": 37680,
+          "timestampMs": 37640,
+          "confidence": null
+        },
+        {
+          "text": " HSC",
+          "startMs": 37760,
+          "endMs": 38320,
+          "timestampMs": 38040,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 38400,
+          "endMs": 38720,
+          "timestampMs": 38560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 38800,
+          "endMs": 38880,
+          "timestampMs": 38840,
+          "confidence": null
+        },
+        {
+          "text": " written",
+          "startMs": 39040,
+          "endMs": 39200,
+          "timestampMs": 39120,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 39280,
+          "endMs": 39440,
+          "timestampMs": 39360,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 39520,
+          "endMs": 39600,
+          "timestampMs": 39560,
+          "confidence": null
+        },
+        {
+          "text": " shouldn't",
+          "startMs": 39680,
+          "endMs": 39840,
+          "timestampMs": 39760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 39920,
+          "endMs": 40080,
+          "timestampMs": 40000,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 40160,
+          "endMs": 40480,
+          "timestampMs": 40320,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "common-ion-solve",
+      "type": "concept",
+      "durationInFrames": 840,
+      "voiceover": {
+        "text": "Ksp is s times 0.10. Divide both sides by 0.10: s is 1.77 times ten to the minus nine. That's far under 5 per cent of 0.10, so dropping it was safe. In pure water, s would be the square root of Ksp, 1.33 times ten to the minus five, so it's now about seven and a half thousand times less.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/common-ion-solve.de40e883e4df.mp3",
+        "startFrame": 0,
+        "endFrame": 780
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Ksp",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 480,
+          "endMs": 1120,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 1200,
+          "endMs": 1520,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 1680,
+          "endMs": 2000,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " 0.10.",
+          "startMs": 2240,
+          "endMs": 3520,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " Divide",
+          "startMs": 4000,
+          "endMs": 4320,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " sides",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 5040,
+          "endMs": 5120,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " 0.10:",
+          "startMs": 5280,
+          "endMs": 6880,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 6960,
+          "endMs": 7200,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 7360,
+          "endMs": 7520,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " 1.77",
+          "startMs": 7600,
+          "endMs": 8080,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 8240,
+          "endMs": 9200,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 9280,
+          "endMs": 9360,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9600,
+          "endMs": 9640,
+          "timestampMs": 9620,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 9680,
+          "endMs": 10000,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " nine.",
+          "startMs": 10080,
+          "endMs": 10680,
+          "timestampMs": 10380,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 10880,
+          "endMs": 11200,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 11280,
+          "endMs": 11520,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 11600,
+          "endMs": 11840,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " 5",
+          "startMs": 11920,
+          "endMs": 12080,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 12160,
+          "endMs": 12320,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " cent",
+          "startMs": 12440,
+          "endMs": 12560,
+          "timestampMs": 12500,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 12600,
+          "endMs": 12640,
+          "timestampMs": 12620,
+          "confidence": null
+        },
+        {
+          "text": " 0.10,",
+          "startMs": 12720,
+          "endMs": 14000,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14080,
+          "endMs": 14240,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " dropping",
+          "startMs": 14400,
+          "endMs": 14720,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 14760,
+          "endMs": 14800,
+          "timestampMs": 14780,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 14880,
+          "endMs": 15040,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " safe.",
+          "startMs": 15240,
+          "endMs": 15680,
+          "timestampMs": 15460,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " pure",
+          "startMs": 16160,
+          "endMs": 16400,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " water,",
+          "startMs": 16480,
+          "endMs": 17120,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " s",
+          "startMs": 17200,
+          "endMs": 17360,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 17440,
+          "endMs": 17520,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " square",
+          "startMs": 17920,
+          "endMs": 18240,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " root",
+          "startMs": 18320,
+          "endMs": 18560,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 18800,
+          "endMs": 19760,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " 1.33",
+          "startMs": 19840,
+          "endMs": 20800,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 20960,
+          "endMs": 21280,
+          "timestampMs": 21120,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 21320,
+          "endMs": 21360,
+          "timestampMs": 21340,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21440,
+          "endMs": 21520,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 21840,
+          "endMs": 22000,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " five,",
+          "startMs": 22080,
+          "endMs": 22880,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 22920,
+          "endMs": 22960,
+          "timestampMs": 22940,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 23040,
+          "endMs": 23200,
+          "timestampMs": 23120,
+          "confidence": null
+        },
+        {
+          "text": " now",
+          "startMs": 23280,
+          "endMs": 23360,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 23440,
+          "endMs": 23680,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 23840,
+          "endMs": 24000,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24080,
+          "endMs": 24160,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24240,
+          "endMs": 24320,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 24440,
+          "endMs": 24560,
+          "timestampMs": 24500,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 24720,
+          "endMs": 25040,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 25120,
+          "endMs": 25360,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " less.",
+          "startMs": 25440,
+          "endMs": 26000,
+          "timestampMs": 25720,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 1107,
+      "voiceover": {
+        "text": "Your turn. 20.0 millilitres of 1.0 times ten to the minus three moles per litre lead nitrate is mixed with 30.0 millilitres of 2.0 times ten to the minus three moles per litre potassium iodide. The Ksp of lead iodide is 9.8 times ten to the minus nine. Will a precipitate form? Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-1.4bc086cbe136.mp3",
+        "startFrame": 0,
+        "endFrame": 771
+      },
+      "responseHold": {
+        "startFrame": 783,
+        "endFrame": 1083
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Your",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " turn.",
+          "startMs": 440,
+          "endMs": 920,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " 20.0",
+          "startMs": 1200,
+          "endMs": 1440,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 1520,
+          "endMs": 3040,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 3200,
+          "endMs": 3440,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " 1.0",
+          "startMs": 3520,
+          "endMs": 3600,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 3760,
+          "endMs": 4880,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 4960,
+          "endMs": 5120,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5320,
+          "endMs": 5360,
+          "timestampMs": 5340,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 5440,
+          "endMs": 5760,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 5840,
+          "endMs": 6000,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 6240,
+          "endMs": 6560,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 6800,
+          "endMs": 7120,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 7280,
+          "endMs": 7440,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " nitrate",
+          "startMs": 7520,
+          "endMs": 8080,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8480,
+          "endMs": 8640,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " mixed",
+          "startMs": 8720,
+          "endMs": 8960,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9040,
+          "endMs": 9200,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " 30.0",
+          "startMs": 9280,
+          "endMs": 9520,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " millilitres",
+          "startMs": 9680,
+          "endMs": 10960,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " 2.0",
+          "startMs": 11520,
+          "endMs": 11600,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 11760,
+          "endMs": 12800,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 12880,
+          "endMs": 12960,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13160,
+          "endMs": 13200,
+          "timestampMs": 13180,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 13920,
+          "endMs": 14240,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " litre",
+          "startMs": 14520,
+          "endMs": 14720,
+          "timestampMs": 14620,
+          "confidence": null
+        },
+        {
+          "text": " potassium",
+          "startMs": 14960,
+          "endMs": 15600,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " iodide.",
+          "startMs": 15680,
+          "endMs": 16640,
+          "timestampMs": 16160,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 16960,
+          "endMs": 17040,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 17120,
+          "endMs": 17520,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 17600,
+          "endMs": 18000,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 18160,
+          "endMs": 18320,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " iodide",
+          "startMs": 18400,
+          "endMs": 18960,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " 9.8",
+          "startMs": 19360,
+          "endMs": 20080,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 20320,
+          "endMs": 20640,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21000,
+          "endMs": 21040,
+          "timestampMs": 21020,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 21120,
+          "endMs": 21440,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " nine.",
+          "startMs": 21520,
+          "endMs": 22200,
+          "timestampMs": 21860,
+          "confidence": null
+        },
+        {
+          "text": " Will",
+          "startMs": 22480,
+          "endMs": 22640,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22680,
+          "endMs": 22720,
+          "timestampMs": 22700,
+          "confidence": null
+        },
+        {
+          "text": " precipitate",
+          "startMs": 22840,
+          "endMs": 23280,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " form?",
+          "startMs": 23360,
+          "endMs": 24080,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 24400,
+          "endMs": 24640,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 24720,
+          "endMs": 24880,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24960,
+          "endMs": 25040,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 25120,
+          "endMs": 25680,
+          "timestampMs": 25400,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1083,
+        "responseHoldStart": 783,
+        "pausePrompt": 783
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 1025,
+      "voiceover": {
+        "text": "Lead is 2.0 times ten to the minus five moles, over the total 0.0500 litres: 4.0 times ten to the minus four. Iodide is 1.2 times ten to the minus three. Qsp is lead times iodide squared: 5.8 times ten to the minus ten. That's less than Ksp, so no precipitate. If you forgot to square the iodide, you got 4.8 times ten to the minus seven, and wrongly predicted a solid.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-1.b0e25cd40fe6.mp3",
+        "startFrame": 0,
+        "endFrame": 965
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Lead",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 480,
+          "endMs": 720,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " 2.0",
+          "startMs": 800,
+          "endMs": 880,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 1040,
+          "endMs": 2160,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 2240,
+          "endMs": 2320,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 2800,
+          "endMs": 2960,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 3440,
+          "endMs": 4240,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 4360,
+          "endMs": 4480,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " total",
+          "startMs": 4720,
+          "endMs": 5120,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " 0.0500",
+          "startMs": 5440,
+          "endMs": 6000,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " litres:",
+          "startMs": 6080,
+          "endMs": 8560,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " 4.0",
+          "startMs": 8640,
+          "endMs": 8720,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 8800,
+          "endMs": 9920,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10280,
+          "endMs": 10320,
+          "timestampMs": 10300,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 10400,
+          "endMs": 10640,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " four.",
+          "startMs": 10800,
+          "endMs": 11440,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " Iodide",
+          "startMs": 11760,
+          "endMs": 12320,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12400,
+          "endMs": 12560,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " 1.2",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 12880,
+          "endMs": 13840,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 14080,
+          "endMs": 14160,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14200,
+          "endMs": 14240,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 14320,
+          "endMs": 14640,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 14720,
+          "endMs": 15600,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 15680,
+          "endMs": 16000,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16079.999999999998,
+          "endMs": 16720,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 16800,
+          "endMs": 17040,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 17200,
+          "endMs": 17520,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " iodide",
+          "startMs": 17600,
+          "endMs": 18080,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " squared:",
+          "startMs": 18160,
+          "endMs": 19120,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " 5.8",
+          "startMs": 19200,
+          "endMs": 19360,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 19440,
+          "endMs": 20320,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20760,
+          "endMs": 20800,
+          "timestampMs": 20780,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 20960,
+          "endMs": 21120,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " ten.",
+          "startMs": 21200,
+          "endMs": 21600,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 22000,
+          "endMs": 22240,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 22320,
+          "endMs": 22560,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 22800,
+          "endMs": 23680,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 23760,
+          "endMs": 23920,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 24160,
+          "endMs": 24320,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " precipitate.",
+          "startMs": 24400,
+          "endMs": 25200,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 25560,
+          "endMs": 25600,
+          "timestampMs": 25580,
+          "confidence": null
+        },
+        {
+          "text": " forgot",
+          "startMs": 25680,
+          "endMs": 26000,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26040,
+          "endMs": 26080,
+          "timestampMs": 26060,
+          "confidence": null
+        },
+        {
+          "text": " square",
+          "startMs": 26160,
+          "endMs": 26480,
+          "timestampMs": 26320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26520,
+          "endMs": 26560,
+          "timestampMs": 26540,
+          "confidence": null
+        },
+        {
+          "text": " iodide,",
+          "startMs": 26720,
+          "endMs": 27520,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 27560,
+          "endMs": 27600,
+          "timestampMs": 27580,
+          "confidence": null
+        },
+        {
+          "text": " got",
+          "startMs": 27720,
+          "endMs": 27840,
+          "timestampMs": 27780,
+          "confidence": null
+        },
+        {
+          "text": " 4.8",
+          "startMs": 27920,
+          "endMs": 28480,
+          "timestampMs": 28200,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 28640,
+          "endMs": 28880,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 28960,
+          "endMs": 29120,
+          "timestampMs": 29040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 29200,
+          "endMs": 29280,
+          "timestampMs": 29240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29320,
+          "endMs": 29360,
+          "timestampMs": 29340,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 29440,
+          "endMs": 29760,
+          "timestampMs": 29600,
+          "confidence": null
+        },
+        {
+          "text": " seven,",
+          "startMs": 29960,
+          "endMs": 30400,
+          "timestampMs": 30180,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 30480,
+          "endMs": 30560,
+          "timestampMs": 30520,
+          "confidence": null
+        },
+        {
+          "text": " wrongly",
+          "startMs": 30640,
+          "endMs": 30960,
+          "timestampMs": 30800,
+          "confidence": null
+        },
+        {
+          "text": " predicted",
+          "startMs": 31040,
+          "endMs": 31360,
+          "timestampMs": 31200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 31440,
+          "endMs": 31520,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " solid.",
+          "startMs": 31600,
+          "endMs": 32159.999999999996,
+          "timestampMs": 31880,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 920,
+      "voiceover": {
+        "text": "Last one. A beaker holds saturated calcium sulfate solution, with solid on the bottom. Solid sodium sulfate is stirred in and dissolves. The temperature doesn't change. What happens to the amount of calcium sulfate dissolved, and to its Ksp? Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/attempt-2.6498af806bd0.mp3",
+        "startFrame": 0,
+        "endFrame": 584
+      },
+      "responseHold": {
+        "startFrame": 596,
+        "endFrame": 896
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Last",
+          "startMs": 0,
+          "endMs": 280,
+          "timestampMs": 140,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " beaker",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " holds",
+          "startMs": 1760,
+          "endMs": 2080,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " saturated",
+          "startMs": 2160,
+          "endMs": 2720,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 2880,
+          "endMs": 3280,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 3440,
+          "endMs": 3840,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " solution,",
+          "startMs": 3920,
+          "endMs": 4640,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " solid",
+          "startMs": 4880,
+          "endMs": 5280,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 5360,
+          "endMs": 5440,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5480,
+          "endMs": 5520,
+          "timestampMs": 5500,
+          "confidence": null
+        },
+        {
+          "text": " bottom.",
+          "startMs": 5600,
+          "endMs": 6000,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " Solid",
+          "startMs": 6640,
+          "endMs": 6960,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 7120,
+          "endMs": 7520,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 7600,
+          "endMs": 8000,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8080,
+          "endMs": 8240,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " stirred",
+          "startMs": 8320,
+          "endMs": 8640,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8720,
+          "endMs": 8880,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " dissolves.",
+          "startMs": 9160,
+          "endMs": 9920,
+          "timestampMs": 9540,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " temperature",
+          "startMs": 10480,
+          "endMs": 10960,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 11120,
+          "endMs": 11440,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " change.",
+          "startMs": 11680,
+          "endMs": 12000,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " What",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " happens",
+          "startMs": 12880,
+          "endMs": 13200,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 13240,
+          "endMs": 13280,
+          "timestampMs": 13260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " amount",
+          "startMs": 13600,
+          "endMs": 13760,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 13800,
+          "endMs": 13840,
+          "timestampMs": 13820,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 13920,
+          "endMs": 14400,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 14480,
+          "endMs": 14880,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " dissolved,",
+          "startMs": 14920,
+          "endMs": 15840,
+          "timestampMs": 15380,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16000,
+          "endMs": 16160,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " Ksp?",
+          "startMs": 16640,
+          "endMs": 17360,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 18000,
+          "endMs": 18240,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 18320,
+          "endMs": 18560,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 18800,
+          "endMs": 19440,
+          "timestampMs": 19120,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 896,
+        "responseHoldStart": 596,
+        "pausePrompt": 596
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 598,
+      "voiceover": {
+        "text": "Sulfate is a common ion. It pushes Qsp above Ksp, so calcium sulfate precipitates, and less stays dissolved. Ksp stays the same, because the temperature hasn't changed. If you said Ksp goes down, you've mixed up the solubility with the constant.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/feedback-2.e0b449943271.mp3",
+        "startFrame": 0,
+        "endFrame": 538
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Sulfate",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 560,
+          "endMs": 680,
+          "timestampMs": 620,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 720,
+          "endMs": 800,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 880,
+          "endMs": 1280,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " ion.",
+          "startMs": 1360,
+          "endMs": 1840,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 2160,
+          "endMs": 2240,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " pushes",
+          "startMs": 2320,
+          "endMs": 2640,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 2800,
+          "endMs": 3120,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " above",
+          "startMs": 3200,
+          "endMs": 3920,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 4000,
+          "endMs": 5120,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 5360,
+          "endMs": 5760,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " sulfate",
+          "startMs": 5840,
+          "endMs": 6240,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " precipitates,",
+          "startMs": 6320,
+          "endMs": 7280,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 7520,
+          "endMs": 7840,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 7920,
+          "endMs": 8160,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " dissolved.",
+          "startMs": 8240,
+          "endMs": 8880,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 9760,
+          "endMs": 10240,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " same,",
+          "startMs": 10480,
+          "endMs": 10880,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11240,
+          "endMs": 11280,
+          "timestampMs": 11260,
+          "confidence": null
+        },
+        {
+          "text": " temperature",
+          "startMs": 11360,
+          "endMs": 11760,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " hasn't",
+          "startMs": 11840,
+          "endMs": 12000,
+          "timestampMs": 11920,
+          "confidence": null
+        },
+        {
+          "text": " changed.",
+          "startMs": 12080,
+          "endMs": 12640,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " said",
+          "startMs": 13440,
+          "endMs": 13600,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 13680,
+          "endMs": 14240,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " down,",
+          "startMs": 14640,
+          "endMs": 15280,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " you've",
+          "startMs": 15320,
+          "endMs": 15520,
+          "timestampMs": 15420,
+          "confidence": null
+        },
+        {
+          "text": " mixed",
+          "startMs": 15640,
+          "endMs": 15760,
+          "timestampMs": 15700,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 15800,
+          "endMs": 15840,
+          "timestampMs": 15820,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15920,
+          "endMs": 16000,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " solubility",
+          "startMs": 16079.999999999998,
+          "endMs": 16800,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 16880,
+          "endMs": 17040,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17080,
+          "endMs": 17120,
+          "timestampMs": 17100,
+          "confidence": null
+        },
+        {
+          "text": " constant.",
+          "startMs": 17200,
+          "endMs": 17920,
+          "timestampMs": 17560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 1128,
+      "voiceover": {
+        "text": "So, to predict a precipitate: find each ion's concentration after mixing, as moles over the total volume. Write Qsp with the same powers as Ksp, and compare it with Ksp from the data table. If Qsp is bigger, a precipitate forms. A common ion lowers solubility, but never changes Ksp. And a kidney stone can start to form when calcium and oxalate push Qsp past Ksp. Next: Module 6, acids and bases, where K comes back as K a.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/decision-rule.202b61396432.mp3",
+        "startFrame": 0,
+        "endFrame": 1068
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So,",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 640,
+          "endMs": 760,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 800,
+          "endMs": 1200,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1240,
+          "endMs": 1280,
+          "timestampMs": 1260,
+          "confidence": null
+        },
+        {
+          "text": " precipitate:",
+          "startMs": 1400,
+          "endMs": 2480,
+          "timestampMs": 1940,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " ion's",
+          "startMs": 3280,
+          "endMs": 3600,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " concentration",
+          "startMs": 3680,
+          "endMs": 4400,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 4560,
+          "endMs": 4880,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " mixing,",
+          "startMs": 4960,
+          "endMs": 5600,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 5920,
+          "endMs": 6320,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 6480,
+          "endMs": 6640,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6680,
+          "endMs": 6720,
+          "timestampMs": 6700,
+          "confidence": null
+        },
+        {
+          "text": " total",
+          "startMs": 6800,
+          "endMs": 7120,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " volume.",
+          "startMs": 7200,
+          "endMs": 7680,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " Write",
+          "startMs": 8240,
+          "endMs": 8560,
+          "timestampMs": 8400,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9120,
+          "endMs": 9520,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9600,
+          "endMs": 9680,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 9760,
+          "endMs": 10000,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " powers",
+          "startMs": 10080,
+          "endMs": 10480,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " Ksp,",
+          "startMs": 10800,
+          "endMs": 11840,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11880,
+          "endMs": 11920,
+          "timestampMs": 11900,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 12000,
+          "endMs": 12400,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 12480,
+          "endMs": 12560,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " Ksp",
+          "startMs": 12800,
+          "endMs": 13120,
+          "timestampMs": 12960,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 13200,
+          "endMs": 13520,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13560,
+          "endMs": 13600,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " table.",
+          "startMs": 14000,
+          "endMs": 14480,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 14960,
+          "endMs": 15040,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 15200,
+          "endMs": 15440,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 15520,
+          "endMs": 15840,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " bigger,",
+          "startMs": 15920,
+          "endMs": 16560,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16600,
+          "endMs": 16640,
+          "timestampMs": 16620,
+          "confidence": null
+        },
+        {
+          "text": " precipitate",
+          "startMs": 16720,
+          "endMs": 17280,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " forms.",
+          "startMs": 17520,
+          "endMs": 18120,
+          "timestampMs": 17820,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 18640,
+          "endMs": 18880,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " ion",
+          "startMs": 19040,
+          "endMs": 19360,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " lowers",
+          "startMs": 19440,
+          "endMs": 19760,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " solubility,",
+          "startMs": 19840,
+          "endMs": 20720,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " never",
+          "startMs": 21040,
+          "endMs": 21200,
+          "timestampMs": 21120,
+          "confidence": null
+        },
+        {
+          "text": " changes",
+          "startMs": 21360,
+          "endMs": 21760,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " Ksp.",
+          "startMs": 21840,
+          "endMs": 22640,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23200,
+          "endMs": 23240,
+          "timestampMs": 23220,
+          "confidence": null
+        },
+        {
+          "text": " kidney",
+          "startMs": 23280,
+          "endMs": 23600,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " stone",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 24000,
+          "endMs": 24080,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 24160,
+          "endMs": 24320,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " form",
+          "startMs": 24560,
+          "endMs": 24800,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 25040,
+          "endMs": 25200,
+          "timestampMs": 25120,
+          "confidence": null
+        },
+        {
+          "text": " calcium",
+          "startMs": 25280,
+          "endMs": 25760,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25840,
+          "endMs": 25920,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " oxalate",
+          "startMs": 26000,
+          "endMs": 26560,
+          "timestampMs": 26280,
+          "confidence": null
+        },
+        {
+          "text": " push",
+          "startMs": 26720,
+          "endMs": 26960,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " Qsp",
+          "startMs": 27040,
+          "endMs": 27360,
+          "timestampMs": 27200,
+          "confidence": null
+        },
+        {
+          "text": " past",
+          "startMs": 27440,
+          "endMs": 28160,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " Ksp.",
+          "startMs": 28240,
+          "endMs": 29320,
+          "timestampMs": 28780,
+          "confidence": null
+        },
+        {
+          "text": " Next:",
+          "startMs": 29760,
+          "endMs": 30240,
+          "timestampMs": 30000,
+          "confidence": null
+        },
+        {
+          "text": " Module",
+          "startMs": 30560,
+          "endMs": 30880,
+          "timestampMs": 30720,
+          "confidence": null
+        },
+        {
+          "text": " 6,",
+          "startMs": 31040,
+          "endMs": 31440,
+          "timestampMs": 31240,
+          "confidence": null
+        },
+        {
+          "text": " acids",
+          "startMs": 31680,
+          "endMs": 32080,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 32159.999999999996,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32200,
+          "confidence": null
+        },
+        {
+          "text": " bases,",
+          "startMs": 32320,
+          "endMs": 33200,
+          "timestampMs": 32760,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 33320,
+          "endMs": 33440,
+          "timestampMs": 33380,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 33520,
+          "endMs": 33840,
+          "timestampMs": 33680,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 33920,
+          "endMs": 34160,
+          "timestampMs": 34040,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 34240,
+          "endMs": 34480,
+          "timestampMs": 34360,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 34560,
+          "endMs": 34720,
+          "timestampMs": 34640,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 34800,
+          "endMs": 35040,
+          "timestampMs": 34920,
+          "confidence": null
+        },
+        {
+          "text": " a.",
+          "startMs": 35200,
+          "endMs": 35600,
+          "timestampMs": 35400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-C15-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 280,
+          "endMs": 320,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 360,
+          "endMs": 400,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 720,
+          "endMs": 1440,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2000,
+          "endMs": 2040,
+          "timestampMs": 2020,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2880,
+          "endMs": 3040,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3880,
+          "endMs": 4000,
+          "timestampMs": 3940,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4080,
+          "endMs": 4480,
+          "timestampMs": 4280,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}
