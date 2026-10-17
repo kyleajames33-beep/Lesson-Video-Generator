@@ -4,7 +4,7 @@ import {Enter} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, anaOffsets, ANA_GRID, Arrow, Bracket, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyCross, GreyTag, Hand, Heading,
-	INK, INK_SOFT, lerp, META_Y, NUC_FILL, NUC_LINE, NUC_X, Overlay, PenTap, Pill, Pole, prog, RX, RY, S, Scribble, vis, clamp01, PLUM, TEALC, CREAM,
+	INK, INK_SOFT, lerp, META_Y, NUC_FILL, NUC_LINE, NUC_X, Overlay, PenTap, Pill, Pole, prog, RX, RY, S, Scribble, vis, clamp01, PLUM, TEALC, CREAM, PCell, poleDX, ANA_X,
 } from './shared';
 
 const PLUM_INK = '#7e3a69';
@@ -68,15 +68,15 @@ export const SceneTracking: React.FC = () => {
 			<Overlay>
 				{/* mini cells */}
 				<g opacity={iconO(c.four)}>
-					<ellipse cx={col(0)} cy={ICY} rx={108} ry={82} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+					<PCell cx={col(0)} cy={ICY} rx={108} ry={82} />
 					{bars('start').map((b, i) => <Chrom key={i} x={col(0) + b.x} y={ICY} kind={b.ch.kind} color={b.ch.color} dup={0} s={MS} />)}
 				</g>
 				<g opacity={iconO(c.still)}>
-					<ellipse cx={col(1)} cy={ICY} rx={108} ry={82} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+					<PCell cx={col(1)} cy={ICY} rx={108} ry={82} />
 					{bars('copied').map((b, i) => <Chrom key={i} x={col(1) + b.x} y={ICY} kind={b.ch.kind} color={b.ch.color} dup={prog(f, c.still + 4, 24)} s={MS} />)}
 				</g>
 				<g opacity={iconO(c.becomes - 40)}>
-					<ellipse cx={col(2)} cy={ICY} rx={150} ry={82} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+					<PCell cx={col(2)} cy={ICY} rx={150} ry={82} />
 					{CH.map((ch, i) => {
 						const gx = ANA_GRID[i][0] * 0.5, gy = ANA_GRID[i][1] * 0.5;
 						const bx0 = col(2), by0 = ICY + META_Y[i] * 0.2;
@@ -89,7 +89,7 @@ export const SceneTracking: React.FC = () => {
 				<g opacity={iconO(c.divides)}>
 					{[-1, 1].map(side => (
 						<g key={side}>
-							<ellipse cx={col(3) + side * 80} cy={ICY} rx={70} ry={66} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+							<PCell cx={col(3) + side * 80} cy={ICY} rx={70} ry={66} />
 							{CH.map((ch, i) => <Chrom key={i} x={col(3) + side * 80 + (i - 1.5) * 30} y={ICY} kind={ch.kind} color={ch.color} dup={0} s={0.3} />)}
 						</g>
 					))}
@@ -168,7 +168,7 @@ export const SceneIdentical: React.FC = () => {
 	const c = cues(S('identical'), {
 		why: 'Why are the two', copies: 'copies of the same', pull: 'pull the two', opp: 'opposite ends', every: 'a copy of every', both: 'both sets', checks: 'also checks', attached: 'attached from both', before: 'before anaphase', starts: 'starts',
 	});
-	const PL = MC[0] - 426 * K, PR = MC[0] + 426 * K;
+	const PL = MC[0] - poleDX(RX * K * 1.05), PR = MC[0] + poleDX(RX * K * 1.05);
 	const my = (i: number) => MC[1] + META_Y[i] * K;
 	const hi = vis(f, c.copies, c.pull - 10, 10);
 	const fl = (i: number, ab: 'A' | 'B') => prog(f, c.pull + i * 7 + (ab === 'B' ? 3 : 0), 60);
@@ -187,11 +187,11 @@ export const SceneIdentical: React.FC = () => {
 				{/* the two new cells to be */}
 				{[300, 1620].map((x, k) => (
 					<g key={k} opacity={prog(f, c.pull - 10, 20)}>
-						<ellipse cx={x} cy={560} rx={205} ry={160} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} strokeDasharray={k ? undefined : undefined} />
+						<PCell cx={x} cy={560} rx={205} ry={160} />
 					</g>
 				))}
 				{/* the cell at metaphase */}
-				<CellBody cx={MC[0]} cy={MC[1]} rx={RX * K * 1.05} ry={RY * K * 1.05} sw={5} />
+				<CellBody cx={MC[0]} cy={MC[1]} rx={RX * K * 1.05} ry={RY * K * 1.05} spindle={1} />
 				{CH.map((ch, i) => {
 					const y = my(i);
 					const fm = i === missing ? fixed : 1;
@@ -203,8 +203,6 @@ export const SceneIdentical: React.FC = () => {
 					);
 				})}
 				{f >= c.checks && fixed < 1 ? <line x1={PR} y1={MC[1]} x2={MC[0] + 4} y2={my(missing)} stroke={GREY} strokeWidth={3.5} strokeDasharray="4 11" strokeLinecap="round" opacity={0.8 * (1 - fixed)} /> : null}
-				<Pole x={PL} y={MC[1]} at={-20} />
-				<Pole x={PR} y={MC[1]} at={-20} />
 				{/* checkpoint gate */}
 				<g opacity={gate} transform={`translate(0,${-(1 - gate) * 40})`}>
 					<rect x={MC[0] - 12} y={MC[1] - 210} width={24} height={420} rx={8} fill="#fff3d6" stroke={AMBER_INK} strokeWidth={4} opacity={0.8} />
@@ -258,7 +256,7 @@ const Mark: React.FC<{x: number; y: number; o?: number}> = ({x, y, o = 1}) => (
 );
 const SmallCell: React.FC<{x: number; y: number; r?: number; o?: number; marked?: boolean; dup?: number}> = ({x, y, r = 90, o = 1, marked, dup = 0}) => (
 	<g opacity={o}>
-		<ellipse cx={x} cy={y} rx={r} ry={r * 0.86} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+		<PCell cx={x} cy={y} rx={r} ry={r * 0.86} />
 		<Chrom x={x} y={y} kind="L" color={PLUM} dup={dup} s={0.6} />
 		{marked ? <Mark x={x + (dup > 0 ? 8 : 0) * 0.6} y={y - 22} /> : null}
 	</g>
@@ -292,17 +290,18 @@ export const SceneNotPerfect: React.FC = () => {
 	// stage C: metaphase and the mistake
 	const travel = prog(f, c.both, 90);
 	const e = 0.05 * prog(f, c.two, 16) + 0.95 * travel;
-	const PL = CX - 426, PR = CX + 426;
+	const PL = CX - poleDX(RX + 40), PR = CX + poleDX(RX + 40);
 	const my = (i: number) => CY + META_Y[i];
 	const offs = (i: number) => {
 		if (i !== 0) return anaOffsets(i, e);
 		const y0 = META_Y[0];
-		return {xa: lerp(0, 320, e), ya: lerp(0, 95 - y0, e), xb: lerp(0, 360, e), yb: lerp(0, -y0, e), sep: Math.min(1, e * 25)};
+		return {xa: lerp(0, ANA_X - 40, e), ya: lerp(0, 95 - y0, e), xb: lerp(0, ANA_X, e), yb: lerp(0, -y0, e), sep: Math.min(1, e * 25)};
 	};
 	const bend = prog(f, c.both - 4, 30);
 	const glow = vis(f, c.two, c.both, 10);
-	const rightPts: [number, number][] = [[CX + 320, CY - 95], [CX + 400, CY - 95], [CX + 360, CY], [CX + 320, CY + 95], [CX + 400, CY + 95]];
-	const leftPts: [number, number][] = [[CX - 400, CY - 95], [CX - 320, CY - 95], [CX - 320, CY + 95]];
+	const R = ANA_X;
+	const rightPts: [number, number][] = [[CX + R - 40, CY - 95], [CX + R + 40, CY - 95], [CX + R, CY], [CX + R - 40, CY + 95], [CX + R + 40, CY + 95]];
+	const leftPts: [number, number][] = [[CX - R - 40, CY - 95], [CX - R + 40, CY - 95], [CX - R + 40, CY + 95]];
 	const mag = prog(f, c.checks, 70);
 	const flagO = prog(f, c.checks + 54, 10) * (1 - 0.5 * prog(f, c.notall, 14));
 	return (
@@ -347,7 +346,7 @@ export const SceneNotPerfect: React.FC = () => {
 			{/* C: both chromatids to the same end */}
 			<div style={{opacity: sC, position: 'absolute', inset: 0}}>
 				<Overlay>
-					<CellBody rx={RX + 40} />
+					<CellBody rx={RX + 40} spindle={1} />
 					{CH.map((ch, i) => {
 						const o = offs(i);
 						return (
@@ -358,8 +357,6 @@ export const SceneNotPerfect: React.FC = () => {
 							</g>
 						);
 					})}
-					<Pole x={PL} y={CY} at={-20} />
-					<Pole x={PR} y={CY} at={-20} />
 					{CH.map((ch, i) => <Chrom key={i} x={CX} y={my(i)} kind={ch.kind} color={ch.color} dup={1} coil={1} bend={bend} {...offs(i)} da={i === 0 ? 1 : -1} db={1} hiA={i === 0 ? glow : 0} hiB={i === 0 ? glow : 0} />)}
 					<PenTap pts={rightPts} at={[0, 1, 2, 3, 4].map(k => c.extra + 16 + k * 14)} badge={[46, -30]} out={c.short} showPen={false} />
 					<PenTap pts={leftPts} at={[0, 1, 2].map(k => c.short + 16 + k * 14)} badge={[-46, -30]} showPen={false} />

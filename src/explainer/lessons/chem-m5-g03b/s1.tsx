@@ -12,7 +12,7 @@ import {FIVE, FiveCard, cardY} from '../chem-m5-g03a/board';
 const GLOW = '#f6d77a';
 
 /** Small sub-chip inside the type 3 card (card coordinates). `lit` lights it in pen colour. */
-const SubChip: React.FC<{x: number; y: number; text: string; at: number; lit?: number; size?: number}> = ({x, y, text, at, lit = 0, size = 26}) => {
+const SubChip: React.FC<{x: number; y: number; text: string; at: number; lit?: number; size?: number}> = ({x, y, text, at, lit = 0, size = 30}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 12);
 	if (o <= 0.01) return null;
@@ -24,7 +24,7 @@ const SubChip: React.FC<{x: number; y: number; text: string; at: number; lit?: n
 		</g>
 	);
 };
-export const subChipW = (text: string, size = 26) => tw(text, size, true) + 36;
+export const subChipW = (text: string, size = 30) => tw(text, size, true) + 36;
 
 // ---------- 1. Hook: five types, and where each is taught ----------
 const H = 'hook-board';
@@ -58,9 +58,9 @@ export const SceneHookB3: React.FC = () => {
 							lit={n === 5 ? P(KH.added) : 0} dim={n === 1 || n === 2 || n === 4 ? dimDone : 0}>
 							{n === 3 ? (
 								<>
-									<SubChip x={c1} y={72} text="perfect square" at={KH.ps} />
-									<SubChip x={c2} y={72} text="tiny K" at={KH.tiny} />
-									<SubChip x={c3} y={72} text="huge K" at={KH.huge} lit={hugeLit} />
+									<SubChip x={c1} y={70} text="perfect square" at={KH.ps} />
+									<SubChip x={c2} y={70} text="tiny K" at={KH.tiny} />
+									<SubChip x={c3} y={70} text="huge K" at={KH.huge} lit={hugeLit} />
 									<Sx x={c3 + subChipW('huge K') + 16} y={103} text="today" size={32} color={AMBER_INK} hand at={KH.huge + 8} />
 								</>
 							) : null}
@@ -144,7 +144,7 @@ export const SceneDecisionB3: React.FC = () => {
 							{r.see.map((s, k) => <Sx key={k} x={SEE_X} y={y + 44 + k * LH} text={s} size={30} color={AMBER_INK} hand at={r.seeAt + k * 8} />)}
 							{r.do.map((d, k) => <Sx key={k} x={DO_X} y={y + 44 + k * LH} text={d.text} size={d.size ?? 28} color={TEAL} weight={600} at={d.at} />)}
 							<Sx x={DO_X} y={y + 44 + doLines * LH} text={'slip: ' + r.slip} size={28} color={INK_SOFT} hand at={r.slipAt} />
-							{i === 2 ? <RulerIcon x={1560} y={y + 32} at={KD.test} /> : null}
+							{i === 2 ? <RulerIcon x={1600} y={y + 22} at={KD.test} /> : null}
 						</g>
 					);
 				})}

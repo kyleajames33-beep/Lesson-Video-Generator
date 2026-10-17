@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C10-claude-2026-10-16-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c10/lesson.json",
+  "lessonSha256": "6df6d787cb35a69efe6182ec0c0f67947eaa31fcb0558936aea925a0fbfd49d2",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c10/lesson.production-brief.json",
+    "sha256": "d0afdbaa0455952a4781c777defe917ff0027e917563fd1ec794304e42afb217"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are two beakers of acid, both at 0.10 moles per litre, with the same piece of magnesium in each. In hydrochloric acid it fizzes hard. In acetic acid, also called ethanoic acid, the acid in vinegar, it fizzes slowly. Same concentration, same metal, so why the difference? The answer is an equilibrium, and it comes with a K that has its own name.",
+      "hash": "df138abd9a9b",
+      "textSha256": "df138abd9a9b41559504bbeaccae88222b73ecc55df035ac16a1ea6e11b8391a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/hook.df138abd9a9b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/hook.df138abd9a9b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/hook.df138abd9a9b.generation.json",
+      "plannedRequestSha256": "96a6e1070e7e74f46fa3c688b6d47149d8135379c21ba86ec76508ffa017afd3"
+    },
+    {
+      "id": "strong-weak",
+      "parentSceneId": "strong-weak",
+      "text": "The bubbles are hydrogen gas, made when the magnesium meets hydrogen ions, H plus. In water, every hydrochloric acid molecule breaks into ions, H plus and chloride. Breaking into ions is called dissociating, or ionising, and because it goes all the way, hydrochloric acid is a strong acid. Acetic acid molecules break apart too, but the ions also join back up, and the two directions balance while most molecules are still whole. At this concentration only about one in a hundred is split at any moment. So the acetic acid has far fewer hydrogen ions to meet the magnesium. An acid that only partly ionises is a weak acid.",
+      "hash": "7ec35faca288",
+      "textSha256": "7ec35faca2889f6cf211e3fc26b54287499c63257a69ab87f9d8a20b465d069a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/strong-weak.7ec35faca288.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/strong-weak.7ec35faca288.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/strong-weak.7ec35faca288.generation.json",
+      "plannedRequestSha256": "44d76d37781732cba2970406994d3711946c96eb42a0f0d660d378b93975ab43"
+    },
+    {
+      "id": "ka-is-k",
+      "parentSceneId": "ka-is-k",
+      "text": "A balance between molecules and ions is an equilibrium, so it has a K, written the way you already know. Write any weak acid as H A, which splits into H plus and A minus. Products over reactants gives H plus times A minus, over H A. Every coefficient is one, so there are no powers. This K is called Ka, the acid dissociation constant, and the little a just says which kind of reaction it belongs to. It is not a new kind of constant: it follows every rule from the expressions video, and it changes only with temperature.",
+      "hash": "a4bc4426b176",
+      "textSha256": "a4bc4426b176fb308f1fb43dbf2cf12f0a750c833f62afee85268f22aa524250",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-is-k.a4bc4426b176.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-is-k.a4bc4426b176.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-is-k.a4bc4426b176.generation.json",
+      "plannedRequestSha256": "69dfbb77132af4e7be98e91c7c79a761788fcd6579a9550ebe0cf75541473385"
+    },
+    {
+      "id": "with-water",
+      "parentSceneId": "with-water",
+      "text": "You will also see the same reaction written with water: H A plus water makes H three O plus and A minus. H three O plus is just a hydrogen ion carried by a water molecule. So does water go into Ka? No. Water is the solvent, there is a huge, steady amount of it, so it stays out, just as in the expressions video. Ka is H three O plus times A minus, over H A, the same shape as before.",
+      "hash": "3efc49aa33d8",
+      "textSha256": "3efc49aa33d8481fb940a9df97cf6303771e6905313716b579b24f3e472d2983",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/with-water.3efc49aa33d8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/with-water.3efc49aa33d8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/with-water.3efc49aa33d8.generation.json",
+      "plannedRequestSha256": "6989f11d8341062e891a967d821e7704c300aa955ee7e912baa02f1200dcf912"
+    },
+    {
+      "id": "ka-size",
+      "parentSceneId": "ka-size",
+      "text": "Now read the size, the same way as any K. For acetic acid, Ka is 1.8 times ten to the minus five. A tiny K means a small top and a big bottom, so at equilibrium most of the acid is still whole molecules.",
+      "hash": "677816787723",
+      "textSha256": "67781678772348da02511e9743e38964d39bd7c3989061ff8b9b82fcd4a631a9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-size.677816787723.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-size.677816787723.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-size.677816787723.generation.json",
+      "plannedRequestSha256": "f9f165af44a2c8b03473517e34275d26ff275a7c8ea2660844a8c15797b834fe"
+    },
+    {
+      "id": "ka-compare",
+      "parentSceneId": "ka-compare",
+      "text": "Hydrofluoric acid has a Ka of 6.8 times ten to the minus four, nearly forty times bigger. At 0.10 moles per litre, about eight in a hundred of its molecules are split, against about one in a hundred for acetic acid. So the bigger the Ka, the stronger the weak acid. Ka is not the concentration of H plus, and it is not the pH: those also depend on how much acid you dissolved.",
+      "hash": "e73035a8f120",
+      "textSha256": "e73035a8f120d9d7e4653e7961513fbb9e424ac132d88c10e586eb4440e25f52",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-compare.e73035a8f120.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-compare.e73035a8f120.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ka-compare.e73035a8f120.generation.json",
+      "plannedRequestSha256": "e4c0cf26ccce274115aaa9f75ac41ca9af378c0fa4da557a648e8a043681f103"
+    },
+    {
+      "id": "strong-acids",
+      "parentSceneId": "strong-acids",
+      "text": "What about hydrochloric acid? It ionises completely, so at equilibrium there are essentially no H C L molecules left to go on the bottom of the fraction. We don't use a Ka value for a strong acid. We simply say it ionises completely. Ka is the tool for weak acids, where molecules and ions are both present.",
+      "hash": "154fa00ff4fa",
+      "textSha256": "154fa00ff4fa0ccfc289d407bffaf40dac305386b3456e81432f55afeedc68de",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/strong-acids.154fa00ff4fa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/strong-acids.154fa00ff4fa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/strong-acids.154fa00ff4fa.generation.json",
+      "plannedRequestSha256": "d1e7ea35db52a548f96ec7f0f7cbf1c19f1f362c5eab8cece29feed74e4b4045"
+    },
+    {
+      "id": "kb",
+      "parentSceneId": "kb",
+      "text": "Bases work the same way. Ammonia, a gas that is dissolved in some household cleaners, reacts with water: it takes a hydrogen ion from a water molecule, making an ammonium ion and a hydroxide ion, O H minus. The ions also join back up, so this is an equilibrium too. Here water is a reactant, but it is still the solvent, so it stays out. The constant is Kb, the base dissociation constant: ammonium times hydroxide, over ammonia. For ammonia, Kb is 1.8 times ten to the minus five, so most of the ammonia stays as molecules, which makes it a weak base.",
+      "hash": "0b6ed00bffc1",
+      "textSha256": "0b6ed00bffc178cc3a0607dd9f323ea6670b2f7618e7aa2d81238acf94c957a2",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/kb.0b6ed00bffc1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/kb.0b6ed00bffc1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/kb.0b6ed00bffc1.generation.json",
+      "plannedRequestSha256": "c443f057a0be7cb71985f2feb6f33d33b26643e1699d090a849463c1e5ca80a4"
+    },
+    {
+      "id": "ksp-preview",
+      "parentSceneId": "ksp-preview",
+      "text": "One more, so you can see the pattern. A solid that barely dissolves, like silver chloride, sits in balance with its ions in the water around it. Silver chloride solid makes silver ions and chloride ions. The solid stays out, because it is a pure solid, so its K is just silver ions times chloride ions. It is called Ksp, and you will calculate with it in later videos.",
+      "hash": "0fba75565b06",
+      "textSha256": "0fba75565b06f7f49fa487ec2a68687962cc4456662be19977f9bdca3be7b3e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ksp-preview.0fba75565b06.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ksp-preview.0fba75565b06.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/ksp-preview.0fba75565b06.generation.json",
+      "plannedRequestSha256": "76caef4aa4a9e8f9afea13b989d4919ceff4ba033c1194c5c11d494e1c90a489"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here is a line to remember: Ka, Kb and Ksp are just K with a name tag. Write them the same way, products over reactants, with water and solids left out. And read them the same way: when you compare reactions of the same kind, a bigger value means the reaction goes further to the right.",
+      "hash": "7e8ebf7a0466",
+      "textSha256": "7e8ebf7a0466730e3615e1055f56e8f9f70b6c444529d8a8e7385edf6f8f721a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/memory-aid.7e8ebf7a0466.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/memory-aid.7e8ebf7a0466.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/memory-aid.7e8ebf7a0466.generation.json",
+      "plannedRequestSha256": "5fcfe78accf9ed5c876477be8ed951e7e443d53372fd3e3b735613323c41afd6"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. Methanoic acid, the acid in ant stings, has a Ka of 1.8 times ten to the minus four. Hydrogen cyanide, H C N, has a Ka of 6.2 times ten to the minus ten. One: write the Ka expression for H C N plus water making H three O plus and C N minus. Two: which is the stronger acid, and why? Pause here to answer.",
+      "hash": "7342d001c8f3",
+      "textSha256": "7342d001c8f333fdad9a181d6003de02b73868d58424082e8fa975a28f99795e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/attempt.7342d001c8f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/attempt.7342d001c8f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/attempt.7342d001c8f3.generation.json",
+      "plannedRequestSha256": "5d2b9c4ec42187e0b8a49f21601ab93dafb8061167a1c9e013b98406a0ada341"
+    },
+    {
+      "id": "feedback-expression",
+      "parentSceneId": "feedback-expression",
+      "text": "One. Products over reactants, with water left out: Ka is H three O plus times C N minus, over H C N. If you put water on the bottom, take it out, because it is the solvent.",
+      "hash": "7d11287d277a",
+      "textSha256": "7d11287d277a99dd14b07e6a41f723da6eab610967df4d526c293dbd0dd26288",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/feedback-expression.7d11287d277a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/feedback-expression.7d11287d277a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/feedback-expression.7d11287d277a.generation.json",
+      "plannedRequestSha256": "e4159f99b0485318b0d43c0ed851151a92bf5a982f5a68d4f8e38c5d8d2e12d7"
+    },
+    {
+      "id": "feedback-stronger",
+      "parentSceneId": "feedback-stronger",
+      "text": "Two. Methanoic acid is stronger, because its Ka is bigger, so at the same concentration more of its molecules are split into ions at equilibrium. If you picked hydrogen cyanide because 6.2 is bigger than 1.8, look at the powers of ten first. Ten to the minus four is far bigger than ten to the minus ten, so methanoic acid's Ka is about three hundred thousand times bigger.",
+      "hash": "6c833d57c328",
+      "textSha256": "6c833d57c3282c77b088ed97f8dfdddd4eaf188cb482d955d24811d0e5d8e65c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/feedback-stronger.6c833d57c328.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/feedback-stronger.6c833d57c328.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/feedback-stronger.6c833d57c328.generation.json",
+      "plannedRequestSha256": "7457bfce6b1bb304e0f73314bcf941bee8a92cf9bc7f067296efbae413cbf647"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when you meet an acid or a base in water, write its K exactly like any other: products over reactants, water left out. Call it Ka for an acid and Kb for a base, and read its size: at the same concentration, bigger means more split into ions. Using Ka to calculate pH, and the link between Ka and Kb, come later, in Module 6. Next: what actually happens when an ionic solid dissolves in water.",
+      "hash": "a032337f354d",
+      "textSha256": "a032337f354dc4a39f8d7c37382adb8966212c0a42e395c1922aeb6219af3f08",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/decision-rule.a032337f354d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/decision-rule.a032337f354d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/decision-rule.a032337f354d.generation.json",
+      "plannedRequestSha256": "ee84a56e21f96067ab7bb91002f71a17f655d40e9f2ddad2b4f85ec17b81cab5"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C10-claude-2026-10-16-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

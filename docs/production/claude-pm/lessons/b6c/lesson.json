@@ -1,0 +1,168 @@
+{
+  "title": "How does a ribosome turn mRNA into a polypeptide?",
+  "subtitle": "An mRNA message has only four bases, but proteins are built from twenty amino acids. How does a four-letter message build a chain?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 13,
+  "lessonIntent": "Explain why codons are three bases, describe the ribosome and tRNA, write a directed anticodon for a codon, use the codon chart with mRNA codons, describe start at AUG, the repeating cycle and stop codons, say that a polypeptide must fold before it works, assess the importance of mRNA and tRNA, and apply all of it to a DNA template with a chart excerpt and to an antibiotic that makes bacterial ribosomes misread codons.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last time, a gene was copied into mRNA, a message written in just four bases, A, U, C and G. But your proteins are built from twenty different amino acids. So how does a four-letter message spell out a chain made of twenty kinds of building block? The answer is in how the message is read, and in a small molecule that acts as a translator."
+      }
+    },
+    {
+      "id": "why-three",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Suppose each base stood for one amino acid. Four bases could name only four. Pairs of bases do better: four times four is sixteen, still not enough. Groups of three give four times four times four, which is sixty-four, more than enough for twenty. So the code is read in threes, the codons you met last time, one after another with no gaps. With sixty-four codons for twenty amino acids, most amino acids have more than one codon, and three codons mean stop."
+      }
+    },
+    {
+      "id": "ribosome",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This reading is called translation, and it happens at a ribosome, in the cytoplasm. A ribosome has two parts, a small subunit and a large subunit, built from proteins and a kind of RNA called ribosomal RNA, or rRNA. The ribosome holds the mRNA and moves along it one codon at a time, but it doesn't choose the amino acids. For that it needs another RNA."
+      }
+    },
+    {
+      "id": "trna-adaptor",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That RNA is transfer RNA, or tRNA, a short strand of RNA folded into a compact shape. At one end it carries one particular amino acid. At the other end it has three exposed bases, the anticodon, which pairs with a codon on the mRNA, using the same rules: A with U, C with G. So tRNA is the adaptor between two languages: one end matches the code, and the other holds the amino acid. There are many kinds of tRNA, and enzymes load each kind only with its own amino acid."
+      }
+    },
+    {
+      "id": "codon-anticodon",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Pairing only works if the two strands run in opposite directions, just as in DNA. So a codon reading G A A from its 5' end pairs with an anticodon reading C U U from its 3' end. Written the tRNA's own way, 5' to 3', that anticodon is U U C. Keep the ends on every sequence, and you won't confuse the two."
+      }
+    },
+    {
+      "id": "codon-chart",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Which amino acid does each codon give? The answer is the codon chart, worked out by scientists in the 1960s. Always look up the mRNA codon, never the anticodon or the DNA. Take G A A. Find the first base, G, down the side. Find the second base, A, across the top. In that box, find the third base, A. So G A A codes for glutamate, written Glu. And A U G, the start codon, codes for methionine, Met."
+      }
+    },
+    {
+      "id": "start",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now let's translate a whole message: A U G, G A A, G C U, U A A. The small subunit, already holding a tRNA that carries methionine, grips the mRNA near its 5' end and slides along to the first A U G, the start codon. There, the tRNA's anticodon, U A C read from its 3' end, pairs with it. Then the large subunit closes on top, and the ribosome is ready."
+      }
+    },
+    {
+      "id": "elongate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The next codon, G A A, sits in the second slot. The tRNA whose anticodon pairs with it arrives, carrying glutamate. The two amino acids are now side by side, and the rRNA in the large subunit joins them with a peptide bond. Then the ribosome moves one codon towards the 3' end. The first tRNA, now empty, leaves to be reloaded, and the next codon, G C U, is exposed for a tRNA carrying alanine."
+      }
+    },
+    {
+      "id": "stop",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each round repeats the same three steps: a matching tRNA arrives, a peptide bond forms, and the ribosome moves on. Then the ribosome reaches U A A, a stop codon. No tRNA pairs with a stop codon. Instead, a release protein fits into the slot, the chain is let go, and the two subunits come apart. The result is Met, Glu, Ala, a chain of amino acids called a polypeptide."
+      }
+    },
+    {
+      "id": "polypeptide-to-protein",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The order of codons on the mRNA set the order of amino acids, and that order came from the gene. But a polypeptide isn't a working protein yet. It has to fold into a particular shape, and some proteins are built from more than one chain. How that order decides the shape, and the job the protein can do, is the next video."
+      }
+    },
+    {
+      "id": "both-rnas",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So how important are the two RNAs? mRNA carries the gene's sequence out to the ribosome, and its codons set the order of the amino acids. tRNA is the molecule that links each codon to its amino acid, so it makes the code readable. Each is essential. Without mRNA, there's no message at the ribosome. Without the right tRNAs, codons can't become amino acids."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two aids. The stop codons are U A A, U A G and U G A: U Are Away, U Are Gone, U Go Away. And remember the languages. Transcription kept the language of bases. Translation changes it, from bases to amino acids, and tRNA is the translator."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two harder questions now. First, here's a DNA template strand from a gene, and part of the codon chart. Write the sequence of amino acids in the polypeptide it codes for, and explain how many amino acids it has. Then write the anticodon of the tRNA that brings the second amino acid, with its 5' and 3' ends. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The chart reads mRNA, so transcribe first: A U G, A A G, C C U, U G A. That's methionine, lysine, proline, then a stop codon, which adds nothing, so the chain has three amino acids. The second codon pairs with the anticodon U U C, read from its 3' end. Reading the DNA letters straight into the chart gives tyrosine first, which is wrong."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. Streptomycin is an antibiotic. It binds to the small subunit of bacterial ribosomes, and makes them misread codons, so the wrong tRNAs pair. It doesn't bind to the ribosomes in the cytoplasm of human cells, which have a different shape. Explain how it can kill bacteria in a patient, while the patient's own cells keep making most of their proteins normally. Then suggest why it can also affect the ribosomes inside human mitochondria. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In a bacterium, misread codons put wrong amino acids into its chains, so many proteins fold wrongly and fail, and it dies. The drug doesn't bind human cytoplasmic ribosomes, which make most of the cell's proteins. But mitochondria came from bacteria, so their ribosomes are bacteria-like, and the drug can bind them. If you said it changes the bacteria's DNA, look again. It's the reading that goes wrong."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question gives you a sequence, ask: is it DNA or mRNA? Turn DNA into mRNA first. Read the chart with mRNA codons, start at A U G, stop at a stop codon, and put the ends on every anticodon. Next, how the order of amino acids decides a protein's shape, and its job."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

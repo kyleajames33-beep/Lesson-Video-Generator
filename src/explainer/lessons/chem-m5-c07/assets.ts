@@ -37,6 +37,13 @@ export const TUG = {
 export const TUG_NAT: [number, number] = [3000, 1000];
 export const TUG_PLATE_ICONS = false;
 const TUG_LAYERS = [TUG.left, TUG.right, TUG.rope];
+// One painted scene (16 Oct, generated with GPT Image 2 on white, background made transparent): both figures and the
+// rope on one canvas. The flag is drawn in code on the rope so it can still settle at "about 450 C".
+export const TUG_SCENE = A + 'c7-tug-scene-v1.png';
+export const TUG_SCENE_NAT: [number, number] = [3136, 1344];
+export const TUG_SCENE_ROPE_Y = 0.385; // rope height as a fraction of the canvas
+// TUG_SCENE rejected by the owner (16 Oct, "too AI"): the hand-drawn coded pullers in s4.tsx are used instead.
 export const HAVE7 = new Set<string>([CONVERTER, ...PAINTED]);
+export const HAVE_TUG_SCENE = HAVE7.has(TUG_SCENE);
 export const HAVE_TUG = TUG_LAYERS.every(t => HAVE7.has(t));
-export const ASSETS: string[] = [CONVERTER, ...PAINTED, ...TUG_LAYERS].filter(a => HAVE7.has(a));
+export const ASSETS: string[] = [CONVERTER, ...PAINTED, ...TUG_LAYERS, TUG_SCENE].filter(a => HAVE7.has(a));

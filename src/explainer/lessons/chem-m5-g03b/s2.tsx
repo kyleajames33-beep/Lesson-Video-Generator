@@ -22,7 +22,7 @@ export const SceneTypeThreeRecall: React.FC = () => {
 	const m = prog(f, 2, 26);
 	const s = 1 - 0.5 * m;
 	const cardO = 1 - prog(f, 18, 12);
-	const BX = 96, BY = 70;
+	const BX = 96, BY = 104;
 	const card = {x: 96, y: cardY(2)};
 	const tx = card.x + (BX - card.x) * m, ty = card.y + (BY - card.y) * m;
 	// the C6b thumbnail

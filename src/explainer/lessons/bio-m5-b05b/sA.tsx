@@ -5,7 +5,7 @@ import {cues} from '../../cues';
 import {EggDot, SpermDot} from '../bio-m5-b02a/shared';
 import {
 	AMBER, AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, MC, MiniBar, Overlay, PArt, PL, pH, Pill, PP, prog, SvgPlate,
-	S, Scribble, TT, Tick, clamp01, Col, Num, GreyCross, Line,
+	S, Scribble, TT, Tick, clamp01, Col, Num, GreyCross, Line, PCell,
 } from './shared';
 import {rng} from '../../kit';
 import {HAVE} from './assets';
@@ -143,7 +143,7 @@ const Chain: React.FC<{y: number; at: number; n1: string; n2: string; nAt: numbe
 	return (
 		<g opacity={o}>
 			<g opacity={prog(f, at, 14)}>
-				<ellipse cx={260} cy={y} rx={104} ry={80} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+				<PCell cx={260} cy={y} rx={104} ry={80} />
 				<circle cx={260} cy={y} r={44} fill="rgba(226,214,238,0.62)" stroke="#5b4d70" strokeWidth={4} strokeDasharray="12 6" />
 				<text x={260} y={y + 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40}} fill={INK}>{n1}</text>
 			</g>
@@ -163,7 +163,7 @@ const Chain: React.FC<{y: number; at: number; n1: string; n2: string; nAt: numbe
 			{nextText ? (
 				<g opacity={prog(f, nextAt, 14)}>
 					<Arrow x1={1190} y1={y} x2={1380} y2={y} at={nextAt} color={INK_SOFT} width={5} />
-					<ellipse cx={1500} cy={y} rx={96} ry={74} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+					<PCell cx={1500} cy={y} rx={96} ry={74} />
 					<text x={1500} y={y + 16} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46}} fill={INK}>{nextText}</text>
 					<text x={1500} y={y + 124} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36}} fill={INK_SOFT}>next generation</text>
 				</g>

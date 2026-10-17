@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b6b/measured/lesson.json",
+    "lessonSha256": "cdf96e615d6b165908b3987fe388408643193ff62122df6dd3e2623f11d777f8"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B4 to B6a: DNA nucleotides with A pairing T and C pairing G by hydrogen bonds; antiparallel strands with 5' and 3' ends; one strand acts as a template; a gene is a section of DNA; eukaryotic DNA is wound on histones in a nucleus with an envelope and is loosened where a gene is read; bacteria have no nucleus. Year 11: enzymes, organelles, the nuclear envelope. Not assumed: RNA, uracil, ribose, mRNA, transcription, RNA polymerase, promoter, template and coding strand as transcription terms, nuclear pore, codon.",
+    "startsWith": "The DNA stays in the nucleus while the ribosomes that build proteins are outside it, and the question of how the instructions in a gene get from one place to the other.",
+    "stopsAfter": "Saying why a copy is needed; defining a gene; giving three differences between RNA and DNA; describing how RNA polymerase binds the promoter, separates the strands and builds mRNA by pairing with the template strand (A with U, T with A, C with G, G with C); saying which way each strand runs and why; writing the mRNA for a given template with ends; saying the mRNA matches the coding strand with U for T; describing release, the unchanged gene and export through a nuclear pore; saying why many temporary copies help; contrasting transcription with replication; naming codons as groups of three; predicting that a changed template base changes a codon. It does not say what codons mean. No pre-mRNA processing, transcription factors or polymerase types.",
+    "nextLesson": "B6c: how a ribosome turns the mRNA code into a chain of amino acids."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b06b.md"
+  ],
+  "teaching": {
+    "task": "Explain how a cell copies one gene into mRNA and why it needs a copy, and write the mRNA for a given strand with its ends.",
+    "causalExplanation": "The DNA stays in the nucleus and the ribosomes are outside, so the cell sends out a copy of the gene. RNA polymerase binds the promoter and opens the strands, and it copies only the template strand because the template fixes every base of the mRNA. New nucleotides join only at the 3' end, so the mRNA grows 5' to 3' and, because paired strands run in opposite directions, the template is read 3' to 5'. U pairs with A as T does, so the mRNA matches the coding strand with U for T. The gene re-pairs behind the polymerase and is unchanged; the mRNA leaves through a nuclear pore, and many temporary copies let one gene make a lot of protein, with control by stopping the copying.",
+    "conversationalApproach": "Opens on the painted cell and the problem of a gene stuck in the nucleus, explains the copy with a recipe-book analogy and states where it breaks, builds the RNA differences on the molecules, shows one strand and the direction as separate beats, works the site template tile by tile with wrong tiles turned away, checks against the coding strand, then asks two harder unseen items, each followed by a model answer built one point at a time.",
+    "openingDecision": "Your DNA never leaves the nucleus, but the machines that build proteins are outside it. How does a gene get out?",
+    "understandingCheck": "Given a double strand with ends labelled and the polymerase moving left to right, identify the template strand using the direction rule and write the mRNA with its 5' and 3' ends (top strand 3' TGC AAT CGG 5' is the template; mRNA 5' ACG UUA GCC 3'). Then explain why a toxin that stops RNA polymerase moving along DNA makes a cell produce less and less protein although the DNA and ribosomes are undamaged.",
+    "curriculumScope": "Model the process of polypeptide synthesis, including transcription and translation, and assess the importance of mRNA and tRNA (Module 5, ACSBL079). This video owns transcription and the importance of mRNA; translation and tRNA are the next video. Pre-mRNA processing, transcription factors, polymerase types and what each codon means are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted cell protein synthesis plate and recipe book, and a coded transcription board (nucleus close-up with a dashed envelope arc and a pore, plum DNA ladder, B4 jigsaw base tiles with a new amber U tile, a terracotta mRNA strand, an ochre RNA polymerase bean, end tags and process arrows). The coding strand dims to about 35 per cent while the template is read. Blue and green are not used for mRNA.",
+    "transitionPlan": "The painted cell opens the lesson and the camera zooms into the coded nucleus board; the analogy plate slides in and out; the board persists through scenes 3 to 8 with the polymerase and the dim rule carrying attention; the camera pans to the envelope arc and cuts back out to the painted cell for the export; the board splits once for the replication contrast; each attempt card clears the aids and its feedback follows at once, turning the card into pictures and model-answer lines; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Painted cell protein synthesis plate (nucleus, pores, rough ER and free ribosomes), a plum thread, amber rings, a dotted path through a pore and a short terracotta strand",
+      "teachingReason": "Poses the problem before any term: the DNA stays in the nucleus, the ribosomes are outside, so how does the message get out",
+      "narrationCue": "stays inside the nucleus / ribosomes / never leaves / sends out a copy",
+      "motionPurpose": "A circle lands on the nucleus with a plum thread, ribosomes get amber rings, a bar blocks the pore for DNA, and a terracotta copy slides along the dotted path and out",
+      "motionRole": "explain",
+      "onScreenChange": "The painted plate is centred and large; on \"stays inside the nucleus\" a scribble circle lands on the nucleus and a plum thread coils inside it (\"DNA, wound on histones (last video)\"); on \"ribosomes\" a pen taps painted dots on the rough ER and two free ones, each ringed amber (\"ribosomes: build proteins\"); on \"never leaves\" the thread pushes at the envelope and a grey bar flashes across a pore (\"DNA stays in\"); a dotted amber path draws from the nucleus through a pore to a ribosome with a \"?\" travelling along it; on \"sends out a copy\" a short terracotta strand slides along it and out; the heading \"How does a gene get out of the nucleus?\" writes on",
+      "motionTools": [
+        "plate zoom",
+        "ScribbleCircle",
+        "DrawPath arrow",
+        "tag pop",
+        "strand slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the question"
+    },
+    {
+      "sceneId": "gene-and-mrna",
+      "visualDecision": "new",
+      "visualReference": "Camera zoom into a coded nucleus board with a plum DNA ladder, an amber gene bracket, a terracotta mRNA strand, a polypeptide bead chip, the painted recipe book and copied page, and a five-row mapping",
+      "teachingReason": "Says what a gene does before naming mRNA and transcription, and gives the recipe-book analogy for a copy that leaves while the master stays",
+      "narrationCue": "gene / polypeptide / mRNA / transcription / recipe book / never allowed / as many copies",
+      "motionPurpose": "The plate zooms into the coded nucleus, a bracket marks the gene, a terracotta copy draws beneath it, the book plate enters with a five-row mapping and the loose page multiplies into three",
+      "motionRole": "explain",
+      "onScreenChange": "The camera zooms into the nucleus and the plate crossfades to the coded board; a long plum ladder runs across it; on \"a section of DNA\" an amber bracket marks one stretch and \"gene\" writes on; on \"polypeptide\" a grey chip shows beads folding into a blob; on \"messenger RNA, or mRNA\" a terracotta single strand draws beneath the gene; \"transcription\" writes in amber; on \"recipe book\" the board slides left and the painted book and loose page enter; the mapping writes row by row (library = nucleus, book = DNA, one page = a gene, photocopy = mRNA, kitchen = cytoplasm) lighting the matching part; on \"as many copies\" the page multiplies into three; the grey tag \"analogy: the copy is not letter-for-letter (next)\" lands",
+      "motionTools": [
+        "camera zoom",
+        "plate crossfade",
+        "bracket draw",
+        "HandText write-on",
+        "plate slide",
+        "row reveal"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "rna-differences",
+      "visualDecision": "new",
+      "visualReference": "B4 plum ladder with jigsaw base tiles beside a single terracotta strand, ribose and deoxyribose sugar pentagons, an amber U tile with the same notch as T, and the pair rule chip",
+      "teachingReason": "Shows the three differences between RNA and DNA on the molecules themselves and why U fits where T does",
+      "narrationCue": "single strand / ribose / uracil / A with U",
+      "motionPurpose": "The analogy plate leaves, three difference chips write on one at a time with their evidence, the U tile drops in for T and clicks against A, and the pair rule chip settles top right",
+      "motionRole": "explain",
+      "onScreenChange": "The analogy plate leaves; left, B4's ladder, right, a single terracotta strand with tiles; on \"single strand\" the lone backbone pulses while the ladder's two backbones are bracketed \"two\"; on \"ribose\" the sugar pentagons are tagged \"deoxyribose\" and \"ribose\"; on \"uracil\" a sand T tile lifts and an amber U tile with the same notch drops into its place; the U slides against a coral A tile and clicks, with a ghost T showing the same fit; on \"A with U\" the chip \"RNA: A with U, C with G\" writes top right and stays for scenes 4 to 7",
+      "motionTools": [
+        "tile fly-in",
+        "bracket draw",
+        "chip pop",
+        "pulse",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "polymerase-promoter",
+      "visualDecision": "new",
+      "visualReference": "The DNA ladder in the nucleus close-up, a coded ochre RNA polymerase bean, a grey-plum promoter stretch with an amber start arrow, and a nine-base bubble with fading hydrogen bonds",
+      "teachingReason": "Says what the polymerase must find before naming the promoter, then shows the strands opening so the bases are exposed",
+      "narrationCue": "RNA polymerase / promoter / breaking the hydrogen bonds",
+      "motionPurpose": "The ochre bean drifts along the ladder, the promoter lights with an arrow, the bean settles on it, and the ladder opens into a bubble as the dotted bonds fade",
+      "motionRole": "explain",
+      "onScreenChange": "The ochre bean drifts along the ladder; on \"promoter\" a stretch left of the gene bracket lights grey-plum (\"promoter: where the polymerase binds\") with an amber arrow \"gene starts here\"; on \"binds to\" the bean settles over it with a soft click; on \"pulls the two DNA strands apart\" the ladder opens into a bubble about nine bases long; on \"breaking the hydrogen bonds\" the dotted bonds fade out and the separated tiles face the gap (\"bases exposed\"); the strands stay unnamed",
+      "motionTools": [
+        "slide",
+        "tag pop",
+        "bubble open",
+        "bond fade",
+        "arrow draw"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "template-strand",
+      "visualDecision": "new",
+      "visualReference": "The open bubble with the lower strand glowing amber and the upper strand dimmed to 35 per cent, tags for template and coding strand, and thin amber connectors to empty slots",
+      "teachingReason": "Names the template and coding strands and gives the cause of copying only one: the template fixes every base of the mRNA",
+      "narrationCue": "only one / template strand / coding strand / the template fixes every base",
+      "motionPurpose": "The lower strand glows with a read tag, the upper strand dims with a not-read tag, and amber connectors flick from each template tile to an empty slot",
+      "motionRole": "explain",
+      "onScreenChange": "On \"only one\" the lower strand glows amber (\"template strand: read\") and the upper dims to about 35 per cent (\"coding strand: not read\"); on \"the template fixes every base\" a thin amber connector flicks from each template tile to an empty slot beneath; no direction arrows yet",
+      "motionTools": [
+        "glow",
+        "dim",
+        "tag pop",
+        "connector flick"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "direction",
+      "visualDecision": "new",
+      "visualReference": "End tags 5' and 3' on both strands, small grey B4 arrowheads, a two-tile mRNA stub with a pulsing 3' tag, a free tile joining and one turned away, and two large amber process arrows labelled read and built",
+      "teachingReason": "Gives the cause of the direction rule (nucleotides join only at the 3' end) before the rule that the template is read 3' to 5', with one large arrow per strand",
+      "narrationCue": "add each new nucleotide to the 3' end / grows from its 5' end to its 3' end / from its 3' end to its 5' end",
+      "motionPurpose": "End tags write on, a free tile joins only at the 3' end while another is turned away, an amber arrow reads mRNA built 5' to 3', then an amber arrow reads template read 3' to 5' and the polymerase steps right so both arrows point the same way",
+      "motionRole": "explain",
+      "onScreenChange": "The end tags write on (template 3' left and 5' right; coding strand 5' left and 3' right) with each strand's own arrowhead drawn small and grey; on \"add each new nucleotide to the 3' end\" a two-tile terracotta stub appears under the template's left end with a pulsing 3' tag, a free tile joins only there and a second tile at the 5' end is turned away (\"only at the 3' end\"); on \"grows from its 5' end to its 3' end\" the amber arrow \"mRNA built 5' to 3'\" draws under the mRNA; on \"from its 3' end to its 5' end\" the amber arrow \"template read 3' to 5'\" draws along the template and the polymerase nudges one base right; the grey chip \"antiparallel, as in DNA\" lands",
+      "motionTools": [
+        "end tag write-on",
+        "tile dock",
+        "arrow draw",
+        "slide",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the two arrows"
+    },
+    {
+      "sceneId": "worked-copy",
+      "visualDecision": "adjust",
+      "visualReference": "The board reset to the site's template 3' TAC CGA ATT 5' in groups of three with a dim coding strand, the polymerase at the 3' end, free RNA tiles (wrong ones turned away) and a result line",
+      "teachingReason": "Worked example: each base is paired one at a time from the template, with wrong tiles turned away, so the pairing rule and direction are seen working",
+      "narrationCue": "T A C, C G A, A T T / joins the 3' end of the one before / A U G, G C U, U A A",
+      "motionPurpose": "The givens line writes, the polymerase sits at the 3' end, a free tile drifts in for each spoken pair (wrong tiles bounce off for the first three), the backbone extends and the bean moves right, then the full mRNA writes as the result line",
+      "motionRole": "explain",
+      "onScreenChange": "The givens line writes \"Template strand: 3' TAC CGA ATT 5'\" with the coding strand dim above; for each spoken pair a free tile drifts in from below and docks with a click, the terracotta backbone extending and the bean moving right one base; for the first three pairs a wrong tile tries first (G for T, a sand T with \"T is DNA's base: RNA uses U\", A for C) and is turned away; after the first codon the pace quickens; on \"joins the 3' end of the one before\" the 3' tag rides the growing end; on the final line \"5' AUG GCU UAA 3'\" writes under the tiles and the three Us glow amber",
+      "motionTools": [
+        "tile dock",
+        "wrong tile bounce",
+        "polymerase slide",
+        "result line write-on",
+        "glow"
+      ],
+      "holdPurpose": "Hold about 1.5 seconds after the last word"
+    },
+    {
+      "sceneId": "coding-check",
+      "visualDecision": "adjust",
+      "visualReference": "The coding strand returning to full strength and lining up above the finished mRNA with a pen running along both, T tiles flipping to amber U tiles, a result line and two chips",
+      "teachingReason": "Shows that the mRNA matches the coding strand with U for T, though it is built on the template, and flags the exam trap",
+      "narrationCue": "coding strand / T has become U / which strand",
+      "motionPurpose": "The coding strand brightens and slides over the mRNA, a pen ticks matching letters and flips each T to U, the result line writes, and two chips say what to do for each strand",
+      "motionRole": "explain",
+      "onScreenChange": "The coding strand returns to full strength, its tiles lift and it slides down to line up above the finished mRNA with 5' over 5'; a pen runs along both, ticking matching letters amber and flipping each of the three T tiles to an amber U (\"T becomes U\"); the result line \"coding strand 5' ATG GCT TAA 3' = mRNA 5' AUG GCU UAA 3', with U for T\" writes; on \"which strand\" the chips \"given the template? pair it\" and \"given the coding strand? copy it, T to U\" write on; the coding strand slides back",
+      "motionTools": [
+        "strand slide",
+        "tick",
+        "tile flip",
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "release-export",
+      "visualDecision": "adjust",
+      "visualReference": "The polymerase leaving the gene, the mRNA peeling away, the ladder zipping shut, the dashed envelope arc with a ringed nuclear pore, and the painted cell plate with the strand reaching a ribosome",
+      "teachingReason": "Shows the gene unchanged after copying and the mRNA leaving through a nuclear pore to the ribosomes, answering the hook",
+      "narrationCue": "paired up again / nuclear pore",
+      "motionPurpose": "The polymerase slides off and the mRNA peels away, the ladder zips shut behind it, the camera pans to the ringed pore and the strand threads through, then the plate shows it reaching a ribosome and the hook path ticks",
+      "motionRole": "explain",
+      "onScreenChange": "The polymerase slides off the gene's right end and the mRNA peels away, 5' end first; behind it the ladder zips shut with the dotted bonds reappearing (\"gene unchanged\"); on \"nuclear pore\" the camera pans up to the dashed envelope arc and the pore is circled (\"nuclear pore: opening in the envelope\"); the mRNA threads through, 5' end leading; the view cuts back out to the painted plate where the strand emerges from a pore and travels to a ribosome on the rough ER and the hook's \"?\" path ticks; a small grey tag notes that bacteria have no nucleus",
+      "motionTools": [
+        "slide",
+        "zip animation",
+        "ScribbleCircle",
+        "camera pan",
+        "strand slide",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "many-copies",
+      "visualDecision": "adjust",
+      "visualReference": "The painted cell plate with a small inset of the polymerase copying again, four more mRNA strands leaving through pores to ribosomes, a copy counter and amber protein blobs",
+      "teachingReason": "Shows why many temporary copies help: a lot of one protein quickly, and a way to stop by stopping the copying",
+      "narrationCue": "many times / broken down",
+      "motionPurpose": "The inset copies the gene again and again as four more strands exit and reach ribosomes, the counter climbs to five copies and protein blobs appear, then the first strand frays and fades",
+      "motionRole": "explain",
+      "onScreenChange": "On \"many times\" the polymerase in a small inset copies the gene repeatedly; four more mRNA strands exit through different pores and each reaches a ribosome with the counter \"1 gene, 5 mRNA copies\" and amber protein blobs appearing beside the ribosomes; on \"broken down\" the first strand frays and fades with the tag \"mRNA is temporary; the DNA stays\"",
+      "motionTools": [
+        "inset reveal",
+        "strand slide",
+        "counter tick",
+        "fade",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "not-replication",
+      "visualDecision": "adjust",
+      "visualReference": "A split board: B4's small replication fork with blue and green new strands on the left, the transcription bubble with one terracotta mRNA on the right, a shared row and three chips, and the sentence frame",
+      "teachingReason": "Contrasts transcription with replication so the two are not confused, ending in a compare sentence frame with whereas",
+      "narrationCue": "base pairing / both strands / one strand / whereas",
+      "motionPurpose": "The board splits, a bracket joins the shared row, the fork lights both new strands with the replication chip, the bubble lights one strand with the transcription chip, and the sentence frame writes with whereas in amber",
+      "motionRole": "explain",
+      "onScreenChange": "The board splits for this scene only: left B4's fork (tag \"replication (copying video)\"), right the transcription bubble; on \"base pairing\" a bracket joins them with \"both: open the DNA, pair bases on a template\"; on \"both strands\" the fork lights both new strands and the chip \"both strands, all the DNA, makes DNA, before division\" writes; on \"one strand\" the right side lights its single strand and the chip \"one strand, one gene, makes RNA (U), when needed\" writes; on \"whereas\" the sentence frame writes beneath in hand type with \"whereas\" in amber",
+      "motionTools": [
+        "split board",
+        "bracket draw",
+        "glow",
+        "chip pop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "codons-cftr",
+      "visualDecision": "adjust",
+      "visualReference": "The worked mRNA alone under its template, codon brackets, a CFTR chip tagged illustration, a template tile flipping C to T with an amber ring and the mRNA tile flipping G to A",
+      "teachingReason": "Names codons as groups of three and shows one consequence: a changed template base changes a codon before any protein is made",
+      "narrationCue": "codons / CFTR / codon changes",
+      "motionPurpose": "The mRNA returns, brackets snap under each group and the codons light in turn, a CFTR chip appears, the fourth template tile flips C to T and the matching mRNA tile flips G to A so the second codon changes",
+      "motionRole": "explain",
+      "onScreenChange": "The worked mRNA \"5' AUG GCU UAA 3'\" returns alone under its template; on \"groups of three\" brackets snap under each group and \"codon\" writes under the first, the codons lighting in turn (\"meaning: next video\"); on \"CFTR\" the chip \"CFTR gene (cystic fibrosis)\" appears with \"illustration: not the real CFTR change\"; the fourth template tile flips C to T with an amber ring and the mRNA's fourth tile flips from G to A by computed pairing, so GCU becomes ACU with the bracket glowing amber (\"one DNA change, one codon changed\")",
+      "motionTools": [
+        "bracket draw",
+        "tile flip",
+        "ScribbleCircle",
+        "glow",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Two large handwritten amber lines with a DNA tile row turning into an RNA tile row, a tile row turning into beads (greyed next video), a C before L chip, and the coding strand, mRNA and template with an equals sign and a pairing zip",
+      "teachingReason": "Gives the transcription language aid and the coding-versus-template trap after both ideas are explained",
+      "narrationCue": "transcription keeps the language / matches",
+      "motionPurpose": "The first line writes with a DNA row turning into an RNA row, the translation line writes greyed with beads, the C and L are underlined, then the trap line writes with the coding strand above, mRNA and template below",
+      "motionRole": "explain",
+      "onScreenChange": "Line 1 \"transCription keeps the language (bases to bases)\" writes with a DNA tile row turning into an RNA tile row; \"transLation changes it (bases to amino acids)\" writes greyed with \"next video\" and a row turning into beads; the C and L are underlined with the chip \"C before L\"; line 2 \"mRNA matches the coding strand, built on the template\" writes with the coding strand above the mRNA (equals sign, \"T to U\") and the template below (pairing zip)",
+      "motionTools": [
+        "HandText write-on",
+        "tile row morph",
+        "underline draw",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about half a second after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "A question card headed \"Which strand is the template?\" with a nine-pair double strand at full strength, a grey promoter block, the ochre bean with a moves-this-way arrow, two demands and two answer boxes",
+      "teachingReason": "Unseen application where the template is the top strand, so the direction rule must be used rather than a position habit; all conditions stay visible",
+      "narrationCue": "left / right / 5' and 3' ends / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears with no pair rule chip, no earlier arrows and no template tag; the card writes on with top strand \"3' T G C A A T C G G 5'\" and bottom strand \"5' A C G T T A G C C 3'\", both identical in style; the promoter block and bean sit on the left with a plain arrow \"moves this way\"; the demands \"(a) Which strand is the template? Explain using the direction.\" and \"(b) Write the mRNA, with its 5' and 3' ends.\" stay; two answer boxes; the countdown ring starts after \"Pause here to answer.\" for 10 seconds with the card at full size",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card shrunk to a strip, the rule chip, the top strand glowing as template with the bottom dimmed, terracotta tiles docking one codon at a time by computed pairing, the result line, and a crossed wrong-template chip",
+      "teachingReason": "Brief feedback (owner rule): the answer from the direction rule, the mRNA as three codons with its ends, and one crossed-out classic mistake (pairing the coding strand), then move on",
+      "narrationCue": "reads its template from the 3' end to the 5' end / 3' end on the left / top strand / Pairing it / A C G, U U A, G C C / If you paired the bottom strand / comes out wrong",
+      "motionPurpose": "The rule chip writes beside the polymerase arrow, the top strand glows as the template, terracotta tiles dock one codon per spoken group with the result line, and the wrong template chip is written and crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The demands shrink to a strip; on \"reads its template from the 3' end to the 5' end\" the chip \"template read 3' to 5'\" writes with its arrow beside the polymerase's; on \"3' end on the left\" the top strand's 3' tag is circled amber; on \"top strand\" the top strand glows as the template while the bottom dims, with the line \"(a) top strand: read 3' to 5', the way the polymerase moves\"; on \"Pairing it\" terracotta tiles dock under the top strand one codon per spoken group (U in amber) and \"(b) mRNA 5' ACG UUA GCC 3'\" writes as the last group lands; on \"If you paired the bottom strand\" the chip \"template = bottom strand, so mRNA 3' UGC AAU CGG 5'\" writes and on \"comes out wrong\" it takes a grey scribble cross (\"that pairs the coding strand: the wrong message\")",
+      "motionTools": [
+        "glow",
+        "dim",
+        "tile dock",
+        "result line write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "A question card with a plain mushroom icon (no species plate), the painted cell plate small and tagged liver cell, three stimulus lines and the demand with a four-line answer box",
+      "teachingReason": "Unseen explanation of why protein production falls when transcription stops although the DNA and ribosomes are intact; the stem is neutral, naming no species",
+      "narrationCue": "moving along DNA / not damaged / still work / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; a plain mushroom icon sits on the left; the small painted cell plate is tagged \"liver cell\"; the stimulus lines write on one at a time (\"Toxin: stops RNA polymerase moving along DNA\", \"DNA: not damaged\", \"Ribosomes: still work\"); the demand \"Explain why the cell makes less and less of its proteins over the following hours.\" and a four-line answer box stay; the countdown ring starts after \"Pause here to answer.\" for 10 seconds; no mRNA, pore path or arrows are drawn",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The painted cell plate enlarged to the centre with the polymerase clamped, a ghost ribosome arrow stopped at the envelope, four cytoplasm mRNA strands fraying with a falling counter, ticks on the stimulus lines and a crossed replication chip",
+      "teachingReason": "Brief feedback (owner rule): the model chain one cause per line (no new mRNA, ribosomes depend on mRNA, existing mRNA is broken down and not replaced) and one crossed-out mistake (replication), then move on",
+      "narrationCue": "no new mRNA / can't read the DNA / depend on mRNA / broken down / protein production falls / that's replication / transcription",
+      "motionPurpose": "The clamp and empty slot appear, a ribosome arrow hits the envelope, four strands fray as a counter falls and protein blobs stop, ticks land on the unchanged DNA and ribosomes, and the replication chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The card shrinks to a strip and the cell plate enlarges; on \"no new mRNA\" a grey clamp covers the polymerase and a grey bar crosses the empty mRNA slot (\"no new mRNA\"); on \"can't read the DNA\" a ghost arrow from a ribosome hits the envelope (\"DNA stays in\") and on \"depend on mRNA\" the line \"ribosomes need mRNA\" writes; on \"broken down\" four terracotta strands at ribosomes fray and fade while the counter \"mRNA in the cytoplasm\" falls 4, 3, 2, 1, 0 and the protein blobs stop appearing (\"over hours\"); on \"protein production falls\" the line \"existing mRNA is not replaced, so protein production falls\" writes and ticks land on \"DNA: not damaged\" and \"Ribosomes: still work\"; on \"can't copy its DNA\" the chip \"the cell can't copy its DNA, so it can't make proteins\" writes, on \"that's replication\" it is crossed, and on \"transcription\" the tag \"the toxin stops transcription\" writes",
+      "motionTools": [
+        "plate zoom",
+        "counter tick",
+        "fade",
+        "tick",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Three chips with small icons (two strands with one amber, pair or copy, an arrow) and a next chip with a ribosome doodle and a clock ring",
+      "teachingReason": "Collects the strand decision into one rule, ends on the direction check and hands off to translation",
+      "narrationCue": "template / coding / 5' to 3'",
+      "motionPurpose": "The three chips write on one at a time with their icons, then the next chip slides in at the lower right",
+      "motionRole": "explain",
+      "onScreenChange": "Three chips write on one at a time: \"template or coding?\" (two strands, one amber), \"template: pair (A to U) / coding: copy (T to U)\", \"mRNA: 5' to 3'\" (arrow); a chip \"Next: from mRNA to a chain of amino acids\" with a small ribosome doodle and a clock ring slides in at the lower right",
+      "motionTools": [
+        "HandText write-on",
+        "icon pop",
+        "chip slide-in"
+      ],
+      "holdPurpose": "Hold about half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory line in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes and the memory line appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b6b-learning-review.md",
+      "sha256": "672998c8e9cc8e166f8db3da7a6f20fbc00b7d56d4cccf900c3877fdda55c8d3"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b6b-claude-science-check.md",
+      "sha256": "97cb3b2e6bb34c3bfe75d312af42b632cd4861330ebff508ed357f52c4bfc77e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

@@ -101,8 +101,8 @@ export const SceneHugeSolve: React.FC = () => {
 			<Tag x={X} y={800} w={330} text="K: no unit written" at={KB.ink + 30} color={AMBER_INK} size={28} />
 			<SlipChip x={1300} y={820} w={520} text="(2x)^{2} = 2x^{2}" at={KB.four + 20} out={KB.m4 + 30} note="(2x)^{2} = 4x^{2}" />
 			{/* Revision 2 pen tag (owner rule): how the x^3 line was rearranged */}
-			<Tag x={96} y={790} w={560} text="multiply both sides by the bottom, then divide" at={KB.xc + 12} size={26} color={AMBER_INK} />
-			<Arrow x1={560} y1={786} x2={706} y2={672} at={KB.xc + 18} color={AMBER_INK} width={4} dur={12} />
+			<Tag x={96} y={790} w={600} text="multiply both sides by the bottom, then divide" at={KB.xc + 12} size={28} color={AMBER_INK} />
+			<Arrow x1={600} y1={786} x2={708} y2={656} at={KB.xc + 18} color={AMBER_INK} width={4} dur={12} />
 		</Overlay>
 	);
 };

@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, anaOffsets, ANA_GRID, ANA_X, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, clamp01, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading,
-	INK, INK_SOFT, Arrow, lerp, META_Y, NUC_R, NUC_X, Overlay, Pole, prog, RX, S, Scribble, SplitCells, StageStrip, vis, Bracket, Line,
+	INK, INK_SOFT, Arrow, lerp, META_Y, NUC_R, NUC_X, Overlay, Pole, prog, RX, S, Scribble, SplitCells, StageStrip, vis, Bracket, Line, PCell, poleDX,
 } from './shared';
 import {HAVE} from './assets';
 import {PLATES, SvgPlate} from './shared';
@@ -28,7 +28,8 @@ export const ScenePhase: React.FC = () => {
 		return [lerp(bx, 0, lineup), lerp(by, META_Y[i], lineup)];
 	};
 	const gp = 0.5 * prog(f, c.grow, 52) + 0.5 * prog(f, c.attach, 36);
-	const PL = CX - 426, PR = CX + 426;
+	const PL = CX - poleDX(RX), PR = CX + poleDX(RX);
+	const spin = prog(f, c.spindle, 36);
 	const heading: [number, string][] = [[0, 'Mitosis has four steps'], [c.pro, 'Step 1: prophase'], [c.meta, 'Step 2: metaphase']];
 	const p0 = pos(0, 0, 1);
 	const glowPartner = vis(f, c.notnext, c.notnext + 60, 10);
@@ -36,7 +37,7 @@ export const ScenePhase: React.FC = () => {
 		<>
 			<Heading items={heading} size={64} />
 			<Overlay>
-				<CellBody />
+				<CellBody spindle={spin} />
 				<Envelope p={ep} />
 				{/* spindle: poles and fibres */}
 				{[0, 1, 2, 3].map(i => {
@@ -49,8 +50,6 @@ export const ScenePhase: React.FC = () => {
 						</g>
 					);
 				})}
-				<Pole x={PL} y={CY} at={c.spindle} />
-				<Pole x={PR} y={CY} at={c.spindle + 4} />
 				{CH.map((ch, i) => {
 					const [x, y] = pos(i);
 					return <Chrom key={i} x={CX + x} y={CY + y} kind={ch.kind} color={ch.color} dup={1} coil={cp} hiA={(i === 0 || i === 1) ? glowPartner : 0} hiB={(i === 0 || i === 1) ? glowPartner : 0} />;
@@ -86,7 +85,7 @@ export const SceneAnaphase: React.FC = () => {
 	const e = 0.04 * open + 0.96 * travel;
 	const bend = prog(f, c.shorten - 6, 40);
 	const rx = RX + 40 * travel;
-	const PL = CX - (rx - 44), PR = CX + (rx - 44);
+	const PL = CX - poleDX(rx), PR = CX + poleDX(rx);
 	const pop = f >= c.split && f < c.split + 16 ? prog(f, c.split, 16) : 1;
 	const bars = [0, 1, 2, 3].map(i => ({i, ch: CH[i], o: anaOffsets(i, e), y: CY + META_Y[i]}));
 	const cnt8 = prog(f, c.twice, 10);
@@ -96,7 +95,7 @@ export const SceneAnaphase: React.FC = () => {
 		<>
 			<Heading items={[[0, 'Step 3: anaphase']]} size={64} />
 			<Overlay>
-				<CellBody rx={rx} />
+				<CellBody rx={rx} spindle={1} />
 				{bars.map(b => {
 					const ax = CX + b.o.xa, ay = b.y + b.o.ya, bx = CX + b.o.xb, by = b.y + b.o.yb;
 					return (
@@ -106,8 +105,6 @@ export const SceneAnaphase: React.FC = () => {
 						</g>
 					);
 				})}
-				<Pole x={PL} y={CY} at={-20} />
-				<Pole x={PR} y={CY} at={-20} />
 				{bars.map(b => <Chrom key={b.i} x={CX} y={b.y} kind={b.ch.kind} color={b.ch.color} dup={1} coil={1} bend={bend} {...b.o} />)}
 				{f >= c.split && f < c.split + 18 ? [0, 1, 2, 3].map(i => <circle key={i} cx={CX} cy={CY + META_Y[i]} r={14 + 40 * pop} fill="none" stroke={AMBER_INK} strokeWidth={5} opacity={1 - pop} />) : null}
 				<g opacity={vis(f, c.soon, c.twice, 8)}><Scribble cx={gl + ANA_GRID[0][0] - 2} cy={CY + ANA_GRID[0][1]} rx={34} ry={78} at={c.soon + 6} color={AMBER_INK} seed={5} /></g>
@@ -197,11 +194,11 @@ export const SceneTelophase: React.FC = () => {
 				</g>
 				{/* parent and ticks */}
 				<g opacity={parentO}>
-					<ellipse cx={215} cy={600} rx={112} ry={92} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} strokeDasharray="12 9" />
+					<PCell cx={215} cy={600} rx={112} ry={92} o={0.85} />
 					{CH.map((ch, i) => <Chrom key={i} x={215 + (i - 1.5) * 40} y={600} kind={ch.kind} color={ch.color} dup={0} s={0.42} />)}
 				</g>
-				<DrawPath d={`M${cluster(-1) - 30},${CY + 210} l16,18 l36,-42`} at={tickAt} dur={12} color="#2f8a5b" width={9} />
-				<DrawPath d={`M${cluster(1) - 30},${CY + 210} l16,18 l36,-42`} at={tickAt + 8} dur={12} color="#2f8a5b" width={9} />
+				<DrawPath d={`M${cluster(-1) - 30},${CY + 232} l16,18 l36,-42`} at={tickAt} dur={12} color="#2f8a5b" width={9} />
+				<DrawPath d={`M${cluster(1) - 30},${CY + 232} l16,18 l36,-42`} at={tickAt + 8} dur={12} color="#2f8a5b" width={9} />
 			</Overlay>
 			<Hand at={c.uncoil} out={c.env} x={96} y={290} size={50} w={360}>uncoil into long thin threads</Hand>
 			<Hand at={c.env + 36} out={c.cyto + 20} x={96} y={290} size={50} w={360}>two nuclei</Hand>

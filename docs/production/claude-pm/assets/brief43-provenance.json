@@ -1,0 +1,83 @@
+{
+  "brief": 43,
+  "date": "2026-10-16",
+  "tool": "built-in image_gen",
+  "reference": "public/assets/chemistry/c7-tug-scene-v1.png",
+  "method": "Three separate reference-image edits with transparent backgrounds. Generated pixels were placed without resampling on one common 3000 x 1000 transparent canvas. The rope layer was raised 60 px to pass through the figures hands.",
+  "layerOrder": [
+    "c7-tug-rope-flag-v1.png",
+    "c7-tug-left-v1.png",
+    "c7-tug-right-v1.png"
+  ],
+  "files": [
+    {
+      "file": "public/assets/chemistry/c7-tug-left-v1.png",
+      "sourceGeneratedImage": "C:\\Users\\kygs\\.codex\\generated_images\\01a143b9-9825-7a83-a0ef-e19efe68f43a\\exec-afd2cb66-fe44-4efb-ab62-59e604ecd3b2.png",
+      "sha256": "42e08665e1fab58c357ca8265b2d7897f2b7025aaa4534a9864edd16a95ed1fe",
+      "size": [
+        3000,
+        1000
+      ],
+      "alphaBoundingBox": [
+        680,
+        129,
+        2100,
+        879
+      ],
+      "transparentMarginsPixels": [
+        680,
+        129,
+        900,
+        121
+      ]
+    },
+    {
+      "file": "public/assets/chemistry/c7-tug-right-v1.png",
+      "sourceGeneratedImage": "C:\\Users\\kygs\\.codex\\generated_images\\01a143b9-9825-7a83-a0ef-e19efe68f43a\\exec-3097704c-0983-4d24-8a1f-330f960f9993.png",
+      "sha256": "35ab222ae7ea277545dad177066edf8b3a7500b6a1fe155dcbf2e75e98b01ff2",
+      "size": [
+        3000,
+        1000
+      ],
+      "alphaBoundingBox": [
+        931,
+        139,
+        2336,
+        851
+      ],
+      "transparentMarginsPixels": [
+        931,
+        139,
+        664,
+        149
+      ]
+    },
+    {
+      "file": "public/assets/chemistry/c7-tug-rope-flag-v1.png",
+      "sourceGeneratedImage": "C:\\Users\\kygs\\.codex\\generated_images\\01a143b9-9825-7a83-a0ef-e19efe68f43a\\exec-8125103d-3920-4029-a21a-bcd18fb8c9a5.png",
+      "sha256": "1ae32d41c5a69db4a460e752e8be183562cd420b2d5f1268c3554db74fdd850f",
+      "size": [
+        3000,
+        1000
+      ],
+      "alphaBoundingBox": [
+        557,
+        163,
+        2442,
+        769
+      ],
+      "transparentMarginsPixels": [
+        557,
+        163,
+        558,
+        231
+      ]
+    }
+  ],
+  "qa": [
+    "checkerboard.png",
+    "composite-cream.png",
+    "composite-200px-high.png",
+    "composite-200px-wide.png"
+  ]
+}

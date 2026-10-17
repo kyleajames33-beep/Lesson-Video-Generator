@@ -4,7 +4,7 @@ import {Countdown, Enter, HandText} from '../../kit';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, anaOffsets, arcPath, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, clamp01, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyCross, GreyTag, Hand, Heading,
-	INK, INK_SOFT, Kind, lerp, META_Y, NUC_FILL, NUC_LINE, onCircle, Overlay, PenTap, PlateArt, PLATES, plateH, Pill, Pole, prog, PLUM, S, Scribble, SplitCells, StageStrip, TEALC, Tick, vis, Chip, Bracket, Arrow,
+	INK, INK_SOFT, Kind, lerp, META_Y, NUC_FILL, NUC_LINE, onCircle, Overlay, PenTap, PlateArt, PLATES, plateH, Pill, Pole, prog, PLUM, S, Scribble, SplitCells, StageStrip, TEALC, Tick, vis, Chip, Bracket, Arrow, PCell, poleDX,
 } from './shared';
 import {HAVE} from './assets';
 import {SvgPlate} from './shared';
@@ -158,7 +158,7 @@ export const SceneAttempt: React.FC = () => {
 			{/* 1: the fruit fly cell, counted in the answer */}
 			<Overlay>
 				<g opacity={prog(f, c.fly, 14)}>
-					<ellipse cx={X1 + 690} cy={Y + 175} rx={72} ry={56} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+					<PCell cx={X1 + 690} cy={Y + 175} rx={72} ry={56} />
 					<circle cx={X1 + 690} cy={Y + 175} r={32} fill={NUC_FILL} stroke={NUC_LINE} strokeWidth={4} strokeDasharray="14 7" />
 				</g>
 			</Overlay>
@@ -172,15 +172,13 @@ export const SceneAttempt: React.FC = () => {
 			{/* 2: six X-shaped chromosomes lined up */}
 			<Overlay>
 				<g opacity={prog(f, c.q2, 14)}>
-					<ellipse cx={cc[0]} cy={cc[1]} rx={300} ry={200} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+					<PCell cx={cc[0]} cy={cc[1]} rx={300} ry={200} spindle={1} />
 					{six.map((s, i) => (
 						<g key={i}>
-							<Fibre x1={cc[0] - 270} y1={cc[1]} x2={cc[0] - 4} y2={yAt(i)} />
-							<Fibre x1={cc[0] + 270} y1={cc[1]} x2={cc[0] + 4} y2={yAt(i)} />
+							<Fibre x1={cc[0] - poleDX(300)} y1={cc[1]} x2={cc[0] - 4} y2={yAt(i)} />
+							<Fibre x1={cc[0] + poleDX(300)} y1={cc[1]} x2={cc[0] + 4} y2={yAt(i)} />
 						</g>
 					))}
-					<Pole x={cc[0] - 270} y={cc[1]} at={-20} />
-					<Pole x={cc[0] + 270} y={cc[1]} at={-20} />
 					{six.map((s, i) => <Chrom key={i} x={cc[0]} y={yAt(i)} kind={s.kind} color={s.color} dup={1} coil={1} s={0.56} />)}
 				</g>
 			</Overlay>
@@ -236,13 +234,13 @@ const MiniRing: React.FC<{x: number; y: number; r?: number; at: number}> = ({x, 
 	);
 };
 
-// ---------- 8a. Feedback, item one ----------
+// ---------- 8a. Feedback, item one (take02, 16 Oct: brief, one crossed mistake) ----------
 const KINDS8: Kind[] = ['L', 'M', 'S', 'S'];
 export const SceneFeedbackOne: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('feedback-one'), {
 		one: 'One', copying: 'After copying', eight: '8 chromosomes', joined: 'joined at', sixteen: '16 chromatids', mitosis: 'After mitosis', each8: 'each new cell has', parent: 'the same as the parent',
-		w1: 'If you said 16 chromosomes', w2: 'If you said 8 chromatids', w2c: 'copying gives every', w3: 'If you said 16 in each', w4: 'If you said 4', first: 'doubled the DNA',
+		w4: 'If you said 4', halved: 'you halved the number', first: 'doubled the DNA',
 	});
 	const MC: [number, number] = [600, 585];
 	const dup = prog(f, c.copying + 4, 36);
@@ -282,22 +280,21 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Hand at={c.each8 + 20} x={MC[0] + 250 - 10} y={MC[1] + 180} size={64} color={AMBER_INK}>8</Hand>
 			<Hand at={c.first} x={640} y={868} size={52} color={AMBER_INK}>doubled first, then shared back</Hand>
 			{/* the answers and the likely wrong ideas */}
-			<Right at={c.sixteen + 8} x={1010} y={230}>now: 8 chromosomes, 16 chromatids</Right>
-			<Right at={c.each8 + 6} x={1010} y={316}>each new cell: 8, same as the parent</Right>
-			<Wrong at={c.w1} x={1010} y={440} text="16 chromosomes" why="you counted chromatids" />
-			<Wrong at={c.w2} x={1010} y={540} text="8 chromatids" why="every chromosome has two after copying" />
-			<Wrong at={c.w3} x={1010} y={640} text="16 in each new cell" why="separated chromatids are chromosomes" />
-			<Wrong at={c.w4} x={1010} y={740} text="4 in each new cell" why="halved: the copying doubled the DNA first" />
+			<Right at={c.eight + 4} x={1010} y={220}>now: 8 chromosomes</Right>
+			<Hand at={c.joined} x={1080} y={300} size={36} color={INK_SOFT} w={760}>the copies stay joined at their centromeres</Hand>
+			<Right at={c.sixteen + 4} x={1010} y={360}>and 16 chromatids</Right>
+			<Right at={c.each8 + 6} x={1010} y={460}>each new cell: 8, same as the parent</Right>
+			<Wrong at={c.w4} x={1010} y={590} text="4 in each new cell" why="halved: the copying doubled the DNA first" />
 		</>
 	);
 };
 
-// ---------- 8b. Feedback, item two ----------
+// ---------- 8b. Feedback, item two (take02, 16 Oct: brief, one crossed mistake) ----------
 export const SceneFeedbackTwo: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('feedback-two'), {
-		lined: 'lined up across the middle', fibres: 'fibres attached', meta: 'this is metaphase', count: 'Count the centromeres', six: '6 chromosomes', each2: 'each with two chromatids', twelve: '12 chromatids',
-		w1: 'If you said 12 chromosomes', w2: 'If you said 3', w3: 'If you said prophase', w4: 'If you said anaphase',
+		lined: 'lined up across the middle', fibres: 'fibres attached', meta: 'this is metaphase', count: 'Count the centromeres', six: '6 chromosomes',
+		w1: 'If you said 12', counted: 'you counted chromatids', copies: 'the two copies in each',
 	});
 	const cc: [number, number] = [560, 540];
 	const six: {kind: Kind; color: string}[] = [{kind: 'L', color: PLUM}, {kind: 'S', color: TEALC}, {kind: 'M', color: PLUM}, {kind: 'L', color: TEALC}, {kind: 'S', color: PLUM}, {kind: 'M', color: TEALC}];
@@ -306,43 +303,31 @@ export const SceneFeedbackTwo: React.FC = () => {
 	const taps = [0, 1, 2, 3, 4, 5].map(i => c.count + 14 + i * 9);
 	const pts: [number, number][] = six.map((_, i) => [cc[0], yAt(i)]);
 	const chromN = Math.min(6, [0, 1, 2, 3, 4, 5].filter(i => f >= taps[i]).length);
-	const hiAt = (i: number) => vis(f, c.each2 + i * 12, c.each2 + i * 12 + 14, 4);
+	const hiAt = (i: number) => vis(f, c.copies + i * 5, c.copies + i * 5 + 34, 6);
+	const lineGlow = vis(f, c.lined, c.fibres - 4, 8);
+	const fibreGlow = vis(f, c.fibres, c.meta, 8);
 	return (
 		<>
 			<Heading items={[[0, 'Question 2: the cell']]} size={64} />
 			<Overlay>
-				<CellBody cx={cc[0]} cy={cc[1]} rx={330} ry={272} />
+				<CellBody cx={cc[0]} cy={cc[1]} rx={330} ry={272} spindle={1} />
 				{six.map((s, i) => (
 					<g key={i}>
-						<Fibre x1={cc[0] - 300} y1={cc[1]} x2={cc[0] - 4} y2={yAt(i)} />
-						<Fibre x1={cc[0] + 300} y1={cc[1]} x2={cc[0] + 4} y2={yAt(i)} />
+						<Fibre x1={cc[0] - poleDX(330)} y1={cc[1]} x2={cc[0] - 4} y2={yAt(i)} color={fibreGlow > 0.05 ? AMBER_INK : INK_SOFT} w={3.2 + 1.6 * fibreGlow} />
+						<Fibre x1={cc[0] + poleDX(330)} y1={cc[1]} x2={cc[0] + 4} y2={yAt(i)} color={fibreGlow > 0.05 ? AMBER_INK : INK_SOFT} w={3.2 + 1.6 * fibreGlow} />
 					</g>
 				))}
-				<Pole x={cc[0] - 300} y={cc[1]} at={-20} />
-				<Pole x={cc[0] + 300} y={cc[1]} at={-20} />
+				{/* the middle line the chromosomes sit on */}
+				<line x1={cc[0]} x2={cc[0]} y1={yAt(0) - 60} y2={yAt(5) + 60} stroke={AMBER_INK} strokeWidth={4} strokeDasharray="3 12" strokeLinecap="round" opacity={lineGlow} />
 				{six.map((s, i) => <Chrom key={i} x={cc[0]} y={yAt(i)} kind={s.kind} color={s.color} dup={1} coil={1} s={0.8} hiA={hiAt(i)} hiB={hiAt(i)} />)}
-				<PenTap pts={pts} at={taps} badge={[56, 0]} out={c.each2 - 10} />
-				{/* a ghost of anaphase beside the vignette */}
-				<g opacity={prog(f, c.w4 + 20, 16)}>
-					<ellipse cx={1460} cy={850} rx={230} ry={84} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} strokeDasharray="12 9" />
-					{six.map((s, i) => {
-												return (
-							<g key={i}>
-								<Chrom x={1460} y={850 + (i - 2.5) * 22} kind={s.kind} color={s.color} dup={1} coil={1} s={0.26} xa={-150 / 0.26} xb={150 / 0.26} sep={1} bend={1} />
-							</g>
-						);
-					})}
-				</g>
+				<PenTap pts={pts} at={taps} badge={[56, 0]} out={c.w1 - 10} />
 			</Overlay>
-			<Hand at={c.count + 14} x={96} y={830} size={52} color={AMBER_INK}>{`${chromN} centromeres = ${chromN} chromosomes`}</Hand>
-			<Hand at={c.twelve} x={96} y={890} size={52} color={AMBER_INK}>6 x 2 = 12 chromatids</Hand>
-			<Right at={c.meta} x={980} y={200}>metaphase</Right>
-			<Right at={c.six + 4} x={980} y={286}>6 chromosomes (12 chromatids)</Right>
-			<Wrong at={c.w1} x={980} y={410} w={850} text="12 chromosomes" why="you counted chromatids" />
-			<Wrong at={c.w2} x={980} y={510} w={850} text="3" why="you counted the kinds: two of each" />
-			<Wrong at={c.w3} x={980} y={610} w={850} text="prophase" why="already lined up" />
-			<Wrong at={c.w4} x={980} y={710} w={850} text="anaphase" why="the chromatids are still joined" />
-			<Hand at={c.w4 + 24} x={1250} y={906} size={34} color={INK_SOFT}>anaphase would look like this: centromeres split</Hand>
+			<Hand at={c.count + 14} x={96} y={850} size={52} color={AMBER_INK}>{`${chromN} centromeres = ${chromN} chromosomes`}</Hand>
+			<Hand at={c.lined} x={1050} y={220} size={36} color={INK_SOFT} w={780}>lined up across the middle, fibres from both ends</Hand>
+			<Right at={c.meta} x={980} y={286}>metaphase</Right>
+			<Right at={c.six + 4} x={980} y={390}>6 chromosomes</Right>
+			<Wrong at={c.w1} x={980} y={550} w={850} text="12 chromosomes" why="you counted chromatids" />
+			<Hand at={c.copies} x={1050} y={640} size={40} color={INK} w={780}>12 = chromatids: 6 x 2, two copies in each X</Hand>
 			<StageStrip at={[-999, -999, -999, -999, -999]} active={1} x={930} y={112} k={0.8} />
 		</>
 	);

@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {HandText, Enter, Countdown} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, Chrom, Col, CX, DrawPath, Fibre, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, Kind, lerp, MiniBar, Num, Overlay, PArt, PenTap, Pill, PLUM, PL, pH, Pole, prog, S, Scribble, TEALC, Tick, vis, clamp01, MC, PP, TT, COL,
+	AMBER, AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, Chrom, Col, CX, DrawPath, Fibre, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, Kind, lerp, MiniBar, Num, Overlay, PArt, PenTap, Pill, PLUM, PL, pH, Pole, prog, S, Scribble, TEALC, Tick, vis, clamp01, MC, PP, TT, COL, PCell, poleDX,
 } from './shared';
 import {TrackStrip} from './sE';
 
@@ -101,22 +101,24 @@ const AnswerBox: React.FC<{x: number; y: number; w: number; at: number; label: s
 
 /** Three homologous pairs of X-shaped chromosomes lined up across the middle (no labels, no stage word). */
 const PAIR_KINDS: Kind[] = ['L', 'M', 'S'];
-export const SixX: React.FC<{cx: number; cy: number; s: number; sp: number; dx?: number; split?: number; sepPartners?: number; hi?: number; poles?: boolean; fib?: number; o?: number}> = ({cx, cy, s, sp, dx = 40, sepPartners = 0, hi = 0, poles = true, fib = 1, o = 1}) => (
+export const SixX: React.FC<{cx: number; cy: number; s: number; sp: number; dx?: number; split?: number; sepPartners?: number; hi?: number; poles?: boolean; fib?: number; o?: number; pole?: number}> = ({cx, cy, s, sp, dx = 40, sepPartners = 0, hi = 0, poles = true, fib = 1, o = 1, pole}) => {
+	const pd = pole ?? 340 * s;
+	return (
 	<g opacity={o}>
-		{poles ? <><Pole x={cx - 340 * s} y={cy} at={-20} /><Pole x={cx + 340 * s} y={cy} at={-20} /></> : null}
 		{PAIR_KINDS.map((k, i) => {
 			const y = cy + (i - 1) * sp;
 			const xp = cx - dx - sepPartners, xt = cx + dx + sepPartners;
 			return (
 				<g key={i}>
-					{poles && sepPartners < 1 ? <><Fibre x1={cx - 340 * s} y1={cy} x2={xp - 3} y2={y} p={fib} /><Fibre x1={cx + 340 * s} y1={cy} x2={xt + 3} y2={y} p={fib} /></> : null}
+					{poles && sepPartners < 1 ? <><Fibre x1={cx - pd} y1={cy} x2={xp - 3} y2={y} p={fib} /><Fibre x1={cx + pd} y1={cy} x2={xt + 3} y2={y} p={fib} /></> : null}
 					<Chrom x={xp} y={y} kind={k} color={PLUM} dup={1} coil={1} s={s} hiA={hi} hiB={hi} />
 					<Chrom x={xt} y={y} kind={k} color={TEALC} dup={1} coil={1} s={s} hiA={hi} hiB={hi} />
 				</g>
 			);
 		})}
 	</g>
-);
+	);
+};
 
 export const SceneAttempt: React.FC = () => {
 	const f = useCurrentFrame();
@@ -138,8 +140,7 @@ export const SceneAttempt: React.FC = () => {
 			<div style={{opacity: prog(f, c.pea, 16)}}><PArt a={PL.pod} x={X1 + 506} y={Y + 96} w={250} /></div>
 			<Overlay>
 				<g opacity={prog(f, c.pea + 10, 14)}>
-					<ellipse cx={X1 + 630} cy={Y + 250} rx={96} ry={72} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
-					<circle cx={X1 + 630} cy={Y + 250} r={42} fill="rgba(226,214,238,0.62)" stroke="#5b4d70" strokeWidth={4} strokeDasharray="14 7" />
+					<Cell cx={X1 + 630} cy={Y + 250} rx={96} ry={72} nuc={1} />
 				</g>
 			</Overlay>
 			<Note x={X1 + 30} y={Y + 92} w={470} at={c.pea} size={26}>A pea plant body cell has 14 chromosomes, in 7 homologous pairs. Assume no crossing over. A gamete of this plant joins a gamete from another pea plant of the same kind. A combination means which chromosome of each pair a gamete carries.</Note>
@@ -152,8 +153,8 @@ export const SceneAttempt: React.FC = () => {
 			{/* 2: a cell part-way through a division */}
 			<Overlay>
 				<g opacity={prog(f, c.cell, 14)}>
-					<ellipse cx={cc[0]} cy={cc[1]} rx={265} ry={190} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
-					<SixX cx={cc[0]} cy={cc[1] - 10} s={0.5} sp={92} dx={40} />
+					<PCell cx={cc[0]} cy={cc[1]} rx={265} ry={190} spindle={1} />
+					<SixX cx={cc[0]} cy={cc[1] - 10} s={0.5} sp={92} dx={40} pole={poleDX(265)} />
 				</g>
 			</Overlay>
 			<Note x={X2 + 30} y={Y + 92} w={860} at={c.cell} size={26}>A cell of another species that is making gametes is part-way through a division. Assume no mistakes.</Note>
@@ -181,12 +182,12 @@ const Wrong: React.FC<{at: number; x: number; y: number; w?: number; text: strin
 	);
 };
 
-// ---------- 16. Feedback, item one ----------
+// ---------- 16. Feedback, item one (take02, 16 Oct: brief, one crossed mistake) ----------
 const PX = (i: number) => 150 + i * 118;
 export const SceneFeedbackOne: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('feedback-one'), {
-		one: 'One', seven: '7 chromosomes', each: 'one from each', either: 'either partner', mult: 'choices multiply', pow: '2 to the power', is128: 'is 128', egg: 'fertilised egg', fourteen: ['14', 1], plus: 'because 7', w1: ['If you said', 1], w1b: 'mitosis rule', w2: ['If you said', 2], w2b: 'added up', w3: ['If you said', 3], w3b: 'used 14', w4: ['If you said', 4], w4b: 'forgot',
+		one: 'One', seven: '7 chromosomes', each: 'one from each', either: 'either partner', mult: 'choices multiply', pow: '2 to the power', is128: 'is 128', egg: 'fertilised egg', fourteen: ['14', 1], plus: 'because 7', w1: 'If you said 14', w2b: 'added up',
 	});
 	const flipAt = (i: number) => c.either + i * 7;
 	const choose: Col[] = ['P', 'T', 'T', 'P', 'T', 'P', 'P'];
@@ -237,10 +238,7 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Hand at={c.mult} x={150} y={545} size={40} w={800} color={AMBER_INK}>choices multiply: doubling for each pair</Hand>
 			<Hand at={c.is128} x={940} y={580} size={92}>128</Hand>
 			<Hand at={c.fourteen} x={1300} y={540} size={64} w={520}><span style={{display: 'block', textAlign: 'center'}}>7 + 7 = 14</span></Hand>
-			<Wrong at={c.w1} x={96} y={690} text="14 in a gamete" why="used the mitosis rule" w={1000} />
-			<Wrong at={c.w2} x={96} y={756} text="14 combinations" why="added 2 seven times; the choices multiply" w={1300} />
-			<Wrong at={c.w3} x={96} y={822} text="16,384" why="used 14 for n, but n counts pairs" w={1300} />
-			<Wrong at={c.w4} x={96} y={888} text="7 in the egg" why="forgot that two gametes join" w={1000} />
+			<Wrong at={c.w1} x={96} y={720} text="14 combinations" why="added 2 seven times: the choices multiply" w={1300} />
 			<GreyTag at={c.is128 + 40} x={1300} y={700} text="with crossing over there would be even more" size={26} />
 		</>
 	);
@@ -255,46 +253,36 @@ const Coin2: React.FC<{x: number; y: number; from: number; to: number; face: Col
 	return <ellipse cx={x} cy={y - lift} rx={20} ry={Math.max(2, 20 * sy)} fill={showing === 'P' ? PLUM : TEALC} stroke={INK} strokeWidth={3} opacity={clamp01((f - from + 30) / 8)} />;
 };
 
-// ---------- 17. Feedback, item two ----------
+// ---------- 17. Feedback, item two (take02, 16 Oct: brief, one crossed mistake) ----------
 export const SceneFeedbackTwo: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('feedback-two'), {
-		lined: 'lined up in homologous', nosplit: 'no centromeres split', meta: 'metaphase of meiosis', six: 'Six chromosomes', three: 'will hold 3', w1: 'If you said 6', w2: 'If you said 12', w3: 'If you said metaphase', own: 'each chromosome lines',
+		lined: 'lined up in homologous', nosplit: 'no centromeres split', meta: 'metaphase of meiosis', separates: 'separates the partners', three: 'will hold 3', w1: 'If you said 6', halves: 'meiosis one halves it',
 	});
 	const cx = 640, cy = 530;
-	const lit = vis(f, c.lined, c.six - 10, 14);
-	const apart = prog(f, c.three + 6, 56);
+	const lit = vis(f, c.lined, c.nosplit - 6, 14);
+	const apart = prog(f, c.separates, 56);
 	const penPts: [number, number][] = [];
 	[cy - 150, cy, cy + 156].forEach(yy => { penPts.push([cx - 44, yy], [cx + 44, yy]); });
 	return (
 		<>
 			<Heading items={[[0, 'Question 2: which division?']]} size={60} />
 			<Overlay>
-				<ellipse cx={cx} cy={cy} rx={380} ry={265} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={6} />
+				<PCell cx={cx} cy={cy} rx={380} ry={265} spindle={1 - apart} />
 				<SixXApart cx={cx} cy={cy} apart={apart} hi={lit} showFib={apart < 0.02} />
 				<g opacity={prog(f, c.nosplit, 14) * (1 - apart)}>
 					<Scribble cx={cx - 44} cy={cy - 150} rx={36} ry={36} at={c.nosplit + 10} color={AMBER_INK} seed={3} />
 					<Scribble cx={cx + 44} cy={cy - 150} rx={36} ry={36} at={c.nosplit + 24} color={AMBER_INK} seed={7} />
 				</g>
-				<g opacity={1 - prog(f, c.three - 10, 12)}><PenTap pts={penPts} at={[0, 1, 2, 3, 4, 5].map(i => c.six + 14 + i * 14)} badge={[56, -30]} out={c.three - 10} /></g>
-				{/* ghosts of the other stages */}
-				<g opacity={prog(f, c.w3 + 30, 16)}>
-					<Cell cx={1330} cy={745} rx={150} ry={112} />
-					{[0, 1, 2, 3, 4, 5].map(i => <Chrom key={i} x={1330} y={745 + (i - 2.5) * 30} kind="S" color={i % 2 ? TEALC : PLUM} dup={1} coil={1} s={0.24} />)}
-					<Cell cx={1640} cy={745} rx={150} ry={112} />
-					{[0, 1, 2].map(i => <Chrom key={i} x={1640} y={745 + (i - 1) * 40} kind="S" color={PLUM} dup={1} coil={1} s={0.3} />)}
-				</g>
 			</Overlay>
 			<Hand at={c.meta} x={cx - 330} y={cy - 345} size={50} w={680} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>pairs lined up: meiosis I</span></Hand>
-			<Hand at={c.six + 4} out={c.three - 10} x={cx - 300} y={cy + 275} size={46} w={600} color={INK}><span style={{display: 'block', textAlign: 'center'}}>6 chromosomes in 3 homologous pairs</span></Hand>
-			<Hand at={c.three + 30} x={cx - 372} y={cy - 40} size={60} w={80} color={PLUM}>3</Hand>
-			<Hand at={c.three + 36} x={cx + 340} y={cy - 40} size={60} w={80} color={TEALC}>3</Hand>
+			<Hand at={c.lined + 6} out={c.three + 16} x={cx - 300} y={cy + 275} size={46} w={600} color={INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pairs, side by side</span></Hand>
+			<Hand at={c.three + 30} x={cx - 480} y={cy - 40} size={60} w={80} color={PLUM}>3</Hand>
+			<Hand at={c.three + 36} x={cx + 400} y={cy + 30} size={60} w={80} color={TEALC}>3</Hand>
 			<Hand at={c.three + 24} x={cx - 300} y={cy + 275} size={46} w={600} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>3 + 3: each cell holds 3 chromosomes</span></Hand>
-			<Wrong at={c.w1} x={1100} y={250} text="6" why="kept the number, but this division splits the homologous partners" w={760} />
-			<Wrong at={c.w2} x={1100} y={380} text="12" why="counted chromatids" w={760} />
-			<Wrong at={c.w3} x={1100} y={470} text="metaphase of mitosis or meiosis II" why="in those, each chromosome lines up on its own, with no pairs" w={780} />
-			<Hand at={c.w3 + 40} x={1190} y={872} size={34} w={300} color={INK_SOFT}>mitosis: six, each on its own</Hand>
-			<Hand at={c.w3 + 44} x={1500} y={872} size={34} w={300} color={INK_SOFT}>meiosis II: three, each on its own</Hand>
+			<Hand at={c.nosplit + 6} x={1100} y={250} size={42} w={760} color={INK}>no centromeres split: still X shapes</Hand>
+			<Hand at={c.separates} x={1100} y={330} size={42} w={760} color={INK}>this division separates the partners</Hand>
+			<Wrong at={c.w1} x={1100} y={450} text="6 in each cell" why="kept the number, but meiosis I halves it" w={760} />
 		</>
 	);
 };
@@ -303,15 +291,14 @@ const SixXApart: React.FC<{cx: number; cy: number; apart: number; hi: number; sh
 	const kinds: Kind[] = ['L', 'M', 'S'];
 	return (
 		<g>
-			{showFib ? <><Pole x={cx - 340} y={cy} at={-20} /><Pole x={cx + 340} y={cy} at={-20} /></> : null}
 			{kinds.map((k, i) => {
 				const y = cy + (i - 1) * 150 + (k === 'S' ? 6 : 0);
 				const yEnd = y;
-				const xp = lerp(cx - 44, cx - 250, apart), xt = lerp(cx + 44, cx + 250, apart);
+				const xp = lerp(cx - 44, cx - 190, apart), xt = lerp(cx + 44, cx + 190, apart);
 				const yy = lerp(y, yEnd, apart);
 				return (
 					<g key={i}>
-						{showFib ? <><Fibre x1={cx - 340} y1={cy} x2={xp - 3} y2={y} p={1} /><Fibre x1={cx + 340} y1={cy} x2={xt + 3} y2={y} p={1} /></> : null}
+						{showFib ? <><Fibre x1={cx - poleDX(380)} y1={cy} x2={xp - 3} y2={y} p={1} /><Fibre x1={cx + poleDX(380)} y1={cy} x2={xt + 3} y2={y} p={1} /></> : null}
 						<Chrom x={xp} y={yy} kind={k} color={PLUM} dup={1} coil={1} s={1.05} hiA={hi} hiB={hi} />
 						<Chrom x={xt} y={yy} kind={k} color={TEALC} dup={1} coil={1} s={1.05} hiA={hi} hiB={hi} />
 					</g>

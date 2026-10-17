@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b6c/lesson.json",
+    "lessonSha256": "7dcbfa7ea523bbeb740b37247aed49b2e4b2f09d059ec70e3f2e0ba456ecf2a8"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B6b: mRNA is a single strand of RNA copied from one gene, built 5' to 3' with U in place of T; it leaves the nucleus through pores to ribosomes in the cytoplasm; it is read in codons of three bases; a gene usually codes for a polypeptide, a chain of amino acids that folds into a protein; RNA pairing is A with U and C with G. B4: antiparallel strands with 5' and 3' ends. B6a: mitochondria came from bacteria that began living inside larger cells. Year 11: enzymes, the cytoplasm, rough endoplasmic reticulum. Not assumed: translation, ribosome structure, rRNA, tRNA, anticodon, start and stop codons, peptide bond, the codon chart.",
+    "startsWith": "An mRNA message written in four bases, proteins built from twenty amino acids, and the question of how the message is read and what acts as the translator.",
+    "stopsAfter": "Explaining why codons are three bases; describing the ribosome (small and large subunits, protein and rRNA, in the cytoplasm); describing tRNA (one specific amino acid, an anticodon, many kinds loaded by enzymes); writing a directed anticodon for a codon; using the codon chart with mRNA codons; describing start at AUG (methionine), the repeating cycle and stop codons; saying a polypeptide must fold before it works as a protein; assessing the roles of mRNA and tRNA; applying all of it to a DNA template with a chart excerpt and to an antibiotic that makes bacterial ribosomes misread codons. No A, P and E site names, wobble, protein structure levels, mutation types or sedimentation labels.",
+    "nextLesson": "B07: proteins, phenotype and gene-environment interaction: how the order of amino acids decides a protein's shape and job."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b06c.md"
+  ],
+  "teaching": {
+    "task": "Explain how a ribosome turns a code of four bases into a chain of amino acids, and use the codon chart and a directed anticodon on an unseen sequence.",
+    "causalExplanation": "Four bases can name only four amino acids and pairs only sixteen, but triplets give sixty-four, more than enough for twenty, so the code is read in threes. The ribosome holds the mRNA and moves along it one codon at a time but does not choose amino acids; tRNA is the adaptor, with an anticodon that pairs antiparallel with a codon at one end and one particular amino acid, loaded by an enzyme, at the other. The chart is written for mRNA codons. Translation starts at AUG, then each round a matching tRNA arrives, rRNA joins the amino acids with a peptide bond and the ribosome moves one codon, until a stop codon, which no tRNA matches, lets a release protein free the chain. The order of codons sets the order of amino acids, and the polypeptide then has to fold. mRNA sets the order and tRNA makes the code readable, so both are essential.",
+    "conversationalApproach": "Opens on the strand leaving the pore and the four-to-twenty puzzle, works out why three bases by counting, builds the ribosome and tRNA one need at a time, keeps ends on every anticodon, runs one four-codon message from start to stop on one board with a chain tally, assesses both RNAs by removing each in turn, gives a stop-codon mnemonic and the language aid, then asks two harder unseen items, each followed by a model answer built one point at a time.",
+    "openingDecision": "A message written with four bases has to build a chain made from twenty kinds of amino acid. How does it do that?",
+    "understandingCheck": "Given the DNA template 3' TAC TTC GGA ACT 5' and a chart excerpt, write the amino acid sequence (Met, Lys, Pro, with UGA a stop that adds none), explain why there are three amino acids, and write the anticodon for the second amino acid with its ends (3' UUC 5'). Then explain how streptomycin can kill bacteria while the patient's own cytoplasmic ribosomes keep working, and suggest why it can affect mitochondrial ribosomes.",
+    "curriculumScope": "Model the process of polypeptide synthesis, including translation, and assess the importance of mRNA and tRNA (Module 5, ACSBL079). Function and phenotype of proteins go to the proteins lesson; A, P and E sites, wobble, mutation types and protein structure levels are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted ribosome flipped in code so the large subunit is on top, the painted cell and bacterium plates, and a coded translation board (terracotta mRNA with B4 jigsaw tiles and amber U, two slots, lilac-grey L-shaped tRNAs with directed anticodon tiles, warm-coloured named amino acid beads, ink peptide bonds that flash amber, a 4 by 4 codon chart filled by the ported lookup). Blue and green are not used.",
+    "transitionPlan": "The strand leaves the painted pore and the camera pushes in; the cell plate crossfades to the flipped ribosome plate; the translation board persists from the ribosome scene to the both-RNAs scene with the givens line holding the worked message; the codon chart and the three-station strip take the board for one scene each; each attempt card clears the aids and its feedback follows at once, turning the card into pictures and model-answer lines; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "B6b's terracotta mRNA strand leaving a painted pore on the cell plate, then lying across the cytoplasm, four base tiles with a 4 counter, a fan of twenty labelled amino acid beads with a 20 counter, and a lilac-grey tRNA silhouette",
+      "teachingReason": "Poses the puzzle: a four-letter message must spell a chain of twenty kinds of building block, with a translator as the answer",
+      "narrationCue": "four / twenty / translator",
+      "motionPurpose": "The strand slides out of the pore and the camera pushes in, four tiles lift out with a counter, twenty beads fan out with a counter, a dotted arrow gets a question mark and a tRNA drifts in",
+      "motionRole": "explain",
+      "onScreenChange": "The terracotta strand slides out of a painted pore (the same move as B6b scene 6) and the camera pushes in until it lies across the screen; on \"four\" four tiles (A, U, C, G) lift out with \"4 letters\"; on \"twenty\" twenty small labelled beads fan out beneath with \"20 building blocks\"; a dotted arrow from the 4 to the 20 carries a \"?\"; on \"translator\" an unlabelled lilac-grey tRNA silhouette drifts in and stops; the heading \"How does a four-letter message build a protein?\" writes on",
+      "motionTools": [
+        "plate zoom",
+        "strand slide",
+        "tile lift",
+        "counter tick",
+        "fan reveal"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the question"
+    },
+    {
+      "sceneId": "why-three",
+      "visualDecision": "new",
+      "visualReference": "A coded combination counter: single tiles against a need-20 bar, a 4 by 4 grid of pairs, a stack of sixty-four triplets, the mRNA with codon brackets, and four Gly codons and three stop codons gathering",
+      "teachingReason": "Works out why codons are three bases by counting before the word codon is used, and why most amino acids have more than one codon",
+      "narrationCue": "four / sixteen / sixty-four / codons / read in threes / more than one codon / stop",
+      "motionPurpose": "Three rows build in turn: four tiles fall short of the line, sixteen pairs still fall short, sixty-four triplets pour past it with a tick, then the mRNA returns with brackets and the Gly and stop codons gather",
+      "motionRole": "explain",
+      "onScreenChange": "Row 1 shows four single tiles (\"1 base: 4\") against a bar marked \"need 20\", which falls short with a grey cross; row 2 fills a 4 by 4 grid of pairs (\"2 bases: 4 x 4 = 16\"), still short; row 3 pours in sixty-four three-tile groups (\"3 bases: 4 x 4 x 4 = 64\") passing the line with an amber tick; on \"read in threes\" the mRNA returns and brackets snap under each triplet with \"codon\"; on \"more than one codon\" GGU, GGC, GGA and GGG light and point to one \"Gly\" bead; on \"stop\" three codons gather with a grey \"stop\" tag",
+      "motionTools": [
+        "counter tick",
+        "grid fill",
+        "bracket draw",
+        "Mark cross",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "ribosome",
+      "visualDecision": "adjust",
+      "visualReference": "The painted cell plate with free ribosomes and rough ER, a grey-crossed ghost ribosome in the nucleus, the painted ribosome plate flipped so the large subunit is on top, the terracotta mRNA through the groove and two faint slot outlines",
+      "teachingReason": "Says where translation happens and what the ribosome holds and does, and that it does not choose the amino acids, setting up the need for an adaptor",
+      "narrationCue": "translation / ribosome / small subunit / large subunit / rRNA / one codon at a time",
+      "motionPurpose": "The plate returns with taps on ribosome dots and a cross on a ghost nuclear ribosome, the camera zooms to the flipped ribosome, the halves lift and label, the mRNA slides into the groove, the ribosome steps one codon and a grey question mark sits over the empty slots",
+      "motionRole": "explain",
+      "onScreenChange": "The cell plate returns; a pen taps two free ribosome dots (\"free ribosomes\") and circles the studded ER (\"rough ER: ribosomes on a membrane\"); a grey cross lands on a ghost ribosome in the nucleus (\"not in the nucleus\"); the camera zooms on one dot and crossfades to the painted ribosome plate flipped with the large subunit on top; on \"small subunit\" and \"large subunit\" each half lifts slightly apart and back with its label; on \"rRNA\" the chip \"made of protein and rRNA\" writes on; the mRNA slides into the groove from the left, 5' end first, and the halves close; on \"one codon at a time\" the ribosome steps right by one bracketed codon; two faint slots appear labelled \"first slot\" and \"second slot\"; a grey \"?\" sits over them",
+      "motionTools": [
+        "plate zoom",
+        "plate crossfade",
+        "ScribbleCircle",
+        "strand slide",
+        "label pop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "trna-adaptor",
+      "visualDecision": "new",
+      "visualReference": "A large coded tRNA close-up (lilac-grey L silhouette folding from a strand) with a Glu bead, three anticodon tiles, an adaptor bracket, four different tRNAs with beads and a coded enzyme blob loading a Gly bead while a wrong Ala bead bounces off",
+      "teachingReason": "Says what the adaptor must do (match the code, hold the amino acid) before naming the anticodon, and that enzymes load each kind of tRNA with its own amino acid",
+      "narrationCue": "transfer RNA / amino acid / anticodon / adaptor / many kinds of tRNA / only",
+      "motionPurpose": "The board slides left and a tRNA strand draws and folds into its L shape, a Glu bead clips on, the anticodon lights and lowers onto a codon, an adaptor bracket labels the two ends, four tRNAs line up and an enzyme loads a matching bead while a wrong one is rejected",
+      "motionRole": "explain",
+      "onScreenChange": "The board slides left; a strand draws on the right and folds into the L silhouette (short paired stretches flash, \"folds on itself\"); on \"amino acid\" a \"Glu\" bead clips onto the top end (\"amino acid end\"); on \"anticodon\" the three bottom tiles light (\"anticodon\"); the tRNA lowers onto a codon and the tiles meet by jigsaw shape; on \"adaptor\" the labels \"matches the code (bases)\" and \"holds the amino acid\" write at the two ends with an amber bracket \"adaptor\"; on \"many kinds of tRNA\" four tRNAs with different anticodons and beads (Met, Glu, Ala, Gly) line up; on \"only\" an enzyme blob snaps a Gly bead onto the Gly tRNA and a wrong Ala bead bumps off (\"wrong amino acid: rejected\")",
+      "motionTools": [
+        "strand fold",
+        "plate slide",
+        "bead clip",
+        "jigsaw dock",
+        "bracket draw",
+        "bounce"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "codon-anticodon",
+      "visualDecision": "new",
+      "visualReference": "A close-up of codon 5' GAA 3' in the second slot, the Glu tRNA with anticodon tiles 3' CUU 5' docking pair by pair, an antiparallel chip, the anticodon turning round to read 5' UUC 3', and a pair rule card with the site's second example",
+      "teachingReason": "Teaches that codon and anticodon pair in opposite directions, so the anticodon is written with its ends and the two are not confused",
+      "narrationCue": "opposite directions / from its 3' end / Keep the ends",
+      "motionPurpose": "The codon sits with a right-pointing arrow, the tRNA lowers and its tiles click in with a left-pointing arrow, the antiparallel chip writes, the anticodon turns round to read the other way and the pair rule card settles with the second example",
+      "motionRole": "explain",
+      "onScreenChange": "A close-up shows \"5' G A A 3'\" with its arrow pointing right; the Glu tRNA lowers and its anticodon tiles \"3' C U U 5'\" dock beneath, each pair clicking (G with C, A with U, A with U) with the arrow pointing left; the chip \"antiparallel, as in DNA\" writes on; on \"Written the tRNA's own way\" the anticodon lifts, turns round to read \"5' U U C 3'\" and an equals sign links it back to \"3' C U U 5'\"; on \"Keep the ends\" the card \"codon 5' GAA 3' / anticodon 3' CUU 5' (= 5' UUC 3')\" settles with the site's example \"5' GCA 3' / 3' CGU 5'\" small beneath",
+      "motionTools": [
+        "jigsaw dock",
+        "arrow draw",
+        "turn-round flip",
+        "card slide-in",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "codon-chart",
+      "visualDecision": "new",
+      "visualReference": "A coded 4 by 4 codon chart in standard layout filled by the ported lookup, stop cells grey, an amber start flag on AUG, a lookup pointer, a Glu bead and two crossed ghost lookups (UUC and CTT)",
+      "teachingReason": "Teaches the chart look-up with the mRNA codon, base by base, and blocks looking up the anticodon or the DNA",
+      "narrationCue": "codon chart / mRNA codon / glutamate / start codon",
+      "motionPurpose": "The chart draws on, the bottom row, third column and then the third line light for GAA and a Glu bead pops out, two ghost lookups slide in and are crossed, and the pointer runs AUG to Met with a start flag",
+      "motionRole": "explain",
+      "onScreenChange": "The chart draws on as a full grid (U, C, A, G down the left, across the top and down each box's right edge) with the three stop cells grey and an amber \"start\" flag on AUG; the tag \"mRNA codons only\"; on \"first base\" the bottom row lights; on \"second base\" the third column lights and their crossing box glows; on \"third base\" the pointer drops to the third line and \"GAA: Glu\" lights with a Glu bead popping out; on \"never the anticodon or the DNA\" ghost lookups \"UUC\" and \"CTT\" slide toward the chart and are stopped by grey crosses; on \"A U G\" the pointer runs A, U, G to \"AUG: Met (start)\"",
+      "motionTools": [
+        "chart draw",
+        "pointer run",
+        "glow",
+        "bead pop",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "start",
+      "visualDecision": "new",
+      "visualReference": "The givens line \"mRNA 5' AUG GAA GCU UAA 3'\" with codon brackets, the small ribosome subunit carrying a Met tRNA (anticodon 3' UAC 5') sliding along the mRNA, an amber start bracket, the large subunit lowering, and a chain tally chip",
+      "teachingReason": "Shows initiation in order: the small subunit with Met tRNA slides to the first AUG, the anticodon pairs, and the large subunit closes",
+      "narrationCue": "A U G, G A A, G C U, U A A / start codon / large subunit",
+      "motionPurpose": "The givens line writes, the small subunit with its Met tRNA attaches near the 5' end and slides until AUG sits in the first slot, the anticodon docks pair by pair, the large subunit clamps on top and the tally starts at 1 Met",
+      "motionRole": "explain",
+      "onScreenChange": "The givens line writes at top left with codon brackets; the board resets to the small subunit alone with a tRNA (tiles \"3' U A C 5'\", Met bead) riding on it; it attaches near the mRNA's 5' end and slides right until the first codon sits in the first slot; on \"start codon\" the AUG bracket glows amber; the tRNA's tiles drop onto the codon and dock (A with U, U with A, G with C clicking); on \"large subunit\" the upper half lowers onto it with a soft clamp; a chip \"1 Met\" starts the tally at the lower right",
+      "motionTools": [
+        "givens line write-on",
+        "plate slide",
+        "jigsaw dock",
+        "glow",
+        "clamp"
+      ],
+      "holdPurpose": "Hold about half a second after the last word"
+    },
+    {
+      "sceneId": "elongate",
+      "visualDecision": "new",
+      "visualReference": "The translation board with the GAA bracket in the second slot, a Glu tRNA (3' CUU 5') docking, an ink peptide bond flashing amber between the Met and Glu beads, the ribosome sliding right by one codon, the empty Met tRNA leaving with a small reloading inset, and an Ala tRNA (3' CGA 5') docking on GCU",
+      "teachingReason": "Shows one full cycle of elongation: a matching tRNA arrives, the amino acids are joined, the ribosome moves on, the empty tRNA leaves and the next codon is exposed",
+      "narrationCue": "glutamate / peptide bond / moves one codon / alanine",
+      "motionPurpose": "The GAA bracket lights in the second slot, the Glu tRNA docks, the Met bead links to Glu with a flashing bond, the ribosome slides right while the mRNA stays still, the empty tRNA leaves for reloading and the Ala tRNA docks on GCU",
+      "motionRole": "explain",
+      "onScreenChange": "On \"sits in the second slot\" the GAA bracket lights in the second slot; the Glu tRNA (3' C U U 5') drifts in from below and docks; on \"peptide bond\" the Met bead swings across and links to the Glu bead with a short ink bond that flashes amber (\"peptide bond, made by rRNA\", a pointer on the large subunit); on \"moves one codon\" the ribosome slides right by exactly one bracket while the mRNA stays still and the Met-Glu chain hangs from the Glu tRNA in the first slot; the empty Met tRNA lifts away out of the top left and a small grey inset shows an enzyme blob giving it a new Met bead; on \"alanine\" the Ala tRNA (3' C G A 5') docks on GCU; the tally reads \"Met, Glu\"",
+      "motionTools": [
+        "jigsaw dock",
+        "bond flash",
+        "ribosome slide",
+        "inset reveal",
+        "tally write-on"
+      ],
+      "holdPurpose": "Hold about half a second after the last word"
+    },
+    {
+      "sceneId": "stop",
+      "visualDecision": "new",
+      "visualReference": "A three-part cycle ring (tRNA arrives, peptide bond, move one codon), the third round playing on the board, the UAA stop codon in the second slot with no matching tRNA, a coded release protein blob, the chain detaching, the subunits drifting apart, and the tally with a stop bracket",
+      "teachingReason": "Shows that a round repeats and that a stop codon has no matching tRNA, so a release protein ends the chain and the result is a polypeptide",
+      "narrationCue": "the same three steps / stop codon / release protein / polypeptide",
+      "motionPurpose": "The cycle ring draws with a pointer going round once as the third round plays, the stop codon glows grey and a tRNA fails to dock, the release protein fits the slot, the chain detaches and the subunits part, and the tally and a long bead string write on",
+      "motionRole": "explain",
+      "onScreenChange": "On \"the same three steps\" the three-part ring draws beside the board and a pointer goes round it once as the third round plays (the Glu-Ala bond flashes, the ribosome shifts, the empty tRNA leaves); on \"stop codon\" UAA in the second slot glows grey and a tRNA tries to dock and finds no matching tiles (\"no tRNA matches\"); on \"release protein\" a coded blob fits into the slot; the chain detaches and the two halves separate and drift off the mRNA; the tally \"Met, Glu, Ala: 4 codons, 3 amino acids\" writes on with the stop bracket tagged \"stop: adds nothing\"; after \"polypeptide\" the short chain is replaced for a beat by a long bead string running off screen (\"real polypeptides: usually hundreds of amino acids\")",
+      "motionTools": [
+        "cycle ring draw",
+        "ribosome slide",
+        "bond flash",
+        "blob fit",
+        "plate split",
+        "tally write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "polypeptide-to-protein",
+      "visualDecision": "new",
+      "visualReference": "A three-station strip (gene as a plum ladder, mRNA codons, amino acid order beads) with transcription and translation arrows, the long bead string folding into a compact blob, a second folded chain, and a next-video chip",
+      "teachingReason": "Connects the amino acid order back to the gene and states that a polypeptide must fold before it works, leaving the how for the next video",
+      "narrationCue": "came from the gene / fold / more than one chain",
+      "motionPurpose": "The strip draws left to right with its two labelled arrows and a pen runs back from the beads to the DNA, the long bead string folds into a blob, and a second folded chain joins it",
+      "motionRole": "explain",
+      "onScreenChange": "The strip draws left to right: \"gene (DNA)\" (plum ladder), \"mRNA codons\" (terracotta), \"amino acid order\" (Met, Glu, Ala beads) with arrows labelled \"transcription\" and \"translation\"; on \"came from the gene\" a pen runs back along the strip from the beads to the DNA; on \"fold\" the long bead string folds into a compact blob (\"folds into a shape\"); on \"more than one chain\" a second folded chain joins it (\"some proteins: more than one chain\"); the grey chip \"shape and job: next video\" lands",
+      "motionTools": [
+        "strip draw",
+        "pen run",
+        "fold morph",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "both-rnas",
+      "visualDecision": "adjust",
+      "visualReference": "The ribosome mid-translation with one mRNA and two tRNAs, two chips, an idle ribosome with a no-message tag, a waiting codon with a codon-unread tag, and two quick computed fault cases",
+      "teachingReason": "Assesses the importance of each RNA by removing it in turn and showing what stops, with the two roles in one line",
+      "narrationCue": "order / readable / Without mRNA / Without the right tRNAs",
+      "motionPurpose": "The mRNA lights with its chip, a tRNA lights with its chip, the mRNA fades and the ribosome idles then returns, the tRNAs fade and a codon waits then they return, and two fault cases play side by side with a closing line",
+      "motionRole": "explain",
+      "onScreenChange": "On \"mRNA carries\" the mRNA lights terracotta and the chip \"mRNA: carries the sequence, sets the order\" writes on; on \"tRNA is the molecule that links\" a tRNA lights and the chip \"tRNA: links each codon to its amino acid\" writes; on \"Without mRNA\" the mRNA fades and the ribosome sits idle (\"no message\") then returns; on \"Without the right tRNAs\" the tRNAs fade and a codon waits (\"codon unread\") then they return; after the spoken lines two computed cases play side by side (GAA to GUA, Glu to Val; a Glu tRNA carrying Ala), each putting a wrong bead in the chain with an amber ring; the line \"both are essential: one carries the order, one reads it\" writes",
+      "motionTools": [
+        "glow",
+        "fade",
+        "chip pop",
+        "bead swap",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Three large handwritten amber stop-codon lines with underlined first letters, B6b's language line returning small, and a translation line with a tRNA icon tagged the translator",
+      "teachingReason": "Gives the stop-codon mnemonic and the language aid after both are explained",
+      "narrationCue": "U Are Away, U Are Gone, U Go Away / changes / translator",
+      "motionPurpose": "The three codon lines write on in turn with their first letters underlined, then the language line returns and the translation line writes with the tRNA icon",
+      "motionRole": "explain",
+      "onScreenChange": "Three lines write on one at a time under their codons: \"UAA: U Are Away\", \"UAG: U Are Gone\", \"UGA: U Go Away\" with the first letters underlined; B6b's line \"transcription keeps the language\" returns small and \"translation changes it: bases to amino acids\" writes on with a tRNA icon tagged \"the translator\"",
+      "motionTools": [
+        "HandText write-on",
+        "underline draw",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold about half a second after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "A question card headed \"From a gene to a chain\" with the DNA template 3' TAC TTC GGA ACT 5', an eight-row codon chart excerpt, two demands and two answer boxes, with no mRNA, brackets or ribosome",
+      "teachingReason": "Unseen multi-step application: transcribe first, translate, count amino acids with the stop adding none, and write a directed anticodon; the excerpt allows plausible wrong answers from wrong methods",
+      "narrationCue": "template / how many / second / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears with no givens line, rule card or earlier chart; the card writes on with \"DNA template strand: 3' TAC TTC GGA ACT 5'\" and the excerpt \"Codon chart (part)\" (AAG Lys, ACU Thr, AUG Met (start), CCU Pro, GGA Gly, UAC Tyr, UGA stop, UUC Phe); the demands \"(a) Write the amino acid sequence of the polypeptide. Explain how many amino acids it has.\" and \"(b) Write the anticodon of the tRNA that brings the second amino acid, with its 5' and 3' ends.\" stay with two answer boxes; the countdown ring starts after \"Pause here to answer.\" for 10 seconds with the card at full size",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card shrunk to a strip with the chart excerpt at the right, terracotta tiles docking under the template one codon at a time, a pointer and beads for Met, Lys, Pro, a grey stop bracket, a tRNA with tiles 3' UUC 5', and a crossed DNA-letters chip",
+      "teachingReason": "Brief feedback (owner rule): only the essential working (transcribe because the chart reads mRNA, the codons read from the chart with the stop adding none, the anticodon with its ends) and one crossed-out mistake (DNA letters read straight into the chart), then move on",
+      "narrationCue": "transcribe first / A U G, A A G, C C U, U G A / methionine, lysine, proline / stop codon / three amino acids / The second codon / 3' end / straight into the chart / which is wrong",
+      "motionPurpose": "Terracotta tiles dock under the template one codon per spoken group, a pointer runs to each excerpt row as its bead pops out, the stop row greys with a stop bracket, a tRNA docks on the second codon with its ends, and the wrong DNA-letters chip is written and crossed",
+      "motionRole": "explain",
+      "onScreenChange": "On \"transcribe first\" terracotta tiles dock under the template one codon per spoken group and \"mRNA 5' AUG AAG CCU UGA 3'\" writes as the last group lands; on \"methionine\", \"lysine\" and \"proline\" a pointer runs to each excerpt row and a labelled bead pops out (Met, Lys, Pro); on \"stop codon\" the UGA row lights grey and a \"stop: adds nothing\" bracket closes the chain; on \"three amino acids\" \"(a) Met, Lys, Pro: 3 amino acids (stop adds none)\" writes; on \"The second codon\" AAG lights and a tRNA with tiles \"3' U U C 5'\" docks under it, its 3' tag pulsing on \"3' end\"; \"(b) anticodon 3' UUC 5' (= 5' CUU 3')\" writes; on \"straight into the chart\" the chip \"Tyr, Phe, Gly, Thr (DNA letters read straight into the chart)\" writes with its four excerpt rows flashing grey and on \"which is wrong\" it takes a scribble cross (\"the chart reads mRNA codons\")",
+      "motionTools": [
+        "tile dock",
+        "pointer run",
+        "bead pop",
+        "result line write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "A card with two panels: the painted bacterium with a coded ribosome inset and a streptomycin chip attached to its small subunit, and the small painted human cell with a different-shaped ribosome inset and the chip drawn beside it, plus stimulus lines, two demands and answer boxes",
+      "teachingReason": "Unseen explain-and-suggest case on streptomycin; every condition stays visible and nothing carries the model answer",
+      "narrationCue": "Streptomycin / misread codons / mitochondria / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; the left panel shows the painted bacterium with a ribosome inset and an amber \"streptomycin\" chip attached to its small subunit; the right panel shows the small painted cell tagged \"human cell\" with a ribosome inset of a different outline and the chip beside it, not attached; the stimulus lines \"Streptomycin binds the small subunit of bacterial ribosomes: codons are misread, wrong tRNAs pair\" and \"It does not bind human cytoplasmic ribosomes (different shape)\" write on; the two demands (a) and (b) stay with an answer box each; the countdown ring starts after \"Pause here to answer.\" for 10 seconds; no chains, folding, mitochondrion picture or bacteria-like wording appears",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The bacterial ribosome enlarged into the translation board with a clashing tRNA and a wrong bead in the chain, a misfolded blob beside a correct one, a human ribosome inset reading correctly, the painted mitochondrion with a bacterial-outline inset, and a crossed DNA-changes chip",
+      "teachingReason": "Brief feedback (owner rule): the key reasons only (misreading puts wrong amino acids in, proteins misfold and the bacterium dies; human cytoplasmic ribosomes are not bound; mitochondria keep bacteria-like ribosomes) and one crossed-out mistake (the DNA is changed), then move on",
+      "narrationCue": "misread codons / wrong amino acids / fold wrongly / dies / human cytoplasmic ribosomes / Mitochondria came from bacteria / bacteria-like / look again / reading",
+      "motionPurpose": "The bacterial ribosome enlarges and a mismatched tRNA docks anyway, a wrong bead joins the chain, the chain folds into a misshapen blob and the bacterium dims, the human inset plays a correct round, the mitochondrion appears with a bacterial-shaped ribosome, and the DNA-changes chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The bacterial inset enlarges into the translation board with the chip on its small subunit; on \"misread codons\" a tRNA with one clashing tile docks anyway and on \"wrong amino acids\" its wrong bead joins the chain with an amber ring; on \"fold wrongly\" the chain folds into a misshapen blob beside a correct one (\"wrong shape: does not work\") and on \"dies\" the bacterium plate dims with \"enzymes fail\" and \"(a) wrong amino acids, misfolded proteins: the bacterium dies\" writes; on \"human cytoplasmic ribosomes\" the human inset plays one correct round with a tick and on \"most of the cell's proteins\" \"human cytoplasmic ribosomes (most proteins): drug does not bind, codons read correctly\" writes; on \"Mitochondria came from bacteria\" the painted mitochondrion appears with a ribosome inset matching the bacterial outline and B6a's endosymbiosis motion replays small, and on \"bacteria-like\" the (b) line writes; on \"changes the bacteria's DNA\" the chip \"streptomycin changes the bacteria's DNA\" writes, on \"look again\" it is crossed, and on \"reading\" the tag \"the message is fine: the reading goes wrong\" writes",
+      "motionTools": [
+        "inset enlarge",
+        "jigsaw clash",
+        "bead swap",
+        "fold morph",
+        "tick",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Four chips with a next chip showing a small folded-blob doodle and a clock ring",
+      "teachingReason": "Collects the method into one order for any sequence question and hands off to protein shape and job",
+      "narrationCue": "DNA or mRNA / ends / Next",
+      "motionPurpose": "The four chips write on one at a time, then the next chip slides in at the lower right",
+      "motionRole": "explain",
+      "onScreenChange": "Four chips write on one at a time: \"DNA or mRNA?\", \"DNA: transcribe first\", \"chart: mRNA codons, AUG to stop\", \"anticodon: write the ends\"; the chip \"Next: from a chain to a working protein\" with a small folded-blob doodle and a clock ring slides in at the lower right",
+      "motionTools": [
+        "HandText write-on",
+        "chip slide-in",
+        "icon pop"
+      ],
+      "holdPurpose": "Hold about half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the stop-codon memory line in large writing",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes and the memory line appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b6c-learning-review.md",
+      "sha256": "a99576999a7e61cd31cea0c84af2a88be329a554b8d539562608adfbe6e63163"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b6c-claude-science-check.md",
+      "sha256": "4b302d0c10808da3e9d9783ebecec2fb28f16dd2737d4ed853953f228c59e269"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

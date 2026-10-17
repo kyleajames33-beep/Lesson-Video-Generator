@@ -3,7 +3,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Arrow, Bracket, CellBody, CX, CY, DotLink, DrawPath, Envelope, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, LP_Ab, LT_aB, MC, MStrip, Overlay, PAIRED, Pill, PP, prog,
-	S, SCATTER, Scribble, TT, beadAt, clamp01, geomY, vis, Line, BoardG,
+	S, SCATTER, Scribble, TT, beadAt, clamp01, geomY, vis, Line, BoardG, armX, MC_WK, CUT,
 } from './shared';
 
 /** Absolute chromosome centre for chromosome i (0 LP, 1 LT, 2 SP, 3 ST) between scatter (t=0) and paired (t=1). */
@@ -115,7 +115,8 @@ export const ZoomG: React.FC<{zp: number; children: React.ReactNode}> = ({zp, ch
 const ZX = (xRel: number) => ZP.tx + (CX + xRel - ZP.px) * ZP.z;
 const ZY = (yRel: number) => ZP.ty + (CY + yRel - ZP.py) * ZP.z;
 const LP_X = CX + PAIRED[0][0], LT_X = CX + PAIRED[1][0];
-const CROSS_DX = (LT_X - 15) - (LP_X + 15);
+/** Partner distance: the swapped lower piece travels from one chromosome's centre line to the other's, mirroring as it goes. */
+const SWAP_DX = LT_X - LP_X;
 /** The long pair at crossing-over progress t (0 apart, 1 done). */
 const LongPair: React.FC<{t: number; o?: number; hi?: [number, number, number, number]; beads?: number}> = ({t, o = 1, hi = [0, 0, 0, 0], beads = 1}) => {
 	const done = t >= 0.999;
@@ -123,8 +124,8 @@ const LongPair: React.FC<{t: number; o?: number; hi?: [number, number, number, n
 	const e = t;
 	return (
 		<>
-			<MC x={LP_X} y={CY} kind="L" a={PP} b={done ? LP_Ab : PP} pb={done ? undefined : [CROSS_DX * e, dy]} hiA={hi[0]} hiB={hi[1]} o={o} beads={beads} />
-			<MC x={LT_X} y={CY} kind="L" a={done ? LT_aB : TT} b={TT} pa={done ? undefined : [-CROSS_DX * e, -dy]} hiA={hi[2]} hiB={hi[3]} o={o} beads={beads} />
+			<MC x={LP_X} y={CY} kind="L" a={PP} b={done ? LP_Ab : PP} pb={done ? undefined : [SWAP_DX * e, dy]} swapT={done ? 0 : e} hiA={hi[0]} hiB={hi[1]} o={o} beads={beads} />
+			<MC x={LT_X} y={CY} kind="L" a={done ? LT_aB : TT} b={TT} pa={done ? undefined : [-SWAP_DX * e, -dy]} swapT={done ? 0 : e} hiA={hi[2]} hiB={hi[3]} o={o} beads={beads} />
 		</>
 	);
 };
@@ -159,15 +160,15 @@ export const SceneCrossingWhat: React.FC = () => {
 					<Envelope r={NUC} />
 					<OtherPair o={1 - 0.85 * zp} />
 					<LongPair t={t} hi={[0, lit1, lit2, 0]} />
-					<Lightning x={LP_X + 15} y={cutY} at={c.brk} out={c.swap + 20} />
-					<Lightning x={LT_X - 15} y={cutY} at={c.brk + 4} out={c.swap + 20} />
+					<Lightning x={LP_X + armX(CUT) * 250 * MC_WK + 30} y={cutY} at={c.brk} out={c.swap + 20} />
+					<Lightning x={LT_X - armX(CUT) * 250 * MC_WK - 30} y={cutY} at={c.brk + 4} out={c.swap + 20} />
 				</ZoomG>
-				<Scribble cx={ZX(PAIRED[0][0] + 15)} cy={ZY(0)} rx={46} ry={232} at={c.one + 6} color={AMBER_INK} seed={3} />
-				<Scribble cx={ZX(PAIRED[1][0] - 15)} cy={ZY(0)} rx={46} ry={232} at={c.partner + 6} color={AMBER_INK} seed={7} />
+				<Scribble cx={ZX(PAIRED[0][0] + ARM_C)} cy={ZY(0)} rx={58} ry={236} at={c.one + 6} color={AMBER_INK} seed={3} />
+				<Scribble cx={ZX(PAIRED[1][0] - ARM_C)} cy={ZY(0)} rx={58} ry={236} at={c.partner + 6} color={AMBER_INK} seed={7} />
 				<g opacity={vis(f, c.non, c.chroma + 120, 12)}>
-					<Bracket x1={ZX(PAIRED[0][0] + 15)} x2={ZX(PAIRED[1][0] - 15)} y={ZY(136)} at={c.non} color={AMBER_INK} />
+					<Bracket x1={ZX(PAIRED[0][0] + ARM_C)} x2={ZX(PAIRED[1][0] - ARM_C)} y={ZY(136)} at={c.non} color={AMBER_INK} />
 				</g>
-				<Bracket x1={ZX(PAIRED[0][0] - 15)} x2={ZX(PAIRED[0][0] + 15)} y={ZY(-136)} at={c.chroma} color={INK_SOFT} down={false} />
+				<Bracket x1={ZX(PAIRED[0][0] - ARM_C)} x2={ZX(PAIRED[0][0] + ARM_C)} y={ZY(-136)} at={c.chroma} color={INK_SOFT} down={false} />
 			</Overlay>
 			<Hand at={c.non + 10} x={ZX(-120) - 120} y={ZY(136) + 16} size={50} w={300}>non-sister</Hand>
 			<Hand at={c.chroma + 10} x={ZX(-180) - 60} y={ZY(-136) - 92} size={50} w={200} color={INK_SOFT}>sister</Hand>
@@ -176,7 +177,9 @@ export const SceneCrossingWhat: React.FC = () => {
 		</>
 	);
 };
-function geomYCut() { return geomY(CY, 'L', 1, 0.62); }
+function geomYCut() { return geomY(CY, 'L', 1, CUT); }
+/** Mean arm offset of one chromatid of the long painted X (screen px before the zoom). */
+const ARM_C = 0.1 * 250 * MC_WK;
 
 export const SceneCrossingMakes: React.FC = () => {
 	const f = useCurrentFrame();
@@ -185,7 +188,12 @@ export const SceneCrossingMakes: React.FC = () => {
 	});
 	const pulse = (a: number, w = 40) => (f >= a && f < a + w ? Math.sin(((f - a) / w) * Math.PI) : 0);
 	const tags = ['A B', 'A b', 'a B', 'a b'];
-	const xs = [PAIRED[0][0] - 15, PAIRED[0][0] + 15, PAIRED[1][0] - 15, PAIRED[1][0] + 15];
+	const xs = [PAIRED[0][0] - ARM_C, PAIRED[0][0] + ARM_C, PAIRED[1][0] - ARM_C, PAIRED[1][0] + ARM_C];
+	const chromX = [LP_X, LP_X, LT_X, LT_X];
+	const sideOf = ['A', 'B', 'A', 'B'] as const;
+	const ZA = (X: number) => ZP.tx + (X - ZP.px) * ZP.z;
+	const bead = (i: number, lvl: 'top' | 'bot') => ZA(beadAt(chromX[i], CY, 'L', 1, lvl, sideOf[i], 1)[0]);
+	const tipX = (i: number) => ZA(chromX[i] + (sideOf[i] === 'A' ? -1 : 1) * armX(0.03) * 250 * MC_WK);
 	const tAt = [c.four, c.four + 16, c.all - 22, c.all];
 	const LBX = [ZX(-125) - 180, ZX(-125) - 60, ZX(-125) + 60, ZX(-125) + 180];
 	return (
@@ -199,14 +207,13 @@ export const SceneCrossingMakes: React.FC = () => {
 				</ZoomG>
 				{/* highlight rings on the letters */}
 				{[0, 1, 2, 3].map(i => {
-					const px = ZX(xs[i]);
 					return <g key={i}>
-						<circle cx={px} cy={ZY(-HL + 0.17 * 250)} r={26 + 8 * pulse(c.no)} fill="none" stroke={AMBER} strokeWidth={6} opacity={pulse(c.no) + pulse(c.combos)} />
-						<circle cx={px} cy={ZY(-HL + 0.83 * 250)} r={26 + 8 * pulse(c.no)} fill="none" stroke={AMBER} strokeWidth={6} opacity={pulse(c.no) + pulse(c.combos)} />
+						<circle cx={bead(i, 'top')} cy={ZY(-HL + 0.17 * 250)} r={26 + 8 * pulse(c.no)} fill="none" stroke={AMBER} strokeWidth={6} opacity={pulse(c.no) + pulse(c.combos)} />
+						<circle cx={bead(i, 'bot')} cy={ZY(-HL + 0.83 * 250)} r={26 + 8 * pulse(c.no)} fill="none" stroke={AMBER} strokeWidth={6} opacity={pulse(c.no) + pulse(c.combos)} />
 					</g>;
 				})}
-				{xs.map((x, i) => <g key={i} opacity={vis(f, tAt[i], tAt[i] + 54, 10)}><Scribble cx={ZX(x)} cy={ZY(0)} rx={30} ry={232} at={tAt[i]} color={AMBER_INK} seed={3 + i} /></g>)}
-				{xs.map((x, i) => <line key={'l' + i} x1={ZX(x)} y1={ZY(-HL) - 14} x2={LBX[i] + 0} y2={ZY(-HL) - 62} stroke={AMBER_INK} strokeWidth={3} opacity={prog(f, tAt[i] + 8, 10)} />)}
+				{xs.map((x, i) => <g key={i} opacity={vis(f, tAt[i], tAt[i] + 54, 10)}><Scribble cx={ZX(x)} cy={ZY(0)} rx={52} ry={236} at={tAt[i]} color={AMBER_INK} seed={3 + i} /></g>)}
+				{xs.map((x, i) => <line key={'l' + i} x1={tipX(i)} y1={ZY(-HL) - 14} x2={LBX[i] + 0} y2={ZY(-HL) - 62} stroke={AMBER_INK} strokeWidth={3} opacity={prog(f, tAt[i] + 8, 10)} />)}
 				<Bracket x1={ZX(xs[0])} x2={ZX(xs[3])} y={ZY(136)} at={c.all} color={AMBER_INK} />
 				{/* a new allele: not made */}
 				<g opacity={prog(f, c.no, 14)}>
@@ -218,7 +225,7 @@ export const SceneCrossingMakes: React.FC = () => {
 					<DrawPath d="M1370,290 L1290,370" at={c.newA + 6} dur={8} color="#7a8088" width={8} />
 				</g>
 				<g opacity={prog(f, c.sister, 12)}>
-					<Scribble cx={ZX(xs[0]) + 30} cy={ZY(0)} rx={84} ry={236} at={c.sister} color={AMBER_INK} seed={5} />
+					<Scribble cx={ZA(LP_X)} cy={ZY(0)} rx={96} ry={240} at={c.sister} color={AMBER_INK} seed={5} />
 				</g>
 			</Overlay>
 			{tags.map((tg, i) => <Hand key={tg} at={tAt[i] + 8} x={LBX[i] - 52} y={ZY(-HL) - 120} size={52} w={104} color={INK}><span style={{display: 'block', textAlign: 'center'}}>{tg}</span></Hand>)}

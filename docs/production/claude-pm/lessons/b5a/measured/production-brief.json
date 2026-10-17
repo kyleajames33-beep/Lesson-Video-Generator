@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/b5a/measured/lesson.json",
-    "lessonSha256": "7cfa7c7ff5ac05ac32b8759f0627729865678ce018ec45e4f270347f2c86a241"
+    "lessonSha256": "db50d0b16d9aeded12a0237b4098ccd1b846087aacb8e1f660225f73b249a30b"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -29,7 +29,7 @@
   },
   "design": {
     "renderer": "src/explainer/ExplainerVideo.tsx",
-    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, coded skin patch, model cell with chromosome bars, centromere discs, spindle fibres, nuclear envelope, cycle ring, count tracker and numbered stage strip. Colour key: plum is one parent's set and teal the other's, sister chromatids always the same colour, cream centromere discs with ink outline, amber for tags and emphasis, grey for crossed wrong ideas; blue and green are not used.",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, coded skin patch, painted chromosome and cell plates from Codex brief 54 (single and duplicated chromosomes in pink and teal, the dividing, spindle-free and pinching cell, and a five-plate zoom-out recall) under coded centromere discs, spindle fibres, nuclear envelope, cycle ring, count tracker, numbered stage strip, labels and arrows. Colour key: plum is one parent's set and teal the other's, sister chromatids always the same colour, cream centromere discs with ink outline, amber for tags and emphasis, grey for crossed wrong ideas; blue and green are not used.",
     "transitionPlan": "The skin patch heals and a camera settles on a nucleus; bars draw on and two cell outlines compare sets; the board clears to the model cell; bars duplicate into X shapes; the cycle ring draws on around a small model cell; the stage strip builds chip by chip through prophase, metaphase, anaphase and telophase; the count tracker draws on and parks small for the identical scene; the attempt board removes the tracker and strip and they return in the feedback and memory scenes; scene crossfade with settle."
   },
   "scenes": [
@@ -52,15 +52,16 @@
     },
     {
       "sceneId": "chromosome-sets",
-      "visualDecision": "new",
-      "visualReference": "Nucleus with 23 plum short bars and 23 teal short bars, counters to 23 and 46, a bracket for one set and a homologous pair highlight",
-      "teachingReason": "Builds chromosome, set and homologous pair from the counts the student can see",
-      "narrationCue": "structures called chromosomes / two sets of 23 / A set is one of each kind of chromosome / homologous pair",
-      "motionPurpose": "A plum row and a teal row draw on with counters to 23 and 46, a bracket sweeps one set, and a plum and a teal bar of one kind are linked as a pair",
+      "visualDecision": "adjust",
+      "visualReference": "Zoom-out recall on five painted plates (bases, helix, nucleosomes, coiled fibre, single chromosome), then a nucleus with 23 pink (plum role) and 23 teal single chromosome plates, counters to 23 and 46, a bracket for one set and a homologous pair highlight",
+      "teachingReason": "Recalls what a chromosome is made of by zooming out from the DNA of the copying video, then builds chromosome, set and homologous pair from the counts the student can see",
+      "narrationCue": "Your DNA / is packed into / wound up with proteins / two sets of 23 / A set is one of each kind of chromosome / homologous pair",
+      "motionPurpose": "The plates crossfade out one magnification at a time from base pairs to a chromosome over the first sentence, the chromosome shrinks into a row, a plum row and a teal row draw on with counters, a bracket sweeps one set, and two plates of one kind are linked as a pair",
       "motionRole": "explain",
-      "onScreenChange": "The camera settles on a nucleus; a plum row of 23 draws on then a teal row of 23 with tags for each parent and counters to 46; a bracket sweeps along one row on \"A set is one of each kind\"; two bars of one kind light and a pair link writes on \"homologous pair\"; a grey note covers X and Y",
+      "onScreenChange": "Bases on \"Your DNA\", the helix on \"is packed into\", nucleosomes then the coiled fibre on \"wound up with proteins\", and an uncopied chromosome plate as \"A human body cell has 46\" begins (about 11 seconds); it shrinks into the plum row; rows of 23 plates draw on with counters to 46; a bracket sweeps along one row on \"A set is one of each kind\"; two plates of one kind light and a pair link writes on \"homologous pair\"; a grey note covers X and Y",
       "motionTools": [
-        "CameraStage push",
+        "CameraStage pull-back",
+        "plate crossfade",
         "NumberTicker counter",
         "bracket draw",
         "ScribbleCircle",
@@ -70,8 +71,8 @@
     },
     {
       "sceneId": "diploid-haploid",
-      "visualDecision": "new",
-      "visualReference": "Two cell outlines (two sets and one set), a big 46 ticker and the four-chromosome model cell",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Two cell outlines (two sets and one set), a big 46 ticker and the four-chromosome model cell",
       "teachingReason": "Names diploid and haploid after the sets are clear and sets up the small model cell used from here on",
       "narrationCue": "diploid / haploid / a model cell with just four chromosomes",
       "motionPurpose": "Two cell outlines sit side by side with their set tags, the left turns into a 46 ticker, and the board clears to a four-chromosome model cell",
@@ -87,8 +88,8 @@
     },
     {
       "sceneId": "why-copy-first",
-      "visualDecision": "new",
-      "visualReference": "Model cell with four bars, a cut line on the long plum bar, two ghost cells sharing out the bars, and an arrow to copying",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Model cell with four bars, a cut line on the long plum bar, two ghost cells sharing out the bars, and an arrow to copying",
       "teachingReason": "Gives the cause for copying first before any stage name",
       "narrationCue": "each half would carry only half of its instructions / each new cell would get only half of them / The DNA has to be copied first",
       "motionPurpose": "A cut line splits a bar into two grey halves, the bars are shared two and two between ghost cells that are crossed, and the board turns to copying",
@@ -104,8 +105,8 @@
     },
     {
       "sceneId": "the-copy",
-      "visualDecision": "new",
-      "visualReference": "Four bars each doubling into an X shape joined at a cream centromere disc, tags for centromere and chromatid, a ticking counter to 4",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Four bars each doubling into an X shape joined at a cream centromere disc, tags for centromere and chromatid, a ticking counter to 4",
       "teachingReason": "Shows what the copy looks like and teaches the counting rule on the picture",
       "narrationCue": "two identical copies, joined at a point called the centromere / sister chromatids / count the centromeres, not the chromatids",
       "motionPurpose": "Each bar doubles and snaps together at a cream disc, labels circle the disc and the two threads, and a pen taps each disc while a counter ticks to four",
@@ -121,8 +122,8 @@
     },
     {
       "sceneId": "interphase",
-      "visualDecision": "new",
-      "visualReference": "Coded cycle ring with a long interphase arc, a short mitosis arc, a very short cytokinesis arc, a travelling dot and the model cell changing as the dot passes the S phase sub-arc",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Coded cycle ring with a long interphase arc, a short mitosis arc, a very short cytokinesis arc, a travelling dot and the model cell changing as the dot passes the S phase sub-arc",
       "teachingReason": "Places the copying in interphase, before mitosis, so the student does not think copying happens inside it",
       "narrationCue": "In interphase, the long stage between divisions / It is not a rest / S phase / DNA is never copied during mitosis itself",
       "motionPurpose": "A travelling dot circles the ring, the cell grows, the threads double as the dot passes S phase, and the short mitosis arc is marked as sharing, not copying",
@@ -139,8 +140,8 @@
     },
     {
       "sceneId": "prophase",
-      "visualDecision": "new",
-      "visualReference": "Model cell board with a stage strip, a coil animation of the threads into X shapes, a dissolving dashed nuclear envelope, spindle poles and fibres attaching to centromeres",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Model cell board with a stage strip, a coil animation of the threads into X shapes, a dissolving dashed nuclear envelope, spindle poles and fibres attaching to centromeres",
       "teachingReason": "Shows why the chromosomes coil, then how fibres attach and line them up, one stage chip at a time",
       "narrationCue": "Mitosis has four steps / coil up into short, thick X shapes / Spindle fibres, thin protein threads / the chromosomes line up across the middle / not next to its homologous partner",
       "motionPurpose": "The threads coil into short X shapes, the nuclear envelope breaks into dashes, fibres grow from two poles and attach to each centromere, and the chromosomes line up across the middle",
@@ -157,8 +158,8 @@
     },
     {
       "sceneId": "anaphase",
-      "visualDecision": "new",
-      "visualReference": "Lined-up X shapes with a halving centromere pop, shortening fibres, groups travelling apart, a counter to 8 then 4 + 4 and circles on each end",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Lined-up X shapes with a halving centromere pop, shortening fibres, groups travelling apart, a counter to 8 then 4 + 4 and circles on each end",
       "teachingReason": "Shows what separates and where it goes, and the point that each end holds one copy of every chromosome",
       "narrationCue": "the centromeres split / pulling the sister chromatids to opposite ends / twice as many chromosomes as before / Each end has both sets again",
       "motionPurpose": "Each centromere splits, the fibres shorten and two groups travel apart, a counter shows eight then four and four, and circles land on each end",
@@ -174,8 +175,8 @@
     },
     {
       "sceneId": "telophase-cytokinesis",
-      "visualDecision": "new",
-      "visualReference": "Bars uncoiling at each end, dashed nuclear envelopes drawing round both groups, a pinch line, an animal pinch and a small plant inset",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Bars uncoiling at each end, dashed nuclear envelopes drawing round both groups, a pinch line, an animal pinch and a small plant inset",
       "teachingReason": "Finishes the division and shows that each cell holds both sets",
       "narrationCue": "uncoil into long thin threads / a new nuclear envelope forms around each group / the membrane pinches in / two cells, each with both sets",
       "motionPurpose": "The bars uncoil at each end, envelopes draw round both groups, and a line pinches the cell into two",
@@ -191,8 +192,8 @@
     },
     {
       "sceneId": "tracking",
-      "visualDecision": "new",
-      "visualReference": "Count tracker with four columns (start, after copying, anaphase, each new cell), mini cell icons, a chromosome row and a chromatid row, then the same four figures for a human cell",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Count tracker with four columns (start, after copying, anaphase, each new cell), mini cell icons, a chromosome row and a chromatid row, then the same four figures for a human cell",
       "teachingReason": "Tracks chromosomes and chromatids stage by stage so students see the number is never halved",
       "narrationCue": "starts with four chromosomes / now eight chromatids / briefly holds eight / A human cell goes the same way / The number is never halved",
       "motionPurpose": "One column fills at a time as each figure is spoken, chromatid chips pop in under the second column, and the human numbers repeat the pattern",
@@ -208,8 +209,8 @@
     },
     {
       "sceneId": "identical",
-      "visualDecision": "new",
-      "visualReference": "Model cell at metaphase with the tracker parked small, a bracket and equals sign between chromatids, arrows to opposite poles and a mini-split with ticks",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Model cell at metaphase with the tracker parked small, a bracket and equals sign between chromatids, arrows to opposite poles and a mini-split with ticks",
       "teachingReason": "Explains why the two new cells are identical, using the fact that sister chromatids are copies",
       "narrationCue": "sister chromatids are copies of the same chromosome / opposite ends / both sets / attached from both ends before anaphase starts",
       "motionPurpose": "The two chromatids of one chromosome light with an equals sign, arrows run to opposite poles, a mini-split shows one copy of every bar in each end, and a checkpoint tag appears",
@@ -226,8 +227,8 @@
     },
     {
       "sceneId": "not-perfect",
-      "visualDecision": "new",
-      "visualReference": "Short model cell strip with a flipped base letter on one chromatid, a mutation tag that follows one daughter only, and an extra and a missing chromosome",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Short model cell strip with a flipped base letter on one chromatid, a mutation tag that follows one daughter only, and an extra and a missing chromosome",
       "teachingReason": "Qualifies accurate with the two ways mitosis can go wrong, without alarming the student",
       "narrationCue": "accurate, not perfect / is a mutation / one new cell gets an extra chromosome and the other is one short",
       "motionPurpose": "A base letter flips on one chromatid and the mark follows one daughter and its descendants, then both chromatids go to one end leaving one cell extra and one short",
@@ -243,8 +244,8 @@
     },
     {
       "sceneId": "uses",
-      "visualDecision": "new",
-      "visualReference": "Four small icons with tags and mini cells: growth, repair, replacement and identical offspring (yeast, amoeba, cutting), with a bacterium fission note",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Four small icons with tags and mini cells: growth, repair, replacement and identical offspring (yeast, amoeba, cutting), with a bacterium fission note",
       "teachingReason": "Closes the explanation with the purposes of mitosis, linked back to the opening graze",
       "narrationCue": "how an organism grows from one cell / how a graze heals / identical offspring / Bacteria have no nucleus",
       "motionPurpose": "Four icons come up in a row each with its mini dividing cell, the hook patch is shown healed, and a bacterium splitting is marked as fission without mitosis",
@@ -260,8 +261,8 @@
     },
     {
       "sceneId": "attempt",
-      "visualDecision": "new",
-      "visualReference": "Two numbered vignettes: a fruit fly body cell with its conditions and demands, and a part-way cell with six X-shaped chromosomes lined up with fibres attached; no tracker, stage strip or tags",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Two numbered vignettes: a fruit fly body cell with its conditions and demands, and a part-way cell with six X-shaped chromosomes lined up with fibres attached; no tracker, stage strip or tags",
       "teachingReason": "Unseen transfer on counting chromosomes and chromatids and on stage recognition in a new picture, with every demand and condition visible",
       "narrationCue": "a fruit fly body cell has 8 chromosomes / Name the stage and count the chromosomes / Assume no mistakes / Pause here to answer",
       "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
@@ -276,41 +277,41 @@
     {
       "sceneId": "feedback-one",
       "visualDecision": "adjust",
-      "visualReference": "Vignette one enlarged and replayed on the model board with eight bars: copying doubles them, a counter stays at 8, a chromatid chip ticks to 16, then the groups settle to 8 in each cell; four crossed chips",
-      "teachingReason": "Explains the counts and corrects the likeliest slips: counting chromatids, forgetting the copy, and halving",
-      "narrationCue": "still has 8 chromosomes / 16 chromatids / you counted chromatids / you halved the number",
-      "motionPurpose": "Eight bars double while the chromosome counter stays at 8 and the chromatid chip ticks to 16, the groups divide to 8 in each cell, and four wrong chips are crossed",
+      "visualReference": "Vignette one enlarged on the painted cell plate (nospindle, then pinching) with eight pink and teal chromosome plates: single plates crossfade to duplicated plates while a coded counter stays at 8 and a chip ticks to 16 chromatids, then 8 in each new cell; one crossed chip",
+      "teachingReason": "Brief feedback (owner rule 16 Oct): gives the answers and the key reason (the copies stay joined at their centromeres) and crosses one classic mistake, halving, then moves on",
+      "narrationCue": "still has 8 chromosomes / 16 chromatids / each new cell has 8 / you halved the number",
+      "motionPurpose": "The chromosome plates double while the counter holds at 8 and a chip ticks to 16, the cell pinches to 8 in each, and one halving chip is crossed",
       "motionRole": "explain",
-      "onScreenChange": "The eight single threads become eight doubled threads with the chromosome counter held at 8 and a chip ticking to 16 chromatids; at division the groups split and settle with 8 in each cell; four chips including \"16 chromosomes (counted chromatids)\" appear and are crossed with grey scribbles",
+      "onScreenChange": "Single plates crossfade to duplicated plates with the chromosome counter held at 8 and a chip ticking to 16 chromatids; the board crossfades to the pinching cell plate with 8 plates and a coded 8 in each half; the chip \"4 in each (halved)\" writes on and is crossed with a grey scribble",
       "motionTools": [
-        "bar duplicate",
+        "plate crossfade",
         "NumberTicker counter",
         "Mark cross",
         "HandText write-on"
       ],
-      "holdPurpose": "Hold the corrected counts"
+      "holdPurpose": "Brief hold on the corrected counts, then move on"
     },
     {
       "sceneId": "feedback-two",
       "visualDecision": "adjust",
-      "visualReference": "Vignette two enlarged: a pen taps six centromeres with a counter to 6, a second counter to 12 chromatids, the stage strip with metaphase lit and four crossed chips",
-      "teachingReason": "Explains the stage from the lined-up chromosomes and the count by centromeres",
-      "narrationCue": "so this is metaphase / Count the centromeres / 12 chromatids / If you said prophase",
-      "motionPurpose": "A pen taps each centromere to count six, the chromatids light in pairs to count twelve, the metaphase chip lights, and the wrong stage and count chips are crossed",
+      "visualReference": "Vignette two enlarged: the dividing cell plate with six duplicated chromosome plates lined up, a pen tapping each painted centromere with a counter to 6, the stage strip with metaphase lit and one crossed chip",
+      "teachingReason": "Brief feedback (owner rule 16 Oct): names the stage from the lined-up chromosomes, gives the count by centromeres and crosses one classic mistake, counting chromatids",
+      "narrationCue": "so this is metaphase / Count the centromeres / 6 chromosomes / you counted chromatids",
+      "motionPurpose": "The metaphase chip lights, a pen taps six centromeres while a counter reaches 6, and a chip for 12 is crossed as the two chromatids of one X light",
       "motionRole": "explain",
-      "onScreenChange": "A pen taps each disc with a counter reaching 6 and the tag \"6 centromeres = 6 chromosomes\"; each X lights with a second counter to 12; the stage strip returns small with \"2 metaphase\" lit; four chips appear and are crossed",
+      "onScreenChange": "The stage strip returns small with \"2 metaphase\" lit; a pen taps each painted centromere, a cream disc pops on each and a counter reaches 6 with \"6 centromeres = 6 chromosomes\"; the chip \"12 chromosomes (counted chromatids)\" appears and is crossed",
       "motionTools": [
         "pen tap counter",
         "NumberTicker counter",
         "step chip",
         "Mark cross"
       ],
-      "holdPurpose": "Hold the stage strip with metaphase lit"
+      "holdPurpose": "Brief hold on the stage strip with metaphase lit, then move on"
     },
     {
       "sceneId": "memory",
       "visualDecision": "adjust",
-      "visualReference": "Five large amber letters I P M A T each with a small icon and keyword, a bracket over the four mitosis steps, a cytokinesis chip and the counting rule",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Five large amber letters I P M A T each with a small icon and keyword, a bracket over the four mitosis steps, a cytokinesis chip and the counting rule",
       "teachingReason": "Gives the order aid after the stages are understood, repeats the counting rule and hands off to meiosis",
       "narrationCue": "I P M A T / count the centromeres, not the chromatids / Next: meiosis",
       "motionPurpose": "The five letters write on one at a time with their icons, a bracket drops over the four steps, a final chip adds cytokinesis, and the next chip slides in",

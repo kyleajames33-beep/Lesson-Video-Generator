@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B6B-claude-2026-10-16-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b6b/lesson.json",
+  "lessonSha256": "b0b0880f8b8a44e0db3369b4b683408ecd6a1b998f5dca64cc9dd9e8075a098f",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b6b/lesson.production-brief.json",
+    "sha256": "a352ac580f54fed2865ea0b1694ceb47462983cc9502e82f0ceac0435fbe1e10"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Your DNA stays inside the nucleus, wound on histones, as you saw last time. But the machines that build proteins, the ribosomes, sit outside it, in the cytoplasm. So how do the instructions in a gene get from one place to the other, when the DNA itself never leaves? The cell sends out a copy. Today, how a cell copies one gene, and why it bothers to copy at all.",
+      "hash": "9fccd617c1ae",
+      "textSha256": "9fccd617c1ae48ae05f561e7d105fff6b63f17fabaa089d886674541a1fb8122",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/hook.9fccd617c1ae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/hook.9fccd617c1ae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/hook.9fccd617c1ae.generation.json",
+      "plannedRequestSha256": "15f178281d8099d7d8ccfd925e6b28631ef544724d68bd919c1673bc5550bef2"
+    },
+    {
+      "id": "gene-and-mrna",
+      "parentSceneId": "gene-and-mrna",
+      "text": "A gene is a section of DNA whose order of bases codes for a product, usually a polypeptide, a chain of amino acids that folds into a protein. To use a gene, the cell copies its bases into a single strand of RNA called messenger RNA, or mRNA. That copying is called transcription. Think of a recipe book that is never allowed out of the library. You copy the one page you need, and carry the copy to the kitchen. The book stays safe, and you can make as many copies as you like.",
+      "hash": "50b1646f8fd9",
+      "textSha256": "50b1646f8fd9566acf873f7a940b0f5e266a18813fd145a69c018ff4cd20ef5e",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/gene-and-mrna.50b1646f8fd9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/gene-and-mrna.50b1646f8fd9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/gene-and-mrna.50b1646f8fd9.generation.json",
+      "plannedRequestSha256": "96173e609be17e3b537589d35f44cd5398837d8cfb11decebec77c1e7bb15400"
+    },
+    {
+      "id": "rna-differences",
+      "parentSceneId": "rna-differences",
+      "text": "RNA is a nucleic acid like DNA, built from nucleotides, but with three differences. It is a single strand, not a double helix. Its sugar is ribose, not deoxyribose, which is what the R in RNA stands for. And it uses a base called uracil, U, in place of thymine, T. U pairs with A, just as T does, so the pairing rule becomes A with U, and C with G.",
+      "hash": "c188c7810bb0",
+      "textSha256": "c188c7810bb00d6783646fe58f48d9710b818d9b7fcf453fd327a9ef5858f05b",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/rna-differences.c188c7810bb0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/rna-differences.c188c7810bb0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/rna-differences.c188c7810bb0.generation.json",
+      "plannedRequestSha256": "d9e4e2478fd739251100e719c4502701adc9141eafb8e3a9da12cff4796a2fa2"
+    },
+    {
+      "id": "polymerase-promoter",
+      "parentSceneId": "polymerase-promoter",
+      "text": "The copying is done by an enzyme called RNA polymerase. First it has to find where the gene starts. Just before each gene is a stretch of DNA called the promoter, a landing site that the polymerase binds to. Once it has bound, the polymerase pulls the two DNA strands apart over a short stretch, breaking the hydrogen bonds between the bases, so the bases are exposed.",
+      "hash": "43859b86e90a",
+      "textSha256": "43859b86e90a29f5e935d57e1c3085778b571bc88ffd35acd8243d1e15204aed",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/polymerase-promoter.43859b86e90a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/polymerase-promoter.43859b86e90a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/polymerase-promoter.43859b86e90a.generation.json",
+      "plannedRequestSha256": "a28fa3bfa1cba8c366398cc635abe31a57f16c17677d4193ce574a4f32aaf5f6"
+    },
+    {
+      "id": "template-strand",
+      "parentSceneId": "template-strand",
+      "text": "Here is the key point. The polymerase copies only one of the two strands, called the template strand. The other one, the coding strand, is not read. One strand is enough, because the template fixes every base of the mRNA, just as one DNA strand fixed its partner when DNA was copied.",
+      "hash": "01d28b25fbbe",
+      "textSha256": "01d28b25fbbe1753efb8ea44fc3550c1295e91f3393ed207ad35b4f62e48473d",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/template-strand.01d28b25fbbe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/template-strand.01d28b25fbbe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/template-strand.01d28b25fbbe.generation.json",
+      "plannedRequestSha256": "49c41124083c2719b5689e3e076ff58f1c1dd302116b6a18d7071a9a5497e291"
+    },
+    {
+      "id": "direction",
+      "parentSceneId": "direction",
+      "text": "Now the direction. The polymerase can only add each new nucleotide to the 3' end of the growing mRNA, so the mRNA grows from its 5' end to its 3' end. And because paired strands run in opposite directions, the polymerase reads the template from its 3' end to its 5' end.",
+      "hash": "d6e8014b97cd",
+      "textSha256": "d6e8014b97cdd46ec62f3ca01a2bd96cca37b17ab6f28b16bf7f0e4062f26a6d",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/direction.d6e8014b97cd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/direction.d6e8014b97cd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/direction.d6e8014b97cd.generation.json",
+      "plannedRequestSha256": "65557be4643f118faf90f79dce47ff7cc905b77ab40bf23af442904a7f0beb94"
+    },
+    {
+      "id": "worked-copy",
+      "parentSceneId": "worked-copy",
+      "text": "Let's copy one. Here is a template strand, with its 3' end on the left: T A C, C G A, A T T. The polymerase starts at the 3' end and moves right. Free RNA nucleotides drift in, and only a matching one stays. T needs A. A needs U, not T, because this is RNA. C needs G. The next three: C with G, G with C, A with U. The last three: A with U, T with A, T with A. Each new nucleotide joins the 3' end of the one before. The mRNA reads A U G, G C U, U A A, from its 5' end.",
+      "hash": "d51397708d5b",
+      "textSha256": "d51397708d5b86419d5d8b4b86b647348bfaf41805a904ca1399769ba8f27bee",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/worked-copy.d51397708d5b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/worked-copy.d51397708d5b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/worked-copy.d51397708d5b.generation.json",
+      "plannedRequestSha256": "2d8333e4fd5139c36c039d4e858f4bf30a52262ebe935dd98a3425ae10c8d1c7"
+    },
+    {
+      "id": "coding-check",
+      "parentSceneId": "coding-check",
+      "text": "Now look at the strand the polymerase did not read, the coding strand. It reads A T G, G C T, T A A, from its 5' end. Compare it with the mRNA: the same letters, in the same direction, except that T has become U. So the mRNA is a copy of the coding strand, built by pairing with the template strand. That is the trap in many exam questions, so always check which strand you have been given.",
+      "hash": "4ba70f2d0cde",
+      "textSha256": "4ba70f2d0cde8d2e84242c92d3264619d59689a968a09dffa6ea0dd6e863b205",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/coding-check.4ba70f2d0cde.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/coding-check.4ba70f2d0cde.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/coding-check.4ba70f2d0cde.generation.json",
+      "plannedRequestSha256": "87469146c69d216dfb691e1e5f91f1b969d88274a2a54b29e13e8a285b69e468"
+    },
+    {
+      "id": "release-export",
+      "parentSceneId": "release-export",
+      "text": "At the end of the gene, the polymerase lets go, and the new mRNA comes away. Behind the polymerase, the two DNA strands have already paired up again, so the gene is unchanged and ready to be copied again. In a cell like ours, the mRNA leaves the nucleus through a nuclear pore, a small opening in the nuclear envelope, and travels out to the ribosomes.",
+      "hash": "ee00b068c8d9",
+      "textSha256": "ee00b068c8d9b91867ce71074d776a7f71b85bb67a398b1c0231b7a5f5d2a3ac",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/release-export.ee00b068c8d9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/release-export.ee00b068c8d9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/release-export.ee00b068c8d9.generation.json",
+      "plannedRequestSha256": "caabef6798f027139d4dc8e2e8b4504e18293469af0a959f0a9e79444589fbf8"
+    },
+    {
+      "id": "many-copies",
+      "parentSceneId": "many-copies",
+      "text": "One gene can be copied many times, so the cell can make a lot of one protein quickly. And each mRNA is broken down after a while, so the cell can stop making a protein by stopping the copying.",
+      "hash": "20dc9fba03cd",
+      "textSha256": "20dc9fba03cdb414403c24cc47bdad4b6e73a463352f8944f5e9578c8eda39cb",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/many-copies.20dc9fba03cd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/many-copies.20dc9fba03cd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/many-copies.20dc9fba03cd.generation.json",
+      "plannedRequestSha256": "131a8b45cfd0ba65025188d3c6d569b91108ff2397ead22748c719fa6b104085"
+    },
+    {
+      "id": "not-replication",
+      "parentSceneId": "not-replication",
+      "text": "Transcription can look like DNA copying. Both open up the DNA, and both build a new strand by base pairing on a template. But replication copies both strands of all the DNA, into new DNA, before a cell divides. Transcription copies one strand of one gene, into RNA with U, whenever the cell needs that gene's product. In one sentence: both use a DNA template, whereas only transcription makes RNA, from one strand of one gene.",
+      "hash": "d63f26706011",
+      "textSha256": "d63f267060114af0d853a9278297ee0523e9c61aca39f213553dbecefcb0fe11",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/not-replication.d63f26706011.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/not-replication.d63f26706011.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/not-replication.d63f26706011.generation.json",
+      "plannedRequestSha256": "7f788434571d756810831a91a7ec17ec98dfbe309629257414aa90311ed17ffd"
+    },
+    {
+      "id": "codons-cftr",
+      "parentSceneId": "codons-cftr",
+      "text": "The mRNA is read in groups of three bases, called codons. Our mRNA has three: A U G, G C U and U A A. What each codon means is the next video. But one consequence follows already. In a gene such as CFTR, the gene linked to cystic fibrosis, if one base in the template strand changes, the matching base in the mRNA changes too, so a codon changes before any protein is made.",
+      "hash": "01b74073f9e8",
+      "textSha256": "01b74073f9e8315795627b2e59ef3129595cf0a734a3e0ee739de5df5234204a",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/codons-cftr.01b74073f9e8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/codons-cftr.01b74073f9e8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/codons-cftr.01b74073f9e8.generation.json",
+      "plannedRequestSha256": "1eb53aa546e4c54f0c2bb9aab5f7c74e49e1d9dc4ce9b1140ed48a2c26d23133"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to remember. First, transcription keeps the language. DNA and RNA are both written in bases, so it is like copying notes in the same language. Translation, next, changes the language, from bases to amino acids. Second, the trap: mRNA matches the coding strand, but it is built on the template strand.",
+      "hash": "09699fb03fad",
+      "textSha256": "09699fb03fadbd5041673e7627ad1cf13e0461cf9615675e617d8cf8535cc35c",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/memory.09699fb03fad.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/memory.09699fb03fad.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/memory.09699fb03fad.generation.json",
+      "plannedRequestSha256": "3465007bc7dca25a475530adcd7efa45bbeaa6270e9dc6bdf68d5b7ed67d935f"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two harder questions now. First, here is a short section of a gene, both strands, with their ends labelled. RNA polymerase binds at the promoter on the left and moves to the right. Which strand is the template, and how does the direction tell you? Then write the mRNA, with its 5' and 3' ends. Pause here to answer.",
+      "hash": "62c6f497090e",
+      "textSha256": "62c6f497090e8ffc8b9708b8ef6f207c90c454543343e7bb99124b834a061bc0",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/attempt.62c6f497090e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/attempt.62c6f497090e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/attempt.62c6f497090e.generation.json",
+      "plannedRequestSha256": "93b1664bcda027e28254260d7cb5a9eb22d21b6c70d5c10d36444ded6df9a6b8"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The polymerase reads its template from the 3' end to the 5' end. It is moving right, so the template must have its 3' end on the left. That is the top strand. Pair each base: T with A, G with C, C with G, then A with U, A with U, T with A, then C with G, G with C, G with C. So the mRNA is A C G, U U A, G C C, with its 5' end on the left. If you paired the bottom strand, you copied the coding strand's partner, and that message is wrong.",
+      "hash": "4688f5072a60",
+      "textSha256": "4688f5072a60f353fda9edb88510ede9e696f98e594a8c73ca77c1351e4ca758",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/feedback-one.4688f5072a60.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/feedback-one.4688f5072a60.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/feedback-one.4688f5072a60.generation.json",
+      "plannedRequestSha256": "b154816d419c6d3284f6b1933f15581c3de47a4d34fc7b98947240f3997011f3"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A toxin from a mushroom stops RNA polymerase moving along DNA. In an affected liver cell, the DNA is not damaged and the ribosomes still work. Explain why the cell makes less and less of its proteins over the following hours. Pause here to answer.",
+      "hash": "174a001bfbbd",
+      "textSha256": "174a001bfbbdcf3187b03da643b536307ddfd4a01e887b5b220302de81d7e582",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/attempt-two.174a001bfbbd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/attempt-two.174a001bfbbd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/attempt-two.174a001bfbbd.generation.json",
+      "plannedRequestSha256": "696db2ab37b7d032596cee11b2664a4b483aeb9f2519f95a4a4a203dbd9a4a06"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "With the polymerase stuck, no new mRNA is made. The ribosomes can't read the gene directly, because the DNA stays inside the nucleus, and the ribosomes are outside it. They can only read mRNA. The mRNA already in the cytoplasm keeps being read for a while, but each strand is broken down, and nothing replaces it. So as the mRNA runs out, protein production falls, even though the genes and the ribosomes are fine. If you wrote that the cell can no longer copy its DNA, that is replication. The toxin stops transcription.",
+      "hash": "c2594bd82af6",
+      "textSha256": "c2594bd82af653e6228d6cf52cd728aacabf0a7c5f22b535832e7750bde29562",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/feedback-two.c2594bd82af6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/feedback-two.c2594bd82af6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/feedback-two.c2594bd82af6.generation.json",
+      "plannedRequestSha256": "369f690e5ff2680ec83f319c40c17da80549476ea01604dc001011f50bffefe0"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when you're given a DNA strand, ask first: is it the template or the coding strand? Pair the template, with A to U. Copy the coding strand, swapping T for U. Then check the ends: mRNA runs 5' to 3'. Next, the mRNA reaches a ribosome. How does a ribosome turn a code of bases into a chain of amino acids?",
+      "hash": "7a240777ba62",
+      "textSha256": "7a240777ba6204a9c75129bff61020308d1e6005cb63f2562e3e0d60d72a2a53",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/decision-rule.7a240777ba62.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/decision-rule.7a240777ba62.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/decision-rule.7a240777ba62.generation.json",
+      "plannedRequestSha256": "0911ef876b99cbd7599c11e37ddf734e74f74b293aecbc20d9aabcb898ad752e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B6B-claude-2026-10-16-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

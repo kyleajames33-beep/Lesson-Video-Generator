@@ -6,7 +6,7 @@ import {AnswerTable, Chip, Fade, Flame, HABER_EQ, MEOH_EQ, Overlay, Snowflake, S
 import type {TRow} from './parts';
 import {GivensCard} from '../chem-m5-c06/parts';
 import {Heading, COLD, COST, HEAT, RATE, YIELD, GREEN, sc} from './common';
-import {HAVE_TUG, TUG, TUG_NAT, TUG_PLATE_ICONS} from './assets';
+import {HAVE_TUG, HAVE_TUG_SCENE, TUG, TUG_NAT, TUG_PLATE_ICONS, TUG_SCENE, TUG_SCENE_NAT, TUG_SCENE_ROPE_Y} from './assets';
 
 const clamp = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 
@@ -79,18 +79,43 @@ export const SceneModelAnswer: React.FC = () => {
 // ---------- 8. Memory aid (yield asks cold, speed asks hot) ----------
 const A = 'memory-aid';
 const K2 = cues(sc(A), {when: 'When the forward', yc: 'yield asks for cold', sh: 'speed asks for hot', comp: 'industry compromises', mean: 'That means', mid: 'a middle temperature', neither: 'neither best', has: 'in the time it has'});
-const Figure: React.FC<{cx: number; dir: 1 | -1; color: string; jitter: number}> = ({cx, dir, color, jitter}) => {
-	const x = cx + jitter;
-	const lean = -dir * 34;
+/**
+ * Hand-drawn cartoon puller in the video's doodle style (ink outline, flat colour), drawn facing right with the
+ * rope at local height ROPE_H; the right-hand puller is the mirror image. Local origin: back foot on the ground.
+ */
+const ROPE_H = 136;
+type Look = {jumper: string; jeans: string; skin: string; hair: string; shoe: string; long?: boolean};
+const Puller: React.FC<{x: number; ground: number; dir: 1 | -1; look: Look; lean: number}> = ({x, ground, dir, look, lean}) => {
+	const ink = {stroke: INK, strokeWidth: 5, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
+	const limb = (d: string, colour: string, w: number) => (
+		<>
+			<path d={d} stroke={INK} strokeWidth={w + 10} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+			<path d={d} stroke={colour} strokeWidth={w} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+		</>
+	);
 	return (
-		<g stroke={INK} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" fill="none">
-			<circle cx={x + lean} cy={436} r={30} fill={color} />
-			<path d={`M${x + lean * 0.7},${468} L${x + 6 * dir * -1},${548}`} />
-			<path d={`M${x + 6 * dir * -1},${548} L${x - dir * 46},${620} M${x + 6 * dir * -1},${548} L${x + dir * 50},${620}`} />
-			<path d={`M${x + lean * 0.6},${486} L${x - dir * 90},${520}`} />
+		<g transform={`translate(${x},${ground}) scale(${dir},1) rotate(${lean},0,0)`}>
+			{limb('M44,-108 Q8,-70 -14,-8', look.jeans, 26)}
+			{limb('M44,-108 Q100,-74 112,-8', look.jeans, 26)}
+			<path d="M-34,-2 Q-36,-20 -12,-18 L8,-12 Q14,0 4,2 Z" fill={look.shoe} {...ink} />
+			<path d="M96,-2 Q94,-20 118,-18 L138,-12 Q144,0 134,2 Z" fill={look.shoe} {...ink} />
+			{limb(`M14,-184 Q60,-150 112,-${ROPE_H}`, look.jumper, 18)}
+			<path d="M-14,-196 Q10,-212 34,-200 Q58,-150 66,-112 Q44,-96 20,-104 Q-2,-150 -14,-196 Z" fill={look.jumper} {...ink} />
+			<path d="M20,-104 Q44,-98 66,-112" fill="none" stroke={INK} strokeWidth={3} opacity={0.5} />
+			<circle cx={-6} cy={-232} r={27} fill={look.skin} {...ink} />
+			{look.long
+				? <path d="M-34,-238 Q-30,-266 -4,-262 Q22,-262 18,-240 Q4,-252 -12,-246 Q-26,-240 -30,-206 Q-44,-218 -34,-238 Z" fill={look.hair} {...ink} />
+				: <path d="M-33,-236 Q-30,-264 -4,-262 Q22,-262 20,-240 Q6,-250 -10,-246 Q-24,-244 -33,-236 Z" fill={look.hair} {...ink} />}
+			<circle cx={8} cy={-234} r={3} fill={INK} />
+			<path d="M4,-218 Q10,-214 16,-218" fill="none" stroke={INK} strokeWidth={3} strokeLinecap="round" />
+			{limb(`M22,-178 Q74,-160 136,-${ROPE_H + 2}`, look.jumper, 18)}
+			<circle cx={112} cy={-ROPE_H} r={11} fill={look.skin} {...ink} />
+			<circle cx={136} cy={-ROPE_H - 2} r={11} fill={look.skin} {...ink} />
 		</g>
 	);
 };
+const LEFT_LOOK: Look = {jumper: '#5b8fc4', jeans: '#6d86a8', skin: '#e8c4a3', hair: '#2b211b', shoe: '#f4f1ea'};
+const RIGHT_LOOK: Look = {jumper: '#d9773f', jeans: '#8fa3bf', skin: '#8d5a3b', hair: '#241812', shoe: '#3a3a42', long: true};
 /**
  * Painted tug of war (Codex brief 43): three aligned layers on one canvas. The rope-and-flag layer slides with the
  * wobble and settles centred (the flag at the middle); each figure leans back and slides a little with its end of the rope.
@@ -113,49 +138,67 @@ const TugPlates: React.FC<{wob: number; flagDx: number; leftAt: number; rightAt:
 		</>
 	);
 };
+/** Painted tug of war on one canvas: the whole picture sways with the pull and settles; the coded flag rides the rope. */
+const TS = {x: 400, y: 200, w: 1120};
+const TugScene: React.FC<{wob: number; flag: number; at: number; flagAt: number}> = ({wob, flag, at, flagAt}) => {
+	const h = (TS.w / TUG_SCENE_NAT[0]) * TUG_SCENE_NAT[1];
+	// The painted rope sags slightly to the right: its centre line is 0.385 of the canvas height at the middle and
+	// drops about 0.029 of the height per full canvas width (measured from the alpha channel), so the pole foot follows it.
+	const fx = (flag - TS.x) / TS.w;
+	const ropeY = TS.y + h * (TUG_SCENE_ROPE_Y + (fx - 0.5) * 0.029);
+	return (
+		<>
+			<Fade at={at}><image href={staticFile(TUG_SCENE)} x={TS.x + wob} y={TS.y} width={TS.w} height={h} /></Fade>
+			<Fade at={flagAt}>
+				<path d={`M${flag + wob},${ropeY} L${flag + wob},${ropeY - 82}`} stroke={INK} strokeWidth={6} strokeLinecap="round" />
+				<path d={`M${flag + wob},${ropeY - 82} L${flag + wob + 70},${ropeY - 62} L${flag + wob},${ropeY - 42} Z`} fill="#f5c542" stroke={AMBER_INK} strokeWidth={4} strokeLinejoin="round" />
+			</Fade>
+		</>
+	);
+};
 export const SceneAid: React.FC = () => {
 	const f = useCurrentFrame();
 	const settle = prog(f, K2.comp, 40);
 	const wob = Math.sin((f - K2.when) * 0.28) * 8 * (1 - settle);
-	const flag = 960 + 80 * Math.sin((f - K2.when) * 0.05) * (1 - settle);
+	const flag = 1105 + 220 * (1 - settle) * Math.sin((f - K2.comp) * 0.12); // settles where the curves cross
 	const lx = 430 + wob, rx = 1490 - wob;
+	const GROUND = 640;
 	return (
 		<>
 			<div style={{position: 'absolute', left: 96, top: 78}}><HandText text="Haber is a compromise." at={K2.when} size={96} cps={26} /></div>
 			<Overlay>
-				{/* the two forces */}
-				<Fade at={K2.yc}>
-					{TUG_PLATE_ICONS && HAVE_TUG ? null : <Snowflake x={170} y={528} s={2.2} />}
-					<Sx x={290} y={360} text="yield" size={68} color={COLD} anchor="middle" hand at={K2.yc} />
-					<Sx x={290} y={400} text="asks for cold" size={36} color={COLD} anchor="middle" hand at={K2.yc + 8} />
+				{/* Yield and rate against temperature (owner, 16 Oct: a graph instead of a tug of war). Not to scale. */}
+				<Fade at={K2.when + 10}>
+					<path d="M400,620 L1560,620" stroke={INK} strokeWidth={5} strokeLinecap="round" />
+					<path d="M1560,620 L1538,608 M1560,620 L1538,632" stroke={INK} strokeWidth={5} strokeLinecap="round" fill="none" />
+					<path d="M400,620 L400,215" stroke={INK} strokeWidth={5} strokeLinecap="round" />
+					<Sx x={1560} y={668} text="temperature" size={34} color={INK_SOFT} anchor="end" hand at={K2.when + 12} />
+					<Sx x={1560} y={704} text="(not to scale)" size={26} color={INK_SOFT} anchor="end" at={K2.when + 16} />
+					<Snowflake x={340} y={624} s={1.3} />
+					<Flame x={1620} y={600} s={1.3} />
 				</Fade>
-				<Fade at={K2.sh}>
-					{TUG_PLATE_ICONS && HAVE_TUG ? null : <Flame x={1750} y={528} s={2.2} />}
-					<Sx x={1630} y={360} text="speed" size={68} color={HEAT} anchor="middle" hand at={K2.sh} />
-					<Sx x={1630} y={400} text="asks for hot" size={36} color={HEAT} anchor="middle" hand at={K2.sh + 8} />
+				{/* yield falls as it gets hotter */}
+				<DrawPath d="M420,262 C760,290 1120,470 1520,592" at={K2.yc} dur={34} color={COLD} width={9} />
+				<Fade at={K2.yc + 6}>
+					<Sx x={440} y={232} text="yield" size={60} color={COLD} hand at={K2.yc + 6} />
+					<Sx x={600} y={232} text="asks for cold" size={34} color={COLD} hand at={K2.yc + 14} />
 				</Fade>
-				{HAVE_TUG ? <TugPlates wob={wob} flagDx={flag - 960} leftAt={K2.yc} rightAt={K2.sh} settle={settle} /> : <>
-				<Fade at={K2.yc}>
-					<g opacity={1}><Figure cx={lx} dir={-1} color="#cfe3f3" jitter={0} /></g>
+				{/* rate rises as it gets hotter */}
+				<DrawPath d="M420,598 C820,590 1140,450 1520,250" at={K2.sh} dur={34} color={HEAT} width={9} />
+				<Fade at={K2.sh + 6}>
+					<Sx x={1520} y={226} text="speed" size={60} color={HEAT} anchor="end" hand at={K2.sh + 6} />
+					<Sx x={1360} y={226} text="asks for hot" size={34} color={HEAT} anchor="end" hand at={K2.sh + 14} />
 				</Fade>
-				<Fade at={K2.sh}>
-					<Figure cx={rx} dir={1} color="#f6d3bd" jitter={0} />
-				</Fade>
-				<Fade at={K2.yc}>
-					<path d={`M${lx - 90},520 L${rx + 90},520`} stroke="#8a6a3c" strokeWidth={9} strokeLinecap="round" strokeDasharray="1 0" />
-				</Fade>
-				{/* the flag settles at the middle */}
-				<Fade at={K2.sh + 20}>
-					<path d={`M${flag},520 L${flag},438`} stroke={INK} strokeWidth={6} strokeLinecap="round" />
-					<path d={`M${flag},438 L${flag + 70},458 L${flag},478 Z`} fill="#f5c542" stroke={AMBER_INK} strokeWidth={4} strokeLinejoin="round" />
-				</Fade>
-				</>}
+				{/* the compromise */}
 				<Fade at={K2.comp}>
-					<Sx x={960} y={HAVE_TUG ? 636 : 606} text="about 450 C" size={56} color={AMBER_INK} anchor="middle" hand at={K2.comp} />
+					<path d={`M${flag},612 L${flag},300`} stroke={AMBER_INK} strokeWidth={5} strokeDasharray="14 10" strokeLinecap="round" />
+					<circle cx={flag} cy={620} r={11} fill="#f5c542" stroke={AMBER_INK} strokeWidth={4} />
+					<circle cx={1105} cy={448} r={13} fill="none" stroke={AMBER_INK} strokeWidth={4} opacity={settle} />
+					<Sx x={flag} y={286} text="about 450 C" size={52} color={AMBER_INK} anchor="middle" hand at={K2.comp} />
 				</Fade>
 				<Fade at={K2.mid}>
-					<Sx x={960} y={HAVE_TUG ? 692 : 680} text="a middle temperature that gives the most" size={38} color={INK} anchor="middle" hand at={K2.mid} />
-					<Sx x={960} y={HAVE_TUG ? 736 : 726} text="in the time available" size={38} color={INK} anchor="middle" hand at={K2.mid + 8} />
+					<Sx x={1000} y={704} text="a middle temperature that gives the most" size={38} color={INK} anchor="middle" hand at={K2.mid} />
+					<Sx x={1000} y={746} text="in the time available" size={38} color={INK} anchor="middle" hand at={K2.mid + 8} />
 				</Fade>
 				{/* when it applies */}
 				<Fade at={K2.mean}>

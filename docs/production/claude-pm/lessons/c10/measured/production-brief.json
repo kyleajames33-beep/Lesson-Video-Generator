@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c10/measured/lesson.json",
+    "lessonSha256": "9596bb2bcaf55e4a24352b481f86fd04483d2c88d1372c362c3cdff4331c2b54"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 to C9 and Year 11 (P02 colourimetry is an optional branch and is not relied on): dynamic equilibrium with both directions going at equal rates (C1); the K expression and its rules, with pure solids, pure liquids and the solvent water left out, and the size bands (C5); K changes only with temperature (C9); acids release hydrogen ions in water and react with magnesium to make hydrogen; scientific notation. Not assumed: pH, Bronsted-Lowry theory, conjugate pairs, any Module 6 content.",
+    "startsWith": "Two beakers of acid at the same concentration with the same magnesium, one fizzing hard and one slowly, and the question of what equilibrium and which K explain the difference.",
+    "stopsAfter": "Explaining the difference between a strong acid (ionises completely) and a weak acid (molecules and ions in balance); writing Ka for HA = H+ + A- and for HA + H2O = H3O+ + A- with water left out; writing Kb for ammonia with water left out; ranking weak acids by Ka (powers of ten first) and saying what a bigger Ka means at equilibrium at the same concentration; saying that Ka is not [H+] or pH; writing Ksp for a 1 : 1 solid as the same rule. No pH, pKa, Kw, Ka x Kb = Kw, conjugate pairs, weak-acid ICE tables, Ksp calculations or Gibbs free energy.",
+    "nextLesson": "C11: how an ionic solid dissolves in water."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c10.md"
+  ],
+  "teaching": {
+    "task": "Write Ka and Kb as ordinary K expressions with water and solids left out, and use their size to compare weak acids.",
+    "causalExplanation": "The bubbles come from hydrogen ions. Hydrochloric acid molecules all split into ions, so it is a strong acid. Acetic acid molecules split and the ions join back up, the two directions balance while most molecules are still whole, so far fewer hydrogen ions meet the magnesium. A balance of molecules and ions is an equilibrium, so it has a K written by the rule already known; Ka is only its name. Water is the solvent in a huge steady amount, so it stays out. A small Ka means a small top and a big bottom, so mostly whole molecules; at the same concentration a bigger Ka means more split into ions. A strong acid leaves essentially no molecules for the bottom, so no Ka value is used. Ammonia and silver chloride follow the same rule with the solvent and the pure solid left out.",
+    "conversationalApproach": "Opens on two painted beakers at the same concentration with different fizz, uses particle lenses to explain strong and weak, builds the Ka expression from the known rule, shows water left out in a tray, reads the size on a log strip, handles strong acids, ammonia and silver chloride as the same rule, gives one memory aid, then asks two unseen demands with a short pause and feedback.",
+    "openingDecision": "Same acid concentration, same metal, different fizz. Why, and which K tells you?",
+    "understandingCheck": "Methanoic acid has Ka 1.8 x 10^-4 and hydrogen cyanide has Ka 6.2 x 10^-10, both at 25 C: write Ka for HCN(aq) + H2O(l) = H3O+(aq) + CN-(aq) (water left out), and say which is the stronger acid and why (methanoic acid, about three hundred thousand times bigger Ka, powers of ten first).",
+    "curriculumScope": "Explore the use of Keq for different types of reactions, including dissociation of acids and bases, with ionic dissociation introduced as the same rule (Module 5, p1082 to p1084). pH, pKa, Kw, conjugate pairs, weak-acid ICE tables, Ksp calculations and Gibbs free energy are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted strong and weak acid magnesium beakers, vinegar bottle and saturated beaker, coded particle lenses, the extended C5 expression builder with a left-out tray, a coded log size strip, and the C9 100-square grids. Colour key: H+ and H3O+ amber, acid anion violet, whole acid molecules navy, OH- green, NH4+ violet, water pale blue, K teal, anything left out of K greyed in the tray.",
+    "transitionPlan": "The two beakers anchor the hook and stay in the left column while particle lenses open above them; the equation strip sits above the builder in every scene; the tray makes each exclusion visible; the size strip carries acetic acid, hydrofluoric acid and later the attempt markers; the HCl lens returns for strong acids; ammonia and the saturated beaker reuse the lens and tray; the three expressions line up for the aid; the attempt board clears the aids and the feedback rebuilds the builder and the strip; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted strong and weak acid with magnesium beakers (aligned pair), coded bubble streams, the painted vinegar bottle and a teal K chip",
+      "teachingReason": "Poses the puzzle at equal concentration: same acid strength on the label, same metal, different fizz, so what does the difference say about equilibrium",
+      "narrationCue": "0.10 moles per litre / fizzes hard / slowly / vinegar / its own name",
+      "motionPurpose": "The two beakers appear with labels that pulse together, a steady bubble stream rises in the first and a sparse one in the second, the vinegar bottle joins and a K chip lands",
+      "motionRole": "explain",
+      "onScreenChange": "Two painted beakers side by side with coded labels \"hydrochloric acid, HCl, 0.10 mol/L\" and \"ethanoic (acetic) acid, CH3COOH, 0.10 mol/L\"; on \"0.10 moles per litre\" the labels pulse with a pen \"=\" between them; on \"fizzes hard\" a steady bubble stream rises in the first; on \"slowly\" a sparse stream rises in the second; on \"vinegar\" the painted vinegar bottle appears with a pen link; the heading \"Same acid concentration. Why a different fizz?\" writes on; on \"its own name\" a teal \"K?\" chip lands under the second beaker",
+      "motionTools": [
+        "HandText write-on",
+        "bubble streams",
+        "plate slide",
+        "chip pop",
+        "label pulse"
+      ],
+      "holdPurpose": "Hold about 1 second on the question"
+    },
+    {
+      "sceneId": "strong-weak",
+      "visualDecision": "new",
+      "visualReference": "Two particle lenses above the beakers (HCl all ions; acetic acid mostly whole molecules with one splitting and one rejoining), a C9 100-square grid and amber, violet and navy particles",
+      "teachingReason": "Explains why the fizz differs: hydrogen ions make the bubbles, and an acid that only partly ionises has far fewer of them",
+      "narrationCue": "hydrogen ions / strong acid / join back up / one in a hundred / weak acid",
+      "motionPurpose": "The lenses open, an H+ makes a bubble, every HCl splits, the acetic acid lens shows splitting and rejoining, one square of a hundred fills and the terms write under the beakers",
+      "motionRole": "explain",
+      "onScreenChange": "A lens opens above each beaker; on \"hydrogen ions\" an amber H+ drifts to the ribbon and an H2 bubble forms (\"H+ makes the bubbles\"); on \"every hydrochloric acid molecule\" navy-amber pairs split until only H+ and Cl- remain (\"all split\"); \"strong acid\" writes under the first beaker with \"ionises completely\"; on \"join back up\" the acetic acid lens shows mostly whole molecules with one splitting and one pair rejoining (two-way arrows lighting both ways); on \"one in a hundred\" one square of a 100-square grid colours; a pen bracket compares the amber counts; \"weak acid\" writes under the second beaker with \"only partly ionises\"",
+      "motionTools": [
+        "lens open",
+        "particle dots",
+        "two-way arrows",
+        "grid fill",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "ka-is-k",
+      "visualDecision": "adjust",
+      "visualReference": "The equation strip for any weak acid HA, the extended C5 expression builder with species tiles, the Ka name with its full name, and the C5 rules card with teal ticks",
+      "teachingReason": "Shows that a balance of molecules and ions is an equilibrium with a K written by the rule already known, so Ka is a name, not a new kind of constant",
+      "narrationCue": "H plus times A minus, over H A / Ka / acid dissociation constant / not a new kind of constant",
+      "motionPurpose": "The strip writes, the product tiles fly to the top and HA to the bottom, the small ones fade, Ka writes with its name, and the rules card slides in with ticks",
+      "motionRole": "explain",
+      "onScreenChange": "The strip writes \"HA(aq) = H+(aq) + A-(aq)\" with the tag \"any weak acid: HA\"; on \"Products over reactants\" the H+ and A- tiles fly to the numerator and HA to the denominator giving \"[H+][A-] / [HA]\"; on \"no powers\" small 1s on each tile fade; \"Ka\" writes with a subscript a and \"acid dissociation constant\" beneath; on \"not a new kind of constant\" the C5 rules card slides in with a teal tick on each line and the label \"Ka = K for an acid splitting into ions\"; the acetic acid version writes small beneath",
+      "motionTools": [
+        "expression builder",
+        "tile fly-in",
+        "HandText write-on",
+        "card slide-in",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "with-water",
+      "visualDecision": "adjust",
+      "visualReference": "A second equation strip with water, a small coded H3O+ sketch (amber H+ on a pale blue water molecule), the \"left out\" tray and a crossed full-fraction chip",
+      "teachingReason": "Stops water being written into Ka: it is the solvent, so the expression keeps the same shape",
+      "narrationCue": "H three O plus / No / stays out / same shape",
+      "motionPurpose": "The water form writes under the first, the H3O+ sketch forms, the water tile drops into the tray, a wrong fraction is crossed and the two Ka lines are joined by a same bracket",
+      "motionRole": "explain",
+      "onScreenChange": "The strip \"HA(aq) + H2O(l) = H3O+(aq) + A-(aq)\" writes under the first; on \"H three O plus\" an amber H+ attaches to a pale blue water molecule (\"H3O+ = H+ carried by water\"); on \"No\" the H2O(l) tile drops into the \"left out\" tray (\"solvent: huge, steady amount\"); on \"stays out\" the chip \"[H3O+][A-] / ([HA][H2O])\" fades in and is crossed; on \"same shape\" \"Ka = [H3O+][A-] / [HA]\" writes under \"Ka = [H+][A-] / [HA]\" with a teal \"same\" bracket",
+      "motionTools": [
+        "equation write-on",
+        "tile drop",
+        "tray",
+        "Mark cross",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "ka-size",
+      "visualDecision": "adjust",
+      "visualReference": "A horizontal log size strip (ticks 10^-12 to 10^0, faint C5 band colours), a navy acetic acid marker and the acetic acid lens with mostly whole molecules",
+      "teachingReason": "Reads the size of Ka as for any K: a small Ka means a small top and a big bottom, so mostly whole molecules",
+      "narrationCue": "1.8 times ten to the minus five / small top and a big bottom / whole molecules",
+      "motionPurpose": "The size strip draws, the acetic acid marker drops onto it, the Ka fraction pulses small over big and the lens returns showing mostly whole molecules",
+      "motionRole": "explain",
+      "onScreenChange": "The log ruler writes on with \"each tick is ten times the last\"; on \"1.8 times ten to the minus five\" the marker \"acetic acid, Ka = 1.8 x 10^-5 (25 C)\" drops onto it; on \"small top and a big bottom\" the Ka fraction pulses with a small numerator and large denominator and the acetic acid lens returns with the tag \"mostly whole molecules\"",
+      "motionTools": [
+        "log ruler draw",
+        "marker drop",
+        "fraction pulse",
+        "lens open"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "ka-compare",
+      "visualDecision": "adjust",
+      "visualReference": "The size strip with the acetic acid marker kept and an HF marker added, two 100-square grids (8 and 1 squares), a stronger acid arrow and a crossed Ka-is-pH chip",
+      "teachingReason": "Compares two weak acids by powers of ten and states that Ka is a ratio, not the concentration of H+ or the pH",
+      "narrationCue": "6.8 times ten to the minus four / eight in a hundred / bigger the Ka, the stronger / not the concentration of H plus",
+      "motionPurpose": "The HF marker drops to the right with a nearly 40 times bracket, two grids fill 8 and 1 squares, an arrow along the ruler points to stronger and a wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The strip and the acetic acid marker stay; on \"6.8 times ten to the minus four\" the marker \"HF, Ka = 6.8 x 10^-4 (25 C)\" drops to its right with the pen bracket \"nearly 40 times\"; on \"eight in a hundred\" two 100-square grids stand side by side with 8 squares for HF and 1 for acetic acid (\"both at 0.10 mol/L\"); on \"bigger the Ka, the stronger\" an arrow \"stronger acid\" points right along the ruler; on \"not the concentration of H plus\" the chip \"Ka = [H+]? Ka = pH?\" fades in, is crossed and the caption \"Ka is a ratio; [H+] and pH also depend on how much acid\" writes",
+      "motionTools": [
+        "marker drop",
+        "bracket draw",
+        "grid fill",
+        "arrow draw",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "strong-acids",
+      "visualDecision": "adjust",
+      "visualReference": "The HCl particle lens returning with only ions, a Ka fraction for HCl with a flashing near-zero denominator, and the acetic acid lens beside it",
+      "teachingReason": "Explains why no Ka value is quoted for a strong acid: no molecules are left for the bottom of the fraction",
+      "narrationCue": "no H C L molecules left / ionises completely / weak acids",
+      "motionPurpose": "The HCl lens returns with a ring on the empty space, the fraction writes and its denominator flashes, the fraction greys out under a strong-acid label, and the acetic acid lens slides in with a tick",
+      "motionRole": "explain",
+      "onScreenChange": "The HCl lens returns showing only amber and violet ions with a pen ring on the empty space (\"no HCl molecules left\"); the fraction \"[H+][Cl-] / [HCl]\" writes and the denominator flashes \"about 0\" with a pen \"?\"; on \"We don't use a Ka value\" the fraction greys out under the label \"strong acid: ionises completely, no Ka value used\"; on \"weak acids\" the acetic acid lens slides in with a teal tick and \"weak acid: molecules and ions, so Ka\"",
+      "motionTools": [
+        "lens open",
+        "ScribbleCircle",
+        "fraction fade",
+        "card slide-in",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "kb",
+      "visualDecision": "adjust",
+      "visualReference": "The ammonia equation strip, the painted ammonia bottle (interim painted clear flask) with a particle lens, the \"left out\" tray, the Kb expression and a small copy of the size strip",
+      "teachingReason": "Shows the same rule for a weak base: ammonia takes a hydrogen ion from water, the ions rejoin, water stays out, and a small Kb means mostly molecules",
+      "narrationCue": "hydrogen ion from a water molecule / stays out / Kb / base dissociation constant / 1.8 times ten to the minus five / weak base",
+      "motionPurpose": "The strip writes, an H moves from a water molecule to NH3 making NH4+ and OH-, the water tile drops into the tray, Kb writes with its name, a marker lands on a small size strip and the lens shows mostly molecules",
+      "motionRole": "explain",
+      "onScreenChange": "The strip \"NH3(aq) + H2O(l) = NH4+(aq) + OH-(aq)\" writes; the bottle stands in the left column with a lens above; on \"hydrogen ion from a water molecule\" an amber H moves from a water molecule to NH3, giving violet NH4+ and green OH-, while elsewhere one pair rejoins; on \"stays out\" the H2O(l) tile drops into the tray (\"still the solvent\"); on \"Kb\" \"Kb = [NH4+][OH-] / [NH3]\" writes with \"base dissociation constant\"; on \"1.8 times ten to the minus five\" the marker \"ammonia, Kb = 1.8 x 10^-5 (25 C)\" lands on a small size strip and the lens shows \"mostly molecules\"; \"weak base\" writes on",
+      "motionTools": [
+        "particle dots",
+        "two-way arrows",
+        "tile drop",
+        "expression builder",
+        "marker drop"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "ksp-preview",
+      "visualDecision": "adjust",
+      "visualReference": "The painted saturated beaker with a coded lens at the crystal surface, the AgCl equation strip, the left-out tray and a Ksp expression with a \"later videos\" chip",
+      "teachingReason": "Shows the same one-rule pattern for a solid that barely dissolves, writing the expression only",
+      "narrationCue": "solid stays out / silver ions times chloride ions / Ksp",
+      "motionPurpose": "The saturated beaker and its lens show ions leaving and rejoining, the AgCl tile drops into the tray and the Ksp expression writes with no denominator",
+      "motionRole": "explain",
+      "onScreenChange": "The painted saturated beaker stands on the left with a lens at the crystal surface (ions leave and rejoin); the strip \"AgCl(s) = Ag+(aq) + Cl-(aq)\" writes; on \"solid stays out\" the AgCl(s) tile drops into the tray (\"pure solid\"); on \"silver ions times chloride ions\" \"Ksp = [Ag+][Cl-]\" writes with no denominator, a faint \"(about 1.8 x 10^-10 at 25 C)\" tag and the chip \"Ksp: later videos\"",
+      "motionTools": [
+        "plate slide",
+        "lens open",
+        "two-way arrows",
+        "tile drop",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "The three expressions in a row with teal name tags and the left-out tray beneath, the large handwritten aid, a condition tag and the size strip arrow",
+      "teachingReason": "Gives the one-rule line after all three cases are explained, with the like-with-like condition",
+      "narrationCue": "Ka, Kb and Ksp are just K with a name tag / same kind / further to the right",
+      "motionPurpose": "The three expressions stand in a row with name tags hanging from each K, the aid writes large, the condition tag writes and the ruler arrow lights",
+      "motionRole": "explain",
+      "onScreenChange": "The three expressions stand in a row, each with a teal name tag hanging from the K (\"a\", \"b\", \"sp\") and the tray beneath holding H2O(l), H2O(l) and AgCl(s); the aid \"Ka, Kb and Ksp are just K with a name tag.\" writes large; on \"same kind\" the tag \"compare like with like: same kind of equation, same temperature\" writes; on \"further to the right\" the size strip arrow lights",
+      "motionTools": [
+        "HandText write-on",
+        "tag pop",
+        "tray",
+        "arrow light"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "A grouped givens card with two Ka values and temperatures, the HCN equation strip and two numbered demands, with no builder, tray, size strip or markers",
+      "teachingReason": "Unseen transfer: write a Ka that includes water in the equation, and rank two acids; every value and demand stays visible and nothing carries an answer",
+      "narrationCue": "1.8 times ten to the minus four / 6.2 times ten to the minus ten / H C N / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; the givens card shows \"methanoic acid, HCOOH: Ka = 1.8 x 10^-4 (25 C)\" and \"hydrogen cyanide, HCN: Ka = 6.2 x 10^-10 (25 C)\"; the strip \"HCN(aq) + H2O(l) = H3O+(aq) + CN-(aq)\" writes; the demands \"1. Write Ka for this equation.\" and \"2. Which is the stronger acid? Why?\" stay visible; the countdown ring starts after the narration with \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-expression",
+      "visualDecision": "adjust",
+      "visualReference": "The expression builder on the attempt equation with products to the top, HCN to the bottom, water to the tray, and a crossed water-on-the-bottom chip",
+      "teachingReason": "Corrects the expression and the most likely slip, putting the solvent in the fraction",
+      "narrationCue": "H three O plus times C N minus, over H C N / water on the bottom",
+      "motionPurpose": "The tiles fly to the top and bottom, the water tile drops into the tray, Ka writes with a tick and the wrong chip fades in and is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The builder runs on the attempt equation: H3O+ and CN- tiles fly to the top, HCN to the bottom and H2O(l) drops into the tray; \"Ka = [H3O+][CN-] / [HCN]\" writes with a teal tick; on \"water on the bottom\" the chip \"[H3O+][CN-] / ([HCN][H2O])\" fades in and is crossed with the caption \"solvent: left out\"",
+      "motionTools": [
+        "expression builder",
+        "tile fly-in",
+        "tray",
+        "Mark cross",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second after the last word"
+    },
+    {
+      "sceneId": "feedback-stronger",
+      "visualDecision": "adjust",
+      "visualReference": "The size strip with HCOOH and HCN markers at their log positions, a teal tick, a stronger acid arrow, a crossed number-in-front chip, exponent rings and the ratio working",
+      "teachingReason": "Answers the ranking with powers of ten first and corrects the common slip of comparing the numbers in front",
+      "narrationCue": "Methanoic acid / powers of ten first / three hundred thousand times",
+      "motionPurpose": "The two markers drop about five and a half ticks apart, methanoic acid gets a tick, the 6.2 over 1.8 chip is crossed, the exponents are ringed and the ratio line writes",
+      "motionRole": "explain",
+      "onScreenChange": "The strip returns with markers \"HCOOH 1.8 x 10^-4\" and \"HCN 6.2 x 10^-10\" at their true log positions; on \"Methanoic acid is stronger\" its marker gets a teal tick and the stronger arrow lights; the chip \"HCN: 6.2 > 1.8\" fades in and is crossed; on \"powers of ten first\" the exponents -4 and -10 get pen rings and a bracket; on \"three hundred thousand times\" \"1.8 x 10^-4 / 6.2 x 10^-10 = 2.9 x 10^5\" writes under the strip",
+      "motionTools": [
+        "marker drop",
+        "tick",
+        "Mark cross",
+        "ScribbleCircle",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "A question card with the rule, a greyed Module 6 side card, a next chip and the small painted saturated beaker",
+      "teachingReason": "Collects the rule in order, marks what belongs to Module 6, and hands off to dissolving",
+      "narrationCue": "Module 6 / Next",
+      "motionPurpose": "The question card writes line by line, a greyed Module 6 card writes with a later tag, and the next chip slides in beside the small beaker",
+      "motionRole": "explain",
+      "onScreenChange": "The card writes \"Acid or base in water? Write K: products over reactants, water left out. Name it Ka or Kb. Bigger value (same concentration): more split into ions.\"; a greyed side card \"Module 6: pH from Ka, Ka and Kb linked\" writes on \"Module 6\" with a pen \"later\" tag; on \"Next\" the chip \"Next: how an ionic solid dissolves in water\" appears beside the small painted saturated beaker",
+      "motionTools": [
+        "HandText write-on",
+        "card slide-in",
+        "tag pop",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds after the last word"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes, the aid and the condition tag appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 70 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c10-learning-review.md",
+      "sha256": "07fac2cc5f9bc3fb54585309348d7772179037f7e237101dcce753d34a6c34ab"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c10-claude-science-check.md",
+      "sha256": "65a864b66f95485e60d38e5f9225e47d84b537630c5e1e71c24ad3abbbe22640"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

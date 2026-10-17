@@ -173,3 +173,13 @@ Claude overnight: C6b render; B6a harder questions (re-record) + overlap fixes; 
 - G03a / G03b: "Every type of HSC equilibrium calculation (quick guide), part 1 / part 2"
 - G03c / G03d: "Hard HSC equilibrium calculation practice, part 1 / part 2"
 - Passed: B6a v2 (with sweep-37 wording fix), G03c v1, G03d v1. Render order: G03c, B6a, G03d.
+
+## 16 Oct: big Codex queue (programme groundwork)
+Short jobs first: 28j (upload B6a, G03c, G03d), 43 (C7 tug-of-war plates).
+Groundwork (any order, each is a long job): 45 syllabus ledgers + new-syllabus timeline; 44 site extracts M7+M8; 46 pre-design packs M6; 47 plates M6 chem; 48 plates M6 bio; 50 HSC question-type banks M6-M8 (+Bio M5); 49 Year 11 new-syllabus scoping (after 45); 51 website video plan + manifest; 52 physics and maths feasibility.
+Still running from before: 38, 39, 42.
+Claude agents running: C10+C11 design, B7+B8 design, programme master plan (docs/production/programme/master-plan.md).
+
+## 17 Oct: Codex queue
+Codex has finished everything up to brief 54. To send: 28k (upload G03b + B3b), 28l (upload C7), 55 (B6b recipe-book plate), 56 (fact check P02, C10, B6b, B6c), 57 (pre-design packs M7 + M8), 58 (Module 7 plates, both subjects).
+To watch: C10 v1, P02 v3, B6b v2, B6c v2. Coming: P02 v4 / C10 v2 with real apparatus, B5a / B5b v5 with painted chromosomes.

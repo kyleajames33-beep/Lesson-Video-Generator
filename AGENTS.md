@@ -75,6 +75,13 @@
   text or skipping assumptions. Keep every question demand and necessary
   supplied condition available during the response opportunity. Apply this
   check in script review and exact voiced preview, alongside caption fit.
+- Feedback after an end-of-video practice question is brief (owner, 16
+  October 2026): the correct answer and the one or two key reasons, short
+  working where needed, one crossed-out classic mistake, then move on (about
+  15 to 30 seconds per question). Do not re-teach the lesson; students can
+  rewatch it. Hard practice videos whose walkthroughs are the content are the
+  exception.
+
 - Keep each video focused on one main learner question. Split distinct
   objectives when combining them would rush the explanation or crowd the
   screen. Show one current reasoning stage and only the supporting facts it

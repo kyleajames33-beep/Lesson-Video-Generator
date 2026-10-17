@@ -15,6 +15,8 @@ export {Cam, Zoom, Bracket, Underlined, Hand, Say, vis, GreyTag} from '../bio-m5
 export {Countdown} from '../../kit';
 export {PAPER_DEEP};
 export * from './chrom';
+// Revision 6: B5a and B5b scenes draw the painted plate chromosome (ChromP) wherever they use Chrom.
+export {ChromP as Chrom} from './chrom';
 
 export const S = (id: string): CueScene & {durationInFrames: number} => {
 	const s = (lesson.scenes as unknown as (CueScene & {durationInFrames: number})[]).find(x => x.id === id);

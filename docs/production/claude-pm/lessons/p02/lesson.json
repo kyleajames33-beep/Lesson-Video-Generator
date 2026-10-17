@@ -1,0 +1,140 @@
+{
+  "title": "Colourimetry: how can a colour reading give you a real K?",
+  "subtitle": "Nobody can count ions in a test tube. How can the colour of an equilibrium mixture give you a measured K?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 13,
+  "lessonIntent": "Explain what a colourimeter measures and why a blank is used, state that absorbance is proportional to concentration for a fixed cuvette and light, explain why calibration standards use a large excess of Fe3+, draw and use a calibration line, find starting concentrations after mixing, use the E-row-first ICE table to find K from one measured value, and judge repeat values by their spread and the recorded temperature.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the last video, K changed with temperature, and every K we used was simply given to us. So where do those numbers come from? Nobody can count ions in a test tube. But here is the iron thiocyanate tube again. Iron three plus and thiocyanate join to make F E S C N two plus, an ion that is deep red, and the more of it there is, the deeper the colour. If we could turn that colour into a number, we could measure a concentration at equilibrium, and from that, a real K. So how does a colour reading give you K?"
+      }
+    },
+    {
+      "id": "colourimeter",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The instrument is a colourimeter. A lamp shines light through a small clear container of the solution, called a cuvette, and onto a detector. The red ion looks red because it soaks up blue light and lets the red through, so we set the colourimeter to blue light, about four hundred and forty-seven nanometres. The more red ions in the light's path, the more blue light they absorb, and the less reaches the detector. The meter reports this as absorbance, where zero means no light is absorbed. First we put in a cuvette of plain water, the blank, and set it to zero, so the water and the glass don't count."
+      }
+    },
+    {
+      "id": "absorbance",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here is the useful part. If the light and the cuvette stay the same, doubling the number of red ions in the light's path doubles the absorbance. Chemists write this as A equals epsilon l c. A is the absorbance, c is the concentration, l is the width of the cuvette the light travels through, and epsilon is a number that says how strongly this ion absorbs this light. With the same cuvette and the same light, epsilon and l stay fixed, so absorbance rises in step with concentration."
+      }
+    },
+    {
+      "id": "standards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To turn a reading into a concentration, we need solutions where we already know the answer. These are the standards. Each one has a measured amount of thiocyanate and a big excess of iron three plus. All that extra iron pushes the equilibrium far to the right, just like adding a reactant in the disturbance videos, so almost every thiocyanate ion ends up in the red ion. That means the red ion's concentration equals the thiocyanate concentration in that standard, which we know from how it was made. Five standards give five known concentrations, from pale to deep red."
+      }
+    },
+    {
+      "id": "calibration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now measure the absorbance of each standard and plot it, absorbance up the side and concentration along the bottom. The blank gives the point at zero. The points fall close to a straight line, so we draw the line of best fit through them, not dot to dot. Because we zeroed with the blank, the line passes very close to the origin. Why not just use the formula? The slope you measure depends on this instrument, its filter and these cuvettes, so a book value of epsilon won't quite match yours. Measuring your own standards on the same machine is the calibration, and the line only applies inside the range of the standards."
+      }
+    },
+    {
+      "id": "read-mixture",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now a real equilibrium. Mix 5.00 millilitres of 0.00200 moles per litre iron three plus with 5.00 millilitres of 0.00200 moles per litre thiocyanate. This time neither is in excess, so the mixture settles with all three ions present, and nobody knows how much red ion there is. That is what we measure. Its absorbance is 0.705. Go across from 0.705 to the line, then straight down to the concentration axis: 1.50 times ten to the minus four moles per litre. If you are given the line's equation instead, subtract the intercept from both sides, then divide both sides by the gradient, and you get the same value."
+      }
+    },
+    {
+      "id": "dilution",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before the ICE table, one trap. The bottles were 0.00200 moles per litre, but pouring 5 millilitres into a 10 millilitre total spreads each ion through twice the volume. So each starting concentration halves: 0.00200 times 5.00 over 10.00 is 0.00100 moles per litre, for iron and for thiocyanate. Always use the concentrations after mixing, never the bottle values."
+      }
+    },
+    {
+      "id": "ice-table",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the ICE table from earlier: I for initial, C for change, and E for equilibrium. The initial row is 0.00100 for iron, 0.00100 for thiocyanate, and zero for the red ion. The measured value goes in the equilibrium row first: 1.50 times ten to the minus four for the red ion. Its change is equilibrium minus initial, so plus 1.50 times ten to the minus four. The equation is one to one to one, so iron and thiocyanate each fall by the same amount. That leaves 8.50 times ten to the minus four of each at equilibrium."
+      }
+    },
+    {
+      "id": "find-k",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now substitute the equilibrium values into the expression: the red ion over iron times thiocyanate. That is 1.50 times ten to the minus four, over 8.50 times ten to the minus four squared, which gives about 208, with no unit written. Notice what that number does not mean. Only fifteen percent of the iron became the red ion, so K in the hundreds does not mean almost all products. It sits in the middle band from the expressions video, with all three ions present in measurable amounts."
+      }
+    },
+    {
+      "id": "repeats",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One mixture is not enough. A class makes five mixtures with different starting amounts and measures each at the same temperature. If K really is constant, the five values should agree, and here they come out between 205 and 214, with an average of 208. That spread tells you how far to trust the result. Write the temperature beside it, because K changes with temperature. The weak points are measuring small volumes, how well the line fits, and the assumption that the standards turned almost all their thiocyanate red."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two lines to keep. First, measure the colour it absorbs, not the colour you see: a red solution is read with blue light. Second, the chain: standards, graph, reading, ICE table, K. Each step feeds the next one, and the dilution comes just before the ICE table."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Same calibration graph, same temperature. A new mixture: 4.50 millilitres of 0.00200 moles per litre iron three plus, 3.50 millilitres of 0.00200 moles per litre thiocyanate, and 2.00 millilitres of water. Its absorbance is 0.470. Find K. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The answer is about 208. First, dilute: in 10.00 millilitres, iron starts at 9.00 times ten to the minus four and thiocyanate at 7.00 times ten to the minus four. Then read across from 0.470 and down: 1.00 times ten to the minus four of the red ion. That goes in the equilibrium row first, so each reactant falls by the same amount, leaving 8.00 and 6.00 times ten to the minus four. Divide, and K is about 208. That's the same K from a different mixture, because K stays constant at one temperature. If you got about 28, you used the bottle concentrations, so dilute first."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to get K from colour: make standards with one reactant in big excess, plot the calibration line, read the mixture's absorbance across and down, work out the starting concentrations after mixing, put the measured value in the equilibrium row first, then substitute. And always record the temperature. Next: two K values with their own names, Ka and Kb, for acids and bases."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

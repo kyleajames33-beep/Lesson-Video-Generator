@@ -3,7 +3,7 @@ import {useCurrentFrame, interpolate} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, arcPath, Bracket, CellBody, CH, Chrom, CX, CY, DrawPath, Envelope, FONT_DISPLAY, FONT_HAND, GreyCross, GreyTag, Hand, Heading,
-	INK, INK_SOFT, lerp, NUC_X, onCircle, Overlay, PenTap, Pill, prog, S, Scribble, vis, Line,
+	INK, INK_SOFT, lerp, NUC_X, onCircle, Overlay, PenTap, Pill, prog, S, Scribble, vis, Line, ChromPlate, P_SINGLE, plateLen, plateWk, PCell,
 } from './shared';
 
 const PLUM_INK = '#7e3a69';
@@ -50,8 +50,9 @@ export const SceneWhyCopy: React.FC = () => {
 				{CH.map((ch, i) => <Chrom key={i} x={pos(i)[0]} y={pos(i)[1]} kind={ch.kind} color={ch.color} dup={0} o={i === 0 ? barsO : 1} />)}
 				{/* the cut: two grey halves */}
 				<g opacity={apart}>
-					<HalfBar x={lx} y={ly - 10 * apart} h={85} top color="#c9ccd0" />
-					<HalfBar x={lx} y={ly + 10 * apart} h={85} top={false} color="#c9ccd0" />
+					{/* the cut chromosome: the painted plate split at its centromere, greyed */}
+					<ChromPlate p={P_SINGLE.N} cx={lx} cy={ly - 10 * apart} h={plateLen('L', 0)} wk={plateWk(0)} half="top" filter="grayscale(1) brightness(1.12)" />
+					<ChromPlate p={P_SINGLE.N} cx={lx} cy={ly + 10 * apart} h={plateLen('L', 0)} wk={plateWk(0)} half="bot" filter="grayscale(1) brightness(1.12)" />
 					<GreyCross x={lx - 42} y={ly - 54} at={c.half + 4} s={0.8} />
 					<GreyCross x={lx - 42} y={ly + 54} at={c.half + 12} s={0.8} />
 				</g>
@@ -162,7 +163,7 @@ export const SceneInterphase: React.FC = () => {
 					<path d="M-20,2 L-6,18 L22,-18" fill="none" stroke="#2f8a5b" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
 				</g>
 				{/* the model cell inside the ring */}
-				<ellipse cx={RC[0]} cy={RC[1]} rx={190} ry={176} fill="#fbf6e8" stroke="#8a7a63" strokeWidth={5} opacity={ringP} />
+				<PCell cx={RC[0]} cy={RC[1]} rx={190} ry={176} o={ringP} />
 				<Envelope cx={RC[0]} cy={RC[1]} r={128} o={ringP} />
 				{CH.map((ch, i) => <Chrom key={i} x={RC[0] + NUC_X[i] * 0.52} y={RC[1]} kind={ch.kind} color={ch.color} dup={dup} s={0.55} o={ringP} />)}
 				<Scribble cx={RC[0] + NUC_X[0] * 0.52} cy={RC[1]} rx={28} ry={58} at={c.two} color={AMBER_INK} seed={3} />

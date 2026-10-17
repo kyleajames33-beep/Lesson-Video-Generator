@@ -4,14 +4,14 @@ import {cues} from '../../cues';
 import {Enter} from '../../kit';
 import {
 	AMBER, AMBER_INK, Arrow, Bracket, CELL_FILL, CELL_LINE, CREAM, CX, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, LP_Ab, LT_aB, MC, Overlay, PLUM, Pill, PP, prog, S, Strand, TEALC, TT, vis, clamp01,
-	Cell, letterFor, Num, Cen,
+	Cell, letterFor, Num, Cen, PCell,
 } from './shared';
 
 const labelOf = (long: Strand, short: Strand) => `${letterFor('L', 'top', long[0])} ${letterFor('L', 'bot', long[1])} ${letterFor('S', 'top', short[0])}`;
 
 export const DCell: React.FC<{cx: number; cy: number; k: number; long: Strand; short: Strand; side: 1 | -1; o?: number}> = ({cx, cy, k, long, short, side, o = 1}) => (
 	<g transform={`translate(${cx},${cy}) scale(${k})`} opacity={o}>
-		<ellipse cx={0} cy={0} rx={210} ry={162} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={6} />
+		<PCell cx={0} cy={0} rx={210} ry={162} />
 		<MC x={side < 0 ? 35 : -35} y={-35} kind="L" a={long} dup={0} />
 		<MC x={side < 0 ? -35 : 35} y={70} kind="S" a={short} dup={0} />
 	</g>
@@ -112,7 +112,7 @@ export const SceneTracking: React.FC = () => {
 		if (kind === 0) {
 			return (
 				<g opacity={op(c.model + (col === 0 ? 0 : 0))}>
-					<ellipse cx={x0} cy={ICY} rx={96} ry={66} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+					<PCell cx={x0} cy={ICY} rx={96} ry={66} />
 					{[-60, -20, 20, 60].map((xx, i) => <MC key={i} x={x0 + xx} y={ICY} kind={i < 2 ? 'L' : 'S'} a={i % 2 ? TT : PP} dup={0} s={MS} beads={0} />)}
 				</g>
 			);
@@ -137,13 +137,13 @@ export const SceneTracking: React.FC = () => {
 				{/* mini cells */}
 				{mini(0, 0)}
 				<g opacity={op(c.copying + 4)}>
-					<ellipse cx={BX[1]} cy={ICY} rx={96} ry={66} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+					<PCell cx={BX[1]} cy={ICY} rx={96} ry={66} />
 					{[-60, -20, 20, 60].map((xx, i) => <MC key={i} x={BX[1] + xx} y={ICY} kind={i < 2 ? 'L' : 'S'} a={i % 2 ? TT : PP} dup={dupAt} s={MS} beads={0} />)}
 				</g>
 				<g opacity={op(c.first)}>
 					{[-1, 1].map(sd => (
 						<g key={sd}>
-							<ellipse cx={BX[2] + sd * 70} cy={ICY} rx={62} ry={56} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
+							<PCell cx={BX[2] + sd * 70} cy={ICY} rx={62} ry={56} />
 							<MC x={BX[2] + sd * 70 - 14 * sd} y={ICY - 4} kind="L" a={sd < 0 ? PP : LT_aB} b={sd < 0 ? LP_Ab : TT} s={0.19} beads={0} />
 							<MC x={BX[2] + sd * 70 + 18 * sd} y={ICY + 8} kind="S" a={sd < 0 ? PP : TT} b={sd < 0 ? PP : TT} s={0.19} beads={0} />
 						</g>
@@ -152,7 +152,7 @@ export const SceneTracking: React.FC = () => {
 				<g opacity={op(c.second)}>
 					{[-3, -1, 1, 3].map((m, i) => (
 						<g key={i}>
-							<ellipse cx={BX[3] + m * 37} cy={ICY} rx={34} ry={40} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={3.5} />
+							<PCell cx={BX[3] + m * 37} cy={ICY} rx={34} ry={40} />
 							<MC x={BX[3] + m * 37 - 8} y={ICY - 2} kind="L" a={ON[i][0]} dup={0} s={0.13} beads={0} />
 							<MC x={BX[3] + m * 37 + 10} y={ICY + 6} kind="S" a={ON[i][1]} dup={0} s={0.13} beads={0} />
 						</g>

@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/b5b/measured/lesson.json",
-    "lessonSha256": "795020e6428471f42f626044198a687478e588eed26874866c58056f6bb5ea31"
+    "lessonSha256": "4195d82309f0d336ea3e73795e54d9a4ac5831cb3dda9be7b300c44145ec616e"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -29,14 +29,14 @@
   },
   "design": {
     "renderer": "src/explainer/ExplainerVideo.tsx",
-    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the b05a model cell with long and short chromosome bars, centromere discs, allele beads with dotted same-gene links, spindle fibres, stage strip with meiosis I and II dividers, count tracker, combinations grid and compare board. Colour key: plum is one parent's set and teal the other's, cream centromere discs with ink outline, alleles as white beads with a letter, amber for tags and emphasis, grey for crossed wrong ideas.",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the b05a model cell on the painted Codex brief 54 chromosome and cell plates (single, duplicated and homologous pair chromosomes in pink and teal; dividing, spindle-free and pinching cells), with coded centromere discs, allele beads with dotted same-gene links, a crossing-over mask, spindle fibres, stage strip with meiosis I and II dividers, count tracker, combinations grid and compare board. Colour key: plum is one parent's set and teal the other's, cream centromere discs with ink outline, alleles as white beads with a letter, amber for tags and emphasis, grey for crossed wrong ideas.",
     "transitionPlan": "The family scene draws gametes into zygotes; the doubling chain is crossed and the board wipes to the correct chain; the b05a model cell returns and gains allele beads; the stage strip lands with a meiosis I divider; a camera push reaches the paired chromosomes for crossing over; the board stays for metaphase I and the ghost line-up appears beside it; the second-division chips land with a divider and the left cell enlarges; the four-cell row builds under the parent; the tracker draws on and shrinks; the compare board builds beside the full tracker; the attempt board removes tracker and strip and they return in the feedback; scene crossfade with settle."
   },
   "scenes": [
     {
       "sceneId": "hook",
-      "visualDecision": "new",
-      "visualReference": "Coded family scene: parents holding an egg and a sperm cell, two brothers with visibly different features, paths from the gametes to a zygote above each brother",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Coded family scene: parents holding an egg and a sperm cell, two brothers with visibly different features, paths from the gametes to a zygote above each brother",
       "teachingReason": "Poses the two questions on a familiar observation: siblings differ, yet each began from one set of chromosomes from each parent",
       "narrationCue": "Two brothers have the same parents / one sperm and one egg / halve its chromosome number",
       "motionPurpose": "A sperm and an egg path-draw from the parents to a small cell above each brother, a ring marks the one set each carried, and the heading writes on its question",
@@ -71,7 +71,7 @@
     {
       "sceneId": "model-alleles",
       "visualDecision": "adjust",
-      "visualReference": "The b05a model cell (long and short plum and teal bars) with labelled allele beads and dotted same-gene links",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: The b05a model cell (long and short plum and teal bars) with labelled allele beads and dotted same-gene links",
       "teachingReason": "Adds alleles to the familiar model so crossing over and assortment can be seen as mixing existing versions",
       "narrationCue": "our model cell again / a plum version and a teal version / a capital and a small letter, only to tell them apart",
       "motionPurpose": "The model cell returns as single threads, beads pop onto matching levels of the plum and teal bars and dotted lines link each pair of versions",
@@ -88,7 +88,7 @@
     {
       "sceneId": "prophase-one",
       "visualDecision": "adjust",
-      "visualReference": "Four bars doubling into joined threads with alleles on both chromatids, the stage strip with a meiosis I divider, and homologous partners sliding side by side",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Four bars doubling into joined threads with alleles on both chromatids, the stage strip with a meiosis I divider, and homologous partners sliding side by side",
       "teachingReason": "Starts the first division and gives the reason for pairing: one partner of each pair can then go to each end",
       "narrationCue": "every chromosome is copied / prophase one / side by side, gene against gene / one partner of each pair to each end",
       "motionPurpose": "The bars double, the stage strip lands, and each chromosome slides beside its homologous partner, gene against gene",
@@ -104,8 +104,8 @@
     },
     {
       "sceneId": "crossing-what",
-      "visualDecision": "new",
-      "visualReference": "Paired long chromosomes enlarged, inner chromatids lit, an amber break mark between the two genes, and a CrossOver swap of the lower pieces",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Paired long chromosomes enlarged, inner chromatids lit, an amber break mark between the two genes, and a CrossOver swap of the lower pieces",
       "teachingReason": "Shows what crossing over is before naming it, and separates non-sister from sister chromatids",
       "narrationCue": "break at the same place and swap the matching pieces / non-sister chromatids / This is crossing over",
       "motionPurpose": "A push reaches the pair, the two inner chromatids light, both break at the same level and the lower pieces swap with their colours following their origin",
@@ -121,8 +121,8 @@
     },
     {
       "sceneId": "crossing-makes",
-      "visualDecision": "new",
-      "visualReference": "The same board with the four long chromatids tagged A B, A b, a B, a b, a crossed ghost bead labelled new and a caption",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: The same board with the four long chromatids tagged A B, A b, a B, a b, a crossed ghost bead labelled new and a caption",
       "teachingReason": "Shows crossing over makes new combinations of existing alleles and no new alleles",
       "narrationCue": "It does not make new alleles / new combinations of the alleles already there / even the sister chromatids",
       "motionPurpose": "Circles land on the four long chromatids with their letter tags, a ghost bead labelled new is crossed out, and a caption says it is normal and regulated",
@@ -139,7 +139,7 @@
     {
       "sceneId": "metaphase-one-line-up",
       "visualDecision": "adjust",
-      "visualReference": "The nuclear envelope dashing away, spindle poles and fibres, and the two pairs sliding to the middle with one partner facing each pole",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: The nuclear envelope dashing away, spindle poles and fibres, and the two pairs sliding to the middle with one partner facing each pole",
       "teachingReason": "Shows the first lining-up and how it differs from mitosis (pairs, not single chromosomes)",
       "narrationCue": "the nuclear envelope breaks down / metaphase one / one partner facing each end",
       "motionPurpose": "The envelope breaks into dashes, fibres grow, and the two pairs slide to the middle with one partner facing each pole and fibres attaching",
@@ -155,8 +155,8 @@
     },
     {
       "sceneId": "independent-assortment",
-      "visualDecision": "new",
-      "visualReference": "Same board with coin flips above each pair, a TwoWays shuffle landing on line-up 1 and a ghost board showing line-up 2",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Same board with coin flips above each pair, a TwoWays shuffle landing on line-up 1 and a ghost board showing line-up 2",
       "teachingReason": "Shows the direction is chance for each pair and names independent assortment after the idea",
       "narrationCue": "Which partner faces which end is chance / plum long and teal short on the left / This is independent assortment",
       "motionPurpose": "A coin flips above each pair in turn and the pairs face either way, a ghost board shows the other line-up, and the name writes on",
@@ -172,8 +172,8 @@
     },
     {
       "sceneId": "first-division",
-      "visualDecision": "new",
-      "visualReference": "Line-up 1 whole X shapes travelling to opposite poles with discs staying whole, brackets for one of each kind, and two cells with half the number",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Line-up 1 whole X shapes travelling to opposite poles with discs staying whole, brackets for one of each kind, and two cells with half the number",
       "teachingReason": "Shows what separates in the first division and that this is the step that halves the number",
       "narrationCue": "the fibres pull the homologous partners apart / the centromeres do not split / one of each kind of chromosome, which is one set / half the chromosome number",
       "motionPurpose": "Whole X shapes travel to opposite ends with their centromeres intact, brackets mark one of each kind at each end, and the cell divides into two with half the number",
@@ -190,8 +190,8 @@
     },
     {
       "sceneId": "second-division",
-      "visualDecision": "new",
-      "visualReference": "Meiosis II divider and stage chips, a grey tag for no copying between divisions, the left cell enlarged with its chromosomes lining up on their own and chromatids separating",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Meiosis II divider and stage chips, a grey tag for no copying between divisions, the left cell enlarged with its chromosomes lining up on their own and chromatids separating",
       "teachingReason": "Gives the cause for a second division and shows what separates in it",
       "narrationCue": "A gamete cannot keep doubled chromosomes / In anaphase two, the centromeres split / the two cells get different chromosomes",
       "motionPurpose": "The second-division chips land with a no copying tag, each doubled chromosome lines up on its own, the centromeres split and the chromatids are pulled apart",
@@ -207,8 +207,8 @@
     },
     {
       "sceneId": "four-cells",
-      "visualDecision": "new",
-      "visualReference": "FourCells row under the parent cell with letter labels and haploid tags, a bracket for four different cells and a crossing-over toggle that collapses them to two kinds twice",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: FourCells row under the parent cell with letter labels and haploid tags, a bracket for four different cells and a crossing-over toggle that collapses them to two kinds twice",
       "teachingReason": "Shows the end state and what crossing over adds, with the no crossing over contrast",
       "narrationCue": "one cell has made four haploid cells / all four differ / Now switch crossing over off / only two kinds, each twice",
       "motionPurpose": "Four cells settle in a row with their letter labels and a bracket, then a toggle switches crossing over off and the labels collapse to two kinds, each twice",
@@ -225,7 +225,7 @@
     {
       "sceneId": "tracking",
       "visualDecision": "adjust",
-      "visualReference": "Count tracker with four columns (start, after copying, after division 1 each cell, after division 2 each cell), mini cell icons, chromosome row and a chromatids-joined-copies-only row, then the human numbers",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Count tracker with four columns (start, after copying, after division 1 each cell, after division 2 each cell), mini cell icons, chromosome row and a chromatids-joined-copies-only row, then the human numbers",
       "teachingReason": "Tracks the numbers through both divisions so the halving and the loss of sister chromatids are visible",
       "narrationCue": "which starts with four chromosomes / eight chromatids / none has a sister chromatid / from 46 chromosomes to 23 in each of four cells",
       "motionPurpose": "Each column fills as its figure is spoken, the chromatid row stays at zero in the last column, and the human row repeats the pattern",
@@ -241,8 +241,8 @@
     },
     {
       "sceneId": "combinations",
-      "visualDecision": "new",
-      "visualReference": "CombosGrid on the model board: two coins flipping, a 2 by 2 grid of mini gametes, a doubling to 2 to the power n, and a human row to 2 to the power 23",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: CombosGrid on the model board: two coins flipping, a 2 by 2 grid of mini gametes, a doubling to 2 to the power n, and a human row to 2 to the power 23",
       "teachingReason": "Counts the whole-chromosome combinations from assortment alone and states honestly that two gametes almost never match",
       "narrationCue": "the choices multiply / 2 to the power n / more than 8 million / almost never match, but it is possible",
       "motionPurpose": "Two coins flip, a 2 by 2 grid of mini gametes appears, the doubling rule writes on, and the human number counts up",
@@ -258,8 +258,8 @@
     },
     {
       "sceneId": "fertilisation",
-      "visualDecision": "new",
-      "visualReference": "Two 23 gametes in one colour each travelling together and merging into a 46 zygote, with the generation chain 46, 23, 46 repeating",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Two 23 gametes in one colour each travelling together and merging into a 46 zygote, with the generation chain 46, 23, 46 repeating",
       "teachingReason": "Closes the loop: meiosis halves and fertilisation restores, so the number stays steady",
       "narrationCue": "23 plus 23 makes 46 again / Meiosis halves the number and fertilisation restores it / the number stays the same in every generation",
       "motionPurpose": "Two gametes each tagged 23 travel together and merge into a 46 zygote, then the chain repeats for another generation",
@@ -275,8 +275,8 @@
     },
     {
       "sceneId": "compare",
-      "visualDecision": "new",
-      "visualReference": "CompareBoard with mitosis and meiosis columns and rows for divisions, cells made, chromosomes in each and alike or different, on the same model cell with the tracker at full size",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: CompareBoard with mitosis and meiosis columns and rows for divisions, cells made, chromosomes in each and alike or different, on the same model cell with the tracker at full size",
       "teachingReason": "Lets the student compare the two divisions on the one model cell, and puts the key difference where it starts, at the middle",
       "narrationCue": "Mitosis is one division that makes two cells / Meiosis is two divisions after one copy / usually different from each other / homologous pairs line up and the partners separate",
       "motionPurpose": "The board builds one row at a time on the spoken words, the tracker columns for each new cell sit beside it, and the line-up in the middle is shown for each",
@@ -292,8 +292,8 @@
     },
     {
       "sceneId": "attempt",
-      "visualDecision": "new",
-      "visualReference": "Two numbered vignettes: a pea plant body cell with 14 chromosomes in 7 homologous pairs and its conditions, and a part-way cell with six lined-up X shapes in three pairs and its demands; no tracker, stage strip or hints",
+      "visualDecision": "adjust",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Two numbered vignettes: a pea plant body cell with 14 chromosomes in 7 homologous pairs and its conditions, and a part-way cell with six lined-up X shapes in three pairs and its demands; no tracker, stage strip or hints",
       "teachingReason": "Unseen transfer on halving, combinations and stage recognition, with every demand and condition visible",
       "narrationCue": "Two questions, both on screen / a pea plant / part-way through a division / Pause here to answer",
       "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
@@ -308,41 +308,41 @@
     {
       "sceneId": "feedback-one",
       "visualDecision": "adjust",
-      "visualReference": "Vignette one replayed with seven pairs and seven coins, a counter to 7, the grid doubling seven times to 128, two gametes joining to 14 and four crossed chips",
-      "teachingReason": "Explains the three answers by the rule and corrects the likeliest slips (14 for the gamete, adding instead of multiplying, using 14 for n, forgetting the second gamete)",
-      "narrationCue": "which is 128 / The fertilised egg holds 14 / you used the mitosis rule / n counts pairs",
-      "motionPurpose": "Seven coins flip, a counter ticks to 7, the grid doubles seven times to 128, two gametes of 7 join into 14, and four wrong chips are crossed",
+      "visualReference": "Vignette one replayed: seven small pairs of pink and teal single chromosome plates, one from each pair sliding into a gamete with a counter to 7, seven coins and a doubling ticker to 128, two gametes joining to 14 and one crossed chip",
+      "teachingReason": "Brief feedback (owner rule 16 Oct): gives the three answers with the rule (one from each pair, the choices multiply, 7 plus 7) and crosses one classic mistake, adding instead of multiplying, then moves on",
+      "narrationCue": "one from each pair / the choices multiply / which is 128 / The fertilised egg holds 14 / instead of multiplying",
+      "motionPurpose": "One plate from each pair slides into a gamete as a counter ticks to 7, seven coins flip and the ticker doubles to 128, two gametes join into 14, and one chip is crossed",
       "motionRole": "explain",
-      "onScreenChange": "Seven pairs with seven coins flip; a counter ticks 1 to 7; the grid doubles through 2, 4, 8, 16, 32, 64, 128 with 128 held in amber; two gametes of 7 join into 14; four chips including \"16,384\" appear and are crossed with grey scribbles",
+      "onScreenChange": "A plate from each of seven pairs slides into a gamete with a counter to 7; seven coins flip and the ticker runs 2 to 128 with \"2^7 = 128\" in amber; two gametes of 7 join into 14; the chip \"14 combinations (2 x 7)\" appears and is crossed with a grey scribble",
       "motionTools": [
         "coin flip",
-        "CombosGrid",
         "NumberTicker",
+        "plate slide",
         "Mark cross"
       ],
-      "holdPurpose": "Hold the corrected answers"
+      "holdPurpose": "Brief hold on the corrected answers, then move on"
     },
     {
       "sceneId": "feedback-two",
       "visualDecision": "adjust",
-      "visualReference": "Vignette two replayed: a pen taps six centromeres, the pairs light together as meiosis I, an arrow separates the partners to opposite ends with 3 at each end and three crossed chips",
-      "teachingReason": "Explains the stage from the pairs lined up with no centromeres split, and the count after the division",
-      "narrationCue": "with no centromeres split / metaphase of meiosis one / each cell will hold 3 / If you said 12, you counted chromatids",
-      "motionPurpose": "A pen taps six discs, the pairs light as meiosis I, the partners pull apart with 3 at each end, and the wrong stage and count chips are crossed",
+      "visualReference": "Vignette two replayed: the dividing cell plate with three painted homologous pair plates lined up, a circle on one whole centromere, the pairs splitting into duplicated plates that travel to opposite ends with 3 at each end and one crossed chip",
+      "teachingReason": "Brief feedback (owner rule 16 Oct): names the division and stage from the pairs with no centromeres split, gives 3 per cell because the partners separate, and crosses one classic mistake, keeping the number",
+      "narrationCue": "lined up in homologous pairs / no centromeres split / metaphase of meiosis one / each cell will hold 3 chromosomes / you kept the number",
+      "motionPurpose": "The pairs light as meiosis I, a circle marks a whole centromere, the partners pull apart with 3 at each end, and one chip for 6 is crossed",
       "motionRole": "explain",
-      "onScreenChange": "A pen taps each disc with a counter to 6 and the tag \"6 chromosomes in 3 homologous pairs\"; the pairs light with \"pairs lined up: meiosis I\"; an arrow pulls the partners apart and each end reads \"3 chromosomes\" with \"3 + 3\"; three chips appear and are crossed",
+      "onScreenChange": "The pair plates light with \"pairs lined up: meiosis I\"; a scribble circle lands on one unsplit centromere; each pair plate becomes two duplicated plates that travel to opposite ends and each end reads \"3 chromosomes\"; the chip \"6 (kept the number)\" appears and is crossed",
       "motionTools": [
-        "pen tap counter",
-        "NumberTicker counter",
+        "plate swap",
+        "ScribbleCircle",
         "DrawPath arrow",
         "Mark cross"
       ],
-      "holdPurpose": "Hold the 3 + 3 split"
+      "holdPurpose": "Brief hold on the 3 and 3 split, then move on"
     },
     {
       "sceneId": "memory",
       "visualDecision": "adjust",
-      "visualReference": "Two big amber lines with icons (paired bars pulled apart, a doubled bar splitting), a third join icon line, a silent who-does-what strip and a next-lesson chip",
+      "visualReference": "Codex brief 54 painted chromosome and cell plates (b5x-*) with coded labels, counts and arrows on top: Two big amber lines with icons (paired bars pulled apart, a doubled bar splitting), a third join icon line, a silent who-does-what strip and a next-lesson chip",
       "teachingReason": "Gives the reusable aid, keeps pair and copy distinct, closes with fertilisation and hands off to DNA arrangement",
       "narrationCue": "meiosis one splits the homologous pairs / Meiosis two splits the sister chromatids / fertilisation joins two gametes and restores the number / how DNA is arranged in different kinds of cell",
       "motionPurpose": "The two lines write on one at a time under their icons, the fertilisation line joins them, and a next chip slides in",

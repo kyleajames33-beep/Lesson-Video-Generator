@@ -5,7 +5,9 @@ import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Bracket, Cam, CellBody, CELL_FILL, CELL_LINE, Chip, Chrom, CH, CX, CY, DrawPath, Envelope, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading,
 	INK, INK_SOFT, lerp, NUC_X, RX, RY, NUC_FILL, NUC_LINE, Overlay, PlateArt, PLATES, plateAt, PLUM, prog, S, Scribble, TEALC, vis,
+	ChromPlate, plateOf, PImg, P_ZOOM, clamp01,
 } from './shared';
+import type {BPlate} from './shared';
 
 const PLUM_INK = '#7e3a69';
 const TEAL_INK = '#1f7a6f';
@@ -131,35 +133,72 @@ const KH = (() => {
 	const r = rng(3);
 	return Array.from({length: 23}, (_, i) => Math.round(98 - i * 1.6 - r() * 16));
 })();
-const RowBar: React.FC<{x: number; y: number; h: number; color: string; o: number}> = ({x, y, h, color, o}) => (
-	<g opacity={o}>
-		<rect x={x - 11} y={y - h / 2} width={22} height={h} rx={11} fill={color} stroke={INK} strokeWidth={3} />
-		<circle cx={x} cy={y} r={6} fill="#fbf0cf" stroke={INK} strokeWidth={2.5} />
-	</g>
-);
+const RowBar: React.FC<{x: number; y: number; h: number; color: string; o: number}> = ({x, y, h, color, o}) => {
+	if (o <= 0.01) return null;
+	const {p, filter} = plateOf(color, false);
+	return (
+		<g opacity={o}>
+			<ChromPlate p={p} cx={x} cy={y} h={h * 1.12} wk={1.25} filter={filter} />
+			<circle cx={x} cy={y} r={Math.max(2.5, h * 0.065)} fill="#fbf0cf" stroke={INK} strokeWidth={Math.max(1.2, h * 0.026)} />
+		</g>
+	);
+};
+
+// ---------- 2a zoom-out recall (visual only, revision 6): bases, helix, nucleosomes, fibre, chromosome ----------
+const ZOOM: {p: BPlate; label: string}[] = [
+	{p: P_ZOOM.bases, label: 'bases, paired'},
+	{p: P_ZOOM.helix, label: 'the double helix'},
+	{p: P_ZOOM.nucleosomes, label: 'wound around proteins'},
+	{p: P_ZOOM.fibre, label: 'coiled into a fibre'},
+	{p: P_ZOOM.chromosome, label: 'packed: a chromosome'},
+];
+const ZC: [number, number] = [560, 540];
+/** Fit a plate inside maxW x maxH around ZC. */
+const zfit = (p: BPlate, maxW = 440, maxH = 520) => {
+	const k = Math.min(maxW / p.box[2], maxH / p.box[3]);
+	return {w: p.box[2] * k, h: p.box[3] * k};
+};
+const ZoomRecall: React.FC<{at: number[]}> = ({at}) => {
+	const f = useCurrentFrame();
+	const T = 22;
+	return (
+		<>
+			<Overlay>
+				{ZOOM.map((z, i) => {
+					const inP = i === 0 ? prog(f, at[0], 14) : prog(f, at[i], T);
+					const outP = i < ZOOM.length - 1 ? prog(f, at[i + 1], T) : 0;
+					const o = inP * (1 - outP);
+					if (o <= 0.01) return null;
+					// zooming out: each picture arrives large and settles, then shrinks away into the next
+					const k = (i === 0 ? 1 : lerp(1.7, 1, inP)) * lerp(1, 0.28, outP);
+					const {w, h} = zfit(z.p, i === 2 ? 520 : 440);
+					return (
+						<g key={i} transform={`translate(${ZC[0]},${ZC[1]}) scale(${k}) translate(${-ZC[0]},${-ZC[1]})`}>
+							<PImg p={z.p} x={ZC[0] - w / 2} y={ZC[1] - h / 2} w={w} h={h} o={o} />
+						</g>
+					);
+				})}
+			</Overlay>
+			{ZOOM.map((z, i) => {
+				const o = prog(f, at[i] + 8, 12) * (i < ZOOM.length - 1 ? 1 - prog(f, at[i + 1], 10) : 1);
+				return o > 0.01 ? <div key={i} style={{position: 'absolute', left: ZC[0] - 260, top: 820, width: 520, textAlign: 'center', opacity: o, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: INK_SOFT}}>{z.label}</div> : null;
+			})}
+			{/* step dots: where we are in the zoom */}
+			<Overlay>
+				{ZOOM.map((_, i) => <circle key={i} cx={ZC[0] - 64 + i * 32} cy={890} r={8} fill={f >= at[i] ? AMBER : '#fffdf8'} stroke={AMBER_INK} strokeWidth={3} opacity={prog(f, at[0], 14)} />)}
+			</Overlay>
+		</>
+	);
+};
 export const SceneChromosomeSets: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('chromosome-sets'), {
-		dna: 'Your DNA', packed: 'structures called', single: 'a single long', wound: 'wound up', body: 'A human body cell', n46: '46', sets: 'two sets', oneSet: 'one set from',
+		dna: 'Your DNA', packed: 'structures called', eachOne: 'each one', single: 'a single long', wound: 'wound up', body: 'A human body cell', n46: '46', sets: 'two sets', oneSet: 'one set from',
 		parent: 'each parent', aset: 'A set is', kind: 'each kind', twice: 'every kind', xy: 'apart from', two: 'the two of one', homol: 'homologous pair', from: 'one from each',
 	});
-	// stage 1: DNA thread packs into a chromosome
+	// stage 1 (revision 6): visual-only zoom-out recall over the first sentence, on its existing cues
 	const s1 = vis(f, 0, c.body - 6, 12);
-	const pack = prog(f, c.packed, 54);
-	const N = 90;
-	const thread = useMemo(() => {
-		const r = rng(21);
-		return Array.from({length: N + 1}, (_, i) => {
-			const s = i / N;
-			const sx = 260 + s * 1360, sy = 560 + Math.sin(s * 30) * 30 + (r() - 0.5) * 6;
-			const cyc = Math.floor(s * 12), within = s * 12 - cyc;
-			const zx = 640 + Math.sin(within * Math.PI * 2) * 46, zy = 300 + s * 480;
-			return {sx, sy, zx, zy};
-		});
-	}, []);
-	const tp = thread.map(t => `${lerp(t.sx, t.zx, pack).toFixed(1)},${lerp(t.sy, t.zy, pack).toFixed(1)}`);
-	const wound = prog(f, c.wound, 30);
-	const capsO = prog(f, c.packed + 40, 20);
+	const zoomAt = [c.dna, c.packed, c.eachOne, c.single, c.wound];
 	// stage 2: two rows of 23
 	const rowsO = prog(f, c.body - 4, 14);
 	const plumN = Math.min(23, Math.max(0, Math.floor((f - c.n46) / 2.2)));
@@ -178,19 +217,11 @@ export const SceneChromosomeSets: React.FC = () => {
 			<Heading items={[[0, 'Chromosomes, sets and pairs']]} size={64} />
 			{/* stage 1 */}
 			<div style={{opacity: s1, position: 'absolute', inset: 0}}>
-				<Overlay>
-					<rect x={570} y={262} width={140} height={556} rx={70} fill="#efe6f4" stroke={INK} strokeWidth={6} opacity={capsO} />
-					<polyline points={tp.join(' ')} fill="none" stroke={INK_SOFT} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
-					{Array.from({length: 12}, (_, k) => {
-						const t = thread[Math.round(((k + 0.5) / 12) * N)];
-						return <circle key={k} cx={lerp(t.sx, t.zx, pack)} cy={lerp(t.sy, t.zy, pack)} r={14 * wound} fill="#b48ad2" stroke="#6c3f92" strokeWidth={3} />;
-					})}
-					<circle cx={640} cy={540} r={18 * capsO} fill="#fbf0cf" stroke={INK} strokeWidth={4} />
-				</Overlay>
-				<Hand at={c.dna} out={c.packed - 4} x={300} y={450} size={58}>DNA: a very long thread</Hand>
-				<Hand at={c.packed + 56} x={820} y={320} size={64}>a chromosome</Hand>
-				<Hand at={c.single} x={820} y={470} size={56} w={760} color={INK}>one long DNA molecule</Hand>
-				<Hand at={c.wound} x={820} y={580} size={56} w={760} color={INK}>wound up with proteins</Hand>
+				<ZoomRecall at={zoomAt} />
+				<Hand at={c.dna + 6} out={c.wound + 6} x={880} y={320} size={58}>DNA: a very long thread</Hand>
+				<Hand at={c.wound + 24} x={880} y={320} size={64}>a chromosome</Hand>
+				<Hand at={c.single} x={880} y={470} size={56} w={760} color={INK}>one long DNA molecule</Hand>
+				<Hand at={c.wound} x={880} y={580} size={56} w={760} color={INK}>wound up with proteins</Hand>
 			</div>
 			{/* stage 2 */}
 			<div style={{opacity: rowsO, position: 'absolute', inset: 0}}>
@@ -221,7 +252,7 @@ export const SceneChromosomeSets: React.FC = () => {
 			{/* stage 3 */}
 			<div style={{opacity: st3, position: 'absolute', inset: 0}}>
 				<Overlay>
-					{four.map(([x, y], i) => <Chrom key={i} x={x} y={y} kind={CH[i].kind} color={CH[i].color} dup={0} s={1.2} />)}
+					{four.map(([x, y], i) => <Chrom key={i} x={x} y={y} kind={CH[i].kind} color={CH[i].color} dup={0} coil={1} s={1.2} />)}
 					<Scribble cx={640} cy={550} rx={74} ry={256} at={c.two + 4} color={AMBER_INK} seed={4} />
 					<DrawPath d="M714,550 L760,550" at={c.homol} dur={10} color={AMBER_INK} width={4} />
 					<Scribble cx={1360} cy={550} rx={74} ry={256} at={c.homol + 24} color={AMBER_INK} seed={7} />

@@ -3,7 +3,7 @@ import {Easing, interpolate, useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Arrow, Bracket, BoardG, CellBody, Cell, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, LP_Ab, LT_aB, MC, MStrip, Overlay, PAIRED, PenTap, Pill, PP, Pole,
-	POLE, prog, plateXY, S, Scribble, SplitCells, STRIP_SCROLL, SZ, Strand, TT, clamp01, discY, geomY, vis, SCATTER, CELL_FILL, CELL_LINE, letterFor, Coin,
+	POLE, prog, plateXY, S, Scribble, SplitCells, STRIP_SCROLL, SZ, Strand, TT, clamp01, discY, geomY, vis, SCATTER, CELL_FILL, CELL_LINE, letterFor, Coin, PCell, poleDX, MiniBar,
 } from './shared';
 import {ZoomG} from './sB';
 import {DCell} from './sD';
@@ -22,12 +22,8 @@ const MetaBoard: React.FC<{cx: number; cy: number; k?: number; o?: number; o1: n
 	};
 	return (
 		<BoardG cx={cx} cy={cy} k={k} o={o}>
-			<CellBody cx={0} cy={0} />
+			<CellBody cx={0} cy={0} spindle={poles} />
 			<Envelope cx={0} cy={0} r={262} p={env} />
-			{poles > 0 ? <>
-				<g transform={`translate(${-POLE},0) scale(${poles})`}><circle r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle r={6} fill={AMBER_INK} /></g>
-				<g transform={`translate(${POLE},0) scale(${poles})`}><circle r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle r={6} fill={AMBER_INK} /></g>
-			</> : null}
 			{[0, 1, 2, 3].map(i => {
 				const [x, y] = pos(i);
 				const left = x < 0 || (Math.abs(x) < 1 && (i === 0 || i === 2));
@@ -59,8 +55,8 @@ export const SceneMetaphaseOne: React.FC = () => {
 					<MetaBoardInner line={line} env={prog(f, c.brk, 52)} fib={0.5 * prog(f, c.brk + 36, 56) + 0.5 * prog(f, c.line + 10, 50)} poles={prog(f, c.brk + 34, 14)} otherO={1 - 0.85 * zp} />
 				</ZoomG>
 			</Overlay>
-			<Pill at={c.across + 40} x={CX + 100} y={CY - 100} size={38}>one homologous pair</Pill>
-			<Pill at={c.across + 46} x={CX + 100} y={CY + 138} size={38}>one homologous pair</Pill>
+			<Pill at={c.across + 40} x={CX + 140} y={CY - 100} size={38}>one homologous pair</Pill>
+			<Pill at={c.across + 46} x={CX + 140} y={CY + 138} size={38}>one homologous pair</Pill>
 			<MStrip at={[-100, c.meta, null, null, null, null, null, null]} active={f >= c.meta ? 1 : 0} />
 		</>
 	);
@@ -74,12 +70,8 @@ const MetaBoardInner: React.FC<{line: number; env: number; fib: number; poles: n
 	};
 	return (
 		<>
-			<CellBody />
+			<CellBody spindle={poles} />
 			<Envelope r={262} p={env} />
-			{poles > 0 ? <>
-				<g transform={`translate(${CX - POLE},${CY}) scale(${poles})`}><circle r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle r={6} fill={AMBER_INK} /></g>
-				<g transform={`translate(${CX + POLE},${CY}) scale(${poles})`}><circle r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle r={6} fill={AMBER_INK} /></g>
-			</> : null}
 			{[0, 1, 2, 3].map(i => {
 				const [x, y] = pos(i);
 				const left = i === 0 || i === 2;
@@ -127,7 +119,7 @@ export const SceneAssortment: React.FC = () => {
 const Coin1: React.FC<{f: number; x: number; y: number; from: number; to: number; o: number}> = ({x, y, from, to, o}) => <Coin x={x} y={y} from={from} to={to} face="P" o={o} />;
 
 // ---------- 7. Anaphase I and telophase I ----------
-const END: [number, number][] = [[-340, -40], [340, -40], [-250, 50], [250, 50]];
+const END: [number, number][] = [[-250, -40], [250, -40], [-160, 50], [160, 50]]; // revision 5: was +-340 and +-250 (poles now on the painted centrosomes)
 const FIN: [number, number][] = [[-280, -40], [280, -40], [-190, 50], [190, 50]];
 export const SceneFirstDivision: React.FC = () => {
 	const f = useCurrentFrame();
@@ -150,11 +142,11 @@ export const SceneFirstDivision: React.FC = () => {
 		<>
 			<Heading items={[[0, 'Meiosis I: the first division']]} size={60} />
 			<Overlay>
-				{pinch < 0.02 ? <CellBody /> : <SplitCells d={d} />}
+				{pinch < 0.02 ? <CellBody spindle={fibO} /> : <SplitCells d={d} />}
 				{/* ghost parent for the halving bracket */}
 				<g opacity={prog(f, c.half, 16)}>
 					<Cell cx={CX} cy={240} rx={84} ry={58} />
-					{[-30, -10, 10, 30].map((xx, i) => <rect key={i} x={CX + xx - 3} y={216} width={6} height={50} rx={3} fill={i % 2 ? '#2b9a8e' : '#a8508f'} opacity={0.6} />)}
+					{[-30, -10, 10, 30].map((xx, i) => <MiniBar key={i} x={CX + xx} y={241} h={46} w={8} col={i % 2 ? 'T' : 'P'} o={0.85} />)}
 					<text x={CX + 112} y={256} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38}} fill={INK_SOFT}>parent: 4</text>
 					<Arrow x1={CX - 70} y1={288} x2={CX - 235} y2={352} at={c.half} color={AMBER_INK} width={5} />
 					<Arrow x1={CX + 70} y1={288} x2={CX + 235} y2={352} at={c.half + 6} color={AMBER_INK} width={5} />
@@ -162,20 +154,18 @@ export const SceneFirstDivision: React.FC = () => {
 				{/* poles and fibres */}
 				{pinch < 0.5 ? <>
 					<g opacity={fibO}>
-						<circle cx={CX - POLE} cy={CY} r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle cx={CX - POLE} cy={CY} r={6} fill={AMBER_INK} />
-						<circle cx={CX + POLE} cy={CY} r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle cx={CX + POLE} cy={CY} r={6} fill={AMBER_INK} />
 						{[0, 1, 2, 3].map(i => <Fibre key={i} x1={CX + (i % 2 === 0 ? -POLE : POLE)} y1={CY} x2={pos(i)[0] + (i % 2 === 0 ? -3 : 3)} y2={discY(pos(i)[1], KIND[i])} p={1} />)}
 					</g>
 				</> : null}
 				{[0, 1, 2, 3].map(i => <MC key={i} x={pos(i)[0]} y={pos(i)[1]} kind={KIND[i]} a={SPEC[i][0]} b={SPEC[i][1]} />)}
 				{/* one of each kind: one set at each end */}
 				<g opacity={vis(f, c.each, c.telo - 20, 12)}>
-					<Bracket x1={CX - 380} x2={CX - 212} y={CY + 168} at={c.kind} color={AMBER_INK} />
-					<Bracket x1={CX + 212} x2={CX + 380} y={CY + 168} at={c.kind + 6} color={AMBER_INK} />
+					<Bracket x1={CX - 300} x2={CX - 126} y={CY + 168} at={c.kind} color={AMBER_INK} />
+					<Bracket x1={CX + 126} x2={CX + 300} y={CY + 168} at={c.kind + 6} color={AMBER_INK} />
 				</g>
 								<g opacity={vis(f, c.set, c.telo - 12, 10)}>
-					<Scribble cx={CX - 296} cy={CY} rx={130} ry={150} at={c.set} color={AMBER_INK} seed={4} />
-					<Scribble cx={CX + 296} cy={CY} rx={130} ry={150} at={c.set + 10} color={AMBER_INK} seed={9} />
+					<Scribble cx={CX - 212} cy={CY} rx={120} ry={180} at={c.set} color={AMBER_INK} seed={4} />
+					<Scribble cx={CX + 212} cy={CY} rx={120} ry={180} at={c.set + 10} color={AMBER_INK} seed={9} />
 				</g>
 				{/* the centromere stays whole */}
 				<g opacity={vis(f, c.dont + 22, c.telo - 6, 10)}><Scribble cx={pos(0)[0]} cy={discY(pos(0)[1], 'L')} rx={30} ry={30} at={c.dont + 22} color={AMBER_INK} seed={6} /></g>
@@ -183,14 +173,14 @@ export const SceneFirstDivision: React.FC = () => {
 				<PenTap pts={penR} at={[c.two + 60, c.two + 78]} badge={[-40, -30]} showPen={false} />
 			</Overlay>
 			<Pill at={c.dont + 4} out={c.each + 10} x={CX - 400} y={168} size={42}>centromere stays whole: chromatids not separated</Pill>
-			<Hand at={c.kind + 12} out={c.telo - 10} x={CX - 190} y={CY + 150} size={30} w={380} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>one of each kind at each end</span></Hand>
+			<Hand at={c.kind + 12} out={c.telo - 10} x={CX - 190} y={CY + 196} size={30} w={380} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>one of each kind at each end</span></Hand>
 			<Pill at={c.set + 8} out={c.telo - 10} x={CX - 440} y={CY - 250} size={40}>one set</Pill>
 			<Pill at={c.set + 16} out={c.telo - 10} x={CX + 330} y={CY - 250} size={40}>one set</Pill>
 			<Pill at={c.telo + 24} out={c.fin + 20} x={CX - 130} y={168} size={42}>cytokinesis</Pill>
-			<Hand at={c.two + 8} x={CX - 235 - 220} y={CY + 192} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes (count the centromeres)</span></Hand>
-			<Hand at={c.two + 56} x={CX + 235 - 220} y={CY + 192} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes (count the centromeres)</span></Hand>
-			<GreyTag at={c.two + 30} x={CX - 235 - 80} y={CY + 266} text="4 chromatids" size={26} />
-			<GreyTag at={c.two + 66} x={CX + 235 - 80} y={CY + 266} text="4 chromatids" size={26} />
+			<Hand at={c.two + 8} x={CX - 235 - 220} y={CY + 208} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes (count the centromeres)</span></Hand>
+			<Hand at={c.two + 56} x={CX + 235 - 220} y={CY + 208} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes (count the centromeres)</span></Hand>
+			<GreyTag at={c.two + 30} x={CX - 235 - 80} y={CY + 284} text="4 chromatids" size={26} />
+			<GreyTag at={c.two + 66} x={CX + 235 - 80} y={CY + 284} text="4 chromatids" size={26} />
 			<Hand at={c.half + 6} x={1300} y={176} size={42} w={560} color={AMBER_INK}>half the number: haploid (each chromosome still doubled)</Hand>
 			<MStrip at={[-100, -100, c.ana, c.telo, null, null, null, null]} active={f >= c.telo ? 3 : 2} />
 		</>
@@ -216,6 +206,7 @@ const Meio2Cell: React.FC<{cx: number; cy: number; k: number; rx: number; ry: nu
 	const xl = cl[0] * (1 - apart), xs = cs[0] * (1 - apart);
 	const sepLv = split > 0 ? sepL : 0, sepSv = split > 0 ? sepS : 0;
 	const fibO = 1;
+	const pl = poleDX(rx);
 	if (pinch >= 1) {
 				const dcx = (side: number) => lerp(cx + side * 210 * k, rowX[side < 0 ? 0 : 1], row);
 		const dcy = lerp(cy, ROW_Y, row);
@@ -230,14 +221,12 @@ const Meio2Cell: React.FC<{cx: number; cy: number; k: number; rx: number; ry: nu
 	}
 	return (
 		<g transform={`translate(${cx},${cy}) scale(${k})`}>
-			{pinch > 0.01 ? <SplitCells cx={0} cy={0} rx={rx} ry={ry} d={lerp(0, 210, pinch)} /> : <ellipse cx={0} cy={0} rx={rx} ry={ry} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={6} />}
+			{pinch > 0.01 ? <SplitCells cx={0} cy={0} rx={rx} ry={ry} d={lerp(0, 210, pinch)} /> : <PCell cx={0} cy={0} rx={rx} ry={ry} spindle={poles} />}
 			{poles > 0 && pinch < 0.3 ? <>
-				<g transform={`translate(${-360},0) scale(${poles})`}><circle r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle r={6} fill={AMBER_INK} /></g>
-				<g transform={`translate(${360},0) scale(${poles})`}><circle r={15} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} /><circle r={6} fill={AMBER_INK} /></g>
-				<Fibre x1={-360} y1={0} x2={-(15 + sepLv) * SZ + xl} y2={discY(yl, 'L')} p={fib} o={fibO} />
-				<Fibre x1={360} y1={0} x2={(15 + sepLv) * SZ + xl} y2={discY(yl, 'L')} p={fib} o={fibO} />
-				<Fibre x1={-360} y1={0} x2={-(15 + sepSv) * SZ + xs} y2={discY(ys, 'S')} p={fib} o={fibO} />
-				<Fibre x1={360} y1={0} x2={(15 + sepSv) * SZ + xs} y2={discY(ys, 'S')} p={fib} o={fibO} />
+				<Fibre x1={-pl} y1={0} x2={-(15 + sepLv) * SZ + xl} y2={discY(yl, 'L')} p={fib} o={fibO} />
+				<Fibre x1={pl} y1={0} x2={(15 + sepLv) * SZ + xl} y2={discY(yl, 'L')} p={fib} o={fibO} />
+				<Fibre x1={-pl} y1={0} x2={-(15 + sepSv) * SZ + xs} y2={discY(ys, 'S')} p={fib} o={fibO} />
+				<Fibre x1={pl} y1={0} x2={(15 + sepSv) * SZ + xs} y2={discY(ys, 'S')} p={fib} o={fibO} />
 			</> : null}
 			<MC x={xl} y={yl} kind="L" a={str.la} b={str.lb} sep={sepLv} />
 			<MC x={xs} y={ys} kind="S" a={str.sa} b={str.sb} sep={sepSv} />

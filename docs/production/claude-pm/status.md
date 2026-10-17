@@ -38,6 +38,14 @@ Updated by Claude. Codex appends hand-ins at the bottom.
 
 ## Codex hand-ins
 
+### Brief 43: C7 tug-of-war plates (16 October 2026)
+
+Created `public/assets/chemistry/c7-tug-left-v1.png`, `c7-tug-right-v1.png` and `c7-tug-rope-flag-v1.png` as transparent, separately movable 3000 x 1000 plates. The reference was the existing combined C7 tug scene. Saved prompts, tool, source paths, canvas measurements and SHA-256 hashes in `docs/production/claude-pm/assets/brief43-provenance.json`; checkerboard, cream and 200 px composite views are in `docs/production/claude-pm/assets/brief43-qa/`. I inspected the composite and raised the rope layer to meet both figures' hands. No scene code changed. Nothing remains unfinished. Question for Claude: none.
+
+### Brief 51: website video manifest and embed plan (16 October 2026)
+
+Created `docs/production/programme/site-video-manifest.json` and `docs/production/programme/website-video-plan.md`. Mapped all 19 published videos in upload waves 1 to 4 to existing Year 12 Module 5 site pages and exact section headings. Verified unique video IDs, page existence, heading text and published caption status. The plan records the current static page structure, a click-to-load YouTube embed, and a later self-hosting estimate. The site repository was read-only. No videos lacked a matching site page. The three rendered videos in brief 28j are not in the manifest because they have no published IDs yet. Question for Claude: none.
+
 ### Brief 28b: B2b YouTube upload (14 October 2026)
 
 Published flowering plant reproduction B2b at https://youtu.be/j2fxl5xvDwE (9:17). Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with the MP4 and SRT hashes, full description, syllabus quote, Public settings, timed English (Australia) captions, frame 2 thumbnail and playlist position 3. Studio showed HD complete, no notices and no audio warning. The public Biology playlist reloads in manual order B1, B2a, B2b, B2c, mould, B4. The 2017 Biology quote matches the official syllabus extract. Nothing in this brief remains unfinished. Question for Claude: Brief 28b did not request a ledger change, so the B2b row in `coverage-ledger.md` still says pending render.
@@ -577,3 +585,57 @@ The colourimeter, geology and clinical plates are art for design use, not scient
 
 
 Briefs 38 and 39 local media handoff: `out/archives/brief38-39-plates-2026-10-16.zip` contains all 45 plate PNGs and 101 QA PNGs. ZIP CRC and all member hashes passed. See `docs/production/claude-pm/assets/brief38-39-media-checkpoint.json`. The archive has not been uploaded, so transfer it before reviewing these assets on another computer.
+
+### Brief 44: Module 7 and 8 site-lesson extracts (16 October 2026)
+
+Created 81 lesson extracts: `docs/production/claude-pm/site-extracts/chem-m7-l01.md` to `chem-m7-l23.md`, `chem-m8-l01.md` to `chem-m8-l16.md`, `bio-m7-l01.md` to `bio-m7-l21.md`, and `bio-m8-l01.md` to `bio-m8-l21.md`. Created the subject tables in `site-extracts/m7-index.md` and `site-extracts/m8-index.md`, plus `site-corrections-m7.md` and `site-corrections-m8.md`. Read the requested Chemistry Module 7 and Module 8 inventories. The site repository was read-only. No verified scientific corrections were recorded. All 81 extracts contain the nine requested headings, point to an existing source page, contain no em dash, and are under 600 words. Nothing remains unfinished. Question for Claude: none.
+
+### Brief 28j: B6a, G03c and G03d YouTube uploads (16 October 2026)
+
+Uploaded the three approved MP4s to HSCScience after checking each exact SHA256. All are Public, in the matching Year 12 Module 5 playlist, with Education category, English (Australia), not made for kids, AI disclosure Yes, and timed SRT captions. Studio showed no copyright issues or notices and HD processing completed. The public playlists use Manual sorting: B6a follows B4 at Biology position 9; G03c and G03d follow C9 at Chemistry positions 12 and 13. Seven scene-timed chapters were saved in each description. End screens were skipped after checking the local MP4s 15 seconds before the end; all three show key notes there, which end-screen cards would cover.
+
+- B6a: https://youtu.be/2vsAqgI-1NI (9:36). Corrected its draft syllabus quotation against the 2017 Biology text before upload. Selected an illustrated cell frame as the thumbnail.
+- G03c: https://youtu.be/UPoHGWWm9MA (7:03). Selected auto-generated frame 2 with the worked ICE table.
+- G03d: https://youtu.be/wSSh97iXkio (8:20). Selected auto-generated frame 1 with the worked problem and vessel.
+
+Full hashes, caption paths and hashes, descriptions, chapter lists, playlist positions and audit notes are in `docs/production/claude-pm/youtube/wave4-uploads.json`. The site video manifest now maps 22 published videos. The external syllabus links in YouTube descriptions remain plain text pending YouTube channel verification.
+
+Brief 43 media handoff: `out/archives/brief43-tug-plates-2026-10-16.zip` contains the three transparent tug layers and four QA images. ZIP CRC passed; SHA256 is `b83a740daa53c9d74cf7a8efc1e8d7729d9ed5a2ea1a232743a49b974c4931ac`. The archive has not been uploaded, so transfer it before reviewing the plates on another computer.
+
+### Brief 53: P02 and C10 apparatus plates (16 October 2026)
+
+Created all seven requested transparent chemistry plates in `public/assets/chemistry/`: blank cuvette, Fe and SCN reagent bottles, graduated pipette with filler, stoppered volumetric flask, empty colourimeter, and ammonia bottle. Each PNG is 2000 x 2000 with a real alpha channel. The visible artwork has at least 8% canvas margin. The cuvette and colourimeter register against their original plates to within a few pixels at full size. Provenance is in `docs/production/claude-pm/assets/brief53-provenance.json`; the contact sheet and original/new overlays are in `docs/production/claude-pm/assets/brief53-qa/`. No remaining item or question for Claude.
+
+### Brief 46: Module 6 pre-design packs (16 October 2026)
+
+Created 32 packs, 16 Chemistry and 16 Biology, plus `docs/production/claude-pm/pre-design/m6-index.md`. They cover the 38 site lessons through adjacent-topic consolidation. All packs have sections 1 to 7, are under 1,500 words, and passed relative-link and em-dash checks. A root spot check caught and resolved shortened syllabus cells in the index and merged numerical bullets. A new Chemistry L17 equivalence-pH error is documented in the affected pack and `docs/production/claude-pm/site-corrections-m6.md`. No remaining pack work or question for Claude.
+
+### Brief 50: HSC question-type banks (16 October 2026)
+
+Created seven banks in `docs/production/claude-pm/research/`: `question-types-chem-m6.md`, `question-types-chem-m7.md`, `question-types-chem-m8.md`, `question-types-bio-m5.md`, `question-types-bio-m6.md`, `question-types-bio-m7.md`, and `question-types-bio-m8.md`. Each ranks recurring Section II types using confirmed 2019 to 2025 NESA question references, gives a method and marker-reported mistakes, and maps site lessons. Counts are explicitly lower bounds because multiple-choice items were not classified. Root spot checked the Chemistry M6 bank. No remaining bank work or question for Claude.
+
+### Brief 45: official NSW syllabus ledgers (16 October 2026)
+
+Created six JSON content-point ledgers in `docs/production/programme/syllabus/`: 2017 Year 12 Biology and Chemistry Modules 5 to 8, plus 2025 Year 11 and Year 12 Biology and Chemistry. Each point has official source URL and exact text. `README.md` explains extraction and counts, `timeline.md` records implementation and HSC dates, and `physics-maths-overview.md` scopes those courses, including verified 2017 Mathematics point counts. `generate_ledgers.py` rebuilds the ledgers. Root spot checked files and timeline. Before public page citation, check 2017 DOCX page markers in Word; 2025 online pages have no page numbers. No question for Claude.
+
+### Brief 54: chromosome and cell-division plates (16 October 2026)
+
+Created all 15 requested Biology plates in `public/assets/biology/`: single and duplicated chromosomes with pink and teal variants, a homologous pair, three empty division-cell states, and the five-step DNA-to-chromosome zoom. The zoom chromosome repeats the duplicated plate so its appearance matches exactly. All PNGs are 2000 x 2000 with real alpha and at least 8% visible margin. `docs/production/claude-pm/assets/brief54-provenance.json` records sources, while `brief54-qa/` has a checkerboard sheet at 200 px plus colour, cell and zoom strips. I visually checked those views. No remaining item or question for Claude.
+
+### Brief 49: Year 11 new-syllabus scoping (16 October 2026)
+
+Wrote `docs/production/programme/year11-scoping.md`, `site-corrections-y11.md`, and the repeatable `build-year11-scoping.py`. The inventory covers 75 Biology 2025, 75 draft Chemistry 2025, and 66 live Chemistry 2017 site lessons. Created 216 matching short extracts in `docs/production/claude-pm/site-extracts/`. Root spot check found truncated sentences and noisy punctuation; the extractor was corrected and all extracts regenerated. They are under 600 words without ellipses or em dashes. Chemistry 2025 FA2 and FA3 lack structured syllabus metadata, so their point links are candidates for a lesson-body audit. No confirmed lesson-body science errors from this scoping pass. No question for Claude.
+
+### Brief 48: Biology Module 6 plates (16 October 2026)
+
+Created 23 transparent 2000 px plates in `public/assets/biology/`, named `m6-*-v1.png`, including two process pairs. Provenance is in `docs/production/claude-pm/assets/brief48-provenance.json`, the complete plate list is in `brief48-hand-in.md`, and visual QA is in `brief48-qa/`. Root inspected the contact sheet. All plates have at least 10% clear margin. Optional cigarette, albinism, flower-colour and GM salmon examples were omitted because the Module 6 site lessons do not use them. The seed-bank vault is concept art; the site specifically mentions Frozen Zoo. No remaining item or question for Claude.
+
+### Brief 47: Chemistry Module 6 plates (16 October 2026)
+
+Created 28 transparent plates in `public/assets/chemistry/`, named `m6-*-v1.png`. Provenance and QA are in `docs/production/claude-pm/assets/brief47-provenance.json` and `brief47-qa/`. All plates passed size, alpha, margin and contact-sheet checks. The three process pairs initially showed glass drift in overlay checks. The end plates were repaired using their generated changed liquid or bubbles within documented masks while retaining exact start pixels elsewhere. Independent RGBA comparison found zero differences outside the allowed masks, and refreshed overlays were inspected by root. Bee/wasp sting was omitted because the site pages do not use it. No remaining item or question for Claude.
+
+Briefs 47, 48, 53 and 54 media handoff: `out/archives/brief47-48-53-54-plates-2026-10-16.zip` contains 213 plate, QA and provenance files. ZIP CRC and member SHA256 checks passed. Archive SHA256 is `6a7f022abff115eee9ecfa9e82a8ec02a4de78d3378902d8f0024e305c915581`; details are in `docs/production/claude-pm/assets/brief47-48-53-54-media-checkpoint.json`. The archive is local and has not been uploaded. Transfer it before reviewing these ignored media files on another computer.
+
+### Brief 52: Physics and Maths video feasibility (16 October 2026)
+
+Wrote `docs/production/programme/physics-maths-feasibility.md`. Counted 701 senior-adventure Physics and Maths pages by year and topic, checked for obvious placeholders, sampled three Physics and three Maths Advanced lessons, mapped existing explainer and read-only legacy capabilities, and checked four public HSC video sources. The report separates page presence from science or syllabus approval and proposes two narrow pilots and the missing shared visual components. No site or scene code changed. No owner decision requested yet.
