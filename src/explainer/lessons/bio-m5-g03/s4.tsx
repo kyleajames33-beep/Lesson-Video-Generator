@@ -184,7 +184,7 @@ export const SceneDecisionG03: React.FC = () => {
 // ---------- 12. Key notes ----------
 const NOTES = notesCheck([
 	'Population data predict group patterns well (risk patterns, carrier frequencies, allele distributions), not one person\'s outcome. Example: about 72 in 100 BRCA1 carriers are estimated to develop breast cancer by age 80.',
-	'A variant raises risk without guaranteeing the phenotype (the working copy must also be lost; other genes, other factors, chance). Higher probability is not certainty; testing negative is not a guarantee.',
+	'A variant raises risk without guaranteeing the phenotype (losing the working copy is a common route; other genes, other factors, chance). Higher probability is not certainty; testing negative is not a guarantee.',
 	'Hardy-Weinberg (recessive condition): affected = q^{2}, so q = square root; p = 1 minus q; carriers = 2pq. E.g. 1 in 2,500 affected gives carriers about 1 in 25.',
 	'It holds for large, randomly mating populations with no selection, migration or mutation. A gap between prediction and data means something is acting. Small populations: chance makes long-range prediction fail.',
 	'Genetic results inform relatives (each child: 1 in 2). Use cautious wording: "suggests", "indicates increased risk", "more likely".',

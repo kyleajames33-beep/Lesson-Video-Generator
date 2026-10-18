@@ -1,0 +1,109 @@
+{
+  "brief": 72,
+  "date": "2026-10-18",
+  "generator": "Built-in imagegen for edit studies and painted blue flame; exact geometry and liquid adjustment finalized from source plates",
+  "style": "Transparent ink and watercolour, no text, labels, numbers, logos, people, hands or faces",
+  "sourceImages": [
+    {
+      "path": "public/assets/chemistry/c3-iron-tube-start-v1.png",
+      "sha256": "97d6cbb5fe2ba93da021aad26e988c1de10d6c78ac4266491fdea63febc89c35",
+      "size": [
+        1280,
+        1792
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        468,
+        209,
+        814,
+        1517
+      ],
+      "alphaCorner": 0
+    },
+    {
+      "path": "public/assets/chemistry/m5x-bunsen-burner-unlit-v1.png",
+      "sha256": "ec6fdd2b1832788b5c896cbef70dc437efb761b35e1dbb2ed8616e0532d4c932",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        301,
+        417,
+        1728,
+        1733
+      ],
+      "alphaCorner": 0
+    }
+  ],
+  "imagegenStudies": [
+    "C:/Users/kygs/.codex/generated_images/01a14d4a-bf1a-7df1-9973-f30f2ac5cb59/exec-e9f27f94-a1c4-4955-b2f6-e31af7a1e1d7.png",
+    "C:/Users/kygs/.codex/generated_images/01a14d4a-bf1a-7df1-9973-f30f2ac5cb59/exec-9fddd96d-81db-444a-80bc-ec837fe02a0c.png"
+  ],
+  "records": [
+    {
+      "path": "public/assets/chemistry/p01-iron-tube-diluted-v2.png",
+      "sha256": "7255625f67c4db71cf03cf9c79d79342eda16d9e56dbd68886d04f8c6912a6f2",
+      "size": [
+        1280,
+        1792
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        468,
+        209,
+        814,
+        1517
+      ],
+      "alphaCorner": 0
+    },
+    {
+      "path": "public/assets/chemistry/p01-bunsen-unlit-v2.png",
+      "sha256": "ec6fdd2b1832788b5c896cbef70dc437efb761b35e1dbb2ed8616e0532d4c932",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        301,
+        417,
+        1728,
+        1733
+      ],
+      "alphaCorner": 0
+    },
+    {
+      "path": "public/assets/chemistry/p01-bunsen-lit-v2.png",
+      "sha256": "d2bb0a750f9f8d15fd7c30157b832a7aaa188597c5e5d4ae60f01c49ed1e0790",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        301,
+        182,
+        1728,
+        1733
+      ],
+      "alphaCorner": 0
+    }
+  ],
+  "methods": {
+    "iron": "Source C3 glass and stand retained. Liquid surface shifted upward by about 12 px within glass; warm liquid RGB blended 5.5% toward white. Hue and apparatus geometry preserved.",
+    "bunsen": "Both final states use identical pixels from the original unlit burner. Lit state adds only the imagegen-painted blue cone flame at the barrel. Air holes are open. The flame is scaled to keep more than 8% canvas margin."
+  },
+  "qaViews": [
+    "docs/production/claude-pm/assets/brief72-qa/bunsen-lit-200px.png",
+    "docs/production/claude-pm/assets/brief72-qa/bunsen-lit-checker.png",
+    "docs/production/claude-pm/assets/brief72-qa/bunsen-unlit-200px.png",
+    "docs/production/claude-pm/assets/brief72-qa/bunsen-unlit-checker.png",
+    "docs/production/claude-pm/assets/brief72-qa/bunsen-unlit-lit-50pct-overlay.png",
+    "docs/production/claude-pm/assets/brief72-qa/iron-diluted-200px.png",
+    "docs/production/claude-pm/assets/brief72-qa/iron-diluted-checker.png",
+    "docs/production/claude-pm/assets/brief72-qa/iron-stock-diluted-50pct-overlay.png"
+  ],
+  "qaSummary": "Checkerboard, cream 200 px, stock tube 50% overlay and Bunsen 50% overlay generated. Review the overlays for position and colour."
+}

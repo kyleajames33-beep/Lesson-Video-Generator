@@ -8,6 +8,7 @@ import {
 	AMBER, AMBER_INK, CPLUM, Fade, GREYT, GREY_INK, GenoTag, GreyTag, HAEM, Heading, INK, INK_SOFT, MORGAN, MORGAN_F2, Overlay, PL10, PSym, PlateB, Punnett, Ring, S,
 	SexChrom, Sx, TEALC, affectedSon, fadeV, lerp, pgeom, prog, pulse,
 } from './shared';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 
 const fmt = (n: number) => n.toLocaleString('en-AU');
 const Jar: React.FC<{x: number; y: number; w: number; h: number; o?: number}> = ({x, y, w, h, o = 1}) => (o <= 0.01 ? null : (
@@ -141,8 +142,8 @@ export const SexBands: React.FC<{x: number; y: number; cell: number; dr: number;
 		<g opacity={p}>
 			<rect x={x + 4} y={y + 4} width={cell - 8} height={2 * cell - 8} rx={10} fill={CPLUM} opacity={0.06} />
 			<rect x={x + cell + 4} y={y + 4} width={cell - 8} height={2 * cell - 8} rx={10} fill={TEALC} opacity={0.06} />
-			<Sx x={G.top(0)[0]} y={G.top(0)[1] - dr - 18} text="daughters" size={32} color={INK} hand anchor="middle" />
-			<Sx x={G.top(1)[0]} y={G.top(1)[1] - dr - 18} text="sons" size={32} color={INK} hand anchor="middle" />
+			<Sx x={G.top(0)[0]} y={G.top(0)[1] - 20} text="daughters" size={32} color={INK} hand anchor="middle" />
+			<Sx x={G.top(1)[0]} y={G.top(1)[1] - 20} text="sons" size={32} color={INK} hand anchor="middle" />
 		</g>
 	);
 };
@@ -166,8 +167,8 @@ export const SceneMorganB10: React.FC = () => {
 				<Sx x={240} y={840} text="red-eyed male" size={32} color={INK} hand anchor="middle" at={K3.cross + 6} />
 				<Sx x={GM.x - 120} y={GM.y - 90} text="father" size={28} color={CPLUM} hand anchor="end" at={K3.gives} />
 				<Sx x={GM.x - 70} y={GM.y + 2 * GM.cell + 50} text="mother" size={28} color={TEALC} hand anchor="middle" at={K3.cross + 10} />
-				<Punnett x={GM.x} y={GM.y} cell={GM.cell} res={MORGAN} top={['X^{R}', 'Y']} side={['X^{R}', 'X^{r}']} gridAt={K3.cross} topAt={K3.gives} sideAt={K3.cross + 10} fillAt={i => fills[i]} discR={GM.dr}
-					icon={(i, x, y) => <PlateB p={MORGAN.cells[i].ph === 'red' ? PL10.flyRed : PL10.flyWhite} cx={x} cy={y + 18} w={64} o={prog(f, i % 2 === 0 ? K3.allred + (i ? 6 : 0) : K3.half + (i === 3 ? 6 : 0), 10)} />} />
+				<PunnettHSC x={GM.x} y={GM.y} cell={GM.cell} res={MORGAN} top={['X^{R}', 'Y']} side={['X^{R}', 'X^{r}']} gridAt={K3.cross} topAt={K3.gives} sideAt={K3.cross + 10} fillAt={i => fills[i]} discR={GM.dr}
+					phen={i => prog(f, i % 2 === 0 ? K3.allred + (i ? 6 : 0) : K3.half + (i === 3 ? 6 : 0), 10)} phenText={i => `${MORGAN.cells[i].ph} eyes`} />
 				<SexBands x={GM.x} y={GM.y} cell={GM.cell} dr={GM.dr} at={K3.every - 4} />
 				{/* ratios by sex, computed */}
 				<Fade at={K3.allred}>
@@ -214,8 +215,7 @@ export const SceneHaemophiliaB10: React.FC = () => {
 				<PSym x={240} y={680} sex="M" aff={false} sz={84} o={prog(f, K4.carrier + 10, 12)} />
 				<GenoTag x={240} y={780} text="X^{H} Y" size={30} o={prog(f, K4.carrier + 14, 12)} />
 				<Sx x={240} y={840} text="unaffected father" size={32} color={INK} hand anchor="middle" at={K4.carrier + 14} />
-				<Punnett x={G.x} y={G.y} cell={G.cell} res={HAEM} top={['X^{H}', 'Y']} side={['X^{H}', 'X^{h}']} gridAt={K4.carrier + 20} topAt={K4.carrier + 24} sideAt={K4.carrier + 26} fillAt={i => fills[i]} discR={G.dr}
-					icon={(i, x, y) => { const c = HAEM.cells[i]; return <PSym x={x} y={y + 14} sex={c.male ? 'M' : 'F'} aff={c.ph === 'affected'} dot={c.ph === 'carrier' ? 1 : 0} sz={44} />; }} />
+				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={HAEM} top={['X^{H}', 'Y']} side={['X^{H}', 'X^{h}']} gridAt={K4.carrier + 20} topAt={K4.carrier + 24} sideAt={K4.carrier + 26} fillAt={i => fills[i]} discR={G.dr} phen />
 				<SexBands x={G.x} y={G.y} cell={G.cell} dr={G.dr} at={K4.carrier + 30} />
 				{/* all children against sons */}
 				<g opacity={allO}><rect x={G.x - 8} y={G.y - 8} width={2 * G.cell + 16} height={2 * G.cell + 16} rx={14} fill="none" stroke={AMBER} strokeWidth={6} /></g>

@@ -9,10 +9,13 @@
  * - Brief 64 (delivered 18 Oct): crystals pink/blue, lit Bunsen, magnesium ribbon and ash (heatproof mat, as the
  *   design; the evaporating-dish ash is not used), clear dropper, faded iron tube with the faint Fe(OH)3 cloud, stopper,
  *   safety glasses, gloves, waste bottle, test tube holder.
- * - Not used: p01-iron-tube-diluted-v1.png. Its liquid reads deeper and more salmon than the stock tube (PIL mean
- *   #f7c3a6 against #f0d4c1), the wrong way for "very slightly paler", so tube 5 is the stock plate with a coded pale
- *   wash over the liquid (DilWash in parts.tsx). The unlit Bunsen is not used (its base is drawn at a different scale
- *   from the lit one, so the two cannot crossfade); the lit burner fades out instead.
+ * - Brief 72 (wired 18 Oct, provenance docs/production/claude-pm/assets/brief72-provenance.json): tube 5 is
+ *   p01-iron-tube-diluted-v2.png (the C3 stock tube repainted with the level a hair higher and the liquid blended 5.5%
+ *   to white; liquid mean #f2dac8 against the stock #f2d8c5), on the C3 crop, replacing the coded pale wash. The Bunsen
+ *   is the aligned pair p01-bunsen-unlit-v2.png / p01-bunsen-lit-v2.png (identical burner pixels; the lit one adds the
+ *   flame), drawn on their union box so lighting it is a crossfade. Alpha boxes (alpha > 20, measured 18 Oct): diluted
+ *   [468, 209, 814, 1517] (inside the C3 crop); unlit [647, 428, 1354, 1725]; lit [647, 202, 1354, 1725]; flame centre x
+ *   999. Retired: p01-iron-tube-diluted-v1.png (read deeper, not paler) and m5x-bunsen-burner-v1.png (no unlit twin).
  * - Reused: C3 iron and cobalt tubes, C9 NO2 tubes, C4a syringe barrel and plunger (one canvas, so overlaying them
  *   assembles the syringe), m6 white tile, beaker, wash bottle, m5x Fe and SCN bottles (coded label text), m5x
  *   colourimeter, c9 ice cube. The coded C3 thermometer replaces the painted c8 one because it must fall for the ice
@@ -27,6 +30,7 @@ export const IRON = {
 	start: mk('c3-iron-tube-start-v1.png', [1280, 1792], IRON_B),
 	deep: mk('c3-iron-tube-deep-v1.png', [1280, 1792], IRON_B),
 	faded: mk('p01-iron-tube-faded-ppt-v1.png', [1280, 1792], IRON_B),
+	dil: mk('p01-iron-tube-diluted-v2.png', [1280, 1792], IRON_B),
 };
 const CO_B: [number, number, number, number] = [300, 185, 982, 1570];
 export const COB = {
@@ -40,7 +44,11 @@ const CRYS_B: [number, number, number, number] = [399, 194, 1698, 1804];
 export const CRYS = {pink: mk('p01-cocl2-crystals-pink-v1.png', [2000, 2000], CRYS_B), blue: mk('p01-cocl2-crystals-blue-v1.png', [2000, 2000], CRYS_B)};
 const MG_B: [number, number, number, number] = [209, 636, 1802, 1591];
 export const MG = {ribbon: mk('p01-mg-ribbon-v1.png', [2000, 2000], MG_B), ash: mk('p01-mgo-ash-v1.png', [2000, 2000], MG_B)};
-export const BURNER = mk('m5x-bunsen-burner-v1.png', [2000, 2000], [687, 242, 1313, 1733]);
+/** Unlit and lit Bunsen share one canvas and one (union) box; the top of the box is the lit flame's tip. */
+const BUN_B: [number, number, number, number] = [647, 202, 1354, 1725];
+export const BUNSEN = {unlit: mk('p01-bunsen-unlit-v2.png', [2000, 2000], BUN_B), lit: mk('p01-bunsen-lit-v2.png', [2000, 2000], BUN_B)};
+/** Native x of the barrel and flame centre on both Bunsen plates. */
+export const BUNSEN_CX = 999;
 export const DROPPER = mk('m5x-dropper-clear-v1.png', [2000, 2000], [849, 328, 1151, 1672]);
 export const STOPPER = mk('m5x-stopper-v1.png', [2000, 2000], [572, 617, 1433, 1389]);
 export const GLASSES = mk('m5x-safety-glasses-v1.png', [2000, 2000], [215, 637, 1787, 1408]);
@@ -59,7 +67,7 @@ const SYR_B: [number, number, number, number] = [345, 368, 1833, 663];
 export const SYR_BARREL = mk('c4a-syringe-barrel-v1.png', [2062, 1031], SYR_B);
 export const SYR_PLUNGER = mk('c4a-syringe-plunger-v1.png', [2062, 1031], SYR_B);
 
-const LIST: PDef[] = [...Object.values(IRON), ...Object.values(COB), ...Object.values(NO2), ...Object.values(CRYS), ...Object.values(MG), BURNER, DROPPER, STOPPER, GLASSES, GLOVES, WASTE, HOLDER, TILE, BEAKER, WASH, BOTTLE_FE, BOTTLE_SCN, COLOURIMETER, ICECUBE, SYR_BARREL, SYR_PLUNGER];
+const LIST: PDef[] = [...Object.values(IRON), ...Object.values(COB), ...Object.values(NO2), ...Object.values(CRYS), ...Object.values(MG), ...Object.values(BUNSEN), DROPPER, STOPPER, GLASSES, GLOVES, WASTE, HOLDER, TILE, BEAKER, WASH, BOTTLE_FE, BOTTLE_SCN, COLOURIMETER, ICECUBE, SYR_BARREL, SYR_PLUNGER];
 export const HAVE_P01 = new Set<string>(LIST.map(p => p.src));
 export const have = (p: PDef) => HAVE_P01.has(p.src);
 export const ASSETS: string[] = [...new Set(LIST.map(p => p.src))].filter(a => HAVE_P01.has(a));

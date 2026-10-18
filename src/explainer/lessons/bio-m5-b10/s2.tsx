@@ -9,6 +9,7 @@ import {
 	PL10, PeaPlant, Pedigree, PetalZoom, PigmentDots, PlateB, PocketBlob, Punnett, ROAN, Ring, S, SNAP, SexChrom, Sx, TtTt, ZoomLines, fadeV, lerp, pbPt,
 	pedXY, prog,
 } from './shared';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 import type {PLay} from './shared';
 
 // ---------- 5. The X-linked pedigree pattern ----------
@@ -90,7 +91,7 @@ export const SceneHetFirstB10: React.FC = () => {
 						<GenoTag x={HB.cols[i] + 90} y={HB.rows[0] + 60} text={g} size={28} />
 					</g>
 				))}
-				<Punnett x={1530} y={HB.rows[0] - 62} cell={62} res={TtTt} top={['T', 't']} side={['T', 't']} gridAt={K6.three - 6} topAt={K6.three - 4} sideAt={K6.three - 2} fillAt={() => K6.three} discR={14} plain chipR={11.5} />
+				<PunnettHSC x={1530} y={HB.rows[0] - 62} cell={62} res={TtTt} top={['T', 't']} side={['T', 't']} gridAt={K6.three - 6} topAt={K6.three - 4} sideAt={K6.three - 2} fillAt={() => K6.three} discR={14} chipR={11.5} />
 				<Sx x={1720} y={HB.rows[0] + 14} text="3 : 1" size={40} color={INK} weight={800} at={K6.three + 6} />
 				<GreyTag x={1700} y={HB.rows[0] + 34} text="B9" at={K6.three + 6} size={22} />
 				<Ring cx={HB.cols[1]} cy={HB.rows[0] - 10} rx={66} ry={100} at={K6.read} />
@@ -150,8 +151,8 @@ export const SceneIncompleteB10: React.FC = () => {
 					<Sx x={300} y={640} text="×" size={50} color={INK} weight={800} anchor="middle" />
 					<PlateB p={PL10.snapPink} cx={300} cy={760} w={120} />
 					<GenoTag x={300} y={900} text="C^{R} C^{W}" size={28} />
-					<Punnett x={G.x} y={G.y} cell={G.cell} res={SNAP} top={['C^{R}', 'C^{W}']} side={['C^{R}', 'C^{W}']} gridAt={K7.cross2} topAt={K7.cross2 + 4} sideAt={K7.cross2 + 6} fillAt={i => K7.cross2 + 12 + i * 6} discR={G.dr}
-						icon={(i, x, y) => <PlateB p={snapOf(SNAP.cells[i].ph)} cx={x} cy={y + 10} w={44} />} ring={i => (SNAP.cells[i].ph !== 'pink' ? prog(f, K7.back, 12) : 0)} />
+					<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={SNAP} top={['C^{R}', 'C^{W}']} side={['C^{R}', 'C^{W}']} gridAt={K7.cross2} topAt={K7.cross2 + 4} sideAt={K7.cross2 + 6} fillAt={i => K7.cross2 + 12 + i * 6} discR={G.dr}
+						phen ring={i => (SNAP.cells[i].ph !== 'pink' ? prog(f, K7.back, 12) : 0)} />
 					<Fade at={K7.ratio - 4}>
 						<rect x={1230} y={370} width={610} height={220} rx={20} fill="#fffdf8" stroke="rgba(60,45,20,0.2)" strokeWidth={3} />
 						<Sx x={1260} y={430} text="genotypes  1 : 2 : 1" size={38} color={INK} weight={800} />
@@ -203,8 +204,8 @@ export const SceneCoDomB10: React.FC = () => {
 				</g>
 				{/* two roans */}
 				<g opacity={grid}>
-					<Punnett x={G.x} y={G.y} cell={G.cell} res={ROAN} top={['C^{R}', 'C^{W}']} side={['C^{R}', 'C^{W}']} gridAt={K8.two} topAt={K8.two + 2} sideAt={K8.two + 4} fillAt={i => K8.two + 8 + i * 5} discR={G.dr}
-						icon={(i, x, y) => <PlateB p={cowOf(ROAN.cells[i].ph)} cx={x} cy={y + 8} w={74} />} chipR={18} />
+					<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={ROAN} top={['C^{R}', 'C^{W}']} side={['C^{R}', 'C^{W}']} gridAt={K8.two} topAt={K8.two + 2} sideAt={K8.two + 4} fillAt={i => K8.two + 8 + i * 5} discR={G.dr}
+						phen chipR={18} />
 					<Sx x={1060} y={790} text={ROAN.phenText} size={40} color={INK} weight={800} at={K8.two + 26} />
 					<Sx x={1060} y={850} text={`snapdragons: ${SNAP.phenText}`} size={32} color={INK_SOFT} weight={700} at={K8.same} />
 					<Sx x={1060} y={930} text="heterozygote looks new:" size={34} color={AMBER_INK} hand at={K8.het} />

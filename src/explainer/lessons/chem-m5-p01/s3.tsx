@@ -131,7 +131,7 @@ export const SceneRisk: React.FC = () => {
 	const rows: TRow[] = [
 		{at: K11.cobalt, cells: ['cobalt chloride', ['harmful if swallowed; may cause cancer', 'if dust is inhaled; skin and breathing allergies'], ['small amounts, no dust, gloves;', 'teacher demo in many schools']], colors: [HAZ, INK, GREEN], icon: icon(0, ic(CRYS.pink, 0, 92))},
 		{at: K11.thio, cells: ['thiocyanate', 'with acid, releases a very toxic gas', ['never mix with acid;', 'keep the cobalt solution apart']], colors: [HAZ, INK, GREEN], icon: icon(1, ic(BOTTLE_SCN, 1, 88))},
-		{at: K11.naoh, cells: ['sodium hydroxide', 'eye damage, even when dilute', 'safety glasses'], colors: [HAZ, INK, GREEN], icon: icon(2, ic(DROPPER, 2, 92))},
+		{at: K11.naoh, cells: ['sodium hydroxide', 'can irritate eyes', 'wear safety glasses'], colors: [HAZ, INK, GREEN], icon: icon(2, ic(DROPPER, 2, 92))},
 		{at: K11.hot, cells: ['hot water bath', 'scalds', ['test tube holder; water bath,', 'no naked flame near the tubes']], colors: [HAZ, INK, GREEN], icon: icon(3, ic(BEAKER, 3, 80))},
 		{at: K11.mg, cells: ['burning magnesium', 'intense light; fire', ['never look at the flame; heatproof mat;', 'teacher demo; never water on a Mg fire']], colors: [HAZ, INK, GREEN], icon: icon(4, ic(MG.ribbon, 4, 70))},
 		{at: K11.waste, cells: ['waste', 'cobalt is toxic to water life', 'labelled residues container, never the sink'], colors: [HAZ, INK, GREEN], icon: icon(5, ic(WASTE, 5, 88))},

@@ -6,7 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	ABead8, AMBER, AMBER_INK, Card, Chip, Chr, Coin, DrawPath, FONT_DISPLAY, FONT_HAND, Fade, GAM_YR, GREYT, GREY_INK, GameteCell, GameteDot, GreyTag, Heading, INK,
-	INK_SOFT, LP_Ab, LT_aB, MC, OVULES, Overlay, PCell, PL8, PP, PlainArrow, PlateB, Pollen, Ring, S, SEEDS, SRC, SpanBracket, Sx, TT, chipW, clamp01, gametes,
+	INK_SOFT, LP_Ab, LT_aB, MC, OVULES, Overlay, Cell8, PL8, PP, PlainArrow, PlateB, Pollen, Ring, S, SEEDS, SRC, SpanBracket, Sx, TT, chipW, clamp01, gametes,
 	lerp, pbPt, prog, pulse, scribbleEllipse, spaced, vis, TIP, chrBeadY, geomY,
 } from './shared';
 
@@ -150,7 +150,7 @@ export const SceneTraceB8: React.FC = () => {
 					</g>
 				))}
 				{/* the parent plant's cell */}
-				<g opacity={prog(f, K3.take, 14)}><PCell cx={CELL.x} cy={CELL.y} rx={CELL.rx} ry={CELL.ry} /></g>
+				<g opacity={prog(f, K3.take, 14)}><Cell8 cx={CELL.x} cy={CELL.y} rx={CELL.rx} ry={CELL.ry} /></g>
 				<Chr x={IN_CELL.LP} y={CELL.y} kind="L" col="P" s={0.8} top="Y" o={prog(f, K3.two, 12)} beadO={beadsP} />
 				<Chr x={IN_CELL.LT} y={CELL.y} kind="L" col="T" s={0.8} top="y" o={prog(f, K3.two, 12)} beadO={beadsT} />
 				<Chr x={IN_CELL.SP} y={CELL.y + 10} kind="S" col="P" s={0.8} top="R" o={prog(f, K3.two + 6, 12)} beadO={beadsP} />
@@ -242,7 +242,7 @@ export const SceneSameChromB8: React.FC = () => {
 					const sw = i === 2 || i === 5;
 					return (
 						<g key={i} opacity={prog(f, K4.some - 8 + i * 3, 10)}>
-							<PCell cx={x} cy={y} rx={42} ry={36} />
+							<Cell8 cx={x} cy={y} rx={42} ry={36} />
 							<line x1={x - 8} y1={y - 22} x2={x - 8} y2={y + 22} stroke={CPL} strokeWidth={6} strokeLinecap="round" />
 							<line x1={x + 8} y1={y - 22} x2={x + 8} y2={y + 22} stroke={CTE} strokeWidth={6} strokeLinecap="round" />
 							{sw ? <path d={`M${x - 16},${y - 8} L${x + 16},${y + 8} M${x + 16},${y - 8} L${x - 16},${y + 8}`} stroke={AMBER} strokeWidth={5} strokeLinecap="round" /> : null}

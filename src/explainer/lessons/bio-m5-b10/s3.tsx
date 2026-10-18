@@ -8,6 +8,7 @@ import {
 	ABO, ABO_TABLE, AMBER, AMBER_INK, AlleleChip, AntigenCell, Fade, GenoTag, HairZoom, HandText, Heading, INK, INK_SOFT, Overlay, PL10, PSym, PlateB, Punnett, S, SexChrom,
 	Sx, cw, fadeV, groupMarks, lerp, pgeom, prog,
 } from './shared';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 
 // ---------- 9. Multiple alleles: ABO ----------
 const K9 = cues(S('abo'), {abo: 'Your ABO blood group', three: 'this gene has three alleles', mult: "That's multiple alleles", two: 'carries only two of them', aEnz: "One allele's enzyme puts A antigens", sugar: 'small sugar markers', rbc: 'on your red blood cells', b: 'Another puts B antigens on', third: 'The third, small i', neither: 'so it adds neither', codom: 'A and B are co-dominant', ab: "you're type AB", domover: 'Both are dominant over small i', o: 'so type O means two small i alleles'});
@@ -77,9 +78,8 @@ export const SceneAboSurpriseB10: React.FC = () => {
 				<GenoTag x={420} y={700} text={prog(f, K10.hidden, 1) > 0 ? 'type B: I^{B} i' : 'type B'} size={32} o={prog(f, K10.parents + 8, 12)} stroke={prog(f, K10.hidden, 1) > 0 ? AMBER : INK_SOFT} />
 				<Sx x={300} y={550} text="×" size={56} color={INK} weight={800} anchor="middle" at={K10.parents + 4} />
 				<Sx x={300} y={830} text="each hides an i" size={32} color={AMBER_INK} hand anchor="middle" at={K10.hidden + 6} />
-				<Punnett x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K10.hidden} topAt={K10.hidden + 4} sideAt={K10.hidden + 8} fillAt={fillOf} discR={G.dr}
-					icon={(i, x, y) => { const m = groupMarks(ABO.cells[i].ph); return <AntigenCell id={'bx' + i} x={x - 40} y={y + 6} w={60} a={m.a} b={m.b} labels={false} />; }} />
-				{ABO.cells.map(c => { const [x, y] = pg.box(c.i); return <Sx key={c.i} x={x + 40} y={y + 62} text={c.ph} size={44} color={INK} weight={800} anchor="middle" at={fillOf(c.i) + 10} />; })}
+				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K10.hidden} topAt={K10.hidden + 4} sideAt={K10.hidden + 8} fillAt={fillOf} discR={G.dr}
+					phen={i => prog(f, fillOf(i) + 10, 12)} phenText={i => `type ${ABO.cells[i].ph}`} phenSize={30} />
 				<Fade at={K10.each}>
 					<rect x={1270} y={400} width={560} height={260} rx={20} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
 					<Sx x={1300} y={470} text={ABO.phen.map(p => p.ph).join(' : ')} size={40} color={INK} weight={800} />

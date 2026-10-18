@@ -60,29 +60,49 @@ const SAMERICA: LL[] = [[-77, 8], [-72, 12], [-64, 10], [-60, 9], [-52, 5], [-50
 export const LAND: LL[][] = [AFRICA, MADAGASCAR, EURASIA, BRITAIN, IRELAND, ICELAND, JAPAN, SUMATRA, BORNEO, JAVA, GUINEA, AUSTRALIA, TASMANIA, NZN, NZS, NAMERICA, GREENLAND, SAMERICA];
 
 // ---------- HbS allele bands (redrawn and simplified; band 1: 1 to 5%, 2: 5 to 10%, 3: over 10%) ----------
+// Revised 18 Oct (Codex check 73) against Piel et al. 2010 Fig. 1b and results: HbS largely absent from the Horn of
+// Africa and south of the Zambezi; above 6% in Madagascar, central Sudan, Chalkidiki (Greece), southeastern Turkey and
+// western Saudi Arabia; about 9 to 11% (the paper's 9.61 to 11.11% class) in southern Karnataka, drawn as over 10%.
+// The paper's ten Jenks classes are regrouped into the three written bands. Indices 0 to 2 stay Africa (s2 rings BANDS[1]).
 export type Band = {band: 1 | 2 | 3; pts: LL[]; region: 'africa' | 'med' | 'mideast' | 'india'};
 export const BANDS: Band[] = [
-	{band: 1, region: 'africa', pts: [[-17, 18], [-5, 19], [10, 19], [24, 18], [34, 16], [41, 14], [46, 9], [44, 2], [41, -4], [40, -12], [36, -21], [30, -26], [22, -26], [14, -22], [11, -10], [9, -1], [5, 5], [-8, 4], [-14, 8], [-18, 13]]},
-	{band: 2, region: 'africa', pts: [[-17, 13], [-10, 15], [0, 15], [15, 14], [25, 13], [35, 10], [40, 4], [40, -6], [38, -14], [32, -18], [22, -18], [13, -16], [12, -6], [9, -1], [9, 4], [-1, 5], [-8, 4], [-13, 8]]},
+	{band: 1, region: 'africa', pts: [[-17, 18], [-5, 19], [10, 19], [24, 19], [32, 19], [37, 17], [36, 12], [34, 6], [36, 2], [39, -1], [41, -3], [40, -10], [40, -16], [36, -21], [30, -19], [22, -18], [14, -17], [11, -10], [9, -1], [5, 5], [-8, 4], [-14, 8], [-18, 13]]},
+	{band: 2, region: 'africa', pts: [[-17, 13], [-10, 14], [0, 13], [10, 13], [20, 12], [27, 12], [30, 15], [33, 13], [33, 8], [34, 3], [38, -2], [40, -6], [39, -12], [35, -16], [30, -16], [22, -16], [14, -15], [12, -6], [9, -1], [9, 4], [-1, 5], [-8, 4], [-13, 8]]},
 	{band: 3, region: 'africa', pts: [[-3, 10], [5, 11.5], [15, 10.5], [25, 7], [31, 3], [33, -3], [30, -10], [22, -12], [14, -11], [11, -3], [8, 4], [2, 6], [-3, 6]]},
+	{band: 1, region: 'africa', pts: [[43.5, -25.8], [47.2, -25.8], [49.6, -17], [48.2, -13.8], [44, -16.5]]},
+	{band: 2, region: 'africa', pts: [[43.6, -24.8], [46.4, -25.4], [46.2, -20.5], [44.1, -20]]},
 	{band: 1, region: 'med', pts: [[20.5, 41], [24.5, 41], [27, 38.5], [24, 36.5], [21, 37.5]]},
+	{band: 2, region: 'med', pts: [[22.6, 40.9], [24.4, 40.8], [24.3, 39.8], [22.8, 39.9]]},
 	{band: 1, region: 'med', pts: [[12.5, 38.5], [16, 39.5], [16.5, 37], [13, 36.8]]},
-	{band: 1, region: 'med', pts: [[29, 37.6], [36.5, 37.8], [36.5, 36], [30, 36.4]]},
+	{band: 1, region: 'med', pts: [[29, 37.6], [38.5, 38], [38.5, 36], [30, 36.4]]},
+	{band: 2, region: 'med', pts: [[34.4, 37.5], [37.8, 37.6], [37.6, 36], [35, 36.4]]},
 	{band: 1, region: 'mideast', pts: [[38, 31], [48, 30], [52, 25], [56, 21], [50, 16], [43, 16], [39, 22]]},
 	{band: 2, region: 'mideast', pts: [[47, 27.5], [50.5, 26.5], [50, 22], [46, 21.5]]},
-	{band: 1, region: 'india', pts: [[70, 24], [78, 26], [86, 24], [86, 19], [80, 13], [76, 12], [72, 18]]},
+	{band: 2, region: 'mideast', pts: [[37.2, 26.5], [39.5, 26.2], [43.6, 18.5], [43.2, 16.4], [41.6, 17], [38.6, 22]]},
+	{band: 1, region: 'india', pts: [[70, 24], [78, 26], [86, 24], [86, 19], [80, 14], [78.6, 10.6], [76, 10.8], [74, 15], [72, 18]]},
 	{band: 2, region: 'india', pts: [[75, 23], [84, 23.5], [84, 19], [79, 17.5], [75, 19]]},
+	{band: 2, region: 'india', pts: [[75, 14], [78.4, 13.8], [78.4, 11.2], [75.6, 11.2]]},
+	{band: 3, region: 'india', pts: [[75.8, 13], [77.6, 13], [77.6, 11.8], [76, 11.8]]},
 ];
 export const BAND_FILL = ['#fffdf8', '#f3dca6', '#e8a75a', '#c4632e'];
 export const BAND_TEXT = ['under 1%', '1 to 5%', '5 to 10%', 'over 10%'];
 
 // ---------- historical malaria (hatched; redrawn and simplified) ----------
+// Revised 18 Oct (Codex check 73) to the pre-intervention footprint of Piel et al. 2010 Fig. 1c (all classes from
+// epidemic to holoendemic, about 1900): sub-Saharan Africa and Madagascar, southern and eastern Europe, a broad band
+// across northern Asia, south and east Asia including eastern China, the southeastern USA, Mexico to Brazil and
+// northern Australia. Deserts left clear: Sahara, inner Arabia, Tibet and the Gobi. MALARIA[0] stays Africa (s2 rings it).
 export type MalZone = {pts: LL[]; region: 'africa' | 'med' | 'asia' | 'americas'};
 export const MALARIA: MalZone[] = [
 	{region: 'africa', pts: [[-17, 18], [-5, 20], [10, 20], [24, 19], [34, 17], [42, 13], [47, 8], [43, 0], [40, -12], [36, -23], [30, -27], [20, -26], [13, -20], [11, -8], [9, 0], [5, 5], [-8, 4], [-14, 8], [-18, 13]]},
-	{region: 'med', pts: [[-8, 38], [10, 40], [20, 42], [30, 38], [36, 34], [40, 30], [30, 31], [10, 34], [-2, 35]]},
-	{region: 'asia', pts: [[44, 30], [60, 32], [75, 33], [90, 28], [100, 25], [110, 24], [120, 25], [122, 18], [112, 8], [106, -8], [120, -10], [150, -8], [142, -3], [125, 5], [104, 0], [96, 6], [92, 15], [80, 8], [73, 10], [66, 24], [56, 22], [48, 20], [44, 24]]},
+	{region: 'africa', pts: [[43.2, -26], [47.5, -26], [50.6, -15], [49.2, -11.5], [43, -16]]},
+	{region: 'med', pts: [[-10, 36], [-10, 44], [-2, 47], [5, 51], [15, 54], [25, 58], [40, 60], [60, 60], [80, 61], [100, 60], [120, 59], [135, 56], [141, 49], [133, 44], [122, 50], [108, 51], [92, 51], [84, 47], [76, 42], [62, 38], [48, 35], [38, 33], [26, 32], [10, 34], [0, 35]]},
+	{region: 'asia', pts: [[44, 30], [50, 36], [60, 37], [70, 37], [75, 35], [79, 30], [90, 27], [98, 28], [101, 33], [104, 38], [112, 40], [118, 42], [124, 46], [131, 48], [136, 45], [131, 42], [127, 38], [122, 40], [120, 36], [122, 30], [120, 25], [122, 18], [112, 8], [106, -8], [120, -10], [150, -8], [142, -3], [125, 5], [104, 0], [96, 6], [92, 15], [80, 8], [73, 10], [66, 24], [58, 25], [52, 28], [48, 29.5]]},
+	{region: 'asia', pts: [[129.5, 31], [136, 33.5], [141.5, 37], [142, 41], [139.5, 40], [135.5, 36.5], [130.5, 34.5]]},
+	{region: 'asia', pts: [[37.5, 28], [42, 20], [43.5, 13], [46, 13], [44, 18], [40.5, 26]]},
+	{region: 'asia', pts: [[121, -17], [130, -11], [142, -10], [146, -18], [139, -19], [130, -16]]},
 	{region: 'americas', pts: [[-106, 25], [-97, 26], [-90, 19], [-83, 11], [-77, 8], [-62, 9], [-50, 2], [-38, -8], [-42, -22], [-55, -26], [-64, -20], [-75, -10], [-80, -2], [-90, 13], [-100, 18]]},
+	{region: 'americas', pts: [[-103, 28], [-100, 34], [-95, 39], [-88, 43], [-80, 43.5], [-73, 42], [-74, 39.5], [-76, 35], [-81, 31], [-81.5, 26], [-85, 29.5], [-90, 29], [-97, 26.5]]},
 ];
 
 // ---------- the map ----------
@@ -122,10 +142,11 @@ export const World: React.FC<WorldProps> = ({M, id, o = 1, outline = 1, band, gl
 					const g = glow(b, i);
 					return g > 0.01 ? <path key={'g' + i} d={smoothPath(b.pts.map(P), 0.5)} fill="#fff4d0" opacity={0.45 * g} /> : null;
 				}) : null}
-				{hatch ? MALARIA.map((z, i) => {
+				{/* zones overlap; one shared group opacity keeps overlaps from hatching darker */}
+				{hatch ? <g opacity={0.7}>{MALARIA.map((z, i) => {
 					const ho = hatch(z, i);
-					return ho > 0.01 ? <path key={'h' + i} d={smoothPath(z.pts.map(P), 0.5)} fill={`url(#${id}-hatch)`} opacity={0.7 * ho} /> : null;
-				}) : null}
+					return ho > 0.01 ? <path key={'h' + i} d={smoothPath(z.pts.map(P), 0.5)} fill={`url(#${id}-hatch)`} opacity={ho} /> : null;
+				})}</g> : null}
 			</g>
 			{land.map((d, i) => <path key={i} d={d} fill="none" stroke={stroke} strokeWidth={strokeW} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - outline} />)}
 		</g>

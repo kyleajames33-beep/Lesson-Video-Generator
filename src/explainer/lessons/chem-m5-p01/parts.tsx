@@ -10,7 +10,7 @@ import {Arrow, Chip, Fade, GivensCard, KeyNotesBoard, MistakeChip, Overlay, Paus
 import {Push} from '../chem-m5-c06/parts';
 import {HeatIcon, Thermometer} from '../chem-m5-c03/parts';
 import {GREEN, HAZ, SW_STOCK, WATER_DROP, hexMix} from './common';
-import {BURNER, COB, CRYS, DROPPER, IRON, STOPPER, have} from './assets';
+import {BUNSEN, BUNSEN_CX, COB, CRYS, DROPPER, IRON, STOPPER, have} from './assets';
 import type {PDef} from './assets';
 
 export {Arrow, Chip, Fade, GivensCard, KeyNotesBoard, MistakeChip, Overlay, PauseHold, PicH, Push, Ring, Sx, TEAL, TaskLine, Tick, HeatIcon, Thermometer, mw, picW, pulseAt, smooth};
@@ -39,7 +39,7 @@ export const npt = (p: PDef, x: number, y: number, h: number, nx: number, ny: nu
 	return [x + (nx - p.box[0]) * k, y + (ny - p.box[1]) * k];
 };
 
-// ---------- iron thiocyanate tube (C3 crop): stock, deep, faded with Fe(OH)3, and a coded dilution wash ----------
+// ---------- iron thiocyanate tube (C3 crop): stock, deep, faded with Fe(OH)3, diluted (brief 72 plate) ----------
 export const ironW = (h: number) => picW(IRON.start, h);
 /** Mouth (top centre) and liquid geometry of the C3 iron tube, as fractions of the crop. */
 export const IRON_G = {mouthU: 0.5, mouthV: 0.015, liqTop: 0.255, liqL: 0.262, liqR: 0.735, liqBot: 0.89};
@@ -54,13 +54,8 @@ export const ITube: React.FC<{x: number; y: number; h: number; s?: IronState; o?
 			<Pic p={IRON.start} x={x} y={y} h={h} />
 			{s.deep ? <Pic p={IRON.deep} x={x} y={y} h={h} o={clamp01(s.deep)} /> : null}
 			{s.faded ? <Pic p={IRON.faded} x={x} y={y} h={h} o={clamp01(s.faded)} /> : null}
-			{s.dil ? (
-				<g opacity={clamp01(s.dil)}>
-					<path d={liquid} fill="#fffaf6" opacity={0.3} />
-					{/* the level sits a hair higher: the drops added volume */}
-					<path d={`M${L + 2},${T - h * 0.006} L${R - 2},${T - h * 0.006}`} stroke="#e8b9a2" strokeWidth={Math.max(2, h * 0.005)} />
-				</g>
-			) : null}
+			{/* diluted: the painted level sits a hair higher and the liquid a touch paler (the drops added volume) */}
+			{s.dil ? <Pic p={IRON.dil} x={x} y={y} h={h} o={clamp01(s.dil)} /> : null}
 			{s.pale ? <path d={liquid} fill="#fffaf6" opacity={0.42 * clamp01(s.pale)} /> : null}
 			{s.cloud ? (
 				<g opacity={clamp01(s.cloud)}>
@@ -117,7 +112,8 @@ export const coBath = (x: number, y: number, h: number) => {
 export const crysW = (h: number) => picW(CRYS.pink, h);
 /** Native points on the crystal plates: the crystal heap, the tube underside below it, the mouth and the inside top near the mouth. */
 export const CRYS_N = {heap: [947, 588] as [number, number], under: [947, 628] as [number, number], mouth: [1700, 790] as [number, number], nearMouth: [1560, 742] as [number, number]};
-export const CrystalRig: React.FC<{x: number; y: number; h: number; blue: number; burner?: number; droplets?: number; o?: number}> = ({x, y, h, blue, burner = 0, droplets = 0, o = 1}) => {
+/** burner: the Bunsen's presence (opacity); lit: unlit-to-lit crossfade on the aligned pair (0 unlit, 1 lit). */
+export const CrystalRig: React.FC<{x: number; y: number; h: number; blue: number; burner?: number; lit?: number; droplets?: number; o?: number}> = ({x, y, h, blue, burner = 0, lit = 0, droplets = 0, o = 1}) => {
 	const f = useCurrentFrame();
 	const [ux, uy] = npt(CRYS.pink, x, y, h, ...CRYS_N.under);
 	const [nx, ny] = npt(CRYS.pink, x, y, h, ...CRYS_N.nearMouth);
@@ -125,8 +121,8 @@ export const CrystalRig: React.FC<{x: number; y: number; h: number; blue: number
 	const baseY = npt(CRYS.pink, x, y, h, 0, 1745)[1];
 	const tipY = uy + h * 0.012;
 	const bh = baseY - tipY;
-	const bk = bh / BURNER.box[3];
-	const bx = ux - (999 - BURNER.box[0]) * bk;
+	const bk = bh / BUNSEN.lit.box[3];
+	const bx = ux - (BUNSEN_CX - BUNSEN.lit.box[0]) * bk;
 	const k = h / CRYS.pink.box[3];
 	return (
 		<g opacity={o}>
@@ -137,8 +133,9 @@ export const CrystalRig: React.FC<{x: number; y: number; h: number; blue: number
 			)) : null}
 			{burner > 0.01 ? (
 				<g opacity={burner}>
-					<Pic p={BURNER} x={bx} y={tipY} h={bh} />
-					<ellipse cx={ux} cy={uy} rx={36 * k * 3} ry={10 * k * 3} fill="#ffb86b" opacity={0.25 + 0.1 * Math.sin(f * 0.3)} />
+					<Pic p={BUNSEN.unlit} x={bx} y={tipY} h={bh} o={1 - clamp01(lit)} />
+					{lit > 0.005 ? <Pic p={BUNSEN.lit} x={bx} y={tipY} h={bh} o={clamp01(lit)} /> : null}
+					{lit > 0.01 ? <ellipse cx={ux} cy={uy} rx={36 * k * 3} ry={10 * k * 3} fill="#ffb86b" opacity={(0.25 + 0.1 * Math.sin(f * 0.3)) * clamp01(lit)} /> : null}
 				</g>
 			) : null}
 		</g>

@@ -97,27 +97,47 @@ export const Trace: React.FC<{x: number; y: number; seq: string[]; pitch?: numbe
 };
 
 // ---------- repeat strip ----------
-/** A marker drawn as flanks plus n boxed "GATA" blocks; `grow` 0..1 reveals the blocks; the count is written at the end. */
+/**
+ * A marker drawn as a slim DNA strand with a highlighted repeat region: one fine bar per repeat unit, evenly spaced,
+ * on a soft amber band (owner review 18 Oct: the old boxed "GATA" tiles looked dated). `grow` 0..1 reveals the bars in
+ * order; the count is written at the end. `label` shows the motif once, as a small "GATA" callout under the first unit.
+ * Props, positions and widths match the old strip, so every placement and count is unchanged.
+ */
 export const RepeatStrip: React.FC<{x: number; y: number; n: number; bw?: number; bh?: number; grow?: number; o?: number; count?: number; color?: string; label?: boolean}> = ({x, y, n, bw = 60, bh = 38, grow = 1, o = 1, count = 1, color = AMBER_INK, label = true}) => {
 	if (o <= 0.01) return null;
 	const shown = n * clamp01(grow);
 	const fl = 60;
+	const x0 = x + fl, x1 = x0 + shown * bw;
+	const barW = Math.max(4, bw * 0.2);
+	const barH = bh * 0.78;
+	const strand = Math.max(3, bh * 0.14);
+	const big = bw >= 40;
+	const first = clamp01(shown);
 	return (
 		<g opacity={o}>
-			<rect x={x} y={y - 8} width={fl} height={16} rx={8} fill="#cfc6b6" />
+			{/* the strand runs through: flank, repeat region, flank */}
+			<line x1={x} y1={y} x2={x1 + fl} y2={y} stroke="#b9ae9b" strokeWidth={strand} strokeLinecap="round" />
+			{shown > 0.01 ? <rect x={x0 - 4} y={y - bh / 2} width={shown * bw + 8} height={bh} rx={Math.min(bh / 2, 12)} fill={AMBER} opacity={0.16} /> : null}
 			{Array.from({length: n}, (_, i) => {
 				const p = clamp01(shown - i);
 				if (p <= 0.01) return null;
-				const bx = x + fl + i * bw;
-				return (
-					<g key={i} opacity={p}>
-						<rect x={bx + 2} y={y - bh / 2} width={bw - 4} height={bh} rx={8} fill="#fff4dc" stroke={color} strokeWidth={2.5} />
-						{label ? <text x={bx + bw / 2} y={y + bh * 0.2} textAnchor="middle" style={{fontFamily: SERIF, fontWeight: 700, fontSize: Math.min(bh * 0.55, bw * 0.3)}} fill={INK}>GATA</text> : null}
-					</g>
-				);
+				const cx = x0 + (i + 0.5) * bw;
+				const hh = barH * (0.6 + 0.4 * p);
+				return <rect key={i} x={cx - barW / 2} y={y - hh / 2} width={barW} height={hh} rx={barW / 2} fill={color} opacity={p} />;
 			})}
-			<rect x={x + fl + shown * bw} y={y - 8} width={fl} height={16} rx={8} fill="#cfc6b6" />
-			{count > 0.01 ? <text x={x + 2 * fl + shown * bw + 16} y={y + 12} opacity={count} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34}} fill={INK}>{Math.round(shown)}</text> : null}
+			{count > 0.01 ? (
+				<text x={x1 + fl + 16} y={y + (big ? 12 : 9)} opacity={count} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: big ? 34 : 26}} fill={INK}>
+					{Math.round(shown)}
+					{big ? <tspan dx={8} style={{fontWeight: 600, fontSize: 22}} fill={INK_SOFT}>repeats</tspan> : null}
+				</text>
+			) : null}
+			{label && first > 0.01 ? (
+				<g opacity={first}>
+					<line x1={x0 + bw / 2} y1={y + barH / 2 + 4} x2={x0 + bw / 2} y2={y + bh / 2 + 16} stroke={color} strokeWidth={2} />
+					<rect x={x0 + bw / 2 - 46} y={y + bh / 2 + 16} width={92} height={34} rx={17} fill="#fffdf8" stroke={color} strokeWidth={2} />
+					<text x={x0 + bw / 2} y={y + bh / 2 + 41} textAnchor="middle" style={{fontFamily: SERIF, fontWeight: 700, fontSize: 22, letterSpacing: 2}} fill={INK}>GATA</text>
+				</g>
+			) : null}
 		</g>
 	);
 };

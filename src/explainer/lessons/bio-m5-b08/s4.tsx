@@ -6,7 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	ABead8, AMBER, AMBER_INK, AnswerBox, Card, Chip, Chr, Countdown, DrawPath, Enter, FLY, FONT_DISPLAY, FONT_HAND, Fade, GREY_INK, GameteDot, GreyTag, HandText,
-	Heading, INK, INK_SOFT, MistakeChip, ModelLine, Overlay, PCell, PL8, PlainArrow, PlateB, S, SRC, Shade, Soil, SpanBracket, Sun, Sx, chrBeadY, notesCheck, pbPt,
+	Heading, INK, INK_SOFT, MistakeChip, ModelLine, Overlay, Cell8, PL8, PlainArrow, PlateB, S, SRC, Shade, Soil, SpanBracket, Sun, Sx, chrBeadY, notesCheck, pbPt,
 	chipW, prog, pulse, spaced, vis, wrap,
 } from './shared';
 
@@ -17,7 +17,7 @@ const FlyCell: React.FC<{x: number; y: number; rx: number; ry: number; s: number
 	const k = rx / 320;
 	return (
 		<g>
-			<PCell cx={x} cy={y} rx={rx} ry={ry} />
+			<Cell8 cx={x} cy={y} rx={rx} ry={ry} />
 			<Chr x={x - 120 * k} y={y} kind="L" col="P" s={s} top="D" bot="E" o={o[0]} beadO={beadO[0]} r={r} />
 			<Chr x={x - 40 * k} y={y} kind="L" col="T" s={s} top="d" bot="e" o={o[1]} beadO={beadO[1]} r={r} />
 			<Chr x={x + 120 * k} y={y + 10 * s} kind="S" col="P" s={s} top="F" o={o[2]} beadO={beadO[2]} r={r} />

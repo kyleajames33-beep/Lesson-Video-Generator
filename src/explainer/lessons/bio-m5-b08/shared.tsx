@@ -25,6 +25,38 @@ export type {PB, Col, CStrand};
 export const S = sceneOf(lesson as unknown as {scenes: unknown[]});
 export const vis = (f: number, at: number, out?: number, d = 12) => prog(f, at, d) * (out === undefined ? 1 : 1 - prog(f, out, d));
 
+// ---------- the cell ----------
+/**
+ * Coded cell outline (owner note 18 Oct: the B5 painted cell plate looked stretched and blurry when squeezed into
+ * B8's wide cells). The painted plate is a round cell with organelles, so any wide oval distorts it. This outline keeps
+ * the plate's cream cytoplasm and brown membrane, stays sharp at any size and aspect, and gives the chromosomes a calm
+ * ground. Same props as B5a's PCell. B8 draws Cell8; PCell stays re-exported unchanged for B9, G01 and G02.
+ */
+export const Cell8: React.FC<{cx: number; cy: number; rx: number; ry: number; o?: number}> = ({cx, cy, rx, ry, o = 1}) => {
+	const gid = 'c8' + React.useId().replace(/[^a-zA-Z0-9]/g, '');
+	if (o <= 0.01) return null;
+	const n = 72;
+	const ring = (k: number) => Array.from({length: n}, (_, i) => {
+		const a = (i / n) * Math.PI * 2;
+		const w = 1 + 0.014 * Math.sin(3 * a + 0.7) + 0.009 * Math.sin(5 * a + 2.1);
+		return `${i ? 'L' : 'M'}${(cx + Math.cos(a) * rx * w * k).toFixed(1)},${(cy + Math.sin(a) * ry * w * k).toFixed(1)}`;
+	}).join(' ') + ' Z';
+	const sw = Math.max(2, Math.min(4.5, Math.min(rx, ry) * 0.035));
+	return (
+		<g opacity={o}>
+			<defs>
+				<radialGradient id={gid} cx="50%" cy="46%" r="60%">
+					<stop offset="0%" stopColor="#fdf7ec" />
+					<stop offset="78%" stopColor="#f8ecd6" />
+					<stop offset="100%" stopColor="#f1dfbf" />
+				</radialGradient>
+			</defs>
+			<path d={ring(1)} fill={`url(#${gid})`} stroke="#b07a45" strokeWidth={sw} strokeLinejoin="round" />
+			{Math.min(rx, ry) > 50 ? <path d={ring(0.965)} fill="none" stroke="#d9b98f" strokeWidth={sw * 0.5} opacity={0.8} /> : null}
+		</g>
+	);
+};
+
 // ---------- plates ----------
 const P = (src: string, nat: [number, number], box: [number, number, number, number]): PB => ({src, nat, box, have: A.HAVE.has(src)});
 const POD_BOX: [number, number, number, number] = [325, 634, 1276, 966];
@@ -123,7 +155,7 @@ export const chrBeadY = (y: number, kind: 'L' | 'S', s: number, level: 'top' | '
 /** A gamete cell (painted cell plate, small) holding one long and one short chromosome. */
 export const GameteCell: React.FC<{x: number; y: number; rx?: number; ry?: number; long: [Col, string, string?]; short: [Col, string]; s?: number; o?: number; ring?: number}> = ({x, y, rx = 120, ry = 100, long, short, s = 0.6, o = 1, ring = 0}) => (o <= 0.01 ? null : (
 	<g opacity={o}>
-		<PCell cx={x} cy={y} rx={rx} ry={ry} />
+		<Cell8 cx={x} cy={y} rx={rx} ry={ry} />
 		{ring > 0.01 ? <ellipse cx={x} cy={y} rx={rx + 12} ry={ry + 10} fill="none" stroke={AMBER} strokeWidth={6} opacity={ring} /> : null}
 		<Chr x={x - rx * 0.26} y={y} kind="L" col={long[0]} s={s} top={long[1]} bot={long[2]} r={17} />
 		<Chr x={x + rx * 0.3} y={y + 10} kind="S" col={short[0]} s={s} top={short[1]} r={17} />
@@ -132,7 +164,7 @@ export const GameteCell: React.FC<{x: number; y: number; rx?: number; ry?: numbe
 /** A plain gamete bubble with its letters (for lists). */
 export const GameteDot: React.FC<{x: number; y: number; text: string; r?: number; o?: number; ring?: number; size?: number}> = ({x, y, text, r = 62, o = 1, ring = 0, size = 34}) => (o <= 0.01 ? null : (
 	<g opacity={o}>
-		<PCell cx={x} cy={y} rx={r * 1.12} ry={r * 0.86} />
+		<Cell8 cx={x} cy={y} rx={r * 1.12} ry={r * 0.86} />
 		{ring > 0.01 ? <ellipse cx={x} cy={y} rx={r * 1.12 + 10} ry={r * 0.86 + 9} fill="none" stroke={AMBER} strokeWidth={5} opacity={ring} /> : null}
 		<rect x={x - tw(text, size) / 2 - 12} y={y - size * 0.8} width={tw(text, size) + 24} height={size * 1.2} rx={10} fill="rgba(255,253,248,0.92)" />
 		<text x={x} y={y + size * 0.3} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: size}} fill={INK}>{text}</text>

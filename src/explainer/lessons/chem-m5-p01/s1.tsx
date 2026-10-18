@@ -93,7 +93,8 @@ export const MouthDropper: React.FC<{rig: {x: number; y: number; h: number}; at:
 export const SceneReversibility: React.FC = () => {
 	const f = useCurrentFrame();
 	const blue = prog(f, K2.blue, 30) * (1 - prog(f, K2.pinkA, 30));
-	const burner = prog(f, K2.heat, 16) * (1 - prog(f, K2.add, 16));
+	// the unlit Bunsen stands under the tube; it lights on "Heat" and goes out on "add" (aligned crossfade, brief 72)
+	const lit = prog(f, K2.heat, 16) * (1 - prog(f, K2.add, 16));
 	const drops = prog(f, K2.droplets, 40) * (1 - prog(f, K2.blue + 10, 20));
 	const [mx, my] = npt(CRYS.pink, RIG2.x, RIG2.y, RIG2.h, ...CRYS_N.mouth);
 	const [hx, hy] = npt(CRYS.pink, RIG2.x, RIG2.y, RIG2.h, ...CRYS_N.heap);
@@ -102,7 +103,7 @@ export const SceneReversibility: React.FC = () => {
 			<Heading text="The reversibility test" at={4} size={62} />
 			<Overlay>
 				<PushLoop x={1010} y={300} w={800} at={K2.test} changeAt={K2.oneway} backAt={K2.pinkA} tickAt={K2.pinkA + 12} endLabelAt={K2.comes} />
-				<Fade at={K2.heat - 4}><CrystalRig x={RIG2.x} y={RIG2.y} h={RIG2.h} blue={blue} burner={burner} droplets={drops} /></Fade>
+				<Fade at={K2.heat - 4}><CrystalRig x={RIG2.x} y={RIG2.y} h={RIG2.h} blue={blue} burner={1} lit={lit} droplets={drops} /></Fade>
 				<Sx x={hx + 20} y={hy - 80} text="pink crystals" size={34} color={CO_PINK_INK} hand at={K2.heat + 10} out={K2.blue} />
 				<Sx x={hx + 20} y={hy - 80} text="blue" size={40} color={CO_BLUE_INK} hand at={K2.blue + 10} out={K2.pinkA} />
 				<Sx x={hx + 20} y={hy - 80} text="pink again" size={40} color={CO_PINK_INK} hand at={K2.pinkA + 10} />
@@ -159,7 +160,7 @@ export const SceneMagnesium: React.FC = () => {
 				))}
 				<Sx x={850} y={790} text="burning steel wool: same idea" size={28} color={INK_SOFT} hand at={K3.shiny + 10} />
 				<Sx x={96} y={950} text="irreversible:" size={46} color={HAZ} hand at={K3.irr} />
-				<Sx x={360} y={950} text="no change you can make brings the start back" size={38} color={INK} hand at={K3.irr + 10} />
+				<Sx x={360} y={950} text="nothing in a school lab brings the start back" size={38} color={INK} hand at={K3.irr + 10} />
 				{/* the cobalt test was open: the steam crossed the boundary */}
 				<Fade at={K3.open - 4}><CrystalRig x={RIG3.x} y={RIG3.y} h={RIG3.h} blue={1} /></Fade>
 				<Bound x={RIG3.x - 24} y={RIG3.y - 24} w={rw + 70} h={RIG3.h + 48} at={K3.open + 6} />

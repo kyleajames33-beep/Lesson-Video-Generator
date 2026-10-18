@@ -179,9 +179,14 @@ export const SURVEYS: LL[] = (() => {
 	const r = rng(41);
 	const out: LL[] = [];
 	const outer = BANDS.filter(b => b.band === 1);
+	// pick a band by area (with a floor), so small patches such as Madagascar or Chalkidiki get a dot or two, not a cluster
+	const area = (p: LL[]) => Math.abs(p.reduce((s, [x, y], i) => { const [x2, y2] = p[(i + 1) % p.length]; return s + x * y2 - x2 * y; }, 0)) / 2;
+	const wts = outer.map(b => Math.max(area(b.pts), 60));
+	const tot = wts.reduce((s, w) => s + w, 0);
+	const pick = () => { let u = r() * tot; for (let i = 0; i < outer.length; i++) { u -= wts[i]; if (u <= 0) return outer[i]; } return outer[outer.length - 1]; };
 	let guard = 0;
 	while (out.length < 64 && guard++ < 5000) {
-		const b = outer[Math.floor(r() * outer.length)];
+		const b = pick();
 		const lons = b.pts.map(p => p[0]), lats = b.pts.map(p => p[1]);
 		const pt: LL = [Math.min(...lons) + r() * (Math.max(...lons) - Math.min(...lons)), Math.min(...lats) + r() * (Math.max(...lats) - Math.min(...lats))];
 		if (inPoly(pt, b.pts)) out.push(pt);

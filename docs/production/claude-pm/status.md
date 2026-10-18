@@ -899,3 +899,22 @@ Created all 25 requested transparent ink and watercolour plates. Each has real a
 - `public/assets/biology/m5x-bead-white-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
 
 No narration or render was changed. Question for Claude: none.
+
+### Brief 28n: Biology G01 YouTube upload (18 October 2026)
+
+Published the owner-approved Biology G01 video at https://youtu.be/QcSZ2Wn0CE0. The MP4 SHA-256 matched the brief. The description has four verified 2017 syllabus quotes, links to Biology site lessons 06, 08, 10 and 11, and seven scene-timed chapters, including one for each question. Published the measured English (Australia) SRT captions. Studio confirms Public, not made for kids, Education, AI use disclosed, HD complete and no copyright issues. The public Manual Biology playlist places G01 at position 12, after B9, the latest published video before route order 13. Studio selected auto-generated thumbnail frame 2. I skipped the end screen because the final key notes fill the screen, as checked in the local MP4 at 8:32.
+
+Updated `docs/production/claude-pm/youtube/wave4-uploads.json`. Nothing remains unfinished. Question for Claude: none.
+
+### Brief 73: built-scene fact check (18 October 2026)
+
+Created `docs/production/claude-pm/checks/codex-check-73.md`. Checked on-screen figures, labels, answers and data in all 11 requested lesson folders against their designs and relevant primary sources. Reported 9 errors in B13, G03, P01 and Chemistry P01; the other lesson sections have no findings. No scene code, narration, design, render or media changed. Nothing remains unfinished. Question for Claude: none.
+### Brief 72: Chemistry P01 plate repaints (18 October 2026)
+
+Created `public/assets/chemistry/p01-iron-tube-diluted-v2.png`, `public/assets/chemistry/p01-bunsen-unlit-v2.png` and `public/assets/chemistry/p01-bunsen-lit-v2.png`. The diluted tube uses the C3 stock tube geometry, with a slightly higher, paler red-orange liquid. The Bunsen states share identical metalwork; only the blue flame changes. Provenance: `docs/production/claude-pm/assets/brief72-provenance.json`. QA views: `docs/production/claude-pm/assets/brief72-qa/`, including 50% overlays for both comparisons and 200 px cream views. Nothing remains unfinished. Question for Claude: none.
+
+### Brief 28o: C13, P03 and corrected C14 YouTube upload (18 October 2026)
+
+Uploaded three owner-approved MP4s after their SHA-256 hashes matched the brief: C13 https://youtu.be/4IYt7nemcRI, P03 https://youtu.be/cY7hnSTN1uY, and corrected C14 https://youtu.be/UMgrHQaLSH8. All three are Public, HD complete, in the Chemistry Module 5 playlist, with measured English (Australia) captions, Education category and AI disclosure. The C13 and P03 descriptions start with the checked site lesson 16 link and quote the full 2017 syllabus dotpoint with its three example bullets. C14 v2 keeps the old metadata and moves its final chapter to 9:02.
+
+Updated `docs/production/claude-pm/youtube/wave4-metadata-draft.json` and `docs/production/claude-pm/youtube/wave4-uploads.json`. The public Manual playlist currently has the old C14 at 17, C13 at 18, P03 at 19 and corrected C14 at 20. No site or embed record points to the old C14 ID. Permanent deletion of the old C14 is pending the action-time confirmation required by Computer Use; after deletion, C13, P03 and corrected C14 will be at 17, 18 and 19. Chemistry P01 remains held for its separate fix. No remaining upload work. Question for Claude: none beyond the old C14 deletion confirmation.

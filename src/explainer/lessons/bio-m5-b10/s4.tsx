@@ -9,6 +9,7 @@ import {
 	INK, INK_SOFT, MistakeChip, ModelLine, Overlay, PCB, PL10, PSym, Pedigree, PlateB, Punnett, S, SexChrom, Sx, TEALC, groupMarks, hold, lerp, notesCheck,
 	pedXY, prog, wrap, fadeV,
 } from './shared';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 import type {PLay} from './shared';
 import {SexBands} from './s1';
 
@@ -89,8 +90,7 @@ export const SceneFeedbackOneB10: React.FC = () => {
 				<g opacity={fadeV(f, K13.father - 4, K13.carrier + 30)}><SexChrom x={lerp(ax, bx, t) + 46} y={lerp(ay, by, t) - Math.sin(Math.PI * t) * 30} kind="X" tag="b" s={0.7} /></g>
 				<GenoTag x={bx} y={by + 90} text="X^{B} X^{b}" size={26} o={prog(f, K13.carrier, 12)} stroke={AMBER} />
 				<GenoTag x={xy('II-2')[0]} y={by + 90} text="X^{B} Y" size={26} o={prog(f, K13.carrier + 8, 12)} />
-				<Punnett x={G.x} y={G.y} cell={G.cell} res={CB} top={['X^{B}', 'Y']} side={['X^{B}', 'X^{b}']} gridAt={K13.carrier} topAt={K13.carrier + 2} sideAt={K13.carrier + 4} fillAt={i => fills[i]} discR={G.dr} chipR={18}
-					icon={(i, x, y) => { const c = CB.cells[i]; return <PSym x={x} y={y + 8} sex={c.male ? 'M' : 'F'} aff={c.ph === 'colour-blind'} dot={c.ph === 'carrier' ? 1 : 0} sz={34} />; }} />
+				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={CB} top={['X^{B}', 'Y']} side={['X^{B}', 'X^{b}']} gridAt={K13.carrier} topAt={K13.carrier + 2} sideAt={K13.carrier + 4} fillAt={i => fills[i]} discR={G.dr} chipR={18} phen />
 				<SexBands x={G.x} y={G.y} cell={G.cell} dr={G.dr} at={K13.carrier + 4} />
 				<g opacity={fadeV(f, K13.half - 4, K13.all)}><rect x={G.x + G.cell - 2} y={G.y - 2} width={G.cell + 4} height={2 * G.cell + 4} rx={12} fill="none" stroke={AMBER} strokeWidth={6} /></g>
 				<g opacity={fadeV(f, K13.all, K13.every)}><rect x={G.x - 8} y={G.y - 8} width={2 * G.cell + 16} height={2 * G.cell + 16} rx={14} fill="none" stroke={AMBER} strokeWidth={6} /></g>
@@ -178,10 +178,9 @@ export const SceneFeedbackTwoB10: React.FC = () => {
 				<Family x={460} y={330} s={0.85} at={[-30, -30, -30]} geno={['I^{A} i', 'I^{B} i', 'i i']} genoAt={[K15.mother, K15.father, K15.twoi + 4]} />
 				{up([316, 330], K15.fromeach)}
 				{up([604, 330], K15.fromeach + 6)}
-				<Punnett x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K15.sq - 4} topAt={K15.sq - 2} sideAt={K15.sq} fillAt={i => K15.sq + 4 + i * 5} discR={G.dr} chipR={18}
-					icon={(i, x, y) => { const m = groupMarks(ABO.cells[i].ph); return <AntigenCell id={'fb' + i} x={x - 30} y={y + 4} w={40} a={m.a} b={m.b} labels={false} />; }}
+				<PunnettHSC x={G.x} y={G.y} cell={G.cell} res={ABO} top={['I^{A}', 'i']} side={['I^{B}', 'i']} gridAt={K15.sq - 4} topAt={K15.sq - 2} sideAt={K15.sq} fillAt={i => K15.sq + 4 + i * 5} discR={G.dr} chipR={18}
+					phen={i => prog(f, K15.sq + 14 + i * 5, 12)} phenText={i => `type ${ABO.cells[i].ph}`} phenSize={26}
 					ring={i => (ABO.cells[i].ph === 'AB' ? prog(f, K15.chance, 10) : 0)} />
-				{ABO.cells.map(c => { const x = G.x + ((c.i % 2) + 0.5) * G.cell, y = G.y + (Math.floor(c.i / 2) + 0.5) * G.cell; return <Sx key={c.i} x={x + 30} y={y + 46} text={c.ph} size={32} color={INK} weight={800} anchor="middle" at={K15.sq + 14 + c.i * 5} />; })}
 				<ModelLine x={1000} y={720} text="(a) mother I^{A} i, father I^{B} i, child i i" at={K15.father + 6} size={34} />
 				<ModelLine x={1000} y={790} text={`(b) ${ABO.frac(c => c.ph === 'AB')} (25%)`} at={K15.chance} size={34} />
 				<MistakeChip x={96} y={880} text="type A × type B can't give type O" at={K15.ifs} cross={K15.cant + 10} size={30} />

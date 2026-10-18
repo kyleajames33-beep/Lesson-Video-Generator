@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C14-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c14/lesson.json",
+  "lessonSha256": "7c5c01ea0129dbeae42b6949014b5194df24b302c76945189b980c46e54a8d64",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c14/lesson.production-brief.json",
+    "sha256": "846bca902cbf2b58d17ba32e64200a5dbc72e86d662fbd4f2121467dedbf710b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the precipitation video, barium sulfate was the safe one: it barely dissolves, so a barium meal passes through the gut. But barely isn't \"not at all\". Some barium sulfate does dissolve. So how much, exactly? You'll calculate it from one number in a data table, and you'll see why a bigger number in that table doesn't always mean a more soluble salt.",
+      "hash": "ad7ed7e380ee",
+      "textSha256": "ad7ed7e380ee32040334aef611d1ef81c02001f19be11c3f178235ac491ff84a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/hook.ad7ed7e380ee.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/hook.ad7ed7e380ee.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/hook.ad7ed7e380ee.generation.json",
+      "plannedRequestSha256": "e8255ea44634dc4860aa9342ed747d98b6358011b54018c7c1264461f95cd4a7"
+    },
+    {
+      "id": "saturated",
+      "parentSceneId": "saturated",
+      "text": "Put excess barium sulfate in water and stir. A tiny amount dissolves, and the rest sits on the bottom. That's a saturated solution: it holds as much as it can at that temperature. As you saw in the dissolving video, ions keep leaving the solid and rejoining it at equal rates. So a saturated solution is an equilibrium, with an equation: solid barium sulfate in equilibrium with barium ions and sulfate ions.",
+      "hash": "db3a8a180a6c",
+      "textSha256": "db3a8a180a6c707544771ef3b3f4f1ab86dae4807cf1222aed71d6c84be0fc87",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/saturated.db3a8a180a6c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/saturated.db3a8a180a6c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/saturated.db3a8a180a6c.generation.json",
+      "plannedRequestSha256": "41650ccfcf2d3f1a5ea24f0e33f57262dd4c0bff0f78d2b523944f2cf5e7055c"
+    },
+    {
+      "id": "ksp-expression",
+      "parentSceneId": "ksp-expression",
+      "text": "Every equilibrium has a K. Products go on top. The reactant is a solid, and solids are left out, so there's no bottom at all. K is just the barium ion concentration times the sulfate ion concentration. It's a product of ion concentrations, so it's called the solubility product, K s p. Like every K, it changes only with temperature, and we write it without a unit. At 25 degrees, the data table gives barium sulfate a Ksp of 1.08 times ten to the minus ten.",
+      "hash": "fec91fbd04e1",
+      "textSha256": "fec91fbd04e1a237359cc366536c418bce36fb0965c59935dbaf262c5672d1b8",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/ksp-expression.fec91fbd04e1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/ksp-expression.fec91fbd04e1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/ksp-expression.fec91fbd04e1.generation.json",
+      "plannedRequestSha256": "c2460fac412a543af365f262cc57a5e8e5a3d513f14bb7b6c9a9644ed5ce37d5"
+    },
+    {
+      "id": "powers",
+      "parentSceneId": "powers",
+      "text": "If the formula has a subscript, the equation gets a coefficient. Calcium fluoride, C a F two, dissolves into one calcium ion and two fluoride ions. As in any K, the coefficient becomes a power: Ksp is calcium, times fluoride squared.",
+      "hash": "a9020b287e70",
+      "textSha256": "a9020b287e701d22c5948441e44fac754f76be35e05ad148b79b349423551027",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/powers.a9020b287e70.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/powers.a9020b287e70.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/powers.a9020b287e70.generation.json",
+      "plannedRequestSha256": "57a2857c1625af0b70a76b735d250a525fe1060350b71af9b3baae679cdbd343"
+    },
+    {
+      "id": "molar-solubility",
+      "parentSceneId": "molar-solubility",
+      "text": "Ksp isn't the solubility itself. The molar solubility, s, is the number of moles of solid that dissolve per litre, to make a saturated solution. To link the two, ask what one formula unit gives. Each barium sulfate that dissolves gives one barium ion and one sulfate ion. So if s moles per litre dissolve, both ion concentrations are s.",
+      "hash": "60d6b1ab4d0d",
+      "textSha256": "60d6b1ab4d0dd72e915c58d4264b5c8f781038a9487af6b950d0e88770e87c86",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/molar-solubility.60d6b1ab4d0d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/molar-solubility.60d6b1ab4d0d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/molar-solubility.60d6b1ab4d0d.generation.json",
+      "plannedRequestSha256": "20ecd93a57f913890aeffd127ef44bcdb6cec33284951ac2c288b4baa1749578"
+    },
+    {
+      "id": "baso4-ice",
+      "parentSceneId": "baso4-ice",
+      "text": "Let's put it in an I C E table: I for initial, C for change, and E for equilibrium. In pure water, both ions start at zero. s dissolves, so the change is plus s for each ion, and the equilibrium row is s and s. The solid gets no column in Ksp.",
+      "hash": "135782635c64",
+      "textSha256": "135782635c64ecb59262faa5ead23fefcb4664a36dbc4b7a378729e7103f7a4d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/baso4-ice.135782635c64.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/baso4-ice.135782635c64.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/baso4-ice.135782635c64.generation.json",
+      "plannedRequestSha256": "cc7d22592ba95514368bfc2e3d562684c31fc9544491a86bdff6aae76efa1949"
+    },
+    {
+      "id": "baso4-solve",
+      "parentSceneId": "baso4-solve",
+      "text": "Substitute: Ksp is s times s, which is s squared, and that equals 1.08 times ten to the minus ten. Take the square root of both sides: s is 1.04 times ten to the minus five moles per litre. Check: 1.04 times ten to the minus five, squared, gives 1.08 times ten to the minus ten. Multiply by the molar mass, 233 grams per mole, and that's about 2.4 milligrams in a whole litre. That's what barely means.",
+      "hash": "4805c64ab2eb",
+      "textSha256": "4805c64ab2ebba27d2ba47dcb0c33aef399babba8310140a92d2210014c038e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/baso4-solve.4805c64ab2eb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/baso4-solve.4805c64ab2eb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/baso4-solve.4805c64ab2eb.generation.json",
+      "plannedRequestSha256": "7674a37b5bb00a140d95118a10abdcba4fa221003130c010f565262e74c094ca"
+    },
+    {
+      "id": "caf2-setup",
+      "parentSceneId": "caf2-setup",
+      "text": "Now calcium fluoride, with a Ksp of 3.45 times ten to the minus eleven. Each formula unit gives one calcium ion and two fluoride ions. So if s dissolves, calcium rises by s, but fluoride rises by two s. The equilibrium row is s and two s. Substitute: Ksp is s, times two s, all squared. Two s all squared is two s times two s, which is four s squared, not two s squared. So Ksp is four s cubed.",
+      "hash": "f35473a4d4e8",
+      "textSha256": "f35473a4d4e800157e681f1573541a7911beb9a7c9c9c48572c34c6cbe98d0cd",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/caf2-setup.f35473a4d4e8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/caf2-setup.f35473a4d4e8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/caf2-setup.f35473a4d4e8.generation.json",
+      "plannedRequestSha256": "df4be1495d535cd3312360ebfd7775b2347e8bc108d0789e9e200eec8bd30ad7"
+    },
+    {
+      "id": "caf2-solve",
+      "parentSceneId": "caf2-solve",
+      "text": "Four s cubed equals 3.45 times ten to the minus eleven. Divide both sides by four: s cubed is 8.63 times ten to the minus twelve. Then take the cube root: s is 2.05 times ten to the minus four moles per litre. The fluoride concentration is two s: 4.10 times ten to the minus four.",
+      "hash": "3a5a346aefa7",
+      "textSha256": "3a5a346aefa7932ed559fe81fa1eaa6afc3df2d15a9315a1fd25c82d72f8dba0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/caf2-solve.3a5a346aefa7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/caf2-solve.3a5a346aefa7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/caf2-solve.3a5a346aefa7.generation.json",
+      "plannedRequestSha256": "16535cecfff473526cd7ab1876f2ff63a4376e0d07a69d94a8f768591b6c7b7d"
+    },
+    {
+      "id": "trap-2s",
+      "parentSceneId": "trap-2s",
+      "text": "The classic slip is writing s for fluoride, instead of two s. Then Ksp looks like s cubed, and s comes out as 3.26 times ten to the minus four: about 1.6 times too big. The two comes from the formula, so it goes inside the bracket, before you square.",
+      "hash": "7a9aab2c38c3",
+      "textSha256": "7a9aab2c38c36ba967e2e08ebcf0823ef528dc6b07f03ddc56509c6fcc34aef0",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/trap-2s.7a9aab2c38c3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/trap-2s.7a9aab2c38c3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/trap-2s.7a9aab2c38c3.generation.json",
+      "plannedRequestSha256": "4ea84512570cbef8e95d327474551ee54c3d8c8254e6432c75435676f17ca987"
+    },
+    {
+      "id": "compare-ksp",
+      "parentSceneId": "compare-ksp",
+      "text": "Now compare the two salts. Barium sulfate has the bigger Ksp, but calcium fluoride's molar solubility is about twenty times bigger. How? Barium sulfate's Ksp is s squared, and calcium fluoride's is four s cubed. Different formulas give different powers, so their Ksp values aren't on the same scale. Compare Ksp values directly only for the same formula type, like barium sulfate against silver chloride. Otherwise, calculate s for each.",
+      "hash": "0c2ef637dd80",
+      "textSha256": "0c2ef637dd807a16baa9c1eaaf988070f7b06a40ab1b78138f91ce36bb79de88",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/compare-ksp.0c2ef637dd80.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/compare-ksp.0c2ef637dd80.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/compare-ksp.0c2ef637dd80.generation.json",
+      "plannedRequestSha256": "5982280d8346b67e5c40b8673d9380d7bcbb8eec8b93e6317e6d68db2c8dc697"
+    },
+    {
+      "id": "reverse-erow",
+      "parentSceneId": "reverse-erow",
+      "text": "It also works backwards. A saturated magnesium hydroxide solution is found to contain 1.12 times ten to the minus four moles per litre of dissolved magnesium hydroxide. This time we have a measured value, so it goes into the equilibrium row first: magnesium ions, 1.12 times ten to the minus four. The change is equilibrium minus initial, the same amount.",
+      "hash": "9419f29ae870",
+      "textSha256": "9419f29ae870d709e56d38830974a67559859d125c3f2b3016ef381a26ede8de",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/reverse-erow.9419f29ae870.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/reverse-erow.9419f29ae870.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/reverse-erow.9419f29ae870.generation.json",
+      "plannedRequestSha256": "36189c2186bb05a2d08961ca36ff84ac0817399a27d4257eaac1a268a80416e5"
+    },
+    {
+      "id": "reverse-ksp",
+      "parentSceneId": "reverse-ksp",
+      "text": "Each formula unit gives two hydroxide ions, so hydroxide rises by twice that: 2.24 times ten to the minus four. Ksp is magnesium times hydroxide squared: 5.62 times ten to the minus twelve. Forget to double the hydroxide, and your Ksp comes out four times too small.",
+      "hash": "183ea48942d0",
+      "textSha256": "183ea48942d0e76aee01891971e6a0d6b0d80b5b7549138e5c386d1cfc06bf5a",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/reverse-ksp.183ea48942d0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/reverse-ksp.183ea48942d0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/reverse-ksp.183ea48942d0.generation.json",
+      "plannedRequestSha256": "4a01f647cbe46efb9de55aee2f952e4b1d9b6fb4b579da8b790d3e68d03c4ebb"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's the habit. Each ion is its count times s. Then raise it to that count. One to one gives s squared. One to two, either way round, gives four s cubed.",
+      "hash": "83ef234b6559",
+      "textSha256": "83ef234b6559d85568f3368b6a9971ef87f695d48fb0de4ba419a1c55f1d3568",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/memory-aid.83ef234b6559.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/memory-aid.83ef234b6559.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/memory-aid.83ef234b6559.generation.json",
+      "plannedRequestSha256": "b30699c63591f853595fe5bd6629b6bcfc8df300b4a970de66c509e36729c3f4"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Lead iodide has a Ksp of 9.8 times ten to the minus nine at 25 degrees. Calculate its molar solubility in water. Pause here to answer.",
+      "hash": "7c8e81cfc0c3",
+      "textSha256": "7c8e81cfc0c301e8ad1db11fb3bf55b2a537458455077de4454cc1776b38db06",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/attempt-1.7c8e81cfc0c3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/attempt-1.7c8e81cfc0c3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/attempt-1.7c8e81cfc0c3.generation.json",
+      "plannedRequestSha256": "9fe6dbf7856c8665bf3b543c8ef6ae673ae827a6a6bb98cf33a32d19cebbf8d4"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Each lead iodide gives one lead ion and two iodide ions, so Ksp is s times two s squared: four s cubed. Divide both sides by four, take the cube root, and s is 1.35 times ten to the minus three moles per litre. If you got 2.14 times ten to the minus three, you used s instead of two s for iodide.",
+      "hash": "b05684e4feb2",
+      "textSha256": "b05684e4feb2e4f2e353010759f294f31014c03b34257351f38fcb2a77f405ad",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/feedback-1.b05684e4feb2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/feedback-1.b05684e4feb2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/feedback-1.b05684e4feb2.generation.json",
+      "plannedRequestSha256": "b769c583db61fec07f8b4d4aa6e98bba9796fc929f52ab3fff7a48d7a12d1c98"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A saturated solution of silver carbonate, A g two C O three, contains 0.0354 grams per litre. Its molar mass is 275.8 grams per mole. Calculate Ksp. Pause here to answer.",
+      "hash": "cca712af128a",
+      "textSha256": "cca712af128a17fff12377a28b86d5b2d6744b033b39db64c51b3cbe01c86aab",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/attempt-2.cca712af128a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/attempt-2.cca712af128a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/attempt-2.cca712af128a.generation.json",
+      "plannedRequestSha256": "4a9fd369041301d011cbaa32547a4cdd58b1a88ce5203674a5775d5b98152e3f"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "First, convert to moles: 0.0354 divided by 275.8 is 1.28 times ten to the minus four moles per litre. That measured value goes in the equilibrium row: carbonate is s, and silver is two s. Ksp is two s squared, times s: 8.46 times ten to the minus twelve. Keep the unrounded s in your calculator. If you put 0.0354 straight in as s, you skipped the conversion to moles.",
+      "hash": "1dba9397173f",
+      "textSha256": "1dba9397173fde5664ccab60d02c30980825ce9849dd6d1992ff49059939588f",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/feedback-2.1dba9397173f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/feedback-2.1dba9397173f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/feedback-2.1dba9397173f.generation.json",
+      "plannedRequestSha256": "064432c15d4fc5780884d16893c5fe7d452b42c9e7885b9559ce4b6bb7fb9d7f"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, for any Ksp question: write the dissolving equation, and each ion as its count times s. Given Ksp, solve for s with a square or cube root. Given a measured solubility, put it in the equilibrium row first, then multiply out. And compare Ksp directly only for the same formula type. Next: two solutions are mixed. Will a precipitate actually form?",
+      "hash": "cd67a1763e18",
+      "textSha256": "cd67a1763e18de9fda4375248e13a194f2428eec07722bf80ef2840fa163a942",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/decision-rule.cd67a1763e18.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/decision-rule.cd67a1763e18.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/decision-rule.cd67a1763e18.generation.json",
+      "plannedRequestSha256": "259d551bd7b240472effab42481e679d4dd1156d276d6e1a289e53db31fc4fab"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C14-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

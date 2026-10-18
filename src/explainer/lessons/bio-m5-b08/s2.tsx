@@ -6,7 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
 	ABead8, AMBER, AMBER_INK, Chip, Chr, DrawPath, FONT_DISPLAY, FONT_HAND, Fade, GAM_YR, GREYT, GREY_INK, GeneCard, GreyTag, Heading, INK, INK_SOFT, OVULES, Overlay,
-	PCell, PL8, PlainArrow, PlateB, Pollen, S, SEEDS, Soil, SpanBracket, Strand, Sx, Tick, TIP, clamp01, fmt, lerp, pbPt, pow2, prog, pulse, scribbleEllipse, vis,
+	Cell8, PL8, PlainArrow, PlateB, Pollen, S, SEEDS, Soil, SpanBracket, Strand, Sx, Tick, TIP, clamp01, fmt, lerp, pbPt, pow2, prog, pulse, scribbleEllipse, vis,
 } from './shared';
 import {CPL, CTE} from './s1';
 
@@ -119,7 +119,7 @@ export const SceneSiblingsB8: React.FC = () => {
 			<Overlay>
 				{PAR.map((c, k) => (
 					<g key={k} opacity={prog(f, 4 + k * 6, 14)}>
-						<PCell cx={c.x} cy={c.y} rx={230} ry={120} />
+						<Cell8 cx={c.x} cy={c.y} rx={230} ry={120} />
 						{(k === 0 ? P1 : P2).map((d, i) => <Chr key={i} x={c.x + d.dx} y={c.y + (d.kind === 'S' ? 8 : 0)} kind={d.kind} col={d.col} s={0.6} top={d.t} r={15} />)}
 					</g>
 				))}
@@ -127,7 +127,7 @@ export const SceneSiblingsB8: React.FC = () => {
 				<Sx x={1620} y={340} text="parent 2" size={36} color={INK_SOFT} hand at={10} />
 				{SEEDC.map((c, k) => (
 					<g key={k} opacity={prog(f, K6.seeds + k * 6, 14)}>
-						<PCell cx={c.x} cy={c.y} rx={230} ry={120} />
+						<Cell8 cx={c.x} cy={c.y} rx={230} ry={120} />
 						{SEED_SRC[k].map(([p, i], j) => { const d = defOf(p, i); return <Chr key={j} x={c.x + SDX[j]} y={c.y + (d.kind === 'S' ? 8 : 0)} kind={d.kind} col={d.col} s={0.6} top={d.t} r={15} />; })}
 					</g>
 				))}
@@ -243,7 +243,7 @@ export const SceneMutationB8: React.FC = () => {
 					<circle cx={560} cy={990} r={34} fill="#f6e6dc" stroke={INK_SOFT} strokeWidth={3} />
 					<Sx x={560} y={946} text="cell that makes eggs or sperm" size={28} color={INK} hand anchor="start" at={K7.cell - 6} />
 					<PlainArrow x1={600} y1={990} x2={760} y2={990} at={K7.cell + 4} color={INK_SOFT} />
-					<PCell cx={800} cy={990} rx={30} ry={24} />
+					<Cell8 cx={800} cy={990} rx={30} ry={24} />
 					<PlainArrow x1={840} y1={990} x2={1000} y2={990} at={K7.cell + 30} color={INK_SOFT} />
 				</Fade>
 				<PlateB p={PL8.flyRed} cx={1060} cy={990} w={60} o={prog(f, K7.cell + 40, 10)} />

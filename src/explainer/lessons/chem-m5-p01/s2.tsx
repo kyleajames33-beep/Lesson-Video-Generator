@@ -20,10 +20,10 @@ export const RESULT_ROWS = (ats: number[], lit?: ([number, number] | undefined)[
 	{at: ats[0], cells: ['2', 'Fe(NO_3)_3 crystals', 'deeper red', 'right', 'reactant added'], colors: [INK, INK, '#a31f2a', '#1f6fb2', INK_SOFT], lit: lit?.[0]},
 	{at: ats[1], cells: ['3', 'KSCN crystals', 'deeper red', 'right', 'reactant added'], colors: [INK, INK, '#a31f2a', '#1f6fb2', INK_SOFT], lit: lit?.[1]},
 	{at: ats[2], cells: ['4', '0.1 mol/L NaOH, drops', ['paler, faint', 'rust-brown solid'], 'left', 'Fe^{3+} removed'], colors: [INK, INK, AMBER_INK, AMBER_INK, INK_SOFT], lit: lit?.[2]},
-	...(ats[3] !== undefined ? [{at: ats[3], cells: ['5', 'same drops of water', 'very slightly paler', 'none', 'dilution only'], colors: [TEAL, TEAL, TEAL, TEAL, TEAL], lit: lit?.[3]} as TRow] : []),
+	...(ats[3] !== undefined ? [{at: ats[3], cells: ['5', 'same drops of water', 'very slightly paler', ['slightly', 'left'], 'dilution'], colors: [TEAL, TEAL, TEAL, TEAL, TEAL], lit: lit?.[3]} as TRow] : []),
 ];
 export const ResultsTable: React.FC<{y: number; ats: number[]; at: number; lit?: ([number, number] | undefined)[]}> = ({y, ats, at, lit}) => (
-	<Table x={RES_X} y={y} cols={[50, 260, 215, 95, 206]} head={['', 'added', 'colour vs tube 1', 'shift', 'reason']} rows={RESULT_ROWS(ats, lit)} at={at} rowH={62} size={24} headSize={28} />
+	<Table x={RES_X} y={y} cols={[50, 260, 215, 112, 189]} head={['', 'added', 'colour vs tube 1', 'shift', 'reason']} rows={RESULT_ROWS(ats, lit)} at={at} rowH={62} size={24} headSize={28} />
 );
 const EQ = {x: RES_X, y: 250, s: 42};
 

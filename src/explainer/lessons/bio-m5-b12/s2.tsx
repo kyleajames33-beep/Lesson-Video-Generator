@@ -38,8 +38,8 @@ export const SceneStrB12: React.FC = () => {
 				{/* two copies, one from each parent */}
 				{[0, 1].map(k => (
 					<g key={k} opacity={prog(f, k ? K5.eleven - 6 : K5.eight - 6, 12)}>
-						<rect x={140} y={pairY[k] - 22} width={1300} height={44} rx={22} fill={k ? TEALC : CPLUM} opacity={0.35} />
-						<RepeatStrip x={360} y={pairY[k]} n={k ? 11 : 8} bw={56} bh={34} grow={prog(f, k ? K5.eleven : K5.eight, 26)} />
+						<rect x={140} y={pairY[k] - 24} width={1300} height={48} rx={24} fill={k ? TEALC : CPLUM} fillOpacity={0.1} stroke={k ? TEALC : CPLUM} strokeWidth={2} strokeOpacity={0.5} />
+						<RepeatStrip x={360} y={pairY[k]} n={k ? 11 : 8} bw={56} bh={34} grow={prog(f, k ? K5.eleven : K5.eight, 26)} label={false} />
 					</g>
 				))}
 				<Sx x={1480} y={pairY[0] + 12} text="from mother" size={36} color={CPLUM} hand at={K5.parent} />
@@ -75,8 +75,8 @@ export const SceneGelB12: React.FC = () => {
 				{groups.map((g, k) => (
 					<g key={k}>
 						{Array.from({length: 4}, (_, j) => (
-							<g key={j} opacity={j === 0 ? prog(f, 0, 12) : stacks} transform={`translate(${j * 10},${j * 12})`}>
-								<RepeatStrip x={110} y={300 + k * 150} n={g.n} bw={26} bh={20} label={false} count={j === 3 ? 1 : 0} />
+							<g key={j} opacity={j === 0 ? prog(f, 0, 12) : stacks} transform={`translate(${j * 6},${j * 18})`}>
+								<RepeatStrip x={110} y={290 + k * 150} n={g.n} bw={26} bh={14} label={false} count={j === 3 ? 1 : 0} />
 							</g>
 						))}
 						{f >= K6.neg ? Array.from({length: 6}, (_, j) => <text key={j} x={170 + j * 50} y={286 + k * 150 + (j % 2) * 60} style={{fontFamily: 'Inter Tight', fontWeight: 800, fontSize: 30}} fill="#2f5d7a" opacity={0.4 + 0.6 * Math.abs(Math.sin((f - K6.neg) / 8 + j))}>{'−'}</text>) : null}

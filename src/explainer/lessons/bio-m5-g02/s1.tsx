@@ -5,7 +5,8 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {AMBER, AMBER_INK, FONT_DISPLAY, INK, INK_SOFT, prog} from '../../kit';
 import {Overlay} from '../bio-m5-b06b/shared';
-import {GenoTag, Pedigree, Punnett, SERIF} from '../bio-m5-b09/genetics';
+import {GenoTag, Pedigree, SERIF} from '../bio-m5-b09/genetics';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 import type {PLay} from '../bio-m5-b09/genetics';
 import {Badge, CheckList, CheckStrip, Crossed, Fade, GreyTag, QText, qCheck, HscTag, ModelLine, Note, PauseHold, Sx, TaskLine, AidChip, smooth, vis} from './board';
 import {CardFrame} from '../bio-m5-g01/s1';
@@ -92,7 +93,6 @@ const Q1Head: React.FC<{a?: Q1At; m?: Record<string, number>}> = ({a, m = {}}) =
 };
 const ANS1 = {a: '(a) blue = heterozygous; alleles separate: 1 : 2 : 1', b: `(b) 1/2 × 1/2 = ${TWO_BLUE}`, c: '(c) black × splashed white: all blue'};
 const PG = {x: 1110, y: 660, cell: 130};
-const chickIcon = (res: typeof BLUExBLUE, w = 48) => (i: number, x: number, y: number) => <PlateB p={chickOf(res.cells[i].ph)} cx={x} cy={y + 2} w={w} />;
 
 // ---------- 2a. Question 1 (pause) ----------
 const KA = cues(sc('q1-question'), {q: 'Question one', and: 'In Andalusian chickens', black: 'a black bird', white: 'splashed white bird', all: 'all blue', farmer: 'A farmer crosses', explain: 'Explain why', then: 'Then find the probability', fin: 'Finally', pause: 'Pause here'});
@@ -134,7 +134,7 @@ export const SceneQ1ModelG2: React.FC = () => {
 			))}
 			<Note x={980} y={556} text="Incomplete is in-between." at={KB.inc} size={36} />
 			<GreyTag x={1330} y={526} text="B10" at={KB.inc + 8} size={24} />
-			<Punnett x={PG.x} y={PG.y} cell={PG.cell} res={BLUExBLUE} top={[CB, CW]} side={[CB, CW]} gridAt={KB.two - 6} topAt={KB.two + 4} sideAt={KB.two + 14} fillAt={i => KB.two + 34 + i * 10} discR={34} chipR={21} icon={chickIcon(BLUExBLUE)} />
+			<PunnettHSC x={PG.x} y={PG.y} cell={PG.cell} res={BLUExBLUE} top={[CB, CW]} side={[CB, CW]} gridAt={KB.two - 6} topAt={KB.two + 4} sideAt={KB.two + 14} fillAt={i => KB.two + 34 + i * 10} discR={34} chipR={21} phen />
 			{BLUExBLUE.phen.map((q, i) => <Sx key={i} x={1420} y={740 + i * 46} text={`${q.n} ${q.ph}`} size={34} color={INK} weight={700} at={numAt[i] ?? KB.r3} />)}
 			<ModelLine x={130} y={862} text={ANS1.a} at={KB.r3 + 6} size={30} />
 			<CheckStrip labels={MOVES} title={MOVES_TITLE} ticks={{0: [KB.model]}} />
@@ -168,7 +168,7 @@ export const SceneQ1ChanceG2: React.FC = () => {
 		<Overlay>
 			<Q1Head m={{...done1(2), [M1[2]]: KC.first, [M1[3]]: KC.only}} />
 						<Badge text="Incomplete dominance" at={-100} />
-			<Punnett x={PG.x} y={PG.y} cell={PG.cell} res={BLUExBLUE} top={[CB, CW]} side={[CB, CW]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={34} chipR={21} icon={chickIcon(BLUExBLUE)} ring={blueRing} />
+			<PunnettHSC x={PG.x} y={PG.y} cell={PG.cell} res={BLUExBLUE} top={[CB, CW]} side={[CB, CW]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={34} chipR={21} phen ring={blueRing} />
 			<Sx x={PG.x} y={PG.y + 2 * PG.cell + 46} text={`blue: 2/4 = ${BLUExBLUE.frac(c => c.ph === 'blue')}`} size={36} color={AMBER_INK} weight={800} at={KC.half + 6} />
 			<g opacity={treeO}>
 				<circle cx={TREE.root[0]} cy={TREE.root[1]} r={8} fill={INK} opacity={prog(f, KC.sep, 10)} />
@@ -180,7 +180,7 @@ export const SceneQ1ChanceG2: React.FC = () => {
 				<Sx x={1450} y={440} text={`1/2 × 1/2 = ${TWO_BLUE}`} size={40} color={AMBER_INK} weight={800} at={KC.quarter} />
 			</g>
 			<AidChip x={1316} y={500} text="Separate offspring, known parents: multiply." at={KC.mult} size={24} />
-			<Punnett x={1470} y={720} cell={86} res={BLACKxWHITE} top={[CB, CB]} side={[CW, CW]} gridAt={KC.bw - 8} topAt={KC.bw} sideAt={KC.bw + 8} fillAt={i => KC.every - 10 + i * 6} discR={20} icon={chickIcon(BLACKxWHITE, 38)} />
+			<PunnettHSC x={1470} y={720} cell={86} res={BLACKxWHITE} top={[CB, CB]} side={[CW, CW]} gridAt={KC.bw - 8} topAt={KC.bw} sideAt={KC.bw + 8} fillAt={i => KC.every - 10 + i * 6} discR={20} phen />
 			<ModelLine x={130} y={862} text={ANS1.a} at={-100} size={30} />
 			<ModelLine x={130} y={908} text={ANS1.b} at={KC.quarter + 6} size={30} />
 			<ModelLine x={130} y={954} text={ANS1.c} at={KC.every + 20} size={30} />
@@ -195,8 +195,8 @@ export const SceneQ1MistakeG2: React.FC = () => (
 	<Overlay>
 		<Q1Head m={done1(4)} />
 				<Badge text="Incomplete dominance" at={-100} />
-		<Punnett x={PG.x} y={PG.y} cell={PG.cell} res={BLUExBLUE} top={[CB, CW]} side={[CB, CW]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={34} chipR={21} icon={chickIcon(BLUExBLUE)} />
-		<Punnett x={1470} y={720} cell={86} res={BLACKxWHITE} top={[CB, CB]} side={[CW, CW]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={20} icon={chickIcon(BLACKxWHITE, 38)} />
+		<PunnettHSC x={PG.x} y={PG.y} cell={PG.cell} res={BLUExBLUE} top={[CB, CW]} side={[CB, CW]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={34} chipR={21} phen />
+		<PunnettHSC x={1470} y={720} cell={86} res={BLACKxWHITE} top={[CB, CB]} side={[CW, CW]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={20} phen />
 		<Crossed x={1000} y={300} text="blue × blue gives only blue" at={KD.bb - 16} cross={KD.bb + 10} caption="heterozygotes don't breed true" size={34} />
 		<Crossed x={1000} y={450} text="1/2 + 1/2 = 1 (added instead of multiplied)" at={KD.sep + 4} cross={KD.sep + 24} size={30} />
 		<ModelLine x={130} y={862} text={ANS1.a} at={-100} size={30} />

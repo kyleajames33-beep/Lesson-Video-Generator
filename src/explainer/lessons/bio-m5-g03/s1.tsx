@@ -186,7 +186,7 @@ export const SceneWhyG03: React.FC = () => {
 					<Sx x={1200} y={270} text="faulty copy, inherited" size={30} color={INK} hand at={K3.inherits + 8} />
 					<Sx x={1200} y={320} text="working copy" size={30} color={AMBER_INK} hand at={K3.other} />
 					<Sx x={1200} y={380} text="inherited like a dominant trait;" size={24} color={INK_SOFT} weight={600} at={K3.other + 20} />
-					<Sx x={1200} y={412} text="in a cell, both copies must fail" size={24} color={INK_SOFT} weight={600} at={K3.other + 26} />
+					<Sx x={1200} y={412} text="in a cell, the working copy is often lost too" size={24} color={INK_SOFT} weight={600} at={K3.other + 26} />
 				</g>
 				{/* the cell row */}
 				{Array.from({length: 20}, (_, i) => {
@@ -202,7 +202,7 @@ export const SceneWhyG03: React.FC = () => {
 					);
 				})}
 				<Ring cx={140 + (LOST % 10) * 170} cy={585 + Math.floor(LOST / 10) * 145} rx={84} ry={70} at={K3.loses + 18} />
-				<Sx x={140 + (LOST % 10) * 170 + 100} y={822} text="both copies lost: this cell can become a cancer" size={30} color={AMBER_INK} hand at={K3.loses + 20} />
+				<Sx x={140 + (LOST % 10) * 170 + 100} y={822} text="working copy lost: this cell can become a cancer" size={30} color={AMBER_INK} hand at={K3.loses + 20} />
 				<Sx x={100} y={500} text="chance" size={32} color={INK} hand at={K3.chance} />
 				<Sx x={260} y={500} text="other genes" size={32} color={INK} hand at={K3.genes} />
 				<Sx x={480} y={500} text="other factors: hormones, age" size={32} color={INK} hand at={K3.factors} />

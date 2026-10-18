@@ -163,7 +163,7 @@ export const SceneTranslateP01: React.FC = () => {
 				</Fade>
 				<Sx x={CZ.x + 22} y={574} text="UGA: stop, no tRNA fits" size={34} color={INK} hand at={K8.nofit} />
 				<Sx x={1450 - beadPitch(r)} y={700} text="the chain comes off" size={30} color={AMBER_INK} hand anchor="middle" at={K8.off + 20} />
-				<GreyTag x={CZ.x} y={800} text="a real ribosome holds two tRNAs at a time" at={K8.keep} size={20} />
+				<GreyTag x={CZ.x} y={800} text="real ribosome: up to three tRNAs (A, P and E sites)" at={K8.keep} size={20} />
 				<ColourKey />
 			</Overlay>
 		</>

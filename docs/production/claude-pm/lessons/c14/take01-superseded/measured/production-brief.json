@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/c14/measured/lesson.json",
+    "lessonSha256": "3e5dac08ea622270f7d2f0d8e1d0a65047401000ec29bcfbb4e3a9c1a4702885"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C5, C6a, C6b, C10, C11, C13 and Year 11: a saturated solution is a dynamic equilibrium with equal rates (C11); K expressions with powers and solids left out, and no unit written (C5); the ICE table with the measured value in the equilibrium row first and square-root moves (C6a, C6b); Ksp named as the K for a dissolving solid (C10); solubility rules and the barium meal (C13); ionic formulas, moles, molar mass and scientific notation (Year 11). Not assumed: Qsp, mixing, the common ion.",
+    "startsWith": "A glass of barium meal, barium sulfate that barely dissolves, with the question of how much \"barely\" is and why a bigger Ksp does not always mean a more soluble salt.",
+    "stopsAfter": "Writing the dissolution equation and Ksp expression for 1 : 1 and 1 : 2 (or 2 : 1) salts; calculating molar solubility in pure water from Ksp with ion concentrations s and 2s; calculating Ksp from a measured solubility in mol/L or g/L with the measured value in the equilibrium row first; explaining why Ksp values rank solubility only for the same formula type. No Qsp, no mixing, no common ion, no temperature calculations, no 1 : 3 or 3 : 2 salts.",
+    "nextLesson": "C15: will mixing these solutions form a precipitate? Qsp against Ksp, dilution on mixing and the common ion effect."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-c14.md"
+  ],
+  "teaching": {
+    "task": "Calculate the molar solubility of a salt from its Ksp, and the Ksp of a salt from a measured solubility.",
+    "causalExplanation": "A saturated solution has ions leaving and rejoining the solid at equal rates, so it is an equilibrium with its own K, and the solid is left out of K so Ksp is a product of ion concentrations with no denominator. A subscript in the formula becomes a coefficient in the equation and then a power in Ksp. Molar solubility, s, is the moles of solid that dissolve per litre, and each ion concentration follows from what one formula unit gives: s for a 1 : 1 salt, and s and 2s for a 1 : 2 salt, where the whole bracket is squared. A measured solubility is an equilibrium value, so it goes in the equilibrium row first and the change is found from it, and grams per litre are converted to moles per litre first. Different formula types give different powers of s, so a bigger Ksp can belong to the less soluble salt, and Ksp is compared directly only for the same type.",
+    "conversationalApproach": "Opens on the barium meal and asks how much barely is, builds the saturated equilibrium and the Ksp expression, links Ksp to molar solubility with an ICE table, works a 1 : 1 and a 1 : 2 salt one stage at a time, names the s-for-2s trap with its size, compares unlike salts, works one example backwards, gives the memory aid, then asks two unseen items with a short pause and brief feedback.",
+    "openingDecision": "Barium sulfate barely dissolves, so a barium meal passes through the gut. But barely is not none. How much dissolves, and why does a bigger number in the data table not always mean a more soluble salt?",
+    "understandingCheck": "Lead iodide has a Ksp of 9.8 x 10^-9: calculate its molar solubility in water. Then a saturated silver carbonate solution contains 0.0354 g/L with a molar mass of 275.8 g/mol: calculate its Ksp.",
+    "curriculumScope": "Derive equilibrium expressions for saturated solutions in terms of Ksp and calculate the solubility of an ionic substance from its Ksp value (Module 5, 2017 syllabus p51). Qsp, mixing, the common ion, tooth enamel and 1 : 3 and 3 : 2 salts are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted barium meal glass, the painted unsaturated and saturated beakers, the C5 and C10 expression builder with its left-out tray, the C6 ICE table with a greyed solid column, the C6a E-row-first pen arrow, the C8 log number line, a coded ratio-true ion lens, ghost lines with strikes and the countdown ring. Colour key: positive ions amber, negative ions violet, water shells pale blue, s and its terms teal, Ksp teal, the solid in its real colour.",
+    "transitionPlan": "The barium meal glass opens the lesson and the beakers carry the equilibrium scenes; the builder replaces the beaker for the expression and returns for each new formula; each calculation clears to the same three-zone board (task, strip, givens, then the table and algebra on the right); the data strip returns large for the comparison; each attempt clears the board and its feedback rebuilds the table cell by cell; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "The painted barium meal glass with the C13 chip, a particle lens, a two-row Ksp strip and a pen question mark",
+      "teachingReason": "Poses the puzzle that a barely soluble salt still dissolves a little, and that a bigger Ksp may not mean a more soluble salt",
+      "narrationCue": "does dissolve / calculate / bigger",
+      "motionPurpose": "A lens opens over the glass to show a few dissolved ions, the Ksp strip slides in and a pen question mark lands between its two rows",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-barium-meal-glass-v1.png` centre, with the C13 chip \"BaSO4(s): barely dissolves\" pinned beside it (callback). On \"does dissolve\" a particle lens opens over the glass: a few amber Ba2+ and violet SO4 2- ions with water shells drift among many solid specks (tag \"a few ions dissolved\"). On \"calculate\" a coded Ksp strip slides in at the bottom: \"BaSO4 1.08 x 10^-10\", \"CaF2 3.45 x 10^-11\" (two rows only, tagged \"Ksp at 25 C\"; CaF2 is not on the HSC data sheet, so the strip is not labelled \"data sheet\"). On \"bigger\" a pen \"?\" lands between the two rows. Heading \"Barely dissolves. How much is barely?\"",
+      "motionTools": [
+        "plate callout",
+        "lens open",
+        "strip slide",
+        "scribbleEllipse",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "saturated",
+      "visualDecision": "adjust",
+      "visualReference": "The painted unsaturated and saturated beakers, a ratio-true ion swarm lens and the equilibrium equation strip",
+      "teachingReason": "Shows that excess solid in water makes a saturated solution, which is an equilibrium with its own equation",
+      "narrationCue": "saturated solution / leaving / rejoining / equilibrium",
+      "motionPurpose": "The empty beaker crossfades to the saturated one, ions leave and rejoin the crystal at equal rates in the lens, and the equation writes on",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-unsaturated-beaker-v1.png` crossfades to `m5x-saturated-beaker-v1.png` (aligned pair) as the solid settles. On \"saturated solution\" the term and its plain meaning write under the beaker. On \"leaving\" a lens on the crystal floor (ported ion swarm, 1 : 1 ratio) shows a Ba2+ and an SO4 2- leaving with water shells; on \"rejoining\" another pair docks back; two equal arrows \"dissolving rate = crystallising rate\" pulse (callback chip \"dissolving video\"). On \"equilibrium\" the equation strip writes: \"BaSO4(s) <=> Ba2+(aq) + SO4 2-(aq)\".",
+      "motionTools": [
+        "plate crossfade",
+        "lens open",
+        "arrow pulse",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ksp-expression",
+      "visualDecision": "adjust",
+      "visualReference": "The C5 and C10 expression builder with its left-out tray, applied to barium sulfate",
+      "teachingReason": "Builds the Ksp expression with no denominator because the solid is left out, and names it the solubility product",
+      "narrationCue": "solid / no bottom / solubility product / K s p / 1.08 times ten to the minus ten",
+      "motionPurpose": "The ion tiles fly up to the numerator, the solid tile drops into the tray, the fraction bar fades and the Ksp line and the data table value write on",
+      "motionRole": "explain",
+      "onScreenChange": "the C5 and C10 expression builder: the strip's tiles lift; Ba2+ and SO4 2- fly to the numerator; on \"solid\" the BaSO4(s) tile drops into the \"left out\" tray (tag \"solid: left out\"). On \"no bottom\" the fraction bar fades away and a chip \"[Ba2+][SO4 2-] / [BaSO4]\" fades in and is crossed (caption \"no solid, no bottom\"). Line writes: \"Ksp = [Ba2+][SO4 2-]\". On \"solubility product\" the term writes with \"K for a saturated solution\" under it. A small tag \"changes only with temperature; no unit written\". On \"1.08 times ten to the minus ten\" the givens card writes \"Ksp(BaSO4) = 1.08 x 10^-10 (25 C)\".",
+      "motionTools": [
+        "expression builder",
+        "tile fly",
+        "strike",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "powers",
+      "visualDecision": "adjust",
+      "visualReference": "The builder cleared for calcium fluoride with a pen line from the subscript to the coefficient",
+      "teachingReason": "Shows that a subscript becomes a coefficient and the coefficient becomes a power in the Ksp expression",
+      "narrationCue": "two fluoride ions / power / squared",
+      "motionPurpose": "A pen line runs from the subscript 2 to the coefficient 2, then the coefficient chip flies up and lands as the exponent",
+      "motionRole": "explain",
+      "onScreenChange": "the builder clears. Equation strip writes: \"CaF2(s) <=> Ca2+(aq) + 2F-(aq)\"; on \"two fluoride ions\" a pen line runs from the subscript 2 in CaF2 to the coefficient 2 on F-. On \"power\" the coefficient chip flies up and becomes the exponent (builder motion): \"Ksp = [Ca2+][F-]^2\", CaF2(s) in the tray. (Revision 2: the unspoken Ag2CrO4 line is removed; it competed with the CaF2 line and the 2 : 1 order is taught in scene 12b and attempt 2.)",
+      "motionTools": [
+        "DrawPath",
+        "chip fly",
+        "expression builder"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "molar-solubility",
+      "visualDecision": "adjust",
+      "visualReference": "The saturated beaker with a formula-unit lens that splits one barium sulfate into one barium ion and one sulfate ion",
+      "teachingReason": "Defines molar solubility, s, and links it to each ion concentration through what one formula unit gives",
+      "narrationCue": "molar solubility / one barium ion / both ion concentrations are s",
+      "motionPurpose": "The term writes in teal, one formula unit lifts off the crystal and splits into two ions, and both ion labels gain a teal s tag",
+      "motionRole": "explain",
+      "onScreenChange": "back to the saturated beaker with the BaSO4 strip. On \"molar solubility\" the term writes in teal: \"s = mol of solid dissolved per litre (mol/L)\". On \"one\" a single BaSO4 unit lifts off the crystal in the lens and splits into one Ba2+ and one SO4 2-, each tagged \"1\"; the swarm repeats in a quick wave (always pairs). On \"s\" both ion labels in the strip gain teal \"s\" tags.",
+      "motionTools": [
+        "HandText write-on",
+        "lens split",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "baso4-ice",
+      "visualDecision": "adjust",
+      "visualReference": "The C6 ICE table with ion columns and a greyed left-out solid column, filled for barium sulfate in pure water",
+      "teachingReason": "Starts the first worked example by filling the I, C and E rows from zero with the change equal to s",
+      "narrationCue": "I for initial / C for change / E for equilibrium / zero / plus s",
+      "motionPurpose": "The letters I, C and E expand on their cues, the initial row ticks zero, coefficient chips fly in and the change and equilibrium rows fill with s",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Find s for BaSO4 in water\". ICE table (C6 component): columns Ba2+ and SO4 2- with \"mol/L\", and a narrow greyed BaSO4(s) column labelled \"left out\". The letters I, C, E expand on their cues (C6a motion). On \"zero\" the Initial row ticks \"0\", \"0\" with tag \"pure water\". On \"plus s\" the Change row writes \"+s\", \"+s\" in teal with the coefficient chips \"1\", \"1\" flying from the strip. Equilibrium row: \"s\", \"s\".",
+      "motionTools": [
+        "ICE table",
+        "letter expand",
+        "chip fly",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "baso4-solve",
+      "visualDecision": "adjust",
+      "visualReference": "The algebra line with root signs, a silent check line and a milligram side card with the barium meal plate returning small",
+      "teachingReason": "Solves for s by a square root, checks it and turns it into milligrams per litre to show what barely means",
+      "narrationCue": "Take the square root of both sides / 1.04 times ten to the minus five / 2.4 milligrams in a whole litre",
+      "motionPurpose": "Algebra stages write one per line, root signs draw over both sides, the answer ticks and the side card and plate show about 2.4 milligrams per litre",
+      "motionRole": "explain",
+      "onScreenChange": "the algebra line, one stage per line: \"Ksp = [Ba2+][SO4 2-] = s x s = s^2\"; \"s^2 = 1.08 x 10^-10\"; on \"Take the square root of both sides\" root signs draw over both sides with the aside \"square root of both sides\"; \"s = 1.04 x 10^-5 mol/L\" ticks. Silent check line \"(1.04 x 10^-5)^2 = 1.08 x 10^-10\" with a teal tick. On \"molar mass\" a side card: \"1.04 x 10^-5 mol/L x 233 g/mol = 2.4 x 10^-3 g/L\". On \"2.4 milligrams\" the barium meal plate returns small with a tag \"about 2.4 mg per litre dissolves\".",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "tick pop",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "caf2-setup",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh three-zone board for calcium fluoride with a ratio-true lens, the ICE table and the algebra line with a crossed 2s squared chip",
+      "teachingReason": "Shows that fluoride rises by 2s so the bracket is squared, giving four s cubed, and blocks the (2s) squared slip",
+      "narrationCue": "3.45 times ten to the minus eleven / two fluoride ions / two s / two s, all squared / four s squared / four s cubed",
+      "motionPurpose": "One calcium fluoride unit splits into one calcium and two fluoride ions in the lens, the 2 chip flies into the change cell and the bracket is ringed as 4s squared writes with a crossed chip",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to the three zones. Task \"Find s for CaF2 in water\". Strip \"CaF2(s) <=> Ca2+(aq) + 2F-(aq)\". Givens \"Ksp(CaF2) = 3.45 x 10^-11 (25 C)\". Lens on the saturated beaker (ported ratio-true swarm): on \"two fluoride ions\" one CaF2 unit splits into one amber Ca2+ and two violet F- (pen rings on the two). ICE: Initial 0, 0; on \"two s\" the coefficient chip \"2\" flies from the strip into the F- Change cell, \"+2s\"; Ca2+ \"+s\"; Equilibrium \"s\", \"2s\". Algebra: \"Ksp = [Ca2+][F-]^2 = s x (2s)^2\"; on \"two s, all squared\" the bracket rings; on \"four s squared\" an aside \"(2s)^2 = 2s x 2s = 4s^2\" with a chip \"2s^2\" fading in and crossed; then \"Ksp = 4s^3\" on \"four s cubed\".",
+      "motionTools": [
+        "lens split",
+        "chip fly",
+        "scribbleEllipse",
+        "strike",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "caf2-solve",
+      "visualDecision": "adjust",
+      "visualReference": "The algebra line continuing with divide-by-four and cube-root asides and the ICE equilibrium cells filling with numbers",
+      "teachingReason": "Finishes the second example by dividing, taking a cube root and checking, with the fluoride concentration at twice s",
+      "narrationCue": "Divide both sides by four / take the cube root / 2.05 times ten to the minus four",
+      "motionPurpose": "Each algebra stage writes in turn with a divide aside and a cube-root sign, the answer ticks and the equilibrium cells fill with numbers",
+      "motionRole": "explain",
+      "onScreenChange": "the check is silent; the screen line carries it): algebra line continues, one stage per line: \"4s^3 = 3.45 x 10^-11\"; on \"Divide both sides by four\" aside \"divide both sides by 4\": \"s^3 = 8.63 x 10^-12\"; on \"take the cube root\" a cube-root sign draws over both sides (small calculator hint \"cube root key, or ^(1/3)\"): \"s = 2.05 x 10^-4 mol/L\" ticks. Under it \"[F-] = 2s = 4.10 x 10^-4 mol/L\", \"[Ca2+] = s = 2.05 x 10^-4 mol/L\" (the ICE Equilibrium cells fill with these numbers). Check line \"4 x (2.05 x 10^-4)^3 = 3.45 x 10^-11\" with a tick.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "tick pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "trap-2s",
+      "visualDecision": "adjust",
+      "visualReference": "A ghost ICE table with s in red, a struck ghost line, a two-bar size comparison and the real bracket line returning",
+      "teachingReason": "Names and sizes the s-for-2s slip so the learner puts the 2 inside the bracket before squaring",
+      "narrationCue": "writing s for fluoride / 1.6 times too big / inside the bracket",
+      "motionPurpose": "The ghost table and its struck line appear, two bars show the answer about 1.6 times too big, then the real bracket line returns with its 2 pulsing",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost ICE table beside the real one: F- Equilibrium cell \"s\" in red; ghost line \"Ksp = s x s^2 = s^3, s = 3.26 x 10^-4\" struck in red (ported strike); on \"1.6 times too big\" two bars compare 3.26 against 2.05 with the tag \"1.59 x too big\". On \"inside the bracket\" the real line \"s x (2s)^2\" returns with the \"2\" pulsing inside the bracket and a pen arrow from the subscript in CaF2 to it.",
+      "motionTools": [
+        "ghost table",
+        "strike",
+        "bar compare",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "compare-ksp",
+      "visualDecision": "adjust",
+      "visualReference": "The two-row data strip with s values, the C8 log number line with two s markers and a rule card",
+      "teachingReason": "Shows that a bigger Ksp can belong to the less soluble salt when the formula types differ, so only like types are compared directly",
+      "narrationCue": "bigger / twenty times bigger / different powers / only for the same formula type",
+      "motionPurpose": "A pen ring and up arrow mark the bigger Ksp, two s markers land on the log line with a twenty times bracket, and the rule card writes",
+      "motionRole": "explain",
+      "onScreenChange": "the data-table strip from the hook returns large: two rows, each with its Ksp and now its s: \"BaSO4: Ksp 1.08 x 10^-10, s = 1.04 x 10^-5\" and \"CaF2: Ksp 3.45 x 10^-11, s = 2.05 x 10^-4\". On \"bigger\" a pen ring on BaSO4's Ksp with an up arrow; on \"twenty times bigger\" a C8-style log number line draws two s markers (1.04 x 10^-5 and 2.05 x 10^-4) with a bracket \"about 20 x\". A chip \"smaller Ksp, so less soluble\" fades in and is crossed. On \"different powers\" \"s^2\" and \"4s^3\" pulse beside the two rows. On \"same formula type\" the rule card writes: \"Compare Ksp directly only for the same ion ratio (1 : 1 with 1 : 1). Otherwise, calculate s.\" with the example \"BaSO4 (1.08 x 10^-10) vs AgCl (1.77 x 10^-10): both 1 : 1, so AgCl is more soluble\".",
+      "motionTools": [
+        "log number line",
+        "bracket draw",
+        "scribbleEllipse",
+        "strike",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "reverse-erow",
+      "visualDecision": "adjust",
+      "visualReference": "A fresh board with the saturated beaker plate, magnesium hydroxide strip, givens card and ICE table with the E-row-first pen arrow",
+      "teachingReason": "Reverses the task so a measured solubility goes in the equilibrium row first and the change is found as equilibrium minus initial",
+      "narrationCue": "1.12 times ten to the minus four / equilibrium row first / equilibrium minus initial",
+      "motionPurpose": "The pen arrow carries the measured value from the givens card into the equilibrium cell and the E minus I bracket draws up to the change cell",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Saturated beaker plate with a coded label \"saturated Mg(OH)2(aq)\". Task \"Find Ksp for Mg(OH)2\". Strip \"Mg(OH)2(s) <=> Mg2+(aq) + 2OH-(aq)\". Givens \"dissolved Mg(OH)2: 1.12 x 10^-4 mol/L (measured, 25 C)\". ICE (Mg2+, OH-, greyed solid column): Initial 0, 0. On \"equilibrium row first\" the C6a pen arrow runs from the givens card into the Mg2+ Equilibrium cell, \"1.12 x 10^-4\"; on \"equilibrium minus initial\" the \"E - I\" bracket draws up to the Mg2+ Change cell, \"+1.12 x 10^-4\". The OH- column stays empty.",
+      "motionTools": [
+        "DrawPath",
+        "bracket draw",
+        "ICE table"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reverse-ksp",
+      "visualDecision": "adjust",
+      "visualReference": "The same table with the doubling chip, the Ksp line and a struck forgot-to-double ghost line",
+      "teachingReason": "Doubles the hydroxide by the coefficient before squaring to reach Ksp, and shows the size of the slip",
+      "narrationCue": "two hydroxide ions / 5.62 times ten to the minus twelve / four times too small",
+      "motionPurpose": "The 2 chip flies into the hydroxide cell, the Ksp line writes with no unit, and a ghost cubed line is struck with a four times too small tag",
+      "motionRole": "explain",
+      "onScreenChange": "the table, strip and givens stay. On \"two hydroxide ions\" the coefficient chip \"2\" flies into the OH- Change cell, \"+2.24 x 10^-4\", and the OH- Equilibrium cell fills \"2.24 x 10^-4\". Algebra: \"Ksp = [Mg2+][OH-]^2 = (1.12 x 10^-4)(2.24 x 10^-4)^2 = 5.62 x 10^-12\" with \"no unit written\" and a small unspoken grey tag \"data sheet: 5.61 x 10^-12 (the measured value is rounded)\". On \"four times too small\" a ghost line \"(1.12 x 10^-4)^3 = 1.40 x 10^-12\" is struck with the tag \"forgot to double: 4 x too small\".",
+      "motionTools": [
+        "chip fly",
+        "HandText write-on",
+        "strike"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "The handwritten aid with two thumbnails for barium sulfate and calcium fluoride and a condition tag",
+      "teachingReason": "Gives a reusable habit after the cause is explained, with its pure water and saturated conditions",
+      "narrationCue": "Each ion is its count times s / raise it to that count / four s cubed",
+      "motionPurpose": "The aid writes large, two thumbnails write beneath it and the condition tag lands",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes large and handwritten: \"Each ion = its count x s. Then raise it to that count.\" Two thumbnails beneath: \"BaSO4: s x s = s^2\" and \"CaF2: s x (2s)^2 = 4s^3\", with \"Mg(OH)2: also 4s^3\" small under the second. Condition tag: \"pure water, saturated, same temperature\".",
+      "motionTools": [
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "A cleared board with the task, a grouped givens card for lead iodide and an empty ICE outline",
+      "teachingReason": "Unseen transfer on a 1 : 2 salt with every condition visible and no answer cues",
+      "narrationCue": "9.8 times ten to the minus nine / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Task \"Calculate the molar solubility of PbI2 in water.\" Givens card: \"PbI2\", \"Ksp = 9.8 x 10^-9 (25 C)\", \"Pb2+ is 2+, I- is 1-\". An empty ICE outline (labels only) as a scaffold. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no equation strip, no s terms, no plate.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "The lead iodide strip with the ICE table filling cell by cell and a crossed 2.14 chip",
+      "teachingReason": "Gives the answer and the key reason briefly and corrects the s-for-2s slip",
+      "narrationCue": "two iodide ions / four s cubed / 1.35 times ten to the minus three / s instead of two s",
+      "motionPurpose": "The ICE table fills quickly, the algebra lines write, the answer chip pins and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "strip \"PbI2(s) <=> Pb2+(aq) + 2I-(aq)\"; ICE fills quickly: 0, 0; +s, +2s; s, 2s. Lines: \"Ksp = s(2s)^2 = 4s^3 = 9.8 x 10^-9\", \"s^3 = 2.45 x 10^-9\", answer chip \"s = 1.35 x 10^-3 mol/L\" pins. On \"s instead of two s\" a chip \"s = 2.14 x 10^-3\" fades in and is crossed (caption \"iodide is 2s\").",
+      "motionTools": [
+        "ICE table",
+        "HandText write-on",
+        "chip pin",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "A cleared board with the task, a grouped givens card for silver carbonate in grams per litre and an empty ICE outline",
+      "teachingReason": "Unseen transfer on Ksp from a mass concentration, needing a conversion to moles first",
+      "narrationCue": "0.0354 grams per litre / 275.8 grams per mole / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Task \"Calculate Ksp for Ag2CO3.\" Givens card grouped with units: \"saturated Ag2CO3(aq): 0.0354 g/L (25 C)\", \"M(Ag2CO3) = 275.8 g/mol\". Empty ICE outline. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "The givens card gaining a conversion line, the E-row-first arrow, the doubled silver cell and a crossed s equals 0.0354 chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects the grams-used-as-s slip",
+      "narrationCue": "convert to moles / two s / 8.46 times ten to the minus twelve / 0.0354",
+      "motionPurpose": "The conversion line writes on the card, the arrow carries the value into the carbonate cell, the silver cell doubles, the answer pins and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "\"0.0354 g/L / 275.8 g/mol = 1.28 x 10^-4 mol/L\" writes on the givens card; the E-row-first arrow carries it into the CO3 2- Equilibrium cell; the Ag+ cell fills \"2.57 x 10^-4\" (from 2 x 1.2835 x 10^-4) with the coefficient chip \"2\". Line \"Ksp = [Ag+]^2[CO3 2-] = (2.57 x 10^-4)^2 (1.28 x 10^-4)\", answer chip \"Ksp = 8.46 x 10^-12\" pins with a small tag \"unrounded s\". On \"0.0354\" a chip \"s = 0.0354\" fades in and is crossed (caption \"g/L: divide by M first\").",
+      "motionTools": [
+        "DrawPath",
+        "chip fly",
+        "chip pin",
+        "Mark cross"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "A five-line decision card lighting on its words, then a next chip with the lead iodide and clear tube plates and a question mark",
+      "teachingReason": "Packs the method into reusable lines and hands off to mixing solutions",
+      "narrationCue": "count times s / Next / form",
+      "motionPurpose": "Five lines write and light in turn, then the next chip slides in with two small plates and a question mark between them",
+      "motionRole": "explain",
+      "onScreenChange": "the decision card writes, each line lighting on its words: \"1 Dissolving equation.\" \"2 Each ion = count x s; raise to the count.\" \"3 Ksp given: solve for s (square or cube root).\" \"4 s measured: E row first (g/L to mol/L), then Ksp.\" \"5 Compare Ksp directly only for the same formula type.\" On \"Next\" a chip \"Next: will mixing form a precipitate? (Qsp)\" with `m5x-ppt-pbi2-yellow-v1.png` and `m5x-no-ppt-clear-v1.png` small side by side and a \"?\" between them.",
+      "motionTools": [
+        "HandText write-on",
+        "line highlight",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes, the memory aid and its condition tag appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c14-learning-review.md",
+      "sha256": "688e077ecbbcf9dd30f29c61044c2e5b0bcdb0c4b11eb9de5b8cea7a7b2f7bdb"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/c14-claude-science-check.md",
+      "sha256": "35b15a1307ef82ebc25e8b406a97c0c910a413ccd7306adf229ea0877369aafb"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

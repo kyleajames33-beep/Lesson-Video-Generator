@@ -6,7 +6,8 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {AMBER, AMBER_INK, INK, INK_SOFT, prog} from '../../kit';
 import {GREYT, Overlay} from '../bio-m5-b06b/shared';
-import {AlleleChip, PSym, Pedigree, Punnett, pedXY, pgeom} from '../bio-m5-b09/genetics';
+import {AlleleChip, PSym, Pedigree, pedXY, pgeom} from '../bio-m5-b09/genetics';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 import type {PLay} from '../bio-m5-b09/genetics';
 import {DrawPath, scribbleEllipse} from '../../kit';
 import {AidChip, Badge, CheckStrip, Crossed, GreyTag, QText, qCheck, HscTag, ModelLine, Note, PauseHold, RED, Sx, TaskLine, lerp, smooth, vis} from './board';
@@ -145,7 +146,7 @@ export const SceneQ3TwoThirds: React.FC = () => {
 			<QChild o={1} />
 			<QMark id="II-2" />
 			<Legend at={-100} />
-			<Punnett x={G3.x} y={G3.y} cell={G3.cell} res={PKU_SQ} top={['P', 'p']} side={['P', 'p']} gridAt={KC.sq - 6} topAt={KC.sq} sideAt={KC.sq + 8} fillAt={i => KC.sq + 24 + i * 6} discR={30} plain
+			<PunnettHSC x={G3.x} y={G3.y} cell={G3.cell} res={PKU_SQ} top={['P', 'p']} side={['P', 'p']} gridAt={KC.sq - 6} topAt={KC.sq} sideAt={KC.sq + 8} fillAt={i => KC.sq + 24 + i * 6} discR={30}
 				dim={i => (i === PP ? 1 - 0.6 * prog(f, KC.cross + 8, 12) : 1)}
 				ring={i => (i === PP ? 0 : vis(f, KC.three, KC.ifShe))} hi={i => (PKU_SQ.cells[i].g === 'Pp' ? prog(f, KC.two, 10) : 0)} />
 			{crossP > 0.01 ? <g opacity={crossP}><path d={`M${bx - 40},${by - 40} L${bx + 40},${by + 40} M${bx + 40},${by - 40} L${bx - 40},${by + 40}`} stroke={GREYT} strokeWidth={8} strokeLinecap="round" /></g> : null}
@@ -187,14 +188,14 @@ export const SceneQ3Update: React.FC = () => {
 			<Sx x={cx + 48} y={cy + 10} text="first child: PKU" size={28} color={AMBER_INK} hand at={KD.sup + 14} />
 			{moving ? <AlleleChip x={lerp(cx, wx, t)} y={lerp(cy - 40, chipY('II-2'), t)} t="p" r={20} edge={AMBER} /> : null}
 			<Sx x={MG.x} y={MG.y - 62} text="the couple: Pp × Pp" size={28} color={INK_SOFT} hand at={KD.both} />
-			<Punnett x={MG.x} y={MG.y} cell={MG.cell} res={PKU_SQ} top={['P', 'p']} side={['P', 'p']} gridAt={KD.both} topAt={KD.both + 6} sideAt={KD.both + 12} fillAt={i => KD.both + 20 + i * 5} discR={22} plain ring={i => (i === PP ? prog(f, KD.quarter, 10) : 0)} />
+			<PunnettHSC x={MG.x} y={MG.y} cell={MG.cell} res={PKU_SQ} top={['P', 'p']} side={['P', 'p']} gridAt={KD.both} topAt={KD.both + 6} sideAt={KD.both + 12} fillAt={i => KD.both + 20 + i * 5} discR={22} ring={i => (i === PP ? prog(f, KD.quarter, 10) : 0)} />
 			<Sx x={1200} y={752} text="she is now a known carrier;" size={28} color={INK_SOFT} hand at={KD.quarter + 10} />
 			<Sx x={1200} y={788} text="each child is a new chance" size={28} color={INK_SOFT} hand at={KD.quarter + 16} />
 			<ModelLine x={130} y={910} text={ANS3.a} at={-100} size={32} />
 			<ModelLine x={130} y={956} text={ANS3.b} at={KD.quarter + 6} size={32} />
 			{/* the classic mistake: keeping the affected box in her parents' square */}
 			<g opacity={prog(f, KD.half - 10, 12)}>
-				<Punnett x={GG.x} y={GG.y} cell={GG.cell} res={PKU_SQ} top={['P', 'p']} side={['P', 'p']} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={16} plain />
+				<PunnettHSC x={GG.x} y={GG.y} cell={GG.cell} res={PKU_SQ} top={['P', 'p']} side={['P', 'p']} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={16} />
 				<Sx x={GG.x + GG.cell} y={GG.y + 2 * GG.cell + 40} text="her parents' square" size={24} color={INK_SOFT} hand anchor="middle" at={-100} />
 				<DrawPath d={scribbleEllipse(gx, gy, 30, 28, 5)} at={KD.keeps} dur={14} color={RED} width={4} />
 			</g>

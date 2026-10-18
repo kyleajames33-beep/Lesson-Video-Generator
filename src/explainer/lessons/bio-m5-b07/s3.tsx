@@ -65,8 +65,12 @@ export const SceneEnvironmentB7: React.FC = () => {
 					<Sx x={bar.x} y={215} text="height" size={44} color={INK} hand anchor="middle" at={K8.height} />
 				</Fade>
 				<RangeBar x={bar.x} y0={bar.y0} y1={bar.y1} b0={bar.b0} b1={bar.b1} p={pointer} o={prog(f, K8.height + 6, 16)} pointerO={prog(f, K8.many, 12)} />
-				<Sx x={bar.x + 50} y={rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 1) + 10} text="range these" size={32} color={AMBER_INK} hand at={K8.height + 16} />
-				<Sx x={bar.x + 50} y={rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 1) + 46} text="genes allow" size={32} color={AMBER_INK} hand at={K8.height + 16} />
+				{/* range label sits on the left with a bracket, clear of the pointer and its labels on the right */}
+				<Fade at={K8.height + 16}>
+					<path d={`M${bar.x - 40},${rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 1)} L${bar.x - 54},${rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 1)} L${bar.x - 54},${rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 0)} L${bar.x - 40},${rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 0)}`} fill="none" stroke={AMBER_INK} strokeWidth={3} strokeLinejoin="round" />
+				</Fade>
+				<Sx x={bar.x - 72} y={rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 0.62)} text="range these" size={32} color={AMBER_INK} hand anchor="end" at={K8.height + 16} />
+				<Sx x={bar.x - 72} y={rangeY(bar.y0, bar.y1, bar.b0, bar.b1, 0.62) + 36} text="genes allow" size={32} color={AMBER_INK} hand anchor="end" at={K8.height + 16} />
 				<GreyTag x={1170} y={600} text="many genes" at={K8.many} size={26} />
 				<Sx x={bar.x + 76} y={py + 10} text="actual height" size={34} color={INK} hand at={K8.many + 6} />
 				<Sx x={bar.x + 76} y={py + 48} text="good food, good health" size={28} color={INK_SOFT} weight={600} at={K8.many + 10} out={K8.food} />

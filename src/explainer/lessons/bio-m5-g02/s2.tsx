@@ -6,7 +6,8 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {AMBER, AMBER_INK, INK, INK_SOFT, prog} from '../../kit';
 import {Overlay} from '../bio-m5-b06b/shared';
-import {GenoTag, PSym, Punnett} from '../bio-m5-b09/genetics';
+import {GenoTag, PSym} from '../bio-m5-b09/genetics';
+import {PunnettHSC} from '../bio-m5-b09/punnett-hsc';
 import {SexChrom} from '../bio-m5-b10/shared';
 import {Badge, CheckStrip, Fade, GreyTag, QText, qCheck, HscTag, ModelLine, Note, PauseHold, RED, Sx, TaskLine, smooth, vis} from './board';
 import {AUTO, CATS, Demands, MOVES, MOVES_TITLE, PL2, PlateB, XO, Xo, catOf, hold, sc} from './shared';
@@ -56,7 +57,6 @@ const Q2Head: React.FC<{a?: Q2At; m?: Record<string, number>}> = ({a, m = {}}) =
 	);
 };
 const PG = {x: 1150, y: 360, cell: 150};
-const catIcon = (i: number, x: number, y: number) => <PlateB p={catOf(CATS.cells[i].ph)} cx={x} cy={y + 4} w={84} />;
 
 // ---------- 3a. Question 2 (pause) ----------
 const KA = cues(sc('q2-question'), {cats: 'In cats', q: 'Question two', x: 'X chromosome', orange: 'gives orange fur', black: 'the other gives black', both: 'shows both colours', tort: 'called tortoiseshell', explain: 'Explain why', mates: 'A tortoiseshell female then mates', prob: "What's the probability", sons: 'what fraction of their sons', pause: 'Pause here'});
@@ -130,7 +130,7 @@ export const SceneQ2Square: React.FC = () => {
 		<Overlay>
 			<Q2Head m={{...done2(2), [M2[2]]: KC.cross + 4}} />
 			<Badge text="X-linked" at={-100} />
-			<Punnett x={PG.x} y={PG.y} cell={PG.cell} res={CATS} top={[XO, 'Y']} side={[XO, Xo]} gridAt={KC.cross} topAt={KC.father} sideAt={KC.mother} fillAt={fillAt} discR={40} chipR={24} icon={catIcon} ring={catRing(f)} />
+			<PunnettHSC x={PG.x} y={PG.y} cell={PG.cell} res={CATS} top={[XO, 'Y']} side={[XO, Xo]} gridAt={KC.cross} topAt={KC.father} sideAt={KC.mother} fillAt={fillAt} discR={40} chipR={24} phen ring={catRing(f)} />
 			<SquareLabels at={KC.so} />
 			{all > 0.01 ? <rect x={PG.x - 8} y={PG.y - 8} width={2 * PG.cell + 16} height={2 * PG.cell + 16} rx={14} fill="none" stroke={AMBER} strokeWidth={5} strokeDasharray="12 8" opacity={all} /> : null}
 			{sonCol > 0.01 ? <rect x={PG.x + PG.cell - 6} y={PG.y - 8} width={PG.cell + 14} height={2 * PG.cell + 16} rx={14} fill="none" stroke={AMBER} strokeWidth={5} strokeDasharray="12 8" opacity={sonCol} /> : null}
@@ -158,13 +158,13 @@ export const SceneQ2MistakeG2: React.FC = () => {
 		<Overlay>
 			<Q2Head m={done2(3)} />
 			<Badge text="X-linked" at={-100} />
-			<Punnett x={PG.x} y={PG.y} cell={PG.cell} res={CATS} top={[XO, 'Y']} side={[XO, Xo]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={40} chipR={24} icon={catIcon} />
+			<PunnettHSC x={PG.x} y={PG.y} cell={PG.cell} res={CATS} top={[XO, 'Y']} side={[XO, Xo]} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={40} chipR={24} phen />
 			<SquareLabels at={-100} />
 			{/* the autosomal slip, computed */}
 			<g opacity={prog(f, KD.auto - 20, 12)}>
 				<Sx x={GA.x - 20} y={GA.y - 84} text="if it were autosomal:" size={28} color={INK_SOFT} hand at={-100} />
-				<Punnett x={GA.x} y={GA.y} cell={GA.cell} res={AUTO} top={['O', 'O']} side={['O', 'o']} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={22} plain hi={i => (AUTO.cells[i].ph === 'tortoiseshell' ? prog(f, KD.gives, 10) : 0)} />
-				<PSym x={GA.x + 1.5 * GA.cell + 30} y={GA.y + 1.5 * GA.cell + 26} sex="M" aff={false} sz={22} o={prog(f, KD.gives + 6, 10)} />
+				<PunnettHSC x={GA.x} y={GA.y} cell={GA.cell} res={AUTO} top={['O', 'O']} side={['O', 'o']} gridAt={-100} topAt={-100} sideAt={-100} fillAt={() => -100} discR={22} hi={i => (AUTO.cells[i].ph === 'tortoiseshell' ? prog(f, KD.gives, 10) : 0)} />
+				<PSym x={GA.x + 2 * GA.cell + 24} y={GA.y + 1.5 * GA.cell} sex="M" aff={false} sz={22} o={prog(f, KD.gives + 6, 10)} />
 			</g>
 			{f >= crossAt ? <path d={`M${GA.x - 60},${GA.y - 40} C${cx + 160},${GA.y - 80} ${cx + 180},${cy + 140} ${cx},${cy + 140} C${GA.x - 80},${cy + 140} ${GA.x - 90},${GA.y} ${GA.x - 50},${GA.y - 50}`} fill="none" stroke={RED} strokeWidth={5} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - smooth((f - crossAt) / 16)} /> : null}
 			<Sx x={GA.x - 40} y={GA.y + 2 * GA.cell + 84} text="the gene is on the X" size={32} color={RED} hand at={crossAt + 12} />
