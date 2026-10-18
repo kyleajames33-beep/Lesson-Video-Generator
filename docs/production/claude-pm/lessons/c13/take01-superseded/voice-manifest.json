@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-C13-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/c13/lesson.json",
+  "lessonSha256": "b2741ce68ea49cb98df647af6fe096fb2eee09315aca59f628054cb4aa68b3ee",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/c13/lesson.production-brief.json",
+    "sha256": "f6a8d2ac76bcf02e0debc35941673cc326c3f25d964fe5060e3ca92b5a2b1aa7"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are two clear, colourless solutions: potassium iodide and lead nitrate. Add a few drops of one to the other, and a bright yellow solid appears and slowly settles. Neither bottle had anything yellow in it. So where did the solid come from? And what's left in the liquid around it?",
+      "hash": "7a7b74d2e78b",
+      "textSha256": "7a7b74d2e78b4bd8d65e16e14c81a0f988463bb493708259d09d7311b6182c20",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/hook.7a7b74d2e78b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/hook.7a7b74d2e78b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/hook.7a7b74d2e78b.generation.json",
+      "plannedRequestSha256": "1bbe01b3e360089fad42ad23e74f02e10d38982e1d09bbc926cbd5cd484acbcb"
+    },
+    {
+      "id": "four-ions",
+      "parentSceneId": "four-ions",
+      "text": "As you saw in the dissolving video, potassium iodide solution isn't full of K I units. It's potassium ions and iodide ions, each surrounded by water, moving separately. Lead nitrate solution is lead ions and nitrate ions. So when you mix them, you have four kinds of ions in one tube. The only new thing that can happen is that ions meet new partners: lead with iodide, or potassium with nitrate.",
+      "hash": "50101456ee84",
+      "textSha256": "50101456ee84edec7c67f7c024a913d01da352dfa77168d00a5337eea7741c8c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/four-ions.50101456ee84.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/four-ions.50101456ee84.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/four-ions.50101456ee84.generation.json",
+      "plannedRequestSha256": "e6032eaafb38e3e1cba2c60ef0f995afcfcfa9b025306fb67d93918090d13e32"
+    },
+    {
+      "id": "precipitate-spectators",
+      "parentSceneId": "precipitate-spectators",
+      "text": "Lead ions and iodide ions attract each other more strongly than water can keep them apart, so they lock into a solid lattice of lead iodide that comes out of the solution. A solid that forms like this is a precipitate. Potassium and nitrate ions stay dissolved, exactly as they were, so they take no part. Ions like that are called spectator ions. So after mixing, the tube holds solid lead iodide, with potassium ions and nitrate ions still dissolved in the water.",
+      "hash": "4d9c6a4d6667",
+      "textSha256": "4d9c6a4d6667b84b4722627048b5b947d50ce8f3d6a0b4b41579d0fff78b451b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/precipitate-spectators.4d9c6a4d6667.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/precipitate-spectators.4d9c6a4d6667.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/precipitate-spectators.4d9c6a4d6667.generation.json",
+      "plannedRequestSha256": "c798fd45574fbee4eb2fc7bcbad97fb4f1ec9afec989c60636c41df9a54c7eb5"
+    },
+    {
+      "id": "rules-origin",
+      "parentSceneId": "rules-origin",
+      "text": "So how could you know in advance which pair locks together? Chemists mixed pairs of solutions again and again and recorded which ones made a solid, and the patterns they found are the solubility rules, a first prediction from experiments. In the practical video, you'll find them yourself.",
+      "hash": "e2e0e2b9e707",
+      "textSha256": "e2e0e2b9e70715cfd9d2b2428ff9ac1621d2dd99ff85d98277a4c50830a6b691",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/rules-origin.e2e0e2b9e707.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/rules-origin.e2e0e2b9e707.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/rules-origin.e2e0e2b9e707.generation.json",
+      "plannedRequestSha256": "9d6e58a5124130c589747f63fe5249dbce346790cdf4c68f0ebe4a60a98d38c0"
+    },
+    {
+      "id": "nagsag",
+      "parentSceneId": "nagsag",
+      "text": "Here's the version to learn, in order: NAGSAG. Nitrates, Ammonium, and Group 1 ions like sodium and potassium: always soluble, no exceptions. Then Sulfates: soluble, except with barium and lead, which are insoluble, and calcium and silver, which are only slightly soluble. Acetates: soluble. And Group 17, the halides chloride, bromide and iodide: soluble, except with silver and lead. Everything else, like carbonates and hydroxides, is mostly insoluble, unless it's paired with a Group 1 ion or ammonium. Barium hydroxide is one more exception: it dissolves.",
+      "hash": "42ef4a2c1b05",
+      "textSha256": "42ef4a2c1b051001a041bef0bfd5284c65655bfb736f1f7e71733aee348042a6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/nagsag.42ef4a2c1b05.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/nagsag.42ef4a2c1b05.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/nagsag.42ef4a2c1b05.generation.json",
+      "plannedRequestSha256": "d59de5ae1182a8e1d3fb16922224555ac0beb3568568826b90019542ce7f9ed4"
+    },
+    {
+      "id": "swap-method",
+      "parentSceneId": "swap-method",
+      "text": "So here's the method. List the four ions, then swap partners: each positive ion pairs with the other solution's negative ion. That gives two possible products. Then check both against the rules. If one is insoluble, that's your precipitate. If both are soluble, nothing forms.",
+      "hash": "a0cdd3d95b10",
+      "textSha256": "a0cdd3d95b10633018c63696d208fb2e4e5b3b6c2912f04a4c1e2d1f31185754",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/swap-method.a0cdd3d95b10.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/swap-method.a0cdd3d95b10.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/swap-method.a0cdd3d95b10.generation.json",
+      "plannedRequestSha256": "ed3e28157e92a3daee741cdb94b8e0218f34c95b2d0645cc61d2107c2c37419a"
+    },
+    {
+      "id": "agcl-molecular",
+      "parentSceneId": "agcl-molecular",
+      "text": "Try the first syllabus pair: potassium chloride and silver nitrate. Swap partners: silver chloride and potassium nitrate. Potassium nitrate is a nitrate, and potassium is Group 1, so it's soluble. Silver chloride is a halide with silver, one of the exceptions, so it's insoluble. A white precipitate forms. The full equation is potassium chloride plus silver nitrate gives silver chloride solid, plus potassium nitrate, aqueous.",
+      "hash": "1e0f6deda67a",
+      "textSha256": "1e0f6deda67af428f34b15297437e4d16bbf3566620311767e77cd403ab54cf7",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/agcl-molecular.1e0f6deda67a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/agcl-molecular.1e0f6deda67a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/agcl-molecular.1e0f6deda67a.generation.json",
+      "plannedRequestSha256": "f4d8b78a0ebc9d7cfbf7ef1a336985ebd37869ce7591c20cc323e02d16aff991"
+    },
+    {
+      "id": "full-ionic",
+      "parentSceneId": "full-ionic",
+      "text": "That equation hides what's really in the tube. So write every aqueous compound as its separate ions. On the left: potassium ions, chloride ions, silver ions and nitrate ions. On the right, potassium nitrate splits too, but silver chloride is a solid, so it stays whole. This is the full ionic equation.",
+      "hash": "e39c8438a5b0",
+      "textSha256": "e39c8438a5b07097ffc789ed7d031176c24b9aa2eb625cc6104ebf20b4b572af",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/full-ionic.e39c8438a5b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/full-ionic.e39c8438a5b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/full-ionic.e39c8438a5b0.generation.json",
+      "plannedRequestSha256": "c4a7e51f0422603b3f412d5a5cfd3b43e7f892eab72a575d4b350cdff47d36ac"
+    },
+    {
+      "id": "net-ionic",
+      "parentSceneId": "net-ionic",
+      "text": "Now look for ions that appear unchanged on both sides. Potassium and nitrate. They're the spectators, so cross them out. What's left is the net ionic equation: silver ion plus chloride ion gives silver chloride solid. Check the charges: plus one and minus one make zero on the left, and the solid is neutral. And this net equation is the same wherever the silver and chloride ions came from.",
+      "hash": "b04790608d21",
+      "textSha256": "b04790608d21188ce57c8e90e188afee0e7c08aee762a49e8ea01287cdd02eca",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/net-ionic.b04790608d21.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/net-ionic.b04790608d21.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/net-ionic.b04790608d21.generation.json",
+      "plannedRequestSha256": "db708b954a5a1c07738d6e9db6697e6b0f147d795649c49c345f90a3d0d90d40"
+    },
+    {
+      "id": "pbi2-formula",
+      "parentSceneId": "pbi2-formula",
+      "text": "Swap partners for the hook's pair: lead with iodide, potassium with nitrate. Potassium nitrate is soluble. Lead with a halide is an exception, so lead iodide is the bright yellow precipitate. But its formula isn't P b I. A lead ion is two plus, and an iodide ion is only one minus, so it takes two iodides to balance one lead: P b I two. That's why the full equation needs two potassium iodides, and why two potassium ions and two nitrate ions are the spectators. The net ionic equation is lead ion plus two iodide ions gives lead iodide solid. Charges: plus two, and two minus ones, make zero.",
+      "hash": "62df09320555",
+      "textSha256": "62df0932055574e4d3e0f369d6ea370bd387e2d1a2e870c86a6e782784f1ab81",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/pbi2-formula.62df09320555.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/pbi2-formula.62df09320555.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/pbi2-formula.62df09320555.generation.json",
+      "plannedRequestSha256": "5f2fbed0bab3188f78ce3e14b012ecacb23b0ff02238dbfe69acb50f14287f84"
+    },
+    {
+      "id": "baso4-meal",
+      "parentSceneId": "baso4-meal",
+      "text": "The third pair is sodium sulfate and barium nitrate. Swap partners: sodium nitrate is soluble, and barium sulfate is one of the sulfate exceptions, so it's a white precipitate. Barium ion plus sulfate ion gives barium sulfate solid. Barium sulfate is so insoluble that hospitals use it in a barium meal: a white drink that shows up the gut on an X-ray. Dissolved barium ions are poisonous, but solid barium sulfate barely dissolves, so it passes through the gut without being absorbed.",
+      "hash": "09fa7d8b3af7",
+      "textSha256": "09fa7d8b3af7ea6df9f94ad9b366510ff66c1cc31477c4587dfd51d9ed318254",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/baso4-meal.09fa7d8b3af7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/baso4-meal.09fa7d8b3af7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/baso4-meal.09fa7d8b3af7.generation.json",
+      "plannedRequestSha256": "901166662356ab645cb7bd495ec1e6ac26aa6e752488384da954477bb164e5eb"
+    },
+    {
+      "id": "no-precipitate",
+      "parentSceneId": "no-precipitate",
+      "text": "Not every mixture makes a solid. Mix potassium nitrate and sodium chloride. Swap partners: sodium nitrate and potassium chloride. Both soluble, so no precipitate forms. Write \"no precipitate\", not \"no reaction\". All four ions are still there, and every one is a spectator, so there's no net ionic equation.",
+      "hash": "c77638d2dc5e",
+      "textSha256": "c77638d2dc5e528397b9bfb3348c0d0fa616d8c2bd34367cbb12d88eed240a3d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/no-precipitate.c77638d2dc5e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/no-precipitate.c77638d2dc5e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/no-precipitate.c77638d2dc5e.generation.json",
+      "plannedRequestSha256": "5fc8384d5ff9cc02836d51e8aea1c22bd63c1385002e577531ce968cc9b68122"
+    },
+    {
+      "id": "filtrate",
+      "parentSceneId": "filtrate",
+      "text": "One more question: after you filter off the solid, what's left in the solution? The spectators, always. Plus any ion that was in excess. Say you add more silver nitrate than the chloride needs. The chloride is essentially all used up, so the extra silver ions have no partner, and they stay in solution too.",
+      "hash": "8fe7dd9bf804",
+      "textSha256": "8fe7dd9bf8040c06b05438503f773fcd8674421f56fe72f6206df7cfec007aec",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/filtrate.8fe7dd9bf804.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/filtrate.8fe7dd9bf804.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/filtrate.8fe7dd9bf804.generation.json",
+      "plannedRequestSha256": "260ab030962535af4a41dc872524de91a43c6f46396f88b5dba06333e7687086"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's the line to remember. Swap partners, check both. Then for the equation: split only the aqueous, and cross out what's the same on both sides.",
+      "hash": "c5fcc2b386b5",
+      "textSha256": "c5fcc2b386b541f2910782f7063db7fa87b30b215362789c74332c8bae32c1f3",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/memory-aid.c5fcc2b386b5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/memory-aid.c5fcc2b386b5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/memory-aid.c5fcc2b386b5.generation.json",
+      "plannedRequestSha256": "711a5bea86a006f9930a33894fed31e95138f92612e254f24f2a1e5865821b70"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. You mix solutions of copper two sulfate and sodium hydroxide. Name the precipitate, and write the net ionic equation. Pause here to answer.",
+      "hash": "2575b0ad4da1",
+      "textSha256": "2575b0ad4da15a3ee96f51304d8dc946c36c3b1fec941fbbd75f0465617e010c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/attempt-1.2575b0ad4da1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/attempt-1.2575b0ad4da1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/attempt-1.2575b0ad4da1.generation.json",
+      "plannedRequestSha256": "f6c7013d590c2abf740b75ca49e02c58149f313704b5afdbe8a1836d1b749be1"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Swap partners: copper hydroxide and sodium sulfate. Sodium sulfate is soluble. Hydroxides are insoluble unless they're with Group 1, so copper(II) hydroxide precipitates, a pale blue solid. Copper is two plus, so it needs two hydroxides: copper ion plus two hydroxide ions gives copper hydroxide solid. If you wrote C u O H, the charges don't balance.",
+      "hash": "b5a7d04d1b41",
+      "textSha256": "b5a7d04d1b411ae39ffa8894ea2bdbfca197fae04517cf59b9e9e5c0eff5c8dc",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/feedback-1.b5a7d04d1b41.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/feedback-1.b5a7d04d1b41.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/feedback-1.b5a7d04d1b41.generation.json",
+      "plannedRequestSha256": "cdcb6b105ac38d7a8151ce4fe881bd7084efa9d362bc1915459d1815985313fb"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Silver nitrate solution is mixed with more than enough sodium chloride solution to react with all the silver ions. The white solid is filtered off. Which ions are in the filtrate? Pause here to answer.",
+      "hash": "607866efd0bc",
+      "textSha256": "607866efd0bce60decfdf5882b9190e6facfaa30abeeafb0c0d2eda5bd0bdee9",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/attempt-2.607866efd0bc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/attempt-2.607866efd0bc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/attempt-2.607866efd0bc.generation.json",
+      "plannedRequestSha256": "21fb3f3345801f00c2ba6a1d805a447ded4f1db3b22d98cc5dcf8b373e487d2f"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The filtrate holds sodium ions and nitrate ions, the spectators, plus the leftover chloride ions, because the sodium chloride was in excess. The silver ions are essentially all in the solid. If you listed only sodium and nitrate, you forgot the excess chloride.",
+      "hash": "7e2e2e1d6b7c",
+      "textSha256": "7e2e2e1d6b7c94dde52cb48ef4c25000a0178fda609341f300fc964f172ab50c",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/feedback-2.7e2e2e1d6b7c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/feedback-2.7e2e2e1d6b7c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/feedback-2.7e2e2e1d6b7c.generation.json",
+      "plannedRequestSha256": "97e5ab744f3bc2aaff89866e85aa9c80cb68d08d06c31afe66c4ddb989a2e9c4"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So whenever two ionic solutions are mixed: list the ions, swap partners, and check both against the rules. An insoluble one is the precipitate. Split only the aqueous compounds, cross out the spectators, and check the charges. What stays dissolved is the spectators, plus anything in excess. Next: the practical video, where you find these rules yourself, then Ksp, which puts a number on \"insoluble\".",
+      "hash": "14680c329a57",
+      "textSha256": "14680c329a57d29ecf4d55e2f53a6355555b1dcc44f897a3e52296c434add44d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/decision-rule.14680c329a57.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/decision-rule.14680c329a57.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/decision-rule.14680c329a57.generation.json",
+      "plannedRequestSha256": "f3116606721281e660209734cf9e0996c9607e895750b8e9358a274ff27d8e6f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

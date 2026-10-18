@@ -14,7 +14,7 @@ const RZ = 1180;
 
 // ---------- 5. Expected results ----------
 const E = 'expected-results';
-const K5 = cues(sc(E), {here: "Here's what to expect", nagsag: 'against NAGSAG', sodium: 'The sodium row', carbonate: 'The carbonate column', silvers: "silver's is pale", silver: 'Silver gives a solid', agcl: 'white silver chloride', agi: 'pale yellow silver iodide', lead: 'lead gives bright', bariumS: 'Barium and lead give', calcium: 'calcium and silver sulfate', faint: 'only a faint cloud', hydroxide: 'with hydroxide', brown: 'a brown solid', barium: 'barium stays clear'});
+const K5 = cues(sc(E), {here: "Here's what to expect", nagsag: 'against NAGSAG', sodium: 'The sodium row', carbonate: 'The carbonate column', silvers: "silver's is pale", silver: 'Silver gives a solid', agcl: 'white silver chloride', agi: 'pale yellow silver iodide', pbcl: 'lead gives', lead: 'bright yellow lead', bariumS: 'Barium and lead give', calcium: 'calcium and silver sulfate', hydroxide: 'with hydroxide', brown: 'a brown solid', barium: 'barium stays clear'});
 export const SceneExpected: React.FC = () => {
 	// when each cell blooms, sentence by sentence (rows Na, Ca, Ba, Pb, Ag; columns Cl, I, SO4, CO3, OH)
 	const at = (r: number, c: number): number => {
@@ -22,7 +22,7 @@ export const SceneExpected: React.FC = () => {
 		if (c === 3) return r === 4 ? K5.silvers : K5.carbonate + r * 6;
 		if (c === 0 || c === 1) {
 			if (r === 4) return c === 0 ? K5.agcl : K5.agi;
-			if (r === 3) return c === 1 ? K5.lead : K5.lead + 30;
+			if (r === 3) return c === 1 ? K5.lead : K5.pbcl;
 			return K5.silver + r * 4 + c * 2;
 		}
 		if (c === 2) return r === 2 || r === 3 ? K5.bariumS + r * 4 : K5.calcium + r * 4;
@@ -45,9 +45,9 @@ export const SceneExpected: React.FC = () => {
 				<Sx x={RZ + 60 + pw / 2} y={910} text="AgCl(s), white" size={28} anchor="middle" weight={700} at={K5.agcl} />
 				<Fade at={K5.lead}><Pic p={PBI2} x={RZ + 340} y={620} h={250} /></Fade>
 				<Sx x={RZ + 340 + pw / 2} y={910} text="PbI_2(s), bright yellow" size={28} color={PPT_Y_INK} anchor="middle" weight={700} at={K5.lead} />
-				<Sx x={300} y={900} text="Pb^{2+} + Cl^{-}: faint, or none at this concentration" size={24} color={INK_SOFT} weight={600} at={K5.lead + 34} />
+				<Sx x={300} y={900} text="PbCl_2, CaSO_4, Ag_2SO_4: slightly soluble, still solid here" size={24} color={INK_SOFT} weight={600} at={K5.calcium + 30} />
 				<Chip x={300} y={930} w={800} h={58} text="expected at 0.1 mol/L; your results are the test" size={32} color={TEAL} at={K5.barium + 10} />
-				{void K5.here}{void K5.faint}
+				{void K5.here}
 			</Overlay>
 		</>
 	);
@@ -96,7 +96,7 @@ export const SceneRules: React.FC = () => (
 
 // ---------- 7. Testing your predictions ----------
 const T7 = 'test-predictions';
-const K7 = cues(sc(T7), {compare: 'compare your twenty-five predictions', mismatch: 'Every mismatch', wrong: 'rule you had wrong', technique: 'technique problem', say: 'say which', barium: 'barium hydroxide', corrects: 'corrects you', exception: "it's an exception", faint: 'A faint cloud in', slightly: 'slightly soluble', third: 'third category', dirty: 'dirty well', repeat: 'repeat any doubtful', clean: 'clean one'});
+const K7 = cues(sc(T7), {compare: 'compare your twenty-five predictions', mismatch: 'Every mismatch', wrong: 'rule you had wrong', technique: 'technique problem', say: 'say which', barium: 'barium hydroxide', corrects: 'corrects you', exception: "it's an exception", faint: 'calcium sulfate', slightly: 'slightly soluble', third: 'third category', dirty: 'dirty well', repeat: 'repeat any doubtful', clean: 'clean one'});
 const BIN = {y: 230, h: 230, w: 300};
 const Bin: React.FC<{x: number; label: string; at: number; color: string}> = ({x, label, at, color}) => (
 	<Fade at={at}>
@@ -155,7 +155,7 @@ export const ScenePredictions: React.FC = () => {
 					<Sx x={scale.x + scale.w} y={scale.y + 84} text="insoluble" size={28} color={INK} anchor="end" hand at={K7.slightly} />
 					<path d={`M${scale.x + scale.w / 2},${scale.y - 6} L${scale.x + scale.w / 2 - 14},${scale.y - 30} L${scale.x + scale.w / 2 + 14},${scale.y - 30} Z`} fill={TEAL} />
 				</Fade>
-				<Sx x={scale.x} y={scale.y + 130} text="Ca^{2+} + SO_4^{2-}: faint cloud, a real result" size={28} color={TEAL} weight={600} at={K7.third} />
+				<Sx x={scale.x} y={scale.y + 130} text="Ca^{2+} + SO_4^{2-}: a white solid, a real result" size={28} color={TEAL} weight={600} at={K7.third} />
 				<Ring cx={wellXY(G, 1, 2)[0]} cy={wellXY(G, 1, 2)[1]} rx={r * 1.5} ry={r * 1.5} at={K7.faint} out={K7.dirty} color={TEAL} seed={7} />
 				{/* repeat the doubtful cell in a clean well */}
 				<Well cx={rx} cy={ry} r={r} kind="clear" p={prog(f, K7.repeat + 10, 20)} />
@@ -202,11 +202,11 @@ export const SceneLiquid: React.FC = () => {
 				<Drop x={A.x} y0={A.y - 140} y1={A.y} at={K8.addKI + 6} />
 				<DBottle x={Bw.x - bw / 2} y={Bw.y - 370} h={bh} formula="Pb(NO_3)_2" at={K8.addPb - 6} band="#e2a63b" />
 				<Drop x={Bw.x} y0={Bw.y - 140} y1={Bw.y} at={K8.addPb + 6} />
-				<Sx x={A.x - 130} y={A.y + 176} text="if more PbI_2: Pb^{2+} was left over," size={28} color={CAT_INK} weight={700} at={K8.lead} />
+				<Sx x={A.x - 130} y={A.y + 176} text="much more PbI_2: plenty of Pb^{2+} left," size={28} color={CAT_INK} weight={700} at={K8.lead} />
 				<Sx x={A.x - 130} y={A.y + 212} text="so Pb(NO_3)_2 in excess" size={28} color={CAT_INK} weight={700} at={K8.excess} />
-				<Sx x={Bw.x - 60} y={Bw.y + 176} text="the other case: I^{-} left over," size={28} color="#6a3fa3" weight={700} at={K8.iodide} />
+				<Sx x={Bw.x - 60} y={Bw.y + 176} text="or much more here: I^{-} left over," size={28} color="#6a3fa3" weight={700} at={K8.iodide} />
 				<Sx x={Bw.x - 60} y={Bw.y + 212} text="so KI in excess" size={28} color="#6a3fa3" weight={700} at={K8.iodide + 6} />
-				<Chip x={1380} y={420} w={440} h={56} text="at most one test goes cloudy" size={30} color={TEAL} at={K8.iodide + 20} />
+				<Chip x={1300} y={420} w={560} h={56} text="faint in both: neither in big excess" size={28} color={TEAL} at={K8.iodide + 20} />
 				<Card x={1380} y={510} w={440} h={210} at={K8.spect} stroke={TEAL} />
 				<Sx x={1404} y={560} text="dissolved:" size={32} color={TEAL} hand at={K8.spect} />
 				<Sx x={1404} y={610} text="K^{+}, NO_3^{-} (spectators)" size={28} color={INK} weight={700} at={K8.spect + 6} />

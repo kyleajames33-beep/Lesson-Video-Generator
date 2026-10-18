@@ -1,45 +1,69 @@
 {
-  "baseCommit": "125bad3ccc3865d5539a27158da8744d94574846",
-  "status": "visual-source-corrections-ready-for-review; narration-regeneration-pending; release-held",
-  "scope": "C13 two ion-count arrays; C15 sodium-sulfate rain counterions. No visual playback or listening clearance.",
+  "baseCommit": "b48ca8ee0b2468779389e67c039b9a605c2dd220",
+  "status": "visual-source-corrections-ready-for-review; owner-narration-repair-recorded; voiced-review-pending",
+  "scope": "C13 two ion-count arrays; C15 sodium-sulfate rain counterions. Owner changes from b48ca8e preserved.",
   "narration": {
     "lesson": "chem-m5-c13",
     "segment": "feedback-1",
+    "resolution": "Owner corrected and re-recorded feedback-1 in take02 before this PR refresh. No additional generation performed.",
     "sourcePath": "docs/production/claude-pm/lessons/c13/lesson.json",
     "designPath": "docs/production/claude-pm/lessons/chem-m5-c13.md",
     "measuredPath": "docs/production/claude-pm/lessons/c13/measured/lesson.json",
-    "oldText": "Swap partners: copper hydroxide and sodium sulfate. Sodium sulfate is soluble. Hydroxides are insoluble unless they're with Group 1, so copper(II) hydroxide precipitates, a pale blue solid. Copper is two plus, so it needs two hydroxides: copper ion plus two hydroxide ions gives copper hydroxide solid. If you wrote C u O H, the charges don't balance.",
-    "proposedText": "Swap partners: copper hydroxide and sodium sulfate. Sodium sulfate is soluble. Copper(II) hydroxide is insoluble, so it precipitates, a pale blue solid. Copper is two plus, so it needs two hydroxides: copper ion plus two hydroxide ions gives copper hydroxide solid. If you wrote C u O H, the charges don't balance.",
-    "applyTogetherAfterApproval": [
-      "Update design narration and source voiceover consistently",
-      "Regenerate only feedback-1 and align the new recording",
-      "Rebuild measured captions, duration and manifests",
-      "Retarget K16.hyd from Hydroxides are insoluble to is insoluble (or remove unused hyd lookup and void reference)",
-      "Review every feedback-1 cue against new alignment, then check downstream timeline",
-      "Review continuous voiced preview and full release gates"
+    "manifestPath": "docs/production/claude-pm/lessons/c13/voice-manifest.json",
+    "text": "Swap partners: copper hydroxide and sodium sulfate. Sodium sulfate is soluble. Hydroxides are mostly insoluble, and copper isn't one of the exceptions, so copper(II) hydroxide precipitates, a pale blue solid. Copper is two plus, so it needs two hydroxides: copper ion plus two hydroxide ions gives copper hydroxide solid. If you wrote C u O H, the charges don't balance.",
+    "currentCue": "hyd: 'Hydroxides are'",
+    "audioFile": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-18-take02/feedback-1.eee12ea5fb50.mp3",
+    "audioSeconds": 29.6,
+    "audioFrames": 888,
+    "sceneFrames": 948,
+    "recordedFileHashes": [
+      {
+        "path": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-18-take02/feedback-1.eee12ea5fb50.mp3",
+        "sha256": "ee858da4353729b26aaaf75fe9bcbae15b5509446e5fe35e04bef3d6939c12e5"
+      },
+      {
+        "path": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-18-take02/feedback-1.eee12ea5fb50.alignment.json",
+        "sha256": "d5b3613e9566d28859d908d40899b2ca61d64e5a55e976a396f3301382773d75"
+      },
+      {
+        "path": "public/audio/Chemistry-Y12-M5-C13-claude-2026-10-18-take02/feedback-1.eee12ea5fb50.generation.json",
+        "sha256": "85bcb6432d345ba7d0dbad729eedfe907137d7fa77c6760501fe94e6a74e5a0b"
+      }
     ],
-    "currentCue": "hyd: 'Hydroxides are insoluble'",
-    "proposedCue": "hyd: 'is insoluble'",
-    "oldClauseGlobalSeconds": [
-      432.62,
-      436.38
-    ]
+    "evidenceLimit": "Source, measured captions, cue phrase and reported file hashes checked. Audio files not independently heard or checked against these hashes."
   },
   "preservedSha256": {
-    "docs/production/claude-pm/lessons/c13/lesson.json": "b2741ce68ea49cb98df647af6fe096fb2eee09315aca59f628054cb4aa68b3ee",
-    "docs/production/claude-pm/lessons/c13/measured/lesson.json": "6ad455660981d2925a5ddd0faf82cbbc4195fa9d7e05de8e8105642928666762",
-    "docs/production/claude-pm/lessons/chem-m5-c13.md": "9ff31284d3d70fccb45bc13d2f63e0d3d2bf6a3bb655152ff881bb20bd10d2ed",
-    "src/explainer/lessons/chem-m5-c13/config.ts": "e3c1934435641751593265bc6bdb20a742c555f9389c3b145a157a1a786dd524"
-  },
-  "reviewTimes": {
-    "C13_filtrate": "about 06:25.10",
-    "C13_excess_chloride": "about 08:06.97",
-    "C15_sulfate_rain": "07:43.333 to 07:45.267"
+    "docs/production/claude-pm/lessons/c13/lesson.json": "edd75f202456ca2b11250e7e6e88704e0edf131f404cd809cddbfd5484056bad",
+    "docs/production/claude-pm/lessons/c13/measured/lesson.json": "0dbc3a09f93ee403a617bd012726e65a33580ea7299c66110a8f228ad5bae2ea",
+    "docs/production/claude-pm/lessons/chem-m5-c13.md": "70bc845acaa0385baf04350f0ac40bdc54638ec09dcceba88f2014d0e052a353",
+    "src/explainer/lessons/chem-m5-c13/config.ts": "e3c1934435641751593265bc6bdb20a742c555f9389c3b145a157a1a786dd524",
+    "docs/production/claude-pm/lessons/c13/voice-manifest.json": "8195c6a2b84a41ec58db32105923b61d43a64b5aff9f4082b1c574a82d5ecd41",
+    "docs/production/claude-pm/lessons/c13/measured/measured-report.json": "b941a1298f0c728c8ac52279c5152c809570e1ccc0bc275377649061ce0da501",
+    "docs/production/claude-pm/lessons/c13/request-options.json": "9d85917a4da6b7380ac2f63b613cb5c0565d4be440fff92964958c8b35dfd811"
   },
   "releaseBlockers": [
-    "C13 feedback-1 recording still contains the inaccurate generalisation",
-    "New ion placement needs rendered layout/motion inspection",
-    "Exact voiced preview, listening, full export/package approval pending"
+    "Native rendered motion and full continuous voiced review remain pending",
+    "No listening or full export/package approval is supplied by this PR"
   ],
-  "ci": "Existing check.yml triggers only push to main and PR targeting main. A PR targeting video/claude-directed-m5-wave1 does not trigger this workflow. No workflows altered."
+  "ci": "Existing check.yml triggers only push to main and PR targeting main. A PR targeting video/claude-directed-m5-wave1 does not trigger this workflow. No workflows altered.",
+  "validation": {
+    "typecheck": "npm run check passed",
+    "focusedTests": "5 passed",
+    "sourceSuite": {
+      "candidate": {
+        "pass": 266,
+        "fail": 4,
+        "total": 270
+      },
+      "productionBase": {
+        "pass": 261,
+        "fail": 4,
+        "total": 265
+      },
+      "result": "Same four historical catalogue/reconciliation failure names and hash mismatches on both."
+    },
+    "cueBindings": "All module-load cue lookups resolved: 20 C13 scenes, 18 C15 scenes",
+    "listening": "Not performed",
+    "nativePlayback": "Not performed"
+  }
 }

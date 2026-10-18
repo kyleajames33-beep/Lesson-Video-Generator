@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/p03/measured/lesson.json",
+    "lessonSha256": "5fa053be76acdd45914cb506e5dd93fcc32148fd10c481cea343636b4e6dc681"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C13 (NAGSAG with exceptions; list the ions, swap partners, check both; precipitate, spectator ions; net ionic equations; \"no precipitate\", not \"no reaction\"; after filtering, the solution holds the spectators plus any ion in excess; AgCl white, PbI2 bright yellow, BaSO4 white), C11 (dissolved ionic compounds are separate hydrated ions), Year 11 (ionic formulas, variables, risk assessment). P01 introduced validity, reliability and accuracy in plain words, but P01 is a branch, so this video gives the plain meanings again in one line each.",
+    "startsWith": "Controlled ionic-solution tests supply primary observations. The video opens: Twenty-five tiny wells. Five positive ions down the side, five negative ions across the top, and a few drops of each in every well.",
+    "stopsAfter": "explaining why the cations are supplied as nitrates and the anions as sodium salts; planning the microscale matrix with predictions first, a check of each stock alone, a clean dropper technique and a black background; naming the independent, dependent and controlled variables and why concentration matters; stating the expected results and tracing each to a rule; writing a rule as a general statement with evidence and exceptions, and separating untested rules; classifying a mismatch as a wrong rule or a technique problem; testing the liquid above a precipitate to find the ion in excess; defining validity, reliability and accuracy for this investigation; writing a risk assessment for lead, silver, barium and hydroxide solutions. No Ksp, no Qsp, no conduct.",
+    "nextLesson": "Ksp, a number for how slightly soluble a compound is (route chem-m5-c14)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-p03.md"
+  ],
+  "teaching": {
+    "task": "How do you set up a solubility investigation so a solid can only mean one thing, and how do you turn a grid of results into rules and test your predictions?",
+    "causalExplanation": "(1) the grid is the evidence the rules come from (1); (2) nitrates and sodium salts always dissolve, so the only possible solid in a well is the pair being tested; each stock is checked alone first (2); (3) predicting first turns the results into a test; microscale method; keep the dropper out of the well; black background shows white solids (3); (4) variables, and why concentration matters most (4); (5) expected results, each traceable to NAGSAG (5); (6) rows and columns become rules, each with evidence and exceptions; untested ions are not your conclusion (6); (7) a mismatch is either a wrong rule or a technique problem; slightly soluble is a real third category; repeat doubtful cells (7); (8) testing the liquid above a precipitate shows which ion was left over (8); (9) validity, reliability, accuracy for this investigation (9); (10) risk assessment (10); memory aids (11); two attempts with brief feedback (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "the investigation is a test of predictions. Design for validity (always-soluble partners, a check of each stock alone), predict every cell, mix microscale, record carefully, read patterns into rules with evidence, evaluate every mismatch, then analyse a mixture's composition by testing its liquid. Validity, reliability and accuracy are named on this investigation. Risk assessment with the real hazards.",
+    "openingDecision": "This grid is the evidence the solubility rules come from. So how do you set it up so the results can be trusted, and how do you turn a grid of cloudy wells into rules?",
+    "understandingCheck": "(A1, Revision 2) potassium chloride mixed with silver nitrate (a syllabus pair); the white solid settles; a drop of potassium chloride added to the clear liquid above gives more white solid: which ions were in that liquid? Answer: K+, NO3- and leftover Ag+ (silver nitrate was in excess). Crossed mistake: \"chloride ions left over\". This transfers the scene 8 logic to a new system and the opposite reagent role; it also differs from C13's attempt 2 (chloride in excess, filtrate named from the excess). (A2) two groups mix calcium nitrate with sodium sulfate; one sees a faint white cloud, the other nothing: explain both, and how to make the result more reliable. Answer: CaSO4 slightly soluble, so whether a cloud shows depends on the amounts (drop size, concentration) and waiting time; a dirty well can fake a cloud; repeat in clean wells with the same concentrations, drops and waiting time, over black, and record \"slight\". Crossed mistake: \"one group was just wrong\".",
+    "curriculumScope": "Syllabus (2017, p51, C5-IQ4-03): \"conduct an investigation to determine solubility rules, and predict and analyse the composition of substances when two ionic solutions are mixed, for example: potassium chloride and silver nitrate; potassium iodide and lead nitrate; sodium sulfate and barium nitrate (ACSCH065)\". This video prepares students to plan, record and analyse the investigation and does not claim to replace conducting it."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, three constant zones (short question top left, apparatus centre, one current card in the right third). Colour key: positive ions amber, negative ions violet, every precipitate in its real colour, spectators grey, predictions in pen, observations as the wells themselves. Reuse and new items: C13's rules card (small, scene 5), the C13 matrix grid style (now drawn as wells), the C13 swap-cross icon (scene 2, small), the C13 equation strip for the PbI2 net equation (scene 8), the C13 composition card (\"solid / dissolved\"), `m5x-ppt-pbi2-yellow-v1.png` (settled yellow solid with clear liquid above; scene 8), `m5x-ppt-agcl-white-v1.png` (attempt 1, Revision 2), `m5x-ppt-agcl-white-v1.png`, `m5x-no-ppt-clear-v1.png`, `m5x-ppt-baso4-white-v1.png` (requested in the C13 brief; interim as C13), `m5x-graduated-pipette-v1.png` (drawing off the clear liquid), `m6-white-tile-v1.png`, `m6-wash-bottle-v1.png`, the P01 shared safety plates (`m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`, `m5x-waste-bottle-v1.png`) and `m5x-dropper-clear-v1.png` (P01 Codex items 5, 9 to 11), the countdown ring and the key notes board. New coded items: the well fills (drops landing, clear, cloud, solid in its real colour), the predict-then-observe overlay (each cell shows the prediction as a pen mark and the observation as the well), the black card under the plate (a plain rectangle), the rule-with-evidence card, the mismatch sorter (\"rule wrong\" / \"technique\"), the variables card, the risk table. New painted plates are listed in the Codex asset brief (well plate, dropper bottle).",
+    "transitionPlan": "The well plate fills with clear and cloudy wells to open; the ten dropper bottles line up beside it for the design choice; the book grid slides under the plate for the method and the black card slides half under it; the plate stays centre while the variables, expected results, rule-with-evidence, mismatch sorter, validity and risk cards take the right third one at a time; the settled lead iodide tube and pipette replace the plate for the composition test; the aids and the plan card follow; each attempt clears the board and the feedback rebuilds the composition card or the repeat wells; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Heading \"Where do the rules come from? Your own results.\" writes on.",
+      "teachingReason": "Teaches: hook (a grid of evidence).",
+      "narrationCue": "clear / cloudy / rules",
+      "motionPurpose": "On the spoken cues: The painted well plate (`p03-well-plate-v1.png`, Codex item 1) sits centre on a coded black card; the 5 x 5 block is outlined in pen with the row and column ion labels writing on. On \"clear\" a few wells fill with coded clear liquid;",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Where do the rules come from? Your own results.\" writes on. The painted well plate (`p03-well-plate-v1.png`, Codex item 1) sits centre on a coded black card; the 5 x 5 block is outlined in pen with the row and column ion labels writing on. On \"clear\" a few wells fill with coded clear liquid; on \"cloudy\" others bloom with coded solids in their real colours (white, bright yellow, pale yellow, brown) in the matrix pattern of the Decisions table. On \"rules\" a small rules card (C13 NAGSAG, faint) slides in at the right with a pen arrow from the grid to it (\"evidence → rules\").",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "plate slide",
+        "table build"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "always-soluble-partners",
+      "visualDecision": "adjust",
+      "visualReference": "Ten painted dropper bottles (`p03-dropper-bottle-v1.png`, Codex item 2) line up, five down the left and five across the top, with coded labels \"NaNO3\", \"Ca(NO3)2\", \"Ba(NO3)2\", \"Pb(NO3)2\", \"AgNO3\" and \"NaCl\", \"NaI\", \"Na2SO4\", \"Na2CO3\", \"NaOH\", all \"0.1 mol/L\".",
+      "teachingReason": "Explains why nitrates and sodium salts: they always dissolve, so a solid can only be the tested pair; and why check each stock alone: a cloudy stock would fake a result.",
+      "narrationCue": "nitrate / sodium / pair you're testing",
+      "motionPurpose": "On the spoken cues: On \"nitrate\" the NO3- part of each left label lights grey; on \"sodium\" the Na+ part of each top label lights grey. On \"always dissolve\" a tag \"N and G of NAGSAG: always soluble\" writes (C13 rules card rows flash).",
+      "motionRole": "explain",
+      "onScreenChange": "ten painted dropper bottles (`p03-dropper-bottle-v1.png`, Codex item 2) line up, five down the left and five across the top, with coded labels \"NaNO3\", \"Ca(NO3)2\", \"Ba(NO3)2\", \"Pb(NO3)2\", \"AgNO3\" and \"NaCl\", \"NaI\", \"Na2SO4\", \"Na2CO3\", \"NaOH\", all \"0.1 mol/L\". On \"nitrate\" the NO3- part of each left label lights grey; on \"sodium\" the Na+ part of each top label lights grey. On \"always dissolve\" a tag \"N and G of NAGSAG: always soluble\" writes (C13 rules card rows flash). On \"pair you're testing\" the C13 swap cross plays small for one well (Pb(NO3)2 + NaI): \"Na+ NO3-\" ticks green and greys out (spectators), \"Pb2+ I-\" lights amber: \"the only possible solid\". On \"on its own\" each bottle gets one coded drop in a separate check well with a little water from the wash bottle (`m6-wash-bottle-v1.png`); all stay clear, each with a teal tick (tag \"stock check: clear on its own\").",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "predict-method",
+      "visualDecision": "adjust",
+      "visualReference": "A coded results grid (book page lines) writes on; on \"predict\" each cell gets a pen prediction mark (\"ppt\" or \"none\") filling quickly row by row.",
+      "teachingReason": "Explains why predict first: it turns observations into a test of the rules; and why the tip stays out: it would carry one solution into the other's bottle; and why black: a white cloud is invisible on white.",
+      "narrationCue": "predict / black",
+      "motionPurpose": "On the spoken cues: The well plate slides over the grid so each well sits on its cell. On \"along each row\" a dropper bottle tilts over row 1 and coded drops fall into five wells, then the rows fill in turn (fast); on \"down each column\" the columns fill.",
+      "motionRole": "explain",
+      "onScreenChange": "a coded results grid (book page lines) writes on; on \"predict\" each cell gets a pen prediction mark (\"ppt\" or \"none\") filling quickly row by row. The well plate slides over the grid so each well sits on its cell. On \"along each row\" a dropper bottle tilts over row 1 and coded drops fall into five wells, then the rows fill in turn (fast); on \"down each column\" the columns fill. On \"dropper tip out\" a close inset shows the dropper tip held above a well with a gap and a teal tick, beside a crossed inset of a tip touching the liquid (tag \"contaminates the bottle\"). On \"black\" the coded black card slides under half the plate: a faint white cloud in the Ca2+/SO4 2- well is invisible over the white tile (`m6-white-tile-v1.png`) half and clear over the black half (tags \"white on white: hard to see\", \"white on black: clear\"). A record-sheet tag under the grid: \"record: ppt or no ppt, colour, heavy or faint cloud. Write 'no precipitate', not 'no reaction'.\"",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "plate slide",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "The variables card writes in the right zone, one row per cue: \"Independent (what you change): the cation and anion pair\"; \"Dependent (what you observe): ppt or not, colour, heavy or faint\"; \"Controlled (kept the same): 0.1 mol/L stocks, 3 drops + 3 drops, temperature, time before recording\".",
+      "teachingReason": "Explains why concentration matters most: some compounds only just dissolve, so the amount decides whether a cloud shows.",
+      "narrationCue": "independent variable / dependent variable / controlled",
+      "motionPurpose": "On the spoken cues: On \"Concentration matters most\" two coded wells side by side show the same pair (Ca2+ + SO4 2-) with fewer drops (clear) and more drops (faint cloud), tag \"same pair, different amounts\".",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone, one row per cue: \"Independent (what you change): the cation and anion pair\"; \"Dependent (what you observe): ppt or not, colour, heavy or faint\"; \"Controlled (kept the same): 0.1 mol/L stocks, 3 drops + 3 drops, temperature, time before recording\". On \"Concentration matters most\" two coded wells side by side show the same pair (Ca2+ + SO4 2-) with fewer drops (clear) and more drops (faint cloud), tag \"same pair, different amounts\".",
+      "motionTools": [
+        "HandText write-on",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "expected-results",
+      "visualDecision": "adjust",
+      "visualReference": "The wells fill to the expected matrix (Decisions table) as each sentence lands, each group with its rules-card row flashing small in the corner: Na+ row (all clear, \"Group 1: soluble\"); CO3 2- column (white, Ag+ pale yellow, Na+ clear: \"carbonates: insoluble unless Group 1\");",
+      "teachingReason": "Explains why each expected result: the NAGSAG row it comes from.",
+      "narrationCue": "clear",
+      "motionPurpose": "On the spoken cues: The painted tubes `m5x-ppt-agcl-white-v1.png` and `m5x-ppt-pbi2-yellow-v1.png` stand small at the side for the two syllabus solids. A chip \"expected, at 0.1 mol/L; your results are the test\" sits under the plate.",
+      "motionRole": "explain",
+      "onScreenChange": "the wells fill to the expected matrix (Decisions table) as each sentence lands, each group with its rules-card row flashing small in the corner: Na+ row (all clear, \"Group 1: soluble\"); CO3 2- column (white, Ag+ pale yellow, Na+ clear: \"carbonates: insoluble unless Group 1\"); Ag+ and Pb2+ with Cl- and I- (\"halides: except Ag+, Pb2+\"; PbCl2 cell drawn as a faint cloud with a small tag \"faint, or none at this concentration\", not spoken); SO4 2- column (Ba2+, Pb2+ white; Ca2+, Ag+ faint: \"sulfates: except Ba2+, Pb2+; Ca2+, Ag+ slight\"); OH- column (Ag+ brown, Pb2+ white, Ca2+ faint, Ba2+ clear: \"hydroxides: insoluble, except Group 1 and Ba2+\"). The painted tubes `m5x-ppt-agcl-white-v1.png` and `m5x-ppt-pbi2-yellow-v1.png` stand small at the side for the two syllabus solids. A chip \"expected, at 0.1 mol/L; your results are the test\" sits under the plate.",
+      "motionTools": [
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "results-to-rules",
+      "visualDecision": "new",
+      "visualReference": "On \"along each row\" a pen bracket runs along the Na+ row; on \"down each column\" another runs down the CO3 2- column.",
+      "teachingReason": "Explains why untested rules are not your conclusion: no evidence from this experiment.",
+      "narrationCue": "along each row / down each column / evidence",
+      "motionPurpose": "On the spoken cues: The rule-with-evidence card writes in the right zone, two filled examples: \"Rule: sodium compounds are soluble. Evidence: Na+ row, 5 of 5 clear. Exceptions: none seen.\" and \"Rule: carbonates are insoluble except with Na+. Evidence: CO3 2- column, 4 of 5 solid;",
+      "motionRole": "explain",
+      "onScreenChange": "on \"along each row\" a pen bracket runs along the Na+ row; on \"down each column\" another runs down the CO3 2- column. The rule-with-evidence card writes in the right zone, two filled examples: \"Rule: sodium compounds are soluble. Evidence: Na+ row, 5 of 5 clear. Exceptions: none seen.\" and \"Rule: carbonates are insoluble except with Na+. Evidence: CO3 2- column, 4 of 5 solid; Na+ clear.\" On \"ammonium or acetate\" a separate grey box writes: \"Not tested here: ammonium, acetate, nitrate as a test ion. Source: reference table.\" with a pen tag \"not my conclusion\".",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "test-predictions",
+      "visualDecision": "new",
+      "visualReference": "The predict-then-observe overlay: each cell shows its pen prediction over the well; matches get a small teal tick, mismatches a pen ring.",
+      "teachingReason": "Explains why a mismatch must be classified: it is either the rule or the technique.",
+      "narrationCue": "rule you had wrong / technique problem / slightly soluble / repeat",
+      "motionPurpose": "On the spoken cues: The mismatch sorter writes in the right zone with two bins: \"rule wrong\" and \"technique\". On \"barium hydroxide\" the Ba2+/OH- cell (predicted \"ppt\", observed clear) is ringed and flies into \"rule wrong\" with the tag \"exception: Ba(OH)2 soluble\".",
+      "motionRole": "explain",
+      "onScreenChange": "the predict-then-observe overlay: each cell shows its pen prediction over the well; matches get a small teal tick, mismatches a pen ring. The mismatch sorter writes in the right zone with two bins: \"rule wrong\" and \"technique\". On \"barium hydroxide\" the Ba2+/OH- cell (predicted \"ppt\", observed clear) is ringed and flies into \"rule wrong\" with the tag \"exception: Ba(OH)2 soluble\". On \"slightly soluble\" the Ca2+/SO4 2- faint cloud gets a third label beside \"soluble\" and \"insoluble\": \"slightly soluble (faint cloud, depends on amount)\". On \"dirty well\" a coded speck appears in a different well that should be clear; it goes into \"technique\", and on \"repeat\" a clean well beside it runs again and stays clear (teal tick).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "test-the-liquid",
+      "visualDecision": "adjust",
+      "visualReference": "The painted settled tube (`m5x-ppt-pbi2-yellow-v1.png`) centre; the C13 equation strip small: \"Pb2+(aq) + 2I-(aq) → PbI2(s)\".",
+      "teachingReason": "Explains why more solid in the test well shows the excess ion: the added ion found a partner still dissolved.",
+      "narrationCue": "lead ions / iodide",
+      "motionPurpose": "On the spoken cues: On \"take some clear liquid\" the graduated pipette (`m5x-graduated-pipette-v1.png`) draws off the clear layer (coded level change) and empties it into two clean wells of the plate, labelled \"test A\" and \"test B\". On \"a drop of potassium iodide\" a dropper bottle labelled \"KI\" adds a coded drop to test A;",
+      "motionRole": "explain",
+      "onScreenChange": "the painted settled tube (`m5x-ppt-pbi2-yellow-v1.png`) centre; the C13 equation strip small: \"Pb2+(aq) + 2I-(aq) → PbI2(s)\". On \"take some clear liquid\" the graduated pipette (`m5x-graduated-pipette-v1.png`) draws off the clear layer (coded level change) and empties it into two clean wells of the plate, labelled \"test A\" and \"test B\". On \"a drop of potassium iodide\" a dropper bottle labelled \"KI\" adds a coded drop to test A; on \"lead ions\" a yellow cloud blooms (tag \"more PbI2: Pb2+ was left over, so Pb(NO3)2 in excess\"). On \"a drop of lead nitrate\" the \"Pb(NO3)2\" bottle adds a drop to test B; on \"iodide\" the alternative shows (tag \"more PbI2: I- was left over, so KI in excess\"). A small rule chip: \"at most one test goes cloudy: whichever ion is left over\". The C13 composition card writes on \"spectators\": \"dissolved: K+, NO3- (spectators), plus the ion in excess\".",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "Three cards write in turn in the right zone, each with its plain question and this investigation's answer: \"Validity: does it test what it claims? One pair per well; always-soluble partners; stock check.\" (pen link to the grey Na+ and NO3- labels);",
+      "teachingReason": "Teaches: validity, reliability and accuracy.",
+      "narrationCue": "valid / reliable / accurate",
+      "motionPurpose": "On the spoken cues: three cards write in turn in the right zone, each with its plain question and this investigation's answer: \"Validity: does it test what it claims? One pair per well; always-soluble partners; stock check.\" (pen link to the grey Na+ and NO3- labels); \"Reliability: same result on repeats? Repeat doubtful cells;",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this investigation's answer: \"Validity: does it test what it claims? One pair per well; always-soluble partners; stock check.\" (pen link to the grey Na+ and NO3- labels); \"Reliability: same result on repeats? Repeat doubtful cells; compare groups.\" (two coded well rows matching); \"Accuracy: observations match what's really there? Black background, clean wells, fresh solutions, compare with accepted results.\" (the black card half pulses).",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "The risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each hazard cell with its dropper bottle and coded label: lead nitrate: \"toxic; builds up in the body; may harm an unborn baby; eye damage\" / \"drops only, gloves, glasses, wash hands;",
+      "teachingReason": "Explains why microscale is a safety control: smaller amounts, smaller exposure and waste.",
+      "narrationCue": "Lead nitrate / Silver nitrate / Barium nitrate / Sodium hydroxide",
+      "motionPurpose": "On the spoken cues: Glasses and gloves plates (`m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`) at the table head under \"always\". On \"heavy-metal container\" the waste bottle (`m5x-waste-bottle-v1.png`) with a coded label \"heavy-metal waste: Pb, Ag, Ba\" and a crossed sink icon.",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each hazard cell with its dropper bottle and coded label: lead nitrate: \"toxic; builds up in the body; may harm an unborn baby; eye damage\" / \"drops only, gloves, glasses, wash hands; follow school rules (some schools use a teacher demo or supplied results)\"; silver nitrate: \"stains skin; damages eyes\" / \"gloves, glasses\"; barium nitrate: \"harmful if swallowed\" / \"no mouth pipetting, wash hands\"; sodium hydroxide (and sodium carbonate): \"eye damage or irritation\" / \"glasses\". Glasses and gloves plates (`m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`) at the table head under \"always\". On \"heavy-metal container\" the waste bottle (`m5x-waste-bottle-v1.png`) with a coded label \"heavy-metal waste: Pb, Ag, Ba\" and a crossed sink icon. On \"tiny amounts\" the well plate pulses beside a ghost test tube (tag \"microscale: less exposure, less waste\"). Footer chip: \"follow your school's risk assessment and your teacher's method\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "table build",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 3 seconds (reading hold; the table returns in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "Aid 1 writes large and handwritten with the greyed Na+ and NO3- labels and one amber pair: \"Partners that always dissolve: any solid is the pair you're testing.\" Aid 2 writes beneath as a three-step strip with icons (pen grid, dropper, sorter bins): \"Predict first. Test.",
+      "teachingReason": "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+      "narrationCue": "Partners that always dissolve, so any solid is the pair you're testing. / predict first, then test, then explain every mismatch.",
+      "motionPurpose": "On the spoken cues: aid 1 writes large and handwritten with the greyed Na+ and NO3- labels and one amber pair: \"Partners that always dissolve: any solid is the pair you're testing.\" Aid 2 writes beneath as a three-step strip with icons (pen grid, dropper, sorter bins): \"Predict first. Test.",
+      "motionRole": "explain",
+      "onScreenChange": "aid 1 writes large and handwritten with the greyed Na+ and NO3- labels and one amber pair: \"Partners that always dissolve: any solid is the pair you're testing.\" Aid 2 writes beneath as a three-step strip with icons (pen grid, dropper, sorter bins): \"Predict first. Test. Explain every mismatch.\" Condition tag: \"same concentration and drops in every well; repeat anything doubtful\".",
+      "motionTools": [
+        "HandText write-on",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "The board clears. The settled white tube (`m5x-ppt-agcl-white-v1.png`; build check: the plate must show settled solid under clear liquid, otherwise use the coded tube with a settled white layer) and one test well over the black card with a fresh white cloud.",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"Which ions were in that clear liquid?\"",
+      "narrationCue": "Your turn. Potassium chloride solution is mixed with silver nitrate solution, and a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears. The settled white tube (`m5x-ppt-agcl-white-v1.png`; build check: the plate must show settled solid under clear liquid, ot)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The settled white tube (`m5x-ppt-agcl-white-v1.png`; build check: the plate must show settled solid under clear liquid, otherwise use the coded tube with a settled white layer) and one test well over the black card with a fresh white cloud. Givens card: \"potassium chloride + silver nitrate → white solid, settled\", \"clear liquid + 1 drop of potassium chloride → more white solid\".",
+      "motionTools": [
+        "ScribbleCircle",
+        "drop fall",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "The composition card fills: \"dissolved: K+, NO3- (spectators), Ag+ (excess)\" with grey spectator tags and an amber \"excess\" tag on Ag+.",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for 1 (owner rule, 16 October).",
+      "narrationCue": "Potassium, nitrate, and leftover silver ions.",
+      "motionPurpose": "On the spoken cues: The C13 equation strip writes small: \"Ag+(aq) + Cl-(aq) → AgCl(s)\". Answer chip \"K+, NO3-, leftover Ag+\" pins. On \"It's not chloride\" a chip \"Cl- left over\" fades in and is crossed (caption \"more solid on adding Cl- means Ag+ was left\").",
+      "motionRole": "explain",
+      "onScreenChange": "the composition card fills: \"dissolved: K+, NO3- (spectators), Ag+ (excess)\" with grey spectator tags and an amber \"excess\" tag on Ag+. The C13 equation strip writes small: \"Ag+(aq) + Cl-(aq) → AgCl(s)\". Answer chip \"K+, NO3-, leftover Ag+\" pins. On \"It's not chloride\" a chip \"Cl- left over\" fades in and is crossed (caption \"more solid on adding Cl- means Ag+ was left\").",
+      "motionTools": [
+        "HandText write-on",
+        "AgCl",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "Two coded well-plate strips side by side labelled \"group 1: faint white cloud\" and \"group 2: no precipitate\", same Ca2+/SO4 2- cell ringed in each.",
+      "teachingReason": "Unseen transfer task with every condition on screen: attempt 2 (countdown, 10 seconds)",
+      "narrationCue": "Last one. Two groups mix calcium nitrate with sodium",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (Two coded well-plate strips side by side labelled \"group 1: faint white cloud\" and \"group 2: no precipitate\", same Ca2+/SO4 2- cell ringed i)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. Givens card: \"calcium nitrate + sodium sulfate\", the two records. Two numbered demands: \"1. Explain how both results could happen.\" \"2. How would you make the result more reliable?\" Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no \"slightly soluble\" label, no black card.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "The \"slightly soluble\" third label from scene 7 returns over the cell.",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for 2 (owner rule, 16 October).",
+      "narrationCue": "slightly soluble / repeat",
+      "motionPurpose": "On the spoken cues: Answer chip 1: \"CaSO4 slightly soluble: a cloud depends on amount and time; or contamination.\" On \"repeat\" three clean wells run with matched drop counters and a black card under them; all three show the same faint cloud; answer chip 2: \"repeat in clean wells, same conditions, over black; record 'slight'\".",
+      "motionRole": "explain",
+      "onScreenChange": "the \"slightly soluble\" third label from scene 7 returns over the cell. Answer chip 1: \"CaSO4 slightly soluble: a cloud depends on amount and time; or contamination.\" On \"repeat\" three clean wells run with matched drop counters and a black card under them; all three show the same faint cloud; answer chip 2: \"repeat in clean wells, same conditions, over black; record 'slight'\". On \"one group was wrong\" a chip \"one group made a mistake, ignore it\" fades in and is crossed (caption \"slightly soluble is a real result\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The plan card writes, each line lighting on its words: \"Always-soluble partners (nitrates, sodium salts); check each stock alone.\" \"Predict all 25 first.\" \"3 drops + 3 drops; tip out of the well.\" \"View over black and white.\" \"Repeat doubtful cells.\" \"Rule + evidence + exceptions;",
+      "teachingReason": "Packs the method into reusable lines and hands off to the next video.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: the plan card writes, each line lighting on its words: \"Always-soluble partners (nitrates, sodium salts); check each stock alone.\" \"Predict all 25 first.\" \"3 drops + 3 drops; tip out of the well.\" \"View over black and white.\" \"Repeat doubtful cells.\" \"Rule + evidence + exceptions;",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"Always-soluble partners (nitrates, sodium salts); check each stock alone.\" \"Predict all 25 first.\" \"3 drops + 3 drops; tip out of the well.\" \"View over black and white.\" \"Repeat doubtful cells.\" \"Rule + evidence + exceptions; untested rules from the table.\" \"Every mismatch: rule wrong or technique?\" On \"Next\" a chip \"Next: Ksp, how slightly soluble?\" appears with `m5x-saturated-beaker-v1.png` small.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/p03-learning-review.md",
+      "sha256": "420dfc81bfcd7384a9004d35d9ce53a5c928c84ccb5984287f09665562daa4c7"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/p03-claude-science-check.md",
+      "sha256": "bb96a76e420aa4bdec62c1a57191416b9ebecf984a81ee12b84e30a3d269a4ba"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

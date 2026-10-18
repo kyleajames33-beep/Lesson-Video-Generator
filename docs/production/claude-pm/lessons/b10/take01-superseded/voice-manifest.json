@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B10-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b10/lesson.json",
+  "lessonSha256": "50cb0ef8d8b0393bd28602a912718d4d21fcf173ac0e294d456176e64e1b663b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b10/lesson.production-brief.json",
+    "sha256": "aecd40e8cc6d36fc0337d846de69cd91cd40679993575a9f57738bb4397e4c6f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Remember the white-eyed fruit fly that hatched in Morgan's lab in 1910? He crossed it with red-eyed females, and all their offspring had red eyes. So white was recessive. Then he bred those offspring with each other, and white eyes came back, as expected. But there was a twist. Every single white-eyed fly was male. Why would eye colour care whether a fly is male or female?",
+      "hash": "504d065a1719",
+      "textSha256": "504d065a1719e1ce074f6c73aa9288e31db3e3526df9c1ea03c4cd8d4f137955",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/hook.504d065a1719.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/hook.504d065a1719.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/hook.504d065a1719.generation.json",
+      "plannedRequestSha256": "110816273aa73ad6b401483187e273a4d271d9285c90b37607bfb90678bff528"
+    },
+    {
+      "id": "sex-chromosomes",
+      "parentSceneId": "sex-chromosomes",
+      "text": "The answer is in the sex chromosomes. In fruit flies, as in humans, females have two X chromosomes, and males have one X and one Y. The eye colour gene is on the X, and the Y doesn't carry it. So a female has two copies of the gene, but a male has only one. If that one copy is the white allele, there's no other allele to hide it, so his eyes are white. A gene on a sex chromosome is called sex-linked.",
+      "hash": "e565b1369f0d",
+      "textSha256": "e565b1369f0d286f71786f43c462cd24f3b1b2ad44523f5baf5d747afa95fd8a",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/sex-chromosomes.e565b1369f0d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/sex-chromosomes.e565b1369f0d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/sex-chromosomes.e565b1369f0d.generation.json",
+      "plannedRequestSha256": "a2f94d589371c7bf75955bc2fac394bc3aca52f97f2045e0737882513bba0964"
+    },
+    {
+      "id": "morgan-cross",
+      "parentSceneId": "morgan-cross",
+      "text": "Now Morgan's second cross. The red-eyed daughters each had a red allele from their mother, and a white allele on their father's X, so they were carriers. Cross one with a red-eyed male. He gives his X, with its red allele, to every daughter, and his Y to every son. So every daughter has red eyes. Each son's only X comes from his mother, so half the sons should have white eyes. That matches what Morgan saw: no white-eyed daughters, and close to half the sons white-eyed.",
+      "hash": "24dd792d6564",
+      "textSha256": "24dd792d65640e322bd67dfb23a196ed1302a9ce9bdf2feaa922e6a588c2044d",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/morgan-cross.24dd792d6564.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/morgan-cross.24dd792d6564.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/morgan-cross.24dd792d6564.generation.json",
+      "plannedRequestSha256": "1d78c9b9c7c16604a43e3285e553de3a1e3f0812cdbc513fb0f9f8328d85942c"
+    },
+    {
+      "id": "haemophilia",
+      "parentSceneId": "haemophilia",
+      "text": "People work the same way. Haemophilia A, where blood doesn't clot properly, is caused by a recessive allele on the X. A carrier mother and an unaffected father have a one in four chance, for each child, of an affected son. But for each son, the chance is one in two. So read the question: all children, or sons? No daughter of theirs is affected, because their father's X carries the normal allele. That's why conditions like this are far more common in males: a male needs one copy, but a female needs two.",
+      "hash": "5aeefad8743a",
+      "textSha256": "5aeefad8743ac054218e210a7548757f54d458c0272deb183319da5c039d59c6",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/haemophilia.5aeefad8743a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/haemophilia.5aeefad8743a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/haemophilia.5aeefad8743a.generation.json",
+      "plannedRequestSha256": "d63abd04a5e2718b1615c3451c264188659b3bfda4ede518109d9f8c645fd206"
+    },
+    {
+      "id": "x-linked-pedigree",
+      "parentSceneId": "x-linked-pedigree",
+      "text": "In a pedigree, X-linked recessive traits leave a pattern: mostly males are affected, the allele passes through unaffected carrier mothers, and it never passes from father to son. But it doesn't only come from mothers. An affected father passes his X to every daughter, so all his daughters are carriers. And one quick test rules it out: an affected daughter with an unaffected father. That's the family from the last video, so that condition wasn't X-linked recessive.",
+      "hash": "688b6be624e9",
+      "textSha256": "688b6be624e9fb62b1906bdedee6dcb6abd66783fc6bfe0c8f376908c44234f8",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/x-linked-pedigree.688b6be624e9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/x-linked-pedigree.688b6be624e9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/x-linked-pedigree.688b6be624e9.generation.json",
+      "plannedRequestSha256": "10654a5fd65c1b1fbb9fc9c6c36cb4fdf0fda49c4af87fd231e7f66781901dd5"
+    },
+    {
+      "id": "heterozygote-first",
+      "parentSceneId": "heterozygote-first",
+      "text": "So far, one allele has always been fully dominant, and two heterozygotes gave 3 to 1. But that's not the only possibility. The fastest way to tell the patterns apart is to read the heterozygote first. Does it look like one of the homozygotes, does it look in between, or does it show both at once?",
+      "hash": "3e3a20976427",
+      "textSha256": "3e3a209764274994fed244b2ca00c489fa82b231e52ae9dbe3e3538904862db1",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/heterozygote-first.3e3a20976427.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/heterozygote-first.3e3a20976427.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/heterozygote-first.3e3a20976427.generation.json",
+      "plannedRequestSha256": "0cee5ea815e0c5f9d433192b1546f2746c073007f7fd28f48937e048ce1fcead"
+    },
+    {
+      "id": "incomplete-dominance",
+      "parentSceneId": "incomplete-dominance",
+      "text": "Snapdragons show the in-between kind. Cross a red one with a white one, and every offspring is pink. The red allele codes for an enzyme that makes red pigment. The white allele's enzyme doesn't work, like the white snapdragons in the proteins video. One working copy makes less pigment, so the flowers are pink. That's incomplete dominance. Cross two pinks, and you get 1 red to 2 pink to 1 white. Red and white come back, so the alleles never blended. Only the colour did.",
+      "hash": "fc2b74cf62ae",
+      "textSha256": "fc2b74cf62ae13f0e311eef7178b8bb879f577c989f557d15c19110d8bae12bc",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/incomplete-dominance.fc2b74cf62ae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/incomplete-dominance.fc2b74cf62ae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/incomplete-dominance.fc2b74cf62ae.generation.json",
+      "plannedRequestSha256": "5c567f6c2bc5ee23cf3d737072a03f88d45207ae947f2b789cb179368a2c1c2c"
+    },
+    {
+      "id": "co-dominance",
+      "parentSceneId": "co-dominance",
+      "text": "Cattle show the other kind. Cross a red bull with a white cow, and the calves are roan. Look closely at a roan coat. It isn't pink. Each hair is either fully red or fully white, mixed together. Both alleles are fully expressed, side by side. That's co-dominance. Two roans give 1 red to 2 roan to 1 white, the same ratio as the snapdragons, because in both cases the heterozygote looks different from both homozygotes.",
+      "hash": "5e2558309856",
+      "textSha256": "5e255830985659efc4bbdb528833116b986bd06c61362eaf3cfed2882349977c",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/co-dominance.5e2558309856.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/co-dominance.5e2558309856.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/co-dominance.5e2558309856.generation.json",
+      "plannedRequestSha256": "4a46a50b52a79ec9805f8dfd7a2e46cb8cb810bda34185b235323c8b3de2b350"
+    },
+    {
+      "id": "abo",
+      "parentSceneId": "abo",
+      "text": "Your ABO blood group adds one more twist. In the population, this gene has three alleles, not two. That's multiple alleles. But each person still carries only two of them. One allele's enzyme puts A antigens, small sugar markers, on your red blood cells. Another puts B antigens on. The third, small i, makes an enzyme that doesn't work, so it adds neither. A and B are co-dominant: with both, you're type AB. Both are dominant over small i, so type O means two small i alleles.",
+      "hash": "abb59834665e",
+      "textSha256": "abb59834665ef8ce10d9eb8cdc0a243c5675950a0fa467be865a4f047651f67d",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/abo.abb59834665e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/abo.abb59834665e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/abo.abb59834665e.generation.json",
+      "plannedRequestSha256": "97eae9eb0914586db3c2f41bc811074eeb91ccd9c50796a98e24d094973e396c"
+    },
+    {
+      "id": "abo-surprise",
+      "parentSceneId": "abo-surprise",
+      "text": "Here's the surprise. A type A parent and a type B parent can have a child of any blood group. If each carries a hidden small i, the square has four boxes: AB, A, B and O, each with a one in four chance.",
+      "hash": "a30230338953",
+      "textSha256": "a3023033895376f6a35fd2a832d50b313e6d197963310123810258ad95544579",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/abo-surprise.a30230338953.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/abo-surprise.a30230338953.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/abo-surprise.a30230338953.generation.json",
+      "plannedRequestSha256": "822e5ab8474e8b314ac031d1129aea68b8f2ae891baf435dd3a5c6baf3cab1e6"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "To remember the three relationships: incomplete is in-between, and co shows both. And for sex linkage: Dad gives his X to daughters, and his Y to sons.",
+      "hash": "bb034c13f9ce",
+      "textSha256": "bb034c13f9ce0b8412f7b7c16c53f1fb6227862a9c6ebcddba37b87334426908",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/memory.bb034c13f9ce.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/memory.bb034c13f9ce.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/memory.bb034c13f9ce.generation.json",
+      "plannedRequestSha256": "e62f4dbeb13728ab7d81fe22a4b99cc41ab455e4f93636877863a46c7e4dae06"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two harder questions now. First, red-green colour blindness is caused by a recessive allele on the X chromosome. A woman with normal vision, whose father was colour-blind, has children with a man with normal vision. What's the probability that their first child is a colour-blind son? What's the probability that a son of theirs is colour-blind? And could a daughter of theirs be colour-blind? Explain. Pause here to answer.",
+      "hash": "044af0b6b30f",
+      "textSha256": "044af0b6b30f49f494053be1f5b567f7bc9e58e9b0b9d76d710d79219e6f0a77",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/attempt.044af0b6b30f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/attempt.044af0b6b30f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/attempt.044af0b6b30f.generation.json",
+      "plannedRequestSha256": "741587b9a1a72ec474c0ed61062783ab52f291656311fa605426864a19c3d0d2"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Her father gave her his only X, with the colour-blind allele, so she's a carrier. Each son gets his X from her, so a son has a one in two chance. Among all their children, that's a one in four chance of a colour-blind son. Every daughter gets her father's normal X, so no daughter can be colour-blind. If you said one in two for the first child, you answered for sons, not all children.",
+      "hash": "d6506f453138",
+      "textSha256": "d6506f453138b1b247dec7d23fdaaedb3b7f92a7a68ad4181144e4ce32314abd",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/feedback-one.d6506f453138.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/feedback-one.d6506f453138.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/feedback-one.d6506f453138.generation.json",
+      "plannedRequestSha256": "743f3aa4b130d5ab3cd3db83d7c7b3378c31dab64ab7c009c2f39128f85d13d8"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A mother with type A blood and a father with type B blood have a child with type O blood. Work out the genotypes of all three. Then find the probability that their next child has type AB blood. Pause here to answer.",
+      "hash": "fa3c00aa0523",
+      "textSha256": "fa3c00aa05238ff4beb46f2dff98179bf1952093059a66ca4bf110404a8206aa",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/attempt-two.fa3c00aa0523.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/attempt-two.fa3c00aa0523.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/attempt-two.fa3c00aa0523.generation.json",
+      "plannedRequestSha256": "3aab3d64a7711d8eff6fd6bcfd12edc2da9bb33218ff6d19fd5657327d495967"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Type O means two small i alleles, so the child got one from each parent. So the mother is type A with a hidden small i, and the father is type B with a hidden small i. Their square gives AB, A, B and O, so the chance of type AB is one in four. If you said a type A and a type B parent can't have a type O child, remember that each can carry a hidden small i.",
+      "hash": "6082ce8ba000",
+      "textSha256": "6082ce8ba0003e2c229837d992cd958ae842606cbcdd2cb0ccb4a5f67eade415",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/feedback-two.6082ce8ba000.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/feedback-two.6082ce8ba000.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/feedback-two.6082ce8ba000.generation.json",
+      "plannedRequestSha256": "371299996d7e548c627548695d7d8d623d3f32d3197e6d57fa09df22a69d4bc5"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a cross doesn't give 3 to 1, read the heterozygote first. In between means incomplete dominance. Both showing means co-dominance. More than two alleles in the population means multiple alleles. And if sons and daughters show different ratios, look for a gene on the X. Next, you'll use all of these on unfamiliar crosses and pedigrees.",
+      "hash": "b13391bb23f9",
+      "textSha256": "b13391bb23f9f2b0e9246203a5241aa385086d4f199dffa0428ee9af6358343a",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/decision-rule.b13391bb23f9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/decision-rule.b13391bb23f9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/decision-rule.b13391bb23f9.generation.json",
+      "plannedRequestSha256": "e675d010e60268b8f83c13de5192ebb483d54825bc88cde50e16e11040a2f42f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B10-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

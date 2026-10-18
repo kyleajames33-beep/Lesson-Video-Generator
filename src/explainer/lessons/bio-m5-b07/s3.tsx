@@ -165,7 +165,7 @@ export const SceneWhySynthesisB7: React.FC = () => {
 				<PlainArrow x1={1060} y1={716} x2={1240} y2={770} at={K10.own + 4} color={INK_SOFT} />
 				<PlateB p={PLT.rbc} cx={rbc.x} cy={rbc.y} w={rbc.w} o={prog(f, K10.red - 10, 12)} />
 				{HB_IN.map(([dx, dy], i) => <Hb key={i} x={rbc.x + dx} y={rbc.y + dy} s={0.32} labels={false} o={prog(f, K10.red + i * 3, 8)} />)}
-				<Sx x={rbc.x} y={1040} text="makes haemoglobin" size={34} color={INK} hand anchor="middle" at={K10.red + 10} />
+				<Sx x={rbc.x} y={1040} text="developing red cell: makes haemoglobin" size={34} color={INK} hand anchor="middle" at={K10.red + 10} />
 				<PlateB p={PLT.muscleR} cx={1360} cy={870} w={460} o={prog(f, K10.muscle - 10, 12)} />
 				<Fade at={K10.muscle + 4}>
 					{[-12, 0, 12].map((dy, i) => <line key={i} x1={1200} y1={870 + dy} x2={1520} y2={870 + dy} stroke="#7d2a22" strokeWidth={3} strokeDasharray="22 10" opacity={0.75} />)}

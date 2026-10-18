@@ -42,7 +42,7 @@ export const SceneHookB10: React.FC = () => {
 				))}
 				<Sx x={470} y={350} text="×" size={56} color={INK} weight={800} anchor="middle" at={K1.crossed + 4} />
 				{Array.from({length: 6}, (_, i) => <PlateB key={i} p={PL10.flyRed} cx={560 + i * 110} cy={lerp(520, 540, prog(f, K1.allred + i * 4, 14))} w={90} o={prog(f, K1.allred + i * 4, 14)} />)}
-				<Sx x={1250} y={556} text="all red" size={40} color={AMBER_INK} hand at={K1.allred + 24} />
+				<Sx x={1250} y={556} text="almost all red" size={40} color={AMBER_INK} hand at={K1.allred + 24} />
 				<Fade at={K1.rec}>
 					<rect x={1240} y={300} width={360} height={80} rx={40} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />
 					<Sx x={1420} y={354} text="white: recessive" size={42} color={INK} hand anchor="middle" />

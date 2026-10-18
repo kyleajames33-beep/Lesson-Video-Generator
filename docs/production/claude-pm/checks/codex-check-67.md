@@ -32,3 +32,11 @@
 
 
 
+
+## Resolution (18 Oct)
+
+Chemistry fix author (Claude), P01 and P03 only. Each finding was re-checked against the cited sources and accepted.
+
+- **P01 (design Revision 3, no narration change):** Working Scientifically codes corrected to CH11/12-2 to CH11/12-6. Scene 4: the open iron tube keeps a dashed outline with "open tube, but the ions stay in"; only the sealed NO2 tube and the capped syringe turn closed (`s1.tsx`); key note 2 matches. Cobalt solution: one recipe chosen (cobalt(II) chloride hexahydrate with concentrated hydrochloric acid, the RSC school method), so the scene 9 tag ("made with concentrated HCl") and the scene 11 acid line are true of it. Dotpoints quoted with their bullets. YouTube metadata block added.
+- **P03 (design Revision 3):** syllabus quoted as printed. Expected matrix recomputed at 0.05 mol/L: CaSO4 (about 50 times Ksp), Ca(OH)2 (25), Ag2SO4 (about 10) and PbCl2 (about 7) all predicted as white solids; `parts.tsx` MATRIX, scene 5 narration and tag, scene 7, attempt 2, feedback 2 and key note 4 follow. Scene 4 compares 0.01 and 0.1 mol/L stocks at the same drops. Scene 8 and feedback 1 now treat the excess-ion test as a comparison (much more solid with one reagent; a faint cloud with both means neither was in big excess); the "at most one test" chip is replaced. YouTube metadata block added. Re-voice: `expected-results`, `test-predictions`, `test-the-liquid`, `feedback-1`, `attempt-2`, `feedback-2`.
+- **B11, B12:** not in this fix pass.

@@ -15,7 +15,7 @@ import {
 const K5 = cues(S('what-is-a-snp'), {
 	line: 'Line up the same stretch', most: 'most bases match', differ: 'differ by just one base', here: 'some copies have C', others: 'others have T',
 	snp: 'single nucleotide polymorphism', snip: 'or snip for short', single: 'Single nucleotide means one base', poly: 'polymorphism means more than one form',
-	each: 'Each form is an allele', both: 'because both copies are read', every: 'every genotype shows directly', carriers: 'carriers included',
+	each: 'Each form is an allele', both: 'because both copies are read', every: 'every genotype shows directly', carriers: 'including the heterozygous one',
 });
 export const SNP_SEQ = 'GACC?GATC';
 const SAMPLES5: [string, string][] = [['C', 'C'], ['C', 'T'], ['T', 'T']];
@@ -71,7 +71,7 @@ export const SceneSnpB11: React.FC = () => {
 						<text x={1135} y={Y5 + k * B5 + 49} textAnchor="middle" style={{fontFamily: SERIF, fontWeight: 700, fontSize: 40}} fill={INK}>{genoOf(k)}</text>
 					</g>
 				))}
-				<Sx x={1060} y={Y5 + B5 + 150} text="carrier: both copies read" size={32} color={AMBER_INK} hand at={K5.carriers} />
+				<Sx x={1060} y={Y5 + B5 + 150} text="heterozygous: one C, one T" size={32} color={AMBER_INK} hand at={K5.carriers} />
 				<Sx x={1240} y={800} text="both copies read: the genotype shows directly" size={32} color={INK} hand at={K5.both} />
 			</Overlay>
 		</>

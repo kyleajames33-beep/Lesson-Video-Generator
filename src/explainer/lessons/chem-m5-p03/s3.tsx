@@ -20,7 +20,7 @@ export const SceneValidity: React.FC = () => {
 	const mini = (y: number, at: number, label: string) => (
 		<Fade at={at}>
 			<Sx x={b.x} y={y + 8} text={label} size={26} color={INK_SOFT} hand at={-100} />
-			{(['clear', 'faint', 'white', 'white', 'faint'] as const).map((k, i) => {
+			{(['clear', 'clear', 'white', 'white', 'white'] as const).map((k, i) => {
 				const cx = b.x + 160 + i * 66;
 				return <g key={i}><circle cx={cx} cy={y} r={26} fill="#1f1f22" stroke="#c9d3da" strokeWidth={3} /><Well cx={cx} cy={y} r={23} kind={k} p={prog(f, at + i * 3, 14)} seed={i + 2} /></g>;
 			})}

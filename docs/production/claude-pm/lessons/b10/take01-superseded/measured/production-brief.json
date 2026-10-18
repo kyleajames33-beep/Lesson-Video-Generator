@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b10/measured/lesson.json",
+    "lessonSha256": "4eca25cf080aac3422b8b4cb1a10d971e083f94f669ebbd7c47a42bab71280f4"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B9, B8, B7 and B5b: dominant, recessive, homozygous, heterozygous, carrier, autosome, the 2 x 2 square, ratios as chances per offspring, pedigree symbols and the giveaways (B9); the white-eyed male fly that appeared by mutation in 1910 (B8); genes code for enzymes and the white snapdragon with a non-working pigment enzyme (B7); each gamete gets one of each pair (B5b). Not assumed: genes on sex chromosomes, X-linked notation, incomplete dominance, co-dominance, multiple alleles, antigens.",
+    "startsWith": "Morgan's white-eyed flies that were all male, with the question of why eye colour should care whether a fly is male or female and why not every cross gives 3 to 1.",
+    "stopsAfter": "Saying a gene on the X has no partner on the Y so one recessive allele shows in a male; building X-linked crosses and reading sons and daughters separately; recognising the X-linked recessive pedigree pattern and ruling it out with an affected daughter of an unaffected father; reading the heterozygote first to tell complete, incomplete and co-dominance apart; explaining ABO as three alleles with two per person and predicting ABO crosses. No X-linked dominance, no Y-linked traits, no Rh factor, no conditional probability.",
+    "nextLesson": "G02: unfamiliar crosses and pedigrees with competing modes; then B11: frequencies of characteristics in a population."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b10.md"
+  ],
+  "teaching": {
+    "task": "Explain why some crosses do not give 3 to 1, and tell sex linkage, incomplete dominance, co-dominance and multiple alleles apart.",
+    "causalExplanation": "A gene on the X has no partner on the Y, so a male with one recessive allele has nothing to hide it and shows it, while a female needs two. A father gives his X to every daughter and his Y to every son, so sons depend on the mother, a father never passes an X-linked allele to a son, and all his daughters are carriers. That is why X-linked recessive conditions are far more common in males and why an affected daughter of an unaffected father rules the pattern out. For other relationships, read the heterozygote first. One working enzyme copy makes less pigment, so a snapdragon heterozygote is pink, and the alleles do not blend because red and white return. In roan cattle each hair is fully red or fully white, so both alleles are expressed. Two heterozygotes give 1 : 2 : 1 in both because the heterozygote looks different from both homozygotes. The ABO gene has three alleles in the population but each person carries two, A and B are co-dominant, and the i enzyme does not work, so type O is only two i alleles and an A parent and a B parent who each carry i can have any group.",
+    "conversationalApproach": "Opens on the white-eyed flies that were all male, builds the sex chromosomes and Morgan's cross on a square with daughter and son bands, applies it to haemophilia and the pedigree pattern, then asks why not every cross gives 3 to 1 and teaches incomplete dominance, co-dominance and ABO by reading the heterozygote first, gives the memory aids, then asks two harder unseen items with a short pause and brief feedback.",
+    "openingDecision": "Morgan's F2 flies gave white eyes again, but every white-eyed fly was male. Why would eye colour care whether a fly is male or female, and why do not all crosses give 3 to 1?",
+    "understandingCheck": "Red-green colour blindness is an X-linked recessive allele: a woman with normal vision whose father was colour-blind has children with a man with normal vision, so find the chance of a colour-blind son among all children and among sons, and say whether a daughter could be colour-blind. Then a type A mother and a type B father have a type O child: give the genotypes and the chance that the next child is type AB.",
+    "curriculumScope": "Model the formation of new combinations of genotypes produced during meiosis, including interpreting examples of sex-linkage, co-dominance, incomplete dominance and multiple alleles, and construct and interpret information from pedigrees and Punnett squares (Module 5, B5-IQ4-02, ACSBL085). X-linked dominance, Y-linked traits, Rh factor, epistasis and conditional probability are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted red and white-eyed flies, snapdragons, roan cattle and red blood cells, and coded X and Y chips with allele tags, daughter and son bands on the Punnett grid, a heterozygote board of rows, hair and petal zoom circles, antigen marks on a cell, a data-driven pedigree and a genotype table. Genotypes use superscripts on screen, never colour only. No people are drawn.",
+    "transitionPlan": "The B8 jar and fly plates open the lesson and give way to the sex chromosome panels and the cross board for scenes 2 to 5; the heterozygote board builds one row per relationship from scene 6 to scene 9 and the cross board returns for the ABO square; each attempt card clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "The B8 jar with the painted white-eyed fly, red-eyed fly plates, a three-tally counter and an empty white-eyed females column",
+      "teachingReason": "Poses why every white-eyed fly was male, from Morgan's counts",
+      "narrationCue": "Morgan's lab / red-eyed females / all their offspring had red eyes / bred those offspring with each other / Every single white-eyed fly was male",
+      "motionPurpose": "Red-eyed plates slide in, a row of red offspring fills, three tallies write one per cue and an empty white-eyed females column writes on with a zero and an amber ring",
+      "motionRole": "explain",
+      "onScreenChange": "B8's jar outline with `m5x-fly-white-eye-v1.png` in it (grey tag \"B8: a new allele, 1910\"). On \"red-eyed females\" three `m5x-fly-red-eye-v1.png` plates slide in beside it, each with a small \"female\" tag (coded sex symbols are not used; tags are words). On \"all their offspring had red eyes\" a row of red-eyed fly plates fills below (tag \"all red\"). On \"white was recessive\" a chip \"white: recessive\" writes on. On \"bred those offspring with each other\" the row splits into a second generation: a counter board writes three tallies, one per cue: \"red-eyed females 2,459\", \"red-eyed males 1,011\", \"white-eyed males 782\" (Morgan's counts), with fly plates above each tally. On \"Every single white-eyed fly was male\" an empty fourth column \"white-eyed females\" writes on with \"0\" and an amber ring. The heading writes on: \"When 3 : 1 breaks\".",
+      "motionTools": [
+        "plate slide",
+        "tally count",
+        "HandText write-on",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "sex-chromosomes",
+      "visualDecision": "new",
+      "visualReference": "Female XX and male XY chip panels with allele tag slots, a dashed empty slot on the Y and the white-eyed fly plate",
+      "teachingReason": "Explains why one X allele shows in a male because the Y has no partner, before naming sex-linked",
+      "narrationCue": "sex chromosomes / The eye colour gene is on the X / two copies / only one / no other allele to hide it / sex-linked",
+      "motionPurpose": "The X and Y panels draw, tag slots appear with a dashed empty slot on the Y, allele tags land and the term writes on",
+      "motionRole": "explain",
+      "onScreenChange": "B9's karyotype strip returns small with the X and Y pair now highlighted (tag \"sex chromosomes\"; grey tag \"B9: autosomes\"). Two coded panels draw: \"female: XX\" (two X chips) and \"male: XY\" (an X chip and a shorter Y chip). On \"The eye colour gene is on the X\" an allele tag slot appears on each X chip; the Y chip gets a small empty dashed slot with the tag \"no copy on the Y\". On \"two copies\" the female's X chips take tags \"R\" and \"r\" (shown as X^R X^r, tag \"red eyes: r is hidden\"). On \"only one\" the male's X takes \"r\" (X^r Y) and on \"no other allele to hide it\" a dashed amber ring circles the empty Y slot; `m5x-fly-white-eye-v1.png` slides in beside him. On \"sex-linked\" the term writes on, with a grey tag \"write the allele on the X: X^R, X^r; Y has none\".",
+      "motionTools": [
+        "SexChrom",
+        "tag pop",
+        "scribbleEllipse",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "morgan-cross",
+      "visualDecision": "new",
+      "visualReference": "The cross board with a carrier female and a red-eyed male, sex bands on the square and Morgan's tallies returning",
+      "teachingReason": "Builds Morgan's second cross on a square and reads sons and daughters separately",
+      "narrationCue": "carriers / his X / to every daughter / every daughter has red eyes / half the sons / matches",
+      "motionPurpose": "Gamete discs form, the square fills one box per cue with daughter and son bands, fly icons appear and the tallies return with the empty column ticked",
+      "motionRole": "explain",
+      "onScreenChange": "the cross board. Left: a red-eyed fly plate tagged \"carrier female X^R X^r\" and a red-eyed fly plate tagged \"male X^R Y\". On \"a white allele on their father's X\" a thin line runs from the carrier's X^r chip back up to a small ghost of the hook's white-eyed male (tag \"from her father\"). Gamete discs: female \"X^R\", \"X^r\" (teal edges, side); male \"X^R\", \"Y\" (plum edges, top). On \"his X ... to every daughter\" `SexBands` labels the X^R column \"daughters\" and the Y column \"sons\"; the square fills one box per cue: \"X^R X^R\", \"X^R X^r\" (daughters), \"X^R Y\", \"X^r Y\" (sons), computed. On \"every daughter has red eyes\" both daughter boxes take small red-eyed fly icons. On \"half the sons\" one son box takes a white-eyed fly icon and the ratio strip writes \"daughters: all red; sons: 1 red : 1 white\" (computed by `bySex`). On \"matches what Morgan saw\" the hook's tallies return small with the empty \"white-eyed females 0\" column ticked and a small tag under the male tallies \"1,011 : 782, close to 1 : 1\".",
+      "motionTools": [
+        "PunnettGrid",
+        "SexBands",
+        "chip fly",
+        "ratio strip"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "haemophilia",
+      "visualDecision": "new",
+      "visualReference": "Carrier mother and unaffected father pedigree symbols, a square with sex bands and brackets for all children and for sons",
+      "teachingReason": "Separates the chance for all children from the chance for sons and explains why males are affected more often",
+      "narrationCue": "one in four chance, for each child / for each son / all children, or sons / No daughter / far more common in males",
+      "motionPurpose": "The square fills with pedigree symbols, one bracket outlines all four boxes then another outlines the sons, and tags write on for daughters and for the male excess",
+      "motionRole": "explain",
+      "onScreenChange": "the fly plates slide off; two coded parent symbols (an open circle with a centre dot, tag \"carrier mother X^H X^h\", and an open square, tag \"unaffected father X^H Y\"; pedigree symbols only, no people) sit at the left. The square fills (computed): \"X^H X^H\", \"X^H X^h\" (daughters band), \"X^H Y\", \"X^h Y\" (sons band); each box takes the matching pedigree symbol (open circle, dotted circle, open square, filled square). On \"one in four chance, for each child\" all four boxes outline with a bracket \"all children: 1/4 affected son\". On \"for each son\" only the sons band outlines, with \"sons: 1/2 affected\". On \"all children, or sons?\" the two brackets sit side by side, amber. On \"No daughter\" the daughters band takes a tag \"0 affected; 1/2 of daughters are carriers\". On \"far more common in males\" a small grey tag writes on: \"if 1 in 100 X chromosomes carries the allele: about 1 in 100 males, 1 in 10,000 females (random mating)\".",
+      "motionTools": [
+        "PunnettGrid",
+        "SexBands",
+        "bracket draw",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "x-linked-pedigree",
+      "visualDecision": "new",
+      "visualReference": "Pedigree P4 with amber rings and a carrier path, a father-to-son tag, travelling X chips and B9 pedigree P1 returning small",
+      "teachingReason": "Teaches the X-linked recessive pedigree pattern and the one decisive exclusion of an affected daughter with an unaffected father",
+      "narrationCue": "mostly males / carrier mothers / never passes from father to son / doesn't only come from mothers / an affected daughter with an unaffected father",
+      "motionPurpose": "Affected males ring, a carrier path draws, X chips travel to the daughters, the only-from-mothers chip is crossed and the earlier pedigree slides in with its two people ringed",
+      "motionRole": "explain",
+      "onScreenChange": "`Pedigree` P4 (data in Numbers) builds: I-1 filled square x I-2 open circle; generation II: II-1 dotted circle (carrier), II-2 open square, II-3 dotted circle; II-1 x II-4 (open square): III-1 filled square, III-2 open circle, III-3 filled square. On \"mostly males\" the filled squares ring amber. On \"through unaffected carrier mothers\" a soft amber path runs I-1 to II-1 to III-1 and III-3. On \"never passes from father to son\" the line from I-1 to his son II-2 takes a tag \"father to son: never (son gets his Y)\". On \"doesn't only come from mothers\" a chip \"only from mothers\" writes on and takes a grey scribble cross; on \"every daughter\" chips \"X^h\" travel from I-1 down to II-1 and II-3 (tag \"all his daughters: carriers\"). On \"an affected daughter with an unaffected father\" B9's pedigree P1 slides in small (grey tag \"B9\"), its III-1 and II-4 ringed, and the tag \"affected daughter, unaffected father: not X-linked recessive\" writes on. A grey tag at the lower right: \"this video: X-linked recessive only\".",
+      "motionTools": [
+        "Pedigree",
+        "DrawPath",
+        "chip travel",
+        "strike"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "heterozygote-first",
+      "visualDecision": "new",
+      "visualReference": "The heterozygote board with the complete dominance row from B9 and two empty rows with question marks",
+      "teachingReason": "Gives the quick test of reading the heterozygote first to tell the patterns apart",
+      "narrationCue": "fully dominant / read the heterozygote first / in between / both at once",
+      "motionPurpose": "Row 1 fills with its tags, the heterozygote is ringed, then two empty rows draw in with a question mark in each middle slot",
+      "motionRole": "explain",
+      "onScreenChange": "`HetBoard`. Row 1, \"complete dominance\": `m5x-pea-tall-v1.png` \"TT\", `m5x-pea-tall-v1.png` \"Tt\", `m5x-pea-short-v1.png` \"tt\", with B9's mini grid and \"3 : 1\" (grey tag \"B9\"). On \"read the heterozygote first\" the middle column of row 1 rings amber (tag \"heterozygote looks like TT\"). On \"in between\" an empty row 2 draws with \"?\" in its middle slot; on \"both at once\" an empty row 3 draws with \"?\" in its middle slot.",
+      "motionTools": [
+        "HetBoard",
+        "scribbleEllipse",
+        "row draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "incomplete-dominance",
+      "visualDecision": "new",
+      "visualReference": "The snapdragon row with enzyme blobs and pigment dots, a pink offspring strip, a filled square and a crossed blending chip",
+      "teachingReason": "Explains the pink heterozygote with one working enzyme and shows the alleles do not blend",
+      "narrationCue": "every offspring is pink / an enzyme that makes red pigment / incomplete dominance / Cross two pinks / never blended",
+      "motionPurpose": "The pink strip appears, enzyme blobs and pigment dots show less pigment, the label writes on, the square fills and the blending chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "row 2 fills: `m5x-snapdragon-red-v1.png` \"CR CR\", `m5x-snapdragon-pink-v1.png` \"CR CW\", `m5x-snapdragon-white-v1.png` \"CW CW\" (a grey tag: \"neither allele dominant: one capital letter, two superscripts\"). On \"every offspring is pink\" a short `pre` strip: red x white gives a row of pink plates. On \"an enzyme that makes red pigment\" each flower gets a small coded enzyme blob and pigment dots: red flower, two working blobs, many dots; white flower, two misshapen blobs, no dots (grey tag \"B7\"); pink flower, one working and one misshapen blob, fewer dots. On \"incomplete dominance\" the row label writes on. On \"Cross two pinks\" the cross board's grid fills \"CR CR\", \"CR CW\", \"CR CW\", \"CW CW\" with flower icons (computed); the ratio strip writes \"genotypes 1 : 2 : 1; phenotypes 1 red : 2 pink : 1 white\" (computed by merging, which merges nothing). On \"never blended\" a chip \"pink = blended alleles\" writes on and takes a grey scribble cross, with the tag \"red and white return\".",
+      "motionTools": [
+        "HetBoard",
+        "enzyme blob",
+        "PunnettGrid",
+        "strike"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "co-dominance",
+      "visualDecision": "new",
+      "visualReference": "The cattle row, a hair zoom on the roan flank beside a petal zoom, and a filled square",
+      "teachingReason": "Shows that roan is two colours side by side and that both patterns give 1 : 2 : 1 because the heterozygote looks new",
+      "narrationCue": "roan / Look closely / Both alleles are fully expressed / co-dominance / Two roans / different from both homozygotes",
+      "motionPurpose": "Two magnifier circles open to show separate hairs against an even wash, the label writes on, the square fills and both middle slots ring together",
+      "motionRole": "explain",
+      "onScreenChange": "row 3 fills: `m5x-cattle-red-v1.png` \"CR CR\", `m5x-cattle-roan-v1.png` \"CR CW\", `m5x-cattle-white-v1.png` \"CW CW\". On \"Look closely\" `HairZoom`: a magnified circle opens over the roan's flank showing separate coded hair strokes, each fully red or fully white, beside a second magnified circle over the pink snapdragon petal showing an even pink wash (tags \"roan: each hair one colour\", \"pink: every cell in between\"). On \"co-dominance\" the row label writes on. On \"Two roans\" the grid fills (computed) with cattle icons; the ratio strip writes \"1 red : 2 roan : 1 white\". On \"the heterozygote looks different from both homozygotes\" rows 2 and 3 ring their middle slots amber together, with the tag \"heterozygote looks new: phenotype ratio = genotype ratio, 1 : 2 : 1\".",
+      "motionTools": [
+        "HetBoard",
+        "HairZoom",
+        "PunnettGrid",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "abo",
+      "visualDecision": "new",
+      "visualReference": "The fourth board row, three allele chips, a red cell plate gaining antigen marks and a genotype table",
+      "teachingReason": "Explains multiple alleles and ABO through each allele's enzyme before the table of six genotypes",
+      "narrationCue": "three alleles / multiple alleles / only two of them / A antigens / adds neither / co-dominant / two small i alleles",
+      "motionPurpose": "Three allele chips write on, antigen marks grow on a red cell, a bare cell shows the third allele, an AB cell carries both and the genotype table fills",
+      "motionRole": "explain",
+      "onScreenChange": "a fourth row draws under the heterozygote board, then the board slides up and row 4 expands. Three allele chips write on, one per cue: \"IA\", \"IB\", \"i\" (tag \"three alleles in the population\"); on \"only two of them\" two of the chips drop into a person-genotype slot (a coded card, no person), tag \"each person: two\". `AntigenCell`: `m5x-red-blood-cells-v1.png` cropped to one cell; on \"A antigens\" coded triangle marks tagged \"A\" grow on its surface; a second cell gets coded circle marks tagged \"B\"; on \"adds neither\" a third cell stays bare (tag \"i: enzyme doesn't work\"). On \"co-dominant\" a fourth cell carries both triangles and circles (tag \"IA IB: type AB\"). On \"two small i alleles\" a genotype table fills, six rows, computed: \"IA IA, IA i: A\", \"IB IB, IB i: B\", \"IA IB: AB\", \"i i: O\", with the tag \"6 genotypes, 4 blood groups\". A small handwritten tag beside the table: \"O is only ii\" (bank shortcut). (Revision 2: the typing tile and well rows are removed; the narration never uses them.)",
+      "motionTools": [
+        "AntigenCell",
+        "chip drop",
+        "table fill",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "abo-surprise",
+      "visualDecision": "new",
+      "visualReference": "The cross board with two genotype cards, gamete discs and a four-box square of antigen cells",
+      "teachingReason": "Shows that an A parent and a B parent can have a child of any group when each carries a hidden i",
+      "narrationCue": "type A parent / hidden small i / four boxes / one in four",
+      "motionPurpose": "The gamete discs form and the four boxes fill with antigen-cell icons and the ratio strip",
+      "motionRole": "explain",
+      "onScreenChange": "the cross board. Left: two genotype cards \"type A: IA i\" and \"type B: IB i\", each with a small cell icon. Gamete discs \"IA\", \"i\" (plum) and \"IB\", \"i\" (teal). On \"four boxes\" the grid fills one per cue (computed): \"IA IB: AB\", \"IA i: A\", \"IB i: B\", \"i i: O\", each box taking its antigen-cell icon. The ratio strip writes \"AB : A : B : O = 1 : 1 : 1 : 1, each 1/4\".",
+      "motionTools": [
+        "PunnettGrid",
+        "chip fly",
+        "ratio strip"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "adjust",
+      "visualReference": "Two large handwritten lines with a snapdragon and hair-zoom icon, then the sex-linkage line with a father diagram",
+      "teachingReason": "Gives the memory aids after the causes are explained",
+      "narrationCue": "incomplete is in-between / co shows both / Dad gives his X to daughters",
+      "motionPurpose": "The two rules write large beside their icons, then the sex-linkage rule writes with a small father-and-children arrow diagram",
+      "motionRole": "explain",
+      "onScreenChange": "two big handwritten lines write on beside small icons: \"Incomplete is in-between\" (pink snapdragon), \"Co shows both\" (the hair zoom circle). Then \"Dad gives his X to daughters and his Y to sons\" writes on with a tiny square-and-circle diagram (a father square sending an \"X\" arrow to a daughter circle and a \"Y\" arrow to a son square).",
+      "motionTools": [
+        "HandText write-on",
+        "arrow draw"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "A cleared card with the colour blindness pedigree, three demands and answer boxes",
+      "teachingReason": "Unseen transfer on X-linked inheritance from a carrier inferred from her father, with nothing answer-bearing",
+      "narrationCue": "Two harder questions / colour-blind / first child is a colour-blind son / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no earlier squares, rows or tags. The card writes on, headed \"Red-green colour blindness: recessive allele on the X\". A small coded pedigree (standard symbols, no carrier dot, no genotypes): generation I, an affected square (the woman's father) and an open circle; generation II, the woman (open circle, labelled \"woman, normal vision\") with a couple line to an open square (\"man, normal vision\"); a \"?\" child below. Demands: \"(a) Probability that their first child is a colour-blind son?\" \"(b) Probability that a son of theirs is colour-blind?\" \"(c) Could a daughter of theirs be colour-blind? Explain.\" Three answer boxes. Nothing answer-bearing: no genotypes, no grid, no carrier mark. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card shrunk to a strip, with a travelling X chip, the sex-band square and a crossed chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects answering for sons instead of all children",
+      "narrationCue": "only X / a one in two chance / one in four chance of a colour-blind son / no daughter / one in two for the first child",
+      "motionPurpose": "The X chip travels to the woman, the square fills, each band rings in turn with its answer and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (pedigree and demands stay readable). (1) On \"his only X\" an \"X^b\" chip travels from the woman's father to her, and her circle gets a centre dot with the genotype \"X^B X^b\". (2) The grid fills (computed): \"X^B X^B\", \"X^B X^b\" (daughters), \"X^B Y\", \"X^b Y\" (sons). On \"a son has a one in two chance\" the sons band rings: \"(b) 1/2 of sons\". (3) On \"all their children\" all four boxes ring: \"(a) 1/4 of all children\". (4) On \"no daughter\" the daughters band rings: \"(c) No: every daughter gets X^B from her father; half are carriers\". (5) On \"one in two for the first child\" the chip \"first child: 1/2 colour-blind son\" writes on and takes a grey scribble cross, with the tag \"that's sons only\".",
+      "motionTools": [
+        "chip travel",
+        "PunnettGrid",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "A cleared card with a small family diagram of type A, type B and type O, an allele key and two demands",
+      "teachingReason": "Unseen transfer on ABO genotypes and a per-child chance, with nothing answer-bearing",
+      "narrationCue": "Second / type O blood / Work out the genotypes / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card shows three genotype cards with blank genotype lines and a cell icon each: \"mother: type A\", \"father: type B\", \"child: type O\", joined as a small family diagram with standard symbols (circle, square, a child symbol; no people). A key strip: \"alleles: IA, IB, i\". Demands: \"(a) Genotypes of the mother, father and child?\" \"(b) Probability that their next child is type AB?\" Two answer boxes. Nothing answer-bearing: no genotypes, no grid, no antigen marks beyond the plain cell icons. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The attempt card shrunk to a strip, with genotype cards filling, the four-box square and a crossed chip",
+      "teachingReason": "Gives the answer and key reason briefly and corrects the idea that A and B parents cannot have a type O child",
+      "narrationCue": "two small i alleles / hidden small i / Their square / can't have a type O child",
+      "motionPurpose": "The child card fills and the i chips trace to the parents, the parent genotypes write, the square fills with the AB box ringed and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. (1) On \"two small i alleles\" the child's card fills \"i i\" and two \"i\" chips trace up to the parents. (2) On \"the mother is type A\" the mother's card fills \"IA i\" and the father's \"IB i\"; the line \"(a) mother IA i, father IB i, child i i\" writes on. (3) On \"Their square\" the grid fills (computed) and the AB box rings; \"(b) 1/4 (25%)\" writes on. (4) On \"can't have a type O child\" the chip \"A x B can't give O\" writes on and takes a grey scribble cross, with the tag \"both can hide i\".",
+      "motionTools": [
+        "chip travel",
+        "PunnettGrid",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "Four chips with small icons for the four patterns and a next chip with a pedigree question icon",
+      "teachingReason": "Packs the patterns into reusable questions and hands off to unfamiliar crosses and pedigrees",
+      "narrationCue": "read the heterozygote first / In between / Both showing / More than two alleles / sons and daughters / Next",
+      "motionPurpose": "The four chips write on one per cue, each with its icon, then the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "four chips write on, one per cue, each with a tiny icon: \"heterozygote in between: incomplete dominance\" (pink snapdragon), \"heterozygote shows both: co-dominance\" (roan zoom), \"more than two alleles in the population: multiple alleles\" (three chips IA, IB, i), \"sons and daughters differ: X-linked\" (an X chip). A \"Next\" chip slides in at the lower right: \"Next: unfamiliar crosses and pedigrees\" (a small pedigree icon with a \"?\").",
+      "motionTools": [
+        "HandText write-on",
+        "line highlight",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes and the memory aids",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the five notes and the two memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b10-learning-review.md",
+      "sha256": "8303f97d564e82698019a22fd5e05238df795f8072d50008b582c0d6f0284563"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b10-claude-science-check.md",
+      "sha256": "8c0c8d7503b378531e447d5639ed6af113c56dfc7d6e682d6b1468f82060b52f"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

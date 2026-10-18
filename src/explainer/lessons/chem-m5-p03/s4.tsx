@@ -47,7 +47,7 @@ export const SceneAttempt1: React.FC = () => {
 
 // ---------- 13. Feedback 1 (brief) ----------
 const F1 = 'feedback-1';
-const K13 = cues(sc(F1), {ans: 'Potassium nitrate and leftover', adding: 'Adding chloride made', must: 'must still have', excess: 'was in excess', spect: 'are the spectators', not: "It's not chloride", if: 'if chloride were', used: 'used up', couldnt: "couldn't make"});
+const K13 = cues(sc(F1), {ans: 'Potassium nitrate and leftover', adding: 'Adding chloride made', must: 'must still have', excess: 'was in excess', spect: 'are the spectators', not: "It's not chloride", if: 'if chloride were'});
 export const SceneFeedback1: React.FC = () => (
 	<>
 		<Overlay>
@@ -61,8 +61,8 @@ export const SceneFeedback1: React.FC = () => (
 			<Sx x={120} y={930} text="K^{+}, NO_3^{-} (spectators)" size={30} color={INK_SOFT} weight={700} at={K13.spect} />
 			<Sx x={120} y={978} text="Ag^{+} (excess)" size={30} color={CAT_INK} weight={800} at={K13.excess} />
 			<Ring cx={225} cy={968} rx={120} ry={30} at={K13.excess + 6} color={AMBER} seed={3} />
-			<MistakeChip x={820} y={800} text="Cl^{-} left over" size={38} at={K13.not} note="if Cl^{-} were in excess, Ag^{+} would be used up" />
-			{void K13.if}{void K13.used}{void K13.couldnt}
+			<MistakeChip x={820} y={800} text="Cl^{-} left over" size={38} at={K13.not} note="if Cl^{-} were in excess, almost no Ag^{+} would be left" />
+			{void K13.if}
 		</Overlay>
 	</>
 );
@@ -91,20 +91,20 @@ const Strip: React.FC<{x: number; y: number; label: string; kinds: WellKind[]; a
 		</Fade>
 	);
 };
-const G1K: WellKind[] = ['clear', 'clear', 'faint', 'white', 'faint'];
-const G2K: WellKind[] = ['clear', 'clear', 'clear', 'white', 'faint'];
+const G1K: WellKind[] = ['clear', 'clear', 'white', 'white', 'white'];
+const G2K: WellKind[] = ['clear', 'clear', 'clear', 'white', 'white'];
 export const SceneAttempt2: React.FC = () => {
 	const h = hold(A2);
 	return (
 		<>
 			<Overlay>
 				<TaskLine text="Last one" at={K14.last} />
-				<Strip x={110} y={300} label="group 1: faint white cloud" kinds={G1K} at={K14.one} ringAt={K14.one + 10} />
+				<Strip x={110} y={300} label="group 1: white solid" kinds={G1K} at={K14.one} ringAt={K14.one + 10} />
 				<Strip x={110} y={540} label="group 2: no precipitate" kinds={G2K} at={K14.other} ringAt={K14.other + 10} />
 				<Sx x={600} y={430} text="Ca^{2+} row" size={26} color={CAT_INK} weight={700} at={K14.one + 10} />
 				<GivensCard x={760} y={210} w={1060} h={260} at={K14.groups} lh={58} lines={[
 					{text: 'calcium nitrate + sodium sulfate', at: K14.calcium, size: 34},
-					{text: 'group 1 records: faint white cloud', at: K14.one, size: 34},
+					{text: 'group 1 records: white solid', at: K14.one, size: 34},
 					{text: 'group 2 records: no precipitate', at: K14.other, size: 34},
 				]} />
 				<Sx x={760} y={560} text="1. Explain how both results could happen." size={42} color={INK} hand at={K14.explain} />
@@ -118,36 +118,36 @@ export const SceneAttempt2: React.FC = () => {
 
 // ---------- 15. Feedback 2 (brief) ----------
 const F2 = 'feedback-2';
-const K15 = cues(sc(F2), {slightly: 'slightly soluble', depends: 'depends on how', drop: 'Different drop sizes', waiting: 'not waiting long', tip: 'tip it either', dirty: 'a dirty well', make: 'To make it reliable', repeat: 'repeat it in', over: 'over black', record: 'record slight', dont: "Don't just decide"});
+const K15 = cues(sc(F2), {slightly: 'slightly soluble', depends: 'depends on how', drop: 'not waiting long', dirty: 'a dirty well', make: 'To make it reliable', repeat: 'repeat it in', over: 'over black', dont: "Don't just"});
 export const SceneFeedback2: React.FC = () => {
 	const f = useCurrentFrame();
 	return (
 		<>
 			<Overlay>
 				<TaskLine text="Explain both results; make it more reliable." at={-100} size={46} />
-				<Strip x={110} y={300} label="group 1: faint white cloud" kinds={G1K} at={-100} ringAt={-100} />
+				<Strip x={110} y={300} label="group 1: white solid" kinds={G1K} at={-100} ringAt={-100} />
 				<Strip x={110} y={540} label="group 2: no precipitate" kinds={G2K} at={-100} ringAt={-100} />
 				<Sx x={110} y={720} text="slightly soluble" size={44} color={TEAL} hand at={K15.slightly} />
-				<Chip x={760} y={240} w={1060} h={64} text="1. CaSO_4 slightly soluble: a cloud depends on amount and time; or contamination" size={31} color={TEAL} at={K15.depends} />
-				<Sx x={790} y={360} text="drop size, waiting time: tip it either way" size={32} color={INK} hand at={K15.drop} />
+				<Chip x={760} y={240} w={1060} h={64} text="1. CaSO_4 slightly soluble: needs enough ions, can form slowly" size={31} color={TEAL} at={K15.depends} />
+				<Sx x={790} y={360} text="weaker stock or recorded too early: no precipitate" size={32} color={INK} hand at={K15.drop} />
 				<Sx x={790} y={404} text="a dirty well can fake a cloud" size={32} color={INK} hand at={K15.dirty} />
-				{/* three clean repeats, same drops, over black: the same faint cloud */}
+				{/* three clean repeats, same drops, over black: the same white solid */}
 				<Fade at={K15.repeat}><rect x={790} y={470} width={420} height={150} rx={18} fill="#1f1f22" /></Fade>
 				{[0, 1, 2].map(i => {
 					const cx = 860 + i * 140, cy = 545;
 					return (
 						<Fade key={i} at={K15.repeat + i * 8}>
 							<circle cx={cx} cy={cy} r={46} fill="#141416" stroke="#c9d3da" strokeWidth={4} />
-							<Well cx={cx} cy={cy} r={43} kind="faint" p={prog(f, K15.repeat + 10 + i * 8, 24)} seed={i + 9} />
+							<Well cx={cx} cy={cy} r={43} kind="white" p={prog(f, K15.repeat + 10 + i * 8, 24)} seed={i + 9} />
 							<Sx x={cx} y={660} text="3 + 3 drops" size={24} color={INK_SOFT} anchor="middle" weight={600} at={K15.repeat + i * 8} />
 						</Fade>
 					);
 				})}
 				<Sx x={1240} y={540} text="clean wells, same conditions," size={30} color={TEAL} hand at={K15.repeat + 20} />
-				<Sx x={1240} y={580} text="over black: the same faint cloud" size={30} color={TEAL} hand at={K15.over} />
-				<Chip x={760} y={700} w={1060} h={64} text={'2. repeat in clean wells, same conditions, over black; record "slight"'} size={31} color={TEAL} at={K15.record} />
-				<MistakeChip x={760} y={830} text="one group made a mistake, ignore it" size={34} at={K15.dont} note="slightly soluble is a real result" />
-				{void K15.waiting}{void K15.tip}{void K15.make}
+				<Sx x={1240} y={580} text="over black: the same white solid" size={30} color={TEAL} hand at={K15.over} />
+				<Chip x={760} y={700} w={1060} h={64} text={'2. repeat in clean wells: same stocks, drops, time; over black'} size={31} color={TEAL} at={K15.over + 12} />
+				<MistakeChip x={760} y={830} text="one group made a mistake, ignore it" size={34} at={K15.dont} note="find the cause, then repeat" />
+				{void K15.make}
 			</Overlay>
 		</>
 	);
@@ -195,9 +195,9 @@ const NOTES = [
 	'Design: cations as nitrates, anions as sodium salts (all 0.1 mol/L). Nitrates and sodium compounds always dissolve, so a solid can only be the pair being tested. Check each stock alone first.',
 	'Method: predict all 25 cells first; 3 drops + 3 drops in a clean well plate; dropper tip out of the well; view over black and white; record ppt or no ppt, colour, heavy or faint. Write "no precipitate", not "no reaction".',
 	'Variables: independent, the ion pair; dependent, precipitate, colour and amount; controlled, concentration, drops, temperature, time before recording.',
-	'Expected: Na^{+} row all clear. Carbonates solid except Na^{+} (Ag_2CO_3 pale yellow). AgCl white, AgI pale yellow, PbI_2 bright yellow. BaSO_4, PbSO_4 white; CaSO_4, Ag_2SO_4 faint or none. Hydroxides: Ag^{+} brown, Pb^{2+} white, Ca^{2+} faint, Ba^{2+} clear.',
+	'Expected (about 0.05 mol/L of each ion): Na^{+} row all clear. Carbonates solid except Na^{+} (Ag_2CO_3 pale yellow). AgCl white, AgI pale yellow, PbCl_2 white, PbI_2 bright yellow. Sulfates of Ba^{2+}, Pb^{2+}, Ca^{2+}, Ag^{+} white (CaSO_4, Ag_2SO_4 slightly soluble, still solid here). Hydroxides: Ag^{+} brown, Pb^{2+} and Ca^{2+} white, Ba^{2+} clear.',
 	'Rules: general statement + evidence + exceptions. Untested ions come from the reference table. Each mismatch: rule wrong or technique? Slightly soluble is a real third category; repeat doubtful cells.',
-	'Composition: test the clear liquid above a precipitate with a drop of each reagent; more solid shows which ion was in excess. The liquid holds the spectators plus that ion.',
+	'Composition: test the clear liquid above a precipitate with a drop of each reagent; much more solid with one of them shows which ion was in excess (a faint cloud with both: neither in big excess). The liquid holds the spectators plus that ion.',
 	'Risks: lead nitrate (toxic, cumulative, may harm an unborn baby), silver nitrate (stains, eyes), barium nitrate (harmful if swallowed), NaOH (eyes). Glasses, gloves, drops only, no mouth pipetting, wash hands, heavy-metal waste container.',
 ];
 export const SceneNotes: React.FC = () => (

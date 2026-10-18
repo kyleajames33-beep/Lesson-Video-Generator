@@ -198,8 +198,9 @@ export const SceneClosed: React.FC = () => {
 						return <circle key={i} cx={x} cy={y} r={6} fill={i % 2 ? '#c42b36' : '#e3bf45'} stroke={INK} strokeWidth={1.5} />;
 					})}
 				</Fade>
-				<Bound x={IT4.x - 30} y={IT4.y - 26} w={iw + 60} h={IT4.h + 52} at={K4.ions} closeAt={K4.closed} />
-				<Sx x={IT4.x + iw / 2} y={IT4.y + IT4.h + 70} text="ions cannot leave" size={34} anchor="middle" hand at={K4.stay} />
+				{/* the iron tube is open (water can evaporate), so its outline stays dashed; only the sealed tube and syringe turn closed */}
+				<Bound x={IT4.x - 30} y={IT4.y - 26} w={iw + 60} h={IT4.h + 52} at={K4.ions} />
+				<Sx x={IT4.x + iw / 2} y={IT4.y + IT4.h + 70} text="open tube, but the ions stay in" size={30} anchor="middle" hand at={K4.stay} />
 				<Fade at={K4.gas - 6}><Pic p={NO2.brown} x={NT4.x} y={NT4.y} h={NT4.h} /></Fade>
 				<Bound x={NT4.x - 30} y={NT4.y - 26} w={nw + 60} h={NT4.h + 52} at={K4.gas} closeAt={K4.closed + 6} />
 				<Sx x={NT4.x + nw / 2} y={NT4.y + NT4.h + 70} text="sealed gas" size={34} anchor="middle" hand at={K4.sealed} />
@@ -214,7 +215,7 @@ export const SceneClosed: React.FC = () => {
 					<rect x={96} y={880} width={1240} height={78} rx={18} fill="#fffdf8" stroke="rgba(60,45,20,0.2)" strokeWidth={3} />
 				</Fade>
 				<Sx x={124} y={932} text="System: closed.   Sealed: ______.   Can enter or leave: ______." size={36} color={INK} hand at={K4.write + 4} />
-				<Sx x={96} y={1030} text="closed: matter stays in; heat can still pass" size={40} color={TEAL} hand at={K4.closed + 10} />
+				<Sx x={96} y={1030} text="sealed tube and syringe: closed (matter stays in; heat can pass)" size={38} color={TEAL} hand at={K4.closed + 10} />
 				{void K4.study}{void K4.escape}{void K4.whats}{void K4.inout}{void K4.matters}
 			</Overlay>
 		</>

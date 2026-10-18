@@ -51,19 +51,25 @@ test('shared rain helper preserves default one partner, explicit one, and no-par
   assert.equal(JSON.stringify(rainAt(rain, 62)), JSON.stringify(rainAt({...rain, partnerCount: 1}, 62)));
   assert.deepEqual(count(rainAt({...rain, partner: undefined}, 62)), {'Cl^{-}': 5});
 });
-test('pending narration stays unwired; recorded source, alignment and renderer config are unchanged', () => {
-  assert.match(status.status, /narration-regeneration-pending/);
-  assert.match(status.status, /release-held/);
+test('owner take02 narration, captions, manifest and cue remain synchronized and preserved', () => {
+  assert.match(status.status, /owner-narration-repair-recorded/);
+  assert.match(status.status, /voiced-review-pending/);
   for (const [path, hash] of Object.entries(status.preservedSha256)) {
-    // Git checkouts may use CRLF; stored base source is LF.
     assert.equal(createHash('sha256').update(read(path).replace(/\r\n/g, '\n')).digest('hex'), hash, path);
   }
   const n = status.narration;
-  const scene = JSON.parse(read(n.sourcePath)).scenes.find(x => x.id === n.segment);
-  assert.equal(scene.voiceover.text, n.oldText);
-  assert.notEqual(n.oldText, n.proposedText);
-  assert.ok(n.proposedText.includes('Copper(II) hydroxide is insoluble, so it precipitates'));
+  const source = JSON.parse(read(n.sourcePath)).scenes.find(x => x.id === n.segment);
+  const measured = JSON.parse(read(n.measuredPath)).scenes.find(x => x.id === n.segment);
+  const manifest = JSON.parse(read(n.manifestPath)).scenes.find(x => x.id === n.segment);
+  assert.equal(source.voiceover.text, n.text);
+  assert.equal(measured.voiceover.text, n.text);
+  assert.equal(manifest.text, n.text);
+  assert.equal(measured.captions.map(x => x.text).join(''), n.text);
+  assert.equal(measured.voiceover.audioFile, n.audioFile);
+  assert.equal(manifest.audioFile, n.audioFile);
+  assert.equal(measured.voiceover.endFrame, n.audioFrames);
+  assert.equal(measured.durationInFrames, n.sceneFrames);
+  assert.ok(n.text.includes("Hydroxides are mostly insoluble, and copper isn't one of the exceptions"));
   assert.ok(s4.includes(n.currentCue));
-  assert.ok(!s4.includes(n.proposedCue));
-  assert.ok(n.applyTogetherAfterApproval.some(x => x.includes('K16.hyd')));
+  assert.ok(!s4.includes("hyd: 'Hydroxides are insoluble'"));
 });

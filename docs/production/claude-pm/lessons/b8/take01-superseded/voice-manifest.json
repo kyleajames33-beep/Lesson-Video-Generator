@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B8-claude-2026-10-17-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b8/lesson.json",
+  "lessonSha256": "a81bf5ede805feda20954f5f76f01f91acb04910253cd18112668e13b816e480",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b8/lesson.production-brief.json",
+    "sha256": "9da17e2cb98f42dcb977153c5c1477be03a66549cc3407e69ae85b855f0a4a97"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Pollen from one pea plant is brushed onto the flower of another. A few weeks later, the pod is full of seeds, and every seed has the same two parents. Yet the seeds aren't all alike. Some are yellow, some green, some round, some wrinkled. So why are offspring of the same parents different from each other? And could one of them carry an allele that neither parent had?",
+      "hash": "6e67d4211760",
+      "textSha256": "6e67d4211760ad5a8cdccb44f6fa06c0006c81e6a5f278a1158ed964fcb4663a",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/hook.6e67d4211760.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/hook.6e67d4211760.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/hook.6e67d4211760.generation.json",
+      "plannedRequestSha256": "eb40344c906e359f7ffe98c973577fb592010feb2c22dae5797d8120926d9072"
+    },
+    {
+      "id": "two-jobs",
+      "parentSceneId": "two-jobs",
+      "text": "There are four sources of genetic variation. Three of them you've met: crossing over and independent assortment in meiosis, and random fertilisation. Those three reshuffle alleles that already exist, like dealing new hands from the same deck of cards. The fourth, mutation, is different. It changes the DNA itself, so it's the only one that can make a brand-new allele, a new card in the deck.",
+      "hash": "5ae9ea2bfefa",
+      "textSha256": "5ae9ea2bfefa49f420fb36a5388f1329481b60f395f58a41bdf85723437f7937",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/two-jobs.5ae9ea2bfefa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/two-jobs.5ae9ea2bfefa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/two-jobs.5ae9ea2bfefa.generation.json",
+      "plannedRequestSha256": "765e2b9940398efbe25bfa9baef11f4efc6f28d606251ef5e98f5b01fc7d86f4"
+    },
+    {
+      "id": "trace-parent",
+      "parentSceneId": "trace-parent",
+      "text": "Let's trace where a seed's alleles come from. Take one parent plant and two of its genes, on two different chromosomes. It got one set of chromosomes from each of its own parents: capital Y and capital R from one, small y and small r from the other. When it makes gametes, each pair lines up either way, on its own. So a gamete can get Y with R, or small y with small r, like the grandparents. Or it can get two new mixes: Y with small r, and small y with R. If both ways are equally likely, and nothing mutates, each kind is a quarter of the gametes.",
+      "hash": "1c2d9b721962",
+      "textSha256": "1c2d9b721962e536692a410e61b9c18db1cdc59d4c5cd8e14458053544259870",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/trace-parent.1c2d9b721962.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/trace-parent.1c2d9b721962.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/trace-parent.1c2d9b721962.generation.json",
+      "plannedRequestSha256": "6a1f4c2d043eb5add6dc5b6851890298b0bd34039247843fa6f57974244d85f5"
+    },
+    {
+      "id": "same-chromosome",
+      "parentSceneId": "same-chromosome",
+      "text": "But what about two genes on the same chromosome? Assortment moves whole chromosomes, so on its own it would keep their alleles together, always capital A with capital B, and small a with small b. Crossing over is what splits them up. If the swap you saw in meiosis happens between the two genes, it makes chromatids with capital A and small b, and small a with capital B. A swap in that stretch happens in only some cells, so these new combinations are usually less common.",
+      "hash": "a0214b8eed3c",
+      "textSha256": "a0214b8eed3c05aee7b4f10829ac8b369fedad9b27e5abc14616737610c37c65",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/same-chromosome.a0214b8eed3c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/same-chromosome.a0214b8eed3c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/same-chromosome.a0214b8eed3c.generation.json",
+      "plannedRequestSha256": "b18db7a3c8ab935dfa74c128bef37fe2663e1d3535d4c208e3bd4e5db147255a"
+    },
+    {
+      "id": "fertilisation",
+      "parentSceneId": "fertilisation",
+      "text": "Now fertilisation. In a pea flower, each ovule is reached by its own pollen tube, from its own pollen grain, and which grain gets there is chance. So each seed in the pod comes from a different pair of gametes. With four kinds of pollen and four kinds of egg, that's sixteen possible pairings for just these two genes. For people, each parent can make more than 8 million chromosome combinations, so one couple has about 70 trillion possible pairings, before crossing over adds even more.",
+      "hash": "2aded37ffd19",
+      "textSha256": "2aded37ffd19dc62478a732401195e96275c5c01c3e712e48ba508462050aa04",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/fertilisation.2aded37ffd19.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/fertilisation.2aded37ffd19.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/fertilisation.2aded37ffd19.generation.json",
+      "plannedRequestSha256": "9021241e17c760bce6a5a8fa90e9c8eee23f2895489b3eec47deef144d111d1e"
+    },
+    {
+      "id": "siblings",
+      "parentSceneId": "siblings",
+      "text": "That's why brothers and sisters, or seeds in one pod, share alleles but differ. Every allele they carry came from the same two parents, so they're alike in many ways. But each got a different combination, from different gametes, so two siblings are almost never genetically identical. No new mutation is needed to explain it.",
+      "hash": "6774eed64107",
+      "textSha256": "6774eed6410788c5b64a1112fb0079bb55fa397c6f77042ac411ecfdca4f9bbc",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/siblings.6774eed64107.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/siblings.6774eed64107.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/siblings.6774eed64107.generation.json",
+      "plannedRequestSha256": "962f17c82f6b3be8713f9f641edbbf31d88b4d8ee3dfb7fa9d158cbf19b9c8eb"
+    },
+    {
+      "id": "mutation",
+      "parentSceneId": "mutation",
+      "text": "So where does a new allele come from? From a mutation, a change in the DNA's base sequence, such as a copying error that isn't repaired. In 1910, in a lab full of red-eyed fruit flies, one male hatched with white eyes. A new allele had appeared, and he passed it on to his offspring. That only works if the mutation is in a cell that makes eggs or sperm. A mutation in a fly's gut cell stays in that fly.",
+      "hash": "005044c42f57",
+      "textSha256": "005044c42f572fab112d4faeb2aa1a75ed3c75068c0a1e8f619d4174339b28eb",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/mutation.005044c42f57.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/mutation.005044c42f57.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/mutation.005044c42f57.generation.json",
+      "plannedRequestSha256": "9967a6d250cf07b8f59a5139592d1fca634af31bdcb55a969fdbe852797f9e3a"
+    },
+    {
+      "id": "genetic-or-environmental",
+      "parentSceneId": "genetic-or-environmental",
+      "text": "Not every difference is genetic, though. Remember the hydrangea cuttings, clones with the same genotype, that flowered blue or pink? Differences between clones come from the environment. Differences between seeds from a cross are mostly genetic, from the four sources. To tell them apart, grow them in the same conditions, or compare clones. And only genetic differences are inherited, because the environment doesn't change the alleles in the gametes.",
+      "hash": "a51c81854a16",
+      "textSha256": "a51c81854a16559bdca822ddf44f99c3dbd1f64953147852576164478d34c9a3",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/genetic-or-environmental.a51c81854a16.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/genetic-or-environmental.a51c81854a16.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/genetic-or-environmental.a51c81854a16.generation.json",
+      "plannedRequestSha256": "8f3ad2bafb59d2ada490cca777068f0c2f3b9c84c3657024362230d5b7f7ca2d"
+    },
+    {
+      "id": "why-it-matters",
+      "parentSceneId": "why-it-matters",
+      "text": "Why does any of this matter? Variation means that when conditions change, some individuals are more likely to survive and reproduce, so the population is more likely to keep going. In any one generation, crossing over, assortment and fertilisation make huge numbers of new combinations. Mutation is rare for any one gene, but over long periods it supplies every new allele that the reshuffling then mixes.",
+      "hash": "0af20f1dd5b8",
+      "textSha256": "0af20f1dd5b82245c3ed65bd4a5c20c770eb7b7d79bd960356a5ccbc7a48422e",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/why-it-matters.0af20f1dd5b8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/why-it-matters.0af20f1dd5b8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/why-it-matters.0af20f1dd5b8.generation.json",
+      "plannedRequestSha256": "10a61e793fc9b869d6647d53b60f15ad60fe3e4364168062b1c300025e898f49"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "To remember the four: Cross, Independently, Randomly, for crossing over, independent assortment and random fertilisation, the three that reshuffle. And only Mutation makes new.",
+      "hash": "02b8a8470978",
+      "textSha256": "02b8a84709789ee5f64f38b3d121f8a39e065a1404efb1216a699df8ab4afd26",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/memory.02b8a8470978.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/memory.02b8a8470978.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/memory.02b8a8470978.generation.json",
+      "plannedRequestSha256": "ca0d2ce559e63845e2893b8a3a78409a77516e1b76f1cf3cb86ef64b2921d0aa"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two harder questions now. First, a cell in a fruit fly's ovary is making eggs. On one chromosome pair, it has alleles D and E on one chromosome, and small d and small e on its partner. On another pair, it has F and small f. List the combinations its eggs can carry if there's no crossing over. Then list the extra combinations if crossing over happens between the D and E genes, and explain why those are less common. Pause here to answer.",
+      "hash": "e7c0046664fa",
+      "textSha256": "e7c0046664faf9219fc31e21da9d08598f0e338516a887417cd9a928d9604783",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/attempt.e7c0046664fa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/attempt.e7c0046664fa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/attempt.e7c0046664fa.generation.json",
+      "plannedRequestSha256": "ce936abff1488e6483ec0b0fc9730cf071997e19368a092899483de8c78a85af"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "With no crossing over, capital D stays with capital E, and small d with small e, and each can go with either F allele: that's four combinations. Crossing over between the genes puts capital D with small e, and small d with capital E, which gives four more. They're less common because that swap happens in only some cells. If you listed all eight as equally common, you treated D and E as if they were on different chromosomes.",
+      "hash": "8e8e452459c1",
+      "textSha256": "8e8e452459c10297cb639e09ad5a3b95ec15ccf396b2f033f9acb61ee3d6a816",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/feedback-one.8e8e452459c1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/feedback-one.8e8e452459c1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/feedback-one.8e8e452459c1.generation.json",
+      "plannedRequestSha256": "1919888a1b3b61b8da18e7500a18a51a97871cfdbfdd331288aacbe1193ee714"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A grower has one strawberry plant. Group A is twenty plants grown from its runners: ten in a sunny bed and ten in a shady bed. Their fruit size differs between the beds. Group B is twenty plants grown from its seeds, after its flowers were pollinated by another strawberry plant, all in the sunny bed. Their fruit size, shape and colour vary. Explain the source of the variation in each group. Then say which group's differences could be passed on through seeds, and justify. Pause here to answer.",
+      "hash": "cbe99a30a65c",
+      "textSha256": "cbe99a30a65ca42c2d6251cff7f7b9f474208413d0ad558a4d1dcd513a62b560",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/attempt-two.cbe99a30a65c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/attempt-two.cbe99a30a65c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/attempt-two.cbe99a30a65c.generation.json",
+      "plannedRequestSha256": "1874d8e572691851a5a47811771fd346acf95f03947709092f69af96ca2daae1"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Group A are clones, with the same genotype, so their differences come from the environment. Group B grew in the same bed, so their differences are mostly genetic: each seed came from different gametes, reshuffled by crossing over, assortment and random fertilisation. Only Group B's differences can be passed on. If you said the shady plants will pass on small fruit, no: the shade didn't change their alleles.",
+      "hash": "9c2f6294d5f1",
+      "textSha256": "9c2f6294d5f1fad73222a387f5f35ad2f6dacee981a49c4c2f7b82babc29b89b",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/feedback-two.9c2f6294d5f1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/feedback-two.9c2f6294d5f1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/feedback-two.9c2f6294d5f1.generation.json",
+      "plannedRequestSha256": "0e9c83962b67bb0099bf766da343c7ee87efcb4fff12bfaf32fef235ae3d5f34"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question asks where variation comes from, sort it first. New combinations of existing alleles come from crossing over, assortment and fertilisation. A new allele needs a mutation in the egg or sperm line. And if the genotypes are the same, look to the environment. Next, you'll model these processes yourself, and then predict offspring with Punnett squares.",
+      "hash": "52c0d67a9896",
+      "textSha256": "52c0d67a9896c1afd1328e303ff52484970d25709f41f6f46affd1083d07f680",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/decision-rule.52c0d67a9896.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/decision-rule.52c0d67a9896.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/decision-rule.52c0d67a9896.generation.json",
+      "plannedRequestSha256": "a323f73d05b5bd5d77b346d37fb7ca064ae5fbf42b4a9bba56902272c6eee30a"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B8-claude-2026-10-17-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

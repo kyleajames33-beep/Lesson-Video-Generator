@@ -49,3 +49,11 @@ Checked each design against its exact `measured/lesson.json` narration and built
 - **Morgan's first generation:** Recorded `hook`, design scene 1 and `s1.tsx:44-45` say all offspring had red eyes. Morgan reported 1,237 red-eyed flies and 3 white-eyed males in that first cross. Correct the absolute historical claim. The design's author note already records the three exceptions. [Morgan's 1910 report](https://journals.sagepub.com/doi/pdf/10.3181/00379727-8-12).
 - **Pedigree numbering:** Design scene 5 calls P4's carrier daughters II-1 and II-3, while the built `shared.tsx:68-74` labels them II-2 and II-4. Correct the design's person IDs to match the displayed pedigree.
 - No other error found in the X-linked squares and probabilities, incomplete and codominant ratios, ABO genotypes and cross, other pedigree readings, or the 2017 syllabus wording and `BIO12-12`.
+
+## Resolution (18 Oct)
+
+Chemistry fix author (Claude), C13 and C14 only. Each finding was re-checked against the cited sources and accepted.
+
+- **C13 (design Revision 3):** sulfides: CaS, SrS and BaS added as soluble exceptions on the rules card (`s1.tsx`) and key note 1 (`s4.tsx`); the narration names no sulfide, so it is unchanged. Sulfates: SrSO4 added in the recorded `nagsag` text ("barium, strontium and lead"), the rules card, the compact card (`parts.tsx`, second sulfate line, so the card width is unchanged for P03) and key note 1. Hydroxides: `feedback-1` now says "Hydroxides are mostly insoluble, and copper isn't one of the exceptions"; the verdict label reads "Cu(OH)2: insoluble". Group 1: "no exceptions" removed from `nagsag` ("almost always soluble") and the card. `C5-IQ4-03` labelled a local catalogue ID; the dotpoint is quoted with its example bullets. Re-voice: `nagsag`, `feedback-1`.
+- **C14 (design Revision 3):** `s3.tsx` (scene 13, memory aid) now gives Ag2SO4 (2 : 1) as the "other way round" example. The `decision-rule` narration says "Given Ksp, solve for s: for salts like these, a square or cube root."; card line 3 reads "(1 : 1 or 1 : 2: square or cube root)". C14 is published, so this re-voice is for a possible re-upload; the owner decides.
+- **C11, B7, B8, B10:** not in this fix pass.

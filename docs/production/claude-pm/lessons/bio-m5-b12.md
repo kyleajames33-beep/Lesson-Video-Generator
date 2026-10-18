@@ -1,11 +1,14 @@
 # B12: Read every base, or compare a few markers? DNA sequencing and profiling for inheritance studies (design)
 
-Status: Revision 2: learning review and Claude science check resolved; ready to voice (pending owner go-ahead)
+Status: Revision 3 (18 Oct): Codex check 67 findings resolved; ready to voice for the changed scenes only (two-tools, how-sequencing-works, choose-the-tool, tool-limits, feedback-two); every other scene keeps its recorded take. Earlier: Revision 2: learning review and Claude science check resolved; ready to voice (pending owner go-ahead)
+
+Revision 3 changes (18 Oct, Codex checks 66/67): (1) scene 2 says "One common kind of DNA profiling doesn't read the order at all"; (2) scene 3 opens "In one common method, sequencing never reads a whole chromosome in one go", with grey tags "one common method:" and "dye-tagged short reads"; (3) scenes 9a, 9b and 11d limit the profiling claims to the method shown ("This kind of profiling", "A profile like this"; tags "STR profiling: repeat lengths only" and "an STR profile: a few markers"); attempt 11c gains the on-screen given "DNA profiling here means the repeat-length (STR) method from this video"; (4) the hook gel gains a "father (rebuilt)" lane from three undisputed siblings, and the tick appears only after every boy band is matched to the mother or the rebuilt father, with the tag "consistent with her son" (screen only; the narration already says he was compared "with his family's"); (5) a YouTube metadata block is added. Re-voice two-tools, how-sequencing-works, choose-the-tool, tool-limits and feedback-two only.
 
 Revision 2 (18 Oct): applied `../checks/b12-learning-review.md` and `../checks/b12-claude-science-check.md`. Changes: scene 3 says each base is "tagged with its own coloured dye" (bases do not give off light themselves, and not every machine uses four colours); scene 6 answers the likely "longer pieces carry more charge" question; scene 8 gains a "close relatives share more bands" tag; scene 9 split into 9a (choosing the tool) and 9b (limits), with "doesn't code for a protein" and the B11 association link; key notes add "a match is strong evidence, not proof"; the hook's case details are verified (Numbers).
 
 ## Decisions
 
+- **Codex check 67 (18 Oct), verified and resolved in Revision 3.** (a) Hook: correct; in the 1985 case the father was unavailable, and Jeffreys rebuilt his bands from the three undisputed siblings (bands they had that the mother lacked); every band in the boy matched the mother or that rebuilt father ([DNA Learning Center](https://dnalc.cshl.edu/view/15107-The-Ghana-Immigration-case-Alec-Jeffreys.html); [Genetics Unzipped](https://geneticsunzipped.com/news/2020/3/26/family-fingerprints)); the gel now shows that step before the tick. (b) Sequencing: correct; nanopore sequencing reads without dyes, so scene 3 is scoped to one common method. (c) Profiling: correct; SNP panels and sequence-based STR profiles exist; learner copy is now scoped to the STR length method shown, without a general caveat (its omission no longer teaches a wrong idea). (d) Metadata: added. All existing cue phrases are kept, so the scene code runs on the old and new takes.
 - **File name and route id.** Route entry **bio-m5-b12** ("DNA sequencing and profiling for inheritance studies", playlist order 22, prerequisite bio-m5-b11, reached after the practical companion bio-m5-p03, next bio-m5-b13). Production label B12. Pre-design pack: `../pre-design/bio-b12-population-genetics-technologies.md` (its "B12" label spans site lessons 16 to 19; the canonical route id `bio-m5-b12` means sequencing and profiling only, as the pack itself notes). This design takes the pack's **L17 part**: what sequencing and profiling each measure, how each works at Year 12 level, how each reveals inheritance in families and populations, choosing the tool, and their limits. Large collaborative data (L18) belong to bio-m5-b13; group prediction and ethics (L19) to bio-m5-g03. PCR and gel electrophoresis as techniques in their own right are Module 6 (biotechnology); here they appear only as far as profiling needs them.
 - **Scope (route start "A specified research question needs sequencing or profiling evidence"; stop "Investigate how technologies determine population inheritance patterns using sourced data, distinguishing purposes and limits").** In order: Jeffreys' 1985 immigration case (hook); two tools, two questions (base order against selected markers); how sequencing works (short copied fragments, read base by base, assembled by overlap); sequencing a family at the sickle cell site, carriers seen directly, and allele frequencies across a population; short tandem repeats; separating them by length in a gel; reading inheritance from bands (every child band from mother or father; exclusion); why a match needs many markers (multiplying chances); choosing the tool and the limits of each; memory; application; decision rule.
 - **Split decision.** One video. Sequencing and profiling are one syllabus line ("DNA sequencing and profiling"), the site teaches them on one page as a contrast, and the learner question is the choice between them, which needs both. The estimate (below) is inside the target.
@@ -38,17 +41,17 @@ The video has 17 voiced scene files (1 to 8, 9a, 9b, 10, 11a, 11b, 11c, 11d, 12 
 ### 1. hook (a boy and his mother, 1985)
 > In 1985, British officials doubted that a boy returning from Ghana was really his mother's son. A geneticist, Alec Jeffreys, had just found a way to compare people's DNA as patterns of bands. He compared the boy's pattern with his family's, and it showed he really was her son. So how can a pattern of bands show who's related? And how is that different from reading DNA one base at a time?
 
-Visual: a coded document card slides in, headed "1985: immigration case" with a "?" stamp (no people, no photographs). On "a boy" and "his mother's son" two pedigree symbols appear joined by a dashed line with a "?": an open circle tagged "mother" and a small open square tagged "boy". On "patterns of bands" a coded gel strip writes on beside them with two lanes headed by the two symbols, bands drawing down (generic, illustrative; grey tag "illustration, not the 1985 data"). On "he really was her son" several bands in the boy's lane draw thin lines across to matching bands in the mother's lane, and the dashed "?" line becomes solid with a tick. On "how is that different" a short base-tile row "A T G G C A ..." writes on under the gel. The heading writes on: "Reading inheritance in DNA". Hold two seconds.
+Visual: a coded document card slides in, headed "1985: immigration case" with a "?" stamp (no people, no photographs). On "a boy" and "his mother's son" two pedigree symbols appear joined by a dashed line with a "?": an open circle tagged "mother" and a small open square tagged "boy". On "patterns of bands" a coded gel strip writes on beside them with two lanes headed by the two symbols, bands drawing down (generic, illustrative; grey tag "illustration, not the 1985 data"). Revision 3: the gel has three lanes, "mother", "boy" and "father (rebuilt)", with a grey tag "father's bands rebuilt from three undisputed siblings" (as in the 1985 investigation; the father was not available). On "He compared the boy's pattern" the father lane appears; the boy's bands that match the mother draw thin amber lines to her lane, then his remaining bands draw lines to the rebuilt father lane (computed check: every boy band is in one lane or the other). Only then, on "he really was her son", the tag "every band in the boy: from the mother or the father" writes on, the dashed "?" line becomes solid with a tick, and the tag "consistent with her son" follows. Shared maternal bands alone never earn the tick. On "how is that different" a short base-tile row "A T G G C A ..." writes on under the gel. The heading writes on: "Reading inheritance in DNA". Hold two seconds.
 
 ### 2. two tools, two questions
-> There are two main ways to get that kind of evidence. DNA sequencing reads the exact order of bases, the A's, T's, C's and G's, along a stretch of DNA. DNA profiling doesn't read the order at all. It compares a few chosen places where people's DNA tends to differ. So one reads every letter, and the other checks a handful of markers. Which one you use depends on the question you're asking.
+> There are two main ways to get that kind of evidence. DNA sequencing reads the exact order of bases, the A's, T's, C's and G's, along a stretch of DNA. One common kind of DNA profiling doesn't read the order at all. It compares a few chosen places where people's DNA tends to differ. So one reads every letter, and the other checks a handful of markers. Which one you use depends on the question you're asking.
 
 Visual: the choice board in outline. A long coded chromosome bar runs across the top. On "reads the exact order of bases" a magnifier frame slides along one short stretch and a row of base tiles writes on beneath it, letter by letter; the left column header writes on: "DNA sequencing: base order". On "a few chosen places" five small markers light along the same chromosome bar (amber ticks), each with a short bracket and no letters; the right column header writes on: "DNA profiling: selected markers". On "one reads every letter" the tile row pulses; on "a handful of markers" the five ticks pulse. On "depends on the question" a "?" card drops between the columns. Hold one second.
 
 ### 3. how sequencing works
-> Sequencing never reads a whole chromosome in one go. First, the DNA is copied and broken into short fragments. A machine reads each fragment one base at a time, because each kind of base is tagged with its own coloured dye. The copies were broken at different places, so the fragments overlap. Software lines up those overlaps, like matching the edges of torn strips, and rebuilds the whole sequence.
+> In one common method, sequencing never reads a whole chromosome in one go. First, the DNA is copied and broken into short fragments. A machine reads each fragment one base at a time, because each kind of base is tagged with its own coloured dye. The copies were broken at different places, so the fragments overlap. Software lines up those overlaps, like matching the edges of torn strips, and rebuilds the whole sequence.
 
-Visual: the read board. `m5x-cheek-swab-v1.png` (or v2) sits small at the left (tag "sample"). On "never reads a whole chromosome" a chip "reads a chromosome end to end" writes on and takes a grey scribble cross. On "copied and broken into short fragments" a coded stretch of 24 base tiles duplicates into four copies, then each copy splits at different points into short rows of 6 to 9 tiles (`FragmentAssembly`, ported; fragment boundaries computed). On "one base at a time" one fragment slides into a reading window and its tiles light one by one, each with a small labelled peak rising above it (`Trace`; each peak carries its letter, peaks also tinted by base, never colour only). On "broken at different places" the cut points flash on the four copies; on "lines up those overlaps" the fragments slide into a staggered stack where matching overlaps ring and snap (overlaps computed; a small aside shows two torn paper strips matching along their edges, tag "match the overlaps"), and on "rebuilds the whole sequence" the consensus row writes on beneath (tag "assembled sequence"). Hold one second.
+Visual: the read board. `m5x-cheek-swab-v1.png` (or v2) sits small at the left (tag "sample"). On "never reads a whole chromosome" a chip "reads a chromosome end to end" writes on and takes a grey scribble cross; two small grey tags under the sample read "one common method:" and "dye-tagged short reads" (Revision 3: other methods, such as nanopore, read without dyes). On "copied and broken into short fragments" a coded stretch of 24 base tiles duplicates into four copies, then each copy splits at different points into short rows of 6 to 9 tiles (`FragmentAssembly`, ported; fragment boundaries computed). On "one base at a time" one fragment slides into a reading window and its tiles light one by one, each with a small labelled peak rising above it (`Trace`; each peak carries its letter, peaks also tinted by base, never colour only). On "broken at different places" the cut points flash on the four copies; on "lines up those overlaps" the fragments slide into a staggered stack where matching overlaps ring and snap (overlaps computed; a small aside shows two torn paper strips matching along their edges, tag "match the overlaps"), and on "rebuilds the whole sequence" the consensus row writes on beneath (tag "assembled sequence"). Hold one second.
 
 ### 4. sequencing a family, and a population
 > Because sequencing reads every base, it finds single-base differences directly, like the snips in the frequency video. Take the sickle cell allele, where one A is changed to T. Sequence this family at that spot. Both parents are unaffected, but each shows two letters there, A and T, so each is a carrier. Their affected daughter shows only T. That's the recessive pattern, now seen in the DNA itself. Sequence thousands of people this way, and you get the allele's frequency across a whole population.
@@ -76,14 +79,14 @@ Visual: the gel with three lanes headed by pedigree symbols: open circle "mother
 Visual: `MatchLadder`. On "lots of people share" a coded crowd of 10 small open squares and circles (pedigree symbols, no people) appears with one lit (tag "1 in 10 share this pattern", grey tag "example number"). On "Matching one marker" one gel mini-lane ticks with the tag "1 marker: 1 in 10". On "inherited separately" the three mini-lanes sit on three different chromosome bars (tag "different chromosomes: inherited independently"). On "the chances multiply" the ladder writes on one rung per cue (computed): "1 marker: 1/10", "2: 1/100", "3: 1/1,000", then jumps to "10: 1/10,000,000,000 (one in ten billion)". On "real profiles compare many markers" a grey tag writes on: "real profiles: often 16 or more markers"; on "not proof" the tag "a match is strong evidence, not proof" writes under it, with a small grey tag beside the ladder: "close relatives share more bands, so the chances are not this small for a brother" (Revision 2). Hold one second.
 
 ### 9a. choosing the tool
-> So which tool fits which question? If you need a particular base, like a disease allele or a snip, sequence it. Profiling can't see it, because it only measures repeat lengths, mostly in DNA that doesn't code for a protein. If you need to know who's related to whom, profiling is quick and cheap across many individuals. That's how conservation programs check relatedness in captive animals before choosing mates.
+> So which tool fits which question? If you need a particular base, like a disease allele or a snip, sequence it. This kind of profiling can't see it, because it only measures repeat lengths, mostly in DNA that doesn't code for a protein. If you need to know who's related to whom, profiling is quick and cheap across many individuals. That's how conservation programs check relatedness in captive animals before choosing mates.
 
-Visual: the choice board fills. Left column "sequencing: base order": on "a particular base" cards drop in: "is this disease allele present?", "how common is this SNP in each population?", each with a small tile row and one amber tile. On "Profiling can't see it" a dashed arrow from the left card to the profiling column is blocked with a grey cross (tag "repeat lengths only"). Right column "profiling: selected markers": on "who's related to whom" cards drop in: "is this man the father?", "how related are these captive animals?", each with a mini gel; on "conservation programs" the second card gets a grey tag "breeding programs: avoid pairing close relatives". Grey tag at the bottom: "profiling is also used in forensics". Hold one second.
+Visual: the choice board fills. Left column "sequencing: base order": on "a particular base" cards drop in: "is this disease allele present?", "how common is this SNP in each population?", each with a small tile row and one amber tile. On "Profiling can't see it" a dashed arrow from the left card to the profiling column is blocked with a grey cross (tag "STR profiling: repeat lengths only"; Revision 3). Right column "profiling: selected markers": on "who's related to whom" cards drop in: "is this man the father?", "how related are these captive animals?", each with a mini gel; on "conservation programs" the second card gets a grey tag "breeding programs: avoid pairing close relatives". Grey tag at the bottom: "profiling is also used in forensics". Hold one second.
 
 ### 9b. the limits of each tool
-> But each tool has limits. A profile is a handful of markers, not a whole genome, so it can't tell you about genes. And finding a variant by sequencing still doesn't tell you what it does, or prove that it causes a disease.
+> But each tool has limits. A profile like this is a handful of markers, not a whole genome, so it can't tell you about genes. And finding a variant by sequencing still doesn't tell you what it does, or prove that it causes a disease.
 
-Visual: the two columns stay; the cards dim. On "a handful of markers" the five amber ticks from scene 2 return along the chromosome bar under the profiling column, with the rest of the bar greyed; limit tag writes on: "profiling: a few markers, not the whole genome". On "doesn't tell you what it does" the amber tile under the sequencing column gets a small "?" and the limit tag writes on: "sequencing: a variant found is not a cause proved (B11: association, not cause)". Hold one second.
+Visual: the two columns stay; the cards dim. On "a handful of markers" the five amber ticks from scene 2 return along the chromosome bar under the profiling column, with the rest of the bar greyed; limit tag writes on: "an STR profile: a few markers, not the whole genome" (Revision 3). On "doesn't tell you what it does" the amber tile under the sequencing column gets a small "?" and the limit tag writes on: "sequencing: a variant found is not a cause proved (B11: association, not cause)". Hold one second.
 
 ### 10. memory
 > Three things to remember. Sequence means bases, and profile means selected markers. DNA runs to red, the positive lead. And every band in a child must come from Mum or Dad.
@@ -103,12 +106,12 @@ Visual: the card shrinks to a strip at the top (the three gels and demands stay 
 ### 11c. attempt two (choose the tool)
 > Second. Researchers want to know whether a disease-linked variant, a change in a single base, is more common in one population than another. Explain why DNA sequencing is more useful than DNA profiling for this question. Then name one question where profiling would be the better choice. Pause here to answer.
 
-Visual: the board clears. The card shows two population cards ("population 1", "population 2"), each with a short tile row containing a "?" tile, and the stimulus line "disease-linked variant: a single-base change". Demands: "(a) Why is sequencing more useful than profiling here?" "(b) Name one question where profiling is the better choice." Two answer boxes. Nothing answer-bearing: no column headers from the choice board, no gel. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. The card shows two population cards ("population 1", "population 2"), each with a short tile row containing a "?" tile, and the stimulus line "disease-linked variant: a single-base change", with a given line under it (Revision 3): "DNA profiling here means the repeat-length (STR) method from this video." Demands: "(a) Why is sequencing more useful than profiling here?" "(b) Name one question where profiling is the better choice." Two answer boxes. Nothing answer-bearing: no column headers from the choice board, no gel. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 11d. feedback, item two
-> The variant is one base, so you need the base order at that spot. Sequencing reads it in everyone tested, so you can compare the allele's frequency in each population. Profiling only measures repeat lengths, so it can't show that base. Profiling is better for relatedness, like a paternity test. And if you said profiling reads the whole genome, it doesn't.
+> The variant is one base, so you need the base order at that spot. Sequencing reads it in everyone tested, so you can compare the allele's frequency in each population. This kind of profiling only measures repeat lengths, so it can't show that base. Profiling is better for relatedness, like a paternity test. And if you said profiling reads the whole genome, it doesn't.
 
-Visual: the card shrinks to a strip. (1) On "the base order at that spot" the "?" tiles fill: "T" in some rows, "A" in others. (2) On "the allele's frequency in each population" two small bars draw under the population cards (illustrative, no values; tag "allele frequency in each"); the line "(a) the variant is one base: sequencing reads it; profiling measures repeat lengths only" writes on. (3) On "better for relatedness" the line "(b) e.g. paternity, or how related captive animals are" writes on. (4) On "reads the whole genome" the chip "profiling reads the whole genome" writes on and takes a grey scribble cross, with the tag "a handful of markers". Settle on the model answer for about a second.
+Visual: the card shrinks to a strip. (1) On "the base order at that spot" the "?" tiles fill: "T" in some rows, "A" in others. (2) On "the allele's frequency in each population" two small bars draw under the population cards (illustrative, no values; tag "allele frequency in each"); the line "(a) the variant is one base: sequencing reads it; this kind of profiling measures repeat lengths only" writes on. (3) On "better for relatedness" the line "(b) e.g. paternity, or how related captive animals are" writes on. (4) On "reads the whole genome" the chip "profiling reads the whole genome" writes on and takes a grey scribble cross, with the tag "a handful of markers". Settle on the model answer for about a second.
 
 ### 12. decision rule and handoff
 > So, start with the question. Need a particular base? Sequence it. Need to know who's related? Compare profiles, and remember that one mismatch can exclude, but a match needs many markers. Next, we'll see what huge collaborative projects, with DNA data from thousands of people, can show about whole populations.
@@ -165,22 +168,24 @@ Revision 2 count (18 Oct, by script with the build parser rules: "### " headings
 | Scene | Characters |
 | --- | --- |
 | 1 | 390 |
-| 2 | 391 |
-| 3 | 400 |
+| 2 | 410 |
+| 3 | 422 |
 | 4 | 502 |
 | 5 | 402 |
 | 6 | 437 |
 | 7 | 387 |
 | 8 | 430 |
-| 9a | 413 |
-| 9b | 222 |
+| 9a | 426 |
+| 9b | 232 |
 | 10 | 172 |
 | 11a | 195 |
 | 11b | 340 |
 | 11c | 309 |
-| 11d | 357 |
+| 11d | 370 |
 | 12 | 311 |
 | 13 | 75 |
+
+Revision 3 total (18 Oct, Codex checks 66/67): **5,810 characters**, 1,044 words; changed rows: 2 391 to 410; 3 400 to 422; 9a 413 to 426; 9b 222 to 232; 11d 357 to 370. The runtime estimate below moves by under 15 s.
 
 Revision 2 total: **5,733 characters**, 1,028 words, 17 scenes (Revision 1: 5,583 in 16). Speech about 431 s; with 34 s of padding (17 scenes), about 13 s of stated holds, 20 s of countdowns and 55 s more of the notes hold: **about 553 s, 9.2 minutes**. Feedback: 11b about 26 s; 11d about 27 s (brief-feedback rule).
 
@@ -205,6 +210,25 @@ Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the d
 2. Confirm the B11 clean-up of `m5x-cheek-swab-v2.png` covers scene 3 here (no separate action).
 
 Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/b12-provenance.json`.
+
+## YouTube metadata (draft)
+
+- Title: "DNA Sequencing and Profiling for Inheritance Studies | Year 12 Biology"
+- Description:
+
+"In 1985, a pattern of DNA bands settled whether a boy was really his mother's son. See how one common sequencing method reads DNA base by base and rebuilds it from overlapping fragments, and how short tandem repeat (STR) profiling compares repeat lengths in a gel. Read inheritance from bands, see why a match needs many markers, and decide which tool fits which question, along with the limits of each.
+
+Biology 2017: Year 12 Module 5, Heredity. Supports investigating technologies that determine inheritance patterns.
+Syllabus dotpoint (NSW Biology Stage 6, 2017, Module 5):
+"investigate the use of technologies to determine inheritance patterns in a population using, for example: (ACSBL064, ACSBL085)
+- DNA sequencing and profiling (ACSBL086)"
+Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017
+
+Prerequisite: Population frequencies and SNP evidence. Next: What big population genetics data can show.
+
+#Year12Biology #DNAProfiling #HSCScience"
+
+- Dotpoint wording confirmed against `programme/syllabus/bio-2017-y12.json` (B5-IQ5-01 with its example B5-IQ5-02, p 50).
 
 ## Build ids
 
