@@ -94,3 +94,18 @@ Recall M6 titration and strong versus weak. This list uses the published Module 
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L15 and L17: correct the acidic strong-acid/weak-base hook and the propanoic-acid equivalence pH. Indicator transition must fall in the steep part of the curve. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+The named 2015 TGA antacid failure has no matched primary record in this check; use an explicitly hypothetical indicator case.
+
+L17 exam worksheet 04: the given pKa2 and titre put the tartaric-acid second equivalence near pH 8.22, not 9.3. Check the phenolphthalein endpoint against a calculated curve, and label wine acidity as tartaric-acid equivalents unless other acids are excluded.
+
+L15 exam worksheet 04 claims bromothymol blue changes 2 to 3 mL before equivalence in its weak-acid titration. Its own pKa and concentrations put pH 6.0 to 7.6 at about 18.81 to 19.97 mL, close to the 20.00 mL equivalence. Recalculate the graph and key.
+
+L15 embedded practice says phenolphthalein never changes colour when HCl is added to NH₃. The ammonia starts basic enough for phenolphthalein to be pink; it loses colour before the acidic equivalence point. L17 embedded Q5 offers only methyl orange, bromothymol blue and phenolphthalein, although the calculated pH 5.28 is better bracketed by methyl red. Update both prompts and model answers using the draft.
+## Further site corrections for Brief 76
+
+L15: choose an indicator whose transition falls inside the steep pH jump, even if the range does not contain the exact equivalence pH. The page's methyl-orange range 3.1–4.4 does not contain its claimed pH 5.3. See [the site fix draft](../site-fixes-draft-m6.md).

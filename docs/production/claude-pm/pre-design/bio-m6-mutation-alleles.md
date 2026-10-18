@@ -63,3 +63,7 @@ Recall [B5](../lessons/bio-m5-b05a.md), [B6a](../lessons/bio-m5-b06a.md). This l
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L01: bacterial mutations can pass through cell division, and gene flow can bring new alleles into a local population. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.

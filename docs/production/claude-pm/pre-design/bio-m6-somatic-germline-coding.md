@@ -59,3 +59,10 @@ Recall [B6a](../lessons/bio-m5-b06a.md), [B7](bio-b7-transcription.md). This lis
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L05 gives Angelina Jolie a 70% personal breast-cancer risk, but her first-person account says her doctors estimated 87%. The site also overstates the 2013 US patent ruling; isolated natural DNA and synthetic cDNA were treated differently. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+## Further site corrections for Brief 76
+
+L05 worked answer says a germline allele is passed indefinitely. Drift and selection can remove it. It also ranks coding above non-coding mutations per event and non-coding above coding in aggregate without adequate basis; effect depends on the precise sequence and function. See [the exact site fix draft](../site-fixes-draft-m6.md).

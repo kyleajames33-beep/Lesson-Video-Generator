@@ -69,3 +69,12 @@ Recall M6 titration and curves. This list uses the published Module 5 video ledg
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L18 gives a named 2020 TGA audit without a matched primary record; use an explicitly hypothetical antacid assay. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L18 embedded Q8 asks for NaHCO₃ content in baking powder but ignores the powder's acidic ingredients. A bulk acid-base titration does not isolate bicarbonate in that mixture; use baking soda for the one-analyte comparison in the draft.
+## Further site corrections for Brief 76
+
+L18: standard Kjeldahl digestion starts with organic nitrogen in a sample, not N₂ gas. A bicarbonate/HCl conductometric equivalence point should be read from a change of slope, not an assumed minimum. See [the exact draft pairs](../site-fixes-draft-m6.md).

@@ -57,3 +57,14 @@ Recall [B6a](../lessons/bio-m5-b06a.md), M6 biotechnology. This list uses the pu
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+The Biology bank item `bio-y12-m6-l13-q0131` asks for the first recombinant human insulin method but describes generic single-gene insertion. The original bacterial method expressed synthetic DNA for separate A and B chains, then combined them. See [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L13 embedded Activity 2 presents gene cloning as a required separate step before recombinant DNA insertion. In standard plasmid cloning, a DNA insert is joined to a vector, then the recombinant vector is copied in host cells. Use the corrected sequence in the draft.
+
+L13 body also calls early commercial human insulin a direct insertion of the human insulin gene into bacteria. The original bacterial demonstration expressed synthetic A and B chain coding sequences separately; use the corrected historical case in the draft.
+## Further site corrections for Brief 76
+
+L13 says Cas9 has no sequence preference of its own. Cas9 requires a suitable PAM as well as guide pairing. See [the exact draft pairs](../site-fixes-draft-m6.md).

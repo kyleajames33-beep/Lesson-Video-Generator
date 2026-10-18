@@ -68,3 +68,16 @@ Recall [C5](../lessons/chem-m5-c05.md), M6 conjugates and Ka. This list uses the
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L13: 6.0/0.30 is 20, so the stated ratio is arithmetically possible. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L13 worksheet 02: its stated 0.010 mol acetate is exhausted by 0.010 mol added HCl. The plotted endpoint cannot stay near pH 4.60. Recalculate the graph and answer before reuse.
+
+L13 exam worksheet 04 overstates H₂CO₃/HCO₃⁻ as the dominant ocean buffer pair, gives an unmatched AIMS GBR pH series, and assigns a universal pH 7.9 aragonite-collapse threshold. Use carbonate/bicarbonate chemistry and saturation state Ωarag with site conditions; see [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L13 embedded Q6 calls the product of equal-mole HCl/NaOH neutralisation a solution still containing the original H⁺ and OH⁻. Those reactants have been consumed. Use the corrected no-buffer counterexample in the draft.
+## Further site corrections for Brief 76
+
+L13 practical prepares 50 mL buffer, allocates it all to two 25 mL challenge beakers, then asks for a fresh 10 mL dilution portion. Prepare 60 mL at the same 1:1 composition and provide a fifth beaker. See [the exact site fix draft](../site-fixes-draft-m6.md).

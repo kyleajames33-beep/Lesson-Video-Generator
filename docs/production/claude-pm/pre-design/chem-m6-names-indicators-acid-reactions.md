@@ -74,3 +74,13 @@ Recall [C1](../lessons/chem-m5-c01.md). This list uses the published Module 5 vi
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L02: ammonium sulfate forms without water. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L02 exam worksheet 04: zinc plus nitric acid does not guarantee hydrogen gas because nitric acid can act as an oxidant. Use the corrected zinc plus hydrochloric acid pattern in the draft.
+
+L02 embedded short answer Q8: ammonium sulfate formation from a strong acid and weak base has an acidic, concentration-dependent equivalence pH. Bromothymol blue's pH 6.0–7.6 range is not reliably suitable, and the page's 98% sulfuric acid setting is not a defined indicator titration. Use the corrected dilute-solution pH-probe task and model answer in the draft.
+
+L02 base table and summary: Mg(OH)₂ is sparingly soluble, but its dissolved fraction dissociates into ions. Do not teach low solubility as partial ionisation or claim every base outside the four memorised hydroxides is weak. See the exact corrections in the draft.

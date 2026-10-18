@@ -63,3 +63,14 @@ Recall [C5](../lessons/chem-m5-c05.md), M6 weak acid ICE. This list uses the pub
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L12 mislabels a 46% child tooth-decay finding as enamel erosion and attributes it to cola. Ka values compare acid strength, but they do not alone establish the damage caused by two drinks. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L12 exam worksheet 04 also miscalculates the model carbonic-acid pH: √(4.3 × 10⁻⁷ × 0.001) is 2.07 × 10⁻⁵ mol/L, giving pH 4.68, not 5.2. Do not turn its assumed carbonation concentration into a measured product claim.
+
+L12 embedded Q8 applies clean-rain pH 5.6 as a universal natural-water threshold and attributes a water sample at pH 5.1 to acid deposition. Check alkalinity, anions and local baseline first; use the corrected model answer in the draft.
+## Further site corrections for Brief 76
+
+L12 worked carbonic-acid example compares Ka₁/Ka₂ as if it were the ratio of H⁺ supplied by the two stages. Recalculation gives a far smaller second-stage contribution. Another worked line mistakes Ka₁/c for percentage ionisation. See [the exact draft pairs](../site-fixes-draft-m6.md).

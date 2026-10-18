@@ -64,3 +64,10 @@ Recall [C5](../lessons/chem-m5-c05.md), M6 acid reactions. This list uses the pu
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L14 embedded Q7 reverses phenolphthalein's timing when HCl is added to bicarbonate. Its basic-range transition is before an acidic equivalence, not after. Embedded Q8 excludes a titre with a suspected burette-tip bubble but does not fix the apparatus; clear the bubble and repeat. See exact pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+## Further site corrections for Brief 76
+
+L14: balance the NaOH/CO₂ equation with 2NaOH. The worked titres 15.35 and 15.40 mL are concordant; including 15.60 and 14.90 mL lowers the mean, contrary to the page. Wine titratable acidity is not the same as measuring vinegar's acetic acid alone. See [the exact draft pairs](../site-fixes-draft-m6.md).

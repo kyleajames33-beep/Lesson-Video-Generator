@@ -62,3 +62,10 @@ Recall [B1](../lessons/bio-m5-b01.md), [B2a](../lessons/bio-m5-b02a.md), [B2b](.
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L14: the named 2019 Wambiana sex-sorting trial was not matched in the checked CSIRO/MLA sources. Bobby calves are a dairy-sector issue, and the claimed 1.5 million annual deaths is unsupported. Use [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+## Further site corrections for Brief 76
+
+L14 treats Wambiana sorting figures and 85% female calves as verified and claims controlled reproduction removes chance. Use a general sex-sorted semen example; fertilisation and allele segregation remain probabilistic. Pollen storage and pollination scale vary by crop. See [the exact site fix draft](../site-fixes-draft-m6.md).

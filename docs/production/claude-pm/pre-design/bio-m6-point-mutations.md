@@ -60,3 +60,15 @@ Recall [B6a](../lessons/bio-m5-b06a.md), [B7](bio-b7-transcription.md), [B8](bio
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L03 attributes a DNA codon determination to Ingram in 1956; his work compared the haemoglobin proteins. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L03 worksheets 01 and 04 say a substitution can at worst change one amino acid. A nonsense substitution can create a premature stop and remove the rest of the protein; correct that ceiling before reuse.
+
+The Biology Module 6 question bank repeats that false ceiling in item `bio-m6-ms-02`. Update both model and marking criterion.
+
+L03 worked Compare answer repeats the same false ceiling. A base substitution may create a premature stop codon and truncate the protein. Use the corrected comparison in the draft.
+
+L03 synthesis also says only protein-function changes can affect an organism; regulatory changes can alter gene expression. The final reflection again attributes DNA-codon identification to Ingram's 1956 protein work. See the exact draft fixes.

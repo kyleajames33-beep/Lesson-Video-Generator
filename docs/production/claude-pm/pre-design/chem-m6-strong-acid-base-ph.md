@@ -86,3 +86,20 @@ Recall [C5](../lessons/chem-m5-c05.md). This list uses the published Module 5 vi
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L08 exam worksheet 04 treats both sulfuric-acid protons as fully dissociated. At 0.015 mol/L, Ka₂ = 0.012 gives pH about 1.69, not 1.52. See [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L08 embedded short answer Q6 repeats the complete second-ionisation error at 0.0050 mol/L sulfuric acid. Using Ka₂ = 0.012 gives 0.0080 mol/L H₃O⁺ and pH 2.10, not 2.00. See the exact replacement in the draft.
+
+L11 exam worksheet 04 calls the H₂SO₄/NaOH equivalence exactly pH 7.00. Sulfate hydrolyses weakly; the ideal calculation for its stated amounts is about pH 7.30. Allow a rounded classroom estimate only if it is labelled an approximation.
+
+The Chemistry Module 6 question bank repeats complete second-ionisation assumptions for H₂SO₄ at 0.050 mol/L (L08 item, pH about 1.23, not 1.00) and after mixing 0.300 mol/L H₂SO₄ with KOH (L11 item, pH about 2.11, not 1.43). See item IDs and calculations in [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+Several multiple-choice bank keys repeat the same assumption. A 0.0300 mol/L H₂SO₄ solution is about pH 1.43, which reverses its claimed ordering against 0.0400 mol/L HCl. Acid/base mixtures involving HSO₄⁻ must use stoichiometry and then equilibrium; the affected items and corrected values are in the draft.
+
+L08 uses a named 1966 Astrup mountaineer blood-pH measurement that was not substantiated. The pH 7.45 to 7.62 change does mean about 32% less hydrogen ion concentration, but present it as a hypothetical calculation. The L07 review JSON also contains two valid conjugate-pair choices. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+## Further site corrections for Brief 76
+
+L08 and L11: the second ionisation of H₂SO₄ is an equilibrium. Do not double the analytical concentration as an exact H⁺ concentration. At 0.010 mol/L and Ka₂=0.012, the concentration model gives pH about 1.84; at 0.050 mol/L it gives pH about 1.23. See [the site fix draft](../site-fixes-draft-m6.md) for the exact page replacements.

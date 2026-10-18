@@ -94,9 +94,14 @@ def old_ledger(subject: str, docname: str, prefix: str) -> None:
         if not txt or txt == "Students:":
             continue
         numpr = para._p.pPr.numPr if para._p.pPr is not None else None
+        # The Chemistry Module 6 Ka/pKa bullet is styled as List Bullet but has
+        # no direct numPr. Treat that Word list style as a top-level point.
         if numpr is None or numpr.ilvl is None:
-            continue
-        level = int(numpr.ilvl.val)
+            if style != "List Bullet":
+                continue
+            level = 0
+        else:
+            level = int(numpr.ilvl.val)
         if level == 0:
             point_number += 1
             point = {"id": f"{prefix}{active['module']}-IQ{section_number}-{point_number:02d}",

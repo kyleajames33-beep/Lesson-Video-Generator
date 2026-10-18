@@ -66,3 +66,11 @@ Recall [C5](../lessons/chem-m5-c05.md), [C11](chem-c11-ka-kb.md). This list uses
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L09 exam worksheet 04 uses the square-root approximation to report an exact 20% ionisation when Ka/c = 0.04. The exact result is about 18.1%, and the approximate hydrogen-ion concentration is about 10.5% high. See [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L09: use (pKa - log c)/2 for the weak-acid shortcut. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L09 also misattributes Ka measurements to John Vane and calculates pure weak-acid pH inside a scenario that already contains 0.1 mol/L HCl.

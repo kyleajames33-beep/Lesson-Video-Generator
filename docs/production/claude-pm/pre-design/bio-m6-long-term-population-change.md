@@ -84,3 +84,14 @@ Recall M6 gene pools and biotechnology. This list uses the published Module 5 vi
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L19: the cited finch paper does not report the claimed mutation rate or diversity-depletion calculation. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L18 assigns a global agriculture freshwater-withdrawal statistic to the Borlaug wheat programme and gives an unverified CGIAR report attribution. Use a sourced agricultural comparison without a single-programme causal claim. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L19 capstone model answer overstates permanence: an early-embryo edit can be mosaic; herbicide tolerance is not necessarily removed by selection without herbicide; plastid transformation can still have rare paternal transmission; and laboratory reversal-drive demonstrations do not prove reversal of an established wild drive. Use the source-checked corrections in the draft before teaching a gene-drive evaluation.
+## Further site corrections for Brief 76
+
+L18 explains Golden Rice uptake by lack of revenue alone; the Philippines approval and later court hold need to be stated. L19 claims an unsupported 200–400-generation finch-variation exhaustion result and inevitable convergence on one genotype. See [the exact draft pairs](../site-fixes-draft-m6.md).

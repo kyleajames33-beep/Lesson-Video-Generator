@@ -39,9 +39,9 @@ The extracts record no named mnemonic unless shown above. Keep any useful contra
 
 ## 3. Number and science check
 
-For lactic acid at equivalence, 0.100 mol/L lactate and Kb = 1.0 × 10⁻¹⁴/(1.4 × 10⁻⁴) give pH 8.43. The unknown HA case at equivalence has 0.0500 mol/L conjugate base; pKa 4.57 gives pH about 8.64, not the page’s 7.52. L17 consolidation also has a starting-pH inconsistency: 0.0250 mol/L strong acid starts near pH 1.60, not 1.70. Relevant site-correction register entries: L16. Use the corrected statements in that register. Source for flagged corrections: [Module 6 site corrections](../site-corrections-m6.md).
+For lactic acid at equivalence, 0.100 mol/L lactate and Kb = 1.0 × 10⁻¹⁴/(1.4 × 10⁻⁴) give pH 8.43. The unknown HA case at equivalence has 0.0500 mol/L conjugate base; pKa 4.57 gives pH about 8.63, not the page’s 7.52. L17 consolidation also has a starting-pH inconsistency: 0.0250 mol/L strong acid starts near pH 1.60, not 1.70. Relevant site-correction register entries: L16. Use the corrected statements in that register. Source for flagged corrections: [Module 6 site corrections](../site-corrections-m6.md).
 
-**Site correction:** Site L16 gives equivalence pH 7.52 for a weak acid of pKa 4.57 at 0.0500 mol/L conjugate base. It should be about 8.64. See [Module 6 site corrections](../site-corrections-m6.md) for the source and replacement statement.
+**Site correction:** Site L16 gives equivalence pH 7.52 for a weak acid of pKa 4.57 at 0.0500 mol/L conjugate base. It should be about 8.63. See [Module 6 site corrections](../site-corrections-m6.md) for the source and replacement statement.
 
 ## 4. Exam traps and student mistakes
 
@@ -68,3 +68,16 @@ Recall M6 indicators, Ka and titration. This list uses the published Module 5 vi
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L16 and L17: the stated L16 case implies pH 2.79 initially and about 8.63 at equivalence. The L17 strong-acid case starts at pH 1.60. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+The named 2003 AstraZeneca rosuvastatin analysis has no matched primary record in this check; retain the generic half-equivalence method.
+
+L16 worksheet 02: tartaric acid is diprotic. For its stated quantities and pKa values, pH is about 3.69 after one equivalent of NaOH at 25 mL and about 8.46 after two at 50 mL. The first equivalence is not pH 8.8; redraw the curve and indicator answer before reuse.
+
+L16 embedded Q8 omits the starting acid volume and combines pKa 4.57 with a starting pH 3.52, inconsistent with its 0.1000 mol/L answer. For 20.00 mL acid and the stated equivalence data, the starting pH is about 2.79. The draft supplies a corrected question stem.
+## Further site corrections for Brief 76
+
+L16 and L17: weak-acid/weak-base equivalence pH depends on Ka and Kb and is not always 7. On an idealised titration curve, equivalence is near the middle of the steep rise, not its bottom. See [the exact draft pairs](../site-fixes-draft-m6.md).

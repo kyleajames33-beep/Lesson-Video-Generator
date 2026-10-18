@@ -917,4 +917,53 @@ Created `public/assets/chemistry/p01-iron-tube-diluted-v2.png`, `public/assets/c
 
 Uploaded three owner-approved MP4s after their SHA-256 hashes matched the brief: C13 https://youtu.be/4IYt7nemcRI, P03 https://youtu.be/cY7hnSTN1uY, and corrected C14 https://youtu.be/UMgrHQaLSH8. All three are Public, HD complete, in the Chemistry Module 5 playlist, with measured English (Australia) captions, Education category and AI disclosure. The C13 and P03 descriptions start with the checked site lesson 16 link and quote the full 2017 syllabus dotpoint with its three example bullets. C14 v2 keeps the old metadata and moves its final chapter to 9:02.
 
-Updated `docs/production/claude-pm/youtube/wave4-metadata-draft.json` and `docs/production/claude-pm/youtube/wave4-uploads.json`. The public Manual playlist currently has the old C14 at 17, C13 at 18, P03 at 19 and corrected C14 at 20. No site or embed record points to the old C14 ID. Permanent deletion of the old C14 is pending the action-time confirmation required by Computer Use; after deletion, C13, P03 and corrected C14 will be at 17, 18 and 19. Chemistry P01 remains held for its separate fix. No remaining upload work. Question for Claude: none beyond the old C14 deletion confirmation.
+Updated `docs/production/claude-pm/youtube/wave4-metadata-draft.json` and `docs/production/claude-pm/youtube/wave4-uploads.json`. YouTube Studio confirmed permanent deletion of the old C14 (zIYzqE5XbaU). The public Manual playlist now shows C13 at 17, P03 at 18 and corrected C14 at 19. No site or embed record pointed to the old C14 ID. Chemistry P01 remains held for its separate fix. Nothing remains unfinished for brief 28o. Question for Claude: none.
+
+### Brief 75: website embed manifest refresh (18 October 2026)
+
+Created `docs/production/claude-pm/website-embeds/manifest.json`, `README.md`, `build_manifest.py` and 25 lesson-page snippets under `website-embeds/subjects/`. The manifest covers all 31 current Public videos across upload waves 1 to 4, excluding the deleted C14 version. It has 34 placements because Biology G01 fits four site lessons. Each placement was matched to a real heading in the read-only site checkout. The snippets use the site's callout markup, lazy iframes on `youtube-nocookie.com`, a short caption and a direct YouTube link. Checked unique video IDs, page and heading existence, published caption status and no em dashes in the output. No site file was edited. Nothing was blocked. Question for Claude: none.
+
+### Briefs 65, 74 and 81: published channel metadata (18 October 2026)
+
+Prepared clean site links and complete official 2017 syllabus quotations for all 31 current Public records in the four upload ledgers. The Chemistry syllabus ledger now includes the previously omitted Ka/pKa bullet: 69 Chemistry points; Biology remains 58. The official DOCX wording and quoted upload metadata were checked. Studio saved or already had the link and revised quote for all 31 Public videos, each checked after reload. `youtube/channel-audit-2026-10.md` keeps a row per video and distinguishes local preparation from live verification. Chapters, playlist positions and advanced settings still need a full live audit. External links remain plain text until the owner completes YouTube's one-off channel verification.
+
+### Brief 77: Module 5 extra practice (18 October 2026)
+
+Created `practice-bank/m5/index.md` and 31 lesson files with 93 HSC-style questions, criteria and sample answers. Compared against existing site and video prompts, recalculated numeric answers and checked copy. Local authoring is complete. Owner review is pending before site publication.
+
+### Brief 78: published caption QA and replacement (18 October 2026)
+
+Created 31 corrected SRT files and `youtube/captions-qa-2026-10.md`. The 5,589 cues satisfy the stated two-line, 42-character, timing and no em-dash checks; narration and audio were unchanged. Uploaded and published all 31 English (Australia) replacement tracks in YouTube Studio. Studio confirmed each publication; B3B's published date and Biology G01's corrected first cue were separately read back. Full public playback remains a human viewing check.
+
+### Brief 79: Year 11 Biology FA1 plates (18 October 2026)
+
+All 34 FA1 packs and 25 recurring plate groups are resolved in `assets/brief79-handin.md`: 15 new transparent plates plus inspected reuse or code-native diagrams. FA2 continued through L02 with two more plates; 23 groups from L03 onward remain. Provenance and 200 px QA are recorded. The 17 PNGs are Git-ignored local media and need transfer or explicit staging before another-computer production.
+
+### Brief 80: Module 6 route plate gaps (18 October 2026)
+
+Completed `assets/m6-plate-gaps.md` for all 47 route videos and generated 12 transparent Module 6 plates. Provenance, visual QA, exact hashes and the local archive are in `assets/brief80-provenance.json` and `assets/brief80-media-checkpoint.json`. The archive is Git-ignored and needs transfer before another-computer production. Scene authors still need code-drawn mechanism and motion decisions.
+
+### Brief 28p: B7, B8 and B11 publication (18 October 2026)
+
+Verified the three approved MP4 SHA-256 hashes against the brief, checked local captions and site lessons, and prepared their metadata and corrected captions in `youtube/wave4-metadata-draft.json`. The videos are not uploaded. Each has an unpublished prerequisite in the route, so public release awaits the owner's order decision.
+
+### Brief 76: Module 6 site science sweep (18 October 2026)
+
+`site-fixes-draft-m6.md` and the matching pre-design notes are in progress. The draft records exact, sourced old/new fixes from lesson pages and answer keys; the site checkout remains read-only. All 38 lesson pages and their embedded practice and review JSON have been screened, with a statement-by-statement body pass still underway. Do not treat the draft or pages as production approved yet.
+Brief 79 media transfer checkpoint: `assets/brief79-media-checkpoint.json` records a verified 19-member archive at `out/archives/brief79-y11-biology-plates-2026-10-18.zip`, SHA-256 `6bbe9327830a78b15b9cfcda2297537d9228cb1531175d969e16fb4691c7772f`.
+
+### Brief 74: live channel audit follow-up (18 October 2026)
+
+Read back all 31 Public titles, descriptions, chapters, playlist memberships, Education category, audience setting and AI disclosure in YouTube Studio. Both public playlist pages follow the relative Module 5 route order among currently published videos. Twenty-four descriptions have chapters with locally valid timing. Seven early videos have no chapters and need owner review. The published caption tracks still need playback and visual checking against the voiced videos. The row-by-row evidence and remaining work are in `youtube/channel-audit-2026-10.md`.
+
+### Brief 76: Module 6 site science sweep hand-in (18 October 2026)
+
+Completed the read-only draft `site-fixes-draft-m6.md` after checking all 38 lesson bodies, worked examples, embedded practice and answers, all 38 matching review files, and both directly linked boss banks. It records 395 exact old/new corrections, 238 Chemistry and 157 Biology, with every old string verified in the named file. Separate worksheets and `bank.json` files were sampled but not fully audited. Owner review and site application remain open.
+
+### Briefs 42 and 74: seven early chapter lists (18 October 2026)
+
+Computed scene-timed chapters for the seven Public videos that lacked them and updated the wave 1 to 3 upload records. Each list has eight or nine chapters, starts at 0:00 and gives every chapter at least 10 seconds. Saved all seven in Studio and read each back after reload. All 31 Public descriptions now have chapter lists. Public playback and caption fit still need review.
+
+### Brief 82: first four Module 6 designs (18 October 2026)
+
+Created 16 transparent 2000 px ink and watercolour plates in `public/assets/chemistry/` and `public/assets/biology/`. `assets/brief82-provenance.json` records generation and hashes; `assets/brief82-qa/` contains cream, checker and aligned-pair views. A verified 54-member Git-ignored transfer archive is recorded in `assets/brief82-media-checkpoint.json`. The independent error-only check `checks/codex-check-82.md` gives eight corrections across the four designs. Added 18 exact, sourced findings to `site-corrections-m6.md`. The design findings need resolution before voicing; the site checkout remains unchanged. The edited plate pairs show slight edge movement, most visible in the limewater rack, for playback review.

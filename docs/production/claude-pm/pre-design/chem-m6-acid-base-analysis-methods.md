@@ -75,3 +75,16 @@ Recall M6 titration, conductometry and pH. This list uses the published Module 5
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L19: the stated vinegar pH and Ka give about 0.884 mol/L or 5.3% by mass. Read the weak-acid conductometric endpoint from intersecting trends. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L19 exam worksheet 04: the given probe voltage implies vinegar pH 5.00, incompatible with its titration result of 0.930 mol/L. Use the corrected voltage near −60 mV and the exact reverse-Ka calculation in the draft.
+
+The Chemistry Module 6 question bank treats one example industrial licence's 6.5–8.5 pH range as universal law and attributes an unlocated 2018 vinegar audit to FSANZ. Standard 2.10.1 instead sets a minimum of 40 g/kg acetic acid. Use the exact item corrections in [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L19 embedded pH-probe answer describes the glass as permeable to H⁺. Its hydrated surfaces respond to H⁺ activity, and the glass separates inner and outer solutions. The calibration activity also swaps the pH 7 zero point and pH 4 slope roles. Correct both in the draft before teaching the method.
+## Further site corrections for Brief 76
+
+L19: atmospheric SO₂ forms sulfuric acid through oxidation and further reactions; pH 5.6 is a rough clean-rain reference, not a universal water threshold. Industrial discharge pH follows the applicable licence. See [the exact draft pairs](../site-fixes-draft-m6.md).

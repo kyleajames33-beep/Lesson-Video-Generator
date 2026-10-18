@@ -60,3 +60,7 @@ Recall [B6a](../lessons/bio-m5-b06a.md). This list uses the published Module 5 v
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L04 worked answers classify every inversion and translocation as material preserving. Specify balanced rearrangements; unbalanced rearrangements can gain or lose DNA. A balanced carrier often has no symptoms, but a breakpoint can interrupt a gene or alter expression. Chromosomal tests can detect rearrangements; karyotyping is not the only method. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).

@@ -64,3 +64,12 @@ Recall [C1](../lessons/chem-m5-c01.md). This list uses the published Module 5 vi
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L04: the 1956 Clean Air Act did not mandate Ca(OH)₂ scrubbing in every furnace. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L04 exam worksheet 04: SO₂ is an acidic oxide in the displayed scrubber equation. Do not label it a Brønsted-Lowry proton acceptor.
+## Further site corrections for Brief 76
+
+L04: anhydrous ammonia can be injected directly into soil as fertiliser. Two NH₃ per H₂SO₄ are needed for ammonium sulfate; a 1:1 ratio can make ammonium hydrogen sulfate. Discharge pH is governed by the applicable licence, not a universal 6.5–8.5 law. Exact replacements and sources are in [the site fix draft](../site-fixes-draft-m6.md).

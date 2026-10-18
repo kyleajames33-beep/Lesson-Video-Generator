@@ -61,3 +61,6 @@ Recall [B7](bio-b7-transcription.md), [B8](bio-b8-translation.md). This list use
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+## Further site corrections for Brief 76
+
+L19 says resistance limits every gene drive built so far. Resistance is an important possibility but depends on design and setting; some laboratory cage studies did not detect it during suppression. See [the exact site fix draft](../site-fixes-draft-m6.md).

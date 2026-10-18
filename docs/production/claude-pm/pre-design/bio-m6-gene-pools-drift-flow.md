@@ -59,3 +59,9 @@ Recall [B6a](../lessons/bio-m5-b06a.md), [B10](bio-b10-inheritance-patterns.md).
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L07 worksheet 02: a typhoon reducing an established atoll population is a bottleneck, not a founder event. One heterozygote among 20 diploid survivors gives allele frequency 1/40 = 0.025, not 0.20. The table needs eight copies of the allele among survivors to support 0.20. See [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+The Biology bank item `bio-y12-m6-l07-q9004` requires drift as the likely cause of a directional allele-frequency rise, while its own explanation says selection cannot be distinguished from the time series alone. Credit both as plausible until fitness or replicate-population evidence is given.

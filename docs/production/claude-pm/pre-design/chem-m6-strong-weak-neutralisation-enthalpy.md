@@ -65,3 +65,9 @@ Recall [G01](../lessons/g01), M6 neutralisation enthalpy. This list uses the pub
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L10: Ka alone cannot rank neutralisation enthalpies. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L10 embedded Q6 labels 0.0500 mol H₂O formed by NH₃ + HCl, although its molecular equation forms ammonium chloride without water. Report the measured heat per mole of NH₃ reacted. The difference from the strong/strong reference cannot be assigned entirely to NH₃ ionisation, and Q7's additive differences are not a general rule. See the draft.

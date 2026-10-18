@@ -77,3 +77,12 @@ Recall [B1](../lessons/bio-m5-b01.md), [B6a](../lessons/bio-m5-b06a.md). This li
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L08 cites 14,400-year-old bread-like remains at Shubayqa 1 beside yeast fermentation, but the original archaeological study does not establish fermentation or leavening. Pasteur's exact sealed-flask protocol in the site page is unverified; retain his broader fermentation contribution. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+## Site corrections for Brief 76
+
+L08 worked answers use the early insulin example as if an intact human insulin gene was placed into bacteria with an exactly specified outcome. The original route expressed synthetic A and B chain coding sequences separately. They also conflate unintended effects of an edit at the intended site with off-target changes. Use the exact replacements and sources in [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L09 worked ethics answer treats every Bt cotton seed as patented and every farmer as unable to save it. Patent and licence rules vary by product and jurisdiction. Use the qualified replacement in the draft.

@@ -84,3 +84,16 @@ Recall [C1](../lessons/chem-m5-c01.md), [C5](../lessons/chem-m5-c05.md). This li
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L06 exam worksheet 04 calls HCN's low-conductivity, high-pH result a very high Ka. This reverses the acid-strength relationship; the corrected term is very low Ka. See [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+The L06 worksheet answer key reverses the concentration comparison: about 0.0566 mol/L acetic acid, not less than 0.001 mol/L, is needed to match the pH of 0.001 mol/L HCl. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L06 embedded practice equates the ion-count ratio with a measured conductivity ratio. Charge and ion mobility also matter, so retain the qualitative strong versus weak comparison and remove the unsupported exact `15×` claim. See the draft.
+## Further site corrections for Brief 76
+
+L05: the ionised fraction of a weak acid changes with dilution even when Ka at fixed temperature does not. The memorised four hydroxides are not every strong base; LiOH and Sr(OH)₂ are further examples. Mg(OH)₂ has low solubility, but its dissolved fraction dissociates into ions. See [the exact draft pairs](../site-fixes-draft-m6.md).
+
+L05 worked example: 0.001 mol/L acetic acid with Ka = 1.8 × 10⁻⁵ is about 12.5% ionised by the quadratic calculation, not 1.3%.

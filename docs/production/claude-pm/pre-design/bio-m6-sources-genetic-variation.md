@@ -58,3 +58,9 @@ Recall [B4](../lessons/bio-m5-b04.md), [B6a](../lessons/bio-m5-b06a.md). This li
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L06 dates the Grant finch study to 1977; it began in 1973. Its precise 17% beak-depth increase and 0.79 heritability figures are not substantiated by the cited Princeton material. Use the documented selection pattern without those figures unless an original study is checked. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L06 worked responses claim mutation is the only source of variation in asexual populations, despite also naming horizontal gene transfer. Teach both processes for prokaryotes. The claim that mutation supply usually limits adaptation is too broad; existing variation can support adaptation. Use the exact draft fixes.

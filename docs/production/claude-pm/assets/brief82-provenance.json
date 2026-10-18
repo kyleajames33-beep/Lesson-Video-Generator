@@ -1,0 +1,438 @@
+{
+  "brief": 82,
+  "date": "2026-10-18",
+  "part": "plates",
+  "method": "built-in imagegen generation and targeted imagegen edits, followed by alpha and canvas packaging with Pillow",
+  "records": [
+    {
+      "path": "public/assets/chemistry/m6-litmus-red-v1.png",
+      "sha256": "9cb03db9c5c3a845a6973307f98578e36f4558d51edd217d863289bb6875dc13",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-3dd72933-69c4-40f5-a2c2-289fa685cbae.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: One pinkish-red litmus paper strip lying diagonally on a small white ceramic tile, viewed at a gentle three-quarter angle. Entire strip is pinkish red. Composition centred, generous 10 percent clear margin. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        403,
+        1800,
+        1597
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-litmus-red-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-litmus-red-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-litmus-blue-v1.png",
+      "sha256": "b7b8588c2ad8b4f07e1d947091e5c4cdd03ec3043561761dd887a8bd3028d1e1",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-1d004a9c-3059-4ef9-b142-476f70f41eef.png",
+      "prompt": "Edit only the litmus paper colour: its lower two thirds are blue where wetted, its upper third remains pinkish red. Keep the ceramic tile, strip position, angle, framing, size, lighting and linework exactly unchanged. Preserve genuine transparent background and remove any external ground shadow. No text.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": "m6-litmus-red-v1",
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        403,
+        1800,
+        1597
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-litmus-blue-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-litmus-blue-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-nh4cl-tube-clear-v1.png",
+      "sha256": "80e62f1328e5cfb6f64d55cc750c1d2d330b389289c0e2215027b9a9b05ad9ce",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-4d1dc3b0-8188-463a-a051-a8eb36b0c1f6.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Long horizontal clear glass diffusion tube, about ten times longer than its width, resting on two small clamp stands. Both ends closed with rubber bungs and small white cotton wool wads just inside each end. Tube entirely clear, no smoke or deposit. Centred landscape composition, 10 percent clear margin. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        829,
+        1800,
+        1172
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-nh4cl-tube-clear-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-nh4cl-tube-clear-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-nh4cl-tube-ring-v1.png",
+      "sha256": "e0546d1b30afa75572e781114601958f04670645effb30d3667aaf24a3478512",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-cd3fdeba-b3fc-44c2-a179-bef9413629d8.png",
+      "prompt": "Add a thin white cloudy ammonium chloride solid ring on the inner wall of the long glass tube about one third of the way from its right end. Keep the entire tube, bungs, cotton wool and clamp stands pixel-aligned, with unchanged framing, size, angle and style. Transparent background. No text.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": "m6-nh4cl-tube-clear-v1",
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        828,
+        1800,
+        1172
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-nh4cl-tube-ring-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-nh4cl-tube-ring-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-marble-chips-acid-v1.png",
+      "sha256": "433db52ed30c894cd1c012782152ee55de2f238e1636b158b7fffcfb2f7aebc4",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-5ff54d6c-9564-40df-b08c-fdd74aa6bf82.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Clear laboratory beaker about half full of clear colourless liquid. Five or six small white-grey marble chips on bottom, steady streams of small gas bubbles rising from them. Match standard upright glass beaker view, centred, with 10 percent clear margin. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        347,
+        200,
+        1653,
+        1800
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-marble-chips-acid-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-marble-chips-acid-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-zinc-acid-v1.png",
+      "sha256": "85168f35bb3685fced354e5126ecb772272a1756153c5543ffe62e1422912025",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-3467d529-129e-48ff-9c71-1011bf5dc5d5.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Clear laboratory beaker about half full of clear colourless liquid. A few dull grey zinc granules on bottom, small modest gas bubbles rising from them, fewer than from magnesium ribbon. Match standard upright glass beaker view, centred, with 10 percent clear margin. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, warning signs, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        333,
+        200,
+        1666,
+        1800
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-zinc-acid-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-zinc-acid-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-copper-acid-v1.png",
+      "sha256": "ccdbd79a6a6abef0e8e15d627bae288628685785d5a764326cd887f7beb9588a",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-a42ffe88-d111-4b59-8d1e-3bd751f83f4b.png",
+      "prompt": "Change only the material at the bottom of this beaker to a few pinkish-orange copper turnings, and remove every gas bubble because copper does not react with dilute non-oxidising acid. Keep the beaker, clear colourless liquid, level, position, angle, size and framing identical. Preserve transparent background. No text.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": "m6-zinc-acid-v1",
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        336,
+        200,
+        1664,
+        1800
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-copper-acid-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-copper-acid-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-limewater-clear-v1.png",
+      "sha256": "74918e99da504c19d2d770290dc1c3bdf90a9be9144b7e4c8cfc065e2f1d1f4d",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-e856d71f-45dc-4f12-ac7d-a7d7777dbae0.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: A glass test tube upright in a small wooden rack, about half full of clear colourless liquid. A narrow bent glass delivery tube enters from above, dips into the liquid, with a few tiny bubbles at its tip. Three-quarter view, simple and scientifically plausible. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, warning signs, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        522,
+        200,
+        1480,
+        1800
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-limewater-clear-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-limewater-clear-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-limewater-milky-v1.png",
+      "sha256": "59080f3a09135a8db7bfce9dea0a441879026845e1040e3cb20375ab5d85fef3",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-99df7563-ea3f-44e6-8b09-932b6066c549.png",
+      "prompt": "Change only the liquid inside this test tube from clear and colourless to cloudy milky white. Keep the delivery tube, glass tube, wooden rack, bubbles, position, angle, size and framing identical. Preserve transparent background. No text.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": "m6-limewater-clear-v1",
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        520,
+        200,
+        1480,
+        1800
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-limewater-milky-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-limewater-milky-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-splint-pop-v1.png",
+      "sha256": "5f4f9c8ead51b0e61247591f58617bf065d46e9aa10f52b3c4f47e03425aa215",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-98b0a432-ba92-474c-be40-ef14b04cd920.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: A test tube held mouth-up in a small retort clamp on a stand. A few grey metal granules at the bottom fizz in clear acid, small bubbles rising. A thin wooden splint rests across the top with its burning tip at the mouth, making a small brief orange-yellow flame burst at the mouth. No hand. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        510,
+        200,
+        1489,
+        1800
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-splint-pop-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-splint-pop-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/chemistry/m6-fertiliser-granules-v1.png",
+      "sha256": "de364efd86c82288f5d80cae09e43775fee35cd7e03e3e90742978439a4c2933",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-4d90db8a-cbc3-4e66-9aa2-e82ab6eb634e.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: A small loose pile of white crystalline ammonium sulfate fertiliser granules in a small plain open scoop. Granules visibly crystalline, no bag or branding. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        493,
+        1800,
+        1507
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-fertiliser-granules-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-fertiliser-granules-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-agar-dish-top-v1.png",
+      "sha256": "20bba403e9243d23033dd11dda31d48eb9c722f356b4718557f9e8a3d46581e2",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-c076591d-27ba-4835-95f0-f59132fd7704.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Glass Petri dish seen directly from above, round and symmetrical, containing smooth pale amber nutrient agar. No colonies, discs, marks or irregularities on agar surface. Glass rim and faint lid edge visible. Centred with 12 percent clear margin. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        215,
+        1800,
+        1784
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-agar-dish-top-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-agar-dish-top-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-velvet-replica-block-v1.png",
+      "sha256": "f349e5381ece4a85debc0b5c5a353c7133ff7bbc96164635f5a0e0f8602ecdf1",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-6fa5357d-e903-4b7c-b3bd-d7494dc843ba.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Replica-plating block for transferring bacterial colony patterns: short cylindrical wooden block, slightly narrower than a Petri dish, with a square of dark velvet cloth stretched over its flat end and held by a metal ring. Three-quarter view from slightly below so velvet face is visible. No dish or hands. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        340,
+        1800,
+        1659
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-velvet-replica-block-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-velvet-replica-block-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-granite-outcrop-v1.png",
+      "sha256": "ecf6764c48b53d926990563bf26067d26dfd19fbf1f219ba3edac5cca0d387d1",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-e3bd029d-59e0-4db1-a751-2e188359b1e0.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Weathered grey and pink speckled granite boulder or small outcrop with a visible crack. A few tufts of dry grass at its base, cut off cleanly. No ground plane, gas, glow or symbols. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        472,
+        1800,
+        1527
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-granite-outcrop-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-granite-outcrop-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-mouldy-peanuts-v1.png",
+      "sha256": "cf5fa38202ed468dcd2b7b9519b7cd29537757c15347a0cd8b8c1beca0037ef0",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-4765356a-b490-40e2-9911-dd70e3ade58c.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: Small heap of shelled peanuts, several with patches of yellow-green powdery Aspergillus mould, with a few cracked peanut shells among them. Realistic olive and yellow-green mould, not black. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, warning signs, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        502,
+        1800,
+        1497
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-mouldy-peanuts-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-mouldy-peanuts-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-uv-cabinet-v1.png",
+      "sha256": "239a6e0648cb68559bdf66e322528e4a1bfd4664446274448b5866dc6424d106",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a14ea3-45d2-7b52-8a87-fdb96a28d2b3\\exec-a002cea1-f87c-4096-a2db-f9af556a4d29.png",
+      "prompt": "Use case: scientific-educational. Asset type: HSC science textbook video plate. Primary request: School laboratory ultraviolet cabinet: closed metal box with an open front hatch, UV tube lamp fixed under its ceiling giving a faint violet glow, one open Petri dish of pale agar on its floor directly under the lamp. Three-quarter view, no markings. Style: precise naturalistic black ink and warm watercolour, matching existing house plates. Isolated cutout on a genuinely transparent background with real alpha. Centred, at least 10 percent clear margin. No backdrop, ground shadow, text, labels, numbers, arrows, logos, warning signs, hands, people or faces. Clean edges, high detail, no halo.",
+      "tool": "built-in imagegen",
+      "retakes": 0,
+      "editBase": null,
+      "packaging": "Alpha threshold under 24, proportionally sized onto 2000 px transparent canvas, no artwork redrawn",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        200,
+        487,
+        1800,
+        1512
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief82-qa/m6-uv-cabinet-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief82-qa/m6-uv-cabinet-v1-checker-200.png"
+    }
+  ],
+  "pairs": [
+    [
+      "m6-litmus-red-v1",
+      "m6-litmus-blue-v1"
+    ],
+    [
+      "m6-nh4cl-tube-clear-v1",
+      "m6-nh4cl-tube-ring-v1"
+    ],
+    [
+      "m6-limewater-clear-v1",
+      "m6-limewater-milky-v1"
+    ]
+  ]
+}

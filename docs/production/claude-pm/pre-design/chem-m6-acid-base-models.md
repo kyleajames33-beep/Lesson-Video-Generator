@@ -66,3 +66,9 @@ Recall [C1](../lessons/chem-m5-c01.md), [C5](../lessons/chem-m5-c05.md). This li
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L01: retain independent 1923 Brønsted-Lowry work, but drop the unsupported same-day and ammonia-forced-both narrative. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L01 body gives the ammonium sulfate reaction with one NH₃, leaving nitrogen and hydrogen unbalanced; use `2NH₃ + H₂SO₄ → (NH₄)₂SO₄`. It also calls the gas-phase HCl/NH₃ case definitive historical proof without a source; use it as an illustration, not the sole cause of the model. See the draft.

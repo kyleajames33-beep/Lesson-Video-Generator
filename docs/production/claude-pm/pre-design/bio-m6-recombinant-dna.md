@@ -64,3 +64,16 @@ Recall [B7](bio-b7-transcription.md), [B8](bio-b8-translation.md). This list use
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L16: the original recombinant insulin work used synthesised DNA for the A and B chains, not a cDNA-library start. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L16 uses the 1.5 million Australians with diagnosed diabetes figure as if all use insulin; remove that claim.
+
+The L16 review JSON short-answer key instructs a direct cut of the human insulin gene from genomic DNA. Use an intron-free coding sequence; the original bacterial insulin demonstration used synthetic A- and B-chain DNA. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L16 worksheets 02 and 03 repeat the direct genomic-gene cut and imply E. coli secrete finished insulin. Correct the coding DNA and protein processing steps before using either worked example.
+## Further site corrections for Brief 76
+
+L16 requires the same restriction enzyme for ligation, although compatible ends suffice, and treats antibiotic survival as proof of the intended insert. Its final insulin example should use the original synthetic A and B chain route. See [the exact draft pairs](../site-fixes-draft-m6.md).

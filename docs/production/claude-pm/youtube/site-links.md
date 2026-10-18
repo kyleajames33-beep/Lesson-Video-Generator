@@ -1,6 +1,6 @@
 # YouTube to HSCScience lesson links
 
-Checked against the Module 5 route, the lesson designs, the site extracts, the matching `.sa.html` files and the site clean URL redirects on 18 October 2026. Published rows are proposed links pending YouTube Data API update and read-back. Draft rows were added to the metadata file.
+Checked against the Module 5 route, the lesson designs, the site extracts, the matching `.sa.html` files and the site clean URL redirects on 18 October 2026. All 31 published links are prepared in the local upload records and confirmed by Studio read-back. Draft rows were added to the metadata file.
 
 | Lesson ID | YouTube URL | Site lesson URL | Match |
 | --- | --- | --- | --- |
@@ -24,11 +24,17 @@ Checked against the Module 5 route, the lesson designs, the site extracts, the m
 | `chem-m5-c09` | https://youtu.be/9TxH_y3ZOdU | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson13 | Design names site lesson 13 for temperature and K; file and clean redirect checked. |
 | `chem-m5-c06b` | https://youtu.be/Zs1oO5eCIqc | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson10 | Design names site extract L10; file and clean redirect checked. |
 | `bio-m5-b06a` | https://youtu.be/2vsAqgI-1NI | https://hscscience.com.au/subjects/biology/year12/module5/lesson09 | Design names site extract L09; file and clean redirect checked. |
-| `chem-m5-g03c` | https://youtu.be/UPoHGWWm9MA | Review needed | Practice combines K-expression and ICE work from site lessons 09 and 10. Skipped. |
-| `chem-m5-g03d` | https://youtu.be/wSSh97iXkio | Review needed | Practice combines ICE and advanced cases from site lessons 10 and 11. Skipped. |
-| `chem-m5-g03b` | https://youtu.be/A0Z2-OLzRCI | Review needed | Five-type overview spans site lessons 09 to 12; no single lesson is primary. Skipped. |
+| `chem-m5-g03c` | https://youtu.be/UPoHGWWm9MA | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson11 | Practice includes site lesson 11's ICE cases; file and clean redirect checked. |
+| `chem-m5-g03d` | https://youtu.be/wSSh97iXkio | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson11 | Practice extends site lesson 11's ICE cases; file and clean redirect checked. |
+| `chem-m5-g03b` | https://youtu.be/A0Z2-OLzRCI | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson10 | Practice's five-type overview begins with site lesson 10's equilibrium calculations; file and clean redirect checked. |
 | `bio-m5-b03b` | https://youtu.be/btrFMU7Yhxc | https://hscscience.com.au/subjects/biology/year12/module5/lesson05 | Design names site extract L05; file and clean redirect checked. |
 | `chem-m5-c07` | https://youtu.be/8hZ3MVi7kHU | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson07 | Design names site extract L07; file and clean redirect checked. |
+| `bio-m5-b09` | https://youtu.be/6BhGJlXbKCA | https://hscscience.com.au/subjects/biology/year12/module5/lesson14 | Design names site extract L14; file and clean redirect checked. |
+| `chem-m5-c11` | https://youtu.be/PQ9nuqM4b-Y | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson15 | Design names site extract L15; file and clean redirect checked. |
+| `bio-m5-g01` | https://youtu.be/QcSZ2Wn0CE0 | https://hscscience.com.au/subjects/biology/year12/module5/lesson06 | Practice covers site lessons 06, 08, 10 and 11; all four links are in its local description. |
+| `chem-m5-c13` | https://youtu.be/4IYt7nemcRI | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson16 | Design names site extract L16; file and clean redirect checked. |
+| `chem-m5-p03` | https://youtu.be/cY7hnSTN1uY | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson16 | Practical follows site lesson 16; file and clean redirect checked. |
+| `chem-m5-c14` | https://youtu.be/UMgrHQaLSH8 | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson17 | Design names site extract L17; file and clean redirect checked. |
 | `chem-m5-c06` | Unpublished draft | https://hscscience.com.au/subjects/chemistry/year12/module5/lesson10 | Route and site extract L10; file and clean redirect checked. |
 | `bio-m5-b05a` | Unpublished draft | https://hscscience.com.au/subjects/biology/year12/module5/lesson07 | Route and site extract L07; file and clean redirect checked. |
 | `bio-m5-b05b` | Unpublished draft | https://hscscience.com.au/subjects/biology/year12/module5/lesson08 | Route and site extract L08; file and clean redirect checked. |
@@ -38,4 +44,4 @@ Checked against the Module 5 route, the lesson designs, the site extracts, the m
 
 ## Pending
 
-The published descriptions have not been changed or fetched again. This workspace has no configured YouTube Data API OAuth credentials or API client. 3 published videos were skipped for uncertain matching: `chem-m5-g03b`, `chem-m5-g03c`, `chem-m5-g03d`.
+All 31 published descriptions were updated or found current and read back in Studio. The workspace has no configured YouTube Data API OAuth credentials or API client, so the work used Studio. The G03 practice videos use the most relevant lesson link in the local records; more site lessons can be added if the owner prefers.

@@ -65,3 +65,13 @@ Recall [G01](../lessons/g01). This list uses the published Module 5 video ledger
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L03: only specific errors such as heat loss have a predictable direction. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+The L03 review JSON also duplicates a correct multiple-choice enthalpy option and says Mg(OH)2 antacid dosing cannot overshoot. Correct both assessment claims before reuse. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+The L03 worksheet calls an extrapolated -61.9 kJ/mol result closer to -57 than the measured -52.7, but the respective absolute differences are 4.9 and 4.3 kJ/mol. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L03 embedded practice overgeneralises the measured enthalpy ranking and calls sparingly soluble Mg(OH)₂ a weak base. The product comparison also infers a dissolution energy sign and universal heat ranking from temperature rises without sufficient reaction amounts. Use the corrected wording in the draft.

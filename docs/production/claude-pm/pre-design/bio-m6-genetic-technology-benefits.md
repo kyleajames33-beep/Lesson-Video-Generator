@@ -60,3 +60,12 @@ Recall M6 recombinant DNA and biodiversity. This list uses the published Module 
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L17 exam worksheet 04 repeats the isolated human insulin gene shortcut. Use an intron-free coding sequence and describe the expression route accurately; see [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L17 conflates the WHO genome-editing advisory committee with the separate International Commission convened by the US National Academies and UK Royal Society. Correct the institutional history before using the CCR5 case. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+## Further site corrections for Brief 76
+
+L10 HGP-era predictions for routine gene therapy were narrower than the site's `within a decade` claim. The site also calls spinal muscular atrophy previously untreatable, overlooking earlier treatment options. See [the exact site fix draft](../site-fixes-draft-m6.md).

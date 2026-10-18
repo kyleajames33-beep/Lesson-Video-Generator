@@ -85,3 +85,12 @@ Recall [B1](../lessons/bio-m5-b01.md), M6 gene pools. This list uses the publish
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L11: use the Frozen Zoo organisation figures and distinguish the embryo-transfer route from stem-cell-derived gamete research. Use the exact old-text and new-text pairs in [the Module 6 site fix draft](../site-fixes-draft-m6.md) before adapting this site case for a video.
+
+L12 exam worksheet 04 says sickle-cell CRISPR therapy replaces dysfunctional haemoglobin. Exa-cel edits a BCL11A enhancer so blood cells make more fetal haemoglobin. Describe the observed fall in crises without promising a cure for every patient.
+## Further site corrections for Brief 76
+
+L11 and L12 worked answers make crop uniformity, land sparing, transgene loss or permanence, and yield reversal sound inevitable. These effects depend on crop, trait, land use, population and comparator. Use [the exact qualified replacements](../site-fixes-draft-m6.md).

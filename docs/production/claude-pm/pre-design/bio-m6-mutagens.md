@@ -62,3 +62,12 @@ Recall [B6a](../lessons/bio-m5-b06a.md). This list uses the published Module 5 v
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+L02 confuses RERF solid-cancer incidence (47% excess relative risk at 1 Gy) with mortality (42%) and claims an unsupported 17% inherited mutation rise. See [the exact Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+L02 extended model answer names mustard gas derivatives as DNA intercalators. Mustard agents alkylate DNA; use acridine dyes for the intercalation/frameshift example in the draft.
+## Further site corrections for Brief 76
+
+L02 UV colony count measures survival or colony formation, not mutation frequency or the exact DNA damage pathway. Its final reflection also misplaces an IARC carcinogen clause onto DNA repair systems. See [the exact site fix draft](../site-fixes-draft-m6.md).

@@ -4,7 +4,7 @@ These six JSON files are brief 45's science content-point ledgers. They were ext
 
 | File | Main points |
 | --- | ---: |
-| `chem-2017-y12.json` | 68 across Modules 5 to 8 |
+| `chem-2017-y12.json` | 69 across Modules 5 to 8 |
 | `bio-2017-y12.json` | 58 across Modules 5 to 8 |
 | `chem-new-y11.json` | 133, including 34 Working scientifically points |
 | `chem-new-y12.json` | 170, including 34 Working scientifically points |

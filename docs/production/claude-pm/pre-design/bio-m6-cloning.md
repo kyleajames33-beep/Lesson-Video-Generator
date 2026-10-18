@@ -62,3 +62,11 @@ Recall [B1](../lessons/bio-m5-b01.md), [B6a](../lessons/bio-m5-b06a.md). This li
 
 - Which one site example best carries this video's main question?
 - Which site correction, if any, must be resolved before the example is voiced?
+
+## Site corrections for Brief 76
+
+The Biology Module 6 bank item `bio-m6-gnt-3-a02` treats Dolly's arthritis and lung disease as evidence cloning caused premature ageing. Roslin does not draw that causal conclusion. Keep the valid low-efficiency point and see [the Module 6 site fix draft](../site-fixes-draft-m6.md).
+
+## Site corrections for Brief 76
+
+L15: the 277 nuclear-transfer attempts include the one that produced Dolly. Roslin found no health condition directly tied to premature ageing. Use [the exact Module 6 site fix draft](../site-fixes-draft-m6.md) before using this case in a video.
