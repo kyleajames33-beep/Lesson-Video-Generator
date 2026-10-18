@@ -967,3 +967,25 @@ Computed scene-timed chapters for the seven Public videos that lacked them and u
 ### Brief 82: first four Module 6 designs (18 October 2026)
 
 Created 16 transparent 2000 px ink and watercolour plates in `public/assets/chemistry/` and `public/assets/biology/`. `assets/brief82-provenance.json` records generation and hashes; `assets/brief82-qa/` contains cream, checker and aligned-pair views. A verified 54-member Git-ignored transfer archive is recorded in `assets/brief82-media-checkpoint.json`. The independent error-only check `checks/codex-check-82.md` gives eight corrections across the four designs. Added 18 exact, sourced findings to `site-corrections-m6.md`. The design findings need resolution before voicing; the site checkout remains unchanged. The edited plate pairs show slight edge movement, most visible in the limewater rack, for playback review.
+
+### Brief 28q: Chemistry P01 upload attempt (19 October 2026)
+
+The owner confirmed upload under YouTube's submission terms. The approved v2 MP4 hash matches `f52d475a9bd4f26a1022014e70c7cbf7e2de71d859b77db44195f6b48d5c6f70`. The lesson 05 link, two exact syllabus quotations and nine chapters are prepared in `youtube/wave4-metadata-draft.json`; `lessons/p01/measured/captions-fixed.srt` contains the reflowed 186-cue track. Studio accepted the file selection and title and description entry, then showed "Daily upload limit reached" and offered one-time verification or a 24-hour wait. It did not create a video link. The upload is not complete or Public, so no `wave4-uploads.json` video record was added. Resume the v2 upload after the limit clears, then publish captions, set Education, audience and AI disclosure, insert after C4b, and read everything back. The full-screen key notes make an end screen unsuitable.
+
+### Briefs 28o, 28p, 28q and 28r: upload follow-up (19 October 2026)
+
+Brief 28o was already complete: C13 https://youtu.be/4IYt7nemcRI, P03 https://youtu.be/cY7hnSTN1uY and corrected C14 https://youtu.be/UMgrHQaLSH8 are Public, and the superseded C14 was deleted. The published records are in `youtube/wave4-uploads.json`.
+
+Checked the seven remaining MP4s against every SHA-256 in briefs 28p, 28q and 28r. All match. Added B10, B12 and G02 titles, descriptions, exact 2017 syllabus quotations, site links and chapters to `youtube/wave4-metadata-draft.json`. B7, B8, B11 and Chemistry P01 metadata was already prepared. Studio still shows "Daily upload limit reached" in the P01 upload dialog and has created no P01 video link. No new video was uploaded or recorded as Public.
+
+When the limit clears, publish Chemistry P01 v2 and Biology B10 first. Biology G02 follows B10, B11 follows B10, and B12 follows B11. B7 needs unpublished B6c; B8 needs unpublished B5b and B7. These route prerequisites must be available before those two public releases. Add each completed upload to `youtube/wave4-uploads.json` only after Studio read-back. No new URLs are available yet.
+
+### Briefs 28p, 28q and 28r: upload readiness check (19 October 2026)
+
+Checked all seven drafted chapter lists against the measured scenes. Each starts at 0:00, stays at least 22 seconds from the next chapter and falls within one second of its scene start. Checked the measured SRT files: 171 to 192 timed cues per video, no cue overlap or non-positive duration. The captions end before the videos' silent key-notes holds. For Chemistry P01, use `lessons/p01/measured/captions-fixed.srt`, the 186-cue reflowed track already prepared after the first upload attempt.
+
+Extracted a 1920 by 1080 thumbnail frame from each exact MP4: `out/explainer/Explainer-chem-m5-p01/youtube-thumbnail.jpg` at 60 seconds; Biology B7 at 90 seconds, B8 at 120 seconds, B10 at 90 seconds, G02 at 30 seconds, B11 at 60 seconds and B12 at 180 seconds, each under its matching `out/explainer/Explainer-<lesson-id>/youtube-thumbnail.jpg` folder. Each JPEG is under 400 KB. Visual checks at 15 to 20 seconds before the end show key notes across each frame, so an end screen would cover study text; skip it for these seven uploads. No source video, narration or alignment changed.
+
+### Brief 83: HSC exam skills research (19 October 2026)
+
+Created `research/exam-skills/README.md`, `glossary.md`, `verb-frequency.md`, `what-markers-reward.md`, `common-faults.md` and `vra-definitions.md`. The frequency audit covers 10 official Chemistry and Biology Section II papers from 2021 to 2025: 189 explicit glossary-command occurrences, with mark values and question numbers. The marking analysis uses 2020 to 2024 guidelines; the fault recurrence audit uses 12 subject-year feedback reports from 2020 to 2025. The NESA glossary and current science definitions are linked, and the difference between current published and 2017 HSC validity wording is recorded. The full glossary definitions could not be copied word for word, so the file gives paraphrases beside the official source link. No lesson script, narration, render or media changed. Question for Claude: none.
