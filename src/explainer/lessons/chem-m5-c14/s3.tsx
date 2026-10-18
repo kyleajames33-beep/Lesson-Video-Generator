@@ -172,7 +172,7 @@ export const SceneAid: React.FC = () => (
 				<Sx x={930} y={560} text="1 : 2" size={40} color={INK_SOFT} hand at={K14.oneTwo} />
 				<Sx x={930} y={640} text="CaF_2: [Ca^{2+}] = s, [F^{−}] = 2s" size={34} color={INK} at={K14.oneTwo + 6} />
 				<Sx x={930} y={740} text="Ksp = s × (2s)^{2} = 4s^{3}" size={48} color={S_INK} at={K14.four} />
-				<Sx x={930} y={796} text="Mg(OH)_2, the other way round: also 4s^{3}" size={30} color={INK_SOFT} weight={600} at={K14.either} />
+				<Sx x={930} y={796} text="Ag_2SO_4 (2 : 1), the other way round: also 4s^{3}" size={30} color={INK_SOFT} weight={600} at={K14.either} />
 			</Fade>
 			<Ring cx={930 + mw('CaF_2: [Ca^{2+}] = s, [F^{−}] = ', 34) + mw('2s', 34) / 2 + 14} cy={628} rx={30} ry={28} at={K14.oneTwo + 20} color={AMBER} seed={4} />
 			<Tag x={96} y={880} w={720} text="pure water, saturated, same temperature" at={K14.four + 20} color={TEAL} />

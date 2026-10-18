@@ -24,13 +24,14 @@ export const ANS = ['Cl^{-}', 'I^{-}', 'SO_4^{2-}', 'CO_3^{2-}', 'OH^{-}'];
 export const CAT_SALT = ['NaNO_3', 'Ca(NO_3)_2', 'Ba(NO_3)_2', 'Pb(NO_3)_2', 'AgNO_3'];
 export const AN_SALT = ['NaCl', 'NaI', 'Na_2SO_4', 'Na_2CO_3', 'NaOH'];
 export type WellKind = 'empty' | 'clear' | 'faint' | 'white' | 'yellow' | 'paleY' | 'cream' | 'brown';
-/** Expected results at 0.1 mol/L, 3 + 3 drops (design Decisions table); rows are cations, columns anions. */
+/** Expected results at 0.1 mol/L stock, 3 + 3 drops, so about 0.05 mol/L of each ion (design Decisions table, Revision 3:
+ * CaSO4, Ca(OH)2, PbCl2 and Ag2SO4 are slightly soluble but still precipitate at 0.05 mol/L); rows are cations, columns anions. */
 export const MATRIX: WellKind[][] = [
 	['clear', 'clear', 'clear', 'clear', 'clear'],
-	['clear', 'clear', 'faint', 'white', 'faint'],
+	['clear', 'clear', 'white', 'white', 'white'],
 	['clear', 'clear', 'white', 'white', 'clear'],
-	['faint', 'yellow', 'white', 'white', 'white'],
-	['white', 'paleY', 'faint', 'paleY', 'brown'],
+	['white', 'yellow', 'white', 'white', 'white'],
+	['white', 'paleY', 'white', 'paleY', 'brown'],
 ];
 
 // ---------- plate geometry: the whole canvas is drawn at (ox, oy) with scale k ----------

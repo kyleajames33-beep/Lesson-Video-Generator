@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b11/measured/lesson.json",
+    "lessonSha256": "8ae3f79cb1f3b32e670d90fa8b2aa7dc5057c5dc9b20ee1ef9bce0d177e22aec"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B10: co-dominance, roan Shorthorn cattle (red C^R C^R, roan C^R C^W, white C^W C^W), the heterozygote looks different from both homozygotes. From B9: dominant, recessive, genotype and phenotype, a ratio is a chance per offspring and large samples come closer to it, Tt and tt notation with tall and short peas. From B8: crossing over swaps segments between homologous chromosomes. From B7: sickle cell begins with one base change, GAG to GTG on the coding strand. From B4: DNA bases A, T, C and G. Year 10 percentages. Not assumed: frequency as a defined measure, denominators, allele frequency, gene pool, SNP, association, sampling limits.",
+    "startsWith": "A sourced sample reports characteristics or variants. The video opens: Here's a herd of a hundred Shorthorn cattle. Sixty-four are red, thirty-two are roan, and four are white.",
+    "stopsAfter": "calculating the frequency of a characteristic as a count over the stated total, and presenting it as a table and a bar chart; calculating an allele frequency by counting copies (two per individual for an autosomal gene); explaining why a recessive phenotype frequency gives only the homozygous recessive genotype frequency, because carriers look like dominant homozygotes; describing a SNP as a one-base difference at a known position, each version an allele, and saying that reading both copies shows the genotype directly; saying that most SNPs change nothing but some change a protein; calculating a SNP allele frequency from genotype counts; comparing two groups to identify a trend and calling it an association, not a cause, with the reason (a nearby DNA difference inherited with it); explaining why one SNP cannot show relatedness; naming sample limits (size, representation, consistent categories); applying all of it to unseen clover leaf-mark counts and unseen SNP genotype counts.",
+    "nextLesson": "collecting and presenting frequency data yourself (route entry bio-m5-p03), then DNA sequencing and profiling (bio-m5-b12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b11.md"
+  ],
+  "teaching": {
+    "task": "How do you work out how common a characteristic or an allele is in a population, and what can SNP data, and their limits, tell you?",
+    "causalExplanation": "Causes: why 4% and 36% are wrong (copies, not animals, 3); why looks fail under complete dominance (carriers look like TT, 4); why reading DNA shows carriers (both copies read, 5); why most SNPs change nothing (non-coding DNA, 6); why an association need not be a cause (close neighbours inherited together, 8); why one SNP proves little (thousands of other differences, 9); why small samples mislead (they bounce, 10). Visible case: one herd, one pea field, one aligned strip, one pair of groups. Video advantage: the herd sorts itself; every allele pours into the pool bar and the white ones light by source; the SNP column is found by a scan; sample dots bounce live. Thinking opportunities: two unseen items with every count on screen. Reading load: one board at a time; scene 3 is the densest frame (grid, pool bar, two working lines), and the grid shrinks before the pool bar fills.",
+    "conversationalApproach": "Conversational, one board at a time, causes before names. Scene 2 shows the count over the total before the word \"frequency\". Scene 3 shows two copies per animal before the word \"allele frequency\". Scene 5 shows the one differing column before naming the SNP, and glosses \"single nucleotide\" and \"polymorphism\". Scene 8 shows the two group bars before the word \"association\". Analogy: None manufactured. The herd is the concrete case for counting, and the aligned DNA rows are the concrete case for SNPs.",
+    "openingDecision": "Thirty-six per cent? Hold that thought, because the answer is neither.",
+    "understandingCheck": "12a uses the site's earlobe item numbers on a non-human trait, the white clover V leaf mark (Revision 2; counts given; frequencies, comparison and one limitation): it tests the denominator trap and a real limitation. 12c is a SNP genotype count (find the allele frequency; then judge whether an association shows cause): it transfers \"count alleles, not people\" to new numbers and tests association against cause. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working on the card, one crossed-out classic mistake. No mark-allocation talk.",
+    "curriculumScope": "\"collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data; analysing single nucleotide polymorphism (SNP)\". Route actions B-frequency-collection and B-frequency-analysis (ledger row p1060, shared with bio-m5-p03). This video presents and analyses data; it does not evidence learner collection, which P03 owns. Update ledger row p1060 (analysis and presentation part) when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Three boards, one at a time. (1) The count board (scenes 1 to 4, 10): the sample on the left as a 10 x 10 grid of small painted plates (cattle or peas), a tally table in the middle (category, count, out of, per cent; computed), a bar chart on the right (bars draw from the table; y axis \"per cent of cattle counted\" or \"per cent of alleles\"; every bar labelled with its value). Under it, the gene pool bar (scene 3): each animal's two allele chips pour into one long bar of 200 cells, red and white chips sorted to each end, with the count computed. (2) The read strip (scenes 5 to 9): rows of coded base tiles in B4's `BasePiece` look, two rows per sample (one per copy), aligned; a column highlight computes the differing position; a genotype tag at the end of each pair. Samples are coded ID cards (\"sample 1\"), never people. (3) The group panel (scenes 8, 9): two allele-bead groups (patients, controls) with frequency bars computed as hits divided by twice the number of people. Amber is the emphasis colour only, as in B9 and B10. Letters for bases are printed in a serif capital on the tiles; base colour is never the only cue.",
+    "transitionPlan": "The herd grid fills and sorts itself by coat colour; the sorted grid slides left and shrinks beside the tally table and bar chart; the gene pool bar pours the allele chips for the copy count; the grid and bar fall away for the pea field; the read strip replaces the count board for the SNP scenes; the group panel carries association and the marker; the bouncing sample dots return to the count board for the limits; the memory aids and the decision chips follow; each attempt clears the board to one card and the feedback shrinks the card to a strip while the working writes on; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "The count board. On \"a hundred Shorthorn cattle\" `HerdGrid` fills a 10 x 10 grid with small plates in a quick ripple (`m5x-cattle-red-v1.png`, `m5x-cattle-roan-v1.png`, `m5x-cattle-white-v1.png` at about 70 px wide, mixed as an example herd; grey tag \"example herd\").",
+      "teachingReason": "Teaches: hook (thirty-two roan cattle).",
+      "narrationCue": "Here's a herd of a hundred Shorthorn cattle. Sixty-four are red, thirty-two are roan,",
+      "motionPurpose": "On the spoken cues: On \"Sixty-four are red\" the grid sorts itself by colour into three blocks, and a counter writes on per cue: \"red 64\", \"roan 32\", \"white 4\". On \"one red allele and one white allele\" one roan plate lifts out, enlarged, with B10's genotype tag \"C^R C^W\" (grey tag \"B10: co-dominance\").",
+      "motionRole": "explain",
+      "onScreenChange": "the count board. On \"a hundred Shorthorn cattle\" `HerdGrid` fills a 10 x 10 grid with small plates in a quick ripple (`m5x-cattle-red-v1.png`, `m5x-cattle-roan-v1.png`, `m5x-cattle-white-v1.png` at about 70 px wide, mixed as an example herd; grey tag \"example herd\"). On \"Sixty-four are red\" the grid sorts itself by colour into three blocks, and a counter writes on per cue: \"red 64\", \"roan 32\", \"white 4\". On \"one red allele and one white allele\" one roan plate lifts out, enlarged, with B10's genotype tag \"C^R C^W\" (grey tag \"B10: co-dominance\"). On \"what fraction\" the question writes on: \"white alleles: what fraction?\" with two chips beside it, \"4%\" and \"36%\", each with a \"?\". The heading writes on: \"Counting a population\".",
+      "motionTools": [
+        "HandText write-on",
+        "HerdGrid",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold two seconds"
+    },
+    {
+      "sceneId": "frequency",
+      "visualDecision": "new",
+      "visualReference": "The sorted grid slides left and shrinks. On \"count divided by the total\" the line \"frequency = count / total counted\" writes on in hand type.",
+      "teachingReason": "Teaches: frequency of a characteristic.",
+      "narrationCue": "Start with the cattle themselves. A frequency tells you how common something is in the",
+      "motionPurpose": "On the spoken cues: `TallyTable` builds one row per cue (computed): \"red | 64 | out of 100 | 64%\", \"roan | 32 | out of 100 | 32%\", \"white | 4 | out of 100 | 4%\", each row lighting its block in the grid. On \"a bar chart\" `FreqBars` draws three bars from the table, each labelled with its per cent, y axis \"per cent of cattle counted (n = 100)\".",
+      "motionRole": "explain",
+      "onScreenChange": "the sorted grid slides left and shrinks. On \"count divided by the total\" the line \"frequency = count / total counted\" writes on in hand type. `TallyTable` builds one row per cue (computed): \"red | 64 | out of 100 | 64%\", \"roan | 32 | out of 100 | 32%\", \"white | 4 | out of 100 | 4%\", each row lighting its block in the grid. On \"a bar chart\" `FreqBars` draws three bars from the table, each labelled with its per cent, y axis \"per cent of cattle counted (n = 100)\". On \"what you divided by\" the \"out of 100\" column rings amber and a tag writes on: \"denominator: cattle counted\".",
+      "motionTools": [
+        "HandText write-on",
+        "TallyTable",
+        "FreqBars",
+        "ScribbleCircle",
+        "DrawPath",
+        "plate slide",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "allele-frequency",
+      "visualDecision": "adjust",
+      "visualReference": "Under the grid, `PoolBar` draws an empty bar of 200 cells (tag \"gene pool: all 200 coat colour alleles\").",
+      "teachingReason": "Explains why 4% and 36% are wrong (copies, not animals).",
+      "narrationCue": "Now the alleles. Every animal carries two copies of the coat colour gene, so a hundred",
+      "motionPurpose": "On the spoken cues: On \"two copies\" every plate in the grid shows two small allele chips beneath it (`AlleleChip`, \"C^R\" or \"C^W\"); on \"two hundred copies\" all the chips pour into the bar (computed count \"200\"). On \"two white alleles, which makes eight\" the four white plates pulse and their eight \"C^W\" chips light in the bar (counter \"4 x 2 = 8\").",
+      "motionRole": "explain",
+      "onScreenChange": "under the grid, `PoolBar` draws an empty bar of 200 cells (tag \"gene pool: all 200 coat colour alleles\"). On \"two copies\" every plate in the grid shows two small allele chips beneath it (`AlleleChip`, \"C^R\" or \"C^W\"); on \"two hundred copies\" all the chips pour into the bar (computed count \"200\"). On \"two white alleles, which makes eight\" the four white plates pulse and their eight \"C^W\" chips light in the bar (counter \"4 x 2 = 8\"). On \"thirty-two more\" the roan plates pulse and their 32 \"C^W\" chips light (counter \"32 x 1 = 32\"). On \"forty white alleles out of two hundred\" the line \"C^W: 40 / 200 = 0.20 = 20%\" writes on, and \"C^R: 160 / 200 = 0.80 = 80%\" under it (computed); `FreqBars` gains a second panel, \"per cent of alleles\", with two bars. On \"Four per cent\" the hook's chip \"4%\" returns with the tag \"white cattle only\" and takes a grey scribble cross; on \"thirty-six\" the chip \"36%\" returns with the tag \"white + roan animals\" and takes a grey scribble cross. Grey tag at the lower right: \"autosomal gene: two copies each\".",
+      "motionTools": [
+        "HandText write-on",
+        "PoolBar",
+        "AlleleChip",
+        "FreqBars",
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "hidden-alleles",
+      "visualDecision": "adjust",
+      "visualReference": "The herd slides off; `HerdGrid` refills with pea plates (`m5x-pea-tall-v1.png` and `m5x-pea-short-v1.png`, 91 tall and 9 short, grey tag \"B9\").",
+      "teachingReason": "Explains why looks fail under complete dominance (carriers look like TT).",
+      "narrationCue": "Cattle make this easy, because every genotype looks different. Peas",
+      "motionPurpose": "On the spoken cues: On \"nine are short\" the nine short plates ring amber and a counter writes \"short 9 / 100 = 9%\". On \"two short alleles\" each short plate gets the tag \"tt\" (computed). On \"genotype frequency of nine per cent\" the line \"tt: 0.09 (9%)\" writes on.",
+      "motionRole": "explain",
+      "onScreenChange": "the herd slides off; `HerdGrid` refills with pea plates (`m5x-pea-tall-v1.png` and `m5x-pea-short-v1.png`, 91 tall and 9 short, grey tag \"B9\"). On \"nine are short\" the nine short plates ring amber and a counter writes \"short 9 / 100 = 9%\". On \"two short alleles\" each short plate gets the tag \"tt\" (computed). On \"genotype frequency of nine per cent\" the line \"tt: 0.09 (9%)\" writes on. On \"hiding a short allele, or not\" two tall plates lift out side by side, tagged \"TT?\" and \"Tt?\", with a \"same look\" bracket. On \"can't count every allele\" the gene pool bar from scene 3 returns empty with most cells marked \"?\" (tag \"can't tell from looks\"). On \"read the DNA\" `m5x-cheek-swab-v1.png` slides in at the right, and a short coded DNA ladder strip (B4 look) unrolls out of it into the next scene.",
+      "motionTools": [
+        "HandText write-on",
+        "HerdGrid",
+        "ScribbleCircle",
+        "DrawPath",
+        "plate slide",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "what-is-a-snp",
+      "visualDecision": "new",
+      "visualReference": "The read strip. Three ID cards (\"sample 1\", \"sample 2\", \"sample 3\"; no people) on the left, each with two rows of nine base tiles (\"copy 1\", \"copy 2\"), aligned: G A C C ?",
+      "teachingReason": "Explains why reading DNA shows carriers (both copies read).",
+      "narrationCue": "Line up the same stretch of DNA from several people, and most bases",
+      "motionPurpose": "On the spoken cues: G A T C, the fifth column filled per sample (sample 1: C and C; sample 2: C and T; sample 3: T and T). On \"most bases match\" a light scan runs along the columns, each column ticking. On \"differ by just one base\" the scan stops at column 5 and it rings amber (computed: the only column where rows differ).",
+      "motionRole": "explain",
+      "onScreenChange": "the read strip. Three ID cards (\"sample 1\", \"sample 2\", \"sample 3\"; no people) on the left, each with two rows of nine base tiles (\"copy 1\", \"copy 2\"), aligned: G A C C ? G A T C, the fifth column filled per sample (sample 1: C and C; sample 2: C and T; sample 3: T and T). On \"most bases match\" a light scan runs along the columns, each column ticking. On \"differ by just one base\" the scan stops at column 5 and it rings amber (computed: the only column where rows differ). On \"some copies have C, and others have T\" the C tiles and T tiles in column 5 pulse in turn. On \"single nucleotide polymorphism\" the term writes on with the gloss chips \"single nucleotide: one base\" and \"polymorphism: more than one form in the population\", and the tag \"SNP (said 'snip')\". On \"Each form is an allele\" two chips \"C allele\" and \"T allele\" drop above the column. On \"every genotype shows directly\" genotype tags write on at the end of each pair: \"CC\", \"CT\", \"TT\" (computed), and sample 2's tag gets the small label \"carrier: both copies read\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick",
+        "chip pop",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "snp-markers",
+      "visualDecision": "adjust",
+      "visualReference": "The read strip zooms out to a long chromosome bar (coded, cream) with dozens of small tick marks scattered along it (grey tag \"about 1 base in 1,000 differs between two unrelated people\").",
+      "teachingReason": "Explains why most SNPs change nothing (non-coding DNA).",
+      "narrationCue": "Two unrelated people differ at roughly one base in every thousand, so each of us carries",
+      "motionPurpose": "On the spoken cues: On \"doesn't code for a protein\" most ticks sit in grey stretches tagged \"non-coding DNA\"; a few short gene boxes sit on the bar. On \"A few do matter\" one tick inside a gene box rings amber, and B7's recall card slides in small: \"coding strand GAG to GTG: Glu to Val, sickle cell\" (grey tag \"B7\"), with the changed tile amber.",
+      "motionRole": "explain",
+      "onScreenChange": "the read strip zooms out to a long chromosome bar (coded, cream) with dozens of small tick marks scattered along it (grey tag \"about 1 base in 1,000 differs between two unrelated people\"). On \"doesn't code for a protein\" most ticks sit in grey stretches tagged \"non-coding DNA\"; a few short gene boxes sit on the bar. On \"A few do matter\" one tick inside a gene box rings amber, and B7's recall card slides in small: \"coding strand GAG to GTG: Glu to Val, sickle cell\" (grey tag \"B7\"), with the changed tile amber. On \"markers we can count\" the line \"most SNPs: markers; some: causes\" writes on.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick",
+        "plate slide",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "counting-snps",
+      "visualDecision": "adjust",
+      "visualReference": "A genotype table writes on, one row per cue: \"CC | 18\", \"CT | 24\", \"TT | 8\", total \"50 people\" (grey tag \"example data\").",
+      "teachingReason": "Teaches: counting SNP alleles.",
+      "narrationCue": "Now count them, just like the cattle. Fifty people are tested at this",
+      "motionPurpose": "On the spoken cues: On \"a hundred copies\" `PoolBar` returns with 100 cells (tag \"50 people x 2 = 100 copies\"). On \"twenty-four\" 24 T cells light from the CT row (counter \"24 x 1 = 24\"); on \"plus sixteen\" 16 more light from the TT row (\"8 x 2 = 16\").",
+      "motionRole": "explain",
+      "onScreenChange": "a genotype table writes on, one row per cue: \"CC | 18\", \"CT | 24\", \"TT | 8\", total \"50 people\" (grey tag \"example data\"). On \"a hundred copies\" `PoolBar` returns with 100 cells (tag \"50 people x 2 = 100 copies\"). On \"twenty-four\" 24 T cells light from the CT row (counter \"24 x 1 = 24\"); on \"plus sixteen\" 16 more light from the TT row (\"8 x 2 = 16\"). On \"forty per cent\" the line \"T: 40 / 100 = 0.40 = 40%\" writes on and \"C: 60 / 100 = 60%\" under it (computed). On \"Count alleles, not people\" the line writes on large in amber hand type, and a chip \"T = 8 / 50 = 16%\" writes on and takes a grey scribble cross (tag \"that counts people\").",
+      "motionTools": [
+        "HandText write-on",
+        "PoolBar",
+        "Mark cross",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "association",
+      "visualDecision": "adjust",
+      "visualReference": "The group panel. `GroupBeads`: left group \"with the disease (50 people)\" as 100 allele beads with 40 T beads lit; right group \"without the disease (50 people)\" as 100 beads, its table writing on \"CC 32, CT 16, TT 2\" and 20 T beads lit (computed).",
+      "teachingReason": "Explains why an association need not be a cause (close neighbours inherited together).",
+      "narrationCue": "Snips become evidence when you compare groups. Say those fifty people all have a",
+      "motionPurpose": "On the spoken cues: Frequency bars draw under each: \"40%\" and \"20%\". On \"That's a trend\" an amber arrow joins the two bars with the tag \"T more common with the disease\". On \"association\" the word writes on with the gloss \"found together more often\". On \"doesn't prove\" a chip \"T causes the disease\" writes on and takes a grey scribble cross.",
+      "motionRole": "explain",
+      "onScreenChange": "the group panel. `GroupBeads`: left group \"with the disease (50 people)\" as 100 allele beads with 40 T beads lit; right group \"without the disease (50 people)\" as 100 beads, its table writing on \"CC 32, CT 16, TT 2\" and 20 T beads lit (computed). Frequency bars draw under each: \"40%\" and \"20%\". On \"That's a trend\" an amber arrow joins the two bars with the tag \"T more common with the disease\". On \"association\" the word writes on with the gloss \"found together more often\". On \"doesn't prove\" a chip \"T causes the disease\" writes on and takes a grey scribble cross. On \"sit close to the DNA that really matters\" a coded chromosome pair appears with the SNP tick and, a short distance along, a second marked spot tagged \"real cause?\"; on \"rarely split by crossing over\" B8's crossing-over swap plays once at a far point of the pair (tag \"B8\") and the SNP and the \"real cause?\" spot stay together on the same segment (tag \"close together: inherited together\"). Unspoken grey tag at the lower right (Revision 2): \"showing cause needs more evidence, such as what the variant does to a protein\".",
+      "motionTools": [
+        "HandText write-on",
+        "GroupBeads",
+        "Mark cross",
+        "tick",
+        "chip pop",
+        "table build",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "one-marker",
+      "visualDecision": "new",
+      "visualReference": "Two population cards (\"population 1\", \"population 2\"), each with a short read strip.",
+      "teachingReason": "Explains why one SNP proves little (thousands of other differences).",
+      "narrationCue": "And one snip is only one marker. Two populations can share a version at one snip, and",
+      "motionPurpose": "On the spoken cues: On \"one marker\" one column matches across both (tick) with a chip \"same at one SNP: closely related\" that takes a grey scribble cross. On \"thousands of others\" the strips extend to a grid of 40 SNP columns, about half differing (computed from the example data, tag \"40 SNPs shown\").",
+      "motionRole": "explain",
+      "onScreenChange": "two population cards (\"population 1\", \"population 2\"), each with a short read strip. On \"one marker\" one column matches across both (tick) with a chip \"same at one SNP: closely related\" that takes a grey scribble cross. On \"thousands of others\" the strips extend to a grid of 40 SNP columns, about half differing (computed from the example data, tag \"40 SNPs shown\"). On \"compare many snips\" a summary bar fills under the grid: \"shared at 21 of 40 SNPs\" (computed), tag \"many markers: a pattern\".",
+      "motionTools": [
+        "ScribbleCircle",
+        "Mark cross",
+        "tick",
+        "chip pop",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "sample-limits",
+      "visualDecision": "adjust",
+      "visualReference": "The count board returns. On \"a whole breed\" a wide field of cattle plates fades in behind a dashed line \"true white allele frequency: 20%\".",
+      "teachingReason": "Explains why small samples mislead (they bounce).",
+      "narrationCue": "Every one of these numbers comes from a sample, and samples have",
+      "motionPurpose": "On the spoken cues: `SampleBounce`: on \"Sample twenty cattle\" three samples of 20 are drawn in turn (a small grid of 20 plates lights each time), each plotting a dot on a strip from 0 to 50 per cent (fixed example draws, not seed-searched: the build picks 20 plates whose white allele copies total 4, 12 and 7 of 40, so the dots read 10%, 30% and 18%",
+      "motionRole": "explain",
+      "onScreenChange": "the count board returns. On \"a whole breed\" a wide field of cattle plates fades in behind a dashed line \"true white allele frequency: 20%\". `SampleBounce`: on \"Sample twenty cattle\" three samples of 20 are drawn in turn (a small grid of 20 plates lights each time), each plotting a dot on a strip from 0 to 50 per cent (fixed example draws, not seed-searched: the build picks 20 plates whose white allele copies total 4, 12 and 7 of 40, so the dots read 10%, 30% and 18% (17.5% rounded); tag \"three example samples\"; values computed from the plates drawn). On \"Sample two hundred\" three samples of 200 plot dots that cluster close to the dashed line (fixed example draws of 76, 83 and 86 white copies of 400: 19%, 21% and 22% (20.75% and 21.5% rounded); computed). On \"bounce around\" the n = 20 dots ring amber with the tag \"small sample: wide spread\". On \"represent the population\" the sample grid shrinks into one fenced paddock tagged \"one farm\" beside the wide breed field (tag \"representative?\"). On \"sort the same way\" one red cattle plate gets a few coded white hair strokes at its flank (B10's `HairZoom` look) with two chips \"red?\" and \"roan?\" (tag \"agree the categories first\").",
+      "motionTools": [
+        "SampleBounce",
+        "HairZoom",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Three large handwritten words write on with small icons: \"frequency\" (a mini bar with \"count / total\"), \"SNP\" (one amber tile in a row), \"limits\" (the bouncing dots).",
+      "teachingReason": "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+      "narrationCue": "Three words to take away: frequency, snip,",
+      "motionPurpose": "On the spoken cues: Under them, the line \"Count alleles, not people\" sits small.",
+      "motionRole": "explain",
+      "onScreenChange": "three large handwritten words write on with small icons: \"frequency\" (a mini bar with \"count / total\"), \"SNP\" (one amber tile in a row), \"limits\" (the bouncing dots). Under them, the line \"Count alleles, not people\" sits small.",
+      "motionTools": [
+        "HandText write-on",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "The board clears: no earlier tables, bars or tags.",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"(a) Frequency of the V mark at each site?\" \"(b) Compare the sites.\" \"(c) Identify one limitation of the data.\" Three answer boxes. The countdown ring starts after \"Pause here to answer.\" and runs for",
+      "narrationCue": "Two harder questions now. First, a class samples white clover plants at two sites on the",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears: no earlier tables, bars or tags.)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card writes on, headed \"White clover at two sites\". Two small painted-style leaf icons head the columns (coded: one trefoil with a pale V on each leaflet, one plain; no people).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "table build",
+        "bar draw",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "The card shrinks to a strip at the top (table and demands stay readable).",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for item one (owner rule, 16 October).",
+      "narrationCue": "Each site has sixty plants. Site A is eighteen out of sixty, or thirty per",
+      "motionPurpose": "On the spoken cues: (1) On \"sixty plants\" a total column writes on: \"60\", \"60\". (2) On \"thirty per cent\" the line \"(a) A: 18 / 60 = 30%\" writes on; on \"fifty per cent\" \"B: 30 / 60 = 50%\" (computed), with two small bars drawing beside them. (3) On \"more common in site B's sample\" the line \"(b) higher in site B's sample (50% against 30%)\" writes on.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (table and demands stay readable). (1) On \"sixty plants\" a total column writes on: \"60\", \"60\". (2) On \"thirty per cent\" the line \"(a) A: 18 / 60 = 30%\" writes on; on \"fifty per cent\" \"B: 30 / 60 = 50%\" (computed), with two small bars drawing beside them. (3) On \"more common in site B's sample\" the line \"(b) higher in site B's sample (50% against 30%)\" writes on. (4) On \"small sample\" the line \"(c) small sample from one school; faint marks are hard to classify\" writes on, with three tiny coded leaflets in a row \"bold ... faint ... none\". (5) On \"eighteen by forty-two\" the chip \"18 / 42 = 43%\" writes on and takes a grey scribble cross, with the tag \"divide by the site total\". Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "table build",
+        "bar draw"
+      ],
+      "holdPurpose": "Brief settle before the next scene"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "The board clears. The card shows a genotype table: \"GG | 20\", \"GA | 16\", \"AA | 4\", \"total | 40 people\".",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"(a) Frequency of the A allele?\" \"(b) Does this show A causes the disease? Explain.\" Two answer boxes.",
+      "narrationCue": "Second. Forty people are tested at a snip, where the base is either G or",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears. The card shows a genotype table: \"GG | 20\", \"GA | 16\", \"AA | 4\", \"total | 40 people\".)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card shows a genotype table: \"GG | 20\", \"GA | 16\", \"AA | 4\", \"total | 40 people\". Stimulus line: \"A is more common in people with a certain disease.\" Demands: \"(a) Frequency of the A allele?\" \"(b) Does this show A causes the disease? Explain.\" Two answer boxes.",
+      "motionTools": [
+        "ScribbleCircle",
+        "table build",
+        "bar draw",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "The card shrinks to a strip. (1) On \"eighty copies\" the line \"40 x 2 = 80 copies\" writes on.",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for item two (owner rule, 16 October).",
+      "narrationCue": "Forty people carry eighty copies. The A alleles are sixteen from the mixed genotypes,",
+      "motionPurpose": "On the spoken cues: (2) On \"sixteen\" and \"plus eight\" the working writes on: \"A = 16 x 1 + 4 x 2 = 24\"; on \"thirty per cent\" \"(a) 24 / 80 = 0.30 = 30%\" (computed). (3) On \"association, not proof\" the line \"(b) No: an association; A may be inherited with a nearby cause\" writes on.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. (1) On \"eighty copies\" the line \"40 x 2 = 80 copies\" writes on. (2) On \"sixteen\" and \"plus eight\" the working writes on: \"A = 16 x 1 + 4 x 2 = 24\"; on \"thirty per cent\" \"(a) 24 / 80 = 0.30 = 30%\" (computed). (3) On \"association, not proof\" the line \"(b) No: an association; A may be inherited with a nearby cause\" writes on. (4) On \"ten per cent\" the chip \"4 / 40 = 10%\" writes on and takes a grey scribble cross, with the tag \"that counts people\". Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Brief settle before the next scene"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "Four step chips write on, one per cue, each with a tiny icon: \"say the denominator\" (a \"/ 100\" tag), \"count alleles: 2 per individual\" (two chips), \"read the trend\" (two bars with an arrow), \"name the limits\" (the bouncing dots).",
+      "teachingReason": "Packs the method into reusable lines and hands off to the next video.",
+      "narrationCue": "So, with frequency data: say what you counted, count alleles rather than individuals,",
+      "motionPurpose": "On the spoken cues: A fifth chip: \"association is not cause\". A \"Next\" chip slides in at the lower right: \"Next: collect and present your own data\", then \"then: sequencing and profiling\" (a small gel icon).",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on, one per cue, each with a tiny icon: \"say the denominator\" (a \"/ 100\" tag), \"count alleles: 2 per individual\" (two chips), \"read the trend\" (two bars with an arrow), \"name the limits\" (the bouncing dots). A fifth chip: \"association is not cause\". A \"Next\" chip slides in at the lower right: \"Next: collect and present your own data\", then \"then: sequencing and profiling\" (a small gel icon).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "plate slide",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b11-learning-review.md",
+      "sha256": "295c620d80de759de5c336c17831ababd9d9aeeecfb58c63eeb206e6955c0b31"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b11-claude-science-check.md",
+      "sha256": "242acc51ac5978963513c1cd4784bfa76b06a7b12b46733338a5cc3fc0a56998"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

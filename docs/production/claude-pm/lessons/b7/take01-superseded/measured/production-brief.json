@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b7/measured/lesson.json",
+    "lessonSha256": "e4f8e2401bb507b8b0effad482309c8c52cb13866939c854462a9c2e5665ca93"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "B6c: a polypeptide is a chain of amino acids in the order set by the codons and must fold before it works; codon chart use with mRNA codons. B6b: a gene is the stretch of DNA that codes for a polypeptide; a changed template base changes a codon. B4: a surviving copying error is a mutation. B1: alleles are versions of a gene and a clone has the same genes as its parent. Year 11 Biology: enzymes and active sites, cells and membranes, haemoglobin carries oxygen in red blood cells. Not assumed: protein jobs as a classification, why chains fold, levels of structure, phenotype, genotype, polygenic, gene-environment interaction.",
+    "startsWith": "One hydrangea cloned into two gardens that flower blue and pink, with the question of how a chain of amino acids becomes a trait you can see and how identical genes give different results.",
+    "stopsAfter": "Naming five jobs proteins do with an example of each; explaining why a chain folds into one shape and the four levels of structure; explaining why shape decides function and why a changed amino acid can, but need not, change it; tracing sickle cell from one base change to the trait; saying why genes become traits skips steps; defining genotype and phenotype; explaining a same-genotype, different-phenotype case with its mechanism; assessing genes and environment together; analysing why polypeptide synthesis matters; applying all of it to a temperature-sensitive enzyme and to two base changes read from a codon chart. No alpha helix and beta sheet by name, no gene regulation, no mutation types, no epigenetics.",
+    "nextLesson": "B8: sources of genetic variation, where the different genotypes in one family come from."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b07.md"
+  ],
+  "teaching": {
+    "task": "Explain how a chain of amino acids becomes a trait, and why the same genes can give different results in different environments.",
+    "causalExplanation": "The twenty amino acids differ: some avoid water and tuck into the middle of the chain, some carry opposite charges that attract, and two cysteines can lock together, so the order of amino acids decides which parts meet and therefore the shape. Proteins work by fitting, so a change in an active site can stop the fit, while a change far from it or to the same amino acid may not. In sickle cell, one base change turns a glutamate codon into a valine codon, and valine avoids water, so with two copies and low oxygen the haemoglobin molecules stick into fibres that bend the red cells, which block small vessels and break down early. Genes do not become traits directly: the gene codes for a polypeptide, which folds into a protein, which changes what a cell does. The same genotype can give different phenotypes because the environment changes what the proteins produce, for example soil aluminium binding the hydrangea pigment, without changing the alleles.",
+    "conversationalApproach": "Opens on cloned hydrangeas of two colours and last video's chain, shows five protein jobs on real objects, builds the fold from the amino acids' differences, shows shape deciding the job, runs sickle cell as one full chain on a five-station strip, names genotype and phenotype after the causes, gives the hydrangea mechanism and height, weighs genes against environment, explains why synthesis matters, adds the memory aids, then asks two harder unseen items with a short pause and brief model answers.",
+    "openingDecision": "The same genes give blue flowers in one garden and pink in another. How does a chain of amino acids become a trait you can see, and how can the same genes give different results?",
+    "understandingCheck": "A Himalayan rabbit has dark fur only on its cool extremities, and a shaved back patch under an ice pack regrew dark: explain why and predict the fur of its young. Then in two snapdragon lines, read a codon chart to explain why a histidine to proline change in an active site gives white flowers while GAA to GAG leaves them red.",
+    "curriculumScope": "Model the process of polypeptide synthesis and analyse its importance, assess how genes and environment affect phenotypic expression, and investigate the structure and function of proteins in living things (Module 5, ACSBL079 to ACSBL081). The video gives the knowledge an investigation needs and does not claim the practical. Gene regulation, mutation types, protein structure by name, carrier advantage and epigenetics are deferred."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, painted hydrangea, enzyme and substrate, red blood cell, normal and sickle cell, muscle cell, blood typing, snapdragon and rabbit plates, and coded bead chains that fold, a chain-to-trait strip of five stations, haemoglobin fibres, a range bar and a trait spectrum. B6c beads carry a printed three-letter name, never colour only. Blue and green are used only inside the painted hydrangea plates.",
+    "transitionPlan": "The painted hydrangea opens the lesson and the bead chain drifts in from the previous video; the jobs board builds tile by tile; the fold chain returns beside the enzyme plate; the chain-to-trait strip builds in the sickle cell scene and stays as a thin header to the synthesis scene; each attempt card clears the aids and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Painted pink and blue hydrangea plates with coded cuttings, soil strips, a DNA ladder icon under each plant and the B6c bead chain",
+      "teachingReason": "Poses the puzzle that identical genes can give two colours, and links it to last video's amino acid chain",
+      "narrationCue": "takes cuttings / two different gardens / blue / pink / a chain of amino acids / a trait you can see",
+      "motionPurpose": "Three cuttings slide out of the plant onto two soil strips, one plant turns blue while the other stays pink, an equals-genes bracket links them and a question arrow runs from the bead chain to the flowers",
+      "motionRole": "explain",
+      "onScreenChange": "The heading \"From a chain to a trait\" writes on; on \"takes cuttings\" three cut marks appear and three small copies slide out tagged \"cuttings: clones, same genes\"; on \"two different gardens\" two copies move onto strips tagged \"garden 1\" and \"garden 2\" and grow; on \"blue\" the left plant crossfades to the blue plate; on \"pink\" the right plant stays pink; the bracket \"= genes\" links them; on \"a chain of amino acids\" the bead chain drifts in with the tag \"B6c\"; on \"a trait you can see\" a dotted arrow with \"?\" runs to the flowers",
+      "motionTools": [
+        "HandText write-on",
+        "plate slide",
+        "plate crossfade",
+        "DrawPath",
+        "bracket draw"
+      ],
+      "holdPurpose": "Hold about 2 seconds on the question arrow"
+    },
+    {
+      "sceneId": "protein-jobs",
+      "visualDecision": "new",
+      "visualReference": "Jobs board of five tiles: the painted enzyme and substrate, the painted red blood cells with coded haemoglobin, a coded keratin fibre with the muscle cell plates, a coded receptor and a coded antibody",
+      "teachingReason": "Shows five jobs of proteins on real objects, ending on the point that each is a folded polypeptide",
+      "narrationCue": "Enzymes / Transport / Structural / keratin / Receptors / antibodies / polypeptide chain, folded",
+      "motionPurpose": "Five tiles build left to right on their spoken words, the substrate slides into its pocket, oxygen dots land on haemoglobin, a signal lands in a receptor and an antibody clamps a marker, then each tile coils a tiny bead chain",
+      "motionRole": "explain",
+      "onScreenChange": "The tiles build on their words: on \"Enzymes\" the substrate slides into the pocket; on \"Transport\" a pen zooms into a red cell where haemoglobin blobs pick up oxygen dots; on \"Structural\" and \"keratin\" a three-strand fibre draws tagged \"keratin (hair)\" while the muscle cell plate crossfades from relaxed to contracted with \"contractile proteins\"; on \"Receptors\" a signal lands in a cup-shaped receptor and a spark passes in; on \"antibodies\" a Y-shaped antibody clamps a marker; on \"polypeptide chain, folded\" each tile gets a tiny bead chain that coils",
+      "motionTools": [
+        "JobsBoard tile build",
+        "plate crossfade",
+        "DrawPath",
+        "bead coil"
+      ],
+      "holdPurpose": "Hold about 1 second on the five tiles"
+    },
+    {
+      "sceneId": "why-fold",
+      "visualDecision": "new",
+      "visualReference": "Coded twelve-bead chain folding into a blob: water-avoiding beads tucking in, charged beads pulling together and two cysteine beads joining with an S-S link, then a shuffled chain folding differently",
+      "teachingReason": "Explains the cause of folding from the properties of the amino acids, and why order decides shape",
+      "narrationCue": "avoid water / opposite charges attract / cysteine / disulfide bond / decides which parts end up next to each other",
+      "motionPurpose": "A straight labelled chain bends as three grey beads tuck to the centre, a plus bead and a minus bead swing together, an amber S-S link snaps between two cysteines and a shuffled chain folds into a different blob",
+      "motionRole": "explain",
+      "onScreenChange": "A twelve-bead chain lies across the screen with labelled beads; on \"avoid water\" a faint water-dot wash surrounds it and the grey Val, Leu and Phe beads pull to the centre with the tag \"water-avoiding: tuck in\"; on \"opposite charges attract\" Lys and Glu swing together with \"charges attract\"; on \"cysteine\" and \"disulfide bond\" the two Cys beads meet and an amber \"S-S\" link snaps with \"disulfide bond: strong link\"; on \"decides which parts end up next to each other\" the finished blob holds and the same beads shuffled fold into a different blob with \"different order, different shape\"",
+      "motionTools": [
+        "FoldChain bead fold",
+        "link snap",
+        "tag pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second on the two blobs"
+    },
+    {
+      "sceneId": "shape-job",
+      "visualDecision": "adjust",
+      "visualReference": "Painted enzyme and substrate plate with a traced pocket, the folded blob beside it with one bead changing, and two small case panels with a computed codon card",
+      "teachingReason": "Shows that proteins work by fit, that one changed amino acid in the pocket can stop the fit, and that not every change matters",
+      "narrationCue": "fitting / active site / can flex a little / Change one amino acid in that pocket / not every change matters",
+      "motionPurpose": "The substrate slides into the traced pocket, the pocket breathes once, a pocket bead flips and the pocket narrows so the substrate bumps off, then two small panels show a harmless far swap and a same amino acid codon change",
+      "motionRole": "explain",
+      "onScreenChange": "The enzyme plate returns large and a coded outline traces the pocket tagged \"active site\"; on \"fitting\" the substrate slides in with a tick and a chip \"key and lock\" appears; on \"can flex a little\" the outline breathes once with \"flexes as it binds\"; on \"Change one amino acid in that pocket\" the blob beside it flips one pocket bead with an amber ring, the pocket narrows and the substrate bumps off with \"can stop fitting\"; on \"not every change matters\" two panels play: a far bead changes and the pocket holds, and a card \"GAA to GAG\" computes \"Glu to Glu\" with \"same amino acid\"",
+      "motionTools": [
+        "plate slide",
+        "pocket outline",
+        "bead flip",
+        "tick",
+        "panel build"
+      ],
+      "holdPurpose": "Hold about 1 second on the two panels"
+    },
+    {
+      "sceneId": "sickle-base",
+      "visualDecision": "new",
+      "visualReference": "Chain-to-trait strip of five stations with a haemoglobin blob, a DNA ladder with a flashing base pair, terracotta mRNA tiles, a chart excerpt and a numbered bead run",
+      "teachingReason": "Starts the one full causal chain with one base change, one codon change and one amino acid change in a chain of 146",
+      "narrationCue": "four chains / a single base change / G A G / G U G / in the mRNA / The chart gives / sixth amino acid / a hundred and forty-six",
+      "motionPurpose": "The five-station strip builds, a four-lobed haemoglobin blob appears, one base pair flashes amber, mRNA tiles change from GAG to GUG, the chart excerpt lights two rows and bead six flips from Glu to Val",
+      "motionRole": "explain",
+      "onScreenChange": "The strip builds with \"gene (DNA)\", \"polypeptide\", \"protein shape\", \"cell\", \"trait\"; on \"four chains\" a four-lobed haemoglobin blob appears small in the protein shape station; on \"a single base change\" a DNA stretch flashes one base pair amber and the coding strand codon changes GAG to GTG; on \"G A G\" and \"G U G\" the mRNA tiles write GAG then GUG; on \"The chart gives\" the excerpt slides in with the pointer lighting \"GAG Glu\" then \"GUG Val\"; on \"sixth amino acid\" a bead run numbered 1 to 7 shows bead 6 flip from Glu to Val with an amber ring; on \"a hundred and forty-six\" the counter \"1 of 146 amino acids changed\" writes on",
+      "motionTools": [
+        "strip build",
+        "DrawPath",
+        "tile swap",
+        "bead flip",
+        "counter write-on"
+      ],
+      "holdPurpose": "Hold half a second on the counter"
+    },
+    {
+      "sceneId": "sickle-trait",
+      "visualDecision": "new",
+      "visualReference": "Enlarged protein shape station with haemoglobin blobs stacking into a fibre, the painted normal and sickle cell plate, a narrowing coded vessel and the filled strip",
+      "teachingReason": "Follows the changed protein to the cell and the body, so the genes-to-trait link is a drawn chain",
+      "narrationCue": "valine avoids water / two copies / when oxygen is low / stick to each other / stack into long stiff fibres / sickle / block small blood vessels / break down quickly / the trait",
+      "motionPurpose": "A sticky patch pulses, oxygen dots drift off, blobs dock and line up into a rod, a round cell bends into a sickle, a sickle cell jams in a narrowing vessel and two cells fade, then the last station fills",
+      "motionRole": "explain",
+      "onScreenChange": "The protein shape station enlarges; on \"valine avoids water\" the grey Val patch pulses with \"sticky, water-avoiding patch\"; on \"two copies\" the tag \"two copies of the allele\" lands under station 1; on \"when oxygen is low\" the oxygen dots drift off; on \"stick to each other\" a Val patch docks into the next blob; on \"stack into long stiff fibres\" they line up into a rod; on \"sickle\" the cell plate crossfades from round to sickle with a rod inside it; on \"block small blood vessels\" a sickle cell jams at a narrowing vessel with \"blocks small vessels: pain\"; on \"break down quickly\" two cells fade with \"short-lived: too few red cells\"; on \"the trait\" the last station fills with \"sickle cell disease\"",
+      "motionTools": [
+        "HbFibre stack",
+        "plate crossfade",
+        "vessel narrow",
+        "tag pop",
+        "strip fill"
+      ],
+      "holdPurpose": "Hold about 1 second on the finished strip"
+    },
+    {
+      "sceneId": "no-shortcut",
+      "visualDecision": "adjust",
+      "visualReference": "The five-station strip at full width with a crossed overhead shortcut arc, genotype and phenotype brackets with small icons and fanned extra strips",
+      "teachingReason": "Names the skipped steps behind the wrong shortcut and defines genotype and phenotype after the causes",
+      "narrationCue": "Genes don't become traits directly / codes for a polypeptide / genotype / phenotype / many genes, at once",
+      "motionPurpose": "An overhead arc from gene to trait is drawn and crossed, a pen walks the stations in order, two brackets write their definitions with icons and three faint strips fan in",
+      "motionRole": "explain",
+      "onScreenChange": "On \"Genes don't become traits directly\" the arc draws from gene to trait labelled \"genes become traits\" and takes a grey cross with \"skips the protein and the cell\"; on \"codes for a polypeptide\" a pen runs along the five stations lighting each; on \"genotype\" a bracket under station 1 writes \"genotype: the alleles you have\"; on \"phenotype\" a bracket under station 5 writes \"phenotype: what you can observe\" with a sickle cell and a pink hydrangea icon; on \"many genes, at once\" three faint strips fan in with \"most traits: many genes\"",
+      "motionTools": [
+        "DrawPath",
+        "Mark cross",
+        "bracket draw",
+        "strip fan"
+      ],
+      "holdPurpose": "Hold about 1 second on the fanned strips"
+    },
+    {
+      "sceneId": "environment",
+      "visualDecision": "adjust",
+      "visualReference": "The two painted hydrangeas on acidic and less acidic soil, a shared gene card, pigment rings, aluminium dots rising through a root line and a range bar for height",
+      "teachingReason": "Gives the mechanism for the same genotype giving two phenotypes, then a second case with height and food",
+      "narrationCue": "make a red pigment / aluminium dissolves / binds to the pigment / blue / little aluminium dissolves / pink / The environment changes what it produces / Height works the same way / don't get enough food",
+      "motionPurpose": "Aluminium dots appear only in acidic soil and travel up the root, clip onto pigment rings that turn pink to blue, the other plant stays pink, then a height range bar shows the pointer near the top and dropping",
+      "motionRole": "explain",
+      "onScreenChange": "The plants return labelled \"acidic soil\" and \"less acidic soil\"; on \"make a red pigment\" both show the gene card \"same genotype\" and a pigment ring tagged \"pigment, made by enzymes\"; on \"aluminium dissolves\" Al dots appear in the acidic soil and travel up a root line; on \"binds to the pigment\" an inset shows Al clipping onto rings that turn pink to blue beside the blue plate; on \"little aluminium dissolves\" the other soil shows almost no dots and the rings stay pink beside the pink plate; on \"The environment changes what it produces\" \"same genotype, different phenotype\" writes between them; on \"Height works the same way\" the range bar draws with a pointer near the top, and on \"don't get enough food\" it drops with \"poor nutrition\"",
+      "motionTools": [
+        "dot travel",
+        "ring recolour",
+        "RangeBar pointer",
+        "plate crossfade",
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second on the range bar"
+    },
+    {
+      "sceneId": "genes-and-environment",
+      "visualDecision": "adjust",
+      "visualReference": "Trait spectrum line from mostly genes to strongly environment with the range bar, the blood typing tile, a height icon, a hydrangea icon and a cutting that turns pink",
+      "teachingReason": "Weighs genes against environment: genes set the range, environment affects where in it, and the environment does not change the genotype",
+      "narrationCue": "Genes set what's possible / ABO blood group / Height depends on both / not the genes themselves / a cutting from the blue plant",
+      "motionPurpose": "The range bar shrinks to the left with two tags, the blood typing tile slides to the genes end, the height icon sits in the middle, the hydrangea icon sits right of middle, and a blue cutting crossfades to pink on less acidic soil",
+      "motionRole": "explain",
+      "onScreenChange": "The spectrum line draws from \"mostly genes\" to \"strongly environment\"; on \"Genes set what's possible\" the range bar shrinks left with \"genes: the possible range\" and \"environment: where in it\"; on \"ABO blood group\" the blood typing tile slides to the left end with \"ABO: set by alleles\"; on \"Height depends on both\" a range bar icon slides to the middle; the hydrangea icon sits right of middle with \"hydrangea colour: soil matters\"; on \"not the genes themselves\" a gene card holds with an amber tick while a soil chip changes under it; on \"a cutting from the blue plant\" a copy goes onto less acidic soil and crossfades to pink with \"= genes\"",
+      "motionTools": [
+        "TraitSpectrum slide",
+        "plate slide",
+        "plate crossfade",
+        "tick",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the cutting"
+    },
+    {
+      "sceneId": "why-synthesis",
+      "visualDecision": "adjust",
+      "visualReference": "Strip stations expanded into transcription and translation icons, the five job tiles small with bead chains, the red cell and muscle cell plates with a shared gene card, and a greyed empty job tile",
+      "teachingReason": "Assesses why polypeptide synthesis matters: every job depends on a made protein and each cell type makes its own set",
+      "narrationCue": "every protein is made / each kind of cell makes its own set of proteins / the sequence is wrong / isn't made",
+      "motionPurpose": "A pen runs along the transcription and translation icons, the job tiles return fed by bead chains, two cell plates fill with different proteins under one gene card, the sickle icon flashes and an empty tile greys",
+      "motionRole": "explain",
+      "onScreenChange": "The first two stations expand into \"transcription\" and \"translation\" with a pen along them; on \"every protein is made\" the five job tiles return small, each fed by its own bead chain; on \"each kind of cell makes its own set of proteins\" the red cell plate fills with haemoglobin blobs and the muscle cell plate with contractile fibres under the card \"same genes\" with tags \"makes haemoglobin\" and \"makes contractile proteins\"; on \"the sequence is wrong\" the sickle icon flashes; on \"isn't made\" an empty job tile greys with \"no protein: no job\"",
+      "motionTools": [
+        "DrawPath",
+        "tile fly-in",
+        "plate slide",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold about 1 second on the greyed tile"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Four-panel levels stack numbered in amber and a handwritten traits line under a mini range bar",
+      "teachingReason": "Gives two reusable aids after the fold and the genes-and-environment ideas are explained",
+      "narrationCue": "one / two / three / four / genes set what's possible",
+      "motionPurpose": "Four panels build left to right with amber numbers, small level names appear, and the traits line writes on under a mini range bar",
+      "motionRole": "explain",
+      "onScreenChange": "The panels build on their numbers: \"1 order\" a straight bead run, \"2 local coils\" a coil and a zigzag, \"3 whole fold\" the blob, \"4 more than one chain\" the four-lobed haemoglobin with the small tag \"only when there is more than one\"; small names \"primary\", \"secondary\", \"tertiary\", \"quaternary\" appear under them; on \"genes set what's possible\" the line \"genes set what's possible; environment affects what develops\" writes on in amber under a mini range bar",
+      "motionTools": [
+        "LevelsStack build",
+        "HandText write-on",
+        "tag pop"
+      ],
+      "holdPurpose": "Hold half a second so the aids can be copied"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "Cleared card headed The Himalayan rabbit with the painted rabbit and patch plates, a coded ice pack icon, a stimulus line, two demands and the countdown ring",
+      "teachingReason": "Unseen explain and predict item with every observation visible and nothing answer-bearing",
+      "narrationCue": "Himalayan rabbits / enzyme / shaved a patch / dark / Explain why / predict / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold while the whole card stays visible",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the card writes on with tags \"dark: ears, nose, feet, tail\" and \"white: body\" on the first plate and \"patch shaved, ice pack while fur regrew: new fur dark\" beside the second; the line \"The dark pigment is made by an enzyme.\" and both demands (a) and (b) stay visible with two answer boxes; the countdown ring starts after \"Pause here to answer.\" and the card stays during and after",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "plate slide"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "The card shrunk to a strip with a cool to warm wash on the rabbit, enzyme icons, an offspring rabbit, a same allele gene card and one crossed wrong chip",
+      "teachingReason": "Gives the model answer in order: temperature sensitive enzyme, the patch, the young, then corrects the genes slip",
+      "narrationCue": "coolest parts / cool / The ice pack cooled the skin / white / changed the rabbit's genes",
+      "motionPurpose": "A cool to warm wash tints the rabbit, an enzyme icon makes pigment dots only on the cool parts, the patch cools and lights, an offspring appears with a white back and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The card shrinks to a strip; on \"coolest parts\" a wash tints the first plate; on \"cool\" a coded enzyme sits on the ears making pigment dots and grey on the body; on \"The ice pack cooled the skin\" the patch cools, its enzyme lights and the line \"(a) the enzyme works only in cool skin; the ice pack cooled the patch, so pigment formed\" writes; on \"white\" a half-size offspring appears with \"white back, dark tips\" and the line \"(b)\" writes with a gene card \"same allele\"; on \"changed the rabbit's genes\" the chip \"the ice changed the rabbit's genes, so the young have dark backs\" writes and takes a grey cross",
+      "motionTools": [
+        "wash tint",
+        "enzyme icon",
+        "chip write-on",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about 1 second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "Cleared card with the white and red snapdragon plates, the two codon changes, a codon chart excerpt, one demand and the countdown ring",
+      "teachingReason": "Unseen apply and explain item on a supplied chart with every condition visible and nothing answer-bearing",
+      "narrationCue": "C A U / C C U / G A A / G A G / white flowers / red flowers / Use the chart / Pause here to answer",
+      "motionPurpose": "The countdown ring runs through the answer-free thinking hold while both plant columns, the chart and the demand stay visible",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears; the columns \"Plant P\" with the white plate and \"two copies; active-site codon: mRNA CAU to CCU\" and \"Plant Q\" with the red plate and \"two copies; codon far from the active site: mRNA GAA to GAG\" write on under \"Red petals need an enzyme that helps make red pigment.\"; the chart \"Codon chart (part)\" lists CAC His, CAU His, CCU Pro, GAA Glu, GAG Glu, GUA Val; the demand and two answer boxes stay; the countdown ring starts after \"Pause here to answer.\"",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals",
+        "plate slide"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "The card shrunk to a strip with the chart beside it, a pointer lighting codon rows, a folded enzyme blob whose pocket bead flips, the Glu to Glu tick and one crossed wrong chip",
+      "teachingReason": "Answers both plants from the chart and corrects the every gene change slip",
+      "narrationCue": "C A U is histidine / active site / white / glutamate / every change to a gene changes the protein",
+      "motionPurpose": "The pointer lights CAU then CCU while a pocket bead flips and the pocket narrows, then lights GAA and GAG together with a tick, and the wrong chip is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "The card shrinks and the chart stays at the right; on \"C A U is histidine\" the pointer lights \"CAU His\" then \"CCU Pro\" and a pocket bead flips from His to Pro with an amber ring; on \"active site\" the pocket outline narrows and a substrate bumps off; on \"white\" the line \"P: His to Pro in the active site, shape changes, no pigment: white\" writes; on \"glutamate\" \"GAA Glu\" and \"GAG Glu\" light together, the bead stays Glu with a tick and \"Q: Glu to Glu, same protein: red\" writes; on \"every change to a gene changes the protein\" the chip writes and takes a grey cross with \"check the chart\"",
+      "motionTools": [
+        "pointer light",
+        "bead flip",
+        "tick",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle on the model answer for about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The chain-to-trait strip at full width with a pen walking the stations, six chips above and a soil chip and ice pack chip joining the last station, then a next chip with a pea seed",
+      "teachingReason": "Packs the lesson into one walk along the chain and one rule for same genes with different results, then hands off",
+      "narrationCue": "the base / the codon / the amino acid / the shape / the trait / the environment is changing / Next",
+      "motionPurpose": "A pen walks the strip station by station while six chips write on, a soil chip and an ice pack chip slide under the last station and the next chip slides in",
+      "motionRole": "explain",
+      "onScreenChange": "The strip returns at full width; the pen walks it as each step is named while chips \"base\", \"codon\", \"amino acid\", \"shape\", \"cell\", \"trait\" write on above; on \"the environment is changing\" a soil chip and an ice pack chip slide under the last station; on \"Next\" the chip \"Next: sources of genetic variation\" slides in at the lower right with the pea seed plate",
+      "motionTools": [
+        "DrawPath",
+        "chip write-on",
+        "chip slide"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the five notes",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\" and the five notes appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b7-learning-review.md",
+      "sha256": "fe1464d401dc10873333a40bd8d00711c372505a81c56ffe669a57df4507eb26"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b7-claude-science-check.md",
+      "sha256": "577bce6479bfced574a7a6005603a806137017509986be09e541fda97e7142a2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

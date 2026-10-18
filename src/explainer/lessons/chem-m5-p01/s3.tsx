@@ -59,7 +59,7 @@ export const SceneTemperature: React.FC = () => {
 				<Sx x={1680 + no2w / 2} y={760} text="ice: paler" size={28} color={INK_SOFT} anchor="middle" hand at={K9.purple + 40} />
 				<Sx x={1530} y={330} text="sealed NO_2 tube" size={28} color={INK_SOFT} hand at={K9.purple + 30} />
 				<Sx x={720} y={1000} text="volume and pressure: sealed NO_2 syringe, usually a teacher demonstration (see the squeezing video)" size={24} color={INK_SOFT} weight={600} at={K9.purple + 44} />
-				<Sx x={720} y={1036} text="keep the cobalt solution (it contains acid) well away from thiocyanate" size={24} color={HAZ} weight={600} at={K9.purple + 50} />
+				<Sx x={720} y={1036} text="keep the cobalt solution (made with concentrated HCl) well away from thiocyanate" size={24} color={HAZ} weight={600} at={K9.purple + 50} />
 				{void K9.temp}{void K9.chloride}{void K9.escape}{void K9.room}
 			</Overlay>
 		</>

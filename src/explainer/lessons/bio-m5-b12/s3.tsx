@@ -33,7 +33,7 @@ const Board: React.FC<{at: {heads: number; l1: number; l2: number; block: number
 					<DrawPath d="M700,720 L1220,720" at={at.block} dur={16} color={INK_SOFT} width={4} dash="12 9" />
 				</Fade>
 				<Cross x={960} y={720} at={at.block + 14} s={26} />
-				<GreyTag x={960} y={750} text="repeat lengths only" at={at.block + 18} size={24} anchor="middle" />
+				<GreyTag x={960} y={750} text="STR profiling: repeat lengths only" at={at.block + 18} size={24} anchor="middle" />
 				<GreyTag x={1010} y={506} text="breeding programs: avoid pairing close relatives" at={at.cons} size={22} />
 				<Sx x={1030} y={640} text="quick and cheap across many individuals" size={30} color={INK_SOFT} hand at={at.quick} />
 			</g>
@@ -71,7 +71,7 @@ export const SceneLimitsB12: React.FC = () => {
 					<ChromBar x={1030} y={760} w={760} h={40} fill="#e6e2db" stroke="#a9a29a" />
 					{MT.map((t, i) => <rect key={i} x={1030 + t * 760 - 7} y={736} width={14} height={48} rx={4} fill={AMBER} stroke={AMBER_INK} strokeWidth={2} opacity={prog(f, K10.handful + i * 5, 8)} />)}
 				</g>
-				<Sx x={1010} y={860} text="profiling: a few markers," size={40} color={INK} hand at={K10.handful + 10} />
+				<Sx x={1010} y={860} text="an STR profile: a few markers," size={40} color={INK} hand at={K10.handful + 10} />
 				<Sx x={1010} y={910} text="not the whole genome" size={40} color={INK} hand at={K10.genes} />
 				{/* sequencing: a variant found, cause not proved */}
 				<g opacity={prog(f, K10.finding, 14)}>

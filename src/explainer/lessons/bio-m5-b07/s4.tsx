@@ -18,7 +18,8 @@ const RB = {ears: [1350, 500] as [number, number], nose: [1660, 880] as [number,
 // ---------- 11a. Attempt one (the Himalayan rabbit) ----------
 const K12 = cues(S('attempt'), {two: 'Two harder questions now', first: 'Himalayan rabbits have', white: 'white fur on the body', dark: 'dark fur on the ears', enzyme: 'made by an enzyme', shaved: 'Scientists shaved a patch', ice: 'kept an ice pack', grew: 'The new fur grew dark', explain: 'Explain why the new fur', predict: 'Then predict the back fur', pause: 'Pause here to answer'});
 const DEM1A = '(a) Explain why the new fur on the patch is dark.';
-const DEM1B = "(b) Predict the back fur of this rabbit's young (raised normally). Justify your prediction.";
+const GIVEN1 = "Its young also have the Himalayan genotype and are raised normally.";
+const DEM1B = "(b) Predict the back fur of the young. Justify your prediction.";
 export const SceneAttemptB7: React.FC = () => {
 	const h = S('attempt').responseHold as {startFrame: number; endFrame: number};
 	const f = useCurrentFrame();
@@ -39,8 +40,9 @@ export const SceneAttemptB7: React.FC = () => {
 				<Sx x={96} y={738} text="The dark pigment is made by an enzyme." size={32} color={INK} weight={700} at={K12.enzyme} />
 				<Sx x={96} y={800} text={DEM1A} size={30} color={INK} weight={700} at={K12.explain} />
 				<AnswerBox x={96} y={816} w={1440} h={62} at={K12.explain + 8} lines={1} />
-				{b.map((l, i) => <Sx key={i} x={96} y={922 + i * 38} text={l} size={30} color={INK} weight={700} at={K12.predict + i * 4} />)}
-				<AnswerBox x={96} y={922 + (b.length - 1) * 38 + 14} w={1440} h={56} at={K12.predict + 10} lines={1} />
+				<Sx x={96} y={912} text={GIVEN1} size={30} color={INK} weight={700} at={K12.predict} />
+				{b.map((l, i) => <Sx key={i} x={96} y={956 + i * 38} text={l} size={30} color={INK} weight={700} at={K12.predict + 6 + i * 4} />)}
+				<AnswerBox x={96} y={956 + (b.length - 1) * 38 + 14} w={1300} h={56} at={K12.predict + 12} lines={1} />
 				<Sx x={1830} y={1060} text="Pause here to answer." size={44} color={AMBER_INK} hand anchor="end" at={K12.pause} />
 				<Countdown start={h.startFrame} end={h.endFrame} x={1720} y={830} r={54} />
 			</Overlay>
@@ -71,7 +73,7 @@ export const SceneFeedbackOneB7: React.FC = () => {
 		<>
 			<Heading text="Question one: feedback" at={4} size={50} />
 			<Overlay>
-				<Sx x={96} y={182} text="(a) Why is the new fur dark?   (b) Predict the young's back fur, and justify." size={26} color={INK_SOFT} weight={600} at={0} />
+				<Sx x={96} y={182} text="(a) Why is the new fur dark?   (b) The young also have the Himalayan genotype: predict their back fur, and justify." size={26} color={INK_SOFT} weight={600} at={0} />
 				<PlateB p={PLT.rabbit} cx={R1.x} cy={R1.y} w={R1.w} />
 				<PlateB p={PLT.rabbitPatch} cx={R2.x} cy={R2.y} w={R2.w} />
 				<IcePack x={790} y={300} s={0.6} />

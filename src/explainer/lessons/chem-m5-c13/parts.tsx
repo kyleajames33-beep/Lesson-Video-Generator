@@ -146,10 +146,10 @@ const MINI: {id: string; t: string}[] = [
 	{id: 'A', t: 'A  ammonium: soluble'},
 	{id: 'G', t: 'G  Group 1: soluble'},
 	{id: 'S', t: 'S  sulfates: soluble, except Ba^{2+}, Pb^{2+}'},
-	{id: 'S', t: '     (Ca^{2+}, Ag^{+}: slightly soluble)'},
+	{id: 'S', t: '     also Sr^{2+}; Ca^{2+}, Ag^{+}: slightly'},
 	{id: 'Ac', t: 'A  acetates: soluble'},
 	{id: 'Hal', t: 'G  halides: soluble, except Ag^{+}, Pb^{2+}'},
-	{id: 'Ins', t: 'others (CO_3^{2-}, OH^{-}): insoluble,'},
+	{id: 'Ins', t: 'others (CO_3^{2-}, OH^{-}): mostly insoluble,'},
 	{id: 'Ins', t: '     except Group 1, NH_4^{+}, Ba(OH)_2'},
 ];
 export const RulesMini: React.FC<{x: number; y: number; at: number; out?: number; size?: number; hi?: {id: string; at: number; out?: number}[]; title?: string}> = ({x, y, at, out, size = 22, hi = [], title = 'solubility rules'}) => {

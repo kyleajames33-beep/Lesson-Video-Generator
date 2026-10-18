@@ -146,7 +146,7 @@ export const SceneDecision: React.FC = () => {
 	const lines: MPiece[][] = [
 		[{t: '1  Write the dissolving equation.', at: K19.write, hand: true}],
 		[{t: '2  Each ion = its count × s; raise it to that count.', at: K19.each, hand: true}],
-		[{t: '3  Ksp given: solve for s (square or cube root).', at: K19.given, hand: true}],
+		[{t: '3  Ksp given: solve for s (1 : 1 or 1 : 2: square or cube root).', at: K19.given, hand: true}],
 		[{t: '4  s measured: E row first (g/L to mol/L first), then Ksp.', at: K19.meas, hand: true}],
 		[{t: '5  Compare Ksp directly only for the same formula type.', at: K19.cmp, hand: true}],
 	];

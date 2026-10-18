@@ -16,11 +16,14 @@ const K1 = cues(S('hook'), {
 	y1985: 'In 1985, British officials', boy: 'a boy returning from Ghana', son: "his mother's son", jeff: 'Alec Jeffreys', bands: 'patterns of bands',
 	compared: "He compared the boy's pattern", really: 'he really was her son', how: 'So how can a pattern', diff: 'how is that different',
 });
-const G1: GelG = {x: 900, y: 430, w: 420, h: 400, n: 2, lo: 5, hi: 16};
-const MUM1 = [6, 8, 9, 11, 13, 15], BOY1 = [6, 7, 9, 12, 13, 15];
+const G1: GelG = {x: 860, y: 430, w: 600, h: 400, n: 3, lo: 5, hi: 16};
+/** Lanes: mother, boy, and the father's bands rebuilt from the three undisputed siblings (as in the 1985 case). */
+const MUM1 = [6, 8, 9, 11, 13, 15], BOY1 = [6, 7, 9, 12, 13, 15], DAD1 = [7, 10, 12, 14];
+if (!BOY1.every(b => MUM1.includes(b) || DAD1.includes(b))) throw new Error('hook: every boy band must come from the mother or the rebuilt father');
 export const SceneHookB12: React.FC = () => {
 	const f = useCurrentFrame();
 	const shared = BOY1.filter(b => MUM1.includes(b));
+	const fromDad = BOY1.filter(b => !MUM1.includes(b) && DAD1.includes(b));
 	const solid = prog(f, K1.really + 20, 12);
 	const hy = G1.y - 50;
 	return (
@@ -41,8 +44,8 @@ export const SceneHookB12: React.FC = () => {
 				<Sx x={140} y={720} text="Alec Jeffreys: compare DNA" size={36} color={INK} weight={700} at={K1.jeff} />
 				<Sx x={140} y={768} text="as patterns of bands" size={36} color={INK} weight={700} at={K1.bands} />
 				{/* the pair, joined by a dashed then solid line */}
-				<Gel G={G1} electrodes={false} labels={false} lanes={[{sex: 'F', label: 'mother', bands: MUM1}, {sex: 'M', label: 'boy', bands: BOY1, small: true}]}
-					laneO={i => prog(f, i ? K1.boy : K1.son, 12)} bandO={(i, j) => prog(f, K1.bands + 6 + j * 4 + i * 2, 10)} />
+				<Gel G={G1} electrodes={false} labels={false} lanes={[{sex: 'F', label: 'mother', bands: MUM1}, {sex: 'M', label: 'boy', bands: BOY1, small: true}, {sex: 'M', label: 'father (rebuilt)', bands: DAD1}]}
+					laneO={i => prog(f, i === 2 ? K1.compared + 4 : i ? K1.boy : K1.son, 12)} bandO={(i, j) => prog(f, K1.bands + 6 + j * 4 + i * 2, 10)} />
 				<line x1={laneX(G1, 0) + 30} y1={hy} x2={laneX(G1, 1) - 26} y2={hy} stroke={INK} strokeWidth={3} strokeDasharray={solid > 0.5 ? undefined : '8 8'} opacity={prog(f, K1.son + 10, 10)} />
 				<Sx x={(laneX(G1, 0) + laneX(G1, 1)) / 2} y={hy - 14} text="?" size={40} color={AMBER_INK} weight={800} anchor="middle" opacity={1 - solid} at={K1.son + 10} />
 				{solid > 0.01 ? <Tick x={(laneX(G1, 0) + laneX(G1, 1)) / 2} y={hy - 30} at={K1.really + 20} s={34} /> : null}
@@ -51,10 +54,18 @@ export const SceneHookB12: React.FC = () => {
 						<line x1={laneX(G1, 0) + 40} y1={bandY(G1, b)} x2={laneX(G1, 1) - 40} y2={bandY(G1, b)} stroke={AMBER} strokeWidth={3} strokeDasharray="6 5" />
 					</g>
 				))}
-				<Sx x={G1.x + G1.w + 30} y={G1.y + 120} text="shared bands" size={34} color={AMBER_INK} hand at={K1.compared + 20} />
+				{fromDad.map((b, k) => (
+					<g key={b} opacity={prog(f, K1.compared + 34 + k * 5, 10)}>
+						<line x1={laneX(G1, 1) + 40} y1={bandY(G1, b)} x2={laneX(G1, 2) - 40} y2={bandY(G1, b)} stroke={AMBER} strokeWidth={3} strokeDasharray="6 5" />
+					</g>
+				))}
+				<Sx x={G1.x + G1.w + 30} y={G1.y + 80} text="every band in the boy:" size={30} color={AMBER_INK} hand at={K1.really} />
+				<Sx x={G1.x + G1.w + 30} y={G1.y + 118} text="from the mother or the father" size={30} color={AMBER_INK} hand at={K1.really + 6} />
+				<Sx x={G1.x + G1.w + 30} y={G1.y + 166} text="consistent with her son" size={30} color={INK} hand at={K1.really + 24} />
 				<GreyTag x={G1.x} y={G1.y + G1.h + 24} text="illustration, not the 1985 data" at={K1.bands + 20} size={24} />
-				<TileRow x={1450} y={760} seq="ATGGCA" pitch={64} w={56} h={46} tile={i => ({o: prog(f, K1.diff + i * 4, 8)})} />
-				<Sx x={1420} y={840} text="one base at a time?" size={36} color={INK} hand at={K1.diff + 20} />
+				<GreyTag x={G1.x} y={G1.y + G1.h + 64} text="father's bands rebuilt from three undisputed siblings" at={K1.compared + 10} size={24} />
+				<TileRow x={1500} y={760} seq="ATGGCA" pitch={60} w={52} h={46} tile={i => ({o: prog(f, K1.diff + i * 4, 8)})} />
+				<Sx x={1490} y={840} text="one base at a time?" size={36} color={INK} hand at={K1.diff + 20} />
 			</Overlay>
 		</>
 	);
@@ -151,6 +162,8 @@ export const SceneSequencingB12: React.FC = () => {
 			<Overlay>
 				<PlateB p={PL12.swab} cx={190} cy={420} w={110} o={prog(f, 0, 12)} />
 				<GreyTag x={140} y={540} text="sample" at={4} size={22} />
+				<GreyTag x={120} y={590} text="one common method:" at={K3.never + 10} size={22} />
+				<GreyTag x={120} y={626} text="dye-tagged short reads" at={K3.never + 14} size={22} />
 				<MistakeChip x={1140} y={196} text="reads a chromosome end to end" at={K3.never} cross={K3.never + 30} size={30} />
 				{/* fragments: rows (copies), open gaps, a jumbled pile, then the aligned stack */}
 				{FRAGS.map((fr, i) => {

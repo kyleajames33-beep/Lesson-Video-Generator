@@ -7,7 +7,7 @@ import {cues} from '../../cues';
 import {
 	ABead8, AMBER, AMBER_INK, AnswerBox, Card, Chip, Chr, Countdown, DrawPath, Enter, FLY, FONT_DISPLAY, FONT_HAND, Fade, GREY_INK, GameteDot, GreyTag, HandText,
 	Heading, INK, INK_SOFT, MistakeChip, ModelLine, Overlay, PCell, PL8, PlainArrow, PlateB, S, SRC, Shade, Soil, SpanBracket, Sun, Sx, chrBeadY, notesCheck, pbPt,
-	prog, pulse, spaced, vis, wrap,
+	chipW, prog, pulse, spaced, vis, wrap,
 } from './shared';
 
 // ---------- 11a. Attempt one (a fruit fly cell) ----------
@@ -176,6 +176,7 @@ export const SceneFeedbackTwoB8: React.FC = () => {
 };
 
 // ---------- 12. Decision rule and handoff ----------
+const NEWA = 'new allele: a mutation; passed on only from the egg or sperm line';
 const K15 = cues(S('decision-rule'), {asks: 'asks where variation comes from', sort: 'sort it first', newc: 'New combinations of existing alleles', newa: 'A new allele needs', same: 'if the genotypes are the same', env: 'look to the environment', next: "Next, you'll model", punnett: 'Punnett squares'});
 export const SceneDecisionB8: React.FC = () => {
 	const f = useCurrentFrame();
@@ -184,8 +185,8 @@ export const SceneDecisionB8: React.FC = () => {
 			<Heading text="Where does the variation come from? Sort it" at={4} size={52} />
 			<Overlay>
 				<Chip x={150} y={260} text="new combinations: crossing over, assortment, fertilisation" at={K15.newc} size={42} color={INK} stroke={AMBER} />
-				<Chip x={150} y={400} text="new allele: mutation in the egg or sperm line" at={K15.newa} size={42} color={AMBER_INK} stroke={AMBER} />
-				<ABead8 x={1110} y={433} t="new" r={30} amber={1} o={prog(f, K15.newa + 8, 10)} />
+				<Chip x={150} y={400} text={NEWA} at={K15.newa} size={38} color={AMBER_INK} stroke={AMBER} />
+				<ABead8 x={Math.min(1860, 150 + chipW(NEWA, 38) + 44)} y={432} t="new" r={30} amber={1} o={prog(f, K15.newa + 8, 10)} />
 				<Chip x={150} y={540} text="same genotype, different phenotype: environment" at={K15.same} size={42} color={INK} stroke="#a9825a" />
 				<Fade at={K15.next}>
 					<rect x={1000} y={760} width={824} height={120} rx={26} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />

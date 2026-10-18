@@ -1,0 +1,2681 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "purpose": "Draft Year 12 Module 6 video boundaries for Claude's review. Candidate route, not an approved coverage checklist or production order.",
+  "teachingOwnershipReset": {
+    "status": "draft-for-Claude-review",
+    "note": "Claude decides final boundaries and design; existing site lessons and pre-design packs are sources."
+  },
+  "canonicalDocuments": {
+    "module5Schema": "docs/production/module5-video-route-2026-10-10.json",
+    "chemistryPreDesign": "docs/production/claude-pm/pre-design/m6-index.md",
+    "siteExtracts": "docs/production/claude-pm/site-extracts/m6-index.md",
+    "memoryAids": "docs/production/module6-memory-aids-2026-10-11.md",
+    "coursePlan": "docs/production/course-progression-plan-2026-10-09.md"
+  },
+  "officialEvidence": {
+    "Chemistry": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 6,
+      "ledgerPath": "docs/production/programme/syllabus/chem-2017-y12.json",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "status": "Local ledger candidate mapping; exact official text and equations require review."
+    },
+    "Biology": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 6,
+      "ledgerPath": "docs/production/programme/syllabus/bio-2017-y12.json",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "status": "Local ledger candidate mapping; exact official text requires review."
+    }
+  },
+  "summaries": {
+    "Chemistry": {
+      "sourceCandidates": 19,
+      "plannedUploads": 27,
+      "core": 16,
+      "companions": 4,
+      "practicalSupport": 7,
+      "mappedActionGroups": 19,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Four G videos separate piled-up calculations; seven P videos target distinct practical actions."
+    },
+    "Biology": {
+      "sourceCandidates": 19,
+      "plannedUploads": 20,
+      "core": 20,
+      "companions": 0,
+      "practicalSupport": 0,
+      "mappedActionGroups": 14,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "All 13 local content points have candidate teaching entries. No explicit required hands-on practical was found."
+    }
+  },
+  "subjects": {
+    "Chemistry": {
+      "module": "Acid/Base Reactions",
+      "sourceCandidateCount": 19,
+      "entries": [
+        {
+          "id": "chem-m6-c01",
+          "title": "How did acid and base models improve?",
+          "type": "core",
+          "siteLessons": [
+            "L01"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-06"
+          ],
+          "prerequisites": [
+            "chem-m5-c01",
+            "chem-m5-c05"
+          ],
+          "estimatedMinutes": 6.5,
+          "start": "Compare Arrhenius acid and base definitions in water.",
+          "stop": "Explain the limitation that proton transfer resolves.",
+          "playlistOrder": 1,
+          "planAnchor": "C01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson01.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c01, chem-m5-c05 at the level needed for this question.",
+          "next": [
+            "chem-m6-c02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How did acid and base models improve?"
+        },
+        {
+          "id": "chem-m6-c02",
+          "title": "How do names and reactants predict acid reaction products?",
+          "type": "core",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-01",
+            "C6-IQ1-03"
+          ],
+          "prerequisites": [
+            "chem-m6-c01"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Name common inorganic acids and bases.",
+          "stop": "Predict and balance acid-base, acid-carbonate and acid-metal reactions.",
+          "playlistOrder": 2,
+          "planAnchor": "C02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson02.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c01 at the level needed for this question.",
+          "next": [
+            "chem-m6-c03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do names and reactants predict acid reaction products?"
+        },
+        {
+          "id": "chem-m6-c03",
+          "title": "How is neutralisation heat calculated?",
+          "type": "core",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-05"
+          ],
+          "prerequisites": [
+            "chem-m6-c02"
+          ],
+          "estimatedMinutes": 5.5,
+          "start": "Observe the temperature change during neutralisation.",
+          "stop": "Relate measured heat to moles reacted and the sign of enthalpy.",
+          "playlistOrder": 3,
+          "planAnchor": "C03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson03.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c02 at the level needed for this question.",
+          "next": [
+            "chem-m6-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How is neutralisation heat calculated?"
+        },
+        {
+          "id": "chem-m6-p02",
+          "title": "Measure the enthalpy of neutralisation",
+          "type": "practical",
+          "siteLessons": [
+            "L03",
+            "L10"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-05"
+          ],
+          "prerequisites": [
+            "chem-m6-c03"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Set up an insulated calorimeter and record starting conditions.",
+          "stop": "Use temperature data to calculate molar enthalpy and assess heat loss.",
+          "playlistOrder": 4,
+          "planAnchor": "P02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson03.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson10.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c03 at the level needed for this question.",
+          "next": [
+            "chem-m6-c04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "How can we measure molar enthalpy of neutralisation?"
+        },
+        {
+          "id": "chem-m6-c04",
+          "title": "Where does neutralisation solve a real problem?",
+          "type": "core",
+          "siteLessons": [
+            "L04"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-04"
+          ],
+          "prerequisites": [
+            "chem-m6-c02"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Identify an acidic or basic problem in a real setting.",
+          "stop": "Choose a neutralising treatment and explain its chemical effect.",
+          "playlistOrder": 5,
+          "planAnchor": "C04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson04.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c02 at the level needed for this question.",
+          "next": [
+            "chem-m6-c05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Where does neutralisation solve a real problem?"
+        },
+        {
+          "id": "chem-m6-c05",
+          "title": "How do strength and concentration differ?",
+          "type": "core",
+          "siteLessons": [
+            "L05",
+            "L06"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-03",
+            "C6-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m6-c01"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Compare particles in two acid or base solutions.",
+          "stop": "Distinguish extent of ionisation from amount per volume and connect both to pH.",
+          "playlistOrder": 6,
+          "planAnchor": "C05",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson05.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson06.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c01 at the level needed for this question.",
+          "next": [
+            "chem-m6-p03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do strength and concentration differ?"
+        },
+        {
+          "id": "chem-m6-p03",
+          "title": "Measure the pH of acids and bases",
+          "type": "practical",
+          "siteLessons": [
+            "L05",
+            "L08"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-01"
+          ],
+          "prerequisites": [
+            "chem-m6-c05"
+          ],
+          "estimatedMinutes": 5.5,
+          "start": "Calibrate a pH meter and choose a range of solutions.",
+          "stop": "Record pH and relate readings to the ions in each sample.",
+          "playlistOrder": 7,
+          "planAnchor": "P03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson05.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson08.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c05 at the level needed for this question.",
+          "next": [
+            "chem-m6-p04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "What pH do different acid and base samples have?"
+        },
+        {
+          "id": "chem-m6-p04",
+          "title": "Test how pH reveals acid and base strength",
+          "type": "practical",
+          "siteLessons": [
+            "L05",
+            "L06"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-03"
+          ],
+          "prerequisites": [
+            "chem-m6-c05",
+            "chem-m6-p03"
+          ],
+          "estimatedMinutes": 5.5,
+          "start": "Prepare equal-concentration strong and weak comparison solutions.",
+          "stop": "Measure pH with controlled conditions and explain the difference.",
+          "playlistOrder": 8,
+          "planAnchor": "P04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson05.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson06.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c05, chem-m6-p03 at the level needed for this question.",
+          "next": [
+            "chem-m6-c06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "What pH evidence separates strong and weak solutions?"
+        },
+        {
+          "id": "chem-m6-c06",
+          "title": "How do conjugate pairs and amphiprotic species react?",
+          "type": "core",
+          "siteLessons": [
+            "L07"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-04"
+          ],
+          "prerequisites": [
+            "chem-m6-c01",
+            "chem-m6-c05"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Follow one proton-transfer equation.",
+          "stop": "Identify conjugate pairs, water's role and a species that can donate or accept a proton.",
+          "playlistOrder": 9,
+          "planAnchor": "C06",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson07.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c01, chem-m6-c05 at the level needed for this question.",
+          "next": [
+            "chem-m6-c07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do conjugate pairs and amphiprotic species react?"
+        },
+        {
+          "id": "chem-m6-c07",
+          "title": "How do we calculate pH for strong acids and bases?",
+          "type": "core",
+          "siteLessons": [
+            "L08",
+            "L11"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-02",
+            "C6-IQ2-06"
+          ],
+          "prerequisites": [
+            "chem-m6-c05",
+            "chem-m6-c06"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Start with a stated concentration and complete ionisation.",
+          "stop": "Calculate pH or pOH, then choose the right dilution or mixing method.",
+          "playlistOrder": 10,
+          "planAnchor": "C07",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson08.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson11.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c05, chem-m6-c06 at the level needed for this question.",
+          "next": [
+            "chem-m6-g01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do we calculate pH for strong acids and bases?"
+        },
+        {
+          "id": "chem-m6-g01",
+          "title": "Strong acid and base pH, dilution and mixing practice",
+          "type": "practice",
+          "siteLessons": [
+            "L08",
+            "L11"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-02",
+            "C6-IQ2-06"
+          ],
+          "prerequisites": [
+            "chem-m6-c07"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Present an unfamiliar pH task and protect an attempt.",
+          "stop": "Work through moles, total volume and logarithms, then check the result.",
+          "playlistOrder": 11,
+          "planAnchor": "G01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson08.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson11.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c07 at the level needed for this question.",
+          "next": [
+            "chem-m6-c08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Calculation practice",
+          "mainLearnerQuestion": "Which pH method fits dilution and mixing?"
+        },
+        {
+          "id": "chem-m6-c08",
+          "title": "How can an ICE table predict weak acid or base pH?",
+          "type": "core",
+          "siteLessons": [
+            "L09"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c06",
+            "chem-m6-c07"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Start with partial ionisation and a known initial concentration.",
+          "stop": "Find equilibrium ion concentration with Ka or Kb and convert it to pH.",
+          "playlistOrder": 12,
+          "planAnchor": "C08",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson09.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c06, chem-m6-c07 at the level needed for this question.",
+          "next": [
+            "chem-m6-c09"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can an ICE table predict weak acid or base pH?"
+        },
+        {
+          "id": "chem-m6-c09",
+          "title": "Why can weak-acid neutralisation release different heat?",
+          "type": "core",
+          "siteLessons": [
+            "L10"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-05",
+            "C6-IQ3-03"
+          ],
+          "prerequisites": [
+            "chem-m6-c03",
+            "chem-m6-c05"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Compare measured heats for strong and weak reactants.",
+          "stop": "Use particle models to explain the ionisation step and the measured difference.",
+          "playlistOrder": 13,
+          "planAnchor": "C09",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson10.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c03, chem-m6-c05 at the level needed for this question.",
+          "next": [
+            "chem-m6-c10"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why can weak-acid neutralisation release different heat?"
+        },
+        {
+          "id": "chem-m6-c10",
+          "title": "What do Ka and pKa say about acid strength?",
+          "type": "core",
+          "siteLessons": [
+            "L12"
+          ],
+          "syllabusActions": [],
+          "prerequisites": [
+            "chem-m6-c08"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Compare two weak-acid dissociation equilibria.",
+          "stop": "Rank strengths and conjugates using Ka and pKa, subject to syllabus-source check.",
+          "playlistOrder": 14,
+          "planAnchor": "C10",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson12.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c08 at the level needed for this question.",
+          "next": [
+            "chem-m6-g02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What do Ka and pKa say about acid strength?"
+        },
+        {
+          "id": "chem-m6-g02",
+          "title": "Weak acid pH and Ka method selection practice",
+          "type": "practice",
+          "siteLessons": [
+            "L09",
+            "L11",
+            "L12"
+          ],
+          "syllabusActions": [
+            "C6-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c08",
+            "chem-m6-c10"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Present unfamiliar weak-acid data and protect an attempt.",
+          "stop": "Choose an approximation or full method, test the assumption and check pH.",
+          "playlistOrder": 15,
+          "planAnchor": "G02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson09.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson11.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson12.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c08, chem-m6-c10 at the level needed for this question.",
+          "next": [
+            "chem-m6-c11"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Calculation practice",
+          "mainLearnerQuestion": "Which weak-acid pH method fits these data?"
+        },
+        {
+          "id": "chem-m6-c11",
+          "title": "How does a buffer resist a pH change?",
+          "type": "core",
+          "siteLessons": [
+            "L13"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-06",
+            "C6-IQ3-07"
+          ],
+          "prerequisites": [
+            "chem-m6-c06",
+            "chem-m6-c10"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Add acid or base to a weak-acid/conjugate-base mixture.",
+          "stop": "Explain the response, estimate pH and identify the capacity limit.",
+          "playlistOrder": 16,
+          "planAnchor": "C11",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson13.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c06, chem-m6-c10 at the level needed for this question.",
+          "next": [
+            "chem-m6-p05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does a buffer resist a pH change?"
+        },
+        {
+          "id": "chem-m6-p05",
+          "title": "Prepare and test a buffer",
+          "type": "practical",
+          "siteLessons": [
+            "L13"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-06"
+          ],
+          "prerequisites": [
+            "chem-m6-c11"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Prepare a weak acid and conjugate base mixture.",
+          "stop": "Add acid and base alongside a water control and compare pH changes.",
+          "playlistOrder": 17,
+          "planAnchor": "P05",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson13.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c11 at the level needed for this question.",
+          "next": [
+            "chem-m6-c12"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "How can we prepare and test a buffer?"
+        },
+        {
+          "id": "chem-m6-c12",
+          "title": "How does direct titration reveal an unknown concentration?",
+          "type": "core",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-01"
+          ],
+          "prerequisites": [
+            "chem-m6-c02",
+            "chem-m6-c07"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Use a known standard and an unknown solution.",
+          "stop": "Use concordant titres and a balanced mole ratio to find concentration.",
+          "playlistOrder": 18,
+          "planAnchor": "C12",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson14.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c02, chem-m6-c07 at the level needed for this question.",
+          "next": [
+            "chem-m6-p06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does direct titration reveal an unknown concentration?"
+        },
+        {
+          "id": "chem-m6-p06",
+          "title": "Determine an unknown concentration by titration",
+          "type": "practical",
+          "siteLessons": [
+            "L14",
+            "L18"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-01"
+          ],
+          "prerequisites": [
+            "chem-m6-c12"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Prepare or select a standard, then set up burette and pipette.",
+          "stop": "Collect concordant titres, calculate concentration and evaluate errors.",
+          "playlistOrder": 19,
+          "planAnchor": "P06",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson14.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson18.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c12 at the level needed for this question.",
+          "next": [
+            "chem-m6-g03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "How can titration determine an unknown concentration?"
+        },
+        {
+          "id": "chem-m6-g03",
+          "title": "Standardisation and titration calculation practice",
+          "type": "practice",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-01"
+          ],
+          "prerequisites": [
+            "chem-m6-c12",
+            "chem-m6-p06"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Present a new standardisation and titre table and protect an attempt.",
+          "stop": "Calculate concentration with stoichiometry and check units and titre choice.",
+          "playlistOrder": 20,
+          "planAnchor": "G03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson14.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c12, chem-m6-p06 at the level needed for this question.",
+          "next": [
+            "chem-m6-c13"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Calculation practice",
+          "mainLearnerQuestion": "How do standardisation and titres give concentration?"
+        },
+        {
+          "id": "chem-m6-c13",
+          "title": "Which indicator fits a titration?",
+          "type": "core",
+          "siteLessons": [
+            "L15",
+            "L17"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-02",
+            "C6-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c05",
+            "chem-m6-c12"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Observe a reversible indicator colour change.",
+          "stop": "Separate endpoint from equivalence and match transition range to the pH jump.",
+          "playlistOrder": 21,
+          "planAnchor": "C13",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson15.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson17.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c05, chem-m6-c12 at the level needed for this question.",
+          "next": [
+            "chem-m6-p01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Which indicator fits a titration?"
+        },
+        {
+          "id": "chem-m6-p01",
+          "title": "Prepare and test an acid-base indicator",
+          "type": "practical",
+          "siteLessons": [
+            "L02",
+            "L15"
+          ],
+          "syllabusActions": [
+            "C6-IQ1-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c02",
+            "chem-m6-c13"
+          ],
+          "estimatedMinutes": 5.5,
+          "start": "Prepare or select an indicator and record its initial colour.",
+          "stop": "Test acids and bases, then explain the reversible colour response.",
+          "playlistOrder": 22,
+          "planAnchor": "P01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson02.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson15.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c02, chem-m6-c13 at the level needed for this question.",
+          "next": [
+            "chem-m6-c14"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "How can an indicator reveal acid-base behaviour?"
+        },
+        {
+          "id": "chem-m6-c14",
+          "title": "What do titration curves and conductivity reveal?",
+          "type": "core",
+          "siteLessons": [
+            "L16",
+            "L17"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c10",
+            "chem-m6-c13"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Read axes and starting pH on a reaction profile.",
+          "stop": "Infer strengths, equivalence region and a conductivity trend.",
+          "playlistOrder": 23,
+          "planAnchor": "C14",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson16.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson17.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c10, chem-m6-c13 at the level needed for this question.",
+          "next": [
+            "chem-m6-c15"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What do titration curves and conductivity reveal?"
+        },
+        {
+          "id": "chem-m6-c15",
+          "title": "When are back and conductometric titrations useful?",
+          "type": "core",
+          "siteLessons": [
+            "L18"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-01",
+            "C6-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c12",
+            "chem-m6-c14"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Start with an unsuitable direct endpoint or insoluble sample.",
+          "stop": "Use excess-reagent subtraction or a conductivity intersection.",
+          "playlistOrder": 24,
+          "planAnchor": "C15",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson18.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c12, chem-m6-c14 at the level needed for this question.",
+          "next": [
+            "chem-m6-g04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "When are back and conductometric titrations useful?"
+        },
+        {
+          "id": "chem-m6-g04",
+          "title": "Curves, indicators and back-titration practice",
+          "type": "practice",
+          "siteLessons": [
+            "L15",
+            "L16",
+            "L17",
+            "L18"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-01",
+            "C6-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m6-c15"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Present unfamiliar curve and titration data and protect an attempt.",
+          "stop": "Choose an indicator or method and show the short calculation or reason.",
+          "playlistOrder": 25,
+          "planAnchor": "G04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson15.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson16.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson17.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Chemistry-Y12-M6-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson18.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c15 at the level needed for this question.",
+          "next": [
+            "chem-m6-c16"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Calculation practice",
+          "mainLearnerQuestion": "What can curves, indicators and back titration reveal?"
+        },
+        {
+          "id": "chem-m6-c16",
+          "title": "Which acid-base analysis method fits a sample?",
+          "type": "core",
+          "siteLessons": [
+            "L19"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-04",
+            "C6-IQ3-05"
+          ],
+          "prerequisites": [
+            "chem-m6-c12",
+            "chem-m6-c15"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Describe a sample and the question to answer.",
+          "stop": "Justify a suitable method and state what its measurement establishes.",
+          "playlistOrder": 26,
+          "planAnchor": "C16",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson19.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c12, chem-m6-c15 at the level needed for this question.",
+          "next": [
+            "chem-m6-p07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Which acid-base analysis method fits a sample?"
+        },
+        {
+          "id": "chem-m6-p07",
+          "title": "Analyse the acidity or basicity of a household sample",
+          "type": "practical",
+          "siteLessons": [
+            "L19"
+          ],
+          "syllabusActions": [
+            "C6-IQ3-05"
+          ],
+          "prerequisites": [
+            "chem-m6-c16",
+            "chem-m6-p06"
+          ],
+          "estimatedMinutes": 6.5,
+          "start": "Choose a household sample, preparation and suitable analysis method.",
+          "stop": "Measure, calculate or interpret its acidity or basicity and report limitations.",
+          "playlistOrder": 27,
+          "planAnchor": "P07",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M6-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson19.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m6-c16, chem-m6-p06 at the level needed for this question.",
+          "next": [],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "How acidic or basic is a household sample?"
+        }
+      ],
+      "sourceDisposition": [
+        {
+          "sourceId": "Chemistry-Y12-M6-L01",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson01.sa.html",
+          "entryIds": [
+            "chem-m6-c01"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L02",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson02.sa.html",
+          "entryIds": [
+            "chem-m6-c02",
+            "chem-m6-p01"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L03",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson03.sa.html",
+          "entryIds": [
+            "chem-m6-c03",
+            "chem-m6-p02"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L04",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson04.sa.html",
+          "entryIds": [
+            "chem-m6-c04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L05",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson05.sa.html",
+          "entryIds": [
+            "chem-m6-c05",
+            "chem-m6-p03",
+            "chem-m6-p04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L06",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson06.sa.html",
+          "entryIds": [
+            "chem-m6-c05",
+            "chem-m6-p04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L07",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson07.sa.html",
+          "entryIds": [
+            "chem-m6-c06"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L08",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson08.sa.html",
+          "entryIds": [
+            "chem-m6-p03",
+            "chem-m6-c07",
+            "chem-m6-g01"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L09",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson09.sa.html",
+          "entryIds": [
+            "chem-m6-c08",
+            "chem-m6-g02"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L10",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson10.sa.html",
+          "entryIds": [
+            "chem-m6-p02",
+            "chem-m6-c09"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L11",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson11.sa.html",
+          "entryIds": [
+            "chem-m6-c07",
+            "chem-m6-g01",
+            "chem-m6-g02"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L12",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson12.sa.html",
+          "entryIds": [
+            "chem-m6-c10",
+            "chem-m6-g02"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L13",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson13.sa.html",
+          "entryIds": [
+            "chem-m6-c11",
+            "chem-m6-p05"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L14",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson14.sa.html",
+          "entryIds": [
+            "chem-m6-c12",
+            "chem-m6-p06",
+            "chem-m6-g03"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L15",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson15.sa.html",
+          "entryIds": [
+            "chem-m6-p01",
+            "chem-m6-c13",
+            "chem-m6-g04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L16",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson16.sa.html",
+          "entryIds": [
+            "chem-m6-c14",
+            "chem-m6-g04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L17",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson17.sa.html",
+          "entryIds": [
+            "chem-m6-c13",
+            "chem-m6-c14",
+            "chem-m6-g04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L18",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson18.sa.html",
+          "entryIds": [
+            "chem-m6-p06",
+            "chem-m6-c15",
+            "chem-m6-g04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Chemistry-Y12-M6-L19",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module6/lesson19.sa.html",
+          "entryIds": [
+            "chem-m6-c16",
+            "chem-m6-p07"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        }
+      ],
+      "deferredScope": [
+        "Ka and pKa appear in site L12 and its pre-design pack but no matching point appears in the local 2017 ledger. Verify the official syllabus wording before a recording brief assigns direct syllabus coverage."
+      ],
+      "checkedRequiredParagraphIds": [],
+      "requiredParagraphsWithoutAnyCandidateEntry": [],
+      "paragraphCoverageStatus": "Local 2017 content-point IDs mapped as draft candidates; no paragraph-level or practical approval."
+    },
+    "Biology": {
+      "module": "Genetic Change",
+      "sourceCandidateCount": 19,
+      "entries": [
+        {
+          "id": "bio-m6-b01",
+          "title": "How does mutation add a new allele?",
+          "type": "core",
+          "siteLessons": [
+            "L01"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m5-b05a",
+            "bio-m5-b06a"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Change a DNA sequence.",
+          "stop": "Distinguish a new allele from a reshuffled existing allele.",
+          "playlistOrder": 1,
+          "planAnchor": "B01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson01.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b05a, bio-m5-b06a at the level needed for this question.",
+          "next": [
+            "bio-m6-b02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does mutation add a new allele?"
+        },
+        {
+          "id": "bio-m6-b02",
+          "title": "How do mutagens increase DNA damage?",
+          "type": "core",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b01"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Compare UV, ionising radiation and chemical exposure.",
+          "stop": "Explain damage mechanisms without treating exposure as a guaranteed mutation.",
+          "playlistOrder": 2,
+          "planAnchor": "B02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson02.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b01 at the level needed for this question.",
+          "next": [
+            "bio-m6-b03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do mutagens increase DNA damage?"
+        },
+        {
+          "id": "bio-m6-b03",
+          "title": "How can one base change affect a protein?",
+          "type": "core",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m5-b06b",
+            "bio-m5-b06c",
+            "bio-m6-b01"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Change one base in a coding sequence.",
+          "stop": "Compare substitution, insertion and deletion effects on codons and protein.",
+          "playlistOrder": 3,
+          "planAnchor": "B03",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson03.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b06b, bio-m5-b06c, bio-m6-b01 at the level needed for this question.",
+          "next": [
+            "bio-m6-b04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can one base change affect a protein?"
+        },
+        {
+          "id": "bio-m6-b04",
+          "title": "What changes when chromosomes mutate?",
+          "type": "core",
+          "siteLessons": [
+            "L04"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m6-b01",
+            "bio-m5-b05b"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Change chromosome structure or number.",
+          "stop": "Explain large-scale effects and contrast them with point mutation.",
+          "playlistOrder": 4,
+          "planAnchor": "B04",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson04.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b01, bio-m5-b05b at the level needed for this question.",
+          "next": [
+            "bio-m6-b05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What changes when chromosomes mutate?"
+        },
+        {
+          "id": "bio-m6-b05",
+          "title": "Which mutations can descendants inherit?",
+          "type": "core",
+          "siteLessons": [
+            "L05"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-03"
+          ],
+          "prerequisites": [
+            "bio-m6-b01"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Place the same mutation in a body cell or germ-line cell.",
+          "stop": "Explain its effect on the organism and the possibility of inheritance.",
+          "playlistOrder": 5,
+          "planAnchor": "B05",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson05.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b01 at the level needed for this question.",
+          "next": [
+            "bio-m6-b06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Which mutations can descendants inherit?"
+        },
+        {
+          "id": "bio-m6-b06",
+          "title": "Why does DNA location affect mutation outcome?",
+          "type": "core",
+          "siteLessons": [
+            "L05"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-04"
+          ],
+          "prerequisites": [
+            "bio-m6-b03",
+            "bio-m6-b05"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Change a coding or non-coding DNA region.",
+          "stop": "Explain how gene product or regulation may change.",
+          "playlistOrder": 6,
+          "planAnchor": "B06",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson05.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b03, bio-m6-b05 at the level needed for this question.",
+          "next": [
+            "bio-m6-b07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why does DNA location affect mutation outcome?"
+        },
+        {
+          "id": "bio-m6-b07",
+          "title": "How do meiosis and fertilisation vary offspring?",
+          "type": "core",
+          "siteLessons": [
+            "L06"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-05"
+          ],
+          "prerequisites": [
+            "bio-m5-b04",
+            "bio-m5-b05b",
+            "bio-m6-b01"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Follow gamete formation and joining.",
+          "stop": "Separate allele shuffling from mutation that creates a new allele.",
+          "playlistOrder": 7,
+          "planAnchor": "B07",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson06.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b04, bio-m5-b05b, bio-m6-b01 at the level needed for this question.",
+          "next": [
+            "bio-m6-b08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do meiosis and fertilisation vary offspring?"
+        },
+        {
+          "id": "bio-m6-b08",
+          "title": "How do mutation, gene flow and drift change a gene pool?",
+          "type": "core",
+          "siteLessons": [
+            "L07",
+            "L19"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-06"
+          ],
+          "prerequisites": [
+            "bio-m6-b01",
+            "bio-m6-b07",
+            "bio-m5-b10"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Compare two population gene pools.",
+          "stop": "Trace new alleles, movement and chance changes in allele frequency.",
+          "playlistOrder": 8,
+          "planAnchor": "B08",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson07.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Biology-Y12-M6-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson19.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b01, bio-m6-b07, bio-m5-b10 at the level needed for this question.",
+          "next": [
+            "bio-m6-b09"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do mutation, gene flow and drift change a gene pool?"
+        },
+        {
+          "id": "bio-m6-b09",
+          "title": "What counts as biotechnology?",
+          "type": "core",
+          "siteLessons": [
+            "L08"
+          ],
+          "syllabusActions": [
+            "B6-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m5-b01",
+            "bio-m5-b06a"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Compare yeast use and selective breeding with a modern technique.",
+          "stop": "Describe uses without assuming every biotechnology directly edits DNA.",
+          "playlistOrder": 9,
+          "planAnchor": "B09",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson08.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b01, bio-m5-b06a at the level needed for this question.",
+          "next": [
+            "bio-m6-b10"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What counts as biotechnology?"
+        },
+        {
+          "id": "bio-m6-b10",
+          "title": "How should plant and animal biotechnology be judged?",
+          "type": "core",
+          "siteLessons": [
+            "L09"
+          ],
+          "syllabusActions": [
+            "B6-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b09"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Introduce a plant or animal biotechnology case.",
+          "stop": "Judge a concrete benefit, harm and affected group.",
+          "playlistOrder": 10,
+          "planAnchor": "B10",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson09.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b09 at the level needed for this question.",
+          "next": [
+            "bio-m6-b11"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How should plant and animal biotechnology be judged?"
+        },
+        {
+          "id": "bio-m6-b11",
+          "title": "Which future biotechnology uses are plausible?",
+          "type": "core",
+          "siteLessons": [
+            "L10"
+          ],
+          "syllabusActions": [
+            "B6-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b09",
+            "bio-m5-b06c"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Move from an existing technique to a proposed future use.",
+          "stop": "Explain the mechanism, possible benefit and uncertainty.",
+          "playlistOrder": 11,
+          "planAnchor": "B11",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson10.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b09, bio-m5-b06c at the level needed for this question.",
+          "next": [
+            "bio-m6-b12"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Which future biotechnology uses are plausible?"
+        },
+        {
+          "id": "bio-m6-b12",
+          "title": "How can biotechnology change biodiversity?",
+          "type": "core",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "B6-IQ2-01",
+            "B6-IQ3-06"
+          ],
+          "prerequisites": [
+            "bio-m6-b08",
+            "bio-m6-b09"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Choose a crop or conservation case and a comparison baseline.",
+          "stop": "Trace genetic, species or ecosystem effects.",
+          "playlistOrder": 12,
+          "planAnchor": "B12",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson11.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b08, bio-m6-b09 at the level needed for this question.",
+          "next": [
+            "bio-m6-b13"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can biotechnology change biodiversity?"
+        },
+        {
+          "id": "bio-m6-b13",
+          "title": "How do we weigh benefits against biodiversity risks?",
+          "type": "core",
+          "siteLessons": [
+            "L12"
+          ],
+          "syllabusActions": [
+            "B6-IQ2-01",
+            "B6-IQ3-06"
+          ],
+          "prerequisites": [
+            "bio-m6-b10",
+            "bio-m6-b12"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Compare two biotechnology cases.",
+          "stop": "Reach a justified conditional judgement from their evidence.",
+          "playlistOrder": 13,
+          "planAnchor": "B13",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson12.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b10, bio-m6-b12 at the level needed for this question.",
+          "next": [
+            "bio-m6-b14"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do we weigh benefits against biodiversity risks?"
+        },
+        {
+          "id": "bio-m6-b14",
+          "title": "What do current genetic technologies change?",
+          "type": "core",
+          "siteLessons": [
+            "L13"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b09",
+            "bio-m5-b06a"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Compare parental choice, copying and DNA insertion.",
+          "stop": "Identify what each technique changes and its advantage.",
+          "playlistOrder": 14,
+          "planAnchor": "B14",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson13.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b09, bio-m5-b06a at the level needed for this question.",
+          "next": [
+            "bio-m6-b15"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What do current genetic technologies change?"
+        },
+        {
+          "id": "bio-m6-b15",
+          "title": "How do artificial insemination and pollination compare?",
+          "type": "core",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-02"
+          ],
+          "prerequisites": [
+            "bio-m5-b01",
+            "bio-m5-b02a",
+            "bio-m5-b02b",
+            "bio-m6-b14"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Choose parents whose gametes will meet.",
+          "stop": "Compare the two methods' steps and outcomes.",
+          "playlistOrder": 15,
+          "planAnchor": "B15",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson14.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b01, bio-m5-b02a, bio-m5-b02b, bio-m6-b14 at the level needed for this question.",
+          "next": [
+            "bio-m6-b16"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do artificial insemination and pollination compare?"
+        },
+        {
+          "id": "bio-m6-b16",
+          "title": "How is a whole organism cloned and judged?",
+          "type": "core",
+          "siteLessons": [
+            "L15"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-03"
+          ],
+          "prerequisites": [
+            "bio-m5-b01",
+            "bio-m6-b14"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Start with a donor somatic nucleus and enucleated egg.",
+          "stop": "Trace nuclear transfer and assess effectiveness.",
+          "playlistOrder": 16,
+          "planAnchor": "B16",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson15.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b01, bio-m6-b14 at the level needed for this question.",
+          "next": [
+            "bio-m6-b17"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How is a whole organism cloned and judged?"
+        },
+        {
+          "id": "bio-m6-b17",
+          "title": "How is a gene cloned and judged?",
+          "type": "core",
+          "siteLessons": [
+            "L15"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-03"
+          ],
+          "prerequisites": [
+            "bio-m6-b14",
+            "bio-m5-b06a"
+          ],
+          "estimatedMinutes": 5,
+          "start": "Start with a target gene and vector.",
+          "stop": "Trace host copying and distinguish the output from organism cloning.",
+          "playlistOrder": 17,
+          "planAnchor": "B17",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson15.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b14, bio-m5-b06a at the level needed for this question.",
+          "next": [
+            "bio-m6-b18"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How is a gene cloned and judged?"
+        },
+        {
+          "id": "bio-m6-b18",
+          "title": "How does recombinant DNA enter a host?",
+          "type": "core",
+          "siteLessons": [
+            "L16"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-04"
+          ],
+          "prerequisites": [
+            "bio-m6-b17",
+            "bio-m5-b06b",
+            "bio-m5-b06c"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Start with a DNA fragment and vector.",
+          "stop": "Trace joining, host uptake and an accurate application.",
+          "playlistOrder": 18,
+          "planAnchor": "B18",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson16.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b17, bio-m5-b06b, bio-m5-b06c at the level needed for this question.",
+          "next": [
+            "bio-m6-b19"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does recombinant DNA enter a host?"
+        },
+        {
+          "id": "bio-m6-b19",
+          "title": "Which genetic technology benefits hold up?",
+          "type": "core",
+          "siteLessons": [
+            "L17"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-05"
+          ],
+          "prerequisites": [
+            "bio-m6-b12",
+            "bio-m6-b18"
+          ],
+          "estimatedMinutes": 6,
+          "start": "Compare agricultural, medical and industrial cases.",
+          "stop": "Evaluate specific benefits and trade-offs with evidence.",
+          "playlistOrder": 19,
+          "planAnchor": "B19",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson17.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b12, bio-m6-b18 at the level needed for this question.",
+          "next": [
+            "bio-m6-b20"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Which genetic technology benefits hold up?"
+        },
+        {
+          "id": "bio-m6-b20",
+          "title": "Why can social context limit long-term genetic change?",
+          "type": "core",
+          "siteLessons": [
+            "L18",
+            "L19"
+          ],
+          "syllabusActions": [
+            "B6-IQ3-07"
+          ],
+          "prerequisites": [
+            "bio-m6-b08",
+            "bio-m6-b19"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Begin with a functioning biotechnology.",
+          "stop": "Explain how adoption, access, culture and population dynamics affect its reach.",
+          "playlistOrder": 20,
+          "planAnchor": "B20",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson18.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            },
+            {
+              "id": "Biology-Y12-M6-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson19.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b08, bio-m6-b19 at the level needed for this question.",
+          "next": [],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why can social context limit long-term genetic change?"
+        }
+      ],
+      "sourceDisposition": [
+        {
+          "sourceId": "Biology-Y12-M6-L01",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson01.sa.html",
+          "entryIds": [
+            "bio-m6-b01"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L02",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson02.sa.html",
+          "entryIds": [
+            "bio-m6-b02"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L03",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson03.sa.html",
+          "entryIds": [
+            "bio-m6-b03"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L04",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson04.sa.html",
+          "entryIds": [
+            "bio-m6-b04"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L05",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson05.sa.html",
+          "entryIds": [
+            "bio-m6-b05",
+            "bio-m6-b06"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L06",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson06.sa.html",
+          "entryIds": [
+            "bio-m6-b07"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L07",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson07.sa.html",
+          "entryIds": [
+            "bio-m6-b08"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L08",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson08.sa.html",
+          "entryIds": [
+            "bio-m6-b09"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L09",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson09.sa.html",
+          "entryIds": [
+            "bio-m6-b10"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L10",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson10.sa.html",
+          "entryIds": [
+            "bio-m6-b11"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L11",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson11.sa.html",
+          "entryIds": [
+            "bio-m6-b12"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L12",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson12.sa.html",
+          "entryIds": [
+            "bio-m6-b13"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L13",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson13.sa.html",
+          "entryIds": [
+            "bio-m6-b14"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L14",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson14.sa.html",
+          "entryIds": [
+            "bio-m6-b15"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L15",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson15.sa.html",
+          "entryIds": [
+            "bio-m6-b16",
+            "bio-m6-b17"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L16",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson16.sa.html",
+          "entryIds": [
+            "bio-m6-b18"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L17",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson17.sa.html",
+          "entryIds": [
+            "bio-m6-b19"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L18",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson18.sa.html",
+          "entryIds": [
+            "bio-m6-b20"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        },
+        {
+          "sourceId": "Biology-Y12-M6-L19",
+          "sourcePath": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson19.sa.html",
+          "entryIds": [
+            "bio-m6-b08",
+            "bio-m6-b20"
+          ],
+          "decision": "Assign each named portion to focused entries; do not render the full site page repeatedly.",
+          "inventoryState": "site-source-present-unreviewed"
+        }
+      ],
+      "deferredScope": [
+        "No separate required hands-on practical appears in the local Module 6 Biology content-point wording. Investigation and source-evaluation actions remain in the core entries."
+      ],
+      "checkedRequiredParagraphIds": [],
+      "requiredParagraphsWithoutAnyCandidateEntry": [],
+      "paragraphCoverageStatus": "Local 2017 content-point IDs mapped as draft candidates; no paragraph-level approval."
+    }
+  },
+  "syllabusActions": [
+    {
+      "id": "C6-IQ1-01",
+      "subject": "Chemistry",
+      "paraphrase": "investigate the correct IUPAC nomenclature and properties of common inorganic acids and bases (ACSCH067)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ1-02",
+      "subject": "Chemistry",
+      "paraphrase": "conduct an investigation to demonstrate the preparation and use of indicators as illustrators of the characteristics and properties of acids and bases and their reversible reactions (ACSCH101)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-p01",
+        "chem-m6-c13"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ1-03",
+      "subject": "Chemistry",
+      "paraphrase": "predict the products of acid reactions and write balanced equations to represent:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ1-04",
+      "subject": "Chemistry",
+      "paraphrase": "investigate applications of neutralisation reactions in everyday life and industrial processes",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c04"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ1-05",
+      "subject": "Chemistry",
+      "paraphrase": "conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c03",
+        "chem-m6-p02",
+        "chem-m6-c09"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ1-06",
+      "subject": "Chemistry",
+      "paraphrase": "explore the changes in definitions and models of an acid and a base over time to explain the limitations of each model, including but not limited to:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ2-01",
+      "subject": "Chemistry",
+      "paraphrase": "conduct a practical investigation to measure the pH of a range of acids and bases",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-p03"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ2-02",
+      "subject": "Chemistry",
+      "paraphrase": "calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH�]) for a range of solutions (ACSCH102)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c07",
+        "chem-m6-g01",
+        "chem-m6-c08",
+        "chem-m6-g02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ2-03",
+      "subject": "Chemistry",
+      "paraphrase": "conduct an investigation to demonstrate the use of pH to indicate the differences between the strength of acids and bases (ACSCH102)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c05",
+        "chem-m6-p04"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ2-04",
+      "subject": "Chemistry",
+      "paraphrase": "write ionic equations to represent the dissociation of acids and bases in water, conjugate acid/base pairs in solution and amphiprotic nature of some salts, for example:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c06"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ2-05",
+      "subject": "Chemistry",
+      "paraphrase": "construct models and/or animations to communicate the differences between strong, weak, concentrated and dilute acids and bases (ACSCH099)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c05"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ2-06",
+      "subject": "Chemistry",
+      "paraphrase": "calculate the pH of the resultant solution when solutions of acids and/or bases are diluted or mixed",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c07",
+        "chem-m6-g01"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-01",
+      "subject": "Chemistry",
+      "paraphrase": "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c12",
+        "chem-m6-p06",
+        "chem-m6-g03",
+        "chem-m6-c15",
+        "chem-m6-g04"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-02",
+      "subject": "Chemistry",
+      "paraphrase": "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c13",
+        "chem-m6-c14",
+        "chem-m6-c15",
+        "chem-m6-g04"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-03",
+      "subject": "Chemistry",
+      "paraphrase": "model neutralisation of strong and weak acids and bases using a variety of media",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c09"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-04",
+      "subject": "Chemistry",
+      "paraphrase": "explore acid/base analysis techniques that are applied:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c16"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-05",
+      "subject": "Chemistry",
+      "paraphrase": "conduct a chemical analysis of a common household substance for its acidity or basicity (ACSCH080)   , for example:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c16",
+        "chem-m6-p07"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-06",
+      "subject": "Chemistry",
+      "paraphrase": "conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c11",
+        "chem-m6-p05"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "C6-IQ3-07",
+      "subject": "Chemistry",
+      "paraphrase": "describe the importance of buffers in natural systems (ACSCH098, ACSCH102)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "candidateEntryIds": [
+        "chem-m6-c11"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ1-01",
+      "subject": "Biology",
+      "paraphrase": "explain how a range of mutagens operate, including but not limited to:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b02"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ1-02",
+      "subject": "Biology",
+      "paraphrase": "compare the causes, processes and effects of different types of mutation, including but not limited to:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b01",
+        "bio-m6-b03",
+        "bio-m6-b04"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ1-03",
+      "subject": "Biology",
+      "paraphrase": "distinguish between somatic mutations and germ-line mutations and their effect on an organism   (ACSBL082, ACSBL083)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b05"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ1-04",
+      "subject": "Biology",
+      "paraphrase": "assess the significance of �coding� and �non-coding� DNA segments in the process of mutation (ACSBL078)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b06"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ1-05",
+      "subject": "Biology",
+      "paraphrase": "investigate the causes of genetic variation relating to the processes of fertilisation, meiosis and mutation (ACSBL078)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b07"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ1-06",
+      "subject": "Biology",
+      "paraphrase": "evaluate the effect of mutation, gene flow and genetic drift on the gene pool of populations (ACSBL091, ACSBL092)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b08"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ2-01",
+      "subject": "Biology",
+      "paraphrase": "investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b09",
+        "bio-m6-b10",
+        "bio-m6-b11",
+        "bio-m6-b12",
+        "bio-m6-b13"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-01",
+      "subject": "Biology",
+      "paraphrase": "investigate the uses and advantages of current genetic technologies that induce genetic change",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b14"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-02",
+      "subject": "Biology",
+      "paraphrase": "compare the processes and outcomes of reproductive technologies, including but not limited to:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b15"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-03",
+      "subject": "Biology",
+      "paraphrase": "investigate and assess the effectiveness of cloning, including but not limited to:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b16",
+        "bio-m6-b17"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-04",
+      "subject": "Biology",
+      "paraphrase": "describe techniques and applications used in recombinant DNA technology, for example:",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b18"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-05",
+      "subject": "Biology",
+      "paraphrase": "evaluate the benefits of using genetic technologies in agricultural, medical and industrial applications (ACSBL086)",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b19"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-06",
+      "subject": "Biology",
+      "paraphrase": "evaluate the effect on biodiversity of using biotechnology in agriculture",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b12",
+        "bio-m6-b13"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    },
+    {
+      "id": "B6-IQ3-07",
+      "subject": "Biology",
+      "paraphrase": "interpret a range of secondary sources to assess the influence of social, economic and cultural contexts on a range of biotechnologies",
+      "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+      "candidateEntryIds": [
+        "bio-m6-b20"
+      ],
+      "status": "candidate-mapped; unapproved",
+      "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
+      "paragraphIds": []
+    }
+  ],
+  "gaps": [
+    {
+      "id": "M6-G01",
+      "subject": "Chemistry",
+      "actions": [
+        "C6-IQ1-05",
+        "C6-IQ2-01",
+        "C6-IQ2-03",
+        "C6-IQ3-01",
+        "C6-IQ3-05",
+        "C6-IQ3-06"
+      ],
+      "status": "actual-conduct-not-evidenced",
+      "gap": "Methods, measurements, uncertainty and student conduct remain unverified."
+    },
+    {
+      "id": "M6-G02",
+      "subject": "Chemistry",
+      "actions": [
+        "C6-IQ2-02"
+      ],
+      "status": "source-mismatch-open",
+      "gap": "The local ledger has no Ka/pKa content-point ID although site L12 and its pre-design pack quote one. Verify the official source before assigning direct syllabus coverage."
+    },
+    {
+      "id": "M6-G03",
+      "subject": "Biology",
+      "actions": [
+        "B6-IQ1-05",
+        "B6-IQ2-01",
+        "B6-IQ3-01",
+        "B6-IQ3-03"
+      ],
+      "status": "investigation-evidence-pending",
+      "gap": "Investigation and evaluation tasks need reviewed learner responses; the local ledger practical flag is automated."
+    }
+  ],
+  "externalHandoffs": [
+    {
+      "id": "Claude-review",
+      "description": "Review focused boundaries, the Ka/pKa source mismatch and practical segmentation before lesson design."
+    }
+  ],
+  "verification": {
+    "method": "Checked the local 2017 Module 6 ledgers, 32 pre-design packs, site lesson inventory and Module 5 route schema.",
+    "sourceCounts": {
+      "Chemistry": 19,
+      "Biology": 19
+    },
+    "entryCount": 47,
+    "actionGroupCount": 33,
+    "allModule6SiteLessonsAssigned": true,
+    "allActionGroupsHaveCandidateEntries": true,
+    "uniqueEntryIds": true,
+    "entryLinksResolve": true,
+    "localSitePathsExist": true,
+    "noEmDash": true,
+    "limitation": "Structural draft only. No science, script, practical conduct, playback or release approval."
+  }
+}

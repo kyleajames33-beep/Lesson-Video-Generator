@@ -44,7 +44,8 @@ export const SceneXPedigreeB10: React.FC = () => {
 				<Sx x={1180} y={346} text="through carrier mothers (dot)" size={34} color={AMBER_INK} hand at={K5.through + 6} />
 				<Sx x={1180} y={402} text="father to son: never (a son gets his Y)" size={34} color={INK} hand at={K5.never + 6} />
 				<MistakeChip x={1180} y={440} text="only from mothers" at={K5.but} cross={K5.but + 16} size={30} />
-				<Sx x={1180} y={556} text="affected father: all his daughters carriers" size={32} color={INK} hand at={K5.allcar} />
+				<Sx x={1180} y={540} text="affected father: every daughter gets his X^{h}" size={30} color={INK} hand at={K5.allcar} />
+				<Sx x={1180} y={576} text="here mum gives X^{H}, so each is a carrier" size={30} color={INK} hand at={K5.allcar + 6} />
 				{/* the quick test, on B9's family */}
 				<g opacity={p1}>
 					<rect x={1180} y={600} width={650} height={420} rx={22} fill="#fffdf8" stroke={AMBER} strokeWidth={3} />

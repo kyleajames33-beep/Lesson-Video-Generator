@@ -136,6 +136,7 @@ export const SceneAttemptTwoB12: React.FC = () => {
 				<PopCards y={210} at={K12c.res} />
 				<Sx x={110} y={600} text="disease-linked variant: a single-base change" size={36} color={INK} weight={700} at={K12c.variant} />
 				<Sx x={110} y={650} text="Question: is it more common in one population than the other?" size={32} color={INK_SOFT} weight={600} at={K12c.more} />
+				<Sx x={110} y={704} text="DNA profiling here means the repeat-length (STR) method from this video." size={28} color={INK_SOFT} weight={600} at={K12c.explain} />
 				<Sx x={110} y={760} text={D2A} size={34} color={INK} weight={700} at={K12c.explain} />
 				<AnswerBox x={110} y={776} w={1300} h={60} at={K12c.explain + 8} />
 				<Sx x={110} y={900} text={D2B} size={34} color={INK} weight={700} at={K12c.then} />
@@ -158,7 +159,7 @@ export const SceneFeedbackTwoB12: React.FC = () => (
 			<GreyTag x={1500} y={430} text="allele frequency in each (illustrative)" at={K12d.freq + 10} size={22} />
 			<ModelLine x={140} y={540} text="(a) the variant is one base: sequencing reads it in everyone tested," at={K12d.reads} size={34} />
 			<Sx x={140} y={588} text="so its frequency can be compared" size={34} color={INK} weight={600} at={K12d.freq} />
-			<Sx x={140} y={636} text="profiling measures repeat lengths only" size={34} color={INK} weight={600} at={K12d.prof} />
+			<Sx x={140} y={636} text="this kind of profiling measures repeat lengths only" size={34} color={INK} weight={600} at={K12d.prof} />
 			<ModelLine x={140} y={730} text="(b) e.g. paternity, or how related captive animals are" at={K12d.better} size={34} />
 			<MistakeChip x={140} y={830} text="profiling reads the whole genome" at={K12d.ifs} cross={K12d.whole + 10} size={32} />
 			<Sx x={800} y={872} text="a handful of markers" size={40} color={AMBER_INK} hand at={K12d.whole + 16} />

@@ -35,13 +35,13 @@ export const SceneAttempt1: React.FC = () => {
 
 // ---------- 16. Feedback 1 (brief) ----------
 const F1 = 'feedback-1';
-const K16 = cues(sc(F1), {swap: 'Swap partners', cuoh: ['copper hydroxide and', 1], naso: 'and sodium sulfate', nasoSol: 'sodium sulfate is soluble', hyd: 'Hydroxides are insoluble', cu2: 'copper(II) hydroxide', pale: 'pale blue solid', twoplus: 'Copper is two plus', twoOH: 'two hydroxides', eq: 'copper ion plus two', wrote: 'If you wrote', cuoh2: 'C u O H', dont: "don't balance"});
+const K16 = cues(sc(F1), {swap: 'Swap partners', cuoh: ['copper hydroxide and', 1], naso: 'and sodium sulfate', nasoSol: 'sodium sulfate is soluble', hyd: 'Hydroxides are', cu2: 'copper(II) hydroxide', pale: 'pale blue solid', twoplus: 'Copper is two plus', twoOH: 'two hydroxides', eq: 'copper ion plus two', wrote: 'If you wrote', cuoh2: 'C u O H', dont: "don't balance"});
 export const SceneFeedback1: React.FC = () => (
 	<>
 		<Overlay>
 			<TaskLine text="1. Name the precipitate.  2. Net ionic equation." at={-100} size={44} />
 			<SwapCross x={120} xr={680} y1={300} y2={450} size={40} left={[['Cu^{2+}', 'SO_4^{2-}'], ['Na^{+}', 'OH^{-}']]} leftAt={[0, 4]} swap={K16.swap} resAt={[K16.naso, K16.cuoh]}
-				verdicts={[{kind: 'ok', at: K16.nasoSol, label: 'Na_2SO_4: soluble'}, {kind: 'ppt', at: K16.cu2, label: 'hydroxide: insoluble'}]} />
+				verdicts={[{kind: 'ok', at: K16.nasoSol, label: 'Na_2SO_4: soluble'}, {kind: 'ppt', at: K16.cu2, label: 'Cu(OH)_2: insoluble'}]} />
 			<Fade at={K16.pale}><PicH p={CUOH2} x={1150} y={230} h={330} /></Fade>
 			<Sx x={1240} y={610} text="pale blue" size={36} color={CU_INK} anchor="middle" hand at={K16.pale + 6} />
 			<Chip x={96} y={600} w={980} text="1. copper(II) hydroxide, Cu(OH)_2(s), pale blue" size={38} color={TEAL} at={K16.pale} />
@@ -144,7 +144,7 @@ export const SceneDecision: React.FC = () => (
 
 // ---------- 20. Key notes ----------
 const NOTES = [
-	'Solubility rules (NAGSAG): nitrates, ammonium and Group 1 compounds are soluble. Sulfates soluble except Ba^{2+} and Pb^{2+} (insoluble), Ca^{2+} and Ag^{+} (slightly). Acetates soluble. Cl^{-}, Br^{-}, I^{-} soluble except with Ag^{+} and Pb^{2+}. Carbonates, phosphates, hydroxides and sulfides insoluble except with Group 1 and NH_4^{+} (Ba(OH)_2 soluble).',
+	'Solubility rules (NAGSAG): nitrates, ammonium and Group 1 compounds are soluble (very few exceptions). Sulfates soluble except Ba^{2+}, Sr^{2+} and Pb^{2+} (insoluble), Ca^{2+} and Ag^{+} (slightly). Acetates soluble. Cl^{-}, Br^{-}, I^{-} soluble except with Ag^{+} and Pb^{2+}. Carbonates, phosphates, hydroxides and sulfides mostly insoluble except with Group 1 and NH_4^{+} (also soluble: Ba(OH)_2, and Ca, Sr, Ba sulfides).',
 	'Mixing two solutions: list the four ions, swap partners, check both products. The insoluble one is the precipitate; the other ions are spectators. Both soluble: no precipitate.',
 	'Equations: molecular (whole formulas, states); full ionic (split every (aq) compound, keep the solid whole); net ionic (cross out ions the same on both sides; check atoms and charges). Example: Ag^{+}(aq) + Cl^{-}(aq) → AgCl(s).',
 	'The syllabus pairs: KCl + AgNO_3 gives AgCl(s), white. 2KI + Pb(NO_3)_2 gives PbI_2(s), bright yellow (Pb^{2+} + 2I^{-} → PbI_2). Na_2SO_4 + Ba(NO_3)_2 gives BaSO_4(s), white (Ba^{2+} + SO_4^{2-} → BaSO_4).',

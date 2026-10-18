@@ -117,7 +117,7 @@ export const SceneJobsB7: React.FC = () => {
 				<Antibody x={tileX(4)} y={540} grab={prog(f, K2.anti + 6, 24)} o={prog(f, K2.anti - 4, 12)} />
 				{/* every one is a folded chain */}
 				{names.map((n, i) => <MiniFold key={n} x={tileX(i)} y={800} fold={fold} o={prog(f, K2.every + i * 4, 10)} />)}
-				<Sx x={960} y={930} text="each one: a polypeptide chain, folded into its own shape" size={44} color={AMBER_INK} hand anchor="middle" at={K2.folded} />
+				<Sx x={960} y={930} text="each one: one or more polypeptide chains, folded into its own shape" size={44} color={AMBER_INK} hand anchor="middle" at={K2.folded} />
 			</Overlay>
 		</>
 	);

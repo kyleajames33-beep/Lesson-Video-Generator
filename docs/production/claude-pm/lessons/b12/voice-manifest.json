@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "compositionId": "Biology-Y12-M5-B12-claude-2026-10-18-take01",
+  "compositionId": "Biology-Y12-M5-B12-claude-2026-10-18-take02",
   "lessonPath": "docs/production/claude-pm/lessons/b12/lesson.json",
-  "lessonSha256": "8da7f691a8167333d41c9dab5670d402692e2d4a23a87c32ae20bd2fdac336ca",
+  "lessonSha256": "74089ab4069f4ccf9216cc8209dd787ed3d5d9561d98d442cd597367319c0707",
   "fps": 30,
   "voiceSelection": {
     "voiceName": "Simon - Australian male",
@@ -17,7 +17,7 @@
   },
   "recordingBrief": {
     "path": "docs/production/claude-pm/lessons/b12/lesson.production-brief.json",
-    "sha256": "ad8246060598509866a08cd8af26516819daf1f11b73f444a589c761986de2ce"
+    "sha256": "dc6d539dadb7e54bc632a180e837b277661bd237166a19d02c9bf51e18530ce1"
   },
   "scenes": [
     {
@@ -26,32 +26,32 @@
       "text": "In 1985, British officials doubted that a boy returning from Ghana was really his mother's son. A geneticist, Alec Jeffreys, had just found a way to compare people's DNA as patterns of bands. He compared the boy's pattern with his family's, and it showed he really was her son. So how can a pattern of bands show who's related? And how is that different from reading DNA one base at a time?",
       "hash": "03486f02e5c3",
       "textSha256": "03486f02e5c3c1d3effaa9e984c79f7e0b94ede4d08cceabb9b039bb8a0c4839",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/hook.03486f02e5c3.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/hook.03486f02e5c3.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/hook.03486f02e5c3.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/hook.03486f02e5c3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/hook.03486f02e5c3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/hook.03486f02e5c3.generation.json",
       "plannedRequestSha256": "796cd2b0d04b0271fff31015f45f1e76a9872073cf6a261d7ffcb63e7180465e"
     },
     {
       "id": "two-tools",
       "parentSceneId": "two-tools",
-      "text": "There are two main ways to get that kind of evidence. DNA sequencing reads the exact order of bases, the A's, T's, C's and G's, along a stretch of DNA. DNA profiling doesn't read the order at all. It compares a few chosen places where people's DNA tends to differ. So one reads every letter, and the other checks a handful of markers. Which one you use depends on the question you're asking.",
-      "hash": "7b8e315bd82f",
-      "textSha256": "7b8e315bd82f14eca2c108293a28bc307c3b032a6320470d7b702650c71ad540",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/two-tools.7b8e315bd82f.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/two-tools.7b8e315bd82f.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/two-tools.7b8e315bd82f.generation.json",
-      "plannedRequestSha256": "7dcee2aebfa58eeb8430ed5624debd4217f1d3593dc2a5b56616d3e27059ef9b"
+      "text": "There are two main ways to get that kind of evidence. DNA sequencing reads the exact order of bases, the A's, T's, C's and G's, along a stretch of DNA. One common kind of DNA profiling doesn't read the order at all. It compares a few chosen places where people's DNA tends to differ. So one reads every letter, and the other checks a handful of markers. Which one you use depends on the question you're asking.",
+      "hash": "0350c11237cf",
+      "textSha256": "0350c11237cf6224e2be78b9ec517ab924c1ec41ff394db7eda02adf446babb6",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/two-tools.0350c11237cf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/two-tools.0350c11237cf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/two-tools.0350c11237cf.generation.json",
+      "plannedRequestSha256": "b1687f0315e293786905b2cb7f065a692636d837588782e30b829230af8c9d22"
     },
     {
       "id": "how-sequencing-works",
       "parentSceneId": "how-sequencing-works",
-      "text": "Sequencing never reads a whole chromosome in one go. First, the DNA is copied and broken into short fragments. A machine reads each fragment one base at a time, because each kind of base is tagged with its own coloured dye. The copies were broken at different places, so the fragments overlap. Software lines up those overlaps, like matching the edges of torn strips, and rebuilds the whole sequence.",
-      "hash": "4c134b215c7f",
-      "textSha256": "4c134b215c7f2fb5f9583b834bcb9ffd79e9d7766f8bb814a72d4fd58f66dcae",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/how-sequencing-works.4c134b215c7f.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/how-sequencing-works.4c134b215c7f.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/how-sequencing-works.4c134b215c7f.generation.json",
-      "plannedRequestSha256": "d4abdf9fca39fd420b3aac03f02c9ced98d1a06c7d3e70b18b264c0e3d5f2166"
+      "text": "In one common method, sequencing never reads a whole chromosome in one go. First, the DNA is copied and broken into short fragments. A machine reads each fragment one base at a time, because each kind of base is tagged with its own coloured dye. The copies were broken at different places, so the fragments overlap. Software lines up those overlaps, like matching the edges of torn strips, and rebuilds the whole sequence.",
+      "hash": "07235148fd33",
+      "textSha256": "07235148fd3312131b4b091a4c265dca5f0718f90056627fecdd11372313eeed",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/how-sequencing-works.07235148fd33.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/how-sequencing-works.07235148fd33.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/how-sequencing-works.07235148fd33.generation.json",
+      "plannedRequestSha256": "0e753409ac0e26bd1b2cf7e4ac5176e80d205572be406162f7281e6c79615616"
     },
     {
       "id": "sequencing-a-family",
@@ -59,9 +59,9 @@
       "text": "Because sequencing reads every base, it finds single-base differences directly, like the snips in the frequency video. Take the sickle cell allele, where one A is changed to T. Sequence this family at that spot. Both parents are unaffected, but each shows two letters there, A and T, so each is a carrier. Their affected daughter shows only T. That's the recessive pattern, now seen in the DNA itself. Sequence thousands of people this way, and you get the allele's frequency across a whole population.",
       "hash": "131b3a3ccd4a",
       "textSha256": "131b3a3ccd4a8d0bea8d052a0af3532d9427be6a09ab72ace7ccd1d71c4b60f1",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/sequencing-a-family.131b3a3ccd4a.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/sequencing-a-family.131b3a3ccd4a.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/sequencing-a-family.131b3a3ccd4a.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/sequencing-a-family.131b3a3ccd4a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/sequencing-a-family.131b3a3ccd4a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/sequencing-a-family.131b3a3ccd4a.generation.json",
       "plannedRequestSha256": "1d8650fd22815f9b821a7274aa598b2825debd50848aa4151b49e2565f155607"
     },
     {
@@ -70,9 +70,9 @@
       "text": "Today, profiling usually looks at markers called short tandem repeats. Each one is a short run of bases, like G, A, T, A, repeated over and over, side by side. The number of repeats varies from person to person. One copy of a marker might have eight repeats, and the other copy eleven. You carry two copies of every marker, one from each parent, so your repeat numbers are inherited, just like alleles.",
       "hash": "546b9c884fb0",
       "textSha256": "546b9c884fb0dfb365493be8d26a9b41bf27bcb50ee9e97116f82874c4f8001c",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/short-tandem-repeats.546b9c884fb0.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/short-tandem-repeats.546b9c884fb0.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/short-tandem-repeats.546b9c884fb0.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/short-tandem-repeats.546b9c884fb0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/short-tandem-repeats.546b9c884fb0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/short-tandem-repeats.546b9c884fb0.generation.json",
       "plannedRequestSha256": "b88eb12e6da5d7baa5e74428333b78e5e769377a96c713f42649f057dff8c7f5"
     },
     {
@@ -81,9 +81,9 @@
       "text": "To compare lengths, labs copy each marker many times, then run the copies through a gel. DNA is negatively charged, so an electric current pulls it towards the positive end. The gel is a jelly full of tiny pores. Every piece carries the same charge for its length, so the pores decide the speed: shorter pieces slip through more easily, so they travel further. Each length ends up as a band, and a person's set of bands is their profile.",
       "hash": "1a8e24551802",
       "textSha256": "1a8e24551802577fdfe37e61f30e89f1558d4f6b486dd878b229004a2a85243c",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/gel.1a8e24551802.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/gel.1a8e24551802.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/gel.1a8e24551802.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/gel.1a8e24551802.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/gel.1a8e24551802.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/gel.1a8e24551802.generation.json",
       "plannedRequestSha256": "1852a14faa3cc592b4eb9cd630f4450c3070aceda363be6558a13c4dd089acbe"
     },
     {
@@ -92,9 +92,9 @@
       "text": "Here's how profiles show inheritance. At every marker, a child has one copy from the mother and one from the father. So every band in the child's profile must match a band in one parent or the other. Here, the child's eight came from the mother, and the twelve came from the father. So if a child has a band that neither the mother nor a man has, that man can be ruled out as the father.",
       "hash": "bf737d02eaaa",
       "textSha256": "bf737d02eaaa7529b7dade0f012dfac171686b3c56b632f1ff3271fe9e90543d",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/child-bands.bf737d02eaaa.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/child-bands.bf737d02eaaa.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/child-bands.bf737d02eaaa.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/child-bands.bf737d02eaaa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/child-bands.bf737d02eaaa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/child-bands.bf737d02eaaa.generation.json",
       "plannedRequestSha256": "6a60b6a198b47bac9333298cdde9bf699bf1b3830ebc841932202d3f7bc0e57d"
     },
     {
@@ -103,32 +103,32 @@
       "text": "A match is weaker evidence than a mismatch, because lots of people share any one band pattern. Say each marker's pattern is shared by one person in ten. Matching one marker means very little. But if the markers are inherited separately, the chances multiply. Three markers give one in a thousand, and ten give one in ten billion. That's why real profiles compare many markers, and even then, a match is strong evidence, not proof.",
       "hash": "b0f39f94c4ae",
       "textSha256": "b0f39f94c4ae86ff9b8b49a1a9c46ab1a41db20946c384b578dfa49846bfa18b",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/many-markers.b0f39f94c4ae.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/many-markers.b0f39f94c4ae.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/many-markers.b0f39f94c4ae.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/many-markers.b0f39f94c4ae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/many-markers.b0f39f94c4ae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/many-markers.b0f39f94c4ae.generation.json",
       "plannedRequestSha256": "5e7490195b80f066081d6ee656c759455f9236cf0080dd45444e879a81be61d7"
     },
     {
       "id": "choose-the-tool",
       "parentSceneId": "choose-the-tool",
-      "text": "So which tool fits which question? If you need a particular base, like a disease allele or a snip, sequence it. Profiling can't see it, because it only measures repeat lengths, mostly in DNA that doesn't code for a protein. If you need to know who's related to whom, profiling is quick and cheap across many individuals. That's how conservation programs check relatedness in captive animals before choosing mates.",
-      "hash": "fde710eb1646",
-      "textSha256": "fde710eb1646fbe508048c6368b088d5480efa9e8fbcae30ad48c566809ccf6e",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/choose-the-tool.fde710eb1646.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/choose-the-tool.fde710eb1646.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/choose-the-tool.fde710eb1646.generation.json",
-      "plannedRequestSha256": "987d0d06e3e9475f7bca7f7ff6d80474789806c273d865f6ce453474ed840f0b"
+      "text": "So which tool fits which question? If you need a particular base, like a disease allele or a snip, sequence it. This kind of profiling can't see it, because it only measures repeat lengths, mostly in DNA that doesn't code for a protein. If you need to know who's related to whom, profiling is quick and cheap across many individuals. That's how conservation programs check relatedness in captive animals before choosing mates.",
+      "hash": "67df5ddd2a6d",
+      "textSha256": "67df5ddd2a6debbd42660a6f49bd3c2021ff0b34be90899395dfad8a1206c56a",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/choose-the-tool.67df5ddd2a6d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/choose-the-tool.67df5ddd2a6d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/choose-the-tool.67df5ddd2a6d.generation.json",
+      "plannedRequestSha256": "498968a38989f5becd2421861cd1debd6c120cb0665ae93911a13d9a6218f98e"
     },
     {
       "id": "tool-limits",
       "parentSceneId": "tool-limits",
-      "text": "But each tool has limits. A profile is a handful of markers, not a whole genome, so it can't tell you about genes. And finding a variant by sequencing still doesn't tell you what it does, or prove that it causes a disease.",
-      "hash": "a2958a76b7c8",
-      "textSha256": "a2958a76b7c8d490faf2c459f2df96f3f2af1ed75deb1dd0a9af5f7957ad5d01",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/tool-limits.a2958a76b7c8.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/tool-limits.a2958a76b7c8.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/tool-limits.a2958a76b7c8.generation.json",
-      "plannedRequestSha256": "c7dba4e5f222a68aae249dbadcd9128aa2359153de0295a34412642a5014bbb7"
+      "text": "But each tool has limits. A profile like this is a handful of markers, not a whole genome, so it can't tell you about genes. And finding a variant by sequencing still doesn't tell you what it does, or prove that it causes a disease.",
+      "hash": "3b8678e2e952",
+      "textSha256": "3b8678e2e9527be75dacfc644bd37e52b4d75e27943643e3e292820756ce96d9",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/tool-limits.3b8678e2e952.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/tool-limits.3b8678e2e952.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/tool-limits.3b8678e2e952.generation.json",
+      "plannedRequestSha256": "1b4335e26889b7fad348d985b583782ca40e7533a21c9afb2dcd8adf4f3096ab"
     },
     {
       "id": "memory",
@@ -136,9 +136,9 @@
       "text": "Three things to remember. Sequence means bases, and profile means selected markers. DNA runs to red, the positive lead. And every band in a child must come from Mum or Dad.",
       "hash": "7355dc43dfe3",
       "textSha256": "7355dc43dfe3bd428c2f5285ded4828d12304d9f44ee643280caafe60be2c6ed",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/memory.7355dc43dfe3.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/memory.7355dc43dfe3.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/memory.7355dc43dfe3.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/memory.7355dc43dfe3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/memory.7355dc43dfe3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/memory.7355dc43dfe3.generation.json",
       "plannedRequestSha256": "1976d97628906718c9fdd7404580b7e5a64f7da956ca6710797102f03aa65517"
     },
     {
@@ -147,9 +147,9 @@
       "text": "Two harder questions now. First, this gel shows a mother, her child and two men, at three markers. Which man can be excluded as the child's father? Use the bands to explain. Pause here to answer.",
       "hash": "b07d556b2787",
       "textSha256": "b07d556b27876cdb64c766a5d645d3cfadae6337f8f854a6b35d74ff03656308",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/attempt.b07d556b2787.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/attempt.b07d556b2787.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/attempt.b07d556b2787.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/attempt.b07d556b2787.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/attempt.b07d556b2787.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/attempt.b07d556b2787.generation.json",
       "plannedRequestSha256": "1bd12972779aaffa5cd12338e8a09227a7ce03993e6da76f86a4a00880fe7df3"
     },
     {
@@ -158,9 +158,9 @@
       "text": "First, find the child's bands that didn't come from the mother. They're the twelve at marker one, the thirteen at marker two, and the ten at marker three. Man A has all three, so he can't be excluded. Man B lacks the twelve and the ten, so he's excluded. If you said man A is definitely the father, a match only means he can't be ruled out.",
       "hash": "0aadd7c5fd7b",
       "textSha256": "0aadd7c5fd7bf0a220231fcd37e2806d307e00130ab8b4e4ad23f9981aa7f60d",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/feedback-one.0aadd7c5fd7b.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/feedback-one.0aadd7c5fd7b.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/feedback-one.0aadd7c5fd7b.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/feedback-one.0aadd7c5fd7b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/feedback-one.0aadd7c5fd7b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/feedback-one.0aadd7c5fd7b.generation.json",
       "plannedRequestSha256": "220959a7a38ad69ae70a0ed0c9071ed7a955d46b0465bd6f1dc51d99cdb2f62b"
     },
     {
@@ -169,21 +169,21 @@
       "text": "Second. Researchers want to know whether a disease-linked variant, a change in a single base, is more common in one population than another. Explain why DNA sequencing is more useful than DNA profiling for this question. Then name one question where profiling would be the better choice. Pause here to answer.",
       "hash": "3437dff9d7f6",
       "textSha256": "3437dff9d7f670b7e1a938244df216a8426961a6b1e72d4725ee6520ed9324bd",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/attempt-two.3437dff9d7f6.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/attempt-two.3437dff9d7f6.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/attempt-two.3437dff9d7f6.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/attempt-two.3437dff9d7f6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/attempt-two.3437dff9d7f6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/attempt-two.3437dff9d7f6.generation.json",
       "plannedRequestSha256": "293d9b01b10afbb74fb0331e4af3a8a54cff11a6f296663d24cba39f76af1ae2"
     },
     {
       "id": "feedback-two",
       "parentSceneId": "feedback-two",
-      "text": "The variant is one base, so you need the base order at that spot. Sequencing reads it in everyone tested, so you can compare the allele's frequency in each population. Profiling only measures repeat lengths, so it can't show that base. Profiling is better for relatedness, like a paternity test. And if you said profiling reads the whole genome, it doesn't.",
-      "hash": "628da0668d32",
-      "textSha256": "628da0668d32a3a4971ff39eb79f4c08ec0ff04158ed9f9f4df968ad50caaa66",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/feedback-two.628da0668d32.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/feedback-two.628da0668d32.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/feedback-two.628da0668d32.generation.json",
-      "plannedRequestSha256": "e6a98a6d0c419a58cabba6bb6a39a3ec9b2266b9c58e657dcc40c227284e1619"
+      "text": "The variant is one base, so you need the base order at that spot. Sequencing reads it in everyone tested, so you can compare the allele's frequency in each population. This kind of profiling only measures repeat lengths, so it can't show that base. Profiling is better for relatedness, like a paternity test. And if you said profiling reads the whole genome, it doesn't.",
+      "hash": "af694d3c5eb9",
+      "textSha256": "af694d3c5eb9fa7c54090917d3555ea11789fc144e83535b48ecc586e5df0ddf",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/feedback-two.af694d3c5eb9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/feedback-two.af694d3c5eb9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/feedback-two.af694d3c5eb9.generation.json",
+      "plannedRequestSha256": "b4a2f3fc792d3d7bef9c8e40a0bdecea0ba4fdb281e4276dd79822f9d2f19387"
     },
     {
       "id": "decision-rule",
@@ -191,9 +191,9 @@
       "text": "So, start with the question. Need a particular base? Sequence it. Need to know who's related? Compare profiles, and remember that one mismatch can exclude, but a match needs many markers. Next, we'll see what huge collaborative projects, with DNA data from thousands of people, can show about whole populations.",
       "hash": "c201d7ecf873",
       "textSha256": "c201d7ecf873d7bc579b66c8401288451291b76851e2421df9300642a7c4465c",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/decision-rule.c201d7ecf873.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/decision-rule.c201d7ecf873.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/decision-rule.c201d7ecf873.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/decision-rule.c201d7ecf873.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/decision-rule.c201d7ecf873.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/decision-rule.c201d7ecf873.generation.json",
       "plannedRequestSha256": "593dba3caa0f2ac8b5c2095a1b8e7f97f3b28e77cdbecbf6e331a8f59f96f4b1"
     },
     {
@@ -202,9 +202,9 @@
       "text": "Here are the key notes. Pause the video if you need more time to copy them.",
       "hash": "231477bff795",
       "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
-      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
-      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
-      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "audioFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B12-claude-2026-10-18-take02/key-notes.231477bff795.generation.json",
       "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
     }
   ]

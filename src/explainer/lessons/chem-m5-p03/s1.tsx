@@ -197,7 +197,6 @@ export const SceneVariables: React.FC = () => {
 				<Fills g={G} cells={matrixCells(() => -100)} />
 				{ring(3, 1, K4.pair, K4.dep, 3)}
 				{ring(2, 2, K4.heavy, K4.controlled, 4)}
-				{ring(1, 2, K4.faint, K4.controlled, 5)}
 				<Card x={CX} y={200} w={640} h={590} at={K4.ind} />
 				<Sx x={CX + 26} y={262} text="Independent (what you change)" size={32} color="#1f6fb2" hand at={K4.ind} />
 				<Sx x={CX + 26} y={306} text="the cation and anion pair" size={28} weight={600} at={K4.pair} />
@@ -210,12 +209,12 @@ export const SceneVariables: React.FC = () => {
 				<Sx x={CX + 26} y={686} text="• same temperature" size={28} weight={600} at={K4.temp} />
 				<Sx x={CX + 26} y={726} text="• same time before recording" size={28} weight={600} at={K4.time} />
 				<Sx x={CX} y={840} text="concentration matters most" size={34} color={AMBER_INK} hand at={K4.matters} />
-				<BigWell cx={1300} cy={940} r={42} kind="clear" p={1} at={K4.just} label="fewer drops" />
-				<BigWell cx={1560} cy={940} r={42} kind="faint" p={1} at={K4.just + 10} label="more drops" />
+				<BigWell cx={1300} cy={940} r={42} kind="clear" p={1} at={K4.just} label="0.01 mol/L stocks" />
+				<BigWell cx={1560} cy={940} r={42} kind="white" p={1} at={K4.just + 10} label="0.1 mol/L stocks" />
 				<Sx x={1650} y={900} text="Ca^{2+} + SO_4^{2-}" size={24} color={INK_SOFT} weight={700} at={K4.just + 10} />
-				<Sx x={1650} y={940} text="same pair," size={26} color={INK_SOFT} hand at={K4.much} />
-				<Sx x={1650} y={976} text="different amounts" size={26} color={INK_SOFT} hand at={K4.much} />
-				{void K4.see}{void K4.colour}{void K4.conc}{void INK}
+				<Sx x={1650} y={940} text="same pair, same drops," size={26} color={INK_SOFT} hand at={K4.much} />
+				<Sx x={1650} y={976} text="different concentration" size={26} color={INK_SOFT} hand at={K4.much} />
+				{void K4.see}{void K4.colour}{void K4.conc}{void K4.faint}{void INK}
 			</Overlay>
 		</>
 	);

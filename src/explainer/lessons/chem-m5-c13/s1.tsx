@@ -203,7 +203,7 @@ export const SceneRulesOrigin: React.FC = () => {
 
 // ---------- 5. The rules: NAGSAG ----------
 const NG = 'nagsag';
-const K5 = cues(sc(NG), {learn: 'version to learn', nag: 'NAGSAG', n: 'Nitrates', a1: 'Ammonium', g1: ['Group 1', 1], always: 'always soluble', s: 'Then Sulfates', baPb: 'barium and lead', caAg: 'calcium and silver', slightly: 'slightly soluble', ac: 'Acetates', g17: 'Group 17', halides: 'the halides', agpb: 'silver and lead', carb: 'carbonates and hydroxides', mostly: 'mostly insoluble', unless: "unless it's paired", baoh: 'Barium hydroxide', dissolves: 'it dissolves'});
+const K5 = cues(sc(NG), {learn: 'version to learn', nag: 'NAGSAG', n: 'Nitrates', a1: 'Ammonium', g1: ['Group 1', 1], always: 'always soluble', s: 'Then Sulfates', baPb: 'barium', caAg: 'calcium and silver', slightly: 'slightly soluble', ac: 'Acetates', g17: 'Group 17', halides: 'the halides', agpb: 'silver and lead', carb: 'carbonates and hydroxides', mostly: 'mostly insoluble', unless: "unless it's paired", baoh: 'Barium hydroxide', dissolves: 'it dissolves'});
 const RX = 220, RS = 36;
 export const SceneNagsag: React.FC = () => {
 	const f = useCurrentFrame();
@@ -212,7 +212,7 @@ export const SceneNagsag: React.FC = () => {
 		[290, [{t: 'nitrates (NO_3^{-}): soluble', at: K5.n}]],
 		[372, [{t: 'ammonium (NH_4^{+}): soluble', at: K5.a1}]],
 		[454, [{t: 'Group 1 (Na^{+}, K^{+}): soluble', at: K5.g1}]],
-		[546, [{t: 'sulfates (SO_4^{2-}): soluble,', at: K5.s}, {t: 'except Ba^{2+}, Pb^{2+} (insoluble)', at: K5.baPb, color: AMBER_INK}]],
+		[546, [{t: 'sulfates (SO_4^{2-}): soluble,', at: K5.s}, {t: 'except Ba^{2+}, Sr^{2+}, Pb^{2+} (insoluble)', at: K5.baPb, color: AMBER_INK}]],
 		[592, [{t: 'and Ca^{2+}, Ag^{+} (only slightly soluble)', at: K5.caAg, color: AMBER_INK}]],
 		[676, [{t: 'acetates (CH_3COO^{-}): soluble', at: K5.ac}]],
 		[758, [{t: 'Group 17, halides (Cl^{-}, Br^{-}, I^{-}): soluble,', at: K5.g17}, {t: 'except Ag^{+}, Pb^{2+}', at: K5.agpb, color: AMBER_INK}]],
@@ -228,13 +228,13 @@ export const SceneNagsag: React.FC = () => {
 				})}
 				{rows.map(([y, items], i) => <Pieces key={i} x={i === 4 ? RX + 30 : RX} y={y} items={items} size={RS} />)}
 				<VBracket x={RX + w3 + 24} y1={258} y2={466} at={K5.always} />
-				<Sx x={RX + w3 + 70} y={372} text="always soluble, no exceptions" size={40} color={TEAL} hand at={K5.always + 6} />
+				<Sx x={RX + w3 + 70} y={372} text="almost always soluble" size={40} color={TEAL} hand at={K5.always + 6} />
 				<Sx x={RX + 30} y={804} text="(PbCl_2: only slightly soluble)" size={28} color={INK_SOFT} weight={600} at={K5.agpb + 20} />
 				<Fade at={K5.carb - 10}>
 					<rect x={96} y={838} width={1728} height={170} rx={20} fill="#f6f1e7" stroke={INK_SOFT} strokeWidth={3} strokeDasharray="10 7" />
 				</Fade>
 				<Pieces x={126} y={892} size={32} items={[{t: 'Mostly insoluble: carbonates (CO_3^{2-}), phosphates, hydroxides (OH^{-}), sulfides', at: K5.carb}]} />
-				<Pieces x={126} y={944} size={32} items={[{t: 'unless with Group 1 or NH_4^{+}.', at: K5.unless, color: TEAL}, {t: 'Ba(OH)_2 soluble; Ca(OH)_2 slightly.', at: K5.baoh, color: AMBER_INK}]} />
+				<Pieces x={126} y={944} size={32} items={[{t: 'unless with Group 1 or NH_4^{+}.', at: K5.unless, color: TEAL}, {t: 'Ba(OH)_2 soluble, Ca(OH)_2 slightly; CaS, SrS, BaS soluble.', at: K5.baoh, color: AMBER_INK}]} />
 				{void K5.learn}{void K5.slightly}{void K5.halides}{void K5.mostly}{void K5.dissolves}
 			</Overlay>
 		</>
