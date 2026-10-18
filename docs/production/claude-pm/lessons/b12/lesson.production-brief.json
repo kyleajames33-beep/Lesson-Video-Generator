@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b12/lesson.json",
+    "lessonSha256": "8da7f691a8167333d41c9dab5670d402692e2d4a23a87c32ae20bd2fdac336ca"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B11: a SNP is a one-base difference, each version an allele; reading both copies gives the genotype; allele frequency = copies / all copies; association is not cause. From B9: pedigree symbols; unaffected parents with an affected child show a recessive trait; carriers. From B7: the sickle allele is one base change, GAG to GTG on the coding strand. From B5b and B8: each parent passes one copy of each chromosome; genes on different chromosomes are inherited independently. From B4: bases A, T, C, G and complementary pairing. From B6a: DNA is packed into chromosomes. Not assumed: sequencing, profiling, short tandem repeat, gel electrophoresis, band, match probability.",
+    "startsWith": "A specified research question needs sequencing or profiling evidence. The video opens: In 1985, British officials doubted that a boy returning from Ghana was really his mother's son. A geneticist, Alec Jeffreys, had just found a way to compare people's DNA as patterns of bands.",
+    "stopsAfter": "saying that sequencing determines the exact order of bases in a stretch of DNA and profiling compares a few selected variable markers without reading the order; describing sequencing as reading short copied fragments base by base and assembling them by overlap; using sequencing to find a single-base variant directly, including carriers (two bases at one position), and to give allele frequencies across a population; describing a short tandem repeat as a short sequence repeated side by side, with repeat numbers that vary, two copies per person (one from each parent); explaining that DNA moves to the positive electrode because it is negatively charged and shorter fragments travel further; using \"every child band comes from the mother or the father\" to identify paternal bands and exclude a man; explaining why a match needs many independently inherited markers (chances multiply) and is not proof; choosing sequencing for a question about a particular base and profiling for relatedness or identity, with the limits of each; applying this to an unseen paternity gel and an unseen tool-choice question.",
+    "nextLesson": "what large collaborative population-genetics projects can show (route entry bio-m5-b13)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b12.md"
+  ],
+  "teaching": {
+    "task": "How can DNA itself show who inherited what, and when should you read every base rather than compare a few markers?",
+    "causalExplanation": "Causes: why sequencing needs assembly (it reads short fragments, 3); why carriers show two letters (two copies read together, 4); why repeat lengths differ between people (repeat number varies, 5); why DNA moves and why short pieces move further (negative charge; easier passage through the gel, 6); why every child band matches a parent (one copy from each, 7); why a match is weaker than a mismatch (shared patterns; chances multiply only for independently inherited markers, 8); why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA, 9). Visible case: one family trace, one trio gel, one ladder, one choice board. Video advantage: fragments snap together by overlap; double peaks appear on carriers; bands race and settle; joining lines show which parent gave each band; the ladder multiplies live. Thinking opportunities: two unseen items with every band and demand on screen. Reading load: one board at a time; the attempt 1 card (three gels, four lanes each) is the densest frame and is the task itself.",
+    "conversationalApproach": "Conversational, one board at a time, causes before names. Scene 2 says what each tool measures before naming either one. Scene 5 shows the repeated unit and the different repeat counts before naming \"short tandem repeats\". Scene 6 explains why DNA moves and why short pieces move further before naming the band. Scene 8 shows why chances multiply before saying \"many markers\". Analogy: One, small and true to the mechanism: assembling overlapping fragments is like matching the edges of torn strips (scene 3), because both work only where pieces share an overlap. The contrast \"one reads every letter; the other checks a handful of markers\" (scene 2) is literal, not an analogy.",
+    "openingDecision": "So how can a pattern of bands show who's related? And how is that different from reading DNA one base at a time?",
+    "understandingCheck": "11a is a paternity gel at three markers (mother, child, man A, man B; one man excluded at two markers, the other consistent at all three): it tests the \"child band from mother or father\" rule, identifying the paternal band first, exclusion and the limit of inclusion. 11c is the site's tool-choice question (a disease-linked single-base variant in two populations) with a second demand to name a question where profiling is better: it tests what each tool measures. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working on the card, one crossed-out classic mistake. No mark-allocation talk.",
+    "curriculumScope": "\"investigate the use of technologies to determine inheritance patterns in a population using, for example: (ACSBL064, ACSBL085)\" with the example \"DNA sequencing and profiling (ACSBL086)\". Route action B-technologies (ledger row p1068). The parent line is marked as a depth-study or practical opportunity in the syllabus JSON; this video supplies the concepts and two analysis tasks, not a student investigation. Update ledger row p1068 when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Three boards. (1) The read board (scenes 2 to 4): coded base tiles in B4's `BasePiece` look; fragments as short tile rows; an assembly lane where overlaps snap together; a coded sequencing trace (a row of smooth peaks, each labelled with its base letter; at a heterozygous position two overlapping peaks with the label \"A/T\"); B9's `Pedigree` with a sequence chip under each symbol. (2) The gel board (scenes 5 to 8): a coded repeat strip (`RepeatStrip`: a marker drawn as a run of four-base blocks, each block labelled \"GATA\", with the count written at the end); a coded gel slab front-on (`Gel`: wells along the top edge labelled \"wells\", the top edge tagged \"−, black lead\", the bottom edge \"+, red lead\"; one lane per individual, headed with a pedigree symbol or a card; band positions computed from fragment length); the painted gel tank plate as context only. (3) The choice board (scenes 9, 12): two columns, \"sequencing: base order\" and \"profiling: selected markers\", filling with question cards. Individuals are always pedigree symbols (squares, circles) or coded cards, never people. Amber is the emphasis colour only. Electrode signs are written (\"−\", \"+\"), never colour only.",
+    "transitionPlan": "The 1985 case and the band card open the lesson; the read board holds the two-tools split, the fragment lanes and the sickle family pedigree; the repeat strip carries short tandem repeats and hands over to the gel board for the gel, the child bands and the marker ladder; the choice board takes the tool choice and the limits; the memory aids and the decision rule follow; each attempt clears the board to one card (a paternity gel or a tool-choice question) and the feedback shrinks the card to a strip while the working writes on; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "A coded document card slides in, headed \"1985: immigration case\" with a \"?\" stamp (no people, no photographs).",
+      "teachingReason": "Teaches: hook (a boy and his mother, 1985).",
+      "narrationCue": "In 1985, British officials doubted that a boy returning from Ghana was really his",
+      "motionPurpose": "On the spoken cues: On \"a boy\" and \"his mother's son\" two pedigree symbols appear joined by a dashed line with a \"?\": an open circle tagged \"mother\" and a small open square tagged \"boy\". On \"patterns of bands\" a coded gel strip writes on beside them with two lanes headed by the two symbols, bands drawing down (generic, illustrative;",
+      "motionRole": "explain",
+      "onScreenChange": "a coded document card slides in, headed \"1985: immigration case\" with a \"?\" stamp (no people, no photographs). On \"a boy\" and \"his mother's son\" two pedigree symbols appear joined by a dashed line with a \"?\": an open circle tagged \"mother\" and a small open square tagged \"boy\". On \"patterns of bands\" a coded gel strip writes on beside them with two lanes headed by the two symbols, bands drawing down (generic, illustrative; grey tag \"illustration, not the 1985 data\"). On \"he really was her son\" several bands in the boy's lane draw thin lines across to matching bands in the mother's lane, and the dashed \"?\" line becomes solid with a tick. On \"how is that different\" a short base-tile row \"A T G G C A ...\" writes on under the gel. The heading writes on: \"Reading inheritance in DNA\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "tick",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold two seconds"
+    },
+    {
+      "sceneId": "two-tools",
+      "visualDecision": "new",
+      "visualReference": "The choice board in outline. A long coded chromosome bar runs across the top.",
+      "teachingReason": "Teaches: two tools, two questions.",
+      "narrationCue": "There are two main ways to get that kind of",
+      "motionPurpose": "On the spoken cues: On \"reads the exact order of bases\" a magnifier frame slides along one short stretch and a row of base tiles writes on beneath it, letter by letter; the left column header writes on: \"DNA sequencing: base order\".",
+      "motionRole": "explain",
+      "onScreenChange": "the choice board in outline. A long coded chromosome bar runs across the top. On \"reads the exact order of bases\" a magnifier frame slides along one short stretch and a row of base tiles writes on beneath it, letter by letter; the left column header writes on: \"DNA sequencing: base order\". On \"a few chosen places\" five small markers light along the same chromosome bar (amber ticks), each with a short bracket and no letters; the right column header writes on: \"DNA profiling: selected markers\". On \"one reads every letter\" the tile row pulses; on \"a handful of markers\" the five ticks pulse. On \"depends on the question\" a \"?\" card drops between the columns.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "DrawPath",
+        "plate slide",
+        "drop fall",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "how-sequencing-works",
+      "visualDecision": "adjust",
+      "visualReference": "The read board. `m5x-cheek-swab-v1.png` (or v2) sits small at the left (tag \"sample\").",
+      "teachingReason": "Explains why sequencing needs assembly (it reads short fragments).",
+      "narrationCue": "Sequencing never reads a whole chromosome in one",
+      "motionPurpose": "On the spoken cues: On \"never reads a whole chromosome\" a chip \"reads a chromosome end to end\" writes on and takes a grey scribble cross. On \"copied and broken into short fragments\" a coded stretch of 24 base tiles duplicates into four copies, then each copy splits at different points into short rows of 6 to 9 tiles (`FragmentAssembly`, ported;",
+      "motionRole": "explain",
+      "onScreenChange": "the read board. `m5x-cheek-swab-v1.png` (or v2) sits small at the left (tag \"sample\"). On \"never reads a whole chromosome\" a chip \"reads a chromosome end to end\" writes on and takes a grey scribble cross. On \"copied and broken into short fragments\" a coded stretch of 24 base tiles duplicates into four copies, then each copy splits at different points into short rows of 6 to 9 tiles (`FragmentAssembly`, ported; fragment boundaries computed). On \"one base at a time\" one fragment slides into a reading window and its tiles light one by one, each with a small labelled peak rising above it (`Trace`; each peak carries its letter, peaks also tinted by base, never colour only). On \"broken at different places\" the cut points flash on the four copies; on \"lines up those overlaps\" the fragments slide into a staggered stack where matching overlaps ring and snap (overlaps computed; a small aside shows two torn paper strips matching along their edges, tag \"match the overlaps\"), and on \"rebuilds the whole sequence\" the consensus row writes on beneath (tag \"assembled sequence\").",
+      "motionTools": [
+        "HandText write-on",
+        "FragmentAssembly",
+        "ScribbleCircle",
+        "Mark cross",
+        "chip pop",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sequencing-a-family",
+      "visualDecision": "adjust",
+      "visualReference": "B9's `Pedigree` builds (data in Numbers): I-1 open square, I-2 open circle; II-1 filled circle (affected daughter), II-2 open square, II-3 open circle.",
+      "teachingReason": "Explains why carriers show two letters (two copies read together).",
+      "narrationCue": "Because sequencing reads every base, it finds single-base differences directly, like the",
+      "motionPurpose": "On the spoken cues: B7's recall card slides in small at the top: \"coding strand GAG to GTG: sickle cell\" (grey tag \"B7\"); B11's read strip look appears as a tag \"a SNP\" beside it. On \"Sequence this family\" a short `Trace` writes on under each symbol, showing the same nine bases with codon 6's middle position in a frame.",
+      "motionRole": "explain",
+      "onScreenChange": "B9's `Pedigree` builds (data in Numbers): I-1 open square, I-2 open circle; II-1 filled circle (affected daughter), II-2 open square, II-3 open circle. B7's recall card slides in small at the top: \"coding strand GAG to GTG: sickle cell\" (grey tag \"B7\"); B11's read strip look appears as a tag \"a SNP\" beside it. On \"Sequence this family\" a short `Trace` writes on under each symbol, showing the same nine bases with codon 6's middle position in a frame. On \"each shows two letters there\" the parents' traces show two overlapping peaks at the framed spot, labelled \"A/T\" (tag \"two copies: one A, one T\"); chips \"carrier\" pin under I-1 and I-2. On \"only T\" II-1's trace shows one peak \"T/T\"; II-2 shows \"A/A\", II-3 \"A/T\" (computed from the genotypes; checked by `fitsMode` in AR mode). On \"recessive pattern\" B9's giveaway tag writes on small: \"unaffected parents, affected child: recessive\" (grey tag \"B9\"). On \"thousands of people\" the pedigree shrinks and a wide grid of small trace chips fills behind it, collapsing into a single bar: \"T allele: copies / all copies\" (B11's pool bar look; no number given, tag \"allele frequency in the population\").",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "plate slide",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "short-tandem-repeats",
+      "visualDecision": "new",
+      "visualReference": "The gel board, repeat strip first. On \"a short run of bases\" a stretch of base tiles writes on, then four tiles \"G A T A\" box together into one block, and the block copies itself along the strip, side by side (`RepeatStrip`).",
+      "teachingReason": "Explains why repeat lengths differ between people (repeat number varies).",
+      "narrationCue": "Today, profiling usually looks at markers called short tandem",
+      "motionPurpose": "On the spoken cues: On \"repeated over and over\" the blocks count up with a small ticker. The name \"short tandem repeat (STR)\" writes on with the gloss \"tandem: side by side\". On \"varies from person to person\" three short strips stack, with 7, 9 and 12 blocks (counts written at the ends).",
+      "motionRole": "explain",
+      "onScreenChange": "the gel board, repeat strip first. On \"a short run of bases\" a stretch of base tiles writes on, then four tiles \"G A T A\" box together into one block, and the block copies itself along the strip, side by side (`RepeatStrip`). On \"repeated over and over\" the blocks count up with a small ticker. The name \"short tandem repeat (STR)\" writes on with the gloss \"tandem: side by side\". On \"varies from person to person\" three short strips stack, with 7, 9 and 12 blocks (counts written at the ends). On \"eight repeats, and the other copy eleven\" a pair of homologous chromosome bars appears (B5b's plum and teal: plum tagged \"from mother\", teal \"from father\"), each with the marker's strip at the same spot: plum 8 blocks, teal 11 blocks. Grey tag: \"most STRs are in DNA that doesn't code for protein\".",
+      "motionTools": [
+        "HandText write-on",
+        "RepeatStrip",
+        "tick",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "gel",
+      "visualDecision": "adjust",
+      "visualReference": "`m5x-gel-tank-v1.png` sits at the upper right as context (no bands drawn on the plate; grey tag \"gel tank\").",
+      "teachingReason": "Explains why DNA moves and why short pieces move further (negative charge; easier passage through the gel).",
+      "narrationCue": "To compare lengths, labs copy each marker many times, then run the copies through a",
+      "motionPurpose": "On the spoken cues: On \"copy each marker many times\" the 8-block and 11-block strips multiply into small stacks (grey tag \"PCR: Module 6\"). The coded `Gel` slab draws large and front-on: wells along the top, the top edge tagged \"− (black lead)\", the bottom edge \"+ (red lead)\".",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-gel-tank-v1.png` sits at the upper right as context (no bands drawn on the plate; grey tag \"gel tank\"). On \"copy each marker many times\" the 8-block and 11-block strips multiply into small stacks (grey tag \"PCR: Module 6\"). The coded `Gel` slab draws large and front-on: wells along the top, the top edge tagged \"− (black lead)\", the bottom edge \"+ (red lead)\". On \"negatively charged\" small \"−\" signs sparkle along a DNA stack's backbone, and on \"pulls it towards the positive end\" an arrow draws down the slab with the tag \"DNA moves to +\". On \"tiny pores\" a magnified circle shows the gel as a coded mesh; on \"Shorter pieces\" the 8-repeat copies and the 11-repeat copies leave the same well and race down; the shorter group pulls ahead (positions computed by the log-length rule). On \"Each length ends up as a band\" each group settles as one band, labelled \"8\" and \"11\". On \"their profile\" the lane gets a header \"one person, one marker\". Grey tag at the lower right: \"labs now often use thin tubes instead of a slab; same idea\".",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "child-bands",
+      "visualDecision": "new",
+      "visualReference": "The gel with three lanes headed by pedigree symbols: open circle \"mother\" (bands 8, 11), open square \"father\" (bands 9, 12), small open square \"child\" (bands 8, 12), all computed from repeat counts.",
+      "teachingReason": "Explains why every child band matches a parent (one copy from each).",
+      "narrationCue": "Here's how profiles show inheritance. At every marker, a child has one copy from the",
+      "motionPurpose": "On the spoken cues: On \"one copy from the mother and one from the father\" the child's two bands pulse in turn. On \"must match a band in one parent\" the rule writes on in hand type: \"every child band: from mother or father\". On \"eight came from the mother\" a plum line joins the child's 8 to the mother's 8;",
+      "motionRole": "explain",
+      "onScreenChange": "the gel with three lanes headed by pedigree symbols: open circle \"mother\" (bands 8, 11), open square \"father\" (bands 9, 12), small open square \"child\" (bands 8, 12), all computed from repeat counts. On \"one copy from the mother and one from the father\" the child's two bands pulse in turn. On \"must match a band in one parent\" the rule writes on in hand type: \"every child band: from mother or father\". On \"eight came from the mother\" a plum line joins the child's 8 to the mother's 8; on \"twelve came from the father\" a teal line joins the child's 12 to the father's 12. On \"ruled out\" a fourth lane slides in, a square \"man X\" (bands 10, 13); the child's 12 rings amber with a \"?\" and a line searches across the mother's and man X's lanes and finds nothing; man X's header takes a grey cross with the tag \"excluded\". Grey tag: \"assuming no new mutation in the marker\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "many-markers",
+      "visualDecision": "new",
+      "visualReference": "`MatchLadder`. On \"lots of people share\" a coded crowd of 10 small open squares and circles (pedigree symbols, no people) appears with one lit (tag \"1 in 10 share this pattern\", grey tag \"example number\").",
+      "teachingReason": "Explains why a match is weaker than a mismatch (shared patterns; chances multiply only for independently inherited markers).",
+      "narrationCue": "A match is weaker evidence than a mismatch, because lots of people share any one band",
+      "motionPurpose": "On the spoken cues: On \"Matching one marker\" one gel mini-lane ticks with the tag \"1 marker: 1 in 10\". On \"inherited separately\" the three mini-lanes sit on three different chromosome bars (tag \"different chromosomes: inherited independently\").",
+      "motionRole": "explain",
+      "onScreenChange": "`MatchLadder`. On \"lots of people share\" a coded crowd of 10 small open squares and circles (pedigree symbols, no people) appears with one lit (tag \"1 in 10 share this pattern\", grey tag \"example number\"). On \"Matching one marker\" one gel mini-lane ticks with the tag \"1 marker: 1 in 10\". On \"inherited separately\" the three mini-lanes sit on three different chromosome bars (tag \"different chromosomes: inherited independently\"). On \"the chances multiply\" the ladder writes on one rung per cue (computed): \"1 marker: 1/10\", \"2: 1/100\", \"3: 1/1,000\", then jumps to \"10: 1/10,000,000,000 (one in ten billion)\". On \"real profiles compare many markers\" a grey tag writes on: \"real profiles: often 16 or more markers\"; on \"not proof\" the tag \"a match is strong evidence, not proof\" writes under it, with a small grey tag beside the ladder: \"close relatives share more bands, so the chances are not this small for a brother\" (Revision 2).",
+      "motionTools": [
+        "HandText write-on",
+        "MatchLadder",
+        "ScribbleCircle",
+        "tick",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "choose-the-tool",
+      "visualDecision": "new",
+      "visualReference": "The choice board fills. Left column \"sequencing: base order\": on \"a particular base\" cards drop in: \"is this disease allele present?\", \"how common is this SNP in each population?\", each with a small tile row and one amber tile.",
+      "teachingReason": "Explains why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA).",
+      "narrationCue": "So which tool fits which question? If you need a particular base, like a disease allele",
+      "motionPurpose": "On the spoken cues: On \"Profiling can't see it\" a dashed arrow from the left card to the profiling column is blocked with a grey cross (tag \"repeat lengths only\"). Right column \"profiling: selected markers\": on \"who's related to whom\" cards drop in: \"is this man the father?\", \"how related are these captive animals?\", each with a mini gel;",
+      "motionRole": "explain",
+      "onScreenChange": "the choice board fills. Left column \"sequencing: base order\": on \"a particular base\" cards drop in: \"is this disease allele present?\", \"how common is this SNP in each population?\", each with a small tile row and one amber tile. On \"Profiling can't see it\" a dashed arrow from the left card to the profiling column is blocked with a grey cross (tag \"repeat lengths only\"). Right column \"profiling: selected markers\": on \"who's related to whom\" cards drop in: \"is this man the father?\", \"how related are these captive animals?\", each with a mini gel; on \"conservation programs\" the second card gets a grey tag \"breeding programs: avoid pairing close relatives\". Grey tag at the bottom: \"profiling is also used in forensics\".",
+      "motionTools": [
+        "ScribbleCircle",
+        "Mark cross",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "tool-limits",
+      "visualDecision": "adjust",
+      "visualReference": "The two columns stay; the cards dim. On \"a handful of markers\" the five amber ticks from scene 2 return along the chromosome bar under the profiling column, with the rest of the bar greyed; limit tag writes on: \"profiling: a few markers, not the whole genome\".",
+      "teachingReason": "Explains why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA).",
+      "narrationCue": "But each tool has limits. A profile is a handful of markers, not a whole genome, so it",
+      "motionPurpose": "On the spoken cues: On \"doesn't tell you what it does\" the amber tile under the sequencing column gets a small \"?\" and the limit tag writes on: \"sequencing: a variant found is not a cause proved (B11: association, not cause)\".",
+      "motionRole": "explain",
+      "onScreenChange": "the two columns stay; the cards dim. On \"a handful of markers\" the five amber ticks from scene 2 return along the chromosome bar under the profiling column, with the rest of the bar greyed; limit tag writes on: \"profiling: a few markers, not the whole genome\". On \"doesn't tell you what it does\" the amber tile under the sequencing column gets a small \"?\" and the limit tag writes on: \"sequencing: a variant found is not a cause proved (B11: association, not cause)\".",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "Three handwritten lines write on with small icons: \"sequence = bases; profile = selected markers\" (a tile row and a mini gel), \"DNA runs to red (+)\" (the gel slab with its red lead and an arrow down), \"every child band from Mum or Dad\" (the scene 7 trio lanes with their joining lines).",
+      "teachingReason": "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+      "narrationCue": "Three things to remember. Sequence means bases, and profile means selected",
+      "motionPurpose": "On the spoken cues: three handwritten lines write on with small icons: \"sequence = bases; profile = selected markers\" (a tile row and a mini gel), \"DNA runs to red (+)\" (the gel slab with its red lead and an arrow down), \"every child band from Mum or Dad\" (the scene 7 trio lanes with their joining lines).",
+      "motionRole": "explain",
+      "onScreenChange": "three handwritten lines write on with small icons: \"sequence = bases; profile = selected markers\" (a tile row and a mini gel), \"DNA runs to red (+)\" (the gel slab with its red lead and an arrow down), \"every child band from Mum or Dad\" (the scene 7 trio lanes with their joining lines).",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "The board clears: no earlier gels, lines or tags.",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"(a) Which man can be excluded?\" \"(b) Explain using the bands.\" Two answer boxes.",
+      "narrationCue": "Two harder questions now. First, this gel shows a mother, her child and two men, at",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears: no earlier gels, lines or tags.)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card writes on, headed \"Paternity test: three STR markers\". Three small gel panels side by side, \"marker 1\", \"marker 2\", \"marker 3\", each with four lanes headed by symbols: open circle \"mother\", small square \"child\", square \"man A\", square \"man B\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "The card shrinks to a strip at the top (the three gels and demands stay readable).",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for item one (owner rule, 16 October).",
+      "narrationCue": "First, find the child's bands that didn't come from the",
+      "motionPurpose": "On the spoken cues: (1) On \"didn't come from the mother\" plum lines join the child's 9, 11 and 6 to the mother's bands, and the child's 12, 13 and 10 ring amber (tag \"from the father\"). (2) On \"Man A has all three\" teal lines join the three amber bands to man A's lane (ticks).",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (the three gels and demands stay readable). (1) On \"didn't come from the mother\" plum lines join the child's 9, 11 and 6 to the mother's bands, and the child's 12, 13 and 10 ring amber (tag \"from the father\"). (2) On \"Man A has all three\" teal lines join the three amber bands to man A's lane (ticks). (3) On \"Man B lacks\" searches across man B's lane find nothing at markers 1 and 3 (grey crosses; marker 2's 13 matches, small tick). The line \"(a) man B excluded; (b) child's 12 (marker 1) and 10 (marker 3) are in neither the mother nor man B\" writes on. (4) On \"definitely the father\" the chip \"man A is the father\" writes on and takes a grey scribble cross, with the tag \"can't be excluded; more markers needed\". Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "tick",
+        "chip pop"
+      ],
+      "holdPurpose": "Brief settle before the next scene"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "The board clears. The card shows two population cards (\"population 1\", \"population 2\"), each with a short tile row containing a \"?\" tile, and the stimulus line \"disease-linked variant: a single-base change\".",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"(a) Why is sequencing more useful than profiling here?\" \"(b) Name one question where profiling is the better choice.\" Two answer boxes.",
+      "narrationCue": "Second. Researchers want to know whether a disease-linked variant, a change in a single",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears. The card shows two population cards (\"population 1\", \"population 2\"), each with a short tile row containing a \"?\" tile, an)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card shows two population cards (\"population 1\", \"population 2\"), each with a short tile row containing a \"?\" tile, and the stimulus line \"disease-linked variant: a single-base change\". Demands: \"(a) Why is sequencing more useful than profiling here?\" \"(b) Name one question where profiling is the better choice.\" Two answer boxes.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "The card shrinks to a strip. (1) On \"the base order at that spot\" the \"?\" tiles fill: \"T\" in some rows, \"A\" in others.",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for item two (owner rule, 16 October).",
+      "narrationCue": "The variant is one base, so you need the base order at that",
+      "motionPurpose": "On the spoken cues: (2) On \"the allele's frequency in each population\" two small bars draw under the population cards (illustrative, no values; tag \"allele frequency in each\"); the line \"(a) the variant is one base: sequencing reads it; profiling measures repeat lengths only\" writes on. (3) On \"better for relatedness\" the line \"(b) e.g.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. (1) On \"the base order at that spot\" the \"?\" tiles fill: \"T\" in some rows, \"A\" in others. (2) On \"the allele's frequency in each population\" two small bars draw under the population cards (illustrative, no values; tag \"allele frequency in each\"); the line \"(a) the variant is one base: sequencing reads it; profiling measures repeat lengths only\" writes on. (3) On \"better for relatedness\" the line \"(b) e.g. paternity, or how related captive animals are\" writes on. (4) On \"reads the whole genome\" the chip \"profiling reads the whole genome\" writes on and takes a grey scribble cross, with the tag \"a handful of markers\". Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "bar draw"
+      ],
+      "holdPurpose": "Brief settle before the next scene"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The choice board returns as two chips, one per cue: \"a particular base: sequence\" (tile row), \"who's related: profile\" (mini gel), with a sub-chip under the second: \"one mismatch excludes; a match needs many markers\".",
+      "teachingReason": "Packs the method into reusable lines and hands off to the next video.",
+      "narrationCue": "So, start with the question. Need a particular base? Sequence",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: what collaborative population data can show\" (a small grid of many trace chips).",
+      "motionRole": "explain",
+      "onScreenChange": "the choice board returns as two chips, one per cue: \"a particular base: sequence\" (tile row), \"who's related: profile\" (mini gel), with a sub-chip under the second: \"one mismatch excludes; a match needs many markers\". A \"Next\" chip slides in at the lower right: \"Next: what collaborative population data can show\" (a small grid of many trace chips).",
+      "motionTools": [
+        "chip pop",
+        "plate slide"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b12-learning-review.md",
+      "sha256": "93c609743744396f6006bf3f1f08c0b815cd4771fa8b5ab49e5b8b337862d7c4"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b12-claude-science-check.md",
+      "sha256": "41070cb365203596aebc89208e47654b0e32d7ad53f77df4f5b6eb5c864d4af1"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

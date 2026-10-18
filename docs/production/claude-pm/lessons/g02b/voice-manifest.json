@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-G02-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/g02b/lesson.json",
+  "lessonSha256": "dd8c241701e662a909626fe34045b498a159d7190873da95897a495b84eb3de6",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/g02b/lesson.production-brief.json",
+    "sha256": "fe2b8ebcffe8aa6fbfda1245810256a73974bd74569ee69df7eae1d57ee972fe"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you. Every one starts the same way: choose the model, write the genotypes you're sure of, then combine the chances. Here are four HSC-style questions. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake.",
+      "hash": "d5a76f9010e5",
+      "textSha256": "d5a76f9010e5dcb1d1bf98a704fb29d0d2135259916741a53ac6c3a257bac69c",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/hook.d5a76f9010e5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/hook.d5a76f9010e5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/hook.d5a76f9010e5.generation.json",
+      "plannedRequestSha256": "5ca1b5fecfd7660ba9d6a6cf881825536a4b2e9328fcb86a50595f6276c22c80"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. In Andalusian chickens, a black bird crossed with a splashed white bird gives chicks that are all blue. A farmer crosses two blue chickens. Explain why some of their chicks are black and some are white, and give the ratio. Then find the probability that their first two chicks are both blue. Finally, which cross would give only blue chicks? Pause here to answer.",
+      "hash": "f72d0b15a8e1",
+      "textSha256": "f72d0b15a8e1194e56b324d8b42d40759d1a557d6e56500ac393f6f4ee301f09",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-question.f72d0b15a8e1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-question.f72d0b15a8e1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-question.f72d0b15a8e1.generation.json",
+      "plannedRequestSha256": "8004d233f15f6bd4b1242d115bd2d08edeaf2bd1d2cf1a8eb083eec647911f94"
+    },
+    {
+      "id": "q1-model",
+      "parentSceneId": "q1-model",
+      "text": "First, choose the model. Black crossed with white gives a third colour, in between, so this is incomplete dominance. A blue bird is heterozygous, with one black allele and one white allele. Two blue parents each pass on one or the other, so the square gives 1 black, 2 blue, 1 white.",
+      "hash": "ad55e0b5a8f7",
+      "textSha256": "ad55e0b5a8f70521f4989a7a375e58d155de64d4ea1fcb306c05f585ded6fea1",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-model.ad55e0b5a8f7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-model.ad55e0b5a8f7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-model.ad55e0b5a8f7.generation.json",
+      "plannedRequestSha256": "1a9102d7723c45bc0fb6ec76980897427a986ef66ce050ba68ca27501639ce95"
+    },
+    {
+      "id": "q1-chance",
+      "parentSceneId": "q1-chance",
+      "text": "Each chick has a one in two chance of being blue, and each chick is a separate chance. So for the first chick and the second, multiply: one half times one half is one in four. And for only blue chicks, cross black with white: every chick gets one of each allele.",
+      "hash": "945236f6c1ab",
+      "textSha256": "945236f6c1ab0db3379ab28787956bef100c002700c9387ab1d252ae83a3f4df",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-chance.945236f6c1ab.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-chance.945236f6c1ab.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-chance.945236f6c1ab.generation.json",
+      "plannedRequestSha256": "a6e8f7115c8dc96c17fab2cb7f04847107770a869a41bb5a0319f6e869eb2a14"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is crossing blue with blue to get blue chicks. Blue birds are heterozygous, so they can't breed true. The alleles separate again.",
+      "hash": "0ecf38258e08",
+      "textSha256": "0ecf38258e08d18f31ede6a2ca959578f7aa7d3818dab5306cda285c532e3886",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-mistake.0ecf38258e08.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-mistake.0ecf38258e08.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-mistake.0ecf38258e08.generation.json",
+      "plannedRequestSha256": "790b58e1246664d0119b3e139777cc0309536b87858292f5d9cb2ed18f19a64b"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. In cats, a gene for coat colour is on the X chromosome. One allele gives orange fur, and the other gives black. A cat with one of each shows both colours, in patches: this is called tortoiseshell. Explain why tortoiseshell cats are almost always female. A tortoiseshell female then mates with an orange male. What's the probability that a kitten is a tortoiseshell female? And what fraction of their sons are black? Pause here to answer.",
+      "hash": "316db2d8aada",
+      "textSha256": "316db2d8aada192b39bf93d470a62197c7f1b74578ac07a77cbb7a5b3fcdbb66",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-question.316db2d8aada.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-question.316db2d8aada.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-question.316db2d8aada.generation.json",
+      "plannedRequestSha256": "690abb6f604b9842e7c2347d88d0520c071819962dcb22a6cc94e6bdcb60a734"
+    },
+    {
+      "id": "q2-why-female",
+      "parentSceneId": "q2-why-female",
+      "text": "The gene is on the X, and a tortoiseshell cat needs both alleles, so it needs two X chromosomes. A male has one X and a Y, so his single X carries only one colour. That's why tortoiseshell cats are almost always female.",
+      "hash": "9ca25628def1",
+      "textSha256": "9ca25628def13f3f506efb98903e0a2fe2fa40fc6092d2a5072d8f9964f680d8",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-why-female.9ca25628def1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-why-female.9ca25628def1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-why-female.9ca25628def1.generation.json",
+      "plannedRequestSha256": "34efd7102db0d94dfd794112c6322935bd79d5fb7c615b30ffdfcdeefc800169"
+    },
+    {
+      "id": "q2-square",
+      "parentSceneId": "q2-square",
+      "text": "Now the cross. The mother gives an orange X or a black X. The father gives his orange X to every daughter, and his Y to every son. So daughters are orange or tortoiseshell, and sons are orange or black. Tortoiseshell females are one box of four: one in four of all kittens. Of the sons, one in two is black.",
+      "hash": "fe30c6d69939",
+      "textSha256": "fe30c6d6993950aab43f6604bea4e09f9f68ce5f787ee75e5fe07d81f3fffce3",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-square.fe30c6d69939.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-square.fe30c6d69939.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-square.fe30c6d69939.generation.json",
+      "plannedRequestSha256": "89a9f05a88c5ab5e0698e064f658039f2617f25e28aa353e41c53502953da01c"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is treating the gene as if it were on an autosome. That gives tortoiseshell kittens of both sexes, half of all kittens. But sons only get their mother's X.",
+      "hash": "71be456afe99",
+      "textSha256": "71be456afe99d8e3b4af2e6f5ac338dd362be95c92aaa6097d3b5f6d3146530f",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-mistake.71be456afe99.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-mistake.71be456afe99.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-mistake.71be456afe99.generation.json",
+      "plannedRequestSha256": "9442807cadecd6bcd16e741415d95fd92bc1c7996459c02ee3674b458d99b4ec"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. Phenylketonuria, or P K U, is an autosomal recessive condition. In this family, a woman doesn't have P K U, but her brother does, and their parents don't. Her partner doesn't have P K U, but his mother does. What is the probability that their first child has P K U? And if their first child does have it, what is the probability for the second child? Pause here to answer.",
+      "hash": "539d94e81307",
+      "textSha256": "539d94e81307e99e8a8eeecc293b5343a0d8f4ae47815a838a098cd4f149584b",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-question.539d94e81307.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-question.539d94e81307.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-question.539d94e81307.generation.json",
+      "plannedRequestSha256": "e72d11d06da607729e2fe9f4a22c5f86cf8b1ec3826b822e3b1b7e16a1286257"
+    },
+    {
+      "id": "q3-sure",
+      "parentSceneId": "q3-sure",
+      "text": "Start with the people you can be sure of. The man's mother has two recessive alleles, so she gave him one. He's unaffected, so he must be a carrier. The woman's brother is affected, but their parents aren't, so both parents are carriers.",
+      "hash": "8932f1fb05d9",
+      "textSha256": "8932f1fb05d9c74145d811889485e13249037f5d4eeb68338c4d8450c0fb76ae",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-sure.8932f1fb05d9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-sure.8932f1fb05d9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-sure.8932f1fb05d9.generation.json",
+      "plannedRequestSha256": "50859da95eba682d5d4d182a90ad12f4c2c0bd0b8bd85e3f0365de614af6f1c0"
+    },
+    {
+      "id": "q3-two-thirds",
+      "parentSceneId": "q3-two-thirds",
+      "text": "Now the woman. Her parents' square has four boxes, but she's unaffected, so cross out the affected box. That leaves three equally likely boxes, and two of them are carriers. So she has a two in three chance of being a carrier. If she is, each child has a one in four chance. Two thirds times one quarter is one in six.",
+      "hash": "625c25c90f30",
+      "textSha256": "625c25c90f30f81587aba57f656f7df07cd4204ec6a543beb500ad86efc490e6",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-two-thirds.625c25c90f30.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-two-thirds.625c25c90f30.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-two-thirds.625c25c90f30.generation.json",
+      "plannedRequestSha256": "ba3e6aedeccce032498ec58830c1d403a69169f2d459096854bf64716c8db432"
+    },
+    {
+      "id": "q3-update",
+      "parentSceneId": "q3-update",
+      "text": "Now suppose their first child has P K U. The child needed a recessive allele from her, so that proves she's a carrier. Now both are carriers, so the second child's chance is one in four. The classic mistake is giving her a one in two chance of being a carrier. That keeps the affected box, which she can't be.",
+      "hash": "213e515c54b6",
+      "textSha256": "213e515c54b69084feede11b67ede16477ae06f4f3aef5751e50bd4f89111f56",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-update.213e515c54b6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-update.213e515c54b6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-update.213e515c54b6.generation.json",
+      "plannedRequestSha256": "2332031e678ef097e5ed6cbc2c6f1221decbb40bc077274032fabbfcda420293"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. This pedigree shows a rare condition. Of three patterns, autosomal dominant, autosomal recessive and X-linked recessive, which can you rule out? Justify with numbered individuals. Then explain why this pedigree can't decide between the other two, and say which is more likely. Pause here to answer.",
+      "hash": "5dff7e03fcca",
+      "textSha256": "5dff7e03fcca5bbc9c8c1bc91f4f3a911067d2f76f4246f3b245bbd665eb83e2",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-question.5dff7e03fcca.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-question.5dff7e03fcca.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-question.5dff7e03fcca.generation.json",
+      "plannedRequestSha256": "a172811dddbd63bc9cb01e0cade515654a0dfea3150a5e5e8e991c70139c468b"
+    },
+    {
+      "id": "q4-rule-out",
+      "parentSceneId": "q4-rule-out",
+      "text": "Test X-linked recessive first. Individual 2 in generation one is an affected mother. Under that pattern, both her X chromosomes carry the allele, so every son gets it. But her son, individual 2 in generation two, is unaffected. And her daughter is affected, with an unaffected father. So it's not X-linked recessive.",
+      "hash": "31344eedb6e2",
+      "textSha256": "31344eedb6e28aa53c2b1289a330a0c0290b161ddcd2f71dde2f49935ad5070e",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-rule-out.31344eedb6e2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-rule-out.31344eedb6e2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-rule-out.31344eedb6e2.generation.json",
+      "plannedRequestSha256": "6244ead28da584de63542ff7bcee8a4760c2b7c2fad3f23e64858de62bb8d619"
+    },
+    {
+      "id": "q4-both-fit",
+      "parentSceneId": "q4-both-fit",
+      "text": "Now look for the giveaways. There are no unaffected parents with an affected child, and no affected parents with an unaffected child. Without one, both patterns fit. Dominant fits if each affected person has one copy of the allele. Recessive fits too, but only if the two unaffected partners, individual 1 in generation one and individual 4 in generation two, are both carriers.",
+      "hash": "c41a9afe1908",
+      "textSha256": "c41a9afe1908fe1c22d64e3e1c77ddab064e1e843d088511b4d4a3bb6113c891",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-both-fit.c41a9afe1908.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-both-fit.c41a9afe1908.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-both-fit.c41a9afe1908.generation.json",
+      "plannedRequestSha256": "8ac658a0c63289840cf0e715fd38a64efa37168cd430f94bbb865ada3c3696de"
+    },
+    {
+      "id": "q4-more-likely",
+      "parentSceneId": "q4-more-likely",
+      "text": "For a rare condition, two unrelated partners both being carriers is unlikely, so dominant is more likely. But it isn't proven. The classic mistake is saying it must be dominant because it's in every generation. That's a clue, not proof: recessive fits too.",
+      "hash": "666c7430012d",
+      "textSha256": "666c7430012df7191c31c32a0bcacc2c7bcbd202e45a1360394a4098c1fe2522",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-more-likely.666c7430012d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-more-likely.666c7430012d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-more-likely.666c7430012d.generation.json",
+      "plannedRequestSha256": "fcfbbfd25b035d036448147e0e4ed6e9b25395b47455a97851f7ec4d05a0fb09"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start. Choose the model: does the heterozygote look in between, or show both, and do sons and daughters differ? Write every genotype you can be sure of. For someone who's unaffected, cross out the affected box before you share the chance. For separate offspring of known parents, multiply. And if there's no giveaway, say what fits, and what's more likely. Next: how common an allele is across a whole population.",
+      "hash": "bfc0ec557349",
+      "textSha256": "bfc0ec5573498611cad54809e98a2b895e93227322c47423465dc2ecbd084902",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/decision-board.bfc0ec557349.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/decision-board.bfc0ec557349.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/decision-board.bfc0ec557349.generation.json",
+      "plannedRequestSha256": "bfe0e3dd66cf889585ff084d80d93253de232a3df9a3777c630854ae9ebac7f3"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

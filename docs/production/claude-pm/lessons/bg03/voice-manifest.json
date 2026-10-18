@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-G03-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/bg03/lesson.json",
+  "lessonSha256": "f91f81eef60de8a5c1bb58fffb33fc5e3d80784a333ec6493f476b7f47f0f9a5",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/bg03/lesson.production-brief.json",
+    "sha256": "fd2a45b6f062622af199b3f1d9f01d4ea014090147dd2680a3c4cd42b836299c"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A collaborative study from several countries followed nearly 10,000 women who carry a harmful version of a gene called BRCA1 or BRCA2. Among the BRCA1 carriers, about 72 in every 100 were estimated to get breast cancer by age 80. It's exactly the kind of large shared project we met in the last video. So does carrying that variant mean a woman will get breast cancer? And can population genetics predict anything with real accuracy?",
+      "hash": "5d31679a8632",
+      "textSha256": "5d31679a8632d5949fc2360940e78b574f44e60a240d426c84445e6dcd0d12a1",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/hook.5d31679a8632.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/hook.5d31679a8632.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/hook.5d31679a8632.generation.json",
+      "plannedRequestSha256": "53d3cdc2be5a9796750317b71e837230a0fb136324bf75894d2d6f9886e4d0ca"
+    },
+    {
+      "id": "group-not-person",
+      "parentSceneId": "group-not-person",
+      "text": "Here's what that number really says. Picture 100 carriers as 100 dots. About 72 would develop breast cancer by 80, and about 28 wouldn't. The study predicts that proportion well, because it was measured across thousands of people. Follow another large group of carriers, and you'd expect close to the same proportion again. That's a risk pattern, a trend in how likely something is across a group. What it can't say is which dots are which. For one woman, it's a probability, not a forecast.",
+      "hash": "a4da69eb445a",
+      "textSha256": "a4da69eb445a501aff0de003912b2594c18a015b90c83221c719a02551cbb306",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/group-not-person.a4da69eb445a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/group-not-person.a4da69eb445a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/group-not-person.a4da69eb445a.generation.json",
+      "plannedRequestSha256": "f21cae09c37b41bb649202b1bd6ed7c5e478665be364f7b853a8e1df18d372a7"
+    },
+    {
+      "id": "why-not-decided",
+      "parentSceneId": "why-not-decided",
+      "text": "So why can't the gene decide on its own? BRCA1 makes a protein that helps repair damaged DNA. A carrier inherits one faulty copy, but her other copy still works. Cancer usually starts only if a cell also loses that working copy, and whether that happens depends on chance damage, other genes and other factors, like hormones and age. So the variant raises the risk. It doesn't fix the outcome.",
+      "hash": "a220cb829235",
+      "textSha256": "a220cb8292356500edeff6abbc15de0d061826e79fdce5499e674aea06af05ca",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/why-not-decided.a220cb829235.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/why-not-decided.a220cb829235.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/why-not-decided.a220cb829235.generation.json",
+      "plannedRequestSha256": "40d2d6d2f73cf22fee92a6dab0e2b13295e6b3369f19ede558356bd3f16bc814"
+    },
+    {
+      "id": "not-certain",
+      "parentSceneId": "not-certain",
+      "text": "So a higher probability isn't a certain outcome. And it works the other way too. Most women who get breast cancer don't carry a BRCA variant at all, because these variants are rare and breast cancer has many other causes. So testing negative for a BRCA variant isn't a guarantee either. Genetic risk is not genetic destiny.",
+      "hash": "0ab197e1a5c6",
+      "textSha256": "0ab197e1a5c65c56519ab7422bf39f8632214055e3451b472c521c48cd318975",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/not-certain.0ab197e1a5c6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/not-certain.0ab197e1a5c6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/not-certain.0ab197e1a5c6.generation.json",
+      "plannedRequestSha256": "99b4c35f3ff71aab8eff366d4d566f443476ecca0705441aed32b76541e5216c"
+    },
+    {
+      "id": "carrier-estimate",
+      "parentSceneId": "carrier-estimate",
+      "text": "Population predictions can be very accurate, though. Here's one that health services use. Cystic fibrosis is recessive, so carriers look healthy and can't be counted by looking. But affected babies can be counted. Say one baby in 2,500 is affected. An affected baby needs the allele from both parents, so the allele's frequency times itself is one in 2,500. Take the square root, and the allele's frequency is 0.02, so the normal allele's is 0.98. Carriers have one of each, and there are two ways to get that, from the mother or the father. So carriers are two times 0.98 times 0.02, about one person in 25. This is the Hardy-Weinberg principle, and it shows how a rare disease can have common carriers.",
+      "hash": "cb108c43b415",
+      "textSha256": "cb108c43b415f9b010630960ab31e747e00ae8b233f6a7a92fec70682c283971",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/carrier-estimate.cb108c43b415.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/carrier-estimate.cb108c43b415.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/carrier-estimate.cb108c43b415.generation.json",
+      "plannedRequestSha256": "3f387f2b21a34ab3d0f4bf9078f2397eafbb20e8b9b8787944470432df8f54dc"
+    },
+    {
+      "id": "when-predictions-hold",
+      "parentSceneId": "when-predictions-hold",
+      "text": "But that estimate only holds if the population is large, mates at random, and isn't changed by selection, migration or new mutations. Real populations rarely meet all of these, and that's useful too. If the real numbers differ from the prediction, something is acting on the population. For example, if DNA tests give the allele's frequency, and more babies are affected than it predicts, relatives may be having children together. In a large population over a short time, predictions come close. In a small population, chance can push allele frequencies either way, so long-range predictions there fail.",
+      "hash": "834565a1ed87",
+      "textSha256": "834565a1ed87968f0bb68e42a74fceb5d671d17c796aaffee4486f8971e82abd",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/when-predictions-hold.834565a1ed87.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/when-predictions-hold.834565a1ed87.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/when-predictions-hold.834565a1ed87.generation.json",
+      "plannedRequestSha256": "b82e44c29735414b5bc1938ab4803e5d1dfe42485ef1588a4d637931319a7936"
+    },
+    {
+      "id": "shared-with-relatives",
+      "parentSceneId": "shared-with-relatives",
+      "text": "Genetic risk is also shared within families. If a woman carries a BRCA1 variant, each of her children has a one in two chance of inheriting it, and so does each of her brothers and sisters, because one of her parents almost certainly carries it too. So genetic data are never only about one person. In 2003, Iceland's Supreme Court upheld a woman's claim that her late father's health records shouldn't go into a planned national database, because data about him could reveal information about her.",
+      "hash": "228c761df060",
+      "textSha256": "228c761df06051a68ee40ef257ec544e5b8a7b52371ba4ef4ab7e3e86eca5979",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/shared-with-relatives.228c761df060.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/shared-with-relatives.228c761df060.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/shared-with-relatives.228c761df060.generation.json",
+      "plannedRequestSha256": "2927939ee57e786296b3ea81d3660840590eeadd1987462a8421798553594133"
+    },
+    {
+      "id": "strong-wording",
+      "parentSceneId": "strong-wording",
+      "text": "So in an exam, match your claim to your evidence. Strong answers say the data suggest a trend, indicate increased risk, or make an outcome more likely in this population. Weak answers say the data prove every person will be affected, guarantee an outcome, or remove all uncertainty. So don't write that carriers will get the disease. Write that carriers are more likely to get it. Be precise and cautious at the same time.",
+      "hash": "86e6efb1ac19",
+      "textSha256": "86e6efb1ac1973261938b31dbb9316666b819cf0807d3752c3c80df25e76d577",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/strong-wording.86e6efb1ac19.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/strong-wording.86e6efb1ac19.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/strong-wording.86e6efb1ac19.generation.json",
+      "plannedRequestSha256": "cd467e03c9b2c5836d8f2233a2ccf3f292639703e2314d7380c5273f2cadfd67"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Three lines to remember. Population evidence gives population conclusions. Genetic risk is not genetic destiny. And for a rare recessive condition, expect far more carriers than affected people.",
+      "hash": "8bfa0f192cfa",
+      "textSha256": "8bfa0f192cfa2c25f8763294a58a3eb213f11c526542b9659389739c76c7326b",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/memory.8bfa0f192cfa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/memory.8bfa0f192cfa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/memory.8bfa0f192cfa.generation.json",
+      "plannedRequestSha256": "80baa19dd60adbd67372a426f9fe414e82f4220bbe7d7e5cb9e9dbaf2dba1b3d"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two harder questions. First, a study of 50,000 adults finds that carriers of a variant develop heart disease twice as often as non-carriers. A report about one carrier says: this person will get heart disease. What does the study support? Rewrite the claim so it matches the evidence. Pause here to answer.",
+      "hash": "88fa73ddb938",
+      "textSha256": "88fa73ddb9381db521fec294578bf1ebeb64e4c50b64348c26ad9f64ddc5c088",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/attempt.88fa73ddb938.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/attempt.88fa73ddb938.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/attempt.88fa73ddb938.generation.json",
+      "plannedRequestSha256": "128e253d70276ded6837dea813f6ffae5b03aa16e25cd945202e38aa66777c19"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The study supports a group trend: carriers, as a group, have about twice the risk. It can't say what happens to one person, because other genes, environment and chance also matter. A better claim: this person has a higher risk than a non-carrier. And if you said twice the risk means a fifty per cent chance, twice a small risk can still be small.",
+      "hash": "5ed815e1c395",
+      "textSha256": "5ed815e1c39538d5346ac68ec902f7853f0087550a19f1ccfc3cda10c2b1f5b8",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/feedback-one.5ed815e1c395.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/feedback-one.5ed815e1c395.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/feedback-one.5ed815e1c395.generation.json",
+      "plannedRequestSha256": "ad513686cefeba183f54683cf7b66d6c07165e11ff45f4aaf488cda5ba2c1e17"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A recessive condition affects one baby in 10,000. Assuming Hardy-Weinberg, estimate the carrier frequency. Then explain why the estimate would be less reliable in a small, isolated village. Pause here to answer.",
+      "hash": "056260d21739",
+      "textSha256": "056260d21739aeddb544b41c7ff0928916b59efb2fac9d3ba25a6c1004ae7e91",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/attempt-two.056260d21739.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/attempt-two.056260d21739.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/attempt-two.056260d21739.generation.json",
+      "plannedRequestSha256": "b849956ba0158422c7915a9251f7a6681a0e28898af5f428500bceea7955e42e"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The allele's frequency, squared, is one in 10,000, so the allele's frequency is 0.01, and the normal allele's is 0.99. Carriers are two times 0.99 times 0.01, about 0.02, or one person in 50. In a small village, chance and marriages between relatives break the assumptions. And if you said one in 10,000, that's the affected babies, not the carriers.",
+      "hash": "358bb1079fae",
+      "textSha256": "358bb1079fae635b7eebdc10bd004e54157b0ad1b4c90bdfa925c71188697adf",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/feedback-two.358bb1079fae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/feedback-two.358bb1079fae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/feedback-two.358bb1079fae.generation.json",
+      "plannedRequestSha256": "d3fc2503c4416b9daab083844fadbaaf12d67ec3077d21e01aa638686dc4ed37"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, population genetics predicts group patterns well: risk across a group, carrier frequencies, how alleles are spread, and how related populations are. It can't fix one person's future. Module 5 showed how inheritance works and how to predict it. Next, in Module 6, we'll see how mutation and technology change these patterns.",
+      "hash": "0470a655044d",
+      "textSha256": "0470a655044d7e4f765aa06e6a83a368983ab8e379da8cb74ff656831615ea6b",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/decision-rule.0470a655044d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/decision-rule.0470a655044d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/decision-rule.0470a655044d.generation.json",
+      "plannedRequestSha256": "db9dbb64169f641d122e1ec33ec64e790d81b3868aaed8d2a516ad58e4373bd9"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G03-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

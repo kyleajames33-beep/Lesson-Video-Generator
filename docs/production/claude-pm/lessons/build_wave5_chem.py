@@ -1878,6 +1878,557 @@ C15_ROWS = {
 }
 
 
+P01_ROWS = {
+    'hook': [
+        "adjust",
+        "Heading \"Looks unchanged. Is that evidence?\" writes on.",
+        "Explains why a still tube is not evidence: a finished reaction also looks still.",
+        "push it",
+        "On the spoken cues: The painted iron tube (`c3-iron-tube-start-v1.png`) stands centre on the white tile (`m6-white-tile-v1.png`); a coded clock icon sweeps one hour beside it. On \"finished reaction\" a second plate slides in beside it, the ash on its watch glass (`p01-mgo-ash-v1.png`, Codex item 4), with the tag \"finished: nothing changing\";",
+        "explain",
+        "heading \"Looks unchanged. Is that evidence?\" writes on. The painted iron tube (`c3-iron-tube-start-v1.png`) stands centre on the white tile (`m6-white-tile-v1.png`); a coded clock icon sweeps one hour beside it. On \"finished reaction\" a second plate slides in beside it, the ash on its watch glass (`p01-mgo-ash-v1.png`, Codex item 4), with the tag \"finished: nothing changing\"; both get the same \"still\" tag and a pen \"?\" between them (\"same appearance, different story\"). On \"push it\" a coded drop falls into the iron tube and a pen arrow labelled \"push\" points at it. The main question card writes: \"How do you get evidence you can trust?\"",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "plate slide",
+            "drop fall"
+        ],
+        "Hold 1 second"
+    ],
+    'reversibility-test': [
+        "adjust",
+        "The \"push it, bring it back\" loop writes at the top: an arrow out (\"change\") and an arrow back (\"reverse the change\"), with \"start comes back?\" at the end.",
+        "Explains why a return is the evidence of reversibility: going one way happens in irreversible changes too; only coming back shows the reverse reaction can run.",
+        "reverse / blue / pink again / reversible",
+        "On the spoken cues: On \"Heat pink cobalt chloride crystals\" the painted clamped tube of pink crystals (`p01-cocl2-crystals-pink-v1.png`, Codex item 1) sits over the painted burner (`m5x-bunsen-burner-v1.png`, Codex item 3) on the clamp stand; on \"droplets\" small coded droplets bead near the mouth (or the plate's own droplets in item 2);",
+        "explain",
+        "the \"push it, bring it back\" loop writes at the top: an arrow out (\"change\") and an arrow back (\"reverse the change\"), with \"start comes back?\" at the end. On \"Heat pink cobalt chloride crystals\" the painted clamped tube of pink crystals (`p01-cocl2-crystals-pink-v1.png`, Codex item 1) sits over the painted burner (`m5x-bunsen-burner-v1.png`, Codex item 3) on the clamp stand; on \"droplets\" small coded droplets bead near the mouth (or the plate's own droplets in item 2); on \"blue\" the plate crossfades to `p01-cocl2-crystals-blue-v1.png` (optional process clip) and the first loop arrow lights. Equation chip, small, two one-way lines (no equilibrium arrow, because the tube is open): \"heat: CoCl2·6H2O(s), pink → CoCl2(s), blue + 6H2O(g)\" and, lit only on \"add a few drops of water\", \"add water: CoCl2(s), blue + 6H2O(l) → CoCl2·6H2O, pink\". On \"proves nothing yet\" a crossed chip \"blue, so reversible\" fades in. On \"add a few drops of water\" the burner fades out, the clear dropper (`m5x-dropper-clear-v1.png`, Codex item 5) appears above the tube and a coded drop falls; on \"pink again\" the plate crossfades back to pink and the return arrow lights with a teal tick; a small terracotta heat icon on \"warms slightly\". On \"reversible\" the word and its meaning write under the loop: \"reversible: the change can be run back by changing the conditions\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Mark cross",
+            "tick",
+            "plate crossfade",
+            "chip pop",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'magnesium-open': [
+        "adjust",
+        "Right zone. The painted magnesium ribbon on a heatproof mat (`p01-mg-ribbon-v1.png`, Codex item 4) gets a coded white glare (abstract light burst, with a small pen tag \"never look straight at it\"), then crossfades to the ash plate (`p01-mgo-ash-v1.png`).",
+        "Explains why a return is the evidence of reversibility: going one way happens in irreversible changes too; only coming back shows the reverse reaction can run.",
+        "irreversible / open",
+        "On the spoken cues: The equation chip \"2Mg(s) + O2(g) → 2MgO(s)\" writes with a one-way arrow. On \"Add water, heat it, cool it\" three small attempt chips write in turn under the ash, each with a pen cross (\"no magnesium\"). On \"irreversible\" the term writes with its meaning: \"no change you can make brings the start back\".",
+        "explain",
+        "right zone. The painted magnesium ribbon on a heatproof mat (`p01-mg-ribbon-v1.png`, Codex item 4) gets a coded white glare (abstract light burst, with a small pen tag \"never look straight at it\"), then crossfades to the ash plate (`p01-mgo-ash-v1.png`). The equation chip \"2Mg(s) + O2(g) → 2MgO(s)\" writes with a one-way arrow. On \"Add water, heat it, cool it\" three small attempt chips write in turn under the ash, each with a pen cross (\"no magnesium\"). On \"irreversible\" the term writes with its meaning: \"no change you can make brings the start back\". On \"open\" the cobalt tube returns small with a dashed outline around it; a coded steam wisp crosses the outline (tag \"open: matter can leave\"). On \"isn't an equilibrium\" a tag writes: \"open: a reversibility test, not an equilibrium\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Mark cross",
+            "plate crossfade",
+            "chip pop"
+        ],
+        "Hold 2 seconds"
+    ],
+    'closed-system': [
+        "adjust",
+        "Three plates in a row, each with the dashed boundary outline: the iron tube (ions stay in the water; tag \"ions cannot leave\"), the sealed NO2 tube (`c9-no2-tube-brown-v1.png`; tag \"sealed gas\"), the syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, tip sealed;",
+        "Explains why the closed system: a response to a disturbance only means something if nothing escapes.",
+        "sealed / closed",
+        "On the spoken cues: On \"write the condition\" a method line writes in pen: \"System: closed. Sealed: ___. Can enter or leave: ___.\" On \"closed\" each boundary turns solid teal with the tag \"closed: matter stays in; heat can still pass\" (C1 recall).",
+        "explain",
+        "three plates in a row, each with the dashed boundary outline: the iron tube (ions stay in the water; tag \"ions cannot leave\"), the sealed NO2 tube (`c9-no2-tube-brown-v1.png`; tag \"sealed gas\"), the syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, tip sealed; tag \"sealed syringe\"). On \"write the condition\" a method line writes in pen: \"System: closed. Sealed: ___. Can enter or leave: ___.\" On \"closed\" each boundary turns solid teal with the tag \"closed: matter stays in; heat can still pass\" (C1 recall).",
+        [
+            "HandText write-on",
+            "ScribbleCircle"
+        ],
+        "Hold 1 second"
+    ],
+    'setup-reference': [
+        "adjust",
+        "The two reagent bottles (`m5x-bottle-fe-v1.png`, `m5x-bottle-scn-v1.png`) with coded labels \"0.002 mol/L Fe(NO3)3\" and \"0.002 mol/L KSCN\"; on \"equal volumes\" two coded pours meet in the painted beaker (`m6-beaker-v1.png`, coded pale red fill).",
+        "Explains why a pale stock: so a change can show in either direction; and why side by side: colour memory is unreliable.",
+        "either direction / reference / one change / side by side",
+        "On the spoken cues: On \"either direction\" a small swatch scale writes with an up arrow (\"deeper\") and a down arrow (\"paler\") either side of the pale red. On \"six identical tubes\" six painted iron tubes (`c3-iron-tube-start-v1.png`) slide into a row on the white tile, numbered 1 to 6 by coded tags.",
+        "explain",
+        "the two reagent bottles (`m5x-bottle-fe-v1.png`, `m5x-bottle-scn-v1.png`) with coded labels \"0.002 mol/L Fe(NO3)3\" and \"0.002 mol/L KSCN\"; on \"equal volumes\" two coded pours meet in the painted beaker (`m6-beaker-v1.png`, coded pale red fill). On \"either direction\" a small swatch scale writes with an up arrow (\"deeper\") and a down arrow (\"paler\") either side of the pale red. On \"six identical tubes\" six painted iron tubes (`c3-iron-tube-start-v1.png`) slide into a row on the white tile, numbered 1 to 6 by coded tags. On \"reference\" tube 1 gets the teal \"1: reference, never changed\" tag and a lock icon. On \"one change\" tubes 2 to 6 each get an empty \"change: ___\" tag. On \"side by side\" a pen bracket joins tube 1 to each other tube in turn; a crossed chip \"compare from memory\" fades in.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'variables': [
+        "new",
+        "The variables card writes in the right zone, one row per cue: \"Independent (what you change): substance added, or temperature\"; \"Dependent (what you observe): colour compared with tube 1\"; \"Controlled (kept the same): volume of stock, tube size, white tile and lighting, time before judging\".",
+        "Teaches: the variables.",
+        "independent variable / dependent variable / controlled variables",
+        "On the spoken cues: As each controlled item is spoken, a small pen link points from it to the matching thing in the tube row (equal liquid levels, identical tubes, the tile, a small clock).",
+        "explain",
+        "the variables card writes in the right zone, one row per cue: \"Independent (what you change): substance added, or temperature\"; \"Dependent (what you observe): colour compared with tube 1\"; \"Controlled (kept the same): volume of stock, tube size, white tile and lighting, time before judging\". As each controlled item is spoken, a small pen link points from it to the matching thing in the tube row (equal liquid levels, identical tubes, the tile, a small clock).",
+        [
+            "HandText write-on"
+        ],
+        "Hold 2 seconds"
+    ],
+    'expected-results': [
+        "adjust",
+        "The equation chip \"Fe3+(aq) + SCN-(aq) ⇌ FeSCN2+(aq)\" (C3 style) top-centre.",
+        "Explains why the results go the way they do: the C3 cause in a clause (adding a reactant shifts right; removing one shifts left; heating favours the reaction that takes in heat).",
+        "deepens / fades",
+        "On the spoken cues: On \"tube two\" a coded crystal drop falls into tube 2 (tag \"Fe(NO3)3 crystals\"); on \"tube three\" into tube 3 (tag \"KSCN crystals\"); on \"deepens\" both crossfade to `c3-iron-tube-deep-v1.png` and a blue \"shift right\" arrow slides on the chip (C3 shift arrow).",
+        "explain",
+        "the equation chip \"Fe3+(aq) + SCN-(aq) ⇌ FeSCN2+(aq)\" (C3 style) top-centre. On \"tube two\" a coded crystal drop falls into tube 2 (tag \"Fe(NO3)3 crystals\"); on \"tube three\" into tube 3 (tag \"KSCN crystals\"); on \"deepens\" both crossfade to `c3-iron-tube-deep-v1.png` and a blue \"shift right\" arrow slides on the chip (C3 shift arrow). On \"tube four\" the clear dropper with a coded drop over tube 4 (tag \"0.1 mol/L NaOH\"); on \"rust-brown solid\" tube 4 crossfades to `p01-iron-tube-faded-ppt-v1.png` (Codex item 6) and an amber \"shift left\" arrow slides on the chip, with the tag \"Fe3+ removed as Fe(OH)3(s)\". The expected results table writes in the right zone, rows 2, 3 and 4: \"added / colour vs tube 1 / shift / reason (C3)\". A small grey tag under row 2: \"added iron also adds a little yellow-brown tint\".",
+        [
+            "HandText write-on",
+            "plate crossfade",
+            "chip pop",
+            "plate slide",
+            "table build",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'dilution-control': [
+        "adjust",
+        "On \"also added water\" the liquid level in tube 4 rises a hair with a pen tag \"more volume\".",
+        "Explains why the dilution control: adding a solution adds volume, which alone makes a tube paler; and why solids in tubes 2 and 3: volume hardly changes.",
+        "more dilute / dilution control",
+        "On the spoken cues: A chip \"paler, so shift left\" fades in with a \"?\" (not yet crossed). On \"dilution control\" the wash bottle (`m6-wash-bottle-v1.png`) and the clear dropper add the same count of coded drops to tube 5 (a counter \"10 drops\" under tube 4 and \"10 drops\" under tube 5, pen-linked as equal);",
+        "explain",
+        "on \"also added water\" the liquid level in tube 4 rises a hair with a pen tag \"more volume\". A chip \"paler, so shift left\" fades in with a \"?\" (not yet crossed). On \"dilution control\" the wash bottle (`m6-wash-bottle-v1.png`) and the clear dropper add the same count of coded drops to tube 5 (a counter \"10 drops\" under tube 4 and \"10 drops\" under tube 5, pen-linked as equal); on \"tiny bit paler\" tube 5 crossfades to `p01-iron-tube-diluted-v1.png` (Codex item 7). On \"clearly paler\" a comparison bar writes: three swatches, tube 1, tube 5, tube 4, with the small step from 1 to 5 labelled \"dilution\" and the big step from 5 to 4 labelled \"shift\"; the \"?\" chip turns into a teal tick \"shift confirmed by the control\". On \"solids\" tubes 2 and 3 pulse with the tag \"solid added: volume hardly changes\". Row 5 of the results table writes: \"same drops of water / very slightly paler / none / dilution only\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "plate crossfade",
+            "chip pop",
+            "table build",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'temperature': [
+        "adjust",
+        "The cobalt tube in its beaker bath (`c3-cobalt-tube-purple-v1.png`) with the painted stopper composited on (`m5x-stopper-v1.png`, Codex item 8) and a teal boundary outline (closed).",
+        "Explains why the results go the way they do: the C3 cause in a clause (adding a reactant shifts right; removing one shifts left; heating favours the reaction that takes in heat).",
+        "blue / pink / purple",
+        "On the spoken cues: Equation chip small: \"[Co(H2O)6]2+ (pink) + 4Cl- ⇌ [CoCl4]2- (blue) + 6H2O\", forward arrow tagged \"takes in heat\" (C3 icon). On \"hot water bath\" the thermometer (`c8-thermometer-hot-v1.png`) reads \"about 60 C\" and the bath water gets a coded warm tint; on \"blue\" the tube crossfades to `c3-cobalt-tube-blue-v1.png`.",
+        "explain",
+        "the cobalt tube in its beaker bath (`c3-cobalt-tube-purple-v1.png`) with the painted stopper composited on (`m5x-stopper-v1.png`, Codex item 8) and a teal boundary outline (closed). Equation chip small: \"[Co(H2O)6]2+ (pink) + 4Cl- ⇌ [CoCl4]2- (blue) + 6H2O\", forward arrow tagged \"takes in heat\" (C3 icon). On \"hot water bath\" the thermometer (`c8-thermometer-hot-v1.png`) reads \"about 60 C\" and the bath water gets a coded warm tint; on \"blue\" the tube crossfades to `c3-cobalt-tube-blue-v1.png`. On \"ice bath\" coded ice cubes (`c9-ice-cube-v1.png`, small) float in the bath, the thermometer drops, and on \"pink\" the tube crossfades to `c3-cobalt-tube-pink-v1.png`. On \"purple\" it returns to the purple plate with the \"push it, bring it back\" loop lighting small beside it. After \"purple\" (unspoken, Revision 2 reserve cut) the two C9 tubes (`c9-no2-tube-brown-v1.png` hot, `c9-no2-tube-pale-v1.png` ice) stand side by side with tags \"hot: browner\", \"ice: paler\". Results table rows: \"cobalt: hot blue, ice pink, room purple again\"; \"NO2 (sealed): hot browner, ice paler\". Margin tag, unspoken: \"volume/pressure: sealed NO2 syringe, usually a teacher demonstration (see the squeezing video)\". A second unspoken margin tag: \"keep the cobalt solution (contains acid) well away from thiocyanate\".",
+        [
+            "ScribbleCircle",
+            "plate crossfade",
+            "chip pop",
+            "table build",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'validity-reliability': [
+        "adjust",
+        "Three cards write in turn in the right zone, each with its plain question and this investigation's answer.",
+        "Explains why validity differs from reliability: repeats cannot fix a missing control.",
+        "Validity / Reliability / Accuracy",
+        "On the spoken cues: \"Validity: does it test what it claims? Only one change per tube; reference; dilution control.\" (pen links to tubes 1, 5). \"Reliability: same result on repeats? Repeat each tube; compare groups; two observers.\" (three small coded tube rows appear, matching). \"Accuracy: close to the true value? Eye judgement is rough;",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this investigation's answer. \"Validity: does it test what it claims? Only one change per tube; reference; dilution control.\" (pen links to tubes 1, 5). \"Reliability: same result on repeats? Repeat each tube; compare groups; two observers.\" (three small coded tube rows appear, matching). \"Accuracy: close to the true value? Eye judgement is rough; a colourimeter gives a number.\" (the painted colourimeter, `m5x-colourimeter-v1.png`, small, with a pen \"later\" tag). A crossed chip under the reliability card: \"repeating fixes a missing control\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold 2 seconds"
+    ],
+    'risk-assessment': [
+        "adjust",
+        "The risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its painted plate small in the hazard cell: cobalt chloride (pink crystals plate): \"harmful if swallowed; may cause cancer if dust inhaled;",
+        "Teaches: the risk assessment.",
+        "acid / eyes",
+        "On the spoken cues: Gloves (`m5x-gloves-v1.png`) and glasses plates sit at the table head under \"always\". Unspoken row: \"concentrated hydrochloric acid in the cobalt solution: corrosive / teacher-prepared, stoppered\". Footer chip: \"follow your school's risk assessment and your teacher's method\".",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its painted plate small in the hazard cell: cobalt chloride (pink crystals plate): \"harmful if swallowed; may cause cancer if dust inhaled; skin and breathing allergies\" / \"small amounts, no dust, gloves, teacher demo in many schools\"; thiocyanate (KSCN bottle): \"acid releases a very toxic gas\" / \"never mix with acid; keep the cobalt solution apart\"; sodium hydroxide (dropper): \"eye damage\" / \"safety glasses (`m5x-safety-glasses-v1.png`)\"; hot bath (beaker, thermometer): \"scalds\" / \"test tube holder (`m5x-test-tube-holder-v1.png`), water bath, no naked flame near the tubes\"; burning magnesium (ribbon): \"intense light, fire\" / \"never look at the flame, heatproof mat, teacher demo, never water on a magnesium fire\"; waste (`m5x-waste-bottle-v1.png`): \"cobalt is toxic to water life\" / \"labelled residues container, never the sink\". Gloves (`m5x-gloves-v1.png`) and glasses plates sit at the table head under \"always\". Unspoken row: \"concentrated hydrochloric acid in the cobalt solution: corrosive / teacher-prepared, stoppered\". Footer chip: \"follow your school's risk assessment and your teacher's method\".",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "drop fall"
+        ],
+        "Hold 3 seconds (reading hold; the table returns in the key notes)"
+    ],
+    'memory-aid': [
+        "adjust",
+        "Aid 1 writes large and handwritten with the loop arrows: \"Push it, then bring it back.\" Aid 2 writes beneath with two small icons, a rain cloud over the pink crystals plate and a sun over the blue plate: \"Pink in the rain, blue in the desert.\" A crossed chip \"blue when wet\" (the site's common error)",
+        "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+        "Push it, then bring it back / pink in the rain, blue in the desert",
+        "On the spoken cues: Condition tag: \"a return is the evidence; one change is not\".",
+        "explain",
+        "aid 1 writes large and handwritten with the loop arrows: \"Push it, then bring it back.\" Aid 2 writes beneath with two small icons, a rain cloud over the pink crystals plate and a sun over the blue plate: \"Pink in the rain, blue in the desert.\" A crossed chip \"blue when wet\" (the site's common error). Condition tag: \"a return is the evidence; one change is not\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold 2 seconds"
+    ],
+    'attempt-1': [
+        "new",
+        "The board clears to two tubes on the white tile: tube 1 (reference, start plate) and the silver nitrate tube (`p01-iron-tube-diluted-v1.png` with a coded faint white cloud at the bottom, tag \"+ 10 drops silver nitrate solution\").",
+        "Unseen transfer task with every condition on screen: \"What extra tube would make this conclusion valid, and why?\"",
+        "Your turn. A student adds ten drops of silver nitrate solution to an iron thiocyanate",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears to two tubes on the white tile: tube 1 (reference, start plate) and the silver nitrate tube (`p01-iron-tube-diluted-v1.png`)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. Givens card: \"10 drops of silver nitrate solution added\", \"paler than the reference\", \"conclusion: shifted left\". Demand: \"What extra tube would make this conclusion valid, and why?\" Countdown ring for 10 seconds with \"Pause here to answer.\" on screen.",
+        [
+            "ScribbleCircle",
+            "drop fall",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-1': [
+        "adjust",
+        "A third tube slides in (`p01-iron-tube-diluted-v1.png`, tag \"+ 10 drops water\") with the drop counters pen-linked as equal; answer chip \"dilution control: same 10 drops of water\" pins.",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for 1 (owner rule, 16 October).",
+        "ten drops of water / dilution control / reliable",
+        "On the spoken cues: The three-swatch comparison bar from scene 8 returns with \"dilution\" and \"shift\" steps. On \"repeating\" a chip \"repeat it three times\" fades in and is crossed (caption \"reliability, not validity\").",
+        "explain",
+        "a third tube slides in (`p01-iron-tube-diluted-v1.png`, tag \"+ 10 drops water\") with the drop counters pen-linked as equal; answer chip \"dilution control: same 10 drops of water\" pins. The three-swatch comparison bar from scene 8 returns with \"dilution\" and \"shift\" steps. On \"repeating\" a chip \"repeat it three times\" fades in and is crossed (caption \"reliability, not validity\").",
+        [
+            "Mark cross",
+            "chip pop",
+            "plate slide",
+            "drop fall",
+            "bar draw"
+        ],
+        "Hold 1 second"
+    ],
+    'attempt-2': [
+        "new",
+        "The clamped tube of blue crystals (`p01-cocl2-crystals-blue-v1.png`) with the open dashed boundary; givens card: \"pink crystals heated in an open tube\", \"turned blue\", and the student's line in a quote box: \"This shows the reaction is reversible.\" Demand: \"Evaluate his conclusion.\" Countdown ring fo",
+        "Unseen transfer task with every condition on screen: \"Evaluate his conclusion.\"",
+        "One more. A student heats pink cobalt chloride crystals in an open test tube, and they",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The clamped tube of blue crystals (`p01-cocl2-crystals-blue-v1.png`) with the open dashed boundary;)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. ",
+        [
+            "ScribbleCircle",
+            "drop fall",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-2': [
+        "adjust",
+        "The loop arrows return: the \"change\" arrow lit, the \"reverse\" arrow dashed with \"missing\"; on \"pink\" the dropper adds a drop and the plate crossfades to pink, the return arrow lights with a teal tick.",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for 2 (owner rule, 16 October).",
+        "one direction / pink",
+        "On the spoken cues: Answer chip \"one direction only: reverse it (add water, pink returns)\". On \"open\" the steam wisp crosses the dashed boundary with the tag \"open: not an equilibrium\". On \"colour changed\" a chip \"correct, the colour changed\" fades in and is crossed (caption \"one change is not a return\").",
+        "explain",
+        "the loop arrows return: the \"change\" arrow lit, the \"reverse\" arrow dashed with \"missing\"; on \"pink\" the dropper adds a drop and the plate crossfades to pink, the return arrow lights with a teal tick. Answer chip \"one direction only: reverse it (add water, pink returns)\". On \"open\" the steam wisp crosses the dashed boundary with the tag \"open: not an equilibrium\". On \"colour changed\" a chip \"correct, the colour changed\" fades in and is crossed (caption \"one change is not a return\").",
+        [
+            "Mark cross",
+            "tick",
+            "plate crossfade",
+            "chip pop",
+            "drop fall"
+        ],
+        "Hold 1 second"
+    ],
+    'decision-rule': [
+        "adjust",
+        "The plan card writes, each line lighting on its words: \"Push it, bring it back.\" \"Closed system.\" \"Reference tube, never changed.\" \"One change per tube.\" \"Dilution control: same volume of water.\" \"Judge side by side on a white tile.\" \"Risk assessment first.\" The six-tube row returns small along the",
+        "Packs the method into reusable lines and hands off to the next video.",
+        "Next",
+        "On the spoken cues: On \"Next\" a chip \"Next: a number for where an equilibrium sits\" appears with the painted iron tube small.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"Push it, bring it back.\" \"Closed system.\" \"Reference tube, never changed.\" \"One change per tube.\" \"Dilution control: same volume of water.\" \"Judge side by side on a white tile.\" \"Risk assessment first.\" The six-tube row returns small along the bottom with the matching tubes pulsing. On \"Next\" a chip \"Next: a number for where an equilibrium sits\" appears with the painted iron tube small.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold 2 seconds"
+    ],
+    'key-notes': [
+        "new",
+        "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aids appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ],
+}
+
+P03_ROWS = {
+    'hook': [
+        "adjust",
+        "Heading \"Where do the rules come from? Your own results.\" writes on.",
+        "Teaches: hook (a grid of evidence).",
+        "clear / cloudy / rules",
+        "On the spoken cues: The painted well plate (`p03-well-plate-v1.png`, Codex item 1) sits centre on a coded black card; the 5 x 5 block is outlined in pen with the row and column ion labels writing on. On \"clear\" a few wells fill with coded clear liquid;",
+        "explain",
+        "heading \"Where do the rules come from? Your own results.\" writes on. The painted well plate (`p03-well-plate-v1.png`, Codex item 1) sits centre on a coded black card; the 5 x 5 block is outlined in pen with the row and column ion labels writing on. On \"clear\" a few wells fill with coded clear liquid; on \"cloudy\" others bloom with coded solids in their real colours (white, bright yellow, pale yellow, brown) in the matrix pattern of the Decisions table. On \"rules\" a small rules card (C13 NAGSAG, faint) slides in at the right with a pen arrow from the grid to it (\"evidence → rules\").",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "plate slide",
+            "table build"
+        ],
+        "Hold 1 second"
+    ],
+    'always-soluble-partners': [
+        "adjust",
+        "Ten painted dropper bottles (`p03-dropper-bottle-v1.png`, Codex item 2) line up, five down the left and five across the top, with coded labels \"NaNO3\", \"Ca(NO3)2\", \"Ba(NO3)2\", \"Pb(NO3)2\", \"AgNO3\" and \"NaCl\", \"NaI\", \"Na2SO4\", \"Na2CO3\", \"NaOH\", all \"0.1 mol/L\".",
+        "Explains why nitrates and sodium salts: they always dissolve, so a solid can only be the tested pair; and why check each stock alone: a cloudy stock would fake a result.",
+        "nitrate / sodium / pair you're testing",
+        "On the spoken cues: On \"nitrate\" the NO3- part of each left label lights grey; on \"sodium\" the Na+ part of each top label lights grey. On \"always dissolve\" a tag \"N and G of NAGSAG: always soluble\" writes (C13 rules card rows flash).",
+        "explain",
+        "ten painted dropper bottles (`p03-dropper-bottle-v1.png`, Codex item 2) line up, five down the left and five across the top, with coded labels \"NaNO3\", \"Ca(NO3)2\", \"Ba(NO3)2\", \"Pb(NO3)2\", \"AgNO3\" and \"NaCl\", \"NaI\", \"Na2SO4\", \"Na2CO3\", \"NaOH\", all \"0.1 mol/L\". On \"nitrate\" the NO3- part of each left label lights grey; on \"sodium\" the Na+ part of each top label lights grey. On \"always dissolve\" a tag \"N and G of NAGSAG: always soluble\" writes (C13 rules card rows flash). On \"pair you're testing\" the C13 swap cross plays small for one well (Pb(NO3)2 + NaI): \"Na+ NO3-\" ticks green and greys out (spectators), \"Pb2+ I-\" lights amber: \"the only possible solid\". On \"on its own\" each bottle gets one coded drop in a separate check well with a little water from the wash bottle (`m6-wash-bottle-v1.png`); all stay clear, each with a teal tick (tag \"stock check: clear on its own\").",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'predict-method': [
+        "adjust",
+        "A coded results grid (book page lines) writes on; on \"predict\" each cell gets a pen prediction mark (\"ppt\" or \"none\") filling quickly row by row.",
+        "Explains why predict first: it turns observations into a test of the rules; and why the tip stays out: it would carry one solution into the other's bottle; and why black: a white cloud is invisible on white.",
+        "predict / black",
+        "On the spoken cues: The well plate slides over the grid so each well sits on its cell. On \"along each row\" a dropper bottle tilts over row 1 and coded drops fall into five wells, then the rows fill in turn (fast); on \"down each column\" the columns fill.",
+        "explain",
+        "a coded results grid (book page lines) writes on; on \"predict\" each cell gets a pen prediction mark (\"ppt\" or \"none\") filling quickly row by row. The well plate slides over the grid so each well sits on its cell. On \"along each row\" a dropper bottle tilts over row 1 and coded drops fall into five wells, then the rows fill in turn (fast); on \"down each column\" the columns fill. On \"dropper tip out\" a close inset shows the dropper tip held above a well with a gap and a teal tick, beside a crossed inset of a tip touching the liquid (tag \"contaminates the bottle\"). On \"black\" the coded black card slides under half the plate: a faint white cloud in the Ca2+/SO4 2- well is invisible over the white tile (`m6-white-tile-v1.png`) half and clear over the black half (tags \"white on white: hard to see\", \"white on black: clear\"). A record-sheet tag under the grid: \"record: ppt or no ppt, colour, heavy or faint cloud. Write 'no precipitate', not 'no reaction'.\"",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "plate slide",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'variables': [
+        "new",
+        "The variables card writes in the right zone, one row per cue: \"Independent (what you change): the cation and anion pair\"; \"Dependent (what you observe): ppt or not, colour, heavy or faint\"; \"Controlled (kept the same): 0.1 mol/L stocks, 3 drops + 3 drops, temperature, time before recording\".",
+        "Explains why concentration matters most: some compounds only just dissolve, so the amount decides whether a cloud shows.",
+        "independent variable / dependent variable / controlled",
+        "On the spoken cues: On \"Concentration matters most\" two coded wells side by side show the same pair (Ca2+ + SO4 2-) with fewer drops (clear) and more drops (faint cloud), tag \"same pair, different amounts\".",
+        "explain",
+        "the variables card writes in the right zone, one row per cue: \"Independent (what you change): the cation and anion pair\"; \"Dependent (what you observe): ppt or not, colour, heavy or faint\"; \"Controlled (kept the same): 0.1 mol/L stocks, 3 drops + 3 drops, temperature, time before recording\". On \"Concentration matters most\" two coded wells side by side show the same pair (Ca2+ + SO4 2-) with fewer drops (clear) and more drops (faint cloud), tag \"same pair, different amounts\".",
+        [
+            "HandText write-on",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'expected-results': [
+        "adjust",
+        "The wells fill to the expected matrix (Decisions table) as each sentence lands, each group with its rules-card row flashing small in the corner: Na+ row (all clear, \"Group 1: soluble\"); CO3 2- column (white, Ag+ pale yellow, Na+ clear: \"carbonates: insoluble unless Group 1\");",
+        "Explains why each expected result: the NAGSAG row it comes from.",
+        "clear",
+        "On the spoken cues: The painted tubes `m5x-ppt-agcl-white-v1.png` and `m5x-ppt-pbi2-yellow-v1.png` stand small at the side for the two syllabus solids. A chip \"expected, at 0.1 mol/L; your results are the test\" sits under the plate.",
+        "explain",
+        "the wells fill to the expected matrix (Decisions table) as each sentence lands, each group with its rules-card row flashing small in the corner: Na+ row (all clear, \"Group 1: soluble\"); CO3 2- column (white, Ag+ pale yellow, Na+ clear: \"carbonates: insoluble unless Group 1\"); Ag+ and Pb2+ with Cl- and I- (\"halides: except Ag+, Pb2+\"; PbCl2 cell drawn as a faint cloud with a small tag \"faint, or none at this concentration\", not spoken); SO4 2- column (Ba2+, Pb2+ white; Ca2+, Ag+ faint: \"sulfates: except Ba2+, Pb2+; Ca2+, Ag+ slight\"); OH- column (Ag+ brown, Pb2+ white, Ca2+ faint, Ba2+ clear: \"hydroxides: insoluble, except Group 1 and Ba2+\"). The painted tubes `m5x-ppt-agcl-white-v1.png` and `m5x-ppt-pbi2-yellow-v1.png` stand small at the side for the two syllabus solids. A chip \"expected, at 0.1 mol/L; your results are the test\" sits under the plate.",
+        [
+            "chip pop",
+            "table build"
+        ],
+        "Hold 2 seconds"
+    ],
+    'results-to-rules': [
+        "new",
+        "On \"along each row\" a pen bracket runs along the Na+ row; on \"down each column\" another runs down the CO3 2- column.",
+        "Explains why untested rules are not your conclusion: no evidence from this experiment.",
+        "along each row / down each column / evidence",
+        "On the spoken cues: The rule-with-evidence card writes in the right zone, two filled examples: \"Rule: sodium compounds are soluble. Evidence: Na+ row, 5 of 5 clear. Exceptions: none seen.\" and \"Rule: carbonates are insoluble except with Na+. Evidence: CO3 2- column, 4 of 5 solid;",
+        "explain",
+        "on \"along each row\" a pen bracket runs along the Na+ row; on \"down each column\" another runs down the CO3 2- column. The rule-with-evidence card writes in the right zone, two filled examples: \"Rule: sodium compounds are soluble. Evidence: Na+ row, 5 of 5 clear. Exceptions: none seen.\" and \"Rule: carbonates are insoluble except with Na+. Evidence: CO3 2- column, 4 of 5 solid; Na+ clear.\" On \"ammonium or acetate\" a separate grey box writes: \"Not tested here: ammonium, acetate, nitrate as a test ion. Source: reference table.\" with a pen tag \"not my conclusion\".",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold 2 seconds"
+    ],
+    'test-predictions': [
+        "new",
+        "The predict-then-observe overlay: each cell shows its pen prediction over the well; matches get a small teal tick, mismatches a pen ring.",
+        "Explains why a mismatch must be classified: it is either the rule or the technique.",
+        "rule you had wrong / technique problem / slightly soluble / repeat",
+        "On the spoken cues: The mismatch sorter writes in the right zone with two bins: \"rule wrong\" and \"technique\". On \"barium hydroxide\" the Ba2+/OH- cell (predicted \"ppt\", observed clear) is ringed and flies into \"rule wrong\" with the tag \"exception: Ba(OH)2 soluble\".",
+        "explain",
+        "the predict-then-observe overlay: each cell shows its pen prediction over the well; matches get a small teal tick, mismatches a pen ring. The mismatch sorter writes in the right zone with two bins: \"rule wrong\" and \"technique\". On \"barium hydroxide\" the Ba2+/OH- cell (predicted \"ppt\", observed clear) is ringed and flies into \"rule wrong\" with the tag \"exception: Ba(OH)2 soluble\". On \"slightly soluble\" the Ca2+/SO4 2- faint cloud gets a third label beside \"soluble\" and \"insoluble\": \"slightly soluble (faint cloud, depends on amount)\". On \"dirty well\" a coded speck appears in a different well that should be clear; it goes into \"technique\", and on \"repeat\" a clean well beside it runs again and stays clear (teal tick).",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick"
+        ],
+        "Hold 2 seconds"
+    ],
+    'test-the-liquid': [
+        "adjust",
+        "The painted settled tube (`m5x-ppt-pbi2-yellow-v1.png`) centre; the C13 equation strip small: \"Pb2+(aq) + 2I-(aq) → PbI2(s)\".",
+        "Explains why more solid in the test well shows the excess ion: the added ion found a partner still dissolved.",
+        "lead ions / iodide",
+        "On the spoken cues: On \"take some clear liquid\" the graduated pipette (`m5x-graduated-pipette-v1.png`) draws off the clear layer (coded level change) and empties it into two clean wells of the plate, labelled \"test A\" and \"test B\". On \"a drop of potassium iodide\" a dropper bottle labelled \"KI\" adds a coded drop to test A;",
+        "explain",
+        "the painted settled tube (`m5x-ppt-pbi2-yellow-v1.png`) centre; the C13 equation strip small: \"Pb2+(aq) + 2I-(aq) → PbI2(s)\". On \"take some clear liquid\" the graduated pipette (`m5x-graduated-pipette-v1.png`) draws off the clear layer (coded level change) and empties it into two clean wells of the plate, labelled \"test A\" and \"test B\". On \"a drop of potassium iodide\" a dropper bottle labelled \"KI\" adds a coded drop to test A; on \"lead ions\" a yellow cloud blooms (tag \"more PbI2: Pb2+ was left over, so Pb(NO3)2 in excess\"). On \"a drop of lead nitrate\" the \"Pb(NO3)2\" bottle adds a drop to test B; on \"iodide\" the alternative shows (tag \"more PbI2: I- was left over, so KI in excess\"). A small rule chip: \"at most one test goes cloudy: whichever ion is left over\". The C13 composition card writes on \"spectators\": \"dissolved: K+, NO3- (spectators), plus the ion in excess\".",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'validity-reliability': [
+        "new",
+        "Three cards write in turn in the right zone, each with its plain question and this investigation's answer: \"Validity: does it test what it claims? One pair per well; always-soluble partners; stock check.\" (pen link to the grey Na+ and NO3- labels);",
+        "Teaches: validity, reliability and accuracy.",
+        "valid / reliable / accurate",
+        "On the spoken cues: three cards write in turn in the right zone, each with its plain question and this investigation's answer: \"Validity: does it test what it claims? One pair per well; always-soluble partners; stock check.\" (pen link to the grey Na+ and NO3- labels); \"Reliability: same result on repeats? Repeat doubtful cells;",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this investigation's answer: \"Validity: does it test what it claims? One pair per well; always-soluble partners; stock check.\" (pen link to the grey Na+ and NO3- labels); \"Reliability: same result on repeats? Repeat doubtful cells; compare groups.\" (two coded well rows matching); \"Accuracy: observations match what's really there? Black background, clean wells, fresh solutions, compare with accepted results.\" (the black card half pulses).",
+        [
+            "HandText write-on"
+        ],
+        "Hold 2 seconds"
+    ],
+    'risk-assessment': [
+        "adjust",
+        "The risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each hazard cell with its dropper bottle and coded label: lead nitrate: \"toxic; builds up in the body; may harm an unborn baby; eye damage\" / \"drops only, gloves, glasses, wash hands;",
+        "Explains why microscale is a safety control: smaller amounts, smaller exposure and waste.",
+        "Lead nitrate / Silver nitrate / Barium nitrate / Sodium hydroxide",
+        "On the spoken cues: Glasses and gloves plates (`m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`) at the table head under \"always\". On \"heavy-metal container\" the waste bottle (`m5x-waste-bottle-v1.png`) with a coded label \"heavy-metal waste: Pb, Ag, Ba\" and a crossed sink icon.",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each hazard cell with its dropper bottle and coded label: lead nitrate: \"toxic; builds up in the body; may harm an unborn baby; eye damage\" / \"drops only, gloves, glasses, wash hands; follow school rules (some schools use a teacher demo or supplied results)\"; silver nitrate: \"stains skin; damages eyes\" / \"gloves, glasses\"; barium nitrate: \"harmful if swallowed\" / \"no mouth pipetting, wash hands\"; sodium hydroxide (and sodium carbonate): \"eye damage or irritation\" / \"glasses\". Glasses and gloves plates (`m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`) at the table head under \"always\". On \"heavy-metal container\" the waste bottle (`m5x-waste-bottle-v1.png`) with a coded label \"heavy-metal waste: Pb, Ag, Ba\" and a crossed sink icon. On \"tiny amounts\" the well plate pulses beside a ghost test tube (tag \"microscale: less exposure, less waste\"). Footer chip: \"follow your school's risk assessment and your teacher's method\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "drop fall"
+        ],
+        "Hold 3 seconds (reading hold; the table returns in the key notes)"
+    ],
+    'memory-aid': [
+        "new",
+        "Aid 1 writes large and handwritten with the greyed Na+ and NO3- labels and one amber pair: \"Partners that always dissolve: any solid is the pair you're testing.\" Aid 2 writes beneath as a three-step strip with icons (pen grid, dropper, sorter bins): \"Predict first. Test.",
+        "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+        "Partners that always dissolve, so any solid is the pair you're testing. / predict first, then test, then explain every mismatch.",
+        "On the spoken cues: aid 1 writes large and handwritten with the greyed Na+ and NO3- labels and one amber pair: \"Partners that always dissolve: any solid is the pair you're testing.\" Aid 2 writes beneath as a three-step strip with icons (pen grid, dropper, sorter bins): \"Predict first. Test.",
+        "explain",
+        "aid 1 writes large and handwritten with the greyed Na+ and NO3- labels and one amber pair: \"Partners that always dissolve: any solid is the pair you're testing.\" Aid 2 writes beneath as a three-step strip with icons (pen grid, dropper, sorter bins): \"Predict first. Test. Explain every mismatch.\" Condition tag: \"same concentration and drops in every well; repeat anything doubtful\".",
+        [
+            "HandText write-on",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'attempt-1': [
+        "adjust",
+        "The board clears. The settled white tube (`m5x-ppt-agcl-white-v1.png`; build check: the plate must show settled solid under clear liquid, otherwise use the coded tube with a settled white layer) and one test well over the black card with a fresh white cloud.",
+        "Unseen transfer task with every condition on screen: \"Which ions were in that clear liquid?\"",
+        "Your turn. Potassium chloride solution is mixed with silver nitrate solution, and a",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears. The settled white tube (`m5x-ppt-agcl-white-v1.png`; build check: the plate must show settled solid under clear liquid, ot)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The settled white tube (`m5x-ppt-agcl-white-v1.png`; build check: the plate must show settled solid under clear liquid, otherwise use the coded tube with a settled white layer) and one test well over the black card with a fresh white cloud. Givens card: \"potassium chloride + silver nitrate → white solid, settled\", \"clear liquid + 1 drop of potassium chloride → more white solid\".",
+        [
+            "ScribbleCircle",
+            "drop fall",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-1': [
+        "adjust",
+        "The composition card fills: \"dissolved: K+, NO3- (spectators), Ag+ (excess)\" with grey spectator tags and an amber \"excess\" tag on Ag+.",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for 1 (owner rule, 16 October).",
+        "Potassium, nitrate, and leftover silver ions.",
+        "On the spoken cues: The C13 equation strip writes small: \"Ag+(aq) + Cl-(aq) → AgCl(s)\". Answer chip \"K+, NO3-, leftover Ag+\" pins. On \"It's not chloride\" a chip \"Cl- left over\" fades in and is crossed (caption \"more solid on adding Cl- means Ag+ was left\").",
+        "explain",
+        "the composition card fills: \"dissolved: K+, NO3- (spectators), Ag+ (excess)\" with grey spectator tags and an amber \"excess\" tag on Ag+. The C13 equation strip writes small: \"Ag+(aq) + Cl-(aq) → AgCl(s)\". Answer chip \"K+, NO3-, leftover Ag+\" pins. On \"It's not chloride\" a chip \"Cl- left over\" fades in and is crossed (caption \"more solid on adding Cl- means Ag+ was left\").",
+        [
+            "HandText write-on",
+            "AgCl",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold 1 second"
+    ],
+    'attempt-2': [
+        "new",
+        "Two coded well-plate strips side by side labelled \"group 1: faint white cloud\" and \"group 2: no precipitate\", same Ca2+/SO4 2- cell ringed in each.",
+        "Unseen transfer task with every condition on screen: attempt 2 (countdown, 10 seconds)",
+        "Last one. Two groups mix calcium nitrate with sodium",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (Two coded well-plate strips side by side labelled \"group 1: faint white cloud\" and \"group 2: no precipitate\", same Ca2+/SO4 2- cell ringed i)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. Givens card: \"calcium nitrate + sodium sulfate\", the two records. Two numbered demands: \"1. Explain how both results could happen.\" \"2. How would you make the result more reliable?\" Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no \"slightly soluble\" label, no black card.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-2': [
+        "adjust",
+        "The \"slightly soluble\" third label from scene 7 returns over the cell.",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for 2 (owner rule, 16 October).",
+        "slightly soluble / repeat",
+        "On the spoken cues: Answer chip 1: \"CaSO4 slightly soluble: a cloud depends on amount and time; or contamination.\" On \"repeat\" three clean wells run with matched drop counters and a black card under them; all three show the same faint cloud; answer chip 2: \"repeat in clean wells, same conditions, over black; record 'slight'\".",
+        "explain",
+        "the \"slightly soluble\" third label from scene 7 returns over the cell. Answer chip 1: \"CaSO4 slightly soluble: a cloud depends on amount and time; or contamination.\" On \"repeat\" three clean wells run with matched drop counters and a black card under them; all three show the same faint cloud; answer chip 2: \"repeat in clean wells, same conditions, over black; record 'slight'\". On \"one group was wrong\" a chip \"one group made a mistake, ignore it\" fades in and is crossed (caption \"slightly soluble is a real result\").",
+        [
+            "Mark cross",
+            "chip pop",
+            "drop fall"
+        ],
+        "Hold 1 second"
+    ],
+    'decision-rule': [
+        "adjust",
+        "The plan card writes, each line lighting on its words: \"Always-soluble partners (nitrates, sodium salts); check each stock alone.\" \"Predict all 25 first.\" \"3 drops + 3 drops; tip out of the well.\" \"View over black and white.\" \"Repeat doubtful cells.\" \"Rule + evidence + exceptions;",
+        "Packs the method into reusable lines and hands off to the next video.",
+        "Next",
+        "On the spoken cues: the plan card writes, each line lighting on its words: \"Always-soluble partners (nitrates, sodium salts); check each stock alone.\" \"Predict all 25 first.\" \"3 drops + 3 drops; tip out of the well.\" \"View over black and white.\" \"Repeat doubtful cells.\" \"Rule + evidence + exceptions;",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"Always-soluble partners (nitrates, sodium salts); check each stock alone.\" \"Predict all 25 first.\" \"3 drops + 3 drops; tip out of the well.\" \"View over black and white.\" \"Repeat doubtful cells.\" \"Rule + evidence + exceptions; untested rules from the table.\" \"Every mismatch: rule wrong or technique?\" On \"Next\" a chip \"Next: Ksp, how slightly soluble?\" appears with `m5x-saturated-beaker-v1.png` small.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "drop fall"
+        ],
+        "Hold 2 seconds"
+    ],
+    'key-notes': [
+        "new",
+        "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aids appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ],
+}
+
 LESSONS = {
     'c5': {
         'design': D + 'lessons/chem-m5-c05.md',
@@ -2290,6 +2841,32 @@ LESSONS = {
         'teaching': {"task": "Predict whether a precipitate forms when two solutions are mixed, and say what a common ion does to solubility.", "causalExplanation": "A solid needs enough ions, so insoluble ions can coexist without one. Qsp is the Ksp expression with the concentrations right now, with the same powers. When Qsp is bigger than Ksp there are more ions than a saturated solution can hold, so they lock together until Qsp falls to Ksp, when it is just saturated, and when Qsp is smaller nothing precipitates. Mixing spreads each ion through the combined volume, so concentrations fall before Qsp is calculated, which is why moles are found first and divided by the total volume. A common ion raises Qsp above Ksp, so solid forms and less stays dissolved, while Ksp itself is unchanged because only temperature changes it. With a common ion present the initial row is not zero, and the tiny s is dropped next to it and checked.", "conversationalApproach": "Opens on a kidney stone and the question of how many ions are enough, defines Qsp and the three outcomes on a log number line, shows mixing spreading the ions, works a no-precipitate example with the undiluted trap and an unequal-volume example through moles, gives the memory aid, explains the common ion effect and calculates it with a non-zero initial row, then asks two unseen items with a short pause and brief feedback.", "openingDecision": "Most kidney stones are calcium oxalate, which the rules call insoluble, and urine always contains calcium and oxalate ions. Yet usually no stone forms. How many ions is enough?", "understandingCheck": "20.0 mL of 1.0 x 10^-3 mol/L lead nitrate is mixed with 30.0 mL of 2.0 x 10^-3 mol/L potassium iodide, with Ksp 9.8 x 10^-9: will a precipitate form? Then solid sodium sulfate dissolves in a saturated calcium sulfate solution at the same temperature: what happens to the amount of calcium sulfate dissolved and to Ksp?", "curriculumScope": "Predict the formation of a precipitate given the standard reference values for Ksp (Module 5, 2017 syllabus p51). The common ion effect is taught as a Qsp consequence for one 1 : 1 salt. Titration methods, selective precipitation, temperature calculations and Ksp from mixing data with the precipitate subtracted are deferred."},
         'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, the painted kidney stone, saturated and unsaturated beakers, the painted pipette and clear no-precipitate tube, the C8 log number line with a fixed teal Ksp marker and a coral Qsp marker, the C14 ICE table, the C6b check ruler, the C13 swap-cross thumbnail, a coded mixing card and the countdown ring. Colour key: positive ions amber, negative ions violet, water shells pale blue, spectators grey, Ksp teal, Qsp coral.", "transitionPlan": "The kidney stone opens the lesson and returns small at the end; the two cards give way to the log number line, which carries the decision and every comparison; the beakers tip together for the mixing scene; each worked example clears to the same three-zone board; the saturated beaker carries the common ion scenes into the ICE table; each attempt clears the board and its feedback rebuilds the mixing card or the lens; the next chip slides in; scene crossfade with settle."},
         'rows': C15_ROWS,
+    },
+    'p01': {
+        'design': D + 'lessons/chem-m5-p01.md',
+        'learning_review': D + 'checks/p01-learning-review.md',
+        'science_check': D + 'checks/p01-claude-science-check.md',
+        'meta': {"title": "Reversibility and disturbance investigations: how do you get evidence you can trust?", "subtitle": "How do you show in the lab that a reaction is reversible, and that an equilibrium really responds to a disturbance, with evidence you can trust?", "subject": "Chemistry", "yearLevel": 12, "module": 5, "lesson": 5, "lessonIntent": "stating the reversibility test (change, then reverse the change; a return is the evidence) and the magnesium contrast; stating whether a set-up is open or closed and why an equilibrium test needs a closed one; planning the six-tube disturbance investigation with a reference tube, one change per tube, side-by-side judging and a dilution control; naming the independent, dependent and controlled variables; predicting the results and giving the C3 reason in a clause; defining validity, reliability and accuracy for this investigation; writing a risk assessment row (hazard, harm, control) for the real hazards. No K, no Q, no colourimeter data (P02), no conduct."},
+        'hold_seconds': 10,
+        'holds': ['attempt-1', 'attempt-2'],
+        'ids': ['hook', 'reversibility-test', 'magnesium-open', 'closed-system', 'setup-reference', 'variables', 'expected-results', 'dilution-control', 'temperature', 'validity-reliability', 'risk-assessment', 'memory-aid', 'attempt-1', 'feedback-1', 'attempt-2', 'feedback-2', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "C1 (dynamic equilibrium needs a closed system; equal rates; a finished reaction is static), C2 (reversible reactions approach equilibrium), C3 (adding a reactant shifts right and deepens the iron thiocyanate red; removing one shifts left; heating favours the reaction that takes in heat; the cobalt solution is pink cold, blue hot, purple at room temperature; Le Chatelier's principle), C4a (sealed NO2 syringe and tubes), and Year 11 Working Scientifically (an independent variable is changed, a dependent variable is measured, controlled variables are kept the same; a risk assessment lists hazards and controls). The words validity, reliability and accuracy are given a plain meaning here even if met in Year 11.", "startsWith": "Choose a reversible system and compare controlled disturbances. The video opens: This tube of iron thiocyanate has sat at the same pale red for an hour. Is that proof that it's an equilibrium, with both reactions still running?", "stopsAfter": "stating the reversibility test (change, then reverse the change; a return is the evidence) and the magnesium contrast; stating whether a set-up is open or closed and why an equilibrium test needs a closed one; planning the six-tube disturbance investigation with a reference tube, one change per tube, side-by-side judging and a dilution control; naming the independent, dependent and controlled variables; predicting the results and giving the C3 reason in a clause; defining validity, reliability and accuracy for this investigation; writing a risk assessment row (hazard, harm, control) for the real hazards. No K, no Q, no colourimeter data (P02), no conduct.", "nextLesson": "putting a number on where an equilibrium sits (route chem-m5-c05), without naming K (C3 and C4b convention)."},
+        'teaching': {"task": "How do you show in the lab that a reaction is reversible, and that an equilibrium really responds to a disturbance, with evidence you can trust?", "causalExplanation": "(1) an unchanged appearance cannot tell a running equilibrium from a finished reaction, so evidence needs a push (1); (2) the reversibility test: change, then reverse the change; one change proves nothing, a return does (2); (3) burning magnesium does not come back under any school conditions, so it is treated as irreversible; the hydrate test was open, so it shows reversibility, not an equilibrium (3); (4) an equilibrium investigation needs a closed system, and the method must say what is sealed (4); (5) a pale stock, an untouched reference and one change per tube, judged side by side (5); (6) independent, dependent and controlled variables (6); (7) expected results with the C3 reason in a clause (7); (8) adding a solution dilutes, so a paler tube is not yet evidence; the dilution control separates a shift from dilution (8); (9) temperature in a sealed tube, with the return to room temperature as a second reversibility check (9); (10) validity, reliability, accuracy (10); (11) risk assessment (11); memory aids (12); two attempts with brief feedback (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "two investigations, one question each. (A) Is it reversible? Push it one way, then reverse the change and see whether the start comes back (cobalt hydrate), against an irreversible contrast (burning magnesium). (B) How does an equilibrium respond to a disturbance, and how do you know the change is real? Reference tube, one change per tube, side-by-side judging, the dilution control, temperature in a sealed tube. Then validity, reliability and accuracy in plain words, the risk assessment, and two classic exam questions.", "openingDecision": "To show that a reaction can run both ways, and that it responds to a change, you have to push it and watch what happens. So how do you plan an investigation with evidence you can trust?", "understandingCheck": "(A1) a tube made paler by ten drops of silver nitrate solution, concluded \"shifted left\": what extra tube makes the conclusion valid, and why? Answer: an identical tube with ten drops of water (dilution control). Crossed mistake: \"repeat it three times\" (that improves reliability, not validity). (A2) heated pink cobalt chloride crystals turn blue, concluded \"reversible\": evaluate. Answer: one direction only; add water to the cooled blue solid and see pink return; the open tube shows reversibility, not an equilibrium. Crossed mistake: \"correct, the colour changed\".", "curriculumScope": "Syllabus (2017, p49 to p50): C5-IQ1-01 \"conduct practical investigations to analyse the reversibility of chemical reactions, for example: cobalt(II) chloride hydrated and dehydrated; iron(III) nitrate and potassium thiocyanate; burning magnesium; burning steel wool (ACSCH090)\"; C5-IQ2-01 \"investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier's principle can be used to predict such effects, for example: heating cobalt(II) chloride hydrate; interaction between nitrogen dioxide and dinitrogen tetroxide; iron(III) thiocyanate and varying concentration of ions (ACSCH095)\". This video prepares students to plan, record and analyse the investigation and does not claim to replace conducting it."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, three constant zones (short question top left, apparatus centre, one current card in the right third). Colour key: Fe3+ pale yellow, SCN- grey, FeSCN2+ red, cobalt pink and blue ions, reference tube marked with a teal tag, controls teal, hazards terracotta, risk controls green. Reuse and new items: the C3 painted iron tubes (`c3-iron-tube-start-v1.png`, `c3-iron-tube-deep-v1.png`), the C3 cobalt tubes in water-bath beakers (`c3-cobalt-tube-pink-v1.png`, `-purple-`, `-blue-`), the C9 sealed NO2 tubes (`c9-no2-tube-brown-v1.png`, `c9-no2-tube-pale-v1.png`), the C4a syringe parts (`c4a-syringe-barrel-v1.png`, `c4a-syringe-plunger-v1.png`, screen tag only), `m6-white-tile-v1.png`, `m5x-bottle-fe-v1.png` and `m5x-bottle-scn-v1.png` (reagent bottles, coded labels on the blank labels), `m6-wash-bottle-v1.png` (distilled water), `m6-beaker-v1.png` (bath, coded water fill), `c8-thermometer-hot-v1.png`, `c9-ice-cube-v1.png`, the C3 equation chip style and shift arrows, the countdown ring, the key notes board. New coded items: the \"push it, bring it back\" arrow loop, the six-tube comparison bar (swatches against the reference), the variables card, the expected results table, the risk assessment table (hazard, harm, control), the validity / reliability / accuracy cards, the open/closed boundary outline (dashed line around the tube showing what can cross). New painted plates are listed in the Codex asset brief.", "transitionPlan": "The still iron tube and the question open the lesson; the cobalt crystal tube replaces it for the push-and-return loop; the magnesium ribbon and ash plate give the contrast and the open tube returns with a dashed outline; three sealed-or-open boundary plates follow; the six-tube row slides onto the white tile and stays while the variables, expected results and dilution control cards take the right third one at a time; the cobalt bath tube replaces the row for temperature; the validity, risk and aid cards follow; the attempt boards clear the screen and the feedback rebuilds the loop and the tube comparison bar; the plan card and the six-tube row return for the handoff; scene crossfade with settle."},
+        'rows': P01_ROWS,
+    },
+    'p03': {
+        'design': D + 'lessons/chem-m5-p03.md',
+        'learning_review': D + 'checks/p03-learning-review.md',
+        'science_check': D + 'checks/p03-claude-science-check.md',
+        'meta': {"title": "Investigating solubility rules: how do you turn a grid of cloudy wells into rules you can trust?", "subtitle": "How do you set up a solubility investigation so a solid can only mean one thing, and how do you turn a grid of results into rules and test your predictions?", "subject": "Chemistry", "yearLevel": 12, "module": 5, "lesson": 18, "lessonIntent": "explaining why the cations are supplied as nitrates and the anions as sodium salts; planning the microscale matrix with predictions first, a check of each stock alone, a clean dropper technique and a black background; naming the independent, dependent and controlled variables and why concentration matters; stating the expected results and tracing each to a rule; writing a rule as a general statement with evidence and exceptions, and separating untested rules; classifying a mismatch as a wrong rule or a technique problem; testing the liquid above a precipitate to find the ion in excess; defining validity, reliability and accuracy for this investigation; writing a risk assessment for lead, silver, barium and hydroxide solutions. No Ksp, no Qsp, no conduct."},
+        'hold_seconds': 10,
+        'holds': ['attempt-1', 'attempt-2'],
+        'ids': ['hook', 'always-soluble-partners', 'predict-method', 'variables', 'expected-results', 'results-to-rules', 'test-predictions', 'test-the-liquid', 'validity-reliability', 'risk-assessment', 'memory-aid', 'attempt-1', 'feedback-1', 'attempt-2', 'feedback-2', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "C13 (NAGSAG with exceptions; list the ions, swap partners, check both; precipitate, spectator ions; net ionic equations; \"no precipitate\", not \"no reaction\"; after filtering, the solution holds the spectators plus any ion in excess; AgCl white, PbI2 bright yellow, BaSO4 white), C11 (dissolved ionic compounds are separate hydrated ions), Year 11 (ionic formulas, variables, risk assessment). P01 introduced validity, reliability and accuracy in plain words, but P01 is a branch, so this video gives the plain meanings again in one line each.", "startsWith": "Controlled ionic-solution tests supply primary observations. The video opens: Twenty-five tiny wells. Five positive ions down the side, five negative ions across the top, and a few drops of each in every well.", "stopsAfter": "explaining why the cations are supplied as nitrates and the anions as sodium salts; planning the microscale matrix with predictions first, a check of each stock alone, a clean dropper technique and a black background; naming the independent, dependent and controlled variables and why concentration matters; stating the expected results and tracing each to a rule; writing a rule as a general statement with evidence and exceptions, and separating untested rules; classifying a mismatch as a wrong rule or a technique problem; testing the liquid above a precipitate to find the ion in excess; defining validity, reliability and accuracy for this investigation; writing a risk assessment for lead, silver, barium and hydroxide solutions. No Ksp, no Qsp, no conduct.", "nextLesson": "Ksp, a number for how slightly soluble a compound is (route chem-m5-c14)."},
+        'teaching': {"task": "How do you set up a solubility investigation so a solid can only mean one thing, and how do you turn a grid of results into rules and test your predictions?", "causalExplanation": "(1) the grid is the evidence the rules come from (1); (2) nitrates and sodium salts always dissolve, so the only possible solid in a well is the pair being tested; each stock is checked alone first (2); (3) predicting first turns the results into a test; microscale method; keep the dropper out of the well; black background shows white solids (3); (4) variables, and why concentration matters most (4); (5) expected results, each traceable to NAGSAG (5); (6) rows and columns become rules, each with evidence and exceptions; untested ions are not your conclusion (6); (7) a mismatch is either a wrong rule or a technique problem; slightly soluble is a real third category; repeat doubtful cells (7); (8) testing the liquid above a precipitate shows which ion was left over (8); (9) validity, reliability, accuracy for this investigation (9); (10) risk assessment (10); memory aids (11); two attempts with brief feedback (12 to 15); decision rule and handoff (16); key notes (17).", "conversationalApproach": "the investigation is a test of predictions. Design for validity (always-soluble partners, a check of each stock alone), predict every cell, mix microscale, record carefully, read patterns into rules with evidence, evaluate every mismatch, then analyse a mixture's composition by testing its liquid. Validity, reliability and accuracy are named on this investigation. Risk assessment with the real hazards.", "openingDecision": "This grid is the evidence the solubility rules come from. So how do you set it up so the results can be trusted, and how do you turn a grid of cloudy wells into rules?", "understandingCheck": "(A1, Revision 2) potassium chloride mixed with silver nitrate (a syllabus pair); the white solid settles; a drop of potassium chloride added to the clear liquid above gives more white solid: which ions were in that liquid? Answer: K+, NO3- and leftover Ag+ (silver nitrate was in excess). Crossed mistake: \"chloride ions left over\". This transfers the scene 8 logic to a new system and the opposite reagent role; it also differs from C13's attempt 2 (chloride in excess, filtrate named from the excess). (A2) two groups mix calcium nitrate with sodium sulfate; one sees a faint white cloud, the other nothing: explain both, and how to make the result more reliable. Answer: CaSO4 slightly soluble, so whether a cloud shows depends on the amounts (drop size, concentration) and waiting time; a dirty well can fake a cloud; repeat in clean wells with the same concentrations, drops and waiting time, over black, and record \"slight\". Crossed mistake: \"one group was just wrong\".", "curriculumScope": "Syllabus (2017, p51, C5-IQ4-03): \"conduct an investigation to determine solubility rules, and predict and analyse the composition of substances when two ionic solutions are mixed, for example: potassium chloride and silver nitrate; potassium iodide and lead nitrate; sodium sulfate and barium nitrate (ACSCH065)\". This video prepares students to plan, record and analyse the investigation and does not claim to replace conducting it."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, three constant zones (short question top left, apparatus centre, one current card in the right third). Colour key: positive ions amber, negative ions violet, every precipitate in its real colour, spectators grey, predictions in pen, observations as the wells themselves. Reuse and new items: C13's rules card (small, scene 5), the C13 matrix grid style (now drawn as wells), the C13 swap-cross icon (scene 2, small), the C13 equation strip for the PbI2 net equation (scene 8), the C13 composition card (\"solid / dissolved\"), `m5x-ppt-pbi2-yellow-v1.png` (settled yellow solid with clear liquid above; scene 8), `m5x-ppt-agcl-white-v1.png` (attempt 1, Revision 2), `m5x-ppt-agcl-white-v1.png`, `m5x-no-ppt-clear-v1.png`, `m5x-ppt-baso4-white-v1.png` (requested in the C13 brief; interim as C13), `m5x-graduated-pipette-v1.png` (drawing off the clear liquid), `m6-white-tile-v1.png`, `m6-wash-bottle-v1.png`, the P01 shared safety plates (`m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`, `m5x-waste-bottle-v1.png`) and `m5x-dropper-clear-v1.png` (P01 Codex items 5, 9 to 11), the countdown ring and the key notes board. New coded items: the well fills (drops landing, clear, cloud, solid in its real colour), the predict-then-observe overlay (each cell shows the prediction as a pen mark and the observation as the well), the black card under the plate (a plain rectangle), the rule-with-evidence card, the mismatch sorter (\"rule wrong\" / \"technique\"), the variables card, the risk table. New painted plates are listed in the Codex asset brief (well plate, dropper bottle).", "transitionPlan": "The well plate fills with clear and cloudy wells to open; the ten dropper bottles line up beside it for the design choice; the book grid slides under the plate for the method and the black card slides half under it; the plate stays centre while the variables, expected results, rule-with-evidence, mismatch sorter, validity and risk cards take the right third one at a time; the settled lead iodide tube and pipette replace the plate for the composition test; the aids and the plan card follow; each attempt clears the board and the feedback rebuilds the composition card or the repeat wells; scene crossfade with settle."},
+        'rows': P03_ROWS,
     },
 }
 

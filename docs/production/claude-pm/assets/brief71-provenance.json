@@ -1,0 +1,726 @@
+{
+  "brief": 71,
+  "date": "2026-10-18",
+  "scope": "P01, P02 and P03 practical plates",
+  "count": 25,
+  "method": "Built-in image_gen with deterministic crop and transparent canvas placement",
+  "qaDirectory": "docs/production/claude-pm/assets/brief71-qa/",
+  "popbeadSource": "public/assets/biology/m5x-cheek-swab-v2.png",
+  "popbeadContactSheets": [
+    "docs/production/claude-pm/assets/brief71-qa/p01/popbead-set-200-cream.png",
+    "docs/production/claude-pm/assets/brief71-qa/p01/popbead-set-200-dark.png"
+  ],
+  "popbeadChainQa": "docs/production/claude-pm/assets/brief71-qa/p02/p02-bead-chain-200px.png",
+  "records": [
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-card-sheets-v1.png",
+      "sha256": "e49cf4115c3f6169fffb82985cf08f23e05efce5994cf9867f6d688428b86339",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        160,
+        300,
+        1839,
+        1700
+      ],
+      "clearMargins": [
+        0.08,
+        0.15,
+        0.081,
+        0.15
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-card-sheets-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-card-sheets-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-a60a4d6b-64af-489e-bc69-643f8bffd764.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. Four blank thin card sheets fanned: pastel blue, green, pale yellow and pale orange. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin."
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-scissors-v1.png",
+      "sha256": "3a48f6d514fd0ceb9357b234ad52fbb4e086467822a017a87bc94f18c32560ce",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        203,
+        162,
+        1797,
+        1840
+      ],
+      "clearMargins": [
+        0.102,
+        0.081,
+        0.102,
+        0.08
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-scissors-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-scissors-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-046b3ddd-d198-4898-98dd-83ade8727bae.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. One closed pair of school scissors with blue-grey plastic handles, lying flat. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin."
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-tape-roll-v1.png",
+      "sha256": "37f30d3b9eea0300bb16b484201ef36cb1e2cf478ff10e3207950ba5a73776bf",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        161,
+        203,
+        1838,
+        1797
+      ],
+      "clearMargins": [
+        0.081,
+        0.102,
+        0.081,
+        0.102
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-tape-roll-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-tape-roll-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-fe29bb92-871c-41ee-af63-bbcc65ff8539.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. One roll of clear sticky tape in a small grey desk dispenser. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin."
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-pencil-v1.png",
+      "sha256": "9f70255faf98f7c7f00bce068177a3d0e78f185514447d2c9246aee9c0685866",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        161,
+        215,
+        1838,
+        1785
+      ],
+      "clearMargins": [
+        0.081,
+        0.107,
+        0.081,
+        0.107
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-pencil-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-pencil-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-2e043ab4-c9ea-4129-91f5-ac81d004690d.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. One sharpened unmarked graphite pencil lying flat. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin."
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-card-pile-v1.png",
+      "sha256": "a37f3cae7e2b727728e4be2102acb3ef21755ecfd20c44eb75642a70eb9db7f4",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        162,
+        473,
+        1838,
+        1525
+      ],
+      "clearMargins": [
+        0.081,
+        0.236,
+        0.081,
+        0.237
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-card-pile-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-card-pile-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-9e8469d0-edb2-45bf-8f36-8b83d7b224cb.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. Loose pile of blank tabbed cut cards in pastel blue, green and yellow with offcuts. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin."
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-paper-ribosome-v1.png",
+      "sha256": "5f185b7ead89199faf58ae44749d195beb00bfbd881c9a90c2a2450af3d3b65d",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        162,
+        245,
+        1839,
+        1757
+      ],
+      "clearMargins": [
+        0.081,
+        0.122,
+        0.081,
+        0.121
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-paper-ribosome-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-paper-ribosome-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-9417f38b-697d-4c35-a507-a1410d7949ff.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. Tan upper and lilac lower cardboard ribosome cut-out with a truly open rectangular three-tab window. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin.",
+      "windowRectPx": [
+        580,
+        880,
+        1450,
+        1070
+      ]
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-trna-card-v1.png",
+      "sha256": "0b42af2f4e64dd9f0887ae54fb717921f3742cd055a29aa5226dc9ba5157576a",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        344,
+        162,
+        1657,
+        1839
+      ],
+      "clearMargins": [
+        0.172,
+        0.081,
+        0.172,
+        0.081
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-trna-card-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-trna-card-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-26f6b947-84a9-4275-9190-9db2919430b4.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. Pale orange T-shaped card, exactly three blank lower tabs and a small paper cup at the top. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin.",
+      "tabCentresPx": [
+        [
+          540,
+          1710
+        ],
+        [
+          1000,
+          1710
+        ],
+        [
+          1460,
+          1710
+        ]
+      ],
+      "cupCentrePx": [
+        1000,
+        300
+      ]
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-clipboard-sheet-v1.png",
+      "sha256": "5ce12493eac9ccd08a8b22e69df2a3d1a2e6028cc887b031a1e5f4ba2792511c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        284,
+        160,
+        1715,
+        1839
+      ],
+      "clearMargins": [
+        0.142,
+        0.08,
+        0.142,
+        0.081
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-clipboard-sheet-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-clipboard-sheet-v1-200-dark.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-db33a1e5-3307-4e4b-8175-927f51d396d0.png",
+      "prompt": "Scientific educational transparent textbook plate, ink and watercolour matching m5x reference. Plain clipboard with one sheet bearing a faint blank printed grid. No text, logos, hands, people or faces.",
+      "postprocess": "Crop alpha subject and fit inside 2000x2000 canvas with at least 8 percent clear margin."
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-popbead-red-v1.png",
+      "sha256": "44d56f567d92fd1d8d6f6ddb85b4eb968f854ebe5dde27c18925d595019fd11e",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        200,
+        377,
+        1800,
+        1623
+      ],
+      "clearMargins": [
+        0.1,
+        0.189,
+        0.1,
+        0.189
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-popbead-red-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-popbead-red-v1-200-dark.png",
+      "generatedSource": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "prompt": "Six matching side-view plastic pop-beads on one sheet: red, gold, green, plum, teal, cream; left socket and right peg, one scale, transparent alpha, fine ink and watercolour.",
+      "postprocess": "Crop from common six-bead sheet; normalize each to a 1600 px wide alpha subject, centre on 2000x2000 canvas, remove low-alpha fringe.",
+      "socketCentrePx": [
+        335,
+        1000
+      ],
+      "pegTipPx": [
+        1790,
+        1000
+      ]
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-popbead-gold-v1.png",
+      "sha256": "94795641a761bf5801e4ba27e0da8267191bfec723794cad73f779cd7b25c07f",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        200,
+        375,
+        1800,
+        1624
+      ],
+      "clearMargins": [
+        0.1,
+        0.188,
+        0.1,
+        0.188
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-popbead-gold-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-popbead-gold-v1-200-dark.png",
+      "generatedSource": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "prompt": "Six matching side-view plastic pop-beads on one sheet: red, gold, green, plum, teal, cream; left socket and right peg, one scale, transparent alpha, fine ink and watercolour.",
+      "postprocess": "Crop from common six-bead sheet; normalize each to a 1600 px wide alpha subject, centre on 2000x2000 canvas, remove low-alpha fringe.",
+      "socketCentrePx": [
+        335,
+        1000
+      ],
+      "pegTipPx": [
+        1790,
+        1000
+      ]
+    },
+    {
+      "group": "P01",
+      "path": "public/assets/biology/m5x-popbead-green-v1.png",
+      "sha256": "327870cfa60ea67e8db1e38ab057e32e6fcf7974de8b8d8cffc5216c9ec0f77c",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        200,
+        371,
+        1800,
+        1629
+      ],
+      "clearMargins": [
+        0.1,
+        0.185,
+        0.1,
+        0.185
+      ],
+      "generator": "built-in image_gen",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-popbead-green-v1-200-cream.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p01/m5x-popbead-green-v1-200-dark.png",
+      "generatedSource": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "prompt": "Six matching side-view plastic pop-beads on one sheet: red, gold, green, plum, teal, cream; left socket and right peg, one scale, transparent alpha, fine ink and watercolour.",
+      "postprocess": "Crop from common six-bead sheet; normalize each to a 1600 px wide alpha subject, centre on 2000x2000 canvas, remove low-alpha fringe.",
+      "socketCentrePx": [
+        335,
+        1000
+      ],
+      "pegTipPx": [
+        1790,
+        1000
+      ]
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-string-loop-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14caf-3078-7fb2-87cf-ab432e771da8\\exec-99e3077e-a510-43a5-934f-6301fa2014c2.png",
+      "description": "Loose loop of soft white cotton string, no knots.",
+      "method": "Built-in image_gen; alpha crop, aspect-preserving fit within 1680 px on 2048 px transparent canvas",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        184,
+        187,
+        1864,
+        1860
+      ],
+      "transparentCorner": true,
+      "sha256": "f9fdaaf1332da76da4d227432e5665f7b7e4e16f0e12ca3564a95dfe4ac034a0",
+      "prompt": "Single isolated textbook object plate for a Year 12 biology practical video: a loose loop of soft white cotton string lying on a tabletop plane, forming a rough circular opening large enough to surround four short pop-bead chains. Entire loop visible, no knots, no labels, no other objects, no hands. Fine dark ink outlines and restrained natural watercolour washes, tactile fibres, subtle cream-grey shading, matching the project existing m5x scientific apparatus plates. Centred on a square transparent canvas with at least 10% clear margin, strong silhouette legible at 200 px. True transparent alpha background, no ground, no cast shadow outside the string.",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-string-loop-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-string-loop-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-sticker-sheet-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14caf-3078-7fb2-87cf-ab432e771da8\\exec-0a74d994-6cd7-4e88-a45e-df0fcceb0fa2.png",
+      "description": "Blank round white sticker dots with several peeling.",
+      "method": "Built-in image_gen; alpha crop, aspect-preserving fit within 1680 px on 2048 px transparent canvas",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        184,
+        193,
+        1864,
+        1855
+      ],
+      "transparentCorner": true,
+      "sha256": "d9f9c20562fec0c971d7275cea38a2d39bbb285a08dab615cd36e33a844956c2",
+      "prompt": "Single isolated textbook apparatus plate: a small rectangular backing sheet carrying neatly spaced BLANK round white adhesive sticker dots, with two or three circles partly peeled up at the edge to reveal their adhesive underside. All circles entirely unmarked. No letters, symbols, numbers, labels, logos, arrows, hands or other objects. Fine dark ink outlines and restrained watercolour shading on off-white paper, matching the project m5x scientific apparatus plates. Three-quarter view from slightly above, centred on a square transparent canvas with at least 10% clear margin. Legible at 200 px. True transparent alpha background, no tabletop or cast shadow outside the object.",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-sticker-sheet-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-sticker-sheet-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-index-cards-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14caf-3078-7fb2-87cf-ab432e771da8\\exec-f51c9e5b-aa64-4084-989a-9bc332daeda5.png",
+      "description": "Neat fanned stack of blank white index cards.",
+      "method": "Built-in image_gen; alpha crop, aspect-preserving fit within 1680 px on 2048 px transparent canvas",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        283,
+        184,
+        1765,
+        1864
+      ],
+      "transparentCorner": true,
+      "sha256": "8cf45bd8e7c8c91fd9fb5c46bb8c61a6ec8b84abeb2e2fd9193103b4861add1a",
+      "prompt": "Single isolated textbook object plate: a small neat stack of completely blank white rectangular index cards, perhaps six cards, lightly fanned so separate card edges are visible. Cards are plain unruled, no writing, labels, letters, numbers, logos or marks. Fine dark ink contour and restrained cool grey and cream watercolour shading with subtle paper texture, matching existing m5x scientific apparatus plates. Viewed from slightly above at a natural shallow angle, centred on a square transparent canvas with at least 10% clear margin. Clear readable silhouette at 200 px. True transparent alpha background, no tabletop or extra objects.",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-index-cards-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-index-cards-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-index-card-back-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14caf-3078-7fb2-87cf-ab432e771da8\\exec-760a9aea-7ea0-4d1f-99b2-f14716835b5a.png",
+      "description": "Single blank index card, plain back.",
+      "method": "Built-in image_gen; alpha crop, aspect-preserving fit within 1680 px on 2048 px transparent canvas",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        192,
+        184,
+        1855,
+        1864
+      ],
+      "transparentCorner": true,
+      "sha256": "aed926f1bd460d142ff52959cbc9143aea36df7d9c9eece21539b243807ad81c",
+      "prompt": "Single isolated textbook object plate: ONE blank white index card lying face down, showing its plain unmarked off-white card back. A single thin rectangular card only, no stack, no ruled lines, no writing, letters, numbers, logos, symbols or marks. Natural shallow angle seen slightly from above, long edge gently diagonal, with a subtle visible card thickness. Fine dark ink contour and restrained cool grey and cream watercolour shading, paper texture, matching existing m5x scientific apparatus plates. Centred on a square transparent canvas with at least 10% clear margin. Legible at 200 px. True transparent alpha background, no tabletop or extra objects.",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-index-card-back-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-index-card-back-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-die-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14caf-3078-7fb2-87cf-ab432e771da8\\exec-ee05f56c-27d3-4712-b029-85853addf12a.png",
+      "description": "White die, top blank, visible sides with two and three pips.",
+      "method": "Built-in image_gen; alpha crop, aspect-preserving fit within 1680 px on 2048 px transparent canvas",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        184,
+        293,
+        1864,
+        1755
+      ],
+      "transparentCorner": true,
+      "sha256": "6905209cb260a673517ae65681777dfcb0aee23c38a6638f8d18729e3e1afdca",
+      "prompt": "Single isolated textbook object plate: one plain white six-sided die with gently rounded corners, seen from slightly above in three-quarter view. The broad TOP face must be COMPLETELY BLANK and unobstructed so software can draw variable pips there later. Two visible SIDE faces show ordinary correctly arranged recessed black pips: one side has exactly two pips at opposite diagonal corners; the other side has exactly three pips on a diagonal. Geometry must read as a real cube. No numbers, letters, logos, arrows, hands or other objects. Fine dark ink outline and restrained cool grey watercolour shading, matching existing m5x scientific apparatus plates. Centred on a square transparent canvas with at least 10% clear margin; legible at 200 px. True transparent alpha background, no tabletop or cast shadow outside object.",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-die-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-die-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-popbead-plum-v1.png",
+      "source": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "method": "Shared bead source and aligned crop prepared by P01 agent",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        200,
+        377,
+        1800,
+        1622
+      ],
+      "transparentCorner": true,
+      "sha256": "2f6ba3d335eb578cf45cd3108598a6db17e694f3ea1631e2674185f95dae35be",
+      "connectorCentresPx": {
+        "leftSocket": [
+          335,
+          1000
+        ],
+        "rightPegTip": [
+          1790,
+          1000
+        ]
+      },
+      "description": "Single painted pop-bead matching the five-colour set.",
+      "prompt": "Six matching side-view plastic pop-beads on one sheet: red, gold, green, plum, teal, cream; left socket and right peg, one scale, transparent alpha, fine ink and watercolour.",
+      "sharedSource": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-popbead-plum-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-popbead-plum-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-popbead-teal-v1.png",
+      "source": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "method": "Shared bead source and aligned crop prepared by P01 agent",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        200,
+        375,
+        1800,
+        1624
+      ],
+      "transparentCorner": true,
+      "sha256": "cb2cef7d823cdecfa4367c54fa3bc11f8ca3087aa12d0c0426aeafa3f929ad8f",
+      "connectorCentresPx": {
+        "leftSocket": [
+          335,
+          1000
+        ],
+        "rightPegTip": [
+          1790,
+          1000
+        ]
+      },
+      "description": "Single painted pop-bead matching the five-colour set.",
+      "prompt": "Six matching side-view plastic pop-beads on one sheet: red, gold, green, plum, teal, cream; left socket and right peg, one scale, transparent alpha, fine ink and watercolour.",
+      "sharedSource": "docs/production/claude-pm/assets/brief71-qa/p01/shared-six-popbead-source.png",
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-popbead-teal-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-popbead-teal-v1-200-cream.png"
+    },
+    {
+      "group": "P02",
+      "path": "public/assets/biology/m5x-popbead-centromere-v1.png",
+      "source": "C:/Users/kygs/.codex/generated_images/01a14caf-1b1b-7cd2-8759-b3936f8a7c5f/exec-e24589b6-e273-4c51-a5f2-c997c3e0a7e7.png",
+      "method": "Shared bead source and aligned crop prepared by P01 agent",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBoundingBox": [
+        490,
+        690,
+        1510,
+        1309
+      ],
+      "transparentCorner": true,
+      "sha256": "d7359ad7505380d5a8a6bd04b255597d533d523accd1e0b35c6a599e593f0cb2",
+      "connectorCentresPx": {
+        "leftSocket": [
+          565,
+          1000
+        ],
+        "rightSocket": [
+          1435,
+          1000
+        ]
+      },
+      "description": "Short cream cylinder with a socket on each side.",
+      "prompt": "Edit shared-source cream bead to a short cream plastic centromere cylinder with recessed sockets on both sides at the same side-view angle and scale. Transparent alpha.",
+      "sharedSource": null,
+      "qaDark200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-popbead-centromere-v1-200-dark.png",
+      "qaCream200": "docs/production/claude-pm/assets/brief71-qa/p02/m5x-popbead-centromere-v1-200-cream.png"
+    },
+    {
+      "group": "P03",
+      "file": "C:\\lesson-video-generator\\public\\assets\\biology\\m5x-hand-mirror-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14c21-6083-7f31-8358-bd02b8835efa\\exec-7f845c0e-852f-4b2f-8a05-d0f118f2f740.png",
+      "subject": "one small round hand mirror with plain handle, pale blue empty reflection",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        160,
+        166,
+        1840,
+        1833
+      ],
+      "transparent_fraction": 0.8281,
+      "sha256": "6605cf52c6c15575ba72fabf53c70f3ecb6985adc001b412dd5cb172c78bc854",
+      "prompt": "Use case: scientific-educational. Asset type: isolated classroom practical plate for a Year 12 Biology video. Draw one small round hand mirror with a plain handle lying flat, seen slightly from above. The mirror glass shows only a soft pale blue sky highlight and gentle sheen, no face, figure, hand, person or room reflected. Ink and watercolour textbook illustration: clean dark ink contour, soft muted wash, realistic object details, matching a hand-painted science apparatus plate. One centered object, at least 8 percent clear margin, no ground plane, no cast shadow, no halo. No text, letters, labels, numbers, arrows, logos or watermark. Real transparent background and crisp clean alpha edge. Roughly square canvas, readable when reduced to 200 pixels.",
+      "postprocess": "Fit source on 2000x2000 transparent canvas; for the red and white bead pair, crop each from the shared two-bead sheet using the visible alpha bounds and preserve identical diameter.",
+      "path": "public/assets/biology/m5x-hand-mirror-v1.png"
+    },
+    {
+      "group": "P03",
+      "file": "C:\\lesson-video-generator\\public\\assets\\biology\\m5x-slip-box-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14c21-6083-7f31-8358-bd02b8835efa\\exec-d2a05f2e-bc4e-4bd9-bf46-d2ed53aef612.png",
+      "subject": "closed cardboard collection box with slot and blank folded slips",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        160,
+        191,
+        1840,
+        1808
+      ],
+      "transparent_fraction": 0.6551,
+      "sha256": "40b9ce09191aead6f121f48c3f42cc661a581dfcc460dd125f9b8489830d4d8c",
+      "prompt": "Use case: scientific-educational. Asset type: isolated classroom practical plate for Year 12 Biology. Subject: One closed plain small cardboard collection box with a narrow slot cut through its lid; three or four folded blank paper slips beside it. Slightly elevated three-quarter view. No writing, labels, symbols or markings. Style: clean fine ink contours and soft muted watercolour wash, matching a hand-painted textbook apparatus plate. Composition: centered, square canvas, at least 8 percent clear margin. Real transparent background with clean alpha; no ground plane, cast shadow, halo, text, letters, numbers, arrows, people, hands, faces, logo or watermark. Readable at 200 px.",
+      "postprocess": "Fit source on 2000x2000 transparent canvas; for the red and white bead pair, crop each from the shared two-bead sheet using the visible alpha bounds and preserve identical diameter.",
+      "path": "public/assets/biology/m5x-slip-box-v1.png"
+    },
+    {
+      "group": "P03",
+      "file": "C:\\lesson-video-generator\\public\\assets\\biology\\m5x-slip-blank-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14c21-6083-7f31-8358-bd02b8835efa\\exec-78775206-5fb3-41bb-a75e-95b98856c6ec.png",
+      "subject": "one unfolded blank paper slip",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        160,
+        163,
+        1840,
+        1836
+      ],
+      "transparent_fraction": 0.7801,
+      "sha256": "4565c7b37b2655afff4673c1cd895c539f08d9f7b8ce09eaf1657d1754fe4cb0",
+      "prompt": "Use case: scientific-educational. Asset type: isolated classroom practical plate for Year 12 Biology. Subject: One unfolded blank rectangular paper slip by itself, slightly angled, seen from above. No writing, grid, boxes, lines, marks or symbols. Plain lightly textured off-white paper. Style: clean fine ink contours and soft muted watercolour wash, matching a hand-painted textbook apparatus plate. Composition: centered, square canvas, at least 8 percent clear margin. Real transparent background with clean alpha; no ground plane, cast shadow, halo, text, letters, numbers, arrows, people, hands, faces, logo or watermark. Readable at 200 px.",
+      "postprocess": "Fit source on 2000x2000 transparent canvas; for the red and white bead pair, crop each from the shared two-bead sheet using the visible alpha bounds and preserve identical diameter.",
+      "path": "public/assets/biology/m5x-slip-blank-v1.png"
+    },
+    {
+      "group": "P03",
+      "file": "C:\\lesson-video-generator\\public\\assets\\biology\\m5x-bead-bag-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14c21-6083-7f31-8358-bd02b8835efa\\exec-5159a07d-1f58-4658-a5ea-c8f66562b9c0.png",
+      "subject": "open cloth drawstring bag with red and white round beads",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        188,
+        160,
+        1811,
+        1840
+      ],
+      "transparent_fraction": 0.6994,
+      "sha256": "855498b3200021c571478bcb4ffd1466b93b7c86c600d6ff68b9d0a09ffdcef5",
+      "prompt": "Use case: scientific-educational. Asset type: isolated classroom practical plate for Year 12 Biology. Subject: A small simple cloth drawstring bag, open at the top, with a few plain round red and white beads spilled directly in front. Cloth in muted natural beige. The beads have no peg, hole, text or design. Style: clean fine ink contours and soft muted watercolour wash, matching a hand-painted textbook apparatus plate. Composition: centered, square canvas, at least 8 percent clear margin. Real transparent background with clean alpha; no ground plane, cast shadow, halo, text, letters, numbers, arrows, people, hands, faces, logo or watermark. Readable at 200 px.",
+      "postprocess": "Fit source on 2000x2000 transparent canvas; for the red and white bead pair, crop each from the shared two-bead sheet using the visible alpha bounds and preserve identical diameter.",
+      "path": "public/assets/biology/m5x-bead-bag-v1.png"
+    },
+    {
+      "group": "P03",
+      "file": "C:\\lesson-video-generator\\public\\assets\\biology\\m5x-bead-red-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14c21-6083-7f31-8358-bd02b8835efa\\exec-ae7d665b-6198-4c35-a09b-17fedafdb37f.png",
+      "subject": "one red round bead",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        363,
+        363,
+        1640,
+        1636
+      ],
+      "transparent_fraction": 0.8892,
+      "sha256": "bdad413a580db3e617191263c99d5ad645fb3a3950a9244c5d419bdd0d00494c",
+      "prompt": "Use case: scientific-educational. Asset type: isolated classroom practical plate for Year 12 Biology. Subject: Two separate plain spherical counting beads, one deep muted red on the left and one ivory white on the right. Identical diameter, identical viewing angle and highlights. Both completely visible and widely separated so each can be cropped into its own transparent plate. No pegs, sockets, holes, strings or markings. Style: clean fine ink contours and soft muted watercolour wash, matching a hand-painted textbook apparatus plate. Composition: centered, square canvas, at least 8 percent clear margin. Real transparent background with clean alpha; no ground plane, cast shadow, halo, text, letters, numbers, arrows, people, hands, faces, logo or watermark. Readable at 200 px.",
+      "postprocess": "Fit source on 2000x2000 transparent canvas; for the red and white bead pair, crop each from the shared two-bead sheet using the visible alpha bounds and preserve identical diameter.",
+      "path": "public/assets/biology/m5x-bead-red-v1.png"
+    },
+    {
+      "group": "P03",
+      "file": "C:\\lesson-video-generator\\public\\assets\\biology\\m5x-bead-white-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a14c21-6083-7f31-8358-bd02b8835efa\\exec-ae7d665b-6198-4c35-a09b-17fedafdb37f.png",
+      "subject": "one white round bead",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        363,
+        362,
+        1638,
+        1637
+      ],
+      "transparent_fraction": 0.8793,
+      "sha256": "477634a0b78ca098271dccdfa4f23eedda8fb31ab0c314a7ea5f8a290d101dfd",
+      "prompt": "Use case: scientific-educational. Asset type: isolated classroom practical plate for Year 12 Biology. Subject: Two separate plain spherical counting beads, one deep muted red on the left and one ivory white on the right. Identical diameter, identical viewing angle and highlights. Both completely visible and widely separated so each can be cropped into its own transparent plate. No pegs, sockets, holes, strings or markings. Style: clean fine ink contours and soft muted watercolour wash, matching a hand-painted textbook apparatus plate. Composition: centered, square canvas, at least 8 percent clear margin. Real transparent background with clean alpha; no ground plane, cast shadow, halo, text, letters, numbers, arrows, people, hands, faces, logo or watermark. Readable at 200 px.",
+      "postprocess": "Fit source on 2000x2000 transparent canvas; for the red and white bead pair, crop each from the shared two-bead sheet using the visible alpha bounds and preserve identical diameter.",
+      "path": "public/assets/biology/m5x-bead-white-v1.png"
+    }
+  ],
+  "sourceFragments": [
+    "docs/production/claude-pm/assets/brief71-p01.json",
+    "docs/production/claude-pm/assets/brief71-p02.json",
+    "docs/production/claude-pm/assets/brief71-p03.json"
+  ]
+}

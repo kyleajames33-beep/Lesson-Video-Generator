@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-B13-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/b13/lesson.json",
+  "lessonSha256": "4d8142b6c5a720f158966e1587d6850531977965a9f80c0eb3c4dd9ec5d529ae",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/b13/lesson.production-brief.json",
+    "sha256": "b2d8bde576e70179f6b5ec5ac97ebfca27eaf76426ea8e7681781f07e9184825"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "UK Biobank is a shared research project that began recruiting in 2006. Half a million volunteers in Britain, aged 40 to 69, gave blood samples and agreed to link their health records. Each sample was tested at around 850,000 places in the DNA, and approved researchers around the world can analyse the data. So what can data from half a million people show that one family, or one hospital, never could? And how far can we trust it?",
+      "hash": "ee217b830ea7",
+      "textSha256": "ee217b830ea79be3d917c5180f3458010ac24f1afe2f451435c78319ae9a1b59",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/hook.ee217b830ea7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/hook.ee217b830ea7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/hook.ee217b830ea7.generation.json",
+      "plannedRequestSha256": "9b979e0cf86dfb5e402021de3c228575d9a24c2ae51f95336f011f43dec2fc4a"
+    },
+    {
+      "id": "why-scale",
+      "parentSceneId": "why-scale",
+      "text": "A project like this is called a large-scale collaborative project: many researchers and sites pool their data. Scale matters because most variants only nudge risk a little. In a small study, chance alone can make one group look different, so a small real effect gets lost in the noise. With hundreds of thousands of people, a real difference stands out from chance. That gives stronger inference, meaning a conclusion drawn from evidence. Stronger, but never certain.",
+      "hash": "c45250d996cc",
+      "textSha256": "c45250d996ccbdb5917ad47a2d70098584905dcbeaa15b155cbbc2b8441e9342",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/why-scale.c45250d996cc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/why-scale.c45250d996cc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/why-scale.c45250d996cc.generation.json",
+      "plannedRequestSha256": "11977fcc3fe5b17c1c634ed3d05ae730264a0cb8eff82cbd3d7d655f9d512204"
+    },
+    {
+      "id": "sickle-puzzle",
+      "parentSceneId": "sickle-puzzle",
+      "text": "Pooling data isn't new. Here's the classic case. The sickle cell allele causes sickle cell anaemia when someone inherits two copies. A harmful allele like that should become rare, because natural selection removes it. But when frequency data from many countries were combined into one map, the allele turned out to be common across large parts of Africa, and also found around the Mediterranean, the Middle East and India. A pattern that a simple model can't explain is exactly what makes scientists dig deeper.",
+      "hash": "e9c9cfe3e7ab",
+      "textSha256": "e9c9cfe3e7ab9593d6143fd94d7ed575cba4617b4b3f24e790755e55f6c59a54",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/sickle-puzzle.e9c9cfe3e7ab.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/sickle-puzzle.e9c9cfe3e7ab.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/sickle-puzzle.e9c9cfe3e7ab.generation.json",
+      "plannedRequestSha256": "9a9f4e382a41f38212940d06cbb397b84078b9b61c23de86d762e550304d4bb0"
+    },
+    {
+      "id": "three-streams",
+      "parentSceneId": "three-streams",
+      "text": "Studies like this combine three kinds of evidence. Family trees show how it's inherited: unaffected parents can have an affected child, so it's recessive, and carriers are healthy. DNA data show what changed: one base in the haemoglobin gene. And frequency data show where it's common. No single kind answers the whole question. The conclusion comes from all three agreeing.",
+      "hash": "d5c25f6b4962",
+      "textSha256": "d5c25f6b4962577d713a19b6e20178f2eb242546b54ed0d9cd6f6d0e51c795eb",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/three-streams.d5c25f6b4962.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/three-streams.d5c25f6b4962.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/three-streams.d5c25f6b4962.generation.json",
+      "plannedRequestSha256": "72e7a5ed88e7c66de97a4844e2f009289a610f390c1dd865d1fe49d97f5966f9"
+    },
+    {
+      "id": "malaria-overlay",
+      "parentSceneId": "malaria-overlay",
+      "text": "So why is it common in those places? Lay a map of malaria over the allele map, and across Africa, they line up closely. Malaria is caused by a parasite that a mosquito passes on, and it grows inside red blood cells. In carriers, infected cells tend to sickle and get cleared, so carriers don't get the anaemia, and they're much less likely to die of severe malaria. So where malaria is common, carriers survive and have children more often, and the allele stays common. This is called heterozygote advantage.",
+      "hash": "55efd75e9bbf",
+      "textSha256": "55efd75e9bbf5cb151758d361432cf95937a2880dc208679b9a7110f3cd22d1b",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/malaria-overlay.55efd75e9bbf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/malaria-overlay.55efd75e9bbf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/malaria-overlay.55efd75e9bbf.generation.json",
+      "plannedRequestSha256": "55034aeff1cabac781df506dae94a7b3342d3c4e809a7bf1b5e016756c48880a"
+    },
+    {
+      "id": "match-not-proof",
+      "parentSceneId": "match-not-proof",
+      "text": "But two maps that line up aren't proof on their own. Two patterns can match by coincidence, just like any association. Scientists trust the malaria explanation because other studies showed directly that carriers really do resist severe malaria. And a high frequency can have another cause. In a small, isolated group, an allele can become common just by chance, because a few of the founders happened to carry it.",
+      "hash": "ff0e9b84261c",
+      "textSha256": "ff0e9b84261ca00f32c6a3c5a3179210d6ebc69ea9322c254aa4ef29686ab6aa",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/match-not-proof.ff0e9b84261c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/match-not-proof.ff0e9b84261c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/match-not-proof.ff0e9b84261c.generation.json",
+      "plannedRequestSha256": "228dec82e49949e86c578f992a667bbc8b3bfc1fe390aa44080a51397eda62a8"
+    },
+    {
+      "id": "conservation",
+      "parentSceneId": "conservation",
+      "text": "The same kind of data helps protect threatened species. Tasmanian devils are being killed by a contagious facial cancer. Genetic data from many devils showed they have very little genetic diversity, meaning few different alleles, after past population crashes and isolation. That matters, because with fewer alleles there's less chance that some animals carry one that helps against a new disease. So breeders use the data to pair devils that are less related, keeping as much diversity as possible. But diversity only improves the odds. It doesn't guarantee survival.",
+      "hash": "bcfda742560a",
+      "textSha256": "bcfda742560a04bc9ab7ddc57bfa0940b68dbe0c7eb0195447509859ab41f760",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/conservation.bcfda742560a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/conservation.bcfda742560a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/conservation.bcfda742560a.generation.json",
+      "plannedRequestSha256": "09a3d12335483ea74a6d0a79ce0a43faa03a4c86d7fcffd231589ccd820bd7fc"
+    },
+    {
+      "id": "human-evolution",
+      "parentSceneId": "human-evolution",
+      "text": "Large data also show how human populations are related. The 1000 Genomes Project sequenced the genomes of 2,504 people from 26 populations around the world. Populations that share more variants are likely to share more recent ancestors. African populations carry the most variation, and most common variants found elsewhere are also found in Africa. That fits modern humans first evolving in Africa: each group that left was a small set of founders, carrying only part of that variety. And the reference genome isn't everyone's genome: a typical person differs from it at four to five million places.",
+      "hash": "f0b4c30d4974",
+      "textSha256": "f0b4c30d49749d18b46ffaefb69f1e4ee03d7a235408795b7cfef7853dd05549",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/human-evolution.f0b4c30d4974.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/human-evolution.f0b4c30d4974.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/human-evolution.f0b4c30d4974.generation.json",
+      "plannedRequestSha256": "0de2665281aa25cde8c17f66afbdece9c8ee3ba4b31e95d05b7b1d4410c59d91"
+    },
+    {
+      "id": "improves-not-removes",
+      "parentSceneId": "improves-not-removes",
+      "text": "So, large data improve pattern detection, confidence in broad trends, and comparisons across many populations. What they don't remove is a biased sample, the limits of the methods, or uncertainty about any one person's future. UK Biobank volunteers, for example, are healthier on average than the British population. A strong answer states both sides.",
+      "hash": "0cd941b7dec1",
+      "textSha256": "0cd941b7dec1d27ef4927a901ba68ef1199d1b000d876636f7aa3c73fecb1317",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/improves-not-removes.0cd941b7dec1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/improves-not-removes.0cd941b7dec1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/improves-not-removes.0cd941b7dec1.generation.json",
+      "plannedRequestSha256": "7f61180aef2a5918c83d7572dd32aa0f54558f9eed0ef60ae5d168ab79454e8d"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two lines to remember. Big data sharpen the trend, but they don't predict a person. And if a harmful allele is common, look for a reason: an advantage for carriers, or chance in a small group.",
+      "hash": "8c69d159e8ed",
+      "textSha256": "8c69d159e8edd6883e92ab4e6b478e77e6e91139a6e23178035a5161fe376bb6",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/memory.8c69d159e8ed.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/memory.8c69d159e8ed.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/memory.8c69d159e8ed.generation.json",
+      "plannedRequestSha256": "0a4869f3447935a1c9c2caa9d86b415a49b4a7c02a88860f861c216b0d228869"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two questions now. First, this table shows example data from a large collaborative study: how common a red blood cell variant is, and how much malaria there is, in six regions. Describe the trend. Then suggest one reason the island region doesn't fit. Pause here to answer.",
+      "hash": "bb8caaeea34f",
+      "textSha256": "bb8caaeea34f6ed7903d2cafa981a7d405180c51bc626e465564ca05cee06cfb",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt.bb8caaeea34f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt.bb8caaeea34f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt.bb8caaeea34f.generation.json",
+      "plannedRequestSha256": "54373a42fbd2b9a3cb8050a186483f647d698dcc547f0b9ffdf8407f53c070dc"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The variant gets more common as malaria increases, which suggests carriers have an advantage where there's malaria. That's a trend, not proof. The island has a high frequency but no malaria, so something else is going on, like a few founders who happened to carry it. And if you said the variant must protect against malaria because the numbers match, a match alone doesn't show cause.",
+      "hash": "11df164c7a41",
+      "textSha256": "11df164c7a41cdcbd261676c12d028bf900ddc9d7b8b16e0bc1977c14f4fca0f",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-one.11df164c7a41.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-one.11df164c7a41.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-one.11df164c7a41.generation.json",
+      "plannedRequestSha256": "c6461d4d2f2ab62896cbadb29fe71b444a9bb803f53721166fab6f8c8271bf29"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A threatened wallaby lives on the mainland and on a small island. Across ten markers, the mainland animals average nine alleles per marker, and the island animals average three. What does this suggest about the island population? Then name one way managers could use this. Pause here to answer.",
+      "hash": "b89cacf154b2",
+      "textSha256": "b89cacf154b2fc7e892d15f02fd6d2fdde0acc09a4c16512e2013aa2b0489972",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt-two.b89cacf154b2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt-two.b89cacf154b2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt-two.b89cacf154b2.generation.json",
+      "plannedRequestSha256": "006e7f92f5093977eb22c478e7a84a01a9f34b84d00581bba9f29719fd0e0dce"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The island animals have much less genetic diversity. That suggests a past population crash, or a small founding group, with little mixing since. Managers could move some mainland animals to the island to add diversity, or pair the least related animals to keep what's left. And if you said more diversity guarantees they'll survive, it only improves their chances.",
+      "hash": "72ba86917a28",
+      "textSha256": "72ba86917a280596dae8766164c477ec9463c4321a19b868844de18d197b52b1",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-two.72ba86917a28.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-two.72ba86917a28.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-two.72ba86917a28.generation.json",
+      "plannedRequestSha256": "d2d7f08353b9776f3f359a8fd3b42292d1a826b3db2b98b00c439e1b8a04331f"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, with any large data set, read the trend, ask what else could explain it, and say what the data can't tell you. Next, we'll look at what these population patterns can, and can't, predict about one person's risk.",
+      "hash": "0480368c867b",
+      "textSha256": "0480368c867bb0e646b99fbe030d1574436e7ac0be3c55a70820b8004fcb62d2",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/decision-rule.0480368c867b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/decision-rule.0480368c867b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/decision-rule.0480368c867b.generation.json",
+      "plannedRequestSha256": "b65c80c3a6fe47583fec82e3d18fe1e7e39581fa00c1f7b03e0caaa9d5540d0b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

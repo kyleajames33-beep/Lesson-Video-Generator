@@ -1,0 +1,160 @@
+{
+  "title": "Thirty-two roan cattle, so how common is the white allele? Population frequencies and SNP evidence",
+  "subtitle": "How do you work out how common a characteristic or an allele is in a population, and what can SNP data, and their limits, tell you?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 19,
+  "lessonIntent": "calculating the frequency of a characteristic as a count over the stated total, and presenting it as a table and a bar chart; calculating an allele frequency by counting copies (two per individual for an autosomal gene); explaining why a recessive phenotype frequency gives only the homozygous recessive genotype frequency, because carriers look like dominant homozygotes; describing a SNP as a one-base difference at a known position, each version an allele, and saying that reading both copies shows the genotype directly; saying that most SNPs change nothing but some change a protein; calculating a SNP allele frequency from genotype counts; comparing two groups to identify a trend and calling it an association, not a cause, with the reason (a nearby DNA difference inherited with it); explaining why one SNP cannot show relatedness; naming sample limits (size, representation, consistent categories); applying all of it to unseen clover leaf-mark counts and unseen SNP genotype counts.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a herd of a hundred Shorthorn cattle. Sixty-four are red, thirty-two are roan, and four are white. From the co-dominance video, you know each roan carries one red allele and one white allele. So what fraction of all the coat colour alleles in this herd are white? Four per cent? Thirty-six per cent? Hold that thought, because the answer is neither."
+      }
+    },
+    {
+      "id": "frequency",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the cattle themselves. A frequency tells you how common something is in the group you counted. It's the count divided by the total. Sixty-four out of a hundred cattle are red, so the frequency of red coats is sixty-four per cent. Roan is thirty-two per cent, and white is four. A table keeps the counts, and a bar chart shows the pattern at a glance. But always say what you divided by. Here, it's cattle."
+      }
+    },
+    {
+      "id": "allele-frequency",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the alleles. Every animal carries two copies of the coat colour gene, so a hundred cattle hold two hundred copies. Each white cow has two white alleles, which makes eight. Each roan has one, which makes thirty-two more. That's forty white alleles out of two hundred, so the white allele frequency is twenty per cent, and the red allele is eighty. Four per cent counted only the white cattle, and thirty-six counted animals, not alleles."
+      }
+    },
+    {
+      "id": "hidden-alleles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Cattle make this easy, because every genotype looks different. Peas don't. In a field of a hundred pea plants, nine are short. Short is recessive, so those nine must have two short alleles. That's a genotype frequency of nine per cent. But a tall plant could be hiding a short allele, or not, and both kinds look the same. So looks alone can't count every allele. For that, you have to read the DNA itself."
+      }
+    },
+    {
+      "id": "what-is-a-snp",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Line up the same stretch of DNA from several people, and most bases match. But at some positions, people differ by just one base. Here, some copies have C, and others have T. That's a single nucleotide polymorphism, or snip for short. Single nucleotide means one base, and polymorphism means more than one form in the population. Each form is an allele. And because both copies are read, every genotype shows directly, carriers included."
+      }
+    },
+    {
+      "id": "snp-markers",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two unrelated people differ at roughly one base in every thousand, so each of us carries millions of snips. Most sit in DNA that doesn't code for a protein, and change nothing we can see. A few do matter. The sickle cell allele from the proteins video is one: a single A changed to T. So snips are markers we can count, and only sometimes causes."
+      }
+    },
+    {
+      "id": "counting-snps",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now count them, just like the cattle. Fifty people are tested at this snip. Eighteen have C on both copies, twenty-four have one C and one T, and eight have T on both. Fifty people carry a hundred copies. The T alleles come to twenty-four, plus sixteen, which makes forty. So the T allele frequency is forty per cent. Count alleles, not people."
+      }
+    },
+    {
+      "id": "association",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Snips become evidence when you compare groups. Say those fifty people all have a particular disease, and fifty people without it are tested too. In that second group, T is only twenty per cent. That's a trend: T turns up more often with the disease. We call that an association. But it doesn't prove that T causes it. The snip might just sit close to the DNA that really matters, on the same chromosome. Close neighbours are rarely split by crossing over, so they're inherited together."
+      }
+    },
+    {
+      "id": "one-marker",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "And one snip is only one marker. Two populations can share a version at one snip, and still differ at thousands of others. That's why studies of relatedness and ancestry compare many snips at once, and look at the overall pattern."
+      }
+    },
+    {
+      "id": "sample-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Every one of these numbers comes from a sample, and samples have limits. Imagine a whole breed where the white allele really is twenty per cent. Sample twenty cattle, and you might get ten per cent, or thirty. Sample two hundred, and you'll stay close to twenty. Small samples bounce around. A sample also has to represent the population: one farm, or one family, may not. And everyone has to sort the same way. Is a red cow with a few white hairs red, or roan?"
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Three words to take away: frequency, snip, limits. Frequency is a count over a total, so say what you counted. A snip is a one-base difference that you can count in DNA. And limits remind you what a sample can't prove."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two harder questions now. First, a class samples white clover plants at two sites on the school grounds. Some plants have a pale V mark on their leaves, and some don't. At site A, eighteen plants have the mark and forty-two don't. At site B, thirty have the mark and thirty don't. State the frequency of the leaf mark at each site, compare the sites, and identify one limitation of the data. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each site has sixty plants. Site A is eighteen out of sixty, or thirty per cent. Site B is thirty out of sixty, or fifty per cent. So the mark is more common in site B's sample. But sixty plants from one school is a small sample, and the mark ranges from bold to very faint, so people can sort plants differently. If you divided eighteen by forty-two, you used the wrong total."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. Forty people are tested at a snip, where the base is either G or A. Twenty have G on both copies, sixteen have one G and one A, and four have A on both. Calculate the frequency of the A allele. Then, a study finds that A is more common in people with a certain disease. Does this show that A causes the disease? Explain. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Forty people carry eighty copies. The A alleles are sixteen from the mixed genotypes, plus eight from the four people with A on both copies. That's twenty-four out of eighty, or thirty per cent. And no, it's an association, not proof. A might just be inherited alongside the DNA that causes the disease. If you said ten per cent, you counted people, not alleles."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, with frequency data: say what you counted, count alleles rather than individuals, read the trend, then name the limits. And an association is a pattern, not a cause. Next, you'll collect and present frequency data yourself. Then we'll see how scientists read DNA, by sequencing and profiling."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

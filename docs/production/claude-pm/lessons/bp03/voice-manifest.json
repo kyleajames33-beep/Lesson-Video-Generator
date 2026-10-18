@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-P03-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/bp03/lesson.json",
+  "lessonSha256": "ef8a5d4b879ba1a7f5cfbe3642a6f866fe089fd3bc1f4f45e035904dc1d37c16",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/bp03/lesson.production-brief.json",
+    "sha256": "301b99ac9f8d4e78059e0fbfe44635158fd5dd4f4888596c298ae5010bf1528f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In one class, nine of the twenty-eight students who were counted have attached earlobes. Does that tell you how common attached earlobes are in everyone your age? Not yet. It depends on how the data were collected, how big the sample was, and how carefully each earlobe was judged. In this practical you'll collect, record and present frequency data, and learn to say exactly what it does and doesn't show.",
+      "hash": "f85219087a00",
+      "textSha256": "f85219087a009f4d0f1092f92801862ef503ad227211155439b62eb4f8e297a9",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/hook.f85219087a00.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/hook.f85219087a00.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/hook.f85219087a00.generation.json",
+      "plannedRequestSha256": "39989383fce5715f0a44cdb9f4a55265cbb9d95332e365135d2c02ce12c4a8bc"
+    },
+    {
+      "id": "aim-characteristic",
+      "parentSceneId": "aim-characteristic",
+      "text": "The aim: collect data on how common a characteristic is in a population, present it clearly, and identify trends, patterns and limitations. Choose a characteristic that's easy to see, quick to judge, and not sensitive, like earlobe shape or tongue rolling. Neither is a simple one-gene trait, so you're counting how common the characteristic is, not working out allele frequencies.",
+      "hash": "1045a146835b",
+      "textSha256": "1045a146835b65fe597562410fdf0a21424c3c3c7c3c8e565b95d3b348b6fbe0",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/aim-characteristic.1045a146835b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/aim-characteristic.1045a146835b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/aim-characteristic.1045a146835b.generation.json",
+      "plannedRequestSha256": "06d2d71b1eca39e9620fee0c599faab3860cce19f5fea4a8689c4eb2257457db"
+    },
+    {
+      "id": "agreement-privacy",
+      "parentSceneId": "agreement-privacy",
+      "text": "Data about people needs their agreement. Get your teacher to approve the plan, tell everyone what's being collected and why, and let anyone say no without giving a reason. Record no names, just one tick on an unnamed slip. That way no result can be traced back to a person, and nobody feels pressured to take part.",
+      "hash": "b495621e457f",
+      "textSha256": "b495621e457fab8af8b7ecd261567d573e318853d1c779efddc5ed3ab2bed89b",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/agreement-privacy.b495621e457f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/agreement-privacy.b495621e457f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/agreement-privacy.b495621e457f.generation.json",
+      "plannedRequestSha256": "58e90d6831bf7edbaa3e24de69fc34b55988b304c125acbf80252c1314e11da1"
+    },
+    {
+      "id": "define-categories",
+      "parentSceneId": "define-categories",
+      "text": "Next, write the definitions before anyone counts. A free earlobe hangs below the point where it joins the side of the head. An attached earlobe joins the head directly, with no hanging part. Some are in between, so add a third box: unsure. Clear definitions matter, because if two people judge the same earlobe differently, the numbers mean different things. So test the definitions first on a few practice diagrams, and if people disagree, sharpen the wording.",
+      "hash": "461b866a5ac1",
+      "textSha256": "461b866a5ac1f3a64023fdd275de3b2f3b3d31a03973acbceddbe7efca7cd90d",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/define-categories.461b866a5ac1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/define-categories.461b866a5ac1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/define-categories.461b866a5ac1.generation.json",
+      "plannedRequestSha256": "b92931cba38a085e5d3d9b562e22fc3a8e8eeb9a3fd6d5dd4a56307aedb72b75"
+    },
+    {
+      "id": "method",
+      "parentSceneId": "method",
+      "text": "Now the method. Give each student a slip with three boxes, and show the definition card. Each student checks their earlobe in a mirror, or asks a partner to look, then ticks one box, folds the slip and drops it in a box. Then two people count the slips together onto a tally sheet, and check that their totals agree. Two counters catch mistakes that one person would miss.",
+      "hash": "5fcc7ccf0f74",
+      "textSha256": "5fcc7ccf0f74b650b38a1db1f4f915e181f9c415db2dc8cabe18f5fbfd00b8b2",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/method.5fcc7ccf0f74.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/method.5fcc7ccf0f74.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/method.5fcc7ccf0f74.generation.json",
+      "plannedRequestSha256": "cf65f8e76bbb3c8c4852961398964bd0dc0e381e3fcb5b3b33d6ce31e3395a93"
+    },
+    {
+      "id": "record-frequency",
+      "parentSceneId": "record-frequency",
+      "text": "Record the counts in a table: category, tally, count and frequency. Our example class returned thirty slips: nine attached, nineteen free and two unsure. Frequency is the count divided by the total, times one hundred. But which total? Leave out the unsure slips, since they fit neither box, and say so in your table. Nine out of twenty-eight is thirty-two per cent attached, and nineteen out of twenty-eight is sixty-eight per cent free.",
+      "hash": "0e4641a107a1",
+      "textSha256": "0e4641a107a172edcf0d22845dbedb92a0900bc683b41ca153b520432a9b9dae",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/record-frequency.0e4641a107a1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/record-frequency.0e4641a107a1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/record-frequency.0e4641a107a1.generation.json",
+      "plannedRequestSha256": "586481157d13f5902751c4e766fdb953cd1611c4283dea746938e7bd526eb878"
+    },
+    {
+      "id": "pool",
+      "parentSceneId": "pool",
+      "text": "One class is a small sample, so pool the results from four classes. Their attached frequencies were thirty-two, twenty-two, twenty-eight and twenty-seven per cent. Altogether, that's thirty attached out of a hundred and ten students, about twenty-seven per cent. The class values jump around, but the pooled value rests on four times as many people, so it's a better estimate.",
+      "hash": "8afeae881edf",
+      "textSha256": "8afeae881edfb0a4f9c40cafbcc00a99e648eeed904e5675cb99011fef608b3f",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/pool.8afeae881edf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/pool.8afeae881edf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/pool.8afeae881edf.generation.json",
+      "plannedRequestSha256": "59eb48f6598d5cefc279ee89976d85f26b78cc0a4463952ea108fcc5b325a8d2"
+    },
+    {
+      "id": "column-graph",
+      "parentSceneId": "column-graph",
+      "text": "To present it, use a column graph, because the classes are separate groups, not points on a continuous scale. Put the four classes and the pooled total along the bottom, and the frequency of attached earlobes, in per cent, up the side, starting from zero. Leave gaps between the columns, give the graph a title, and label both axes, with units on the frequency axis.",
+      "hash": "a37f4b4b580c",
+      "textSha256": "a37f4b4b580ce8c4992fdb93ea3568282b02fb0b39344c1b9ea5ae40f4d0859d",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/column-graph.a37f4b4b580c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/column-graph.a37f4b4b580c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/column-graph.a37f4b4b580c.generation.json",
+      "plannedRequestSha256": "8103ec2ad19782fd6e594301dfc2aaa4e0b6e99a1bc100b34f86cad978d701e2"
+    },
+    {
+      "id": "bead-model",
+      "parentSceneId": "bead-model",
+      "text": "You saw earlier that small samples bounce around. Now test it yourself with beads. Fill a bag with two hundred beads, a quarter of them red, so you know the true frequency. Without looking, draw ten, count the red ones, put them back and shake. Ten-bead samples gave ten, forty, twenty and thirty per cent red. Fifty-bead samples gave twenty-two, twenty-eight and twenty-six. Small samples scatter widely by chance. Bigger samples land closer to the truth.",
+      "hash": "dcc5221fa84d",
+      "textSha256": "dcc5221fa84d997dd7e62bbe6874231a056e14a3ea938cf20c605d39f6963130",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/bead-model.dcc5221fa84d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/bead-model.dcc5221fa84d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/bead-model.dcc5221fa84d.generation.json",
+      "plannedRequestSha256": "ae2ac37ad632888ec1c195749fbdd49b32f5d27f3ef1c52920e64b02452c399c"
+    },
+    {
+      "id": "analyse-trend-pattern",
+      "parentSceneId": "analyse-trend-pattern",
+      "text": "Now analyse. A trend is the overall direction in the data: free earlobes were more common in every class. A pattern is a feature that repeats: every class sat between twenty-two and thirty-two per cent attached.",
+      "hash": "c137196c7a76",
+      "textSha256": "c137196c7a76d148a179ec75ac8725f9fd6a0f5fdb1d8abc8996a65baf32f243",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/analyse-trend-pattern.c137196c7a76.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/analyse-trend-pattern.c137196c7a76.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/analyse-trend-pattern.c137196c7a76.generation.json",
+      "plannedRequestSha256": "2e8a8522de078752453f11ba346cc80c1629315e835287d4ef2b5b995b334f33"
+    },
+    {
+      "id": "analyse-relationship",
+      "parentSceneId": "analyse-relationship",
+      "text": "A relationship is when two characteristics change together, so each slip needs both, like earlobes and tongue rolling. Say twenty of the thirty students with attached earlobes could roll their tongue, sixty-seven per cent, and fifty-four of the eighty with free earlobes could, sixty-eight per cent. Almost the same, so this sample shows no relationship. And even if they had gone together, that would be an association, not proof that one causes the other.",
+      "hash": "fad0ad757cc3",
+      "textSha256": "fad0ad757cc337010fd58a0ebe672e7d638191a82778f9205dc2430eb5301e5c",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/analyse-relationship.fad0ad757cc3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/analyse-relationship.fad0ad757cc3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/analyse-relationship.fad0ad757cc3.generation.json",
+      "plannedRequestSha256": "d78835dd661c6864741690dd73bb55b154fea9a8e30fc5bd933a5f6590f5ad5e"
+    },
+    {
+      "id": "limitations",
+      "parentSceneId": "limitations",
+      "text": "Then the limits. A hundred and ten students from one school is still a small sample, and one school may not represent other places, because how common a characteristic is can differ between populations. People judge their own earlobes differently, and in-between ones are hard to call. Clear definitions make the data more valid, because then it measures what it claims to. Two counters, pooling and recounts make it more reliable, so repeats agree. And always write \"in this sample\", not \"in all people\".",
+      "hash": "68ff011c1975",
+      "textSha256": "68ff011c19757653c0825d10aa4457c70ee5f05c5e4d206cfddb5a8eeca84e30",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/limitations.68ff011c1975.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/limitations.68ff011c1975.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/limitations.68ff011c1975.generation.json",
+      "plannedRequestSha256": "7847d395a44b0e615a6516a0cefdae317ae71e45e9c5caed7f303c1f9dc41db9"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. A class samples earlobes in two school groups. Group A has eighteen attached and forty-two free. Group B has thirty attached and thirty free. Calculate the frequency of attached earlobes in each group, compare the groups, and give one limitation of the data. Pause here to answer.",
+      "hash": "121dabc07b79",
+      "textSha256": "121dabc07b79112f1bd68de9eee1da954a60487ec1fed8cc94d9553cf66b708d",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/attempt.121dabc07b79.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/attempt.121dabc07b79.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/attempt.121dabc07b79.generation.json",
+      "plannedRequestSha256": "8fd8adb07cae7523f5bcd3d0bafd592cc23530540c25ceb9eddc8f614c5508e4"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "Each group has sixty people. Group A: eighteen out of sixty is thirty per cent. Group B: thirty out of sixty is fifty per cent. So attached earlobes were more common in group B, in these samples. One limitation: sixty people from one school is a small sample, so the difference could be chance. If you divided eighteen by forty-two, you used the wrong total.",
+      "hash": "60ba62b1649c",
+      "textSha256": "60ba62b1649cdc4e501bb59815cbccd5cd5a95364e6aed1e0136452dcdb498d2",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/feedback.60ba62b1649c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/feedback.60ba62b1649c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/feedback.60ba62b1649c.generation.json",
+      "plannedRequestSha256": "5b213f3c66cf040527da2f9e24ae9b70a8c5cb11caedc73acb34175d194f5863"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to collect frequency data well: get agreement and keep it anonymous, define the categories first, count with two people, divide by the right total and say which one, graph it clearly, and name the limits. Next: how DNA sequencing and profiling show inheritance directly in the DNA.",
+      "hash": "b283e2ce83f7",
+      "textSha256": "b283e2ce83f772e669790075e1037d38718c4093b2d7b095cc7ccd3f9cc4b0d4",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/decision-rule.b283e2ce83f7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/decision-rule.b283e2ce83f7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/decision-rule.b283e2ce83f7.generation.json",
+      "plannedRequestSha256": "06b587eecac00678ba7c08480418e5527a1b43a92b17f1ae1f1a7d52fed4394f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P03-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

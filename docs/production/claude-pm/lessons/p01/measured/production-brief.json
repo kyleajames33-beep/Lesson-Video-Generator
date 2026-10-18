@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/p01/measured/lesson.json",
+    "lessonSha256": "5b71bd32457660a473d631806e932a937fca98b2d3d09aba6bd85222f6686599"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C1 (dynamic equilibrium needs a closed system; equal rates; a finished reaction is static), C2 (reversible reactions approach equilibrium), C3 (adding a reactant shifts right and deepens the iron thiocyanate red; removing one shifts left; heating favours the reaction that takes in heat; the cobalt solution is pink cold, blue hot, purple at room temperature; Le Chatelier's principle), C4a (sealed NO2 syringe and tubes), and Year 11 Working Scientifically (an independent variable is changed, a dependent variable is measured, controlled variables are kept the same; a risk assessment lists hazards and controls). The words validity, reliability and accuracy are given a plain meaning here even if met in Year 11.",
+    "startsWith": "Choose a reversible system and compare controlled disturbances. The video opens: This tube of iron thiocyanate has sat at the same pale red for an hour. Is that proof that it's an equilibrium, with both reactions still running?",
+    "stopsAfter": "stating the reversibility test (change, then reverse the change; a return is the evidence) and the magnesium contrast; stating whether a set-up is open or closed and why an equilibrium test needs a closed one; planning the six-tube disturbance investigation with a reference tube, one change per tube, side-by-side judging and a dilution control; naming the independent, dependent and controlled variables; predicting the results and giving the C3 reason in a clause; defining validity, reliability and accuracy for this investigation; writing a risk assessment row (hazard, harm, control) for the real hazards. No K, no Q, no colourimeter data (P02), no conduct.",
+    "nextLesson": "putting a number on where an equilibrium sits (route chem-m5-c05), without naming K (C3 and C4b convention)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m5-p01.md"
+  ],
+  "teaching": {
+    "task": "How do you show in the lab that a reaction is reversible, and that an equilibrium really responds to a disturbance, with evidence you can trust?",
+    "causalExplanation": "(1) an unchanged appearance cannot tell a running equilibrium from a finished reaction, so evidence needs a push (1); (2) the reversibility test: change, then reverse the change; one change proves nothing, a return does (2); (3) burning magnesium does not come back under any school conditions, so it is treated as irreversible; the hydrate test was open, so it shows reversibility, not an equilibrium (3); (4) an equilibrium investigation needs a closed system, and the method must say what is sealed (4); (5) a pale stock, an untouched reference and one change per tube, judged side by side (5); (6) independent, dependent and controlled variables (6); (7) expected results with the C3 reason in a clause (7); (8) adding a solution dilutes, so a paler tube is not yet evidence; the dilution control separates a shift from dilution (8); (9) temperature in a sealed tube, with the return to room temperature as a second reversibility check (9); (10) validity, reliability, accuracy (10); (11) risk assessment (11); memory aids (12); two attempts with brief feedback (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "two investigations, one question each. (A) Is it reversible? Push it one way, then reverse the change and see whether the start comes back (cobalt hydrate), against an irreversible contrast (burning magnesium). (B) How does an equilibrium respond to a disturbance, and how do you know the change is real? Reference tube, one change per tube, side-by-side judging, the dilution control, temperature in a sealed tube. Then validity, reliability and accuracy in plain words, the risk assessment, and two classic exam questions.",
+    "openingDecision": "To show that a reaction can run both ways, and that it responds to a change, you have to push it and watch what happens. So how do you plan an investigation with evidence you can trust?",
+    "understandingCheck": "(A1) a tube made paler by ten drops of silver nitrate solution, concluded \"shifted left\": what extra tube makes the conclusion valid, and why? Answer: an identical tube with ten drops of water (dilution control). Crossed mistake: \"repeat it three times\" (that improves reliability, not validity). (A2) heated pink cobalt chloride crystals turn blue, concluded \"reversible\": evaluate. Answer: one direction only; add water to the cooled blue solid and see pink return; the open tube shows reversibility, not an equilibrium. Crossed mistake: \"correct, the colour changed\".",
+    "curriculumScope": "Syllabus (2017, p49 to p50): C5-IQ1-01 \"conduct practical investigations to analyse the reversibility of chemical reactions, for example: cobalt(II) chloride hydrated and dehydrated; iron(III) nitrate and potassium thiocyanate; burning magnesium; burning steel wool (ACSCH090)\"; C5-IQ2-01 \"investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier's principle can be used to predict such effects, for example: heating cobalt(II) chloride hydrate; interaction between nitrogen dioxide and dinitrogen tetroxide; iron(III) thiocyanate and varying concentration of ions (ACSCH095)\". This video prepares students to plan, record and analyse the investigation and does not claim to replace conducting it."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer, three constant zones (short question top left, apparatus centre, one current card in the right third). Colour key: Fe3+ pale yellow, SCN- grey, FeSCN2+ red, cobalt pink and blue ions, reference tube marked with a teal tag, controls teal, hazards terracotta, risk controls green. Reuse and new items: the C3 painted iron tubes (`c3-iron-tube-start-v1.png`, `c3-iron-tube-deep-v1.png`), the C3 cobalt tubes in water-bath beakers (`c3-cobalt-tube-pink-v1.png`, `-purple-`, `-blue-`), the C9 sealed NO2 tubes (`c9-no2-tube-brown-v1.png`, `c9-no2-tube-pale-v1.png`), the C4a syringe parts (`c4a-syringe-barrel-v1.png`, `c4a-syringe-plunger-v1.png`, screen tag only), `m6-white-tile-v1.png`, `m5x-bottle-fe-v1.png` and `m5x-bottle-scn-v1.png` (reagent bottles, coded labels on the blank labels), `m6-wash-bottle-v1.png` (distilled water), `m6-beaker-v1.png` (bath, coded water fill), `c8-thermometer-hot-v1.png`, `c9-ice-cube-v1.png`, the C3 equation chip style and shift arrows, the countdown ring, the key notes board. New coded items: the \"push it, bring it back\" arrow loop, the six-tube comparison bar (swatches against the reference), the variables card, the expected results table, the risk assessment table (hazard, harm, control), the validity / reliability / accuracy cards, the open/closed boundary outline (dashed line around the tube showing what can cross). New painted plates are listed in the Codex asset brief.",
+    "transitionPlan": "The still iron tube and the question open the lesson; the cobalt crystal tube replaces it for the push-and-return loop; the magnesium ribbon and ash plate give the contrast and the open tube returns with a dashed outline; three sealed-or-open boundary plates follow; the six-tube row slides onto the white tile and stays while the variables, expected results and dilution control cards take the right third one at a time; the cobalt bath tube replaces the row for temperature; the validity, risk and aid cards follow; the attempt boards clear the screen and the feedback rebuilds the loop and the tube comparison bar; the plan card and the six-tube row return for the handoff; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "Heading \"Looks unchanged. Is that evidence?\" writes on.",
+      "teachingReason": "Explains why a still tube is not evidence: a finished reaction also looks still.",
+      "narrationCue": "push it",
+      "motionPurpose": "On the spoken cues: The painted iron tube (`c3-iron-tube-start-v1.png`) stands centre on the white tile (`m6-white-tile-v1.png`); a coded clock icon sweeps one hour beside it. On \"finished reaction\" a second plate slides in beside it, the ash on its watch glass (`p01-mgo-ash-v1.png`, Codex item 4), with the tag \"finished: nothing changing\";",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Looks unchanged. Is that evidence?\" writes on. The painted iron tube (`c3-iron-tube-start-v1.png`) stands centre on the white tile (`m6-white-tile-v1.png`); a coded clock icon sweeps one hour beside it. On \"finished reaction\" a second plate slides in beside it, the ash on its watch glass (`p01-mgo-ash-v1.png`, Codex item 4), with the tag \"finished: nothing changing\"; both get the same \"still\" tag and a pen \"?\" between them (\"same appearance, different story\"). On \"push it\" a coded drop falls into the iron tube and a pen arrow labelled \"push\" points at it. The main question card writes: \"How do you get evidence you can trust?\"",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "plate slide",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "reversibility-test",
+      "visualDecision": "adjust",
+      "visualReference": "The \"push it, bring it back\" loop writes at the top: an arrow out (\"change\") and an arrow back (\"reverse the change\"), with \"start comes back?\" at the end.",
+      "teachingReason": "Explains why a return is the evidence of reversibility: going one way happens in irreversible changes too; only coming back shows the reverse reaction can run.",
+      "narrationCue": "reverse / blue / pink again / reversible",
+      "motionPurpose": "On the spoken cues: On \"Heat pink cobalt chloride crystals\" the painted clamped tube of pink crystals (`p01-cocl2-crystals-pink-v1.png`, Codex item 1) sits over the painted burner (`m5x-bunsen-burner-v1.png`, Codex item 3) on the clamp stand; on \"droplets\" small coded droplets bead near the mouth (or the plate's own droplets in item 2);",
+      "motionRole": "explain",
+      "onScreenChange": "the \"push it, bring it back\" loop writes at the top: an arrow out (\"change\") and an arrow back (\"reverse the change\"), with \"start comes back?\" at the end. On \"Heat pink cobalt chloride crystals\" the painted clamped tube of pink crystals (`p01-cocl2-crystals-pink-v1.png`, Codex item 1) sits over the painted burner (`m5x-bunsen-burner-v1.png`, Codex item 3) on the clamp stand; on \"droplets\" small coded droplets bead near the mouth (or the plate's own droplets in item 2); on \"blue\" the plate crossfades to `p01-cocl2-crystals-blue-v1.png` (optional process clip) and the first loop arrow lights. Equation chip, small, two one-way lines (no equilibrium arrow, because the tube is open): \"heat: CoCl2·6H2O(s), pink → CoCl2(s), blue + 6H2O(g)\" and, lit only on \"add a few drops of water\", \"add water: CoCl2(s), blue + 6H2O(l) → CoCl2·6H2O, pink\". On \"proves nothing yet\" a crossed chip \"blue, so reversible\" fades in. On \"add a few drops of water\" the burner fades out, the clear dropper (`m5x-dropper-clear-v1.png`, Codex item 5) appears above the tube and a coded drop falls; on \"pink again\" the plate crossfades back to pink and the return arrow lights with a teal tick; a small terracotta heat icon on \"warms slightly\". On \"reversible\" the word and its meaning write under the loop: \"reversible: the change can be run back by changing the conditions\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "tick",
+        "plate crossfade",
+        "chip pop",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "magnesium-open",
+      "visualDecision": "adjust",
+      "visualReference": "Right zone. The painted magnesium ribbon on a heatproof mat (`p01-mg-ribbon-v1.png`, Codex item 4) gets a coded white glare (abstract light burst, with a small pen tag \"never look straight at it\"), then crossfades to the ash plate (`p01-mgo-ash-v1.png`).",
+      "teachingReason": "Explains why a return is the evidence of reversibility: going one way happens in irreversible changes too; only coming back shows the reverse reaction can run.",
+      "narrationCue": "irreversible / open",
+      "motionPurpose": "On the spoken cues: The equation chip \"2Mg(s) + O2(g) → 2MgO(s)\" writes with a one-way arrow. On \"Add water, heat it, cool it\" three small attempt chips write in turn under the ash, each with a pen cross (\"no magnesium\"). On \"irreversible\" the term writes with its meaning: \"no change you can make brings the start back\".",
+      "motionRole": "explain",
+      "onScreenChange": "right zone. The painted magnesium ribbon on a heatproof mat (`p01-mg-ribbon-v1.png`, Codex item 4) gets a coded white glare (abstract light burst, with a small pen tag \"never look straight at it\"), then crossfades to the ash plate (`p01-mgo-ash-v1.png`). The equation chip \"2Mg(s) + O2(g) → 2MgO(s)\" writes with a one-way arrow. On \"Add water, heat it, cool it\" three small attempt chips write in turn under the ash, each with a pen cross (\"no magnesium\"). On \"irreversible\" the term writes with its meaning: \"no change you can make brings the start back\". On \"open\" the cobalt tube returns small with a dashed outline around it; a coded steam wisp crosses the outline (tag \"open: matter can leave\"). On \"isn't an equilibrium\" a tag writes: \"open: a reversibility test, not an equilibrium\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "plate crossfade",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "closed-system",
+      "visualDecision": "adjust",
+      "visualReference": "Three plates in a row, each with the dashed boundary outline: the iron tube (ions stay in the water; tag \"ions cannot leave\"), the sealed NO2 tube (`c9-no2-tube-brown-v1.png`; tag \"sealed gas\"), the syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, tip sealed;",
+      "teachingReason": "Explains why the closed system: a response to a disturbance only means something if nothing escapes.",
+      "narrationCue": "sealed / closed",
+      "motionPurpose": "On the spoken cues: On \"write the condition\" a method line writes in pen: \"System: closed. Sealed: ___. Can enter or leave: ___.\" On \"closed\" each boundary turns solid teal with the tag \"closed: matter stays in; heat can still pass\" (C1 recall).",
+      "motionRole": "explain",
+      "onScreenChange": "three plates in a row, each with the dashed boundary outline: the iron tube (ions stay in the water; tag \"ions cannot leave\"), the sealed NO2 tube (`c9-no2-tube-brown-v1.png`; tag \"sealed gas\"), the syringe (`c4a-syringe-barrel-v1.png` with `c4a-syringe-plunger-v1.png`, tip sealed; tag \"sealed syringe\"). On \"write the condition\" a method line writes in pen: \"System: closed. Sealed: ___. Can enter or leave: ___.\" On \"closed\" each boundary turns solid teal with the tag \"closed: matter stays in; heat can still pass\" (C1 recall).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "setup-reference",
+      "visualDecision": "adjust",
+      "visualReference": "The two reagent bottles (`m5x-bottle-fe-v1.png`, `m5x-bottle-scn-v1.png`) with coded labels \"0.002 mol/L Fe(NO3)3\" and \"0.002 mol/L KSCN\"; on \"equal volumes\" two coded pours meet in the painted beaker (`m6-beaker-v1.png`, coded pale red fill).",
+      "teachingReason": "Explains why a pale stock: so a change can show in either direction; and why side by side: colour memory is unreliable.",
+      "narrationCue": "either direction / reference / one change / side by side",
+      "motionPurpose": "On the spoken cues: On \"either direction\" a small swatch scale writes with an up arrow (\"deeper\") and a down arrow (\"paler\") either side of the pale red. On \"six identical tubes\" six painted iron tubes (`c3-iron-tube-start-v1.png`) slide into a row on the white tile, numbered 1 to 6 by coded tags.",
+      "motionRole": "explain",
+      "onScreenChange": "the two reagent bottles (`m5x-bottle-fe-v1.png`, `m5x-bottle-scn-v1.png`) with coded labels \"0.002 mol/L Fe(NO3)3\" and \"0.002 mol/L KSCN\"; on \"equal volumes\" two coded pours meet in the painted beaker (`m6-beaker-v1.png`, coded pale red fill). On \"either direction\" a small swatch scale writes with an up arrow (\"deeper\") and a down arrow (\"paler\") either side of the pale red. On \"six identical tubes\" six painted iron tubes (`c3-iron-tube-start-v1.png`) slide into a row on the white tile, numbered 1 to 6 by coded tags. On \"reference\" tube 1 gets the teal \"1: reference, never changed\" tag and a lock icon. On \"one change\" tubes 2 to 6 each get an empty \"change: ___\" tag. On \"side by side\" a pen bracket joins tube 1 to each other tube in turn; a crossed chip \"compare from memory\" fades in.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "The variables card writes in the right zone, one row per cue: \"Independent (what you change): substance added, or temperature\"; \"Dependent (what you observe): colour compared with tube 1\"; \"Controlled (kept the same): volume of stock, tube size, white tile and lighting, time before judging\".",
+      "teachingReason": "Teaches: the variables.",
+      "narrationCue": "independent variable / dependent variable / controlled variables",
+      "motionPurpose": "On the spoken cues: As each controlled item is spoken, a small pen link points from it to the matching thing in the tube row (equal liquid levels, identical tubes, the tile, a small clock).",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone, one row per cue: \"Independent (what you change): substance added, or temperature\"; \"Dependent (what you observe): colour compared with tube 1\"; \"Controlled (kept the same): volume of stock, tube size, white tile and lighting, time before judging\". As each controlled item is spoken, a small pen link points from it to the matching thing in the tube row (equal liquid levels, identical tubes, the tile, a small clock).",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "expected-results",
+      "visualDecision": "adjust",
+      "visualReference": "The equation chip \"Fe3+(aq) + SCN-(aq) ⇌ FeSCN2+(aq)\" (C3 style) top-centre.",
+      "teachingReason": "Explains why the results go the way they do: the C3 cause in a clause (adding a reactant shifts right; removing one shifts left; heating favours the reaction that takes in heat).",
+      "narrationCue": "deepens / fades",
+      "motionPurpose": "On the spoken cues: On \"tube two\" a coded crystal drop falls into tube 2 (tag \"Fe(NO3)3 crystals\"); on \"tube three\" into tube 3 (tag \"KSCN crystals\"); on \"deepens\" both crossfade to `c3-iron-tube-deep-v1.png` and a blue \"shift right\" arrow slides on the chip (C3 shift arrow).",
+      "motionRole": "explain",
+      "onScreenChange": "the equation chip \"Fe3+(aq) + SCN-(aq) ⇌ FeSCN2+(aq)\" (C3 style) top-centre. On \"tube two\" a coded crystal drop falls into tube 2 (tag \"Fe(NO3)3 crystals\"); on \"tube three\" into tube 3 (tag \"KSCN crystals\"); on \"deepens\" both crossfade to `c3-iron-tube-deep-v1.png` and a blue \"shift right\" arrow slides on the chip (C3 shift arrow). On \"tube four\" the clear dropper with a coded drop over tube 4 (tag \"0.1 mol/L NaOH\"); on \"rust-brown solid\" tube 4 crossfades to `p01-iron-tube-faded-ppt-v1.png` (Codex item 6) and an amber \"shift left\" arrow slides on the chip, with the tag \"Fe3+ removed as Fe(OH)3(s)\". The expected results table writes in the right zone, rows 2, 3 and 4: \"added / colour vs tube 1 / shift / reason (C3)\". A small grey tag under row 2: \"added iron also adds a little yellow-brown tint\".",
+      "motionTools": [
+        "HandText write-on",
+        "plate crossfade",
+        "chip pop",
+        "plate slide",
+        "table build",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "dilution-control",
+      "visualDecision": "adjust",
+      "visualReference": "On \"also added water\" the liquid level in tube 4 rises a hair with a pen tag \"more volume\".",
+      "teachingReason": "Explains why the dilution control: adding a solution adds volume, which alone makes a tube paler; and why solids in tubes 2 and 3: volume hardly changes.",
+      "narrationCue": "more dilute / dilution control",
+      "motionPurpose": "On the spoken cues: A chip \"paler, so shift left\" fades in with a \"?\" (not yet crossed). On \"dilution control\" the wash bottle (`m6-wash-bottle-v1.png`) and the clear dropper add the same count of coded drops to tube 5 (a counter \"10 drops\" under tube 4 and \"10 drops\" under tube 5, pen-linked as equal);",
+      "motionRole": "explain",
+      "onScreenChange": "on \"also added water\" the liquid level in tube 4 rises a hair with a pen tag \"more volume\". A chip \"paler, so shift left\" fades in with a \"?\" (not yet crossed). On \"dilution control\" the wash bottle (`m6-wash-bottle-v1.png`) and the clear dropper add the same count of coded drops to tube 5 (a counter \"10 drops\" under tube 4 and \"10 drops\" under tube 5, pen-linked as equal); on \"tiny bit paler\" tube 5 crossfades to `p01-iron-tube-diluted-v1.png` (Codex item 7). On \"clearly paler\" a comparison bar writes: three swatches, tube 1, tube 5, tube 4, with the small step from 1 to 5 labelled \"dilution\" and the big step from 5 to 4 labelled \"shift\"; the \"?\" chip turns into a teal tick \"shift confirmed by the control\". On \"solids\" tubes 2 and 3 pulse with the tag \"solid added: volume hardly changes\". Row 5 of the results table writes: \"same drops of water / very slightly paler / none / dilution only\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "plate crossfade",
+        "chip pop",
+        "table build",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "temperature",
+      "visualDecision": "adjust",
+      "visualReference": "The cobalt tube in its beaker bath (`c3-cobalt-tube-purple-v1.png`) with the painted stopper composited on (`m5x-stopper-v1.png`, Codex item 8) and a teal boundary outline (closed).",
+      "teachingReason": "Explains why the results go the way they do: the C3 cause in a clause (adding a reactant shifts right; removing one shifts left; heating favours the reaction that takes in heat).",
+      "narrationCue": "blue / pink / purple",
+      "motionPurpose": "On the spoken cues: Equation chip small: \"[Co(H2O)6]2+ (pink) + 4Cl- ⇌ [CoCl4]2- (blue) + 6H2O\", forward arrow tagged \"takes in heat\" (C3 icon). On \"hot water bath\" the thermometer (`c8-thermometer-hot-v1.png`) reads \"about 60 C\" and the bath water gets a coded warm tint; on \"blue\" the tube crossfades to `c3-cobalt-tube-blue-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the cobalt tube in its beaker bath (`c3-cobalt-tube-purple-v1.png`) with the painted stopper composited on (`m5x-stopper-v1.png`, Codex item 8) and a teal boundary outline (closed). Equation chip small: \"[Co(H2O)6]2+ (pink) + 4Cl- ⇌ [CoCl4]2- (blue) + 6H2O\", forward arrow tagged \"takes in heat\" (C3 icon). On \"hot water bath\" the thermometer (`c8-thermometer-hot-v1.png`) reads \"about 60 C\" and the bath water gets a coded warm tint; on \"blue\" the tube crossfades to `c3-cobalt-tube-blue-v1.png`. On \"ice bath\" coded ice cubes (`c9-ice-cube-v1.png`, small) float in the bath, the thermometer drops, and on \"pink\" the tube crossfades to `c3-cobalt-tube-pink-v1.png`. On \"purple\" it returns to the purple plate with the \"push it, bring it back\" loop lighting small beside it. After \"purple\" (unspoken, Revision 2 reserve cut) the two C9 tubes (`c9-no2-tube-brown-v1.png` hot, `c9-no2-tube-pale-v1.png` ice) stand side by side with tags \"hot: browner\", \"ice: paler\". Results table rows: \"cobalt: hot blue, ice pink, room purple again\"; \"NO2 (sealed): hot browner, ice paler\". Margin tag, unspoken: \"volume/pressure: sealed NO2 syringe, usually a teacher demonstration (see the squeezing video)\". A second unspoken margin tag: \"keep the cobalt solution (contains acid) well away from thiocyanate\".",
+      "motionTools": [
+        "ScribbleCircle",
+        "plate crossfade",
+        "chip pop",
+        "table build",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "adjust",
+      "visualReference": "Three cards write in turn in the right zone, each with its plain question and this investigation's answer.",
+      "teachingReason": "Explains why validity differs from reliability: repeats cannot fix a missing control.",
+      "narrationCue": "Validity / Reliability / Accuracy",
+      "motionPurpose": "On the spoken cues: \"Validity: does it test what it claims? Only one change per tube; reference; dilution control.\" (pen links to tubes 1, 5). \"Reliability: same result on repeats? Repeat each tube; compare groups; two observers.\" (three small coded tube rows appear, matching). \"Accuracy: close to the true value? Eye judgement is rough;",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this investigation's answer. \"Validity: does it test what it claims? Only one change per tube; reference; dilution control.\" (pen links to tubes 1, 5). \"Reliability: same result on repeats? Repeat each tube; compare groups; two observers.\" (three small coded tube rows appear, matching). \"Accuracy: close to the true value? Eye judgement is rough; a colourimeter gives a number.\" (the painted colourimeter, `m5x-colourimeter-v1.png`, small, with a pen \"later\" tag). A crossed chip under the reliability card: \"repeating fixes a missing control\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "The risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its painted plate small in the hazard cell: cobalt chloride (pink crystals plate): \"harmful if swallowed; may cause cancer if dust inhaled;",
+      "teachingReason": "Teaches: the risk assessment.",
+      "narrationCue": "acid / eyes",
+      "motionPurpose": "On the spoken cues: Gloves (`m5x-gloves-v1.png`) and glasses plates sit at the table head under \"always\". Unspoken row: \"concentrated hydrochloric acid in the cobalt solution: corrosive / teacher-prepared, stoppered\". Footer chip: \"follow your school's risk assessment and your teacher's method\".",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its painted plate small in the hazard cell: cobalt chloride (pink crystals plate): \"harmful if swallowed; may cause cancer if dust inhaled; skin and breathing allergies\" / \"small amounts, no dust, gloves, teacher demo in many schools\"; thiocyanate (KSCN bottle): \"acid releases a very toxic gas\" / \"never mix with acid; keep the cobalt solution apart\"; sodium hydroxide (dropper): \"eye damage\" / \"safety glasses (`m5x-safety-glasses-v1.png`)\"; hot bath (beaker, thermometer): \"scalds\" / \"test tube holder (`m5x-test-tube-holder-v1.png`), water bath, no naked flame near the tubes\"; burning magnesium (ribbon): \"intense light, fire\" / \"never look at the flame, heatproof mat, teacher demo, never water on a magnesium fire\"; waste (`m5x-waste-bottle-v1.png`): \"cobalt is toxic to water life\" / \"labelled residues container, never the sink\". Gloves (`m5x-gloves-v1.png`) and glasses plates sit at the table head under \"always\". Unspoken row: \"concentrated hydrochloric acid in the cobalt solution: corrosive / teacher-prepared, stoppered\". Footer chip: \"follow your school's risk assessment and your teacher's method\".",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 3 seconds (reading hold; the table returns in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "Aid 1 writes large and handwritten with the loop arrows: \"Push it, then bring it back.\" Aid 2 writes beneath with two small icons, a rain cloud over the pink crystals plate and a sun over the blue plate: \"Pink in the rain, blue in the desert.\" A crossed chip \"blue when wet\" (the site's common error)",
+      "teachingReason": "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+      "narrationCue": "Push it, then bring it back / pink in the rain, blue in the desert",
+      "motionPurpose": "On the spoken cues: Condition tag: \"a return is the evidence; one change is not\".",
+      "motionRole": "explain",
+      "onScreenChange": "aid 1 writes large and handwritten with the loop arrows: \"Push it, then bring it back.\" Aid 2 writes beneath with two small icons, a rain cloud over the pink crystals plate and a sun over the blue plate: \"Pink in the rain, blue in the desert.\" A crossed chip \"blue when wet\" (the site's common error). Condition tag: \"a return is the evidence; one change is not\".",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "The board clears to two tubes on the white tile: tube 1 (reference, start plate) and the silver nitrate tube (`p01-iron-tube-diluted-v1.png` with a coded faint white cloud at the bottom, tag \"+ 10 drops silver nitrate solution\").",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"What extra tube would make this conclusion valid, and why?\"",
+      "narrationCue": "Your turn. A student adds ten drops of silver nitrate solution to an iron thiocyanate",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears to two tubes on the white tile: tube 1 (reference, start plate) and the silver nitrate tube (`p01-iron-tube-diluted-v1.png`)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. Givens card: \"10 drops of silver nitrate solution added\", \"paler than the reference\", \"conclusion: shifted left\". Demand: \"What extra tube would make this conclusion valid, and why?\" Countdown ring for 10 seconds with \"Pause here to answer.\" on screen.",
+      "motionTools": [
+        "ScribbleCircle",
+        "drop fall",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "A third tube slides in (`p01-iron-tube-diluted-v1.png`, tag \"+ 10 drops water\") with the drop counters pen-linked as equal; answer chip \"dilution control: same 10 drops of water\" pins.",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for 1 (owner rule, 16 October).",
+      "narrationCue": "ten drops of water / dilution control / reliable",
+      "motionPurpose": "On the spoken cues: The three-swatch comparison bar from scene 8 returns with \"dilution\" and \"shift\" steps. On \"repeating\" a chip \"repeat it three times\" fades in and is crossed (caption \"reliability, not validity\").",
+      "motionRole": "explain",
+      "onScreenChange": "a third tube slides in (`p01-iron-tube-diluted-v1.png`, tag \"+ 10 drops water\") with the drop counters pen-linked as equal; answer chip \"dilution control: same 10 drops of water\" pins. The three-swatch comparison bar from scene 8 returns with \"dilution\" and \"shift\" steps. On \"repeating\" a chip \"repeat it three times\" fades in and is crossed (caption \"reliability, not validity\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "plate slide",
+        "drop fall",
+        "bar draw"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "The clamped tube of blue crystals (`p01-cocl2-crystals-blue-v1.png`) with the open dashed boundary; givens card: \"pink crystals heated in an open tube\", \"turned blue\", and the student's line in a quote box: \"This shows the reaction is reversible.\" Demand: \"Evaluate his conclusion.\" Countdown ring fo",
+      "teachingReason": "Unseen transfer task with every condition on screen: \"Evaluate his conclusion.\"",
+      "narrationCue": "One more. A student heats pink cobalt chloride crystals in an open test tube, and they",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The clamped tube of blue crystals (`p01-cocl2-crystals-blue-v1.png`) with the open dashed boundary;)",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. ",
+      "motionTools": [
+        "ScribbleCircle",
+        "drop fall",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\""
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "The loop arrows return: the \"change\" arrow lit, the \"reverse\" arrow dashed with \"missing\"; on \"pink\" the dropper adds a drop and the plate crossfades to pink, the return arrow lights with a teal tick.",
+      "teachingReason": "Brief feedback: the answer, the key reason and one crossed classic mistake for 2 (owner rule, 16 October).",
+      "narrationCue": "one direction / pink",
+      "motionPurpose": "On the spoken cues: Answer chip \"one direction only: reverse it (add water, pink returns)\". On \"open\" the steam wisp crosses the dashed boundary with the tag \"open: not an equilibrium\". On \"colour changed\" a chip \"correct, the colour changed\" fades in and is crossed (caption \"one change is not a return\").",
+      "motionRole": "explain",
+      "onScreenChange": "the loop arrows return: the \"change\" arrow lit, the \"reverse\" arrow dashed with \"missing\"; on \"pink\" the dropper adds a drop and the plate crossfades to pink, the return arrow lights with a teal tick. Answer chip \"one direction only: reverse it (add water, pink returns)\". On \"open\" the steam wisp crosses the dashed boundary with the tag \"open: not an equilibrium\". On \"colour changed\" a chip \"correct, the colour changed\" fades in and is crossed (caption \"one change is not a return\").",
+      "motionTools": [
+        "Mark cross",
+        "tick",
+        "plate crossfade",
+        "chip pop",
+        "drop fall"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "The plan card writes, each line lighting on its words: \"Push it, bring it back.\" \"Closed system.\" \"Reference tube, never changed.\" \"One change per tube.\" \"Dilution control: same volume of water.\" \"Judge side by side on a white tile.\" \"Risk assessment first.\" The six-tube row returns small along the",
+      "teachingReason": "Packs the method into reusable lines and hands off to the next video.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: On \"Next\" a chip \"Next: a number for where an equilibrium sits\" appears with the painted iron tube small.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"Push it, bring it back.\" \"Closed system.\" \"Reference tube, never changed.\" \"One change per tube.\" \"Dilution control: same volume of water.\" \"Judge side by side on a white tile.\" \"Risk assessment first.\" The six-tube row returns small along the bottom with the matching tubes pulsing. On \"Next\" a chip \"Next: a number for where an equilibrium sits\" appears with the painted iron tube small.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aids appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/p01-learning-review.md",
+      "sha256": "f8de46d9f41694a80a41970aeb9f6542fa94668a723bda44b4a0f148d9c4e700"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/p01-claude-science-check.md",
+      "sha256": "3b220a2c89be34adfda66fac4ddcce6b1c803b7c003fb2e0d3537ea683d59a9e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

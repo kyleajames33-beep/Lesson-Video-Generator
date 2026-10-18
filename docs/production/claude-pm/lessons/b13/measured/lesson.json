@@ -1,0 +1,7330 @@
+{
+  "title": "What Big Population Genetics Data Can Show",
+  "subtitle": "What can data pooled from huge numbers of people (or animals) show that one family or one hospital can't, and how far can we trust what it shows?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 22,
+  "lessonIntent": "saying what a large-scale collaborative project is (many researchers and sites pooling data); explaining why a large sample detects a small effect that chance hides in a small one, giving stronger inference but not certainty; describing how pooled frequency data revealed the sickle allele as unexpectedly common; naming the three evidence streams (pedigree, DNA, frequency) and why their agreement matters; explaining heterozygote advantage with malaria; giving two reasons a matching pattern is not proof (coincidence; founders and chance in a small group); explaining how diversity data guide conservation and why diversity does not guarantee survival; explaining how shared variants indicate more recent common ancestry and what the 1000 Genomes pattern suggests; saying the reference genome is a composite, not everyone's genome; stating what large data improve and what they do not remove; applying this to unseen frequency and diversity data.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 1013,
+      "voiceover": {
+        "text": "UK Biobank is a shared research project that began recruiting in 2006. Half a million volunteers in Britain, aged 40 to 69, gave blood samples and agreed to link their health records. Each sample was tested at around 850,000 places in the DNA, and approved researchers around the world can analyse the data. So what can data from half a million people show that one family, or one hospital, never could? And how far can we trust it?",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/hook.ee217b830ea7.mp3",
+        "startFrame": 0,
+        "endFrame": 953
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "UK",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " Biobank",
+          "startMs": 480,
+          "endMs": 1120,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1360,
+          "endMs": 1440,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " shared",
+          "startMs": 1520,
+          "endMs": 1760,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " research",
+          "startMs": 1840,
+          "endMs": 2240,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " project",
+          "startMs": 2320,
+          "endMs": 2800,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " began",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " recruiting",
+          "startMs": 3440,
+          "endMs": 3920,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4000,
+          "endMs": 4080,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " 2006.",
+          "startMs": 4160,
+          "endMs": 5600,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " Half",
+          "startMs": 5920,
+          "endMs": 6160,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " million",
+          "startMs": 6400,
+          "endMs": 6720,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " volunteers",
+          "startMs": 6800,
+          "endMs": 7360,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 7400,
+          "endMs": 7440,
+          "timestampMs": 7420,
+          "confidence": null
+        },
+        {
+          "text": " Britain,",
+          "startMs": 7520,
+          "endMs": 8080,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " aged",
+          "startMs": 8240,
+          "endMs": 8400,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " 40",
+          "startMs": 8480,
+          "endMs": 8760,
+          "timestampMs": 8620,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " 69,",
+          "startMs": 9080,
+          "endMs": 10000,
+          "timestampMs": 9540,
+          "confidence": null
+        },
+        {
+          "text": " gave",
+          "startMs": 10040,
+          "endMs": 10240,
+          "timestampMs": 10140,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 10360,
+          "endMs": 10480,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " samples",
+          "startMs": 10560,
+          "endMs": 11040,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " agreed",
+          "startMs": 11280,
+          "endMs": 11600,
+          "timestampMs": 11440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " link",
+          "startMs": 11880,
+          "endMs": 12000,
+          "timestampMs": 11940,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " health",
+          "startMs": 12240,
+          "endMs": 12480,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " records.",
+          "startMs": 12560,
+          "endMs": 13360,
+          "timestampMs": 12960,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 14120,
+          "endMs": 14320,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 14440,
+          "endMs": 14560,
+          "timestampMs": 14500,
+          "confidence": null
+        },
+        {
+          "text": " tested",
+          "startMs": 14760,
+          "endMs": 14960,
+          "timestampMs": 14860,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " around",
+          "startMs": 15320,
+          "endMs": 15520,
+          "timestampMs": 15420,
+          "confidence": null
+        },
+        {
+          "text": " 850,000",
+          "startMs": 15600,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " places",
+          "startMs": 16320,
+          "endMs": 17840,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 17880,
+          "endMs": 17920,
+          "timestampMs": 17900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17960,
+          "endMs": 18000,
+          "timestampMs": 17980,
+          "confidence": null
+        },
+        {
+          "text": " DNA,",
+          "startMs": 18080,
+          "endMs": 18960,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " approved",
+          "startMs": 19320,
+          "endMs": 19520,
+          "timestampMs": 19420,
+          "confidence": null
+        },
+        {
+          "text": " researchers",
+          "startMs": 19760,
+          "endMs": 20160,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " around",
+          "startMs": 20320,
+          "endMs": 20480,
+          "timestampMs": 20400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20520,
+          "endMs": 20560,
+          "timestampMs": 20540,
+          "confidence": null
+        },
+        {
+          "text": " world",
+          "startMs": 20640,
+          "endMs": 20960,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 21040,
+          "endMs": 21200,
+          "timestampMs": 21120,
+          "confidence": null
+        },
+        {
+          "text": " analyse",
+          "startMs": 21280,
+          "endMs": 21760,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21800,
+          "endMs": 21840,
+          "timestampMs": 21820,
+          "confidence": null
+        },
+        {
+          "text": " data.",
+          "startMs": 21920,
+          "endMs": 22760,
+          "timestampMs": 22340,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 23600,
+          "endMs": 23760,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 23840,
+          "endMs": 24000,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 24160,
+          "endMs": 24320,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 24400,
+          "endMs": 24560,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 24720,
+          "endMs": 24960,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " million",
+          "startMs": 25200,
+          "endMs": 25520,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 25600,
+          "endMs": 26000,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 26160,
+          "endMs": 26320,
+          "timestampMs": 26240,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 26440,
+          "endMs": 26560,
+          "timestampMs": 26500,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 26640,
+          "endMs": 26800,
+          "timestampMs": 26720,
+          "confidence": null
+        },
+        {
+          "text": " family,",
+          "startMs": 26880,
+          "endMs": 27520,
+          "timestampMs": 27200,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 27600,
+          "endMs": 27680,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 27840,
+          "endMs": 27920,
+          "timestampMs": 27880,
+          "confidence": null
+        },
+        {
+          "text": " hospital,",
+          "startMs": 28000,
+          "endMs": 28720,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " never",
+          "startMs": 28800,
+          "endMs": 29040,
+          "timestampMs": 28920,
+          "confidence": null
+        },
+        {
+          "text": " could?",
+          "startMs": 29120,
+          "endMs": 30000,
+          "timestampMs": 29560,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 30080,
+          "endMs": 30160,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 30280,
+          "endMs": 30400,
+          "timestampMs": 30340,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 30480,
+          "endMs": 30640,
+          "timestampMs": 30560,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 30720,
+          "endMs": 30800,
+          "timestampMs": 30760,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 30880,
+          "endMs": 30960,
+          "timestampMs": 30920,
+          "confidence": null
+        },
+        {
+          "text": " trust",
+          "startMs": 31120,
+          "endMs": 31280,
+          "timestampMs": 31200,
+          "confidence": null
+        },
+        {
+          "text": " it?",
+          "startMs": 31360,
+          "endMs": 31760,
+          "timestampMs": 31560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "why-scale",
+      "type": "concept",
+      "durationInFrames": 1025,
+      "voiceover": {
+        "text": "A project like this is called a large-scale collaborative project: many researchers and sites pool their data. Scale matters because most variants only nudge risk a little. In a small study, chance alone can make one group look different, so a small real effect gets lost in the noise. With hundreds of thousands of people, a real difference stands out from chance. That gives stronger inference, meaning a conclusion drawn from evidence. Stronger, but never certain.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/why-scale.c45250d996cc.mp3",
+        "startFrame": 0,
+        "endFrame": 965
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " project",
+          "startMs": 160,
+          "endMs": 583,
+          "timestampMs": 371.5,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 640,
+          "endMs": 850,
+          "timestampMs": 745,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1280,
+          "endMs": 1400,
+          "timestampMs": 1340,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 1440,
+          "endMs": 1720,
+          "timestampMs": 1580,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " large-scale",
+          "startMs": 1920,
+          "endMs": 2800,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " collaborative",
+          "startMs": 2880,
+          "endMs": 3520,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " project:",
+          "startMs": 3600,
+          "endMs": 4560,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 4640,
+          "endMs": 4880,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " researchers",
+          "startMs": 5120,
+          "endMs": 5520,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " sites",
+          "startMs": 5760,
+          "endMs": 6160,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " pool",
+          "startMs": 6240,
+          "endMs": 6560,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " data.",
+          "startMs": 6800,
+          "endMs": 7280,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " Scale",
+          "startMs": 7920,
+          "endMs": 8320,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " matters",
+          "startMs": 8400,
+          "endMs": 8880,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 8960,
+          "endMs": 9280,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 9360,
+          "endMs": 9600,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " variants",
+          "startMs": 9680,
+          "endMs": 10160,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 10240,
+          "endMs": 10560,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " nudge",
+          "startMs": 10720,
+          "endMs": 11040,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " risk",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11440,
+          "endMs": 11520,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " little.",
+          "startMs": 11600,
+          "endMs": 12000,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 12480,
+          "endMs": 12560,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12600,
+          "endMs": 12640,
+          "timestampMs": 12620,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " study,",
+          "startMs": 13040,
+          "endMs": 13680,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 13760,
+          "endMs": 14080,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " alone",
+          "startMs": 14320,
+          "endMs": 14560,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 14840,
+          "endMs": 14960,
+          "timestampMs": 14900,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 15040,
+          "endMs": 15200,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 15280,
+          "endMs": 15440,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " different,",
+          "startMs": 15920,
+          "endMs": 16560,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 16680,
+          "endMs": 16800,
+          "timestampMs": 16740,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 17040,
+          "endMs": 17360,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " real",
+          "startMs": 17520,
+          "endMs": 17760,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " effect",
+          "startMs": 17840,
+          "endMs": 18240,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 18320,
+          "endMs": 18560,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " lost",
+          "startMs": 18640,
+          "endMs": 18880,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18920,
+          "endMs": 18960,
+          "timestampMs": 18940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19040,
+          "endMs": 19080,
+          "timestampMs": 19060,
+          "confidence": null
+        },
+        {
+          "text": " noise.",
+          "startMs": 19120,
+          "endMs": 19680,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " With",
+          "startMs": 20240,
+          "endMs": 20400,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " hundreds",
+          "startMs": 20480,
+          "endMs": 20880,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 20960,
+          "endMs": 21040,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " thousands",
+          "startMs": 21120,
+          "endMs": 21600,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21640,
+          "endMs": 21680,
+          "timestampMs": 21660,
+          "confidence": null
+        },
+        {
+          "text": " people,",
+          "startMs": 21760,
+          "endMs": 22400,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22480,
+          "endMs": 22560,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " real",
+          "startMs": 22640,
+          "endMs": 22880,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " difference",
+          "startMs": 22960,
+          "endMs": 23360,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " stands",
+          "startMs": 23440,
+          "endMs": 23840,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 23960,
+          "endMs": 24080,
+          "timestampMs": 24020,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 24160,
+          "endMs": 24240,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " chance.",
+          "startMs": 24320,
+          "endMs": 24880,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 25360,
+          "endMs": 25520,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 25600,
+          "endMs": 25840,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " stronger",
+          "startMs": 26040,
+          "endMs": 26320,
+          "timestampMs": 26180,
+          "confidence": null
+        },
+        {
+          "text": " inference,",
+          "startMs": 26400,
+          "endMs": 27280,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " meaning",
+          "startMs": 27440,
+          "endMs": 27600,
+          "timestampMs": 27520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27680,
+          "endMs": 27760,
+          "timestampMs": 27720,
+          "confidence": null
+        },
+        {
+          "text": " conclusion",
+          "startMs": 27840,
+          "endMs": 28400,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " drawn",
+          "startMs": 28480,
+          "endMs": 28800,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 28880,
+          "endMs": 28960,
+          "timestampMs": 28920,
+          "confidence": null
+        },
+        {
+          "text": " evidence.",
+          "startMs": 29040,
+          "endMs": 29600,
+          "timestampMs": 29320,
+          "confidence": null
+        },
+        {
+          "text": " Stronger,",
+          "startMs": 30080,
+          "endMs": 30720,
+          "timestampMs": 30400,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 30880,
+          "endMs": 31040,
+          "timestampMs": 30960,
+          "confidence": null
+        },
+        {
+          "text": " never",
+          "startMs": 31200,
+          "endMs": 31440,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " certain.",
+          "startMs": 31520,
+          "endMs": 32159.999999999996,
+          "timestampMs": 31840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "sickle-puzzle",
+      "type": "concept",
+      "durationInFrames": 1035,
+      "voiceover": {
+        "text": "Pooling data isn't new. Here's the classic case. The sickle cell allele causes sickle cell anaemia when someone inherits two copies. A harmful allele like that should become rare, because natural selection removes it. But when frequency data from many countries were combined into one map, the allele turned out to be common across large parts of Africa, and also found around the Mediterranean, the Middle East and India. A pattern that a simple model can't explain is exactly what makes scientists dig deeper.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/sickle-puzzle.e9c9cfe3e7ab.mp3",
+        "startFrame": 0,
+        "endFrame": 975
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Pooling",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 400,
+          "endMs": 800,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " new.",
+          "startMs": 1280,
+          "endMs": 1680,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " Here's",
+          "startMs": 2080,
+          "endMs": 2320,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2360,
+          "endMs": 2400,
+          "timestampMs": 2380,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 2480,
+          "endMs": 2800,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " case.",
+          "startMs": 2880,
+          "endMs": 3360,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " sickle",
+          "startMs": 4000,
+          "endMs": 4320,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 4720,
+          "endMs": 5120,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " causes",
+          "startMs": 5200,
+          "endMs": 5600,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " sickle",
+          "startMs": 5680,
+          "endMs": 5920,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 6000,
+          "endMs": 6160,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " anaemia",
+          "startMs": 6240,
+          "endMs": 6720,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " someone",
+          "startMs": 7120,
+          "endMs": 7360,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " inherits",
+          "startMs": 7600,
+          "endMs": 7840,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 7920,
+          "endMs": 8080,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " copies.",
+          "startMs": 8240,
+          "endMs": 8800,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " harmful",
+          "startMs": 9520,
+          "endMs": 9840,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 9920,
+          "endMs": 10240,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 10360,
+          "endMs": 10480,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 10560,
+          "endMs": 10800,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " should",
+          "startMs": 10880,
+          "endMs": 11120,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " become",
+          "startMs": 11200,
+          "endMs": 11520,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " rare,",
+          "startMs": 11600,
+          "endMs": 12160,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 12240,
+          "endMs": 12480,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " natural",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " selection",
+          "startMs": 12880,
+          "endMs": 13360,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " removes",
+          "startMs": 13480,
+          "endMs": 13840,
+          "timestampMs": 13660,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 13920,
+          "endMs": 14080,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 14880,
+          "endMs": 14960,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " frequency",
+          "startMs": 15120,
+          "endMs": 15600,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 15680,
+          "endMs": 15920,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 16000,
+          "endMs": 16160,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 16239.999999999998,
+          "endMs": 16480,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " countries",
+          "startMs": 16560,
+          "endMs": 16960,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 17040,
+          "endMs": 17120,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " combined",
+          "startMs": 17360,
+          "endMs": 17600,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 17720,
+          "endMs": 17840,
+          "timestampMs": 17780,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17920,
+          "endMs": 18160,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " map,",
+          "startMs": 18240,
+          "endMs": 18960,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19000,
+          "endMs": 19040,
+          "timestampMs": 19020,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 19120,
+          "endMs": 19440,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " turned",
+          "startMs": 19520,
+          "endMs": 19680,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 19760,
+          "endMs": 19840,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19920,
+          "endMs": 19960,
+          "timestampMs": 19940,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 20000,
+          "endMs": 20160,
+          "timestampMs": 20080,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 20360,
+          "endMs": 20560,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 20640,
+          "endMs": 20880,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " large",
+          "startMs": 21040,
+          "endMs": 21360,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " parts",
+          "startMs": 21440,
+          "endMs": 21680,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21720,
+          "endMs": 21760,
+          "timestampMs": 21740,
+          "confidence": null
+        },
+        {
+          "text": " Africa,",
+          "startMs": 21840,
+          "endMs": 22640,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22680,
+          "endMs": 22720,
+          "timestampMs": 22700,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 22800,
+          "endMs": 23040,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " found",
+          "startMs": 23120,
+          "endMs": 23440,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " around",
+          "startMs": 23560,
+          "endMs": 23680,
+          "timestampMs": 23620,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23720,
+          "endMs": 23760,
+          "timestampMs": 23740,
+          "confidence": null
+        },
+        {
+          "text": " Mediterranean,",
+          "startMs": 23800,
+          "endMs": 24800,
+          "timestampMs": 24300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24840,
+          "endMs": 24880,
+          "timestampMs": 24860,
+          "confidence": null
+        },
+        {
+          "text": " Middle",
+          "startMs": 25000,
+          "endMs": 25120,
+          "timestampMs": 25060,
+          "confidence": null
+        },
+        {
+          "text": " East",
+          "startMs": 25200,
+          "endMs": 25440,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25600,
+          "endMs": 25680,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " India.",
+          "startMs": 25760,
+          "endMs": 26240,
+          "timestampMs": 26000,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 26960,
+          "endMs": 27040,
+          "timestampMs": 27000,
+          "confidence": null
+        },
+        {
+          "text": " pattern",
+          "startMs": 27200,
+          "endMs": 27360,
+          "timestampMs": 27280,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27560,
+          "endMs": 27600,
+          "timestampMs": 27580,
+          "confidence": null
+        },
+        {
+          "text": " simple",
+          "startMs": 27760,
+          "endMs": 28080,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " model",
+          "startMs": 28160,
+          "endMs": 28400,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 28560,
+          "endMs": 28800,
+          "timestampMs": 28680,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 28880,
+          "endMs": 29440,
+          "timestampMs": 29160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 29760,
+          "endMs": 29840,
+          "timestampMs": 29800,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 29920,
+          "endMs": 30480,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 30560,
+          "endMs": 30720,
+          "timestampMs": 30640,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 30840,
+          "endMs": 30960,
+          "timestampMs": 30900,
+          "confidence": null
+        },
+        {
+          "text": " scientists",
+          "startMs": 31120,
+          "endMs": 31520,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " dig",
+          "startMs": 31680,
+          "endMs": 31840,
+          "timestampMs": 31760,
+          "confidence": null
+        },
+        {
+          "text": " deeper.",
+          "startMs": 31920,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "three-streams",
+      "type": "concept",
+      "durationInFrames": 848,
+      "voiceover": {
+        "text": "Studies like this combine three kinds of evidence. Family trees show how it's inherited: unaffected parents can have an affected child, so it's recessive, and carriers are healthy. DNA data show what changed: one base in the haemoglobin gene. And frequency data show where it's common. No single kind answers the whole question. The conclusion comes from all three agreeing.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/three-streams.d5c25f6b4962.mp3",
+        "startFrame": 0,
+        "endFrame": 788
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Studies",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 720,
+          "endMs": 960,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " combine",
+          "startMs": 1040,
+          "endMs": 1440,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " kinds",
+          "startMs": 1920,
+          "endMs": 2240,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 2280,
+          "endMs": 2320,
+          "timestampMs": 2300,
+          "confidence": null
+        },
+        {
+          "text": " evidence.",
+          "startMs": 2400,
+          "endMs": 2960,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " Family",
+          "startMs": 3440,
+          "endMs": 3760,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " trees",
+          "startMs": 3840,
+          "endMs": 4320,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 4720,
+          "endMs": 4880,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 4960,
+          "endMs": 5080,
+          "timestampMs": 5020,
+          "confidence": null
+        },
+        {
+          "text": " inherited:",
+          "startMs": 5120,
+          "endMs": 6240,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " unaffected",
+          "startMs": 6320,
+          "endMs": 6800,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " child,",
+          "startMs": 8400,
+          "endMs": 9120,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 9240,
+          "endMs": 9360,
+          "timestampMs": 9300,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 9440,
+          "endMs": 9600,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " recessive,",
+          "startMs": 9680,
+          "endMs": 10560,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10640,
+          "endMs": 10720,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " carriers",
+          "startMs": 10800,
+          "endMs": 11280,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " healthy.",
+          "startMs": 11520,
+          "endMs": 12000,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 12640,
+          "endMs": 13040,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 13120,
+          "endMs": 13440,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 13600,
+          "endMs": 13760,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 13920,
+          "endMs": 14160,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " changed:",
+          "startMs": 14240,
+          "endMs": 15120,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 15200,
+          "endMs": 15440,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " base",
+          "startMs": 15520,
+          "endMs": 15840,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15920,
+          "endMs": 16000,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16040,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16060,
+          "confidence": null
+        },
+        {
+          "text": " haemoglobin",
+          "startMs": 16120.000000000002,
+          "endMs": 16720,
+          "timestampMs": 16420,
+          "confidence": null
+        },
+        {
+          "text": " gene.",
+          "startMs": 16800,
+          "endMs": 17120,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " frequency",
+          "startMs": 17760,
+          "endMs": 18240,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 18320,
+          "endMs": 18640,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 18800,
+          "endMs": 18960,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 19120,
+          "endMs": 19280,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 19360,
+          "endMs": 19520,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " common.",
+          "startMs": 19600,
+          "endMs": 20000,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " No",
+          "startMs": 20480,
+          "endMs": 20640,
+          "timestampMs": 20560,
+          "confidence": null
+        },
+        {
+          "text": " single",
+          "startMs": 20800,
+          "endMs": 21040,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " kind",
+          "startMs": 21200,
+          "endMs": 21520,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " answers",
+          "startMs": 21600,
+          "endMs": 21920,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " question.",
+          "startMs": 22480,
+          "endMs": 23040,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 23360,
+          "endMs": 23440,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " conclusion",
+          "startMs": 23520,
+          "endMs": 24080,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 24160,
+          "endMs": 24400,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 24480,
+          "endMs": 24640,
+          "timestampMs": 24560,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 25120,
+          "endMs": 25440,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " agreeing.",
+          "startMs": 25520,
+          "endMs": 26240,
+          "timestampMs": 25880,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "malaria-overlay",
+      "type": "concept",
+      "durationInFrames": 1073,
+      "voiceover": {
+        "text": "So why is it common in those places? Lay a map of malaria over the allele map, and across Africa, they line up closely. Malaria is caused by a parasite that a mosquito passes on, and it grows inside red blood cells. In carriers, infected cells tend to sickle and get cleared, so carriers don't get the anaemia, and they're much less likely to die of severe malaria. So where malaria is common, carriers survive and have children more often, and the allele stays common. This is called heterozygote advantage.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/malaria-overlay.55efd75e9bbf.mp3",
+        "startFrame": 0,
+        "endFrame": 1013
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 480,
+          "endMs": 720,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 760,
+          "endMs": 800,
+          "timestampMs": 780,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 880,
+          "endMs": 1040,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 1600,
+          "endMs": 1680,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " places?",
+          "startMs": 1760,
+          "endMs": 2640,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " Lay",
+          "startMs": 2960,
+          "endMs": 3120,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3160,
+          "endMs": 3200,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " map",
+          "startMs": 3280,
+          "endMs": 3440,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 3480,
+          "endMs": 3520,
+          "timestampMs": 3500,
+          "confidence": null
+        },
+        {
+          "text": " malaria",
+          "startMs": 3600,
+          "endMs": 4240,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4600,
+          "endMs": 4640,
+          "timestampMs": 4620,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 4720,
+          "endMs": 5040,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " map,",
+          "startMs": 5120,
+          "endMs": 5600,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5640,
+          "endMs": 5680,
+          "timestampMs": 5660,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 5760,
+          "endMs": 6080,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " Africa,",
+          "startMs": 6160,
+          "endMs": 6880,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 6960,
+          "endMs": 7040,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 7120,
+          "endMs": 7280,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " closely.",
+          "startMs": 7520,
+          "endMs": 8360,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " Malaria",
+          "startMs": 8640,
+          "endMs": 9120,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " caused",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 9720,
+          "endMs": 9760,
+          "timestampMs": 9740,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " parasite",
+          "startMs": 10000,
+          "endMs": 10640,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 10680,
+          "endMs": 10720,
+          "timestampMs": 10700,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10800,
+          "endMs": 10840,
+          "timestampMs": 10820,
+          "confidence": null
+        },
+        {
+          "text": " mosquito",
+          "startMs": 10880,
+          "endMs": 11360,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " passes",
+          "startMs": 11440,
+          "endMs": 11840,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " on,",
+          "startMs": 11960,
+          "endMs": 12400,
+          "timestampMs": 12180,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12440,
+          "endMs": 12480,
+          "timestampMs": 12460,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " grows",
+          "startMs": 12720,
+          "endMs": 13120,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 13200,
+          "endMs": 13600,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " red",
+          "startMs": 13720,
+          "endMs": 13840,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 13920,
+          "endMs": 14080,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " cells.",
+          "startMs": 14160,
+          "endMs": 14800,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " carriers,",
+          "startMs": 15200,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " infected",
+          "startMs": 16200,
+          "endMs": 16640,
+          "timestampMs": 16420,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 16720,
+          "endMs": 17040,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " tend",
+          "startMs": 17080,
+          "endMs": 17200,
+          "timestampMs": 17140,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " sickle",
+          "startMs": 17520,
+          "endMs": 17840,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 18080,
+          "endMs": 18160,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " cleared,",
+          "startMs": 18320,
+          "endMs": 19040,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " carriers",
+          "startMs": 19280,
+          "endMs": 19760,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 19840,
+          "endMs": 20000,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 20080,
+          "endMs": 20160,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20240,
+          "endMs": 20280,
+          "timestampMs": 20260,
+          "confidence": null
+        },
+        {
+          "text": " anaemia,",
+          "startMs": 20320,
+          "endMs": 21120,
+          "timestampMs": 20720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21160,
+          "endMs": 21200,
+          "timestampMs": 21180,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 21280,
+          "endMs": 21520,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 21640,
+          "endMs": 21760,
+          "timestampMs": 21700,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 21840,
+          "endMs": 22000,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " likely",
+          "startMs": 22160,
+          "endMs": 22320,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22400,
+          "endMs": 22480,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " die",
+          "startMs": 22560,
+          "endMs": 22720,
+          "timestampMs": 22640,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22800,
+          "endMs": 22880,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " severe",
+          "startMs": 22960,
+          "endMs": 23200,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " malaria.",
+          "startMs": 23280,
+          "endMs": 23840,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 24480,
+          "endMs": 24640,
+          "timestampMs": 24560,
+          "confidence": null
+        },
+        {
+          "text": " malaria",
+          "startMs": 24680,
+          "endMs": 25120,
+          "timestampMs": 24900,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 25200,
+          "endMs": 25360,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " common,",
+          "startMs": 25440,
+          "endMs": 26160,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " carriers",
+          "startMs": 26280,
+          "endMs": 26720,
+          "timestampMs": 26500,
+          "confidence": null
+        },
+        {
+          "text": " survive",
+          "startMs": 26800,
+          "endMs": 27360,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 27600,
+          "endMs": 27680,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " children",
+          "startMs": 27760,
+          "endMs": 28160,
+          "timestampMs": 27960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 28280,
+          "endMs": 28400,
+          "timestampMs": 28340,
+          "confidence": null
+        },
+        {
+          "text": " often,",
+          "startMs": 28600,
+          "endMs": 29040,
+          "timestampMs": 28820,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 29120,
+          "endMs": 29200,
+          "timestampMs": 29160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29240,
+          "endMs": 29280,
+          "timestampMs": 29260,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 29360,
+          "endMs": 29760,
+          "timestampMs": 29560,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 29920,
+          "endMs": 30320,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " common.",
+          "startMs": 30400,
+          "endMs": 30960,
+          "timestampMs": 30680,
+          "confidence": null
+        },
+        {
+          "text": " This",
+          "startMs": 31200,
+          "endMs": 31280,
+          "timestampMs": 31240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 31360,
+          "endMs": 31520,
+          "timestampMs": 31440,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 31680,
+          "endMs": 31840,
+          "timestampMs": 31760,
+          "confidence": null
+        },
+        {
+          "text": " heterozygote",
+          "startMs": 32000,
+          "endMs": 32800,
+          "timestampMs": 32400,
+          "confidence": null
+        },
+        {
+          "text": " advantage.",
+          "startMs": 32880,
+          "endMs": 33760,
+          "timestampMs": 33320,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "match-not-proof",
+      "type": "concept",
+      "durationInFrames": 840,
+      "voiceover": {
+        "text": "But two maps that line up aren't proof on their own. Two patterns can match by coincidence, just like any association. Scientists trust the malaria explanation because other studies showed directly that carriers really do resist severe malaria. And a high frequency can have another cause. In a small, isolated group, an allele can become common just by chance, because a few of the founders happened to carry it.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/match-not-proof.ff0e9b84261c.mp3",
+        "startFrame": 0,
+        "endFrame": 780
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "But",
+          "startMs": 0,
+          "endMs": 133,
+          "timestampMs": 66.5,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 160,
+          "endMs": 347,
+          "timestampMs": 253.5,
+          "confidence": null
+        },
+        {
+          "text": " maps",
+          "startMs": 400,
+          "endMs": 660,
+          "timestampMs": 530,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 720,
+          "endMs": 860,
+          "timestampMs": 790,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 1280,
+          "endMs": 1520,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " aren't",
+          "startMs": 1600,
+          "endMs": 1920,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " proof",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 2280,
+          "endMs": 2320,
+          "timestampMs": 2300,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 2400,
+          "endMs": 2560,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " own.",
+          "startMs": 2640,
+          "endMs": 3200,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " Two",
+          "startMs": 3440,
+          "endMs": 3520,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " patterns",
+          "startMs": 3600,
+          "endMs": 4000,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " match",
+          "startMs": 4240,
+          "endMs": 4480,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " coincidence,",
+          "startMs": 4760,
+          "endMs": 5680,
+          "timestampMs": 5220,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 5920,
+          "endMs": 6080,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 6200,
+          "endMs": 6320,
+          "timestampMs": 6260,
+          "confidence": null
+        },
+        {
+          "text": " association.",
+          "startMs": 6720,
+          "endMs": 7200,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " Scientists",
+          "startMs": 7760,
+          "endMs": 8320,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " trust",
+          "startMs": 8400,
+          "endMs": 8720,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8760,
+          "endMs": 8800,
+          "timestampMs": 8780,
+          "confidence": null
+        },
+        {
+          "text": " malaria",
+          "startMs": 8840,
+          "endMs": 9280,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " explanation",
+          "startMs": 9360,
+          "endMs": 10080,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 10160,
+          "endMs": 10560,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 10680,
+          "endMs": 10800,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " studies",
+          "startMs": 10880,
+          "endMs": 11280,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " showed",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " directly",
+          "startMs": 11840,
+          "endMs": 12320,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " carriers",
+          "startMs": 12760,
+          "endMs": 13280,
+          "timestampMs": 13020,
+          "confidence": null
+        },
+        {
+          "text": " really",
+          "startMs": 13480,
+          "endMs": 13680,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 13760,
+          "endMs": 13920,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " resist",
+          "startMs": 14000,
+          "endMs": 14320,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " severe",
+          "startMs": 14400,
+          "endMs": 14720,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " malaria.",
+          "startMs": 14760,
+          "endMs": 15520,
+          "timestampMs": 15140,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15920,
+          "endMs": 15960,
+          "timestampMs": 15940,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 16000,
+          "endMs": 16160,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " frequency",
+          "startMs": 16239.999999999998,
+          "endMs": 16880,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " another",
+          "startMs": 17560,
+          "endMs": 17760,
+          "timestampMs": 17660,
+          "confidence": null
+        },
+        {
+          "text": " cause.",
+          "startMs": 17840,
+          "endMs": 18520,
+          "timestampMs": 18180,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 18720,
+          "endMs": 18800,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18840,
+          "endMs": 18880,
+          "timestampMs": 18860,
+          "confidence": null
+        },
+        {
+          "text": " small,",
+          "startMs": 18960,
+          "endMs": 19440,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " isolated",
+          "startMs": 19520,
+          "endMs": 20080,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " group,",
+          "startMs": 20160,
+          "endMs": 20720,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 20760,
+          "endMs": 20800,
+          "timestampMs": 20780,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 20880,
+          "endMs": 21200,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 21280,
+          "endMs": 21360,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " become",
+          "startMs": 21440,
+          "endMs": 21680,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 21760,
+          "endMs": 22160,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 22320,
+          "endMs": 22480,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " chance,",
+          "startMs": 22720,
+          "endMs": 23520,
+          "timestampMs": 23120,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 23600,
+          "endMs": 23760,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23840,
+          "endMs": 23920,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 24000,
+          "endMs": 24080,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 24160,
+          "endMs": 24240,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24280,
+          "endMs": 24320,
+          "timestampMs": 24300,
+          "confidence": null
+        },
+        {
+          "text": " founders",
+          "startMs": 24400,
+          "endMs": 24800,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " happened",
+          "startMs": 24880,
+          "endMs": 25120,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 25200,
+          "endMs": 25280,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 25440,
+          "endMs": 25600,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 25680,
+          "endMs": 26000,
+          "timestampMs": 25840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "conservation",
+      "type": "concept",
+      "durationInFrames": 1143,
+      "voiceover": {
+        "text": "The same kind of data helps protect threatened species. Tasmanian devils are being killed by a contagious facial cancer. Genetic data from many devils showed they have very little genetic diversity, meaning few different alleles, after past population crashes and isolation. That matters, because with fewer alleles there's less chance that some animals carry one that helps against a new disease. So breeders use the data to pair devils that are less related, keeping as much diversity as possible. But diversity only improves the odds. It doesn't guarantee survival.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/conservation.bcfda742560a.mp3",
+        "startFrame": 0,
+        "endFrame": 1083
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 280,
+          "endMs": 400,
+          "timestampMs": 340,
+          "confidence": null
+        },
+        {
+          "text": " kind",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 720,
+          "endMs": 800,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " helps",
+          "startMs": 1280,
+          "endMs": 1520,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " protect",
+          "startMs": 1720,
+          "endMs": 1920,
+          "timestampMs": 1820,
+          "confidence": null
+        },
+        {
+          "text": " threatened",
+          "startMs": 2000,
+          "endMs": 2400,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " species.",
+          "startMs": 2480,
+          "endMs": 3400,
+          "timestampMs": 2940,
+          "confidence": null
+        },
+        {
+          "text": " Tasmanian",
+          "startMs": 3680,
+          "endMs": 4240,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " devils",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 4800,
+          "endMs": 4880,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " being",
+          "startMs": 5000,
+          "endMs": 5120,
+          "timestampMs": 5060,
+          "confidence": null
+        },
+        {
+          "text": " killed",
+          "startMs": 5200,
+          "endMs": 5520,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " contagious",
+          "startMs": 6000,
+          "endMs": 6480,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " facial",
+          "startMs": 6560,
+          "endMs": 6880,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " cancer.",
+          "startMs": 6960,
+          "endMs": 7920,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " Genetic",
+          "startMs": 8000,
+          "endMs": 8320,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 8400,
+          "endMs": 8640,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 8720,
+          "endMs": 8960,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 9080,
+          "endMs": 9200,
+          "timestampMs": 9140,
+          "confidence": null
+        },
+        {
+          "text": " devils",
+          "startMs": 9280,
+          "endMs": 9840,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " showed",
+          "startMs": 9920,
+          "endMs": 10080,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 10360,
+          "endMs": 10480,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " very",
+          "startMs": 10560,
+          "endMs": 10800,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " little",
+          "startMs": 10880,
+          "endMs": 11040,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " genetic",
+          "startMs": 11120,
+          "endMs": 11520,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " diversity,",
+          "startMs": 11640,
+          "endMs": 12480,
+          "timestampMs": 12060,
+          "confidence": null
+        },
+        {
+          "text": " meaning",
+          "startMs": 12680,
+          "endMs": 12880,
+          "timestampMs": 12780,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 13000,
+          "endMs": 13120,
+          "timestampMs": 13060,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 13200,
+          "endMs": 13440,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " alleles,",
+          "startMs": 13520,
+          "endMs": 14320,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 14400,
+          "endMs": 14720,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " past",
+          "startMs": 14880,
+          "endMs": 15040,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " population",
+          "startMs": 15120,
+          "endMs": 15680,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " crashes",
+          "startMs": 15760,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " isolation.",
+          "startMs": 16520,
+          "endMs": 17760,
+          "timestampMs": 17140,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 17880,
+          "endMs": 18000,
+          "timestampMs": 17940,
+          "confidence": null
+        },
+        {
+          "text": " matters,",
+          "startMs": 18080,
+          "endMs": 18800,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 18880,
+          "endMs": 19120,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 19240,
+          "endMs": 19360,
+          "timestampMs": 19300,
+          "confidence": null
+        },
+        {
+          "text": " fewer",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " alleles",
+          "startMs": 19680,
+          "endMs": 20240,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " there's",
+          "startMs": 20400,
+          "endMs": 20720,
+          "timestampMs": 20560,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 20840,
+          "endMs": 20960,
+          "timestampMs": 20900,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 21040,
+          "endMs": 21360,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 21440,
+          "endMs": 21600,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 21680,
+          "endMs": 21840,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 22040,
+          "endMs": 22240,
+          "timestampMs": 22140,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 22320,
+          "endMs": 22640,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 22720,
+          "endMs": 22880,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " helps",
+          "startMs": 23160,
+          "endMs": 23320,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " against",
+          "startMs": 23360,
+          "endMs": 23680,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23760,
+          "endMs": 23840,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 23920,
+          "endMs": 24000,
+          "timestampMs": 23960,
+          "confidence": null
+        },
+        {
+          "text": " disease.",
+          "startMs": 24080,
+          "endMs": 25200,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 25280,
+          "endMs": 25360,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " breeders",
+          "startMs": 25440,
+          "endMs": 25840,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 25920,
+          "endMs": 26160,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26240,
+          "endMs": 26320,
+          "timestampMs": 26280,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 26480,
+          "endMs": 26640,
+          "timestampMs": 26560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26720,
+          "endMs": 26880,
+          "timestampMs": 26800,
+          "confidence": null
+        },
+        {
+          "text": " pair",
+          "startMs": 27000,
+          "endMs": 27120,
+          "timestampMs": 27060,
+          "confidence": null
+        },
+        {
+          "text": " devils",
+          "startMs": 27200,
+          "endMs": 27520,
+          "timestampMs": 27360,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 27600,
+          "endMs": 27680,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 27760,
+          "endMs": 27840,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 27920,
+          "endMs": 28080,
+          "timestampMs": 28000,
+          "confidence": null
+        },
+        {
+          "text": " related,",
+          "startMs": 28160,
+          "endMs": 28960,
+          "timestampMs": 28560,
+          "confidence": null
+        },
+        {
+          "text": " keeping",
+          "startMs": 29120,
+          "endMs": 29280,
+          "timestampMs": 29200,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 29360,
+          "endMs": 29440,
+          "timestampMs": 29400,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 29520,
+          "endMs": 29760,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " diversity",
+          "startMs": 29840,
+          "endMs": 30320,
+          "timestampMs": 30080,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 30400,
+          "endMs": 30480,
+          "timestampMs": 30440,
+          "confidence": null
+        },
+        {
+          "text": " possible.",
+          "startMs": 30720,
+          "endMs": 31240,
+          "timestampMs": 30980,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 31520,
+          "endMs": 31600,
+          "timestampMs": 31560,
+          "confidence": null
+        },
+        {
+          "text": " diversity",
+          "startMs": 31680,
+          "endMs": 32320,
+          "timestampMs": 32000,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 32400,
+          "endMs": 32640,
+          "timestampMs": 32520,
+          "confidence": null
+        },
+        {
+          "text": " improves",
+          "startMs": 32759.999999999996,
+          "endMs": 33200,
+          "timestampMs": 32980,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33280,
+          "endMs": 33360,
+          "timestampMs": 33320,
+          "confidence": null
+        },
+        {
+          "text": " odds.",
+          "startMs": 33440,
+          "endMs": 34080,
+          "timestampMs": 33760,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 34160,
+          "endMs": 34240,
+          "timestampMs": 34200,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 34360,
+          "endMs": 34640,
+          "timestampMs": 34500,
+          "confidence": null
+        },
+        {
+          "text": " guarantee",
+          "startMs": 34680,
+          "endMs": 35200,
+          "timestampMs": 34940,
+          "confidence": null
+        },
+        {
+          "text": " survival.",
+          "startMs": 35280,
+          "endMs": 36080,
+          "timestampMs": 35680,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "human-evolution",
+      "type": "concept",
+      "durationInFrames": 1313,
+      "voiceover": {
+        "text": "Large data also show how human populations are related. The 1000 Genomes Project sequenced the genomes of 2,504 people from 26 populations around the world. Populations that share more variants are likely to share more recent ancestors. African populations carry the most variation, and most common variants found elsewhere are also found in Africa. That fits modern humans first evolving in Africa: each group that left was a small set of founders, carrying only part of that variety. And the reference genome isn't everyone's genome: a typical person differs from it at four to five million places.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/human-evolution.f0b4c30d4974.mp3",
+        "startFrame": 0,
+        "endFrame": 1253
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Large",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 400,
+          "endMs": 800,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 1000,
+          "endMs": 1200,
+          "timestampMs": 1100,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " human",
+          "startMs": 1840,
+          "endMs": 2160,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " populations",
+          "startMs": 2240,
+          "endMs": 2880,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 2960,
+          "endMs": 3040,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " related.",
+          "startMs": 3360,
+          "endMs": 4000,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " 1000",
+          "startMs": 4480,
+          "endMs": 5040,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " Genomes",
+          "startMs": 5200,
+          "endMs": 5600,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " Project",
+          "startMs": 5680,
+          "endMs": 6160,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " sequenced",
+          "startMs": 6240,
+          "endMs": 6640,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6720,
+          "endMs": 6760,
+          "timestampMs": 6740,
+          "confidence": null
+        },
+        {
+          "text": " genomes",
+          "startMs": 6800,
+          "endMs": 7280,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7360,
+          "endMs": 7520,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " 2,504",
+          "startMs": 7600,
+          "endMs": 8160,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 8320,
+          "endMs": 9600,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 9920,
+          "endMs": 10080,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " 26",
+          "startMs": 10160,
+          "endMs": 10640,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " populations",
+          "startMs": 10720,
+          "endMs": 11360,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " around",
+          "startMs": 11520,
+          "endMs": 11680,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11720,
+          "endMs": 11760,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " world.",
+          "startMs": 11840,
+          "endMs": 12560,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " Populations",
+          "startMs": 12880,
+          "endMs": 13520,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 13760,
+          "endMs": 14000,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " variants",
+          "startMs": 14400,
+          "endMs": 14880,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " likely",
+          "startMs": 15200,
+          "endMs": 15520,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 15800,
+          "endMs": 15920,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 16000,
+          "endMs": 16160,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " recent",
+          "startMs": 16239.999999999998,
+          "endMs": 16560,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " ancestors.",
+          "startMs": 16720,
+          "endMs": 17800,
+          "timestampMs": 17260,
+          "confidence": null
+        },
+        {
+          "text": " African",
+          "startMs": 18160,
+          "endMs": 18560,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " populations",
+          "startMs": 18640,
+          "endMs": 19280,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 19360,
+          "endMs": 19600,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19640,
+          "endMs": 19680,
+          "timestampMs": 19660,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 19840,
+          "endMs": 20080,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " variation,",
+          "startMs": 20160,
+          "endMs": 21120,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21200,
+          "endMs": 21280,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 21400,
+          "endMs": 21520,
+          "timestampMs": 21460,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 21600,
+          "endMs": 21840,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " variants",
+          "startMs": 21920,
+          "endMs": 22320,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " found",
+          "startMs": 22440,
+          "endMs": 22560,
+          "timestampMs": 22500,
+          "confidence": null
+        },
+        {
+          "text": " elsewhere",
+          "startMs": 22640,
+          "endMs": 23120,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 23360,
+          "endMs": 23520,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 23600,
+          "endMs": 23920,
+          "timestampMs": 23760,
+          "confidence": null
+        },
+        {
+          "text": " found",
+          "startMs": 24000,
+          "endMs": 24240,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 24280,
+          "endMs": 24320,
+          "timestampMs": 24300,
+          "confidence": null
+        },
+        {
+          "text": " Africa.",
+          "startMs": 24400,
+          "endMs": 24960,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 25600,
+          "endMs": 25760,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 25840,
+          "endMs": 26080,
+          "timestampMs": 25960,
+          "confidence": null
+        },
+        {
+          "text": " modern",
+          "startMs": 26240,
+          "endMs": 26400,
+          "timestampMs": 26320,
+          "confidence": null
+        },
+        {
+          "text": " humans",
+          "startMs": 26480,
+          "endMs": 26880,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 26960,
+          "endMs": 27200,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " evolving",
+          "startMs": 27280,
+          "endMs": 27680,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 27720,
+          "endMs": 27760,
+          "timestampMs": 27740,
+          "confidence": null
+        },
+        {
+          "text": " Africa:",
+          "startMs": 27840,
+          "endMs": 28800,
+          "timestampMs": 28320,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 28880,
+          "endMs": 29040,
+          "timestampMs": 28960,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 29120,
+          "endMs": 29280,
+          "timestampMs": 29200,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 29360,
+          "endMs": 29440,
+          "timestampMs": 29400,
+          "confidence": null
+        },
+        {
+          "text": " left",
+          "startMs": 29520,
+          "endMs": 29760,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 29840,
+          "endMs": 30000,
+          "timestampMs": 29920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 30040,
+          "endMs": 30080,
+          "timestampMs": 30060,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 30240,
+          "endMs": 30480,
+          "timestampMs": 30360,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 30560,
+          "endMs": 30720,
+          "timestampMs": 30640,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 30800,
+          "endMs": 30880,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " founders,",
+          "startMs": 30960,
+          "endMs": 31680,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " carrying",
+          "startMs": 31760,
+          "endMs": 32159.999999999996,
+          "timestampMs": 31960,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 32280,
+          "endMs": 32400,
+          "timestampMs": 32340,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 32560.000000000004,
+          "endMs": 32800,
+          "timestampMs": 32680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 32880,
+          "endMs": 32960,
+          "timestampMs": 32920,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 33040,
+          "endMs": 33120,
+          "timestampMs": 33080,
+          "confidence": null
+        },
+        {
+          "text": " variety.",
+          "startMs": 33280,
+          "endMs": 34120,
+          "timestampMs": 33700,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 34480,
+          "endMs": 34560,
+          "timestampMs": 34520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 34640,
+          "endMs": 34680,
+          "timestampMs": 34660,
+          "confidence": null
+        },
+        {
+          "text": " reference",
+          "startMs": 34720,
+          "endMs": 35120,
+          "timestampMs": 34920,
+          "confidence": null
+        },
+        {
+          "text": " genome",
+          "startMs": 35200,
+          "endMs": 35600,
+          "timestampMs": 35400,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 35760,
+          "endMs": 36000,
+          "timestampMs": 35880,
+          "confidence": null
+        },
+        {
+          "text": " everyone's",
+          "startMs": 36240,
+          "endMs": 36720,
+          "timestampMs": 36480,
+          "confidence": null
+        },
+        {
+          "text": " genome:",
+          "startMs": 36800,
+          "endMs": 37680,
+          "timestampMs": 37240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 37760,
+          "endMs": 37840,
+          "timestampMs": 37800,
+          "confidence": null
+        },
+        {
+          "text": " typical",
+          "startMs": 37920,
+          "endMs": 38160,
+          "timestampMs": 38040,
+          "confidence": null
+        },
+        {
+          "text": " person",
+          "startMs": 38240,
+          "endMs": 38640,
+          "timestampMs": 38440,
+          "confidence": null
+        },
+        {
+          "text": " differs",
+          "startMs": 38720,
+          "endMs": 39040,
+          "timestampMs": 38880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 39120,
+          "endMs": 39200,
+          "timestampMs": 39160,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 39280,
+          "endMs": 39360,
+          "timestampMs": 39320,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 39480,
+          "endMs": 39600,
+          "timestampMs": 39540,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 39680,
+          "endMs": 39840,
+          "timestampMs": 39760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 39920,
+          "endMs": 40160,
+          "timestampMs": 40040,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 40280,
+          "endMs": 40400,
+          "timestampMs": 40340,
+          "confidence": null
+        },
+        {
+          "text": " million",
+          "startMs": 40640,
+          "endMs": 40960,
+          "timestampMs": 40800,
+          "confidence": null
+        },
+        {
+          "text": " places.",
+          "startMs": 41040,
+          "endMs": 41760,
+          "timestampMs": 41400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "improves-not-removes",
+      "type": "concept",
+      "durationInFrames": 783,
+      "voiceover": {
+        "text": "So, large data improve pattern detection, confidence in broad trends, and comparisons across many populations. What they don't remove is a biased sample, the limits of the methods, or uncertainty about any one person's future. UK Biobank volunteers, for example, are healthier on average than the British population. A strong answer states both sides.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/improves-not-removes.0cd941b7dec1.mp3",
+        "startFrame": 0,
+        "endFrame": 723
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So,",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " large",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 1120,
+          "endMs": 1440,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " improve",
+          "startMs": 1520,
+          "endMs": 2000,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " pattern",
+          "startMs": 2080,
+          "endMs": 2320,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " detection,",
+          "startMs": 2400,
+          "endMs": 3200,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " confidence",
+          "startMs": 3280,
+          "endMs": 3760,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " broad",
+          "startMs": 4000,
+          "endMs": 4320,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " trends,",
+          "startMs": 4360,
+          "endMs": 5120,
+          "timestampMs": 4740,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " comparisons",
+          "startMs": 5400,
+          "endMs": 6000,
+          "timestampMs": 5700,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 6080,
+          "endMs": 6320,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 6480,
+          "endMs": 6640,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " populations.",
+          "startMs": 6720,
+          "endMs": 8080,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " What",
+          "startMs": 8160,
+          "endMs": 8240,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 8320,
+          "endMs": 8480,
+          "timestampMs": 8400,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " remove",
+          "startMs": 9080,
+          "endMs": 9360,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9400,
+          "endMs": 9440,
+          "timestampMs": 9420,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9520,
+          "endMs": 9680,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " biased",
+          "startMs": 9920,
+          "endMs": 10160,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " sample,",
+          "startMs": 10400,
+          "endMs": 10960,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " limits",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11480,
+          "endMs": 11520,
+          "timestampMs": 11500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11560,
+          "endMs": 11600,
+          "timestampMs": 11580,
+          "confidence": null
+        },
+        {
+          "text": " methods,",
+          "startMs": 11680,
+          "endMs": 12400,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 12480,
+          "endMs": 12640,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " uncertainty",
+          "startMs": 12720,
+          "endMs": 13440,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 13600,
+          "endMs": 13760,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 13880,
+          "endMs": 14000,
+          "timestampMs": 13940,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " person's",
+          "startMs": 14480,
+          "endMs": 14800,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " future.",
+          "startMs": 15000,
+          "endMs": 15840,
+          "timestampMs": 15420,
+          "confidence": null
+        },
+        {
+          "text": " UK",
+          "startMs": 15920,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " Biobank",
+          "startMs": 16320,
+          "endMs": 16800,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " volunteers,",
+          "startMs": 16880,
+          "endMs": 17480,
+          "timestampMs": 17180,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " example,",
+          "startMs": 17840,
+          "endMs": 18400,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " healthier",
+          "startMs": 18640,
+          "endMs": 19120,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 19520,
+          "endMs": 19760,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 19840,
+          "endMs": 19920,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19947,
+          "endMs": 19973,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " British",
+          "startMs": 20000,
+          "endMs": 20320,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " population.",
+          "startMs": 20640,
+          "endMs": 21600,
+          "timestampMs": 21120,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " strong",
+          "startMs": 21840,
+          "endMs": 22080,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " answer",
+          "startMs": 22160,
+          "endMs": 22480,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " states",
+          "startMs": 22640,
+          "endMs": 22960,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 23040,
+          "endMs": 23280,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " sides.",
+          "startMs": 23360,
+          "endMs": 24080,
+          "timestampMs": 23720,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 461,
+      "voiceover": {
+        "text": "Two lines to remember. Big data sharpen the trend, but they don't predict a person. And if a harmful allele is common, look for a reason: an advantage for carriers, or chance in a small group.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/memory.8c69d159e8ed.mp3",
+        "startFrame": 0,
+        "endFrame": 401
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " lines",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 720,
+          "endMs": 760,
+          "timestampMs": 740,
+          "confidence": null
+        },
+        {
+          "text": " remember.",
+          "startMs": 800,
+          "endMs": 1360,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " Big",
+          "startMs": 1920,
+          "endMs": 2080,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 2160,
+          "endMs": 2560,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " sharpen",
+          "startMs": 2720,
+          "endMs": 3120,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3160,
+          "endMs": 3200,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " trend,",
+          "startMs": 3280,
+          "endMs": 4080,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 4360,
+          "endMs": 4480,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 4560,
+          "endMs": 4720,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5160,
+          "endMs": 5200,
+          "timestampMs": 5180,
+          "confidence": null
+        },
+        {
+          "text": " person.",
+          "startMs": 5280,
+          "endMs": 6040,
+          "timestampMs": 5660,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6600,
+          "endMs": 6640,
+          "timestampMs": 6620,
+          "confidence": null
+        },
+        {
+          "text": " harmful",
+          "startMs": 6720,
+          "endMs": 7120,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 7320,
+          "endMs": 7520,
+          "timestampMs": 7420,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " common,",
+          "startMs": 7760,
+          "endMs": 8480,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 8600,
+          "endMs": 8720,
+          "timestampMs": 8660,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8920,
+          "endMs": 8960,
+          "timestampMs": 8940,
+          "confidence": null
+        },
+        {
+          "text": " reason:",
+          "startMs": 9040,
+          "endMs": 10000,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 10040,
+          "endMs": 10080,
+          "timestampMs": 10060,
+          "confidence": null
+        },
+        {
+          "text": " advantage",
+          "startMs": 10160,
+          "endMs": 10640,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " carriers,",
+          "startMs": 10920,
+          "endMs": 11600,
+          "timestampMs": 11260,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 11920,
+          "endMs": 12320,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12360,
+          "endMs": 12400,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12480,
+          "endMs": 12520,
+          "timestampMs": 12500,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 12560,
+          "endMs": 12800,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " group.",
+          "startMs": 12880,
+          "endMs": 13360,
+          "timestampMs": 13120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 941,
+      "voiceover": {
+        "text": "Two questions now. First, this table shows example data from a large collaborative study: how common a red blood cell variant is, and how much malaria there is, in six regions. Describe the trend. Then suggest one reason the island region doesn't fit. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt.bb8caaeea34f.mp3",
+        "startFrame": 0,
+        "endFrame": 605
+      },
+      "responseHold": {
+        "startFrame": 617,
+        "endFrame": 917
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 240,
+          "endMs": 720,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " now.",
+          "startMs": 800,
+          "endMs": 1120,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " First,",
+          "startMs": 1600,
+          "endMs": 2560,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 2680,
+          "endMs": 2800,
+          "timestampMs": 2740,
+          "confidence": null
+        },
+        {
+          "text": " table",
+          "startMs": 2880,
+          "endMs": 3120,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 3200,
+          "endMs": 3440,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " example",
+          "startMs": 3520,
+          "endMs": 4000,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 4080,
+          "endMs": 4400,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 4480,
+          "endMs": 4560,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " large",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " collaborative",
+          "startMs": 5200,
+          "endMs": 5680,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " study:",
+          "startMs": 5760,
+          "endMs": 6720,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 6840,
+          "endMs": 6960,
+          "timestampMs": 6900,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7320,
+          "endMs": 7360,
+          "timestampMs": 7340,
+          "confidence": null
+        },
+        {
+          "text": " red",
+          "startMs": 7440,
+          "endMs": 7600,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 7680,
+          "endMs": 7840,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 7920,
+          "endMs": 8080,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " variant",
+          "startMs": 8160,
+          "endMs": 8560,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " is,",
+          "startMs": 8640,
+          "endMs": 9200,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9320,
+          "endMs": 9440,
+          "timestampMs": 9380,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 9680,
+          "endMs": 9760,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 9840,
+          "endMs": 10000,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " malaria",
+          "startMs": 10080,
+          "endMs": 10640,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 10760,
+          "endMs": 10880,
+          "timestampMs": 10820,
+          "confidence": null
+        },
+        {
+          "text": " is,",
+          "startMs": 11000,
+          "endMs": 11200,
+          "timestampMs": 11100,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 11280,
+          "endMs": 11360,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 11520,
+          "endMs": 11680,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " regions.",
+          "startMs": 11760,
+          "endMs": 12400,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " Describe",
+          "startMs": 12880,
+          "endMs": 13280,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " trend.",
+          "startMs": 13520,
+          "endMs": 14000,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 14640,
+          "endMs": 14960,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " suggest",
+          "startMs": 15280,
+          "endMs": 15680,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 15760,
+          "endMs": 16000,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " reason",
+          "startMs": 16079.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " island",
+          "startMs": 16720,
+          "endMs": 17040,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " region",
+          "startMs": 17120,
+          "endMs": 17440,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 17600,
+          "endMs": 17920,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " fit.",
+          "startMs": 18000,
+          "endMs": 18320,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 18880,
+          "endMs": 19200,
+          "timestampMs": 19040,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 19280,
+          "endMs": 19360,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19440,
+          "endMs": 19520,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 19600,
+          "endMs": 20160,
+          "timestampMs": 19880,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 917,
+        "responseHoldStart": 617,
+        "pausePrompt": 617
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 792,
+      "voiceover": {
+        "text": "The variant gets more common as malaria increases, which suggests carriers have an advantage where there's malaria. That's a trend, not proof. The island has a high frequency but no malaria, so something else is going on, like a few founders who happened to carry it. And if you said the variant must protect against malaria because the numbers match, a match alone doesn't show cause.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-one.11df164c7a41.mp3",
+        "startFrame": 0,
+        "endFrame": 732
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " variant",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 640,
+          "endMs": 800,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 880,
+          "endMs": 1120,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 1320,
+          "endMs": 1520,
+          "timestampMs": 1420,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 1600,
+          "endMs": 1680,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " malaria",
+          "startMs": 1720,
+          "endMs": 2160,
+          "timestampMs": 1940,
+          "confidence": null
+        },
+        {
+          "text": " increases,",
+          "startMs": 2240,
+          "endMs": 3200,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 3320,
+          "endMs": 3440,
+          "timestampMs": 3380,
+          "confidence": null
+        },
+        {
+          "text": " suggests",
+          "startMs": 3680,
+          "endMs": 4080,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " carriers",
+          "startMs": 4160,
+          "endMs": 4560,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " advantage",
+          "startMs": 4880,
+          "endMs": 5520,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " there's",
+          "startMs": 5720,
+          "endMs": 5840,
+          "timestampMs": 5780,
+          "confidence": null
+        },
+        {
+          "text": " malaria.",
+          "startMs": 5920,
+          "endMs": 6480,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7200,
+          "endMs": 7280,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " trend,",
+          "startMs": 7320,
+          "endMs": 8000,
+          "timestampMs": 7660,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 8080,
+          "endMs": 8240,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " proof.",
+          "startMs": 8320,
+          "endMs": 9120,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " island",
+          "startMs": 9600,
+          "endMs": 9920,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10160,
+          "endMs": 10240,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " frequency",
+          "startMs": 10560,
+          "endMs": 11120,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 11520,
+          "endMs": 11680,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " malaria,",
+          "startMs": 11760,
+          "endMs": 12560,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 12640,
+          "endMs": 12880,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " something",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " else",
+          "startMs": 13440,
+          "endMs": 13600,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 13680,
+          "endMs": 13760,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " going",
+          "startMs": 13880,
+          "endMs": 14000,
+          "timestampMs": 13940,
+          "confidence": null
+        },
+        {
+          "text": " on,",
+          "startMs": 14080,
+          "endMs": 14640,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 14800,
+          "endMs": 14960,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15000,
+          "endMs": 15040,
+          "timestampMs": 15020,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 15120,
+          "endMs": 15280,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " founders",
+          "startMs": 15360,
+          "endMs": 15840,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " who",
+          "startMs": 15920,
+          "endMs": 16000,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " happened",
+          "startMs": 16053,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16146.5,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 16560,
+          "endMs": 16720,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 17840,
+          "endMs": 17920,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " said",
+          "startMs": 18000,
+          "endMs": 18160,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18200,
+          "endMs": 18240,
+          "timestampMs": 18220,
+          "confidence": null
+        },
+        {
+          "text": " variant",
+          "startMs": 18320,
+          "endMs": 18720,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " must",
+          "startMs": 18880,
+          "endMs": 19120,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " protect",
+          "startMs": 19200,
+          "endMs": 19520,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " against",
+          "startMs": 19680,
+          "endMs": 19840,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " malaria",
+          "startMs": 19880,
+          "endMs": 20320,
+          "timestampMs": 20100,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20680,
+          "endMs": 20720,
+          "timestampMs": 20700,
+          "confidence": null
+        },
+        {
+          "text": " numbers",
+          "startMs": 20800,
+          "endMs": 21120,
+          "timestampMs": 20960,
+          "confidence": null
+        },
+        {
+          "text": " match,",
+          "startMs": 21200,
+          "endMs": 21920,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " match",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " alone",
+          "startMs": 22680,
+          "endMs": 22960,
+          "timestampMs": 22820,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 23040,
+          "endMs": 23360,
+          "timestampMs": 23200,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 23440,
+          "endMs": 23600,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " cause.",
+          "startMs": 23760,
+          "endMs": 24400,
+          "timestampMs": 24080,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 972,
+      "voiceover": {
+        "text": "Second. A threatened wallaby lives on the mainland and on a small island. Across ten markers, the mainland animals average nine alleles per marker, and the island animals average three. What does this suggest about the island population? Then name one way managers could use this. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/attempt-two.b89cacf154b2.mp3",
+        "startFrame": 0,
+        "endFrame": 636
+      },
+      "responseHold": {
+        "startFrame": 648,
+        "endFrame": 948
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Second.",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1040,
+          "endMs": 1120,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " threatened",
+          "startMs": 1240,
+          "endMs": 1520,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " wallaby",
+          "startMs": 1600,
+          "endMs": 2080,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " lives",
+          "startMs": 2120,
+          "endMs": 2320,
+          "timestampMs": 2220,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2520,
+          "endMs": 2560,
+          "timestampMs": 2540,
+          "confidence": null
+        },
+        {
+          "text": " mainland",
+          "startMs": 2640,
+          "endMs": 3200,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3840,
+          "endMs": 3880,
+          "timestampMs": 3860,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 3920,
+          "endMs": 4240,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " island.",
+          "startMs": 4400,
+          "endMs": 5080,
+          "timestampMs": 4740,
+          "confidence": null
+        },
+        {
+          "text": " Across",
+          "startMs": 5360,
+          "endMs": 5760,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 5880,
+          "endMs": 6000,
+          "timestampMs": 5940,
+          "confidence": null
+        },
+        {
+          "text": " markers,",
+          "startMs": 6080,
+          "endMs": 6880,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6920,
+          "endMs": 6960,
+          "timestampMs": 6940,
+          "confidence": null
+        },
+        {
+          "text": " mainland",
+          "startMs": 7040,
+          "endMs": 7440,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 7600,
+          "endMs": 8000,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 8200,
+          "endMs": 8400,
+          "timestampMs": 8300,
+          "confidence": null
+        },
+        {
+          "text": " nine",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " alleles",
+          "startMs": 8880,
+          "endMs": 9280,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " marker,",
+          "startMs": 9520,
+          "endMs": 10240,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10440,
+          "endMs": 10480,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " island",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 11040,
+          "endMs": 11440,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " average",
+          "startMs": 11520,
+          "endMs": 11840,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 12000,
+          "endMs": 12760,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " What",
+          "startMs": 13120,
+          "endMs": 13280,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 13360,
+          "endMs": 13520,
+          "timestampMs": 13440,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " suggest",
+          "startMs": 13760,
+          "endMs": 14240,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 14360,
+          "endMs": 14480,
+          "timestampMs": 14420,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14520,
+          "endMs": 14560,
+          "timestampMs": 14540,
+          "confidence": null
+        },
+        {
+          "text": " island",
+          "startMs": 14720,
+          "endMs": 15040,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " population?",
+          "startMs": 15120,
+          "endMs": 16400,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 16560,
+          "endMs": 16720,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 17120,
+          "endMs": 17360,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 17760,
+          "endMs": 18000,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " managers",
+          "startMs": 18080,
+          "endMs": 18480,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 18560,
+          "endMs": 18720,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 18800,
+          "endMs": 18960,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " this.",
+          "startMs": 19040,
+          "endMs": 19640,
+          "timestampMs": 19340,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 19920,
+          "endMs": 20160,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 20240,
+          "endMs": 20400,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20480,
+          "endMs": 20560,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 20760,
+          "endMs": 21200,
+          "timestampMs": 20980,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 948,
+        "responseHoldStart": 648,
+        "pausePrompt": 648
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 766,
+      "voiceover": {
+        "text": "The island animals have much less genetic diversity. That suggests a past population crash, or a small founding group, with little mixing since. Managers could move some mainland animals to the island to add diversity, or pair the least related animals to keep what's left. And if you said more diversity guarantees they'll survive, it only improves their chances.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/feedback-two.72ba86917a28.mp3",
+        "startFrame": 0,
+        "endFrame": 706
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 133,
+          "timestampMs": 66.5,
+          "confidence": null
+        },
+        {
+          "text": " island",
+          "startMs": 160,
+          "endMs": 520,
+          "timestampMs": 340,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 560,
+          "endMs": 983,
+          "timestampMs": 771.5,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 1040,
+          "endMs": 1280,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 1360,
+          "endMs": 1600,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " genetic",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " diversity.",
+          "startMs": 2400,
+          "endMs": 3320,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " suggests",
+          "startMs": 3960,
+          "endMs": 4240,
+          "timestampMs": 4100,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " past",
+          "startMs": 4560,
+          "endMs": 4720,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " population",
+          "startMs": 4800,
+          "endMs": 5440,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " crash,",
+          "startMs": 5520,
+          "endMs": 6080,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 6160,
+          "endMs": 6400,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 6640,
+          "endMs": 6960,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " founding",
+          "startMs": 7120,
+          "endMs": 7440,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " group,",
+          "startMs": 7520,
+          "endMs": 8000,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8080,
+          "endMs": 8160,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " little",
+          "startMs": 8320,
+          "endMs": 8560,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " mixing",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " since.",
+          "startMs": 9040,
+          "endMs": 9840,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " Managers",
+          "startMs": 10160,
+          "endMs": 10640,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 10760,
+          "endMs": 10880,
+          "timestampMs": 10820,
+          "confidence": null
+        },
+        {
+          "text": " move",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 11280,
+          "endMs": 11520,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " mainland",
+          "startMs": 11600,
+          "endMs": 12000,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 12200,
+          "endMs": 12400,
+          "timestampMs": 12300,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12440,
+          "endMs": 12480,
+          "timestampMs": 12460,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " island",
+          "startMs": 12720,
+          "endMs": 13120,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " diversity,",
+          "startMs": 13560,
+          "endMs": 14480,
+          "timestampMs": 14020,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 14560,
+          "endMs": 14800,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " pair",
+          "startMs": 14960,
+          "endMs": 15200,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15280,
+          "endMs": 15360,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " least",
+          "startMs": 15440,
+          "endMs": 15680,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " related",
+          "startMs": 15880,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " animals",
+          "startMs": 16280.000000000002,
+          "endMs": 16480,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 16720,
+          "endMs": 16880,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " what's",
+          "startMs": 16960,
+          "endMs": 17120,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " left.",
+          "startMs": 17200,
+          "endMs": 17600,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 18080,
+          "endMs": 18160,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " said",
+          "startMs": 18560,
+          "endMs": 18720,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " diversity",
+          "startMs": 19120,
+          "endMs": 19680,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " guarantees",
+          "startMs": 19840,
+          "endMs": 20400,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " they'll",
+          "startMs": 20440,
+          "endMs": 20640,
+          "timestampMs": 20540,
+          "confidence": null
+        },
+        {
+          "text": " survive,",
+          "startMs": 20720,
+          "endMs": 21440,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21560,
+          "endMs": 21680,
+          "timestampMs": 21620,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 21760,
+          "endMs": 22000,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " improves",
+          "startMs": 22080,
+          "endMs": 22560,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " chances.",
+          "startMs": 22800,
+          "endMs": 23520,
+          "timestampMs": 23160,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 495,
+      "voiceover": {
+        "text": "So, with any large data set, read the trend, ask what else could explain it, and say what the data can't tell you. Next, we'll look at what these population patterns can, and can't, predict about one person's risk.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/decision-rule.0480368c867b.mp3",
+        "startFrame": 0,
+        "endFrame": 435
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So,",
+          "startMs": 0,
+          "endMs": 640,
+          "timestampMs": 320,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 760,
+          "endMs": 880,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 960,
+          "endMs": 1200,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " large",
+          "startMs": 1280,
+          "endMs": 1520,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " set,",
+          "startMs": 1920,
+          "endMs": 2480,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 2560,
+          "endMs": 2800,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2840,
+          "endMs": 2880,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " trend,",
+          "startMs": 2960,
+          "endMs": 3760,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 4200,
+          "endMs": 4320,
+          "timestampMs": 4260,
+          "confidence": null
+        },
+        {
+          "text": " else",
+          "startMs": 4440,
+          "endMs": 4560,
+          "timestampMs": 4500,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 4960,
+          "endMs": 5200,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 5280,
+          "endMs": 5680,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5760,
+          "endMs": 5920,
+          "timestampMs": 5840,
+          "confidence": null
+        },
+        {
+          "text": " say",
+          "startMs": 6000,
+          "endMs": 6160,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 6720,
+          "endMs": 6960,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 7480,
+          "endMs": 7600,
+          "timestampMs": 7540,
+          "confidence": null
+        },
+        {
+          "text": " you.",
+          "startMs": 7680,
+          "endMs": 8400,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 8600,
+          "endMs": 8960,
+          "timestampMs": 8780,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 9000,
+          "endMs": 9120,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 9680,
+          "endMs": 9760,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " population",
+          "startMs": 9840,
+          "endMs": 10400,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " patterns",
+          "startMs": 10480,
+          "endMs": 10880,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " can,",
+          "startMs": 10960,
+          "endMs": 11520,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11640,
+          "endMs": 11760,
+          "timestampMs": 11700,
+          "confidence": null
+        },
+        {
+          "text": " can't,",
+          "startMs": 11840,
+          "endMs": 12320,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " predict",
+          "startMs": 12520,
+          "endMs": 12720,
+          "timestampMs": 12620,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 12920,
+          "endMs": 13120,
+          "timestampMs": 13020,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 13240,
+          "endMs": 13360,
+          "timestampMs": 13300,
+          "confidence": null
+        },
+        {
+          "text": " person's",
+          "startMs": 13440,
+          "endMs": 13840,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " risk.",
+          "startMs": 13920,
+          "endMs": 14480,
+          "timestampMs": 14200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Biology-Y12-M5-B13-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 280,
+          "endMs": 320,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 360,
+          "endMs": 400,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 720,
+          "endMs": 1440,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2000,
+          "endMs": 2040,
+          "timestampMs": 2020,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2880,
+          "endMs": 3040,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3880,
+          "endMs": 4000,
+          "timestampMs": 3940,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4080,
+          "endMs": 4480,
+          "timestampMs": 4280,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

@@ -1,0 +1,7509 @@
+{
+  "title": "Inheritance Probability: Unfamiliar Crosses and Pedigrees",
+  "subtitle": "When a cross or a family tree is new to you, how do you choose the model, find the probability, and say what the evidence can and cannot prove?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 5,
+  "lesson": 18,
+  "lessonIntent": "choosing incomplete dominance from a third phenotype and predicting a 1:2:1 cross and a two-birth probability; explaining why tortoiseshell cats are almost always female and finding sex-specific and overall probabilities in an X-linked cross; finding a 2/3 carrier chance and a 1/6 child probability across two families, then updating to 1/4 on new evidence; ruling out X-linked recessive with named individuals, explaining why autosomal dominant and recessive both fit, and judging which is more likely for a rare condition.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 980,
+      "voiceover": {
+        "text": "Inheritance questions in the HSC rarely use peas. They give you an animal you haven't met, or a family where the pattern isn't obvious, and ask for a probability, or for what the evidence can and can't tell you. Every one starts the same way: choose the model, write the genotypes you're sure of, then combine the chances. Here are four HSC-style questions. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/hook.d5a76f9010e5.mp3",
+        "startFrame": 0,
+        "endFrame": 920
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Inheritance",
+          "startMs": 0,
+          "endMs": 640,
+          "timestampMs": 320,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1160,
+          "endMs": 1200,
+          "timestampMs": 1180,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1280,
+          "endMs": 1360,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " HSC",
+          "startMs": 1440,
+          "endMs": 2080,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " rarely",
+          "startMs": 2320,
+          "endMs": 2720,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 2800,
+          "endMs": 3040,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " peas.",
+          "startMs": 3120,
+          "endMs": 3680,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " They",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 4560,
+          "endMs": 4600,
+          "timestampMs": 4580,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " animal",
+          "startMs": 4800,
+          "endMs": 5120,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " haven't",
+          "startMs": 5360,
+          "endMs": 5600,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " met,",
+          "startMs": 5680,
+          "endMs": 6160,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 6280,
+          "endMs": 6400,
+          "timestampMs": 6340,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " family",
+          "startMs": 6640,
+          "endMs": 7040,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7240,
+          "endMs": 7280,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " pattern",
+          "startMs": 7360,
+          "endMs": 7680,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 7760,
+          "endMs": 8000,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " obvious,",
+          "startMs": 8080,
+          "endMs": 8880,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 9120,
+          "endMs": 9360,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9560,
+          "endMs": 9600,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " probability,",
+          "startMs": 9680,
+          "endMs": 10800,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 10920,
+          "endMs": 11040,
+          "timestampMs": 10980,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 11280,
+          "endMs": 11360,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11440,
+          "endMs": 11520,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " evidence",
+          "startMs": 11560,
+          "endMs": 11920,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 12000,
+          "endMs": 12320,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 12640,
+          "endMs": 12880,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " tell",
+          "startMs": 12960,
+          "endMs": 13200,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " you.",
+          "startMs": 13280,
+          "endMs": 13800,
+          "timestampMs": 13540,
+          "confidence": null
+        },
+        {
+          "text": " Every",
+          "startMs": 14160,
+          "endMs": 14400,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 14480,
+          "endMs": 14640,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " starts",
+          "startMs": 14720,
+          "endMs": 15040,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 15320,
+          "endMs": 15440,
+          "timestampMs": 15380,
+          "confidence": null
+        },
+        {
+          "text": " way:",
+          "startMs": 15520,
+          "endMs": 16239.999999999998,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " choose",
+          "startMs": 16320,
+          "endMs": 16560,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16600,
+          "endMs": 16640,
+          "timestampMs": 16620,
+          "confidence": null
+        },
+        {
+          "text": " model,",
+          "startMs": 16720,
+          "endMs": 17360,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 17440,
+          "endMs": 17680,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " genotypes",
+          "startMs": 17840,
+          "endMs": 18320,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 18360,
+          "endMs": 18560,
+          "timestampMs": 18460,
+          "confidence": null
+        },
+        {
+          "text": " sure",
+          "startMs": 18680,
+          "endMs": 18800,
+          "timestampMs": 18740,
+          "confidence": null
+        },
+        {
+          "text": " of,",
+          "startMs": 18880,
+          "endMs": 19360,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 19440,
+          "endMs": 19680,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " combine",
+          "startMs": 19760,
+          "endMs": 20160,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20200,
+          "endMs": 20240,
+          "timestampMs": 20220,
+          "confidence": null
+        },
+        {
+          "text": " chances.",
+          "startMs": 20320,
+          "endMs": 21360,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " Here",
+          "startMs": 21840,
+          "endMs": 22000,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 22080,
+          "endMs": 22160,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 22240,
+          "endMs": 22480,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " HSC-style",
+          "startMs": 22640,
+          "endMs": 23520,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " questions.",
+          "startMs": 23600,
+          "endMs": 24240,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 24720,
+          "endMs": 25040,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25120,
+          "endMs": 25280,
+          "timestampMs": 25200,
+          "confidence": null
+        },
+        {
+          "text": " try",
+          "startMs": 25360,
+          "endMs": 25600,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 25680,
+          "endMs": 25840,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 25920,
+          "endMs": 26560,
+          "timestampMs": 26240,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 26640,
+          "endMs": 26800,
+          "timestampMs": 26720,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 26840,
+          "endMs": 26960,
+          "timestampMs": 26900,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 27040,
+          "endMs": 27200,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 27240,
+          "endMs": 27280,
+          "timestampMs": 27260,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 27360,
+          "endMs": 27600,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 27680,
+          "endMs": 27840,
+          "timestampMs": 27760,
+          "confidence": null
+        },
+        {
+          "text": " step",
+          "startMs": 27920,
+          "endMs": 28080,
+          "timestampMs": 28000,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 28160,
+          "endMs": 28200,
+          "timestampMs": 28180,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 28240,
+          "endMs": 28280,
+          "timestampMs": 28260,
+          "confidence": null
+        },
+        {
+          "text": " time,",
+          "startMs": 28320,
+          "endMs": 28880,
+          "timestampMs": 28600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28920,
+          "endMs": 28960,
+          "timestampMs": 28940,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 29040,
+          "endMs": 29200,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 29240,
+          "endMs": 29280,
+          "timestampMs": 29260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29320,
+          "endMs": 29360,
+          "timestampMs": 29340,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 29520,
+          "endMs": 29920,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " mistake.",
+          "startMs": 30040,
+          "endMs": 30640,
+          "timestampMs": 30340,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 1131,
+      "voiceover": {
+        "text": "Question one. In Andalusian chickens, a black bird crossed with a splashed white bird gives chicks that are all blue. A farmer crosses two blue chickens. Explain why some of their chicks are black and some are white, and give the ratio. Then find the probability that their first two chicks are both blue. Finally, which cross would give only blue chicks? Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-question.f72d0b15a8e1.mp3",
+        "startFrame": 0,
+        "endFrame": 795
+      },
+      "responseHold": {
+        "startFrame": 807,
+        "endFrame": 1107
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 480,
+          "endMs": 1080,
+          "timestampMs": 780,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 1360,
+          "endMs": 1440,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " Andalusian",
+          "startMs": 1520,
+          "endMs": 2160,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " chickens,",
+          "startMs": 2240,
+          "endMs": 3120,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3200,
+          "endMs": 3280,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " black",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " bird",
+          "startMs": 3680,
+          "endMs": 4000,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " crossed",
+          "startMs": 4160,
+          "endMs": 4480,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 4520,
+          "endMs": 4560,
+          "timestampMs": 4540,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4640,
+          "endMs": 4680,
+          "timestampMs": 4660,
+          "confidence": null
+        },
+        {
+          "text": " splashed",
+          "startMs": 4720,
+          "endMs": 5120,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " white",
+          "startMs": 5280,
+          "endMs": 5520,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " bird",
+          "startMs": 5600,
+          "endMs": 5840,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " chicks",
+          "startMs": 6560,
+          "endMs": 6800,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 7200,
+          "endMs": 7360,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " blue.",
+          "startMs": 7440,
+          "endMs": 7920,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 8560,
+          "endMs": 8640,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " farmer",
+          "startMs": 8720,
+          "endMs": 9120,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " crosses",
+          "startMs": 9200,
+          "endMs": 9600,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 10000,
+          "endMs": 10240,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " chickens.",
+          "startMs": 10320,
+          "endMs": 11160,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " Explain",
+          "startMs": 11440,
+          "endMs": 11920,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 12040,
+          "endMs": 12160,
+          "timestampMs": 12100,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 12240,
+          "endMs": 12400,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 12480,
+          "endMs": 12560,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " chicks",
+          "startMs": 12800,
+          "endMs": 13040,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 13080,
+          "endMs": 13120,
+          "timestampMs": 13100,
+          "confidence": null
+        },
+        {
+          "text": " black",
+          "startMs": 13200,
+          "endMs": 13600,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13760,
+          "endMs": 13840,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 14000,
+          "endMs": 14160,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 14200,
+          "endMs": 14240,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " white,",
+          "startMs": 14320,
+          "endMs": 14960,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15080,
+          "endMs": 15200,
+          "timestampMs": 15140,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 15280,
+          "endMs": 15440,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15520,
+          "endMs": 15560,
+          "timestampMs": 15540,
+          "confidence": null
+        },
+        {
+          "text": " ratio.",
+          "startMs": 15600,
+          "endMs": 16520,
+          "timestampMs": 16060,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 16880,
+          "endMs": 17120,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 17440,
+          "endMs": 17680,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " probability",
+          "startMs": 17840,
+          "endMs": 18480,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 18560,
+          "endMs": 18640,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 18760,
+          "endMs": 18880,
+          "timestampMs": 18820,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " chicks",
+          "startMs": 19520,
+          "endMs": 19840,
+          "timestampMs": 19680,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 19920,
+          "endMs": 20080,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 20200,
+          "endMs": 20320,
+          "timestampMs": 20260,
+          "confidence": null
+        },
+        {
+          "text": " blue.",
+          "startMs": 20480,
+          "endMs": 20880,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " Finally,",
+          "startMs": 21520,
+          "endMs": 22320,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 22400,
+          "endMs": 22560,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 22640,
+          "endMs": 22960,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 23520,
+          "endMs": 23840,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 23920,
+          "endMs": 24080,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " chicks?",
+          "startMs": 24160,
+          "endMs": 24640,
+          "timestampMs": 24400,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 25200,
+          "endMs": 25440,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 25520,
+          "endMs": 25680,
+          "timestampMs": 25600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 25760,
+          "endMs": 25840,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 25920,
+          "endMs": 26480,
+          "timestampMs": 26200,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1107,
+        "responseHoldStart": 807,
+        "pausePrompt": 807
+      }
+    },
+    {
+      "id": "q1-model",
+      "type": "concept",
+      "durationInFrames": 668,
+      "voiceover": {
+        "text": "First, choose the model. Black crossed with white gives a third colour, in between, so this is incomplete dominance. A blue bird is heterozygous, with one black allele and one white allele. Two blue parents each pass on one or the other, so the square gives 1 black, 2 blue, 1 white.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-model.ad55e0b5a8f7.mp3",
+        "startFrame": 0,
+        "endFrame": 608
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "First,",
+          "startMs": 0,
+          "endMs": 720,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " choose",
+          "startMs": 800,
+          "endMs": 1040,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1120,
+          "endMs": 1160,
+          "timestampMs": 1140,
+          "confidence": null
+        },
+        {
+          "text": " model.",
+          "startMs": 1200,
+          "endMs": 1680,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " Black",
+          "startMs": 2160,
+          "endMs": 2480,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " crossed",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 2960,
+          "endMs": 3040,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " white",
+          "startMs": 3200,
+          "endMs": 3520,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " third",
+          "startMs": 4000,
+          "endMs": 4240,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " colour,",
+          "startMs": 4320,
+          "endMs": 4880,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4960,
+          "endMs": 5000,
+          "timestampMs": 4980,
+          "confidence": null
+        },
+        {
+          "text": " between,",
+          "startMs": 5040,
+          "endMs": 5840,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 6080,
+          "endMs": 6320,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " incomplete",
+          "startMs": 6760,
+          "endMs": 7280,
+          "timestampMs": 7020,
+          "confidence": null
+        },
+        {
+          "text": " dominance.",
+          "startMs": 7360,
+          "endMs": 8119.999999999999,
+          "timestampMs": 7740,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 8600,
+          "endMs": 8720,
+          "timestampMs": 8660,
+          "confidence": null
+        },
+        {
+          "text": " bird",
+          "startMs": 8800,
+          "endMs": 9040,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " heterozygous,",
+          "startMs": 9360,
+          "endMs": 10480,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 10600,
+          "endMs": 10720,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " black",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 11400,
+          "endMs": 11600,
+          "timestampMs": 11500,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11680,
+          "endMs": 11840,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11920,
+          "endMs": 12080,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " white",
+          "startMs": 12160,
+          "endMs": 12400,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " allele.",
+          "startMs": 12480,
+          "endMs": 12880,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " Two",
+          "startMs": 13440,
+          "endMs": 13600,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 13920,
+          "endMs": 14400,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 14480,
+          "endMs": 14720,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " pass",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 15120,
+          "endMs": 15360,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 15480,
+          "endMs": 15600,
+          "timestampMs": 15540,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 15680,
+          "endMs": 15760,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " other,",
+          "startMs": 16000,
+          "endMs": 16640,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16840,
+          "endMs": 16880,
+          "timestampMs": 16860,
+          "confidence": null
+        },
+        {
+          "text": " square",
+          "startMs": 16960,
+          "endMs": 17360,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 17440,
+          "endMs": 17680,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " 1",
+          "startMs": 17760,
+          "endMs": 17920,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " black,",
+          "startMs": 18000,
+          "endMs": 18560,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " blue,",
+          "startMs": 18800,
+          "endMs": 19440,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " 1",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " white.",
+          "startMs": 19680,
+          "endMs": 20240,
+          "timestampMs": 19960,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-chance",
+      "type": "concept",
+      "durationInFrames": 610,
+      "voiceover": {
+        "text": "Each chick has a one in two chance of being blue, and each chick is a separate chance. So for the first chick and the second, multiply: one half times one half is one in four. And for only blue chicks, cross black with white: every chick gets one of each allele.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-chance.945236f6c1ab.mp3",
+        "startFrame": 0,
+        "endFrame": 550
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Each",
+          "startMs": 0,
+          "endMs": 210,
+          "timestampMs": 105,
+          "confidence": null
+        },
+        {
+          "text": " chick",
+          "startMs": 240,
+          "endMs": 507,
+          "timestampMs": 373.5,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 560,
+          "endMs": 747,
+          "timestampMs": 653.5,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 800,
+          "endMs": 880,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 960,
+          "endMs": 1093,
+          "timestampMs": 1026.5,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1120,
+          "endMs": 1280,
+          "timestampMs": 1200,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 1360,
+          "endMs": 1493,
+          "timestampMs": 1426.5,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 1520,
+          "endMs": 1860,
+          "timestampMs": 1690,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1920,
+          "endMs": 1980,
+          "timestampMs": 1950,
+          "confidence": null
+        },
+        {
+          "text": " being",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " blue,",
+          "startMs": 2400,
+          "endMs": 3120,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3200,
+          "endMs": 3360,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " chick",
+          "startMs": 3760,
+          "endMs": 4000,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " separate",
+          "startMs": 4480,
+          "endMs": 4800,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " chance.",
+          "startMs": 4880,
+          "endMs": 5640,
+          "timestampMs": 5260,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 5920,
+          "endMs": 6160,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 6600,
+          "endMs": 6720,
+          "timestampMs": 6660,
+          "confidence": null
+        },
+        {
+          "text": " chick",
+          "startMs": 6800,
+          "endMs": 7120,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7200,
+          "endMs": 7280,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7320,
+          "endMs": 7360,
+          "timestampMs": 7340,
+          "confidence": null
+        },
+        {
+          "text": " second,",
+          "startMs": 7440,
+          "endMs": 8160,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " multiply:",
+          "startMs": 8240,
+          "endMs": 9280,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 9360,
+          "endMs": 9520,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 9600,
+          "endMs": 9840,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 9920,
+          "endMs": 10240,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 10320,
+          "endMs": 10480,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 10680,
+          "endMs": 10880,
+          "timestampMs": 10780,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11040,
+          "endMs": 11200,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11280,
+          "endMs": 11360,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 11440,
+          "endMs": 11600,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " four.",
+          "startMs": 11680,
+          "endMs": 12280,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 12960,
+          "endMs": 13200,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " chicks,",
+          "startMs": 13600,
+          "endMs": 14160,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " black",
+          "startMs": 14560,
+          "endMs": 14880,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 14960,
+          "endMs": 15040,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " white:",
+          "startMs": 15200,
+          "endMs": 16000,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 16079.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " chick",
+          "startMs": 16480,
+          "endMs": 16720,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 16800,
+          "endMs": 17040,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " allele.",
+          "startMs": 17760,
+          "endMs": 18320,
+          "timestampMs": 18040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 370,
+      "voiceover": {
+        "text": "The classic mistake is crossing blue with blue to get blue chicks. Blue birds are heterozygous, so they can't breed true. The alleles separate again.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q1-mistake.0ecf38258e08.mp3",
+        "startFrame": 0,
+        "endFrame": 310
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " crossing",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 1840,
+          "endMs": 2160,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 2240,
+          "endMs": 2400,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 2480,
+          "endMs": 2880,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3040,
+          "endMs": 3120,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 3200,
+          "endMs": 3280,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " blue",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " chicks.",
+          "startMs": 3760,
+          "endMs": 4320,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " Blue",
+          "startMs": 4880,
+          "endMs": 5120,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " birds",
+          "startMs": 5200,
+          "endMs": 5440,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 5520,
+          "endMs": 5600,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " heterozygous,",
+          "startMs": 5640,
+          "endMs": 6720,
+          "timestampMs": 6180,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 6760,
+          "endMs": 6800,
+          "timestampMs": 6780,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 7160,
+          "endMs": 7360,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " breed",
+          "startMs": 7440,
+          "endMs": 7680,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " true.",
+          "startMs": 7760,
+          "endMs": 8240,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8640,
+          "endMs": 8680,
+          "timestampMs": 8660,
+          "confidence": null
+        },
+        {
+          "text": " alleles",
+          "startMs": 8720,
+          "endMs": 9200,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " separate",
+          "startMs": 9280,
+          "endMs": 9680,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " again.",
+          "startMs": 9760,
+          "endMs": 10320,
+          "timestampMs": 10040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 1311,
+      "voiceover": {
+        "text": "Question two. In cats, a gene for coat colour is on the X chromosome. One allele gives orange fur, and the other gives black. A cat with one of each shows both colours, in patches: this is called tortoiseshell. Explain why tortoiseshell cats are almost always female. A tortoiseshell female then mates with an orange male. What's the probability that a kitten is a tortoiseshell female? And what fraction of their sons are black? Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-question.316db2d8aada.mp3",
+        "startFrame": 0,
+        "endFrame": 975
+      },
+      "responseHold": {
+        "startFrame": 987,
+        "endFrame": 1287
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " two.",
+          "startMs": 480,
+          "endMs": 880,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " cats,",
+          "startMs": 1600,
+          "endMs": 2400,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 2640,
+          "endMs": 2880,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 2960,
+          "endMs": 3040,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " coat",
+          "startMs": 3120,
+          "endMs": 3360,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " colour",
+          "startMs": 3440,
+          "endMs": 3760,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3840,
+          "endMs": 4000,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 4040,
+          "endMs": 4080,
+          "timestampMs": 4060,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " chromosome.",
+          "startMs": 4640,
+          "endMs": 5360,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " One",
+          "startMs": 6000,
+          "endMs": 6160,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 6360,
+          "endMs": 6560,
+          "timestampMs": 6460,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " orange",
+          "startMs": 6960,
+          "endMs": 7280,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " fur,",
+          "startMs": 7360,
+          "endMs": 7920,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7960,
+          "endMs": 8000,
+          "timestampMs": 7980,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8080,
+          "endMs": 8160,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 8240,
+          "endMs": 8480,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 8640,
+          "endMs": 8800,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " black.",
+          "startMs": 8880,
+          "endMs": 9360,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 10000,
+          "endMs": 10040,
+          "timestampMs": 10020,
+          "confidence": null
+        },
+        {
+          "text": " cat",
+          "startMs": 10080,
+          "endMs": 10320,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 10400,
+          "endMs": 10560,
+          "timestampMs": 10480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 10640,
+          "endMs": 10720,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10760,
+          "endMs": 10800,
+          "timestampMs": 10780,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 10960,
+          "endMs": 11280,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 11760,
+          "endMs": 12000,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " colours,",
+          "startMs": 12080,
+          "endMs": 12640,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " patches:",
+          "startMs": 12880,
+          "endMs": 13920,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 14320,
+          "endMs": 14560,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell.",
+          "startMs": 14800,
+          "endMs": 15600,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " Explain",
+          "startMs": 16320,
+          "endMs": 16800,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell",
+          "startMs": 17040,
+          "endMs": 17680,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " cats",
+          "startMs": 17760,
+          "endMs": 18080,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 18440,
+          "endMs": 18640,
+          "timestampMs": 18540,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 18800,
+          "endMs": 19280,
+          "timestampMs": 19040,
+          "confidence": null
+        },
+        {
+          "text": " female.",
+          "startMs": 19360,
+          "endMs": 19920,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 20800,
+          "endMs": 20840,
+          "timestampMs": 20820,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell",
+          "startMs": 20880,
+          "endMs": 21520,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " female",
+          "startMs": 21600,
+          "endMs": 22080,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " mates",
+          "startMs": 22480,
+          "endMs": 22720,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 22800,
+          "endMs": 22880,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 23000,
+          "endMs": 23120,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " orange",
+          "startMs": 23320,
+          "endMs": 23520,
+          "timestampMs": 23420,
+          "confidence": null
+        },
+        {
+          "text": " male.",
+          "startMs": 23600,
+          "endMs": 24280,
+          "timestampMs": 23940,
+          "confidence": null
+        },
+        {
+          "text": " What's",
+          "startMs": 24560,
+          "endMs": 24800,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24840,
+          "endMs": 24880,
+          "timestampMs": 24860,
+          "confidence": null
+        },
+        {
+          "text": " probability",
+          "startMs": 24960,
+          "endMs": 25600,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 25680,
+          "endMs": 25760,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25800,
+          "endMs": 25840,
+          "timestampMs": 25820,
+          "confidence": null
+        },
+        {
+          "text": " kitten",
+          "startMs": 25920,
+          "endMs": 26320,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26400,
+          "endMs": 26480,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 26520,
+          "endMs": 26560,
+          "timestampMs": 26540,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell",
+          "startMs": 26640,
+          "endMs": 27200,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " female?",
+          "startMs": 27360,
+          "endMs": 27920,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 28320,
+          "endMs": 28400,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 28480,
+          "endMs": 28640,
+          "timestampMs": 28560,
+          "confidence": null
+        },
+        {
+          "text": " fraction",
+          "startMs": 28720,
+          "endMs": 29040,
+          "timestampMs": 28880,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 29120,
+          "endMs": 29200,
+          "timestampMs": 29160,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 29280,
+          "endMs": 29360,
+          "timestampMs": 29320,
+          "confidence": null
+        },
+        {
+          "text": " sons",
+          "startMs": 29520,
+          "endMs": 29920,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 30000,
+          "endMs": 30080,
+          "timestampMs": 30040,
+          "confidence": null
+        },
+        {
+          "text": " black?",
+          "startMs": 30160,
+          "endMs": 30880,
+          "timestampMs": 30520,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 31200,
+          "endMs": 31440,
+          "timestampMs": 31320,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 31520,
+          "endMs": 31680,
+          "timestampMs": 31600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 31760,
+          "endMs": 31840,
+          "timestampMs": 31800,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 32040,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32260,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1287,
+        "responseHoldStart": 987,
+        "pausePrompt": 987
+      }
+    },
+    {
+      "id": "q2-why-female",
+      "type": "concept",
+      "durationInFrames": 543,
+      "voiceover": {
+        "text": "The gene is on the X, and a tortoiseshell cat needs both alleles, so it needs two X chromosomes. A male has one X and a Y, so his single X carries only one colour. That's why tortoiseshell cats are almost always female.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-why-female.9ca25628def1.mp3",
+        "startFrame": 0,
+        "endFrame": 483
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 680,
+          "endMs": 720,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 800,
+          "endMs": 960,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " X,",
+          "startMs": 1040,
+          "endMs": 1680,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1880,
+          "endMs": 1920,
+          "timestampMs": 1900,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell",
+          "startMs": 2000,
+          "endMs": 2560,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " cat",
+          "startMs": 2640,
+          "endMs": 2880,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 3040,
+          "endMs": 3200,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 3280,
+          "endMs": 3520,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " alleles,",
+          "startMs": 3640,
+          "endMs": 4320,
+          "timestampMs": 3980,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 4520,
+          "endMs": 4560,
+          "timestampMs": 4540,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 5040,
+          "endMs": 5280,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 5440,
+          "endMs": 5600,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " chromosomes.",
+          "startMs": 5680,
+          "endMs": 6960,
+          "timestampMs": 6320,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " male",
+          "startMs": 7200,
+          "endMs": 7520,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 7600,
+          "endMs": 7840,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 7920,
+          "endMs": 8080,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 8160,
+          "endMs": 8480,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8560,
+          "endMs": 8640,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8680,
+          "endMs": 8720,
+          "timestampMs": 8700,
+          "confidence": null
+        },
+        {
+          "text": " Y,",
+          "startMs": 8800,
+          "endMs": 9520,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 9600,
+          "endMs": 9680,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " his",
+          "startMs": 9800,
+          "endMs": 9920,
+          "timestampMs": 9860,
+          "confidence": null
+        },
+        {
+          "text": " single",
+          "startMs": 10000,
+          "endMs": 10320,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 10400,
+          "endMs": 10640,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 10720,
+          "endMs": 11040,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 11120,
+          "endMs": 11360,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11520,
+          "endMs": 11680,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " colour.",
+          "startMs": 11840,
+          "endMs": 12720,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 12800,
+          "endMs": 12960,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell",
+          "startMs": 13200,
+          "endMs": 13760,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " cats",
+          "startMs": 13840,
+          "endMs": 14160,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 14240,
+          "endMs": 14320,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 14520,
+          "endMs": 14720,
+          "timestampMs": 14620,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 14880,
+          "endMs": 15360,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " female.",
+          "startMs": 15640,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15860,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-square",
+      "type": "concept",
+      "durationInFrames": 766,
+      "voiceover": {
+        "text": "Now the cross. The mother gives an orange X or a black X. The father gives his orange X to every daughter, and his Y to every son. So daughters are orange or tortoiseshell, and sons are orange or black. Tortoiseshell females are one box of four: one in four of all kittens. Of the sons, one in two is black.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-square.fe30c6d69939.mp3",
+        "startFrame": 0,
+        "endFrame": 706
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " cross.",
+          "startMs": 480,
+          "endMs": 1200,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " mother",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 1880,
+          "endMs": 2080,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 2200,
+          "endMs": 2320,
+          "timestampMs": 2260,
+          "confidence": null
+        },
+        {
+          "text": " orange",
+          "startMs": 2400,
+          "endMs": 2720,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 2800,
+          "endMs": 3280,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 3440,
+          "endMs": 3600,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3640,
+          "endMs": 3680,
+          "timestampMs": 3660,
+          "confidence": null
+        },
+        {
+          "text": " black",
+          "startMs": 3840,
+          "endMs": 4000,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " X.",
+          "startMs": 4080,
+          "endMs": 4880,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " father",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 5440,
+          "endMs": 5600,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " his",
+          "startMs": 5680,
+          "endMs": 5920,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " orange",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6760,
+          "endMs": 6880,
+          "timestampMs": 6820,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 6960,
+          "endMs": 7200,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " daughter,",
+          "startMs": 7280,
+          "endMs": 7973,
+          "timestampMs": 7626.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8026.999999999999,
+          "endMs": 8080,
+          "timestampMs": 8053.5,
+          "confidence": null
+        },
+        {
+          "text": " his",
+          "startMs": 8200,
+          "endMs": 8320,
+          "timestampMs": 8260,
+          "confidence": null
+        },
+        {
+          "text": " Y",
+          "startMs": 8400,
+          "endMs": 8800,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 9040,
+          "endMs": 9200,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " son.",
+          "startMs": 9360,
+          "endMs": 10160,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 10280,
+          "endMs": 10400,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " daughters",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 11040,
+          "endMs": 11200,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " orange",
+          "startMs": 11280,
+          "endMs": 11760,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell,",
+          "startMs": 12080,
+          "endMs": 13040,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13120,
+          "endMs": 13280,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " sons",
+          "startMs": 13360,
+          "endMs": 13760,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 13840,
+          "endMs": 14000,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " orange",
+          "startMs": 14080,
+          "endMs": 14480,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 14520,
+          "endMs": 14560,
+          "timestampMs": 14540,
+          "confidence": null
+        },
+        {
+          "text": " black.",
+          "startMs": 14640,
+          "endMs": 15520,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " Tortoiseshell",
+          "startMs": 15560,
+          "endMs": 16160,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " females",
+          "startMs": 16200,
+          "endMs": 16720,
+          "timestampMs": 16460,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " box",
+          "startMs": 17280,
+          "endMs": 17520,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " four:",
+          "startMs": 17760,
+          "endMs": 18480,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 18560,
+          "endMs": 18640,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18760,
+          "endMs": 18880,
+          "timestampMs": 18820,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 19520,
+          "endMs": 19680,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " kittens.",
+          "startMs": 19760,
+          "endMs": 20800,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " Of",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21000,
+          "endMs": 21040,
+          "timestampMs": 21020,
+          "confidence": null
+        },
+        {
+          "text": " sons,",
+          "startMs": 21120,
+          "endMs": 21920,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 22160,
+          "endMs": 22400,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 22600,
+          "endMs": 22800,
+          "timestampMs": 22700,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " black.",
+          "startMs": 23040,
+          "endMs": 23520,
+          "timestampMs": 23280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 406,
+      "voiceover": {
+        "text": "The classic mistake is treating the gene as if it were on an autosome. That gives tortoiseshell kittens of both sexes, half of all kittens. But sons only get their mother's X.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q2-mistake.71be456afe99.mp3",
+        "startFrame": 0,
+        "endFrame": 346
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " treating",
+          "startMs": 1440,
+          "endMs": 1680,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1760,
+          "endMs": 1840,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 1920,
+          "endMs": 2240,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 2600,
+          "endMs": 2640,
+          "timestampMs": 2620,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 3040,
+          "endMs": 3200,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " autosome.",
+          "startMs": 3280,
+          "endMs": 4480,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 4600,
+          "endMs": 4720,
+          "timestampMs": 4660,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " tortoiseshell",
+          "startMs": 5040,
+          "endMs": 5600,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " kittens",
+          "startMs": 5640,
+          "endMs": 6000,
+          "timestampMs": 5820,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " sexes,",
+          "startMs": 6600,
+          "endMs": 7200,
+          "timestampMs": 6900,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 7360,
+          "endMs": 7520,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 7800,
+          "endMs": 7920,
+          "timestampMs": 7860,
+          "confidence": null
+        },
+        {
+          "text": " kittens.",
+          "startMs": 7960,
+          "endMs": 8960,
+          "timestampMs": 8460,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " sons",
+          "startMs": 9200,
+          "endMs": 9680,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 9760,
+          "endMs": 10000,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 10280,
+          "endMs": 10400,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " mother's",
+          "startMs": 10520,
+          "endMs": 10800,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " X.",
+          "startMs": 10880,
+          "endMs": 11520,
+          "timestampMs": 11200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 1205,
+      "voiceover": {
+        "text": "Question three. Phenylketonuria, or P K U, is an autosomal recessive condition. In this family, a woman doesn't have P K U, but her brother does, and their parents don't. Her partner doesn't have P K U, but his mother does. What is the probability that their first child has P K U? And if their first child does have it, what is the probability for the second child? Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-question.539d94e81307.mp3",
+        "startFrame": 0,
+        "endFrame": 869
+      },
+      "responseHold": {
+        "startFrame": 881,
+        "endFrame": 1181
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 375,
+          "timestampMs": 187.5,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 400,
+          "endMs": 880,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " Phenylketonuria,",
+          "startMs": 1520,
+          "endMs": 2880,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 2960,
+          "endMs": 3120,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 3600,
+          "endMs": 3840,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " U,",
+          "startMs": 3920,
+          "endMs": 4240,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " autosomal",
+          "startMs": 5160,
+          "endMs": 5600,
+          "timestampMs": 5380,
+          "confidence": null
+        },
+        {
+          "text": " recessive",
+          "startMs": 5680,
+          "endMs": 6160,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " condition.",
+          "startMs": 6240,
+          "endMs": 6800,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 7600,
+          "endMs": 7760,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " family,",
+          "startMs": 7840,
+          "endMs": 8560,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8640,
+          "endMs": 8720,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " woman",
+          "startMs": 8800,
+          "endMs": 9040,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 9200,
+          "endMs": 9520,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 9600,
+          "endMs": 9840,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 9920,
+          "endMs": 10080,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 10200,
+          "endMs": 10320,
+          "timestampMs": 10260,
+          "confidence": null
+        },
+        {
+          "text": " U,",
+          "startMs": 10400,
+          "endMs": 10880,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 10920,
+          "endMs": 10960,
+          "timestampMs": 10940,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " brother",
+          "startMs": 11200,
+          "endMs": 11440,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " does,",
+          "startMs": 11600,
+          "endMs": 12160,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 12560,
+          "endMs": 12960,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " don't.",
+          "startMs": 13040,
+          "endMs": 13440,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " Her",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " partner",
+          "startMs": 14400,
+          "endMs": 14720,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 15280,
+          "endMs": 15440,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " U,",
+          "startMs": 15760,
+          "endMs": 16320,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " his",
+          "startMs": 16480,
+          "endMs": 16640,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " mother",
+          "startMs": 16720,
+          "endMs": 16960,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " does.",
+          "startMs": 17040,
+          "endMs": 17840,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " What",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18560,
+          "endMs": 18640,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " probability",
+          "startMs": 18960,
+          "endMs": 19280,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 19520,
+          "endMs": 19680,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 19760,
+          "endMs": 20000,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " child",
+          "startMs": 20160,
+          "endMs": 20480,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 20640,
+          "endMs": 20880,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 20960,
+          "endMs": 21120,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 21200,
+          "endMs": 21360,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " U?",
+          "startMs": 21440,
+          "endMs": 22240,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 22400,
+          "endMs": 22560,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 22960,
+          "endMs": 23120,
+          "timestampMs": 23040,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 23360,
+          "endMs": 23520,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " child",
+          "startMs": 23600,
+          "endMs": 23920,
+          "timestampMs": 23760,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 24000,
+          "endMs": 24160,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 24240,
+          "endMs": 24400,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 24480,
+          "endMs": 24960,
+          "timestampMs": 24720,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 25200,
+          "endMs": 25280,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25320,
+          "endMs": 25360,
+          "timestampMs": 25340,
+          "confidence": null
+        },
+        {
+          "text": " probability",
+          "startMs": 25440,
+          "endMs": 26000,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 26080,
+          "endMs": 26160,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26200,
+          "endMs": 26240,
+          "timestampMs": 26220,
+          "confidence": null
+        },
+        {
+          "text": " second",
+          "startMs": 26320,
+          "endMs": 26640,
+          "timestampMs": 26480,
+          "confidence": null
+        },
+        {
+          "text": " child?",
+          "startMs": 26720,
+          "endMs": 27200,
+          "timestampMs": 26960,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 27680,
+          "endMs": 27920,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 28000,
+          "endMs": 28160,
+          "timestampMs": 28080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 28240,
+          "endMs": 28320,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 28400,
+          "endMs": 28960,
+          "timestampMs": 28680,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1181,
+        "responseHoldStart": 881,
+        "pausePrompt": 881
+      }
+    },
+    {
+      "id": "q3-sure",
+      "type": "concept",
+      "durationInFrames": 528,
+      "voiceover": {
+        "text": "Start with the people you can be sure of. The man's mother has two recessive alleles, so she gave him one. He's unaffected, so he must be a carrier. The woman's brother is affected, but their parents aren't, so both parents are carriers.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-sure.8932f1fb05d9.mp3",
+        "startFrame": 0,
+        "endFrame": 468
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Start",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 400,
+          "endMs": 480,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 800,
+          "endMs": 960,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1040,
+          "endMs": 1120,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 1160,
+          "endMs": 1200,
+          "timestampMs": 1180,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 1280,
+          "endMs": 1360,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " sure",
+          "startMs": 1520,
+          "endMs": 1760,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " of.",
+          "startMs": 1840,
+          "endMs": 2320,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 2560,
+          "endMs": 2600,
+          "timestampMs": 2580,
+          "confidence": null
+        },
+        {
+          "text": " man's",
+          "startMs": 2640,
+          "endMs": 2960,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " mother",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 3680,
+          "endMs": 3840,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " recessive",
+          "startMs": 3920,
+          "endMs": 4400,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " alleles,",
+          "startMs": 4520,
+          "endMs": 5120,
+          "timestampMs": 4820,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " she",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " gave",
+          "startMs": 5720,
+          "endMs": 5920,
+          "timestampMs": 5820,
+          "confidence": null
+        },
+        {
+          "text": " him",
+          "startMs": 6000,
+          "endMs": 6080,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 6240,
+          "endMs": 6640,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " He's",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " unaffected,",
+          "startMs": 7120,
+          "endMs": 7920,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8000,
+          "endMs": 8160,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " he",
+          "startMs": 8320,
+          "endMs": 8480,
+          "timestampMs": 8400,
+          "confidence": null
+        },
+        {
+          "text": " must",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " carrier.",
+          "startMs": 9360,
+          "endMs": 9840,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " woman's",
+          "startMs": 10320,
+          "endMs": 10560,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " brother",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " affected,",
+          "startMs": 11560,
+          "endMs": 12000,
+          "timestampMs": 11780,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 12400,
+          "endMs": 12800,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " aren't,",
+          "startMs": 12880,
+          "endMs": 13600,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 13720,
+          "endMs": 13840,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 13920,
+          "endMs": 14160,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 14240,
+          "endMs": 14560,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " carriers.",
+          "startMs": 14800,
+          "endMs": 15600,
+          "timestampMs": 15200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-two-thirds",
+      "type": "concept",
+      "durationInFrames": 754,
+      "voiceover": {
+        "text": "Now the woman. Her parents' square has four boxes, but she's unaffected, so cross out the affected box. That leaves three equally likely boxes, and two of them are carriers. So she has a two in three chance of being a carrier. If she is, each child has a one in four chance. Two thirds times one quarter is one in six.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-two-thirds.625c25c90f30.mp3",
+        "startFrame": 0,
+        "endFrame": 694
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " woman.",
+          "startMs": 480,
+          "endMs": 880,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " Her",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " parents'",
+          "startMs": 1600,
+          "endMs": 1960,
+          "timestampMs": 1780,
+          "confidence": null
+        },
+        {
+          "text": " square",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 2400,
+          "endMs": 2560,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 2720,
+          "endMs": 2880,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " boxes,",
+          "startMs": 2960,
+          "endMs": 3760,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " she's",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " unaffected,",
+          "startMs": 4240,
+          "endMs": 5040,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5120,
+          "endMs": 5360,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 5600,
+          "endMs": 5840,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 5960,
+          "endMs": 6080,
+          "timestampMs": 6020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6120,
+          "endMs": 6160,
+          "timestampMs": 6140,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " box.",
+          "startMs": 6720,
+          "endMs": 7440,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 7760,
+          "endMs": 7920,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " leaves",
+          "startMs": 7960,
+          "endMs": 8240,
+          "timestampMs": 8100,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 8320,
+          "endMs": 8720,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " equally",
+          "startMs": 8880,
+          "endMs": 9280,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " likely",
+          "startMs": 9360,
+          "endMs": 9680,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " boxes,",
+          "startMs": 9960,
+          "endMs": 10480,
+          "timestampMs": 10220,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10600,
+          "endMs": 10720,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 11280,
+          "endMs": 11360,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " carriers.",
+          "startMs": 11480,
+          "endMs": 12560,
+          "timestampMs": 12020,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 12680,
+          "endMs": 12800,
+          "timestampMs": 12740,
+          "confidence": null
+        },
+        {
+          "text": " she",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 13440,
+          "endMs": 13600,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 13720,
+          "endMs": 13840,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 13960,
+          "endMs": 14080,
+          "timestampMs": 14020,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 14160,
+          "endMs": 14480,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " being",
+          "startMs": 14760,
+          "endMs": 14880,
+          "timestampMs": 14820,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14933,
+          "endMs": 14987,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " carrier.",
+          "startMs": 15040,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " she",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " is,",
+          "startMs": 16560,
+          "endMs": 17120,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 17200,
+          "endMs": 17440,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " child",
+          "startMs": 17520,
+          "endMs": 17840,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18080,
+          "endMs": 18160,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18400,
+          "endMs": 18640,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 18720,
+          "endMs": 18800,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " chance.",
+          "startMs": 18880,
+          "endMs": 19920,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " Two",
+          "startMs": 20000,
+          "endMs": 20080,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " thirds",
+          "startMs": 20160,
+          "endMs": 20560,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 20640,
+          "endMs": 20880,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 21040,
+          "endMs": 21120,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " quarter",
+          "startMs": 21280,
+          "endMs": 21600,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21920,
+          "endMs": 22080,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 22160,
+          "endMs": 22240,
+          "timestampMs": 22200,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 22320,
+          "endMs": 22480,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " six.",
+          "startMs": 22560,
+          "endMs": 23120,
+          "timestampMs": 22840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-update",
+      "type": "concept",
+      "durationInFrames": 677,
+      "voiceover": {
+        "text": "Now suppose their first child has P K U. The child needed a recessive allele from her, so that proves she's a carrier. Now both are carriers, so the second child's chance is one in four. The classic mistake is giving her a one in two chance of being a carrier. That keeps the affected box, which she can't be.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q3-update.213e515c54b6.mp3",
+        "startFrame": 0,
+        "endFrame": 617
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " suppose",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 760,
+          "endMs": 880,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 960,
+          "endMs": 1200,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " child",
+          "startMs": 1280,
+          "endMs": 1680,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 1760,
+          "endMs": 2000,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 2160,
+          "endMs": 2400,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " K",
+          "startMs": 2480,
+          "endMs": 2720,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " U.",
+          "startMs": 2960,
+          "endMs": 3280,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " child",
+          "startMs": 4000,
+          "endMs": 4320,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " needed",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " recessive",
+          "startMs": 4880,
+          "endMs": 5360,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " her,",
+          "startMs": 5920,
+          "endMs": 6400,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " proves",
+          "startMs": 6880,
+          "endMs": 7200,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " she's",
+          "startMs": 7280,
+          "endMs": 7440,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7480,
+          "endMs": 7520,
+          "timestampMs": 7500,
+          "confidence": null
+        },
+        {
+          "text": " carrier.",
+          "startMs": 7600,
+          "endMs": 8560,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 8760,
+          "endMs": 8960,
+          "timestampMs": 8860,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 9080,
+          "endMs": 9200,
+          "timestampMs": 9140,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 9280,
+          "endMs": 9360,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " carriers,",
+          "startMs": 9440,
+          "endMs": 10160,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " second",
+          "startMs": 10560,
+          "endMs": 10800,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " child's",
+          "startMs": 10880,
+          "endMs": 11280,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11760,
+          "endMs": 11920,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 12000,
+          "endMs": 12080,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12160,
+          "endMs": 12400,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " four.",
+          "startMs": 12560,
+          "endMs": 13440,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 13800,
+          "endMs": 14000,
+          "timestampMs": 13900,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 14080,
+          "endMs": 14560,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " giving",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15280,
+          "endMs": 15360,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 15440,
+          "endMs": 15520,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15640,
+          "endMs": 15760,
+          "timestampMs": 15700,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 15840,
+          "endMs": 16000,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 16079.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 16440,
+          "endMs": 16480,
+          "timestampMs": 16460,
+          "confidence": null
+        },
+        {
+          "text": " being",
+          "startMs": 16560,
+          "endMs": 16720,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " carrier.",
+          "startMs": 17080,
+          "endMs": 17760,
+          "timestampMs": 17420,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 17840,
+          "endMs": 17920,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 18000,
+          "endMs": 18240,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18280,
+          "endMs": 18320,
+          "timestampMs": 18300,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 18560,
+          "endMs": 18800,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " box,",
+          "startMs": 18880,
+          "endMs": 19440,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " she",
+          "startMs": 19720,
+          "endMs": 19840,
+          "timestampMs": 19780,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 19920,
+          "endMs": 20160,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " be.",
+          "startMs": 20240,
+          "endMs": 20560,
+          "timestampMs": 20400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 999,
+      "voiceover": {
+        "text": "Question four. This pedigree shows a rare condition. Of three patterns, autosomal dominant, autosomal recessive and X-linked recessive, which can you rule out? Justify with numbered individuals. Then explain why this pedigree can't decide between the other two, and say which is more likely. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-question.5dff7e03fcca.mp3",
+        "startFrame": 0,
+        "endFrame": 663
+      },
+      "responseHold": {
+        "startFrame": 675,
+        "endFrame": 975
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " four.",
+          "startMs": 480,
+          "endMs": 880,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " This",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " pedigree",
+          "startMs": 1600,
+          "endMs": 2160,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 2320,
+          "endMs": 2480,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " rare",
+          "startMs": 2800,
+          "endMs": 2960,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " condition.",
+          "startMs": 3040,
+          "endMs": 3680,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " Of",
+          "startMs": 4160,
+          "endMs": 4320,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " patterns,",
+          "startMs": 4720,
+          "endMs": 5280,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " autosomal",
+          "startMs": 5600,
+          "endMs": 6160,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " dominant,",
+          "startMs": 6240,
+          "endMs": 6960,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " autosomal",
+          "startMs": 7120,
+          "endMs": 7520,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " recessive",
+          "startMs": 7600,
+          "endMs": 8160,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8400,
+          "endMs": 8560,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " X-linked",
+          "startMs": 8720,
+          "endMs": 9120,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " recessive,",
+          "startMs": 9200,
+          "endMs": 10160,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 10240,
+          "endMs": 10400,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 10480,
+          "endMs": 10640,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 10680,
+          "endMs": 10720,
+          "timestampMs": 10700,
+          "confidence": null
+        },
+        {
+          "text": " rule",
+          "startMs": 10800,
+          "endMs": 11040,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " out?",
+          "startMs": 11120,
+          "endMs": 11440,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " Justify",
+          "startMs": 12000,
+          "endMs": 12560,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " numbered",
+          "startMs": 12880,
+          "endMs": 13200,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " individuals.",
+          "startMs": 13280,
+          "endMs": 14360,
+          "timestampMs": 13820,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 14640,
+          "endMs": 14880,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 15120,
+          "endMs": 15600,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 15680,
+          "endMs": 15760,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " pedigree",
+          "startMs": 16000,
+          "endMs": 16480,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 16560,
+          "endMs": 16800,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " decide",
+          "startMs": 16880,
+          "endMs": 17360,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " between",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17720,
+          "endMs": 17760,
+          "timestampMs": 17740,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 17840,
+          "endMs": 18000,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 18080,
+          "endMs": 18640,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18720,
+          "endMs": 18800,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " say",
+          "startMs": 18880,
+          "endMs": 19040,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 19120,
+          "endMs": 19360,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19440,
+          "endMs": 19520,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 19600,
+          "endMs": 19680,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " likely.",
+          "startMs": 19760,
+          "endMs": 20520,
+          "timestampMs": 20140,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 20800,
+          "endMs": 21040,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 21120,
+          "endMs": 21280,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 21520,
+          "endMs": 22080,
+          "timestampMs": 21800,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 975,
+        "responseHoldStart": 675,
+        "pausePrompt": 675
+      }
+    },
+    {
+      "id": "q4-rule-out",
+      "type": "concept",
+      "durationInFrames": 754,
+      "voiceover": {
+        "text": "Test X-linked recessive first. Individual 2 in generation one is an affected mother. Under that pattern, both her X chromosomes carry the allele, so every son gets it. But her son, individual 2 in generation two, is unaffected. And her daughter is affected, with an unaffected father. So it's not X-linked recessive.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-rule-out.31344eedb6e2.mp3",
+        "startFrame": 0,
+        "endFrame": 694
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Test",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " X-linked",
+          "startMs": 480,
+          "endMs": 960,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " recessive",
+          "startMs": 1040,
+          "endMs": 1520,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " first.",
+          "startMs": 1600,
+          "endMs": 2400,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " Individual",
+          "startMs": 2720,
+          "endMs": 3200,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 3360,
+          "endMs": 3680,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " generation",
+          "startMs": 3920,
+          "endMs": 4480,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4560,
+          "endMs": 4880,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 5040,
+          "endMs": 5120,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 5160,
+          "endMs": 5200,
+          "timestampMs": 5180,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 5280,
+          "endMs": 5760,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " mother.",
+          "startMs": 5840,
+          "endMs": 6240,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " Under",
+          "startMs": 6800,
+          "endMs": 7040,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " pattern,",
+          "startMs": 7280,
+          "endMs": 8000,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " X",
+          "startMs": 8560,
+          "endMs": 8720,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " chromosomes",
+          "startMs": 8800,
+          "endMs": 9440,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 9520,
+          "endMs": 9760,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9800,
+          "endMs": 9840,
+          "timestampMs": 9820,
+          "confidence": null
+        },
+        {
+          "text": " allele,",
+          "startMs": 9920,
+          "endMs": 10560,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10680,
+          "endMs": 10800,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 10880,
+          "endMs": 11200,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " son",
+          "startMs": 11280,
+          "endMs": 11520,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 11600,
+          "endMs": 11840,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 11920,
+          "endMs": 12080,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " son,",
+          "startMs": 12960,
+          "endMs": 13520,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " individual",
+          "startMs": 13760,
+          "endMs": 14000,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " 2",
+          "startMs": 14160,
+          "endMs": 14320,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " generation",
+          "startMs": 14560,
+          "endMs": 15120,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 15200,
+          "endMs": 15680,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 15760,
+          "endMs": 15920,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " unaffected.",
+          "startMs": 16000,
+          "endMs": 16720,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 17200,
+          "endMs": 17280,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " daughter",
+          "startMs": 17600,
+          "endMs": 18000,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18160,
+          "endMs": 18320,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " affected,",
+          "startMs": 18560,
+          "endMs": 19040,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 19280,
+          "endMs": 19360,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " unaffected",
+          "startMs": 19440,
+          "endMs": 19920,
+          "timestampMs": 19680,
+          "confidence": null
+        },
+        {
+          "text": " father.",
+          "startMs": 20000,
+          "endMs": 20480,
+          "timestampMs": 20240,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 20880,
+          "endMs": 21120,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 21280,
+          "endMs": 21440,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 21520,
+          "endMs": 21840,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " X-linked",
+          "startMs": 21920,
+          "endMs": 22320,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " recessive.",
+          "startMs": 22400,
+          "endMs": 23120,
+          "timestampMs": 22760,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q4-both-fit",
+      "type": "concept",
+      "durationInFrames": 852,
+      "voiceover": {
+        "text": "Now look for the giveaways. There are no unaffected parents with an affected child, and no affected parents with an unaffected child. Without one, both patterns fit. Dominant fits if each affected person has one copy of the allele. Recessive fits too, but only if the two unaffected partners, individual 1 in generation one and individual 4 in generation two, are both carriers.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-both-fit.c41a9afe1908.mp3",
+        "startFrame": 0,
+        "endFrame": 792
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 520,
+          "endMs": 560,
+          "timestampMs": 540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 640,
+          "endMs": 720,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " giveaways.",
+          "startMs": 840,
+          "endMs": 1760,
+          "timestampMs": 1300,
+          "confidence": null
+        },
+        {
+          "text": " There",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 2520,
+          "endMs": 2640,
+          "timestampMs": 2580,
+          "confidence": null
+        },
+        {
+          "text": " unaffected",
+          "startMs": 2800,
+          "endMs": 3360,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 3440,
+          "endMs": 3840,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 4120,
+          "endMs": 4160,
+          "timestampMs": 4140,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " child,",
+          "startMs": 4720,
+          "endMs": 5520,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 5840,
+          "endMs": 6000,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 6200,
+          "endMs": 6400,
+          "timestampMs": 6300,
+          "confidence": null
+        },
+        {
+          "text": " parents",
+          "startMs": 6480,
+          "endMs": 6880,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 7200,
+          "endMs": 7280,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " unaffected",
+          "startMs": 7360,
+          "endMs": 7840,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " child.",
+          "startMs": 7920,
+          "endMs": 8400,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " Without",
+          "startMs": 8960,
+          "endMs": 9280,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 9400,
+          "endMs": 9840,
+          "timestampMs": 9620,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 9960,
+          "endMs": 10080,
+          "timestampMs": 10020,
+          "confidence": null
+        },
+        {
+          "text": " patterns",
+          "startMs": 10160,
+          "endMs": 10480,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " fit.",
+          "startMs": 10560,
+          "endMs": 10880,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " Dominant",
+          "startMs": 11440,
+          "endMs": 11840,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 11920,
+          "endMs": 12240,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 12360,
+          "endMs": 12480,
+          "timestampMs": 12420,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 12560,
+          "endMs": 12720,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 12800,
+          "endMs": 13120,
+          "timestampMs": 12960,
+          "confidence": null
+        },
+        {
+          "text": " person",
+          "startMs": 13200,
+          "endMs": 13600,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 14000,
+          "endMs": 14160,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 14240,
+          "endMs": 14560,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 14600,
+          "endMs": 14640,
+          "timestampMs": 14620,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " allele.",
+          "startMs": 15040,
+          "endMs": 15560,
+          "timestampMs": 15300,
+          "confidence": null
+        },
+        {
+          "text": " Recessive",
+          "startMs": 15840,
+          "endMs": 16320,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 16400,
+          "endMs": 16640,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " too,",
+          "startMs": 16720,
+          "endMs": 17360,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 17480,
+          "endMs": 17600,
+          "timestampMs": 17540,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 17680,
+          "endMs": 17920,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 18320,
+          "endMs": 18480,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " unaffected",
+          "startMs": 18640,
+          "endMs": 19120,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " partners,",
+          "startMs": 19200,
+          "endMs": 20080,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " individual",
+          "startMs": 20320,
+          "endMs": 20560,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " 1",
+          "startMs": 20720,
+          "endMs": 20960,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 21040,
+          "endMs": 21120,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " generation",
+          "startMs": 21200,
+          "endMs": 21680,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 21840,
+          "endMs": 22080,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22400,
+          "endMs": 22480,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " individual",
+          "startMs": 22560,
+          "endMs": 23040,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " 4",
+          "startMs": 23200,
+          "endMs": 23520,
+          "timestampMs": 23360,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 23600,
+          "endMs": 23680,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " generation",
+          "startMs": 23760,
+          "endMs": 24240,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 24400,
+          "endMs": 25040,
+          "timestampMs": 24720,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 25160,
+          "endMs": 25280,
+          "timestampMs": 25220,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 25440,
+          "endMs": 25600,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " carriers.",
+          "startMs": 25680,
+          "endMs": 26400,
+          "timestampMs": 26040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q4-more-likely",
+      "type": "concept",
+      "durationInFrames": 612,
+      "voiceover": {
+        "text": "For a rare condition, two unrelated partners both being carriers is unlikely, so dominant is more likely. But it isn't proven. The classic mistake is saying it must be dominant because it's in every generation. That's a clue, not proof: recessive fits too.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/q4-more-likely.666c7430012d.mp3",
+        "startFrame": 0,
+        "endFrame": 552
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "For",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 200,
+          "endMs": 240,
+          "timestampMs": 220,
+          "confidence": null
+        },
+        {
+          "text": " rare",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " condition,",
+          "startMs": 560,
+          "endMs": 1440,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 1520,
+          "endMs": 1760,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " unrelated",
+          "startMs": 1920,
+          "endMs": 2480,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " partners",
+          "startMs": 2560,
+          "endMs": 3040,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 3200,
+          "endMs": 3440,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " being",
+          "startMs": 3520,
+          "endMs": 3680,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " carriers",
+          "startMs": 3760,
+          "endMs": 4240,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " unlikely,",
+          "startMs": 4560,
+          "endMs": 5600,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " dominant",
+          "startMs": 5920,
+          "endMs": 6400,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " likely.",
+          "startMs": 6960,
+          "endMs": 7440,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 7840,
+          "endMs": 8000,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 8240,
+          "endMs": 8280,
+          "timestampMs": 8260,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 8320,
+          "endMs": 8520,
+          "timestampMs": 8420,
+          "confidence": null
+        },
+        {
+          "text": " proven.",
+          "startMs": 8560,
+          "endMs": 9120,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 9960,
+          "endMs": 10160,
+          "timestampMs": 10060,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 10240,
+          "endMs": 10560,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10640,
+          "endMs": 10720,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " saying",
+          "startMs": 10800,
+          "endMs": 11040,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " must",
+          "startMs": 11520,
+          "endMs": 11760,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " dominant",
+          "startMs": 12000,
+          "endMs": 12400,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 12520,
+          "endMs": 12640,
+          "timestampMs": 12580,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12920,
+          "endMs": 12960,
+          "timestampMs": 12940,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 13120,
+          "endMs": 13360,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " generation.",
+          "startMs": 13440,
+          "endMs": 14160,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 14640,
+          "endMs": 14827,
+          "timestampMs": 14733.5,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14853,
+          "endMs": 14880,
+          "timestampMs": 14866.5,
+          "confidence": null
+        },
+        {
+          "text": " clue,",
+          "startMs": 15040,
+          "endMs": 15680,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 15800,
+          "endMs": 15920,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " proof:",
+          "startMs": 16000,
+          "endMs": 16880,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " recessive",
+          "startMs": 16960,
+          "endMs": 17440,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " fits",
+          "startMs": 17520,
+          "endMs": 17840,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 18000,
+          "endMs": 18400,
+          "timestampMs": 18200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 908,
+      "voiceover": {
+        "text": "So here's how to start. Choose the model: does the heterozygote look in between, or show both, and do sons and daughters differ? Write every genotype you can be sure of. For someone who's unaffected, cross out the affected box before you share the chance. For separate offspring of known parents, multiply. And if there's no giveaway, say what fits, and what's more likely. Next: how common an allele is across a whole population.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/decision-board.bfc0ec557349.mp3",
+        "startFrame": 0,
+        "endFrame": 848
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " here's",
+          "startMs": 480,
+          "endMs": 720,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 800,
+          "endMs": 880,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 920,
+          "endMs": 960,
+          "timestampMs": 940,
+          "confidence": null
+        },
+        {
+          "text": " start.",
+          "startMs": 1040,
+          "endMs": 1720,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " Choose",
+          "startMs": 2000,
+          "endMs": 2240,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " model:",
+          "startMs": 2560,
+          "endMs": 3120,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 3200,
+          "endMs": 3360,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3400,
+          "endMs": 3440,
+          "timestampMs": 3420,
+          "confidence": null
+        },
+        {
+          "text": " heterozygote",
+          "startMs": 3480,
+          "endMs": 4240,
+          "timestampMs": 3860,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 4360,
+          "endMs": 4480,
+          "timestampMs": 4420,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " between,",
+          "startMs": 4720,
+          "endMs": 5520,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 5760,
+          "endMs": 6000,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " both,",
+          "startMs": 6080,
+          "endMs": 6800,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 7120,
+          "endMs": 7280,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " sons",
+          "startMs": 7360,
+          "endMs": 7600,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7680,
+          "endMs": 7760,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " daughters",
+          "startMs": 7840,
+          "endMs": 8160,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " differ?",
+          "startMs": 8240,
+          "endMs": 8880,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " Write",
+          "startMs": 9120,
+          "endMs": 9440,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 9520,
+          "endMs": 9840,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " genotype",
+          "startMs": 9920,
+          "endMs": 10480,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 10560,
+          "endMs": 10640,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 10680,
+          "endMs": 10720,
+          "timestampMs": 10700,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " sure",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " of.",
+          "startMs": 11280,
+          "endMs": 11720,
+          "timestampMs": 11500,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 11920,
+          "endMs": 12000,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " someone",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " who's",
+          "startMs": 12400,
+          "endMs": 12640,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " unaffected,",
+          "startMs": 12720,
+          "endMs": 13600,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " cross",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " affected",
+          "startMs": 14480,
+          "endMs": 14720,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " box",
+          "startMs": 14800,
+          "endMs": 15120,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 15200,
+          "endMs": 15600,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 15680,
+          "endMs": 15760,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " share",
+          "startMs": 15840,
+          "endMs": 16000,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16040,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16060,
+          "confidence": null
+        },
+        {
+          "text": " chance.",
+          "startMs": 16160,
+          "endMs": 16840,
+          "timestampMs": 16500,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 17040,
+          "endMs": 17120,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " separate",
+          "startMs": 17200,
+          "endMs": 17520,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 17600,
+          "endMs": 18000,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 18040,
+          "endMs": 18080,
+          "timestampMs": 18060,
+          "confidence": null
+        },
+        {
+          "text": " known",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " parents,",
+          "startMs": 18560,
+          "endMs": 19280,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " multiply.",
+          "startMs": 19360,
+          "endMs": 20080,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 20560,
+          "endMs": 20640,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " there's",
+          "startMs": 20680,
+          "endMs": 20800,
+          "timestampMs": 20740,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " giveaway,",
+          "startMs": 21040,
+          "endMs": 21760,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " say",
+          "startMs": 21840,
+          "endMs": 22000,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 22080,
+          "endMs": 22160,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " fits,",
+          "startMs": 22240,
+          "endMs": 22800,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " what's",
+          "startMs": 23040,
+          "endMs": 23200,
+          "timestampMs": 23120,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 23280,
+          "endMs": 23360,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " likely.",
+          "startMs": 23440,
+          "endMs": 24160,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " Next:",
+          "startMs": 24480,
+          "endMs": 25080,
+          "timestampMs": 24780,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 25280,
+          "endMs": 25440,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 25520,
+          "endMs": 25760,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 25840,
+          "endMs": 25920,
+          "timestampMs": 25880,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 26120,
+          "endMs": 26320,
+          "timestampMs": 26220,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26440,
+          "endMs": 26560,
+          "timestampMs": 26500,
+          "confidence": null
+        },
+        {
+          "text": " across",
+          "startMs": 26640,
+          "endMs": 26880,
+          "timestampMs": 26760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 26920,
+          "endMs": 26960,
+          "timestampMs": 26940,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 27120,
+          "endMs": 27280,
+          "timestampMs": 27200,
+          "confidence": null
+        },
+        {
+          "text": " population.",
+          "startMs": 27360,
+          "endMs": 28240,
+          "timestampMs": 27800,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Biology-Y12-M5-G02-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 280,
+          "endMs": 320,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 360,
+          "endMs": 400,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 720,
+          "endMs": 1440,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2000,
+          "endMs": 2040,
+          "timestampMs": 2020,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2880,
+          "endMs": 3040,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3880,
+          "endMs": 4000,
+          "timestampMs": 3940,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4080,
+          "endMs": 4480,
+          "timestampMs": 4280,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

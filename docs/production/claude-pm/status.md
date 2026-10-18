@@ -808,3 +808,94 @@ Created 49 transparent 2000 x 2000 ink and watercolour plates, 26 Chemistry and 
 Reused the AgCl, BaSO4, Cu(OH)2, Fe(OH)3 and PbI2 precipitation tubes and the colourimeter. Added cream AgBr, pale-yellow AgI and green Fe(OH)2 from the Module 8 ion-test pack. The six flame colours share one burner. Generated line differences in the flame and reagent process pairs call for cuts or short dissolves.
 
 Cataract and lens-clouding plates were omitted because no Module 8 Biology site lesson uses cataracts. The glucose pair uses the site continuous glucose monitor reader. Strontium flame, sediment core, hospital bed, insulin pen and map are brief-requested context artwork but are not named on the current site pages. The unlabelled map has watercolour-filled continents for legibility at 200 px. No other requested plate remains unfinished. Question for Claude: none.
+
+### Brief 70: B13, G01, G02 and G03 Biology plates (18 October 2026)
+
+Created 14 transparent 2000 x 2000 ink and watercolour plates. Prompt details, source files, hashes and QA results are in `docs/production/claude-pm/assets/brief70-provenance.json`. Dark, cream, greyscale and alignment views are in `docs/production/claude-pm/assets/brief70-qa/`.
+
+- `public/assets/biology/m5x-sample-tube-rack-v1.png`: two-row blood sample rack with blank label strips.
+- `public/assets/biology/m5x-anopheles-mosquito-v1.png`: raised-abdomen Anopheles with plain legs, spotted wings and long palps.
+- `public/assets/biology/m5x-tasmanian-devil-v1.png`: healthy standing adult.
+- `public/assets/biology/m5x-newborn-blood-spot-card-v1.png`: blood-spot card with blank form areas.
+- `public/assets/biology/m5x-firefly-glow-v1.png`: glowing Photinus-type firefly.
+- `public/assets/biology/m5x-koala-v1.png`: koala in a eucalyptus branch fork.
+- `public/assets/biology/m5x-sweetpea-purple-v1.png`: purple sweet pea flowering stem.
+- `public/assets/biology/m5x-sweetpea-red-v1.png`: aligned red sweet pea edit.
+- `public/assets/biology/m5x-chicken-black-v1.png`: black Andalusian chicken.
+- `public/assets/biology/m5x-chicken-blue-v1.png`: aligned blue Andalusian with dark feather lacing.
+- `public/assets/biology/m5x-chicken-splash-v1.png`: aligned splash Andalusian.
+- `public/assets/biology/m5x-cat-tortoiseshell-v1.png`: tortoiseshell domestic shorthair.
+- `public/assets/biology/m5x-cat-orange-v1.png`: aligned orange tabby cat.
+- `public/assets/biology/m5x-cat-black-v1.png`: aligned black cat.
+
+All files have real alpha and at least 10.65 per cent clear margin. The paired sets align closely and remain distinguishable in greyscale at 200 px. Nothing remains unfinished. Question for Claude: none.
+
+### Brief 67: P01, P03, B11 and B12 pre-voice fact check (18 October 2026)
+
+Created `docs/production/claude-pm/checks/codex-check-67.md` with error-only findings for all four designs. Checked narration, described on-screen text, scientific claims, calculations and cited 2017 syllabus wording. The B11 genotype and allele counts recompute correctly; the P01 equilibrium colours, equations and shift directions and the P03 net ionic equations check out. No YouTube metadata is present in the four design files, so description quotes could not be checked. NSW school chemical categories for cobalt(II) chloride solid and solution, lead(II) nitrate and barium nitrate remain unconfirmed because the official lookup requires staff access. Question for Claude: please supply the upload metadata when it exists for a separate exact-quote check.
+
+
+### Brief 65, YouTube site lesson links (18 October 2026)
+
+Created `docs/production/claude-pm/youtube/site-links.md` with 25 published videos and six unpublished draft entries. Checked the matching site files and clean URL redirects. Added the link line to the six unpublished descriptions in `docs/production/claude-pm/youtube/wave4-metadata-draft.json`. Created `docs/production/claude-pm/youtube/description-template.md` and linked it from `docs/production/claude-pm/codex-prompts/28-youtube-upload-c4a-b4-and-ledger.md` for future uploads.
+
+Published videos updated: **0**. No YouTube Data API OAuth credentials or API client are configured in this workspace, so live descriptions could not be changed or fetched again. Three G03 practice videos were also skipped because each spans multiple site lessons and its primary destination needs a decision. Question for Claude: please confirm the destination link(s) for G03b, G03c and G03d and provide an authenticated YouTube Data API path for the live update and read-back.
+
+### Brief 66: C11, C13, C14, C15, B7, B8, B9 and B10 fact check (18 October 2026)
+
+Created `docs/production/claude-pm/checks/codex-check-66.md` with error-only findings for the designs, exact recorded narration, scene text and 2017 syllabus citations. C15 and B9 had no error found. Nothing could not be completed. Question for Claude: none. No narration, lesson JSON or scene code changed.
+
+### Brief 69: Year 12 Module 6 video route draft (18 October 2026)
+
+Created `docs/production/module6-video-route-draft.json` and `docs/production/module6-video-route-draft.md`. The draft has 27 Chemistry videos (16 core, 4 calculation practice, 7 practical) and 20 Biology videos (20 core). All 33 local 2017 Module 6 content points have candidate mappings. Checked unique IDs, site paths and prerequisite links. Nothing in the draft remains unfinished. Question for Claude: please verify the Ka/pKa point quoted by Chemistry site L12 and its pre-design pack, which has no matching ID in the local 2017 syllabus ledger, before assigning direct syllabus coverage.
+
+### Brief 68: draft site fixes for M7, M8 and Year 11 Biology (18 October 2026)
+
+Created `docs/production/claude-pm/site-fixes-draft-m7-m8-y11bio.md`. It lists exact old and new text with sources, grouped by site file, with wrong science before misleading claims. Counts of affected site lessons: Chemistry M7 7, Chemistry M8 7, Biology M7 7, Biology M8 1, Year 11 Biology FA1 2, FA2 2, FA3 3. There are 29 affected lesson files and 82 exact find-and-replace pairs. All old strings were found in the named read-only site files. No site file was edited. Some corrections touch diagrams or repeated long worked answers; the draft identifies those spots for a rendered-page check when the owner applies the changes. Question for Claude: none.
+
+### Brief 28m: B9, C11 and C14 YouTube uploads (18 October 2026)
+
+Published all three owner-approved videos from MP4s whose SHA-256 hashes matched the brief: B9 https://youtu.be/6BhGJlXbKCA (8:20), C11 https://youtu.be/PQ9nuqM4b-Y (9:00), and C14 https://youtu.be/zIYzqE5XbaU (9:26). Updated `docs/production/claude-pm/youtube/wave4-uploads.json` with the exact file and caption hashes, descriptions, nine scene-timed chapters per video, settings, thumbnail choices, public playlist positions and Studio checks. The 2017 syllabus wording was checked against the local official syllabus extracts. Brief 65 was completed during this upload, so each description now begins with its verified HSCScience lesson link. The saved links for B9 and C11 survived a Studio reload; C14's link was present after publication.
+
+All three are Public, not made for kids, Education, English (Australia), with AI use disclosed and measured timed SRT captions published. Studio showed HD processing complete and no copyright issues. The public Manual playlists place B9 at Biology position 11 after B6a, C11 at Chemistry position 16 after G03d, and C14 at position 17 after C11. B9 and C11 use auto-generated thumbnail frame 2; C14 uses frame 1 showing the saturated solution. End screens were skipped because the final key notes fill the screen. No upload step remains unfinished. Question for Claude: none.
+
+### Brief 55: B6b recipe book plates (18 October 2026)
+
+Created two transparent ink and watercolour plates for the recipe book analogy. Both are 2000 px RGBA, have at least 10% clear margin, and read at 200 px on cream. Provenance: `docs/production/claude-pm/assets/brief55-provenance.json`. QA: `docs/production/claude-pm/assets/brief55-qa/`.
+
+- `public/assets/biology/m5x-recipe-book-copy-v1.png`: closed recipe book with a separate copied sheet.
+- `public/assets/biology/m5x-recipe-sheet-v1.png`: loose blank recipe sheet.
+
+The current B6b design also describes a chain on the book and a death cap plate. Those are outside Brief 55 and remain a separate design asset request. No narration or render was changed. Question for Claude: none.
+
+### Brief 71: Biology practical plates P01, P02 and P03 (18 October 2026)
+
+Created all 25 requested transparent ink and watercolour plates. Each has real alpha, at least 8% clear margin, and a 200 px dark-board and cream QA view. The five coloured pop beads and two-socket centromere came from one shared canvas and were checked as a chain at 200 px. Provenance: `docs/production/claude-pm/assets/brief71-provenance.json`. QA: `docs/production/claude-pm/assets/brief71-qa/`.
+
+- `public/assets/biology/m5x-card-sheets-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-scissors-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-tape-roll-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-pencil-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-card-pile-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-paper-ribosome-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-trna-card-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-clipboard-sheet-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-popbead-red-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-popbead-gold-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-popbead-green-v1.png`: P01 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-string-loop-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-sticker-sheet-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-index-cards-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-index-card-back-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-die-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-popbead-plum-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-popbead-teal-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-popbead-centromere-v1.png`: P02 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-hand-mirror-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-slip-box-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-slip-blank-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-bead-bag-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-bead-red-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
+- `public/assets/biology/m5x-bead-white-v1.png`: P03 plate, verified against its recorded SHA-256 hash.
+
+No narration or render was changed. Question for Claude: none.

@@ -15,6 +15,7 @@ Follow exactly what you did for briefs 11 and 18 (see `wave2-uploads.json` and `
 
 - Check each MP4's sha256 before uploading and record it.
 - Descriptions must include the syllabus dotpoint block (standing rule). The draft's Biology dotpoints are marked `verifyWording`: check them word for word against `out/research/continuity-2026-10-08/biology-2017-paragraphs.json` and the official 2017 syllabus.
+- Start each description with the verified site lesson link line in `docs/production/claude-pm/youtube/description-template.md`. Check the matching site lesson file before upload.
 - Playlist position follows the syllabus order, not upload order. Chemistry: C1, C2, G01, C3, C4a, C4b, C5... (put G01 between C2 and C3, and C4a straight after C3). Biology: B1, B2a, B2b, B2c, mould, B3a, B3a part 2, B3b, B4, B5a... (several are not uploaded yet; put B2b between B2a and B2c, and B4 after the last uploaded Biology video and note in the hand-in that later inserts will be needed).
 - These four renders are the first with loudness normalised to about -14 LUFS. If Studio shows any audio warning, record it.
 

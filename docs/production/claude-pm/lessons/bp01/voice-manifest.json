@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-P01-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/bp01/lesson.json",
+  "lessonSha256": "5ebd4b9396d7901b976f682cafb512daeaa533788911fac019f21600251de567",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/bp01/lesson.production-brief.json",
+    "sha256": "83ff9f27f45f25413e68884555138194d60c603b8e55a8b703549f11ce6f4380"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This strip of paper cards is a model of twelve base pairs of DNA. It can't do anything a real cell does. So why build it? Because moving every piece yourself makes you follow the same rules the cell follows. In this practical you'll build two models, one of DNA copying and one of making a polypeptide, and then judge what each one gets right and what it gets wrong.",
+      "hash": "6b35615a0318",
+      "textSha256": "6b35615a0318de1add3ae2763cb5366381cc03e711506b6d7387d0f05d76adfd",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/hook.6b35615a0318.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/hook.6b35615a0318.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/hook.6b35615a0318.generation.json",
+      "plannedRequestSha256": "4f2becb5da875a0fdc70b8b550664e0bb19b778cbd4f9d01f02a7997aa824bb2"
+    },
+    {
+      "id": "aim-kit",
+      "parentSceneId": "aim-kit",
+      "text": "Here's the aim: build models of DNA replication and polypeptide synthesis, and assess how well they represent the real processes. You need card in four colours, scissors, sticky tape, a pencil, a handful of pop-beads and three small paper cups. Blue card is original DNA, green is new DNA, yellow is RNA, and orange cards are transfer RNAs. The beads are amino acids. Keep the colours the same all the way through, because they let you track old and new strands. The only hazard is the scissors, so cut on the desk.",
+      "hash": "a8401ccc7865",
+      "textSha256": "a8401ccc78652c1aefd05d6300b5f4fbd86c91c967d1cba5ad223ed3ab62bd24",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/aim-kit.a8401ccc7865.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/aim-kit.a8401ccc7865.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/aim-kit.a8401ccc7865.generation.json",
+      "plannedRequestSha256": "b65216fb0dddf93f248b177c950e62f59455d559765ec98f903997326374aa1e"
+    },
+    {
+      "id": "cut-nucleotides",
+      "parentSceneId": "cut-nucleotides",
+      "text": "Step one: make the nucleotides. Each card is one nucleotide: draw a phosphate and a sugar on the strip, and the tab is the base. Cut the tabs so that A only fits T, and C only fits G. That shape rule is the heart of the model, because in real DNA only those partners fit and hold together with hydrogen bonds. So give A and T tabs two notches, and C and G tabs three, one notch per hydrogen bond.",
+      "hash": "03865d4974f4",
+      "textSha256": "03865d4974f4a7902dcc2239cca011b86efa02e380c58d51d135c2ba111f05fe",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/cut-nucleotides.03865d4974f4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/cut-nucleotides.03865d4974f4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/cut-nucleotides.03865d4974f4.generation.json",
+      "plannedRequestSha256": "9c54f5ed3a9667928dc36ab420ea89b2ab24fb720786d6b4215ee2247d8ac244"
+    },
+    {
+      "id": "make-synthesis-pieces",
+      "parentSceneId": "make-synthesis-pieces",
+      "text": "While you're cutting, make the pieces for the second model too. Cut yellow RNA cards exactly like the DNA cards, but write U wherever you'd write T. A U tab gets the same two notches as T, so it fits A. For each transfer RNA, cut an orange T-shaped card with three base tabs along its bottom edge. Those three tabs are its anticodon. Glue a paper cup on top to hold one bead. You need three: U A C with a red bead, C G U with a gold bead, and A A A with a green bead, matched using a codon chart. Last, cut a ribosome shape from card, with a window exactly three tabs wide, so it shows one codon at a time.",
+      "hash": "8e5f8fe2027f",
+      "textSha256": "8e5f8fe2027f61a3cb9072afa0cb1afc2d873564a41ddaa2a1dcdf309dcf1b7b",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/make-synthesis-pieces.8e5f8fe2027f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/make-synthesis-pieces.8e5f8fe2027f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/make-synthesis-pieces.8e5f8fe2027f.generation.json",
+      "plannedRequestSha256": "8aae20e45644535af09ee7d446b941cd4da71177aaeba1284a9897a647974a59"
+    },
+    {
+      "id": "build-molecule",
+      "parentSceneId": "build-molecule",
+      "text": "Step two: build the starting molecule. Tape twelve blue cards into a row, backbone to backbone, in this order. Then pair a second blue strand against it, tab to tab. Draw a five prime to three prime arrow along each strand, and point the second arrow the other way, because DNA is antiparallel. The tape holds each backbone together, like strong covalent bonds, while the tabs only touch, like the weaker hydrogen bonds between bases.",
+      "hash": "bc24c2982b71",
+      "textSha256": "bc24c2982b71de0b8513c0733b58b8c08156e9c8c9d348c637a1e3af5446bc32",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/build-molecule.bc24c2982b71.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/build-molecule.bc24c2982b71.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/build-molecule.bc24c2982b71.generation.json",
+      "plannedRequestSha256": "968f287b9f0e2e837e565cdeb88ba25015fc7e8c07caef18c362aea1fc26ad02"
+    },
+    {
+      "id": "replicate",
+      "parentSceneId": "replicate",
+      "text": "Step three: copy it. Pull the two strands apart at the tabs. The tape stays intact, just as the backbones do when the hydrogen bonds break. Now each blue strand is a template. Add green cards one at a time, each opposite its only matching partner, and tape the new backbone. You end up with two molecules. Each one has one blue strand and one green strand.",
+      "hash": "7c3739c629fb",
+      "textSha256": "7c3739c629fb550d6c4fdbef94ec15e8bd3b4beae49b10b8d3f8ea8e9f3c5a4f",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/replicate.7c3739c629fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/replicate.7c3739c629fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/replicate.7c3739c629fb.generation.json",
+      "plannedRequestSha256": "4ce7c95cd5663ef1d03cd6c7b11957f1438778814ce04e6020b1239bfc8b5e54"
+    },
+    {
+      "id": "record-check",
+      "parentSceneId": "record-check",
+      "text": "Now record what the model shows. Draw both molecules and label the old and new strands. Then read each one against the original. They match base for base, because every new card was set by its template. Try forcing a wrong card in: it won't sit flat, so a mismatch stands out. One original strand in each molecule is the semi-conservative result. In a dividing cell, these two copies stay joined as the sister chromatids that mitosis later separates.",
+      "hash": "f9c38e10a404",
+      "textSha256": "f9c38e10a40495ac3e579e17fcb6dc1d904b8529018ac2f63812010e53ff925b",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/record-check.f9c38e10a404.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/record-check.f9c38e10a404.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/record-check.f9c38e10a404.generation.json",
+      "plannedRequestSha256": "a6f79942f3d3179cf5a625eba1c841ab995998c1c865abdd618782844822c326"
+    },
+    {
+      "id": "transcribe",
+      "parentSceneId": "transcribe",
+      "text": "Step four switches to the second model: making a polypeptide. Unzip the whole gene, and use only the template strand. Build an RNA strand from yellow cards, pairing as before, except that RNA has U instead of T, so a yellow U sits opposite every A. Then peel the yellow strand off and close the DNA back up. That yellow strip is your messenger RNA, and the gene itself is unchanged.",
+      "hash": "3afbd2aa8b24",
+      "textSha256": "3afbd2aa8b24c6a7006272df6a02bb948e7e9ca4f93955d16cf6795012eb368e",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/transcribe.3afbd2aa8b24.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/transcribe.3afbd2aa8b24.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/transcribe.3afbd2aa8b24.generation.json",
+      "plannedRequestSha256": "d3b422be8c9d2fd41f092847684873dbfda9849170c21911a214d7ae7b8b4d17"
+    },
+    {
+      "id": "translate",
+      "parentSceneId": "translate",
+      "text": "Step five: translation. Slide the messenger RNA through a paper ribosome, which shows three bases at a time, one codon. Each orange card carries one bead, its amino acid, and three tabs, its anticodon, that fit its codon. Match the first card to the start codon, A, U, G. Then match the next, and clip its bead to the first. Keep going until a stop codon, where no card fits. Then the bead chain comes off.",
+      "hash": "e3f3ea6c4210",
+      "textSha256": "e3f3ea6c42103b43e84708d8aceec8e150b39373516405fb3deb0992b919d675",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/translate.e3f3ea6c4210.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/translate.e3f3ea6c4210.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/translate.e3f3ea6c4210.generation.json",
+      "plannedRequestSha256": "6472ed13f0dfaf0c71e59a44351765f9a40063361b93b0cb8f9ebf0d8b73f605"
+    },
+    {
+      "id": "results-table",
+      "parentSceneId": "results-table",
+      "text": "Record the results in a table: codon, anticodon and amino acid, using a codon chart. This gene gives A, U, G, then G, C, A, then U, U, U, then the stop codon U, G, A. That's methionine, alanine and phenylalanine: three amino acids joined in order. Three bases chose each bead, so changing one card in the DNA can change a bead in the chain.",
+      "hash": "5188e1b6bcdc",
+      "textSha256": "5188e1b6bcdcc97558f0da354edb7b8dc84b5284650448ffb26f7fda8187e031",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/results-table.5188e1b6bcdc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/results-table.5188e1b6bcdc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/results-table.5188e1b6bcdc.generation.json",
+      "plannedRequestSha256": "a2762aa3519dc0f984be9ac236f1f531c1f754a692d4c39be89ab4a3a3fb5157"
+    },
+    {
+      "id": "assess-strengths",
+      "parentSceneId": "assess-strengths",
+      "text": "Now assess the models. Start with what they represent well. The tab shapes show why A pairs with T and C with G. The colours show that each new molecule keeps one original strand. The ribosome window shows that the code is read in threes, and the orange cards show why transfer RNAs matter: each one links a codon to its amino acid.",
+      "hash": "97a96a10be1a",
+      "textSha256": "97a96a10be1ac06ffb35f489ea3ffe449f06e5e828a18acd595c914f2711d363",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/assess-strengths.97a96a10be1a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/assess-strengths.97a96a10be1a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/assess-strengths.97a96a10be1a.generation.json",
+      "plannedRequestSha256": "29a76cec864b10e6046e4587e42bdfd44f3329b915306884b20d1dabc507a471"
+    },
+    {
+      "id": "assess-limits",
+      "parentSceneId": "assess-limits",
+      "text": "Then the limits. Your hands did every job, so the model hides the enzymes that unzip DNA, build new strands and RNA, and load each transfer RNA. It's flat, so it hides the twist that has to unwind before copying. It's tiny, so it hides how long copying takes: real genes run to thousands of bases. Nothing makes new strands grow in the right direction, so it hides the rule that cells build only one way. And it never shows a bead chain folding into a working protein, so it hides why the order of amino acids matters.",
+      "hash": "a243827c546e",
+      "textSha256": "a243827c546ec7b2430584433d35b1839335074287c20766c2f6569254cd6ea5",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/assess-limits.a243827c546e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/assess-limits.a243827c546e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/assess-limits.a243827c546e.generation.json",
+      "plannedRequestSha256": "e63a93b08364976b6411e255535af82804a6c12570dec2b84f5f10520ca10f4f"
+    },
+    {
+      "id": "improvements",
+      "parentSceneId": "improvements",
+      "text": "A good assessment ends with improvements. Add new cards only at the three prime end, following each strand's arrow, as cells do. Add labelled cards for each enzyme job. And twist the finished ladder to show the helix. Each change fixes one limit you named, which is what makes it an improvement, not just decoration.",
+      "hash": "94a1a9c9b395",
+      "textSha256": "94a1a9c9b395e722965bec22812f7773d4b481c778d49f574b1f6736ffb2d99f",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/improvements.94a1a9c9b395.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/improvements.94a1a9c9b395.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/improvements.94a1a9c9b395.generation.json",
+      "plannedRequestSha256": "23a04215c8db01b72d4240c7c82129359cc15794c5d9cc927bf6b23716988843"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. A student builds a replication model using white cards only, for both the original and the new strands. Both new molecules match the original exactly. Explain why this model can't show that replication is semi-conservative, and suggest one change. Pause here to answer.",
+      "hash": "549adbffd0fd",
+      "textSha256": "549adbffd0fd3784500d4cb5d8305def8c13b2ca8fbb58f8e620c9cf984c2141",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/attempt.549adbffd0fd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/attempt.549adbffd0fd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/attempt.549adbffd0fd.generation.json",
+      "plannedRequestSha256": "3e75f7c6e841385d35bb6a842722eea41849bbb2444e8913c5ad3d637465e2b9"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "With one colour, old and new strands look the same, so you can't see that each new molecule keeps one original strand. Use two colours, one for original and one for new. Then each molecule shows one of each. If you wrote that the model is fine because the sequences match, matching shows accurate copying, not which strand is old.",
+      "hash": "270c434278c6",
+      "textSha256": "270c434278c63a41ab15a402ffd3b6b0483720a6137a500dd48526602052098b",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/feedback.270c434278c6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/feedback.270c434278c6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/feedback.270c434278c6.generation.json",
+      "plannedRequestSha256": "5a541968e3c85d0f52e34c304b859063a308b7f86fcc59545006ad68ed783ea5"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to build and assess a model: decide what each piece stands for, follow the real rules so the model is valid, and record what you see. Then name what the model represents well, what it leaves out, and how to improve it. Next: how the chain of amino acids folds into a protein, and becomes a trait you can see.",
+      "hash": "9c0a6ec51ecd",
+      "textSha256": "9c0a6ec51ecd59e904ff707591b71dbf9f0656fdfcf2a7eb0623f5fd2a5c9037",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/decision-rule.9c0a6ec51ecd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/decision-rule.9c0a6ec51ecd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/decision-rule.9c0a6ec51ecd.generation.json",
+      "plannedRequestSha256": "1dfd33dbeeda1ce47c12f914a03cab5335f8de2c1a1bc2f739f3ac1377ab4136"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P01-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

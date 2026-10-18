@@ -1,0 +1,138 @@
+{
+  "brief": 70,
+  "method": "Built-in image_gen, transparent output. Base plates generated separately; paired variants edited from their base plate. Each source image was resized as a whole to 1600 x 1600 and centred on a 2000 x 2000 transparent canvas.",
+  "shared_prompt": "Scientific educational natural-history plate; fine ink and restrained watercolour; true transparent alpha; entire subject; at least 8 percent clear margin; no backdrop, ground shadow, text, labels, numbers, arrows, people, faces or hands.",
+  "plates": [
+    {
+      "path": "public/assets/biology/m5x-sample-tube-rack-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-6a728a5c-56a7-4a46-8644-eaa3add53d4d.png",
+      "edit_base": null,
+      "prompt_core": "About twenty capped blood tubes in a two-row rack, three-quarter view, some dark red samples, muted caps, blank label strips.",
+      "sha256": "4899814d1b37bb9e59a745c7739a4cccfb6587417190d73c1b020677adf79713",
+      "minimum_clear_margin_percent": 13.75
+    },
+    {
+      "path": "public/assets/biology/m5x-anopheles-mosquito-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-71a938b2-b7c3-4d80-9a1d-457ad65b2413.png",
+      "edit_base": null,
+      "prompt_core": "Adult Anopheles in angled side resting pose, head low and abdomen raised, spotted wings, long palps, plain unbanded legs.",
+      "sha256": "274973d4c6b76b3d4a03c2372af23989db508c6aebda3ef079906b77229177f2",
+      "minimum_clear_margin_percent": 12.55
+    },
+    {
+      "path": "public/assets/biology/m5x-tasmanian-devil-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-333cd391-2cc9-4e08-8db5-1201282ac5fb.png",
+      "edit_base": null,
+      "prompt_core": "Healthy adult standing Tasmanian devil, three-quarter side view, black fur, white chest band, pink ears.",
+      "sha256": "d417f6024a8bd7717591e7c2f0aa652b5a4e00e0b3d4494f2118ccab37651fa8",
+      "minimum_clear_margin_percent": 10.65
+    },
+    {
+      "path": "public/assets/biology/m5x-newborn-blood-spot-card-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-a4f0b661-6118-4bce-a0d2-8123322a5242.png",
+      "edit_base": null,
+      "prompt_core": "Blank newborn screening filter-paper card in three-quarter view, five circle outlines with some dried blood spots.",
+      "sha256": "d832ffb83b210a3cf8187c1aca05ecebd9702601180b53b6373578d8cac941b5",
+      "minimum_clear_margin_percent": 13.25
+    },
+    {
+      "path": "public/assets/biology/m5x-firefly-glow-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-181598d4-63aa-42b2-9066-2cd49c669353.png",
+      "edit_base": null,
+      "prompt_core": "Single Photinus-type beetle, closed wings, six legs, antennae, warm yellow-green abdominal glow.",
+      "sha256": "3a93e2a4ac6e9c2188f61e40e72ad1fe1c5c55214594e24f152e134b51b7c2a0",
+      "minimum_clear_margin_percent": 10.95
+    },
+    {
+      "path": "public/assets/biology/m5x-koala-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-63ace7a9-47bd-475a-8deb-827b2debbd98.png",
+      "edit_base": null,
+      "prompt_core": "Whole natural grey koala sitting in a short eucalyptus branch fork with a few leaves.",
+      "sha256": "0e50b288aaddad810420e3729126599480f8c62f94efcbab8c26ded8581fe5df",
+      "minimum_clear_margin_percent": 10.95
+    },
+    {
+      "path": "public/assets/biology/m5x-sweetpea-purple-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-4e7492b7-a153-4a99-9e03-c344aa500c0c.png",
+      "edit_base": null,
+      "prompt_core": "Purple Lathyrus odoratus stem with three flowers, standard, wings and keel, tendril and one leaflet pair.",
+      "sha256": "e0ff8c8cab0e65aa11612514165691fbc339c57391ff76a120cb48e4b6b1dcd8",
+      "minimum_clear_margin_percent": 11.4
+    },
+    {
+      "path": "public/assets/biology/m5x-sweetpea-red-v1.png",
+      "operation": "edit",
+      "generated_source": "exec-d9f239f4-74c0-4936-b8c2-f6dc915fc82d.png",
+      "edit_base": "sweetpea-purple",
+      "prompt_core": "Recolour only the purple sweet pea petals to red, preserving contours, leaves, tendril and placement.",
+      "sha256": "60b183912080f0be254ee62cc95f6af7399188e83908cde06171f2030c56fa57",
+      "minimum_clear_margin_percent": 11.2
+    },
+    {
+      "path": "public/assets/biology/m5x-chicken-black-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-0f44e37f-9a83-45b1-b917-2a1d632abd6d.png",
+      "edit_base": null,
+      "prompt_core": "Whole side-view black Andalusian chicken, single red comb, white earlobe, slate legs.",
+      "sha256": "d6e67882052c6ea47ddeddc0521c30e1c592b0e9cc5a20a9f0b0aa6e5ab0b7d5",
+      "minimum_clear_margin_percent": 11.5
+    },
+    {
+      "path": "public/assets/biology/m5x-chicken-blue-v1.png",
+      "operation": "edit",
+      "generated_source": "exec-6c3a2675-0026-40a5-adea-9062be66936a.png",
+      "edit_base": "chicken-black",
+      "prompt_core": "Recolour only black chicken plumage to slate blue-grey with dark feather-edge lacing.",
+      "sha256": "491aee52fdc4d267d198d51d5e83ebdcfdd79c66effe98f73a7c0646f7e3202b",
+      "minimum_clear_margin_percent": 11.35
+    },
+    {
+      "path": "public/assets/biology/m5x-chicken-splash-v1.png",
+      "operation": "edit",
+      "generated_source": "exec-f7dc3f5a-ad05-4f07-b30d-8df58efd54a5.png",
+      "edit_base": "chicken-black",
+      "prompt_core": "Recolour only black chicken plumage to whitish with scattered blue-grey flecks.",
+      "sha256": "cfb783c49651295d7a1cd2605a719946834de9f24e3b2a3986a4046aa1f82505",
+      "minimum_clear_margin_percent": 11.45
+    },
+    {
+      "path": "public/assets/biology/m5x-cat-tortoiseshell-v1.png",
+      "operation": "generate",
+      "generated_source": "exec-7aa70399-2432-4852-aa1f-cc355c6fecca.png",
+      "edit_base": null,
+      "prompt_core": "Whole standing side-view domestic shorthair cat with black and orange mottled patches, no white.",
+      "sha256": "d17b4a6fe0cd9dcd422d6d92e5d07adc125d091b199b398cceb61d1da7294a9f",
+      "minimum_clear_margin_percent": 11.1
+    },
+    {
+      "path": "public/assets/biology/m5x-cat-orange-v1.png",
+      "operation": "edit",
+      "generated_source": "exec-1b20c159-b411-42d3-a295-a616cbbe12c6.png",
+      "edit_base": "cat-tortoiseshell",
+      "prompt_core": "Recolour only tortoiseshell cat fur to orange with darker orange tabby stripes.",
+      "sha256": "fd655016e10cacf93dd354329f57ce9b56bfcd86cea0cb1dcf80de944ec5e286",
+      "minimum_clear_margin_percent": 11.05
+    },
+    {
+      "path": "public/assets/biology/m5x-cat-black-v1.png",
+      "operation": "edit",
+      "generated_source": "exec-0d0a9070-8016-45ae-9dad-9cba5d27b51f.png",
+      "edit_base": "cat-tortoiseshell",
+      "prompt_core": "Recolour only tortoiseshell cat fur to solid black with soft highlights.",
+      "sha256": "8b6c829efb77fcbf68b9ae1c3ff91e996d6b7c0f8c038215c1c8bd52662d7eac",
+      "minimum_clear_margin_percent": 10.95
+    }
+  ],
+  "qa": {
+    "folder": "docs/production/claude-pm/assets/brief70-qa",
+    "views": "All 14 plates on dark and cream backgrounds at 200 px; each aligned set on dark, cream and in greyscale; alpha-silhouette overlays for all three sets.",
+    "result": "All images are RGBA at 2000 x 2000 with alpha extrema 0 to 255 and a minimum clear margin above 8 percent. Blue and black chickens, and tortoiseshell and black cats, remain distinguishable in greyscale at 200 px. Aligned pair and sets have closely coincident silhouettes."
+  }
+}

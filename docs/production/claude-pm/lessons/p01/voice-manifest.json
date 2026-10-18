@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M5-P01-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/p01/lesson.json",
+  "lessonSha256": "b502acb9653478736383bdf4f62a355bd3b2d8d856be7cae33c4303aa745a3dc",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/p01/lesson.production-brief.json",
+    "sha256": "1637595e20fb4e90903d853c051a131050d4fed8320c65eaf289711fafc173ea"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This tube of iron thiocyanate has sat at the same pale red for an hour. Is that proof that it's an equilibrium, with both reactions still running? Not on its own. A finished reaction looks still, too. To show that a reaction can run both ways, and that it responds to a change, you have to push it and watch what happens. So how do you plan an investigation with evidence you can trust?",
+      "hash": "b4e77ec0b5e6",
+      "textSha256": "b4e77ec0b5e609b1d8d195d12447594c51b9628187c1de7756d3ab5373011608",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/hook.b4e77ec0b5e6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/hook.b4e77ec0b5e6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/hook.b4e77ec0b5e6.generation.json",
+      "plannedRequestSha256": "746b16fc5bc30df7c46bd852a5a9b3e12858150c37b4f3c0203a2645e1f50c9d"
+    },
+    {
+      "id": "reversibility-test",
+      "parentSceneId": "reversibility-test",
+      "text": "Here's the test for reversibility. Change the conditions so the reaction runs one way, then reverse the change and see whether the starting substance comes back. Heat pink cobalt chloride crystals in a dry test tube. Water leaves the crystals as steam, droplets collect near the top, and the solid turns blue. Going one way proves nothing yet. Now add a few drops of water to the cooled blue solid. It turns pink again, and the tube warms slightly. It went there and came back, so the reaction is reversible.",
+      "hash": "0c511b51551c",
+      "textSha256": "0c511b51551c60742e232124841086a6d59347cf68d9f0429d8c0dc4469884a7",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/reversibility-test.0c511b51551c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/reversibility-test.0c511b51551c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/reversibility-test.0c511b51551c.generation.json",
+      "plannedRequestSha256": "aaa21273f9183cc99ae94c4823f5ebfee276edef0c1114bf8f841b1fa9e774ed"
+    },
+    {
+      "id": "magnesium-open",
+      "parentSceneId": "magnesium-open",
+      "text": "Compare burning magnesium. It burns with a blinding white flame and leaves white magnesium oxide powder. Add water, heat it, cool it: nothing you can do in a school lab brings shiny magnesium back. So it's irreversible. And notice that the cobalt test ran in an open tube. The steam escaped, so we had to add water back. That's fine for showing reversibility, but it isn't an equilibrium.",
+      "hash": "1243d17497bc",
+      "textSha256": "1243d17497bc5f1f6c6268962ae08fa2f6f434cde106945dc24a2390a9fc62e1",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/magnesium-open.1243d17497bc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/magnesium-open.1243d17497bc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/magnesium-open.1243d17497bc.generation.json",
+      "plannedRequestSha256": "fad5a69ff8a66a62a3d3f12a2004327226a87fe2a1c0f8ab52b87cdaa6b5afd7"
+    },
+    {
+      "id": "closed-system",
+      "parentSceneId": "closed-system",
+      "text": "To study an equilibrium, nothing that takes part can escape. In a tube of dissolved ions, the ions stay in the solution, and a gas mixture needs a sealed tube or syringe. So write the condition into your method: what's sealed, and what could get in or out. That matters, because a response to a disturbance only makes sense if the system is closed.",
+      "hash": "6334acad4aef",
+      "textSha256": "6334acad4aef3bdcfb18f28a4452fddcda0be6ac636bbd2c420771b422561737",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/closed-system.6334acad4aef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/closed-system.6334acad4aef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/closed-system.6334acad4aef.generation.json",
+      "plannedRequestSha256": "d9d59503d039f4b8c4f373ce85ec217c39299dff962815274d8056911438eb7e"
+    },
+    {
+      "id": "setup-reference",
+      "parentSceneId": "setup-reference",
+      "text": "Now the disturbance investigation. Mix equal volumes of dilute iron three nitrate and potassium thiocyanate to get a pale red stock. Pale is deliberate: you need to see a change in either direction. Pour equal amounts into six identical tubes. Tube one is the reference, and you never touch it. Every other tube gets one change, and you judge every colour side by side with tube one against a white tile, because colour from memory is unreliable.",
+      "hash": "4d6f2a2e678c",
+      "textSha256": "4d6f2a2e678cf5a1ab77c714d7150b0d2ecec80a15447da6251e43452e6a04b6",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/setup-reference.4d6f2a2e678c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/setup-reference.4d6f2a2e678c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/setup-reference.4d6f2a2e678c.generation.json",
+      "plannedRequestSha256": "7add94cac99cf788d06c7562ec9b9f8af8cc33e1d23c8bdb7557b4a96c0441be"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "So, the variables. The independent variable is what you change: which substance you add, or the temperature. The dependent variable is what you observe: the colour, compared with the reference. The controlled variables are everything you keep the same: the volume of stock in each tube, the tube size, the background and lighting, and how long you wait before judging.",
+      "hash": "ff6f32dceccd",
+      "textSha256": "ff6f32dceccdbcf1254c37de8bc900580f56e44a4a6fc8ff4f619d3ebd42f43e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/variables.ff6f32dceccd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/variables.ff6f32dceccd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/variables.ff6f32dceccd.generation.json",
+      "plannedRequestSha256": "c14f8d91058cb6e1f66a976f9100052c7636787d0daf5f571a7adf120e50ad3f"
+    },
+    {
+      "id": "expected-results",
+      "parentSceneId": "expected-results",
+      "text": "Here's what to expect, and why, from the disturbance videos. Add a few crystals of iron nitrate to tube two, or potassium thiocyanate to tube three. Adding a reactant shifts the equilibrium right, so the red deepens. Add sodium hydroxide drop by drop to tube four. It removes iron three plus ions as a faint rust-brown solid, so the equilibrium shifts left, and the red fades.",
+      "hash": "4ad9cd383c44",
+      "textSha256": "4ad9cd383c44b23147d5ebfefb4dba7cde434e168192a6472daf669d29a88ccd",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/expected-results.4ad9cd383c44.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/expected-results.4ad9cd383c44.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/expected-results.4ad9cd383c44.generation.json",
+      "plannedRequestSha256": "f0ed24b8e0c792f323ff7cc7fed49dafdcb23a59dfe22e769ffaae4973f4b0ad"
+    },
+    {
+      "id": "dilution-control",
+      "parentSceneId": "dilution-control",
+      "text": "But wait. Those drops of sodium hydroxide solution also added water. A paler tube could simply be more dilute. So tube five is the dilution control: add the same number of drops of plain water. It gets only a tiny bit paler. If tube four is clearly paler than tube five, the fading is a real shift, not just dilution. Adding solids to tubes two and three avoided this, because the volume hardly changed.",
+      "hash": "a198d6be435a",
+      "textSha256": "a198d6be435a9a659e3e97e80242a3f06010d69b8fa4999dbd35a5c2da650358",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/dilution-control.a198d6be435a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/dilution-control.a198d6be435a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/dilution-control.a198d6be435a.generation.json",
+      "plannedRequestSha256": "a62f8154aa9aebdd1fbf1a971f8d7410c8d3e8c2259f7e82139a266a7bb49fa2"
+    },
+    {
+      "id": "temperature",
+      "parentSceneId": "temperature",
+      "text": "For temperature, use the cobalt solution: pink cobalt ions with lots of chloride, which form a blue ion in a reaction that takes in heat. Stopper the tube, because water is part of this reaction, so none should escape. In a hot water bath at about sixty degrees, it turns blue. In an ice bath, it turns pink. Back at room temperature, the starting purple returns, so it's reversible too.",
+      "hash": "1b274bce0de1",
+      "textSha256": "1b274bce0de1eda3ffeb9e74f41ef5ae79a0820f977d3a1be0b9b3c9cdee5512",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/temperature.1b274bce0de1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/temperature.1b274bce0de1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/temperature.1b274bce0de1.generation.json",
+      "plannedRequestSha256": "168d974f8288361e25a2da3619f2eadc24f0db8064dbf0af0037fcebf47d3523"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Three words exam questions love. Validity: does the test really measure what it claims to? The reference tube, one change per tube and the dilution control make your conclusion valid. Reliability: do you get the same result when you repeat it? Repeat each tube, compare with other groups, and have two people judge the colours. Accuracy: how close is your result to the true value? Judging by eye is only rough. A colourimeter gives a number, and you'll see that later in the module.",
+      "hash": "0ad45c589c48",
+      "textSha256": "0ad45c589c48c4c85618c9162b19a493bac93b7cf769ea89509ec8a175dd7026",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/validity-reliability.0ad45c589c48.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/validity-reliability.0ad45c589c48.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/validity-reliability.0ad45c589c48.generation.json",
+      "plannedRequestSha256": "2571275f0e0950772e5126f38d101d1780ad401c4928d9838b52d1820c22bfb4"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "Before any of this, you write a risk assessment: each hazard, the harm it could do, and how you'll control it. Cobalt chloride is harmful if swallowed, may cause cancer if its dust is breathed in, and can cause allergies, so use small amounts, avoid making dust, and wear gloves. Never let thiocyanate touch an acid, because that can release a very toxic gas. Sodium hydroxide, even dilute, can harm your eyes, so wear safety glasses. The hot bath can scald, so use a test tube holder. Never look straight at burning magnesium. And all the waste goes into a labelled container, never down the sink.",
+      "hash": "c0554d644ea5",
+      "textSha256": "c0554d644ea53d2278e3bb5f07c26bff2c3619cd880f23eeb8d19e68e9a350c4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/risk-assessment.c0554d644ea5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/risk-assessment.c0554d644ea5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/risk-assessment.c0554d644ea5.generation.json",
+      "plannedRequestSha256": "4603058db8436785ab809a3768101350b7b5f0448e64c90b76cbd8214892136e"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Two lines to keep. Push it, then bring it back: one change proves nothing, but a return proves it's reversible. And for cobalt chloride: pink in the rain, blue in the desert. Water makes it pink, and drying or heating makes it blue.",
+      "hash": "ecdf2dae98d7",
+      "textSha256": "ecdf2dae98d731cf9de54cec3b016c3291c9fe0d5992339df763e933e6be450e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/memory-aid.ecdf2dae98d7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/memory-aid.ecdf2dae98d7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/memory-aid.ecdf2dae98d7.generation.json",
+      "plannedRequestSha256": "6b176f6121464a37f376da21800e44dc9a48ef2e25dd5933191ab6a45bcbf03d"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student adds ten drops of silver nitrate solution to an iron thiocyanate tube, and it turns paler than the reference. She concludes that the equilibrium shifted left. What extra tube would make this conclusion valid, and why? Pause here to answer.",
+      "hash": "1028f5d2ab08",
+      "textSha256": "1028f5d2ab0896e9b9c19142d5c1d6b0badaeee8e46b34b74a831cc9df05bc8d",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/attempt-1.1028f5d2ab08.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/attempt-1.1028f5d2ab08.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/attempt-1.1028f5d2ab08.generation.json",
+      "plannedRequestSha256": "a3bae40fb11f42fd70c9871d97badb1e1cfb051b0632da2e76ea7715a51a9a41"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Add the same ten drops of water to an identical tube: a dilution control. The silver nitrate solution added volume, so some of the paling could just be dilution. If the silver nitrate tube is clearly paler than the water tube, the shift is real. Repeating the same tube doesn't fix this. It makes the result more reliable, not more valid.",
+      "hash": "c0f5d7cb16cf",
+      "textSha256": "c0f5d7cb16cf475413c9bf93282897d627a9b7a1b8d9366395d6823bb4fef78e",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/feedback-1.c0f5d7cb16cf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/feedback-1.c0f5d7cb16cf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/feedback-1.c0f5d7cb16cf.generation.json",
+      "plannedRequestSha256": "7827a8068bdb525c6fcc6676f4a730d773b4507398fd1553a0a215e311b9af11"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. A student heats pink cobalt chloride crystals in an open test tube, and they turn blue. He writes, \"This shows the reaction is reversible.\" Evaluate his conclusion. Pause here to answer.",
+      "hash": "be92e0e552b5",
+      "textSha256": "be92e0e552b50ba686267753e769baa6211bb524e687397ff00d7b7d049a4c35",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/attempt-2.be92e0e552b5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/attempt-2.be92e0e552b5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/attempt-2.be92e0e552b5.generation.json",
+      "plannedRequestSha256": "75d9d0e20fa58469209ff329a722fc06bf63c2b86f15b1c36e4997f63efae64e"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "It isn't supported yet. Heating shows only one direction. To show reversibility, he has to reverse the change: add water to the cooled blue solid and see it turn pink again. And because the tube was open and the water escaped, this tests reversibility, not an equilibrium. If you wrote \"correct, because the colour changed\", remember that one change isn't a return.",
+      "hash": "c6c9682b2e3e",
+      "textSha256": "c6c9682b2e3ec5adc6c382c987ceee1930b3ba30a6b8fd7e6246456660479996",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/feedback-2.c6c9682b2e3e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/feedback-2.c6c9682b2e3e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/feedback-2.c6c9682b2e3e.generation.json",
+      "plannedRequestSha256": "69391abb2a40a6b3117efa063ff210f8b31473ae7bdda62dca47e96d235607bc"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to plan an equilibrium investigation: push the reaction, then bring it back, to show it's reversible. Use a closed system, keep an untouched reference, make one change per tube, add a dilution control, and judge colours side by side. Write the risk assessment first. Next: putting a number on where an equilibrium sits.",
+      "hash": "be4730157a2d",
+      "textSha256": "be4730157a2d13082ce7ee6eb6a730d1cba5a0da217b4a88d13d06e128e2f93b",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/decision-rule.be4730157a2d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/decision-rule.be4730157a2d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/decision-rule.be4730157a2d.generation.json",
+      "plannedRequestSha256": "9cfac55a75f8324601ce35d1de9ec13e4b2da59ba1d68674e134647c180406bd"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M5-P01-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

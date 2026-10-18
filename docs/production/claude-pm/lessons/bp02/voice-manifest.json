@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-P02-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/bp02/lesson.json",
+  "lessonSha256": "8504c2d01ce14eac4fd437b0223b3154dc86c671afe2b2818763185509ba3400",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/bp02/lesson.production-brief.json",
+    "sha256": "04ae4ae399e89e57c64a9c0c4a84dd2c0cda22771f3afe3f115235a543d13b7b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two parent plants can produce a hundred seeds, and no two are quite the same. Can you predict which genotypes their offspring could have? You can, with a few pop-beads on a desk. In this practical you'll model meiosis with crossing over, then fertilisation and a mutation, and use the model to predict the variety in the offspring, and to see where those predictions can go wrong.",
+      "hash": "5b510d2dd6b2",
+      "textSha256": "5b510d2dd6b23a3f3c0d5aa823201dae9e70003a9e5e1ee5fc6475360ffb7fb5",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/hook.5b510d2dd6b2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/hook.5b510d2dd6b2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/hook.5b510d2dd6b2.generation.json",
+      "plannedRequestSha256": "8448aeff41f29033c6ce0fe0939d95cdad0b8b8e81632fdd3776002bc2ab0bd3"
+    },
+    {
+      "id": "aim-kit",
+      "parentSceneId": "aim-kit",
+      "text": "The aim: model meiosis, fertilisation and mutation to predict the variation in offspring genotypes. You need pop-beads in two colours, centromere pieces, small stickers, a coin, a die, string loops for cells, blank cards and a results sheet. Plum beads stand for chromosomes the parent got from its mother, and teal for those from its father. The colours let you track where every piece came from.",
+      "hash": "0c721a0dc9ec",
+      "textSha256": "0c721a0dc9ec91b02744b66244d510b1a155a70f184e4ceb08fdfe4e23118997",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/aim-kit.0c721a0dc9ec.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/aim-kit.0c721a0dc9ec.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/aim-kit.0c721a0dc9ec.generation.json",
+      "plannedRequestSha256": "7533873ecb3094d934c39247b9387037dbe9bcb5efb0fa10f569475ea9661dba"
+    },
+    {
+      "id": "build-parent",
+      "parentSceneId": "build-parent",
+      "text": "Step one: build a parent cell with two pairs of chromosomes. Make a long plum chain and a long teal chain the same length, then a short pair the same way. Stick alleles at matching positions: purple and tall on the long plum chromosome, white and short on the long teal one, round on the short plum one, and wrinkled on the short teal one. Matching positions matter, because homologous chromosomes carry the same genes in the same places.",
+      "hash": "c2d9e20618b1",
+      "textSha256": "c2d9e20618b18f34b508a8f4083ca0ffcdf3804b3712861589278a7954a6efdd",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/build-parent.c2d9e20618b1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/build-parent.c2d9e20618b1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/build-parent.c2d9e20618b1.generation.json",
+      "plannedRequestSha256": "b66a6d01185e519f35e5b61e9e9fd32f132e400c792d93a1b0a1d53d0b08f582"
+    },
+    {
+      "id": "copy",
+      "parentSceneId": "copy",
+      "text": "Step two: the DNA is copied before meiosis starts. So build an identical twin of each chain, same colour, same stickers, and join the pair with a centromere piece. Each chromosome is now two sister chromatids. Count them: there are still four chromosomes, because you count centromeres, not chromatids.",
+      "hash": "bf0a6c28be4c",
+      "textSha256": "bf0a6c28be4c7e838d2d196eee05c4381d0a4a7524d6c243d665e8ce401d97aa",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/copy.bf0a6c28be4c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/copy.bf0a6c28be4c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/copy.bf0a6c28be4c.generation.json",
+      "plannedRequestSha256": "9091bb00fbcb57f031fdea76fb4585db38a1085fead372a3d6f1bd24ecc979b1"
+    },
+    {
+      "id": "cross-over",
+      "parentSceneId": "cross-over",
+      "text": "Step three, in prophase one: crossing over. Pair each long chromosome with its partner, and roll a die: cross over only on a six. Unclip one plum chromatid and one teal chromatid at the same point, between the two genes, and swap the end pieces. Break at exactly matching points, because a real crossover exchanges the same stretch of genes, so nothing is lost or doubled. Now one chromatid carries purple with short, and another carries white with tall. Record those new combinations.",
+      "hash": "88b85924a0f4",
+      "textSha256": "88b85924a0f4f1b79d7f3850d57f88170406bd93ef6edf9756aa1ffafa331def",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/cross-over.88b85924a0f4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/cross-over.88b85924a0f4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/cross-over.88b85924a0f4.generation.json",
+      "plannedRequestSha256": "1ae4d5e4ae939f49b7954cb5df011fc3d391bfb7afb83687a7e454632b0e502e"
+    },
+    {
+      "id": "line-up-divide",
+      "parentSceneId": "line-up-divide",
+      "text": "Step four, in metaphase one: line the pairs up across the middle of the cell. Flip the coin for each pair to decide which side the plum chromosome goes. The coin makes each pair's direction random, and independent of the other pair. Pull each pair apart into two new loops. Then, for meiosis two, pull the sister chromatids apart in each loop. You end up with four gametes, each with one long and one short chromosome.",
+      "hash": "860990f967c5",
+      "textSha256": "860990f967c58a03fc4814664ebceb41f5a92d95be4e6a4a7c30452dfd0a2284",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/line-up-divide.860990f967c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/line-up-divide.860990f967c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/line-up-divide.860990f967c5.generation.json",
+      "plannedRequestSha256": "d2be6284ea2f9292ea6832c94e257606c0b68a0d8b0163a82bb8bc2b7b898ffa"
+    },
+    {
+      "id": "record-gametes",
+      "parentSceneId": "record-gametes",
+      "text": "Step five: record each gamete's alleles on a card, then rebuild and run it again with different coin results. Without crossing over, you'll only ever find four types: purple and tall, or white and short, each with round or with wrinkled. That's two choices for each of two pairs: two times two. Crossing over adds the mixed types. They're less common because, like your die, a crossover between those two genes happens in only some cells.",
+      "hash": "1386fe6f1c52",
+      "textSha256": "1386fe6f1c528d7b47729731a373417a1d5e0425f8db3afc90549982bf2f21b8",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/record-gametes.1386fe6f1c52.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/record-gametes.1386fe6f1c52.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/record-gametes.1386fe6f1c52.generation.json",
+      "plannedRequestSha256": "8310acf261d362ab01b30043dbc80377e78bd54949aa9f1b4349996da725ff23"
+    },
+    {
+      "id": "fertilise",
+      "parentSceneId": "fertilise",
+      "text": "Step six: fertilisation. A partner group builds a second parent the same way and keeps every gamete card. Each group shuffles its cards face down and draws one at random. Put the two gametes together in one loop. That's the zygote, back to two of each chromosome. Record its genotype, return the cards, and repeat. The random draw models random fertilisation: any gamete can meet any gamete.",
+      "hash": "865562612c43",
+      "textSha256": "865562612c43f6d30c18f5d19d08d8c2969352c33592d50a6fa28f5e20369f22",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/fertilise.865562612c43.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/fertilise.865562612c43.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/fertilise.865562612c43.generation.json",
+      "plannedRequestSha256": "db686a82104cceb98a552d8b02c58107b208a752fdc6d1e6d1dd51c1d778148e"
+    },
+    {
+      "id": "mutate",
+      "parentSceneId": "mutate",
+      "text": "Step seven: mutation. Before one fertilisation, swap one sticker in one gamete for a new allele in a new colour. That models a DNA change in a cell that makes gametes. The offspring from that gamete carries an allele that neither parent had. Crossing over, assortment and fertilisation only reshuffle alleles. Only mutation makes a new one.",
+      "hash": "0cb43c071ef6",
+      "textSha256": "0cb43c071ef6bb1e2fa210462cb023f6af00ac8135de7a0155c2410e9cba5a18",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/mutate.0cb43c071ef6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/mutate.0cb43c071ef6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/mutate.0cb43c071ef6.generation.json",
+      "plannedRequestSha256": "b83ef475185e96feb90cd0476549ba212997f7656c8d585b87914f25584d1e1b"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "Here's an example class result for just the seed-shape gene, from sixteen fertilisations. Each parent gives round or wrinkled equally often, so four pairings are equally likely: round with round, round with wrinkled, wrinkled with round, and wrinkled with wrinkled. Two of the four give one of each. So out of sixteen, the model expects four, eight and four. The class got three, nine and four. Close, but not exact, because each draw is random.",
+      "hash": "ee79adff9d48",
+      "textSha256": "ee79adff9d48b7cfdb11ff0c9fbe836170b3474e4359cad5b731ec184a985f8c",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/results.ee79adff9d48.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/results.ee79adff9d48.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/results.ee79adff9d48.generation.json",
+      "plannedRequestSha256": "763624b44f629f15ef308ede7000a70f93fc32fc5746e66554580ece0dd3c6ba"
+    },
+    {
+      "id": "assess-strengths",
+      "parentSceneId": "assess-strengths",
+      "text": "Now assess the model. It represents several things well. Matching sticker positions show that homologues carry the same genes. The swap shows crossing over making new combinations without new alleles. The coin makes each pair's direction random, and joining two gametes shows fertilisation restoring the chromosome number. And it predicts which gamete types are possible.",
+      "hash": "7d00eafa3205",
+      "textSha256": "7d00eafa320550310be548a8fc57b6f1ee7b78590c932a51c9c1d47cd6cd19f6",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/assess-strengths.7d00eafa3205.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/assess-strengths.7d00eafa3205.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/assess-strengths.7d00eafa3205.generation.json",
+      "plannedRequestSha256": "7aed340ab5ebf8357260e0a060ada755009b7086592c16ec1df3033c8be7f44b"
+    },
+    {
+      "id": "assess-limits",
+      "parentSceneId": "assess-limits",
+      "text": "Its limits matter too. Two pairs give only four whole-chromosome combinations, so the model hides most of the variety: humans' twenty-three pairs give over eight million. You chose where the crossover went, but in real cells its position varies, and there can be several. You chose the mutation, but real mutations are rare and random, and many have no effect. And beads with stickers show alleles, but not the DNA itself, or the spindle that moves the chromosomes.",
+      "hash": "e81acfa1e3bf",
+      "textSha256": "e81acfa1e3bf2626eec08f14605611d31ab5ab0a9415ff9483ea1d2fb3ed00c8",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/assess-limits.e81acfa1e3bf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/assess-limits.e81acfa1e3bf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/assess-limits.e81acfa1e3bf.generation.json",
+      "plannedRequestSha256": "e268fa75ab23468be0713cfeb95f3e18705f844b9b57f66ee73c866563edfe10"
+    },
+    {
+      "id": "valid-reliable",
+      "parentSceneId": "valid-reliable",
+      "text": "To keep it valid, so it really tests what meiosis does, follow the real rules every time: break at matching points, roll and flip fresh each run, and draw at random. To make it reliable, so repeats agree, repeat many times and pool the class results, because a few trials can land far from the prediction just by chance.",
+      "hash": "1528ed1d31bb",
+      "textSha256": "1528ed1d31bb4a2af7e1fe95a42031b573e84c6faed4baf720325f638dd28c08",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/valid-reliable.1528ed1d31bb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/valid-reliable.1528ed1d31bb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/valid-reliable.1528ed1d31bb.generation.json",
+      "plannedRequestSha256": "7a9da79bb15432365af37dff10422fb29278a222e29279ec5ef6536db331bb92"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Your turn. A group models two parents that each have one round and one wrinkled allele, but runs only four fertilisations. None of the four offspring has two wrinkled alleles. They conclude that offspring with two wrinkled alleles can't occur from these parents. Evaluate their conclusion. Pause here to answer.",
+      "hash": "72f1a1c41115",
+      "textSha256": "72f1a1c411159de579f43938db81d94e1dde047f931d213685aba048a900cbd6",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/attempt.72f1a1c41115.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/attempt.72f1a1c41115.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/attempt.72f1a1c41115.generation.json",
+      "plannedRequestSha256": "dc0c01c12b118d6c2debb7d3bc3f2f3e977a321c58a1bb81b46aff80ab05543e"
+    },
+    {
+      "id": "feedback",
+      "parentSceneId": "feedback",
+      "text": "The conclusion isn't supported. Each parent can give a wrinkled allele, so two wrinkled alleles are expected about one time in four. Each offspring has a three in four chance of missing out, so all four miss out about one time in three. They should repeat many more times and pool the results. If you said the model is wrong, it isn't: the sample is just too small.",
+      "hash": "75c2e1b61345",
+      "textSha256": "75c2e1b61345378d4c5aa0e9de77329b4da1688e7aea73388ee2517bfc54f650",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/feedback.75c2e1b61345.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/feedback.75c2e1b61345.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/feedback.75c2e1b61345.generation.json",
+      "plannedRequestSha256": "5fa1b4dadda7709db89f59fea80cb2d7e75eec8594e377610a8779b55fa8efe4"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to model offspring variation: track each parent's chromosomes by colour, copy before dividing, cross over on a six at matching points, randomise every pair and every fertilisation, add a mutation on purpose, and repeat enough times to trust the pattern. Next: Punnett squares and pedigrees, the quick way to predict crosses like these on paper.",
+      "hash": "f54f82747525",
+      "textSha256": "f54f82747525eb493607e43423246f18c3da0ff67db4fb27b8dfb916d25eddf6",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/decision-rule.f54f82747525.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/decision-rule.f54f82747525.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/decision-rule.f54f82747525.generation.json",
+      "plannedRequestSha256": "ed22697d6f87c2370ff129d861f8be5eb19cd4369b143073e2bee1139799462c"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-P02-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

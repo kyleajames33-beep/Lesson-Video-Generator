@@ -3061,6 +3061,561 @@ BIO_BP03_ROWS = {
 }
 
 
+B11_ROWS = {
+    'hook': [
+        "adjust",
+        "The count board. On \"a hundred Shorthorn cattle\" `HerdGrid` fills a 10 x 10 grid with small plates in a quick ripple (`m5x-cattle-red-v1.png`, `m5x-cattle-roan-v1.png`, `m5x-cattle-white-v1.png` at about 70 px wide, mixed as an example herd; grey tag \"example herd\").",
+        "Teaches: hook (thirty-two roan cattle).",
+        "Here's a herd of a hundred Shorthorn cattle. Sixty-four are red, thirty-two are roan,",
+        "On the spoken cues: On \"Sixty-four are red\" the grid sorts itself by colour into three blocks, and a counter writes on per cue: \"red 64\", \"roan 32\", \"white 4\". On \"one red allele and one white allele\" one roan plate lifts out, enlarged, with B10's genotype tag \"C^R C^W\" (grey tag \"B10: co-dominance\").",
+        "explain",
+        "the count board. On \"a hundred Shorthorn cattle\" `HerdGrid` fills a 10 x 10 grid with small plates in a quick ripple (`m5x-cattle-red-v1.png`, `m5x-cattle-roan-v1.png`, `m5x-cattle-white-v1.png` at about 70 px wide, mixed as an example herd; grey tag \"example herd\"). On \"Sixty-four are red\" the grid sorts itself by colour into three blocks, and a counter writes on per cue: \"red 64\", \"roan 32\", \"white 4\". On \"one red allele and one white allele\" one roan plate lifts out, enlarged, with B10's genotype tag \"C^R C^W\" (grey tag \"B10: co-dominance\"). On \"what fraction\" the question writes on: \"white alleles: what fraction?\" with two chips beside it, \"4%\" and \"36%\", each with a \"?\". The heading writes on: \"Counting a population\".",
+        [
+            "HandText write-on",
+            "HerdGrid",
+            "chip pop"
+        ],
+        "Hold two seconds"
+    ],
+    'frequency': [
+        "new",
+        "The sorted grid slides left and shrinks. On \"count divided by the total\" the line \"frequency = count / total counted\" writes on in hand type.",
+        "Teaches: frequency of a characteristic.",
+        "Start with the cattle themselves. A frequency tells you how common something is in the",
+        "On the spoken cues: `TallyTable` builds one row per cue (computed): \"red | 64 | out of 100 | 64%\", \"roan | 32 | out of 100 | 32%\", \"white | 4 | out of 100 | 4%\", each row lighting its block in the grid. On \"a bar chart\" `FreqBars` draws three bars from the table, each labelled with its per cent, y axis \"per cent of cattle counted (n = 100)\".",
+        "explain",
+        "the sorted grid slides left and shrinks. On \"count divided by the total\" the line \"frequency = count / total counted\" writes on in hand type. `TallyTable` builds one row per cue (computed): \"red | 64 | out of 100 | 64%\", \"roan | 32 | out of 100 | 32%\", \"white | 4 | out of 100 | 4%\", each row lighting its block in the grid. On \"a bar chart\" `FreqBars` draws three bars from the table, each labelled with its per cent, y axis \"per cent of cattle counted (n = 100)\". On \"what you divided by\" the \"out of 100\" column rings amber and a tag writes on: \"denominator: cattle counted\".",
+        [
+            "HandText write-on",
+            "TallyTable",
+            "FreqBars",
+            "ScribbleCircle",
+            "DrawPath",
+            "plate slide",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    'allele-frequency': [
+        "adjust",
+        "Under the grid, `PoolBar` draws an empty bar of 200 cells (tag \"gene pool: all 200 coat colour alleles\").",
+        "Explains why 4% and 36% are wrong (copies, not animals).",
+        "Now the alleles. Every animal carries two copies of the coat colour gene, so a hundred",
+        "On the spoken cues: On \"two copies\" every plate in the grid shows two small allele chips beneath it (`AlleleChip`, \"C^R\" or \"C^W\"); on \"two hundred copies\" all the chips pour into the bar (computed count \"200\"). On \"two white alleles, which makes eight\" the four white plates pulse and their eight \"C^W\" chips light in the bar (counter \"4 x 2 = 8\").",
+        "explain",
+        "under the grid, `PoolBar` draws an empty bar of 200 cells (tag \"gene pool: all 200 coat colour alleles\"). On \"two copies\" every plate in the grid shows two small allele chips beneath it (`AlleleChip`, \"C^R\" or \"C^W\"); on \"two hundred copies\" all the chips pour into the bar (computed count \"200\"). On \"two white alleles, which makes eight\" the four white plates pulse and their eight \"C^W\" chips light in the bar (counter \"4 x 2 = 8\"). On \"thirty-two more\" the roan plates pulse and their 32 \"C^W\" chips light (counter \"32 x 1 = 32\"). On \"forty white alleles out of two hundred\" the line \"C^W: 40 / 200 = 0.20 = 20%\" writes on, and \"C^R: 160 / 200 = 0.80 = 80%\" under it (computed); `FreqBars` gains a second panel, \"per cent of alleles\", with two bars. On \"Four per cent\" the hook's chip \"4%\" returns with the tag \"white cattle only\" and takes a grey scribble cross; on \"thirty-six\" the chip \"36%\" returns with the tag \"white + roan animals\" and takes a grey scribble cross. Grey tag at the lower right: \"autosomal gene: two copies each\".",
+        [
+            "HandText write-on",
+            "PoolBar",
+            "AlleleChip",
+            "FreqBars",
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    'hidden-alleles': [
+        "adjust",
+        "The herd slides off; `HerdGrid` refills with pea plates (`m5x-pea-tall-v1.png` and `m5x-pea-short-v1.png`, 91 tall and 9 short, grey tag \"B9\").",
+        "Explains why looks fail under complete dominance (carriers look like TT).",
+        "Cattle make this easy, because every genotype looks different. Peas",
+        "On the spoken cues: On \"nine are short\" the nine short plates ring amber and a counter writes \"short 9 / 100 = 9%\". On \"two short alleles\" each short plate gets the tag \"tt\" (computed). On \"genotype frequency of nine per cent\" the line \"tt: 0.09 (9%)\" writes on.",
+        "explain",
+        "the herd slides off; `HerdGrid` refills with pea plates (`m5x-pea-tall-v1.png` and `m5x-pea-short-v1.png`, 91 tall and 9 short, grey tag \"B9\"). On \"nine are short\" the nine short plates ring amber and a counter writes \"short 9 / 100 = 9%\". On \"two short alleles\" each short plate gets the tag \"tt\" (computed). On \"genotype frequency of nine per cent\" the line \"tt: 0.09 (9%)\" writes on. On \"hiding a short allele, or not\" two tall plates lift out side by side, tagged \"TT?\" and \"Tt?\", with a \"same look\" bracket. On \"can't count every allele\" the gene pool bar from scene 3 returns empty with most cells marked \"?\" (tag \"can't tell from looks\"). On \"read the DNA\" `m5x-cheek-swab-v1.png` slides in at the right, and a short coded DNA ladder strip (B4 look) unrolls out of it into the next scene.",
+        [
+            "HandText write-on",
+            "HerdGrid",
+            "ScribbleCircle",
+            "DrawPath",
+            "plate slide",
+            "bar draw"
+        ],
+        "Hold half a second"
+    ],
+    'what-is-a-snp': [
+        "new",
+        "The read strip. Three ID cards (\"sample 1\", \"sample 2\", \"sample 3\"; no people) on the left, each with two rows of nine base tiles (\"copy 1\", \"copy 2\"), aligned: G A C C ?",
+        "Explains why reading DNA shows carriers (both copies read).",
+        "Line up the same stretch of DNA from several people, and most bases",
+        "On the spoken cues: G A T C, the fifth column filled per sample (sample 1: C and C; sample 2: C and T; sample 3: T and T). On \"most bases match\" a light scan runs along the columns, each column ticking. On \"differ by just one base\" the scan stops at column 5 and it rings amber (computed: the only column where rows differ).",
+        "explain",
+        "the read strip. Three ID cards (\"sample 1\", \"sample 2\", \"sample 3\"; no people) on the left, each with two rows of nine base tiles (\"copy 1\", \"copy 2\"), aligned: G A C C ? G A T C, the fifth column filled per sample (sample 1: C and C; sample 2: C and T; sample 3: T and T). On \"most bases match\" a light scan runs along the columns, each column ticking. On \"differ by just one base\" the scan stops at column 5 and it rings amber (computed: the only column where rows differ). On \"some copies have C, and others have T\" the C tiles and T tiles in column 5 pulse in turn. On \"single nucleotide polymorphism\" the term writes on with the gloss chips \"single nucleotide: one base\" and \"polymorphism: more than one form in the population\", and the tag \"SNP (said 'snip')\". On \"Each form is an allele\" two chips \"C allele\" and \"T allele\" drop above the column. On \"every genotype shows directly\" genotype tags write on at the end of each pair: \"CC\", \"CT\", \"TT\" (computed), and sample 2's tag gets the small label \"carrier: both copies read\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "chip pop",
+            "drop fall"
+        ],
+        "Hold one second"
+    ],
+    'snp-markers': [
+        "adjust",
+        "The read strip zooms out to a long chromosome bar (coded, cream) with dozens of small tick marks scattered along it (grey tag \"about 1 base in 1,000 differs between two unrelated people\").",
+        "Explains why most SNPs change nothing (non-coding DNA).",
+        "Two unrelated people differ at roughly one base in every thousand, so each of us carries",
+        "On the spoken cues: On \"doesn't code for a protein\" most ticks sit in grey stretches tagged \"non-coding DNA\"; a few short gene boxes sit on the bar. On \"A few do matter\" one tick inside a gene box rings amber, and B7's recall card slides in small: \"coding strand GAG to GTG: Glu to Val, sickle cell\" (grey tag \"B7\"), with the changed tile amber.",
+        "explain",
+        "the read strip zooms out to a long chromosome bar (coded, cream) with dozens of small tick marks scattered along it (grey tag \"about 1 base in 1,000 differs between two unrelated people\"). On \"doesn't code for a protein\" most ticks sit in grey stretches tagged \"non-coding DNA\"; a few short gene boxes sit on the bar. On \"A few do matter\" one tick inside a gene box rings amber, and B7's recall card slides in small: \"coding strand GAG to GTG: Glu to Val, sickle cell\" (grey tag \"B7\"), with the changed tile amber. On \"markers we can count\" the line \"most SNPs: markers; some: causes\" writes on.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "plate slide",
+            "bar draw"
+        ],
+        "Hold half a second"
+    ],
+    'counting-snps': [
+        "adjust",
+        "A genotype table writes on, one row per cue: \"CC | 18\", \"CT | 24\", \"TT | 8\", total \"50 people\" (grey tag \"example data\").",
+        "Teaches: counting SNP alleles.",
+        "Now count them, just like the cattle. Fifty people are tested at this",
+        "On the spoken cues: On \"a hundred copies\" `PoolBar` returns with 100 cells (tag \"50 people x 2 = 100 copies\"). On \"twenty-four\" 24 T cells light from the CT row (counter \"24 x 1 = 24\"); on \"plus sixteen\" 16 more light from the TT row (\"8 x 2 = 16\").",
+        "explain",
+        "a genotype table writes on, one row per cue: \"CC | 18\", \"CT | 24\", \"TT | 8\", total \"50 people\" (grey tag \"example data\"). On \"a hundred copies\" `PoolBar` returns with 100 cells (tag \"50 people x 2 = 100 copies\"). On \"twenty-four\" 24 T cells light from the CT row (counter \"24 x 1 = 24\"); on \"plus sixteen\" 16 more light from the TT row (\"8 x 2 = 16\"). On \"forty per cent\" the line \"T: 40 / 100 = 0.40 = 40%\" writes on and \"C: 60 / 100 = 60%\" under it (computed). On \"Count alleles, not people\" the line writes on large in amber hand type, and a chip \"T = 8 / 50 = 16%\" writes on and takes a grey scribble cross (tag \"that counts people\").",
+        [
+            "HandText write-on",
+            "PoolBar",
+            "Mark cross",
+            "chip pop",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    'association': [
+        "adjust",
+        "The group panel. `GroupBeads`: left group \"with the disease (50 people)\" as 100 allele beads with 40 T beads lit; right group \"without the disease (50 people)\" as 100 beads, its table writing on \"CC 32, CT 16, TT 2\" and 20 T beads lit (computed).",
+        "Explains why an association need not be a cause (close neighbours inherited together).",
+        "Snips become evidence when you compare groups. Say those fifty people all have a",
+        "On the spoken cues: Frequency bars draw under each: \"40%\" and \"20%\". On \"That's a trend\" an amber arrow joins the two bars with the tag \"T more common with the disease\". On \"association\" the word writes on with the gloss \"found together more often\". On \"doesn't prove\" a chip \"T causes the disease\" writes on and takes a grey scribble cross.",
+        "explain",
+        "the group panel. `GroupBeads`: left group \"with the disease (50 people)\" as 100 allele beads with 40 T beads lit; right group \"without the disease (50 people)\" as 100 beads, its table writing on \"CC 32, CT 16, TT 2\" and 20 T beads lit (computed). Frequency bars draw under each: \"40%\" and \"20%\". On \"That's a trend\" an amber arrow joins the two bars with the tag \"T more common with the disease\". On \"association\" the word writes on with the gloss \"found together more often\". On \"doesn't prove\" a chip \"T causes the disease\" writes on and takes a grey scribble cross. On \"sit close to the DNA that really matters\" a coded chromosome pair appears with the SNP tick and, a short distance along, a second marked spot tagged \"real cause?\"; on \"rarely split by crossing over\" B8's crossing-over swap plays once at a far point of the pair (tag \"B8\") and the SNP and the \"real cause?\" spot stay together on the same segment (tag \"close together: inherited together\"). Unspoken grey tag at the lower right (Revision 2): \"showing cause needs more evidence, such as what the variant does to a protein\".",
+        [
+            "HandText write-on",
+            "GroupBeads",
+            "Mark cross",
+            "tick",
+            "chip pop",
+            "table build",
+            "bar draw"
+        ],
+        "Hold one second"
+    ],
+    'one-marker': [
+        "new",
+        "Two population cards (\"population 1\", \"population 2\"), each with a short read strip.",
+        "Explains why one SNP proves little (thousands of other differences).",
+        "And one snip is only one marker. Two populations can share a version at one snip, and",
+        "On the spoken cues: On \"one marker\" one column matches across both (tick) with a chip \"same at one SNP: closely related\" that takes a grey scribble cross. On \"thousands of others\" the strips extend to a grid of 40 SNP columns, about half differing (computed from the example data, tag \"40 SNPs shown\").",
+        "explain",
+        "two population cards (\"population 1\", \"population 2\"), each with a short read strip. On \"one marker\" one column matches across both (tick) with a chip \"same at one SNP: closely related\" that takes a grey scribble cross. On \"thousands of others\" the strips extend to a grid of 40 SNP columns, about half differing (computed from the example data, tag \"40 SNPs shown\"). On \"compare many snips\" a summary bar fills under the grid: \"shared at 21 of 40 SNPs\" (computed), tag \"many markers: a pattern\".",
+        [
+            "ScribbleCircle",
+            "Mark cross",
+            "tick",
+            "chip pop",
+            "bar draw"
+        ],
+        "Hold half a second"
+    ],
+    'sample-limits': [
+        "adjust",
+        "The count board returns. On \"a whole breed\" a wide field of cattle plates fades in behind a dashed line \"true white allele frequency: 20%\".",
+        "Explains why small samples mislead (they bounce).",
+        "Every one of these numbers comes from a sample, and samples have",
+        "On the spoken cues: `SampleBounce`: on \"Sample twenty cattle\" three samples of 20 are drawn in turn (a small grid of 20 plates lights each time), each plotting a dot on a strip from 0 to 50 per cent (fixed example draws, not seed-searched: the build picks 20 plates whose white allele copies total 4, 12 and 7 of 40, so the dots read 10%, 30% and 18%",
+        "explain",
+        "the count board returns. On \"a whole breed\" a wide field of cattle plates fades in behind a dashed line \"true white allele frequency: 20%\". `SampleBounce`: on \"Sample twenty cattle\" three samples of 20 are drawn in turn (a small grid of 20 plates lights each time), each plotting a dot on a strip from 0 to 50 per cent (fixed example draws, not seed-searched: the build picks 20 plates whose white allele copies total 4, 12 and 7 of 40, so the dots read 10%, 30% and 18% (17.5% rounded); tag \"three example samples\"; values computed from the plates drawn). On \"Sample two hundred\" three samples of 200 plot dots that cluster close to the dashed line (fixed example draws of 76, 83 and 86 white copies of 400: 19%, 21% and 22% (20.75% and 21.5% rounded); computed). On \"bounce around\" the n = 20 dots ring amber with the tag \"small sample: wide spread\". On \"represent the population\" the sample grid shrinks into one fenced paddock tagged \"one farm\" beside the wide breed field (tag \"representative?\"). On \"sort the same way\" one red cattle plate gets a few coded white hair strokes at its flank (B10's `HairZoom` look) with two chips \"red?\" and \"roan?\" (tag \"agree the categories first\").",
+        [
+            "SampleBounce",
+            "HairZoom",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    'memory': [
+        "new",
+        "Three large handwritten words write on with small icons: \"frequency\" (a mini bar with \"count / total\"), \"SNP\" (one amber tile in a row), \"limits\" (the bouncing dots).",
+        "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+        "Three words to take away: frequency, snip,",
+        "On the spoken cues: Under them, the line \"Count alleles, not people\" sits small.",
+        "explain",
+        "three large handwritten words write on with small icons: \"frequency\" (a mini bar with \"count / total\"), \"SNP\" (one amber tile in a row), \"limits\" (the bouncing dots). Under them, the line \"Count alleles, not people\" sits small.",
+        [
+            "HandText write-on",
+            "bar draw"
+        ],
+        "Hold half a second"
+    ],
+    'attempt': [
+        "new",
+        "The board clears: no earlier tables, bars or tags.",
+        "Unseen transfer task with every condition on screen: \"(a) Frequency of the V mark at each site?\" \"(b) Compare the sites.\" \"(c) Identify one limitation of the data.\" Three answer boxes. The countdown ring starts after \"Pause here to answer.\" and runs for",
+        "Two harder questions now. First, a class samples white clover plants at two sites on the",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears: no earlier tables, bars or tags.)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card writes on, headed \"White clover at two sites\". Two small painted-style leaf icons head the columns (coded: one trefoil with a pale V on each leaflet, one plain; no people).",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "table build",
+            "bar draw",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-one': [
+        "new",
+        "The card shrinks to a strip at the top (table and demands stay readable).",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for item one (owner rule, 16 October).",
+        "Each site has sixty plants. Site A is eighteen out of sixty, or thirty per",
+        "On the spoken cues: (1) On \"sixty plants\" a total column writes on: \"60\", \"60\". (2) On \"thirty per cent\" the line \"(a) A: 18 / 60 = 30%\" writes on; on \"fifty per cent\" \"B: 30 / 60 = 50%\" (computed), with two small bars drawing beside them. (3) On \"more common in site B's sample\" the line \"(b) higher in site B's sample (50% against 30%)\" writes on.",
+        "explain",
+        "the card shrinks to a strip at the top (table and demands stay readable). (1) On \"sixty plants\" a total column writes on: \"60\", \"60\". (2) On \"thirty per cent\" the line \"(a) A: 18 / 60 = 30%\" writes on; on \"fifty per cent\" \"B: 30 / 60 = 50%\" (computed), with two small bars drawing beside them. (3) On \"more common in site B's sample\" the line \"(b) higher in site B's sample (50% against 30%)\" writes on. (4) On \"small sample\" the line \"(c) small sample from one school; faint marks are hard to classify\" writes on, with three tiny coded leaflets in a row \"bold ... faint ... none\". (5) On \"eighteen by forty-two\" the chip \"18 / 42 = 43%\" writes on and takes a grey scribble cross, with the tag \"divide by the site total\". Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "bar draw"
+        ],
+        "Brief settle before the next scene"
+    ],
+    'attempt-two': [
+        "new",
+        "The board clears. The card shows a genotype table: \"GG | 20\", \"GA | 16\", \"AA | 4\", \"total | 40 people\".",
+        "Unseen transfer task with every condition on screen: \"(a) Frequency of the A allele?\" \"(b) Does this show A causes the disease? Explain.\" Two answer boxes.",
+        "Second. Forty people are tested at a snip, where the base is either G or",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears. The card shows a genotype table: \"GG | 20\", \"GA | 16\", \"AA | 4\", \"total | 40 people\".)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card shows a genotype table: \"GG | 20\", \"GA | 16\", \"AA | 4\", \"total | 40 people\". Stimulus line: \"A is more common in people with a certain disease.\" Demands: \"(a) Frequency of the A allele?\" \"(b) Does this show A causes the disease? Explain.\" Two answer boxes.",
+        [
+            "ScribbleCircle",
+            "table build",
+            "bar draw",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-two': [
+        "new",
+        "The card shrinks to a strip. (1) On \"eighty copies\" the line \"40 x 2 = 80 copies\" writes on.",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for item two (owner rule, 16 October).",
+        "Forty people carry eighty copies. The A alleles are sixteen from the mixed genotypes,",
+        "On the spoken cues: (2) On \"sixteen\" and \"plus eight\" the working writes on: \"A = 16 x 1 + 4 x 2 = 24\"; on \"thirty per cent\" \"(a) 24 / 80 = 0.30 = 30%\" (computed). (3) On \"association, not proof\" the line \"(b) No: an association; A may be inherited with a nearby cause\" writes on.",
+        "explain",
+        "the card shrinks to a strip. (1) On \"eighty copies\" the line \"40 x 2 = 80 copies\" writes on. (2) On \"sixteen\" and \"plus eight\" the working writes on: \"A = 16 x 1 + 4 x 2 = 24\"; on \"thirty per cent\" \"(a) 24 / 80 = 0.30 = 30%\" (computed). (3) On \"association, not proof\" the line \"(b) No: an association; A may be inherited with a nearby cause\" writes on. (4) On \"ten per cent\" the chip \"4 / 40 = 10%\" writes on and takes a grey scribble cross, with the tag \"that counts people\". Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Brief settle before the next scene"
+    ],
+    'decision-rule': [
+        "new",
+        "Four step chips write on, one per cue, each with a tiny icon: \"say the denominator\" (a \"/ 100\" tag), \"count alleles: 2 per individual\" (two chips), \"read the trend\" (two bars with an arrow), \"name the limits\" (the bouncing dots).",
+        "Packs the method into reusable lines and hands off to the next video.",
+        "So, with frequency data: say what you counted, count alleles rather than individuals,",
+        "On the spoken cues: A fifth chip: \"association is not cause\". A \"Next\" chip slides in at the lower right: \"Next: collect and present your own data\", then \"then: sequencing and profiling\" (a small gel icon).",
+        "explain",
+        "four step chips write on, one per cue, each with a tiny icon: \"say the denominator\" (a \"/ 100\" tag), \"count alleles: 2 per individual\" (two chips), \"read the trend\" (two bars with an arrow), \"name the limits\" (the bouncing dots). A fifth chip: \"association is not cause\". A \"Next\" chip slides in at the lower right: \"Next: collect and present your own data\", then \"then: sequencing and profiling\" (a small gel icon).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "plate slide",
+            "bar draw"
+        ],
+        "Hold half a second before the notes"
+    ],
+    'key-notes': [
+        "new",
+        "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aids appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ],
+}
+
+B12_ROWS = {
+    'hook': [
+        "new",
+        "A coded document card slides in, headed \"1985: immigration case\" with a \"?\" stamp (no people, no photographs).",
+        "Teaches: hook (a boy and his mother, 1985).",
+        "In 1985, British officials doubted that a boy returning from Ghana was really his",
+        "On the spoken cues: On \"a boy\" and \"his mother's son\" two pedigree symbols appear joined by a dashed line with a \"?\": an open circle tagged \"mother\" and a small open square tagged \"boy\". On \"patterns of bands\" a coded gel strip writes on beside them with two lanes headed by the two symbols, bands drawing down (generic, illustrative;",
+        "explain",
+        "a coded document card slides in, headed \"1985: immigration case\" with a \"?\" stamp (no people, no photographs). On \"a boy\" and \"his mother's son\" two pedigree symbols appear joined by a dashed line with a \"?\": an open circle tagged \"mother\" and a small open square tagged \"boy\". On \"patterns of bands\" a coded gel strip writes on beside them with two lanes headed by the two symbols, bands drawing down (generic, illustrative; grey tag \"illustration, not the 1985 data\"). On \"he really was her son\" several bands in the boy's lane draw thin lines across to matching bands in the mother's lane, and the dashed \"?\" line becomes solid with a tick. On \"how is that different\" a short base-tile row \"A T G G C A ...\" writes on under the gel. The heading writes on: \"Reading inheritance in DNA\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Mark cross",
+            "tick",
+            "plate slide"
+        ],
+        "Hold two seconds"
+    ],
+    'two-tools': [
+        "new",
+        "The choice board in outline. A long coded chromosome bar runs across the top.",
+        "Teaches: two tools, two questions.",
+        "There are two main ways to get that kind of",
+        "On the spoken cues: On \"reads the exact order of bases\" a magnifier frame slides along one short stretch and a row of base tiles writes on beneath it, letter by letter; the left column header writes on: \"DNA sequencing: base order\".",
+        "explain",
+        "the choice board in outline. A long coded chromosome bar runs across the top. On \"reads the exact order of bases\" a magnifier frame slides along one short stretch and a row of base tiles writes on beneath it, letter by letter; the left column header writes on: \"DNA sequencing: base order\". On \"a few chosen places\" five small markers light along the same chromosome bar (amber ticks), each with a short bracket and no letters; the right column header writes on: \"DNA profiling: selected markers\". On \"one reads every letter\" the tile row pulses; on \"a handful of markers\" the five ticks pulse. On \"depends on the question\" a \"?\" card drops between the columns.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "DrawPath",
+            "plate slide",
+            "drop fall",
+            "bar draw"
+        ],
+        "Hold one second"
+    ],
+    'how-sequencing-works': [
+        "adjust",
+        "The read board. `m5x-cheek-swab-v1.png` (or v2) sits small at the left (tag \"sample\").",
+        "Explains why sequencing needs assembly (it reads short fragments).",
+        "Sequencing never reads a whole chromosome in one",
+        "On the spoken cues: On \"never reads a whole chromosome\" a chip \"reads a chromosome end to end\" writes on and takes a grey scribble cross. On \"copied and broken into short fragments\" a coded stretch of 24 base tiles duplicates into four copies, then each copy splits at different points into short rows of 6 to 9 tiles (`FragmentAssembly`, ported;",
+        "explain",
+        "the read board. `m5x-cheek-swab-v1.png` (or v2) sits small at the left (tag \"sample\"). On \"never reads a whole chromosome\" a chip \"reads a chromosome end to end\" writes on and takes a grey scribble cross. On \"copied and broken into short fragments\" a coded stretch of 24 base tiles duplicates into four copies, then each copy splits at different points into short rows of 6 to 9 tiles (`FragmentAssembly`, ported; fragment boundaries computed). On \"one base at a time\" one fragment slides into a reading window and its tiles light one by one, each with a small labelled peak rising above it (`Trace`; each peak carries its letter, peaks also tinted by base, never colour only). On \"broken at different places\" the cut points flash on the four copies; on \"lines up those overlaps\" the fragments slide into a staggered stack where matching overlaps ring and snap (overlaps computed; a small aside shows two torn paper strips matching along their edges, tag \"match the overlaps\"), and on \"rebuilds the whole sequence\" the consensus row writes on beneath (tag \"assembled sequence\").",
+        [
+            "HandText write-on",
+            "FragmentAssembly",
+            "ScribbleCircle",
+            "Mark cross",
+            "chip pop",
+            "plate slide"
+        ],
+        "Hold one second"
+    ],
+    'sequencing-a-family': [
+        "adjust",
+        "B9's `Pedigree` builds (data in Numbers): I-1 open square, I-2 open circle; II-1 filled circle (affected daughter), II-2 open square, II-3 open circle.",
+        "Explains why carriers show two letters (two copies read together).",
+        "Because sequencing reads every base, it finds single-base differences directly, like the",
+        "On the spoken cues: B7's recall card slides in small at the top: \"coding strand GAG to GTG: sickle cell\" (grey tag \"B7\"); B11's read strip look appears as a tag \"a SNP\" beside it. On \"Sequence this family\" a short `Trace` writes on under each symbol, showing the same nine bases with codon 6's middle position in a frame.",
+        "explain",
+        "B9's `Pedigree` builds (data in Numbers): I-1 open square, I-2 open circle; II-1 filled circle (affected daughter), II-2 open square, II-3 open circle. B7's recall card slides in small at the top: \"coding strand GAG to GTG: sickle cell\" (grey tag \"B7\"); B11's read strip look appears as a tag \"a SNP\" beside it. On \"Sequence this family\" a short `Trace` writes on under each symbol, showing the same nine bases with codon 6's middle position in a frame. On \"each shows two letters there\" the parents' traces show two overlapping peaks at the framed spot, labelled \"A/T\" (tag \"two copies: one A, one T\"); chips \"carrier\" pin under I-1 and I-2. On \"only T\" II-1's trace shows one peak \"T/T\"; II-2 shows \"A/A\", II-3 \"A/T\" (computed from the genotypes; checked by `fitsMode` in AR mode). On \"recessive pattern\" B9's giveaway tag writes on small: \"unaffected parents, affected child: recessive\" (grey tag \"B9\"). On \"thousands of people\" the pedigree shrinks and a wide grid of small trace chips fills behind it, collapsing into a single bar: \"T allele: copies / all copies\" (B11's pool bar look; no number given, tag \"allele frequency in the population\").",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "plate slide",
+            "bar draw"
+        ],
+        "Hold one second"
+    ],
+    'short-tandem-repeats': [
+        "new",
+        "The gel board, repeat strip first. On \"a short run of bases\" a stretch of base tiles writes on, then four tiles \"G A T A\" box together into one block, and the block copies itself along the strip, side by side (`RepeatStrip`).",
+        "Explains why repeat lengths differ between people (repeat number varies).",
+        "Today, profiling usually looks at markers called short tandem",
+        "On the spoken cues: On \"repeated over and over\" the blocks count up with a small ticker. The name \"short tandem repeat (STR)\" writes on with the gloss \"tandem: side by side\". On \"varies from person to person\" three short strips stack, with 7, 9 and 12 blocks (counts written at the ends).",
+        "explain",
+        "the gel board, repeat strip first. On \"a short run of bases\" a stretch of base tiles writes on, then four tiles \"G A T A\" box together into one block, and the block copies itself along the strip, side by side (`RepeatStrip`). On \"repeated over and over\" the blocks count up with a small ticker. The name \"short tandem repeat (STR)\" writes on with the gloss \"tandem: side by side\". On \"varies from person to person\" three short strips stack, with 7, 9 and 12 blocks (counts written at the ends). On \"eight repeats, and the other copy eleven\" a pair of homologous chromosome bars appears (B5b's plum and teal: plum tagged \"from mother\", teal \"from father\"), each with the marker's strip at the same spot: plum 8 blocks, teal 11 blocks. Grey tag: \"most STRs are in DNA that doesn't code for protein\".",
+        [
+            "HandText write-on",
+            "RepeatStrip",
+            "tick",
+            "bar draw"
+        ],
+        "Hold one second"
+    ],
+    'gel': [
+        "adjust",
+        "`m5x-gel-tank-v1.png` sits at the upper right as context (no bands drawn on the plate; grey tag \"gel tank\").",
+        "Explains why DNA moves and why short pieces move further (negative charge; easier passage through the gel).",
+        "To compare lengths, labs copy each marker many times, then run the copies through a",
+        "On the spoken cues: On \"copy each marker many times\" the 8-block and 11-block strips multiply into small stacks (grey tag \"PCR: Module 6\"). The coded `Gel` slab draws large and front-on: wells along the top, the top edge tagged \"− (black lead)\", the bottom edge \"+ (red lead)\".",
+        "explain",
+        "`m5x-gel-tank-v1.png` sits at the upper right as context (no bands drawn on the plate; grey tag \"gel tank\"). On \"copy each marker many times\" the 8-block and 11-block strips multiply into small stacks (grey tag \"PCR: Module 6\"). The coded `Gel` slab draws large and front-on: wells along the top, the top edge tagged \"− (black lead)\", the bottom edge \"+ (red lead)\". On \"negatively charged\" small \"−\" signs sparkle along a DNA stack's backbone, and on \"pulls it towards the positive end\" an arrow draws down the slab with the tag \"DNA moves to +\". On \"tiny pores\" a magnified circle shows the gel as a coded mesh; on \"Shorter pieces\" the 8-repeat copies and the 11-repeat copies leave the same well and race down; the shorter group pulls ahead (positions computed by the log-length rule). On \"Each length ends up as a band\" each group settles as one band, labelled \"8\" and \"11\". On \"their profile\" the lane gets a header \"one person, one marker\". Grey tag at the lower right: \"labs now often use thin tubes instead of a slab; same idea\".",
+        [
+            "ScribbleCircle",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    'child-bands': [
+        "new",
+        "The gel with three lanes headed by pedigree symbols: open circle \"mother\" (bands 8, 11), open square \"father\" (bands 9, 12), small open square \"child\" (bands 8, 12), all computed from repeat counts.",
+        "Explains why every child band matches a parent (one copy from each).",
+        "Here's how profiles show inheritance. At every marker, a child has one copy from the",
+        "On the spoken cues: On \"one copy from the mother and one from the father\" the child's two bands pulse in turn. On \"must match a band in one parent\" the rule writes on in hand type: \"every child band: from mother or father\". On \"eight came from the mother\" a plum line joins the child's 8 to the mother's 8;",
+        "explain",
+        "the gel with three lanes headed by pedigree symbols: open circle \"mother\" (bands 8, 11), open square \"father\" (bands 9, 12), small open square \"child\" (bands 8, 12), all computed from repeat counts. On \"one copy from the mother and one from the father\" the child's two bands pulse in turn. On \"must match a band in one parent\" the rule writes on in hand type: \"every child band: from mother or father\". On \"eight came from the mother\" a plum line joins the child's 8 to the mother's 8; on \"twelve came from the father\" a teal line joins the child's 12 to the father's 12. On \"ruled out\" a fourth lane slides in, a square \"man X\" (bands 10, 13); the child's 12 rings amber with a \"?\" and a line searches across the mother's and man X's lanes and finds nothing; man X's header takes a grey cross with the tag \"excluded\". Grey tag: \"assuming no new mutation in the marker\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Mark cross",
+            "plate slide"
+        ],
+        "Hold one second"
+    ],
+    'many-markers': [
+        "new",
+        "`MatchLadder`. On \"lots of people share\" a coded crowd of 10 small open squares and circles (pedigree symbols, no people) appears with one lit (tag \"1 in 10 share this pattern\", grey tag \"example number\").",
+        "Explains why a match is weaker than a mismatch (shared patterns; chances multiply only for independently inherited markers).",
+        "A match is weaker evidence than a mismatch, because lots of people share any one band",
+        "On the spoken cues: On \"Matching one marker\" one gel mini-lane ticks with the tag \"1 marker: 1 in 10\". On \"inherited separately\" the three mini-lanes sit on three different chromosome bars (tag \"different chromosomes: inherited independently\").",
+        "explain",
+        "`MatchLadder`. On \"lots of people share\" a coded crowd of 10 small open squares and circles (pedigree symbols, no people) appears with one lit (tag \"1 in 10 share this pattern\", grey tag \"example number\"). On \"Matching one marker\" one gel mini-lane ticks with the tag \"1 marker: 1 in 10\". On \"inherited separately\" the three mini-lanes sit on three different chromosome bars (tag \"different chromosomes: inherited independently\"). On \"the chances multiply\" the ladder writes on one rung per cue (computed): \"1 marker: 1/10\", \"2: 1/100\", \"3: 1/1,000\", then jumps to \"10: 1/10,000,000,000 (one in ten billion)\". On \"real profiles compare many markers\" a grey tag writes on: \"real profiles: often 16 or more markers\"; on \"not proof\" the tag \"a match is strong evidence, not proof\" writes under it, with a small grey tag beside the ladder: \"close relatives share more bands, so the chances are not this small for a brother\" (Revision 2).",
+        [
+            "HandText write-on",
+            "MatchLadder",
+            "ScribbleCircle",
+            "tick",
+            "bar draw"
+        ],
+        "Hold one second"
+    ],
+    'choose-the-tool': [
+        "new",
+        "The choice board fills. Left column \"sequencing: base order\": on \"a particular base\" cards drop in: \"is this disease allele present?\", \"how common is this SNP in each population?\", each with a small tile row and one amber tile.",
+        "Explains why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA).",
+        "So which tool fits which question? If you need a particular base, like a disease allele",
+        "On the spoken cues: On \"Profiling can't see it\" a dashed arrow from the left card to the profiling column is blocked with a grey cross (tag \"repeat lengths only\"). Right column \"profiling: selected markers\": on \"who's related to whom\" cards drop in: \"is this man the father?\", \"how related are these captive animals?\", each with a mini gel;",
+        "explain",
+        "the choice board fills. Left column \"sequencing: base order\": on \"a particular base\" cards drop in: \"is this disease allele present?\", \"how common is this SNP in each population?\", each with a small tile row and one amber tile. On \"Profiling can't see it\" a dashed arrow from the left card to the profiling column is blocked with a grey cross (tag \"repeat lengths only\"). Right column \"profiling: selected markers\": on \"who's related to whom\" cards drop in: \"is this man the father?\", \"how related are these captive animals?\", each with a mini gel; on \"conservation programs\" the second card gets a grey tag \"breeding programs: avoid pairing close relatives\". Grey tag at the bottom: \"profiling is also used in forensics\".",
+        [
+            "ScribbleCircle",
+            "Mark cross",
+            "drop fall"
+        ],
+        "Hold one second"
+    ],
+    'tool-limits': [
+        "adjust",
+        "The two columns stay; the cards dim. On \"a handful of markers\" the five amber ticks from scene 2 return along the chromosome bar under the profiling column, with the rest of the bar greyed; limit tag writes on: \"profiling: a few markers, not the whole genome\".",
+        "Explains why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA).",
+        "But each tool has limits. A profile is a handful of markers, not a whole genome, so it",
+        "On the spoken cues: On \"doesn't tell you what it does\" the amber tile under the sequencing column gets a small \"?\" and the limit tag writes on: \"sequencing: a variant found is not a cause proved (B11: association, not cause)\".",
+        "explain",
+        "the two columns stay; the cards dim. On \"a handful of markers\" the five amber ticks from scene 2 return along the chromosome bar under the profiling column, with the rest of the bar greyed; limit tag writes on: \"profiling: a few markers, not the whole genome\". On \"doesn't tell you what it does\" the amber tile under the sequencing column gets a small \"?\" and the limit tag writes on: \"sequencing: a variant found is not a cause proved (B11: association, not cause)\".",
+        [
+            "HandText write-on",
+            "tick",
+            "bar draw"
+        ],
+        "Hold one second"
+    ],
+    'memory': [
+        "new",
+        "Three handwritten lines write on with small icons: \"sequence = bases; profile = selected markers\" (a tile row and a mini gel), \"DNA runs to red (+)\" (the gel slab with its red lead and an arrow down), \"every child band from Mum or Dad\" (the scene 7 trio lanes with their joining lines).",
+        "Gives reusable memory aids after the causes have been explained; each aid is checked in the design.",
+        "Three things to remember. Sequence means bases, and profile means selected",
+        "On the spoken cues: three handwritten lines write on with small icons: \"sequence = bases; profile = selected markers\" (a tile row and a mini gel), \"DNA runs to red (+)\" (the gel slab with its red lead and an arrow down), \"every child band from Mum or Dad\" (the scene 7 trio lanes with their joining lines).",
+        "explain",
+        "three handwritten lines write on with small icons: \"sequence = bases; profile = selected markers\" (a tile row and a mini gel), \"DNA runs to red (+)\" (the gel slab with its red lead and an arrow down), \"every child band from Mum or Dad\" (the scene 7 trio lanes with their joining lines).",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    'attempt': [
+        "new",
+        "The board clears: no earlier gels, lines or tags.",
+        "Unseen transfer task with every condition on screen: \"(a) Which man can be excluded?\" \"(b) Explain using the bands.\" Two answer boxes.",
+        "Two harder questions now. First, this gel shows a mother, her child and two men, at",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears: no earlier gels, lines or tags.)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card writes on, headed \"Paternity test: three STR markers\". Three small gel panels side by side, \"marker 1\", \"marker 2\", \"marker 3\", each with four lanes headed by symbols: open circle \"mother\", small square \"child\", square \"man A\", square \"man B\".",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-one': [
+        "new",
+        "The card shrinks to a strip at the top (the three gels and demands stay readable).",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for item one (owner rule, 16 October).",
+        "First, find the child's bands that didn't come from the",
+        "On the spoken cues: (1) On \"didn't come from the mother\" plum lines join the child's 9, 11 and 6 to the mother's bands, and the child's 12, 13 and 10 ring amber (tag \"from the father\"). (2) On \"Man A has all three\" teal lines join the three amber bands to man A's lane (ticks).",
+        "explain",
+        "the card shrinks to a strip at the top (the three gels and demands stay readable). (1) On \"didn't come from the mother\" plum lines join the child's 9, 11 and 6 to the mother's bands, and the child's 12, 13 and 10 ring amber (tag \"from the father\"). (2) On \"Man A has all three\" teal lines join the three amber bands to man A's lane (ticks). (3) On \"Man B lacks\" searches across man B's lane find nothing at markers 1 and 3 (grey crosses; marker 2's 13 matches, small tick). The line \"(a) man B excluded; (b) child's 12 (marker 1) and 10 (marker 3) are in neither the mother nor man B\" writes on. (4) On \"definitely the father\" the chip \"man A is the father\" writes on and takes a grey scribble cross, with the tag \"can't be excluded; more markers needed\". Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Mark cross",
+            "tick",
+            "chip pop"
+        ],
+        "Brief settle before the next scene"
+    ],
+    'attempt-two': [
+        "new",
+        "The board clears. The card shows two population cards (\"population 1\", \"population 2\"), each with a short tile row containing a \"?\" tile, and the stimulus line \"disease-linked variant: a single-base change\".",
+        "Unseen transfer task with every condition on screen: \"(a) Why is sequencing more useful than profiling here?\" \"(b) Name one question where profiling is the better choice.\" Two answer boxes.",
+        "Second. Researchers want to know whether a disease-linked variant, a change in a single",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (The board clears. The card shows two population cards (\"population 1\", \"population 2\"), each with a short tile row containing a \"?\" tile, an)",
+        "explain",
+        "The board clears and the question builds as each given is named; the demands stay on screen; the countdown ring starts after the narration. The card shows two population cards (\"population 1\", \"population 2\"), each with a short tile row containing a \"?\" tile, and the stimulus line \"disease-linked variant: a single-base change\". Demands: \"(a) Why is sequencing more useful than profiling here?\" \"(b) Name one question where profiling is the better choice.\" Two answer boxes.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\""
+    ],
+    'feedback-two': [
+        "new",
+        "The card shrinks to a strip. (1) On \"the base order at that spot\" the \"?\" tiles fill: \"T\" in some rows, \"A\" in others.",
+        "Brief feedback: the answer, the key reason and one crossed classic mistake for item two (owner rule, 16 October).",
+        "The variant is one base, so you need the base order at that",
+        "On the spoken cues: (2) On \"the allele's frequency in each population\" two small bars draw under the population cards (illustrative, no values; tag \"allele frequency in each\"); the line \"(a) the variant is one base: sequencing reads it; profiling measures repeat lengths only\" writes on. (3) On \"better for relatedness\" the line \"(b) e.g.",
+        "explain",
+        "the card shrinks to a strip. (1) On \"the base order at that spot\" the \"?\" tiles fill: \"T\" in some rows, \"A\" in others. (2) On \"the allele's frequency in each population\" two small bars draw under the population cards (illustrative, no values; tag \"allele frequency in each\"); the line \"(a) the variant is one base: sequencing reads it; profiling measures repeat lengths only\" writes on. (3) On \"better for relatedness\" the line \"(b) e.g. paternity, or how related captive animals are\" writes on. (4) On \"reads the whole genome\" the chip \"profiling reads the whole genome\" writes on and takes a grey scribble cross, with the tag \"a handful of markers\". Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "bar draw"
+        ],
+        "Brief settle before the next scene"
+    ],
+    'decision-rule': [
+        "adjust",
+        "The choice board returns as two chips, one per cue: \"a particular base: sequence\" (tile row), \"who's related: profile\" (mini gel), with a sub-chip under the second: \"one mismatch excludes; a match needs many markers\".",
+        "Packs the method into reusable lines and hands off to the next video.",
+        "So, start with the question. Need a particular base? Sequence",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: what collaborative population data can show\" (a small grid of many trace chips).",
+        "explain",
+        "the choice board returns as two chips, one per cue: \"a particular base: sequence\" (tile row), \"who's related: profile\" (mini gel), with a sub-chip under the second: \"one mismatch excludes; a match needs many markers\". A \"Next\" chip slides in at the lower right: \"Next: what collaborative population data can show\" (a small grid of many trace chips).",
+        [
+            "chip pop",
+            "plate slide"
+        ],
+        "Hold half a second before the notes"
+    ],
+    'key-notes': [
+        "new",
+        "Key notes card with the numbered notes, the memory aids in large writing and the condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aids appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ],
+}
+
 LESSONS = {
     'b3b': {
         'design': D + 'lessons/bio-m5-b03b.md',
@@ -3353,6 +3908,32 @@ LESSONS = {
         'teaching': {"task": "How do you collect, record and present data on how common a characteristic is, and how sure can you be about what it shows?", "causalExplanation": "(1) one class's count is not yet a population frequency: method, sample size and classification decide what it means (1); (2) the characteristic must be visible, quick, non-sensitive, and is not a one-gene trait, so it is counted, not turned into alleles (2); (3) data about people need agreement and anonymity, so no result can be traced and no one feels pressured (3); (4) definitions before counting, with an \"unsure\" box, because different judgements make the numbers mean different things (4); (5) unnamed slips and two counters reduce bias and counting errors (5); (6) frequency is count over total, and the total must be stated (6); (7) pooling gives a bigger sample and a better estimate (7); (8) separate categories go on a column graph with gaps, from zero, titled and labelled (8); (9) small samples scatter by chance; bigger samples land closer to the true value (9); (10) trend, pattern and relationship, with association not cause (10); (11) limitations, validity and reliability, and cautious wording (11).", "conversationalApproach": "Opens on the hook (hook (one class, one number)), then works through aim and choosing a characteristic, agreement and privacy, define the categories before counting, the method, record: the table and the frequency and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.", "openingDecision": "In one class, nine of the twenty-eight students who were counted have attached earlobes. Does that tell you how common attached earlobes are in everyone your age?", "understandingCheck": "group A 18 attached, 42 free; group B 30 attached, 30 free. Demands: frequency of attached in each group, compare, one limitation. Answer: A 18/60 = 30 percent; B 30/60 = 50 percent; attached more common in group B in these samples; limitation: 60 per group from one school is a small, possibly unrepresentative sample, so the difference could be chance. Crossed mistake: \"18 / 42 = 43 percent\" (divided by the other category, not the total).", "curriculumScope": "follows the chemistry practical format (chem-m5-p01.md, chem-m5-p03.md) and the Biology format and voice (bio-m5-b12.md). No pre-design pack exists for this route entry; this design works from the site extract ../site-extracts/bio-m5-l16.md and site lesson 16 (read 18 Oct: the frequency card with the earlobe populations, the \"Sample quality and limitations\" card, the four-step data interpretation sequence, the \"Read the Table\" earlobe task and the Analyse walkthrough). Route entry: bio-m5-p03 (\"Collect and present population-frequency data\", playlist order 21, practical-support branch, prerequisite bio-m5-b11, next bio-m5-b12). Route start: \"Select a teacher-approved dataset or characteristics collection protocol.\" Route stop: \"Prepare actual collection/recording/presentation and analyse trends, relationships and limitations; supplied data alone does not evidence learner collection.\" Route syllabus actions: B-frequency-collection, B-frequency-analysis. Syllabus (2017, p49): B5-IQ4-03 \"collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data; analysing single nucleotide polymorphism (SNP)\"."},
         'design_block': {'renderer': RENDERER, "visualSystem": "B11's coded frequency table and bar chart look, its \"in this sample\" tag style, its pool bar; B3b's coded gene-pool tray bead look for the bead population (round beads, painted bead plates below); the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter); B6a's WrongChip, GreyTag, Cross, Cam. Shared plates from bio-m5-p01: m5x-clipboard-sheet-v1.png (tally sheet), m5x-pencil-v1.png. New coded items: the definition line diagram, the slip (three boxes), tally table, frequency calculation lines, column graph, bead sample chart (dot strip), analysis card (trend, pattern, relationship), limitations card, attempt card. - No human figures: slips fold and drop into the box by themselves; the mirror lies on a desk and shows only a soft highlight; counters are represented by two pencil tallies agreeing on the clipboard. No people.", "transitionPlan": "One class-collection workflow persists across the practical: the step rail along the top shows where the student is and the right zone holds one card at a time. The slips, table, pooled year group, column graph and bead model build in order, the analysis and limitation cards follow, the attempt card clears the board and feedback shrinks it to a strip; scene crossfade with settle."},
         'rows': BIO_BP03_ROWS,
+    },
+    'b11': {
+        'design': D + 'lessons/bio-m5-b11.md',
+        'learning_review': D + 'checks/b11-learning-review.md',
+        'science_check': D + 'checks/b11-claude-science-check.md',
+        'meta': {"title": "Thirty-two roan cattle, so how common is the white allele? Population frequencies and SNP evidence", "subtitle": "How do you work out how common a characteristic or an allele is in a population, and what can SNP data, and their limits, tell you?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 19, "lessonIntent": "calculating the frequency of a characteristic as a count over the stated total, and presenting it as a table and a bar chart; calculating an allele frequency by counting copies (two per individual for an autosomal gene); explaining why a recessive phenotype frequency gives only the homozygous recessive genotype frequency, because carriers look like dominant homozygotes; describing a SNP as a one-base difference at a known position, each version an allele, and saying that reading both copies shows the genotype directly; saying that most SNPs change nothing but some change a protein; calculating a SNP allele frequency from genotype counts; comparing two groups to identify a trend and calling it an association, not a cause, with the reason (a nearby DNA difference inherited with it); explaining why one SNP cannot show relatedness; naming sample limits (size, representation, consistent categories); applying all of it to unseen clover leaf-mark counts and unseen SNP genotype counts."},
+        'hold_seconds': 10,
+        'holds': ['attempt', 'attempt-two'],
+        'ids': ['hook', 'frequency', 'allele-frequency', 'hidden-alleles', 'what-is-a-snp', 'snp-markers', 'counting-snps', 'association', 'one-marker', 'sample-limits', 'memory', 'attempt', 'feedback-one', 'attempt-two', 'feedback-two', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B10: co-dominance, roan Shorthorn cattle (red C^R C^R, roan C^R C^W, white C^W C^W), the heterozygote looks different from both homozygotes. From B9: dominant, recessive, genotype and phenotype, a ratio is a chance per offspring and large samples come closer to it, Tt and tt notation with tall and short peas. From B8: crossing over swaps segments between homologous chromosomes. From B7: sickle cell begins with one base change, GAG to GTG on the coding strand. From B4: DNA bases A, T, C and G. Year 10 percentages. Not assumed: frequency as a defined measure, denominators, allele frequency, gene pool, SNP, association, sampling limits.", "startsWith": "A sourced sample reports characteristics or variants. The video opens: Here's a herd of a hundred Shorthorn cattle. Sixty-four are red, thirty-two are roan, and four are white.", "stopsAfter": "calculating the frequency of a characteristic as a count over the stated total, and presenting it as a table and a bar chart; calculating an allele frequency by counting copies (two per individual for an autosomal gene); explaining why a recessive phenotype frequency gives only the homozygous recessive genotype frequency, because carriers look like dominant homozygotes; describing a SNP as a one-base difference at a known position, each version an allele, and saying that reading both copies shows the genotype directly; saying that most SNPs change nothing but some change a protein; calculating a SNP allele frequency from genotype counts; comparing two groups to identify a trend and calling it an association, not a cause, with the reason (a nearby DNA difference inherited with it); explaining why one SNP cannot show relatedness; naming sample limits (size, representation, consistent categories); applying all of it to unseen clover leaf-mark counts and unseen SNP genotype counts.", "nextLesson": "collecting and presenting frequency data yourself (route entry bio-m5-p03), then DNA sequencing and profiling (bio-m5-b12)."},
+        'teaching': {"task": "How do you work out how common a characteristic or an allele is in a population, and what can SNP data, and their limits, tell you?", "causalExplanation": "Causes: why 4% and 36% are wrong (copies, not animals, 3); why looks fail under complete dominance (carriers look like TT, 4); why reading DNA shows carriers (both copies read, 5); why most SNPs change nothing (non-coding DNA, 6); why an association need not be a cause (close neighbours inherited together, 8); why one SNP proves little (thousands of other differences, 9); why small samples mislead (they bounce, 10). Visible case: one herd, one pea field, one aligned strip, one pair of groups. Video advantage: the herd sorts itself; every allele pours into the pool bar and the white ones light by source; the SNP column is found by a scan; sample dots bounce live. Thinking opportunities: two unseen items with every count on screen. Reading load: one board at a time; scene 3 is the densest frame (grid, pool bar, two working lines), and the grid shrinks before the pool bar fills.", "conversationalApproach": "Conversational, one board at a time, causes before names. Scene 2 shows the count over the total before the word \"frequency\". Scene 3 shows two copies per animal before the word \"allele frequency\". Scene 5 shows the one differing column before naming the SNP, and glosses \"single nucleotide\" and \"polymorphism\". Scene 8 shows the two group bars before the word \"association\". Analogy: None manufactured. The herd is the concrete case for counting, and the aligned DNA rows are the concrete case for SNPs.", "openingDecision": "Thirty-six per cent? Hold that thought, because the answer is neither.", "understandingCheck": "12a uses the site's earlobe item numbers on a non-human trait, the white clover V leaf mark (Revision 2; counts given; frequencies, comparison and one limitation): it tests the denominator trap and a real limitation. 12c is a SNP genotype count (find the allele frequency; then judge whether an association shows cause): it transfers \"count alleles, not people\" to new numbers and tests association against cause. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working on the card, one crossed-out classic mistake. No mark-allocation talk.", "curriculumScope": "\"collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data; analysing single nucleotide polymorphism (SNP)\". Route actions B-frequency-collection and B-frequency-analysis (ledger row p1060, shared with bio-m5-p03). This video presents and analyses data; it does not evidence learner collection, which P03 owns. Update ledger row p1060 (analysis and presentation part) when this design passes review."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Three boards, one at a time. (1) The count board (scenes 1 to 4, 10): the sample on the left as a 10 x 10 grid of small painted plates (cattle or peas), a tally table in the middle (category, count, out of, per cent; computed), a bar chart on the right (bars draw from the table; y axis \"per cent of cattle counted\" or \"per cent of alleles\"; every bar labelled with its value). Under it, the gene pool bar (scene 3): each animal's two allele chips pour into one long bar of 200 cells, red and white chips sorted to each end, with the count computed. (2) The read strip (scenes 5 to 9): rows of coded base tiles in B4's `BasePiece` look, two rows per sample (one per copy), aligned; a column highlight computes the differing position; a genotype tag at the end of each pair. Samples are coded ID cards (\"sample 1\"), never people. (3) The group panel (scenes 8, 9): two allele-bead groups (patients, controls) with frequency bars computed as hits divided by twice the number of people. Amber is the emphasis colour only, as in B9 and B10. Letters for bases are printed in a serif capital on the tiles; base colour is never the only cue.", "transitionPlan": "The herd grid fills and sorts itself by coat colour; the sorted grid slides left and shrinks beside the tally table and bar chart; the gene pool bar pours the allele chips for the copy count; the grid and bar fall away for the pea field; the read strip replaces the count board for the SNP scenes; the group panel carries association and the marker; the bouncing sample dots return to the count board for the limits; the memory aids and the decision chips follow; each attempt clears the board to one card and the feedback shrinks the card to a strip while the working writes on; scene crossfade with settle."},
+        'rows': B11_ROWS,
+    },
+    'b12': {
+        'design': D + 'lessons/bio-m5-b12.md',
+        'learning_review': D + 'checks/b12-learning-review.md',
+        'science_check': D + 'checks/b12-claude-science-check.md',
+        'meta': {"title": "Read every base, or compare a few markers? DNA sequencing and profiling for inheritance studies", "subtitle": "How can DNA itself show who inherited what, and when should you read every base rather than compare a few markers?", "subject": "Biology", "yearLevel": 12, "module": 5, "lesson": 21, "lessonIntent": "saying that sequencing determines the exact order of bases in a stretch of DNA and profiling compares a few selected variable markers without reading the order; describing sequencing as reading short copied fragments base by base and assembling them by overlap; using sequencing to find a single-base variant directly, including carriers (two bases at one position), and to give allele frequencies across a population; describing a short tandem repeat as a short sequence repeated side by side, with repeat numbers that vary, two copies per person (one from each parent); explaining that DNA moves to the positive electrode because it is negatively charged and shorter fragments travel further; using \"every child band comes from the mother or the father\" to identify paternal bands and exclude a man; explaining why a match needs many independently inherited markers (chances multiply) and is not proof; choosing sequencing for a question about a particular base and profiling for relatedness or identity, with the limits of each; applying this to an unseen paternity gel and an unseen tool-choice question."},
+        'hold_seconds': 10,
+        'holds': ['attempt', 'attempt-two'],
+        'ids': ['hook', 'two-tools', 'how-sequencing-works', 'sequencing-a-family', 'short-tandem-repeats', 'gel', 'child-bands', 'many-markers', 'choose-the-tool', 'tool-limits', 'memory', 'attempt', 'feedback-one', 'attempt-two', 'feedback-two', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B11: a SNP is a one-base difference, each version an allele; reading both copies gives the genotype; allele frequency = copies / all copies; association is not cause. From B9: pedigree symbols; unaffected parents with an affected child show a recessive trait; carriers. From B7: the sickle allele is one base change, GAG to GTG on the coding strand. From B5b and B8: each parent passes one copy of each chromosome; genes on different chromosomes are inherited independently. From B4: bases A, T, C, G and complementary pairing. From B6a: DNA is packed into chromosomes. Not assumed: sequencing, profiling, short tandem repeat, gel electrophoresis, band, match probability.", "startsWith": "A specified research question needs sequencing or profiling evidence. The video opens: In 1985, British officials doubted that a boy returning from Ghana was really his mother's son. A geneticist, Alec Jeffreys, had just found a way to compare people's DNA as patterns of bands.", "stopsAfter": "saying that sequencing determines the exact order of bases in a stretch of DNA and profiling compares a few selected variable markers without reading the order; describing sequencing as reading short copied fragments base by base and assembling them by overlap; using sequencing to find a single-base variant directly, including carriers (two bases at one position), and to give allele frequencies across a population; describing a short tandem repeat as a short sequence repeated side by side, with repeat numbers that vary, two copies per person (one from each parent); explaining that DNA moves to the positive electrode because it is negatively charged and shorter fragments travel further; using \"every child band comes from the mother or the father\" to identify paternal bands and exclude a man; explaining why a match needs many independently inherited markers (chances multiply) and is not proof; choosing sequencing for a question about a particular base and profiling for relatedness or identity, with the limits of each; applying this to an unseen paternity gel and an unseen tool-choice question.", "nextLesson": "what large collaborative population-genetics projects can show (route entry bio-m5-b13)."},
+        'teaching': {"task": "How can DNA itself show who inherited what, and when should you read every base rather than compare a few markers?", "causalExplanation": "Causes: why sequencing needs assembly (it reads short fragments, 3); why carriers show two letters (two copies read together, 4); why repeat lengths differ between people (repeat number varies, 5); why DNA moves and why short pieces move further (negative charge; easier passage through the gel, 6); why every child band matches a parent (one copy from each, 7); why a match is weaker than a mismatch (shared patterns; chances multiply only for independently inherited markers, 8); why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA, 9). Visible case: one family trace, one trio gel, one ladder, one choice board. Video advantage: fragments snap together by overlap; double peaks appear on carriers; bands race and settle; joining lines show which parent gave each band; the ladder multiplies live. Thinking opportunities: two unseen items with every band and demand on screen. Reading load: one board at a time; the attempt 1 card (three gels, four lanes each) is the densest frame and is the task itself.", "conversationalApproach": "Conversational, one board at a time, causes before names. Scene 2 says what each tool measures before naming either one. Scene 5 shows the repeated unit and the different repeat counts before naming \"short tandem repeats\". Scene 6 explains why DNA moves and why short pieces move further before naming the band. Scene 8 shows why chances multiply before saying \"many markers\". Analogy: One, small and true to the mechanism: assembling overlapping fragments is like matching the edges of torn strips (scene 3), because both work only where pieces share an overlap. The contrast \"one reads every letter; the other checks a handful of markers\" (scene 2) is literal, not an analogy.", "openingDecision": "So how can a pattern of bands show who's related? And how is that different from reading DNA one base at a time?", "understandingCheck": "11a is a paternity gel at three markers (mother, child, man A, man B; one man excluded at two markers, the other consistent at all three): it tests the \"child band from mother or father\" rule, identifying the paternal band first, exclusion and the limit of inclusion. 11c is the site's tool-choice question (a disease-linked single-base variant in two populations) with a second demand to name a question where profiling is better: it tests what each tool measures. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working on the card, one crossed-out classic mistake. No mark-allocation talk.", "curriculumScope": "\"investigate the use of technologies to determine inheritance patterns in a population using, for example: (ACSBL064, ACSBL085)\" with the example \"DNA sequencing and profiling (ACSBL086)\". Route action B-technologies (ledger row p1068). The parent line is marked as a depth-study or practical opportunity in the syllabus JSON; this video supplies the concepts and two analysis tasks, not a student investigation. Update ledger row p1068 when this design passes review."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Three boards. (1) The read board (scenes 2 to 4): coded base tiles in B4's `BasePiece` look; fragments as short tile rows; an assembly lane where overlaps snap together; a coded sequencing trace (a row of smooth peaks, each labelled with its base letter; at a heterozygous position two overlapping peaks with the label \"A/T\"); B9's `Pedigree` with a sequence chip under each symbol. (2) The gel board (scenes 5 to 8): a coded repeat strip (`RepeatStrip`: a marker drawn as a run of four-base blocks, each block labelled \"GATA\", with the count written at the end); a coded gel slab front-on (`Gel`: wells along the top edge labelled \"wells\", the top edge tagged \"−, black lead\", the bottom edge \"+, red lead\"; one lane per individual, headed with a pedigree symbol or a card; band positions computed from fragment length); the painted gel tank plate as context only. (3) The choice board (scenes 9, 12): two columns, \"sequencing: base order\" and \"profiling: selected markers\", filling with question cards. Individuals are always pedigree symbols (squares, circles) or coded cards, never people. Amber is the emphasis colour only. Electrode signs are written (\"−\", \"+\"), never colour only.", "transitionPlan": "The 1985 case and the band card open the lesson; the read board holds the two-tools split, the fragment lanes and the sickle family pedigree; the repeat strip carries short tandem repeats and hands over to the gel board for the gel, the child bands and the marker ladder; the choice board takes the tool choice and the limits; the memory aids and the decision rule follow; each attempt clears the board to one card (a paternity gel or a tool-choice question) and the feedback shrinks the card to a strip while the working writes on; scene crossfade with settle."},
+        'rows': B12_ROWS,
     },
 }
 

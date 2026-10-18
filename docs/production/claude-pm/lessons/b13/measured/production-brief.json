@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/b13/measured/lesson.json",
+    "lessonSha256": "8b315f48d197936d4b34c9bed62482942c29fd9cc59dc9338d808e1004f524d1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B12: sequencing reads base order, profiling compares selected markers; sequencing thousands of people gives an allele's frequency. From B11: allele frequency = copies / all copies; a SNP is a one-base difference; association is not cause; sample size and representation limit conclusions. From B9: unaffected parents with an affected child show a recessive trait; carriers. From B7: the sickle allele is one base change in the haemoglobin gene; sickle-shaped red cells. Year 11 (Biological Diversity): natural selection removes alleles that lower survival or reproduction. Not assumed: large-scale collaborative project, inference, heterozygote advantage, genetic diversity as a population measure, founder, reference genome.",
+    "startsWith": "The hook: UK Biobank is a shared research project that began recruiting in 2006. Half a million volunteers in Britain, aged 40 to 69, gave blood samples and agreed to link their health records.",
+    "stopsAfter": "saying what a large-scale collaborative project is (many researchers and sites pooling data); explaining why a large sample detects a small effect that chance hides in a small one, giving stronger inference but not certainty; describing how pooled frequency data revealed the sickle allele as unexpectedly common; naming the three evidence streams (pedigree, DNA, frequency) and why their agreement matters; explaining heterozygote advantage with malaria; giving two reasons a matching pattern is not proof (coincidence; founders and chance in a small group); explaining how diversity data guide conservation and why diversity does not guarantee survival; explaining how shared variants indicate more recent common ancestry and what the 1000 Genomes pattern suggests; saying the reference genome is a composite, not everyone's genome; stating what large data improve and what they do not remove; applying this to unseen frequency and diversity data.",
+    "nextLesson": "what population patterns can and cannot predict about one person's risk (route entry bio-m5-g03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m5-b13.md"
+  ],
+  "teaching": {
+    "task": "What can data pooled from huge numbers of people (or animals) show that one family or one hospital can't, and how far can we trust what it shows?",
+    "causalExplanation": "Causes: why scale helps (chance swamps small effects in small samples, 2); why the sickle map is a puzzle (selection should remove a harmful allele, 3); why three streams are needed (each misses something, 4); why carriers are favoured (no anaemia, less severe malaria, so more children, 5); why a match is not proof (coincidence; founders, 6); why diversity matters (more alleles, more chance some resist a new disease, 7); why shared variants mean relatedness (inherited from common ancestors, 8). Visible case: one map, one devil tray pair, one bar chart. Video advantage: the simulation settles live; the malaria layer slides over the allele map; founder beads carry an allele to an island; a disease passes along two trays. Thinking opportunities: two unseen data items with every value and demand on screen. Reading load: one board at a time; the scene 8 frame is the busiest and builds one element per cue.",
+    "conversationalApproach": "Opens on the hook (hook (half a million volunteers)), then works through why scale matters, the sickle cell puzzle, three kinds of evidence, the malaria overlay, a match isn't proof and the remaining scenes in order, with each reasoning stage shown on its own cue; ends with the unseen attempt (10 second countdown), brief feedback, the decision rule or board, and the key notes.",
+    "openingDecision": "UK Biobank is a shared research project that began recruiting in 2006. Half a million volunteers in Britain, aged 40 to 69, gave blood samples and agreed to link their health records. So what can data from half a million people show that one family, or one hospital, never could? And how far can we trust it?",
+    "understandingCheck": "11a is a data table (example data, labelled) of a red blood cell variant's frequency and malaria level in six regions, one of them an island that breaks the trend: it tests describing a trend, naming a relationship as a suggestion, and giving a rival explanation. 11c is conservation data (example data) for a mainland and an island wallaby population: it tests reading diversity, inferring population history and naming a management use, with the diversity trap. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 s): answer, key reason, one crossed-out classic mistake. No mark-allocation talk.",
+    "curriculumScope": "Syllabus (2017, BIO12-12, programme/syllabus/bio-2017-y12.json, B5-IQ5-03 to B5-IQ5-06, p 50): \"investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships, for example: (ACSBL064, ACSBL073)\" with the examples \"the use of population genetics data in conservation management\", \"population genetics studies used to determine the inheritance of a disease or disorder\" and \"population genetics relating to human evolution\". The two spaces before \"for example\" are in the official DOCX extraction (pack note). Route action B-collaborative-data. The parent line is marked as a depth-study or practical opportunity; this video supplies the concepts and two analysis tasks, not a student investigation. Update the ledger row for B-collaborative-data when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Three boards, one at a time. (1) The data board (scenes 1, 2, 9): a coded grid of many small sample-tube chips that pools into one data bar; SampleBounce from B11 (seeded rng) reused to show a small study's estimate bouncing and a large study's estimate settling. (2) The map board (scenes 3 to 6, attempt 1): a coded world outline (simplified public-domain outline, for example Natural Earth 110 m, drawn as a single stroke; no painted map), with region shading for allele frequency drawn from banded values (legend with written bands, never colour only), a second overlay layer for malaria, and evidence cards (pedigree, DNA strip, frequency) docked at the side. (3) The population board (scenes 7, 8): allele-bead trays (B11's bead look) for diversity, and a coded bar chart and a simple coded similarity tree for the 1000 Genomes pattern. Individuals are never drawn as people: pedigree symbols, tube chips or beads only. Amber is the emphasis colour only.",
+    "transitionPlan": "The data board (sample tubes pooling into one bar and the small-against-large simulation) opens the lesson and gives way to the map board for scenes 3 to 6, where the allele map, the evidence cards and the malaria overlay build on one outline; the population board takes over for scenes 7 and 8 and the data board returns for scene 9; each attempt card clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "the data board.",
+      "teachingReason": "Hook (half a million volunteers): UK Biobank is a shared research project that began recruiting in 2006.",
+      "narrationCue": "Half a million volunteers / link their health records / 850,000 places / approved researchers / one family, or one hospital",
+      "motionPurpose": "A painted rack of sample tubes (m5x-sample-tube-rack-v1.png, new) sits at the left with the tag \"UK Biobank, recruiting from 2006\". On \"Half a million volunteers\" a coded TubeGrid fills the right side with small tube chips, a counter ticking to \"500,000\" (grey tag \"aged 40 to 69\"); on \"link their health records\" a thin line joins one chip to a small coded record card (no names, a heart and a pill icon).",
+      "motionRole": "explain",
+      "onScreenChange": "the data board. A painted rack of sample tubes (m5x-sample-tube-rack-v1.png, new) sits at the left with the tag \"UK Biobank, recruiting from 2006\". On \"Half a million volunteers\" a coded TubeGrid fills the right side with small tube chips, a counter ticking to \"500,000\" (grey tag \"aged 40 to 69\"); on \"link their health records\" a thin line joins one chip to a small coded record card (no names, a heart and a pill icon). On \"850,000 places\" one chip opens into a short DNA strip with many tiny ticks along it (tag \"about 850,000 variants measured\"; grey tag \"B12: reading DNA\"). On \"approved researchers\" five small coded lab badges ring the grid with dashed lines into it (tag \"shared with approved researchers\"). On \"one family, or one hospital\" a tiny pedigree of five symbols and a small 200-chip block appear beside the huge grid for scale. The heading writes on: \"What big shared data can show\". Hold two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold two seconds"
+    },
+    {
+      "sceneId": "why-scale",
+      "visualDecision": "adjust",
+      "visualReference": "on \"many researchers and sites pool their data\" five site badges each send a stream of chips into one central bar; the term writes on with the gloss \"many groups pooling data\".",
+      "teachingReason": "Why scale matters: A project like this is called a large-scale collaborative project: many researchers and sites pool their data.",
+      "narrationCue": "many researchers and sites pool their data / only nudge risk a little / In a small study / hundreds of thousands / inference / never certain",
+      "motionPurpose": "On \"only nudge risk a little\" two bars appear, \"carriers\" and \"non-carriers\", differing by a sliver (illustrative; tag \"a small real difference\"). On \"In a small study\" B11's SampleBounce runs with n = 200: repeated estimates of the difference scatter widely, some below zero (computed with seeded rng; as the first dots land the tag \"each dot: one small study's result\" writes on, then \"200 people: chance swamps it\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"many researchers and sites pool their data\" five site badges each send a stream of chips into one central bar; the term writes on with the gloss \"many groups pooling data\". On \"only nudge risk a little\" two bars appear, \"carriers\" and \"non-carriers\", differing by a sliver (illustrative; tag \"a small real difference\"). On \"In a small study\" B11's SampleBounce runs with n = 200: repeated estimates of the difference scatter widely, some below zero (computed with seeded rng; as the first dots land the tag \"each dot: one small study's result\" writes on, then \"200 people: chance swamps it\"). On \"hundreds of thousands\" the same simulation reruns with n = 200,000 and the dots cluster tightly above zero (tags \"each dot: one big study's result\" and \"200,000 people: the real difference shows\"). On \"inference\" the word writes on with the gloss \"a conclusion drawn from evidence\". On \"never certain\" a chip \"big data = certainty\" writes on and takes a grey scribble cross. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sickle-puzzle",
+      "visualDecision": "new",
+      "visualReference": "the map board.",
+      "teachingReason": "The sickle cell puzzle: Pooling data isn't new.",
+      "narrationCue": "should become rare / combined into one map / large parts of Africa / Mediterranean, the Middle East and India / can't explain",
+      "motionPurpose": "m6-red-cells-normal-sickle-v1.png sits small at the upper left (tag \"two copies: sickle cell anaemia\"). On \"should become rare\" a small coded line graph draws a frequency falling towards zero over generations (tag \"expected: selection removes it\"; grey tag \"Year 11: natural selection\").",
+      "motionRole": "explain",
+      "onScreenChange": "the map board. m6-red-cells-normal-sickle-v1.png sits small at the upper left (tag \"two copies: sickle cell anaemia\"). On \"should become rare\" a small coded line graph draws a frequency falling towards zero over generations (tag \"expected: selection removes it\"; grey tag \"Year 11: natural selection\"). On \"combined into one map\" many small survey dots drop onto the coded world outline and merge into shaded regions (WorldShade, banded legend written: \"under 1%\", \"1 to 5%\", \"5 to 10%\", \"over 10%\" of allele copies; source tag \"redrawn from Piel et al. 2010, bands simplified\"; shading drawn from the published figure, not by eye). On \"large parts of Africa\" the African bands brighten; on \"Mediterranean, the Middle East and India\" small shaded patches pulse in turn. On \"can't explain\" the falling expected line and the map sit side by side with a \"?\" between them. Hold one second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "three-streams",
+      "visualDecision": "adjust",
+      "visualReference": "three EvidenceCards dock at the right of the map in turn.",
+      "teachingReason": "Three kinds of evidence: Studies like this combine three kinds of evidence.",
+      "narrationCue": "Family trees / one base / where it's common / No single kind / all three agreeing",
+      "motionPurpose": "Card 1 on \"Family trees\": B9's Pedigree (two open parent symbols, one filled child) with the tag \"recessive; carriers healthy\" (grey tag \"B9\"). Card 2 on \"one base\": B7's recall strip \"GAG to GTG\" with one amber tile (grey tag \"B7\").",
+      "motionRole": "explain",
+      "onScreenChange": "three EvidenceCards dock at the right of the map in turn. Card 1 on \"Family trees\": B9's Pedigree (two open parent symbols, one filled child) with the tag \"recessive; carriers healthy\" (grey tag \"B9\"). Card 2 on \"one base\": B7's recall strip \"GAG to GTG\" with one amber tile (grey tag \"B7\"). Card 3 on \"where it's common\": a thumbnail of the shaded map. On \"No single kind\" each card gets a small tag of what it cannot show: \"not how common\", \"not its effect in a population\", \"not why\". On \"all three agreeing\" three lines draw from the cards to one central chip: \"conclusion from agreement\". Hold one second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "malaria-overlay",
+      "visualDecision": "new",
+      "visualReference": "on \"Lay a map of malaria\" a hatched overlay (WorldShade second layer, hatching not colour, tag \"historical malaria\") slides over the allele map; on \"across Africa\" the overlap regions ring amber in Africa only, and a grey tag writes on over Asia and the Americas: \"weaker match outside Africa\" (source tag \"Piel et al.",
+      "teachingReason": "The malaria overlay: So why is it common in those places?",
+      "narrationCue": "Lay a map of malaria / across Africa / a parasite that a mosquito passes on / infected cells tend to sickle and get cleared / carriers don't get the anaemia / survive and have children more often / heterozygote advantage",
+      "motionPurpose": "2010\"). On \"a parasite that a mosquito passes on\" the painted Anopheles plate (m5x-anopheles-mosquito-v1.png, new) and m7-plasmodium-red-cell-v1.png appear small at the lower left (tag \"malaria parasite inside a red cell\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Lay a map of malaria\" a hatched overlay (WorldShade second layer, hatching not colour, tag \"historical malaria\") slides over the allele map; on \"across Africa\" the overlap regions ring amber in Africa only, and a grey tag writes on over Asia and the Americas: \"weaker match outside Africa\" (source tag \"Piel et al. 2010\"). On \"a parasite that a mosquito passes on\" the painted Anopheles plate (m5x-anopheles-mosquito-v1.png, new) and m7-plasmodium-red-cell-v1.png appear small at the lower left (tag \"malaria parasite inside a red cell\"). On \"infected cells tend to sickle and get cleared\" a small coded inset shows one infected red cell deforming into a sickle shape and fading out (tag \"infected carrier cells sickle and are removed\"). On \"carriers don't get the anaemia\" three genotype chips line up: \"two normal alleles\", \"carrier (one sickle allele)\", \"two sickle alleles\", each with two small bars, \"anaemia\" and \"severe malaria risk\": the carrier's anaemia bar is near zero and its malaria bar is short (illustrative heights; grey tag \"illustrative\"). On \"survive and have children more often\" a short generation strip shows the carrier chips passing more copies forward. On \"heterozygote advantage\" the term writes on with the gloss \"carriers do better than either kind of homozygote, here\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "scribbleEllipse",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "match-not-proof",
+      "visualDecision": "new",
+      "visualReference": "on \"aren't proof\" the amber overlap rings dim and a chip \"maps match, so malaria caused it\" writes on with a grey \"?\" (tag \"association, not cause\"; grey tag \"B11\").",
+      "teachingReason": "A match isn't proof: But two maps that line up aren't proof on their own.",
+      "narrationCue": "aren't proof / other studies showed / another cause / a few of the founders",
+      "motionPurpose": "On \"other studies showed\" a coded study card slides in: \"carriers vs non-carriers: severe malaria\" with two bars, the carrier bar much shorter (illustrative heights, tag \"direct evidence\"). On \"another cause\" the map pans to a small island inset.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"aren't proof\" the amber overlap rings dim and a chip \"maps match, so malaria caused it\" writes on with a grey \"?\" (tag \"association, not cause\"; grey tag \"B11\"). On \"other studies showed\" a coded study card slides in: \"carriers vs non-carriers: severe malaria\" with two bars, the carrier bar much shorter (illustrative heights, tag \"direct evidence\"). On \"another cause\" the map pans to a small island inset. On \"a few of the founders\" a boat icon carries five bead symbols (two amber) to the island; the island population grows from them and the amber share stays high (computed bead counts; tag \"founders\"; grey tag \"founder effect: Module 6\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "scribbleEllipse"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "conservation",
+      "visualDecision": "new",
+      "visualReference": "the population board.",
+      "teachingReason": "Protecting a threatened species: The same kind of data helps protect threatened species.",
+      "narrationCue": "contagious facial cancer / very little genetic diversity / past population crashes / helps against a new disease / pair devils that are less related / doesn't guarantee survival",
+      "motionPurpose": "The painted devil plate (m5x-tasmanian-devil-v1.png, new) enters at the left with a small coded map chip of Tasmania. On \"contagious facial cancer\" a grey tag writes on: \"devil facial tumour disease, first seen 1996\".",
+      "motionRole": "explain",
+      "onScreenChange": "the population board. The painted devil plate (m5x-tasmanian-devil-v1.png, new) enters at the left with a small coded map chip of Tasmania. On \"contagious facial cancer\" a grey tag writes on: \"devil facial tumour disease, first seen 1996\". On \"very little genetic diversity\" two DiversityTrays draw side by side, each a row of five markers: \"a diverse population\" with many bead colours per marker, \"devils\" with one or two colours per marker (illustrative; grey tag \"illustrative pattern, not measured values\"). The term \"genetic diversity\" writes on with the gloss \"how many different alleles\". On \"past population crashes\" a small coded line drops sharply and recovers narrow (tag \"population crash (bottleneck)\"). On \"helps against a new disease\" a disease icon passes along both trays: in the diverse tray a few beads glow (tag \"some may resist\"); in the devil tray none glow. On \"pair devils that are less related\" two coded animal cards (devil silhouettes in the plate's style, no labels) join with a tick, while a closely related pair takes a cross (tag \"pair the least related\"). On \"doesn't guarantee survival\" a chip \"diversity guarantees survival\" takes a grey scribble cross (tag \"also habitat, disease, numbers\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "scribbleEllipse",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "human-evolution",
+      "visualDecision": "new",
+      "visualReference": "on \"1000 Genomes Project\" a coded title card writes on with \"2,504 people, 26 populations\" (source tag \"1000 Genomes Project, 2015\"); 26 small region dots light on a faint world outline.",
+      "teachingReason": "What shared variants say about human history: Large data also show how human populations are related.",
+      "narrationCue": "1000 Genomes Project / share more variants / the most variation / most common variants found elsewhere / each group that left was a small set of founders / the reference genome / four to five million places",
+      "motionPurpose": "On \"share more variants\" two pairs of variant strips compare: a pair sharing many amber ticks (tag \"more shared: more recent common ancestors\") and a pair sharing few. On \"the most variation\" VariantBars draw: five continental-group bars of variant sites per genome, the African-ancestry bar tallest (values from the phase 3 paper; tag \"variant sites per genome\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"1000 Genomes Project\" a coded title card writes on with \"2,504 people, 26 populations\" (source tag \"1000 Genomes Project, 2015\"); 26 small region dots light on a faint world outline. On \"share more variants\" two pairs of variant strips compare: a pair sharing many amber ticks (tag \"more shared: more recent common ancestors\") and a pair sharing few. On \"the most variation\" VariantBars draw: five continental-group bars of variant sites per genome, the African-ancestry bar tallest (values from the phase 3 paper; tag \"variant sites per genome\"). On \"most common variants found elsewhere\" nested coded circles draw, headed \"common variants\": a large circle \"found in African populations\" with smaller overlapping circles mostly inside it (grey tag \"rare variants: mostly found in one region\"). On \"each group that left was a small set of founders\" a SimilarityTree draws from one root, and at each branch a small handful of beads (scene 6's founder look) is drawn from the parent group's larger bead set (tag \"founders carry part of the variety\"; illustrative branching, no dates). On \"the reference genome\" a single strip labelled \"reference genome\" writes on, with three small donor symbols feeding it (pedigree squares and circles, no people) and the tag \"built from a few donors\". On \"four to five million places\" one person's strip slides under it and many differing ticks flash (tag \"a typical genome differs at 4 to 5 million sites\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "scribbleEllipse",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "improves-not-removes",
+      "visualDecision": "new",
+      "visualReference": "the data board returns as a two-column table, written row by row on each cue: left \"improves\": \"pattern detection\", \"confidence in broad trends\", \"comparison across populations\"; right \"does not remove\": \"a biased sample\", \"method limits\", \"uncertainty for one person\".",
+      "teachingReason": "What big data improve, and what they don't: So, large data improve pattern detection, confidence in broad trends, and comparisons across many populations.",
+      "narrationCue": "healthier on average / states both sides",
+      "motionPurpose": "On \"healthier on average\" the big tube grid tints slightly and a small comparison chip appears: \"volunteers vs whole population: volunteers healthier on average\" (source tag \"Fry et al. 2017\").",
+      "motionRole": "explain",
+      "onScreenChange": "the data board returns as a two-column table, written row by row on each cue: left \"improves\": \"pattern detection\", \"confidence in broad trends\", \"comparison across populations\"; right \"does not remove\": \"a biased sample\", \"method limits\", \"uncertainty for one person\". On \"healthier on average\" the big tube grid tints slightly and a small comparison chip appears: \"volunteers vs whole population: volunteers healthier on average\" (source tag \"Fry et al. 2017\"). On \"states both sides\" the two column headers pulse together. Hold one second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on with small icons: \"big data sharpen the trend; they don't predict a person\" (the settled simulation dots), \"common but harmful?",
+      "teachingReason": "Memory: Two lines to remember.",
+      "narrationCue": "Two lines to remember.",
+      "motionPurpose": "carrier advantage, or chance in a small group\" (the carrier chip and the founder boat). Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on with small icons: \"big data sharpen the trend; they don't predict a person\" (the settled simulation dots), \"common but harmful? carrier advantage, or chance in a small group\" (the carrier chip and the founder boat). Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no maps, cards or tags from earlier.",
+      "teachingReason": "Unseen transfer: attempt one (frequency and malaria data), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "Two questions now.",
+      "motionPurpose": "The card for \"attempt one (frequency and malaria data)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no maps, cards or tags from earlier. The card writes on, headed \"Example data: a red blood cell variant\". A table with three columns, \"region\", \"malaria\", \"variant allele frequency\": A none 0.01; B low 0.03; C moderate 0.06; D high 0.11; E high 0.13; F (island) none 0.10. Beside it a coded scatter of the same six points (x \"malaria level\", y \"allele frequency\"), island point drawn like the others (not highlighted). Demands: \"(a) Describe the trend.\" \"(b) Suggest one reason region F doesn't fit.\" Two answer boxes. Nothing answer-bearing: no trend line, no highlighted point. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip at the top (the table and demands stay readable).",
+      "teachingReason": "Feedback, item one: The variant gets more common as malaria increases, which suggests carriers have an advantage where there's malaria.",
+      "narrationCue": "more common as malaria increases / suggests / The island / the numbers match",
+      "motionPurpose": "(1) On \"more common as malaria increases\" a trend line draws through A to E (tag \"rises with malaria\"). (2) On \"suggests\" the line \"(a) frequency rises with malaria: suggests a carrier advantage\" writes on.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (the table and demands stay readable). (1) On \"more common as malaria increases\" a trend line draws through A to E (tag \"rises with malaria\"). (2) On \"suggests\" the line \"(a) frequency rises with malaria: suggests a carrier advantage\" writes on. (3) On \"The island\" point F rings amber; the line \"(b) F: no malaria, high frequency: e.g. founders carried it by chance\" writes on. (4) On \"the numbers match\" the chip \"the variant protects against malaria\" writes on and takes a grey scribble cross, with the tag \"a pattern; needs direct evidence\". Settle on the model answer for about a second.",
+      "motionTools": [
+        "chip travel",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer: attempt two (conservation data), with every demand and condition on screen and nothing answer-bearing",
+      "narrationCue": "Second.",
+      "motionPurpose": "The card for \"attempt two (conservation data)\" writes on and stays up while the countdown ring runs through the answer-free thinking hold",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card shows two population panels, \"mainland\" and \"island\" (coded map chips, no animal plates needed; small wallaby silhouette icon), each with a DiversityTray summary bar: \"average alleles per marker: 9\" and \"3\" (example data, labelled). Demands: \"(a) What does this suggest about the island population?\" \"(b) Name one way managers could use this.\" Two answer boxes. The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds. The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "Countdown ring",
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet answer-free thinking hold with a 10 second countdown"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Feedback, item two: The island animals have much less genetic diversity.",
+      "narrationCue": "much less genetic diversity / past population crash, or a small founding group / move some mainland animals / guarantees they'll survive",
+      "motionPurpose": "(1) On \"much less genetic diversity\" the island bar rings amber (tag \"3 vs 9\"). (2) On \"past population crash, or a small founding group\" the line \"(a) low diversity: a past crash or few founders, and isolation\" writes on, with a small dropping line icon.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. (1) On \"much less genetic diversity\" the island bar rings amber (tag \"3 vs 9\"). (2) On \"past population crash, or a small founding group\" the line \"(a) low diversity: a past crash or few founders, and isolation\" writes on, with a small dropping line icon. (3) On \"move some mainland animals\" an arrow draws from the mainland chip to the island chip; the line \"(b) move animals in (adds alleles), or pair the least related (keeps them)\" writes on. (4) On \"guarantees they'll survive\" the chip \"more diversity guarantees survival\" takes a grey scribble cross, with the tag \"improves the odds\". Settle on the model answer for about a second.",
+      "motionTools": [
+        "chip travel",
+        "scribbleEllipse",
+        "Mark cross"
+      ],
+      "holdPurpose": "Settle for about a second before the next scene"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three chips write on, one per cue: \"read the trend\" (the settled dots), \"what else could explain it?\" (the founder boat), \"what can't it tell you?\" (the \"does not remove\" column).",
+      "teachingReason": "Decision rule and handoff: So, with any large data set, read the trend, ask what else could explain it, and say what the data can't tell you.",
+      "narrationCue": "So, with any large data set, read the trend, ask what else could explain it, and say what ",
+      "motionPurpose": "A \"Next\" chip slides in at the lower right: \"Next: group risk and one person\" (a dot array with a \"?\" on one dot). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three chips write on, one per cue: \"read the trend\" (the settled dots), \"what else could explain it?\" (the founder boat), \"what can't it tell you?\" (the \"does not remove\" column). A \"Next\" chip slides in at the lower right: \"Next: group risk and one person\" (a dot array with a \"?\" on one dot). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes and the memory aid",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The heading \"Key notes: what to write in your book\", the numbered notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b13-learning-review.md",
+      "sha256": "d5508db87254ab4ba59e6c68954b19d946ecda1568ff75eb17883f671fa532bc"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/b13-claude-science-check.md",
+      "sha256": "57214304c5fb56dbf9cde835e5e03b8324080472d72138d11fdc54bb4e81dc5e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

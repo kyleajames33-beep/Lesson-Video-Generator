@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M5-G01-claude-2026-10-18-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/g01b/lesson.json",
+  "lessonSha256": "8a27c9a2f748e0625d161896eecf751f5f3306f72197ef00f05e4bec56e7f0b4",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/g01b/lesson.production-brief.json",
+    "sha256": "ad12bae37001918696e758d2d8ef964b8b2c30903b128e978eaa862130316800"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Exam questions on DNA and meiosis rarely ask you to recite the steps. They hand you something new, a sequence written from its 3' end, a copying error, a cell you've never seen, and ask you to trace it. Every trace comes down to three checks: which strand, which end, and what you're counting. Here are four HSC-style questions. Pause and try each one, then we'll work it through one step at a time, and look at the classic mistake.",
+      "hash": "90adea9e84a5",
+      "textSha256": "90adea9e84a573efb88979e5da13c040a23032a0c355ef638803e1adc7075fe4",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/hook.90adea9e84a5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/hook.90adea9e84a5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/hook.90adea9e84a5.generation.json",
+      "plannedRequestSha256": "7734ce18f4b45ef1719b7e865fa302faaddef15ec4e8562824f6da3b74498601"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A bacterium is copying its DNA. At one spot, the DNA has a T paired with an A. Opposite that T, DNA polymerase makes a rare mistake: it adds a G instead of an A, and the mistake is not repaired. Both new molecules are then copied once more, with no more mistakes. Of the four molecules, how many have a changed base pair at this spot, and what is the changed pair? Pause here to answer.",
+      "hash": "49d42bf833fe",
+      "textSha256": "49d42bf833fe4170d3dae36f9def403e79a47342c9b8b0906ab4a497cbf27396",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-question.49d42bf833fe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-question.49d42bf833fe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-question.49d42bf833fe.generation.json",
+      "plannedRequestSha256": "4097283484ea5f501d40fa1dc0ad7bb4a84a6ab1b1e558adc118ea0b31230e55"
+    },
+    {
+      "id": "q1-first-copy",
+      "parentSceneId": "q1-first-copy",
+      "text": "Start with the first copy. The two strands separate, and each one is a template. The A strand gets a new T, so that molecule is normal. The T strand gets the wrong partner, a G. A T and a G aren't partners, so they pair badly, and this molecule has a mismatch. It isn't a changed pair yet.",
+      "hash": "500641de93e2",
+      "textSha256": "500641de93e26452a9c4f4e277255b155ca7dc7287ddfd575ef363b258374994",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-first-copy.500641de93e2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-first-copy.500641de93e2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-first-copy.500641de93e2.generation.json",
+      "plannedRequestSha256": "a72f245666e524716740c2a997ff1f883e1d60f878a651d39c537886a56d0143"
+    },
+    {
+      "id": "q1-second-copy",
+      "parentSceneId": "q1-second-copy",
+      "text": "Now copy again. The normal molecule makes two normal molecules. The mismatched one separates too. Its T strand pairs with an A, as it should, so that copy is normal. But its G strand pairs with a C. So only one of the four molecules has a changed pair: G with C, where T with A used to be. The error took two rounds of copying to become a real change.",
+      "hash": "423c8edac84b",
+      "textSha256": "423c8edac84bba05dad2d1e7453befd1d16962a981fba98a9fb717b538b5870e",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-second-copy.423c8edac84b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-second-copy.423c8edac84b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-second-copy.423c8edac84b.generation.json",
+      "plannedRequestSha256": "a7e7f580ce36d962f08bd3db07fd0cd22c4e2d37cdf7b113800c0a692b1f4c93"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is saying two, as if the mismatch copies itself into both daughters. It doesn't. Each strand is a template, and the T strand still holds the right base, so its new copy is normal.",
+      "hash": "da674771dc82",
+      "textSha256": "da674771dc82238cd3fa56ae154122ace00ba2023d5b92112fda4844e462ab8c",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-mistake.da674771dc82.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-mistake.da674771dc82.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q1-mistake.da674771dc82.generation.json",
+      "plannedRequestSha256": "4c9e8041db7bd8982fc6801c7edc9c06b458f721527f5d7c266c9803b1f44d00"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Fireflies glow using an enzyme made from one gene. Here's a short section of that gene's coding strand, written from its 3' end to its 5' end. Using the codon chart, write the mRNA with its ends. Then give the chain of amino acids this section codes for, and say how many there are. Pause here to answer.",
+      "hash": "fa516c50c869",
+      "textSha256": "fa516c50c8695f883a610fdc4d0d5623b480635c0b89721e867feb3b6227e2a7",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-question.fa516c50c869.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-question.fa516c50c869.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-question.fa516c50c869.generation.json",
+      "plannedRequestSha256": "2efede5599a3d2798d743c2888675d6816794af4b4874c4b771b832aee3545bd"
+    },
+    {
+      "id": "q2-direction",
+      "parentSceneId": "q2-direction",
+      "text": "Two checks first. Which strand? It's the coding strand, so the mRNA is a copy of it, with U in place of T. No pairing. Which end? The mRNA runs the same way as the coding strand, so start at the strand's 5' end, on the right. Read right to left, T as U: A U G, U G G, A A A, U A A, G G C.",
+      "hash": "020d86c8ede0",
+      "textSha256": "020d86c8ede01cacaf87664208534edeaa86fc70f46815b04e0bc219fd963bf3",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-direction.020d86c8ede0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-direction.020d86c8ede0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-direction.020d86c8ede0.generation.json",
+      "plannedRequestSha256": "5f16fae2897120d50e96bfcc0e740648f5aad270b46da06519028ee412ac7a43"
+    },
+    {
+      "id": "q2-chain",
+      "parentSceneId": "q2-chain",
+      "text": "Now the chart. A U G is the start codon, methionine. U G G is tryptophan, and A A A is lysine. U A A is a stop codon. It adds no amino acid, and the chain is released, so G G C is never read. The chain is methionine, tryptophan, lysine: three amino acids.",
+      "hash": "373abaf0c136",
+      "textSha256": "373abaf0c13688531c8e48a451921dab9468e6cc4f3fdb6f1de031d82304c867",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-chain.373abaf0c136.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-chain.373abaf0c136.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-chain.373abaf0c136.generation.json",
+      "plannedRequestSha256": "db05fbc4224fdd0375751eaf8dbd3736a1f460e41d57631d867f772ae54bae20"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is reading from the left, because that's how we read English. That gives arginine, asparagine and three more, with no start codon at all. Always find the 5' end first.",
+      "hash": "c83852d21609",
+      "textSha256": "c83852d21609deb865f8f01d14914ac04f09d2cdc5c73bc7737af553f95fef0a",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-mistake.c83852d21609.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-mistake.c83852d21609.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q2-mistake.c83852d21609.generation.json",
+      "plannedRequestSha256": "7272e903641fcc66968f300d769727741f2d08b224313d4218e647881f200e5f"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A koala's body cells each have 16 chromosomes. Before its DNA is copied, a cell in a koala's testis holds 16 chromosomes and about 7.0 picograms of DNA. It then makes sperm by meiosis. Give the number of chromosomes and the mass of DNA in this cell in prophase one, in each cell after meiosis one, and in each sperm cell. Pause here to answer.",
+      "hash": "5e502123c153",
+      "textSha256": "5e502123c153324516783e3c63971c3da2daeb87a5b8d753b50b765234548a91",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-question.5e502123c153.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-question.5e502123c153.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-question.5e502123c153.generation.json",
+      "plannedRequestSha256": "4b587834b00a64b770f2c95cbf933422270f7122ce0c894b027cd192359ce2dd"
+    },
+    {
+      "id": "q3-s-phase",
+      "parentSceneId": "q3-s-phase",
+      "text": "Use two rules. Count the chromosomes by their centromeres, and count the DNA by the chromatids. Before prophase one, every chromosome is copied into two sister chromatids, still joined at one centromere. So the cell still has 16 chromosomes, but twice the DNA: 14 picograms. Copying doubles the DNA, not the chromosomes.",
+      "hash": "21c3430357e2",
+      "textSha256": "21c3430357e2d6217e93fd4d4199c187a5904be9e88884dd815c64019cfb076b",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-s-phase.21c3430357e2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-s-phase.21c3430357e2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-s-phase.21c3430357e2.generation.json",
+      "plannedRequestSha256": "7e8788e49e8f72c5a9d8ba10c942cb2a88aac9bff14e1d5b8d2f6f2bc6c39170"
+    },
+    {
+      "id": "q3-divisions",
+      "parentSceneId": "q3-divisions",
+      "text": "Meiosis one separates the homologous pairs, so each cell gets 8 chromosomes. But each chromosome still has both its chromatids, so each cell holds half of 14: 7.0 picograms. Meiosis two splits the sister chromatids. Each sperm cell keeps 8 chromosomes, now single, and half the DNA again: 3.5 picograms.",
+      "hash": "73c5cd68c97b",
+      "textSha256": "73c5cd68c97b2af284e40debce64a8e665af892d4f7b2d1e7d040590e5fa9277",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-divisions.73c5cd68c97b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-divisions.73c5cd68c97b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-divisions.73c5cd68c97b.generation.json",
+      "plannedRequestSha256": "b86665378f2fffc5316b4676083087c576a34dd0934fc19fae2a32818d9114f6"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is 3.5 picograms after meiosis one. That's the sperm cell's amount. After meiosis one, each chromosome still has two chromatids, so each cell still holds 7.0.",
+      "hash": "1ea1656ca0a7",
+      "textSha256": "1ea1656ca0a745dd318275457c06a019cdb4599a588d8b2b7daabaa68d45e197",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-mistake.1ea1656ca0a7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-mistake.1ea1656ca0a7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q3-mistake.1ea1656ca0a7.generation.json",
+      "plannedRequestSha256": "d6ce1b3aa767e1af5c241129e90f80649fb5ee54c0b91cca31f0b6354277e4c2"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. In sweet peas, the gene for flower colour and the gene for pollen shape are on the same chromosome. A plant has the purple and long alleles on one chromosome, and the red and round alleles on its partner. In one cell in an anther, a single crossover happens between the two genes. List the alleles in each of the four pollen cells it makes. Then, if most anther cells have no crossover between these genes, explain why new combinations are much less common than half. Pause here to answer.",
+      "hash": "3572a76ae6c8",
+      "textSha256": "3572a76ae6c84431b051fd0c8c6df94484e0070de351f5e41c8d6c08c4f5a821",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-question.3572a76ae6c8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-question.3572a76ae6c8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-question.3572a76ae6c8.generation.json",
+      "plannedRequestSha256": "7f0a7635583e27186cd7f5ba07edbf0f50ba99fec04656dda9dc1f2cd8ff3669"
+    },
+    {
+      "id": "q4-chromatids",
+      "parentSceneId": "q4-chromatids",
+      "text": "Start with the chromatids. After copying, the pair has four: two purple long, and two red round. A crossover swaps matching pieces between two of them, one from each partner, and only those two. Now there's one purple long, one purple round, one red long and one red round.",
+      "hash": "b1b0500eb96d",
+      "textSha256": "b1b0500eb96df76b6afc66823295bbbd63a1b714218748def4ee1e0a5051da6f",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-chromatids.b1b0500eb96d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-chromatids.b1b0500eb96d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-chromatids.b1b0500eb96d.generation.json",
+      "plannedRequestSha256": "62e60a37fd767db01e49a51ced0e77c13caa76452570e47ff1ad233d4679772f"
+    },
+    {
+      "id": "q4-four-cells",
+      "parentSceneId": "q4-four-cells",
+      "text": "Meiosis one sends the two partners to different cells, and meiosis two splits each pair of sister chromatids. So each pollen cell gets one chromatid: purple long, purple round, red long and red round. Two are the plant's original combinations, and two are new. So this one cell made four different pollen cells.",
+      "hash": "6bb8d9e03b9e",
+      "textSha256": "6bb8d9e03b9efb51c55d4afac35d53f671bd369c5e6299084e70339da84a426c",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-four-cells.6bb8d9e03b9e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-four-cells.6bb8d9e03b9e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-four-cells.6bb8d9e03b9e.generation.json",
+      "plannedRequestSha256": "09cd7e1c12ee1c988faf1a87884aff7cd113022b964f70cf814b24a4a550984f"
+    },
+    {
+      "id": "q4-limit",
+      "parentSceneId": "q4-limit",
+      "text": "So why are new combinations much less than half? Even in this cell, only two of the four are new. And as the card says, most cells have no crossover between these two genes, so all four keep the original combinations. The classic mistake is saying all four pollen cells are new. The crossover only touched two chromatids.",
+      "hash": "28c8edc06bc4",
+      "textSha256": "28c8edc06bc412d99158282208320de9e987ab92499f2349179c8990d95a9e8a",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-limit.28c8edc06bc4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-limit.28c8edc06bc4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/q4-limit.28c8edc06bc4.generation.json",
+      "plannedRequestSha256": "eab2c0b6b15016f002d417aa882a0977b99859fd1bba49cdaaf1e5f502187a80"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start any trace. A sequence: ask which strand, then find the 5' end before you read. A copying error: follow each strand as its own template. A count: centromeres for chromosomes, chromatids for DNA. A crossover: it changes two chromatids, not four. Next: how a chain of amino acids becomes a trait.",
+      "hash": "0e4353cf426c",
+      "textSha256": "0e4353cf426c092dc2e0963472a40fe91abac2cfec5ff8243b12a076ef1bfbfc",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/decision-board.0e4353cf426c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/decision-board.0e4353cf426c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/decision-board.0e4353cf426c.generation.json",
+      "plannedRequestSha256": "bb8807671b86f8c25c9c1cc39e0bead2bd82a1b94affc3d4ee3db17e8fe20bf9"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M5-G01-claude-2026-10-18-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
