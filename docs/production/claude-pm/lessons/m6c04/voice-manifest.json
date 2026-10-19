@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C04-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c04/lesson.json",
+  "lessonSha256": "392309c44ffbbb194e5ee4c68a3883b768a00df1fbdeedc7830006494a934b9b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c04/lesson.production-brief.json",
+    "sha256": "5ee0682c990e87f9d61bdd379bdc15973cd9001733aef03ad9435492b4bb3e91"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Four problems. Heartburn from stomach acid. A paddock where young wheat is stunted and yellow. A coal power station chimney. And a creek running orange below an old mine. Each one comes down to the same thing, too much acid, and each is fixed by neutralising it with a base. But you can't just pour sodium hydroxide into a stomach, a paddock or a river. So how do you choose the base, and what does the reaction actually do?",
+      "hash": "e35bb818240a",
+      "textSha256": "e35bb818240a86aaa86916cd582b8e0ccd90126007557f268cab497b6a7dcd45",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/hook.e35bb818240a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/hook.e35bb818240a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/hook.e35bb818240a.generation.json",
+      "plannedRequestSha256": "81fd93ed5a20280e3cede5cb7239af00faa0b4b54f2e8ec07581b374ab9d80bd"
+    },
+    {
+      "id": "choosing",
+      "parentSceneId": "choosing",
+      "text": "Neutralising means using up the extra hydrogen ions, so the pH moves back towards seven. Choosing the base comes down to four questions. Is it safe where it's going? Is it cheap enough for the amount needed? Does it work gently, without overshooting and making things too basic? And what does it leave behind: a salt, water, a gas, or a solid?",
+      "hash": "5fe7fe4f38c8",
+      "textSha256": "5fe7fe4f38c80b2b0aba291ae8c4a2b4670da5ec6936ea4f253677f48de7ed24",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/choosing.5fe7fe4f38c8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/choosing.5fe7fe4f38c8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/choosing.5fe7fe4f38c8.generation.json",
+      "plannedRequestSha256": "ece7e90865e7c1f1dd74196369a1cf387ebd476ba1e5de0de92c79973c44819b"
+    },
+    {
+      "id": "stomach",
+      "parentSceneId": "stomach",
+      "text": "Start with the stomach. It makes hydrochloric acid on purpose, to digest food, but too much, or acid in the wrong place, causes heartburn. Sodium hydroxide would neutralise it, but it's caustic: it burns living tissue. Antacids use bases that barely dissolve in water, so they react mainly with the acid they meet. Magnesium hydroxide, from the acid reactions video, gives a salt and water. Calcium carbonate gives a salt, water and carbon dioxide, and that gas is why carbonate antacids can make you burp.",
+      "hash": "ef5c39b2bd46",
+      "textSha256": "ef5c39b2bd465eb3a5404685d18f0548ef61acaae21dce8f9da15a6d01eb6792",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/stomach.ef5c39b2bd46.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/stomach.ef5c39b2bd46.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/stomach.ef5c39b2bd46.generation.json",
+      "plannedRequestSha256": "0352cff5deb7320e645a215089df0b30920b02a6b88c34ea7f7780f379ca621b"
+    },
+    {
+      "id": "soil-problem",
+      "parentSceneId": "soil-problem",
+      "text": "Now the paddock. Soil slowly turns acidic as rain washes out its basic minerals, and as soil bacteria break down ammonium fertilisers, like the ammonium sulfate from the acid reactions video, which releases hydrogen ions. Below about pH five and a half, aluminium from the soil minerals starts to dissolve, and dissolved aluminium damages plant roots. That's why the wheat is stunted.",
+      "hash": "686d369b6111",
+      "textSha256": "686d369b6111889c894390395d2694333693ebae12f571f6223eeaedaab7e49f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/soil-problem.686d369b6111.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/soil-problem.686d369b6111.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/soil-problem.686d369b6111.generation.json",
+      "plannedRequestSha256": "e943fcefdbd2e97eaa0dea667a2fb7602352287ab68d4bd7871b664fa3252823"
+    },
+    {
+      "id": "liming",
+      "parentSceneId": "liming",
+      "text": "The fix is agricultural lime, which is crushed limestone, calcium carbonate. Each carbonate ion accepts two hydrogen ions and breaks into water and carbon dioxide, so hydrogen ions are used up, and the pH rises. As the soil becomes less acidic, the aluminium goes back into solid compounds, and the roots recover. Limestone is cheap and safe to spread, and it barely dissolves unless there's acid to react with, so extra lime doesn't make the soil strongly basic.",
+      "hash": "9d84dbfa0d51",
+      "textSha256": "9d84dbfa0d515998c64f1cf696ad9752fa31602c115f998a4164e3f1c51974f8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/liming.9d84dbfa0d51.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/liming.9d84dbfa0d51.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/liming.9d84dbfa0d51.generation.json",
+      "plannedRequestSha256": "ac3ff2496d19ba0a91895c3cc3da928d926a854cdbd86da5b5e0336bf1ee7fec"
+    },
+    {
+      "id": "acid-rain",
+      "parentSceneId": "acid-rain",
+      "text": "The chimney is a different kind of problem. Coal contains a little sulfur, and when the coal burns, the sulfur becomes sulfur dioxide gas. In the air, sulfur dioxide dissolves in water droplets to make sulfurous acid, and some is oxidised further to sulfuric acid. That falls as acid rain, which lowers the pH of lakes and streams, and eats away limestone buildings.",
+      "hash": "58d8b0c05ac8",
+      "textSha256": "58d8b0c05ac894dd723463e0f699d4717d7dd6fc44d4fa47081143d2eaf3e78a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/acid-rain.58d8b0c05ac8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/acid-rain.58d8b0c05ac8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/acid-rain.58d8b0c05ac8.generation.json",
+      "plannedRequestSha256": "f3ba5f54f82d91d54c0176b5c6251ec0f7efcc173a6a1d042f30ec47cbdf6273"
+    },
+    {
+      "id": "scrubber",
+      "parentSceneId": "scrubber",
+      "text": "So power stations remove it before it leaves the chimney, in a scrubber. The exhaust gas passes up through a spray of calcium hydroxide slurry, a solid base stirred through water. Calcium hydroxide plus sulfur dioxide gives calcium sulfite and water. Sulfur dioxide has no hydrogen of its own, so it can't donate a proton. It's an acidic oxide: a non-metal oxide that makes an acid in water and reacts with bases to make a salt. In the slurry's water it first makes sulfurous acid, and the hydroxide neutralises that. The calcium sulfite is a solid, so it's collected, and it's often turned into gypsum for plasterboard.",
+      "hash": "91e36f5cdff1",
+      "textSha256": "91e36f5cdff114bbb06eaf250c33f5c87a7aad38fcfae7a5a7f2de8e21b6c167",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/scrubber.91e36f5cdff1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/scrubber.91e36f5cdff1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/scrubber.91e36f5cdff1.generation.json",
+      "plannedRequestSha256": "8afc7d5f8e5ce80c43de8064e511a4894e80831837d114e79b696b14502977b3"
+    },
+    {
+      "id": "mine-drainage",
+      "parentSceneId": "mine-drainage",
+      "text": "Now the orange creek. When mining exposes rock containing iron sulfide, air and water slowly turn it into sulfuric acid and dissolved iron ions. This acid mine drainage can reach pH three or lower. In a river, the acid harms fish and insects directly, and it keeps toxic metals dissolved, where living things can take them up.",
+      "hash": "39999acc928a",
+      "textSha256": "39999acc928a6d9846a63cd4cddcfdbc22d8d34a66ee6c003e4d2ec661ceaf3c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/mine-drainage.39999acc928a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/mine-drainage.39999acc928a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/mine-drainage.39999acc928a.generation.json",
+      "plannedRequestSha256": "f9f8bb5e39a6fdd1c00bd2087f1e5b42c0b3bf38e2d748d12a7271453d1f02c7"
+    },
+    {
+      "id": "lime-treatment",
+      "parentSceneId": "lime-treatment",
+      "text": "Treatment plants add hydrated lime, calcium hydroxide, to the drainage water. Its hydroxide ions neutralise the hydrogen ions, and as the pH rises, the metal ions meet more hydroxide and form insoluble hydroxides, like the rust brown iron hydroxide precipitate you've seen before. The solid settles as sludge, so one treatment fixes the pH and removes the metals. Why not limestone, like the paddock? It works slowly and stops near neutral, but some metals only drop out at a higher pH. Hydrated lime dissolves more and acts faster, so the plant controls the dose. Waste that's too basic, from places like cement works, goes the other way: it's neutralised with an acid, or carbon dioxide.",
+      "hash": "acaaff950e6b",
+      "textSha256": "acaaff950e6b1eaad2f15cf017165a7a8f3ef55548cdec5d663a45745f6aeefb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/lime-treatment.acaaff950e6b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/lime-treatment.acaaff950e6b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/lime-treatment.acaaff950e6b.generation.json",
+      "plannedRequestSha256": "51f6f37438a82f6e779e4b9c691b638eb138c210b438530370c2b3dae3ddd1b7"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's the idea that ties these together. Every fix leaves something behind, and that often decides the choice. Antacids leave a salt and water, plus carbon dioxide from carbonates. Lime in soil leaves calcium ions, water and carbon dioxide. The scrubber leaves a solid you can collect, and mine treatment leaves a metal sludge. And for any application, give four things: the problem, the treatment, the equation, and the effect on the pH.",
+      "hash": "a4d0328a4cc6",
+      "textSha256": "a4d0328a4cc6f2dec0d6afc502366dfed9e59edf97e860f5c71dd85d88938e23",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/memory-aid.a4d0328a4cc6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/memory-aid.a4d0328a4cc6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/memory-aid.a4d0328a4cc6.generation.json",
+      "plannedRequestSha256": "a35013e5d33897aad06ef07d699d871caa00fe03c8459b06cb2e94bbb55cb63e"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A lake has become acidic as a result of acid rain, and its fish population is declining. Powdered limestone is added to the lake. Explain how the limestone raises the pH of the lake water. Include a balanced equation in your answer. Pause here to answer.",
+      "hash": "a964cca423e4",
+      "textSha256": "a964cca423e44f377b8aa22f59f4965824217f59ecc45e71161303bcee3b5fc9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/attempt-1.a964cca423e4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/attempt-1.a964cca423e4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/attempt-1.a964cca423e4.generation.json",
+      "plannedRequestSha256": "0af0306dbf57d9f9d955848522e38219b42c8ce927eec00cca835772d979f652"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Each carbonate ion in the limestone accepts two hydrogen ions from the lake water and breaks into water and carbon dioxide: C a C O three plus two H plus gives C a two plus, water and C O two. Hydrogen ions are used up, so their concentration falls and the pH rises. Saying that calcium ions neutralise the acid is the trap. The calcium ions don't react with hydrogen ions. The carbonate does the work.",
+      "hash": "1739a23ab813",
+      "textSha256": "1739a23ab8137cb677b0e8e0a948a6a7a3b16afef1c0b9fbf7046b345cb8d092",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/feedback-1.1739a23ab813.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/feedback-1.1739a23ab813.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/feedback-1.1739a23ab813.generation.json",
+      "plannedRequestSha256": "fe3780e5ceda26837b34d4d9c79317ff1f24db2175c2f0da42b11159b985d00a"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Some power stations remove sulfur dioxide from flue gas using powdered limestone, calcium carbonate, instead of calcium hydroxide. The products are calcium sulfite and one gas. Write a balanced equation for this reaction, and identify one disadvantage of using limestone. Pause here to answer.",
+      "hash": "edd00b7db32b",
+      "textSha256": "edd00b7db32bf16985f9aa674b93572a9200bc2b02b11e2492bc7c4a6614b504",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/attempt-2.edd00b7db32b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/attempt-2.edd00b7db32b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/attempt-2.edd00b7db32b.generation.json",
+      "plannedRequestSha256": "642e60ea41f76d64b00f6167445f6d4d77f8a06cbad1d77eece0f7d71331c127"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Calcium carbonate plus sulfur dioxide gives calcium sulfite plus carbon dioxide. It's already balanced, and there's no water, because neither reactant has any hydrogen. The disadvantage: the scrubber releases carbon dioxide, a greenhouse gas, even though limestone is cheaper than calcium hydroxide. Writing water as a product is the classic slip. Check the hydrogens first.",
+      "hash": "a1aed0afe0a4",
+      "textSha256": "a1aed0afe0a494714ed2ca982644217d65cb0696b831a0362fd813143230f829",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/feedback-2.a1aed0afe0a4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/feedback-2.a1aed0afe0a4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/feedback-2.a1aed0afe0a4.generation.json",
+      "plannedRequestSha256": "a2ed7fa6e542753a3bb3aff50a5b58b6ae8d6c75fe083f1126ccf02794f837a0"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any neutralisation application: name what's too acidic or too basic, choose a treatment that's safe, cheap and gentle, write the equation, and say what happens to the pH and what's left behind. Next: why some acids are strong and others are weak, and how that differs from concentration.",
+      "hash": "7941837437d7",
+      "textSha256": "7941837437d7f36885960196622826bcb043cc5dab1a3a1a2646e14bc11f4fc7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/decision-rule.7941837437d7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/decision-rule.7941837437d7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/decision-rule.7941837437d7.generation.json",
+      "plannedRequestSha256": "f9f703332532f8f2062b3a86c3a65fd0073f7d8293ba442da6f1cbd280aafe09"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C04-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

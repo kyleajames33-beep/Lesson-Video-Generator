@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B04-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b04/lesson.json",
+  "lessonSha256": "9d5063c96cd60eb83cfb5b5d5890e0c10a14b7e86390b33e95ff5f48a246f951",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b04/lesson.production-brief.json",
+    "sha256": "9a4354156b8ceda2e1a29be247aa3b9bf4be50b6369efd37af0d11d1a12cc1a1"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1959, Jérôme Lejeune, Marthe Gautier and Raymond Turpin looked at dividing cells from children with Down syndrome, and counted their chromosomes. Their cells had forty-seven, one more than the usual forty-six. The extra one was small, later named chromosome twenty-one. Its genes weren't faulty. There was simply an extra copy of every one of them. So how can extra, missing or rearranged pieces of chromosome change a whole organism?",
+      "hash": "346e79e455b7",
+      "textSha256": "346e79e455b743946a4a875d147ea088281dffb77cdd885288bb9a6cdf1db574",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/hook.346e79e455b7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/hook.346e79e455b7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/hook.346e79e455b7.generation.json",
+      "plannedRequestSha256": "ffb7f0728494f5d034850bfc25911bf27b6351d7d59792e6dd8183f0fb268733"
+    },
+    {
+      "id": "chromosomal-mutation",
+      "parentSceneId": "chromosomal-mutation",
+      "text": "A chromosomal mutation changes the structure of a chromosome, or the number of chromosomes. A point mutation, from the last video, changes one or a few bases in one gene. But a single chromosome carries hundreds of genes, sometimes thousands, so a chromosomal mutation can change many genes at once. The large ones can even be seen down a microscope, while a point mutation can't.",
+      "hash": "e29774da536b",
+      "textSha256": "e29774da536b485afaf8bc35118811f4924e0d3ff13fffec9490d843ad88385e",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/chromosomal-mutation.e29774da536b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/chromosomal-mutation.e29774da536b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/chromosomal-mutation.e29774da536b.generation.json",
+      "plannedRequestSha256": "278d457aa25357003d28720a2bbf9558477c95ba8432c2948d693e311396c283"
+    },
+    {
+      "id": "how-they-break",
+      "parentSceneId": "how-they-break",
+      "text": "To change shape, a chromosome usually has to break. Ionising radiation can snap both strands, and the cell may join the broken ends back wrongly. Mistakes in crossing over can do it too. When two partner chromosomes line up slightly out of step and swap pieces, one ends up with a stretch twice, and the other loses that stretch. So one error makes a duplication and a deletion at the same time.",
+      "hash": "bd9dc8c5dd44",
+      "textSha256": "bd9dc8c5dd443d3d65fbd30fcf6411153c038b7831261c7f653cfb37eabb437f",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/how-they-break.bd9dc8c5dd44.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/how-they-break.bd9dc8c5dd44.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/how-they-break.bd9dc8c5dd44.generation.json",
+      "plannedRequestSha256": "a770c96370aecdc59f318ae4c9373d2e0af796b7e4d3c6af563541c8c487d641"
+    },
+    {
+      "id": "deletion-duplication",
+      "parentSceneId": "deletion-duplication",
+      "text": "In a deletion, a segment is lost, along with every gene on it. A large deletion is often lethal, because the cell is left with only one copy of each of those genes. In a duplication, a segment appears twice. Its genes are all still there, but in extra copies, and the number of copies of a gene, called gene dosage, affects how much product the cell makes. In fruit flies, a duplicated stretch of the X chromosome narrows the eye into a bar.",
+      "hash": "b0082a3067d0",
+      "textSha256": "b0082a3067d0cb2d06d1102d6fd15b3d3f00042b0ad9f31f9240c588233532a0",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/deletion-duplication.b0082a3067d0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/deletion-duplication.b0082a3067d0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/deletion-duplication.b0082a3067d0.generation.json",
+      "plannedRequestSha256": "32a2b467038f9aae6bfa84fbf54118699f20b6e1dadd713f19fe7679ff0958ef"
+    },
+    {
+      "id": "inversion-translocation",
+      "parentSceneId": "inversion-translocation",
+      "text": "In an inversion, a segment breaks out, flips, and rejoins the same chromosome back to front. In a translocation, a segment moves onto a different, non-matching chromosome, often as a swap between two. If no DNA is lost or gained, every gene is still there, so a carrier is often healthy. But a break can land inside a gene and split it, or join two genes together. In one leukaemia, a single blood-forming cell gets a swap between chromosomes nine and twenty-two, joining two genes into one whose protein is always active, so white blood cells keep dividing.",
+      "hash": "5af6c0485660",
+      "textSha256": "5af6c04856606d163c52799b932e5309f6145b4eea58ca00809f9ec0f1ae606c",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/inversion-translocation.5af6c0485660.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/inversion-translocation.5af6c0485660.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/inversion-translocation.5af6c0485660.generation.json",
+      "plannedRequestSha256": "2297e68b00ab43a35fee03935b867dc9a8330b9121c865af99ffe0914aa029ab"
+    },
+    {
+      "id": "carrier-gametes",
+      "parentSceneId": "carrier-gametes",
+      "text": "There's a catch for the next generation. A carrier's egg or sperm can get just one of the two swapped chromosomes, so one segment is missing and another is doubled. That's why a healthy carrier can have repeated miscarriages, or a child with missing or extra genes.",
+      "hash": "9e2449e7faab",
+      "textSha256": "9e2449e7faab63ba40a04986ae1ee3451223a8402e71a345198c5d78f82a9af8",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/carrier-gametes.9e2449e7faab.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/carrier-gametes.9e2449e7faab.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/carrier-gametes.9e2449e7faab.generation.json",
+      "plannedRequestSha256": "25dce3eb12a79467434097c6222b091456c38e133636c2c7a518ea6675b8ac6d"
+    },
+    {
+      "id": "nondisjunction",
+      "parentSceneId": "nondisjunction",
+      "text": "Now the other kind, a change in chromosome number. In meiosis, partner chromosomes normally separate, one to each new cell. Sometimes a pair fails to separate, which is called nondisjunction. One gamete then gets both copies of that chromosome, and another gets neither. If the gamete with the extra copy is fertilised, the zygote has three copies, called a trisomy. In humans, every cell of the new organism then has forty-seven chromosomes.",
+      "hash": "90a4a8f88f52",
+      "textSha256": "90a4a8f88f52cedc940e5c6a073e3058176d48cf0b49a5430944df19746cc642",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/nondisjunction.90a4a8f88f52.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/nondisjunction.90a4a8f88f52.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/nondisjunction.90a4a8f88f52.generation.json",
+      "plannedRequestSha256": "54e3842c0bdbd23c221533e67a27cfd67b7a0e2c2156d4e93fae153caff5b7b9"
+    },
+    {
+      "id": "trisomy-21",
+      "parentSceneId": "trisomy-21",
+      "text": "That's how most cases of Down syndrome arise, with three copies of chromosome twenty-one. Every gene on it is normal, but there are three copies instead of two, so the cell makes roughly half as much again of hundreds of products. That's why the effects reach many parts of the body. It also helps explain why a baby with this trisomy can survive. Chromosome twenty-one is the smallest, with relatively few genes. An extra copy of most other numbered chromosomes stops development before birth.",
+      "hash": "1a96a8091ed3",
+      "textSha256": "1a96a8091ed3d1be7adca60795f6133694d63a75f836d7f5de59024cf07cedf1",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/trisomy-21.1a96a8091ed3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/trisomy-21.1a96a8091ed3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/trisomy-21.1a96a8091ed3.generation.json",
+      "plannedRequestSha256": "a9fbb228376028c9826ee20397f2afb394c2e53dac889a618ecc7da2fc8282d1"
+    },
+    {
+      "id": "compare",
+      "parentSceneId": "compare",
+      "text": "Compare the two types. Both can come from copying errors and mutagens, but chromosomal mutations also come from breaks, faulty crossing over and nondisjunction. A point mutation changes one gene's base sequence, while a chromosomal mutation changes how many genes there are, their order or their position. Chromosomal changes usually affect more genes, but bigger isn't always worse. A balanced inversion can do nothing, while one nonsense mutation can wreck an essential protein.",
+      "hash": "f0cbe2f4d2e1",
+      "textSha256": "f0cbe2f4d2e1a87a700491058fa374a96ea9fbb9ddfdfc31fe859a095a149e6f",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/compare.f0cbe2f4d2e1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/compare.f0cbe2f4d2e1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/compare.f0cbe2f4d2e1.generation.json",
+      "plannedRequestSha256": "a0712de209ecee36d0f406538f5f2004687115067c25396241b4f150da168bcf"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Think of a chromosome as a book, and its genes as chapters. In a deletion, a chapter is lost. In a duplication, it's printed twice. In an inversion, it's printed back to front, and in a translocation, it's moved into a different book. The analogy has a limit. An intact flipped gene is still read from its own start, but a break inside it, or a change to the DNA that switches it on, can affect it.",
+      "hash": "5e595aff9615",
+      "textSha256": "5e595aff961576157398823a8e5d11b4af2a36234a2b0532c551ceeff2b42d03",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/memory.5e595aff9615.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/memory.5e595aff9615.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/memory.5e595aff9615.generation.json",
+      "plannedRequestSha256": "b0938d1edb28f5a7fe9f9f97aa4108ad04f7898626c0bb585275dbb35d601bfa"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First, the diagram shows two normal, non-matching chromosomes, with genes as letters, and three changed versions. Name the chromosomal mutation in each. Then identify which change alters the number of copies of a gene in the cell, and explain your choice. Pause here to answer.",
+      "hash": "507f12e926e6",
+      "textSha256": "507f12e926e6bcd8a9339eeb55dbe2867f7b491635f3d998d38955a435651432",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/attempt.507f12e926e6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/attempt.507f12e926e6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/attempt.507f12e926e6.generation.json",
+      "plannedRequestSha256": "b0c175704925254aafbfc04b3db70b595b2805a560ec4656d4b1db397e702368"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "In one, E and F appear twice, so it's a duplication. In two, the segment E F G is back to front, an inversion. In three, G and H have swapped with P and Q on the other chromosome, a translocation. Only the duplication changes copy number. With its normal partner, the cell has three copies of E and F. Calling three a deletion is the classic mistake. G and H weren't lost, they moved.",
+      "hash": "c69dee8b1907",
+      "textSha256": "c69dee8b1907a0307f2dbbe2ddb680bc66eaf1f2932ccd13474181ffdba4c8f1",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/feedback-one.c69dee8b1907.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/feedback-one.c69dee8b1907.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/feedback-one.c69dee8b1907.generation.json",
+      "plannedRequestSha256": "c94ce7e68ee6cc8e2962053f1fe87023ef04c7c82d0968d65544c7e86c9ffdb3"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Sickle cell disease is caused by a single base substitution in the gene for the beta chain of haemoglobin. Down syndrome is usually caused by an extra copy of chromosome twenty-one. Compare these two mutations in terms of how each first arises, how much DNA each changes, and its effect on the organism. Pause here to answer.",
+      "hash": "814af49a61eb",
+      "textSha256": "814af49a61eb0ae12fb8654017dc49c895ec0b6806859fd79ab4412d63d5d0c7",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/attempt-two.814af49a61eb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/attempt-two.814af49a61eb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/attempt-two.814af49a61eb.generation.json",
+      "plannedRequestSha256": "4f31c0c5b74eac022157676dd1f4b1883ae88feb496b12cbcf4b195dcd326e99"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Both change the DNA, and the phenotype. The substitution first came from a copying error or a mutagen, the trisomy from nondisjunction in meiosis. The substitution changes one base, so one amino acid in one protein. The trisomy adds a whole chromosome of normal genes, so hundreds of products are made in extra amounts. Saying its genes are faulty is the classic mistake. They're normal, just too many.",
+      "hash": "f55c0be78321",
+      "textSha256": "f55c0be78321e3192f23833ff08522fc52c5617d4051bcab0679b7a2f71b4033",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/feedback-two.f55c0be78321.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/feedback-two.f55c0be78321.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/feedback-two.f55c0be78321.generation.json",
+      "plannedRequestSha256": "43ba175ca6e1c05e5bd8692e3510710bbffdd6be9e6fc06ae7c7e3aba0c909d7"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question shows a changed chromosome, compare it with the normal one, gene by gene. Is a segment missing, doubled, reversed or moved? Then say what that does, a change in copy number, or a gene broken or moved. For a whole extra or missing chromosome, think nondisjunction and dosage. Next, which of these mutations can be inherited.",
+      "hash": "7ee3672bef55",
+      "textSha256": "7ee3672bef55a08747aa5c075b22f8f92e777b128d9ec1065b728f1d63d0879a",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/decision-rule.7ee3672bef55.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/decision-rule.7ee3672bef55.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/decision-rule.7ee3672bef55.generation.json",
+      "plannedRequestSha256": "6c11ef56a0ba303a2a63749ea1e7abf84a3f4d0e813575cc3c34fc6eb10f6946"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B04-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

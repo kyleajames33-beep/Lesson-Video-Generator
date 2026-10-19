@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B08-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b08/lesson.json",
+  "lessonSha256": "039fdcfb6e514385509c4867afdb9df2bceedd75af524af514726148243892aa",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b08/lesson.production-brief.json",
+    "sha256": "941609dbac8de6daadf795fcb7b2a71e72700e45d97321dae7d559548381b9a2"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "By the early 1990s, only about twenty to thirty Florida panthers were left, cut off in the swamps of southern Florida. Many had kinked tails and poor-quality sperm, and some had heart defects. In Texas, pumas of the same species were doing fine. So in 1995, biologists released eight female Texas pumas into Florida. Within about a decade, the panther population had roughly tripled. What had gone wrong with the Florida panthers' alleles, and how did eight newcomers help fix it?",
+      "hash": "2bafb6ea3c22",
+      "textSha256": "2bafb6ea3c22d0d81066f79d3f5e3af2d040b6e06aff962432f7909f862cb9e2",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/hook.2bafb6ea3c22.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/hook.2bafb6ea3c22.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/hook.2bafb6ea3c22.generation.json",
+      "plannedRequestSha256": "821db3851a17059610b4d6126558ebb4d2dea2227317613533f8367807f16574"
+    },
+    {
+      "id": "gene-pools",
+      "parentSceneId": "gene-pools",
+      "text": "Start with their gene pools. A gene pool is every allele in a population, and an allele's frequency is its share of all the copies of that gene. Each panther carries two copies, so twenty-five panthers hold fifty copies. If ten of those copies are one allele, its frequency is ten out of fifty, or zero point two. The Florida pool was small and cut off, because the pumas that once lived between Florida and Texas had been wiped out. And it had lost alleles that the Texas pool still had. So what changes a gene pool?",
+      "hash": "82a87a68bb2d",
+      "textSha256": "82a87a68bb2dd72b6d1d33995b7513f2d119a6a2d50e2dc9c573897fef58f757",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/gene-pools.82a87a68bb2d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/gene-pools.82a87a68bb2d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/gene-pools.82a87a68bb2d.generation.json",
+      "plannedRequestSha256": "8f34c03f5c64cf8740b12b26a16909a1801b70518d96f4ec7e76cb3d8c46c1d3"
+    },
+    {
+      "id": "drift",
+      "parentSceneId": "drift",
+      "text": "The first answer is chance. Each generation, only some animals happen to breed, and each parent passes on one allele of each pair by chance. So the next generation's alleles are a random sample of this one's. That's genetic drift, a change in allele frequency by chance. It's like tossing a coin for each copy passed on. Toss it ten times, and seven heads isn't unusual. Toss it a thousand times, and you'll land close to half. And each generation's frequency becomes the starting point for the next, so the changes add up. So in a small population, drift can make an allele common, or lose it completely, whether it helps or not.",
+      "hash": "44bb014b5046",
+      "textSha256": "44bb014b5046207647395e01a82f9d927fe9ec67f9e04badd4a499e25339935a",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/drift.44bb014b5046.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/drift.44bb014b5046.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/drift.44bb014b5046.generation.json",
+      "plannedRequestSha256": "7131fbfa45435dd55937aaa749a720210bf2500a16ed8322a11c13952eb36805"
+    },
+    {
+      "id": "bottleneck-founder",
+      "parentSceneId": "bottleneck-founder",
+      "text": "Drift is strongest when numbers crash. Hunting and habitat loss squeezed the panthers down to a few dozen, a bottleneck. The survivors carried only a sample of the old gene pool, and with so few animals, relatives often bred together. That inbreeding made harmful inherited traits more likely to show, like kinked tails. Drift works the same way when a few individuals leave to start a new population, called the founder effect. Either way, few individuals means the gene pool is a random sample.",
+      "hash": "50008661c211",
+      "textSha256": "50008661c2111c8801f17a0b69438e6ca2e847be22c1e920b42ed97f26381ea9",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/bottleneck-founder.50008661c211.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/bottleneck-founder.50008661c211.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/bottleneck-founder.50008661c211.generation.json",
+      "plannedRequestSha256": "f3800108856a661bea91a729c29cc665fb483b9b3cb923eec183646fee0841f6"
+    },
+    {
+      "id": "mutation",
+      "parentSceneId": "mutation",
+      "text": "Could mutation repair the damage? A mutation adds a brand-new allele, but only as a single copy. In twenty-five panthers, that's one copy in fifty. In a population of a million, it's one in two million. Mutations at any one gene are rare, so rebuilding lost variation this way would take a very long time. And in a small population, drift loses most new alleles before they spread. Mutation is the source of new alleles, but on its own it changes a gene pool slowly.",
+      "hash": "f5bb42a7e309",
+      "textSha256": "f5bb42a7e3099585e63f85e2bae6b2ae7ea3d9475f2a64513b51113165e135df",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/mutation.f5bb42a7e309.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/mutation.f5bb42a7e309.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/mutation.f5bb42a7e309.generation.json",
+      "plannedRequestSha256": "09771e4038e946cf9fbf40afa8980e21c42057d8ec46748ec129c7fed8ad5e6c"
+    },
+    {
+      "id": "gene-flow",
+      "parentSceneId": "gene-flow",
+      "text": "What helped was gene flow, alleles moving between populations when individuals move and breed. The Texas females carried alleles the Florida pool had lost. After they bred with Florida panthers, their kittens had more genetic variation, and kinked tails became less common. The kittens survived better, and the population grew. Gene flow didn't make any new alleles. It moved existing ones, and it made the two gene pools more alike. Animals that leave a population take their alleles out, too.",
+      "hash": "d6423b05c28b",
+      "textSha256": "d6423b05c28ba713b9fcf983a0d36e5ddeddf9d3c58fb4d752ea5047f9ba0320",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/gene-flow.d6423b05c28b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/gene-flow.d6423b05c28b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/gene-flow.d6423b05c28b.generation.json",
+      "plannedRequestSha256": "91d14904049aa4a82882fcaaa081b448a8e31c73c191cf8a42b59d2b60b402f9"
+    },
+    {
+      "id": "which-matters",
+      "parentSceneId": "which-matters",
+      "text": "So which process matters most? It depends on the population. In a small, isolated population, drift usually has the biggest short-term effect. Where populations swap many migrants, gene flow can change frequencies fast, and keep the pools similar. And only mutation makes genuinely new alleles, so it matters most over long times. Selection is different again. It changes frequencies for a reason, because some alleles help survival or breeding, while drift has no direction.",
+      "hash": "7d4a2781aea5",
+      "textSha256": "7d4a2781aea591daaadd97d64501de3ef5e3a8bb977c221964cd95f2e727a766",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/which-matters.7d4a2781aea5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/which-matters.7d4a2781aea5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/which-matters.7d4a2781aea5.generation.json",
+      "plannedRequestSha256": "123b29cd6e1f2cb0d5195d9c4ac58df7f97226ed10ea2cbaef0ed21d1dc12a05"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two aids. Drift is luck, and luck matters more in small groups. And gene flow tends to make populations more alike. Drift can pull them apart, and so can selection, when their environments favour different alleles.",
+      "hash": "110c06641a64",
+      "textSha256": "110c06641a641e750fc51e8487e834b6c6f106474838fee50e9daff4ee4829ce",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/memory.110c06641a64.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/memory.110c06641a64.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/memory.110c06641a64.generation.json",
+      "plannedRequestSha256": "93ee17d149bc5b21205cf1bfff8e6e5b6d6f80a48abae2dec95c7be76aaba5b5"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. An island population of five hundred skinks has allele b at a frequency of zero point one. A cyclone kills all but ten skinks, and survival has nothing to do with this gene. The ten survivors carry four copies of b. Calculate the frequency of b after the cyclone. Then identify the process that changed it, and justify your answer. Pause here to answer.",
+      "hash": "0ca28eee662f",
+      "textSha256": "0ca28eee662f74b8058238dbaeaae297196f02d7c9bee478886eae8acdf4f827",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/attempt.0ca28eee662f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/attempt.0ca28eee662f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/attempt.0ca28eee662f.generation.json",
+      "plannedRequestSha256": "8dd928abb6bc810c3034c74fba413dcd43b871706aa5b04c996ee2c851595b36"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Ten skinks carry twenty copies, so the frequency is four out of twenty, zero point two, double what it was. Survival had nothing to do with this gene, and only ten survived. So this is a bottleneck, a form of genetic drift, because the survivors were a small, random sample. Saying b increased because it helped skinks survive is the classic mistake.",
+      "hash": "6ee8d9f181a1",
+      "textSha256": "6ee8d9f181a12c2d04e9010ff8172ca934d3c702518d9162aba2837cb918777b",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/feedback-one.6ee8d9f181a1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/feedback-one.6ee8d9f181a1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/feedback-one.6ee8d9f181a1.generation.json",
+      "plannedRequestSha256": "abf3248ed5a0ca3ae0046f8ed9bedcbd191f9f78718a3153c1be580a2e7d4881"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A small, isolated population of thirty possums has lost much of its genetic variation. A conservation team plans to bring in ten possums from a large population of the same species. Evaluate this plan, compared with leaving the population isolated and relying on mutation to restore its variation. Pause here to answer.",
+      "hash": "fb6ae08b1f50",
+      "textSha256": "fb6ae08b1f50f9ecac9f0b001fc1bf138d3d2384de4d66b35c77e74734812566",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/attempt-two.fb6ae08b1f50.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/attempt-two.fb6ae08b1f50.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/attempt-two.fb6ae08b1f50.generation.json",
+      "plannedRequestSha256": "8b37df7bd0f1b159c8d7d4fdfc20d27ccd689f296fc53c6dc0827c541d433409"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Bringing in possums is gene flow. It adds many existing alleles at once, so variation rises within a generation. Mutation adds new alleles one copy at a time, very slowly, and in only thirty possums, drift would lose most of them. So the plan is far better at restoring variation, although the added alleles still face drift. Thinking gene flow creates new alleles is the classic mistake.",
+      "hash": "8f65deebb79d",
+      "textSha256": "8f65deebb79d82a3c597c439fb765e9fab42e95f51f709a341705d4730fba70f",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/feedback-two.8f65deebb79d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/feedback-two.8f65deebb79d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/feedback-two.8f65deebb79d.generation.json",
+      "plannedRequestSha256": "7b6ce07068466d40d05be25568d9f6259efcb7be612805d4757fbe88c497e80a"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question shows a gene pool changing, ask what happened to the alleles. Did a brand-new allele appear? That's mutation. Did alleles arrive or leave with moving individuals? That's gene flow. Did frequencies change by chance, especially in a small group? That's drift. Did they change because carriers survive or breed better? That's selection. Then judge which matters most from the population's size and isolation. Next, what counts as biotechnology.",
+      "hash": "6a28caa5b527",
+      "textSha256": "6a28caa5b527a104482dd28937cd0844a1dafa4a387e5f2e226f52f77b07e5b7",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/decision-rule.6a28caa5b527.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/decision-rule.6a28caa5b527.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/decision-rule.6a28caa5b527.generation.json",
+      "plannedRequestSha256": "6cc086c0b3eaa9b566513a155c8fd7dd42ecbea00ff49407b619e86775ef1daa"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B08-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

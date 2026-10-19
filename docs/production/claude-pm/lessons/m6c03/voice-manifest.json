@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C03-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c03/lesson.json",
+  "lessonSha256": "07887d7c955abb26184323dbdb24c757cf061b77f01932cc895731e053a2619b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c03/lesson.production-brief.json",
+    "sha256": "49683fa5ac5a1ee6f2649607081add4a8c7ec162e37a8a667d97aaa1b79de531"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are two clear, colourless solutions, hydrochloric acid and sodium hydroxide, both at twenty one point five degrees. Pour them together in a foam cup, and there's nothing to see, no bubbles and no colour change. But the temperature climbs to twenty eight degrees. So how much heat did the reaction give out, and how could you compare it with an experiment that used different amounts?",
+      "hash": "42c91066141f",
+      "textSha256": "42c91066141f1abe0806617835b40350b20f5cef7cc0b8ea517bf1c4b5f70d32",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/hook.42c91066141f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/hook.42c91066141f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/hook.42c91066141f.generation.json",
+      "plannedRequestSha256": "4fea11e1757636e2385e7c0cc74accee2a8a1afcccf382c65b43966c3a1f7403"
+    },
+    {
+      "id": "why-warm",
+      "parentSceneId": "why-warm",
+      "text": "First, why does it warm up? In water, hydrochloric acid is completely split into hydrogen ions and chloride ions, and sodium hydroxide into sodium ions and hydroxide ions. The sodium and chloride ions don't change at all, so they're called spectator ions. The only change is a hydrogen ion joining a hydroxide ion to make water. The water has less chemical energy than the two ions had, so the difference is released as heat, warming the solution.",
+      "hash": "d65c697f41bd",
+      "textSha256": "d65c697f41bd45913d9d18f28e3cc5d8cd8e871d1c137c0d0763ea7d6d60c386",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/why-warm.d65c697f41bd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/why-warm.d65c697f41bd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/why-warm.d65c697f41bd.generation.json",
+      "plannedRequestSha256": "01fbad04c93cd6824cff7ad943aa1b808b64f34075eb7c3c6073e67e08773bc4"
+    },
+    {
+      "id": "per-mole",
+      "parentSceneId": "per-mole",
+      "text": "A reaction that releases heat is exothermic. The chemicals lose energy, so the enthalpy change, delta H, is negative. Twice as much of each solution would make twice as much water, and twice as much heat. So to compare experiments, divide by the water formed. The enthalpy of neutralisation is the enthalpy change per mole of water formed.",
+      "hash": "d60c456010e1",
+      "textSha256": "d60c456010e1eb19414086358c69b9c536cb9319c0d7cae5adb33709cd9cb5de",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/per-mole.d60c456010e1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/per-mole.d60c456010e1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/per-mole.d60c456010e1.generation.json",
+      "plannedRequestSha256": "31217f86c88195bcd7185f066efc0c2dda52f5b3349f61226197859c2408f63e"
+    },
+    {
+      "id": "same-reaction",
+      "parentSceneId": "same-reaction",
+      "text": "Acids that split completely into ions like this are called strong acids, explained in a later video. With a strong acid and a base that's also completely split, the reaction is always the same one: hydrogen ion plus hydroxide ion makes water. So the value comes out about the same whichever pair you use, about minus fifty seven kilojoules per mole. Acids that only partly split into ions can give different values, and they get their own video.",
+      "hash": "69438b6291c6",
+      "textSha256": "69438b6291c60e403332e6afca604f277a99fe24335250c2bc6960009dcdf183",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/same-reaction.69438b6291c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/same-reaction.69438b6291c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/same-reaction.69438b6291c6.generation.json",
+      "plannedRequestSha256": "a980d10311a8713292a0c84862f7b28f7bf7769e155ed12d173e48f2d8a54331"
+    },
+    {
+      "id": "calorimeter",
+      "parentSceneId": "calorimeter",
+      "text": "To measure it, mix the solutions in a lidded polystyrene foam cup, called a calorimeter. Foam insulates, so we assume all the heat stays in the solution. Then the heat is q equals m c delta T, from Year 11. m is the mass of all the solution, both together, and one millilitre of a dilute solution is about one gram. c, the specific heat capacity, is four point one eight joules per gram per degree. Delta T is the final minus the initial temperature.",
+      "hash": "0cfd69a7dd13",
+      "textSha256": "0cfd69a7dd13cdb1375ca167a04b49c9936d4b48770a149a49877e8ee9116162",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/calorimeter.0cfd69a7dd13.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/calorimeter.0cfd69a7dd13.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/calorimeter.0cfd69a7dd13.generation.json",
+      "plannedRequestSha256": "9784a94e5bf1f98ba8c61ba0f17f863cd118cf5f53de16ec38095a94f21196b8"
+    },
+    {
+      "id": "we1-givens",
+      "parentSceneId": "we1-givens",
+      "text": "Here's the hook experiment. Fifty millilitres each of one mole per litre hydrochloric acid and sodium hydroxide, warming from twenty one point five to twenty eight point zero degrees. Find the enthalpy of neutralisation in three steps: the heat, the moles of water, then divide.",
+      "hash": "b22b1e6ab605",
+      "textSha256": "b22b1e6ab605a54259b4d7debc9292ccb8176d9d4cc4a8882455e4fe580766b7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-givens.b22b1e6ab605.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-givens.b22b1e6ab605.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-givens.b22b1e6ab605.generation.json",
+      "plannedRequestSha256": "90b22cf8c5592fb9d59b2b4923936fada406b55140f7351e3eeee2917ba2b8d3"
+    },
+    {
+      "id": "we1-heat",
+      "parentSceneId": "we1-heat",
+      "text": "Step one, the heat. The mass is both solutions, so one hundred grams, because the heat warms everything in the cup. Delta T is twenty eight point zero minus twenty one point five, six point five degrees. So q is one hundred times four point one eight times six point five, which is two thousand seven hundred and seventeen joules, or two point seven one seven kilojoules.",
+      "hash": "a5e20e470cf7",
+      "textSha256": "a5e20e470cf79ce72483b01d37a2efde87c887454e289b4d619ada67314b6df1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-heat.a5e20e470cf7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-heat.a5e20e470cf7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-heat.a5e20e470cf7.generation.json",
+      "plannedRequestSha256": "d63ad7b9e8e825e0f17f8075bde2b1a0354909d34b995138d0bc1268946107bd"
+    },
+    {
+      "id": "we1-moles",
+      "parentSceneId": "we1-moles",
+      "text": "Step two, the moles of water. Moles equals concentration times volume in litres, and fifty millilitres is zero point zero five zero zero litres. For the acid, one point zero zero times zero point zero five zero zero gives zero point zero five zero zero moles of hydrogen ions, and the sodium hydroxide gives the same amount of hydroxide ions. One hydrogen ion and one hydroxide ion make one water, so zero point zero five zero zero moles of water form.",
+      "hash": "193dd590d0bf",
+      "textSha256": "193dd590d0bfa5b9111711259bf4089c0cb9362c37228b7327c30e79556e063f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-moles.193dd590d0bf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-moles.193dd590d0bf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-moles.193dd590d0bf.generation.json",
+      "plannedRequestSha256": "56bed0dd1e35f82adb802f03b806b360e424b6ee9214f642d086fd7322428ac1"
+    },
+    {
+      "id": "we1-enthalpy",
+      "parentSceneId": "we1-enthalpy",
+      "text": "Step three, divide and add the sign. Two point seven one seven kilojoules over zero point zero five zero zero moles is fifty four point three. Delta T has only two significant figures, so round to fifty four. The temperature rose, so the chemicals gave heat away, and delta H is minus fifty four kilojoules per mole. That's a little less negative than minus fifty seven, most likely because of heat loss: some heat escaped, so the measured rise was smaller.",
+      "hash": "735134334c9d",
+      "textSha256": "735134334c9d4288b5efc6eccbcb22f3b6d1416b02db0ef6968bebae97f30fa2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-enthalpy.735134334c9d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-enthalpy.735134334c9d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we1-enthalpy.735134334c9d.generation.json",
+      "plannedRequestSha256": "4d84154b0ddb1db3a292d2d82c1b219bb4453d761db1e270be92a997c3a14c67"
+    },
+    {
+      "id": "we2-count",
+      "parentSceneId": "we2-count",
+      "text": "Twenty five millilitres of one mole per litre sulfuric acid is mixed with seventy five millilitres of one mole per litre sodium hydroxide, warming from twenty point zero to twenty six point six degrees. Sulfuric acid gives two hydrogen ions, so zero point zero two five zero moles of acid gives zero point zero five zero zero moles of them. There's zero point zero seven five zero moles of hydroxide. The hydrogen ions run out first, so zero point zero five zero zero moles of water form, and the extra hydroxide releases no heat.",
+      "hash": "52af9c1b3066",
+      "textSha256": "52af9c1b3066dbcc3c0627e7a269562e48c74ac2f726b66a3303dc8292ae0da6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we2-count.52af9c1b3066.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we2-count.52af9c1b3066.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we2-count.52af9c1b3066.generation.json",
+      "plannedRequestSha256": "a3228882cfbf0046473de7cb276c8701401d1b5a8227fb227fb1e0ba4e8d7f3b"
+    },
+    {
+      "id": "we2-enthalpy",
+      "parentSceneId": "we2-enthalpy",
+      "text": "But the leftover solution still gets warmed, so the mass is all of it, one hundred grams. Delta T is six point six degrees, so q is about two thousand seven hundred and fifty nine joules. Divide by the moles of water, not acid: two point seven five nine kilojoules over zero point zero five zero zero moles gives fifty five point two, so delta H is minus fifty five kilojoules per mole. Dividing by the acid's moles would double it.",
+      "hash": "6967d116a38f",
+      "textSha256": "6967d116a38ff7a4122efce4c90ac1bae10582b3da70c4f4e07f1441fc31538b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we2-enthalpy.6967d116a38f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we2-enthalpy.6967d116a38f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/we2-enthalpy.6967d116a38f.generation.json",
+      "plannedRequestSha256": "76b3e810adfbdd7e63cfd122d9a2015b978c5561b70635b09393009dea294765"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. Per mole of water, not per mole of acid: the ion that runs out first sets the water. Use the mass of everything in the cup. And temperature up, delta H negative. Calculate the heat as a positive number, then add the minus sign, because the reaction gave that heat away.",
+      "hash": "2fe99a99c754",
+      "textSha256": "2fe99a99c75478163c81953379b3f2e1a398e6eef4ead73a17faf7d57ca33bd0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/memory-aid.2fe99a99c754.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/memory-aid.2fe99a99c754.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/memory-aid.2fe99a99c754.generation.json",
+      "plannedRequestSha256": "3151814929ad4f4c87289e19d59d6bc3e5ba632ff86a0456c747618af7c417ff"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Forty point zero millilitres of one point five zero mole per litre nitric acid is mixed with fifty point zero millilitres of one point zero zero mole per litre potassium hydroxide in a polystyrene cup. The temperature rises from twenty one point zero to twenty eight point four degrees. Use the density and specific heat capacity on screen, and calculate the molar enthalpy of neutralisation. Pause here to answer.",
+      "hash": "8d2f16ada7ba",
+      "textSha256": "8d2f16ada7ba8378487f28e3f7c0717b73058e8afbdf6a295d4ce65316ffbacd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/attempt-1.8d2f16ada7ba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/attempt-1.8d2f16ada7ba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/attempt-1.8d2f16ada7ba.generation.json",
+      "plannedRequestSha256": "f31b3dd8faf92f580fc86076444c6268efef46f7e06b59e218233056ce97ca53"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Moles first: zero point zero six zero zero moles of hydrogen ions and zero point zero five zero zero of hydroxide, so hydroxide runs out first. The mass is ninety grams and delta T is seven point four, so q is about two thousand seven hundred and eighty four joules. Divide by the moles of water and round: minus fifty six kilojoules per mole. Dividing by the acid's moles uses the reactant in excess.",
+      "hash": "cf2d432864f7",
+      "textSha256": "cf2d432864f78aea30d24eb3ecc8c6af06cefebfffe71068b36917d4d063d2e0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/feedback-1.cf2d432864f7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/feedback-1.cf2d432864f7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/feedback-1.cf2d432864f7.generation.json",
+      "plannedRequestSha256": "acb82694042700b1f245f341da36a5a621f723bce10fbdb2e49360c86d123929"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student repeats the hook experiment, this time with one hundred millilitres of each solution instead of fifty, at the same concentrations. Predict how the temperature rise and the calculated enthalpy of neutralisation would compare with the first experiment. Justify your answer. Pause here to answer.",
+      "hash": "86800ca06dd0",
+      "textSha256": "86800ca06dd03a70227f34f32d7e3d75c1ea56db902711dbb85c8af165efcad2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/attempt-2.86800ca06dd0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/attempt-2.86800ca06dd0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/attempt-2.86800ca06dd0.generation.json",
+      "plannedRequestSha256": "e1700989ed279fce13c77b1bfa00415e820ba1e656f652418641471fb8b17c10"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Both stay about the same. Twice as much water forms, so twice the heat is released, but there's twice the mass to warm, so the rise is still about six point five degrees. And the enthalpy is heat per mole of water, so doubling both leaves it unchanged. Saying the rise doubles is the classic slip: it forgets the extra solution soaking up the heat.",
+      "hash": "008c63566302",
+      "textSha256": "008c63566302f5c1c68a701c6e5970441a182a096640fefe70c16fe0ebb2ea0c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/feedback-2.008c63566302.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/feedback-2.008c63566302.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/feedback-2.008c63566302.generation.json",
+      "plannedRequestSha256": "4d8362faa54c335e16f763e8804192a9e4c1ffa41e8fe5f75fec49c7fd6d2519"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any neutralisation heat question: the smaller of the hydrogen ion and hydroxide ion moles sets the moles of water. Use the mass of everything in the cup for q, divide by the moles of water, round, and make delta H negative when the temperature rises. Next: doing this experiment in the lab, and cutting down the heat loss.",
+      "hash": "9af512995346",
+      "textSha256": "9af5129953465ba1158702b348a6e667412c170095146d149c027a678071b728",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/decision-rule.9af512995346.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/decision-rule.9af512995346.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/decision-rule.9af512995346.generation.json",
+      "plannedRequestSha256": "059136ac9a0d5dcf60722b678e927b1e3c58e0e817023f9c9bc165af0be41764"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C03-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

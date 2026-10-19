@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B03-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b03/lesson.json",
+  "lessonSha256": "c849a5fa03916bbbfc59b56ac7622614c11c87053c7a1ccda1e010c9d9d719bf",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b03/lesson.production-brief.json",
+    "sha256": "d69c6e737e71cd28e8a34d884727c474f11dadf2ee97cc8d376809c814402a17"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the gene for one chain of haemoglobin, change one base in the sixth codon, and you can get sickle cell disease. Change a different base in that same codon, and the amino acid stays the same. Change one base in codon thirty-nine, and the chain stops partway, causing a blood disorder called beta thalassaemia. Every one of these is a single base. So why are the results so different?",
+      "hash": "4dad27393e5d",
+      "textSha256": "4dad27393e5d2fa7aa02b0b379840534e209c3d122e937ab5f214fc9de690270",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/hook.4dad27393e5d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/hook.4dad27393e5d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/hook.4dad27393e5d.generation.json",
+      "plannedRequestSha256": "d9323e528d337c0101330737eab52bd3d0d301086dd8f1abb092a3ecec2d1ae9"
+    },
+    {
+      "id": "point-mutation",
+      "parentSceneId": "point-mutation",
+      "text": "Each of these is a point mutation, a change to one base, or a few bases, in a gene's DNA. There are three ways it can happen. A substitution swaps one base for another. An insertion adds a base, and a deletion removes one. They come from copying mistakes, or from mutagens, like the base analogues and the chemicals that slip between bases, from the last video. Remember, a ribosome reads the mRNA copy of the gene in codons of three, starting at the start codon. So the real question is, what does the change do to the codons?",
+      "hash": "8806a1bbf1be",
+      "textSha256": "8806a1bbf1beee67aa62f673dddf01ada6f901a5cff816761bba1c3b0d3ed7cb",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/point-mutation.8806a1bbf1be.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/point-mutation.8806a1bbf1be.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/point-mutation.8806a1bbf1be.generation.json",
+      "plannedRequestSha256": "b23818eaa2d1f46b12ab638dfdce45c0196ca180fb203bd6e0345b3443963960"
+    },
+    {
+      "id": "silent",
+      "parentSceneId": "silent",
+      "text": "Start with substitutions. A substitution inside a coding codon changes that codon, so read the new codon to see what it codes for: the same amino acid, a different one, or a stop. Most amino acids have more than one codon, often differing only in the third base. So G A G becoming G A A still codes for glutamate. That's a silent mutation. The base sequence changed, but the amino acid sequence didn't.",
+      "hash": "b2b4ce2cdb95",
+      "textSha256": "b2b4ce2cdb95feaf280b67481a11d9194ab8fdfd0447e5763dbe2acda2a57428",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/silent.b2b4ce2cdb95.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/silent.b2b4ce2cdb95.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/silent.b2b4ce2cdb95.generation.json",
+      "plannedRequestSha256": "7106568a3830223dd6c10bd953cc68ece4ba1c0812aa8c9450c5934523ba96fc"
+    },
+    {
+      "id": "missense",
+      "parentSceneId": "missense",
+      "text": "Now change the middle base instead, so G A G becomes G U G. The chart gives valine, not glutamate. Glutamate carries a charge, but valine avoids water. One amino acid is swapped for another, and that's a missense mutation. You've seen where this one leads. With two copies, the changed haemoglobin sticks together when oxygen is low, and red cells bend into sickles. But not every missense change matters this much. It depends on where the amino acid sits, and how different the new one is.",
+      "hash": "d84185c7f73a",
+      "textSha256": "d84185c7f73ad1b61b14ad176fdf9c624d3135343a7193ca260ce3d6122a03b3",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/missense.d84185c7f73a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/missense.d84185c7f73a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/missense.d84185c7f73a.generation.json",
+      "plannedRequestSha256": "a846b8afd5710565b6a8e1b8cec0a7abce751472c3a44500cf68946ec3f9e967"
+    },
+    {
+      "id": "nonsense",
+      "parentSceneId": "nonsense",
+      "text": "A third kind of substitution creates an early stop. In codon thirty-nine, C A G codes for glutamine. Change the C to U, and it reads U A G, a stop codon, U Are Gone. The ribosome stops there, so the chain is cut short after thirty-eight amino acids, and it can't fold into a working beta chain. That's a nonsense mutation. A person with two copies makes no normal beta chains, so they have too little working haemoglobin.",
+      "hash": "92b85b9b7102",
+      "textSha256": "92b85b9b7102046c6516dfd86ed9e45a93962c301c59eee4f149357d9f42574c",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/nonsense.92b85b9b7102.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/nonsense.92b85b9b7102.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/nonsense.92b85b9b7102.generation.json",
+      "plannedRequestSha256": "2621dfc50bc2aacc12aa183a922c9f9c63a2b69adc0102e66851376b67aa7ddc"
+    },
+    {
+      "id": "frameshift",
+      "parentSceneId": "frameshift",
+      "text": "Insertions and deletions act very differently. Here's a short message that codes for five amino acids. Now delete one base from the second codon. The ribosome still reads in threes from the start codon, so every codon from there on is different, and the amino acids after it are mostly wrong. A stop codon often turns up early, too. That's a frameshift, because the reading frame, the way the bases are grouped into codons, has shifted. Inserting one base does the same thing.",
+      "hash": "dc2a5d9da005",
+      "textSha256": "dc2a5d9da0056a5765aafa6ea82f7995ef9a063cc38c2c411f804a3251020ecb",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/frameshift.dc2a5d9da005.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/frameshift.dc2a5d9da005.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/frameshift.dc2a5d9da005.generation.json",
+      "plannedRequestSha256": "cd006dbbe5cbaf8194a60356c5d8bc1dfec0c918ab8caa37836e6392c42962bf"
+    },
+    {
+      "id": "reading-frame",
+      "parentSceneId": "reading-frame",
+      "text": "Here's a way to picture it. Read the sentence THE FAT CAT ATE THE RAT in three-letter words. Delete the F, keep reading in threes, and every word after it turns to gibberish. A cell does the same, except a shifted frame still makes amino acids, just the wrong ones. Now delete three bases in a row instead, a whole codon's worth. The frame lines up again, so the protein loses one amino acid, and everything after it reads normally. Inserting three bases works the same way, adding one amino acid.",
+      "hash": "830fc90b2e3e",
+      "textSha256": "830fc90b2e3e7c146e79a6f6a88178a84e2c9ac3ca28a1b2a292ad4da8503af2",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/reading-frame.830fc90b2e3e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/reading-frame.830fc90b2e3e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/reading-frame.830fc90b2e3e.generation.json",
+      "plannedRequestSha256": "3cbf845c6e4e2bf6de27915b614d3648db36e688da4cbd9203e4865ed62eb34d"
+    },
+    {
+      "id": "what-decides",
+      "parentSceneId": "what-decides",
+      "text": "So what decides how much a point mutation matters? First, its type. A substitution inside a coding codon changes that codon, so it's silent, swaps one amino acid, or adds an early stop. A one-base insertion or deletion changes every codon after it. Second, its position. A frameshift near the start of a gene changes almost the whole protein, but one near the end changes only the last few amino acids. So \"point\" describes the size of the change, not the size of its effect.",
+      "hash": "be89a4fb86cf",
+      "textSha256": "be89a4fb86cf58ff75723d3feeaa1a802f3dd0ac3db0eaf98f89e438cdd53874",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/what-decides.be89a4fb86cf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/what-decides.be89a4fb86cf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/what-decides.be89a4fb86cf.generation.json",
+      "plannedRequestSha256": "f7a892548df5467050167ebf0c67a6d3691b0f754d90815040d9ec20e582d2d0"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two aids. For substitutions, silent means the same amino acid, missense misses the right amino acid and puts in a different one, and nonsense means stop, so the chain is cut short. And for insertions and deletions, remember the fat cat. Lose one letter, and everything after it shifts.",
+      "hash": "8611ab9c7707",
+      "textSha256": "8611ab9c77077a3fc3fd4798640bf49c5854bc12ee2d7177a8450135a7aca539",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/memory.8611ab9c7707.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/memory.8611ab9c7707.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/memory.8611ab9c7707.generation.json",
+      "plannedRequestSha256": "02b07a57ddd592fa0eec415517fda4932e95d1553696cf4170a83b4ef0e400f8"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First, here's part of the mRNA for an enzyme, three mutated versions of it, and part of the codon chart. For each mutant, name the type of point mutation, and describe its effect on the polypeptide. Pause here to answer.",
+      "hash": "6a2cd609ab69",
+      "textSha256": "6a2cd609ab694f3527ce8b6c4bcd83cf3566372d637e2e038f4f51200ba98656",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/attempt.6a2cd609ab69.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/attempt.6a2cd609ab69.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/attempt.6a2cd609ab69.generation.json",
+      "plannedRequestSha256": "adaae7703659d98acf9278b554a4727051d2a4ed38d99561cc06b98227f7e4c6"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Mutant A changed G C A to G C G, but both code for alanine, so it's a silent substitution, and the amino acid sequence is unchanged. In mutant B, U A C became U A A, a stop codon. That's a nonsense substitution, so the chain stops after two amino acids. Mutant C has lost a base, so it's a deletion and a frameshift, and every codon after it changes. Calling C a substitution is the classic mistake.",
+      "hash": "9bc9c6ae1bbe",
+      "textSha256": "9bc9c6ae1bbefe00161be8e94d8f6a8774c51efc624ad89a600d85b3c47180ab",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/feedback-one.9bc9c6ae1bbe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/feedback-one.9bc9c6ae1bbe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/feedback-one.9bc9c6ae1bbe.generation.json",
+      "plannedRequestSha256": "d76095d74b336604d38c75dcf61c490e694464ea0b27133f71e6f30acb6e4481"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. The most common cystic fibrosis allele has three bases deleted from the CFTR gene. A common Tay-Sachs allele has four bases inserted into the HEXA gene. Explain why the CFTR protein is missing only one amino acid, while the HEXA protein is changed from the insertion onwards and cut short. Pause here to answer.",
+      "hash": "f0c685f1641d",
+      "textSha256": "f0c685f1641d2eebd02dfcb34582642dbb2d7d510a7904e49aeff0e9e41deb6b",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/attempt-two.f0c685f1641d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/attempt-two.f0c685f1641d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/attempt-two.f0c685f1641d.generation.json",
+      "plannedRequestSha256": "5d647725791bda26198863c745df5311e13b6012b97b4bbae59e9ddf2885fc55"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Codons are read in threes. Deleting three bases removes exactly one codon's worth, so the reading frame after it is unchanged, and the protein loses just one amino acid. Four isn't a multiple of three, so the insertion shifts the frame. Every codon after it is regrouped, and a stop codon soon appears. If you said each change only affects the amino acids where it happens, you've missed the frame.",
+      "hash": "f6c71930c558",
+      "textSha256": "f6c71930c558eaf8a7a16b90eb33b9d9f0b860990d9be797fbf725a6cecaf133",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/feedback-two.f6c71930c558.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/feedback-two.f6c71930c558.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/feedback-two.f6c71930c558.generation.json",
+      "plannedRequestSha256": "21ac6c08a0ad5b8e92c7b092b5b0e60127859b352b920bcdbb62537b12b797b8"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question gives you a point mutation, first ask whether it's a substitution, or an insertion or deletion. For a substitution, read the new codon on the chart: the same amino acid, a different one, or stop. For an insertion or deletion, count the bases. If it isn't a multiple of three, the frame shifts. Then say where it is, and what that does to the protein. Next, what happens when whole chunks of chromosomes change.",
+      "hash": "bf91fab7f090",
+      "textSha256": "bf91fab7f090184363f9a642118f6948478490e9ee4ab772f15eecdccf3730e3",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/decision-rule.bf91fab7f090.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/decision-rule.bf91fab7f090.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/decision-rule.bf91fab7f090.generation.json",
+      "plannedRequestSha256": "e222a314f6ae9796be36238d774f3c7f89abc6e8f184dc9d4549fc35a3b4a818"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B03-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

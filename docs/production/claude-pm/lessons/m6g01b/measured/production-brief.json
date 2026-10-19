@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6g01b/measured/lesson.json",
+    "lessonSha256": "d3bc9e6347e94fbabb67fd6759ecde3a8856cd57f537476b21afb5ef69f99ef1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B6b: the template strand is paired (A with U, T with A, C with G, G with C) to build mRNA; the coding strand matches the mRNA with U for T; mRNA runs 5' to 3'. From B6c: the codon chart is read with mRNA codons; AUG is the start codon; stop codons add no amino acid. From b03: substitution, insertion, deletion; silent, missense, nonsense; a frameshift when the number of bases added or removed is not a multiple of three. From b04: deletion, duplication, inversion, translocation; balanced rearrangements keep every gene; nondisjunction in meiosis gives a gamete with an extra or missing chromosome. From b05: somatic mutations are copied by mitosis into one cell's descendants and are not inherited in animals; germ-line mutations can be. Not assumed: monosomy as a term (glossed in Q3 as \"one chromosome missing\"), myostatin (glossed in the stem).",
+    "startsWith": "An unfamiliar mutated sequence, chromosome, karyotype or case with a hidden trap. The video opens: Mutation questions in the HSC give you something to read, a DNA sequence, a chromosome diagram, a karyotype or a case.",
+    "stopsAfter": "writing mRNA from a template strand and classifying three substitutions as silent, nonsense and missense with their effects; aligning a mutant sequence base by base to find a deletion and an insertion, and explaining why the frame is restored after the second change; naming an inversion that includes the centromere and explaining why it is not a translocation; explaining how a 45,X karyotype can arise by nondisjunction of the sex chromosomes; explaining why an 11-base deletion gives a non-functional protein, and why the same deletion in one body cell of a cow cannot be inherited by her calves.",
+    "nextLesson": "how meiosis and fertilisation vary offspring (route entry bio-m6-b07)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-g01.md"
+  ],
+  "teaching": {
+    "task": "When a question hands you a mutated sequence, chromosome or case you've never seen, how do you work out what changed, what it does, and who can inherit it?",
+    "causalExplanation": "Why the mRNA is a pairing, not a copy, of the template (2b); why each mutant has its effect (the new codon on the chart, 2c); why a stop ends the chain (2c); why codons 2 to 5 change (the deletion shifts the frame, 3c) and why 6 and 7 do not (one removed, one added, 3c); why the diagram shows an inversion and not a translocation (same genes, same chromosome, 4b, 4d); how 45,X arises (sex chromosomes fail to separate in one parent's meiosis, 4c); why 11 bases give no working myostatin (not a multiple of three, frameshift, early stop, missing active end, 5b); why the cow's calves cannot inherit it (somatic, copied only by mitosis, not in her eggs, 5c).",
+    "conversationalApproach": "A hard-practice walkthrough (the walkthroughs are the content): four HSC-style questions written for HSCScience, each shown with its full exam wording, a protected 10 second attempt, then one reasoning stage per scene with each given underlined in the question strip as it is used, and one crossed-out classic mistake. Q1 pairs a template strand to mRNA and compares three mutants one triplet at a time; Q2 aligns a mutant base by base and explains why the frame is restored after the second change; Q3 names an inversion that includes the centromere and explains how 45,X can arise by nondisjunction; Q4 explains why an 11-base deletion gives a non-functional myostatin and why the same deletion in one muscle cell cannot be inherited. The decision board collects the first move for each kind of question and hands off to b07.",
+    "openingDecision": "Mutation questions in the HSC give you something to read, a DNA sequence, a chromosome diagram, a karyotype or a case. Every one comes down to three checks. What changed, base by base or gene by gene? What does it do, to the codons, the frame, or the genes? And who can inherit it? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+    "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a). Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "B6-IQ1-02 \"compare the causes, processes and effects of different types of mutation, including but not limited to:\" with \"point mutation\" and \"chromosomal mutation\" (Q1 to Q4); B6-IQ1-03 \"distinguish between somatic mutations and germ-line mutations and their effect on an organism   (ACSBL082, ACSBL083)\" (Q4 part b). Practice and transfer only: the ledger rows stay with b03, b04 and b05; G01 adds a practice row, not first coverage. The three spaces before \"(ACSBL082\" are in the official DOCX extraction and are kept verbatim in the YouTube block."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G03c layout, updated for the worded-question rule: top-left the question card (stem, data and demands, as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Point mutations\", \"Frameshift\", \"Chromosomes\", \"Effect and inheritance\"), hidden during each attempt where it would name the answer. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries three rows, \"what changed?\", \"what does it do?\", \"who inherits it?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Sequences: typeset text in a fixed-width face, codons spaced in threes, DNA in ink on a slim baseline (b01 `SlimStrand` look, two thin lines, at reduced height), mRNA in terracotta (B6b); no letter tiles. Chromosomes: b04's HSC-style `GeneBar` (long rounded bar with a narrowed centromere, cream fill, ink outline, gene letters beside thin bands). Karyotype: b04's coded karyotype strip (B9 look). Real objects are painted: the T4 phage (new plate), the Belgian Blue bull (new plate) and the red cow (`m5x-cattle-red-v1.png`). No people. Clutter rule (owner, 19 Oct): besides the question strip and the check strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands.",
+    "transitionPlan": "One practice board persists: the question card writes on at the top left with the HSC-style tag, the check strip on the far left dims during each countdown and ticks its row as each scene uses it; each walkthrough shrinks the card to a strip with the type badge and adds one reasoning stage at a time in the working area (codon rows, alignment rows, gene bars, karyotype strip, cell tree), each tag fading as the next cue lands; each mistake scene writes a chip and crosses it; earlier questions clear before the next card writes on; the check strip grows into the two-column decision board, and the next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"What changed, what it does, who inherits it\" writes on.",
+      "teachingReason": "Hook: Mutation questions in the HSC give you something to read, a DNA sequence, a chromosome diagram, a karyotype or a case.",
+      "narrationCue": "What changed / What does it do / who can inherit it",
+      "motionPurpose": "On the spoken cues: Four small stimulus thumbnails fan out on the right on \"something to read\": a typeset DNA triplet row on a slim baseline, a chromosome bar with a centromere waist, a karyotype strip, the Belgian Blue bull plate (small). On the three checks, the check strip builds on the left, one row per cue: \"what",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"What changed, what it does, who inherits it\" writes on. Four small stimulus thumbnails fan out on the right on \"something to read\": a typeset DNA triplet row on a slim baseline, a chromosome bar with a centromere waist, a karyotype strip, the Belgian Blue bull plate (small). On the three checks, the check strip builds on the left, one row per cue: \"what changed?\" (two aligned rows with one amber letter), \"what does it do?\" (a codon bracket and a bead), \"who inherits it?\" (a germ-line branch icon from b05). On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\" (each full card carries its own tag when it is set). Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: a template strand and three mutants) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. Here's the template strand for the",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: a template strand and three mutants)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on as an exam question: \"The DNA template strand for the start of a gene is shown below, written 3' to 5'. Mutants 1, 2 and 3 each have one base changed.\" Four sequence lines in a fixed-width face, triplets spaced, each on a slim baseline: \"Normal template: 3' TAC GGT CTT AAA CCG 5'\", \"Mutant 1: 3' TAC GGA CTT AAA CCG 5'\", \"Mutant 2: 3' TAC GGT ATT AAA CCG 5'\", \"Mutant 3: 3' TAC GGT CTT AGA CCG 5'\" (no letter highlighted). The full B6c `CodonChart` sits at the right, unlit, captioned \"Codon chart (mRNA codons)\". Demands: \"(a) Write the mRNA for the normal sequence. (2 marks)\" \"(b) For each mutant, name the type of point mutation and describe its effect on the polypeptide. (6 marks)\". An mRNA answer line and a three-row `AnsTable` (\"mutant\", \"type\", \"effect on the polypeptide\"). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-mrna",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Which strand, then the chain: First, which strand is it?",
+      "narrationCue": "template / 5' to 3' / A U G",
+      "motionPurpose": "On the spoken cues: Type badge \"Point mutations\". On \"template\" the word \"template\" in the stem underlines amber and the check strip's \"what changed?\" row lights. A pairing key writes small at the top of the working area: \"template A → U, T → A, C → G, G → C\" (grey tag \"B6b\"). On \"5' to 3'\" \"written 3' to 5'\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Point mutations\". On \"template\" the word \"template\" in the stem underlines amber and the check strip's \"what changed?\" row lights. A pairing key writes small at the top of the working area: \"template A → U, T → A, C → G, G → C\" (grey tag \"B6b\"). On \"5' to 3'\" \"written 3' to 5'\" underlines; the normal template line copies down into the working area, and beneath it a terracotta mRNA row builds one triplet at a time, \"5' AUG CCA GAA UUU GGC 3'\", each codon bracket landing as its pair forms. On \"A U G\" the first codon rings and the chart's AUG cell lights with its start flag. On \"Reading on\" the chart pointer runs each lookup and `AminoChain` beads pop out above the codons (computed: Met, Pro, Glu, Phe, Gly); the pairing key fades. Answer line (a): the built mRNA row itself slides into the answer line (no second copy is written). Strip: \"what changed?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "Enter slide",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mutants",
+      "visualDecision": "new",
+      "visualReference": "each mutant line in the strip lights in turn, and its one changed template letter rings amber against the normal line (a thin amber tick between the two lines; no \"T to A\" text callout, the ring is enough).",
+      "teachingReason": "One triplet at a time: Now compare each mutant, one triplet at a time.",
+      "narrationCue": "C C U / silent / U A A / nonsense / serine / missense",
+      "motionPurpose": "On the spoken cues: (1) On \"C C U\" the mRNA row's second codon swaps to \"CCU\" with the changed letter amber; the chart lights \"CCU Pro\"; the Pro bead stays, with a small tick; table row 1 fills \"silent substitution | no change: Met Pro Glu Phe Gly\". (2) On \"U A A\" the third codon swaps to \"UAA\"; the chart lights the",
+      "motionRole": "explain",
+      "onScreenChange": "each mutant line in the strip lights in turn, and its one changed template letter rings amber against the normal line (a thin amber tick between the two lines; no \"T to A\" text callout, the ring is enough). (1) On \"C C U\" the mRNA row's second codon swaps to \"CCU\" with the changed letter amber; the chart lights \"CCU Pro\"; the Pro bead stays, with a small tick; table row 1 fills \"silent substitution | no change: Met Pro Glu Phe Gly\". (2) On \"U A A\" the third codon swaps to \"UAA\"; the chart lights the stop cell grey; the beads after Pro fade to dashed outlines and a grey stop bar closes the chain; row 2 fills \"nonsense substitution | stops after 2 amino acids: Met Pro\". (3) On \"serine\" the fourth codon swaps to \"UCU\"; the chart lights \"UCU Ser\"; the Phe bead flips to \"Ser\" with an amber ring; row 3 fills \"missense substitution | Phe replaced by Ser; rest unchanged\". The mRNA row and beads reset to normal between cases, so one mutant shows at a time; each filled table row dims to grey when the next case starts, so the table keeps the results without competing. Strip: \"what does it do?\" ticks.",
+      "motionTools": [
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost mRNA row \"UAC GGU CUU AAA CCG\" writes under the template line with ghost beads \"Tyr Gly Leu Lys Pro\" (computed); on \"the classic mistake\" it takes a grey scribble cross with the caption \"template copied, not paired\".",
+      "teachingReason": "The classic mistake: The classic mistake is reading the template as if it were the mRNA.",
+      "narrationCue": "the classic mistake / template copied, not paired / no start codon",
+      "motionPurpose": "On the spoken cues: On \"no start codon\" the ghost \"UAC\" rings. A second crossed chip, unspoken, lands after the spoken cross has settled: \"mutant 2: missense (a stop is not an amino acid)\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost mRNA row \"UAC GGU CUU AAA CCG\" writes under the template line with ghost beads \"Tyr Gly Leu Lys Pro\" (computed); on \"the classic mistake\" it takes a grey scribble cross with the caption \"template copied, not paired\". On \"no start codon\" the ghost \"UAC\" rings. A second crossed chip, unspoken, lands after the spoken cross has settled: \"mutant 2: missense (a stop is not an amino acid)\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: a frameshift that fixes itself) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. In 1961, Francis Crick and his",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a frameshift that fixes itself)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The painted `m6-bacteriophage-t4-v1.png` (new) sits small at the card's upper left. The card writes on: \"In 1961, Crick and colleagues studied mutants of a gene in a virus that infects bacteria (bacteriophage T4). Part of the normal mRNA and part of the mRNA from one mutant are shown. The mutant still produced a working protein.\" Two lines in a fixed-width face: \"Normal: 5' AUG GCU AAC GGA UCU CAG UGG 3'\", \"Mutant: 5' AUG GUA ACG GAU CUA CAG UGG 3'\". Grey chip: \"sequences are illustrative\". The full `CodonChart` sits at the right, unlit. Demands: \"(a) Identify the two point mutations in the mutant. (2 marks)\" \"(b) Explain why amino acids 6 and 7 are the same as normal, although amino acids 2 to 5 have changed. (3 marks)\". Two answer boxes. Nothing answer-bearing: no alignment, no gaps drawn. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-align",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Frameshift\".",
+      "teachingReason": "Base by base: Four codons in a row have changed, which one substitution can't do.",
+      "narrationCue": "base by base / C / extra A",
+      "motionPurpose": "On the spoken cues: On \"Four codons in a row\" codons 2 to 5 of the two lines in the strip ring amber together, then the rings fade. `AlignRow`: the two sequences copy down into the working area as plain letter strings with their codon spacing removed (no tiles, fixed-width face), normal above, mutant below. On \"base",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Frameshift\". On \"Four codons in a row\" codons 2 to 5 of the two lines in the strip ring amber together, then the rings fade. `AlignRow`: the two sequences copy down into the working area as plain letter strings with their codon spacing removed (no tiles, fixed-width face), normal above, mutant below. On \"base by base\" thin grey ticks join matching letters one by one from the left; \"AUGG\" ticks. On \"C\" the normal \"C\" (base 5) rings amber and the mutant row opens a dashed gap beneath it (tag \"deletion: C, codon 2\"); \"mutant\" and \"Normal\" underline in the strip. On \"shifted one place left\" the mutant letters after the gap tick to the normal letters, each tick leaning one place, through \"UAACGGAUCU\". On \"extra A\" the mutant's extra \"A\" rings amber with no partner above it, and the normal row opens a dashed gap (tag \"insertion: A, after codon 5\"); the deletion tag fades. After the A, the last six letters \"CAGUGG\" tick straight down. Answer box (a) fills \"deletion of C in codon 2; insertion of A after codon 5\". Strip: \"what changed?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-frame",
+      "visualDecision": "new",
+      "visualReference": "the letter strings regroup into codon brackets (b03 `CodonRow` motion).",
+      "teachingReason": "Why six and seven are normal: Now read in threes.",
+      "narrationCue": "shifts the frame / normal groups of three",
+      "motionPurpose": "On the spoken cues: Under the mutant row, brackets 2 to 5 draw amber and their beads flip one by one (computed: Ala to Val, Asn to Thr, Gly to Asp, Ser to Leu), each with an amber ring (tag \"frame shifted: codons 2 to 5\"). On \"One removed, one added\" the tag fades and a small counter writes \"minus 1, plus 1 = 0\". On",
+      "motionRole": "explain",
+      "onScreenChange": "the letter strings regroup into codon brackets (b03 `CodonRow` motion). Under the mutant row, brackets 2 to 5 draw amber and their beads flip one by one (computed: Ala to Val, Asn to Thr, Gly to Asp, Ser to Leu), each with an amber ring (tag \"frame shifted: codons 2 to 5\"). On \"One removed, one added\" the tag fades and a small counter writes \"minus 1, plus 1 = 0\". On \"normal groups of three\" brackets 6 and 7 draw in ink and line up exactly under the normal row's brackets 6 and 7, with a vertical guide; beads \"Gln\" and \"Trp\" take ticks; \"amino acids 6 and 7\" underlines in the strip. Answer box (b) fills \"the deletion shifts the frame (codons 2 to 5 regrouped); the insertion restores it, so codons 6 on are read in the normal frame\". As answer box (b) fills, the counter fades. On \"read in threes\" the bank line \"Multiples of three don't shift the frame\" writes small (no grey tag, no second line). Strip: \"what does it do?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost bead row for the deletion alone writes under the mutant (computed: Met, Val, Thr, Asp, Leu, Ser, ...), all amber after Met; on \"every amino acid to the end\" the chip \"a frameshift always changes everything after it\" takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is saying a frameshift changes every amino acid to the end.",
+      "narrationCue": "every amino acid to the end / only the stretch between them",
+      "motionPurpose": "On the spoken cues: On \"only the stretch between them\" a bracket spans codons 2 to 5 on the real mutant row (tag \"between the two changes only\"). A second crossed chip, unspoken: \"four separate substitutions\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost bead row for the deletion alone writes under the mutant (computed: Met, Val, Thr, Asp, Leu, Ser, ...), all amber after Met; on \"every amino acid to the end\" the chip \"a frameshift always changes everything after it\" takes a grey scribble cross. On \"only the stretch between them\" a bracket spans codons 2 to 5 on the real mutant row (tag \"between the two changes only\"). A second crossed chip, unspoken: \"four separate substitutions\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: a diagram, then a karyotype) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. The diagram shows a normal chromosome,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: a diagram, then a karyotype)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"The diagram shows a normal chromosome and a mutated version of it. Letters represent genes; the narrow waist is the centromere.\" Two HSC-style `GeneBar`s, stacked: \"Normal: A B ● C D E F G\" and \"Mutated: A D C ● B E F G\" (no shading, no arrows). Demand (a): \"Name the type of chromosomal mutation shown. Justify your answer. (2 marks)\". Below, part (b) text: \"A karyotype from a person with Turner syndrome shows 45 chromosomes: 44 autosomes and one X chromosome.\" Demand (b): \"Identify the type of mutation and explain how it could arise during meiosis in one parent. (3 marks)\". Two answer boxes. No karyotype drawing during the attempt (the text gives the count). **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-diagram",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Chromosomes\".",
+      "teachingReason": "Gene by gene: Compare gene by gene.",
+      "narrationCue": "D, C, centromere, B / reversed / inversion",
+      "motionPurpose": "On the spoken cues: The two `GeneBar`s copy into the working area, normal above, mutated below. On \"Compare gene by gene\" thin guides drop from each normal gene to its partner below: \"A\" ticks straight down. On \"D, C, centromere, B\" the segment \"B ● C D\" on the normal bar and \"D C ● B\" on the mutated bar shade amber,",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Chromosomes\". The two `GeneBar`s copy into the working area, normal above, mutated below. On \"Compare gene by gene\" thin guides drop from each normal gene to its partner below: \"A\" ticks straight down. On \"D, C, centromere, B\" the segment \"B ● C D\" on the normal bar and \"D C ● B\" on the mutated bar shade amber, and a curved arrow (`CurveArrow`) shows the segment rotating half a turn, the centromere waist travelling with it (tag \"segment reversed, centromere included\"). On \"reversed\" \"E F G\" tick straight down. On \"inversion\" answer box (a) fills \"inversion: segment B, C, D reversed (including the centromere); same genes, same chromosome\". On \"nothing has come from another chromosome\" ticks run along all seven letters (tag \"nothing lost, added or swapped\", replacing the earlier tag). Strip: \"what changed?\" ticks.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-karyotype",
+      "visualDecision": "new",
+      "visualReference": "the bars dim and shrink to the side.",
+      "teachingReason": "One chromosome missing: Now part b.",
+      "narrationCue": "missing / nondisjunction / fail to separate",
+      "motionPurpose": "On the spoken cues: b04's coded karyotype strip draws in (22 numbered pairs, then the sex chromosomes): pair 23 shows one X only, with an empty dashed outline where the second sex chromosome would be, and a counter \"45\" (tag \"one chromosome missing\"; it fades on \"nondisjunction\"). \"45 chromosomes\" and \"one X",
+      "motionRole": "explain",
+      "onScreenChange": "the bars dim and shrink to the side. b04's coded karyotype strip draws in (22 numbered pairs, then the sex chromosomes): pair 23 shows one X only, with an empty dashed outline where the second sex chromosome would be, and a counter \"45\" (tag \"one chromosome missing\"; it fades on \"nondisjunction\"). \"45 chromosomes\" and \"one X chromosome\" underline in the strip. On \"nondisjunction\" the strip fades and B5b's meiosis strip (one parent cell, sex chromosome pair only, plum X and teal Y, as in b04 scene 7) runs: on \"fail to separate\" both sex chromosomes move to the same pole, giving one cell with both and one with none (grey tag \"b04: fail to dis-join\", fading on \"no sex chromosome\"). On \"no sex chromosome at all\" the empty gamete circle rings amber with the label \"no sex chromosome\". On \"X-carrying gamete\" a normal egg circle with one X meets it; the zygote circle shows \"44 + X = 45\" (no tag); the \"no sex chromosome\" label fades. Answer box (b) fills \"change in number (one sex chromosome missing); nondisjunction in one parent's meiosis: a gamete with no sex chromosome; + an X gamete = 45,X\". The plum and teal pair is labelled only \"sex chromosomes\" (author note: in about three quarters of cases the missing sex chromosome is the father's; the drawing shows a father's cell without saying so).",
+      "motionTools": [
+        "Mark underline",
+        "ScribbleCircle",
+        "DrawPath",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "the two bars return; a chip \"translocation: the centromere moved\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake in part a is calling it a translocation, because the centromere moved.",
+      "narrationCue": "the classic mistake / a different, non-matching chromosome",
+      "motionPurpose": "On the spoken cues: On \"a different, non-matching chromosome\" a ghost second bar (pale blue-grey, letters M N ● O P Q, b04 look) appears briefly beside them with a dashed swap arrow and the tag \"translocation: needs a second chromosome\", then fades. A second crossed chip, unspoken: \"part b: a deletion (a whole",
+      "motionRole": "explain",
+      "onScreenChange": "the two bars return; a chip \"translocation: the centromere moved\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"a different, non-matching chromosome\" a ghost second bar (pale blue-grey, letters M N ● O P Q, b04 look) appears briefly beside them with a dashed swap arrow and the tag \"translocation: needs a second chromosome\", then fades. A second crossed chip, unspoken: \"part b: a deletion (a whole chromosome is not a segment)\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q4-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 4: Belgian Blue cattle) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question four. Belgian Blue cattle have very large",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: Belgian Blue cattle)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The painted `m6-belgian-blue-bull-v1.png` (new) sits small at the card's upper left, and `m5x-cattle-red-v1.png` beside part (b). The card writes on: \"Belgian Blue cattle have very large muscles. Most Belgian Blue cattle carry two copies of an allele of the myostatin gene in which 11 bases are deleted from the coding sequence. Myostatin is a protein that limits muscle growth.\" Demand (a): \"Explain how the deletion of 11 bases can result in cattle with no working myostatin. (3 marks)\". Part (b) text: \"A cow of a different breed, with two normal myostatin alleles, develops the same 11-base deletion in one cell of a leg muscle.\" Demand (b): \"Explain whether her calves could inherit large muscles as a result of this mutation. (2 marks)\". Two answer boxes. Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q4-frameshift",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Effect and inheritance\".",
+      "teachingReason": "Eleven bases, the frame and the protein: Start with the number.",
+      "narrationCue": "Eleven / stop codon / limits muscle growth",
+      "motionPurpose": "On the spoken cues: On \"Eleven\" \"11 bases are deleted\" underlines amber and a small working line writes on: \"11 ÷ 3 = 3 remainder 2: not a whole number of codons\". On \"shifts the reading frame\" a coded gene band (b03 long gene band look: brackets only, no letters) shows a block of eleven positions lifting out near its",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Effect and inheritance\". On \"Eleven\" \"11 bases are deleted\" underlines amber and a small working line writes on: \"11 ÷ 3 = 3 remainder 2: not a whole number of codons\". On \"shifts the reading frame\" a coded gene band (b03 long gene band look: brackets only, no letters) shows a block of eleven positions lifting out near its middle, and every bracket after it regroups amber (tag \"frame shifted\"). On \"stop codon\" a grey stop bar closes the bead row a few beads after the deletion, and the beads beyond it fade to dashed outlines (tag replaced by \"early stop: protein cut short\"). On \"the part that does its job\" the tag fades and a coded protein blob shows its right-hand end as a dashed outline, labelled small \"active end missing\"; the working line dims to grey (it returns in 5d). On \"limits muscle growth\" the phrase underlines in the strip, and a small coded \"brake\" bar (two short lines) beside a muscle outline releases, the outline widening (no extra tag). The protein label fades and answer box (a) fills \"not a multiple of 3: frameshift, codons regrouped, early stop; short, non-functional protein, so muscle growth is not limited\". Strip: \"what changed?\" and \"what does it do?\" tick.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-somatic",
+      "visualDecision": "new",
+      "visualReference": "on \"one muscle cell\" \"one cell of a leg muscle\" and \"two normal myostatin alleles\" underline in the strip.",
+      "teachingReason": "One muscle cell: Now the cow.",
+      "narrationCue": "one muscle cell / can't",
+      "motionPurpose": "On the spoken cues: b05's `CellTree` draws beside the red cow plate: one low cell in a body branch takes an amber dot and tints a tiny patch below it; the plum germ-line branch stays plain (tag \"somatic: a patch only\"). On \"not into her eggs\" a small egg circle at the plum branch tip stays plain with a grey stop bar.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"one muscle cell\" \"one cell of a leg muscle\" and \"two normal myostatin alleles\" underline in the strip. b05's `CellTree` draws beside the red cow plate: one low cell in a body branch takes an amber dot and tints a tiny patch below it; the plum germ-line branch stays plain (tag \"somatic: a patch only\"). On \"not into her eggs\" a small egg circle at the plum branch tip stays plain with a grey stop bar. On \"can't\" answer box (b) fills \"no: a somatic mutation in a muscle cell is copied only by mitosis into that cell's descendants; it is not in her eggs, so her calves cannot inherit it (in animals)\". On \"germ line\" the plum branch pulses once (grey tag \"b05: somatic stays with you\"). Strip: \"who inherits it?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "ScribbleCircle",
+        "DrawPath",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"11 bases deleted, so 11 amino acids lost\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake in part a is saying eleven amino acids are lost.",
+      "narrationCue": "the classic mistake / aren't a whole number of codons",
+      "motionPurpose": "On the spoken cues: On \"aren't a whole number of codons\" the working line \"11 ÷ 3 = 3 remainder 2\" rings amber. A second crossed chip, unspoken: \"part b: yes, because the cow now carries the allele\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"11 bases deleted, so 11 amino acids lost\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"aren't a whole number of codons\" the working line \"11 ÷ 3 = 3 remainder 2\" rings amber. A second crossed chip, unspoken: \"part b: yes, because the cow now carries the allele\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the check strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue with the question number badge: \"a sequence → which strand? write the mRNA, compare codon by codon (Q1)\"; \"several codons in a row differ → align base by base; count: shifted? restored? (Q2, Q4)\"; \"a chromosome or karyotype → gene by gene; count the chromosomes (Q3)\"; \"any mutation → somatic or germ line? (Q4)\".",
+      "teachingReason": "Decision board: So here's how to start any mutation question.",
+      "narrationCue": "codon by codon / base by base / gene by gene / somatic or germ line",
+      "motionPurpose": "On the spoken cues: The new aid \"Align base by base, then read in threes.\" writes small under row 2. On \"Next\" a chip \"Next: how meiosis and fertilisation vary offspring\" slides in at the lower right (`m6-egg-sperm-dish-v1.png`, small). Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue with the question number badge: \"a sequence → which strand? write the mRNA, compare codon by codon (Q1)\"; \"several codons in a row differ → align base by base; count: shifted? restored? (Q2, Q4)\"; \"a chromosome or karyotype → gene by gene; count the chromosomes (Q3)\"; \"any mutation → somatic or germ line? (Q4)\". The new aid \"Align base by base, then read in threes.\" writes small under row 2. On \"Next\" a chip \"Next: how meiosis and fertilisation vary offspring\" slides in at the lower right (`m6-egg-sperm-dish-v1.png`, small). Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g01b-learning-review.md",
+      "sha256": "be2d25e214610f32795b78a96c3f7dbbf81d7af83b6e4e8dd43d456e51f30801"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g01b-claude-science-check.md",
+      "sha256": "bb98d7e0d79f564eb77f25c20de94f996314517647c2f7f8dcb8623441c8c6e0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

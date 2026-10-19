@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c03/measured/lesson.json",
+    "lessonSha256": "33e31eea76feceb9cfc794a3a180b81faa1c7270843d2af5786d9f11ccf28d72"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C02 (acid + hydroxide → salt + water; HCl, H₂SO₄, HNO₃, NaOH, KOH names and formulas; sulfuric acid gives two protons). C01 (H⁺(aq) means H₃O⁺). Year 11 Module 4: exothermic and endothermic, ΔH as the heat change at constant pressure, q = mcΔT, specific heat capacity of water 4.18 J g⁻¹ °C⁻¹, molar enthalpy ΔH = −q/n. Year 11 Module 2: n = cV with V in litres; limiting reagent; ions in solution. Year 11 Module 3: spectator ions and net ionic equations (also chem-m5-c13). Not assumed: strong and weak acids as defined terms (chem-m6-c05).",
+    "startsWith": "Observe the temperature change during neutralisation. The video opens: Here are two clear, colourless solutions, hydrochloric acid and sodium hydroxide, both at twenty one point five degrees. Pour them together in a foam cup, and there's nothing to see, no bubbles and no colour change. But the temperature climbs to twenty eight degrees.",
+    "stopsAfter": "explaining why neutralisation releases heat using the net ionic equation and spectator ions; explaining why ΔH is negative; defining the enthalpy of neutralisation per mole of water; explaining why acids and bases completely split into ions give about −57 kJ/mol whichever pair is used; calculating q with the total mass, the moles of water from the reactant that runs out (including a two-proton acid) and ΔH in kJ/mol; giving heat loss as the likely reason a result is less negative than −57; predicting the effect of scaling the volumes. No practical method or error table (chem-m6-p02), no weak-acid explanation (chem-m6-c09), no strength terms (chem-m6-c05).",
+    "nextLesson": "doing the experiment and reducing heat loss (route chem-m6-p02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c03.md"
+  ],
+  "teaching": {
+    "task": "Mixing an acid with a base warms the solution. How do you turn that temperature rise into the heat released per mole of water, and why does it come out negative?",
+    "causalExplanation": "(1) neutralisation warms a solution with nothing else to see: how much heat, and how to compare experiments? (1); (2) the only change is H⁺ + OH⁻ → H₂O; the spectator ions do nothing; the water has less chemical energy, so heat is released into the solution (2); (3) exothermic, so ΔH is negative; heat scales with amount, so compare per mole of water: the enthalpy of neutralisation (3); (4) same net reaction for acids and bases completely split into ions, so about −57 kJ/mol for any such pair; others differ, later video (4); (5) the calorimeter assumption and q = mcΔT, with the meaning of m, c and ΔT (5); (6) worked example 1: task, equation, givens, three steps (6); heat with the total mass (7); moles of water (8); divide, sign, compare with −57, heat loss (9); (7) worked example 2: unmatched amounts and a two-proton acid: count the ions, the one that runs out sets the water; leftover reactant releases no heat (10); but it is still warmed, so total mass; divide by moles of water, not acid (11); memory aid (12); two attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "one puzzle carries the video: mixing an acid with a base gives no fizz and no colour change, only warmth. The particle lens shows why (only H⁺ and OH⁻ react; the spectator ions do nothing), the negative sign and the per-mole-of-water definition follow from that, then q = mcΔT and ΔH = −q/n are staged one step per line in two worked examples, the second with unmatched amounts and a two-proton acid. Two exam calculations follow with brief feedback.",
+    "openingDecision": "Here are two clear, colourless solutions, hydrochloric acid and sodium hydroxide, both at twenty one point five degrees. Pour them together in a foam cup, and there's nothing to see, no bubbles and no colour change. But the temperature climbs to twenty eight degrees. So how much heat did the reaction give out, and how could you compare it with an experiment that used different amounts?",
+    "understandingCheck": "(A1) \"40.0 mL of 1.50 mol/L nitric acid is mixed with 50.0 mL of 1.00 mol/L potassium hydroxide solution in a polystyrene cup. The temperature rises from 21.0 °C to 28.4 °C. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. Calculate the molar enthalpy of neutralisation.\" New acid, new base, unequal volumes, base runs out (different from worked example 2, where the acid runs out). Crossed mistake: \"÷ 0.0600 mol (the acid): −46.4 kJ/mol\". (A2) \"A student repeats the experiment in which 50.0 mL of 1.00 mol/L HCl was mixed with 50.0 mL of 1.00 mol/L NaOH, this time using 100.0 mL of each solution at the same concentrations. Predict how the temperature rise and the calculated enthalpy of neutralisation would compare with the first experiment. Justify your answer.\" Crossed mistake: \"ΔT doubles to 13 °C\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)\" this video teaches what the measurement means and how to calculate it: why neutralisation warms the solution (the net ionic reaction, spectator ions), the sign of ΔH, the definition per mole of water, q = mcΔT with the total mass, moles of water from the reactant that runs out, and ΔH = −q/n. It names heat loss once as the likely reason a school result is less negative than −57 kJ/mol. The practical itself is chem-m6-p02 (setting up the calorimeter, the risk table, reducing heat loss, temperature-time extrapolation, assessing errors); the site's card 4 error table and cooling-curve extension move there. Why weak acids and bases give different values is chem-m6-c09 (route \"Why can weak-acid neutralisation release different heat?\"); the site's card 2 and worked example 2 are not used here (and carry errors, see corrections), and scene 4 names the difference only as a later video. Strong against weak as a concept is chem-m6-c05: scenes 2 and 4 say \"completely split into ions\", and scene 4 names the term once (\"called strong acids, and a later video explains them\"; Revision 2, project manager decision a). No weak-acid values are given. Applications are chem-m6-c04. No Hess's law, no bond enthalpies."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H⁺ teal token (C01); OH⁻ violet; spectator ions grey; water pale blue; heat warm orange ripples; the temperature readout amber digits. Board layout (constant): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached, \"assume\" lines in grey); the centre holds the lens or the working, one stage per line, earlier lines dimming and leaving once the next step no longer needs them; the calorimeter plate sits small at the right with its readout. Clutter rule: at most three text items bright at once (task, givens card, current line); every label fades when its sentence ends. Reuse: `m6-foam-cup-calorimeter-v1.png` (inspected 19 Oct: white lidded foam cup with a cutaway window showing clear liquid and a steel temperature probe through a bung in the lid; no readout, so a coded readout chip attaches to the probe top), `m6-beaker-v1.png` (twice, the two starting solutions, coded labels), `m5x-thermometer-cold-v1.png` is not used (blue liquid reads as \"cold\" and duplicates the probe). Handoff chip: the calorimeter plate small with a coded lid tick. No new plates needed. No human figures.",
+    "transitionPlan": "The calorimeter plate and its amber readout open the puzzle; the particle lens zooms in for the net ionic reaction and dims as the sign and per-mole cards write; the givens card enters at the left for each worked example while the centre working adds one stage per line and earlier lines dim and leave; each attempt clears the board and its feedback underlines the givens as they are used; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-beaker-v1.png` plates left and centre with coded labels \"hydrochloric acid\" and \"sodium hydroxide\", each with a small amber readout \"21.5 °C\".",
+      "teachingReason": "Hook (no fizz, but it warms): Here are two clear, colourless solutions, hydrochloric acid and sodium hydroxide, both at twenty one point five degrees.",
+      "narrationCue": "twenty eight degrees / different amounts",
+      "motionPurpose": "On the spoken cues: `m6-foam-cup-calorimeter-v1.png` right, lid lifted a little (coded offset). On \"Pour\" each beaker tilts along a coded arc over the cup (no hands) and the lid settles. On \"nothing to see\" a pen ring circles the cup window with a tag \"no bubbles, no colour change\" (fades). On \"twenty eight degrees\" the readout chip on the probe counts 21.5 to 28.0 over about 2 seconds and the cup glows faint warm orange. Heading",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-beaker-v1.png` plates left and centre with coded labels \"hydrochloric acid\" and \"sodium hydroxide\", each with a small amber readout \"21.5 °C\". `m6-foam-cup-calorimeter-v1.png` right, lid lifted a little (coded offset). On \"Pour\" each beaker tilts along a coded arc over the cup (no hands) and the lid settles. On \"nothing to see\" a pen ring circles the cup window with a tag \"no bubbles, no colour change\" (fades). On \"twenty eight degrees\" the readout chip on the probe counts 21.5 to 28.0 over about 2 seconds and the cup glows faint warm orange. Heading writes: \"No fizz. How much heat?\" On \"different amounts\" a second, larger cup outline appears beside the first with a \"?\" between them. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "why-warm",
+      "visualDecision": "new",
+      "visualReference": "the board clears to a large particle lens of the mixed solution.",
+      "teachingReason": "Why it gets warm (spectators and water): First, why does it warm up?",
+      "narrationCue": "hydrogen ions / hydroxide ions / spectator ions / water / released as heat",
+      "motionPurpose": "On the spoken cues: On \"hydrogen ions\" teal H⁺ tokens (each on a pale blue water, the C01 H₃O⁺ shape, small tag \"H⁺(aq) = H₃O⁺\") and grey Cl⁻ appear; on \"hydroxide ions\" grey Na⁺ and violet OH⁻ drift in. On \"spectator ions\" the Na⁺ and Cl⁻ turn grey with a tag \"spectators: unchanged\". On \"water\" an H⁺ and an OH⁻ meet and snap into a pale blue H₂O; the strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\". On \"released as heat\" orange ripples spread",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to a large particle lens of the mixed solution. On \"hydrogen ions\" teal H⁺ tokens (each on a pale blue water, the C01 H₃O⁺ shape, small tag \"H⁺(aq) = H₃O⁺\") and grey Cl⁻ appear; on \"hydroxide ions\" grey Na⁺ and violet OH⁻ drift in. On \"spectator ions\" the Na⁺ and Cl⁻ turn grey with a tag \"spectators: unchanged\". On \"water\" an H⁺ and an OH⁻ meet and snap into a pale blue H₂O; the strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\". On \"released as heat\" orange ripples spread from each new water into the surrounding solution; a small energy step beside the lens drops from \"H⁺ + OH⁻\" to \"H₂O\" with the gap tagged \"heat out\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "per-mole",
+      "visualDecision": "new",
+      "visualReference": "the energy step from scene 2 enlarges: on \"exothermic\" its label writes \"exothermic: heat to the surroundings\"; on \"negative\" the arrow down is labelled \"ΔH < 0\" and the lens dims.",
+      "teachingReason": "Exothermic, negative, per mole of water: A reaction that releases heat is exothermic.",
+      "narrationCue": "exothermic / negative / enthalpy of neutralisation / mole of water",
+      "motionPurpose": "On the spoken cues: On \"twice as much\" two cups side by side: the second has two water tokens for every one in the first and twice the orange ripples, each cup tagged \"heat\" and \"2 × heat\". On \"divide\" a fraction writes between them: \"heat ÷ mol of water = same\". On \"enthalpy of neutralisation\" the definition card writes: \"Enthalpy of neutralisation, ΔH: enthalpy change per mole of water formed (kJ/mol).\" The two cups fade.",
+      "motionRole": "explain",
+      "onScreenChange": "the energy step from scene 2 enlarges: on \"exothermic\" its label writes \"exothermic: heat to the surroundings\"; on \"negative\" the arrow down is labelled \"ΔH < 0\" and the lens dims. On \"twice as much\" two cups side by side: the second has two water tokens for every one in the first and twice the orange ripples, each cup tagged \"heat\" and \"2 × heat\". On \"divide\" a fraction writes between them: \"heat ÷ mol of water = same\". On \"enthalpy of neutralisation\" the definition card writes: \"Enthalpy of neutralisation, ΔH: enthalpy change per mole of water formed (kJ/mol).\" The two cups fade. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "same-reaction",
+      "visualDecision": "new",
+      "visualReference": "on \"strong acids\" a small tag writes under the HCl tile: \"strong acid: splits completely into ions (later video)\".",
+      "teachingReason": "The same reaction, about minus 57: Acids that split completely into ions like this are called strong acids, explained in a later video.",
+      "narrationCue": "strong acids / minus fifty seven kilojoules per mole / different values",
+      "motionPurpose": "On the spoken cues: Three formula pairs stack on the left, each lighting in turn: \"HCl + NaOH\", \"HNO₃ + KOH\", \"HNO₃ + NaOH\", each sending its spectators (grey) to the side and leaving the same teal-plus-violet pair; one bracket joins them to the single strip \"H⁺(aq) + OH⁻(aq) → H₂O(l)\", and the three pairs and the strong-acid tag dim. On \"minus fifty seven\" a value card pins: \"ΔH ≈ −57 kJ/mol\" with a small grey condition tag \"dilute;",
+      "motionRole": "explain",
+      "onScreenChange": "on \"strong acids\" a small tag writes under the HCl tile: \"strong acid: splits completely into ions (later video)\". Three formula pairs stack on the left, each lighting in turn: \"HCl + NaOH\", \"HNO₃ + KOH\", \"HNO₃ + NaOH\", each sending its spectators (grey) to the side and leaving the same teal-plus-violet pair; one bracket joins them to the single strip \"H⁺(aq) + OH⁻(aq) → H₂O(l)\", and the three pairs and the strong-acid tag dim. On \"minus fifty seven\" a value card pins: \"ΔH ≈ −57 kJ/mol\" with a small grey condition tag \"dilute; no precipitate\". On \"different values\" a chip \"−57 kJ/mol for every acid and base\" fades in and is crossed (caption \"partly split acids differ: later video\"). Revision 2: H₂SO₄ is not in this stack (its second hydrogen ion comes from HSO₄⁻, which is only partly split; author note f), and the separate dashed chip is merged into the crossed chip's caption to keep three bright items. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "calorimeter",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-foam-cup-calorimeter-v1.png` returns large; on \"calorimeter\" the word and its meaning write under it (\"insulated cup for measuring heat\").",
+      "teachingReason": "The calorimeter and q = mcΔT: To measure it, mix the solutions in a lidded polystyrene foam cup, called a calorimeter.",
+      "narrationCue": "calorimeter / m / c / Delta T",
+      "motionPurpose": "On the spoken cues: On \"assume\" the orange ripples stay inside the cup outline with a tag \"assume: all heat warms the solution\". The equation writes alone at the top: \"q = m c ΔT\". Each symbol lights and its meaning writes under it on its cue, one at a time, the previous meaning dimming: on \"m\" \"m = mass of all the solution (g); 1 mL ≈ 1 g\"; on \"c\" \"c = 4.18 J g⁻¹ °C⁻¹ (treat as water)\"; on \"Delta T\" \"ΔT = T(final) − T(initial)\". The",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-foam-cup-calorimeter-v1.png` returns large; on \"calorimeter\" the word and its meaning write under it (\"insulated cup for measuring heat\"). On \"assume\" the orange ripples stay inside the cup outline with a tag \"assume: all heat warms the solution\". The equation writes alone at the top: \"q = m c ΔT\". Each symbol lights and its meaning writes under it on its cue, one at a time, the previous meaning dimming: on \"m\" \"m = mass of all the solution (g); 1 mL ≈ 1 g\"; on \"c\" \"c = 4.18 J g⁻¹ °C⁻¹ (treat as water)\"; on \"Delta T\" \"ΔT = T(final) − T(initial)\". The three meanings then sit together small under the equation. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-givens",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 1: the task and givens: Here's the hook experiment.",
+      "narrationCue": "enthalpy of neutralisation / heat / moles of water",
+      "motionPurpose": "On the spoken cues: Task line: \"Find ΔH of neutralisation\". Equation strip: \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens card, grouped with units, each group writing on its cue: \"HCl: 50.0 mL, 1.00 mol/L\" | \"NaOH: 50.0 mL, 1.00 mol/L\" | \"T: 21.5 °C → 28.0 °C\" | grey \"assume: 1.00 g/mL; c = 4.18 J g⁻¹ °C⁻¹\". On \"heat\", \"moles of water\" and \"divide\" a three-step ladder writes small at the right: \"1 q = mcΔT\", \"2 n(H₂O)\", \"3 ΔH = −q ÷",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find ΔH of neutralisation\". Equation strip: \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens card, grouped with units, each group writing on its cue: \"HCl: 50.0 mL, 1.00 mol/L\" | \"NaOH: 50.0 mL, 1.00 mol/L\" | \"T: 21.5 °C → 28.0 °C\" | grey \"assume: 1.00 g/mL; c = 4.18 J g⁻¹ °C⁻¹\". On \"heat\", \"moles of water\" and \"divide\" a three-step ladder writes small at the right: \"1 q = mcΔT\", \"2 n(H₂O)\", \"3 ΔH = −q ÷ n\". As the sentence ends the ladder collapses into one small step chip under the task line (Revision 2: in scenes 7 to 9 only the current step shows, \"Step 1 of 3: q\", \"Step 2 of 3: n(H₂O)\", \"Step 3 of 3: ΔH\", so the ladder does not become a fourth bright text item). The calorimeter plate sits small with readout \"28.0 °C\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-heat",
+      "visualDecision": "new",
+      "visualReference": "the step chip reads \"Step 1 of 3: q\".",
+      "teachingReason": "Worked example 1, step 1: the heat: Step one, the heat.",
+      "narrationCue": "one hundred grams / six point five degrees / two thousand seven hundred and seventeen joules",
+      "motionPurpose": "On the spoken cues: On \"one hundred grams\" both volumes in the givens card are underlined and the line writes: \"m = 50.0 + 50.0 = 100.0 g\"; on \"everything in the cup\" a chip \"m = 50.0 g\" fades in and is crossed (caption \"all the solution is warmed\"), then the m line dims. On \"six point five degrees\" the temperatures are underlined; \"ΔT = 28.0 − 21.5 = 6.5 °C\". On \"two thousand seven hundred and seventeen joules\": \"q = 100.0 × 4.18 ×",
+      "motionRole": "explain",
+      "onScreenChange": "the step chip reads \"Step 1 of 3: q\". On \"one hundred grams\" both volumes in the givens card are underlined and the line writes: \"m = 50.0 + 50.0 = 100.0 g\"; on \"everything in the cup\" a chip \"m = 50.0 g\" fades in and is crossed (caption \"all the solution is warmed\"), then the m line dims. On \"six point five degrees\" the temperatures are underlined; \"ΔT = 28.0 − 21.5 = 6.5 °C\". On \"two thousand seven hundred and seventeen joules\": \"q = 100.0 × 4.18 × 6.5 = 2717 J = 2.717 kJ\" with a small grey tag \"keep the digits; round at the end\". The ΔT line dims; the q result shrinks to a kept chip \"q = 2.717 kJ\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-moles",
+      "visualDecision": "new",
+      "visualReference": "the step chip reads \"Step 2 of 3: n(H₂O)\".",
+      "teachingReason": "Worked example 1, step 2: the moles of water: Step two, the moles of water.",
+      "narrationCue": "zero point zero five zero zero moles / zero point zero five zero zero moles of water",
+      "motionPurpose": "On the spoken cues: The line \"n = c × V (V in L)\" writes with a small grey tag \"50.0 mL = 0.0500 L\", then on \"zero point zero five zero zero moles\" the HCl group is underlined and \"n(H⁺) = 1.00 × 0.0500 = 0.0500 mol\" writes; the NaOH line \"n(OH⁻) = 1.00 × 0.0500 = 0.0500 mol\" writes under it. A small lens shows one teal and one violet token joining to one water, tagged \"1 : 1\". On \"moles of water\" the result chip pins: \"n(H₂O) = 0.0500",
+      "motionRole": "explain",
+      "onScreenChange": "the step chip reads \"Step 2 of 3: n(H₂O)\". The line \"n = c × V (V in L)\" writes with a small grey tag \"50.0 mL = 0.0500 L\", then on \"zero point zero five zero zero moles\" the HCl group is underlined and \"n(H⁺) = 1.00 × 0.0500 = 0.0500 mol\" writes; the NaOH line \"n(OH⁻) = 1.00 × 0.0500 = 0.0500 mol\" writes under it. A small lens shows one teal and one violet token joining to one water, tagged \"1 : 1\". On \"moles of water\" the result chip pins: \"n(H₂O) = 0.0500 mol\". The two n lines dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-enthalpy",
+      "visualDecision": "new",
+      "visualReference": "the step chip reads \"Step 3 of 3: ΔH\"; the kept chips \"q = 2.717 kJ\" and \"n(H₂O) = 0.0500 mol\" slide into the line \"q ÷ n = 2.717 kJ ÷ 0.0500 mol = 54.34 kJ/mol\" and leave.",
+      "teachingReason": "Worked example 1, step 3: divide, sign and compare: Step three, divide and add the sign.",
+      "narrationCue": "two significant figures / rose / minus fifty four kilojoules per mole / heat loss",
+      "motionPurpose": "On the spoken cues: On \"two significant figures\" a small chip \"ΔT = 6.5 °C: 2 s.f.\" writes with a pen ring on \"6.5\", and \"54.34\" rounds to \"54\". On \"rose\" the readout's up arrow pulses and the minus sign writes in teal. Answer chip pins: \"ΔH = −54 kJ/mol\"; the s.f. chip and the line dim. On \"minus fifty seven\" a short number line draws: −57 and −54 marked, gap bracketed \"less negative\". On \"heat loss\" the calorimeter plate enlarges a",
+      "motionRole": "explain",
+      "onScreenChange": "the step chip reads \"Step 3 of 3: ΔH\"; the kept chips \"q = 2.717 kJ\" and \"n(H₂O) = 0.0500 mol\" slide into the line \"q ÷ n = 2.717 kJ ÷ 0.0500 mol = 54.34 kJ/mol\" and leave. On \"two significant figures\" a small chip \"ΔT = 6.5 °C: 2 s.f.\" writes with a pen ring on \"6.5\", and \"54.34\" rounds to \"54\". On \"rose\" the readout's up arrow pulses and the minus sign writes in teal. Answer chip pins: \"ΔH = −54 kJ/mol\"; the s.f. chip and the line dim. On \"minus fifty seven\" a short number line draws: −57 and −54 marked, gap bracketed \"less negative\". On \"heat loss\" the calorimeter plate enlarges a little and small orange arrows leave through the wall and the lid gap; tag \"heat lost, so ΔT too small\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we2-count",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 2: count the ions that react: Twenty five millilitres of one mole per litre sulfuric acid is mixed with seventy five millilitres of one mole per litre sodium hydroxide, warming from twenty point zero to twenty six point six degrees.",
+      "narrationCue": "sulfuric acid / two / run out first / releases no heat",
+      "motionPurpose": "On the spoken cues: Task line: \"Find ΔH of neutralisation\". Strip: \"H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)\". Givens card: \"H₂SO₄: 25.0 mL, 1.00 mol/L\" | \"NaOH: 75.0 mL, 1.00 mol/L\" | \"T: 20.0 °C → 26.6 °C\" | grey \"assume: 1.00 g/mL; c = 4.18 J g⁻¹ °C⁻¹\". On \"two\" the subscript 2 in H₂SO₄ on the strip gets a pen ring and two teal tokens drop from it (no separate lens; Revision 2). Lines write one per cue, each group in the givens",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find ΔH of neutralisation\". Strip: \"H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)\". Givens card: \"H₂SO₄: 25.0 mL, 1.00 mol/L\" | \"NaOH: 75.0 mL, 1.00 mol/L\" | \"T: 20.0 °C → 26.6 °C\" | grey \"assume: 1.00 g/mL; c = 4.18 J g⁻¹ °C⁻¹\". On \"two\" the subscript 2 in H₂SO₄ on the strip gets a pen ring and two teal tokens drop from it (no separate lens; Revision 2). Lines write one per cue, each group in the givens card lighting while it is used and dimming after: \"n(H₂SO₄) = 1.00 × 0.0250 = 0.0250 mol\", \"n(H⁺) = 2 × 0.0250 = 0.0500 mol\", \"n(OH⁻) = 1.00 × 0.0750 = 0.0750 mol\". On \"run out first\" the n lines dim and fold into a two-bar comparison labelled with their values: teal bar \"H⁺ 0.0500 mol\", violet bar \"OH⁻ 0.0750 mol\"; the teal bar empties as the same length of violet empties, leaving a violet stub \"0.0250 mol OH⁻ left over\"; chip pins \"n(H₂O) = 0.0500 mol (H⁺ runs out first)\". On \"releases no heat\" the stub is tagged \"no reaction, no heat\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "we2-enthalpy",
+      "visualDecision": "new",
+      "visualReference": "the bars shrink to a small thumbnail beside the kept chip \"n(H₂O) = 0.0500 mol\".",
+      "teachingReason": "Worked example 2: the heat and ΔH: But the leftover solution still gets warmed, so the mass is all of it, one hundred grams.",
+      "narrationCue": "one hundred grams / water / minus fifty five kilojoules per mole / double",
+      "motionPurpose": "On the spoken cues: On \"one hundred grams\" both volumes are underlined and \"m = 25.0 + 75.0 = 100.0 g\" writes, the violet stub glowing faint orange (tag \"still warmed\"), then the m line dims. \"ΔT = 26.6 − 20.0 = 6.6 °C\"; \"q = 100.0 × 4.18 × 6.6 = 2758.8 J = 2.759 kJ\"; the ΔT line dims. On \"water\" the chip \"n(H₂O) = 0.0500 mol\" pulses. Line: \"ΔH = − 2.759 kJ ÷ 0.0500 mol = −55.18 kJ/mol\"; answer chip \"ΔH = −55 kJ/mol (2 s.f.)\" pins. On",
+      "motionRole": "explain",
+      "onScreenChange": "the bars shrink to a small thumbnail beside the kept chip \"n(H₂O) = 0.0500 mol\". On \"one hundred grams\" both volumes are underlined and \"m = 25.0 + 75.0 = 100.0 g\" writes, the violet stub glowing faint orange (tag \"still warmed\"), then the m line dims. \"ΔT = 26.6 − 20.0 = 6.6 °C\"; \"q = 100.0 × 4.18 × 6.6 = 2758.8 J = 2.759 kJ\"; the ΔT line dims. On \"water\" the chip \"n(H₂O) = 0.0500 mol\" pulses. Line: \"ΔH = − 2.759 kJ ÷ 0.0500 mol = −55.18 kJ/mol\"; answer chip \"ΔH = −55 kJ/mol (2 s.f.)\" pins. On \"double\" a chip \"÷ 0.0250 mol acid: −110 kJ/mol\" fades in and is crossed (caption \"per mole of water, not acid\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "Per mole of water, not per mole of acid / mass of everything in the cup / temperature up, delta H negative",
+      "motionPurpose": "On the spoken cues: The first aid writes large and handwritten: \"Per mole of water, not per mole of acid.\" Under it a small two-bar thumbnail (teal shorter than violet, \"runs out first sets the water\"). Second line: \"Mass of everything in the cup.\" with a small cup outline filled to the brim. Third line: \"Temperature up, ΔH negative.\" with an amber up arrow beside a teal minus sign (Revision 2: no separate condition tag; the narration",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The first aid writes large and handwritten: \"Per mole of water, not per mole of acid.\" Under it a small two-bar thumbnail (teal shorter than violet, \"runs out first sets the water\"). Second line: \"Mass of everything in the cup.\" with a small cup outline filled to the brim. Third line: \"Temperature up, ΔH negative.\" with an amber up arrow beside a teal minus sign (Revision 2: no separate condition tag; the narration carries \"q is positive, then add the minus sign\", keeping three text lines). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Forty point zero millilitres of one",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"40.0 mL of 1.50 mol/L nitric acid is mixed with 50.0 mL of 1.00 mol/L potassium hydroxide solution in a polystyrene cup. The temperature rises from 21.0 °C to 28.4 °C. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. Calculate the molar enthalpy of neutralisation.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ladder, no aid, no equation strip.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "zero point zero six zero zero / zero point zero five zero zero / ninety grams / minus fifty six kilojoules per mole / excess",
+      "motionPurpose": "On the spoken cues: On \"zero point zero six zero zero\" \"40.0 mL of 1.50 mol/L nitric acid\" is underlined and \"n(H⁺) = 1.50 × 0.0400 = 0.0600 mol\" writes; on \"zero point zero five zero zero\" \"50.0 mL of 1.00 mol/L potassium hydroxide\" is underlined, \"n(OH⁻) = 0.0500 mol\", the two bars show violet emptying first, chip \"n(H₂O) = 0.0500 mol\". On \"ninety grams\" both volumes are underlined again, \"m = 90.0 g\"; the temperatures are",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"zero point zero six zero zero\" \"40.0 mL of 1.50 mol/L nitric acid\" is underlined and \"n(H⁺) = 1.50 × 0.0400 = 0.0600 mol\" writes; on \"zero point zero five zero zero\" \"50.0 mL of 1.00 mol/L potassium hydroxide\" is underlined, \"n(OH⁻) = 0.0500 mol\", the two bars show violet emptying first, chip \"n(H₂O) = 0.0500 mol\". On \"ninety grams\" both volumes are underlined again, \"m = 90.0 g\"; the temperatures are underlined, \"ΔT = 7.4 °C\"; \"q = 90.0 × 4.18 × 7.4 = 2783.9 J\". The n lines and the m and ΔT lines dim as each next line writes. Line: \"ΔH = −2.784 kJ ÷ 0.0500 mol = −55.68 kJ/mol\"; answer chip \"ΔH = −56 kJ/mol (2 s.f., as ΔT = 7.4 °C)\". On \"excess\" a chip \"÷ 0.0600 mol: −46 kJ/mol\" fades in and is crossed (caption \"use the reactant that runs out\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"A student repeats the experiment in which 50.0 mL of 1.00 mol/L HCl was mixed with 50.0 mL of 1.00 mol/L NaOH, this time using 100.0 mL of each solution at the same concentrations.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A student repeats the hook experiment,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"A student repeats the experiment in which 50.0 mL of 1.00 mol/L HCl was mixed with 50.0 mL of 1.00 mol/L NaOH, this time using 100.0 mL of each solution at the same concentrations. Predict how the temperature rise and the calculated enthalpy of neutralisation would compare with the first experiment. Justify your answer.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no cups, no earlier results.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"about the same\" \"100.0 mL of each solution\" in the question is underlined and verdict chip \"ΔT ≈ same (6.5 °C); ΔH ≈ same (−54 kJ/mol)\" pins.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "about the same / twice the heat / twice the mass / per mole of water",
+      "motionPurpose": "On the spoken cues: On \"twice the heat\" two cups side by side, the second twice the size with twice the water tokens and orange ripples (\"2 × q\"); on \"twice the mass\" the second cup's fill is bracketed \"2 × m\", and a fraction writes \"ΔT = q ÷ (m c): 2q ÷ 2m = same\". On \"per mole of water\" \"2q ÷ 2n = same\" writes under it. On \"classic slip\" a chip \"ΔT doubles to 13 °C\" fades in and is crossed (caption \"twice the mass to warm\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"about the same\" \"100.0 mL of each solution\" in the question is underlined and verdict chip \"ΔT ≈ same (6.5 °C); ΔH ≈ same (−54 kJ/mol)\" pins. On \"twice the heat\" two cups side by side, the second twice the size with twice the water tokens and orange ripples (\"2 × q\"); on \"twice the mass\" the second cup's fill is bracketed \"2 × m\", and a fraction writes \"ΔT = q ÷ (m c): 2q ÷ 2m = same\". On \"per mole of water\" \"2q ÷ 2n = same\" writes under it. On \"classic slip\" a chip \"ΔT doubles to 13 °C\" fades in and is crossed (caption \"twice the mass to warm\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Moles of H⁺ and OH⁻: the smaller sets n(H₂O).\"",
+      "teachingReason": "Decision rule and handoff: So for any neutralisation heat question: the smaller of the hydrogen ion and hydroxide ion moles sets the moles of water.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 q = mcΔT with the mass of all the solution.\" \"3 ΔH = −q ÷ n(H₂O), in kJ/mol.\" \"4 Temperature up: ΔH negative.\" On \"Next\" a chip \"Next: measuring the enthalpy of neutralisation in the lab\" appears with `m6-foam-cup-calorimeter-v1.png` small and the three heat-loss arrows from scene 9.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Moles of H⁺ and OH⁻: the smaller sets n(H₂O).\" \"2 q = mcΔT with the mass of all the solution.\" \"3 ΔH = −q ÷ n(H₂O), in kJ/mol.\" \"4 Temperature up: ΔH negative.\" On \"Next\" a chip \"Next: measuring the enthalpy of neutralisation in the lab\" appears with `m6-foam-cup-calorimeter-v1.png` small and the three heat-loss arrows from scene 9. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c03-learning-review.md",
+      "sha256": "fb551eaa6341113b49d886b432229987e61a3fb89656aca4006b7c126045ae4e"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c03-claude-science-check.md",
+      "sha256": "1e898741340b51c929f8bb2c2c65314d908190060854fb98c4618fcc9b352b83"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

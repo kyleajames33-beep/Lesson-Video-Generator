@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B07-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b07/lesson.json",
+  "lessonSha256": "f64d96e8d905e0516627a63bc00b52219561e76c7ea56f17dd82c3781687a17b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b07/lesson.production-brief.json",
+    "sha256": "7f1512169f65cec1511580caebfcaa8d621d35a216f14a7fbfd80e91e40e28e3"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1977, a drought hit Daphne Major, a tiny island in the Galápagos. The small, soft seeds ran out, and most of the medium ground finches died. The survivors tended to have deeper beaks, strong enough to crack the big, hard seeds that were left. Beak depth is largely inherited, so their chicks hatched with deeper beaks on average, too. No new mutation was needed, because the variation in beaks was already there. So where does all the variation in each new generation come from?",
+      "hash": "812b38baa800",
+      "textSha256": "812b38baa800af9ebab46f71395522b26c1a3d5fffd23f8a4f2a1f500f43ab12",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/hook.812b38baa800.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/hook.812b38baa800.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/hook.812b38baa800.generation.json",
+      "plannedRequestSha256": "5eb14969acccd5031e15ba82981892e1e98c92fdb2030889a924638fa2aacca7"
+    },
+    {
+      "id": "three-jobs",
+      "parentSceneId": "three-jobs",
+      "text": "Three processes produce it, and you've met them all. A mutation changes the base sequence, so it's the only one that can make a brand-new allele. Meiosis shuffles the alleles a parent already has into gametes that differ, by crossing over and independent assortment. And fertilisation joins one gamete from each parent, at random. So how do the three fit together? Let's follow one new allele, from the moment it appears.",
+      "hash": "80e772900e6e",
+      "textSha256": "80e772900e6e79df3818cc404bee2108a2e6d7612ef945f14679042ddb9bc962",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/three-jobs.80e772900e6e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/three-jobs.80e772900e6e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/three-jobs.80e772900e6e.generation.json",
+      "plannedRequestSha256": "747ae5373081480903c578981ee6db385dba3344946cd232074da797270df6d8"
+    },
+    {
+      "id": "half-the-gametes",
+      "parentSceneId": "half-the-gametes",
+      "text": "Suppose one sperm carries a mutation in a beak gene, and it fertilises an egg. The chick that grows has the new allele in every cell, because every cell is copied from that first one. It sits on one chromosome of a pair, with the original allele on the partner chromosome. When this bird makes its own gametes, meiosis one separates the partners. So about half its gametes get the new allele, and half get the original.",
+      "hash": "8d832e771a82",
+      "textSha256": "8d832e771a82c73652550a9955b011cfb3e197f7645f1208bbe42afdb42a586e",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/half-the-gametes.8d832e771a82.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/half-the-gametes.8d832e771a82.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/half-the-gametes.8d832e771a82.generation.json",
+      "plannedRequestSha256": "11be6ef2e62fc1219fa02d013afa23717ac1f22ad5106a3539b18c8b7b732873"
+    },
+    {
+      "id": "new-combinations",
+      "parentSceneId": "new-combinations",
+      "text": "Meiosis doesn't just pass the new allele on, it gives it new neighbours. In crossing over, partner chromosomes swap matching pieces, so the new allele can end up beside different alleles of nearby genes. Independent assortment then sends its chromosome into a gamete with either partner of every other pair. So one bird spreads its new allele across many combinations, and none of that makes another new allele.",
+      "hash": "e39dd1a78976",
+      "textSha256": "e39dd1a789761bac3050bbce54fc83490860385ccad87eaaeb6916205a0d903d",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/new-combinations.e39dd1a78976.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/new-combinations.e39dd1a78976.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/new-combinations.e39dd1a78976.generation.json",
+      "plannedRequestSha256": "6704d818a76c3d907d1fa75039a8e58ba3ee9760da28fb2222127d6276a51f5a"
+    },
+    {
+      "id": "fertilisation",
+      "parentSceneId": "fertilisation",
+      "text": "Then fertilisation joins each gamete with one from another bird. If the carrier mates with a bird that lacks the new allele, no chick can get two copies, but the allele spreads to some of its chicks. Later, when two of those carriers mate, a chick can inherit two copies, with a one in four chance each time. So if the new allele is recessive, its effect stays hidden until two carriers' gametes meet. Fertilisation has made a genotype that never existed before, from alleles that did.",
+      "hash": "4e3cb24d9cb3",
+      "textSha256": "4e3cb24d9cb31f500cef7d4c8ab36b5bee1445d13ce39f6162aa112b9ea7149e",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/fertilisation.4e3cb24d9cb3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/fertilisation.4e3cb24d9cb3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/fertilisation.4e3cb24d9cb3.generation.json",
+      "plannedRequestSha256": "b26808ce2065a686699403254219c14796a6263d5509b3a69a2dd7eadf0ef278"
+    },
+    {
+      "id": "one-generation",
+      "parentSceneId": "one-generation",
+      "text": "So how much does each process add in one generation? In humans, scientists have counted by reading the DNA of parents and their children. Each child carries, on average, about sixty to seventy new mutations, out of roughly six billion bases. Meanwhile, each parent has two different versions at millions of places in their DNA. Meiosis can sort them into more than eight million chromosome combinations, before crossing over adds more, and fertilisation multiplies the two parents' choices together. So when two siblings differ, almost all of those differences were already in their parents, reshuffled.",
+      "hash": "02fc5276baf6",
+      "textSha256": "02fc5276baf625a4f47ebe4b10a7dfb5158709802b522cbf21e1034cc4878c75",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/one-generation.02fc5276baf6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/one-generation.02fc5276baf6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/one-generation.02fc5276baf6.generation.json",
+      "plannedRequestSha256": "ff4b23b46263527540a3eeb9c02f17c00be42dbac3e661ce46872155f999103d"
+    },
+    {
+      "id": "ultimate-source",
+      "parentSceneId": "ultimate-source",
+      "text": "But remember from Module five: every allele being reshuffled first appeared as a mutation, at some time, in some ancestor. That's why mutation is called the ultimate source of variation, and meiosis and fertilisation the immediate source. If mutation stopped, meiosis and fertilisation would keep dealing new combinations, but from a fixed set of alleles. Any allele the population lost, by chance or selection, would never be made again. The finches' beak alleles were made by mutations long before the drought.",
+      "hash": "1312f32f18f3",
+      "textSha256": "1312f32f18f3cb05cfed4d52d6d34bfe842be36b9078a1aab3e52f7f0cab10f0",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/ultimate-source.1312f32f18f3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/ultimate-source.1312f32f18f3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/ultimate-source.1312f32f18f3.generation.json",
+      "plannedRequestSha256": "f8f6d7f665aa1e040e28e250e6cbb8ab068f4100f72f4fd505671bfc5c32e0c5"
+    },
+    {
+      "id": "asexual",
+      "parentSceneId": "asexual",
+      "text": "What about organisms that reproduce without meiosis or fertilisation? A bacterium copies its DNA and splits in two, so its offspring are clones, except for any new mutations. With huge numbers and fast division, mutation does much more of the work here. Bacteria can also pick up genes from other bacteria, for example on plasmids. So in bacteria, which reproduce asexually, new variation comes from mutation and gene transfer, not from meiosis and fertilisation.",
+      "hash": "64d8a201021f",
+      "textSha256": "64d8a201021ff1fc3e06f6c26fe96ac177b9511c9ad2992fdc0a820618a03ad5",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/asexual.64d8a201021f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/asexual.64d8a201021f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/asexual.64d8a201021f.generation.json",
+      "plannedRequestSha256": "0fb1ab060fbf1c383cac002fda6e25cc311ea38c4948cb576f2a40013432623c"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Here's a way to hold it, with the deck of cards from Module five. Mutation prints a new card. Meiosis deals each gamete a different hand, and fertilisation puts two hands together. In one generation, almost all the variety comes from the dealing. But over a long time, every card was once printed new.",
+      "hash": "9baf6b94e0e3",
+      "textSha256": "9baf6b94e0e35cd74ab42806d91a5b8921d44825176d705384bc1c39a2c19ae8",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/memory.9baf6b94e0e3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/memory.9baf6b94e0e3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/memory.9baf6b94e0e3.generation.json",
+      "plannedRequestSha256": "2890117b50a8ce9f65c99d54ee1971bd83c4ee377f9b4d71ed2dcdf0659e67a8"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. A mutation in one sperm creates a new recessive allele, n, of a gene on a numbered chromosome. That sperm fertilises an egg, and the animal that develops has one copy of n in every cell. It later mates with an animal that has no copies of n. What fraction of their offspring would you expect to carry n? Then explain how an animal with two copies of n could arise in a later generation. Pause here to answer.",
+      "hash": "36dd623b9e78",
+      "textSha256": "36dd623b9e785e9b236dfe8cd37efaf5e6de20b9ecac8a1b71815aa839a13e67",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/attempt.36dd623b9e78.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/attempt.36dd623b9e78.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/attempt.36dd623b9e78.generation.json",
+      "plannedRequestSha256": "06eed60476887d41636ca71383226bb7b8bf7d34f68f7cc3ea03441cf164db3a"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The carrier is N n. Meiosis separates its two partner chromosomes, so half its gametes carry n. So about half the offspring carry one copy, and none has two. Later, if two carriers mate, each passes n in half its gametes, and fertilisation joins two n gametes in about one offspring in four. Saying every offspring inherits n, because the parent has it, is the classic mistake.",
+      "hash": "a5a1360a1008",
+      "textSha256": "a5a1360a1008a6e85d465b16c6f3060678edde092ea315b03a16e793ed9466e8",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/feedback-one.a5a1360a1008.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/feedback-one.a5a1360a1008.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/feedback-one.a5a1360a1008.generation.json",
+      "plannedRequestSha256": "db043f7e7252a086fcc7a7fbfdd514c2eb456cc974f93b1a19a9091e9ff3c88b"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A student claims, \"Meiosis and fertilisation produce almost all the genetic variation in each generation, so mutation isn't important.\" Evaluate this claim. Pause here to answer.",
+      "hash": "5ee5ff9c4f8b",
+      "textSha256": "5ee5ff9c4f8ba6daa9e07d5ddc7599a8a57ffce2bfb1b48598d11f584db0a335",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/attempt-two.5ee5ff9c4f8b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/attempt-two.5ee5ff9c4f8b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/attempt-two.5ee5ff9c4f8b.generation.json",
+      "plannedRequestSha256": "a83e51f7f5b14e72b8c9eb082453a2c61966cef580ad19034edc0c2454b6005a"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The first part is right. In one generation, nearly all the differences between offspring come from reshuffling. But the conclusion is wrong. Reshuffling only recombines alleles that mutation made, so mutation is the ultimate source, and it matters even more in asexual organisms. So the claim is partly correct. Saying crossing over makes new alleles is the classic mistake.",
+      "hash": "fa312b13bcd6",
+      "textSha256": "fa312b13bcd6895aa29deb9ef4a6de976fae5da979eb5c861002135503eb8243",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/feedback-two.fa312b13bcd6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/feedback-two.fa312b13bcd6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/feedback-two.fa312b13bcd6.generation.json",
+      "plannedRequestSha256": "832a8a384ebf156f659e143efc8036284d367fa1e6a8e138a140cacfa80283aa"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question asks where variation came from, sort each change. Is it a brand-new allele? That's mutation. Is it a new combination of existing alleles? Then say which process: crossing over within a chromosome, independent assortment between chromosomes, or fertilisation joining two parents' gametes. Next, how mutation, gene flow and drift change the alleles of a whole population.",
+      "hash": "62af6877902b",
+      "textSha256": "62af6877902bc245a51331708637b13d2f645eb228e8348e1f39a8f2edc3e40d",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/decision-rule.62af6877902b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/decision-rule.62af6877902b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/decision-rule.62af6877902b.generation.json",
+      "plannedRequestSha256": "9b3474f98c68856ff85c7f50db9a1d789c396eaf21b3fe866059679a6d0b0aea"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B07-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

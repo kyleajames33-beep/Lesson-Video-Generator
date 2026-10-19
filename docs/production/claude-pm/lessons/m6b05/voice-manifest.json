@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B05-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b05/lesson.json",
+  "lessonSha256": "64be0487e3fd5228203eed70a9d1cd28db1d82c3a061b69dfee083b692635d34",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b05/lesson.production-brief.json",
+    "sha256": "cf1c5bd6bb5806b40cead086f763e301b7410e12e0ab8ea8e1b9ebcd79ce4476"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 2013, Angelina Jolie said she carried a mutation in a gene called B R C A one. She'd inherited it, so it was in every cell of her body, and her doctors estimated her breast cancer risk at eighty-seven per cent. But the same change can also happen later in life, in a single breast cell, and then no child can inherit it. So why does it matter which cell a mutation is in, and which part of the DNA?",
+      "hash": "a42aa8f7802d",
+      "textSha256": "a42aa8f7802d3f18a634e87d4bd415f186988f52a5e30ce21dd38c4c950ed4c3",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/hook.a42aa8f7802d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/hook.a42aa8f7802d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/hook.a42aa8f7802d.generation.json",
+      "plannedRequestSha256": "bd80b3bc548d12df2c8a20418b8dac18da4dd09384d2092120fa6d118ee4d106"
+    },
+    {
+      "id": "two-kinds",
+      "parentSceneId": "two-kinds",
+      "text": "As far as mutations go, your body has two kinds of cells. Most are somatic cells, body cells like skin, muscle and liver. A few are germ-line cells, the cells that make eggs or sperm, and the gametes themselves.",
+      "hash": "49edca9c0b07",
+      "textSha256": "49edca9c0b0750f3bda5194f95863749091a0fb840e2d88d111207ab36d120d4",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/two-kinds.49edca9c0b07.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/two-kinds.49edca9c0b07.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/two-kinds.49edca9c0b07.generation.json",
+      "plannedRequestSha256": "dafa020c35e8bfeb3c3730f86b829e39b8417c21493bec85981e9d5e3625b94e"
+    },
+    {
+      "id": "somatic",
+      "parentSceneId": "somatic",
+      "text": "Say a mutation happens in one skin cell. That cell divides by mitosis, both daughter cells copy the change, and so on. So it ends up in a patch, while the rest of the body stays normal. That's a somatic mutation, and the earlier it happens, the bigger the patch. If the change hits a gene that controls cell division, and more mutations follow, the patch can keep dividing, and become a cancer. That's how UV causes most skin cancers.",
+      "hash": "2d0f1ebbee52",
+      "textSha256": "2d0f1ebbee52e806b11e4194328a46ab388aa6f1299455c6c661eb20c5d15ce8",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/somatic.2d0f1ebbee52.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/somatic.2d0f1ebbee52.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/somatic.2d0f1ebbee52.generation.json",
+      "plannedRequestSha256": "364d85e9fb691038322f9f13a9c05be3d2c10cffd629daa2db1f75fead32a44b"
+    },
+    {
+      "id": "germ-line",
+      "parentSceneId": "germ-line",
+      "text": "A germ-line mutation is different. Suppose it's in a cell that makes sperm. A sperm carrying it fertilises an egg, so the zygote has it, and so does every cell copied from the zygote. That includes the new animal's own germ cells, so it can be passed on again, and enter the gene pool. The parent's body isn't affected, and the offspring may show nothing, if the new allele is recessive.",
+      "hash": "fc7342d3f738",
+      "textSha256": "fc7342d3f738aa94d023e869f0d858586e65d6fd194291c41d8fd2ac718d9cf4",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/germ-line.fc7342d3f738.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/germ-line.fc7342d3f738.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/germ-line.fc7342d3f738.generation.json",
+      "plannedRequestSha256": "b394d1db971ee512ccd5783fa27c5905d7efc8b533f5b905529a5cbcb45c60de"
+    },
+    {
+      "id": "distinction",
+      "parentSceneId": "distinction",
+      "text": "So that's Jolie's case. Her inherited copy was in every cell, including those that make eggs, so each egg had a one in two chance of carrying it. A somatic mutation is copied only into one cell's descendants, so it affects part of one organism, and isn't inherited. A germ-line mutation can reach every cell of the next generation. That's why, in animals, only germ-line mutations add to the gene pool.",
+      "hash": "ca04804dd1cd",
+      "textSha256": "ca04804dd1cd7a1a2429f04bfa635d6db402ae8fd7092e3d8d420048a26f6588",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/distinction.ca04804dd1cd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/distinction.ca04804dd1cd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/distinction.ca04804dd1cd.generation.json",
+      "plannedRequestSha256": "d392fcdcae450d2544a3df631b617fc02ccd5ec5d7f876acf156f34a39be166a"
+    },
+    {
+      "id": "coding",
+      "parentSceneId": "coding",
+      "text": "Now the second question, where in the DNA? Only about one to two per cent of human DNA is coding DNA, the stretches whose codons are translated into protein. A change there alters a codon, so it can be silent, swap an amino acid, add an early stop, or shift the frame. The rest is non-coding DNA, and much of it was once written off as junk.",
+      "hash": "6be07f713801",
+      "textSha256": "6be07f7138019e979da8f4692d5626ea203ec4c95961465c3ac3b89eb382fc2a",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/coding.6be07f713801.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/coding.6be07f713801.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/coding.6be07f713801.generation.json",
+      "plannedRequestSha256": "299fe75107fe0415f1a6b8cf78ff2f922210f4b7460fa7a1b471fa48289aaa5e"
+    },
+    {
+      "id": "regulatory",
+      "parentSceneId": "regulatory",
+      "text": "But some non-coding DNA controls genes. Remember the promoter, where RNA polymerase binds to copy a gene. Change a base there, and the polymerase may bind less well, so less mRNA is made, or none. Every codon is still correct, there's just less protein. Other control stretches, called regulatory sequences, can sit far away, and decide when a gene is switched on, and in which cells.",
+      "hash": "1fcda0a35f9e",
+      "textSha256": "1fcda0a35f9eb719ed4252d8d3225f6779ba74ac9cd86610efc9aec01cac5ede",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/regulatory.1fcda0a35f9e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/regulatory.1fcda0a35f9e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/regulatory.1fcda0a35f9e.generation.json",
+      "plannedRequestSha256": "7fb29c183c053eaf1c7ebed81a37dd342e031e5d4ed144eb0d2a30d7384b2c99"
+    },
+    {
+      "id": "lactase",
+      "parentSceneId": "lactase",
+      "text": "Most mammals stop making lactase, the enzyme that digests milk sugar, after weaning. But many adults from dairy-farming populations keep making it. In many of them, the cause is one base change in a regulatory sequence, about fourteen thousand bases before the lactase gene. The enzyme is identical, the gene just stays switched on. It's inherited, and it helped milk drinkers, so it spread through those populations.",
+      "hash": "f80dcd73d138",
+      "textSha256": "f80dcd73d138d5fd709be112ecaf5a6d56fe744c45915ec75c7b9c27d127029c",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/lactase.f80dcd73d138.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/lactase.f80dcd73d138.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/lactase.f80dcd73d138.generation.json",
+      "plannedRequestSha256": "6ae19b40586394f15acfd94cfb792746d59b1f43882487ddf3100706714eb1fb"
+    },
+    {
+      "id": "introns",
+      "parentSceneId": "introns",
+      "text": "Non-coding DNA sits inside genes too. Many genes contain introns, stretches cut out of the mRNA before translation. A change in the middle of an intron usually does nothing. But a change at the signal that marks where to cut can make the cell cut in the wrong place, and the protein changes. And some non-coding DNA has no known job, so changes there are often neutral.",
+      "hash": "394da87a9fa5",
+      "textSha256": "394da87a9fa5eb065dcf2893527609a6989c4b5ada08b671f5866ac8235de8e8",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/introns.394da87a9fa5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/introns.394da87a9fa5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/introns.394da87a9fa5.generation.json",
+      "plannedRequestSha256": "275d202da6a69f8c8c46edcbab01e60b0866b1a9ea4a866d6d6db13f3869e260"
+    },
+    {
+      "id": "which-matters",
+      "parentSceneId": "which-matters",
+      "text": "So which matters more, coding or non-coding? Neither, as a rule. A coding change can be silent, and a non-coding change can switch a gene off. What counts is whether the changed stretch does a job, and what the change does to it.",
+      "hash": "b6a4c09d713b",
+      "textSha256": "b6a4c09d713bb09b6aaaa2d3821998c37d590f2825d7629b9b26fdcdb89807d4",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/which-matters.b6a4c09d713b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/which-matters.b6a4c09d713b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/which-matters.b6a4c09d713b.generation.json",
+      "plannedRequestSha256": "c98e1dcdd6eb5226a3a2eb61b0537ba591388a144aa1f85c83153394772ce14c"
+    },
+    {
+      "id": "both-together",
+      "parentSceneId": "both-together",
+      "text": "Put the two questions together. Where it is in the body decides who it can affect, one organism, or its descendants too. Where it is in the DNA decides what it does, change a protein, or change how much is made. A UV change in a skin cell's gene can start a cancer, while lactase persistence is a germ-line change in a regulatory sequence.",
+      "hash": "019c2ae64cc8",
+      "textSha256": "019c2ae64cc8379553bef7b31322f388b0203aab8dde95a3b1cabddd0dbd64bc",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/both-together.019c2ae64cc8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/both-together.019c2ae64cc8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/both-together.019c2ae64cc8.generation.json",
+      "plannedRequestSha256": "e7c057f5294271ca6936cec21fd0f857c737120fbdfc95a98b032220212eb3f1"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to hold on to. Somatic stays with you, germ line can go to your kids. That's true for animals, but plants can make flowers from body tissue that carries a mutation. And non-coding doesn't mean unimportant. Ask what the stretch does.",
+      "hash": "bf6ff33803c1",
+      "textSha256": "bf6ff33803c1640cf7d9168b6b1deac54b198484aa0d10d045c4ce10848fb861",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/memory.bf6ff33803c1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/memory.bf6ff33803c1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/memory.bf6ff33803c1.generation.json",
+      "plannedRequestSha256": "33a6469230e80710b7a19ab0ecb368f21e527e64f2250b7fa992b041bfe35aaa"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First, fruit fly larvae were exposed to X-rays. In fly A, a mutation in one developing eye cell left the adult with a white patch in one red eye. In fly B, a mutation hit a cell that makes sperm, and fly B looked normal. Identify each type, then explain how their effects differ, on each fly and on its offspring. Pause here to answer.",
+      "hash": "7d355760c245",
+      "textSha256": "7d355760c24599ef78915af616a8e078100bae81194653f832ba5a565beb5951",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt.7d355760c245.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt.7d355760c245.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt.7d355760c245.generation.json",
+      "plannedRequestSha256": "f2e8585b565c35b6449b4e35c9bab3d157fc7487b4ccf05af489a3e618f649c3"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Fly A's is somatic. Mitosis copied it into that eye cell's descendants, so only a patch changed. It isn't in A's gametes, so its offspring can't inherit the patch. Fly B's is germ-line. It didn't change fly B, but sperm from that cell carry it, so some offspring have it in every cell, and can pass it on. Saying fly A's offspring get the patch is the classic mistake.",
+      "hash": "b66505efe0a7",
+      "textSha256": "b66505efe0a757159417fd9c42895c1fc2a3ef3410eaba3f790af848ccda94a2",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-one.b66505efe0a7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-one.b66505efe0a7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-one.b66505efe0a7.generation.json",
+      "plannedRequestSha256": "3eff7196883d681be5511373c92aa76a1bf4811a5d8f743556d10009712ad91e"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Two mutations are found in an enzyme's gene. P is a substitution in the promoter, and cells with it make about a tenth as much mRNA. Q is a substitution in the coding sequence, changing the codon C U U to C U C. A student claims Q is more significant, because it's in coding DNA. Assess the claim. Pause here to answer.",
+      "hash": "129786d2ed4f",
+      "textSha256": "129786d2ed4fdb0cff3f9e720ef680bef09f3fbb479fed4dc111d9f264f9a6f5",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt-two.129786d2ed4f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt-two.129786d2ed4f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt-two.129786d2ed4f.generation.json",
+      "plannedRequestSha256": "d9c5a49a5f0b1c39efb1107a34fe08f2790f866390fd1d53ac8d4c61a81fd829"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The claim isn't supported. C U U and C U C both code for leucine, so Q keeps the same amino acid. P changes no codon, but it cuts the mRNA to about a tenth, so the cell likely makes much less enzyme. On the evidence given, P has the clearer effect. Picking Q because it's coding is the classic mistake.",
+      "hash": "3b73fbcd6cf8",
+      "textSha256": "3b73fbcd6cf81b8bb0ad6dea0b495b7e5ca23652def58100fb2e9dc582a3b7a9",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-two.3b73fbcd6cf8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-two.3b73fbcd6cf8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-two.3b73fbcd6cf8.generation.json",
+      "plannedRequestSha256": "1e547a155ea15d3b56bcf3daa0b35ee333348bff0b262a1bf9926165f4541fce"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question gives you a mutation, ask two things. Where is it in the body? Somatic affects only this organism, germ line can be inherited. Where is it in the DNA? In coding DNA, check the codons. In non-coding DNA, ask whether that stretch controls the gene. Next, mutation practice questions.",
+      "hash": "92e986eab13f",
+      "textSha256": "92e986eab13fc7076cd3f0c235c83eb83fa3337bc006f904ea44984489f21c66",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/decision-rule.92e986eab13f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/decision-rule.92e986eab13f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/decision-rule.92e986eab13f.generation.json",
+      "plannedRequestSha256": "86834222096fd94ac1bb5f54284dbfd55646ea71e5c84817547266d87a833007"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

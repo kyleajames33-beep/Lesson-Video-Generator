@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C08-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c08/lesson.json",
+  "lessonSha256": "37776f822a73042512bda5a49b09b34d24a521bb28a4668a66bfb3f4d598257d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c08/lesson.production-brief.json",
+    "sha256": "66be361a6a972a089605a070d1b494b797459ecdeae31a0c80f880998a555ad2"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A student needs the pH of zero point one five zero moles per litre propanoic acid. They treat it like hydrochloric acid: the hydronium equals the concentration, so the pH is zero point eight two four. But the pH meter reads two point eight five. That's two pH units out, about a hundred times too much hydronium. So what went wrong, and how do you calculate the right answer?",
+      "hash": "4018d2588fa5",
+      "textSha256": "4018d2588fa5e6f6c4df9bd91ae2935000b4dfe5771d4dc51cb7bb819796d0e7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/hook.4018d2588fa5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/hook.4018d2588fa5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/hook.4018d2588fa5.generation.json",
+      "plannedRequestSha256": "5263afdc59a70c48b9fd9a3bf1dac457fcb74179fae32b5cc5c31645bb682934"
+    },
+    {
+      "id": "why-weak",
+      "parentSceneId": "why-weak",
+      "text": "Propanoic acid is weak. At any moment only a small fraction of its molecules have given a proton to water, and the rest stay whole, so the hydronium is far less than the acid's concentration. Molecules and ions sit in equilibrium, and you've already written its constant, K a: hydronium times propanoate, over the whole acid, with water left out. So the real question is how much of the acid ionises. Call that amount x.",
+      "hash": "cbe337410478",
+      "textSha256": "cbe3374104780440a36ae54455e77cce80d580f7321d3bb765dc72bbcc15960b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/why-weak.cbe337410478.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/why-weak.cbe337410478.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/why-weak.cbe337410478.generation.json",
+      "plannedRequestSha256": "30a6d986b1b72b5488fc95afa69786f1ab589257dd1ffa214fefd076c60c20a3"
+    },
+    {
+      "id": "we1-ice-table",
+      "parentSceneId": "we1-ice-table",
+      "text": "Here's the full method, with K a for propanoic acid one point three times ten to the minus five. An ICE table tracks the concentrations: initial, change, equilibrium. At the start there's zero point one five zero of the acid and, ignoring water's own tiny share, no ions. Each molecule that ionises makes one hydronium and one propanoate, so the acid goes down by x and each ion goes up by x. At equilibrium, that's zero point one five zero minus x, then x, and x. So K a equals x squared over zero point one five zero minus x.",
+      "hash": "092fe699cb97",
+      "textSha256": "092fe699cb97ae0316965dc4be0f405c0d98f64100e9625be5853b1485784796",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-ice-table.092fe699cb97.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-ice-table.092fe699cb97.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-ice-table.092fe699cb97.generation.json",
+      "plannedRequestSha256": "d0bad1a78898a23d552d5d0c0e74ef3df52bc5c5201d90e30aaddc2ac62fa623"
+    },
+    {
+      "id": "we1-drop-x",
+      "parentSceneId": "we1-drop-x",
+      "text": "K a is tiny next to zero point one five zero, so x is tiny too. Taking a tiny amount from zero point one five zero still leaves about zero point one five zero, so we drop the x from the bottom, just like the tiny K shortcut in Module 5. Then x squared is K a times the concentration, one point nine five times ten to the minus six, and x is its square root: one point four times ten to the minus three moles per litre.",
+      "hash": "6b1127d9655b",
+      "textSha256": "6b1127d9655be9e5c8aad5bf07f13fcd6e78cf8c6672c915e85d5f6e466405d4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-drop-x.6b1127d9655b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-drop-x.6b1127d9655b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-drop-x.6b1127d9655b.generation.json",
+      "plannedRequestSha256": "53e6df155cf26a5f0d431c00533293b76436656fd49f071892eb9ba6b7a4113d"
+    },
+    {
+      "id": "we1-check-ph",
+      "parentSceneId": "we1-check-ph",
+      "text": "Now check that dropping x was fair. x is zero point nine three percent of zero point one five zero, well under the five percent rule of thumb. So at equilibrium, hydronium and propanoate are both one point four times ten to the minus three, and the acid is still about zero point one four nine. The pH is two point eight five: x has only two significant figures, because K a does, so two decimal places. That matches the meter. Fewer than one molecule in a hundred has ionised, which is why the strong acid method was so far off.",
+      "hash": "ac170b32407c",
+      "textSha256": "ac170b32407c0996f37994d31180cab9f863b4689a3e441a8d7bf9bf16df157e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-check-ph.ac170b32407c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-check-ph.ac170b32407c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/we1-check-ph.ac170b32407c.generation.json",
+      "plannedRequestSha256": "e67ba511719417f342768b353532436aebf0cd9d27d86f297e13520e026fa671"
+    },
+    {
+      "id": "check-fails",
+      "parentSceneId": "check-fails",
+      "text": "The shortcut isn't always safe. Hydrofluoric acid has a much bigger K a, and at zero point one zero zero moles per litre, x comes out at about eight percent of the concentration. That's over five percent, so dropping x would change the answer too much, and you'd solve the full equation instead, with the quadratic formula or your calculator's solver. Most HSC questions are written so the check passes, but you still show the check.",
+      "hash": "2a3970968668",
+      "textSha256": "2a39709686683c5d7c423629f7a7458c60518ecf9c52ac3a0a73fc0167a12820",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/check-fails.2a3970968668.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/check-fails.2a3970968668.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/check-fails.2a3970968668.generation.json",
+      "plannedRequestSha256": "4a3022e5695afb9040637b004f8a60bad663bdcfb05347c52b97f8bd380c0a39"
+    },
+    {
+      "id": "weak-base",
+      "parentSceneId": "weak-base",
+      "text": "Weak bases work the same way, with K b and hydroxide. Ammonia takes protons from water, giving ammonium and hydroxide, but only a little of it reacts. For zero point two zero zero moles per litre ammonia, with K b one point eight times ten to the minus five, the table is the same: the ammonia goes down by x, and ammonium and hydroxide each go up by x. Drop the x, and x is the square root of K b times c, one point nine times ten to the minus three. That's under one percent, so the check passes.",
+      "hash": "2c8154c72c95",
+      "textSha256": "2c8154c72c954e61fe3202abe4a0269e16e868674c6a2211c0622bab4e74099d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/weak-base.2c8154c72c95.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/weak-base.2c8154c72c95.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/weak-base.2c8154c72c95.generation.json",
+      "plannedRequestSha256": "2629f1c14c1df1da01d0b123e0bba6be01ae3d86f40f24760b03ba2b5d752e79"
+    },
+    {
+      "id": "weak-base-ph",
+      "parentSceneId": "weak-base-ph",
+      "text": "But this time x is the hydroxide, not hydronium. So, as in the strong acid and base video, take the pOH first: two point seven two. Then the pH is fourteen minus that, eleven point two eight. Writing two point seven two as the pH is the slip to avoid: a base can't have an acidic pH.",
+      "hash": "f1f10d8ce421",
+      "textSha256": "f1f10d8ce421604205869d3e1a2a126c64eaa82edaf765bafff9a49a566c86b9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/weak-base-ph.f1f10d8ce421.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/weak-base-ph.f1f10d8ce421.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/weak-base-ph.f1f10d8ce421.generation.json",
+      "plannedRequestSha256": "f44b453bbe28d1c5ff8009d34c770abca55da1d6974b5894dfe659296b733973"
+    },
+    {
+      "id": "strong-or-weak",
+      "parentSceneId": "strong-or-weak",
+      "text": "So every pH question starts with one decision. Is it strong? Then the ions come straight from the concentration. Is it weak? Then only a little reacts, so you need K a or K b and the ICE table. A question that gives you a K a value is usually telling you the acid is weak.",
+      "hash": "6d0ad4e20028",
+      "textSha256": "6d0ad4e20028c843c8382cf42e8d773c819f0cd586a9b573ff01675e9d858f5f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/strong-or-weak.6d0ad4e20028.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/strong-or-weak.6d0ad4e20028.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/strong-or-weak.6d0ad4e20028.generation.json",
+      "plannedRequestSha256": "da7eb8fea5bbd9a18eaa3a3a2157ce43b392be20ec96ead218e820c53eb6f27b"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. Strong or weak first. For a weak acid, x is about the square root of K a times c, then check that x is under five percent of c. And for a weak base, x is the hydroxide, so finish with fourteen minus pOH.",
+      "hash": "129c186a675b",
+      "textSha256": "129c186a675bedfb035fbcfcf6f3a901dba0cf803ec2762afd435d614294fdf9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/memory-aid.129c186a675b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/memory-aid.129c186a675b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/memory-aid.129c186a675b.generation.json",
+      "plannedRequestSha256": "2b3216ba6636cc9af65b89a71f7b95c6b881dfa57f4319ce2e20217da48f1f35"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Methanoic acid is the acid in some ant stings. Calculate the pH of a zero point two zero zero moles per litre methanoic acid solution at twenty five degrees, given that K a is one point eight times ten to the minus four. Show that the simplifying assumption is valid. Pause here to answer.",
+      "hash": "31c207c7378e",
+      "textSha256": "31c207c7378ef670bfdb954270c5e809770365e302e8a53c3cbcbb346eab0c00",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/attempt-1.31c207c7378e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/attempt-1.31c207c7378e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/attempt-1.31c207c7378e.generation.json",
+      "plannedRequestSha256": "fce53159e36e0a3cb3fdbbf8421a4c3c63867f3cd623f8ef4563c3d11a17d71e"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Methanoic acid is weak, so drop the x: x squared is K a times zero point two zero zero, so x is six point zero times ten to the minus three. That's three percent of the concentration, under five, so the assumption is valid. The pH is two point two two. The full equation gives two point two three, only point zero one away. Treating the acid as strong gives zero point six nine nine.",
+      "hash": "93dd0a499c6d",
+      "textSha256": "93dd0a499c6d242f5aea9577f8a6c707d2cbabf36b590b2eeaf8e8c291670830",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/feedback-1.93dd0a499c6d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/feedback-1.93dd0a499c6d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/feedback-1.93dd0a499c6d.generation.json",
+      "plannedRequestSha256": "ace274b5373b4b717c6313e11a786a17ca9ee5151f1c085f7bf96d2d5f5f64d1"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Methylamine is a weak base that reacts with water in the same way as ammonia. Calculate the pH of a zero point four zero zero moles per litre methylamine solution at twenty five degrees, given that K b is four point four times ten to the minus four. Pause here to answer.",
+      "hash": "03d905d8d3df",
+      "textSha256": "03d905d8d3df2b980415a3fcc7f42afd2a607898b36a6acc6c5b8c9e34ac6ac8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/attempt-2.03d905d8d3df.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/attempt-2.03d905d8d3df.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/attempt-2.03d905d8d3df.generation.json",
+      "plannedRequestSha256": "24b076a5ac6196d3cf338760d84bfd3e44706894cac0c17a6932267bb954f3c3"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Methylamine takes a proton from water, making hydroxide. x squared is K b times zero point four zero zero, so x, the hydroxide, is one point three times ten to the minus two, about three percent, so the check passes. The pOH is one point eight eight, and the pH is twelve point one two. Using zero point four zero zero as the hydroxide treats a weak base as strong.",
+      "hash": "0d514db16291",
+      "textSha256": "0d514db1629173d17e7b01e3450816ee5acba603fcb43659b6b9762415298ac4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/feedback-2.0d514db16291.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/feedback-2.0d514db16291.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/feedback-2.0d514db16291.generation.json",
+      "plannedRequestSha256": "1c053bce2597f79459e446c2b73ab0904f90050815ff06bea0bfff84b30fb4d1"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any pH question, decide first: strong or weak. Strong, use the concentration. Weak, write the equation, build the ICE table, drop x if K a or K b is tiny, check it's under five percent, then take the negative log, through pOH for a base. Next: why neutralising a weak acid can release a different amount of heat.",
+      "hash": "2a3567384a24",
+      "textSha256": "2a3567384a2489c3c6dacb849a265a145ff536da1fe1419fc2b775a93b656694",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/decision-rule.2a3567384a24.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/decision-rule.2a3567384a24.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/decision-rule.2a3567384a24.generation.json",
+      "plannedRequestSha256": "d8c307e3a2d243261fb030d924148585c87135d25083ffd87d05ada605146c74"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C08-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

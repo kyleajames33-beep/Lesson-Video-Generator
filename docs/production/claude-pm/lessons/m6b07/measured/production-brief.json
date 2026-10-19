@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b07/measured/lesson.json",
+    "lessonSha256": "9ff7adbda082b82395f7a098162fffc2c50162cd47c291f8fa567d141d143258"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B5b: homologous pairs, one from each parent; crossing over swaps matching pieces between non-sister chromatids in prophase I; independent assortment at metaphase I; partners separate in meiosis I, so each gamete gets one of each pair; 2 to the power n, and 2 to the power 23 is more than 8 million; the plum and teal model cell with white letter beads. From B8: the four sources sorted into reshuffling and making new alleles; random fertilisation multiplies the combinations; siblings share alleles but differ; the deck of cards analogy (mutation prints a new card). From B9: a recessive allele shows only with two copies; a carrier has one; a letters-only Punnett square. From B4: a copying error that escapes repair is a mutation. From b01: a gene pool; a new allele starts as one copy in one individual; bacteria pass a mutation to both daughter cells. From b05: a mutation is inherited only if it is in the germ line. From B6a and b01: plasmids can carry genes between bacteria. Year 11: natural selection. Not assumed: ultimate against immediate source, the measured number of new mutations, the asexual limiting case.",
+    "startsWith": "Follow gamete formation and joining. The video opens: In 1977, a drought hit Daphne Major, a tiny island in the Galápagos.",
+    "stopsAfter": "stating the job of each process (mutation makes new alleles; meiosis shuffles existing alleles into varied gametes by crossing over and independent assortment; fertilisation joins gametes at random into new genotypes); tracing a new allele from a mutation in one gamete to a carrier with one copy in every cell, to half that carrier's gametes, to new combinations with other alleles, to offspring with one copy, and to offspring with two copies only when two carriers mate (one in four); explaining that in one generation almost all the differences between offspring come from reshuffling (about sixty to seventy new mutations per human child against more than eight million chromosome combinations per parent); explaining that every allele first arose by mutation, so mutation is the ultimate source and reshuffling the immediate one, and that without mutation no lost allele would be made again; explaining that bacteria reproduce asexually, without meiosis and fertilisation, so their new variation comes from mutation and gene transfer; applying this to an unseen new-allele trace and an unseen evaluate claim.",
+    "nextLesson": "how mutation, gene flow and genetic drift change the alleles of a whole population (route entry bio-m6-b08)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b07.md"
+  ],
+  "teaching": {
+    "task": "Each new generation is full of variation, so where does it come from, and how do meiosis and fertilisation share the work with mutation?",
+    "causalExplanation": "Causes: why half a carrier's gametes carry the new allele (meiosis I separates the partners, 3); why the allele ends up in many combinations (crossing over swaps pieces; each pair faces either way, 4); why two copies need two carriers (each parent gives one allele per gamete, 5); why a recessive allele stays hidden (it shows only with two copies, 5); why siblings differ mostly by reshuffling (millions of combinations against tens of new mutations, 6); why mutation is still essential (every allele first came from it; without it, losses are permanent, 7); why bacteria differ (no meiosis or fertilisation, 8). Visible case: one amber bead followed from a sperm to a \"dd\" box; the finches frame the start and the close. Video advantage: the amber trail persists across three scenes; the tallies tick against each other. Thinking opportunities: two unseen items with every given on screen. Reading load: about three text items besides bead letters; the 10a card is the densest frame and is the task itself.",
+    "conversationalApproach": "The 1977 Daphne Major drought shows selection drawing on variation that was already there, so the question is where that variation comes from; three processes get three jobs (mutation makes, meiosis shuffles, fertilisation combines); one amber new allele is followed from the mutation that makes it into half the gametes, into new neighbours by crossing over and independent assortment, and into a genotype that never existed at fertilisation; a tally compares about 70 new mutations per child with more than 8 million chromosome combinations per parent; mutation is still the ultimate source because, without it, the set of alleles is fixed; bacteria, which reproduce asexually, vary by mutation and gene transfer. Two exam questions follow with brief feedback, then the decision rule hands off to b08.",
+    "openingDecision": "In 1977, a drought hit Daphne Major, a tiny island in the Galápagos. The small, soft seeds ran out, and most of the medium ground finches died. The survivors tended to have deeper beaks, strong enough to crack the big, hard seeds that were left. Beak depth is largely inherited, so their chicks hatched with deeper beaks on average, too. No new mutation was needed, because the variation in beaks was already there. So where does all the variation in each new generation come from?",
+    "understandingCheck": "10a is an apply-and-explain item on an unnamed animal: a new recessive allele n arises in one sperm, the resulting animal has one copy in every cell and mates with an animal with no copies; state the expected fraction of offspring that carry n, then explain how an animal with two copies could arise later. It tests segregation in meiosis I and random fertilisation acting on a new allele, with different numbers from scene 5 (scene 5 shows only the carrier by carrier cross). 10c is an evaluate item: \"Meiosis and fertilisation produce almost all the genetic variation in each generation, so mutation is not important.\" It tests the per-generation against long-term judgement and needs a verdict. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working where needed, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "\"investigate the causes of genetic variation relating to the processes of fertilisation, meiosis and mutation (ACSBL078)\". The ledger marks it a depth-study or practical point; the learner modelling practical is bio-m5-p02 (Module 5), and this video claims no practical conduct. Inquiry question: \"How does mutation introduce new alleles into a population?\" Update the ledger row for B6-IQ1-05 when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Three boards, one visual language (B5b's and B8's). (1) The island board (hook, scene 7): the painted finches (`m6-finch-slender-beak-v1.png`, `m6-finch-deep-beak-v1.png`) and a coded seed strip (small soft seeds, large hard seeds), with a coded beak-depth dot strip above the birds (one dot per bird, no axis numbers). (2) The allele board (scenes 3 to 5, 10b): B5b's model cell plate (`b5x-cell-dividing-nospindle-v1.png`) with B5b's chromosome plates (`b5x-chromosome-single-pink-v1.png` plum role, `b5x-chromosome-single-teal-v1.png`) and white letter beads; amber fill is reserved for the new allele (B8 and b01 rule: only a mutation bead is ever amber-filled), so the student can follow one bead through every step; the new allele's bead is amber, lettered \"d\", and its partner allele is a white \"D\". Crossing over and assortment reuse B5b's `CrossOver` (plate mask) and `TwoWays` coin flips unchanged, so the student recognises them. Gametes are small nospindle cell plates with one chromosome; the Punnett square is letters only, HSC style (two letters per box, no cells or birds inside). (3) The tally board (scenes 6 and 8): two coded tallies side by side (\"new mutations per child\" against \"chromosome combinations per parent\") with B5b's number ticker; bacteria as `b6a-bacterium-v1.png` and `m6-bacterium-plasmid-v1.png`. Real objects are painted: finches, seeds (new plate), gametes (`m6-egg-sperm-dish-v1.png`, `b3a-sperm-v1.png`, `b3a-egg-v1.png`), bacteria. Chromosomes follow B5b's HSC-style plates with coded beads, never letter-tile strips. No people: scene 6's human numbers sit beside gamete plates and a coded genome bar. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides bead letters; each tag fades when the next cue lands.",
+    "transitionPlan": "The island board opens with the finches, seed strip and beak-depth dots; the three job chips light in turn as the allele board follows the amber bead through the model cell, crossing over, the coin flips and the letters-only Punnett square; the tally board takes over for one generation's numbers, shrinks for the ultimate source and clears for the bacteria; B8's deck returns for memory; each attempt clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the two-branch decision board and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "a coded island outline with a small tag \"Daphne Major, Galápagos\" fades in (it fades on \"small, soft seeds\"); on it, a row of finches (the two painted finch plates repeated at slightly varied scales, about ten birds, alternating slender and deep beaks; no two identical in scale).",
+      "teachingReason": "Hook (the drought on Daphne Major): In 1977, a drought hit Daphne Major, a tiny island in the Galápagos.",
+      "narrationCue": "small, soft seeds / small, soft seeds ran out / Their chicks / most of the medium ground finches died / crack the big, hard seeds / largely inherited",
+      "motionPurpose": "On the spoken cues: Above them, `BeakStrip`: one small dot per bird along a short line, spread out (tag \"beak depth\", no numbers). On \"small, soft seeds ran out\" the new seed plate's small soft seeds (`SeedStrip`, left half) fade away and only the large hard seeds remain (tag \"1977 drought\", which fades on \"Their",
+      "motionRole": "explain",
+      "onScreenChange": "a coded island outline with a small tag \"Daphne Major, Galápagos\" fades in (it fades on \"small, soft seeds\"); on it, a row of finches (the two painted finch plates repeated at slightly varied scales, about ten birds, alternating slender and deep beaks; no two identical in scale). Above them, `BeakStrip`: one small dot per bird along a short line, spread out (tag \"beak depth\", no numbers). On \"small, soft seeds ran out\" the new seed plate's small soft seeds (`SeedStrip`, left half) fade away and only the large hard seeds remain (tag \"1977 drought\", which fades on \"Their chicks\"). On \"most of the medium ground finches died\" most birds fade to grey outlines and leave; the few that stay are mostly deep-beaked; their dots stay on the strip, the others fall away. On \"crack the big, hard seeds\" one deep-beaked finch is ringed beside a hard seed. On \"largely inherited\" a thin line links one surviving bird's dot to a small chick dot above it. On \"Their chicks hatched\" a second dot row (tag \"next generation\") draws above the first, shifted towards the deep end (illustrative; no \"illustrative\" tag, because the strip has no numbers). On \"already there\" the original spread dot row flashes once behind the new one. On \"So where\" the \"beak depth\" and \"next generation\" tags fade and the heading writes on: \"Where each generation's variation comes from\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "three-jobs",
+      "visualDecision": "new",
+      "visualReference": "B8's `SourceSort` look, simplified to three chips (no bins): \"mutation: makes a new allele\" (its bead fills amber), \"meiosis: shuffles into gametes\" (two white beads swap neighbours, small B5b chromosome pair icon), \"fertilisation: joins two gametes\" (two small gamete plates meet).",
+      "teachingReason": "Three processes, three jobs: Three processes produce it, and you've met them all.",
+      "narrationCue": "follow one new allele",
+      "motionPurpose": "On the spoken cues: Each chip lands on its spoken name (no grey video tag). On \"follow one new allele\" the three chips shrink into a row along the top edge (kept dim as a progress strip for scenes 3 to 5, the current chip lighting), and one amber bead drops to the centre of the board. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "B8's `SourceSort` look, simplified to three chips (no bins): \"mutation: makes a new allele\" (its bead fills amber), \"meiosis: shuffles into gametes\" (two white beads swap neighbours, small B5b chromosome pair icon), \"fertilisation: joins two gametes\" (two small gamete plates meet). Each chip lands on its spoken name (no grey video tag). On \"follow one new allele\" the three chips shrink into a row along the top edge (kept dim as a progress strip for scenes 3 to 5, the current chip lighting), and one amber bead drops to the centre of the board. Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "half-the-gametes",
+      "visualDecision": "adjust",
+      "visualReference": "the \"mutation\" chip lights.",
+      "teachingReason": "One new allele, half the gametes: Suppose one sperm carries a mutation in a beak gene, and it fertilises an egg.",
+      "narrationCue": "copied from that first one / partner / on one chromosome of a pair / meiosis one separates the partners / about half",
+      "motionPurpose": "On the spoken cues: The amber bead lands on a small sperm plate (`b3a-sperm-v1.png`), lettered \"d\"; the sperm meets `b3a-egg-v1.png` (white bead \"D\") and they merge into a zygote cell plate (`AlleleTrail` begins: a faint amber line from the sperm). On \"copied from that first one\" the zygote divides quickly into a",
+      "motionRole": "explain",
+      "onScreenChange": "the \"mutation\" chip lights. The amber bead lands on a small sperm plate (`b3a-sperm-v1.png`), lettered \"d\"; the sperm meets `b3a-egg-v1.png` (white bead \"D\") and they merge into a zygote cell plate (`AlleleTrail` begins: a faint amber line from the sperm). On \"copied from that first one\" the zygote divides quickly into a small cell cluster, every cell showing a tiny amber dot (tag \"one copy in every cell\"; the tag fades on \"partner\"). On \"on one chromosome of a pair\" the board zooms into B5b's model cell: one long pair only, the teal chromosome carrying the amber \"d\" bead, the plum chromosome a white \"D\" bead, joined by B5b's dotted \"same gene\" link. The \"meiosis\" chip lights. On \"meiosis one separates the partners\" the pair copies, pairs up and separates as in B5b's anaphase I (fast replay, about two seconds; B5b strip chips not shown), then each half splits again into gametes: four small gamete cells drop into a row, two with amber \"d\", two with white \"D\" (computed). On \"about half\" a bracket over the two amber gametes reads \"1/2\" and over the white ones \"1/2\". Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "chip pop",
+        "lineage split",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "new-combinations",
+      "visualDecision": "new",
+      "visualReference": "the model cell returns with the long pair (plum \"D\" with white \"E\" above it; teal amber \"d\" with white \"e\" above it) and the short pair (white \"F\" plum, \"f\" teal), B5b's look.",
+      "teachingReason": "New neighbours, new combinations: Meiosis doesn't just pass the new allele on, it gives it new neighbours.",
+      "narrationCue": "swap matching pieces / Independent assortment / either partner of every other pair / many combinations / none of that makes another new allele",
+      "motionPurpose": "On the spoken cues: On \"swap matching pieces\" B5b's `CrossOver` plays between the d and e levels (plate mask, swapped pieces keep their colour); the amber \"d\" now sits on a chromatid beside a plum \"E\" (tag \"new neighbour\", which fades on \"Independent assortment\"). On \"either partner of every other pair\" B5b's `Coin`",
+      "motionRole": "explain",
+      "onScreenChange": "the model cell returns with the long pair (plum \"D\" with white \"E\" above it; teal amber \"d\" with white \"e\" above it) and the short pair (white \"F\" plum, \"f\" teal), B5b's look. On \"swap matching pieces\" B5b's `CrossOver` plays between the d and e levels (plate mask, swapped pieces keep their colour); the amber \"d\" now sits on a chromatid beside a plum \"E\" (tag \"new neighbour\", which fades on \"Independent assortment\"). On \"either partner of every other pair\" B5b's `Coin` flips over the short pair (`TwoWays`, short). On \"many combinations\" a row of four gamete cells drops in, each with the amber \"d\" and different white neighbours: \"E d F\", \"e d f\", \"E d f\", \"e d F\" (computed from the stated chromosomes and one crossover), all with the same amber bead (tag \"same new allele, new combinations\"; a small grey tag \"from many meioses\" under the row, because one meiosis gives only two of them). On \"none of that makes another new allele\" a ghost second amber bead appears and takes a grey scribble cross (tag \"no new allele from shuffling\"; the \"same new allele\" tag fades as it lands). Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "fertilisation",
+      "visualDecision": "new",
+      "visualReference": "the \"fertilisation\" chip lights.",
+      "teachingReason": "Fertilisation: a genotype that never existed: Then fertilisation joins each gamete with one from another bird.",
+      "narrationCue": "two carriers / a bird that lacks the new allele / no chick can get two copies / spreads to some of its chicks / two of those carriers mate / one in four",
+      "motionPurpose": "On the spoken cues: Two finch plates (deep and slender) stand left and right, each tagged \"D d (carrier)\" on \"two carriers\" only; before that, on \"a bird that lacks the new allele\", the right bird is tagged \"D D\" and a small row of chick dots below reads \"D D\" or \"D d\" only, with a grey tick on \"no chick can get two",
+      "motionRole": "explain",
+      "onScreenChange": "the \"fertilisation\" chip lights. Two finch plates (deep and slender) stand left and right, each tagged \"D d (carrier)\" on \"two carriers\" only; before that, on \"a bird that lacks the new allele\", the right bird is tagged \"D D\" and a small row of chick dots below reads \"D D\" or \"D d\" only, with a grey tick on \"no chick can get two copies\". On \"spreads to some of its chicks\" two of the chick dots gain a tiny amber dot. On \"two of those carriers mate\" the chick dots and their labels fade, and the right bird's tag changes to \"D d\". A letters-only Punnett square builds between them (HSC style: gamete letters \"D\" and \"d\" on the top and side, four boxes \"DD\", \"Dd\", \"Dd\", \"dd\", computed); the \"dd\" box fills pale amber on \"one in four\" and a \"1/4\" label writes beside it. On \"recessive\" the \"dd\" box pulses (no grey tag; the narration says it). On \"never existed before\" the birds' carrier tags shrink to letters only and the \"dd\" box is ringed (tag \"new genotype, existing alleles\"); the `AlleleTrail` amber line now runs from the original sperm to the \"dd\" box, then fades. Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "one-generation",
+      "visualDecision": "adjust",
+      "visualReference": "the tally board.",
+      "teachingReason": "How much does each add in one generation?: So how much does each process add in one generation?",
+      "narrationCue": "sixty to seventy new mutations / millions of places / more than eight million / before crossing over adds more / multiplies the two parents' choices / Meanwhile",
+      "motionPurpose": "On the spoken cues: Left: a coded genome bar (a long thin bar, tag \"about 6 billion bases\") with about seventy tiny amber ticks scattered along it on \"sixty to seventy new mutations\" (tag \"new in this child\"; ticks barely visible at this scale, which is the point). No grey tags. Right: `m6-egg-sperm-dish-v1.png`",
+      "motionRole": "explain",
+      "onScreenChange": "the tally board. Left: a coded genome bar (a long thin bar, tag \"about 6 billion bases\") with about seventy tiny amber ticks scattered along it on \"sixty to seventy new mutations\" (tag \"new in this child\"; ticks barely visible at this scale, which is the point). No grey tags. Right: `m6-egg-sperm-dish-v1.png` small; on \"millions of places\" a short parent chromosome pair shows many tiny white bead pairs, a few of them differing (no tag); B5b's ticker then runs to \"2^23 = 8,388,608\" (computed) on \"more than eight million\", with a small \"+\" swap icon on \"before crossing over adds more\"; on \"multiplies the two parents' choices\" a small \"x the other parent\" chip joins the ticker (no second number; the 70 trillion was B8's). The \"about 6 billion bases\" tag fades on \"Meanwhile\". On \"almost all of those differences\" the left tally dims and the right one glows; a line writes on underneath: \"one generation: almost all from reshuffling\". The \"new in this child\" tag fades as the line lands. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "ultimate-source",
+      "visualDecision": "new",
+      "visualReference": "the tally board's right side shrinks.",
+      "teachingReason": "Why mutation still matters: But remember from Module five: every allele being reshuffled first appeared as a mutation, at some time, in some ancestor.",
+      "narrationCue": "first appeared as a mutation / ultimate source / If mutation stopped / lost, by chance or selection / The finches' / The finches' beak alleles",
+      "motionPurpose": "On the spoken cues: A coded set of white allele beads in a tray (b01's `PoolBasin`, small) sits centre; on \"first appeared as a mutation\" each white bead briefly flashes amber in turn, then returns to white (tag \"every allele: once a new mutation\", which fades on \"ultimate source\"). On \"ultimate source\" two labels",
+      "motionRole": "explain",
+      "onScreenChange": "the tally board's right side shrinks. A coded set of white allele beads in a tray (b01's `PoolBasin`, small) sits centre; on \"first appeared as a mutation\" each white bead briefly flashes amber in turn, then returns to white (tag \"every allele: once a new mutation\", which fades on \"ultimate source\"). On \"ultimate source\" two labels write on, stacked: \"mutation: ultimate source\" and \"meiosis and fertilisation: immediate source\". On \"If mutation stopped\" the amber source is switched off (a small grey switch, \"mutation: off\"); the beads keep reshuffling into new pairs inside the tray, but on \"lost, by chance or selection\" two beads fade out and leave, and nothing replaces them (tag \"lost alleles not made again\"; the switch tag fades as it lands). The two labels hold; the \"lost alleles\" tag fades on \"The finches'\". On \"The finches' beak alleles\" the island board returns small at the right: the hook's two dot rows with a faint amber thread running back from them to a far-left tag \"past mutations\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "asexual",
+      "visualDecision": "adjust",
+      "visualReference": "the tally board clears.",
+      "teachingReason": "Without meiosis or fertilisation: What about organisms that reproduce without meiosis or fertilisation?",
+      "narrationCue": "huge numbers / except for any new mutations / huge numbers and fast division / pick up genes / pick up genes from other bacteria / reproduce asexually",
+      "motionPurpose": "On the spoken cues: `b6a-bacterium-v1.png` (b01's `Bact`) splits into two, then four, then eight (coded lineage tree, b01's look); all daughters identical (tag \"clones\", which fades on \"huge numbers\"), until on \"except for any new mutations\" one daughter gains b01's amber new-allele ring and passes it to both of its",
+      "motionRole": "explain",
+      "onScreenChange": "the tally board clears. `b6a-bacterium-v1.png` (b01's `Bact`) splits into two, then four, then eight (coded lineage tree, b01's look); all daughters identical (tag \"clones\", which fades on \"huge numbers\"), until on \"except for any new mutations\" one daughter gains b01's amber new-allele ring and passes it to both of its daughters. On \"huge numbers and fast division\" the tree fans out rapidly to a dense population with a few amber rings scattered through it (tag \"many divisions: many chances\", which fades on \"pick up genes\"). On \"pick up genes from other bacteria\" `m6-bacterium-plasmid-v1.png` sits beside one cell and a small plasmid ring slides across into a neighbour (no grey tag). On \"reproduce asexually\" the label \"asexual: no meiosis, no fertilisation\" writes on; on \"mutation and gene transfer\" two small chips light (\"mutation\", \"gene transfer\"); on \"not from meiosis and fertilisation\" the asexual label takes a small grey tick. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "lineage split",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "B8's coded deck (white cards, one amber) returns.",
+      "teachingReason": "Memory: Here's a way to hold it, with the deck of cards from Module five.",
+      "narrationCue": "In one generation / over a long time",
+      "motionPurpose": "On the spoken cues: One handwritten line per cue, each with a small replay: \"Mutation: prints a new card\" (a card turns amber); \"Meiosis: deals a hand\" (cards fan into two hands); \"Fertilisation: two hands together\" (two hands slide together). Then on \"In one generation\" a hand-drawn bracket over the dealing reads",
+      "motionRole": "explain",
+      "onScreenChange": "B8's coded deck (white cards, one amber) returns. One handwritten line per cue, each with a small replay: \"Mutation: prints a new card\" (a card turns amber); \"Meiosis: deals a hand\" (cards fan into two hands); \"Fertilisation: two hands together\" (two hands slide together). Then on \"In one generation\" a hand-drawn bracket over the dealing reads \"one generation: the dealing\", and on \"over a long time\" a second bracket over the amber card reads \"long term: every card was once new\"; the three mapping lines dim when the first bracket lands, so the two brackets carry the end frame. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no cells, beads, Punnett square or tags from earlier scenes.",
+      "teachingReason": "Unseen transfer task (attempt one (a new allele, two generations)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. A mutation in",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a new allele, two generations))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no cells, beads, Punnett square or tags from earlier scenes. The card writes on as an exam question: \"A mutation in one sperm cell produces a new recessive allele, *n*, of a gene on an autosome (a numbered chromosome). This sperm fertilises an egg. The animal that develops has one copy of *n* in every cell. It later mates with an animal that has no copies of *n*.\" Demands: \"(a) What fraction of their offspring would be expected to carry *n*? (1 mark)\" \"(b) Explain how an animal with two copies of *n* could arise in a later generation. Refer to meiosis and fertilisation. (3 marks)\". An answer box for (a) and a lined box for (b). Nothing answer-bearing: no genotypes, no grid, no fractions. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "The carrier is N n / half its gametes carry n / if two carriers mate / the classic mistake",
+      "motionPurpose": "On the spoken cues: (1) On \"The carrier is N n\" \"one copy of *n* in every cell\" underlines amber in the strip and a genotype label \"Nn\" writes on. (2) On \"half its gametes carry n\" two gamete circles split off, \"N\" and \"n\" (computed); with the partner \"NN\" a small letters-only Punnett square (top \"N\", \"n\"; side \"N\",",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. (1) On \"The carrier is N n\" \"one copy of *n* in every cell\" underlines amber in the strip and a genotype label \"Nn\" writes on. (2) On \"half its gametes carry n\" two gamete circles split off, \"N\" and \"n\" (computed); with the partner \"NN\" a small letters-only Punnett square (top \"N\", \"n\"; side \"N\", \"N\") fills \"NN\", \"Nn\", \"NN\", \"Nn\"; box (a) fills \"1/2 (one copy each)\". (3) On \"if two carriers mate\" a second letters-only Punnett square, \"Nn\" by \"Nn\", fills \"NN\", \"Nn\", \"Nn\", \"nn\"; the \"nn\" box fills pale amber and box (b) fills \"meiosis in each carrier: half the gametes carry *n*; fertilisation: two *n* gametes join, about 1 in 4 offspring *nn*\". (4) On \"the classic mistake\" the chip \"the parent has *n*, so all offspring inherit it\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "ScribbleCircle",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (evaluate a claim)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A student claims, \"Meiosis and fertilisation produce",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (evaluate a claim))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question: \"A student claims: 'Meiosis and fertilisation produce almost all the genetic variation in each generation, so mutation is not important.' Evaluate this claim. (4 marks)\". One lined answer box. Nothing answer-bearing: no tallies, deck or labels. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "The first part is right / the conclusion is wrong / partly correct / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-row judgement table draws under it, \"first part\" and \"conclusion\". (1) On \"The first part is right\" \"almost all the genetic variation in each generation\" underlines amber; the first row fills \"correct: in one generation, reshuffling makes nearly all the differences\" with a tick. (2) On \"the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-row judgement table draws under it, \"first part\" and \"conclusion\". (1) On \"The first part is right\" \"almost all the genetic variation in each generation\" underlines amber; the first row fills \"correct: in one generation, reshuffling makes nearly all the differences\" with a tick. (2) On \"the conclusion is wrong\" \"so mutation is not important\" underlines; the second row fills \"incorrect: every allele first arose by mutation (ultimate source); asexual organisms rely on mutation and gene transfer\" with a cross. (3) On \"partly correct\" a verdict line writes on: \"Verdict: partly correct; mutation is essential over the long term.\" (4) On \"the classic mistake\" the chip \"crossing over makes new alleles\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "a two-branch decision board writes on, one branch per cue: \"new allele? → mutation\" (amber bead icon); \"new combination? → crossing over (within a chromosome) / independent assortment (between chromosomes) / fertilisation (two gametes)\" (three small icons from scenes 4 and 5, lighting one per spoken name).",
+      "teachingReason": "Decision rule and handoff: So when a question asks where variation came from, sort each change.",
+      "narrationCue": "So when a question asks where variation came",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how a gene pool changes\" (b01's small pool basin icon with a few rings). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "a two-branch decision board writes on, one branch per cue: \"new allele? → mutation\" (amber bead icon); \"new combination? → crossing over (within a chromosome) / independent assortment (between chromosomes) / fertilisation (two gametes)\" (three small icons from scenes 4 and 5, lighting one per spoken name). A \"Next\" chip slides in at the lower right: \"Next: how a gene pool changes\" (b01's small pool basin icon with a few rings). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b07-learning-review.md",
+      "sha256": "b0093fde5d492806da3cd8c7f885e72451e1dd9701206a702f23687c9c8b75bf"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b07-claude-science-check.md",
+      "sha256": "dc12c125c49b85dedc5a4f973f5fea2fe3092cb7b5e9d949146c7e66951d8ee0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

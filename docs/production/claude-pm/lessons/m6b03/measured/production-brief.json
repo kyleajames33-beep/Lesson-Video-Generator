@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b03/measured/lesson.json",
+    "lessonSha256": "1644c48fea118776ced8d362aaefe39097774a9ee09a47882c54204b7f65f052"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B6b (transcription): a gene is a stretch of DNA that codes for a polypeptide; mRNA is copied from the template strand and matches the coding strand with U in place of T. From B6c (translation): codons of three bases read in order from the start codon AUG, with no gaps; most amino acids have more than one codon; three stop codons (UAA, UAG, UGA, \"U Are Away, U Are Gone, U Go Away\"); the codon chart is read with mRNA codons; a polypeptide must fold to work. From B7: sickle cell (GAG to GUG, glutamate to valine at position 6; with two copies the haemoglobin forms fibres at low oxygen and cells sickle); a changed amino acid can, but need not, change a protein's shape and job (the snapdragon active-site case). From b01: a mutation is a change in base sequence and can make a new allele. From b02: base analogues mispair and intercalating chemicals add or skip a base. Not assumed: point mutation, substitution, insertion, deletion as named mutation types, silent, missense, nonsense, frameshift, reading frame.",
+    "startsWith": "Change one base in a coding sequence. The video opens: In the gene for one chain of haemoglobin, change one base in the sixth codon, and you can get sickle cell disease.",
+    "stopsAfter": "defining a point mutation and its three processes (substitution, insertion, deletion); explaining that a substitution within a coding codon changes that codon, which may give the same amino acid (silent, because the code is degenerate), a different amino acid (missense, sickle cell) or a stop codon (nonsense, beta-globin codon 39, chain cut short); explaining that an insertion or deletion of one base regroups every codon after it (frameshift), so most later amino acids change and an early stop often appears; explaining that adding or removing a multiple of three bases keeps the frame and adds or removes amino acids; explaining that the effect depends on type and position (near the start of a gene, in an active site), so \"point\" describes the scale of the change, not the size of the effect; applying this to an unseen classification of three mutant sequences with a chart excerpt, and to the cystic fibrosis three-base deletion against the Tay-Sachs four-base insertion.",
+    "nextLesson": "chromosomal mutations, changes to whole segments or numbers of chromosomes (route entry bio-m6-b04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b03.md"
+  ],
+  "teaching": {
+    "task": "Every one of these changes is a single base, so why can one keep the same amino acid, one swap an amino acid, and one stop the protein?",
+    "causalExplanation": "Causes: why one base can leave the amino acid the same (the new codon names the same amino acid, 3); why it can swap an amino acid (the new codon names a different one, 4); why it can stop the protein (the new codon is a stop, so the ribosome halts, 5); why an insertion or deletion is different (the ribosome keeps reading in threes from the start, so every later codon is regrouped, 6); why three bases don't shift the frame (a whole codon's worth, 7); why position matters (how much of the chain lies after the change, 8). Visible case: one gene (beta-globin) carries all three substitution outcomes; one short message carries the frameshift and the in-frame deletion. Video advantage: the frame window rides along and the brackets visibly regroup; the bead chain changes bead by bead; the THE FAT CAT words regroup. Thinking opportunities: two unseen items with every given on screen. Reading load: three rows, at most about three other text items; the attempt 1 card is the densest frame and is the task itself.",
+    "conversationalApproach": "Three single-base changes in one beta-globin gene give three different results (hook), so the question is why one base can matter so differently; point mutation and its three processes are named after a reading board shows DNA, mRNA and polypeptide together; silent, missense and nonsense are each shown on the same gene (codon change, chart lookup, then the name); one lost base regroups every codon after it before the word frameshift is used; THE FAT CAT ATE THE RAT shows the reading frame and the multiple-of-three exception, with its limit said; type and position decide the effect, so point describes the scale of the change, not the size of the effect. Two exam questions follow with brief feedback, then the decision rule hands off to chromosomal mutations.",
+    "openingDecision": "In the gene for one chain of haemoglobin, change one base in the sixth codon, and you can get sickle cell disease. Change a different base in that same codon, and the amino acid stays the same. Change one base in codon thirty-nine, and the chain stops partway, causing a blood disorder called beta thalassaemia. Every one of these is a single base. So why are the results so different?",
+    "understandingCheck": "10a is a sequence item: a short normal mRNA, three mutant mRNAs (A, B, C) and a codon chart excerpt; for each mutant, name the type of point mutation and describe its effect on the polypeptide. A is silent, B is nonsense, C is a one-base deletion that shifts the frame. It tests reading the new codon on the chart and recognising a frameshift from the regrouped codons. 10c is an explain item on two real alleles: the cystic fibrosis allele with three bases deleted (one amino acid missing) and the Tay-Sachs allele with four bases inserted (changed from the insertion onwards and cut short); explain the difference. It tests the multiple-of-three rule as a cause, not a definition. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working where needed, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "\"compare the causes, processes and effects of different types of mutation, including but not limited to:\" with the examples \"point mutation\" and \"chromosomal mutation\". This video owns the point mutation half: processes (substitution, insertion, deletion), effects (silent, missense, nonsense, frameshift; type and position) and a one-clause recall of causes from b02 (copying mistakes, base analogues, chemicals that slide between bases). b04 owns the chromosomal half and the point against chromosomal comparison. Update the ledger row for B6-IQ1-02 (shared with b01 and b04) when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One reading board throughout, three aligned rows, so the student always sees DNA change, codon change and amino acid change together. (1) Bottom row \"gene (DNA)\": b01's `SlimStrand` (two thin lines with rungs, a soft gene band); a changed position is one amber rung with b01's `BaseSwap` callout showing the coding-strand base (\"A to T\"). No letter tiles. (2) Middle row \"mRNA\": the codons as clean typeset text in terracotta (B6b's mRNA colour), grouped in threes with a thin bracket under each codon and a small \"5'\" and \"3'\"; the changed letter is amber. Codons are text, as HSC papers print them, never tiles. (3) Top row \"polypeptide\": B6c's amino acid beads (muted warm, three-letter name printed on each), joined by short peptide links; a changed bead takes an amber ring. A small painted ribosome (`m5x-ribosome-v1.png`, flipped as in B6c) rides along the mRNA row as the reader in scenes 2, 5 and 6, with a three-base amber window under it showing the frame. Codon lookups use B6c's chart excerpt card (two to four rows, computed by the ported `codonToAA`), sliding in at the right and leaving when its scene ends. A fixed tag at the far left labels the three rows on first use and fades after scene 3. Real objects are painted: the red cells (sickle) and, from B7, the coded haemoglobin blob (four lobes, two \"alpha\", two \"beta\"). Clutter rule (owner, 19 Oct): at most about three text items on screen at once besides the three rows; each callout or tag fades when the next cue lands, and the chart card leaves when its lookup is done.",
+    "transitionPlan": "The reading board (gene, mRNA, polypeptide rows) stays on screen throughout: the hook's three results become chips, the board resets to a neutral message for the three processes, then returns to beta-globin codon 6 for silent and missense and slides along the gene band to codon 39 for nonsense; the ribosome rides the mRNA row with its three-base window for the stop and the frameshift; the board clears to one word line for THE FAT CAT and to a long gene band for what decides the effect; memory lines write on beside the bead icons; each attempt clears the board and its feedback shrinks the card to a strip and fills the answer rows one point at a time; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "the reading board draws in, labelled once at the far left (\"gene (DNA)\", \"mRNA\", \"polypeptide\"): a `SlimStrand` with a gene band tagged \"beta-globin gene\"; above it a short stretch of mRNA codons around codon 6 (\"... CCU GAG GAG ...\", position numbers small under the brackets, \"5\" \"6\" \"7\"; traditional numbering from the first amino acid of the finished chain, as B7 and HSC papers use) and a bead row (computed: Pro, Glu, Glu).",
+      "teachingReason": "Hook (three changes, one gene): In the gene for one chain of haemoglobin, change one base in the sixth codon, and you can get sickle cell disease.",
+      "narrationCue": "sixth codon / a different base / codon thirty-nine / So why",
+      "motionPurpose": "On the spoken cues: On \"sixth codon\" codon 6's bracket glows; its middle letter turns amber and swaps \"A to U\" in the mRNA (DNA callout \"A to T\"); its bead flips to \"Val\" with an amber ring, and the painted `m6-red-cells-normal-sickle-v1.png` slides in small at the right, cropped to the sickle half (tag \"sickle cell",
+      "motionRole": "explain",
+      "onScreenChange": "the reading board draws in, labelled once at the far left (\"gene (DNA)\", \"mRNA\", \"polypeptide\"): a `SlimStrand` with a gene band tagged \"beta-globin gene\"; above it a short stretch of mRNA codons around codon 6 (\"... CCU GAG GAG ...\", position numbers small under the brackets, \"5\" \"6\" \"7\"; traditional numbering from the first amino acid of the finished chain, as B7 and HSC papers use) and a bead row (computed: Pro, Glu, Glu). On \"sixth codon\" codon 6's bracket glows; its middle letter turns amber and swaps \"A to U\" in the mRNA (DNA callout \"A to T\"); its bead flips to \"Val\" with an amber ring, and the painted `m6-red-cells-normal-sickle-v1.png` slides in small at the right, cropped to the sickle half (tag \"sickle cell disease\"). On \"a different base\" the board resets; codon 6's last letter swaps \"G to A\"; the bead stays \"Glu\" (small tick, tag \"same amino acid\"). On \"codon thirty-nine\" the board slides along to codons 38 to 40 (\"ACC CAG AGG\", computed Thr, Gln, Arg); the first letter of codon 39 swaps \"C to U\"; the bead row ends at codon 38 with a short grey bar (tag \"chain stops here\"), and beside it B7's haemoglobin blob shows its two beta lobes as dashed outlines (tag \"beta thalassaemia\"). Each case's tag drops down to become its result chip as the next case starts, so only one case tag shows at a time; the chips line up under the board: \"same amino acid\", \"one amino acid swapped\", \"chain cut short\". On \"So why\" a \"?\" writes on above the chips, then turns into the heading \"One base, different effects\" (end frame: three chips and the heading). Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "point-mutation",
+      "visualDecision": "new",
+      "visualReference": "the board returns to a short neutral message (mRNA \"AUG AAA CCU GGA UUU\", DNA strand beneath, beads hidden).",
+      "teachingReason": "Point mutation: three ways to change a base: Each of these is a point mutation, a change to one base, or a few bases, in a gene's DNA.",
+      "narrationCue": "point mutation / substitution / insertion / deletion",
+      "motionPurpose": "On the spoken cues: On \"point mutation\" the term writes on with the gloss \"a change to one or a few bases\". Three short demonstrations play on the DNA strand, one per cue, each returning to normal before the next: on \"swaps\" one rung turns amber with a `BaseSwap` callout (tag \"substitution\"); on \"adds\" the strand",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns to a short neutral message (mRNA \"AUG AAA CCU GGA UUU\", DNA strand beneath, beads hidden). On \"point mutation\" the term writes on with the gloss \"a change to one or a few bases\". Three short demonstrations play on the DNA strand, one per cue, each returning to normal before the next: on \"swaps\" one rung turns amber with a `BaseSwap` callout (tag \"substitution\"); on \"adds\" the strand opens a gap and one amber rung slides in, the strand lengthening by one pitch (tag \"insertion\"); on \"removes\" one rung lifts out and the strand closes up (tag \"deletion\"). Each tag fades as the next lands, so one tag shows at a time; after \"deletion\" the three names sit in a small column at the left. On \"copying mistakes, or from mutagens\" a grey tag writes on beneath: \"b02: base analogues, chemicals between bases\"; it fades on \"Remember\", and the term and gloss fade with it. On \"codons of three\" the painted ribosome (flipped, small) settles on the mRNA row at AUG with the amber `FrameWindow` under the first codon, then steps one codon right (no tag). On \"what does the change do to the codons?\" each codon bracket pulses once. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "silent",
+      "visualDecision": "new",
+      "visualReference": "the beta-globin board returns at codon 6 (mRNA \"GAG\", bead \"Glu\"); the row labels fade out.",
+      "teachingReason": "Silent: same amino acid: Start with substitutions.",
+      "narrationCue": "silent",
+      "motionPurpose": "On the spoken cues: On \"changes that codon\" only codon 6's bracket stays bright; the others dim slightly. On \"more than one codon\" B6c's chart excerpt card slides in at the right with two rows, \"GAA Glu\" and \"GAG Glu\" (computed), the third letters amber (tag \"third base often doesn't matter\"). On \"G A G becoming G A",
+      "motionRole": "explain",
+      "onScreenChange": "the beta-globin board returns at codon 6 (mRNA \"GAG\", bead \"Glu\"); the row labels fade out. On \"changes that codon\" only codon 6's bracket stays bright; the others dim slightly. On \"more than one codon\" B6c's chart excerpt card slides in at the right with two rows, \"GAA Glu\" and \"GAG Glu\" (computed), the third letters amber (tag \"third base often doesn't matter\"). On \"G A G becoming G A A\" the last letter swaps amber \"G to A\" in the mRNA (DNA callout \"G to A\"); the pointer lights \"GAA Glu\"; the bead stays \"Glu\" and takes a small tick. On \"silent\" the term writes on with the gloss \"same amino acid\". On \"didn't\" a two-line comparison writes on under the board: \"bases: changed\", \"amino acids: same\". The chart card leaves. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "missense",
+      "visualDecision": "adjust",
+      "visualReference": "codon 6 resets to \"GAG\".",
+      "teachingReason": "Missense: one amino acid swapped: Now change the middle base instead, so G A G becomes G U G.",
+      "narrationCue": "missense",
+      "motionPurpose": "On the spoken cues: On \"the middle base\" the middle letter swaps amber \"A to U\" (DNA callout \"A to T\"); the chart card returns with \"GAG Glu\" and \"GUG Val\" (computed); on \"valine\" the pointer lights \"GUG Val\" and the bead flips from \"Glu\" to \"Val\" with an amber ring. The chart card leaves on \"valine\". On \"carries a",
+      "motionRole": "explain",
+      "onScreenChange": "codon 6 resets to \"GAG\". On \"the middle base\" the middle letter swaps amber \"A to U\" (DNA callout \"A to T\"); the chart card returns with \"GAG Glu\" and \"GUG Val\" (computed); on \"valine\" the pointer lights \"GUG Val\" and the bead flips from \"Glu\" to \"Val\" with an amber ring. The chart card leaves on \"valine\". On \"carries a charge\" the Glu bead (ghosted beside it) shows a small \"charged\" label and the Val bead a pale grey \"avoids water\" label; both labels fade on \"missense\", when the term writes on with the gloss \"a different amino acid\". On \"You've seen where this one leads\" the sickle half of the hook's `m6-red-cells-normal-sickle-v1.png` returns small at the top right (no B7 strip, no grey tag); on \"two copies\" a tag \"two copies\" writes on above it. On \"not every missense change matters this much\" the plate, its tag and the term fade, and two small cases play under the board: a folded protein blob with an amber pocket where a changed bead sits (tag \"in the active site: likely to matter\"), and the same blob with a changed bead far from the pocket, swapped for a similar one (tag \"similar amino acid, away from the site: may not\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "nonsense",
+      "visualDecision": "new",
+      "visualReference": "the board slides along the gene band to codons 37 to 41 (mRNA \"UGG ACC CAG AGG UUC\", computed Trp, Thr, Gln, Arg, Phe; small position numbers).",
+      "teachingReason": "Nonsense: an early stop: A third kind of substitution creates an early stop.",
+      "narrationCue": "nonsense",
+      "motionPurpose": "On the spoken cues: On \"C A G codes for glutamine\" codon 39 glows with its \"Gln\" bead. On \"Change the C to U\" its first letter swaps amber \"C to U\" (DNA callout \"C to T\"); the chart card slides in with \"CAG Gln\" and \"UAG stop\" (computed; the stop row grey); on \"a stop codon\" the pointer lights \"UAG stop\" and a small",
+      "motionRole": "explain",
+      "onScreenChange": "the board slides along the gene band to codons 37 to 41 (mRNA \"UGG ACC CAG AGG UUC\", computed Trp, Thr, Gln, Arg, Phe; small position numbers). On \"C A G codes for glutamine\" codon 39 glows with its \"Gln\" bead. On \"Change the C to U\" its first letter swaps amber \"C to U\" (DNA callout \"C to T\"); the chart card slides in with \"CAG Gln\" and \"UAG stop\" (computed; the stop row grey); on \"a stop codon\" the pointer lights \"UAG stop\" and a small handwritten \"U Are Gone\" writes on inside that chart row (no grey tag). On \"The ribosome stops there\" the chart card leaves; the riding ribosome reaches codon 39 and halts; the bead chain ends at codon 38 and the beads after it fade to dashed outlines (tag \"38 amino acids, then stop\"). On \"can't fold\" the short chain curls into a small loose blob beside a full folded beta chain outline, and the tag changes to \"too short to fold\". On \"nonsense\" that tag fades and the term writes on with the gloss \"a stop codon, chain cut short\". On \"two copies\" B7's haemoglobin blob shows two alpha lobes and two dashed, empty beta lobes (one tag \"two copies: no normal beta chains\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "frameshift",
+      "visualDecision": "new",
+      "visualReference": "the board shows the site's message as mRNA: \"5' AUG AAA CCU GGA UUU 3'\" with brackets, the DNA strand beneath and five beads above (computed Met, Lys, Pro, Gly, Phe; tag \"normal\").",
+      "teachingReason": "Frameshift: one base lost: Insertions and deletions act very differently.",
+      "narrationCue": "frameshift",
+      "motionPurpose": "On the spoken cues: On \"delete one base\" one \"A\" of the second codon (its last letter) lifts away amber and its rung leaves the DNA strand; the letters to its right slide left by one place. On \"reads in threes from the start codon\" the ribosome starts at AUG and steps along with the `FrameWindow`; the brackets regroup",
+      "motionRole": "explain",
+      "onScreenChange": "the board shows the site's message as mRNA: \"5' AUG AAA CCU GGA UUU 3'\" with brackets, the DNA strand beneath and five beads above (computed Met, Lys, Pro, Gly, Phe; tag \"normal\"). On \"delete one base\" one \"A\" of the second codon (its last letter) lifts away amber and its rung leaves the DNA strand; the letters to its right slide left by one place. On \"reads in threes from the start codon\" the ribosome starts at AUG and steps along with the `FrameWindow`; the brackets regroup one codon at a time under the window into \"AUG AAC CUG GAU UU\" (computed). On \"every codon from there on is different\" each regrouped codon flashes amber as the window reaches it; the beads after Met flip one by one to \"Asn\", \"Leu\", \"Asp\" (computed), each with an amber ring, and the original five-bead row stays above in grey for comparison. On \"A stop codon often turns up early\" a grey tag \"often an early stop codon\" writes on at the end of the row (no stop is shown in this short message). On \"frameshift\" the grey tag fades and the term writes on with the gloss \"the reading frame shifts: every codon after it is regrouped\"; the \"normal\" tag fades. On \"Inserting one base\" a quick ghost replay inserts an amber letter instead and the brackets regroup the other way (tag \"insertion: same problem\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "reading-frame",
+      "visualDecision": "new",
+      "visualReference": "the board clears to one line.",
+      "teachingReason": "The reading frame, and multiples of three: Here's a way to picture it.",
+      "narrationCue": "Delete the F / keep reading in threes / still makes amino acids / delete three bases in a row / Inserting three bases",
+      "motionPurpose": "On the spoken cues: `WordRow`: \"THE FAT CAT ATE THE RAT\" in large typeset capitals with a thin bracket under each word. On \"Delete the F\" the F lifts away amber and the letters close up; on \"keep reading in threes\" the brackets regroup to \"THE ATC ATA TET HER AT\", each regrouped word greying as it forms (tag \"every",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to one line. `WordRow`: \"THE FAT CAT ATE THE RAT\" in large typeset capitals with a thin bracket under each word. On \"Delete the F\" the F lifts away amber and the letters close up; on \"keep reading in threes\" the brackets regroup to \"THE ATC ATA TET HER AT\", each regrouped word greying as it forms (tag \"every word after it changes\"). On \"still makes amino acids\" the sentence shrinks to the top and scene 6's regrouped bead row returns beneath it (tag \"wrong amino acids, not nothing\", replacing \"every word after it changes\"). A grey tag, replacing that one as it fades: \"real DNA has no spaces: the start codon sets the frame\". On \"delete three bases in a row\" the site's normal message returns (\"AUG AAA CCU GGA UUU\"); the whole \"AAA\" codon lifts out amber; the brackets close up to \"AUG CCU GGA UUU\" with no regrouping; the bead row loses \"Lys\" and keeps \"Met, Pro, Gly, Phe\" (computed), with a small gap marker where Lys was (tag \"multiple of three: no frameshift, one amino acid lost\"). The sentence line fades as the multiple-of-three case lands. On \"Inserting three bases\" a ghost replay slides three amber letters in as one new bracket, and one extra bead joins the row (tag \"insert 3: one amino acid added\"). Hold one second.",
+      "motionTools": [
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "what-decides",
+      "visualDecision": "new",
+      "visualReference": "a long gene band draws across the board (no letters, codon brackets only, a bead row above).",
+      "teachingReason": "What decides the effect: So what decides how much a point mutation matters?",
+      "narrationCue": "changes that codon / changes every codon after it / near the start of a gene / near the end / the size of the change, not the size of its effect",
+      "motionPurpose": "On the spoken cues: Type: on \"changes that codon\" one bracket lights amber and three small result chips fan out from it, \"same\", \"one swapped\", \"early stop\"; on \"changes every codon after it\" a one-base deletion mark lands mid-gene and every bracket to its right turns amber (tag \"everything downstream\"). The chips and",
+      "motionRole": "explain",
+      "onScreenChange": "a long gene band draws across the board (no letters, codon brackets only, a bead row above). Type: on \"changes that codon\" one bracket lights amber and three small result chips fan out from it, \"same\", \"one swapped\", \"early stop\"; on \"changes every codon after it\" a one-base deletion mark lands mid-gene and every bracket to its right turns amber (tag \"everything downstream\"). The chips and the tag fade. Position: on \"near the start of a gene\" a deletion mark lands near the left end and almost the whole bead row turns amber; on \"near the end\" it lands near the right end and only the last three beads turn amber (tags \"early: most of the protein\", \"late: last few\"). The early and late tags fade. On \"the size of the change, not the size of its effect\" the hook's three result chips return in a row (\"same amino acid\", \"one amino acid swapped\", \"chain cut short\") under one shared bracket labelled \"each from 1 base\". Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "three handwritten lines write on, one per cue, each beside its bead icon from scenes 3 to 5: \"Silent: same\" (Glu to Glu, tick), \"Missense: misses the right one\" (Glu to Val, amber ring), \"Nonsense: stop, cut short\" (a short chain ending in a grey bar).",
+      "teachingReason": "Memory: Two aids.",
+      "narrationCue": "Two aids. For substitutions, silent means the same",
+      "motionPurpose": "On the spoken cues: Then \"THE FAT CAT\" writes on beneath with the F struck out and the three-letter brackets sliding one place (no tag; the narration says it). Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "three handwritten lines write on, one per cue, each beside its bead icon from scenes 3 to 5: \"Silent: same\" (Glu to Glu, tick), \"Missense: misses the right one\" (Glu to Val, amber ring), \"Nonsense: stop, cut short\" (a short chain ending in a grey bar). Then \"THE FAT CAT\" writes on beneath with the F struck out and the three-letter brackets sliding one place (no tag; the narration says it). Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no strands, beads or tags from earlier scenes.",
+      "teachingReason": "Unseen transfer task (attempt one (three mutant sequences)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First, here's part of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (three mutant sequences))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no strands, beads or tags from earlier scenes. The card writes on as an exam question: \"The sequence below is part of the mRNA for an enzyme. Mutants A, B and C each carry one point mutation.\" Four lines in a fixed-width face, codons spaced: \"Normal: 5' AUG GCA UAC CAG UGG 3'\", \"Mutant A: 5' AUG GCG UAC CAG UGG 3'\", \"Mutant B: 5' AUG GCA UAA CAG UGG 3'\", \"Mutant C: 5' AUG GCA ACC AGU GG... 3'\". Beside them a chart excerpt headed \"Codon chart (part)\", rows alphabetical and written in full: \"ACC Thr\", \"AGU Ser\", \"AUG Met (start)\", \"CAG Gln\", \"GCA Ala\", \"GCG Ala\", \"UAA stop\", \"UAC Tyr\", \"UGG Trp\" (computed). Demand: \"For each mutant, name the type of point mutation and describe its effect on the polypeptide. (6 marks)\". A three-row answer table: \"mutant\", \"type of mutation\", \"effect on the polypeptide\". Nothing answer-bearing: no highlighted letters, no beads. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top (the four sequences stay readable); the chart excerpt stays at the right.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "G C A to G C G / U A C became U A A / lost a base / every codon after it changes / the classic mistake",
+      "motionPurpose": "On the spoken cues: (1) On \"G C A to G C G\" the second codon of A and of Normal underline amber, the chart rows \"GCA Ala\" and \"GCG Ala\" light; row A fills \"silent substitution | same amino acids: Met, Ala, Tyr, Gln, Trp\". (2) On \"U A C became U A A\" the third codons underline; \"UAA stop\" lights grey; row B fills",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (the four sequences stay readable); the chart excerpt stays at the right. (1) On \"G C A to G C G\" the second codon of A and of Normal underline amber, the chart rows \"GCA Ala\" and \"GCG Ala\" light; row A fills \"silent substitution | same amino acids: Met, Ala, Tyr, Gln, Trp\". (2) On \"U A C became U A A\" the third codons underline; \"UAA stop\" lights grey; row B fills \"nonsense substitution | stops after 2 amino acids: Met, Ala\". (3) On \"lost a base\" the \"U\" missing from Mutant C's third codon is marked with a small amber caret against Normal, and Mutant C's brackets are drawn in under the regrouped codons; on \"every codon after it changes\" \"ACC Thr\" and \"AGU Ser\" light; row C fills \"deletion (frameshift) | every codon after it changes: Met, Ala, Thr, Ser, ...\". (4) On \"the classic mistake\" the chip \"C is a substitution: one amino acid changes\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (three bases against four)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. The most common cystic fibrosis allele has",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (three bases against four))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question: \"The most common allele that causes cystic fibrosis has three bases deleted from the *CFTR* gene. A common allele that causes Tay-Sachs disease has four bases inserted into the *HEXA* gene. Explain why the CFTR protein is missing only one amino acid, while the HEXA protein is changed from the insertion onwards and is cut short. (3 marks)\". One answer box. Nothing answer-bearing: no strands, brackets or \"multiple of three\" text. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "three bases / one codon's worth / Four isn't a multiple of three / a stop codon soon appears / only affects the amino acids where it happens",
+      "motionPurpose": "On the spoken cues: Two short coded codon rows draw under it, left \"CFTR\" and right \"HEXA\" (brackets only, no letters, so nothing is mistaken for the real sequence). (1) On \"three bases\" \"three bases deleted\" underlines amber in the strip; on \"one codon's worth\" three positions lift out of the left row and the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Two short coded codon rows draw under it, left \"CFTR\" and right \"HEXA\" (brackets only, no letters, so nothing is mistaken for the real sequence). (1) On \"three bases\" \"three bases deleted\" underlines amber in the strip; on \"one codon's worth\" three positions lift out of the left row and the brackets close up with no regrouping; one bead leaves the bead row above it (line: \"3 = a multiple of 3: frame kept, one amino acid lost\"). (2) On \"Four isn't a multiple of three\" \"four bases inserted\" underlines; four amber positions slide into the right row and every bracket after them regroups, the beads after it turning amber; on \"a stop codon soon appears\" a grey stop bar closes the right row early (line: \"4 is not a multiple of 3: frameshift, early stop\"). (3) On \"only affects the amino acids where it happens\" the chip \"each change only affects the amino acids where it happens\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on left to right, one per cue, joined by arrows: \"1. substitution, or insertion or deletion?\" (the three demonstration icons from scene 2), \"2. read the new codon, or count the bases: multiple of 3?\" (a chart row icon and a regrouping bracket icon), \"3. where is it? effect on the protein\" (the long gene band with an early and a late mark).",
+      "teachingReason": "Decision rule and handoff: So when a question gives you a point mutation, first ask whether it's a substitution, or an insertion or deletion.",
+      "narrationCue": "So when a question gives you a point",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: chromosomal mutations\" (a small coded chromosome bar with one amber segment). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on left to right, one per cue, joined by arrows: \"1. substitution, or insertion or deletion?\" (the three demonstration icons from scene 2), \"2. read the new codon, or count the bases: multiple of 3?\" (a chart row icon and a regrouping bracket icon), \"3. where is it? effect on the protein\" (the long gene band with an early and a late mark). A \"Next\" chip slides in at the lower right: \"Next: chromosomal mutations\" (a small coded chromosome bar with one amber segment). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b03-learning-review.md",
+      "sha256": "fb8a8ac2fea66dd2c909131a147d9cab56f8aeb40a6ef7d759bd77360cebd8e2"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b03-claude-science-check.md",
+      "sha256": "552c2ab6245fb18eafc993c8060354361dcb8313139a9a81a1250fc56099aa73"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

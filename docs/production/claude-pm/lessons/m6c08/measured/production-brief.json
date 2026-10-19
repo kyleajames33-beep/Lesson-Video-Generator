@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c08/measured/lesson.json",
+    "lessonSha256": "8a1315328133a46e9fe8584a4fb8a478157bb21137cf465bc81a5c7ee5eaa623"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C07 (pH = −log[H₃O⁺], pOH, pH + pOH = 14 at 25 °C, the decimal-places rule, strong acids give [H₃O⁺] = c, \"check it's strong first\"). C05 (weak acids and bases ionise partly; single and double arrows; ammonia is a weak base; propanoic acid is not on the strong list). C06 (conjugate pairs; NH₃ + H₂O ⇌ NH₄⁺ + OH⁻). C01 (H⁺(aq) means H₃O⁺). Module 5: Ka and Kb expressions with water left out (chem-m5-c10); ICE tables in mol/L, x, \"drop the x\" when K is very small and the start is not tiny, and the 5% rule of thumb (chem-m5-c06b); \"HSC questions are written so you shouldn't need\" the quadratic formula (chem-m5-c06b, owner decision A). Not assumed: pKa, Ka × Kb = Kw, buffers.",
+    "startsWith": "Start with partial ionisation and a known initial concentration. The video opens: A student needs the pH of zero point one five zero moles per litre propanoic acid. They treat it like hydrochloric acid: the hydronium equals the concentration, so the pH is zero point eight two four. But the pH meter reads two point eight five.",
+    "stopsAfter": "explaining why a weak acid's [H₃O⁺] is far below its concentration; setting up an ICE table for a weak acid or weak base from its initial concentration, with the reason each ion gains x; writing Ka = x²/(c − x) or Kb = x²/(c − x); dropping x when the constant is tiny, finding x, and checking it is under 5% of c; stating the equilibrium concentrations of all three species; converting x to pH, through pOH for a base, with the right decimal places; saying what to do when the check fails; deciding strong or weak before choosing the method. No Ka or pKa from a measured pH, no pKa, no ranking by Ka (chem-m6-c10), no worked quadratic (chem-m6-g02), no salt pH or Ka × Kb = Kw (chem-m6-c10, c13, c14), no buffers (chem-m6-c11).",
+    "nextLesson": "why neutralising a weak acid can release a different amount of heat (route chem-m6-c09)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c08.md"
+  ],
+  "teaching": {
+    "task": "A pH meter reads 2.85 in a propanoic acid solution, but treating it like hydrochloric acid predicts 0.824. Why does that method fail for a weak acid, and how do Ka and an ICE table give the right hydronium concentration and pH, or the hydroxide and pH for a weak base?",
+    "causalExplanation": "(1) the strong-acid method gives pH 0.824 for propanoic acid; the meter reads 2.85: why? (1); (2) propanoic acid is weak: most molecules stay whole, so [H₃O⁺] is far below c; molecules and ions are in equilibrium, which has Ka (Module 5); the unknown is how much ionises, x (2); (3) worked example: each molecule that ionises makes one hydronium and one propanoate, so the table rows follow; Ka = x²/(0.150 − x) (3); (4) Ka is tiny next to c, so x is tiny, so 0.150 − x ≈ 0.150; x = √(Ka c) (4); (5) check x ÷ c under 5%; the equilibrium concentrations; pH with the right decimal places; fewer than one molecule in a hundred, which is why the strong method failed (5); (6) when x is not small (larger Ka, or more dilute), the check fails and the full equation is needed (6); (7) a weak base takes protons from water, making hydroxide: the same table with Kb gives [OH⁻] (7); (8) then pOH and pH = 14 − pOH; reporting pOH as pH is the slip (8); (9) the first decision is strong or weak (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "the strong-acid method predicts pH 0.824 for propanoic acid, but the meter reads 2.85. The lens shows why (most molecules stay whole), and the ICE table is then built one row at a time from the reason each ion forms, with the small-x approximation checked, a case where the check fails, and the same table with Kb for a weak base. Two exam calculations follow with brief feedback.",
+    "openingDecision": "A student needs the pH of zero point one five zero moles per litre propanoic acid. They treat it like hydrochloric acid: the hydronium equals the concentration, so the pH is zero point eight two four. But the pH meter reads two point eight five. That's two pH units out, about a hundred times too much hydronium. So what went wrong, and how do you calculate the right answer?",
+    "understandingCheck": "(A1) \"Methanoic acid (HCOOH) is the acid in some ant stings. Calculate the pH of a 0.200 mol/L methanoic acid solution at 25 °C, given that Ka = 1.8 × 10⁻⁴. Show that the simplifying assumption is valid.\" New acid with a Ka about 14 times larger than propanoic acid's, so the check gives 3.0% (closer to the limit than the worked example's 0.93%). Crossed mistake: \"[H₃O⁺] = 0.200 mol/L: pH 0.699\". (A2) \"Methylamine (CH₃NH₂) is a weak base that reacts with water in the same way as ammonia. Calculate the pH of a 0.400 mol/L methylamine solution at 25 °C, given that Kb = 4.4 × 10⁻⁴.\" New base; the student writes the equation themselves. Crossed mistake: \"[OH⁻] = 0.400 mol/L: pH 13.602\" (the strong-base method; the worked example already crossed \"pOH as pH\").",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH–]) for a range of solutions (ACSCH102)\" this video starts from the route's partial ionisation and known initial concentration and stops at the equilibrium ion concentration and pH. It teaches: why [H₃O⁺] is far below c for a weak acid (most molecules stay whole; Module 5 and C05 callbacks); the Ka expression for HA + H₂O ⇌ H₃O⁺ + A⁻ (Module 5 C10 callback, one line); the ICE table for a weak acid in mol/L, with x as the amount that ionises and the reason each ion gains x; Ka = x²/(c − x); dropping x beside c when Ka is tiny and c is not (Module 5 C6b callback); the 5% check; all three equilibrium concentrations; what to do when the check fails (named only); the same table for a weak base with Kb and [OH⁻], finishing through pOH (C07 callback); the strong-or-weak check that chooses the method. Not here: Ka or pKa from a measured pH, pKa itself, and ranking acids by Ka (chem-m6-c10, whose dotpoint is \"calculate and apply the dissociation constant (Ka) and pKa\"; see Open decisions); solving the quadratic (named, not worked; method-selection practice is chem-m6-g02); Ka × Kb = Kw and salt pH such as sodium acetate (chem-m6-c10, c13, c14); buffers, partial neutralisation and Henderson-Hasselbalch (chem-m6-c11; site L09 card 5 and worked example 3(c) not used); polyprotic acids. The site's aspirin and ibuprofen hook is not used (register draft corrections)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole weak acid molecules amber-outlined (C05); the acid's anion (propanoate, methanoate) grey-violet; water pale blue; x and its sliver on the check ruler teal; meter readouts amber digits; pOH lines violet-tinted, pH lines teal-tinted. Board layout (constant, C03 and C07): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the ICE table and, under it, the working, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once (task, givens card or table, current line); every label fades when its sentence ends. The ICE table counts as one item while it is being filled; once filled, only its equilibrium row stays bright. Reuse: painted plates (inspected 19 Oct): `m6-ph-meter-probe-beaker-v1.png` (hook: coded amber readout \"2.85\", beaker labelled \"propanoic acid, 0.150 mol/L\"), `m6-beaker-v1.png` (scene 2, the same solution for the lens), `m5x-ammonia-bottle-v1.png` (scenes 7 and 8, coded label \"ammonia solution, 0.200 mol/L\"), `m6-ant-formic-acid-v1.png` (inspected 19 Oct: a painted black ant in side view, no person or hand; attempt 1 card, small, beside the context sentence). No plate for methylamine (attempt 2 is a worded question; a coded structure is not needed). No new plates needed. No human figures.",
+    "transitionPlan": "The meter plate opens with the disagreeing readout; the weak-acid lens zooms in; the givens card enters at the left and the ICE table fills row by row in the centre with the working beneath it, earlier lines dimming; the check ruler shows x as a teal sliver; the weak-base table reuses the same layout with violet pOH lines; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-ph-meter-probe-beaker-v1.png` at the right, its beaker labelled (coded) \"propanoic acid, 0.150 mol/L\".",
+      "teachingReason": "Hook (the meter disagrees): A student needs the pH of zero point one five zero moles per litre propanoic acid.",
+      "narrationCue": "zero point eight two four / two point eight five / right",
+      "motionPurpose": "On the spoken cues: At the left the student's working writes in grey handwriting: \"[H₃O⁺] = 0.150 mol/L\", then \"pH = −log(0.150) = 0.824\" on \"zero point eight two four\". On \"two point eight five\" the amber readout in the meter screen counts to \"2.85\" and a pen ring circles it. On \"two pH units out\" a short pH ruler draws between them: 0.824 and 2.85 marked, the gap bracketed \"about 100 × less H₃O⁺ than predicted\". On \"right\" the grey",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-ph-meter-probe-beaker-v1.png` at the right, its beaker labelled (coded) \"propanoic acid, 0.150 mol/L\". At the left the student's working writes in grey handwriting: \"[H₃O⁺] = 0.150 mol/L\", then \"pH = −log(0.150) = 0.824\" on \"zero point eight two four\". On \"two point eight five\" the amber readout in the meter screen counts to \"2.85\" and a pen ring circles it. On \"two pH units out\" a short pH ruler draws between them: 0.824 and 2.85 marked, the gap bracketed \"about 100 × less H₃O⁺ than predicted\". On \"right\" the grey working dims and a heading writes: \"Weak acid: what is [H₃O⁺]?\" Bright at the end: the heading, the readout and the bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "why-weak",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Why: a weak acid stays mostly whole: Propanoic acid is weak.",
+      "narrationCue": "weak / equilibrium / K a / x",
+      "motionPurpose": "On the spoken cues: `m6-beaker-v1.png` small at the left with the same label; a large particle lens opens from it: about 100 amber-outlined propanoic acid molecules among pale blue water. On \"weak\" one molecule hands a teal token to a water molecule (C01 hop) while, elsewhere, a propanoate takes one back from a hydronium (dashed reverse hop, C06); the swap keeps going, so about one ion pair is present at any moment; a small counter",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-beaker-v1.png` small at the left with the same label; a large particle lens opens from it: about 100 amber-outlined propanoic acid molecules among pale blue water. On \"weak\" one molecule hands a teal token to a water molecule (C01 hop) while, elsewhere, a propanoate takes one back from a hydronium (dashed reverse hop, C06); the swap keeps going, so about one ion pair is present at any moment; a small counter under the lens reads \"ionised: about 1 in 100\". On \"equilibrium\" the strip writes \"CH₃CH₂COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃CH₂COO⁻(aq)\". On \"K a\" the C5 builder writes \"Ka = [H₃O⁺][CH₃CH₂COO⁻] / [CH₃CH₂COOH]\" with H₂O sliding into the grey \"left out\" tray, and a small grey tag \"Module 5\" (dims after its sentence). On \"x\" one ionised pair in the lens gets a teal bracket \"x = concentration that ionises (mol/L)\", and the counter dims. Bright at the end: the strip, the Ka line and the x bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-ice-table",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 1: the task and the ICE table: Here's the full method, with K a for propanoic acid one point three times ten to the minus five.",
+      "narrationCue": "ICE table / no ions / one hydronium and one propanoate / x squared over zero point one five zero minus x",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the pH\". Equation strip: \"CH₃CH₂COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃CH₂COO⁻(aq)\". Givens card: \"propanoic acid: 0.150 mol/L\" | \"Ka = 1.3 × 10⁻⁵ (25 °C)\". On \"ICE table\" a three-column table draws under the strip, its columns sitting under the three species and its rows labelled \"I\", \"C\", \"E\" (each letter expanding briefly to \"initial\", \"change\", \"equilibrium\" and shrinking back). On \"no ions\" the I",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the pH\". Equation strip: \"CH₃CH₂COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃CH₂COO⁻(aq)\". Givens card: \"propanoic acid: 0.150 mol/L\" | \"Ka = 1.3 × 10⁻⁵ (25 °C)\". On \"ICE table\" a three-column table draws under the strip, its columns sitting under the three species and its rows labelled \"I\", \"C\", \"E\" (each letter expanding briefly to \"initial\", \"change\", \"equilibrium\" and shrinking back). On \"no ions\" the I row fills \"0.150\", \"0\", \"0\", with a small grey tag on the zeros \"ignore water's 10⁻⁷\" that dims. On \"one hydronium and one propanoate\" the C01 hop plays once on the strip (one teal token from the acid to water) and the C row fills \"−x\", \"+x\", \"+x\", each cell lighting as the 1 : 1 : 1 coefficients on the strip pulse. The E row fills \"0.150 − x\", \"x\", \"x\". On \"x squared\" the builder line from scene 2 returns and substitutes: \"Ka = x · x / (0.150 − x) = x² / (0.150 − x) = 1.3 × 10⁻⁵\"; the I and C rows dim. Bright at the end: the task line, the E row and the substituted line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "token flight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-drop-x",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 1 of 2: x\".",
+      "teachingReason": "Worked example 1: drop the x: K a is tiny next to zero point one five zero, so x is tiny too.",
+      "narrationCue": "drop the x / one point nine five times ten to the minus six / one point four times ten to the minus three",
+      "motionPurpose": "On the spoken cues: The givens card and the strip dim (the table's column heads keep the species). The C6b check ruler draws under the line: a long bar labelled \"0.150\" with a hair-thin teal sliver at its end labelled \"x?\". On \"drop the x\" the \"− x\" in \"(0.150 − x)\" greys and slides out; the line becomes \"x² / 0.150 ≈ 1.3 × 10⁻⁵\" with \"≈\" replacing \"=\", and the E-row cell \"0.150 − x\" changes to \"≈ 0.150\". On \"one point nine five times",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 1 of 2: x\". The givens card and the strip dim (the table's column heads keep the species). The C6b check ruler draws under the line: a long bar labelled \"0.150\" with a hair-thin teal sliver at its end labelled \"x?\". On \"drop the x\" the \"− x\" in \"(0.150 − x)\" greys and slides out; the line becomes \"x² / 0.150 ≈ 1.3 × 10⁻⁵\" with \"≈\" replacing \"=\", and the E-row cell \"0.150 − x\" changes to \"≈ 0.150\". On \"one point nine five times ten to the minus six\" the line \"x² = 1.3 × 10⁻⁵ × 0.150 = 1.95 × 10⁻⁶\" writes (the previous line dims); on \"one point four times ten to the minus three\" the line \"x = √(1.95 × 10⁻⁶) = 1.396 × 10⁻³ → 1.4 × 10⁻³ mol/L\" writes (no precision tag here; scene 5 says why). The result shrinks to a kept chip \"x = 1.4 × 10⁻³ mol/L\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-check-ph",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 2 of 2: check and pH\".",
+      "teachingReason": "Worked example 1: check, concentrations and pH: Now check that dropping x was fair. x is zero point nine three percent of zero point one five zero, well under the five percent rule of thumb.",
+      "narrationCue": "zero point nine three percent / two point eight five / meter / one molecule in a hundred",
+      "motionPurpose": "On the spoken cues: The check ruler returns full width with the sliver drawn to scale and a dashed line at 5% of the bar, far to the right; on \"zero point nine three percent\" the label \"1.396 × 10⁻³ ÷ 0.150 = 0.93%\" writes with a tick, and the dashed line labels itself \"5%: rule of thumb\". The ruler dims. On \"hydronium and propanoate\" the E row lights and fills its values: \"0.149\", \"1.4 × 10⁻³\", \"1.4 × 10⁻³\" (all mol/L). On \"two point",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 2 of 2: check and pH\". The check ruler returns full width with the sliver drawn to scale and a dashed line at 5% of the bar, far to the right; on \"zero point nine three percent\" the label \"1.396 × 10⁻³ ÷ 0.150 = 0.93%\" writes with a tick, and the dashed line labels itself \"5%: rule of thumb\". The ruler dims. On \"hydronium and propanoate\" the E row lights and fills its values: \"0.149\", \"1.4 × 10⁻³\", \"1.4 × 10⁻³\" (all mol/L). On \"two point eight five\" the E row dims to its x cells, the line \"pH = −log(1.396 × 10⁻³) = 2.85\" writes and the answer chip \"pH = 2.85\" pins, with a small grey tag \"x: 2 s.f. (from Ka) → 2 d.p.\" that dims after its sentence. On \"meter\" a small amber \"2.85 ✓\" readout chip joins the answer chip (no plate). On \"one molecule in a hundred\" the pH line dims, the scene 2 lens thumbnail returns small with its counter \"about 1 in 100\", and the hook's grey \"0.824\" chip fades in and is crossed (caption \"weak: [H₃O⁺] ≠ c\"). Bright at the end: the answer chip, the lens thumbnail and the crossed chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "Cam lens zoom",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "check-fails",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "When the check fails: The shortcut isn't always safe.",
+      "narrationCue": "eight percent / show the check",
+      "motionPurpose": "On the spoken cues: A small card: \"HF: 0.100 mol/L, Ka = 6.8 × 10⁻⁴\". The check ruler draws again: this time the x sliver is a visible chunk, and on \"eight percent\" it reaches past the dashed 5% line, which turns amber; label \"8.2%: over 5%\", and the HF card dims to grey. A chip \"small Ka, so always drop x\" fades in and is crossed (caption \"x must be small next to c\"). On \"solve the full equation\" a grey line writes \"x² / (0.100 − x) =",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A small card: \"HF: 0.100 mol/L, Ka = 6.8 × 10⁻⁴\". The check ruler draws again: this time the x sliver is a visible chunk, and on \"eight percent\" it reaches past the dashed 5% line, which turns amber; label \"8.2%: over 5%\", and the HF card dims to grey. A chip \"small Ka, so always drop x\" fades in and is crossed (caption \"x must be small next to c\"). On \"solve the full equation\" a grey line writes \"x² / (0.100 − x) = 6.8 × 10⁻⁴: keep the x\" (no working). On \"show the check\" a small stamp writes beside the ruler: \"x ÷ c × 100% < 5% ✓ or ✗\". Bright at the end: the ruler, the stamp and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "weak-base",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the three zones; `m5x-ammonia-bottle-v1.png` small at the right with coded label \"ammonia solution, 0.200 mol/L\".",
+      "teachingReason": "A weak base: the same table with Kb: Weak bases work the same way, with K b and hydroxide.",
+      "narrationCue": "hydroxide / one point nine times ten to the minus three",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the pH\". Strip: \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\"; on \"hydroxide\" a teal token hops from a water molecule to ammonia (C06 direction) and the OH⁻ on the strip turns violet. Givens card: \"NH₃: 0.200 mol/L\" | \"Kb = 1.8 × 10⁻⁵ (25 °C)\". The ICE table fills fast, row by row on \"the table is the same\": I \"0.200, 0, 0\"; C \"−x, +x, +x\"; E \"0.200 − x, x, x\"; the line \"Kb = [NH₄⁺][OH⁻] / [NH₃] = x² /",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones; `m5x-ammonia-bottle-v1.png` small at the right with coded label \"ammonia solution, 0.200 mol/L\". Task line: \"Find the pH\". Strip: \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\"; on \"hydroxide\" a teal token hops from a water molecule to ammonia (C06 direction) and the OH⁻ on the strip turns violet. Givens card: \"NH₃: 0.200 mol/L\" | \"Kb = 1.8 × 10⁻⁵ (25 °C)\". The ICE table fills fast, row by row on \"the table is the same\": I \"0.200, 0, 0\"; C \"−x, +x, +x\"; E \"0.200 − x, x, x\"; the line \"Kb = [NH₄⁺][OH⁻] / [NH₃] = x² / (0.200 − x)\" writes and its \"− x\" greys out on \"Drop the x\"; the plate and the givens card dim once the table is filled. On \"one point nine times ten to the minus three\" the line \"x = √(1.8 × 10⁻⁵ × 0.200) = 1.897 × 10⁻³ → 1.9 × 10⁻³ mol/L\" writes, and a violet bracket labels it \"x = [OH⁻]\". On \"under one percent\" the check ruler thumbnail shows \"0.95% ✓\". Earlier lines dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "weak-base-ph",
+      "visualDecision": "new",
+      "visualReference": "the kept chip \"x = [OH⁻] = 1.9 × 10⁻³ mol/L\" pulses violet on \"hydroxide\".",
+      "teachingReason": "Weak base: through pOH to pH: But this time x is the hydroxide, not hydronium.",
+      "narrationCue": "hydroxide / two point seven two / eleven point two eight",
+      "motionPurpose": "On the spoken cues: Lines write one per cue: \"pOH = −log(1.897 × 10⁻³) = 2.72\" on \"two point seven two\"; \"pH = 14.00 − 2.72 = 11.28\" on \"eleven point two eight\", the answer chip \"pH = 11.28\" pinning and the pOH line dimming. On \"slip\" a chip \"pH = 2.72\" fades in and is crossed (caption \"that's the pOH; a base has pH above 7\").",
+      "motionRole": "explain",
+      "onScreenChange": "the kept chip \"x = [OH⁻] = 1.9 × 10⁻³ mol/L\" pulses violet on \"hydroxide\". Lines write one per cue: \"pOH = −log(1.897 × 10⁻³) = 2.72\" on \"two point seven two\"; \"pH = 14.00 − 2.72 = 11.28\" on \"eleven point two eight\", the answer chip \"pH = 11.28\" pinning and the pOH line dimming. On \"slip\" a chip \"pH = 2.72\" fades in and is crossed (caption \"that's the pOH; a base has pH above 7\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "strong-or-weak",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Strong or weak first: So every pH question starts with one decision.",
+      "narrationCue": "strong / weak",
+      "motionPurpose": "On the spoken cues: The C07 gate icon writes centre: \"Strong or weak?\". On \"strong\" the left branch lights teal: \"strong: [H₃O⁺] = c (or [OH⁻] from c)\" with a thumbnail of C07's HNO₃ line. On \"weak\" the right branch lights amber: \"weak: Ka or Kb, ICE table, x = √(K × c), check < 5%\" with a thumbnail of the propanoic acid E row. On \"K a value\" a small chip \"Ka given → weak\" writes under the right branch.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The C07 gate icon writes centre: \"Strong or weak?\". On \"strong\" the left branch lights teal: \"strong: [H₃O⁺] = c (or [OH⁻] from c)\" with a thumbnail of C07's HNO₃ line. On \"weak\" the right branch lights amber: \"weak: Ka or Kb, ICE table, x = √(K × c), check < 5%\" with a thumbnail of the propanoic acid E row. On \"K a value\" a small chip \"Ka given → weak\" writes under the right branch. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "Strong or weak first. / x is about the square root of K a times c / check that x is under five percent",
+      "motionPurpose": "On the spoken cues: The first aid writes large and handwritten: \"Strong or weak first.\" On \"square root\" the second line writes: \"Weak: x ≈ √(Ka × c), then check x < 5% of c.\" with a tiny check-ruler thumbnail. On \"weak base\" the third line writes: \"Weak base: x = [OH⁻] → pOH → pH.\" Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The first aid writes large and handwritten: \"Strong or weak first.\" On \"square root\" the second line writes: \"Weak: x ≈ √(Ka × c), then check x < 5% of c.\" with a tiny check-ruler thumbnail. On \"weak base\" the third line writes: \"Weak base: x = [OH⁻] → pOH → pH.\" Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Methanoic acid is the acid in",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-ant-formic-acid-v1.png` small at the top right. Question card, worded as printed: \"Methanoic acid (HCOOH) is the acid in some ant stings. Calculate the pH of a 0.200 mol/L methanoic acid solution at 25 °C, given that Ka = 1.8 × 10⁻⁴. Show that the simplifying assumption is valid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no table, no ruler, no aid.",
+      "motionTools": [
+        "table build",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "six point zero times ten to the minus three / three percent / two point two two / point zero one / strong",
+      "motionPurpose": "On the spoken cues: On \"six point zero times ten to the minus three\" \"0.200 mol/L\" and \"Ka = 1.8 × 10⁻⁴\" are underlined and a compact E row writes \"0.200 − x ≈ 0.200 | x | x\", then \"x² = 1.8 × 10⁻⁴ × 0.200 = 3.6 × 10⁻⁵; x = 6.0 × 10⁻³ mol/L\". On \"three percent\" \"Show that the simplifying assumption is valid\" is underlined and the check line writes \"6.0 × 10⁻³ ÷ 0.200 = 3.0% < 5% ✓\" (the x lines dim). On \"two point two two\" \"pH =",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"six point zero times ten to the minus three\" \"0.200 mol/L\" and \"Ka = 1.8 × 10⁻⁴\" are underlined and a compact E row writes \"0.200 − x ≈ 0.200 | x | x\", then \"x² = 1.8 × 10⁻⁴ × 0.200 = 3.6 × 10⁻⁵; x = 6.0 × 10⁻³ mol/L\". On \"three percent\" \"Show that the simplifying assumption is valid\" is underlined and the check line writes \"6.0 × 10⁻³ ÷ 0.200 = 3.0% < 5% ✓\" (the x lines dim). On \"two point two two\" \"pH = −log(6.0 × 10⁻³) = 2.22\" writes and the answer chip \"pH = 2.22\" pins; the check line dims. On \"point zero one\" a small grey tag writes under the answer chip: \"full equation: 2.23 (shortcut within 0.01)\". On \"strong\" the tag dims and a chip \"[H₃O⁺] = 0.200: pH 0.699\" fades in and is crossed (caption \"weak: [H₃O⁺] ≠ c\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"Methylamine (CH₃NH₂) is a weak base that reacts with water in the same way as ammonia.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Methylamine is a weak base that",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"Methylamine (CH₃NH₂) is a weak base that reacts with water in the same way as ammonia. Calculate the pH of a 0.400 mol/L methylamine solution at 25 °C, given that Kb = 4.4 × 10⁻⁴.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no equation strip, no table.",
+      "motionTools": [
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "hydroxide / one point three times ten to the minus two / twelve point one two",
+      "motionPurpose": "On the spoken cues: On \"hydroxide\" \"reacts with water in the same way as ammonia\" is underlined and the strip writes \"CH₃NH₂(aq) + H₂O(l) ⇌ CH₃NH₃⁺(aq) + OH⁻(aq)\". On \"one point three times ten to the minus two\" \"0.400 mol/L\" and \"Kb = 4.4 × 10⁻⁴\" are underlined and \"x = √(4.4 × 10⁻⁴ × 0.400) = 1.33 × 10⁻² → 1.3 × 10⁻² mol/L = [OH⁻]\" writes, with \"3.3% < 5% ✓\" beside it. Then \"pOH = 1.88; pH = 14.00 − 1.88 = 12.12\" and the answer chip",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"hydroxide\" \"reacts with water in the same way as ammonia\" is underlined and the strip writes \"CH₃NH₂(aq) + H₂O(l) ⇌ CH₃NH₃⁺(aq) + OH⁻(aq)\". On \"one point three times ten to the minus two\" \"0.400 mol/L\" and \"Kb = 4.4 × 10⁻⁴\" are underlined and \"x = √(4.4 × 10⁻⁴ × 0.400) = 1.33 × 10⁻² → 1.3 × 10⁻² mol/L = [OH⁻]\" writes, with \"3.3% < 5% ✓\" beside it. Then \"pOH = 1.88; pH = 14.00 − 1.88 = 12.12\" and the answer chip \"pH = 12.12\" pins; earlier lines dim. On \"treats a weak base as strong\" a chip \"[OH⁻] = 0.400: pH 13.602\" fades in and is crossed (caption \"weak base: [OH⁻] ≠ c\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Strong or weak?\"",
+      "teachingReason": "Decision rule and handoff: So for any pH question, decide first: strong or weak.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Strong: [H₃O⁺] or [OH⁻] from c.\" \"3 Weak: equation, ICE table, x ≈ √(K × c), check x < 5% of c.\" \"4 pH = −log[H₃O⁺]; for a base, pOH first, then 14.00 − pOH.\" On \"Next\" a chip \"Next: heat of neutralisation for weak acids\" appears with a small `m6-foam-cup-calorimeter-v1.png` (the C03 plate).",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Strong or weak?\" \"2 Strong: [H₃O⁺] or [OH⁻] from c.\" \"3 Weak: equation, ICE table, x ≈ √(K × c), check x < 5% of c.\" \"4 pH = −log[H₃O⁺]; for a base, pOH first, then 14.00 − pOH.\" On \"Next\" a chip \"Next: heat of neutralisation for weak acids\" appears with a small `m6-foam-cup-calorimeter-v1.png` (the C03 plate). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c08-learning-review.md",
+      "sha256": "76a2c3a7d602925167279063768dc7926010563db29205e23176733ead95ddbc"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c08-claude-science-check.md",
+      "sha256": "3146d945bfa158e0b57ecb5af53021b91459be46f3b558dc56565780bb74f865"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

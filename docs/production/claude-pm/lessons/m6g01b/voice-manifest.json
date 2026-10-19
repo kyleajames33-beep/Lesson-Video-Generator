@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-G01-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6g01b/lesson.json",
+  "lessonSha256": "dfcce81f229a1ce84e9185777d06a0b760428aef1ddea8ff24926a8451e0fc7f",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6g01b/lesson.production-brief.json",
+    "sha256": "1bfc9f651ecddfe57068c82b48ed5e608cd69b4bd99165a1b45ad6b9279465bb"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Mutation questions in the HSC give you something to read, a DNA sequence, a chromosome diagram, a karyotype or a case. Every one comes down to three checks. What changed, base by base or gene by gene? What does it do, to the codons, the frame, or the genes? And who can inherit it? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+      "hash": "043d1e548b2d",
+      "textSha256": "043d1e548b2dd1581e6cfdf1edfe3a200b2682d91fbdb15b7fe627bf7992e54c",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/hook.043d1e548b2d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/hook.043d1e548b2d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/hook.043d1e548b2d.generation.json",
+      "plannedRequestSha256": "da04618b7364b554c2538d277c4b368876529dd2a22b39e3d7d1b28fd2a5ad8e"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Here's the template strand for the start of a gene, and three mutants, each with one base changed. Write the mRNA for the normal sequence. Then, for each mutant, name the type of point mutation, and describe its effect on the polypeptide. Pause here to answer.",
+      "hash": "a3dc073b4342",
+      "textSha256": "a3dc073b43428b67dcb3ac9d6e55698588d0f5605c7aafa27ded4ef53aba77d4",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-question.a3dc073b4342.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-question.a3dc073b4342.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-question.a3dc073b4342.generation.json",
+      "plannedRequestSha256": "1ebcd0fa6cf73ac412c74509004979c4966b4124fb3113f7683b61efdf3f38c7"
+    },
+    {
+      "id": "q1-mrna",
+      "parentSceneId": "q1-mrna",
+      "text": "First, which strand is it? It's the template, so the mRNA isn't a copy of it, it's built by pairing with it. A pairs with U, T with A, C with G, and G with C. The strand is written 3' to 5', so the mRNA lines up underneath, 5' to 3'. T A C gives A U G, the start codon. Reading on, the chain is methionine, proline, glutamate, phenylalanine, glycine.",
+      "hash": "2158c463d2a2",
+      "textSha256": "2158c463d2a26d975dda742ced970641cef8ef8d1ede1dd0da32d2fddf4b53d2",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mrna.2158c463d2a2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mrna.2158c463d2a2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mrna.2158c463d2a2.generation.json",
+      "plannedRequestSha256": "2ea9e7848ce707b93f310a28e0f2fa31ea9b07bf9af90f305416682740817faf"
+    },
+    {
+      "id": "q1-mutants",
+      "parentSceneId": "q1-mutants",
+      "text": "Now compare each mutant, one triplet at a time. In mutant one, the second codon becomes C C U. That's still proline, so it's silent. In mutant two, the third codon becomes U A A, a stop codon, so it's nonsense, and the chain stops after two amino acids. In mutant three, the fourth codon becomes U C U, serine instead of phenylalanine. That's missense.",
+      "hash": "ee7e3f99ef4e",
+      "textSha256": "ee7e3f99ef4e04544d3f0141e0577f4186eb4061fc491eeb0db03a95547b6f1a",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mutants.ee7e3f99ef4e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mutants.ee7e3f99ef4e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mutants.ee7e3f99ef4e.generation.json",
+      "plannedRequestSha256": "24037f9a5ad0f3d12471d8414ae8795fb0bbaf0ad9307ca76b6d25da3fc491ea"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is reading the template as if it were the mRNA. That turns T A C into U A C, tyrosine, so there's no start codon at all. A template strand is paired, not copied.",
+      "hash": "b9f574268c63",
+      "textSha256": "b9f574268c63ae977bc6d9e7fd11add912dc73fb35abc2f5f078637622307c4a",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mistake.b9f574268c63.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mistake.b9f574268c63.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q1-mistake.b9f574268c63.generation.json",
+      "plannedRequestSha256": "3330c8e3c7ae48c00e9f27797e4fd7b8fae79e6ba2f099561648b04fdf842296"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. In 1961, Francis Crick and his colleagues studied a gene in a virus that infects bacteria. Here's part of a normal mRNA, and a mutant that still made a working protein. Identify the two point mutations in the mutant. Then explain why amino acids six and seven are normal, even though two to five have changed. Pause here to answer.",
+      "hash": "a54dac21ec2a",
+      "textSha256": "a54dac21ec2af4bcb0cb26f7ae03bb557db430f88b5a7e0b9f5eb2849cbd48fb",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-question.a54dac21ec2a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-question.a54dac21ec2a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-question.a54dac21ec2a.generation.json",
+      "plannedRequestSha256": "48a920a322d8d4f6ec1269992f7ff317dc9f0932abc954834c8342354a1499cb"
+    },
+    {
+      "id": "q2-align",
+      "parentSceneId": "q2-align",
+      "text": "Four codons in a row have changed, which one substitution can't do. So line them up base by base. The first four bases match. Then the normal sequence has a C that the mutant doesn't, so there's a deletion in codon two. After that, the mutant's bases are the normal ones, shifted one place left, until just after codon five, where an extra A appears. That's an insertion.",
+      "hash": "1d7ca5ef47d4",
+      "textSha256": "1d7ca5ef47d425ddcdac46897681aac7b49e6c5927677901424384f3a169f88e",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-align.1d7ca5ef47d4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-align.1d7ca5ef47d4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-align.1d7ca5ef47d4.generation.json",
+      "plannedRequestSha256": "ff22b89953acae562a29d47c8ca9c0359aaa8dce83f8dc075014637a2543a23f"
+    },
+    {
+      "id": "q2-frame",
+      "parentSceneId": "q2-frame",
+      "text": "Now read in threes. The deletion shifts the frame, so codons two to five are regrouped, and those amino acids change. The insertion adds one base back. One removed, one added, so from codon six on, the bases fall into their normal groups of three again. That's why six and seven are normal. Results like this helped show that the code is read in threes.",
+      "hash": "d899f7def8a2",
+      "textSha256": "d899f7def8a2040a2739229ad3a17b29bc61c1c09faad049ac2147e1508da38f",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-frame.d899f7def8a2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-frame.d899f7def8a2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-frame.d899f7def8a2.generation.json",
+      "plannedRequestSha256": "95a4349c66ea7bb1b7e832db969893dc11bcdc567b7a55f08564cb3a7bc9f77f"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is saying a frameshift changes every amino acid to the end. That's true of one deletion on its own. Here, the insertion puts the frame back, so only the stretch between them changes.",
+      "hash": "a3cacffbfb0e",
+      "textSha256": "a3cacffbfb0e2c80215d53e6f20bff7a6d0ddd74737569de17c90d149f8c5154",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-mistake.a3cacffbfb0e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-mistake.a3cacffbfb0e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q2-mistake.a3cacffbfb0e.generation.json",
+      "plannedRequestSha256": "afd22e5e430660c8884ff7a32c2ff515536633add1328acd82428b55b2546c16"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. The diagram shows a normal chromosome, with genes as letters, and a mutated version of it. Name the mutation, and justify your answer. Then, one person with Turner syndrome has forty-five chromosomes, with only one X. Identify this type of mutation, and explain how it could arise during meiosis in one parent. Pause here to answer.",
+      "hash": "fdc3a6d264a7",
+      "textSha256": "fdc3a6d264a7d1e07b75813ed11f00d73dd57e12f74173bedd8f059945114eb5",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-question.fdc3a6d264a7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-question.fdc3a6d264a7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-question.fdc3a6d264a7.generation.json",
+      "plannedRequestSha256": "805e348c6beecc5da68ef36098e06383b8ff9dbfb146c7635f086ca39afac6cc"
+    },
+    {
+      "id": "q3-diagram",
+      "parentSceneId": "q3-diagram",
+      "text": "Compare gene by gene. A is where it should be. Then the normal B, centromere, C, D reads D, C, centromere, B. It's the same genes on the same chromosome, with that stretch reversed, centromere and all. So it's an inversion. Nothing is lost or added, and nothing has come from another chromosome.",
+      "hash": "802875149d38",
+      "textSha256": "802875149d381d12d433cd02c2f24eb9b68b612cb33720ec8927ad8a8cabcb1e",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-diagram.802875149d38.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-diagram.802875149d38.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-diagram.802875149d38.generation.json",
+      "plannedRequestSha256": "b4075641e934a2dfbc0b3c4003437858c7c5f7b9102f533d713839b411f73608"
+    },
+    {
+      "id": "q3-karyotype",
+      "parentSceneId": "q3-karyotype",
+      "text": "Now part b. Forty-five chromosomes means a whole chromosome is missing, so this is a chromosomal mutation in number. It can come from nondisjunction. In one parent's meiosis, the sex chromosomes fail to separate, so one gamete gets no sex chromosome at all. If an X-carrying gamete fertilises it, the zygote has forty-four autosomes and one X.",
+      "hash": "dfe9820fee98",
+      "textSha256": "dfe9820fee989d825cb96620d8d738d17d18cbf4afdec14d8cfe49c5d25a630b",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-karyotype.dfe9820fee98.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-karyotype.dfe9820fee98.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-karyotype.dfe9820fee98.generation.json",
+      "plannedRequestSha256": "e3c60123154c30cd02461f414e915882feb6e2201c0394fb3c7212e9b0d44d99"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake in part a is calling it a translocation, because the centromere moved. But every gene is still on the same chromosome. A translocation needs a different, non-matching chromosome.",
+      "hash": "5c54ef95d4b9",
+      "textSha256": "5c54ef95d4b9cc889a76ebfc53927140538a407a56e27eb002a578bf687c1b68",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-mistake.5c54ef95d4b9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-mistake.5c54ef95d4b9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q3-mistake.5c54ef95d4b9.generation.json",
+      "plannedRequestSha256": "6ffb8dc231f25acd154fab8a7a637334bb1d87268022d2f88a13a5cb8c6758bb"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. Belgian Blue cattle have very large muscles. Most carry two copies of an allele of the myostatin gene with eleven bases deleted from its coding sequence. Myostatin is a protein that limits muscle growth. Explain how deleting eleven bases can leave the cattle with no working myostatin. Then, a normal cow develops the same deletion in one muscle cell. Explain whether her calves could inherit large muscles from it. Pause here to answer.",
+      "hash": "0fbe34c4a4bf",
+      "textSha256": "0fbe34c4a4bf7e8cf03083cad100f0cc86e209af441c4d2d30227d36e880e0e8",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-question.0fbe34c4a4bf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-question.0fbe34c4a4bf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-question.0fbe34c4a4bf.generation.json",
+      "plannedRequestSha256": "09b20ecc848e185f716523a651bc9bf850598e0e4bb2254f5bb406daf171f8f3"
+    },
+    {
+      "id": "q4-frameshift",
+      "parentSceneId": "q4-frameshift",
+      "text": "Start with the number. Eleven isn't a multiple of three, so the deletion shifts the reading frame. Every codon after it is regrouped, so the amino acids from there on change, and a stop codon soon turns up. The protein is cut short, and it's missing the part that does its job. With no working myostatin, nothing limits muscle growth, so the muscles grow larger.",
+      "hash": "05cd16e6f4b4",
+      "textSha256": "05cd16e6f4b4254dd64462c212f17bb361f61618425f154f13f8a96f590da593",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-frameshift.05cd16e6f4b4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-frameshift.05cd16e6f4b4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-frameshift.05cd16e6f4b4.generation.json",
+      "plannedRequestSha256": "5dcfb36f7a5567a0686bd6b2f9f2ac72922121e9e979d2313f33b12398333cc4"
+    },
+    {
+      "id": "q4-somatic",
+      "parentSceneId": "q4-somatic",
+      "text": "Now the cow. Her deletion is in one muscle cell, so it's a somatic mutation. It's copied only into that cell's descendants, not into her eggs. So her calves can't inherit it from this mutation. To pass it on, it would have to be in her germ line.",
+      "hash": "965ea254f0d2",
+      "textSha256": "965ea254f0d289e1a4f3fc732a24dd097d530c54340bc2f56f41880e4be276b9",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-somatic.965ea254f0d2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-somatic.965ea254f0d2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-somatic.965ea254f0d2.generation.json",
+      "plannedRequestSha256": "3de153ad12311a7c97774d000f64c62a4e598b87e2d2591224dca0d2a3dd4b8c"
+    },
+    {
+      "id": "q4-mistake",
+      "parentSceneId": "q4-mistake",
+      "text": "The classic mistake in part a is saying eleven amino acids are lost. Eleven bases aren't eleven codons, and they aren't a whole number of codons either, so the frame shifts.",
+      "hash": "2a9e6626ff44",
+      "textSha256": "2a9e6626ff44328b0e11d9ad140bb321727be375947147357bbb91f1cce4f65f",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-mistake.2a9e6626ff44.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-mistake.2a9e6626ff44.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/q4-mistake.2a9e6626ff44.generation.json",
+      "plannedRequestSha256": "63523683c6680d8f02e2dc6fab15d7a84ab171653347bf8dd14efa111dfc90f6"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start any mutation question. For a sequence, find the strand, write the mRNA, then compare codon by codon. If several codons in a row differ, align base by base, and count: is the frame shifted, and is it put back? For a chromosome, compare gene by gene. And for any mutation, ask where it is, somatic or germ line. Next, how meiosis and fertilisation vary offspring.",
+      "hash": "7e647e195435",
+      "textSha256": "7e647e195435d43e748c7fe27514aaeedea39785c5490563113d65e9b1875854",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/decision-board.7e647e195435.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/decision-board.7e647e195435.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/decision-board.7e647e195435.generation.json",
+      "plannedRequestSha256": "a1e2b89d28332e7fd3f07abdf04078df7c545a43cc901d7e912a9330a6798b7f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G01-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C06-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c06/lesson.json",
+  "lessonSha256": "3813b149578e7ad8ee487b8369aa4e3955a47889f720b3c6ce655d1902db4c71",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c06/lesson.production-brief.json",
+    "sha256": "5ce63001f8bacd21fbddcaf3d49192f43a791acb79e6bbcb49786513917c3a90"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Sprinkle baking soda into hydrochloric acid, and it fizzes, and the solution becomes less acidic. Now sprinkle it into sodium hydroxide solution. No fizz this time, but the solution becomes less basic. The same white powder calms an acid and calms a base. So how can one substance act as a base in one reaction, and as an acid in another?",
+      "hash": "bb4db2385023",
+      "textSha256": "bb4db238502311b27ccad362021fe149baff14441efca009bd7d0e215f97bafa",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/hook.bb4db2385023.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/hook.bb4db2385023.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/hook.bb4db2385023.generation.json",
+      "plannedRequestSha256": "02121211adbf9adf30e8db9d6cc6deba24f9641491cf7735d77a1ae3fadf9e4d"
+    },
+    {
+      "id": "run-backwards",
+      "parentSceneId": "run-backwards",
+      "text": "Start with an equation you already know: ammonia in water. Water gives a proton to ammonia, making ammonium and hydroxide. Now run it backwards. Ammonium can give that proton back, so it's an acid. Hydroxide can take it, so it's a base. Every acid-base reaction makes a new acid and a new base, ready to swap the proton back. The proton keeps swapping both ways, which is why this equation has the double arrow.",
+      "hash": "a49ee288746a",
+      "textSha256": "a49ee288746a0e6aa826e66a31c743c798cb6f70a0f832ea2067a12898696446",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/run-backwards.a49ee288746a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/run-backwards.a49ee288746a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/run-backwards.a49ee288746a.generation.json",
+      "plannedRequestSha256": "9f12769a3d39137d9f7ce69bf7e6bc759e50987e3e6a7acaa8beb60af2d230c2"
+    },
+    {
+      "id": "conjugate-pairs",
+      "parentSceneId": "conjugate-pairs",
+      "text": "Each new species is linked to the one it came from. When an acid gives away its proton, what's left is its conjugate base. When a base takes a proton, it becomes its conjugate acid. Conjugate means joined. So ammonium and ammonia are one conjugate pair, and water and hydroxide are the other. Partners differ by exactly one proton, so the charge changes by one, and they sit on opposite sides of the equation.",
+      "hash": "0f870ed81d14",
+      "textSha256": "0f870ed81d14ecaf1042fbc53713ffe66b1d1f14ce28b7fc297f406a99e7eb5b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/conjugate-pairs.0f870ed81d14.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/conjugate-pairs.0f870ed81d14.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/conjugate-pairs.0f870ed81d14.generation.json",
+      "plannedRequestSha256": "a6713ce3089ca5515a1b6f68be9d1c9e7ac914ff9fb6709c268717d9be3a6f26"
+    },
+    {
+      "id": "worked-example",
+      "parentSceneId": "worked-example",
+      "text": "Try a harder one: hydrogen phosphate in water. H P O four two minus, plus water, gives H two P O four minus, plus hydroxide. Follow the proton. Water loses one and becomes hydroxide, so water is the acid, and hydroxide is its conjugate base. Hydrogen phosphate gains one, so it's the base, and dihydrogen phosphate is its conjugate acid. Always one proton per pair: the conjugate base of H two S O four is H S O four minus, not sulfate.",
+      "hash": "d9007dc69470",
+      "textSha256": "d9007dc694702dc3b445bf333a3e47ceea6749f41bcc3629ba33e9b32cb8c144",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/worked-example.d9007dc69470.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/worked-example.d9007dc69470.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/worked-example.d9007dc69470.generation.json",
+      "plannedRequestSha256": "e4c28f14b82bceb7a74486c800651d0934a71fdb01cc08d738e14247ed56abf2"
+    },
+    {
+      "id": "conjugate-strength",
+      "parentSceneId": "conjugate-strength",
+      "text": "Pairs also explain the arrows from the strength video. Look at the conjugate bases. Chloride, from hydrogen chloride, has almost no pull on a proton, so it almost never takes one back. That's why the reaction goes all the way, with a single arrow. Acetate, from acetic acid, has a real pull, so it keeps taking protons back from hydronium, and you get the double arrow. So the stronger the acid, the weaker its conjugate base.",
+      "hash": "1226712c8388",
+      "textSha256": "1226712c838804b3ed1f82611a99649a95c9c958555211687d706190f800d036",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/conjugate-strength.1226712c8388.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/conjugate-strength.1226712c8388.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/conjugate-strength.1226712c8388.generation.json",
+      "plannedRequestSha256": "dca21ae151b63e19b51daba0e7122f8887eba135321c9075b7de46a444c3761b"
+    },
+    {
+      "id": "amphiprotic",
+      "parentSceneId": "amphiprotic",
+      "text": "Now the baking soda. The ion that does the work is hydrogen carbonate, H C O three minus. In the acid, it takes a proton from hydronium, making carbonic acid, which breaks down into water and the carbon dioxide you saw fizzing. In the sodium hydroxide, it gives a proton to hydroxide, making carbonate and water, so there's no gas. A species that can give or take a proton, depending on its partner, is amphiprotic. Amphi means both, like an amphibian, at home on land and in water.",
+      "hash": "8bbb8bf1486a",
+      "textSha256": "8bbb8bf1486aaeb78c0f5cce3f6a9d4e04988ec61112675fe181871804257170",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/amphiprotic.8bbb8bf1486a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/amphiprotic.8bbb8bf1486a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/amphiprotic.8bbb8bf1486a.generation.json",
+      "plannedRequestSha256": "a9de7e2570321917bd6f33463c9bd35057a331d5792807b36fed364439552d3d"
+    },
+    {
+      "id": "proton-chain",
+      "parentSceneId": "proton-chain",
+      "text": "How do you spot one? Line the species up in a proton chain, each one proton apart. Carbonic acid, hydrogen carbonate, carbonate. Phosphoric acid loses its three protons one at a time: dihydrogen phosphate, hydrogen phosphate, then phosphate. The ends do one job: phosphoric acid can only give, and phosphate can only take. The species in the middle can still give a proton and can also take one, so they're amphiprotic. Even hydrogen phosphate, with its two minus charge, still has a proton to give.",
+      "hash": "4dd31f398b05",
+      "textSha256": "4dd31f398b051ae50a74d2a618bc29a33f77433dbbc0fdc17e61ccb7591f4f36",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/proton-chain.4dd31f398b05.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/proton-chain.4dd31f398b05.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/proton-chain.4dd31f398b05.generation.json",
+      "plannedRequestSha256": "69ff1593b50ae8c6a23299a7658748767231b3114edf9787aac1ca70cec8b465"
+    },
+    {
+      "id": "salt-equations",
+      "parentSceneId": "salt-equations",
+      "text": "Exam questions ask you to show this with equations, often for sodium hydrogen carbonate. First it dissolves into sodium ions, which don't react, and hydrogen carbonate ions. Then write one equation with water for each role. As an acid, hydrogen carbonate gives a proton to water, making carbonate and hydronium. As a base, it takes a proton from water, making carbonic acid and hydroxide. Both are partial, so both get double arrows. In baking soda solution the base reaction goes slightly further, which is why baking soda makes water mildly basic, as the models video said.",
+      "hash": "42808fcb9467",
+      "textSha256": "42808fcb94674676668387c90765e23e1e351543f981a6773a90d5f337762a05",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/salt-equations.42808fcb9467.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/salt-equations.42808fcb9467.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/salt-equations.42808fcb9467.generation.json",
+      "plannedRequestSha256": "0bc0e7b3bddf96fad5e40bd6a8b60d048ac17049cfa0307bc14f141e18bf25cf"
+    },
+    {
+      "id": "water-role",
+      "parentSceneId": "water-role",
+      "text": "Water sits in the middle of its own chain: hydronium, water, hydroxide. So water is amphiprotic too, and it even reacts with itself. One water molecule gives a proton to another, making a hydronium ion and a hydroxide ion. Very pure water still conducts a tiny current, because these ions are there. But it's a tiny equilibrium: only about two water molecules in a billion have given a proton away at any moment. And because each transfer makes one of each, they're always in equal numbers. Equal amounts of hydronium and hydroxide is what neutral means, and the next video links that to pH seven.",
+      "hash": "207ee1b54e03",
+      "textSha256": "207ee1b54e0313ebd1773fe16b4ad6fb967b8f7b1fee70d529ae91ee2b30297f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/water-role.207ee1b54e03.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/water-role.207ee1b54e03.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/water-role.207ee1b54e03.generation.json",
+      "plannedRequestSha256": "0178bf1e624ded223a2a10d80320dbdc6b0063126ab5f4f891859ae6766c28b4"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. A conjugate pair differs by exactly one proton: take one off for the conjugate base, add one for the conjugate acid. Amphi means both: the middle of a proton chain can go either way. And the stronger the acid, the weaker its conjugate base.",
+      "hash": "e356cadf77ad",
+      "textSha256": "e356cadf77ad26f4c640824bb13fd2c62dc8cd44e4873da4442367ce5a037b07",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/memory-aid.e356cadf77ad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/memory-aid.e356cadf77ad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/memory-aid.e356cadf77ad.generation.json",
+      "plannedRequestSha256": "124c39142892e3e546f507be29ecc28b9b4677aba47150c2b22698999bf3be7a"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Potassium dihydrogen phosphate is used in foods to control acidity. Write an equation for it dissolving in water. Then write two equations, each with water as the partner, to show that the dihydrogen phosphate ion is amphiprotic. Pause here to answer.",
+      "hash": "5e704dfdc60d",
+      "textSha256": "5e704dfdc60d37effaa314fc1d2538692b2874608bc8c9a936f647cbaf44209c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/attempt-1.5e704dfdc60d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/attempt-1.5e704dfdc60d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/attempt-1.5e704dfdc60d.generation.json",
+      "plannedRequestSha256": "35a81d0aa52a234c8588229904b52c025ae8b9bec37976b240c2321e38348cd7"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "It dissolves into potassium ions and dihydrogen phosphate ions. As an acid, dihydrogen phosphate gives a proton to water, making hydrogen phosphate and hydronium. As a base, it takes a proton from water, making phosphoric acid and hydroxide. If you wrote phosphate, P O four three minus, you moved two steps along the chain. Move just one.",
+      "hash": "42615f34ccf7",
+      "textSha256": "42615f34ccf74d193836c57a3b929384d94e262e4c9718f312ae41be637510c9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/feedback-1.42615f34ccf7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/feedback-1.42615f34ccf7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/feedback-1.42615f34ccf7.generation.json",
+      "plannedRequestSha256": "a5aca5bda700c923e68476ce6e0d33eb3c052b626d26f2a64c6488aeef8cc36c"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. The equation shows ammonium ions reacting with carbonate ions. Identify the two conjugate acid-base pairs in this reaction, and state which species is the Brønsted-Lowry acid. Pause here to answer.",
+      "hash": "c50a1d131df7",
+      "textSha256": "c50a1d131df7cf2a62c36e9f90d3a1a7ee59d4cfcacff090355dd9f23b62a93e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/attempt-2.c50a1d131df7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/attempt-2.c50a1d131df7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/attempt-2.c50a1d131df7.generation.json",
+      "plannedRequestSha256": "f4ebb1083184f29fd8022b35fc856e66e922f02bbe7e6729ffbd03029a192026"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Follow the proton. Ammonium loses one and becomes ammonia, so ammonium is the acid, and ammonium and ammonia are one pair. Carbonate gains one and becomes hydrogen carbonate, so that's the other pair. Pairing ammonium with carbonate is the classic slip: they're on the same side, and they don't differ by one proton.",
+      "hash": "c9834fb00380",
+      "textSha256": "c9834fb00380061d47a7696d55ef8c63055c395b22d08fb72487291372233ca2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/feedback-2.c9834fb00380.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/feedback-2.c9834fb00380.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/feedback-2.c9834fb00380.generation.json",
+      "plannedRequestSha256": "659ee803d5b8012604120fe9c80c565feedae18883e6d819fcebc9b17e5ef2d0"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any acid-base equation, follow the proton, then pair each species with its partner one proton away on the other side, and check the charge changes by one. For an amphiprotic ion, write one equation giving a proton to water, and one taking a proton from water. Next: putting a number on water's tiny equilibrium, and using it to calculate pH.",
+      "hash": "7da100181594",
+      "textSha256": "7da1001815948b7e2ad12db8598d779ea53c4bb57e443362778d49e5e098ffbd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/decision-rule.7da100181594.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/decision-rule.7da100181594.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/decision-rule.7da100181594.generation.json",
+      "plannedRequestSha256": "4054f619a2568662d8f97d3ea40dc88eece531504b606540d4b01e63304ec46b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C06-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

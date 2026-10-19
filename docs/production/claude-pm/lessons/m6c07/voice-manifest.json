@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C07-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c07/lesson.json",
+  "lessonSha256": "05a12e396fd733a7d727e8cfb996650a3d59145c8563ab72cead28f78f9c41a7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c07/lesson.production-brief.json",
+    "sha256": "01e8513e9bbb218b0738f8b730afcc8cd7f5b4314fcfe0632a2699114fcb5d38"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A pH meter in zero point one zero moles per litre hydrochloric acid reads one point zero zero. In sodium hydroxide at the same concentration, it reads thirteen point zero zero. Where do those numbers come from? And sodium hydroxide makes hydroxide ions, not hydronium, so how can it have a pH?",
+      "hash": "51548ab477b4",
+      "textSha256": "51548ab477b448a3eff35443ad426e0122a289e20022f63eff9303f7e3c764a3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/hook.51548ab477b4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/hook.51548ab477b4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/hook.51548ab477b4.generation.json",
+      "plannedRequestSha256": "3915bfde192f29e0fc1bc8cf4f5f439e95bd2b838fdabdfaddb3ce32c13f7d98"
+    },
+    {
+      "id": "ph-meaning",
+      "parentSceneId": "ph-meaning",
+      "text": "pH is the negative log, base ten, of the hydronium concentration. Hydrochloric acid is strong, so every molecule gives its proton to water, and the hydronium concentration equals the acid's, zero point one zero, or ten to the minus one. The log of ten to the minus one is its power, minus one, and the minus sign makes it positive: pH one. So each factor of ten is one pH step.",
+      "hash": "4e356a9752d3",
+      "textSha256": "4e356a9752d3431b25eb2091e53705a430c7d3a44c80e9370385fc4aa4ea08e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/ph-meaning.4e356a9752d3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/ph-meaning.4e356a9752d3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/ph-meaning.4e356a9752d3.generation.json",
+      "plannedRequestSha256": "eaa4857385d9490757f9572db10c154e60402fc7edfe290069d21808c5e52b31"
+    },
+    {
+      "id": "we1-strong-acid",
+      "parentSceneId": "we1-strong-acid",
+      "text": "Nitric acid at zero point zero two five moles per litre is strong, with one proton per molecule, so the hydronium is zero point zero two five, and the negative log gives one point six zero. Why two decimal places? The number before the point only shows the power of ten, so the precision sits after it: decimal places in pH equal significant figures in the hydronium concentration, two here.",
+      "hash": "c42712a07e9d",
+      "textSha256": "c42712a07e9d139d06f33bfb9980ca8d05c51231b6403e63b9276116a3a53500",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we1-strong-acid.c42712a07e9d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we1-strong-acid.c42712a07e9d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we1-strong-acid.c42712a07e9d.generation.json",
+      "plannedRequestSha256": "c0790f9a86032dc5fac12e37d0d58dc699f264c22df9d488df3806ddf703dfb2"
+    },
+    {
+      "id": "ph-backwards",
+      "parentSceneId": "ph-backwards",
+      "text": "You can also run it backwards: the hydronium concentration is ten to the minus pH. A pH of three point four zero gives ten to the minus three point four zero, which is four point zero times ten to the minus four moles per litre. Two decimal places in the pH, so two significant figures in the answer.",
+      "hash": "26ed3eae4307",
+      "textSha256": "26ed3eae43075d2b982bf7e1875105834b33bb6b0848e21848261de4d6bf2a7b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/ph-backwards.26ed3eae4307.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/ph-backwards.26ed3eae4307.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/ph-backwards.26ed3eae4307.generation.json",
+      "plannedRequestSha256": "22893ef3e5f49fcb47caa67ada03e6c232de497e7daa13a8b07ec2be7acb0637"
+    },
+    {
+      "id": "kw",
+      "parentSceneId": "kw",
+      "text": "Now the base. In the last video, water gave protons to itself, making equal amounts of hydronium and hydroxide. Its equilibrium constant leaves water out, so K w equals hydronium times hydroxide: one point zero times ten to the minus fourteen at twenty five degrees. In pure water, each ion is ten to the minus seven, pH seven. And it holds in every watery solution: add hydroxide, and the equilibrium shifts back, using up hydronium, until the product is ten to the minus fourteen again.",
+      "hash": "afad150e6bc1",
+      "textSha256": "afad150e6bc1cb1762baa677fe361f4cd29153c999653ccd5528efc9aa7bb37b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/kw.afad150e6bc1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/kw.afad150e6bc1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/kw.afad150e6bc1.generation.json",
+      "plannedRequestSha256": "b1ce140080a1a9f1fde21219a6abca72103b3f718e5db15004227627807d4ed5"
+    },
+    {
+      "id": "kw-temperature",
+      "parentSceneId": "kw-temperature",
+      "text": "That value is only for twenty five degrees. Water splitting into ions absorbs heat, so warming pushes the equilibrium right and K w grows. At thirty seven degrees pure water has a pH of six point eight one; at sixty, six point five one. It's still neutral, because its hydronium still equals its hydroxide. So pH seven means neutral only at twenty five degrees.",
+      "hash": "c9386c40cf20",
+      "textSha256": "c9386c40cf202685d7dc060f56347c1db303a2d0f0599b21d375684f972a11c1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/kw-temperature.c9386c40cf20.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/kw-temperature.c9386c40cf20.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/kw-temperature.c9386c40cf20.generation.json",
+      "plannedRequestSha256": "47ba0c9c894ac06a4e7bae70f58b0248d64b1a57d9eba0e6ac8c0453b2573580"
+    },
+    {
+      "id": "base-poh",
+      "parentSceneId": "base-poh",
+      "text": "Back to sodium hydroxide. It's strong, so the hydroxide is zero point one zero, and the hydronium is ten to the minus fourteen divided by that: ten to the minus thirteen, pH thirteen. For a quicker route, use pOH, the negative log of the hydroxide. Taking the negative log of K w gives pH plus pOH equals fourteen at twenty five degrees. So for a base, find the hydroxide, take the pOH, and subtract from fourteen.",
+      "hash": "31a2608bee9d",
+      "textSha256": "31a2608bee9d8e9c79829b8825a264e916d910a5519debdaa13057e46dd1f789",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/base-poh.31a2608bee9d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/base-poh.31a2608bee9d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/base-poh.31a2608bee9d.generation.json",
+      "plannedRequestSha256": "8f58cf10f298335a773ccd7d7b8434bbe47b854c86845e6f9bb58e9ecd98323d"
+    },
+    {
+      "id": "we2-strong-base",
+      "parentSceneId": "we2-strong-base",
+      "text": "Calcium hydroxide at zero point zero zero four zero moles per litre. Each formula unit releases two hydroxide ions, so the hydroxide is zero point zero zero eight zero. The pOH is two point one zero. Then the pH is fourteen minus two point one zero, eleven point nine zero. Stopping at the pOH is the classic slip: a base can't have a pH of two. Sulfuric acid is different: only its first hydrogen ion comes off completely. HSC questions usually say to assume both do, and only then is the hydrogen ion concentration twice the acid's.",
+      "hash": "b23a882e4665",
+      "textSha256": "b23a882e46653daac7bbbf1f0f9666b51acfc772871ad71f6fd928f61ba94763",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we2-strong-base.b23a882e4665.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we2-strong-base.b23a882e4665.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we2-strong-base.b23a882e4665.generation.json",
+      "plannedRequestSha256": "b8c6e246efbf568f570d5b45125a93e71440d013322f51864fe0fdd3ddf7c0a5"
+    },
+    {
+      "id": "dilution",
+      "parentSceneId": "dilution",
+      "text": "Adding water doesn't add or remove hydrogen ions, so the moles stay the same and only the volume grows. Twenty five millilitres of zero point two zero zero moles per litre hydrochloric acid holds zero point zero zero five zero zero moles. Made up to five hundred millilitres, that's zero point zero one zero zero moles per litre, so the pH is two point zero zero zero, three decimal places for three significant figures. Keep diluting and the pH creeps toward seven, but never past it, because water supplies its own hydronium.",
+      "hash": "98d31b6f72e4",
+      "textSha256": "98d31b6f72e471f03845bc5d1df7eb8b8366872e662540c3c145807f53d4a082",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/dilution.98d31b6f72e4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/dilution.98d31b6f72e4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/dilution.98d31b6f72e4.generation.json",
+      "plannedRequestSha256": "56fb544cccd9075ef13551e20e717024d13c98eee245cb9207f0bd5ec7fd82b6"
+    },
+    {
+      "id": "mixing-method",
+      "parentSceneId": "mixing-method",
+      "text": "Mixing an acid with a base is different, because they react. Hydrogen ions and hydroxide ions make water until one runs out, and whatever is left over sets the pH. So neutralise first, then dilute: find both amounts in moles, subtract, and divide the leftover by the total volume.",
+      "hash": "4cee141faef6",
+      "textSha256": "4cee141faef60371552f2cfee8f810698098a5ed8025742b195af8445a408cdb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/mixing-method.4cee141faef6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/mixing-method.4cee141faef6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/mixing-method.4cee141faef6.generation.json",
+      "plannedRequestSha256": "3095c0261965b40977da85b1d61334fbbb351cf60f75ace8398b2141047c7a3e"
+    },
+    {
+      "id": "we3-excess",
+      "parentSceneId": "we3-excess",
+      "text": "Forty millilitres of zero point one five zero moles per litre hydrochloric acid is mixed with sixty millilitres of zero point zero eight zero zero moles per litre barium hydroxide. The acid gives zero point zero zero six zero zero moles of hydrogen ions. Barium hydroxide releases two hydroxide ions each, so it gives zero point zero zero nine six zero moles. So hydroxide is in excess.",
+      "hash": "9206e825847b",
+      "textSha256": "9206e825847b52edce824d6f7263aac10561b6dcd84dc14002de43916a309096",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we3-excess.9206e825847b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we3-excess.9206e825847b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we3-excess.9206e825847b.generation.json",
+      "plannedRequestSha256": "b0a06502067378d4870db4b8b9efcfae25ee973d8f161508da1c745a74f4c8ac"
+    },
+    {
+      "id": "we3-ph",
+      "parentSceneId": "we3-ph",
+      "text": "That leftover hydroxide spreads through all one hundred millilitres, so it's zero point zero three six zero moles per litre. The pOH is one point four four four, so the pH is twelve point five five six. Dividing by the acid's forty millilitres alone is the classic slip.",
+      "hash": "1d9207c29334",
+      "textSha256": "1d9207c29334abf622c386cb8b45cc49ab8531100382ed877f1c17292606b4ce",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we3-ph.1d9207c29334.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we3-ph.1d9207c29334.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/we3-ph.1d9207c29334.generation.json",
+      "plannedRequestSha256": "30773b1ba1f8f719a6a638da6a5a6d38729fc103fc0cbd4dcc573cdf8b2b9091"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Remember: one pH unit is ten times. For a base, find the hydroxide first, then pH equals fourteen minus pOH, at twenty five degrees. And for mixtures, neutralise first, then dilute.",
+      "hash": "9ad5e9a00387",
+      "textSha256": "9ad5e9a00387a070d7d521f60dbff58e1a6214ec5f2119c74bb813b0bae1c802",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/memory-aid.9ad5e9a00387.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/memory-aid.9ad5e9a00387.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/memory-aid.9ad5e9a00387.generation.json",
+      "plannedRequestSha256": "ba154b21b3e5af28899cc6f05a14000b3fbf6aa86853c2cbac580c63244af035"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Twenty five millilitres of zero point one two zero moles per litre nitric acid is mixed with thirty five millilitres of zero point zero five zero zero moles per litre potassium hydroxide, at twenty five degrees. Calculate the pH of the mixture. Pause here to answer.",
+      "hash": "81565bc036a9",
+      "textSha256": "81565bc036a9578be2f449890979c570f0105a9aea62e68245b806dcb3664551",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/attempt-1.81565bc036a9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/attempt-1.81565bc036a9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/attempt-1.81565bc036a9.generation.json",
+      "plannedRequestSha256": "8dcf5023ec3951d776501d9158292058c16b31e8f4f29a8e5f65fc0e43b0713c"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The acid gives zero point zero zero three zero zero moles of hydrogen ions, and the base zero point zero zero one seven five moles of hydroxide. Hydrogen ions are left over: zero point zero zero one two five moles in sixty millilitres. So the pH is one point six eight one. Using only the acid's volume gives one point three zero one.",
+      "hash": "bc8f8db72b0d",
+      "textSha256": "bc8f8db72b0d31111109c174d3236810dd97f18ad6ef633c8ce839c64543353f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/feedback-1.bc8f8db72b0d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/feedback-1.bc8f8db72b0d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/feedback-1.bc8f8db72b0d.generation.json",
+      "plannedRequestSha256": "b8079ea4cb65907a5a3444c8a9de8841a06069b37de3d3b75aefcedd26412036"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A potassium hydroxide solution has a pH of twelve point three zero at twenty five degrees. Calculate the hydroxide ion concentration in this solution. Pause here to answer.",
+      "hash": "4f0995fd9b73",
+      "textSha256": "4f0995fd9b73cea64656482196ae6aecff1513263689355b1a42f21297eb4dac",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/attempt-2.4f0995fd9b73.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/attempt-2.4f0995fd9b73.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/attempt-2.4f0995fd9b73.generation.json",
+      "plannedRequestSha256": "aacefcaf32341618b45757025a4eb337882a4a969893d667c5a0d13842332583"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "First the pOH: fourteen minus twelve point three zero is one point seven zero. Then the hydroxide is ten to the minus one point seven zero, zero point zero two zero moles per litre, two significant figures from two decimal places. Ten to the minus twelve point three zero is the hydronium concentration, not the hydroxide.",
+      "hash": "3e02927a695f",
+      "textSha256": "3e02927a695f770f911f3a74c1359d53e67111cad820efa70e1d79c827a6168e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/feedback-2.3e02927a695f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/feedback-2.3e02927a695f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/feedback-2.3e02927a695f.generation.json",
+      "plannedRequestSha256": "600a2d32a6c1c4e061ebbf261aad62f32f5ac86582d8c598daa774c2e8e7e179"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any strong acid or base: work in moles when solutions are diluted or mixed, divide by the final volume, then take the negative log, through pOH for a base. But check it's strong first: a weak acid only partly ionises, so its hydronium isn't its concentration. Next: practice questions, then weak acids.",
+      "hash": "cebf9d7caa9f",
+      "textSha256": "cebf9d7caa9f61b4029df97b7a238c5c5eb3962e9054dc0f9815408f6ca3767d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/decision-rule.cebf9d7caa9f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/decision-rule.cebf9d7caa9f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/decision-rule.cebf9d7caa9f.generation.json",
+      "plannedRequestSha256": "52c48a68f970f9da8296ec52fa9392f50d30d7f687e670a014b57415f6e4a695"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C07-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

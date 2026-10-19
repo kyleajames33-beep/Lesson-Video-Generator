@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b08/measured/lesson.json",
+    "lessonSha256": "e050629df32e2fa8e47b2614e36b77c032cf398ebf252add886f972c2c91c5b6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: gene, allele and gene pool at three levels; a new allele starts as one copy; gene flow named (\"when organisms or their pollen move between populations\"); \"selection and chance change how common they are\". From B11: allele frequency by counting copies, two per individual for an autosomal gene, written as a decimal. From b07: mutation is the ultimate source of new alleles; meiosis and fertilisation reshuffle existing ones; alleles lost from a population are not made again without mutation. From b05: only germ-line mutations are inherited. Year 11: natural selection and selection pressure. Not assumed: genetic drift, sampling error, bottleneck, founder effect, gene flow as a force on frequency, evaluating relative effects.",
+    "startsWith": "Compare two population gene pools. The video opens: By the early 1990s, only about twenty to thirty Florida panthers were left, cut off in the swamps of southern Florida.",
+    "stopsAfter": "calculating an allele frequency as copies over total copies; explaining genetic drift as random sampling of alleles each generation, and why it changes frequencies more in small populations, including losing or fixing alleles regardless of their effect; describing a bottleneck and the founder effect as drift from a small random sample; explaining that mutation adds a new allele as a single copy (1 in 2N), so it changes a gene pool slowly and new alleles are often lost by drift in small populations; explaining gene flow as alleles moving with breeding migrants, which adds alleles a population lacked, changes frequencies quickly and makes populations more alike, without creating alleles; contrasting drift (random) with selection (non-random); evaluating which process matters most from population size, isolation and timescale, using the Florida panther case; applying this to an unseen allele-frequency calculation after a cyclone and an unseen conservation plan.",
+    "nextLesson": "what counts as biotechnology, from bread and selective breeding to modern techniques (route entry bio-m6-b09)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b08.md"
+  ],
+  "teaching": {
+    "task": "One species, two very different gene pools: what changes the alleles of a population, and which change matters most?",
+    "causalExplanation": "Causes: why a frequency changes with no advantage (each generation is a random sample, 3); why small populations drift more (a small sample strays further, 3); why a crash or a few founders change frequencies (few individuals carry only a sample, 4); why harmful traits showed in the panthers (so few animals that relatives often bred together, 4); why mutation is slow (one copy in 2N, rare per gene, often lost, 5); why gene flow helped (it brought back lost alleles, so kittens had more genetic variation and fewer inbreeding signs, 6); why the judgement depends on context (size, isolation, time, 7). Visible case: one species, two basins, one rescue; every process acts on the same board. Video advantage: rings scooped into new basins, drift lines wandering, migrants carrying rings across. Thinking opportunities: two unseen items with every given on screen. Reading load: two basins and at most about three tags; the attempt cards are the densest frames and are the task.",
+    "conversationalApproach": "The Florida panther and the Texas puma, one species with two very different gene pools, set the question of what changes a gene pool; the gene pool and allele frequency are recalled with one count; genetic drift is shown as chance sampling (only some animals breed, each parent passes on one allele of each pair by chance) with a coin and simulated populations, so size matters; bottleneck and founder effect follow as drift from a small sample; mutation adds one new copy, slowly; gene flow brings alleles in with moving, breeding animals and makes populations more alike; which process matters most is judged for a given population, with selection named as the non-random contrast. Two exam questions follow with brief feedback, then the decision rule hands off to biotechnology (b09).",
+    "openingDecision": "By the early 1990s, only about twenty to thirty Florida panthers were left, cut off in the swamps of southern Florida. Many had kinked tails and poor-quality sperm, and some had heart defects. In Texas, pumas of the same species were doing fine. So in 1995, biologists released eight female Texas pumas into Florida. Within about a decade, the panther population had roughly tripled. What had gone wrong with the Florida panthers' alleles, and how did eight newcomers help fix it?",
+    "understandingCheck": "9a is a calculation and identify item: an island population of 500 skinks with allele b at frequency 0.1; a cyclone leaves 10 survivors, survival unrelated to this gene; the survivors carry 4 copies of b; calculate the new frequency (4 / 20 = 0.2), identify the process and justify. It tests copy counting (two per skink), the bottleneck as drift and the \"random with respect to the gene\" condition. 9c is an evaluate item on a hypothetical conservation plan: a small isolated population of 30 possums has lost much of its genetic variation; bring in 10 possums from a large population of the same species, or stay isolated and rely on mutation. It tests gene flow against mutation in a small population, with drift acting on both, and needs a verdict. Neither is the panther. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working where needed, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "\"evaluate the effect of mutation, gene flow and genetic drift on the gene pool of populations (ACSBL091, ACSBL092)\". The verb is \"evaluate\", so scene 7 makes a judgement by context, attempt 2 asks for one, and both model answers end with a verdict (bank trap: \"Evaluate\" needs a verdict). Inquiry question: \"How does mutation introduce new alleles into a population?\" Update the ledger row for B6-IQ1-06 when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One gene pool board throughout, built on b01's parts: each population is b01's `PoolBasin` (a rounded tray) holding b01's `AlleleRing` markers, one ring per allele copy (open ring \"allele A\", filled grey ring \"allele a\"; b01's amber notched ring `kind: 'new'` only for a new mutation; b01's `kind: 'flow'` ring, an open ring with a small blue arrow notch, for alleles that arrived by gene flow). Rings are never colour only (each kind has a shape mark). A coded frequency bar under each basin (b01's `FillBar`) shows the share of one allele, with the computed decimal on the word that says it. Two basins side by side carry the hook's comparison: \"Texas\" (large, many rings, varied) and \"Florida\" (small, few rings, two kinds missing). A drift strip (scene 3) draws simulated frequency lines across generations (computed by a seeded binomial sampler at N = 20 and N = 500, five replicates each, as the site's simulator; no axis numbers except \"0\", \"0.5\", \"1\"). Real animals are painted: the Florida panther and the Texas puma (new plates), placed above their basins; small population counts use the same plate at icon size in a grid (b01's `popGrid`), never people. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides ring markers; each tag fades when the next cue lands.",
+    "transitionPlan": "The map outline opens the hook and fades to the two pool basins with their plates; the top chips fill one per process as the board moves from the counted basin to the drift strip's simulated lines, the bottleneck scoop, one new amber ring and arriving flow rings; the JudgeTable fills one row per cue; memory lines write on beside their icons; each attempt clears the board and its feedback shrinks the card to a strip and builds the working and model answer one point at a time; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "a coded outline of the southern United States (no labels except two small tags \"Texas\" and \"Florida\", far apart).",
+      "teachingReason": "Hook (two gene pools, one species): By the early 1990s, only about twenty to thirty Florida panthers were left, cut off in the swamps of southern Florida.",
+      "narrationCue": "kinked tails / In Texas / eight female Texas pumas / roughly tripled / What had gone wrong",
+      "motionPurpose": "On the spoken cues: The new `m6-florida-panther-v1.png` sits above Florida (tag \"about 20 to 30 left, early 1990s\"); on \"kinked tails\" the tail tip of the plate is ringed (scribble circle, no text); the sperm and heart defects are spoken only (no grey tag). On \"In Texas\" the new `m6-texas-puma-v1.png` appears above",
+      "motionRole": "explain",
+      "onScreenChange": "a coded outline of the southern United States (no labels except two small tags \"Texas\" and \"Florida\", far apart). The new `m6-florida-panther-v1.png` sits above Florida (tag \"about 20 to 30 left, early 1990s\"); on \"kinked tails\" the tail tip of the plate is ringed (scribble circle, no text); the sperm and heart defects are spoken only (no grey tag). On \"In Texas\" the new `m6-texas-puma-v1.png` appears above Texas (tag \"same species\"; the \"20 to 30 left\" tag fades as it lands). On \"eight female Texas pumas\" eight small puma icons (`popGrid`, plate at icon size) travel along a `CurveArrow` from Texas to Florida (tag \"1995: 8 females\"; the \"same species\" tag fades as it lands). On \"roughly tripled\" the \"8 females\" tag fades and a small panther icon grid beside Florida grows from about 25 icons to about 75 (illustrative grid, tag \"about 3 times as many\"). On \"What had gone wrong\" the earlier tags fade and the heading writes on: \"What changes a gene pool\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "gene-pools",
+      "visualDecision": "new",
+      "visualReference": "the map fades to two `PoolBasin`s, \"Texas\" (large) and \"Florida\" (small), each with its plate small above it.",
+      "teachingReason": "Two gene pools, and how to count them: Start with their gene pools.",
+      "narrationCue": "its share of all the copies / fifty copies / ten of those copies / cut off / lost alleles that the Texas pool still had / So what changes a gene pool?",
+      "motionPurpose": "On the spoken cues: Texas's basin fills with many rings of four kinds (open, filled grey, two more shape-marked kinds); Florida's with fewer rings of only two kinds (no grey tag). On \"its share of all the copies\" one gene is isolated: a 25-icon panther grid with two ring slots under each icon. On \"fifty copies\" a",
+      "motionRole": "explain",
+      "onScreenChange": "the map fades to two `PoolBasin`s, \"Texas\" (large) and \"Florida\" (small), each with its plate small above it. Texas's basin fills with many rings of four kinds (open, filled grey, two more shape-marked kinds); Florida's with fewer rings of only two kinds (no grey tag). On \"its share of all the copies\" one gene is isolated: a 25-icon panther grid with two ring slots under each icon. On \"fifty copies\" a counter \"25 × 2 = 50 copies\" writes on. On \"ten of those copies\" ten rings light (the allele marked with a filled grey ring) and the count \"10 / 50 = 0.2\" writes on beside a `FillBar` filling to 0.2 (computed; no grey tag; the \"50 copies\" counter dims as it lands). The grid and count fade. On \"cut off\" a faint dashed band between the two basins (tag \"no pumas in between\") fades in. On \"lost alleles that the Texas pool still had\" the two basins return; two ring kinds in Texas pulse, with dashed empty slots in Florida's basin where those kinds would be (tag \"lost from Florida\"; the \"no pumas in between\" tag fades as it lands). On \"So what changes a gene pool?\" three faint chip outlines appear along the top (unlabelled, filled in later scenes: \"drift\", \"mutation\", \"gene flow\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "drift",
+      "visualDecision": "new",
+      "visualReference": "one basin with 40 rings, half open, half grey (tag \"20 animals\").",
+      "teachingReason": "Genetic drift: chance: The first answer is chance.",
+      "narrationCue": "genetic drift",
+      "motionPurpose": "On the spoken cues: On \"only some animals happen to breed\" a few animal icons above the basin light; on \"by chance\" `SampleScoop` lifts a random handful of rings (computed, seeded) into a new basin below (tag \"next generation: a random sample\"); its `FillBar` reads a different value (computed, for example 0.6). On",
+      "motionRole": "explain",
+      "onScreenChange": "one basin with 40 rings, half open, half grey (tag \"20 animals\"). On \"only some animals happen to breed\" a few animal icons above the basin light; on \"by chance\" `SampleScoop` lifts a random handful of rings (computed, seeded) into a new basin below (tag \"next generation: a random sample\"); its `FillBar` reads a different value (computed, for example 0.6). On \"genetic drift\" the first top chip fills \"drift\" and the term writes on with the gloss \"allele frequency changes by chance\"; the \"20 animals\" and \"random sample\" tags fade. On \"tossing a coin\" the term and gloss shrink to the top chip and `CoinRow` flips ten coins, landing 7 heads (tag \"7 / 10\"); on \"a thousand times\" a long ticker counts to \"about 500 / 1000\" (computed run with a fixed seed landing within 0.49 to 0.51). The coins and their tags fade. On \"the changes add up\" the scooped basin is itself scooped again into a third basin (two quick generations, values computed), each bar starting from the last one's value. On \"in a small population\" `DriftLines` draws five replicate lines at N = 20 over 50 generations from 0.5 (computed, seeded; at least one line reaching 0 and one reaching 1, as the site's default run), then five lines at N = 500 staying near 0.5 in a second small panel (tags \"20 animals\", \"500 animals\"). On \"lose it completely\" one N = 20 line hitting 0 is ringed (no tag); on \"whether it helps or not\" the tag \"drift has no direction\" writes on (the only tag besides the two panel labels). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "bottleneck-founder",
+      "visualDecision": "new",
+      "visualReference": "a large basin (tag \"Florida, long ago\", many rings of four kinds) narrows like the neck of a bottle into a small basin (`SampleScoop` with a funnel outline, a few rings passing through, computed); two ring kinds do not get through (dashed slots).",
+      "teachingReason": "Bottleneck and founder effect: Drift is strongest when numbers crash.",
+      "narrationCue": "bottleneck / founder effect",
+      "motionPurpose": "On the spoken cues: On \"bottleneck\" the term writes on with the gloss \"a population crash leaves a few survivors\". On \"relatives often bred together\" short family links join a few of the panther icons above the small basin (no tag). On \"more likely to show\" the hook's ringed kinked-tail close-up returns small beside",
+      "motionRole": "explain",
+      "onScreenChange": "a large basin (tag \"Florida, long ago\", many rings of four kinds) narrows like the neck of a bottle into a small basin (`SampleScoop` with a funnel outline, a few rings passing through, computed); two ring kinds do not get through (dashed slots). On \"bottleneck\" the term writes on with the gloss \"a population crash leaves a few survivors\". On \"relatives often bred together\" short family links join a few of the panther icons above the small basin (no tag). On \"more likely to show\" the hook's ringed kinked-tail close-up returns small beside the basin (tag \"inbreeding: harmful traits show more often\"); no ring kind, frequency bar or two-copy animation stands for any defect, because the alleles behind the panthers' defects were not identified (Codex check 87). The bottleneck tags fade, and the term \"bottleneck\" shrinks to a small label beside its basin (its gloss goes). On \"a few individuals leave\" a coded island outline: three animal icons (puma plate at icon size, generic) travel from a large basin's edge to an empty island basin, carrying a few rings, and the island basin's frequency bar reads differently from the mainland's (computed); the term \"founder effect\" writes on with the gloss \"a few individuals start a new population\"; its gloss fades on \"Either way\", leaving the two small term labels. On \"Either way\" a line writes on under both: \"few individuals: a random sample of the gene pool\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "mutation",
+      "visualDecision": "new",
+      "visualReference": "the second top chip fills \"mutation\".",
+      "teachingReason": "Mutation: one new copy: Could mutation repair the damage?",
+      "narrationCue": "a single copy / one copy in fifty / a population of a million / a very long time / drift loses most new alleles / source of new alleles",
+      "motionPurpose": "On the spoken cues: The small Florida basin; on \"a single copy\" one amber notched ring (b01's `kind: 'new'`) drops in (tag \"new allele\", which fades as the count writes); on \"one copy in fifty\" its `FillBar` shows a sliver with \"1 / 50 = 0.02\" (computed). On \"a population of a million\" a large basin outline (no rings",
+      "motionRole": "explain",
+      "onScreenChange": "the second top chip fills \"mutation\". The small Florida basin; on \"a single copy\" one amber notched ring (b01's `kind: 'new'`) drops in (tag \"new allele\", which fades as the count writes); on \"one copy in fifty\" its `FillBar` shows a sliver with \"1 / 50 = 0.02\" (computed). On \"a population of a million\" a large basin outline (no rings drawn) shows \"1 / 2,000,000 = 0.0000005\" (computed; no grey tag; the \"1 / 50\" count dims). On \"a very long time\" a slow ticker labelled \"generations\" runs while the dashed empty slots stay empty (tag \"lost alleles: rarely remade\"; both counts fade). On \"drift loses most new alleles\" a quick seeded `DriftLines` run starts at 0.02 in five replicates and most fall to 0 within a few generations (computed; tag \"most new alleles lost by chance\", replacing the \"rarely remade\" tag). On \"source of new alleles\" the top chip \"mutation\" brightens (no grey tag). Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "gene-flow",
+      "visualDecision": "new",
+      "visualReference": "the third top chip fills \"gene flow\".",
+      "teachingReason": "Gene flow: alleles arrive: What helped was gene flow, alleles moving between populations when individuals move and breed.",
+      "narrationCue": "gene flow",
+      "motionPurpose": "On the spoken cues: The two basins side by side again; on \"move and breed\" eight icons travel along a `CurveArrow` from Texas to Florida, each dropping rings into the Florida basin as b01's `kind: 'flow'` rings (open with a blue arrow notch), filling the dashed empty slots (tag \"alleles arrive with migrants\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the third top chip fills \"gene flow\". The two basins side by side again; on \"move and breed\" eight icons travel along a `CurveArrow` from Texas to Florida, each dropping rings into the Florida basin as b01's `kind: 'flow'` rings (open with a blue arrow notch), filling the dashed empty slots (tag \"alleles arrive with migrants\"). On \"more genetic variation\" the Florida basin now holds all four kinds (tag \"genetic variation increased\", replacing \"alleles arrive with migrants\"; Johnson et al. 2010). On \"kinked tails became less common\" two small rows of panther icons draw side by side, \"before 1995\" and \"kittens with Texas parents\", with the hook's kinked-tail ring on several icons in the first row and on fewer in the second (illustrative, no numbers, no allele rings or frequency bar; tag \"inbreeding signs less common\", replacing the variation tag); on \"the population grew\" the icon grid from the hook returns small. On \"didn't make any new alleles\" a ghost amber ring appears and takes a grey cross (tag \"no new alleles\", replacing the tail tag). On \"more alike\" the two basins' frequency bars slide towards each other (tag \"gene flow: pools become more alike\", replacing \"no new alleles\"). Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "which-matters",
+      "visualDecision": "new",
+      "visualReference": "`JudgeTable`, three rows filling one per cue, each with a small icon: \"small, isolated population → drift strongest\" (a tiny basin with a wobbling bar); \"many migrants → gene flow strongest, pools stay alike\" (two basins joined by arrows); \"new alleles, long term → mutation\" (amber ring).",
+      "teachingReason": "Which matters most?: So which process matters most?",
+      "narrationCue": "It depends on the population / Selection is different again",
+      "motionPurpose": "On the spoken cues: On \"It depends on the population\" a hand-drawn bracket on the left reads \"depends on size, isolation, time\". The table dims on \"Selection is different again\", and a two-column contrast writes on beside it: \"selection: non-random, for a reason\" (a ring kind rising in every replicate line, three",
+      "motionRole": "explain",
+      "onScreenChange": "`JudgeTable`, three rows filling one per cue, each with a small icon: \"small, isolated population → drift strongest\" (a tiny basin with a wobbling bar); \"many migrants → gene flow strongest, pools stay alike\" (two basins joined by arrows); \"new alleles, long term → mutation\" (amber ring). On \"It depends on the population\" a hand-drawn bracket on the left reads \"depends on size, isolation, time\". The table dims on \"Selection is different again\", and a two-column contrast writes on beside it: \"selection: non-random, for a reason\" (a ring kind rising in every replicate line, three lines all climbing) against \"drift: random, no direction\" (the N = 20 lines from scene 3, small). No grey tag. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on, one per cue: \"Drift is luck: luck matters more in small groups\" (beside the coin icon and the N = 20 lines), \"Gene flow tends to make pools alike. Drift can pull them apart; so can selection, if environments favour different alleles\" (two basins with bars converging under an arrow, then diverging when the arrow is cut; on \"different alleles\" each basin briefly shows its own small environment tint, so the selection condition is visible).",
+      "teachingReason": "Memory: Two aids.",
+      "narrationCue": "different alleles",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on, one per cue: \"Drift is luck: luck matters more in small groups\" (beside the coin icon and the N = 20 lines), \"Gene flow tends to make pools alike. Drift can pull them apart; so can selection, if environments favour different alleles\" (two basins with bars converging under an arrow, then diverging when the arrow is cut; on \"different alleles\" each basin briefly shows its own small environment tint, so the selection condition is visible). Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no basins, rings or tags from earlier scenes.",
+      "teachingReason": "Unseen transfer task (attempt one (skinks after a cyclone)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. An island population",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (skinks after a cyclone))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no basins, rings or tags from earlier scenes. The card writes on as an exam question: \"An island population of 500 skinks has allele *b* at a frequency of 0.1 for a gene on an autosome. A cyclone kills all but 10 skinks. Survival during the cyclone was unrelated to this gene. The 10 survivors carry 4 copies of allele *b*.\" Demands: \"(a) Calculate the frequency of allele *b* after the cyclone. (1 mark)\" \"(b) Identify the process that changed the frequency of *b*. Justify your answer. (2 marks)\". Answer boxes for (a) and (b). Nothing answer-bearing: no ring counts, no \"20\", no process names. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Ten skinks carry twenty copies / four out of twenty / nothing to do with this gene / the classic mistake",
+      "motionPurpose": "On the spoken cues: (1) On \"Ten skinks carry twenty copies\" \"10 survivors\" underlines amber and a small basin draws with 20 ring slots; \"10 × 2 = 20 copies\" writes on. (2) On \"four out of twenty\" \"4 copies\" underlines; four slots fill grey; box (a) fills \"4 / 20 = 0.2\" (computed), with a small \"0.1 → 0.2\" bar pair.",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. (1) On \"Ten skinks carry twenty copies\" \"10 survivors\" underlines amber and a small basin draws with 20 ring slots; \"10 × 2 = 20 copies\" writes on. (2) On \"four out of twenty\" \"4 copies\" underlines; four slots fill grey; box (a) fills \"4 / 20 = 0.2\" (computed), with a small \"0.1 → 0.2\" bar pair. (3) On \"nothing to do with this gene\" that phrase underlines; box (b) fills \"genetic drift (a bottleneck): survival was random with respect to this gene, and 10 survivors are a small sample, so the frequency changed by chance\". (4) On \"the classic mistake\" the chip \"*b* rose because it helped survival (selection)\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (a conservation plan)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A small, isolated population of thirty possums",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a conservation plan))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question: \"A small, isolated population of 30 possums has lost much of its genetic variation. A conservation team plans to bring in 10 possums from a large population of the same species. Evaluate this plan, compared with leaving the population isolated and relying on mutation to restore its genetic variation. (4 marks)\". One lined answer box. Nothing answer-bearing: no basins, arrows or process names. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "gene flow / one copy at a time / far better / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-row judgement table draws under it, \"bring in 10 possums\" and \"stay isolated, rely on mutation\". (1) On \"gene flow\" \"bring in ten possums from a large population\" underlines amber; row 1 fills \"gene flow: many existing alleles added at once; variation rises within a generation\" (small basin",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-row judgement table draws under it, \"bring in 10 possums\" and \"stay isolated, rely on mutation\". (1) On \"gene flow\" \"bring in ten possums from a large population\" underlines amber; row 1 fills \"gene flow: many existing alleles added at once; variation rises within a generation\" (small basin filling with blue-notched rings). (2) On \"one copy at a time\" \"relying on mutation\" and \"small, isolated population of 30\" underline; row 2 fills \"mutation: new alleles one copy at a time, very slow; drift in 30 possums loses most of them\". (3) On \"far better\" a verdict line writes on: \"Verdict: the plan is much better; the new alleles still face drift, so monitor.\" (4) On \"the classic mistake\" the chip \"gene flow creates new alleles\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "four step chips write on in a column, one per cue, each with its ring icon: \"new allele appeared → mutation\" (amber notched ring); \"alleles arrived or left with migrants → gene flow\" (blue-notched ring with an arrow); \"changed by chance, small group → drift\" (wobbling bar); \"carriers survive or breed better → selection\" (rising bar).",
+      "teachingReason": "Decision rule and handoff: So when a question shows a gene pool changing, ask what happened to the alleles.",
+      "narrationCue": "So when a question shows a gene pool",
+      "motionPurpose": "On the spoken cues: A bracket on the right: \"then judge: size, isolation, time\". A \"Next\" chip slides in at the lower right: \"Next: what counts as biotechnology?\" (a small coded bread-loaf outline). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on in a column, one per cue, each with its ring icon: \"new allele appeared → mutation\" (amber notched ring); \"alleles arrived or left with migrants → gene flow\" (blue-notched ring with an arrow); \"changed by chance, small group → drift\" (wobbling bar); \"carriers survive or breed better → selection\" (rising bar). A bracket on the right: \"then judge: size, isolation, time\". A \"Next\" chip slides in at the lower right: \"Next: what counts as biotechnology?\" (a small coded bread-loaf outline). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b08-learning-review.md",
+      "sha256": "6ad684b02fd767d4690d42e51b2a6b8accf1f98e066576a5ffab3143ca791fff"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b08-claude-science-check.md",
+      "sha256": "0b02743e8f266871a5b6f668a034489273a94fae7df8ef757801b41244bba8f9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

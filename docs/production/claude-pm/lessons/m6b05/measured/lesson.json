@@ -1,0 +1,7925 @@
+{
+  "title": "Somatic vs Germ-Line Mutations, and Coding vs Non-Coding DNA",
+  "subtitle": "A mutation's effect depends on where it happens, so where in the body and where in the DNA, and what difference does each make?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 5,
+  "lessonIntent": "distinguishing somatic mutations (in body cells; copied by mitosis into a patch of descendant cells, larger if earlier; can affect that organism, including by starting a cancer; not inherited in animals) from germ-line mutations (in cells that make gametes; present in every cell of an offspring that inherits it, including its germ cells, so it can be passed on and enter the gene pool, while the parent in which it arose is unaffected); stating that only about 1 to 2 per cent of human DNA codes for protein; explaining that a coding mutation changes a codon (silent, missense, nonsense, frameshift) while a mutation in a promoter or regulatory sequence changes how much, when or where a gene is expressed with every codon unchanged (lactase persistence); explaining that a change in an intron usually has no effect unless it hits the cut signal, and that some non-coding DNA has no known job; assessing coding against non-coding significance by what the changed stretch does, not by whether it is translated; combining both questions in a two-by-two grid; applying this to an unseen fruit fly distinguish item and an unseen promoter against silent substitution assess item.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 898,
+      "voiceover": {
+        "text": "In 2013, Angelina Jolie said she carried a mutation in a gene called B R C A one. She'd inherited it, so it was in every cell of her body, and her doctors estimated her breast cancer risk at eighty-seven per cent. But the same change can also happen later in life, in a single breast cell, and then no child can inherit it. So why does it matter which cell a mutation is in, and which part of the DNA?",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/hook.a42aa8f7802d.mp3",
+        "startFrame": 0,
+        "endFrame": 838
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "In",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " 2013,",
+          "startMs": 280,
+          "endMs": 1440,
+          "timestampMs": 860,
+          "confidence": null
+        },
+        {
+          "text": " Angelina",
+          "startMs": 1520,
+          "endMs": 2000,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " Jolie",
+          "startMs": 2040,
+          "endMs": 2480,
+          "timestampMs": 2260,
+          "confidence": null
+        },
+        {
+          "text": " said",
+          "startMs": 2600,
+          "endMs": 2720,
+          "timestampMs": 2660,
+          "confidence": null
+        },
+        {
+          "text": " she",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " carried",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3280,
+          "endMs": 3320,
+          "timestampMs": 3300,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 3360,
+          "endMs": 3920,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4000,
+          "endMs": 4080,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4120,
+          "endMs": 4160,
+          "timestampMs": 4140,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 4240,
+          "endMs": 4560,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 4720,
+          "endMs": 4880,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 5040,
+          "endMs": 5280,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " R",
+          "startMs": 5440,
+          "endMs": 5520,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 5680,
+          "endMs": 5920,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 6040,
+          "endMs": 6160,
+          "timestampMs": 6100,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 6240,
+          "endMs": 7120,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " She'd",
+          "startMs": 7200,
+          "endMs": 7360,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 7440,
+          "endMs": 7920,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 8000,
+          "endMs": 8240,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8320,
+          "endMs": 8560,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 8640,
+          "endMs": 8720,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 9200,
+          "endMs": 9520,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " body,",
+          "startMs": 10240,
+          "endMs": 10880,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10920,
+          "endMs": 10960,
+          "timestampMs": 10940,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " doctors",
+          "startMs": 11200,
+          "endMs": 11520,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " estimated",
+          "startMs": 11800,
+          "endMs": 12080,
+          "timestampMs": 11940,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " breast",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " cancer",
+          "startMs": 12640,
+          "endMs": 12960,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " risk",
+          "startMs": 13160,
+          "endMs": 13360,
+          "timestampMs": 13260,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 13480,
+          "endMs": 13600,
+          "timestampMs": 13540,
+          "confidence": null
+        },
+        {
+          "text": " eighty-seven",
+          "startMs": 13680,
+          "endMs": 14240,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " cent.",
+          "startMs": 14560,
+          "endMs": 15520,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 15560,
+          "endMs": 15600,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15680,
+          "endMs": 15840,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 16000,
+          "endMs": 16160,
+          "timestampMs": 16080,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 16360,
+          "endMs": 16560,
+          "timestampMs": 16460,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 16680,
+          "endMs": 16800,
+          "timestampMs": 16740,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 16880,
+          "endMs": 17200,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " happen",
+          "startMs": 17280,
+          "endMs": 17520,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " later",
+          "startMs": 17600,
+          "endMs": 17920,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " life,",
+          "startMs": 18240,
+          "endMs": 18640,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18680,
+          "endMs": 18720,
+          "timestampMs": 18700,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18800,
+          "endMs": 18880,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " single",
+          "startMs": 18960,
+          "endMs": 19280,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " breast",
+          "startMs": 19360,
+          "endMs": 19600,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " cell,",
+          "startMs": 19680,
+          "endMs": 20320,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 20560,
+          "endMs": 21040,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 21160,
+          "endMs": 21280,
+          "timestampMs": 21220,
+          "confidence": null
+        },
+        {
+          "text": " child",
+          "startMs": 21360,
+          "endMs": 21680,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 21760,
+          "endMs": 21840,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " inherit",
+          "startMs": 22040,
+          "endMs": 22240,
+          "timestampMs": 22140,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 22320,
+          "endMs": 23040,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 23520,
+          "endMs": 23600,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 23680,
+          "endMs": 23760,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 23840,
+          "endMs": 24000,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " matter",
+          "startMs": 24160,
+          "endMs": 24320,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 24480,
+          "endMs": 24720,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 24800,
+          "endMs": 25040,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25067,
+          "endMs": 25093,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 25120,
+          "endMs": 25600,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 25680,
+          "endMs": 25760,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " in,",
+          "startMs": 25840,
+          "endMs": 26240,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26360,
+          "endMs": 26480,
+          "timestampMs": 26420,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 26560,
+          "endMs": 26720,
+          "timestampMs": 26640,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 26800,
+          "endMs": 26960,
+          "timestampMs": 26880,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 27000,
+          "endMs": 27040,
+          "timestampMs": 27020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27120,
+          "endMs": 27160,
+          "timestampMs": 27140,
+          "confidence": null
+        },
+        {
+          "text": " DNA?",
+          "startMs": 27200,
+          "endMs": 27920,
+          "timestampMs": 27560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "two-kinds",
+      "type": "concept",
+      "durationInFrames": 526,
+      "voiceover": {
+        "text": "As far as mutations go, your body has two kinds of cells. Most are somatic cells, body cells like skin, muscle and liver. A few are germ-line cells, the cells that make eggs or sperm, and the gametes themselves.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/two-kinds.49edca9c0b07.mp3",
+        "startFrame": 0,
+        "endFrame": 466
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "As",
+          "startMs": 0,
+          "endMs": 120,
+          "timestampMs": 60,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 160,
+          "endMs": 360,
+          "timestampMs": 260,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 400,
+          "endMs": 460,
+          "timestampMs": 430,
+          "confidence": null
+        },
+        {
+          "text": " mutations",
+          "startMs": 480,
+          "endMs": 1200,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " go,",
+          "startMs": 1280,
+          "endMs": 1840,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 1920,
+          "endMs": 2000,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 2080,
+          "endMs": 2320,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 2400,
+          "endMs": 2640,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 2760,
+          "endMs": 2880,
+          "timestampMs": 2820,
+          "confidence": null
+        },
+        {
+          "text": " kinds",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 3280,
+          "endMs": 3360,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " cells.",
+          "startMs": 3440,
+          "endMs": 4400,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " Most",
+          "startMs": 4600,
+          "endMs": 4800,
+          "timestampMs": 4700,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " somatic",
+          "startMs": 5040,
+          "endMs": 5520,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " cells,",
+          "startMs": 5600,
+          "endMs": 6320,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 6400,
+          "endMs": 6560,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 6720,
+          "endMs": 7040,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 7160,
+          "endMs": 7280,
+          "timestampMs": 7220,
+          "confidence": null
+        },
+        {
+          "text": " skin,",
+          "startMs": 7360,
+          "endMs": 7920,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " muscle",
+          "startMs": 8039.999999999999,
+          "endMs": 8400,
+          "timestampMs": 8220,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " liver.",
+          "startMs": 8640,
+          "endMs": 9520,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 9600,
+          "endMs": 9680,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 9760,
+          "endMs": 10080,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 10160,
+          "endMs": 10320,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " germ-line",
+          "startMs": 10440,
+          "endMs": 10960,
+          "timestampMs": 10700,
+          "confidence": null
+        },
+        {
+          "text": " cells,",
+          "startMs": 11040,
+          "endMs": 11760,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 12040,
+          "endMs": 12160,
+          "timestampMs": 12100,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 12400,
+          "endMs": 12640,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " eggs",
+          "startMs": 12760,
+          "endMs": 12960,
+          "timestampMs": 12860,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 13000,
+          "endMs": 13040,
+          "timestampMs": 13020,
+          "confidence": null
+        },
+        {
+          "text": " sperm,",
+          "startMs": 13200,
+          "endMs": 13840,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14040,
+          "endMs": 14080,
+          "timestampMs": 14060,
+          "confidence": null
+        },
+        {
+          "text": " gametes",
+          "startMs": 14160,
+          "endMs": 14560,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " themselves.",
+          "startMs": 14600,
+          "endMs": 15520,
+          "timestampMs": 15060,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "somatic",
+      "type": "concept",
+      "durationInFrames": 932,
+      "voiceover": {
+        "text": "Say a mutation happens in one skin cell. That cell divides by mitosis, both daughter cells copy the change, and so on. So it ends up in a patch, while the rest of the body stays normal. That's a somatic mutation, and the earlier it happens, the bigger the patch. If the change hits a gene that controls cell division, and more mutations follow, the patch can keep dividing, and become a cancer. That's how UV causes most skin cancers.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/somatic.2d0f1ebbee52.mp3",
+        "startFrame": 0,
+        "endFrame": 872
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Say",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 280,
+          "endMs": 320,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 600,
+          "endMs": 880,
+          "timestampMs": 740,
+          "confidence": null
+        },
+        {
+          "text": " happens",
+          "startMs": 920,
+          "endMs": 1280,
+          "timestampMs": 1100,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " skin",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " cell.",
+          "startMs": 2240,
+          "endMs": 2800,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 3040,
+          "endMs": 3200,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 3280,
+          "endMs": 3520,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " divides",
+          "startMs": 3640,
+          "endMs": 4000,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " mitosis,",
+          "startMs": 4320,
+          "endMs": 5280,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 5360,
+          "endMs": 5600,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " daughter",
+          "startMs": 5760,
+          "endMs": 5920,
+          "timestampMs": 5840,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 6080,
+          "endMs": 6240,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 6320,
+          "endMs": 6560,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6600,
+          "endMs": 6640,
+          "timestampMs": 6620,
+          "confidence": null
+        },
+        {
+          "text": " change,",
+          "startMs": 6720,
+          "endMs": 7280,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7320,
+          "endMs": 7360,
+          "timestampMs": 7340,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " on.",
+          "startMs": 7680,
+          "endMs": 8200,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 8480,
+          "endMs": 8640,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " ends",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 9280,
+          "endMs": 9320,
+          "timestampMs": 9300,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " patch,",
+          "startMs": 9520,
+          "endMs": 10160,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10360,
+          "endMs": 10400,
+          "timestampMs": 10380,
+          "confidence": null
+        },
+        {
+          "text": " rest",
+          "startMs": 10480,
+          "endMs": 10720,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10760,
+          "endMs": 10800,
+          "timestampMs": 10780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10840,
+          "endMs": 10880,
+          "timestampMs": 10860,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 11280,
+          "endMs": 11520,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " normal.",
+          "startMs": 11600,
+          "endMs": 12280,
+          "timestampMs": 11940,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 12560,
+          "endMs": 12880,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " somatic",
+          "startMs": 13120,
+          "endMs": 13600,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " mutation,",
+          "startMs": 13680,
+          "endMs": 14640,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14680,
+          "endMs": 14720,
+          "timestampMs": 14700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14800,
+          "endMs": 14960,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " earlier",
+          "startMs": 15040,
+          "endMs": 15360,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15440,
+          "endMs": 15520,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " happens,",
+          "startMs": 15560,
+          "endMs": 16239.999999999998,
+          "timestampMs": 15900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " bigger",
+          "startMs": 16480,
+          "endMs": 16720,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16760,
+          "endMs": 16800,
+          "timestampMs": 16780,
+          "confidence": null
+        },
+        {
+          "text": " patch.",
+          "startMs": 16880,
+          "endMs": 17640,
+          "timestampMs": 17260,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 18320,
+          "endMs": 18640,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " hits",
+          "startMs": 18720,
+          "endMs": 18800,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18880,
+          "endMs": 18960,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 19080,
+          "endMs": 19200,
+          "timestampMs": 19140,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 19280,
+          "endMs": 19360,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " controls",
+          "startMs": 19600,
+          "endMs": 19840,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 19920,
+          "endMs": 20080,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " division,",
+          "startMs": 20160,
+          "endMs": 20800,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20920,
+          "endMs": 21040,
+          "timestampMs": 20980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " mutations",
+          "startMs": 21280,
+          "endMs": 21840,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " follow,",
+          "startMs": 21920,
+          "endMs": 22640,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22720,
+          "endMs": 22800,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 22960,
+          "endMs": 23120,
+          "timestampMs": 23040,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 23240,
+          "endMs": 23360,
+          "timestampMs": 23300,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 23440,
+          "endMs": 23680,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " dividing,",
+          "startMs": 23760,
+          "endMs": 24427,
+          "timestampMs": 24093.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24453,
+          "endMs": 24480,
+          "timestampMs": 24466.5,
+          "confidence": null
+        },
+        {
+          "text": " become",
+          "startMs": 24560,
+          "endMs": 24720,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24800,
+          "endMs": 24880,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " cancer.",
+          "startMs": 24920,
+          "endMs": 26000,
+          "timestampMs": 25460,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 26080,
+          "endMs": 26240,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 26360,
+          "endMs": 26480,
+          "timestampMs": 26420,
+          "confidence": null
+        },
+        {
+          "text": " UV",
+          "startMs": 26560,
+          "endMs": 27120,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " causes",
+          "startMs": 27200,
+          "endMs": 27600,
+          "timestampMs": 27400,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 27680,
+          "endMs": 27920,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " skin",
+          "startMs": 28000,
+          "endMs": 28240,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " cancers.",
+          "startMs": 28320,
+          "endMs": 29040,
+          "timestampMs": 28680,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "germ-line",
+      "type": "concept",
+      "durationInFrames": 816,
+      "voiceover": {
+        "text": "A germ-line mutation is different. Suppose it's in a cell that makes sperm. A sperm carrying it fertilises an egg, so the zygote has it, and so does every cell copied from the zygote. That includes the new animal's own germ cells, so it can be passed on again, and enter the gene pool. The parent's body isn't affected, and the offspring may show nothing, if the new allele is recessive.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/germ-line.fc7342d3f738.mp3",
+        "startFrame": 0,
+        "endFrame": 756
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " germ-line",
+          "startMs": 160,
+          "endMs": 720,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 1040,
+          "endMs": 1360,
+          "timestampMs": 1200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1440,
+          "endMs": 1600,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " different.",
+          "startMs": 1680,
+          "endMs": 2440,
+          "timestampMs": 2060,
+          "confidence": null
+        },
+        {
+          "text": " Suppose",
+          "startMs": 2720,
+          "endMs": 3040,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 3120,
+          "endMs": 3240,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3280,
+          "endMs": 3360,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3400,
+          "endMs": 3440,
+          "timestampMs": 3420,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 4000,
+          "endMs": 4240,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " sperm.",
+          "startMs": 4320,
+          "endMs": 4880,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 5360,
+          "endMs": 5440,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 5520,
+          "endMs": 5840,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " carrying",
+          "startMs": 5920,
+          "endMs": 6320,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " fertilises",
+          "startMs": 6640,
+          "endMs": 7280,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " egg,",
+          "startMs": 7520,
+          "endMs": 8080,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8160,
+          "endMs": 8320,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " zygote",
+          "startMs": 8560,
+          "endMs": 8960,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 9040,
+          "endMs": 9200,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 9280,
+          "endMs": 9680,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9760,
+          "endMs": 9840,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 9920,
+          "endMs": 10080,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 10200,
+          "endMs": 10320,
+          "timestampMs": 10260,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 10400,
+          "endMs": 10720,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 10800,
+          "endMs": 11120,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " copied",
+          "startMs": 11200,
+          "endMs": 11600,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11800,
+          "endMs": 11840,
+          "timestampMs": 11820,
+          "confidence": null
+        },
+        {
+          "text": " zygote.",
+          "startMs": 11920,
+          "endMs": 12720,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " includes",
+          "startMs": 13200,
+          "endMs": 13600,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13640,
+          "endMs": 13680,
+          "timestampMs": 13660,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 13760,
+          "endMs": 13920,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " animal's",
+          "startMs": 14000,
+          "endMs": 14480,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 14560,
+          "endMs": 14720,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " germ",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " cells,",
+          "startMs": 15120,
+          "endMs": 15760,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 15840,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16120.000000000002,
+          "endMs": 16160,
+          "timestampMs": 16140,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 16239.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " passed",
+          "startMs": 16480,
+          "endMs": 16720,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " again,",
+          "startMs": 17080,
+          "endMs": 17520,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17680,
+          "endMs": 17840,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " enter",
+          "startMs": 17920,
+          "endMs": 18160,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18200,
+          "endMs": 18240,
+          "timestampMs": 18220,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 18320,
+          "endMs": 18480,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " pool.",
+          "startMs": 18560,
+          "endMs": 19600,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " parent's",
+          "startMs": 19920,
+          "endMs": 20160,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 20360,
+          "endMs": 20560,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 20640,
+          "endMs": 20800,
+          "timestampMs": 20720,
+          "confidence": null
+        },
+        {
+          "text": " affected,",
+          "startMs": 20880,
+          "endMs": 21600,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21800,
+          "endMs": 21840,
+          "timestampMs": 21820,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 21920,
+          "endMs": 22400,
+          "timestampMs": 22160,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 22480,
+          "endMs": 22560,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 22640,
+          "endMs": 22800,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " nothing,",
+          "startMs": 22880,
+          "endMs": 23440,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 23520,
+          "endMs": 23600,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23640,
+          "endMs": 23680,
+          "timestampMs": 23660,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 23760,
+          "endMs": 23840,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " allele",
+          "startMs": 23920,
+          "endMs": 24240,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " recessive.",
+          "startMs": 24480,
+          "endMs": 25200,
+          "timestampMs": 24840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "distinction",
+      "type": "concept",
+      "durationInFrames": 893,
+      "voiceover": {
+        "text": "So that's Jolie's case. Her inherited copy was in every cell, including those that make eggs, so each egg had a one in two chance of carrying it. A somatic mutation is copied only into one cell's descendants, so it affects part of one organism, and isn't inherited. A germ-line mutation can reach every cell of the next generation. That's why, in animals, only germ-line mutations add to the gene pool.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/distinction.ca04804dd1cd.mp3",
+        "startFrame": 0,
+        "endFrame": 833
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " that's",
+          "startMs": 240,
+          "endMs": 480,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " Jolie's",
+          "startMs": 520,
+          "endMs": 880,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " case.",
+          "startMs": 960,
+          "endMs": 1560,
+          "timestampMs": 1260,
+          "confidence": null
+        },
+        {
+          "text": " Her",
+          "startMs": 1760,
+          "endMs": 1920,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " inherited",
+          "startMs": 2000,
+          "endMs": 2480,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 2960,
+          "endMs": 3040,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3120,
+          "endMs": 3360,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 3520,
+          "endMs": 3680,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " cell,",
+          "startMs": 3840,
+          "endMs": 4400,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " including",
+          "startMs": 4680,
+          "endMs": 4960,
+          "timestampMs": 4820,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 5040,
+          "endMs": 5200,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 5280,
+          "endMs": 5360,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 5440,
+          "endMs": 5600,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " eggs,",
+          "startMs": 5680,
+          "endMs": 6480,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 6640,
+          "endMs": 6800,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " egg",
+          "startMs": 7360,
+          "endMs": 7600,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 7680,
+          "endMs": 7840,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 8080,
+          "endMs": 8160,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8240,
+          "endMs": 8400,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " chance",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " carrying",
+          "startMs": 9240,
+          "endMs": 9520,
+          "timestampMs": 9380,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 9600,
+          "endMs": 10080,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " somatic",
+          "startMs": 10520,
+          "endMs": 10960,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 11040,
+          "endMs": 11600,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11680,
+          "endMs": 11840,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " copied",
+          "startMs": 11920,
+          "endMs": 12240,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 12640,
+          "endMs": 12960,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " cell's",
+          "startMs": 13360,
+          "endMs": 13600,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " descendants,",
+          "startMs": 13680,
+          "endMs": 14640,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14720,
+          "endMs": 14960,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " affects",
+          "startMs": 15160,
+          "endMs": 15520,
+          "timestampMs": 15340,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 15680,
+          "endMs": 15840,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 16160,
+          "endMs": 16320,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " organism,",
+          "startMs": 16400,
+          "endMs": 17120,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17240,
+          "endMs": 17360,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 17440,
+          "endMs": 17680,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " inherited.",
+          "startMs": 17760,
+          "endMs": 18880,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 18960,
+          "endMs": 19040,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " germ-line",
+          "startMs": 19120,
+          "endMs": 19600,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 19680,
+          "endMs": 20240,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 20320,
+          "endMs": 20400,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 20480,
+          "endMs": 20800,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 20880,
+          "endMs": 21200,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 21280,
+          "endMs": 21440,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21480,
+          "endMs": 21520,
+          "timestampMs": 21500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21600,
+          "endMs": 21640,
+          "timestampMs": 21620,
+          "confidence": null
+        },
+        {
+          "text": " next",
+          "startMs": 21680,
+          "endMs": 21840,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " generation.",
+          "startMs": 21920,
+          "endMs": 23040,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 23120,
+          "endMs": 23280,
+          "timestampMs": 23200,
+          "confidence": null
+        },
+        {
+          "text": " why,",
+          "startMs": 23440,
+          "endMs": 23760,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 23840,
+          "endMs": 23920,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " animals,",
+          "startMs": 24200,
+          "endMs": 24800,
+          "timestampMs": 24500,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 24880,
+          "endMs": 25200,
+          "timestampMs": 25040,
+          "confidence": null
+        },
+        {
+          "text": " germ-line",
+          "startMs": 25280,
+          "endMs": 25840,
+          "timestampMs": 25560,
+          "confidence": null
+        },
+        {
+          "text": " mutations",
+          "startMs": 26160,
+          "endMs": 26480,
+          "timestampMs": 26320,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 26560,
+          "endMs": 26720,
+          "timestampMs": 26640,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26760,
+          "endMs": 26800,
+          "timestampMs": 26780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26880,
+          "endMs": 26920,
+          "timestampMs": 26900,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 26960,
+          "endMs": 27200,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " pool.",
+          "startMs": 27280,
+          "endMs": 27760,
+          "timestampMs": 27520,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "coding",
+      "type": "concept",
+      "durationInFrames": 821,
+      "voiceover": {
+        "text": "Now the second question, where in the DNA? Only about one to two per cent of human DNA is coding DNA, the stretches whose codons are translated into protein. A change there alters a codon, so it can be silent, swap an amino acid, add an early stop, or shift the frame. The rest is non-coding DNA, and much of it was once written off as junk.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/coding.6be07f713801.mp3",
+        "startFrame": 0,
+        "endFrame": 761
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 240,
+          "endMs": 307,
+          "timestampMs": 273.5,
+          "confidence": null
+        },
+        {
+          "text": " second",
+          "startMs": 320,
+          "endMs": 667,
+          "timestampMs": 493.5,
+          "confidence": null
+        },
+        {
+          "text": " question,",
+          "startMs": 720,
+          "endMs": 1760,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 1920,
+          "endMs": 2320,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2520,
+          "endMs": 2560,
+          "timestampMs": 2540,
+          "confidence": null
+        },
+        {
+          "text": " DNA?",
+          "startMs": 2640,
+          "endMs": 3200,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " Only",
+          "startMs": 3840,
+          "endMs": 4080,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 4240,
+          "endMs": 4400,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4720,
+          "endMs": 4960,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 5040,
+          "endMs": 5120,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " cent",
+          "startMs": 5480,
+          "endMs": 5600,
+          "timestampMs": 5540,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5640,
+          "endMs": 5680,
+          "timestampMs": 5660,
+          "confidence": null
+        },
+        {
+          "text": " human",
+          "startMs": 5760,
+          "endMs": 6000,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 6080,
+          "endMs": 6640,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 6960,
+          "endMs": 7440,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " DNA,",
+          "startMs": 7520,
+          "endMs": 8400,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " stretches",
+          "startMs": 8600,
+          "endMs": 9040,
+          "timestampMs": 8820,
+          "confidence": null
+        },
+        {
+          "text": " whose",
+          "startMs": 9160,
+          "endMs": 9280,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " codons",
+          "startMs": 9440,
+          "endMs": 9760,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " translated",
+          "startMs": 10200,
+          "endMs": 10480,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " protein.",
+          "startMs": 10800,
+          "endMs": 11360,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 12000,
+          "endMs": 12080,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 12280,
+          "endMs": 12480,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 12560,
+          "endMs": 12960,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " alters",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13400,
+          "endMs": 13440,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " codon,",
+          "startMs": 13520,
+          "endMs": 14160,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14240,
+          "endMs": 14480,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 14840,
+          "endMs": 14880,
+          "timestampMs": 14860,
+          "confidence": null
+        },
+        {
+          "text": " silent,",
+          "startMs": 14960,
+          "endMs": 15760,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " swap",
+          "startMs": 15840,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 16120.000000000002,
+          "endMs": 16160,
+          "timestampMs": 16140,
+          "confidence": null
+        },
+        {
+          "text": " amino",
+          "startMs": 16239.999999999998,
+          "endMs": 16560,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 16760,
+          "endMs": 17280,
+          "timestampMs": 17020,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 17360,
+          "endMs": 17440,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " early",
+          "startMs": 17720,
+          "endMs": 17840,
+          "timestampMs": 17780,
+          "confidence": null
+        },
+        {
+          "text": " stop,",
+          "startMs": 17920,
+          "endMs": 18560,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 18680,
+          "endMs": 18800,
+          "timestampMs": 18740,
+          "confidence": null
+        },
+        {
+          "text": " shift",
+          "startMs": 18960,
+          "endMs": 19200,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19240,
+          "endMs": 19280,
+          "timestampMs": 19260,
+          "confidence": null
+        },
+        {
+          "text": " frame.",
+          "startMs": 19360,
+          "endMs": 19840,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 20480,
+          "endMs": 20560,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " rest",
+          "startMs": 20640,
+          "endMs": 21040,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21120,
+          "endMs": 21280,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " non-coding",
+          "startMs": 21360,
+          "endMs": 22080,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " DNA,",
+          "startMs": 22160,
+          "endMs": 22960,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 23200,
+          "endMs": 23360,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 23440,
+          "endMs": 23480,
+          "timestampMs": 23460,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 23520,
+          "endMs": 23600,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 23680,
+          "endMs": 23840,
+          "timestampMs": 23760,
+          "confidence": null
+        },
+        {
+          "text": " once",
+          "startMs": 23920,
+          "endMs": 24080,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " written",
+          "startMs": 24160,
+          "endMs": 24400,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 24640,
+          "endMs": 24720,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " junk.",
+          "startMs": 24880,
+          "endMs": 25360,
+          "timestampMs": 25120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "type": "concept",
+      "durationInFrames": 886,
+      "voiceover": {
+        "text": "But some non-coding DNA controls genes. Remember the promoter, where RNA polymerase binds to copy a gene. Change a base there, and the polymerase may bind less well, so less mRNA is made, or none. Every codon is still correct, there's just less protein. Other control stretches, called regulatory sequences, can sit far away, and decide when a gene is switched on, and in which cells.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/regulatory.1fcda0a35f9e.mp3",
+        "startFrame": 0,
+        "endFrame": 826
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "But",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 240,
+          "endMs": 480,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " non-coding",
+          "startMs": 560,
+          "endMs": 1120,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 1200,
+          "endMs": 1680,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " controls",
+          "startMs": 1760,
+          "endMs": 2400,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " genes.",
+          "startMs": 2480,
+          "endMs": 3240,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " Remember",
+          "startMs": 3520,
+          "endMs": 3840,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3880,
+          "endMs": 3920,
+          "timestampMs": 3900,
+          "confidence": null
+        },
+        {
+          "text": " promoter,",
+          "startMs": 4000,
+          "endMs": 4800,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 4920,
+          "endMs": 5040,
+          "timestampMs": 4980,
+          "confidence": null
+        },
+        {
+          "text": " RNA",
+          "startMs": 5120,
+          "endMs": 5520,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " polymerase",
+          "startMs": 5600,
+          "endMs": 6160,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " binds",
+          "startMs": 6240,
+          "endMs": 6640,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 6880,
+          "endMs": 7120,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7200,
+          "endMs": 7240,
+          "timestampMs": 7220,
+          "confidence": null
+        },
+        {
+          "text": " gene.",
+          "startMs": 7280,
+          "endMs": 7680,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " Change",
+          "startMs": 8240,
+          "endMs": 8480,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8560,
+          "endMs": 8600,
+          "timestampMs": 8580,
+          "confidence": null
+        },
+        {
+          "text": " base",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " there,",
+          "startMs": 8960,
+          "endMs": 9520,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9560,
+          "endMs": 9600,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9680,
+          "endMs": 9720,
+          "timestampMs": 9700,
+          "confidence": null
+        },
+        {
+          "text": " polymerase",
+          "startMs": 9760,
+          "endMs": 10400,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " may",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " bind",
+          "startMs": 10640,
+          "endMs": 10960,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 11080,
+          "endMs": 11200,
+          "timestampMs": 11140,
+          "confidence": null
+        },
+        {
+          "text": " well,",
+          "startMs": 11280,
+          "endMs": 11920,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 12480,
+          "endMs": 12720,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " mRNA",
+          "startMs": 12880,
+          "endMs": 13440,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " made,",
+          "startMs": 13680,
+          "endMs": 14240,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " none.",
+          "startMs": 14480,
+          "endMs": 14880,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " Every",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " codon",
+          "startMs": 15840,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16280.000000000002,
+          "endMs": 16320,
+          "timestampMs": 16300,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 16400,
+          "endMs": 16560,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " correct,",
+          "startMs": 16640,
+          "endMs": 17360,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " there's",
+          "startMs": 17440,
+          "endMs": 17600,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 17680,
+          "endMs": 17760,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 17840,
+          "endMs": 18000,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " protein.",
+          "startMs": 18080,
+          "endMs": 18640,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " Other",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " control",
+          "startMs": 19520,
+          "endMs": 19920,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " stretches,",
+          "startMs": 20000,
+          "endMs": 20640,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 20800,
+          "endMs": 20960,
+          "timestampMs": 20880,
+          "confidence": null
+        },
+        {
+          "text": " regulatory",
+          "startMs": 21040,
+          "endMs": 21600,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " sequences,",
+          "startMs": 21680,
+          "endMs": 22480,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " sit",
+          "startMs": 22720,
+          "endMs": 22960,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " far",
+          "startMs": 23040,
+          "endMs": 23280,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " away,",
+          "startMs": 23360,
+          "endMs": 23920,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23960,
+          "endMs": 24000,
+          "timestampMs": 23980,
+          "confidence": null
+        },
+        {
+          "text": " decide",
+          "startMs": 24080,
+          "endMs": 24480,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 24560,
+          "endMs": 24720,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24760,
+          "endMs": 24800,
+          "timestampMs": 24780,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 24880,
+          "endMs": 25040,
+          "timestampMs": 24960,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 25120,
+          "endMs": 25200,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " switched",
+          "startMs": 25320,
+          "endMs": 25520,
+          "timestampMs": 25420,
+          "confidence": null
+        },
+        {
+          "text": " on,",
+          "startMs": 25600,
+          "endMs": 26080,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26200,
+          "endMs": 26320,
+          "timestampMs": 26260,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 26400,
+          "endMs": 26480,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 26560,
+          "endMs": 26720,
+          "timestampMs": 26640,
+          "confidence": null
+        },
+        {
+          "text": " cells.",
+          "startMs": 26800,
+          "endMs": 27520,
+          "timestampMs": 27160,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "lactase",
+      "type": "concept",
+      "durationInFrames": 872,
+      "voiceover": {
+        "text": "Most mammals stop making lactase, the enzyme that digests milk sugar, after weaning. But many adults from dairy-farming populations keep making it. In many of them, the cause is one base change in a regulatory sequence, about fourteen thousand bases before the lactase gene. The enzyme is identical, the gene just stays switched on. It's inherited, and it helped milk drinkers, so it spread through those populations.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/lactase.f80dcd73d138.mp3",
+        "startFrame": 0,
+        "endFrame": 812
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Most",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " mammals",
+          "startMs": 400,
+          "endMs": 800,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " stop",
+          "startMs": 920,
+          "endMs": 1040,
+          "timestampMs": 980,
+          "confidence": null
+        },
+        {
+          "text": " making",
+          "startMs": 1120,
+          "endMs": 1360,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " lactase,",
+          "startMs": 1440,
+          "endMs": 2320,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " enzyme",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 3040,
+          "endMs": 3120,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " digests",
+          "startMs": 3320,
+          "endMs": 3600,
+          "timestampMs": 3460,
+          "confidence": null
+        },
+        {
+          "text": " milk",
+          "startMs": 3680,
+          "endMs": 3840,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " sugar,",
+          "startMs": 3920,
+          "endMs": 4480,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 4640,
+          "endMs": 4800,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " weaning.",
+          "startMs": 4880,
+          "endMs": 5840,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 6080,
+          "endMs": 6320,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " adults",
+          "startMs": 6400,
+          "endMs": 6800,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " dairy-farming",
+          "startMs": 7040,
+          "endMs": 7680,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " populations",
+          "startMs": 7800,
+          "endMs": 8480,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " making",
+          "startMs": 8880,
+          "endMs": 9200,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 9280,
+          "endMs": 9920,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 10200,
+          "endMs": 10320,
+          "timestampMs": 10260,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " them,",
+          "startMs": 10560,
+          "endMs": 10880,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10960,
+          "endMs": 11040,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " cause",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11440,
+          "endMs": 11600,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " base",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12840,
+          "endMs": 12880,
+          "timestampMs": 12860,
+          "confidence": null
+        },
+        {
+          "text": " regulatory",
+          "startMs": 12960,
+          "endMs": 13520,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " sequence,",
+          "startMs": 13800,
+          "endMs": 14320,
+          "timestampMs": 14060,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 14400,
+          "endMs": 14720,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " fourteen",
+          "startMs": 14800,
+          "endMs": 15200,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 15440,
+          "endMs": 15840,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " bases",
+          "startMs": 15920,
+          "endMs": 16320,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 16400,
+          "endMs": 16800,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16840,
+          "endMs": 16880,
+          "timestampMs": 16860,
+          "confidence": null
+        },
+        {
+          "text": " lactase",
+          "startMs": 16960,
+          "endMs": 17440,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " gene.",
+          "startMs": 17600,
+          "endMs": 18320,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " enzyme",
+          "startMs": 18720,
+          "endMs": 18960,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " identical,",
+          "startMs": 19320,
+          "endMs": 20080,
+          "timestampMs": 19700,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20120,
+          "endMs": 20160,
+          "timestampMs": 20140,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 20240,
+          "endMs": 20640,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 20720,
+          "endMs": 20880,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 20960,
+          "endMs": 21200,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " switched",
+          "startMs": 21320,
+          "endMs": 21520,
+          "timestampMs": 21420,
+          "confidence": null
+        },
+        {
+          "text": " on.",
+          "startMs": 21600,
+          "endMs": 22320,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " It's",
+          "startMs": 22360,
+          "endMs": 22480,
+          "timestampMs": 22420,
+          "confidence": null
+        },
+        {
+          "text": " inherited,",
+          "startMs": 22560,
+          "endMs": 23360,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23400,
+          "endMs": 23440,
+          "timestampMs": 23420,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 23520,
+          "endMs": 23680,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " helped",
+          "startMs": 23760,
+          "endMs": 24000,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " milk",
+          "startMs": 24040,
+          "endMs": 24160,
+          "timestampMs": 24100,
+          "confidence": null
+        },
+        {
+          "text": " drinkers,",
+          "startMs": 24240,
+          "endMs": 24960,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 25200,
+          "endMs": 25280,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " spread",
+          "startMs": 25480,
+          "endMs": 25680,
+          "timestampMs": 25580,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 25760,
+          "endMs": 25840,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 25960,
+          "endMs": 26080,
+          "timestampMs": 26020,
+          "confidence": null
+        },
+        {
+          "text": " populations.",
+          "startMs": 26160,
+          "endMs": 27040,
+          "timestampMs": 26600,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "introns",
+      "type": "concept",
+      "durationInFrames": 838,
+      "voiceover": {
+        "text": "Non-coding DNA sits inside genes too. Many genes contain introns, stretches cut out of the mRNA before translation. A change in the middle of an intron usually does nothing. But a change at the signal that marks where to cut can make the cell cut in the wrong place, and the protein changes. And some non-coding DNA has no known job, so changes there are often neutral.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/introns.394da87a9fa5.mp3",
+        "startFrame": 0,
+        "endFrame": 778
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Non-coding",
+          "startMs": 0,
+          "endMs": 640,
+          "timestampMs": 320,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 720,
+          "endMs": 1200,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " sits",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " inside",
+          "startMs": 1600,
+          "endMs": 2000,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " genes",
+          "startMs": 2200,
+          "endMs": 2400,
+          "timestampMs": 2300,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 2480,
+          "endMs": 3120,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " Many",
+          "startMs": 3440,
+          "endMs": 3600,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " genes",
+          "startMs": 3680,
+          "endMs": 4000,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " contain",
+          "startMs": 4080,
+          "endMs": 4480,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " introns,",
+          "startMs": 4640,
+          "endMs": 5680,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " stretches",
+          "startMs": 5760,
+          "endMs": 6240,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " cut",
+          "startMs": 6320,
+          "endMs": 6480,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 6560,
+          "endMs": 6720,
+          "timestampMs": 6640,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 6760,
+          "endMs": 6800,
+          "timestampMs": 6780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6840,
+          "endMs": 6880,
+          "timestampMs": 6860,
+          "confidence": null
+        },
+        {
+          "text": " mRNA",
+          "startMs": 6960,
+          "endMs": 7520,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 7600,
+          "endMs": 8000,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " translation.",
+          "startMs": 8080,
+          "endMs": 8880,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 9680,
+          "endMs": 9920,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10120,
+          "endMs": 10160,
+          "timestampMs": 10140,
+          "confidence": null
+        },
+        {
+          "text": " middle",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10520,
+          "endMs": 10560,
+          "timestampMs": 10540,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 10640,
+          "endMs": 10680,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " intron",
+          "startMs": 10720,
+          "endMs": 11120,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 11760,
+          "endMs": 11920,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " nothing.",
+          "startMs": 12000,
+          "endMs": 12480,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13160,
+          "endMs": 13200,
+          "timestampMs": 13180,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 13280,
+          "endMs": 13520,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13720,
+          "endMs": 13760,
+          "timestampMs": 13740,
+          "confidence": null
+        },
+        {
+          "text": " signal",
+          "startMs": 13920,
+          "endMs": 14240,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " marks",
+          "startMs": 14560,
+          "endMs": 14880,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 14960,
+          "endMs": 15200,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15280,
+          "endMs": 15360,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " cut",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 16000,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 16160,
+          "endMs": 16320,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 16480,
+          "endMs": 16720,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " cut",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 17040,
+          "endMs": 17120,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17160,
+          "endMs": 17200,
+          "timestampMs": 17180,
+          "confidence": null
+        },
+        {
+          "text": " wrong",
+          "startMs": 17360,
+          "endMs": 17600,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " place,",
+          "startMs": 17680,
+          "endMs": 18400,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18600,
+          "endMs": 18640,
+          "timestampMs": 18620,
+          "confidence": null
+        },
+        {
+          "text": " protein",
+          "startMs": 18720,
+          "endMs": 19120,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " changes.",
+          "startMs": 19200,
+          "endMs": 19840,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 20480,
+          "endMs": 20640,
+          "timestampMs": 20560,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 20720,
+          "endMs": 20880,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " non-coding",
+          "startMs": 20960,
+          "endMs": 21520,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 21600,
+          "endMs": 22080,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 22160,
+          "endMs": 22320,
+          "timestampMs": 22240,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 22480,
+          "endMs": 22640,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " known",
+          "startMs": 22720,
+          "endMs": 22960,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " job,",
+          "startMs": 23040,
+          "endMs": 23760,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 23840,
+          "endMs": 23920,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " changes",
+          "startMs": 24000,
+          "endMs": 24320,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 24400,
+          "endMs": 24720,
+          "timestampMs": 24560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " often",
+          "startMs": 25080,
+          "endMs": 25200,
+          "timestampMs": 25140,
+          "confidence": null
+        },
+        {
+          "text": " neutral.",
+          "startMs": 25280,
+          "endMs": 25920,
+          "timestampMs": 25600,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "which-matters",
+      "type": "concept",
+      "durationInFrames": 548,
+      "voiceover": {
+        "text": "So which matters more, coding or non-coding? Neither, as a rule. A coding change can be silent, and a non-coding change can switch a gene off. What counts is whether the changed stretch does a job, and what the change does to it.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/which-matters.b6a4c09d713b.mp3",
+        "startFrame": 0,
+        "endFrame": 488
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " matters",
+          "startMs": 720,
+          "endMs": 960,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " more,",
+          "startMs": 1040,
+          "endMs": 1760,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 2040,
+          "endMs": 2320,
+          "timestampMs": 2180,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " non-coding?",
+          "startMs": 2640,
+          "endMs": 3440,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " Neither,",
+          "startMs": 4080,
+          "endMs": 4640,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4840,
+          "endMs": 4880,
+          "timestampMs": 4860,
+          "confidence": null
+        },
+        {
+          "text": " rule.",
+          "startMs": 4960,
+          "endMs": 5280,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 5920,
+          "endMs": 6240,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 6320,
+          "endMs": 6640,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 6680,
+          "endMs": 6720,
+          "timestampMs": 6700,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " silent,",
+          "startMs": 6960,
+          "endMs": 7680,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7720,
+          "endMs": 7760,
+          "timestampMs": 7740,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7840,
+          "endMs": 7920,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " non-coding",
+          "startMs": 8000,
+          "endMs": 8560,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 9040,
+          "endMs": 9200,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " switch",
+          "startMs": 9280,
+          "endMs": 9520,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9560,
+          "endMs": 9600,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 9720,
+          "endMs": 9840,
+          "timestampMs": 9780,
+          "confidence": null
+        },
+        {
+          "text": " off.",
+          "startMs": 9920,
+          "endMs": 10320,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " What",
+          "startMs": 10880,
+          "endMs": 11120,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " counts",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11760,
+          "endMs": 11840,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 11920,
+          "endMs": 12080,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " changed",
+          "startMs": 12320,
+          "endMs": 12800,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " stretch",
+          "startMs": 12880,
+          "endMs": 13280,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " job,",
+          "startMs": 13680,
+          "endMs": 14320,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14480,
+          "endMs": 14640,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 14800,
+          "endMs": 14880,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14960,
+          "endMs": 15040,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 15120,
+          "endMs": 15360,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 15520,
+          "endMs": 15680,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 15920,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16080,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "both-together",
+      "type": "concept",
+      "durationInFrames": 766,
+      "voiceover": {
+        "text": "Put the two questions together. Where it is in the body decides who it can affect, one organism, or its descendants too. Where it is in the DNA decides what it does, change a protein, or change how much is made. A UV change in a skin cell's gene can start a cancer, while lactase persistence is a germ-line change in a regulatory sequence.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/both-together.019c2ae64cc8.mp3",
+        "startFrame": 0,
+        "endFrame": 706
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Put",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 200,
+          "endMs": 240,
+          "timestampMs": 220,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 560,
+          "endMs": 960,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 1040,
+          "endMs": 1840,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " Where",
+          "startMs": 2160,
+          "endMs": 2320,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2720,
+          "endMs": 2760,
+          "timestampMs": 2740,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 2960,
+          "endMs": 3360,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " decides",
+          "startMs": 3440,
+          "endMs": 4000,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " who",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 4280,
+          "endMs": 4320,
+          "timestampMs": 4300,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " affect,",
+          "startMs": 4560,
+          "endMs": 5440,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " organism,",
+          "startMs": 5760,
+          "endMs": 6560,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 6680,
+          "endMs": 6800,
+          "timestampMs": 6740,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " descendants",
+          "startMs": 7120,
+          "endMs": 7680,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 7760,
+          "endMs": 8160,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " Where",
+          "startMs": 8720,
+          "endMs": 8880,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 9240,
+          "endMs": 9280,
+          "timestampMs": 9260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " DNA",
+          "startMs": 9520,
+          "endMs": 10080,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " decides",
+          "startMs": 10240,
+          "endMs": 10720,
+          "timestampMs": 10480,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10960,
+          "endMs": 11120,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " does,",
+          "startMs": 11360,
+          "endMs": 12000,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12360,
+          "endMs": 12400,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " protein,",
+          "startMs": 12480,
+          "endMs": 13200,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 13440,
+          "endMs": 13760,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 13840,
+          "endMs": 13920,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 14000,
+          "endMs": 14160,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14240,
+          "endMs": 14320,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " made.",
+          "startMs": 14400,
+          "endMs": 15080,
+          "timestampMs": 14740,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " UV",
+          "startMs": 15520,
+          "endMs": 15920,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 16000,
+          "endMs": 16320,
+          "timestampMs": 16160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16360,
+          "endMs": 16400,
+          "timestampMs": 16380,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16440,
+          "endMs": 16480,
+          "timestampMs": 16460,
+          "confidence": null
+        },
+        {
+          "text": " skin",
+          "startMs": 16560,
+          "endMs": 16800,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " cell's",
+          "startMs": 16880,
+          "endMs": 17200,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " gene",
+          "startMs": 17280,
+          "endMs": 17520,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 17600,
+          "endMs": 17760,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 17920,
+          "endMs": 18080,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18120,
+          "endMs": 18160,
+          "timestampMs": 18140,
+          "confidence": null
+        },
+        {
+          "text": " cancer,",
+          "startMs": 18240,
+          "endMs": 19120,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 19240,
+          "endMs": 19360,
+          "timestampMs": 19300,
+          "confidence": null
+        },
+        {
+          "text": " lactase",
+          "startMs": 19400,
+          "endMs": 19840,
+          "timestampMs": 19620,
+          "confidence": null
+        },
+        {
+          "text": " persistence",
+          "startMs": 19920,
+          "endMs": 20560,
+          "timestampMs": 20240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " germ-line",
+          "startMs": 20960,
+          "endMs": 21440,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 21520,
+          "endMs": 21840,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 21920,
+          "endMs": 22000,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22080,
+          "endMs": 22120,
+          "timestampMs": 22100,
+          "confidence": null
+        },
+        {
+          "text": " regulatory",
+          "startMs": 22160,
+          "endMs": 22720,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " sequence.",
+          "startMs": 22800,
+          "endMs": 23520,
+          "timestampMs": 23160,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 552,
+      "voiceover": {
+        "text": "Two things to hold on to. Somatic stays with you, germ line can go to your kids. That's true for animals, but plants can make flowers from body tissue that carries a mutation. And non-coding doesn't mean unimportant. Ask what the stretch does.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/memory.bf6ff33803c1.mp3",
+        "startFrame": 0,
+        "endFrame": 492
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " things",
+          "startMs": 320,
+          "endMs": 560,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 640,
+          "endMs": 680,
+          "timestampMs": 660,
+          "confidence": null
+        },
+        {
+          "text": " hold",
+          "startMs": 720,
+          "endMs": 960,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 1040,
+          "endMs": 1120,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " to.",
+          "startMs": 1200,
+          "endMs": 1520,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " Somatic",
+          "startMs": 1920,
+          "endMs": 2400,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 2480,
+          "endMs": 2720,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " you,",
+          "startMs": 3040,
+          "endMs": 3680,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " germ",
+          "startMs": 3760,
+          "endMs": 4080,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 4240,
+          "endMs": 4400,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4480,
+          "endMs": 4560,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " go",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " kids.",
+          "startMs": 5040,
+          "endMs": 5520,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " true",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " animals,",
+          "startMs": 6840,
+          "endMs": 7440,
+          "timestampMs": 7140,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 7920,
+          "endMs": 8160,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 8240,
+          "endMs": 8320,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " flowers",
+          "startMs": 8640,
+          "endMs": 9120,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 9360,
+          "endMs": 9600,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " tissue",
+          "startMs": 9680,
+          "endMs": 10000,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10520,
+          "endMs": 10560,
+          "timestampMs": 10540,
+          "confidence": null
+        },
+        {
+          "text": " mutation.",
+          "startMs": 10880,
+          "endMs": 11280,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 11760,
+          "endMs": 11920,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " non-coding",
+          "startMs": 12000,
+          "endMs": 12720,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 12880,
+          "endMs": 13200,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " mean",
+          "startMs": 13280,
+          "endMs": 13440,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " unimportant.",
+          "startMs": 13600,
+          "endMs": 14400,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " Ask",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15240,
+          "endMs": 15280,
+          "timestampMs": 15260,
+          "confidence": null
+        },
+        {
+          "text": " stretch",
+          "startMs": 15360,
+          "endMs": 15760,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " does.",
+          "startMs": 15960,
+          "endMs": 16400,
+          "timestampMs": 16180,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 1162,
+      "voiceover": {
+        "text": "Two exam questions now. First, fruit fly larvae were exposed to X-rays. In fly A, a mutation in one developing eye cell left the adult with a white patch in one red eye. In fly B, a mutation hit a cell that makes sperm, and fly B looked normal. Identify each type, then explain how their effects differ, on each fly and on its offspring. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt.7d355760c245.mp3",
+        "startFrame": 0,
+        "endFrame": 826
+      },
+      "responseHold": {
+        "startFrame": 838,
+        "endFrame": 1138
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Two",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " exam",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 720,
+          "endMs": 1200,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " now.",
+          "startMs": 1360,
+          "endMs": 1600,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " First,",
+          "startMs": 2080,
+          "endMs": 2960,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " fruit",
+          "startMs": 3040,
+          "endMs": 3280,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " larvae",
+          "startMs": 3680,
+          "endMs": 4080,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " exposed",
+          "startMs": 4360,
+          "endMs": 4800,
+          "timestampMs": 4580,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " X-rays.",
+          "startMs": 5040,
+          "endMs": 5920,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 6320,
+          "endMs": 6560,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " A,",
+          "startMs": 6720,
+          "endMs": 7360,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 7800,
+          "endMs": 8080,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8160,
+          "endMs": 8400,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 8520,
+          "endMs": 8640,
+          "timestampMs": 8580,
+          "confidence": null
+        },
+        {
+          "text": " developing",
+          "startMs": 8840,
+          "endMs": 9120,
+          "timestampMs": 8980,
+          "confidence": null
+        },
+        {
+          "text": " eye",
+          "startMs": 9280,
+          "endMs": 9440,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 9520,
+          "endMs": 9840,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " left",
+          "startMs": 9920,
+          "endMs": 10160,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " adult",
+          "startMs": 10400,
+          "endMs": 10640,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 10720,
+          "endMs": 10880,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10920,
+          "endMs": 10960,
+          "timestampMs": 10940,
+          "confidence": null
+        },
+        {
+          "text": " white",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 11440,
+          "endMs": 11760,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 11840,
+          "endMs": 12000,
+          "timestampMs": 11920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " red",
+          "startMs": 12400,
+          "endMs": 12560,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " eye.",
+          "startMs": 12720,
+          "endMs": 13360,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 13680,
+          "endMs": 13760,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 14160,
+          "endMs": 14880,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14920,
+          "endMs": 14960,
+          "timestampMs": 14940,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 15040,
+          "endMs": 15520,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " hit",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15760,
+          "endMs": 15840,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 15960,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16020,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " sperm,",
+          "startMs": 16560,
+          "endMs": 17280,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17360,
+          "endMs": 17440,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 17560,
+          "endMs": 17680,
+          "timestampMs": 17620,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 17760,
+          "endMs": 18000,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " looked",
+          "startMs": 18080,
+          "endMs": 18280,
+          "timestampMs": 18180,
+          "confidence": null
+        },
+        {
+          "text": " normal.",
+          "startMs": 18320,
+          "endMs": 19080,
+          "timestampMs": 18700,
+          "confidence": null
+        },
+        {
+          "text": " Identify",
+          "startMs": 19440,
+          "endMs": 20080,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 20160,
+          "endMs": 20400,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " type,",
+          "startMs": 20480,
+          "endMs": 21120,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 21200,
+          "endMs": 21280,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 21520,
+          "endMs": 21760,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 21840,
+          "endMs": 22080,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 22160,
+          "endMs": 22240,
+          "timestampMs": 22200,
+          "confidence": null
+        },
+        {
+          "text": " effects",
+          "startMs": 22440,
+          "endMs": 22640,
+          "timestampMs": 22540,
+          "confidence": null
+        },
+        {
+          "text": " differ,",
+          "startMs": 22720,
+          "endMs": 23360,
+          "timestampMs": 23040,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 23440,
+          "endMs": 23520,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 23600,
+          "endMs": 23760,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 23840,
+          "endMs": 24240,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24480,
+          "endMs": 24800,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 24880,
+          "endMs": 24960,
+          "timestampMs": 24920,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " offspring.",
+          "startMs": 25200,
+          "endMs": 25960,
+          "timestampMs": 25580,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 26240,
+          "endMs": 26480,
+          "timestampMs": 26360,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 26560,
+          "endMs": 26720,
+          "timestampMs": 26640,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26800,
+          "endMs": 26880,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 26960,
+          "endMs": 27520,
+          "timestampMs": 27240,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1138,
+        "responseHoldStart": 838,
+        "pausePrompt": 838
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 864,
+      "voiceover": {
+        "text": "Fly A's is somatic. Mitosis copied it into that eye cell's descendants, so only a patch changed. It isn't in A's gametes, so its offspring can't inherit the patch. Fly B's is germ-line. It didn't change fly B, but sperm from that cell carry it, so some offspring have it in every cell, and can pass it on. Saying fly A's offspring get the patch is the classic mistake.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-one.b66505efe0a7.mp3",
+        "startFrame": 0,
+        "endFrame": 804
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Fly",
+          "startMs": 0,
+          "endMs": 267,
+          "timestampMs": 133.5,
+          "confidence": null
+        },
+        {
+          "text": " A's",
+          "startMs": 320,
+          "endMs": 760,
+          "timestampMs": 540,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 880,
+          "endMs": 1040,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " somatic.",
+          "startMs": 1120,
+          "endMs": 1760,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " Mitosis",
+          "startMs": 1840,
+          "endMs": 2960,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " copied",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 3440,
+          "endMs": 3520,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 3840,
+          "endMs": 4000,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " eye",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " cell's",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " descendants,",
+          "startMs": 4680,
+          "endMs": 5600,
+          "timestampMs": 5140,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 5720,
+          "endMs": 5840,
+          "timestampMs": 5780,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 5920,
+          "endMs": 6160,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 6480,
+          "endMs": 6640,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " changed.",
+          "startMs": 6720,
+          "endMs": 7680,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 7920,
+          "endMs": 8080,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 8160,
+          "endMs": 8320,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " A's",
+          "startMs": 8400,
+          "endMs": 8640,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " gametes,",
+          "startMs": 8760,
+          "endMs": 9360,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 9640,
+          "endMs": 9760,
+          "timestampMs": 9700,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 9880,
+          "endMs": 10400,
+          "timestampMs": 10140,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 10520,
+          "endMs": 10720,
+          "timestampMs": 10620,
+          "confidence": null
+        },
+        {
+          "text": " inherit",
+          "startMs": 10800,
+          "endMs": 11200,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11240,
+          "endMs": 11280,
+          "timestampMs": 11260,
+          "confidence": null
+        },
+        {
+          "text": " patch.",
+          "startMs": 11360,
+          "endMs": 12400,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " Fly",
+          "startMs": 12560,
+          "endMs": 12720,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " B's",
+          "startMs": 12880,
+          "endMs": 13360,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 13440,
+          "endMs": 13520,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " germ-line.",
+          "startMs": 13680,
+          "endMs": 14720,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 14760,
+          "endMs": 14800,
+          "timestampMs": 14780,
+          "confidence": null
+        },
+        {
+          "text": " didn't",
+          "startMs": 14880,
+          "endMs": 15120,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 15280,
+          "endMs": 15440,
+          "timestampMs": 15360,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 15520,
+          "endMs": 15760,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 15840,
+          "endMs": 16400,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " sperm",
+          "startMs": 16640,
+          "endMs": 17040,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 17440,
+          "endMs": 17760,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 17960,
+          "endMs": 18160,
+          "timestampMs": 18060,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 18240,
+          "endMs": 18640,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 18720,
+          "endMs": 18880,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 18960,
+          "endMs": 19120,
+          "timestampMs": 19040,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 19200,
+          "endMs": 19600,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 19840,
+          "endMs": 19920,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 20040,
+          "endMs": 20160,
+          "timestampMs": 20100,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 20240,
+          "endMs": 20560,
+          "timestampMs": 20400,
+          "confidence": null
+        },
+        {
+          "text": " cell,",
+          "startMs": 20640,
+          "endMs": 21040,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21160,
+          "endMs": 21280,
+          "timestampMs": 21220,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 21360,
+          "endMs": 21520,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " pass",
+          "startMs": 21640,
+          "endMs": 21760,
+          "timestampMs": 21700,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21840,
+          "endMs": 21920,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " on.",
+          "startMs": 22040,
+          "endMs": 22880,
+          "timestampMs": 22460,
+          "confidence": null
+        },
+        {
+          "text": " Saying",
+          "startMs": 22920,
+          "endMs": 23200,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " fly",
+          "startMs": 23280,
+          "endMs": 23600,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " A's",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " offspring",
+          "startMs": 24000,
+          "endMs": 24400,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24640,
+          "endMs": 24720,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " patch",
+          "startMs": 24960,
+          "endMs": 25200,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 25280,
+          "endMs": 25360,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 25600,
+          "endMs": 26080,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " mistake.",
+          "startMs": 26240,
+          "endMs": 26800,
+          "timestampMs": 26520,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 1088,
+      "voiceover": {
+        "text": "Second. Two mutations are found in an enzyme's gene. P is a substitution in the promoter, and cells with it make about a tenth as much mRNA. Q is a substitution in the coding sequence, changing the codon C U U to C U C. A student claims Q is more significant, because it's in coding DNA. Assess the claim. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/attempt-two.129786d2ed4f.mp3",
+        "startFrame": 0,
+        "endFrame": 752
+      },
+      "responseHold": {
+        "startFrame": 764,
+        "endFrame": 1064
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Second.",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " Two",
+          "startMs": 1040,
+          "endMs": 1200,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " mutations",
+          "startMs": 1280,
+          "endMs": 1920,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " found",
+          "startMs": 2240,
+          "endMs": 2400,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2480,
+          "endMs": 2560,
+          "timestampMs": 2520,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " enzyme's",
+          "startMs": 2800,
+          "endMs": 3280,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " gene.",
+          "startMs": 3360,
+          "endMs": 4320,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 4400,
+          "endMs": 4720,
+          "timestampMs": 4560,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4800,
+          "endMs": 4880,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " substitution",
+          "startMs": 5160,
+          "endMs": 5760,
+          "timestampMs": 5460,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5960,
+          "endMs": 6000,
+          "timestampMs": 5980,
+          "confidence": null
+        },
+        {
+          "text": " promoter,",
+          "startMs": 6080,
+          "endMs": 6960,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 7200,
+          "endMs": 7520,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 7920,
+          "endMs": 8080,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 8160,
+          "endMs": 8320,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " tenth",
+          "startMs": 8560,
+          "endMs": 8880,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 9120,
+          "endMs": 9280,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " mRNA.",
+          "startMs": 9360,
+          "endMs": 10640,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 10840,
+          "endMs": 11040,
+          "timestampMs": 10940,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11280,
+          "endMs": 11320,
+          "timestampMs": 11300,
+          "confidence": null
+        },
+        {
+          "text": " substitution",
+          "startMs": 11360,
+          "endMs": 12080,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12280,
+          "endMs": 12320,
+          "timestampMs": 12300,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 12400,
+          "endMs": 12800,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " sequence,",
+          "startMs": 12880,
+          "endMs": 13600,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " changing",
+          "startMs": 13800,
+          "endMs": 14000,
+          "timestampMs": 13900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14040,
+          "endMs": 14080,
+          "timestampMs": 14060,
+          "confidence": null
+        },
+        {
+          "text": " codon",
+          "startMs": 14160,
+          "endMs": 14560,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 14720,
+          "endMs": 14960,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 15040,
+          "endMs": 15200,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 15280,
+          "endMs": 15600,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 16079.999999999998,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16159.999999999998,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " C.",
+          "startMs": 16640,
+          "endMs": 17280,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 17600,
+          "endMs": 17680,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " student",
+          "startMs": 17760,
+          "endMs": 18080,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " claims",
+          "startMs": 18160,
+          "endMs": 18480,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 18640,
+          "endMs": 18960,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " significant,",
+          "startMs": 19360,
+          "endMs": 20160,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 20280,
+          "endMs": 20400,
+          "timestampMs": 20340,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 20440,
+          "endMs": 20560,
+          "timestampMs": 20500,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 20800,
+          "endMs": 21200,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " DNA.",
+          "startMs": 21280,
+          "endMs": 22040,
+          "timestampMs": 21660,
+          "confidence": null
+        },
+        {
+          "text": " Assess",
+          "startMs": 22320,
+          "endMs": 22640,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22680,
+          "endMs": 22720,
+          "timestampMs": 22700,
+          "confidence": null
+        },
+        {
+          "text": " claim.",
+          "startMs": 22800,
+          "endMs": 23480,
+          "timestampMs": 23140,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 23760,
+          "endMs": 24000,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 24080,
+          "endMs": 24240,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24320,
+          "endMs": 24400,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 24480,
+          "endMs": 25040,
+          "timestampMs": 24760,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1064,
+        "responseHoldStart": 764,
+        "pausePrompt": 764
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 756,
+      "voiceover": {
+        "text": "The claim isn't supported. C U U and C U C both code for leucine, so Q keeps the same amino acid. P changes no codon, but it cuts the mRNA to about a tenth, so the cell likely makes much less enzyme. On the evidence given, P has the clearer effect. Picking Q because it's coding is the classic mistake.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/feedback-two.3b73fbcd6cf8.mp3",
+        "startFrame": 0,
+        "endFrame": 696
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " claim",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 720,
+          "endMs": 960,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " supported.",
+          "startMs": 1040,
+          "endMs": 1680,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 2160,
+          "endMs": 2320,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 2400,
+          "endMs": 2560,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 2640,
+          "endMs": 2960,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3040,
+          "endMs": 3280,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 3840,
+          "endMs": 4160,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 4400,
+          "endMs": 4640,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " code",
+          "startMs": 4720,
+          "endMs": 4960,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 5000,
+          "endMs": 5040,
+          "timestampMs": 5020,
+          "confidence": null
+        },
+        {
+          "text": " leucine,",
+          "startMs": 5120,
+          "endMs": 6000,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 6080,
+          "endMs": 6240,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 6320,
+          "endMs": 6640,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 6720,
+          "endMs": 6960,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 7200,
+          "endMs": 7440,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " amino",
+          "startMs": 7520,
+          "endMs": 7840,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 7920,
+          "endMs": 8520,
+          "timestampMs": 8220,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 8800,
+          "endMs": 9040,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " changes",
+          "startMs": 9240,
+          "endMs": 9440,
+          "timestampMs": 9340,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " codon,",
+          "startMs": 9840,
+          "endMs": 10480,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 10520,
+          "endMs": 10560,
+          "timestampMs": 10540,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10640,
+          "endMs": 10720,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " cuts",
+          "startMs": 10880,
+          "endMs": 11040,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " mRNA",
+          "startMs": 11280,
+          "endMs": 11920,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12000,
+          "endMs": 12080,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 12200,
+          "endMs": 12320,
+          "timestampMs": 12260,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " tenth,",
+          "startMs": 12560,
+          "endMs": 13280,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 13760,
+          "endMs": 13920,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " likely",
+          "startMs": 14120,
+          "endMs": 14320,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 14440,
+          "endMs": 14560,
+          "timestampMs": 14500,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 15160,
+          "endMs": 15280,
+          "timestampMs": 15220,
+          "confidence": null
+        },
+        {
+          "text": " enzyme.",
+          "startMs": 15560,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15820,
+          "confidence": null
+        },
+        {
+          "text": " On",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16520,
+          "endMs": 16560,
+          "timestampMs": 16540,
+          "confidence": null
+        },
+        {
+          "text": " evidence",
+          "startMs": 16600,
+          "endMs": 16960,
+          "timestampMs": 16780,
+          "confidence": null
+        },
+        {
+          "text": " given,",
+          "startMs": 17120,
+          "endMs": 17600,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " P",
+          "startMs": 17760,
+          "endMs": 17920,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 18000,
+          "endMs": 18160,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " clearer",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " effect.",
+          "startMs": 18800,
+          "endMs": 19520,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " Picking",
+          "startMs": 19760,
+          "endMs": 20080,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " Q",
+          "startMs": 20240,
+          "endMs": 20480,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 20560,
+          "endMs": 20800,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 20840,
+          "endMs": 20960,
+          "timestampMs": 20900,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 21040,
+          "endMs": 21520,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21840,
+          "endMs": 21960,
+          "timestampMs": 21900,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 22080,
+          "endMs": 22480,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " mistake.",
+          "startMs": 22560,
+          "endMs": 23200,
+          "timestampMs": 22880,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 778,
+      "voiceover": {
+        "text": "So when a question gives you a mutation, ask two things. Where is it in the body? Somatic affects only this organism, germ line can be inherited. Where is it in the DNA? In coding DNA, check the codons. In non-coding DNA, ask whether that stretch controls the gene. Next, mutation practice questions.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/decision-rule.92e986eab13f.mp3",
+        "startFrame": 0,
+        "endFrame": 718
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 180,
+          "timestampMs": 90,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 240,
+          "endMs": 620,
+          "timestampMs": 430,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 640,
+          "endMs": 680,
+          "timestampMs": 660,
+          "confidence": null
+        },
+        {
+          "text": " question",
+          "startMs": 720,
+          "endMs": 1200,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1480,
+          "endMs": 1520,
+          "timestampMs": 1500,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1600,
+          "endMs": 1640,
+          "timestampMs": 1620,
+          "confidence": null
+        },
+        {
+          "text": " mutation,",
+          "startMs": 1680,
+          "endMs": 2640,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " things.",
+          "startMs": 3360,
+          "endMs": 3840,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " Where",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 4800,
+          "endMs": 4880,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5080,
+          "endMs": 5120,
+          "timestampMs": 5100,
+          "confidence": null
+        },
+        {
+          "text": " body?",
+          "startMs": 5200,
+          "endMs": 5600,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " Somatic",
+          "startMs": 6080,
+          "endMs": 6560,
+          "timestampMs": 6320,
+          "confidence": null
+        },
+        {
+          "text": " affects",
+          "startMs": 6600,
+          "endMs": 7040,
+          "timestampMs": 6820,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 7200,
+          "endMs": 7520,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 7680,
+          "endMs": 7840,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " organism,",
+          "startMs": 7920,
+          "endMs": 8800,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " germ",
+          "startMs": 8880,
+          "endMs": 9120,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 9200,
+          "endMs": 9440,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 9520,
+          "endMs": 9680,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 9720,
+          "endMs": 9760,
+          "timestampMs": 9740,
+          "confidence": null
+        },
+        {
+          "text": " inherited.",
+          "startMs": 9840,
+          "endMs": 10800,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " Where",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11520,
+          "endMs": 11600,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11800,
+          "endMs": 11840,
+          "timestampMs": 11820,
+          "confidence": null
+        },
+        {
+          "text": " DNA?",
+          "startMs": 11920,
+          "endMs": 12840,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 13120,
+          "endMs": 13280,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " coding",
+          "startMs": 13360,
+          "endMs": 13680,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " DNA,",
+          "startMs": 13760,
+          "endMs": 14480,
+          "timestampMs": 14120,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 14560,
+          "endMs": 14720,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14800,
+          "endMs": 14880,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " codons.",
+          "startMs": 15040,
+          "endMs": 15840,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " non-coding",
+          "startMs": 16320,
+          "endMs": 16880,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " DNA,",
+          "startMs": 16960,
+          "endMs": 17760,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 17840,
+          "endMs": 18080,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 18160,
+          "endMs": 18400,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 18480,
+          "endMs": 18640,
+          "timestampMs": 18560,
+          "confidence": null
+        },
+        {
+          "text": " stretch",
+          "startMs": 18720,
+          "endMs": 19040,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " controls",
+          "startMs": 19120,
+          "endMs": 19680,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19720,
+          "endMs": 19760,
+          "timestampMs": 19740,
+          "confidence": null
+        },
+        {
+          "text": " gene.",
+          "startMs": 19840,
+          "endMs": 20720,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 21200,
+          "endMs": 21800,
+          "timestampMs": 21500,
+          "confidence": null
+        },
+        {
+          "text": " mutation",
+          "startMs": 22000,
+          "endMs": 22560,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " practice",
+          "startMs": 22640,
+          "endMs": 23040,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " questions.",
+          "startMs": 23120,
+          "endMs": 23920,
+          "timestampMs": 23520,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Biology-Y12-M6-B05-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 280,
+          "endMs": 320,
+          "timestampMs": 300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 360,
+          "endMs": 400,
+          "timestampMs": 380,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 720,
+          "endMs": 1440,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2000,
+          "endMs": 2040,
+          "timestampMs": 2020,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2880,
+          "endMs": 3040,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3880,
+          "endMs": 4000,
+          "timestampMs": 3940,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4080,
+          "endMs": 4480,
+          "timestampMs": 4280,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

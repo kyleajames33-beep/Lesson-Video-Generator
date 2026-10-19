@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C05-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c05/lesson.json",
+  "lessonSha256": "e67e2d1f4797db64c98a2ef02a06a897bcea7ff900e805cf4c4e4eb8757a644d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c05/lesson.production-brief.json",
+    "sha256": "fb2c89ecff871ee36c71af4b88721bcc728614aa11ad4cd166e2c939c9acf7a6"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are two beakers of acid, hydrochloric acid and acetic acid, the acid in vinegar. Both labels say zero point one zero moles per litre, so each litre has the same amount of acid dissolved. But a pH meter reads one point zero for the hydrochloric acid, and two point nine for the acetic acid. Drop in magnesium, and the hydrochloric acid fizzes hard while the acetic acid barely bubbles. Same amount of acid, so why such a difference?",
+      "hash": "19f1cd608c30",
+      "textSha256": "19f1cd608c304be12863a1a1fefe84a6bbf01b031140bc7c9fe1e04565a0825c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/hook.19f1cd608c30.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/hook.19f1cd608c30.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/hook.19f1cd608c30.generation.json",
+      "plannedRequestSha256": "cf8b8041d50753afb21fead225e5865a6178d70fe0c887c1551d83b75b0b57df"
+    },
+    {
+      "id": "inside-beakers",
+      "parentSceneId": "inside-beakers",
+      "text": "Zoom in. In the hydrochloric acid, every hydrogen chloride molecule has given its proton to a water molecule, making hydronium ions and chloride ions. In the acetic acid, most molecules are still whole. At any moment, only about one molecule in eighty has given its proton away. Hydronium ions are what make a solution acidic, so the acetic acid has far fewer of them.",
+      "hash": "ff75189716d1",
+      "textSha256": "ff75189716d1b32a21a5599af5b8e4ea0437efcd84f706d758522dc4ab66297c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/inside-beakers.ff75189716d1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/inside-beakers.ff75189716d1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/inside-beakers.ff75189716d1.generation.json",
+      "plannedRequestSha256": "864507e565d0e499fd01d136daae0f97cb9749510852d782ac62a18c4e57e311"
+    },
+    {
+      "id": "strong-weak",
+      "parentSceneId": "strong-weak",
+      "text": "That difference is called strength. A strong acid ionises completely in water, which means every molecule gives its proton away and forms ions. A weak acid ionises only partly. The pH meter sees this. A lower pH means more hydronium ions, and each step of one on the pH scale is ten times as many. Two steps would be ten times ten, a hundred times. The gap here is almost two steps, so the hydrochloric acid has about eighty times as many hydronium ions.",
+      "hash": "c788ed18f1ea",
+      "textSha256": "c788ed18f1eaf6be854d1b47c242c6e8310f458a8dcdbfb45ba78dbaa1587da3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/strong-weak.c788ed18f1ea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/strong-weak.c788ed18f1ea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/strong-weak.c788ed18f1ea.generation.json",
+      "plannedRequestSha256": "b6a52077dcc98ca1bf1efdca6d85d087bd5dfdc3229ca727bdcc1eaa087d4af9"
+    },
+    {
+      "id": "why-weak-stops",
+      "parentSceneId": "why-weak-stops",
+      "text": "Why does acetic acid stop at so few? Its reaction runs both ways. Acetic acid molecules give protons to water, and acetate ions take protons back from hydronium ions. Very soon both happen at the same rate, so you have a dynamic equilibrium, the balance you met in Module 5, with most molecules still whole. Chloride ions almost never take a proton back, so hydrogen chloride goes all the way. A later video explains why.",
+      "hash": "05dc565b942a",
+      "textSha256": "05dc565b942a2ff702b814c9a4172147bd86083d2cd5d4310ea9e582b9ba5265",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/why-weak-stops.05dc565b942a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/why-weak-stops.05dc565b942a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/why-weak-stops.05dc565b942a.generation.json",
+      "plannedRequestSha256": "d814523e8f8a5ea3bf7096090179828fd920990a9bc0751a620cd832e70493e8"
+    },
+    {
+      "id": "arrows",
+      "parentSceneId": "arrows",
+      "text": "The equation has to say this. For a strong acid, write a single arrow: the reaction goes to completion. For a weak acid, write the double arrow, because the forward and reverse reactions are both going on. Writing a double arrow for hydrochloric acid would say some molecules stay whole, and that's wrong.",
+      "hash": "4cc604c0efa3",
+      "textSha256": "4cc604c0efa38467ffaa6c428f8b1ba9ba87b9ea274fdafd1c27f1a502789e07",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/arrows.4cc604c0efa3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/arrows.4cc604c0efa3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/arrows.4cc604c0efa3.generation.json",
+      "plannedRequestSha256": "9c41ecd78ab6efbb65662fb5918af2af847a07d0dbc1f1a1ed5b64a0ad4349d4"
+    },
+    {
+      "id": "strong-list",
+      "parentSceneId": "strong-list",
+      "text": "So which acids are strong? For this course, learn six. A handy line is So I Brought No Clean Clothes, and each word gives the key letters of one acid, in order: sulfuric, for its first proton, then hydroiodic, hydrobromic, nitric, hydrochloric and perchloric. Treat other acids as weak unless a question tells you otherwise. And watch hydrofluoric acid: it looks like hydrochloric acid, but it's weak.",
+      "hash": "089e20258084",
+      "textSha256": "089e20258084c9bcab2211299915e11c4f7a42da98f95f15a32292b7a595e854",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/strong-list.089e20258084.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/strong-list.089e20258084.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/strong-list.089e20258084.generation.json",
+      "plannedRequestSha256": "8549339323df939678dcf70961d9a4b082768bf31d1bde0bd1aacd2d0bc0bf13"
+    },
+    {
+      "id": "concentration",
+      "parentSceneId": "concentration",
+      "text": "Now the second idea. Concentration is how much acid is dissolved in each litre, in moles per litre. It's a separate dial from strength. Add water to hydrochloric acid, and it becomes dilute, but every molecule still ionises, so it's a dilute strong acid, never a weak one. Dilute acetic acid, and a bigger fraction of its molecules ionise, but nowhere near all of them, so it's still a weak acid. That gives four combinations: concentrated or dilute, and strong or weak.",
+      "hash": "96eb6384fcf9",
+      "textSha256": "96eb6384fcf942c5b04507fc407e389a052ddb62321feb21a8cf019c15db42f5",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/concentration.96eb6384fcf9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/concentration.96eb6384fcf9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/concentration.96eb6384fcf9.generation.json",
+      "plannedRequestSha256": "4fbc8aabbbf1d8c4a66657645e588dad3cef5574e512a0b7fa46ee5396993ac8"
+    },
+    {
+      "id": "weak-can-win",
+      "parentSceneId": "weak-can-win",
+      "text": "Here's the surprise. One mole per litre acetic acid has a pH of about two point four. Zero point zero zero one zero mole per litre hydrochloric acid has a pH of three point zero. The weak acid has the lower pH, because a thousand times more acid, even mostly whole, still makes about four times as many hydronium ions. So pH alone can't tell you strength. To compare strength fairly, test acids at the same concentration. And weak doesn't mean safe: concentrated acetic acid still burns skin.",
+      "hash": "ed1736479b10",
+      "textSha256": "ed1736479b101bf9cb921a2fa7a979395df0d3f9e7e0887f745dd1fc3eea2f28",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/weak-can-win.ed1736479b10.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/weak-can-win.ed1736479b10.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/weak-can-win.ed1736479b10.generation.json",
+      "plannedRequestSha256": "36a4aa2ba8a4bfcd60e53589e1e79afa5738db5b4d4eb08bcdaae385abe4366e"
+    },
+    {
+      "id": "bases",
+      "parentSceneId": "bases",
+      "text": "Bases work the same way. A strong base such as sodium hydroxide is an ionic solid. When it dissolves, its ions separate completely, so every formula unit gives a hydroxide ion. That's called dissociation. Ammonia is a weak base: as you saw in the models video, only some ammonia molecules take a proton from water. At zero point one zero moles per litre, sodium hydroxide reads pH thirteen, and ammonia only about eleven. Calcium, strontium and barium hydroxide are strong too, and each formula unit gives two hydroxide ions.",
+      "hash": "6d52b26b837e",
+      "textSha256": "6d52b26b837e12c27def66b5426dc7744d8f08516e04a5b456307dccf24d7937",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/bases.6d52b26b837e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/bases.6d52b26b837e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/bases.6d52b26b837e.generation.json",
+      "plannedRequestSha256": "04fcf489b2a3559123bf351e7e1c4b37c55b547f6999af4a37a9c8cea997ccf6"
+    },
+    {
+      "id": "solubility",
+      "parentSceneId": "solubility",
+      "text": "Limewater is a saturated calcium hydroxide solution, which means it holds as much as can dissolve. It has a lower pH than that sodium hydroxide. So is calcium hydroxide weak? No. Less than two grams of it dissolves in a litre, and the rest sits at the bottom. But every bit that does dissolve splits completely into ions. That's low solubility, not weakness. How much dissolves and how completely it splits up are different questions.",
+      "hash": "3916addc7f02",
+      "textSha256": "3916addc7f02ab90941293e0a8cd7f125e7c4c350a770050996a6a08158e249c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/solubility.3916addc7f02.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/solubility.3916addc7f02.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/solubility.3916addc7f02.generation.json",
+      "plannedRequestSha256": "bedeae37f9633bf3192731af575ce9b9a299a52b5ffb4ef071e2cb3cacb7b62c"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. Strength is how much it breaks up. Concentration is how much you put in. They're two separate dials, and the pH depends on both. When you compare strength, keep the concentration the same.",
+      "hash": "f8a283e4e721",
+      "textSha256": "f8a283e4e72194a40d22602a2aa3ef813aaf8f60ea21c92697ce4113b44b6a6d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/memory-aid.f8a283e4e721.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/memory-aid.f8a283e4e721.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/memory-aid.f8a283e4e721.generation.json",
+      "plannedRequestSha256": "efa9c4e201f3161ed712faa10778850494ee7e3277e6a36c09b497b4cfcf42a5"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Solutions of nitric acid and nitrous acid each have a concentration of zero point one zero moles per litre. Their pH values are one point zero and two point two. Explain the difference in pH, and write an ionic equation for each acid reacting with water, using the correct arrow. Pause here to answer.",
+      "hash": "87e10aa21d28",
+      "textSha256": "87e10aa21d2825481dba3c5559e27448b9ca723be4c448d6b1bac484002a4025",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/attempt-1.87e10aa21d28.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/attempt-1.87e10aa21d28.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/attempt-1.87e10aa21d28.generation.json",
+      "plannedRequestSha256": "b408b640e9ed9db81d48bf7606bea8264a2b5c94c7b2d6247e2414ba4e0ac598"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Both have the same concentration, so the difference is strength. Nitric acid is strong: it ionises completely, so it gets a single arrow. Nitrous acid is weak: only some molecules give a proton to water, so there are fewer hydronium ions and a higher pH, and it gets the double arrow. If you said nitrous acid must be more dilute, look again: the concentrations are equal.",
+      "hash": "df8d0c90dd3e",
+      "textSha256": "df8d0c90dd3e0491f6836c8d9b2924527ede7cb5381aa14e6157727f4d3b4d90",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/feedback-1.df8d0c90dd3e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/feedback-1.df8d0c90dd3e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/feedback-1.df8d0c90dd3e.generation.json",
+      "plannedRequestSha256": "4b67c062c9a905456550820cd0531feae535c09e1c2cd50f58437da52aa7b3a0"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A zero point one zero mole per litre ammonia solution has a pH of eleven point one. A zero point zero zero one zero mole per litre sodium hydroxide solution has a pH of eleven point zero. A student claims the two bases are equally strong, because their pH values are almost the same. Assess this claim. Pause here to answer.",
+      "hash": "6281701d1d75",
+      "textSha256": "6281701d1d7521be201a2c849d76b85317f9f285a57a0722b855cecb79fe8673",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/attempt-2.6281701d1d75.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/attempt-2.6281701d1d75.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/attempt-2.6281701d1d75.generation.json",
+      "plannedRequestSha256": "6cbaa7d2bd5231eff5b3cedeac78ccced427d90562c442b3e7399bb70b88fcfb"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The claim is not valid. Sodium hydroxide is strong, so every formula unit gives a hydroxide ion. Ammonia is weak, so only a small fraction of its molecules make hydroxide. The pH values match only because the ammonia is a hundred times more concentrated. At equal concentrations, sodium hydroxide would give the much higher pH. The classic slip is \"same pH, same strength\".",
+      "hash": "b9ce02c19bbd",
+      "textSha256": "b9ce02c19bbd2a976f9466557e5176e5048928e6e424871c5dae554ca2bb69bf",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/feedback-2.b9ce02c19bbd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/feedback-2.b9ce02c19bbd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/feedback-2.b9ce02c19bbd.generation.json",
+      "plannedRequestSha256": "b58f883cb699ebbce4dd63b7bdc40b79d08414e7bb00582cccc5c6041d7d6a9c"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So whenever you compare acids or bases, ask two separate questions. How much is dissolved per litre? That's concentration. How completely does it ionise? That's strength. Then use the arrow that matches. Next: measuring the pH of a range of acids and bases in the lab.",
+      "hash": "04dc6c4b12fc",
+      "textSha256": "04dc6c4b12fcfee281acc94103bfa6e10c47ee1dcc4c47eaddc1e8569c127a98",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/decision-rule.04dc6c4b12fc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/decision-rule.04dc6c4b12fc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/decision-rule.04dc6c4b12fc.generation.json",
+      "plannedRequestSha256": "8dc643171fc69827738a2af66b36a4bd422d67a89ec2083a61e2bd37caff5334"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C05-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
