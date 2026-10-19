@@ -1,0 +1,83 @@
+{
+  "brief": 86,
+  "date": "2026-10-19",
+  "part": "plates",
+  "records": [
+    {
+      "path": "public/assets/biology/m6-fly-eye-white-patch-v1.png",
+      "sha256": "edf0411fa61fa8788d0f49d564504379a21174a53085132ac6dc8b08a5a0bb08",
+      "sourceGenerated": "C:/Users/kygs/.codex/generated_images/01a153c7-c70f-7723-9254-3008b49933e2/exec-eba6a761-238f-409b-85de-60dd4ded9761.png",
+      "tool": "built-in imagegen",
+      "packaging": "Composite generated white facets into original fly inside the original left-eye contour and an outer wedge; all pixels outside eye and all alpha pixels match reference.",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        447,
+        402,
+        1557,
+        1617
+      ],
+      "qaCream260": "docs/production/claude-pm/assets/brief86-qa/m6-fly-eye-white-patch-v1-cream-260.png",
+      "qaChecker260": "docs/production/claude-pm/assets/brief86-qa/m6-fly-eye-white-patch-v1-checker-260.png",
+      "referenceAlphaIoU": 1.0,
+      "qaOverlay": "docs/production/claude-pm/assets/brief86-qa/fly-overlay-50pct.png",
+      "pixelsChanged": 1805,
+      "qaEyeCloseup": "docs/production/claude-pm/assets/brief86-qa/fly-left-eye-closeup.png"
+    },
+    {
+      "path": "public/assets/biology/m6-bacteriophage-t4-v1.png",
+      "sha256": "c3c3f4d6010babf675423ce3e8d7a1788c36e8dae3b9288f00853052c9a566d8",
+      "sourceGenerated": "C:/Users/kygs/.codex/generated_images/01a153c7-c70f-7723-9254-3008b49933e2/exec-00a82ac3-0c03-463e-bb1a-8fbe4bc2edb1.png",
+      "tool": "built-in imagegen",
+      "packaging": "GrabCut alpha cleanup of generated glow; proportional fit on 2000 px canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaBox128": [
+        572,
+        282,
+        1429,
+        1708
+      ],
+      "qaCream260": "docs/production/claude-pm/assets/brief86-qa/m6-bacteriophage-t4-v1-cream-260.png",
+      "qaChecker260": "docs/production/claude-pm/assets/brief86-qa/m6-bacteriophage-t4-v1-checker-260.png",
+      "alphaCleanupIntermediate": "tmp/brief86-phage-seg-preview.png"
+    },
+    {
+      "path": "public/assets/biology/m6-belgian-blue-bull-v1.png",
+      "sha256": "31331bb374a75f17dc2f0569c56d1a5814131aa6367803a5cf1643663c8af999",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a153c7-c70f-7723-9254-3008b49933e2\\exec-d3c7b3a7-4f4f-49d8-a1b7-52ef3cc60af7.png",
+      "tool": "built-in imagegen",
+      "packaging": "Crop generated alpha silhouette, fit to 1600 px width and center on 2000 px canvas to match cattle reference scale.",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        200,
+        427,
+        1800,
+        1573
+      ],
+      "qaCream260": "docs/production/claude-pm/assets/brief86-qa/m6-belgian-blue-bull-v1-cream-260.png",
+      "qaChecker260": "docs/production/claude-pm/assets/brief86-qa/m6-belgian-blue-bull-v1-checker-260.png",
+      "qaPair": "docs/production/claude-pm/assets/brief86-qa/cattle-side-by-side-260.png"
+    }
+  ],
+  "optionalMelanoma": "Deferred: design specifies a repaint only if owner rejects the existing plate at voiced preview."
+}

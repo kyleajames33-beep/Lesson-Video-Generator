@@ -10,7 +10,7 @@ Plate names below omit `m6-` and `-v1.png`. The files are in `public/assets/chem
 | `chem-m6-c02` | L02 | Indicator flasks; acid/carbonate fizz | indicator-methyl-orange-set, indicator-bromothymol-blue-set, clip-baking-soda-vinegar-before/fizz |
 | `chem-m6-c03` | L03 | Insulated cup and temperature probe | foam-cup-calorimeter* |
 | `chem-m6-p02` | L03, L10 | Calorimeter, probe, measured acid/base beakers | foam-cup-calorimeter*, beaker, ph-meter-probe-beaker |
-| `chem-m6-c04` | L04 | Antacid, limed soil, flue-gas scrubber | antacid-tablets, agricultural-liming*, flue-gas-scrubber* |
+| `chem-m6-c04` | L04 | Antacid, limed soil, flue-gas scrubber | antacid-tablets, soil-crop-acid/limed, flue-gas-scrubber* |
 | `chem-m6-c05` | L05, L06 | pH probe and strong/weak acid/base vessels | ph-meter-probe-beaker, beaker, indicator-paper-chart |
 | `chem-m6-p03` | L05, L08 | pH probe and indicator strip | ph-meter-probe-beaker, indicator-paper-chart |
 | `chem-m6-p04` | L05, L06 | Matched pH probes and sample beakers | ph-meter-probe-beaker, beaker |
@@ -55,6 +55,12 @@ Plate names below omit `m6-` and `-v1.png`. The files are in `public/assets/chem
 | `bio-m6-b20` | L18, L19 | Finch populations, crop field, seed bank | finch-slender-beak*, finch-deep-beak*, field-monoculture-mixed, seed-bank-vault |
 
 ## New plates and process pairs
+
+### Brief 85 update, 19 October 2026
+
+`m6-agricultural-liming-v1.png` shows a human hand. It is retired from use. Use the aligned `m6-soil-crop-acid-v1.png` and `m6-soil-crop-limed-v1.png` pair to show stunted wheat with short roots changing to healthy wheat with longer roots after lime is worked into the soil. `m6-acid-mine-drainage-v1.png` supplies the mine rock and rust-orange creek for the other C04 application. Biology gained `m6-metaphase-spread-v1.png`, a circular microscope field with scattered chromosomes, and `m6-fly-bar-eye-v1.png`, aligned to `m5x-fly-red-eye-v1.png` for the Bar eye comparison. The latter changes the eye shape while retaining the fly's pose and scale.
+
+The five new plates are 2000 by 2000 px transparent PNGs. [Brief 85 provenance](brief85-provenance.json) records their hashes; [QA views](brief85-qa/) include cream and checker backgrounds plus overlays for both aligned comparisons.
 
 Chemistry gained a foam-cup calorimeter, HCl/ammonia gas reaction, agricultural liming and a flue-gas scrubber. The same calorimeter plate can be reused for strong and weak acid trials while code changes the measured temperature. Biology gained a northern white rhino, two finches with contrasting beaks, blue and red cichlids, hand pollination, and aligned agar dishes before and after antibiotic selection. The dish pair depicts selection of resistant colonies already present.
 

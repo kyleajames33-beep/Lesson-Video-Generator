@@ -1,0 +1,89 @@
+{
+  "brief": 87,
+  "date": "2026-10-19",
+  "part": "plates",
+  "method": "built-in imagegen generation and one targeted edit, then Pillow alpha and common alignment packaging",
+  "records": [
+    {
+      "path": "public/assets/biology/m6-finch-seeds-v1.png",
+      "sha256": "fc0da9aebbc4e7fefe3cd730f810686dd49b493d578d53e99c912ee8dd21d996",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a153e0-dc61-7a73-b33c-8b64ec9508a1\\exec-d58da97d-4bef-4377-8480-316c184f701d.png",
+      "prompt": "Small soft Galapagos seeds at left, three hard spiny Tribulus fruit segments at right, clean central divide; ink and watercolour on transparent alpha.",
+      "tool": "built-in imagegen",
+      "sourceType": "new",
+      "packaging": "Alpha under 24 cleared; common crop and scale for cat pair; proportionally centred within 2000 px transparent canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        200,
+        556,
+        1800,
+        1443
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief87-qa/m6-finch-seeds-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief87-qa/m6-finch-seeds-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-florida-panther-v1.png",
+      "sha256": "a83f62f225d1fe0a7ddd8d2c2812411e8d5ce1ad6a678fce4d942de91090c086",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a153e0-dc61-7a73-b33c-8b64ec9508a1\\exec-ed5651e1-2693-46f1-ad79-f9145f8d2c6b.png",
+      "prompt": "Florida panther left-facing full-body side profile; darker tawny coat, visibly kinked tail tip; transparent ink and watercolour.",
+      "tool": "built-in imagegen",
+      "sourceType": "new",
+      "packaging": "Alpha under 24 cleared; common crop and scale for cat pair; proportionally centred within 2000 px transparent canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        201,
+        526,
+        1797,
+        1472
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief87-qa/m6-florida-panther-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief87-qa/m6-florida-panther-v1-checker-200.png"
+    },
+    {
+      "path": "public/assets/biology/m6-texas-puma-v1.png",
+      "sha256": "0da824cb5afb7cf5fb03f6df3107e8a35b94cb4fd82bc045a60204b89067eae3",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a153e0-dc61-7a73-b33c-8b64ec9508a1\\exec-b3e18327-88bc-4bf9-80d3-287b77190c1a.png",
+      "prompt": "Edit Florida panther: lighter sandy coat, straight tail, same body pose and position; transparent ink and watercolour.",
+      "tool": "built-in imagegen",
+      "sourceType": "edit from Florida",
+      "packaging": "Alpha under 24 cleared; common crop and scale for cat pair; proportionally centred within 2000 px transparent canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        200,
+        526,
+        1800,
+        1474
+      ],
+      "qaCream200": "docs/production/claude-pm/assets/brief87-qa/m6-texas-puma-v1-cream-200.png",
+      "qaChecker200": "docs/production/claude-pm/assets/brief87-qa/m6-texas-puma-v1-checker-200.png"
+    }
+  ],
+  "pairQa": {
+    "overlay": "docs/production/claude-pm/assets/brief87-qa/panther-puma-overlay-600.png",
+    "alphaIoU": 0.9635,
+    "bodyAlphaIoUExcludingTail": 0.987,
+    "assessment": "Same pose and canvas alignment; coat and tail intentionally differ."
+  }
+}
