@@ -240,3 +240,29 @@ C12 (Aboriginal and Torres Strait Islander solubility knowledge): designed, need
 Decisions: B5b hook family plates (keep or swap); site CaF2 Ksp 3.9e-11 vs video 3.45e-11; dihybrid video yes/no.
 New designs reviewed and ready to voice (waiting for owner go-ahead): P01 (reversibility practical, 10.0 min), P03 (solubility practical, 9.9), B11 (population frequencies + SNPs, 9.6; uses white clover leaf mark instead of earlobes), B12 (sequencing + profiling, 9.2).
 Codex: new brief 64 (practical apparatus + safety plates, gel tank v2, NSW chemical category check).
+
+## 19 Oct (evening): while you were away
+
+- **Light declutter (no re-voicing):**
+  - Module 6 C01, C02, B01 and B02 are now preview v2.
+  - Module 5 B5a is v6, B5b v6, B6b v3, B6c v3, C10 v3, C15 v2 and Chemistry P02 v6.
+  - Fade timings still need a check at playback speed.
+- **Module 6 designs at Revision 2:** 16 are now through the learning review and science check, all needing the Codex error check before voicing:
+  - Chemistry C03 to C08;
+  - Biology B03 to B05, G01, B07 and B08.
+- **Codex briefs to send, in order:**
+  1. 84 (exam skills check)
+  2. 85 (C03, C04, B03, B04)
+  3. 86 (C05, C06, B05, G01)
+  4. 87 (C07, C08, B07, B08)
+
+  Each paints its plates first and runs its check after Revision 2. All the designs are at Revision 2 now.
+- **Decisions taken:**
+  - **Sulfuric acid in C03:** kept in the worked example.
+  - **Sulfuric acid in C07:** a conditional "if the question says to assume both are released" line.
+  - **pH decimal places:** the strict rule.
+  - **Ka from a measured pH:** in C10.
+  - **B08 prerequisite:** B11.
+  - **G01:** added to the route as key m6g01b.
+  - **Karyotype in B04:** coded.
+  - **Jolie case in B05:** named from her own account, with no image.
