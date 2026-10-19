@@ -39,7 +39,8 @@ Check every narration line (lines starting `> `), the on-screen text in each "Vi
   - the human de novo mutation count;
   - 2²³;
   - Florida panther facts and population numbers, including the 1995 release of eight Texas pumas;
-  - every drift statistic.
+  - every drift statistic;
+  - the Florida panther heterozygosity claim. The Johnson 2010 abstract says it doubled, but a University of Florida summary gives a rise from 16% to 24%. Confirm which measure doubled before the "about double" screen tag is kept.
 - **Dotpoints:** check each one word for word against the 2017 syllabus.
 - **Exam style:** check that each question reads like a real HSC Section II question without copying one.
 
