@@ -104,3 +104,5 @@ Applied in `lessons/skills-s02.md`, Revision 2 (author). Narration re-counted wi
 - **M4 (applied):** scene 14 ends "That says how they're built, not why the sequences match." The crossed quote is shortened.
 - **M5 (applied):** key note 1 separates the NESA paraphrase from the HSCScience tip.
 - **Feedback length:** scene 12 is about 30 s and scene 14 about 31 s. Lesson key `skills02`.
+
+Revision 3 (20 Oct, after Codex check 84): M5's separation stands, but the HSCScience tip in key note 1 changes. "Identify needs a name per mark" was a false general rule. The tip now reads "for identify, name the item or items the question asks for, and use the marks to check the scope; no reasons are needed." The scene 15 decision board matches. The scene 9 Chemistry ladder now uses the S01 iron thiocyanate tube instead of the cobalt tube. Narration: 5,783 characters, 16 scenes.

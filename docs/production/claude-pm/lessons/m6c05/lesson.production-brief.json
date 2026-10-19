@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c05/lesson.json",
+    "lessonSha256": "e67e2d1f4797db64c98a2ef02a06a897bcea7ff900e805cf4c4e4eb8757a644d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C01 (Brønsted-Lowry acid and base; HCl + H₂O → H₃O⁺ + Cl⁻; NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ with \"only some ammonia molecules do this at any moment\"; H⁺(aq) means H₃O⁺). C02 (acid names and formulas, including acetic acid as the acid in vinegar; metals with acids make hydrogen gas). C03 named \"strong acids\" once. Module 5: dynamic equilibrium and the double arrow (chem-m5-c01, chem-m5-c05). Year 11 Module 2: concentration in mol/L. Stage 5: the pH scale (below 7 acidic, 7 neutral, above 7 basic). Year 11 Module 2: ionic solids dissolving into ions. Not assumed: pH = −log[H⁺], Ka, conjugate pairs.",
+    "startsWith": "Compare particles in two acid or base solutions. The video opens: Here are two beakers of acid, hydrochloric acid and acetic acid, the acid in vinegar. Both labels say zero point one zero moles per litre, so each litre has the same amount of acid dissolved. But a pH meter reads one point zero for the hydrochloric acid, and two point nine for the acetic acid.",
+    "stopsAfter": "explaining strong and weak as complete and partial ionisation (or dissociation) with a particle picture; explaining why a weak acid reaches equilibrium with most molecules whole; choosing → or ⇌ for an acid or base in water; naming the common strong acids and strong bases; explaining concentration as amount per litre and drawing the four combinations; explaining why a concentrated weak acid can have a lower pH than a dilute strong acid, and why strength must be compared at equal concentration using pH; explaining why low solubility is not weakness. No pH calculation (chem-m6-c07), no Ka (chem-m6-c10), no conjugate pairs (chem-m6-c06), no conductivity method or practical procedure (chem-m6-p03, chem-m6-p04).",
+    "nextLesson": "measuring the pH of a range of acids and bases (route chem-m6-p03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c05.md"
+  ],
+  "teaching": {
+    "task": "Two acids, both 0.10 moles per litre: one reads pH 1.0, the other pH 2.9. If they have the same amount of acid dissolved, why is one so much more acidic, and how is a \"strong\" acid different from a \"concentrated\" one?",
+    "causalExplanation": "(1) two acids at the same concentration give different pH and fizz: why? (1); (2) the particle view: every HCl has given its proton to water; only about one acetic acid molecule in eighty has; hydronium makes a solution acidic (2); (3) that is strength: strong ionises completely, weak partly; lower pH means more hydronium, one pH unit is ten times, so about eighty times more (3); (4) a weak acid stops early because the reverse reaction runs too: dynamic equilibrium with most molecules whole; chloride almost never takes a proton back (4); (5) so the arrow: single for complete, double for partial (5); (6) which acids are strong; HF is weak (6); (7) concentration is amount per litre, a separate dial; dilute strong is still strong; four combinations as particle grids (7); (8) a concentrated weak acid can have a lower pH than a dilute strong one, so compare strength at the same concentration; weak is not safe (8); (9) bases: strong hydroxides dissociate completely; ammonia is weak; same-concentration pH 13 against 11; Ca(OH)₂ and Ba(OH)₂ give two OH⁻ (9); (10) limewater: little dissolves, but all that dissolves splits up: low solubility, not weakness (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "two acids at the same concentration read pH 1.0 and 2.9, and particle lenses inside the two beakers show why: every HCl molecule has given its proton to water, only about one acetic acid molecule in eighty has. Strength is then separated from concentration as two dials, a concentrated weak acid is shown beating a dilute strong one, and bases and low solubility follow the same reasoning. Two exam questions follow with brief feedback.",
+    "openingDecision": "Here are two beakers of acid, hydrochloric acid and acetic acid, the acid in vinegar. Both labels say zero point one zero moles per litre, so each litre has the same amount of acid dissolved. But a pH meter reads one point zero for the hydrochloric acid, and two point nine for the acetic acid. Drop in magnesium, and the hydrochloric acid fizzes hard while the acetic acid barely bubbles. Same amount of acid, so why such a difference?",
+    "understandingCheck": "(A1) \"Nitric acid (HNO₃) and nitrous acid (HNO₂) solutions each have a concentration of 0.10 mol/L at 25 °C. The nitric acid solution has a pH of 1.0 and the nitrous acid solution has a pH of 2.2. Explain the difference in pH. Include an ionic equation for each acid reacting with water, using the correct arrow.\" New pair of acids (the video works HCl and acetic acid); the near-identical formulas test classification. Crossed mistake: \"HNO₂ is more dilute\". (A2) \"A 0.10 mol/L ammonia solution has a pH of 11.1. A 0.0010 mol/L sodium hydroxide solution has a pH of 11.0. A student claims that ammonia and sodium hydroxide are equally strong bases, because their pH values are almost the same. Assess this claim.\" Bases at different concentrations (the video's concentration surprise uses acids). Crossed mistake: \"same pH, same strength\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the use of pH to indicate the differences between the strength of acids and bases (ACSCH102)\" \"construct models and/or animations to communicate the differences between strong, weak, concentrated and dilute acids and bases (ACSCH099)\" this video starts with the route's particle comparison (two 0.10 mol/L acids, one lens each) and stops at telling extent of ionisation apart from amount per litre and reading both from pH data. It teaches: strong and weak as complete against partial ionisation (or dissociation, for ionic hydroxides); why a weak acid stops early (a dynamic equilibrium, Module 5 callback); the single against double arrow; the strong-acid list and the strong-base group; concentration as a separate quantity; the four combinations as an animated particle model (the C6-IQ2-05 \"model and/or animation\"); why a concentrated weak acid can have a lower pH than a dilute strong one, so strength must be compared at equal concentration (the logic of the C6-IQ2-03 investigation); solubility against strength for calcium hydroxide. pH is used as a meter reading only: lower means more hydronium, one unit is a factor of ten. Not here: pH = −log[H⁺] and any pH calculation (chem-m6-c07); conducting the pH investigation (chem-m6-p03 measures a range; chem-m6-p04 tests strength through pH); conductivity as evidence (named in the out-of-scope list; p04 and c14); conjugate pairs and why chloride never takes its proton back (chem-m6-c06: scene 4 states it as an observation only, and c06 explains it); Ka and pKa (chem-m6-c10); weak-acid ICE tables (chem-m6-c08); salt hydrolysis (the site's L06 card 4; left for the equivalence-point videos, see Open decisions); the HF bond-enthalpy explanation (a crossed chip only)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01 and C03): the proton is a small teal token; a hydronium ion is a teal token on a pale blue water; a whole acid molecule has an amber outline; anions grey; hydroxide violet; water pale blue; spent labels grey. Board layout (constant): the short question top-left in one line; the main zone holds the lenses, plates or the equation strip, one group at a time; a small amber pH readout chip sits by each solution it belongs to. Clutter rule: at most three bright text items at once; every tag dims when its sentence ends. Reuse: painted plates (inspected 19 Oct): `m6-beaker-v1.png` (two copies, coded labels \"hydrochloric acid, 0.10 mol/L\" and \"acetic acid, 0.10 mol/L\"; also sodium hydroxide in 9), `m6-ph-meter-probe-beaker-v1.png` (bench meter with a blank green screen and a probe in a beaker of clear liquid; a coded amber readout sits in the screen), `m5x-strong-acid-mg-v1.png` and `m5x-weak-acid-mg-v1.png` (magnesium ribbon fizzing hard against a few bubbles; hook), `m6-vinegar-bottle-v1.png` (hook, small, for \"the acid in vinegar\"), `m5x-ammonia-bottle-v1.png` (scene 9, coded label \"ammonia solution, 0.10 mol/L\"), `m5x-saturated-beaker-v1.png` (clear solution over undissolved white solid; scene 10 with coded label \"limewater: saturated Ca(OH)₂\"). Not used: `m6-limewater-clear-v1.png` and `m6-limewater-milky-v1.png` (a delivery tube bubbling gas into a test tube: they read as the carbon dioxide test, not as a saturated solution); `m6-conductivity-meter-titration-v1.png` (conductivity is out of scope here). No new plates needed. No human figures.",
+    "transitionPlan": "Two beakers with pH chips open; a lens zooms into each to show the protons given away; the arrow strip writes single then double; the strong list writes as a card; the four-combination particle grids build one at a time; the base beakers and the limewater lens reuse the same layout; the memory aid writes large; each attempt clears the board and its feedback underlines the question; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-beaker-v1.png` plates side by side with coded labels \"hydrochloric acid, 0.10 mol/L\" (left) and \"acetic acid, 0.10 mol/L\" (right); `m6-vinegar-bottle-v1.png` small beside the right beaker on \"vinegar\", then fades.",
+      "teachingReason": "Hook (same label, different acid): Here are two beakers of acid, hydrochloric acid and acetic acid, the acid in vinegar.",
+      "narrationCue": "one point zero / two point nine / fizzes hard",
+      "motionPurpose": "On the spoken cues: On \"same amount\" both labels' \"0.10 mol/L\" get a pen underline and an \"=\" between them. `m6-ph-meter-probe-beaker-v1.png` slides in at the right; on \"one point zero\" the probe moves along a coded arc into the left beaker and the screen readout shows \"pH 1.0\", which pins as a chip on the left beaker; on \"two point nine\" it moves to the right beaker, \"pH 2.9\" pins on the right. The meter leaves. On \"fizzes hard\" the",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-beaker-v1.png` plates side by side with coded labels \"hydrochloric acid, 0.10 mol/L\" (left) and \"acetic acid, 0.10 mol/L\" (right); `m6-vinegar-bottle-v1.png` small beside the right beaker on \"vinegar\", then fades. On \"same amount\" both labels' \"0.10 mol/L\" get a pen underline and an \"=\" between them. `m6-ph-meter-probe-beaker-v1.png` slides in at the right; on \"one point zero\" the probe moves along a coded arc into the left beaker and the screen readout shows \"pH 1.0\", which pins as a chip on the left beaker; on \"two point nine\" it moves to the right beaker, \"pH 2.9\" pins on the right. The meter leaves. On \"fizzes hard\" the beakers crossfade to `m5x-strong-acid-mg-v1.png` (left) and `m5x-weak-acid-mg-v1.png` (right), labels kept. Once the \"=\" has been seen, both name labels dim to grey, so the bright items are the two pH chips and the heading. Heading writes: \"Same concentration. Why different?\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "Plate crossfade",
+        "chip pop",
+        "Mark underline",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "inside-beakers",
+      "visualDecision": "new",
+      "visualReference": "the plates shrink to the top corners (labels and pH chips kept, dimmed).",
+      "teachingReason": "Inside the two beakers: Zoom in.",
+      "narrationCue": "every / whole / one molecule in eighty / fewer",
+      "motionPurpose": "On the spoken cues: Two particle lenses open beneath them, the same size and drawn schematically (Codex check 86): each is filled edge to edge with a dense field of particles that runs on past the lens rim and softens at its edge, so no fraction can be counted; the counter under each lens carries the number. Left lens on \"every\": the HCl molecules release their teal tokens onto neighbouring waters, giving hydronium tokens and grey Cl⁻",
+      "motionRole": "explain",
+      "onScreenChange": "the plates shrink to the top corners (labels and pH chips kept, dimmed). Two particle lenses open beneath them, the same size and drawn schematically (Codex check 86): each is filled edge to edge with a dense field of particles that runs on past the lens rim and softens at its edge, so no fraction can be counted; the counter under each lens carries the number. Left lens on \"every\": the HCl molecules release their teal tokens onto neighbouring waters, giving hydronium tokens and grey Cl⁻ throughout; the counter reads \"split: all\". Right lens on \"whole\": the field of amber-outlined acetic acid molecules stays intact; on \"one molecule in eighty\" a single molecule in the foreground hops its token to a water (one example picked out, not a count; the counter reads \"split: about 1 in 80\"). On \"fewer\" both lenses' hydronium tokens pulse: hydronium everywhere on the left, the single example on the right. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "strong-weak",
+      "visualDecision": "new",
+      "visualReference": "the lenses stay.",
+      "teachingReason": "Strong and weak, and what pH shows: That difference is called strength.",
+      "narrationCue": "strength / strong acid / weak acid / ten times / hundred / eighty times",
+      "motionPurpose": "On the spoken cues: On \"strong acid\" a tag writes under the left lens: \"strong acid: ionises completely\"; on \"weak acid\" under the right: \"weak acid: ionises partly\" (the counters fade). On \"lower pH\" a short horizontal pH scale draws across the bottom (0 to 14, below 7 tinted acid, 7 marked neutral); the two chips \"1.0\" and \"2.9\" drop onto it, and the tags in the lenses dim. On \"ten times\" the step from 1 to 2 gets a bracket \"× 10\".",
+      "motionRole": "explain",
+      "onScreenChange": "the lenses stay. On \"strong acid\" a tag writes under the left lens: \"strong acid: ionises completely\"; on \"weak acid\" under the right: \"weak acid: ionises partly\" (the counters fade). On \"lower pH\" a short horizontal pH scale draws across the bottom (0 to 14, below 7 tinted acid, 7 marked neutral); the two chips \"1.0\" and \"2.9\" drop onto it, and the tags in the lenses dim. On \"ten times\" the step from 1 to 2 gets a bracket \"× 10\". On \"hundred\" the step from 2 to 3 gets a second \"× 10\" and the two merge into one bracket \"× 10 × 10 = × 100\" across 1 to 3. On \"eighty times\" that bracket dims and a bracket from 1.0 to 2.9 reads \"about 80 × more H₃O⁺\". Bright at the end: the two chips and the 80 × bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "why-weak-stops",
+      "visualDecision": "new",
+      "visualReference": "the left lens and the pH scale dim; the right lens enlarges.",
+      "teachingReason": "Why the weak acid stops early: Why does acetic acid stop at so few?",
+      "narrationCue": "both ways / back / dynamic equilibrium / all the way",
+      "motionPurpose": "On the spoken cues: On \"both ways\" one acetic acid molecule hops its teal token to a water (amber arrow), and on \"back\" a different acetate pulls a token off a hydronium (violet arrow); the two hops repeat at matched pace in different places, and a small balance icon levels with the tag \"forward rate = reverse rate\". On \"dynamic equilibrium\" the tag \"dynamic equilibrium (Module 5)\" writes and the balance tag dims. On \"all the way\" the",
+      "motionRole": "explain",
+      "onScreenChange": "the left lens and the pH scale dim; the right lens enlarges. On \"both ways\" one acetic acid molecule hops its teal token to a water (amber arrow), and on \"back\" a different acetate pulls a token off a hydronium (violet arrow); the two hops repeat at matched pace in different places, and a small balance icon levels with the tag \"forward rate = reverse rate\". On \"dynamic equilibrium\" the tag \"dynamic equilibrium (Module 5)\" writes and the balance tag dims. On \"all the way\" the left lens returns small: a chloride sits next to a hydronium and nothing hops; tag \"Cl⁻: no pull back\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "arrows",
+      "visualDecision": "new",
+      "visualReference": "the lenses shrink to thumbnails at the left.",
+      "teachingReason": "The arrow says it: The equation has to say this.",
+      "narrationCue": "single arrow / double arrow / wrong",
+      "motionPurpose": "On the spoken cues: The equation strip writes: \"HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" with tag \"strong: complete\"; on \"single arrow\" the → pulses teal. Second strip: \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" with tag \"weak: equilibrium\"; on \"double arrow\" the ⇌ pulses. The first strip's tag dims as the second strip writes, and the second tag dims on \"wrong\", so the bright items are the two strips and the crossed chip. On \"wrong\"",
+      "motionRole": "explain",
+      "onScreenChange": "the lenses shrink to thumbnails at the left. The equation strip writes: \"HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" with tag \"strong: complete\"; on \"single arrow\" the → pulses teal. Second strip: \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" with tag \"weak: equilibrium\"; on \"double arrow\" the ⇌ pulses. The first strip's tag dims as the second strip writes, and the second tag dims on \"wrong\", so the bright items are the two strips and the crossed chip. On \"wrong\" a chip \"HCl(aq) + H₂O(l) ⇌ ...\" fades in under the first strip and is crossed (caption \"HCl ionises completely: →\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "strong-list",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Which acids are strong: So which acids are strong?",
+      "narrationCue": "So I Brought No Clean Clothes / sulfuric / hydrofluoric acid",
+      "motionPurpose": "On the spoken cues: On \"So I Brought No Clean Clothes\" the line writes large and handwritten across the top. From \"sulfuric\" six formula tiles write under it in mnemonic order, one per name, each under its word, with the word's key letters lighting as its tile writes: \"H₂SO₄ (first H⁺)\" under So, \"HI\" under I, \"HBr\" under Brought, \"HNO₃\" under No, \"HCl\" under Clean, \"HClO₄\" under Clothes. Grey tag: \"others: weak unless told\", which",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. On \"So I Brought No Clean Clothes\" the line writes large and handwritten across the top. From \"sulfuric\" six formula tiles write under it in mnemonic order, one per name, each under its word, with the word's key letters lighting as its tile writes: \"H₂SO₄ (first H⁺)\" under So, \"HI\" under I, \"HBr\" under Brought, \"HNO₃\" under No, \"HCl\" under Clean, \"HClO₄\" under Clothes. Grey tag: \"others: weak unless told\", which dims at the end of its sentence. On \"hydrofluoric acid\" the mnemonic line and the tiles dim except \"HCl\"; a tile \"HF\" slides in beside \"HCl\" with a chip \"HF is strong, like HCl\" that is crossed (caption \"HF is weak: ⇌\"). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "concentration",
+      "visualDecision": "new",
+      "visualReference": "the board clears to two dials at the top, labelled with one word each, \"strength\" and \"concentration\" (one turns while the other stays still).",
+      "teachingReason": "Concentration is a separate dial: Now the second idea.",
+      "narrationCue": "Concentration / dilute / dilute strong acid / Dilute acetic acid / four combinations",
+      "motionPurpose": "On the spoken cues: On \"Concentration\" the left lens from scene 2 returns and its concentration dial turns down; water molecules flood in so the acid particles thin out, every one still split. On \"dilute strong acid\" a chip \"dilute = weak\" fades in and is crossed (caption \"dilute strong acid\"); no separate tag. On \"Dilute acetic acid\" the chip dims and the right lens thins the same way, still schematic (the field fades at the rim, so",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to two dials at the top, labelled with one word each, \"strength\" and \"concentration\" (one turns while the other stays still). On \"Concentration\" the left lens from scene 2 returns and its concentration dial turns down; water molecules flood in so the acid particles thin out, every one still split. On \"dilute strong acid\" a chip \"dilute = weak\" fades in and is crossed (caption \"dilute strong acid\"); no separate tag. On \"Dilute acetic acid\" the chip dims and the right lens thins the same way, still schematic (the field fades at the rim, so it cannot be counted): a few highlighted molecules split, most still whole, and its counter changes from \"split: about 1 in 80\" to \"0.0010 mol/L: about 1 in 8 split\" (author note b). On \"four combinations\" the screen becomes a 2 × 2 grid of small schematic lenses: rows \"concentrated\", \"dilute\"; columns \"strong\", \"weak\"; the four labels write on and then dim to grey. Concentrated panels are dense fields and dilute panels sparse fields, each fading at the rim so no panel can be counted; strong panels show every particle split, weak panels mostly whole with a few highlighted split molecules as examples. Each weak panel carries a small counter, which is the only number on the grid: \"1.0 mol/L: about 1 in 240 split\" (concentrated weak) and \"0.0010 mol/L: about 1 in 8 split\" (dilute weak). The dials dim. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Cam lens zoom",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "weak-can-win",
+      "visualDecision": "new",
+      "visualReference": "two cells of the grid enlarge (concentrated weak, left; dilute strong, right); the other two fade.",
+      "teachingReason": "A concentrated weak acid can win: Here's the surprise.",
+      "narrationCue": "two point four / three point zero / four times / same concentration / safe",
+      "motionPurpose": "On the spoken cues: One combined chip under each: \"acetic acid, 1.0 mol/L: pH ≈ 2.4\" on \"two point four\"; \"hydrochloric acid, 0.0010 mol/L: pH 3.0\" on \"three point zero\". On \"four times\" the hydronium tokens in each lens pulse and a bracket reads \"about 4 × more H₃O⁺ in the weak acid\" (the left lens is a dense, uncountable field of whole molecules with eight hydronium tokens; the right is sparse, with two hydronium tokens and two",
+      "motionRole": "explain",
+      "onScreenChange": "two cells of the grid enlarge (concentrated weak, left; dilute strong, right); the other two fade. One combined chip under each: \"acetic acid, 1.0 mol/L: pH ≈ 2.4\" on \"two point four\"; \"hydrochloric acid, 0.0010 mol/L: pH 3.0\" on \"three point zero\". On \"four times\" the hydronium tokens in each lens pulse and a bracket reads \"about 4 × more H₃O⁺ in the weak acid\" (the left lens is a dense, uncountable field of whole molecules with eight hydronium tokens; the right is sparse, with two hydronium tokens and two chloride ions and nothing whole; the hydronium tokens are drawn in the bracket's 4 : 1 ratio, and only they are meant to be compared). On \"pH alone\" the bracket dims and a chip \"lower pH = stronger acid\" fades in and is crossed (caption \"pH depends on strength and concentration\"). On \"same concentration\" the two lenses and their chips dim; the hook's two beakers return small with their \"0.10 mol/L\" labels underlined and a tag \"fair test: same concentration\". On \"safe\" the fair-test tag dims and a small grey hazard tag \"weak ≠ safe: concentrated acetic acid is corrosive\" pins at the side, not by the 1.0 mol/L chip (science check S1: 1.0 mol/L acetic acid, about 6%, is an irritant, not corrosive). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "bases",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Strong and weak bases: Bases work the same way.",
+      "narrationCue": "strong base / separate completely / dissociation / weak base / thirteen / eleven / two",
+      "motionPurpose": "On the spoken cues: `m6-beaker-v1.png` (coded label \"sodium hydroxide, 0.10 mol/L\") and `m5x-ammonia-bottle-v1.png` (label \"ammonia solution, 0.10 mol/L\"). Left lens on \"separate completely\": a small Na⁺OH⁻ lattice breaks into grey Na⁺ and violet OH⁻ that drift apart; strip \"NaOH(s) → Na⁺(aq) + OH⁻(aq)\" (no strip tag; the → pulses teal and the narration names it). Right lens on \"weak base\": the left strip dims; a dense, uncountable",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-beaker-v1.png` (coded label \"sodium hydroxide, 0.10 mol/L\") and `m5x-ammonia-bottle-v1.png` (label \"ammonia solution, 0.10 mol/L\"). Left lens on \"separate completely\": a small Na⁺OH⁻ lattice breaks into grey Na⁺ and violet OH⁻ that drift apart; strip \"NaOH(s) → Na⁺(aq) + OH⁻(aq)\" (no strip tag; the → pulses teal and the narration names it). Right lens on \"weak base\": the left strip dims; a dense, uncountable field of NH₃ stays whole; one foreground molecule takes a teal token from a water, leaving a violet OH⁻ (one example, not a fraction); strip \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\" (the ⇌ pulses). On \"thirteen\" and \"eleven\" the strips dim and the readout chips \"pH 13.0\" and \"pH 11.1\" pin on the two plate labels (no extra pH scale). On \"two\" the plates, lenses and chips dim; a tile \"Ca(OH)₂(s) → Ca²⁺(aq) + 2OH⁻(aq)\" writes with the 2 ringed; \"Sr(OH)₂, Ba(OH)₂\" small beside it. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "solubility",
+      "visualDecision": "adjust",
+      "visualReference": "`m5x-saturated-beaker-v1.png` centre with coded label \"limewater: saturated Ca(OH)₂\".",
+      "teachingReason": "Low solubility is not weakness: Limewater is a saturated calcium hydroxide solution, which means it holds as much as can dissolve.",
+      "narrationCue": "dissolves / low solubility",
+      "motionPurpose": "On the spoken cues: On \"dissolves\" a lens opens on the clear solution: only a few particles, each one split into Ca²⁺ and two violet OH⁻; a pen ring marks the solid at the bottom with the tag \"undissolved\". On \"low solubility\" the \"undissolved\" tag dims and a two-row card writes in short rows: \"how much dissolves: little\" and \"how completely it splits: completely\". A chip \"Ca(OH)₂ is weak: little dissolves\" fades in and is crossed",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-saturated-beaker-v1.png` centre with coded label \"limewater: saturated Ca(OH)₂\". On \"dissolves\" a lens opens on the clear solution: only a few particles, each one split into Ca²⁺ and two violet OH⁻; a pen ring marks the solid at the bottom with the tag \"undissolved\". On \"low solubility\" the \"undissolved\" tag dims and a two-row card writes in short rows: \"how much dissolves: little\" and \"how completely it splits: completely\". A chip \"Ca(OH)₂ is weak: little dissolves\" fades in and is crossed (caption \"low solubility, still strong\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "Strength is how much it breaks up. Concentration is how much you put in. / both",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten in two lines: \"Strength is how much it breaks up.\" \"Concentration is how much you put in.\" The two dials from scene 7 sit beside them small, unlabelled. On \"both\" an arrow from each dial meets at a small \"pH\" chip. On \"keep the concentration the same\" the condition tag writes: \"compare strength at the same concentration\". The strong-acid mnemonic is not repeated here (project",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten in two lines: \"Strength is how much it breaks up.\" \"Concentration is how much you put in.\" The two dials from scene 7 sit beside them small, unlabelled. On \"both\" an arrow from each dial meets at a small \"pH\" chip. On \"keep the concentration the same\" the condition tag writes: \"compare strength at the same concentration\". The strong-acid mnemonic is not repeated here (project manager decision 5; it stays in scene 6 and the notes). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Solutions of nitric acid and nitrous",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Nitric acid (HNO₃) and nitrous acid (HNO₂) solutions each have a concentration of 0.10 mol/L at 25 °C. The nitric acid solution has a pH of 1.0 and the nitrous acid solution has a pH of 2.2. Explain the difference in pH. Include an ionic equation for each acid reacting with water, using the correct arrow.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lenses, no tiles, no strips.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "same concentration / ionises completely / fewer hydronium ions / equal",
+      "motionPurpose": "On the spoken cues: On \"same concentration\" both \"0.10 mol/L\" phrases are underlined. On \"ionises completely\" \"pH of 1.0\" is underlined and the strip writes \"HNO₃(aq) + H₂O(l) → H₃O⁺(aq) + NO₃⁻(aq)\" (→ teal, tag \"strong\"). On \"fewer hydronium ions\" \"pH of 2.2\" is underlined and \"HNO₂(aq) + H₂O(l) ⇌ H₃O⁺(aq) + NO₂⁻(aq)\" writes (⇌, tag \"weak\"); no thumbnail lenses (the strips and tags carry it). On \"equal\" a chip \"HNO₂ is more dilute\"",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"same concentration\" both \"0.10 mol/L\" phrases are underlined. On \"ionises completely\" \"pH of 1.0\" is underlined and the strip writes \"HNO₃(aq) + H₂O(l) → H₃O⁺(aq) + NO₃⁻(aq)\" (→ teal, tag \"strong\"). On \"fewer hydronium ions\" \"pH of 2.2\" is underlined and \"HNO₂(aq) + H₂O(l) ⇌ H₃O⁺(aq) + NO₂⁻(aq)\" writes (⇌, tag \"weak\"); no thumbnail lenses (the strips and tags carry it). On \"equal\" a chip \"HNO₂ is more dilute\" fades in and is crossed (caption \"same concentration: different strength\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"A 0.10 mol/L ammonia solution has a pH of 11.1.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A zero point one zero mole",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"A 0.10 mol/L ammonia solution has a pH of 11.1. A 0.0010 mol/L sodium hydroxide solution has a pH of 11.0. A student claims that ammonia and sodium hydroxide are equally strong bases, because their pH values are almost the same. Assess this claim.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no dials, no grid.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"not valid\" \"equally strong bases\" in the question is underlined and a short verdict chip \"Not valid\" pins.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "not valid / a hundred times more concentrated / same pH, same strength",
+      "motionPurpose": "On the spoken cues: No thumbnail lenses. On \"a hundred times more concentrated\" \"0.10 mol/L\" and \"0.0010 mol/L\" are underlined and a bracket reads \"100 × more ammonia\". On \"equal concentrations\" the bracket dims and a small line writes \"at 0.10 mol/L: NaOH pH 13.0, NH₃ pH 11.1\". On \"same pH, same strength\" a chip with those words fades in and is crossed (caption \"compare at the same concentration\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"not valid\" \"equally strong bases\" in the question is underlined and a short verdict chip \"Not valid\" pins. No thumbnail lenses. On \"a hundred times more concentrated\" \"0.10 mol/L\" and \"0.0010 mol/L\" are underlined and a bracket reads \"100 × more ammonia\". On \"equal concentrations\" the bracket dims and a small line writes \"at 0.10 mol/L: NaOH pH 13.0, NH₃ pH 11.1\". On \"same pH, same strength\" a chip with those words fades in and is crossed (caption \"compare at the same concentration\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 How much per litre?",
+      "teachingReason": "Decision rule and handoff: So whenever you compare acids or bases, ask two separate questions.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Concentration.\" \"2 How completely does it ionise? Strength.\" \"3 Strong: →. Weak: ⇌.\" On \"Next\" a chip \"Next: measuring the pH of acids and bases\" appears with `m6-ph-meter-probe-beaker-v1.png` small.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 How much per litre? Concentration.\" \"2 How completely does it ionise? Strength.\" \"3 Strong: →. Weak: ⇌.\" On \"Next\" a chip \"Next: measuring the pH of acids and bases\" appears with `m6-ph-meter-probe-beaker-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c05-learning-review.md",
+      "sha256": "c24dae261bb7132b4f96d11263951b835a48ead50de1d2d59d70d9a61bb9f008"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c05-claude-science-check.md",
+      "sha256": "6a0f779cc78ced6e6ab98887717b47f891486d810ba47f0b7b4d3ac04e987aee"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -70,3 +70,5 @@ Applied in `lessons/skills-s01.md`, Revision 2 (author).
 - **F3 (applied):** the unsupported Chemistry 2024 "two balanced equations" chip is replaced by "a balanced equation with states", "e.g. a NESA Chemistry 2025 guideline" (pack, Calculations section, Chemistry 2025 Q33). The Decisions bullet and the research table are corrected to match.
 - The hook and YouTube proportion claims are hedged as in learning review S1 and S5.
 - Em dashes: 0. Narration: 5,862 characters.
+
+Revision 3 (20 Oct, after Codex check 84): F1 and F2 are superseded. The cobalt worked question was replaced by an original iron thiocyanate question (added iron(III) nitrate at constant temperature, deeper red, in terms of collision theory), so scene 8 no longer uses activation energy or the ridge sketch. Its new line 2 says that the reverse rate depends on [FeSCN2+], which has not changed at that moment. F3 stands. Narration: 6,067 characters.

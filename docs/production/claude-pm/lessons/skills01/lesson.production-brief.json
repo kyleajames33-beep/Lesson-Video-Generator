@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/skills01/lesson.json",
+    "lessonSha256": "5466443b69fd2c4e9ba8373d19c553f761af019d10b0eaf740e135106ae2fb5e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Chemistry: C1 to C3 (dynamic equilibrium as equal rates; adding a substance speeds up only the reaction that uses it, then the faster rate falls and the slower rate rises until they are equal again; the iron thiocyanate tube; a temperature change speeds up the heat-absorbing reaction more; Le Chatelier's principle). Biology: B10 (co-dominance, roan cattle, 1 : 2 : 1 from two heterozygotes). Year 11: collision theory. Not assumed: any exam-technique vocabulary.",
+    "startsWith": "An exam question you can answer but might misread. The video opens: Here's something NESA's marking feedback raises every year. In every HSC Chemistry and Biology report from 2020 to 2025, it points out answers that missed what the question actually asked. Often the student knew the science.",
+    "stopsAfter": "the routine (verb, marks, content words and givens, constraint, then tick each part); the meanings of \"in terms of\", \"with reference to\" and \"using the information\"; \"one mark, one idea\" with its three limits; two drills.",
+    "nextLesson": "s02, \"Identify, describe, explain: what each verb really asks for\"."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/skills-s01.md"
+  ],
+  "teaching": {
+    "task": "Before you write a word, what exactly is this question asking for?",
+    "causalExplanation": "(1) NESA marking feedback flags answers to a nearby question in every Chemistry and Biology report from 2020 to 2025, so the step before writing matters (1); (2) one HSC-style Chemistry equilibrium question is pulled apart (2); (3) the verb says what to do: explain means show cause and effect (3); (4) the marks say how much to write and when to stop (4); (5) the content words and givens say what the answer is about: ask what each given tells you, then decide if the answer needs it (5); (6) the constraint says how to answer: in terms of, with reference to, using the information (6); (7) the answer is built in collision theory as three linked points (7, 8); (8) a correct Le Chatelier answer still answers a nearby question and loses two marks (9); (9) one mark, one idea is a rule of thumb with three limits (10); the routine and memory aid (11); two drills with feedback (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "one fact carries the video: every NESA Chemistry and Biology marking feedback report from 2020 to 2025 flags answers to a nearby question. One HSC-style Chemistry equilibrium question is pulled apart one annotation at a time (verb, marks, content words and givens, constraint), the answer is built in the asked terms with a mark counter, and a correct but off-constraint answer shows the cost. Two drills, one per subject, practise the routine.",
+    "openingDecision": "Here's something NESA's marking feedback raises every year. In every HSC Chemistry and Biology report from 2020 to 2025, it points out answers that missed what the question actually asked. Often the student knew the science. They just answered a nearby question. So this video is about the step before you write anything: reading the question properly, in about thirty seconds.",
+    "understandingCheck": "The narration says \"Do the one from your subject, or both\". Both drills ask students to run the routine first. Drill 1, Biology: roan cattle data, \"using the information provided\", explain, 3 marks. It targets the unused-stimulus fault (12/12). Crossed habit: \"codominance means both alleles show\", with no numbers. Drill 2, Chemistry: N2O4 and NO2 in ice water, \"with reference to Le Chatelier's principle\", predict and explain, 3 marks. It targets \"covers only one requested part\" (part of the 12/12 nearby-question fault). Crossed habit: \"It goes paler.\" (predict only). Drill 2 is a temperature change, so it also varies the cause after the worked example's concentration change. Drill 2 deliberately asks for the Le Chatelier answer that the worked example ruled out. Students see the constraint, not the topic, decide the reasoning. Feedback says \"this time the constraint asks for Le Chatelier's principle\".",
+    "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"an exam question you can answer but might misread\". It stops after the four-part reading routine, the three constraint phrases, the limits of \"one mark, one idea\" and two practised reads. It does not cover verb meanings in depth (s02), compare and contrast (s03), judgement verbs (s04), calculations (s05), graphs (s06), practicals (s07) or extended responses (s08)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. The question card is on paper colour. It has a subject badge, the tag \"HSC-style question, written for HSCScience\", and a printed mark value in brackets at the right, as on HSC papers. The annotation layer on the card: an amber highlighter swipe for the verb; a hand-drawn ring \"stamp\" round the marks, becoming a marks badge; pen underlines for content words and givens; teal square brackets round the constraint phrase. The answer box is an HSC-booklet-style ruled box (white, faint blue rules, left margin). A mark counter sits in the top-right of the answer box: \"0 / 3\" ticks to \"3 / 3\", one per mark-earning point. Each tick lands in the margin beside its line. A label sits under it: \"HSCScience marking guide (illustrative)\". The routine strip has four rows, each with an icon: highlighter, badge, underline, bracket. It builds in scene 11 and returns as the decision board. Kit: `HandText`, `DrawPath`, `scribbleEllipse`, `Mark`, `Callout`, `Enter`, `Plate`, `Countdown`. The `WrongChip`, `GreyTag` and `Cross` chips are from B6a. No people, hands or faces: the highlighter and pen marks draw themselves. Colours: amber highlighter for verbs; ink pen for underlines; teal brackets for constraints; marker ticks green; lost-mark tags red. No people, hands or faces.",
+    "transitionPlan": "The report-tile grid opens; the question card slides in and straightens; each annotation (highlighter, marks badge, underlines, teal brackets) lands on its cue and adds a routine strip row at the far left; the answer box fills line by line with margin ticks and the mark counter; the weak answer box slides in beside the strong one; the limit cards collapse to their titles as each new one writes; the routine card returns full size, then shrinks; each drill clears the board and its feedback annotates the card before the model answer writes; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Twelve small report tiles fill a 6 x 2 grid, labelled \"Biology 2020\" to \"Biology 2025\" and \"Chemistry 2020\" to \"Chemistry 2025\".",
+      "teachingReason": "Hook: Here's something NESA's marking feedback raises every year.",
+      "narrationCue": "nearby question / reading the question",
+      "motionPurpose": "On the spoken cues: On \"every HSC\" each tile gets a red flag mark in turn (fast stagger; green ticks are kept for marks earned). Tag: \"NESA marking feedback, 2020 to 2025: 12 of 12 reports\". On \"nearby question\" a coded question card slides in. A second card sits half behind it, slightly rotated, with an arrow labelled \"answered this one instead\". On \"reading the question\" the front card straightens and the heading writes on: \"Read the",
+      "motionRole": "explain",
+      "onScreenChange": "Twelve small report tiles fill a 6 x 2 grid, labelled \"Biology 2020\" to \"Biology 2025\" and \"Chemistry 2020\" to \"Chemistry 2025\". On \"every HSC\" each tile gets a red flag mark in turn (fast stagger; green ticks are kept for marks earned). Tag: \"NESA marking feedback, 2020 to 2025: 12 of 12 reports\". On \"nearby question\" a coded question card slides in. A second card sits half behind it, slightly rotated, with an arrow labelled \"answered this one instead\". On \"reading the question\" the front card straightens and the heading writes on: \"Read the question before you answer it\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "question-card",
+      "visualDecision": "adjust",
+      "visualReference": "The question card writes on.",
+      "teachingReason": "Question-card: Here's an HSC-style question.",
+      "narrationCue": "crystals / deeper red / in terms of collision theory",
+      "motionPurpose": "On the spoken cues: Subject badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Small grey tag \"Chemistry example; the reading skill is the same in Biology\". Card text: \"The equilibrium below is established in a test tube at 25 °C.\" \"Fe3+(aq) (pale yellow) + SCN-(aq) (colourless) ⇌ FeSCN2+(aq) (red)\" \"A few crystals of iron(III) nitrate, Fe(NO3)3, are added and dissolve. The temperature stays at 25 °C, and the solution",
+      "motionRole": "explain",
+      "onScreenChange": "The question card writes on. Subject badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Small grey tag \"Chemistry example; the reading skill is the same in Biology\". Card text: \"The equilibrium below is established in a test tube at 25 °C.\" \"Fe3+(aq) (pale yellow) + SCN-(aq) (colourless) ⇌ FeSCN2+(aq) (red)\" \"A few crystals of iron(III) nitrate, Fe(NO3)3, are added and dissolve. The temperature stays at 25 °C, and the solution becomes a deeper red.\" \"Explain this colour change in terms of collision theory.\" \"(3 marks)\" printed at the right. `c3-iron-tube-start-v1.png` (pale red-orange tube in a wire stand) sits small at the card's right. On \"crystals\" a few coded crystals drop into it. On \"deeper red\" it crossfades to `c3-iron-tube-deep-v1.png`. On \"in terms of collision theory\" that line pulses once (no annotation yet). An empty ruled answer box draws below: eight lines, counter \"0 / 3\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate crossfade",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "verb",
+      "visualDecision": "new",
+      "visualReference": "On \"verb\" routine row 1 writes at the far left: highlighter icon, \"Do what?",
+      "teachingReason": "Verb: Start with the verb.",
+      "narrationCue": "verb / explain / why",
+      "motionPurpose": "On the spoken cues: (the verb)\". On \"explain\" an amber highlighter swipe crosses \"Explain\" on the card. A glossary chip slides out under it: \"explain: show a cause and effect, how or why it happens\", with the grey tag \"NESA glossary, paraphrased\". On \"why\" a small pen arrow writes \"cause → effect\" beside the chip.",
+      "motionRole": "explain",
+      "onScreenChange": "On \"verb\" routine row 1 writes at the far left: highlighter icon, \"Do what? (the verb)\". On \"explain\" an amber highlighter swipe crosses \"Explain\" on the card. A glossary chip slides out under it: \"explain: show a cause and effect, how or why it happens\", with the grey tag \"NESA glossary, paraphrased\". On \"why\" a small pen arrow writes \"cause → effect\" beside the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Mark highlight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "marks",
+      "visualDecision": "new",
+      "visualReference": "On \"marks\" routine row 2 writes: badge icon, \"How much?",
+      "teachingReason": "Marks: Next, the marks.",
+      "narrationCue": "marks / stop",
+      "motionPurpose": "On the spoken cues: (the marks)\". A hand-drawn ring stamps round \"(3 marks)\" and lifts off as a round badge \"3\". The badge parks at the top-right of the answer box beside the counter \"0 / 3\". Three faint dotted slots appear in the answer box, one per two lines. Tag: \"about 3 linked points\". On \"stop\" a short ghost answer runs past the eighth line onto an extra page strip. A grey tag \"more lines, not more marks\" writes on and the",
+      "motionRole": "explain",
+      "onScreenChange": "On \"marks\" routine row 2 writes: badge icon, \"How much? (the marks)\". A hand-drawn ring stamps round \"(3 marks)\" and lifts off as a round badge \"3\". The badge parks at the top-right of the answer box beside the counter \"0 / 3\". Three faint dotted slots appear in the answer box, one per two lines. Tag: \"about 3 linked points\". On \"stop\" a short ghost answer runs past the eighth line onto an extra page strip. A grey tag \"more lines, not more marks\" writes on and the overflow fades. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "content-words",
+      "visualDecision": "new",
+      "visualReference": "On \"content words\" routine row 3 writes: underline icon, \"About what?",
+      "teachingReason": "Content-words: Now the content words and the givens.",
+      "narrationCue": "content words / givens / iron three nitrate / deeper red / iron three plus ions / stays the same / often",
+      "motionPurpose": "On the spoken cues: (content words, givens)\". Pen underlines draw on their cue words: \"iron(III) nitrate\", then \"deeper red\". On \"what it tells you\" a small question chip \"what does it tell me?\" hangs off the first underline. On \"iron three plus ions\" its answer chip writes on: \"iron(III) nitrate → more Fe3+\". A pen ring circles \"Fe3+\" in the equation. On \"stays the same\" the pen underlines \"The temperature stays at 25 °C\"; the",
+      "motionRole": "explain",
+      "onScreenChange": "On \"content words\" routine row 3 writes: underline icon, \"About what? (content words, givens)\". Pen underlines draw on their cue words: \"iron(III) nitrate\", then \"deeper red\". On \"what it tells you\" a small question chip \"what does it tell me?\" hangs off the first underline. On \"iron three plus ions\" its answer chip writes on: \"iron(III) nitrate → more Fe3+\". A pen ring circles \"Fe3+\" in the equation. On \"stays the same\" the pen underlines \"The temperature stays at 25 °C\"; the question chip moves to it and its answer chip writes on: \"same collision energy\". The first chip dims to make room, so two bright chips at most are live. On \"often\" a short line connects the \"more Fe3+\" chip to the first answer slot (foreshadow; no text). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "constraint",
+      "visualDecision": "new",
+      "visualReference": "On \"constraint\" routine row 4 writes: bracket icon, \"Using what?",
+      "teachingReason": "Constraint: Last, the constraint: the phrase that tells you how to answer.",
+      "narrationCue": "constraint / In terms of / With reference to / Using the information",
+      "motionPurpose": "On the spoken cues: (the constraint)\". Teal square brackets draw round \"in terms of collision theory\". Three keyword chips drop into the answer box margin: \"collisions\", \"how often\", \"rates\". On \"With reference to\" and \"Using the information\" a constraint card slides in at the right with three rows, each lighting on its cue: \"in terms of X: X carries the explanation\" \"with reference to X: name X and use it\" \"using the information: take",
+      "motionRole": "explain",
+      "onScreenChange": "On \"constraint\" routine row 4 writes: bracket icon, \"Using what? (the constraint)\". Teal square brackets draw round \"in terms of collision theory\". Three keyword chips drop into the answer box margin: \"collisions\", \"how often\", \"rates\". On \"With reference to\" and \"Using the information\" a constraint card slides in at the right with three rows, each lighting on its cue: \"in terms of X: X carries the explanation\" \"with reference to X: name X and use it\" \"using the information: take details from the stimulus, say what they show\" The card shrinks to a corner tab after the scene. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "build-1",
+      "visualDecision": "new",
+      "visualReference": "Line 1 handwrites into the answer box: \"Adding Fe(NO3)3 increases [Fe3+], so Fe3+ and SCN- ions collide more often: the forward rate increases.\"",
+      "teachingReason": "Build-1 (the first point): So let's build the answer, in collision theory.",
+      "narrationCue": "more often / forward",
+      "motionPurpose": "On the spoken cues: On \"more often\" a small coded collision inset flashes beside the box (C3 particle style: pale yellow Fe3+ dots, grey SCN- dots): before, one meeting; after, three meetings in the same time, each with a joining spark. On \"forward\" two rate bars appear beside the box (forward blue, reverse amber, C3 style, no values). They start level; the forward bar steps up. On \"tick\" a green tick lands in the margin. The counter",
+      "motionRole": "explain",
+      "onScreenChange": "Line 1 handwrites into the answer box: \"Adding Fe(NO3)3 increases [Fe3+], so Fe3+ and SCN- ions collide more often: the forward rate increases.\" On \"more often\" a small coded collision inset flashes beside the box (C3 particle style: pale yellow Fe3+ dots, grey SCN- dots): before, one meeting; after, three meetings in the same time, each with a joining spark. On \"forward\" two rate bars appear beside the box (forward blue, reverse amber, C3 style, no values). They start level; the forward bar steps up. On \"tick\" a green tick lands in the margin. The counter goes \"1 / 3\". The \"collisions\" and \"how often\" chips tick.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "build-2",
+      "visualDecision": "new",
+      "visualReference": "Line 2: \"The reverse rate depends on [FeSCN2+], which has not changed yet, so the forward rate is now greater than the reverse rate: FeSCN2+ forms faster than it splits.\"",
+      "teachingReason": "Build-2 (the link, then the result): Now the link that makes it an explanation.",
+      "narrationCue": "hasn't changed / equal again",
+      "motionPurpose": "On the spoken cues: On \"hasn't changed\" a pen ring circles the unchanged reverse bar. A pen arrow joins the \"more Fe3+\" chip from scene 5 to lines 1 and 2. Tick, counter \"2 / 3\". Line 3: \"As [FeSCN2+] rises, the reverse rate rises and the forward rate falls, until the rates are equal again with more FeSCN2+ (red): a deeper red.\" On \"equal again\" the bars meet, both higher than at the start (C3 pattern). The small iron tube plate beside",
+      "motionRole": "explain",
+      "onScreenChange": "Line 2: \"The reverse rate depends on [FeSCN2+], which has not changed yet, so the forward rate is now greater than the reverse rate: FeSCN2+ forms faster than it splits.\" On \"hasn't changed\" a pen ring circles the unchanged reverse bar. A pen arrow joins the \"more Fe3+\" chip from scene 5 to lines 1 and 2. Tick, counter \"2 / 3\". Line 3: \"As [FeSCN2+] rises, the reverse rate rises and the forward rate falls, until the rates are equal again with more FeSCN2+ (red): a deeper red.\" On \"equal again\" the bars meet, both higher than at the start (C3 pattern). The small iron tube plate beside the card pulses on its deeper red. Tick, counter \"3 / 3\". The \"rates\" chip ticks. On \"linked\" the link words \"so\" in all three lines take amber underlines. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "weak-vs-strong",
+      "visualDecision": "new",
+      "visualReference": "The strong answer box shrinks to the right, keeping its ticks and \"3 / 3\".",
+      "teachingReason": "Weak-vs-strong: Now compare this answer.",
+      "narrationCue": "wrong / nearby question / one",
+      "motionPurpose": "On the spoken cues: A second ruled box writes on at the left with the weak answer in handwriting. Label \"Answer A\"; the strong one is \"Answer B\". On \"wrong\" a grey tag writes on: \"correct chemistry\". On \"nearby question\" the teal brackets on the card pulse, and the three keyword chips appear beside Answer A, each crossed: \"collisions\", \"how often\", \"rates\". On \"one\" a single tick lands beside \"more of the red ion forms\". Counter \"1 /",
+      "motionRole": "explain",
+      "onScreenChange": "The strong answer box shrinks to the right, keeping its ticks and \"3 / 3\". A second ruled box writes on at the left with the weak answer in handwriting. Label \"Answer A\"; the strong one is \"Answer B\". On \"wrong\" a grey tag writes on: \"correct chemistry\". On \"nearby question\" the teal brackets on the card pulse, and the three keyword chips appear beside Answer A, each crossed: \"collisions\", \"how often\", \"rates\". On \"one\" a single tick lands beside \"more of the red ion forms\". Counter \"1 / 3\". A red lost-marks tag: \"-2: not in terms of collision theory (no collisions or rates)\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "one-mark-one-idea",
+      "visualDecision": "new",
+      "visualReference": "Heading \"One mark, one idea?\" with a hand-drawn \"≈\".",
+      "teachingReason": "One-mark-one-idea: So is it always one mark, one idea?",
+      "narrationCue": "rule of thumb / linked / specific thing / as a whole",
+      "motionPurpose": "On the spoken cues: On \"rule of thumb\" three answer slots line up with three marks (from scene 8, small). Three limit cards write on, one per cue: \"linked, not listed\": three loose fact chips get no ticks; the same chips joined by \"so\" arrows get ticks. \"a specific thing\": a chip \"a balanced equation with states\" with the grey tag \"e.g. a NESA Chemistry 2025 guideline\"; a chip \"a value from the data\". \"judged as a whole\": a seven-mark",
+      "motionRole": "explain",
+      "onScreenChange": "Heading \"One mark, one idea?\" with a hand-drawn \"≈\". On \"rule of thumb\" three answer slots line up with three marks (from scene 8, small). Three limit cards write on, one per cue: \"linked, not listed\": three loose fact chips get no ticks; the same chips joined by \"so\" arrows get ticks. \"a specific thing\": a chip \"a balanced equation with states\" with the grey tag \"e.g. a NESA Chemistry 2025 guideline\"; a chip \"a value from the data\". \"judged as a whole\": a seven-mark box shows seven bullet facts and a band label \"sound, not comprehensive\". Grey tag \"longer answers are marked in levels\". Earlier cards collapse to their titles as each new card writes on, so only one demonstration is live at a time. A footer tag: \"NESA's criteria are set question by question\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "routine",
+      "visualDecision": "new",
+      "visualReference": "The routine strip comes back full size as a card, each row lighting on its cue with its annotation icon: \"1 Do what? highlight the verb\" \"2 How much? circle the marks\" \"3 About what? underline content words and givens\" \"4 Using what? bracket the constraint\" A small stopwatch doodle reads \"about 30 s\".",
+      "teachingReason": "Routine: Here's the routine.",
+      "narrationCue": "Do what? / How much? / About what? / Using what? / tick",
+      "motionPurpose": "On the spoken cues: On \"tick\" a fifth row writes: \"After: tick each part of the question\". The iron thiocyanate card re-shows its annotations with a tick on each. Memory aid writes large and handwritten: \"Do what? How much? About what? Using what?\" The strip then shrinks to the far left.",
+      "motionRole": "explain",
+      "onScreenChange": "The routine strip comes back full size as a card, each row lighting on its cue with its annotation icon: \"1 Do what? highlight the verb\" \"2 How much? circle the marks\" \"3 About what? underline content words and givens\" \"4 Using what? bracket the constraint\" A small stopwatch doodle reads \"about 30 s\". On \"tick\" a fifth row writes: \"After: tick each part of the question\". The iron thiocyanate card re-shows its annotations with a tick on each. Memory aid writes large and handwritten: \"Do what? How much? About what? Using what?\" Hold about 2 seconds. The strip then shrinks to the far left. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "drill-1",
+      "visualDecision": "adjust",
+      "visualReference": "The board clears.",
+      "teachingReason": "HSC-style training question (drill-1 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn, with two questions. Do the one",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Biology; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears. Question card with subject badge \"Biology\" and tag \"HSC-style question, written for HSCScience\". Card text: \"Roan cattle have a mixture of red hairs and white hairs. Roan cattle were crossed with each other. The table shows the calves produced.\" Table \"Coat colour | Number of calves\": \"red | 9\", \"roan | 21\", \"white | 10\". \"Using the information provided, explain how these results show that roan cattle are heterozygous.\" \"(3 marks)\" Plates small at the right: `m5x-cattle-roan-v1.png`, with `m5x-cattle-red-v1.png` and `m5x-cattle-white-v1.png` beside the table rows. Empty ruled answer box, counter \"0 / 3\". No annotations: students annotate. Countdown ring 10 seconds with \"Pause here to answer.\" The routine strip dims. Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "table build",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast on the card: the highlighter on \"explain\", the badge on \"(3 marks)\", underlines on \"crossed with each other\" and the three numbers, teal brackets on \"Using the information provided\".",
+      "teachingReason": "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "use the data / both alleles / one to two to one / half",
+      "motionPurpose": "On the spoken cues: Three lines write into the box, each ticked as spoken: \"Roan x roan gave red and white calves, so each roan parent carries a red and a white allele: heterozygous.\" \"9 : 21 : 10 is close to 1 : 2 : 1 (expected 10 : 20 : 10 of 40), the ratio from two heterozygous parents.\" \"Roan is about half (21 of 40), matching the heterozygous offspring.\" Pen arrows run from each number in the table to line 2. On \"never using the",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast on the card: the highlighter on \"explain\", the badge on \"(3 marks)\", underlines on \"crossed with each other\" and the three numbers, teal brackets on \"Using the information provided\". Three lines write into the box, each ticked as spoken: \"Roan x roan gave red and white calves, so each roan parent carries a red and a white allele: heterozygous.\" \"9 : 21 : 10 is close to 1 : 2 : 1 (expected 10 : 20 : 10 of 40), the ratio from two heterozygous parents.\" \"Roan is about half (21 of 40), matching the heterozygous offspring.\" Pen arrows run from each number in the table to line 2. On \"never using the numbers\" a chip \"codominance means both alleles show\" writes on and takes a red scribble cross. Caption \"the question said: use the information\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-2",
+      "visualDecision": "new",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-2 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Now Chemistry. Colourless dinitrogen tetroxide forms brown nitrogen",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Chemistry; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. Question card with badge \"Chemistry\" and tag \"HSC-style question, written for HSCScience\". Card text: \"The following equilibrium is established in a sealed flask at room temperature.\" \"N2O4(g) (colourless) ⇌ 2NO2(g) (brown)    ΔH = +57 kJ mol-1\" \"The flask is placed in ice water.\" \"With reference to Le Chatelier's principle, predict and explain the change in the colour of the gas mixture.\" \"(3 marks)\" A coded sealed flask with a mid-brown tint sits at the right (C3 coded NO2 tint; no plate), beside a coded ice-water trough outline. Empty answer box, counter \"0 / 3\". Countdown ring 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: the flask does not change colour.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "On \"two verbs\" the highlighter swipes \"predict\" and \"explain\" separately; each gets a small number tag, \"job 1\" and \"job 2\".",
+      "teachingReason": "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "two verbs / paler / Le Chatelier's principle / gives out heat",
+      "motionPurpose": "On the spoken cues: Teal brackets on \"With reference to Le Chatelier's principle\". Underline on \"ice water\". A ring on \"ΔH = +57\". Lines write and tick: \"Prediction: the mixture becomes paler (less brown).\" (1 / 3) \"By Le Chatelier's principle, the system partially counteracts the decrease in temperature by favouring the exothermic reverse reaction (ΔH is positive for the forward reaction).\" (2 / 3) \"So NO2 (brown) is converted to N2O4",
+      "motionRole": "explain",
+      "onScreenChange": "On \"two verbs\" the highlighter swipes \"predict\" and \"explain\" separately; each gets a small number tag, \"job 1\" and \"job 2\". Teal brackets on \"With reference to Le Chatelier's principle\". Underline on \"ice water\". A ring on \"ΔH = +57\". Lines write and tick: \"Prediction: the mixture becomes paler (less brown).\" (1 / 3) \"By Le Chatelier's principle, the system partially counteracts the decrease in temperature by favouring the exothermic reverse reaction (ΔH is positive for the forward reaction).\" (2 / 3) \"So NO2 (brown) is converted to N2O4 (colourless): [NO2] decreases.\" (3 / 3) The coded flask fades to a paler tint on \"colourless\". A grey tag beside the brackets: \"worked example: collision theory asked; here: Le Chatelier asked\". On \"stopping\" a chip \"It goes paler.\" takes a red scribble cross. Caption \"job 1 only\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "The routine card returns full size, all four rows lit, plus the after-writing row.",
+      "teachingReason": "Decision-rule: So before you write anything: do what, how much, about what, using what.",
+      "narrationCue": "Next / explain",
+      "motionPurpose": "On the spoken cues: On \"not the one next to it\" the hook's two-card image returns small, and the half-hidden card is crossed. On \"Next\" a chip slides in: \"Next: identify, describe, explain\". The three verbs are in highlighter.",
+      "motionRole": "explain",
+      "onScreenChange": "The routine card returns full size, all four rows lit, plus the after-writing row. On \"not the one next to it\" the hook's two-card image returns small, and the half-hidden card is crossed. On \"Next\" a chip slides in: \"Next: identify, describe, explain\". The three verbs are in highlighter. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Mark highlight"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills01-learning-review.md",
+      "sha256": "e04c134cffb179948ce99d8c0a2f5414be5c11facd84c50f6c6554912f7826a8"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills01-claude-science-check.md",
+      "sha256": "89afc1b12897f89c143bd467693594e9baf124f2f9658c3e98a68c5126c6fdad"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

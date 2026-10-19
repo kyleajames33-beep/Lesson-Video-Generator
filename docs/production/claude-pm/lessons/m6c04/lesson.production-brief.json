@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c04/lesson.json",
+    "lessonSha256": "392309c44ffbbb194e5ee4c68a3883b768a00df1fbdeedc7830006494a934b9b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C02 (acid + hydroxide → salt + water; acid + carbonate → salt + water + CO₂; magnesium hydroxide antacid equation; ammonium sulfate fertiliser; salt formulas from charges). C01 (Brønsted-Lowry: a base accepts a proton; carbonate is a proton acceptor; CaO + SO₃ shows an oxide reaction with no proton, the Brønsted-Lowry limit). Stage 5 (Years 9 and 10): pH scale as \"lower is more acidic, seven neutral\", balancing, states. Module 5: precipitation and Fe(OH)₃ as a brown precipitate (chem-m5-c13). Not assumed: pH calculation, strength.",
+    "startsWith": "Identify an acidic or basic problem in a real setting. The video opens: Four problems. Heartburn from stomach acid. A paddock where young wheat is stunted and yellow.",
+    "stopsAfter": "identifying the acidic problem in four settings and its cause; choosing a treatment using safety, cost, gentleness and products; writing CaCO₃ + 2HCl, CaCO₃ + 2H⁺, Ca(OH)₂ + SO₂ and H⁺ + OH⁻ equations with the precipitation step Fe³⁺ + 3OH⁻ → Fe(OH)₃; explaining each effect on pH and what is left behind; explaining how SO₂, an acidic oxide with no hydrogen of its own, is neutralised through the sulfurous acid it makes in water; explaining why mine water is treated with hydrated lime rather than limestone. No fertiliser manufacture (C02), no modelling media (chem-m6-c09), no strength (chem-m6-c05), no pH calculation (chem-m6-c07).",
+    "nextLesson": "why some acids are strong and others weak, and how that differs from concentration (route chem-m6-c05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c04.md"
+  ],
+  "teaching": {
+    "task": "Stomachs, soils, chimneys and mine creeks can all suffer from too much acid. How do you choose a base to neutralise each one, and what does the reaction actually do?",
+    "causalExplanation": "(1) four problems, one root cause (too much acid), but sodium hydroxide fixes none of them: how do you choose? (1); (2) neutralising uses up the extra hydrogen ions; four questions choose the base (2); (3) stomach: NaOH caustic; antacids barely dissolve and react with the acid they meet; hydroxide gives salt and water, carbonate also CO₂ (3); (4) soil: leaching and ammonium fertiliser make it acidic; below about pH 5.5 aluminium dissolves and damages roots (4); (5) lime: carbonate accepts two H⁺ and breaks into water and CO₂; pH rises; aluminium returns to solids; limestone barely dissolves without acid, so it does not overshoot (5); (6) chimney: sulfur in coal burns to SO₂; in water droplets it makes sulfurous and sulfuric acid: acid rain (6); (7) scrubber: Ca(OH)₂ slurry plus SO₂ gives solid CaSO₃ and water; SO₂ is an acidic oxide with no hydrogen of its own, which makes sulfurous acid in the slurry water for the hydroxide to neutralise; solid collected, often made into gypsum (7); (8) mine drainage: exposed iron sulfide makes sulfuric acid and dissolved iron; harms river life directly and keeps metals dissolved (8); (9) hydrated lime: OH⁻ neutralises H⁺, and rising pH precipitates metal hydroxides as sludge; chosen over limestone because it acts faster and reaches the higher pH some metals need, so the dose is controlled; alkaline waste the other way (9); memory aid: every fix leaves something behind; problem, treatment, equation, effect (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "four real problems share one cause, too much acid, and the hook asks why sodium hydroxide fixes none of them. Each setting is then a short case in the same order (the problem and its cause, the chosen base, the equation, what the reaction leaves behind), with the choice card lighting the criterion in use. Two exam questions follow with brief feedback.",
+    "openingDecision": "Four problems. Heartburn from stomach acid. A paddock where young wheat is stunted and yellow. A coal power station chimney. And a creek running orange below an old mine. Each one comes down to the same thing, too much acid, and each is fixed by neutralising it with a base. But you can't just pour sodium hydroxide into a stomach, a paddock or a river. So how do you choose the base, and what does the reaction actually do?",
+    "understandingCheck": "(A1) \"A lake has become acidic as a result of acid rain, and its fish population is declining. Powdered limestone is added to the lake. Explain how the limestone raises the pH of the lake water. Include a balanced equation in your answer.\" Transfer: the soil reaction moves to a lake, and the student must write the net equation and the cause of the pH rise. Crossed mistake: \"Ca²⁺ ions neutralise the H⁺ ions\" (site quick-check distractor A). (A2) \"Some power stations remove sulfur dioxide from flue gas using powdered limestone, CaCO₃, instead of calcium hydroxide. The products are calcium sulfite and one gas. Write a balanced equation for this reaction, and identify one disadvantage of using limestone.\" Transfer: the scrubber equation with a carbonate instead of a hydroxide. Crossed mistake: \"CaCO₃ + SO₂ → CaSO₃ + H₂O\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate applications of neutralisation reactions in everyday life and industrial processes\" four applications, each taught as a problem, a chosen treatment, an equation and an effect: antacids (everyday), liming acidic soil (agriculture), scrubbing sulfur dioxide from flue gas (industry) and treating acidic mine drainage (industry, with a one-sentence note that alkaline waste is neutralised the other way). Not here: making fertiliser salts (taught in C02 scene 8; recalled in one clause in scene 4 as a cause of soil acidity); particle-diagram and multi-representation modelling of neutralisation (the site's card 6 belongs to the dotpoint \"model neutralisation of strong and weak acids and bases using a variety of media\", route chem-m6-c09); strength (chem-m6-c05); antacid titration and back titration (chem-m6-c15); heat of neutralisation (chem-m6-c03); toothpaste and fluorapatite (fluoride's main role is not neutralisation; left out to keep one main question); the 1952 London smog history (its site claims need sources, see corrections). No pH calculations: pH is used only as \"lower means more acidic, seven is neutral\" (Year 11 and C02 litmus level; pH itself is chem-m6-c07)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H⁺ teal token (C01); OH⁻ violet; carbonate violet outline; CO₂ grey-green bubbles; water pale blue; spectator and product metal ions amber; solids white or rust brown; the pH strip bar acid red to neutral green to base purple, with a white marker. Board layout (constant): the plate for the current setting large on the left; the right holds one thing at a time (the lens, or the equation strip with its tag); a slim \"choice card\" (four words: safe, cheap, gentle, leaves behind) sits small in the top-right corner from scene 2 onward and lights the word being used; the short question sits top-left in one line. Clutter rule: at most three text items bright at once; tags fade when their sentence ends. Reuse: `m6-antacid-tablets-v1.png` (three white chalky tablets, one broken; scene 3, hook), `m6-flue-gas-scrubber-v1.png` (cutaway scrubber tower: dark smoke enters a duct at left, two banks of spray nozzles, milky slurry pool at the base with a pump, a white plume leaves the top; scenes 1, 6, 7, attempt 2 feedback), `m6-fertiliser-granules-v1.png` (scene 4 clause, small), `m5x-ppt-feoh3-brown-v1.png` (brown iron hydroxide precipitate; scene 9 callback), `m6-marble-chips-acid-v1.png` (scene 5, small, to show carbonate fizzing in acid as the same reaction as lime in soil), `m6-beaker-v1.png` (scene 3, coded label \"hydrochloric acid, like stomach acid\"). Not used: `m6-agricultural-liming-v1.png` (inspected: white lime pouring from a metal scoop held by a human hand onto soil beside a seedling; the hand breaks the no-human-figures rule and cropping leaves a floating scoop; replaced by the new pair below). No human figures.",
+    "transitionPlan": "The four setting plates open together, then each takes the large left slot in turn (stomach, paddock, chimney, creek) while the right holds the lens or the equation strip one at a time; the choice card sits in the top-right corner from scene 2 and lights the word in use; the pH strip marker moves as each treatment acts; the memory aid gathers what each fix leaves behind; each attempt clears the board and its feedback underlines the question; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "four plates arrive one per sentence in a 2 × 2 grid: `m6-antacid-tablets-v1.png` beside a coded beaker \"stomach acid, HCl\"; the new `m6-soil-crop-acid-v1.png`; `m6-flue-gas-scrubber-v1.png` (inlet duct and dark smoke only, the tower dimmed, coded); the new `m6-acid-mine-drainage-v1.png`.",
+      "teachingReason": "Hook (four problems, one cause): Four problems.",
+      "narrationCue": "orange / acid / choose",
+      "motionPurpose": "On the spoken cues: On \"orange\" the creek plate pulses. On \"acid\" a teal H⁺ token drops onto each plate and a tag \"too much H⁺\" writes once in the centre. On \"sodium hydroxide\" a grey chip \"NaOH?\" moves to each plate in turn and is crossed. Heading writes: \"Too much acid. Which base, and why?\"",
+      "motionRole": "explain",
+      "onScreenChange": "four plates arrive one per sentence in a 2 × 2 grid: `m6-antacid-tablets-v1.png` beside a coded beaker \"stomach acid, HCl\"; the new `m6-soil-crop-acid-v1.png`; `m6-flue-gas-scrubber-v1.png` (inlet duct and dark smoke only, the tower dimmed, coded); the new `m6-acid-mine-drainage-v1.png`. On \"orange\" the creek plate pulses. On \"acid\" a teal H⁺ token drops onto each plate and a tag \"too much H⁺\" writes once in the centre. On \"sodium hydroxide\" a grey chip \"NaOH?\" moves to each plate in turn and is crossed. Heading writes: \"Too much acid. Which base, and why?\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "token flight",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "choosing",
+      "visualDecision": "new",
+      "visualReference": "the grid shrinks to thumbnails along the bottom.",
+      "teachingReason": "What neutralising does, and how to choose: Neutralising means using up the extra hydrogen ions, so the pH moves back towards seven.",
+      "narrationCue": "hydrogen ions / safe / cheap / gently / leave behind",
+      "motionPurpose": "On the spoken cues: A lens: teal H⁺ tokens; a base adds violet acceptors that take them (C01 hop), the teal count falls. On \"hydrogen ions\" the pH strip bar draws under the lens with the marker sliding from about 2 towards 7 (no numbers spoken; ticks 0, 7, 14 only). On \"safe\", \"cheap\", \"gently\" and \"leave behind\" the choice card writes one word at a time large in the centre, then shrinks to the top-right corner, where it stays for the",
+      "motionRole": "explain",
+      "onScreenChange": "the grid shrinks to thumbnails along the bottom. A lens: teal H⁺ tokens; a base adds violet acceptors that take them (C01 hop), the teal count falls. On \"hydrogen ions\" the pH strip bar draws under the lens with the marker sliding from about 2 towards 7 (no numbers spoken; ticks 0, 7, 14 only). On \"safe\", \"cheap\", \"gently\" and \"leave behind\" the choice card writes one word at a time large in the centre, then shrinks to the top-right corner, where it stays for the rest of the video. On \"too basic\" the marker overshoots towards 12 and is pulled back, tagged \"overshoot\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "stomach",
+      "visualDecision": "adjust",
+      "visualReference": "plate `m6-antacid-tablets-v1.png` large with the coded beaker \"hydrochloric acid, like stomach acid\".",
+      "teachingReason": "The stomach (antacids): Start with the stomach.",
+      "narrationCue": "caustic / Magnesium hydroxide / Calcium carbonate / burp",
+      "motionPurpose": "On the spoken cues: The choice card lights \"safe\". On \"caustic\" a grey chip \"NaOH\" sits by the beaker with a red tag \"caustic: burns tissue\" and is crossed. On \"barely dissolve\" a tablet drops into the beaker in the lens; only its surface releases a few particles where teal tokens touch it (tag \"reacts where acid meets it\"); \"gently\" lights. On \"Magnesium hydroxide\" the strip writes small (callback, already taught in C02): \"Mg(OH)₂(s)",
+      "motionRole": "explain",
+      "onScreenChange": "plate `m6-antacid-tablets-v1.png` large with the coded beaker \"hydrochloric acid, like stomach acid\". The choice card lights \"safe\". On \"caustic\" a grey chip \"NaOH\" sits by the beaker with a red tag \"caustic: burns tissue\" and is crossed. On \"barely dissolve\" a tablet drops into the beaker in the lens; only its surface releases a few particles where teal tokens touch it (tag \"reacts where acid meets it\"); \"gently\" lights. On \"Magnesium hydroxide\" the strip writes small (callback, already taught in C02): \"Mg(OH)₂(s) + 2HCl(aq) → MgCl₂(aq) + 2H₂O(l)\". It dims; on \"Calcium carbonate\" the strip writes: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\" and grey-green bubbles rise in the lens; \"leaves behind\" lights. On \"burp\" a tag \"CO₂ gas: carbonates only\" pins beside the CaCO₃ line; a chip \"Mg(OH)₂ antacid gives CO₂\" fades in and is crossed (caption \"no carbonate, no CO₂\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "soil-problem",
+      "visualDecision": "adjust",
+      "visualReference": "the new `m6-soil-crop-acid-v1.png` large (stunted yellowing seedlings; a cutaway of the soil shows short, stubby roots).",
+      "teachingReason": "The paddock (why soil turns acidic): Now the paddock.",
+      "narrationCue": "ammonium fertilisers / aluminium",
+      "motionPurpose": "On the spoken cues: On \"rain\" faint coded rain lines fall and teal tokens appear in the soil cutaway. On \"ammonium fertilisers\" `m6-fertiliser-granules-v1.png` small with a tag \"NH₄⁺ → bacteria → H⁺\" (no equation). On \"aluminium\" the pH strip bar slides to just below 5.5 (a tick labelled \"about 5.5\") and small amber \"Al³⁺\" tokens leave a grey mineral grain in the cutaway; on \"damages plant roots\" a pen ring circles the stubby roots,",
+      "motionRole": "explain",
+      "onScreenChange": "the new `m6-soil-crop-acid-v1.png` large (stunted yellowing seedlings; a cutaway of the soil shows short, stubby roots). On \"rain\" faint coded rain lines fall and teal tokens appear in the soil cutaway. On \"ammonium fertilisers\" `m6-fertiliser-granules-v1.png` small with a tag \"NH₄⁺ → bacteria → H⁺\" (no equation). On \"aluminium\" the pH strip bar slides to just below 5.5 (a tick labelled \"about 5.5\") and small amber \"Al³⁺\" tokens leave a grey mineral grain in the cutaway; on \"damages plant roots\" a pen ring circles the stubby roots, tag \"dissolved Al³⁺ harms roots\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Enter slide",
+        "tick",
+        "token flight",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "liming",
+      "visualDecision": "adjust",
+      "visualReference": "on \"agricultural lime\" the term writes with \"= crushed limestone, CaCO₃\" under it.",
+      "teachingReason": "Agricultural lime: The fix is agricultural lime, which is crushed limestone, calcium carbonate.",
+      "narrationCue": "agricultural lime / two hydrogen ions / pH rises / strongly basic",
+      "motionPurpose": "On the spoken cues: The term dims before the lens opens (Revision 2). Lens in the soil: two teal tokens hop onto a CO₃²⁻ (C01 hop), forming dashed H₂CO₃ that splits into H₂O and a grey-green bubble (C02 motion); `m6-marble-chips-acid-v1.png` small beside the lens, untagged (the fizzing carries the link). The strip writes: \"CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g)\". On \"pH rises\" the pH marker slides up to about 6.5. On \"roots",
+      "motionRole": "explain",
+      "onScreenChange": "on \"agricultural lime\" the term writes with \"= crushed limestone, CaCO₃\" under it. The term dims before the lens opens (Revision 2). Lens in the soil: two teal tokens hop onto a CO₃²⁻ (C01 hop), forming dashed H₂CO₃ that splits into H₂O and a grey-green bubble (C02 motion); `m6-marble-chips-acid-v1.png` small beside the lens, untagged (the fizzing carries the link). The strip writes: \"CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g)\". On \"pH rises\" the pH marker slides up to about 6.5. On \"roots recover\" a 1 second crossfade from `m6-soil-crop-acid-v1.png` to the new aligned `m6-soil-crop-limed-v1.png` (green seedlings, longer roots, white lime worked into the surface); the Al³⁺ tokens return to grains. On \"strongly basic\" the choice card lights \"cheap\", \"safe\" and \"gently\" together; a tag \"no acid left: limestone stops reacting\" pins. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "Plate crossfade",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "acid-rain",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-flue-gas-scrubber-v1.png` with the tower masked out, showing only the inlet duct and its dark smoke (coded mask).",
+      "teachingReason": "The chimney (where acid rain comes from): The chimney is a different kind of problem.",
+      "narrationCue": "sulfur dioxide / sulfurous acid / sulfuric acid / acid rain",
+      "motionPurpose": "On the spoken cues: On \"sulfur dioxide\" a coded SO₂ molecule (one yellow S, two red O) rises from the smoke. On \"sulfurous acid\" a droplet outline swallows it, tag \"SO₂ + H₂O → H₂SO₃\"; on \"sulfuric acid\" a second tag \"→ H₂SO₄ (oxidised in air)\". On \"acid rain\" coded drops fall onto a small lake outline and a limestone block outline; the lake's pH marker slides down; a pen ring on the block edge, tag \"limestone eaten away\".",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-flue-gas-scrubber-v1.png` with the tower masked out, showing only the inlet duct and its dark smoke (coded mask). On \"sulfur dioxide\" a coded SO₂ molecule (one yellow S, two red O) rises from the smoke. On \"sulfurous acid\" a droplet outline swallows it, tag \"SO₂ + H₂O → H₂SO₃\"; on \"sulfuric acid\" a second tag \"→ H₂SO₄ (oxidised in air)\". On \"acid rain\" coded drops fall onto a small lake outline and a limestone block outline; the lake's pH marker slides down; a pen ring on the block edge, tag \"limestone eaten away\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Enter slide",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "scrubber",
+      "visualDecision": "new",
+      "visualReference": "the mask lifts and the whole scrubber plate shows; on \"scrubber\" a pen arrow traces the gas path from the duct up through the sprays to the white plume.",
+      "teachingReason": "The scrubber (an acidic oxide meets a base): So power stations remove it before it leaves the chimney, in a scrubber.",
+      "narrationCue": "scrubber / slurry / calcium sulfite and water / acidic oxide / sulfurous acid / solid",
+      "motionPurpose": "On the spoken cues: On \"slurry\" a ring on the spray nozzles, tag \"Ca(OH)₂ slurry\" (fades at the sentence end). The strip writes: \"Ca(OH)₂ + SO₂(g) → CaSO₃(s) + H₂O(l)\". On \"no hydrogen\" a pen ring sweeps SO₂, a grey teal-token outline beside it is crossed (C01 style), tag \"SO₂: no H of its own\". On \"acidic oxide\" the tag is replaced by the term and its meaning under the strip. On \"sulfurous acid\" a small lens in a slurry droplet: an",
+      "motionRole": "explain",
+      "onScreenChange": "the mask lifts and the whole scrubber plate shows; on \"scrubber\" a pen arrow traces the gas path from the duct up through the sprays to the white plume. On \"slurry\" a ring on the spray nozzles, tag \"Ca(OH)₂ slurry\" (fades at the sentence end). The strip writes: \"Ca(OH)₂ + SO₂(g) → CaSO₃(s) + H₂O(l)\". On \"no hydrogen\" a pen ring sweeps SO₂, a grey teal-token outline beside it is crossed (C01 style), tag \"SO₂: no H of its own\". On \"acidic oxide\" the tag is replaced by the term and its meaning under the strip. On \"sulfurous acid\" a small lens in a slurry droplet: an SO₂ molecule meets water and becomes \"H₂SO₃\" (the scene 6 droplet motion), then its teal tokens hop to violet OH⁻ and become pale blue water; tag \"SO₂ + H₂O → H₂SO₃, then neutralised\" replaces the term. (Revision 2: the \"no proton moves\" tag, the crossed \"SO₂ accepts a proton\" chip and the C01 CaO + SO₃ callback are removed; in a wet slurry the hydrogen ions that react come from sulfurous acid, so \"no proton transfer\" was wrong here, and the callback was to a dry reaction.) On \"solid\" the lens and tag fade; a ring on the slurry pool at the base; white particles settle; tag \"CaSO₃(s) collected → gypsum\". The choice card lights \"leaves behind\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "mine-drainage",
+      "visualDecision": "adjust",
+      "visualReference": "the new `m6-acid-mine-drainage-v1.png` large (rust-orange water running over orange-stained rocks from a grey spoil heap).",
+      "teachingReason": "The orange creek (acid mine drainage): Now the orange creek.",
+      "narrationCue": "sulfuric acid / iron ions / toxic metals dissolved",
+      "motionPurpose": "On the spoken cues: On \"sulfuric acid\" a tag \"iron sulfide + air + water → H₂SO₄\" writes over the spoil heap; teal tokens fill a lens of the creek water; on \"iron ions\" amber Fe³⁺ tokens join them. The pH marker drops to about 3 (\"pH 3 or lower\"). On \"toxic metals dissolved\" amber metal tokens drift downstream past a small coded water-weed outline, tag \"harms river life; metals stay dissolved\".",
+      "motionRole": "explain",
+      "onScreenChange": "the new `m6-acid-mine-drainage-v1.png` large (rust-orange water running over orange-stained rocks from a grey spoil heap). On \"sulfuric acid\" a tag \"iron sulfide + air + water → H₂SO₄\" writes over the spoil heap; teal tokens fill a lens of the creek water; on \"iron ions\" amber Fe³⁺ tokens join them. The pH marker drops to about 3 (\"pH 3 or lower\"). On \"toxic metals dissolved\" amber metal tokens drift downstream past a small coded water-weed outline, tag \"harms river life; metals stay dissolved\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "lime-treatment",
+      "visualDecision": "adjust",
+      "visualReference": "lens of the creek water: on \"hydrated lime\" violet OH⁻ tokens enter (tag \"Ca(OH)₂ = hydrated lime\"); each meets a teal token and becomes pale blue water; strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\" and the pH marker climbs.",
+      "teachingReason": "Hydrated lime treatment (neutralise and precipitate): Treatment plants add hydrated lime, calcium hydroxide, to the drainage water.",
+      "narrationCue": "hydrated lime / insoluble hydroxides / sludge / removes the metals / controls the dose",
+      "motionPurpose": "On the spoken cues: On \"insoluble hydroxides\" each amber Fe³⁺ collects three violet OH⁻ and falls as a rust-brown particle (C13 motion); the second strip line writes \"Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)\"; `m5x-ppt-feoh3-brown-v1.png` small with the callback tag \"precipitates video\". On \"sludge\" the particles settle into a brown layer at the bottom of the lens; tag \"sludge settles out\". On \"removes the metals\" the choice card lights",
+      "motionRole": "explain",
+      "onScreenChange": "lens of the creek water: on \"hydrated lime\" violet OH⁻ tokens enter (tag \"Ca(OH)₂ = hydrated lime\"); each meets a teal token and becomes pale blue water; strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\" and the pH marker climbs. On \"insoluble hydroxides\" each amber Fe³⁺ collects three violet OH⁻ and falls as a rust-brown particle (C13 motion); the second strip line writes \"Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)\"; `m5x-ppt-feoh3-brown-v1.png` small with the callback tag \"precipitates video\". On \"sludge\" the particles settle into a brown layer at the bottom of the lens; tag \"sludge settles out\". On \"removes the metals\" the choice card lights \"leaves behind\"; the strips and the Fe(OH)₃ plate dim. On \"Why not limestone\" a small `m6-soil-crop-limed-v1.png` thumbnail with a \"CaCO₃\" tile slides in beside a \"Ca(OH)₂\" tile; the pH marker shows the limestone tile stopping near 7 to 8 and the hydrated lime tile reaching higher (bar positions only, no numbers spoken); on \"controls the dose\" the choice card lights \"gently\" with a small dial icon (tag \"less gentle: dose controlled\"). The thumbnail and tiles fade. On \"too basic\" the pH strip bar shows a marker at about 11 sliding down to 7 with a small tag \"alkaline waste: add acid or CO₂\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "token flight",
+        "Cam lens zoom",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the four plates return in the 2 × 2 grid.",
+      "teachingReason": "Memory aid (every fix leaves something behind): So here's the idea that ties these together.",
+      "narrationCue": "Every fix leaves something behind / problem / treatment / equation / effect",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten across the top: \"Every fix leaves something behind.\" On each case a small product tag pins to its plate in turn, and each tag dims as the next one writes (Revision 2): \"MgCl₂ + H₂O; CaCO₃ adds CO₂\"; \"Ca²⁺ + H₂O + CO₂\"; \"CaSO₃(s), collected\"; \"Fe(OH)₃ sludge\". On \"problem\" the tags fade and a four-step frame writes under the grid: \"problem → treatment → equation → effect on pH\".",
+      "motionRole": "explain",
+      "onScreenChange": "the four plates return in the 2 × 2 grid. The aid writes large and handwritten across the top: \"Every fix leaves something behind.\" On each case a small product tag pins to its plate in turn, and each tag dims as the next one writes (Revision 2): \"MgCl₂ + H₂O; CaCO₃ adds CO₂\"; \"Ca²⁺ + H₂O + CO₂\"; \"CaSO₃(s), collected\"; \"Fe(OH)₃ sludge\". On \"problem\" the tags fade and a four-step frame writes under the grid: \"problem → treatment → equation → effect on pH\". No condition tag (the choice card in the corner already carries safe, cheap and gentle). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A lake has become acidic as",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A lake has become acidic as a result of acid rain, and its fish population is declining. Powdered limestone is added to the lake. Explain how the limestone raises the pH of the lake water. Include a balanced equation in your answer.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no plates, no equations, no lens.",
+      "motionTools": [
+        "Cam lens zoom",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "carbonate ion / carbon dioxide / used up / pH rises / carbonate",
+      "motionPurpose": "On the spoken cues: On \"carbonate ion\" \"Powdered limestone\" is underlined, and the tile \"CaCO₃(s)\" pins; the lens shows two teal tokens hopping onto CO₃²⁻ and the split into H₂O and a CO₂ bubble. The answer strip writes: \"CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g)\"; \"Include a balanced equation\" in the question is underlined as it writes. On \"used up\" \"raises the pH\" is underlined and the pH marker slides up; chip \"H⁺ used up, so",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"carbonate ion\" \"Powdered limestone\" is underlined, and the tile \"CaCO₃(s)\" pins; the lens shows two teal tokens hopping onto CO₃²⁻ and the split into H₂O and a CO₂ bubble. The answer strip writes: \"CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g)\"; \"Include a balanced equation\" in the question is underlined as it writes. On \"used up\" \"raises the pH\" is underlined and the pH marker slides up; chip \"H⁺ used up, so pH rises\". On \"trap\" a chip \"Ca²⁺ ions neutralise H⁺\" fades in and is crossed (caption \"the carbonate accepts H⁺\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"Some power stations remove sulfur dioxide from flue gas using powdered limestone, CaCO₃, instead of calcium hydroxide.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Some power stations remove sulfur dioxide",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"Some power stations remove sulfur dioxide from flue gas using powdered limestone, CaCO₃, instead of calcium hydroxide. The products are calcium sulfite and one gas. Write a balanced equation for this reaction, and identify one disadvantage of using limestone.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no scrubber plate, no earlier equations.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"calcium sulfite\" \"powdered limestone, CaCO₃\" and \"calcium sulfite and one gas\" are underlined; the answer strip writes: \"CaCO₃(s) + SO₂(g) → CaSO₃(s) + CO₂(g)\" with a silent tally under it \"Ca 1, S 1, C 1, O 5 = 5\".",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "calcium sulfite / carbon dioxide / hydrogen",
+      "motionPurpose": "On the spoken cues: On \"hydrogen\" a pen ring sweeps both reactants, tag \"no H\". On \"carbon dioxide\" \"one disadvantage\" is underlined; answer chip \"Disadvantage: releases CO₂, a greenhouse gas\" pins, with a small grey tag \"advantage: limestone is cheaper\". The scrubber plate returns small with a grey-green tint in its plume. On \"classic slip\" a chip \"CaCO₃ + SO₂ → CaSO₃ + H₂O\" fades in and is crossed (caption \"no hydrogen, so no water\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"calcium sulfite\" \"powdered limestone, CaCO₃\" and \"calcium sulfite and one gas\" are underlined; the answer strip writes: \"CaCO₃(s) + SO₂(g) → CaSO₃(s) + CO₂(g)\" with a silent tally under it \"Ca 1, S 1, C 1, O 5 = 5\". On \"hydrogen\" a pen ring sweeps both reactants, tag \"no H\". On \"carbon dioxide\" \"one disadvantage\" is underlined; answer chip \"Disadvantage: releases CO₂, a greenhouse gas\" pins, with a small grey tag \"advantage: limestone is cheaper\". The scrubber plate returns small with a grey-green tint in its plume. On \"classic slip\" a chip \"CaCO₃ + SO₂ → CaSO₃ + H₂O\" fades in and is crossed (caption \"no hydrogen, so no water\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Problem: what is too acidic (or too basic), and why?\"",
+      "teachingReason": "Decision rule and handoff: So for any neutralisation application: name what's too acidic or too basic, choose a treatment that's safe, cheap and gentle, write the equation, and say what happens to the pH and what's left behind.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Treatment: safe, cheap, gentle.\" \"3 Equation: hydroxide gives water; carbonate gives water and CO₂; oxide gives a salt.\" \"4 Effect: pH moves towards 7; what is left behind.\" On \"Next\" a chip \"Next: strong and weak acids, and concentration\" appears with `m6-ph-meter-probe-beaker-v1.png` small.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Problem: what is too acidic (or too basic), and why?\" \"2 Treatment: safe, cheap, gentle.\" \"3 Equation: hydroxide gives water; carbonate gives water and CO₂; oxide gives a salt.\" \"4 Effect: pH moves towards 7; what is left behind.\" On \"Next\" a chip \"Next: strong and weak acids, and concentration\" appears with `m6-ph-meter-probe-beaker-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c04-learning-review.md",
+      "sha256": "c70cc175f799bf0c4d0b5e066b2d917c23ee7430dd7f54e93e6765bd4ce68723"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c04-claude-science-check.md",
+      "sha256": "a0bbf81bbaae5ebc33343ed53f85a23e31e95026ecfb8c9999046c5d0270b954"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

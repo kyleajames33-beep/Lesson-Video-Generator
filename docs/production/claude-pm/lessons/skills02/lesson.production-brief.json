@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/skills02/lesson.json",
+    "lessonSha256": "6217e26c3c8c4cf8ccb3189c28d3b3c9bc167ebd40ea344ed0f92dbcb4edd761"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "s01 (the reading routine and the annotation layer). Biology: B10 (sex chromosomes; a gene on the X has no partner on the Y; sons get their X from their mother), B4 (template strands, complementary base pairing). Chemistry: C1 (soda water; open against closed systems; dissolving and leaving rates), C3 (the iron thiocyanate tube and its added-Fe3+ case, in scene 9).",
+    "startsWith": "Three verbs that look alike. The video opens: In the last five years of HSC Chemistry and Biology papers, one key word came up in the written section more than any other: explain. Fifty-seven question parts, more than twice as many as the next word. Most were worth two to four marks.",
+    "stopsAfter": "answering one stimulus at three verb levels, and the s01 iron thiocyanate case at three levels; building a three-point explanation with linked causes; spotting a description posing as an explanation; two explain drills.",
+    "nextLesson": "s03, compare and contrast (similarities and differences written as pairs)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/skills-s02.md"
+  ],
+  "teaching": {
+    "task": "Identify, describe and explain look alike. What does each one ask you to write, and how do you know you've actually explained?",
+    "causalExplanation": "(1) explain is the commonest HSC key word, and NESA marking feedback flags outcomes stated without the causal link every year (1); (2) the three verbs with their paraphrased glossary meanings, read in the context of the question (2); (3) one fruit fly reciprocal-cross stimulus with three lettered parts holds the content still (3); (4) identify names (4); (5) describe gives features (5); (6) explain asks how or why, so the cause is set up first (6); (7) a three-point chain in which each sentence says what causes what (7); (8) a description that contains \"because\" is still not an explanation (8); (9) the same three verbs on the s01 Chemistry case (9); (10) the how test: does each sentence say what causes what? (10); two explain drills with feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "identify, describe and explain look alike, so one stimulus (a fruit fly reciprocal cross) holds the content still while the verb changes: identify names, describe gives features, explain links each cause to the next. A weak answer that contains \"because\" shows a description posing as an explanation, the s01 Chemistry case gets the same three-verb ladder for Chemistry viewers, and the how test gives the check. Two explain drills, one per subject, follow.",
+    "openingDecision": "In the last five years of HSC Chemistry and Biology papers, one key word came up in the written section more than any other: explain. Fifty-seven question parts, more than twice as many as the next word. Most were worth two to four marks. And every year, NESA's marking feedback mentions answers that say what happens, but not why. So let's sort out three verbs that look alike, but ask for different things.",
+    "understandingCheck": "both are explain, the verb that needs practice. The narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, 3 marks: soda water opened. The content is C1's open-bottle framing. Crossed habit: \"bubbles form because gas comes out of the drink\" (describes the bubbles). Drill 2, Biology, 2 marks (explain's second commonest value): why the two DNA molecules from replication are identical. The content is B4. The condition \"assume no copying errors\" is on the card. Crossed habit: \"because each has one old strand and one new strand\" (describes the result, gives no cause of the matching sequence).",
+    "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"three verbs that look alike\". It stops after the meaning of identify, describe and explain (outline in passing), the cause-and-effect link, the \"how\" test, a weak against strong explain, and two explain drills. It does not cover compare, contrast or distinguish (s03), judgement verbs (s04), calculations (s05) or data descriptions in depth (s06)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. s01's shared components (`QuestionCard` with its annotation layer, `AnswerBox`, `MarkCounter`, `RoutineStrip` small at the far left, `LostMarksTag`). New for this video: a verb ladder, three stacked rungs (identify, describe, explain), each with a depth icon: identify: one word chip; describe: a feature list; explain: a chain of cause box, \"so\" arrow, effect box. New: a cause-effect chain overlay that draws arrows between linked clauses in the answer box, with \"because\" and \"so\" underlined amber. B10's `SexChrom` X and Y chips for the explain build. No people, hands or faces.",
+    "transitionPlan": "The hook opens on the frequency card; the verb ladder builds three rungs with depth icons; the fly question card writes with its three lettered parts; each part fills its answer box in turn while its rung lights; the cause-effect chain overlay draws arrows between linked clauses; the weak answer box slides in beside the strong one; the Chemistry ladder appears as one compact scene; each drill clears the board and its feedback annotates the card before the model answer writes with ticks; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "A coded bar chart builds, horizontal, one bar per key word, from `verb-frequency.md`: explain 57, calculate 24, justify 23, describe 18, outline 18, identify 16, evaluate 11.",
+      "teachingReason": "Hook: In the last five years of HSC Chemistry and Biology papers, one key word came up in the written section more than any other: explain.",
+      "narrationCue": "explain / two to four marks / what / why",
+      "motionPurpose": "On the spoken cues: Grey tag: \"NESA glossary key words only; HSC Chemistry and Biology papers, Section II, 2021 to 2025, counted by question part\". On \"explain\" its bar grows last and rings amber. On \"more than twice\" a bracket shows 57 against 24. On \"two to four marks\" the explain bar splits into mark-value segments (2: 13, 3: 20, 4: 16, 5: 5, 7: 3), and the 2 to 4 block brightens. Tag \"49 of 57\". On \"what\" and \"why\" two chips write",
+      "motionRole": "explain",
+      "onScreenChange": "A coded bar chart builds, horizontal, one bar per key word, from `verb-frequency.md`: explain 57, calculate 24, justify 23, describe 18, outline 18, identify 16, evaluate 11. Grey tag: \"NESA glossary key words only; HSC Chemistry and Biology papers, Section II, 2021 to 2025, counted by question part\". On \"explain\" its bar grows last and rings amber. On \"more than twice\" a bracket shows 57 against 24. On \"two to four marks\" the explain bar splits into mark-value segments (2: 13, 3: 20, 4: 16, 5: 5, 7: 3), and the 2 to 4 block brightens. Tag \"49 of 57\". On \"what\" and \"why\" two chips write side by side: \"what happens\" (grey) and \"why it happens\" (amber). Tag \"NESA marking feedback: every year, 2020 to 2025\". The heading writes on: \"Identify, describe, explain\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "three-verbs",
+      "visualDecision": "new",
+      "visualReference": "The verb ladder builds bottom to top, each rung on its cue with its depth icon: \"identify: recognise and name\" (one word chip); \"describe: give features or characteristics\" (three short feature lines); \"explain: show cause and effect, how or why\" (cause box, \"so\" arrow, effect box).",
+      "teachingReason": "Three-verbs: Here's what NESA's glossary says, in short.",
+      "narrationCue": "Identify / Describe / Explain / outline / in its question",
+      "motionPurpose": "On the spoken cues: Grey tag on the ladder: \"NESA glossary, paraphrased\". On \"outline\" a small side rung attaches beside describe: \"outline: main features, in general terms\". On \"in its question\" the ladder slides left and a blank question card slides in at the right.",
+      "motionRole": "explain",
+      "onScreenChange": "The verb ladder builds bottom to top, each rung on its cue with its depth icon: \"identify: recognise and name\" (one word chip); \"describe: give features or characteristics\" (three short feature lines); \"explain: show cause and effect, how or why\" (cause box, \"so\" arrow, effect box). Grey tag on the ladder: \"NESA glossary, paraphrased\". On \"outline\" a small side rung attaches beside describe: \"outline: main features, in general terms\". On \"in its question\" the ladder slides left and a blank question card slides in at the right. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "question-card",
+      "visualDecision": "adjust",
+      "visualReference": "The question card writes on.",
+      "teachingReason": "Question-card: Here's an HSC-style question.",
+      "narrationCue": "X chromosome / red / white",
+      "motionPurpose": "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey chip \"illustrative numbers\". Card text: \"In fruit flies (Drosophila), the gene for eye colour is on the X chromosome. A white-eyed female was crossed with a red-eyed male.\" A small table: \"Offspring | red eyes | white eyes\"; \"females | 52 | 0\"; \"males | 0 | 48\". \"(a) Identify which eye-colour allele is dominant. (1 mark)\" \"(b) Describe the",
+      "motionRole": "explain",
+      "onScreenChange": "The question card writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey chip \"illustrative numbers\". Card text: \"In fruit flies (Drosophila), the gene for eye colour is on the X chromosome. A white-eyed female was crossed with a red-eyed male.\" A small table: \"Offspring | red eyes | white eyes\"; \"females | 52 | 0\"; \"males | 0 | 48\". \"(a) Identify which eye-colour allele is dominant. (1 mark)\" \"(b) Describe the results of this cross. (2 marks)\" \"(c) Explain why all the male offspring have white eyes but all the female offspring have red eyes. (3 marks)\" Plates at the right: `m5x-fly-white-eye-v1.png` tagged \"female, white eyes\" and `m5x-fly-red-eye-v1.png` tagged \"male, red eyes\" (word tags; no sex symbols, as B10). Below them, small offspring rows: red-eyed fly icons tagged \"females\" and white-eyed fly icons tagged \"males\". On \"identify\", \"describe\" and \"explain\" the highlighter swipes each verb in turn. The three mark values get small badges (1, 2, 3). On \"Chemistry\" a grey tag: \"Chemistry students: watch the shape of each answer\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark highlight",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "identify",
+      "visualDecision": "new",
+      "visualReference": "Part (a) lifts forward; parts (b) and (c) dim.",
+      "teachingReason": "Identify: Part a says identify, for one mark.",
+      "narrationCue": "identify / red / two",
+      "motionPurpose": "On the spoken cues: A one-line answer box draws (two ruled lines). It reads \"The red allele is dominant.\" with a tick, and the counter goes \"1 / 1\". On \"paragraph\" a ghost paragraph fills the box and overflows. A grey tag writes \"not asked for: costs time\" and the ghost fades. On \"two\" a grey tag writes: \"identify (2 marks): check whether two things are asked for\". Small grey note: \"in 2021 to 2025, identify was worth 1 mark 6 times",
+      "motionRole": "explain",
+      "onScreenChange": "Part (a) lifts forward; parts (b) and (c) dim. A one-line answer box draws (two ruled lines). It reads \"The red allele is dominant.\" with a tick, and the counter goes \"1 / 1\". On \"paragraph\" a ghost paragraph fills the box and overflows. A grey tag writes \"not asked for: costs time\" and the ghost fades. On \"two\" a grey tag writes: \"identify (2 marks): check whether two things are asked for\". Small grey note: \"in 2021 to 2025, identify was worth 1 mark 6 times and 2 marks 7 times\". The ladder's identify rung lights.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "describe",
+      "visualDecision": "new",
+      "visualReference": "Part (b) forward, the others dimmed.",
+      "teachingReason": "Describe: Part b says describe, for two marks.",
+      "narrationCue": "describe / red / white",
+      "motionPurpose": "On the spoken cues: Four-line answer box, counter \"0 / 2\". Line 1: \"All 52 female offspring had red eyes (none white).\" A pen arrow runs from the table's 52 to the line. Tick, \"1 / 2\". Line 2: \"All 48 male offspring had white eyes (none red): each daughter matched her father, each son his mother.\" A pen arrow runs from 48. Tick, \"2 / 2\". On \"father's eye colour\" thin lines link the red-eyed male plate to the daughter icons and the",
+      "motionRole": "explain",
+      "onScreenChange": "Part (b) forward, the others dimmed. Four-line answer box, counter \"0 / 2\". Line 1: \"All 52 female offspring had red eyes (none white).\" A pen arrow runs from the table's 52 to the line. Tick, \"1 / 2\". Line 2: \"All 48 male offspring had white eyes (none red): each daughter matched her father, each son his mother.\" A pen arrow runs from 48. Tick, \"2 / 2\". On \"father's eye colour\" thin lines link the red-eyed male plate to the daughter icons and the white-eyed female plate to the son icons. On \"there's no because\" a dashed empty slot labelled \"because ...?\" appears after line 2. A grey tag: \"describe: what, not why\". The describe rung lights.",
+      "motionTools": [
+        "tick",
+        "DrawPath",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "explain-setup",
+      "visualDecision": "new",
+      "visualReference": "Part (c) forward.",
+      "teachingReason": "Explain-setup: Part c says explain, for three marks, and it asks why the males and females differ.",
+      "narrationCue": "explain / why / all white / all red",
+      "motionPurpose": "On the spoken cues: The s01 annotation layer runs: the highlighter on \"Explain\"; the badge on \"(3 marks)\"; underlines on \"all the male offspring have white eyes\" and \"all the female offspring have red eyes\". On \"why\" a tag writes \"why: needs causes\". Eight-line answer box, counter \"0 / 3\", three dotted slots. On \"accounts for both\" two target chips sit in the margin: \"males: all white\" and \"females: all red\". The routine strip's fourth",
+      "motionRole": "explain",
+      "onScreenChange": "Part (c) forward. The s01 annotation layer runs: the highlighter on \"Explain\"; the badge on \"(3 marks)\"; underlines on \"all the male offspring have white eyes\" and \"all the female offspring have red eyes\". On \"why\" a tag writes \"why: needs causes\". Eight-line answer box, counter \"0 / 3\", three dotted slots. On \"accounts for both\" two target chips sit in the margin: \"males: all white\" and \"females: all red\". The routine strip's fourth row (\"Using what?\") shows a small grey \"none here\" tag.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "Mark highlight",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "explain-build",
+      "visualDecision": "new",
+      "visualReference": "A coded inset beside the box (B10 `SexChrom` chips): mother \"X^r X^r\", father \"X^R Y\".",
+      "teachingReason": "Explain-build: Start from the cause.",
+      "narrationCue": "no copy / mother / father's",
+      "motionPurpose": "On the spoken cues: Line 1: \"The eye-colour gene is on the X chromosome; the Y chromosome carries no allele for it.\" On \"no copy\" the Y chip shows a dashed empty slot. Tick, \"1 / 3\". Line 2: \"Sons get their only X from their mother (X^r X^r), so every son is X^r Y; with no second allele to mask it, the recessive white allele is expressed: white eyes.\" On \"mother\" an X^r chip slides from the mother to a son outline that is paired with",
+      "motionRole": "explain",
+      "onScreenChange": "A coded inset beside the box (B10 `SexChrom` chips): mother \"X^r X^r\", father \"X^R Y\". Line 1: \"The eye-colour gene is on the X chromosome; the Y chromosome carries no allele for it.\" On \"no copy\" the Y chip shows a dashed empty slot. Tick, \"1 / 3\". Line 2: \"Sons get their only X from their mother (X^r X^r), so every son is X^r Y; with no second allele to mask it, the recessive white allele is expressed: white eyes.\" On \"mother\" an X^r chip slides from the mother to a son outline that is paired with the father's Y. Tick, \"2 / 3\". The \"males: all white\" target ticks. Line 3: \"Daughters receive their father's X, carrying the dominant red allele (X^R), so every daughter is X^R X^r and has red eyes.\" On \"father's\" the X^R chip slides from the father to a daughter outline, next to an X^r from the mother. Tick, \"3 / 3\". The \"females: all red\" target ticks. On \"what causes what\" the cause-effect chain overlay draws: in each line the cause clause boxes in pale blue, an arrow runs to the effect clause, and \"so\" underlines amber. The explain rung lights. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "weak-vs-strong",
+      "visualDecision": "new",
+      "visualReference": "The strong box shrinks right as \"Answer B\", keeping \"3 / 3\".",
+      "teachingReason": "Weak-vs-strong: Now here's a weaker answer.",
+      "narrationCue": "repeats part b / one / described / how",
+      "motionPurpose": "On the spoken cues: The weak answer writes at the left as \"Answer A\". On \"repeats part b\" its first clause links by a dashed line to the part (b) answer, which reappears small, with the tag \"already said in (b)\". On \"never says how it works\" two empty dashed slots appear under Answer A: \"where does each X come from?\" and \"why are daughters red?\". On \"one\" one tick lands by \"males have only one X\". Counter \"1 / 3\". A red lost-marks tag:",
+      "motionRole": "explain",
+      "onScreenChange": "The strong box shrinks right as \"Answer B\", keeping \"3 / 3\". The weak answer writes at the left as \"Answer A\". On \"repeats part b\" its first clause links by a dashed line to the part (b) answer, which reappears small, with the tag \"already said in (b)\". On \"never says how it works\" two empty dashed slots appear under Answer A: \"where does each X come from?\" and \"why are daughters red?\". On \"one\" one tick lands by \"males have only one X\". Counter \"1 / 3\". A red lost-marks tag: \"-2: never says where each X comes from, for sons or daughters\". Grey label \"HSCScience marking guide (illustrative)\". On \"described\" the ladder flashes the describe rung, then the explain rung, with a red arrow \"asked for this\". On \"Notice it even says because\" the word \"because\" in Answer A rings amber. On \"how\" a chip \"because ≠ explained\" writes beside it, and an arrow points to the empty slots. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "chem-ladder",
+      "visualDecision": "adjust",
+      "visualReference": "The fly card slides away.",
+      "teachingReason": "Chem-ladder (the same three verbs in Chemistry): The same ladder works in Chemistry.",
+      "narrationCue": "deeper red / more often / verb",
+      "motionPurpose": "On the spoken cues: The s01 iron tube plates return (`c3-iron-tube-start-v1.png` crossfading to `c3-iron-tube-deep-v1.png`), with the equation strip \"Fe3+ (pale yellow) + SCN- ⇌ FeSCN2+ (red)\", a small chip \"crystals of Fe(NO3)3 added\" and the grey tag \"s01\". The verb ladder sits beside them. Each rung fills on its cue with a one-line answer chip: identify: \"deeper red\" (one word chip; on \"deeper red\" the tube crossfades); describe:",
+      "motionRole": "explain",
+      "onScreenChange": "The fly card slides away. The s01 iron tube plates return (`c3-iron-tube-start-v1.png` crossfading to `c3-iron-tube-deep-v1.png`), with the equation strip \"Fe3+ (pale yellow) + SCN- ⇌ FeSCN2+ (red)\", a small chip \"crystals of Fe(NO3)3 added\" and the grey tag \"s01\". The verb ladder sits beside them. Each rung fills on its cue with a one-line answer chip: identify: \"deeper red\" (one word chip; on \"deeper red\" the tube crossfades); describe: \"The pale red solution turns a deeper red as the crystals dissolve.\" (feature line, no link words); explain: \"More Fe3+, so Fe3+ and SCN- collide more often, so the forward rate rises above the reverse rate, so more FeSCN2+ (red) forms.\" with the cause-chain overlay and \"so\" underlined amber. On \"verb\" the three highlighted verbs pulse together. Tag: \"same content, three different jobs\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "Plate crossfade",
+        "chip pop",
+        "Mark underline",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "because-test",
+      "visualDecision": "new",
+      "visualReference": "A test card writes: \"Does this sentence say what causes what?\"",
+      "teachingReason": "Because-test: So here's a quick test.",
+      "narrationCue": "what causes what / effect / chain",
+      "motionPurpose": "On the spoken cues: Two chip rows beneath it, recalled from scene 9 (no new content): \"The pale red solution turns a deeper red as the crystals dissolve.\" with a grey \"describes\" tag; \"... so more FeSCN2+ (red) forms.\" with \"so\" underlined amber and the tag \"explains\". On \"effect\" a two-step bar draws: \"outlines the campaign's features: 2\" then \"+ explains its effect: 3\". Grey tag \"a NESA Biology marking guideline, 2024\". The test card",
+      "motionRole": "explain",
+      "onScreenChange": "A test card writes: \"Does this sentence say what causes what?\" Two chip rows beneath it, recalled from scene 9 (no new content): \"The pale red solution turns a deeper red as the crystals dissolve.\" with a grey \"describes\" tag; \"... so more FeSCN2+ (red) forms.\" with \"so\" underlined amber and the tag \"explains\". On \"effect\" a two-step bar draws: \"outlines the campaign's features: 2\" then \"+ explains its effect: 3\". Grey tag \"a NESA Biology marking guideline, 2024\". The test card and chip rows dim while the bar is live, so at most three bright text items show. On \"two marks to seven\" the hook's explain bar returns small with its 2 to 7 segments. On \"chain\" a three-link chain extends to five links, against a list of five loose chips that stays unticked. Memory aid writes large and handwritten: \"Describe says what. Explain says how one thing causes the next.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "drill-1",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Do the one in your subject,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. Card: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"A sealed bottle of soda water contains the equilibrium CO2(g) ⇌ CO2(aq).\" \"When the cap is removed, bubbles form in the drink.\" \"Explain this observation.\" \"(3 marks)\" Plates: `c1-sparkling-bottle-sealed-v1.png` beside `c1-sparkling-bottle-open-v1.png` (C1's aligned pair). Empty answer box, counter \"0 / 3\". No annotations. Countdown ring 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no rate bars, no arrows.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Explain\", badge on \"(3 marks)\", underlines on \"cap is removed\" and \"bubbles form\", and a ring on the equation.",
+      "teachingReason": "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "escape / falls / out of solution",
+      "motionPurpose": "On the spoken cues: Lines write and tick: \"Removing the cap lets CO2(g) escape, so the concentration of CO2 gas above the drink falls.\" (1 / 3) \"Fewer CO2 molecules dissolve, so the forward (dissolving) rate decreases, while the reverse rate is unchanged at first.\" (2 / 3) \"The reverse reaction is now faster, so CO2(aq) leaves solution as gas, forming bubbles.\" (3 / 3) Two coded rate bars (C1 style, no values): dissolving shrinks on",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Explain\", badge on \"(3 marks)\", underlines on \"cap is removed\" and \"bubbles form\", and a ring on the equation. Lines write and tick: \"Removing the cap lets CO2(g) escape, so the concentration of CO2 gas above the drink falls.\" (1 / 3) \"Fewer CO2 molecules dissolve, so the forward (dissolving) rate decreases, while the reverse rate is unchanged at first.\" (2 / 3) \"The reverse reaction is now faster, so CO2(aq) leaves solution as gas, forming bubbles.\" (3 / 3) Two coded rate bars (C1 style, no values): dissolving shrinks on \"falls\", and leaving stays. The chain overlay links the three lines. On \"describes the bubbles\" a chip \"Bubbles form because gas comes out of the drink.\" takes a red scribble cross. Caption \"what happens, not why\". On \"A linked Le Chatelier answer works too\" a grey tag writes on: \"also full value: less CO2(g), so the equilibrium shifts left, CO2 leaves solution\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-2",
+      "visualDecision": "new",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Now Biology. When a DNA molecule is copied,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. Card: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text: \"DNA replication produces two DNA molecules that are identical to each other.\" \"Assuming no copying errors, explain why the two molecules are identical.\" \"(2 marks)\" A short coded B4 ladder (five base pairs, original strands blue) sits at the right, unzipped at the top only. No new strands are drawn. Answer box, counter \"0 / 2\". Countdown 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"explain\", badge on \"(2 marks)\", underline on \"identical\", teal brackets on \"Assuming no copying errors\" (a condition, kept on the card).",
+      "teachingReason": "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "each original strand / complementary base pairing",
+      "motionPurpose": "On the spoken cues: Line 1: \"The two strands separate and each original strand acts as a template for a new strand.\" The B4 ladder unzips fully. Tick, \"1 / 2\". Line 2: \"Free nucleotides pair by complementary base pairing (A with T, C with G), so each new strand has the same sequence as the template's old partner strand, and both molecules have the original base sequence.\" Green new tiles dock, and the two finished molecules light up",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"explain\", badge on \"(2 marks)\", underline on \"identical\", teal brackets on \"Assuming no copying errors\" (a condition, kept on the card). Line 1: \"The two strands separate and each original strand acts as a template for a new strand.\" The B4 ladder unzips fully. Tick, \"1 / 2\". Line 2: \"Free nucleotides pair by complementary base pairing (A with T, C with G), so each new strand has the same sequence as the template's old partner strand, and both molecules have the original base sequence.\" Green new tiles dock, and the two finished molecules light up identical side by side. Tick, \"2 / 2\". The chain overlay links the lines. On \"one old strand and one new strand\" a chip with that answer takes a red scribble cross. Caption \"describes the result: why do the sequences match?\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "The verb ladder returns full size as the decision board, each rung lighting on its cue: \"identify → name the item or items the question asks for; use the marks to check the scope\"; \"describe → features, with values from the data\" (with a small side rung: \"outline → main features, briefly\"); \"explain → how each cause leads to its effect; a because alone is not enough\".",
+      "teachingReason": "Decision-rule: So, when you see the verb: identify, name what the question asks for, and use the marks to check how many.",
+      "narrationCue": "identify / Describe / Outline / Explain / Next / pairs",
+      "motionPurpose": "On the spoken cues: On \"Next\" a chip slides in: \"Next: compare, contrast, distinguish\". Two small aligned columns are joined by pair lines.",
+      "motionRole": "explain",
+      "onScreenChange": "The verb ladder returns full size as the decision board, each rung lighting on its cue: \"identify → name the item or items the question asks for; use the marks to check the scope\"; \"describe → features, with values from the data\" (with a small side rung: \"outline → main features, briefly\"); \"explain → how each cause leads to its effect; a because alone is not enough\". On \"Next\" a chip slides in: \"Next: compare, contrast, distinguish\". Two small aligned columns are joined by pair lines. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills02-learning-review.md",
+      "sha256": "51df1c1d3054be17ba21df5f9f9b7d7652a91bfcefb716c1639f60e9caf20a76"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills02-claude-science-check.md",
+      "sha256": "760f55856ef6d95272d6ecd3c9a19e83a096c7dc59874caa0ab22553d1069b3c"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

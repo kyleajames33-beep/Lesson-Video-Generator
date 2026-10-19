@@ -1,0 +1,168 @@
+{
+  "title": "How is neutralisation heat calculated? From a temperature rise to kilojoules per mole of water",
+  "subtitle": "Mixing an acid with a base warms the solution. How do you turn that temperature rise into the heat released per mole of water, and why does it come out negative?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 3,
+  "lessonIntent": "explaining why neutralisation releases heat using the net ionic equation and spectator ions; explaining why ΔH is negative; defining the enthalpy of neutralisation per mole of water; explaining why acids and bases completely split into ions give about −57 kJ/mol whichever pair is used; calculating q with the total mass, the moles of water from the reactant that runs out (including a two-proton acid) and ΔH in kJ/mol; giving heat loss as the likely reason a result is less negative than −57; predicting the effect of scaling the volumes. No practical method or error table (chem-m6-p02), no weak-acid explanation (chem-m6-c09), no strength terms (chem-m6-c05).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are two clear, colourless solutions, hydrochloric acid and sodium hydroxide, both at twenty one point five degrees. Pour them together in a foam cup, and there's nothing to see, no bubbles and no colour change. But the temperature climbs to twenty eight degrees. So how much heat did the reaction give out, and how could you compare it with an experiment that used different amounts?"
+      }
+    },
+    {
+      "id": "why-warm",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, why does it warm up? In water, hydrochloric acid is completely split into hydrogen ions and chloride ions, and sodium hydroxide into sodium ions and hydroxide ions. The sodium and chloride ions don't change at all, so they're called spectator ions. The only change is a hydrogen ion joining a hydroxide ion to make water. The water has less chemical energy than the two ions had, so the difference is released as heat, warming the solution."
+      }
+    },
+    {
+      "id": "per-mole",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A reaction that releases heat is exothermic. The chemicals lose energy, so the enthalpy change, delta H, is negative. Twice as much of each solution would make twice as much water, and twice as much heat. So to compare experiments, divide by the water formed. The enthalpy of neutralisation is the enthalpy change per mole of water formed."
+      }
+    },
+    {
+      "id": "same-reaction",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Acids that split completely into ions like this are called strong acids, explained in a later video. With a strong acid and a base that's also completely split, the reaction is always the same one: hydrogen ion plus hydroxide ion makes water. So the value comes out about the same whichever pair you use, about minus fifty seven kilojoules per mole. Acids that only partly split into ions can give different values, and they get their own video."
+      }
+    },
+    {
+      "id": "calorimeter",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To measure it, mix the solutions in a lidded polystyrene foam cup, called a calorimeter. Foam insulates, so we assume all the heat stays in the solution. Then the heat is q equals m c delta T, from Year 11. m is the mass of all the solution, both together, and one millilitre of a dilute solution is about one gram. c, the specific heat capacity, is four point one eight joules per gram per degree. Delta T is the final minus the initial temperature."
+      }
+    },
+    {
+      "id": "we1-givens",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the hook experiment. Fifty millilitres each of one mole per litre hydrochloric acid and sodium hydroxide, warming from twenty one point five to twenty eight point zero degrees. Find the enthalpy of neutralisation in three steps: the heat, the moles of water, then divide."
+      }
+    },
+    {
+      "id": "we1-heat",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step one, the heat. The mass is both solutions, so one hundred grams, because the heat warms everything in the cup. Delta T is twenty eight point zero minus twenty one point five, six point five degrees. So q is one hundred times four point one eight times six point five, which is two thousand seven hundred and seventeen joules, or two point seven one seven kilojoules."
+      }
+    },
+    {
+      "id": "we1-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step two, the moles of water. Moles equals concentration times volume in litres, and fifty millilitres is zero point zero five zero zero litres. For the acid, one point zero zero times zero point zero five zero zero gives zero point zero five zero zero moles of hydrogen ions, and the sodium hydroxide gives the same amount of hydroxide ions. One hydrogen ion and one hydroxide ion make one water, so zero point zero five zero zero moles of water form."
+      }
+    },
+    {
+      "id": "we1-enthalpy",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step three, divide and add the sign. Two point seven one seven kilojoules over zero point zero five zero zero moles is fifty four point three. Delta T has only two significant figures, so round to fifty four. The temperature rose, so the chemicals gave heat away, and delta H is minus fifty four kilojoules per mole. That's a little less negative than minus fifty seven, most likely because of heat loss: some heat escaped, so the measured rise was smaller."
+      }
+    },
+    {
+      "id": "we2-count",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Twenty five millilitres of one mole per litre sulfuric acid is mixed with seventy five millilitres of one mole per litre sodium hydroxide, warming from twenty point zero to twenty six point six degrees. Sulfuric acid gives two hydrogen ions, so zero point zero two five zero moles of acid gives zero point zero five zero zero moles of them. There's zero point zero seven five zero moles of hydroxide. The hydrogen ions run out first, so zero point zero five zero zero moles of water form, and the extra hydroxide releases no heat."
+      }
+    },
+    {
+      "id": "we2-enthalpy",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But the leftover solution still gets warmed, so the mass is all of it, one hundred grams. Delta T is six point six degrees, so q is about two thousand seven hundred and fifty nine joules. Divide by the moles of water, not acid: two point seven five nine kilojoules over zero point zero five zero zero moles gives fifty five point two, so delta H is minus fifty five kilojoules per mole. Dividing by the acid's moles would double it."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's what to remember. Per mole of water, not per mole of acid: the ion that runs out first sets the water. Use the mass of everything in the cup. And temperature up, delta H negative. Calculate the heat as a positive number, then add the minus sign, because the reaction gave that heat away."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Forty point zero millilitres of one point five zero mole per litre nitric acid is mixed with fifty point zero millilitres of one point zero zero mole per litre potassium hydroxide in a polystyrene cup. The temperature rises from twenty one point zero to twenty eight point four degrees. Use the density and specific heat capacity on screen, and calculate the molar enthalpy of neutralisation. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Moles first: zero point zero six zero zero moles of hydrogen ions and zero point zero five zero zero of hydroxide, so hydroxide runs out first. The mass is ninety grams and delta T is seven point four, so q is about two thousand seven hundred and eighty four joules. Divide by the moles of water and round: minus fifty six kilojoules per mole. Dividing by the acid's moles uses the reactant in excess."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A student repeats the hook experiment, this time with one hundred millilitres of each solution instead of fifty, at the same concentrations. Predict how the temperature rise and the calculated enthalpy of neutralisation would compare with the first experiment. Justify your answer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Both stay about the same. Twice as much water forms, so twice the heat is released, but there's twice the mass to warm, so the rise is still about six point five degrees. And the enthalpy is heat per mole of water, so doubling both leaves it unchanged. Saying the rise doubles is the classic slip: it forgets the extra solution soaking up the heat."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any neutralisation heat question: the smaller of the hydrogen ion and hydroxide ion moles sets the moles of water. Use the mass of everything in the cup for q, divide by the moles of water, round, and make delta H negative when the temperature rises. Next: doing this experiment in the lab, and cutting down the heat loss."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

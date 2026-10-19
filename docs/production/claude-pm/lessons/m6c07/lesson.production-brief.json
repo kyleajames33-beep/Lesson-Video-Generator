@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c07/lesson.json",
+    "lessonSha256": "05a12e396fd733a7d727e8cfb996650a3d59145c8563ab72cead28f78f9c41a7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C05 (strong acids and bases ionise or dissociate completely; the strong-acid list including HCl and HNO₃; strong bases include NaOH, KOH, Ca(OH)₂ and Ba(OH)₂, with Ca(OH)₂ and Ba(OH)₂ giving two OH⁻; lower pH means more hydronium; one pH unit is a factor of ten; the meter readings 1.0 and 13.0 for 0.10 mol/L HCl and NaOH). C06 (water self-ionises, H₂O + H₂O ⇌ H₃O⁺ + OH⁻, to a tiny extent; neutral means equal hydronium and hydroxide; C06 scene 9 promised \"the next video links that to pH seven\"). C01 (H⁺(aq) means H₃O⁺). C03 (H⁺ + OH⁻ → H₂O; the ion that runs out first). Module 5: K expressions with water left out (chem-m5-c05); Le Chatelier's principle, including temperature on an endothermic equilibrium (chem-m5-c03, c09). Year 11 Module 2: n = cV with V in litres; c₁V₁ = c₂V₂ is not assumed (scene 9 works through moles). Mathematics: powers of ten; a calculator's log key. Not assumed: logarithm rules beyond \"log of 10ⁿ is n\".",
+    "startsWith": "Start with a stated concentration and complete ionisation. The video opens: A pH meter in zero point one zero moles per litre hydrochloric acid reads one point zero zero. In sodium hydroxide at the same concentration, it reads thirteen point zero zero. Where do those numbers come from?",
+    "stopsAfter": "calculating pH from the concentration of a strong acid and pOH and pH for a strong base, including bases that release two hydroxide ions; converting pH back to [H₃O⁺] and pH or pOH to [OH⁻]; writing Kw and using it to link [H₃O⁺] and [OH⁻]; explaining why Kw rises with temperature and why pure water above 25 °C has a pH below 7 but is still neutral; reporting pH to the right number of decimal places; calculating pH after diluting a strong acid or base; calculating pH after mixing a strong acid with a strong base, using the excess and the total volume; checking that the acid or base is strong before using these methods. No weak-acid pH (chem-m6-c08), no Ka or pKa (chem-m6-c10), no buffers (chem-m6-c11), no salt or equivalence-point pH (chem-m6-c13, c14), no sulfuric acid pH calculation (scene 8 states only when [H⁺] = 2c may be used).",
+    "nextLesson": "practice questions on strong acid and base pH, dilution and mixing (route chem-m6-g01), then weak acid and base pH with an ICE table (chem-m6-c08)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c07.md"
+  ],
+  "teaching": {
+    "task": "A pH meter reads 1.00 in a strong acid and 13.00 in a strong base of the same concentration. Where do those numbers come from, how can a base have a pH at all, and what happens to the pH when you dilute a solution or mix an acid with a base?",
+    "causalExplanation": "(1) a meter reads 1.00 in a strong acid and 13.00 in a strong base: where do the numbers come from, and how does a base have a pH? (1); (2) pH is −log[H₃O⁺]; a strong acid gives [H₃O⁺] = c, so 10⁻¹ gives pH 1; the log turns each factor of ten into one step (2); (3) a strong acid worked example; why decimal places carry the precision (3, rule card names [H₃O⁺]); (4) going back: [H₃O⁺] = 10⁻ᵖᴴ (4); (5) water's self-ionisation (C06) is an equilibrium, so it has a constant: Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C; it holds in every solution; added hydroxide shifts the equilibrium back and lowers hydronium (5); (6) the forward reaction absorbs heat, so Kw rises with temperature; neutral pH falls below 7 but the water stays neutral (6); (7) the base's hydronium from Kw, and the shortcut pH + pOH = 14 (7); (8) a strong base releasing two hydroxide ions; stopping at pOH is the slip (8); (9) dilution conserves moles, so concentration falls with volume; pH moves toward 7 and never past it (9); (10) mixing reacts H⁺ with OH⁻ first; the excess sets the pH and spreads through the total volume (10 to 12); memory aid (13); two attempts and brief feedback (14 to 17); decision rule with the strong-or-weak check, and handoff (18); key notes (19).",
+    "conversationalApproach": "a meter reads 1.00 in a strong acid and 13.00 in a strong base, and the video works out where both numbers come from. pH is introduced as minus the log of the hydronium concentration, Kw then explains how a base has a pH, temperature shows that neutral is not always pH 7, and dilution and mixing are staged one step per line in worked examples. Two exam calculations follow with brief feedback.",
+    "openingDecision": "A pH meter in zero point one zero moles per litre hydrochloric acid reads one point zero zero. In sodium hydroxide at the same concentration, it reads thirteen point zero zero. Where do those numbers come from? And sodium hydroxide makes hydroxide ions, not hydronium, so how can it have a pH?",
+    "understandingCheck": "(A1) \"25.0 mL of 0.120 mol/L nitric acid is mixed with 35.0 mL of 0.0500 mol/L potassium hydroxide solution at 25 °C. Calculate the pH of the resulting mixture.\" New acid and base; the acid is in excess (the worked example had excess base), so the student must take the direct pH route, not pOH. Crossed mistake: \"÷ 0.0250 L (acid only): pH 1.301\". (A2) \"A potassium hydroxide solution has a pH of 12.30 at 25 °C. Calculate the hydroxide ion concentration in this solution.\" Reverses the calculation for a base (scene 4 reversed an acid). Crossed mistake: \"[OH⁻] = 10⁻¹²·³⁰ = 5.0 × 10⁻¹³ mol/L\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH–]) for a range of solutions (ACSCH102)\" \"calculate the pH of the resultant solution when solutions of acids and/or bases are diluted or mixed\" this video starts from the route's stated concentration with complete ionisation and stops at choosing the dilution or mixing method. It teaches: pH = −log₁₀[H₃O⁺] and why the log and the minus sign are there; [H₃O⁺] = c for a strong monoprotic acid; the decimal-places rule for pH; [H₃O⁺] = 10⁻ᵖᴴ; Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C as the constant on C06's self-ionisation, holding in every aqueous solution; Kw rising with temperature (37 °C and 60 °C examples), so neutral pH equals 7 only at 25 °C; pOH and pH + pOH = 14 at 25 °C; strong bases releasing one or two OH⁻ per formula unit; dilution (moles conserved, pH moves toward 7 and never past it); strong acid plus strong base mixing (neutralise, then divide the excess by the total volume); the strong-or-weak check that chooses the method. Not here: weak acid and weak base pH (chem-m6-c08, after the practice video chem-m6-g01); Ka, pKa and Ka × Kb = Kw (chem-m6-c10); buffers and Henderson-Hasselbalch (chem-m6-c11; site L11 cards on partial neutralisation not used); equivalence-point pH of salts (chem-m6-c13, c14); sulfuric acid pH calculations (only the conditional \"assume both H⁺ are released\" line is taught, scene 8; Open decisions); measuring pH in the lab (chem-m6-p03). The site's Astrup hook and blood-pH clinical framing are not used (register draft correction)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; water pale blue; spectator ions grey; meter readouts amber digits; pOH lines violet-tinted, pH lines teal-tinted. Board layout (constant, C03): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the lens, the log ruler or the working, one stage per line, earlier lines dimming and leaving once the next step no longer needs them; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once (task, givens card, current line); every label fades when its sentence ends. Reuse: painted plates (inspected 19 Oct): `m6-ph-meter-probe-beaker-v1.png` (bench meter with a blank green screen, probe in a beaker of clear liquid; coded amber readout in the screen; hook and scene 7), `m6-beaker-v1.png` (hook second solution, scene 5 \"pure water\", mixing beakers in scenes 10 to 12), `m6-volumetric-pipette-filler-v1.png` (bulb pipette with red filler; scene 9, drawing 25.0 mL), `m6-volumetric-flask-v1.png` (stoppered flask with a calibration ring on the neck; scene 9, made up to 500 mL, coded label \"500.0 mL\"). Not used: `c8-thermometer-hot-v1.png` and `m5x-thermometer-cold-v1.png` (the temperature ladder is a data table, and a hot or cold thermometer would suggest the solution's own temperature changes in a reaction); `m6-household-cleaner-bottle-v1.png` (no product pH is claimed). No new plates needed. No human figures.",
+    "transitionPlan": "The pH meter plate opens with its amber readout; the log ruler draws for the meaning of pH; the givens card enters at the left for each worked example while the centre working adds one stage per line and earlier lines dim; the water equilibrium returns for Kw and the temperature card; dilution and mixing reuse the beaker layout with the excess carried into the total volume; each attempt clears the board and its feedback underlines the givens; the decision rule card with the strong-or-weak check and the next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-ph-meter-probe-beaker-v1.png` centre, its beaker labelled (coded) \"hydrochloric acid, 0.10 mol/L\"; a second `m6-beaker-v1.png` at the right labelled \"sodium hydroxide, 0.10 mol/L\".",
+      "teachingReason": "Hook (one meter, two numbers): A pH meter in zero point one zero moles per litre hydrochloric acid reads one point zero zero.",
+      "narrationCue": "one point zero zero / thirteen point zero zero / have",
+      "motionPurpose": "On the spoken cues: On \"one point zero zero\" the amber readout in the meter screen counts to \"1.00\". On \"In sodium hydroxide\" the probe lifts along a coded arc into the second beaker (no hands, no wash bottle) and the readout counts up to \"13.00\" on \"thirteen point zero zero\"; the acid beaker's label dims to grey \"1.00\" beside it. Heading writes: \"pH 1.00 and 13.00: where from?\" On \"have\" a small lens opens over the second beaker:",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-ph-meter-probe-beaker-v1.png` centre, its beaker labelled (coded) \"hydrochloric acid, 0.10 mol/L\"; a second `m6-beaker-v1.png` at the right labelled \"sodium hydroxide, 0.10 mol/L\". On \"one point zero zero\" the amber readout in the meter screen counts to \"1.00\". On \"In sodium hydroxide\" the probe lifts along a coded arc into the second beaker (no hands, no wash bottle) and the readout counts up to \"13.00\" on \"thirteen point zero zero\"; the acid beaker's label dims to grey \"1.00\" beside it. Heading writes: \"pH 1.00 and 13.00: where from?\" On \"have\" a small lens opens over the second beaker: violet OH⁻ tokens everywhere, and one tag with a question mark beside a teal token outline: \"H₃O⁺?\" Bright at the end: the heading, the readout and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ph-meaning",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "What pH means: pH is the negative log, base ten, of the hydronium concentration.",
+      "narrationCue": "equals the acid's / log / one / one pH step",
+      "motionPurpose": "On the spoken cues: The definition writes alone at the top: \"pH = −log₁₀[H₃O⁺]\" with \"[ ] = concentration, mol/L\" small under it (dims after its sentence). On \"equals the acid's\" a small lens shows HCl molecules each handing a teal token to water (C01 hop), tag \"complete: [H₃O⁺] = c\". On \"log\" the lens and its tag dim and a small line writes under the definition: \"log 10⁻¹ = −1\" (the power is circled); on \"one\" the \"−\" in the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The definition writes alone at the top: \"pH = −log₁₀[H₃O⁺]\" with \"[ ] = concentration, mol/L\" small under it (dims after its sentence). On \"equals the acid's\" a small lens shows HCl molecules each handing a teal token to water (C01 hop), tag \"complete: [H₃O⁺] = c\". On \"log\" the lens and its tag dim and a small line writes under the definition: \"log 10⁻¹ = −1\" (the power is circled); on \"one\" the \"−\" in the definition pulses, the line flips to \"−log 10⁻¹ = +1\", and the working line writes: \"[H₃O⁺] = 0.10 mol/L = 10⁻¹ mol/L → pH = 1.00\". On \"one pH step\" the small log line dims and the log ruler draws across the lower third: concentrations 10⁰, 10⁻¹, 10⁻², ... 10⁻¹⁴ on top, pH 0 to 14 underneath, each power of ten snapping down to its pH mark; 10⁻¹ and pH 1 light teal. Bright at the end: the definition, the working line and the ruler. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-strong-acid",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 1: a strong acid, and decimal places: Nitric acid at zero point zero two five moles per litre is strong, with one proton per molecule, so the hydronium is zero point zero two five, and the negative log gives one point six zero.",
+      "narrationCue": "zero point zero two five / one point six zero / power of ten / significant figures",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the pH\". Equation strip: \"HNO₃(aq) + H₂O(l) → H₃O⁺(aq) + NO₃⁻(aq)\". Givens card: \"HNO₃: 0.025 mol/L (strong, 1 H⁺ each)\". On \"zero point zero two five\" the givens line is underlined and the working writes \"[H₃O⁺] = 0.025 mol/L\"; then the strip and the givens card dim. On \"one point six zero\" the next line writes \"pH = −log(0.025) = 1.602 → 1.60\" and the first line dims; the result chip \"pH = 1.60\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the pH\". Equation strip: \"HNO₃(aq) + H₂O(l) → H₃O⁺(aq) + NO₃⁻(aq)\". Givens card: \"HNO₃: 0.025 mol/L (strong, 1 H⁺ each)\". On \"zero point zero two five\" the givens line is underlined and the working writes \"[H₃O⁺] = 0.025 mol/L\"; then the strip and the givens card dim. On \"one point six zero\" the next line writes \"pH = −log(0.025) = 1.602 → 1.60\" and the first line dims; the result chip \"pH = 1.60\" pins. On \"power of ten\" the 1 of \"1.60\" glows and a thin tie line runs to the \"10⁻²\" of \"2.5 × 10⁻²\" written small under the 0.025; the \".60\" glows and ties to the \"2.5\". On \"significant figures\" a pen ring circles \"25\" in 0.025 with a chip \"2 s.f.\", the tie lines fade, and the rule card writes: \"Decimal places in pH = significant figures in [H₃O⁺].\" No crossed chip in this scene. Bright at the end: the task line, the answer chip, the rule card. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ph-backwards",
+      "visualDecision": "new",
+      "visualReference": "the rule card shrinks to a small chip at the top right.",
+      "teachingReason": "Going backwards: You can also run it backwards: the hydronium concentration is ten to the minus pH.",
+      "narrationCue": "four point zero times ten to the minus four / two significant figures",
+      "motionPurpose": "On the spoken cues: The reverse formula writes: \"[H₃O⁺] = 10⁻ᵖᴴ\". On \"three point four zero\" a given chip \"pH = 3.40\" writes; the line \"[H₃O⁺] = 10⁻³·⁴⁰ = 3.98 × 10⁻⁴\" writes in grey and, on \"four point zero times ten to the minus four\", rounds to \"4.0 × 10⁻⁴ mol/L\" in white. On \"two significant figures\" a pen ring circles \".40\" and a second ring circles \"4.0\", joined by a tie line (the rule card chip pulses, then dims). No ruler in",
+      "motionRole": "explain",
+      "onScreenChange": "the rule card shrinks to a small chip at the top right. The reverse formula writes: \"[H₃O⁺] = 10⁻ᵖᴴ\". On \"three point four zero\" a given chip \"pH = 3.40\" writes; the line \"[H₃O⁺] = 10⁻³·⁴⁰ = 3.98 × 10⁻⁴\" writes in grey and, on \"four point zero times ten to the minus four\", rounds to \"4.0 × 10⁻⁴ mol/L\" in white. On \"two significant figures\" a pen ring circles \".40\" and a second ring circles \"4.0\", joined by a tie line (the rule card chip pulses, then dims). No ruler in this scene (Revision 2: it added an item without a cue). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "kw",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Kw: the constant on water's own equilibrium: Now the base.",
+      "narrationCue": "K w equals hydronium times hydroxide / one point zero times ten to the minus fourteen / every / ten to the minus fourteen",
+      "motionPurpose": "On the spoken cues: `m6-beaker-v1.png` small at the left, labelled \"pure water, 25 °C\". The C06 strip returns: \"H₂O(l) + H₂O(l) ⇌ H₃O⁺(aq) + OH⁻(aq)\". On \"K w equals\" the C5-style builder writes \"Kw = [H₃O⁺][OH⁻]\" with the two H₂O greying into a small \"left out\" tray; on \"one point zero times ten to the minus fourteen\" the chip \"= 1.0 × 10⁻¹⁴ at 25 °C\" pins, the left-out tray fades and the strip dims. On \"ten to the minus seven\" two",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-beaker-v1.png` small at the left, labelled \"pure water, 25 °C\". The C06 strip returns: \"H₂O(l) + H₂O(l) ⇌ H₃O⁺(aq) + OH⁻(aq)\". On \"K w equals\" the C5-style builder writes \"Kw = [H₃O⁺][OH⁻]\" with the two H₂O greying into a small \"left out\" tray; on \"one point zero times ten to the minus fourteen\" the chip \"= 1.0 × 10⁻¹⁴ at 25 °C\" pins, the left-out tray fades and the strip dims. On \"ten to the minus seven\" two equal bars rise beside the strip, teal \"[H₃O⁺] = 1.0 × 10⁻⁷\" and violet \"[OH⁻] = 1.0 × 10⁻⁷\", tag \"neutral: equal; pH 7.00\". On \"every\" the neutral tag fades, the Kw line shrinks to its chip, the strip brightens again, the beaker label changes to \"sodium hydroxide solution\" and the violet bar shoots up while the strip's ⇌ pulses with the reverse arrow brightening (an H₃O⁺ token meets an OH⁻ token and becomes water); on \"ten to the minus fourteen\" the teal bar sinks to a sliver and the product chip under the two bars ticks back to \"[H₃O⁺] × [OH⁻] = 1.0 × 10⁻¹⁴\". Bright at the end: the Kw chip, the product chip and the bars (at most three items at any moment from \"every\" on). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "token flight",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "kw-temperature",
+      "visualDecision": "new",
+      "visualReference": "the strip gains \"heat +\" on its left side on \"absorbs heat\" (Module 5 style), and a right-pointing arrow pulses over ⇌ with a tag \"warmer: shifts right, Kw bigger\".",
+      "teachingReason": "Kw and temperature: neutral is not always pH 7: That value is only for twenty five degrees.",
+      "narrationCue": "absorbs heat / six point eight one / six point five one / neutral",
+      "motionPurpose": "On the spoken cues: The temperature ladder writes as four rows (data only, no thermometer art): \"10 °C | Kw 2.9 × 10⁻¹⁵ | neutral pH 7.27\", \"25 °C | 1.0 × 10⁻¹⁴ | 7.00\", \"37 °C | 2.4 × 10⁻¹⁴ | 6.81\", \"60 °C | 9.6 × 10⁻¹⁴ | 6.51\"; the 25 °C row writes first, the others fade in, and only the spoken row is bright (37 °C on \"six point eight one\", 60 °C on \"six point five one\"). On \"neutral\" the other ladder rows and the strip dim, and the",
+      "motionRole": "explain",
+      "onScreenChange": "the strip gains \"heat +\" on its left side on \"absorbs heat\" (Module 5 style), and a right-pointing arrow pulses over ⇌ with a tag \"warmer: shifts right, Kw bigger\". The temperature ladder writes as four rows (data only, no thermometer art): \"10 °C | Kw 2.9 × 10⁻¹⁵ | neutral pH 7.27\", \"25 °C | 1.0 × 10⁻¹⁴ | 7.00\", \"37 °C | 2.4 × 10⁻¹⁴ | 6.81\", \"60 °C | 9.6 × 10⁻¹⁴ | 6.51\"; the 25 °C row writes first, the others fade in, and only the spoken row is bright (37 °C on \"six point eight one\", 60 °C on \"six point five one\"). On \"neutral\" the other ladder rows and the strip dim, and the 60 °C row gets two equal bars, teal and violet, both labelled \"3.1 × 10⁻⁷\" with an \"=\" between them (no separate tag); a chip \"pH below 7, so acidic\" fades in beside the row and is crossed (caption \"neutral means equal, not pH 7\"). The heat tag dims. Bright at the end: the 60 °C row, the bars and the crossed chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "base-poh",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the meter plate returns small at the right with its readout \"13.00\".",
+      "teachingReason": "The base's pH, and pOH: Back to sodium hydroxide.",
+      "narrationCue": "thirteen / pH plus pOH equals fourteen / subtract from fourteen",
+      "motionPurpose": "On the spoken cues: Lines write one per cue: \"[OH⁻] = 0.10 mol/L\" (givens underline on the hook's label), then \"[H₃O⁺] = 1.0 × 10⁻¹⁴ ÷ 0.10 = 1.0 × 10⁻¹³ mol/L\" on \"thirteen\", then \"pH = 13.00\" with the readout pulsing (the hook's question answered; the \"H₃O⁺?\" tag from scene 1 returns and gets a tick). The three lines dim and the readout dims. On \"use pOH\" a small definition \"pOH = −log₁₀[OH⁻]\" writes. On \"pH plus pOH\" the derivation",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the meter plate returns small at the right with its readout \"13.00\". Lines write one per cue: \"[OH⁻] = 0.10 mol/L\" (givens underline on the hook's label), then \"[H₃O⁺] = 1.0 × 10⁻¹⁴ ÷ 0.10 = 1.0 × 10⁻¹³ mol/L\" on \"thirteen\", then \"pH = 13.00\" with the readout pulsing (the hook's question answered; the \"H₃O⁺?\" tag from scene 1 returns and gets a tick). The three lines dim and the readout dims. On \"use pOH\" a small definition \"pOH = −log₁₀[OH⁻]\" writes. On \"pH plus pOH\" the derivation writes in two short lines: \"Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴\", then \"−log of both sides: pH + pOH = 14.00 (25 °C)\", the second line large. On \"subtract from fourteen\" a three-step chip writes small at the right: \"[OH⁻] → pOH → pH = 14.00 − pOH\". The derivation's first line dims. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we2-strong-base",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 2: a base that releases two hydroxide ions: Calcium hydroxide at zero point zero zero four zero moles per litre.",
+      "narrationCue": "two / two point one zero / eleven point nine zero / assume both do",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the pH\". Equation strip: \"Ca(OH)₂(aq) → Ca²⁺(aq) + 2OH⁻(aq)\". Givens card: \"Ca(OH)₂: 0.0040 mol/L (strong)\" | grey \"25 °C\". On \"two\" the subscript 2 in Ca(OH)₂ on the strip gets a pen ring and two violet tokens drop from it; the line \"[OH⁻] = 2 × 0.0040 = 0.0080 mol/L\" writes; the strip and the givens card then dim. On \"two point one zero\" the line \"pOH = −log(0.0080) = 2.097 → 2.10\" writes (the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the pH\". Equation strip: \"Ca(OH)₂(aq) → Ca²⁺(aq) + 2OH⁻(aq)\". Givens card: \"Ca(OH)₂: 0.0040 mol/L (strong)\" | grey \"25 °C\". On \"two\" the subscript 2 in Ca(OH)₂ on the strip gets a pen ring and two violet tokens drop from it; the line \"[OH⁻] = 2 × 0.0040 = 0.0080 mol/L\" writes; the strip and the givens card then dim. On \"two point one zero\" the line \"pOH = −log(0.0080) = 2.097 → 2.10\" writes (the [OH⁻] line dims), with a small \"2 s.f. → 2 d.p.\" tag that dims after its sentence. On \"eleven point nine zero\" the line \"pH = 14.00 − 2.10 = 11.90\" writes and the answer chip \"pH = 11.90\" pins; the pOH line dims. On \"classic slip\" a chip \"pH = 2.10\" fades in and is crossed (caption \"that's the pOH; a base has pH above 7\"). On \"Sulfuric acid\" the working, the crossed chip and the task line dim (the answer chip stays) and a grey-bordered conditional chip writes at the right: \"H₂SO₄: first H⁺ complete, second only partly.\" On \"assume both do\" its second line writes: \"Only if the question says assume both H⁺ are released completely: [H⁺] = 2 × c.\" The chip never shows \"H₂SO₄ → 2H⁺\" as an equation. Bright at the end: the answer chip and the conditional chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "dilution",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Dilution: Adding water doesn't add or remove hydrogen ions, so the moles stay the same and only the volume grows.",
+      "narrationCue": "moles stay the same / zero point zero one zero zero / two point zero zero zero / toward seven",
+      "motionPurpose": "On the spoken cues: `m6-volumetric-pipette-filler-v1.png` at the left, coded label \"25.0 mL of 0.200 mol/L HCl\"; it tilts along a coded arc into `m6-volumetric-flask-v1.png` (coded label \"500.0 mL\"), and a coded water fill rises to the calibration ring. On \"moles stay the same\" a lens shows eight teal tokens in a small outline; the outline widens to twenty times its area as the flask fills, the same eight tokens spreading out; tag",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-volumetric-pipette-filler-v1.png` at the left, coded label \"25.0 mL of 0.200 mol/L HCl\"; it tilts along a coded arc into `m6-volumetric-flask-v1.png` (coded label \"500.0 mL\"), and a coded water fill rises to the calibration ring. On \"moles stay the same\" a lens shows eight teal tokens in a small outline; the outline widens to twenty times its area as the flask fills, the same eight tokens spreading out; tag \"same moles, bigger volume\". Task line: \"Find the pH after dilution\"; as it writes, the plates shrink to grey thumbnails and the lens tag fades. Lines write one per cue: \"n(H₃O⁺) = 0.200 × 0.0250 = 0.00500 mol\"; \"c = 0.00500 mol ÷ 0.5000 L = 0.0100 mol/L\" on \"zero point zero one zero zero\" (the n line dims); \"pH = −log(0.0100) = 2.000\" on \"two point zero zero zero\" (no separate tag; the narration gives the reason). After \"three significant figures\" the c line dims and the log ruler returns small: a marker slides from pH 0.699 (grey label \"before\") to 2.000, bracket \"× 20 dilution: +1.301 (= log 20)\" (screen only). On \"toward seven\" the marker keeps sliding right in shrinking jumps (3, 4, 5, 6, 6.9...) and stops against a teal wall at 7; a chip \"dilute enough and it passes 7\" fades in and is crossed (caption \"water's own H₃O⁺\"). Bright at the end: the pH line, the ruler and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "mixing-method",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Mixing: neutralise first, then dilute: Mixing an acid with a base is different, because they react.",
+      "narrationCue": "react / total volume",
+      "motionPurpose": "On the spoken cues: Two `m6-beaker-v1.png` plates at the left, coded labels \"acid\" and \"base\"; on \"react\" both tilt along coded arcs into a third, larger beaker outline. A lens over it: teal and violet tokens pair up and snap into pale blue water (C03 motion) until the teal tokens are gone, leaving three violet tokens; tag \"left over sets the pH\". The method writes as three short lines, each on its words, the previous dimming: \"1 n(H⁺)",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two `m6-beaker-v1.png` plates at the left, coded labels \"acid\" and \"base\"; on \"react\" both tilt along coded arcs into a third, larger beaker outline. A lens over it: teal and violet tokens pair up and snap into pale blue water (C03 motion) until the teal tokens are gone, leaving three violet tokens; tag \"left over sets the pH\". The method writes as three short lines, each on its words, the previous dimming: \"1 n(H⁺) and n(OH⁻)\", \"2 subtract: the excess\", \"3 c = excess ÷ total volume\". On \"total volume\" the lens outline widens to include both beakers' volumes, the leftover violet tokens spreading out. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we3-excess",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 3: moles and the excess: Forty millilitres of zero point one five zero moles per litre hydrochloric acid is mixed with sixty millilitres of zero point zero eight zero zero moles per litre barium hydroxide.",
+      "narrationCue": "zero point zero zero six zero zero / zero point zero zero nine six zero / excess",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the pH of the mixture\". Equation strip: \"H⁺(aq) + OH⁻(aq) → H₂O(l)\". Givens card, grouped: \"HCl: 40.0 mL, 0.150 mol/L\" | \"Ba(OH)₂: 60.0 mL, 0.0800 mol/L (2 OH⁻ each)\" | grey \"25 °C\". Step chip: \"Step 1 of 2: the excess\". On \"zero point zero zero six zero zero\" the HCl group lights and \"n(H⁺) = 0.150 × 0.0400 = 0.00600 mol\" writes; on \"zero point zero zero nine six zero\" the HCl group dims, the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the pH of the mixture\". Equation strip: \"H⁺(aq) + OH⁻(aq) → H₂O(l)\". Givens card, grouped: \"HCl: 40.0 mL, 0.150 mol/L\" | \"Ba(OH)₂: 60.0 mL, 0.0800 mol/L (2 OH⁻ each)\" | grey \"25 °C\". Step chip: \"Step 1 of 2: the excess\". On \"zero point zero zero six zero zero\" the HCl group lights and \"n(H⁺) = 0.150 × 0.0400 = 0.00600 mol\" writes; on \"zero point zero zero nine six zero\" the HCl group dims, the Ba(OH)₂ group lights, its \"2\" gets a pen ring, and \"n(OH⁻) = 2 × 0.0800 × 0.0600 = 0.00960 mol\" writes. On \"excess\" the givens card and the strip dim, and the two n lines fold into the C03 two-bar comparison labelled with their values (teal \"H⁺ 0.00600 mol\", violet \"OH⁻ 0.00960 mol\"); the teal bar empties as the same length of violet empties, leaving a violet stub; chip pins \"excess OH⁻ = 0.00360 mol\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we3-ph",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 2 of 2: the pH\".",
+      "teachingReason": "Worked example 3: total volume and pH: That leftover hydroxide spreads through all one hundred millilitres, so it's zero point zero three six zero moles per litre.",
+      "narrationCue": "all one hundred millilitres / twelve point five five six / forty millilitres",
+      "motionPurpose": "On the spoken cues: The bars shrink to a thumbnail beside the kept chip \"excess OH⁻ = 0.00360 mol\". On \"all one hundred millilitres\" both volumes in the givens card are underlined and \"V(total) = 40.0 + 60.0 = 100.0 mL = 0.1000 L\" writes, the violet stub spreading into a wide outline. Lines write one per cue, each earlier one dimming: \"[OH⁻] = 0.00360 ÷ 0.1000 = 0.0360 mol/L\"; \"pOH = −log(0.0360) = 1.444\"; \"pH = 14.00 − 1.444 = 12.556\"",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 2 of 2: the pH\". The bars shrink to a thumbnail beside the kept chip \"excess OH⁻ = 0.00360 mol\". On \"all one hundred millilitres\" both volumes in the givens card are underlined and \"V(total) = 40.0 + 60.0 = 100.0 mL = 0.1000 L\" writes, the violet stub spreading into a wide outline. Lines write one per cue, each earlier one dimming: \"[OH⁻] = 0.00360 ÷ 0.1000 = 0.0360 mol/L\"; \"pOH = −log(0.0360) = 1.444\"; \"pH = 14.00 − 1.444 = 12.556\" with the answer chip \"pH = 12.556\" pinning and a small tag \"3 s.f. → 3 d.p.\" On \"forty millilitres\" a chip \"÷ 0.0400 L: pH 12.954\" fades in and is crossed (caption \"use the total volume\"). Bright at the end: the task line, the answer chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: Remember: one pH unit is ten times.",
+      "narrationCue": "one pH unit is ten times. / pH equals fourteen minus pOH / neutralise first, then dilute",
+      "motionPurpose": "On the spoken cues: The first aid writes large and handwritten: \"One pH unit is ten times.\" with the log ruler thumbnail under it. On \"pH equals fourteen minus pOH\" the second line writes: \"Base: [OH⁻] → pOH → pH = 14 − pOH (25 °C)\". On \"neutralise first\" the third line writes: \"Mixtures: neutralise first, then dilute.\" with the two-bar thumbnail. Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The first aid writes large and handwritten: \"One pH unit is ten times.\" with the log ruler thumbnail under it. On \"pH equals fourteen minus pOH\" the second line writes: \"Base: [OH⁻] → pOH → pH = 14 − pOH (25 °C)\". On \"neutralise first\" the third line writes: \"Mixtures: neutralise first, then dilute.\" with the two-bar thumbnail. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Twenty five millilitres of zero point",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"25.0 mL of 0.120 mol/L nitric acid is mixed with 35.0 mL of 0.0500 mol/L potassium hydroxide solution at 25 °C. Calculate the pH of the resulting mixture.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no method lines, no bars, no aid.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "zero point zero zero three zero zero / zero point zero zero one two five / sixty millilitres / one point six eight one",
+      "motionPurpose": "On the spoken cues: On \"zero point zero zero three zero zero\" \"25.0 mL of 0.120 mol/L nitric acid\" is underlined and \"n(H⁺) = 0.120 × 0.0250 = 0.00300 mol\" writes; \"35.0 mL of 0.0500 mol/L potassium hydroxide\" is underlined and \"n(OH⁻) = 0.0500 × 0.0350 = 0.00175 mol\" writes. On \"zero point zero zero one two five\" the two-bar comparison shows violet emptying first; chip \"excess H⁺ = 0.00125 mol\". On \"sixty millilitres\" both volumes are",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"zero point zero zero three zero zero\" \"25.0 mL of 0.120 mol/L nitric acid\" is underlined and \"n(H⁺) = 0.120 × 0.0250 = 0.00300 mol\" writes; \"35.0 mL of 0.0500 mol/L potassium hydroxide\" is underlined and \"n(OH⁻) = 0.0500 × 0.0350 = 0.00175 mol\" writes. On \"zero point zero zero one two five\" the two-bar comparison shows violet emptying first; chip \"excess H⁺ = 0.00125 mol\". On \"sixty millilitres\" both volumes are underlined again: \"V(total) = 0.0600 L\". Lines: \"[H₃O⁺] = 0.00125 ÷ 0.0600 = 0.02083 mol/L\"; \"pH = −log(0.02083) = 1.681\" with the answer chip \"pH = 1.681 (3 s.f. → 3 d.p.)\". Earlier lines dim as each writes. On \"only the acid's volume\" a chip \"÷ 0.0250 L: pH 1.301\" fades in and is crossed (caption \"use the total volume\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"A potassium hydroxide solution has a pH of 12.30 at 25 °C.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A potassium hydroxide solution has a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"A potassium hydroxide solution has a pH of 12.30 at 25 °C. Calculate the hydroxide ion concentration in this solution.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no formula chips, no ruler.",
+      "motionTools": [
+        "chip pop",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "one point seven zero / zero point zero two zero moles per litre / hydronium",
+      "motionPurpose": "On the spoken cues: On \"one point seven zero\" \"pH of 12.30 at 25 °C\" is underlined and \"pOH = 14.00 − 12.30 = 1.70\" writes. On \"zero point zero two zero\" \"[OH⁻] = 10⁻¹·⁷⁰ = 0.020 mol/L\" writes and the answer chip \"[OH⁻] = 0.020 mol/L (2 s.f.)\" pins; the pOH line dims. On \"hydronium\" a chip \"[OH⁻] = 10⁻¹²·³⁰ = 5.0 × 10⁻¹³ mol/L\" fades in and is crossed (caption \"10⁻ᵖᴴ gives H₃O⁺\").",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"one point seven zero\" \"pH of 12.30 at 25 °C\" is underlined and \"pOH = 14.00 − 12.30 = 1.70\" writes. On \"zero point zero two zero\" \"[OH⁻] = 10⁻¹·⁷⁰ = 0.020 mol/L\" writes and the answer chip \"[OH⁻] = 0.020 mol/L (2 s.f.)\" pins; the pOH line dims. On \"hydronium\" a chip \"[OH⁻] = 10⁻¹²·³⁰ = 5.0 × 10⁻¹³ mol/L\" fades in and is crossed (caption \"10⁻ᵖᴴ gives H₃O⁺\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Strong?",
+      "teachingReason": "Decision rule and handoff: So for any strong acid or base: work in moles when solutions are diluted or mixed, divide by the final volume, then take the negative log, through pOH for a base.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Then [H₃O⁺] = c (HCl, HNO₃), or count OH⁻ per formula unit.\" \"2 Diluted or mixed? Work in moles; neutralise first; ÷ total volume.\" \"3 pH = −log[H₃O⁺]; for a base pOH first, pH = 14.00 − pOH (25 °C).\" On \"check it's strong first\" a small gate icon writes before line 1: \"strong or weak?\", with the weak branch greyed and tagged \"weak: [H₃O⁺] ≠ c, later video\". On \"Next\" a chip \"Next: strong acid and base pH practice,",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Strong? Then [H₃O⁺] = c (HCl, HNO₃), or count OH⁻ per formula unit.\" \"2 Diluted or mixed? Work in moles; neutralise first; ÷ total volume.\" \"3 pH = −log[H₃O⁺]; for a base pOH first, pH = 14.00 − pOH (25 °C).\" On \"check it's strong first\" a small gate icon writes before line 1: \"strong or weak?\", with the weak branch greyed and tagged \"weak: [H₃O⁺] ≠ c, later video\". On \"Next\" a chip \"Next: strong acid and base pH practice, then weak acids and ICE tables\" appears with the meter plate small. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c07-learning-review.md",
+      "sha256": "bed194d98e4bd80661d6bb6db30fff7fae3d761314fb1bab9b74b978a34fc7d5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c07-claude-science-check.md",
+      "sha256": "645e40f5c10a0b0a48fb751bec12336fdb52fb7f109a5681b34fba134c8cba5b"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

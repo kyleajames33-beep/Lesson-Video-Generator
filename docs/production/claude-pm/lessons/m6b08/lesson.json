@@ -1,0 +1,136 @@
+{
+  "title": "Gene Pools: Mutation, Gene Flow and Genetic Drift",
+  "subtitle": "One species, two very different gene pools: what changes the alleles of a population, and which change matters most?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 8,
+  "lessonIntent": "calculating an allele frequency as copies over total copies; explaining genetic drift as random sampling of alleles each generation, and why it changes frequencies more in small populations, including losing or fixing alleles regardless of their effect; describing a bottleneck and the founder effect as drift from a small random sample; explaining that mutation adds a new allele as a single copy (1 in 2N), so it changes a gene pool slowly and new alleles are often lost by drift in small populations; explaining gene flow as alleles moving with breeding migrants, which adds alleles a population lacked, changes frequencies quickly and makes populations more alike, without creating alleles; contrasting drift (random) with selection (non-random); evaluating which process matters most from population size, isolation and timescale, using the Florida panther case; applying this to an unseen allele-frequency calculation after a cyclone and an unseen conservation plan.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "By the early 1990s, only about twenty to thirty Florida panthers were left, cut off in the swamps of southern Florida. Many had kinked tails and poor-quality sperm, and some had heart defects. In Texas, pumas of the same species were doing fine. So in 1995, biologists released eight female Texas pumas into Florida. Within about a decade, the panther population had roughly tripled. What had gone wrong with the Florida panthers' alleles, and how did eight newcomers help fix it?"
+      }
+    },
+    {
+      "id": "gene-pools",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with their gene pools. A gene pool is every allele in a population, and an allele's frequency is its share of all the copies of that gene. Each panther carries two copies, so twenty-five panthers hold fifty copies. If ten of those copies are one allele, its frequency is ten out of fifty, or zero point two. The Florida pool was small and cut off, because the pumas that once lived between Florida and Texas had been wiped out. And it had lost alleles that the Texas pool still had. So what changes a gene pool?"
+      }
+    },
+    {
+      "id": "drift",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The first answer is chance. Each generation, only some animals happen to breed, and each parent passes on one allele of each pair by chance. So the next generation's alleles are a random sample of this one's. That's genetic drift, a change in allele frequency by chance. It's like tossing a coin for each copy passed on. Toss it ten times, and seven heads isn't unusual. Toss it a thousand times, and you'll land close to half. And each generation's frequency becomes the starting point for the next, so the changes add up. So in a small population, drift can make an allele common, or lose it completely, whether it helps or not."
+      }
+    },
+    {
+      "id": "bottleneck-founder",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Drift is strongest when numbers crash. Hunting and habitat loss squeezed the panthers down to a few dozen, a bottleneck. The survivors carried only a sample of the old gene pool, and with so few animals, relatives often bred together. That inbreeding made harmful inherited traits more likely to show, like kinked tails. Drift works the same way when a few individuals leave to start a new population, called the founder effect. Either way, few individuals means the gene pool is a random sample."
+      }
+    },
+    {
+      "id": "mutation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Could mutation repair the damage? A mutation adds a brand-new allele, but only as a single copy. In twenty-five panthers, that's one copy in fifty. In a population of a million, it's one in two million. Mutations at any one gene are rare, so rebuilding lost variation this way would take a very long time. And in a small population, drift loses most new alleles before they spread. Mutation is the source of new alleles, but on its own it changes a gene pool slowly."
+      }
+    },
+    {
+      "id": "gene-flow",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "What helped was gene flow, alleles moving between populations when individuals move and breed. The Texas females carried alleles the Florida pool had lost. After they bred with Florida panthers, their kittens had more genetic variation, and kinked tails became less common. The kittens survived better, and the population grew. Gene flow didn't make any new alleles. It moved existing ones, and it made the two gene pools more alike. Animals that leave a population take their alleles out, too."
+      }
+    },
+    {
+      "id": "which-matters",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So which process matters most? It depends on the population. In a small, isolated population, drift usually has the biggest short-term effect. Where populations swap many migrants, gene flow can change frequencies fast, and keep the pools similar. And only mutation makes genuinely new alleles, so it matters most over long times. Selection is different again. It changes frequencies for a reason, because some alleles help survival or breeding, while drift has no direction."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two aids. Drift is luck, and luck matters more in small groups. And gene flow tends to make populations more alike. Drift can pull them apart, and so can selection, when their environments favour different alleles."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two exam questions now. First. An island population of five hundred skinks has allele b at a frequency of zero point one. A cyclone kills all but ten skinks, and survival has nothing to do with this gene. The ten survivors carry four copies of b. Calculate the frequency of b after the cyclone. Then identify the process that changed it, and justify your answer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ten skinks carry twenty copies, so the frequency is four out of twenty, zero point two, double what it was. Survival had nothing to do with this gene, and only ten survived. So this is a bottleneck, a form of genetic drift, because the survivors were a small, random sample. Saying b increased because it helped skinks survive is the classic mistake."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. A small, isolated population of thirty possums has lost much of its genetic variation. A conservation team plans to bring in ten possums from a large population of the same species. Evaluate this plan, compared with leaving the population isolated and relying on mutation to restore its variation. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Bringing in possums is gene flow. It adds many existing alleles at once, so variation rises within a generation. Mutation adds new alleles one copy at a time, very slowly, and in only thirty possums, drift would lose most of them. So the plan is far better at restoring variation, although the added alleles still face drift. Thinking gene flow creates new alleles is the classic mistake."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question shows a gene pool changing, ask what happened to the alleles. Did a brand-new allele appear? That's mutation. Did alleles arrive or leave with moving individuals? That's gene flow. Did frequencies change by chance, especially in a small group? That's drift. Did they change because carriers survive or breed better? That's selection. Then judge which matters most from the population's size and isolation. Next, what counts as biotechnology."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

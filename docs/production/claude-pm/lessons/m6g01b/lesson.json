@@ -1,0 +1,184 @@
+{
+  "title": "Mutation Effects: HSC-Style Practice Questions",
+  "subtitle": "When a question hands you a mutated sequence, chromosome or case you've never seen, how do you work out what changed, what it does, and who can inherit it?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 6,
+  "lessonIntent": "writing mRNA from a template strand and classifying three substitutions as silent, nonsense and missense with their effects; aligning a mutant sequence base by base to find a deletion and an insertion, and explaining why the frame is restored after the second change; naming an inversion that includes the centromere and explaining why it is not a translocation; explaining how a 45,X karyotype can arise by nondisjunction of the sex chromosomes; explaining why an 11-base deletion gives a non-functional protein, and why the same deletion in one body cell of a cow cannot be inherited by her calves.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Mutation questions in the HSC give you something to read, a DNA sequence, a chromosome diagram, a karyotype or a case. Every one comes down to three checks. What changed, base by base or gene by gene? What does it do, to the codons, the frame, or the genes? And who can inherit it? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Here's the template strand for the start of a gene, and three mutants, each with one base changed. Write the mRNA for the normal sequence. Then, for each mutant, name the type of point mutation, and describe its effect on the polypeptide. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-mrna",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, which strand is it? It's the template, so the mRNA isn't a copy of it, it's built by pairing with it. A pairs with U, T with A, C with G, and G with C. The strand is written 3' to 5', so the mRNA lines up underneath, 5' to 3'. T A C gives A U G, the start codon. Reading on, the chain is methionine, proline, glutamate, phenylalanine, glycine."
+      }
+    },
+    {
+      "id": "q1-mutants",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now compare each mutant, one triplet at a time. In mutant one, the second codon becomes C C U. That's still proline, so it's silent. In mutant two, the third codon becomes U A A, a stop codon, so it's nonsense, and the chain stops after two amino acids. In mutant three, the fourth codon becomes U C U, serine instead of phenylalanine. That's missense."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is reading the template as if it were the mRNA. That turns T A C into U A C, tyrosine, so there's no start codon at all. A template strand is paired, not copied."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. In 1961, Francis Crick and his colleagues studied a gene in a virus that infects bacteria. Here's part of a normal mRNA, and a mutant that still made a working protein. Identify the two point mutations in the mutant. Then explain why amino acids six and seven are normal, even though two to five have changed. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-align",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Four codons in a row have changed, which one substitution can't do. So line them up base by base. The first four bases match. Then the normal sequence has a C that the mutant doesn't, so there's a deletion in codon two. After that, the mutant's bases are the normal ones, shifted one place left, until just after codon five, where an extra A appears. That's an insertion."
+      }
+    },
+    {
+      "id": "q2-frame",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now read in threes. The deletion shifts the frame, so codons two to five are regrouped, and those amino acids change. The insertion adds one base back. One removed, one added, so from codon six on, the bases fall into their normal groups of three again. That's why six and seven are normal. Results like this helped show that the code is read in threes."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is saying a frameshift changes every amino acid to the end. That's true of one deletion on its own. Here, the insertion puts the frame back, so only the stretch between them changes."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. The diagram shows a normal chromosome, with genes as letters, and a mutated version of it. Name the mutation, and justify your answer. Then, one person with Turner syndrome has forty-five chromosomes, with only one X. Identify this type of mutation, and explain how it could arise during meiosis in one parent. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-diagram",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Compare gene by gene. A is where it should be. Then the normal B, centromere, C, D reads D, C, centromere, B. It's the same genes on the same chromosome, with that stretch reversed, centromere and all. So it's an inversion. Nothing is lost or added, and nothing has come from another chromosome."
+      }
+    },
+    {
+      "id": "q3-karyotype",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now part b. Forty-five chromosomes means a whole chromosome is missing, so this is a chromosomal mutation in number. It can come from nondisjunction. In one parent's meiosis, the sex chromosomes fail to separate, so one gamete gets no sex chromosome at all. If an X-carrying gamete fertilises it, the zygote has forty-four autosomes and one X."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake in part a is calling it a translocation, because the centromere moved. But every gene is still on the same chromosome. A translocation needs a different, non-matching chromosome."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. Belgian Blue cattle have very large muscles. Most carry two copies of an allele of the myostatin gene with eleven bases deleted from its coding sequence. Myostatin is a protein that limits muscle growth. Explain how deleting eleven bases can leave the cattle with no working myostatin. Then, a normal cow develops the same deletion in one muscle cell. Explain whether her calves could inherit large muscles from it. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-frameshift",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the number. Eleven isn't a multiple of three, so the deletion shifts the reading frame. Every codon after it is regrouped, so the amino acids from there on change, and a stop codon soon turns up. The protein is cut short, and it's missing the part that does its job. With no working myostatin, nothing limits muscle growth, so the muscles grow larger."
+      }
+    },
+    {
+      "id": "q4-somatic",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the cow. Her deletion is in one muscle cell, so it's a somatic mutation. It's copied only into that cell's descendants, not into her eggs. So her calves can't inherit it from this mutation. To pass it on, it would have to be in her germ line."
+      }
+    },
+    {
+      "id": "q4-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake in part a is saying eleven amino acids are lost. Eleven bases aren't eleven codons, and they aren't a whole number of codons either, so the frame shifts."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start any mutation question. For a sequence, find the strand, write the mRNA, then compare codon by codon. If several codons in a row differ, align base by base, and count: is the frame shifted, and is it put back? For a chromosome, compare gene by gene. And for any mutation, ask where it is, somatic or germ line. Next, how meiosis and fertilisation vary offspring."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

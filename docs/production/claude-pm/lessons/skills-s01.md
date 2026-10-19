@@ -1,6 +1,12 @@
 # S01: Read the question before you answer it (design)
 
-Status: Revision 2 (19 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (20 Oct): Codex check 84 resolved; ready to voice.
+
+Revision 3 changes (20 Oct; `../checks/codex-check-84.md`, S01 finding 1):
+1. The worked question is replaced. The cobalt chloride stimulus (heated, pink to blue, 3 marks) closely matched NESA Chemistry 2024 Q23. The new question is an original iron thiocyanate stimulus: crystals of iron(III) nitrate are added at constant temperature, the solution turns a deeper red, and the demand is "Explain this colour change in terms of collision theory" (3 marks). The near-match check is recorded in Decisions.
+2. Scenes 2, 5 to 9 and 11 are rebuilt for it: the card, the content words and givens (iron(III) nitrate means more Fe3+; constant temperature means no change in collision energy), the keyword chips ("collisions", "how often", "rates"), the three-point model answer, the weak Le Chatelier answer and its tally, and the mark ticks.
+3. Activation energy, the C4B ridge sketch and the cobalt plates are removed. The iron tube plates from C3 replace them. Entry knowledge now rests on C3's concentration case, not C4B.
+4. Questions-used section, teaching checks, assets, review notes and the Codex brief are updated. Narration is now 6,067 characters, about 9.5 minutes (Revision 2: 5,862, about 9.3 minutes).
 
 Revision 2 changes (19 Oct; reviews `../checks/skills01-learning-review.md` and `../checks/skills01-claude-science-check.md`):
 1. Hook: the line now credits NESA's marking feedback rather than "markers", and says "Often the student knew the science" (S1). The visual uses a red flag mark, not a red tick (M1).
@@ -22,11 +28,23 @@ Working title: "Read the question before you answer it | HSC exam skills". Serie
 - **Why this order (research):** the fault "answer a nearby question instead of the actual one" appears in all 12 of NESA's Chemistry and Biology marking feedback reports from 2020 to 2025 (`research/exam-skills/common-faults.md`, 12/12). So does "leave the stimulus unused, or copy it without interpreting it" (12/12). The pack's first takeaway (README 1) is "teach students to read the whole demand". The hook uses the 12/12 fact. The "using the information" constraint and drill 1 target the stimulus fault.
 - **Marks are discussed (exception to the content-video rule):** content and practice videos never mention marks. In this series, marks are part of the skill (owner brief: "circle the marks"). Two safeguards: (1) every mark tally is labelled "HSCScience marking guide (illustrative)", never NESA's; (2) the narration says "in our marking guide" and promises no marks. NESA's criteria are question-specific (`what-markers-reward.md`, opening paragraph), and scene 10 says so in plain words.
 - **Glossary wording:** the research pack (`glossary.md`) gives only paraphrases and states that no word-for-word copy is included. So this video paraphrases and attributes it as "NESA glossary, paraphrased", and never puts the glossary in quotation marks. Explain is paraphrased as "show a cause and effect: how or why something happens" (pack: "Show a cause, effect or relationship, and how or why it happens"). The pack's note that NESA says key words "must be read in the context of the particular question" is used as a spoken paraphrase in scene 3. Open decision 1 covers a verbatim quote.
-- **The worked question (Chemistry, cobalt chloride, "in terms of collision theory", 3 marks):**
+- **The worked question (Chemistry, iron thiocyanate, "in terms of collision theory", 3 marks; Revision 3):**
+  - **Stimulus:** Fe3+(aq) (pale yellow) + SCN-(aq) (colourless) ⇌ FeSCN2+(aq) (red) in a test tube at 25 °C. A few crystals of iron(III) nitrate are added and dissolve; the temperature stays at 25 °C; the solution becomes a deeper red. Demand: "Explain this colour change in terms of collision theory." (3 marks).
   - **Verb:** explain is the most frequent written-response key word (57 units, 2021 to 2025). Three marks is its most frequent value (20 of 57; `verb-frequency.md`).
   - **Constraint:** "in terms of collision theory" mirrors the 2017 Chemistry syllabus wording for this content (explain equilibrium observations in terms of collision theory, as cited in the C3 design). So it is a realistic constraint.
   - **Why this case:** a correct Le Chatelier answer to it still loses marks. That gives the cleanest possible "nearby question" contrast: right science, wrong terms.
-  - **Content level:** this is C3 content: the cobalt equilibrium, and heating speeding up the heat-absorbing reaction more. Activation energy is named with a plain meaning, as C4B introduced it.
+  - **Why it suits the reading routine:** it has two givens that need reading, and they do different jobs. "Iron(III) nitrate" must be translated into "more Fe3+ ions" (a given the answer uses). "The temperature stays at 25 °C" tells the student that collision energy is unchanged, so the answer is about how often ions meet (a given that tells you what to leave out). That carries scene 5's "ask what it tells you, then decide if your answer needs it".
+  - **Content level:** this is C3 content (C3 hook and scenes 2a to 4: adding Fe3+ raises the joining rate only; the faster rate falls and the slower rate rises until they meet again). Students therefore know the science, and only the reading is new. No activation energy is needed, so C4B is no longer assumed.
+  - **Near-match check (Revision 3, 20 Oct):** the text of the NESA HSC Chemistry papers 2019 to 2025 and the Biology papers 2021 to 2025 (links in `verb-frequency.md`; 2019 and 2020 Chemistry from the same NESA folder) was searched for "thiocyanate", "SCN", "iron", "collision theory", "Le Chatelier", "in terms of", "with reference to", "chromate" and "cobalt". Compared in full:
+    - Chemistry 2024 Q23 (cobalt complexes heated, more blue, relate to Keq, 3 marks): the replaced near match.
+    - Chemistry 2025 Q35 (purple cobalt mixture cooled to pink; collision theory and Le Chatelier with an energy profile, 5 marks): different system and observation from the new question.
+    - Chemistry 2021 Q22 (chromate and dichromate, yellow and orange, justify two ways to shift left, 3 marks): the reason a chromate-plus-acid stimulus was rejected.
+    - Chemistry 2019 Q25(b) (CO removed from a gas equilibrium, using collision theory, 3 marks) and Chemistry 2022 Q23(c) (H2O removed from the ammonia oxidation system, using collision theory, 3 marks): the same constraint and mark value, but gas-phase removals read from a graph or a stem. This is why a silver nitrate removal stimulus was rejected; the new question is an aqueous addition with a colour observation.
+    - Chemistry 2024 Q26(b) (I2 added to an HCN equilibrium; using collision theory, explain the rate from 0 to 6 min with reference to a sketched graph, 3 marks): also an addition with collision theory, but a different system, a rate-against-time demand with a graph, and no colour or temperature given.
+    - Chemistry 2020 Q26(b) (temperature and Keq for nitrogen monoxide formation, collision theory, energy profile, 4 marks); Chemistry 2023 Q26(a) (N2O4 and Le Chatelier, 2 marks); Chemistry 2025 Q29 (argon added to NO2 and N2O4, 4 marks).
+    - Nearby three-mark Chemistry explain units in `verb-frequency.md`: C22 Q24 (chloroalkane boiling points), C22 Q25 (pH of HCl and HCN), C23 Q23 (pH changes on adding NaOH), C23 Q29 (alkanol solubility), C23 Q35(b) (acid strength from data), C24 Q33(b) (13C NMR), C24 Q37 (Keq and ΔG), C25 Q28(b) (polymers), C25 Q30(b) (phosgene conditions). None uses iron thiocyanate.
+    - The only papers that mention SCN- or iron(III) use them in other topics: Chemistry 2020 Q31 (an AgSCN back titration) and Chemistry 2022 Q28 (iron gravimetric analysis). The Biology papers contain no equilibrium or collision theory question.
+    - Result: no recent NESA question uses the iron thiocyanate equilibrium, an added-crystal stimulus or a deeper-red observation. The "using collision theory, 3 marks" demand is a common HSC form and is kept on purpose; the system, observation and stimulus are new.
 - **Constraint phrases taught (scene 6), plain meanings:**
   - "In terms of X": X must carry the explanation.
   - "With reference to X": name X and actually use it.
@@ -44,7 +62,7 @@ Working title: "Read the question before you answer it | HSC exam skills". Serie
   - It ends with an after-writing check: "tick each part of the question".
   - The plan calls it a 30-second routine. The narration says "about thirty seconds" and makes no timing claim beyond that.
 - **Weak against strong (scene 9):**
-  - Weak answer: correct Le Chatelier chemistry, with no collisions, energy or rates. Illustrative 1 of 3 (it links the shift to the blue colour).
+  - Weak answer: correct Le Chatelier chemistry, with no collisions or rates. Illustrative 1 of 3 (it links the shift to more red ion, the deeper red).
   - Strong answer: three linked collision-theory points, 3 of 3.
   - Reason given on screen: "answers a nearby question: Le Chatelier, not collision theory".
 - **Drills (two; one per subject; feedback about 25 to 35 s each, longer than content-video feedback as allowed for this series):**
@@ -53,9 +71,10 @@ Working title: "Read the question before you answer it | HSC exam skills". Serie
     - Crossed habit: "codominance means both alleles show", with no numbers.
   - Drill 2, Chemistry: N2O4 and NO2 in ice water, "with reference to Le Chatelier's principle", predict and explain, 3 marks. It targets "covers only one requested part" (part of the 12/12 nearby-question fault).
     - Crossed habit: "It goes paler." (predict only).
+    - Drill 2 is a temperature change, so it also varies the cause after the worked example's concentration change.
     - Drill 2 deliberately asks for the Le Chatelier answer that the worked example ruled out. Students see the constraint, not the topic, decide the reasoning. Feedback says "this time the constraint asks for Le Chatelier's principle".
-- **Cross-subject viewers:** a Biology student may not know the cobalt chemistry. The annotation layer and the answer structure carry the lesson. Every model point is on screen in full, so the shape of the answer can be followed without the content. The hook card says "Chemistry example; the reading skill is the same in Biology". Drill 1 is Biology and drill 2 is Chemistry.
-- **Entry knowledge:** Chemistry: C1 to C3 (dynamic equilibrium as equal rates; a temperature change speeds up the heat-absorbing reaction more; Le Chatelier's principle) and C4B (activation energy). Biology: B10 (co-dominance, roan cattle, 1 : 2 : 1 from two heterozygotes). Year 11: collision theory. Not assumed: any exam-technique vocabulary.
+- **Cross-subject viewers:** a Biology student may not know the iron thiocyanate chemistry. The annotation layer and the answer structure carry the lesson. Every model point is on screen in full, so the shape of the answer can be followed without the content. The hook card says "Chemistry example; the reading skill is the same in Biology". Drill 1 is Biology and drill 2 is Chemistry.
+- **Entry knowledge:** Chemistry: C1 to C3 (dynamic equilibrium as equal rates; adding a substance speeds up only the reaction that uses it, then the faster rate falls and the slower rate rises until they are equal again; the iron thiocyanate tube; a temperature change speeds up the heat-absorbing reaction more; Le Chatelier's principle). Biology: B10 (co-dominance, roan cattle, 1 : 2 : 1 from two heterozygotes). Year 11: collision theory. Not assumed: any exam-technique vocabulary.
 - **Start and stop:** starts at "an exam question you can answer but might misread". It stops after the four-part reading routine, the three constraint phrases, the limits of "one mark, one idea" and two practised reads. It does not cover verb meanings in depth (s02), compare and contrast (s03), judgement verbs (s04), calculations (s05), graphs (s06), practicals (s07) or extended responses (s08).
 - **Handoff:** s02, "Identify, describe, explain".
 - **Visual system (one system, explainer kit):**
@@ -97,17 +116,17 @@ Visual:
 - Hold about 1 second.
 
 ### 2. question-card
-> Here's an HSC-style question. It gives an equilibrium between a pink cobalt complex and a blue one, and says the forward reaction is endothermic. A tube of the pink solution goes into a **hot water bath**, and it turns **blue**. Then it asks you to explain the colour change, **in terms of collision theory**. Three marks. Before you answer, let's pull it apart.
+> Here's an HSC-style question. It gives an equilibrium: iron three plus ions join thiocyanate ions to make a red ion. A few **crystals** of iron three nitrate dissolve in the tube, the temperature stays the same, and the solution turns a **deeper red**. Then it asks you to explain the colour change, **in terms of collision theory**. Three marks. Before you answer, let's pull it apart.
 
 Visual:
 - The question card writes on. Subject badge "Chemistry". Tag "HSC-style question, written for HSCScience". Small grey tag "Chemistry example; the reading skill is the same in Biology".
 - Card text:
-  - "The equilibrium below is established in a test tube."
-  - "[Co(H2O)6]2+(aq) (pink) + 4Cl-(aq) ⇌ [CoCl4]2-(aq) (blue) + 6H2O(l)    ΔH > 0"
-  - "The tube is placed in a hot water bath and the solution changes from pink to blue."
+  - "The equilibrium below is established in a test tube at 25 °C."
+  - "Fe3+(aq) (pale yellow) + SCN-(aq) (colourless) ⇌ FeSCN2+(aq) (red)"
+  - "A few crystals of iron(III) nitrate, Fe(NO3)3, are added and dissolve. The temperature stays at 25 °C, and the solution becomes a deeper red."
   - "Explain this colour change in terms of collision theory."
   - "(3 marks)" printed at the right.
-- On "hot water bath" `c3-cobalt-tube-pink-v1.png` appears small at the card's right. On "blue" it crossfades to `c3-cobalt-tube-blue-v1.png`.
+- `c3-iron-tube-start-v1.png` (pale red-orange tube in a wire stand) sits small at the card's right. On "crystals" a few coded crystals drop into it. On "deeper red" it crossfades to `c3-iron-tube-deep-v1.png`.
 - On "in terms of collision theory" that line pulses once (no annotation yet).
 - An empty ruled answer box draws below: eight lines, counter "0 / 3".
 - Hold about 1 second.
@@ -133,23 +152,24 @@ Visual:
 - Hold about 1 second.
 
 ### 5. content-words
-> Now the **content words** and the **givens**. Underline what the question is about: the **hot water bath**, so the temperature goes up, and the change from **pink to blue**. Then notice the given that's easy to skip: the forward reaction is **endothermic**. Givens are usually there for a reason. For each one, ask what it tells you, then decide if your answer needs it.
+> Now the **content words** and the **givens**. Underline what the question is about: the **iron three nitrate**, and the change to a **deeper red**. Givens are usually there for a reason. For each one, ask what it tells you, then decide if your answer needs it. Iron three nitrate dissolves to give **iron three plus ions**, so a reactant goes up. And the temperature **stays the same**, so the collisions are no more energetic. Your answer is about how **often** the ions meet.
 
 Visual:
 - On "content words" routine row 3 writes: underline icon, "About what? (content words, givens)".
-- Pen underlines draw on their cue words: "hot water bath" (a small tag "temperature up"), then "pink to blue".
-- On "endothermic" the pen rings "ΔH > 0". A tag writes "ΔH > 0: forward reaction takes in heat".
-- On "what it tells you" a small question chip "what does it tell me?" hangs off the ΔH ring, and its answer chip writes on: "forward takes in heat".
-- A short line connects the ΔH ring to the second answer slot (foreshadow; no text).
+- Pen underlines draw on their cue words: "iron(III) nitrate", then "deeper red".
+- On "what it tells you" a small question chip "what does it tell me?" hangs off the first underline.
+- On "iron three plus ions" its answer chip writes on: "iron(III) nitrate → more Fe3+". A pen ring circles "Fe3+" in the equation.
+- On "stays the same" the pen underlines "The temperature stays at 25 °C"; the question chip moves to it and its answer chip writes on: "same collision energy". The first chip dims to make room, so two bright chips at most are live.
+- On "often" a short line connects the "more Fe3+" chip to the first answer slot (foreshadow; no text).
 - Hold about 1 second.
 
 ### 6. constraint
-> Last, the **constraint**: the phrase that tells you how to answer. Here it's "in terms of collision theory". **In terms of** means that idea must carry your explanation, so you'll talk about collisions, energy and rates. Two other phrases turn up a lot. **With reference to** something means you name it and actually use it. **Using the information** means you take details from the stimulus, like numbers in a table, and say what they show.
+> Last, the **constraint**: the phrase that tells you how to answer. Here it's "in terms of collision theory". **In terms of** means that idea must carry your explanation, so you'll talk about collisions and rates. Two other phrases turn up a lot. **With reference to** something means you name it and actually use it. **Using the information** means you take details from the stimulus, like numbers in a table, and say what they show.
 
 Visual:
 - On "constraint" routine row 4 writes: bracket icon, "Using what? (the constraint)".
 - Teal square brackets draw round "in terms of collision theory".
-- Three keyword chips drop into the answer box margin: "collisions", "energy", "rates".
+- Three keyword chips drop into the answer box margin: "collisions", "how often", "rates".
 - On "With reference to" and "Using the information" a constraint card slides in at the right with three rows, each lighting on its cue:
   - "in terms of X: X carries the explanation"
   - "with reference to X: name X and use it"
@@ -158,40 +178,39 @@ Visual:
 - Hold about 1 second.
 
 ### 7. build-1 (the first point)
-> So let's build the answer, in collision theory. If you take Biology, watch how each line uses the constraint. Heating gives the particles more energy, so **more collisions** have enough energy to react. That speeds up **both** reactions, forward and reverse. That's the first point a marker can tick.
+> So let's build the answer, in collision theory. If you take Biology, watch how each line uses the constraint. Adding iron three nitrate raises the concentration of iron three plus ions, so they collide with thiocyanate ions **more often**. That means more joining each second: the **forward** rate increases. That's the first point a marker can tick.
 
 Visual:
-- Line 1 handwrites into the answer box: "Heating increases particle energy, so more collisions have enough energy to react: both the forward and reverse rates increase."
-- On "more collisions" a small coded collision inset flashes beside the box: two particle pairs, more sparks.
-- On "both" the words "forward and reverse" underline.
-- On "tick" a green tick lands in the margin. The counter goes "1 / 3". The "collisions" and "energy" chips tick.
+- Line 1 handwrites into the answer box: "Adding Fe(NO3)3 increases [Fe3+], so Fe3+ and SCN- ions collide more often: the forward rate increases."
+- On "more often" a small coded collision inset flashes beside the box (C3 particle style: pale yellow Fe3+ dots, grey SCN- dots): before, one meeting; after, three meetings in the same time, each with a joining spark.
+- On "forward" two rate bars appear beside the box (forward blue, reverse amber, C3 style, no values). They start level; the forward bar steps up.
+- On "tick" a green tick lands in the margin. The counter goes "1 / 3". The "collisions" and "how often" chips tick.
 
 ### 8. build-2 (the link, then the result)
-> Now the link that makes it an explanation. The forward reaction takes in heat, so a forward collision must climb a higher ridge than a reverse one: it has the higher **activation energy**. Heating multiplies those higher-energy collisions by a bigger factor, so the forward rate rises **more**. That's point two. Forward is now faster than reverse, so more of the blue complex forms, until the rates are **equal again**. That's why it turns blue. Three linked points, all in collision theory.
+> Now the link that makes it an explanation. The reverse reaction is the red ion splitting, which depends only on how many red ions there are. No extra red ions have formed yet, so the reverse rate **hasn't changed**. Forward is now faster than reverse, so red ions form faster than they split. That's point two. As red ions build up, the reverse rate rises and the forward rate falls, until the rates are **equal again**, with more red ion. That's why it's a deeper red. Three linked points, all in collision theory.
 
 Visual:
-- Line 2: "The forward reaction is endothermic, so it has the higher activation energy; heating increases its rate more than the reverse rate."
-  - On "higher ridge" a small C4B-style energy ridge sketch draws beside the box: one hump, with the reactant level (pink complex) lower than the product level (blue complex). Two up-arrows from each side to the peak are labelled "forward: higher climb" and "reverse".
-  - On "activation energy" a grey gloss writes: "activation energy: the minimum collision energy needed to react".
-  - A pen arrow joins the ΔH ring on the card to line 2.
-  - On "more" two rate bars (forward blue, reverse amber, C3 style, no values) grow, forward taller.
+- Line 2: "The reverse rate depends on [FeSCN2+], which has not changed yet, so the forward rate is now greater than the reverse rate: FeSCN2+ forms faster than it splits."
+  - On "hasn't changed" a pen ring circles the unchanged reverse bar.
+  - A pen arrow joins the "more Fe3+" chip from scene 5 to lines 1 and 2.
   - Tick, counter "2 / 3".
-- Line 3: "Forward rate > reverse rate, so [CoCl4]2- (blue) increases until the rates are equal again: the solution turns blue."
-  - On "equal again" the bars level.
+- Line 3: "As [FeSCN2+] rises, the reverse rate rises and the forward rate falls, until the rates are equal again with more FeSCN2+ (red): a deeper red."
+  - On "equal again" the bars meet, both higher than at the start (C3 pattern).
+  - The small iron tube plate beside the card pulses on its deeper red.
   - Tick, counter "3 / 3". The "rates" chip ticks.
 - On "linked" the link words "so" in all three lines take amber underlines.
 - Hold about 2 seconds.
 
 ### 9. weak-vs-strong
-> Now compare this answer. "The forward reaction is endothermic, so by Le Chatelier's principle the system shifts right to absorb the heat, and more blue complex forms." Is it **wrong**? No, it's good chemistry. But it never mentions collisions, energy or rates. It answers a **nearby question**: explain using Le Chatelier's principle. In our marking guide it earns **one** mark, for linking the shift to the blue colour.
+> Now compare this answer. "Adding iron three plus ions increases a reactant, so by Le Chatelier's principle the equilibrium shifts right to use some of it up, and more of the red ion forms." Is it **wrong**? No, it's good chemistry. But it never mentions collisions or rates. It answers a **nearby question**: explain using Le Chatelier's principle. In our marking guide it earns **one** mark, for linking the shift to the deeper red.
 
 Visual:
 - The strong answer box shrinks to the right, keeping its ticks and "3 / 3".
 - A second ruled box writes on at the left with the weak answer in handwriting. Label "Answer A"; the strong one is "Answer B".
 - On "wrong" a grey tag writes on: "correct chemistry".
-- On "nearby question" the teal brackets on the card pulse, and the three keyword chips appear beside Answer A, each crossed: "collisions", "energy", "rates".
-- On "one" a single tick lands beside "more blue complex forms". Counter "1 / 3".
-- A red lost-marks tag: "-2: not in terms of collision theory (no collisions, energy or rates)".
+- On "nearby question" the teal brackets on the card pulse, and the three keyword chips appear beside Answer A, each crossed: "collisions", "how often", "rates".
+- On "one" a single tick lands beside "more of the red ion forms". Counter "1 / 3".
+- A red lost-marks tag: "-2: not in terms of collision theory (no collisions or rates)".
 - Hold about 2 seconds.
 
 ### 10. one-mark-one-idea
@@ -218,7 +237,7 @@ Visual:
   - "3 About what? underline content words and givens"
   - "4 Using what? bracket the constraint"
 - A small stopwatch doodle reads "about 30 s".
-- On "tick" a fifth row writes: "After: tick each part of the question". The cobalt card re-shows its annotations with a tick on each.
+- On "tick" a fifth row writes: "After: tick each part of the question". The iron thiocyanate card re-shows its annotations with a tick on each.
 - Memory aid writes large and handwritten: "Do what? How much? About what? Using what?"
 - Hold about 2 seconds. The strip then shrinks to the far left.
 
@@ -301,14 +320,16 @@ Memory aid (large, on the notes screen): *Do what? How much? About what? Using w
 
 ## Questions used and model answers
 
-All questions are written for HSCScience; none is copied from or adapted from a specific NESA question. Mark tallies follow the HSCScience illustrative guide.
+All questions are written for HSCScience; none is copied from or adapted from a specific NESA question. Revision 3 replaced the worked question after Codex check 84 found the Revision 2 cobalt stimulus too close to NESA Chemistry 2024 Q23; the comparison list is in Decisions. Mark tallies follow the HSCScience illustrative guide.
 
-**Worked question (Chemistry, explain, 3 marks).** Given: the equilibrium [Co(H2O)6]2+(aq) (pink) + 4Cl-(aq) ⇌ [CoCl4]2-(aq) (blue) + 6H2O(l), ΔH > 0. A tube is placed in a hot water bath and the solution changes from pink to blue. Explain this colour change in terms of collision theory.
+**Worked question (Chemistry, explain, 3 marks).** "The equilibrium below is established in a test tube at 25 °C. Fe3+(aq) (pale yellow) + SCN-(aq) (colourless) ⇌ FeSCN2+(aq) (red). A few crystals of iron(III) nitrate, Fe(NO3)3, are added and dissolve. The temperature stays at 25 °C, and the solution becomes a deeper red. Explain this colour change in terms of collision theory. (3 marks)"
+- Annotated reading (scenes 3 to 6): verb "Explain" (highlighter); "(3 marks)" (badge: about three linked points); content words and givens "iron(III) nitrate" (more Fe3+), "The temperature stays at 25 °C" (same collision energy) and "deeper red" (underlines); constraint "in terms of collision theory" (teal brackets: collisions, how often, rates).
 - Model answer (3 points, each linked):
-  1. Heating increases the energy of the particles, so a greater proportion of collisions have enough energy to react; both the forward and reverse rates increase.
-  2. The forward reaction is endothermic, so it has the higher activation energy; increasing the temperature increases its rate more than the rate of the reverse reaction.
-  3. The forward rate is now greater than the reverse rate, so [CoCl4]2- (blue) increases until the two rates are equal again, and the solution turns blue.
-- Weak answer shown: "The forward reaction is endothermic, so by Le Chatelier's principle the system shifts right to absorb the heat, and more blue complex forms." Illustrative 1 of 3. It loses 2: no collisions, energy or rates; it answers the Le Chatelier question.
+  1. Adding iron(III) nitrate increases [Fe3+], so Fe3+ and SCN- ions collide more often and the forward rate increases.
+  2. The reverse rate depends on [FeSCN2+], which has not changed at that moment, so the forward rate is now greater than the reverse rate: FeSCN2+ forms faster than it splits.
+  3. As [FeSCN2+] increases, the reverse rate rises (and the forward rate falls as Fe3+ and SCN- are used), until the two rates are equal again with a higher [FeSCN2+]: the solution is a deeper red.
+- Mark ticks (illustrative): one per point, in the margin beside lines 1, 2 and 3; counter 1 / 3, 2 / 3, 3 / 3.
+- Weak answer shown: "Adding Fe3+ ions increases a reactant, so by Le Chatelier's principle the equilibrium shifts right to use some of it up, and more of the red ion forms." Illustrative 1 of 3, for linking the shift to more red ion (the deeper red). It loses 2: no collisions or rates; it answers the Le Chatelier question.
 
 **Drill 1 (Biology, explain, using the information, 3 marks).** Roan x roan gave 9 red, 21 roan, 10 white calves. Using the information provided, explain how these results show that roan cattle are heterozygous.
 - Model answer:
@@ -341,26 +362,26 @@ All questions are written for HSCScience; none is copied from or adapted from a 
 ## Teaching checks
 
 - **Does it explain causes?** It explains why reading matters: the commonest fault is a nearby answer (1). It shows why the verb sets the job (3), why marks set length and a stopping point (4), why givens are clues (5), and why a constraint changes which correct science earns marks (6, 9, 15). It shows why "one mark, one idea" fails when points are unlinked, when a specific item is required, or when the answer is judged in levels (10).
-- **Science (to check):** the cobalt ΔH sign and colours match C3. The collision-theory explanation matches C3's cause chain, with activation energy named as in C4B. Roan 1 : 2 : 1 matches B10. The N2O4 ΔH is +57 kJ mol-1 (standard value about +57.2). The cooling direction is the reverse, exothermic reaction, so the mixture becomes paler.
+- **Science (to check):** the iron thiocyanate colours (Fe3+ pale yellow, SCN- colourless, FeSCN2+ red) and the added-solid case match C3. The collision-theory explanation matches C3's concentration cause chain: the added ion raises the joining rate only, the reverse rate is unchanged at that moment, then the rates meet again at higher values. Constant temperature means the fraction of collisions with enough energy is unchanged, so only collision frequency changes. Roan 1 : 2 : 1 matches B10. The N2O4 ΔH is +57 kJ mol-1 (standard value about +57.2). The cooling direction is the reverse, exothermic reaction, so the mixture becomes paler.
 - **Response opportunities:** two, each 10 s, with the full card (stimulus, all demands, mark value) on screen. Annotations are left for students, and nothing answer-bearing appears.
 - **Reading load:** each card has one stimulus, one demand line and one mark value. The routine strip has four short rows. The constraint card has three rows and leaves the screen after scene 6.
 - **Out of scope by design:** verb definitions beyond explain (s02); compare, judgement and calculation verbs (s03 to s05); how much to write in extended responses (s08).
 
 ## Narration length estimate
 
-Count method: build parser rules (scene headings `### N.`, narration lines starting `> `, bold markers stripped), at 13.3 characters per second. Re-counted by script for Revision 2 (19 Oct): **5,862 characters, 17 scenes** (key-notes line included; inside 5,500 to 6,800).
+Count method: build parser rules (scene headings `### N.`, narration lines starting `> `, bold markers stripped), at 13.3 characters per second. Re-counted by script for Revision 3 (20 Oct): **6,067 characters, 17 scenes** (key-notes line included; inside 5,500 to 6,800). Revision 2 was 5,862.
 
 | Scene | Characters |
 | --- | --- |
 | 1 hook | 377 |
-| 2 question-card | 350 |
+| 2 question-card | 374 |
 | 3 verb | 365 |
 | 4 marks | 254 |
-| 5 content-words | 350 |
-| 6 constraint | 425 |
-| 7 build-1 | 292 |
-| 8 build-2 | 480 |
-| 9 weak-vs-strong | 408 |
+| 5 content-words | 449 |
+| 6 constraint | 417 |
+| 7 build-1 | 342 |
+| 8 build-2 | 507 |
+| 9 weak-vs-strong | 421 |
 | 10 one-mark-one-idea | 352 |
 | 11 routine | 320 |
 | 12 drill-1 | 400 |
@@ -371,12 +392,12 @@ Count method: build parser rules (scene headings `### N.`, narration lines start
 | 17 key-notes | 75 |
 
 Runtime:
-- Speech: about 441 s.
+- Speech: about 456 s.
 - Padding: about 34 s (17 scenes at 2 s each).
 - Stated holds: about 15 s.
 - Countdowns: 20 s.
 - The quiet notes hold beyond its speech: about 45 s.
-- Total: **about 9.3 minutes**.
+- Total: **about 9.5 minutes** (570 s), at the ceiling. Use the reserve cuts below if the voiced preview runs longer.
 - Feedback speech: scene 13 about 32 s, scene 15 about 34 s.
 
 Reserve cuts if the voiced preview runs long:
@@ -400,20 +421,21 @@ In order (kebab-case, 17 scene headings): hook, question-card, verb, marks, cont
 
 ## Assets
 
-Have (inspected 19 Oct):
-- `public/assets/chemistry/c3-cobalt-tube-pink-v1.png`: a painted test tube of pink solution standing in a beaker of clear water. It reads directly as "a tube in a water bath".
-- `c3-cobalt-tube-blue-v1.png`: the matching blue tube (aligned pair from C3).
+Have (inspected 20 Oct for Revision 3; others 19 Oct):
+- `public/assets/chemistry/c3-iron-tube-start-v1.png`: a painted test tube in a plain wire stand, two thirds full of a pale red-orange clear solution, on transparent alpha.
+- `c3-iron-tube-deep-v1.png`: the same tube and canvas, the solution a deep blood red (aligned pair from C3). The crossfade reads directly as "a deeper red".
+- The Revision 2 cobalt plates are no longer used in this video.
 - `public/assets/biology/m5x-cattle-roan-v1.png`: a painted roan cow, red and white hairs mixed. It has a faint red and yellow fringe on its alpha edge, visible on black. Acceptable small on the paper board; inspect it at size in preview.
 - `m5x-cattle-red-v1.png` and `m5x-cattle-white-v1.png`: B10's set.
 
-Coded: question cards and the annotation layer, ruled answer boxes, mark counter, rate bars (C3 style), the sealed flask with an NO2 tint and an ice trough outline, the report-tile grid, the routine strip, the constraint card, chips, crosses and countdown. No people.
+Coded: question cards and the annotation layer, ruled answer boxes, mark counter, rate bars (C3 style), the collision inset (C3 particle dots), the dropping crystals, the sealed flask with an NO2 tint and an ice trough outline, the report-tile grid, the routine strip, the constraint card, chips, crosses and countdown. No people.
 
 Need: none.
 
 ## Codex asset brief
 
 No new plates. Requested (not art, error-only):
-1. Confirm that no question in this file reproduces or closely paraphrases a question in the 2019 to 2025 NESA Chemistry or Biology papers. Pay particular attention to cobalt chloride temperature questions and N2O4 cooling questions, which are common topics. Report any near match with its paper reference.
+1. Confirm that no question in this file reproduces or closely paraphrases a question in the 2019 to 2025 NESA Chemistry or Biology papers. Pay particular attention to cobalt chloride temperature questions and N2O4 cooling questions, which are common topics. Report any near match with its paper reference. (Done in Codex check 84: the Revision 2 cobalt worked question matched Chemistry 2024 Q23 and was replaced in Revision 3. The author's own check of the replacement is in Decisions.)
 2. Confirm that the 12/12, 57 and 20-of-57 figures match the research pack.
 3. Confirm that no em dash appears in this file.
 
@@ -439,7 +461,9 @@ No new plates. Requested (not art, error-only):
 
 ## Review notes (author, not learner copy)
 
-- **Pronunciation:** "Le Chatelier" as "luh SHAT-el-yay" (as C3); "dinitrogen tetroxide"; "nitrogen dioxide"; "delta H" is never spoken (screen only); cobalt species are spoken only as "the pink cobalt complex" and "the blue complex".
+- **Pronunciation:** "Le Chatelier" as "luh SHAT-el-yay" (as C3); "iron three plus ions", "thiocyanate ions", "the red ion" and "iron three nitrate" (as C3; screen Fe3+, SCN-, FeSCN2+, Fe(NO3)3); "dinitrogen tetroxide"; "nitrogen dioxide"; "delta H" is never spoken (screen only).
+- **Iron thiocyanate simplifications (Revision 3, author only):** as in C3, the rate picture is a teaching model; the real system is not a single step, and Fe3+(aq) is itself pale yellow and partly hydrolysed. The solid adds its own slight yellow-brown tint at once; the question's observation is the overall deeper red. Adding a solid keeps the volume nearly constant, so dilution is not a factor. None of this changes the expected answer, so it stays out of learner copy.
 - **Illustrative marks:** the mark split in each model answer is HSCScience's, built from the general patterns in `what-markers-reward.md`. A real NESA guideline for a similar question could award differently. The screen label and the spoken "our marking guide" carry this.
+- **Givens (Revision 3):** the worked card now has two givens with different jobs: iron(III) nitrate (used: more Fe3+) and constant temperature (tells you what to leave out: no change in collision energy).
 - **Givens (resolved in Revision 2):** scene 5 now teaches "ask what each given tells you, then decide". The Revision 1 heuristic risked students forcing every given in. Drill 2's "+57 kJ mol-1" is the in-video case: only its sign is needed.
 - **No em dashes** in this file (searched).

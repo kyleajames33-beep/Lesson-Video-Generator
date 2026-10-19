@@ -1,6 +1,12 @@
 # S02: Identify, describe, explain: what each verb really asks for (design)
 
-Status: Revision 2 (19 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (20 Oct): Codex check 84 resolved; ready to voice.
+
+Revision 3 changes (20 Oct; `../checks/codex-check-84.md`, S02 findings 1 to 3):
+1. Scene 10 now keeps the guideline's own verb: in Biology 2024 Q24(b), "outlining the campaign's features" reached two marks, while explaining its effect reached three. The on-screen step bar, Decisions and the research table match.
+2. The false rule "Identify: a name (one per mark)" is replaced everywhere by "name the item or items the question asks for; use the marks to check the scope": the scene 15 decision board and narration, and key note 1's tip. Decisions now records that identify also appears at 4, 7 and 9 marks.
+3. Scene 9's cobalt callback (which repeated the S01 near match) is rebuilt on S01's new iron thiocyanate question: identify "deeper red", describe the colour change, explain it through more frequent collisions. Scene 10's recalled chips, Decisions, entry knowledge, teaching checks and assets match.
+Narration is now 5,783 characters, about 9.1 minutes (Revision 2: 5,618, about 8.9 minutes).
 
 Revision 2 changes (19 Oct; reviews `../checks/skills02-learning-review.md` and `../checks/skills02-claude-science-check.md`):
 1. Blocker B1: the memory aid "Explain says why: because, so" passed all three of the video's own weak answers. It becomes *Describe says what. Explain says how one thing causes the next.* Scene 8 adds "Notice it even says because. A because isn't enough: it has to say how." The decision rule (scene 15), key note 2, Decisions, the YouTube description and the review notes now match.
@@ -20,7 +26,7 @@ Working title: "Identify, describe, explain: what each verb really asks for | HS
 - **Frequency data used (`research/exam-skills/verb-frequency.md`, Section II written responses in the 10 NESA Chemistry and Biology papers, 2021 to 2025):**
   - **Explain:** 57 units (Chemistry 28, Biology 29). It is the most frequent key word, and more than twice the next (calculate, 24).
   - **Explain by mark value:** 2 marks 13, 3 marks 20, 4 marks 16, 5 marks 5, 7 marks 3. So most are 2 to 4 marks (49 of 57), 3 marks is the commonest, and the range is 2 to 7.
-  - **Describe:** 18 (Biology 14). **Outline:** 18 (14 of them at 2 marks). **Identify:** 16 (1 mark 6, 2 marks 7).
+  - **Describe:** 18 (Biology 14). **Outline:** 18 (14 of them at 2 marks). **Identify:** 16 (1 mark 6, 2 marks 7, and once each at 4, 7 and 9 marks, as part of larger tasks). So identify carries no fixed "one name per mark" rule: the question sets how many items are asked for, and NESA's criteria are question-specific (Biology 2024 Q21(a) gave two marks because it asked for two structures). Revision 3 teaches "name the item or items the question asks for; use the marks to check the scope".
   - **Spoken in the hook:** 57; more than twice the next; usually two to four marks. **On screen in scene 10:** the 2 to 7 range. The key notes give 57 and "usually 2 to 4 marks". The counting caveat is a grey tag: "NESA glossary key words only; Section II, 2021 to 2025, counted by question part".
 - **Glossary wording:** the pack (`glossary.md`) paraphrases and holds no verbatim copy. So the screen labels each definition "NESA glossary, paraphrased" and uses no quotation marks:
   - identify: recognise and name;
@@ -29,7 +35,7 @@ Working title: "Identify, describe, explain: what each verb really asks for | HS
   - outline: give the main features in general terms.
   - The pack's note that NESA says to read words in the context of the question is spoken in scene 2.
   - The pack's note that questions may use plain prompts such as "why" is used in scene 6 ("it asks why").
-- **What markers reward (`what-markers-reward.md`, Explain row):** "Name the relevant feature, then show how it causes the stated outcome." In one three-mark question (Biology 2024 Q24(b)), describing the features reached two marks, and linking them to the outcome reached three. Spoken in scene 10 as "in one recent three-mark explain question". The question is not described, so nothing of the NESA question is reproduced. The guideline reference is in the research findings table only.
+- **What markers reward (`what-markers-reward.md`, Explain row):** "Name the relevant feature, then show how it causes the stated outcome." In one three-mark question (Biology 2024 Q24(b)), the guideline awards two marks for outlining features of a relevant program or campaign, and three for explaining how it decreases disease incidence (Revision 3: Codex check 84 confirmed this against the guideline; the pack's Explain row says "describing", which is looser than the criterion). Spoken in scene 10 as "in one recent three-mark explain question, about a disease-prevention campaign, outlining the campaign's features reached two marks, and only explaining its effect reached three". The verb "outlining" is kept because this lesson teaches the difference between command verbs. Only the topic is named, so nothing of the NESA question's wording is reproduced. The guideline reference is in the research findings table only.
 - **Faults (`common-faults.md`):**
   - "State an outcome without the causal link": 12/12 reports. Spoken in the hook as "every year, NESA's marking feedback mentions answers that say what happens, but not why".
   - "Describe when asked to explain" is inside the 12/12 nearby-question row. It is shown in the weak answer (scene 8) and in both crossed habits.
@@ -41,12 +47,12 @@ Working title: "Identify, describe, explain: what each verb really asks for | HS
 - **Allele letters policy (as B9 and B10):** letters appear on screen only (X^R, X^r, Y). The narration says "the red allele" and "the white allele".
 - **The "how" test (memory aid, new, not in the Module 5 bank; Revision 2):** *Describe says what. Explain says how one thing causes the next.* It is taught after scenes 7 and 8 have shown it. The working test in scene 10 is "does each sentence say what causes what?". Revision 1's aid ("Explain says why: because, so") was a surface cue: all three weak answers in this video contain "because" (scene 8, both crossed habits). Scene 8 now says so aloud: "A because isn't enough: it has to say how." Link words are still shown (the amber "so" underlines), but as signs of a link, not proof of one. A causal sentence with wrong science is still wrong (author note).
 - **Weak against strong (scene 8; Revision 2):** the weak answer for part (c) restates part (b) and adds "because the trait is sex-linked and males have only one X". Illustrative 1 of 3, for "males have only one X", a genuine but incomplete point (sex-linked alone restates the stem). It loses 2: it never says where each X comes from, for sons or for daughters. It also contains "because", which is the point of the new scene 8 line. The strong answer is the three-point chain, 3 of 3.
-- **Chemistry ladder (scene 9, added in drafting to balance the subjects):** the s01 cobalt tube is answered at all three verb levels in one scene: identify "blue", describe "turns blue as it is heated", explain "endothermic forward reaction speeds up more, so more blue complex". The content is recalled from s01 and C3, not re-taught. It gives Chemistry viewers a full ladder in their own subject and shows the point of the video in one image: same content, three jobs.
+- **Chemistry ladder (scene 9, added in drafting to balance the subjects; rebuilt in Revision 3):** the s01 iron thiocyanate tube (the original worked question that replaced the cobalt card) is answered at all three verb levels in one scene: identify "deeper red", describe "the pale red solution turns a deeper red as the crystals dissolve", explain "more Fe3+, so Fe3+ and SCN- collide more often, so the forward rate rises above the reverse, so more red FeSCN2+ forms". The content is recalled from s01 and C3, not re-taught. It gives Chemistry viewers a full ladder in their own subject and shows the point of the video in one image: same content, three jobs.
 - **Drills (two; feedback about 25 to 35 s each, as allowed for this series):** both are explain, the verb that needs practice. The narration says "Do the one in your subject, or both".
   - Drill 1, Chemistry, 3 marks: soda water opened. The content is C1's open-bottle framing. Crossed habit: "bubbles form because gas comes out of the drink" (describes the bubbles).
   - Drill 2, Biology, 2 marks (explain's second commonest value): why the two DNA molecules from replication are identical. The content is B4. The condition "assume no copying errors" is on the card. Crossed habit: "because each has one old strand and one new strand" (describes the result, gives no cause of the matching sequence).
 - **Cross-subject viewers:** scene 3 says "If you take Chemistry, you don't need the fly details. Watch what each verb makes the answer do." Every answer line is on screen in full.
-- **Entry knowledge:** s01 (the reading routine and the annotation layer). Biology: B10 (sex chromosomes; a gene on the X has no partner on the Y; sons get their X from their mother), B4 (template strands, complementary base pairing). Chemistry: C1 (soda water; open against closed systems; dissolving and leaving rates), C3 (the cobalt example in scene 9).
+- **Entry knowledge:** s01 (the reading routine and the annotation layer). Biology: B10 (sex chromosomes; a gene on the X has no partner on the Y; sons get their X from their mother), B4 (template strands, complementary base pairing). Chemistry: C1 (soda water; open against closed systems; dissolving and leaving rates), C3 (the iron thiocyanate tube and its added-Fe3+ case, in scene 9).
 - **Start and stop:** starts at "three verbs that look alike". It stops after the meaning of identify, describe and explain (outline in passing), the cause-and-effect link, the "how" test, a weak against strong explain, and two explain drills. It does not cover compare, contrast or distinguish (s03), judgement verbs (s04), calculations (s05) or data descriptions in depth (s06).
 - **Handoff:** s03, "Compare, contrast, distinguish".
 - **Visual system:** s01's shared components (`QuestionCard` with its annotation layer, `AnswerBox`, `MarkCounter`, `RoutineStrip` small at the far left, `LostMarksTag`).
@@ -60,7 +66,7 @@ Working title: "Identify, describe, explain: what each verb really asks for | HS
 
 Main question: *Identify, describe and explain look alike. What does each one ask you to write, and how do you know you've actually explained?*
 Entry knowledge: as above.
-Stops after: answering one stimulus at three verb levels, and the s01 cobalt case at three levels; building a three-point explanation with linked causes; spotting a description posing as an explanation; two explain drills.
+Stops after: answering one stimulus at three verb levels, and the s01 iron thiocyanate case at three levels; building a three-point explanation with linked causes; spotting a description posing as an explanation; two explain drills.
 Handoff: s03, compare and contrast (similarities and differences written as pairs).
 
 ## Script and shots
@@ -169,26 +175,26 @@ Visual:
 - Hold about 2 seconds.
 
 ### 9. chem-ladder (the same three verbs in Chemistry)
-> The same ladder works in Chemistry. Take the cobalt tube from the last video. Identify the colour of the hot solution: **blue**. Describe what happens as it heats: the pink solution turns blue. Explain it: the forward reaction takes in heat, so heating speeds it up **more** than the reverse, and more of the blue complex forms. Same tube, same chemistry. Only the **verb** changed, and it changed what earns the marks.
+> The same ladder works in Chemistry. Take the iron tube from the last video. Identify the colour after the crystals dissolve: **deeper red**. Describe what happens: the pale red solution turns a deeper red as the crystals dissolve. Explain it: with more iron three plus ions, they meet thiocyanate ions **more often**, so the forward rate rises above the reverse, and more of the red ion forms. Same tube, same chemistry. Only the **verb** changed, and it changed what earns the marks.
 
 Visual:
-- The fly card slides away. The s01 cobalt plates return (`c3-cobalt-tube-pink-v1.png` crossfading to `c3-cobalt-tube-blue-v1.png`), with the equation strip "[Co(H2O)6]2+ (pink) + 4Cl- ⇌ [CoCl4]2- (blue) + 6H2O, ΔH > 0" and the grey tag "s01".
+- The fly card slides away. The s01 iron tube plates return (`c3-iron-tube-start-v1.png` crossfading to `c3-iron-tube-deep-v1.png`), with the equation strip "Fe3+ (pale yellow) + SCN- ⇌ FeSCN2+ (red)", a small chip "crystals of Fe(NO3)3 added" and the grey tag "s01".
 - The verb ladder sits beside them. Each rung fills on its cue with a one-line answer chip:
-  - identify: "blue" (one word chip; on "blue" the tube crossfades);
-  - describe: "The pink solution turns blue as it is heated." (feature line, no link words);
-  - explain: "Forward reaction endothermic, so heating increases its rate more than the reverse rate, so more [CoCl4]2- (blue) forms." with the cause-chain overlay and "so" underlined amber.
+  - identify: "deeper red" (one word chip; on "deeper red" the tube crossfades);
+  - describe: "The pale red solution turns a deeper red as the crystals dissolve." (feature line, no link words);
+  - explain: "More Fe3+, so Fe3+ and SCN- collide more often, so the forward rate rises above the reverse rate, so more FeSCN2+ (red) forms." with the cause-chain overlay and "so" underlined amber.
 - On "verb" the three highlighted verbs pulse together. Tag: "same content, three different jobs".
 - Hold about 1 second.
 
 ### 10. because-test
-> So here's a quick test. Read each sentence and ask: does it say **what causes what**? If it only says what happened, it's a description, however long it is. NESA's marking guidelines show the same step. In one recent three-mark explain question, describing the features reached two marks, and only the **link** to the outcome reached three. Explain questions run from two marks to seven. More marks means a longer **chain**, not a longer list.
+> So here's a quick test. Read each sentence and ask: does it say **what causes what**? If it only says what happened, it's a description, however long it is. NESA's marking guidelines show the same step. In one recent three-mark explain question, about a disease-prevention campaign, outlining the campaign's features reached two marks, and only explaining its **effect** reached three. Explain questions run from two marks to seven. More marks means a longer **chain**, not a longer list.
 
 Visual:
 - A test card writes: "Does this sentence say what causes what?"
 - Two chip rows beneath it, recalled from scene 9 (no new content):
-  - "The pink solution turns blue as it is heated." with a grey "describes" tag;
-  - "... so more [CoCl4]2- (blue) forms." with "so" underlined amber and the tag "explains".
-- On "link" a two-step bar draws: "describes the features: up to 2" then "+ link to the outcome: 3". Grey tag "a NESA Biology marking guideline, 2024".
+  - "The pale red solution turns a deeper red as the crystals dissolve." with a grey "describes" tag;
+  - "... so more FeSCN2+ (red) forms." with "so" underlined amber and the tag "explains".
+- On "effect" a two-step bar draws: "outlines the campaign's features: 2" then "+ explains its effect: 3". Grey tag "a NESA Biology marking guideline, 2024". The test card and chip rows dim while the bar is live, so at most three bright text items show.
 - On "two marks to seven" the hook's explain bar returns small with its 2 to 7 segments.
 - On "chain" a three-link chain extends to five links, against a list of five loose chips that stays unticked.
 - Memory aid writes large and handwritten: "Describe says what. Explain says how one thing causes the next."
@@ -247,11 +253,11 @@ Visual:
 - Hold about 1 second.
 
 ### 15. decision-rule
-> So, when you see the verb: **identify**, give the name. **Describe**, give the features, with numbers if there's data. **Outline**, the main features, briefly. **Explain**, show how each cause leads to its effect, step by step, and check every sentence says what causes what. **Next**: compare and contrast, where the trick is writing in **pairs**.
+> So, when you see the verb: **identify**, name what the question asks for, and use the marks to check how many. **Describe**, give the features, with numbers if there's data. **Outline**, the main features, briefly. **Explain**, show how each cause leads to its effect, step by step, and check every sentence says what causes what. **Next**: compare and contrast, where the trick is writing in **pairs**.
 
 Visual:
 - The verb ladder returns full size as the decision board, each rung lighting on its cue:
-  - "identify → a name (one per mark)";
+  - "identify → name the item or items the question asks for; use the marks to check the scope";
   - "describe → features, with values from the data" (with a small side rung: "outline → main features, briefly");
   - "explain → how each cause leads to its effect; a because alone is not enough".
 - On "Next" a chip slides in: "Next: compare, contrast, distinguish". Two small aligned columns are joined by pair lines.
@@ -261,7 +267,7 @@ Visual:
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Identify: recognise and name. Describe: give the features or characteristics. Outline: the main features in general terms (NESA glossary, paraphrased). Tip: identify needs a name per mark, no reasons; describe uses values from any data.
+1. Identify: recognise and name. Describe: give the features or characteristics. Outline: the main features in general terms (NESA glossary, paraphrased). Tip: for identify, name the item or items the question asks for, and use the marks to check the scope; no reasons are needed. Describe uses values from any data.
 2. Explain: show the cause and the effect, how or why it happens (NESA glossary, paraphrased). Show how each cause leads to its effect; a "because" alone is not enough.
 3. Explain is the most common key word in recent HSC Chemistry and Biology written sections (57 question parts, 2021 to 2025), usually for 2 to 4 marks. More marks need a longer chain of links, not a longer list.
 4. Test each sentence: does it say what causes what? If it only says what happened, it is a description.
@@ -302,17 +308,17 @@ All questions are written for HSCScience; none is copied from or adapted from a 
 | --- | --- |
 | Explain: 57 units (Chemistry 28, Biology 29), the most frequent; next calculate 24 (`verb-frequency.md`) | 1, key note 3 |
 | Explain by marks: 2 (13), 3 (20), 4 (16), 5 (5), 7 (3); 49 of 57 at 2 to 4 (`verb-frequency.md`) | 1, 10, key note 3 |
-| Describe 18 (Biology 14), outline 18, identify 16 at 1 or 2 marks (`verb-frequency.md`) | 1 (chart), 2, 4, 15 |
+| Describe 18 (Biology 14), outline 18, identify 16 (13 at 1 or 2 marks; also at 4, 7 and 9) (`verb-frequency.md`) | 1 (chart), 2, 4, 15, key note 1 |
 | Glossary paraphrases of identify, describe, explain and outline; read words in the context of the question; questions may use "why" (`glossary.md`) | 2, 6, key note 1 |
 | "State an outcome without the causal link": 12/12 reports (`common-faults.md`) | 1, 8, 11, 13 |
 | "Describe when asked to explain", within the 12/12 nearby-question row (`common-faults.md`) | 8, 11, 13 |
-| Explain row: describing features reached 2 of 3; the link to the outcome reached 3 (Biology 2024 Q24(b), `what-markers-reward.md`) | 10 |
+| Explain row: outlining a campaign's features reached 2 of 3; explaining its effect on disease incidence reached 3 (Biology 2024 Q24(b) marking guideline, criterion wording confirmed in Codex check 84; `what-markers-reward.md` says "describing") | 10 |
 | README takeaway 3: make an explanation show the link (cause, what it changes, the effect) | 7, 9, 10 |
 | README takeaway 2: teach verbs through a real question | 3 to 9 |
 
 ## Teaching checks
 
-- **Does it explain causes?** In the content: why sons are white (the X comes from the mother, and the Y has no allele to mask it), why daughters are red (the father's X carries the dominant allele), why the cobalt solution turns blue (scene 9, recalled from s01), why bubbles form (the dissolving rate falls), why DNA copies match (templates and complementary pairing). In the skill: why a description loses marks on an explain question (it gives no cause) and why more marks means a longer chain.
+- **Does it explain causes?** In the content: why sons are white (the X comes from the mother, and the Y has no allele to mask it), why daughters are red (the father's X carries the dominant allele), why the iron thiocyanate solution turns a deeper red (scene 9, recalled from s01), why bubbles form (the dissolving rate falls), why DNA copies match (templates and complementary pairing). In the skill: why a description loses marks on an explain question (it gives no cause) and why more marks means a longer chain.
 - **Science (to check):**
   - Fly cross: X^r X^r x X^R Y gives X^R X^r daughters (red) and X^r Y sons (white).
   - Counts: 52 : 48 is illustrative and near 1 : 1 sex.
@@ -324,7 +330,7 @@ All questions are written for HSCScience; none is copied from or adapted from a 
 
 ## Narration length estimate
 
-Count method: build parser rules (scene headings `### N.`, narration lines starting `> `, bold markers stripped), at 13.3 characters per second. Re-counted by script for Revision 2 (19 Oct): **5,618 characters, 16 scenes** (key-notes line included; inside 5,500 to 6,800).
+Count method: build parser rules (scene headings `### N.`, narration lines starting `> `, bold markers stripped), at 13.3 characters per second. Re-counted by script for Revision 3 (20 Oct): **5,783 characters, 16 scenes** (key-notes line included; inside 5,500 to 6,800). Revision 2 was 5,618.
 
 | Scene | Characters |
 | --- | --- |
@@ -336,25 +342,25 @@ Count method: build parser rules (scene headings `### N.`, narration lines start
 | 6 explain-setup | 370 |
 | 7 explain-build | 439 |
 | 8 weak-vs-strong | 467 |
-| 9 chem-ladder | 407 |
-| 10 because-test | 431 |
+| 9 chem-ladder | 472 |
+| 10 because-test | 476 |
 | 11 drill-1 | 272 |
 | 12 feedback-1 | 402 |
 | 13 drill-2 | 168 |
 | 14 feedback-2 | 417 |
-| 15 decision-rule | 324 |
+| 15 decision-rule | 379 |
 | 16 key-notes | 75 |
 
 Runtime:
-- Speech: about 422 s.
+- Speech: about 435 s.
 - Padding: about 32 s (16 scenes at 2 s each).
 - Stated holds: about 16 s.
 - Countdowns: 20 s.
 - The quiet notes hold beyond its speech: about 45 s.
-- Total: **about 8.9 minutes**.
+- Total: **about 9.1 minutes** (548 s).
 - Feedback speech: scene 12 about 30 s, scene 14 about 31 s (Revision 2 trims).
 
-The first draft counted 5,025 characters, below the floor. The Chemistry ladder (scene 9), the two-mark identify line (scene 4), the no-constraint line (scene 6) and outline in the decision rule (scene 15) were added for teaching value, not padding. The because-test cobalt lines were moved into scene 9 rather than repeated. If the voiced preview runs long, the reserve cut is scene 6's last sentence (about 7 s, leaving about 5,530 characters); do not cut below 5,500 characters without root's call.
+The first draft counted 5,025 characters, below the floor. The Chemistry ladder (scene 9), the two-mark identify line (scene 4), the no-constraint line (scene 6) and outline in the decision rule (scene 15) were added for teaching value, not padding. The because-test Chemistry lines were moved into scene 9 rather than repeated (Revision 3: they now use the iron thiocyanate tube). If the voiced preview runs long, the reserve cut is scene 6's last sentence (about 7 s, leaving about 5,700 characters); do not cut below 5,500 characters without root's call.
 
 ## Build ids
 
@@ -372,7 +378,7 @@ Have (inspected 19 Oct):
 - `m5x-fly-red-eye-v1.png`: the B8 and B10 pair.
 - `public/assets/chemistry/c1-sparkling-bottle-open-v1.png`: a clear glass bottle of sparkling water with rising bubbles, a few bubbles escaping the open neck, and the cap beside it.
 - `c1-sparkling-bottle-sealed-v1.png`: the C1 pair.
-- `c3-cobalt-tube-pink-v1.png` and `c3-cobalt-tube-blue-v1.png`: scene 9 Chemistry ladder (inspected: pink tube in a clear water bath; blue partner).
+- `c3-iron-tube-start-v1.png` and `c3-iron-tube-deep-v1.png`: scene 9 Chemistry ladder (inspected 20 Oct: the same tube in a wire stand, pale red-orange, then deep blood red; aligned C3 pair). The cobalt plates are no longer used.
 
 Coded: the frequency bar chart (from the research table, values typed from `verb-frequency.md`), the verb ladder, question cards and the annotation layer, answer boxes, mark counter, cause-chain overlay, X and Y chips (B10), the B4 DNA ladder and tiles, rate bars, chips, crosses and countdown. No people.
 

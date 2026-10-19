@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b04/lesson.json",
+    "lessonSha256": "9d5063c96cd60eb83cfb5b5d5890e0c10a14b7e86390b33e95ff5f48a246f951"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B5a: a chromosome is one long DNA molecule carrying many genes; homologous pairs; diploid 46 in humans; centromere; counting chromosomes by centromeres. From B5b: meiosis, homologous chromosomes pair and cross over in prophase I, partners separate in meiosis I and sister chromatids in meiosis II, gametes are haploid, fertilisation restores the diploid number. From B9: autosomes and a coded karyotype strip (22 numbered pairs and the sex chromosomes). From b01: a mutation is a change in DNA; it can make new alleles. From b02: ionising radiation breaks both strands, and broken ends joined back wrongly can lose or swap a piece (b02 scene 6 named \"later video\"). From b03: point mutations (substitution, insertion, deletion; silent, missense, nonsense, frameshift). Not assumed: chromosomal mutation, the four structural types, gene dosage, balanced rearrangement, nondisjunction, trisomy, karyotype as evidence of number.",
+    "startsWith": "Change chromosome structure or number. The video opens: In 1959, Jérôme Lejeune, Marthe Gautier and Raymond Turpin looked at dividing cells from children with Down syndrome, and counted their chromosomes.",
+    "stopsAfter": "defining a chromosomal mutation as a change in chromosome structure or number that can affect many genes at once, and contrasting its scale with a point mutation; explaining two causes of structural change (breaks rejoined wrongly; unequal crossing over, which makes a duplication and a deletion together); describing deletion (genes lost), duplication (extra copies, changed gene dosage; Bar eye), inversion (segment reversed) and translocation (segment moved to a non-matching chromosome); explaining that balanced inversions and translocations keep every gene, so carriers are often healthy, but breakpoints can disrupt or reactivate genes (the chromosome 9 and 22 leukaemia) and a carrier's gametes can be unbalanced; explaining nondisjunction in meiosis and trisomy; explaining trisomy 21 as extra dosage of normal genes and why it is survivable; comparing point and chromosomal mutations on cause, process and effect, including that size does not fix severity; applying this to an unseen HSC-style chromosome diagram and to a sickle cell against Down syndrome comparison.",
+    "nextLesson": "which mutations can be passed to the next generation, and does it matter where they happen (route entry bio-m6-b05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b04.md"
+  ],
+  "teaching": {
+    "task": "A chromosomal mutation can change hundreds of genes without spelling a single base wrong, so what exactly changes, and why does that affect a whole organism?",
+    "causalExplanation": "Causes: why a chromosomal mutation affects many genes (one chromosome carries hundreds, 2); how structure changes (breaks rejoined wrongly; out-of-step crossing over, 3); why a deletion is often lethal (one copy left, 4); why a duplication matters (more copies, more product, 4); why a balanced carrier is often healthy (every gene still there, 5) and when not (breakpoints, 5); why the carrier's children may be affected (unbalanced gametes, 6); how an extra chromosome arises (a pair fails to separate, 7); why trisomy 21 affects many systems (extra dosage of hundreds of normal genes, 8) and why it is survivable (smallest chromosome, 8). Visible case: one HSC-style chromosome with genes A to H carries every structural type; one karyotype strip carries the count. Video advantage: segments visibly drop, double, flip and swap; partner bars line up out of step; the pair fails to separate and the counts change. Thinking opportunities: two unseen items with every given on screen. Reading load: normal and changed bars stacked, at most about three tags; the attempt 1 card is the densest frame and is the task itself.",
+    "conversationalApproach": "The 1959 count of 47 chromosomes sets the surprise (normal genes, one extra chromosome); a chromosomal mutation is shown as a change to a whole bar of genes, contrasted in scale with a point mutation; breaks rejoined wrongly and unequal crossing over show how structure changes before each type is named; deletion and duplication change content and dosage (Bar eye), inversion and translocation change order and position (one leukaemia); a balanced carrier's gametes show the next-generation catch; nondisjunction is followed through the meiosis strip to an extra or missing chromosome; trisomy 21 is explained as normal genes at extra dosage; point and chromosomal mutations are compared by cause, process and effect; the book of chapters analogy carries the memory. Two exam questions follow with brief feedback, then the decision rule hands off to where a mutation happens (b05).",
+    "openingDecision": "In 1959, Jérôme Lejeune, Marthe Gautier and Raymond Turpin looked at dividing cells from children with Down syndrome, and counted their chromosomes. Their cells had forty-seven, one more than the usual forty-six. The extra one was small, later named chromosome twenty-one. Its genes weren't faulty. There was simply an extra copy of every one of them. So how can extra, missing or rearranged pieces of chromosome change a whole organism?",
+    "understandingCheck": "11a is an HSC-style diagram item: a normal chromosome (A B C, centromere, D E F G H) and a non-matching chromosome (M N, centromere, O P Q), with three changed versions, 1 (A B C D E F E F G H), 2 (A B C D G F E H) and 3 (A B C D E F P Q with M N O G H). Name each mutation, then identify which change alters the number of copies of a gene in the cell, with a reason. It tests reading a diagram gene by gene and the dosage idea. 11c is a compare item: sickle cell disease (a substitution in the beta-globin gene) against Down syndrome (usually an extra chromosome 21), compared on how each arises, how much DNA each changes and its effect. It tests the dotpoint's own \"compare causes, processes and effects\" across b03 and b04. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "\"compare the causes, processes and effects of different types of mutation, including but not limited to:\" with the examples \"point mutation\" and \"chromosomal mutation\". This video owns the chromosomal half (causes: breaks rejoined wrongly, unequal crossing over, nondisjunction; processes: the four structural types and changes in number; effects: gene content, dosage, order, position, breakpoints) and the comparison with point mutation that the dotpoint's verb asks for (scene 9, attempt 2). Update the ledger row for B6-IQ1-02 (shared with b01 and b03) when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One chromosome board, drawn the way HSC papers draw chromosomes: a long rounded bar with a narrowed centromere (b05a's `ChromBar` look, cream fill, ink outline), thin bands across it, and gene letters A to H printed in small serif type beside their bands; a second, non-matching chromosome is a shorter bar in a pale blue-grey with letters M to Q. A moving or changed segment is shaded amber and slides, flips or doubles on its spoken word; a lost segment drops away as a dashed outline. Before and after are always stacked (normal above, changed below) so the change is read by comparison, as in an exam diagram. A coded karyotype strip (B9's: 22 numbered pairs plus X and X, drawn as small banded bars in pairs) carries the counts in the hook and scene 8; pair 21 holds three bars there. A meiosis strip for scene 7 uses B5b's model cell drawing (one pair, plum and teal, as in B5b) through meiosis I to four gametes, with counts under each cell. Real objects are painted: the microscope (`m6-microscope-v1.png`), a stained chromosome spread as seen down a microscope (new plate), the painted chromosome close-up (`b5x-zoom-chromosome-v1.png`) as the bridge from the real object to the coded bar, and the fruit flies (`m5x-fly-red-eye-v1.png`, new Bar and double-Bar plates). No people: the hook uses the microscope and the cell spread, never a child or a patient. Clutter rule (owner, 19 Oct): at most about three text items on screen at once besides the gene letters; each tag fades when the next cue lands; the karyotype strip and the meiosis strip leave when their scenes end.",
+    "transitionPlan": "The microscope plate and karyotype strip open the hook; the painted chromosome close-up crossfades into the coded GeneBar, the bridge from the real object; the chromosome board then stacks normal above changed for each type, with the amber segment sliding, flipping, doubling or dropping away on its word; the carrier's cell splits into two gametes; the meiosis strip replaces the bars for nondisjunction and the hook's karyotype strip returns for trisomy 21; the CompareBoard gathers both families in two columns; the book outline sits beside the GeneBar for memory; each attempt clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "the painted `m6-microscope-v1.png` sits at the left with a small grey tag \"1959, Paris\".",
+      "teachingReason": "Hook (forty-seven): In 1959, Jérôme Lejeune, Marthe Gautier and Raymond Turpin looked at dividing cells from children with Down syndrome, and counted their chromosomes.",
+      "narrationCue": "dividing cells / counted their chromosomes / forty-seven / later named chromosome twenty-one / Its genes weren't faulty / extra, missing or rearranged",
+      "motionPurpose": "On the spoken cues: On \"dividing cells\" a circular field of view opens to the right of it, filled by the new painted chromosome spread plate (`m6-metaphase-spread-v1.png`): dark-stained chromosomes scattered from one cell. On \"counted their chromosomes\" the spread crossfades to B9's coded karyotype strip (pairs 1 to",
+      "motionRole": "explain",
+      "onScreenChange": "the painted `m6-microscope-v1.png` sits at the left with a small grey tag \"1959, Paris\". On \"dividing cells\" a circular field of view opens to the right of it, filled by the new painted chromosome spread plate (`m6-metaphase-spread-v1.png`): dark-stained chromosomes scattered from one cell. On \"counted their chromosomes\" the spread crossfades to B9's coded karyotype strip (pairs 1 to 22 and the sex chromosomes, small banded bars), and a counter at the top right ticks up as each pair lights: \"46\". On \"forty-seven\" a third small bar slides in beside pair 21 and the counter turns amber: \"47\" (tag \"one extra\"). On \"later named chromosome twenty-one\" a label \"21\" pulses under the three bars. On \"Its genes weren't faulty\" the three bars of 21 enlarge into a row of three identical `GeneBar`s with the same gene letters on each (tag \"same genes, three copies\"). On \"extra, missing or rearranged\" three ghost bars flash beside them: one with a piece missing, one with a piece doubled, one with a piece flipped. The heading writes on: \"When chromosomes change\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "lineage split",
+        "counter and bar fill",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "chromosomal-mutation",
+      "visualDecision": "adjust",
+      "visualReference": "the painted `b5x-zoom-chromosome-v1.png` appears large, then crossfades into the coded `GeneBar` with genes A to H, the bridge from the real object to the exam drawing (tag \"a chromosome: one long DNA molecule, many genes\").",
+      "teachingReason": "What a chromosomal mutation is: A chromosomal mutation changes the structure of a chromosome, or the number of chromosomes.",
+      "narrationCue": "chromosomal mutation",
+      "motionPurpose": "On the spoken cues: On \"chromosomal mutation\" that tag fades and the term writes on with the gloss \"a change in structure or number\". On \"point mutations\" the camera pushes into one band of the bar until it opens into b01's `SlimStrand` with one amber rung (grey tag \"b03\"); on \"one or a few bases in one gene\" the tag",
+      "motionRole": "explain",
+      "onScreenChange": "the painted `b5x-zoom-chromosome-v1.png` appears large, then crossfades into the coded `GeneBar` with genes A to H, the bridge from the real object to the exam drawing (tag \"a chromosome: one long DNA molecule, many genes\"). On \"chromosomal mutation\" that tag fades and the term writes on with the gloss \"a change in structure or number\". On \"point mutations\" the camera pushes into one band of the bar until it opens into b01's `SlimStrand` with one amber rung (grey tag \"b03\"); on \"one or a few bases in one gene\" the tag \"point: one gene\" writes on. On \"hundreds of genes\" the camera pulls back to the whole bar; every band lights in turn (tag \"chromosomal: many genes at once\"). On \"seen down a microscope\" the term, its gloss and the \"point\" and \"chromosomal\" tags fade, and the microscope plate returns small with two tags: \"large chromosomal changes: visible\", \"point mutations: not visible\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "how-they-break",
+      "visualDecision": "new",
+      "visualReference": "the board shows one `GeneBar` (A to H).",
+      "teachingReason": "How a chromosome changes shape: To change shape, a chromosome usually has to break.",
+      "narrationCue": "snap both strands / join the broken ends back wrongly / Mistakes in crossing over / swap pieces / a stretch twice / loses that stretch",
+      "motionPurpose": "On the spoken cues: On \"snap both strands\" a jagged break mark lands between D and E; the camera dips into the break, where `SlimStrand` shows both lines open (b01 `breaks` prop, frayed ends) (grey tag \"b02\"); back out, the two pieces separate slightly. On \"join the broken ends back wrongly\" the E to H piece swings",
+      "motionRole": "explain",
+      "onScreenChange": "the board shows one `GeneBar` (A to H). On \"snap both strands\" a jagged break mark lands between D and E; the camera dips into the break, where `SlimStrand` shows both lines open (b01 `breaks` prop, frayed ends) (grey tag \"b02\"); back out, the two pieces separate slightly. On \"join the broken ends back wrongly\" the E to H piece swings round and rejoins upside down for a beat, then the board resets (tag \"rejoined wrongly\"). On \"Mistakes in crossing over\" `UnequalCross`: two partner bars (plum and teal, B5b colours, the same gene letters) slide side by side but offset by two genes, so the teal A sits beside the plum C and the teal C beside the plum E (tag \"out of step\"; the \"rejoined wrongly\" tag has faded; no grey tag). The crossover point falls between the plum D and the plum E, so the plum product keeps its own A B C D and takes the teal C D onwards, and the teal product keeps only its A B and takes the plum E onwards. On \"swap pieces\" they exchange the pieces beyond that crossover point, and the \"out of step\" tag fades. On \"a stretch twice\" the plum bar reads A B C D C D E F G H with the repeated C D shaded amber; on \"loses that stretch\" the teal bar reads A B E F G H with a dashed gap where C D was. Tags: \"duplication\" under the plum bar, \"deletion\" under the teal bar. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "deletion-duplication",
+      "visualDecision": "adjust",
+      "visualReference": "the board stacks a normal `GeneBar` above a changed one.",
+      "teachingReason": "Deletion and duplication: content and dosage: In a deletion, a segment is lost, along with every gene on it.",
+      "narrationCue": "deletion / duplication / gene dosage",
+      "motionPurpose": "On the spoken cues: On \"a segment is lost\" the C D segment of the lower bar shades amber, drops away as a dashed outline and the bar closes up (tag \"deletion: segment lost\"). On \"only one copy of each of those genes\" its normal partner bar appears beside it and small copy counters under C and D read \"1\" (the other",
+      "motionRole": "explain",
+      "onScreenChange": "the board stacks a normal `GeneBar` above a changed one. On \"a segment is lost\" the C D segment of the lower bar shades amber, drops away as a dashed outline and the bar closes up (tag \"deletion: segment lost\"). On \"only one copy of each of those genes\" its normal partner bar appears beside it and small copy counters under C and D read \"1\" (the other genes \"2\") (tag \"half the usual copies\"). The deletion tags fade. On \"appears twice\" the lower bar resets and its C D segment copies and slides in beside itself (A B C D C D E F G H; tag \"duplication: segment twice\"). On \"gene dosage\" the \"duplication\" tag fades, counters under C and D read \"3\" with the partner bar, and the term writes on with the gloss \"how many copies of a gene: more copies, more product\" beside a small coded bar chart rising from \"2 copies\" to \"3 copies\" (illustrative, no units). On \"fruit flies\" the bars, chart, counters and term fade, and the painted `m5x-fly-red-eye-v1.png` (tag \"normal\") sits beside the new `m6-fly-bar-eye-v1.png` (tag \"duplication: Bar eye\"), each with a small X chromosome bar beneath, the Bar fly's showing one segment twice. (Revision 2: the double-Bar line and plate are cut for length.) Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "inversion-translocation",
+      "visualDecision": "new",
+      "visualReference": "normal above, changed below.",
+      "teachingReason": "Inversion and translocation: order and position: In an inversion, a segment breaks out, flips, and rejoins the same chromosome back to front.",
+      "narrationCue": "inversion / translocation",
+      "motionPurpose": "On the spoken cues: On \"breaks out, flips\" the E F G segment of the lower bar shades amber, lifts out, rotates half a turn and drops back in: A B C D G F E H (tag \"inversion: segment reversed\"). The tag fades. On \"a different, non-matching chromosome\" the second chromosome (M N, centromere, O P Q, pale blue-grey)",
+      "motionRole": "explain",
+      "onScreenChange": "normal above, changed below. On \"breaks out, flips\" the E F G segment of the lower bar shades amber, lifts out, rotates half a turn and drops back in: A B C D G F E H (tag \"inversion: segment reversed\"). The tag fades. On \"a different, non-matching chromosome\" the second chromosome (M N, centromere, O P Q, pale blue-grey) appears beside the first; on \"a swap between two\" the G H end and the P Q end trade places, leaving A B C D E F P Q and M N O G H (tag \"translocation: moved to another chromosome\"). On \"every gene is still there\" the translocation tag fades, small ticks run along all gene letters on both bars and a tag \"balanced: nothing lost or gained\" writes on. On \"split it\" the balanced tag fades; a break mark lands across one band, splitting its letter into two halves (tag \"breakpoint inside a gene\"). On \"join two genes together\" that tag fades; two half-bands, one from each chromosome, meet at the join and outline as one long amber band (tag \"two genes joined\"). On \"a single blood-forming cell\" the carrier ticks clear and the board relabels the bars \"9\" and \"22\" (the longer bar is 9); on \"joining two genes into one\" the joined amber band sits on the shortened chromosome 22, as on the real Philadelphia chromosome (no gene-name labels); on \"always active\" a small coded enzyme blob beside it glows steadily (no tag), and on \"keep dividing\" a short row of coded cell circles doubles twice; the \"two genes joined\" tag changes to \"chronic myeloid leukaemia\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "lineage split",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "carrier-gametes",
+      "visualDecision": "new",
+      "visualReference": "the scene 5 carrier's four chromosomes (two normal bars and the two swapped bars, colour-coded by origin, letters on) sit in one cell outline.",
+      "teachingReason": "A balanced carrier's children: There's a catch for the next generation.",
+      "narrationCue": "can get just one of the two swapped chromosomes / repeated miscarriages, or a child with missing or extra genes",
+      "motionPurpose": "On the spoken cues: On \"can get just one of the two swapped chromosomes\" two small gamete circles split off. Left: both swapped bars together, with a tick (tag \"every gene once\"). Right: one swapped bar (A B C D E F P Q) with the normal partner of the other (M N O P Q); amber rings mark \"G H missing\" and \"P Q twice\"",
+      "motionRole": "explain",
+      "onScreenChange": "the scene 5 carrier's four chromosomes (two normal bars and the two swapped bars, colour-coded by origin, letters on) sit in one cell outline. On \"can get just one of the two swapped chromosomes\" two small gamete circles split off. Left: both swapped bars together, with a tick (tag \"every gene once\"). Right: one swapped bar (A B C D E F P Q) with the normal partner of the other (M N O P Q); amber rings mark \"G H missing\" and \"P Q twice\" (tag \"unbalanced\"). The left tag fades as the right one lands. On \"repeated miscarriages, or a child with missing or extra genes\" a short arrow runs from the unbalanced gamete to the tag \"unbalanced embryo\". Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "nondisjunction",
+      "visualDecision": "new",
+      "visualReference": "the meiosis strip, in B5b's look: one cell with one homologous pair (plum and teal) at the start; a normal row runs faintly above for comparison (partners separate; four gametes, each with one bar; tag \"normal\").",
+      "teachingReason": "Nondisjunction: a change in number: Now the other kind, a change in chromosome number.",
+      "narrationCue": "nondisjunction / trisomy",
+      "motionPurpose": "On the spoken cues: Main row: on \"partner chromosomes normally separate\" the pair lines up; on \"fails to separate\" both partners move to the same end together and the cell divides with both in one cell and none in the other (tag \"nondisjunction: a pair fails to separate\"); a grey tag \"or sister chromatids, in meiosis",
+      "motionRole": "explain",
+      "onScreenChange": "the meiosis strip, in B5b's look: one cell with one homologous pair (plum and teal) at the start; a normal row runs faintly above for comparison (partners separate; four gametes, each with one bar; tag \"normal\"). Main row: on \"partner chromosomes normally separate\" the pair lines up; on \"fails to separate\" both partners move to the same end together and the cell divides with both in one cell and none in the other (tag \"nondisjunction: a pair fails to separate\"); a grey tag \"or sister chromatids, in meiosis II\". After the second division the four gametes show counts beneath: \"2 copies\", \"2 copies\", \"0\", \"0\" (no n + 1 or n - 1 labels); the nondisjunction tag and the grey tag fade. On \"fertilised\" the normal row fades; one \"2 copies\" gamete meets a normal gamete with one bar; the zygote circle holds three bars (tag \"trisomy: three copies\"); on \"In humans\" a counter \"46 + 1 = 47\" writes on. (Revision 2: the polyploidy tag is removed; it is not spoken or assessed.) Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "trisomy-21",
+      "visualDecision": "new",
+      "visualReference": "the hook's karyotype strip returns with pair 21 holding three bars (counter \"47\").",
+      "teachingReason": "Trisomy 21: normal genes, extra dosage: That's how most cases of Down syndrome arise, with three copies of chromosome twenty-one.",
+      "narrationCue": "three copies instead of two / half as much again / many parts of the body / Chromosome twenty-one is the smallest / most other numbered chromosomes",
+      "motionPurpose": "On the spoken cues: On \"three copies instead of two\" the three bars of 21 enlarge (tag \"same genes, 3 copies\"); on \"half as much again\" a coded bar pair reads \"2 copies: 100%\" and \"3 copies: about 150%\" (illustrative; the earlier tag fades, no extra \"gene dosage\" tag). On \"many parts of the body\" the dosage bar",
+      "motionRole": "explain",
+      "onScreenChange": "the hook's karyotype strip returns with pair 21 holding three bars (counter \"47\"). On \"three copies instead of two\" the three bars of 21 enlarge (tag \"same genes, 3 copies\"); on \"half as much again\" a coded bar pair reads \"2 copies: 100%\" and \"3 copies: about 150%\" (illustrative; the earlier tag fades, no extra \"gene dosage\" tag). On \"many parts of the body\" the dosage bar repeats in small for several genes along the chromosome, many bars rising at once (tag \"hundreds of genes at once\"). The dosage bars fade. On \"Chromosome twenty-one is the smallest\" the karyotype strip lines up by size and pair 21 is ringed at the short end (tag \"smallest: about 200 to 300 genes\"); on \"most other numbered chromosomes\" two large numbered pairs (1 and 2) take a grey tag \"an extra copy: development usually stops before birth\". Hold one second.",
+      "motionTools": [
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "compare",
+      "visualDecision": "new",
+      "visualReference": "`CompareBoard`, two columns headed \"point\" (a `SlimStrand` icon with one amber rung) and \"chromosomal\" (a `GeneBar` icon with one amber segment).",
+      "teachingReason": "Point against chromosomal: Compare the two types.",
+      "narrationCue": "bigger isn't always worse / wreck an essential protein",
+      "motionPurpose": "On the spoken cues: Three rows fill one per cue, each pair of cells writing on together: \"cause\" (\"copying errors, mutagens\" | \"also breaks, unequal crossing over, nondisjunction\"); \"process\" (\"one gene's base sequence changes\" | \"number, order or position of many genes changes\"); \"effect\" (\"one gene; protein may stay",
+      "motionRole": "explain",
+      "onScreenChange": "`CompareBoard`, two columns headed \"point\" (a `SlimStrand` icon with one amber rung) and \"chromosomal\" (a `GeneBar` icon with one amber segment). Three rows fill one per cue, each pair of cells writing on together: \"cause\" (\"copying errors, mutagens\" | \"also breaks, unequal crossing over, nondisjunction\"); \"process\" (\"one gene's base sequence changes\" | \"number, order or position of many genes changes\"); \"effect\" (\"one gene; protein may stay the same or change\" | \"many genes, dosage, breakpoints\"). Cells hold two to eight words each. On \"bigger isn't always worse\" the board dims and shrinks to the top, and two small cases slide in beneath it: the scene 5 balanced inversion with a tick (tag \"often no effect\"), and b03's early nonsense chain with its stop bar (tag \"one base: can be severe\"). On \"wreck an essential protein\" a line writes on across the bottom, carrying the conclusion the narration no longer speaks: \"effect depends on which genes, not size alone\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "a coded closed book outline with chapter tabs lettered A to H (no title text) sits beside the `GeneBar`.",
+      "teachingReason": "Memory: Think of a chromosome as a book, and its genes as chapters.",
+      "narrationCue": "The analogy has a limit / a break inside it / switches it on",
+      "motionPurpose": "On the spoken cues: One handwritten line per cue, each with its bar change replayed small beside the book: \"deletion: chapter lost\" (tab C D gone), \"duplication: printed twice\" (tab C D doubled), \"inversion: back to front\" (tabs E F G reversed), \"translocation: moved to another book\" (tabs G H slide into a second book",
+      "motionRole": "explain",
+      "onScreenChange": "a coded closed book outline with chapter tabs lettered A to H (no title text) sits beside the `GeneBar`. One handwritten line per cue, each with its bar change replayed small beside the book: \"deletion: chapter lost\" (tab C D gone), \"duplication: printed twice\" (tab C D doubled), \"inversion: back to front\" (tabs E F G reversed), \"translocation: moved to another book\" (tabs G H slide into a second book outline). On \"The analogy has a limit\" a small inset shows one intact gene band inside the flipped segment with its own arrow still pointing from its start (tag \"intact gene: still read from its own start\"); on \"a break inside it\" a break mark flashes across a band at the segment's edge, and on \"switches it on\" a small control band beside the gene is left on the far side of the break (no extra tag; the tag changes to \"a break or moved control DNA can affect it\"). As the limit inset fades, the line \"nondisjunction: fail to dis-join\" writes on silently with the scene 7 pair icon (Revision 2: no longer spoken). Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no book, columns or tags from earlier scenes.",
+      "teachingReason": "Unseen transfer task (attempt one (reading chromosome diagrams)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First, the diagram shows",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (reading chromosome diagrams))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no book, columns or tags from earlier scenes. The card writes on as an exam question: \"The diagram shows two normal, non-matching chromosomes and three mutations, 1 to 3. Letters represent genes; the circle is the centromere. In each cell, the mutated chromosome is paired with a normal partner (homologue).\" Top: \"Normal chromosome 1: A B C ● D E F G H\" and \"Normal chromosome 2: M N ● O P Q\", each drawn as an HSC-style bar with the letters on it. Below, three rows: \"1: A B C ● D E F E F G H\"; \"2: A B C ● D G F E H\"; \"3: A B C ● D E F P Q and M N ● O G H\". No shading, no arrows, no amber. Demands: \"(a) Name the type of chromosomal mutation shown in each of 1, 2 and 3. (3 marks)\" \"(b) Identify which mutation changes the number of copies of a gene in the cell. Justify your answer. (2 marks)\". A three-row answer table for (a) and one answer box for (b). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top with all five bars readable.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "E and F appear twice / back to front / swapped with P and Q / three copies of E and F / the classic mistake / they moved",
+      "motionPurpose": "On the spoken cues: (1) On \"E and F appear twice\" the repeated \"E F\" on bar 1 underlines amber; row 1 fills \"duplication\". (2) On \"back to front\" \"G F E\" on bar 2 underlines with a small reversing arrow; row 2 fills \"inversion\". (3) On \"swapped with P and Q\" \"P Q\" on bar 3's first chromosome and \"G H\" on its second",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top with all five bars readable. (1) On \"E and F appear twice\" the repeated \"E F\" on bar 1 underlines amber; row 1 fills \"duplication\". (2) On \"back to front\" \"G F E\" on bar 2 underlines with a small reversing arrow; row 2 fills \"inversion\". (3) On \"swapped with P and Q\" \"P Q\" on bar 3's first chromosome and \"G H\" on its second underline, with a dashed swap arrow between them; row 3 fills \"translocation (reciprocal)\". (4) On \"three copies of E and F\" a small partner bar draws beside bar 1 and counters under E and F read \"3\"; box (b) fills \"1, duplication: E and F now 3 copies (2 on this chromosome + 1 on its partner)\". (5) On \"the classic mistake\" the chip \"3 is a deletion: G and H are lost\" writes on and takes a grey scribble cross; on \"they moved\" \"G H\" on the second chromosome flashes. Ticks run along bars 2 and 3 as the model answer settles (unspoken: \"2 and 3: every gene once\"). Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (sickle cell against Down syndrome)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Sickle cell disease is caused by a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (sickle cell against Down syndrome))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question: \"Sickle cell disease is caused by a single base substitution in the gene for the beta chain of haemoglobin. Down syndrome is usually caused by an extra copy of chromosome 21. Compare these two mutations in terms of how each first arises, the amount of DNA changed, and the effect on the organism. (4 marks)\". One answer box. Nothing answer-bearing: no strands, bars, karyotype or cells. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Both change the DNA / a copying error / changes one base / one amino acid / the classic mistake",
+      "motionPurpose": "On the spoken cues: A three-row comparison writes on under two headings, \"sickle cell (substitution)\" and \"Down syndrome (trisomy 21)\", with a full-width similarity row first. (1) On \"Both change the DNA\" the row \"similarity: both change the DNA and the phenotype\" writes on. (2) On \"a copying error\" \"single base",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A three-row comparison writes on under two headings, \"sickle cell (substitution)\" and \"Down syndrome (trisomy 21)\", with a full-width similarity row first. (1) On \"Both change the DNA\" the row \"similarity: both change the DNA and the phenotype\" writes on. (2) On \"a copying error\" \"single base substitution\" and \"extra copy of chromosome 21\" underline amber; the \"arises\" row fills: \"copying error or mutagen\" | \"nondisjunction in meiosis\". (3) On \"changes one base\" the \"amount\" row fills: \"1 base in 1 gene\" | \"a whole chromosome: hundreds of genes\". (4) On \"one amino acid\" and \"hundreds of products\" the \"effect\" row fills: \"one amino acid in one protein (Glu to Val): haemoglobin forms fibres, cells sickle\" | \"normal genes, extra dosage: many body systems\". (5) On \"the classic mistake\" the chip \"the genes on the extra chromosome are faulty\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on left to right, one per cue: \"1. compare gene by gene: missing, doubled, reversed, moved?\" (four small bar icons), \"2. check the other chromosome too\" (two bars with a dashed swap arrow; screen only, after the 11b mistake), \"3. effect: copy number, or a broken or moved gene\" (a fourth line under it, small: \"whole chromosome? nondisjunction, dosage\") (a dosage bar and a karyotype pair with three bars).",
+      "teachingReason": "Decision rule and handoff: So when a question shows a changed chromosome, compare it with the normal one, gene by gene.",
+      "narrationCue": "So when a question shows a changed chromosome,",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: which mutations are inherited?\" (`m6-egg-sperm-dish-v1.png`, small). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on left to right, one per cue: \"1. compare gene by gene: missing, doubled, reversed, moved?\" (four small bar icons), \"2. check the other chromosome too\" (two bars with a dashed swap arrow; screen only, after the 11b mistake), \"3. effect: copy number, or a broken or moved gene\" (a fourth line under it, small: \"whole chromosome? nondisjunction, dosage\") (a dosage bar and a karyotype pair with three bars). A \"Next\" chip slides in at the lower right: \"Next: which mutations are inherited?\" (`m6-egg-sperm-dish-v1.png`, small). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b04-learning-review.md",
+      "sha256": "9326b3cecdcd1157269583c0404f656647894caf91570107f307b25a4e68b476"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b04-claude-science-check.md",
+      "sha256": "b557af6c81595322aee94f281f63703b38c088dd7ff84c2ae6b303f17e18844e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c06/lesson.json",
+    "lessonSha256": "3813b149578e7ad8ee487b8369aa4e3955a47889f720b3c6ce655d1902db4c71"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C01 (follow the proton; Brønsted-Lowry acid and base; HCl + H₂O → H₃O⁺ + Cl⁻; NH₃ + H₂O ⇌ NH₄⁺ + OH⁻; water can be the acid or the base; HCO₃⁻ + H₂O ⇌ H₂CO₃ + OH⁻ met in C01 attempt 1; H₃O⁺ is hydronium). C02 (polyatomic ion names, including hydrogen carbonate, carbonate, phosphate, dihydrogen phosphate, hydrogen phosphate; carbonic acid breaks down into water and carbon dioxide). C05 (strong acid ionises completely, single arrow; weak acid partly, double arrow; acetate takes protons back; dynamic equilibrium). Year 11: ionic salts dissolve into ions; balancing charge. Not assumed: Kw, pH calculation, Ka.",
+    "startsWith": "Follow one proton-transfer equation. The video opens: Sprinkle baking soda into hydrochloric acid, and it fizzes, and the solution becomes less acidic. Now sprinkle it into sodium hydroxide solution. No fizz this time, but the solution becomes less basic.",
+    "stopsAfter": "identifying the Brønsted-Lowry acid and base and both conjugate pairs in a given equation, with one proton and one charge between partners; writing a conjugate acid or base for a given species; explaining with conjugate strength why a strong acid gets → and a weak acid ⇌; explaining why a species is amphiprotic and spotting one from a proton chain; writing the dissolving equation and both water equations for sodium hydrogen carbonate or potassium dihydrogen phosphate; writing water's self-ionisation and saying what neutral means. No Kw value, pH or temperature effects (chem-m6-c07), no Ka or Kb (chem-m6-c10), no salt hydrolysis predictions, no buffers (chem-m6-c11).",
+    "nextLesson": "putting a number on water's self-ionisation and calculating pH for strong acids and bases (route chem-m6-c07)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c06.md"
+  ],
+  "teaching": {
+    "task": "Baking soda calms an acid, and it also calms a base. How can one ion act as a base in one reaction and an acid in another, and what are the \"conjugate\" partners that every acid-base reaction makes?",
+    "causalExplanation": "(1) one powder calms an acid and a base: how can one substance play both roles? (1); (2) run a known proton transfer backwards: the products are also an acid and a base, so every reaction can swap the proton back (2); (3) conjugate base and conjugate acid: linked by exactly one proton, charge changes by one, opposite sides (3); (4) worked example: follow the proton in HPO₄²⁻ + H₂O; one proton per pair, so H₂SO₄ pairs with HSO₄⁻ (4); (5) a strong acid's conjugate base has almost no pull on a proton, so the reaction goes all the way (→); a weak acid's conjugate base pulls protons back (⇌) (5); (6) hydrogen carbonate takes a proton from hydronium (fizz) and gives one to hydroxide (no gas): amphiprotic (6); (7) in a proton chain the middle species can give and take; the ends do one job (7); (8) a salt dissolves into a spectator ion and the amphiprotic ion; one water equation for each role (8); (9) water is the middle of its own chain, so it reacts with itself; a tiny equilibrium in equal amounts; neutral means equal (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "one powder, baking soda, calms both an acid and a base. Running a known proton transfer backwards shows that the products are also an acid and a base, which gives conjugate pairs; conjugate strength explains the single and double arrows; hydrogen carbonate is then shown taking a proton in one reaction and giving one in another, as the middle of a proton chain, and water turns out to be the middle of its own chain. Two exam questions follow with brief feedback.",
+    "openingDecision": "Sprinkle baking soda into hydrochloric acid, and it fizzes, and the solution becomes less acidic. Now sprinkle it into sodium hydroxide solution. No fizz this time, but the solution becomes less basic. The same white powder calms an acid and calms a base. So how can one substance act as a base in one reaction, and as an acid in another?",
+    "understandingCheck": "(A1) \"Potassium dihydrogen phosphate, KH₂PO₄, is used in foods as an acidity regulator. Write an equation for KH₂PO₄ dissolving in water. Then write two equations, each with water as the reaction partner, to show that the dihydrogen phosphate ion is amphiprotic.\" The second syllabus salt (the video works sodium hydrogen carbonate); the chain in scene 7 names the species but writes none of these equations. Crossed mistake: \"H₂PO₄⁻ + H₂O ⇌ PO₄³⁻ + ...\" (two protons in one step). (A2) \"NH₄⁺(aq) + CO₃²⁻(aq) ⇌ NH₃(aq) + HCO₃⁻(aq). Identify the two conjugate acid-base pairs in this reaction, and state which species is the Brønsted-Lowry acid.\" New equation with no water in it. Crossed mistake: \"NH₄⁺ / CO₃²⁻ is a pair\" (same side).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"write ionic equations to represent the dissociation of acids and bases in water, conjugate acid/base pairs in solution and amphiprotic nature of some salts, for example:; sodium hydrogen carbonate; potassium dihydrogen phosphate\" this video starts from one proton-transfer equation the student already knows (NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, C01) and runs it backwards to find the conjugate pairs. It teaches: conjugate acid and base and the one-proton, one-charge rule; identifying both pairs in an unfamiliar equation (the site's HPO₄²⁻ example); conjugate strength, used to explain C05's arrows; amphiprotic species, with sodium hydrogen carbonate reacting both ways (the hook), the proton chain for spotting them (carbonate, phosphate, water), and the dissolving equation plus both water equations for a syllabus salt; water's self-ionisation as water's own role, with \"neutral means equal hydronium and hydroxide\". It stops at identifying pairs, water's role and an amphiprotic species. Not here: Kw as a number, pH and pOH, and neutral pH at other temperatures (chem-m6-c07, whose route start assumes complete ionisation and whose pOH method needs Kw; scene 15 hands off to it); Ka, Kb and Ka × Kb = Kw (chem-m6-c10); predicting which way an amphiprotic ion reacts from Ka values (the site's HPO₄²⁻ \"Kb > Ka3\" example; chem-m6-c10 and buffers chem-m6-c11); salt hydrolysis (see Open decisions); buffers (chem-m6-c11); \"amphoteric\" (author note e). The Kohlrausch history is not used (register draft correction)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01): the proton is a small teal token; a donor (acid) gets an amber outline; an acceptor (base) a violet outline; water pale blue; pair brackets in matching colours (amber pair above the equation, violet pair below); spent labels grey. Board layout (constant): the short question top-left in one line; the equation strip centre; pair brackets above and below it; a plate or lens at the right only when it carries the explanation. Clutter rule: at most three bright text items at once; every tag dims when its sentence ends. Reuse: painted plates (inspected 19 Oct): `m6-baking-soda-box-v1.png` (hook and scene 8), `m6-clip-baking-soda-vinegar-before-v1.png` (white powder resting in clear liquid, no bubbles) and `m6-clip-baking-soda-vinegar-fizz-v1.png` (the same beaker fizzing; aligned pair). In the hook the left beaker uses the pair with the coded label \"hydrochloric acid\" (the plates show only a clear liquid; nothing in them reads as vinegar), and the right beaker uses the \"before\" plate alone with the coded label \"sodium hydroxide solution\", so it stays quiet. `m5x-ammonia-bottle-v1.png` (scene 2, small). `m6-beaker-v1.png` (scene 9, \"very pure water\"). Not used: `m6-ph-meter-probe-beaker-v1.png` (no pH numbers before c07; the hook shows the change as a coded arrow toward neutral). No new plates needed. No human figures.",
+    "transitionPlan": "The baking soda plate and the two clip plates open the puzzle; the equation strip runs forward and then backwards with the teal token hopping; pair brackets draw above and below the strip in matching colours; the proton chain builds as a row of species; the salt equations stack one per role; water self-ionisation writes as its own chain; the memory aid writes large; each attempt clears the board and its feedback underlines the question; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-baking-soda-box-v1.png` top centre, small.",
+      "teachingReason": "Hook (one powder, two jobs): Sprinkle baking soda into hydrochloric acid, and it fizzes, and the solution becomes less acidic.",
+      "narrationCue": "fizzes / No fizz / less basic / acid",
+      "motionPurpose": "On the spoken cues: Left: `m6-clip-baking-soda-vinegar-before-v1.png` with coded label \"hydrochloric acid\"; on \"fizzes\" it crossfades to `m6-clip-baking-soda-vinegar-fizz-v1.png`, and a small pH bar beside it (acid end tinted, 7 marked) shows an arrow moving up toward 7, tag \"less acidic\". Right: the \"before\" plate alone with label \"sodium hydroxide solution\"; on \"No fizz\" a pen ring circles the quiet liquid; on \"less basic\" its pH bar",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-baking-soda-box-v1.png` top centre, small. Left: `m6-clip-baking-soda-vinegar-before-v1.png` with coded label \"hydrochloric acid\"; on \"fizzes\" it crossfades to `m6-clip-baking-soda-vinegar-fizz-v1.png`, and a small pH bar beside it (acid end tinted, 7 marked) shows an arrow moving up toward 7, tag \"less acidic\". Right: the \"before\" plate alone with label \"sodium hydroxide solution\"; on \"No fizz\" a pen ring circles the quiet liquid; on \"less basic\" its pH bar arrow moves down toward 7. The pH bars carry arrows only, no text tags (the narration says \"less acidic\" and \"less basic\"). Heading writes: \"One powder, two jobs?\" On \"acid\" both beaker labels dim and two small chips appear under the beakers: \"base here?\" (left) and \"acid here?\" (right). Bright at the end: the heading and the two chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Plate crossfade",
+        "chip pop",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "run-backwards",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; `m5x-ammonia-bottle-v1.png` small at the right.",
+      "teachingReason": "Run one equation backwards: Start with an equation you already know: ammonia in water.",
+      "narrationCue": "backwards / acid / base / back",
+      "motionPurpose": "On the spoken cues: The strip writes \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\"; the C01 hop plays once (water amber, ammonia violet). On \"backwards\" the teal token hops back from NH₄⁺ to OH⁻ along the same path, dashed. On \"acid\" NH₄⁺ gets an amber outline; on \"base\" OH⁻ gets a violet outline. On \"back\" both hops loop slowly, forward and reverse, with a tag on the ⇌ \"proton can go either way\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; `m5x-ammonia-bottle-v1.png` small at the right. The strip writes \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\"; the C01 hop plays once (water amber, ammonia violet). On \"backwards\" the teal token hops back from NH₄⁺ to OH⁻ along the same path, dashed. On \"acid\" NH₄⁺ gets an amber outline; on \"base\" OH⁻ gets a violet outline. On \"back\" both hops loop slowly, forward and reverse, with a tag on the ⇌ \"proton can go either way\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "conjugate-pairs",
+      "visualDecision": "new",
+      "visualReference": "the strip stays; the loop stops.",
+      "teachingReason": "Conjugate pairs: Each new species is linked to the one it came from.",
+      "narrationCue": "conjugate base / conjugate acid / conjugate pair / exactly one proton / opposite sides",
+      "motionPurpose": "On the spoken cues: On \"conjugate base\" an amber bracket draws above the strip from H₂O to OH⁻, tagged \"acid → conjugate base (−H⁺)\"; on \"conjugate acid\" a violet bracket draws below from NH₃ to NH₄⁺, tagged \"base → conjugate acid (+H⁺)\". On \"conjugate pair\" the two tags shrink to pair labels \"pair: H₂O / OH⁻\" and \"pair: NH₄⁺ / NH₃\". On \"exactly one proton\" the H counts and charges of each pair light in turn (H₂O to OH⁻: 2 H to 1 H, 0",
+      "motionRole": "explain",
+      "onScreenChange": "the strip stays; the loop stops. On \"conjugate base\" an amber bracket draws above the strip from H₂O to OH⁻, tagged \"acid → conjugate base (−H⁺)\"; on \"conjugate acid\" a violet bracket draws below from NH₃ to NH₄⁺, tagged \"base → conjugate acid (+H⁺)\". On \"conjugate pair\" the two tags shrink to pair labels \"pair: H₂O / OH⁻\" and \"pair: NH₄⁺ / NH₃\". On \"exactly one proton\" the H counts and charges of each pair light in turn (H₂O to OH⁻: 2 H to 1 H, 0 to −1; NH₃ to NH₄⁺: 3 H to 4 H, 0 to +1). On \"opposite sides\" each bracket's two ends pulse across the arrow. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Worked example: follow the proton: Try a harder one: hydrogen phosphate in water.",
+      "narrationCue": "loses / gains / H S O four minus",
+      "motionPurpose": "On the spoken cues: Task line: \"Identify the acid, the base and both conjugate pairs.\" Strip: \"HPO₄²⁻(aq) + H₂O(l) ⇌ H₂PO₄⁻(aq) + OH⁻(aq)\". The task line dims once the strip has written. On \"loses\" a pen underline runs under H₂O and OH⁻; H₂O gets an amber outline and the amber bracket draws above, labelled \"acid H₂O / OH⁻ (−H⁺)\". On \"gains\" the underline runs under HPO₄²⁻ and H₂PO₄⁻, violet outline, violet bracket below, labelled \"base",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line: \"Identify the acid, the base and both conjugate pairs.\" Strip: \"HPO₄²⁻(aq) + H₂O(l) ⇌ H₂PO₄⁻(aq) + OH⁻(aq)\". The task line dims once the strip has written. On \"loses\" a pen underline runs under H₂O and OH⁻; H₂O gets an amber outline and the amber bracket draws above, labelled \"acid H₂O / OH⁻ (−H⁺)\". On \"gains\" the underline runs under HPO₄²⁻ and H₂PO₄⁻, violet outline, violet bracket below, labelled \"base HPO₄²⁻ / H₂PO₄⁻ (+H⁺)\"; the token hops once from water to hydrogen phosphate. The first underline dims as the second writes. Bright: the strip and the two bracket labels. On \"H S O four minus\" the strip dims and a small chain writes \"H₂SO₄ → HSO₄⁻ → SO₄²⁻\" with a chip \"H₂SO₄ / SO₄²⁻\" that is crossed (caption \"one H⁺ at a time\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "conjugate-strength",
+      "visualDecision": "new",
+      "visualReference": "two strips stack: \"HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" and \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\".",
+      "teachingReason": "Conjugate strength explains the arrows: Pairs also explain the arrows from the strength video.",
+      "narrationCue": "no pull / real pull / weaker",
+      "motionPurpose": "On the spoken cues: On \"no pull\" an amber bracket joins HCl and Cl⁻ and a small pull meter beside Cl⁻ shows an empty bar; no reverse hop; the → pulses. On \"real pull\" the bracket joins CH₃COOH and CH₃COO⁻, its pull meter shows a part-filled bar, and the dashed reverse hop plays from H₃O⁺ to acetate; the ⇌ pulses. On \"weaker\" the pull meters dim and a see-saw icon writes between the two: \"stronger acid\" up on one side, \"weaker conjugate",
+      "motionRole": "explain",
+      "onScreenChange": "two strips stack: \"HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" and \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\". On \"no pull\" an amber bracket joins HCl and Cl⁻ and a small pull meter beside Cl⁻ shows an empty bar; no reverse hop; the → pulses. On \"real pull\" the bracket joins CH₃COOH and CH₃COO⁻, its pull meter shows a part-filled bar, and the dashed reverse hop plays from H₃O⁺ to acetate; the ⇌ pulses. On \"weaker\" the pull meters dim and a see-saw icon writes between the two: \"stronger acid\" up on one side, \"weaker conjugate base\" down on the other (no extra tag; the see-saw is the statement). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "amphiprotic",
+      "visualDecision": "new",
+      "visualReference": "the hook beakers return small at the top.",
+      "teachingReason": "Amphiprotic: baking soda explained: Now the baking soda.",
+      "narrationCue": "hydrogen carbonate / takes / gives / amphiprotic",
+      "motionPurpose": "On the spoken cues: On \"hydrogen carbonate\" a tile \"HCO₃⁻\" sits centre with a tag \"from NaHCO₃\". On \"takes\" the left strip writes \"HCO₃⁻(aq) + H₃O⁺(aq) → H₂CO₃(aq) + H₂O(l)\" with HCO₃⁻ outlined violet and the token hopping in; a short second line \"H₂CO₃(aq) → H₂O(l) + CO₂(g)\" writes under it while the fizz plate pulses. On \"gives\" the right strip writes \"HCO₃⁻(aq) + OH⁻(aq) → CO₃²⁻(aq) + H₂O(l)\" with HCO₃⁻ outlined amber and the token",
+      "motionRole": "explain",
+      "onScreenChange": "the hook beakers return small at the top. On \"hydrogen carbonate\" a tile \"HCO₃⁻\" sits centre with a tag \"from NaHCO₃\". On \"takes\" the left strip writes \"HCO₃⁻(aq) + H₃O⁺(aq) → H₂CO₃(aq) + H₂O(l)\" with HCO₃⁻ outlined violet and the token hopping in; a short second line \"H₂CO₃(aq) → H₂O(l) + CO₂(g)\" writes under it while the fizz plate pulses. On \"gives\" the right strip writes \"HCO₃⁻(aq) + OH⁻(aq) → CO₃²⁻(aq) + H₂O(l)\" with HCO₃⁻ outlined amber and the token hopping out; the quiet plate pulses. The left lines dim. On \"amphiprotic\" the HCO₃⁻ tile gets a split amber and violet outline and the word writes under it: \"amphiprotic: can give or take H⁺\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "proton-chain",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Spotting one: the middle of a proton chain: How do you spot one?",
+      "narrationCue": "proton chain / middle / amphiprotic / hydrogen phosphate",
+      "motionPurpose": "On the spoken cues: Chain 1 writes left to right: \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\"; only its first step carries the key arrows \"−H⁺ →\" above and \"← +H⁺\" below (later steps have plain arrows, so the labels do not repeat eight times). Chain 2 writes under it on \"Phosphoric acid\": \"H₃PO₄ ⇄ H₂PO₄⁻ ⇄ HPO₄²⁻ ⇄ PO₄³⁻\", each step lighting as it is named. On \"The ends\" H₃PO₄ gets an amber-only outline (\"gives only\") and PO₄³⁻ a violet-only outline",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Chain 1 writes left to right: \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\"; only its first step carries the key arrows \"−H⁺ →\" above and \"← +H⁺\" below (later steps have plain arrows, so the labels do not repeat eight times). Chain 2 writes under it on \"Phosphoric acid\": \"H₃PO₄ ⇄ H₂PO₄⁻ ⇄ HPO₄²⁻ ⇄ PO₄³⁻\", each step lighting as it is named. On \"The ends\" H₃PO₄ gets an amber-only outline (\"gives only\") and PO₄³⁻ a violet-only outline (\"takes only\"). On \"middle\" those two labels dim; HCO₃⁻, H₂PO₄⁻ and HPO₄²⁻ get split amber and violet outlines; tag \"middle = amphiprotic\". On \"hydrogen phosphate\" the tag dims and a chip \"a negative ion can't give a proton\" fades in by HPO₄²⁻ and is crossed (caption \"HPO₄²⁻ still has one to give\"). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "salt-equations",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; `m6-baking-soda-box-v1.png` small at the right; a mini chain \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\" sits small at the top right, HCO₃⁻ split-outlined.",
+      "teachingReason": "The syllabus salts: write both roles: Exam questions ask you to show this with equations, often for sodium hydrogen carbonate.",
+      "narrationCue": "sodium hydrogen carbonate / acid / base / double arrows / mildly basic",
+      "motionPurpose": "On the spoken cues: Task line: \"Show that HCO₃⁻ is amphiprotic.\" On \"sodium hydrogen carbonate\" line 1 writes: \"NaHCO₃(s) → Na⁺(aq) + HCO₃⁻(aq)\" with Na⁺ turning grey (tag \"spectator\", which dims at the end of its sentence). On \"acid\" the task line and line 1 dim; line 2 writes: \"HCO₃⁻(aq) + H₂O(l) ⇌ CO₃²⁻(aq) + H₃O⁺(aq)\" with HCO₃⁻ amber and the token hopping to water, and in the mini chain the step from HCO₃⁻ to CO₃²⁻ lights amber.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; `m6-baking-soda-box-v1.png` small at the right; a mini chain \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\" sits small at the top right, HCO₃⁻ split-outlined. Task line: \"Show that HCO₃⁻ is amphiprotic.\" On \"sodium hydrogen carbonate\" line 1 writes: \"NaHCO₃(s) → Na⁺(aq) + HCO₃⁻(aq)\" with Na⁺ turning grey (tag \"spectator\", which dims at the end of its sentence). On \"acid\" the task line and line 1 dim; line 2 writes: \"HCO₃⁻(aq) + H₂O(l) ⇌ CO₃²⁻(aq) + H₃O⁺(aq)\" with HCO₃⁻ amber and the token hopping to water, and in the mini chain the step from HCO₃⁻ to CO₃²⁻ lights amber. On \"base\" line 3 writes: \"HCO₃⁻(aq) + H₂O(l) ⇌ H₂CO₃(aq) + OH⁻(aq)\" with HCO₃⁻ violet and the token hopping from water, and the mini-chain step to H₂CO₃ lights violet (no step tags, no callback tag). On \"double arrows\" both ⇌ pulse. On \"mildly basic\" the mini chain dims and a small grey tag \"NaHCO₃(aq): mildly basic\" pins by the box. Bright: lines 2 and 3 and one tag. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "water-role",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Water's own role: Water sits in the middle of its own chain: hydronium, water, hydroxide.",
+      "narrationCue": "itself / a hydronium ion and a hydroxide ion / two water molecules in a billion / equal numbers / neutral",
+      "motionPurpose": "On the spoken cues: Chain: \"H₃O⁺ ⇄ H₂O ⇄ OH⁻\" with H₂O split-outlined. On \"itself\" a lens shows two pale blue water molecules; one (amber) hops a token to the other (violet); on \"a hydronium ion and a hydroxide ion\" the product H₃O⁺ and OH⁻ pulse once together. The strip writes \"H₂O(l) + H₂O(l) ⇌ H₃O⁺(aq) + OH⁻(aq)\" with the two pair brackets \"H₂O / OH⁻\" (amber) and \"H₂O / H₃O⁺\" (violet). The chain dims, and the pair brackets dim when",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Chain: \"H₃O⁺ ⇄ H₂O ⇄ OH⁻\" with H₂O split-outlined. On \"itself\" a lens shows two pale blue water molecules; one (amber) hops a token to the other (violet); on \"a hydronium ion and a hydroxide ion\" the product H₃O⁺ and OH⁻ pulse once together. The strip writes \"H₂O(l) + H₂O(l) ⇌ H₃O⁺(aq) + OH⁻(aq)\" with the two pair brackets \"H₂O / OH⁻\" (amber) and \"H₂O / H₃O⁺\" (violet). The chain dims, and the pair brackets dim when the beaker appears. On \"conducts\" `m6-beaker-v1.png` with label \"very pure water\" appears small with a coded faint current symbol; its label dims at the end of the sentence. On \"two water molecules in a billion\" the lens zooms out into a sea of pale blue water with one hydronium and one hydroxide far apart; tag \"about 2 in a billion have given H⁺\". On \"equal numbers\" the two ions pulse together and the tag dims; on \"neutral\" a tag writes \"neutral: equal H₃O⁺ and OH⁻\". Bright at the end: the strip and the neutral tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "exactly one proton / Amphi means both",
+      "motionPurpose": "On the spoken cues: The first aid writes large and handwritten: \"A conjugate pair differs by exactly one H⁺.\" (No small sub-line; the narration carries \"take one off, add one\" and key note 1 holds it.) On \"Amphi means both\" the first aid dims slightly and the second line writes: \"Amphi means both: the middle of the chain goes either way\", with a tiny chain \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\" and the middle box split-outlined. On \"stronger the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The first aid writes large and handwritten: \"A conjugate pair differs by exactly one H⁺.\" (No small sub-line; the narration carries \"take one off, add one\" and key note 1 holds it.) On \"Amphi means both\" the first aid dims slightly and the second line writes: \"Amphi means both: the middle of the chain goes either way\", with a tiny chain \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\" and the middle box split-outlined. On \"stronger the acid\" the see-saw icon from scene 5 returns small, no new text. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Potassium dihydrogen phosphate is used in",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Potassium dihydrogen phosphate, KH₂PO₄, is used in foods as an acidity regulator. Write an equation for KH₂PO₄ dissolving in water. Then write two equations, each with water as the reaction partner, to show that the dihydrogen phosphate ion is amphiprotic.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no chains, no strips, no aid.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "potassium ions / hydrogen phosphate / phosphoric acid / one",
+      "motionPurpose": "On the spoken cues: On \"potassium ions\" \"KH₂PO₄ dissolving\" is underlined and \"KH₂PO₄(s) → K⁺(aq) + H₂PO₄⁻(aq)\" writes (K⁺ grey). On \"hydrogen phosphate\" \"amphiprotic\" is underlined and \"H₂PO₄⁻(aq) + H₂O(l) ⇌ HPO₄²⁻(aq) + H₃O⁺(aq)\" writes (H₂PO₄⁻ amber, no tag); the dissolving line dims. On \"phosphoric acid\" \"H₂PO₄⁻(aq) + H₂O(l) ⇌ H₃PO₄(aq) + OH⁻(aq)\" writes (violet, no tag; the colours carry acid and base as in scene 8). A thumbnail",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"potassium ions\" \"KH₂PO₄ dissolving\" is underlined and \"KH₂PO₄(s) → K⁺(aq) + H₂PO₄⁻(aq)\" writes (K⁺ grey). On \"hydrogen phosphate\" \"amphiprotic\" is underlined and \"H₂PO₄⁻(aq) + H₂O(l) ⇌ HPO₄²⁻(aq) + H₃O⁺(aq)\" writes (H₂PO₄⁻ amber, no tag); the dissolving line dims. On \"phosphoric acid\" \"H₂PO₄⁻(aq) + H₂O(l) ⇌ H₃PO₄(aq) + OH⁻(aq)\" writes (violet, no tag; the colours carry acid and base as in scene 8). A thumbnail chain \"H₃PO₄ ⇄ H₂PO₄⁻ ⇄ HPO₄²⁻ ⇄ PO₄³⁻\" sits beside with one-step arrows from H₂PO₄⁻. On \"one\" a chip \"H₂PO₄⁻ + H₂O ⇌ PO₄³⁻ + ...\" fades in and is crossed (caption \"one H⁺ per step\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"NH₄⁺(aq) + CO₃²⁻(aq) ⇌ NH₃(aq) + HCO₃⁻(aq).",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. The equation shows ammonium ions reacting",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"NH₄⁺(aq) + CO₃²⁻(aq) ⇌ NH₃(aq) + HCO₃⁻(aq). Identify the two conjugate acid-base pairs in this reaction, and state which species is the Brønsted-Lowry acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no brackets, no outlines.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "loses / gains / same side",
+      "motionPurpose": "On the spoken cues: On \"loses\" NH₄⁺(aq) and NH₃(aq) in the equation are underlined, the amber bracket draws above them, \"pair: NH₄⁺ / NH₃\", and the chip \"Acid: NH₄⁺ (donates H⁺)\" pins. On \"gains\" CO₃²⁻(aq) and HCO₃⁻(aq) are underlined, violet bracket below, \"pair: CO₃²⁻ / HCO₃⁻\"; the token hops once from NH₄⁺ to CO₃²⁻. On \"same side\" a chip \"NH₄⁺ / CO₃²⁻\" fades in and is crossed (caption \"partners are on opposite sides, one H⁺ apart\").",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"loses\" NH₄⁺(aq) and NH₃(aq) in the equation are underlined, the amber bracket draws above them, \"pair: NH₄⁺ / NH₃\", and the chip \"Acid: NH₄⁺ (donates H⁺)\" pins. On \"gains\" CO₃²⁻(aq) and HCO₃⁻(aq) are underlined, violet bracket below, \"pair: CO₃²⁻ / HCO₃⁻\"; the token hops once from NH₄⁺ to CO₃²⁻. On \"same side\" a chip \"NH₄⁺ / CO₃²⁻\" fades in and is crossed (caption \"partners are on opposite sides, one H⁺ apart\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Follow the proton: loses H⁺ = acid; gains H⁺ = base.\"",
+      "teachingReason": "Decision rule and handoff: So for any acid-base equation, follow the proton, then pair each species with its partner one proton away on the other side, and check the charge changes by one.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Pair across the arrow: one H⁺ apart, charge changes by 1.\" \"3 Amphiprotic ion: one equation giving H⁺ to water, one taking H⁺ from water.\" On \"Next\" a chip \"Next: calculating pH for strong acids and bases\" appears with the scene 9 strip \"H₂O + H₂O ⇌ H₃O⁺ + OH⁻\" small.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Follow the proton: loses H⁺ = acid; gains H⁺ = base.\" \"2 Pair across the arrow: one H⁺ apart, charge changes by 1.\" \"3 Amphiprotic ion: one equation giving H⁺ to water, one taking H⁺ from water.\" On \"Next\" a chip \"Next: calculating pH for strong acids and bases\" appears with the scene 9 strip \"H₂O + H₂O ⇌ H₃O⁺ + OH⁻\" small. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c06-learning-review.md",
+      "sha256": "12013f3055d5255b13f89dcc13e0bdae2f14e07e3585d993afd50505bbd1220a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c06-claude-science-check.md",
+      "sha256": "02c2396d7ee7d4be0ca8b31e7823d1d2b343c15b4e584964fdc57ce3370d9fd6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

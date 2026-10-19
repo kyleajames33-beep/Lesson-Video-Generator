@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b05/lesson.json",
+    "lessonSha256": "64be0487e3fd5228203eed70a9d1cd28db1d82c3a061b69dfee083b692635d34"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B5a: mitosis gives two identical daughter cells, and a body grows from one zygote by mitosis. From B5b: meiosis makes gametes; fertilisation makes a zygote. From B6b: a gene is a stretch of DNA coding for a polypeptide; RNA polymerase binds the promoter before copying the gene into mRNA. From B6c: codons are translated into amino acids. From B9: a heterozygous parent passes an allele to each child with a one in two chance. From bg03 (Module 5, G03): a BRCA variant raises cancer risk without guaranteeing cancer. From b01: a mutation makes a new allele; in animals a mutation is passed on only if it is in a cell that makes eggs or sperm, and a skin-cell mutation affects only that animal. From b02: UV damages skin cells. From b03: silent, missense, nonsense, frameshift. From b04: chromosomal mutations, including the somatic leukaemia swap. Not assumed: somatic and germ-line as named mutation types with their effects, coding and non-coding DNA, regulatory sequence, intron, lactase persistence.",
+    "startsWith": "Place the same mutation in a body cell or a germ-line cell, and in a coding or non-coding stretch. The video opens: In 2013, Angelina Jolie said she carried a mutation in a gene called B R C A one.",
+    "stopsAfter": "distinguishing somatic mutations (in body cells; copied by mitosis into a patch of descendant cells, larger if earlier; can affect that organism, including by starting a cancer; not inherited in animals) from germ-line mutations (in cells that make gametes; present in every cell of an offspring that inherits it, including its germ cells, so it can be passed on and enter the gene pool, while the parent in which it arose is unaffected); stating that only about 1 to 2 per cent of human DNA codes for protein; explaining that a coding mutation changes a codon (silent, missense, nonsense, frameshift) while a mutation in a promoter or regulatory sequence changes how much, when or where a gene is expressed with every codon unchanged (lactase persistence); explaining that a change in an intron usually has no effect unless it hits the cut signal, and that some non-coding DNA has no known job; assessing coding against non-coding significance by what the changed stretch does, not by whether it is translated; combining both questions in a two-by-two grid; applying this to an unseen fruit fly distinguish item and an unseen promoter against silent substitution assess item.",
+    "nextLesson": "practise mutation effects on exam-style questions (route entry bio-m6-g01), then how meiosis and fertilisation vary offspring (bio-m6-b07)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b05.md"
+  ],
+  "teaching": {
+    "task": "A mutation's effect depends on where it happens, so where in the body and where in the DNA, and what difference does each make?",
+    "causalExplanation": "Causes: why a somatic mutation stays in a patch (mitosis copies it only into the mutated cell's descendants, 3); why timing changes the patch (an earlier cell has more descendants, 3); why a patch can become a cancer (more mutations in division-control genes, 3); why a germ-line mutation reaches every cell of the offspring (it is in the zygote, 4) and can go on (it reaches the offspring's germ cells, 4); why the parent is unaffected (only its germ line carries it, 4); why a promoter change matters with every codon correct (the polymerase binds less well, less mRNA, 7); why lactase persistence keeps lactase (the switch stays on, 8); why most intron changes do nothing but a cut-signal change can (introns are removed; the cut signal decides what is kept, 9); why neither coding nor non-coding wins as a rule (significance follows what the stretch does, 10). Visible case: one tree of cells carries every somatic and germ-line idea; one gene map carries every coding and non-coding idea; one grid joins them. Video advantage: the patch grows as cells divide, a whole tree lights from one zygote, the polymerase slips and the amount bar falls, the intron lifts out. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 2 card is the densest frame and is the task itself.",
+    "conversationalApproach": "The same BRCA1 change, inherited in every cell or arising later in one breast cell, sets two questions: where in the body, and where in the DNA; the cell lineage tree shows somatic and germ-line cells before they are named, then a somatic mutation filling only one patch (larger if earlier, sometimes a cancer) and a germ-line mutation reaching every cell and the next generation; the distinction answers the hook; the gene map then shows coding DNA, control stretches (promoter, regulatory sequences) and lactase persistence as a real regulatory change that spread in milk-drinking populations; introns and DNA with no known job are placed; coding against non-coding is a judgement, not a rule; a two-by-two grid joins both questions. Two exam questions follow with brief feedback, then the decision rule hands off to the mutation practice video (g01).",
+    "openingDecision": "In 2013, Angelina Jolie said she carried a mutation in a gene called B R C A one. She'd inherited it, so it was in every cell of her body, and her doctors estimated her breast cancer risk at eighty-seven per cent. But the same change can also happen later in life, in a single breast cell, and then no child can inherit it. So why does it matter which cell a mutation is in, and which part of the DNA?",
+    "understandingCheck": "13a is a distinguish item on fruit flies exposed to X-rays as larvae: fly A has a mutation in one developing eye cell and grows up with a small patch of white facets in one red eye; fly B has a mutation in a cell that makes sperm and looks normal. (a) Identify each as somatic or germ-line; (b) explain how their effects differ on the fly itself and on its offspring. It tests both halves of the B6-IQ1-03 verb (scenes 3 to 5). 13c is an assess item: two substitutions in one enzyme gene, P in the promoter (cells make about a tenth as much mRNA) and Q in the coding sequence (codon CUU to CUC, chart excerpt given), against a student's claim that Q matters more because it is coding. It tests B6-IQ1-04's verb: a judgement with a reason for each segment type. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 s): answer, key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ1-03: \"distinguish between somatic mutations and germ-line mutations and their effect on an organism   (ACSBL082, ACSBL083)\". B6-IQ1-04: \"assess the significance of ‘coding’ and ‘non-coding’ DNA segments in the process of mutation (ACSBL078)\". The three spaces before \"(ACSBL082\" and the curly quotes around ‘coding’ and ‘non-coding’ are in the official DOCX extraction and are kept verbatim in the YouTube block. This video owns first coverage of both rows; update the ledger rows for B6-IQ1-03 and B6-IQ1-04 when this design passes review. The two verbs are carried by the attempts: \"distinguish ... and their effect on an organism\" (attempt 1, both halves) and \"assess\" (attempt 2, a judgement with reasons)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Two boards, then one grid that joins them. (1) The cell lineage board (scenes 1 to 5): a coded `CellTree`, one cream zygote circle at the top dividing downward into rows of small cell circles (1, 2, 4, 8, then a dense fan of about 60), drawn in thin ink like a family tree; a mutation is an amber dot inside a cell, and every cell descended from it fills with a pale amber tint as the tree grows. A small side branch is tinted plum and labelled once, \"germ line\" (the cells that make eggs or sperm); the rest is cream, \"body (somatic)\". Real objects are painted and sit beside the tree, never inside it: `m6-uv-skin-v1.png` and `m8-skin-melanoma-v1.png` (skin), `m6-egg-sperm-dish-v1.png` and `b3a-sperm-v1.png` (gametes). No people: the hook names a person but shows only a chromosome pair and cells. (2) The gene map (scenes 6 to 10): one long b01 `SlimStrand` across the board with regions as soft bands: a far control stretch (teal, small), the promoter (teal), the gene's coding stretches (warm bands) separated, from scene 9, by introns (thin grey loops lifted slightly above the strand), and long plain grey stretches either side. A coded RNA polymerase blob (B6b's look) sits on the promoter; an mRNA row (typeset terracotta text, codons spaced, as in b03) and a coded protein blob with a small amount bar sit above. A mutation is one amber rung with b01's `BaseSwap` callout. Codons are typeset text, never tiles; the strand stays slim. (3) The grid (scene 11): two by two, columns \"somatic\" and \"germ line\", rows \"coding\" and \"non-coding\", each cell holding one small icon and two to five words. Clutter rule (owner, 19 Oct): at most about three bright text items on screen at once besides small grey region labels; each tag fades when the next cue lands; the tree's \"germ line\" and \"body\" labels fade after scene 2 and return only in scene 5.",
+    "transitionPlan": "The hook's chromosome pair and two cell trees open the cell lineage board; the trees grow, tint and return small for the distinction; the card clears to the gene map, where bands, the polymerase blob, the mRNA row and the protein bar change on each cue and introns lift above the strand; the lactase plate sits beside the map; the map dims and shrinks for the judgement and gives way to the two-by-two grid; memory lines write on large; each attempt clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "no person is drawn. A coded chromosome 17 pair (b04's HSC-style bar look, cream fill, ink outline, small) sits at the left with one band ringed amber on one bar (tag \"BRCA1, chromosome 17\"; grey tag \"2013\").",
+      "teachingReason": "Hook (one gene, two places): In 2013, Angelina Jolie said she carried a mutation in a gene called B R C A one.",
+      "narrationCue": "inherited it / eighty-seven per cent / her doctors' estimate / a single breast cell / no child can inherit it / which part of the DNA",
+      "motionPurpose": "On the spoken cues: On \"inherited it\" the `CellTree` draws in at the right from one zygote circle with the amber dot already inside; as the tree divides down to a fan of about 60 cells, every cell takes the dot (tag \"inherited: in every cell\", replacing the chromosome tag). On \"eighty-seven per cent\" a small tag \"87%\"",
+      "motionRole": "explain",
+      "onScreenChange": "no person is drawn. A coded chromosome 17 pair (b04's HSC-style bar look, cream fill, ink outline, small) sits at the left with one band ringed amber on one bar (tag \"BRCA1, chromosome 17\"; grey tag \"2013\"). On \"inherited it\" the `CellTree` draws in at the right from one zygote circle with the amber dot already inside; as the tree divides down to a fan of about 60 cells, every cell takes the dot (tag \"inherited: in every cell\", replacing the chromosome tag). On \"eighty-seven per cent\" a small tag \"87%\" writes under it with the grey caption \"her doctors' estimate\" (no chart). On \"a single breast cell\" a second tree draws beside the first, fully grown with no dots; one cell low in one branch turns amber and only the few cells below it tint (tag \"arises in one cell: a patch\"; the first tree's tag fades). On \"no child can inherit it\" a small gamete circle under the second tree stays plain with a grey stop bar. On \"which part of the DNA\" both trees shrink to the left and a short `SlimStrand` slides in on the right with one warm band and one grey band, an amber rung blinking in each in turn (no tags). The heading writes on: \"Where it happens matters\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "two-kinds",
+      "visualDecision": "adjust",
+      "visualReference": "the hook clears.",
+      "teachingReason": "Two kinds of cells: As far as mutations go, your body has two kinds of cells.",
+      "narrationCue": "somatic cells / germ-line cells / the gametes themselves",
+      "motionPurpose": "On the spoken cues: One grown `CellTree` fills the centre, all cells cream. On \"somatic cells\" most of the fan tints cream-gold and the label \"somatic: body cells\" writes beside it; three tiny grey sub-tags, \"skin\", \"muscle\", \"liver\", write along the fan edge one per word and fade together. On \"germ-line cells\" one",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. One grown `CellTree` fills the centre, all cells cream. On \"somatic cells\" most of the fan tints cream-gold and the label \"somatic: body cells\" writes beside it; three tiny grey sub-tags, \"skin\", \"muscle\", \"liver\", write along the fan edge one per word and fade together. On \"germ-line cells\" one small side branch tints plum and its label writes on, \"germ line: makes eggs or sperm\"; on \"the gametes themselves\" the painted `b3a-sperm-v1.png` and `b3a-egg-v1.png` appear small at the branch tip, joined by a thin line (no tag). The two labels fade as the scene ends. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "somatic",
+      "visualDecision": "adjust",
+      "visualReference": "the painted `m6-uv-skin-v1.png` sits small at the upper left (no tag).",
+      "teachingReason": "A somatic mutation: a patch, and sometimes a cancer: Say a mutation happens in one skin cell.",
+      "narrationCue": "somatic mutation",
+      "motionPurpose": "On the spoken cues: On \"one skin cell\" the camera pushes into one low branch of the tree; one cell takes an amber dot. On \"divides by mitosis\" that cell splits into two with the dot copied into both (B5a's split timing), then four, then eight; each new cell tints pale amber as it forms, and the cells around stay cream",
+      "motionRole": "explain",
+      "onScreenChange": "the painted `m6-uv-skin-v1.png` sits small at the upper left (no tag). On \"one skin cell\" the camera pushes into one low branch of the tree; one cell takes an amber dot. On \"divides by mitosis\" that cell splits into two with the dot copied into both (B5a's split timing), then four, then eight; each new cell tints pale amber as it forms, and the cells around stay cream (tag \"copied into its daughter cells\"). On \"a patch of cells\" the camera pulls back so the patch reads against the whole fan (tag replaced by \"a patch: the rest is normal\"). On \"somatic mutation\" that tag fades and the term writes on with the gloss \"in a body cell\". On \"the earlier it happens\" a small inset tree beside it replays with the dot landing at the second generation, so half its fan tints (no tag), then the inset fades. On \"controls cell division\" a second, then a third amber dot land inside the patch (tag \"more mutations\"); on \"keep dividing\" the patch's cells divide again and again, crowding past their neighbours. On \"skin cancers\" the tree shrinks aside and the painted `m8-skin-melanoma-v1.png` appears small beside the UV plate (tag \"melanoma\"); the term, gloss and \"more mutations\" tag fade. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "germ-line",
+      "visualDecision": "adjust",
+      "visualReference": "one grown tree at the left, its plum germ-line branch bright.",
+      "teachingReason": "A germ-line mutation: every cell, and onward: A germ-line mutation is different.",
+      "narrationCue": "germ-line mutation",
+      "motionPurpose": "On the spoken cues: On \"germ-line mutation\" the term writes on with the gloss \"in a cell that makes gametes\". On \"a cell that makes sperm\" one plum cell takes an amber dot, which copies into a few small sperm icons (`b3a-sperm-v1.png`) at the branch tip. On \"fertilises an egg\" one dotted sperm travels right into the",
+      "motionRole": "explain",
+      "onScreenChange": "one grown tree at the left, its plum germ-line branch bright. On \"germ-line mutation\" the term writes on with the gloss \"in a cell that makes gametes\". On \"a cell that makes sperm\" one plum cell takes an amber dot, which copies into a few small sperm icons (`b3a-sperm-v1.png`) at the branch tip. On \"fertilises an egg\" one dotted sperm travels right into the painted `m6-egg-sperm-dish-v1.png` (small), and a zygote circle with the amber dot appears beside it. On \"every cell copied from the zygote\" a new tree grows from that zygote and every cell takes the dot (tag \"every cell\"). The term and gloss fade. On \"own germ cells\" the new tree's plum branch pulses and a thin arrow runs from it to a third small zygote circle with the dot (tag \"passed on again\", replacing \"every cell\"); on \"gene pool\" the arrow ends at a small grey chip \"gene pool\". On \"body isn't affected\" the first tree's body cells, which carry no dot, take a small grey tick (no tag). On \"recessive\" a grey tag beside the new tree: \"one copy, recessive: may show nothing\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "distinction",
+      "visualDecision": "new",
+      "visualReference": "the hook's two trees return small at the top, left fully amber, right with its patch.",
+      "teachingReason": "The distinction: So that's Jolie's case.",
+      "narrationCue": "including those that make eggs / one in two chance / copied only into one cell's descendants / part of one organism / isn't inherited / add to the gene pool",
+      "motionPurpose": "On the spoken cues: On \"including those that make eggs\" the left tree's plum branch rings amber; on \"one in two chance\" two small egg circles split from it, one with the dot, one without (tag \"each egg: 1 in 2\"); the tag fades. The two trees then dim, and a two-column card writes on beneath them, headings \"somatic\"",
+      "motionRole": "explain",
+      "onScreenChange": "the hook's two trees return small at the top, left fully amber, right with its patch. On \"including those that make eggs\" the left tree's plum branch rings amber; on \"one in two chance\" two small egg circles split from it, one with the dot, one without (tag \"each egg: 1 in 2\"); the tag fades. The two trees then dim, and a two-column card writes on beneath them, headings \"somatic\" (cream cell icon with an amber patch) and \"germ line\" (plum cell icon with an amber dot). Three short rows fill, each pair of cells writing together on its cue, and each finished row dims to grey as the next one writes: on \"copied only into one cell's descendants\", \"where\" (\"one body cell's descendants\" | \"a cell that makes gametes\"); on \"part of one organism\", \"affects\" (\"part of one organism\" | \"every cell of offspring\"); on \"isn't inherited\" and \"every cell of the next generation\", \"inherited?\" (\"no (animals)\" | \"can be\"). On \"add to the gene pool\" the \"inherited?\" row brightens again and the \"can be\" cell takes a small amber \"gene pool\" chip (no bottom line). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "coding",
+      "visualDecision": "new",
+      "visualReference": "the card clears.",
+      "teachingReason": "The second question: coding DNA: Now the second question, where in the DNA?",
+      "narrationCue": "coding DNA / non-coding DNA",
+      "motionPurpose": "On the spoken cues: The `GeneMap` draws across the board: one long `SlimStrand`, mostly plain grey, with a short gene in the middle shown as three warm bands. On \"one to two per cent\" a thin bar under the board fills a sliver warm against a long grey remainder (tag \"coding: about 1 to 2%\"). On \"coding DNA\" the tag",
+      "motionRole": "explain",
+      "onScreenChange": "the card clears. The `GeneMap` draws across the board: one long `SlimStrand`, mostly plain grey, with a short gene in the middle shown as three warm bands. On \"one to two per cent\" a thin bar under the board fills a sliver warm against a long grey remainder (tag \"coding: about 1 to 2%\"). On \"coding DNA\" the tag fades, the term writes on with the gloss \"codons translated into protein\", and the warm bands brighten. On \"alters a codon\" the term and gloss fade; one amber rung lands in a warm band (no callout); above it a short typeset mRNA row (terracotta, three codons) shows one codon changing, and four small result chips write on one per spoken outcome, \"same\", \"swapped\", \"stop\", \"shifted\" (no grey tag). The chips and mRNA row fade together on \"The rest\". On \"non-coding DNA\" the grey stretches brighten slightly and the term writes on with the gloss \"not translated into protein\"; on \"junk\" a small chip \"junk?\" writes on. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "regulatory",
+      "visualDecision": "new",
+      "visualReference": "the \"junk?\" chip takes a grey scribble cross and fades, with the non-coding term and gloss.",
+      "teachingReason": "Non-coding DNA that controls a gene: But some non-coding DNA controls genes.",
+      "narrationCue": "regulatory sequences",
+      "motionPurpose": "On the spoken cues: A teal band just before the gene lights, labelled small \"promoter\"; the coded RNA polymerase blob settles on it, an mRNA row grows from the gene, and a protein blob with a `FillBar` at full sits above (tag \"normal: plenty of protein\"). On \"Change a base there\" one amber rung lands in the promoter",
+      "motionRole": "explain",
+      "onScreenChange": "the \"junk?\" chip takes a grey scribble cross and fades, with the non-coding term and gloss. A teal band just before the gene lights, labelled small \"promoter\"; the coded RNA polymerase blob settles on it, an mRNA row grows from the gene, and a protein blob with a `FillBar` at full sits above (tag \"normal: plenty of protein\"). On \"Change a base there\" one amber rung lands in the promoter band; on \"bind less well\" the polymerase blob wobbles and slips off twice before binding; the mRNA row grows thinner and the `FillBar` drops to a sliver (tag replaced by \"less mRNA, less protein\"). On \"Every codon is still correct\" the warm bands take small ticks (no new tag). On \"regulatory sequences\" the ticks and the \"less\" tag fade; a small teal band far to the left lights, a thin dashed arc joins it to the promoter, and the term writes on with the gloss \"control when, where and how much a gene is copied\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "lactase",
+      "visualDecision": "adjust",
+      "visualReference": "the painted `b2c-milk-glass-bench-v1.png` sits small at the upper left (tag \"lactase: digests milk sugar\").",
+      "teachingReason": "A real one: milk into adulthood: Most mammals stop making lactase, the enzyme that digests milk sugar, after weaning.",
+      "narrationCue": "stop making lactase / keep making it / one base change / fourteen thousand bases / identical / stays switched on",
+      "motionPurpose": "On the spoken cues: The gene map relabels in small grey: \"lactase gene\" under the gene, \"regulatory sequence\" under the far teal band (the term from scene 7 has faded). On \"stop making lactase\" a small `FillBar` under the protein blob runs from full to empty along a tiny coded timeline \"birth, weaning, adult\" (tag",
+      "motionRole": "explain",
+      "onScreenChange": "the painted `b2c-milk-glass-bench-v1.png` sits small at the upper left (tag \"lactase: digests milk sugar\"). The gene map relabels in small grey: \"lactase gene\" under the gene, \"regulatory sequence\" under the far teal band (the term from scene 7 has faded). On \"stop making lactase\" a small `FillBar` under the protein blob runs from full to empty along a tiny coded timeline \"birth, weaning, adult\" (tag \"usual: off after weaning\", replacing the milk tag). On \"keep making it\" the tag fades. On \"one base change\" one amber rung lands in the far teal band (no letters); on \"fourteen thousand bases\" a dimension line spans from that band to the gene, labelled \"about 14,000 bases\". On \"identical\" the protein blob duplicates beside itself with a small \"=\" between the two (no tag). On \"stays switched on\" the timeline replays and the `FillBar` stays full at \"adult\" (tag \"lactase persistence: stays on\"). On \"inherited\" a small plum germ-line icon (from scene 4) sits beside the band with an arrow to two small cell circles, both with the amber dot (no tag); on \"helped milk drinkers\" the milk glass plate brightens beside the dotted circles, and on \"spread\" a short row of small circles fills with dots from left to right (no tag). Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "introns",
+      "visualDecision": "new",
+      "visualReference": "the gene map returns to the plain gene, labels cleared.",
+      "teachingReason": "Introns, and DNA with no known job: Non-coding DNA sits inside genes too.",
+      "narrationCue": "introns",
+      "motionPurpose": "On the spoken cues: The warm bands separate slightly and two thin grey loops rise between them. On \"introns\" the term writes on with the gloss \"cut out of the mRNA\"; the mRNA row above copies the whole gene, loops included, then the loops lift out of the mRNA and the warm pieces slide together (`IntronCut`; tag \"cut",
+      "motionRole": "explain",
+      "onScreenChange": "the gene map returns to the plain gene, labels cleared. The warm bands separate slightly and two thin grey loops rise between them. On \"introns\" the term writes on with the gloss \"cut out of the mRNA\"; the mRNA row above copies the whole gene, loops included, then the loops lift out of the mRNA and the warm pieces slide together (`IntronCut`; tag \"cut out before translation\"). The tag fades. On \"in the middle of an intron\" one amber rung lands mid-loop; the cut replays normally and the protein blob takes a tick (tag \"usually no effect\"). On \"the signal that marks where to cut\" the rung moves to the loop's edge, where a small dark mark sits (screen label \"cut signal\"); the cut replays with one warm piece lifting out along with the loop, and the protein blob comes out shorter with an amber ring (tag replaced by \"wrong cut: protein changes\"). The term and gloss fade. On \"no known job\" the long grey stretches either side take a small grey label \"no known job\", and an amber rung lands in one with nothing else changing (tag \"often neutral\", replacing the last). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "which-matters",
+      "visualDecision": "new",
+      "visualReference": "the gene map dims and shrinks to the top.",
+      "teachingReason": "So, coding or non-coding?: So which matters more, coding or non-coding?",
+      "narrationCue": "What counts",
+      "motionPurpose": "On the spoken cues: Two small cases slide in beneath it: left, a warm coding band with an amber rung and the chip \"same amino acid\" (tag \"coding, but silent\"); right, the teal promoter band with an amber rung and the near-empty `FillBar` (tag \"non-coding, but gene off\"). On \"What counts\" the two tags fade and one line",
+      "motionRole": "explain",
+      "onScreenChange": "the gene map dims and shrinks to the top. Two small cases slide in beneath it: left, a warm coding band with an amber rung and the chip \"same amino acid\" (tag \"coding, but silent\"); right, the teal promoter band with an amber rung and the near-empty `FillBar` (tag \"non-coding, but gene off\"). On \"What counts\" the two tags fade and one line writes on across the bottom: \"ask what the stretch does, not whether it's translated\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "both-together",
+      "visualDecision": "new",
+      "visualReference": "`Grid2x2`.",
+      "teachingReason": "Both questions together: Put the two questions together.",
+      "narrationCue": "who it can affect / what it does / a skin cell's gene / lactase persistence",
+      "motionPurpose": "On the spoken cues: On \"who it can affect\" the columns write on, \"somatic\" and \"germ line\", with small sub-captions \"this organism\" and \"and descendants\"; on \"what it does\" the rows write on, \"coding\" and \"non-coding\", with sub-captions \"changes a protein\" and \"changes how much is made\". The sub-captions fade once all",
+      "motionRole": "explain",
+      "onScreenChange": "`Grid2x2`. On \"who it can affect\" the columns write on, \"somatic\" and \"germ line\", with small sub-captions \"this organism\" and \"and descendants\"; on \"what it does\" the rows write on, \"coding\" and \"non-coding\", with sub-captions \"changes a protein\" and \"changes how much is made\". The sub-captions fade once all four headings are on. Cells fill one per cue, each with one icon and two to five words: on \"a skin cell's gene\", somatic and coding: the melanoma plate thumbnail, \"skin cancer (UV)\"; on \"lactase persistence\", germ line and non-coding: the milk glass thumbnail, \"lactase persistence\". The other two cells write on silently as the narration ends: somatic and non-coding, a promoter band icon with a full `FillBar`, \"melanoma: a gene switched on\"; germ line and coding, the hook's chromosome pair icon, \"inherited BRCA1\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on large, one per cue.",
+      "teachingReason": "Memory: Two things to hold on to.",
+      "narrationCue": "plants / Ask what the stretch does",
+      "motionPurpose": "On the spoken cues: \"Somatic stays with you. Germ line can go to your kids.\" with a small patch-tree icon and a germ-line arrow icon. On \"plants\" a grey tag writes under it, \"animals; in plants, a mutated shoot can flower\", with a tiny coded shoot outline, one branch amber, ending in an amber flower; the tag fades.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on large, one per cue. \"Somatic stays with you. Germ line can go to your kids.\" with a small patch-tree icon and a germ-line arrow icon. On \"plants\" a grey tag writes under it, \"animals; in plants, a mutated shoot can flower\", with a tiny coded shoot outline, one branch amber, ending in an amber flower; the tag fades. Second line: \"Non-coding doesn't mean unimportant.\" with the promoter band icon; on \"Ask what the stretch does\" the small line \"what does it do?\" writes beneath it. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears: no trees, maps or grid.",
+      "teachingReason": "Unseen transfer task (attempt one (two flies)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First, fruit fly larvae",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two flies))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no trees, maps or grid. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with the painted `m6-fly-eye-white-patch-v1.png` (new, labelled \"fly A\") and `m5x-fly-red-eye-v1.png` (\"fly B\") small at its upper left: \"Fruit fly (*Drosophila*) larvae were exposed to X-rays. In fly A, a mutation occurred in one cell that later formed part of an eye. The adult fly A had a small patch of white facets in one red eye. In fly B, a mutation occurred in a cell that produces sperm. Fly B looked normal.\" Demands: \"(a) Identify the type of mutation in fly A and in fly B. (2 marks)\" \"(b) Explain how the effects of the two mutations differ, on the fly in which each occurred and on its offspring. (4 marks)\". Two answer boxes. Nothing answer-bearing: no trees, no \"somatic\" or \"germ line\" labels. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top (both plates and the stem stay readable).",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Fly A's is somatic / only a patch changed / Fly B's is germ-line / some offspring have it in every cell / the classic mistake",
+      "motionPurpose": "On the spoken cues: (1) On \"Fly A's is somatic\" \"one cell that later formed part of an eye\" underlines amber; box (a) fills \"A: somatic\". On \"only a patch changed\" a small `CellTree` beside the fly A plate shows one amber cell and its tinted patch; box (b) fills \"A: a patch of the eye only (copied by mitosis); not in",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top (both plates and the stem stay readable). (1) On \"Fly A's is somatic\" \"one cell that later formed part of an eye\" underlines amber; box (a) fills \"A: somatic\". On \"only a patch changed\" a small `CellTree` beside the fly A plate shows one amber cell and its tinted patch; box (b) fills \"A: a patch of the eye only (copied by mitosis); not in gametes, so offspring cannot inherit the white-eye patch from it\". (2) On \"Fly B's is germ-line\" \"a cell that produces sperm\" and \"Fly B looked normal\" underline; box (a) adds \"B: germ-line\". On \"some offspring have it in every cell\" a small tree with a plum branch sends one dotted sperm to a zygote, and a new tree fills amber; box (b) adds \"B: fly B unaffected; some offspring carry it in every cell and can pass it on\". (3) On \"the classic mistake\" the chip \"fly A's offspring inherit the white patch\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (promoter or codon?)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Two mutations are found in an enzyme's",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (promoter or codon?))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\": \"Two mutations were found in the gene for an enzyme. Mutation P is a single base substitution in the gene's promoter. Cells carrying P produce about one tenth as much of the enzyme's mRNA as normal cells. Mutation Q is a single base substitution in the coding sequence that changes the mRNA codon CUU to CUC.\" A small table headed \"Codon chart (part)\": \"CCU Pro\", \"CUC Leu\", \"CUU Leu\", \"UUU Phe\" (computed; the two extra rows are one base away from CUU, so the student must read the right rows). The claim in a quote box: \"Q is more significant than P, because Q is in coding DNA.\" Demand: \"Assess the student's claim. (4 marks)\". One answer box. Nothing answer-bearing: no gene map, no amount bar. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "both code for leucine / P changes no codon / the clearer effect / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-row comparison writes on beneath it, \"Q (coding)\" and \"P (promoter: non-coding)\". (1) On \"both code for leucine\" \"CUU to CUC\" underlines amber and both chart rows light; row Q fills \"same amino acid: Leu stays Leu\". (2) On \"P changes no codon\" \"promoter\" and \"about one tenth as much\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-row comparison writes on beneath it, \"Q (coding)\" and \"P (promoter: non-coding)\". (1) On \"both code for leucine\" \"CUU to CUC\" underlines amber and both chart rows light; row Q fills \"same amino acid: Leu stays Leu\". (2) On \"P changes no codon\" \"promoter\" and \"about one tenth as much\" underline; a small `FillBar` drops to a tenth; row P fills \"less transcription: a tenth of the mRNA, likely much less enzyme\". (3) On \"the clearer effect\" a judgement line writes on: \"claim not supported: on this evidence, P has the clearer effect\". A second line writes on silently under it, small: \"judge by effect, not by coding or non-coding\". (4) On \"the classic mistake\" the chip \"coding DNA always matters more\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "two step chips write on left to right, one per cue: \"1. where in the body? somatic: this organism; germ line: can be inherited\" (patch-tree icon and germ-line arrow icon), \"2. where in the DNA? coding: check the codons; non-coding: does it control the gene?\" (a warm band icon and a teal band icon).",
+      "teachingReason": "Decision rule and handoff: So when a question gives you a mutation, ask two things.",
+      "narrationCue": "So when a question gives you a mutation,",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: mutation practice\" (a small codon row and a chromosome bar icon). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "two step chips write on left to right, one per cue: \"1. where in the body? somatic: this organism; germ line: can be inherited\" (patch-tree icon and germ-line arrow icon), \"2. where in the DNA? coding: check the codons; non-coding: does it control the gene?\" (a warm band icon and a teal band icon). A \"Next\" chip slides in at the lower right: \"Next: mutation practice\" (a small codon row and a chromosome bar icon). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b05-learning-review.md",
+      "sha256": "d8a1c2abaccaacc86dcb78583b64195a19216fd94dab2587367c04c96f823f73"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b05-claude-science-check.md",
+      "sha256": "c175ce7ccf4e26906a7f08df3fd328dcb6a95d39e25600ff6d6033187401f58d"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

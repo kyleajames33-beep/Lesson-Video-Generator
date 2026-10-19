@@ -1,0 +1,144 @@
+{
+  "title": "Point Mutations: Silent, Missense, Nonsense and Frameshift",
+  "subtitle": "Every one of these changes is a single base, so why can one keep the same amino acid, one swap an amino acid, and one stop the protein?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 3,
+  "lessonIntent": "defining a point mutation and its three processes (substitution, insertion, deletion); explaining that a substitution within a coding codon changes that codon, which may give the same amino acid (silent, because the code is degenerate), a different amino acid (missense, sickle cell) or a stop codon (nonsense, beta-globin codon 39, chain cut short); explaining that an insertion or deletion of one base regroups every codon after it (frameshift), so most later amino acids change and an early stop often appears; explaining that adding or removing a multiple of three bases keeps the frame and adds or removes amino acids; explaining that the effect depends on type and position (near the start of a gene, in an active site), so \"point\" describes the scale of the change, not the size of the effect; applying this to an unseen classification of three mutant sequences with a chart excerpt, and to the cystic fibrosis three-base deletion against the Tay-Sachs four-base insertion.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the gene for one chain of haemoglobin, change one base in the sixth codon, and you can get sickle cell disease. Change a different base in that same codon, and the amino acid stays the same. Change one base in codon thirty-nine, and the chain stops partway, causing a blood disorder called beta thalassaemia. Every one of these is a single base. So why are the results so different?"
+      }
+    },
+    {
+      "id": "point-mutation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each of these is a point mutation, a change to one base, or a few bases, in a gene's DNA. There are three ways it can happen. A substitution swaps one base for another. An insertion adds a base, and a deletion removes one. They come from copying mistakes, or from mutagens, like the base analogues and the chemicals that slip between bases, from the last video. Remember, a ribosome reads the mRNA copy of the gene in codons of three, starting at the start codon. So the real question is, what does the change do to the codons?"
+      }
+    },
+    {
+      "id": "silent",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with substitutions. A substitution inside a coding codon changes that codon, so read the new codon to see what it codes for: the same amino acid, a different one, or a stop. Most amino acids have more than one codon, often differing only in the third base. So G A G becoming G A A still codes for glutamate. That's a silent mutation. The base sequence changed, but the amino acid sequence didn't."
+      }
+    },
+    {
+      "id": "missense",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now change the middle base instead, so G A G becomes G U G. The chart gives valine, not glutamate. Glutamate carries a charge, but valine avoids water. One amino acid is swapped for another, and that's a missense mutation. You've seen where this one leads. With two copies, the changed haemoglobin sticks together when oxygen is low, and red cells bend into sickles. But not every missense change matters this much. It depends on where the amino acid sits, and how different the new one is."
+      }
+    },
+    {
+      "id": "nonsense",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A third kind of substitution creates an early stop. In codon thirty-nine, C A G codes for glutamine. Change the C to U, and it reads U A G, a stop codon, U Are Gone. The ribosome stops there, so the chain is cut short after thirty-eight amino acids, and it can't fold into a working beta chain. That's a nonsense mutation. A person with two copies makes no normal beta chains, so they have too little working haemoglobin."
+      }
+    },
+    {
+      "id": "frameshift",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Insertions and deletions act very differently. Here's a short message that codes for five amino acids. Now delete one base from the second codon. The ribosome still reads in threes from the start codon, so every codon from there on is different, and the amino acids after it are mostly wrong. A stop codon often turns up early, too. That's a frameshift, because the reading frame, the way the bases are grouped into codons, has shifted. Inserting one base does the same thing."
+      }
+    },
+    {
+      "id": "reading-frame",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a way to picture it. Read the sentence THE FAT CAT ATE THE RAT in three-letter words. Delete the F, keep reading in threes, and every word after it turns to gibberish. A cell does the same, except a shifted frame still makes amino acids, just the wrong ones. Now delete three bases in a row instead, a whole codon's worth. The frame lines up again, so the protein loses one amino acid, and everything after it reads normally. Inserting three bases works the same way, adding one amino acid."
+      }
+    },
+    {
+      "id": "what-decides",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what decides how much a point mutation matters? First, its type. A substitution inside a coding codon changes that codon, so it's silent, swaps one amino acid, or adds an early stop. A one-base insertion or deletion changes every codon after it. Second, its position. A frameshift near the start of a gene changes almost the whole protein, but one near the end changes only the last few amino acids. So \"point\" describes the size of the change, not the size of its effect."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two aids. For substitutions, silent means the same amino acid, missense misses the right amino acid and puts in a different one, and nonsense means stop, so the chain is cut short. And for insertions and deletions, remember the fat cat. Lose one letter, and everything after it shifts."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two exam questions now. First, here's part of the mRNA for an enzyme, three mutated versions of it, and part of the codon chart. For each mutant, name the type of point mutation, and describe its effect on the polypeptide. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Mutant A changed G C A to G C G, but both code for alanine, so it's a silent substitution, and the amino acid sequence is unchanged. In mutant B, U A C became U A A, a stop codon. That's a nonsense substitution, so the chain stops after two amino acids. Mutant C has lost a base, so it's a deletion and a frameshift, and every codon after it changes. Calling C a substitution is the classic mistake."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. The most common cystic fibrosis allele has three bases deleted from the CFTR gene. A common Tay-Sachs allele has four bases inserted into the HEXA gene. Explain why the CFTR protein is missing only one amino acid, while the HEXA protein is changed from the insertion onwards and cut short. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Codons are read in threes. Deleting three bases removes exactly one codon's worth, so the reading frame after it is unchanged, and the protein loses just one amino acid. Four isn't a multiple of three, so the insertion shifts the frame. Every codon after it is regrouped, and a stop codon soon appears. If you said each change only affects the amino acids where it happens, you've missed the frame."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a question gives you a point mutation, first ask whether it's a substitution, or an insertion or deletion. For a substitution, read the new codon on the chart: the same amino acid, a different one, or stop. For an insertion or deletion, count the bases. If it isn't a multiple of three, the frame shifts. Then say where it is, and what that does to the protein. Next, what happens when whole chunks of chromosomes change."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

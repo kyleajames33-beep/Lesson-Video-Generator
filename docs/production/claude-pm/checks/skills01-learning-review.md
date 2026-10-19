@@ -98,3 +98,5 @@ Applied in `lessons/skills-s01.md`, Revision 2 (author). Narration re-counted wi
 - **M2 (applied):** earlier limit cards collapse to their titles, so one demonstration is live at a time.
 - **M3 (applied):** "each parent carries **both alleles**: heterozygous." Feedback 1 is now about 32 s.
 - Also applied: the science check's F1 and F2 (scene 8 ridge wording) and lesson key `skills01`.
+
+Revision 3 (20 Oct, after Codex check 84): the worked question is now an original iron thiocyanate card, so two items above change in detail. S2's wording stands, but the "what does it tell me?" chip now hangs off the two new givens ("iron(III) nitrate" means more Fe3+; constant temperature means the same collision energy), not a ΔH ring. The science check's F1 and F2 (ridge wording) no longer apply, because activation energy is removed. S1, S3 to S5 and M1 to M3 stand. Narration: 6,067 characters, 17 scenes.
