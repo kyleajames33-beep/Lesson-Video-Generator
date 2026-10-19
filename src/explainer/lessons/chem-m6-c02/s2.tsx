@@ -255,7 +255,7 @@ export const SceneMetal: React.FC = () => {
 					) : null}
 				</LensFrame>
 				<Note x={L.cx} y={L.cy + L.r + 44} text="electron transfer (Year 11), not proton transfer" size={32} color={INK_SOFT} anchor="middle" at={K10.isnt} />
-				<Note x={L.cx + L.r + 30} y={L.cy - 60} text="2H^{+} + 2e^{-} → H_2" size={34} color={PROTON_INK} at={K10.pair + 10} />
+				<Note x={L.cx + L.r + 30} y={L.cy - 60} text="2H^{+} + 2e^{-} → H_2" size={34} color={PROTON_INK} at={K10.pair + 10} out={K10.al - 10} />
 				<SaltBuilder x={990} y={320} s={0.9} slotW={240} at={K10.al - 6} spec={{cat: 'Al^{3+}', an: 'Cl^{-}', nCat: 1, nAn: 3, formula: 'AlCl_3', tally: '(+3) + 3(−1) = 0'}} catAt={K10.three} anAt={K10.three + 16} resAt={K10.alcl3} />
 				<EqLine items={items} x={EQ_X} y={840} size={S} />
 				<Coefs items={items} size={S} x={EQ_X} y={840} at={K10.threeh2 + 14} />

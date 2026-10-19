@@ -190,10 +190,10 @@ export const SceneRisk: React.FC = () => {
 					return <Damage key={k} x={x} y={sy} o={prog(f, m.at, 8) * (1 - cleared)} />;
 				})}
 				<RepairBlob x={b1} y={sy - 44} o={vis(f, K4.chances + 6, K4.chances + 200, 10)} s={0.7} />
-				<RepairBlob x={b2} y={sy - 44} o={vis(f, K4.behind + 16, K4.behind + 380, 10)} s={0.7} />
-				{KEEP4.map((i, k) => <Ring key={k} cx={rungX(sx, i, P)} cy={sy + 22} rx={34} ry={62} at={K4.behind + 40 + k * 8} />)}
-				<Lbl x={rungX(sx, KEEP4[0], P) - 60} y={sy + 165} text="copied before repair" size={30} color={AMBER_INK} at={K4.behind + 50} />
-				<Lbl x={rungX(sx, 23, P)} y={sy + 205} text="or repaired wrongly" size={26} color={INK_SOFT} at={K4.behind + 60} />
+				<RepairBlob x={b2} y={sy - 44} o={vis(f, K4.behind + 16, Math.min(K4.behind + 380, K4.choose), 10)} s={0.7} />
+				{KEEP4.map((i, k) => <Ring key={k} cx={rungX(sx, i, P)} cy={sy + 22} rx={34} ry={62} at={K4.behind + 40 + k * 8} out={K4.choose} />)}
+				<Lbl x={rungX(sx, KEEP4[0], P) - 60} y={sy + 165} text="copied before repair" size={30} color={AMBER_INK} at={K4.behind + 50} out={K4.choose} />
+				<Lbl x={rungX(sx, 23, P)} y={sy + 205} text="or repaired wrongly" size={26} color={INK_SOFT} at={K4.behind + 60} out={K4.choose} />
 				{/* random hits */}
 				<Damage x={rungX(sx, 28, P)} y={sy} o={prog(f, K4.choose + 10, 8)} pulse={vis(f, K4.gene, K4.nogene, 10)} />
 				<Damage x={rungX(sx, 37, P)} y={sy} o={prog(f, K4.choose + 20, 8)} pulse={vis(f, K4.nogene, undefined, 10)} />

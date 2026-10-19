@@ -186,9 +186,9 @@ export const SceneOneCopy: React.FC = () => {
 					<BaseTag x={rungX(1190, 9, 31)} y={348} text="T" len={10} size={24} color={RED} below />
 					<Lbl x={rungX(1190, 9, 31) + 40} y={410} text="mismatch, not repaired" size={30} color={RED} at={-100} />
 				</g>
-				<GTag x={1170} y={480} text="B4: copying is accurate, not perfect" at={K4.copy + 20} size={24} />
+				<GTag x={1170} y={480} text="B4: copying is accurate, not perfect" at={K4.copy + 20} out={K4.mutagen} size={24} />
 				<Chip x={1150} y={560} text="mutagen: something that harms DNA" at={K4.mutagen} size={34} />
-				<GTag x={1170} y={640} text="next video" at={K4.next} size={26} />
+				<GTag x={1170} y={640} text="next video" at={K4.next} out={K4.nothing} size={26} />
 				<Sx x={190} y={690} text="1 copy in 20 cells" size={56} color={AMBER_INK} hand at={K4.onecopy} />
 				{/* many mutations change nothing visible */}
 				{[{x: 120, ci: 3, band: [8, 16] as [number, number], t: 'outside a gene', at: K4.outside}, {x: 980, ci: 11, band: [6, 16] as [number, number], t: 'inside a gene, same protein', at: K4.protein}].map((c, k) => {

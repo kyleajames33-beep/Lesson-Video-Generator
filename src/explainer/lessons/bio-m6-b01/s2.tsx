@@ -73,7 +73,7 @@ export const ScenePassingOn: React.FC = () => {
 				<CurveArrow a={[1468, 395]} b={[1680, 738]} at={K5.only + 40} bow={0} color={AMBER_INK} width={4} />
 				<PlateAt p={PLATES.flyWhite} cx={1700} cy={840} w={170} at={K5.only + 52} />
 				<Lbl x={1580} y={990} text="offspring inherit it" size={28} color={AMBER_INK} at={K5.only + 60} />
-				<GTag x={1470} y={870} text="B8: 1910" at={K5.only + 70} size={22} />
+				<GTag x={1470} y={870} text="B8: 1910" at={K5.only + 70} out={K5.offspring} size={22} />
 				{/* skin cell: blocked */}
 				<DrawPath d="M1452,622 Q1500,700 1520,760" at={K5.skin + 20} dur={14} color={GREYT} width={4} />
 				<DrawPath d="M1496,776 L1546,750" at={K5.skin + 34} dur={8} color={GREYT} width={7} />
@@ -265,7 +265,7 @@ export const SceneSelection: React.FC = () => {
 					return <Bact key={k} cx={lerp(px, sx, t)} cy={lerp(py, sy, t)} w={BW} ring="new" r={10} o={t} />;
 				})}
 				{/* right column */}
-				<Lbl x={1290} y={340} text="no resistance allele: killed" size={30} color={GREYT} at={K8.kills + 20} />
+				<Lbl x={1290} y={340} text="no resistance allele: killed" size={30} color={GREYT} at={K8.kills + 20} out={K8.little} />
 				<FillBar x={1290} y={420} w={520} h={34} p={count / 60} o={prog(f, K8.few, 12)} label="cells with the resistance allele" size={26} />
 				<Sx x={1810} y={492} text={`${count} of 60`} size={30} color={AMBER_INK} weight={800} anchor="end" at={K8.few} />
 				<Lbl x={1290} y={540} text="its frequency rises" size={34} color={AMBER_INK} at={K8.most + 10} />

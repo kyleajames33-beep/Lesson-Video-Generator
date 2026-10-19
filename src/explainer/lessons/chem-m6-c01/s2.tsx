@@ -230,19 +230,19 @@ export const SceneNH3Water: React.FC = () => {
 				<RoleRing x={wx + 6} y={my - 6} r={92} role="acid" at={K10.donor} out={K10.hydroxide} tag="donor" />
 				<RoleRing x={nx} y={my - 16} r={108} role="base" at={K10.ammonium} tag="NH_4^{+}" />
 				<Ring cx={wx + 4} cy={my - 4} rx={70} ry={64} at={K10.hydroxide} color={TEAL} seed={6} />
-				<Note x={L.cx} y={L.cy + L.r + 46} text="OH^{-}: left from water" size={36} color={TEAL} anchor="middle" at={K10.hydroxide + 6} />
+				<Note x={L.cx} y={L.cy + L.r + 46} text="OH^{-}: left from water" size={36} color={TEAL} anchor="middle" at={K10.hydroxide + 6} out={K10.comes} />
 				<g transform={`translate(${arr.cx},${EY - S * 0.3}) scale(${pulse}) translate(${-arr.cx},${-(EY - S * 0.3)})`}>
 					<EqLine items={items} x={EX} y={EY} size={S} />
 				</g>
 				<DrawPath d={`M${wTok[0]},${wTok[1]} C${wTok[0] + 60},${wTok[1] + 90} ${ohTok[0] - 60},${ohTok[1] + 90} ${ohTok[0]},${ohTok[1]}`} at={K10.comes} dur={24} color={TEAL} width={4.5} />
 				<Note x={(wTok[0] + ohTok[0]) / 2} y={wTok[1] + 120} text="the OH^{-} comes from water" size={36} color={TEAL} anchor="middle" at={K10.comes + 10} />
-				<AChip x={arr.cx} y={400} text="Module 5: reversible, at equilibrium" size={32} color={INK_SOFT} at={K10.dbl} anchor="middle" />
+				<AChip x={arr.cx} y={400} text="Module 5: reversible, at equilibrium" size={32} color={INK_SOFT} at={K10.dbl} out={K10.accepts - 10} anchor="middle" />
 				{/* only some at any moment */}
-				<LensFrame cx={1060} cy={890} r={130} at={K10.some}>
+				<LensFrame cx={1060} cy={890} r={130} at={K10.some} out={K10.accepts - 10}>
 					<rect x={930} y={760} width={260} height={260} fill="#eef6fb" />
 					{pop.map(([u, v], i) => <Mol key={i} x={1060 + u * 130} y={890 + v * 130} m="NH3" s={0.42} take={i === 4 || i === 1 ? 1 : 0} charge={false} />)}
 				</LensFrame>
-				<Note x={1060} y={1060} text="most stay NH_3" size={30} color={INK_SOFT} anchor="middle" at={K10.some + 10} />
+				<Note x={1060} y={1060} text="most stay NH_3" size={30} color={INK_SOFT} anchor="middle" at={K10.some + 10} out={K10.accepts - 10} />
 				{/* back to the hook */}
 				<Fade at={K10.accepts - 4}>
 					<g transform="translate(1280,780)">

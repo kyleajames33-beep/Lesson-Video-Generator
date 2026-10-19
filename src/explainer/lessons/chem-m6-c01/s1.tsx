@@ -26,14 +26,14 @@ export const SceneHook: React.FC = () => {
 				<PlateAt p={CLEANER} x={bx} y={by} h={bh} at={0} />
 				<Note x={bx + picW(CLEANER, bh) / 2} y={by + bh + 52} text="ammonia cleaner" size={38} anchor="middle" at={K1.bottle} />
 				<PairAt a={LITMUS.red} b={LITMUS.blue} x={lx} y={ly} h={lh} at={K1.red - 10} swap={K1.blue} dur={30} />
-				<Note x={lx + 40} y={ly - 24} text="red litmus" size={36} color="#b8434f" at={K1.red} />
+				<Note x={lx + 40} y={ly - 24} text="red litmus" size={36} color="#b8434f" at={K1.red} out={K1.base} />
 				<Note x={lx + 40} y={ly + lh + 50} text="turns blue: a base" size={38} color="#2f55b8" at={K1.base} />
 				{/* the molecule */}
 				<Fade at={K1.nh3 - 4}>
 					<Mol x={mx} y={my} m="NH3" s={2.6} glowH={vis(f, K1.one, K1.noO)} />
 				</Fade>
 				<Sx x={mx} y={850} text="NH_3" size={76} color={INK} anchor="middle" weight={800} at={K1.nh3} />
-				<Note x={mx} y={910} text="1 nitrogen, 3 hydrogens" size={36} anchor="middle" color={INK_SOFT} at={K1.one} />
+				<Note x={mx} y={910} text="1 nitrogen, 3 hydrogens" size={36} anchor="middle" color={INK_SOFT} at={K1.one} out={K1.supply} />
 				<Ring cx={mx} cy={my + 14} rx={200} ry={190} at={K1.noO} color={AMBER} seed={5} />
 				<Chip x={1520} y={480} w={230} text="OH^{-}?" size={44} color={INK} at={K1.noO + 10} cross={K1.noOH} hand={false} />
 				<Note x={1520} y={600} text="no O at all" size={38} color={AMBER_INK} at={K1.noOH + 8} />
@@ -110,8 +110,8 @@ export const SceneLavoisier: React.FC = () => {
 						<Note x={xs[i] + tileW(a.f, S) / 2} y={ty + 90} text={a.name} size={34} color={INK_SOFT} anchor="middle" at={K3.studied + i * 10} />
 					</g>
 				))}
-				<Note x={120} y={ty - 110} text="every one contains O" size={40} color={OXY} at={K3.oxygen + 12} />
-				<Fade at={K3.maker - 4}>
+				<Note x={120} y={ty - 110} text="every one contains O" size={40} color={OXY} at={K3.oxygen + 12} out={K3.davy} />
+				<Fade at={K3.maker - 4} out={K3.davy}>
 					<rect x={120} y={850} width={760} height={110} rx={20} fill="#fff8ea" stroke={AMBER} strokeWidth={3} />
 					<Sx x={150} y={898} text="oxygen: oxy + gen" size={40} color={INK} weight={700} at={-1000} />
 					<Sx x={150} y={942} text="= acid + maker (Greek)" size={36} color={AMBER_INK} hand at={K3.maker + 8} />
@@ -147,7 +147,7 @@ export const SceneDavy: React.FC = () => {
 			<Overlay>
 				<Timeline fill={[-1000, K4.prop]} stamp={[-1000, K4.bases + 34]} />
 				{fs.map((t, i) => <FTile key={t} x={xs[i]} y={ty} formula={t} size={S} at={2 + i * 4} glow={[{el: 'H', at: K4.hyd + i * 4, color: PROTON}]} />)}
-				<Note x={110} y={ty - 100} text="every acid contains H" size={40} color={PROTON_INK} at={K4.hyd + 10} />
+				<Note x={110} y={ty - 100} text="every acid contains H" size={40} color={PROTON_INK} at={K4.hyd + 10} out={K4.methane + 20} />
 				<Note x={110} y={820} text="but hydrogen alone isn't enough:" size={40} color={INK} at={K4.alone} />
 				{/* methane */}
 				<Fade at={K4.methane - 4}>
@@ -220,7 +220,7 @@ export const SceneArrhenius: React.FC = () => {
 				</LensFrame>
 				<Ring cx={mid[0] + 10} cy={mid[1] + 6} rx={70} ry={62} at={K5.water + 10} color={TEAL} seed={4} />
 				<EqLine items={e1} x={EX} y={540} size={S} />
-				<Note x={EX + 640} y={540} text="in water" size={32} color={INK_SOFT} at={K5.hions + 20} />
+				<Note x={EX + 640} y={540} text="in water" size={32} color={INK_SOFT} at={K5.hions + 20} out={K5.ohions} />
 				<EqLine items={e2} x={EX} y={630} size={S} />
 				<EqLine items={e3} x={EX} y={750} size={S + 4} />
 				<Note x={EX + 470} y={750} text="neutralisation" size={38} color={TEAL} at={K5.neut} />

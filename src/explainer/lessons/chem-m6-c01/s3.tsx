@@ -47,9 +47,9 @@ export const SceneGasCarb: React.FC = () => {
 					</g>
 					{pk > 0.01 ? lat.map((p, i) => <Ion key={i} x={p.x} y={p.y} kind={p.k ? '-' : '+'} r={p.k ? 31 : 33} label={p.k ? 'Cl^{-}' : 'NH_4^{+}'} o={pk} labelSize={17} />) : null}
 				</LensFrame>
-				<Note x={EX} y={560} text="no water: H^{+} goes straight to NH_3" size={34} color={PROTON_INK} at={K11.nowater} />
+				<Note x={EX} y={560} text="no water: H^{+} goes straight to NH_3" size={34} color={PROTON_INK} at={K11.nowater} out={K11.carb} />
 				<EqLine items={e1} x={EX} y={440} size={S1} />
-				<Note x={EX + 560} y={510} text="ions packed in the solid" size={34} color={INK_SOFT} at={K11.solid} />
+				<Note x={EX + 560} y={510} text="ions packed in the solid" size={34} color={INK_SOFT} at={K11.solid} out={K11.carb} />
 				<EqBox items={e1} i={2} size={S1} x={EX} y={440} at={K11.acceptors} color={BASE} />
 				{/* carbonate in water */}
 				<LensFrame cx={B.cx} cy={B.cy} r={B.r} at={K11.carb - 4}>
@@ -164,11 +164,11 @@ export const SceneAid: React.FC = () => {
 			<Overlay>
 				<Timeline fill={[-1000, -1000, -1000, -1000]} stamp={[-1000, -1000, -1000, -1000]} lit={[K14.oxygen, K14.hydrogen, K14.ions]} />
 				<Note x={96} y={560} text="Each model fixed a failure of the one before." size={62} color={TEAL} at={K14.each} />
-				<Note x={96} y={640} text="Oxygen: broken by HCl" size={34} color={INK} at={K14.oxygen} />
-				<Note x={96} y={688} text="Hydrogen: not enough on its own" size={34} color={INK} at={K14.hydrogen} />
-				<Note x={96} y={736} text="Ions in water: limited by ammonia" size={34} color={INK} at={K14.ions} />
-				<Note x={96} y={830} text="Acid gives, base takes." size={58} color={INK} at={K14.gives} />
-				<Note x={96} y={876} text="gives and takes a proton (H^{+})" size={32} color={PROTON_INK} hand={false} at={K14.gives + 24} />
+				<Note x={96} y={640} text="Oxygen: broken by HCl" size={34} color={INK} at={K14.oxygen} out={K14.second} />
+				<Note x={96} y={688} text="Hydrogen: not enough on its own" size={34} color={INK} at={K14.hydrogen} out={K14.second} />
+				<Note x={96} y={736} text="Ions in water: limited by ammonia" size={34} color={INK} at={K14.ions} out={K14.second} />
+				<Note x={96} y={700} text="Acid gives, base takes." size={58} color={INK} at={K14.gives} />
+				<Note x={96} y={756} text="gives and takes a proton (H^{+})" size={32} color={PROTON_INK} hand={false} at={K14.gives + 24} />
 				<Fade at={K14.gives - 4}>
 					<rect x={gx - 90} y={by - 60} width={180} height={120} rx={20} fill="#fff8ea" stroke={ACID} strokeWidth={5} />
 					<Sx x={gx} y={by + 96} text="gives" size={36} color={ACID_INK} anchor="middle" hand at={-1000} />
@@ -185,7 +185,7 @@ export const SceneAid: React.FC = () => {
 				</Fade>
 				<Note x={124} y={1012} text="it explained ..." size={40} color={INK} at={K14.explained} />
 				<Note x={990} y={1012} text="it couldn't explain ..." size={40} color={AMBER_INK} at={K14.couldnt} />
-				{void K14.here}{void K14.first}{void K14.second}{void vis}
+				{void K14.here}{void K14.first}{void vis}
 			</Overlay>
 		</>
 	);

@@ -29,7 +29,7 @@ export const SceneAbove: React.FC = () => {
 				<Note x={640 + picW(COPPER, ph) / 2} y={py + ph + 46} text="copper: no reaction" size={36} color="#7a746a" anchor="middle" at={K11.nothing} />
 				<Note x={640 + picW(COPPER, ph) / 2} y={py + ph + 90} text="no bubbles, no salt" size={32} color={INK_SOFT} anchor="middle" at={K11.nob} />
 				<Note x={1180} y={560} text="hydrogen gas is H_2" size={44} color={TEAL} at={K11.watch} />
-				<Mistake x={1180} y={610} text="Mg + 2HCl → MgCl_2 + 2H" at={K11.h2} note="hydrogen gas is H₂, never H" size={34} />
+				<Mistake x={1180} y={610} text="Mg + 2HCl → MgCl_2 + 2H" at={K11.h2} note="write H₂, never H" size={34} />
 				<EqLine items={good} x={1180} y={830} size={fitSize(good, 640, 40)} />
 				<Note x={1180} y={890} text="the hook's magnesium, written correctly" size={30} color={INK_SOFT} at={K11.h2 + 40} />
 				{void K11.below}
@@ -91,7 +91,7 @@ export const SceneAid: React.FC = () => (
 			<Note x={96 + patternW('carbonate', ['salt', 'water', 'CO₂'], 0.9) + 30} y={714} text="test: limewater milky" size={34} color={INK_SOFT} at={K13.carb + 10} />
 			<Note x={96 + patternW('metal', ['salt', 'H₂'], 0.9) + 30} y={810} text="test: squeaky pop" size={34} color={INK_SOFT} at={K13.metal2 + 10} />
 			<AChip x={96 + patternW('hydroxide', ['salt', 'water'], 0.9) + 30} y={580} text="ammonia: salt only, no water" size={30} color={AMBER_INK} at={K13.hyd + 10} />
-			<AChip x={820} y={772} text="metal must be above hydrogen" size={30} color={AMBER_INK} at={K13.metal2 + 20} />
+			<AChip x={96 + patternW('metal', ['salt', 'H₂'], 0.9) + 30 + mw('test: squeaky pop', 34, true, 700) + 36} y={772} text="metal must be above hydrogen" size={30} color={AMBER_INK} at={K13.metal2 + 20} />
 			<Note x={96} y={940} text="-ate → -ic;  -ite → -ous;  hydro- only without oxygen" size={48} color={INK} at={K13.ate} />
 			{void K13.here}{void K13.name}{void K13.ite}
 		</Overlay>

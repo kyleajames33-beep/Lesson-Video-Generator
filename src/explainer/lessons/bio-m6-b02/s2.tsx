@@ -94,7 +94,7 @@ export const SceneIonising: React.FC = () => {
 					<Sx x={1050} y={260} text="deeper tissue" size={22} color={INK_SOFT} weight={700} anchor="middle" />
 					<Sx x={1560} y={260} text="deep organs" size={22} color={INK_SOFT} weight={700} anchor="middle" />
 					<line x1={560} y1={310} x2={730} y2={310} stroke="#8a62c4" strokeWidth={6} strokeLinecap="round" />
-					<Sx x={750} y={318} text="UV mainly affects skin; UVA reaches the dermis" size={22} color="#5c3f8a" weight={700} />
+					<Sx x={612} y={294} text="UV: skin, dermis" size={22} color="#5c3f8a" weight={700} />
 					<line x1={560} y1={380} x2={1790} y2={380} stroke="#3d6fa8" strokeWidth={6} strokeLinecap="round" />
 					<path d="M1776,370 L1796,380 L1776,390" fill="none" stroke="#3d6fa8" strokeWidth={4} />
 					<Sx x={1050} y={368} text="X-rays, gamma: right through" size={22} color="#2d5584" weight={700} anchor="middle" />
@@ -162,7 +162,7 @@ export const SceneChemicals: React.FC = () => {
 				<Lbl x={1180} y={Y[2] + 10} text="adds or skips a base" size={36} color={INK} at={K7.adds} />
 				<Lbl x={1180} y={Y[2] + 56} text="every codon after it shifts" size={32} color={AMBER_INK} at={K7.shifts} />
 				<GTag x={1180} y={Y[2] + 76} text="e.g. acridine dyes" at={K7.slide + 20} size={22} />
-				<GTag x={1420} y={Y[2] + 76} text="B6c: codons" at={K7.shifts + 10} size={22} />
+				<GTag x={1450} y={Y[2] + 76} text="B6c: codons" at={K7.shifts + 10} size={22} />
 				<MutBoard fills={[-100, -100, K7.shifts + 40]} />
 				{void K7.three}
 			</Overlay>
