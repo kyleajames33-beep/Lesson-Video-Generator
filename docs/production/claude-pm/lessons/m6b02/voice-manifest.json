@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B02-claude-2026-10-19-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b02/lesson.json",
+  "lessonSha256": "9c7dd930116212455170846796f4e324bf0f75e73c5a22a4afcb14cef039bc72",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b02/lesson.production-brief.json",
+    "sha256": "82cdfeff52f1b20169831818ab16d8a2715545ce479cf69783c8251fb1490f15"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Every sunny day, ultraviolet light from the Sun damages the DNA in your skin cells, many times over in each exposed cell. Yet almost all of that damage never becomes a mutation. Your cells fix it. So what exactly does UV do to DNA? What do X-rays and some chemicals do differently? And why doesn't damage always become a mutation?",
+      "hash": "eb4b2e7c91ce",
+      "textSha256": "eb4b2e7c91ceecfffd906eabd8cb44165219e06f649b62698d698af47b329837",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/hook.eb4b2e7c91ce.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/hook.eb4b2e7c91ce.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/hook.eb4b2e7c91ce.generation.json",
+      "plannedRequestSha256": "b1d19871ece64f8f17534528881da60767fa0ebc4c1f761bd5455ceca2325800"
+    },
+    {
+      "id": "mutagen-mutation",
+      "parentSceneId": "mutagen-mutation",
+      "text": "Start with two words that sound alike. A mutagen is anything that raises the chance of a change in DNA, like UV light, X-rays or certain chemicals. A mutation is the change itself, a different base sequence. So UV isn't a mutation. It's a mutagen. Mutations also happen without any mutagen, from rare copying mistakes. A mutagen raises that rate.",
+      "hash": "f1b1d1ec8e1d",
+      "textSha256": "f1b1d1ec8e1d6665ff4d791df7040a74db559a52d516b3bea720c56bdbbc89cf",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/mutagen-mutation.f1b1d1ec8e1d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/mutagen-mutation.f1b1d1ec8e1d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/mutagen-mutation.f1b1d1ec8e1d.generation.json",
+      "plannedRequestSha256": "6a910942534101f224f9666978c09f87cd53d31490f32018f13e3daf4db5ba3f"
+    },
+    {
+      "id": "repair-or-copy",
+      "parentSceneId": "repair-or-copy",
+      "text": "Here's how a damaged base becomes a mutation. A mutagen damages one spot on the DNA. Repair enzymes usually find the damage and fix it, using the other strand as a guide. But if the cell copies its DNA before the repair happens, the copying enzyme can put the wrong base opposite the damage. When that new strand is copied again, the wrong base gets its own matching partner. Now the change is in both strands. It's permanent, a mutation.",
+      "hash": "1a3fe52ce7d7",
+      "textSha256": "1a3fe52ce7d792f1c32474573194658d2321857d603f0ab79be14b082e6cde6e",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/repair-or-copy.1a3fe52ce7d7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/repair-or-copy.1a3fe52ce7d7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/repair-or-copy.1a3fe52ce7d7.generation.json",
+      "plannedRequestSha256": "d79ee8adaa4ed17db82c9e5959f9a3a422203237d0a98a6c534482711a41adc3"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "That's why exposure is a risk, not a guarantee. More exposure means more damage, so more chances that some of it is copied before repair, or repaired wrongly. A stronger source, or a longer time in it, damages more spots at once, and repair can fall behind. And a mutagen can't choose where it hits, so the change could land in any gene, or in no gene at all.",
+      "hash": "928284a8aab4",
+      "textSha256": "928284a8aab44fca0c844619647bf5344ddb595c1eb99644af27ab48683fe8ea",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/risk.928284a8aab4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/risk.928284a8aab4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/risk.928284a8aab4.generation.json",
+      "plannedRequestSha256": "f8574dc53cc5f8e02cbeafd90a332e3e072a2c56ba8e16057a632ca6767d9b1f"
+    },
+    {
+      "id": "uv",
+      "parentSceneId": "uv",
+      "text": "The first group of mutagens is electromagnetic radiation. UV light, X-rays and gamma rays are all part of the same spectrum as visible light, but they carry more energy. The UV in sunlight can't knock electrons off atoms, but it can join two neighbouring thymine bases on the same strand, forming a thymine dimer. That kink distorts the DNA, so when it's copied, the wrong base can go in. UV doesn't get far into the body, so it mainly damages skin cells.",
+      "hash": "27672704eeef",
+      "textSha256": "27672704eeefc78b380e0f8ae85123980a0a5a65288b62a158429db513ef9f2a",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/uv.27672704eeef.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/uv.27672704eeef.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/uv.27672704eeef.generation.json",
+      "plannedRequestSha256": "57b99c88121219a1de5fa3dc92e4c2946fba42d004038b52012acf497ecdd6c7"
+    },
+    {
+      "id": "ionising",
+      "parentSceneId": "ionising",
+      "text": "X-rays and gamma rays carry much more energy. They're ionising, which means they can knock electrons off atoms. That can snap the DNA backbone directly, or split water molecules into reactive fragments called free radicals, which then attack DNA. Sometimes both strands break. If the cell joins the broken ends back wrongly, a whole piece can be lost or swapped. These rays pass deep into the body, so any cell can be hit, including cells that make eggs or sperm.",
+      "hash": "e0486a3f55c1",
+      "textSha256": "e0486a3f55c11020b8f6ae79e5967795364a91d31e389c92dcdc7a6043a160ec",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/ionising.e0486a3f55c1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/ionising.e0486a3f55c1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/ionising.e0486a3f55c1.generation.json",
+      "plannedRequestSha256": "db70d96369eec90dd80e125290090aef06402c5644021dad92bf505d7fe73abb"
+    },
+    {
+      "id": "chemicals",
+      "parentSceneId": "chemicals",
+      "text": "The second group is chemical mutagens, and they work in three main ways. Some look so much like a normal base that the cell builds them into new DNA, but later they pair with the wrong partner. That's a base analogue. Some, like chemicals in tobacco smoke, attach to a base and change how it pairs. And some slide in between neighbouring base pairs, so the copying enzyme adds or skips a base, which shifts every codon after it.",
+      "hash": "2d63216e2af6",
+      "textSha256": "2d63216e2af64e79b60211004f99ae8bcf82b8b6f876a496d7cc3bf445526d9e",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/chemicals.2d63216e2af6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/chemicals.2d63216e2af6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/chemicals.2d63216e2af6.generation.json",
+      "plannedRequestSha256": "9c868daeac263de6139ba6870f243b35c2556aab7397ee434f23a4a4cf3ce29f"
+    },
+    {
+      "id": "natural",
+      "parentSceneId": "natural",
+      "text": "The third group is naturally occurring mutagens, and natural doesn't mean harmless. Background radiation, from rocks and soil, radon gas and space, is ionising, so it can break DNA strands, just like X-rays. Aflatoxin, made by a mould that grows on damp peanuts and grain, is a natural chemical that, once the liver processes it, attaches to bases. And some viruses insert their own DNA into ours. If it lands inside a gene, or the region that switches it on, that gene can be broken, or switched on when it shouldn't be.",
+      "hash": "125225e8240c",
+      "textSha256": "125225e8240cfd109a6459f4e565f0fbf7084449e19ed47a52ef631fcd60a44d",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/natural.125225e8240c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/natural.125225e8240c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/natural.125225e8240c.generation.json",
+      "plannedRequestSha256": "d9322b3bb2aa585f214dec7738cc7bc365d92dd975542794d820d479b77e7edf"
+    },
+    {
+      "id": "any-mutagen",
+      "parentSceneId": "any-mutagen",
+      "text": "So to explain any mutagen, ask what it physically does to DNA. UV joins neighbouring bases. Ionising radiation breaks strands. Chemicals swap in for bases, change them, or squeeze between them. Some viruses insert new DNA. Then the last step. Damaged bases become mutations when DNA is copied before repair. A break joined back wrongly, or inserted viral DNA, can also make a lasting change.",
+      "hash": "9bfb99d7cdee",
+      "textSha256": "9bfb99d7cdee3a96a5bd528808051ee7451b541dc1492c726b32500fd6a9e897",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/any-mutagen.9bfb99d7cdee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/any-mutagen.9bfb99d7cdee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/any-mutagen.9bfb99d7cdee.generation.json",
+      "plannedRequestSha256": "da8c91571e60d107e01d9d18606fecf5b5a69eb449f68e5157d85e02441702f9"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to keep. A mutagen is the cause, and a mutation is the change. And for radiation: UV kinks, X-rays snap. UV can't knock electrons off, so it bonds neighbouring bases, while X-rays are ionising, so they break the strands.",
+      "hash": "d035f2910c5d",
+      "textSha256": "d035f2910c5da2cc6fe833450dc53e1587e918d2ea2cb7aefd51175f188cb244",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/memory.d035f2910c5d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/memory.d035f2910c5d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/memory.d035f2910c5d.generation.json",
+      "plannedRequestSha256": "9704237f592656298fbd375c5abcd627c7e73ebd0c568e1759d58f00f94edc05"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First: Ultraviolet radiation and X-rays are both forms of electromagnetic radiation. Compare how each increases the risk of mutation in human cells, and which cells each is likely to affect. Pause here to answer.",
+      "hash": "4ab184ba554c",
+      "textSha256": "4ab184ba554c086033ac10ff545cd3d762db2c51e4bf48d4343741b6fb3705e1",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/attempt.4ab184ba554c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/attempt.4ab184ba554c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/attempt.4ab184ba554c.generation.json",
+      "plannedRequestSha256": "0d41ed1de3c2596a025e0f7e90a38df1d128a382d437229f319eb1f18e9017b6"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Both damage DNA, but repair fixes most of it, so neither guarantees a mutation. They differ. UV isn't ionising. It joins neighbouring thymines, kinking the DNA, so wrong bases go in when it's copied, mostly in skin cells. X-rays are ionising, so they break DNA strands, and wrongly rejoined breaks can lose or swap pieces, even in deep cells. Saying UV and X-rays damage DNA in exactly the same way is the classic mistake.",
+      "hash": "dde69bfdf931",
+      "textSha256": "dde69bfdf931529591342d79f03f1d7e14a161b54a11c84cb479ee6a24a5edbc",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/feedback-one.dde69bfdf931.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/feedback-one.dde69bfdf931.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/feedback-one.dde69bfdf931.generation.json",
+      "plannedRequestSha256": "c562cd5328bac3ea34acaa7f42c2f8aea6e8c7132ab3e4159b6482c1b6276acc"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A student spread equal volumes of the same yeast suspension onto agar plates, exposed them to UV light for different times at a fixed distance, then incubated them. The table shows the mean number of colonies at each exposure time. Describe the relationship between exposure time and the number of colonies. Then assess the student's conclusion that UV increased the mutation rate in the yeast. Pause here to answer.",
+      "hash": "aeea81a1ff1a",
+      "textSha256": "aeea81a1ff1aacb1059a622d72b004264b4b337bbb7e7351b221801c95877ebe",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/attempt-two.aeea81a1ff1a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/attempt-two.aeea81a1ff1a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/attempt-two.aeea81a1ff1a.generation.json",
+      "plannedRequestSha256": "215d0da41411cb09c898b2d3424461c944c1804e3738bc3bbd58990eb7a45b0f"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "As exposure time increases, the number of colonies falls, from a hundred and forty-two with no UV to just five after two minutes. But the conclusion goes too far. A colony count shows how many cells survived and divided, not how many mutated. To measure mutation, you'd need to count surviving colonies with a changed trait. Treating fewer colonies as proof of more mutations is the classic mistake.",
+      "hash": "dfba1090a836",
+      "textSha256": "dfba1090a8367bdbbf476b2c2cb148acd79ca94cfc2fd8b9fbc67ff9033ad020",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/feedback-two.dfba1090a836.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/feedback-two.dfba1090a836.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/feedback-two.dfba1090a836.generation.json",
+      "plannedRequestSha256": "3774f87054ca9cae33f01229fcec431cc3e98ad0ab547ffa079a2e075ab5acf3"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So to explain how a mutagen works, name its group, say what it physically does to DNA, and finish with how the change lasts: damage copied before repair, a break joined back wrongly, or DNA inserted by a virus. Next, you'll see what one changed base can do to a protein.",
+      "hash": "653616f6122e",
+      "textSha256": "653616f6122ecabefb321402b65c3f58b617c166dcd42260888f6e99c27d881b",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/decision-rule.653616f6122e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/decision-rule.653616f6122e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/decision-rule.653616f6122e.generation.json",
+      "plannedRequestSha256": "3c6a0dd40683d1ef6ce27e89166f732144c42ce176520442cc9c209b20ac3dfa"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B02-claude-2026-10-19-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

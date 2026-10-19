@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b01/lesson.json",
+    "lessonSha256": "99eda8bcd8767820a465776625eb373ee06d2f563b03226632efd47bfed4a1f3"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From B8: mutation is a change in the base sequence and the only way a brand-new allele appears; reshuffling (crossing over, independent assortment, random fertilisation) makes new combinations of existing alleles; a mutation is inherited only if it is in a cell that makes eggs or sperm. From B4 and B5a: DNA copying is accurate, not perfect; most errors are repaired; a surviving error is copied into every descendant cell. From B7: the sickle cell allele is one base change in the haemoglobin gene. From B6a: a bacterium's circular chromosome; plasmids can carry resistance genes. From B6b: a gene codes for a product. Year 11: natural selection, selection pressure. Not assumed: gene pool, population-level allele language, random with respect to need, replica plating, gene flow.",
+    "startsWith": "The Module 6 opener. The video opens: In 1945, Alexander Fleming, the scientist who discovered penicillin, gave a warning in his Nobel Prize lecture.",
+    "stopsAfter": "defining gene, allele and gene pool and keeping the three levels apart; saying that a base change inside a gene makes a new allele (sickle cell); saying that a new allele starts as one copy in one individual and that many mutations change nothing visible; explaining how a new allele is passed on in bacteria (both daughter cells) and in animals (only from cells that make eggs or sperm); explaining random with respect to need and the replica plating evidence; explaining how an antibiotic selects an existing resistance allele and raises its frequency; separating mutation (makes alleles), meiosis and fertilisation (mix them), gene flow (moves them, so it can add an allele new to a population) and selection and chance (change frequency); applying this to an unseen evaluate item on rifampicin resistance and an unseen classification of three events in an island lizard population.",
+    "nextLesson": "how mutagens increase DNA damage (route entry bio-m6-b02), then what one changed base can do to a protein (bio-m6-b03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b01.md"
+  ],
+  "teaching": {
+    "task": "How does one changed base in one organism end up as a new allele in a whole population's gene pool, and did the antibiotic cause it?",
+    "causalExplanation": "Causes: why a base change makes a new allele (the gene's sequence is now different, 3); why a new allele starts rare (one cell, one individual, 4); why many mutations change nothing visible (outside genes, same protein, 4); why bacteria pass every mutation on (division copies the whole chromosome, 5); why an animal's skin-cell mutation is not inherited (not in an egg or sperm line, 5); why mutation can't be for resistance (a bacterium can't sense the drug and choose a change, 6); how we know (replica plates, 7); why resistance rises (differential survival and division, 8); why gene flow can add an allele without a mutation in that population (9).",
+    "conversationalApproach": "Fleming's 1945 warning sets the question (did penicillin make the bacteria change, or were some already different?); three levels (gene, allele, gene pool) are built on screen before they are named; one base change becomes one copy in one individual, then spreads by division in bacteria or through eggs and sperm in animals; the replica plates answer the hook; penicillin is shown selecting, not creating; the processes are sorted into make, mix, move and change frequency. Two exam questions follow with brief feedback.",
+    "openingDecision": "Fleming warned that too little penicillin could leave resistant survivors, and resistance did spread. So did penicillin make the bacteria change, or were some of them already different before the drug arrived?",
+    "understandingCheck": "12a is an evaluate item on a Staphylococcus aureus infection (10^10 bacteria, 1 in 10^8 rifampicin resistant before treatment, five days of rifampicin alone, most survivors resistant) with the claim \"The rifampicin caused the bacteria to mutate so they could survive\": it tests random mutation before exposure (about 100 resistant cells already), selection as differential survival and division, and inheritance in bacteria; crossed mistake \"bacteria mutate because they need to\". 12c classifies three events in an island lizard population (a germ-line base change, a new combination of existing alleles, the same change in a skin cell): yes, no, no; crossed mistake \"every mutation enters the gene pool\". Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown; feedback about 27 to 30 s.",
+    "curriculumScope": "Syllabus (2017, BIO12-13, programme/syllabus/bio-2017-y12.json, B6-IQ1-02, p 51): \"compare the causes, processes and effects of different types of mutation, including but not limited to: point mutation; chromosomal mutation\". This video supplies the shared frame for that dotpoint (cause, process, effect on a gene pool) and answers the inquiry question \"How does mutation introduce new alleles into a population?\"; the comparison of mutation types is b03 and b04, mutagens b02."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Three boards, one at a time. (1) The level board (scenes 2 to 4): a slim coded DNA strand (SlimStrand: two thin lines with rungs, a soft gene band, one highlighted position with a before/after base callout), beside a population of small b6a-bacterium-v1.png plates, each with a coded allele ring (open: original allele; amber notched: new allele; never colour alone). (2) The population board (scenes 5 to 8, 10): a dividing Lineage tree copying the ring to both daughters; the replica plating sequence on the m6-agar-dish-top-v1.png and m6-velvet-replica-block-v1.png plates with coded colony dots at fixed positions; a DayStrip for the penicillin course; animals as B8's fly plates, never people. (3) The source board (scene 9, memory, decision rule): four process chips around a coded gene pool basin. Amber marks the new allele only. Reuse: the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam; m6-red-cells-normal-sickle-v1.png; m6-uv-skin-v1.png for the next chip.",
+    "transitionPlan": "The 1945 card and the bacterium cluster open with the two question chips; the level board builds strand, allele pair and pool basin in turn; the population board takes over as the marked bacterium divides and the fly panel splits off; the hook's chips return for randomness and the replica plates resolve them with a tick and a cross; the population falls away to its resistant lineage under the day strip; the source board gathers make, mix and move around the basin; three frequency lines show what happens next; each attempt clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "a dark paper card writes on \"1945, Nobel Prize lecture\" with a small coded penicillin vial icon (a plain capped glass vial outline, no label text).",
+      "teachingReason": "Hook (Fleming's warning): In 1945, Alexander Fleming, the scientist who discovered penicillin, gave a warning in his Nobel Prize lecture.",
+      "narrationCue": "too little penicillin / bacteria that survived / common in some hospitals / Did penicillin make the bacteria change",
+      "motionPurpose": "On the spoken cues: On \"too little penicillin\" a coded dose bar fills only a third of the way (tag \"underdose\"). On \"bacteria that survived\" a cluster of twelve small `b6a-bacterium-v1.png` plates sits on the right; on \"survived\" nine fade to grey outlines and three stay full (no rings yet). On \"common in some hospitals\" a small grey tag writes on: \"London hospital staph: about 1 in 8 resistant in 1946, about 59% by 1948\".",
+      "motionRole": "explain",
+      "onScreenChange": "a dark paper card writes on \"1945, Nobel Prize lecture\" with a small coded penicillin vial icon (a plain capped glass vial outline, no label text). On \"too little penicillin\" a coded dose bar fills only a third of the way (tag \"underdose\"). On \"bacteria that survived\" a cluster of twelve small `b6a-bacterium-v1.png` plates sits on the right; on \"survived\" nine fade to grey outlines and three stay full (no rings yet). On \"common in some hospitals\" a small grey tag writes on: \"London hospital staph: about 1 in 8 resistant in 1946, about 59% by 1948\". On \"Did penicillin make the bacteria change\" a question chip writes on above the cluster, \"made by penicillin?\", and on \"already different\" a second chip, \"already there?\"; both hold with a \"?\" between them. The heading writes on: \"Where new alleles come from\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "three-levels",
+      "visualDecision": "new",
+      "visualReference": "the level board.",
+      "teachingReason": "Gene, allele, gene pool: To answer it, we need three words, at three different levels.",
+      "narrationCue": "gene / allele / gene pool",
+      "motionPurpose": "On the spoken cues: Level 1: `SlimStrand` draws across the top third; on \"a stretch of DNA\" a soft band shades one region with the callout \"gene: codes for a product\". Level 2: on \"one version of that gene\" the band duplicates downward into two short strand pieces, each with one highlighted position; small callouts show \"allele 1: ...A...\" and \"allele 2: ...T...\" (only the one differing base is shown, the rest of each strand is plain li",
+      "motionRole": "explain",
+      "onScreenChange": "the level board. Level 1: `SlimStrand` draws across the top third; on \"a stretch of DNA\" a soft band shades one region with the callout \"gene: codes for a product\". Level 2: on \"one version of that gene\" the band duplicates downward into two short strand pieces, each with one highlighted position; small callouts show \"allele 1: ...A...\" and \"allele 2: ...T...\" (only the one differing base is shown, the rest of each strand is plain lines), tag \"same gene, different sequence\". Level 3: on \"every allele of every gene in a whole population\" the camera pulls back; the strand shrinks into one bacterium plate, which multiplies into a population of about twenty plates, each with a small allele ring; a coded `PoolBasin` draws under them and the rings drop into it (tag \"gene pool: all the alleles in a population\"). On \"never to one organism\" a chip \"gene pool = one organism's genes\" writes on beside a single plate and takes a grey scribble cross. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Cam lens zoom",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "new-allele",
+      "visualDecision": "adjust",
+      "visualReference": "the strand returns large.",
+      "teachingReason": "A changed base makes a new allele: A mutation is a change in the base sequence of DNA.",
+      "narrationCue": "mutation",
+      "motionPurpose": "On the spoken cues: On \"a change in the base sequence\" one position flashes and its callout changes \"A\" to \"T\" (tag \"mutation: base sequence changes\"; grey tag \"B8\"). On \"inside a gene\" the changed position sits inside the gene band, and the gene band's label gains a new line \"new allele\". On \"the haemoglobin gene\" `m6-red-cells-normal-sickle-v1.png` slides in small at the right with the callout \"one base changed: sickle cell allele\" (g",
+      "motionRole": "explain",
+      "onScreenChange": "the strand returns large. On \"a change in the base sequence\" one position flashes and its callout changes \"A\" to \"T\" (tag \"mutation: base sequence changes\"; grey tag \"B8\"). On \"inside a gene\" the changed position sits inside the gene band, and the gene band's label gains a new line \"new allele\". On \"the haemoglobin gene\" `m6-red-cells-normal-sickle-v1.png` slides in small at the right with the callout \"one base changed: sickle cell allele\" (grey tag \"B7\"). On \"didn't have before\" the gene pool basin returns small: its row of open rings gains one amber notched ring, and a counter beside it reads \"alleles of this gene: 2, now 3\". Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Enter slide",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "one-copy",
+      "visualDecision": "new",
+      "visualReference": "the population of twenty bacterium plates returns; on \"one cell, in one individual\" one plate takes the amber notched ring and a soft amber highlight; all others keep open rings.",
+      "teachingReason": "One copy, often no visible effect: But a new allele starts very small.",
+      "narrationCue": "mutagen",
+      "motionPurpose": "On the spoken cues: On \"a copying mistake that isn't repaired\" a tiny strand inside that plate shows a mismatch callout (grey tag \"B4: copying is accurate, not perfect\"). On \"mutagen\" a chip \"mutagen: something that harms DNA\" writes on with a \"Next video\" tag. On \"one copy\" a counter writes on, timed to the word: \"1 copy in 20 cells\".",
+      "motionRole": "explain",
+      "onScreenChange": "the population of twenty bacterium plates returns; on \"one cell, in one individual\" one plate takes the amber notched ring and a soft amber highlight; all others keep open rings. On \"a copying mistake that isn't repaired\" a tiny strand inside that plate shows a mismatch callout (grey tag \"B4: copying is accurate, not perfect\"). On \"mutagen\" a chip \"mutagen: something that harms DNA\" writes on with a \"Next video\" tag. On \"one copy\" a counter writes on, timed to the word: \"1 copy in 20 cells\". On \"change nothing you can see\" the strand returns with two small cases side by side: a change outside the gene band (tag \"outside a gene\") and a change inside the band with an unchanged protein chip (tag \"same protein\"); both get the tag \"no visible effect\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "passing-on",
+      "visualDecision": "new",
+      "visualReference": "the population board, split in two panels.",
+      "teachingReason": "Passing it on: How does that one copy spread?",
+      "narrationCue": "only if it's in a cell that makes eggs or sperm / skin cell",
+      "motionPurpose": "On the spoken cues: Left, \"bacteria\": `Lineage` grows from the marked bacterium plate: on \"splits in two\" it divides into two plates, each with the amber ring; then four, then eight, each new plate copying the ring (tag \"division: both daughter cells get it\"). Right, \"animals\": B8's red-eyed fly plate with a coded body outline inset showing two cell icons, one tagged \"cell that makes eggs or sperm\" and one tagged \"skin cell\". On \"only i",
+      "motionRole": "explain",
+      "onScreenChange": "the population board, split in two panels. Left, \"bacteria\": `Lineage` grows from the marked bacterium plate: on \"splits in two\" it divides into two plates, each with the amber ring; then four, then eight, each new plate copying the ring (tag \"division: both daughter cells get it\"). Right, \"animals\": B8's red-eyed fly plate with a coded body outline inset showing two cell icons, one tagged \"cell that makes eggs or sperm\" and one tagged \"skin cell\". On \"only if it's in a cell that makes eggs or sperm\" an amber ring appears in the first cell icon and an arrow runs down to an offspring fly plate (the white-eyed fly, grey tag \"B8: 1910\"). On \"skin cell\" an amber ring appears in the skin cell icon, its arrow to offspring takes a grey stop bar, tag \"affects this animal only\". A grey tag at the bottom: \"plants differ: later video\". Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "lineage split"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "random-not-needed",
+      "visualDecision": "new",
+      "visualReference": "the hook's two chips return (\"made by penicillin?\", \"already there?\").",
+      "teachingReason": "Random with respect to need: Now back to Fleming's question.",
+      "narrationCue": "random with respect to need",
+      "motionPurpose": "On the spoken cues: A large population of about sixty small bacterium plates fills the board; on \"Mutations happen by chance\" amber notched rings appear on random plates, one at a time, each with a tiny tag naming a different gene (\"colour\", \"sugar use\", \"cell wall\", \"resistance\", ...), most tags grey. On \"can't sense penicillin\" a chip \"bacterium senses drug, picks a mutation\" writes on and takes a grey scribble cross. On \"already carr",
+      "motionRole": "explain",
+      "onScreenChange": "the hook's two chips return (\"made by penicillin?\", \"already there?\"). A large population of about sixty small bacterium plates fills the board; on \"Mutations happen by chance\" amber notched rings appear on random plates, one at a time, each with a tiny tag naming a different gene (\"colour\", \"sugar use\", \"cell wall\", \"resistance\", ...), most tags grey. On \"can't sense penicillin\" a chip \"bacterium senses drug, picks a mutation\" writes on and takes a grey scribble cross. On \"already carry a resistance allele\" two plates carry the ring tagged \"resistance\", and a day strip at the top shows \"before penicillin\" highlighted. On \"random with respect to need\" the phrase writes on in handwriting, with the plain gloss beneath: \"it happens whether or not it helps\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "replica-plates",
+      "visualDecision": "adjust",
+      "visualReference": "`ReplicaPlates`.",
+      "teachingReason": "The replica plates: How do we know?",
+      "narrationCue": "velvet pad / Only a few colonies grew / the matching spots on the first dish / never touched the antibiotic / bacteria from those spots could grow on streptomycin / The resistance was there first",
+      "motionPurpose": "On the spoken cues: Left: the new top-down agar dish plate (`m6-agar-dish-top-v1.png`) labelled \"dish 1: no antibiotic\", with about forty coded colony dots at fixed positions (tag \"1952, Lederberg and Lederberg\"). On \"velvet pad\" the new velvet block plate (`m6-velvet-replica-block-v1.png`) lowers onto dish 1, lifts, and lowers onto dish 2 (same plate, labelled \"dish 2: streptomycin\"); a faint dot pattern transfers. On \"Only a few colon",
+      "motionRole": "explain",
+      "onScreenChange": "`ReplicaPlates`. Left: the new top-down agar dish plate (`m6-agar-dish-top-v1.png`) labelled \"dish 1: no antibiotic\", with about forty coded colony dots at fixed positions (tag \"1952, Lederberg and Lederberg\"). On \"velvet pad\" the new velvet block plate (`m6-velvet-replica-block-v1.png`) lowers onto dish 1, lifts, and lowers onto dish 2 (same plate, labelled \"dish 2: streptomycin\"); a faint dot pattern transfers. On \"Only a few colonies grew\" dish 2 shows three dots only, ringed amber. On \"the matching spots on the first dish\" three dashed guide lines run from dish 2's dots back to the same three positions on dish 1, which ring amber. On \"never touched the antibiotic\" a tag \"never exposed\" writes on dish 1. On \"bacteria from those spots could grow on streptomycin\" a small third dish (labelled \"streptomycin\") takes a growing colony from one of those spots (tag \"picked from dish 1: resistant\"). On \"The resistance was there first\" the hook's chip \"already there?\" takes a tick and \"made by penicillin?\" takes a grey scribble cross. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "selection",
+      "visualDecision": "new",
+      "visualReference": "the population of sixty plates from scene 6 (two with \"resistance\" rings).",
+      "teachingReason": "What penicillin actually does: So what does penicillin actually do?",
+      "narrationCue": "natural selection",
+      "motionPurpose": "On the spoken cues: A `DayStrip` runs along the top: \"day 0\", \"day 1\", \"day 2\", \"day 3\". On \"kills the bacteria that don't carry\" the plates without a resistance ring fade to grey outlines and fall away (tag \"susceptible: killed\"). On \"survive and keep dividing\" the two ringed plates divide with `Lineage` motion, every daughter copying the ring, while the day strip advances.",
+      "motionRole": "explain",
+      "onScreenChange": "the population of sixty plates from scene 6 (two with \"resistance\" rings). A `DayStrip` runs along the top: \"day 0\", \"day 1\", \"day 2\", \"day 3\". On \"kills the bacteria that don't carry\" the plates without a resistance ring fade to grey outlines and fall away (tag \"susceptible: killed\"). On \"survive and keep dividing\" the two ringed plates divide with `Lineage` motion, every daughter copying the ring, while the day strip advances. On \"most of the population can be resistant\" a small coded bar beside the board fills from \"2 of 60\" to \"most\" (tag \"frequency of the resistance allele rises\"). On \"too little penicillin\" the hook's dose bar returns at a third, and a few plates with a thin partial ring (tag \"slightly resistant\") stay full instead of fading (tag \"a low dose spares partly resistant cells too\"). On \"didn't create the allele\" a chip \"penicillin made the allele\" writes on and takes a grey scribble cross. On \"natural selection\" the term writes on with the gloss \"some survive and reproduce more, so their alleles become more common\". A small grey tag: \"individuals don't change their alleles; the population's mix changes\". On the end frame a second grey tag writes on at the lower right: \"Staph also share resistance genes on plasmids (B6a)\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sources",
+      "visualDecision": "new",
+      "visualReference": "the source board.",
+      "teachingReason": "Making, mixing and moving alleles: Mutation isn't the only way a population's alleles change, so let's sort the processes.",
+      "narrationCue": "Gene flow",
+      "motionPurpose": "On the spoken cues: The gene pool basin sits centre, holding open rings and one amber ring. On \"Meiosis and fertilisation\" a chip \"meiosis and fertilisation: mix\" writes on (grey tag \"B8\"); two rings inside the basin swap partners and pair into new pairs, and no new ring appears (tag \"new combinations, no new alleles\"). On \"Gene flow\" a second basin draws at the right, labelled \"another population\", and a ring with a blue-edged notch (a",
+      "motionRole": "explain",
+      "onScreenChange": "the source board. The gene pool basin sits centre, holding open rings and one amber ring. On \"Meiosis and fertilisation\" a chip \"meiosis and fertilisation: mix\" writes on (grey tag \"B8\"); two rings inside the basin swap partners and pair into new pairs, and no new ring appears (tag \"new combinations, no new alleles\"). On \"Gene flow\" a second basin draws at the right, labelled \"another population\", and a ring with a blue-edged notch (a different allele, marked by shape: a small square notch) travels across into the first basin (tag \"gene flow: brings in an allele new to this population\"). On \"made by a mutation\" a faint dashed line runs from that ring back to a small strand icon in the other population with a base-change callout (tag \"made by mutation there first\"). On \"original source of every allele\" the chip \"mutation: makes\" sits at the top of the board. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "what-next",
+      "visualDecision": "new",
+      "visualReference": "three short coded frequency lines start from the same point at the left, labelled \"new allele: 1 copy\".",
+      "teachingReason": "What happens next: So what happens to a new allele next?",
+      "narrationCue": "lost by chance / removed by selection / a few helpful ones spread / Later in this module",
+      "motionPurpose": "On the spoken cues: On \"lost by chance\" the first line wanders and drops to zero (tag \"lost by chance\"). On \"removed by selection\" the second falls steadily to zero (tag \"harmful: removed by selection\"). On \"a few helpful ones spread\" the third rises (tag \"helpful here: spreads\").",
+      "motionRole": "explain",
+      "onScreenChange": "three short coded frequency lines start from the same point at the left, labelled \"new allele: 1 copy\". On \"lost by chance\" the first line wanders and drops to zero (tag \"lost by chance\"). On \"removed by selection\" the second falls steadily to zero (tag \"harmful: removed by selection\"). On \"a few helpful ones spread\" the third rises (tag \"helpful here: spreads\"). On \"Later in this module\" a grey chip \"selection, chance (drift), gene flow: later video\" writes on. The lines are illustrative only; no axis numbers. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "four handwritten lines write on, one per cue, each beside its chip icon from the source board: \"Mutation makes\" (amber ring), \"Meiosis and fertilisation mix\" (two rings swapping), \"Gene flow moves\" (ring crossing between basins), \"Selection and chance change how common\" (a rising bar).",
+      "teachingReason": "Memory: Here's a way to sort it all.",
+      "narrationCue": "Here's a way to sort it all. Mutation",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "four handwritten lines write on, one per cue, each beside its chip icon from the source board: \"Mutation makes\" (amber ring), \"Meiosis and fertilisation mix\" (two rings swapping), \"Gene flow moves\" (ring crossing between basins), \"Selection and chance change how common\" (a rising bar). Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no populations, tags or chips from earlier scenes.",
+      "teachingReason": "Unseen transfer task (attempt one (rifampicin and resistance)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First: A patient's infection",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (rifampicin and resistance))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no populations, tags or chips from earlier scenes. The card writes on as an exam question: \"A patient's infection contains about 10 000 000 000 (10¹⁰) *Staphylococcus aureus* bacteria. Before treatment, about 1 in every 100 000 000 (10⁸) of them carries an allele for rifampicin resistance. After five days of treatment with rifampicin alone, most surviving bacteria carry this allele. A student claims: 'The rifampicin caused the bacteria to mutate so they could survive.' Evaluate this claim. (4 marks)\". One answer box. Nothing answer-bearing: no bacteria, rings or arrows. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top; the stem stays readable.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Before treatment / came first, from random mutation / The rifampicin killed / selected the allele / mutated because they needed to",
+      "motionPurpose": "On the spoken cues: (1) On \"Before treatment\" the phrase \"Before treatment\" and the two numbers are underlined amber in the strip, and the working writes on: \"10¹⁰ × 1/10⁸ = about 100 resistant bacteria before rifampicin\". (2) On \"came first, from random mutation\" a line writes on: \"allele already present: random mutation, not caused by the drug\". (3) On \"The rifampicin killed\" the phrase \"treatment with rifampicin alone\" and \"most surv",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top; the stem stays readable. (1) On \"Before treatment\" the phrase \"Before treatment\" and the two numbers are underlined amber in the strip, and the working writes on: \"10¹⁰ × 1/10⁸ = about 100 resistant bacteria before rifampicin\". (2) On \"came first, from random mutation\" a line writes on: \"allele already present: random mutation, not caused by the drug\". (3) On \"The rifampicin killed\" the phrase \"treatment with rifampicin alone\" and \"most surviving bacteria carry this allele\" are underlined in the strip; a line writes on: \"rifampicin kills susceptible cells; resistant cells survive, divide, pass the allele on; frequency rises\". (4) On \"selected the allele\" the verdict writes on: \"Claim incorrect: rifampicin selects; it does not cause the mutation\". (5) On \"mutated because they needed to\" the chip \"bacteria mutate because they need to\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (island lizards)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A population of lizards lives on an",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (island lizards))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question: \"A population of lizards lives on an island. Three events occur. (i) A base change in a cell that will make sperm produces a version of a scale-colour gene never recorded in the species. (ii) An offspring has a combination of existing alleles not seen in either parent. (iii) The same kind of base change occurs in a skin cell of one lizard. For each event, state whether it can add a new allele to the gene pool of the next generation, and name the process involved. (3 marks)\". A three-row answer table: \"event\", \"can add a new allele? (yes/no)\", \"process\". Nothing answer-bearing: no cells, rings or arrows. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip with the three events readable.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Event one / Event two / Event three / every mutation adds an allele",
+      "motionPurpose": "On the spoken cues: (1) On \"Event one\" \"a cell that will make sperm\" and \"never recorded in the species\" underline amber; row (i) fills \"yes | mutation in the germ line (heritable new allele)\". (2) On \"Event two\" \"combination of existing alleles\" underlines; row (ii) fills \"no | meiosis and fertilisation (reshuffling existing alleles)\". (3) On \"Event three\" \"skin cell\" underlines; row (iii) fills \"no | mutation in a body (somatic) cell:",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip with the three events readable. (1) On \"Event one\" \"a cell that will make sperm\" and \"never recorded in the species\" underline amber; row (i) fills \"yes | mutation in the germ line (heritable new allele)\". (2) On \"Event two\" \"combination of existing alleles\" underlines; row (ii) fills \"no | meiosis and fertilisation (reshuffling existing alleles)\". (3) On \"Event three\" \"skin cell\" underlines; row (iii) fills \"no | mutation in a body (somatic) cell: affects this lizard only\". (4) On \"every mutation adds an allele\" the chip \"every mutation enters the gene pool\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on left to right, joined by arrows, one per cue: \"1. mutation: base sequence changes in one individual\" (strand icon with a callout), \"2. passed on: division (bacteria) or eggs and sperm (animals)\" (dividing bacterium icon and fly icon), \"3. frequency changes: selection, chance, gene flow\" (basin with a rising bar).",
+      "teachingReason": "Decision rule and handoff: So when a question asks how a population gets a new allele, trace it in order.",
+      "narrationCue": "So when a question asks how a population",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how mutagens increase DNA damage\" (the `m6-uv-skin-v1.png` plate, small). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on left to right, joined by arrows, one per cue: \"1. mutation: base sequence changes in one individual\" (strand icon with a callout), \"2. passed on: division (bacteria) or eggs and sperm (animals)\" (dividing bacterium icon and fly icon), \"3. frequency changes: selection, chance, gene flow\" (basin with a rising bar). A \"Next\" chip slides in at the lower right: \"Next: how mutagens increase DNA damage\" (the `m6-uv-skin-v1.png` plate, small). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b01-learning-review.md",
+      "sha256": "5b72665763ec035dc1e7e9d5d59e565f824df5b3066a98b7c8d00db5fa9e9c7e"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b01-claude-science-check.md",
+      "sha256": "cd21d28d68b96269cd73314e9d2f7131d5d1584c07ae9c67afe405bb4bbd5296"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

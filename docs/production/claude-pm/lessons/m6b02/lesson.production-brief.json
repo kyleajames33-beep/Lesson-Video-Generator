@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b02/lesson.json",
+    "lessonSha256": "9c7dd930116212455170846796f4e324bf0f75e73c5a22a4afcb14cef039bc72"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: mutation is a change in base sequence; inside a gene it makes a new allele; it starts in one cell; a mutagen is something that harms DNA (named, not explained). From B4: complementary pairing (A with T, C with G), two strands, each a template; copying is accurate but not perfect; most errors are proofread and repaired. From B6b and B6c: codons are groups of three bases read in order. From B5a: a chromosome is one long DNA molecule. Year 11 Physics is not assumed: the electromagnetic spectrum and ionising are introduced with plain meanings.",
+    "startsWith": "A named agent raises the chance of a DNA change. The video opens: Every sunny day, ultraviolet light from the Sun damages the DNA in your skin cells, many times over in each exposed cell. Yet almost all of that damage never becomes a mutation.",
+    "stopsAfter": "distinguishing a mutagen (an agent that raises the chance of a DNA change) from a mutation (the change itself); explaining that damage to a base becomes a permanent mutation when it is copied before it is repaired, and that a wrongly rejoined break or inserted viral DNA can also make a lasting change, so exposure is a risk, not a guarantee; saying that UV, X-rays and gamma rays are electromagnetic radiation; explaining that UV is not ionising and joins neighbouring thymines into a dimer that distorts the DNA, mainly in skin cells; explaining that X-rays and gamma rays are ionising, break DNA strands directly and through free radicals, can cause large changes when breaks rejoin wrongly, and reach deep cells including those that make eggs or sperm; explaining three chemical routes; explaining naturally occurring mutagens and that natural does not mean harmless; applying this to an unseen UV against X-ray comparison and to the UV yeast data, separating survival from mutation.",
+    "nextLesson": "what one changed base can do to a protein (route entry bio-m6-b03), then chromosomal mutations (bio-m6-b04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b02.md"
+  ],
+  "teaching": {
+    "task": "What does a mutagen physically do to DNA, and why doesn't every exposure end in a mutation?",
+    "causalExplanation": "Causes: why UV isn't a mutation (it's an agent, 2); why base damage becomes permanent after copying (the wrong base gets its own partner, 3); why exposure is a risk (more damage, more chances that some is copied before repair or repaired wrongly, 4); why UV mainly affects skin (low penetration, 5); why UV mainly kinks rather than breaks (not enough energy to ionise; it bonds neighbouring thymines, 5); why X-rays break strands (ionising, directly and via free radicals, 6) and why a misjoined break needs no copying step to become a lasting change (6); why X-rays matter for eggs and sperm (deep penetration, 6); how each chemical causes an error (mimic, change, squeeze between, 7); why natural sources are mutagenic (same mechanisms, or inserted viral DNA, 8); the three routes to a lasting change (9).",
+    "conversationalApproach": "sunlight on skin poses the question (damage every day, almost none becomes a mutation); one strand board shows every mechanism acting on the same DNA: the repair race for a damaged base, UV's dimer kink, X-ray breaks and free radicals, three chemical routes, and natural sources including inserted viral DNA; a mutagen board builds row by row into a summary with the three routes to a lasting change. Two exam questions follow with brief feedback.",
+    "openingDecision": "UV damages the DNA in your skin cells every sunny day, yet almost all of it never becomes a mutation. So what exactly does UV do to DNA, what do X-rays and some chemicals do differently, and why doesn't damage always become a mutation?",
+    "understandingCheck": "11a: compare how UV and X-rays increase the risk of mutation in human cells, and which cells each is likely to affect. Answer: both damage DNA and neither guarantees a mutation; UV is not ionising and forms thymine dimers (wrong bases when copied), mainly in skin cells; X-rays are ionising and break strands (directly and via free radicals), and wrongly rejoined breaks lose or swap pieces, in cells throughout the body. Crossed mistake: \"UV and X-rays damage DNA in exactly the same way\". 11c: the site's UV yeast data (0, 15, 30, 60, 120 s; 142, 98, 61, 24, 5 colonies): describe the relationship and assess the conclusion that UV increased the mutation rate. Answer: longer exposure, fewer colonies, steepest at first; not supported, because counts measure survival, not mutation. Crossed mistake: \"fewer colonies = more mutations\". Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown.",
+    "curriculumScope": "Syllabus (2017, BIO12-13, programme/syllabus/bio-2017-y12.json, B6-IQ1-01, p 51): \"explain how a range of mutagens operate, including but not limited to: electromagnetic radiation sources; chemicals; naturally occurring mutagens\". Point mutation names and protein effects are b03; chromosomal mutations b04; somatic against germ-line effects and cancer b05."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One strand board throughout: b01's SlimStrand drawn larger as a short double strand, on which each mechanism acts (DimerKink for a thymine dimer, StrandBreak for a gap with frayed ends, a notched rung end for a base analogue, a coded blob attached to a base, a flat slab sliding between rungs, a dashed inserted viral segment). Bases are named only in small callouts. A mutagen board builds row by row from scene 5 to scene 8 in the right third (source plate thumbnail, what it does, typical result) and becomes scene 9's summary with its three-route bar. Painted plates for every real source: m6-uv-skin-v1.png, m6-xray-machine-film-v1.png, m6-shielded-source-v1.png, m6-granite-outcrop-v1.png, m6-mouldy-peanuts-v1.png, m6-virus-particle-v1.png, m6-uv-cabinet-v1.png. New coded items: RepairRace, SpectrumBar with an ionising line, the depth bar (a layered block, no body), the exposure slider. Reuse: the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam, the coded lineGraph. No people.",
+    "transitionPlan": "The sun and skin plate opens with a magnifier onto the strand board; the mutagen and mutation cards draw side by side; the repair race splits into repaired and copied-first paths; the strand widens for the exposure slider; the spectrum bar draws across the top for UV and stays for X-rays, while each mechanism acts on the same strand and fills one mutagen board row; the board fills the screen for the summary and its three-route bar; the memory lines write over the dimer and gap icons; each attempt clears the board and its feedback shrinks the card to a strip and builds the comparison or the graph one point at a time; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-uv-skin-v1.png` fills the left half (sun, violet UV beams, skin cross-section block).",
+      "teachingReason": "Hook (sunlight on skin): Every sunny day, ultraviolet light from the Sun damages the DNA in your skin cells, many times over in each exposed cell.",
+      "narrationCue": "damages the DNA in your skin cells / Your cells fix it / X-rays / why doesn't damage always become a mutation?",
+      "motionPurpose": "On the spoken cues: On \"damages the DNA in your skin cells\" a magnifier circle opens over the top layer of the skin block and shows the strand board: a short `SlimStrand` with several small kinks appearing along it, one per beat (tag \"damage\"). On \"Your cells fix it\" a small coded repair blob moves along the strand and each kink straightens, except one (tag \"most damage is repaired\"). On \"X-rays\" `m6-xray-machine-film-v1.png` slides in ",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-uv-skin-v1.png` fills the left half (sun, violet UV beams, skin cross-section block). On \"damages the DNA in your skin cells\" a magnifier circle opens over the top layer of the skin block and shows the strand board: a short `SlimStrand` with several small kinks appearing along it, one per beat (tag \"damage\"). On \"Your cells fix it\" a small coded repair blob moves along the strand and each kink straightens, except one (tag \"most damage is repaired\"). On \"X-rays\" `m6-xray-machine-film-v1.png` slides in small at the right, and on \"some chemicals\" a coded flask outline (plain, no label) slides in beside it. On \"why doesn't damage always become a mutation?\" the last kink pulses amber with a \"?\" callout. The heading writes on: \"How mutagens work\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "mutagen-mutation",
+      "visualDecision": "new",
+      "visualReference": "two cards draw side by side.",
+      "teachingReason": "Mutagen and mutation: Start with two words that sound alike.",
+      "narrationCue": "mutagen / mutation",
+      "motionPurpose": "On the spoken cues: Left \"mutagen: an agent that raises the chance of a DNA change\", with three small source thumbnails (the uv-skin plate cropped to the sun, the X-ray machine, the flask outline). Right \"mutation: the change itself\", with the strand and one position's callout changing \"C to T\" (grey tag \"b01\"). On \"So UV isn't a mutation\" a chip \"UV is a mutation\" writes on and takes a grey scribble cross; an arrow labelled \"can cause\"",
+      "motionRole": "explain",
+      "onScreenChange": "two cards draw side by side. Left \"mutagen: an agent that raises the chance of a DNA change\", with three small source thumbnails (the uv-skin plate cropped to the sun, the X-ray machine, the flask outline). Right \"mutation: the change itself\", with the strand and one position's callout changing \"C to T\" (grey tag \"b01\"). On \"So UV isn't a mutation\" a chip \"UV is a mutation\" writes on and takes a grey scribble cross; an arrow labelled \"can cause\" runs from the left card to the right. On \"without any mutagen\" a small grey tag \"B4: rare copying errors\" writes under the right card. On \"raises that rate\" a coded bar pair draws: \"no mutagen\" short, \"with a mutagen\" longer, both labelled \"mutation rate\" (illustrative, no numbers). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "repair-or-copy",
+      "visualDecision": "new",
+      "visualReference": "`RepairRace` on the strand board.",
+      "teachingReason": "Damage, repair or copy: Here's how a damaged base becomes a mutation.",
+      "narrationCue": "damages one spot / copied again / permanent, a mutation",
+      "motionPurpose": "On the spoken cues: On \"damages one spot\" one base on the top strand gets a small amber damage mark. Two paths branch below it. Upper path, \"repaired\": a coded repair blob arrives, cuts out the damaged spot and fills it using the bottom strand as a guide; the strand returns to normal with a tick (tag \"usually\").",
+      "motionRole": "explain",
+      "onScreenChange": "`RepairRace` on the strand board. On \"damages one spot\" one base on the top strand gets a small amber damage mark. Two paths branch below it. Upper path, \"repaired\": a coded repair blob arrives, cuts out the damaged spot and fills it using the bottom strand as a guide; the strand returns to normal with a tick (tag \"usually\"). Lower path, \"copied first\": a copying fork marker reaches the damage before the blob; the new strand opposite the damaged base gets a wrong base, shown in its callout (\"A\" where \"G\" belongs) (tag \"wrong base opposite the damage\"). On \"copied again\" that new strand separates and is copied; the first-round molecule stays faintly visible above, and the second-round daughter molecule, labelled \"next copy\", shows the wrong base with a matching partner, a complete changed pair (tag \"change now in both strands\"). On \"permanent, a mutation\" the lower path's final strand rings amber with the label \"mutation\". Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "risk",
+      "visualDecision": "new",
+      "visualReference": "the strand board widens to a long strand with three gene bands.",
+      "teachingReason": "A risk, not a guarantee: That's why exposure is a risk, not a guarantee.",
+      "narrationCue": "can't choose where it hits",
+      "motionPurpose": "On the spoken cues: A coded exposure slider at the top moves from \"low\" to \"high\"; on \"more damage\" damage marks multiply along the strand in proportion; on \"repair can fall behind\" the repair blobs lag behind the marks (tag \"dose: more damage at once\"); most are cleared by repair blobs, and at \"high\" more of them are left (two get amber rings, tag \"copied before repair\"). On \"can't choose where it hits\" new marks land at random positio",
+      "motionRole": "explain",
+      "onScreenChange": "the strand board widens to a long strand with three gene bands. A coded exposure slider at the top moves from \"low\" to \"high\"; on \"more damage\" damage marks multiply along the strand in proportion; on \"repair can fall behind\" the repair blobs lag behind the marks (tag \"dose: more damage at once\"); most are cleared by repair blobs, and at \"high\" more of them are left (two get amber rings, tag \"copied before repair\"). On \"can't choose where it hits\" new marks land at random positions: one inside a gene band (tag \"in a gene\"), one between bands (tag \"in no gene\"). A chip \"exposure = certain mutation\" writes on and takes a grey scribble cross. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "uv",
+      "visualDecision": "new",
+      "visualReference": "`SpectrumBar` draws across the top: \"radio, microwave, infrared, visible, UV, X-rays, gamma rays\", with an arrow \"more energy\" pointing right; on \"all part of the same spectrum\" the visible, UV, X-ray and gamma segments brighten together (tag \"all electromagnetic radiation\").",
+      "teachingReason": "Electromagnetic radiation and UV: The first group of mutagens is electromagnetic radiation.",
+      "narrationCue": "electromagnetic radiation / thymine dimer",
+      "motionPurpose": "On the spoken cues: A dashed vertical line \"ionising\" draws between UV and X-rays, with UV on the left side (tag \"UV: not ionising\"). Strand board: two adjacent rungs on the top strand carry callouts \"T\" and \"T\"; on \"join two neighbouring thymine bases\" a short bond draws between them, they pull together, and the strand line kinks (`DimerKink`); the term \"thymine dimer\" writes on with the gloss \"two neighbouring T's bonded together\". On",
+      "motionRole": "explain",
+      "onScreenChange": "`SpectrumBar` draws across the top: \"radio, microwave, infrared, visible, UV, X-rays, gamma rays\", with an arrow \"more energy\" pointing right; on \"all part of the same spectrum\" the visible, UV, X-ray and gamma segments brighten together (tag \"all electromagnetic radiation\"). A dashed vertical line \"ionising\" draws between UV and X-rays, with UV on the left side (tag \"UV: not ionising\"). Strand board: two adjacent rungs on the top strand carry callouts \"T\" and \"T\"; on \"join two neighbouring thymine bases\" a short bond draws between them, they pull together, and the strand line kinks (`DimerKink`); the term \"thymine dimer\" writes on with the gloss \"two neighbouring T's bonded together\". On \"the wrong base can go in\" a copying fork marker reaches the kink and a callout shows a wrong base in the new strand. On \"mainly damages skin cells\" the uv-skin plate returns small with its beams stopping within the skin block (tag \"UV mainly affects skin; UVA reaches the dermis\"). Mutagen board row 1 fills: sun thumbnail | \"joins neighbouring T's: kink\" | \"wrong base when copied\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "ionising",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-xray-machine-film-v1.png` and `m6-shielded-source-v1.png` sit small at the left (tags \"X-rays\", \"gamma rays: radioactive source in a lead shield\").",
+      "teachingReason": "Ionising radiation: X-rays and gamma rays: X-rays and gamma rays carry much more energy.",
+      "narrationCue": "ionising / free radicals",
+      "motionPurpose": "On the spoken cues: On \"knock electrons off atoms\" a coded atom icon (nucleus dot, two orbit rings) loses an electron dot, which flies off (gloss \"ionising: knocks electrons off\"). On \"snap the DNA backbone directly\" a gap opens in the top strand line with frayed ends (`StrandBreak`). On \"split water molecules\" a small coded water molecule icon splits into two fragments tagged \"free radical\", which drift to the strand and open a second ",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-xray-machine-film-v1.png` and `m6-shielded-source-v1.png` sit small at the left (tags \"X-rays\", \"gamma rays: radioactive source in a lead shield\"). On \"knock electrons off atoms\" a coded atom icon (nucleus dot, two orbit rings) loses an electron dot, which flies off (gloss \"ionising: knocks electrons off\"). On \"snap the DNA backbone directly\" a gap opens in the top strand line with frayed ends (`StrandBreak`). On \"split water molecules\" a small coded water molecule icon splits into two fragments tagged \"free radical\", which drift to the strand and open a second gap. On \"both strands break\" gaps open in both lines at the same point. On \"joins the broken ends back wrongly\" a short segment drops out and the ends rejoin (tag \"piece lost or swapped: later video\"). The atom and water icons clear before the depth bar draws. On \"pass deep into the body\" a coded depth bar compares \"UV mainly affects skin; UVA reaches the dermis\" with \"X-rays, gamma: right through\" (no body silhouette; a plain layered block). Mutagen board row 2 fills: X-ray thumbnail | \"ionising: breaks strands, makes free radicals\" | \"pieces lost or swapped; wrong bases\". Hold one second.",
+      "motionTools": [
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "chemicals",
+      "visualDecision": "new",
+      "visualReference": "the strand board splits into three short strands in a column, each lighting up on its cue.",
+      "teachingReason": "Chemical mutagens: The second group is chemical mutagens, and they work in three main ways.",
+      "narrationCue": "chemical mutagens / base analogue",
+      "motionPurpose": "On the spoken cues: (1) On \"look so much like a normal base\" a rung end with a notched shape slots into a new strand where a \"T\" belongs (callout \"looks like T\"); on \"pair with the wrong partner\" the next copy pairs it with \"G\" (callout \"pairs with G: wrong\"); the term \"base analogue\" writes on (grey tag \"e.g. 5-bromouracil\"). (2) On \"chemicals in tobacco smoke\" a small coded blob attaches to a \"G\" (tag \"e.g. benzo[a]pyrene, from tobacc",
+      "motionRole": "explain",
+      "onScreenChange": "the strand board splits into three short strands in a column, each lighting up on its cue. (1) On \"look so much like a normal base\" a rung end with a notched shape slots into a new strand where a \"T\" belongs (callout \"looks like T\"); on \"pair with the wrong partner\" the next copy pairs it with \"G\" (callout \"pairs with G: wrong\"); the term \"base analogue\" writes on (grey tag \"e.g. 5-bromouracil\"). (2) On \"chemicals in tobacco smoke\" a small coded blob attaches to a \"G\" (tag \"e.g. benzo[a]pyrene, from tobacco smoke\"); on \"change how it pairs\" the partner callout changes. (3) On \"slide in between\" a flat coded slab slides between two rungs and pushes them apart (grey tag \"e.g. acridine dyes\"); on \"adds or skips a base\" the new strand gains one extra base, and a row of codon brackets beneath slides one place (tag \"every codon after it shifts\"; grey tag \"B6c: codons\"). Mutagen board row 3 fills: flask thumbnail | \"mimic, change, or squeeze between bases\" | \"wrong bases; added or missing bases\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "table build",
+        "lineage split"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "natural",
+      "visualDecision": "adjust",
+      "visualReference": "on \"natural doesn't mean harmless\" (first sentence) a chip \"natural = safe\" writes on and takes a grey scribble cross; it stays small at the top while three panels draw left to right, one per cue.",
+      "teachingReason": "Naturally occurring mutagens: The third group is naturally occurring mutagens, and natural doesn't mean harmless.",
+      "narrationCue": "naturally occurring mutagens / Background radiation",
+      "motionPurpose": "On the spoken cues: (1) The new granite plate (`m6-granite-outcrop-v1.png`) (tag \"rocks and soil\") with a faint coded gas wisp rising from a crack (tag \"radon gas\") and a small coded starburst above (tag \"cosmic rays from space\"); a mini strand beside it takes a break (tag \"ionising, like X-rays\"). (2) The new mouldy peanut plate (`m6-mouldy-peanuts-v1.png`) (tag \"aflatoxin, from *Aspergillus* mould\"); a mini strand takes a coded blob o",
+      "motionRole": "explain",
+      "onScreenChange": "on \"natural doesn't mean harmless\" (first sentence) a chip \"natural = safe\" writes on and takes a grey scribble cross; it stays small at the top while three panels draw left to right, one per cue. (1) The new granite plate (`m6-granite-outcrop-v1.png`) (tag \"rocks and soil\") with a faint coded gas wisp rising from a crack (tag \"radon gas\") and a small coded starburst above (tag \"cosmic rays from space\"); a mini strand beside it takes a break (tag \"ionising, like X-rays\"). (2) The new mouldy peanut plate (`m6-mouldy-peanuts-v1.png`) (tag \"aflatoxin, from *Aspergillus* mould\"); a mini strand takes a coded blob on a \"G\" (tag \"after the liver processes it, attaches to G\"). (3) `m6-virus-particle-v1.png` (tag \"some viruses, e.g. hepatitis B virus\"); a dashed segment splices into a gene band on a mini strand (tag \"inserted inside a gene\"), then a second example splices into a small band in front of a gene labelled \"switch region\" (tag \"or into its switch\"). On \"be broken\" the first gene band greys (tag \"broken\"); on \"switched on when it shouldn't be\" the second gene band brightens (tag \"switched on\"). Mutagen board row 4 fills: three thumbnails | \"ionising; attaches to bases; inserts DNA\" | \"breaks, wrong bases, genes broken or switched on\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "any-mutagen",
+      "visualDecision": "new",
+      "visualReference": "the mutagen board fills the screen, four rows (EM radiation: UV; EM radiation: X-rays and gamma; chemicals; naturally occurring), each with its plate thumbnail and its strand icon (kink, gap, notched base or blob or slab, dashed insert).",
+      "teachingReason": "One question for any mutagen: So to explain any mutagen, ask what it physically does to DNA.",
+      "narrationCue": "the last step",
+      "motionPurpose": "On the spoken cues: On each spoken mechanism its row's middle cell rings amber in turn. On \"the last step\" a bar draws across the bottom of all four rows, one route per cue: \"damaged base → copied before repair → mutation\"; on \"joined back wrongly\" a second line \"break → joined back wrongly → lost or swapped piece\"; on \"inserted viral DNA\" a third line \"viral DNA inserted → gene broken or switched on\". A small branch under the first rou",
+      "motionRole": "explain",
+      "onScreenChange": "the mutagen board fills the screen, four rows (EM radiation: UV; EM radiation: X-rays and gamma; chemicals; naturally occurring), each with its plate thumbnail and its strand icon (kink, gap, notched base or blob or slab, dashed insert). On each spoken mechanism its row's middle cell rings amber in turn. On \"the last step\" a bar draws across the bottom of all four rows, one route per cue: \"damaged base → copied before repair → mutation\"; on \"joined back wrongly\" a second line \"break → joined back wrongly → lost or swapped piece\"; on \"inserted viral DNA\" a third line \"viral DNA inserted → gene broken or switched on\". A small branch under the first route reads \"→ repaired correctly → no mutation\". Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two big handwritten lines write on: \"Mutagen = cause.",
+      "teachingReason": "Memory: Two things to keep.",
+      "narrationCue": "can't knock electrons off",
+      "motionPurpose": "On the spoken cues: Mutation = change.\" with the scene 2 cards small beneath; then \"UV kinks, X-rays snap\" with the dimer kink icon under \"UV kinks\" and the strand gap icon under \"X-rays snap\". On \"can't knock electrons off\" and \"ionising\" the spectrum bar's ionising line flashes once. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two big handwritten lines write on: \"Mutagen = cause. Mutation = change.\" with the scene 2 cards small beneath; then \"UV kinks, X-rays snap\" with the dimer kink icon under \"UV kinks\" and the strand gap icon under \"X-rays snap\". On \"can't knock electrons off\" and \"ionising\" the spectrum bar's ionising line flashes once. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no strands, rows or tags.",
+      "teachingReason": "Unseen transfer task (attempt one (UV against X-rays)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First: Ultraviolet radiation and",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (UV against X-rays))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no strands, rows or tags. The card writes on as an exam question: \"Ultraviolet (UV) radiation and X-rays are both forms of electromagnetic radiation. Compare how each increases the risk of mutation in human cells, and which cells each is likely to affect. (4 marks)\". One answer box. Nothing answer-bearing: no spectrum bar, strand or plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Both damage DNA / UV isn't ionising / X-rays are ionising / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-column comparison writes on under the headings \"UV\" and \"X-rays\". (1) On \"Both damage DNA\" \"increases the risk\" and \"both forms of electromagnetic radiation\" underline amber in the strip, and a full-width row writes on: \"similarity: both damage DNA; most damage is repaired, so neither guarantees a mutation\". (2) On \"UV isn't ionising\" the UV column fills: \"not ionising; bonds neighbouring T's (thymine dimer); k",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A two-column comparison writes on under the headings \"UV\" and \"X-rays\". (1) On \"Both damage DNA\" \"increases the risk\" and \"both forms of electromagnetic radiation\" underline amber in the strip, and a full-width row writes on: \"similarity: both damage DNA; most damage is repaired, so neither guarantees a mutation\". (2) On \"UV isn't ionising\" the UV column fills: \"not ionising; bonds neighbouring T's (thymine dimer); kink → wrong base when copied; mainly skin cells\"; on \"mostly in skin cells\" \"which cells each is likely to affect\" underlines amber in the strip. (3) On \"X-rays are ionising\" \"X-rays\" underlines and the X-ray column fills: \"ionising; breaks strands (directly and via free radicals); wrongly rejoined breaks lose or swap pieces; reaches deep cells\". (4) On \"the classic mistake\" the chip \"UV and X-rays damage DNA in exactly the same way\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (the UV yeast data)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A student spread equal volumes of the",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (the UV yeast data))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The new UV cabinet plate (`m6-uv-cabinet-v1.png`) sits small at the top left of the card. The card writes on as an exam question: \"A student spread equal volumes of the same yeast suspension onto agar plates, exposed the plates to UV light for different times at a fixed distance, then incubated all plates under the same conditions. Each time was tested on three plates.\" Table, two columns: \"UV exposure time (s)\" | \"Mean number of colonies\": 0 | 142; 15 | 98; 30 | 61; 60 | 24; 120 | 5. Demands: \"(a) Describe the relationship between UV exposure time and the number of colonies. (2 marks)\" \"(b) The student concluded that UV increased the mutation rate in the yeast. Assess this conclusion. (3 marks)\". Two answer boxes. Nothing answer-bearing: no graph, no trend arrow. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip with the table at the right, still readable.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "As exposure time increases / goes too far / survived and divided / a changed trait / the classic mistake",
+      "motionPurpose": "On the spoken cues: (1) On \"As exposure time increases\" the coded `lineGraph` draws the five points (x \"UV exposure time (s)\", 0 to 120; y \"mean colonies\", 0 to 150) and joins them; \"0 | 142\" and \"120 | 5\" underline amber in the table; the line \"(a) longer exposure, fewer colonies: 142 → 5; steepest drop in the first 30 s\" writes on. (2) On \"goes too far\" \"UV increased the mutation rate\" underlines in the strip. (3) On \"survived and div",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip with the table at the right, still readable. (1) On \"As exposure time increases\" the coded `lineGraph` draws the five points (x \"UV exposure time (s)\", 0 to 120; y \"mean colonies\", 0 to 150) and joins them; \"0 | 142\" and \"120 | 5\" underline amber in the table; the line \"(a) longer exposure, fewer colonies: 142 → 5; steepest drop in the first 30 s\" writes on. (2) On \"goes too far\" \"UV increased the mutation rate\" underlines in the strip. (3) On \"survived and divided\" the line \"(b) not supported: counts measure survival, not mutation; dead cells and mutated cells aren't separated\" writes on. (4) On \"a changed trait\" the line \"better: count surviving colonies with a new visible trait (e.g. colour), against the 0 s control\" writes on. (5) On \"the classic mistake\" the chip \"fewer colonies = more mutations\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on left to right, one per cue: \"1. group: EM radiation, chemical, or naturally occurring\" (three thumbnails), \"2. what it does to DNA: kinks, breaks, swaps or changes bases, inserts\" (four strand icons), \"3. how it lasts: copied before repair, break rejoined wrongly, or viral DNA inserted\" (the three-route bar from scene 9).",
+      "teachingReason": "Decision rule and handoff: So to explain how a mutagen works, name its group, say what it physically does to DNA, and finish with how the change lasts: damage copied before repair, a break joined back wrongly, or DNA inserted by a virus.",
+      "narrationCue": "So to explain how a mutagen works, name",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: what one changed base does to a protein\" (`m6-red-cells-normal-sickle-v1.png`, small). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on left to right, one per cue: \"1. group: EM radiation, chemical, or naturally occurring\" (three thumbnails), \"2. what it does to DNA: kinks, breaks, swaps or changes bases, inserts\" (four strand icons), \"3. how it lasts: copied before repair, break rejoined wrongly, or viral DNA inserted\" (the three-route bar from scene 9). A \"Next\" chip slides in at the lower right: \"Next: what one changed base does to a protein\" (`m6-red-cells-normal-sickle-v1.png`, small). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b02-learning-review.md",
+      "sha256": "f270b5bc2e981077c8875bec75ebbf5ee78605595ed806b5ff14b238e5b3c271"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b02-claude-science-check.md",
+      "sha256": "dfa6a2bc048fc875237831f88808868148b14362c6519d85acacc1f456b3b9a5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

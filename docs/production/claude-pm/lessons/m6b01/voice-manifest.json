@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B01-claude-2026-10-19-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b01/lesson.json",
+  "lessonSha256": "99eda8bcd8767820a465776625eb373ee06d2f563b03226632efd47bfed4a1f3",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b01/lesson.production-brief.json",
+    "sha256": "6e49fae6888acea16f23f12c524103a2d50a29c577b35fece824f23f22daa128"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1945, Alexander Fleming, the scientist who discovered penicillin, gave a warning in his Nobel Prize lecture. If people took too little penicillin, the bacteria that survived could become resistant. And resistance did spread. Within a few years, resistant staph bacteria were common in some hospitals. So here's the real question. Did penicillin make the bacteria change, or were some of them already different before the drug arrived?",
+      "hash": "3e4abe95d80d",
+      "textSha256": "3e4abe95d80dc38bd3a6333320d77451d841ae2639b418b5ee4ae8ce9ba1c001",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/hook.3e4abe95d80d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/hook.3e4abe95d80d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/hook.3e4abe95d80d.generation.json",
+      "plannedRequestSha256": "41f9c430c6261e7dec21b235b683c6121bf546eba548f9c45feb328bc04ef76c"
+    },
+    {
+      "id": "three-levels",
+      "parentSceneId": "three-levels",
+      "text": "To answer it, we need three words, at three different levels. A gene is a stretch of DNA that codes for a product, like a protein. An allele is one version of that gene. Different alleles of a gene have slightly different base sequences. And a gene pool is every allele of every gene in a whole population. So a gene pool belongs to a population, never to one organism.",
+      "hash": "5149e84c11bd",
+      "textSha256": "5149e84c11bd2672273225ab9ec691c9c73b88818c0beff39962d0336fefd719",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/three-levels.5149e84c11bd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/three-levels.5149e84c11bd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/three-levels.5149e84c11bd.generation.json",
+      "plannedRequestSha256": "45fc4f98a0ada4003658bc46fb3f033460ebf943747ec9c3b46ceb9f7f2966b3"
+    },
+    {
+      "id": "new-allele",
+      "parentSceneId": "new-allele",
+      "text": "A mutation is a change in the base sequence of DNA. If the change lands inside a gene, it makes a version of that gene with a different sequence, and that's a new allele. You've met one already. In one haemoglobin gene, one base changed, and that made the sickle cell allele. When a change like that first appears, the population holds a version of the gene it didn't have before.",
+      "hash": "f5ef3a5b31cf",
+      "textSha256": "f5ef3a5b31cfb6e597adafacb73bbda1e0e7f8bbb526106fd988334fe7db4194",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/new-allele.f5ef3a5b31cf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/new-allele.f5ef3a5b31cf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/new-allele.f5ef3a5b31cf.generation.json",
+      "plannedRequestSha256": "7b3017e9b1b46043ff2cfa6802f9fbff74ed0a6147bd83f6a52e41b46982ccdb"
+    },
+    {
+      "id": "one-copy",
+      "parentSceneId": "one-copy",
+      "text": "But a new allele starts very small. A mutation happens in one cell, in one individual, usually from a copying mistake that isn't repaired, or from damage by a mutagen, something that harms DNA, which is the next video. So at first, there's just one copy in the whole population. And many mutations change nothing you can see, because they fall outside genes, or don't change the protein.",
+      "hash": "171786c57287",
+      "textSha256": "171786c57287d161c6ed81fdd4df445f7fe1c9ad40b609c4d2c8319d1ee4c626",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/one-copy.171786c57287.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/one-copy.171786c57287.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/one-copy.171786c57287.generation.json",
+      "plannedRequestSha256": "de7076b827cb3f75ebecd20a47dd4645a02caafc3d4d9f00f4d57b7d1c03547a"
+    },
+    {
+      "id": "passing-on",
+      "parentSceneId": "passing-on",
+      "text": "How does that one copy spread? It depends on how the organism reproduces. A bacterium copies its DNA and splits in two, so both daughter cells get the new allele, and so does every cell descended from them. In animals, a mutation is passed on only if it's in a cell that makes eggs or sperm. A mutation in a skin cell can affect that animal, but its offspring don't inherit it.",
+      "hash": "bec620cded1d",
+      "textSha256": "bec620cded1d4d0ec2667c00147966b571f1a07b6f98e13de4919824a43cc27c",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/passing-on.bec620cded1d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/passing-on.bec620cded1d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/passing-on.bec620cded1d.generation.json",
+      "plannedRequestSha256": "bd4cd04fb10dd0c853545be158bd5dd1de0d7cf03f0780b0262f8074089cab46"
+    },
+    {
+      "id": "random-not-needed",
+      "parentSceneId": "random-not-needed",
+      "text": "Now back to Fleming's question. Mutations happen by chance, whether or not the change would help. A bacterium can't sense penicillin and make the exact mutation it needs. But in a huge population, rare mutations keep turning up, so a few cells may already carry a resistance allele before any penicillin is used. Biologists say mutation is random with respect to need.",
+      "hash": "83a45085f2a2",
+      "textSha256": "83a45085f2a238937ca4dd75bea58f6593afae9147cb24a4801a4d31f5eece73",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/random-not-needed.83a45085f2a2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/random-not-needed.83a45085f2a2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/random-not-needed.83a45085f2a2.generation.json",
+      "plannedRequestSha256": "1bfb659d846f79220304669eede7c7c79697d4f4b1a65ce3008f18eea3455a8c"
+    },
+    {
+      "id": "replica-plates",
+      "parentSceneId": "replica-plates",
+      "text": "How do we know? In 1952, Joshua and Esther Lederberg grew bacterial colonies on a dish with no antibiotic. They pressed a velvet pad onto it, then onto a dish containing the antibiotic streptomycin, printing the same pattern of colonies. Only a few colonies grew on that second dish. Then they went back to the matching spots on the first dish, which had never touched the antibiotic, and bacteria from those spots could grow on streptomycin too. The resistance was there first.",
+      "hash": "f48d96536c36",
+      "textSha256": "f48d96536c36845e7c89ee529ff72f5909447bcdac837ec56da64e389ae50aff",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/replica-plates.f48d96536c36.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/replica-plates.f48d96536c36.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/replica-plates.f48d96536c36.generation.json",
+      "plannedRequestSha256": "e403e3a5b527ebdf646ebcd8897e519468e73564e8cbea8f3c0a3cb5df2704b7"
+    },
+    {
+      "id": "selection",
+      "parentSceneId": "selection",
+      "text": "So what does penicillin actually do? It kills the bacteria that don't carry a resistance allele. The few that do carry one survive and keep dividing, and each daughter cell inherits the allele. Within days, most of the population can be resistant. And too little penicillin also spares cells that are only slightly resistant. The antibiotic didn't create the allele. It changed how common it is, and that's natural selection.",
+      "hash": "bef59dc96109",
+      "textSha256": "bef59dc961090c8d72a5a842064fca4c88ea13e9179254e28b90efed65b126be",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/selection.bef59dc96109.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/selection.bef59dc96109.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/selection.bef59dc96109.generation.json",
+      "plannedRequestSha256": "6120a2775a463124314871c0acb1bf187ee2e0c6e41a9c3234e1e1dcb90d4695"
+    },
+    {
+      "id": "sources",
+      "parentSceneId": "sources",
+      "text": "Mutation isn't the only way a population's alleles change, so let's sort the processes. Meiosis and fertilisation make new combinations, but every allele in them already existed. Gene flow, when organisms or their pollen move between populations, can bring in an allele this population didn't have. But somewhere, at some time, that allele was made by a mutation. So mutation is the original source of every allele.",
+      "hash": "60e5aa23eca8",
+      "textSha256": "60e5aa23eca8ec52ec255eea8aef35957934075cdb3a75ebcd4e2d02036c8c21",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/sources.60e5aa23eca8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/sources.60e5aa23eca8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/sources.60e5aa23eca8.generation.json",
+      "plannedRequestSha256": "84da46faa9f61066b7700a838c1a6399f5ba7f5f2011fd5892c4562cd3c5ec3b"
+    },
+    {
+      "id": "what-next",
+      "parentSceneId": "what-next",
+      "text": "So what happens to a new allele next? Many are lost by chance, harmful ones are removed by selection, and a few helpful ones spread. Later in this module, you'll see how selection, chance and gene flow decide which.",
+      "hash": "949882bf3ee1",
+      "textSha256": "949882bf3ee1b9e295e58712e63e72942bcfbdf1683a7640faa9f9b3ca06e1a7",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/what-next.949882bf3ee1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/what-next.949882bf3ee1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/what-next.949882bf3ee1.generation.json",
+      "plannedRequestSha256": "0164b55eb839673dfb691005d95c2b152c49346b83f6568697b04f60c8a0a917"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Here's a way to sort it all. Mutation makes new alleles. Meiosis and fertilisation mix them. Gene flow moves them between populations. And selection and chance change how common they are.",
+      "hash": "33d419d498a2",
+      "textSha256": "33d419d498a2ea60d2ccc99f1ab52482eb8bc42936827bc615facb5aa951a3c0",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/memory.33d419d498a2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/memory.33d419d498a2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/memory.33d419d498a2.generation.json",
+      "plannedRequestSha256": "ced4eb779a2ce95dfbff05659fc82dea40d1a95986c4b3272b524df5f09df62d"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First: A patient's infection contains about ten billion Staphylococcus aureus bacteria. Before treatment, about one in every hundred million of them carries an allele for rifampicin resistance. After five days of treatment with rifampicin alone, most surviving bacteria carry this allele. A student claims, \"The rifampicin caused the bacteria to mutate so they could survive.\" Evaluate this claim. Pause here to answer.",
+      "hash": "426e5fdb6ffd",
+      "textSha256": "426e5fdb6ffd3bf266609320ad8d550ee83734e0aecdc437cec39c070095386d",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/attempt.426e5fdb6ffd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/attempt.426e5fdb6ffd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/attempt.426e5fdb6ffd.generation.json",
+      "plannedRequestSha256": "e330fb1d970c1e19b1112856ff8af7bc8ae55cc7145ebb7ef06aa64d832ab0f6"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The claim is wrong. Before treatment, about a hundred bacteria already carried the allele: ten billion times one in a hundred million. So the allele came first, from random mutation. The rifampicin killed the susceptible bacteria, while the resistant ones survived and divided. Rifampicin selected the allele. It didn't create it. Saying the bacteria mutated because they needed to is the classic mistake.",
+      "hash": "3452a50ccf30",
+      "textSha256": "3452a50ccf3076a80c6c008d8bbad76326366e54b9702c3fdf468eda19b8e0ce",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/feedback-one.3452a50ccf30.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/feedback-one.3452a50ccf30.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/feedback-one.3452a50ccf30.generation.json",
+      "plannedRequestSha256": "cb08f61b2fed6309f366d1bf9cf3daddc29b2a88f091bc937b2662aa6ae552a5"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A population of lizards lives on an island. Three events happen. One: a base change in a cell that will make sperm produces a version of a scale colour gene never recorded in the species. Two: an offspring has a combination of existing alleles not seen in either parent. Three: the same kind of base change happens in one lizard's skin cell. For each event, state whether it can add a new allele to the next generation's gene pool, and name the process. Pause here to answer.",
+      "hash": "472ae98234fb",
+      "textSha256": "472ae98234fb62d44f80c4b87ab69e5a30c9e2e6b2fd72a8b739c9bb74264e61",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/attempt-two.472ae98234fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/attempt-two.472ae98234fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/attempt-two.472ae98234fb.generation.json",
+      "plannedRequestSha256": "96ccaac94c6cfe82df8a32e60c693010cd322fd9f16646e8a092f404501cd8fd"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Event one: yes. It's a mutation in a cell that makes sperm, so offspring can inherit the new allele. Event two: no. Meiosis and fertilisation only reshuffled alleles that were already there. Event three: no. A skin cell mutation can affect that lizard, but it isn't passed on. If you said every mutation adds an allele to the gene pool, check which cell it's in.",
+      "hash": "bad5aa43ca0b",
+      "textSha256": "bad5aa43ca0b11cbd768f735e8a07d6f1da981c34a1d846881571963749ab53c",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/feedback-two.bad5aa43ca0b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/feedback-two.bad5aa43ca0b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/feedback-two.bad5aa43ca0b.generation.json",
+      "plannedRequestSha256": "6a44f2f8858d08e358b88ba089d25fa0c16677450413a54a806185c638502749"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question asks how a population gets a new allele, trace it in order. A mutation changes the base sequence in one individual. It's passed on, by cell division in bacteria, or through eggs and sperm in animals. Then selection, chance and gene flow change how common it becomes. Next, you'll see how mutagens make DNA damage more likely.",
+      "hash": "286a753670d6",
+      "textSha256": "286a753670d68c7faca4f260ce4e07313ac8c55d67b04b730456181ad80b8153",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/decision-rule.286a753670d6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/decision-rule.286a753670d6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/decision-rule.286a753670d6.generation.json",
+      "plannedRequestSha256": "f9de454880476b9b07f0c537fbb0fb0481d865c7c270b2f5e5353f3656f609f8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B01-claude-2026-10-19-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
