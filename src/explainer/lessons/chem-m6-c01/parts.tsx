@@ -213,7 +213,7 @@ export const CARDS: TCard[] = [
 	{decade: '1880s', lines: [{t: 'Svante Arrhenius', size: 28, weight: 800}, {t: 'Sweden, 1880s', size: 22, weight: 600, color: INK_SOFT}, {t: 'acid: releases H^{+} in water', size: 27, hand: true}, {t: 'base: releases its own OH^{-}', size: 27, hand: true}], stamp: ['limits: NH_3, carbonates,', 'reactions not in aqueous solution']},
 	{decade: '1923', lines: [{t: 'Johannes Brønsted, Copenhagen', size: 22, weight: 800}, {t: 'Thomas Lowry, Cambridge', size: 22, weight: 800}, {t: 'acid: proton (H^{+}) donor', size: 27, hand: true}, {t: 'base: proton (H^{+}) acceptor', size: 27, hand: true}], stamp: ['limit: needs a proton to transfer']},
 ];
-export const TL = {x: 96, y: 168, cw: 408, gap: 33, ch: 158};
+export const TL = {x: 96, y: 182, cw: 408, gap: 33, ch: 158};
 export const cardX = (i: number) => TL.x + i * (TL.cw + TL.gap);
 /** Timeline state for a scene. fill[i] / stamp[i]: frame the card or its stamp appears (undefined: not yet). slots: empty
  *  dashed slots are drawn from this frame. strip: 0 full size under the heading, 1 small and dim top-right. lit[i]:
@@ -241,7 +241,7 @@ export const Timeline: React.FC<TLProps> = ({fill, stamp = [], slots = -1000, st
 				return (
 					<g key={i}>
 						<circle cx={x + 18} cy={TL.y + 14} r={8} fill={fo > 0.5 ? TEAL : '#fffdf8'} stroke={TEAL} strokeWidth={3} />
-						<Sx x={x + 36} y={TL.y + 22} text={c.decade} size={24} color={TEAL} weight={800} at={-1000} />
+						<Sx x={x + 34} y={TL.y + 2} text={c.decade} size={24} color={TEAL} weight={800} at={-1000} />
 						<rect x={x} y={y} width={TL.cw} height={TL.ch} rx={16} fill={fo > 0.01 ? '#fffdf8' : 'none'} stroke={fo > 0.01 ? 'rgba(60,45,20,0.25)' : INK_SOFT} strokeWidth={3} strokeDasharray={fo > 0.01 ? undefined : '10 8'} opacity={fo > 0.01 ? Math.max(0.4, fo) : 0.6} />
 						<g opacity={fo}>
 							{c.lines.map((l, j) => {
