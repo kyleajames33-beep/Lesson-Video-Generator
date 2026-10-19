@@ -25,3 +25,8 @@ The Chemistry structure is accepted: 16 core videos, 4 practice and 7 practical,
 - **Biology in parallel:** b01 to b06 and g01, the mutation block.
 
 Each design goes through the full pipeline: pack, design, learning review, science check, Codex error-only check, voicing, build, owner review, render.
+
+## Additions (19 Oct 2026)
+
+- **bio-m6-g01 (lesson key m6g01b):** mutation effects practice, placed after bio-m6-b05. It has four worked HSC-style questions: point mutations on a template strand, frameshift suppression (Crick 1961), chromosomal changes (an inversion including the centromere, and a 45,X karyotype), and somatic against germline (Belgian Blue myostatin). The start, stop and handoff are stated in `claude-pm/lessons/bio-m6-g01.md`. The draft id bio-m6-b06 is retired, because its content merged into b05.
+- **Keys:** m6b05 for bio-m6-b05. Salt hydrolysis moves from C05 and C06 to C13 or C14. The Kw value moves to C07; C06 teaches only self-ionisation and "neutral means equal".
