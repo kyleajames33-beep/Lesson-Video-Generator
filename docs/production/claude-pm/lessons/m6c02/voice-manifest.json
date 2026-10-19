@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C02-claude-2026-10-19-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c02/lesson.json",
+  "lessonSha256": "d78e962638ea47ed429251facf6392704a5a3556d60b30f3d20796f7140b34b8",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c02/lesson.production-brief.json",
+    "sha256": "986a343552c424722204a33fc42cb10b1e928f3233831d4ac9c1d6b3e28607f6"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Add hydrochloric acid to three different things. A strip of magnesium fizzes. A few marble chips fizz too. And sodium hydroxide solution doesn't fizz at all, it just gets warm. Same acid, three different results. By the end of this video, you'll be able to name every substance here, predict the products of each reaction, and balance the equations.",
+      "hash": "3f0812026947",
+      "textSha256": "3f08120269477ef2b1793e74ba818c23afbdf125ccaacda65fb023cb37be6232",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/hook.3f0812026947.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/hook.3f0812026947.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/hook.3f0812026947.generation.json",
+      "plannedRequestSha256": "b9d80290a64d425910dd106da0ca728301cfd8b5b3abc3df95cc2ad3e920808b"
+    },
+    {
+      "id": "binary-acids",
+      "parentSceneId": "binary-acids",
+      "text": "First, names. The common inorganic acids we'll name here fall into two groups. Binary acids are hydrogen joined to one non-metal, with no oxygen. They're named hydro, then the non-metal, then ic acid. H C l in water is hydrochloric acid. H B r is hydrobromic acid, H F is hydrofluoric acid, and H two S is hydrosulfuric acid. As a pure gas, H C l is just called hydrogen chloride, which is what you saw in the last video.",
+      "hash": "75a84ddf2f19",
+      "textSha256": "75a84ddf2f19e0548428ea90a901129be2568d483f62b256ba63d8cf18df3bce",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/binary-acids.75a84ddf2f19.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/binary-acids.75a84ddf2f19.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/binary-acids.75a84ddf2f19.generation.json",
+      "plannedRequestSha256": "06b86c3357fc915387a9581018b10a3935b3f8fe84db2d889137b0c576b1ae6a"
+    },
+    {
+      "id": "oxoacids",
+      "parentSceneId": "oxoacids",
+      "text": "Oxoacids contain oxygen too, and they're named after the ion inside them. If the ion ends in ate, the acid ends in ic: sulfate gives sulfuric acid, nitrate gives nitric acid, phosphate gives phosphoric acid, and carbonate gives carbonic acid. If the ion ends in ite, the acid ends in ous: sulfite gives sulfurous acid, and nitrite gives nitrous acid. Oxoacids never start with hydro. So H two S O four is sulfuric acid, not hydrosulfuric acid. That name belongs to H two S.",
+      "hash": "c8f22f817376",
+      "textSha256": "c8f22f817376bac506b85980785a53f93f1c6569c875001b38cb0137835111d4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/oxoacids.c8f22f817376.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/oxoacids.c8f22f817376.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/oxoacids.c8f22f817376.generation.json",
+      "plannedRequestSha256": "338a7e3c7c18dc1b46aa6dc99545e5d4d0108a1a173f5828d0850174aef47258"
+    },
+    {
+      "id": "naming-bases",
+      "parentSceneId": "naming-bases",
+      "text": "Bases are named like any ionic compound: metal first, then the negative ion. Sodium hydroxide, calcium hydroxide, magnesium hydroxide. Then there are the bases with no hydroxide that you met last video. Ammonia, N H three, accepts protons. Write it as ammonia, not \"ammonium hydroxide\". And metal carbonates and hydrogen carbonates, like calcium carbonate and sodium hydrogen carbonate, react as bases too.",
+      "hash": "1ebac7952399",
+      "textSha256": "1ebac7952399a7aa7f8d5c92c851169b06e3e29c258e2012f7e5ccdda52ff6c8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/naming-bases.1ebac7952399.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/naming-bases.1ebac7952399.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/naming-bases.1ebac7952399.generation.json",
+      "plannedRequestSha256": "4a21fd7da9c344fb8cb5988180a6c6946380b91ec77bb573bc4219ab90b8a55c"
+    },
+    {
+      "id": "properties",
+      "parentSceneId": "properties",
+      "text": "Acids and bases each share properties because acids give away protons and bases take them. Acids taste sour, like lemon juice and vinegar, and they turn blue litmus red. They react with reactive metals and with carbonates. Bases taste bitter, feel slippery, like soap, and turn red litmus blue. And acids and bases neutralise each other. Never test taste or feel in the lab, of course. How strongly each acid gives up its protons is a separate idea, with its own video.",
+      "hash": "973bdb89bb20",
+      "textSha256": "973bdb89bb20d4ce6682f88618e0e2177c77ba3859bd6c26b102581c183f41da",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/properties.973bdb89bb20.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/properties.973bdb89bb20.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/properties.973bdb89bb20.generation.json",
+      "plannedRequestSha256": "97350e72fbf3987352098da998e877470bb87d17e797793505ff6b00da9d2b38"
+    },
+    {
+      "id": "salt-rule",
+      "parentSceneId": "salt-rule",
+      "text": "Those reactions are where prediction comes in. Every acid reaction in this video makes a salt: an ionic compound made of a positive ion from the other reactant, and the negative ion left from the acid. Hydrochloric acid makes chlorides. Sulfuric acid makes sulfates, nitric acid makes nitrates, and phosphoric acid makes phosphates. Get the salt's formula from the charges first, then balance.",
+      "hash": "b334e89dff15",
+      "textSha256": "b334e89dff1530a1e90c051b83c6c85a150db272c2c8197a0cfeb8bd69337b6e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/salt-rule.b334e89dff15.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/salt-rule.b334e89dff15.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/salt-rule.b334e89dff15.generation.json",
+      "plannedRequestSha256": "78cd285f26c447cec7ff14e0cdebc90fd27732b738e86b36e1adff28b163064c"
+    },
+    {
+      "id": "acid-hydroxide",
+      "parentSceneId": "acid-hydroxide",
+      "text": "Pattern one: acid plus a hydroxide gives a salt and water. Why water? Each hydroxide ion accepts a proton from the acid, and a hydroxide ion plus a proton is a water molecule. Antacid tablets do this with stomach acid, which is hydrochloric acid. Magnesium hydroxide has a magnesium two plus ion and two hydroxides. Each hydroxide needs a proton, so it takes two hydrochloric acids. The products: magnesium chloride, M g C l two, and two waters.",
+      "hash": "dd911facd56d",
+      "textSha256": "dd911facd56d3c8546561152c6f1beb72ef37962af5fb0542d360ae35af888b8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-hydroxide.dd911facd56d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-hydroxide.dd911facd56d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-hydroxide.dd911facd56d.generation.json",
+      "plannedRequestSha256": "4dcd7a6b4009b3ce8a499c0cb14a41c05947acadf81bce14506185bf49678722"
+    },
+    {
+      "id": "acid-ammonia",
+      "parentSceneId": "acid-ammonia",
+      "text": "Now pattern one with a base that has no hydroxide. Fertiliser factories react ammonia with sulfuric acid to make ammonium sulfate. Each ammonia molecule accepts a proton and becomes an ammonium ion. Sulfuric acid can give two protons, so it needs two ammonias, and the salt is two ammonium ions with one sulfate. And here's the catch: there's no water in the products. With no hydroxide, there's nothing for the proton to turn into water.",
+      "hash": "a3f1a804f96c",
+      "textSha256": "a3f1a804f96c8372b61e1657229a3f423c0c7cf78967e7c7b412b690ece059da",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-ammonia.a3f1a804f96c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-ammonia.a3f1a804f96c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-ammonia.a3f1a804f96c.generation.json",
+      "plannedRequestSha256": "eb62deecb0921f9414a1c0616380116cfeede36b672b916623348c4b0d91e255"
+    },
+    {
+      "id": "acid-carbonate",
+      "parentSceneId": "acid-carbonate",
+      "text": "Pattern two: acid plus a carbonate gives a salt, water and carbon dioxide. The carbonate ion accepts two protons and becomes carbonic acid, which is unstable and breaks straight into water and carbon dioxide. That's the fizz. Marble is calcium carbonate. With hydrochloric acid, calcium two plus needs two chlorides, so two hydrochloric acids give calcium chloride, water and carbon dioxide. Hydrogen carbonates, like baking soda, follow the same pattern.",
+      "hash": "cca5abc1b077",
+      "textSha256": "cca5abc1b077bbcaacee3d9b4c52846747e89638908ea5958529f3cd6d47bde2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-carbonate.cca5abc1b077.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-carbonate.cca5abc1b077.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-carbonate.cca5abc1b077.generation.json",
+      "plannedRequestSha256": "e0230bcdca5e24560d7e3c9f3e85db9480e3b8619af7a4b5b48ef0fc7c88b4ab"
+    },
+    {
+      "id": "acid-metal",
+      "parentSceneId": "acid-metal",
+      "text": "Pattern three: acid plus a reactive metal gives a salt and hydrogen gas. This one isn't a proton transfer. The metal atoms give electrons to hydrogen ions, which pair up as hydrogen molecules, and the metal ends up as positive ions in the salt. Aluminium with hydrochloric acid: aluminium is three plus, so the salt is A l C l three. Balancing the hydrogen takes six hydrochloric acids and two aluminiums, making two aluminium chlorides and three hydrogen molecules.",
+      "hash": "257565a2726f",
+      "textSha256": "257565a2726faeb3e85fd9ffd5e98147ca9d2923fd4f9979f5ef26b678f4bcba",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-metal.257565a2726f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-metal.257565a2726f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/acid-metal.257565a2726f.generation.json",
+      "plannedRequestSha256": "1fa74a1de6e710f5c7e66fb57aa290233674e1a9a996cf3cb28e54a035b6f75c"
+    },
+    {
+      "id": "above-hydrogen",
+      "parentSceneId": "above-hydrogen",
+      "text": "But only metals above hydrogen in the activity series do this, like magnesium, aluminium, zinc and iron. Copper and silver sit below hydrogen, so in a dilute acid like hydrochloric or sulfuric acid, nothing happens. No bubbles, no salt. And watch the gas formula. Hydrogen gas is H two, never just H.",
+      "hash": "f25ab255fead",
+      "textSha256": "f25ab255fead18b870e142962901473bfc00ca13f251efbf79bd40eded010ae8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/above-hydrogen.f25ab255fead.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/above-hydrogen.f25ab255fead.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/above-hydrogen.f25ab255fead.generation.json",
+      "plannedRequestSha256": "aced093838c16e4a656dfabbc3fbb66fa5e0d6c9cb7ef8aa9ccc9cd7ede72ff0"
+    },
+    {
+      "id": "gas-tests",
+      "parentSceneId": "gas-tests",
+      "text": "Patterns two and three both fizz, so how do you tell the gases apart? Bubble the gas through limewater. Carbon dioxide turns it milky. Hold a burning splint at the mouth of the tube. Hydrogen burns with a squeaky pop. Carbonate means carbon dioxide. Metal means hydrogen.",
+      "hash": "5156e5806b59",
+      "textSha256": "5156e5806b59fe5299ede1e70358b4b2750ae10f0f6a25a8edf0d50cfc344c4f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/gas-tests.5156e5806b59.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/gas-tests.5156e5806b59.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/gas-tests.5156e5806b59.generation.json",
+      "plannedRequestSha256": "a1e879783602aab091da1afc6cb98c01370d1547b892d752afe872d0ca46c7e3"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. For the salt: the metal, or ammonium, names the first word, and the acid names the second. Magnesium with sulfuric acid makes magnesium sulfate. For the products: hydroxide, water. Carbonate, water and carbon dioxide. Metal, hydrogen. And for the acid's name: ate becomes ic, ite becomes ous.",
+      "hash": "fdefcfe6d960",
+      "textSha256": "fdefcfe6d9606e9b86f15f35f480c2e5cbc41f1d75c0f82c5dee4d40edbb573b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/memory-aid.fdefcfe6d960.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/memory-aid.fdefcfe6d960.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/memory-aid.fdefcfe6d960.generation.json",
+      "plannedRequestSha256": "81e7e8b98c66fdfe26695bcd85737227abf47537baadbec728bb2bd78da41db1"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Write a balanced chemical equation, including states, for the reaction between dilute nitric acid and solid calcium carbonate. Pause here to answer.",
+      "hash": "17dbf7f5e6bc",
+      "textSha256": "17dbf7f5e6bc9f9f6cf4db69c974f558dca7e402def3a059b004d87b7926483f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/attempt-1.17dbf7f5e6bc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/attempt-1.17dbf7f5e6bc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/attempt-1.17dbf7f5e6bc.generation.json",
+      "plannedRequestSha256": "309ff04cb05a1660c6af265f084f30d795b96f1cf62207ef09bf9a235856f9a3"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Nitric acid is H N O three, and a carbonate means pattern two: a salt, water and carbon dioxide. Calcium is two plus and nitrate is one minus, so the salt is calcium nitrate, C a, N O three in brackets, two. That needs two nitric acids. If you stopped at the salt and water, you left out the carbon dioxide, the gas that makes the fizz.",
+      "hash": "00bc1c9963e9",
+      "textSha256": "00bc1c9963e91917c7df0775e5acadf6ede7888cd8cddfa47243cfc9cf4249a1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/feedback-1.00bc1c9963e9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/feedback-1.00bc1c9963e9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/feedback-1.00bc1c9963e9.generation.json",
+      "plannedRequestSha256": "4a14a071551127d100a8c46b8e4075c03c0e6415ae6bd74a91703d832cdfe91d"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Zinc granules are added to dilute sulfuric acid. Copper turnings are added to a separate sample of the same acid. Use the activity series provided to predict what would be observed in each test, and write a balanced equation for any reaction that occurs. Pause here to answer.",
+      "hash": "1df8f606dbdb",
+      "textSha256": "1df8f606dbdb6735856dc5e0b188e15b94e758284303d7aa12b254a8d8c3d17f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/attempt-2.1df8f606dbdb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/attempt-2.1df8f606dbdb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/attempt-2.1df8f606dbdb.generation.json",
+      "plannedRequestSha256": "5d012dec36237a127e6dcce95e8888154539983702986251ab1ce8386f8a7540"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Zinc is above hydrogen, so it fizzes as hydrogen gas forms, and the zinc slowly dissolves. Zinc plus sulfuric acid gives zinc sulfate plus hydrogen, already balanced. Copper is below hydrogen, so there's no visible change, and no equation. Writing copper plus sulfuric acid gives copper sulfate and hydrogen is the trap. That reaction doesn't happen.",
+      "hash": "491e638b75f4",
+      "textSha256": "491e638b75f4a4b5106779e6688cad3063f069fc0a1736bf234a854784c210af",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/feedback-2.491e638b75f4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/feedback-2.491e638b75f4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/feedback-2.491e638b75f4.generation.json",
+      "plannedRequestSha256": "dadbc3b3b7990a65a2d90086eb3fc72fcf5239d35bfe058f1350dab0b30b73f3"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any acid reaction: name the acid, spot the pattern, build the salt from the charges, add water, carbon dioxide or hydrogen as the pattern says, then balance. Next: neutralisation gives out heat, and you'll calculate how much.",
+      "hash": "a6b278186da5",
+      "textSha256": "a6b278186da57f2ccf0c712df9f92422d8b20975cacb1eb4fb68d9e3706a9f0b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/decision-rule.a6b278186da5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/decision-rule.a6b278186da5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/decision-rule.a6b278186da5.generation.json",
+      "plannedRequestSha256": "38cdb3a047abf8e380860bc53bd94d7585a9f5aaf39963df6a6c7c6ec6d376df"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C02-claude-2026-10-19-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

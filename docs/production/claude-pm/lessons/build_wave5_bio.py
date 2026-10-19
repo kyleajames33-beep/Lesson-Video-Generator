@@ -3616,6 +3616,530 @@ B12_ROWS = {
     ],
 }
 
+M6B01_ROWS = {
+    "hook": [
+        "adjust",
+        "a dark paper card writes on \"1945, Nobel Prize lecture\" with a small coded penicillin vial icon (a plain capped glass vial outline, no label text).",
+        "Hook (Fleming's warning): In 1945, Alexander Fleming, the scientist who discovered penicillin, gave a warning in his Nobel Prize lecture.",
+        "too little penicillin / bacteria that survived / common in some hospitals / Did penicillin make the bacteria change",
+        "On the spoken cues: On \"too little penicillin\" a coded dose bar fills only a third of the way (tag \"underdose\"). On \"bacteria that survived\" a cluster of twelve small `b6a-bacterium-v1.png` plates sits on the right; on \"survived\" nine fade to grey outlines and three stay full (no rings yet). On \"common in some hospitals\" a small grey tag writes on: \"London hospital staph: about 1 in 8 resistant in 1946, about 59% by 1948\".",
+        "explain",
+        "a dark paper card writes on \"1945, Nobel Prize lecture\" with a small coded penicillin vial icon (a plain capped glass vial outline, no label text). On \"too little penicillin\" a coded dose bar fills only a third of the way (tag \"underdose\"). On \"bacteria that survived\" a cluster of twelve small `b6a-bacterium-v1.png` plates sits on the right; on \"survived\" nine fade to grey outlines and three stay full (no rings yet). On \"common in some hospitals\" a small grey tag writes on: \"London hospital staph: about 1 in 8 resistant in 1946, about 59% by 1948\". On \"Did penicillin make the bacteria change\" a question chip writes on above the cluster, \"made by penicillin?\", and on \"already different\" a second chip, \"already there?\"; both hold with a \"?\" between them. The heading writes on: \"Where new alleles come from\". Hold about two seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "three-levels": [
+        "new",
+        "the level board.",
+        "Gene, allele, gene pool: To answer it, we need three words, at three different levels.",
+        "gene / allele / gene pool",
+        "On the spoken cues: Level 1: `SlimStrand` draws across the top third; on \"a stretch of DNA\" a soft band shades one region with the callout \"gene: codes for a product\". Level 2: on \"one version of that gene\" the band duplicates downward into two short strand pieces, each with one highlighted position; small callouts show \"allele 1: ...A...\" and \"allele 2: ...T...\" (only the one differing base is shown, the rest of each strand is plain li",
+        "explain",
+        "the level board. Level 1: `SlimStrand` draws across the top third; on \"a stretch of DNA\" a soft band shades one region with the callout \"gene: codes for a product\". Level 2: on \"one version of that gene\" the band duplicates downward into two short strand pieces, each with one highlighted position; small callouts show \"allele 1: ...A...\" and \"allele 2: ...T...\" (only the one differing base is shown, the rest of each strand is plain lines), tag \"same gene, different sequence\". Level 3: on \"every allele of every gene in a whole population\" the camera pulls back; the strand shrinks into one bacterium plate, which multiplies into a population of about twenty plates, each with a small allele ring; a coded `PoolBasin` draws under them and the rings drop into it (tag \"gene pool: all the alleles in a population\"). On \"never to one organism\" a chip \"gene pool = one organism's genes\" writes on beside a single plate and takes a grey scribble cross. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Cam lens zoom",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "new-allele": [
+        "adjust",
+        "the strand returns large.",
+        "A changed base makes a new allele: A mutation is a change in the base sequence of DNA.",
+        "mutation",
+        "On the spoken cues: On \"a change in the base sequence\" one position flashes and its callout changes \"A\" to \"T\" (tag \"mutation: base sequence changes\"; grey tag \"B8\"). On \"inside a gene\" the changed position sits inside the gene band, and the gene band's label gains a new line \"new allele\". On \"the haemoglobin gene\" `m6-red-cells-normal-sickle-v1.png` slides in small at the right with the callout \"one base changed: sickle cell allele\" (g",
+        "explain",
+        "the strand returns large. On \"a change in the base sequence\" one position flashes and its callout changes \"A\" to \"T\" (tag \"mutation: base sequence changes\"; grey tag \"B8\"). On \"inside a gene\" the changed position sits inside the gene band, and the gene band's label gains a new line \"new allele\". On \"the haemoglobin gene\" `m6-red-cells-normal-sickle-v1.png` slides in small at the right with the callout \"one base changed: sickle cell allele\" (grey tag \"B7\"). On \"didn't have before\" the gene pool basin returns small: its row of open rings gains one amber notched ring, and a counter beside it reads \"alleles of this gene: 2, now 3\". Hold one second.",
+        [
+            "ScribbleCircle",
+            "Enter slide",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "one-copy": [
+        "new",
+        "the population of twenty bacterium plates returns; on \"one cell, in one individual\" one plate takes the amber notched ring and a soft amber highlight; all others keep open rings.",
+        "One copy, often no visible effect: But a new allele starts very small.",
+        "mutagen",
+        "On the spoken cues: On \"a copying mistake that isn't repaired\" a tiny strand inside that plate shows a mismatch callout (grey tag \"B4: copying is accurate, not perfect\"). On \"mutagen\" a chip \"mutagen: something that harms DNA\" writes on with a \"Next video\" tag. On \"one copy\" a counter writes on, timed to the word: \"1 copy in 20 cells\".",
+        "explain",
+        "the population of twenty bacterium plates returns; on \"one cell, in one individual\" one plate takes the amber notched ring and a soft amber highlight; all others keep open rings. On \"a copying mistake that isn't repaired\" a tiny strand inside that plate shows a mismatch callout (grey tag \"B4: copying is accurate, not perfect\"). On \"mutagen\" a chip \"mutagen: something that harms DNA\" writes on with a \"Next video\" tag. On \"one copy\" a counter writes on, timed to the word: \"1 copy in 20 cells\". On \"change nothing you can see\" the strand returns with two small cases side by side: a change outside the gene band (tag \"outside a gene\") and a change inside the band with an unchanged protein chip (tag \"same protein\"); both get the tag \"no visible effect\". Hold one second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "passing-on": [
+        "new",
+        "the population board, split in two panels.",
+        "Passing it on: How does that one copy spread?",
+        "only if it's in a cell that makes eggs or sperm / skin cell",
+        "On the spoken cues: Left, \"bacteria\": `Lineage` grows from the marked bacterium plate: on \"splits in two\" it divides into two plates, each with the amber ring; then four, then eight, each new plate copying the ring (tag \"division: both daughter cells get it\"). Right, \"animals\": B8's red-eyed fly plate with a coded body outline inset showing two cell icons, one tagged \"cell that makes eggs or sperm\" and one tagged \"skin cell\". On \"only i",
+        "explain",
+        "the population board, split in two panels. Left, \"bacteria\": `Lineage` grows from the marked bacterium plate: on \"splits in two\" it divides into two plates, each with the amber ring; then four, then eight, each new plate copying the ring (tag \"division: both daughter cells get it\"). Right, \"animals\": B8's red-eyed fly plate with a coded body outline inset showing two cell icons, one tagged \"cell that makes eggs or sperm\" and one tagged \"skin cell\". On \"only if it's in a cell that makes eggs or sperm\" an amber ring appears in the first cell icon and an arrow runs down to an offspring fly plate (the white-eyed fly, grey tag \"B8: 1910\"). On \"skin cell\" an amber ring appears in the skin cell icon, its arrow to offspring takes a grey stop bar, tag \"affects this animal only\". A grey tag at the bottom: \"plants differ: later video\". Hold one second.",
+        [
+            "DrawPath",
+            "lineage split"
+        ],
+        "Hold one second"
+    ],
+    "random-not-needed": [
+        "new",
+        "the hook's two chips return (\"made by penicillin?\", \"already there?\").",
+        "Random with respect to need: Now back to Fleming's question.",
+        "random with respect to need",
+        "On the spoken cues: A large population of about sixty small bacterium plates fills the board; on \"Mutations happen by chance\" amber notched rings appear on random plates, one at a time, each with a tiny tag naming a different gene (\"colour\", \"sugar use\", \"cell wall\", \"resistance\", ...), most tags grey. On \"can't sense penicillin\" a chip \"bacterium senses drug, picks a mutation\" writes on and takes a grey scribble cross. On \"already carr",
+        "explain",
+        "the hook's two chips return (\"made by penicillin?\", \"already there?\"). A large population of about sixty small bacterium plates fills the board; on \"Mutations happen by chance\" amber notched rings appear on random plates, one at a time, each with a tiny tag naming a different gene (\"colour\", \"sugar use\", \"cell wall\", \"resistance\", ...), most tags grey. On \"can't sense penicillin\" a chip \"bacterium senses drug, picks a mutation\" writes on and takes a grey scribble cross. On \"already carry a resistance allele\" two plates carry the ring tagged \"resistance\", and a day strip at the top shows \"before penicillin\" highlighted. On \"random with respect to need\" the phrase writes on in handwriting, with the plain gloss beneath: \"it happens whether or not it helps\". Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "replica-plates": [
+        "adjust",
+        "`ReplicaPlates`.",
+        "The replica plates: How do we know?",
+        "velvet pad / Only a few colonies grew / the matching spots on the first dish / never touched the antibiotic / bacteria from those spots could grow on streptomycin / The resistance was there first",
+        "On the spoken cues: Left: the new top-down agar dish plate (`m6-agar-dish-top-v1.png`) labelled \"dish 1: no antibiotic\", with about forty coded colony dots at fixed positions (tag \"1952, Lederberg and Lederberg\"). On \"velvet pad\" the new velvet block plate (`m6-velvet-replica-block-v1.png`) lowers onto dish 1, lifts, and lowers onto dish 2 (same plate, labelled \"dish 2: streptomycin\"); a faint dot pattern transfers. On \"Only a few colon",
+        "explain",
+        "`ReplicaPlates`. Left: the new top-down agar dish plate (`m6-agar-dish-top-v1.png`) labelled \"dish 1: no antibiotic\", with about forty coded colony dots at fixed positions (tag \"1952, Lederberg and Lederberg\"). On \"velvet pad\" the new velvet block plate (`m6-velvet-replica-block-v1.png`) lowers onto dish 1, lifts, and lowers onto dish 2 (same plate, labelled \"dish 2: streptomycin\"); a faint dot pattern transfers. On \"Only a few colonies grew\" dish 2 shows three dots only, ringed amber. On \"the matching spots on the first dish\" three dashed guide lines run from dish 2's dots back to the same three positions on dish 1, which ring amber. On \"never touched the antibiotic\" a tag \"never exposed\" writes on dish 1. On \"bacteria from those spots could grow on streptomycin\" a small third dish (labelled \"streptomycin\") takes a growing colony from one of those spots (tag \"picked from dish 1: resistant\"). On \"The resistance was there first\" the hook's chip \"already there?\" takes a tick and \"made by penicillin?\" takes a grey scribble cross. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "selection": [
+        "new",
+        "the population of sixty plates from scene 6 (two with \"resistance\" rings).",
+        "What penicillin actually does: So what does penicillin actually do?",
+        "natural selection",
+        "On the spoken cues: A `DayStrip` runs along the top: \"day 0\", \"day 1\", \"day 2\", \"day 3\". On \"kills the bacteria that don't carry\" the plates without a resistance ring fade to grey outlines and fall away (tag \"susceptible: killed\"). On \"survive and keep dividing\" the two ringed plates divide with `Lineage` motion, every daughter copying the ring, while the day strip advances.",
+        "explain",
+        "the population of sixty plates from scene 6 (two with \"resistance\" rings). A `DayStrip` runs along the top: \"day 0\", \"day 1\", \"day 2\", \"day 3\". On \"kills the bacteria that don't carry\" the plates without a resistance ring fade to grey outlines and fall away (tag \"susceptible: killed\"). On \"survive and keep dividing\" the two ringed plates divide with `Lineage` motion, every daughter copying the ring, while the day strip advances. On \"most of the population can be resistant\" a small coded bar beside the board fills from \"2 of 60\" to \"most\" (tag \"frequency of the resistance allele rises\"). On \"too little penicillin\" the hook's dose bar returns at a third, and a few plates with a thin partial ring (tag \"slightly resistant\") stay full instead of fading (tag \"a low dose spares partly resistant cells too\"). On \"didn't create the allele\" a chip \"penicillin made the allele\" writes on and takes a grey scribble cross. On \"natural selection\" the term writes on with the gloss \"some survive and reproduce more, so their alleles become more common\". A small grey tag: \"individuals don't change their alleles; the population's mix changes\". On the end frame a second grey tag writes on at the lower right: \"Staph also share resistance genes on plasmids (B6a)\". Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "sources": [
+        "new",
+        "the source board.",
+        "Making, mixing and moving alleles: Mutation isn't the only way a population's alleles change, so let's sort the processes.",
+        "Gene flow",
+        "On the spoken cues: The gene pool basin sits centre, holding open rings and one amber ring. On \"Meiosis and fertilisation\" a chip \"meiosis and fertilisation: mix\" writes on (grey tag \"B8\"); two rings inside the basin swap partners and pair into new pairs, and no new ring appears (tag \"new combinations, no new alleles\"). On \"Gene flow\" a second basin draws at the right, labelled \"another population\", and a ring with a blue-edged notch (a",
+        "explain",
+        "the source board. The gene pool basin sits centre, holding open rings and one amber ring. On \"Meiosis and fertilisation\" a chip \"meiosis and fertilisation: mix\" writes on (grey tag \"B8\"); two rings inside the basin swap partners and pair into new pairs, and no new ring appears (tag \"new combinations, no new alleles\"). On \"Gene flow\" a second basin draws at the right, labelled \"another population\", and a ring with a blue-edged notch (a different allele, marked by shape: a small square notch) travels across into the first basin (tag \"gene flow: brings in an allele new to this population\"). On \"made by a mutation\" a faint dashed line runs from that ring back to a small strand icon in the other population with a base-change callout (tag \"made by mutation there first\"). On \"original source of every allele\" the chip \"mutation: makes\" sits at the top of the board. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "what-next": [
+        "new",
+        "three short coded frequency lines start from the same point at the left, labelled \"new allele: 1 copy\".",
+        "What happens next: So what happens to a new allele next?",
+        "lost by chance / removed by selection / a few helpful ones spread / Later in this module",
+        "On the spoken cues: On \"lost by chance\" the first line wanders and drops to zero (tag \"lost by chance\"). On \"removed by selection\" the second falls steadily to zero (tag \"harmful: removed by selection\"). On \"a few helpful ones spread\" the third rises (tag \"helpful here: spreads\").",
+        "explain",
+        "three short coded frequency lines start from the same point at the left, labelled \"new allele: 1 copy\". On \"lost by chance\" the first line wanders and drops to zero (tag \"lost by chance\"). On \"removed by selection\" the second falls steadily to zero (tag \"harmful: removed by selection\"). On \"a few helpful ones spread\" the third rises (tag \"helpful here: spreads\"). On \"Later in this module\" a grey chip \"selection, chance (drift), gene flow: later video\" writes on. The lines are illustrative only; no axis numbers. Hold one second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "four handwritten lines write on, one per cue, each beside its chip icon from the source board: \"Mutation makes\" (amber ring), \"Meiosis and fertilisation mix\" (two rings swapping), \"Gene flow moves\" (ring crossing between basins), \"Selection and chance change how common\" (a rising bar).",
+        "Memory: Here's a way to sort it all.",
+        "Here's a way to sort it all. Mutation",
+        "On the spoken cues: Hold half a second.",
+        "explain",
+        "four handwritten lines write on, one per cue, each beside its chip icon from the source board: \"Mutation makes\" (amber ring), \"Meiosis and fertilisation mix\" (two rings swapping), \"Gene flow moves\" (ring crossing between basins), \"Selection and chance change how common\" (a rising bar). Hold half a second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no populations, tags or chips from earlier scenes.",
+        "Unseen transfer task (attempt one (rifampicin and resistance)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First: A patient's infection",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (rifampicin and resistance))",
+        "explain",
+        "the board clears: no populations, tags or chips from earlier scenes. The card writes on as an exam question: \"A patient's infection contains about 10 000 000 000 (10¹⁰) *Staphylococcus aureus* bacteria. Before treatment, about 1 in every 100 000 000 (10⁸) of them carries an allele for rifampicin resistance. After five days of treatment with rifampicin alone, most surviving bacteria carry this allele. A student claims: 'The rifampicin caused the bacteria to mutate so they could survive.' Evaluate this claim. (4 marks)\". One answer box. Nothing answer-bearing: no bacteria, rings or arrows. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top; the stem stays readable.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Before treatment / came first, from random mutation / The rifampicin killed / selected the allele / mutated because they needed to",
+        "On the spoken cues: (1) On \"Before treatment\" the phrase \"Before treatment\" and the two numbers are underlined amber in the strip, and the working writes on: \"10¹⁰ × 1/10⁸ = about 100 resistant bacteria before rifampicin\". (2) On \"came first, from random mutation\" a line writes on: \"allele already present: random mutation, not caused by the drug\". (3) On \"The rifampicin killed\" the phrase \"treatment with rifampicin alone\" and \"most surv",
+        "explain",
+        "the card shrinks to a strip at the top; the stem stays readable. (1) On \"Before treatment\" the phrase \"Before treatment\" and the two numbers are underlined amber in the strip, and the working writes on: \"10¹⁰ × 1/10⁸ = about 100 resistant bacteria before rifampicin\". (2) On \"came first, from random mutation\" a line writes on: \"allele already present: random mutation, not caused by the drug\". (3) On \"The rifampicin killed\" the phrase \"treatment with rifampicin alone\" and \"most surviving bacteria carry this allele\" are underlined in the strip; a line writes on: \"rifampicin kills susceptible cells; resistant cells survive, divide, pass the allele on; frequency rises\". (4) On \"selected the allele\" the verdict writes on: \"Claim incorrect: rifampicin selects; it does not cause the mutation\". (5) On \"mutated because they needed to\" the chip \"bacteria mutate because they need to\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt two (island lizards)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A population of lizards lives on an",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (island lizards))",
+        "explain",
+        "the board clears. The card writes on as an exam question: \"A population of lizards lives on an island. Three events occur. (i) A base change in a cell that will make sperm produces a version of a scale-colour gene never recorded in the species. (ii) An offspring has a combination of existing alleles not seen in either parent. (iii) The same kind of base change occurs in a skin cell of one lizard. For each event, state whether it can add a new allele to the gene pool of the next generation, and name the process involved. (3 marks)\". A three-row answer table: \"event\", \"can add a new allele? (yes/no)\", \"process\". Nothing answer-bearing: no cells, rings or arrows. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip with the three events readable.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Event one / Event two / Event three / every mutation adds an allele",
+        "On the spoken cues: (1) On \"Event one\" \"a cell that will make sperm\" and \"never recorded in the species\" underline amber; row (i) fills \"yes | mutation in the germ line (heritable new allele)\". (2) On \"Event two\" \"combination of existing alleles\" underlines; row (ii) fills \"no | meiosis and fertilisation (reshuffling existing alleles)\". (3) On \"Event three\" \"skin cell\" underlines; row (iii) fills \"no | mutation in a body (somatic) cell:",
+        "explain",
+        "the card shrinks to a strip with the three events readable. (1) On \"Event one\" \"a cell that will make sperm\" and \"never recorded in the species\" underline amber; row (i) fills \"yes | mutation in the germ line (heritable new allele)\". (2) On \"Event two\" \"combination of existing alleles\" underlines; row (ii) fills \"no | meiosis and fertilisation (reshuffling existing alleles)\". (3) On \"Event three\" \"skin cell\" underlines; row (iii) fills \"no | mutation in a body (somatic) cell: affects this lizard only\". (4) On \"every mutation adds an allele\" the chip \"every mutation enters the gene pool\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "three step chips write on left to right, joined by arrows, one per cue: \"1. mutation: base sequence changes in one individual\" (strand icon with a callout), \"2. passed on: division (bacteria) or eggs and sperm (animals)\" (dividing bacterium icon and fly icon), \"3. frequency changes: selection, chance, gene flow\" (basin with a rising bar).",
+        "Decision rule and handoff: So when a question asks how a population gets a new allele, trace it in order.",
+        "So when a question asks how a population",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how mutagens increase DNA damage\" (the `m6-uv-skin-v1.png` plate, small). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on left to right, joined by arrows, one per cue: \"1. mutation: base sequence changes in one individual\" (strand icon with a callout), \"2. passed on: division (bacteria) or eggs and sperm (animals)\" (dividing bacterium icon and fly icon), \"3. frequency changes: selection, chance, gene flow\" (basin with a rising bar). A \"Next\" chip slides in at the lower right: \"Next: how mutagens increase DNA damage\" (the `m6-uv-skin-v1.png` plate, small). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6B02_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-uv-skin-v1.png` fills the left half (sun, violet UV beams, skin cross-section block).",
+        "Hook (sunlight on skin): Every sunny day, ultraviolet light from the Sun damages the DNA in your skin cells, many times over in each exposed cell.",
+        "damages the DNA in your skin cells / Your cells fix it / X-rays / why doesn't damage always become a mutation?",
+        "On the spoken cues: On \"damages the DNA in your skin cells\" a magnifier circle opens over the top layer of the skin block and shows the strand board: a short `SlimStrand` with several small kinks appearing along it, one per beat (tag \"damage\"). On \"Your cells fix it\" a small coded repair blob moves along the strand and each kink straightens, except one (tag \"most damage is repaired\"). On \"X-rays\" `m6-xray-machine-film-v1.png` slides in ",
+        "explain",
+        "`m6-uv-skin-v1.png` fills the left half (sun, violet UV beams, skin cross-section block). On \"damages the DNA in your skin cells\" a magnifier circle opens over the top layer of the skin block and shows the strand board: a short `SlimStrand` with several small kinks appearing along it, one per beat (tag \"damage\"). On \"Your cells fix it\" a small coded repair blob moves along the strand and each kink straightens, except one (tag \"most damage is repaired\"). On \"X-rays\" `m6-xray-machine-film-v1.png` slides in small at the right, and on \"some chemicals\" a coded flask outline (plain, no label) slides in beside it. On \"why doesn't damage always become a mutation?\" the last kink pulses amber with a \"?\" callout. The heading writes on: \"How mutagens work\". Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "mutagen-mutation": [
+        "new",
+        "two cards draw side by side.",
+        "Mutagen and mutation: Start with two words that sound alike.",
+        "mutagen / mutation",
+        "On the spoken cues: Left \"mutagen: an agent that raises the chance of a DNA change\", with three small source thumbnails (the uv-skin plate cropped to the sun, the X-ray machine, the flask outline). Right \"mutation: the change itself\", with the strand and one position's callout changing \"C to T\" (grey tag \"b01\"). On \"So UV isn't a mutation\" a chip \"UV is a mutation\" writes on and takes a grey scribble cross; an arrow labelled \"can cause\"",
+        "explain",
+        "two cards draw side by side. Left \"mutagen: an agent that raises the chance of a DNA change\", with three small source thumbnails (the uv-skin plate cropped to the sun, the X-ray machine, the flask outline). Right \"mutation: the change itself\", with the strand and one position's callout changing \"C to T\" (grey tag \"b01\"). On \"So UV isn't a mutation\" a chip \"UV is a mutation\" writes on and takes a grey scribble cross; an arrow labelled \"can cause\" runs from the left card to the right. On \"without any mutagen\" a small grey tag \"B4: rare copying errors\" writes under the right card. On \"raises that rate\" a coded bar pair draws: \"no mutagen\" short, \"with a mutagen\" longer, both labelled \"mutation rate\" (illustrative, no numbers). Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "repair-or-copy": [
+        "new",
+        "`RepairRace` on the strand board.",
+        "Damage, repair or copy: Here's how a damaged base becomes a mutation.",
+        "damages one spot / copied again / permanent, a mutation",
+        "On the spoken cues: On \"damages one spot\" one base on the top strand gets a small amber damage mark. Two paths branch below it. Upper path, \"repaired\": a coded repair blob arrives, cuts out the damaged spot and fills it using the bottom strand as a guide; the strand returns to normal with a tick (tag \"usually\").",
+        "explain",
+        "`RepairRace` on the strand board. On \"damages one spot\" one base on the top strand gets a small amber damage mark. Two paths branch below it. Upper path, \"repaired\": a coded repair blob arrives, cuts out the damaged spot and fills it using the bottom strand as a guide; the strand returns to normal with a tick (tag \"usually\"). Lower path, \"copied first\": a copying fork marker reaches the damage before the blob; the new strand opposite the damaged base gets a wrong base, shown in its callout (\"A\" where \"G\" belongs) (tag \"wrong base opposite the damage\"). On \"copied again\" that new strand separates and is copied; the first-round molecule stays faintly visible above, and the second-round daughter molecule, labelled \"next copy\", shows the wrong base with a matching partner, a complete changed pair (tag \"change now in both strands\"). On \"permanent, a mutation\" the lower path's final strand rings amber with the label \"mutation\". Hold one second.",
+        [
+            "ScribbleCircle",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "risk": [
+        "new",
+        "the strand board widens to a long strand with three gene bands.",
+        "A risk, not a guarantee: That's why exposure is a risk, not a guarantee.",
+        "can't choose where it hits",
+        "On the spoken cues: A coded exposure slider at the top moves from \"low\" to \"high\"; on \"more damage\" damage marks multiply along the strand in proportion; on \"repair can fall behind\" the repair blobs lag behind the marks (tag \"dose: more damage at once\"); most are cleared by repair blobs, and at \"high\" more of them are left (two get amber rings, tag \"copied before repair\"). On \"can't choose where it hits\" new marks land at random positio",
+        "explain",
+        "the strand board widens to a long strand with three gene bands. A coded exposure slider at the top moves from \"low\" to \"high\"; on \"more damage\" damage marks multiply along the strand in proportion; on \"repair can fall behind\" the repair blobs lag behind the marks (tag \"dose: more damage at once\"); most are cleared by repair blobs, and at \"high\" more of them are left (two get amber rings, tag \"copied before repair\"). On \"can't choose where it hits\" new marks land at random positions: one inside a gene band (tag \"in a gene\"), one between bands (tag \"in no gene\"). A chip \"exposure = certain mutation\" writes on and takes a grey scribble cross. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "uv": [
+        "new",
+        "`SpectrumBar` draws across the top: \"radio, microwave, infrared, visible, UV, X-rays, gamma rays\", with an arrow \"more energy\" pointing right; on \"all part of the same spectrum\" the visible, UV, X-ray and gamma segments brighten together (tag \"all electromagnetic radiation\").",
+        "Electromagnetic radiation and UV: The first group of mutagens is electromagnetic radiation.",
+        "electromagnetic radiation / thymine dimer",
+        "On the spoken cues: A dashed vertical line \"ionising\" draws between UV and X-rays, with UV on the left side (tag \"UV: not ionising\"). Strand board: two adjacent rungs on the top strand carry callouts \"T\" and \"T\"; on \"join two neighbouring thymine bases\" a short bond draws between them, they pull together, and the strand line kinks (`DimerKink`); the term \"thymine dimer\" writes on with the gloss \"two neighbouring T's bonded together\". On",
+        "explain",
+        "`SpectrumBar` draws across the top: \"radio, microwave, infrared, visible, UV, X-rays, gamma rays\", with an arrow \"more energy\" pointing right; on \"all part of the same spectrum\" the visible, UV, X-ray and gamma segments brighten together (tag \"all electromagnetic radiation\"). A dashed vertical line \"ionising\" draws between UV and X-rays, with UV on the left side (tag \"UV: not ionising\"). Strand board: two adjacent rungs on the top strand carry callouts \"T\" and \"T\"; on \"join two neighbouring thymine bases\" a short bond draws between them, they pull together, and the strand line kinks (`DimerKink`); the term \"thymine dimer\" writes on with the gloss \"two neighbouring T's bonded together\". On \"the wrong base can go in\" a copying fork marker reaches the kink and a callout shows a wrong base in the new strand. On \"mainly damages skin cells\" the uv-skin plate returns small with its beams stopping within the skin block (tag \"UV mainly affects skin; UVA reaches the dermis\"). Mutagen board row 1 fills: sun thumbnail | \"joins neighbouring T's: kink\" | \"wrong base when copied\". Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "ionising": [
+        "adjust",
+        "`m6-xray-machine-film-v1.png` and `m6-shielded-source-v1.png` sit small at the left (tags \"X-rays\", \"gamma rays: radioactive source in a lead shield\").",
+        "Ionising radiation: X-rays and gamma rays: X-rays and gamma rays carry much more energy.",
+        "ionising / free radicals",
+        "On the spoken cues: On \"knock electrons off atoms\" a coded atom icon (nucleus dot, two orbit rings) loses an electron dot, which flies off (gloss \"ionising: knocks electrons off\"). On \"snap the DNA backbone directly\" a gap opens in the top strand line with frayed ends (`StrandBreak`). On \"split water molecules\" a small coded water molecule icon splits into two fragments tagged \"free radical\", which drift to the strand and open a second ",
+        "explain",
+        "`m6-xray-machine-film-v1.png` and `m6-shielded-source-v1.png` sit small at the left (tags \"X-rays\", \"gamma rays: radioactive source in a lead shield\"). On \"knock electrons off atoms\" a coded atom icon (nucleus dot, two orbit rings) loses an electron dot, which flies off (gloss \"ionising: knocks electrons off\"). On \"snap the DNA backbone directly\" a gap opens in the top strand line with frayed ends (`StrandBreak`). On \"split water molecules\" a small coded water molecule icon splits into two fragments tagged \"free radical\", which drift to the strand and open a second gap. On \"both strands break\" gaps open in both lines at the same point. On \"joins the broken ends back wrongly\" a short segment drops out and the ends rejoin (tag \"piece lost or swapped: later video\"). The atom and water icons clear before the depth bar draws. On \"pass deep into the body\" a coded depth bar compares \"UV mainly affects skin; UVA reaches the dermis\" with \"X-rays, gamma: right through\" (no body silhouette; a plain layered block). Mutagen board row 2 fills: X-ray thumbnail | \"ionising: breaks strands, makes free radicals\" | \"pieces lost or swapped; wrong bases\". Hold one second.",
+        [
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "chemicals": [
+        "new",
+        "the strand board splits into three short strands in a column, each lighting up on its cue.",
+        "Chemical mutagens: The second group is chemical mutagens, and they work in three main ways.",
+        "chemical mutagens / base analogue",
+        "On the spoken cues: (1) On \"look so much like a normal base\" a rung end with a notched shape slots into a new strand where a \"T\" belongs (callout \"looks like T\"); on \"pair with the wrong partner\" the next copy pairs it with \"G\" (callout \"pairs with G: wrong\"); the term \"base analogue\" writes on (grey tag \"e.g. 5-bromouracil\"). (2) On \"chemicals in tobacco smoke\" a small coded blob attaches to a \"G\" (tag \"e.g. benzo[a]pyrene, from tobacc",
+        "explain",
+        "the strand board splits into three short strands in a column, each lighting up on its cue. (1) On \"look so much like a normal base\" a rung end with a notched shape slots into a new strand where a \"T\" belongs (callout \"looks like T\"); on \"pair with the wrong partner\" the next copy pairs it with \"G\" (callout \"pairs with G: wrong\"); the term \"base analogue\" writes on (grey tag \"e.g. 5-bromouracil\"). (2) On \"chemicals in tobacco smoke\" a small coded blob attaches to a \"G\" (tag \"e.g. benzo[a]pyrene, from tobacco smoke\"); on \"change how it pairs\" the partner callout changes. (3) On \"slide in between\" a flat coded slab slides between two rungs and pushes them apart (grey tag \"e.g. acridine dyes\"); on \"adds or skips a base\" the new strand gains one extra base, and a row of codon brackets beneath slides one place (tag \"every codon after it shifts\"; grey tag \"B6c: codons\"). Mutagen board row 3 fills: flask thumbnail | \"mimic, change, or squeeze between bases\" | \"wrong bases; added or missing bases\". Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "table build",
+            "lineage split"
+        ],
+        "Hold one second"
+    ],
+    "natural": [
+        "adjust",
+        "on \"natural doesn't mean harmless\" (first sentence) a chip \"natural = safe\" writes on and takes a grey scribble cross; it stays small at the top while three panels draw left to right, one per cue.",
+        "Naturally occurring mutagens: The third group is naturally occurring mutagens, and natural doesn't mean harmless.",
+        "naturally occurring mutagens / Background radiation",
+        "On the spoken cues: (1) The new granite plate (`m6-granite-outcrop-v1.png`) (tag \"rocks and soil\") with a faint coded gas wisp rising from a crack (tag \"radon gas\") and a small coded starburst above (tag \"cosmic rays from space\"); a mini strand beside it takes a break (tag \"ionising, like X-rays\"). (2) The new mouldy peanut plate (`m6-mouldy-peanuts-v1.png`) (tag \"aflatoxin, from *Aspergillus* mould\"); a mini strand takes a coded blob o",
+        "explain",
+        "on \"natural doesn't mean harmless\" (first sentence) a chip \"natural = safe\" writes on and takes a grey scribble cross; it stays small at the top while three panels draw left to right, one per cue. (1) The new granite plate (`m6-granite-outcrop-v1.png`) (tag \"rocks and soil\") with a faint coded gas wisp rising from a crack (tag \"radon gas\") and a small coded starburst above (tag \"cosmic rays from space\"); a mini strand beside it takes a break (tag \"ionising, like X-rays\"). (2) The new mouldy peanut plate (`m6-mouldy-peanuts-v1.png`) (tag \"aflatoxin, from *Aspergillus* mould\"); a mini strand takes a coded blob on a \"G\" (tag \"after the liver processes it, attaches to G\"). (3) `m6-virus-particle-v1.png` (tag \"some viruses, e.g. hepatitis B virus\"); a dashed segment splices into a gene band on a mini strand (tag \"inserted inside a gene\"), then a second example splices into a small band in front of a gene labelled \"switch region\" (tag \"or into its switch\"). On \"be broken\" the first gene band greys (tag \"broken\"); on \"switched on when it shouldn't be\" the second gene band brightens (tag \"switched on\"). Mutagen board row 4 fills: three thumbnails | \"ionising; attaches to bases; inserts DNA\" | \"breaks, wrong bases, genes broken or switched on\". Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "any-mutagen": [
+        "new",
+        "the mutagen board fills the screen, four rows (EM radiation: UV; EM radiation: X-rays and gamma; chemicals; naturally occurring), each with its plate thumbnail and its strand icon (kink, gap, notched base or blob or slab, dashed insert).",
+        "One question for any mutagen: So to explain any mutagen, ask what it physically does to DNA.",
+        "the last step",
+        "On the spoken cues: On each spoken mechanism its row's middle cell rings amber in turn. On \"the last step\" a bar draws across the bottom of all four rows, one route per cue: \"damaged base → copied before repair → mutation\"; on \"joined back wrongly\" a second line \"break → joined back wrongly → lost or swapped piece\"; on \"inserted viral DNA\" a third line \"viral DNA inserted → gene broken or switched on\". A small branch under the first rou",
+        "explain",
+        "the mutagen board fills the screen, four rows (EM radiation: UV; EM radiation: X-rays and gamma; chemicals; naturally occurring), each with its plate thumbnail and its strand icon (kink, gap, notched base or blob or slab, dashed insert). On each spoken mechanism its row's middle cell rings amber in turn. On \"the last step\" a bar draws across the bottom of all four rows, one route per cue: \"damaged base → copied before repair → mutation\"; on \"joined back wrongly\" a second line \"break → joined back wrongly → lost or swapped piece\"; on \"inserted viral DNA\" a third line \"viral DNA inserted → gene broken or switched on\". A small branch under the first route reads \"→ repaired correctly → no mutation\". Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "two big handwritten lines write on: \"Mutagen = cause.",
+        "Memory: Two things to keep.",
+        "can't knock electrons off",
+        "On the spoken cues: Mutation = change.\" with the scene 2 cards small beneath; then \"UV kinks, X-rays snap\" with the dimer kink icon under \"UV kinks\" and the strand gap icon under \"X-rays snap\". On \"can't knock electrons off\" and \"ionising\" the spectrum bar's ionising line flashes once. Hold half a second.",
+        "explain",
+        "two big handwritten lines write on: \"Mutagen = cause. Mutation = change.\" with the scene 2 cards small beneath; then \"UV kinks, X-rays snap\" with the dimer kink icon under \"UV kinks\" and the strand gap icon under \"X-rays snap\". On \"can't knock electrons off\" and \"ionising\" the spectrum bar's ionising line flashes once. Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears: no strands, rows or tags.",
+        "Unseen transfer task (attempt one (UV against X-rays)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First: Ultraviolet radiation and",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (UV against X-rays))",
+        "explain",
+        "the board clears: no strands, rows or tags. The card writes on as an exam question: \"Ultraviolet (UV) radiation and X-rays are both forms of electromagnetic radiation. Compare how each increases the risk of mutation in human cells, and which cells each is likely to affect. (4 marks)\". One answer box. Nothing answer-bearing: no spectrum bar, strand or plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Both damage DNA / UV isn't ionising / X-rays are ionising / the classic mistake",
+        "On the spoken cues: A two-column comparison writes on under the headings \"UV\" and \"X-rays\". (1) On \"Both damage DNA\" \"increases the risk\" and \"both forms of electromagnetic radiation\" underline amber in the strip, and a full-width row writes on: \"similarity: both damage DNA; most damage is repaired, so neither guarantees a mutation\". (2) On \"UV isn't ionising\" the UV column fills: \"not ionising; bonds neighbouring T's (thymine dimer); k",
+        "explain",
+        "the card shrinks to a strip at the top. A two-column comparison writes on under the headings \"UV\" and \"X-rays\". (1) On \"Both damage DNA\" \"increases the risk\" and \"both forms of electromagnetic radiation\" underline amber in the strip, and a full-width row writes on: \"similarity: both damage DNA; most damage is repaired, so neither guarantees a mutation\". (2) On \"UV isn't ionising\" the UV column fills: \"not ionising; bonds neighbouring T's (thymine dimer); kink → wrong base when copied; mainly skin cells\"; on \"mostly in skin cells\" \"which cells each is likely to affect\" underlines amber in the strip. (3) On \"X-rays are ionising\" \"X-rays\" underlines and the X-ray column fills: \"ionising; breaks strands (directly and via free radicals); wrongly rejoined breaks lose or swap pieces; reaches deep cells\". (4) On \"the classic mistake\" the chip \"UV and X-rays damage DNA in exactly the same way\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt two (the UV yeast data)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A student spread equal volumes of the",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (the UV yeast data))",
+        "explain",
+        "the board clears. The new UV cabinet plate (`m6-uv-cabinet-v1.png`) sits small at the top left of the card. The card writes on as an exam question: \"A student spread equal volumes of the same yeast suspension onto agar plates, exposed the plates to UV light for different times at a fixed distance, then incubated all plates under the same conditions. Each time was tested on three plates.\" Table, two columns: \"UV exposure time (s)\" | \"Mean number of colonies\": 0 | 142; 15 | 98; 30 | 61; 60 | 24; 120 | 5. Demands: \"(a) Describe the relationship between UV exposure time and the number of colonies. (2 marks)\" \"(b) The student concluded that UV increased the mutation rate in the yeast. Assess this conclusion. (3 marks)\". Two answer boxes. Nothing answer-bearing: no graph, no trend arrow. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip with the table at the right, still readable.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "As exposure time increases / goes too far / survived and divided / a changed trait / the classic mistake",
+        "On the spoken cues: (1) On \"As exposure time increases\" the coded `lineGraph` draws the five points (x \"UV exposure time (s)\", 0 to 120; y \"mean colonies\", 0 to 150) and joins them; \"0 | 142\" and \"120 | 5\" underline amber in the table; the line \"(a) longer exposure, fewer colonies: 142 → 5; steepest drop in the first 30 s\" writes on. (2) On \"goes too far\" \"UV increased the mutation rate\" underlines in the strip. (3) On \"survived and div",
+        "explain",
+        "the card shrinks to a strip with the table at the right, still readable. (1) On \"As exposure time increases\" the coded `lineGraph` draws the five points (x \"UV exposure time (s)\", 0 to 120; y \"mean colonies\", 0 to 150) and joins them; \"0 | 142\" and \"120 | 5\" underline amber in the table; the line \"(a) longer exposure, fewer colonies: 142 → 5; steepest drop in the first 30 s\" writes on. (2) On \"goes too far\" \"UV increased the mutation rate\" underlines in the strip. (3) On \"survived and divided\" the line \"(b) not supported: counts measure survival, not mutation; dead cells and mutated cells aren't separated\" writes on. (4) On \"a changed trait\" the line \"better: count surviving colonies with a new visible trait (e.g. colour), against the 0 s control\" writes on. (5) On \"the classic mistake\" the chip \"fewer colonies = more mutations\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "three step chips write on left to right, one per cue: \"1. group: EM radiation, chemical, or naturally occurring\" (three thumbnails), \"2. what it does to DNA: kinks, breaks, swaps or changes bases, inserts\" (four strand icons), \"3. how it lasts: copied before repair, break rejoined wrongly, or viral DNA inserted\" (the three-route bar from scene 9).",
+        "Decision rule and handoff: So to explain how a mutagen works, name its group, say what it physically does to DNA, and finish with how the change lasts: damage copied before repair, a break joined back wrongly, or DNA inserted by a virus.",
+        "So to explain how a mutagen works, name",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: what one changed base does to a protein\" (`m6-red-cells-normal-sickle-v1.png`, small). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on left to right, one per cue: \"1. group: EM radiation, chemical, or naturally occurring\" (three thumbnails), \"2. what it does to DNA: kinks, breaks, swaps or changes bases, inserts\" (four strand icons), \"3. how it lasts: copied before repair, break rejoined wrongly, or viral DNA inserted\" (the three-route bar from scene 9). A \"Next\" chip slides in at the lower right: \"Next: what one changed base does to a protein\" (`m6-red-cells-normal-sickle-v1.png`, small). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+
 LESSONS = {
     'b3b': {
         'design': D + 'lessons/bio-m5-b03b.md',
@@ -3934,6 +4458,28 @@ LESSONS = {
         'teaching': {"task": "How can DNA itself show who inherited what, and when should you read every base rather than compare a few markers?", "causalExplanation": "Causes: why sequencing needs assembly (it reads short fragments, 3); why carriers show two letters (two copies read together, 4); why repeat lengths differ between people (repeat number varies, 5); why DNA moves and why short pieces move further (negative charge; easier passage through the gel, 6); why every child band matches a parent (one copy from each, 7); why a match is weaker than a mismatch (shared patterns; chances multiply only for independently inherited markers, 8); why profiling can't find a disease allele (it measures lengths, mostly in non-coding DNA, 9). Visible case: one family trace, one trio gel, one ladder, one choice board. Video advantage: fragments snap together by overlap; double peaks appear on carriers; bands race and settle; joining lines show which parent gave each band; the ladder multiplies live. Thinking opportunities: two unseen items with every band and demand on screen. Reading load: one board at a time; the attempt 1 card (three gels, four lanes each) is the densest frame and is the task itself.", "conversationalApproach": "Conversational, one board at a time, causes before names. Scene 2 says what each tool measures before naming either one. Scene 5 shows the repeated unit and the different repeat counts before naming \"short tandem repeats\". Scene 6 explains why DNA moves and why short pieces move further before naming the band. Scene 8 shows why chances multiply before saying \"many markers\". Analogy: One, small and true to the mechanism: assembling overlapping fragments is like matching the edges of torn strips (scene 3), because both work only where pieces share an overlap. The contrast \"one reads every letter; the other checks a handful of markers\" (scene 2) is literal, not an analogy.", "openingDecision": "So how can a pattern of bands show who's related? And how is that different from reading DNA one base at a time?", "understandingCheck": "11a is a paternity gel at three markers (mother, child, man A, man B; one man excluded at two markers, the other consistent at all three): it tests the \"child band from mother or father\" rule, identifying the paternal band first, exclusion and the limit of inclusion. 11c is the site's tool-choice question (a disease-linked single-base variant in two populations) with a second demand to name a question where profiling is better: it tests what each tool measures. Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, short working on the card, one crossed-out classic mistake. No mark-allocation talk.", "curriculumScope": "\"investigate the use of technologies to determine inheritance patterns in a population using, for example: (ACSBL064, ACSBL085)\" with the example \"DNA sequencing and profiling (ACSBL086)\". Route action B-technologies (ledger row p1068). The parent line is marked as a depth-study or practical opportunity in the syllabus JSON; this video supplies the concepts and two analysis tasks, not a student investigation. Update ledger row p1068 when this design passes review."},
         'design_block': {'renderer': RENDERER, "visualSystem": "Three boards. (1) The read board (scenes 2 to 4): coded base tiles in B4's `BasePiece` look; fragments as short tile rows; an assembly lane where overlaps snap together; a coded sequencing trace (a row of smooth peaks, each labelled with its base letter; at a heterozygous position two overlapping peaks with the label \"A/T\"); B9's `Pedigree` with a sequence chip under each symbol. (2) The gel board (scenes 5 to 8): a coded repeat strip (`RepeatStrip`: a marker drawn as a run of four-base blocks, each block labelled \"GATA\", with the count written at the end); a coded gel slab front-on (`Gel`: wells along the top edge labelled \"wells\", the top edge tagged \"−, black lead\", the bottom edge \"+, red lead\"; one lane per individual, headed with a pedigree symbol or a card; band positions computed from fragment length); the painted gel tank plate as context only. (3) The choice board (scenes 9, 12): two columns, \"sequencing: base order\" and \"profiling: selected markers\", filling with question cards. Individuals are always pedigree symbols (squares, circles) or coded cards, never people. Amber is the emphasis colour only. Electrode signs are written (\"−\", \"+\"), never colour only.", "transitionPlan": "The 1985 case and the band card open the lesson; the read board holds the two-tools split, the fragment lanes and the sickle family pedigree; the repeat strip carries short tandem repeats and hands over to the gel board for the gel, the child bands and the marker ladder; the choice board takes the tool choice and the limits; the memory aids and the decision rule follow; each attempt clears the board to one card (a paternity gel or a tool-choice question) and the feedback shrinks the card to a strip while the working writes on; scene crossfade with settle."},
         'rows': B12_ROWS,
+    },
+    'm6b01': {
+        'design': D + 'lessons/bio-m6-b01.md',
+        'meta': {"title": "How Mutation Adds a New Allele to a Population", "subtitle": "How does one changed base in one organism end up as a new allele in a whole population's gene pool, and did the antibiotic cause it?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 1, "lessonIntent": "defining gene, allele and gene pool and keeping the three levels apart; saying that a base change inside a gene makes a new allele (sickle cell); saying that a new allele starts as one copy in one individual and that many mutations change nothing visible; explaining how a new allele is passed on in bacteria (both daughter cells) and in animals (only from cells that make eggs or sperm); explaining random with respect to need and the replica plating evidence; explaining how an antibiotic selects an existing resistance allele and raises its frequency; separating mutation (makes alleles), meiosis and fertilisation (mix them), gene flow (moves them) and selection and chance (change frequency); applying this to an unseen rifampicin evaluate item and an unseen island lizard classification."},
+        'hold_seconds': 10,
+        'holds': ['attempt', 'attempt-two'],
+        'ids': ['hook', 'three-levels', 'new-allele', 'one-copy', 'passing-on', 'random-not-needed', 'replica-plates', 'selection', 'sources', 'what-next', 'memory', 'attempt', 'feedback-one', 'attempt-two', 'feedback-two', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From B8: mutation is a change in the base sequence and the only way a brand-new allele appears; reshuffling (crossing over, independent assortment, random fertilisation) makes new combinations of existing alleles; a mutation is inherited only if it is in a cell that makes eggs or sperm. From B4 and B5a: DNA copying is accurate, not perfect; most errors are repaired; a surviving error is copied into every descendant cell. From B7: the sickle cell allele is one base change in the haemoglobin gene. From B6a: a bacterium's circular chromosome; plasmids can carry resistance genes. From B6b: a gene codes for a product. Year 11: natural selection, selection pressure. Not assumed: gene pool, population-level allele language, random with respect to need, replica plating, gene flow.", "startsWith": "The Module 6 opener. The video opens: In 1945, Alexander Fleming, the scientist who discovered penicillin, gave a warning in his Nobel Prize lecture.", "stopsAfter": "defining gene, allele and gene pool and keeping the three levels apart; saying that a base change inside a gene makes a new allele (sickle cell); saying that a new allele starts as one copy in one individual and that many mutations change nothing visible; explaining how a new allele is passed on in bacteria (both daughter cells) and in animals (only from cells that make eggs or sperm); explaining random with respect to need and the replica plating evidence; explaining how an antibiotic selects an existing resistance allele and raises its frequency; separating mutation (makes alleles), meiosis and fertilisation (mix them), gene flow (moves them, so it can add an allele new to a population) and selection and chance (change frequency); applying this to an unseen evaluate item on rifampicin resistance and an unseen classification of three events in an island lizard population.", "nextLesson": "how mutagens increase DNA damage (route entry bio-m6-b02), then what one changed base can do to a protein (bio-m6-b03)."},
+        'teaching': {"task": "How does one changed base in one organism end up as a new allele in a whole population's gene pool, and did the antibiotic cause it?", "causalExplanation": "Causes: why a base change makes a new allele (the gene's sequence is now different, 3); why a new allele starts rare (one cell, one individual, 4); why many mutations change nothing visible (outside genes, same protein, 4); why bacteria pass every mutation on (division copies the whole chromosome, 5); why an animal's skin-cell mutation is not inherited (not in an egg or sperm line, 5); why mutation can't be for resistance (a bacterium can't sense the drug and choose a change, 6); how we know (replica plates, 7); why resistance rises (differential survival and division, 8); why gene flow can add an allele without a mutation in that population (9).", "conversationalApproach": "Fleming's 1945 warning sets the question (did penicillin make the bacteria change, or were some already different?); three levels (gene, allele, gene pool) are built on screen before they are named; one base change becomes one copy in one individual, then spreads by division in bacteria or through eggs and sperm in animals; the replica plates answer the hook; penicillin is shown selecting, not creating; the processes are sorted into make, mix, move and change frequency. Two exam questions follow with brief feedback.", "openingDecision": "Fleming warned that too little penicillin could leave resistant survivors, and resistance did spread. So did penicillin make the bacteria change, or were some of them already different before the drug arrived?", "understandingCheck": "12a is an evaluate item on a Staphylococcus aureus infection (10^10 bacteria, 1 in 10^8 rifampicin resistant before treatment, five days of rifampicin alone, most survivors resistant) with the claim \"The rifampicin caused the bacteria to mutate so they could survive\": it tests random mutation before exposure (about 100 resistant cells already), selection as differential survival and division, and inheritance in bacteria; crossed mistake \"bacteria mutate because they need to\". 12c classifies three events in an island lizard population (a germ-line base change, a new combination of existing alleles, the same change in a skin cell): yes, no, no; crossed mistake \"every mutation enters the gene pool\". Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown; feedback about 27 to 30 s.", "curriculumScope": "Syllabus (2017, BIO12-13, programme/syllabus/bio-2017-y12.json, B6-IQ1-02, p 51): \"compare the causes, processes and effects of different types of mutation, including but not limited to: point mutation; chromosomal mutation\". This video supplies the shared frame for that dotpoint (cause, process, effect on a gene pool) and answers the inquiry question \"How does mutation introduce new alleles into a population?\"; the comparison of mutation types is b03 and b04, mutagens b02."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Three boards, one at a time. (1) The level board (scenes 2 to 4): a slim coded DNA strand (SlimStrand: two thin lines with rungs, a soft gene band, one highlighted position with a before/after base callout), beside a population of small b6a-bacterium-v1.png plates, each with a coded allele ring (open: original allele; amber notched: new allele; never colour alone). (2) The population board (scenes 5 to 8, 10): a dividing Lineage tree copying the ring to both daughters; the replica plating sequence on the m6-agar-dish-top-v1.png and m6-velvet-replica-block-v1.png plates with coded colony dots at fixed positions; a DayStrip for the penicillin course; animals as B8's fly plates, never people. (3) The source board (scene 9, memory, decision rule): four process chips around a coded gene pool basin. Amber marks the new allele only. Reuse: the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam; m6-red-cells-normal-sickle-v1.png; m6-uv-skin-v1.png for the next chip.", "transitionPlan": "The 1945 card and the bacterium cluster open with the two question chips; the level board builds strand, allele pair and pool basin in turn; the population board takes over as the marked bacterium divides and the fly panel splits off; the hook's chips return for randomness and the replica plates resolve them with a tick and a cross; the population falls away to its resistant lineage under the day strip; the source board gathers make, mix and move around the basin; three frequency lines show what happens next; each attempt clears the board and its feedback shrinks the card to a strip and builds the model answer one point at a time; the step chips and next chip close; scene crossfade with settle."},
+        'rows': M6B01_ROWS,
+    },
+    'm6b02': {
+        'design': D + 'lessons/bio-m6-b02.md',
+        'meta': {"title": "How Mutagens Damage DNA: UV, X-rays, Chemicals and Natural Mutagens", "subtitle": "What does a mutagen physically do to DNA, and why doesn't every exposure end in a mutation?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 2, "lessonIntent": "distinguishing a mutagen from a mutation; explaining that damage to a base becomes a permanent mutation when it is copied before it is repaired, and that a wrongly rejoined break or inserted viral DNA can also make a lasting change, so exposure is a risk, not a guarantee; saying that UV, X-rays and gamma rays are electromagnetic radiation; explaining UV thymine dimers (mainly skin cells) against ionising strand breaks and free radicals (deep cells, including those that make eggs or sperm); explaining three chemical routes; explaining naturally occurring mutagens and that natural does not mean harmless; applying this to an unseen UV against X-ray comparison and the UV yeast data, separating survival from mutation."},
+        'hold_seconds': 10,
+        'holds': ['attempt', 'attempt-two'],
+        'ids': ['hook', 'mutagen-mutation', 'repair-or-copy', 'risk', 'uv', 'ionising', 'chemicals', 'natural', 'any-mutagen', 'memory', 'attempt', 'feedback-one', 'attempt-two', 'feedback-two', 'decision-rule', 'key-notes'],
+        'progression': {"prerequisiteKnowledge": "From b01: mutation is a change in base sequence; inside a gene it makes a new allele; it starts in one cell; a mutagen is something that harms DNA (named, not explained). From B4: complementary pairing (A with T, C with G), two strands, each a template; copying is accurate but not perfect; most errors are proofread and repaired. From B6b and B6c: codons are groups of three bases read in order. From B5a: a chromosome is one long DNA molecule. Year 11 Physics is not assumed: the electromagnetic spectrum and ionising are introduced with plain meanings.", "startsWith": "A named agent raises the chance of a DNA change. The video opens: Every sunny day, ultraviolet light from the Sun damages the DNA in your skin cells, many times over in each exposed cell. Yet almost all of that damage never becomes a mutation.", "stopsAfter": "distinguishing a mutagen (an agent that raises the chance of a DNA change) from a mutation (the change itself); explaining that damage to a base becomes a permanent mutation when it is copied before it is repaired, and that a wrongly rejoined break or inserted viral DNA can also make a lasting change, so exposure is a risk, not a guarantee; saying that UV, X-rays and gamma rays are electromagnetic radiation; explaining that UV is not ionising and joins neighbouring thymines into a dimer that distorts the DNA, mainly in skin cells; explaining that X-rays and gamma rays are ionising, break DNA strands directly and through free radicals, can cause large changes when breaks rejoin wrongly, and reach deep cells including those that make eggs or sperm; explaining three chemical routes; explaining naturally occurring mutagens and that natural does not mean harmless; applying this to an unseen UV against X-ray comparison and to the UV yeast data, separating survival from mutation.", "nextLesson": "what one changed base can do to a protein (route entry bio-m6-b03), then chromosomal mutations (bio-m6-b04)."},
+        'teaching': {"task": "What does a mutagen physically do to DNA, and why doesn't every exposure end in a mutation?", "causalExplanation": "Causes: why UV isn't a mutation (it's an agent, 2); why base damage becomes permanent after copying (the wrong base gets its own partner, 3); why exposure is a risk (more damage, more chances that some is copied before repair or repaired wrongly, 4); why UV mainly affects skin (low penetration, 5); why UV mainly kinks rather than breaks (not enough energy to ionise; it bonds neighbouring thymines, 5); why X-rays break strands (ionising, directly and via free radicals, 6) and why a misjoined break needs no copying step to become a lasting change (6); why X-rays matter for eggs and sperm (deep penetration, 6); how each chemical causes an error (mimic, change, squeeze between, 7); why natural sources are mutagenic (same mechanisms, or inserted viral DNA, 8); the three routes to a lasting change (9).", "conversationalApproach": "sunlight on skin poses the question (damage every day, almost none becomes a mutation); one strand board shows every mechanism acting on the same DNA: the repair race for a damaged base, UV's dimer kink, X-ray breaks and free radicals, three chemical routes, and natural sources including inserted viral DNA; a mutagen board builds row by row into a summary with the three routes to a lasting change. Two exam questions follow with brief feedback.", "openingDecision": "UV damages the DNA in your skin cells every sunny day, yet almost all of it never becomes a mutation. So what exactly does UV do to DNA, what do X-rays and some chemicals do differently, and why doesn't damage always become a mutation?", "understandingCheck": "11a: compare how UV and X-rays increase the risk of mutation in human cells, and which cells each is likely to affect. Answer: both damage DNA and neither guarantees a mutation; UV is not ionising and forms thymine dimers (wrong bases when copied), mainly in skin cells; X-rays are ionising and break strands (directly and via free radicals), and wrongly rejoined breaks lose or swap pieces, in cells throughout the body. Crossed mistake: \"UV and X-rays damage DNA in exactly the same way\". 11c: the site's UV yeast data (0, 15, 30, 60, 120 s; 142, 98, 61, 24, 5 colonies): describe the relationship and assess the conclusion that UV increased the mutation rate. Answer: longer exposure, fewer colonies, steepest at first; not supported, because counts measure survival, not mutation. Crossed mistake: \"fewer colonies = more mutations\". Each ends \"Pause here to answer.\" with a 10 s countdown; each card stays on screen during and after the countdown.", "curriculumScope": "Syllabus (2017, BIO12-13, programme/syllabus/bio-2017-y12.json, B6-IQ1-01, p 51): \"explain how a range of mutagens operate, including but not limited to: electromagnetic radiation sources; chemicals; naturally occurring mutagens\". Point mutation names and protein effects are b03; chromosomal mutations b04; somatic against germ-line effects and cancer b05."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One strand board throughout: b01's SlimStrand drawn larger as a short double strand, on which each mechanism acts (DimerKink for a thymine dimer, StrandBreak for a gap with frayed ends, a notched rung end for a base analogue, a coded blob attached to a base, a flat slab sliding between rungs, a dashed inserted viral segment). Bases are named only in small callouts. A mutagen board builds row by row from scene 5 to scene 8 in the right third (source plate thumbnail, what it does, typical result) and becomes scene 9's summary with its three-route bar. Painted plates for every real source: m6-uv-skin-v1.png, m6-xray-machine-film-v1.png, m6-shielded-source-v1.png, m6-granite-outcrop-v1.png, m6-mouldy-peanuts-v1.png, m6-virus-particle-v1.png, m6-uv-cabinet-v1.png. New coded items: RepairRace, SpectrumBar with an ionising line, the depth bar (a layered block, no body), the exposure slider. Reuse: the explainer kit (Plate, Callout, Mark, Countdown, HandText, DrawPath, scribbleEllipse, Enter), B6a's WrongChip, GreyTag, Cross, Cam, the coded lineGraph. No people.", "transitionPlan": "The sun and skin plate opens with a magnifier onto the strand board; the mutagen and mutation cards draw side by side; the repair race splits into repaired and copied-first paths; the strand widens for the exposure slider; the spectrum bar draws across the top for UV and stays for X-rays, while each mechanism acts on the same strand and fills one mutagen board row; the board fills the screen for the summary and its three-route bar; the memory lines write over the dimer and gap icons; each attempt clears the board and its feedback shrinks the card to a strip and builds the comparison or the graph one point at a time; the step chips and next chip close; scene crossfade with settle."},
+        'rows': M6B02_ROWS,
     },
 }
 

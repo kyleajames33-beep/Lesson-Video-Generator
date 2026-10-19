@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c01/lesson.json",
+    "lessonSha256": "8cd3b22558315066bedf7c271e2e87b8c496e7ee04b58d39026cf0cf14d31423"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Year 11: atoms, ions, ionic and covalent formulas, polyatomic ions (hydroxide, carbonate, hydrogen carbonate, ammonium, sulfate), balancing, state symbols; acids, bases, neutralisation and litmus (Module 3 reactions). Module 5: the double arrow means a reversible reaction at equilibrium (chem-m5-c01; chem-m5-c05). Not assumed: conjugate pairs, strength, pH.",
+    "startsWith": "Compare Arrhenius acid and base definitions in water, after a 45 second Lavoisier and Davy run-up. The video opens: Here's a bottle of household ammonia cleaner. Touch it with red litmus paper, and the paper turns blue. So it's a base.",
+    "stopsAfter": "stating the Lavoisier, Davy, Arrhenius and Brønsted-Lowry definitions with the observation that limited each; explaining why ammonia, carbonates and HCl(g) + NH₃(g) defeat the Arrhenius model and how proton transfer explains each; writing HCl + H₂O → H₃O⁺ + Cl⁻ and NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ and saying where the OH⁻ comes from; identifying the Brønsted-Lowry acid and base in a given equation by following the proton; stating one limitation of the Brønsted-Lowry model; assessing a claim about a model. No conjugate pairs, no strength, no pH, no Lewis theory beyond its name.",
+    "nextLesson": "naming acids and bases and predicting the products of acid reactions (route chem-m6-c02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c01.md"
+  ],
+  "teaching": {
+    "task": "Ammonia is clearly a base, but it contains no hydroxide. Why did chemists keep changing what \"acid\" and \"base\" mean, and how does proton transfer explain what the older models couldn't?",
+    "causalExplanation": "(1) ammonia is a base with no hydroxide: puzzle (1); (2) a model is a definition that predicts; it is replaced by an observation it cannot explain (2); (3) Lavoisier: oxygen; broken by HCl (3); (4) Davy: hydrogen; methane shows hydrogen alone does not identify an acid, and no bases (4); (5) Arrhenius: H⁺ and OH⁻ in water; explains neutralisation and shared acid behaviour (5); (6) Arrhenius needs a base with its own OH⁻, so ammonia needed a made-up compound (6); (7) carbonates and a gas reaction with no aqueous medium also fail (7); (8) Brønsted-Lowry: donor and acceptor of a proton; a proton is a hydrogen ion (8); (9) HCl gives a proton to water; H₃O⁺ is what H⁺(aq) means (9); (10) water gives a proton to ammonia; the OH⁻ comes from water (10); (11) the gas reaction and carbonate solved the same way (11); (12) acid and base are roles: follow the proton (12); (13) Brønsted-Lowry's own limit: CaO + SO₃ has no proton (13); memory aid (14); two attempts and brief feedback (15 to 18); decision rule and handoff (19); key notes (20).",
+    "conversationalApproach": "one puzzle carries the video: ammonia turns litmus blue but has no hydroxide. The models arrive in date order, each with the observation it could not explain (HCl, methane and no bases, ammonia and carbonates and a gas reaction); then proton transfer is shown working in water (HCl, ammonia) and without an aqueous medium (the gas tube), water is seen in both roles, and even Brønsted-Lowry gets its limit. Two exam questions follow with brief feedback.",
+    "openingDecision": "Ammonia turns red litmus blue, so it's a base, but its formula has no hydroxide. For decades the leading theory said a base had to supply its own hydroxide. So how can ammonia be a base?",
+    "understandingCheck": "(A1) HCO₃⁻(aq) + H₂O(l) ⇌ H₂CO₃(aq) + OH⁻(aq): identify the Brønsted-Lowry acid and base in the forward reaction and justify in terms of proton transfer. Answer: water is the acid (loses a proton, becomes OH⁻); HCO₃⁻ is the base (gains a proton, becomes H₂CO₃). Crossed mistake: \"HCO₃⁻ is the acid because it contains H\". (A2) assess \"The Arrhenius model has been proved wrong, so it should no longer be used\", referring to ammonia. Answer: not valid; the model is limited, not wrong; it works for acids and hydroxide bases in water but needs a base with its own OH⁻, so it cannot explain ammonia, which Brønsted-Lowry explains as a proton acceptor. Crossed mistake: \"Arrhenius was proved wrong\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53; local catalogue ID C6-IQ1-06): \"explore the changes in definitions and models of an acid and a base over time to explain the limitations of each model, including but not limited to: Arrhenius’ theory; Brønsted–Lowry theory (ACSCH064, ACSCH067)\". Conjugate pairs are chem-m6-c06; strength and arrows chem-m6-c05; pH chem-m6-c07."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: the proton (H⁺) is always a small teal token; acids (donors) amber outline; bases (acceptors) violet outline; water molecules pale blue; spent or rejected ideas grey. Board layout (constant): a timeline band across the top (four dated name cards, added one at a time, then dimmed to a strip); the main zone below holds the plate, the particle lens or the equation strip, one at a time; the short question top-left in one line. No human figures: every scientist is a dated name card. Reuse: the C13 equation strip, token flight and crossed-chip style; the countdown ring; the key notes board; painted plates m6-household-cleaner-bottle-v1.png, m5x-ammonia-bottle-v1.png, m6-baking-soda-box-v1.png, m6-beaker-v1.png, m5x-strong-acid-mg-v1.png. New: the proton-hop motion (donor charge down one, acceptor up one), the aligned litmus pair and the aligned ammonium chloride tube pair (Codex asset brief; coded interims are not approved for release).",
+    "transitionPlan": "The cleaner bottle and litmus strip open the puzzle; the timeline band draws and fills one dated card per model, each card gaining its stamp as its failure is shown; the timeline dims to a strip while the lens and equation strip work HCl in water, ammonia in water and the gas tube; the two water equations stack for the roles scene; the timeline brightens for the Brønsted-Lowry limit and the memory aid; each attempt clears the board and its feedback underlines the question as it rebuilds the token hop; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-household-cleaner-bottle-v1.png` stands left with a coded tag \"ammonia cleaner\"; on a white tile beside it the new red litmus strip plate (`m6-litmus-red-v1.png`); on \"blue\" a 1 second crossfade to `m6-litmus-blue-v1.png` (aligned pair).",
+      "teachingReason": "Hook (a base with no hydroxide): Here's a bottle of household ammonia cleaner.",
+      "narrationCue": "blue / N H three",
+      "motionPurpose": "On the spoken cues: Heading writes: \"A base with no hydroxide?\" On \"N H three\" a coded ball-and-stick NH₃ molecule (one blue N, three white H) rises beside the bottle; a pen ring searches it and a chip \"OH⁻?\" fades in and is crossed (caption \"no O at all\"). On \"supply its own hydroxide\" a grey card \"base = makes its own OH⁻\" slides in at the top. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-household-cleaner-bottle-v1.png` stands left with a coded tag \"ammonia cleaner\"; on a white tile beside it the new red litmus strip plate (`m6-litmus-red-v1.png`); on \"blue\" a 1 second crossfade to `m6-litmus-blue-v1.png` (aligned pair). Heading writes: \"A base with no hydroxide?\" On \"N H three\" a coded ball-and-stick NH₃ molecule (one blue N, three white H) rises beside the bottle; a pen ring searches it and a chip \"OH⁻?\" fades in and is crossed (caption \"no O at all\"). On \"supply its own hydroxide\" a grey card \"base = makes its own OH⁻\" slides in at the top. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "Plate crossfade",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "models-change",
+      "visualDecision": "new",
+      "visualReference": "the timeline band draws across the top with four empty dated slots: \"1770s\", \"1810s\", \"1880s\", \"1923\".",
+      "teachingReason": "How models change: To answer that, follow how the idea changed.",
+      "narrationCue": "can't explain",
+      "motionPurpose": "On the spoken cues: Under it a small loop diagram writes: \"model predicts\" → \"observation\" → \"fits? keep\" / \"can't explain? replace\". On \"can't explain\" the \"replace\" branch lights amber. On \"three times\" three small amber arrows appear between the four slots.",
+      "motionRole": "explain",
+      "onScreenChange": "the timeline band draws across the top with four empty dated slots: \"1770s\", \"1810s\", \"1880s\", \"1923\". Under it a small loop diagram writes: \"model predicts\" → \"observation\" → \"fits? keep\" / \"can't explain? replace\". On \"can't explain\" the \"replace\" branch lights amber. On \"three times\" three small amber arrows appear between the four slots. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "lavoisier",
+      "visualDecision": "new",
+      "visualReference": "name card fills slot 1: \"Antoine Lavoisier, Paris, 1770s: acids contain oxygen\" (text only).",
+      "teachingReason": "Lavoisier (acids contain oxygen): In the late seventeen hundreds, Antoine Lavoisier studied sulfuric, nitric and phosphoric acid.",
+      "narrationCue": "oxygen / acid maker / No oxygen",
+      "motionPurpose": "On the spoken cues: Main zone: three coded formula tiles H₂SO₄, HNO₃, H₃PO₄; on \"oxygen\" every O in them glows red. On \"acid maker\" a word tile \"oxy + gen = acid + maker (Greek)\" writes under the card. On \"hydrochloric acid\" a fourth tile \"HCl\" slides in; on \"No oxygen\" a pen ring finds no O and the card gets an amber stamp \"broken by: HCl\".",
+      "motionRole": "explain",
+      "onScreenChange": "name card fills slot 1: \"Antoine Lavoisier, Paris, 1770s: acids contain oxygen\" (text only). Main zone: three coded formula tiles H₂SO₄, HNO₃, H₃PO₄; on \"oxygen\" every O in them glows red. On \"acid maker\" a word tile \"oxy + gen = acid + maker (Greek)\" writes under the card. On \"hydrochloric acid\" a fourth tile \"HCl\" slides in; on \"No oxygen\" a pen ring finds no O and the card gets an amber stamp \"broken by: HCl\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "davy",
+      "visualDecision": "new",
+      "visualReference": "slot 2 fills: \"Humphry Davy, London, 1810s: acids contain hydrogen\".",
+      "teachingReason": "Davy (acids contain hydrogen): So Davy proposed that hydrogen, not oxygen, is the key ingredient in acids.",
+      "narrationCue": "hydrogen / Methane / bases",
+      "motionPurpose": "On the spoken cues: The four acid tiles return with every H glowing teal. On \"Methane\" a coded CH₄ molecule appears with four H atoms glowing and a tag \"not acidic\"; a pen bracket joins it to the HCl tile with \"both have H\". On \"bases\" a dashed empty box \"base = ?\" appears beside the card.",
+      "motionRole": "explain",
+      "onScreenChange": "slot 2 fills: \"Humphry Davy, London, 1810s: acids contain hydrogen\". The four acid tiles return with every H glowing teal. On \"Methane\" a coded CH₄ molecule appears with four H atoms glowing and a tag \"not acidic\"; a pen bracket joins it to the HCl tile with \"both have H\". On \"bases\" a dashed empty box \"base = ?\" appears beside the card. The card gets its stamp \"limit: hydrogen alone does not identify an acid; no base definition\". Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "arrhenius",
+      "visualDecision": "adjust",
+      "visualReference": "slot 3 fills: \"Svante Arrhenius, Sweden, 1880s: acid releases H⁺ in water; base releases its own OH⁻\".",
+      "teachingReason": "Arrhenius (ions in water): In the eighteen eighties, Svante Arrhenius brought in ions.",
+      "narrationCue": "hydrogen ions / hydroxide ions / water / same ion",
+      "motionPurpose": "On the spoken cues: Main zone: a beaker outline (`m6-beaker-v1.png`) with a particle lens. On \"hydrogen ions\" the equation strip writes \"HCl(g) → H⁺(aq) + Cl⁻(aq)\" (tag \"in water\") and teal H⁺ tokens appear in the lens; on \"hydroxide ions\" a second line \"NaOH(s) → Na⁺(aq) + OH⁻(aq)\" writes and violet OH⁻ tokens enter the lens, each leaving its own NaOH formula unit. On \"water\" an H⁺ and an OH⁻ meet in the lens and snap into a pale blue ",
+      "motionRole": "explain",
+      "onScreenChange": "slot 3 fills: \"Svante Arrhenius, Sweden, 1880s: acid releases H⁺ in water; base releases its own OH⁻\". Main zone: a beaker outline (`m6-beaker-v1.png`) with a particle lens. On \"hydrogen ions\" the equation strip writes \"HCl(g) → H⁺(aq) + Cl⁻(aq)\" (tag \"in water\") and teal H⁺ tokens appear in the lens; on \"hydroxide ions\" a second line \"NaOH(s) → Na⁺(aq) + OH⁻(aq)\" writes and violet OH⁻ tokens enter the lens, each leaving its own NaOH formula unit. On \"water\" an H⁺ and an OH⁻ meet in the lens and snap into a pale blue H₂O; the line \"H⁺ + OH⁻ → H₂O\" writes with the tag \"neutralisation\". On \"same ion\" HCl, HNO₃ and H₂SO₄ tiles each release a teal H⁺ token, bracketed \"all give H⁺\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "arrhenius-ammonia",
+      "visualDecision": "adjust",
+      "visualReference": "a teal tick \"still works: acids and hydroxide bases in water\" pins under the Arrhenius card.",
+      "teachingReason": "Arrhenius and ammonia (a made-up compound): And the Arrhenius model still works for acids and hydroxide bases in water.",
+      "narrationCue": "its own / ammonium hydroxide / made-up compound",
+      "motionPurpose": "On the spoken cues: Split panel: left, NaOH tile releasing its own OH⁻ token (arrow out of the formula, tag \"its own OH⁻\"); right, the NH₃ molecule with no OH to release (empty arrow, \"?\"). `m5x-ammonia-bottle-v1.png` stands under the right panel with label \"ammonia solution, NH₃(aq)\". On \"ammonium hydroxide\" a grey tile \"NH₄OH\" is stamped onto the bottle label; on \"made-up compound\" it gets a dashed outline and the tag \"never isolated\"",
+      "motionRole": "explain",
+      "onScreenChange": "a teal tick \"still works: acids and hydroxide bases in water\" pins under the Arrhenius card. Split panel: left, NaOH tile releasing its own OH⁻ token (arrow out of the formula, tag \"its own OH⁻\"); right, the NH₃ molecule with no OH to release (empty arrow, \"?\"). `m5x-ammonia-bottle-v1.png` stands under the right panel with label \"ammonia solution, NH₃(aq)\". On \"ammonium hydroxide\" a grey tile \"NH₄OH\" is stamped onto the bottle label; on \"made-up compound\" it gets a dashed outline and the tag \"never isolated\", and a chip \"Arrhenius was wrong\" fades in and is crossed (caption \"limited, not wrong\"). Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "token flight",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "more-failures",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-baking-soda-box-v1.png` left with tiles \"NaHCO₃\" and \"Na₂CO₃\", each ringed \"no OH⁻\" and a tag \"solution: basic\".",
+      "teachingReason": "Two more failures (carbonates, and no water): Two more problems piled up.",
+      "narrationCue": "Baking soda / white ring / water",
+      "motionPurpose": "On the spoken cues: On \"white ring\" the main zone shows the new tube plate pair: `m6-nh4cl-tube-clear-v1.png` crossfading to `m6-nh4cl-tube-ring-v1.png` (interim until painted: a coded horizontal tube with drifting dots meeting as a white band); end tags \"HCl(g)\" and \"NH₃(g)\"; the ring is ringed with \"NH₄Cl(s)\". On \"water\" a tag \"gas reaction: no aqueous reaction medium\" pins to the tube (no crossed droplet: the cotton wool is wet) and ",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-baking-soda-box-v1.png` left with tiles \"NaHCO₃\" and \"Na₂CO₃\", each ringed \"no OH⁻\" and a tag \"solution: basic\". On \"white ring\" the main zone shows the new tube plate pair: `m6-nh4cl-tube-clear-v1.png` crossfading to `m6-nh4cl-tube-ring-v1.png` (interim until painted: a coded horizontal tube with drifting dots meeting as a white band); end tags \"HCl(g)\" and \"NH₃(g)\"; the ring is ringed with \"NH₄Cl(s)\". On \"water\" a tag \"gas reaction: no aqueous reaction medium\" pins to the tube (no crossed droplet: the cotton wool is wet) and the Arrhenius card's stamp completes: \"limits: NH₃, carbonates, reactions not in aqueous solution\". Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "bronsted-lowry",
+      "visualDecision": "new",
+      "visualReference": "slot 4 fills with two linked cards: \"Johannes Brønsted, Copenhagen, 1923\" and \"Thomas Lowry, Cambridge, 1923\", joined by a bracket \"independently\".",
+      "teachingReason": "Brønsted and Lowry (donate and accept a proton): In 1923, two chemists, Johannes Brønsted in Copenhagen and Thomas Lowry in Cambridge, independently published the same fix.",
+      "narrationCue": "moves / proton donor / proton acceptor / proton",
+      "motionPurpose": "On the spoken cues: The definition card writes: \"Acid: proton (H⁺) donor. Base: proton (H⁺) acceptor. Any reaction, water or not.\" On \"moves\" a teal token travels from an amber-outlined box \"acid\" to a violet-outlined box \"base\".",
+      "motionRole": "explain",
+      "onScreenChange": "slot 4 fills with two linked cards: \"Johannes Brønsted, Copenhagen, 1923\" and \"Thomas Lowry, Cambridge, 1923\", joined by a bracket \"independently\". The definition card writes: \"Acid: proton (H⁺) donor. Base: proton (H⁺) acceptor. Any reaction, water or not.\" On \"moves\" a teal token travels from an amber-outlined box \"acid\" to a violet-outlined box \"base\". On \"proton\" a coded hydrogen atom (one proton, one electron dot) loses its electron dot, leaving the teal token, tagged \"H atom − electron = H⁺ = proton\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hcl-water",
+      "visualDecision": "new",
+      "visualReference": "the timeline dims to a strip.",
+      "teachingReason": "Hydrogen chloride in water (hydronium): Watch it work.",
+      "narrationCue": "acid / base / H three O plus / attached to water",
+      "motionPurpose": "On the spoken cues: Particle lens: an HCl molecule beside a pale blue H₂O; on \"moves\" the teal H token hops from Cl to the water O (pen arrow), Cl gains a \"−\" and the water becomes H₃O⁺ with a \"+\". On \"acid\" HCl gets an amber outline and tag \"donor\"; on \"base\" water gets a violet outline and tag \"acceptor\". The equation strip writes: \"HCl(g) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" with amber and violet underlines matching.",
+      "motionRole": "explain",
+      "onScreenChange": "the timeline dims to a strip. Particle lens: an HCl molecule beside a pale blue H₂O; on \"moves\" the teal H token hops from Cl to the water O (pen arrow), Cl gains a \"−\" and the water becomes H₃O⁺ with a \"+\". On \"acid\" HCl gets an amber outline and tag \"donor\"; on \"base\" water gets a violet outline and tag \"acceptor\". The equation strip writes: \"HCl(g) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" with amber and violet underlines matching. On \"H three O plus\" the label \"hydronium ion\" writes under H₃O⁺. On \"attached to water\" the \"hydronium ion\" label dims and a small chip \"H⁺(aq) = H₃O⁺(aq)\" pins; then the H⁺(aq) chip dims and beneath it a chip \"HCl → H⁺ + Cl⁻ (for a Brønsted-Lowry answer)\" fades in and is crossed (caption \"show the water\"). Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ammonia-water",
+      "visualDecision": "new",
+      "visualReference": "lens: NH₃ beside H₂O.",
+      "teachingReason": "Ammonia in water (where the hydroxide comes from): Now the hook.",
+      "narrationCue": "water / ammonium ion / hydroxide ion / comes from water / double arrow / accepts a proton",
+      "motionPurpose": "On the spoken cues: On \"water is the donor\" the water gets an amber outline; the teal H token hops from the water to N (pen arrow). On \"ammonium ion\" NH₃ becomes NH₄⁺ with a violet outline; on \"hydroxide ion\" the remaining OH⁻ is ringed with the tag \"left from water\". The equation strip writes: \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\".",
+      "motionRole": "explain",
+      "onScreenChange": "lens: NH₃ beside H₂O. On \"water is the donor\" the water gets an amber outline; the teal H token hops from the water to N (pen arrow). On \"ammonium ion\" NH₃ becomes NH₄⁺ with a violet outline; on \"hydroxide ion\" the remaining OH⁻ is ringed with the tag \"left from water\". The equation strip writes: \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\". On \"comes from water\" a pen arrow runs from the H₂O on the left to the OH⁻ on the right. On \"double arrow\" the ⇌ pulses with a callback tag \"Module 5: reversible, at equilibrium\" and the lens shows most NH₃ unchanged with a few NH₄⁺. On \"accepts a proton\" the hook's NH₃ molecule and blue litmus return small with the tag \"base: proton acceptor\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "gas-carbonate",
+      "visualDecision": "new",
+      "visualReference": "the tube plate returns small top-right.",
+      "teachingReason": "The gas tube and carbonate, solved: The other two problems fall the same way.",
+      "narrationCue": "directly / carbonate ion / proton acceptors",
+      "motionPurpose": "On the spoken cues: Lens: an HCl molecule meets an NH₃ molecule with no water present (tag \"gas reaction, no aqueous medium\"); on \"directly\" the teal token hops from HCl to NH₃; the products NH₄⁺ and Cl⁻ settle into a small white lattice. The strip writes: \"HCl(g) + NH₃(g) → NH₄Cl(s)\" with the tag \"ions packed in the solid\". On \"carbonate ion\" a second strip writes under it: \"CO₃²⁻(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + OH⁻(aq)\" with the token hopp",
+      "motionRole": "explain",
+      "onScreenChange": "the tube plate returns small top-right. Lens: an HCl molecule meets an NH₃ molecule with no water present (tag \"gas reaction, no aqueous medium\"); on \"directly\" the teal token hops from HCl to NH₃; the products NH₄⁺ and Cl⁻ settle into a small white lattice. The strip writes: \"HCl(g) + NH₃(g) → NH₄Cl(s)\" with the tag \"ions packed in the solid\". On \"carbonate ion\" a second strip writes under it: \"CO₃²⁻(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + OH⁻(aq)\" with the token hopping from water to carbonate and the OH⁻ ringed \"left from water\". On \"proton acceptors\" NH₃ and CO₃²⁻ get matching violet outlines and one bracket \"both: proton acceptors\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "follow-proton",
+      "visualDecision": "new",
+      "visualReference": "the two water equations from 9 and 10 stack.",
+      "teachingReason": "Roles, not labels (follow the proton): Notice what water did.",
+      "narrationCue": "accepted / gave / roles / loses / gains",
+      "motionPurpose": "On the spoken cues: In the first, H₂O has a violet outline and tag \"base here\"; in the second, an amber outline and \"acid here\"; a pen bracket links the two H₂O with \"same molecule, different role\". On \"follow the proton\" the rule card writes: \"Follow the proton: loses H⁺ = acid; gains H⁺ = base.\" Each equation gets a pen check: in each, the species that lost an H and dropped one charge gets a teal \"−H⁺\", the one that gained gets \"+H⁺\".",
+      "motionRole": "explain",
+      "onScreenChange": "the two water equations from 9 and 10 stack. In the first, H₂O has a violet outline and tag \"base here\"; in the second, an amber outline and \"acid here\"; a pen bracket links the two H₂O with \"same molecule, different role\". On \"follow the proton\" the rule card writes: \"Follow the proton: loses H⁺ = acid; gains H⁺ = base.\" Each equation gets a pen check: in each, the species that lost an H and dropped one charge gets a teal \"−H⁺\", the one that gained gets \"+H⁺\". A chip \"has H in its formula = acid\" fades in and is crossed (caption \"giving one away does\"). As the rule card finishes, a small chip \"Later: water and other species that can do both\" pins in the corner (screen only). Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "bl-limit",
+      "visualDecision": "new",
+      "visualReference": "the timeline strip brightens.",
+      "teachingReason": "Brønsted-Lowry has a limit too: Even this model has a limit.",
+      "narrationCue": "hydrogen atom / Lewis model",
+      "motionPurpose": "On the spoken cues: The strip writes: \"CaO(s) + SO₃(g) → CaSO₄(s)\" with a tag \"heated; salt forms\"; on \"base and an acid\" two small grey tags appear under the reactants: \"in water: Ca(OH)₂, a base\" and \"in water: H₂SO₄, an acid\". On \"hydrogen atom\" a pen ring sweeps both reactants and finds no H; a grey teal-token outline with a cross shows \"no proton to move\". The Brønsted-Lowry card gets its stamp \"limit: needs a proton to transfer\".",
+      "motionRole": "explain",
+      "onScreenChange": "the timeline strip brightens. The strip writes: \"CaO(s) + SO₃(g) → CaSO₄(s)\" with a tag \"heated; salt forms\"; on \"base and an acid\" two small grey tags appear under the reactants: \"in water: Ca(OH)₂, a base\" and \"in water: H₂SO₄, an acid\". On \"hydrogen atom\" a pen ring sweeps both reactants and finds no H; a grey teal-token outline with a cross shows \"no proton to move\". The Brønsted-Lowry card gets its stamp \"limit: needs a proton to transfer\". On \"Lewis model\" a small grey card at the far right of the timeline: \"Lewis model (beyond the course)\". As the sentence ends, the equation shrinks to the strip and all four cards show their stamps together. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the timeline returns full size with each card's stamp lighting in turn on \"Oxygen\", \"Hydrogen\" and \"Ions in water\".",
+      "teachingReason": "Memory aid: So here's how to remember it.",
+      "narrationCue": "each model fixed a failure of the one before / acid gives, base takes / couldn't",
+      "motionPurpose": "On the spoken cues: The first aid writes large and handwritten: \"Each model fixed a failure of the one before.\" On \"acid gives, base takes\" a second line writes with the teal token hopping from an amber \"gives\" box to a violet \"takes\" box. On \"couldn't\" a two-column frame writes: \"explained ... | couldn't explain ...\". Condition tag: \"gives and takes a proton (H⁺)\".",
+      "motionRole": "explain",
+      "onScreenChange": "the timeline returns full size with each card's stamp lighting in turn on \"Oxygen\", \"Hydrogen\" and \"Ions in water\". The first aid writes large and handwritten: \"Each model fixed a failure of the one before.\" On \"acid gives, base takes\" a second line writes with the teal token hopping from an amber \"gives\" box to a violet \"takes\" box. On \"couldn't\" a two-column frame writes: \"explained ... | couldn't explain ...\". Condition tag: \"gives and takes a proton (H⁺)\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. The equation shows the hydrogen carbonate",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"The equation shows the reaction of the hydrogen carbonate ion with water. HCO₃⁻(aq) + H₂O(l) ⇌ H₂CO₃(aq) + OH⁻(aq). Identify the Brønsted-Lowry acid and the Brønsted-Lowry base in the forward reaction. Justify your answer in terms of proton transfer.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no outlines, no tokens, no rule card.",
+      "motionTools": [
+        "token flight",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Water / lost / hydrogen carbonate ion / gained / Giving one away",
+      "motionPurpose": "On the spoken cues: On \"Water\" a pen underline runs under H₂O(l) and OH⁻(aq) in the equation, joined by an arrow tagged \"−H⁺\"; H₂O gets an amber outline and the answer chip \"Acid: H₂O (donates H⁺, becomes OH⁻)\" pins. On \"hydrogen carbonate ion\" an underline runs under HCO₃⁻(aq) and H₂CO₃(aq), arrow \"+H⁺\", violet outline, chip \"Base: HCO₃⁻ (accepts H⁺, becomes H₂CO₃)\". The teal token hops once from water to HCO₃⁻.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"Water\" a pen underline runs under H₂O(l) and OH⁻(aq) in the equation, joined by an arrow tagged \"−H⁺\"; H₂O gets an amber outline and the answer chip \"Acid: H₂O (donates H⁺, becomes OH⁻)\" pins. On \"hydrogen carbonate ion\" an underline runs under HCO₃⁻(aq) and H₂CO₃(aq), arrow \"+H⁺\", violet outline, chip \"Base: HCO₃⁻ (accepts H⁺, becomes H₂CO₃)\". The teal token hops once from water to HCO₃⁻. On \"classic slip\" a chip \"HCO₃⁻ is the acid: it contains H\" fades in and is crossed (caption \"giving H⁺ away makes an acid\"). Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "token flight",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"A student states: 'The Arrhenius model has been proved wrong, so it should no longer be used.' Assess the validity of this statement.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A student states: \"The Arrhenius model",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"A student states: 'The Arrhenius model has been proved wrong, so it should no longer be used.' Assess the validity of this statement. Refer to ammonia in your answer.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: the timeline is hidden.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"not valid\" the phrase \"proved wrong\" in the question is underlined and a verdict chip \"Not valid: limited, not wrong\" pins.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "not valid / in water / ammonia / accepts a proton / limited",
+      "motionPurpose": "On the spoken cues: On \"in water\" a teal tick chip \"explains: acids and OH⁻ bases in water (HCl, NaOH)\". On \"ammonia\" the word \"ammonia\" in the question is underlined; chip \"limitation: NH₃ has no OH⁻ of its own\". On \"accepts a proton\" the strip \"NH₃ + H₂O ⇌ NH₄⁺ + OH⁻\" writes small with the token hop.",
+      "motionRole": "explain",
+      "onScreenChange": "on \"not valid\" the phrase \"proved wrong\" in the question is underlined and a verdict chip \"Not valid: limited, not wrong\" pins. On \"in water\" a teal tick chip \"explains: acids and OH⁻ bases in water (HCl, NaOH)\". On \"ammonia\" the word \"ammonia\" in the question is underlined; chip \"limitation: NH₃ has no OH⁻ of its own\". On \"accepts a proton\" the strip \"NH₃ + H₂O ⇌ NH₄⁺ + OH⁻\" writes small with the token hop. On \"mistake\" a chip \"Arrhenius was proved wrong\" fades in and is crossed (caption \"write: limited\"). Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "token flight",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"Follow the proton: loses H⁺ = acid; gains H⁺ = base.\" \"Any medium, water or not.\" \"Judge a model: what it explained, then what broke it.\" On \"Next\" a chip \"Next: naming acids and bases, and predicting acid reaction products\" appears with `m5x-strong-acid-mg-v1.png` and `m6-baking-soda-box-v1.png` small.",
+      "teachingReason": "Decision rule and handoff: So whenever you meet a reaction, follow the proton: the species that loses one is the acid, and the one that gains it is the base, in water or not.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"Follow the proton: loses H⁺ = acid; gains H⁺ = base.\" \"Any medium, water or not.\" \"Judge a model: what it explained, then what broke it.\" On \"Next\" a chip \"Next: naming acids and bases, and predicting acid reaction products\" appears with `m5x-strong-acid-mg-v1.png` and `m6-baking-soda-box-v1.png` small. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c01-learning-review.md",
+      "sha256": "391be3d325ed23e949cd75d8253d3d2f374c273babb54502aa3e938bca189683"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c01-claude-science-check.md",
+      "sha256": "e288bc95ba880f7086eb1318adbfaee871207b6a84ebf13c32672e08687d68f9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

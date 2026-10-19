@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c02/measured/lesson.json",
+    "lessonSha256": "3b3c59bbe9407d3cfeac37506015e69292b8358df01d07d43b8f497eb1462a7a"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C01 (Brønsted-Lowry: an acid donates a proton, a base accepts one; ammonia and carbonates are proton acceptors; HCl(g) is hydrogen chloride). Year 11: ionic formulas from charges; polyatomic ion names and charges (sulfate, sulfite, nitrate, nitrite, phosphate, carbonate, hydrogen carbonate, hydroxide, ammonium); balancing; state symbols; acid reactions and the metal activity series (Module 3); oxidation as electron loss (Module 3).",
+    "startsWith": "Name common inorganic acids and bases. The video opens: Add hydrochloric acid to three different things. A strip of magnesium fizzes. A few marble chips fizz too. And sodium hydroxide solution doesn't fizz at all, it just gets warm.",
+    "stopsAfter": "naming binary acids, oxoacids, hydroxide bases, ammonia and carbonates from formulas and back; stating the common properties of acids and bases; predicting the salt and other products for an acid with a hydroxide, ammonia, a carbonate or hydrogen carbonate, and a reactive metal, and explaining why each product forms; writing the salt formula from charges and balancing, including two- and three-proton acids; predicting no reaction for a metal below hydrogen; naming the gas test that tells CO₂ from H₂. No indicators, no strength, no net ionic neutralisation, no enthalpy.",
+    "nextLesson": "the heat given out in neutralisation and how to calculate it (route chem-m6-c03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c02.md"
+  ],
+  "teaching": {
+    "task": "Given an acid and the substance it reacts with, how do you name everything, predict the products, and write the balanced equation?",
+    "causalExplanation": "(1) one acid, three partners, three outcomes (1); (2) the common inorganic acids fall into two groups; binary acids: hydro- ... -ic (2); (3) oxoacids from the ion: -ate to -ic, -ite to -ous, never hydro- (3); (4) bases: hydroxides named as ionic compounds, ammonia, carbonates (4); (5) family properties, caused by acids giving away protons and bases taking them, with strength deferred (5); (6) every acid reaction here makes a salt: positive ion from the partner, negative ion from the acid; formula from charges (6); (7) hydroxide: each OH⁻ accepts a proton and becomes water (7); (8) ammonia: the proton makes NH₄⁺, no OH⁻, so no water (8); (9) carbonate: accepts two protons, carbonic acid breaks into water and CO₂ (9); (10) reactive metal: electron transfer, not proton transfer, gives H₂ (10); (11) only metals above hydrogen; H₂ not H (11); (12) telling the two gases apart (12); memory aid (13); two attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "one acid meets three partners and gives three results; the video names everything first (binary acids, oxoacids from their ion, bases), then explains each reaction pattern by what happens to the acid's proton (or, for a metal, the electrons), builds each salt from charges before balancing, and closes the hook's three cases one by one. Two exam questions follow with brief feedback.",
+    "openingDecision": "Same acid, three different results: magnesium fizzes, marble fizzes, sodium hydroxide just gets warm. By the end you'll be able to name every substance, predict the products of each reaction and balance the equations.",
+    "understandingCheck": "(A1) write a balanced equation with states for dilute nitric acid and solid calcium carbonate. Answer: CaCO₃(s) + 2HNO₃(aq) → Ca(NO₃)₂(aq) + H₂O(l) + CO₂(g). Crossed mistake: leaving out CO₂. (A2) zinc granules and copper turnings in separate samples of dilute sulfuric acid, with a supplied activity series: predict the observations and write any equation. Answer: zinc fizzes and dissolves, Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g); copper shows no visible change and has no equation. Crossed mistake: \"Cu + H₂SO₄ → CuSO₄ + H₂\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p52; local catalogue IDs C6-IQ1-01 and C6-IQ1-03): \"investigate the correct IUPAC nomenclature and properties of common inorganic acids and bases (ACSCH067)\" and \"predict the products of acid reactions and write balanced equations to represent: acids and bases; acids and carbonates; acids and metals (ACSCH067)\". Indicators are chem-m6-c13 and chem-m6-p01; strength chem-m6-c05; net ionic neutralisation and its heat chem-m6-c03."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: the proton (H⁺) teal token as in C01; positive ions amber; negative ions violet; water pale blue; CO₂ grey-green bubbles; H₂ white bubbles; electrons small yellow dots (scene 10 only). Board layout (constant): top-left the short question in one line; under it the equation strip (one equation at a time); the right two thirds hold the naming card, the salt builder or the particle lens; plates in a column on the far left. Reuse: C13 equation strip, charge tiles and crossed chips; C01 proton token and hop; countdown ring; key notes board; painted plates m5x-strong-acid-mg-v1.png, m6-beaker-v1.png, the baking soda and vinegar clip pair, m6-antacid-tablets-v1.png, m6-lemon-v1.png, m6-vinegar-bottle-v1.png, m6-soap-bar-v1.png, m6-household-cleaner-bottle-v1.png, m5x-ammonia-bottle-v1.png, and the C01 litmus pair. New coded items: naming cards with template blocks, the salt builder with charge tallies, the activity series bar. New painted plates (marble, zinc and copper beakers, limewater pair, splint pop, fertiliser granules) are in the Codex asset brief; no hands.",
+    "transitionPlan": "The three hook beakers open side by side; the naming cards take the right two thirds for binary acids, oxoacids and bases, with earlier rows dimming; the properties columns slide together on neutralise; the salt builder appears and stays while each pattern card, lens and equation strip build one pattern at a time, and the hook's beakers return as each of their cases closes; the activity series bar and the gas-test pair follow; the memory card gathers the pattern cards; each attempt clears the board and its feedback underlines the question as it rebuilds the salt builder and strip; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "three plates in a row: `m5x-strong-acid-mg-v1.png`, the new `m6-marble-chips-acid-v1.png` (interim: coded marble chips with rising bubbles in the same beaker outline) and `m6-beaker-v1.png` with a coded label \"sodium hydroxide + hydrochloric acid\".",
+      "teachingReason": "Hook (one acid, three results): Add hydrochloric acid to three different things.",
+      "narrationCue": "magnesium / marble chips / sodium hydroxide",
+      "motionPurpose": "On the spoken cues: Each pulses on its cue; on \"gets warm\" a small coded thermometer beside the third beaker rises. Heading writes: \"One acid, three results. What forms?\" Under each plate a question tile \"products?\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "three plates in a row: `m5x-strong-acid-mg-v1.png`, the new `m6-marble-chips-acid-v1.png` (interim: coded marble chips with rising bubbles in the same beaker outline) and `m6-beaker-v1.png` with a coded label \"sodium hydroxide + hydrochloric acid\". Each pulses on its cue; on \"gets warm\" a small coded thermometer beside the third beaker rises. Heading writes: \"One acid, three results. What forms?\" Under each plate a question tile \"products?\" appears. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "binary-acids",
+      "visualDecision": "new",
+      "visualReference": "the naming card heading writes first: \"Common inorganic acids: binary and oxoacids\" (the oxoacid half stays grey until scene 3); then the card writes: \"Binary acid: H + one non-metal, no O.",
+      "teachingReason": "Binary acids (hydro- ... -ic): First, names.",
+      "narrationCue": "Binary acids / hydro / ic acid / hydrochloric acid / hydrosulfuric acid / hydrogen chloride",
+      "motionPurpose": "On the spoken cues: Name: hydro + non-metal + ic acid.\" On \"hydro\" \"ic acid\" the template blocks colour (hydro teal, root grey, ic acid amber). Formula tiles fill a table on their cues: HCl → hydro|chlor|ic acid; HBr, HF; H₂S → hydro|sulfur|ic acid. On \"hydrogen chloride\" a small chip \"HCl(g): hydrogen chloride; HCl(aq): hydrochloric acid\" with the C01 tube plate thumbnail.",
+      "motionRole": "explain",
+      "onScreenChange": "the naming card heading writes first: \"Common inorganic acids: binary and oxoacids\" (the oxoacid half stays grey until scene 3); then the card writes: \"Binary acid: H + one non-metal, no O. Name: hydro + non-metal + ic acid.\" On \"hydro\" \"ic acid\" the template blocks colour (hydro teal, root grey, ic acid amber). Formula tiles fill a table on their cues: HCl → hydro|chlor|ic acid; HBr, HF; H₂S → hydro|sulfur|ic acid. On \"hydrogen chloride\" a small chip \"HCl(g): hydrogen chloride; HCl(aq): hydrochloric acid\" with the C01 tube plate thumbnail. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "oxoacids",
+      "visualDecision": "new",
+      "visualReference": "second naming card: \"Oxoacid: contains O.",
+      "teachingReason": "Oxoacids (-ate to -ic, -ite to -ous): Oxoacids contain oxygen too, and they're named after the ion inside them.",
+      "narrationCue": "Oxoacids / ion / ate / ic / ite / ous / never",
+      "motionPurpose": "On the spoken cues: Name from the ion.\" Two columns build one row per cue; each earlier row dims to grey as the next starts, so only the current row is bright: \"-ate → -ic\": SO₄²⁻ sulfate → H₂SO₄ sulfuric acid; NO₃⁻ nitrate → HNO₃ nitric acid; PO₄³⁻ phosphate → H₃PO₄ phosphoric acid; CO₃²⁻ carbonate → H₂CO₃ carbonic acid. \"-ite → -ous\": SO₃²⁻ sulfite → H₂SO₃ sulfurous acid; NO₂⁻ nitrite → HNO₂ nitrous acid. Each acid formula shows H⁺ to",
+      "motionRole": "explain",
+      "onScreenChange": "second naming card: \"Oxoacid: contains O. Name from the ion.\" Two columns build one row per cue; each earlier row dims to grey as the next starts, so only the current row is bright: \"-ate → -ic\": SO₄²⁻ sulfate → H₂SO₄ sulfuric acid; NO₃⁻ nitrate → HNO₃ nitric acid; PO₄³⁻ phosphate → H₃PO₄ phosphoric acid; CO₃²⁻ carbonate → H₂CO₃ carbonic acid. \"-ite → -ous\": SO₃²⁻ sulfite → H₂SO₃ sulfurous acid; NO₂⁻ nitrite → HNO₂ nitrous acid. Each acid formula shows H⁺ tokens joining the ion (number of H = size of the ion's charge). On \"never\" a teal bar strikes \"hydro\" off the oxoacid card. A chip \"H₂SO₄: hydrosulfuric acid\" fades in and is crossed (caption \"has O: sulfuric acid\"); the H₂S tile from scene 2 lights. Hold about 2 seconds.",
+      "motionTools": [
+        "Mark cross",
+        "token flight",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "naming-bases",
+      "visualDecision": "new",
+      "visualReference": "base card: \"Hydroxides: metal + hydroxide\" with tiles NaOH, Ca(OH)₂, Mg(OH)₂ (charge tiles show one OH⁻ per positive charge).",
+      "teachingReason": "Naming bases: Bases are named like any ionic compound: metal first, then the negative ion.",
+      "narrationCue": "Sodium hydroxide / Ammonia / carbonates / hydrogen carbonates",
+      "motionPurpose": "On the spoken cues: On \"Ammonia\" the NH₃ molecule from C01 with a violet \"proton acceptor\" outline; a chip \"NH₄OH, ammonium hydroxide\" fades in and is crossed (caption \"write NH₃(aq)\"). On \"carbonates\" tiles CaCO₃ and NaHCO₃ with the C01 tag \"accepts H⁺\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "base card: \"Hydroxides: metal + hydroxide\" with tiles NaOH, Ca(OH)₂, Mg(OH)₂ (charge tiles show one OH⁻ per positive charge). On \"Ammonia\" the NH₃ molecule from C01 with a violet \"proton acceptor\" outline; a chip \"NH₄OH, ammonium hydroxide\" fades in and is crossed (caption \"write NH₃(aq)\"). On \"carbonates\" tiles CaCO₃ and NaHCO₃ with the C01 tag \"accepts H⁺\". Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "properties",
+      "visualDecision": "adjust",
+      "visualReference": "two columns.",
+      "teachingReason": "Family properties: Acids and bases each share properties because acids give away protons and bases take them.",
+      "narrationCue": "red / reactive metals / carbonates / blue / neutralise",
+      "motionPurpose": "On the spoken cues: Acids: `m6-lemon-v1.png` and `m6-vinegar-bottle-v1.png` with tag \"sour\"; on \"red\" a litmus plate turns from blue to red (coded tint over `m6-litmus-blue-v1.png`; if Codex adds a blue-to-red pair later, use it); on \"reactive metals\" and \"carbonates\" two small icons link forward to scenes 9 and 10. Bases: `m6-soap-bar-v1.png` and `m6-household-cleaner-bottle-v1.png` with tags \"bitter, slippery\"; on \"blue\" `m6-litmus-re",
+      "motionRole": "explain",
+      "onScreenChange": "two columns. Acids: `m6-lemon-v1.png` and `m6-vinegar-bottle-v1.png` with tag \"sour\"; on \"red\" a litmus plate turns from blue to red (coded tint over `m6-litmus-blue-v1.png`; if Codex adds a blue-to-red pair later, use it); on \"reactive metals\" and \"carbonates\" two small icons link forward to scenes 9 and 10. Bases: `m6-soap-bar-v1.png` and `m6-household-cleaner-bottle-v1.png` with tags \"bitter, slippery\"; on \"blue\" `m6-litmus-red-v1.png` to `m6-litmus-blue-v1.png`. On \"neutralise\" the two columns slide together with a tag \"acid + base cancel\". A safety chip \"never taste or touch lab chemicals\" pins. On \"its own video\" a chip \"Later: strong and weak acids\". Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "salt-rule",
+      "visualDecision": "new",
+      "visualReference": "the salt builder: left slot \"positive ion (from the base or metal)\" amber; right slot \"negative ion (from the acid)\" violet.",
+      "teachingReason": "The salt rule: Those reactions are where prediction comes in.",
+      "narrationCue": "salt / positive ion / negative ion / chlorides / sulfates / charges",
+      "motionPurpose": "On the spoken cues: On \"chlorides\" \"sulfates\" etc. a strip writes: \"HCl → chloride, Cl⁻ | H₂SO₄ → sulfate, SO₄²⁻ | HNO₃ → nitrate, NO₃⁻ | H₃PO₄ → phosphate, PO₄³⁻\", each acid losing its teal H⁺ tokens to leave the ion; the strip then shrinks and dims. On \"charges\" a demonstration (the only bright item): Ca²⁺ with Cl⁻ needs two Cl⁻ tiles, giving CaCl₂, with a charge tally \"(+2) + 2(−1) = 0\". Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the salt builder: left slot \"positive ion (from the base or metal)\" amber; right slot \"negative ion (from the acid)\" violet. On \"chlorides\" \"sulfates\" etc. a strip writes: \"HCl → chloride, Cl⁻ | H₂SO₄ → sulfate, SO₄²⁻ | HNO₃ → nitrate, NO₃⁻ | H₃PO₄ → phosphate, PO₄³⁻\", each acid losing its teal H⁺ tokens to leave the ion; the strip then shrinks and dims. On \"charges\" a demonstration (the only bright item): Ca²⁺ with Cl⁻ needs two Cl⁻ tiles, giving CaCl₂, with a charge tally \"(+2) + 2(−1) = 0\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "acid-hydroxide",
+      "visualDecision": "adjust",
+      "visualReference": "pattern card 1 writes: \"acid + hydroxide → salt + water\".",
+      "teachingReason": "Acid plus hydroxide (salt and water): Pattern one: acid plus a hydroxide gives a salt and water.",
+      "narrationCue": "hydroxide / salt and water / accepts a proton / two plus / two / two waters",
+      "motionPurpose": "On the spoken cues: Lens: a teal H⁺ hops from HCl onto an OH⁻ and the pair becomes a pale blue H₂O (tag \"OH⁻ + H⁺ = H₂O\"). On \"Antacid tablets\" `m6-antacid-tablets-v1.png` stands in the left column with a tag \"Mg(OH)₂\". On \"two plus\" the salt builder shows Mg²⁺ with two Cl⁻ tiles.",
+      "motionRole": "explain",
+      "onScreenChange": "pattern card 1 writes: \"acid + hydroxide → salt + water\". Lens: a teal H⁺ hops from HCl onto an OH⁻ and the pair becomes a pale blue H₂O (tag \"OH⁻ + H⁺ = H₂O\"). On \"Antacid tablets\" `m6-antacid-tablets-v1.png` stands in the left column with a tag \"Mg(OH)₂\". On \"two plus\" the salt builder shows Mg²⁺ with two Cl⁻ tiles. On \"two hydrochloric acids\" the strip writes: \"Mg(OH)₂(s) + 2HCl(aq) → MgCl₂(aq) + 2H₂O(l)\", with two proton hops shown in the lens and the 2s pulsing; a small check \"H: 2 + 2 = 4 = 2 × 2\" writes under it. As the scene closes, the third hook beaker returns as a thumbnail and a small line writes beside it: \"hook: NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)\" (screen only). Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "acid-ammonia",
+      "visualDecision": "adjust",
+      "visualReference": "`m5x-ammonia-bottle-v1.png` (label \"ammonia, NH₃\") and the new `m6-fertiliser-granules-v1.png` (interim: coded white granule pile) in the left column.",
+      "teachingReason": "Acid plus ammonia (salt, no water): Now pattern one with a base that has no hydroxide.",
+      "narrationCue": "no hydroxide / ammonium sulfate / ammonium ion / two / no water",
+      "motionPurpose": "On the spoken cues: Lens: H₂SO₄ gives one teal H⁺ to each of two NH₃ molecules, which become NH₄⁺ (violet outline to amber, \"+\"). On \"ammonium sulfate\" the salt builder: two NH₄⁺ tiles with one SO₄²⁻, giving (NH₄)₂SO₄, tally \"2(+1) + (−2) = 0\". On \"two ammonias\" the strip writes: \"2NH₃(g) + H₂SO₄(aq) → (NH₄)₂SO₄(aq)\".",
+      "motionRole": "explain",
+      "onScreenChange": "`m5x-ammonia-bottle-v1.png` (label \"ammonia, NH₃\") and the new `m6-fertiliser-granules-v1.png` (interim: coded white granule pile) in the left column. Lens: H₂SO₄ gives one teal H⁺ to each of two NH₃ molecules, which become NH₄⁺ (violet outline to amber, \"+\"). On \"ammonium sulfate\" the salt builder: two NH₄⁺ tiles with one SO₄²⁻, giving (NH₄)₂SO₄, tally \"2(+1) + (−2) = 0\". On \"two ammonias\" the strip writes: \"2NH₃(g) + H₂SO₄(aq) → (NH₄)₂SO₄(aq)\". On \"no water\" a chip \"+ 2H₂O\" fades in after the arrow and is crossed (caption \"no OH⁻, so no water\"). Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "acid-carbonate",
+      "visualDecision": "adjust",
+      "visualReference": "pattern card 2: \"acid + carbonate → salt + water + CO₂\".",
+      "teachingReason": "Acid plus carbonate (salt, water and carbon dioxide): Pattern two: acid plus a carbonate gives a salt, water and carbon dioxide.",
+      "narrationCue": "carbonate / carbon dioxide / two / water and carbon dioxide / calcium chloride / Hydrogen carbonates",
+      "motionPurpose": "On the spoken cues: Lens: two teal tokens hop onto a CO₃²⁻ ion, making H₂CO₃ (dashed outline, tag \"unstable\"), which splits into H₂O and a grey-green CO₂ bubble that rises. On \"Marble\" `m6-marble-chips-acid-v1.png` in the left column. On \"calcium chloride\" the strip writes: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\", with Ca²⁺ and two Cl⁻ in the salt builder.",
+      "motionRole": "explain",
+      "onScreenChange": "pattern card 2: \"acid + carbonate → salt + water + CO₂\". Lens: two teal tokens hop onto a CO₃²⁻ ion, making H₂CO₃ (dashed outline, tag \"unstable\"), which splits into H₂O and a grey-green CO₂ bubble that rises. On \"Marble\" `m6-marble-chips-acid-v1.png` in the left column. On \"calcium chloride\" the strip writes: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\", with Ca²⁺ and two Cl⁻ in the salt builder. On \"Hydrogen carbonates\" the clip `m6-clip-baking-soda-vinegar-before-v1.png` to `-fizz-v1.png` plays small with the tag \"baking soda + vinegar: same pattern\", and a second strip line writes small: \"NaHCO₃(s) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "chip pop",
+        "table build",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "acid-metal",
+      "visualDecision": "adjust",
+      "visualReference": "pattern card 3: \"acid + reactive metal → salt + H₂\".",
+      "teachingReason": "Acid plus reactive metal (salt and hydrogen): Pattern three: acid plus a reactive metal gives a salt and hydrogen gas.",
+      "narrationCue": "reactive metal / hydrogen gas / give electrons / three plus / three hydrogen molecules",
+      "motionPurpose": "On the spoken cues: `m5x-strong-acid-mg-v1.png` in the left column. Lens: a metal surface atom releases small yellow electron dots to two H⁺ tokens, which join as a white H₂ bubble; the metal atom becomes an amber \"+\" ion that drifts into the solution. A tag \"electron transfer (Year 11), not proton transfer\".",
+      "motionRole": "explain",
+      "onScreenChange": "pattern card 3: \"acid + reactive metal → salt + H₂\". `m5x-strong-acid-mg-v1.png` in the left column. Lens: a metal surface atom releases small yellow electron dots to two H⁺ tokens, which join as a white H₂ bubble; the metal atom becomes an amber \"+\" ion that drifts into the solution. A tag \"electron transfer (Year 11), not proton transfer\". On \"three plus\" the salt builder: Al³⁺ with three Cl⁻, giving AlCl₃. On \"three hydrogen molecules\" the strip writes: \"2Al(s) + 6HCl(aq) → 2AlCl₃(aq) + 3H₂(g)\" with a hydrogen tally \"6 H = 3 × 2\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "above-hydrogen",
+      "visualDecision": "adjust",
+      "visualReference": "a short activity series bar: \"Mg Al Zn Fe ...",
+      "teachingReason": "Only metals above hydrogen: But only metals above hydrogen in the activity series do this, like magnesium, aluminium, zinc and iron.",
+      "narrationCue": "above hydrogen / Copper / H two",
+      "motionPurpose": "On the spoken cues: (H) ... Cu Ag\" with hydrogen as a dashed line; metals above it tinted teal (\"react\"), below grey (\"no reaction\"). On \"Copper\" the new `m6-copper-acid-v1.png` (copper turnings in the same beaker, no bubbles) stands beside the magnesium beaker, tagged \"no reaction\".",
+      "motionRole": "explain",
+      "onScreenChange": "a short activity series bar: \"Mg Al Zn Fe ... (H) ... Cu Ag\" with hydrogen as a dashed line; metals above it tinted teal (\"react\"), below grey (\"no reaction\"). On \"Copper\" the new `m6-copper-acid-v1.png` (copper turnings in the same beaker, no bubbles) stands beside the magnesium beaker, tagged \"no reaction\". On \"H two\" a chip \"Mg + 2HCl → MgCl₂ + 2H\" fades in and is crossed (caption \"hydrogen gas is H₂\"); under it the hook's magnesium case writes correctly beside the magnesium beaker: \"Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "gas-tests",
+      "visualDecision": "adjust",
+      "visualReference": "left half: the new limewater pair `m6-limewater-clear-v1.png` to `m6-limewater-milky-v1.png` (delivery tube bubbling into a tube of clear limewater, then milky), tag \"CO₂: limewater milky\".",
+      "teachingReason": "Telling the gases apart: Patterns two and three both fizz, so how do you tell the gases apart?",
+      "narrationCue": "limewater / milky / squeaky pop",
+      "motionPurpose": "On the spoken cues: Right half: the new `m6-splint-pop-v1.png` (tube held in a clamp with metal granules fizzing in acid at the bottom, a burning splint resting at its mouth, small flame burst; no hands), with a coded \"pop!\" sound-word tag \"H₂: squeaky pop\". On \"Carbonate means carbon dioxide\" a pen arrow links the marble beaker to the limewater; on \"Metal means hydrogen\" the magnesium beaker to the splint. Safety chip \"teacher demonstr",
+      "motionRole": "explain",
+      "onScreenChange": "left half: the new limewater pair `m6-limewater-clear-v1.png` to `m6-limewater-milky-v1.png` (delivery tube bubbling into a tube of clear limewater, then milky), tag \"CO₂: limewater milky\". Right half: the new `m6-splint-pop-v1.png` (tube held in a clamp with metal granules fizzing in acid at the bottom, a burning splint resting at its mouth, small flame burst; no hands), with a coded \"pop!\" sound-word tag \"H₂: squeaky pop\". On \"Carbonate means carbon dioxide\" a pen arrow links the marble beaker to the limewater; on \"Metal means hydrogen\" the magnesium beaker to the splint. Safety chip \"teacher demonstration\". Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the salt builder returns with \"magnesium\" sliding into the first slot and \"sulfate\" into the second; first aid line writes large and handwritten: \"Metal (or ammonium) names the first word; the acid names the second.\" On \"hydroxide, water\" the three pattern cards return small, each lighting its products in turn, with the limewater and pop icons beside carbonate and metal.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "metal, or ammonium, names the first word / acid names the second / hydroxide, water. Carbonate, water and carbon dioxide. Metal, hydrogen / ate becomes ic, ite becomes ous",
+      "motionPurpose": "On the spoken cues: Third line: \"-ate → -ic; -ite → -ous; hydro- only without oxygen.\" Condition tags: \"ammonia: salt only, no water\"; \"metal must be above hydrogen\". Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the salt builder returns with \"magnesium\" sliding into the first slot and \"sulfate\" into the second; first aid line writes large and handwritten: \"Metal (or ammonium) names the first word; the acid names the second.\" On \"hydroxide, water\" the three pattern cards return small, each lighting its products in turn, with the limewater and pop icons beside carbonate and metal. Third line: \"-ate → -ic; -ite → -ous; hydro- only without oxygen.\" Condition tags: \"ammonia: salt only, no water\"; \"metal must be above hydrogen\". Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Write a balanced chemical equation, including",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Write a balanced chemical equation, including states, for the reaction between dilute nitric acid and solid calcium carbonate.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no pattern cards, no salt builder, no formulas.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question stays.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "carbonate / water and carbon dioxide / calcium nitrate / two / left out",
+      "motionPurpose": "On the spoken cues: On \"Nitric acid\" the words \"dilute nitric acid\" in the question are underlined and the tile \"HNO₃\" pins; on \"carbonate\" \"solid calcium carbonate\" is underlined, tile \"CaCO₃(s)\", and pattern card 2 returns small. On \"calcium nitrate\" the salt builder shows Ca²⁺ with two NO₃⁻, giving Ca(NO₃)₂; on \"two nitric acids\" the answer strip writes: \"CaCO₃(s) + 2HNO₃(aq) → Ca(NO₃)₂(aq) + H₂O(l) + CO₂(g)\"; \"including states\" in t",
+      "motionRole": "explain",
+      "onScreenChange": "the question stays. On \"Nitric acid\" the words \"dilute nitric acid\" in the question are underlined and the tile \"HNO₃\" pins; on \"carbonate\" \"solid calcium carbonate\" is underlined, tile \"CaCO₃(s)\", and pattern card 2 returns small. On \"calcium nitrate\" the salt builder shows Ca²⁺ with two NO₃⁻, giving Ca(NO₃)₂; on \"two nitric acids\" the answer strip writes: \"CaCO₃(s) + 2HNO₃(aq) → Ca(NO₃)₂(aq) + H₂O(l) + CO₂(g)\"; \"including states\" in the question is underlined as the state symbols write. On \"left out\" a chip \"CaCO₃ + 2HNO₃ → Ca(NO₃)₂ + H₂O\" fades in and is crossed (caption \"carbonate: CO₂ too\"). Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card as printed, with the supplied stimulus box under it: \"Part of the activity series: K > Na > Ca > Mg > Al > Zn > Fe > Sn > Pb > (H) > Cu > Ag > Au\".",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Zinc granules are added to dilute",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card as printed, with the supplied stimulus box under it: \"Part of the activity series: K > Na > Ca > Mg > Al > Zn > Fe > Sn > Pb > (H) > Cu > Ag > Au\". The full question and stimulus stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no beaker plates.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "on \"Zinc\" \"Zn\" and \"(H)\" in the stimulus are underlined with a pen arrow \"above H\"; the new `m6-zinc-acid-v1.png` (zinc granules fizzing in the same beaker) appears; answer chip \"Zinc: bubbles of gas; zinc dissolves\" pins.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Zinc / fizzes / zinc sulfate plus hydrogen / Copper / no visible change",
+      "motionPurpose": "On the spoken cues: On \"zinc sulfate plus hydrogen\" the strip writes: \"Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)\". On \"Copper\" \"Cu\" is underlined with \"below H\"; `m6-copper-acid-v1.png` appears; chip \"Copper: no visible change, no reaction\". On \"trap\" a chip \"Cu + H₂SO₄ → CuSO₄ + H₂\" fades in and is crossed (caption \"below hydrogen: no reaction\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Zinc\" \"Zn\" and \"(H)\" in the stimulus are underlined with a pen arrow \"above H\"; the new `m6-zinc-acid-v1.png` (zinc granules fizzing in the same beaker) appears; answer chip \"Zinc: bubbles of gas; zinc dissolves\" pins. On \"zinc sulfate plus hydrogen\" the strip writes: \"Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)\". On \"Copper\" \"Cu\" is underlined with \"below H\"; `m6-copper-acid-v1.png` appears; chip \"Copper: no visible change, no reaction\". On \"trap\" a chip \"Cu + H₂SO₄ → CuSO₄ + H₂\" fades in and is crossed (caption \"below hydrogen: no reaction\"). Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"Name the acid.\" \"Spot the pattern: hydroxide, ammonia, carbonate, metal.\" \"Build the salt from the charges.\" \"Add water, CO₂ or H₂ (ammonia: nothing extra; metal below H: no reaction).\" \"Balance.\" On \"Next\" a chip \"Next: the heat of neutralisation\" appears with `m6-beaker-v1.png` and a small coded thermometer.",
+      "teachingReason": "Decision rule and handoff: So for any acid reaction: name the acid, spot the pattern, build the salt from the charges, add water, carbon dioxide or hydrogen as the pattern says, then balance.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"Name the acid.\" \"Spot the pattern: hydroxide, ammonia, carbonate, metal.\" \"Build the salt from the charges.\" \"Add water, CO₂ or H₂ (ammonia: nothing extra; metal below H: no reaction).\" \"Balance.\" On \"Next\" a chip \"Next: the heat of neutralisation\" appears with `m6-beaker-v1.png` and a small coded thermometer. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c02-learning-review.md",
+      "sha256": "cc45365617929fadf25c9bb81f106140e1638c53bf18dc923b0f2f3997f8cfa9"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c02-claude-science-check.md",
+      "sha256": "b653515288e628413bb8b2685345151523b55428253e5b0ed8266d7ba1044deb"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

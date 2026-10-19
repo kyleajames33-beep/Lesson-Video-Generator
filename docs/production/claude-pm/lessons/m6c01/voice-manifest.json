@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C01-claude-2026-10-19-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c01/lesson.json",
+  "lessonSha256": "8cd3b22558315066bedf7c271e2e87b8c496e7ee04b58d39026cf0cf14d31423",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c01/lesson.production-brief.json",
+    "sha256": "dded3a8f05ebbdc2d0bc9aca7c514ac5ef006c1b713b791850f797f4b0edfc89"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's a bottle of household ammonia cleaner. Touch it with red litmus paper, and the paper turns blue. So it's a base. But look at the formula: N H three. One nitrogen, three hydrogens, and no oxygen at all, so there's no hydroxide in it. For decades, the leading theory said a base had to supply its own hydroxide. So how can ammonia be a base?",
+      "hash": "7620924d79e6",
+      "textSha256": "7620924d79e62075ffcc916217ae61601164dab57aa0b22e48c7a934595a33e9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/hook.7620924d79e6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/hook.7620924d79e6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/hook.7620924d79e6.generation.json",
+      "plannedRequestSha256": "6bd683868d6f81f2390d9cc036156005e51a106b5db118ec8f66bdbbcadd6d31"
+    },
+    {
+      "id": "models-change",
+      "parentSceneId": "models-change",
+      "text": "To answer that, follow how the idea changed. In chemistry, a model is a definition that predicts which substances will act as acids or bases. A model gets replaced when someone finds an observation it can't explain. That's happened three times in about a hundred and fifty years, and each new model fixed the failure of the one before.",
+      "hash": "935da223b668",
+      "textSha256": "935da223b6684796e6be40e7946e1694deaf34cce79d7a1d85fdd99bc91695cd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/models-change.935da223b668.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/models-change.935da223b668.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/models-change.935da223b668.generation.json",
+      "plannedRequestSha256": "8bee49b766bdb4b091cb2881adde74c61349fe98582cf58a360937563e010fc9"
+    },
+    {
+      "id": "lavoisier",
+      "parentSceneId": "lavoisier",
+      "text": "In the late seventeen hundreds, Antoine Lavoisier studied sulfuric, nitric and phosphoric acid. Every one contained oxygen, so he decided oxygen is what makes an acid. He even named the element for it: oxygen means \"acid maker\". Then, in 1810, Humphry Davy showed that hydrochloric acid contains only hydrogen and chlorine. No oxygen. One acid without oxygen was enough to break the rule.",
+      "hash": "7335dfa22e85",
+      "textSha256": "7335dfa22e85ee61b09259e3466ae527cbff0f232289390c8a4d8be4b39f13b5",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/lavoisier.7335dfa22e85.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/lavoisier.7335dfa22e85.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/lavoisier.7335dfa22e85.generation.json",
+      "plannedRequestSha256": "e09c37f412f45ef88a882475f284b0183cf6879332c3e83b5e4e1013571d06b2"
+    },
+    {
+      "id": "davy",
+      "parentSceneId": "davy",
+      "text": "So Davy proposed that hydrogen, not oxygen, is the key ingredient in acids. But hydrogen alone doesn't make something an acid. Methane is full of hydrogen, and it isn't acidic. And the idea said nothing about bases.",
+      "hash": "4d0fecab3ffe",
+      "textSha256": "4d0fecab3ffe8632779b97b0eb3539946c612b7c7e23868bcc6f8c7b76c8cd21",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/davy.4d0fecab3ffe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/davy.4d0fecab3ffe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/davy.4d0fecab3ffe.generation.json",
+      "plannedRequestSha256": "bc9d4e373be47b2670d4124226ceedb6fc7920111d4d0e1bcf46031d4bc0c65c"
+    },
+    {
+      "id": "arrhenius",
+      "parentSceneId": "arrhenius",
+      "text": "In the eighteen eighties, Svante Arrhenius brought in ions. He said an acid is a substance that breaks apart in water to release hydrogen ions, and a base breaks apart in water to release its own hydroxide ions. Hydrogen chloride gives hydrogen ions, and sodium hydroxide gives hydroxide ions. Mix them, and hydrogen ions and hydroxide ions join to make water. That explained neutralisation, and why so many acids behave alike: they all release the same ion.",
+      "hash": "edb081313100",
+      "textSha256": "edb081313100bf23fada425c9ef010c6f76b2bb293a7618b0d5f51a5cef601d6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/arrhenius.edb081313100.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/arrhenius.edb081313100.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/arrhenius.edb081313100.generation.json",
+      "plannedRequestSha256": "d651fe1cd5113f67f0a977982771b68fb5e5a95553c85896d4da53ff8c452dfd"
+    },
+    {
+      "id": "arrhenius-ammonia",
+      "parentSceneId": "arrhenius-ammonia",
+      "text": "And the Arrhenius model still works for acids and hydroxide bases in water. But back to ammonia. Under Arrhenius, a base releases its own hydroxide ions, the way sodium hydroxide does. Ammonia has none to release. To make it fit, chemists kept writing ammonia solution as \"ammonium hydroxide\", N H four O H. But no one has ever isolated a substance made of ammonium ions and hydroxide ions. The model needed a made-up compound to cover a gap.",
+      "hash": "61d8d5c83336",
+      "textSha256": "61d8d5c83336a3c7de7477c409154538cfdbea4fa6431d1298db33c87bb81754",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/arrhenius-ammonia.61d8d5c83336.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/arrhenius-ammonia.61d8d5c83336.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/arrhenius-ammonia.61d8d5c83336.generation.json",
+      "plannedRequestSha256": "2537089393a9068fd0d94f6572629e47c72fc80bd92b3424c3ea031d82cac458"
+    },
+    {
+      "id": "more-failures",
+      "parentSceneId": "more-failures",
+      "text": "Two more problems piled up. Baking soda and washing soda make water basic, and they don't contain hydroxide either. And when hydrogen chloride gas and ammonia gas meet inside a glass tube, a white ring of solid ammonium chloride forms. That's an acid and a base making a salt. The gases react directly, without water as the reaction medium, so a definition limited to reactions in aqueous solution can't describe it.",
+      "hash": "6f6733b665db",
+      "textSha256": "6f6733b665db603ecce2fd84cdba9ea998970d67cc574c8715bb367106b49761",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/more-failures.6f6733b665db.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/more-failures.6f6733b665db.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/more-failures.6f6733b665db.generation.json",
+      "plannedRequestSha256": "02511098a8234457f7e0c37ceab7c22b0d761fbf189bfba5db5bb3b409bf3ed0"
+    },
+    {
+      "id": "bronsted-lowry",
+      "parentSceneId": "bronsted-lowry",
+      "text": "In 1923, two chemists, Johannes Brønsted in Copenhagen and Thomas Lowry in Cambridge, independently published the same fix. Stop asking which ions appear in water. Ask what moves. An acid is a proton donor: it gives away a hydrogen ion. A base is a proton acceptor: it takes one. A hydrogen ion is a hydrogen atom that has lost its only electron, so it's just a proton.",
+      "hash": "727ad323802e",
+      "textSha256": "727ad323802e02908499cedf25601aacd4c57d295e47a289c85c3225440ae90b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/bronsted-lowry.727ad323802e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/bronsted-lowry.727ad323802e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/bronsted-lowry.727ad323802e.generation.json",
+      "plannedRequestSha256": "fe9ab0cb1ef51e5618b0e9171d0831b96095493cfe711a326825d92b9a5acbe5"
+    },
+    {
+      "id": "hcl-water",
+      "parentSceneId": "hcl-water",
+      "text": "Watch it work. Hydrogen chloride dissolves in water. One hydrogen moves, as a proton, onto a water molecule. So hydrogen chloride is the acid, the donor, and water is the base, the acceptor. Water with an extra proton is H three O plus, the hydronium ion. That's what H plus, aqueous, really means: a proton in water is always attached to water.",
+      "hash": "81360f7c3a66",
+      "textSha256": "81360f7c3a66a4d2084ab587fd9ec4d76ea3543162861e67804d989e8bf20a40",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/hcl-water.81360f7c3a66.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/hcl-water.81360f7c3a66.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/hcl-water.81360f7c3a66.generation.json",
+      "plannedRequestSha256": "51a71d7e1d52606107389f805e48de9a452e808cded9941911f30bd124e1a780"
+    },
+    {
+      "id": "ammonia-water",
+      "parentSceneId": "ammonia-water",
+      "text": "Now the hook. Ammonia dissolves in water, and this time water is the donor. A water molecule gives a proton to ammonia, which becomes an ammonium ion. What's left of the water molecule is a hydroxide ion. The hydroxide comes from water, not from ammonia. Only some ammonia molecules do this at any moment, which is why the equation has the double arrow you met in equilibrium. Ammonia is a base because it accepts a proton.",
+      "hash": "966a1027a627",
+      "textSha256": "966a1027a62789065ed5279c338a2a2bfc09a57fcfc0ab0542ca0056f3596dc2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/ammonia-water.966a1027a627.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/ammonia-water.966a1027a627.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/ammonia-water.966a1027a627.generation.json",
+      "plannedRequestSha256": "0e4d3df7708a7f7da1baab6af2bb12fbabd302f0bd16e1bf9f20c1790c1da0d9"
+    },
+    {
+      "id": "gas-carbonate",
+      "parentSceneId": "gas-carbonate",
+      "text": "The other two problems fall the same way. In the glass tube, hydrogen chloride hands a proton directly to ammonia. No water needed. The ammonium ions and chloride ions that form pack together as the white solid. And a carbonate ion in water takes a proton from a water molecule, leaving hydroxide behind. So carbonates are bases for the same reason ammonia is: they're proton acceptors.",
+      "hash": "91870d161a72",
+      "textSha256": "91870d161a722601e124c6e009d2b935233b07d70e5bfad3b4fbcf3485dc5364",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/gas-carbonate.91870d161a72.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/gas-carbonate.91870d161a72.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/gas-carbonate.91870d161a72.generation.json",
+      "plannedRequestSha256": "8527a7759dc42fb7df9f79ca5004039062e1b6ed2c0aa94c4de09b5bcd841b7f"
+    },
+    {
+      "id": "follow-proton",
+      "parentSceneId": "follow-proton",
+      "text": "Notice what water did. With hydrogen chloride, water accepted a proton, so it was the base. With ammonia, water gave a proton, so it was the acid. In this model, acid and base are roles in a particular reaction, not fixed labels on a bottle. To decide, follow the proton. The species that loses a proton is the acid. The species that gains it is the base.",
+      "hash": "0ed1df44f872",
+      "textSha256": "0ed1df44f8726ca8ad13f45cf6bfd6fcd6e65e4db10193120e041ba2486ead4d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/follow-proton.0ed1df44f872.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/follow-proton.0ed1df44f872.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/follow-proton.0ed1df44f872.generation.json",
+      "plannedRequestSha256": "1b394290837fd80f7d87fcc79a268961f937b2de825fff201f23168da7b22769"
+    },
+    {
+      "id": "bl-limit",
+      "parentSceneId": "bl-limit",
+      "text": "Even this model has a limit. Calcium oxide and sulfur trioxide react to make calcium sulfate, a salt. In water, these oxides make a base and an acid. But there isn't a single hydrogen atom in either reactant, so no proton can move. The Brønsted-Lowry model can't call this an acid-base reaction. A later idea, the Lewis model, covers cases like this, but it's beyond this course.",
+      "hash": "6f1c186fc86b",
+      "textSha256": "6f1c186fc86b91843f048528f0b68f8649bb1a7c978d484b7d05925cbed30963",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/bl-limit.6f1c186fc86b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/bl-limit.6f1c186fc86b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/bl-limit.6f1c186fc86b.generation.json",
+      "plannedRequestSha256": "28efd34b22d540cff4d4c5460dc7ba8952ae1005abf581849767ad127d5bdebb"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's how to remember it. First: each model fixed a failure of the one before. Oxygen, broken by hydrochloric acid. Hydrogen, not enough on its own. Ions in water, limited by ammonia. Second, for Brønsted-Lowry: acid gives, base takes. And when a question asks you to assess a model, say what it explained, then the example it couldn't explain.",
+      "hash": "9ba5235deadb",
+      "textSha256": "9ba5235deadb7d958259d3dc0b5ea311d05d6edbc8129d6466d15cd556e0c270",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/memory-aid.9ba5235deadb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/memory-aid.9ba5235deadb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/memory-aid.9ba5235deadb.generation.json",
+      "plannedRequestSha256": "897dd2f1f21bd2e292d9035e36692159e5dd4edaf6b0189280c9fb8fa91befd8"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. The equation shows the hydrogen carbonate ion reacting with water. Identify the Brønsted-Lowry acid and the Brønsted-Lowry base in the forward reaction. Justify your answer in terms of proton transfer. Pause here to answer.",
+      "hash": "c52687c996b6",
+      "textSha256": "c52687c996b697fbe708e20e50f92190610f49857099aee9bde600142eb389f7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/attempt-1.c52687c996b6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/attempt-1.c52687c996b6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/attempt-1.c52687c996b6.generation.json",
+      "plannedRequestSha256": "6821b2bc8236dba565244984063d8accf263bd1df573ba673ddd38caf78800ef"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Follow the proton. Water becomes hydroxide, so it lost a proton. Water is the acid. The hydrogen carbonate ion becomes H two C O three, so it gained a proton. It's the base. If you picked hydrogen carbonate as the acid because its formula has a hydrogen, that's the classic slip. Having a hydrogen doesn't make something an acid. Giving one away does.",
+      "hash": "73070a21201d",
+      "textSha256": "73070a21201d1521820f0aa2f1ec4326cc42ff29859c588e7ea44dfec4707cbb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/feedback-1.73070a21201d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/feedback-1.73070a21201d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/feedback-1.73070a21201d.generation.json",
+      "plannedRequestSha256": "0bc671177c3e19f39ff2e9f7926be467329639f3c26cf644c916de989498eede"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student states: \"The Arrhenius model has been proved wrong, so it should no longer be used.\" Assess the validity of this statement. Refer to ammonia in your answer. Pause here to answer.",
+      "hash": "4f81808d39d9",
+      "textSha256": "4f81808d39d9e74fba0a5d04494a64f0f520aae829656acee3991beeec828480",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/attempt-2.4f81808d39d9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/attempt-2.4f81808d39d9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/attempt-2.4f81808d39d9.generation.json",
+      "plannedRequestSha256": "74707e06c1345ffd9bbae4070a0390ef02d09a953177a85ebab7352d84a50e5c"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The statement is not valid. Arrhenius isn't wrong. It correctly describes acids and hydroxide bases in water, and it's still useful there. Its limitation is that it needs water, and a base with its own hydroxide, so it can't explain why ammonia is a base. Brønsted-Lowry can: ammonia accepts a proton from water. \"Proved wrong\" is the mistake. Write \"limited\".",
+      "hash": "9994f6822260",
+      "textSha256": "9994f682226026a1d091041635414a723100955b0efc9c57584b8082ae13b33a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/feedback-2.9994f6822260.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/feedback-2.9994f6822260.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/feedback-2.9994f6822260.generation.json",
+      "plannedRequestSha256": "4a0b917919845f2bef031c652db6a20b17412b1a878fa2b034a2169cc2e3ea0c"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So whenever you meet a reaction, follow the proton: the species that loses one is the acid, and the one that gains it is the base, in water or not. And to judge any model, say what it explained, then what broke it. Next: naming acids and bases, and predicting what they make when they react.",
+      "hash": "95791d585325",
+      "textSha256": "95791d5853251b5aca0e4c8b7afd92ac928e6dbb03f05903eb60688ff79a2bc4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/decision-rule.95791d585325.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/decision-rule.95791d585325.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/decision-rule.95791d585325.generation.json",
+      "plannedRequestSha256": "ff18cba5817ac9f1c39bd377ac708b4882dc031557574e1f3635c86dd29a63af"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C01-claude-2026-10-19-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
