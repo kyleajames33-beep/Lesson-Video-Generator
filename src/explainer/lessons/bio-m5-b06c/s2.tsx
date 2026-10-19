@@ -111,13 +111,13 @@ export const SceneCodonAnticodon: React.FC = () => {
 				<Sx x={gx} y={gy + DOCK_DY * gs + 110} text="codon 5' GAA 3' pairs with anticodon 3' CUU 5'" size={36} color={INK} weight={700} anchor="middle" at={K5.cuu + 20} />
 				<Chip x={1220} y={250} text="antiparallel, as in DNA" at={K5.dna} size={38} color={INK} stroke={AMBER} />
 				{/* the anticodon written the tRNA's own way */}
-				<Fade at={K5.own}>
+				<Fade at={K5.own} out={K5.keep}>
 					<g transform={`translate(1500,470) scale(${Math.max(0.02, sx)},1)`}>
 						<text x={0} y={0} textAnchor="middle" style={{fontFamily: 'Inter Tight', fontWeight: 800, fontSize: 52}} fill={TRNA_INK}>{turn < 0.5 ? `3' ${anti.split('').join(' ')} 5'` : `5' ${reverse(anti).split('').join(' ')} 3'`}</text>
 					</g>
 					<Sx x={1500} y={400} text="the same anticodon" size={34} color={INK_SOFT} hand anchor="middle" at={K5.own} />
 				</Fade>
-				<Sx x={1500} y={540} text={`= 3' ${anti.split('').join(' ')} 5'`} size={40} color={TRNA_INK} weight={700} anchor="middle" at={K5.uuc + 10} />
+				<Fade at={-100} out={K5.keep}><Sx x={1500} y={540} text={`= 3' ${anti.split('').join(' ')} 5'`} size={40} color={TRNA_INK} weight={700} anchor="middle" at={K5.uuc + 10} /></Fade>
 				{/* the pair rule card */}
 				<Fade at={K5.keep}>
 					<rect x={1150} y={720} width={690} height={250} rx={22} fill="#fffdf8" stroke={AMBER} strokeWidth={3.5} />

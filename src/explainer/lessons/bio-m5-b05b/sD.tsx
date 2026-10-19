@@ -90,7 +90,7 @@ export const SceneFourCells: React.FC = () => {
 			</Overlay>
 			<GreyTag at={404} x={1600} y={190} text="male: four sperm" size={26} />
 			<Enter at={410} style={{position: 'absolute', left: 1600, top: 262, width: 280}}>
-				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 24, color: '#5d646b', background: '#e8eaec', border: '3px solid #8d949b', borderRadius: 14, padding: '4px 16px', lineHeight: 1.2}}>female: one egg and polar bodies that break down</div>
+				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 24, color: '#5d646b', background: '#e8eaec', border: '3px solid #8d949b', borderRadius: 14, padding: '4px 16px', lineHeight: 1.2}}>female: one egg, plus polar bodies</div>
 			</Enter>
 		</>
 	);
@@ -178,7 +178,7 @@ export const SceneTracking: React.FC = () => {
 			<Num at={c.two2 + 6} x={BX[3]} y={420} text="2" size={92} />
 			<Num at={c.none + 6} x={BX[3]} y={522} text="0" size={72} color={INK_SOFT} />
 			<Cen at={c.four + 52} x={BX[0]} y={606} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none to count: one DNA molecule each</Cen>
-			<Cen at={c.apart} x={BX[3]} y={606} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none: undoubled again, one DNA molecule each</Cen>
+			<Cen at={c.apart} x={BX[3]} y={606} size={30} w={290} color={INK_SOFT} hand={false} weight={600}>none: one DNA molecule each</Cen>
 			{/* human row */}
 			<Num at={c.h46} x={BX[0]} y={740} text="46" size={88} color={AMBER_INK} />
 			<Num at={c.h46 + 6} x={BX[0]} y={844} text="0" size={68} color={INK_SOFT} />

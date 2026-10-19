@@ -191,7 +191,7 @@ export const SceneFeedbackTwoB6b: React.FC = () => {
 				{/* (2) a ribosome cannot reach the gene */}
 				<Fade at={K17.cant}><DrawPath d={`M${rib[0]},${rib[1]} L${ex},${ey}`} at={K17.cant} dur={18} color={GREYT} width={5} dash="10 9" /></Fade>
 				<DrawPath d={`M${ex - 14},${ey - 14} L${ex + 14},${ey + 14} M${ex + 14},${ey - 14} L${ex - 14},${ey + 14}`} at={K17.stays} dur={10} color={GREYT} width={6} />
-				<GreyTag x={96} y={222} text="DNA stays in the nucleus" at={K17.stays} size={24} />
+				<GreyTag x={96} y={222} text="DNA stays in the nucleus" at={K17.stays} out={K17.already + 40} size={24} />
 				{/* (3) the mRNA already made is read, then broken down */}
 				{sites.map((r, k) => {
 					const q = P(...r);

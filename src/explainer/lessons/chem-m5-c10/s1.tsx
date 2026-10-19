@@ -154,7 +154,7 @@ export const SceneKaIsK: React.FC = () => {
 				{/* the expression: products over reactants */}
 				<Sx x={g.x1 - 20} y={620 + 20} text="K =" size={64} anchor="end" at={K3.prod} out={K3.called + 6} />
 				<KaFrac cx={640} cy={620} size={64} name="a" prefixAt={K3.called + 6} num={num} den={den} barAt={K3.prod + 10} />
-				<Sx x={96} y={780} text="every coefficient is 1, so no powers" size={36} color={INK_SOFT} hand at={K3.every} />
+				<Sx x={96} y={780} text="every coefficient is 1, so no powers" size={36} color={INK_SOFT} hand at={K3.every} out={K3.name} />
 				<Sx x={96} y={850} text="acid dissociation constant" size={50} color={TEAL} hand at={K3.name} />
 				<Sx x={96} y={900} text="the little a says which kind: an acid splitting into ions" size={32} color={INK_SOFT} hand at={K3.little} />
 				{/* not a new kind of constant */}

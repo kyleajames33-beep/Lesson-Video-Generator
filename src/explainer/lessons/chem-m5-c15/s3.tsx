@@ -46,8 +46,10 @@ export const SceneCommonIon: React.FC = () => {
 					rain={{at: K10.add + 10, ion: 'Cl^{-}', n: 7, every: 7, partner: 'Na^{+}'}}
 					units={[{at: K10.lock - 10, kind: 'join', slot: 3, ring: K10.lock + 20}, {at: K10.lock + 14, kind: 'join', slot: 7, ring: K10.lock + 44}, {at: K10.until, kind: 'join', slot: 5, ring: K10.until + 30}]}
 					title="the crystal surface, close up" titleAt={K10.sat + 20} />
-				<Sx x={1060} y={340} text="Cl^{−}: already in the equilibrium" size={34} color={AN_INK} hand at={K10.common} />
-				<Sx x={1060} y={384} text="Na^{+}: a spectator" size={30} color={INK_SOFT} hand at={K10.common + 10} />
+				<Fade at={-100} out={K10.stays}>
+					<Sx x={1060} y={340} text="Cl^{−}: already in the equilibrium" size={34} color={AN_INK} hand at={K10.common} />
+					<Sx x={1060} y={384} text="Na^{+}: a spectator" size={30} color={INK_SOFT} hand at={K10.common + 10} />
+				</Fade>
 				<LogLine ln={ln} at={K10.jumps - 30} labels={false} />
 				<KMarker k={1.77e-10} ln={ln} at={K10.jumps - 24} label="Ksp" size={36} />
 				<QMarker ln={ln} at={K10.jumps - 18} value={fr => 10 ** qe(fr)} label="Qsp" side="mid" color={CORAL_INK} size={34} />

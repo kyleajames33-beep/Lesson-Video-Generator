@@ -117,9 +117,9 @@ export const SceneAnaphase: React.FC = () => {
 			<Hand at={c.soon + 8} out={c.called} x={96} y={430} size={50} w={340}>a separated chromatid</Hand>
 			<Hand at={c.called} out={c.twice - 4} x={96} y={430} size={50} w={340} color={INK}>is now a chromosome</Hand>
 			<Hand at={c.each + 6} out={c.four} x={96} y={290} size={46} w={330}>a copy of each of the four chromosomes</Hand>
-			<Hand at={c.four} x={96} y={290} size={46} w={330}>4 chromosomes: the same four as the parent</Hand>
-			<Hand at={c.one + 6} x={1500} y={290} size={46} w={330}>a copy of each of the four chromosomes</Hand>
-			<Hand at={c.four + 24} x={1500} y={430} size={46} w={330}>4 chromosomes</Hand>
+			<Hand at={c.four} x={96} y={290} size={46} w={330}>4 chromosomes: same as the parent</Hand>
+			<Hand at={c.one + 6} out={c.four} x={1500} y={290} size={46} w={330}>a copy of each of the four chromosomes</Hand>
+			<Hand at={c.four + 24} x={1500} y={290} size={46} w={330}>4 chromosomes</Hand>
 			<Hand at={c.both + 8} x={gl - 80} y={CY + 262} size={46}>both sets</Hand>
 			<Hand at={c.both + 14} x={gr - 80} y={CY + 262} size={46}>both sets</Hand>
 			{/* counter */}
@@ -203,7 +203,7 @@ export const SceneTelophase: React.FC = () => {
 			<Hand at={c.uncoil} out={c.env} x={96} y={290} size={50} w={360}>uncoil into long thin threads</Hand>
 			<Hand at={c.env + 36} out={c.cyto + 20} x={96} y={290} size={50} w={360}>two nuclei</Hand>
 			<Hand at={c.splitting} out={c.animal + 20} x={96} y={290} size={50} w={360}>cytokinesis: the cytoplasm splits</Hand>
-			<Hand at={c.animal + 6} x={1500} y={230} size={50} w={340}>animal cell: membrane pinches in</Hand>
+			<Hand at={c.animal + 6} out={c.now + 10} x={1460} y={230} size={50} w={400}>animal cell: membrane pinches in</Hand>
 			<Hand at={c.pinch + 20} x={1540} y={720} size={44} w={300} color={INK_SOFT}>plant cell: new wall</Hand>
 			<Hand at={c.now + 4} x={96} y={730} size={44} w={300} color={INK_SOFT}>parent cell</Hand>
 			<Hand at={c.each} x={600} y={812} size={56} color={AMBER_INK}>same chromosomes as the parent</Hand>

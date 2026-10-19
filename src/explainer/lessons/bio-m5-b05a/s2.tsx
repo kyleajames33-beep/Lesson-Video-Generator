@@ -58,7 +58,7 @@ export const SceneWhyCopy: React.FC = () => {
 				</g>
 				<line x1={lx - 62} x2={lx + 62} y1={ly} y2={ly} stroke={AMBER_INK} strokeWidth={6} strokeDasharray="12 9" strokeLinecap="round" opacity={cutLine * (1 - prog(f, c.half + 50, 12))} style={{clipPath: `inset(0 ${100 - cutLine * 100}% 0 0)`}} />
 				{/* copy icon lands beside the nucleus */}
-				<g opacity={copyIcon} transform={`translate(${1330},${380 - (1 - copyIcon) * 90})`}>
+				<g opacity={copyIcon} transform={`translate(${1530},${380 - (1 - copyIcon) * 90})`}>
 					<rect x={-48} y={-52} width={72} height={92} rx={8} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} />
 					<rect x={-24} y={-32} width={72} height={92} rx={8} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} />
 					<line x1={-8} x2={30} y1={-6} y2={-6} stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" />
@@ -70,8 +70,8 @@ export const SceneWhyCopy: React.FC = () => {
 			<Hand at={c.onlyHalf} out={c.copied - 6} x={430} y={760} size={46} w={380}>only half the chromosomes</Hand>
 			<Hand at={c.onlyHalf + 10} out={c.copied - 6} x={1110} y={760} size={46} w={380}>only half the chromosomes</Hand>
 			<Hand at={c.both} out={c.copied - 6} x={560} y={878} size={56}>a skin cell needs both sets</Hand>
-			<Hand at={c.copied + 14} x={1230} y={470} size={58}>copy first</Hand>
-			<Pill at={c.video} x={620} y={850} size={44}>recall: the DNA copying video</Pill>
+			<Hand at={c.copied + 14} x={1460} y={470} size={58}>copy first</Hand>
+			<Pill at={c.video} x={620} y={900} size={44}>recall: the DNA copying video</Pill>
 		</>
 	);
 };
@@ -103,9 +103,9 @@ export const SceneTheCopy: React.FC = () => {
 					{CH.map((ch, i) => <Chrom key={i} x={CX + NUC_X[i]} y={CY} kind={ch.kind} color={ch.color} dup={dupP(i)} s={pulse(i)} hiA={i === 0 ? hiA : 0} hiB={i === 0 ? hiB : 0} />)}
 				</g>
 				<Scribble cx={lp[0]} cy={lp[1]} rx={34} ry={34} at={c.cen} color={AMBER_INK} seed={3} />
-				<DrawPath d={`M${lp[0] - 34},${lp[1] + 10} L${lp[0] - 140},${lp[1] + 90}`} at={c.cen + 10} dur={12} color={AMBER_INK} width={4} />
-				<DrawPath d={`M${lp[0] - 8},${lp[1] - 112} L${lp[0] - 90},${lp[1] - 190}`} at={c.chrom - 6} dur={12} color={AMBER_INK} width={4} />
-				<DrawPath d={`M${lp[0] + 8},${lp[1] + 112} L${lp[0] + 80},${lp[1] + 170}`} at={c.both + 6} dur={12} color={AMBER_INK} width={4} />
+				<g opacity={1 - prog(f, c.each, 10)}><DrawPath d={`M${lp[0] - 34},${lp[1] + 10} L${lp[0] - 140},${lp[1] + 90}`} at={c.cen + 10} dur={12} color={AMBER_INK} width={4} /></g>
+				<g opacity={1 - prog(f, c.sister, 10)}><DrawPath d={`M${lp[0] - 8},${lp[1] - 112} L${lp[0] - 90},${lp[1] - 190}`} at={c.chrom - 6} dur={12} color={AMBER_INK} width={4} /></g>
+				<g opacity={1 - prog(f, c.still, 10)}><DrawPath d={`M${lp[0] + 8},${lp[1] + 112} L${lp[0] + 80},${lp[1] + 170}`} at={c.both + 6} dur={12} color={AMBER_INK} width={4} /></g>
 				<Bracket x1={lp[0] - 22} x2={lp[0] + 22} y={lp[1] + 128} at={c.sister} color={AMBER_INK} />
 				<PenTap pts={pts} at={tapAt} badge={[0, -150]} out={c.not + 60} />
 			</Overlay>
@@ -175,7 +175,7 @@ export const SceneInterphase: React.FC = () => {
 			<Hand at={c.short} x={840} y={215} size={54} color={SHAREC}>mitosis</Hand>
 			<Hand at={c.shares} x={96} y={420} size={52} color={SHAREC} w={560}>mitosis shares the copies out</Hand>
 			<Hand at={c.never + 10} x={96} y={560} size={52} color={INK_SOFT} w={560}>no copying here</Hand>
-			<Hand at={c.two + 40} x={96} y={690} size={46} w={600} color={INK}>every chromosome already has two chromatids</Hand>
+			<Hand at={c.two + 40} out={c.short} x={96} y={690} size={46} w={600} color={INK}>every chromosome already has two chromatids</Hand>
 			<Line at={c.copies + 10} x={96} y={800} size={60} hand color={COPYC}>copy,</Line>
 			<Line at={c.shares + 10} x={290} y={800} size={60} hand color={SHAREC}>share,</Line>
 		</>

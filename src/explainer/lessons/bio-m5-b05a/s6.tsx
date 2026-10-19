@@ -103,7 +103,7 @@ export const SceneMemory: React.FC = () => {
 			{kw('middle', c.meta + 10, 2)}
 			{kw('apart', c.ana + 10, 3)}
 			{kw('two nuclei', c.telo + 10, 4)}
-			<GreyTag at={c.copied + 20} x={LX[0] - 170} y={640} text="interphase comes before mitosis" size={26} />
+			<GreyTag at={c.copied + 20} x={LX[0] - 170} y={690} text="interphase comes before mitosis" size={26} />
 			<Hand at={c.pro + 24} x={LX[1] + 100} y={650} size={46} color={AMBER_INK}>the four steps of mitosis</Hand>
 			<Pill at={c.cyto} x={1520} y={700} size={42}>then split</Pill>
 			<Hand at={c.count} x={490} y={800} size={52} color={AMBER_INK} w={470}>centromeres, not chromatids</Hand>

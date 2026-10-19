@@ -95,8 +95,8 @@ export const SceneCombinations: React.FC = () => {
 			<Pill at={c.npairs + 4} out={c.p23 + 20} x={700} y={755} size={44}>n = number of pairs</Pill>
 			<Pill at={c.p23 + 24} out={c.big} x={700} y={755} size={44}>n = 23</Pill>
 			<div style={{position: 'absolute', left: 700, top: 745, opacity: prog(f, c.big, 10), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 84, color: INK, whiteSpace: 'nowrap'}}>2<sup style={{fontSize: '0.6em'}}>23</sup> = <span style={{color: AMBER_INK}}>{fmt(tick)}</span></div>
-			<Pill at={c.more} x={700} y={850} size={46}>more than 8 million</Pill>
-			<GreyTag at={c.more + 20} x={1130} y={862} text="whole chromosomes only; crossing over adds more" size={26} />
+			<Pill at={c.more} x={700} y={836} size={40}>more than 8 million</Pill>
+			<GreyTag at={c.more + 20} x={1330} y={890} text="crossing over adds even more" size={26} />
 			<Overlay>
 				<g opacity={prog(f, c.match, 14)}>
 					<Cell cx={1480} cy={640} rx={104} ry={96} />
@@ -105,7 +105,7 @@ export const SceneCombinations: React.FC = () => {
 					{MIX2.map((cc, j) => <MiniBar key={'b' + j} x={1720 + ((j % 12) - 5.5) * 14} y={640 + (j < 12 ? -22 : 24)} h={34} w={7} col={cc} />)}
 				</g>
 			</Overlay>
-			<Hand at={c.never} x={1330} y={770} size={46} w={520} color={AMBER_INK}>almost never match, but it is possible</Hand>
+			<Hand at={c.never} x={1380} y={800} size={44} color={AMBER_INK}>almost never match</Hand>
 			<TrackStrip at={c.how} />
 		</>
 	);

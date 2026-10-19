@@ -13,6 +13,8 @@ const NUC = 262;
 const HL = 125; // half length of the long chromosome (200 * SZ / 2)
 const GL = '#5d646b';
 const HALO = '0 0 5px #ece3ee, 0 0 5px #ece3ee, 0 0 8px #ece3ee, 0 0 8px #ece3ee';
+/** Cream halo so a label stays readable where it sits over the painted cell. */
+const HALO_C = '0 0 4px #fbf6ea, 0 0 6px #fbf6ea, 0 0 10px #fbf6ea, 0 0 14px #fbf6ea';
 
 const Bubble: React.FC<{x: number; y: number; at: number; r?: number}> = ({x, y, at, r = 26}) => {
 	const f = useCurrentFrame();
@@ -170,9 +172,9 @@ export const SceneCrossingWhat: React.FC = () => {
 				</g>
 				<Bracket x1={ZX(PAIRED[0][0] - ARM_C)} x2={ZX(PAIRED[0][0] + ARM_C)} y={ZY(-136)} at={c.chroma} color={INK_SOFT} down={false} />
 			</Overlay>
-			<Hand at={c.non + 10} x={ZX(-120) - 120} y={ZY(136) + 16} size={50} w={300}>non-sister</Hand>
-			<Hand at={c.chroma + 10} x={ZX(-180) - 60} y={ZY(-136) - 92} size={50} w={200} color={INK_SOFT}>sister</Hand>
-			<Hand at={c.cross} x={1260} y={300} size={110}>crossing over</Hand>
+			<Hand at={c.non + 10} x={ZX(-120) - 120} y={ZY(136) + 16} size={50} w={300}><span style={{textShadow: HALO_C}}>non-sister</span></Hand>
+			<Hand at={c.chroma + 10} x={ZX(-180) - 60} y={ZY(-136) - 92} size={50} w={200} color={INK_SOFT}><span style={{textShadow: HALO_C}}>sister</span></Hand>
+			<Hand at={c.cross} x={1260} y={300} size={110}><span style={{textShadow: HALO_C}}>crossing over</span></Hand>
 			<MStrip at={[-100, null, null, null, null, null, null, null]} active={0} />
 		</>
 	);
@@ -228,8 +230,8 @@ export const SceneCrossingMakes: React.FC = () => {
 					<Scribble cx={ZA(LP_X)} cy={ZY(0)} rx={96} ry={240} at={c.sister} color={AMBER_INK} seed={5} />
 				</g>
 			</Overlay>
-			{tags.map((tg, i) => <Hand key={tg} at={tAt[i] + 8} x={LBX[i] - 52} y={ZY(-HL) - 120} size={52} w={104} color={INK}><span style={{display: 'block', textAlign: 'center'}}>{tg}</span></Hand>)}
-			<Hand at={c.all + 14} x={ZX(xs[0]) - 20} y={ZY(136) + 14} size={50}>4 different chromatids</Hand>
+			{tags.map((tg, i) => <Hand key={tg} at={tAt[i] + 8} x={LBX[i] - 52} y={ZY(-HL) - 120} size={52} w={104} color={INK}><span style={{display: 'block', textAlign: 'center', textShadow: HALO_C}}>{tg}</span></Hand>)}
+			<Hand at={c.all + 14} x={ZX(xs[0]) - 20} y={ZY(136) + 14} size={50}><span style={{textShadow: HALO_C}}>4 different chromatids</span></Hand>
 			<GreyTag at={c.newA + 8} x={1390} y={310} text="no new allele" size={38} />
 			<Pill at={c.newA + 20} x={96} y={100} size={38}>allele: a version of a gene</Pill>
 			<MStrip at={[-100, null, null, null, null, null, null, null]} active={0} />

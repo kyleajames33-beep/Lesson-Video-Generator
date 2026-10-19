@@ -224,12 +224,12 @@ export const SceneFeedbackOne: React.FC = () => {
 						{Array.from({length: 7}, (_, i) => <g key={i}><MiniBar x={1560 + (i - 3) * 40 - 8} y={420} h={46} w={9} col="P" /><MiniBar x={1560 + (i - 3) * 40 + 8} y={420} h={46} w={9} col="T" /></g>)}
 					</g>
 				</g>
-				<Tick x={1010} y={380} at={c.seven + 40} s={1.1} />
+				<Tick x={1052} y={380} at={c.seven + 40} s={1.1} />
 				<Tick x={1130} y={612} at={c.is128 + 14} s={1.1} />
 				<Tick x={1860} y={570} at={c.plus + 30} s={1} />
 			</Overlay>
 			<Num at={c.seven} x={960} y={330} text="7" size={110} color={AMBER_INK} w={160} />
-			<Hand at={c.seven + 10} x={1040} y={350} size={44} w={380}>each gamete holds 7</Hand>
+			<Hand at={c.seven + 10} x={1100} y={350} size={44} w={380}>in each gamete</Hand>
 			{doub.map((v, i) => (
 				<Enter key={v} at={c.pow + 6 + i * 6} style={{position: 'absolute', left: 150 + i * 110, top: 600}}>
 					<div style={{width: 94, textAlign: 'center', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: i === 6 ? 40 : 38, color: i === 6 ? AMBER_INK : INK, background: '#fffdf8', border: `3px solid ${i === 6 ? AMBER : '#d8cdb6'}`, borderRadius: 14, padding: '6px 0'}}>{v}</div>

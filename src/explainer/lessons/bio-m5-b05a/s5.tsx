@@ -256,10 +256,10 @@ export const SceneFeedbackOne: React.FC = () => {
 	return (
 		<>
 			<Heading items={[[0, 'Question 1: the counts']]} size={64} />
-			<div style={{position: 'absolute', left: 300, top: 200, opacity: prog(f, c.eight, 10)}}>
+			<div style={{position: 'absolute', left: 300, top: 200, opacity: prog(f, c.eight, 10) * (1 - prog(f, c.mitosis, 12))}}>
 				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56, color: AMBER_INK}}>chromosomes: 8</span>
 			</div>
-			<div style={{position: 'absolute', left: 660, top: 200, opacity: prog(f, c.sixteen, 10)}}>
+			<div style={{position: 'absolute', left: 660, top: 200, opacity: prog(f, c.sixteen, 10) * (1 - prog(f, c.mitosis, 12))}}>
 				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56, color: AMBER_INK}}>chromatids: {Math.min(16, Math.round(16 * prog(f, c.sixteen, 20)))}</span>
 			</div>
 			<Overlay>
@@ -281,10 +281,10 @@ export const SceneFeedbackOne: React.FC = () => {
 			<Hand at={c.first} x={640} y={868} size={52} color={AMBER_INK}>doubled first, then shared back</Hand>
 			{/* the answers and the likely wrong ideas */}
 			<Right at={c.eight + 4} x={1010} y={220}>now: 8 chromosomes</Right>
-			<Hand at={c.joined} x={1080} y={300} size={36} color={INK_SOFT} w={760}>the copies stay joined at their centromeres</Hand>
+			<Hand at={c.joined} out={c.mitosis} x={1080} y={300} size={36} color={INK_SOFT} w={760}>the copies stay joined at their centromeres</Hand>
 			<Right at={c.sixteen + 4} x={1010} y={360}>and 16 chromatids</Right>
 			<Right at={c.each8 + 6} x={1010} y={460}>each new cell: 8, same as the parent</Right>
-			<Wrong at={c.w4} x={1010} y={590} text="4 in each new cell" why="halved: the copying doubled the DNA first" />
+			<Wrong at={c.w4} x={1010} y={590} text="4 in each new cell" why="halved, but the DNA doubled first" />
 		</>
 	);
 };
@@ -323,7 +323,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 				<PenTap pts={pts} at={taps} badge={[56, 0]} out={c.w1 - 10} />
 			</Overlay>
 			<Hand at={c.count + 14} x={96} y={850} size={52} color={AMBER_INK}>{`${chromN} centromeres = ${chromN} chromosomes`}</Hand>
-			<Hand at={c.lined} x={1050} y={220} size={36} color={INK_SOFT} w={780}>lined up across the middle, fibres from both ends</Hand>
+			<Hand at={c.lined} out={c.w1} x={1050} y={220} size={36} color={INK_SOFT} w={780}>lined up across the middle, fibres from both ends</Hand>
 			<Right at={c.meta} x={980} y={286}>metaphase</Right>
 			<Right at={c.six + 4} x={980} y={390}>6 chromosomes</Right>
 			<Wrong at={c.w1} x={980} y={550} w={850} text="12 chromosomes" why="you counted chromatids" />

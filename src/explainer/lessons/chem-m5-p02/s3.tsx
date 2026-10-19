@@ -269,7 +269,7 @@ export const SceneRepeats: React.FC = () => {
 					<path d={`M${sx(208)},${SP.y - 80} L${sx(208)},${SP.y + 12}`} stroke={AMBER_INK} strokeWidth={4} strokeDasharray="8 6" />
 					<Sx x={sx(208)} y={SP.y - 92} text="mean 208" size={36} color={AMBER_INK} anchor="middle" hand at={K10.avg} />
 				</Fade>
-				<Sx x={SP.x0} y={SP.y + 110} text="a small spread: you can trust it more" size={34} color={INK} hand at={K10.trust} />
+				<Sx x={SP.x0 + 50} y={SP.y + 110} text="a small spread: you can trust it more" size={34} color={INK} hand at={K10.trust} />
 				{/* record the temperature */}
 				<Thermometer x={1100} y={500} h={250} temp={25} at={K10.write} label=" " />
 				<Sx x={1200} y={600} text="T = ___ C" size={46} color={INK} weight={700} at={K10.write + 6} />

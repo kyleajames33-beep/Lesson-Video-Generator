@@ -237,7 +237,7 @@ export const SceneCodons: React.FC = () => {
 				<Chip x={96} y={830} text="CFTR gene (cystic fibrosis)" at={K12.cftr} size={36} color={INK} stroke={GREYT} />
 				<GreyTag x={96} y={910} text="illustration: not the real CFTR change" at={K12.cftr + 10} size={26} />
 				<Ring cx={colX(6)} cy={yt - BD.so - BD.th / 2} rx={56} ry={46} at={tFlip + 4} color={AMBER} seed={6} />
-				<Chip x={codonX(1)[0] + 380} y={830} text="GCU becomes ACU: one codon changed" at={K12.codon} size={34} color={AMBER_INK} stroke={AMBER} />
+				<Chip x={1824} y={830} text="GCU becomes ACU: one codon changed" at={K12.codon} size={34} color={AMBER_INK} stroke={AMBER} anchor="end" />
 				<Sx x={codonX(1)[0] + 380} y={940} text="before any protein is made" size={36} color={INK_SOFT} hand at={K12.before} />
 			</Overlay>
 		</>

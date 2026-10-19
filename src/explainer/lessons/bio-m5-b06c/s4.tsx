@@ -292,7 +292,7 @@ export const SceneFeedbackTwoB6c: React.FC = () => {
 				{/* (1) the bacterial ribosome misreads */}
 				<MiniBoard id="b6c-fb2-b" tx={MINI.tx} ty={MINI.ty} s={MINI.s} secondAnti={wrongAnti} secondAA={wrongAA} clash={2} dock={dock1} ring={prog(f, K16.wrongaa, 10)} strep={1} />
 				<Sx x={110} y={226} text="bacterial ribosome" size={26} color={INK_SOFT} hand at={-100} />
-				<GreyTag x={110} y={600} text={`GAA needs Glu; a wrong tRNA brings ${wrongAA}`} at={K16.wrongaa + 4} size={24} />
+				<GreyTag x={110} y={600} text={`GAA needs Glu; a wrong tRNA brings ${wrongAA}`} at={K16.wrongaa + 4} out={K16.mito} size={24} />
 				{/* (2) misfolded versus correct, and the bacterium */}
 				<g opacity={prog(f, K16.fold, 12)}>
 					<Blob x={170} y={760} r={44} fill="#c9a0c9" seed={2} />
@@ -301,7 +301,7 @@ export const SceneFeedbackTwoB6c: React.FC = () => {
 					<Sx x={330} y={870} text="wrong shape: does not work" size={26} color={AMBER_INK} hand anchor="middle" at={-100} />
 				</g>
 				<g opacity={prog(f, K16.fold, 12) * (1 - 0.6 * bactDim)}><Pl p={PL.bact} x={560} y={770} k={0.13} /></g>
-				<GreyTag x={520} y={834} text="enzymes fail" at={K16.dies} size={24} />
+				<GreyTag x={520} y={834} text="enzymes fail" at={K16.dies} out={K16.mito} size={24} />
 				{/* (3) the human cytoplasmic ribosome reads correctly */}
 				<g opacity={prog(f, K16.human, 12)}>
 					<MiniBoard id="b6c-fb2-h" tx={MINI.tx + 470} ty={MINI.ty} s={MINI.s} secondAnti={anticodonOf('GAA')} secondAA="Glu" dock={dock2} />
@@ -312,7 +312,7 @@ export const SceneFeedbackTwoB6c: React.FC = () => {
 				<g opacity={prog(f, K16.mito, 12)}>
 					<Pl p={PL.mito} x={830} y={770} k={0.14} />
 				</g>
-				<GreyTag x={710} y={880} text="bacteria-like ribosomes (B6a)" at={K16.mito + 6} size={24} />
+				<GreyTag x={710} y={880} text="bacteria-like ribosomes" at={K16.mito + 6} size={24} />
 				{/* model lines */}
 				{lines.map((l, i) => {
 					const ws = wrap(l.t, 27, 700);

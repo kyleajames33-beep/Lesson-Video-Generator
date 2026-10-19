@@ -240,8 +240,8 @@ export const SceneIdentical: React.FC = () => {
 			<Hand at={c.copies} out={c.pull} x={MC[0] + 400} y={my(0) - 6} size={56} color={AMBER_INK}>= the same chromosome</Hand>
 			<Cen at={c.pull + 40} x={300} y={730} w={420} size={44} color={AMBER_INK}>new cell</Cen>
 			<Cen at={c.pull + 40} x={1620} y={730} w={420} size={44} color={AMBER_INK}>new cell</Cen>
-			<Cen at={c.both} x={300} y={786} w={460} size={40} color={INK}>both long bars and both short bars are here</Cen>
-			<Cen at={c.both + 8} x={1620} y={786} w={420} size={40} color={INK}>and here too</Cen>
+			<Cen at={c.both} x={300} y={786} w={460} size={40} color={INK}>both sets: long and short</Cen>
+			<Cen at={c.both + 8} x={1620} y={786} w={420} size={40} color={INK}>both sets here too</Cen>
 			<Hand at={c.checks + 4} out={c.before} x={MC[0] + 40} y={MC[1] - 330} size={52} color={AMBER_INK}>checkpoint</Hand>
 			<Hand at={c.checks + 26} out={c.attached} x={MC[0] + 280} y={MC[1] - 290} size={44} color={GREY}>waits</Hand>
 			<Hand at={c.before} x={MC[0] - 330} y={MC[1] - 340} size={48} color="#2f8a5b" w={660}>attached from both ends: go</Hand>
@@ -379,10 +379,10 @@ export const SceneNotPerfect: React.FC = () => {
 				<Hand at={c.two + 4} out={c.both + 10} x={96} y={290} size={46} w={360}>one chromosome, two chromatids</Hand>
 				<Hand at={c.extra + 24} x={1490} y={290} size={64} color={AMBER_INK}>5 chromosomes</Hand>
 				<Hand at={c.short + 8} x={96} y={290} size={64} color={AMBER_INK}>3 chromosomes</Hand>
-				<Hand at={c.extra + 70} x={1500} y={420} size={44} w={330} color={INK_SOFT}>one centromere, one chromosome</Hand>
+				<Hand at={c.extra + 70} out={c.checks} x={1500} y={420} size={44} w={330} color={INK_SOFT}>one centromere, one chromosome</Hand>
 				<Hand at={c.extra + 6} x={1500} y={190} size={44} w={330} color={INK_SOFT}>an extra chromosome</Hand>
 				<Hand at={c.short + 4} x={96} y={200} size={44} w={330} color={INK_SOFT}>one short</Hand>
-				<Hand at={c.checks + 50} x={CX + 330} y={CY + 230} size={44} color={GREY}>flagged</Hand>
+				<Hand at={c.checks + 50} x={CX + 410} y={CY + 250} size={44} color={GREY}>flagged</Hand>
 			</div>
 		</>
 	);

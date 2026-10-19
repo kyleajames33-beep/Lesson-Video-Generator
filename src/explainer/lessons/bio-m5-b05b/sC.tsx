@@ -173,14 +173,14 @@ export const SceneFirstDivision: React.FC = () => {
 				<PenTap pts={penR} at={[c.two + 60, c.two + 78]} badge={[-40, -30]} showPen={false} />
 			</Overlay>
 			<Pill at={c.dont + 4} out={c.each + 10} x={CX - 400} y={168} size={42}>centromere stays whole: chromatids not separated</Pill>
-			<Hand at={c.kind + 12} out={c.telo - 10} x={CX - 190} y={CY + 196} size={30} w={380} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>one of each kind at each end</span></Hand>
+			<Hand at={c.kind + 12} out={c.telo - 10} x={CX - 190} y={CY + 300} size={34} w={380} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center', textShadow: '0 0 4px #fbf6ea, 0 0 6px #fbf6ea, 0 0 10px #fbf6ea, 0 0 14px #fbf6ea'}}>one of each kind at each end</span></Hand>
 			<Pill at={c.set + 8} out={c.telo - 10} x={CX - 440} y={CY - 250} size={40}>one set</Pill>
 			<Pill at={c.set + 16} out={c.telo - 10} x={CX + 330} y={CY - 250} size={40}>one set</Pill>
 			<Pill at={c.telo + 24} out={c.fin + 20} x={CX - 130} y={168} size={42}>cytokinesis</Pill>
-			<Hand at={c.two + 8} x={CX - 235 - 220} y={CY + 208} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes (count the centromeres)</span></Hand>
-			<Hand at={c.two + 56} x={CX + 235 - 220} y={CY + 208} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes (count the centromeres)</span></Hand>
-			<GreyTag at={c.two + 30} x={CX - 235 - 80} y={CY + 284} text="4 chromatids" size={26} />
-			<GreyTag at={c.two + 66} x={CX + 235 - 80} y={CY + 284} text="4 chromatids" size={26} />
+			<Hand at={c.two + 8} x={CX - 235 - 220} y={CY + 208} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes</span></Hand>
+			<Hand at={c.two + 56} x={CX + 235 - 220} y={CY + 208} size={34} w={440} color={INK}><span style={{display: 'block', textAlign: 'center'}}>2 chromosomes</span></Hand>
+			<GreyTag at={c.two + 30} x={CX - 235 - 80} y={CY + 258} text="4 chromatids" size={26} />
+			<GreyTag at={c.two + 66} x={CX + 235 - 80} y={CY + 258} text="4 chromatids" size={26} />
 			<Hand at={c.half + 6} x={1300} y={176} size={42} w={560} color={AMBER_INK}>half the number: haploid (each chromosome still doubled)</Hand>
 			<MStrip at={[-100, -100, c.ana, c.telo, null, null, null, null]} active={f >= c.telo ? 3 : 2} />
 		</>

@@ -60,7 +60,7 @@ export const ScenePromoter: React.FC = () => {
 				{promo > 0.01 ? <rect x={colX(0) - 56} y={BD.yc - 30} width={3 * BD.pitch - 8} height={YT - BD.yc + 60} rx={22} fill={PROMO} opacity={0.24 * promo} /> : null}
 				<Duplex top={LONG_TOP} bot={LONG_BOT} open={geneOpen(open)} topTileGlow={exposedGlow} botTileGlow={exposedGlow} />
 				<SpanBracket x1={colX(GENE0) - 50} x2={colX(GENE1) + 50} y={384} up at={-100} out={K4.pulls} label="gene" size={44} />
-				<Chip x={96} y={YT + 70} text="promoter: where the polymerase binds" at={K4.promoter + 6} size={36} color="#5d4f73" stroke={PROMO} />
+				<Chip x={96} y={YT + 70 + 90 * open} text="promoter: where the polymerase binds" at={K4.promoter + 6} size={36} color="#5d4f73" stroke={PROMO} />
 				<Fade at={K4.find + 10} out={K4.pulls}>
 					<line x1={colX(2) + 20} y1={350} x2={colX(3) + 70} y2={350} stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" />
 					<path d={`M${colX(3) + 54},${338} L${colX(3) + 70},${350} L${colX(3) + 54},${362}`} fill="none" stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
@@ -249,7 +249,7 @@ export const SceneCodingCheck: React.FC = () => {
 						<Ring cx={colX(GENE0 + k)} cy={YM + BD.so + BD.th / 2} rx={52} ry={42} at={K8.except + 4 + j * 6} color={AMBER} seed={k + 9} />
 					</g>
 				))}
-				<Chip x={colX(GENE1) + 64} y={cY + 30} text="T becomes U" at={K8.except + 14} size={34} color={AMBER_INK} stroke={AMBER} anchor="end" />
+				<Chip x={colX(GENE1) + 64} y={cY - 116} text="T becomes U" at={K8.except + 14} size={34} color={AMBER_INK} stroke={AMBER} anchor="end" />
 				<Fade at={K8.dir}>
 					<circle cx={BD.x0 - BD.pitch * 0.62} cy={BD.yc} r={34} fill="none" stroke={AMBER} strokeWidth={4} />
 					<circle cx={colX(3) - 58} cy={YM - 40} r={34} fill="none" stroke={AMBER} strokeWidth={4} />

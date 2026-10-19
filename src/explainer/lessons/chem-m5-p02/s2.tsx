@@ -122,10 +122,12 @@ export const SceneCalibration: React.FC = () => {
 				</Fade>
 				<Sx x={gx(G5, 0.3)} y={gy(G5, 0.92)} text="line of best fit" size={40} color={TEAL} hand at={K5.fit} />
 				{/* close to the origin */}
-				<Ring cx={G5.ox} cy={G5.oy} rx={36} ry={36} at={K5.origin} color={AMBER} seed={6} />
-				<Sx x={96} y={560} text="passes close to (0, 0):" size={36} color={AMBER_INK} hand at={K5.origin + 4} />
-				<Sx x={96} y={604} text="intercept 0.001" size={36} color={AMBER_INK} hand at={K5.origin + 10} />
-				<Arrow x1={380} y1={600} x2={G5.ox - 40} y2={G5.oy - 20} at={K5.origin + 8} color={AMBER_INK} width={4} />
+				<Fade at={-100} out={K5.slope}>
+					<Ring cx={G5.ox} cy={G5.oy} rx={36} ry={36} at={K5.origin} color={AMBER} seed={6} />
+					<Sx x={96} y={560} text="passes close to (0, 0):" size={36} color={AMBER_INK} hand at={K5.origin + 4} />
+					<Sx x={96} y={604} text="intercept 0.001" size={36} color={AMBER_INK} hand at={K5.origin + 10} />
+					<Arrow x1={380} y1={600} x2={G5.ox - 40} y2={G5.oy - 20} at={K5.origin + 8} color={AMBER_INK} width={4} />
+				</Fade>
 				{/* why not the formula */}
 				<Sx x={96} y={690} text="the slope depends on:" size={36} color={INK} hand at={K5.slope} />
 				<Sx x={120} y={736} text="• this instrument" size={34} color={INK} hand at={K5.inst} />
