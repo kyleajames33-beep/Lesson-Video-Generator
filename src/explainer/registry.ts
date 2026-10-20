@@ -56,9 +56,13 @@ import {config_m6c01} from './lessons/chem-m6-c01/config';
 import {config_m6c02} from './lessons/chem-m6-c02/config';
 import {config_m6c03} from './lessons/chem-m6-c03/config';
 import {config_m6c04} from './lessons/chem-m6-c04/config';
+import {config_m6c05} from './lessons/chem-m6-c05/config';
+import {config_m6c06} from './lessons/chem-m6-c06/config';
 import {config_m6b01} from './lessons/bio-m6-b01/config';
 import {config_m6b02} from './lessons/bio-m6-b02/config';
 import {config_m6b03} from './lessons/bio-m6-b03/config';
 import {config_m6b04} from './lessons/bio-m6-b04/config';
+import {config_m6b05} from './lessons/bio-m6-b05/config';
+import {config_m6g01b} from './lessons/bio-m6-g01/config';
 
-export const explainers: ExplainerConfig[] = [config_m6c01, config_m6c02, config_m6c03, config_m6c04, config_m6b01, config_m6b02, config_m6b03, config_m6b04, config_b11, config_b12,mouldConfig, config_c01, config_c02, config_c03, config_c04a, config_c04b, config_c05, config_c06, config_c06a, config_c06b, config_c07, config_c08, config_c09, config_p01, config_p02, config_c10, config_p03, config_c11, config_c13, config_c14, config_c15, config_g01, config_g03a, config_g03b, config_g03c, config_g03d, config_b01, config_b02a, config_b02b, config_b02c, config_b03a, config_b03a2, config_b03b, config_b04, config_b05a, config_b05b, config_b06a, config_b06b, config_b06c, config_b07, config_b08, config_b09, config_b10, config_g01b, config_g02b, config_b13, config_bg03, config_bp03, config_bp01, config_bp02,config_bio_m8_temperature_trial];
+export const explainers: ExplainerConfig[] = [config_m6c01, config_m6c02, config_m6c03, config_m6c04, config_m6c05, config_m6c06, config_m6b01, config_m6b02, config_m6b03, config_m6b04, config_m6b05, config_m6g01b, config_b11, config_b12,mouldConfig, config_c01, config_c02, config_c03, config_c04a, config_c04b, config_c05, config_c06, config_c06a, config_c06b, config_c07, config_c08, config_c09, config_p01, config_p02, config_c10, config_p03, config_c11, config_c13, config_c14, config_c15, config_g01, config_g03a, config_g03b, config_g03c, config_g03d, config_b01, config_b02a, config_b02b, config_b02c, config_b03a, config_b03a2, config_b03b, config_b04, config_b05a, config_b05b, config_b06a, config_b06b, config_b06c, config_b07, config_b08, config_b09, config_b10, config_g01b, config_g02b, config_b13, config_bg03, config_bp03, config_bp01, config_bp02,config_bio_m8_temperature_trial];
