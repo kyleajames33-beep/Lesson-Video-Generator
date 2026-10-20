@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C10-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c10/lesson.json",
+  "lessonSha256": "bba3fb8863e556a543f936cb0c38e4f34e360ab732efbf3d9d23cebcb7214a2d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c10/lesson.production-brief.json",
+    "sha256": "5490a69ffbdd5aa794c5d4a0bc48ae7ab03da4f70594ad84067c72bc0b66afdf"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two acids, two pH readings. An unknown acid, H X, at zero point zero five zero zero moles per litre, reads two point seven eight. Ethanoic acid at zero point five zero zero moles per litre reads two point five two, so it's more acidic. Does that make ethanoic acid the stronger acid? Not necessarily. Its solution is ten times more concentrated. To compare strength fairly, you need a number that doesn't depend on concentration.",
+      "hash": "619e960a9aff",
+      "textSha256": "619e960a9affb295cd19aa009a712224d541696582bb2f585c32b3142b4b4215",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/hook.619e960a9aff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/hook.619e960a9aff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/hook.619e960a9aff.generation.json",
+      "plannedRequestSha256": "2db549ab39c77f24686720de8a5afbbdd173204300594d51ea3e2f1b5575d885"
+    },
+    {
+      "id": "ka-is-the-number",
+      "parentSceneId": "ka-is-the-number",
+      "text": "You've met that number in Module 5: K a, the equilibrium constant for the acid ionising, hydronium times the anion, over the whole acid. K a doesn't change with concentration, and the bigger it is, the further the acid ionises at the same concentration. For ethanoic acid, K a is one point eight times ten to the minus five. But we don't know K a for H X. We can find it from the pH, by running the ICE table backwards.",
+      "hash": "7822d7580d4a",
+      "textSha256": "7822d7580d4ab0a3718666d6faadf442b57ab57e447cab60c32e2b8739fe7663",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/ka-is-the-number.7822d7580d4a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/ka-is-the-number.7822d7580d4a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/ka-is-the-number.7822d7580d4a.generation.json",
+      "plannedRequestSha256": "9d278419193621f45357d02359ea18033bb2028b6137725d1b32b56a32c6d76d"
+    },
+    {
+      "id": "we-hydronium",
+      "parentSceneId": "we-hydronium",
+      "text": "Here's the task: find K a for H X. First, the hydronium. pH is the negative log of hydronium, so hydronium is ten to the minus two point seven eight: one point six six times ten to the minus three moles per litre. Keep those digits for now. That's only about three percent of the concentration, so H X really is weak. A strong acid would give hydronium equal to its concentration.",
+      "hash": "bb547c4f5a7e",
+      "textSha256": "bb547c4f5a7ee73c9f1bfde2c149c6a4ac8fcbcbd30f24a16576207bbcd10106",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/we-hydronium.bb547c4f5a7e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/we-hydronium.bb547c4f5a7e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/we-hydronium.bb547c4f5a7e.generation.json",
+      "plannedRequestSha256": "4b7ed13d85470a594a1741bbc6f7e0682129d878d5e199a3db660894a8d3f744"
+    },
+    {
+      "id": "we-ice-backwards",
+      "parentSceneId": "we-ice-backwards",
+      "text": "Now the table, but this time we know the bottom row first. Each H X that ionises makes one hydronium and one X minus, so X minus is also one point six six times ten to the minus three. The acid left is zero point zero five zero zero minus that, zero point zero four eight three. So K a is one point six six times ten to the minus three, squared, over zero point zero four eight three: five point seven times ten to the minus five. That's two significant figures, because the pH had two decimal places. We measured the hydronium, so nothing is approximated here.",
+      "hash": "1830aae67d9c",
+      "textSha256": "1830aae67d9ca2bd76d3e86f1d102ae50a477f85551d5845b66fac7e3b220cef",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/we-ice-backwards.1830aae67d9c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/we-ice-backwards.1830aae67d9c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/we-ice-backwards.1830aae67d9c.generation.json",
+      "plannedRequestSha256": "e5878a04058ad03fcef93eab80d5fe66e3b8ecc0bcf281f29cbd08156241e8f3"
+    },
+    {
+      "id": "hook-answer",
+      "parentSceneId": "hook-answer",
+      "text": "So H X has a K a about three times bigger than ethanoic acid's. H X is the stronger acid, even though its pH is higher. Its solution is just more dilute. pH describes one solution. K a describes the acid itself.",
+      "hash": "988f51781bed",
+      "textSha256": "988f51781bed749fb50d36d502c3730496069a589f358b8e3761560103d38bc0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/hook-answer.988f51781bed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/hook-answer.988f51781bed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/hook-answer.988f51781bed.generation.json",
+      "plannedRequestSha256": "390078ab6d0d4f148cabab4e77c5c82ac965dce69a96d580ac52718ec42f880a"
+    },
+    {
+      "id": "pka",
+      "parentSceneId": "pka",
+      "text": "K a values are awkward, full of negative powers of ten. So, just as pH tidies up hydronium, chemists use p K a, the negative log of K a. For H X, p K a is four point two four, and for ethanoic acid, four point seven four. Decimal places follow the same rule as pH: two significant figures in K a, so two decimal places in p K a.",
+      "hash": "906f4074d70d",
+      "textSha256": "906f4074d70d4c5e480e4e0b6fc17adc118219944229a890f4ef2949798f2515",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/pka.906f4074d70d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/pka.906f4074d70d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/pka.906f4074d70d.generation.json",
+      "plannedRequestSha256": "d5485faaa722a9a97a0f8ef74a4b658e8874e5549235b1aefeede5a102c17a22"
+    },
+    {
+      "id": "reading-pka",
+      "parentSceneId": "reading-pka",
+      "text": "The minus sign flips the direction. A bigger K a gives a smaller p K a, so the stronger acid has the lower p K a. And each step of one in p K a is a factor of ten in K a. H X and ethanoic acid are half a unit apart, and ten to the power of a half is about three, not five. To go back, K a is ten to the minus p K a.",
+      "hash": "1f13a416da5b",
+      "textSha256": "1f13a416da5b152afbb7cc6a1f1be43cdd1c6ae1508159fecac029dad1814051",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/reading-pka.1f13a416da5b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/reading-pka.1f13a416da5b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/reading-pka.1f13a416da5b.generation.json",
+      "plannedRequestSha256": "ec36df3200951bf126e1dd75643b5019a88ee52b8f7ba2b2924c7c7c9d1efb18"
+    },
+    {
+      "id": "strong-weak",
+      "parentSceneId": "strong-weak",
+      "text": "This is how K a separates strong acids from weak ones. A weak acid has molecules and ions in equilibrium, so its K a can be measured, and it's much less than one, which gives a positive p K a. As you saw in Module 5, a strong acid ionises completely, so there are essentially no molecules left to measure. Its K a is too large to measure in water, so tables simply list it as strong. So if the measured hydronium equals the concentration, the acid is strong. If it's well below, the acid is weak, and you can calculate its K a.",
+      "hash": "6acb77b0b7b1",
+      "textSha256": "6acb77b0b7b1ff054eb32fa6dd4b68866000307e8e5817e3f6f5322a907b03ab",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/strong-weak.6acb77b0b7b1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/strong-weak.6acb77b0b7b1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/strong-weak.6acb77b0b7b1.generation.json",
+      "plannedRequestSha256": "9cc58389de5e5fbffc76fc4aff6fda993ca3db2d30ed480781bc8fdc70b39ce4"
+    },
+    {
+      "id": "ka-kb-kw",
+      "parentSceneId": "ka-kb-kw",
+      "text": "K a also tells you about the conjugate base. Ethanoate, the ion left behind, can take a proton back from water, and that reaction has its own K b. Now multiply K a by K b. The ethanoic acid and the ethanoate cancel, leaving hydronium times hydroxide, which is K w, one times ten to the minus fourteen at twenty five degrees. So K b for ethanoate is K w over K a: five point six times ten to the minus ten.",
+      "hash": "d7e0de0af79f",
+      "textSha256": "d7e0de0af79f94197048da8aebcfe46ae2a352ac53b8180c83cf8aa87c8e0f99",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/ka-kb-kw.d7e0de0af79f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/ka-kb-kw.d7e0de0af79f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/ka-kb-kw.d7e0de0af79f.generation.json",
+      "plannedRequestSha256": "0e2832bbbe0b06aa788eecf3e032e9042dda82c2d141e72836990d710a1097e2"
+    },
+    {
+      "id": "conjugate-ranking",
+      "parentSceneId": "conjugate-ranking",
+      "text": "Because K a times K b is fixed, a stronger acid has a weaker conjugate base. X minus has a K b of about one point eight times ten to the minus ten, smaller than ethanoate's, because H X is the stronger acid. This only works for a conjugate pair. Multiplying ethanoic acid's K a by ammonia's K b doesn't give K w.",
+      "hash": "635a82ab9599",
+      "textSha256": "635a82ab959993b18c1c90a317b3f437333191daa9d232bce7db9086c15d86a8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/conjugate-ranking.635a82ab9599.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/conjugate-ranking.635a82ab9599.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/conjugate-ranking.635a82ab9599.generation.json",
+      "plannedRequestSha256": "7642d52b2582de70784175db358d02a1d05c9d3595fb7fe2eb335c360d34f9bd"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. p K a is like golf: the lowest score wins. Lower p K a, bigger K a, stronger acid. And for a conjugate pair, K a times K b equals K w, so the stronger the acid, the weaker its conjugate base.",
+      "hash": "794dc4d6ce65",
+      "textSha256": "794dc4d6ce65103a388f570dc68d53dafafe6d0518572c3d083f4c11e31d2739",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/memory-aid.794dc4d6ce65.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/memory-aid.794dc4d6ce65.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/memory-aid.794dc4d6ce65.generation.json",
+      "plannedRequestSha256": "59cfa0197f9163ed976fbc665e29335b9536a5937f5066d7b634c8b02fb137d1"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Lactic acid is the weak acid that forms when milk turns sour. A zero point two zero zero moles per litre solution of lactic acid has a pH of two point two eight at twenty five degrees. Calculate the K a and the p K a of lactic acid. Pause here to answer.",
+      "hash": "0ba40b2fd69b",
+      "textSha256": "0ba40b2fd69b78ecd829c8e3dcbc1ec973dc33a7395134f1857e055febe8efa9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/attempt-1.0ba40b2fd69b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/attempt-1.0ba40b2fd69b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/attempt-1.0ba40b2fd69b.generation.json",
+      "plannedRequestSha256": "84946df0ab506e2403607c27e53abc202f5246a7d2bf1d07c418e5838817fe71"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Hydronium is ten to the minus two point two eight, five point two five times ten to the minus three. The acid left is about zero point one nine five. K a is the hydronium squared over that: one point four times ten to the minus four, and the p K a is three point eight five. Stopping at the hydronium and calling it K a is the slip: K a isn't the hydronium.",
+      "hash": "8377c90cfae8",
+      "textSha256": "8377c90cfae89fe3bc9f5455a855470d75bbf98531e2e631373929eb70545749",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/feedback-1.8377c90cfae8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/feedback-1.8377c90cfae8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/feedback-1.8377c90cfae8.generation.json",
+      "plannedRequestSha256": "33d1f7912e9c2c0bc4be392b5cc3689d2de5c5a261e6ab72932b2512e3517104"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. The p K a values of three acids at twenty five degrees are: hydrofluoric acid, three point one seven; methanoic acid, three point seven four; and hydrocyanic acid, nine point two one. List the acids in order of decreasing strength. Then identify the strongest of their conjugate bases, and calculate its K b. Pause here to answer.",
+      "hash": "5a40d5898687",
+      "textSha256": "5a40d5898687873f37a646eec66899dd7c4b7c8038070ebd7c2e58f34b6927e0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/attempt-2.5a40d5898687.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/attempt-2.5a40d5898687.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/attempt-2.5a40d5898687.generation.json",
+      "plannedRequestSha256": "b8e95e42f6032a5fdc28d9ea90b469df00e8d2667b876d20f54d986041a59b58"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Lowest p K a wins: hydrofluoric acid, then methanoic acid, then hydrocyanic acid. The weakest acid has the strongest conjugate base, so that's cyanide. Hydrocyanic acid's K a is ten to the minus nine point two one, six point two times ten to the minus ten, so K b is K w over that, one point six times ten to the minus five. Putting nine point two one first gets golf backwards.",
+      "hash": "35678f764864",
+      "textSha256": "35678f764864da35b7827227729986068dc011fe39f0c82cca35c885cd0c20dd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/feedback-2.35678f764864.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/feedback-2.35678f764864.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/feedback-2.35678f764864.generation.json",
+      "plannedRequestSha256": "2ba927d5fd3d7491bd4d064304a183dad5194d752b523c42fddb7692ac846b61"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So to compare acid strength, compare K a or p K a, never pH alone unless the concentrations match. Get K a from a pH by running the ICE table backwards, convert with p K a equals negative log K a, and remember that lower p K a means stronger. For a conjugate pair, K b is K w over K a. Next: practice choosing the right method for weak acid questions.",
+      "hash": "7d22706c32e5",
+      "textSha256": "7d22706c32e5392fe18e11bc42c64f4db59a931d57e8611a870113a873f0b3d6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/decision-rule.7d22706c32e5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/decision-rule.7d22706c32e5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/decision-rule.7d22706c32e5.generation.json",
+      "plannedRequestSha256": "dd8a1fb56378c314d8273e79f3a5f632cfc958f5db0ab790c977260b4a54bf26"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C10-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

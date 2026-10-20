@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C09-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c09/lesson.json",
+  "lessonSha256": "8a69075d62d1e14c57ead1e8a1cefde602c38a408b2ffd2c5595b4f755e961f1",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c09/lesson.production-brief.json",
+    "sha256": "2223a3022106e1c469722aa59a1db074abfc7cac7713b21903ebff6201ab426e"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's a prediction to make. Mix one mole per litre hydrochloric acid with the same amount of sodium hydroxide, and you get about minus fifty seven kilojoules per mole of water. Now swap in ethanoic acid, a weak acid. Most people predict much less heat. The measured value is about minus fifty six, almost the same. And hydrofluoric acid, also weak, gives about minus sixty eight: more heat, not less. So what really decides the heat?",
+      "hash": "dfaec86d3221",
+      "textSha256": "dfaec86d32214d9af8953d5b66e4498ce08a2e3bbcce47bb0e6a433e2deab4ae",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/hook.dfaec86d3221.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/hook.dfaec86d3221.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/hook.dfaec86d3221.generation.json",
+      "plannedRequestSha256": "1c36a9eca262db5cd871040d7ea35f8485d4bb66af0aa92fbfa24920418734ca"
+    },
+    {
+      "id": "same-different",
+      "parentSceneId": "same-different",
+      "text": "Start with what you know. In the neutralisation heat video, a strong acid and a strong base gave about minus fifty seven, because the only change is a hydrogen ion joining a hydroxide ion to make water. A weak acid is different before you even mix: most of its molecules are still whole, holding on to their protons. So the hydrogen ions the reaction needs aren't free yet.",
+      "hash": "2dce269b6f34",
+      "textSha256": "2dce269b6f34d0f480b81493cf444ca03ab277fb8cdd5f9f41f423616e295764",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/same-different.2dce269b6f34.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/same-different.2dce269b6f34.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/same-different.2dce269b6f34.generation.json",
+      "plannedRequestSha256": "5f14de785f151c003cbc88906ded307181cf2b86c521838f8afe04503b1d53a9"
+    },
+    {
+      "id": "reacts-completely",
+      "parentSceneId": "reacts-completely",
+      "text": "So what happens when hydroxide arrives? It grabs the few hydronium ions that are there. That disturbs the acid's equilibrium, so, just as Le Chatelier's principle predicts, more molecules ionise to replace them. Hydroxide grabs those too, and this keeps going until every molecule has reacted. So most of the ionising happens during the reaction, not before you mix. A weak acid doesn't react incompletely. It just has one extra step.",
+      "hash": "e75852153aaa",
+      "textSha256": "e75852153aaa4109307092e7b9211f340d32dcdae2367833f7e12ca0b0149c19",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/reacts-completely.e75852153aaa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/reacts-completely.e75852153aaa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/reacts-completely.e75852153aaa.generation.json",
+      "plannedRequestSha256": "7794256336407c37cef921e3c8df78b1977543fa71f3b68bd2f96940fcb477a3"
+    },
+    {
+      "id": "two-steps",
+      "parentSceneId": "two-steps",
+      "text": "We can count the energy in two steps, using Hess's law from Year 11: the total doesn't depend on the route. Step one, the weak acid ionises. Step two, the hydrogen ion and hydroxide ion make water, about minus fifty seven, the same as for a strong acid. The measured enthalpy is the sum: minus fifty seven, plus the ionisation step. So the whole difference comes from step one, and to find it, take the measured value, take away minus fifty seven.",
+      "hash": "acc78155d3d8",
+      "textSha256": "acc78155d3d8ed2d4735f6923448b92672564063441d4b9e01506b10d8e57b7c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/two-steps.acc78155d3d8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/two-steps.acc78155d3d8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/two-steps.acc78155d3d8.generation.json",
+      "plannedRequestSha256": "0665631036a9c24b2c272e9571187837e0d7db2849f6dc8ab4aed5316b038de8"
+    },
+    {
+      "id": "ionising-either-way",
+      "parentSceneId": "ionising-either-way",
+      "text": "And step one isn't always uphill. Pulling a proton off a molecule takes energy in, because a bond breaks. But the new ions are then surrounded by water molecules, and that releases energy, just like hydration when a salt dissolves in Module 5. The ionisation enthalpy is the balance of the two, so it can be positive, close to zero, or negative, depending on the acid.",
+      "hash": "6c90ea29bbe4",
+      "textSha256": "6c90ea29bbe4ae84d8b2f0e3352c4d670df8544496bcc158e96a089174287e6e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/ionising-either-way.6c90ea29bbe4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/ionising-either-way.6c90ea29bbe4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/ionising-either-way.6c90ea29bbe4.generation.json",
+      "plannedRequestSha256": "59dd5cef0a966aebf54408c72501fab964be08168901ca8c94ebaec28cc03461"
+    },
+    {
+      "id": "ethanoic-zero",
+      "parentSceneId": "ethanoic-zero",
+      "text": "For ethanoic acid, the two nearly cancel: the energy to pull the proton off is almost exactly repaid when water surrounds the new ions. Its ionisation step is close to zero, about plus one, so the total is about minus fifty six. That's barely different from a strong acid, and a foam cup experiment can hardly tell them apart.",
+      "hash": "f02aa0d3f95c",
+      "textSha256": "f02aa0d3f95c11b70f890b84e4ee838ba10c2d4558b480ba1de4638d0d563287",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/ethanoic-zero.f02aa0d3f95c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/ethanoic-zero.f02aa0d3f95c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/ethanoic-zero.f02aa0d3f95c.generation.json",
+      "plannedRequestSha256": "bd31139db2d3a18fba11b9406763ee81fdc8f530426945c80b5c54e01bf65c89"
+    },
+    {
+      "id": "hf-more-heat",
+      "parentSceneId": "hf-more-heat",
+      "text": "Hydrofluoric acid is the surprise. The fluoride ion is very small, so water molecules crowd in tightly around it and release a lot of energy, more than it takes to break the hydrogen fluoride bond. So its ionisation step releases about eleven kilojoules per mole, and the total is about minus sixty eight. It's still a weak acid. How far an acid ionises depends on more than the heat.",
+      "hash": "32b9cf19f7f3",
+      "textSha256": "32b9cf19f7f3bc057083938e69d5b8802a0972b85550183e8a06c42d545e1847",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/hf-more-heat.32b9cf19f7f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/hf-more-heat.32b9cf19f7f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/hf-more-heat.32b9cf19f7f3.generation.json",
+      "plannedRequestSha256": "dfd79634d792b297fb1e7a8c7947301dd068df8ba3ec60b0888886537acdb143"
+    },
+    {
+      "id": "weak-base-less",
+      "parentSceneId": "weak-base-less",
+      "text": "Weak bases follow the same rule. Hydrochloric acid with ammonia gives about minus fifty two kilojoules per mole of ammonia. Here we count the extra step as ammonia taking a proton from water to make hydroxide, and that step takes energy in, about five kilojoules per mole. So minus fifty seven plus five gives minus fifty two: less heat this time.",
+      "hash": "cf53d20364b0",
+      "textSha256": "cf53d20364b09c31c0caff0a69c941c21dfe651041e3ff41fa0b19eb0287d914",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/weak-base-less.cf53d20364b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/weak-base-less.cf53d20364b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/weak-base-less.cf53d20364b0.generation.json",
+      "plannedRequestSha256": "81d31f90caa4e4c5b95c77600ecd1d77d3e57b11b7ad9b6b16d2730b28a643c1"
+    },
+    {
+      "id": "heat-not-strength",
+      "parentSceneId": "heat-not-strength",
+      "text": "So the heat doesn't tell you how strong a weak acid is. Methanoic acid is ten times stronger than ethanoic acid, yet both give about minus fifty six. And hydrofluoric acid releases the most heat, but it's still weak. So a value close to minus fifty seven doesn't prove an acid is strong: ethanoic acid would fool you. To compare strength, use pH at the same concentration, or K a. The heat tells you about the ionising step, not how far the acid ionises.",
+      "hash": "444263d83efc",
+      "textSha256": "444263d83efc718026769b04076eb299160cea51675343fae41be4f9dd101c05",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/heat-not-strength.444263d83efc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/heat-not-strength.444263d83efc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/heat-not-strength.444263d83efc.generation.json",
+      "plannedRequestSha256": "5a1abc268d5251ff39233525af94ebbf85ee139e53df82bf321e4c4e92307f85"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. Same last step, different first step. Every neutralisation can be counted as ending with hydrogen ion plus hydroxide ion making water, about minus fifty seven. A weak acid or base adds a first step, and its sign decides whether you get less heat, about the same, or more.",
+      "hash": "a95eedc394fb",
+      "textSha256": "a95eedc394fb57d132e9936b7451002f4dd17ab4a7f58d6fcd0c8ed1dfcc6a23",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/memory-aid.a95eedc394fb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/memory-aid.a95eedc394fb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/memory-aid.a95eedc394fb.generation.json",
+      "plannedRequestSha256": "2f173e1320ee8541ca4730e265507a05fce7ba4976956f98fa19996a7565852e"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Ethanoic acid is neutralised by sodium hydroxide in a polystyrene cup, and the temperature rises by six point seven degrees. Hydrochloric acid gives minus fifty seven under the same conditions. Using the amounts and assumptions on screen, calculate the enthalpy of neutralisation of ethanoic acid, then the enthalpy of its ionisation step, and comment on its size. Pause here to answer.",
+      "hash": "463b684edd86",
+      "textSha256": "463b684edd86045b50416d0e6c3846b8393fc4891c3d9fb3c16c2eef94060294",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/attempt-1.463b684edd86.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/attempt-1.463b684edd86.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/attempt-1.463b684edd86.generation.json",
+      "plannedRequestSha256": "98482341361bd39e01c0d416a81db8da646d130a5c270684c8680275670b96d3"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The mass is one hundred grams, so q is about two thousand eight hundred joules. Divide by zero point zero five zero zero moles of water: delta H is minus fifty six kilojoules per mole. The ionisation step is measured minus the water step: minus fifty six take away minus fifty seven, about plus one. That's close to zero, within foam cup error. Subtracting the other way gets the sign backwards.",
+      "hash": "cafee1b0efb0",
+      "textSha256": "cafee1b0efb0a3399f42f5fc868c009091086fea320f468385822938099abc67",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/feedback-1.cafee1b0efb0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/feedback-1.cafee1b0efb0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/feedback-1.cafee1b0efb0.generation.json",
+      "plannedRequestSha256": "7aac475baa643ccad81f88559982ae2c6d696a8af9404add895782d89d0f8c7c"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Hydrogen cyanide is a weak acid, and its ionisation absorbs about forty five kilojoules per mole. Using minus fifty seven kilojoules per mole for a hydrogen ion and a hydroxide ion forming water, predict the enthalpy of neutralisation of hydrogen cyanide by sodium hydroxide, and explain why it differs from hydrochloric acid's. Pause here to answer.",
+      "hash": "877d1b22e001",
+      "textSha256": "877d1b22e001432264153d294791c5aa83471465dec42b152503ab0101fc5bf2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/attempt-2.877d1b22e001.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/attempt-2.877d1b22e001.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/attempt-2.877d1b22e001.generation.json",
+      "plannedRequestSha256": "0e363091be984c9ef36a2eaad3d9a7b26153b925968b2f49c39299ebe4b9b57f"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Add the two steps: minus fifty seven plus forty five is about minus twelve kilojoules per mole. That's much less heat, because most of the energy released by forming water is used up by the ionisation step of hydrogen cyanide, and hydrochloric acid has no such step. Writing minus fifty seven minus forty five counts the absorbed energy as released.",
+      "hash": "c2a4a7f6964b",
+      "textSha256": "c2a4a7f6964ba9a0a342852f46d9bd79ac43dfbff87562158fb63a12af1469a1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/feedback-2.c2a4a7f6964b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/feedback-2.c2a4a7f6964b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/feedback-2.c2a4a7f6964b.generation.json",
+      "plannedRequestSha256": "4853843cf56c2d0e05dda84e2f0f9be2383b60d73a381e22cfa175c9cfa7f0e8"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any weak acid or base neutralisation, start from minus fifty seven for making water, add the ionising step with its sign, whether it's a weak acid giving up protons or a weak base making hydroxide, and remember that the reaction still goes to completion. Don't use the heat to rank strength. Next: what K a and p K a say about acid strength.",
+      "hash": "6fa5cf3527dc",
+      "textSha256": "6fa5cf3527dceb8f499e9d392aa14551a77b78ac069eb3224aa90ca22fcab917",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/decision-rule.6fa5cf3527dc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/decision-rule.6fa5cf3527dc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/decision-rule.6fa5cf3527dc.generation.json",
+      "plannedRequestSha256": "37632ad7452fe26cdf48dce0a6e3b20d54a2e0a9fdb896a040d7a947f015e01a"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C09-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
