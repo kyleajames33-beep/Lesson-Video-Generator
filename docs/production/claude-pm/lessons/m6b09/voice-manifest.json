@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B09-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b09/lesson.json",
+  "lessonSha256": "2c0f531d4086ead70c76efa17ef70b3f39f023acdc4e51735e127b74a5064c55",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b09/lesson.production-brief.json",
+    "sha256": "2db8cd517c5d65a421ecae7fece069fab6930d90efaa5862daf36dd0a6ec57ab"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A loaf of bread, a merino's fine wool, and a vial of human insulin. All three come from biotechnology. But only one of them needed anyone to change an organism's DNA in a lab, and people were baking with yeast thousands of years before anyone knew DNA existed. So what counts as biotechnology, and what does each kind actually change?",
+      "hash": "f9dc981e384f",
+      "textSha256": "f9dc981e384fe5daf54b9ab539f0fc16d69910707f68bf72373aff63594e1e2f",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/hook.f9dc981e384f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/hook.f9dc981e384f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/hook.f9dc981e384f.generation.json",
+      "plannedRequestSha256": "5eaa66073bac95447c8335cbc6544b83cba608d854ca11faecaf7230e1f19793"
+    },
+    {
+      "id": "yeast-process",
+      "parentSceneId": "yeast-process",
+      "text": "Start with the bread. Yeast is a single-celled fungus. Mixed into dough, its cells break down sugar for energy, releasing carbon dioxide, whose bubbles make the dough rise, and a little ethanol. People were baking and brewing this way for thousands of years, long before Louis Pasteur showed, in the eighteen-fifties and sixties, that living yeast does the work. Making bread doesn't change the yeast's DNA. We just use what its cells already do.",
+      "hash": "7ed1a813e79a",
+      "textSha256": "7ed1a813e79a50c4c0d19f411e4fc942a7497232dce7aebb7b6732aabe2b35b7",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/yeast-process.7ed1a813e79a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/yeast-process.7ed1a813e79a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/yeast-process.7ed1a813e79a.generation.json",
+      "plannedRequestSha256": "0e13a37b637cddad67982b85a90ed600ac1c9b6e2543a6865e910d05d774491f"
+    },
+    {
+      "id": "definition",
+      "parentSceneId": "definition",
+      "text": "That's the heart of it. Biotechnology is using living things, their cells or their processes, on purpose, to make a product or solve a problem. Bacteria turning milk into yoghurt count. So do microbes making enzymes for washing powders. Nothing in that definition says the DNA has to be changed, so a method can be thousands of years old and still be biotechnology.",
+      "hash": "7807a82be2d4",
+      "textSha256": "7807a82be2d4eb0e48745f8ed68ab3637fc10359ff3a6977c8f8ada59844a20d",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/definition.7807a82be2d4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/definition.7807a82be2d4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/definition.7807a82be2d4.generation.json",
+      "plannedRequestSha256": "bea5b84c91529cf366a73cca606a124043394954cf05172000c178268f0ba2d9"
+    },
+    {
+      "id": "selective-breeding",
+      "parentSceneId": "selective-breeding",
+      "text": "Now the wool. For generations, breeders kept the sheep with the finest wool and bred them together. That's selective breeding. No one touched a sheep's DNA. Each lamb still got a normal mix of its parents' alleles. But by choosing the parents, breeders changed which alleles were passed on, so alleles for finer wool became more common in the flock. It's slow, and it's limited to variation that already exists in the flock.",
+      "hash": "d51b83b832bd",
+      "textSha256": "d51b83b832bdd6fc5647c004b061bae9f8ac28d3f37f8054cecc5f14f7c086aa",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/selective-breeding.d51b83b832bd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/selective-breeding.d51b83b832bd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/selective-breeding.d51b83b832bd.generation.json",
+      "plannedRequestSha256": "bc37db976ba54d17f8e86fbadd19a76e629705e5c6c1644a255056c9f7462878"
+    },
+    {
+      "id": "insulin",
+      "parentSceneId": "insulin",
+      "text": "Then the insulin. People with type one diabetes need insulin every day. From the nineteen-twenties, it was extracted from the pancreases of pigs and cattle. Then, in the early nineteen-eighties, human insulin made by bacteria went on sale. Scientists had put DNA coding for human insulin into the bacteria, which read it like any of their own genes, and made human insulin. Here the organism's DNA really was changed. Joining DNA from different sources like this is called recombinant DNA.",
+      "hash": "fc03f0fbc59f",
+      "textSha256": "fc03f0fbc59f89e9107266ea0385e976b21d044d3da0cf2a08d6613a8bd36f71",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/insulin.fc03f0fbc59f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/insulin.fc03f0fbc59f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/insulin.fc03f0fbc59f.generation.json",
+      "plannedRequestSha256": "756bf5e2d4e53883eb6ebcbe4cfd4f55868f57c2b545ab54d682483c28d62b8d"
+    },
+    {
+      "id": "what-changes",
+      "parentSceneId": "what-changes",
+      "text": "So the useful question isn't whether a technique is old or new. It's what exactly is being changed. Some technologies just use an organism's process, like fermentation. Some choose which parents reproduce: selective breeding, and today, artificial insemination of livestock and artificial pollination of crops. Some copy existing DNA, growing identical plants from tissue samples, or making many copies of one gene. And some insert or edit DNA, like the insulin bacteria, and cotton carrying a gene from a soil bacterium.",
+      "hash": "8e8b2c11dfd5",
+      "textSha256": "8e8b2c11dfd50af16736598adfc03cb053d46e2c6fe647676be0a254b1d9f71f",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/what-changes.8e8b2c11dfd5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/what-changes.8e8b2c11dfd5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/what-changes.8e8b2c11dfd5.generation.json",
+      "plannedRequestSha256": "af8f6173d89e783fd8863e3f7999db739611e3725815634111c8200980ac0d8c"
+    },
+    {
+      "id": "advantages",
+      "parentSceneId": "advantages",
+      "text": "Each kind has its own advantage. Choosing parents works for traits controlled by many genes, like wool quality, because breeders judge the whole animal and don't need to know which genes are involved. But it uses only alleles the species already has, and it takes generations. Copying keeps a valuable combination of alleles together, with no reshuffling by meiosis. And inserting DNA can add a trait the species never had, in a single generation, like cotton plants that make their own protein against caterpillars, from a gene taken from a soil bacterium.",
+      "hash": "860aeaf24796",
+      "textSha256": "860aeaf24796df19ca57d2c5621c418bceb3eefc93c97fdd9339911dfb49b5ad",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/advantages.860aeaf24796.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/advantages.860aeaf24796.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/advantages.860aeaf24796.generation.json",
+      "plannedRequestSha256": "83968f0f0b4575b65ec22b23a0aecb8f3a5b3fe9e71060720a3c879cc1c2e15d"
+    },
+    {
+      "id": "timeline",
+      "parentSceneId": "timeline",
+      "text": "Put it on a timeline. The old methods didn't disappear when the new ones arrived. Yeast still raises bread, and breeders still select, now helped by DNA tests that show which animals carry useful alleles. Sometimes one product spans the whole history. Cheesemakers traditionally used rennet, an enzyme taken from calves' stomachs. Today, much cheese is made with the same enzyme, chymosin, produced by microbes carrying the gene for it. Biotechnology works across agriculture, medicine and industry. And the newest tools, like gene editing, aim to change one chosen stretch of DNA, which is where future uses are heading.",
+      "hash": "be827a4d88f3",
+      "textSha256": "be827a4d88f3c6df4ac066aac23ba1c1c6e645ce1df7807b6c0a583ee694559f",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/timeline.be827a4d88f3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/timeline.be827a4d88f3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/timeline.be827a4d88f3.generation.json",
+      "plannedRequestSha256": "1ddc2a088ca2a28b1f48491e1af80c8aedd3aef2bdd47f59776a1f078e636c73"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to hold on to. Biotechnology is older than GMOs: bread, cheese and selective breeding all count. And reproductive technologies choose the parents; they don't change genes. They change which alleles get passed on, but they make no new ones. So judge a technology by what it changes, not by how modern it looks.",
+      "hash": "cfaed180d041",
+      "textSha256": "cfaed180d0411a554431e363410ac927c64289b85dfd057efc356c62c795cd5e",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/memory.cfaed180d041.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/memory.cfaed180d041.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/memory.cfaed180d041.generation.json",
+      "plannedRequestSha256": "9908702496f6a23977df993c9d87366c6d4442c93ae9933f0525e2b6222edaf7"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. For each example, identify what is being changed: an organism's process being used, the choice of parents, a copy of existing DNA, or the DNA itself. Bacteria turning milk into yoghurt. Semen from one prize bull used to inseminate hundreds of cows. Banana plants grown from suckers cut from one parent plant. And cotton carrying a gene from a soil bacterium. Then state which of these change an organism's DNA sequence. Pause here to answer.",
+      "hash": "c35d208a53d5",
+      "textSha256": "c35d208a53d5981ce1646e9fd034e2a4780e5ba484c464698c01691c481e0725",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/attempt.c35d208a53d5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/attempt.c35d208a53d5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/attempt.c35d208a53d5.generation.json",
+      "plannedRequestSha256": "47243b517ab7d7d0d40c3b42974ea190574cff6ed88cac293a6cad5747ec3f41"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Yoghurt uses the bacteria's process. Insemination chooses the parents: each calf still gets a normal mix of alleles. Banana suckers are copies of the parent. Only the cotton has had its DNA changed, by an inserted gene. Saying artificial insemination changes the calves' DNA is the classic mistake.",
+      "hash": "f49d4ff3bcbb",
+      "textSha256": "f49d4ff3bcbba72f5f2c56d43751dddf3f9690cb5cfc82056502b4b7365861e5",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/feedback-one.f49d4ff3bcbb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/feedback-one.f49d4ff3bcbb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/feedback-one.f49d4ff3bcbb.generation.json",
+      "plannedRequestSha256": "13537ef44cbe91755f050c1259fa34b2dbe97bce9b0bcf0a6e9da6b84f0cf37e"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Plant breeders want cotton plants that resist caterpillar pests. Compare selective breeding and recombinant DNA technology as ways to produce them. Pause here to answer.",
+      "hash": "8b24aff3227a",
+      "textSha256": "8b24aff3227a8705567f27edcce067722299c1ab8bdc1ce1764e37db30393d1c",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/attempt-two.8b24aff3227a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/attempt-two.8b24aff3227a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/attempt-two.8b24aff3227a.generation.json",
+      "plannedRequestSha256": "b531130ce1676e2821a7f5bf7528b2c7dd79d4d3d7b98a25cfb7b950b6a94f5e"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Both use biology to get a trait that's inherited. Selective breeding chooses parents, so it can only combine resistance alleles cotton already has, and it takes many generations. Recombinant DNA inserts a gene, even from another species, so a new trait can appear in one generation. Saying selective breeding isn't biotechnology is the classic mistake.",
+      "hash": "9bc64c488488",
+      "textSha256": "9bc64c4884882b35c1ecb89f983c73be825532c065b2902a43d08c378ae9b329",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/feedback-two.9bc64c488488.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/feedback-two.9bc64c488488.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/feedback-two.9bc64c488488.generation.json",
+      "plannedRequestSha256": "3222752e2042e39a14200b6c7642c394230d55504cad3debde66d49dbb6e6e16"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question names a biotechnology, ask what it changes. Is an organism's process being used? Are the parents being chosen? Is existing DNA being copied? Or is the DNA itself being changed? Then give its use and its advantage. What a technology changes also decides what it can do to a population, which matters when we judge it. Next, how plant and animal biotechnology should be judged.",
+      "hash": "25c60d258698",
+      "textSha256": "25c60d2586986edb98c4ec85c46e284bdfb72170e88565b48542f19a56d2a32e",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/decision-rule.25c60d258698.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/decision-rule.25c60d258698.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/decision-rule.25c60d258698.generation.json",
+      "plannedRequestSha256": "141d469f2e817af321ede84431fb9f9b715c83ad8503cbb03cbd08b378ac6e1b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B09-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

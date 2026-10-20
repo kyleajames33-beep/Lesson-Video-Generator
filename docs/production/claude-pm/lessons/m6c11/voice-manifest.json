@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C11-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c11/lesson.json",
+  "lessonSha256": "98b086974441dae413992b5f5515a7d299f500208da4d52f133459f73131348e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c11/lesson.production-brief.json",
+    "sha256": "8c505cc7d6dfe7d9f25fce968f894510361d0d72d87353f26b89068435f71bf0"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two beakers, a hundred millilitres each. One is pure water, at pH seven. The other is a mix of ethanoic acid and sodium ethanoate, at pH four point seven four. Add one millilitre of one mole per litre hydrochloric acid to each. The water drops to pH two point zero zero, five whole units. The mixture drops to four point six six, less than a tenth of a unit. So what's in that second beaker that soaks up the acid, and can it ever run out?",
+      "hash": "78e76e272516",
+      "textSha256": "78e76e27251616fd20fea5a7c0ad88cf02d583f9ab46c439d154490f1ac7d557",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/hook.78e76e272516.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/hook.78e76e272516.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/hook.78e76e272516.generation.json",
+      "plannedRequestSha256": "28f931973624cd83858a7c404af27383a12e7e5501844d937abe4f9f83a0c10b"
+    },
+    {
+      "id": "what-it-holds",
+      "parentSceneId": "what-it-holds",
+      "text": "Ethanoic acid is weak, so most of it stays as whole molecules. The sodium ethanoate dissolves completely, adding lots of ethanoate ions, ethanoic acid's conjugate base. So the beaker holds a big supply of both partners at once. A weak acid and its conjugate base, both in large amounts: that's a buffer, a solution that resists a change in pH when a little acid or base is added.",
+      "hash": "26f532f775f1",
+      "textSha256": "26f532f775f11482e922d21883028084737434b91cbdd6e7a66995a5159cee2d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/what-it-holds.26f532f775f1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/what-it-holds.26f532f775f1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/what-it-holds.26f532f775f1.generation.json",
+      "plannedRequestSha256": "f03d40aa677d32d511200914009cf20c45bb60e5c29c0e9bdb4733cee592b374"
+    },
+    {
+      "id": "acid-attack",
+      "parentSceneId": "acid-attack",
+      "text": "Now add the hydrochloric acid. It's strong, so it puts hydronium ions straight into the beaker. But here, each one meets an ethanoate ion, the conjugate base of a weak acid, so it pulls the proton back. Hydronium plus ethanoate gives ethanoic acid and water. Almost every added hydronium is used up, leaving a little more ethanoic acid and a little less ethanoate. In Module 5 terms, adding a product pushed the equilibrium back to the left.",
+      "hash": "f7d694f698d8",
+      "textSha256": "f7d694f698d84e89b91c07cfe1866831c366ffd2ef448fd23d50fe836c0543b3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/acid-attack.f7d694f698d8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/acid-attack.f7d694f698d8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/acid-attack.f7d694f698d8.generation.json",
+      "plannedRequestSha256": "97b4cfd9f10126a30b134d9ffe7e433a66c73ac8a38d643822e03565e07098d3"
+    },
+    {
+      "id": "base-attack",
+      "parentSceneId": "base-attack",
+      "text": "Add sodium hydroxide instead, and the other partner steps in. Each hydroxide ion takes a proton from an ethanoic acid molecule, making ethanoate and water. The same millilitre of sodium hydroxide takes water from seven to twelve, but the buffer only from four point seven four to four point eight three. So a buffer has a defender for each attack: the conjugate base takes on added acid, and the weak acid takes on added base.",
+      "hash": "746c2e3e734f",
+      "textSha256": "746c2e3e734f385429a53fbdeed3c8dd6a405a3e5fffbdf5fdc8f64758e36acb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/base-attack.746c2e3e734f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/base-attack.746c2e3e734f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/base-attack.746c2e3e734f.generation.json",
+      "plannedRequestSha256": "f1fc68e82b66c58baab5ff0bf6f58f9142d54d335e99fe1fed04eaa042db7ac8"
+    },
+    {
+      "id": "buffer-ph",
+      "parentSceneId": "buffer-ph",
+      "text": "So why does the pH move at all? Go back to K a for ethanoic acid. Rearrange it, and hydronium equals K a times acid over ethanoate. Very little of either partner reacts with water, so you can use the amounts you put in. They share one volume, which cancels, so moles work too. Here there's zero point zero one zero zero moles of each, so the ratio is one, and hydronium just equals K a. So when the two partners are equal, the pH equals the p K a, four point seven four.",
+      "hash": "fb35593920c2",
+      "textSha256": "fb35593920c27f4b15c7c6c964fd8a8fdb0f6dd0725c3280dd4a17748f0db63f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/buffer-ph.fb35593920c2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/buffer-ph.fb35593920c2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/buffer-ph.fb35593920c2.generation.json",
+      "plannedRequestSha256": "1ab59a495cd74c75ca96224c0f099b6d664e6c46a26de768699fc9f4f2e8fadd"
+    },
+    {
+      "id": "we-after-acid",
+      "parentSceneId": "we-after-acid",
+      "text": "Now add the zero point zero zero one zero moles of hydronium. It turns that much ethanoate into ethanoic acid, so the acid rises to zero point zero one one zero moles, and the ethanoate falls to zero point zero zero nine zero. The ratio becomes about one point two, so hydronium rises by only about twenty per cent, and the pH is four point six six. In plain water, nothing takes up the hydronium, so it rises a hundred thousand times.",
+      "hash": "af4d252c1b9c",
+      "textSha256": "af4d252c1b9c739457376f2eaee324e28a4a7270a856201adf45dbb7fedf9cdd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/we-after-acid.af4d252c1b9c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/we-after-acid.af4d252c1b9c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/we-after-acid.af4d252c1b9c.generation.json",
+      "plannedRequestSha256": "11a12fbdde9dcac521467c0afbd60d505640fd4574b204bd30dedf11c82ebaf8"
+    },
+    {
+      "id": "ratio-sets-ph",
+      "parentSceneId": "ratio-sets-ph",
+      "text": "That ratio sets the pH of any buffer. More acid than base puts the pH below the p K a, more base puts it above. And a buffer doesn't have to be neutral: this one sits at four point seven four. But hydrochloric acid with sodium chloride is not a buffer. Chloride is the conjugate base of a strong acid, so it doesn't take protons back.",
+      "hash": "0090c3a6c57d",
+      "textSha256": "0090c3a6c57d7052254975fed462e10d7fb973290f35a55f40d7747f52a63af1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/ratio-sets-ph.0090c3a6c57d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/ratio-sets-ph.0090c3a6c57d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/ratio-sets-ph.0090c3a6c57d.generation.json",
+      "plannedRequestSha256": "baa0fe900b68c96011e163dd48e54faebe6abf75385f9caf7b686084f48d0e35"
+    },
+    {
+      "id": "capacity",
+      "parentSceneId": "capacity",
+      "text": "Now keep adding acid, a millilitre at a time. Each portion uses up zero point zero zero one zero moles of ethanoate. At first, the pH falls slowly. But by about nine millilitres, almost all the ethanoate is gone, and at ten, there's none left. Nothing can take the next hydronium, so the pH plunges. How much acid or base a buffer can take before one partner is nearly used up is its capacity. It depends on how much of each partner there is, not on the pH.",
+      "hash": "fc697a93edbe",
+      "textSha256": "fc697a93edbe429c8019ddd24855ef96be35976c838aac15a066b4414f86fd2e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/capacity.fc697a93edbe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/capacity.fc697a93edbe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/capacity.fc697a93edbe.generation.json",
+      "plannedRequestSha256": "08ffa7be5dfb7b8fd1873e34fb4b57efdae3a5ba5480d3932e7df6a77a3a8a20"
+    },
+    {
+      "id": "blood-buffer",
+      "parentSceneId": "blood-buffer",
+      "text": "Your blood stays between pH seven point three five and seven point four five, because enzymes and haemoglobin work best in a narrow range. Its main buffer pairs carbonic acid with hydrogencarbonate ions. When muscles working hard add acid to the blood, hydrogencarbonate takes up the hydronium, making carbonic acid. That breaks down into carbon dioxide and water, and your lungs breathe the carbon dioxide out.",
+      "hash": "8bdc0d4a27f6",
+      "textSha256": "8bdc0d4a27f6a48fa36d991bd31cb87a41f47b32bc361f0a96995e204ad1293a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/blood-buffer.8bdc0d4a27f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/blood-buffer.8bdc0d4a27f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/blood-buffer.8bdc0d4a27f6.generation.json",
+      "plannedRequestSha256": "f26070a1f6c0c1110cd670dc4d999455f25113bba8c0553ca7838b50652aa4c6"
+    },
+    {
+      "id": "blood-works",
+      "parentSceneId": "blood-works",
+      "text": "Blood has about twenty hydrogencarbonate ions for each dissolved carbon dioxide molecule. Carbon dioxide and carbonic acid together are the acid side of this buffer. So it can take up far more acid than base, which suits a body whose metabolism mostly makes acid. And unlike a beaker, it's topped up: the lungs adjust how much carbon dioxide they breathe out within minutes, and the kidneys adjust hydrogencarbonate over hours to days. Inside cells, a phosphate buffer helps too, and in the oceans, carbonate.",
+      "hash": "dc81d416044d",
+      "textSha256": "dc81d416044dca9e9ec33c21cac92f75a06bdcb83ada8f9d96fc555bbb114682",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/blood-works.dc81d416044d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/blood-works.dc81d416044d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/blood-works.dc81d416044d.generation.json",
+      "plannedRequestSha256": "4ae757b71b8d0cdb9a9c557a78dfa568163f3787076952ad10bf37b664dd9960"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. A buffer has a defender for each attack: the conjugate base takes added acid, the weak acid takes added base. And a buffer resists, it doesn't prevent. Add enough to use up one partner, and it fails.",
+      "hash": "f1674eda9f61",
+      "textSha256": "f1674eda9f6150fea0fbe22930a656017de673019fbcf6b0812fe0376ac6c534",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/memory-aid.f1674eda9f61.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/memory-aid.f1674eda9f61.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/memory-aid.f1674eda9f61.generation.json",
+      "plannedRequestSha256": "852d596ba85a21bcc137320f82915141241dd089b6ff080afaeac88738a33301"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A solution contains zero point two zero moles per litre ammonia and zero point two zero moles per litre ammonium chloride. Explain, using equations, how it resists a change in pH when a little hydrochloric acid or sodium hydroxide is added. Then estimate its pH, given that the p K a of ammonium is nine point two five. Pause here to answer.",
+      "hash": "ac2a05071890",
+      "textSha256": "ac2a050718904df9163a3f9d621c41d96b9e220319ccbc79739352afca0c699a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/attempt-1.ac2a05071890.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/attempt-1.ac2a05071890.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/attempt-1.ac2a05071890.generation.json",
+      "plannedRequestSha256": "f77fc350e486b361c0a0ddd20eadffdbed9744d8ef7993fb8acb507cc4c8a1da"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Ammonia is the base partner, so it takes the added hydronium: ammonia plus hydronium gives ammonium and water. Ammonium is the acid partner, so it gives a proton to added hydroxide, making ammonia and water. The two are equal, so the pH is about the p K a, nine point two five. Writing ammonium as the one that takes up added acid swaps the partners.",
+      "hash": "03a766c82686",
+      "textSha256": "03a766c826860f7ff7090b1f03de904669002fa9a790d652263c778f6e4e3706",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/feedback-1.03a766c82686.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/feedback-1.03a766c82686.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/feedback-1.03a766c82686.generation.json",
+      "plannedRequestSha256": "0371386e4d7208c39bb93d146599763af57e91e6b9ab017196af54b2ed4f34ab"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Buffers X and Y each have a volume of a hundred millilitres and a pH of four point seven four. X contains zero point zero one zero moles each of ethanoic acid and sodium ethanoate. Y contains zero point zero zero one zero moles of each. A student adds zero point zero zero two zero moles of hydrochloric acid to each. Predict and explain the pH change in each solution. Pause here to answer.",
+      "hash": "66626ab380c4",
+      "textSha256": "66626ab380c4e8ebad7f817265dee6d459d54860550453705f9e0854c9dc8fcb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/attempt-2.66626ab380c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/attempt-2.66626ab380c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/attempt-2.66626ab380c4.generation.json",
+      "plannedRequestSha256": "96389832989be5d21438a9e092f9ce66234d96e045d7598817e1b456560848e4"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "X takes up all the added acid, with zero point zero zero eight zero moles of ethanoate still left. The ratio becomes one point five, so the pH falls only to four point five seven. In Y, half the acid uses up all its ethanoate, and the rest stays as hydronium: the pH drops to about two. Thinking equal pH means equal protection is the slip: pH shows the ratio, not the amounts.",
+      "hash": "ff316f08740a",
+      "textSha256": "ff316f08740a7800c41dbf02932f15ee8d82dbd4bc1c746df20d742cb0bffaef",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/feedback-2.ff316f08740a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/feedback-2.ff316f08740a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/feedback-2.ff316f08740a.generation.json",
+      "plannedRequestSha256": "da2d1bb9fb2b85f269e53f36d4d5494012244f90117b6a51139d1520843005fe"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "For any buffer: find the weak acid and its conjugate base. Added acid reacts with the base partner, added base with the acid partner. Get the pH from K a and the ratio, and check neither has run out. Next: preparing a buffer in the lab, and testing it against water.",
+      "hash": "8a219f1c2bab",
+      "textSha256": "8a219f1c2bab26f477e35a2319a006906ba314a3b7a0c58dd9a3e07a37cd49a0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/decision-rule.8a219f1c2bab.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/decision-rule.8a219f1c2bab.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/decision-rule.8a219f1c2bab.generation.json",
+      "plannedRequestSha256": "92735c5dbb601dfd8ec68f658ee57cd970844c5e204be3e480de7aa215e7c45a"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C11-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

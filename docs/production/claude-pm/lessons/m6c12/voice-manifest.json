@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C12-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c12/lesson.json",
+  "lessonSha256": "69b26065a1c0213d430ac92f20c8befbedf12e3a6288d58631448a83656a973d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c12/lesson.production-brief.json",
+    "sha256": "79da250c70e551af527a773e9c15ae854f330098bd1ec4cc0f5fb746d410d9d2"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "The label on this white vinegar says five per cent acidity. How could you check how much ethanoic acid is really in it? A pH meter won't do it well. Ethanoic acid is weak, so most of it stays as whole molecules, and the meter only senses the few that have ionised. You could work back through K a, but a reading of two point four could mean anything from about zero point seven to one point one moles per litre. You need a method that counts every acid molecule. That's a titration. So how does it work, and how do its numbers give a concentration?",
+      "hash": "cca8d4ca537d",
+      "textSha256": "cca8d4ca537dc10d392be91695180e7efff41fedee38e57fd2b9ebe0225e1a85",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/hook.cca8d4ca537d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/hook.cca8d4ca537d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/hook.cca8d4ca537d.generation.json",
+      "plannedRequestSha256": "683d0d42dcbdad9a8e01f257d15d4a1f9c9ff62f07a91fd8a7eda1e90be9fbf5"
+    },
+    {
+      "id": "idea-apparatus",
+      "parentSceneId": "idea-apparatus",
+      "text": "The idea is to react the unknown with a solution whose concentration you know exactly, a standard solution, and measure precisely how much it takes. A pipette delivers an exact volume of the vinegar, called an aliquot, into a conical flask, with a few drops of indicator. A burette adds sodium hydroxide, the titrant, until the acid has just been used up. The volume delivered is the titre.",
+      "hash": "bd09cf148690",
+      "textSha256": "bd09cf1486906c29b5f665cb6b03a2a913c9279bd4695b7739ff1d4a2a7a3a32",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/idea-apparatus.bd09cf148690.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/idea-apparatus.bd09cf148690.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/idea-apparatus.bd09cf148690.generation.json",
+      "plannedRequestSha256": "06cf42eae6a84f6d1ac5cab7a96baba402888c3cf270ba278c374937ad800fb9"
+    },
+    {
+      "id": "equivalence-endpoint",
+      "parentSceneId": "equivalence-endpoint",
+      "text": "The point where the amounts match the equation exactly is the equivalence point. You see it as the endpoint, when a well-chosen indicator changes colour very close to it, here colourless to faint pink. And as in the weak acid heat video, the weak acid gets fully counted. Hydroxide removes hydronium and takes protons from whole molecules, so the equilibrium keeps shifting right until every molecule has reacted. So the titre depends on how much acid there is, not how strong it is.",
+      "hash": "d70e849a5e8b",
+      "textSha256": "d70e849a5e8b9f703cc2739b6b95928eb53aaf19e18ae70c32409297c74bda86",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/equivalence-endpoint.d70e849a5e8b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/equivalence-endpoint.d70e849a5e8b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/equivalence-endpoint.d70e849a5e8b.generation.json",
+      "plannedRequestSha256": "f85371ee7b0f7e2b43c038635ef92974fadd3cfb5c2badaa973b2bc1aae26b6b"
+    },
+    {
+      "id": "primary-standard",
+      "parentSceneId": "primary-standard",
+      "text": "Everything rests on that known concentration. The most reliable way to get one is to weigh out a primary standard: a solid that's very pure, stable in air, and doesn't take up water as you weigh it, so its mass gives its moles exactly. Anhydrous sodium carbonate works if it's dried in an oven first. Sodium hydroxide fails that test. It soaks up water and reacts with carbon dioxide from the air, so its solution is first standardised: titrated against a primary standard, to find its real concentration.",
+      "hash": "93111a958654",
+      "textSha256": "93111a9586542f7636ae19b8c705e757e248b2aa4ff337a50925b4cd12b9f4f2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/primary-standard.93111a958654.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/primary-standard.93111a958654.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/primary-standard.93111a958654.generation.json",
+      "plannedRequestSha256": "286f1a03e949bc49f20fc6781c41ca8d75c43113935b56c9a112f0f9c9a637cc"
+    },
+    {
+      "id": "concordant-titres",
+      "parentSceneId": "concordant-titres",
+      "text": "Back to the vinegar: ten point zero zero millilitres, titrated with zero point five zero zero zero moles per litre sodium hydroxide. A rough first run just locates the endpoint, so it isn't used. The careful titres were eighteen point six zero, eighteen point five five, eighteen point five five, and eighteen point nine zero millilitres. Titres are usually called concordant when they agree within zero point one zero millilitres, so the eighteen point nine zero is left out. The average of the other three is eighteen point five seven.",
+      "hash": "55c5d29ef929",
+      "textSha256": "55c5d29ef929a3c90d391b6345e98a08d3fd9c3c2c3c523d60e6398b7fc1098e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/concordant-titres.55c5d29ef929.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/concordant-titres.55c5d29ef929.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/concordant-titres.55c5d29ef929.generation.json",
+      "plannedRequestSha256": "f2a931967af63b674a21f2f679a1e022f90e36d2116307a0688cfa270b58941c"
+    },
+    {
+      "id": "we1-moles",
+      "parentSceneId": "we1-moles",
+      "text": "Now four steps. First, the balanced equation: ethanoic acid and sodium hydroxide react one to one. Second, moles of the solution you know everything about: n equals c V, with the volume in litres. Zero point five zero zero zero times zero point zero one eight five seven is nine point two eight five times ten to the minus three moles of hydroxide.",
+      "hash": "80f9477a8dcf",
+      "textSha256": "80f9477a8dcfcaa634b8d2b53b9f0eaa63f39698d0cce97525e29c22f971e60c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we1-moles.80f9477a8dcf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we1-moles.80f9477a8dcf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we1-moles.80f9477a8dcf.generation.json",
+      "plannedRequestSha256": "8f71587ecf911a27698c3e67c0c87d30652c4068ca6f31eb12688785c7ef99cd"
+    },
+    {
+      "id": "we1-concentration",
+      "parentSceneId": "we1-concentration",
+      "text": "Third, the mole ratio. One to one, so there's also nine point two eight five times ten to the minus three moles of ethanoic acid in the flask. Fourth, divide by the aliquot's volume, zero point zero one zero zero zero litres. The concentration is zero point nine two eight five moles per litre, four significant figures, like the data. That's about five point six grams of acid in every hundred millilitres. The label's five per cent means five grams, so it's a bit more.",
+      "hash": "1b63d1497968",
+      "textSha256": "1b63d1497968c91bee2a1757a68b3f843316d011d16a98e081d685415268e307",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we1-concentration.1b63d1497968.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we1-concentration.1b63d1497968.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we1-concentration.1b63d1497968.generation.json",
+      "plannedRequestSha256": "0d5884d51d087a470ebf8472664efbc117dc0205d4d66242fc479611fca5bb3a"
+    },
+    {
+      "id": "we2-ratio",
+      "parentSceneId": "we2-ratio",
+      "text": "The ratio isn't always one to one. To standardise hydrochloric acid, a student pipettes twenty five point zero zero millilitres of zero point zero five zero zero zero moles per litre sodium carbonate, a primary standard, into the flask, and runs the acid in from the burette. The concordant titres average twenty two point four five millilitres. Sodium carbonate takes two hydrochloric acid for every one of itself, because carbonate accepts two protons.",
+      "hash": "0303626ad2f2",
+      "textSha256": "0303626ad2f2b4a59198d6fa13639ba795d94910e600a2159fdeb3605b1d9657",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we2-ratio.0303626ad2f2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we2-ratio.0303626ad2f2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we2-ratio.0303626ad2f2.generation.json",
+      "plannedRequestSha256": "6947d7e1a77c543a73b66434ca1fdb2a36f36d32dda11bff8de30855daf488fb"
+    },
+    {
+      "id": "we2-burette-unknown",
+      "parentSceneId": "we2-burette-unknown",
+      "text": "Moles of carbonate: zero point zero five zero zero zero times zero point zero two five zero zero, one point two five zero times ten to the minus three. Times two for the ratio: two point five zero zero times ten to the minus three moles of hydrochloric acid. That acid came from the burette, so divide by the titre, zero point zero two two four five litres: zero point one one one four moles per litre. It doesn't matter which solution is where. You always go from the known, through the ratio, to the unknown.",
+      "hash": "76308e4a1404",
+      "textSha256": "76308e4a140412193491c048bf2362a4d2ddc27a6084837fbc861e8d82107ea7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we2-burette-unknown.76308e4a1404.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we2-burette-unknown.76308e4a1404.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/we2-burette-unknown.76308e4a1404.generation.json",
+      "plannedRequestSha256": "389c6a7895daf77a05dca7cef7bf75fe182480c0cd0aa4b868ffbb2bab8a2f6c"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. Known to moles, ratio, unknown. Start with n equals c V for the solution you know everything about, use the balanced equation's ratio, then divide by the unknown's volume. And average only concordant titres.",
+      "hash": "d1a5ecde31f4",
+      "textSha256": "d1a5ecde31f46fedc1acec780bb35c2a7a0907cc6c05e4a6aedf4033691b6332",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/memory-aid.d1a5ecde31f4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/memory-aid.d1a5ecde31f4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/memory-aid.d1a5ecde31f4.generation.json",
+      "plannedRequestSha256": "dbc53a533aa901d3fc5ae9dcb0b1d33a335d8942e8b05b121cabb867ffbab327"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A twenty five point zero zero millilitre aliquot of sulfuric acid was titrated with zero point one zero zero zero moles per litre sodium hydroxide. The titres were twenty three point four five, twenty three point seven zero, twenty three point four zero, and twenty three point five zero millilitres. Calculate the concentration of the sulfuric acid. Pause here to answer.",
+      "hash": "31f5ab57a31d",
+      "textSha256": "31f5ab57a31d459a397155de29990156c60e1f9a769ffd6036800fb14ecd4a08",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/attempt-1.31f5ab57a31d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/attempt-1.31f5ab57a31d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/attempt-1.31f5ab57a31d.generation.json",
+      "plannedRequestSha256": "a6f74a91bc9d39b7a7c29a1e7e83c5542ae62c0d976f070b26bf14662e2120a8"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Twenty three point seven zero isn't concordant, so the average is twenty three point four five. That's two point three four five times ten to the minus three moles of hydroxide. Sulfuric acid gives two protons, so the ratio is one to two: halve it. Divide by zero point zero two five zero zero: zero point zero four six nine zero moles per litre. Using one to one doubles the answer.",
+      "hash": "12ab93d2b33b",
+      "textSha256": "12ab93d2b33b24c16f87ab0c344c2a98e2ccd9bfda60dd676fe20b4a31ebacbd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/feedback-1.12ab93d2b33b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/feedback-1.12ab93d2b33b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/feedback-1.12ab93d2b33b.generation.json",
+      "plannedRequestSha256": "f3aba3679c224a47ab3a55c002b316e7f2a4cac9824f4f7b4f94a288f7e98e68"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Two flasks each hold twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre: hydrochloric acid in flask A, and ethanoic acid in flask B. Each is titrated with zero point one zero zero moles per litre sodium hydroxide. Predict the volume needed to reach the equivalence point in each flask, and explain, given that the two acids have different pH values. Pause here to answer.",
+      "hash": "8163bd9d5016",
+      "textSha256": "8163bd9d501617ec9218f4d3a1374e2ac6ab8967ffcd60c7a37a6b7df99e4c7a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/attempt-2.8163bd9d5016.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/attempt-2.8163bd9d5016.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/attempt-2.8163bd9d5016.generation.json",
+      "plannedRequestSha256": "25a9d334c34d39c4b9d00ea257dc298c00edc6b1caa811a8ce8545149a404abb"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Both need twenty five point zero millilitres. Each acid gives one proton and reacts one to one, and both flasks hold the same two point five zero times ten to the minus three moles. Ethanoic acid starts mostly un-ionised, but as hydroxide removes hydronium, more molecules ionise, until all of it has reacted. Saying the weak acid needs less confuses strength with amount.",
+      "hash": "b0d159ce1ad7",
+      "textSha256": "b0d159ce1ad7c02bbd8cef03fb1a980cded52e513123b42e24fe40d81abcef17",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/feedback-2.b0d159ce1ad7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/feedback-2.b0d159ce1ad7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/feedback-2.b0d159ce1ad7.generation.json",
+      "plannedRequestSha256": "57e7f2815587f34fd8195442ed3aaff8dd235f93734c94fe28d78ff918bd6d02"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any titration: average only the concordant titres, write the balanced equation, then go known to moles, ratio, unknown. Next: doing a titration in the lab, with the technique that keeps it accurate.",
+      "hash": "ff4adec64632",
+      "textSha256": "ff4adec646321fe4719df81f2620870d269302b8060ddb69b7f5102cf4a2bb80",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/decision-rule.ff4adec64632.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/decision-rule.ff4adec64632.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/decision-rule.ff4adec64632.generation.json",
+      "plannedRequestSha256": "ec19224a78112143f1dd5b06a1ef73e243c0c29dfb92c34b78ad37ab8dee8f37"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C12-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

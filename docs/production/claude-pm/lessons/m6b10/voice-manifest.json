@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B10-claude-2026-10-20-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b10/lesson.json",
+  "lessonSha256": "110444b7ca17dc663e550595f9da65f388edfe703d9cef3139b11e2970e2f546",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b10/lesson.production-brief.json",
+    "sha256": "1622233c05903bedc0bf48753ef36d309cbd4f74685f1ce7cbdf6cbee168790e"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two biotechnologies. A cotton plant that makes its own protein against caterpillars. And a dairy bull whose DNA was edited so his calves would be born without horns. Both work. But working isn't the same as being a good idea. So how should we judge plant and animal biotechnology, and why does an animal case need something extra?",
+      "hash": "95578f633650",
+      "textSha256": "95578f633650bad24bc8f1f6e7cc108d8bd93bf7e23acdbd0dbaf26f9cfca7e7",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/hook.95578f633650.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/hook.95578f633650.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/hook.95578f633650.generation.json",
+      "plannedRequestSha256": "cca41662df201d1e736836714ef71570b953bb0922f2a631ea68eaf0e7ae7fd4"
+    },
+    {
+      "id": "judgement-needs",
+      "parentSceneId": "judgement-needs",
+      "text": "A judgement needs three things, each one concrete. A benefit: what improves, and by how much. A harm or risk: what could go wrong. And for each, who: the people, animals or ecosystems affected, called stakeholders. One technology can help one group and cost another, so a list of pros and cons isn't enough: say who gets which.",
+      "hash": "2429f09ea5c9",
+      "textSha256": "2429f09ea5c99e5ce11b536b3af34712df1c638646321aa17bdc4a65cd3c2fab",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/judgement-needs.2429f09ea5c9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/judgement-needs.2429f09ea5c9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/judgement-needs.2429f09ea5c9.generation.json",
+      "plannedRequestSha256": "806da824c378b8c3011dbcbde0c03442bb3e74f423a08c452935c97b01a6f521"
+    },
+    {
+      "id": "cotton-benefit",
+      "parentSceneId": "cotton-benefit",
+      "text": "Start with the plant. Bt cotton carries a gene from a soil bacterium. Its cells make a protein that's toxic to certain caterpillars that eat the plant. It only works after binding to sites in those insects' guts, which people and most other animals lack. Australian growers once sprayed insecticide many times a season. Together with better pest management, Bt cotton has cut that by about eighty-five per cent. That benefits growers, farm workers, nearby communities, and the beneficial insects that broad sprays used to kill.",
+      "hash": "eced9c8c53ac",
+      "textSha256": "eced9c8c53ac521fa441ef12a47c167c4b253fdde80634a5ea8783214aeaf819",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-benefit.eced9c8c53ac.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-benefit.eced9c8c53ac.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-benefit.eced9c8c53ac.generation.json",
+      "plannedRequestSha256": "61ec26b9ed7f6cb7db299665384ecc9a686b19ffeb0a95286e012bb686a0d000"
+    },
+    {
+      "id": "cotton-risks",
+      "parentSceneId": "cotton-risks",
+      "text": "Now the risks. Caterpillars that happen to carry alleles for resistance survive, and pass them on: natural selection. Over generations, resistance could spread until Bt stops working. So Australian growers must also plant refuges, areas of non-Bt crops where susceptible caterpillars survive and mate with any resistant ones, keeping resistance alleles rare. Growers also pay a licence fee each season to the company that owns the trait. And Bt doesn't fix one thing: a field of one crop still holds little biodiversity.",
+      "hash": "90f56c304db8",
+      "textSha256": "90f56c304db857549e5a0e96a0ec7e19ae5a54742424ed16ae934cf369d6a704",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-risks.90f56c304db8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-risks.90f56c304db8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-risks.90f56c304db8.generation.json",
+      "plannedRequestSha256": "b4a10495dfcd23cd3737b6849619135ae7261d429c81c3c97523a253e153b836"
+    },
+    {
+      "id": "cotton-verdict",
+      "parentSceneId": "cotton-verdict",
+      "text": "So, a judgement. For Australian cotton, the benefit is large and measured, and it reaches several groups. The main risk, resistance, is real but managed by refuges. Growers pay the fee, yet they've chosen Bt for most Australian cotton. On that evidence, Bt cotton is justified, as long as resistance management keeps working. Notice that a strong verdict comes with a condition.",
+      "hash": "d288706f6d6a",
+      "textSha256": "d288706f6d6a3ce1e809ca6ea4bd593286e7d9fc23e1e6a239da33125bdcf79d",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-verdict.d288706f6d6a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-verdict.d288706f6d6a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/cotton-verdict.d288706f6d6a.generation.json",
+      "plannedRequestSha256": "9d6ec4984036792fe3f60b17e776221b21873153fa144c9f6c69dfa337da944b"
+    },
+    {
+      "id": "hornless-cattle",
+      "parentSceneId": "hornless-cattle",
+      "text": "Now the animal. Most dairy cattle grow horns, and horns can injure other cattle and the people who handle them. So calves usually have their horn buds removed, which is painful. Some beef breeds, like Angus, are naturally hornless, because of one dominant allele. Crossing dairy cattle with Angus would also bring in beef alleles that lower milk yield. So scientists edited just that hornless allele into dairy cattle cells, and produced two bulls, born in 2015, whose calves could inherit it. Here the benefit goes to the animals themselves: no dehorning.",
+      "hash": "05b0b70e614b",
+      "textSha256": "05b0b70e614b91fe508106a155d40549b235bd29deb65e842d6650b2152ebfdc",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/hornless-cattle.05b0b70e614b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/hornless-cattle.05b0b70e614b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/hornless-cattle.05b0b70e614b.generation.json",
+      "plannedRequestSha256": "c62f8c003adcc13db3d0ddf32de23266a805f8de2a2bc03cb545e74249738a85"
+    },
+    {
+      "id": "checking-evidence",
+      "parentSceneId": "checking-evidence",
+      "text": "But in 2019, government scientists checking one bull's DNA found something no one had intended. Bacterial DNA used in the editing, including antibiotic resistance genes, had been inserted beside the edit, and four of his six tested calves had inherited it. The calves were healthy, but the company hadn't checked for it. So the idea can still be justified, but only for animals checked to carry the edit alone. Judge what a biotechnology actually did, by checking the evidence.",
+      "hash": "70b74c9ea835",
+      "textSha256": "70b74c9ea8353ec2816505f905703f2edabc5f51ed1cc877e7097b6c63eb6422",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/checking-evidence.70b74c9ea835.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/checking-evidence.70b74c9ea835.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/checking-evidence.70b74c9ea835.generation.json",
+      "plannedRequestSha256": "c4be7cdeb0185c834035e5c6d9103ed7f59ddc3e499b0fc028b4bc416d3a1904"
+    },
+    {
+      "id": "animal-adds",
+      "parentSceneId": "animal-adds",
+      "text": "That's what makes animal cases different. An animal can suffer, so its welfare is a criterion of its own. Producing edited animals also involves embryos and surrogate cows, and many embryos don't survive. And some people object to editing animals at all, whatever the outcome.",
+      "hash": "164871cd9fa3",
+      "textSha256": "164871cd9fa3371cfcdb3381482f50553261fb3926b92644173fe36ab730b7aa",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/animal-adds.164871cd9fa3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/animal-adds.164871cd9fa3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/animal-adds.164871cd9fa3.generation.json",
+      "plannedRequestSha256": "799db3d67d4a29fc6125c79de7d0028a1f01de10fde4744d7cd0b0583d5498a6"
+    },
+    {
+      "id": "three-questions",
+      "parentSceneId": "three-questions",
+      "text": "Those objections sort into three kinds of question. Consequences: what actually happens, to health, yield or the environment. Evidence can answer these. Distribution: who gains and who pays, like the licence fee. Rules and policy decide those. And principle: is it acceptable at all? Evidence can't settle that one.",
+      "hash": "7f7a59ada533",
+      "textSha256": "7f7a59ada533cf566ccab3ab1ce4316d058b0dd4045be01d89ce5e61a6a66734",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/three-questions.7f7a59ada533.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/three-questions.7f7a59ada533.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/three-questions.7f7a59ada533.generation.json",
+      "plannedRequestSha256": "ae80e0c4f006378a68bb9faf4cbccab743929bf4973fb503f50bc03e4b31e052"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So here's a checklist. Who benefits? Who carries the risk? Who decides whether it's used? And what happens to biodiversity? For an animal, add one more: what happens to the animal itself. And when a question says evaluate, finish with a verdict and its main reason.",
+      "hash": "d3e09163644d",
+      "textSha256": "d3e09163644d644b1b944527b1e6d29f83b53d381846769f03ab7955af8340ee",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/memory.d3e09163644d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/memory.d3e09163644d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/memory.d3e09163644d.generation.json",
+      "plannedRequestSha256": "2c2a3fae1a73278ed68cda6d7211b026e8c0c0d73f006cfae17d4cb649eead15"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. Golden Rice has been genetically modified to make beta-carotene, which the body converts to vitamin A. It was developed to reduce vitamin A deficiency, which can cause blindness, in communities where rice is the main food. Identify one group that could benefit, and one possible concern. Then explain why evidence that it's safe to eat wouldn't settle every objection to it. Pause here to answer.",
+      "hash": "9b2c1c9d5306",
+      "textSha256": "9b2c1c9d5306c184d99c3e92e8eeed59d9d19d669fab94686e4a23dd0e556bf2",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/attempt.9b2c1c9d5306.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/attempt.9b2c1c9d5306.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/attempt.9b2c1c9d5306.generation.json",
+      "plannedRequestSha256": "d4d74a7a7a96366f8d4482a63b8730b1bc64b5dab7e8d315cdf8b63305714d99"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Children in rice-dependent communities could benefit, because vitamin A deficiency hits them hardest. One concern: whether people will grow it and eat enough. Safety is a question of consequences, so evidence can answer it. But an objection of principle, or about who controls the seed, isn't about safety. Saying it's safe, so nothing's left to object to, is the classic mistake.",
+      "hash": "cee332c5dbb0",
+      "textSha256": "cee332c5dbb0b9dcc70b3c9987a6a16d7cb4789c3650e301ce764bd6654e65db",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/feedback-one.cee332c5dbb0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/feedback-one.cee332c5dbb0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/feedback-one.cee332c5dbb0.generation.json",
+      "plannedRequestSha256": "a937567e0cf263c4542e9a5b5d1a20c610532debcdc92d8981cd6a098dfa1044"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. AquAdvantage salmon carry a growth hormone gene from another salmon species, so they reach market size faster than ordinary Atlantic salmon. They are produced as all-female fish that are effectively sterile, and were raised in secure tanks on land. Evaluate the use of this biotechnology, referring to a benefit, a risk and the groups affected. Pause here to answer.",
+      "hash": "5b0b8ea5eb39",
+      "textSha256": "5b0b8ea5eb39db33bb5941a39e85c0f9ec7dcd27d960361c9f7b931c725f07e0",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/attempt-two.5b0b8ea5eb39.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/attempt-two.5b0b8ea5eb39.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/attempt-two.5b0b8ea5eb39.generation.json",
+      "plannedRequestSha256": "5e49387b7448a3c8b4560f2db787deafd82094966782b848149c01e6571f85ad"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Fish farmers benefit, because their salmon reach market sooner. The main risk is escape, and modified salmon breeding with wild ones. Effective sterility and land tanks make that very unlikely, which protects wild salmon and the people who fish for them. The fish's welfare still needs checking. So it's justified under these controls. Listing pros and cons with no verdict is the classic mistake.",
+      "hash": "9bace0e9341d",
+      "textSha256": "9bace0e9341d9e3d46e34442067d3f50cd150201914a1e648bc614b866bde995",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/feedback-two.9bace0e9341d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/feedback-two.9bace0e9341d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/feedback-two.9bace0e9341d.generation.json",
+      "plannedRequestSha256": "71e047e691eb64020f30b9684156e40d967456725d3d69d608b04a63268df2fe"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So to judge any biotechnology: name a concrete benefit and who gets it, a concrete harm or risk and who carries it, and, for an animal, its welfare. Check what the evidence shows, say which kind of question you're answering, and end with a verdict and its condition. Next, where biotechnology might go in the future.",
+      "hash": "31c4a91a947c",
+      "textSha256": "31c4a91a947c4c2e126a4342585c09e37fd1bbb57e0057715437c4320151835a",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/decision-rule.31c4a91a947c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/decision-rule.31c4a91a947c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/decision-rule.31c4a91a947c.generation.json",
+      "plannedRequestSha256": "94e70730679edc43f5a53a2de91db2889ed610889be80840ba1b712fbcba73ed"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B10-claude-2026-10-20-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

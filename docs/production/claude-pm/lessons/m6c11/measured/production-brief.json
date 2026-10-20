@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c11/measured/lesson.json",
+    "lessonSha256": "ba3e863b4b65036f579a28c0603b0b72df1fae2b5607aca3372870d33bee004a"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C10 (Ka = [H₃O⁺][A⁻] / [HA] for a weak acid; pKa = −log Ka; ethanoic acid Ka 1.8 × 10⁻⁵ and pKa 4.74; the decimal-places rule applied to Ka). C08 (a weak acid stays mostly un-ionised; the particle lens). C07 (pH from [H₃O⁺]; the decimal-places rule; 1.0 mol/L HCl gives [H₃O⁺] = c). C06 (conjugate pairs; the conjugate base of a weak acid pulls protons back, the conjugate base of a strong acid has almost no pull). C05 (strong and weak; salts dissolve completely into ions). C02 (salt names: sodium ethanoate, ammonium chloride). Module 5: Le Chatelier's principle (adding a product shifts an equilibrium back). Year 11: n = c × V. Not assumed: the word buffer, capacity, the blood buffer. Also from C08: the ICE table, which is why scene 5 says the amounts put in can be used directly (the partners barely react with water).",
+    "startsWith": "Add acid or base to a weak-acid/conjugate-base mixture. The video opens: Two beakers, a hundred millilitres each. One is pure water, at pH seven. The other is a mix of ethanoic acid and sodium ethanoate, at pH four point seven four.",
+    "stopsAfter": "describing a buffer as a weak acid and its conjugate base in large amounts; writing the equations for added acid (taken up by the conjugate base) and added base (taken up by the weak acid); explaining why the pH changes only slightly, using [H₃O⁺] = Ka × n(HA) / n(A⁻); estimating a buffer's pH (pH = pKa for equal amounts; below or above pKa otherwise) and calculating the pH after a small addition; explaining why a strong acid with its salt is not a buffer; explaining capacity and why it depends on the amounts, not the pH; describing how the carbonic acid and hydrogencarbonate buffer keeps blood pH 7.35 to 7.45, with the lungs and kidneys topping it up, and naming buffering in cells and oceans; reading buffer-against-water evidence. No bench preparation or risk table (chem-m6-p05), no Henderson-Hasselbalch log form, no partial neutralisation or half-equivalence (chem-m6-c14), no polyprotic calculations.",
+    "nextLesson": "preparing a buffer in the lab and testing it against water (route chem-m6-p05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c11.md"
+  ],
+  "teaching": {
+    "task": "The same splash of acid drops water by five pH units, but a mixture of ethanoic acid and sodium ethanoate by less than a tenth. What does that mixture contain, how does it take up added acid and base, what sets its pH, when does it run out, and why does your blood depend on one?",
+    "causalExplanation": "(1) the same acid drops water 5 pH units and the mixture less than 0.1: why? (1); (2) ethanoic acid stays mostly whole and the salt supplies plenty of ethanoate, so both partners are present in large amounts: a buffer (2); (3) added hydronium meets ethanoate, the conjugate base of a weak acid, which takes the proton back; almost all of it is used up (3); (4) added hydroxide takes a proton from ethanoic acid; a defender for each attack; water against buffer for base too (4); (5) Ka rearranged: [H₃O⁺] = Ka × acid ÷ base; moles work because the volume cancels; equal amounts give pH = pKa (5); (6) after the acid the ratio is about 1.2, so hydronium rises by about 20%, against a hundred thousand times in water (6); (7) the ratio sets the pH, so buffers need not be neutral; a strong acid's conjugate base does not take protons back, so HCl with NaCl is not a buffer (7); (8) each portion of acid uses up ethanoate; when it runs out, the pH plunges: capacity depends on the amounts (8); (9) blood keeps pH 7.35 to 7.45 with carbonic acid and hydrogencarbonate; the CO₂ formed is breathed out (9); (10) blood has about 20 hydrogencarbonate ions for each dissolved carbon dioxide molecule (carbon dioxide and carbonic acid together are the acid side), so it absorbs acid better than base; it is topped up by lungs and kidneys; cells and oceans buffer too (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "one contrast carries the video: the same millilitre of hydrochloric acid drops water by five pH units but a mixture of ethanoic acid and sodium ethanoate by less than a tenth. The particle lens shows why (ethanoate, the conjugate base of a weak acid, takes back the added hydronium; ethanoic acid gives a proton to added hydroxide: a defender for each attack), the Ka expression rearranged shows that the pH follows the ratio of acid to base, and a worked example finds the pH after the acid. Repeated portions of acid then use up the ethanoate until the pH plunges (capacity), and the blood buffer applies the same reasoning with the lungs and kidneys topping it up. Two exam questions follow with brief feedback.",
+    "openingDecision": "Two beakers, a hundred millilitres each. One is pure water, at pH seven. The other is a mix of ethanoic acid and sodium ethanoate, at pH four point seven four. Add one millilitre of one mole per litre hydrochloric acid to each. The water drops to pH two point zero zero, five whole units. The mixture drops to four point six six, less than a tenth of a unit. So what's in that second beaker that soaks up the acid, and can it ever run out?",
+    "understandingCheck": "(A1) \"A solution contains 0.20 mol/L ammonia (NH₃) and 0.20 mol/L ammonium chloride (NH₄Cl). (a) Explain, using equations, how this solution resists a change in pH when a small amount of hydrochloric acid or sodium hydroxide is added. (b) Estimate the pH of the solution, given that the pKa of NH₄⁺ is 9.25 at 25 °C.\" New pair (a basic buffer, weak base and conjugate acid; not shown anywhere before the attempt), so the student must find which partner is the acid. Crossed mistake: \"NH₄⁺ + H₃O⁺ → ...\" (partners swapped; the site's \"HA reacts with added H⁺\" misconception). (A2) \"Two buffer solutions, X and Y, each have a volume of 100 mL and a pH of 4.74 at 25 °C. X contains 0.010 mol of ethanoic acid and 0.010 mol of sodium ethanoate. Y contains 0.0010 mol of ethanoic acid and 0.0010 mol of sodium ethanoate. A student adds 0.0020 mol of hydrochloric acid to each solution. Predict and explain the change in pH in each solution. Assume the volume does not change. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" Tests capacity against pH. Crossed mistake: \"same pH, so they resist equally\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)\" \"describe the importance of buffers in natural systems (ACSCH098, ACSCH102)\" this video starts from the route's acid or base added to a weak acid and conjugate base mixture and stops at explaining the response, estimating the pH and identifying the capacity limit. It teaches: what a buffer contains and why (a weak acid mostly whole, plus its conjugate base from a dissolved salt; C05 and C06 callbacks); how the conjugate base takes up added hydronium and the weak acid takes up added hydroxide, with equations (the Le Chatelier reading is a Module 5 callback, one clause); why the pH still changes a little (the Ka expression rearranged, [H₃O⁺] = Ka × n(HA) / n(A⁻), a C10 callback, with moles in place of concentrations because the volume cancels); pH = pKa when the partners are equal, and the direction of the pH when they are not; why a strong acid with its salt is not a buffer (C06 conjugate strength); buffer capacity and its limit, shown as the pH curve for repeated acid portions against water; why capacity depends on the amounts, not the pH; the blood buffer (carbonic acid and hydrogencarbonate, the lungs and kidneys) and the importance of buffers in natural systems; the demonstration evidence the practical dotpoint asks for (the same addition to buffer and to water, side by side). Not here: preparing a buffer at the bench, the risk table and the dilution test (chem-m6-p05, the next video, which owns the practical conduct; this video shows the comparison data only); the Henderson-Hasselbalch equation by name or in log form (site card 3 labels it Extension; see Open decisions); partial neutralisation to make a buffer and half-equivalence (chem-m6-c14, titration curves); quantitative buffer range \"pKa ± 1\"; polyprotic acids and the phosphate calculation of site worked example 2; the direction of an amphiprotic ion from Ka against Kb (C10 deferred it here; see Open decisions); detailed blood-gas clinical cases (site worked example 3, diabetic ketoacidosis) and ocean saturation chemistry (worksheet 04 corrections)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole ethanoic acid molecules amber-outlined (C05, C08); ethanoate grey-violet; Na⁺ and Cl⁻ small grey spectators; meter readouts amber digits; the ratio bar's acid column amber and base column grey-violet; water's lines and readouts pale blue, the buffer's teal. Board layout (constant, C03, C07, C08 and C10): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the lens, the ratio bar, the graph or the working, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 20 Oct): `m6-ph-meter-probe-beaker-v1.png` (two copies: hook and scene 4, coded amber readouts \"7.00\" → \"2.00\" or \"12.00\" on the water and \"4.74\" → \"4.66\" or \"4.83\" on the buffer; beakers labelled in code \"water, 100 mL\" and \"ethanoic acid + sodium ethanoate, 0.100 mol/L each, 100 mL\"), `m6-beaker-v1.png` (scene 2, under the lens), `m6-vinegar-bottle-v1.png` (not used), `m5x-ammonia-bottle-v1.png` (attempt 1 card, small), `m5x-red-blood-cells-v1.png` (inspected: five painted red blood cells, no person; scene 9, small), `m8-lungs-healthy-v1.png` (inspected: a painted pair of lungs with trachea and bronchi, no person or face; scenes 9 and 10, small, the CO₂ arrow ends at it). No new plates needed. No human figures.",
+    "transitionPlan": "Two pH meter plates open with amber readouts that fall by different amounts; the plates shrink as the particle lens opens from a beaker and the ratio bar draws beside it; added hydronium and hydroxide tokens hop onto the partners while the ratio bar moves a slice between its columns and the equations write; the meter plates return small for the base comparison; the givens card enters at the left and the rearranged Ka line and the worked lines write one stage at a time, earlier lines dimming, leaving one kept chip; the pH line tilts the ratio bar for below and above pKa; the capacity graph draws dose by dose as the base column empties; the blood cells and lungs plates frame the blood buffer strip, the 20 : 1 bar and the topping-up arrows; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"water, 100 mL\" and \"ethanoic acid + sodium ethanoate (0.100 mol/L each), 100 mL\".",
+      "teachingReason": "Hook (two beakers, one splash): Two beakers, a hundred millilitres each.",
+      "narrationCue": "seven / four point seven four / two point zero zero / four point six six / run out",
+      "motionPurpose": "On the spoken cues: On \"seven\" the left readout counts to \"7.00\"; on \"four point seven four\" the right counts to \"4.74\". On \"Add one millilitre\" a coded dropper icon above each beaker releases one drop, tag \"1.0 mL of 1.0 mol/L HCl\" between them (dims after its sentence). On \"two point zero zero\" the left readout runs down to \"2.00\" and a pale blue bracket \"−5.00\" writes beside it; on \"four point six six\" the right readout ticks down",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"water, 100 mL\" and \"ethanoic acid + sodium ethanoate (0.100 mol/L each), 100 mL\". On \"seven\" the left readout counts to \"7.00\"; on \"four point seven four\" the right counts to \"4.74\". On \"Add one millilitre\" a coded dropper icon above each beaker releases one drop, tag \"1.0 mL of 1.0 mol/L HCl\" between them (dims after its sentence). On \"two point zero zero\" the left readout runs down to \"2.00\" and a pale blue bracket \"−5.00\" writes beside it; on \"four point six six\" the right readout ticks down to \"4.66\" with a teal bracket \"−0.08\". On \"run out\" both brackets dim and the heading writes: \"What does the mixture do?\" Bright at the end: the heading and the two readouts. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "what-it-holds",
+      "visualDecision": "adjust",
+      "visualReference": "the plates shrink to the top right.",
+      "teachingReason": "What the mixture holds: Ethanoic acid is weak, so most of it stays as whole molecules.",
+      "narrationCue": "ethanoate / buffer",
+      "motionPurpose": "On the spoken cues: `m6-beaker-v1.png` small at the left; the C08 particle lens opens from it, at first holding only amber-outlined ethanoic acid molecules among pale blue water with one rare ion pair (tag \"weak: mostly whole\", dims). On \"ethanoate\" a scatter of grey-violet ethanoate ions and small grey Na⁺ spectators fades in until there are about as many ethanoate ions as acid molecules; the strip writes \"CH₃COOH(aq) + H₂O(l) ⇌",
+      "motionRole": "explain",
+      "onScreenChange": "the plates shrink to the top right. `m6-beaker-v1.png` small at the left; the C08 particle lens opens from it, at first holding only amber-outlined ethanoic acid molecules among pale blue water with one rare ion pair (tag \"weak: mostly whole\", dims). On \"ethanoate\" a scatter of grey-violet ethanoate ions and small grey Na⁺ spectators fades in until there are about as many ethanoate ions as acid molecules; the strip writes \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" with a C06 bracket \"conjugate pair\" joining CH₃COOH and CH₃COO⁻. On \"both partners\" the ratio bar draws beside the lens: two equal columns \"acid, HA: 0.0100 mol\" (amber) and \"base, A⁻: 0.0100 mol\" (grey-violet). On \"buffer\" the definition writes under the lens: \"buffer: weak acid + its conjugate base, both in large amounts\". Bright at the end: the lens, the ratio bar and the definition. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "acid-attack",
+      "visualDecision": "new",
+      "visualReference": "the lens stays.",
+      "teachingReason": "Added acid meets the conjugate base: Now add the hydrochloric acid.",
+      "narrationCue": "ethanoate / used up / left",
+      "motionPurpose": "On the spoken cues: A handful of teal hydronium tokens drop in from the top (with grey Cl⁻ spectators). On \"ethanoate\" one hydronium meets an ethanoate and the C01 hop plays in reverse: the teal proton jumps onto the ethanoate, which gains an amber outline (now ethanoic acid), leaving a water molecule; the other added hydroniums do the same, one after another, quickly. The equation writes under the lens: \"CH₃COO⁻(aq) + H₃O⁺(aq) →",
+      "motionRole": "explain",
+      "onScreenChange": "the lens stays. A handful of teal hydronium tokens drop in from the top (with grey Cl⁻ spectators). On \"ethanoate\" one hydronium meets an ethanoate and the C01 hop plays in reverse: the teal proton jumps onto the ethanoate, which gains an amber outline (now ethanoic acid), leaving a water molecule; the other added hydroniums do the same, one after another, quickly. The equation writes under the lens: \"CH₃COO⁻(aq) + H₃O⁺(aq) → CH₃COOH(aq) + H₂O(l)\". On \"used up\" the lens holds no extra teal tokens; the ratio bar moves a small slice from the base column to the acid column. On \"left\" the strip from scene 2 pulses its reverse arrow with a small grey tag \"Module 5: Le Chatelier\" (dims after its sentence). Bright at the end: the equation, the ratio bar and the lens. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "base-attack",
+      "visualDecision": "new",
+      "visualReference": "the lens resets to the start (equal partners).",
+      "teachingReason": "Added base meets the weak acid: Add sodium hydroxide instead, and the other partner steps in.",
+      "narrationCue": "ethanoic acid / twelve / four point eight three / defender",
+      "motionPurpose": "On the spoken cues: Violet OH⁻ tokens drop in; on \"ethanoic acid\" one takes a teal proton from an amber molecule, which becomes a grey-violet ethanoate, and a water forms. The equation writes: \"CH₃COOH(aq) + OH⁻(aq) → CH₃COO⁻(aq) + H₂O(l)\"; the scene 3 equation sits above it, dimmed. The lens dims as the two meter plates return small at the top, with a tag \"1.0 mL of 1.0 mol/L NaOH\" between them (dims after its sentence): on \"twelve\"",
+      "motionRole": "explain",
+      "onScreenChange": "the lens resets to the start (equal partners). Violet OH⁻ tokens drop in; on \"ethanoic acid\" one takes a teal proton from an amber molecule, which becomes a grey-violet ethanoate, and a water forms. The equation writes: \"CH₃COOH(aq) + OH⁻(aq) → CH₃COO⁻(aq) + H₂O(l)\"; the scene 3 equation sits above it, dimmed. The lens dims as the two meter plates return small at the top, with a tag \"1.0 mL of 1.0 mol/L NaOH\" between them (dims after its sentence): on \"twelve\" the water readout climbs \"7.00\" → \"12.00\"; on \"four point eight three\" the buffer readout ticks \"4.74\" → \"4.83\". On \"defender\" the two equations brighten as a pair with labels \"added acid → taken by A⁻\" and \"added base → taken by HA\"; the readouts dim. Bright at the end: the two labelled equations. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "buffer-ph",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "The pH of a buffer: Ka and the ratio: So why does the pH move at all?",
+      "narrationCue": "K a times acid over ethanoate / cancels / one / p K a",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the buffer's pH\". Givens card: \"CH₃COOH: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"CH₃COO⁻: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"Ka = 1.8 × 10⁻⁵ (25 °C)\". The C10 builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" with a small grey tag \"Ka and pKa video\" (dims). On \"K a times acid over ethanoate\" the builder rearranges: [CH₃COO⁻] slides under, giving \"[H₃O⁺] = Ka × [CH₃COOH] / [CH₃COO⁻]\". On \"amounts",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the buffer's pH\". Givens card: \"CH₃COOH: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"CH₃COO⁻: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"Ka = 1.8 × 10⁻⁵ (25 °C)\". The C10 builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" with a small grey tag \"Ka and pKa video\" (dims). On \"K a times acid over ethanoate\" the builder rearranges: [CH₃COO⁻] slides under, giving \"[H₃O⁺] = Ka × [CH₃COOH] / [CH₃COO⁻]\". On \"amounts you put in\" a small grey tag \"partners barely react with water: use the amounts added\" writes (dims at the sentence end). On \"cancels\" a small grey tag \"same V: use moles\" writes and the brackets become \"n(CH₃COOH) / n(CH₃COO⁻)\". On \"one\" the ratio bar returns small with equal columns and the line \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.0100 / 0.0100 = 1.8 × 10⁻⁵ mol/L\" writes. On \"p K a\" the line \"pH = pKa = −log(1.8 × 10⁻⁵) = 4.74\" writes and the result shrinks to a kept chip \"equal partners: pH = pKa = 4.74\". Bright at the end: the task line, the rearranged line and the kept chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we-after-acid",
+      "visualDecision": "new",
+      "visualReference": "task line: \"Find the pH after adding 1.0 × 10⁻³ mol H₃O⁺\".",
+      "teachingReason": "Worked example: after the acid: Now add the zero point zero zero one zero moles of hydronium.",
+      "narrationCue": "zero point zero one one zero / zero point zero zero nine zero / one point two / four point six six / hundred thousand",
+      "motionPurpose": "On the spoken cues: The givens card adds \"added H₃O⁺: 1.0 mL × 1.0 mol/L = 0.0010 mol\" (the earlier lines dim). Step chip \"Step 1 of 2: new amounts\". The scene 3 equation writes small at the top as a reminder. On \"zero point zero one one zero\" the ratio bar moves a slice from the base column to the acid column, and the lines \"n(CH₃COOH) = 0.0100 + 0.0010 = 0.0110 mol\" and, on \"zero point zero zero nine zero\", \"n(CH₃COO⁻) = 0.0100 −",
+      "motionRole": "explain",
+      "onScreenChange": "task line: \"Find the pH after adding 1.0 × 10⁻³ mol H₃O⁺\". The givens card adds \"added H₃O⁺: 1.0 mL × 1.0 mol/L = 0.0010 mol\" (the earlier lines dim). Step chip \"Step 1 of 2: new amounts\". The scene 3 equation writes small at the top as a reminder. On \"zero point zero one one zero\" the ratio bar moves a slice from the base column to the acid column, and the lines \"n(CH₃COOH) = 0.0100 + 0.0010 = 0.0110 mol\" and, on \"zero point zero zero nine zero\", \"n(CH₃COO⁻) = 0.0100 − 0.0010 = 0.0090 mol\" write. Step chip \"Step 2 of 2: pH\". On \"one point two\" the line \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.0110 / 0.0090 = 2.2 × 10⁻⁵ mol/L\" writes (the amounts lines dim) with a grey tag \"ratio 1.22: [H₃O⁺] up 22%\". On \"four point six six\" the line \"pH = −log(2.2 × 10⁻⁵) = 4.66\" writes and the answer chip \"pH = 4.66\" pins, with the small tag \"Ka 2 s.f. → pH 2 d.p.\" (dims). On \"hundred thousand\" a compact comparison writes under the chip: \"buffer: [H₃O⁺] × 1.2\" | \"water: [H₃O⁺] 10⁻⁷ → 10⁻², × about 100,000\". Bright at the end: the answer chip and the comparison. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "ratio-sets-ph",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The ratio sets the pH: That ratio sets the pH of any buffer.",
+      "narrationCue": "below / above / neutral / not",
+      "motionPurpose": "On the spoken cues: A short horizontal pH line draws with a marker \"pKa\" in the middle. On \"below\" the ratio bar beside it tilts to a taller acid column and the marker slides left, label \"more HA: pH < pKa\"; on \"above\" it tilts the other way, label \"more A⁻: pH > pKa\"; the \"more HA\" label dims as this one writes, and the marker returns to the middle, where \"equal: pH = pKa\" sits under it. On \"neutral\" a small chip \"this buffer: pH",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A short horizontal pH line draws with a marker \"pKa\" in the middle. On \"below\" the ratio bar beside it tilts to a taller acid column and the marker slides left, label \"more HA: pH < pKa\"; on \"above\" it tilts the other way, label \"more A⁻: pH > pKa\"; the \"more HA\" label dims as this one writes, and the marker returns to the middle, where \"equal: pH = pKa\" sits under it. On \"neutral\" a small chip \"this buffer: pH 4.74, not 7\" writes beside the line; the pH line and its labels then dim. On \"not\" a chip \"HCl + NaCl: buffer?\" writes; a small lens beside it shows grey Cl⁻ ions ignoring incoming teal hydronium tokens, and the chip is crossed (caption \"Cl⁻ won't take protons back\"). Bright at the end: the crossed chip, its caption and the small lens. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "capacity",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Capacity: running out: Now keep adding acid, a millilitre at a time.",
+      "narrationCue": "nine / none / plunges / capacity",
+      "motionPurpose": "On the spoken cues: The coded lineGraph draws: x axis \"volume of 1.0 mol/L HCl added (mL)\" from 0 to 12, y axis \"pH\" from 0 to 8 (computed values, author note g). The water line (pale blue) is drawn first, falling to 2.00 at 1 mL and below. Then the buffer line (teal) draws point by point as a dose counter \"1 mL, 2 mL, ...\" ticks; beside the graph the ratio bar loses a slice of its base column with each dose. On \"nine\" the base column",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The coded lineGraph draws: x axis \"volume of 1.0 mol/L HCl added (mL)\" from 0 to 12, y axis \"pH\" from 0 to 8 (computed values, author note g). The water line (pale blue) is drawn first, falling to 2.00 at 1 mL and below. Then the buffer line (teal) draws point by point as a dose counter \"1 mL, 2 mL, ...\" ticks; beside the graph the ratio bar loses a slice of its base column with each dose. On \"nine\" the base column is a thin sliver; on \"none\" it empties and greys out; on \"plunges\" the teal line drops steeply between 9 and 11 mL. On \"capacity\" the dose counter and the ratio bar dim, and the term writes under the graph with the gloss \"acid or base taken up before a partner is nearly used up\". On \"not on the pH\" a small inset: two beakers both labelled \"pH 4.74\", one with tall columns (\"0.0100 mol each\"), one with columns a tenth as tall (\"0.0010 mol each\"), tag \"same pH, one tenth the capacity\". Bright at the end: the graph, the term and the inset. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "blood-buffer",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The blood buffer: Your blood stays between pH seven point three five and seven point four five, because enzymes and haemoglobin work best in a narrow range.",
+      "narrationCue": "seven point three five and seven point four five / carbonic acid / hydrogencarbonate / carbon dioxide",
+      "motionPurpose": "On the spoken cues: `m5x-red-blood-cells-v1.png` small at the upper left (the plate itself opens the scene, so the narration starts straight on blood); a short pH ruler draws from 7.0 to 7.8 with a teal band from 7.35 to 7.45 on \"seven point three five and seven point four five\" (tag \"normal blood pH\"). On \"carbonic acid\" and \"hydrogencarbonate\" the strip writes \"H₂CO₃(aq) + H₂O(l) ⇌ H₃O⁺(aq) + HCO₃⁻(aq)\" with the C06 bracket",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m5x-red-blood-cells-v1.png` small at the upper left (the plate itself opens the scene, so the narration starts straight on blood); a short pH ruler draws from 7.0 to 7.8 with a teal band from 7.35 to 7.45 on \"seven point three five and seven point four five\" (tag \"normal blood pH\"). On \"carbonic acid\" and \"hydrogencarbonate\" the strip writes \"H₂CO₃(aq) + H₂O(l) ⇌ H₃O⁺(aq) + HCO₃⁻(aq)\" with the C06 bracket \"conjugate pair\". On \"takes up the hydronium\" the equation writes: \"HCO₃⁻(aq) + H₃O⁺(aq) → H₂CO₃(aq) + H₂O(l)\" (the strip dims). On \"carbon dioxide\" a second line writes \"H₂CO₃(aq) → CO₂(aq) + H₂O(l)\", and a grey CO₂ arrow runs out to `m8-lungs-healthy-v1.png` small at the right, tag \"breathed out\". Bright at the end: the pH band, the two equations and the lungs. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "blood-works",
+      "visualDecision": "new",
+      "visualReference": "the ratio bar returns, re-labelled \"dissolved CO₂ and H₂CO₃\" (amber, short) and \"HCO₃⁻\" (grey-violet, about twenty times taller); on \"twenty\" the tag \"HCO₃⁻ : dissolved CO₂ about 20 : 1 at pH 7.4\" writes between them.",
+      "teachingReason": "Why blood's buffer works: Blood has about twenty hydrogencarbonate ions for each dissolved carbon dioxide molecule.",
+      "narrationCue": "twenty / topped up / phosphate",
+      "motionPurpose": "On the spoken cues: On \"far more acid than base\" a large bracket on the tall column reads \"acid capacity\" and a small bracket on the short column \"base capacity\"; the \"20 : 1\" tag dims. On \"topped up\" the brackets dim and two arrows draw: a two-way arrow between the lungs plate and the \"dissolved CO₂ and H₂CO₃\" column, CO₂ out or kept (tag \"lungs: minutes\"), and one adjusting HCO₃⁻ (tag \"kidneys: hours to days\"). On \"phosphate\" the",
+      "motionRole": "explain",
+      "onScreenChange": "the ratio bar returns, re-labelled \"dissolved CO₂ and H₂CO₃\" (amber, short) and \"HCO₃⁻\" (grey-violet, about twenty times taller); on \"twenty\" the tag \"HCO₃⁻ : dissolved CO₂ about 20 : 1 at pH 7.4\" writes between them. On \"far more acid than base\" a large bracket on the tall column reads \"acid capacity\" and a small bracket on the short column \"base capacity\"; the \"20 : 1\" tag dims. On \"topped up\" the brackets dim and two arrows draw: a two-way arrow between the lungs plate and the \"dissolved CO₂ and H₂CO₃\" column, CO₂ out or kept (tag \"lungs: minutes\"), and one adjusting HCO₃⁻ (tag \"kidneys: hours to days\"). On \"phosphate\" the ratio bar and arrows dim, and two small chips write along the bottom: \"cells: H₂PO₄⁻ / HPO₄²⁻\" and \"oceans: HCO₃⁻ / CO₃²⁻\" (each written acid / base). Bright at the end: the two chips and the lungs plate. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "A buffer has a defender for each attack / resists, it doesn't prevent",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"A buffer has a defender for each attack.\" with two small icons: a grey-violet A⁻ facing a teal H₃O⁺, an amber HA facing a violet OH⁻. On \"resists\" the second line writes: \"Resists, doesn't prevent: it can run out.\" with a tiny thumbnail of the scene 8 plunge. Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"A buffer has a defender for each attack.\" with two small icons: a grey-violet A⁻ facing a teal H₃O⁺, an amber HA facing a violet OH⁻. On \"resists\" the second line writes: \"Resists, doesn't prevent: it can run out.\" with a tiny thumbnail of the scene 8 plunge. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A solution contains zero point two",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m5x-ammonia-bottle-v1.png` small at the top right. Question card, worded as printed: \"A solution contains 0.20 mol/L ammonia (NH₃) and 0.20 mol/L ammonium chloride (NH₄Cl). (a) Explain, using equations, how this solution resists a change in pH when a small amount of hydrochloric acid or sodium hydroxide is added. (b) Estimate the pH of the solution, given that the pKa of NH₄⁺ is 9.25 at 25 °C.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no ratio bar, no aid.",
+      "motionTools": [
+        "Cam lens zoom",
+        "bar fill",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "ammonium / hydroxide / nine point two five / swaps",
+      "motionPurpose": "On the spoken cues: On \"ammonium\" \"0.20 mol/L ammonia\" and \"hydrochloric acid\" are underlined and \"NH₃(aq) + H₃O⁺(aq) → NH₄⁺(aq) + H₂O(l)\" writes. On \"hydroxide\" \"ammonium chloride\" and \"sodium hydroxide\" are underlined and \"NH₄⁺(aq) + OH⁻(aq) → NH₃(aq) + H₂O(l)\" writes; the first equation dims. On \"nine point two five\" \"0.20 mol/L\" (both) and \"pKa of NH₄⁺ is 9.25\" are underlined and the answer chip \"equal partners: pH ≈ pKa = 9.25\"",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"ammonium\" \"0.20 mol/L ammonia\" and \"hydrochloric acid\" are underlined and \"NH₃(aq) + H₃O⁺(aq) → NH₄⁺(aq) + H₂O(l)\" writes. On \"hydroxide\" \"ammonium chloride\" and \"sodium hydroxide\" are underlined and \"NH₄⁺(aq) + OH⁻(aq) → NH₃(aq) + H₂O(l)\" writes; the first equation dims. On \"nine point two five\" \"0.20 mol/L\" (both) and \"pKa of NH₄⁺ is 9.25\" are underlined and the answer chip \"equal partners: pH ≈ pKa = 9.25\" pins. On \"swaps\" a chip \"NH₄⁺ + H₃O⁺ → ...\" fades in and is crossed (caption \"the base partner takes added acid\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"Two buffer solutions, X and Y, each have a volume of 100 mL and a pH of 4.74 at 25 °C.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Buffers X and Y each have",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"Two buffer solutions, X and Y, each have a volume of 100 mL and a pH of 4.74 at 25 °C. X contains 0.010 mol of ethanoic acid and 0.010 mol of sodium ethanoate. Y contains 0.0010 mol of ethanoic acid and 0.0010 mol of sodium ethanoate. A student adds 0.0020 mol of hydrochloric acid to each solution. Predict and explain the change in pH in each solution. Assume the volume does not change. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ratio bars, no graph.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "zero point zero zero eight zero / four point five seven / uses up / two / slip",
+      "motionPurpose": "On the spoken cues: Two small ratio bars draw under it, \"X\" and \"Y\". On \"zero point zero zero eight zero\" \"0.010 mol\" and \"0.0020 mol\" are underlined; X's bars become \"HA 0.012 mol | A⁻ 0.0080 mol\". On \"four point five seven\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.012 / 0.0080 = 2.7 × 10⁻⁵ mol/L; pH = 4.57\" writes; answer chip \"X: pH 4.74 → 4.57\". On \"uses up\" Y's \"0.0010 mol\" is underlined, Y's base column",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. Two small ratio bars draw under it, \"X\" and \"Y\". On \"zero point zero zero eight zero\" \"0.010 mol\" and \"0.0020 mol\" are underlined; X's bars become \"HA 0.012 mol | A⁻ 0.0080 mol\". On \"four point five seven\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.012 / 0.0080 = 2.7 × 10⁻⁵ mol/L; pH = 4.57\" writes; answer chip \"X: pH 4.74 → 4.57\". On \"uses up\" Y's \"0.0010 mol\" is underlined, Y's base column empties and greys, and \"excess H₃O⁺ = 0.0020 − 0.0010 = 0.0010 mol; 0.010 mol/L\" writes; on \"two\" the chip \"Y: pH 4.74 → about 2.00\" pins. On \"slip\" a chip \"same pH, so same resistance\" fades in and is crossed (caption \"capacity depends on the amounts\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Find the pair: weak acid HA + conjugate base A⁻.\"",
+      "teachingReason": "Decision rule and handoff: For any buffer: find the weak acid and its conjugate base.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Added acid → reacts with A⁻. Added base → reacts with HA.\" \"3 [H₃O⁺] = Ka × n(HA) / n(A⁻); equal amounts: pH = pKa.\" \"4 Check neither partner has run out (capacity).\" On \"Next\" a chip \"Next: prepare and test a buffer\" appears with a small `m6-ph-meter-probe-beaker-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Find the pair: weak acid HA + conjugate base A⁻.\" \"2 Added acid → reacts with A⁻. Added base → reacts with HA.\" \"3 [H₃O⁺] = Ka × n(HA) / n(A⁻); equal amounts: pH = pKa.\" \"4 Check neither partner has run out (capacity).\" On \"Next\" a chip \"Next: prepare and test a buffer\" appears with a small `m6-ph-meter-probe-beaker-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c11-learning-review.md",
+      "sha256": "097aa84462f8b57704acab0b5fc70d3cc9870e2dc3f9d730b165d98ba67011d5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c11-claude-science-check.md",
+      "sha256": "388e3c69f7b9d1a1065cc09e0f5097876a4d1e88a8a03e43e38632c32a6ca1ce"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

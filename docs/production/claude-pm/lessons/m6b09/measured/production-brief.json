@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b09/measured/lesson.json",
+    "lessonSha256": "8221405e0e4f7155b083913bdfc44afc863b3d2202636bf99babc89218598906"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m5-b01: sexual reproduction mixes alleles from two parents; asexual reproduction copies one parent; varied offspring and identical offspring. From bio-m5-b06a: DNA in prokaryotes and eukaryotes; bacteria carry plasmids. From B6b and B6c (Module 5): a gene codes for a protein; cells read genes to make proteins. From b01 and b08 (Module 6): alleles, the gene pool, allele frequency; gene flow and selection change how common alleles are. From Year 11: selective pressure and natural selection. Not assumed: biotechnology as a defined field, fermentation as a process, selective breeding by name (it may be familiar), recombinant DNA, reproductive technologies, the four-way \"what does it change\" frame.",
+    "startsWith": "Compare yeast use and selective breeding with a modern technique. The video opens: A loaf of bread, a merino's fine wool, and a vial of human insulin.",
+    "stopsAfter": "defining biotechnology as deliberately using living organisms, cells or biological processes to make a product or solve a problem, in agriculture, medicine and industry; explaining that fermentation uses yeast's process (carbon dioxide raises bread) with the yeast's DNA unchanged; explaining that selective breeding chooses parents, so it changes which existing alleles are passed on and how common they become, but changes no organism's DNA; explaining that insulin moved from animal pancreases (from 1922) to bacteria carrying DNA coding for human insulin (from 1982), a change to the bacteria's DNA, called recombinant DNA; sorting current technologies by what they change (a process used; the parents chosen, as in artificial insemination and pollination; DNA copied, as in cloning; DNA inserted or edited, as in insulin bacteria, Bt cotton and gene editing) and stating each kind's advantage; explaining that old methods are still used alongside new ones; applying this to an unseen classification item and an unseen compare item.",
+    "nextLesson": "how plant and animal biotechnology should be judged (route entry bio-m6-b10)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b09.md"
+  ],
+  "teaching": {
+    "task": "Bread, fine wool and human insulin all come from biotechnology, but only one needed DNA changed in a lab. So what counts as biotechnology, and what does each kind actually change?",
+    "causalExplanation": "Causes: why bread rises (yeast releases CO₂ that is trapped as bubbles, 2); why fermentation counts as biotechnology though no DNA changes (the definition is about using living processes, 3); why selective breeding changes a flock without changing any sheep's DNA (choosing parents changes which alleles are passed on, 4); why it is slow and limited (existing alleles only, generations, 4, 7); why insulin bacteria are different (DNA coding for human insulin was put into them, and they read it like their own genes, 5); why each kind has its advantage (what it changes decides what it can do, 7); why old methods persist (they still work, especially for many-gene traits, 8). Visible case: three products, one board; each lane shows what happens to the DNA. Video advantage: CO₂ bubbles drifting into the crumb, rings reshuffling into an offspring strip, a strip duplicating, an amber segment sliding into a plasmid. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 1 card is the densest frame and is the task itself.",
+    "conversationalApproach": "Bread, fine merino wool and human insulin all come from biotechnology, but only one needed DNA changed in a lab, so the question is what counts as biotechnology and what each kind actually changes; yeast shows a process used with its DNA unchanged, the definition follows, selective breeding shows parents chosen so alleles are passed on and become more common with no DNA changed, and insulin from bacteria shows DNA inserted (recombinant DNA named); the four-lane board then sorts every case by what is changed (a process used, the parents chosen, DNA copied, DNA inserted or edited), adds the advantage of each, and a timeline shows old methods still in use beside new ones. Two exam questions follow with brief feedback.",
+    "openingDecision": "A loaf of bread, a merino's fine wool, and a vial of human insulin. All three come from biotechnology. But only one of them needed anyone to change an organism's DNA in a lab, and people were baking with yeast thousands of years before anyone knew DNA existed. So what counts as biotechnology, and what does each kind actually change?",
+    "understandingCheck": "10a is an identify item: four examples (yoghurt made with bacteria; semen from one bull used to inseminate many cows; banana plants grown from suckers of one parent; cotton carrying a gene from a soil bacterium); identify what each changes, and state which change an organism's DNA sequence. It tests the four-way frame and the route stop. 10c is a compare item: selective breeding against recombinant DNA technology as ways to get caterpillar-resistant cotton. It tests the compare verb on the same criteria (what changes, source of the trait, time). Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 20 to 30 s): answer, key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ2-01: \"investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)\". B6-IQ3-01 (absorbed from b14): \"investigate the uses and advantages of current genetic technologies that induce genetic change\". The B6-IQ2-01 sub-points (\"analysing the social implications and ethical uses ...\", \"researching future directions ...\", \"evaluating the potential benefits ...\", \"evaluating the changes to the Earth's biodiversity ...\") belong to b10 to b13 and are not claimed here. This video owns first coverage of the B6-IQ2-01 stem (uses and applications, past and present) and the framing half of B6-IQ3-01 (what each current technology changes and its advantage); b15 to b18 complete B6-IQ3-01 technique by technique. Update the ledger rows when this design passes review. The verbs are carried by the attempts: \"identify\" (attempt 1, a classification with a reason) and \"compare\" (attempt 2, the same criteria on both sides; what-markers-reward: \"deal with the same feature on both sides\")."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One \"What does it change?\" board built across the video: four lanes, each with a painted object above and a coded DNA strip below (b01's `SlimStrand`, slim, cream bands, never coloured bars on a painted cell). Lane 1 \"uses a process\": yeast plate and bread plate; the strip stays unchanged (a small tick). Lane 2 \"chooses the parents\": merino plate, then the insemination straw and tank plate and the paintbrush pollination plate; below, two parental strips with b01 `AlleleRing` markers, and an offspring strip receiving one ring from each (reshuffled, no new ring), plus a small flock `FillBar` that rises over generations. Lane 3 \"copies DNA\": tissue-culture jars plate and a strawberry runner plate; the strip duplicates into identical copies. Lane 4 \"inserts or edits DNA\": bacterium-with-plasmid plate, insulin vial, Bt cotton plate; the strip gains an amber inserted segment. The lanes appear one per scene (2, 4, 6, 6) and are complete by scene 6; scene 7 adds one advantage chip under each lane. A coded timeline (scene 8) runs left to right, \"thousands of years ago\", \"1922\", \"1982\", \"today\", with sector icons (agriculture, medicine, industry) as small coded glyphs. Real objects are painted plates; DNA, allele rings, bars and the timeline are coded. Clutter rule (owner, 19 Oct): at most about three bright text items on screen at once besides small grey lane labels; each tag fades when the next cue lands; completed lanes dim to grey thumbnails while a new lane is active.",
+    "transitionPlan": "The three product plates open the hook; the \"What does it change?\" board builds one lane per scene, each painted object above its coded DNA strip (unchanged with a tick, reshuffled allele rings with a rising flock bar, identical copies, an amber inserted segment); scene 7 adds one advantage chip under each lane; the timeline draws left to right with sector icons while the board shrinks; the memory aid writes large; each attempt clears the board and its feedback underlines the question as the lanes return small; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Three painted plates write on left to right, one per spoken item: the new `m6-bread-loaf-crumb-v1.png`, `b3b-merino-sheep-side-v1.png`, `m6-insulin-vial-v1.png` (no tags).",
+      "teachingReason": "Hook (three products, one question): A loaf of bread, a merino's fine wool, and a vial of human insulin.",
+      "narrationCue": "biotechnology / change",
+      "motionPurpose": "On the spoken cues: On \"biotechnology\" a thin bracket joins all three, labelled \"biotechnology\". On \"change an organism's DNA\" a small coded DNA strip draws under each plate; only the insulin strip takes an amber inserted segment, and the other two take small grey ticks \"unchanged\" (no tags). On \"thousands of years\"",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Three painted plates write on left to right, one per spoken item: the new `m6-bread-loaf-crumb-v1.png`, `b3b-merino-sheep-side-v1.png`, `m6-insulin-vial-v1.png` (no tags). On \"biotechnology\" a thin bracket joins all three, labelled \"biotechnology\". On \"change an organism's DNA\" a small coded DNA strip draws under each plate; only the insulin strip takes an amber inserted segment, and the other two take small grey ticks \"unchanged\" (no tags). On \"thousands of years\" the bread plate glows briefly and a grey tag \"thousands of years ago\" writes under it, then fades. On \"change\" the \"biotechnology\" bracket label fades and the heading writes on: \"What does it change?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "yeast-process",
+      "visualDecision": "adjust",
+      "visualReference": "the hook clears.",
+      "teachingReason": "Using a process: yeast and bread: Start with the bread.",
+      "narrationCue": "rise / use",
+      "motionPurpose": "On the spoken cues: Lane 1 of the board opens at the left, labelled small \"uses a process\". `y11-budding-yeast-v1.png` small at the top of the lane; a coded zoom shows two yeast cells taking in small sugar glyphs and releasing grey CO₂ bubbles (tag \"sugar → carbon dioxide + ethanol\"). On \"rise\" the bread plate appears",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. Lane 1 of the board opens at the left, labelled small \"uses a process\". `y11-budding-yeast-v1.png` small at the top of the lane; a coded zoom shows two yeast cells taking in small sugar glyphs and releasing grey CO₂ bubbles (tag \"sugar → carbon dioxide + ethanol\"). On \"rise\" the bread plate appears below and a coded crumb inset circles its air holes; the bubbles drift into the holes (tag replaced by \"CO₂ bubbles make the holes\"). On \"Pasteur\" a grey tag \"1850s and 60s: living yeast does it\" writes and fades (no portrait). On \"doesn't change the yeast's DNA\" the lane's DNA strip draws and takes a grey tick, and the holes tag fades. On \"use\" the screen term \"fermentation\" writes on beside the lane with the gloss \"using a microbe's process\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Cam lens zoom",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "adjust",
+      "visualReference": "lane 1 shrinks aside.",
+      "teachingReason": "What biotechnology means: That's the heart of it.",
+      "narrationCue": "Biotechnology",
+      "motionPurpose": "On the spoken cues: The definition writes on large in two lines: \"Biotechnology: using living things, their cells or their processes, on purpose, to make a product or solve a problem.\" On \"yoghurt\" a small coded milk glass with rod-shaped bacteria glyphs appears under it (or `b2c-milk-glass-bench-v1.png` small; tag",
+      "motionRole": "explain",
+      "onScreenChange": "lane 1 shrinks aside. The definition writes on large in two lines: \"Biotechnology: using living things, their cells or their processes, on purpose, to make a product or solve a problem.\" On \"yoghurt\" a small coded milk glass with rod-shaped bacteria glyphs appears under it (or `b2c-milk-glass-bench-v1.png` small; tag \"bacteria: milk → yoghurt\"); on \"washing powders\" a small coded enzyme blob beside a detergent box outline (tag \"microbe enzymes: industry\", replacing the yoghurt tag; the milk glass stays as an untagged icon). On \"Nothing in that definition\" the enzyme tag fades and the words \"DNA changed?\" write under the definition and take a grey scribble cross. At most the definition, one tag and the crossed words are bright at once. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "selective-breeding",
+      "visualDecision": "adjust",
+      "visualReference": "lane 2 opens, labelled small \"chooses the parents\", with `b3b-merino-sheep-side-v1.png` at the top.",
+      "teachingReason": "Choosing the parents: selective breeding: Now the wool.",
+      "narrationCue": "selective breeding / which alleles",
+      "motionPurpose": "On the spoken cues: A coded flock of small sheep icons (the plate at icon size, about 12) draws; on \"finest wool\" three icons take a soft highlight and the rest dim (tag \"breed only these\"). On \"selective breeding\" the \"breed only these\" tag fades and the term writes on with the gloss \"choosing which animals or plants",
+      "motionRole": "explain",
+      "onScreenChange": "lane 2 opens, labelled small \"chooses the parents\", with `b3b-merino-sheep-side-v1.png` at the top. A coded flock of small sheep icons (the plate at icon size, about 12) draws; on \"finest wool\" three icons take a soft highlight and the rest dim (tag \"breed only these\"). On \"selective breeding\" the \"breed only these\" tag fades and the term writes on with the gloss \"choosing which animals or plants breed\". On \"No one touched\" the gloss fades (the term shrinks to a small label) and two parental `SlimStrand` strips draw with `AlleleRing` markers (open and filled rings); on \"a normal mix\" an offspring strip takes one ring from each parent (no new ring kind; grey tick \"no DNA changed\"). On \"which alleles\" the tick label fades and a small flock `FillBar` labelled \"fine-wool alleles\" rises across three generation ticks (computed illustrative values, no numbers spoken). On \"already exists\" a dashed empty ring slot with a grey \"?\" sits beside the strips (tag \"no new alleles\", replacing the bar label). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "insulin",
+      "visualDecision": "adjust",
+      "visualReference": "lane 4 opens at the far right (lane 3 stays an empty outline until scene 6), labelled small \"inserts or edits DNA\".",
+      "teachingReason": "Changing the DNA: insulin from bacteria: Then the insulin.",
+      "narrationCue": "pancreases / human insulin / recombinant DNA",
+      "motionPurpose": "On the spoken cues: On \"pancreases\" `m8-pancreas-v1.png` appears small with a grey tag \"from 1922: cattle and pig pancreases\". On \"early nineteen-eighties\" the pancreas dims and `m6-bacterium-plasmid-v1.png` appears; a short amber DNA segment (tag \"DNA coding for human insulin\") slides into the plasmid ring",
+      "motionRole": "explain",
+      "onScreenChange": "lane 4 opens at the far right (lane 3 stays an empty outline until scene 6), labelled small \"inserts or edits DNA\". On \"pancreases\" `m8-pancreas-v1.png` appears small with a grey tag \"from 1922: cattle and pig pancreases\". On \"early nineteen-eighties\" the pancreas dims and `m6-bacterium-plasmid-v1.png` appears; a short amber DNA segment (tag \"DNA coding for human insulin\") slides into the plasmid ring (`StripInsert`, the plate's teal ring gaining an amber arc). On \"human insulin\" small coded protein glyphs stream out of the bacterium into `m6-insulin-vial-v1.png` (tag \"from 1982: human insulin from bacteria\", replacing both the pancreas tag and the insert tag). On \"really was changed\" the lane's DNA strip draws with its amber inserted segment. On \"recombinant DNA\" the term writes on with the gloss \"DNA joined from different sources\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "what-changes",
+      "visualDecision": "adjust",
+      "visualReference": "the full four-lane board fills the screen, lanes 1, 2 and 4 returning as grey thumbnails.",
+      "teachingReason": "The real question: what exactly is changed?: So the useful question isn't whether a technique is old or new.",
+      "narrationCue": "what exactly is being changed / which parents / copy / insert or edit",
+      "motionPurpose": "On the spoken cues: On \"what exactly is being changed\" the heading \"What does it change?\" pulses above the lanes. On \"use an organism's process\" lane 1 lights (yeast, bread, unchanged strip). On \"which parents\" lane 2 lights and its top row adds `m6-insemination-straw-tank-v1.png` and",
+      "motionRole": "explain",
+      "onScreenChange": "the full four-lane board fills the screen, lanes 1, 2 and 4 returning as grey thumbnails. On \"what exactly is being changed\" the heading \"What does it change?\" pulses above the lanes. On \"use an organism's process\" lane 1 lights (yeast, bread, unchanged strip). On \"which parents\" lane 2 lights and its top row adds `m6-insemination-straw-tank-v1.png` and `b2b-paintbrush-pollination-v1.png` beside the sheep (screen label \"reproductive technologies\"); its strip shows reshuffled rings. On \"copy\" lane 3 opens, labelled small \"copies DNA\", with `m6-tissue-culture-jars-v1.png` and `strawberry-runner-botanical-v1.png`; its strip duplicates into three identical strips (`StripCopy`; screen label \"cloning\"). On \"insert or edit\" lane 4 lights, adding `m6-bt-cotton-v1.png` beside the bacterium (screen label \"recombinant DNA, gene editing\"; \"transgenic\" is not shown, because it is never spoken or explained). Each lane dims to grey as the next lights, and its screen label shrinks to the small grey lane-label size, so only the active lane's label is bright beside the heading; at the end all four sit at equal weight with small grey labels. Hold one second.",
+      "motionTools": [
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "advantages",
+      "visualDecision": "new",
+      "visualReference": "the board stays.",
+      "teachingReason": "What each kind is good for: Each kind has its own advantage.",
+      "narrationCue": "many genes / together / never had",
+      "motionPurpose": "On the spoken cues: An advantage chip writes under each lane on its cue, and each chip dims to grey when the next one writes, so one chip is bright at a time: lane 2 on \"many genes\": \"many-gene traits\" (on \"already has\" a second small line adds \"existing alleles; slow\"); lane 3 on \"together\": \"keeps the allele",
+      "motionRole": "explain",
+      "onScreenChange": "the board stays. An advantage chip writes under each lane on its cue, and each chip dims to grey when the next one writes, so one chip is bright at a time: lane 2 on \"many genes\": \"many-gene traits\" (on \"already has\" a second small line adds \"existing alleles; slow\"); lane 3 on \"together\": \"keeps the allele combination\"; lane 4 on \"never had\": \"new trait in one generation\". On \"caterpillars\" the Bt cotton plate in lane 4 brightens with a small coded caterpillar outline on a boll and a grey tag \"gene from Bacillus thuringiensis\" (italic species name, screen only), which fades at the end of the scene. Lane 1 takes no chip (no advantage is spoken for it). Hold one second.",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "timeline",
+      "visualDecision": "new",
+      "visualReference": "the board shrinks to the top.",
+      "teachingReason": "Past, present and future: Put it on a timeline.",
+      "narrationCue": "chymosin / agriculture / medicine / industry",
+      "motionPurpose": "On the spoken cues: The coded `Timeline` draws left to right: \"thousands of years ago\" (bread and sheep thumbnails), \"1922\" (pancreas thumbnail), \"1982\" (insulin vial thumbnail), \"today\" (all four lane icons together). On \"didn't disappear\" the bread and sheep thumbnails slide along the line to \"today\" as well (tag",
+      "motionRole": "explain",
+      "onScreenChange": "the board shrinks to the top. The coded `Timeline` draws left to right: \"thousands of years ago\" (bread and sheep thumbnails), \"1922\" (pancreas thumbnail), \"1982\" (insulin vial thumbnail), \"today\" (all four lane icons together). On \"didn't disappear\" the bread and sheep thumbnails slide along the line to \"today\" as well (tag \"still used\", which fades on \"rennet\"). On \"DNA tests\" a small coded strip with one ringed allele attaches to the sheep thumbnail (no tag). On \"rennet\" a small coded cheese wedge sits at \"thousands of years ago\" with a grey tag \"rennet from calves' stomachs\"; on \"chymosin\" the same wedge slides to \"today\" and a small bacterium glyph with an amber insert joins it (tag \"chymosin from modified microbes\", replacing the rennet tag). On \"agriculture\", \"medicine\" and \"industry\" the chymosin tag fades and three sector glyphs write under \"today\", one per word, each with a small example icon from the board (cotton, insulin vial, enzyme blob) and a one-word label only. On \"gene editing\" the sector labels dim to grey and a short arrow runs off the right end of the line to a grey tag \"next: future directions\", with a coded strip in which one small band changes colour. Screen-load rule for this scene: the four timeline tick labels are small and grey; only the current tag (or the three sector words) is bright. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on large, one per cue: \"Biotechnology is older than GMOs.\" with tiny bread and sheep icons; \"Reproductive technologies choose the parents; they don't change genes.\" with the lane 2 reshuffled-strip icon.",
+      "teachingReason": "Memory: Two things to hold on to.",
+      "narrationCue": "Biotechnology is older than GMOs / choose the parents; they don't change genes",
+      "motionPurpose": "On the spoken cues: On \"they make no new ones\" a small grey tag writes under the second line, \"changes allele frequencies, not DNA\", then fades. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on large, one per cue: \"Biotechnology is older than GMOs.\" with tiny bread and sheep icons; \"Reproductive technologies choose the parents; they don't change genes.\" with the lane 2 reshuffled-strip icon. On \"they make no new ones\" a small grey tag writes under the second line, \"changes allele frequencies, not DNA\", then fades. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no lanes, strips or labels.",
+      "teachingReason": "Unseen transfer task (attempt one (what does each change?)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. For each example,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (what does each change?))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no lanes, strips or labels. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\": \"Four uses of biotechnology are listed. A: Bacteria are used to turn milk into yoghurt. B: Semen from one prize bull is used to artificially inseminate hundreds of cows. C: Banana plants are grown from suckers cut from one parent plant. D: Cotton plants carry a gene from the soil bacterium *Bacillus thuringiensis*.\" Demands: \"(a) For each of A to D, identify what is being changed: an organism's process is used, the choice of parents, a copy of existing DNA, or the organism's DNA itself. (4 marks)\" \"(b) State which of A to D change the DNA sequence of an organism. (1 mark)\". A four-row answer table and one answer line. Nothing answer-bearing: no lanes, plates or \"unchanged\" ticks. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "process / chooses the parents / copies / inserted",
+      "motionPurpose": "On the spoken cues: The answer table fills one row per cue, each with a small lane icon and the matching phrase underlined amber in the strip: on \"process\", A (\"Bacteria are used to turn milk into yoghurt\") fills \"process used; DNA unchanged\"; on \"chooses the parents\", B (\"Semen from one prize bull\") fills \"choice of",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. The answer table fills one row per cue, each with a small lane icon and the matching phrase underlined amber in the strip: on \"process\", A (\"Bacteria are used to turn milk into yoghurt\") fills \"process used; DNA unchanged\"; on \"chooses the parents\", B (\"Semen from one prize bull\") fills \"choice of parents; alleles reshuffled, none new\"; on \"copies\", C (\"suckers cut from one parent plant\") fills \"copy of existing DNA\"; on \"inserted\", D (\"a gene from the soil bacterium\") fills \"DNA changed: gene inserted\" and the (b) line fills \"D only\". On \"the classic mistake\" the chip \"artificial insemination changes the calves' DNA\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (two routes to resistant cotton)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Plant breeders want cotton plants that resist",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two routes to resistant cotton))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-bt-cotton-v1.png` small at its upper left: \"Plant breeders want to produce cotton plants that resist attack by caterpillar pests.\" Demand: \"Compare selective breeding and recombinant DNA technology as methods of producing these plants. (4 marks)\". One lined answer box. Nothing answer-bearing: no lanes, strips or advantage chips. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "already has / another species / one generation",
+      "motionPurpose": "On the spoken cues: A two-column comparison writes on beneath it, headings \"selective breeding\" and \"recombinant DNA\", with three rows that fill pair by pair, so each criterion is compared on both sides: on \"inherited\", row \"similarity\": \"both: a wanted, inherited trait\" spanning both columns; on \"already has\", row",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-column comparison writes on beneath it, headings \"selective breeding\" and \"recombinant DNA\", with three rows that fill pair by pair, so each criterion is compared on both sides: on \"inherited\", row \"similarity\": \"both: a wanted, inherited trait\" spanning both columns; on \"already has\", row \"source of trait\": \"alleles cotton already has\" | \"a gene from any species\" (\"caterpillar pests\" and \"Compare\" underline amber); on \"one generation\", row \"time\": \"many generations\" | \"one generation\". On \"the classic mistake\" the chip \"selective breeding isn't biotechnology\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "four step chips write on in a row, one per question, each with its lane icon: \"process used?\" (yeast), \"parents chosen?\" (straw and brush), \"DNA copied?\" (jars), \"DNA changed?\" (bacterium with amber insert).",
+      "teachingReason": "Decision rule and handoff: So when a question names a biotechnology, ask what it changes.",
+      "narrationCue": "So when a question names a biotechnology, ask",
+      "motionPurpose": "On the spoken cues: A bracket under them: \"then: use + advantage\". A \"Next\" chip slides in at the lower right: \"Next: judging plant and animal biotechnology\" (small cotton boll and dairy bull outline icons). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on in a row, one per question, each with its lane icon: \"process used?\" (yeast), \"parents chosen?\" (straw and brush), \"DNA copied?\" (jars), \"DNA changed?\" (bacterium with amber insert). A bracket under them: \"then: use + advantage\". A \"Next\" chip slides in at the lower right: \"Next: judging plant and animal biotechnology\" (small cotton boll and dairy bull outline icons). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b09-learning-review.md",
+      "sha256": "249ce8b331b5e7b2e72d2b8181e680e1be8284e94637d5756b3d1432b99b3c5d"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b09-claude-science-check.md",
+      "sha256": "3305cd52f11313d5a1b4945548eb0d173b7e0543ac1df0828cf90565a4d08271"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}
