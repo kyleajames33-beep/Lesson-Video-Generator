@@ -41,13 +41,13 @@ Plate names below omit `m6-` and `-v1.png`. The files are in `public/assets/chem
 | `bio-m6-b06` | L05 | Skin cell and germ cell comparison | uv-skin, egg-sperm-dish; coding regions drawn in code |
 | `bio-m6-b07` | L06 | Finches with contrasting beaks and gametes | finch-slender-beak*, finch-deep-beak*, egg-sperm-dish |
 | `bio-m6-b08` | L07, L19 | Lake Victoria cichlids and finch populations | cichlid-blue*, cichlid-red*, finch-slender-beak*, finch-deep-beak* |
-| `bio-m6-b09` | L08 | Bacterial insulin production and plant culture | bacterium-plasmid, insulin-vial, tissue-culture-jars |
-| `bio-m6-b10` | L09 | Rice varieties and diverse field | golden-white-rice, field-monoculture-mixed |
+| `bio-m6-b09` | L08 | Bread fermentation, bacterial insulin production and plant culture | bread-loaf-crumb, bacterium-plasmid, insulin-vial, tissue-culture-jars |
+| `bio-m6-b10` | L09 | Bt cotton and caterpillar, hornless cattle, rice varieties and diverse field | bt-cotton, helicoverpa-larva-boll, dairy-calf-horn-buds, `b3b-dairy-bull-side-v1.png`, golden-white-rice, field-monoculture-mixed |
 | `bio-m6-b11` | L10 | Sickled cells and insulin application | red-cells-normal-sickle, insulin-vial; editing steps drawn in code |
 | `bio-m6-b12` | L11 | Northern white rhino, seed bank, crop field | northern-white-rhino*, seed-bank-vault, field-monoculture-mixed |
 | `bio-m6-b13` | L12 | Rhino conservation and crop diversity | northern-white-rhino*, golden-white-rice, field-monoculture-mixed |
 | `bio-m6-b14` | L13 | Bt cotton, insulin vial, insemination apparatus | bt-cotton, insulin-vial, insemination-straw-tank |
-| `bio-m6-b15` | L14 | Insemination straw/tank and hand-pollinated flower | insemination-straw-tank, hand-pollination* |
+| `bio-m6-b15` | L14 | Insemination straw/tank and artificially pollinated flower | insemination-straw-tank, `b2b-paintbrush-pollination-v1.png`; `m6-hand-pollination-v1.png` retired |
 | `bio-m6-b16` | L15 | Sheep, plant cutting, tissue culture | white-sheep, cutting-potted-pair, tissue-culture-jars; nuclear transfer drawn in code |
 | `bio-m6-b17` | L15 | Bacterium and plasmid uptake | bacterium-plasmid, plasmid-uptake-start/end |
 | `bio-m6-b18` | L16 | Plasmid entering bacterial host; insulin | bacterium-plasmid, plasmid-uptake-start/end, insulin-vial |
@@ -55,6 +55,10 @@ Plate names below omit `m6-` and `-v1.png`. The files are in `public/assets/chem
 | `bio-m6-b20` | L18, L19 | Finch populations, crop field, seed bank | finch-slender-beak*, finch-deep-beak*, field-monoculture-mixed, seed-bank-vault |
 
 ## New plates and process pairs
+
+### Brief 90 update, 20 October 2026
+
+`m6-hand-pollination-v1.png` shows a human hand and is retired from use. Use `b2b-paintbrush-pollination-v1.png` for artificial pollination. Biology also gained a cut bread loaf showing air holes in the crumb, a *Helicoverpa* larva feeding from a green cotton boll, and a young Holstein calf with visible horn buds. The three new plates are transparent 2000 by 2000 px PNGs. [Brief 90 provenance](brief90-provenance.json) records their hashes; [QA views](brief90-qa/) show each on cream and checker backgrounds. The [media checkpoint](brief90-media-checkpoint.json) records the transfer archive and hash for the Git-ignored plates and QA.
 
 ### Brief 85 update, 19 October 2026
 
