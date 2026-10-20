@@ -23,6 +23,14 @@ export const B5X = ['chromosome-single', 'chromosome-single-pink', 'chromosome-s
 	'chromosome-duplicated-teal', 'chromosome-pair', 'cell-dividing-nospindle', 'cell-dividing', 'cell-pinching', 'zoom-bases', 'zoom-helix',
 	'zoom-nucleosomes', 'zoom-fibre', 'zoom-chromosome'].map(n => B + `b5x-${n}-v1.png`);
 
-const ALL = [BROTHERS, POD, PARENTS, SPERM, EGG, ...B5X];
+// Brief 88 plates (20 Oct, revision 7): the homologous pair with matching loci, the crossing over trio, the meiosis I and
+// II stages on one cell canvas, the four cells, the interphase cell and the stained metaphase spread (b05a cd.tsx draws them).
+export const CD88 = [
+	'cd-homologous-pair-loci', 'cd-homologous-pair-loci-empty', 'cd-crossing-over-a', 'cd-crossing-over-a-empty', 'cd-crossing-over-b', 'cd-crossing-over-c',
+	'cd-m1-prophase', 'cd-m1-prophase-empty', 'cd-m1-metaphase', 'cd-m1-metaphase-empty', 'cd-m1-anaphase', 'cd-m1-anaphase-empty', 'cd-m1-telophase', 'cd-m1-telophase-empty',
+	'cd-pair-metaphase', 'cd-pair-metaphase-empty', 'cd-pair-anaphase', 'cd-pair-anaphase-empty', 'cd-four-cells', 'cd-interphase',
+].map(n => B + `${n}-v1.png`).concat([B + 'm6-metaphase-spread-v1.png']);
+
+const ALL = [BROTHERS, POD, PARENTS, SPERM, EGG, ...B5X, ...CD88];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

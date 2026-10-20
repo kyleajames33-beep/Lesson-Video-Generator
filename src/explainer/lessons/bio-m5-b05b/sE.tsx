@@ -2,9 +2,19 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {
-	AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, Coin, Col, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, MiniBar, Overlay, Pill, prog, S,
-	MC, PP, TT,
+	AMBER_INK, Arrow, CELL_FILL, CELL_LINE, Coin, Col, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, Overlay, Pill, prog, S,
 } from './shared';
+import {HCell, HChrom} from '../bio-m5-b05a/cd';
+
+// Revision 7: the combination models are the clean coded diagram (outline cells, large chromosomes). No rows of tiny bars:
+// the "almost never match" gametes and the fertilisation gametes carry a count and a colour key (which parent each
+// chromosome came from), not 23 drawn chromosomes.
+const MiniBar: React.FC<{x: number; y: number; h?: number; col: Col; o?: number; w?: number}> = ({x, y, h = 40, col, o = 1, w = 10}) => (o > 0.01 ? <HChrom x={x} y={y + h * 0.08} len={h} w={Math.max(9, w * 1.1)} col={col} o={o} disc={0.9} /> : null);
+const Cell: React.FC<{cx: number; cy: number; rx: number; ry?: number; o?: number}> = ({cx, cy, rx, ry, o = 1}) => <HCell cx={cx} cy={cy} rx={rx} ry={ry} o={o} sw={3.5} />;
+/** A colour key strip: which parent each of a gamete's chromosomes came from (not drawn chromosomes). */
+const Key: React.FC<{x: number; y: number; mix: Col[]; o?: number; cw?: number}> = ({x, y, mix, o = 1, cw = 12}) => (
+	<g opacity={o}>{mix.map((cc, j) => <rect key={j} x={x - (mix.length * cw) / 2 + j * cw} y={y} width={cw - 3} height={18} rx={3} fill={cc === 'P' ? '#c27aac' : '#55b3a6'} />)}</g>
+);
 
 export const TrackStrip: React.FC<{at: number}> = ({at}) => {
 	const f = useCurrentFrame();
@@ -23,7 +33,7 @@ const SX = (col: number) => 760 + col * 165;
 const SY = (row: number) => 290 + row * 200;
 const SlotCell: React.FC<{cx: number; cy: number; l: Col; s: Col; m?: Col; mO?: number; o?: number; scale?: number}> = ({cx, cy, l, s, m, mO = 1, o = 1, scale = 1}) => (
 	<g opacity={o} transform={`translate(${cx},${cy}) scale(${scale})`}>
-		<circle r={68} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+		<HCell cx={0} cy={0} rx={68} sw={4} />
 		<MiniBar x={m ? -22 : -10} y={0} h={70} col={l} w={11} />
 		<MiniBar x={m ? 0 : 12} y={6} h={46} col={s} w={11} />
 		{m ? <MiniBar x={22} y={3} h={56} col={m} w={11} o={mO} /> : null}
@@ -44,6 +54,8 @@ export const SceneCombinations: React.FC = () => {
 	const third = prog(f, c.npairs + 4, 18);
 	const tick = Math.round(8388608 * prog(f, c.big, 60));
 	const coin1b = f >= c.own;
+	// the coins (which partner goes) are tagged while they flip and fade once the choices multiply
+	const coinOut = 1 - prog(f, c.tt, 14);
 	const bar = (from: [number, number], to: [number, number], at: number, col: Col, h: number) => {
 		const t = prog(f, at, 26);
 		if (t <= 0) return null;
@@ -55,13 +67,13 @@ export const SceneCombinations: React.FC = () => {
 			<Overlay>
 				{/* two pairs and their coins */}
 				<g opacity={prog(f, c.how + 20, 14)}>
-					<MC x={175} y={300} kind="L" a={PP} dup={0} s={0.34} beads={0} />
-					<MC x={225} y={300} kind="L" a={TT} dup={0} s={0.34} beads={0} />
-					<MC x={175} y={530} kind="S" a={PP} dup={0} s={0.34} beads={0} />
-					<MC x={225} y={530} kind="S" a={TT} dup={0} s={0.34} beads={0} />
+					<HChrom x={175} y={300} len={96} w={16} col="P" />
+					<HChrom x={225} y={300} len={96} w={16} col="T" />
+					<HChrom x={175} y={530} len={64} w={16} col="P" />
+					<HChrom x={225} y={530} len={64} w={16} col="T" />
 				</g>
-				{!coin1b ? <Coin x={200} y={205} from={c.dir} to={c.dir + 34} face="P" o={prog(f, c.dir - 8, 8)} /> : <Coin x={200} y={205} from={c.own} to={c.own + 36} face="T" />}
-				{!coin1b ? <Coin x={200} y={440} from={c.goes} to={c.goes + 34} face="P" o={prog(f, c.goes - 8, 8)} /> : <Coin x={200} y={440} from={c.own + 10} to={c.own + 46} face="P" />}
+				{!coin1b ? <Coin x={200} y={205} from={c.dir} to={c.dir + 34} face="P" o={prog(f, c.dir - 8, 8)} /> : <Coin x={200} y={205} from={c.own} to={c.own + 36} face="T" o={coinOut} />}
+				{!coin1b ? <Coin x={200} y={440} from={c.goes} to={c.goes + 34} face="P" o={prog(f, c.goes - 8, 8)} /> : <Coin x={200} y={440} from={c.own + 10} to={c.own + 46} face="P" o={coinOut} />}
 				{/* gamete 1 and gamete 2 */}
 				<Cell cx={470} cy={330} rx={96} ry={110} o={prog(f, c.goes, 14)} />
 				<Cell cx={470} cy={610} rx={96} ry={110} o={prog(f, c.own + 30, 14)} />
@@ -77,10 +89,11 @@ export const SceneCombinations: React.FC = () => {
 				{slots4.map((sl, i) => <SlotCell key={'n' + i} cx={SX(sl.col + 2)} cy={SY(sl.row)} l={sl.l} s={sl.s} m="T" o={grow} scale={0.7 + 0.3 * grow} />)}
 				{/* the third pair arrives */}
 				<g opacity={third}>
-					<MC x={175} y={760} kind="M" a={PP} dup={0} s={0.34} beads={0} />
-					<MC x={225} y={760} kind="M" a={TT} dup={0} s={0.34} beads={0} />
+					<HChrom x={175} y={760} len={80} w={16} col="P" />
+					<HChrom x={225} y={760} len={80} w={16} col="T" />
 				</g>
 			</Overlay>
+			<Hand at={c.dir} out={c.tt} x={240} y={168} size={28} w={380} color={INK_SOFT}>coin: which partner goes?</Hand>
 			<Hand at={c.mult} x={96} y={372} size={40} w={260} color={AMBER_INK}>2 ways</Hand>
 			<Hand at={c.mult + 8} x={96} y={578} size={40} w={260} color={AMBER_INK}>2 ways</Hand>
 			<Hand at={c.npairs + 8} x={96} y={822} size={40} w={300} color={AMBER_INK}>and a third pair</Hand>
@@ -101,8 +114,9 @@ export const SceneCombinations: React.FC = () => {
 				<g opacity={prog(f, c.match, 14)}>
 					<Cell cx={1480} cy={640} rx={104} ry={96} />
 					<Cell cx={1720} cy={640} rx={104} ry={96} />
-					{MIX1.map((cc, j) => <MiniBar key={'a' + j} x={1480 + ((j % 12) - 5.5) * 14} y={640 + (j < 12 ? -22 : 24)} h={34} w={7} col={cc} />)}
-					{MIX2.map((cc, j) => <MiniBar key={'b' + j} x={1720 + ((j % 12) - 5.5) * 14} y={640 + (j < 12 ? -22 : 24)} h={34} w={7} col={cc} />)}
+					{[1480, 1720].map((x, g) => <text key={g} x={x} y={652} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 52}} fill={INK}>23</text>)}
+					<Key x={1480} y={748} mix={MIX1.slice(0, 12)} cw={15} />
+					<Key x={1720} y={748} mix={MIX2.slice(0, 12)} cw={15} />
 				</g>
 			</Overlay>
 			<Hand at={c.never} x={1380} y={800} size={44} color={AMBER_INK}>almost never match</Hand>
@@ -112,9 +126,11 @@ export const SceneCombinations: React.FC = () => {
 };
 
 // ---------- 12. Fertilisation and continuity ----------
-const SetBars: React.FC<{cx: number; cy: number; col: Col; o?: number; scale?: number}> = ({cx, cy, col, o = 1, scale = 1}) => (
-	<g opacity={o} transform={`translate(${cx},${cy}) scale(${scale})`}>
-		{Array.from({length: 23}, (_, j) => <MiniBar key={j} x={((j % 12) - 5.5) * 22} y={j < 12 ? -26 : 26} h={36} w={9} col={col} />)}
+/** One set of 23: a count in the gamete's set colour (no drawn bars). */
+const SetBars: React.FC<{cx: number; cy: number; col: Col; o?: number; scale?: number}> = ({cx, cy, col, o = 1}) => (
+	<g opacity={o}>
+		<text x={cx} y={cy + 26} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 80}} fill={col === 'P' ? '#7e3a69' : '#1f7a6f'}>23</text>
+		<text x={cx} y={cy + 66} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 30}} fill={INK_SOFT}>one set</text>
 	</g>
 );
 export const SceneFertilisation: React.FC = () => {
@@ -139,10 +155,8 @@ export const SceneFertilisation: React.FC = () => {
 				</g>
 				<g opacity={z}>
 					<Cell cx={700} cy={430} rx={270} ry={175} />
-					{Array.from({length: 23}, (_, j) => {
-						const x = 700 + ((j % 12) - 5.5) * 38, y = 430 + (j < 12 ? -48 : 48);
-						return <g key={j}><MiniBar x={x - 8} y={y} h={46} w={9} col="P" /><MiniBar x={x + 8} y={y} h={46} w={9} col="T" /></g>;
-					})}
+					<text x={700} y={452} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 80}}><tspan fill="#7e3a69">23</tspan><tspan fill={INK}> + </tspan><tspan fill="#1f7a6f">23</tspan></text>
+					<text x={700} y={510} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 32}} fill={INK_SOFT}>two sets: matching pairs</text>
 				</g>
 				<g opacity={prog(f, c.p23 + 14, 14)}>
 					<Arrow x1={700} y1={625} x2={700} y2={680} at={c.makes - 20} color={INK_SOFT} width={5} />

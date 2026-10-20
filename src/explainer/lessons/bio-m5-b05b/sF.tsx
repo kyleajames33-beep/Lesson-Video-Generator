@@ -3,11 +3,15 @@ import {useCurrentFrame} from 'remotion';
 import {HandText, Enter, Countdown} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, Arrow, Cell, CELL_FILL, CELL_LINE, Chrom, Col, CX, DrawPath, Fibre, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, Kind, lerp, MiniBar, Num, Overlay, PArt, PenTap, Pill, PLUM, PL, pH, Pole, prog, S, Scribble, TEALC, Tick, vis, clamp01, MC, PP, TT, COL, PCell, poleDX,
+	AMBER, AMBER_INK, CELL_FILL, CELL_LINE, Col, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, Kind, lerp, Num, Overlay, PArt, Pill, PLUM, PL, prog, S, Scribble, TEALC, Tick, vis, clamp01,
 } from './shared';
+import {CD, HCell, HChrom, Panel, PL as Plate88, Stage} from '../bio-m5-b05a/cd';
 import {TrackStrip} from './sE';
 
 const GREY = '#7a8088';
+// Revision 7: the counted models in feedback are the clean coded diagram (outline cells, large chromosomes).
+const MiniBar: React.FC<{x: number; y: number; h?: number; col: Col; o?: number; w?: number}> = ({x, y, h = 40, col, o = 1, w = 10}) => (o > 0.01 ? <HChrom x={x} y={y + h * 0.08} len={h} w={Math.max(9, w * 1.15)} col={col} o={o} disc={0.9} /> : null);
+const Cell: React.FC<{cx: number; cy: number; rx: number; ry?: number; o?: number}> = ({cx, cy, rx, ry, o = 1}) => <HCell cx={cx} cy={cy} rx={rx} ry={ry} o={o} sw={3.5} />;
 
 // ---------- 14. Compare ----------
 const RY = [335, 440, 545, 650, 755, 860];
@@ -45,19 +49,19 @@ export const SceneCompare: React.FC = () => {
 			<Txt at={c.four} x={CE.x} y={RY[1] - 20} w={CE.w}>4 cells</Txt>
 			<Txt at={c.half} x={CE.x} y={RY[2] - 36} w={CE.w}>half the number: 2 in each of four cells</Txt>
 			<Txt at={c.usual} x={CE.x} y={RY[3] - 38} w={CE.w}>usually different</Txt>
-			<Txt at={c.usual + 14} x={CE.x} y={RY[3] + 6} w={CE.w} size={26} color={INK_SOFT} weight={600}><span style={{whiteSpace: 'pre'}}>{'A B D   ·   A b D   ·   a B d   ·   a b d'}</span></Txt>
+			<Txt at={c.usual + 14} x={CE.x} y={RY[3] + 6} w={CE.w} size={26} color={INK_SOFT} weight={600}><span style={{whiteSpace: 'pre'}}>{'A B d   ·   A b d   ·   a B D   ·   a b D'}</span></Txt>
 			<Txt at={c.meiPairs} x={CE.x} y={RY[4] - 36} w={440} size={32}>homologous pairs, side by side</Txt>
 			<Txt at={c.meiSep} x={CE.x} y={RY[5] - 40} w={CE.w} size={30}>first, homologous partners; second, sister chromatids</Txt>
 			<Overlay>
 				{/* tiny pictures of what lines up */}
 				<g opacity={prog(f, c.mOwn + 20, 14)}>
-					{[0, 1, 2, 3].map(i => <Chrom key={i} x={1120} y={RY[4] + (i - 1.5) * 25} kind="S" color={i % 2 ? TEALC : PLUM} dup={1} coil={1} s={0.24} />)}
+					{[0, 1, 2, 3].map(i => <HChrom key={i} x={1120} y={RY[4] - 38 + i * 26} len={22} w={9} col={i % 2 ? 'T' : 'P'} dup={1} disc={0.7} />)}
 				</g>
 				<g opacity={prog(f, c.meiPairs + 20, 14)}>
-					<Chrom x={1730} y={RY[4] - 22} kind="L" color={PLUM} dup={1} coil={1} s={0.3} />
-					<Chrom x={1776} y={RY[4] - 22} kind="L" color={TEALC} dup={1} coil={1} s={0.3} />
-					<Chrom x={1730} y={RY[4] + 28} kind="S" color={PLUM} dup={1} coil={1} s={0.3} />
-					<Chrom x={1776} y={RY[4] + 28} kind="S" color={TEALC} dup={1} coil={1} s={0.3} />
+					<HChrom x={1724} y={RY[4] - 20} len={46} w={10} col="P" dup={1} />
+					<HChrom x={1758} y={RY[4] - 20} len={46} w={10} col="T" dup={1} />
+					<HChrom x={1724} y={RY[4] + 30} len={30} w={10} col="P" dup={1} />
+					<HChrom x={1758} y={RY[4] + 30} len={30} w={10} col="T" dup={1} />
 				</g>
 				<line x1={96} x2={1830} y1={RY[0] - 54} y2={RY[0] - 54} stroke="#d8cdb6" strokeWidth={3} strokeDasharray="3 12" strokeLinecap="round" />
 				<rect x={84} y={RY[4] - 62} width={1760} height={124} rx={40} fill="none" stroke={AMBER} strokeWidth={7} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - circ} />
@@ -99,24 +103,30 @@ const AnswerBox: React.FC<{x: number; y: number; w: number; at: number; label: s
 	</Enter>
 );
 
-/** Three homologous pairs of X-shaped chromosomes lined up across the middle (no labels, no stage word). */
-const PAIR_KINDS: Kind[] = ['L', 'M', 'S'];
+/** Three homologous pairs of X-shaped chromosomes lined up across the middle (no labels, no stage word). Revision 7: the
+ *  clean coded model (outline cell drawn by the caller, large chromosomes, fibres from each pole to one partner of each pair). */
+const PAIR_LEN: Record<Kind, number> = {L: 120, M: 96, S: 74};
 export const SixX: React.FC<{cx: number; cy: number; s: number; sp: number; dx?: number; split?: number; sepPartners?: number; hi?: number; poles?: boolean; fib?: number; o?: number; pole?: number}> = ({cx, cy, s, sp, dx = 40, sepPartners = 0, hi = 0, poles = true, fib = 1, o = 1, pole}) => {
 	const pd = pole ?? 340 * s;
+	const kinds: Kind[] = ['L', 'M', 'S'];
 	return (
-	<g opacity={o}>
-		{PAIR_KINDS.map((k, i) => {
-			const y = cy + (i - 1) * sp;
-			const xp = cx - dx - sepPartners, xt = cx + dx + sepPartners;
-			return (
-				<g key={i}>
-					{poles && sepPartners < 1 ? <><Fibre x1={cx - pd} y1={cy} x2={xp - 3} y2={y} p={fib} /><Fibre x1={cx + pd} y1={cy} x2={xt + 3} y2={y} p={fib} /></> : null}
-					<Chrom x={xp} y={y} kind={k} color={PLUM} dup={1} coil={1} s={s} hiA={hi} hiB={hi} />
-					<Chrom x={xt} y={y} kind={k} color={TEALC} dup={1} coil={1} s={s} hiA={hi} hiB={hi} />
-				</g>
-			);
-		})}
-	</g>
+		<g opacity={o}>
+			{poles ? [-1, 1].map(sd => <circle key={sd} cx={cx + sd * pd} cy={cy} r={7} fill="#9a8a6a" />) : null}
+			{kinds.map((k, i) => {
+				const y = cy + (i - 1) * sp;
+				const xp = cx - dx - sepPartners, xt = cx + dx + sepPartners;
+				return (
+					<g key={i}>
+						{poles && sepPartners < 1 ? <>
+							<line x1={cx - pd} y1={cy} x2={cx - pd + (xp - 12 - (cx - pd)) * fib} y2={cy + (y - cy) * fib} stroke="#9a8a6a" strokeWidth={2.6} strokeLinecap="round" />
+							<line x1={cx + pd} y1={cy} x2={cx + pd + (xt + 12 - (cx + pd)) * fib} y2={cy + (y - cy) * fib} stroke="#9a8a6a" strokeWidth={2.6} strokeLinecap="round" />
+						</> : null}
+						<HChrom x={xp} y={y} len={PAIR_LEN[k] * s * 1.6} w={26 * s * 1.4} col="P" dup={1} hi={hi} />
+						<HChrom x={xt} y={y} len={PAIR_LEN[k] * s * 1.6} w={26 * s * 1.4} col="T" dup={1} hi={hi} />
+					</g>
+				);
+			})}
+		</g>
 	);
 };
 
@@ -140,7 +150,8 @@ export const SceneAttempt: React.FC = () => {
 			<div style={{opacity: prog(f, c.pea, 16)}}><PArt a={PL.pod} x={X1 + 506} y={Y + 96} w={250} /></div>
 			<Overlay>
 				<g opacity={prog(f, c.pea + 10, 14)}>
-					<Cell cx={X1 + 630} cy={Y + 250} rx={96} ry={72} nuc={1} />
+					{/* revision 7: the painted interphase cell, small (nothing is counted on it) */}
+					<Stage cam={{zoom: 1, fx: 1000, fy: 960}} base={{cx: X1 + 630, cy: Y + 250, size: 190}} win={null} srcs={[CD('interphase')]}><Plate88 src={CD('interphase')} /></Stage>
 				</g>
 			</Overlay>
 			<Note x={X1 + 30} y={Y + 92} w={470} at={c.pea} size={26}>A pea plant body cell has 14 chromosomes, in 7 homologous pairs. Assume no crossing over. A gamete of this plant joins a gamete from another pea plant of the same kind. A combination means which chromosome of each pair a gamete carries.</Note>
@@ -153,8 +164,8 @@ export const SceneAttempt: React.FC = () => {
 			{/* 2: a cell part-way through a division */}
 			<Overlay>
 				<g opacity={prog(f, c.cell, 14)}>
-					<PCell cx={cc[0]} cy={cc[1]} rx={265} ry={190} spindle={1} />
-					<SixX cx={cc[0]} cy={cc[1] - 10} s={0.5} sp={92} dx={40} pole={poleDX(265)} />
+					<HCell cx={cc[0]} cy={cc[1]} rx={265} ry={200} sw={3.5} />
+					<SixX cx={cc[0]} cy={cc[1]} s={0.5} sp={100} dx={36} pole={185} />
 				</g>
 			</Overlay>
 			<Note x={X2 + 30} y={Y + 92} w={860} at={c.cell} size={26}>A cell of another species that is making gametes is part-way through a division. Assume no mistakes.</Note>
@@ -202,12 +213,12 @@ export const SceneFeedbackOne: React.FC = () => {
 					<g key={i}>
 						<MiniBar x={PX(i) - 14} y={320} h={74 - (i % 3) * 12} col="P" w={12} o={prog(f, c.one, 14)} />
 						<MiniBar x={PX(i) + 14} y={320} h={74 - (i % 3) * 12} col="T" w={12} o={prog(f, c.one, 14)} />
-						<Coin2 x={PX(i)} y={236} from={flipAt(i)} to={flipAt(i) + 26} face={ch} />
+						<Coin2 x={PX(i)} y={236} from={flipAt(i)} to={flipAt(i) + 26} face={ch} out={c.is128 + 20} />
 					</g>
 				))}
 				{/* one from each pair into the gamete */}
 				<g opacity={prog(f, c.seven - 10, 14)}>
-					<ellipse cx={PX(3)} cy={470} rx={470} ry={62} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={5} />
+					<ellipse cx={PX(3)} cy={470} rx={420} ry={66} fill={CELL_FILL} stroke={CELL_LINE} strokeWidth={4} />
 				</g>
 				{choose.map((ch, i) => {
 					const t = prog(f, c.each + i * 4, 24);
@@ -229,7 +240,7 @@ export const SceneFeedbackOne: React.FC = () => {
 				<Tick x={1860} y={570} at={c.plus + 30} s={1} />
 			</Overlay>
 			<Num at={c.seven} x={960} y={330} text="7" size={110} color={AMBER_INK} w={160} />
-			<Hand at={c.seven + 10} x={1100} y={350} size={44} w={380}>in each gamete</Hand>
+			<Hand at={c.seven + 10} x={1100} y={270} size={44} w={380}>in each gamete</Hand>
 			{doub.map((v, i) => (
 				<Enter key={v} at={c.pow + 6 + i * 6} style={{position: 'absolute', left: 150 + i * 110, top: 600}}>
 					<div style={{width: 94, textAlign: 'center', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: i === 6 ? 40 : 38, color: i === 6 ? AMBER_INK : INK, background: '#fffdf8', border: `3px solid ${i === 6 ? AMBER : '#d8cdb6'}`, borderRadius: 14, padding: '6px 0'}}>{v}</div>
@@ -243,14 +254,14 @@ export const SceneFeedbackOne: React.FC = () => {
 		</>
 	);
 };
-const Coin2: React.FC<{x: number; y: number; from: number; to: number; face: Col}> = ({x, y, from, to, face}) => {
+const Coin2: React.FC<{x: number; y: number; from: number; to: number; face: Col; out?: number}> = ({x, y, from, to, face, out}) => {
 	const f = useCurrentFrame();
 	const t = clamp01((f - from) / Math.max(1, to - from));
 	const ang = t * 2 * Math.PI * 2;
 	const sy = Math.abs(Math.cos(ang));
 	const showing: Col = t >= 1 ? face : (Math.floor((ang + Math.PI / 2) / Math.PI) % 2 === 0 ? face : (face === 'P' ? 'T' : 'P'));
 	const lift = Math.sin(t * Math.PI) * 18;
-	return <ellipse cx={x} cy={y - lift} rx={20} ry={Math.max(2, 20 * sy)} fill={showing === 'P' ? PLUM : TEALC} stroke={INK} strokeWidth={3} opacity={clamp01((f - from + 30) / 8)} />;
+	return <ellipse cx={x} cy={y - lift} rx={20} ry={Math.max(2, 20 * sy)} fill={showing === 'P' ? PLUM : TEALC} stroke={INK} strokeWidth={3} opacity={clamp01((f - from + 30) / 8) * (out === undefined ? 1 : 1 - prog(f, out, 14))} />;
 };
 
 // ---------- 17. Feedback, item two (take02, 16 Oct: brief, one crossed mistake) ----------
@@ -268,7 +279,9 @@ export const SceneFeedbackTwo: React.FC = () => {
 		<>
 			<Heading items={[[0, 'Question 2: which division?']]} size={60} />
 			<Overlay>
-				<PCell cx={cx} cy={cy} rx={380} ry={265} spindle={1 - apart} />
+				<Panel x={140} y={190} w={1000} h={760} />
+				<HCell cx={cx} cy={cy} rx={380} ry={265} sw={4} />
+				{apart < 0.02 ? [-1, 1].map(sd => <circle key={sd} cx={cx + sd * 300} cy={cy} r={7} fill="#9a8a6a" />) : null}
 				<SixXApart cx={cx} cy={cy} apart={apart} hi={lit} showFib={apart < 0.02} />
 				<g opacity={prog(f, c.nosplit, 14) * (1 - apart)}>
 					<Scribble cx={cx - 44} cy={cy - 150} rx={36} ry={36} at={c.nosplit + 10} color={AMBER_INK} seed={3} />
@@ -276,13 +289,13 @@ export const SceneFeedbackTwo: React.FC = () => {
 				</g>
 			</Overlay>
 			<Hand at={c.meta} x={cx - 330} y={cy - 345} size={50} w={680} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>pairs lined up: meiosis I</span></Hand>
-			<Hand at={c.lined + 6} out={c.three + 16} x={cx - 300} y={cy + 275} size={46} w={600} color={INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pairs, side by side</span></Hand>
+			<Hand at={c.lined + 6} out={c.three + 16} x={cx - 300} y={cy + 290} size={46} w={600} color={INK}><span style={{display: 'block', textAlign: 'center'}}>homologous pairs, side by side</span></Hand>
 			<Hand at={c.three + 30} x={cx - 480} y={cy - 40} size={60} w={80} color={PLUM}>3</Hand>
 			<Hand at={c.three + 36} x={cx + 400} y={cy + 30} size={60} w={80} color={TEALC}>3</Hand>
-			<Hand at={c.three + 24} x={cx - 300} y={cy + 275} size={46} w={600} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>3 + 3: each cell holds 3 chromosomes</span></Hand>
-			<Hand at={c.nosplit + 6} x={1100} y={250} size={42} w={760} color={INK}>no centromeres split: still X shapes</Hand>
-			<Hand at={c.separates} x={1100} y={330} size={42} w={760} color={INK}>this division separates the partners</Hand>
-			<Wrong at={c.w1} x={1100} y={450} text="6 in each cell" why="kept the number, but meiosis I halves it" w={760} />
+			<Hand at={c.three + 24} x={cx - 300} y={cy + 290} size={46} w={600} color={AMBER_INK}><span style={{display: 'block', textAlign: 'center'}}>3 + 3: each cell holds 3 chromosomes</span></Hand>
+			<Hand at={c.nosplit + 6} x={1190} y={250} size={42} w={660} color={INK}>no centromeres split: still X shapes</Hand>
+			<Hand at={c.separates} x={1190} y={330} size={42} w={660} color={INK}>this division separates the partners</Hand>
+			<Wrong at={c.w1} x={1190} y={450} text="6 in each cell" why="kept the number, but meiosis I halves it" w={660} />
 		</>
 	);
 };
@@ -298,9 +311,12 @@ const SixXApart: React.FC<{cx: number; cy: number; apart: number; hi: number; sh
 				const yy = lerp(y, yEnd, apart);
 				return (
 					<g key={i}>
-						{showFib ? <><Fibre x1={cx - poleDX(380)} y1={cy} x2={xp - 3} y2={y} p={1} /><Fibre x1={cx + poleDX(380)} y1={cy} x2={xt + 3} y2={y} p={1} /></> : null}
-						<Chrom x={xp} y={yy} kind={k} color={PLUM} dup={1} coil={1} s={1.05} hiA={hi} hiB={hi} />
-						<Chrom x={xt} y={yy} kind={k} color={TEALC} dup={1} coil={1} s={1.05} hiA={hi} hiB={hi} />
+						{showFib ? <>
+							<line x1={cx - 300} y1={cy} x2={xp - 16} y2={y} stroke="#9a8a6a" strokeWidth={2.8} strokeLinecap="round" />
+							<line x1={cx + 300} y1={cy} x2={xt + 16} y2={y} stroke="#9a8a6a" strokeWidth={2.8} strokeLinecap="round" />
+						</> : null}
+						<HChrom x={xp} y={yy} len={PAIR_LEN[k] * 1.05} w={28} col="P" dup={1} hi={hi} />
+						<HChrom x={xt} y={yy} len={PAIR_LEN[k] * 1.05} w={28} col="T" dup={1} hi={hi} />
 					</g>
 				);
 			})}

@@ -3,8 +3,11 @@ import {useCurrentFrame} from 'remotion';
 import {Enter, HandText} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, CELL_FILL, CELL_LINE, Cell, FONT_DISPLAY, FONT_HAND, Heading, INK, INK_SOFT, lerp, MC, MiniBar, Overlay, PP, PLUM, TEALC, TT, prog, S, Arrow, DrawPath, PCell,
+	AMBER, AMBER_INK, FONT_DISPLAY, FONT_HAND, Heading, INK, INK_SOFT, lerp, Overlay, prog, S,
 } from './shared';
+import {HCell, HChrom} from '../bio-m5-b05a/cd';
+// Revision 7: the memory icons are the clean coded model (large chromosomes, outline cells).
+const Cell: React.FC<{cx: number; cy: number; rx: number; ry?: number; o?: number}> = ({cx, cy, rx, ry, o = 1}) => <HCell cx={cx} cy={cy} rx={rx} ry={ry} o={o} sw={3.5} />;
 
 const Underlined: React.FC<{at: number; children: React.ReactNode}> = ({at, children}) => {
 	const f = useCurrentFrame();
@@ -37,11 +40,11 @@ export const SceneMemory: React.FC = () => {
 			{/* line 1 */}
 			<Overlay>
 				<g opacity={prog(f, c.l1, 14)}>
-					<MC x={lerp(165, 110, a1)} y={290} kind="L" a={PP} dup={1} beads={0} s={0.56} o={1} />
-					<MC x={lerp(215, 275, a1)} y={290} kind="L" a={TT} dup={1} beads={0} s={0.56} o={1} />
+					<HChrom x={lerp(165, 110, a1)} y={290} len={120} w={24} col="P" dup={1} />
+					<HChrom x={lerp(215, 275, a1)} y={290} len={120} w={24} col="T" dup={1} />
 				</g>
 				<g opacity={prog(f, c.l2, 14)}>
-					<MC x={lerp(190, 120, a2)} y={540} kind="L" a={PP} b={PP} dup={1} sep={lerp(0, 40, a2)} beads={0} s={0.56} />
+					<HChrom x={lerp(190, 120, a2)} y={540} len={120} w={24} col="P" dup={1} sep={lerp(0, 40, a2)} />
 				</g>
 				<g opacity={prog(f, c.l3, 14)}>
 					<Cell cx={150} cy={780} rx={70} ry={52} />
@@ -68,9 +71,9 @@ export const SceneMemory: React.FC = () => {
 			<Enter at={c.next} style={{position: 'absolute', left: 1040, top: 790}}>
 				<div style={{display: 'flex', alignItems: 'center', gap: 22, background: '#fffdf8', border: `4px solid ${AMBER_INK}`, borderRadius: 28, padding: '10px 28px 14px', maxWidth: 650}}>
 					<svg width={150} height={100} viewBox="0 0 150 100">
-						<PCell cx={44} cy={50} rx={40} ry={32} />
+						<HCell cx={44} cy={50} rx={40} ry={32} sw={3} />
 						<circle cx={44} cy={50} r={14} fill="rgba(226,214,238,0.62)" stroke="#5b4d70" strokeWidth={3} />
-						<PCell cx={112} cy={50} rx={30} ry={24} />
+						<HCell cx={112} cy={50} rx={30} ry={24} sw={3} />
 						<path d="M92,50 q6,-10 12,0 t12,0 t12,0" fill="none" stroke="#6b6358" strokeWidth={3.5} strokeLinecap="round" />
 					</svg>
 					<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, color: AMBER_INK, lineHeight: 1.05}}>Next: how DNA is arranged in different cells</span>

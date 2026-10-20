@@ -3,12 +3,14 @@ import {useCurrentFrame} from 'remotion';
 import {Enter} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, anaOffsets, ANA_GRID, Arrow, Bracket, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyCross, GreyTag, Hand, Heading,
-	INK, INK_SOFT, lerp, META_Y, NUC_FILL, NUC_LINE, NUC_X, Overlay, PenTap, Pill, Pole, prog, RX, RY, S, Scribble, vis, clamp01, PLUM, TEALC, CREAM, PCell, poleDX, ANA_X,
+	AMBER, AMBER_INK, anaOffsets, Arrow, CH, CX, CY, DrawPath, FONT_DISPLAY, FONT_HAND, Hand, Heading,
+	INK, INK_SOFT, lerp, META_Y, Overlay, PenTap, Pill, prog, RX, RY, S, vis, clamp01, CREAM, ANA_X,
 } from './shared';
+import {AN, CD, camAt, Dissolve, HCell, HChrom, Morph, Panel, PL, Ring, Stage, toS} from './cd';
+import type {Cam, HCol} from './cd';
+import {hcol} from './s1';
+import {REACH, SPLIT} from './s3';
 
-const PLUM_INK = '#7e3a69';
-const TEAL_INK = '#1f7a6f';
 const GREY = '#7a8088';
 
 const Cen: React.FC<{at: number; out?: number; x: number; y: number; w?: number; size?: number; color?: string; hand?: boolean; weight?: number; children: React.ReactNode}> = ({at, out, x, y, w = 300, size = 46, color = INK, hand = true, weight = 700, children}) => (
@@ -25,9 +27,13 @@ const Num: React.FC<{at: number; x: number; y: number; text: string; color?: str
 };
 
 // ---------- 5. Tracking the numbers ----------
+// Revision 7: the mini cells above the columns are the clean coded model (outline cells, large chromosomes).
 const BX = [610, 920, 1230, 1540];
-const MS = 0.42;
-const MINI_X = [-60, -20, 20, 60];
+const ICY = 310;
+const ML = {L: 70, S: 48};
+const MW = 10;
+/** Mini model: long pair on the upper row, short pair on the lower row, plum left. */
+const MINI: {i: number; dx: number; dy: number}[] = [{i: 0, dx: -16, dy: -26}, {i: 1, dx: 16, dy: -26}, {i: 2, dx: -16, dy: 30}, {i: 3, dx: 16, dy: 30}];
 export const SceneTracking: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('tracking'), {
@@ -36,15 +42,8 @@ export const SceneTracking: React.FC = () => {
 		h4646: '46 at each', hnew: 'then 46 in each', halved: 'never halved', doubled: 'doubled the DNA', shared: 'shared it back',
 	} as Record<string, string | [string, number]>);
 	const col = (i: number) => BX[i];
-	const ICY = 310;
 	const iconO = (at: number) => prog(f, at - 4, 16);
 	const eAna = prog(f, c.becomes - 40, 40);
-	const bars = (kind: 'start' | 'copied') => CH.map((ch, i) => ({ch, x: MINI_X[i], dup: kind === 'copied' ? 1 : 0}));
-	const chipX = (k: number, grouped: number) => {
-		const base = -104 + k * 30 + Math.floor(k / 2) * 12;
-		const gap = k < 4 ? -70 : 70;
-		return lerp(base, gap + ((k % 4) - 1.5) * 28, grouped);
-	};
 	const chips8 = Array.from({length: 8}, (_, k) => ({k, ch: CH[Math.floor(k / 2)]}));
 	const grouped = prog(f, c.fourEnd, 24);
 	const regroup = (k: number) => {
@@ -57,6 +56,7 @@ export const SceneTracking: React.FC = () => {
 	const pulse = (a: number) => 0.55 * Math.sin(Math.PI * prog(f, a, 36));
 	const loop = prog(f, c.halved, 30);
 	const arrowsBack = prog(f, c.shared, 24);
+	const mini = (cx: number, dup: number, sep = 0, s = 1) => MINI.map(m => <HChrom key={m.i} x={cx + m.dx * s} y={ICY + m.dy * s} len={ML[CH[m.i].kind as 'L' | 'S'] * s} w={MW * s} col={hcol(CH[m.i].color)} dup={dup} sep={sep} />);
 	return (
 		<>
 			<Heading items={[[0, 'Tracking the numbers']]} size={64} />
@@ -67,30 +67,14 @@ export const SceneTracking: React.FC = () => {
 			<Cen at={c.divides - 6} x={col(3)} y={168} size={46} color={INK_SOFT}>each new cell</Cen>
 			<Overlay>
 				{/* mini cells */}
-				<g opacity={iconO(c.four)}>
-					<PCell cx={col(0)} cy={ICY} rx={108} ry={82} />
-					{bars('start').map((b, i) => <Chrom key={i} x={col(0) + b.x} y={ICY} kind={b.ch.kind} color={b.ch.color} dup={0} s={MS} />)}
-				</g>
-				<g opacity={iconO(c.still)}>
-					<PCell cx={col(1)} cy={ICY} rx={108} ry={82} />
-					{bars('copied').map((b, i) => <Chrom key={i} x={col(1) + b.x} y={ICY} kind={b.ch.kind} color={b.ch.color} dup={prog(f, c.still + 4, 24)} s={MS} />)}
-				</g>
-				<g opacity={iconO(c.becomes - 40)}>
-					<PCell cx={col(2)} cy={ICY} rx={150} ry={82} />
-					{CH.map((ch, i) => {
-						const gx = ANA_GRID[i][0] * 0.5, gy = ANA_GRID[i][1] * 0.5;
-						const bx0 = col(2), by0 = ICY + META_Y[i] * 0.2;
-						return (
-							<Chrom key={i} x={bx0} y={by0} kind={ch.kind} color={ch.color} dup={1} coil={1} bend={eAna}
-								xa={lerp(0, -100 + gx - 0, eAna)} xb={lerp(0, 100 + gx, eAna)} ya={lerp(0, ICY + gy - by0, eAna)} yb={lerp(0, ICY + gy - by0, eAna)} sep={1} s={0.4} />
-						);
-					})}
-				</g>
+				<g opacity={iconO(c.four)}><HCell cx={col(0)} cy={ICY} rx={108} ry={82} sw={3} />{mini(col(0), 0)}</g>
+				<g opacity={iconO(c.still)}><HCell cx={col(1)} cy={ICY} rx={108} ry={82} sw={3} />{mini(col(1), prog(f, c.still + 4, 24))}</g>
+				<g opacity={iconO(c.becomes - 40)}><HCell cx={col(2)} cy={ICY} rx={lerp(108, 150, eAna)} ry={82} sw={3} />{mini(col(2), 1, 84 * eAna)}</g>
 				<g opacity={iconO(c.divides)}>
 					{[-1, 1].map(side => (
 						<g key={side}>
-							<PCell cx={col(3) + side * 80} cy={ICY} rx={70} ry={66} />
-							{CH.map((ch, i) => <Chrom key={i} x={col(3) + side * 80 + (i - 1.5) * 30} y={ICY} kind={ch.kind} color={ch.color} dup={0} s={0.3} />)}
+							<HCell cx={col(3) + side * 80} cy={ICY} rx={70} ry={66} sw={3} />
+							{mini(col(3) + side * 80, 0, 0, 0.8)}
 						</g>
 					))}
 				</g>
@@ -113,7 +97,7 @@ export const SceneTracking: React.FC = () => {
 				})}
 				{[-1, 1].map(side => (
 					<g key={side} opacity={prog(f, c.newFour + 10, 14)}>
-						{CH.map((ch, i) => <Chrom key={i} x={col(3) + side * 70 + (i - 1.5) * 30} y={574} kind={ch.kind} color={ch.color} dup={0} s={0.3} />)}
+						{CH.map((ch, i) => <HChrom key={i} x={col(3) + side * 70 + (i - 1.5) * 26} y={574} len={ML[ch.kind as 'L' | 'S'] * 0.8} w={8} col={hcol(ch.color)} />)}
 					</g>
 				))}
 				{/* the human row */}
@@ -129,7 +113,7 @@ export const SceneTracking: React.FC = () => {
 					<path d={`M${col(3)},${886} C${col(3)},${960} ${col(0)},${960} ${col(0)},${886}`} fill="none" stroke={AMBER_INK} strokeWidth={6} strokeLinecap="round" strokeDasharray="14 12" />
 					<path d={`M${col(0) - 16},${912} L${col(0)},${886} L${col(0) + 18},${910}`} fill="none" stroke={AMBER_INK} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
 				</g>
-				<GreyCross x={1790} y={726} at={c.halved + 14} s={0.9} />
+				<GreyCrossL x={1790} y={726} at={c.halved + 14} s={0.9} />
 			</Overlay>
 			{/* row labels */}
 			<Hand at={c.track + 24} x={96} y={398} size={52} color={AMBER_INK}>model cell</Hand>
@@ -159,93 +143,98 @@ export const SceneTracking: React.FC = () => {
 		</>
 	);
 };
+const GreyCrossL: React.FC<{x: number; y: number; at: number; s?: number}> = ({x, y, at, s = 1}) => (
+	<g>
+		<DrawPath d={`M${x - 22 * s},${y - 22 * s} L${x + 22 * s},${y + 22 * s}`} at={at} dur={8} color={GREY} width={7} />
+		<DrawPath d={`M${x + 22 * s},${y - 22 * s} L${x - 22 * s},${y + 22 * s}`} at={at + 6} dur={8} color={GREY} width={7} />
+	</g>
+);
 
 // ---------- 6a. Why the two new cells are identical ----------
-const K = 0.7;
-const MC: [number, number] = [CX, 540];
+// Revision 7: the painted metaphase cell; its chromatids part (painted pieces), the two new nuclei each hold one copy
+// of every chromosome, then back to metaphase for the checkpoint: ticks on both attachments of every centromere.
+const C6: Cam = {zoom: 1.45, fx: 1000, fy: 990};
 export const SceneIdentical: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('identical'), {
 		why: 'Why are the two', copies: 'copies of the same', pull: 'pull the two', opp: 'opposite ends', every: 'a copy of every', both: 'both sets', checks: 'also checks', attached: 'attached from both', before: 'before anaphase', starts: 'starts',
 	});
-	const PL = MC[0] - poleDX(RX * K * 1.05), PR = MC[0] + poleDX(RX * K * 1.05);
-	const my = (i: number) => MC[1] + META_Y[i] * K;
-	const hi = vis(f, c.copies, c.pull - 10, 10);
-	const fl = (i: number, ab: 'A' | 'B') => prog(f, c.pull + i * 7 + (ab === 'B' ? 3 : 0), 60);
-	const slotL = (i: number): [number, number] => [300 + ANA_GRID[i][0] * 1.0, 560 + ANA_GRID[i][1] * 0.8];
-	const slotR = (i: number): [number, number] => [1620 + ANA_GRID[i][0] * 1.0, 560 + ANA_GRID[i][1] * 0.8];
-	const gate = prog(f, c.checks, 22) * (1 - prog(f, c.before, 22));
-	const fixed = prog(f, c.attached, 20);
-	const proceed = prog(f, c.starts, 30);
-	const missing = 2;
-	const e = 0.05 * proceed;
-	const launched = (i: number, ab: 'A' | 'B') => f >= c.pull + i * 7 + (ab === 'B' ? 3 : 0);
+	const cam = camAt(f, [[0, C6.zoom, C6.fx, C6.fy]]);
+	const P = (x: number, y: number) => toS(cam, x, y);
+	const tSplit = prog(f, c.pull, 60);
+	const tReach = prog(f, c.every - 10, 40);
+	const tBack = prog(f, c.checks - 14, 26);
+	const hi = vis(f, c.copies, c.pull - 6, 10);
+	const gate = prog(f, c.checks + 6, 22) * (1 - prog(f, c.before + 10, 22));
+	const k = 0.41 * C6.zoom;
+	const lp = P(...AN.metaphase.cen[0]);
+	const top = P(1000, 560);
+	const nucL = P(...AN.telophase.nuc[0]), nucR = P(...AN.telophase.nuc[1]);
+	const tickAt = (i: number) => c.attached + i * 7;
 	return (
 		<>
-			<Heading items={[[0, 'Why are the two new cells identical?']]} size={64} />
+			<Heading items={[[0, 'Why are the two new cells identical?'], [c.checks - 6, 'A check before anaphase']]} size={64} />
 			<Overlay>
-				{/* the two new cells to be */}
-				{[300, 1620].map((x, k) => (
-					<g key={k} opacity={prog(f, c.pull - 10, 20)}>
-						<PCell cx={x} cy={560} rx={205} ry={160} />
+				<Stage cam={cam} srcs={[CD('metaphase'), CD('anaphase'), CD('telophase'), CD('metaphase', true), CD('anaphase', true), CD('telophase', true)]}>
+					{tBack > 0.5 ? (
+						<>
+							<PL src={CD('metaphase')} />
+						</>
+					) : tReach > 0 ? (
+						<Morph A={CD('anaphase')} B={CD('telophase')} t={tReach} pieces={REACH} />
+					) : <Morph A={CD('metaphase')} B={CD('anaphase')} t={tSplit} pieces={SPLIT} />}
+					{/* back to metaphase for the checkpoint */}
+					{tBack > 0.004 && tBack < 1 ? <Dissolve a={CD('telophase')} b={CD('metaphase')} t={tBack} /> : null}
+				</Stage>
+				{/* the two chromatids of one chromosome: identical copies */}
+				<g opacity={hi}>
+					<ellipse cx={lp[0] - 12 * k * 2} cy={lp[1]} rx={30 * k * 2} ry={100 * k} fill="none" stroke={AMBER} strokeWidth={5} />
+					<ellipse cx={lp[0] + 12 * k * 2} cy={lp[1]} rx={30 * k * 2} ry={100 * k} fill="none" stroke={AMBER} strokeWidth={5} />
+				</g>
+				<g opacity={vis(f, c.copies + 10, c.pull, 8)}><DrawPath d={`M${lp[0] + 60},${lp[1] - 10} Q${lp[0] + 300},${lp[1] - 80} ${1560},${290}`} at={c.copies + 10} dur={14} color={AMBER_INK} width={4} /></g>
+				{/* arrows to opposite ends */}
+				<g opacity={vis(f, c.opp, c.every + 20, 10)}>
+					<Arrow x1={P(940, 1340)[0]} y1={P(940, 1340)[1]} x2={P(560, 1340)[0]} y2={P(560, 1340)[1]} at={c.opp} color={AMBER_INK} />
+					<Arrow x1={P(1060, 1340)[0]} y1={P(1060, 1340)[1]} x2={P(1440, 1340)[0]} y2={P(1440, 1340)[1]} at={c.opp + 6} color={AMBER_INK} />
+				</g>
+				{/* both sets in each new nucleus */}
+				<g opacity={vis(f, c.every + 20, c.checks - 14, 10)}>
+					<Ring x={nucL[0]} y={nucL[1]} r={AN.telophase.r * k + 10} w={5} />
+					<Ring x={nucR[0]} y={nucR[1]} r={AN.telophase.r * k + 10} w={5} />
+				</g>
+				{/* checkpoint: a gate on the line, a tick on each attachment */}
+				<g opacity={gate} transform={`translate(0,${-(1 - gate) * 30})`}>
+					<g transform={`translate(${top[0]},${top[1] - 40})`}>
+						<circle r={32} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={6} />
+						<line x1={22} y1={22} x2={52} y2={52} stroke={AMBER_INK} strokeWidth={9} strokeLinecap="round" />
 					</g>
-				))}
-				{/* the cell at metaphase */}
-				<CellBody cx={MC[0]} cy={MC[1]} rx={RX * K * 1.05} ry={RY * K * 1.05} spindle={1} />
-				{CH.map((ch, i) => {
-					const y = my(i);
-					const fm = i === missing ? fixed : 1;
+					<line x1={top[0]} y1={top[1] + 4} x2={top[0]} y2={P(1000, 1360)[1]} stroke={AMBER_INK} strokeWidth={4} strokeDasharray="4 12" strokeLinecap="round" opacity={0.8} />
+				</g>
+				{AN.metaphase.cen.map(([x, y], i) => {
+					const [sx, sy] = P(x, y);
+					const o = vis(f, tickAt(i), c.starts + 10, 8);
 					return (
-						<g key={i}>
-							<Fibre x1={PL} y1={MC[1]} x2={MC[0] - 4} y2={y} p={1} />
-							<Fibre x1={PR} y1={MC[1]} x2={MC[0] + 4} y2={y} p={fm} />
+						<g key={i} opacity={o}>
+							<path d={`M${sx - 92},${sy} l9,10 l18,-20`} fill="none" stroke="#2f8a5b" strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
+							<path d={`M${sx + 64},${sy} l9,10 l18,-20`} fill="none" stroke="#2f8a5b" strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
 						</g>
 					);
 				})}
-				{f >= c.checks && fixed < 1 ? <line x1={PR} y1={MC[1]} x2={MC[0] + 4} y2={my(missing)} stroke={GREY} strokeWidth={3.5} strokeDasharray="4 11" strokeLinecap="round" opacity={0.8 * (1 - fixed)} /> : null}
-				{/* checkpoint gate */}
-				<g opacity={gate} transform={`translate(0,${-(1 - gate) * 40})`}>
-					<rect x={MC[0] - 12} y={MC[1] - 210} width={24} height={420} rx={8} fill="#fff3d6" stroke={AMBER_INK} strokeWidth={4} opacity={0.8} />
-					{Array.from({length: 7}, (_, k) => <line key={k} x1={MC[0] - 12} y1={MC[1] - 200 + k * 62} x2={MC[0] + 12} y2={MC[1] - 160 + k * 62} stroke={AMBER_INK} strokeWidth={5} />)}
-					<g transform={`translate(${MC[0]},${MC[1] - 250})`}>
-						<circle r={32} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={6} />
-						<line x1={22} y1={22} x2={56} y2={56} stroke={AMBER_INK} strokeWidth={9} strokeLinecap="round" />
-					</g>
+				<g opacity={vis(f, c.checks + 20, c.before, 8)} transform={`translate(${top[0] + 110},${top[1] - 40})`}>
+					<circle r={30} fill="#fffdf8" stroke={GREY} strokeWidth={6} />
+					<line x1={0} y1={0} x2={0} y2={-20} stroke={GREY} strokeWidth={6} strokeLinecap="round" transform={`rotate(${(f - c.checks) * 9})`} />
+					<line x1={0} y1={0} x2={13} y2={0} stroke={GREY} strokeWidth={6} strokeLinecap="round" />
 				</g>
-				{CH.map((ch, i) => {
-					const o = anaOffsets(i, e, 36);
-					return <Chrom key={i} x={MC[0]} y={my(i)} kind={ch.kind} color={ch.color} dup={1} coil={1} s={K} {...o} hiA={i === 0 ? hi : 0} hiB={i === 0 ? hi : 0} />;
-				})}
-				{/* flying copies into the two new cells */}
-				{CH.map((ch, i) => (['A', 'B'] as const).map(ab => {
-					if (!launched(i, ab)) return null;
-					const p = fl(i, ab);
-					const tgt = ab === 'A' ? slotL(i) : slotR(i);
-					const x = lerp(MC[0], tgt[0], p), y = lerp(my(i), tgt[1], p);
-					return <Chrom key={i + ab} x={x} y={y} kind={ch.kind} color={ch.color} dup={0} coil={1} s={lerp(K, 0.7, p)} />;
-				}))}
-				{/* arrows to opposite ends */}
-				<Arrow x1={MC[0] - 190} y1={MC[1] + 250} x2={MC[0] - 420} y2={MC[1] + 250} at={c.opp} color={AMBER_INK} />
-				<Arrow x1={MC[0] + 190} y1={MC[1] + 250} x2={MC[0] + 420} y2={MC[1] + 250} at={c.opp + 6} color={AMBER_INK} />
-				{/* bracket: the equals sign between two copies */}
-				<Bracket x1={MC[0] - 26} x2={MC[0] + 26} y={my(0) + 56} at={c.copies + 8} color={AMBER_INK} />
-				<g opacity={vis(f, c.copies + 10, c.pull, 8)}><DrawPath d={`M${MC[0] + 30},${my(0) + 60} Q${MC[0] + 200},${my(0) + 110} ${MC[0] + 392},${my(0) + 40}`} at={c.copies + 10} dur={14} color={AMBER_INK} width={4} /></g>
-				<g opacity={vis(f, c.checks + 20, c.attached, 8)} transform={`translate(${MC[0] + 230},${MC[1] - 255})`}>
-					<circle r={34} fill="#fffdf8" stroke={GREY} strokeWidth={6} />
-					<line x1={0} y1={0} x2={0} y2={-22} stroke={GREY} strokeWidth={6} strokeLinecap="round" transform={`rotate(${(f - c.checks) * 9})`} />
-					<line x1={0} y1={0} x2={14} y2={0} stroke={GREY} strokeWidth={6} strokeLinecap="round" />
-				</g>
-				<DrawPath d={`M${MC[0] + 110},${my(missing) - 6} l16,18 l32,-38`} at={c.attached + 18} dur={12} color="#2f8a5b" width={8} />
 			</Overlay>
-			<Hand at={c.copies} out={c.pull} x={MC[0] + 400} y={my(0) - 6} size={56} color={AMBER_INK}>= the same chromosome</Hand>
-			<Cen at={c.pull + 40} x={300} y={730} w={420} size={44} color={AMBER_INK}>new cell</Cen>
-			<Cen at={c.pull + 40} x={1620} y={730} w={420} size={44} color={AMBER_INK}>new cell</Cen>
-			<Cen at={c.both} x={300} y={786} w={460} size={40} color={INK}>both sets: long and short</Cen>
-			<Cen at={c.both + 8} x={1620} y={786} w={420} size={40} color={INK}>both sets here too</Cen>
-			<Hand at={c.checks + 4} out={c.before} x={MC[0] + 40} y={MC[1] - 330} size={52} color={AMBER_INK}>checkpoint</Hand>
-			<Hand at={c.checks + 26} out={c.attached} x={MC[0] + 280} y={MC[1] - 290} size={44} color={GREY}>waits</Hand>
-			<Hand at={c.before} x={MC[0] - 330} y={MC[1] - 340} size={48} color="#2f8a5b" w={660}>attached from both ends: go</Hand>
-			<Pill at={c.checks + 40} x={MC[0] - 250} y={880} size={38} color={INK_SOFT}>tracker: 4, 4, 8, 4 chromosomes</Pill>
+			<Hand at={c.copies} out={c.pull} x={1570} y={240} size={48} color={AMBER_INK} w={300}>two copies of the same chromosome</Hand>
+			<Hand at={c.every} out={c.checks - 14} x={96} y={290} size={44} color={AMBER_INK} w={250}>new cell: a copy of every chromosome</Hand>
+			<Hand at={c.every + 8} out={c.checks - 14} x={1580} y={290} size={44} color={AMBER_INK} w={260}>new cell: a copy of every chromosome</Hand>
+			<Hand at={c.both} out={c.checks - 14} x={96} y={470} size={40} color={INK} w={250}>both sets: long and short</Hand>
+			<Hand at={c.both + 8} out={c.checks - 14} x={1580} y={470} size={40} color={INK} w={260}>both sets here too</Hand>
+			<Hand at={c.checks + 4} out={c.before} x={96} y={290} size={50} color={AMBER_INK} w={280}>checkpoint: waits</Hand>
+			<Hand at={c.attached} x={96} y={400} size={42} color="#2f8a5b" w={280}>every chromosome attached from both ends</Hand>
+			<Hand at={c.before} x={96} y={600} size={50} color="#2f8a5b" w={280}>then go</Hand>
+			<Pill at={c.checks + 40} x={1290} y={958} size={34} color={INK_SOFT}>tracker: 4, 4, 8, 4 chromosomes</Pill>
 		</>
 	);
 };
@@ -254,11 +243,12 @@ export const SceneIdentical: React.FC = () => {
 const Mark: React.FC<{x: number; y: number; o?: number}> = ({x, y, o = 1}) => (
 	<g opacity={o}><circle cx={x} cy={y} r={11} fill={AMBER} stroke={AMBER_INK} strokeWidth={3.5} /></g>
 );
+/** A small coded cell with one long plum chromosome (copied or not); the mark sits beside the changed chromatid. */
 const SmallCell: React.FC<{x: number; y: number; r?: number; o?: number; marked?: boolean; dup?: number}> = ({x, y, r = 90, o = 1, marked, dup = 0}) => (
 	<g opacity={o}>
-		<PCell cx={x} cy={y} rx={r} ry={r * 0.86} />
-		<Chrom x={x} y={y} kind="L" color={PLUM} dup={dup} s={0.6} />
-		{marked ? <Mark x={x + (dup > 0 ? 8 : 0) * 0.6} y={y - 22} /> : null}
+		<HCell cx={x} cy={y} rx={r} ry={r * 0.86} sw={3.5} nuc={1} nucR={r * 0.6} />
+		<HChrom x={x} y={y} len={r * 0.95} w={r * 0.15} col="P" dup={dup} />
+		{marked ? <Mark x={x + (dup > 0 ? r * 0.16 : 0) + r * 0.2} y={y - r * 0.24} /> : null}
 	</g>
 );
 const Letters: React.FC<{x: number; y: number; letters: string[]; flip?: number; at: number}> = ({x, y, letters, flip, at}) => {
@@ -277,7 +267,8 @@ const Letters: React.FC<{x: number; y: number; letters: string[]; flip?: number;
 		</g>
 	);
 };
-const RIGHT_5: [number, number][] = [];
+const CL = {L: 130, S: 88};
+const CW = 24;
 export const SceneNotPerfect: React.FC = () => {
 	const f = useCurrentFrame();
 	const c = cues(S('not-perfect'), {
@@ -287,31 +278,30 @@ export const SceneNotPerfect: React.FC = () => {
 	const sA = vis(f, c.mistake - 20, c.ends - 6, 12);
 	const sB = vis(f, c.ends - 4, c.rarely - 8, 12);
 	const sC = prog(f, c.rarely - 4, 20);
-	// stage C: metaphase and the mistake
+	// stage C: metaphase and the mistake, on the clean coded model
 	const travel = prog(f, c.both, 90);
 	const e = 0.05 * prog(f, c.two, 16) + 0.95 * travel;
-	const PL = CX - poleDX(RX + 40), PR = CX + poleDX(RX + 40);
 	const my = (i: number) => CY + META_Y[i];
 	const offs = (i: number) => {
 		if (i !== 0) return anaOffsets(i, e);
 		const y0 = META_Y[0];
 		return {xa: lerp(0, ANA_X - 40, e), ya: lerp(0, 95 - y0, e), xb: lerp(0, ANA_X, e), yb: lerp(0, -y0, e), sep: Math.min(1, e * 25)};
 	};
-	const bend = prog(f, c.both - 4, 30);
 	const glow = vis(f, c.two, c.both, 10);
 	const R = ANA_X;
 	const rightPts: [number, number][] = [[CX + R - 40, CY - 95], [CX + R + 40, CY - 95], [CX + R, CY], [CX + R - 40, CY + 95], [CX + R + 40, CY + 95]];
 	const leftPts: [number, number][] = [[CX - R - 40, CY - 95], [CX - R + 40, CY - 95], [CX - R + 40, CY + 95]];
 	const mag = prog(f, c.checks, 70);
 	const flagO = prog(f, c.checks + 54, 10) * (1 - 0.5 * prog(f, c.notall, 14));
+	const PLp = CX - (RX + 40) * 0.62, PRp = CX + (RX + 40) * 0.62;
 	return (
 		<>
 			<Heading items={[[0, 'Mitosis is accurate, not perfect']]} size={64} />
 			{/* A: a copying mistake */}
 			<div style={{opacity: sA, position: 'absolute', inset: 0}}>
 				<Overlay>
-					<Chrom x={400} y={540} kind="L" color={PLUM} dup={1} s={1.9} />
-					<Mark x={400 + 7 * 1.9 + 4} y={540 - 90} o={prog(f, c.copying + 30, 10)} />
+					<HChrom x={400} y={540} len={300} w={40} col="P" dup={1} />
+					<Mark x={400 + 52} y={540 - 90} o={prog(f, c.copying + 30, 10)} />
 					<DrawPath d="M480,500 Q620,500 790,500" at={c.mistake} dur={20} color={INK_SOFT} width={4} />
 					<circle cx={1010} cy={500} r={225} fill="rgba(255,253,248,0.9)" stroke={AMBER_INK} strokeWidth={8} opacity={prog(f, c.mistake, 14)} />
 					<Letters x={905} y={462} letters={['A', 'C', 'C', 'G']} at={c.mistake + 8} />
@@ -343,31 +333,47 @@ export const SceneNotPerfect: React.FC = () => {
 				<Cen at={c.ends + 20} x={780} y={470} w={300} size={44} color={AMBER_INK}>the mistake</Cen>
 				<Hand at={c.divides + 6} x={560} y={850} size={54} color={AMBER_INK}>one new cell, then its descendants</Hand>
 			</div>
-			{/* C: both chromatids to the same end */}
+			{/* C: both chromatids to the same end (the clean coded model in its own panel) */}
 			<div style={{opacity: sC, position: 'absolute', inset: 0}}>
 				<Overlay>
-					<CellBody rx={RX + 40} spindle={1} />
+					<Panel x={440} y={196} w={1040} h={700} />
+					<HCell cx={CX} cy={CY} rx={RX + 40} ry={RY} sw={4} />
+					<circle cx={PLp} cy={CY} r={8} fill="#9a8a6a" />
+					<circle cx={PRp} cy={CY} r={8} fill="#9a8a6a" />
 					{CH.map((ch, i) => {
 						const o = offs(i);
+						const ax = CX + o.xa, ay = my(i) + o.ya, bx = CX + o.xb, by = my(i) + o.yb;
+						const toB = i === 0 ? clamp01(e * 5) : 0;
 						return (
-							<g key={i}>
-								<Fibre x1={PL} y1={CY} x2={CX + o.xa - 4} y2={my(i) + o.ya} o={i === 0 ? 1 - clamp01(e * 5) : 1} />
-								{i === 0 ? <Fibre x1={PR} y1={CY} x2={CX + o.xa + 4} y2={my(i) + o.ya} o={clamp01(e * 5)} /> : null}
-								<Fibre x1={PR} y1={CY} x2={CX + o.xb + 4} y2={my(i) + o.yb} />
+							<g key={'f' + i}>
+								<line x1={PLp} y1={CY} x2={ax - 4} y2={ay} stroke="#9a8a6a" strokeWidth={2.6} opacity={0.85 * (1 - toB)} />
+								{i === 0 ? <line x1={PRp} y1={CY} x2={ax + 4} y2={ay} stroke="#9a8a6a" strokeWidth={2.6} opacity={0.85 * toB} /> : null}
+								<line x1={PRp} y1={CY} x2={bx + 4} y2={by} stroke="#9a8a6a" strokeWidth={2.6} opacity={0.85} />
 							</g>
 						);
 					})}
-					{CH.map((ch, i) => <Chrom key={i} x={CX} y={my(i)} kind={ch.kind} color={ch.color} dup={1} coil={1} bend={bend} {...offs(i)} da={i === 0 ? 1 : -1} db={1} hiA={i === 0 ? glow : 0} hiB={i === 0 ? glow : 0} />)}
+					{CH.map((ch, i) => {
+						const o = offs(i);
+						const col: HCol = hcol(ch.color);
+						const len = CL[ch.kind as 'L' | 'S'];
+						if (o.sep < 0.05) return <HChrom key={i} x={CX} y={my(i)} len={len} w={CW} col={col} dup={1} hi={i === 0 ? glow : 0} />;
+						return (
+							<g key={i}>
+								<HChrom x={CX + o.xa} y={my(i) + o.ya} len={len} w={CW} col={col} hi={i === 0 ? glow : 0} />
+								<HChrom x={CX + o.xb} y={my(i) + o.yb} len={len} w={CW} col={col} hi={i === 0 ? glow : 0} />
+							</g>
+						);
+					})}
 					<PenTap pts={rightPts} at={[0, 1, 2, 3, 4].map(k => c.extra + 16 + k * 14)} badge={[46, -30]} out={c.short} showPen={false} />
 					<PenTap pts={leftPts} at={[0, 1, 2].map(k => c.short + 16 + k * 14)} badge={[-46, -30]} showPen={false} />
 					{/* the caution mark: a flat grey triangle */}
-					<g opacity={prog(f, c.extra, 14)} transform={`translate(${CX},${CY - 228})`}>
+					<g opacity={prog(f, c.extra, 14)} transform={`translate(${CX},${CY - 268})`}>
 						<path d="M0,-34 L36,28 L-36,28 Z" fill="#e8eaec" stroke={GREY} strokeWidth={6} strokeLinejoin="round" />
 						<line x1={0} y1={-12} x2={0} y2={8} stroke={GREY} strokeWidth={7} strokeLinecap="round" />
 						<circle cx={0} cy={19} r={3.6} fill={GREY} />
 					</g>
 					{/* the check: a magnifier sweeps across and flags the problem */}
-					<g opacity={vis(f, c.checks, c.notall + 30, 8)} transform={`translate(${lerp(CX - 360, CX + 330, mag)},${CY + 270})`}>
+					<g opacity={vis(f, c.checks, c.notall + 30, 8)} transform={`translate(${lerp(CX - 360, CX + 330, mag)},${CY + 300})`}>
 						<circle r={34} fill="rgba(255,253,248,0.8)" stroke={AMBER_INK} strokeWidth={7} />
 						<line x1={24} y1={24} x2={58} y2={58} stroke={AMBER_INK} strokeWidth={10} strokeLinecap="round" />
 					</g>
@@ -376,14 +382,15 @@ export const SceneNotPerfect: React.FC = () => {
 						<path d="M0,-80 L56,-62 L0,-44 Z" fill={AMBER} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
 					</g>
 				</Overlay>
-				<Hand at={c.two + 4} out={c.both + 10} x={96} y={290} size={46} w={360}>one chromosome, two chromatids</Hand>
-				<Hand at={c.extra + 24} x={1490} y={290} size={64} color={AMBER_INK}>5 chromosomes</Hand>
+				<Hand at={c.two + 4} out={c.both + 10} x={96} y={290} size={46} w={330}>one chromosome, two chromatids</Hand>
+				<Hand at={c.extra + 24} x={1510} y={290} size={64} color={AMBER_INK}>5 chromosomes</Hand>
 				<Hand at={c.short + 8} x={96} y={290} size={64} color={AMBER_INK}>3 chromosomes</Hand>
-				<Hand at={c.extra + 70} out={c.checks} x={1500} y={420} size={44} w={330} color={INK_SOFT}>one centromere, one chromosome</Hand>
-				<Hand at={c.extra + 6} x={1500} y={190} size={44} w={330} color={INK_SOFT}>an extra chromosome</Hand>
+				<Hand at={c.extra + 70} out={c.checks} x={1510} y={420} size={44} w={320} color={INK_SOFT}>one centromere, one chromosome</Hand>
+				<Hand at={c.extra + 6} x={1510} y={190} size={44} w={320} color={INK_SOFT}>an extra chromosome</Hand>
 				<Hand at={c.short + 4} x={96} y={200} size={44} w={330} color={INK_SOFT}>one short</Hand>
 				<Hand at={c.checks + 50} x={CX + 410} y={CY + 250} size={44} color={GREY}>flagged</Hand>
 			</div>
 		</>
 	);
 };
+

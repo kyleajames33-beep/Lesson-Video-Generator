@@ -28,6 +28,13 @@ export const B5X = ['chromosome-single', 'chromosome-single-pink', 'chromosome-s
 	'chromosome-duplicated-teal', 'chromosome-pair', 'cell-dividing-nospindle', 'cell-dividing', 'cell-pinching', 'zoom-bases', 'zoom-helix',
 	'zoom-nucleosomes', 'zoom-fibre', 'zoom-chromosome'].map(n => B + `b5x-${n}-v1.png`);
 
-const ALL = [SKIN, EMBRYO, YEAST, AMOEBA, CUTTING, BACTERIUM, EPI, PLANT, ...B5X];
+// Brief 88 plates (20 Oct, revision 7): the painted cell-division stages on one shared canvas, the nucleus close-ups and the
+// stained metaphase spread (cd.tsx draws them). Empty variants are the backgrounds that painted pieces travel over.
+export const CD88 = [
+	'cd-interphase', 'cd-nucleus-zoom', 'cd-nucleus-zoom-breaking', 'cd-prophase', 'cd-prophase-empty', 'cd-metaphase', 'cd-metaphase-empty',
+	'cd-anaphase', 'cd-anaphase-empty', 'cd-telophase', 'cd-telophase-empty', 'cd-cytokinesis', 'cd-daughters',
+].map(n => B + `${n}-v1.png`).concat([B + 'm6-metaphase-spread-v1.png']);
+
+const ALL = [SKIN, EMBRYO, YEAST, AMOEBA, CUTTING, BACTERIUM, EPI, PLANT, ...B5X, ...CD88];
 export const HAVE = new Set<string>(ALL);
 export const ASSETS: string[] = ALL.filter(a => HAVE.has(a));

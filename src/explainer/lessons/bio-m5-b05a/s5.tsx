@@ -3,24 +3,25 @@ import {useCurrentFrame} from 'remotion';
 import {Countdown, Enter, HandText} from '../../kit';
 import {cues} from '../../cues';
 import {
-	AMBER, AMBER_INK, anaOffsets, arcPath, CellBody, CELL_FILL, CELL_LINE, CH, Chrom, clamp01, CX, CY, DrawPath, Envelope, Fibre, FONT_DISPLAY, FONT_HAND, GreyCross, GreyTag, Hand, Heading,
-	INK, INK_SOFT, Kind, lerp, META_Y, NUC_FILL, NUC_LINE, onCircle, Overlay, PenTap, PlateArt, PLATES, plateH, Pill, Pole, prog, PLUM, S, Scribble, SplitCells, StageStrip, TEALC, Tick, vis, Chip, Bracket, Arrow, PCell, poleDX,
+	AMBER, AMBER_INK, arcPath, DrawPath, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading,
+	INK, INK_SOFT, Kind, lerp, onCircle, Overlay, PenTap, PlateArt, PLATES, prog, PLUM, S, StageStrip, TEALC, Tick, vis, Arrow,
 } from './shared';
 import {HAVE} from './assets';
 import {SvgPlate} from './shared';
+import {CD, Dissolve, HCell, HChrom, HSplit, Panel, PL, Stage} from './cd';
+import type {HCol} from './cd';
 
 const GREY = '#7a8088';
 
 // ---------- 6c. What mitosis is used for ----------
+/** Revision 7: a tiny painted division (telophase plate into the two daughter cells) in each icon corner. */
 const MiniDivide: React.FC<{x: number; y: number; at: number}> = ({x, y, at}) => {
 	const f = useCurrentFrame();
-	const p = prog(f, at, 34);
-	const d = lerp(0, 46, p);
 	return (
 		<g opacity={prog(f, at - 8, 10)}>
-			<SplitCells cx={x} cy={y} rx={60} ry={44} d={d} sw={4} />
-			<circle cx={x - d * 0.6} cy={y} r={10} fill="#9b7cc4" stroke="#6a4c93" strokeWidth={2.5} opacity={0.9} />
-			<circle cx={x + d * 0.6} cy={y} r={10} fill="#9b7cc4" stroke="#6a4c93" strokeWidth={2.5} opacity={0.9} />
+			<Stage cam={{zoom: 1, fx: 1000, fy: 1000}} base={{cx: x, cy: y, size: 200}} win={null} srcs={[CD('telophase'), CD('daughters')]}>
+				<Dissolve a={CD('telophase')} b={CD('daughters')} t={prog(f, at, 30)} />
+			</Stage>
 		</g>
 	);
 };
@@ -136,6 +137,21 @@ const AnswerBox: React.FC<{x: number; y: number; w: number; at: number; label: s
 		</div>
 	</Enter>
 );
+/** Six copied chromosomes lined up on the clean coded model, with fibres from both poles to each centromere. */
+const SLEN: Record<Kind, number> = {L: 112, M: 92, S: 74};
+const HSixX: React.FC<{cx: number; cy: number; six: {kind: Kind; color: string}[]; yAt: (i: number) => number; k: number; pole: number; disc?: number; fibreColor?: string; fibreW?: number; hi?: (i: number) => number; discAt?: number[]}> = ({cx, cy, six, yAt, k, pole, disc = 1, fibreColor = '#9a8a6a', fibreW = 2.6, hi, discAt}) => {
+	const f = useCurrentFrame();
+	return (
+		<g>
+			{[-1, 1].map(sd => <circle key={sd} cx={cx + sd * pole} cy={cy} r={7} fill={fibreColor} />)}
+			{six.map((s, i) => <g key={'f' + i}>{[-1, 1].map(sd => <line key={sd} x1={cx + sd * pole} y1={cy} x2={cx + sd * 4} y2={yAt(i)} stroke={fibreColor} strokeWidth={fibreW} strokeLinecap="round" opacity={0.85} />)}</g>)}
+			{six.map((s, i) => <HChrom key={i} x={cx} y={yAt(i)} len={SLEN[s.kind] * k} w={26 * k} col={hcol(s.color)} dup={1} hi={hi ? hi(i) : 0} disc={discAt ? prog(f, discAt[i], 8) : disc} />)}
+		</g>
+	);
+};
+const hcol = (c: string): HCol => (c === PLUM ? 'P' : 'T');
+const FLEN: Record<Kind, number> = {L: 104, M: 86, S: 68};
+
 export const SceneAttempt: React.FC = () => {
 	const f = useCurrentFrame();
 	const scene = S('attempt');
@@ -158,8 +174,10 @@ export const SceneAttempt: React.FC = () => {
 			{/* 1: the fruit fly cell, counted in the answer */}
 			<Overlay>
 				<g opacity={prog(f, c.fly, 14)}>
-					<PCell cx={X1 + 690} cy={Y + 175} rx={72} ry={56} />
-					<circle cx={X1 + 690} cy={Y + 175} r={32} fill={NUC_FILL} stroke={NUC_LINE} strokeWidth={4} strokeDasharray="14 7" />
+					{/* revision 7: the painted interphase cell, small (no chromosomes are counted on it) */}
+					<Stage cam={{zoom: 1, fx: 1000, fy: 960}} base={{cx: X1 + 680, cy: Y + 180, size: 170}} win={null} srcs={[CD('interphase')]}>
+						<PL src={CD('interphase')} />
+					</Stage>
 				</g>
 			</Overlay>
 			<Note x={X1 + 30} y={Y + 92} w={500} at={c.fly} size={28}>A fruit fly body cell has 8 chromosomes, in 2 sets.</Note>
@@ -172,14 +190,10 @@ export const SceneAttempt: React.FC = () => {
 			{/* 2: six X-shaped chromosomes lined up */}
 			<Overlay>
 				<g opacity={prog(f, c.q2, 14)}>
-					<PCell cx={cc[0]} cy={cc[1]} rx={300} ry={200} spindle={1} />
-					{six.map((s, i) => (
-						<g key={i}>
-							<Fibre x1={cc[0] - poleDX(300)} y1={cc[1]} x2={cc[0] - 4} y2={yAt(i)} />
-							<Fibre x1={cc[0] + poleDX(300)} y1={cc[1]} x2={cc[0] + 4} y2={yAt(i)} />
-						</g>
-					))}
-					{six.map((s, i) => <Chrom key={i} x={cc[0]} y={yAt(i)} kind={s.kind} color={s.color} dup={1} coil={1} s={0.56} />)}
+					{/* revision 7: the clean coded model inside the question card (no painted cell under coded chromosomes);
+					    no centromere discs here, so the waist is the only centromere cue */}
+					<HCell cx={cc[0]} cy={cc[1]} rx={300} ry={205} sw={3.5} />
+					<HSixX cx={cc[0]} cy={cc[1]} six={six} yAt={yAt} k={0.6} pole={190} disc={0} />
 				</g>
 			</Overlay>
 			<Note x={X2 + 30} y={Y + 500} w={860} at={c.q2} size={28}>This body cell is part-way through mitosis. Assume no mistakes.</Note>
@@ -248,11 +262,9 @@ export const SceneFeedbackOne: React.FC = () => {
 	const e = prog(f, c.each8 - 6, 64);
 	const d = 250 * prog(f, c.each8 - 6, 64);
 	const slots: {x: number; y: number; kind: Kind; color: string; i: number}[] = [];
-	const K1 = 0.7;
 	[0, 1].forEach(row => [0, 1, 2, 3].forEach(col => slots.push({x: MC[0] + (col - 1.5) * 80, y: MC[1] + (row - 0.5) * 150, kind: KINDS8[col], color: row ? TEALC : PLUM, i: row * 4 + col})));
-	const bend = prog(f, c.each8 - 6, 30);
 	const nums = prog(f, c.each8 + 12, 12);
-	const cell = d < 1 ? <CellBody cx={MC[0]} cy={MC[1]} rx={330} ry={270} /> : <SplitCells cx={MC[0]} cy={MC[1]} rx={330} ry={270} d={d} />;
+	const cell = d < 1 ? <HCell cx={MC[0]} cy={MC[1]} rx={330} ry={270} /> : <HSplit cx={MC[0]} cy={MC[1]} rx={330} ry={270} d={d} />;
 	return (
 		<>
 			<Heading items={[[0, 'Question 1: the counts']]} size={64} />
@@ -263,22 +275,20 @@ export const SceneFeedbackOne: React.FC = () => {
 				<span style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 56, color: AMBER_INK}}>chromatids: {Math.min(16, Math.round(16 * prog(f, c.sixteen, 20)))}</span>
 			</div>
 			<Overlay>
+				<Panel x={150} y={292} w={880} h={590} />
 				{cell}
-				{d < 1 ? <Envelope cx={MC[0]} cy={MC[1]} r={205} p={prog(f, c.mitosis + 10, 20)} /> : null}
-				{slots.map(s => {
-					const xa = lerp(0, -250 / K1, e), xb = lerp(0, 250 / K1, e);
-					return <Chrom key={s.i} x={s.x} y={s.y} kind={s.kind} color={s.color} dup={dup} coil={coil} s={K1} xa={dup > 0 && coil > 0 && e > 0 ? xa : undefined} xb={dup > 0 && coil > 0 && e > 0 ? xb : undefined} sep={e > 0 ? Math.min(1, e * 25) : undefined} bend={bend} />;
-				})}
-				<MiniRing x={170} y={236} r={44} at={c.copying} />
+				{d < 1 ? <circle cx={MC[0]} cy={MC[1]} r={205} fill="#f3ecf4" stroke="#6a5a78" strokeWidth={3.2} strokeDasharray="12 8" opacity={1 - prog(f, c.mitosis + 10, 20)} /> : null}
+				{slots.map(s => <HChrom key={s.i} x={s.x} y={s.y} len={FLEN[s.kind] * lerp(1, 0.8, coil)} w={lerp(16, 20, coil)} col={hcol(s.color)} dup={dup} sep={250 * e} />)}
+				<MiniRing x={170} y={234} r={40} at={c.copying} />
 				<g opacity={nums}>
 					<Tick x={MC[0] - 250 + 70} y={MC[1] + 205} at={c.parent} s={0.9} />
 					<Tick x={MC[0] + 250 + 70} y={MC[1] + 205} at={c.parent + 6} s={0.9} />
 				</g>
 			</Overlay>
-			<Hand at={c.copying + 20} x={96} y={296} size={32} color={INK_SOFT} w={250}>S phase: copying, before mitosis</Hand>
+			<Hand at={c.copying + 20} x={230} y={214} size={32} color={INK_SOFT} w={520}>S phase: copying, before mitosis</Hand>
 			<Hand at={c.each8 + 14} x={MC[0] - 250 - 10} y={MC[1] + 180} size={64} color={AMBER_INK}>8</Hand>
 			<Hand at={c.each8 + 20} x={MC[0] + 250 - 10} y={MC[1] + 180} size={64} color={AMBER_INK}>8</Hand>
-			<Hand at={c.first} x={640} y={868} size={52} color={AMBER_INK}>doubled first, then shared back</Hand>
+			<Hand at={c.first} x={330} y={900} size={52} color={AMBER_INK}>doubled first, then shared back</Hand>
 			{/* the answers and the likely wrong ideas */}
 			<Right at={c.eight + 4} x={1010} y={220}>now: 8 chromosomes</Right>
 			<Hand at={c.joined} out={c.mitosis} x={1080} y={300} size={36} color={INK_SOFT} w={760}>the copies stay joined at their centromeres</Hand>
@@ -310,16 +320,11 @@ export const SceneFeedbackTwo: React.FC = () => {
 		<>
 			<Heading items={[[0, 'Question 2: the cell']]} size={64} />
 			<Overlay>
-				<CellBody cx={cc[0]} cy={cc[1]} rx={330} ry={272} spindle={1} />
-				{six.map((s, i) => (
-					<g key={i}>
-						<Fibre x1={cc[0] - poleDX(330)} y1={cc[1]} x2={cc[0] - 4} y2={yAt(i)} color={fibreGlow > 0.05 ? AMBER_INK : INK_SOFT} w={3.2 + 1.6 * fibreGlow} />
-						<Fibre x1={cc[0] + poleDX(330)} y1={cc[1]} x2={cc[0] + 4} y2={yAt(i)} color={fibreGlow > 0.05 ? AMBER_INK : INK_SOFT} w={3.2 + 1.6 * fibreGlow} />
-					</g>
-				))}
+				<Panel x={130} y={196} w={860} h={700} />
+				<HCell cx={cc[0]} cy={cc[1]} rx={330} ry={272} sw={4} />
 				{/* the middle line the chromosomes sit on */}
 				<line x1={cc[0]} x2={cc[0]} y1={yAt(0) - 60} y2={yAt(5) + 60} stroke={AMBER_INK} strokeWidth={4} strokeDasharray="3 12" strokeLinecap="round" opacity={lineGlow} />
-				{six.map((s, i) => <Chrom key={i} x={cc[0]} y={yAt(i)} kind={s.kind} color={s.color} dup={1} coil={1} s={0.8} hiA={hiAt(i)} hiB={hiAt(i)} />)}
+				<HSixX cx={cc[0]} cy={cc[1]} six={six} yAt={yAt} k={0.82} pole={210} fibreColor={fibreGlow > 0.05 ? AMBER_INK : undefined} fibreW={2.6 + 1.8 * fibreGlow} hi={hiAt} discAt={taps} />
 				<PenTap pts={pts} at={taps} badge={[56, 0]} out={c.w1 - 10} />
 			</Overlay>
 			<Hand at={c.count + 14} x={96} y={850} size={52} color={AMBER_INK}>{`${chromN} centromeres = ${chromN} chromosomes`}</Hand>

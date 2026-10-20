@@ -5,51 +5,22 @@ import {cues} from '../../cues';
 import {
 	AMBER, AMBER_INK, Bracket, CH, Chrom, FONT_DISPLAY, FONT_HAND, GreyTag, Hand, Heading, INK, INK_SOFT, lerp, Overlay, PenTap, Pill, PLUM, prog, S, TEALC, CELL_FILL, CELL_LINE, DrawPath, Line,
 } from './shared';
+import {CD, PL, Stage} from './cd';
 
 const KEYW = '#5b4d70';
 
 // ---------- 9. Memory and handoff ----------
+/** Revision 7: each letter's icon is the matching brief 88 stage plate, small, so the order recalls the pictures. */
+const ICON_PLATE: Record<'I' | 'P' | 'M' | 'A' | 'T', string> = {I: 'interphase', P: 'prophase', M: 'metaphase', A: 'anaphase', T: 'telophase'};
 const Icon: React.FC<{k: 'I' | 'P' | 'M' | 'A' | 'T'; x: number; y: number; at: number}> = ({k, x, y, at}) => {
 	const f = useCurrentFrame();
 	const p = prog(f, at, 16);
 	if (p <= 0) return null;
-	const t = f - at;
 	return (
-		<g transform={`translate(${x},${y}) scale(${0.7 + 0.3 * p})`} opacity={p}>
-			{k === 'I' ? (
-				<g>
-					<rect x={-52} y={-52} width={72} height={92} rx={8} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} />
-					<rect x={-24} y={-34} width={72} height={92} rx={8} fill="#fffdf8" stroke={AMBER_INK} strokeWidth={5} />
-					<line x1={-8} x2={30} y1={-8} y2={-8} stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" />
-					<line x1={-8} x2={30} y1={14} y2={14} stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" />
-					<line x1={-8} x2={14} y1={36} y2={36} stroke={AMBER_INK} strokeWidth={5} strokeLinecap="round" />
-				</g>
-			) : null}
-			{k === 'P' ? <Chrom x={0} y={0} kind="L" color={PLUM} dup={1} coil={Math.min(1, t / 40)} s={0.8} /> : null}
-			{k === 'M' ? (
-				<g>
-					<line x1={0} x2={0} y1={-92} y2={92} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="3 9" strokeLinecap="round" />
-					{[-66, -22, 22, 66].map((yy, i) => <Chrom key={i} x={0} y={yy} kind={CH[i].kind} color={CH[i].color} dup={1} coil={1} s={0.4} />)}
-				</g>
-			) : null}
-			{k === 'A' ? (
-				<g>
-					<Chrom x={0} y={0} kind="L" color={PLUM} dup={1} coil={1} s={0.62} xa={-14 - 34 * Math.min(1, t / 30)} xb={14 + 34 * Math.min(1, t / 30)} sep={1} bend={1} />
-					<path d="M-70,0 L-100,0 M-86,-12 L-100,0 L-86,12" fill="none" stroke={AMBER_INK} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
-					<path d="M70,0 L100,0 M86,-12 L100,0 L86,12" fill="none" stroke={AMBER_INK} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
-				</g>
-			) : null}
-			{k === 'T' ? (
-				<g>
-					{[-62, 62].map(xx => (
-						<g key={xx}>
-							<circle cx={xx} cy={0} r={52} fill="rgba(226,214,238,0.62)" stroke="#5b4d70" strokeWidth={5} strokeDasharray="22 9" />
-							<Chrom x={xx - 18} y={0} kind="L" color={PLUM} dup={0} s={0.34} />
-							<Chrom x={xx + 18} y={0} kind="S" color={TEALC} dup={0} s={0.34} />
-						</g>
-					))}
-				</g>
-			) : null}
+		<g transform={`translate(${x},${y}) scale(${0.7 + 0.3 * p}) translate(${-x},${-y})`} opacity={p}>
+			<Stage cam={{zoom: 1, fx: 1000, fy: 1000}} base={{cx: x, cy: y + 12, size: 150}} win={null} srcs={[CD(ICON_PLATE[k])]}>
+				<PL src={CD(ICON_PLATE[k])} />
+			</Stage>
 		</g>
 	);
 };
