@@ -274,6 +274,6 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - Chemistry: chem-m6-c03, chem-m6-c04, chem-m6-c05, chem-m6-c06, chem-m6-c07, chem-m6-c08
 - Biology: bio-m6-b03, bio-m6-b04, bio-m6-b05, bio-m6-g01, bio-m6-b07, bio-m6-b08
 - Exam skills: skills-s01, skills-s02
-- B5a and B5b are being rebuilt with the brief 88 plates and will be preview v7.
+- B5a and B5b are rebuilt on the brief 88 painted plates: bio-m5-b05a and bio-m5-b05b at preview v8. B8 and Bio P02 release after B5b passes.
 - Rendered and ready to upload (brief 28t): C01, B01, B02, B6b, B6c, C10, C15 and Chemistry P02.
 - Codex briefs still to send: 28t (uploads) and 89 (C09 and C10 check).
