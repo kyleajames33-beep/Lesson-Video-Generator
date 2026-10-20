@@ -1,0 +1,920 @@
+{
+  "brief": 88,
+  "series": "mitosis",
+  "canvas": [
+    2000,
+    2000
+  ],
+  "source": "b6a-animal-cell-v1.png style reference; b5x pink and teal chromosome paintings",
+  "method": "Built-in imagegen for empty stage bases and precise edits. LANCZOS resampling and deterministic compositing provide exact 2n=4 counts.",
+  "notes": [
+    "Chromosome coordinates are actual compositing centres on the final 2000 pixel images. Cell and nucleus geometry is approximate and should be checked during integration.",
+    "Two full interphase-size cells cannot fit a 2000 pixel canvas. Daughter cell scale follows cytokinesis.",
+    "Metaphase: each duplicated chromosome has visible kinetochore fibres from both poles. Anaphase: each separated chromatid has a visible fibre to its near pole."
+  ],
+  "records": [
+    {
+      "path": "public/assets/biology/cd-interphase-v1.png",
+      "emptyPath": "public/assets/biology/cd-interphase-empty-v1.png",
+      "sha256": "0c260a6da08cd0c90cf025f3c1e1616188edebd552a697834946b761a85c5014",
+      "emptySha256": "0c260a6da08cd0c90cf025f3c1e1616188edebd552a697834946b761a85c5014",
+      "cellBoxes": [
+        [
+          53,
+          57,
+          1957,
+          1865
+        ]
+      ],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            990
+          ],
+          "radius": 385
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": []
+    },
+    {
+      "path": "public/assets/biology/cd-prophase-v1.png",
+      "emptyPath": "public/assets/biology/cd-prophase-empty-v1.png",
+      "sha256": "da09b34c37a576f35286f27b60a91a935821278a21a04490cbf42792a19d0f5d",
+      "emptySha256": "65ada65f19253a6ca615925ad15068efd61f946f14818a802d98be8ff436d7bb",
+      "cellBoxes": [
+        [
+          101,
+          99,
+          1899,
+          1858
+        ]
+      ],
+      "nuclei": [],
+      "spindlePoles": [
+        [
+          340,
+          960
+        ],
+        [
+          1655,
+          960
+        ]
+      ],
+      "equator": [
+        [
+          1000,
+          550
+        ],
+        [
+          1000,
+          1370
+        ]
+      ],
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            850,
+            830
+          ],
+          "armEnds": [
+            [
+              850,
+              736
+            ],
+            [
+              850,
+              924
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1140,
+            830
+          ],
+          "armEnds": [
+            [
+              1140,
+              736
+            ],
+            [
+              1140,
+              924
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            900,
+            1120
+          ],
+          "armEnds": [
+            [
+              900,
+              1058
+            ],
+            [
+              900,
+              1182
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1110,
+            1120
+          ],
+          "armEnds": [
+            [
+              1110,
+              1058
+            ],
+            [
+              1110,
+              1182
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "short",
+          "chromatidState": "duplicated"
+        }
+      ]
+    },
+    {
+      "path": "public/assets/biology/cd-metaphase-v1.png",
+      "emptyPath": "public/assets/biology/cd-metaphase-empty-v1.png",
+      "sha256": "f145a2a457d1510b06647c78a8d523260c354a7284d2404083c28b667999ba84",
+      "emptySha256": "fc1d8ccb370269ac097e2423d83e2a1e9a28769c64edf78ab1f81a22d557d17b",
+      "cellBoxes": [
+        [
+          112,
+          120,
+          1889,
+          1809
+        ]
+      ],
+      "nuclei": [],
+      "spindlePoles": [
+        [
+          365,
+          960
+        ],
+        [
+          1640,
+          960
+        ]
+      ],
+      "equator": [
+        [
+          1000,
+          550
+        ],
+        [
+          1000,
+          1370
+        ]
+      ],
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            1000,
+            710
+          ],
+          "armEnds": [
+            [
+              1000,
+              620
+            ],
+            [
+              1000,
+              800
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1000,
+            915
+          ],
+          "armEnds": [
+            [
+              1000,
+              825
+            ],
+            [
+              1000,
+              1005
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1000,
+            1100
+          ],
+          "armEnds": [
+            [
+              1000,
+              1041
+            ],
+            [
+              1000,
+              1159
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1000,
+            1260
+          ],
+          "armEnds": [
+            [
+              1000,
+              1201
+            ],
+            [
+              1000,
+              1319
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "short",
+          "chromatidState": "duplicated"
+        }
+      ],
+      "kinetochoreAttachments": [
+        {
+          "pole": [
+            365,
+            960
+          ],
+          "centromere": [
+            1000,
+            710
+          ]
+        },
+        {
+          "pole": [
+            365,
+            960
+          ],
+          "centromere": [
+            1000,
+            915
+          ]
+        },
+        {
+          "pole": [
+            365,
+            960
+          ],
+          "centromere": [
+            1000,
+            1100
+          ]
+        },
+        {
+          "pole": [
+            365,
+            960
+          ],
+          "centromere": [
+            1000,
+            1260
+          ]
+        },
+        {
+          "pole": [
+            1640,
+            960
+          ],
+          "centromere": [
+            1000,
+            710
+          ]
+        },
+        {
+          "pole": [
+            1640,
+            960
+          ],
+          "centromere": [
+            1000,
+            915
+          ]
+        },
+        {
+          "pole": [
+            1640,
+            960
+          ],
+          "centromere": [
+            1000,
+            1100
+          ]
+        },
+        {
+          "pole": [
+            1640,
+            960
+          ],
+          "centromere": [
+            1000,
+            1260
+          ]
+        }
+      ]
+    },
+    {
+      "path": "public/assets/biology/cd-anaphase-v1.png",
+      "emptyPath": "public/assets/biology/cd-anaphase-empty-v1.png",
+      "sha256": "38137e40e0c1112ef9a873c5e81a17b2e293db0de52a1ded5c45ea78bf03def5",
+      "emptySha256": "992f07c08a309fc5d78901e9867c959d6cac9193d0eaa01b7e16f5ab91ee7ae0",
+      "cellBoxes": [
+        [
+          11,
+          468,
+          1990,
+          1533
+        ]
+      ],
+      "nuclei": [],
+      "spindlePoles": [
+        [
+          290,
+          995
+        ],
+        [
+          1690,
+          995
+        ]
+      ],
+      "equator": [
+        [
+          1000,
+          650
+        ],
+        [
+          1000,
+          1350
+        ]
+      ],
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            700,
+            785
+          ],
+          "armEnds": [
+            [
+              700,
+              718
+            ],
+            [
+              700,
+              852
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            700,
+            955
+          ],
+          "armEnds": [
+            [
+              700,
+              888
+            ],
+            [
+              700,
+              1022
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            700,
+            1115
+          ],
+          "armEnds": [
+            [
+              700,
+              1071
+            ],
+            [
+              700,
+              1159
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            700,
+            1250
+          ],
+          "armEnds": [
+            [
+              700,
+              1206
+            ],
+            [
+              700,
+              1294
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1300,
+            785
+          ],
+          "armEnds": [
+            [
+              1300,
+              718
+            ],
+            [
+              1300,
+              852
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1300,
+            955
+          ],
+          "armEnds": [
+            [
+              1300,
+              888
+            ],
+            [
+              1300,
+              1022
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1300,
+            1115
+          ],
+          "armEnds": [
+            [
+              1300,
+              1071
+            ],
+            [
+              1300,
+              1159
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1300,
+            1250
+          ],
+          "armEnds": [
+            [
+              1300,
+              1206
+            ],
+            [
+              1300,
+              1294
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        }
+      ],
+      "kinetochoreAttachments": [
+        {
+          "pole": [
+            290,
+            995
+          ],
+          "centromere": [
+            700,
+            785
+          ]
+        },
+        {
+          "pole": [
+            290,
+            995
+          ],
+          "centromere": [
+            700,
+            955
+          ]
+        },
+        {
+          "pole": [
+            290,
+            995
+          ],
+          "centromere": [
+            700,
+            1115
+          ]
+        },
+        {
+          "pole": [
+            290,
+            995
+          ],
+          "centromere": [
+            700,
+            1250
+          ]
+        },
+        {
+          "pole": [
+            1690,
+            995
+          ],
+          "centromere": [
+            1300,
+            785
+          ]
+        },
+        {
+          "pole": [
+            1690,
+            995
+          ],
+          "centromere": [
+            1300,
+            955
+          ]
+        },
+        {
+          "pole": [
+            1690,
+            995
+          ],
+          "centromere": [
+            1300,
+            1115
+          ]
+        },
+        {
+          "pole": [
+            1690,
+            995
+          ],
+          "centromere": [
+            1300,
+            1250
+          ]
+        }
+      ]
+    },
+    {
+      "path": "public/assets/biology/cd-telophase-v1.png",
+      "emptyPath": "public/assets/biology/cd-telophase-empty-v1.png",
+      "sha256": "6d8a817e7c89ec2726f07a17f7092734ff214e16ffea580664432bd8a8a9a0e7",
+      "emptySha256": "5b00a490d2804edcf786c0ef8f60d56cbfb749ae1150c324f0b9b37072d6e226",
+      "cellBoxes": [
+        [
+          2,
+          470,
+          2000,
+          1501
+        ]
+      ],
+      "nuclei": [
+        {
+          "center": [
+            475,
+            980
+          ],
+          "radius": 220
+        },
+        {
+          "center": [
+            1520,
+            980
+          ],
+          "radius": 220
+        }
+      ],
+      "spindlePoles": [
+        [
+          720,
+          950
+        ],
+        [
+          1275,
+          950
+        ]
+      ],
+      "equator": null,
+      "furrowPoints": [
+        [
+          1000,
+          690
+        ],
+        [
+          1000,
+          1280
+        ]
+      ],
+      "chromosomes": [
+        {
+          "centromere": [
+            405,
+            895
+          ],
+          "armEnds": [
+            [
+              405,
+              849
+            ],
+            [
+              405,
+              941
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            545,
+            895
+          ],
+          "armEnds": [
+            [
+              545,
+              849
+            ],
+            [
+              545,
+              941
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            405,
+            1065
+          ],
+          "armEnds": [
+            [
+              405,
+              1035
+            ],
+            [
+              405,
+              1095
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            545,
+            1065
+          ],
+          "armEnds": [
+            [
+              545,
+              1035
+            ],
+            [
+              545,
+              1095
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1450,
+            895
+          ],
+          "armEnds": [
+            [
+              1450,
+              849
+            ],
+            [
+              1450,
+              941
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1590,
+            895
+          ],
+          "armEnds": [
+            [
+              1590,
+              849
+            ],
+            [
+              1590,
+              941
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1450,
+            1065
+          ],
+          "armEnds": [
+            [
+              1450,
+              1035
+            ],
+            [
+              1450,
+              1095
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        },
+        {
+          "centromere": [
+            1590,
+            1065
+          ],
+          "armEnds": [
+            [
+              1590,
+              1035
+            ],
+            [
+              1590,
+              1095
+            ]
+          ],
+          "color": "pink",
+          "lengthClass": "short",
+          "chromatidState": "single"
+        }
+      ]
+    },
+    {
+      "path": "public/assets/biology/cd-cytokinesis-v1.png",
+      "emptyPath": "public/assets/biology/cd-cytokinesis-empty-v1.png",
+      "sha256": "a4a24bb00343a16f60d7c03dccf6b3aaf0b60fa30d831e773a7f3520bc998b8d",
+      "emptySha256": "cb648d8c853a9d06c226430fe8a59b4457bac13fe26ef2baf6e25535f8a5809e",
+      "cellBoxes": [
+        [
+          5,
+          463,
+          1000,
+          1525
+        ],
+        [
+          1000,
+          479,
+          1995,
+          1516
+        ]
+      ],
+      "nuclei": [
+        {
+          "center": [
+            515,
+            990
+          ],
+          "radius": 230
+        },
+        {
+          "center": [
+            1485,
+            990
+          ],
+          "radius": 230
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [
+        [
+          1000,
+          865
+        ],
+        [
+          1000,
+          1090
+        ]
+      ],
+      "chromosomes": []
+    },
+    {
+      "path": "public/assets/biology/cd-daughters-v1.png",
+      "emptyPath": "public/assets/biology/cd-daughters-empty-v1.png",
+      "sha256": "74d294b6a72c3edcc3737dc8b39b56f5a5abf4f93697cac734bf6f313b0feb7d",
+      "emptySha256": "a2d4183950bc0d86c2079069b1846bb4456426a46cccc59be75039f271b9eeda",
+      "cellBoxes": [
+        [
+          1,
+          485,
+          996,
+          1546
+        ],
+        [
+          1019,
+          478,
+          2000,
+          1556
+        ]
+      ],
+      "nuclei": [
+        {
+          "center": [
+            510,
+            990
+          ],
+          "radius": 220
+        },
+        {
+          "center": [
+            1490,
+            990
+          ],
+          "radius": 220
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": []
+    }
+  ]
+}

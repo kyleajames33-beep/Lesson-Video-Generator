@@ -1,0 +1,483 @@
+{
+  "brief": 88,
+  "group": "section C nucleus closeups",
+  "method": "built-in imagegen using b6a-animal-cell-v1.png style reference; Lanczos resize from native 1254 square to exact 2000 square",
+  "canvas": [
+    2000,
+    2000
+  ],
+  "transparency": "RGBA alpha preserved",
+  "records": [
+    {
+      "path": "public/assets/biology/cd-nucleus-zoom-v1.png",
+      "emptyPath": "public/assets/biology/cd-nucleus-zoom-empty-v1.png",
+      "sha256": "2a063cead1ade14e4abc7e0361a598b0c9845478f90f59405e86f91ef2e48931",
+      "emptySha256": "c04b290f0384b27769f71b70ff2fedec2caae19688412cc65c6044560beabf25",
+      "cellBoxes": [
+        [
+          0,
+          20,
+          1970,
+          2000
+        ]
+      ],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            1000
+          ],
+          "radius": 765
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": [],
+      "locusBandYs": null,
+      "notes": "Diffuse interphase chromatin; no condensed chromosomes."
+    },
+    {
+      "path": "public/assets/biology/cd-nucleus-zoom-breaking-v1.png",
+      "emptyPath": "public/assets/biology/cd-nucleus-zoom-breaking-empty-v1.png",
+      "sha256": "ae7a8f4b751c4d210374d316896f863b70b7c271f7fb2594fdcc0611dbb1f6f4",
+      "emptySha256": "2fcb4444f0308b9a41e089af4f53b5f883e1ec1cd8fbfbc62bbf2b4378f4fbb2",
+      "cellBoxes": [
+        [
+          32,
+          20,
+          1973,
+          1975
+        ]
+      ],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            1000
+          ],
+          "radius": 765
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            800,
+            790
+          ],
+          "armEnds": [
+            [
+              750,
+              430
+            ],
+            [
+              510,
+              1170
+            ]
+          ],
+          "color": "rose pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1350,
+            830
+          ],
+          "armEnds": [
+            [
+              1230,
+              470
+            ],
+            [
+              1550,
+              1160
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            830,
+            1375
+          ],
+          "armEnds": [
+            [
+              720,
+              1220
+            ],
+            [
+              930,
+              1560
+            ]
+          ],
+          "color": "rose pink",
+          "lengthClass": "short",
+          "chromatidState": "duplicated"
+        },
+        {
+          "centromere": [
+            1175,
+            1380
+          ],
+          "armEnds": [
+            [
+              1080,
+              1220
+            ],
+            [
+              1300,
+              1570
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "short",
+          "chromatidState": "duplicated"
+        }
+      ],
+      "locusBandYs": null,
+      "notes": "Exactly four duplicated chromosomes; broken nuclear envelope."
+    },
+    {
+      "path": "public/assets/biology/cd-homologous-pair-loci-v1.png",
+      "emptyPath": "public/assets/biology/cd-homologous-pair-loci-empty-v1.png",
+      "sha256": "e965ed6d537ce6a6d40eefaa4db3ef21e296e6ba075e9d1a63a023b73d659408",
+      "emptySha256": "47a9865a189604a588f39cebd2bc619656473d4e9504740ee02243f4d8dc4928",
+      "cellBoxes": [],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            985
+          ],
+          "radius": 880
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            765,
+            945
+          ],
+          "armEnds": [
+            [
+              640,
+              350
+            ],
+            [
+              650,
+              1610
+            ]
+          ],
+          "color": "rose pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ]
+        },
+        {
+          "centromere": [
+            1235,
+            945
+          ],
+          "armEnds": [
+            [
+              1110,
+              350
+            ],
+            [
+              1120,
+              1610
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ]
+        }
+      ],
+      "locusBandYs": [
+        570,
+        1145,
+        1435
+      ],
+      "notes": "Three corresponding band levels match across homologues.",
+      "bandCountPerChromatid": 3,
+      "locusBandCentersY": {
+        "upper": 570,
+        "lowerMiddle": 1145,
+        "distal": 1435
+      },
+      "bandAlignmentNote": "All four chromatids have one dark painted band at each of the three corresponding y levels; approximately 20 to 35 px painted edge variation."
+    },
+    {
+      "path": "public/assets/biology/cd-crossing-over-a-v1.png",
+      "emptyPath": "public/assets/biology/cd-crossing-over-a-empty-v1.png",
+      "sha256": "c24a6095685afa42bba7a9437c2df903c94c1a22495875a2431573f15475bdcc",
+      "emptySha256": "47a9865a189604a588f39cebd2bc619656473d4e9504740ee02243f4d8dc4928",
+      "cellBoxes": [],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            985
+          ],
+          "radius": 880
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            875,
+            945
+          ],
+          "armEnds": [
+            [
+              755,
+              350
+            ],
+            [
+              755,
+              1620
+            ]
+          ],
+          "color": "rose pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ]
+        },
+        {
+          "centromere": [
+            1125,
+            945
+          ],
+          "armEnds": [
+            [
+              1060,
+              350
+            ],
+            [
+              1060,
+              1620
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ]
+        }
+      ],
+      "locusBandYs": [
+        570,
+        1145,
+        1435
+      ],
+      "notes": "Synapsed, no exchange.",
+      "bandCountPerChromatid": 3,
+      "locusBandCentersY": {
+        "upper": 570,
+        "lowerMiddle": 1145,
+        "distal": 1435
+      },
+      "bandAlignmentNote": "All four chromatids have one dark painted band at each of the three corresponding y levels; approximately 20 to 35 px painted edge variation."
+    },
+    {
+      "path": "public/assets/biology/cd-crossing-over-b-v1.png",
+      "emptyPath": "public/assets/biology/cd-crossing-over-b-empty-v1.png",
+      "sha256": "8df0e7886e4537bb4ed195d1751e12747ba3a45835b60a629676bb6f2f6539ec",
+      "emptySha256": "47a9865a189604a588f39cebd2bc619656473d4e9504740ee02243f4d8dc4928",
+      "cellBoxes": [],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            985
+          ],
+          "radius": 880
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            875,
+            945
+          ],
+          "armEnds": [
+            [
+              755,
+              350
+            ],
+            [
+              755,
+              1620
+            ]
+          ],
+          "color": "rose pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ]
+        },
+        {
+          "centromere": [
+            1125,
+            945
+          ],
+          "armEnds": [
+            [
+              1060,
+              350
+            ],
+            [
+              1060,
+              1620
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ]
+        }
+      ],
+      "locusBandYs": [
+        570,
+        1145,
+        1435
+      ],
+      "notes": "Single chiasma of inner non-sister chromatids near [1000,1175].",
+      "bandCountPerChromatid": 3,
+      "locusBandCentersY": {
+        "upper": 570,
+        "lowerMiddle": 1145,
+        "distal": 1435
+      },
+      "bandAlignmentNote": "All four chromatids have one dark painted band at each of the three corresponding y levels; approximately 20 to 35 px painted edge variation."
+    },
+    {
+      "path": "public/assets/biology/cd-crossing-over-c-v1.png",
+      "emptyPath": "public/assets/biology/cd-crossing-over-c-empty-v1.png",
+      "sha256": "ca54af02bd33dc6972ce3236a41e999b033c525a62661ad1f9efd3558749ca85",
+      "emptySha256": "47a9865a189604a588f39cebd2bc619656473d4e9504740ee02243f4d8dc4928",
+      "cellBoxes": [],
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            985
+          ],
+          "radius": 880
+        }
+      ],
+      "spindlePoles": [],
+      "equator": null,
+      "furrowPoints": [],
+      "chromosomes": [
+        {
+          "centromere": [
+            875,
+            945
+          ],
+          "armEnds": [
+            [
+              755,
+              350
+            ],
+            [
+              755,
+              1620
+            ]
+          ],
+          "color": "rose pink",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ],
+          "recombinantInnerChromatid": "teal distal segment starts at y 1200"
+        },
+        {
+          "centromere": [
+            1125,
+            945
+          ],
+          "armEnds": [
+            [
+              1060,
+              350
+            ],
+            [
+              1060,
+              1620
+            ]
+          ],
+          "color": "teal",
+          "lengthClass": "long",
+          "chromatidState": "duplicated",
+          "locusBandYs": [
+            570,
+            1145,
+            1435
+          ],
+          "recombinantInnerChromatid": "rose pink distal segment starts at y 1200"
+        }
+      ],
+      "locusBandYs": [
+        570,
+        1145,
+        1435
+      ],
+      "notes": "Reciprocal exchange on one inner chromatid of each homologue.",
+      "bandCountPerChromatid": 3,
+      "locusBandCentersY": {
+        "upper": 570,
+        "lowerMiddle": 1145,
+        "distal": 1435
+      },
+      "bandAlignmentNote": "All four chromatids have one dark painted band at each of the three corresponding y levels; approximately 20 to 35 px painted edge variation.",
+      "reciprocalExchange": {
+        "nonSisterChromatids": "inner pink and inner teal",
+        "boundaryY": 1200,
+        "distalBandY": 1435,
+        "distalBandOnExchangedSegment": true
+      }
+    }
+  ]
+}
