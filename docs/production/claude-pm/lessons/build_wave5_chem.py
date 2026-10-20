@@ -5780,6 +5780,539 @@ M6C10_ROWS = {
 # END generated rows: m6c09-m6c10
 
 
+# BEGIN generated rows: m6c11-m6c12
+M6C11_ROWS = {
+    "hook": [
+        "adjust",
+        "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"water, 100 mL\" and \"ethanoic acid + sodium ethanoate (0.100 mol/L each), 100 mL\".",
+        "Hook (two beakers, one splash): Two beakers, a hundred millilitres each.",
+        "seven / four point seven four / two point zero zero / four point six six / run out",
+        "On the spoken cues: On \"seven\" the left readout counts to \"7.00\"; on \"four point seven four\" the right counts to \"4.74\". On \"Add one millilitre\" a coded dropper icon above each beaker releases one drop, tag \"1.0 mL of 1.0 mol/L HCl\" between them (dims after its sentence). On \"two point zero zero\" the left readout runs down to \"2.00\" and a pale blue bracket \"−5.00\" writes beside it; on \"four point six six\" the right readout ticks down",
+        "explain",
+        "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"water, 100 mL\" and \"ethanoic acid + sodium ethanoate (0.100 mol/L each), 100 mL\". On \"seven\" the left readout counts to \"7.00\"; on \"four point seven four\" the right counts to \"4.74\". On \"Add one millilitre\" a coded dropper icon above each beaker releases one drop, tag \"1.0 mL of 1.0 mol/L HCl\" between them (dims after its sentence). On \"two point zero zero\" the left readout runs down to \"2.00\" and a pale blue bracket \"−5.00\" writes beside it; on \"four point six six\" the right readout ticks down to \"4.66\" with a teal bracket \"−0.08\". On \"run out\" both brackets dim and the heading writes: \"What does the mixture do?\" Bright at the end: the heading and the two readouts. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "what-it-holds": [
+        "adjust",
+        "the plates shrink to the top right.",
+        "What the mixture holds: Ethanoic acid is weak, so most of it stays as whole molecules.",
+        "ethanoate / buffer",
+        "On the spoken cues: `m6-beaker-v1.png` small at the left; the C08 particle lens opens from it, at first holding only amber-outlined ethanoic acid molecules among pale blue water with one rare ion pair (tag \"weak: mostly whole\", dims). On \"ethanoate\" a scatter of grey-violet ethanoate ions and small grey Na⁺ spectators fades in until there are about as many ethanoate ions as acid molecules; the strip writes \"CH₃COOH(aq) + H₂O(l) ⇌",
+        "explain",
+        "the plates shrink to the top right. `m6-beaker-v1.png` small at the left; the C08 particle lens opens from it, at first holding only amber-outlined ethanoic acid molecules among pale blue water with one rare ion pair (tag \"weak: mostly whole\", dims). On \"ethanoate\" a scatter of grey-violet ethanoate ions and small grey Na⁺ spectators fades in until there are about as many ethanoate ions as acid molecules; the strip writes \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" with a C06 bracket \"conjugate pair\" joining CH₃COOH and CH₃COO⁻. On \"both partners\" the ratio bar draws beside the lens: two equal columns \"acid, HA: 0.0100 mol\" (amber) and \"base, A⁻: 0.0100 mol\" (grey-violet). On \"buffer\" the definition writes under the lens: \"buffer: weak acid + its conjugate base, both in large amounts\". Bright at the end: the lens, the ratio bar and the definition. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Cam lens zoom",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "acid-attack": [
+        "new",
+        "the lens stays.",
+        "Added acid meets the conjugate base: Now add the hydrochloric acid.",
+        "ethanoate / used up / left",
+        "On the spoken cues: A handful of teal hydronium tokens drop in from the top (with grey Cl⁻ spectators). On \"ethanoate\" one hydronium meets an ethanoate and the C01 hop plays in reverse: the teal proton jumps onto the ethanoate, which gains an amber outline (now ethanoic acid), leaving a water molecule; the other added hydroniums do the same, one after another, quickly. The equation writes under the lens: \"CH₃COO⁻(aq) + H₃O⁺(aq) →",
+        "explain",
+        "the lens stays. A handful of teal hydronium tokens drop in from the top (with grey Cl⁻ spectators). On \"ethanoate\" one hydronium meets an ethanoate and the C01 hop plays in reverse: the teal proton jumps onto the ethanoate, which gains an amber outline (now ethanoic acid), leaving a water molecule; the other added hydroniums do the same, one after another, quickly. The equation writes under the lens: \"CH₃COO⁻(aq) + H₃O⁺(aq) → CH₃COOH(aq) + H₂O(l)\". On \"used up\" the lens holds no extra teal tokens; the ratio bar moves a small slice from the base column to the acid column. On \"left\" the strip from scene 2 pulses its reverse arrow with a small grey tag \"Module 5: Le Chatelier\" (dims after its sentence). Bright at the end: the equation, the ratio bar and the lens. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "base-attack": [
+        "new",
+        "the lens resets to the start (equal partners).",
+        "Added base meets the weak acid: Add sodium hydroxide instead, and the other partner steps in.",
+        "ethanoic acid / twelve / four point eight three / defender",
+        "On the spoken cues: Violet OH⁻ tokens drop in; on \"ethanoic acid\" one takes a teal proton from an amber molecule, which becomes a grey-violet ethanoate, and a water forms. The equation writes: \"CH₃COOH(aq) + OH⁻(aq) → CH₃COO⁻(aq) + H₂O(l)\"; the scene 3 equation sits above it, dimmed. The lens dims as the two meter plates return small at the top, with a tag \"1.0 mL of 1.0 mol/L NaOH\" between them (dims after its sentence): on \"twelve\"",
+        "explain",
+        "the lens resets to the start (equal partners). Violet OH⁻ tokens drop in; on \"ethanoic acid\" one takes a teal proton from an amber molecule, which becomes a grey-violet ethanoate, and a water forms. The equation writes: \"CH₃COOH(aq) + OH⁻(aq) → CH₃COO⁻(aq) + H₂O(l)\"; the scene 3 equation sits above it, dimmed. The lens dims as the two meter plates return small at the top, with a tag \"1.0 mL of 1.0 mol/L NaOH\" between them (dims after its sentence): on \"twelve\" the water readout climbs \"7.00\" → \"12.00\"; on \"four point eight three\" the buffer readout ticks \"4.74\" → \"4.83\". On \"defender\" the two equations brighten as a pair with labels \"added acid → taken by A⁻\" and \"added base → taken by HA\"; the readouts dim. Bright at the end: the two labelled equations. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick",
+            "token flight",
+            "Cam lens zoom",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "buffer-ph": [
+        "new",
+        "the board clears to the three zones.",
+        "The pH of a buffer: Ka and the ratio: So why does the pH move at all?",
+        "K a times acid over ethanoate / cancels / one / p K a",
+        "On the spoken cues: Task line: \"Find the buffer's pH\". Givens card: \"CH₃COOH: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"CH₃COO⁻: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"Ka = 1.8 × 10⁻⁵ (25 °C)\". The C10 builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" with a small grey tag \"Ka and pKa video\" (dims). On \"K a times acid over ethanoate\" the builder rearranges: [CH₃COO⁻] slides under, giving \"[H₃O⁺] = Ka × [CH₃COOH] / [CH₃COO⁻]\". On \"amounts",
+        "explain",
+        "the board clears to the three zones. Task line: \"Find the buffer's pH\". Givens card: \"CH₃COOH: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"CH₃COO⁻: 0.100 mol/L × 0.100 L = 0.0100 mol\" | \"Ka = 1.8 × 10⁻⁵ (25 °C)\". The C10 builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" with a small grey tag \"Ka and pKa video\" (dims). On \"K a times acid over ethanoate\" the builder rearranges: [CH₃COO⁻] slides under, giving \"[H₃O⁺] = Ka × [CH₃COOH] / [CH₃COO⁻]\". On \"amounts you put in\" a small grey tag \"partners barely react with water: use the amounts added\" writes (dims at the sentence end). On \"cancels\" a small grey tag \"same V: use moles\" writes and the brackets become \"n(CH₃COOH) / n(CH₃COO⁻)\". On \"one\" the ratio bar returns small with equal columns and the line \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.0100 / 0.0100 = 1.8 × 10⁻⁵ mol/L\" writes. On \"p K a\" the line \"pH = pKa = −log(1.8 × 10⁻⁵) = 4.74\" writes and the result shrinks to a kept chip \"equal partners: pH = pKa = 4.74\". Bright at the end: the task line, the rearranged line and the kept chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "we-after-acid": [
+        "new",
+        "task line: \"Find the pH after adding 1.0 × 10⁻³ mol H₃O⁺\".",
+        "Worked example: after the acid: Now add the zero point zero zero one zero moles of hydronium.",
+        "zero point zero one one zero / zero point zero zero nine zero / one point two / four point six six / hundred thousand",
+        "On the spoken cues: The givens card adds \"added H₃O⁺: 1.0 mL × 1.0 mol/L = 0.0010 mol\" (the earlier lines dim). Step chip \"Step 1 of 2: new amounts\". The scene 3 equation writes small at the top as a reminder. On \"zero point zero one one zero\" the ratio bar moves a slice from the base column to the acid column, and the lines \"n(CH₃COOH) = 0.0100 + 0.0010 = 0.0110 mol\" and, on \"zero point zero zero nine zero\", \"n(CH₃COO⁻) = 0.0100 −",
+        "explain",
+        "task line: \"Find the pH after adding 1.0 × 10⁻³ mol H₃O⁺\". The givens card adds \"added H₃O⁺: 1.0 mL × 1.0 mol/L = 0.0010 mol\" (the earlier lines dim). Step chip \"Step 1 of 2: new amounts\". The scene 3 equation writes small at the top as a reminder. On \"zero point zero one one zero\" the ratio bar moves a slice from the base column to the acid column, and the lines \"n(CH₃COOH) = 0.0100 + 0.0010 = 0.0110 mol\" and, on \"zero point zero zero nine zero\", \"n(CH₃COO⁻) = 0.0100 − 0.0010 = 0.0090 mol\" write. Step chip \"Step 2 of 2: pH\". On \"one point two\" the line \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.0110 / 0.0090 = 2.2 × 10⁻⁵ mol/L\" writes (the amounts lines dim) with a grey tag \"ratio 1.22: [H₃O⁺] up 22%\". On \"four point six six\" the line \"pH = −log(2.2 × 10⁻⁵) = 4.66\" writes and the answer chip \"pH = 4.66\" pins, with the small tag \"Ka 2 s.f. → pH 2 d.p.\" (dims). On \"hundred thousand\" a compact comparison writes under the chip: \"buffer: [H₃O⁺] × 1.2\" | \"water: [H₃O⁺] 10⁻⁷ → 10⁻², × about 100,000\". Bright at the end: the answer chip and the comparison. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "ratio-sets-ph": [
+        "new",
+        "the board clears.",
+        "The ratio sets the pH: That ratio sets the pH of any buffer.",
+        "below / above / neutral / not",
+        "On the spoken cues: A short horizontal pH line draws with a marker \"pKa\" in the middle. On \"below\" the ratio bar beside it tilts to a taller acid column and the marker slides left, label \"more HA: pH < pKa\"; on \"above\" it tilts the other way, label \"more A⁻: pH > pKa\"; the \"more HA\" label dims as this one writes, and the marker returns to the middle, where \"equal: pH = pKa\" sits under it. On \"neutral\" a small chip \"this buffer: pH",
+        "explain",
+        "the board clears. A short horizontal pH line draws with a marker \"pKa\" in the middle. On \"below\" the ratio bar beside it tilts to a taller acid column and the marker slides left, label \"more HA: pH < pKa\"; on \"above\" it tilts the other way, label \"more A⁻: pH > pKa\"; the \"more HA\" label dims as this one writes, and the marker returns to the middle, where \"equal: pH = pKa\" sits under it. On \"neutral\" a small chip \"this buffer: pH 4.74, not 7\" writes beside the line; the pH line and its labels then dim. On \"not\" a chip \"HCl + NaCl: buffer?\" writes; a small lens beside it shows grey Cl⁻ ions ignoring incoming teal hydronium tokens, and the chip is crossed (caption \"Cl⁻ won't take protons back\"). Bright at the end: the crossed chip, its caption and the small lens. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "capacity": [
+        "new",
+        "the board clears.",
+        "Capacity: running out: Now keep adding acid, a millilitre at a time.",
+        "nine / none / plunges / capacity",
+        "On the spoken cues: The coded lineGraph draws: x axis \"volume of 1.0 mol/L HCl added (mL)\" from 0 to 12, y axis \"pH\" from 0 to 8 (computed values, author note g). The water line (pale blue) is drawn first, falling to 2.00 at 1 mL and below. Then the buffer line (teal) draws point by point as a dose counter \"1 mL, 2 mL, ...\" ticks; beside the graph the ratio bar loses a slice of its base column with each dose. On \"nine\" the base column",
+        "explain",
+        "the board clears. The coded lineGraph draws: x axis \"volume of 1.0 mol/L HCl added (mL)\" from 0 to 12, y axis \"pH\" from 0 to 8 (computed values, author note g). The water line (pale blue) is drawn first, falling to 2.00 at 1 mL and below. Then the buffer line (teal) draws point by point as a dose counter \"1 mL, 2 mL, ...\" ticks; beside the graph the ratio bar loses a slice of its base column with each dose. On \"nine\" the base column is a thin sliver; on \"none\" it empties and greys out; on \"plunges\" the teal line drops steeply between 9 and 11 mL. On \"capacity\" the dose counter and the ratio bar dim, and the term writes under the graph with the gloss \"acid or base taken up before a partner is nearly used up\". On \"not on the pH\" a small inset: two beakers both labelled \"pH 4.74\", one with tall columns (\"0.0100 mol each\"), one with columns a tenth as tall (\"0.0010 mol each\"), tag \"same pH, one tenth the capacity\". Bright at the end: the graph, the term and the inset. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "blood-buffer": [
+        "adjust",
+        "the board clears.",
+        "The blood buffer: Your blood stays between pH seven point three five and seven point four five, because enzymes and haemoglobin work best in a narrow range.",
+        "seven point three five and seven point four five / carbonic acid / hydrogencarbonate / carbon dioxide",
+        "On the spoken cues: `m5x-red-blood-cells-v1.png` small at the upper left (the plate itself opens the scene, so the narration starts straight on blood); a short pH ruler draws from 7.0 to 7.8 with a teal band from 7.35 to 7.45 on \"seven point three five and seven point four five\" (tag \"normal blood pH\"). On \"carbonic acid\" and \"hydrogencarbonate\" the strip writes \"H₂CO₃(aq) + H₂O(l) ⇌ H₃O⁺(aq) + HCO₃⁻(aq)\" with the C06 bracket",
+        "explain",
+        "the board clears. `m5x-red-blood-cells-v1.png` small at the upper left (the plate itself opens the scene, so the narration starts straight on blood); a short pH ruler draws from 7.0 to 7.8 with a teal band from 7.35 to 7.45 on \"seven point three five and seven point four five\" (tag \"normal blood pH\"). On \"carbonic acid\" and \"hydrogencarbonate\" the strip writes \"H₂CO₃(aq) + H₂O(l) ⇌ H₃O⁺(aq) + HCO₃⁻(aq)\" with the C06 bracket \"conjugate pair\". On \"takes up the hydronium\" the equation writes: \"HCO₃⁻(aq) + H₃O⁺(aq) → H₂CO₃(aq) + H₂O(l)\" (the strip dims). On \"carbon dioxide\" a second line writes \"H₂CO₃(aq) → CO₂(aq) + H₂O(l)\", and a grey CO₂ arrow runs out to `m8-lungs-healthy-v1.png` small at the right, tag \"breathed out\". Bright at the end: the pH band, the two equations and the lungs. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "blood-works": [
+        "new",
+        "the ratio bar returns, re-labelled \"dissolved CO₂ and H₂CO₃\" (amber, short) and \"HCO₃⁻\" (grey-violet, about twenty times taller); on \"twenty\" the tag \"HCO₃⁻ : dissolved CO₂ about 20 : 1 at pH 7.4\" writes between them.",
+        "Why blood's buffer works: Blood has about twenty hydrogencarbonate ions for each dissolved carbon dioxide molecule.",
+        "twenty / topped up / phosphate",
+        "On the spoken cues: On \"far more acid than base\" a large bracket on the tall column reads \"acid capacity\" and a small bracket on the short column \"base capacity\"; the \"20 : 1\" tag dims. On \"topped up\" the brackets dim and two arrows draw: a two-way arrow between the lungs plate and the \"dissolved CO₂ and H₂CO₃\" column, CO₂ out or kept (tag \"lungs: minutes\"), and one adjusting HCO₃⁻ (tag \"kidneys: hours to days\"). On \"phosphate\" the",
+        "explain",
+        "the ratio bar returns, re-labelled \"dissolved CO₂ and H₂CO₃\" (amber, short) and \"HCO₃⁻\" (grey-violet, about twenty times taller); on \"twenty\" the tag \"HCO₃⁻ : dissolved CO₂ about 20 : 1 at pH 7.4\" writes between them. On \"far more acid than base\" a large bracket on the tall column reads \"acid capacity\" and a small bracket on the short column \"base capacity\"; the \"20 : 1\" tag dims. On \"topped up\" the brackets dim and two arrows draw: a two-way arrow between the lungs plate and the \"dissolved CO₂ and H₂CO₃\" column, CO₂ out or kept (tag \"lungs: minutes\"), and one adjusting HCO₃⁻ (tag \"kidneys: hours to days\"). On \"phosphate\" the ratio bar and arrows dim, and two small chips write along the bottom: \"cells: H₂PO₄⁻ / HPO₄²⁻\" and \"oceans: HCO₃⁻ / CO₃²⁻\" (each written acid / base). Bright at the end: the two chips and the lungs plate. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember.",
+        "A buffer has a defender for each attack / resists, it doesn't prevent",
+        "On the spoken cues: The aid writes large and handwritten: \"A buffer has a defender for each attack.\" with two small icons: a grey-violet A⁻ facing a teal H₃O⁺, an amber HA facing a violet OH⁻. On \"resists\" the second line writes: \"Resists, doesn't prevent: it can run out.\" with a tiny thumbnail of the scene 8 plunge. Each earlier line dims slightly as the next writes.",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"A buffer has a defender for each attack.\" with two small icons: a grey-violet A⁻ facing a teal H₃O⁺, an amber HA facing a violet OH⁻. On \"resists\" the second line writes: \"Resists, doesn't prevent: it can run out.\" with a tiny thumbnail of the scene 8 plunge. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A solution contains zero point two",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. `m5x-ammonia-bottle-v1.png` small at the top right. Question card, worded as printed: \"A solution contains 0.20 mol/L ammonia (NH₃) and 0.20 mol/L ammonium chloride (NH₄Cl). (a) Explain, using equations, how this solution resists a change in pH when a small amount of hydrochloric acid or sodium hydroxide is added. (b) Estimate the pH of the solution, given that the pKa of NH₄⁺ is 9.25 at 25 °C.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no ratio bar, no aid.",
+        [
+            "Cam lens zoom",
+            "bar fill",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card stays and shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "ammonium / hydroxide / nine point two five / swaps",
+        "On the spoken cues: On \"ammonium\" \"0.20 mol/L ammonia\" and \"hydrochloric acid\" are underlined and \"NH₃(aq) + H₃O⁺(aq) → NH₄⁺(aq) + H₂O(l)\" writes. On \"hydroxide\" \"ammonium chloride\" and \"sodium hydroxide\" are underlined and \"NH₄⁺(aq) + OH⁻(aq) → NH₃(aq) + H₂O(l)\" writes; the first equation dims. On \"nine point two five\" \"0.20 mol/L\" (both) and \"pKa of NH₄⁺ is 9.25\" are underlined and the answer chip \"equal partners: pH ≈ pKa = 9.25\"",
+        "explain",
+        "the question card stays and shrinks to the top. On \"ammonium\" \"0.20 mol/L ammonia\" and \"hydrochloric acid\" are underlined and \"NH₃(aq) + H₃O⁺(aq) → NH₄⁺(aq) + H₂O(l)\" writes. On \"hydroxide\" \"ammonium chloride\" and \"sodium hydroxide\" are underlined and \"NH₄⁺(aq) + OH⁻(aq) → NH₃(aq) + H₂O(l)\" writes; the first equation dims. On \"nine point two five\" \"0.20 mol/L\" (both) and \"pKa of NH₄⁺ is 9.25\" are underlined and the answer chip \"equal partners: pH ≈ pKa = 9.25\" pins. On \"swaps\" a chip \"NH₄⁺ + H₃O⁺ → ...\" fades in and is crossed (caption \"the base partner takes added acid\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card: \"Two buffer solutions, X and Y, each have a volume of 100 mL and a pH of 4.74 at 25 °C.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Buffers X and Y each have",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"Two buffer solutions, X and Y, each have a volume of 100 mL and a pH of 4.74 at 25 °C. X contains 0.010 mol of ethanoic acid and 0.010 mol of sodium ethanoate. Y contains 0.0010 mol of ethanoic acid and 0.0010 mol of sodium ethanoate. A student adds 0.0020 mol of hydrochloric acid to each solution. Predict and explain the change in pH in each solution. Assume the volume does not change. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ratio bars, no graph.",
+        [
+            "bar fill",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "zero point zero zero eight zero / four point five seven / uses up / two / slip",
+        "On the spoken cues: Two small ratio bars draw under it, \"X\" and \"Y\". On \"zero point zero zero eight zero\" \"0.010 mol\" and \"0.0020 mol\" are underlined; X's bars become \"HA 0.012 mol | A⁻ 0.0080 mol\". On \"four point five seven\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.012 / 0.0080 = 2.7 × 10⁻⁵ mol/L; pH = 4.57\" writes; answer chip \"X: pH 4.74 → 4.57\". On \"uses up\" Y's \"0.0010 mol\" is underlined, Y's base column",
+        "explain",
+        "the question card stays. Two small ratio bars draw under it, \"X\" and \"Y\". On \"zero point zero zero eight zero\" \"0.010 mol\" and \"0.0020 mol\" are underlined; X's bars become \"HA 0.012 mol | A⁻ 0.0080 mol\". On \"four point five seven\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 0.012 / 0.0080 = 2.7 × 10⁻⁵ mol/L; pH = 4.57\" writes; answer chip \"X: pH 4.74 → 4.57\". On \"uses up\" Y's \"0.0010 mol\" is underlined, Y's base column empties and greys, and \"excess H₃O⁺ = 0.0020 − 0.0010 = 0.0010 mol; 0.010 mol/L\" writes; on \"two\" the chip \"Y: pH 4.74 → about 2.00\" pins. On \"slip\" a chip \"same pH, so same resistance\" fades in and is crossed (caption \"capacity depends on the amounts\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words: \"1 Find the pair: weak acid HA + conjugate base A⁻.\"",
+        "Decision rule and handoff: For any buffer: find the weak acid and its conjugate base.",
+        "Next",
+        "On the spoken cues: \"2 Added acid → reacts with A⁻. Added base → reacts with HA.\" \"3 [H₃O⁺] = Ka × n(HA) / n(A⁻); equal amounts: pH = pKa.\" \"4 Check neither partner has run out (capacity).\" On \"Next\" a chip \"Next: prepare and test a buffer\" appears with a small `m6-ph-meter-probe-beaker-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 Find the pair: weak acid HA + conjugate base A⁻.\" \"2 Added acid → reacts with A⁻. Added base → reacts with HA.\" \"3 [H₃O⁺] = Ka × n(HA) / n(A⁻); equal amounts: pH = pKa.\" \"4 Check neither partner has run out (capacity).\" On \"Next\" a chip \"Next: prepare and test a buffer\" appears with a small `m6-ph-meter-probe-beaker-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6C12_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 5% acidity\".",
+        "Hook (the meter can't count it): The label on this white vinegar says five per cent acidity.",
+        "weak / K a / every / titration",
+        "On the spoken cues: On \"A pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears at the right, beaker labelled \"vinegar\", readout \"2.4\". On \"weak\" a small C08 lens opens over the beaker: almost all amber-outlined molecules, one ion pair lit teal, tag \"the meter senses only these\"; the readout pulses. On \"K a\" the tag dims and a grey tag writes under the readout: \"pH 2.35 to 2.45 → c ≈ 0.70 to 1.1 mol/L (via Ka)\" (dims at the sentence",
+        "explain",
+        "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 5% acidity\". On \"A pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears at the right, beaker labelled \"vinegar\", readout \"2.4\". On \"weak\" a small C08 lens opens over the beaker: almost all amber-outlined molecules, one ion pair lit teal, tag \"the meter senses only these\"; the readout pulses. On \"K a\" the tag dims and a grey tag writes under the readout: \"pH 2.35 to 2.45 → c ≈ 0.70 to 1.1 mol/L (via Ka)\" (dims at the sentence end). On \"every\" all the amber molecules in the lens light at once. On \"titration\" the meter plate fades and the heading writes: \"How much acid is in it?\" Bright at the end: the heading, the bottle and the lens. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Cam lens zoom",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "idea-apparatus": [
+        "adjust",
+        "the board clears.",
+        "The idea and the apparatus: The idea is to react the unknown with a solution whose concentration you know exactly, a standard solution, and measure precisely how much it takes.",
+        "standard solution / pipette / burette / titre",
+        "On the spoken cues: The apparatus assembles centre: `m6-burette-clamp-stand-v1.png` with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip. On \"standard solution\" the burette's coded fill (navy) rises to the zero mark and a navy tag writes beside it: \"NaOH: 0.5000 mol/L (known exactly)\". On \"pipette\" `m6-volumetric-pipette-filler-v1.png` slides in above the flask; its bulb drains into the flask (coded liquid, no hand)",
+        "explain",
+        "the board clears. The apparatus assembles centre: `m6-burette-clamp-stand-v1.png` with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip. On \"standard solution\" the burette's coded fill (navy) rises to the zero mark and a navy tag writes beside it: \"NaOH: 0.5000 mol/L (known exactly)\". On \"pipette\" `m6-volumetric-pipette-filler-v1.png` slides in above the flask; its bulb drains into the flask (coded liquid, no hand) and a tag writes \"aliquot: 10.00 mL vinegar\" (amber); on \"indicator\" three coded drops fall in. On \"burette\" the navy level begins to fall and a volume counter beside the scale counts up. On \"titre\" the counter stops and a bracket \"titre = volume delivered\" spans the fallen level. Bright at the end: the two tags and the titre bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "equivalence-endpoint": [
+        "adjust",
+        "the apparatus shrinks to the right.",
+        "Equivalence, endpoint, and why it counts every molecule: The point where the amounts match the equation exactly is the equivalence point.",
+        "equivalence point / endpoint / right / every",
+        "On the spoken cues: On \"equivalence point\" a tag writes: \"equivalence point: amounts match the equation\". On \"endpoint\" the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png` and a second tag writes beside it: \"endpoint: the colour change (very close to the equivalence point)\". The tags dim. The C08 lens returns large at the left, with C09's \"whole molecules left\" counter at its edge",
+        "explain",
+        "the apparatus shrinks to the right. On \"equivalence point\" a tag writes: \"equivalence point: amounts match the equation\". On \"endpoint\" the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png` and a second tag writes beside it: \"endpoint: the colour change (very close to the equivalence point)\". The tags dim. The C08 lens returns large at the left, with C09's \"whole molecules left\" counter at its edge and a small grey tag \"weak acid heat video\" (dims): on \"Hydroxide removes hydronium\" violet OH⁻ tokens drop in, each taking a teal proton (from the rare hydronium, then directly from amber molecules); the strip \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" pulses its forward arrow on \"right\" (grey tag \"Module 5: Le Chatelier\", dims). On \"every\" the counter reaches 0, the last amber molecule loses its proton and the lens holds only grey-violet ethanoate and water. On \"how much acid there is\" a chip writes: \"titre counts moles of acid, weak or strong\". Bright at the end: the lens and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "primary-standard": [
+        "adjust",
+        "the board clears.",
+        "Standard solutions and primary standards: Everything rests on that known concentration.",
+        "primary standard / standardised",
+        "On the spoken cues: `m6-volumetric-flask-v1.png` centre with a coded label \"Na₂CO₃ standard\". On \"primary standard\" a three-row card writes beside it, ticks lighting one per spoken criterion: \"very pure ✓\", \"stable in air ✓\", \"no water taken up while weighing ✓\", with a small grey tag \"Na₂CO₃: dried in an oven first\" (dims). On \"Sodium hydroxide fails\" the Na₂CO₃ card dims and a second card writes \"NaOH(s)\" with two rows only, each",
+        "explain",
+        "the board clears. `m6-volumetric-flask-v1.png` centre with a coded label \"Na₂CO₃ standard\". On \"primary standard\" a three-row card writes beside it, ticks lighting one per spoken criterion: \"very pure ✓\", \"stable in air ✓\", \"no water taken up while weighing ✓\", with a small grey tag \"Na₂CO₃: dried in an oven first\" (dims). On \"Sodium hydroxide fails\" the Na₂CO₃ card dims and a second card writes \"NaOH(s)\" with two rows only, each taking a grey cross as it is said: \"soaks up water ✗\", \"reacts with CO₂ ✗\" (no equation on screen). On \"standardised\" the NaOH card dims and an arrow runs from the Na₂CO₃ flask to a burette icon labelled \"NaOH: concentration found by titration\". Bright at the end: the flask label, the arrow and its label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "concordant-titres": [
+        "new",
+        "the board clears to the three zones.",
+        "Titres you can trust: Back to the vinegar: ten point zero zero millilitres, titrated with zero point five zero zero zero moles per litre sodium hydroxide.",
+        "eighteen point nine zero / zero point one zero / eighteen point five seven",
+        "On the spoken cues: Task line: \"Find c(CH₃COOH) in the vinegar\". The titre table writes: \"rough | 19.0\" (greyed, tag \"not used\"), then rows 1 to 4: \"18.60\", \"18.55\", \"18.55\", \"18.90\" mL, each writing as it is spoken. On \"eighteen point nine zero\" that row pulses. On \"zero point one zero\" the concordance strip draws under the table (a short number line from 18.50 to 18.95 mL with the four titres as dots); a bracket \"0.10 mL\" slides over",
+        "explain",
+        "the board clears to the three zones. Task line: \"Find c(CH₃COOH) in the vinegar\". The titre table writes: \"rough | 19.0\" (greyed, tag \"not used\"), then rows 1 to 4: \"18.60\", \"18.55\", \"18.55\", \"18.90\" mL, each writing as it is spoken. On \"eighteen point nine zero\" that row pulses. On \"zero point one zero\" the concordance strip draws under the table (a short number line from 18.50 to 18.95 mL with the four titres as dots); a bracket \"0.10 mL\" slides over the three dots at 18.55 to 18.60, and the 18.90 dot sits outside it; the 18.90 row takes a grey cross and the other three are ringed teal; the strip then dims. On \"eighteen point five seven\" the line \"(18.60 + 18.55 + 18.55) ÷ 3 = 18.57 mL\" writes and shrinks to a kept chip \"mean titre = 18.57 mL\". Bright at the end: the task line, the ringed table and the kept chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "we1-moles": [
+        "new",
+        "the table dims to a strip at the top.",
+        "Worked example 1: equation and moles of the known: Now four steps.",
+        "balanced equation / nine point two eight five times ten to the minus three",
+        "On the spoken cues: Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\". Givens card: \"NaOH: c = 0.5000 mol/L, V = 18.57 mL\" (navy) | \"vinegar: V = 10.00 mL\" (amber). The mole bridge draws: three boxes \"known: NaOH\" → \"ratio\" → \"unknown: CH₃COOH\". Step chip \"Step 1 of 4: equation\". On \"balanced equation\" the coefficients on the strip pulse \"1 : 1\" and the ratio box fills \"1 : 1\". Step chip \"Step 2 of 4: n(known)\". On \"n",
+        "explain",
+        "the table dims to a strip at the top. Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\". Givens card: \"NaOH: c = 0.5000 mol/L, V = 18.57 mL\" (navy) | \"vinegar: V = 10.00 mL\" (amber). The mole bridge draws: three boxes \"known: NaOH\" → \"ratio\" → \"unknown: CH₃COOH\". Step chip \"Step 1 of 4: equation\". On \"balanced equation\" the coefficients on the strip pulse \"1 : 1\" and the ratio box fills \"1 : 1\". Step chip \"Step 2 of 4: n(known)\". On \"n equals c V\" the line \"n(NaOH) = c × V\" writes with a grey tag \"V in litres: 18.57 mL = 0.01857 L\" (dims); on \"nine point two eight five\" the line \"= 0.5000 × 0.01857 = 9.285 × 10⁻³ mol\" writes and the known box fills \"9.285 × 10⁻³ mol\". Bright at the end: the strip, the givens card and the known box. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "we1-concentration": [
+        "new",
+        "step chip \"Step 3 of 4: ratio\".",
+        "Worked example 1: ratio and concentration: Third, the mole ratio.",
+        "ethanoic acid / zero point nine two eight five / five point six",
+        "On the spoken cues: On \"ethanoic acid\" an arrow runs through the ratio box and the unknown box fills \"n(CH₃COOH) = 9.285 × 10⁻³ mol\" (the n(NaOH) lines dim). Step chip \"Step 4 of 4: c(unknown)\". The line \"c = n ÷ V = 9.285 × 10⁻³ ÷ 0.01000\" writes; on \"zero point nine two eight five\" it completes \"= 0.9285 mol/L\" and the answer chip \"c(CH₃COOH) = 0.9285 mol/L\" pins, with a small grey tag \"data to 4 s.f. → 4 s.f.\" (dims). On \"five point",
+        "explain",
+        "step chip \"Step 3 of 4: ratio\". On \"ethanoic acid\" an arrow runs through the ratio box and the unknown box fills \"n(CH₃COOH) = 9.285 × 10⁻³ mol\" (the n(NaOH) lines dim). Step chip \"Step 4 of 4: c(unknown)\". The line \"c = n ÷ V = 9.285 × 10⁻³ ÷ 0.01000\" writes; on \"zero point nine two eight five\" it completes \"= 0.9285 mol/L\" and the answer chip \"c(CH₃COOH) = 0.9285 mol/L\" pins, with a small grey tag \"data to 4 s.f. → 4 s.f.\" (dims). On \"five point six\" the vinegar plate returns small with a tag \"0.9285 mol/L × 60.05 g/mol = 55.8 g/L ≈ 5.6 g per 100 mL\" beside its \"5% acidity (5 g per 100 mL)\" label; the step lines dim. Bright at the end: the answer chip and the vinegar tag. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "we2-ratio": [
+        "new",
+        "the board clears to the three zones.",
+        "Worked example 2: a two to one ratio: The ratio isn't always one to one.",
+        "sodium carbonate / twenty two point four five / two",
+        "On the spoken cues: Task line: \"Find c(HCl)\". The apparatus thumbnail at the right now shows the burette labelled \"unknown\" (amber) and the flask labelled \"standard\" (navy), tag \"indicator: methyl orange\" (grey, dims before the givens card writes). On \"sodium carbonate\" the givens card writes: \"Na₂CO₃: c = 0.05000 mol/L, V = 25.00 mL\" | \"HCl: titres 22.45, 22.40, 22.50 mL\". On \"twenty two point four five\" the three titres are ringed",
+        "explain",
+        "the board clears to the three zones. Task line: \"Find c(HCl)\". The apparatus thumbnail at the right now shows the burette labelled \"unknown\" (amber) and the flask labelled \"standard\" (navy), tag \"indicator: methyl orange\" (grey, dims before the givens card writes). On \"sodium carbonate\" the givens card writes: \"Na₂CO₃: c = 0.05000 mol/L, V = 25.00 mL\" | \"HCl: titres 22.45, 22.40, 22.50 mL\". On \"twenty two point four five\" the three titres are ringed (all within 0.10 mL) and the kept chip \"mean titre = 22.45 mL\" writes; the thumbnail dims. On \"two\" the strip writes \"Na₂CO₃(aq) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\", its coefficients pulse \"1 : 2\", and the mole bridge redraws with the ratio box filled \"1 Na₂CO₃ : 2 HCl\"; a small grey tag \"CO₃²⁻ accepts two protons\" (dims). Bright at the end: the strip, the givens card and the ratio box. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "we2-burette-unknown": [
+        "new",
+        "on \"one point two five zero\" the line \"n(Na₂CO₃) = 0.05000 × 0.02500 = 1.250 × 10⁻³ mol\" writes and fills the known box.",
+        "Worked example 2: the unknown in the burette: Moles of carbonate: zero point zero five zero zero zero times zero point zero two five zero zero, one point two five zero times ten to the minus three.",
+        "one point two five zero times ten to the minus three / two point five zero zero times ten to the minus three / zero point one one one four / unknown",
+        "On the spoken cues: On \"two point five zero zero\" the line \"n(HCl) = 2 × 1.250 × 10⁻³ = 2.500 × 10⁻³ mol\" writes and fills the unknown box (the first line dims). On \"zero point one one one four\" the line \"c(HCl) = 2.500 × 10⁻³ ÷ 0.02245 = 0.1114 mol/L\" writes, the burette thumbnail's titre bracket pulses on \"divide by the titre\", and the answer chip \"c(HCl) = 0.1114 mol/L\" pins. On \"unknown\" the mole bridge's three boxes light left to",
+        "explain",
+        "on \"one point two five zero\" the line \"n(Na₂CO₃) = 0.05000 × 0.02500 = 1.250 × 10⁻³ mol\" writes and fills the known box. On \"two point five zero zero\" the line \"n(HCl) = 2 × 1.250 × 10⁻³ = 2.500 × 10⁻³ mol\" writes and fills the unknown box (the first line dims). On \"zero point one one one four\" the line \"c(HCl) = 2.500 × 10⁻³ ÷ 0.02245 = 0.1114 mol/L\" writes, the burette thumbnail's titre bracket pulses on \"divide by the titre\", and the answer chip \"c(HCl) = 0.1114 mol/L\" pins. On \"unknown\" the mole bridge's three boxes light left to right. Bright at the end: the answer chip and the bridge. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember.",
+        "Known to moles, ratio, unknown. / average only concordant titres",
+        "On the spoken cues: The aid writes large and handwritten: \"Known to moles, ratio, unknown.\" with the mole bridge icon under it. On \"average only concordant titres\" the second line writes: \"Average only concordant titres (within 0.10 mL).\" with a tiny concordance strip thumbnail. Each earlier line dims slightly as the next writes.",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"Known to moles, ratio, unknown.\" with the mole bridge icon under it. On \"average only concordant titres\" the second line writes: \"Average only concordant titres (within 0.10 mL).\" with a tiny concordance strip thumbnail. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A twenty five point zero zero",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A 25.00 mL aliquot of sulfuric acid, H₂SO₄, of unknown concentration was titrated with 0.1000 mol/L sodium hydroxide solution. The titres were 23.45 mL, 23.70 mL, 23.40 mL and 23.50 mL. Calculate the concentration of the sulfuric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no equation strip, no bridge, no aid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card stays and shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "twenty three point four five / two point three four five times ten to the minus three / one to two / zero point zero four six nine zero",
+        "On the spoken cues: On \"twenty three point four five\" the four titres are underlined, 23.70 takes a grey cross and the line \"mean = (23.45 + 23.40 + 23.50) ÷ 3 = 23.45 mL\" writes. On \"two point three four five\" \"0.1000 mol/L\" is underlined and \"n(NaOH) = 0.1000 × 0.02345 = 2.345 × 10⁻³ mol\" writes (the mean line dims). On \"one to two\" \"sulfuric acid, H₂SO₄\" is underlined and the strip writes \"H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) +",
+        "explain",
+        "the question card stays and shrinks to the top. On \"twenty three point four five\" the four titres are underlined, 23.70 takes a grey cross and the line \"mean = (23.45 + 23.40 + 23.50) ÷ 3 = 23.45 mL\" writes. On \"two point three four five\" \"0.1000 mol/L\" is underlined and \"n(NaOH) = 0.1000 × 0.02345 = 2.345 × 10⁻³ mol\" writes (the mean line dims). On \"one to two\" \"sulfuric acid, H₂SO₄\" is underlined and the strip writes \"H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)\", then \"n(H₂SO₄) = 2.345 × 10⁻³ ÷ 2 = 1.1725 × 10⁻³ mol\". On \"zero point zero four six nine zero\" \"25.00 mL aliquot\" is underlined and \"c = 1.1725 × 10⁻³ ÷ 0.02500 = 0.04690 mol/L\" writes; answer chip \"c(H₂SO₄) = 0.04690 mol/L\" pins. On \"doubles\" a chip \"1 : 1, so c = 0.09380 mol/L\" fades in and is crossed (caption \"read the ratio from the equation\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card: \"Two conical flasks each contain a 25.00 mL aliquot of an acid.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Two flasks each hold twenty five",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"Two conical flasks each contain a 25.00 mL aliquot of an acid. Flask A contains 0.100 mol/L hydrochloric acid, HCl, and flask B contains 0.100 mol/L ethanoic acid, CH₃COOH. Each is titrated with 0.100 mol/L sodium hydroxide solution. Predict the volume of sodium hydroxide needed to reach the equivalence point in each flask. Explain your prediction, given that the two acids have different pH values.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no bridge.",
+        [
+            "Cam lens zoom",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "twenty five point zero / two point five zero times ten to the minus three / ionise / less",
+        "On the spoken cues: On \"twenty five point zero\" \"25.00 mL aliquot\" and the three \"0.100 mol/L\" values are underlined and the answer chip \"A: 25.0 mL | B: 25.0 mL\" pins. On \"two point five zero\" the line \"n(acid) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol in each; V(NaOH) = 2.50 × 10⁻³ ÷ 0.100 = 0.0250 L\" writes. On \"ionise\" a small lens thumbnail (scene 3) replays: amber molecules giving up protons to violet OH⁻ until none are left;",
+        "explain",
+        "the question card stays. On \"twenty five point zero\" \"25.00 mL aliquot\" and the three \"0.100 mol/L\" values are underlined and the answer chip \"A: 25.0 mL | B: 25.0 mL\" pins. On \"two point five zero\" the line \"n(acid) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol in each; V(NaOH) = 2.50 × 10⁻³ ÷ 0.100 = 0.0250 L\" writes. On \"ionise\" a small lens thumbnail (scene 3) replays: amber molecules giving up protons to violet OH⁻ until none are left; \"different pH values\" is underlined. On \"less\" a chip \"B needs less NaOH: only partly ionised\" fades in and is crossed (caption \"titre counts moles, not strength\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "Cam lens zoom"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words (lines 3 and 4 light together on \"known to moles, ratio, unknown\"): \"1 Concordant titres only (within 0.10 mL); average them.\"",
+        "Decision rule and handoff: So for any titration: average only the concordant titres, write the balanced equation, then go known to moles, ratio, unknown.",
+        "Next",
+        "On the spoken cues: \"2 Balanced equation → mole ratio.\" \"3 n(known) = c × V (V in L).\" \"4 n(unknown) from the ratio; c(unknown) = n ÷ V.\" On \"Next\" a chip \"Next: titration in the lab\" appears with a small `m6-burette-clamp-stand-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words (lines 3 and 4 light together on \"known to moles, ratio, unknown\"): \"1 Concordant titres only (within 0.10 mL); average them.\" \"2 Balanced equation → mole ratio.\" \"3 n(known) = c × V (V in L).\" \"4 n(unknown) from the ratio; c(unknown) = n ÷ V.\" On \"Next\" a chip \"Next: titration in the lab\" appears with a small `m6-burette-clamp-stand-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+# END generated rows: m6c11-m6c12
+
+
 LESSONS = {
     'c5': {
         'design': D + 'lessons/chem-m5-c05.md',
@@ -6379,6 +6912,34 @@ LESSONS = {
         'rows': M6C10_ROWS,
     },
     # END generated entries: m6c09-m6c10
+    # BEGIN generated entries: m6c11-m6c12
+    'm6c11': {
+        'design': D + 'lessons/chem-m6-c11.md',
+        'learning_review': D + 'checks/m6c11-learning-review.md',
+        'science_check': D + 'checks/m6c11-claude-science-check.md',
+        'meta': {"title": "How does a buffer resist a pH change? A defender for each attack, the ratio that sets the pH, and running out", "subtitle": "The same splash of acid drops water by five pH units, but a mixture of ethanoic acid and sodium ethanoate by less than a tenth. What does that mixture contain, how does it take up added acid and base, what sets its pH, when does it run out, and why does your blood depend on one?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 16, "lessonIntent": "describing a buffer as a weak acid and its conjugate base in large amounts; writing the equations for added acid (taken up by the conjugate base) and added base (taken up by the weak acid); explaining why the pH changes only slightly, using [H₃O⁺] = Ka × n(HA) / n(A⁻); estimating a buffer's pH (pH = pKa for equal amounts; below or above pKa otherwise) and calculating the pH after a small addition; explaining why a strong acid with its salt is not a buffer; explaining capacity and why it depends on the amounts, not the pH; describing how the carbonic acid and hydrogencarbonate buffer keeps blood pH 7.35 to 7.45, with the lungs and kidneys topping it up, and naming buffering in cells and oceans; reading buffer-against-water evidence. No bench preparation or risk table (chem-m6-p05), no Henderson-Hasselbalch log form, no partial neutralisation or half-equivalence (chem-m6-c14), no polyprotic calculations."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "what-it-holds", "acid-attack", "base-attack", "buffer-ph", "we-after-acid", "ratio-sets-ph", "capacity", "blood-buffer", "blood-works", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C10 (Ka = [H₃O⁺][A⁻] / [HA] for a weak acid; pKa = −log Ka; ethanoic acid Ka 1.8 × 10⁻⁵ and pKa 4.74; the decimal-places rule applied to Ka). C08 (a weak acid stays mostly un-ionised; the particle lens). C07 (pH from [H₃O⁺]; the decimal-places rule; 1.0 mol/L HCl gives [H₃O⁺] = c). C06 (conjugate pairs; the conjugate base of a weak acid pulls protons back, the conjugate base of a strong acid has almost no pull). C05 (strong and weak; salts dissolve completely into ions). C02 (salt names: sodium ethanoate, ammonium chloride). Module 5: Le Chatelier's principle (adding a product shifts an equilibrium back). Year 11: n = c × V. Not assumed: the word buffer, capacity, the blood buffer. Also from C08: the ICE table, which is why scene 5 says the amounts put in can be used directly (the partners barely react with water).", "startsWith": "Add acid or base to a weak-acid/conjugate-base mixture. The video opens: Two beakers, a hundred millilitres each. One is pure water, at pH seven. The other is a mix of ethanoic acid and sodium ethanoate, at pH four point seven four.", "stopsAfter": "describing a buffer as a weak acid and its conjugate base in large amounts; writing the equations for added acid (taken up by the conjugate base) and added base (taken up by the weak acid); explaining why the pH changes only slightly, using [H₃O⁺] = Ka × n(HA) / n(A⁻); estimating a buffer's pH (pH = pKa for equal amounts; below or above pKa otherwise) and calculating the pH after a small addition; explaining why a strong acid with its salt is not a buffer; explaining capacity and why it depends on the amounts, not the pH; describing how the carbonic acid and hydrogencarbonate buffer keeps blood pH 7.35 to 7.45, with the lungs and kidneys topping it up, and naming buffering in cells and oceans; reading buffer-against-water evidence. No bench preparation or risk table (chem-m6-p05), no Henderson-Hasselbalch log form, no partial neutralisation or half-equivalence (chem-m6-c14), no polyprotic calculations.", "nextLesson": "preparing a buffer in the lab and testing it against water (route chem-m6-p05)."},
+        'teaching': {"task": "The same splash of acid drops water by five pH units, but a mixture of ethanoic acid and sodium ethanoate by less than a tenth. What does that mixture contain, how does it take up added acid and base, what sets its pH, when does it run out, and why does your blood depend on one?", "causalExplanation": "(1) the same acid drops water 5 pH units and the mixture less than 0.1: why? (1); (2) ethanoic acid stays mostly whole and the salt supplies plenty of ethanoate, so both partners are present in large amounts: a buffer (2); (3) added hydronium meets ethanoate, the conjugate base of a weak acid, which takes the proton back; almost all of it is used up (3); (4) added hydroxide takes a proton from ethanoic acid; a defender for each attack; water against buffer for base too (4); (5) Ka rearranged: [H₃O⁺] = Ka × acid ÷ base; moles work because the volume cancels; equal amounts give pH = pKa (5); (6) after the acid the ratio is about 1.2, so hydronium rises by about 20%, against a hundred thousand times in water (6); (7) the ratio sets the pH, so buffers need not be neutral; a strong acid's conjugate base does not take protons back, so HCl with NaCl is not a buffer (7); (8) each portion of acid uses up ethanoate; when it runs out, the pH plunges: capacity depends on the amounts (8); (9) blood keeps pH 7.35 to 7.45 with carbonic acid and hydrogencarbonate; the CO₂ formed is breathed out (9); (10) blood has about 20 hydrogencarbonate ions for each dissolved carbon dioxide molecule (carbon dioxide and carbonic acid together are the acid side), so it absorbs acid better than base; it is topped up by lungs and kidneys; cells and oceans buffer too (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).", "conversationalApproach": "one contrast carries the video: the same millilitre of hydrochloric acid drops water by five pH units but a mixture of ethanoic acid and sodium ethanoate by less than a tenth. The particle lens shows why (ethanoate, the conjugate base of a weak acid, takes back the added hydronium; ethanoic acid gives a proton to added hydroxide: a defender for each attack), the Ka expression rearranged shows that the pH follows the ratio of acid to base, and a worked example finds the pH after the acid. Repeated portions of acid then use up the ethanoate until the pH plunges (capacity), and the blood buffer applies the same reasoning with the lungs and kidneys topping it up. Two exam questions follow with brief feedback.", "openingDecision": "Two beakers, a hundred millilitres each. One is pure water, at pH seven. The other is a mix of ethanoic acid and sodium ethanoate, at pH four point seven four. Add one millilitre of one mole per litre hydrochloric acid to each. The water drops to pH two point zero zero, five whole units. The mixture drops to four point six six, less than a tenth of a unit. So what's in that second beaker that soaks up the acid, and can it ever run out?", "understandingCheck": "(A1) \"A solution contains 0.20 mol/L ammonia (NH₃) and 0.20 mol/L ammonium chloride (NH₄Cl). (a) Explain, using equations, how this solution resists a change in pH when a small amount of hydrochloric acid or sodium hydroxide is added. (b) Estimate the pH of the solution, given that the pKa of NH₄⁺ is 9.25 at 25 °C.\" New pair (a basic buffer, weak base and conjugate acid; not shown anywhere before the attempt), so the student must find which partner is the acid. Crossed mistake: \"NH₄⁺ + H₃O⁺ → ...\" (partners swapped; the site's \"HA reacts with added H⁺\" misconception). (A2) \"Two buffer solutions, X and Y, each have a volume of 100 mL and a pH of 4.74 at 25 °C. X contains 0.010 mol of ethanoic acid and 0.010 mol of sodium ethanoate. Y contains 0.0010 mol of ethanoic acid and 0.0010 mol of sodium ethanoate. A student adds 0.0020 mol of hydrochloric acid to each solution. Predict and explain the change in pH in each solution. Assume the volume does not change. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" Tests capacity against pH. Crossed mistake: \"same pH, so they resist equally\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)\" \"describe the importance of buffers in natural systems (ACSCH098, ACSCH102)\" this video starts from the route's acid or base added to a weak acid and conjugate base mixture and stops at explaining the response, estimating the pH and identifying the capacity limit. It teaches: what a buffer contains and why (a weak acid mostly whole, plus its conjugate base from a dissolved salt; C05 and C06 callbacks); how the conjugate base takes up added hydronium and the weak acid takes up added hydroxide, with equations (the Le Chatelier reading is a Module 5 callback, one clause); why the pH still changes a little (the Ka expression rearranged, [H₃O⁺] = Ka × n(HA) / n(A⁻), a C10 callback, with moles in place of concentrations because the volume cancels); pH = pKa when the partners are equal, and the direction of the pH when they are not; why a strong acid with its salt is not a buffer (C06 conjugate strength); buffer capacity and its limit, shown as the pH curve for repeated acid portions against water; why capacity depends on the amounts, not the pH; the blood buffer (carbonic acid and hydrogencarbonate, the lungs and kidneys) and the importance of buffers in natural systems; the demonstration evidence the practical dotpoint asks for (the same addition to buffer and to water, side by side). Not here: preparing a buffer at the bench, the risk table and the dilution test (chem-m6-p05, the next video, which owns the practical conduct; this video shows the comparison data only); the Henderson-Hasselbalch equation by name or in log form (site card 3 labels it Extension; see Open decisions); partial neutralisation to make a buffer and half-equivalence (chem-m6-c14, titration curves); quantitative buffer range \"pKa ± 1\"; polyprotic acids and the phosphate calculation of site worked example 2; the direction of an amphiprotic ion from Ka against Kb (C10 deferred it here; see Open decisions); detailed blood-gas clinical cases (site worked example 3, diabetic ketoacidosis) and ocean saturation chemistry (worksheet 04 corrections)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole ethanoic acid molecules amber-outlined (C05, C08); ethanoate grey-violet; Na⁺ and Cl⁻ small grey spectators; meter readouts amber digits; the ratio bar's acid column amber and base column grey-violet; water's lines and readouts pale blue, the buffer's teal. Board layout (constant, C03, C07, C08 and C10): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the lens, the ratio bar, the graph or the working, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 20 Oct): `m6-ph-meter-probe-beaker-v1.png` (two copies: hook and scene 4, coded amber readouts \"7.00\" → \"2.00\" or \"12.00\" on the water and \"4.74\" → \"4.66\" or \"4.83\" on the buffer; beakers labelled in code \"water, 100 mL\" and \"ethanoic acid + sodium ethanoate, 0.100 mol/L each, 100 mL\"), `m6-beaker-v1.png` (scene 2, under the lens), `m6-vinegar-bottle-v1.png` (not used), `m5x-ammonia-bottle-v1.png` (attempt 1 card, small), `m5x-red-blood-cells-v1.png` (inspected: five painted red blood cells, no person; scene 9, small), `m8-lungs-healthy-v1.png` (inspected: a painted pair of lungs with trachea and bronchi, no person or face; scenes 9 and 10, small, the CO₂ arrow ends at it). No new plates needed. No human figures.", "transitionPlan": "Two pH meter plates open with amber readouts that fall by different amounts; the plates shrink as the particle lens opens from a beaker and the ratio bar draws beside it; added hydronium and hydroxide tokens hop onto the partners while the ratio bar moves a slice between its columns and the equations write; the meter plates return small for the base comparison; the givens card enters at the left and the rearranged Ka line and the worked lines write one stage at a time, earlier lines dimming, leaving one kept chip; the pH line tilts the ratio bar for below and above pKa; the capacity graph draws dose by dose as the base column empties; the blood cells and lungs plates frame the blood buffer strip, the 20 : 1 bar and the topping-up arrows; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C11_ROWS,
+    },
+    'm6c12': {
+        'design': D + 'lessons/chem-m6-c12.md',
+        'learning_review': D + 'checks/m6c12-learning-review.md',
+        'science_check': D + 'checks/m6c12-claude-science-check.md',
+        'meta': {"title": "How does direct titration reveal an unknown concentration? Standard solutions, concordant titres and the mole ratio", "subtitle": "A pH meter can't tell you accurately how much ethanoic acid is in a bottle of vinegar. How does a titration count every acid molecule, which titres can you trust, and how do the balanced equation and n = cV turn a titre into a concentration?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 18, "lessonIntent": "explaining why a pH reading gives a weak acid's concentration only very imprecisely, but a titration counts it; describing a titration with a standard solution, pipette, burette and indicator, and distinguishing the endpoint from the equivalence point; explaining why a titration counts all of a weak acid; stating what makes a primary standard and why sodium hydroxide is standardised; choosing concordant titres (within 0.10 mL) and averaging only those; calculating an unknown concentration in four steps (balanced equation and ratio, n = cV for the known, the ratio for the unknown, c = n/V) with 1 : 1 and 1 : 2 ratios, whichever solution is in the burette, to the right significant figures. No rinsing, meniscus, bubble or error-direction technique (chem-m6-p06), no indicator choice (chem-m6-c13), no curves (chem-m6-c14), no back titration or aliquot scale-up (chem-m6-c15, chem-m6-g03)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "idea-apparatus", "equivalence-endpoint", "primary-standard", "concordant-titres", "we1-moles", "we1-concentration", "we2-ratio", "we2-burette-unknown", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "Year 11 (n = c × V with V in litres; n = m / M; balanced equations and mole ratios). C02 (acid reactions and their products: acid + hydroxide → salt + water; acid + carbonate → salt + water + carbon dioxide; balancing, including sulfuric acid with two hydroxides). C05 (strong and weak; ethanoic acid is weak and mostly un-ionised). C08 (only a small fraction of a weak acid is ionised; [H₃O⁺] is far below c). C07 (pH is −log[H₃O⁺]; strong acids give [H₃O⁺] = c). C06 (carbonate accepts protons; a diprotic acid gives two). Module 5: Le Chatelier's principle. Not assumed: titration apparatus and terms, primary standard, standardisation, concordance.", "startsWith": "Use a known standard and an unknown solution. The video opens: The label on this white vinegar says five per cent acidity. How could you check how much ethanoic acid is really in it? A pH meter won't do it well.", "stopsAfter": "explaining why a pH reading gives a weak acid's concentration only very imprecisely, but a titration counts it; describing a titration with a standard solution, pipette, burette and indicator, and distinguishing the endpoint from the equivalence point; explaining why a titration counts all of a weak acid; stating what makes a primary standard and why sodium hydroxide is standardised; choosing concordant titres (within 0.10 mL) and averaging only those; calculating an unknown concentration in four steps (balanced equation and ratio, n = cV for the known, the ratio for the unknown, c = n/V) with 1 : 1 and 1 : 2 ratios, whichever solution is in the burette, to the right significant figures. No rinsing, meniscus, bubble or error-direction technique (chem-m6-p06), no indicator choice (chem-m6-c13), no curves (chem-m6-c14), no back titration or aliquot scale-up (chem-m6-c15, chem-m6-g03).", "nextLesson": "doing a titration in the lab, with the technique that keeps it accurate (route chem-m6-p06)."},
+        'teaching': {"task": "A pH meter can't tell you accurately how much ethanoic acid is in a bottle of vinegar. How does a titration count every acid molecule, which titres can you trust, and how do the balanced equation and n = cV turn a titre into a concentration?", "causalExplanation": "(1) a pH meter gives the concentration of a weak acid only very imprecisely, because it senses only the small ionised fraction and working back through Ka magnifies the reading error; we need to count every acid molecule (1); (2) react it with a solution of exactly known concentration and measure how much is needed; apparatus and terms (2); (3) the equivalence point is reached when the amounts match the equation, and the endpoint shows it; hydroxide keeps removing hydronium, so the weak acid keeps ionising until all of it has reacted (3); (4) the known concentration must be trustworthy: primary standards; NaOH absorbs water and CO₂, so its solution is standardised (4); (5) a rough titre locates the endpoint; accurate titres must agree within 0.10 mL; average only those (5); (6) the balanced equation gives the ratio; moles of the known from n = cV (6); (7) the ratio gives moles of acid; divide by the aliquot volume; four significant figures; compare with the label (7); (8) the ratio is not always 1 : 1: carbonate takes two protons, so two HCl per Na₂CO₃ (8); (9) moles of carbonate, times two, divided by the titre volume: the unknown can be in the burette (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).", "conversationalApproach": "one limitation carries the video: a pH meter cannot tell you accurately how much ethanoic acid is in vinegar, because it senses only the small ionised fraction. A titration counts every acid molecule instead: hydroxide from a solution of exactly known concentration keeps removing hydronium, so the weak acid keeps ionising until all of it has reacted, and the endpoint shows when the amounts match the equation. Primary standards and concordant titres say which numbers to trust, and two worked examples (vinegar against sodium hydroxide, then hydrochloric acid in the burette against sodium carbonate, a two to one ratio) run the same mole bridge: known to moles, ratio, unknown. Two exam questions follow with brief feedback.", "openingDecision": "The label on this white vinegar says five per cent acidity. How could you check how much ethanoic acid is really in it? A pH meter won't do it well. Ethanoic acid is weak, so most of it stays as whole molecules, and the meter only senses the few that have ionised. You could work back through K a, but a reading of two point four could mean anything from about zero point seven to one point one moles per litre. You need a method that counts every acid molecule. That's a titration. So how does it work, and how do its numbers give a concentration?", "understandingCheck": "(A1) \"A 25.00 mL aliquot of sulfuric acid, H₂SO₄, of unknown concentration was titrated with 0.1000 mol/L sodium hydroxide solution. The titres were 23.45 mL, 23.70 mL, 23.40 mL and 23.50 mL. Calculate the concentration of the sulfuric acid.\" New acid with a 1 : 2 ratio the student must write, and a non-concordant titre. Crossed mistake: \"1 : 1, so c = 0.09380 mol/L\" (the site's Step 3 error). (A2) \"Two conical flasks each contain a 25.00 mL aliquot of an acid. Flask A contains 0.100 mol/L hydrochloric acid, HCl, and flask B contains 0.100 mol/L ethanoic acid, CH₃COOH. Each is titrated with 0.100 mol/L sodium hydroxide solution. Predict the volume of sodium hydroxide needed to reach the equivalence point in each flask. Explain your prediction, given that the two acids have different pH values.\" Tests the hook's idea on an unseen pair. Crossed mistake: \"B needs less NaOH, because ethanoic acid is only partly ionised\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" this video starts from a known standard and an unknown solution and stops at the unknown's concentration from concordant titres and a balanced mole ratio. It teaches: why a pH reading gives the concentration of a weak acid such as ethanoic acid only very imprecisely (C05, C08 and C10 callbacks), and why a titration counts it; the idea of a titration (react the unknown with a solution of exactly known concentration until the amounts match the equation); the apparatus and terms (standard solution, pipette and aliquot, burette, titrant, titre, indicator, endpoint, equivalence point) at the level needed for the calculation; why a titration counts all of a weak acid (hydroxide removes hydronium, the equilibrium shifts right until every molecule has reacted; Module 5 Le Chatelier callback); what makes a primary standard and why sodium hydroxide is standardised first; rough and accurate titres and concordance (within 0.10 mL); the four-step calculation with a 1 : 1 ratio (vinegar) and a 1 : 2 ratio (sodium carbonate standardising hydrochloric acid, with the unknown in the burette); significant figures for the result. Not here: rinsing rules, meniscus reading, parallax, air bubbles, the rough-titration technique and error direction (chem-m6-p06, the next video, which owns practical conduct and error evaluation; see Open decisions); indicator choice and equivalence-point pH (chem-m6-c13); titration curves and conductivity graphs (chem-m6-c14); back titration and dilution or aliquot scale-up from a volumetric flask (chem-m6-c15 and chem-m6-g03; see Open decisions); percentage by mass with density (g03); polyprotic stages of tartaric or oxalic acid beyond the overall ratio."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole ethanoic acid molecules amber-outlined (C05, C08); the known solution's values (standard, titrant) navy; the unknown's values amber; the ratio box teal; concordant titres ringed teal, the outlier crossed grey. Board layout (constant, C03, C07, C08 and C10): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the titre table, the mole bridge or the working, one stage per line, earlier lines dimming; the apparatus plates sit small at the right only when they carry the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 20 Oct): `m6-burette-clamp-stand-v1.png` (inspected: retort stand, clamp and glass burette with a blue tap, no person or hand; scenes 2, 3, 5, the fill gauge drawn over its tube), `m6-volumetric-pipette-filler-v1.png` (inspected: bulb pipette with a red pipette filler, no hand; scene 2), `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (scene 2, under the burette tip), `m6-clip-phenolphthalein-colourless-v1.png` and `m6-clip-phenolphthalein-pink-v1.png` (inspected the pink one: conical flask of pale pink solution, no hand; scene 3, the endpoint swap), `m6-vinegar-bottle-v1.png` (hook and scenes 5 to 7, coded label \"white vinegar: 5% acidity\"), `m6-ph-meter-probe-beaker-v1.png` (hook, coded readout \"2.4\" in the beaker labelled \"vinegar\"), `m6-volumetric-flask-v1.png` (scene 4, the standard solution), `m6-indicator-methyl-orange-set-v1.png` (not used: indicator choice is chem-m6-c13; scene 8 names the indicator in a tag only). No new plates needed. No human figures.", "transitionPlan": "The vinegar bottle and pH meter plates open, and a small particle lens over the beaker shows the few ions the meter senses; the board clears as the burette, flask and tile plates assemble with the pipette sliding in; the flask swaps from colourless to pink at the endpoint while the lens shows the weak acid ionising until none is left; the volumetric flask and the primary standard card tick its criteria; the titre table writes row by row and the concordance strip draws beneath it; the equation strip, givens card and mole bridge carry both worked examples one stage per line, earlier lines dimming, with the apparatus thumbnail swapping the unknown into the burette for the second; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C12_ROWS,
+    },
+    # END generated entries: m6c11-m6c12
 }
 
 

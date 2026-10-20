@@ -1,6 +1,8 @@
 # B6-09: What counts as biotechnology, and what does each kind change? (design)
 
-Status: Revision 2 (20 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration: 5,845 characters (Revision 1: 5,709; 15 scene files, counted with the build parser rules), about 9.3 minutes (558 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending. Changes from Revision 1 (`../checks/m6b09-learning-review.md`, `../checks/m6b09-claude-science-check.md`):
+Status: Revision 3 (20 Oct): Codex check 90 found no errors; ready to voice.
+
+Revision 2 (20 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration: 5,845 characters (Revision 1: 5,709; 15 scene files, counted with the build parser rules), about 9.3 minutes (558 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending. Changes from Revision 1 (`../checks/m6b09-learning-review.md`, `../checks/m6b09-claude-science-check.md`):
 - Scene 2: "The yeast's DNA isn't changed at all" became "Making bread doesn't change the yeast's DNA" (no absolute; baker's yeast strains are themselves bred); cue updated.
 - Scene 4: "it only works with variation the sheep already have" became "it's limited to variation that already exists in the flock"; tags and gloss fade in turn.
 - Scene 6: "hand pollination" became "artificial pollination" (the syllabus and notes term; the plate is the paintbrush plate, no hand); "transgenic organisms" removed from the lane 4 label (never spoken); lane labels shrink to grey when the next lane lights.

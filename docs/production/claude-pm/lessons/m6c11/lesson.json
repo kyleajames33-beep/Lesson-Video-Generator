@@ -1,0 +1,160 @@
+{
+  "title": "How does a buffer resist a pH change? A defender for each attack, the ratio that sets the pH, and running out",
+  "subtitle": "The same splash of acid drops water by five pH units, but a mixture of ethanoic acid and sodium ethanoate by less than a tenth. What does that mixture contain, how does it take up added acid and base, what sets its pH, when does it run out, and why does your blood depend on one?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 16,
+  "lessonIntent": "describing a buffer as a weak acid and its conjugate base in large amounts; writing the equations for added acid (taken up by the conjugate base) and added base (taken up by the weak acid); explaining why the pH changes only slightly, using [H₃O⁺] = Ka × n(HA) / n(A⁻); estimating a buffer's pH (pH = pKa for equal amounts; below or above pKa otherwise) and calculating the pH after a small addition; explaining why a strong acid with its salt is not a buffer; explaining capacity and why it depends on the amounts, not the pH; describing how the carbonic acid and hydrogencarbonate buffer keeps blood pH 7.35 to 7.45, with the lungs and kidneys topping it up, and naming buffering in cells and oceans; reading buffer-against-water evidence. No bench preparation or risk table (chem-m6-p05), no Henderson-Hasselbalch log form, no partial neutralisation or half-equivalence (chem-m6-c14), no polyprotic calculations.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two beakers, a hundred millilitres each. One is pure water, at pH seven. The other is a mix of ethanoic acid and sodium ethanoate, at pH four point seven four. Add one millilitre of one mole per litre hydrochloric acid to each. The water drops to pH two point zero zero, five whole units. The mixture drops to four point six six, less than a tenth of a unit. So what's in that second beaker that soaks up the acid, and can it ever run out?"
+      }
+    },
+    {
+      "id": "what-it-holds",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ethanoic acid is weak, so most of it stays as whole molecules. The sodium ethanoate dissolves completely, adding lots of ethanoate ions, ethanoic acid's conjugate base. So the beaker holds a big supply of both partners at once. A weak acid and its conjugate base, both in large amounts: that's a buffer, a solution that resists a change in pH when a little acid or base is added."
+      }
+    },
+    {
+      "id": "acid-attack",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now add the hydrochloric acid. It's strong, so it puts hydronium ions straight into the beaker. But here, each one meets an ethanoate ion, the conjugate base of a weak acid, so it pulls the proton back. Hydronium plus ethanoate gives ethanoic acid and water. Almost every added hydronium is used up, leaving a little more ethanoic acid and a little less ethanoate. In Module 5 terms, adding a product pushed the equilibrium back to the left."
+      }
+    },
+    {
+      "id": "base-attack",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Add sodium hydroxide instead, and the other partner steps in. Each hydroxide ion takes a proton from an ethanoic acid molecule, making ethanoate and water. The same millilitre of sodium hydroxide takes water from seven to twelve, but the buffer only from four point seven four to four point eight three. So a buffer has a defender for each attack: the conjugate base takes on added acid, and the weak acid takes on added base."
+      }
+    },
+    {
+      "id": "buffer-ph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So why does the pH move at all? Go back to K a for ethanoic acid. Rearrange it, and hydronium equals K a times acid over ethanoate. Very little of either partner reacts with water, so you can use the amounts you put in. They share one volume, which cancels, so moles work too. Here there's zero point zero one zero zero moles of each, so the ratio is one, and hydronium just equals K a. So when the two partners are equal, the pH equals the p K a, four point seven four."
+      }
+    },
+    {
+      "id": "we-after-acid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now add the zero point zero zero one zero moles of hydronium. It turns that much ethanoate into ethanoic acid, so the acid rises to zero point zero one one zero moles, and the ethanoate falls to zero point zero zero nine zero. The ratio becomes about one point two, so hydronium rises by only about twenty per cent, and the pH is four point six six. In plain water, nothing takes up the hydronium, so it rises a hundred thousand times."
+      }
+    },
+    {
+      "id": "ratio-sets-ph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That ratio sets the pH of any buffer. More acid than base puts the pH below the p K a, more base puts it above. And a buffer doesn't have to be neutral: this one sits at four point seven four. But hydrochloric acid with sodium chloride is not a buffer. Chloride is the conjugate base of a strong acid, so it doesn't take protons back."
+      }
+    },
+    {
+      "id": "capacity",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now keep adding acid, a millilitre at a time. Each portion uses up zero point zero zero one zero moles of ethanoate. At first, the pH falls slowly. But by about nine millilitres, almost all the ethanoate is gone, and at ten, there's none left. Nothing can take the next hydronium, so the pH plunges. How much acid or base a buffer can take before one partner is nearly used up is its capacity. It depends on how much of each partner there is, not on the pH."
+      }
+    },
+    {
+      "id": "blood-buffer",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your blood stays between pH seven point three five and seven point four five, because enzymes and haemoglobin work best in a narrow range. Its main buffer pairs carbonic acid with hydrogencarbonate ions. When muscles working hard add acid to the blood, hydrogencarbonate takes up the hydronium, making carbonic acid. That breaks down into carbon dioxide and water, and your lungs breathe the carbon dioxide out."
+      }
+    },
+    {
+      "id": "blood-works",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Blood has about twenty hydrogencarbonate ions for each dissolved carbon dioxide molecule. Carbon dioxide and carbonic acid together are the acid side of this buffer. So it can take up far more acid than base, which suits a body whose metabolism mostly makes acid. And unlike a beaker, it's topped up: the lungs adjust how much carbon dioxide they breathe out within minutes, and the kidneys adjust hydrogencarbonate over hours to days. Inside cells, a phosphate buffer helps too, and in the oceans, carbonate."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's what to remember. A buffer has a defender for each attack: the conjugate base takes added acid, the weak acid takes added base. And a buffer resists, it doesn't prevent. Add enough to use up one partner, and it fails."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A solution contains zero point two zero moles per litre ammonia and zero point two zero moles per litre ammonium chloride. Explain, using equations, how it resists a change in pH when a little hydrochloric acid or sodium hydroxide is added. Then estimate its pH, given that the p K a of ammonium is nine point two five. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ammonia is the base partner, so it takes the added hydronium: ammonia plus hydronium gives ammonium and water. Ammonium is the acid partner, so it gives a proton to added hydroxide, making ammonia and water. The two are equal, so the pH is about the p K a, nine point two five. Writing ammonium as the one that takes up added acid swaps the partners."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Buffers X and Y each have a volume of a hundred millilitres and a pH of four point seven four. X contains zero point zero one zero moles each of ethanoic acid and sodium ethanoate. Y contains zero point zero zero one zero moles of each. A student adds zero point zero zero two zero moles of hydrochloric acid to each. Predict and explain the pH change in each solution. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "X takes up all the added acid, with zero point zero zero eight zero moles of ethanoate still left. The ratio becomes one point five, so the pH falls only to four point five seven. In Y, half the acid uses up all its ethanoate, and the rest stays as hydronium: the pH drops to about two. Thinking equal pH means equal protection is the slip: pH shows the ratio, not the amounts."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "For any buffer: find the weak acid and its conjugate base. Added acid reacts with the base partner, added base with the acid partner. Get the pH from K a and the ratio, and check neither has run out. Next: preparing a buffer in the lab, and testing it against water."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

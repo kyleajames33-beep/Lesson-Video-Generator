@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c12/lesson.json",
+    "lessonSha256": "69b26065a1c0213d430ac92f20c8befbedf12e3a6288d58631448a83656a973d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Year 11 (n = c × V with V in litres; n = m / M; balanced equations and mole ratios). C02 (acid reactions and their products: acid + hydroxide → salt + water; acid + carbonate → salt + water + carbon dioxide; balancing, including sulfuric acid with two hydroxides). C05 (strong and weak; ethanoic acid is weak and mostly un-ionised). C08 (only a small fraction of a weak acid is ionised; [H₃O⁺] is far below c). C07 (pH is −log[H₃O⁺]; strong acids give [H₃O⁺] = c). C06 (carbonate accepts protons; a diprotic acid gives two). Module 5: Le Chatelier's principle. Not assumed: titration apparatus and terms, primary standard, standardisation, concordance.",
+    "startsWith": "Use a known standard and an unknown solution. The video opens: The label on this white vinegar says five per cent acidity. How could you check how much ethanoic acid is really in it? A pH meter won't do it well.",
+    "stopsAfter": "explaining why a pH reading gives a weak acid's concentration only very imprecisely, but a titration counts it; describing a titration with a standard solution, pipette, burette and indicator, and distinguishing the endpoint from the equivalence point; explaining why a titration counts all of a weak acid; stating what makes a primary standard and why sodium hydroxide is standardised; choosing concordant titres (within 0.10 mL) and averaging only those; calculating an unknown concentration in four steps (balanced equation and ratio, n = cV for the known, the ratio for the unknown, c = n/V) with 1 : 1 and 1 : 2 ratios, whichever solution is in the burette, to the right significant figures. No rinsing, meniscus, bubble or error-direction technique (chem-m6-p06), no indicator choice (chem-m6-c13), no curves (chem-m6-c14), no back titration or aliquot scale-up (chem-m6-c15, chem-m6-g03).",
+    "nextLesson": "doing a titration in the lab, with the technique that keeps it accurate (route chem-m6-p06)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c12.md"
+  ],
+  "teaching": {
+    "task": "A pH meter can't tell you accurately how much ethanoic acid is in a bottle of vinegar. How does a titration count every acid molecule, which titres can you trust, and how do the balanced equation and n = cV turn a titre into a concentration?",
+    "causalExplanation": "(1) a pH meter gives the concentration of a weak acid only very imprecisely, because it senses only the small ionised fraction and working back through Ka magnifies the reading error; we need to count every acid molecule (1); (2) react it with a solution of exactly known concentration and measure how much is needed; apparatus and terms (2); (3) the equivalence point is reached when the amounts match the equation, and the endpoint shows it; hydroxide keeps removing hydronium, so the weak acid keeps ionising until all of it has reacted (3); (4) the known concentration must be trustworthy: primary standards; NaOH absorbs water and CO₂, so its solution is standardised (4); (5) a rough titre locates the endpoint; accurate titres must agree within 0.10 mL; average only those (5); (6) the balanced equation gives the ratio; moles of the known from n = cV (6); (7) the ratio gives moles of acid; divide by the aliquot volume; four significant figures; compare with the label (7); (8) the ratio is not always 1 : 1: carbonate takes two protons, so two HCl per Na₂CO₃ (8); (9) moles of carbonate, times two, divided by the titre volume: the unknown can be in the burette (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "one limitation carries the video: a pH meter cannot tell you accurately how much ethanoic acid is in vinegar, because it senses only the small ionised fraction. A titration counts every acid molecule instead: hydroxide from a solution of exactly known concentration keeps removing hydronium, so the weak acid keeps ionising until all of it has reacted, and the endpoint shows when the amounts match the equation. Primary standards and concordant titres say which numbers to trust, and two worked examples (vinegar against sodium hydroxide, then hydrochloric acid in the burette against sodium carbonate, a two to one ratio) run the same mole bridge: known to moles, ratio, unknown. Two exam questions follow with brief feedback.",
+    "openingDecision": "The label on this white vinegar says five per cent acidity. How could you check how much ethanoic acid is really in it? A pH meter won't do it well. Ethanoic acid is weak, so most of it stays as whole molecules, and the meter only senses the few that have ionised. You could work back through K a, but a reading of two point four could mean anything from about zero point seven to one point one moles per litre. You need a method that counts every acid molecule. That's a titration. So how does it work, and how do its numbers give a concentration?",
+    "understandingCheck": "(A1) \"A 25.00 mL aliquot of sulfuric acid, H₂SO₄, of unknown concentration was titrated with 0.1000 mol/L sodium hydroxide solution. The titres were 23.45 mL, 23.70 mL, 23.40 mL and 23.50 mL. Calculate the concentration of the sulfuric acid.\" New acid with a 1 : 2 ratio the student must write, and a non-concordant titre. Crossed mistake: \"1 : 1, so c = 0.09380 mol/L\" (the site's Step 3 error). (A2) \"Two conical flasks each contain a 25.00 mL aliquot of an acid. Flask A contains 0.100 mol/L hydrochloric acid, HCl, and flask B contains 0.100 mol/L ethanoic acid, CH₃COOH. Each is titrated with 0.100 mol/L sodium hydroxide solution. Predict the volume of sodium hydroxide needed to reach the equivalence point in each flask. Explain your prediction, given that the two acids have different pH values.\" Tests the hook's idea on an unseen pair. Crossed mistake: \"B needs less NaOH, because ethanoic acid is only partly ionised\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" this video starts from a known standard and an unknown solution and stops at the unknown's concentration from concordant titres and a balanced mole ratio. It teaches: why a pH reading gives the concentration of a weak acid such as ethanoic acid only very imprecisely (C05, C08 and C10 callbacks), and why a titration counts it; the idea of a titration (react the unknown with a solution of exactly known concentration until the amounts match the equation); the apparatus and terms (standard solution, pipette and aliquot, burette, titrant, titre, indicator, endpoint, equivalence point) at the level needed for the calculation; why a titration counts all of a weak acid (hydroxide removes hydronium, the equilibrium shifts right until every molecule has reacted; Module 5 Le Chatelier callback); what makes a primary standard and why sodium hydroxide is standardised first; rough and accurate titres and concordance (within 0.10 mL); the four-step calculation with a 1 : 1 ratio (vinegar) and a 1 : 2 ratio (sodium carbonate standardising hydrochloric acid, with the unknown in the burette); significant figures for the result. Not here: rinsing rules, meniscus reading, parallax, air bubbles, the rough-titration technique and error direction (chem-m6-p06, the next video, which owns practical conduct and error evaluation; see Open decisions); indicator choice and equivalence-point pH (chem-m6-c13); titration curves and conductivity graphs (chem-m6-c14); back titration and dilution or aliquot scale-up from a volumetric flask (chem-m6-c15 and chem-m6-g03; see Open decisions); percentage by mass with density (g03); polyprotic stages of tartaric or oxalic acid beyond the overall ratio."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole ethanoic acid molecules amber-outlined (C05, C08); the known solution's values (standard, titrant) navy; the unknown's values amber; the ratio box teal; concordant titres ringed teal, the outlier crossed grey. Board layout (constant, C03, C07, C08 and C10): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the titre table, the mole bridge or the working, one stage per line, earlier lines dimming; the apparatus plates sit small at the right only when they carry the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 20 Oct): `m6-burette-clamp-stand-v1.png` (inspected: retort stand, clamp and glass burette with a blue tap, no person or hand; scenes 2, 3, 5, the fill gauge drawn over its tube), `m6-volumetric-pipette-filler-v1.png` (inspected: bulb pipette with a red pipette filler, no hand; scene 2), `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (scene 2, under the burette tip), `m6-clip-phenolphthalein-colourless-v1.png` and `m6-clip-phenolphthalein-pink-v1.png` (inspected the pink one: conical flask of pale pink solution, no hand; scene 3, the endpoint swap), `m6-vinegar-bottle-v1.png` (hook and scenes 5 to 7, coded label \"white vinegar: 5% acidity\"), `m6-ph-meter-probe-beaker-v1.png` (hook, coded readout \"2.4\" in the beaker labelled \"vinegar\"), `m6-volumetric-flask-v1.png` (scene 4, the standard solution), `m6-indicator-methyl-orange-set-v1.png` (not used: indicator choice is chem-m6-c13; scene 8 names the indicator in a tag only). No new plates needed. No human figures.",
+    "transitionPlan": "The vinegar bottle and pH meter plates open, and a small particle lens over the beaker shows the few ions the meter senses; the board clears as the burette, flask and tile plates assemble with the pipette sliding in; the flask swaps from colourless to pink at the endpoint while the lens shows the weak acid ionising until none is left; the volumetric flask and the primary standard card tick its criteria; the titre table writes row by row and the concordance strip draws beneath it; the equation strip, givens card and mole bridge carry both worked examples one stage per line, earlier lines dimming, with the apparatus thumbnail swapping the unknown into the burette for the second; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 5% acidity\".",
+      "teachingReason": "Hook (the meter can't count it): The label on this white vinegar says five per cent acidity.",
+      "narrationCue": "weak / K a / every / titration",
+      "motionPurpose": "On the spoken cues: On \"A pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears at the right, beaker labelled \"vinegar\", readout \"2.4\". On \"weak\" a small C08 lens opens over the beaker: almost all amber-outlined molecules, one ion pair lit teal, tag \"the meter senses only these\"; the readout pulses. On \"K a\" the tag dims and a grey tag writes under the readout: \"pH 2.35 to 2.45 → c ≈ 0.70 to 1.1 mol/L (via Ka)\" (dims at the sentence",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 5% acidity\". On \"A pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears at the right, beaker labelled \"vinegar\", readout \"2.4\". On \"weak\" a small C08 lens opens over the beaker: almost all amber-outlined molecules, one ion pair lit teal, tag \"the meter senses only these\"; the readout pulses. On \"K a\" the tag dims and a grey tag writes under the readout: \"pH 2.35 to 2.45 → c ≈ 0.70 to 1.1 mol/L (via Ka)\" (dims at the sentence end). On \"every\" all the amber molecules in the lens light at once. On \"titration\" the meter plate fades and the heading writes: \"How much acid is in it?\" Bright at the end: the heading, the bottle and the lens. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "idea-apparatus",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The idea and the apparatus: The idea is to react the unknown with a solution whose concentration you know exactly, a standard solution, and measure precisely how much it takes.",
+      "narrationCue": "standard solution / pipette / burette / titre",
+      "motionPurpose": "On the spoken cues: The apparatus assembles centre: `m6-burette-clamp-stand-v1.png` with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip. On \"standard solution\" the burette's coded fill (navy) rises to the zero mark and a navy tag writes beside it: \"NaOH: 0.5000 mol/L (known exactly)\". On \"pipette\" `m6-volumetric-pipette-filler-v1.png` slides in above the flask; its bulb drains into the flask (coded liquid, no hand)",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The apparatus assembles centre: `m6-burette-clamp-stand-v1.png` with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip. On \"standard solution\" the burette's coded fill (navy) rises to the zero mark and a navy tag writes beside it: \"NaOH: 0.5000 mol/L (known exactly)\". On \"pipette\" `m6-volumetric-pipette-filler-v1.png` slides in above the flask; its bulb drains into the flask (coded liquid, no hand) and a tag writes \"aliquot: 10.00 mL vinegar\" (amber); on \"indicator\" three coded drops fall in. On \"burette\" the navy level begins to fall and a volume counter beside the scale counts up. On \"titre\" the counter stops and a bracket \"titre = volume delivered\" spans the fallen level. Bright at the end: the two tags and the titre bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "equivalence-endpoint",
+      "visualDecision": "adjust",
+      "visualReference": "the apparatus shrinks to the right.",
+      "teachingReason": "Equivalence, endpoint, and why it counts every molecule: The point where the amounts match the equation exactly is the equivalence point.",
+      "narrationCue": "equivalence point / endpoint / right / every",
+      "motionPurpose": "On the spoken cues: On \"equivalence point\" a tag writes: \"equivalence point: amounts match the equation\". On \"endpoint\" the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png` and a second tag writes beside it: \"endpoint: the colour change (very close to the equivalence point)\". The tags dim. The C08 lens returns large at the left, with C09's \"whole molecules left\" counter at its edge",
+      "motionRole": "explain",
+      "onScreenChange": "the apparatus shrinks to the right. On \"equivalence point\" a tag writes: \"equivalence point: amounts match the equation\". On \"endpoint\" the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png` and a second tag writes beside it: \"endpoint: the colour change (very close to the equivalence point)\". The tags dim. The C08 lens returns large at the left, with C09's \"whole molecules left\" counter at its edge and a small grey tag \"weak acid heat video\" (dims): on \"Hydroxide removes hydronium\" violet OH⁻ tokens drop in, each taking a teal proton (from the rare hydronium, then directly from amber molecules); the strip \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" pulses its forward arrow on \"right\" (grey tag \"Module 5: Le Chatelier\", dims). On \"every\" the counter reaches 0, the last amber molecule loses its proton and the lens holds only grey-violet ethanoate and water. On \"how much acid there is\" a chip writes: \"titre counts moles of acid, weak or strong\". Bright at the end: the lens and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "primary-standard",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Standard solutions and primary standards: Everything rests on that known concentration.",
+      "narrationCue": "primary standard / standardised",
+      "motionPurpose": "On the spoken cues: `m6-volumetric-flask-v1.png` centre with a coded label \"Na₂CO₃ standard\". On \"primary standard\" a three-row card writes beside it, ticks lighting one per spoken criterion: \"very pure ✓\", \"stable in air ✓\", \"no water taken up while weighing ✓\", with a small grey tag \"Na₂CO₃: dried in an oven first\" (dims). On \"Sodium hydroxide fails\" the Na₂CO₃ card dims and a second card writes \"NaOH(s)\" with two rows only, each",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-volumetric-flask-v1.png` centre with a coded label \"Na₂CO₃ standard\". On \"primary standard\" a three-row card writes beside it, ticks lighting one per spoken criterion: \"very pure ✓\", \"stable in air ✓\", \"no water taken up while weighing ✓\", with a small grey tag \"Na₂CO₃: dried in an oven first\" (dims). On \"Sodium hydroxide fails\" the Na₂CO₃ card dims and a second card writes \"NaOH(s)\" with two rows only, each taking a grey cross as it is said: \"soaks up water ✗\", \"reacts with CO₂ ✗\" (no equation on screen). On \"standardised\" the NaOH card dims and an arrow runs from the Na₂CO₃ flask to a burette icon labelled \"NaOH: concentration found by titration\". Bright at the end: the flask label, the arrow and its label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "concordant-titres",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Titres you can trust: Back to the vinegar: ten point zero zero millilitres, titrated with zero point five zero zero zero moles per litre sodium hydroxide.",
+      "narrationCue": "eighteen point nine zero / zero point one zero / eighteen point five seven",
+      "motionPurpose": "On the spoken cues: Task line: \"Find c(CH₃COOH) in the vinegar\". The titre table writes: \"rough | 19.0\" (greyed, tag \"not used\"), then rows 1 to 4: \"18.60\", \"18.55\", \"18.55\", \"18.90\" mL, each writing as it is spoken. On \"eighteen point nine zero\" that row pulses. On \"zero point one zero\" the concordance strip draws under the table (a short number line from 18.50 to 18.95 mL with the four titres as dots); a bracket \"0.10 mL\" slides over",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find c(CH₃COOH) in the vinegar\". The titre table writes: \"rough | 19.0\" (greyed, tag \"not used\"), then rows 1 to 4: \"18.60\", \"18.55\", \"18.55\", \"18.90\" mL, each writing as it is spoken. On \"eighteen point nine zero\" that row pulses. On \"zero point one zero\" the concordance strip draws under the table (a short number line from 18.50 to 18.95 mL with the four titres as dots); a bracket \"0.10 mL\" slides over the three dots at 18.55 to 18.60, and the 18.90 dot sits outside it; the 18.90 row takes a grey cross and the other three are ringed teal; the strip then dims. On \"eighteen point five seven\" the line \"(18.60 + 18.55 + 18.55) ÷ 3 = 18.57 mL\" writes and shrinks to a kept chip \"mean titre = 18.57 mL\". Bright at the end: the task line, the ringed table and the kept chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-moles",
+      "visualDecision": "new",
+      "visualReference": "the table dims to a strip at the top.",
+      "teachingReason": "Worked example 1: equation and moles of the known: Now four steps.",
+      "narrationCue": "balanced equation / nine point two eight five times ten to the minus three",
+      "motionPurpose": "On the spoken cues: Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\". Givens card: \"NaOH: c = 0.5000 mol/L, V = 18.57 mL\" (navy) | \"vinegar: V = 10.00 mL\" (amber). The mole bridge draws: three boxes \"known: NaOH\" → \"ratio\" → \"unknown: CH₃COOH\". Step chip \"Step 1 of 4: equation\". On \"balanced equation\" the coefficients on the strip pulse \"1 : 1\" and the ratio box fills \"1 : 1\". Step chip \"Step 2 of 4: n(known)\". On \"n",
+      "motionRole": "explain",
+      "onScreenChange": "the table dims to a strip at the top. Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\". Givens card: \"NaOH: c = 0.5000 mol/L, V = 18.57 mL\" (navy) | \"vinegar: V = 10.00 mL\" (amber). The mole bridge draws: three boxes \"known: NaOH\" → \"ratio\" → \"unknown: CH₃COOH\". Step chip \"Step 1 of 4: equation\". On \"balanced equation\" the coefficients on the strip pulse \"1 : 1\" and the ratio box fills \"1 : 1\". Step chip \"Step 2 of 4: n(known)\". On \"n equals c V\" the line \"n(NaOH) = c × V\" writes with a grey tag \"V in litres: 18.57 mL = 0.01857 L\" (dims); on \"nine point two eight five\" the line \"= 0.5000 × 0.01857 = 9.285 × 10⁻³ mol\" writes and the known box fills \"9.285 × 10⁻³ mol\". Bright at the end: the strip, the givens card and the known box. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we1-concentration",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 3 of 4: ratio\".",
+      "teachingReason": "Worked example 1: ratio and concentration: Third, the mole ratio.",
+      "narrationCue": "ethanoic acid / zero point nine two eight five / five point six",
+      "motionPurpose": "On the spoken cues: On \"ethanoic acid\" an arrow runs through the ratio box and the unknown box fills \"n(CH₃COOH) = 9.285 × 10⁻³ mol\" (the n(NaOH) lines dim). Step chip \"Step 4 of 4: c(unknown)\". The line \"c = n ÷ V = 9.285 × 10⁻³ ÷ 0.01000\" writes; on \"zero point nine two eight five\" it completes \"= 0.9285 mol/L\" and the answer chip \"c(CH₃COOH) = 0.9285 mol/L\" pins, with a small grey tag \"data to 4 s.f. → 4 s.f.\" (dims). On \"five point",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 3 of 4: ratio\". On \"ethanoic acid\" an arrow runs through the ratio box and the unknown box fills \"n(CH₃COOH) = 9.285 × 10⁻³ mol\" (the n(NaOH) lines dim). Step chip \"Step 4 of 4: c(unknown)\". The line \"c = n ÷ V = 9.285 × 10⁻³ ÷ 0.01000\" writes; on \"zero point nine two eight five\" it completes \"= 0.9285 mol/L\" and the answer chip \"c(CH₃COOH) = 0.9285 mol/L\" pins, with a small grey tag \"data to 4 s.f. → 4 s.f.\" (dims). On \"five point six\" the vinegar plate returns small with a tag \"0.9285 mol/L × 60.05 g/mol = 55.8 g/L ≈ 5.6 g per 100 mL\" beside its \"5% acidity (5 g per 100 mL)\" label; the step lines dim. Bright at the end: the answer chip and the vinegar tag. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "we2-ratio",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example 2: a two to one ratio: The ratio isn't always one to one.",
+      "narrationCue": "sodium carbonate / twenty two point four five / two",
+      "motionPurpose": "On the spoken cues: Task line: \"Find c(HCl)\". The apparatus thumbnail at the right now shows the burette labelled \"unknown\" (amber) and the flask labelled \"standard\" (navy), tag \"indicator: methyl orange\" (grey, dims before the givens card writes). On \"sodium carbonate\" the givens card writes: \"Na₂CO₃: c = 0.05000 mol/L, V = 25.00 mL\" | \"HCl: titres 22.45, 22.40, 22.50 mL\". On \"twenty two point four five\" the three titres are ringed",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find c(HCl)\". The apparatus thumbnail at the right now shows the burette labelled \"unknown\" (amber) and the flask labelled \"standard\" (navy), tag \"indicator: methyl orange\" (grey, dims before the givens card writes). On \"sodium carbonate\" the givens card writes: \"Na₂CO₃: c = 0.05000 mol/L, V = 25.00 mL\" | \"HCl: titres 22.45, 22.40, 22.50 mL\". On \"twenty two point four five\" the three titres are ringed (all within 0.10 mL) and the kept chip \"mean titre = 22.45 mL\" writes; the thumbnail dims. On \"two\" the strip writes \"Na₂CO₃(aq) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\", its coefficients pulse \"1 : 2\", and the mole bridge redraws with the ratio box filled \"1 Na₂CO₃ : 2 HCl\"; a small grey tag \"CO₃²⁻ accepts two protons\" (dims). Bright at the end: the strip, the givens card and the ratio box. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we2-burette-unknown",
+      "visualDecision": "new",
+      "visualReference": "on \"one point two five zero\" the line \"n(Na₂CO₃) = 0.05000 × 0.02500 = 1.250 × 10⁻³ mol\" writes and fills the known box.",
+      "teachingReason": "Worked example 2: the unknown in the burette: Moles of carbonate: zero point zero five zero zero zero times zero point zero two five zero zero, one point two five zero times ten to the minus three.",
+      "narrationCue": "one point two five zero times ten to the minus three / two point five zero zero times ten to the minus three / zero point one one one four / unknown",
+      "motionPurpose": "On the spoken cues: On \"two point five zero zero\" the line \"n(HCl) = 2 × 1.250 × 10⁻³ = 2.500 × 10⁻³ mol\" writes and fills the unknown box (the first line dims). On \"zero point one one one four\" the line \"c(HCl) = 2.500 × 10⁻³ ÷ 0.02245 = 0.1114 mol/L\" writes, the burette thumbnail's titre bracket pulses on \"divide by the titre\", and the answer chip \"c(HCl) = 0.1114 mol/L\" pins. On \"unknown\" the mole bridge's three boxes light left to",
+      "motionRole": "explain",
+      "onScreenChange": "on \"one point two five zero\" the line \"n(Na₂CO₃) = 0.05000 × 0.02500 = 1.250 × 10⁻³ mol\" writes and fills the known box. On \"two point five zero zero\" the line \"n(HCl) = 2 × 1.250 × 10⁻³ = 2.500 × 10⁻³ mol\" writes and fills the unknown box (the first line dims). On \"zero point one one one four\" the line \"c(HCl) = 2.500 × 10⁻³ ÷ 0.02245 = 0.1114 mol/L\" writes, the burette thumbnail's titre bracket pulses on \"divide by the titre\", and the answer chip \"c(HCl) = 0.1114 mol/L\" pins. On \"unknown\" the mole bridge's three boxes light left to right. Bright at the end: the answer chip and the bridge. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "Known to moles, ratio, unknown. / average only concordant titres",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"Known to moles, ratio, unknown.\" with the mole bridge icon under it. On \"average only concordant titres\" the second line writes: \"Average only concordant titres (within 0.10 mL).\" with a tiny concordance strip thumbnail. Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"Known to moles, ratio, unknown.\" with the mole bridge icon under it. On \"average only concordant titres\" the second line writes: \"Average only concordant titres (within 0.10 mL).\" with a tiny concordance strip thumbnail. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A twenty five point zero zero",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A 25.00 mL aliquot of sulfuric acid, H₂SO₄, of unknown concentration was titrated with 0.1000 mol/L sodium hydroxide solution. The titres were 23.45 mL, 23.70 mL, 23.40 mL and 23.50 mL. Calculate the concentration of the sulfuric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no equation strip, no bridge, no aid.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "twenty three point four five / two point three four five times ten to the minus three / one to two / zero point zero four six nine zero",
+      "motionPurpose": "On the spoken cues: On \"twenty three point four five\" the four titres are underlined, 23.70 takes a grey cross and the line \"mean = (23.45 + 23.40 + 23.50) ÷ 3 = 23.45 mL\" writes. On \"two point three four five\" \"0.1000 mol/L\" is underlined and \"n(NaOH) = 0.1000 × 0.02345 = 2.345 × 10⁻³ mol\" writes (the mean line dims). On \"one to two\" \"sulfuric acid, H₂SO₄\" is underlined and the strip writes \"H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) +",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"twenty three point four five\" the four titres are underlined, 23.70 takes a grey cross and the line \"mean = (23.45 + 23.40 + 23.50) ÷ 3 = 23.45 mL\" writes. On \"two point three four five\" \"0.1000 mol/L\" is underlined and \"n(NaOH) = 0.1000 × 0.02345 = 2.345 × 10⁻³ mol\" writes (the mean line dims). On \"one to two\" \"sulfuric acid, H₂SO₄\" is underlined and the strip writes \"H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)\", then \"n(H₂SO₄) = 2.345 × 10⁻³ ÷ 2 = 1.1725 × 10⁻³ mol\". On \"zero point zero four six nine zero\" \"25.00 mL aliquot\" is underlined and \"c = 1.1725 × 10⁻³ ÷ 0.02500 = 0.04690 mol/L\" writes; answer chip \"c(H₂SO₄) = 0.04690 mol/L\" pins. On \"doubles\" a chip \"1 : 1, so c = 0.09380 mol/L\" fades in and is crossed (caption \"read the ratio from the equation\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"Two conical flasks each contain a 25.00 mL aliquot of an acid.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Two flasks each hold twenty five",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"Two conical flasks each contain a 25.00 mL aliquot of an acid. Flask A contains 0.100 mol/L hydrochloric acid, HCl, and flask B contains 0.100 mol/L ethanoic acid, CH₃COOH. Each is titrated with 0.100 mol/L sodium hydroxide solution. Predict the volume of sodium hydroxide needed to reach the equivalence point in each flask. Explain your prediction, given that the two acids have different pH values.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no bridge.",
+      "motionTools": [
+        "Cam lens zoom",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "twenty five point zero / two point five zero times ten to the minus three / ionise / less",
+      "motionPurpose": "On the spoken cues: On \"twenty five point zero\" \"25.00 mL aliquot\" and the three \"0.100 mol/L\" values are underlined and the answer chip \"A: 25.0 mL | B: 25.0 mL\" pins. On \"two point five zero\" the line \"n(acid) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol in each; V(NaOH) = 2.50 × 10⁻³ ÷ 0.100 = 0.0250 L\" writes. On \"ionise\" a small lens thumbnail (scene 3) replays: amber molecules giving up protons to violet OH⁻ until none are left;",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"twenty five point zero\" \"25.00 mL aliquot\" and the three \"0.100 mol/L\" values are underlined and the answer chip \"A: 25.0 mL | B: 25.0 mL\" pins. On \"two point five zero\" the line \"n(acid) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol in each; V(NaOH) = 2.50 × 10⁻³ ÷ 0.100 = 0.0250 L\" writes. On \"ionise\" a small lens thumbnail (scene 3) replays: amber molecules giving up protons to violet OH⁻ until none are left; \"different pH values\" is underlined. On \"less\" a chip \"B needs less NaOH: only partly ionised\" fades in and is crossed (caption \"titre counts moles, not strength\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words (lines 3 and 4 light together on \"known to moles, ratio, unknown\"): \"1 Concordant titres only (within 0.10 mL); average them.\"",
+      "teachingReason": "Decision rule and handoff: So for any titration: average only the concordant titres, write the balanced equation, then go known to moles, ratio, unknown.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Balanced equation → mole ratio.\" \"3 n(known) = c × V (V in L).\" \"4 n(unknown) from the ratio; c(unknown) = n ÷ V.\" On \"Next\" a chip \"Next: titration in the lab\" appears with a small `m6-burette-clamp-stand-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words (lines 3 and 4 light together on \"known to moles, ratio, unknown\"): \"1 Concordant titres only (within 0.10 mL); average them.\" \"2 Balanced equation → mole ratio.\" \"3 n(known) = c × V (V in L).\" \"4 n(unknown) from the ratio; c(unknown) = n ÷ V.\" On \"Next\" a chip \"Next: titration in the lab\" appears with a small `m6-burette-clamp-stand-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c12-learning-review.md",
+      "sha256": "3376628d610c261fe523bd4eacb786221d124af4a8e6beefbb70998863871a5e"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c12-claude-science-check.md",
+      "sha256": "3fc6c766079275afab7053bf978704095f6845b6468a9afaf5b260bfa9541b80"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

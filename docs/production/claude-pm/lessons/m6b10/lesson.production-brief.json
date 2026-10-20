@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b10/lesson.json",
+    "lessonSha256": "110444b7ca17dc663e550595f9da65f388edfe703d9cef3139b11e2970e2f546"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b09: biotechnology's definition; the four kinds of change (a process used, the parents chosen, DNA copied, DNA inserted or edited); Bt cotton carries a gene from a soil bacterium and makes a protein against caterpillars; gene editing changes a chosen stretch of DNA. From Year 11 and b08: natural selection (individuals with favoured alleles survive and pass them on); gene pools and allele frequency. From Module 5 (B9 and B10): dominant and recessive alleles. From bio-m5-b06a: bacteria carry plasmids; antibiotic resistance genes can sit on plasmids. Not assumed: stakeholder, refuge, ethical judgement structure, the three kinds of question, the cases themselves.",
+    "startsWith": "Introduce a plant or animal biotechnology case. The video opens: Two biotechnologies.",
+    "stopsAfter": "explaining that a judgement needs a concrete benefit, a concrete harm or risk, and who gets each (stakeholders), not a list of pros and cons; judging Bt cotton in Australia (fewer insecticide sprays, benefiting growers, workers and beneficial insects; resistance by natural selection, managed with refuges; a licence fee to the trait owner; a monoculture remains), with a conditional verdict; explaining the hornless dairy cattle case (painful dehorning avoided by editing in a naturally occurring dominant hornless allele) and why the later discovery of inserted bacterial DNA shows that outcomes must be checked; explaining what animal cases add (the animal's own welfare, embryos and surrogates used, objections in principle); sorting objections into consequences (evidence can answer), distribution (policy decides) and principle (evidence cannot settle); applying this to an unseen Golden Rice item and an unseen AquAdvantage salmon evaluation with a verdict.",
+    "nextLesson": "where biotechnology might go in the future, and which benefits are plausible (route entry bio-m6-b11)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b10.md"
+  ],
+  "teaching": {
+    "task": "A cotton plant that poisons caterpillars and a bull edited so his calves grow no horns: both work, but how should we judge plant and animal biotechnology, and what does an animal case add?",
+    "causalExplanation": "Causes: why \"it works\" is not a judgement (benefits and harms fall on different groups, 2); why Bt cotton cuts spraying (the plant makes its own protein against caterpillars, 3); why resistance is a risk (resistant caterpillars survive and pass on their alleles, 4); why refuges help (susceptible caterpillars breed with resistant ones, keeping resistance alleles rare, 4); why the verdict needs a condition (the benefit lasts only while resistance is managed, 5); why edited cattle help welfare (no painful dehorning, 6); why the plasmid finding matters (intended and actual outcomes can differ, and only checking shows it, 7); why animal cases differ (an animal can suffer, 8); why some objections survive any evidence (they are about principle, 9). Visible case: one board; lines show who gets each benefit and harm; caterpillars move between the Bt block and the refuge. Video advantage: the refuge mixing, the magnifier finding the amber insert, chips dropping into bins. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 2 card is the densest frame and is the task.",
+    "conversationalApproach": "A caterpillar-resistant cotton and a gene-edited hornless dairy bull both work, so the question is how to judge them and what an animal case adds; a judgement needs a concrete benefit, a concrete harm or risk, and who gets each (stakeholders), built on one judging board; Bt cotton in Australia is judged from fewer sprays, resistance managed by refuges and the licence fee to a conditional verdict; the hornless cattle case puts welfare on the benefit side, and the later discovery of inserted bacterial DNA shows that outcomes must be checked; objections then sort into consequences, distribution and principle. Two exam questions (Golden Rice, AquAdvantage salmon) follow with brief feedback.",
+    "openingDecision": "Two biotechnologies. A cotton plant that makes its own protein against caterpillars. And a dairy bull whose DNA was edited so his calves would be born without horns. Both work. But working isn't the same as being a good idea. So how should we judge plant and animal biotechnology, and why does an animal case need something extra?",
+    "understandingCheck": "11a is an identify-and-explain item on Golden Rice: identify one group that could benefit and one concern; explain why evidence that it is safe to eat would not settle every objection. It tests the stakeholder lens and scene 9's three kinds of question. 11c is an evaluate item on AquAdvantage salmon: refer to a benefit, a risk and the groups affected, and reach a judgement. It tests the full route stop on a new animal case. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ2-01: \"investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)\", with the listed sub-point this video carries: \"analysing the social implications and ethical uses of biotechnology, including plant and animal examples\". The other sub-points (\"researching future directions ...\", \"evaluating the potential benefits for society ...\", \"evaluating the changes to the Earth's biodiversity ...\") are b11 to b13. The verbs: \"analysing\" is carried by scene 9 (sorting objections into kinds) and attempt 1 (b); HSC questions on this sub-point use \"evaluate\", \"assess\" and \"discuss\" (`../research/question-types-bio-m6.md`), so attempt 2 asks for an evaluation with a verdict (what-markers-reward: \"Evaluate ... reach a supported judgement\"). Update the ledger row's sub-point coverage when this design passes review."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One judging board throughout: three columns, \"benefit\", \"harm or risk\", \"who\", with a case plate pinned at the top. Each entry is a short chip (two to six words) with a small stakeholder icon (coded, never people: a tractor outline for growers, a spray-can outline for farm workers' exposure, a bee outline for beneficial insects, a building outline for the seed company, a field-strip icon for ecosystems, an animal plate thumbnail for the animal). Lines join each benefit and each harm to its \"who\" chip, so the distribution is visible. The plant case (scenes 3 to 5) uses `m6-bt-cotton-v1.png` and the new `m6-helicoverpa-larva-boll-v1.png`, a coded spray-count bar (\"before\" against \"after\"), and a coded field map with a Bt block and a non-Bt refuge strip, in which caterpillar glyphs (open for susceptible, filled for resistant) move and breed. The animal case (scenes 6 to 8) uses the new `m6-dairy-calf-horn-buds-v1.png` and `b3b-dairy-bull-side-v1.png` (a hornless black-and-white dairy bull, labelled in code \"a hornless dairy bull\"; it is an ordinary bull plate, not the edited bull), a coded `SlimStrand` with the hornless allele as a cream band and, in scene 7, an amber inserted segment carrying two small \"antibiotic resistance gene\" bands, with `m6-bacterium-plasmid-v1.png` small as the source. Scene 9 has three question bins (\"consequences\", \"distribution\", \"principle\") into which earlier chips drop. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey icon labels; each chip dims once the next is placed; the board resets between the two cases.",
+    "transitionPlan": "The cotton and bull plates open the hook with a works-not-justified line; the judging board draws its three columns and stakeholder icons; for Bt cotton the spray bars, refuge field with moving caterpillar glyphs and chips join to their groups one at a time before the verdict bar writes; the board resets for the hornless cattle, the DNA strip takes the cream hornless band and then, under the magnifier, the amber inserted segment; a welfare column slides in for the animal case; the chips drop into three question bins; the checklist writes large; each attempt clears the board and its feedback underlines the card as the small board fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m6-bt-cotton-v1.png` at the left; on \"caterpillars\" the new `m6-helicoverpa-larva-boll-v1.png` appears small beside it and takes a grey stop bar (no tag).",
+      "teachingReason": "Hook (two biotechnologies that work): Two biotechnologies.",
+      "narrationCue": "caterpillars / edited / judge",
+      "motionPurpose": "On the spoken cues: `b3b-dairy-bull-side-v1.png` at the right, labelled small in code \"a hornless dairy bull\" (an ordinary hornless bull plate, not a portrait of the edited bull); on \"edited\" a short `SlimStrand` draws under it with one cream band ringed (tag \"hornless allele\"), and a small calf head outline with no",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m6-bt-cotton-v1.png` at the left; on \"caterpillars\" the new `m6-helicoverpa-larva-boll-v1.png` appears small beside it and takes a grey stop bar (no tag). `b3b-dairy-bull-side-v1.png` at the right, labelled small in code \"a hornless dairy bull\" (an ordinary hornless bull plate, not a portrait of the edited bull); on \"edited\" a short `SlimStrand` draws under it with one cream band ringed (tag \"hornless allele\"), and a small calf head outline with no horn buds sits beside it. On \"Both work\" two small ticks write under the plates. On \"isn't the same\" the ticks shrink and a line writes between the plates: \"works ≠ justified\". On \"judge\" the heading writes on: \"How should we judge it?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "judgement-needs",
+      "visualDecision": "new",
+      "visualReference": "the `JudgeBoard` draws empty: three column heads write on one per cue, \"benefit\", \"harm or risk\", \"who\".",
+      "teachingReason": "What a judgement needs: A judgement needs three things, each one concrete.",
+      "narrationCue": "benefit / harm / who / stakeholders",
+      "motionPurpose": "On the spoken cues: On \"stakeholders\" the term writes under the \"who\" head with the gloss \"anyone or anything affected\", and four grey stakeholder icons line up beneath it (tractor, spray can, bee, building). On \"help one group and cost another\" a sample benefit chip and a sample harm chip (blank outlines) draw lines",
+      "motionRole": "explain",
+      "onScreenChange": "the `JudgeBoard` draws empty: three column heads write on one per cue, \"benefit\", \"harm or risk\", \"who\". On \"stakeholders\" the term writes under the \"who\" head with the gloss \"anyone or anything affected\", and four grey stakeholder icons line up beneath it (tractor, spray can, bee, building). On \"help one group and cost another\" a sample benefit chip and a sample harm chip (blank outlines) draw lines to two different icons, so the lines cross the board. On \"pros and cons\" a two-column \"pros | cons\" list outline fades in beside the board and takes a grey cross (caption \"say who gets which\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cotton-benefit",
+      "visualDecision": "adjust",
+      "visualReference": "the board resets with `m6-bt-cotton-v1.png` pinned at the top.",
+      "teachingReason": "Bt cotton: the benefit, and who gets it: Start with the plant.",
+      "narrationCue": "eighty-five per cent",
+      "motionPurpose": "On the spoken cues: On \"toxic to certain caterpillars\" the larva plate sits on a boll and a coded protein glyph from the leaf reaches it; the larva greys (tag \"Bt protein: certain caterpillars only\"). On \"many times a season\" a coded spray-count bar draws, \"before Bt\" (tall, spray-can icons stacked). On \"eighty-five",
+      "motionRole": "explain",
+      "onScreenChange": "the board resets with `m6-bt-cotton-v1.png` pinned at the top. On \"toxic to certain caterpillars\" the larva plate sits on a boll and a coded protein glyph from the leaf reaches it; the larva greys (tag \"Bt protein: certain caterpillars only\"). On \"many times a season\" a coded spray-count bar draws, \"before Bt\" (tall, spray-can icons stacked). On \"eighty-five per cent\" a second bar \"with Bt\" draws much shorter (tag \"since 1996: insecticide use down about 85% (CSIRO)\", replacing the protein tag; no other number). The benefit chip writes in the \"benefit\" column, \"far fewer insecticide sprays\", and on \"growers\", \"farm workers\", \"nearby communities\" and \"beneficial insects\" lines run from it to the tractor, spray-can, house outline and bee icons in the \"who\" column, one per word. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cotton-risks",
+      "visualDecision": "adjust",
+      "visualReference": "the benefit chip and its lines dim.",
+      "teachingReason": "Bt cotton: the risks, and who carries them: Now the risks.",
+      "narrationCue": "selection / refuges / rare / licence fee / biodiversity",
+      "motionPurpose": "On the spoken cues: The `RefugeField` draws below the board: a large Bt block and a narrow refuge strip of non-Bt cotton beside it. On \"survive, and pass them on\" open (susceptible) caterpillar glyphs in the Bt block grey out while a few filled (resistant) glyphs survive and double over two quick generations (tag",
+      "motionRole": "explain",
+      "onScreenChange": "the benefit chip and its lines dim. The `RefugeField` draws below the board: a large Bt block and a narrow refuge strip of non-Bt cotton beside it. On \"survive, and pass them on\" open (susceptible) caterpillar glyphs in the Bt block grey out while a few filled (resistant) glyphs survive and double over two quick generations (tag \"selection for resistance\"; on \"stops working\" the filled glyphs spread across the block). On \"refuges\" the selection tag fades and the refuge strip fills with open glyphs that survive; at the boundary, open and filled glyphs pair up and their offspring glyphs are mostly open (on \"rare\", tag \"refuge: keeps resistance alleles rare\"). The harm chip writes: \"resistance can evolve; managed by refuges\", joined to the tractor and field-strip icons. On \"licence fee\" the refuge tag fades, the field map dims, the resistance chip dims to grey, and a second harm chip writes \"licence fee each season\", joined from the tractor icon to the building icon with a small coin glyph moving along the line (tag \"growers pay, company gains\"). On \"biodiversity\" the fee chip and its tag dim, and `m6-field-monoculture-mixed-v1.png` appears small with its monoculture half ringed, and a third chip writes \"still a monoculture (not caused by Bt)\", joined to the field-strip icon. At most one chip and one tag are bright at once. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cotton-verdict",
+      "visualDecision": "new",
+      "visualReference": "the field map clears; the full board for Bt cotton sits centre, every chip back at equal weight with its lines.",
+      "teachingReason": "A verdict with a condition: So, a judgement.",
+      "narrationCue": "justified / condition",
+      "motionPurpose": "On the spoken cues: On \"large and measured\" the benefit chip brightens with its four lines. On \"managed by refuges\" the resistance chip brightens. On \"chosen Bt\" the fee chip brightens with a small grey tag \"most Australian cotton is Bt\", which fades on \"justified\". On \"justified\" a verdict bar writes across the",
+      "motionRole": "explain",
+      "onScreenChange": "the field map clears; the full board for Bt cotton sits centre, every chip back at equal weight with its lines. On \"large and measured\" the benefit chip brightens with its four lines. On \"managed by refuges\" the resistance chip brightens. On \"chosen Bt\" the fee chip brightens with a small grey tag \"most Australian cotton is Bt\", which fades on \"justified\". On \"justified\" a verdict bar writes across the bottom of the board: \"Verdict: justified for Australian cotton\". On \"condition\" a second line writes under it: \"condition: resistance management keeps working\", and a small grey crossed chip \"it boosts yield, so it's good\" appears beside the bar (the site's weak judgement), then fades. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "hornless-cattle",
+      "visualDecision": "adjust",
+      "visualReference": "the board resets with `b3b-dairy-bull-side-v1.png` pinned at the top (labelled in code \"a hornless dairy bull\"; it is an ordinary bull plate, so it is never labelled as the edited bull).",
+      "teachingReason": "The animal case: hornless dairy cattle: Now the animal.",
+      "narrationCue": "painful / dominant / edited",
+      "motionPurpose": "On the spoken cues: On \"horn buds\" the new `m6-dairy-calf-horn-buds-v1.png` appears at the left with its horn buds ringed (no tag); on \"painful\" a grey tag \"removing horn buds: painful\" writes under it. On \"dominant\" a short strip draws under a small coded black cow outline labelled \"Angus\", with one cream band ringed",
+      "motionRole": "explain",
+      "onScreenChange": "the board resets with `b3b-dairy-bull-side-v1.png` pinned at the top (labelled in code \"a hornless dairy bull\"; it is an ordinary bull plate, so it is never labelled as the edited bull). On \"horn buds\" the new `m6-dairy-calf-horn-buds-v1.png` appears at the left with its horn buds ringed (no tag); on \"painful\" a grey tag \"removing horn buds: painful\" writes under it. On \"dominant\" a short strip draws under a small coded black cow outline labelled \"Angus\", with one cream band ringed (tag \"hornless allele: dominant\"). On \"beef alleles\" the Angus strip briefly shows several other grey bands joining the dairy strip (crossing brings many alleles), then they withdraw. On \"edited\" the dominant tag fades and a copy of the one cream band slides from the Angus strip into a dairy cattle strip (`StripInsert` style, cream band, no amber), and a grey tag \"2015: edited bulls born\" writes beside the strip (not under the bull plate) then fades. On \"calves could inherit it\" an arrow runs from the bull to a small calf head outline with no horn buds. The benefit chip writes: \"no dehorning needed\", joined to an animal icon (calf thumbnail) and a farm-worker icon (tractor outline) in the \"who\" column. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "checking-evidence",
+      "visualDecision": "adjust",
+      "visualReference": "the bull's strip from scene 6 enlarges centre.",
+      "teachingReason": "Checking what actually happened: But in 2019, government scientists checking one bull's DNA found something no one had intended.",
+      "narrationCue": "antibiotic resistance genes / checking the evidence",
+      "motionPurpose": "On the spoken cues: On \"found something no one had intended\" a small grey tag \"2019: US FDA check\" writes and a coded magnifier slides along the strip and stops beside the cream band. On \"antibiotic resistance genes\" an amber segment appears beside the cream band, containing two small grey bands labelled small",
+      "motionRole": "explain",
+      "onScreenChange": "the bull's strip from scene 6 enlarges centre. On \"found something no one had intended\" a small grey tag \"2019: US FDA check\" writes and a coded magnifier slides along the strip and stops beside the cream band. On \"antibiotic resistance genes\" an amber segment appears beside the cream band, containing two small grey bands labelled small \"antibiotic resistance genes\"; `m6-bacterium-plasmid-v1.png` appears small at the right with a dashed arrow from its teal ring to the amber segment (tag \"from the plasmid used as the edit's template\"). On \"four of his six calves\" six small calf head outlines draw in a row and four take a small amber dot (the bacterium tag fades). A harm chip writes in the board's \"harm or risk\" column: \"unintended DNA inserted\", joined to the calf thumbnail and a regulator icon (building outline relabelled \"regulators\"). On \"checked to carry the edit alone\" a small grey verdict line writes: \"justified only if checked: edit, nothing else\". On \"checking the evidence\" the harm chip dims and a line writes across the bottom: \"judge the outcome, not the intention\". Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "animal-adds",
+      "visualDecision": "new",
+      "visualReference": "the board stays, with a fourth column sliding in at the right, \"the animal's welfare\", for animal cases only.",
+      "teachingReason": "What an animal case adds: That's what makes animal cases different.",
+      "narrationCue": "suffer / whatever",
+      "motionPurpose": "On the spoken cues: On \"suffer\" the dehorning tag from scene 6 moves into it as a benefit (\"spared dehorning\"). On \"embryos and surrogate cows\" a row of small coded embryo circles draws, most greying out, beside a coded cow outline labelled \"surrogate\" (tag \"embryos and surrogates used\"), and a harm chip \"many embryos",
+      "motionRole": "explain",
+      "onScreenChange": "the board stays, with a fourth column sliding in at the right, \"the animal's welfare\", for animal cases only. On \"suffer\" the dehorning tag from scene 6 moves into it as a benefit (\"spared dehorning\"). On \"embryos and surrogate cows\" a row of small coded embryo circles draws, most greying out, beside a coded cow outline labelled \"surrogate\" (tag \"embryos and surrogates used\"), and a harm chip \"many embryos lost\" joins the new column. On \"whatever\" a chip \"objects to editing animals at all\" writes in a dashed box below the board, joined to no outcome (tag \"not about outcomes\"). Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "three-questions",
+      "visualDecision": "new",
+      "visualReference": "the board shrinks to the top.",
+      "teachingReason": "Three kinds of question: Those objections sort into three kinds of question.",
+      "narrationCue": "Consequences / Distribution / principle",
+      "motionPurpose": "On the spoken cues: The `QuestionBins` draw: three bins writing on one per cue. On \"Consequences\" the chips \"far fewer sprays\", \"resistance can evolve\" and \"unintended DNA inserted\" drop into the first bin, which takes the small label \"evidence can answer\". On \"Distribution\" the chip \"licence fee each season\" drops",
+      "motionRole": "explain",
+      "onScreenChange": "the board shrinks to the top. The `QuestionBins` draw: three bins writing on one per cue. On \"Consequences\" the chips \"far fewer sprays\", \"resistance can evolve\" and \"unintended DNA inserted\" drop into the first bin, which takes the small label \"evidence can answer\". On \"Distribution\" the chip \"licence fee each season\" drops into the second bin, label \"rules and policy decide\". On \"principle\" the dashed chip \"objects to editing animals at all\" drops into the third bin, label \"evidence can't settle\". On \"can't settle that one\" the three bin labels brighten together. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the aid writes on large and handwritten, one question per line, each lighting on its words: \"Who benefits?\", \"Who carries the risk?\", \"Who decides whether it's used?\" (with the small regulator building icon from scene 7), \"What happens to biodiversity?\".",
+      "teachingReason": "Memory: So here's a checklist.",
+      "narrationCue": "Who benefits? Who carries the risk? Who decides whether it's used? And what happens to biodiversity? / verdict",
+      "motionPurpose": "On the spoken cues: On \"the animal itself\" a fifth line writes in a different colour: \"Animal? What happens to the animal?\" (calf thumbnail). On \"verdict\" a separate line writes under the list: \"Evaluate → end with a verdict and its reason.\" Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes on large and handwritten, one question per line, each lighting on its words: \"Who benefits?\", \"Who carries the risk?\", \"Who decides whether it's used?\" (with the small regulator building icon from scene 7), \"What happens to biodiversity?\". On \"the animal itself\" a fifth line writes in a different colour: \"Animal? What happens to the animal?\" (calf thumbnail). On \"verdict\" a separate line writes under the list: \"Evaluate → end with a verdict and its reason.\" Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears: no board, bins or chips.",
+      "teachingReason": "Unseen transfer task (attempt one (Golden Rice)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. Golden Rice has",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (Golden Rice))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no board, bins or chips. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-golden-white-rice-v1.png` small at its upper left: \"Golden Rice has been genetically modified to produce beta-carotene, which the human body converts to vitamin A. It was developed to reduce vitamin A deficiency, which can cause blindness in children, in communities where rice is the main food.\" Demands: \"(a) Identify one group that could benefit from Golden Rice and one possible concern about its use. (2 marks)\" \"(b) Explain why evidence that Golden Rice is safe to eat would not settle every objection to its use. (3 marks)\". Two answer boxes. Nothing answer-bearing: no stakeholder icons, no bins. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "consequences / principle",
+      "motionPurpose": "On the spoken cues: (1) On \"Children in rice-dependent communities\" \"blindness in children\" and \"rice is the main food\" underline amber; box (a) fills \"benefit: children in communities that rely on rice\". On \"eat enough\" box (a) adds \"concern: whether it is grown and eaten enough (or: crop diversity, who controls the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. (1) On \"Children in rice-dependent communities\" \"blindness in children\" and \"rice is the main food\" underline amber; box (a) fills \"benefit: children in communities that rely on rice\". On \"eat enough\" box (a) adds \"concern: whether it is grown and eaten enough (or: crop diversity, who controls the seed)\". (2) On \"consequences\" \"safe to eat\" underlines; the three bins return small and a chip \"safe to eat?\" drops into \"consequences\". On \"principle\" chips \"acceptable to modify crops at all?\" and \"who controls the seed?\" drop into \"principle\" and \"distribution\"; box (b) fills \"safety is a consequence question; objections of principle or distribution are not answered by safety evidence\". (3) On \"the classic mistake\" the chip \"it's safe, so there's nothing to object to\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (AquAdvantage salmon)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. AquAdvantage salmon carry a growth hormone gene",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (AquAdvantage salmon))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\": \"AquAdvantage salmon are Atlantic salmon that carry a growth hormone gene from Chinook salmon, together with a DNA switch from another fish, so they reach market size faster than non-modified Atlantic salmon. They are produced as all-female fish that are effectively sterile. They were raised in secure land-based tanks.\" Demand: \"Evaluate the use of this biotechnology. In your answer, refer to a benefit, a risk and the groups affected. (5 marks)\". One lined answer box. Nothing answer-bearing: no board, no checklist. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "no verdict",
+      "motionPurpose": "On the spoken cues: The `JudgeBoard` draws small beneath it, with the animal's welfare column. (1) On \"reach market sooner\" \"reach market size faster\" underlines amber; benefit chip \"faster growth\", joined to \"fish farmers\". (2) On \"escape\" harm chip \"escape and breeding with wild salmon\", joined to \"wild salmon\" and",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. The `JudgeBoard` draws small beneath it, with the animal's welfare column. (1) On \"reach market sooner\" \"reach market size faster\" underlines amber; benefit chip \"faster growth\", joined to \"fish farmers\". (2) On \"escape\" harm chip \"escape and breeding with wild salmon\", joined to \"wild salmon\" and \"people who fish\". On \"very unlikely\" \"effectively sterile\" and \"secure land-based tanks\" underline; the harm chip takes a small \"reduced by\" tag. (3) On \"welfare\" the welfare column fills \"check the fish's health and welfare\". (4) On \"justified under these controls\" the verdict bar writes: \"Verdict: justified, with effective sterility and land tanks; welfare must be checked\". (5) On \"the classic mistake\" the chip \"a list of pros and cons, no verdict\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "five step chips write on in a column, one per cue: \"benefit + who gets it\", \"harm or risk + who carries it\", \"animal? its welfare\", \"check the evidence; which kind of question?\", \"verdict + condition\".",
+      "teachingReason": "Decision rule and handoff: So to judge any biotechnology: name a concrete benefit and who gets it, a concrete harm or risk and who carries it, and, for an animal, its welfare.",
+      "narrationCue": "So to judge any biotechnology: name a concrete",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: future directions in biotechnology\" (a small coded DNA strip with one band changing colour). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "five step chips write on in a column, one per cue: \"benefit + who gets it\", \"harm or risk + who carries it\", \"animal? its welfare\", \"check the evidence; which kind of question?\", \"verdict + condition\". A \"Next\" chip slides in at the lower right: \"Next: future directions in biotechnology\" (a small coded DNA strip with one band changing colour). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b10-learning-review.md",
+      "sha256": "e5ef40958ac5184435cfb52dba97c60f38a32ec39c54c16b6892da5a298bb2a4"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b10-claude-science-check.md",
+      "sha256": "319d2a530063c34fb976f41c0221e613225a051bcd3207165d24971c56cf0d38"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}
