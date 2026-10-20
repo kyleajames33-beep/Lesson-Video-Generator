@@ -266,3 +266,14 @@ Codex: new brief 64 (practical apparatus + safety plates, gel tank v2, NSW chemi
   - **G01:** added to the route as key m6g01b.
   - **Karyotype in B04:** coded.
   - **Jolie case in B05:** named from her own account, with no image.
+
+## 20 Oct: built while you were away (all voiced, preview v1, please review)
+
+Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
+
+- Chemistry: chem-m6-c03, chem-m6-c04, chem-m6-c05, chem-m6-c06, chem-m6-c07, chem-m6-c08
+- Biology: bio-m6-b03, bio-m6-b04, bio-m6-b05, bio-m6-g01, bio-m6-b07, bio-m6-b08
+- Exam skills: skills-s01, skills-s02
+- B5a and B5b are being rebuilt with the brief 88 plates and will be preview v7.
+- Rendered and ready to upload (brief 28t): C01, B01, B02, B6b, B6c, C10, C15 and Chemistry P02.
+- Codex briefs still to send: 28t (uploads) and 89 (C09 and C10 check).
